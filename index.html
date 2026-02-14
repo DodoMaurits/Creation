@@ -2,26 +2,33 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Doodle God – Map Structuur</title>
+  <title>Combinatiegame</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Doodle God – Map Structuur</h1>
 
-  <div id="game">
-    <div id="left-panel">
-      <h2>Links</h2>
-      <div id="left-maps"></div>
-      <div id="left-elements"></div>
-    </div>
+<div id="game">
+  
+  <!-- LINKER PANEL -->
+  <div id="left-panel">
+    <div class="group-title">Groepen</div>
+    <div id="left-maps"></div>
 
-    <div id="right-panel">
-      <h2>Rechts</h2>
-      <div id="right-maps"></div>
-      <div id="right-elements"></div>
-    </div>
+    <div class="group-title">Elementen in geselecteerde groep</div>
+    <div id="left-elements"></div>
   </div>
 
-  <script src="game.js"></script>
+  <!-- RECHTER PANEL -->
+  <div id="right-panel">
+    <div class="group-title">Andere groepen</div>
+    <div id="right-maps"></div>
+
+    <div class="group-title">Andere elementen</div>
+    <div id="right-elements"></div>
+  </div>
+
+</div>
+
+<script src="game.js"></script>
 </body>
 </html>
