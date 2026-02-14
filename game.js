@@ -1,4 +1,4 @@
-// voorbeeld mappen en elementen
+// Voorbeeld mappen en elementen
 const mappen = [
   {
     naam: "Water",
@@ -24,100 +24,127 @@ const mappen = [
   }
 ];
 
-// voorbeeld combinaties
+// Voorbeeld combinaties
 const combinaties = [
   { input: ["H2O", "Vuur"], output: { naam: "Stoom", icoon: "https://img.icons8.com/ios-filled/50/AAAAAA/steam.png", map: "Water" } },
-  { input: ["Klei", "Water"], output: { naam: "Modder", icoon: "https://img.icons8.com/ios-filled/50/654321/mud.png", map: "Aarde" } }
+  { input: ["Klei", "H2O"], output: { naam: "Modder", icoon: "https://img.icons8.com/ios-filled/50/654321/mud.png", map: "Aarde" } }
 ];
 
-let selectedLeft = null;
-let leftElementSelected = null;
+// Huidige selectie
+let selectedLeftGroup = null;
+let selectedRightGroup = null;
+let selectedLeftElement = null;
+let selectedRightElement = null;
 
+// Initialisatie
 function init() {
   renderMaps();
+  renderElements();
 }
 
+// Render links en rechts alle groepen
 function renderMaps() {
   const leftMapsDiv = document.getElementById("left-maps");
   const rightMapsDiv = document.getElementById("right-maps");
   leftMapsDiv.innerHTML = "";
   rightMapsDiv.innerHTML = "";
 
-  mappen.forEach((map, index) => {
-    const div = document.createElement("div");
-    div.className = "map";
-    div.dataset.index = index;
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
-    div.addEventListener("click", () => toggleMap(index));
+  mappen.forEach((map, idx) => {
+    const leftDiv = createMapDiv(map, idx, "left");
+    leftMapsDiv.appendChild(leftDiv);
 
-    if (selectedLeft === index) {
-      div.classList.add("selected");
-      leftMapsDiv.appendChild(div);
+    const rightDiv = createMapDiv(map, idx, "right");
+    rightMapsDiv.appendChild(rightDiv);
+  });
+}
+
+// Helper om een map div te maken
+function createMapDiv(map, idx, side) {
+  const div = document.createElement("div");
+  div.className = "map";
+  div.dataset.index = idx;
+  div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
+
+  div.addEventListener("click", () => {
+    if (side === "left") {
+      if (selectedLeftGroup === idx) selectedLeftGroup = null;
+      else selectedLeftGroup = idx;
+      selectedLeftElement = null;
     } else {
-      rightMapsDiv.appendChild(div);
+      if (selectedRightGroup === idx) selectedRightGroup = null;
+      else selectedRightGroup = idx;
+      selectedRightElement = null;
     }
+    renderElements();
+    updateMapSelection();
   });
 
-  renderElements();
+  return div;
 }
 
-function toggleMap(index) {
-  if (selectedLeft === index) {
-    selectedLeft = null;
-  } else {
-    selectedLeft = index;
-  }
-  leftElementSelected = null;
-  renderMaps();
+// Update visuele selectie van groepen
+function updateMapSelection() {
+  document.querySelectorAll("#left-maps .map").forEach((el, idx) => {
+    el.classList.toggle("selected", idx === selectedLeftGroup);
+  });
+  document.querySelectorAll("#right-maps .map").forEach((el, idx) => {
+    el.classList.toggle("selected", idx === selectedRightGroup);
+  });
 }
 
+// Render elementen van de geselecteerde groep
 function renderElements() {
   const leftElementsDiv = document.getElementById("left-elements");
   const rightElementsDiv = document.getElementById("right-elements");
   leftElementsDiv.innerHTML = "";
   rightElementsDiv.innerHTML = "";
 
-  // elementen van geselecteerde groep
-  if (selectedLeft !== null) {
-    mappen[selectedLeft].elementen.forEach(el => {
+  // Links
+  if (selectedLeftGroup !== null) {
+    mappen[selectedLeftGroup].elementen.forEach(el => {
       const div = document.createElement("div");
       div.className = "element";
-      div.dataset.map = selectedLeft;
-      div.dataset.name = el.naam;
       div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
       div.addEventListener("click", () => selectLeftElement(div, el.naam));
+      if (el.naam === selectedLeftElement) div.classList.add("selected");
       leftElementsDiv.appendChild(div);
     });
   }
 
-  // elementen van andere groepen
-  mappen.forEach((map, idx) => {
-    if (idx !== selectedLeft) {
-      map.elementen.forEach(el => {
-        const div = document.createElement("div");
-        div.className = "element";
-        div.dataset.map = idx;
-        div.dataset.name = el.naam;
-        div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
-        div.addEventListener("click", () => combineWithLeft(el.naam, idx));
-        rightElementsDiv.appendChild(div);
-      });
-    }
-  });
+  // Rechts
+  if (selectedRightGroup !== null) {
+    mappen[selectedRightGroup].elementen.forEach(el => {
+      const div = document.createElement("div");
+      div.className = "element";
+      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
+      div.addEventListener("click", () => selectRightElement(div, el.naam));
+      if (el.naam === selectedRightElement) div.classList.add("selected");
+      rightElementsDiv.appendChild(div);
+    });
+  }
 }
 
+// Selecteer links element
 function selectLeftElement(div, naam) {
-  document.querySelectorAll("#left-elements .element").forEach(el => el.classList.remove("selected"));
-  div.classList.add("selected");
-  leftElementSelected = naam;
+  selectedLeftElement = naam;
+  renderElements();
+  combineIfPossible();
 }
 
-function combineWithLeft(rightNaam, rightMapIdx) {
-  if (!leftElementSelected) return;
+// Selecteer rechts element
+function selectRightElement(div, naam) {
+  selectedRightElement = naam;
+  renderElements();
+  combineIfPossible();
+}
+
+// Controleer combinatie
+function combineIfPossible() {
+  if (!selectedLeftElement || !selectedRightElement) return;
 
   const combinatie = combinaties.find(c =>
-    (c.input[0] === leftElementSelected && c.input[1] === rightNaam) ||
-    (c.input[1] === leftElementSelected && c.input[0] === rightNaam)
+    (c.input[0] === selectedLeftElement && c.input[1] === selectedRightElement) ||
+    (c.input[1] === selectedLeftElement && c.input[0] === selectedRightElement)
   );
 
   if (combinatie) {
@@ -126,9 +153,14 @@ function combineWithLeft(rightNaam, rightMapIdx) {
     if (!map.elementen.some(e => e.naam === combinatie.output.naam)) {
       map.elementen.push({ naam: combinatie.output.naam, icoon: combinatie.output.icoon });
     }
-    leftElementSelected = null;
-    selectedLeft = null;
+
+    // reset selectie
+    selectedLeftElement = null;
+    selectedRightElement = null;
+    selectedLeftGroup = null;
+    selectedRightGroup = null;
     renderMaps();
+    renderElements();
   }
 }
 
