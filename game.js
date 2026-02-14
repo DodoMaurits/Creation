@@ -24,128 +24,133 @@ const mappen = [
   }
 ];
 
-// Voorbeeld combinaties
+// Combinaties
 const combinaties = [
   { input: ["H2O", "Vuur"], output: { naam: "Stoom", icoon: "https://img.icons8.com/ios-filled/50/AAAAAA/steam.png", map: "Water" } },
   { input: ["Klei", "H2O"], output: { naam: "Modder", icoon: "https://img.icons8.com/ios-filled/50/654321/mud.png", map: "Aarde" } }
 ];
 
-// Selectie status
-let selectedLeftGroup = 0;    // eerste groep standaard geopend
-let selectedRightGroup = null;
-let selectedLeftElement = null;
-let selectedRightElement = null;
+// Status
+let leftOpenGroup = null;
+let rightOpenGroup = null;
+let leftSelectedElement = null;
+let rightSelectedElement = null;
 
-// --- Initialisatie ---
+// Init
 function init() {
   renderGroups();
-  renderElements();
 }
 
-// --- Render alle groepen links en rechts ---
+// Render links en rechts de groepen
 function renderGroups() {
-  const leftMapsDiv = document.getElementById("left-maps");
-  const rightMapsDiv = document.getElementById("right-maps");
-  leftMapsDiv.innerHTML = "";
-  rightMapsDiv.innerHTML = "";
+  const leftDiv = document.getElementById("left-maps");
+  const rightDiv = document.getElementById("right-maps");
+  leftDiv.innerHTML = "";
+  rightDiv.innerHTML = "";
 
   mappen.forEach((map, idx) => {
-    // Links
-    const leftDiv = createMapDiv(map, idx, "left");
-    leftMapsDiv.appendChild(leftDiv);
+    // --- Links ---
+    const mapDiv = document.createElement("div");
+    mapDiv.className = "map";
+    mapDiv.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
+    if (leftOpenGroup === idx) mapDiv.classList.add("open");
+    mapDiv.addEventListener("click", () => toggleLeftGroup(idx, mapDiv));
+    leftDiv.appendChild(mapDiv);
 
-    // Rechts
-    const rightDiv = createMapDiv(map, idx, "right");
-    rightMapsDiv.appendChild(rightDiv);
-  });
-
-  updateGroupSelection();
-}
-
-// --- Maak map div met click event ---
-function createMapDiv(map, idx, side) {
-  const div = document.createElement("div");
-  div.className = "map";
-  div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
-
-  div.addEventListener("click", () => {
-    if (side === "left") {
-      selectedLeftGroup = (selectedLeftGroup === idx) ? null : idx;
-      selectedLeftElement = null; // reset geselecteerd element
-    } else {
-      selectedRightGroup = (selectedRightGroup === idx) ? null : idx;
-      selectedRightElement = null;
-    }
-    renderElements();
-    updateGroupSelection();
-  });
-
-  return div;
-}
-
-// --- Update visuele selectie van groepen ---
-function updateGroupSelection() {
-  document.querySelectorAll("#left-maps .map").forEach((el, idx) => {
-    el.classList.toggle("selected", idx === selectedLeftGroup);
-  });
-  document.querySelectorAll("#right-maps .map").forEach((el, idx) => {
-    el.classList.toggle("selected", idx === selectedRightGroup);
+    // --- Rechts ---
+    const mapDivR = document.createElement("div");
+    mapDivR.className = "map";
+    mapDivR.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
+    if (rightOpenGroup === idx) mapDivR.classList.add("open");
+    mapDivR.addEventListener("click", () => toggleRightGroup(idx, mapDivR));
+    rightDiv.appendChild(mapDivR);
   });
 }
 
-// --- Render elementen van geselecteerde groepen ---
-function renderElements() {
-  const leftElementsDiv = document.getElementById("left-elements");
-  const rightElementsDiv = document.getElementById("right-elements");
-  leftElementsDiv.innerHTML = "";
-  rightElementsDiv.innerHTML = "";
-
-  // Links
-  if (selectedLeftGroup !== null) {
-    mappen[selectedLeftGroup].elementen.forEach(el => {
-      const div = document.createElement("div");
-      div.className = "element";
-      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
-      if (el.naam === selectedLeftElement) div.classList.add("selected");
-      div.addEventListener("click", () => selectLeftElement(el.naam));
-      leftElementsDiv.appendChild(div);
-    });
+// Toggle linker groep open/close
+function toggleLeftGroup(idx, div) {
+  if (leftOpenGroup === idx) {
+    leftOpenGroup = null;
+    leftSelectedElement = null;
+  } else {
+    leftOpenGroup = idx;
+    leftSelectedElement = null;
   }
+  renderGroups();
+  renderLeftElements();
+}
 
-  // Rechts
-  if (selectedRightGroup !== null) {
-    mappen[selectedRightGroup].elementen.forEach(el => {
-      const div = document.createElement("div");
-      div.className = "element";
-      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
-      if (el.naam === selectedRightElement) div.classList.add("selected");
-      div.addEventListener("click", () => selectRightElement(el.naam));
-      rightElementsDiv.appendChild(div);
-    });
+// Toggle rechter groep open/close
+function toggleRightGroup(idx, div) {
+  if (rightOpenGroup === idx) {
+    rightOpenGroup = null;
+    rightSelectedElement = null;
+  } else {
+    rightOpenGroup = idx;
+    rightSelectedElement = null;
   }
+  renderGroups();
+  renderRightElements();
 }
 
-// --- Selecteer links element ---
-function selectLeftElement(naam) {
-  selectedLeftElement = (selectedLeftElement === naam) ? null : naam;
-  renderElements();
-  tryCombine();
+// Render linker elementen
+function renderLeftElements() {
+  const leftDiv = document.getElementById("left-maps");
+  // Verwijder oude container
+  const old = leftDiv.querySelector(".element-container");
+  if (old) old.remove();
+
+  if (leftOpenGroup === null) return;
+
+  const container = document.createElement("div");
+  container.className = "element-container";
+  mappen[leftOpenGroup].elementen.forEach(el => {
+    const div = document.createElement("div");
+    div.className = "element";
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
+    if (el.naam === leftSelectedElement) div.classList.add("selected");
+    div.addEventListener("click", () => {
+      leftSelectedElement = (leftSelectedElement === el.naam) ? null : el.naam;
+      renderLeftElements();
+      tryCombine();
+    });
+    container.appendChild(div);
+  });
+  leftDiv.appendChild(container);
 }
 
-// --- Selecteer rechts element ---
-function selectRightElement(naam) {
-  selectedRightElement = (selectedRightElement === naam) ? null : naam;
-  renderElements();
-  tryCombine();
+// Render rechter elementen
+function renderRightElements() {
+  const rightDiv = document.getElementById("right-maps");
+  const old = rightDiv.querySelector(".element-container");
+  if (old) old.remove();
+
+  if (rightOpenGroup === null) return;
+
+  const container = document.createElement("div");
+  container.className = "element-container";
+  mappen[rightOpenGroup].elementen.forEach(el => {
+    const div = document.createElement("div");
+    div.className = "element";
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
+    if (el.naam === rightSelectedElement) div.classList.add("selected");
+    div.addEventListener("click", () => {
+      rightSelectedElement = (rightSelectedElement === el.naam) ? null : el.naam;
+      renderRightElements();
+      tryCombine();
+    });
+    container.appendChild(div);
+  });
+  rightDiv.appendChild(container);
 }
 
-// --- Check combinaties en voeg nieuw element toe ---
+// Controleer combinatie
 function tryCombine() {
-  if (!selectedLeftElement || !selectedRightElement) return;
+  if (!leftSelectedElement || !rightSelectedElement) return;
 
   const combinatie = combinaties.find(c =>
-    (c.input[0] === selectedLeftElement && c.input[1] === selectedRightElement) ||
-    (c.input[1] === selectedLeftElement && c.input[0] === selectedRightElement)
+    (c.input[0] === leftSelectedElement && c.input[1] === rightSelectedElement) ||
+    (c.input[1] === leftSelectedElement && c.input[0] === rightSelectedElement)
   );
 
   if (combinatie) {
@@ -155,15 +160,15 @@ function tryCombine() {
       map.elementen.push({ naam: combinatie.output.naam, icoon: combinatie.output.icoon });
     }
 
-    // Reset selectie
-    selectedLeftElement = null;
-    selectedRightElement = null;
-    selectedLeftGroup = null;
-    selectedRightGroup = null;
+    // reset alles
+    leftOpenGroup = null;
+    rightOpenGroup = null;
+    leftSelectedElement = null;
+    rightSelectedElement = null;
+
     renderGroups();
-    renderElements();
   }
 }
 
-// --- Start game ---
+// Start
 init();
