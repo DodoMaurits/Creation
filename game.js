@@ -30,60 +30,61 @@ const combinaties = [
   { input: ["Klei", "H2O"], output: { naam: "Modder", icoon: "https://img.icons8.com/ios-filled/50/654321/mud.png", map: "Aarde" } }
 ];
 
-// Huidige selectie
-let selectedLeftGroup = null;
+// Selectie status
+let selectedLeftGroup = 0;    // eerste groep standaard geopend
 let selectedRightGroup = null;
 let selectedLeftElement = null;
 let selectedRightElement = null;
 
-// Initialisatie
+// --- Initialisatie ---
 function init() {
-  renderMaps();
+  renderGroups();
   renderElements();
 }
 
-// Render links en rechts alle groepen
-function renderMaps() {
+// --- Render alle groepen links en rechts ---
+function renderGroups() {
   const leftMapsDiv = document.getElementById("left-maps");
   const rightMapsDiv = document.getElementById("right-maps");
   leftMapsDiv.innerHTML = "";
   rightMapsDiv.innerHTML = "";
 
   mappen.forEach((map, idx) => {
+    // Links
     const leftDiv = createMapDiv(map, idx, "left");
     leftMapsDiv.appendChild(leftDiv);
 
+    // Rechts
     const rightDiv = createMapDiv(map, idx, "right");
     rightMapsDiv.appendChild(rightDiv);
   });
+
+  updateGroupSelection();
 }
 
-// Helper om een map div te maken
+// --- Maak map div met click event ---
 function createMapDiv(map, idx, side) {
   const div = document.createElement("div");
   div.className = "map";
-  div.dataset.index = idx;
   div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
 
   div.addEventListener("click", () => {
     if (side === "left") {
-      if (selectedLeftGroup === idx) selectedLeftGroup = null;
-      else selectedLeftGroup = idx;
-      selectedLeftElement = null;
+      selectedLeftGroup = (selectedLeftGroup === idx) ? null : idx;
+      selectedLeftElement = null; // reset geselecteerd element
     } else {
-      if (selectedRightGroup === idx) selectedRightGroup = null;
-      else selectedRightGroup = idx;
+      selectedRightGroup = (selectedRightGroup === idx) ? null : idx;
       selectedRightElement = null;
     }
     renderElements();
-    updateMapSelection();
+    updateGroupSelection();
   });
 
   return div;
 }
 
-// Update visuele selectie van groepen
-function updateMapSelection() {
+// --- Update visuele selectie van groepen ---
+function updateGroupSelection() {
   document.querySelectorAll("#left-maps .map").forEach((el, idx) => {
     el.classList.toggle("selected", idx === selectedLeftGroup);
   });
@@ -92,7 +93,7 @@ function updateMapSelection() {
   });
 }
 
-// Render elementen van de geselecteerde groep
+// --- Render elementen van geselecteerde groepen ---
 function renderElements() {
   const leftElementsDiv = document.getElementById("left-elements");
   const rightElementsDiv = document.getElementById("right-elements");
@@ -105,8 +106,8 @@ function renderElements() {
       const div = document.createElement("div");
       div.className = "element";
       div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
-      div.addEventListener("click", () => selectLeftElement(div, el.naam));
       if (el.naam === selectedLeftElement) div.classList.add("selected");
+      div.addEventListener("click", () => selectLeftElement(el.naam));
       leftElementsDiv.appendChild(div);
     });
   }
@@ -117,29 +118,29 @@ function renderElements() {
       const div = document.createElement("div");
       div.className = "element";
       div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
-      div.addEventListener("click", () => selectRightElement(div, el.naam));
       if (el.naam === selectedRightElement) div.classList.add("selected");
+      div.addEventListener("click", () => selectRightElement(el.naam));
       rightElementsDiv.appendChild(div);
     });
   }
 }
 
-// Selecteer links element
-function selectLeftElement(div, naam) {
-  selectedLeftElement = naam;
+// --- Selecteer links element ---
+function selectLeftElement(naam) {
+  selectedLeftElement = (selectedLeftElement === naam) ? null : naam;
   renderElements();
-  combineIfPossible();
+  tryCombine();
 }
 
-// Selecteer rechts element
-function selectRightElement(div, naam) {
-  selectedRightElement = naam;
+// --- Selecteer rechts element ---
+function selectRightElement(naam) {
+  selectedRightElement = (selectedRightElement === naam) ? null : naam;
   renderElements();
-  combineIfPossible();
+  tryCombine();
 }
 
-// Controleer combinatie
-function combineIfPossible() {
+// --- Check combinaties en voeg nieuw element toe ---
+function tryCombine() {
   if (!selectedLeftElement || !selectedRightElement) return;
 
   const combinatie = combinaties.find(c =>
@@ -154,14 +155,15 @@ function combineIfPossible() {
       map.elementen.push({ naam: combinatie.output.naam, icoon: combinatie.output.icoon });
     }
 
-    // reset selectie
+    // Reset selectie
     selectedLeftElement = null;
     selectedRightElement = null;
     selectedLeftGroup = null;
     selectedRightGroup = null;
-    renderMaps();
+    renderGroups();
     renderElements();
   }
 }
 
+// --- Start game ---
 init();
