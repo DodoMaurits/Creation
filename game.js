@@ -19,52 +19,62 @@ let rightOpenGroup = null;
 let leftSelectedElement = null;
 let rightSelectedElement = null;
 
-// Init
+// --- INIT ---
 function init() {
-  renderGroups();
+  renderGroups("left");
+  renderGroups("right");
 }
 
-// Render beide panelen groepen
-function renderGroups() {
-  const leftDiv = document.getElementById("left-maps");
-  const rightDiv = document.getElementById("right-maps");
-
-  leftDiv.innerHTML = "";
-  rightDiv.innerHTML = "";
+// --- Render groepen links of rechts ---
+function renderGroups(side) {
+  const container = document.getElementById(side + "-maps");
+  container.innerHTML = "";
 
   mappen.forEach((map, idx) => {
-    // --- Links ---
-    const divL = document.createElement("div");
-    divL.className = "map";
-    divL.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
-    if (leftOpenGroup === idx) divL.classList.add("open");
-    divL.addEventListener("click", () => {
-      leftOpenGroup = (leftOpenGroup === idx) ? null : idx;
-      leftSelectedElement = null;
-      renderLeftElements();
-      renderGroups();
-    });
-    leftDiv.appendChild(divL);
+    const div = document.createElement("div");
+    div.className = "map";
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
 
-    // --- Rechts ---
-    const divR = document.createElement("div");
-    divR.className = "map";
-    divR.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><span>${map.naam}</span>`;
-    if (rightOpenGroup === idx) divR.classList.add("open");
-    divR.addEventListener("click", () => {
-      rightOpenGroup = (rightOpenGroup === idx) ? null : idx;
-      rightSelectedElement = null;
-      renderRightElements();
-      renderGroups();
+    // Open status
+    const openGroup = (side === "left") ? leftOpenGroup : rightOpenGroup;
+    if (openGroup === idx) div.classList.add("open");
+
+    // Klik event
+    div.addEventListener("click", () => {
+      if (side === "left") {
+        if (leftOpenGroup === idx) {
+          // Sluit de groep
+          leftOpenGroup = null;
+          leftSelectedElement = null;
+        } else {
+          // Open deze groep, andere verdwijnen
+          leftOpenGroup = idx;
+          leftSelectedElement = null;
+        }
+        renderGroups("left");
+        renderLeftElements();
+      } else {
+        if (rightOpenGroup === idx) {
+          rightOpenGroup = null;
+          rightSelectedElement = null;
+        } else {
+          rightOpenGroup = idx;
+          rightSelectedElement = null;
+        }
+        renderGroups("right");
+        renderRightElements();
+      }
     });
-    rightDiv.appendChild(divR);
+
+    container.appendChild(div);
   });
 }
 
-// Render linker elementen
+// --- Render linker elementen ---
 function renderLeftElements() {
   const container = document.getElementById("left-elements-container");
   container.innerHTML = "";
+
   if (leftOpenGroup === null) return;
 
   mappen[leftOpenGroup].elementen.forEach(el => {
@@ -72,6 +82,7 @@ function renderLeftElements() {
     div.className = "element";
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
     if (el.naam === leftSelectedElement) div.classList.add("selected");
+
     div.addEventListener("click", () => {
       leftSelectedElement = (leftSelectedElement === el.naam) ? null : el.naam;
       renderLeftElements();
@@ -81,10 +92,11 @@ function renderLeftElements() {
   });
 }
 
-// Render rechter elementen
+// --- Render rechter elementen ---
 function renderRightElements() {
   const container = document.getElementById("right-elements-container");
   container.innerHTML = "";
+
   if (rightOpenGroup === null) return;
 
   mappen[rightOpenGroup].elementen.forEach(el => {
@@ -92,6 +104,7 @@ function renderRightElements() {
     div.className = "element";
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><span>${el.naam}</span>`;
     if (el.naam === rightSelectedElement) div.classList.add("selected");
+
     div.addEventListener("click", () => {
       rightSelectedElement = (rightSelectedElement === el.naam) ? null : el.naam;
       renderRightElements();
@@ -101,7 +114,7 @@ function renderRightElements() {
   });
 }
 
-// Controleer combinaties
+// --- Combinatie check ---
 function tryCombine() {
   if (!leftSelectedElement || !rightSelectedElement) return;
 
@@ -116,15 +129,16 @@ function tryCombine() {
       map.elementen.push({ naam: combi.output.naam, icoon: combi.output.icoon });
     }
 
-    // reset alles
+    // Reset alles
     leftOpenGroup = null;
     rightOpenGroup = null;
     leftSelectedElement = null;
     rightSelectedElement = null;
 
-    renderGroups();
-    renderLeftElements();
-    renderRightElements();
+    renderGroups("left");
+    renderGroups("right");
+    document.getElementById("left-elements-container").innerHTML = "";
+    document.getElementById("right-elements-container").innerHTML = "";
   }
 }
 
