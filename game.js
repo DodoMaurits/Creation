@@ -65,7 +65,7 @@ const combinaties = [
             naam: "Atomen",
             icoon: "icons/Atomen.png",
             map: "Chemie",
-            quote: "In reality, nothing <br>but atoms and the void<br><br>- Democritos"
+            quote: "In reality, nothing <br>but atoms and the void <br><br>- Democritos"
           }
         ]
       },
@@ -75,8 +75,8 @@ const combinaties = [
             {
               naam: "Radioactiviteit",
               icoon: "icons/Radioactiviteit.png",
-              mpa: "Krachten",
-              quote: "Nuclear power is one hell of a way <br>to boil water<br><br>-Albert Einstein"
+              map: "Krachten",
+              quote: "Nuclear power is one hell of a way <br>to boil water <br><br>-Albert Einstein"
             }
           ]
         }
@@ -379,8 +379,8 @@ setTimeout(() => {
   leftClone.remove();
   rightClone.remove();
 
-  leftEl.remove();
-  rightEl.remove();
+  leftSelectedElement = null;
+  rightSelectedElement = null;
 
   showNewElement(combi);
 
