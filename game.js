@@ -29,6 +29,7 @@ const combinaties = [
 ];
 
 // ---------------- STATUS ----------------
+let isCombining = false;
 let leftOpenGroup = null;
 let rightOpenGroup = null;
 let leftSelectedElement = null;
@@ -237,17 +238,81 @@ function renderRightElements() {
 
 // ---------------- COMBINATIE ----------------
 function tryCombine() {
-  if (!leftSelectedElement || !rightSelectedElement) return;
+  if (!leftSelectedElement || !rightSelectedElement || isCombining) return;
 
   const combi = combinaties.find(c =>
     c.input.includes(leftSelectedElement) &&
     c.input.includes(rightSelectedElement)
   );
 
-  if (combi) {
-    // ✔ Nieuwe combinatie gevonden
-    alert(`Nieuw element ontdekt: ${combi.output.naam}`);
+  if (!combi) {
+    // Geen combinatie → deselecteer beide
+    leftSelectedElement = null;
+    rightSelectedElement = null;
+    renderLeftElements();
+    renderRightElements();
+    return;
+  }
 
+  // ---------------- START COMBINATIE ANIMATIE ----------------
+  isCombining = true;
+
+  const leftEl = document.querySelector("#left-elements-container .selected");
+  const rightEl = document.querySelector("#right-elements-container .selected");
+
+  const leftRect = leftEl.getBoundingClientRect();
+  const rightRect = rightEl.getBoundingClientRect();
+
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+
+  // absolute positioneren voor animatie
+  [leftEl, rightEl].forEach(el => {
+    el.style.position = "fixed";
+    el.style.left = el.getBoundingClientRect().left + "px";
+    el.style.top = el.getBoundingClientRect().top + "px";
+    el.style.zIndex = "999";
+    el.style.transition = "all 1s ease-in-out";
+  });
+
+  // animatie naar midden
+  setTimeout(() => {
+    leftEl.style.left = centerX - leftRect.width / 2 + "px";
+    leftEl.style.top = centerY - leftRect.height / 2 + "px";
+
+    rightEl.style.left = centerX - rightRect.width / 2 + "px";
+    rightEl.style.top = centerY - rightRect.height / 2 + "px";
+  }, 50);
+
+  // na animatie: toon nieuw element
+  setTimeout(() => {
+    leftEl.remove();
+    rightEl.remove();
+    showNewElement(combi);
+  }, 1100);
+}
+
+function showNewElement(combi) {
+
+  const overlay = document.createElement("div");
+  overlay.id = "result-overlay";
+
+  overlay.innerHTML = `
+    <div class="result-box">
+      <img src="${combi.output.icoon}" class="result-image">
+      <h2 class="result-title">${combi.output.naam}</h2>
+      <p class="result-quote">
+        Zwaartekracht is de moeder van alle krachten - Albert Einstein
+      </p>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  // Klik op nieuw element → terug naar begin
+  overlay.addEventListener("click", () => {
+
+    // Voeg element toe aan juiste map
     const map = mappen.find(m => m.naam === combi.output.map);
     if (!map.elementen.some(e => e.naam === combi.output.naam)) {
       map.elementen.push({
@@ -256,14 +321,19 @@ function tryCombine() {
       });
     }
 
+    overlay.remove();
+
     // Reset alles
     leftOpenGroup = null;
     rightOpenGroup = null;
     leftSelectedElement = null;
     rightSelectedElement = null;
+    isCombining = false;
 
     renderGroups("left");
     renderGroups("right");
+    });
+  }
 
   } else {
     // ❌ Geen combinatie → beide deselecteren
@@ -273,6 +343,7 @@ function tryCombine() {
     renderRightElements();
   }
 }
+
 
 // ---------------- START ----------------
 init();
