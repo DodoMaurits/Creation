@@ -6,15 +6,15 @@ const mappen = [
     naam: "Heelal",
     icoon: "icons/Heelal.png",
     elementen: [
-      { naam: "Oerknal", icoon: "https://img.icons8.com/ios-filled/50/ffcc00/big-bang.png" }
+      { naam: "Oerknal", icoon: "icons/Oerknal.png" }
     ]
   },
   {
     naam: "Krachten",
-    icoon: "https://img.icons8.com/ios-filled/50/ff0000/atom.png",
+    icoon: "icons/Krachten.png",
     elementen: [
-      { naam: "Warmte", icoon: "https://img.icons8.com/ios-filled/50/ff6600/fire.png" },
-      { naam: "Kou", icoon: "https://img.icons8.com/ios-filled/50/00ccff/snowflake.png" }
+      { naam: "Warmte", icoon: "icons/Warmte.png" },
+      { naam: "Kou", icoon: "icons/Kou.png" }
     ]
   }
 ];
@@ -25,7 +25,7 @@ const combinaties = [
     input: ["Oerknal", "Warmte"],
     output: {
       naam: "Energie",
-      icoon: "https://img.icons8.com/ios-filled/50/ffcc00/energy.png",
+      icoon: "icons/Energie.png",
       map: "Heelal"
     }
   }
