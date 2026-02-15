@@ -208,26 +208,18 @@ function createGroupElement(container, side, idx) {
 
     // Als deze groep al open is → sluiten
     if (openGroup === idx) {
-      // Event listener voor als morph klaar is
-      div.addEventListener("transitionend", function handler(e) {
-        if (e.propertyName !== "transform") return; // alleen op transform
-        div.removeEventListener("transitionend", handler);
-
-        if (isLeft) leftOpenGroup = null;
-        else rightOpenGroup = null;
-
-        // Andere groepen verschijnen pas nu
-        renderGroups(side);
-
-        // Verwijder elementen
-        elementsContainer.innerHTML = "";
-      });
-
-      // Trigger morph naar gesloten positie
+    
+      if (isLeft) leftOpenGroup = null;
+      else rightOpenGroup = null;
+    
       if (isLeft) leftSelectedElement = null;
       else rightSelectedElement = null;
-      layoutGroups(side);
-
+    
+      elementsContainer.innerHTML = "";
+    
+      renderGroups(side);
+    
+      return;
     } else {
       // Groep openen
       if (isLeft) leftOpenGroup = idx;
