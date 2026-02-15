@@ -51,18 +51,18 @@ function layoutGroups(side, instant = false) {
   const containerHeight = container.clientHeight; // betrouwbare hoogte
 
   if (openGroup !== null) {
-    // Eén groep open → rest verbergen
+  // Eén groep open → rest verbergen
     groups.forEach((groupDiv, idx) => {
       if (idx === openGroup) {
         groupDiv.style.display = "flex";
         groupDiv.classList.add("open");
         const containerWidth = container.clientWidth;
         const x = containerWidth / 2 - mapSize / 2;
-        const y = 20; // bovenin bij open
+        const y = 20; // bovenin
         if (instant) groupDiv.style.transition = "none";
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
         if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
-
+  
         // ELEMENTEN CONTAINER POSITIONEREN
         const elementsContainer = document.getElementById(side + "-elements-container");
         elementsContainer.style.position = "absolute";
@@ -72,7 +72,7 @@ function layoutGroups(side, instant = false) {
         elementsContainer.style.display = "flex";
         elementsContainer.style.justifyContent = "center";
         elementsContainer.style.gap = `${gap}px`;
-
+  
       } else {
         groupDiv.style.display = "none";
         groupDiv.classList.remove("open");
@@ -84,27 +84,28 @@ function layoutGroups(side, instant = false) {
     const totalRows = Math.ceil(groups.length / 4);
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
     const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-
+  
     groups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
-
+  
       const col = idx % 4;
       const row = Math.floor(idx / 4);
-
+  
       const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
-
+      const y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
+  
       if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
       if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
     });
-
-    // ELEMENTEN CONTAINER VERBERGEN
+  
+    // ELEMENTEN CONTAINER VERBERGEN EN RESETTEN
     const elementsContainer = document.getElementById(side + "-elements-container");
     elementsContainer.innerHTML = "";
-  }
-}
+    elementsContainer.style.top = "0"; // reset bovenin
+    elementsContainer.style.position = "absolute";
+  });
 
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side, instant = false) {
