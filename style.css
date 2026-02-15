@@ -6,6 +6,50 @@ body {
   height: 100vh;
 }
 
+/* ---------- HOMEPAGE ---------- */
+
+.homepage {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("achtergrond.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Donkere overlay voor leesbaarheid */
+.overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 60px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.title {
+  color: white;
+  font-size: 64px;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+}
+
+.start-button {
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+  background: #d0f0ff;
+}
+
 /* Verdeel scherm in 2 helften */
 #game {
   display: flex;
