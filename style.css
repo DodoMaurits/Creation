@@ -89,7 +89,7 @@ body {
   width: 100%;                /* vult de breedte van het panel */
   top: 0;                     /* JS past top aan */
   left: 0;
-  z-index: 2;                 /* boven maps */
+  z-index: 3;                 /* boven maps */
   pointer-events: auto;       /* zodat je kunt klikken */
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .map.open {
-  z-index: 3;
+  z-index: 4;
   background-color: #eef;
 }
 
@@ -155,6 +155,11 @@ body {
   height: 100px;
 }
 
+.map:hover,
+.element:hover {
+  z-index: 1000;
+}
+
 /* ---------------- TOOLTIP ---------------- */
 .map span,
 .element span {
@@ -177,13 +182,13 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: all 0.15s ease;
+  z-index: 1001;
 }
 
 .map:hover::after,
 .element:hover::after {
   opacity: 1;
-  transform: translateX(-12px%) scale(1);
-  z-index: 50;
+  transform: translateX(-50%) scale(1);
 }
 
 /* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
