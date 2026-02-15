@@ -335,15 +335,5 @@ function showNewElement(combi) {
     });
   }
 
-  } else {
-    // ❌ Geen combinatie → beide deselecteren
-    leftSelectedElement = null;
-    rightSelectedElement = null;
-    renderLeftElements();
-    renderRightElements();
-  }
-}
-
-
 // ---------------- START ----------------
 init();
