@@ -1,15 +1,15 @@
 // ---------------- DATA ----------------
 const mappen = [
   {
-    naam: "Heelal",
-    icoon: "icons/Heelal.png",
+    naam: "Heelal-Groep",
+    icoon: "icons/Heelal-Groep.png",
     elementen: [
       { naam: "Oerknal", icoon: "icons/Oerknal.png" }
     ]
   },
   {
-    naam: "Krachten",
-    icoon: "icons/Krachten.png",
+    naam: "Krachten-Groep",
+    icoon: "icons/Krachten-Groep.png",
     elementen: [
       { naam: "Warmte", icoon: "icons/Warmte.png" },
       { naam: "Kou", icoon: "icons/Kou.png" }
@@ -20,12 +20,32 @@ const mappen = [
 const combinaties = [
   {
     input: ["Oerknal", "Kou"],
-    output: {
-      naam: "Zwaartekracht",
-      icoon: "icons/Zwaartekracht.png",
-      map: "Krachten"
+    output: [
+      {
+        naam: "Zwaartekracht",
+        icoon: "icons/Zwaartekracht.png",
+        map: "Krachten-Groep",
+        quote: "Gravity explains the motions of the planets, <br>but it cannot explain who sets the planets in motion <br>- Isaac Newton"
+      },
+      {
+        naam: "Quark",
+        icoon: "icons/Quark.png",
+        map: "Chemie-Groep",
+        quote: "Chemie is the limit"
+      }
+    ]
+  },
+  {
+      input: ["Zwaartekracht, "Quark"],
+      output: [
+        {
+          naam: "Heelal",
+          icoon: "icons/Heelal.png",
+          map: "Heelal-Groep",
+          quote: "Heelal is the limit"
+        }
+      ]
     }
-  }
 ];
 
 // ---------------- STATUS ----------------
@@ -331,40 +351,42 @@ function showNewElement(combi) {
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
-
-  // ✅ Achtergrond met afbeelding + overlay
   overlay.style.background = `
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url('afb/beginscherm.png') center center / cover no-repeat
   `;
-  
-  overlay.innerHTML = `
-    <div class="result-box">
-      <img src="${combi.output.icoon}" class="result-image">
-      <h2 class="result-title">${combi.output.naam}</h2>
-      <p class="result-quote">
-        "Gravity explains the motions of the planets,
-        <br>but it cannot explain who sets the planets in motion" 
-        <br>- Isaac Newton
-      </p>
-    </div>
-  `;
 
+  // container voor meerdere elementen
+  let innerHTML = '<div class="result-box-container" style="display:flex; justify-content:center; gap:50px;">';
+
+  combi.output.forEach(el => {
+    innerHTML += `
+      <div class="result-box" style="text-align:center; color:white;">
+        <img src="${el.icoon}" class="result-image" style="width:150px;">
+        <h2 class="result-title">${el.naam}</h2>
+        <p class="result-quote">${el.quote || ""}</p>
+      </div>
+    `;
+  });
+
+  innerHTML += '</div>';
+  
+  overlay.innerHTML = innerHTML;
   document.body.appendChild(overlay);
 
-  // Klik op nieuw element → terug naar begin
+ // Klik om overlay te sluiten en elementen toe te voegen
   overlay.addEventListener("click", () => {
-    const map = mappen.find(m => m.naam === combi.output.map);
-    if (!map.elementen.some(e => e.naam === combi.output.naam)) {
-      map.elementen.push({
-        naam: combi.output.naam,
-        icoon: combi.output.icoon
-      });
-    }
+    combi.output.forEach(el => {
+      const map = mappen.find(m => m.naam === el.map);
+      if (!map.elementen.some(e => e.naam === el.naam)) {
+        map.elementen.push({
+          naam: el.naam,
+          icoon: el.icoon
+        });
+      }
+    });
 
     overlay.remove();
-
-    // Reset alles
     leftOpenGroup = null;
     rightOpenGroup = null;
     leftSelectedElement = null;
