@@ -254,43 +254,76 @@ function tryCombine() {
     return;
   }
 
-  // ---------------- START COMBINATIE ANIMATIE ----------------
-  isCombining = true;
+// ---------------- START COMBINATIE ANIMATIE ----------------
+isCombining = true;
 
-  const leftEl = document.querySelector("#left-elements-container .selected");
-  const rightEl = document.querySelector("#right-elements-container .selected");
+const leftEl = document.querySelector("#left-elements-container .selected");
+const rightEl = document.querySelector("#right-elements-container .selected");
 
-  const leftRect = leftEl.getBoundingClientRect();
-  const rightRect = rightEl.getBoundingClientRect();
+// 1️⃣ Meet originele positie DIRECT
+const leftRect = leftEl.getBoundingClientRect();
+const rightRect = rightEl.getBoundingClientRect();
 
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
+// 2️⃣ Maak clones (belangrijk!)
+const leftClone = leftEl.cloneNode(true);
+const rightClone = rightEl.cloneNode(true);
 
-  // absolute positioneren voor animatie
-  [leftEl, rightEl].forEach(el => {
-    el.style.position = "fixed";
-    el.style.left = el.getBoundingClientRect().left + "px";
-    el.style.top = el.getBoundingClientRect().top + "px";
-    el.style.zIndex = "999";
-    el.style.transition = "all 1s ease-in-out";
-  });
+document.body.appendChild(leftClone);
+document.body.appendChild(rightClone);
 
-  // animatie naar midden
-  setTimeout(() => {
-    leftEl.style.left = centerX - leftRect.width / 2 + "px";
-    leftEl.style.top = centerY - leftRect.height / 2 + "px";
+// 3️⃣ Zet clones exact op beginpositie
+Object.assign(leftClone.style, {
+  position: "fixed",
+  left: leftRect.left + "px",
+  top: leftRect.top + "px",
+  width: leftRect.width + "px",
+  height: leftRect.height + "px",
+  margin: 0,
+  zIndex: 999,
+  transition: "all 0.8s ease-in-out"
+});
 
-    rightEl.style.left = centerX - rightRect.width / 2 + "px";
-    rightEl.style.top = centerY - rightRect.height / 2 + "px";
-  }, 50);
+Object.assign(rightClone.style, {
+  position: "fixed",
+  left: rightRect.left + "px",
+  top: rightRect.top + "px",
+  width: rightRect.width + "px",
+  height: rightRect.height + "px",
+  margin: 0,
+  zIndex: 999,
+  transition: "all 0.8s ease-in-out"
+});
 
-  // na animatie: toon nieuw element
-  setTimeout(() => {
-    leftEl.remove();
-    rightEl.remove();
-    showNewElement(combi);
-  }, 1100);
-}
+// 4️⃣ Verberg originele elementen (layout blijft stabiel)
+leftEl.style.visibility = "hidden";
+rightEl.style.visibility = "hidden";
+
+// 5️⃣ Bereken midden
+const centerX = window.innerWidth / 2;
+const centerY = window.innerHeight / 2;
+
+// 6️⃣ Force reflow
+leftClone.offsetWidth;
+
+// 7️⃣ Animeer naar midden
+leftClone.style.left = centerX - leftRect.width / 2 + "px";
+leftClone.style.top = centerY - leftRect.height / 2 + "px";
+
+rightClone.style.left = centerX - rightRect.width / 2 + "px";
+rightClone.style.top = centerY - rightRect.height / 2 + "px";
+
+// 8️⃣ Na animatie → opruimen en resultaat tonen
+setTimeout(() => {
+
+  leftClone.remove();
+  rightClone.remove();
+
+  leftEl.remove();
+  rightEl.remove();
+
+  showNewElement(combi);
+
+}, 800);
 
 function showNewElement(combi) {
 
