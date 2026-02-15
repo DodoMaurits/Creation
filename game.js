@@ -1,6 +1,4 @@
 // ---------------- DATA ----------------
-
-// Voorbeeld mappen
 const mappen = [
   {
     naam: "Heelal",
@@ -19,7 +17,6 @@ const mappen = [
   }
 ];
 
-// Voorbeeld combinaties
 const combinaties = [
   {
     input: ["Oerknal", "Warmte"],
@@ -48,13 +45,20 @@ function renderGroups(side) {
   const container = document.getElementById(side + "-maps");
   container.innerHTML = "";
 
+  const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
+  // Voeg of verwijder "no-open" klasse
+  if (openGroup === null) {
+    panel.classList.add("no-open");
+  } else {
+    panel.classList.remove("no-open");
+  }
+
+  // Render groepen
   if (openGroup !== null) {
-    // Alleen geopende groep tonen
     createGroupElement(container, side, openGroup);
   } else {
-    // Anders alle groepen tonen
     mappen.forEach((_, idx) => {
       createGroupElement(container, side, idx);
     });
