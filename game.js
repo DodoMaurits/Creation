@@ -332,12 +332,20 @@ function showNewElement(combi) {
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
 
+  // ✅ Achtergrond met afbeelding + overlay
+  overlay.style.background = `
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('afb/beginscherm.png') center center / cover no-repeat
+  `;
+  
   overlay.innerHTML = `
     <div class="result-box">
       <img src="${combi.output.icoon}" class="result-image">
       <h2 class="result-title">${combi.output.naam}</h2>
       <p class="result-quote">
-        "Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion" - Isaac Newton
+        "Gravity explains the motions of the planets,
+        <br>but it cannot explain who sets the planets in motion" 
+        <br>- Isaac Newton
       </p>
     </div>
   `;
@@ -346,8 +354,6 @@ function showNewElement(combi) {
 
   // Klik op nieuw element → terug naar begin
   overlay.addEventListener("click", () => {
-
-    // Voeg element toe aan juiste map
     const map = mappen.find(m => m.naam === combi.output.map);
     if (!map.elementen.some(e => e.naam === combi.output.naam)) {
       map.elementen.push({
