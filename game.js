@@ -383,7 +383,7 @@ function showNewElement(combi) {
       // map bestaat nog niet → nieuwe groep aanmaken
       map = {
         naam: el.map,
-        icoon: el.icoon, // gebruik icoon van het element
+        icoon: groepsIconen[el.map] || "icons/default.png", // gebruik icoon van het element
         elementen: []
       };
       mappen.push(map);
