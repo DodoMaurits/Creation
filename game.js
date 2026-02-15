@@ -336,7 +336,7 @@ function showNewElement(combi) {
       <img src="${combi.output.icoon}" class="result-image">
       <h2 class="result-title">${combi.output.naam}</h2>
       <p class="result-quote">
-        Zwaartekracht is de moeder van alle krachten - Albert Einstein
+        "Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion" - Isaac Newton
       </p>
     </div>
   `;
