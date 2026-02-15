@@ -4,23 +4,24 @@
   <meta charset="UTF-8">
   <title>Creation</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background-image: url("afb/creatiescherm.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-linear-gradient: (rgba(0,0,0,0.8), rgba(0,0,0,0.8));
-      font-family: Arial, sans-serif;
-      cursor: pointer;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start; /* bovenkant */
-    }
-
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* bovenkant */
+  
+    /* Donkere overlay + achtergrondafbeelding */
+    background: 
+      linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+      url("afb/creatiescherm.png") center center / cover no-repeat;
+  }
+    
     .container {
       position: relative;
       width: 100%;
