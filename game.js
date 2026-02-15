@@ -244,26 +244,34 @@ function tryCombine() {
     c.input.includes(rightSelectedElement)
   );
 
-  if (!combi) return;
+  if (combi) {
+    // ✔ Nieuwe combinatie gevonden
+    alert(`Nieuw element ontdekt: ${combi.output.naam}`);
 
-  alert(`Nieuw element ontdekt: ${combi.output.naam}`);
+    const map = mappen.find(m => m.naam === combi.output.map);
+    if (!map.elementen.some(e => e.naam === combi.output.naam)) {
+      map.elementen.push({
+        naam: combi.output.naam,
+        icoon: combi.output.icoon
+      });
+    }
 
-  const map = mappen.find(m => m.naam === combi.output.map);
-  if (!map.elementen.some(e => e.naam === combi.output.naam)) {
-    map.elementen.push({
-      naam: combi.output.naam,
-      icoon: combi.output.icoon
-    });
+    // Reset alles
+    leftOpenGroup = null;
+    rightOpenGroup = null;
+    leftSelectedElement = null;
+    rightSelectedElement = null;
+
+    renderGroups("left");
+    renderGroups("right");
+
+  } else {
+    // ❌ Geen combinatie → beide deselecteren
+    leftSelectedElement = null;
+    rightSelectedElement = null;
+    renderLeftElements();
+    renderRightElements();
   }
-
-  // Reset alles
-  leftOpenGroup = null;
-  rightOpenGroup = null;
-  leftSelectedElement = null;
-  rightSelectedElement = null;
-
-  renderGroups("left");
-  renderGroups("right");
 }
 
 // ---------------- START ----------------
