@@ -451,3 +451,28 @@ function showNewElement(combi) {
 
 // ---------------- START ----------------
 init();
+
+// ---------------- GLOBAL TOOLTIP ----------------
+const tooltip = document.createElement("div");
+tooltip.id = "tooltip";
+document.body.appendChild(tooltip);
+
+document.addEventListener("mouseover", e => {
+  const target = e.target.closest(".map, .element");
+  if (!target) return;
+
+  tooltip.textContent = target.dataset.name;
+  tooltip.style.opacity = "1";
+});
+
+document.addEventListener("mousemove", e => {
+  tooltip.style.left = e.clientX + 15 + "px";
+  tooltip.style.top = e.clientY + 15 + "px";
+});
+
+document.addEventListener("mouseout", e => {
+  if (e.target.closest(".map, .element")) {
+    tooltip.style.opacity = "0";
+  }
+});
+
