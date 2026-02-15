@@ -156,20 +156,30 @@ body {
   100% { transform: translate(0, 0); }
 }
 
-/* ---------------- GLOBAL TOOLTIP ---------------- */
-/* Deze werkt samen met de JS die ik eerder gaf */
-#tooltip {
-  position: fixed;
-  background: rgba(0,0,0,0.92);
+/* ---------------- TOOLTIP (CSS-only) ---------------- */
+.map::after,
+.element::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 110%;              /* net onder het element */
+  left: 50%;              /* horizontaal centreren */
+  transform: translateX(-50%) scale(0.9);
+  background: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 6px 10px;
   border-radius: 8px;
   font-size: 13px;
   white-space: nowrap;
-  pointer-events: none;
   opacity: 0;
-  transition: opacity 0.15s ease;
-  z-index: 99999;
+  pointer-events: none;
+  transition: all 0.15s ease;
+  z-index: 1000;
+}
+
+.map:hover::after,
+.element:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
 }
 
 /* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
