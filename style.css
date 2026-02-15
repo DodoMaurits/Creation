@@ -7,7 +7,6 @@ body {
 }
 
 /* ---------- HOMEPAGE ---------- */
-
 .homepage {
   margin: 0;
   padding: 0;
@@ -50,7 +49,7 @@ body {
   background: #d0f0ff;
 }
 
-/* Verdeel scherm in 2 helften */
+/* ---------- GAME LAYOUT ---------- */
 #game {
   display: flex;
   height: 100vh;
@@ -62,38 +61,41 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: center;      /* centreren horizontaal */
+  justify-content: flex-start; /* start bovenaan */
+  padding-top: 30px;        /* ruimte boven voor groepsicoon */
   background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
 }
 
-/* Container waar groepen/elementen in komen */
-.maps-container,
-.elements-container {
+/* Container voor groepen en elementen */
+.maps-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;      /* groep icoon gecentreerd */
+  margin-bottom: 20px;
 }
 
-/* ---------------- GROEPEN ---------------- */
+.elements-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* max 4 per rij */
+  gap: 15px;
+  justify-content: center;  /* grid in midden */
+}
 
+/* ---------- GROEPEN ---------- */
 .map {
-  position: relative; /* nodig voor tooltip */
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center; /* alleen icoon centreren */
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  cursor: pointer;
+  justify-content: center;
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .map.open {
-  transform: translateY(-15px);
+  transform: translateY(0px); /* geen schuiven */
   background-color: #eef;
 }
 
@@ -102,23 +104,21 @@ body {
   height: 100px;
 }
 
-/* ---------------- ELEMENTEN ---------------- */
-
+/* ---------- ELEMENTEN ---------- */
 .element {
-  position: relative; /* nodig voor tooltip */
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease;
+  transition: transform 0.15s ease, background 0.2s ease;
 }
 
 .element.selected {
-  background-color: #d0f0ff;
   transform: scale(1.1);
+  background-color: #d0f0ff;
 }
 
 .element img {
@@ -126,15 +126,12 @@ body {
   height: 100px;
 }
 
-/* ---------------- TOOLTIP ---------------- */
-
-/* Verberg standaard eventuele spans */
+/* ---------- TOOLTIP ---------- */
 .map span,
 .element span {
   display: none;
 }
 
-/* Tooltip basis */
 .map::after,
 .element::after {
   content: attr(data-name);
@@ -153,7 +150,6 @@ body {
   transition: all 0.15s ease;
 }
 
-/* Tooltip zichtbaar bij hover */
 .map:hover::after,
 .element:hover::after {
   opacity: 1;
