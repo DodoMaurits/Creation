@@ -22,9 +22,10 @@ body {
 .overlay {
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
-  padding: 60px;
+  padding: 40px 60px;
   border-radius: 20px;
   backdrop-filter: blur(4px);
+  max-width: 90%;
 }
 
 .title {
