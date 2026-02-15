@@ -1,4 +1,4 @@
-// ---------------- DATA ---------------
+// ---------------- DATA ----------------
 const mappen = [
   {
     naam: "Heelal",
@@ -48,64 +48,72 @@ function layoutGroups(side, instant = false) {
 
   const mapSize = 100;
   const gap = 15;
-  const containerHeight = container.clientHeight; // betrouwbare hoogte
+  const containerHeight = container.clientHeight;
 
   if (openGroup !== null) {
-  // Eén groep open → rest verbergen
+    // ---------------- OPEN GROEP ----------------
     groups.forEach((groupDiv, idx) => {
       if (idx === openGroup) {
         groupDiv.style.display = "flex";
         groupDiv.classList.add("open");
-        const containerWidth = container.clientWidth;
-        const x = containerWidth / 2 - mapSize / 2;
-        const y = 20; // bovenin
+
+        const x = container.clientWidth / 2 - mapSize / 2;
+        const y = 20;
+
         if (instant) groupDiv.style.transition = "none";
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
         if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
-  
-        // ELEMENTEN CONTAINER POSITIONEREN
+
+        // ELEMENTEN CONTAINER POSITIE
         const elementsContainer = document.getElementById(side + "-elements-container");
         elementsContainer.style.position = "absolute";
         elementsContainer.style.top = `${y + mapSize + 10}px`;
         elementsContainer.style.left = "0";
         elementsContainer.style.width = "100%";
-        elementsContainer.style.display = "flex";
-        elementsContainer.style.justifyContent = "center";
+        elementsContainer.style.display = "grid";
+        elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
         elementsContainer.style.gap = `${gap}px`;
-  
+        elementsContainer.style.justifyContent = "center";
+        elementsContainer.style.alignItems = "center";
+
       } else {
         groupDiv.style.display = "none";
         groupDiv.classList.remove("open");
       }
     });
   } else {
-    // Geen groep open → alles tonen in midden
+    // ---------------- GEEN GROEP OPEN ----------------
     const totalCols = Math.min(4, groups.length);
     const totalRows = Math.ceil(groups.length / 4);
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
     const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-  
+
     groups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
-  
+
       const col = idx % 4;
       const row = Math.floor(idx / 4);
-  
+
       const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
-  
+      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
+
       if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
       if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
     });
-  
-    // ELEMENTEN CONTAINER VERBERGEN EN RESETTEN
+
+    // ELEMENTEN CONTAINER VERBERGEN
     const elementsContainer = document.getElementById(side + "-elements-container");
     elementsContainer.innerHTML = "";
-    elementsContainer.style.top = "0"; // reset bovenin
     elementsContainer.style.position = "absolute";
-  });
+    elementsContainer.style.top = "0";
+    elementsContainer.style.display = "grid";
+    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
+    elementsContainer.style.gap = `${gap}px`;
+    elementsContainer.style.justifyContent = "center";
+  }
+}
 
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side, instant = false) {
