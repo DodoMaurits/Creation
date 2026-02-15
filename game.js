@@ -47,7 +47,7 @@ const combinaties = [
       }
     ]
   },
-  {
+    {
       input: ["Zwaartekracht", "Quark"],
       output: [
         {
@@ -57,7 +57,18 @@ const combinaties = [
           quote: "The reason why the universe is eternal is that <br>it does not live for itself: it gives life to others <br>as it transforms <br>- Lao Tzu"
         }
       ]
-    }
+    },
+      {
+        input: ["Quark", "Kou"],
+        output: [
+          {
+            naam: "Atomen",
+            icoon: "icons/Atomen.png",
+            map: "Chemie",
+            quote: "In reality, nothing <br>but atoms and the void<br>- Democritos"
+          }
+        ]
+      }
 ];
 
 const groepsIconen = {
