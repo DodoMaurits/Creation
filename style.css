@@ -6,51 +6,6 @@ body {
   height: 100vh;
 }
 
-/* ---------------- HOMEPAGE ---------------- */
-.homepage {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("achtergrond.png"); /* pas aan naar jouw pad */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay {
-  text-align: center;
-  background: rgba(0,0,0,0.4);
-  padding: 60px 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(4px);
-  max-width: 90%;
-}
-
-.title {
-  color: white;
-  font-size: 64px;
-  letter-spacing: 6px;
-  margin-bottom: 40px;
-}
-
-.start-button {
-  padding: 15px 40px;
-  font-size: 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background: white;
-  transition: all 0.3s ease;
-}
-
-.start-button:hover {
-  transform: scale(1.1);
-  background: #d0f0ff;
-}
-
 /* ---------------- GAME LAYOUT ---------------- */
 #game {
   display: flex;
@@ -65,24 +20,26 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;         /* horizontaal centreren */
+  align-items: center;
   justify-content: flex-start; /* start bovenaan */
-  padding-top: 30px;           /* ruimte voor groepsicoon */
+  padding-top: 30px;           /* ruimte boven voor groepsicoon */
   background: transparent;
+  transition: all 0.2s ease;
 }
 
-/* Containers */
+/* ---------------- CONTAINERS ---------------- */
 .maps-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
   flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
+/* ---------------- ELEMENTEN ---------------- */
 .elements-container {
   display: grid;
-  grid-template-columns: repeat(4, 100px); /* max 4 per rij */
+  grid-template-columns: repeat(4, 100px);
   gap: 15px;
   justify-content: center;
 }
@@ -101,7 +58,7 @@ body {
 }
 
 .map.open {
-  transform: translateY(0px); /* geen schuiven */
+  transform: translateY(0px);
   background-color: #eef;
 }
 
@@ -161,4 +118,15 @@ body {
 .element:hover::after {
   opacity: 1;
   transform: translateX(-50%) scale(1);
+}
+
+/* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
+#left-panel.no-open,
+#right-panel.no-open {
+  justify-content: center; /* verticaal centreren */
+}
+
+#left-panel.no-open .maps-container,
+#right-panel.no-open .maps-container {
+  justify-content: center; /* horizontaal centreren */
 }
