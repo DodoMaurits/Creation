@@ -40,32 +40,46 @@ function init() {
   renderGroups("right", true);
 }
 
-// ---------------- LAY-OUT ----------------
-function layoutGroups(side, instant=false) { // extra param
+// ---------------- LAYOUT ----------------
+function layoutGroups(side, instant = false) {
   const container = document.getElementById(side + "-maps");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
   const groups = container.querySelectorAll(".map");
 
   const mapSize = 100;
   const gap = 15;
+  const containerHeight = container.clientHeight; // betrouwbare hoogte
 
   if (openGroup !== null) {
+    // Eén groep open → rest verbergen
     groups.forEach((groupDiv, idx) => {
       if (idx === openGroup) {
         groupDiv.style.display = "flex";
         groupDiv.classList.add("open");
         const containerWidth = container.clientWidth;
         const x = containerWidth / 2 - mapSize / 2;
-        const y = 20;
+        const y = 20; // bovenin bij open
         if (instant) groupDiv.style.transition = "none";
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
         if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
+
+        // ELEMENTEN CONTAINER POSITIONEREN
+        const elementsContainer = document.getElementById(side + "-elements-container");
+        elementsContainer.style.position = "absolute";
+        elementsContainer.style.top = `${y + mapSize + 10}px`;
+        elementsContainer.style.left = "0";
+        elementsContainer.style.width = "100%";
+        elementsContainer.style.display = "flex";
+        elementsContainer.style.justifyContent = "center";
+        elementsContainer.style.gap = `${gap}px`;
+
       } else {
         groupDiv.style.display = "none";
         groupDiv.classList.remove("open");
       }
     });
   } else {
+    // Geen groep open → alles tonen in midden
     const totalCols = Math.min(4, groups.length);
     const totalRows = Math.ceil(groups.length / 4);
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
@@ -74,21 +88,26 @@ function layoutGroups(side, instant=false) { // extra param
     groups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
+
       const col = idx % 4;
       const row = Math.floor(idx / 4);
 
       const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
+      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
 
       if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
       if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
     });
+
+    // ELEMENTEN CONTAINER VERBERGEN
+    const elementsContainer = document.getElementById(side + "-elements-container");
+    elementsContainer.innerHTML = "";
   }
 }
 
 // ---------------- RENDER GROEPEN ----------------
-function renderGroups(side, instant=false) {
+function renderGroups(side, instant = false) {
   const container = document.getElementById(side + "-maps");
   const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
@@ -103,23 +122,20 @@ function renderGroups(side, instant=false) {
   layoutGroups(side, instant);
 }
 
+// ---------------- CREATE GROEP ----------------
 function createGroupElement(container, side, idx) {
   const map = mappen[idx];
-
   const div = document.createElement("div");
   div.className = "map";
   div.dataset.name = map.naam;
   div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
-  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
-  if (openGroup === idx) div.classList.add("open");
-
   div.addEventListener("click", () => {
     if (side === "left") {
       leftOpenGroup = leftOpenGroup === idx ? null : idx;
       leftSelectedElement = null;
-      layoutGroups("left");           // laat groepen morphen
-      setTimeout(renderLeftElements, 1500); // elementen verschijnen pas na morphen
+      layoutGroups("left");
+      setTimeout(renderLeftElements, 1500);
     } else {
       rightOpenGroup = rightOpenGroup === idx ? null : idx;
       rightSelectedElement = null;
@@ -209,8 +225,6 @@ function tryCombine() {
 
   renderGroups("left");
   renderGroups("right");
-  document.getElementById("left-elements-container").innerHTML = "";
-  document.getElementById("right-elements-container").innerHTML = "";
 }
 
 // ---------------- START ----------------
