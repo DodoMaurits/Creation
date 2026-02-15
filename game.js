@@ -36,7 +36,7 @@ const combinaties = [
     ]
   },
   {
-      input: ["Zwaartekracht, "Quark"],
+      input: ["Zwaartekracht", "Quark"],
       output: [
         {
           naam: "Heelal",
@@ -351,10 +351,10 @@ function showNewElement(combi) {
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
-  overlay.style.background = `
-    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('afb/beginscherm.png') center center / cover no-repeat
-  `;
+  overlay.style.background = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('afb/beginscherm.png')";
+  overlay.style.backgroundPosition = "center";
+  overlay.style.backgroundSize = "cover";
+  overlay.style.backgroundRepeat = "no-repeat";
 
   // container voor meerdere elementen
   let innerHTML = '<div class="result-box-container" style="display:flex; justify-content:center; gap:50px;">';
@@ -383,7 +383,7 @@ function showNewElement(combi) {
         // map bestaat nog niet → nieuwe groep aanmaken
         map = {
           naam: el.map,
-          icoon: "icons/default.png", // je kunt hier eventueel een standaard icoon zetten
+          icoon: el.icoon,
           elementen: []
         };
         mappen.push(map);
