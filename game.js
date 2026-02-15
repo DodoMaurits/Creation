@@ -53,26 +53,29 @@ function layoutGroups(side) {
     if (openGroup !== null) {
       if (idx === openGroup) {
         // Alleen de geopende groep morpht naar boven
-        x = container.clientWidth / 2 - 50; // 50 = helft van de breedte
-        y = 20;
-        groupDiv.style.display = "flex"; // toon deze groep
+        const containerWidth = container.clientWidth;
+        x = containerWidth / 2 - 50; // helft van breedte map
+        y = 20; // bovenin
+        groupDiv.style.display = "flex";
+        groupDiv.classList.add("open");
       } else {
-        // Alle andere groepen verdwijnen meteen
+        // andere groepen verdwijnen meteen
         groupDiv.style.display = "none";
-        return; // stop met layout voor deze groep
+        groupDiv.classList.remove("open");
+        return;
       }
     } else {
-      // Geen groep open → alle groepen tonen en centreren in grid
+      // Geen groep open → alles weer tonen
       groupDiv.style.display = "flex";
+      groupDiv.classList.remove("open");
+
       const col = idx % 4;
       const row = Math.floor(idx / 4);
-
-      // Bereken offset om horizontaal en verticaal in container te centreren
       const totalCols = Math.min(4, groups.length);
       const totalRows = Math.ceil(groups.length / 4);
 
-      const gridWidth = totalCols * 100 + (totalCols - 1) * 15; // breedte alle maps incl. gap
-      const gridHeight = totalRows * 100 + (totalRows - 1) * 15; // hoogte alle rows incl. gap
+      const gridWidth = totalCols * 100 + (totalCols - 1) * 15;
+      const gridHeight = totalRows * 100 + (totalRows - 1) * 15;
 
       x = col * 115 + (container.clientWidth - gridWidth) / 2;
       y = row * 115 + (container.clientHeight - gridHeight) / 2;
