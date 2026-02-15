@@ -5,24 +5,18 @@
   <title>Creation</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="homepage">
 
-<div id="game">
-
-  <!-- LINKER PANEL -->
-  <div id="left-panel">
-    <div id="left-maps"></div>
-    <div id="left-elements-container"></div>
+  <div class="overlay">
+    <h1 class="title">CREATION</h1>
+    <button class="start-button" onclick="startGame()">Start</button>
   </div>
 
-  <!-- RECHTER PANEL -->
-  <div id="right-panel">
-    <div id="right-maps"></div>
-    <div id="right-elements-container"></div>
-  </div>
+  <script>
+    function startGame() {
+      window.location.href = "index.html"; 
+    }
+  </script>
 
-</div>
-
-<script src="game.js"></script>
 </body>
 </html>
