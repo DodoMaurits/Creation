@@ -89,7 +89,7 @@ body {
   width: 100%;                /* vult de breedte van het panel */
   top: 0;                     /* JS past top aan */
   left: 0;
-  z-index: 1;                 /* boven maps */
+  z-index: 2;                 /* boven maps */
   pointer-events: auto;       /* zodat je kunt klikken */
 }
 
@@ -103,11 +103,11 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1;
+  z-index: 2;
 }
 
 .map.open {
-  z-index: 2;
+  z-index: 3;
   background-color: #eef;
 }
 
@@ -127,7 +127,7 @@ body {
   justify-content: center;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 10px;
-  z-index: 0;
+  z-index: 1;
 }
 
 @keyframes shake {
