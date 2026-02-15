@@ -54,7 +54,7 @@ const combinaties = [
           naam: "Heelal",
           icoon: "icons/Heelal.png",
           map: "Ruimte",
-          quote: "Heelal is the limit"
+          quote: "The reason why the universe is eternal is that <br>it does not live for itself: it gives life to others <br>as it transforms <br>- Lao Tzu"
         }
       ]
     }
