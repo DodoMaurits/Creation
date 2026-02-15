@@ -19,11 +19,11 @@ const mappen = [
 
 const combinaties = [
   {
-    input: ["Oerknal", "Warmte"],
+    input: ["Oerknal", "Kou"],
     output: {
-      naam: "Energie",
-      icoon: "icons/Energie.png",
-      map: "Heelal"
+      naam: "Zwaartekracht",
+      icoon: "icons/Zwaartekracht.png",
+      map: "Krachten"
     }
   }
 ];
