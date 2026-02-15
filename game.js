@@ -140,16 +140,46 @@ function createGroupElement(container, side, idx) {
   div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
   div.addEventListener("click", () => {
-    if (side === "left") {
-      leftOpenGroup = leftOpenGroup === idx ? null : idx;
-      leftSelectedElement = null;
-      layoutGroups("left");
-      setTimeout(renderLeftElements, 1500);
+    const isLeft = side === "left";
+    const openGroup = isLeft ? leftOpenGroup : rightOpenGroup;
+    const selectedElementProp = isLeft ? "leftSelectedElement" : "rightSelectedElement";
+    const elementsContainer = document.getElementById(side + "-elements-container");
+
+    // Als deze groep al open is → sluiten
+    if (openGroup === idx) {
+      // Event listener voor als morph klaar is
+      div.addEventListener("transitionend", function handler(e) {
+        if (e.propertyName !== "transform") return; // alleen op transform
+        div.removeEventListener("transitionend", handler);
+
+        if (isLeft) leftOpenGroup = null;
+        else rightOpenGroup = null;
+
+        // Andere groepen verschijnen pas nu
+        renderGroups(side);
+
+        // Verwijder elementen
+        elementsContainer.innerHTML = "";
+      });
+
+      // Trigger morph naar gesloten positie
+      if (isLeft) leftSelectedElement = null;
+      else rightSelectedElement = null;
+      layoutGroups(side);
+
     } else {
-      rightOpenGroup = rightOpenGroup === idx ? null : idx;
-      rightSelectedElement = null;
-      layoutGroups("right");
-      setTimeout(renderRightElements, 1500);
+      // Groep openen
+      if (isLeft) leftOpenGroup = idx;
+      else rightOpenGroup = idx;
+
+      if (isLeft) leftSelectedElement = null;
+      else rightSelectedElement = null;
+
+      layoutGroups(side);
+      setTimeout(() => {
+        if (isLeft) renderLeftElements();
+        else renderRightElements();
+      }, 800); // elementen verschijnen na morph
     }
   });
 
