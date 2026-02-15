@@ -28,10 +28,22 @@ const combinaties = [
         quote: "Gravity explains the motions of the planets, <br>but it cannot explain who sets the planets in motion <br>- Isaac Newton"
       },
       {
+        naam: "Straling",
+        icoon: "icons/Straling.png",
+        map: "Krachten",
+        quote: "A compassionate heart radiates rays of beauty <br>that remove the clouds of million hearts <br>- Amit Ray"
+      },
+      {
         naam: "Quark",
         icoon: "icons/Quark.png",
         map: "Chemie",
         quote: "Every atom in your body is the same quark <br>in different places at the same moment in time <br>- David Eagleman"
+      },
+      {
+        naam: "Elektriciteit",
+        icoon: "icons/Elektriciteit.png",
+        map: "Krachten",
+        quote: "We're electrical items and when we die <br>the electricity goes somewhere else <br>- Dominic Monaghan
       }
     ]
   },
