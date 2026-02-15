@@ -80,12 +80,15 @@ body {
 }
 
 .elements-container {
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  gap: 15px;
-  justify-content: center;
-  position: relative;
-  z-index: 0;
+  display: flex;              /* horizontaal uitlijnen van elementen */
+  justify-content: center;    /* centreren */
+  gap: 15px;                  /* ruimte tussen elementen */
+  position: absolute;         /* absoluut positioneren in panel */
+  width: 100%;                /* vult de breedte van het panel */
+  top: 0;                     /* JS past top aan */
+  left: 0;
+  z-index: 1;                 /* boven maps */
+  pointer-events: auto;       /* zodat je kunt klikken */
 }
 
 .map {
