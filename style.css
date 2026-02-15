@@ -59,30 +59,30 @@ body {
   background: #f5f5f5;
 }
 
-/* Linker- en rechterhelft */
+/* ---------------- LINKER/RECHTER PANEL ---------------- */
 #left-panel,
 #right-panel {
   position: relative;
-  height: 300px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* start bovenaan */
-  padding-top: 30px;           /* ruimte boven voor groepsicoon */
+  justify-content: center; /* verticaal centreren bij geen open groep */
   background: transparent;
   transition: all 0.2s ease;
+  padding-top: 0; /* geen extra padding nodig */
 }
 
-/* ---------------- CONTAINERS ---------------- */
+/* ---------------- MAPS CONTAINER ---------------- */
 .maps-container {
+  position: relative; /* voor absolute positioning van maps */
+  width: 100%;
+  height: 100%;       /* vult het panel zodat centreren werkt */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* horizontaal centreren bij geen open groep */
+  align-items: center;     /* verticaal centreren bij geen open groep */
   gap: 15px;
-  justify-content: center;
-  margin-bottom: 20px;
-  height: 300px; /* vaste hoogte zodat elementen eronder komen */
-  position: relative; /* nodig voor absolute maps */
 }
 
 .elements-container {
@@ -96,20 +96,20 @@ body {
 
 /* ---------------- GROEPEN ---------------- */
 .map {
-  position: absolute;
+  position: absolute;   /* absolute voor morphen */
   width: 100px;
   height: 100px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  cursor: pointer;
   transition: transform 1.5s ease-in-out;
   z-index: 1;
 }
 
 .map.open {
-  transform: translateY(0px);
+  z-index: 2;
   background-color: #eef;
 }
 
