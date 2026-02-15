@@ -70,7 +70,7 @@ body {
   align-items: center;
   justify-content: center; /* voor no-open */
   background: transparent;
-  height: 100%; /* belangrijk! */
+  height: 50%; /* belangrijk! */
 }
 
 .maps-container {
