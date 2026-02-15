@@ -68,22 +68,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* verticaal centreren bij geen open groep */
+  justify-content: center; /* voor no-open */
   background: transparent;
-  transition: all 0.2s ease;
-  padding-top: 0; /* geen extra padding nodig */
+  height: 100%; /* belangrijk! */
 }
 
-/* ---------------- MAPS CONTAINER ---------------- */
 .maps-container {
-  position: relative; /* voor absolute positioning van maps */
+  position: relative;
   width: 100%;
-  height: 100%;       /* vult het panel zodat centreren werkt */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* horizontaal centreren bij geen open groep */
-  align-items: center;     /* verticaal centreren bij geen open groep */
-  gap: 15px;
+  height: 100%; /* belangrijk! zodat JS juiste clientHeight heeft */
 }
 
 .elements-container {
@@ -95,9 +88,8 @@ body {
   z-index: 0;
 }
 
-/* ---------------- GROEPEN ---------------- */
 .map {
-  position: absolute;   /* absolute voor morphen */
+  position: absolute;
   width: 100px;
   height: 100px;
   display: flex;
@@ -197,4 +189,5 @@ body {
 #left-panel.no-open .maps-container,
 #right-panel.no-open .maps-container {
   justify-content: center; /* horizontaal centreren */
+  align-items: center;     /* verticaal */
 }
