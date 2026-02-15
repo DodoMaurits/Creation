@@ -97,7 +97,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.6s ease-in-out;
+  transition: all 2s ease-in-out;
   border-radius: 10px;
 }
 
@@ -120,7 +120,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.6s ease-in-out;
+  transition: all 2s ease-in-out;
   border-radius: 10px;
 }
 
