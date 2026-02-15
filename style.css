@@ -81,6 +81,8 @@ body {
   gap: 15px;
   justify-content: center;
   margin-bottom: 20px;
+  height: 300px; /* vaste hoogte zodat elementen eronder komen */
+  position: relative; /* nodig voor absolute maps */
 }
 
 .elements-container {
