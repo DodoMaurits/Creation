@@ -25,25 +25,25 @@ const combinaties = [
         naam: "Zwaartekracht",
         icoon: "icons/Zwaartekracht.png",
         map: "Krachten",
-        quote: "Gravity explains the motions of the planets, <br>but it cannot explain who sets the planets in motion <br>- Isaac Newton"
+        quote: "Gravity explains the motions of the planets, <br>but it cannot explain who sets the planets in motion <br><br>- Isaac Newton"
       },
       {
         naam: "Straling",
         icoon: "icons/Straling.png",
         map: "Krachten",
-        quote: "A compassionate heart radiates rays of beauty <br>that remove the clouds of million hearts <br>- Amit Ray"
+        quote: "A compassionate heart radiates rays of beauty <br>that remove the clouds of million hearts <br><br>- Amit Ray"
       },
       {
         naam: "Quark",
         icoon: "icons/Quark.png",
         map: "Chemie",
-        quote: "Every atom in your body is the same quark <br>in different places at the same moment in time <br>- David Eagleman"
+        quote: "Every atom in your body is the same quark <br>in different places at the same moment in time <br><br>- David Eagleman"
       },
       {
         naam: "Elektriciteit",
         icoon: "icons/Elektriciteit.png",
         map: "Krachten",
-        quote: "We're electrical items and when we die <br>the electricity goes somewhere else <br>- Dominic Monaghan"
+        quote: "We're electrical items and when we die <br>the electricity goes somewhere else <br><br>- Dominic Monaghan"
       }
     ]
   },
@@ -54,7 +54,7 @@ const combinaties = [
           naam: "Heelal",
           icoon: "icons/Heelal.png",
           map: "Ruimte",
-          quote: "The reason why the universe is eternal is that <br>it does not live for itself: it gives life to others <br>as it transforms <br>- Lao Tzu"
+          quote: "The reason why the universe is eternal is that <br>it does not live for itself: it gives life to others <br>as it transforms <br><br>- Lao Tzu"
         }
       ]
     },
@@ -65,10 +65,21 @@ const combinaties = [
             naam: "Atomen",
             icoon: "icons/Atomen.png",
             map: "Chemie",
-            quote: "In reality, nothing <br>but atoms and the void<br>- Democritos"
+            quote: "In reality, nothing <br>but atoms and the void<br><br>- Democritos"
           }
         ]
-      }
+      },
+        {
+          input: ["Atomen", "Straling"],
+          output: [
+            {
+              naam: "Radioactiviteit",
+              icoon: "icons/Radioactiviteit.png",
+              mpa: "Krachten",
+              quote: "Nuclear power is one hell of a way <br>to boil water<br><br>-Albert Einstein"
+            }
+          ]
+        }
 ];
 
 const groepsIconen = {
