@@ -43,7 +43,7 @@ const combinaties = [
         naam: "Elektriciteit",
         icoon: "icons/Elektriciteit.png",
         map: "Krachten",
-        quote: "We're electrical items and when we die <br>the electricity goes somewhere else <br>- Dominic Monaghan
+        quote: "We're electrical items and when we die <br>the electricity goes somewhere else <br>- Dominic Monaghan"
       }
     ]
   },
