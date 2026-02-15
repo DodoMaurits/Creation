@@ -48,6 +48,12 @@ const combinaties = [
     }
 ];
 
+const groepsIconen = {
+  "Ruimte": "icons/Ruimte.png",
+  "Krachten": "icons/Krachten.png",
+  "Chemie": "icons/Chemie.png"
+};
+
 // ---------------- STATUS ----------------
 let isCombining = false;
 let leftOpenGroup = null;
