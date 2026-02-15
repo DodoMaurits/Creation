@@ -240,10 +240,11 @@ function renderRightElements() {
 function tryCombine() {
   if (!leftSelectedElement || !rightSelectedElement || isCombining) return;
 
-  const combi = combinaties.find(c =>
-    c.input.includes(leftSelectedElement) &&
-    c.input.includes(rightSelectedElement)
-  );
+  const combi = combinaties.find(c => {
+    const inputSorted = [...c.input].sort();
+    const selectedSorted = [leftSelectedElement, rightSelectedElement].sort();
+    return JSON.stringify(inputSorted) === JSON.stringify(selectedSorted);
+  });
 
   if (!combi) {
     // Geen combinatie → deselecteer beide
