@@ -51,15 +51,31 @@ function layoutGroups(side) {
     let x, y;
 
     if (openGroup !== null) {
-      // open groep bovenin centrum
-      x = container.clientWidth / 2 - 50; // 50 = helft van de breedte
-      y = 20;
+      if (idx === openGroup) {
+        // Alleen de geopende groep morpht naar boven
+        x = container.clientWidth / 2 - 50; // 50 = helft van de breedte
+        y = 20;
+        groupDiv.style.display = "flex"; // toon deze groep
+      } else {
+        // Alle andere groepen verdwijnen meteen
+        groupDiv.style.display = "none";
+        return; // stop met layout voor deze groep
+      }
     } else {
-      // geen groep open: raster van max 4 per rij
+      // Geen groep open → alle groepen tonen en centreren in grid
+      groupDiv.style.display = "flex";
       const col = idx % 4;
       const row = Math.floor(idx / 4);
-      x = col * 115; // 100px breed + 15px gap
-      y = row * 115;
+
+      // Bereken offset om horizontaal en verticaal in container te centreren
+      const totalCols = Math.min(4, groups.length);
+      const totalRows = Math.ceil(groups.length / 4);
+
+      const gridWidth = totalCols * 100 + (totalCols - 1) * 15; // breedte alle maps incl. gap
+      const gridHeight = totalRows * 100 + (totalRows - 1) * 15; // hoogte alle rows incl. gap
+
+      x = col * 115 + (container.clientWidth - gridWidth) / 2;
+      y = row * 115 + (container.clientHeight - gridHeight) / 2;
     }
 
     groupDiv.style.transform = `translate(${x}px, ${y}px)`;
