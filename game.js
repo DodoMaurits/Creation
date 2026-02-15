@@ -31,7 +31,7 @@ const combinaties = [
         naam: "Quark",
         icoon: "icons/Quark.png",
         map: "Chemie",
-        quote: "Chemie is the limit"
+        quote: "Every atom in your body is the same quark <br>in different places at the same moment in time <br>- David Eagleman"
       }
     ]
   },
