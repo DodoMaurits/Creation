@@ -70,13 +70,15 @@ body {
   align-items: center;
   justify-content: center; /* voor no-open */
   background: transparent;
-  height: 50%; /* belangrijk! */
 }
 
 .maps-container {
   position: relative;
   width: 100%;
-  height: 100%; /* belangrijk! zodat JS juiste clientHeight heeft */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .elements-container {
@@ -100,7 +102,7 @@ body {
   justify-content: center;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
 
@@ -123,7 +125,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 10px;
   z-index: 0;
 }
@@ -144,7 +146,7 @@ body {
 
 .element.selected {
   transform: none;          /* geen vergroting */
-  background-color: none;   /* geen kleur */
+  background-color: transparent;   /* geen kleur */
   animation: shake 0.6s infinite; /* rustiger trillen (langzamer) */
 }
 
@@ -194,3 +196,50 @@ body {
   justify-content: center; /* horizontaal centreren */
   align-items: center;     /* verticaal */
 }
+
+/* ---------------- RESULTAAT COMBINATIE --------------------- */
+#result-overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #000 40%, #111 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.result-box {
+  text-align: center;
+  color: white;
+  animation: scaleIn 0.8s ease-in-out;
+}
+
+.result-image {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.result-title {
+  font-family: "Cinzel", serif; /* historische look */
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.result-quote {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  margin-top: 15px;
+  opacity: 0.85;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.5); opacity: 0 }
+  to { transform: scale(1); opacity: 1 }
+}
+
