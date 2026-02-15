@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* voor no-open */
   background: transparent;
 }
 
@@ -82,18 +82,17 @@ body {
 }
 
 .elements-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  position: absolute;
-  width: 100%;
-  top: 0;
+  display: flex;              /* horizontaal uitlijnen van elementen */
+  justify-content: center;    /* centreren */
+  gap: 15px;                  /* ruimte tussen elementen */
+  position: absolute;         /* absoluut positioneren in panel */
+  width: 100%;                /* vult de breedte van het panel */
+  top: 0;                     /* JS past top aan */
   left: 0;
-  z-index: 3;
-  pointer-events: auto;
+  z-index: 3;                 /* boven maps */
+  pointer-events: auto;       /* zodat je kunt klikken */
 }
 
-/* ---------------- MAP ---------------- */
 .map {
   position: absolute;
   width: 100px;
@@ -117,7 +116,7 @@ body {
   height: 100px;
 }
 
-/* ---------------- ELEMENT ---------------- */
+/* ---------------- ELEMENTEN ---------------- */
 .element {
   position: relative;
   width: 100px;
@@ -129,17 +128,6 @@ body {
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 10px;
   z-index: 1;
-}
-
-.element img {
-  width: 100px;
-  height: 100px;
-}
-
-.element.selected {
-  transform: none;
-  background-color: transparent;
-  animation: shake 0.6s infinite;
 }
 
 @keyframes shake {
@@ -156,13 +144,34 @@ body {
   100% { transform: translate(0, 0); }
 }
 
-/* ---------------- TOOLTIP (CSS-only) ---------------- */
+.element.selected {
+  transform: none;          /* geen vergroting */
+  background-color: transparent;   /* geen kleur */
+  animation: shake 0.6s infinite; /* rustiger trillen (langzamer) */
+}
+
+.element img {
+  width: 100px;
+  height: 100px;
+}
+
+.map:hover,
+.element:hover {
+  z-index: 1000;
+}
+
+/* ---------------- TOOLTIP ---------------- */
+.map span,
+.element span {
+  display: none;
+}
+
 .map::after,
 .element::after {
   content: attr(data-name);
   position: absolute;
-  top: 110%;              /* net onder het element */
-  left: 50%;              /* horizontaal centreren */
+  top: 110%;
+  left: 50%;
   transform: translateX(-50%) scale(0.9);
   background: rgba(0, 0, 0, 0.85);
   color: white;
@@ -173,12 +182,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: all 0.15s ease;
-  z-index: 10000;
-}
-
-.map:hover,
-.element:hover {
-  z-index: 9999; /* iets lager dan tooltip */
+  z-index: 1001;
 }
 
 .map:hover::after,
@@ -190,16 +194,16 @@ body {
 /* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
 #left-panel.no-open,
 #right-panel.no-open {
-  justify-content: center;
+  justify-content: center; /* verticaal centreren */
 }
 
 #left-panel.no-open .maps-container,
 #right-panel.no-open .maps-container {
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* horizontaal centreren */
+  align-items: center;     /* verticaal */
 }
 
-/* ---------------- RESULTAAT OVERLAY ---------------- */
+/* ---------------- RESULTAAT COMBINATIE --------------------- */
 #result-overlay {
   position: fixed;
   inset: 0;
@@ -223,7 +227,7 @@ body {
 }
 
 .result-title {
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel", serif; /* historische look */
   font-size: 40px;
   letter-spacing: 3px;
 }
