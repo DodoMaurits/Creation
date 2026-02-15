@@ -357,7 +357,7 @@ function showNewElement(combi) {
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
   overlay.style.background = `
-    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
     url('afb/beginscherm.png')
   `;
   overlay.style.backgroundPosition = "center";
