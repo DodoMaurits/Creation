@@ -370,14 +370,26 @@ function showNewElement(combi) {
   });
 
   innerHTML += '</div>';
-  
   overlay.innerHTML = innerHTML;
   document.body.appendChild(overlay);
 
  // Klik om overlay te sluiten en elementen toe te voegen
   overlay.addEventListener("click", () => {
     combi.output.forEach(el => {
-      const map = mappen.find(m => m.naam === el.map);
+      // check of map al bestaat
+      let map = mappen.find(m => m.naam === el.map);
+      
+      if (!map) {
+        // map bestaat nog niet → nieuwe groep aanmaken
+        map = {
+          naam: el.map,
+          icoon: "icons/default.png", // je kunt hier eventueel een standaard icoon zetten
+          elementen: []
+        };
+        mappen.push(map);
+      }
+
+      // voeg element toe aan map (als het er nog niet in zit)
       if (!map.elementen.some(e => e.naam === el.naam)) {
         map.elementen.push({
           naam: el.naam,
