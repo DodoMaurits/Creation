@@ -58,34 +58,46 @@ const combinaties = [
         }
       ]
     },
+    {
+      input: ["Quark", "Kou"],
+      output: [
+        {
+          naam: "Atomen",
+          icoon: "icons/Atomen.png",
+          map: "Chemie",
+          quote: "In reality, nothing <br>but atoms and the void <br><br>- Democritos"
+        }
+      ]
+    },
       {
-        input: ["Quark", "Kou"],
+        input: ["Atomen", "Straling"],
         output: [
           {
-            naam: "Atomen",
-            icoon: "icons/Atomen.png",
-            map: "Chemie",
-            quote: "In reality, nothing <br>but atoms and the void <br><br>- Democritos"
+            naam: "Radioactiviteit",
+            icoon: "icons/Radioactiviteit.png",
+            map: "Krachten",
+            quote: "Nuclear power is one hell of a way <br>to boil water <br><br>-Albert Einstein"
           }
         ]
       },
-        {
-          input: ["Atomen", "Straling"],
-          output: [
-            {
-              naam: "Radioactiviteit",
-              icoon: "icons/Radioactiviteit.png",
-              map: "Krachten",
-              quote: "Nuclear power is one hell of a way <br>to boil water <br><br>-Albert Einstein"
-            }
-          ]
-        }
+      {
+        input: ["Atomen", "Zwaartekracht"],
+        output: [
+          {
+            naam: "Gas",
+            icoon: "icons/Gas.png",
+            map: "Lucht",
+            quote: ""
+          }
+        ]
+      }
 ];
 
 const groepsIconen = {
   "Ruimte": "icons/Ruimte.png",
   "Krachten": "icons/Krachten.png",
-  "Chemie": "icons/Chemie.png"
+  "Chemie": "icons/Chemie.png",
+  "Lucht": "icons/Lucht.png"
 };
 
 // ---------------- STATUS ----------------
