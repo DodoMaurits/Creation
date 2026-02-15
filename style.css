@@ -10,7 +10,7 @@ body {
 .homepage {
   height: 100vh;
   width: 100vw;
-  background-image: url("achtergrond.png"); /* pas aan naar jouw pad */
+  background-image: url("afb/achtergrond.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,9 +124,24 @@ body {
   border-radius: 10px;
 }
 
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-2px, 0); }
+  20% { transform: translate(2px, 0); }
+  30% { transform: translate(-2px, 0); }
+  40% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  60% { transform: translate(2px, 0); }
+  70% { transform: translate(-2px, 0); }
+  80% { transform: translate(2px, 0); }
+  90% { transform: translate(-2px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
 .element.selected {
-  transform: scale(1.1);
-  background-color: #d0f0ff;
+  transform: none;          /* geen vergroting */
+  background-color: none;   /* geen kleur */
+  animation: shake 0.3s infinite; /* trillen */
 }
 
 .element img {
