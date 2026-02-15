@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Creation</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('afb/beginscherm.png') center center / cover no-repeat;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .result-box-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .result-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+    }
+
+    .result-image {
+      width: 150px;
+      height: auto;
+      margin-bottom: 15px;
+      transition: transform 0.5s ease;
+    }
+
+    .result-image:hover {
+      transform: scale(1.1);
+    }
+
+    .result-title {
+      font-size: 22px;
+      margin: 5px 0;
+    }
+
+    .result-quote {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="result-box-container">
+    <div class="result-box">
+      <img src="icons/Warmte.png" alt="Warmte" class="result-image">
+      <h2 class="result-title">Warmte</h2>
+      <p class="result-quote">
+        "Without heat, nothing can move – the universe would freeze."
+      </p>
+    </div>
+
+    <div class="result-box">
+      <img src="icons/Kou.png" alt="Kou" class="result-image">
+      <h2 class="result-title">Kou</h2>
+      <p class="result-quote">
+        "Cold preserves and shapes matter, giving structure to chaos."
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Klik overal op het scherm → terug naar de hoofdpagina
+    document.body.addEventListener("click", () => {
+      window.location.href = "index.html"; // pas aan naar je startpagina
+    });
+  </script>
+
+</body>
+</html>
