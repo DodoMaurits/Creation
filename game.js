@@ -323,7 +323,8 @@ setTimeout(() => {
 
   showNewElement(combi);
 
-}, 800);
+  }, 800);
+}
 
 function showNewElement(combi) {
 
