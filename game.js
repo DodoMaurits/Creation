@@ -1,6 +1,6 @@
 // Voorbeeld mappen
 const mappen = [
-  { naam: "Heelal", icoon: "https://img.icons8.com/ios-filled/50/000000/galaxy.png", elementen: [{ naam: "Oerknal", icoon: "https://img.icons8.com/ios-filled/50/ffcc00/big-bang.png" }] },
+  { naam: "Heelal", icoon: ".../icons/Heelal.png", elementen: [{ naam: "Oerknal", icoon: "https://img.icons8.com/ios-filled/50/ffcc00/big-bang.png" }] },
   { naam: "Krachten", icoon: "https://img.icons8.com/ios-filled/50/ff0000/atom.png", elementen: [
       { naam: "Warmte", icoon: "https://img.icons8.com/ios-filled/50/ff6600/fire.png" },
       { naam: "Kou", icoon: "https://img.icons8.com/ios-filled/50/00ccff/snowflake.png" }
