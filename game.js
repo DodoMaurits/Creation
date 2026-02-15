@@ -348,10 +348,12 @@ setTimeout(() => {
 }
 
 function showNewElement(combi) {
-
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
-  overlay.style.background = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('afb/beginscherm.png')";
+  overlay.style.background = `
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('afb/beginscherm.png')
+  `;
   overlay.style.backgroundPosition = "center";
   overlay.style.backgroundSize = "cover";
   overlay.style.backgroundRepeat = "no-repeat";
@@ -367,37 +369,41 @@ function showNewElement(combi) {
         <p class="result-quote">${el.quote || ""}</p>
       </div>
     `;
+
+    // --- NIEUWE GROEP DIRECT TOEVOEGEN ---
+    let map = mappen.find(m => m.naam === el.map);
+
+    if (!map) {
+      // map bestaat nog niet → nieuwe groep aanmaken
+      map = {
+        naam: el.map,
+        icoon: el.icoon, // gebruik icoon van het element
+        elementen: []
+      };
+      mappen.push(map);
+
+      // Voeg de nieuwe groep direct toe aan beide zijden (left + right)
+      ["left", "right"].forEach(side => {
+        const container = document.getElementById(side + "-maps");
+        createGroupElement(container, side, mappen.length - 1); // idx = laatste map
+      });
+    }
+
+    // voeg element toe aan map (als het er nog niet in zit)
+    if (!map.elementen.some(e => e.naam === el.naam)) {
+      map.elementen.push({
+        naam: el.naam,
+        icoon: el.icoon
+      });
+    }
   });
 
   innerHTML += '</div>';
   overlay.innerHTML = innerHTML;
   document.body.appendChild(overlay);
 
- // Klik om overlay te sluiten en elementen toe te voegen
+  // Klik om overlay te sluiten en terug naar hoofdscherm
   overlay.addEventListener("click", () => {
-    combi.output.forEach(el => {
-      // check of map al bestaat
-      let map = mappen.find(m => m.naam === el.map);
-      
-      if (!map) {
-        // map bestaat nog niet → nieuwe groep aanmaken
-        map = {
-          naam: el.map,
-          icoon: el.icoon,
-          elementen: []
-        };
-        mappen.push(map);
-      }
-
-      // voeg element toe aan map (als het er nog niet in zit)
-      if (!map.elementen.some(e => e.naam === el.naam)) {
-        map.elementen.push({
-          naam: el.naam,
-          icoon: el.icoon
-        });
-      }
-    });
-
     overlay.remove();
     leftOpenGroup = null;
     rightOpenGroup = null;
@@ -405,10 +411,11 @@ function showNewElement(combi) {
     rightSelectedElement = null;
     isCombining = false;
 
+    // her-render alle groepen
     renderGroups("left");
     renderGroups("right");
-    });
-  }
+  });
+}
 
 // ---------------- START ----------------
 init();
