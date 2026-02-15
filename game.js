@@ -1,15 +1,15 @@
 // ---------------- DATA ----------------
 const mappen = [
   {
-    naam: "Heelal-Groep",
-    icoon: "icons/Heelal-Groep.png",
+    naam: "Ruimte",
+    icoon: "icons/Ruimte.png",
     elementen: [
       { naam: "Oerknal", icoon: "icons/Oerknal.png" }
     ]
   },
   {
-    naam: "Krachten-Groep",
-    icoon: "icons/Krachten-Groep.png",
+    naam: "Krachten",
+    icoon: "icons/Krachten.png",
     elementen: [
       { naam: "Warmte", icoon: "icons/Warmte.png" },
       { naam: "Kou", icoon: "icons/Kou.png" }
@@ -24,13 +24,13 @@ const combinaties = [
       {
         naam: "Zwaartekracht",
         icoon: "icons/Zwaartekracht.png",
-        map: "Krachten-Groep",
+        map: "Krachten",
         quote: "Gravity explains the motions of the planets, <br>but it cannot explain who sets the planets in motion <br>- Isaac Newton"
       },
       {
         naam: "Quark",
         icoon: "icons/Quark.png",
-        map: "Chemie-Groep",
+        map: "Chemie",
         quote: "Chemie is the limit"
       }
     ]
@@ -41,7 +41,7 @@ const combinaties = [
         {
           naam: "Heelal",
           icoon: "icons/Heelal.png",
-          map: "Heelal-Groep",
+          map: "Ruimte",
           quote: "Heelal is the limit"
         }
       ]
