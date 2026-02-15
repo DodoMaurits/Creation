@@ -44,47 +44,47 @@ function init() {
 function layoutGroups(side) {
   const container = document.getElementById(side + "-maps");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
-
   const groups = container.querySelectorAll(".map");
 
-  groups.forEach((groupDiv, idx) => {
-    let x, y;
+  const mapSize = 100;   // breedte/hoogte van map
+  const gap = 15;        // ruimte tussen maps
 
-    if (openGroup !== null) {
+  if (openGroup !== null) {
+    // Eén groep open → rest verbergen
+    groups.forEach((groupDiv, idx) => {
       if (idx === openGroup) {
-        // Alleen de geopende groep morpht naar boven
-        const containerWidth = container.clientWidth;
-        x = containerWidth / 2 - 50; // helft van breedte map
-        y = 20; // bovenin
         groupDiv.style.display = "flex";
         groupDiv.classList.add("open");
+        const containerWidth = container.clientWidth;
+        const x = containerWidth / 2 - mapSize / 2;
+        const y = 20; // bovenin
+        groupDiv.style.transform = `translate(${x}px, ${y}px)`;
       } else {
-        // andere groepen verdwijnen meteen
         groupDiv.style.display = "none";
         groupDiv.classList.remove("open");
-        return;
       }
-    } else {
-      // Geen groep open → alles weer tonen
+    });
+  } else {
+    // Geen groep open → alles tonen in midden
+    const totalCols = Math.min(4, groups.length);
+    const totalRows = Math.ceil(groups.length / 4);
+    const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
+    const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
+
+    groups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
 
       const col = idx % 4;
       const row = Math.floor(idx / 4);
-      const totalCols = Math.min(4, groups.length);
-      const totalRows = Math.ceil(groups.length / 4);
 
-      const gridWidth = totalCols * 100 + (totalCols - 1) * 15;
-      const gridHeight = totalRows * 100 + (totalRows - 1) * 15;
+      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
+      const y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
 
-      x = col * 115 + (container.clientWidth - gridWidth) / 2;
-      y = row * 115 + (container.clientHeight - gridHeight) / 2;
-    }
-
-    groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-  });
+      groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  }
 }
-
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side) {
   const container = document.getElementById(side + "-maps");
