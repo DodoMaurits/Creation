@@ -62,7 +62,7 @@ function layoutGroups(side, instant = false) {
 
         if (instant) groupDiv.style.transition = "none";
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-        if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
+        if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
 
         // ELEMENTEN CONTAINER POSITIE
         const elementsContainer = document.getElementById(side + "-elements-container");
@@ -100,7 +100,7 @@ function layoutGroups(side, instant = false) {
 
       if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-      if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
+      if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
     });
 
     // ELEMENTEN CONTAINER VERBERGEN
