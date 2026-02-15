@@ -54,13 +54,23 @@
       z-index: 2; /* boven God */
     }
 
+    .result-title {
+      font-family: "Cinzel", serif;      /* historische look */
+      font-size: 40px;                    /* grotere letters */
+      letter-spacing: 3px;                /* extra spacing */
+      margin: 5px 0;
+    }
+    
     .caption {
       position: absolute;
       bottom: 40px;
       width: 90%;
-      font-size: 18px;
-      line-height: 1.4;
       text-align: center;
+      font-family: "Times New Roman", serif;  /* klassieke serif */
+      font-size: 18px;
+      margin-top: 15px;
+      line-height: 1.4;
+      opacity: 0.85;
     }
   </style>
 </head>
@@ -69,6 +79,9 @@
   <div class="container">
     <img src="icons/God.png" alt="God" class="god-icon">
     <img src="icons/Oerknal.png" alt="Oerknal" class="oerknal-icon" id="oerknal">
+    <div>
+      <h2 class="result-title">Oerknal</h2>
+    </div>
     <div class="caption">
       "The Big Bang banged, and for some reason we're here. <br>
       And that's astonishing. And that we can understand that, that's the most astonishing" - Bill Nye
