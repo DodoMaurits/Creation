@@ -36,36 +36,36 @@ let rightSelectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
-  renderGroups("left");
-  renderGroups("right");
+  renderGroups("left", true);
+  renderGroups("right", true);
 }
 
 // ---------------- LAY-OUT ----------------
-function layoutGroups(side) {
+function layoutGroups(side, instant=false) { // extra param
   const container = document.getElementById(side + "-maps");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
   const groups = container.querySelectorAll(".map");
 
-  const mapSize = 100;   // breedte/hoogte van map
-  const gap = 15;        // ruimte tussen maps
+  const mapSize = 100;
+  const gap = 15;
 
   if (openGroup !== null) {
-    // Eén groep open → rest verbergen
     groups.forEach((groupDiv, idx) => {
       if (idx === openGroup) {
         groupDiv.style.display = "flex";
         groupDiv.classList.add("open");
         const containerWidth = container.clientWidth;
         const x = containerWidth / 2 - mapSize / 2;
-        const y = 20; // bovenin
+        const y = 20;
+        if (instant) groupDiv.style.transition = "none";
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+        if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
       } else {
         groupDiv.style.display = "none";
         groupDiv.classList.remove("open");
       }
     });
   } else {
-    // Geen groep open → alles tonen in midden
     const totalCols = Math.min(4, groups.length);
     const totalRows = Math.ceil(groups.length / 4);
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
@@ -74,36 +74,34 @@ function layoutGroups(side) {
     groups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
-
       const col = idx % 4;
       const row = Math.floor(idx / 4);
 
       const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
       const y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
 
+      if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+      if (instant) groupDiv.style.transition = "transform 1.5s ease-in-out";
     });
   }
 }
+
 // ---------------- RENDER GROEPEN ----------------
-function renderGroups(side) {
+function renderGroups(side, instant=false) {
   const container = document.getElementById(side + "-maps");
   const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
-  // Voeg of verwijder no-open klasse
   if (openGroup === null) panel.classList.add("no-open");
   else panel.classList.remove("no-open");
 
-  // Maak map-divs één keer aan bij init
   if (container.childElementCount === 0) {
     mappen.forEach((_, idx) => createGroupElement(container, side, idx));
   }
 
-  // Update layout: morphen naar nieuwe posities
-  layoutGroups(side);
+  layoutGroups(side, instant);
 }
-
 
 function createGroupElement(container, side, idx) {
   const map = mappen[idx];
