@@ -40,29 +40,49 @@ function init() {
   renderGroups("right");
 }
 
+// ---------------- LAY-OUT ----------------
+function layoutGroups(side) {
+  const container = document.getElementById(side + "-maps");
+  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
+
+  const groups = container.querySelectorAll(".map");
+
+  groups.forEach((groupDiv, idx) => {
+    let x, y;
+
+    if (openGroup !== null) {
+      // open groep bovenin centrum
+      x = container.clientWidth / 2 - 50; // 50 = helft van de breedte
+      y = 20;
+    } else {
+      // geen groep open: raster van max 4 per rij
+      const col = idx % 4;
+      const row = Math.floor(idx / 4);
+      x = col * 115; // 100px breed + 15px gap
+      y = row * 115;
+    }
+
+    groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+  });
+}
+
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side) {
   const container = document.getElementById(side + "-maps");
-  container.innerHTML = "";
-
   const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
-  // Voeg of verwijder "no-open" klasse
-  if (openGroup === null) {
-    panel.classList.add("no-open");
-  } else {
-    panel.classList.remove("no-open");
+  // no-open class
+  if (openGroup === null) panel.classList.add("no-open");
+  else panel.classList.remove("no-open");
+
+  // Als nog geen map-divs bestaan, maak ze één keer
+  if (container.childElementCount === 0) {
+    mappen.forEach((_, idx) => createGroupElement(container, side, idx));
   }
 
-  // Render groepen
-  if (openGroup !== null) {
-    createGroupElement(container, side, openGroup);
-  } else {
-    mappen.forEach((_, idx) => {
-      createGroupElement(container, side, idx);
-    });
-  }
+  // update de layout
+  layoutGroups(side);
 }
 
 function createGroupElement(container, side, idx) {
