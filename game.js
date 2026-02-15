@@ -72,18 +72,19 @@ function renderGroups(side) {
   const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
-  // no-open class
+  // Voeg of verwijder no-open klasse
   if (openGroup === null) panel.classList.add("no-open");
   else panel.classList.remove("no-open");
 
-  // Als nog geen map-divs bestaan, maak ze één keer
+  // Maak map-divs één keer aan bij init
   if (container.childElementCount === 0) {
     mappen.forEach((_, idx) => createGroupElement(container, side, idx));
   }
 
-  // update de layout
+  // Update layout: morphen naar nieuwe posities
   layoutGroups(side);
 }
+
 
 function createGroupElement(container, side, idx) {
   const map = mappen[idx];
@@ -100,13 +101,13 @@ function createGroupElement(container, side, idx) {
     if (side === "left") {
       leftOpenGroup = leftOpenGroup === idx ? null : idx;
       leftSelectedElement = null;
-      renderGroups("left");
-      renderLeftElements();
+      layoutGroups("left");           // laat groepen morphen
+      setTimeout(renderLeftElements, 1500); // elementen verschijnen pas na morphen
     } else {
       rightOpenGroup = rightOpenGroup === idx ? null : idx;
       rightSelectedElement = null;
-      renderGroups("right");
-      renderRightElements();
+      layoutGroups("right");
+      setTimeout(renderRightElements, 1500);
     }
   });
 
