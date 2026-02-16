@@ -248,9 +248,11 @@ function renderGroups(side, instant = false) {
   if (openGroup === null) panel.classList.add("no-open");
   else panel.classList.remove("no-open");
 
-  if (container.childElementCount === 0) {
-    mappen.forEach((_, idx) => createGroupElement(container, side, idx));
-  }
+  // 🔥 BELANGRIJK: container leegmaken
+  container.innerHTML = "";
+
+  // 🔥 ALTIJD alles opnieuw maken
+  mappen.forEach((_, idx) => createGroupElement(container, side, idx));
 
   layoutGroups(side, instant);
 }
