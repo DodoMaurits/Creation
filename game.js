@@ -87,7 +87,7 @@ const combinaties = [
             naam: "Gas",
             icoon: "icons/Gas.png",
             map: "Lucht",
-            quote: "All flight is based upon producing air pressure, <br>all flight energy consists in overcoming air pressure <br>- Otto Lilienthal"
+            quote: "All flight is based upon producing air pressure, <br>all flight energy consists in overcoming air pressure <br><br>- Otto Lilienthal"
           }
         ]
       },
@@ -98,7 +98,7 @@ const combinaties = [
             naam: "IJs",
             icoon: "icons/IJs.png",
             map: "Water",
-            quote: "Just as when water is frozen in to a form as ice and then melts <br>so at the time of death, there is no death. The spirit simply changes form <br>- Frederick Lenz"
+            quote: "Just as when water is frozen in to a form as ice and then melts <br>so at the time of death, there is no death. The spirit simply changes form <br><br>- Frederick Lenz"
           }
         ]
       },
@@ -109,7 +109,7 @@ const combinaties = [
             naam: "Ster",
             icoon: "icons/Ster.png",
             map: "Ruimte",
-            quote: "Every star may be a sun to someone <br>-Carl Sagan"
+            quote: "Every star may be a sun to someone <br><br>-Carl Sagan"
           }
         ]
       },
@@ -120,7 +120,7 @@ const combinaties = [
             naam: "Water",
             icoon: "icons/Water.png",
             map: "Water",
-            quote: "Water is the softest thing, yet it can penetrate mountains and earth.<br>This shows clearly the principle of softness overcoming hardness <br>-Lao Tzu"
+            quote: "Water is the softest thing, yet it can penetrate mountains and earth.<br>This shows clearly the principle of softness overcoming hardness <br><br>-Lao Tzu"
           }
         ]
       },
@@ -131,16 +131,44 @@ const combinaties = [
             naam: "IJzer",
             icoon: "icons/IJzer.png",
             map: "Aarde",
-            quote: "Do not wait to strike till the iron is hot <br>but make it hot by striking <br>-Lao Tzu"
+            quote: "Do not wait to strike till the iron is hot <br>but make it hot by striking <br><br>-William Butler Yeatsu"
           },
           {
             naam: "Supernova",
             icoon: "icons/Supernova.png",
             map: "Ruimte",
-            quote: "A supernova is one of the most powerful explosions in the universe.<br>It's so luminous, it can be seen across billions of light years.<br>It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime<br>- Neil Tyson"
+            quote: "A supernova is one of the most <br>powerful explosions in the universe.<br>It's so luminous, it can be seen <br>across billions of light years.<br>It releases as much energy in an instant <br>as our sun will produce over its 10-billion-year lifetime<br><br>- Neil Tyson"
           }
         ]
-      }
+      },
+        {
+        input: ["Ster", "Gas"],
+        output: [
+          {
+            naam: "Asteroïden",
+            icoon: "icons/Asteroïden.png",
+            map: "Ruimte",
+            quote: ""
+          },
+          {
+            naam: "Planeet",
+            icoon: "icons/Planeet.png",
+            map: "Ruimte",
+            quote: ""
+          }
+        ]
+      },
+        {
+          input: ["Water", "IJzer"],
+          output: [
+            {
+              naam: "Roest",
+              icoon: "icons/Roest.png",
+              map: "Chemie",
+              quote: ""
+            }
+          ]
+        }
 ];
 
 const groepsIconen = {
