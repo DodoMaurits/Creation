@@ -365,11 +365,31 @@ function tryCombine() {
   });
 
   if (!combi) {
-    // Geen combinatie → deselecteer beide
-    leftSelectedElement = null;
-    rightSelectedElement = null;
-    renderLeftElements();
-    renderRightElements();
+  
+    const leftEl = document.querySelector("#left-elements-container .selected");
+    const rightEl = document.querySelector("#right-elements-container .selected");
+  
+    if (leftEl && rightEl) {
+  
+      isCombining = true; // 🔒 tijdelijk blokkeren
+  
+      leftEl.classList.remove("selected");
+      rightEl.classList.remove("selected");
+  
+      leftEl.classList.add("error");
+      rightEl.classList.add("error");
+  
+      setTimeout(() => {
+        leftSelectedElement = null;
+        rightSelectedElement = null;
+  
+        renderLeftElements();
+        renderRightElements();
+  
+        isCombining = false; // 🔓 weer vrijgeven
+      }, 600);
+    }
+  
     return;
   }
 
