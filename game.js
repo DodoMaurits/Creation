@@ -112,6 +112,17 @@ const combinaties = [
             quote: "Every star may be a sun to someone <br>-Carl Sagan"
           }
         ]
+      },
+      {
+        input: ["IJs", "Warmte"],
+        output: [
+          {
+            naam: "Water",
+            icoon: "icons/Water.png",
+            map: "Water",
+            quote: "Water is the softest thing, yet it can penetrate mountains and earth.<br>This shows clearly the principle of softness overcoming hardness <br>-Lao Tzu"
+          }
+        ]
       }
 ];
 
