@@ -168,7 +168,52 @@ const combinaties = [
               quote: "None can destroy iron, but its own rust can.<br>Likewise none can destroy a person,<br>but its own mindset can<br><br>- Ratan Tata"
             }
           ]
-        }
+        },
+        {
+          input: ["Water", "Water"],
+          output: [
+            {
+              naam: "Meer",
+              icoon: "icons/Meer.png",
+              map: "Water",
+              quote: "<br>-"
+            }
+          ]
+        },
+          {
+            input: ["Supernova", "Zwaartekracht"],
+            output: [
+              {
+                naam: "Zwart Gat",
+                icoon: "icons/Zwartgat.png",
+                map: "Ruimte",
+                quote: "<br>-"
+              }
+            ]
+          },
+            {
+          input: ["Asteroïden", "Planeet"],
+          output: [
+            {
+              naam: "Vuur",
+              icoon: "icons/Vuur.png",
+              map: "Vuur",
+              quote: "<br><br>-"
+            },
+            {
+              naam: "Lava",
+              icoon: "icons/Lava.png",
+              map: "Vuur",
+              quote: "<br><br>- "
+            },
+            {
+              naam: "Rook",
+              icoon: "icons/Rook.png",
+              map: "Vuur",
+              quote: "<br><br>- "
+            }
+          ]
+        },
 ];
 
 const groepsIconen = {
@@ -177,7 +222,8 @@ const groepsIconen = {
   "Chemie": "icons/Chemie.png",
   "Lucht": "icons/Lucht.png",
   "Water": "icons/Water.png",
-  "Aarde": "icons/Aarde.png"
+  "Aarde": "icons/Aarde.png",
+  "Vuur": "icons/Vuur.png"
 };
 
 // ---------------- STATUS ----------------
