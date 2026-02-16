@@ -98,6 +98,20 @@ body {
 .caption span:nth-child(2) { animation: floatSide2 4.5s ease-in-out infinite; }
 .caption span:nth-child(3) { animation: floatSide3 3.8s ease-in-out infinite; }
 
+/* overlay over de hele pagina */
+#fadeOverlay {
+  position: fixed;
+  inset: 0; /* top:0; left:0; right:0; bottom:0; */
+  background: white;
+  z-index: 9999; /* boven alles */
+  animation: fadeOut 2s ease forwards; /* animatie zodra pagina opent */
+}
+
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 /* ---------------- GAME LAYOUT ---------------- */
 #game {
   display: flex;
