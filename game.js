@@ -213,7 +213,7 @@ const combinaties = [
               quote: "<br><br>- "
             }
           ]
-        },
+        }
 ];
 
 const groepsIconen = {
