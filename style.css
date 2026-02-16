@@ -66,6 +66,7 @@ body {
   margin-top: 100px;
   z-index: 1;
   animation: floatUpDown 3s ease-in-out infinite;
+  cursor: pointer;
 }
 
 /* Elke quote los laten zweven naar links/rechts */
