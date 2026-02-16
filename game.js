@@ -132,6 +132,12 @@ const combinaties = [
             icoon: "icons/IJzer.png",
             map: "Aarde",
             quote: "Do not wait to strike till the iron is hot <br>but make it hot by striking <br>-Lao Tzu"
+          },
+          {
+            naam: "Supernova",
+            icoon: "icons/Supernova.png",
+            map: "Ruimte",
+            quote: "A supernova is one of the most powerful explosions in the universe.<br>It's so luminous, it can be seen across billions of light years.<br>It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime<br>- Neil Tyson"
           }
         ]
       }
