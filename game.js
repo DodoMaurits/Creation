@@ -426,11 +426,8 @@ function showNewElement(combi) {
       };
       mappen.push(map);
 
-      // Voeg de nieuwe groep direct toe aan beide zijden (left + right)
-      ["left", "right"].forEach(side => {
-        const container = document.getElementById(side + "-maps");
-        createGroupElement(container, side, mappen.length - 1); // idx = laatste map
-      });
+      // Markeer dat deze map nieuw is
+      map.isNew = true;
     }
 
     // voeg element toe aan map (als het er nog niet in zit)
@@ -442,19 +439,21 @@ function showNewElement(combi) {
     }
   });
 
-  innerHTML += '</div>';
-  overlay.innerHTML = innerHTML;
-  document.body.appendChild(overlay);
-
-  // Klik om overlay te sluiten en terug naar hoofdscherm
-  overlay.addEventListener("click", () => {
+    innerHTML += '</div>';
+    overlay.innerHTML = innerHTML;
+    document.body.appendChild(overlay);
+  
+    // Klik om overlay te sluiten en terug naar hoofdscherm
+    overlay.addEventListener("click", () => {
+      
     overlay.remove();
+      
     leftOpenGroup = null;
     rightOpenGroup = null;
     leftSelectedElement = null;
     rightSelectedElement = null;
     isCombining = false;
-
+  
     // her-render alle groepen
     renderGroups("left");
     renderGroups("right");
