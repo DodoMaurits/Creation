@@ -148,7 +148,8 @@ const groepsIconen = {
   "Krachten": "icons/Krachten.png",
   "Chemie": "icons/Chemie.png",
   "Lucht": "icons/Lucht.png",
-  "Water": "icons/Water.png"
+  "Water": "icons/Water.png",
+  "Aarde": "icons/Aarde.png"
 };
 
 // ---------------- STATUS ----------------
