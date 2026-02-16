@@ -87,7 +87,18 @@ const combinaties = [
             naam: "Gas",
             icoon: "icons/Gas.png",
             map: "Lucht",
-            quote: ""
+            quote: "All flight is based upon producing air pressure, <br>all flight energy consists in overcoming air pressure <br>- Otto Lilienthal"
+          }
+        ]
+      }
+      {
+        input: ["Gas", "Kou"],
+        output: [
+          {
+            naam: "IJs",
+            icoon: "icons/IJs.png",
+            map: "Water",
+            quote: "Just as when water is frozen in to a form as ice and then melts <br>so at the time of death, there is no death. The spirit simply changes form <br>- Frederick Lenz"
           }
         ]
       }
@@ -97,7 +108,8 @@ const groepsIconen = {
   "Ruimte": "icons/Ruimte.png",
   "Krachten": "icons/Krachten.png",
   "Chemie": "icons/Chemie.png",
-  "Lucht": "icons/Lucht.png"
+  "Lucht": "icons/Lucht.png",
+  "Water": "icons/Water.png"
 };
 
 // ---------------- STATUS ----------------
