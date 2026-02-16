@@ -38,6 +38,7 @@ body {
 }
 
 .start-button {
+  font-family: "Cinzel", serif; /* historische look */
   padding: 15px 40px;
   font-size: 20px;
   border: none;
