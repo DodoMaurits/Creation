@@ -90,7 +90,7 @@ const combinaties = [
             quote: "All flight is based upon producing air pressure, <br>all flight energy consists in overcoming air pressure <br>- Otto Lilienthal"
           }
         ]
-      }
+      },
       {
         input: ["Gas", "Kou"],
         output: [
@@ -99,6 +99,17 @@ const combinaties = [
             icoon: "icons/IJs.png",
             map: "Water",
             quote: "Just as when water is frozen in to a form as ice and then melts <br>so at the time of death, there is no death. The spirit simply changes form <br>- Frederick Lenz"
+          }
+        ]
+      },
+      {
+        input: ["Gas", "Zwaartekracht"],
+        output: [
+          {
+            naam: "Ster",
+            icoon: "icons/Ster.png",
+            map: "Ruimte",
+            quote: "Every star may be a sun to someone <br>-Carl Sagan"
           }
         ]
       }
