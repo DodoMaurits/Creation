@@ -168,7 +168,7 @@ body {
 
 .map.open {
   z-index: 4;
-  background-color: #eef;
+  background-color: transparent;
 }
 
 .map img {
