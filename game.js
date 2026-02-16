@@ -148,13 +148,13 @@ const combinaties = [
             naam: "Asteroïden",
             icoon: "icons/Asteroïden.png",
             map: "Ruimte",
-            quote: ""
+            quote: "If you keep chasing shooting stars, <br>you'll never feel the warmth of the sun <br><br>- Ann Marie Frohoff"
           },
           {
             naam: "Planeet",
             icoon: "icons/Planeet.png",
             map: "Ruimte",
-            quote: ""
+            quote: "Astronomy compels the soul to look upwards <br>and leads us from this world to another <br><br>- Plato"
           }
         ]
       },
@@ -165,7 +165,7 @@ const combinaties = [
               naam: "Roest",
               icoon: "icons/Roest.png",
               map: "Chemie",
-              quote: ""
+              quote: "None can destroy iron, but its own rust can.<br>Likewise none can destroy a person,<br>but its own mindset can<br><br>- Ratan Tata"
             }
           ]
         }
