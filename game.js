@@ -123,6 +123,17 @@ const combinaties = [
             quote: "Water is the softest thing, yet it can penetrate mountains and earth.<br>This shows clearly the principle of softness overcoming hardness <br>-Lao Tzu"
           }
         ]
+      },
+      {
+        input: ["Ster", "Zwaartekracht"],
+        output: [
+          {
+            naam: "IJzer",
+            icoon: "icons/IJzer.png",
+            map: "Aarde",
+            quote: "Do not wait to strike till the iron is hot <br>but make it hot by striking <br>-Lao Tzu"
+          }
+        ]
       }
 ];
 
