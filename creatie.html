@@ -49,18 +49,6 @@
       transform: scale(1.1);
     }
 
-    .oerknal-icon {
-      position: absolute; /* overlap God */
-      width: 150px;
-      height: auto;
-      top: 50%;  /* center verticaal */
-      left: 50%; /* center horizontaal */
-      transform: translate(-50%, -50%); /* exacte centrering */
-      opacity: 0; /* start onzichtbaar */
-      transition: opacity 2s ease-in; /* fade-in */
-      z-index: 2; /* boven God */
-    }
-
     .result-title {
       font-family: "Cinzel", serif; /* historische look */
       font-size: 40px;               /* grotere letters */
@@ -83,7 +71,6 @@
 
   <div class="container">
     <img src="icons/God.png" alt="God" class="god-icon">
-    <img src="icons/Oerknal.png" alt="Oerknal" class="oerknal-icon" id="oerknal">
     <h2 class="result-title">Oerknal</h2>
     <div class="caption">
       "The Big Bang banged, and for some reason we're here. <br>
@@ -98,14 +85,6 @@
   </div>
 
   <script>
-    // Fade-in Oerknal na 1 seconde
-    window.addEventListener("load", () => {
-      const oerknal = document.getElementById("oerknal");
-      setTimeout(() => {
-        oerknal.style.opacity = 1; // start fade-in
-      }, 1000); // 1 seconde vertraging
-    });
-
     // Klik om naar andere pagina te gaan
     document.body.addEventListener("click", () => {
       window.location.href = "elementen.html";
