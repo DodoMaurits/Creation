@@ -35,6 +35,8 @@ body {
   font-size: 64px;
   letter-spacing: 6px;
   margin-bottom: 40px;
+  font-family: "Cinzel", serif; /* historische look */
+  letter-spacing: 3px;           /* extra spacing */
 }
 
 .start-button {
