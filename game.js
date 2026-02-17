@@ -322,31 +322,53 @@ function renderGroups() {
   mappen.forEach((map, idx) => {
     const div = document.createElement("div");
     div.className = "map";
+    div.dataset.idx = idx;
     div.dataset.name = map.naam;
     div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
     div.addEventListener("click", () => {
-    leftOpenGroup = idx;
-    rightOpenGroup = idx; // <--- toevoegen
-    leftSelectedElement = null;
-    rightSelectedElement = null;
-    
-    document.querySelectorAll(".map").forEach(m => m.classList.remove("open"));
-    div.classList.add("open");
-    
-    renderElementsLeft();
-    renderElementsRight();
-  });
+      leftOpenGroup = idx;
+      leftSelectedElement = null;
+
+      renderElementsLeft();
+      renderMapsRight();
+      animateMapShift(idx); // schuif animatie
+    });
 
     container.appendChild(div);
   });
-
 }
 
-// ---------------- RENDER ELEMENTEN ----------------
+// Rechts: alle andere maps tonen
+function renderMapsRight() {
+  const rightPanel = document.getElementById("right-panel");
+  rightPanel.innerHTML = "";
+
+  mappen.forEach((map, idx) => {
+    if (idx === leftOpenGroup) return; // niet de gekozen map
+
+    const div = document.createElement("div");
+    div.className = "map";
+    div.dataset.idx = idx;
+    div.dataset.name = map.naam;
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+
+    div.addEventListener("click", () => {
+      leftOpenGroup = idx;
+      leftSelectedElement = null;
+      renderElementsLeft();
+      renderMapsRight();
+    });
+
+    rightPanel.appendChild(div);
+  });
+}
+
+// Links: elementen van de gekozen map
 function renderElementsLeft() {
-  const container = document.getElementById("left-elements-container");
-  container.innerHTML = "";
+  const leftPanel = document.getElementById("left-panel");
+  leftPanel.innerHTML = "";
+
   if (leftOpenGroup === null) return;
 
   mappen[leftOpenGroup].elementen.forEach(el => {
@@ -355,43 +377,13 @@ function renderElementsLeft() {
     div.dataset.name = el.naam;
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
-    if (el.naam === leftSelectedElement) div.classList.add("selected");
-
     div.addEventListener("click", () => {
       leftSelectedElement = leftSelectedElement === el.naam ? null : el.naam;
-      renderElementsLeft();
       tryCombine();
     });
 
-    container.appendChild(div);
+    leftPanel.appendChild(div);
   });
-
-  container.classList.add("show"); // <--- buiten de loop
-}
-
-function renderElementsRight() {
-  const container = document.getElementById("right-elements-container");
-  container.innerHTML = "";
-  if (rightOpenGroup === null) return;
-
-  mappen[rightOpenGroup].elementen.forEach(el => {
-    const div = document.createElement("div");
-    div.className = "element";
-    div.dataset.name = el.naam;
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-
-    if (el.naam === rightSelectedElement) div.classList.add("selected");
-
-    div.addEventListener("click", () => {
-      rightSelectedElement = rightSelectedElement === el.naam ? null : el.naam;
-      renderElementsRight();
-      tryCombine();
-    });
-
-    container.appendChild(div);
-  });
-  
-  container.classList.add("show");
 }
 
 // ---------------- COMBINATIE ----------------
