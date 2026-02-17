@@ -321,11 +321,14 @@ function updateGlobalLayout() {
     game.classList.remove("split-mode");
     rightPanel.style.display = "none";
     renderGroups("left");
+    animateMapTransition("left");
   } else {
     game.classList.add("split-mode");
     rightPanel.style.display = "flex";
     renderGroups("left");
     renderGroups("right");
+    animateMapTransition("left");
+    animateMapTransition("right");
   }
 }
 
@@ -362,26 +365,32 @@ function layoutGroups(side) {
       if (idx === openGroup) groupDiv.style.display = "flex";
       else groupDiv.style.display = "none";
     });
-
-    // toon elementen onder open groep
+  
+    // toon elementen onder open groep met animatie
     elementsContainer.style.display = "grid";
     renderElements(side);
+  
+    // animatie toepassen
+    requestAnimationFrame(() => {
+      elementsContainer.classList.add("show");
+    });
   } else {
     // Geen groep open → alle mappen tonen en centreren
     groups.forEach(groupDiv => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
     });
-
+  
     // CSS flex container centreren
     container.style.display = "flex";
     container.style.justifyContent = "center";
     container.style.alignItems = "center";
     container.style.gap = "20px";
-
+  
     // verberg elementen
     elementsContainer.innerHTML = "";
     elementsContainer.style.display = "none";
+    elementsContainer.classList.remove("show");
   }
 }
 
@@ -474,9 +483,34 @@ function tryCombine() {
     }, 600);
     return;
   }
-
-  // Hier kun je je animatiecode van clones blijven gebruiken...
-  // → De layout van mappen/elementen wordt niet meer gebroken
+  
+  function animateMapTransition(side) {
+    const container = document.getElementById(side + "-maps");
+    const maps = container.querySelectorAll(".map");
+  
+    // stap 1: first
+    const firstRects = Array.from(maps).map(map => map.getBoundingClientRect());
+  
+    // stap 2: layout aanpassen (flinke trick: renderGroups al gedaan, dus alleen FLIP nodig)
+    // hier niets doen, layout is al aangepast
+  
+    // stap 3: last
+    const lastRects = Array.from(maps).map(map => map.getBoundingClientRect());
+  
+    // stap 4: invert + play
+    maps.forEach((map, i) => {
+      const dx = firstRects[i].left - lastRects[i].left;
+      const dy = firstRects[i].top - lastRects[i].top;
+  
+      map.style.transform = `translate(${dx}px, ${dy}px)`;
+      map.style.transition = "transform 0s";
+  
+      requestAnimationFrame(() => {
+        map.style.transition = "transform 0.5s ease";
+        map.style.transform = "translate(0,0)";
+      });
+    });
+  }
 }
 
 // ---------------- START ----------------
