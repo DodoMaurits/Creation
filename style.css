@@ -153,38 +153,24 @@ body {
 /* ---------------- ELEMENTEN ---------------- */
 #left-elements, #right-elements {
   position: absolute;
-  top: 180px;               /* ruimte onder map-icoon */
+  top: 130px; /* direct onder map */
   left: 0;
   width: 50%;
-  display: flex;
-  justify-content: center;  /* centreert de grid */
-  pointer-events: none;
-}
-
-.left-grid {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   gap: 25px;
-  justify-content: center;  /* centreert rij van max 4 */
-  pointer-events: auto;
+  justify-content: center;
 }
 
 .element {
-  position: absolute;
   width: 100px;
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
   cursor: pointer;
-  z-index: 5;
-  transition: top 0.5s ease, left 0.5s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0; /* start onzichtbaar */
 }
-
-.element img {
-  width: 100px;
-  height: 100px;
+.element.show {
+  opacity: 1;
 }
 
 /* ---------------- TOOLTIP ---------------- */
