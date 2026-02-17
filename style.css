@@ -139,13 +139,14 @@ body {
 }
 
 .maps-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* max 4 per rij */
-  justify-content: center;   /* center de hele rij horizontaal */
-  gap: 15px;                /* ruimte tussen mappen */
-  width: 100%;
+  display: flex;            /* grid vervangen door flex */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;          /* zodat het meerdere rijen kan maken */
+  gap: 20px;
+  width: auto;              /* neem alleen de benodigde ruimte */
   padding: 10px 0;
-  position: relative;       /* belangrijk voor absolute positionering van open groep */
+  position: relative;
 }
 
 .map {
@@ -165,14 +166,6 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   transition: all 0.5s ease; /* vloeiende overgang voor container */
-}
-
-.map.open {
-  position: absolute;      /* bovenop de container plaatsen */
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);  /* horizontaal gecentreerd in panel */
-  z-index: 10;
 }
 
 .elements-container {
