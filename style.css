@@ -139,43 +139,44 @@ body {
 }
 
 /* Maps container altijd flex zodat alles kan centreren */
+/* CONTAINERS */
 .maps-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* max 4 per rij */
+  justify-content: center;   /* center de hele rij horizontaal */
+  gap: 15px;                /* ruimte tussen mappen */
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;  /* horizontaal centreren */
-  align-items: center;      /* verticaal centreren */
-  pointer-events: none;
+  padding: 10px 0;
+  position: relative;       /* belangrijk voor absolute positionering van open groep */
 }
 
-/* Als geen groep open is: maps in flow, centreren */
-#left-panel.no-open .maps-container .map,
-#right-panel.no-open .maps-container .map {
-  position: relative;       /* in flex flow */
-  margin: auto;             /* horizontaal + verticaal centreren */
-}
-
-/* Altijd klikbaar */
+/* DE MAPPEN */
 .map {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  pointer-events: auto;
-  z-index: 2;
+  transition: transform 0.3s;
 }
 
-/* Split-mode override */
-#game.split-mode #left-panel .maps-container .map,
-#game.split-mode #right-panel .maps-container .map {
-  position: absolute;       /* JS bepaalt left/top */
-  margin: 0;                /* reset centrering */
-}
-
+/* OPEN GROEP */
 .map.open {
-  z-index: 4;
-  background-color: transparent;
+  position: absolute;      /* bovenop de container plaatsen */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);  /* horizontaal gecentreerd in panel */
+  z-index: 10;
+}
+
+/* ELEMENTEN GRID */
+.elements-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 130px; /* afstand vanaf open groep icoon */
 }
 
 .map img {
