@@ -305,22 +305,11 @@ let openGroup = null;
 let selectedElement = null;
 let isCombining = false;
 
-// ---------------- INIT ----------------
-function init() {
-  renderGroups(true);
-}
-
-// ---------------- STATUS ----------------
-let openGroup = null;
-let selectedElement = null;
-let isCombining = false;
-
 
 // ---------------- INIT ----------------
 function init() {
   renderGroups(true);
 }
-
 
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(instant = false) {
@@ -330,7 +319,8 @@ function renderGroups(instant = false) {
   mappen.forEach((map, idx) => {
     const div = document.createElement("div");
     div.className = "map";
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    div.dataset.name = el.naam;
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
     div.addEventListener("click", () => {
       openGroup = openGroup === idx ? null : idx;
