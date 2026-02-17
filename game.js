@@ -315,10 +315,10 @@ function init() {
 
 // ---------------- LAYOUT ----------------
 function layoutGroups(side, instant = false) {
-  const container = document.getElementById(side + "-maps");
+  const panel = document.getElementById(side + "-panel");
+  const container = panel.querySelector(".maps-container"); // ✅ hier
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
   const groups = container.querySelectorAll(".map");
-
   const mapSize = 100;
   const gap = 15;
   const containerHeight = container.clientHeight;
@@ -394,8 +394,8 @@ function layoutGroups(side, instant = false) {
 
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side, instant = false) {
-  const container = document.getElementById(side + "-maps");
   const panel = document.getElementById(side + "-panel");
+  const container = panel.querySelector(".maps-container"); // ✅ hier
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
   if (openGroup === null) panel.classList.add("no-open");
