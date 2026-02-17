@@ -318,10 +318,15 @@ function layoutGroups(side, instant = false) {
   const container = document.getElementById(side + "-maps");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
   const groups = container.querySelectorAll(".map");
-
   const mapSize = 100;
   const gap = 15;
-  const containerHeight = container.clientHeight;
+
+  // Zorg dat container full panel blijft
+  container.style.display = "flex";
+  container.style.flexWrap = "wrap";
+  container.style.justifyContent = "center";
+  container.style.alignItems = "center";
+  container.style.height = "100%"; // volle hoogte van panel
 
   if (openGroup !== null) {
     // ---------------- OPEN GROEP ----------------
@@ -334,6 +339,7 @@ function layoutGroups(side, instant = false) {
         const y = 20;
 
         if (instant) groupDiv.style.transition = "none";
+        groupDiv.style.position = "absolute";
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
         if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
 
@@ -343,11 +349,10 @@ function layoutGroups(side, instant = false) {
         elementsContainer.style.top = `${y + mapSize + 10}px`;
         elementsContainer.style.left = "0";
         elementsContainer.style.width = "100%";
-        elementsContainer.style.display = "grid";
-        elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-        elementsContainer.style.gap = `${gap}px`;
+        elementsContainer.style.display = "flex";
+        elementsContainer.style.flexWrap = "wrap";
         elementsContainer.style.justifyContent = "center";
-        elementsContainer.style.alignItems = "center";
+        elementsContainer.style.gap = `${gap}px`;
 
       } else {
         groupDiv.style.display = "none";
@@ -356,29 +361,15 @@ function layoutGroups(side, instant = false) {
     });
   } else {
     // ---------------- GEEN GROEP OPEN ----------------
-    // Gebruik CSS Grid voor centreren
-    container.style.display = "grid";
-    container.style.gridTemplateColumns = "repeat(auto-fit, 100px)";
-    container.style.gridAutoRows = "100px";
-    container.style.gap = `${gap}px`;
-    container.style.justifyContent = "center";
-    container.style.alignContent = "center"; // verticaal centreren
-
     groups.forEach(groupDiv => {
+      groupDiv.style.display = "flex";
+      groupDiv.style.position = "relative";
+      groupDiv.style.transform = "none";
       groupDiv.classList.remove("open");
-      groupDiv.style.position = "static";   // grid neemt over
-      groupDiv.style.transform = "none";    // geen translate nodig
     });
 
-    // ELEMENTEN CONTAINER VERBERGEN
     const elementsContainer = document.getElementById(side + "-elements-container");
     elementsContainer.innerHTML = "";
-    elementsContainer.style.position = "absolute";
-    elementsContainer.style.top = "0";
-    elementsContainer.style.display = "grid";
-    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-    elementsContainer.style.gap = `${gap}px`;
-    elementsContainer.style.justifyContent = "center";
   }
 }
 
