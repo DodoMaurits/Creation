@@ -159,6 +159,17 @@ body {
   gap: 15px;
 }
 
+#right-maps {
+  position: absolute;
+  top: 20px;       /* vanaf bovenkant */
+  left: 50%;       /* rechterhelft startpunt */
+  width: 50%;      /* rechterhelft scherm */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* max 4 per rij horizontaal centreren */
+  gap: 20px;
+}
+
 #right-elements {
   right: 5%;         /* marge van de rechterzijde voor 2e map */
 }
