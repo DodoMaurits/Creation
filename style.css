@@ -295,14 +295,9 @@ body {
 
 .result-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* max 4 per rij */
-  gap: 40px;
-  max-width: 1200px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 50px;
   width: 90%;
-  justify-items: center;
-  align-items: start;
   max-width: 1200px;
   justify-content: center;   /* belangrijk */
 }
