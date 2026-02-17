@@ -136,13 +136,14 @@ body {
 
 .maps-container {
   display: grid;
-  grid-template-columns: repeat(2, 100px); /* of repeat(auto-fit, minmax(100px, 1fr)) */
+  grid-template-columns: repeat(2, 100px);
   gap: 15px;
   justify-content: center; /* horizontaal centreren */
   align-items: start;      /* maps bovenin */
   width: 100%;
-  height: auto;            /* niet 100%, zodat maps bovenin blijven */
+  height: auto;            
   position: relative;
+  padding-top: 20px;       /* optioneel voor ruimte boven */
 }
 
 .elements-container {
