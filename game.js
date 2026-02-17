@@ -329,10 +329,10 @@ function renderGroups() {
     div.addEventListener("click", () => {
       leftOpenGroup = idx;
       leftSelectedElement = null;
-
-      renderElementsLeft();
-      renderMapsRight();
-      animateMapShift(idx); // schuif animatie
+    
+      openMap(idx);          // ← gebruik nu openMap
+      renderElementsLeft();  // elementen links van deze groep
+      renderElementsRight(); // andere maps rechts
     });
 
     container.appendChild(div);
@@ -384,12 +384,6 @@ function renderElementsLeft() {
 
     leftPanel.appendChild(div);
   });
-}
-
-function animateMapShift(idx) {
-  const maps = document.getElementById("maps");
-  const mapWidth = maps.children[idx].offsetWidth;
-  maps.style.transform = `translateX(-${mapWidth + 20}px)`; // 20px gap
 }
 
 function openMap(idx) {
