@@ -1,84 +1,148 @@
-/* ---------------- GAME LAYOUT ---------------- */
-#game {
+/* ---------------- BODY ---------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+/* ---------------- HOMEPAGE ---------------- */
+.homepage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("afb/beginscherm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-  flex-direction: column;
-  padding: 60px 120px; 
-  box-sizing: border-box;
-  background: url("afb/perkament.jpg") center center / cover no-repeat;
-  transition: background 0.5s ease-in-out;
 }
 
-.maps-container {
-  display: flex;
-  flex-wrap: wrap;           /* zorgt dat er meerdere rijen kunnen zijn als >4 mappen */
-  justify-content: center;   /* horizontaal centreren */
-  align-items: center;       /* verticaal centreren binnen container */
-  gap: 20px;
-  height: 100vh;             /* hele hoogte scherm */
-  width: 100vw;              /* hele breedte scherm */
+.overlay {
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 60px 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  max-width: 90%;
+}
+
+.title {
+  color: white;
+  font-size: 64px;
+  letter-spacing: 3px;
+  font-family: "Cinzel", serif;
+  margin: 20px 0 5px 0;
+}
+
+.start-button {
+  font-family: "Cinzel", serif;
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+  background: #d0f0ff;
+}
+
+/* God-icon zweeft op en neer */
+@keyframes floatUpDown {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.god-icon {
+  width: 300px;
+  height: auto;
+  margin-top: 100px;
+  z-index: 1;
+  animation: floatUpDown 3s ease-in-out infinite;
+  cursor: pointer;
+}
+
+/* Elke quote los laten zweven naar links/rechts */
+@keyframes floatSide1 {
+  0%   { transform: translateX(0px); }
+  50%  { transform: translateX(-10px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes floatSide2 {
+  0%   { transform: translateX(0px); }
+  50%  { transform: translateX(12px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes floatSide3 {
+  0%   { transform: translateX(0px); }
+  50%  { transform: translateX(-8px); }
+  100% { transform: translateX(0px); }
+}
+
+.caption span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.caption span:nth-child(1) { animation: floatSide1 4s ease-in-out infinite; }
+.caption span:nth-child(2) { animation: floatSide2 4.5s ease-in-out infinite; }
+.caption span:nth-child(3) { animation: floatSide3 3.8s ease-in-out infinite; }
+
+/* overlay over de hele pagina */
+#fadeOverlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 9999;
+  animation: fadeOut 2s ease forwards;
+}
+
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ---------------- GAME LAYOUT ---------------- */
+#game {
   position: relative;
-  top: 0;
-  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url("afb/perkament.jpg") center center / cover no-repeat;
+  overflow: hidden;
+}
+
+/* ---------------- MAPS ---------------- */
+.maps-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
   z-index: 10;
 }
 
-.elements-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 15px;
-  position: absolute;
-  top: 140px;  /* als map 100px hoog + 20px marge -> 120px, voeg evt. wat extra marge */
-  width: 45%;       /* helft van het scherm */
-}
-
-#left-elements {
-  position: absolute;
-  top: 150px;       /* start iets lager onder de map */
-  left: 0;
-  width: 50%;       /* linkerhelft van het scherm */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* horizontaal centreren in linkerhelft */
-  gap: 15px;
-}
-
-#right-maps {
-  position: absolute;
-  top: 20px;       /* vanaf bovenkant */
-  left: 50%;       /* rechterhelft startpunt */
-  width: 50%;      /* rechterhelft scherm */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* max 4 per rij horizontaal centreren */
-  gap: 20px;
-}
-
-#right-elements {
-  right: 5%;         /* marge van de rechterzijde voor 2e map */
-}
-
 .map {
-  position: absolute;                     /* absolute voor beweging */
+  position: absolute;
   width: 100px;
   height: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  align-items: center;
   cursor: pointer;
+  border-radius: 10px;
+  transition: top 0.5s ease, left 0.5s ease;
   z-index: 2;
-  transition: top 0.5s ease, left 0.5s ease; /* animatie van positie */
 }
 
 .map.open {
-  z-index: 10;                        /* boven andere mappen */
-  background-color: transparent;      
-  top: 20px;                          /* afstand van bovenkant scherm */
-  left: 25%;                           /* precies op de helft van de linkerhelft */
+  z-index: 10;
+  background-color: transparent;
 }
 
 .map img {
@@ -87,37 +151,67 @@
 }
 
 /* ---------------- ELEMENTEN ---------------- */
-.element {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 10px;
-  z-index: 1;
+#left-elements, #right-elements {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  pointer-events: none;
 }
 
+.element {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5;
+  transition: top 0.5s ease, left 0.5s ease;
+}
+
+.element img {
+  width: 100px;
+  height: 100px;
+}
+
+/* ---------------- TOOLTIP ---------------- */
+.map::after,
+.element::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.15s ease;
+  z-index: 10000;
+}
+
+.map:hover::after,
+.element:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* ---------------- ELEMENT ANIMATIES ---------------- */
 @keyframes shake {
-  0% { transform: translate(0, 0); }
-  10% { transform: translate(-1px, 0); }
-  20% { transform: translate(1px, 0); }
-  30% { transform: translate(-1px, 0); }
-  40% { transform: translate(1px, 0); }
-  50% { transform: translate(-1px, 0); }
-  60% { transform: translate(1px, 0); }
-  70% { transform: translate(-1px, 0); }
-  80% { transform: translate(1px, 0); }
-  90% { transform: translate(-1px, 0); }
-  100% { transform: translate(0, 0); }
+  0%, 100% { transform: translate(0,0); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-1px,0); }
+  20%, 40%, 60%, 80% { transform: translate(1px,0); }
 }
 
 .element.selected {
-  transform: none;          /* geen vergroting */
-  background-color: transparent;   /* geen kleur */
-  animation: shake 0.6s infinite; /* rustiger trillen (langzamer) */
+  animation: shake 0.6s infinite;
 }
 
 @keyframes errorShake {
@@ -136,48 +230,7 @@
   box-shadow: 0 0 20px rgba(255,0,0,0.6);
 }
 
-.element img {
-  width: 100px;
-  height: 100px;
-}
-
-/* ---------------- TOOLTIP ---------------- */
-.map span,
-.element span {
-  display: none;
-}
-
-.map::after,
-.element::after {
-  content: attr(data-name);
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translateX(-50%) scale(0.9);
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 8px;
-  font-size: 13px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.15s ease;
-  z-index: 10000;
-}
-
-.map:hover,
-.element:hover {
-  z-index: 9999;
-}
-
-.map:hover::after,
-.element:hover::after {
-  opacity: 1;
-  transform: translateX(-50%) scale(1);
-}
-
-/* ---------------- RESULTAAT COMBINATIE --------------------- */
+/* ---------------- RESULTAAT COMBINATIE ---------------- */
 #result-overlay {
   position: fixed;
   inset: 0;
@@ -187,17 +240,17 @@
   align-items: center;
   z-index: 2000;
   animation: fadeIn 0.8s ease-in-out;
-  padding: 60px 20px;       /* ruimte rondom */
+  padding: 60px 20px;
   box-sizing: border-box;
 }
 
 .result-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0,1fr));
   gap: 50px;
   width: 90%;
   max-width: 1200px;
-  justify-content: center;   /* belangrijk */
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
@@ -214,7 +267,7 @@
 
 .result-box {
   width: 100%;
-  max-width: 250px;     /* vaste breedte per element */
+  max-width: 250px;
   text-align: center;
   color: white;
   display: flex;
@@ -230,18 +283,17 @@
 }
 
 .result-title {
-  font-family: "Cinzel", serif; /* historische look */
+  font-family: "Cinzel", serif;
   font-size: 40px;
   letter-spacing: 3px;
   margin-bottom: 10px;
-  }
+}
 
 .result-quote {
   font-family: "Times New Roman", serif;
   font-size: 16px;
   line-height: 1.4;
   opacity: 0.85;
-  /* Dit voorkomt layout breken */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
