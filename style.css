@@ -168,9 +168,14 @@ body {
 }
 
 .map.open {
-  z-index: 4;
-  background-color: transparent;
-  transform: scale(1.2);
+  z-index: 10;                        /* boven andere mappen */
+  background-color: transparent;      
+  transform: scale(1.2);              /* iets groter maken */
+  
+  position: absolute;                 /* absolute positionering */
+  top: 20px;                          /* afstand van bovenkant scherm */
+  left: 25%;                           /* precies op de helft van de linkerhelft */
+  transition: all 0.5s ease;          /* soepele beweging */
 }
 
 .map img {
