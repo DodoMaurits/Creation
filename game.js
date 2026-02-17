@@ -324,33 +324,34 @@ function layoutGroups(side) {
 
   // pas layout aan
   if (openGroup !== null) {
-    // Open groep → alleen deze zichtbaar
-    groups.forEach((groupDiv, idx) => {
-      groupDiv.style.display = idx === openGroup ? "flex" : "none";
-    });
-
-    elementsContainer.style.display = "grid";
-    renderElements(side);
-
-    requestAnimationFrame(() => {
-      elementsContainer.classList.add("show");
-    });
-
+      // alleen open groep tonen
+      groups.forEach((groupDiv, idx) => {
+        groupDiv.style.display = idx === openGroup ? "flex" : "none";
+        groupDiv.classList.toggle("open", idx === openGroup);
+      });
+  
+      elementsContainer.style.display = "grid";
+      renderElements(side);
+  
+      requestAnimationFrame(() => {
+        elementsContainer.classList.add("show");
+      });
+  
   } else {
-    // Geen groep open → alles tonen en centreren
-    groups.forEach(groupDiv => {
-      groupDiv.style.display = "flex";
-      groupDiv.classList.remove("open");
-    });
-
-    container.style.display = "flex";
-    container.style.justifyContent = "center";
-    container.style.alignItems = "center";
-    container.style.gap = "20px";
-
-    elementsContainer.innerHTML = "";
-    elementsContainer.style.display = "none";
-    elementsContainer.classList.remove("show");
+      // alles tonen en centreren
+      groups.forEach(groupDiv => {
+        groupDiv.style.display = "flex";
+        groupDiv.classList.remove("open");
+      });
+  
+      container.style.display = "flex";
+      container.style.justifyContent = "center";
+      container.style.alignItems = "center";
+      container.style.gap = "20px";
+  
+      elementsContainer.innerHTML = "";
+      elementsContainer.style.display = "none";
+      elementsContainer.classList.remove("show");
   }
 
   // 🟢 FLIP stap 2: meet nieuwe posities
