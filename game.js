@@ -307,39 +307,55 @@ let selectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
-  // Maak containers voor linker/rechter elementen
-  const game = document.getElementById("game");
+  const container = document.getElementById("maps-container");
 
-  let leftContainer = document.getElementById("left-elements");
-  if (!leftContainer) {
-    leftContainer = document.createElement("div");
-    leftContainer.id = "left-elements";
-    leftContainer.style.position = "absolute";
-    leftContainer.style.top = "140px"; // net onder maps
-    leftContainer.style.left = "20px";
-    leftContainer.style.width = "45%";
-    leftContainer.style.display = "grid";
-    leftContainer.style.gridTemplateColumns = "repeat(4, 1fr)";
-    leftContainer.style.gap = "15px";
-    game.appendChild(leftContainer);
-  }
+  mappen.forEach((map, idx) => {
+    const div = document.createElement("div");
+    div.className = "map";
+    div.dataset.name = map.naam;
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    
+    div.addEventListener("click", () => {
+      openGroup = openGroup === idx ? null : idx;
+      selectedElement = null;
+      updateMapPositions(); // update de positie van alle mappen
+      renderElements();
+    });
 
-  let rightContainer = document.getElementById("right-elements");
-  if (!rightContainer) {
-    rightContainer = document.createElement("div");
-    rightContainer.id = "right-elements";
-    rightContainer.style.position = "absolute";
-    rightContainer.style.top = "140px";
-    rightContainer.style.right = "20px";
-    rightContainer.style.width = "45%";
-    rightContainer.style.display = "grid";
-    rightContainer.style.gridTemplateColumns = "repeat(4, 1fr)";
-    rightContainer.style.gap = "15px";
-    game.appendChild(rightContainer);
-  }
+    container.appendChild(div);
+  });
 
-  renderGroups();
-  renderElements();
+  updateMapPositions(); // initialiseer posities
+}
+
+function updateMapPositions() {
+  const containerWidth = window.innerWidth;
+  const containerHeight = window.innerHeight;
+  const mapWidth = 100;
+  const mapHeight = 100;
+  const gap = 20;
+  const maxPerRow = 4;
+
+  const totalRows = Math.ceil(mappen.length / maxPerRow);
+  const startTop = (containerHeight - ((mapHeight + gap) * totalRows - gap)) / 2;
+
+  const mapDivs = document.querySelectorAll(".map");
+
+  mapDivs.forEach((div, idx) => {
+    const row = Math.floor(idx / maxPerRow);
+    const col = idx % maxPerRow;
+
+    let top = startTop + row * (mapHeight + gap);
+    let left = (containerWidth - Math.min(mappen.length, maxPerRow) * (mapWidth + gap) + gap) / 2 + col * (mapWidth + gap);
+
+    if (openGroup === idx) {
+      top = 20;                 // bovenkant scherm
+      left = containerWidth * 0.25; // linkerhelft
+    }
+
+    div.style.top = top + "px";
+    div.style.left = left + "px";
+  });
 }
 
 // ---------------- RENDER GROEPEN ----------------
