@@ -136,6 +136,10 @@ body {
   pointer-events: none; /* klikken gaat naar de map zelf */
 }
 
+.centered-overlay .map {
+  pointer-events: auto; /* maps blijven klikbaar */
+}
+
 /* ---------------- LINKER/RECHTER PANEL ---------------- */
 #left-panel,
 #right-panel {
