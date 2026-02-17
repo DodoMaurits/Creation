@@ -319,8 +319,8 @@ function renderGroups(instant = false) {
   mappen.forEach((map, idx) => {
     const div = document.createElement("div");
     div.className = "map";
-    div.dataset.name = el.naam;
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+    div.dataset.name = map.naam;
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
     div.addEventListener("click", () => {
       openGroup = openGroup === idx ? null : idx;
@@ -344,7 +344,7 @@ function layoutGroups() {
   container.style.flexWrap = "wrap";
   container.style.justifyContent = "center";
   container.style.alignItems = "center";
-  container.style.height = "60vh";
+  container.style.height = "100vh";
   container.style.gap = "20px";
 }
 
