@@ -127,12 +127,15 @@ body {
 
 .maps-container {
   display: flex;
+  flex-wrap: wrap;           /* zorgt dat er meerdere rijen kunnen zijn als >4 mappen */
+  justify-content: center;   /* horizontaal centreren */
+  align-items: center;       /* verticaal centreren binnen container */
   gap: 20px;
-  padding: 20px;
+  height: 100vh;             /* hele hoogte scherm */
+  width: 100vw;              /* hele breedte scherm */
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 10;
 }
 
