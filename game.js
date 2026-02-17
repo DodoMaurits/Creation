@@ -447,8 +447,18 @@ function combineElements(e1, e2) {
     (c.input[0] === e2 && c.input[1] === e1)
   );
 
+  // Geen combinatie
   if (!combo) {
-    alert("Geen combinatie gevonden!");
+    const leftContainer = document.getElementById("left-elements");
+    const elements = leftContainer.querySelectorAll(".element.selected");
+
+    elements.forEach(elDiv => {
+      elDiv.classList.remove("selected");   // stopt de shake animatie
+      elDiv.classList.add("error");         // korte error-shake animatie
+      setTimeout(() => elDiv.classList.remove("error"), 600); // verwijdert error na animatie
+    });
+
+    selectedElement = null;
     return;
   }
 
