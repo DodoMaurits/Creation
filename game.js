@@ -378,29 +378,18 @@ function layoutGroups(side, instant = false) {
     });
   } else {
     // ---------------- GEEN GROEP OPEN ----------------
-    const totalCols = Math.min(4, groups.length);
-    const totalRows = Math.ceil(groups.length / 4);
-    const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
-    const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-
-    groups.forEach((groupDiv, idx) => {
+    groups.forEach((groupDiv) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
-
-      const col = idx % 4;
-      const row = Math.floor(idx / 4);
-
-      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
-
-      if (instant) groupDiv.style.transition = "none";
-      groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-      if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
+      groupDiv.style.position = "relative"; // in de flow van de flex/grid
+      groupDiv.style.margin = "auto";        // horizontaal + verticaal centreren
+      groupDiv.style.transform = "none";     // reset eventueel eerdere transform
     });
 
     // ELEMENTEN CONTAINER VERBERGEN
     const elementsContainer = document.getElementById(side + "-elements-container");
     elementsContainer.innerHTML = "";
+    elementsContainer.style.display = "none"
     elementsContainer.style.position = "absolute";
     elementsContainer.style.top = "0";
     elementsContainer.style.display = "grid";
@@ -703,4 +692,4 @@ function showNewElement(combi) {
 }
 
 // ---------------- START ----------------
-init();
+window.onload = init;
