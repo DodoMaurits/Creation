@@ -300,12 +300,44 @@ const groepsIconen = {
   "Vuur": "icons/Vuur.png"
 };
 
+
 // ---------------- STATUS ----------------
 let openGroup = null;
 let selectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
+  // Maak containers voor linker/rechter elementen
+  const game = document.getElementById("game");
+
+  let leftContainer = document.getElementById("left-elements");
+  if (!leftContainer) {
+    leftContainer = document.createElement("div");
+    leftContainer.id = "left-elements";
+    leftContainer.style.position = "absolute";
+    leftContainer.style.top = "140px"; // net onder maps
+    leftContainer.style.left = "20px";
+    leftContainer.style.width = "45%";
+    leftContainer.style.display = "grid";
+    leftContainer.style.gridTemplateColumns = "repeat(4, 1fr)";
+    leftContainer.style.gap = "15px";
+    game.appendChild(leftContainer);
+  }
+
+  let rightContainer = document.getElementById("right-elements");
+  if (!rightContainer) {
+    rightContainer = document.createElement("div");
+    rightContainer.id = "right-elements";
+    rightContainer.style.position = "absolute";
+    rightContainer.style.top = "140px";
+    rightContainer.style.right = "20px";
+    rightContainer.style.width = "45%";
+    rightContainer.style.display = "grid";
+    rightContainer.style.gridTemplateColumns = "repeat(4, 1fr)";
+    rightContainer.style.gap = "15px";
+    game.appendChild(rightContainer);
+  }
+
   renderGroups();
   renderElements();
 }
@@ -318,10 +350,15 @@ function renderGroups() {
   mappen.forEach((map, idx) => {
     const div = document.createElement("div");
     div.className = "map";
-    div.dataset.name = map.naam;
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><p>${map.naam}</p>`;
+    div.dataset.name = map.naam; // tooltip
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+
+    // Zet open class
+    if (openGroup === idx) div.classList.add("open");
+    else div.classList.remove("open");
 
     div.addEventListener("click", () => {
+      // Toggle open/close
       openGroup = openGroup === idx ? null : idx;
       selectedElement = null;
       renderGroups();
@@ -330,26 +367,25 @@ function renderGroups() {
 
     container.appendChild(div);
   });
-
-  container.style.display = "flex";
-  container.style.flexWrap = "wrap";
-  container.style.justifyContent = "center";
-  container.style.alignItems = "center";
-  container.style.height = "30vh";
-  container.style.gap = "20px";
 }
 
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
-  const container = document.getElementById("elements-container");
-  container.innerHTML = "";
+  const leftContainer = document.getElementById("left-elements");
+  const rightContainer = document.getElementById("right-elements");
+
+  leftContainer.innerHTML = "";
+  rightContainer.innerHTML = "";
+
   if (openGroup === null) return;
 
   const elementen = mappen[openGroup].elementen;
+  const targetContainer = openGroup === 0 ? leftContainer : rightContainer;
+
   elementen.forEach(el => {
     const div = document.createElement("div");
     div.className = "element";
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><p>${el.naam}</p>`;
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
     if (selectedElement === el.naam) div.classList.add("selected");
 
@@ -363,21 +399,13 @@ function renderElements() {
       renderElements();
     });
 
-    container.appendChild(div);
+    targetContainer.appendChild(div);
   });
-
-  container.style.display = "flex";
-  container.style.flexWrap = "wrap";
-  container.style.justifyContent = "center";
-  container.style.alignItems = "center";
-  container.style.gap = "15px";
-  container.style.minHeight = "30vh";
 }
 
 // ---------------- COMBINATIE LOGICA ----------------
 function combineElements(e1, e2) {
-  // Kijk of er een combinatie bestaat (in beide volgordes)
-  const combo = combinaties.find(c => 
+  const combo = combinaties.find(c =>
     (c.input[0] === e1 && c.input[1] === e2) || (c.input[0] === e2 && c.input[1] === e1)
   );
 
@@ -387,15 +415,12 @@ function combineElements(e1, e2) {
   }
 
   combo.output.forEach(out => {
-    // Zoek of map bestaat
     let mapObj = mappen.find(m => m.naam === out.map);
     if (!mapObj) {
-      // Nieuwe map toevoegen
       mapObj = { naam: out.map, icoon: `icons/${out.map}.png`, elementen: [] };
       mappen.push(mapObj);
     }
 
-    // Voeg element toe als het nog niet bestaat
     if (!mapObj.elementen.find(el => el.naam === out.naam)) {
       mapObj.elementen.push({ naam: out.naam, icoon: out.icoon });
       alert(`Nieuw element ontdekt: ${out.naam}!\n\n${out.quote}`);
@@ -408,3 +433,4 @@ function combineElements(e1, e2) {
 
 // ---------------- START ----------------
 init();
+
