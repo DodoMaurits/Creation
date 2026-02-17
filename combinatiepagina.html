@@ -7,12 +7,24 @@
 </head>
 <body>
 
-<div id="maps-container" class="centered">
-  <div id="maps"></div>
-</div>
+<div id="game">
 
-<div id="left-panel"></div>
-<div id="right-panel"></div>
+  <!-- Midden (beginstand) -->
+  <div id="center-area" class="area"></div>
+
+  <!-- Linkerkant -->
+  <div id="left-area" class="area side hidden">
+    <div class="top-slot" id="left-top"></div>
+    <div class="elements" id="left-elements"></div>
+  </div>
+
+  <!-- Rechterkant -->
+  <div id="right-area" class="area side hidden">
+    <div class="top-slot" id="right-top"></div>
+    <div class="elements" id="right-elements"></div>
+  </div>
+
+</div>
 
 <script src="game.js"></script>
 </body>
