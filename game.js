@@ -306,51 +306,101 @@ let openGroups = []; // array van indices van geopende mappen
 let selectedElement = null;
 
 // ---------------- INIT ----------------
+
+// ---------------- INIT ----------------
 function init() {
   const container = document.getElementById("maps-container");
+  container.innerHTML = "";
 
   mappen.forEach((map, idx) => {
     const div = document.createElement("div");
     div.className = "map";
-    div.dataset.name = map.naam;
+    div.dataset.index = idx;
     div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
-    
+
+    div.style.position = "absolute";
+    div.style.width = "100px";
+    div.style.height = "100px";
+    div.style.transition = "all 0.4s ease";
+
     div.addEventListener("click", () => {
-      openGroup = openGroup === idx ? null : idx;
+      const index = openGroups.indexOf(idx);
+
+      if (index === -1) {
+        openGroups.push(idx);
+      } else {
+        openGroups.splice(index, 1);
+      }
+
       selectedElement = null;
-      updateMapPositions(); // update de positie van alle mappen
+      updateMapPositions();
       renderElements();
     });
 
     container.appendChild(div);
   });
 
-  updateMapPositions(); // initialiseer posities
+  updateMapPositions();
+  renderElements();
 }
 
+// ---------------- UPDATE MAP POSITIES ----------------
 function updateMapPositions() {
-  const containerWidth = window.innerWidth;
-  const containerHeight = window.innerHeight;
-  const mapWidth = 100;
-  const mapHeight = 100;
+
+  const maps = document.querySelectorAll(".map");
+
+  const screenW = window.innerWidth;
+  const screenH = window.innerHeight;
+
+  const size = 100;
   const gap = 20;
   const maxPerRow = 4;
 
-  const totalRows = Math.ceil(mappen.length / maxPerRow);
-  const startTop = (containerHeight - ((mapHeight + gap) * totalRows - gap)) / 2;
+  const closed = [];
+  maps.forEach((_, i) => {
+    if (!openGroups.includes(i)) closed.push(i);
+  });
 
-  const mapDivs = document.querySelectorAll(".map");
+  const rowsClosed = Math.ceil(closed.length / maxPerRow);
+  const totalHeightClosed = rowsClosed * size + (rowsClosed - 1) * gap;
+  const startTopClosed = (screenH - totalHeightClosed) / 2;
 
-  mapDivs.forEach((div, idx) => {
-    const row = Math.floor(idx / maxPerRow);
-    const col = idx % maxPerRow;
+  maps.forEach((div, i) => {
 
-    let top = startTop + row * (mapHeight + gap);
-    let left = (containerWidth - Math.min(mappen.length, maxPerRow) * (mapWidth + gap) + gap) / 2 + col * (mapWidth + gap);
+    let top, left;
 
-    if (openGroup === idx) {
-      top = 20;                 // bovenkant scherm
-      left = containerWidth * 0.25; // linkerhelft
+    if (openGroups.includes(i)) {
+
+      const openIndex = openGroups.indexOf(i);
+
+      if (openIndex === 0) {
+        // Eerste open map → linksboven in linkerhelft
+        top = 20;
+        left = screenW * 0.25 - size / 2;
+      } else {
+        // Andere open maps → rechterhelft
+        const idx = openIndex - 1;
+        const row = Math.floor(idx / maxPerRow);
+        const col = idx % maxPerRow;
+
+        const totalWidth = maxPerRow * size + (maxPerRow - 1) * gap;
+        const startLeft = screenW * 0.75 - totalWidth / 2;
+
+        top = 20 + row * (size + gap);
+        left = startLeft + col * (size + gap);
+      }
+
+    } else {
+
+      const idx = closed.indexOf(i);
+      const row = Math.floor(idx / maxPerRow);
+      const col = idx % maxPerRow;
+
+      const itemsInRow = Math.min(maxPerRow, closed.length - row * maxPerRow);
+      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+
+      top = startTopClosed + row * (size + gap);
+      left = screenW / 2 - rowWidth / 2 + col * (size + gap);
     }
 
     div.style.top = top + "px";
@@ -358,81 +408,78 @@ function updateMapPositions() {
   });
 }
 
-// ---------------- RENDER GROEPEN ----------------
-function renderElements() {
-  const leftContainer = document.getElementById("left-elements");
-  leftContainer.innerHTML = "";
-
-  if (openGroups.length === 0) return;
-
-  const firstOpen = openGroups[0]; // eerste open map
-  const mapDiv = document.querySelector(".map.open");
-  if (!mapDiv) return;
-
-  const mapRect = mapDiv.getBoundingClientRect();
-  const screenWidth = window.innerWidth;
-  const leftHalfCenter = screenWidth / 4; // horizontaal midden van linkerhelft
-
-  const elementen = mappen[firstOpen].elementen;
-
-  const maxPerRow = 4;
-  const elementSize = 100; // breedte van element
-  const gap = 15;           // gap tussen elementen
-  const rowCount = Math.ceil(elementen.length / maxPerRow);
-
-  // bereken totale breedte van rij
-  const totalWidth = Math.min(elementen.length, maxPerRow) * elementSize + (Math.min(elementen.length, maxPerRow) - 1) * gap;
-
-  // start links zodat rij horizontaal gecentreerd is in linkerhelft
-  const startLeft = leftHalfCenter - totalWidth / 2;
-
-  elementen.forEach((el, i) => {
-    const div = document.createElement("div");
-    div.className = "element";
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-
-    const row = Math.floor(i / maxPerRow);
-    const col = i % maxPerRow;
-
-    div.style.position = "absolute";
-    div.style.top = mapRect.bottom + 20 + row * (elementSize + gap) + "px"; // 20px afstand onder map
-    div.style.left = startLeft + col * (elementSize + gap) + "px";
-
-    leftContainer.appendChild(div);
-  });
-}
-
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
+
   const leftContainer = document.getElementById("left-elements");
+  const rightContainer = document.getElementById("right-elements");
+
   leftContainer.innerHTML = "";
+  rightContainer.innerHTML = "";
 
   if (openGroups.length === 0) return;
 
-  const firstOpen = openGroups[0]; // eerste open map
-  const elementen = mappen[firstOpen].elementen;
+  const elementSize = 100;
+  const gap = 15;
+  const maxPerRow = 4;
 
-  const openMapDiv = document.querySelector(".map.open");
-  const mapRect = openMapDiv.getBoundingClientRect();
+  openGroups.forEach((groupIndex, openIndex) => {
 
-  elementen.forEach((el, i) => {
-    const div = document.createElement("div");
-    div.className = "element";
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+    const container = openIndex === 0 ? leftContainer : rightContainer;
+    const mapDiv = document.querySelectorAll(".map")[groupIndex];
+    const rect = mapDiv.getBoundingClientRect();
+    const elements = mappen[groupIndex].elementen;
 
-    // positioneren onder map
-    div.style.position = "absolute";
-    div.style.top = mapRect.bottom + 20 + "px";
-    div.style.left = mapRect.left + i * (100 + 15) + "px"; // max 4 per rij, gap 15
+    const itemsFirstRow = Math.min(maxPerRow, elements.length);
+    const rowWidth = itemsFirstRow * elementSize + (itemsFirstRow - 1) * gap;
 
-    leftContainer.appendChild(div);
+    const centerX = openIndex === 0
+      ? window.innerWidth * 0.25
+      : window.innerWidth * 0.75;
+
+    const startLeft = centerX - rowWidth / 2;
+
+    elements.forEach((el, i) => {
+
+      const div = document.createElement("div");
+      div.className = "element";
+      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+
+      div.style.position = "absolute";
+      div.style.width = "100px";
+      div.style.height = "100px";
+      div.style.cursor = "pointer";
+
+      const row = Math.floor(i / maxPerRow);
+      const col = i % maxPerRow;
+
+      div.style.top = rect.bottom + 25 + row * (elementSize + gap) + "px";
+      div.style.left = startLeft + col * (elementSize + gap) + "px";
+
+      // ---- SELECTIE / COMBINATIE ----
+      div.addEventListener("click", () => {
+        if (!selectedElement) {
+          selectedElement = el.naam;
+          div.classList.add("selected");
+        } else {
+          combineElements(selectedElement, el.naam);
+          selectedElement = null;
+          renderElements();
+        }
+      });
+
+      container.appendChild(div);
+    });
+
   });
 }
 
 // ---------------- COMBINATIE LOGICA ----------------
 function combineElements(e1, e2) {
+
   const combo = combinaties.find(c =>
-    (c.input[0] === e1 && c.input[1] === e2) || (c.input[0] === e2 && c.input[1] === e1)
+    (c.input[0] === e1 && c.input[1] === e2) ||
+    (c.input[0] === e2 && c.input[1] === e1)
   );
 
   if (!combo) {
@@ -441,21 +488,39 @@ function combineElements(e1, e2) {
   }
 
   combo.output.forEach(out => {
+
     let mapObj = mappen.find(m => m.naam === out.map);
+
     if (!mapObj) {
-      mapObj = { naam: out.map, icoon: `icons/${out.map}.png`, elementen: [] };
+      mapObj = {
+        naam: out.map,
+        icoon: `icons/${out.map}.png`,
+        elementen: []
+      };
       mappen.push(mapObj);
+      init(); // nieuwe map renderen
     }
 
     if (!mapObj.elementen.find(el => el.naam === out.naam)) {
-      mapObj.elementen.push({ naam: out.naam, icoon: out.icoon });
+      mapObj.elementen.push({
+        naam: out.naam,
+        icoon: out.icoon
+      });
+
       alert(`Nieuw element ontdekt: ${out.naam}!\n\n${out.quote}`);
     }
+
   });
 
-  renderGroups();
+  updateMapPositions();
   renderElements();
 }
+
+// ---------------- RESIZE ----------------
+window.addEventListener("resize", () => {
+  updateMapPositions();
+  renderElements();
+});
 
 // ---------------- START ----------------
 init();
