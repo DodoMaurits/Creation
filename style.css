@@ -161,6 +161,14 @@ body {
   transition: transform 0.3s;
 }
 
+#left-maps, #right-maps {
+  display: flex;
+  justify-content: center; /* horizontaal centreren */
+  align-items: center;     /* verticaal centreren */
+  gap: 20px;               /* ruimte tussen de mappen */
+  flex-wrap: wrap;         /* breek naar nieuwe rij als nodig */
+}
+
 /* OPEN GROEP */
 .map.open {
   position: absolute;      /* bovenop de container plaatsen */
