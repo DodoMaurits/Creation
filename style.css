@@ -288,6 +288,17 @@ body {
   transform: translateX(-50%) scale(1);
 }
 
+#right-panel {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* of waar je het wilt */
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 5;
+}
+
 /* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
 #left-panel.no-open,
 #right-panel.no-open {
