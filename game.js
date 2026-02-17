@@ -388,7 +388,8 @@ function renderElementsLeft() {
 
 function animateMapShift(idx) {
   const maps = document.getElementById("maps");
-  maps.style.transform = "translateX(-150px)"; // of dynamisch op basis van width
+  const mapWidth = maps.children[idx].offsetWidth;
+  maps.style.transform = `translateX(-${mapWidth + 20}px)`; // 20px gap
 }
 
 // ---------------- COMBINATIE ----------------
