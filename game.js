@@ -306,8 +306,6 @@ let openGroups = []; // array van indices van geopende mappen
 let selectedElement = null;
 
 // ---------------- INIT ----------------
-
-// ---------------- INIT ----------------
 function init() {
   const container = document.getElementById("maps-container");
   container.innerHTML = "";
@@ -316,9 +314,8 @@ function init() {
     const div = document.createElement("div");
     div.className = "map";
     div.dataset.index = idx;
+    div.dataset.name = map.naam, el.naam;
     div.innerHTML = `<img src="${map.icoon}" alt="">`;
-    div.title = map.naam;
-
     div.style.position = "absolute";
     div.style.width = "100px";
     div.style.height = "100px";
