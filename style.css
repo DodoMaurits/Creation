@@ -169,7 +169,9 @@ body {
   transition: transform 0.4s ease, opacity 0.4s ease;
   opacity: 0; /* start onzichtbaar */
 }
+
 .element.show {
+  transform: translateY(0);
   opacity: 1;
 }
 
