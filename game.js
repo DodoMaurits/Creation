@@ -25,25 +25,25 @@ const combinaties = [
         naam: "Zwaartekracht",
         icoon: "icons/Zwaartekracht.png",
         map: "Krachten",
-        quote: "Gravity explains the motions of the planets, <br>but it cannot explain who sets the planets in motion <br><br>- Isaac Newton"
+        quote: "Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion <br><br>- Isaac Newton"
       },
       {
         naam: "Straling",
         icoon: "icons/Straling.png",
         map: "Krachten",
-        quote: "A compassionate heart radiates rays of beauty <br>that remove the clouds of million hearts <br><br>- Amit Ray"
+        quote: "A compassionate heart radiates rays of beauty that remove the clouds of million hearts <br><br>- Amit Ray"
       },
       {
         naam: "Quark",
         icoon: "icons/Quark.png",
         map: "Chemie",
-        quote: "Every atom in your body is the same quark <br>in different places at the same moment in time <br><br>- David Eagleman"
+        quote: "Every atom in your body is the same quark in different places at the same moment in time <br><br>- David Eagleman"
       },
       {
         naam: "Elektriciteit",
         icoon: "icons/Elektriciteit.png",
         map: "Krachten",
-        quote: "We're electrical items and when we die <br>the electricity goes somewhere else <br><br>- Dominic Monaghan"
+        quote: "We're electrical items and when we die the electricity goes somewhere else <br><br>- Dominic Monaghan"
       }
     ]
   },
@@ -54,7 +54,7 @@ const combinaties = [
           naam: "Heelal",
           icoon: "icons/Heelal.png",
           map: "Ruimte",
-          quote: "The reason why the universe is eternal is that it does not live for itself: <br>it gives life to others as it transforms <br><br>- Lao Tzu"
+          quote: "The reason why the universe is eternal is that it does not live for itself: it gives life to others as it transforms <br><br>- Lao Tzu"
         }
       ]
     },
@@ -65,7 +65,7 @@ const combinaties = [
           naam: "Atomen",
           icoon: "icons/Atomen.png",
           map: "Chemie",
-          quote: "In reality, nothing <br>but atoms and the void <br><br>- Democritos"
+          quote: "In reality, nothing but atoms and the void <br><br>- Democritos"
         }
       ]
     },
@@ -76,7 +76,7 @@ const combinaties = [
             naam: "Radioactiviteit",
             icoon: "icons/Radioactiviteit.png",
             map: "Krachten",
-            quote: "Nuclear power is one hell of a way <br>to boil water <br><br>-Albert Einstein"
+            quote: "Nuclear power is one hell of a way to boil water <br><br>-Albert Einstein"
           }
         ]
       },
@@ -87,7 +87,7 @@ const combinaties = [
             naam: "Gas",
             icoon: "icons/Gas.png",
             map: "Lucht",
-            quote: "All flight is based upon producing air pressure, <br>all flight energy consists in overcoming air pressure <br><br>- Otto Lilienthal"
+            quote: "All flight is based upon producing air pressure, all flight energy consists in overcoming air pressure <br><br>- Otto Lilienthal"
           }
         ]
       },
@@ -98,7 +98,7 @@ const combinaties = [
             naam: "IJs",
             icoon: "icons/IJs.png",
             map: "Water",
-            quote: "Just as when water is frozen in to a form as ice and then melts <br>so at the time of death, there is no death. The spirit simply changes form <br><br>- Frederick Lenz"
+            quote: "Just as when water is frozen in to a form as ice and then melts so at the time of death, there is no death. The spirit simply changes form <br><br>- Frederick Lenz"
           }
         ]
       },
@@ -120,7 +120,7 @@ const combinaties = [
             naam: "Water",
             icoon: "icons/Water.png",
             map: "Water",
-            quote: "Water is the softest thing, yet it can penetrate mountains and earth.<br>This shows clearly the principle of softness overcoming hardness <br><br>-Lao Tzu"
+            quote: "Water is the softest thing, yet it can penetrate mountains and earth. This shows clearly the principle of softness overcoming hardness <br><br>-Lao Tzu"
           }
         ]
       },
@@ -131,13 +131,13 @@ const combinaties = [
             naam: "IJzer",
             icoon: "icons/IJzer.png",
             map: "Aarde",
-            quote: "Do not wait to strike till the iron is hot <br>but make it hot by striking <br><br>-William Butler Yeatsu"
+            quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Butler Yeatsu"
           },
           {
             naam: "Supernova",
             icoon: "icons/Supernova.png",
             map: "Ruimte",
-            quote: "A supernova is one of the most <br>powerful explosions in the universe.<br>It's so luminous, it can be seen <br>across billions of light years.<br>It releases as much energy in an instant <br>as our sun will produce over its 10-billion-year lifetime<br><br>- Neil Tyson"
+            quote: "A supernova is one of the most powerful explosions in the universe. It's so luminous, it can be seen across billions of light years. It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime<br><br>- Neil Tyson"
           }
         ]
       },
@@ -148,13 +148,13 @@ const combinaties = [
             naam: "Asteroïden",
             icoon: "icons/Asteroïden.png",
             map: "Ruimte",
-            quote: "If you keep chasing shooting stars, <br>you'll never feel the warmth of the sun <br><br>- Ann Marie Frohoff"
+            quote: "If you keep chasing shooting stars, you'll never feel the warmth of the sun <br><br>- Ann Marie Frohoff"
           },
           {
             naam: "Planeet",
             icoon: "icons/Planeet.png",
             map: "Ruimte",
-            quote: "Astronomy compels the soul to look upwards <br>and leads us from this world to another <br><br>- Plato"
+            quote: "Astronomy compels the soul to look upwards and leads us from this world to another <br><br>- Plato"
           }
         ]
       },
@@ -165,7 +165,7 @@ const combinaties = [
               naam: "Roest",
               icoon: "icons/Roest.png",
               map: "Chemie",
-              quote: "None can destroy iron, but its own rust can.<br>Likewise none can destroy a person,<br>but its own mindset can<br><br>- Ratan Tata"
+              quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
             }
           ]
         },
@@ -176,7 +176,7 @@ const combinaties = [
               naam: "Meer",
               icoon: "icons/Meer.png",
               map: "Water",
-              quote: "Make your heart like a lake <br>with a calm, still surface and <br>great depths of kindness<br><br>-Lao Tzu"
+              quote: "Make your heart like a lake <br>with a calm, still surface and great depths of kindness<br><br>-Lao Tzu"
             }
           ]
         },
@@ -187,7 +187,7 @@ const combinaties = [
                 naam: "Zwart Gat",
                 icoon: "icons/Zwartgat.png",
                 map: "Ruimte",
-                quote: "I belive in black holes.<br>I believe that as the universe empties into nothingness,<br>past and future will smack together in <br>the last swirl around the drain<br><br>- Abraham Verghese"
+                quote: "I belive in black holes. I believe that as the universe empties into nothingness, past and future will smack together in the last swirl around the drain<br><br>- Abraham Verghese"
               }
             ]
           },
@@ -198,19 +198,19 @@ const combinaties = [
               naam: "Vuur",
               icoon: "icons/Vuur.png",
               map: "Vuur",
-              quote: "Tampering with fire will burn you,<br>even in the coldest regions<br><br>- H.S. Crow"
+              quote: "Tampering with fire will burn you, even in the coldest regions<br><br>- H.S. Crow"
             },
             {
               naam: "Lava",
               icoon: "icons/Lava.png",
               map: "Vuur",
-              quote: "It is the lava of the imagination <br>whose eruption prevents an earthquake<br><br>- Lord Byron"
+              quote: "It is the lava of the imagination whose eruption prevents an earthquake<br><br>- Lord Byron"
             },
             {
               naam: "Rook",
               icoon: "icons/Rook.png",
               map: "Vuur",
-              quote: "Surely where there's smoke<br>there's fire? No, where there's <br>so much smoke there's smoke<br><br>- John Wheeler"
+              quote: "Surely where there's smoke there's fire? No, where there's so much smoke there's smoke<br><br>- John Wheeler"
             }
           ]
         },
@@ -221,13 +221,13 @@ const combinaties = [
               naam: "Jupiter",
               icoon: "icons/Jupiter.png",
               map: "Ruimte",
-              quote: ""
+              quote: "Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... and he looked every single inch of it <br><br>- Lulu Moore"
             },
             {
               naam: "Saturnus",
               icoon: "icons/Saturnus.png",
               map: "Ruimte",
-              quote: ""
+              quote: "At depth on Jupiter and Saturn, the pressures are so great that atoms sweat electrons, and the air becomes a metal <br><br>- Carl Sagan"
             }
           ]
         },
@@ -238,13 +238,13 @@ const combinaties = [
                 naam: "Uranus",
                 icoon: "icons/Neptunus.png",
                 map: "Ruimte",
-                quote: ""
+                quote: "If the world seems cold to you, kindle fires to warm it <br><br>- Lucy Larcom"
               },
               {
-                naam: "Saturnus",
-                icoon: "icons/Saturnus.png",
+                naam: "Neptunus",
+                icoon: "icons/Neptunus.png",
                 map: "Ruimte",
-                quote: ""
+                quote: "We see it as Columbus saw America from the coast of Spain. Its movements have been felt, trembling along the far-reaching line of our analysis with a certainty hardly inferior to that of ocular demonstration <br><br>- William Herschel"
               }
             ]
           },
@@ -255,25 +255,25 @@ const combinaties = [
                   naam: "Mars",
                   icoon: "icons/Mars.png",
                   map: "Ruimte",
-                  quote: ""
+                  quote: "It was Mars. the God of War, and for me, the fighting man, it had always held the power of irresistible enchantment. As I gazed at it on that far-gone night it seemed to call across the unthinkable void, to lure me to it, to draw me as the lodestone attracts a particle of iron <br><br>- Edgar Rice Burroughs "
                 },
                 {
                   naam: "De Aarde",
                   icoon: "icons/De_Aarde.png",
                   map: "Ruimte",
-                  quote: ""
+                  quote: "On Earth there is no heaven, but there are pieces of it <br><br>- Jules Renard"
                 },
                 {
                   naam: "Venus",
                   icoon: "icons/Venus.png",
                   map: "Ruimte",
-                  quote: ""
+                  quote: "She was the Goddess of Love. It's nice that love comes on first thing in the evening, and goes out last in the morning. Love keeps the light on all night <br><br>- Catherynne Valente"
                 },
                 {
                   naam: "Mercurius",
                   icoon: "icons/Mercurius.png",
                   map: "Ruimte",
-                  quote: ""
+                  quote: "I had rather be Mercury, the smallest among seven, resolving round the sun, than the first among five revolving round Saturn <br><br>- Johann von Goethe"
                 }
               ]
             }
