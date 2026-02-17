@@ -416,9 +416,10 @@ function renderElements() {
   const groupIndex = openGroups[0]; // alleen linkerhelft
   const elements = mappen[groupIndex].elementen;
 
+  elements.forEach(el => { // <-- hier moet de forEach zijn
     const div = document.createElement("div");
     div.className = "element";
-    div.dataset.name = el.naam; // dit is belangrijk voor je tooltip
+    div.dataset.name = el.naam; // tooltip
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
     leftContainer.appendChild(div);
 
