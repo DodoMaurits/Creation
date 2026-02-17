@@ -176,7 +176,7 @@ const combinaties = [
               naam: "Meer",
               icoon: "icons/Meer.png",
               map: "Water",
-              quote: "<br>-"
+              quote: "Make your heart like a lake <br>with a calm, still surface and <br>great depths of kindness<br><br>-Lao Tzu"
             }
           ]
         },
@@ -187,7 +187,7 @@ const combinaties = [
                 naam: "Zwart Gat",
                 icoon: "icons/Zwartgat.png",
                 map: "Ruimte",
-                quote: "<br>-"
+                quote: "I belive in black holes.<br>I believe that as the universe empties into nothingness,<br>past and future will smack together in <br>the last swirl around the drain<br><br>- Abraham Verghese"
               }
             ]
           },
@@ -198,19 +198,19 @@ const combinaties = [
               naam: "Vuur",
               icoon: "icons/Vuur.png",
               map: "Vuur",
-              quote: "<br><br>-"
+              quote: "Tampering with fire will burn you,<br>even in the coldest regions<br><br>- H.S. Crow"
             },
             {
               naam: "Lava",
               icoon: "icons/Lava.png",
               map: "Vuur",
-              quote: "<br><br>- "
+              quote: "It is the lava of the imagination <br>whose eruption prevents an earthquake<br><br>- Lord Byron"
             },
             {
               naam: "Rook",
               icoon: "icons/Rook.png",
               map: "Vuur",
-              quote: "<br><br>- "
+              quote: "Surely where there's smoke<br>there's fire? No, where there's <br>so much smoke there's smoke<br><br>- John Wheeler"
             }
           ]
         }
