@@ -351,51 +351,53 @@ function layoutGroups(side, instant = false) {
         groupDiv.classList.remove("open");
       }
     });
-} else {
-// ---------------- GEEN GROEP OPEN ----------------
-const game = document.getElementById("game");
-
-// Verzamel alle maps uit beide panels
-const container = panel.querySelector(".maps-container");
-const groups = Array.from(container.querySelectorAll(".map"));
-
-groups.forEach((groupDiv, idx) => {
-  const col = idx % 4;
-  const row = Math.floor(idx / 4);
-  const x = col * (mapSize + gap) + (container.clientWidth - Math.min(4, groups.length) * mapSize - (Math.min(4, groups.length)-1)*gap)/2;
-  const y = row * (mapSize + gap) + 20; // iets vanaf top
-  groupDiv.style.display = "flex";
-  groupDiv.classList.remove("open");
-  if (instant) groupDiv.style.transition = "none";
-  groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-  if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
-});
-
-const totalCols = Math.min(4, mappen.length);
-const totalRows = Math.ceil(mappen.length / totalCols);
-const mapSize = 100;
-const gap = 15;
-const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
-const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-
-// Plaats alle maps gecentreerd
-mappen.forEach((map, idx) => {
-  const col = idx % totalCols;
-  const row = Math.floor(idx / totalCols);
-
-  const x = col * (mapSize + gap) + (game.clientWidth - gridWidth) / 2;
-  const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2;
-
-  // Vind de div voor deze map in het container
-  const div = container.querySelector(`.map[data-name="${map.naam}"]`);
-  if (!div) return;
-
-  div.style.display = "flex";
-  div.classList.remove("open");
-  if (instant) div.style.transition = "none";
-  div.style.transform = `translate(${x}px, ${y}px)`;
-  if (instant) div.style.transition = "transform 0.5s ease-in-out";
-});
+      } else {
+      // ---------------- GEEN GROEP OPEN ----------------
+      const game = document.getElementById("game");
+      
+      // Verzamel alle maps uit beide panels
+      const container = panel.querySelector(".maps-container");
+      const groups = Array.from(container.querySelectorAll(".map"));
+      
+      groups.forEach((groupDiv, idx) => {
+        const col = idx % 4;
+        const row = Math.floor(idx / 4);
+        const x = col * (mapSize + gap) + (container.clientWidth - Math.min(4, groups.length) * mapSize - (Math.min(4, groups.length)-1)*gap)/2;
+        const y = row * (mapSize + gap) + 20; // iets vanaf top
+        groupDiv.style.display = "flex";
+        groupDiv.classList.remove("open");
+        if (instant) groupDiv.style.transition = "none";
+        groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+        if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
+      });
+      
+      const totalCols = Math.min(4, mappen.length);
+      const totalRows = Math.ceil(mappen.length / totalCols);
+      const mapSize = 100;
+      const gap = 15;
+      const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
+      const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
+      
+      // Plaats alle maps gecentreerd
+      mappen.forEach((map, idx) => {
+        const col = idx % totalCols;
+        const row = Math.floor(idx / totalCols);
+      
+        const x = col * (mapSize + gap) + (game.clientWidth - gridWidth) / 2;
+        const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2;
+      
+        // Vind de div voor deze map in het container
+        const div = container.querySelector(`.map[data-name="${map.naam}"]`);
+        if (!div) return;
+      
+        div.style.display = "flex";
+        div.classList.remove("open");
+        if (instant) div.style.transition = "none";
+        div.style.transform = `translate(${x}px, ${y}px)`;
+        if (instant) div.style.transition = "transform 0.5s ease-in-out";
+      });
+  }
+}
 
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side, instant = false) {
