@@ -614,12 +614,12 @@ function showNewElement(combi) {
   overlay.style.backgroundRepeat = "no-repeat";
 
   // container voor meerdere elementen
-  let innerHTML = '<div class="result-box-container" style="display:flex; justify-content:center; gap:50px;">';
-
+  let innerHTML = '<div class="result-grid">';
+  
   combi.output.forEach(el => {
     innerHTML += `
-      <div class="result-box" style="text-align:center; color:white;">
-        <img src="${el.icoon}" class="result-image" style="width:150px;">
+      <div class="result-box">
+        <img src="${el.icoon}" class="result-image">
         <h2 class="result-title">${el.naam}</h2>
         <p class="result-quote">${el.quote || ""}</p>
       </div>
