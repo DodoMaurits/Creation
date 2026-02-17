@@ -337,10 +337,6 @@ function renderGroups() {
     container.appendChild(div);
   });
 
-  container.style.display = "flex";
-  container.style.justifyContent = "center";
-  container.style.alignItems = "center";
-  container.style.gap = "20px";
 }
 
 // ---------------- RENDER ELEMENTEN ----------------
