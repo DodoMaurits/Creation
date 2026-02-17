@@ -34,8 +34,8 @@ const combinaties = [
         quote: "A compassionate heart radiates rays of beauty that remove the clouds of million hearts <br><br>- Amit Ray"
       },
       {
-        naam: "Quark",
-        icoon: "icons/Quark.png",
+        naam: "Quarks",
+        icoon: "icons/Quarks.png",
         map: "Chemie",
         quote: "Every atom in your body is the same quark in different places at the same moment in time <br><br>- David Eagleman"
       },
@@ -48,7 +48,7 @@ const combinaties = [
     ]
   },
     {
-      input: ["Zwaartekracht", "Quark"],
+      input: ["Zwaartekracht", "Quarks"],
       output: [
         {
           naam: "Heelal",
@@ -59,7 +59,7 @@ const combinaties = [
       ]
     },
     {
-      input: ["Quark", "Kou"],
+      input: ["Quarks", "Kou"],
       output: [
         {
           naam: "Atomen",
