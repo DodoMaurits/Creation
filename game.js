@@ -351,52 +351,54 @@ function layoutGroups(side, instant = false) {
         groupDiv.classList.remove("open");
       }
     });
-  } else {
-    // ---------------- GEEN GROEP OPEN ----------------
+} else {
+  // ---------------- GEEN GROEP OPEN ----------------
     const game = document.getElementById("game");
-
+  
     // Verzamel alle maps uit beide panels
-    const allGroups = [
-      ...document.querySelectorAll("#left-maps .map"),
-      ...document.querySelectorAll("#right-maps .map")
-    ];
-
-    const totalCols = Math.min(4, allGroups.length);
-    const totalRows = Math.ceil(allGroups.length / totalCols);
-
+    const leftGroups = Array.from(document.querySelectorAll("#left-maps .map"));
+    const rightGroups = Array.from(document.querySelectorAll("#right-maps .map"));
+  
+    // Maak een lijst van unieke map-namen en map-divs per naam
+    const uniqueMaps = [];
+    mappen.forEach((map, idx) => {
+      const leftDiv = leftGroups[idx];
+      const rightDiv = rightGroups[idx];
+      uniqueMaps.push({ leftDiv, rightDiv });
+    });
+  
+    const totalCols = Math.min(4, uniqueMaps.length);
+    const totalRows = Math.ceil(uniqueMaps.length / totalCols);
+  
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
     const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-
-    allGroups.forEach((groupDiv, idx) => {
-      groupDiv.style.display = "flex";
-      groupDiv.classList.remove("open");
-
+  
+    // Plaats alle unieke maps
+    uniqueMaps.forEach((maps, idx) => {
       const col = idx % totalCols;
       const row = Math.floor(idx / totalCols);
-
-      // Bereken positie in #game
-      const panelOffset = groupDiv.parentElement.getBoundingClientRect();
-      const gameOffset = game.getBoundingClientRect();
-
-      const x = col * (mapSize + gap) + (game.clientWidth - gridWidth) / 2 - (panelOffset.left - gameOffset.left);
-      const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2 - (panelOffset.top - gameOffset.top);
-
-      if (instant) groupDiv.style.transition = "none";
-      groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-      if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
+  
+      const x = col * (mapSize + gap) + (game.clientWidth - gridWidth) / 2;
+      const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2;
+  
+      [maps.leftDiv, maps.rightDiv].forEach(div => {
+        div.style.display = "flex";
+        div.classList.remove("open");
+        if (instant) div.style.transition = "none";
+        div.style.transform = `translate(${x}px, ${y}px)`;
+        if (instant) div.style.transition = "transform 0.5s ease-in-out";
+      });
     });
-
-    // VERBERG ELEMENTEN CONTAINERS
-    ["left", "right"].forEach(s => {
-      const elementsContainer = document.getElementById(s + "-elements-container");
-      elementsContainer.innerHTML = "";
-      elementsContainer.style.position = "absolute";
-      elementsContainer.style.top = "0";
-      elementsContainer.style.display = "grid";
-      elementsContainer.style.gridTemplateColumns = `repeat(4, ${mapSize}px)`;
-      elementsContainer.style.gap = `${gap}px`;
-      elementsContainer.style.justifyContent = "center";
-    });
+  
+    // VERBERG ELEMENTEN CONTAINER
+    const elementsContainer = document.getElementById(side + "-elements-container");
+    elementsContainer.innerHTML = "";
+    elementsContainer.style.position = "absolute";
+    elementsContainer.style.top = "0";
+    elementsContainer.style.display = "grid";
+    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
+    elementsContainer.style.gap = `${gap}px`;
+    elementsContainer.style.justifyContent = "center";
   }
 }
 
