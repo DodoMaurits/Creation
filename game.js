@@ -356,24 +356,18 @@ function layoutGroups(side, instant = false) {
     });
   } else {
     // ---------------- GEEN GROEP OPEN ----------------
-    const totalCols = Math.min(4, groups.length);
-    const totalRows = Math.ceil(groups.length / 4);
-    const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
-    const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
+    // Gebruik CSS Grid voor centreren
+    container.style.display = "grid";
+    container.style.gridTemplateColumns = "repeat(auto-fit, 100px)";
+    container.style.gridAutoRows = "100px";
+    container.style.gap = `${gap}px`;
+    container.style.justifyContent = "center";
+    container.style.alignContent = "center"; // verticaal centreren
 
-    groups.forEach((groupDiv, idx) => {
-      groupDiv.style.display = "flex";
+    groups.forEach(groupDiv => {
       groupDiv.classList.remove("open");
-
-      const col = idx % 4;
-      const row = Math.floor(idx / 4);
-
-      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
-
-      if (instant) groupDiv.style.transition = "none";
-      groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-      if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
+      groupDiv.style.position = "static";   // grid neemt over
+      groupDiv.style.transform = "none";    // geen translate nodig
     });
 
     // ELEMENTEN CONTAINER VERBERGEN
@@ -385,42 +379,6 @@ function layoutGroups(side, instant = false) {
     elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
     elementsContainer.style.gap = `${gap}px`;
     elementsContainer.style.justifyContent = "center";
-  }
-}
-
-function updateCenteredOverlay() {
-  // eerst bestaande overlays verwijderen
-  document.querySelectorAll(".centered-overlay").forEach(el => el.remove());
-
-  const leftContainer = document.getElementById("left-maps");
-  const rightContainer = document.getElementById("right-maps");
-
-  const noLeftOpen = leftOpenGroup === null;
-  const noRightOpen = rightOpenGroup === null;
-
-  if (noLeftOpen) {
-    const overlay = document.createElement("div");
-    overlay.className = "centered-overlay";
-    leftContainer.querySelectorAll(".map").forEach(map => {
-      const clone = map.cloneNode(true);
-      overlay.appendChild(clone);
-
-      // click behouden
-      clone.addEventListener("click", () => map.click());
-    });
-    document.body.appendChild(overlay);
-  }
-
-  if (noRightOpen) {
-    const overlay = document.createElement("div");
-    overlay.className = "centered-overlay";
-    rightContainer.querySelectorAll(".map").forEach(map => {
-      const clone = map.cloneNode(true);
-      overlay.appendChild(clone);
-
-      clone.addEventListener("click", () => map.click());
-    });
-    document.body.appendChild(overlay);
   }
 }
 
