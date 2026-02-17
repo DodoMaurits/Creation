@@ -356,14 +356,19 @@ function layoutGroups(side, instant = false) {
 const game = document.getElementById("game");
 
 // Verzamel alle maps uit beide panels
-const leftGroups = Array.from(document.querySelectorAll("#left-maps .map"));
-const rightGroups = Array.from(document.querySelectorAll("#right-maps .map"));
+const container = panel.querySelector(".maps-container");
+const groups = Array.from(container.querySelectorAll(".map"));
 
-// Maak een lijst van unieke map-namen en de bijbehorende divs
-const uniqueMaps = mappen.map(map => {
-  const leftDiv = leftGroups.find(d => d.dataset.name === map.naam);
-  const rightDiv = rightGroups.find(d => d.dataset.name === map.naam);
-  return { name: map.naam, leftDiv, rightDiv };
+groups.forEach((groupDiv, idx) => {
+  const col = idx % 4;
+  const row = Math.floor(idx / 4);
+  const x = col * (mapSize + gap) + (container.clientWidth - Math.min(4, groups.length) * mapSize - (Math.min(4, groups.length)-1)*gap)/2;
+  const y = row * (mapSize + gap) + 20; // iets vanaf top
+  groupDiv.style.display = "flex";
+  groupDiv.classList.remove("open");
+  if (instant) groupDiv.style.transition = "none";
+  groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+  if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
 });
 
 const totalCols = Math.min(4, uniqueMaps.length);
