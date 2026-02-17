@@ -197,6 +197,11 @@ body {
   z-index: 10000;
 }
 
+.map:hover, 
+.element:hover { 
+  z-index: 9999; 
+}
+
 .map:hover::after,
 .element:hover::after {
   opacity: 1;
