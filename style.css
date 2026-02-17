@@ -126,19 +126,22 @@ body {
 #left-panel,
 #right-panel {
   position: relative;
-  flex: 1;
-  height: 50%;
+  flex: 1 1 0;               /* laat panelen evenredig groeien in flex container */
+  min-height: 0;             /* voorkomt overflow in flex */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* voor no-open */
+  justify-content: center;   /* voor no-open */
   background: transparent;
 }
 
 .maps-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100%;               /* blijft hetzelfde */
+  display: flex;              /* voeg toe om centering te laten werken */
+  justify-content: center;
+  align-items: center;
 }
 
 .elements-container {
@@ -172,8 +175,9 @@ body {
 }
 
 .map img {
-  width: 100px;
-  height: 100px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* ---------------- ELEMENTEN ---------------- */
