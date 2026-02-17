@@ -149,7 +149,14 @@ body {
 }
 
 #left-elements {
-  left: 5%;          /* iets marge van de linkerzijde */
+  position: absolute;
+  top: 150px;       /* start iets lager onder de map */
+  left: 0;
+  width: 50%;       /* linkerhelft van het scherm */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* horizontaal centreren in linkerhelft */
+  gap: 15px;
 }
 
 #right-elements {
