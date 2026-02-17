@@ -421,8 +421,15 @@ function renderElements() {
 
   if (openGroup === null) return;
 
+  const mapDiv = document.querySelectorAll(".map")[openGroup];
+  const mapRect = mapDiv.getBoundingClientRect();
+
   const elementen = mappen[openGroup].elementen;
   const targetContainer = openGroup === 0 ? leftContainer : rightContainer;
+
+  // Zet container net onder de map
+  targetContainer.style.top = (mapRect.bottom + 20) + "px"; // 20px marge
+  targetContainer.style.left = openGroup === 0 ? "0" : "50%";
 
   elementen.forEach(el => {
     const div = document.createElement("div");
