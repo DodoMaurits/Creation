@@ -316,12 +316,11 @@ function init() {
 // ---------------- LAYOUT ----------------
 function layoutGroups(side, instant = false) {
   const panel = document.getElementById(side + "-panel");
-  const container = panel.querySelector(".maps-container"); // ✅ hier
+  const container = panel.querySelector(".maps-container");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
   const groups = container.querySelectorAll(".map");
   const mapSize = 100;
   const gap = 15;
-  const containerHeight = container.clientHeight;
 
   if (openGroup !== null) {
     // ---------------- OPEN GROEP ----------------
@@ -337,7 +336,6 @@ function layoutGroups(side, instant = false) {
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
         if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
 
-        // ELEMENTEN CONTAINER POSITIE
         const elementsContainer = document.getElementById(side + "-elements-container");
         elementsContainer.style.position = "absolute";
         elementsContainer.style.top = `${y + mapSize + 10}px`;
@@ -348,47 +346,57 @@ function layoutGroups(side, instant = false) {
         elementsContainer.style.gap = `${gap}px`;
         elementsContainer.style.justifyContent = "center";
         elementsContainer.style.alignItems = "center";
-
       } else {
         groupDiv.style.display = "none";
         groupDiv.classList.remove("open");
       }
     });
-   } else {
+  } else {
     // ---------------- GEEN GROEP OPEN ----------------
-    const totalCols = Math.min(4, groups.length);
-    const totalRows = Math.ceil(groups.length / 4);
-    const mapSize = 100;
-    const gap = 15;
+    const game = document.getElementById("game");
+
+    // Verzamel alle maps uit beide panels
+    const allGroups = [
+      ...document.querySelectorAll("#left-maps .map"),
+      ...document.querySelectorAll("#right-maps .map")
+    ];
+
+    const totalCols = Math.min(4, allGroups.length);
+    const totalRows = Math.ceil(allGroups.length / totalCols);
 
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
     const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
 
-    groups.forEach((groupDiv, idx) => {
+    allGroups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
 
-      const col = idx % 4;
-      const row = Math.floor(idx / 4);
+      const col = idx % totalCols;
+      const row = Math.floor(idx / totalCols);
 
-      // centreren **in het paneel zelf**, niet in #game
-      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
+      // Bereken positie in #game
+      const panelOffset = groupDiv.parentElement.getBoundingClientRect();
+      const gameOffset = game.getBoundingClientRect();
+
+      const x = col * (mapSize + gap) + (game.clientWidth - gridWidth) / 2 - (panelOffset.left - gameOffset.left);
+      const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2 - (panelOffset.top - gameOffset.top);
 
       if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
       if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
     });
 
-    // ELEMENTEN CONTAINER VERBERGEN
-    const elementsContainer = document.getElementById(side + "-elements-container");
-    elementsContainer.innerHTML = "";
-    elementsContainer.style.position = "absolute";
-    elementsContainer.style.top = "0";
-    elementsContainer.style.display = "grid";
-    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-    elementsContainer.style.gap = `${gap}px`;
-    elementsContainer.style.justifyContent = "center";
+    // VERBERG ELEMENTEN CONTAINERS
+    ["left", "right"].forEach(s => {
+      const elementsContainer = document.getElementById(s + "-elements-container");
+      elementsContainer.innerHTML = "";
+      elementsContainer.style.position = "absolute";
+      elementsContainer.style.top = "0";
+      elementsContainer.style.display = "grid";
+      elementsContainer.style.gridTemplateColumns = `repeat(4, ${mapSize}px)`;
+      elementsContainer.style.gap = `${gap}px`;
+      elementsContainer.style.justifyContent = "center";
+    });
   }
 }
 
