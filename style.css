@@ -141,10 +141,10 @@ body {
 
 .elements-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* max 4 per rij */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 15px;
   position: absolute;
-  top: 140px;       /* onder de open map, pas aan als nodig */
+  top: 140px;  /* als map 100px hoog + 20px marge -> 120px, voeg evt. wat extra marge */
   width: 45%;       /* helft van het scherm */
 }
 
@@ -173,7 +173,6 @@ body {
   z-index: 10;                        /* boven andere mappen */
   background-color: transparent;      
   transform: scale(1.2);              /* iets groter maken */
-  
   position: absolute;                 /* absolute positionering */
   top: 20px;                          /* afstand van bovenkant scherm */
   left: 25%;                           /* precies op de helft van de linkerhelft */
