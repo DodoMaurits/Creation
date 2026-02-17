@@ -363,42 +363,20 @@ function renderGroups() {
   const container = document.getElementById("maps-container");
   container.innerHTML = "";
 
-  const maxPerRow = 4;
-  const rowHeight = 140; // hoogte van mappen + gap
-  const totalRows = Math.ceil(mappen.length / maxPerRow);
-  const gap = 20;
-
-  const mapWidth = 100;
-  const mapHeight = 100;
-
-  const containerWidth = window.innerWidth;
-  const containerHeight = window.innerHeight;
-
-  const startTop = (containerHeight - ((mapHeight + gap) * totalRows - gap)) / 2;
+  // Maak aparte container voor de niet-geopende mappen
+  let rightMaps = document.getElementById("right-maps");
+  if (!rightMaps) {
+    rightMaps = document.createElement("div");
+    rightMaps.id = "right-maps";
+    container.appendChild(rightMaps);
+  }
+  rightMaps.innerHTML = "";
 
   mappen.forEach((map, idx) => {
     const div = document.createElement("div");
     div.className = "map";
     div.dataset.name = map.naam;
     div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
-
-    // Bepaal rij en kolom
-    const row = Math.floor(idx / maxPerRow);
-    const col = idx % maxPerRow;
-
-    // Beginpositie
-    let left = (containerWidth - Math.min(mappen.length, maxPerRow) * (mapWidth + gap) + gap) / 2 + col * (mapWidth + gap);
-    let top = startTop + row * (mapHeight + gap);
-
-    // Als deze map open is, overschrijf positie
-    if (openGroup === idx) {
-      top = 20;
-      left = containerWidth * 0.25; // linkerhelft
-      div.classList.add("open");
-    }
-
-    div.style.top = top + "px";
-    div.style.left = left + "px";
 
     div.addEventListener("click", () => {
       openGroup = openGroup === idx ? null : idx;
@@ -407,7 +385,19 @@ function renderGroups() {
       renderElements();
     });
 
-    container.appendChild(div);
+    if (openGroup === idx) {
+      // Open map naar linkerhelft
+      div.classList.add("open");
+      div.style.position = "absolute";
+      div.style.top = "20px";
+      div.style.left = "25%"; // linkerhelft
+      div.style.transition = "all 0.5s ease";
+      container.appendChild(div);
+    } else {
+      // Alle andere mappen → rechts
+      div.classList.remove("open");
+      rightMaps.appendChild(div);
+    }
   });
 }
 
