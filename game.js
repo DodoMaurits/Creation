@@ -386,6 +386,11 @@ function renderElementsLeft() {
   });
 }
 
+function animateMapShift(idx) {
+  const maps = document.getElementById("maps");
+  maps.style.transform = "translateX(-150px)"; // of dynamisch op basis van width
+}
+
 // ---------------- COMBINATIE ----------------
 function tryCombine() {
   if (!leftSelectedElement || !rightSelectedElement || isCombining) return;
