@@ -303,16 +303,15 @@ const groepsIconen = {
 // ---------------- STATUS ----------------
 let openGroup = null;
 let selectedElement = null;
-let isCombining = false;
-
 
 // ---------------- INIT ----------------
 function init() {
-  renderGroups(true);
+  renderGroups();
+  renderElements();
 }
 
 // ---------------- RENDER GROEPEN ----------------
-function renderGroups(instant = false) {
+function renderGroups() {
   const container = document.getElementById("maps-container");
   container.innerHTML = "";
 
@@ -320,7 +319,7 @@ function renderGroups(instant = false) {
     const div = document.createElement("div");
     div.className = "map";
     div.dataset.name = map.naam;
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}"><p>${map.naam}</p>`;
 
     div.addEventListener("click", () => {
       openGroup = openGroup === idx ? null : idx;
@@ -332,54 +331,40 @@ function renderGroups(instant = false) {
     container.appendChild(div);
   });
 
-  layoutGroups();
-}
-
-
-// ---------------- LAYOUT ----------------
-function layoutGroups() {
-  const container = document.getElementById("maps-container");
-
   container.style.display = "flex";
   container.style.flexWrap = "wrap";
   container.style.justifyContent = "center";
   container.style.alignItems = "center";
-  container.style.height = "100vh";
+  container.style.height = "30vh";
   container.style.gap = "20px";
 }
-
 
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
   const container = document.getElementById("elements-container");
   container.innerHTML = "";
-
   if (openGroup === null) return;
 
-  mappen[openGroup].elementen.forEach(el => {
+  const elementen = mappen[openGroup].elementen;
+  elementen.forEach(el => {
     const div = document.createElement("div");
     div.className = "element";
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}"><p>${el.naam}</p>`;
 
-    if (selectedElement === el.naam) {
-      div.classList.add("selected");
-    }
+    if (selectedElement === el.naam) div.classList.add("selected");
 
     div.addEventListener("click", () => {
-      selectedElement = selectedElement === el.naam ? null : el.naam;
+      if (selectedElement && selectedElement !== el.naam) {
+        combineElements(selectedElement, el.naam);
+        selectedElement = null;
+      } else {
+        selectedElement = selectedElement === el.naam ? null : el.naam;
+      }
       renderElements();
     });
 
     container.appendChild(div);
   });
-
-  layoutElements();
-}
-
-
-// ---------------- ELEMENT LAYOUT ----------------
-function layoutElements() {
-  const container = document.getElementById("elements-container");
 
   container.style.display = "flex";
   container.style.flexWrap = "wrap";
@@ -389,6 +374,37 @@ function layoutElements() {
   container.style.minHeight = "30vh";
 }
 
+// ---------------- COMBINATIE LOGICA ----------------
+function combineElements(e1, e2) {
+  // Kijk of er een combinatie bestaat (in beide volgordes)
+  const combo = combinaties.find(c => 
+    (c.input[0] === e1 && c.input[1] === e2) || (c.input[0] === e2 && c.input[1] === e1)
+  );
+
+  if (!combo) {
+    alert("Geen combinatie gevonden!");
+    return;
+  }
+
+  combo.output.forEach(out => {
+    // Zoek of map bestaat
+    let mapObj = mappen.find(m => m.naam === out.map);
+    if (!mapObj) {
+      // Nieuwe map toevoegen
+      mapObj = { naam: out.map, icoon: `icons/${out.map}.png`, elementen: [] };
+      mappen.push(mapObj);
+    }
+
+    // Voeg element toe als het nog niet bestaat
+    if (!mapObj.elementen.find(el => el.naam === out.naam)) {
+      mapObj.elementen.push({ naam: out.naam, icoon: out.icoon });
+      alert(`Nieuw element ontdekt: ${out.naam}!\n\n${out.quote}`);
+    }
+  });
+
+  renderGroups();
+  renderElements();
+}
 
 // ---------------- START ----------------
 init();
