@@ -175,6 +175,12 @@ body {
   opacity: 1;
 }
 
+.element img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* of cover als je wilt vullen */
+}
+
 /* ---------------- TOOLTIP ---------------- */
 .map::after,
 .element::after {
