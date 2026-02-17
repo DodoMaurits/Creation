@@ -189,6 +189,17 @@ body {
 }
 
 /* ---------------- ELEMENTEN ---------------- */
+.elements-container .element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.elements-container.show .element {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .element {
   position: relative;
   width: 100px;
