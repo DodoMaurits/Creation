@@ -394,16 +394,8 @@ function renderGroups(side, instant = false) {
   const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
-  const otherSide = side === "left" ? "right" : "left";
-  const otherOpen = side === "left" ? rightOpenGroup : leftOpenGroup;
-  
-  if (leftOpenGroup === null && rightOpenGroup === null) {
-    document.getElementById("left-panel").classList.remove("active-left");
-    document.getElementById("right-panel").classList.remove("active-right");
-  } else {
-    document.getElementById("left-panel").classList.add("active-left");
-    document.getElementById("right-panel").classList.add("active-right");
-  }
+  if (openGroup === null) panel.classList.add("no-open");
+  else panel.classList.remove("no-open");
 
   // 🔥 BELANGRIJK: container leegmaken
   container.innerHTML = "";
