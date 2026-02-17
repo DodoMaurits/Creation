@@ -316,7 +316,8 @@ function init() {
     const div = document.createElement("div");
     div.className = "map";
     div.dataset.index = idx;
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    div.innerHTML = `<img src="${map.icoon}" alt="">`;
+    div.title = map.naam;
 
     div.style.position = "absolute";
     div.style.width = "100px";
@@ -408,7 +409,6 @@ function updateMapPositions() {
   });
 }
 
-// ---------------- RENDER ELEMENTEN ----------------
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
 
