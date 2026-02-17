@@ -355,46 +355,46 @@ function layoutGroups(side, instant = false) {
       }
     });
 } else {
-  // ---------------- GEEN GROEP OPEN ----------------
-
-  const bothClosed = leftOpenGroup === null && rightOpenGroup === null;
-
-  groups.forEach((groupDiv, idx) => {
-
-    groupDiv.style.display = "flex";
-    groupDiv.classList.remove("open");
-
-    let x, y;
-
-    if (bothClosed) {
-      // 👉 ALLE MAPPEN EXACT IN HET MIDDEN OVER ELKAAR
-
-      x = container.clientWidth / 2 - mapSize / 2;
-      y = container.clientHeight / 2 - mapSize / 2;
-
-    } else {
-      // 👉 NORMALE GRID LAYOUT
-
-      const col = idx % 4;
-      const row = Math.floor(idx / 4);
-
-      const totalCols = Math.min(4, groups.length);
-      const totalRows = Math.ceil(groups.length / 4);
-      const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
-      const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-
-      x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
-    }
-
-    if (instant) groupDiv.style.transition = "none";
-    groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-    if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
-  });
-
-  // ELEMENTEN CONTAINER VERBERGEN
-  const elementsContainer = document.getElementById(side + "-elements-container");
-  elementsContainer.innerHTML = "";
+    // ---------------- GEEN GROEP OPEN ----------------
+    const bothClosed = leftOpenGroup === null && rightOpenGroup === null;
+  
+    groups.forEach((groupDiv, idx) => {
+  
+      groupDiv.style.display = "flex";
+      groupDiv.classList.remove("open");
+  
+      let x, y;
+  
+      if (bothClosed) {
+        // 👉 ALLE MAPPEN EXACT IN HET MIDDEN OVER ELKAAR
+  
+        x = container.clientWidth / 2 - mapSize / 2;
+        y = container.clientHeight / 2 - mapSize / 2;
+  
+      } else {
+        // 👉 NORMALE GRID LAYOUT
+  
+        const col = idx % 4;
+        const row = Math.floor(idx / 4);
+  
+        const totalCols = Math.min(4, groups.length);
+        const totalRows = Math.ceil(groups.length / 4);
+        const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
+        const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
+  
+        x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
+        y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
+      }
+  
+      if (instant) groupDiv.style.transition = "none";
+      groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+      if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
+    });
+  
+    // ELEMENTEN CONTAINER VERBERGEN
+    const elementsContainer = document.getElementById(side + "-elements-container");
+    elementsContainer.innerHTML = "";
+  }
 }
 
 // ---------------- RENDER GROEPEN ----------------
