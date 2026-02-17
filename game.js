@@ -300,15 +300,21 @@ const groepsIconen = {
   "Vuur": "icons/Vuur.png"
 };
 
-/ ---------------- STATUS ----------------
+// ---------------- STATUS ----------------
 let leftOpenGroup = null;
 let rightOpenGroup = null;
+let leftSelectedElement = null;
+let rightSelectedElement = null;
+let isCombining = false;
 
+// ---------------- ELEMENTEN ----------------
 const mapsContainer = document.getElementById('maps');
 const elementsLeft = document.getElementById('elements-left');
 const elementsRight = document.getElementById('elements-right');
 
 // ---------------- FUNCTIES ----------------
+
+// Render alle mappen
 function renderMaps() {
   mapsContainer.innerHTML = '';
   mappen.forEach(map => {
@@ -321,8 +327,9 @@ function renderMaps() {
   });
 }
 
+// Open een map links of rechts
 function openMap(map) {
-  // Sluit map als hij al open is
+  // Sluit als al open
   if(leftOpenGroup && leftOpenGroup.naam === map.naam){
     leftOpenGroup = null;
     elementsLeft.innerHTML = '';
@@ -336,7 +343,7 @@ function openMap(map) {
     return;
   }
 
-  // Openen links of rechts
+  // Open links of rechts
   if(!leftOpenGroup) {
     leftOpenGroup = map;
     renderElements(elementsLeft, map.elementen, 'left');
@@ -348,6 +355,7 @@ function openMap(map) {
   }
 }
 
+// Render de elementen van een map
 function renderElements(container, elementen, side){
   container.innerHTML = '';
   elementen.forEach(el => {
@@ -355,25 +363,29 @@ function renderElements(container, elementen, side){
     div.classList.add('element');
     div.dataset.naam = el.naam;
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-    div.addEventListener('click', () => toggleSelect(div));
+    div.addEventListener('click', () => toggleSelect(div, side));
     container.appendChild(div);
   });
 }
 
-function toggleSelect(el) {
-  el.classList.toggle('selected');
-}
-
-function moveMaps(position){
-  mapsContainer.style.position = 'absolute';
-  mapsContainer.style.top = '50px';
-  if(position === 'right'){
-    mapsContainer.style.left = '55%';
+// Selecteer element en onthoud de naam
+function toggleSelect(el, side){
+  if(side === 'left'){
+    // deselecteer andere elementen
+    Array.from(elementsLeft.children).forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    leftSelectedElement = el.dataset.naam;
   } else {
-    mapsContainer.style.left = '50%';
+    Array.from(elementsRight.children).forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    rightSelectedElement = el.dataset.naam;
   }
+
+  // probeer meteen combinaties
+  tryCombine();
 }
 
+// Zet maps op hun originele plek
 function resetMapsPosition(){
   mapsContainer.style.position = 'static';
   Array.from(mapsContainer.children).forEach(mapDiv => {
@@ -381,66 +393,23 @@ function resetMapsPosition(){
   });
 }
 
-function hideMapsExcept(name){
-  Array.from(mapsContainer.children).forEach(mapDiv => {
-    if(mapDiv.dataset.naam !== name){
-      mapDiv.style.display = 'none';
-    } else {
-      mapDiv.style.display = 'flex';
-    }
-  });
+// Verplaats maps naar rechts
+function moveMaps(position){
+  mapsContainer.style.position = 'absolute';
+  mapsContainer.style.top = '50px';
+  mapsContainer.style.left = position === 'right' ? '55%' : '50%';
 }
 
-// ---------------- CREATE GROEP ----------------
-function createGroupElement(container, side, idx) {
-  const map = mappen[idx];
-  const div = document.createElement("div");
-  div.className = "map";
-  div.dataset.name = map.naam;
-  div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
-
-  div.addEventListener("click", () => {
-    const isLeft = side === "left";
-    const openGroup = isLeft ? leftOpenGroup : rightOpenGroup;
-    const selectedElementProp = isLeft ? "leftSelectedElement" : "rightSelectedElement";
-    const elementsContainer = document.getElementById(side + "-elements-container");
-
-    // Als deze groep al open is → sluiten
-    if (openGroup === idx) {
-    
-      if (isLeft) leftOpenGroup = null;
-      else rightOpenGroup = null;
-    
-      if (isLeft) leftSelectedElement = null;
-      else rightSelectedElement = null;
-    
-      elementsContainer.innerHTML = "";
-    
-      renderGroups(side);
-    
-      return;
-    } else {
-      // Groep openen
-      if (isLeft) leftOpenGroup = idx;
-      else rightOpenGroup = idx;
-
-      if (isLeft) leftSelectedElement = null;
-      else rightSelectedElement = null;
-
-      layoutGroups(side);
-      setTimeout(() => {
-        if (isLeft) renderLeftElements();
-        else renderRightElements();
-      }, 800); // elementen verschijnen na morph
-    }
+// Verberg maps behalve de geselecteerde
+function hideMapsExcept(name){
+  Array.from(mapsContainer.children).forEach(mapDiv => {
+    mapDiv.style.display = mapDiv.dataset.naam === name ? 'flex' : 'none';
   });
-
-  container.appendChild(div);
 }
 
 // ---------------- COMBINATIE ----------------
-function tryCombine() {
-  if (!leftSelectedElement || !rightSelectedElement || isCombining) return;
+function tryCombine(){
+  if(!leftSelectedElement || !rightSelectedElement || isCombining) return;
 
   const combi = combinaties.find(c => {
     const inputSorted = [...c.input].sort();
@@ -448,121 +417,36 @@ function tryCombine() {
     return JSON.stringify(inputSorted) === JSON.stringify(selectedSorted);
   });
 
-  if (!combi) {
-  
-    const leftEl = document.querySelector("#left-elements-container .selected");
-    const rightEl = document.querySelector("#right-elements-container .selected");
-  
-    if (leftEl && rightEl) {
-  
-      isCombining = true; // 🔒 tijdelijk blokkeren
-  
-      leftEl.classList.remove("selected");
-      rightEl.classList.remove("selected");
-  
-      leftEl.classList.add("error");
-      rightEl.classList.add("error");
-  
+  if(!combi){
+    // Error animatie
+    const leftEl = document.querySelector("#elements-left .selected");
+    const rightEl = document.querySelector("#elements-right .selected");
+    if(leftEl && rightEl){
+      isCombining = true;
+      leftEl.classList.add('error');
+      rightEl.classList.add('error');
       setTimeout(() => {
+        leftEl.classList.remove('selected','error');
+        rightEl.classList.remove('selected','error');
         leftSelectedElement = null;
         rightSelectedElement = null;
-  
-        renderLeftElements();
-        renderRightElements();
-  
-        isCombining = false; // 🔓 weer vrijgeven
+        isCombining = false;
       }, 600);
     }
-  
     return;
   }
 
-// ---------------- START COMBINATIE ANIMATIE ----------------
-isCombining = true;
-
-const leftEl = document.querySelector("#left-elements-container .selected");
-const rightEl = document.querySelector("#right-elements-container .selected");
-
-// 1️⃣ Meet originele positie DIRECT
-const leftRect = leftEl.getBoundingClientRect();
-const rightRect = rightEl.getBoundingClientRect();
-
-// 2️⃣ Maak clones (belangrijk!)
-const leftClone = leftEl.cloneNode(true);
-const rightClone = rightEl.cloneNode(true);
-
-document.body.appendChild(leftClone);
-document.body.appendChild(rightClone);
-
-// 3️⃣ Zet clones exact op beginpositie
-Object.assign(leftClone.style, {
-  position: "fixed",
-  left: leftRect.left + "px",
-  top: leftRect.top + "px",
-  width: leftRect.width + "px",
-  height: leftRect.height + "px",
-  margin: 0,
-  zIndex: 999,
-  transition: "all 0.8s ease-in-out"
-});
-
-Object.assign(rightClone.style, {
-  position: "fixed",
-  left: rightRect.left + "px",
-  top: rightRect.top + "px",
-  width: rightRect.width + "px",
-  height: rightRect.height + "px",
-  margin: 0,
-  zIndex: 999,
-  transition: "all 0.8s ease-in-out"
-});
-
-// 4️⃣ Verberg originele elementen (layout blijft stabiel)
-leftEl.style.visibility = "hidden";
-rightEl.style.visibility = "hidden";
-
-// 5️⃣ Bereken midden
-const centerX = window.innerWidth / 2;
-const centerY = window.innerHeight / 2;
-
-// 6️⃣ Force reflow
-leftClone.offsetWidth;
-
-// 7️⃣ Animeer naar midden
-leftClone.style.left = centerX - leftRect.width / 2 + "px";
-leftClone.style.top = centerY - leftRect.height / 2 + "px";
-
-rightClone.style.left = centerX - rightRect.width / 2 + "px";
-rightClone.style.top = centerY - rightRect.height / 2 + "px";
-
-// 8️⃣ Na animatie → opruimen en resultaat tonen
-setTimeout(() => {
-
-  leftClone.remove();
-  rightClone.remove();
-
-  leftSelectedElement = null;
-  rightSelectedElement = null;
-
+  // Combinatie animatie
+  isCombining = true;
   showNewElement(combi);
-
-  }, 800);
 }
 
-function showNewElement(combi) {
-  const overlay = document.createElement("div");
-  overlay.id = "result-overlay";
-  overlay.style.background = `
-    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-    url('afb/beginscherm.png')
-  `;
-  overlay.style.backgroundPosition = "center";
-  overlay.style.backgroundSize = "cover";
-  overlay.style.backgroundRepeat = "no-repeat";
+// Toon nieuwe elementen na combinatie
+function showNewElement(combi){
+  const overlay = document.createElement('div');
+  overlay.id = 'result-overlay';
 
-  // container voor meerdere elementen
   let innerHTML = '<div class="result-grid">';
-  
   combi.output.forEach(el => {
     innerHTML += `
       <div class="result-box">
@@ -572,51 +456,37 @@ function showNewElement(combi) {
       </div>
     `;
 
-    // --- NIEUWE GROEP DIRECT TOEVOEGEN ---
+    // Voeg nieuwe map toe als nodig
     let map = mappen.find(m => m.naam === el.map);
-
-    if (!map) {
-      // map bestaat nog niet → nieuwe groep aanmaken
-      map = {
-        naam: el.map,
-        icoon: groepsIconen[el.map] || "icons/default.png", // gebruik icoon van het element
-        elementen: []
-      };
+    if(!map){
+      map = { naam: el.map, icoon: groepsIconen[el.map]||"icons/default.png", elementen: [] };
       mappen.push(map);
-
-      // Markeer dat deze map nieuw is
-      map.isNew = true;
     }
-
-    // voeg element toe aan map (als het er nog niet in zit)
-    if (!map.elementen.some(e => e.naam === el.naam)) {
-      map.elementen.push({
-        naam: el.naam,
-        icoon: el.icoon
-      });
+    if(!map.elementen.some(e => e.naam===el.naam)){
+      map.elementen.push({ naam: el.naam, icoon: el.icoon });
     }
   });
+  innerHTML += '</div>';
+  overlay.innerHTML = innerHTML;
+  document.body.appendChild(overlay);
 
-    innerHTML += '</div>';
-    overlay.innerHTML = innerHTML;
-    document.body.appendChild(overlay);
-  
-    // Klik om overlay te sluiten en terug naar hoofdscherm
-    overlay.addEventListener("click", () => {
-      
+  overlay.addEventListener('click', ()=>{
     overlay.remove();
-      
     leftOpenGroup = null;
     rightOpenGroup = null;
     leftSelectedElement = null;
     rightSelectedElement = null;
     isCombining = false;
-  
-    // her-render alle groepen
-    renderGroups("left");
-    renderGroups("right");
+    renderMaps();
+    elementsLeft.innerHTML = '';
+    elementsRight.innerHTML = '';
   });
 }
 
-// ---------------- START ----------------
+// ---------------- INIT ----------------
+function init(){
+  renderMaps();
+}
+
+// Start spel
 init();
