@@ -114,12 +114,20 @@ body {
 /* ---------------- GAME LAYOUT ---------------- */
 #game {
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  padding: 60px 120px; 
-  box-sizing: border-box;
-  background: url("afb/perkament.jpg") center center / cover no-repeat;
-  transition: background 0.5s ease-in-out; /* vloeiend wisselen bij combinaties */
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+/* SPLIT MODE */
+#game.split-mode {
+  justify-content: space-between;
+}
+
+#left-panel,
+#right-panel {
+  flex: 1;
+  transition: all 0.5s ease;
 }
 
 /* ---------------- LINKER/RECHTER PANEL ---------------- */
