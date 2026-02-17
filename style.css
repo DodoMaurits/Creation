@@ -297,16 +297,18 @@ body {
   transform: translateX(-50%) scale(1);
 }
 
-#right-panel {
+#left-panel, #right-panel {
   position: absolute;
   top: 50%;
-  right: 10px; /* of waar je het wilt */
   transform: translateY(-50%);
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  z-index: 5;
+  transition: all 0.5s ease;
 }
+
+#left-panel { left: 10%; justify-content: center; }
+#right-panel { right: 10%; justify-content: center; }
 
 /* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
 #left-panel.no-open,
