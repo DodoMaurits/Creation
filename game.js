@@ -315,17 +315,16 @@ function init() {
 
 // ---------------- LAYOUT ----------------
 function layoutGroups(side, instant = false) {
-  const panel = document.getElementById(side + "-panel");
-  const container = panel.querySelector(".maps-container");
+  const container = document.getElementById(side + "-maps");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
+  const groups = container.querySelectorAll(".map");
 
   const mapSize = 100;
   const gap = 15;
-
-  const groups = container.querySelectorAll(".map");
+  const containerHeight = container.clientHeight;
 
   if (openGroup !== null) {
-    // Groep open → positioneer specifiek
+    // ---------------- OPEN GROEP ----------------
     groups.forEach((groupDiv, idx) => {
       if (idx === openGroup) {
         groupDiv.style.display = "flex";
@@ -335,10 +334,10 @@ function layoutGroups(side, instant = false) {
         const y = 20;
 
         if (instant) groupDiv.style.transition = "none";
-        groupDiv.style.position = "absolute";
         groupDiv.style.transform = `translate(${x}px, ${y}px)`;
         if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
 
+        // ELEMENTEN CONTAINER POSITIE
         const elementsContainer = document.getElementById(side + "-elements-container");
         elementsContainer.style.position = "absolute";
         elementsContainer.style.top = `${y + mapSize + 10}px`;
@@ -349,36 +348,62 @@ function layoutGroups(side, instant = false) {
         elementsContainer.style.gap = `${gap}px`;
         elementsContainer.style.justifyContent = "center";
         elementsContainer.style.alignItems = "center";
+
       } else {
         groupDiv.style.display = "none";
         groupDiv.classList.remove("open");
       }
     });
   } else {
-    // GEEN GROEP OPEN → CSS Grid doet alles, reset styling
-    groups.forEach(div => {
-      div.style.display = "flex";     // flex voor image centreren
-      div.style.position = "static";  // laat grid het werk doen
-      div.style.transform = "none";   // verwijder absolute positioning
-      div.classList.remove("open");
+    // ---------------- GEEN GROEP OPEN ----------------
+    const totalCols = Math.min(4, groups.length);
+    const totalRows = Math.ceil(groups.length / 4);
+    const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
+    const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
+
+    groups.forEach((groupDiv, idx) => {
+      groupDiv.style.display = "flex";
+      groupDiv.classList.remove("open");
+
+      const col = idx % 4;
+      const row = Math.floor(idx / 4);
+
+      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
+      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
+
+      if (instant) groupDiv.style.transition = "none";
+      groupDiv.style.transform = `translate(${x}px, ${y}px)`;
+      if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
     });
+
+    // ELEMENTEN CONTAINER VERBERGEN
+    const elementsContainer = document.getElementById(side + "-elements-container");
+    elementsContainer.innerHTML = "";
+    elementsContainer.style.position = "absolute";
+    elementsContainer.style.top = "0";
+    elementsContainer.style.display = "grid";
+    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
+    elementsContainer.style.gap = `${gap}px`;
+    elementsContainer.style.justifyContent = "center";
   }
 }
 
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side, instant = false) {
+  const container = document.getElementById(side + "-maps");
   const panel = document.getElementById(side + "-panel");
-  const container = panel.querySelector(".maps-container");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
   if (openGroup === null) panel.classList.add("no-open");
   else panel.classList.remove("no-open");
 
-  // leegmaken en opnieuw maken
+  // 🔥 BELANGRIJK: container leegmaken
   container.innerHTML = "";
+
+  // 🔥 ALTIJD alles opnieuw maken
   mappen.forEach((_, idx) => createGroupElement(container, side, idx));
 
-  layoutGroups(side, instant); // positioneert open groep of reset grid
+  layoutGroups(side, instant);
 }
 
 // ---------------- CREATE GROEP ----------------
@@ -621,14 +646,8 @@ function showNewElement(combi) {
         icoon: groepsIconen[el.map] || "icons/default.png", // gebruik icoon van het element
         elementen: []
       };
-      
-      // Voeg map toe aan mappen
       mappen.push(map);
-    
-      // Her-render beide panels zodat de divs bestaan voor layout
-      renderGroups("left", true);
-      renderGroups("right", true);
-    
+
       // Markeer dat deze map nieuw is
       map.isNew = true;
     }
