@@ -326,10 +326,14 @@ function renderGroups() {
     div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
     div.addEventListener("click", () => {
-      // standaard openen in linker container
       leftOpenGroup = idx;
       leftSelectedElement = null;
       rightSelectedElement = null;
+    
+      // alle maps resetten
+      document.querySelectorAll(".map").forEach(m => m.classList.remove("open"));
+      div.classList.add("open");  // deze map wordt open
+    
       renderElementsLeft();
       renderElementsRight();
     });
