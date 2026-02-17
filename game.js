@@ -388,6 +388,42 @@ function layoutGroups(side, instant = false) {
   }
 }
 
+function updateCenteredOverlay() {
+  // eerst bestaande overlays verwijderen
+  document.querySelectorAll(".centered-overlay").forEach(el => el.remove());
+
+  const leftContainer = document.getElementById("left-maps");
+  const rightContainer = document.getElementById("right-maps");
+
+  const noLeftOpen = leftOpenGroup === null;
+  const noRightOpen = rightOpenGroup === null;
+
+  if (noLeftOpen) {
+    const overlay = document.createElement("div");
+    overlay.className = "centered-overlay";
+    leftContainer.querySelectorAll(".map").forEach(map => {
+      const clone = map.cloneNode(true);
+      overlay.appendChild(clone);
+
+      // click behouden
+      clone.addEventListener("click", () => map.click());
+    });
+    document.body.appendChild(overlay);
+  }
+
+  if (noRightOpen) {
+    const overlay = document.createElement("div");
+    overlay.className = "centered-overlay";
+    rightContainer.querySelectorAll(".map").forEach(map => {
+      const clone = map.cloneNode(true);
+      overlay.appendChild(clone);
+
+      clone.addEventListener("click", () => map.click());
+    });
+    document.body.appendChild(overlay);
+  }
+}
+
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side, instant = false) {
   const container = document.getElementById(side + "-maps");
@@ -397,13 +433,16 @@ function renderGroups(side, instant = false) {
   if (openGroup === null) panel.classList.add("no-open");
   else panel.classList.remove("no-open");
 
-  // 🔥 BELANGRIJK: container leegmaken
+  // container leegmaken
   container.innerHTML = "";
 
-  // 🔥 ALTIJD alles opnieuw maken
+  // alles opnieuw maken
   mappen.forEach((_, idx) => createGroupElement(container, side, idx));
 
   layoutGroups(side, instant);
+
+  // --- update overlay ---
+  updateCenteredOverlay();
 }
 
 // ---------------- CREATE GROEP ----------------
