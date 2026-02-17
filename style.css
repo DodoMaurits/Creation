@@ -1,9 +1,21 @@
+/* ---------------- SETTINGS ---------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+}
+
 /* ---------------- BODY ---------------- */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100vh;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ---------------- HOMEPAGE ---------------- */
@@ -112,82 +124,52 @@ body {
 }
 
 /* ---------------- GAME LAYOUT ---------------- */
-#game {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  padding: 60px 120px; 
-  box-sizing: border-box;
-  background: url("afb/perkament.jpg") center center / cover no-repeat;
-  transition: background 0.5s ease-in-out; /* vloeiend wisselen bij combinaties */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s ease;
 }
 
-/* ---------------- LINKER/RECHTER PANEL ---------------- */
-#left-panel,
-#right-panel {
-  position: relative;
-  flex: 1;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* voor no-open */
-  background: transparent;
+.map-rij,
+.element-rij {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.5s ease;
 }
 
-.maps-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.elements-container {
-  display: flex;              /* horizontaal uitlijnen van elementen */
-  justify-content: center;    /* centreren */
-  gap: 15px;                  /* ruimte tussen elementen */
-  position: absolute;         /* absoluut positioneren in panel */
-  width: 100%;                /* vult de breedte van het panel */
-  top: 0;                     /* JS past top aan */
-  left: 0;
-  z-index: 3;                 /* boven maps */
-  pointer-events: auto;       /* zodat je kunt klikken */
-}
-
-.map {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2;
-}
-
-.map.open {
-  z-index: 4;
-  background-color: transparent;
-}
-
-.map img {
-  width: 100px;
-  height: 100px;
-}
-
-/* ---------------- ELEMENTEN ---------------- */
+.map,
 .element {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 10px;
-  z-index: 1;
+    width: 100px;
+    height: 100px;
+    background: #222;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.map img,
+.element img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.map:hover,
+.element:hover {
+    transform: scale(1.1);
+}
+
+.selected {
+    animation: shake 0.5s infinite;
 }
 
 @keyframes shake {
@@ -204,10 +186,28 @@ body {
   100% { transform: translate(0, 0); }
 }
 
-.element.selected {
-  transform: none;          /* geen vergroting */
-  background-color: transparent;   /* geen kleur */
-  animation: shake 0.6s infinite; /* rustiger trillen (langzamer) */
+.left {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+}
+
+.right {
+    position: absolute;
+    top: 50px;
+    right: 10%;
+}
+
+.elements-left {
+    position: absolute;
+    top: 180px;
+    left: 10%;
+}
+
+.elements-right {
+    position: absolute;
+    top: 180px;
+    right: 10%;
 }
 
 @keyframes errorShake {
@@ -223,60 +223,6 @@ body {
 
 .element.error {
   animation: errorShake 0.6s ease;
-  box-shadow: 0 0 20px rgba(255,0,0,0.6);
-}
-
-.element img {
-  width: 100px;
-  height: 100px;
-}
-
-/* ---------------- TOOLTIP ---------------- */
-.map span,
-.element span {
-  display: none;
-}
-
-.map::after,
-.element::after {
-  content: attr(data-name);
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translateX(-50%) scale(0.9);
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 8px;
-  font-size: 13px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.15s ease;
-  z-index: 10000;
-}
-
-.map:hover,
-.element:hover {
-  z-index: 9999;
-}
-
-.map:hover::after,
-.element:hover::after {
-  opacity: 1;
-  transform: translateX(-50%) scale(1);
-}
-
-/* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
-#left-panel.no-open,
-#right-panel.no-open {
-  justify-content: center; /* verticaal centreren */
-}
-
-#left-panel.no-open .maps-container,
-#right-panel.no-open .maps-container {
-  justify-content: center; /* horizontaal centreren */
-  align-items: center;     /* verticaal */
 }
 
 /* ---------------- RESULTAAT COMBINATIE --------------------- */
