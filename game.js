@@ -358,13 +358,12 @@ function layoutGroups(side, instant = false) {
     // Verzamel alle maps uit beide panels
     const leftGroups = Array.from(document.querySelectorAll("#left-maps .map"));
     const rightGroups = Array.from(document.querySelectorAll("#right-maps .map"));
-  
-    // Maak een lijst van unieke map-namen en map-divs per naam
-    const uniqueMaps = [];
-    mappen.forEach((map, idx) => {
-      const leftDiv = leftGroups[idx];
-      const rightDiv = rightGroups[idx];
-      uniqueMaps.push({ leftDiv, rightDiv });
+    
+    // Maak een lijst van unieke map-namen en de bijbehorende divs
+    const uniqueMaps = mappen.map(map => {
+      const leftDiv = leftGroups.find(d => d.dataset.name === map.naam);
+      const rightDiv = rightGroups.find(d => d.dataset.name === map.naam);
+      return { leftDiv, rightDiv };
     });
   
     const totalCols = Math.min(4, uniqueMaps.length);
@@ -382,6 +381,7 @@ function layoutGroups(side, instant = false) {
       const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2;
   
       [maps.leftDiv, maps.rightDiv].forEach(div => {
+        if (!div) return;  // skip als div nog niet bestaat
         div.style.display = "flex";
         div.classList.remove("open");
         if (instant) div.style.transition = "none";
@@ -660,8 +660,14 @@ function showNewElement(combi) {
         icoon: groepsIconen[el.map] || "icons/default.png", // gebruik icoon van het element
         elementen: []
       };
+      
+      // Voeg map toe aan mappen
       mappen.push(map);
-
+    
+      // Her-render beide panels zodat de divs bestaan voor layout
+      renderGroups("left", true);
+      renderGroups("right", true);
+    
       // Markeer dat deze map nieuw is
       map.isNew = true;
     }
