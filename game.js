@@ -213,7 +213,70 @@ const combinaties = [
               quote: "Surely where there's smoke<br>there's fire? No, where there's <br>so much smoke there's smoke<br><br>- John Wheeler"
             }
           ]
-        }
+        },
+        {
+          input: ["Planeet", "Gas"],
+          output: [
+            {
+              naam: "Jupiter",
+              icoon: "icons/Jupiter.png",
+              map: "Ruimte",
+              quote: ""
+            },
+            {
+              naam: "Saturnus",
+              icoon: "icons/Saturnus.png",
+              map: "Ruimte",
+              quote: ""
+            }
+          ]
+        },
+          {
+            input: ["Planeet", "IJs"],
+            output: [
+              {
+                naam: "Uranus",
+                icoon: "icons/Neptunus.png",
+                map: "Ruimte",
+                quote: ""
+              },
+              {
+                naam: "Saturnus",
+                icoon: "icons/Saturnus.png",
+                map: "Ruimte",
+                quote: ""
+              }
+            ]
+          },
+            {
+              input: ["Planeet", "IJzer"],
+              output: [
+                {
+                  naam: "Mars",
+                  icoon: "icons/Mars.png",
+                  map: "Ruimte",
+                  quote: ""
+                },
+                {
+                  naam: "De Aarde",
+                  icoon: "icons/De_Aarde.png",
+                  map: "Ruimte",
+                  quote: ""
+                },
+                {
+                  naam: "Venus",
+                  icoon: "icons/Venus.png",
+                  map: "Ruimte",
+                  quote: ""
+                },
+                {
+                  naam: "Mercurius",
+                  icoon: "icons/Mercurius.png",
+                  map: "Ruimte",
+                  quote: ""
+                }
+              ]
+            }
 ];
 
 const groepsIconen = {
