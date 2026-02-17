@@ -326,17 +326,17 @@ function renderGroups() {
     div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
     div.addEventListener("click", () => {
-      leftOpenGroup = idx;
-      leftSelectedElement = null;
-      rightSelectedElement = null;
+    leftOpenGroup = idx;
+    rightOpenGroup = idx; // <--- toevoegen
+    leftSelectedElement = null;
+    rightSelectedElement = null;
     
-      // alle maps resetten
-      document.querySelectorAll(".map").forEach(m => m.classList.remove("open"));
-      div.classList.add("open");  // deze map wordt open
+    document.querySelectorAll(".map").forEach(m => m.classList.remove("open"));
+    div.classList.add("open");
     
-      renderElementsLeft();
-      renderElementsRight();
-    });
+    renderElementsLeft();
+    renderElementsRight();
+  });
 
     container.appendChild(div);
   });
@@ -365,6 +365,8 @@ function renderElementsLeft() {
 
     container.appendChild(div);
   });
+
+  container.classList.add("show"); // <--- buiten de loop
 }
 
 function renderElementsRight() {
@@ -388,6 +390,8 @@ function renderElementsRight() {
 
     container.appendChild(div);
   });
+  
+  container.classList.add("show");
 }
 
 // ---------------- COMBINATIE ----------------
