@@ -300,110 +300,95 @@ const groepsIconen = {
   "Vuur": "icons/Vuur.png"
 };
 
-// ---------------- STATUS ----------------
-let isCombining = false;
+/ ---------------- STATUS ----------------
 let leftOpenGroup = null;
 let rightOpenGroup = null;
-let leftSelectedElement = null;
-let rightSelectedElement = null;
 
-// ---------------- INIT ----------------
-function init() {
-  renderGroups("left", true);
-  renderGroups("right", true);
+const mapsContainer = document.getElementById('maps');
+const elementsLeft = document.getElementById('elements-left');
+const elementsRight = document.getElementById('elements-right');
+
+// ---------------- FUNCTIES ----------------
+function renderMaps() {
+  mapsContainer.innerHTML = '';
+  mappen.forEach(map => {
+    const div = document.createElement('div');
+    div.classList.add('map');
+    div.dataset.naam = map.naam;
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    div.addEventListener('click', () => openMap(map));
+    mapsContainer.appendChild(div);
+  });
 }
 
-// ---------------- LAYOUT ----------------
-function layoutGroups(side, instant = false) {
-  const container = document.getElementById(side + "-maps");
-  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
-  const groups = container.querySelectorAll(".map");
+function openMap(map) {
+  // Sluit map als hij al open is
+  if(leftOpenGroup && leftOpenGroup.naam === map.naam){
+    leftOpenGroup = null;
+    elementsLeft.innerHTML = '';
+    resetMapsPosition();
+    return;
+  }
+  if(rightOpenGroup && rightOpenGroup.naam === map.naam){
+    rightOpenGroup = null;
+    elementsRight.innerHTML = '';
+    resetMapsPosition();
+    return;
+  }
 
-  const mapSize = 100;
-  const gap = 15;
-  const containerHeight = container.clientHeight;
-
-  if (openGroup !== null) {
-    // ---------------- OPEN GROEP ----------------
-    groups.forEach((groupDiv, idx) => {
-      if (idx === openGroup) {
-        groupDiv.style.display = "flex";
-        groupDiv.classList.add("open");
-
-        const x = container.clientWidth / 2 - mapSize / 2;
-        const y = 20;
-
-        if (instant) groupDiv.style.transition = "none";
-        groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-        if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
-
-        // ELEMENTEN CONTAINER POSITIE
-        const elementsContainer = document.getElementById(side + "-elements-container");
-        elementsContainer.style.position = "absolute";
-        elementsContainer.style.top = `${y + mapSize + 10}px`;
-        elementsContainer.style.left = "0";
-        elementsContainer.style.width = "100%";
-        elementsContainer.style.display = "grid";
-        elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-        elementsContainer.style.gap = `${gap}px`;
-        elementsContainer.style.justifyContent = "center";
-        elementsContainer.style.alignItems = "center";
-
-      } else {
-        groupDiv.style.display = "none";
-        groupDiv.classList.remove("open");
-      }
-    });
-  } else {
-    // ---------------- GEEN GROEP OPEN ----------------
-    const totalCols = Math.min(4, groups.length);
-    const totalRows = Math.ceil(groups.length / 4);
-    const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
-    const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-
-    groups.forEach((groupDiv, idx) => {
-      groupDiv.style.display = "flex";
-      groupDiv.classList.remove("open");
-
-      const col = idx % 4;
-      const row = Math.floor(idx / 4);
-
-      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
-
-      if (instant) groupDiv.style.transition = "none";
-      groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-      if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
-    });
-
-    // ELEMENTEN CONTAINER VERBERGEN
-    const elementsContainer = document.getElementById(side + "-elements-container");
-    elementsContainer.innerHTML = "";
-    elementsContainer.style.position = "absolute";
-    elementsContainer.style.top = "0";
-    elementsContainer.style.display = "grid";
-    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-    elementsContainer.style.gap = `${gap}px`;
-    elementsContainer.style.justifyContent = "center";
+  // Openen links of rechts
+  if(!leftOpenGroup) {
+    leftOpenGroup = map;
+    renderElements(elementsLeft, map.elementen, 'left');
+    moveMaps('right');
+  } else if(!rightOpenGroup){
+    rightOpenGroup = map;
+    renderElements(elementsRight, map.elementen, 'right');
+    hideMapsExcept(map.naam);
   }
 }
 
-// ---------------- RENDER GROEPEN ----------------
-function renderGroups(side, instant = false) {
-  const container = document.getElementById(side + "-maps");
-  const panel = document.getElementById(side + "-panel");
-  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
+function renderElements(container, elementen, side){
+  container.innerHTML = '';
+  elementen.forEach(el => {
+    const div = document.createElement('div');
+    div.classList.add('element');
+    div.dataset.naam = el.naam;
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+    div.addEventListener('click', () => toggleSelect(div));
+    container.appendChild(div);
+  });
+}
 
-  if (openGroup === null) panel.classList.add("no-open");
-  else panel.classList.remove("no-open");
+function toggleSelect(el) {
+  el.classList.toggle('selected');
+}
 
-  // 🔥 BELANGRIJK: container leegmaken
-  container.innerHTML = "";
+function moveMaps(position){
+  mapsContainer.style.position = 'absolute';
+  mapsContainer.style.top = '50px';
+  if(position === 'right'){
+    mapsContainer.style.left = '55%';
+  } else {
+    mapsContainer.style.left = '50%';
+  }
+}
 
-  // 🔥 ALTIJD alles opnieuw maken
-  mappen.forEach((_, idx) => createGroupElement(container, side, idx));
+function resetMapsPosition(){
+  mapsContainer.style.position = 'static';
+  Array.from(mapsContainer.children).forEach(mapDiv => {
+    mapDiv.style.display = 'flex';
+  });
+}
 
-  layoutGroups(side, instant);
+function hideMapsExcept(name){
+  Array.from(mapsContainer.children).forEach(mapDiv => {
+    if(mapDiv.dataset.naam !== name){
+      mapDiv.style.display = 'none';
+    } else {
+      mapDiv.style.display = 'flex';
+    }
+  });
 }
 
 // ---------------- CREATE GROEP ----------------
@@ -451,55 +436,6 @@ function createGroupElement(container, side, idx) {
   });
 
   container.appendChild(div);
-}
-
-// ---------------- RENDER ELEMENTEN ----------------
-function renderLeftElements() {
-  const container = document.getElementById("left-elements-container");
-  container.innerHTML = "";
-
-  if (leftOpenGroup === null) return;
-
-  mappen[leftOpenGroup].elementen.forEach(el => {
-    const div = document.createElement("div");
-    div.className = "element";
-    div.dataset.name = el.naam;
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-
-    if (el.naam === leftSelectedElement) div.classList.add("selected");
-
-    div.addEventListener("click", () => {
-      leftSelectedElement = leftSelectedElement === el.naam ? null : el.naam;
-      renderLeftElements();
-      tryCombine();
-    });
-
-    container.appendChild(div);
-  });
-}
-
-function renderRightElements() {
-  const container = document.getElementById("right-elements-container");
-  container.innerHTML = "";
-
-  if (rightOpenGroup === null) return;
-
-  mappen[rightOpenGroup].elementen.forEach(el => {
-    const div = document.createElement("div");
-    div.className = "element";
-    div.dataset.name = el.naam;
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-
-    if (el.naam === rightSelectedElement) div.classList.add("selected");
-
-    div.addEventListener("click", () => {
-      rightSelectedElement = rightSelectedElement === el.naam ? null : el.naam;
-      renderRightElements();
-      tryCombine();
-    });
-
-    container.appendChild(div);
-  });
 }
 
 // ---------------- COMBINATIE ----------------
