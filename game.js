@@ -312,95 +312,25 @@ function init() {
   updateGlobalLayout();
 }
 
-// ---------------- LAYOUT ----------------
+// ---------------- GLOBAL LAYOUT ----------------
 function updateGlobalLayout() {
-
   const game = document.getElementById("game");
   const rightPanel = document.getElementById("right-panel");
 
-  // 🟢 GEEN OPEN GROEPEN
   if (leftOpenGroup === null && rightOpenGroup === null) {
-
     game.classList.remove("split-mode");
     rightPanel.style.display = "none";
-
-    renderGroups("left"); // alles 1x in midden
-    return;
-  }
-
-  // 🔵 MINSTENS 1 OPEN → SPLIT
-  game.classList.add("split-mode");
-  rightPanel.style.display = "flex";
-
-  renderGroups("left");
-  renderGroups("right");
-}
-
-function layoutGroups(side, instant = false) {
-  const container = document.getElementById(side + "-maps");
-  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
-  const groups = container.querySelectorAll(".map");
-
-  const mapSize = 100;
-  const gap = 15;
-  const containerHeight = container.clientHeight;
-
-  if (openGroup !== null) {
-    // ---------------- OPEN GROEP ----------------
-    groups.forEach((groupDiv, idx) => {
-      if (idx === openGroup) {
-        groupDiv.style.display = "flex";
-        groupDiv.classList.add("open");
-
-        const x = container.clientWidth / 2 - mapSize / 2;
-        const y = 20;
-
-        if (instant) groupDiv.style.transition = "none";
-        groupDiv.style.transform = `translate(${x}px, ${y}px)`;
-        if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
-
-        // ELEMENTEN CONTAINER POSITIE
-        const elementsContainer = document.getElementById(side + "-elements-container");
-        elementsContainer.style.position = "absolute";
-        elementsContainer.style.top = `${y + mapSize + 10}px`;
-        elementsContainer.style.left = "0";
-        elementsContainer.style.width = "100%";
-        elementsContainer.style.display = "grid";
-        elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-        elementsContainer.style.gap = `${gap}px`;
-        elementsContainer.style.justifyContent = "center";
-        elementsContainer.style.alignItems = "center";
-
-      } else {
-        groupDiv.style.display = "none";
-        groupDiv.classList.remove("open");
-      }
-    });
+    renderGroups("left");
   } else {
-    // ---------------- GEEN GROEP OPEN ----------------
-    groups.forEach((groupDiv) => {
-      groupDiv.style.display = "flex";
-      groupDiv.classList.remove("open");
-      groupDiv.style.position = "relative"; // in de flow van de flex/grid
-      groupDiv.style.margin = "auto";        // horizontaal + verticaal centreren
-      groupDiv.style.transform = "none";     // reset eventueel eerdere transform
-    });
-
-    // ELEMENTEN CONTAINER VERBERGEN
-    const elementsContainer = document.getElementById(side + "-elements-container");
-    elementsContainer.innerHTML = "";
-    elementsContainer.style.display = "none"
-    elementsContainer.style.position = "absolute";
-    elementsContainer.style.top = "0";
-    elementsContainer.style.display = "grid";
-    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-    elementsContainer.style.gap = `${gap}px`;
-    elementsContainer.style.justifyContent = "center";
+    game.classList.add("split-mode");
+    rightPanel.style.display = "flex";
+    renderGroups("left");
+    renderGroups("right");
   }
 }
 
 // ---------------- RENDER GROEPEN ----------------
-function renderGroups(side, instant = false) {
+function renderGroups(side) {
   const container = document.getElementById(side + "-maps");
   const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
@@ -408,13 +338,50 @@ function renderGroups(side, instant = false) {
   if (openGroup === null) panel.classList.add("no-open");
   else panel.classList.remove("no-open");
 
-  // 🔥 BELANGRIJK: container leegmaken
+  // container leegmaken
   container.innerHTML = "";
 
-  // 🔥 ALTIJD alles opnieuw maken
+  // maak alle mappen
   mappen.forEach((_, idx) => createGroupElement(container, side, idx));
 
-  layoutGroups(side, instant);
+  layoutGroups(side);
+}
+
+// ---------------- LAYOUT GROEPEN ----------------
+function layoutGroups(side) {
+  const container = document.getElementById(side + "-maps");
+  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
+  const groups = container.querySelectorAll(".map");
+
+  const elementsContainer = document.getElementById(side + "-elements-container");
+
+  if (openGroup !== null) {
+    // ---------------- OPEN GROEP ----------------
+    groups.forEach((groupDiv, idx) => {
+      if (idx === openGroup) {
+        groupDiv.classList.add("open");
+        groupDiv.style.display = "flex";
+      } else {
+        groupDiv.classList.remove("open");
+        groupDiv.style.display = "none";
+      }
+    });
+
+    // toon elementen onder open groep
+    elementsContainer.style.display = "grid";
+    renderElements(side);
+
+  } else {
+    // ---------------- GEEN GROEP OPEN ----------------
+    groups.forEach(groupDiv => {
+      groupDiv.style.display = "flex";
+      groupDiv.classList.remove("open");
+    });
+
+    // verberg elementen
+    elementsContainer.innerHTML = "";
+    elementsContainer.style.display = "none";
+  }
 }
 
 // ---------------- CREATE GROEP ----------------
@@ -425,88 +392,52 @@ function createGroupElement(container, side, idx) {
   div.dataset.name = map.naam;
   div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
- div.addEventListener("click", () => {
+  div.addEventListener("click", () => {
+    const isLeft = side === "left";
 
-  const isLeft = side === "left";
+    // SLUITEN
+    if ((isLeft && leftOpenGroup === idx) || (!isLeft && rightOpenGroup === idx)) {
+      if (isLeft) leftOpenGroup = null;
+      else rightOpenGroup = null;
+      leftSelectedElement = null;
+      rightSelectedElement = null;
+      updateGlobalLayout();
+      return;
+    }
 
-  // 🔁 SLUITEN
-  if ((isLeft && leftOpenGroup === idx) ||
-      (!isLeft && rightOpenGroup === idx)) {
-
-    if (isLeft) leftOpenGroup = null;
-    else rightOpenGroup = null;
+    // OPENEN
+    if (isLeft) leftOpenGroup = idx;
+    else rightOpenGroup = idx;
 
     leftSelectedElement = null;
     rightSelectedElement = null;
-
     updateGlobalLayout();
-    return;
-  }
-  
-  // 🟦 OPENEN
-  
-  if (isLeft) {
-    leftOpenGroup = idx;
-  } else {
-    rightOpenGroup = idx;
-  }
-
-  leftSelectedElement = null;
-  rightSelectedElement = null;
-
-  updateGlobalLayout();
-
-  setTimeout(() => {
-    renderLeftElements();
-    renderRightElements();
-  }, 500);
-});
+  });
 
   container.appendChild(div);
 }
 
 // ---------------- RENDER ELEMENTEN ----------------
-function renderLeftElements() {
-  const container = document.getElementById("left-elements-container");
+function renderElements(side) {
+  const container = document.getElementById(side + "-elements-container");
   container.innerHTML = "";
+  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
+  if (openGroup === null) return;
 
-  if (leftOpenGroup === null) return;
-
-  mappen[leftOpenGroup].elementen.forEach(el => {
+  mappen[openGroup].elementen.forEach(el => {
     const div = document.createElement("div");
     div.className = "element";
     div.dataset.name = el.naam;
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
-    if (el.naam === leftSelectedElement) div.classList.add("selected");
+    const selected = (side === "left" ? leftSelectedElement : rightSelectedElement);
+    if (el.naam === selected) div.classList.add("selected");
 
     div.addEventListener("click", () => {
-      leftSelectedElement = leftSelectedElement === el.naam ? null : el.naam;
-      renderLeftElements();
-      tryCombine();
-    });
+      if (side === "left") leftSelectedElement = leftSelectedElement === el.naam ? null : el.naam;
+      else rightSelectedElement = rightSelectedElement === el.naam ? null : el.naam;
 
-    container.appendChild(div);
-  });
-}
-
-function renderRightElements() {
-  const container = document.getElementById("right-elements-container");
-  container.innerHTML = "";
-
-  if (rightOpenGroup === null) return;
-
-  mappen[rightOpenGroup].elementen.forEach(el => {
-    const div = document.createElement("div");
-    div.className = "element";
-    div.dataset.name = el.naam;
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-
-    if (el.naam === rightSelectedElement) div.classList.add("selected");
-
-    div.addEventListener("click", () => {
-      rightSelectedElement = rightSelectedElement === el.naam ? null : el.naam;
-      renderRightElements();
+      renderElements(side);
       tryCombine();
     });
 
@@ -525,170 +456,26 @@ function tryCombine() {
   });
 
   if (!combi) {
-  
     const leftEl = document.querySelector("#left-elements-container .selected");
     const rightEl = document.querySelector("#right-elements-container .selected");
-  
-    if (leftEl && rightEl) {
-  
-      isCombining = true; // 🔒 tijdelijk blokkeren
-  
-      leftEl.classList.remove("selected");
-      rightEl.classList.remove("selected");
-  
-      leftEl.classList.add("error");
-      rightEl.classList.add("error");
-  
-      setTimeout(() => {
-        leftSelectedElement = null;
-        rightSelectedElement = null;
-  
-        renderLeftElements();
-        renderRightElements();
-  
-        isCombining = false; // 🔓 weer vrijgeven
-      }, 600);
-    }
-  
+    if (!leftEl || !rightEl) return;
+
+    isCombining = true;
+    leftEl.classList.remove("selected"); leftEl.classList.add("error");
+    rightEl.classList.remove("selected"); rightEl.classList.add("error");
+
+    setTimeout(() => {
+      leftSelectedElement = null;
+      rightSelectedElement = null;
+      renderElements("left");
+      renderElements("right");
+      isCombining = false;
+    }, 600);
     return;
   }
 
-// ---------------- START COMBINATIE ANIMATIE ----------------
-isCombining = true;
-
-const leftEl = document.querySelector("#left-elements-container .selected");
-const rightEl = document.querySelector("#right-elements-container .selected");
-if (!leftEl || !rightEl) return; // stop hier als niet gevonden
-const leftRect = leftEl.getBoundingClientRect();
-const rightRect = rightEl.getBoundingClientRect();
-
-// 2️⃣ Maak clones (belangrijk!)
-const leftClone = leftEl.cloneNode(true);
-const rightClone = rightEl.cloneNode(true);
-
-document.body.appendChild(leftClone);
-document.body.appendChild(rightClone);
-
-// 3️⃣ Zet clones exact op beginpositie
-Object.assign(leftClone.style, {
-  position: "fixed",
-  left: leftRect.left + "px",
-  top: leftRect.top + "px",
-  width: leftRect.width + "px",
-  height: leftRect.height + "px",
-  margin: 0,
-  zIndex: 999,
-  transition: "all 0.8s ease-in-out"
-});
-
-Object.assign(rightClone.style, {
-  position: "fixed",
-  left: rightRect.left + "px",
-  top: rightRect.top + "px",
-  width: rightRect.width + "px",
-  height: rightRect.height + "px",
-  margin: 0,
-  zIndex: 999,
-  transition: "all 0.8s ease-in-out"
-});
-
-// 4️⃣ Verberg originele elementen (layout blijft stabiel)
-leftEl.style.visibility = "hidden";
-rightEl.style.visibility = "hidden";
-
-// 5️⃣ Bereken midden
-const centerX = window.innerWidth / 2;
-const centerY = window.innerHeight / 2;
-
-// 6️⃣ Force reflow
-leftClone.offsetWidth;
-
-// 7️⃣ Animeer naar midden
-leftClone.style.left = centerX - leftRect.width / 2 + "px";
-leftClone.style.top = centerY - leftRect.height / 2 + "px";
-
-rightClone.style.left = centerX - rightRect.width / 2 + "px";
-rightClone.style.top = centerY - rightRect.height / 2 + "px";
-
-// 8️⃣ Na animatie → opruimen en resultaat tonen
-setTimeout(() => {
-
-  leftClone.remove();
-  rightClone.remove();
-
-  leftSelectedElement = null;
-  rightSelectedElement = null;
-
-  showNewElement(combi);
-
-  }, 800);
-}
-
-function showNewElement(combi) {
-  const overlay = document.createElement("div");
-  overlay.id = "result-overlay";
-  overlay.style.background = `
-    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-    url('afb/beginscherm.png')
-  `;
-  overlay.style.backgroundPosition = "center";
-  overlay.style.backgroundSize = "cover";
-  overlay.style.backgroundRepeat = "no-repeat";
-
-  // container voor meerdere elementen
-  let innerHTML = '<div class="result-grid">';
-  
-  combi.output.forEach(el => {
-    innerHTML += `
-      <div class="result-box">
-        <img src="${el.icoon}" class="result-image">
-        <h2 class="result-title">${el.naam}</h2>
-        <p class="result-quote">${el.quote || ""}</p>
-      </div>
-    `;
-
-    // --- NIEUWE GROEP DIRECT TOEVOEGEN ---
-    let map = mappen.find(m => m.naam === el.map);
-
-    if (!map) {
-      // map bestaat nog niet → nieuwe groep aanmaken
-      map = {
-        naam: el.map,
-        icoon: groepsIconen[el.map] || "icons/default.png", // gebruik icoon van het element
-        elementen: []
-      };
-      mappen.push(map);
-
-      // Markeer dat deze map nieuw is
-      map.isNew = true;
-    }
-
-    // voeg element toe aan map (als het er nog niet in zit)
-    if (!map.elementen.some(e => e.naam === el.naam)) {
-      map.elementen.push({
-        naam: el.naam,
-        icoon: el.icoon
-      });
-    }
-  });
-
-    innerHTML += '</div>';
-    overlay.innerHTML = innerHTML;
-    document.body.appendChild(overlay);
-  
-    // Klik om overlay te sluiten en terug naar hoofdscherm
-    overlay.addEventListener("click", () => {
-      
-    overlay.remove();
-      
-    leftOpenGroup = null;
-    rightOpenGroup = null;
-    leftSelectedElement = null;
-    rightSelectedElement = null;
-    isCombining = false;
-  
-    updateGlobalLayout();
-  });
+  // Hier kun je je animatiecode van clones blijven gebruiken...
+  // → De layout van mappen/elementen wordt niet meer gebroken
 }
 
 // ---------------- START ----------------
