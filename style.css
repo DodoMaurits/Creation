@@ -139,7 +139,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;               /* blijft hetzelfde */
-  display: flex;              /* voeg toe om centering te laten werken */
+  display: block;             /* flex is hier voor centrering niet nodig */
   justify-content: center;
   align-items: center;
 }
