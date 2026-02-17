@@ -352,55 +352,44 @@ function layoutGroups(side, instant = false) {
       }
     });
 } else {
-  // ---------------- GEEN GROEP OPEN ----------------
-    const game = document.getElementById("game");
-  
-    // Verzamel alle maps uit beide panels
-    const leftGroups = Array.from(document.querySelectorAll("#left-maps .map"));
-    const rightGroups = Array.from(document.querySelectorAll("#right-maps .map"));
-    
-    // Maak een lijst van unieke map-namen en de bijbehorende divs
-    const uniqueMaps = mappen.map(map => {
-      const leftDiv = leftGroups.find(d => d.dataset.name === map.naam);
-      const rightDiv = rightGroups.find(d => d.dataset.name === map.naam);
-      return { leftDiv, rightDiv };
-    });
-  
-    const totalCols = Math.min(4, uniqueMaps.length);
-    const totalRows = Math.ceil(uniqueMaps.length / totalCols);
-  
-    const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
-    const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
-  
-    // Plaats alle unieke maps
-    uniqueMaps.forEach((maps, idx) => {
-      const col = idx % totalCols;
-      const row = Math.floor(idx / totalCols);
-  
-      const x = col * (mapSize + gap) + (game.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2;
-  
-      [maps.leftDiv, maps.rightDiv].forEach(div => {
-        if (!div) return;  // skip als div nog niet bestaat
-        div.style.display = "flex";
-        div.classList.remove("open");
-        if (instant) div.style.transition = "none";
-        div.style.transform = `translate(${x}px, ${y}px)`;
-        if (instant) div.style.transition = "transform 0.5s ease-in-out";
-      });
-    });
-  
-    // VERBERG ELEMENTEN CONTAINER
-    const elementsContainer = document.getElementById(side + "-elements-container");
-    elementsContainer.innerHTML = "";
-    elementsContainer.style.position = "absolute";
-    elementsContainer.style.top = "0";
-    elementsContainer.style.display = "grid";
-    elementsContainer.style.gridTemplateColumns = "repeat(4, 100px)";
-    elementsContainer.style.gap = `${gap}px`;
-    elementsContainer.style.justifyContent = "center";
-  }
-}
+// ---------------- GEEN GROEP OPEN ----------------
+const game = document.getElementById("game");
+
+// Verzamel alle maps uit beide panels
+const leftGroups = Array.from(document.querySelectorAll("#left-maps .map"));
+const rightGroups = Array.from(document.querySelectorAll("#right-maps .map"));
+
+// Maak een lijst van unieke map-namen en de bijbehorende divs
+const uniqueMaps = mappen.map(map => {
+  const leftDiv = leftGroups.find(d => d.dataset.name === map.naam);
+  const rightDiv = rightGroups.find(d => d.dataset.name === map.naam);
+  return { name: map.naam, leftDiv, rightDiv };
+});
+
+const totalCols = Math.min(4, uniqueMaps.length);
+const totalRows = Math.ceil(uniqueMaps.length / totalCols);
+const mapSize = 100;
+const gap = 15;
+const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
+const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
+
+// Plaats alle unieke maps gecentreerd
+uniqueMaps.forEach((maps, idx) => {
+  const col = idx % totalCols;
+  const row = Math.floor(idx / totalCols);
+
+  const x = col * (mapSize + gap) + (game.clientWidth - gridWidth) / 2;
+  const y = row * (mapSize + gap) + (game.clientHeight - gridHeight) / 2;
+
+  [maps.leftDiv, maps.rightDiv].forEach(div => {
+    if (!div) return; // div bestaat nog niet → skip
+    div.style.display = "flex";
+    div.classList.remove("open");
+    if (instant) div.style.transition = "none";
+    div.style.transform = `translate(${x}px, ${y}px)`;
+    if (instant) div.style.transition = "transform 0.5s ease-in-out";
+  });
+});
 
 // ---------------- RENDER GROEPEN ----------------
 function renderGroups(side, instant = false) {
