@@ -153,10 +153,20 @@ body {
 /* ---------------- ELEMENTEN ---------------- */
 #left-elements, #right-elements {
   position: absolute;
-  top: 0;
-  height: 100%;
+  top: 180px;               /* ruimte onder map-icoon */
+  left: 0;
   width: 50%;
+  display: flex;
+  justify-content: center;  /* centreert de grid */
   pointer-events: none;
+}
+
+.left-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 25px;
+  justify-content: center;  /* centreert rij van max 4 */
+  pointer-events: auto;
 }
 
 .element {
