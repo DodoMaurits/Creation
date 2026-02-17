@@ -133,7 +133,7 @@ body {
   gap: 20px;
   height: 100vh;             /* hele hoogte scherm */
   width: 100vw;              /* hele breedte scherm */
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 10;
