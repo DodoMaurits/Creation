@@ -141,17 +141,19 @@ body {
 
 .elements-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* max 4 per rij */
   gap: 15px;
   position: absolute;
-  top: 140px; /* onder de maps */
-  width: 45%;
+  top: 140px;       /* onder de open map, pas aan als nodig */
+  width: 45%;       /* helft van het scherm */
 }
+
 #left-elements {
-  left: 20px;
+  left: 5%;          /* iets marge van de linkerzijde */
 }
+
 #right-elements {
-  right: 20px;
+  right: 5%;         /* marge van de rechterzijde voor 2e map */
 }
 
 .map {
