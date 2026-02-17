@@ -347,18 +347,44 @@ function renderGroups() {
   const container = document.getElementById("maps-container");
   container.innerHTML = "";
 
+  const maxPerRow = 4;
+  const rowHeight = 140; // hoogte van mappen + gap
+  const totalRows = Math.ceil(mappen.length / maxPerRow);
+  const gap = 20;
+
+  const mapWidth = 100;
+  const mapHeight = 100;
+
+  const containerWidth = window.innerWidth;
+  const containerHeight = window.innerHeight;
+
+  const startTop = (containerHeight - ((mapHeight + gap) * totalRows - gap)) / 2;
+
   mappen.forEach((map, idx) => {
     const div = document.createElement("div");
     div.className = "map";
-    div.dataset.name = map.naam; // tooltip
+    div.dataset.name = map.naam;
     div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
-    // Zet open class
-    if (openGroup === idx) div.classList.add("open");
-    else div.classList.remove("open");
+    // Bepaal rij en kolom
+    const row = Math.floor(idx / maxPerRow);
+    const col = idx % maxPerRow;
+
+    // Beginpositie
+    let left = (containerWidth - Math.min(mappen.length, maxPerRow) * (mapWidth + gap) + gap) / 2 + col * (mapWidth + gap);
+    let top = startTop + row * (mapHeight + gap);
+
+    // Als deze map open is, overschrijf positie
+    if (openGroup === idx) {
+      top = 20;
+      left = containerWidth * 0.25; // linkerhelft
+      div.classList.add("open");
+    }
+
+    div.style.top = top + "px";
+    div.style.left = left + "px";
 
     div.addEventListener("click", () => {
-      // Toggle open/close
       openGroup = openGroup === idx ? null : idx;
       selectedElement = null;
       renderGroups();
