@@ -121,6 +121,15 @@ body {
   background-position: center;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+}
+
 .panel {
   flex: 1;
   display: flex;
