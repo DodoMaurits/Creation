@@ -136,6 +136,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0 auto;
 }
 
 #maps {
@@ -145,17 +146,6 @@ body {
   transition: transform 0.5s ease; /* animatie als het verschuift */
 }
 
-.maps-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  z-index: 10; /* boven andere containers */
-}
-
 .map {
   width: 100px;
   height: 100px;
@@ -163,6 +153,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 0 auto;
   transition: transform 0.5s ease, opacity 0.5s ease; /* vloeiend bewegen en in/uitfaden */
 }
 
@@ -307,8 +298,8 @@ body {
   transition: all 0.5s ease;
 }
 
-#left-panel { left: 10%; justify-content: center; }
-#right-panel { right: 10%; justify-content: center; }
+#left-panel { left: 25%; transform: translate(-50%, -50%); }
+#right-panel { left: 75%; transform: translate(-50%, -50%); }
 
 /* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
 #left-panel.no-open,
