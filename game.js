@@ -373,28 +373,15 @@ function layoutGroups(side) {
 }
 
 // ---------------- RENDER GROEPEN ----------------
-function renderGroups(side) {
-  const container = document.getElementById(side + "-maps");
-  const panel = document.getElementById(side + "-panel");
-  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
-
-  // container leegmaken
+function renderGroups() {
+  const container = document.getElementById("maps"); // 1 centrale container
   container.innerHTML = "";
-
-  // maak alle mappen
-  mappen.forEach((_, idx) => createGroupElement(container, side, idx));
-
-  // update panel class
-  if (openGroup === null) panel.classList.add("no-open");
-  else panel.classList.remove("no-open");
-
-  // layout de groepen
-  layoutGroups(side);
+  mappen.forEach((_, idx) => createGroupElement(container, idx));
 }
 
 function updateGlobalLayout() {
-  renderGroups("left");
-  renderGroups("right");
+  layoutGroups("left");  // alleen elements container
+  layoutGroups("right"); // alleen elements container
 }
 
 // ---------------- CREATE GROEP ----------------
@@ -489,4 +476,7 @@ function tryCombine() {
 }
 
 // ---------------- START ----------------
-window.onload = init;
+window.onload = () => {
+  renderGroups(); // alleen 1x voor alle mappen
+  updateGlobalLayout(); // toont elementen als nodig
+};
