@@ -289,16 +289,29 @@ body {
   align-items: center;
   z-index: 2000;
   animation: fadeIn 0.8s ease-in-out;
+  padding: 60px 20px;       /* ruimte rondom */
+  box-sizing: border-box;
 }
 
 .result-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* max 4 per rij */
-  gap: 40px;
-  max-width: 1200px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 50px;
   width: 90%;
-  justify-items: center;
-  align-items: start;
+  max-width: 1200px;
+  justify-content: center;   /* belangrijk */
+}
+
+@media (max-width: 900px) {
+  .result-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .result-box {
