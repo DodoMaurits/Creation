@@ -225,7 +225,7 @@ const combinaties = [
             output: [
               {
                 naam: "Uranus",
-                icoon: "icons/Neptunus.png",
+                icoon: "icons/Uranus.png",
                 map: "Heelal",
                 quote: "If the world seems cold to you, kindle fires to warm it <br><br>- Lucy Larcom"
               },
