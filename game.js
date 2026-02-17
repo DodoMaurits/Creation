@@ -198,7 +198,7 @@ const combinaties = [
             {
               naam: "Rook",
               icoon: "icons/Rook.png",
-              map: "Vuur",
+              map: "Lucht",
               quote: "Surely where there's smoke there's fire? No, where there's so much smoke there's smoke<br><br>- John Wheeler"
             }
           ]
