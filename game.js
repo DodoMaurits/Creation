@@ -165,7 +165,7 @@ const combinaties = [
               naam: "Meer",
               icoon: "icons/Meer.png",
               map: "Water",
-              quote: "Make your heart like a lake <br>with a calm, still surface and great depths of kindness<br><br>-Lao Tzu"
+              quote: "Make your heart like a lake <br>with a calm, still surface and great depths of kindness<br><br>- Lao Tzu"
             }
           ]
         },
