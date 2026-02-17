@@ -127,18 +127,28 @@ body {
 
 .maps-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .elements-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  margin-top: 20px;
+  position: absolute;
+  top: 140px; /* onder de maps */
+  width: 45%;
+}
+#left-elements {
+  left: 20px;
+}
+#right-elements {
+  right: 20px;
 }
 
 .map {
@@ -157,6 +167,7 @@ body {
 .map.open {
   z-index: 4;
   background-color: transparent;
+  transform: scale(1.2);
 }
 
 .map img {
