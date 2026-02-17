@@ -125,25 +125,20 @@ body {
 /* ---------------- LINKER/RECHTER PANEL ---------------- */
 #left-panel,
 #right-panel {
-  flex: 1 1 0;
-  min-height: 300px; /* belangrijk voor container.clientHeight */
   position: relative;
+  flex: 1;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* voor no-open */
+  background: transparent;
 }
 
 .maps-container {
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  gap: 15px;
-  justify-content: center; /* horizontaal centreren */
-  align-items: start;      /* maps bovenin */
-  width: 100%;
-  height: auto;            
   position: relative;
-  padding-top: 20px;       /* optioneel voor ruimte boven */
+  width: 100%;
+  height: 100%;
 }
 
 .elements-container {
@@ -177,9 +172,8 @@ body {
 }
 
 .map img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 100px;
+  height: 100px;
 }
 
 /* ---------------- ELEMENTEN ---------------- */
