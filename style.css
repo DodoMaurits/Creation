@@ -114,65 +114,35 @@ body {
 /* ---------------- GAME LAYOUT ---------------- */
 #game {
   display: flex;
+  justify-content: center;
+  align-items: center; /* typo gefixt */
   height: 100vh;
   width: 100vw;
+  flex-direction: column;
   padding: 60px 120px; 
   box-sizing: border-box;
   background: url("afb/perkament.jpg") center center / cover no-repeat;
-  transition: background 0.5s ease-in-out; /* vloeiend wisselen bij combinaties */
-}
-
-.centered-overlay {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* boven alles */
-  pointer-events: none; /* klikken gaat naar de map zelf */
-}
-
-.centered-overlay .map {
-  pointer-events: auto; /* maps blijven klikbaar */
-}
-
-/* ---------------- LINKER/RECHTER PANEL ---------------- */
-#left-panel,
-#right-panel {
-  position: relative;
-  flex: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* voor no-open */
-  background: transparent;
+  transition: background 0.5s ease-in-out;
 }
 
 .maps-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .elements-container {
-  display: flex;              /* horizontaal uitlijnen van elementen */
-  justify-content: center;    /* centreren */
-  gap: 15px;                  /* ruimte tussen elementen */
-  position: absolute;         /* absoluut positioneren in panel */
-  width: 100%;                /* vult de breedte van het panel */
-  top: 0;                     /* JS past top aan */
-  left: 0;
-  z-index: 3;                 /* boven maps */
-  pointer-events: auto;       /* zodat je kunt klikken */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .map {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 100px;
   display: flex;
@@ -283,18 +253,6 @@ body {
 .element:hover::after {
   opacity: 1;
   transform: translateX(-50%) scale(1);
-}
-
-/* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
-#left-panel.no-open,
-#right-panel.no-open {
-  justify-content: center; /* verticaal centreren */
-}
-
-#left-panel.no-open .maps-container,
-#right-panel.no-open .maps-container {
-  justify-content: center; /* horizontaal centreren */
-  align-items: center;     /* verticaal */
 }
 
 /* ---------------- RESULTAAT COMBINATIE --------------------- */
