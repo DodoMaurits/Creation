@@ -335,15 +335,17 @@ function renderGroups(side) {
   const panel = document.getElementById(side + "-panel");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
 
-  if (openGroup === null) panel.classList.add("no-open");
-  else panel.classList.remove("no-open");
-
   // container leegmaken
   container.innerHTML = "";
 
   // maak alle mappen
   mappen.forEach((_, idx) => createGroupElement(container, side, idx));
 
+  // update panel class
+  if (openGroup === null) panel.classList.add("no-open");
+  else panel.classList.remove("no-open");
+
+  // layout de groepen
   layoutGroups(side);
 }
 
@@ -352,31 +354,30 @@ function layoutGroups(side) {
   const container = document.getElementById(side + "-maps");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
   const groups = container.querySelectorAll(".map");
-
   const elementsContainer = document.getElementById(side + "-elements-container");
 
   if (openGroup !== null) {
-    // ---------------- OPEN GROEP ----------------
+    // Open groep → alleen deze zichtbaar
     groups.forEach((groupDiv, idx) => {
-      if (idx === openGroup) {
-        groupDiv.classList.add("open");
-        groupDiv.style.display = "flex";
-      } else {
-        groupDiv.classList.remove("open");
-        groupDiv.style.display = "none";
-      }
+      if (idx === openGroup) groupDiv.style.display = "flex";
+      else groupDiv.style.display = "none";
     });
 
     // toon elementen onder open groep
     elementsContainer.style.display = "grid";
     renderElements(side);
-
   } else {
-    // ---------------- GEEN GROEP OPEN ----------------
+    // Geen groep open → alle mappen tonen en centreren
     groups.forEach(groupDiv => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
     });
+
+    // CSS flex container centreren
+    container.style.display = "flex";
+    container.style.justifyContent = "center";
+    container.style.alignItems = "center";
+    container.style.gap = "20px";
 
     // verberg elementen
     elementsContainer.innerHTML = "";
