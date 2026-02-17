@@ -138,8 +138,6 @@ body {
   background: transparent;
 }
 
-/* Maps container altijd flex zodat alles kan centreren */
-/* CONTAINERS */
 .maps-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* max 4 per rij */
@@ -150,7 +148,6 @@ body {
   position: relative;       /* belangrijk voor absolute positionering van open groep */
 }
 
-/* DE MAPPEN */
 .map {
   width: 100px;
   height: 100px;
@@ -158,18 +155,18 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* vloeiend bewegen en in/uitfaden */
 }
 
 #left-maps, #right-maps {
   display: flex;
-  justify-content: center; /* horizontaal centreren */
-  align-items: center;     /* verticaal centreren */
-  gap: 20px;               /* ruimte tussen de mappen */
-  flex-wrap: wrap;         /* breek naar nieuwe rij als nodig */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: all 0.5s ease; /* vloeiende overgang voor container */
 }
 
-/* OPEN GROEP */
 .map.open {
   position: absolute;      /* bovenop de container plaatsen */
   top: 20px;
@@ -178,7 +175,6 @@ body {
   z-index: 10;
 }
 
-/* ELEMENTEN GRID */
 .elements-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
