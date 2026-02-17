@@ -357,9 +357,9 @@ function layoutGroups(side, instant = false) {
   } else {
     // GEEN GROEP OPEN → CSS Grid doet alles, reset styling
     groups.forEach(div => {
-      div.style.display = "flex";
-      div.style.position = "static";   // geen absolute
-      div.style.transform = "none";    // verwijder vorige transform
+      div.style.display = "flex";     // flex voor image centreren
+      div.style.position = "static";  // laat grid het werk doen
+      div.style.transform = "none";   // verwijder absolute positioning
       div.classList.remove("open");
     });
   }
