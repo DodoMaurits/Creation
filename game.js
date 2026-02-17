@@ -308,19 +308,33 @@ let leftSelectedElement = null;
 let rightSelectedElement = null;
 
 // ---------------- INIT ----------------
-function init() {
-  updateGlobalLayout();
-}
+window.onload = () => {
+  renderGroups();        // toont alle mappen centraal
+  renderElementsLeft();  // lege container links
+  renderElementsRight(); // lege container rechts
+};
 
-// ---------------- GLOBAL LAYOUT ----------------
-function layoutGroups() {
+// ---------------- RENDER GROEPEN ----------------
+function renderGroups() {
   const container = document.getElementById("maps");
-  const groups = container.querySelectorAll(".map");
+  container.innerHTML = "";
 
-  // alles tonen en centreren
-  groups.forEach(map => {
-    map.style.display = "flex";
-    map.classList.remove("open");
+  mappen.forEach((map, idx) => {
+    const div = document.createElement("div");
+    div.className = "map";
+    div.dataset.name = map.naam;
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+
+    div.addEventListener("click", () => {
+      // standaard openen in linker container
+      leftOpenGroup = idx;
+      leftSelectedElement = null;
+      rightSelectedElement = null;
+      renderElementsLeft();
+      renderElementsRight();
+    });
+
+    container.appendChild(div);
   });
 
   container.style.display = "flex";
@@ -329,76 +343,46 @@ function layoutGroups() {
   container.style.gap = "20px";
 }
 
-  // 🟢 FLIP stap 2: meet nieuwe posities
-  const lastRects = Array.from(groups).map(map => map.getBoundingClientRect());
-
-  // stap 3: invert + play
-  groups.forEach((map, i) => {
-    const dx = firstRects[i].left - lastRects[i].left;
-    const dy = firstRects[i].top - lastRects[i].top;
-
-    map.style.transform = `translate(${dx}px, ${dy}px)`;
-    map.style.transition = "transform 0s";
-
-    requestAnimationFrame(() => {
-      map.style.transition = "transform 0.5s ease";
-      map.style.transform = "translate(0,0)";
-    });
-  });
-}
-
-// ---------------- RENDER GROEPEN ----------------
-function renderGroups() {
-  const container = document.getElementById("maps"); // 1 centrale container
-  container.innerHTML = "";
-  mappen.forEach((_, idx) => createGroupElement(container, idx));
-}
-
-function updateGlobalLayout() {
-  layoutGroups("left");  // alleen elements container
-  layoutGroups("right"); // alleen elements container
-}
-
-// ---------------- CREATE GROEP ----------------
-function createGroupElement(container, idx) {
-  const map = mappen[idx];
-  const div = document.createElement("div");
-  div.className = "map";
-  div.dataset.name = map.naam;
-  div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
-
-  div.addEventListener("click", () => {
-    // standaard openen in de linkerhelft (of pas aan naar je logica)
-    leftOpenGroup = idx;
-    leftSelectedElement = null;
-    rightSelectedElement = null;
-    updateGlobalLayout();
-  });
-
-  container.appendChild(div);
-}
-
 // ---------------- RENDER ELEMENTEN ----------------
-function renderElements(side) {
-  const container = document.getElementById(side + "-elements-container");
+function renderElementsLeft() {
+  const container = document.getElementById("left-elements-container");
   container.innerHTML = "";
-  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
-  if (openGroup === null) return;
+  if (leftOpenGroup === null) return;
 
-  mappen[openGroup].elementen.forEach(el => {
+  mappen[leftOpenGroup].elementen.forEach(el => {
     const div = document.createElement("div");
     div.className = "element";
     div.dataset.name = el.naam;
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
-    const selected = (side === "left" ? leftSelectedElement : rightSelectedElement);
-    if (el.naam === selected) div.classList.add("selected");
+    if (el.naam === leftSelectedElement) div.classList.add("selected");
 
     div.addEventListener("click", () => {
-      if (side === "left") leftSelectedElement = leftSelectedElement === el.naam ? null : el.naam;
-      else rightSelectedElement = rightSelectedElement === el.naam ? null : el.naam;
+      leftSelectedElement = leftSelectedElement === el.naam ? null : el.naam;
+      renderElementsLeft();
+      tryCombine();
+    });
 
-      renderElements(side);
+    container.appendChild(div);
+  });
+}
+
+function renderElementsRight() {
+  const container = document.getElementById("right-elements-container");
+  container.innerHTML = "";
+  if (rightOpenGroup === null) return;
+
+  mappen[rightOpenGroup].elementen.forEach(el => {
+    const div = document.createElement("div");
+    div.className = "element";
+    div.dataset.name = el.naam;
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+
+    if (el.naam === rightSelectedElement) div.classList.add("selected");
+
+    div.addEventListener("click", () => {
+      rightSelectedElement = rightSelectedElement === el.naam ? null : el.naam;
+      renderElementsRight();
       tryCombine();
     });
 
@@ -428,16 +412,10 @@ function tryCombine() {
     setTimeout(() => {
       leftSelectedElement = null;
       rightSelectedElement = null;
-      renderElements("left");
-      renderElements("right");
+      renderElementsLeft();
+      renderElementsRight();
       isCombining = false;
     }, 600);
     return;
   }
 }
-
-// ---------------- START ----------------
-window.onload = () => {
-  renderGroups(); // alleen 1x voor alle mappen
-  updateGlobalLayout(); // toont elementen als nodig
-};
