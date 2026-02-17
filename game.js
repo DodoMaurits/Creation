@@ -313,46 +313,21 @@ function init() {
 }
 
 // ---------------- GLOBAL LAYOUT ----------------
-function layoutGroups(side) {
-  const container = document.getElementById(side + "-maps");
-  const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
+function layoutGroups() {
+  const container = document.getElementById("maps");
   const groups = container.querySelectorAll(".map");
-  const elementsContainer = document.getElementById(side + "-elements-container");
 
-  // 🟢 FLIP stap 1: meet oude posities
-  const firstRects = Array.from(groups).map(map => map.getBoundingClientRect());
+  // alles tonen en centreren
+  groups.forEach(map => {
+    map.style.display = "flex";
+    map.classList.remove("open");
+  });
 
-  // pas layout aan
-  if (openGroup !== null) {
-      // alleen open groep tonen
-      groups.forEach((groupDiv, idx) => {
-        groupDiv.style.display = idx === openGroup ? "flex" : "none";
-        groupDiv.classList.toggle("open", idx === openGroup);
-      });
-  
-      elementsContainer.style.display = "grid";
-      renderElements(side);
-  
-      requestAnimationFrame(() => {
-        elementsContainer.classList.add("show");
-      });
-  
-  } else {
-      // alles tonen en centreren
-      groups.forEach(groupDiv => {
-        groupDiv.style.display = "flex";
-        groupDiv.classList.remove("open");
-      });
-  
-      container.style.display = "flex";
-      container.style.justifyContent = "center";
-      container.style.alignItems = "center";
-      container.style.gap = "20px";
-  
-      elementsContainer.innerHTML = "";
-      elementsContainer.style.display = "none";
-      elementsContainer.classList.remove("show");
-  }
+  container.style.display = "flex";
+  container.style.justifyContent = "center";
+  container.style.alignItems = "center";
+  container.style.gap = "20px";
+}
 
   // 🟢 FLIP stap 2: meet nieuwe posities
   const lastRects = Array.from(groups).map(map => map.getBoundingClientRect());
@@ -385,7 +360,7 @@ function updateGlobalLayout() {
 }
 
 // ---------------- CREATE GROEP ----------------
-function createGroupElement(container, side, idx) {
+function createGroupElement(container, idx) {
   const map = mappen[idx];
   const div = document.createElement("div");
   div.className = "map";
@@ -393,22 +368,8 @@ function createGroupElement(container, side, idx) {
   div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
   div.addEventListener("click", () => {
-    const isLeft = side === "left";
-
-    // SLUITEN
-    if ((isLeft && leftOpenGroup === idx) || (!isLeft && rightOpenGroup === idx)) {
-      if (isLeft) leftOpenGroup = null;
-      else rightOpenGroup = null;
-      leftSelectedElement = null;
-      rightSelectedElement = null;
-      updateGlobalLayout();
-      return;
-    }
-
-    // OPENEN
-    if (isLeft) leftOpenGroup = idx;
-    else rightOpenGroup = idx;
-
+    // standaard openen in de linkerhelft (of pas aan naar je logica)
+    leftOpenGroup = idx;
     leftSelectedElement = null;
     rightSelectedElement = null;
     updateGlobalLayout();
