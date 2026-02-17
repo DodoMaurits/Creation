@@ -314,7 +314,7 @@ function init() {
     const div = document.createElement("div");
     div.className = "map";
     div.dataset.index = idx;
-    div.dataset.name = map.naam, el.naam;
+    div.dataset.name = map.naam;
     div.innerHTML = `<img src="${map.icoon}" alt="">`;
     div.style.position = "absolute";
     div.style.width = "100px";
@@ -416,9 +416,9 @@ function renderElements() {
   const groupIndex = openGroups[0]; // alleen linkerhelft
   const elements = mappen[groupIndex].elementen;
 
-  elements.forEach(el => {
     const div = document.createElement("div");
     div.className = "element";
+    div.dataset.name = el.naam; // dit is belangrijk voor je tooltip
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
     leftContainer.appendChild(div);
 
