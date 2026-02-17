@@ -116,35 +116,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh; /* volledige hoogte */
   transition: all 0.5s ease;
+  background-image: url("afb/beginscherm.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* SPLIT MODE */
-#game.split-mode {
-  justify-content: space-between;
+#game.split-mode #left-panel,
+#game.split-mode #right-panel {
+    justify-content: flex-start; /* of je gewenste layout bij split */
 }
 
 #left-panel,
 #right-panel {
   flex: 1;
-  transition: all 0.5s ease;
-}
-
-/* ---------------- LINKER/RECHTER PANEL ---------------- */
-#left-panel,
-#right-panel {
+  height: 100%; /* vul panel volledig */
   position: relative;
-  flex: 1;
-  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* voor no-open */
+  justify-content: center;
   background: transparent;
 }
 
 .maps-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -155,6 +157,7 @@ body {
   gap: 15px;                  /* ruimte tussen elementen */
   position: absolute;         /* absoluut positioneren in panel */
   width: 100%;                /* vult de breedte van het panel */
+  height: 100%;
   top: 0;                     /* JS past top aan */
   left: 0;
   z-index: 3;                 /* boven maps */
