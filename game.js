@@ -276,7 +276,29 @@ const combinaties = [
                   quote: "I had rather be Mercury, the smallest among seven, resolving round the sun, than the first among five revolving round Saturn <br><br>- Johann von Goethe"
                 }
               ]
-            }
+          },
+            {
+              input: ["Water", "Meer"],
+              output: [
+                {
+                  naam: "Zee",
+                  icoon: "icons/Zee.png",
+                  map: "Water",
+                  quote: "Water is the driving force of all nature<br><br>- Leonardo da Vinci"
+                }
+              ]
+            },
+              {
+                input: ["Vuur", "Water"],
+                output: [
+                  {
+                    naam: "Damp",
+                    icoon: "icons/Damp.png",
+                    map: "Lucht",
+                    quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
+                  }
+                ]
+              }
 ];
 
 const groepsIconen = {
