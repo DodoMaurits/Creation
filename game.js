@@ -359,51 +359,46 @@ function updateMapPositions() {
 }
 
 // ---------------- RENDER GROEPEN ----------------
-function renderGroups() {
-  const container = document.getElementById("maps-container");
-  container.innerHTML = "";
+function renderElements() {
+  const leftContainer = document.getElementById("left-elements");
+  leftContainer.innerHTML = "";
 
-  // container voor rechterhelft
-  let rightMaps = document.getElementById("right-maps");
-  if (!rightMaps) {
-    rightMaps = document.createElement("div");
-    rightMaps.id = "right-maps";
-    container.appendChild(rightMaps);
-  }
-  rightMaps.innerHTML = "";
+  if (openGroups.length === 0) return;
 
-  mappen.forEach((map, idx) => {
+  const firstOpen = openGroups[0]; // eerste open map
+  const mapDiv = document.querySelector(".map.open");
+  if (!mapDiv) return;
+
+  const mapRect = mapDiv.getBoundingClientRect();
+  const screenWidth = window.innerWidth;
+  const leftHalfCenter = screenWidth / 4; // horizontaal midden van linkerhelft
+
+  const elementen = mappen[firstOpen].elementen;
+
+  const maxPerRow = 4;
+  const elementSize = 100; // breedte van element
+  const gap = 15;           // gap tussen elementen
+  const rowCount = Math.ceil(elementen.length / maxPerRow);
+
+  // bereken totale breedte van rij
+  const totalWidth = Math.min(elementen.length, maxPerRow) * elementSize + (Math.min(elementen.length, maxPerRow) - 1) * gap;
+
+  // start links zodat rij horizontaal gecentreerd is in linkerhelft
+  const startLeft = leftHalfCenter - totalWidth / 2;
+
+  elementen.forEach((el, i) => {
     const div = document.createElement("div");
-    div.className = "map";
-    div.dataset.name = map.naam;
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    div.className = "element";
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
-    div.addEventListener("click", () => {
-      const i = openGroups.indexOf(idx);
-      if (i === -1) {
-        // openen
-        openGroups.push(idx);
-      } else {
-        // sluiten
-        openGroups.splice(i, 1);
-      }
-      renderGroups();
-      renderElements();
-    });
+    const row = Math.floor(i / maxPerRow);
+    const col = i % maxPerRow;
 
-    // Als het de eerste geopende map is → linkerhelft
-    if (openGroups[0] === idx) {
-      div.classList.add("open");
-      div.style.position = "absolute";
-      div.style.top = "20px";
-      div.style.left = "25%"; // linkerhelft
-      div.style.transition = "all 0.5s ease";
-      container.appendChild(div);
-    } else {
-      // alle andere mappen → rechts
-      div.classList.remove("open");
-      rightMaps.appendChild(div);
-    }
+    div.style.position = "absolute";
+    div.style.top = mapRect.bottom + 20 + row * (elementSize + gap) + "px"; // 20px afstand onder map
+    div.style.left = startLeft + col * (elementSize + gap) + "px";
+
+    leftContainer.appendChild(div);
   });
 }
 
