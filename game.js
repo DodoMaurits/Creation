@@ -316,17 +316,19 @@ function init() {
 // ---------------- LAYOUT ----------------
 function layoutGroups(side, instant = false) {
   const container = document.getElementById(side + "-maps");
+  const elementsContainer = document.getElementById(side + "-elements-container");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
   const groups = container.querySelectorAll(".map");
   const mapSize = 100;
   const gap = 15;
 
-  // Zorg dat container full panel blijft
+  // Zorg dat container full panel blijft en gecentreerd
   container.style.display = "flex";
   container.style.flexWrap = "wrap";
   container.style.justifyContent = "center";
   container.style.alignItems = "center";
-  container.style.height = "100%"; // volle hoogte van panel
+  container.style.height = "100%";
+  container.style.position = "relative"; // nodig voor absolute maps
 
   if (openGroup !== null) {
     // ---------------- OPEN GROEP ----------------
@@ -344,14 +346,14 @@ function layoutGroups(side, instant = false) {
         if (instant) groupDiv.style.transition = "transform 0.5s ease-in-out";
 
         // ELEMENTEN CONTAINER POSITIE
-        const elementsContainer = document.getElementById(side + "-elements-container");
         elementsContainer.style.position = "absolute";
-        elementsContainer.style.top = `${y + mapSize + 10}px`;
-        elementsContainer.style.left = "0";
-        elementsContainer.style.width = "100%";
+        elementsContainer.style.top = `${y + mapSize + 15}px`; // iets onder de map
+        elementsContainer.style.left = "50%";
+        elementsContainer.style.transform = "translateX(-50%)";
         elementsContainer.style.display = "flex";
         elementsContainer.style.flexWrap = "wrap";
         elementsContainer.style.justifyContent = "center";
+        elementsContainer.style.alignItems = "center";
         elementsContainer.style.gap = `${gap}px`;
 
       } else {
@@ -368,8 +370,15 @@ function layoutGroups(side, instant = false) {
       groupDiv.classList.remove("open");
     });
 
-    const elementsContainer = document.getElementById(side + "-elements-container");
     elementsContainer.innerHTML = "";
+    elementsContainer.style.display = "none";
+
+    // Container blijft gecentreerd in beide richtingen
+    container.style.display = "flex";
+    container.style.flexWrap = "wrap";
+    container.style.justifyContent = "center";
+    container.style.alignItems = "center";
+    container.style.height = "100%";
   }
 }
 
@@ -389,9 +398,6 @@ function renderGroups(side, instant = false) {
   mappen.forEach((_, idx) => createGroupElement(container, side, idx));
 
   layoutGroups(side, instant);
-
-  // --- update overlay ---
-  updateCenteredOverlay();
 }
 
 // ---------------- CREATE GROEP ----------------
