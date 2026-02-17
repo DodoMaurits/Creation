@@ -1,9 +1,9 @@
 /* ---------------- BODY ---------------- */
 body {
   margin: 0;
-  font-family: "Times New Roman", serif;
+  padding: 0;
+  font-family: Arial, sans-serif;
   height: 100vh;
-  overflow: hidden;
 }
 
 /* ---------------- HOMEPAGE ---------------- */
@@ -52,6 +52,7 @@ body {
   background: #d0f0ff;
 }
 
+/* God-icon zweeft op en neer */
 @keyframes floatUpDown {
   0%   { transform: translateY(0px); }
   50%  { transform: translateY(-15px); }
@@ -67,6 +68,7 @@ body {
   cursor: pointer;
 }
 
+/* Elke quote los laten zweven naar links/rechts */
 @keyframes floatSide1 {
   0%   { transform: translateX(0px); }
   50%  { transform: translateX(-10px); }
@@ -111,83 +113,81 @@ body {
 
 /* ---------------- GAME LAYOUT ---------------- */
 #game {
-  position: relative;
-  width: 100vw;
+  display: flex;
   height: 100vh;
-  background-image: url("afb/perkament.jpg");
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  padding: 60px 120px; 
+  box-sizing: border-box;
+  background: url("afb/perkament.jpg") center center / cover no-repeat;
+  transition: background 0.5s ease-in-out; /* vloeiend wisselen bij combinaties */
 }
 
-.area {
-  position: absolute;
+/* ---------------- LINKER/RECHTER PANEL ---------------- */
+#left-panel,
+#right-panel {
+  position: relative;
+  flex: 1;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* voor no-open */
+  background: transparent;
+}
+
+.maps-container {
+  position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease;
 }
 
-.side {
-  width: 50%;
-}
-
-#left-area {
+.elements-container {
+  display: flex;              /* horizontaal uitlijnen van elementen */
+  justify-content: center;    /* centreren */
+  gap: 15px;                  /* ruimte tussen elementen */
+  position: absolute;         /* absoluut positioneren in panel */
+  width: 100%;                /* vult de breedte van het panel */
+  top: 0;                     /* JS past top aan */
   left: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 40px;
+  z-index: 3;                 /* boven maps */
+  pointer-events: auto;       /* zodat je kunt klikken */
 }
 
-#right-area {
-  right: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 40px;
-}
-
-.hidden {
-  display: none;
-}
-
-/* MAP ICONEN */
 .map {
+  position: absolute;
   width: 100px;
   height: 100px;
-  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.map.open {
+  z-index: 4;
+  background-color: transparent;
 }
 
 .map img {
-  width: 100%;
-}
-
-.map:hover {
-  transform: scale(1.1);
+  width: 100px;
+  height: 100px;
 }
 
 /* ---------------- ELEMENTEN ---------------- */
-.elements {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  gap: 20px;
-}
-
 .element {
+  position: relative;
   width: 100px;
   height: 100px;
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.element img {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 10px;
+  z-index: 1;
 }
 
 @keyframes shake {
@@ -223,6 +223,12 @@ body {
 
 .element.error {
   animation: errorShake 0.6s ease;
+  box-shadow: 0 0 20px rgba(255,0,0,0.6);
+}
+
+.element img {
+  width: 100px;
+  height: 100px;
 }
 
 /* ---------------- TOOLTIP ---------------- */
@@ -261,19 +267,6 @@ body {
   transform: translateX(-50%) scale(1);
 }
 
-#left-panel, #right-panel {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  transition: all 0.5s ease;
-}
-
-#left-panel { left: 25%; transform: translate(-50%, -50%); }
-#right-panel { left: 75%; transform: translate(-50%, -50%); }
-
 /* ---------------- CENTREREN ALS GEEN GROEP OPEN IS ---------------- */
 #left-panel.no-open,
 #right-panel.no-open {
@@ -302,12 +295,16 @@ body {
 
 .result-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* max 4 per rij */
+  gap: 40px;
+  max-width: 1200px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 50px;
   width: 90%;
+  justify-items: center;
+  align-items: start;
   max-width: 1200px;
-  justify-content: center;   /* hele grid centreren */
-  justify-items: center;     /* items centreren */
+  justify-content: center;   /* belangrijk */
 }
 
 @media (max-width: 900px) {
@@ -344,7 +341,7 @@ body {
   font-size: 40px;
   letter-spacing: 3px;
   margin-bottom: 10px;
-}
+  }
 
 .result-quote {
   font-family: "Times New Roman", serif;
