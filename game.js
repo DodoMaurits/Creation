@@ -392,6 +392,36 @@ function animateMapShift(idx) {
   maps.style.transform = `translateX(-${mapWidth + 20}px)`; // 20px gap
 }
 
+function openMap(idx) {
+  const clickedMap = mappen[idx];
+
+  // Verwijder alle maps uit startcontainer
+  const mapsDiv = document.getElementById("maps");
+  mapsDiv.innerHTML = "";
+
+  // Voeg geselecteerde map links toe
+  const leftPanel = document.getElementById("left-panel");
+  leftPanel.innerHTML = "";
+  const leftMapDiv = document.createElement("div");
+  leftMapDiv.className = "map";
+  leftMapDiv.innerHTML = `<img src="${clickedMap.icoon}" alt="${clickedMap.naam}">`;
+  leftPanel.appendChild(leftMapDiv);
+
+  // Voeg overige maps rechts toe
+  const rightPanel = document.getElementById("right-panel");
+  rightPanel.innerHTML = "";
+  mappen.forEach((map, i) => {
+    if (i === idx) return;
+    const div = document.createElement("div");
+    div.className = "map";
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    rightPanel.appendChild(div);
+  });
+
+  // Voeg animatie toe via CSS transition
+  leftMapDiv.style.transform = "translateX(0)";  // optioneel: van beginpositie naar center
+}
+
 // ---------------- COMBINATIE ----------------
 function tryCombine() {
   if (!leftSelectedElement || !rightSelectedElement || isCombining) return;
