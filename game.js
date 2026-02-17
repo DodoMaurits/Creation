@@ -411,77 +411,33 @@ function updateMapPositions() {
 
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
-
   const leftContainer = document.getElementById("left-elements");
-  const rightContainer = document.getElementById("right-elements");
-
   leftContainer.innerHTML = "";
-  rightContainer.innerHTML = "";
 
   if (openGroups.length === 0) return;
 
-  const elementSize = 100;
-  const gap = 20;
-  const maxPerRow = 4;
+  const groupIndex = openGroups[0]; // alleen linkerhelft
+  const elements = mappen[groupIndex].elementen;
 
-  openGroups.forEach((groupIndex, openIndex) => {
+  elements.forEach(el => {
+    const div = document.createElement("div");
+    div.className = "element";
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+    leftContainer.appendChild(div);
 
-    const container = openIndex === 0 ? leftContainer : rightContainer;
-    const mapDiv = document.querySelectorAll(".map")[groupIndex];
-    const rect = mapDiv.getBoundingClientRect();
-    const elements = mappen[groupIndex].elementen;
+    // kleine animatie
+    setTimeout(() => div.classList.add("show"), 10);
 
-    const centerX = openIndex === 0
-      ? window.innerWidth * 0.25
-      : window.innerWidth * 0.75;
-
-    elements.forEach((el, i) => {
-
-      const div = document.createElement("div");
-      div.className = "element";
-      div.innerHTML = `<img src="${el.icoon}" alt="">`;
-
-      div.style.position = "absolute";
-      div.style.width = elementSize + "px";
-      div.style.height = elementSize + "px";
-      div.style.cursor = "pointer";
-
-      const row = Math.floor(i / maxPerRow);
-      const col = i % maxPerRow;
-
-      // hoeveel items zitten in deze rij?
-      const itemsInRow = Math.min(
-        maxPerRow,
-        elements.length - row * maxPerRow
-      );
-
-      const rowWidth = itemsInRow * elementSize + (itemsInRow - 1) * gap;
-
-      const startLeft = centerX - rowWidth / 2;
-
-      div.style.top =
-        rect.bottom + 30 + row * (elementSize + gap) + "px";
-
-      div.style.left =
-        startLeft + col * (elementSize + gap) + "px";
-
-      // SELECTIE / COMBINATIE
-      div.addEventListener("click", () => {
-
-        if (!selectedElement) {
-          selectedElement = el.naam;
-          div.classList.add("selected");
-        } else {
-          combineElements(selectedElement, el.naam);
-          selectedElement = null;
-          renderElements();
-        }
-
-      });
-
-      container.appendChild(div);
+    div.addEventListener("click", () => {
+      if (!selectedElement) {
+        selectedElement = el.naam;
+        div.classList.add("selected");
+      } else {
+        combineElements(selectedElement, el.naam);
+        selectedElement = null;
+        renderElements();
+      }
     });
-
   });
 }
 
