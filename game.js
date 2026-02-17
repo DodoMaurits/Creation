@@ -302,7 +302,7 @@ const groepsIconen = {
 
 
 // ---------------- STATUS ----------------
-let openGroup = null;
+let openGroups = []; // array van indices van geopende mappen
 let selectedElement = null;
 
 // ---------------- INIT ----------------
@@ -363,7 +363,7 @@ function renderGroups() {
   const container = document.getElementById("maps-container");
   container.innerHTML = "";
 
-  // Maak aparte container voor de niet-geopende mappen
+  // container voor rechterhelft
   let rightMaps = document.getElementById("right-maps");
   if (!rightMaps) {
     rightMaps = document.createElement("div");
@@ -379,14 +379,20 @@ function renderGroups() {
     div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
     div.addEventListener("click", () => {
-      openGroup = openGroup === idx ? null : idx;
-      selectedElement = null;
+      const i = openGroups.indexOf(idx);
+      if (i === -1) {
+        // openen
+        openGroups.push(idx);
+      } else {
+        // sluiten
+        openGroups.splice(i, 1);
+      }
       renderGroups();
       renderElements();
     });
 
-    if (openGroup === idx) {
-      // Open map naar linkerhelft
+    // Als het de eerste geopende map is → linkerhelft
+    if (openGroups[0] === idx) {
       div.classList.add("open");
       div.style.position = "absolute";
       div.style.top = "20px";
@@ -394,7 +400,7 @@ function renderGroups() {
       div.style.transition = "all 0.5s ease";
       container.appendChild(div);
     } else {
-      // Alle andere mappen → rechts
+      // alle andere mappen → rechts
       div.classList.remove("open");
       rightMaps.appendChild(div);
     }
@@ -404,41 +410,27 @@ function renderGroups() {
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
   const leftContainer = document.getElementById("left-elements");
-  const rightContainer = document.getElementById("right-elements");
-
   leftContainer.innerHTML = "";
-  rightContainer.innerHTML = "";
 
-  if (openGroup === null) return;
+  if (openGroups.length === 0) return;
 
-  const mapDiv = document.querySelectorAll(".map")[openGroup];
-  const mapRect = mapDiv.getBoundingClientRect();
+  const firstOpen = openGroups[0]; // eerste open map
+  const elementen = mappen[firstOpen].elementen;
 
-  const elementen = mappen[openGroup].elementen;
-  const targetContainer = openGroup === 0 ? leftContainer : rightContainer;
+  const openMapDiv = document.querySelector(".map.open");
+  const mapRect = openMapDiv.getBoundingClientRect();
 
-  // Zet container net onder de map
-  targetContainer.style.top = (mapRect.bottom + 20) + "px"; // 20px marge
-  targetContainer.style.left = openGroup === 0 ? "0" : "50%";
-
-  elementen.forEach(el => {
+  elementen.forEach((el, i) => {
     const div = document.createElement("div");
     div.className = "element";
     div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
-    if (selectedElement === el.naam) div.classList.add("selected");
+    // positioneren onder map
+    div.style.position = "absolute";
+    div.style.top = mapRect.bottom + 20 + "px";
+    div.style.left = mapRect.left + i * (100 + 15) + "px"; // max 4 per rij, gap 15
 
-    div.addEventListener("click", () => {
-      if (selectedElement && selectedElement !== el.naam) {
-        combineElements(selectedElement, el.naam);
-        selectedElement = null;
-      } else {
-        selectedElement = selectedElement === el.naam ? null : el.naam;
-      }
-      renderElements();
-    });
-
-    targetContainer.appendChild(div);
+    leftContainer.appendChild(div);
   });
 }
 
