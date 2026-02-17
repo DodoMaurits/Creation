@@ -309,11 +309,33 @@ let rightSelectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
-  renderGroups("left", true);
-  renderGroups("right", true);
+  updateGlobalLayout();
 }
 
 // ---------------- LAYOUT ----------------
+function updateGlobalLayout() {
+
+  const game = document.getElementById("game");
+  const rightPanel = document.getElementById("right-panel");
+
+  // 🟢 GEEN OPEN GROEPEN
+  if (leftOpenGroup === null && rightOpenGroup === null) {
+
+    game.classList.remove("split-mode");
+    rightPanel.style.display = "none";
+
+    renderGroups("left"); // alles 1x in midden
+    return;
+  }
+
+  // 🔵 MINSTENS 1 OPEN → SPLIT
+  game.classList.add("split-mode");
+  rightPanel.style.display = "flex";
+
+  renderGroups("left");
+  renderGroups("right");
+}
+
 function layoutGroups(side, instant = false) {
   const container = document.getElementById(side + "-maps");
   const openGroup = side === "left" ? leftOpenGroup : rightOpenGroup;
@@ -414,41 +436,42 @@ function createGroupElement(container, side, idx) {
   div.dataset.name = map.naam;
   div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
 
-  div.addEventListener("click", () => {
-    const isLeft = side === "left";
-    const openGroup = isLeft ? leftOpenGroup : rightOpenGroup;
-    const selectedElementProp = isLeft ? "leftSelectedElement" : "rightSelectedElement";
-    const elementsContainer = document.getElementById(side + "-elements-container");
+ div.addEventListener("click", () => {
 
-    // Als deze groep al open is → sluiten
-    if (openGroup === idx) {
-    
-      if (isLeft) leftOpenGroup = null;
-      else rightOpenGroup = null;
-    
-      if (isLeft) leftSelectedElement = null;
-      else rightSelectedElement = null;
-    
-      elementsContainer.innerHTML = "";
-    
-      renderGroups(side);
-    
-      return;
-    } else {
-      // Groep openen
-      if (isLeft) leftOpenGroup = idx;
-      else rightOpenGroup = idx;
+  const isLeft = side === "left";
 
-      if (isLeft) leftSelectedElement = null;
-      else rightSelectedElement = null;
+  // 🔁 SLUITEN
+  if ((isLeft && leftOpenGroup === idx) ||
+      (!isLeft && rightOpenGroup === idx)) {
 
-      layoutGroups(side);
-      setTimeout(() => {
-        if (isLeft) renderLeftElements();
-        else renderRightElements();
-      }, 800); // elementen verschijnen na morph
-    }
-  });
+    if (isLeft) leftOpenGroup = null;
+    else rightOpenGroup = null;
+
+    leftSelectedElement = null;
+    rightSelectedElement = null;
+
+    updateGlobalLayout();
+    return;
+  }
+  
+  // 🟦 OPENEN
+  
+  if (isLeft) {
+    leftOpenGroup = idx;
+  } else {
+    rightOpenGroup = idx;
+  }
+
+  leftSelectedElement = null;
+  rightSelectedElement = null;
+
+  updateGlobalLayout();
+
+  setTimeout(() => {
+    renderLeftElements();
+    renderRightElements();
+  }, 500);
+});
 
   container.appendChild(div);
 }
@@ -546,8 +569,7 @@ isCombining = true;
 
 const leftEl = document.querySelector("#left-elements-container .selected");
 const rightEl = document.querySelector("#right-elements-container .selected");
-
-// 1️⃣ Meet originele positie DIRECT
+if (!leftEl || !rightEl) return; // stop hier als niet gevonden
 const leftRect = leftEl.getBoundingClientRect();
 const rightRect = rightEl.getBoundingClientRect();
 
@@ -676,9 +698,7 @@ function showNewElement(combi) {
     rightSelectedElement = null;
     isCombining = false;
   
-    // her-render alle groepen
-    renderGroups("left");
-    renderGroups("right");
+    updateGlobalLayout();
   });
 }
 
