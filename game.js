@@ -409,6 +409,7 @@ function updateMapPositions() {
 }
 
 // ---------------- RENDER ELEMENTEN ----------------
+// ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
 
   const leftContainer = document.getElementById("left-elements");
@@ -420,7 +421,7 @@ function renderElements() {
   if (openGroups.length === 0) return;
 
   const elementSize = 100;
-  const gap = 15;
+  const gap = 20;
   const maxPerRow = 4;
 
   openGroups.forEach((groupIndex, openIndex) => {
@@ -430,34 +431,43 @@ function renderElements() {
     const rect = mapDiv.getBoundingClientRect();
     const elements = mappen[groupIndex].elementen;
 
-    const itemsFirstRow = Math.min(maxPerRow, elements.length);
-    const rowWidth = itemsFirstRow * elementSize + (itemsFirstRow - 1) * gap;
-
     const centerX = openIndex === 0
       ? window.innerWidth * 0.25
       : window.innerWidth * 0.75;
-
-    const startLeft = centerX - rowWidth / 2;
 
     elements.forEach((el, i) => {
 
       const div = document.createElement("div");
       div.className = "element";
-      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+      div.innerHTML = `<img src="${el.icoon}" alt="">`;
 
       div.style.position = "absolute";
-      div.style.width = "100px";
-      div.style.height = "100px";
+      div.style.width = elementSize + "px";
+      div.style.height = elementSize + "px";
       div.style.cursor = "pointer";
 
       const row = Math.floor(i / maxPerRow);
       const col = i % maxPerRow;
 
-      div.style.top = rect.bottom + 25 + row * (elementSize + gap) + "px";
-      div.style.left = startLeft + col * (elementSize + gap) + "px";
+      // hoeveel items zitten in deze rij?
+      const itemsInRow = Math.min(
+        maxPerRow,
+        elements.length - row * maxPerRow
+      );
 
-      // ---- SELECTIE / COMBINATIE ----
+      const rowWidth = itemsInRow * elementSize + (itemsInRow - 1) * gap;
+
+      const startLeft = centerX - rowWidth / 2;
+
+      div.style.top =
+        rect.bottom + 30 + row * (elementSize + gap) + "px";
+
+      div.style.left =
+        startLeft + col * (elementSize + gap) + "px";
+
+      // SELECTIE / COMBINATIE
       div.addEventListener("click", () => {
+
         if (!selectedElement) {
           selectedElement = el.naam;
           div.classList.add("selected");
@@ -466,6 +476,7 @@ function renderElements() {
           selectedElement = null;
           renderElements();
         }
+
       });
 
       container.appendChild(div);
