@@ -356,10 +356,18 @@ function layoutGroups(side, instant = false) {
     });
   } else {
     // ---------------- GEEN GROEP OPEN ----------------
+    const game = document.getElementById("game");  // gebruik volledige schermbreedte
+
     const totalCols = Math.min(4, groups.length);
     const totalRows = Math.ceil(groups.length / 4);
+    const mapSize = 100;
+    const gap = 15;
+
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
     const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
+
+    const startX = (game.clientWidth - gridWidth) / 2;
+    const startY = (game.clientHeight - gridHeight) / 2;
 
     groups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
@@ -368,8 +376,8 @@ function layoutGroups(side, instant = false) {
       const col = idx % 4;
       const row = Math.floor(idx / 4);
 
-      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
-      const y = row * (mapSize + gap) + (containerHeight - gridHeight) / 2;
+      const x = startX + col * (mapSize + gap);
+      const y = startY + row * (mapSize + gap);
 
       if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
