@@ -1,8 +1,8 @@
 // ---------------- DATA ----------------
 const mappen = [
   {
-    naam: "Ruimte",
-    icoon: "icons/Ruimte.png",
+    naam: "Heelal",
+    icoon: "icons/Heelal.png",
     elementen: [
       { naam: "Oerknal", icoon: "icons/Oerknal.png" }
     ]
@@ -47,17 +47,6 @@ const combinaties = [
       }
     ]
   },
-    {
-      input: ["Zwaartekracht", "Quarks"],
-      output: [
-        {
-          naam: "Heelal",
-          icoon: "icons/Heelal.png",
-          map: "Ruimte",
-          quote: "The reason why the universe is eternal is that it does not live for itself: it gives life to others as it transforms <br><br>- Lao Tzu"
-        }
-      ]
-    },
     {
       input: ["Quarks", "Kou"],
       output: [
@@ -108,7 +97,7 @@ const combinaties = [
           {
             naam: "Ster",
             icoon: "icons/Ster.png",
-            map: "Ruimte",
+            map: "Heelal",
             quote: "Every star may be a sun to someone <br><br>-Carl Sagan"
           }
         ]
@@ -136,7 +125,7 @@ const combinaties = [
           {
             naam: "Supernova",
             icoon: "icons/Supernova.png",
-            map: "Ruimte",
+            map: "Heelal",
             quote: "A supernova is one of the most powerful explosions in the universe. It's so luminous, it can be seen across billions of light years. It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime<br><br>- Neil Tyson"
           }
         ]
@@ -147,13 +136,13 @@ const combinaties = [
           {
             naam: "Asteroïden",
             icoon: "icons/Asteroïden.png",
-            map: "Ruimte",
+            map: "Heelal",
             quote: "If you keep chasing shooting stars, you'll never feel the warmth of the sun <br><br>- Ann Marie Frohoff"
           },
           {
             naam: "Planeet",
             icoon: "icons/Planeet.png",
-            map: "Ruimte",
+            map: "Heelal",
             quote: "Astronomy compels the soul to look upwards and leads us from this world to another <br><br>- Plato"
           }
         ]
@@ -186,7 +175,7 @@ const combinaties = [
               {
                 naam: "Zwart Gat",
                 icoon: "icons/Zwartgat.png",
-                map: "Ruimte",
+                map: "Heelal",
                 quote: "I belive in black holes. I believe that as the universe empties into nothingness, past and future will smack together in the last swirl around the drain<br><br>- Abraham Verghese"
               }
             ]
@@ -220,13 +209,13 @@ const combinaties = [
             {
               naam: "Jupiter",
               icoon: "icons/Jupiter.png",
-              map: "Ruimte",
+              map: "Heelal",
               quote: "Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... and he looked every single inch of it <br><br>- Lulu Moore"
             },
             {
               naam: "Saturnus",
               icoon: "icons/Saturnus.png",
-              map: "Ruimte",
+              map: "Heelal",
               quote: "At depth on Jupiter and Saturn, the pressures are so great that atoms sweat electrons, and the air becomes a metal <br><br>- Carl Sagan"
             }
           ]
@@ -237,13 +226,13 @@ const combinaties = [
               {
                 naam: "Uranus",
                 icoon: "icons/Neptunus.png",
-                map: "Ruimte",
+                map: "Heelal",
                 quote: "If the world seems cold to you, kindle fires to warm it <br><br>- Lucy Larcom"
               },
               {
                 naam: "Neptunus",
                 icoon: "icons/Neptunus.png",
-                map: "Ruimte",
+                map: "Heelal",
                 quote: "We see it as Columbus saw America from the coast of Spain. Its movements have been felt, trembling along the far-reaching line of our analysis with a certainty hardly inferior to that of ocular demonstration <br><br>- William Herschel"
               }
             ]
@@ -254,25 +243,25 @@ const combinaties = [
                 {
                   naam: "Mars",
                   icoon: "icons/Mars.png",
-                  map: "Ruimte",
+                  map: "Heelal",
                   quote: "It was Mars. the God of War, and for me, the fighting man, it had always held the power of irresistible enchantment. As I gazed at it on that far-gone night it seemed to call across the unthinkable void, to lure me to it, to draw me as the lodestone attracts a particle of iron <br><br>- Edgar Rice Burroughs "
                 },
                 {
                   naam: "De Aarde",
                   icoon: "icons/De_Aarde.png",
-                  map: "Ruimte",
+                  map: "Heelal",
                   quote: "On Earth there is no heaven, but there are pieces of it <br><br>- Jules Renard"
                 },
                 {
                   naam: "Venus",
                   icoon: "icons/Venus.png",
-                  map: "Ruimte",
+                  map: "Heelal",
                   quote: "She was the Goddess of Love. It's nice that love comes on first thing in the evening, and goes out last in the morning. Love keeps the light on all night <br><br>- Catherynne Valente"
                 },
                 {
                   naam: "Mercurius",
                   icoon: "icons/Mercurius.png",
-                  map: "Ruimte",
+                  map: "Heelal",
                   quote: "I had rather be Mercury, the smallest among seven, resolving round the sun, than the first among five revolving round Saturn <br><br>- Johann von Goethe"
                 }
               ]
@@ -302,7 +291,7 @@ const combinaties = [
 ];
 
 const groepsIconen = {
-  "Ruimte": "icons/Ruimte.png",
+  "Heelal": "icons/Heelal.png",
   "Krachten": "icons/Krachten.png",
   "Chemie": "icons/Chemie.png",
   "Lucht": "icons/Lucht.png",
