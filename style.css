@@ -291,28 +291,48 @@ body {
   animation: fadeIn 0.8s ease-in-out;
 }
 
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* max 4 per rij */
+  gap: 40px;
+  max-width: 1200px;
+  width: 90%;
+  justify-items: center;
+  align-items: start;
+}
+
 .result-box {
+  width: 100%;
+  max-width: 250px;     /* vaste breedte per element */
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation: scaleIn 0.8s ease-in-out;
 }
 
 .result-image {
-  width: 150px;
-  margin-bottom: 20px;
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .result-title {
   font-family: "Cinzel", serif; /* historische look */
   font-size: 40px;
   letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
 .result-quote {
   font-family: "Times New Roman", serif;
-  font-size: 18px;
-  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
   opacity: 0.85;
+  /* Dit voorkomt layout breken */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @keyframes fadeIn {
