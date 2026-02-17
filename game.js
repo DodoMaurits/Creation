@@ -354,10 +354,8 @@ function layoutGroups(side, instant = false) {
         groupDiv.classList.remove("open");
       }
     });
-  } else {
+   } else {
     // ---------------- GEEN GROEP OPEN ----------------
-    const game = document.getElementById("game");  // gebruik volledige schermbreedte
-
     const totalCols = Math.min(4, groups.length);
     const totalRows = Math.ceil(groups.length / 4);
     const mapSize = 100;
@@ -366,9 +364,6 @@ function layoutGroups(side, instant = false) {
     const gridWidth = totalCols * mapSize + (totalCols - 1) * gap;
     const gridHeight = totalRows * mapSize + (totalRows - 1) * gap;
 
-    const startX = (game.clientWidth - gridWidth) / 2;
-    const startY = (game.clientHeight - gridHeight) / 2;
-
     groups.forEach((groupDiv, idx) => {
       groupDiv.style.display = "flex";
       groupDiv.classList.remove("open");
@@ -376,8 +371,9 @@ function layoutGroups(side, instant = false) {
       const col = idx % 4;
       const row = Math.floor(idx / 4);
 
-      const x = startX + col * (mapSize + gap);
-      const y = startY + row * (mapSize + gap);
+      // centreren **in het paneel zelf**, niet in #game
+      const x = col * (mapSize + gap) + (container.clientWidth - gridWidth) / 2;
+      const y = row * (mapSize + gap) + (container.clientHeight - gridHeight) / 2;
 
       if (instant) groupDiv.style.transition = "none";
       groupDiv.style.transform = `translate(${x}px, ${y}px)`;
