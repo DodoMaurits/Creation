@@ -466,14 +466,19 @@ function updateClosedContainer() {
 
 // ----- SELECT ELEMENT -----
 function toggleSelect(el, img) {
-  const index = selected.findIndex(e => e.naam === el.naam);
+  const index = selected.findIndex(e => e.naam === el.naam && e.dom === img);
 
   if (index > -1) {
     selected.splice(index, 1);
     img.classList.remove("selected");
   } else {
     if (selected.length === 2) return;
-    selected.push(el);
+
+    selected.push({
+      ...el,
+      dom: img   // 👈 BELANGRIJK
+    });
+
     img.classList.add("selected");
   }
 
@@ -491,18 +496,13 @@ function checkCombination() {
   );
 
   if (!match) {
-    // Eerst de geselecteerde img-elementen ophalen
-    const selectedImgs = selected.map(e => document.querySelector(`.icon[src="${e.icoon}"]`));
-    // Schud animatie uitvoeren
-    shakeErrorElements(selectedImgs);
+    shakeErrorElements(selected.map(e => e.dom));
 
-    // Daarna deselecteren
-    document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
+    selected.forEach(e => e.dom.classList.remove("selected"));
     selected = [];
     return;
   }
 
-  // Voeg nieuwe elementen toe aan hun map
   match.output.forEach(newEl => {
     let map = mappen.find(m => m.naam === newEl.map);
     if (!map) {
@@ -519,11 +519,9 @@ function checkCombination() {
     }
   });
 
-  // Render visueel scherm met nieuwe elementen
   renderNewElements(match.output);
 
-  // Deselecteer altijd na succesvolle combinatie
-  document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
+  selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
 
@@ -536,7 +534,6 @@ function shakeErrorElements(elements) {
     }
   });
 }
-
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements) {
