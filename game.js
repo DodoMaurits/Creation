@@ -345,21 +345,17 @@ function updateMapPositions() {
     let top, left;
 
     if (openLeftMaps.includes(i)) {
-      // ----- LINKERHELFT: alle aangeklikte maps -----
       const idxInLeft = openLeftMaps.indexOf(i);
       const row = Math.floor(idxInLeft / maxPerRow);
       const col = idxInLeft % maxPerRow;
       const itemsInRow = Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
-      const totalHeightLeft = Math.ceil(openLeftMaps.length / maxPerRow) * size + (Math.ceil(openLeftMaps.length / maxPerRow) - 1) * gap;
-      const startTopLeft = 20; // of center over de linkerhelft als je wilt
-
+      const startTopLeft = 20;
       top = startTopLeft + row * (size + gap);
       left = screenW / 4 - rowWidth / 2 + col * (size + gap);
     }
     else if (openRightMaps.includes(i)) {
-      // ----- RECHTERHELFT -----
       const idxInRight = openRightMaps.indexOf(i);
       const row = Math.floor(idxInRight / maxPerRow);
       const col = idxInRight % maxPerRow;
@@ -373,7 +369,6 @@ function updateMapPositions() {
       left = screenW / 2 + (screenW / 2 - rowWidth) / 2 + col * (size + gap);
     }
     else {
-      // ----- GESLOTEN MAPS -----
       top = screenH / 2 - size / 2;
       left = screenW / 2 - size / 2;
     }
@@ -389,59 +384,48 @@ function renderElements() {
   const rightContainer = document.getElementById("right-elements");
 
   leftContainer.innerHTML = "";
-  rightContainer.innerHTML = ""; // optioneel, want we tonen daar geen elementen
+  rightContainer.innerHTML = "";
 
-  // LINKER MAP: alleen de aangeklikte map
-if (openLeftMaps.length > 0) {
-  openLeftMaps.forEach(idx => {
-    const elements = mappen[idx].elementen;
+  if (openLeftMaps.length > 0) {
+    openLeftMaps.forEach(idx => {
+      const elements = mappen[idx].elementen;
+      elements.forEach(el => {
+        const div = document.createElement("div");
+        div.className = "element";
+        div.dataset.name = el.naam;
+        div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
-    elements.forEach(el => {
-      const div = document.createElement("div");
-      div.className = "element";
-      div.dataset.name = el.naam;
-      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+        leftContainer.appendChild(div);
 
-      leftContainer.appendChild(div);
+        setTimeout(() => div.classList.add("show"), 10);
 
-      // behoud fade-in transitie
-      setTimeout(() => div.classList.add("show"), 10);
-
-      div.addEventListener("click", () => handleElementClick(el.naam, div));
+        div.addEventListener("click", () => handleElementClick(el.naam, div));
+      });
     });
-  });
+  }
 }
 
+// ---------------- HANDLE CLICKS ----------------
 function handleMapClick(index) {
   if (openLeftMaps.includes(index)) {
-    // verwijder uit linkerhelft
     openLeftMaps = openLeftMaps.filter(i => i !== index);
   } else {
-    // voeg toe
     openLeftMaps.push(index);
   }
-  
-  // rechterhelft = alles behalve linker maps
   openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
 
   selectedElement = null;
   updateMapPositions();
   renderElements();
 }
-    
-function handleElementClick(name, div) {
 
+function handleElementClick(name, div) {
   if (!selectedElement) {
     selectedElement = name;
     div.classList.add("selected");
   } else {
-
     combineElements(selectedElement, name);
-
-    document.querySelectorAll(".element").forEach(el => {
-      el.classList.remove("selected");
-    });
-
+    document.querySelectorAll(".element").forEach(el => el.classList.remove("selected"));
     selectedElement = null;
   }
 }
