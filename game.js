@@ -331,22 +331,6 @@ function init() {
   renderElements();
 }
 
-// ---------------- HANDLE MAP CLICK ----------------
-function handleMapClick(index) {
-  if (openLeftMaps.includes(index)) {
-    openLeftMaps = [];
-    openRightMaps = openRightMaps.filter(i => i !== index);
-  } else {
-    openLeftMaps = [index];
-    openRightMaps = mappen.map((_, i) => i).filter(i => i !== index);
-    openRightMaps.push(index);
-  }
-
-  selectedElement = null;
-  updateMapPositions();
-  renderElements();
-}
-
 // ---------------- UPDATE MAP POSITIES ----------------
 function updateMapPositions() {
   const maps = document.querySelectorAll(".map");
@@ -357,51 +341,44 @@ function updateMapPositions() {
   const gap = 20;
   const maxPerRow = 4;
 
-  // Gesloten mappen verzamelen
-  const closed = [];
-  maps.forEach((_, i) => {
-    if (!openLeftMaps.includes(i) && !openRightMaps.includes(i)) closed.push(i);
-  });
-
   maps.forEach((div, i) => {
     let top, left;
 
-    // ----- LINKER OPEN MAPS -----
+    // ----- LINKERHELFT: alleen aangeklikte map -----
     if (openLeftMaps.includes(i)) {
-      top = 20;
-      left = screenW / 4 - size / 2; // midden linkerhelft
+      top = 20; // klein beetje afstand vanaf top
+      left = screenW / 4 - size / 2; // horizontaal midden linkerhelft
     }
-    // ----- RECHTER OPEN MAPS -----
-    else if (openLeftMaps.length === 1) {
-      const leftIdx = openLeftMaps[0];
-
-      // rechterhelft = alle mappen behalve linker + kopie van linker
-      let rightMaps = mappen.map((_, idx) => idx).filter(idx => idx !== leftIdx);
-      rightMaps.push(leftIdx); // kopie van linker map
-
-      const idxInRight = rightMaps.indexOf(i);
-      const row = Math.floor(idxInRight / maxPerRow);
-      const col = idxInRight % maxPerRow;
-      const itemsInRow = Math.min(maxPerRow, rightMaps.length - row * maxPerRow);
+    // ----- RECHTERHELFT: alle mappen -----
+    else if (openRightMaps.includes(i)) {
+      const idx = openRightMaps.indexOf(i);
+      const row = Math.floor(idx / maxPerRow);
+      const col = idx % maxPerRow;
+      const itemsInRow = Math.min(maxPerRow, openRightMaps.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
-      const rowsRight = Math.ceil(rightMaps.length / maxPerRow);
+      const rowsRight = Math.ceil(openRightMaps.length / maxPerRow);
       const totalHeightRight = rowsRight * size + (rowsRight - 1) * gap;
       const startTopRight = (screenH - totalHeightRight) / 2;
 
       top = startTopRight + row * (size + gap);
       left = screenW / 2 + (screenW / 2 - rowWidth) / 2 + col * (size + gap);
     }
-    // ----- GESLOTEN MAPS -----
+    // ----- ANDERE/gesloten mappen -----
     else {
+      // alles gecentreerd over scherm
+      const closed = [];
+      maps.forEach((_, j) => {
+        if (!openLeftMaps.includes(j) && !openRightMaps.includes(j)) closed.push(j);
+      });
+
       const idx = closed.indexOf(i);
       const row = Math.floor(idx / maxPerRow);
       const col = idx % maxPerRow;
       const itemsInRow = Math.min(maxPerRow, closed.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
-      const totalHeightClosed = Math.ceil(closed.length / maxPerRow) * size +
-                                (Math.ceil(closed.length / maxPerRow) - 1) * gap;
+      const totalHeightClosed = Math.ceil(closed.length / maxPerRow) * size + (Math.ceil(closed.length / maxPerRow) - 1) * gap;
       const startTopClosed = (screenH - totalHeightClosed) / 2;
 
       top = startTopClosed + row * (size + gap);
@@ -443,12 +420,15 @@ function renderElements() {
 
 function handleMapClick(index) {
   if (openLeftMaps.includes(index)) {
+    // Sluit alles
     openLeftMaps = [];
-    openRightMaps = openRightMaps.filter(i => i !== index);
+    openRightMaps = [];
   } else {
+    // Linkerhelft = aangeklikte map
     openLeftMaps = [index];
-    openRightMaps = mappen.map((_, i) => i).filter(i => i !== index);
-    openRightMaps.push(index);
+
+    // Rechterhelft = alle mappen inclusief aangeklikte map
+    openRightMaps = mappen.map((_, i) => i);
   }
 
   selectedElement = null;
