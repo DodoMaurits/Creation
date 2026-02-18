@@ -461,25 +461,6 @@ function renderElements() {
       });
     }
 
-  // ---------------- RECHTER MAPS ----------------
-  openRightMaps.forEach(idx => {
-    const elements = mappen[idx].elementen;
-
-    elements.forEach(el => {
-      const div = document.createElement("div");
-      div.className = "element";
-      div.dataset.name = el.naam;
-      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-
-      rightContainer.appendChild(div);
-
-      setTimeout(() => div.classList.add("show"), 10);
-
-      div.addEventListener("click", () => handleElementClick(el.naam, div));
-    });
-  });
-}
-
 function handleElementClick(name, div) {
 
   if (!selectedElement) {
