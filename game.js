@@ -315,9 +315,9 @@ function init() {
   console.log("left-elements:", document.getElementById("left-elements"));
   console.log("right-elements:", document.getElementById("right-elements"));
 
-  openLeftMaps = [];
-  openRightMaps = [];
-  
+  openLeftMaps = [0]; // <-- eerste map standaard open
+  mapsMovedRight = false; // startpositie is nog midden
+
   renderMaps();
   updateMapPositions();
   renderElements();
