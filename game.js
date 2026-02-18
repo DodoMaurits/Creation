@@ -308,10 +308,6 @@ let selectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
-  // Start met 2 maps zichtbaar
-  if (mappen.length > 0) openLeftMaps.push(0);
-  if (mappen.length > 1) openRightMaps.push(1);
-
   renderMaps();
   updateMapPositions();
   renderElements();
