@@ -325,11 +325,22 @@ function renderClosed() {
   grid.className = "grid-closed";
 
   mappen.forEach(map => {
+    // wrapper container voor tooltip
+    const container = document.createElement("div");
+    container.className = "icon-container";
+  
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
-    grid.appendChild(img);
+  
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.textContent = map.naam;
+  
+    container.appendChild(img);
+    container.appendChild(tooltip);
+    grid.appendChild(container);
   });
 
   closedContainer.appendChild(grid);
@@ -377,11 +388,21 @@ function renderSide(container, map, side) {
   grid.className = "grid-elements";
 
   map.elementen.forEach(el => {
+    const container = document.createElement("div");
+    container.className = "icon-container";
+  
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "icon element";
     img.onclick = () => toggleSelect(el, img, side, map.naam);
-    grid.appendChild(img);
+  
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.textContent = el.naam;
+  
+    container.appendChild(img);
+    container.appendChild(tooltip);
+    grid.appendChild(container);
   });
 
   container.appendChild(grid);
