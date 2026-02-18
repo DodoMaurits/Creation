@@ -8,7 +8,7 @@ body {
 
 /* ---------------- HOMEPAGE ---------------- */
 .homepage {
-  height: 100vh;
+  height: 100vh;f
   width: 100vw;
   background-image: url("afb/beginscherm.png");
   background-position: center;
@@ -146,7 +146,7 @@ body {
 }
 
 .close-map {
-  position: absolute;
+  position: fixed;      /* FIXED, zodat het altijd tov viewport staat */
   top: 20px;            /* beetje afstand vanaf bovenkant */
   width: 100px;
   height: 100px;
