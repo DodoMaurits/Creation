@@ -154,12 +154,20 @@ body {
 #left-elements,
 #right-elements {
   position: absolute;
-  top: 150px;                 /* iets lager zodat het niet overlapt */
+  top: 150px;                  
   width: 50%;
   display: grid;
+
+  /* Max 4 elementen van 100px */
   grid-template-columns: repeat(4, 100px);
+
   gap: 25px;
-  justify-content: center;    /* rij van max 4 centreren */
+
+  /* Dit centreert de RIJ zelf */
+  justify-content: center;
+
+  /* Dit centreert meerdere rijen */
+  justify-items: center;
 }
 
 /* Linkerhelft */
