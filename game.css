@@ -90,6 +90,16 @@ body {
   opacity: 0;
 }
 
+#closed-container.right {
+  transform: translateX(50vw); /* halve schermbreedte naar rechts */
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+#closed-container.left {
+  transform: translateX(-50vw); /* halve schermbreedte naar links */
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
 @keyframes shake {
   0%, 100% { transform: translate(0, 0); }
   10%, 30%, 50%, 70%, 90% { transform: translate(-1px, 0); }
