@@ -404,6 +404,7 @@ if (openLeftMaps.length > 0) {
 
       leftContainer.appendChild(div);
 
+      // behoud fade-in transitie
       setTimeout(() => div.classList.add("show"), 10);
 
       div.addEventListener("click", () => handleElementClick(el.naam, div));
