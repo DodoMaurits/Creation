@@ -316,7 +316,7 @@ renderClosed();
 // ----- RENDER CLOSED MAPS -----
 function renderClosed() {
   closedContainer.innerHTML = "";
-  closedContainer.className = "";
+  closedContainer.classList.remove("hidden");
 
   const grid = document.createElement("div");
   grid.className = "grid-closed";
@@ -330,6 +330,11 @@ function renderClosed() {
   });
 
   closedContainer.appendChild(grid);
+
+  // Fade-in
+  setTimeout(() => {
+    closedContainer.style.opacity = 1;
+  }, 20);
 }
 
 // ----- OPEN MAP -----
@@ -382,27 +387,15 @@ function closeMap(side) {
   container.classList.remove("visible");
 
   setTimeout(() => {
-    // Sluit de open map
     if (side === "left") openLeft = null;
     else openRight = null;
 
     container.classList.add("hidden");
 
-    // Closed maps terugzetten
-    if (!openLeft && !openRight) {
-      closedContainer.style.display = "block";
-      closedContainer.className = ""; // midden
-    } else if (openLeft && !openRight) {
-      closedContainer.style.display = "block";
-      closedContainer.className = "right"; // alleen rechts
-    } else if (!openLeft && openRight) {
-      closedContainer.style.display = "block";
-      closedContainer.className = "left"; // alleen links
-    } else {
-      // beide open → closed maps verdwijnen
-      closedContainer.style.display = "none";
-    }
-  }, 300); // iets korter dan CSS transition
+    // Closed maps zichtbaar maken
+    closedContainer.classList.remove("hidden");
+    closedContainer.style.opacity = 1;
+  }, 300);
 }
 
 // ----- SELECT ELEMENT -----
