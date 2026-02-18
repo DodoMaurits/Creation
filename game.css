@@ -128,6 +128,31 @@ body {
   opacity: 1;
 }
 
+.icon-container {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none; /* zodat hover blijft werken op icon */
+}
+
+.icon-container:hover .tooltip {
+  opacity: 1;
+}
+
 /* ---------------- GRID LAYOUTS ---------------- */
 .grid-elements {
   display: grid;
