@@ -597,9 +597,10 @@ function renderNewElements(elements) {
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
-
-    // Closed maps in midden
+  
+    // Closed maps opnieuw renderen en positioneren
     renderClosed();
+    updateClosedContainer(); // ← dit zorgt dat ze weer gecentreerd staan
   };
 }
 
