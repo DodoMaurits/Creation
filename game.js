@@ -555,8 +555,6 @@ function renderNewElements(elements) {
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
-  overlay.style.opacity = 0; // start transparant
-  overlay.style.transition = "opacity 0.3s ease"; // fade-in
 
   const grid = document.createElement("div");
   grid.className = "result-grid";
@@ -589,7 +587,6 @@ function renderNewElements(elements) {
 
   // Forceer browser repaint
   overlay.offsetHeight;
-  overlay.style.opacity = 1; // fade-in overlay
 
   // ----- Klik anywhere → reset alles naar startpositie -----
   overlay.onclick = () => {
