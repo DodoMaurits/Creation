@@ -81,22 +81,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
   opacity: 1;
 }
 
-#closed-container.hidden {
-  opacity: 0;
-}
-
 #closed-container.right {
-  transform: translateX(50vw); /* halve schermbreedte naar rechts */
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  transform: translate(25%, -50%); /* midden van de rechterhelft */
 }
 
 #closed-container.left {
-  transform: translateX(-50vw); /* halve schermbreedte naar links */
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  transform: translate(-75%, -50%); /* midden van de linkerhelft */
 }
 
 @keyframes shake {
