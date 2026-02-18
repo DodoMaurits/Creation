@@ -184,6 +184,21 @@ body {
   transform: translate(-50%, -50%);
   transition: transform 0.6s ease, opacity 0.6s ease;
   opacity: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* standaard breedte: midden van scherm */
+#closed-container.center {
+  width: 680px; /* 4 icons + gaps */
+}
+
+/* linker- of rechterhelft */
+#closed-container.side {
+  width: 500px; /* of een breedte die 4 icons + gaps past */
 }
 
 /* Links/ midden van linkerhelft */
