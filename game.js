@@ -373,8 +373,6 @@ function updateMapPositions() {
 }
 
 // ---------------- SLUITMAP ----------------
-let closeMapDiv = null;
-
 function createCloseMap(mapObj) {
   const container = document.getElementById("maps-container");
 
@@ -534,9 +532,9 @@ window.addEventListener("resize", () => {
   // Update sluitmap positie bij resize
   if (closeMapDiv) {
     const leftHalfCenter = window.innerWidth * 0.25;
-    closeMapDiv.style.left = `${leftHalfCenter - 50}px`;
+    closeMapDiv.style.left = `${window.innerWidth * 0.25 - 50}px`;
   }
 });
 
 // ---------------- START ----------------
-init();
+document.addEventListener("DOMContentLoaded", init);
