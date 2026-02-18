@@ -442,7 +442,7 @@ function toggleSelect(el, img) {
   }
 }
 
-// ----- CHECK COMBINATIONS ----- 
+// ----- CHECK COMBINATIONS -----
 function checkCombination() {
   const names = selected.map(e => e.naam);
 
@@ -450,14 +450,15 @@ function checkCombination() {
     c.input.every(i => names.includes(i))
   );
 
-  // Deselecteer altijd
-  selected.forEach(e => {
-    document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
-  });
-  selected = [];
-
   if (!match) {
-    // Geen geldige combinatie → niets extra tonen
+    // Eerst de geselecteerde img-elementen ophalen
+    const selectedImgs = selected.map(e => document.querySelector(`.icon[src="${e.icoon}"]`));
+    // Schud animatie uitvoeren
+    shakeErrorElements(selectedImgs);
+
+    // Daarna deselecteren
+    document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
+    selected = [];
     return;
   }
 
@@ -480,7 +481,22 @@ function checkCombination() {
 
   // Render visueel scherm met nieuwe elementen
   renderNewElements(match.output);
+
+  // Deselecteer altijd na succesvolle combinatie
+  document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
+  selected = [];
 }
+
+// ----- ERROR SHAKE FUNCTION -----
+function shakeErrorElements(elements) {
+  elements.forEach(el => {
+    if(el) {
+      el.classList.add("error");
+      setTimeout(() => el.classList.remove("error"), 600); // na animatie verwijderen
+    }
+  });
+}
+
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements) {
