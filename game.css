@@ -97,7 +97,6 @@ body {
 
 .icon.error {
   animation: errorShake 0.6s ease;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
 }
 
 #closed-container {
