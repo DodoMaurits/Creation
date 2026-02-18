@@ -68,4 +68,16 @@ html, body {
 .result-quote {
   font-size: 24px;
   line-height: 1.4;
+  display: inline-block; /* nodig voor translateX */
+  animation-name: floatQuote;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  --translateX: 5px; /* fallback */
+}
+
+@keyframes floatQuote {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(var(--translateX)); }
+  100% { transform: translateX(0); }
 }
