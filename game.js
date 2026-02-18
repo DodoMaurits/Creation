@@ -325,7 +325,6 @@ function renderClosed() {
   grid.className = "grid-closed";
 
   mappen.forEach(map => {
-    // wrapper container voor tooltip
     const container = document.createElement("div");
     container.className = "icon-container";
   
@@ -378,12 +377,26 @@ function renderSide(container, map, side) {
   container.innerHTML = "";
   container.classList.remove("hidden", "visible");
 
+  const container = document.createElement("div");
+  container.className = "icon-container";
+  
   const title = document.createElement("img");
   title.src = map.icoon;
   title.className = "icon map-title";
   title.onclick = () => closeMap(side);
+  
+  const tooltip = document.createElement("div");
+  tooltip.className = "tooltip";
+  tooltip.textContent = map.naam;
+  
   container.appendChild(title);
-
+  container.appendChild(tooltip);
+  container.style.marginBottom = "20px"; // optioneel, ruimte tussen titel en grid
+  container.style.display = "inline-block";
+  
+  container.appendChild(title);
+  container.appendChild(tooltip);
+  
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
