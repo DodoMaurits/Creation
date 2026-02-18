@@ -324,8 +324,14 @@ function renderMaps() {
   container.innerHTML = "";
 
   mappen.forEach((map, idx) => {
-    let currentIdx = idx; // belangrijk bij dynamische listeners
-    div.addEventListener("click", () => handleMapClick(currentIdx));
+    const div = document.createElement("div");
+    div.className = "map";
+    div.dataset.index = idx;
+    div.dataset.name = map.naam;
+    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
+    div.style.position = "absolute"; // kan ook via CSS
+    div.addEventListener("click", () => handleMapClick(idx));
+    container.appendChild(div);
   });
 }
 
