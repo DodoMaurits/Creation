@@ -129,16 +129,23 @@ body {
 }
 
 .icon-container {
-  display: inline-block;
-  position: relative;
-  text-align: center;
+  display: inline-block;   /* blok op maat van icoon */
+  position: relative;      /* nodig voor tooltip positioning */
+  width: 80px;             /* of pas aan naar jouw icoon-grootte */
+  text-align: center;      /* centreer tooltip en tekst */
+  margin: 10px;            /* ruimte tussen iconen */
+}
+
+.icon-container img {
+  display: block;          /* voorkomt inline spacing issues */
+  margin: 0 auto;          /* centreer het icoon binnen container */
 }
 
 .tooltip {
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 100%;               /* direct onder het icoon */
+  left: 50%;               /* horizontale center */
+  transform: translateX(-50%); /* center exact */
   margin-top: 6px;
   background: rgba(0,0,0,0.85);
   color: white;
