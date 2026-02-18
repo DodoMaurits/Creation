@@ -412,23 +412,23 @@ function closeMap(side) {
     if (side === "left") openLeft = null;
     else openRight = null;
 
-    container.classList.add("hidden");
+    container.classList.add("hidden"); // open-map verdwijnt
 
     if (openLeft && !openRight) {
-      // Alleen rechter helft vrij → closed-maps gecentreerd in rechter helft
-      closedContainer.classList.remove("hidden");
       closedContainer.classList.remove("left", "right");
       closedContainer.classList.add("right");
+      closedContainer.style.opacity = 1;
     } else if (openRight && !openLeft) {
-      // Alleen linker helft vrij → closed-maps gecentreerd in linker helft
-      closedContainer.classList.remove("hidden");
       closedContainer.classList.remove("left", "right");
       closedContainer.classList.add("left");
+      closedContainer.style.opacity = 1;
     } else if (!openLeft && !openRight) {
-      // Geen open-maps → closed-maps volledig in midden
-      closedContainer.classList.remove("hidden", "left", "right");
+      closedContainer.classList.remove("left", "right");
+      closedContainer.style.opacity = 1;
+    } else {
+      // beide open → closed-maps blijven weg
+      closedContainer.style.opacity = 0;
     }
-    // Als beide open-maps open staan → closed-maps blijven verborgen
   }, 300);
 }
 
