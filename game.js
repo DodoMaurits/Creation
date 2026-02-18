@@ -327,7 +327,7 @@ function renderClosed() {
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
-    img.onclick = () => openMap(map, img);
+    img.onclick = () => openMap(map, img, side);
     grid.appendChild(img);
   });
 
@@ -379,7 +379,7 @@ function renderSide(container, map, side) {
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "icon element";
-    img.onclick = () => toggleSelect(el, img);
+    img.onclick = () => toggleSelect(el, img, side);
     grid.appendChild(img);
   });
 
@@ -398,9 +398,22 @@ function renderSide(container, map, side) {
 // ----- CLOSE MAP -----
 function closeMap(side) {
   const container = side === "left" ? leftSide : rightSide;
+  const closingMap = side === "left" ? openLeft : openRight; // welke map wordt gesloten
+
   container.classList.remove("visible");
 
   setTimeout(() => {
+    // deselecteer alle geselecteerde elementen die in deze map zitten
+    selected = selected.filter(e => {
+      // als dit element bij de map hoort die gesloten wordt **en aan dezelfde kant**
+      if (e.mapNaam === closingMap.naam && e.side === side) {
+        // stop met trillen
+        e.dom.classList.remove("selected");
+        return false; // verwijder uit selectie
+      }
+      return true; // houdt over
+    });
+
     if (side === "left") openLeft = null;
     else openRight = null;
 
@@ -427,7 +440,7 @@ function updateClosedContainer() {
 }
 
 // ----- SELECT ELEMENT -----
-function toggleSelect(el, img) {
+function toggleSelect(el, img, side) {
   const index = selected.findIndex(e => e.naam === el.naam && e.dom === img);
 
   if (index > -1) {
@@ -438,7 +451,9 @@ function toggleSelect(el, img) {
 
     selected.push({
       ...el,
-      dom: img   // 👈 BELANGRIJK
+      dom: img,
+      side: side,      // ← voeg kant toe
+      mapNaam: el.map  // ← of el.map als je die naam hebt
     });
 
     img.classList.add("selected");
