@@ -151,24 +151,25 @@ body {
 }
 
 /* ---------------- ELEMENTEN ---------------- */
-
 #left-elements,
 #right-elements {
   position: absolute;
-  top: 130px;               /* zelfde horizontale lijn */
+  top: 150px;                 /* iets lager zodat het niet overlapt */
   width: 50%;
   display: grid;
   grid-template-columns: repeat(4, 100px);
   gap: 25px;
-  justify-content: center;  /* rij van max 4 centreren */
+  justify-content: center;    /* rij van max 4 centreren */
 }
 
+/* Linkerhelft */
 #left-elements {
-  left: 0;                  /* linkerhelft */
+  left: 0;
 }
 
+/* Rechterhelft */
 #right-elements {
-  left: 50%;                /* rechterhelft */
+  left: 50%;
 }
 
 .element {
