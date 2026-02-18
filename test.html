@@ -2,60 +2,41 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<title>Demo Maps & Elements</title>
+<title>Maps Demo</title>
 <style>
-  body { margin:0; font-family:sans-serif; }
-  #game { position:relative; width:100vw; height:100vh; background:#eee; overflow:hidden; }
+  body{margin:0;font-family:sans-serif;}
+  #game{position:relative;width:100vw;height:100vh;background:#eee;overflow:hidden;}
 
-  /* MAPS */
-  .map {
+  .map{
     position:absolute;
-    width:100px; height:100px;
+    width:100px;height:100px;
     cursor:pointer;
-    transition: top 0.5s ease, left 0.5s ease;
+    transition: top 0.5s ease,left 0.5s ease;
   }
 
-  /* ELEMENTS */
-  #left-elements {
-    position:absolute;
-    top:150px;
-    left:25%;
-    transform:translateX(-50%);
-    display:flex;
-    flex-wrap:wrap;
-  }
-
-  .element {
-    width:100px; height:100px;
-    margin:10px;
-    opacity:0;
-    transform:translateY(20px);
-    transition: transform 0.4s ease, opacity 0.4s ease;
-  }
-
-  .element.show { opacity:1; transform:translateY(0); }
+  #left-elements{position:absolute;top:150px;left:25%;transform:translateX(-50%);display:flex;flex-wrap:wrap;}
+  .element{width:100px;height:100px;margin:10px;opacity:0;transform:translateY(20px);transition:opacity 0.4s ease, transform 0.4s ease;}
+  .element.show{opacity:1;transform:translateY(0);}
 </style>
 </head>
 <body>
-
 <div id="game">
   <div id="maps-container"></div>
   <div id="left-elements"></div>
 </div>
-
 <script>
 const mappen = [
-  { naam: "Heelal", icoon: "icons/Heelal.png", elementen:[{naam:"Oerknal", icoon:"icons/Oerknal.png"}] },
-  { naam: "Krachten", icoon: "icons/Krachten.png", elementen:[{naam:"Warmte", icoon:"icons/Warmte.png"}] }
+  {naam:"Heelal", icoon:"icons/Heelal.png", elementen:[{naam:"Oerknal", icoon:"https://via.placeholder.com/100?text=O"}]},
+  {naam:"Krachten", icoon:"icons/Krachten.png", elementen:[{naam:"Warmte", icoon:"https://via.placeholder.com/100?text=W"}]}
 ];
 
-let openLeftMaps = [];
+let openLeftMaps=[];
 
-function init() {
+function init(){
   const container = document.getElementById("maps-container");
   container.innerHTML="";
-  
-  mappen.forEach((map, idx)=>{
+
+  mappen.forEach((map,idx)=>{
     const div=document.createElement("div");
     div.className="map";
     div.dataset.index=idx;
@@ -68,7 +49,7 @@ function init() {
   renderElements();
 }
 
-function updateMapPositions() {
+function updateMapPositions(){
   const maps = document.querySelectorAll(".map");
   const screenW = window.innerWidth;
   const screenH = window.innerHeight;
@@ -77,7 +58,7 @@ function updateMapPositions() {
     if(openLeftMaps.includes(i)){
       const idxInLeft = openLeftMaps.indexOf(i);
       div.style.top = (20 + idxInLeft*120)+"px";
-      div.style.left = (screenW/4)+"px";
+      div.style.left = (screenW/4 - 50)+"px"; // center op linkerhelft
     } else {
       div.style.top = (screenH/2 - 50)+"px";
       div.style.left = (screenW/2 - 50)+"px";
@@ -85,13 +66,12 @@ function updateMapPositions() {
   });
 }
 
-function renderElements() {
+function renderElements(){
   const leftContainer = document.getElementById("left-elements");
   leftContainer.innerHTML="";
-
   openLeftMaps.forEach(idx=>{
     mappen[idx].elementen.forEach(el=>{
-      const div = document.createElement("div");
+      const div=document.createElement("div");
       div.className="element";
       div.innerHTML=`<img src="${el.icoon}">`;
       leftContainer.appendChild(div);
@@ -115,6 +95,5 @@ window.addEventListener("resize",()=>{ updateMapPositions(); renderElements(); }
 
 init();
 </script>
-
 </body>
 </html>
