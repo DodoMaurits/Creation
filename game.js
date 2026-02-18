@@ -442,7 +442,7 @@ function toggleSelect(el, img) {
   }
 }
 
-// ----- CHECK COMBINATIONS -----
+// ----- CHECK COMBINATIONS ----- 
 function checkCombination() {
   const names = selected.map(e => e.naam);
 
@@ -450,18 +450,20 @@ function checkCombination() {
     c.input.every(i => names.includes(i))
   );
 
+  // Deselecteer altijd
+  selected.forEach(e => {
+    document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
+  });
+  selected = [];
+
   if (!match) {
-    alert("Geen geldige combinatie");
-    selected = [];
-    document.querySelectorAll(".selected").forEach(el =>
-      el.classList.remove("selected")
-    );
+    // Geen geldige combinatie → niets extra tonen
     return;
   }
 
+  // Voeg nieuwe elementen toe aan hun map
   match.output.forEach(newEl => {
     let map = mappen.find(m => m.naam === newEl.map);
-
     if (!map) {
       map = {
         naam: newEl.map,
@@ -476,9 +478,51 @@ function checkCombination() {
     }
   });
 
-  alert("Nieuwe elementen ontdekt!");
-  selected = [];
-  document.querySelectorAll(".selected").forEach(el =>
-    el.classList.remove("selected")
-  );
+  // Render visueel scherm met nieuwe elementen
+  renderNewElements(match.output);
+}
+
+// ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
+function renderNewElements(elements) {
+  // Check of er al een container is
+  let popup = document.getElementById("new-elements-popup");
+  if (!popup) {
+    popup = document.createElement("div");
+    popup.id = "new-elements-popup";
+    document.body.appendChild(popup);
+  }
+
+  // Maak leeg
+  popup.innerHTML = "";
+
+  // Voeg titel toe
+  const title = document.createElement("h2");
+  title.innerText = "Nieuwe elementen ontdekt!";
+  popup.appendChild(title);
+
+  // Voeg elementen toe
+  const grid = document.createElement("div");
+  grid.className = "grid-elements";
+  elements.forEach(el => {
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "icon";
+    grid.appendChild(img);
+
+    // Optioneel: klik op nieuwe element → opent map automatisch
+    img.onclick = () => {
+      const map = mappen.find(m => m.naam === el.map);
+      if (map) openMap(map);
+      popup.style.opacity = 0; // verdwijnt
+      setTimeout(() => popup.remove(), 300);
+    };
+  });
+
+  popup.appendChild(grid);
+
+  // Fade-in
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.style.opacity = 1;
+  }, 20);
 }
