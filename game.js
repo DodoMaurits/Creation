@@ -547,10 +547,10 @@ function renderNewElements(elements) {
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
-  elements.forEach(el => {
+  elements.forEach((el, index) => {
     const box = document.createElement("div");
     box.className = "result-box";
-    box.style.animationDelay = `${index * 0.2}s`;
+    box.style.animationDelay = `${index * 0.2}s`; // stagger effect
 
     const img = document.createElement("img");
     img.src = el.icoon;
@@ -574,8 +574,11 @@ function renderNewElements(elements) {
   overlay.appendChild(grid);
   document.body.appendChild(overlay);
 
-  // Sluit overlay bij klik
+  // ---------------- Sluit overlay bij klik ----------------
   overlay.onclick = () => {
-    overlay.remove();
+    overlay.remove();      // overlay weg
+    openLeft = null;       // reset open maps
+    openRight = null;
+    renderClosed();        // toont weer alle closed maps
   };
 }
