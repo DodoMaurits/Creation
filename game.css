@@ -73,6 +73,16 @@ body {
   transform: scale(1.1);
 }
 
+.icon.element {
+  width: 100px;
+  height: 100px;
+}
+
+.icon.map {
+  width: 120px;
+  height: 120px;
+}
+
 .selected {
   animation: shake 0.6s infinite;
 }
