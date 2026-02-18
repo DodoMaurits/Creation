@@ -302,7 +302,8 @@ const groepsIconen = {
 
 
 // ---------------- STATUS ----------------
-let openGroups = []; // array van indices van geopende mappen
+let openLeft = null;
+let openRight = null;
 let selectedElement = null;
 
 // ---------------- INIT ----------------
@@ -322,14 +323,26 @@ function init() {
     div.style.transition = "all 0.4s ease";
 
     div.addEventListener("click", () => {
-      const index = openGroups.indexOf(idx);
-
-      if (index === -1) {
-        openGroups.push(idx);
-      } else {
-        openGroups.splice(index, 1);
+    
+      const index = idx;
+    
+      // Als hij al links open is → sluiten
+      if (openLeft === index) {
+        openLeft = null;
       }
-
+      // Als hij al rechts open is → sluiten
+      else if (openRight === index) {
+        openRight = null;
+      }
+      // Anders openen
+      else {
+        if (openLeft === null) {
+          openLeft = index;
+        } else if (openRight === null) {
+          openRight = index;
+        }
+      }
+    
       selectedElement = null;
       updateMapPositions();
       renderElements();
@@ -354,9 +367,12 @@ function updateMapPositions() {
   const gap = 20;
   const maxPerRow = 4;
 
+  // Alle gesloten mappen verzamelen
   const closed = [];
   maps.forEach((_, i) => {
-    if (!openGroups.includes(i)) closed.push(i);
+    if (i !== openLeft && i !== openRight) {
+      closed.push(i);
+    }
   });
 
   const rowsClosed = Math.ceil(closed.length / maxPerRow);
@@ -367,39 +383,28 @@ function updateMapPositions() {
 
     let top, left;
 
-    if (openGroups.includes(i)) {
+    // =========================
+    // LINKER OPEN MAP
+    // =========================
+    if (i === openLeft) {
 
-      const openIndex = openGroups.indexOf(i);
+      top = 20;
+      left = screenW * 0.25 - size / 2;
+    }
 
-      if (openIndex === 0) {
-        // Eerste open map → linksboven in linkerhelft
-        top = 20;
-        left = screenW * 0.25 - size / 2;
-      } else {
-        // Andere open maps → rechterhelft
-        const idx = openIndex - 1;
-        const row = Math.floor(idx / maxPerRow);
-        const col = idx % maxPerRow;
+    // =========================
+    // RECHTER OPEN MAP
+    // =========================
+    else if (i === openRight) {
 
-        // hoeveel open mappen staan rechts?
-        const rightOpenCount = openGroups.length - 1;
-        
-        // hoeveel in deze rij?
-        const itemsInRow = Math.min(maxPerRow, rightOpenCount - row * maxPerRow);
-        
-        // echte breedte van deze rij
-        const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
-        
-        // midden van rechterhelft
-        const rightCenter = screenW * 0.75;
-        
-        const startLeft = rightCenter - rowWidth / 2;
+      top = 20;
+      left = screenW * 0.75 - size / 2;
+    }
 
-        top = 20 + row * (size + gap);
-        left = startLeft + col * (size + gap);
-      }
-
-    } else {
+    // =========================
+    // GESLOTEN MAPPEN
+    // =========================
+    else {
 
       const idx = closed.indexOf(i);
       const row = Math.floor(idx / maxPerRow);
@@ -409,13 +414,16 @@ function updateMapPositions() {
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
       top = startTopClosed + row * (size + gap);
-      if (openGroups.length > 0) {
-        // centreer in rechterhelft
-        const halfW = screenW / 2;
-        left = halfW + (halfW / 2 - rowWidth / 2) + col * (size + gap);
+
+      if (openLeft !== null || openRight !== null) {
+        // Als er een map open is → gesloten mappen naar rechterhelft
+        const rightHalfStart = screenW / 2;
+        const halfWidth = screenW / 2;
+
+        left = rightHalfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
       } else {
-        // centreer over hele scherm (beginstand)
-        left = screenW / 2 - rowWidth / 2 + col * (size + gap);
+        // Beginstand → gecentreerd over hele scherm
+        left = (screenW - rowWidth) / 2 + col * (size + gap);
       }
     }
 
@@ -433,41 +441,58 @@ function renderElements() {
   leftContainer.innerHTML = "";
   rightContainer.innerHTML = "";
 
-  if (openGroups.length === 0) return;
-
-  openGroups.forEach((groupIndex, position) => {
-
-    const elements = mappen[groupIndex].elementen;
-    const container = position === 0 ? leftContainer : rightContainer;
+  // LINKER MAP
+  if (openLeft !== null) {
+    const elements = mappen[openLeft].elementen;
 
     elements.forEach(el => {
-
       const div = document.createElement("div");
       div.className = "element";
       div.dataset.name = el.naam;
       div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
-      container.appendChild(div);
+      leftContainer.appendChild(div);
 
       setTimeout(() => div.classList.add("show"), 10);
 
-      div.addEventListener("click", () => {
+      div.addEventListener("click", () => handleElementClick(el.naam, div));
+    });
+  }
 
-        if (!selectedElement) {
-          selectedElement = el.naam;
-          div.classList.add("selected");
-        } else {
-          combineElements(selectedElement, el.naam);
-          selectedElement = null;
-          renderElements();
-        }
+  // RECHTER MAP
+  if (openRight !== null) {
+    const elements = mappen[openRight].elementen;
 
-      });
+    elements.forEach(el => {
+      const div = document.createElement("div");
+      div.className = "element";
+      div.dataset.name = el.naam;
+      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
 
+      rightContainer.appendChild(div);
+
+      setTimeout(() => div.classList.add("show"), 10);
+
+      div.addEventListener("click", () => handleElementClick(el.naam, div));
+    });
+  }
+}
+
+function handleElementClick(name, div) {
+
+  if (!selectedElement) {
+    selectedElement = name;
+    div.classList.add("selected");
+  } else {
+
+    combineElements(selectedElement, name);
+
+    document.querySelectorAll(".element").forEach(el => {
+      el.classList.remove("selected");
     });
 
-  });
-
+    selectedElement = null;
+  }
 }
 
 // ---------------- COMBINATIE LOGICA ----------------
