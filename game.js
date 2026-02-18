@@ -545,10 +545,12 @@ function renderNewElements(elements) {
   });
 
   overlay.appendChild(grid);
+
+  // ✅ Hier voeg je de overlay toe aan de DOM
   document.body.appendChild(overlay);
 
-  // Forceer browser repaint
-  overlay.offsetHeight;
+  // ✅ Trigger fade-in door de CSS class 'visible' toe te voegen
+  setTimeout(() => overlay.classList.add("visible"), 20);
 
   // ----- Klik anywhere → reset alles naar startpositie -----
   overlay.onclick = () => {
@@ -557,8 +559,9 @@ function renderNewElements(elements) {
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
-  
+
     // Closed maps in midden
     renderClosed();
   };
 }
+
