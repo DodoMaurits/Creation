@@ -302,8 +302,8 @@ const groepsIconen = {
 
 
 // ---------------- STATUS ----------------
-let openLeft = null;
-let openRight = null;
+let openLeftMaps = [];   // maps links
+let openRightMaps = [];  // maps rechts
 let selectedElement = null;
 
 // ---------------- INIT ----------------
@@ -326,20 +326,23 @@ function init() {
     
       const index = idx;
     
-      // Als hij al links open is → sluiten
-      if (openLeft === index) {
-        openLeft = null;
+      // Sluiten als al open in links
+      if (openLeftMaps.includes(index)) {
+        openLeftMaps = openLeftMaps.filter(i => i !== index);
       }
-      // Als hij al rechts open is → sluiten
-      else if (openRight === index) {
-        openRight = null;
+      // Sluiten als al open in rechts
+      else if (openRightMaps.includes(index)) {
+        openRightMaps = openRightMaps.filter(i => i !== index);
       }
       // Anders openen
       else {
-        if (openLeft === null) {
-          openLeft = index;
-        } else if (openRight === null) {
-          openRight = index;
+        if (openLeftMaps.length === 0) {
+          openLeftMaps.push(index);
+        } else if (openRightMaps.length === 0) {
+          openRightMaps.push(index);
+        } else {
+          // optioneel: beide helften vol → doe niets of laat een melding zien
+          console.log("Beide helften vol");
         }
       }
     
@@ -379,15 +382,27 @@ function updateMapPositions() {
   maps.forEach((div, i) => {
     let top, left;
 
-    // ----- LINKER OPEN MAP -----
-    if (i === openLeft) {
-      top = 20;
-      left = screenW * 0.25 - size / 2;
+    // ----- LINKER OPEN MAPS -----
+    if (openLeftMaps.includes(i)) {
+      const idx = openLeftMaps.indexOf(i);
+      const row = Math.floor(idx / maxPerRow);
+      const col = idx % maxPerRow;
+      const itemsInRow = Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow);
+      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+    
+      top = 20 + row * (size + gap);
+      left = screenW / 4 - rowWidth / 2 + col * (size + gap); // midden linkerhelft
     }
-    // ----- RECHTER OPEN MAP -----
-    else if (i === openRight) {
-      top = 20;
-      left = screenW * 0.75 - size / 2;
+    // ----- RECHTER OPEN MAPS -----
+    else if (openRightMaps.includes(i)) {
+      const idx = openRightMaps.indexOf(i);
+      const row = Math.floor(idx / maxPerRow);
+      const col = idx % maxPerRow;
+      const itemsInRow = Math.min(maxPerRow, openRightMaps.length - row * maxPerRow);
+      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+    
+      top = 20 + row * (size + gap);
+      left = screenW * 0.75 - rowWidth / 2 + col * (size + gap); // midden rechterhelft
     }
     // ----- GESLOTEN MAPS -----
     else {
@@ -442,9 +457,9 @@ function renderElements() {
   leftContainer.innerHTML = "";
   rightContainer.innerHTML = "";
 
-  // LINKER MAP
-  if (openLeft !== null) {
-    const elements = mappen[openLeft].elementen;
+  // ---------------- LINKER MAPS ----------------
+  openLeftMaps.forEach(idx => {
+    const elements = mappen[idx].elementen;
 
     elements.forEach(el => {
       const div = document.createElement("div");
@@ -458,11 +473,11 @@ function renderElements() {
 
       div.addEventListener("click", () => handleElementClick(el.naam, div));
     });
-  }
+  });
 
-  // RECHTER MAP
-  if (openRight !== null) {
-    const elements = mappen[openRight].elementen;
+  // ---------------- RECHTER MAPS ----------------
+  openRightMaps.forEach(idx => {
+    const elements = mappen[idx].elementen;
 
     elements.forEach(el => {
       const div = document.createElement("div");
@@ -476,7 +491,7 @@ function renderElements() {
 
       div.addEventListener("click", () => handleElementClick(el.naam, div));
     });
-  }
+  });
 }
 
 function handleElementClick(name, div) {
