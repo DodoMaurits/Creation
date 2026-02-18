@@ -192,7 +192,8 @@ body {
 
 /* Midden van rechterhelft */
 #closed-container.right {
-  transform: translate(50%, -50%);
+  left: 75%; /* midden van de rechterhelft (50% + 50%/2) */
+  transform: translate(-50%, -50%); /* center horizontaal en verticaal op deze positie */
 }
 
 /* ---------------- RESULTAAT COMBINATIE ---------------- */
