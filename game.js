@@ -481,9 +481,17 @@ function toggleSelect(el, img, side, mapNaam) {
 function checkCombination() {
   const names = selected.map(e => e.naam);
 
-  // Pak alle combinaties die matchen
+  // Functie om twee arrays exact te vergelijken, inclusief duplicaten
+  function arraysEqual(a, b) {
+    if (a.length !== b.length) return false;
+    const aSorted = [...a].sort();
+    const bSorted = [...b].sort();
+    return aSorted.every((val, index) => val === bSorted[index]);
+  }
+  
+  // Pak alle combinaties die exact matchen
   const matches = combinaties.filter(c =>
-    c.input.every(i => names.includes(i))
+    arraysEqual(c.input, names)
   );
 
   if (matches.length === 0) {
