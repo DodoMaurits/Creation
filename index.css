@@ -52,14 +52,14 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  background: white;
+  background: rgba(255, 255, 255, 0.5); /* 50% transparant */
   transition: all 0.3s ease;
   animation: floatButton 2s ease-in-out infinite alternate;
 }
 
 .start-button:hover {
   transform: scale(1.1);
-  background: #d0f0ff;
+  background: rgba(255, 255, 255, 0.8); /* iets minder transparant bij hover */
 }
 
 /* Zachte heen-en-weer beweging van de knop */
