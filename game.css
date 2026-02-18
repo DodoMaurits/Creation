@@ -217,8 +217,8 @@ body {
 
 .result-grid {
   display: grid;
-  gap: 50px; /* ruimte tussen elementen */
-  justify-content: center; /* horizontaal centreren */
+  gap: 40px;
+  justify-content: center;
   grid-auto-flow: row;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   width: auto;
