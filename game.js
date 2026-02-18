@@ -342,12 +342,10 @@ function openMap(map) {
   let side = null;
 
   if (!openLeft) {
-    // Eerste map links
     openLeft = map;
     side = "left";
     renderSide(leftSide, map, "left");
   } else if (!openRight) {
-    // Tweede map rechts
     openRight = map;
     side = "right";
     renderSide(rightSide, map, "right");
