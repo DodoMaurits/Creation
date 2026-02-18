@@ -37,11 +37,39 @@ html, body {
   height: auto;
   margin-bottom: 15px;
   transition: transform 0.5s ease;
+  animation: floatIcon 3s ease-in-out infinite alternate;
 }
 
 .result-image:hover {
   transform: scale(1.1);
 }
+
+@keyframes floatIcon {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); } /* 10px omhoog */
+  100% { transform: translateY(0); }
+}
+
+.result-box:nth-child(1) .result-image {
+  animation-duration: 3s;
+}
+.result-box:nth-child(2) .result-image {
+  animation-duration: 4s;
+}
+
+.result-box:nth-child(3) .result-image {
+  animation-duration: 2.5s;
+}
+
+.result-box:nth-child(4) .result-image {
+  animation-duration: 3.5s;
+}
+
+/* Eventueel extra variatie met faseverschuiving */
+.result-box:nth-child(1) .result-image { animation-delay: 0s; }
+.result-box:nth-child(2) .result-image { animation-delay: 0.5s; }
+.result-box:nth-child(3) .result-image { animation-delay: 1s; }
+.result-box:nth-child(4) .result-image { animation-delay: 1.5s; }
 
 .result-title {
   font-size: 32px;
