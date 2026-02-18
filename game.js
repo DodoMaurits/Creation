@@ -339,17 +339,24 @@ function renderClosed() {
 
 // ----- OPEN MAP -----
 function openMap(map) {
-  // Links of rechts kiezen
+  let side;
   if (!openLeft) {
     openLeft = map;
+    side = "left";
     renderSide(leftSide, map, "left");
+    // Closed maps schuiven naar rechts
+    closedContainer.classList.remove("hidden");
+    closedContainer.classList.remove("left", "right");
+    closedContainer.classList.add("right");
   } else if (!openRight) {
     openRight = map;
+    side = "right";
     renderSide(rightSide, map, "right");
+    // Closed maps schuiven naar links
+    closedContainer.classList.remove("hidden");
+    closedContainer.classList.remove("left", "right");
+    closedContainer.classList.add("left");
   }
-
-  // Zodra er minstens 1 map open is → closed maps weg
-  closedContainer.classList.add("hidden");
 }
 
 // ----- RENDER SIDE -----
@@ -394,12 +401,11 @@ function closeMap(side) {
 
     container.classList.add("hidden");
 
-    // Alleen closed-maps terug laten verschijnen als **geen enkele open-map** meer
     if (!openLeft && !openRight) {
-      closedContainer.classList.remove("hidden");
+      closedContainer.classList.remove("hidden", "left", "right");
       closedContainer.style.opacity = 1;
     }
-  }, 300); // overeenkomen met CSS transition
+  }, 300);
 }
 
 // ----- SELECT ELEMENT -----
