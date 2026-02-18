@@ -153,14 +153,13 @@ body {
     url("afb/beginscherm.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2000;
-  animation: fadeIn 0.8s ease-in-out;
   padding: 60px 20px;
   box-sizing: border-box;
+  animation: slideIn 0.8s ease-in-out forwards;
 }
 
 .result-grid {
@@ -192,7 +191,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: scaleIn 0.8s ease-in-out;
+  animation: boxSlideIn 0.8s ease-in-out forwards;
 }
 
 /* Soft floating animatie voor nieuwe elementen */
@@ -232,14 +231,29 @@ body {
 }
 
 /* ---------------- KEYFRAMES ---------------- */
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
+/* Result overlay van buiten beeld naar center */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100vh); /* begint buiten beeld onder */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);     /* eindigt op center */
+    opacity: 1;
+  }
 }
 
-@keyframes scaleIn {
-  from { transform: scale(0.5); opacity: 0 }
-  to { transform: scale(1); opacity: 1 }
+/* Result box van buiten links/rechts naar positie */
+@keyframes boxSlideIn {
+  0% {
+    transform: translateX(-200px); /* start links buiten scherm */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);      /* eindigt op plek */
+    opacity: 1;
+  }
 }
+
 
 
