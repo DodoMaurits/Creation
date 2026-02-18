@@ -72,8 +72,8 @@ body {
 
 /* Specifiek voor elementen */
 .icon.element {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
 }
 
 .icon.element:hover {
@@ -82,8 +82,8 @@ body {
 
 /* Specifiek voor open map iconen */
 .icon.map {
-  width: 140px;
-  height: 140px;
+  width: 145px;
+  height: 145px;
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
 }
 
@@ -93,8 +93,8 @@ body {
 
 /* Map titel boven open map */
 .icon.map-title {
-  width: 140px; 
-  height: 140px;
+  width: 145px; 
+  height: 145px;
   margin-top: 50px;
   margin-bottom: 20px;
   cursor: pointer;
