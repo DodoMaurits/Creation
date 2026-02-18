@@ -133,7 +133,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   justify-content: center;
-  gap: 50px;
+  column-gap: 50px;
+  row-gap: 20px;
 }
 
 .grid-closed {
