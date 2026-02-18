@@ -324,7 +324,7 @@ function renderClosed() {
   mappen.forEach(map => {
     const img = document.createElement("img");
     img.src = map.icoon;
-    img.className = "icon";
+    img.className = "icon map";
     img.onclick = () => openMap(map);
     grid.appendChild(img);
   });
@@ -374,7 +374,7 @@ function renderSide(container, map, side, clickedImg) {
   map.elementen.forEach(el => {
     const img = document.createElement("img");
     img.src = el.icoon;
-    img.className = "icon";
+    img.className = "icon element";
     img.onclick = () => toggleSelect(el, img);
     grid.appendChild(img);
   });
@@ -415,7 +415,7 @@ function renderSide(container, map, side) {
   map.elementen.forEach(el => {
     const img = document.createElement("img");
     img.src = el.icoon;
-    img.className = "icon";
+    img.className = "icon element";
     img.onclick = () => toggleSelect(el, img);
     grid.appendChild(img);
   });
