@@ -151,33 +151,37 @@ body {
 }
 
 /* ---------------- ELEMENTEN ---------------- */
+
 #left-elements,
 #right-elements {
   position: absolute;
-  top: 150px;                  
+  top: 150px;
   width: 50%;
-  display: grid;
-
-  /* Max 4 elementen van 100px */
-  grid-template-columns: repeat(4, 100px);
-
-  gap: 25px;
-
-  /* Dit centreert de RIJ zelf */
-  justify-content: center;
-
-  /* Dit centreert meerdere rijen */
-  justify-items: center;
+  display: flex;
+  justify-content: center;   /* centreert de grid zelf */
 }
 
-/* Linkerhelft */
 #left-elements {
   left: 0;
 }
 
-/* Rechterhelft */
 #right-elements {
   left: 50%;
+}
+
+/* echte grid binnen de helft */
+#left-elements .element,
+#right-elements .element {
+  width: 100px;
+  height: 100px;
+}
+
+/* grid wrapper */
+#left-elements,
+#right-elements {
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 475px; /* 4 * 100px + 3 * 25px */
 }
 
 .element {
