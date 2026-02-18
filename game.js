@@ -491,11 +491,12 @@ function toggleSelect(el, img) {
 function checkCombination() {
   const names = selected.map(e => e.naam);
 
-  const match = combinaties.find(c =>
+  // Pak alle combinaties die matchen
+  const matches = combinaties.filter(c =>
     c.input.every(i => names.includes(i))
   );
 
-  if (!match) {
+  if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
 
     selected.forEach(e => e.dom.classList.remove("selected"));
@@ -503,24 +504,35 @@ function checkCombination() {
     return;
   }
 
-  match.output.forEach(newEl => {
-    let map = mappen.find(m => m.naam === newEl.map);
-    if (!map) {
-      map = {
-        naam: newEl.map,
-        icoon: groepsIconen[newEl.map],
-        elementen: []
-      };
-      mappen.push(map);
-    }
+  // Verzamel alle nieuwe elementen uit alle matches
+  const newElements = [];
 
-    if (!map.elementen.find(e => e.naam === newEl.naam)) {
-      map.elementen.push(newEl);
-    }
+  matches.forEach(match => {
+    match.output.forEach(newEl => {
+      let map = mappen.find(m => m.naam === newEl.map);
+
+      // Voeg map toe als die nog niet bestaat
+      if (!map) {
+        map = {
+          naam: newEl.map,
+          icoon: groepsIconen[newEl.map],
+          elementen: []
+        };
+        mappen.push(map);
+      }
+
+      // Voeg element toe als die nog niet bestaat
+      if (!map.elementen.find(e => e.naam === newEl.naam)) {
+        map.elementen.push(newEl);
+        newElements.push(newEl); // voor overlay
+      }
+    });
   });
 
-  renderNewElements(match.output);
+  // Toon alle nieuwe elementen in de overlay
+  renderNewElements(newElements);
 
+  // Reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
