@@ -156,9 +156,16 @@ body {
   opacity: 1;
 }
 
-/* Alleen hover-titles van elementen in open maps */
+/* Alleen tooltips van elementen in open maps corrigeren */
+.grid-elements .icon-container {
+  display: inline-block;
+  position: relative;
+  width: 130px; /* zelfde als .icon.element breedte */
+  height: 130px; /* zelfde als .icon.element hoogte */
+}
+
 .grid-elements .icon-container .tooltip {
-  left: 52%; /* tikkie naar rechts */
+  left: 50%;
   transform: translateX(-50%);
 }
 
