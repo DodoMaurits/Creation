@@ -307,7 +307,6 @@ let openRightMaps = [];  // maps rechts
 let selectedElement = null;
 
 // ---------------- INIT ----------------
-// ---------------- INIT ----------------
 function init() {
   const container = document.getElementById("maps-container");
   container.innerHTML = "";
@@ -323,7 +322,6 @@ function init() {
     div.style.height = "100px";
     div.style.transition = "all 0.4s ease";
 
-    // Kliklogica via aparte functie
     div.addEventListener("click", () => handleMapClick(idx));
 
     container.appendChild(div);
@@ -336,14 +334,10 @@ function init() {
 // ---------------- HANDLE MAP CLICK ----------------
 function handleMapClick(index) {
   if (openLeftMaps.includes(index)) {
-    // Sluit de map
     openLeftMaps = [];
     openRightMaps = openRightMaps.filter(i => i !== index);
   } else {
-    // Open linker map
     openLeftMaps = [index];
-
-    // Rechterhelft: alle andere mappen + kopie van linker
     openRightMaps = mappen.map((_, i) => i).filter(i => i !== index);
     openRightMaps.push(index);
   }
