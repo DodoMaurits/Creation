@@ -517,4 +517,6 @@ window.addEventListener("resize", () => {
 });
 
 // ---------------- START ----------------
-init();
+window.addEventListener("DOMContentLoaded", () => {
+  init();
+});
