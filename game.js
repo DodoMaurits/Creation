@@ -300,4 +300,186 @@ const groepsIconen = {
   "Vuur": "icons/Vuur.png"
 };
 
+// ----- DATA (jouw data hier plakken) -----
+const mappen = [
+  {
+    naam: "Heelal",
+    icoon: "icons/Heelal.png",
+    elementen: [{ naam: "Oerknal", icoon: "icons/Oerknal.png" }]
+  },
+  {
+    naam: "Krachten",
+    icoon: "icons/Krachten.png",
+    elementen: [
+      { naam: "Warmte", icoon: "icons/Warmte.png" },
+      { naam: "Kou", icoon: "icons/Kou.png" }
+    ]
+  }
+];
 
+const combinaties = [
+  {
+    input: ["Oerknal", "Kou"],
+    output: [
+      {
+        naam: "Zwaartekracht",
+        icoon: "icons/Zwaartekracht.png",
+        map: "Krachten"
+      }
+    ]
+  }
+];
+
+const groepsIconen = {
+  Heelal: "icons/Heelal.png",
+  Krachten: "icons/Krachten.png",
+  Chemie: "icons/Chemie.png"
+};
+
+// ----- STATE -----
+let openLeft = null;
+let openRight = null;
+let selected = [];
+
+// ----- DOM -----
+const closedContainer = document.getElementById("closed-container");
+const leftSide = document.getElementById("left-side");
+const rightSide = document.getElementById("right-side");
+
+// ----- INIT -----
+renderClosed();
+
+// ----- RENDER CLOSED MAPS -----
+function renderClosed() {
+  closedContainer.innerHTML = "";
+  closedContainer.className = "";
+
+  const grid = document.createElement("div");
+  grid.className = "grid";
+
+  mappen.forEach(map => {
+    const img = document.createElement("img");
+    img.src = map.icoon;
+    img.className = "icon";
+    img.onclick = () => openMap(map);
+    grid.appendChild(img);
+  });
+
+  closedContainer.appendChild(grid);
+}
+
+// ----- OPEN MAP -----
+function openMap(map) {
+  if (!openLeft) {
+    openLeft = map;
+    renderSide(leftSide, map, "left");
+    closedContainer.classList.add("right");
+  } else if (!openRight) {
+    openRight = map;
+    renderSide(rightSide, map, "right");
+    closedContainer.style.display = "none";
+  }
+}
+
+// ----- RENDER SIDE -----
+function renderSide(container, map, side) {
+  container.innerHTML = "";
+  container.classList.remove("hidden");
+
+  const title = document.createElement("img");
+  title.src = map.icoon;
+  title.className = "icon map-title";
+  title.onclick = () => closeMap(side);
+  container.appendChild(title);
+
+  const grid = document.createElement("div");
+  grid.className = "grid";
+
+  map.elementen.forEach(el => {
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "icon";
+    img.onclick = () => toggleSelect(el, img);
+    grid.appendChild(img);
+  });
+
+  container.appendChild(grid);
+}
+
+// ----- CLOSE MAP -----
+function closeMap(side) {
+  if (side === "left") {
+    openLeft = null;
+    leftSide.classList.add("hidden");
+    closedContainer.style.display = "block";
+    closedContainer.className = "left";
+  } else {
+    openRight = null;
+    rightSide.classList.add("hidden");
+    closedContainer.style.display = "block";
+    closedContainer.className = "right";
+  }
+
+  if (!openLeft && !openRight) {
+    closedContainer.className = "";
+  }
+}
+
+// ----- SELECT ELEMENT -----
+function toggleSelect(el, img) {
+  const index = selected.findIndex(e => e.naam === el.naam);
+
+  if (index > -1) {
+    selected.splice(index, 1);
+    img.classList.remove("selected");
+  } else {
+    if (selected.length === 2) return;
+    selected.push(el);
+    img.classList.add("selected");
+  }
+
+  if (selected.length === 2) {
+    checkCombination();
+  }
+}
+
+// ----- CHECK COMBINATIONS -----
+function checkCombination() {
+  const names = selected.map(e => e.naam);
+
+  const match = combinaties.find(c =>
+    c.input.every(i => names.includes(i))
+  );
+
+  if (!match) {
+    alert("Geen geldige combinatie");
+    selected = [];
+    document.querySelectorAll(".selected").forEach(el =>
+      el.classList.remove("selected")
+    );
+    return;
+  }
+
+  match.output.forEach(newEl => {
+    let map = mappen.find(m => m.naam === newEl.map);
+
+    if (!map) {
+      map = {
+        naam: newEl.map,
+        icoon: groepsIconen[newEl.map],
+        elementen: []
+      };
+      mappen.push(map);
+    }
+
+    if (!map.elementen.find(e => e.naam === newEl.naam)) {
+      map.elementen.push(newEl);
+    }
+  });
+
+  alert("Nieuwe elementen ontdekt!");
+  selected = [];
+  document.querySelectorAll(".selected").forEach(el =>
+    el.classList.remove("selected")
+  );
+}
