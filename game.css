@@ -234,6 +234,7 @@ body {
   height: auto;
   margin-bottom: 15px;
   animation: floatSoft 4s ease-in-out infinite;
+  cursor: pointer;
 }
 
 .result-title {
