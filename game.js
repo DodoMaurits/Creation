@@ -363,35 +363,31 @@ function updateMapPositions() {
     if (!openLeftMaps.includes(i) && !openRightMaps.includes(i)) closed.push(i);
   });
 
-  // ----- RECHTERHELFT: open maps + kopie van linker -----
-  let rightMaps = [];
-  if (openLeftMaps.length === 1) {
-    const leftIdx = openLeftMaps[0];
-    rightMaps = mappen.map((_, i) => i).filter(i => i !== leftIdx); // andere mappen
-    rightMaps.push(leftIdx); // kopie van linker
-  }
-
-  // Bereken verticale start voor rechterhelft
-  const rowsRight = Math.ceil(rightMaps.length / maxPerRow);
-  const totalHeightRight = rowsRight * size + (rowsRight - 1) * gap;
-  const startTopRight = (screenH - totalHeightRight) / 2;
-
   maps.forEach((div, i) => {
     let top, left;
 
     // ----- LINKER OPEN MAPS -----
     if (openLeftMaps.includes(i)) {
-      const idx = openLeftMaps.indexOf(i);
       top = 20;
       left = screenW / 4 - size / 2; // midden linkerhelft
     }
     // ----- RECHTER OPEN MAPS -----
-    else if (rightMaps.includes(i)) {
-      const idx = rightMaps.indexOf(i);
-      const row = Math.floor(idx / maxPerRow);
-      const col = idx % maxPerRow;
+    else if (openLeftMaps.length === 1) {
+      const leftIdx = openLeftMaps[0];
+
+      // rechterhelft = alle mappen behalve linker + kopie van linker
+      let rightMaps = mappen.map((_, idx) => idx).filter(idx => idx !== leftIdx);
+      rightMaps.push(leftIdx); // kopie van linker map
+
+      const idxInRight = rightMaps.indexOf(i);
+      const row = Math.floor(idxInRight / maxPerRow);
+      const col = idxInRight % maxPerRow;
       const itemsInRow = Math.min(maxPerRow, rightMaps.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+
+      const rowsRight = Math.ceil(rightMaps.length / maxPerRow);
+      const totalHeightRight = rowsRight * size + (rowsRight - 1) * gap;
+      const startTopRight = (screenH - totalHeightRight) / 2;
 
       top = startTopRight + row * (size + gap);
       left = screenW / 2 + (screenW / 2 - rowWidth) / 2 + col * (size + gap);
@@ -404,7 +400,11 @@ function updateMapPositions() {
       const itemsInRow = Math.min(maxPerRow, closed.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
-      top = (screenH - (Math.ceil(closed.length / maxPerRow) * size + (Math.ceil(closed.length / maxPerRow) - 1) * gap)) / 2 + row * (size + gap);
+      const totalHeightClosed = Math.ceil(closed.length / maxPerRow) * size +
+                                (Math.ceil(closed.length / maxPerRow) - 1) * gap;
+      const startTopClosed = (screenH - totalHeightClosed) / 2;
+
+      top = startTopClosed + row * (size + gap);
       left = (screenW - rowWidth) / 2 + col * (size + gap);
     }
 
