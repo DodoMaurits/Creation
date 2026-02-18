@@ -419,6 +419,11 @@ function renderElements() {
   rightContainer.innerHTML = "";
 
   openLeftMaps.forEach(idx => {
+    const div = document.createElement("div");
+    div.className = "element";
+    div.dataset.name = el.naam;
+    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+    leftContainer.appendChild(div); // of rightContainer afhankelijk
     const elements = mappen[idx].elementen;
     elements.forEach(el => {
       let elName = el.naam;
