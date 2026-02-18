@@ -308,7 +308,7 @@ let selectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
-  // Open eerste map links, tweede map rechts
+  // Start met 2 maps zichtbaar
   if (mappen.length > 0) openLeftMaps.push(0);
   if (mappen.length > 1) openRightMaps.push(1);
 
@@ -354,8 +354,9 @@ function updateMapPositions() {
       const idxInLeft = openLeftMaps.indexOf(i);
       const row = Math.floor(idxInLeft / maxPerRow);
       const col = idxInLeft % maxPerRow;
-      const rowWidth = Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow) * size +
-                       (Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow) - 1) * gap;
+      const itemsInRow = Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow);
+      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+
       top = 20 + row * (size + gap);
       left = screenW / 4 - rowWidth / 2 + col * (size + gap);
     }
@@ -363,15 +364,16 @@ function updateMapPositions() {
       const idxInRight = openRightMaps.indexOf(i);
       const row = Math.floor(idxInRight / maxPerRow);
       const col = idxInRight % maxPerRow;
-      const rowWidth = Math.min(maxPerRow, openRightMaps.length - row * maxPerRow) * size +
-                       (Math.min(maxPerRow, openRightMaps.length - row * maxPerRow) - 1) * gap;
+      const itemsInRow = Math.min(maxPerRow, openRightMaps.length - row * maxPerRow);
+      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+
       const totalHeight = Math.ceil(openRightMaps.length / maxPerRow) * (size + gap);
       const startTop = (screenH - totalHeight) / 2;
+
       top = startTop + row * (size + gap);
       left = screenW / 2 + (screenW / 2 - rowWidth) / 2 + col * (size + gap);
     }
     else {
-      // gesloten maps
       top = screenH / 2 - size / 2;
       left = screenW / 2 - size / 2;
     }
@@ -397,7 +399,6 @@ function renderElements() {
       div.dataset.name = el.naam;
       div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
       leftContainer.appendChild(div);
-
       setTimeout(() => div.classList.add("show"), 10);
 
       div.addEventListener("click", () => handleElementClick(el.naam, div));
@@ -406,10 +407,12 @@ function renderElements() {
 }
 
 // ---------------- HANDLE MAP CLICK ----------------
-function handleMapClick(index) {
-  if (openLeftMaps.includes(index)) openLeftMaps = openLeftMaps.filter(i => i !== index);
-  else openLeftMaps.push(index);
+function handleMapClick(idx) {
+  // Als al links: verwijder
+  if (openLeftMaps.includes(idx)) openLeftMaps = openLeftMaps.filter(i => i !== idx);
+  else openLeftMaps.push(idx);
 
+  // Rechterhelft = rest
   openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
 
   selectedElement = null;
