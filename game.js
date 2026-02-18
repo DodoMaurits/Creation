@@ -405,24 +405,32 @@ function updateMapPositions() {
     // GESLOTEN MAPPEN
     // =========================
     else {
-
+    
       const idx = closed.indexOf(i);
       const row = Math.floor(idx / maxPerRow);
       const col = idx % maxPerRow;
-
+    
       const itemsInRow = Math.min(maxPerRow, closed.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
-
+    
       top = startTopClosed + row * (size + gap);
-
-      if (openLeft !== null || openRight !== null) {
-        // Als er een map open is → gesloten mappen naar rechterhelft
+    
+      if (openLeft !== null) {
+        // Linkermap open → andere mappen naar rechterhelft
         const rightHalfStart = screenW / 2;
         const halfWidth = screenW / 2;
-
+    
         left = rightHalfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
-      } else {
-        // Beginstand → gecentreerd over hele scherm
+      }
+      else if (openRight !== null) {
+        // Alleen rechtermap open → andere mappen naar linkerhelft
+        const leftHalfStart = 0;
+        const halfWidth = screenW / 2;
+    
+        left = leftHalfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
+      }
+      else {
+        // Geen open maps → alles gecentreerd over het hele scherm
         left = (screenW - rowWidth) / 2 + col * (size + gap);
       }
     }
