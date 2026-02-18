@@ -1,3 +1,4 @@
+/* ---------------- BODY ---------------- */
 html, body {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ html, body {
   align-items: center;
 }
 
+/* ---------------- RESULT BOX CONTAINER ---------------- */
 .result-box-container {
   display: flex;
   justify-content: center;
@@ -21,6 +23,7 @@ html, body {
   text-align: center;
 }
 
+/* ---------------- RESULT BOX ---------------- */
 .result-box {
   display: flex;
   flex-direction: column;
@@ -32,45 +35,28 @@ html, body {
   opacity: 0.85;
 }
 
+/* ---------------- RESULT IMAGE ---------------- */
 .result-image {
   width: 150px;
   height: auto;
   margin-bottom: 15px;
   transition: transform 0.5s ease;
-  animation: floatIcon 3s ease-in-out infinite alternate;
+  animation: floatRandom 3s ease-in-out 0s infinite alternate;
+  --translateY: 10px;
 }
 
 .result-image:hover {
   transform: scale(1.1);
 }
 
-@keyframes floatIcon {
+/* ---------------- FLOAT ANIMATIE ---------------- */
+@keyframes floatRandom {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); } /* 10px omhoog */
+  50% { transform: translateY(var(--translateY)); }
   100% { transform: translateY(0); }
 }
 
-.result-box:nth-child(1) .result-image {
-  animation-duration: 3s;
-}
-.result-box:nth-child(2) .result-image {
-  animation-duration: 4s;
-}
-
-.result-box:nth-child(3) .result-image {
-  animation-duration: 2.5s;
-}
-
-.result-box:nth-child(4) .result-image {
-  animation-duration: 3.5s;
-}
-
-/* Eventueel extra variatie met faseverschuiving */
-.result-box:nth-child(1) .result-image { animation-delay: 0s; }
-.result-box:nth-child(2) .result-image { animation-delay: 0.5s; }
-.result-box:nth-child(3) .result-image { animation-delay: 1s; }
-.result-box:nth-child(4) .result-image { animation-delay: 1.5s; }
-
+/* ---------------- TITEL EN QUOTE ---------------- */
 .result-title {
   font-size: 32px;
   margin: 5px 0;
