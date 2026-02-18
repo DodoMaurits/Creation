@@ -398,7 +398,14 @@ function updateMapPositions() {
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
       top = startTopClosed + row * (size + gap);
-      left = screenW / 2 - rowWidth / 2 + col * (size + gap);
+      if (openGroups.length > 0) {
+        // centreer in rechterhelft
+        const halfW = screenW / 2;
+        left = halfW + (halfW / 2 - rowWidth / 2) + col * (size + gap);
+      } else {
+        // centreer over hele scherm (beginstand)
+        left = screenW / 2 - rowWidth / 2 + col * (size + gap);
+      }
     }
 
     div.style.top = top + "px";
