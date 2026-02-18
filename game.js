@@ -420,15 +420,14 @@ function renderElements() {
 
 function handleMapClick(index) {
   if (openLeftMaps.includes(index)) {
-    // Sluit alles
-    openLeftMaps = [];
-    openRightMaps = [];
+    // Klik op een map die al links staat → sluit
+    openLeftMaps = openLeftMaps.filter(i => i !== index);
+    openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
   } else {
-    // Linkerhelft = aangeklikte map
-    openLeftMaps = [index];
-
-    // Rechterhelft = alle mappen inclusief aangeklikte map
-    openRightMaps = mappen.map((_, i) => i);
+    // Voeg toe aan linkerhelft
+    openLeftMaps.push(index);
+    // Rechterhelft = alle andere mappen + eventueel linker maps
+    openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
   }
 
   selectedElement = null;
