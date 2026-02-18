@@ -81,3 +81,87 @@ html, body {
   50% { transform: translateX(var(--translateX)); }
   100% { transform: translateX(0); }
 }
+
+/* ---------------- BODY ---------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: 
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+    url('afb/beginscherm.png') center center / cover no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------- RESULT BOX CONTAINER ---------------- */
+.result-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* ---------------- RESULT BOX ---------------- */
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  font-family: "Times New Roman", serif;
+  font-size: 32px;
+  margin-top: 15px;
+  opacity: 0.85;
+}
+
+/* ---------------- RESULT IMAGE ---------------- */
+.result-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+  animation-name: floatRandom;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  --translateY: 10px; /* fallback hoogte */
+}
+
+.result-image:hover {
+  transform: scale(1.1);
+}
+
+/* ---------------- FLOAT ANIMATIE ---------------- */
+@keyframes floatRandom {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(var(--translateY)); }
+  100% { transform: translateY(0); }
+}
+
+/* ---------------- TITEL EN QUOTE ---------------- */
+.result-title {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.result-quote {
+  font-size: 24px;
+  line-height: 1.4;
+  display: inline-block; /* nodig voor translateX */
+  animation-name: floatQuote;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  --translateX: 5px; /* fallback */
+}
+
+@keyframes floatQuote {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(var(--translateX)); }
+  100% { transform: translateX(0); }
+}
