@@ -312,6 +312,7 @@ const rightSide = document.getElementById("right-side");
 
 // ----- INIT -----
 renderClosed();
+updateClosedContainer(); // <--- voeg dit toe
 
 // ----- RENDER CLOSED MAPS -----
 function renderClosed() {
