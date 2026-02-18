@@ -151,22 +151,30 @@ body {
 }
 
 /* ---------------- ELEMENTEN ---------------- */
-
 #left-elements,
 #right-elements {
   position: absolute;
   top: 150px;
-  width: 50%;
-  display: flex;
-  justify-content: center;   /* centreert de grid zelf */
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 25px;
+
+  /* Rij horizontaal centreren tov map-icoon */
+  justify-items: center;  /* items in de grid zelf */
 }
 
+/* Linkerhelft - grid precies gecentreerd op 25% van scherm */
 #left-elements {
-  left: 0;
+  left: 50%;             /* linkermidden van het scherm */
+  transform: translateX(-50%); /* centreer over eigen breedte */
+  width: auto;           /* laat grid zijn eigen breedte bepalen */
 }
 
+/* Rechterhelft - grid precies gecentreerd op 75% van scherm */
 #right-elements {
-  left: 50%;
+  left: 75%;             /* rechterhelft center */
+  transform: translateX(-50%);
+  width: auto;
 }
 
 /* echte grid binnen de helft */
