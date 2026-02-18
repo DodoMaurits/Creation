@@ -550,6 +550,7 @@ function renderNewElements(elements) {
   elements.forEach(el => {
     const box = document.createElement("div");
     box.className = "result-box";
+    box.style.animationDelay = `${index * 0.2}s`;
 
     const img = document.createElement("img");
     img.src = el.icoon;
