@@ -375,11 +375,6 @@ function updateMapPositions() {
 // ---------------- SLUITMAP ----------------
 function createCloseMap(mapObj) {
   document.body.appendChild(closeMapDiv);
-
-  // Horizontaal centrum van linkerhelft
-  const leftHalfCenter = window.innerWidth / 2 * 0.5; // halve breedte van linkerhelft
-  closeMapDiv.style.left = `${leftHalfCenter - closeMapDiv.offsetWidth / 2}px`;
-  closeMapDiv.style.top = "20px"; // beetje afstand vanaf bovenkant
 }
 
 function resetMaps() {
@@ -512,10 +507,9 @@ window.addEventListener("resize", () => {
   renderElements();
 
   // Update sluitmap positie bij resize
-    if (closeMapDiv) {
-      const leftHalfCenter = window.innerWidth / 2 * 0.5;
-      closeMapDiv.style.left = `${leftHalfCenter - closeMapDiv.offsetWidth / 2}px`;
-    }
+  if (closeMapDiv) {
+    const leftHalfCenter = window.innerWidth * 0.25;
+    closeMapDiv.style.left = `${leftHalfCenter - 50}px`;
   }
 });
 
