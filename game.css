@@ -86,11 +86,13 @@ body {
 }
 
 #closed-container.right {
-  transform: translate(25%, -50%); /* midden van de rechterhelft */
+  left: 75%; /* midden van rechterhelft */
+  transform: translate(-50%, -50%);
 }
 
 #closed-container.left {
-  transform: translate(-75%, -50%); /* midden van de linkerhelft */
+  left: 25%; /* midden van linkerhelft */
+  transform: translate(-50%, -50%);
 }
 
 @keyframes shake {
