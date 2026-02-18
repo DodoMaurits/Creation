@@ -132,16 +132,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: left 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease;
   opacity: 1;
 }
 
+/* Links/ midden van linkerhelft */
 #closed-container.left {
-  left: 25%; /* midden linkerhelft */
+  transform: translate(-150%, -50%);
 }
 
+/* Midden van rechterhelft */
 #closed-container.right {
-  left: 75%; /* midden rechterhelft */
+  transform: translate(50%, -50%);
 }
 
 /* ---------------- RESULTAAT COMBINATIE ---------------- */
@@ -258,6 +260,19 @@ body {
   100% {
     transform: translateX(0);      /* eindigt op plek */
     opacity: 1;
+  }
+}
+
+/* ---------------- MEDIA ---------------- */
+@media (max-width: 800px) {
+  .grid-elements {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-elements {
+    grid-template-columns: 1fr;
   }
 }
 
