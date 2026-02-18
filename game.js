@@ -339,32 +339,24 @@ function renderClosed() {
 
 // ----- OPEN MAP -----
 function openMap(map) {
-  let side;
+  let side = null;
+
   if (!openLeft) {
+    // Eerste map links
     openLeft = map;
     side = "left";
     renderSide(leftSide, map, "left");
   } else if (!openRight) {
+    // Tweede map rechts
     openRight = map;
     side = "right";
     renderSide(rightSide, map, "right");
   } else {
-    // beide open → geen action
+    // Beide open → niks doen
     return;
   }
 
-  // Update closed-maps position & visibility
-  if (openLeft && openRight) {
-    closedContainer.style.opacity = 0; // fade out
-  } else if (openLeft) {
-    closedContainer.classList.remove("left", "right");
-    closedContainer.classList.add("right"); // vrije helft
-    closedContainer.style.opacity = 1;
-  } else if (openRight) {
-    closedContainer.classList.remove("left", "right");
-    closedContainer.classList.add("left"); // vrije helft
-    closedContainer.style.opacity = 1;
-  }
+  updateClosedContainer();
 }
 
 // ----- RENDER SIDE -----
@@ -400,7 +392,7 @@ function renderSide(container, map, side) {
 
 // ----- CLOSE MAP -----
 function closeMap(side) {
-  let container = side === "left" ? leftSide : rightSide;
+  const container = side === "left" ? leftSide : rightSide;
   container.classList.remove("visible");
 
   setTimeout(() => {
@@ -409,22 +401,29 @@ function closeMap(side) {
 
     container.classList.add("hidden");
 
-    // Update closed-maps position & visibility
-    if (openLeft && openRight) {
-      closedContainer.style.opacity = 0; // beide open → verborgen
-    } else if (openLeft) {
-      closedContainer.classList.remove("left", "right");
-      closedContainer.classList.add("right"); // vrije helft
-      closedContainer.style.opacity = 1;
-    } else if (openRight) {
-      closedContainer.classList.remove("left", "right");
-      closedContainer.classList.add("left"); // vrije helft
-      closedContainer.style.opacity = 1;
-    } else {
-      closedContainer.classList.remove("left", "right");
-      closedContainer.style.opacity = 1; // beide gesloten → midden
-    }
+    updateClosedContainer(); // herbereken positie closed-maps
   }, 300);
+}
+
+function updateClosedContainer() {
+  if (openLeft && openRight) {
+    // Beide open → fade-out
+    closedContainer.style.opacity = 0;
+  } else if (openLeft && !openRight) {
+    // Alleen links open → closed-maps naar rechter helft
+    closedContainer.classList.remove("left", "right");
+    closedContainer.classList.add("right");
+    closedContainer.style.opacity = 1;
+  } else if (openRight && !openLeft) {
+    // Alleen rechts open → closed-maps naar linker helft
+    closedContainer.classList.remove("left", "right");
+    closedContainer.classList.add("left");
+    closedContainer.style.opacity = 1;
+  } else {
+    // Geen open → terug naar midden
+    closedContainer.classList.remove("left", "right");
+    closedContainer.style.opacity = 1;
+  }
 }
 
 // ----- SELECT ELEMENT -----
