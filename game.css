@@ -63,17 +63,21 @@ body {
   width: 100px;
   height: 100px;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, filter 0.3s ease;  
 }
 
 .icon:hover {
   transform: scale(1.1);
 }
 
-/* Specifiek voor elementen */
+/* Specifiek voor elementen */a
 .icon.element {
   width: 110px;
   height: 110px;
+}
+
+.icon.element:hover {
+  transform: scale(1.15); /* iets meer vergroting dan standaard */
 }
 
 /* Specifiek voor open map iconen */
@@ -83,12 +87,48 @@ body {
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
 }
 
+.icon.map:hover {
+  transform: scale(1.12); /* subtiel groter */
+}
+
 /* Map titel boven open map */
 .icon.map-title {
   width: 140px; 
   height: 140px;
   margin-top: 50px;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon.map-title:hover {
+  transform: scale(1.12); /* subtiel groter */
+}
+
+/* Tooltip */
+.icon.map::after,
+.icon.element::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.15s ease;
+  z-index: 10000;
+}
+
+.icon.map:hover::after,
+.icon.element:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
 }
 
 /* ---------------- GRID LAYOUTS ---------------- */
@@ -235,6 +275,11 @@ body {
   margin-bottom: 15px;
   animation: floatSoft 4s ease-in-out infinite;
   cursor: pointer;
+}
+
+.result-image:hover {
+  transform: scale(1.12);  /* licht groter bij hover */
+  transition: transform 0.3s ease;
 }
 
 .result-title {
