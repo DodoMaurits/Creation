@@ -41,8 +41,11 @@ html, body {
   height: auto;
   margin-bottom: 15px;
   transition: transform 0.5s ease;
-  animation: floatRandom 3s ease-in-out 0s infinite alternate;
-  --translateY: 10px;
+  animation-name: floatRandom;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  --translateY: 10px; /* fallback hoogte */
 }
 
 .result-image:hover {
