@@ -382,17 +382,27 @@ function closeMap(side) {
   container.classList.remove("visible");
 
   setTimeout(() => {
+    // Sluit de open map
     if (side === "left") openLeft = null;
     else openRight = null;
 
     container.classList.add("hidden");
 
     // Closed maps terugzetten
-    closedContainer.style.display = "block";
-    if (!openLeft && !openRight) closedContainer.className = "";
-    else if (side === "left") closedContainer.className = "right";
-    else closedContainer.className = "left";
-  }, 300); // moet iets kleiner zijn dan CSS transition
+    if (!openLeft && !openRight) {
+      closedContainer.style.display = "block";
+      closedContainer.className = ""; // midden
+    } else if (openLeft && !openRight) {
+      closedContainer.style.display = "block";
+      closedContainer.className = "right"; // alleen rechts
+    } else if (!openLeft && openRight) {
+      closedContainer.style.display = "block";
+      closedContainer.className = "left"; // alleen links
+    } else {
+      // beide open → closed maps verdwijnen
+      closedContainer.style.display = "none";
+    }
+  }, 300); // iets korter dan CSS transition
 }
 
 // ----- SELECT ELEMENT -----
