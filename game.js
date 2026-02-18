@@ -510,20 +510,26 @@ function shakeErrorElements(elements) {
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements) {
-  // Verwijder bestaande overlay indien aanwezig
+  // Verwijder alles wat er nog op het scherm staat behalve het app-container
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
+  leftSide.innerHTML = "";
+  rightSide.innerHTML = "";
+  closedContainer.innerHTML = "";
+
+  // Maak overlay
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
+  overlay.style.opacity = "0";
+  overlay.style.transition = "opacity 0.2s ease"; // snelle fade-in
 
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
-  elements.forEach((el, index) => {
+  elements.forEach(el => {
     const box = document.createElement("div");
     box.className = "result-box";
-    box.style.animationDelay = `${index * 0.2}s`; // stagger effect
 
     const img = document.createElement("img");
     img.src = el.icoon;
@@ -547,11 +553,22 @@ function renderNewElements(elements) {
   overlay.appendChild(grid);
   document.body.appendChild(overlay);
 
-  // ---------------- Sluit overlay bij klik ----------------
+  // Fade-in overlay direct
+  requestAnimationFrame(() => {
+    overlay.style.opacity = "1";
+  });
+
+  // Klik op overlay → reset alles
   overlay.onclick = () => {
-    overlay.remove();      // overlay weg
-    openLeft = null;       // reset open maps
+    overlay.remove();
+    openLeft = null;
     openRight = null;
-    renderClosed();        // toont weer alle closed maps
+
+    // Clear alle open maps
+    leftSide.innerHTML = "";
+    rightSide.innerHTML = "";
+
+    renderClosed(); // toont alle closed maps netjes in het midden
   };
 }
+
