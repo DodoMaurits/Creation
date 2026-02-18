@@ -167,7 +167,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 520px; /* 4 icons + gaps */
+  max-width: 680px; /* 4 icons + gaps */
   margin: 0 auto;
 }
 
