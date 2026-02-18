@@ -344,45 +344,38 @@ function updateMapPositions() {
   maps.forEach((div, i) => {
     let top, left;
 
-    // ----- LINKERHELFT: alleen aangeklikte map -----
     if (openLeftMaps.includes(i)) {
-      top = 20; // klein beetje afstand vanaf top
-      left = screenW / 4 - size / 2; // horizontaal midden linkerhelft
+      // ----- LINKERHELFT: alle aangeklikte maps -----
+      const idxInLeft = openLeftMaps.indexOf(i);
+      const row = Math.floor(idxInLeft / maxPerRow);
+      const col = idxInLeft % maxPerRow;
+      const itemsInRow = Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow);
+      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+
+      const totalHeightLeft = Math.ceil(openLeftMaps.length / maxPerRow) * size + (Math.ceil(openLeftMaps.length / maxPerRow) - 1) * gap;
+      const startTopLeft = 20; // of center over de linkerhelft als je wilt
+
+      top = startTopLeft + row * (size + gap);
+      left = screenW / 4 - rowWidth / 2 + col * (size + gap);
     }
-    // ----- RECHTERHELFT: alle mappen -----
     else if (openRightMaps.includes(i)) {
-      const idx = openRightMaps.indexOf(i);
-      const row = Math.floor(idx / maxPerRow);
-      const col = idx % maxPerRow;
+      // ----- RECHTERHELFT -----
+      const idxInRight = openRightMaps.indexOf(i);
+      const row = Math.floor(idxInRight / maxPerRow);
+      const col = idxInRight % maxPerRow;
       const itemsInRow = Math.min(maxPerRow, openRightMaps.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
-      const rowsRight = Math.ceil(openRightMaps.length / maxPerRow);
-      const totalHeightRight = rowsRight * size + (rowsRight - 1) * gap;
+      const totalHeightRight = Math.ceil(openRightMaps.length / maxPerRow) * size + (Math.ceil(openRightMaps.length / maxPerRow) - 1) * gap;
       const startTopRight = (screenH - totalHeightRight) / 2;
 
       top = startTopRight + row * (size + gap);
       left = screenW / 2 + (screenW / 2 - rowWidth) / 2 + col * (size + gap);
     }
-    // ----- ANDERE/gesloten mappen -----
     else {
-      // alles gecentreerd over scherm
-      const closed = [];
-      maps.forEach((_, j) => {
-        if (!openLeftMaps.includes(j) && !openRightMaps.includes(j)) closed.push(j);
-      });
-
-      const idx = closed.indexOf(i);
-      const row = Math.floor(idx / maxPerRow);
-      const col = idx % maxPerRow;
-      const itemsInRow = Math.min(maxPerRow, closed.length - row * maxPerRow);
-      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
-
-      const totalHeightClosed = Math.ceil(closed.length / maxPerRow) * size + (Math.ceil(closed.length / maxPerRow) - 1) * gap;
-      const startTopClosed = (screenH - totalHeightClosed) / 2;
-
-      top = startTopClosed + row * (size + gap);
-      left = (screenW - rowWidth) / 2 + col * (size + gap);
+      // ----- GESLOTEN MAPS -----
+      top = screenH / 2 - size / 2;
+      left = screenW / 2 - size / 2;
     }
 
     div.style.top = top + "px";
@@ -420,15 +413,15 @@ function renderElements() {
 
 function handleMapClick(index) {
   if (openLeftMaps.includes(index)) {
-    // Klik op een map die al links staat → sluit
+    // verwijder uit linkerhelft
     openLeftMaps = openLeftMaps.filter(i => i !== index);
-    openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
   } else {
-    // Voeg toe aan linkerhelft
+    // voeg toe
     openLeftMaps.push(index);
-    // Rechterhelft = alle andere mappen + eventueel linker maps
-    openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
   }
+  
+  // rechterhelft = alles behalve linker maps
+  openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
 
   selectedElement = null;
   updateMapPositions();
