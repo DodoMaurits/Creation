@@ -19,6 +19,7 @@ body {
   align-items: center;
 }
 
+/* Zacht op- en neerzweven van de hele overlay */
 .overlay {
   text-align: center;
   background: rgba(0,0,0,0.4);
@@ -26,18 +27,26 @@ body {
   border-radius: 20px;
   backdrop-filter: blur(4px);
   max-width: 90%;
+  animation: floatOverlay 4s ease-in-out infinite;
 }
 
+@keyframes floatOverlay {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); } /* 15px omhoog */
+}
+
+/* Titel */
 .title {
   color: white;
   font-size: 64px;
   letter-spacing: 3px;
-  font-family: "Cinzel", serif; /* historische look */
-  margin: 20px 0 5px 0;          /* kleinere marge onder titel */
+  font-family: "Cinzel", serif;
+  margin: 20px 0 5px 0;
 }
 
+/* Start knop */
 .start-button {
-  font-family: "Cinzel", serif; /* historische look */
+  font-family: "Cinzel", serif;
   padding: 15px 40px;
   font-size: 20px;
   border: none;
@@ -45,9 +54,17 @@ body {
   cursor: pointer;
   background: white;
   transition: all 0.3s ease;
+  animation: floatButton 2s ease-in-out infinite alternate;
 }
 
 .start-button:hover {
   transform: scale(1.1);
   background: #d0f0ff;
+}
+
+/* Zachte heen-en-weer beweging van de knop */
+@keyframes floatButton {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); } /* 10px naar rechts */
+  100% { transform: translateX(0); }
 }
