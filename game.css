@@ -180,11 +180,11 @@ body {
 
 .result-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center; /* horizontaal centreren */
   gap: 50px;
-  width: 90%;
-  max-width: 1200px;
-  justify-content: center;
+  width: auto; /* niet 90% fixed, zodat centering werkt */
+  max-width: 800px; /* pas aan naar wens */
 }
 
 @media (max-width: 900px) {
