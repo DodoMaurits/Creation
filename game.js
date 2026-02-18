@@ -381,8 +381,19 @@ function updateMapPositions() {
         const row = Math.floor(idx / maxPerRow);
         const col = idx % maxPerRow;
 
-        const totalWidth = maxPerRow * size + (maxPerRow - 1) * gap;
-        const startLeft = screenW * 0.75 - totalWidth / 2;
+        // hoeveel open mappen staan rechts?
+        const rightOpenCount = openGroups.length - 1;
+        
+        // hoeveel in deze rij?
+        const itemsInRow = Math.min(maxPerRow, rightOpenCount - row * maxPerRow);
+        
+        // echte breedte van deze rij
+        const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
+        
+        // midden van rechterhelft
+        const rightCenter = screenW * 0.75;
+        
+        const startLeft = rightCenter - rowWidth / 2;
 
         top = 20 + row * (size + gap);
         left = startLeft + col * (size + gap);
