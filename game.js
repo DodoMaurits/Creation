@@ -324,18 +324,8 @@ function renderMaps() {
   container.innerHTML = "";
 
   mappen.forEach((map, idx) => {
-    const div = document.createElement("div");
-    div.className = "map";
-    div.dataset.index = idx;
-    div.dataset.name = map.naam;
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
-    div.style.position = "absolute";
-    div.style.width = "100px";
-    div.style.height = "100px";
-    div.style.transition = "top 0.5s ease, left 0.5s ease";
-
-    div.addEventListener("click", () => handleMapClick(idx));
-    container.appendChild(div);
+    let currentIdx = idx; // belangrijk bij dynamische listeners
+    div.addEventListener("click", () => handleMapClick(currentIdx));
   });
 }
 
@@ -429,14 +419,8 @@ function renderElements() {
   openLeftMaps.forEach(idx => {
     const elements = mappen[idx].elementen;
     elements.forEach(el => {
-      const div = document.createElement("div");
-      div.className = "element";
-      div.dataset.name = el.naam;
-      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-      leftContainer.appendChild(div);
-      setTimeout(() => div.classList.add("show"), 10);
-
-      div.addEventListener("click", () => handleElementClick(el.naam, div));
+      let elName = el.naam;
+      div.addEventListener("click", () => handleElementClick(elName, div));
     });
   });
 }
