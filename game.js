@@ -392,10 +392,10 @@ function renderElements() {
   rightContainer.innerHTML = ""; // optioneel, want we tonen daar geen elementen
 
   // LINKER MAP: alleen de aangeklikte map
-  if (openLeftMaps.length > 0) {
-    const idx = openLeftMaps[0];
+if (openLeftMaps.length > 0) {
+  openLeftMaps.forEach(idx => {
     const elements = mappen[idx].elementen;
-  
+
     elements.forEach(el => {
       const div = document.createElement("div");
       div.className = "element";
@@ -408,7 +408,7 @@ function renderElements() {
 
       div.addEventListener("click", () => handleElementClick(el.naam, div));
     });
-  }
+  });
 }
 
 function handleMapClick(index) {
