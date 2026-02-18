@@ -370,7 +370,7 @@ function renderSide(container, map, side) {
 
   container.appendChild(grid);
 
-  // Kleine timeout zodat transition speelt
+  // Fade-in
   setTimeout(() => {
     container.classList.add("visible");
   }, 20);
