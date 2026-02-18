@@ -72,8 +72,8 @@ body {
 
 /* Specifiek voor elementen */a
 .icon.element {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
 }
 
 .icon.element:hover {
