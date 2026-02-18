@@ -142,6 +142,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 680px;
   width: auto;
   margin: 0 auto;
 }
