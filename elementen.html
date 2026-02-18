@@ -37,13 +37,14 @@
   <!-- JS voor random zwevende iconen -->
   <script>
     const icons = document.querySelectorAll('.result-image');
-
+    
     icons.forEach(icon => {
-      const duration = (2 + Math.random() * 2).toFixed(2); // 2s tot 4s
-      const translate = Math.floor(5 + Math.random() * 10); // 5px tot 15px omhoog
-      const delay = (Math.random() * 1).toFixed(2); // 0s tot 1s vertraging
-
-      icon.style.animation = `floatRandom ${duration}s ease-in-out ${delay}s infinite alternate`;
+      const duration = (2 + Math.random() * 2).toFixed(2); // 2-4 seconden
+      const translate = Math.floor(5 + Math.random() * 10);  // 5-15px omhoog
+      const delay = (Math.random() * 1).toFixed(2); // 0-1s vertraging
+    
+      icon.style.animationDuration = `${duration}s`;
+      icon.style.animationDelay = `${delay}s`;
       icon.style.setProperty('--translateY', `-${translate}px`);
     });
 
