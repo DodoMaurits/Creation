@@ -435,31 +435,31 @@ function updateMapPositions() {
 
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
-
   const leftContainer = document.getElementById("left-elements");
   const rightContainer = document.getElementById("right-elements");
 
   leftContainer.innerHTML = "";
-  rightContainer.innerHTML = "";
+  rightContainer.innerHTML = ""; // optioneel, want we tonen daar geen elementen
 
-    // LINKER MAP: alleen de eerste (aangeklikte) map
-    if (openLeftMaps.length > 0) {
-      const idx = openLeftMaps[0];
-      const elements = mappen[idx].elementen;
-    
-      elements.forEach(el => {
-        const div = document.createElement("div");
-        div.className = "element";
-        div.dataset.name = el.naam;
-        div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-    
-        leftContainer.appendChild(div);
-    
-        setTimeout(() => div.classList.add("show"), 10);
-    
-        div.addEventListener("click", () => handleElementClick(el.naam, div));
-      });
-    }
+  // LINKER MAP: alleen de aangeklikte map
+  if (openLeftMaps.length > 0) {
+    const idx = openLeftMaps[0];
+    const elements = mappen[idx].elementen;
+  
+    elements.forEach(el => {
+      const div = document.createElement("div");
+      div.className = "element";
+      div.dataset.name = el.naam;
+      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+
+      leftContainer.appendChild(div);
+
+      setTimeout(() => div.classList.add("show"), 10);
+
+      div.addEventListener("click", () => handleElementClick(el.naam, div));
+    });
+  }
+}
 
 function handleElementClick(name, div) {
 
