@@ -510,7 +510,7 @@ window.addEventListener("resize", () => {
 
   // Update sluitmap positie bij resize
     if (closeMapDiv) {
-      const leftHalfCenter = window.innerWidth / 2 * 0.5;
+      const leftHalfCenter = window.innerWidth / 4;
       closeMapDiv.style.left = `${leftHalfCenter - closeMapDiv.offsetWidth / 2}px`;
     }
   }
