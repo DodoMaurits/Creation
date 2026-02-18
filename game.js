@@ -555,14 +555,15 @@ function renderNewElements(elements) {
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
+  overlay.style.opacity = 0; // start transparant
+  overlay.style.transition = "opacity 0.3s ease"; // fade-in
 
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
-  elements.forEach((el, index) => {
+  elements.forEach(el => {
     const box = document.createElement("div");
-    box.className = "result-box";
-    box.style.animationDelay = `${index * 0.2}s`; // stagger effect
+    box.className = "result-box fade-in"; // CSS class voor fade-in effect
 
     const img = document.createElement("img");
     img.src = el.icoon;
@@ -586,11 +587,24 @@ function renderNewElements(elements) {
   overlay.appendChild(grid);
   document.body.appendChild(overlay);
 
-  // ---------------- Sluit overlay bij klik ----------------
+  // Forceer browser repaint
+  overlay.offsetHeight;
+  overlay.style.opacity = 1; // fade-in overlay
+
+  // ----- Klik anywhere → reset alles naar startpositie -----
   overlay.onclick = () => {
-    overlay.remove();      // overlay weg
-    openLeft = null;       // reset open maps
+    // Sluit overlay
+    overlay.remove();
+
+    // Reset open maps
+    openLeft = null;
     openRight = null;
-    renderClosed();        // toont weer alle closed maps
+
+    // Verwijder inhoud van linker en rechter side
+    leftSide.innerHTML = "";
+    rightSide.innerHTML = "";
+
+    // Render alleen closed maps in het midden
+    renderClosed();
   };
 }
