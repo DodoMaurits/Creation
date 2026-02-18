@@ -374,28 +374,7 @@ function updateMapPositions() {
 
 // ---------------- SLUITMAP ----------------
 function createCloseMap(mapObj) {
-  const container = document.getElementById("maps-container");
-
-  // --- Check of sluitmap al bestaat ---
-  if (closeMapDiv) return;
-
-  closeMapDiv = document.createElement("div");
-  closeMapDiv.className = "map close-map";
-  closeMapDiv.dataset.name = mapObj.naam; // of "Sluit"
-  closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
-
-  closeMapDiv.classList.add("close-map"); // CSS class met fixed position
-  // Horizontaal centrum van linkerhelft
-  const leftHalfCenter = window.innerWidth * 0.25; 
-  closeMapDiv.style.left = `${leftHalfCenter - 50}px`; // center horizontaal
-
-  closeMapDiv.style.cursor = "pointer";
-  closeMapDiv.style.zIndex = "20"; // boven de andere maps
-  closeMapDiv.style.transition = "top 0.5s ease, left 0.5s ease";
-
-  closeMapDiv.addEventListener("click", () => resetMaps());
-
-  container.appendChild(closeMapDiv);
+  document.body.appendChild(closeMapDiv);
 }
 
 function resetMaps() {
