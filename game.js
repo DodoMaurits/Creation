@@ -176,7 +176,7 @@ const combinaties = [
                 naam: "Zwart Gat",
                 icoon: "icons/Zwartgat.png",
                 map: "Heelal",
-                quote: "I belive in black holes. I believe that as the universe empties into nothingness, past and future will smack together in the last swirl around the drain<br><br>- Abraham Verghese"
+                quote: "I believe in black holes. I believe that as the universe empties into nothingness, past and future will smack together in the last swirl around the drain<br><br>- Abraham Verghese"
               }
             ]
           },
