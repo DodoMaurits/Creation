@@ -415,35 +415,48 @@ function updateMapPositions() {
 
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
+
   const leftContainer = document.getElementById("left-elements");
+  const rightContainer = document.getElementById("right-elements");
+
   leftContainer.innerHTML = "";
+  rightContainer.innerHTML = "";
 
   if (openGroups.length === 0) return;
 
-  const groupIndex = openGroups[0]; // alleen linkerhelft
-  const elements = mappen[groupIndex].elementen;
+  openGroups.forEach((groupIndex, position) => {
 
-  elements.forEach(el => { // <-- hier moet de forEach zijn
-    const div = document.createElement("div");
-    div.className = "element";
-    div.dataset.name = el.naam; // tooltip
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-    leftContainer.appendChild(div);
+    const elements = mappen[groupIndex].elementen;
+    const container = position === 0 ? leftContainer : rightContainer;
 
-    // kleine animatie
-    setTimeout(() => div.classList.add("show"), 10);
+    elements.forEach(el => {
 
-    div.addEventListener("click", () => {
-      if (!selectedElement) {
-        selectedElement = el.naam;
-        div.classList.add("selected");
-      } else {
-        combineElements(selectedElement, el.naam);
-        selectedElement = null;
-        renderElements();
-      }
+      const div = document.createElement("div");
+      div.className = "element";
+      div.dataset.name = el.naam;
+      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+
+      container.appendChild(div);
+
+      setTimeout(() => div.classList.add("show"), 10);
+
+      div.addEventListener("click", () => {
+
+        if (!selectedElement) {
+          selectedElement = el.naam;
+          div.classList.add("selected");
+        } else {
+          combineElements(selectedElement, el.naam);
+          selectedElement = null;
+          renderElements();
+        }
+
+      });
+
     });
+
   });
+
 }
 
 // ---------------- COMBINATIE LOGICA ----------------
