@@ -30,10 +30,9 @@ html, body {
   align-items: center;
   max-width: 200px;
   font-family: "Times New Roman", serif;
-  font-size: 32px;
+  font-size: 16px;
   margin-top: 15px;
   opacity: 0.85;
-}
 
 /* ---------------- RESULT IMAGE ---------------- */
 .result-image {
