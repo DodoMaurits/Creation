@@ -378,21 +378,21 @@ function renderSide(container, map, side) {
 
 // ----- CLOSE MAP -----
 function closeMap(side) {
-  if (side === "left") {
-    openLeft = null;
-    leftSide.classList.add("hidden");
-    closedContainer.style.display = "block";
-    closedContainer.className = "left";
-  } else {
-    openRight = null;
-    rightSide.classList.add("hidden");
-    closedContainer.style.display = "block";
-    closedContainer.className = "right";
-  }
+  let container = side === "left" ? leftSide : rightSide;
+  container.classList.remove("visible");
 
-  if (!openLeft && !openRight) {
-    closedContainer.className = "";
-  }
+  setTimeout(() => {
+    if (side === "left") openLeft = null;
+    else openRight = null;
+
+    container.classList.add("hidden");
+
+    // Closed maps terugzetten
+    closedContainer.style.display = "block";
+    if (!openLeft && !openRight) closedContainer.className = "";
+    else if (side === "left") closedContainer.className = "right";
+    else closedContainer.className = "left";
+  }, 300); // moet iets kleiner zijn dan CSS transition
 }
 
 // ----- SELECT ELEMENT -----
