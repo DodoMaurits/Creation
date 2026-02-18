@@ -1,20 +1,12 @@
 // ---------------- DATA ----------------
 const mappen = [
-  {
-    naam: "Heelal",
-    icoon: "icons/Heelal.png",
-    elementen: [
-      { naam: "Oerknal", icoon: "icons/Oerknal.png" }
-    ]
-  },
-  {
-    naam: "Krachten",
-    icoon: "icons/Krachten.png",
-    elementen: [
-      { naam: "Warmte", icoon: "icons/Warmte.png" },
-      { naam: "Kou", icoon: "icons/Kou.png" }
-    ]
-  }
+  { naam: "Heelal", icoon: groepsIconen["Heelal"], elementen: [{ naam: "Oerknal", icoon: "icons/Oerknal.png" }] },
+  { naam: "Krachten", icoon: groepsIconen["Krachten"], elementen: [{ naam: "Warmte", icoon: "icons/Warmte.png" }, { naam: "Kou", icoon: "icons/Kou.png" }] },
+  { naam: "Chemie", icoon: groepsIconen["Chemie"], elementen: [] },
+  { naam: "Lucht", icoon: groepsIconen["Lucht"], elementen: [] },
+  { naam: "Water", icoon: groepsIconen["Water"], elementen: [] },
+  { naam: "Aarde", icoon: groepsIconen["Aarde"], elementen: [] },
+  { naam: "Vuur", icoon: groepsIconen["Vuur"], elementen: [] }
 ];
 
 const combinaties = [
@@ -290,16 +282,6 @@ const combinaties = [
               }
 ];
 
-const groepsIconen = {
-  "Heelal": "icons/Heelal.png",
-  "Krachten": "icons/Krachten.png",
-  "Chemie": "icons/Chemie.png",
-  "Lucht": "icons/Lucht.png",
-  "Water": "icons/Water.png",
-  "Aarde": "icons/Aarde.png",
-  "Vuur": "icons/Vuur.png"
-};
-
 // ----- STATE -----
 let openLeft = null;
 let openRight = null;
@@ -504,16 +486,7 @@ function checkCombination() {
   }
 
   match.output.forEach(newEl => {
-    let map = mappen.find(m => m.naam === newEl.map);
-    if (!map) {
-      map = {
-        naam: newEl.map,
-        icoon: groepsIconen[newEl.map],
-        elementen: []
-      };
-      mappen.push(map);
-    }
-
+    const map = mappen.find(m => m.naam === newEl.map); // map bestaat nu altijd
     if (!map.elementen.find(e => e.naam === newEl.naam)) {
       map.elementen.push(newEl);
     }
