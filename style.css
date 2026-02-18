@@ -163,13 +163,11 @@ body {
 /* ---------------- ELEMENTEN ---------------- */
 #left-elements,
 #right-elements {
-  position: relative;
+  position: absolute;
   top: 150px;
   display: grid;
   grid-template-columns: repeat(4, 100px);
   gap: 25px;
-
-  /* Rij horizontaal centreren tov map-icoon */
   justify-items: center;  /* items in de grid zelf */
 }
 
