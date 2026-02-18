@@ -363,10 +363,18 @@ function updateMapPositions() {
     if (!openLeftMaps.includes(i) && !openRightMaps.includes(i)) closed.push(i);
   });
 
-  // ========== CLOSED MAPS POSITIES ==========
-  const rowsClosed = Math.ceil(closed.length / maxPerRow);
-  const totalHeightClosed = rowsClosed * size + (rowsClosed - 1) * gap;
-  const startTopClosed = (screenH - totalHeightClosed) / 2;
+  // ----- RECHTERHELFT: open maps + kopie van linker -----
+  let rightMaps = [];
+  if (openLeftMaps.length === 1) {
+    const leftIdx = openLeftMaps[0];
+    rightMaps = mappen.map((_, i) => i).filter(i => i !== leftIdx); // andere mappen
+    rightMaps.push(leftIdx); // kopie van linker
+  }
+
+  // Bereken verticale start voor rechterhelft
+  const rowsRight = Math.ceil(rightMaps.length / maxPerRow);
+  const totalHeightRight = rowsRight * size + (rowsRight - 1) * gap;
+  const startTopRight = (screenH - totalHeightRight) / 2;
 
   maps.forEach((div, i) => {
     let top, left;
@@ -374,59 +382,30 @@ function updateMapPositions() {
     // ----- LINKER OPEN MAPS -----
     if (openLeftMaps.includes(i)) {
       const idx = openLeftMaps.indexOf(i);
-      const row = Math.floor(idx / maxPerRow);
-      const col = idx % maxPerRow;
-      const itemsInRow = Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow);
-      const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
-    
-      top = 20 + row * (size + gap);
-      left = screenW / 4 - rowWidth / 2 + col * (size + gap); // midden linkerhelft
+      top = 20;
+      left = screenW / 4 - size / 2; // midden linkerhelft
     }
     // ----- RECHTER OPEN MAPS -----
-    else if (openRightMaps.includes(i)) {
-      const idx = openRightMaps.indexOf(i);
+    else if (rightMaps.includes(i)) {
+      const idx = rightMaps.indexOf(i);
       const row = Math.floor(idx / maxPerRow);
       const col = idx % maxPerRow;
-      const itemsInRow = Math.min(maxPerRow, openRightMaps.length - row * maxPerRow);
+      const itemsInRow = Math.min(maxPerRow, rightMaps.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
-    
-      top = 20 + row * (size + gap);
-      left = screenW / 2 + (screenW / 2 - rowWidth) / 2 + col * (size + gap); // midden rechterhelft
+
+      top = startTopRight + row * (size + gap);
+      left = screenW / 2 + (screenW / 2 - rowWidth) / 2 + col * (size + gap);
     }
     // ----- GESLOTEN MAPS -----
     else {
       const idx = closed.indexOf(i);
       const row = Math.floor(idx / maxPerRow);
       const col = idx % maxPerRow;
-
       const itemsInRow = Math.min(maxPerRow, closed.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
 
-      top = startTopClosed + row * (size + gap);
-
-      // Bepaal in welke helft gesloten maps gecentreerd moeten worden
-      if (openLeftMaps.length > 0 && openRightMaps.length === 0) {
-        // Alleen linker open → andere mappen naar rechterhelft
-        const halfStart = screenW / 2;
-        const halfWidth = screenW / 2;
-        left = halfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
-      } else if (openRightMaps.length > 0 && openLeftMaps.length === 0) {
-        // Alleen rechter open → andere mappen naar linkerhelft
-        const halfStart = 0;
-        const halfWidth = screenW / 2;
-        left = halfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
-      } else if (openLeftMaps.length > 0 && openRightMaps.length > 0) {
-        // Beide open → verdeel gesloten mappen over linker + rechter
-        const halfWidth = screenW / 2;
-        if (idx < Math.ceil(closed.length / 2)) {
-          left = (halfWidth - rowWidth) / 2 + col * (size + gap); // linkerhelft
-        } else {
-          left = halfWidth + (halfWidth - rowWidth) / 2 + col * (size + gap); // rechterhelft
-        }
-      } else {
-        // Geen open maps → alles gecentreerd over hele scherm
-        left = (screenW - rowWidth) / 2 + col * (size + gap);
-      }
+      top = (screenH - (Math.ceil(closed.length / maxPerRow) * size + (Math.ceil(closed.length / maxPerRow) - 1) * gap)) / 2 + row * (size + gap);
+      left = (screenW - rowWidth) / 2 + col * (size + gap);
     }
 
     div.style.top = top + "px";
