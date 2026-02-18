@@ -371,7 +371,7 @@ function updateMapPositions() {
   // Gesloten mappen verzamelen
   const closed = [];
   maps.forEach((_, i) => {
-    if (i !== openLeft && i !== openRight) closed.push(i);
+    if (!openLeftMaps.includes(i) && !openRightMaps.includes(i)) closed.push(i);
   });
 
   // ========== CLOSED MAPS POSITIES ==========
@@ -416,26 +416,23 @@ function updateMapPositions() {
       top = startTopClosed + row * (size + gap);
 
       // Bepaal in welke helft gesloten maps gecentreerd moeten worden
-      if (openLeft !== null && openRight === null) {
+      if (openLeftMaps.length > 0 && openRightMaps.length === 0) {
         // Alleen linker open → andere mappen naar rechterhelft
         const halfStart = screenW / 2;
         const halfWidth = screenW / 2;
         left = halfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
-      } else if (openRight !== null && openLeft === null) {
+      } else if (openRightMaps.length > 0 && openLeftMaps.length === 0) {
         // Alleen rechter open → andere mappen naar linkerhelft
         const halfStart = 0;
         const halfWidth = screenW / 2;
         left = halfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
-      } else if (openLeft !== null && openRight !== null) {
-        // Beide open → gesloten mappen verdelen in linker + rechter vrije ruimtes
+      } else if (openLeftMaps.length > 0 && openRightMaps.length > 0) {
+        // Beide open → verdeel gesloten mappen over linker + rechter
         const halfWidth = screenW / 2;
-
         if (idx < Math.ceil(closed.length / 2)) {
-          // Eerste helft → linkerhelft
-          left = (halfWidth - rowWidth) / 2 + col * (size + gap);
+          left = (halfWidth - rowWidth) / 2 + col * (size + gap); // linkerhelft
         } else {
-          // Tweede helft → rechterhelft
-          left = halfWidth + (halfWidth - rowWidth) / 2 + col * (size + gap);
+          left = halfWidth + (halfWidth - rowWidth) / 2 + col * (size + gap); // rechterhelft
         }
       } else {
         // Geen open maps → alles gecentreerd over hele scherm
