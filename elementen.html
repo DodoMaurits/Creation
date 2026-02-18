@@ -41,10 +41,23 @@
       icon.style.animationDelay = `${delay}s`;
       icon.style.setProperty('--translateY', `-${translate}px`);
     });
-
+  
     // Hele body klik om door te gaan naar combinatiepagina
     document.body.addEventListener("click", () => {
       window.location.href = "combinatiepagina.html";
+    });
+  
+    // JS voor random horizontale beweging van quotes
+    const quotes = document.querySelectorAll('.result-quote');
+  
+    quotes.forEach(quote => {
+      const duration = (3 + Math.random() * 2).toFixed(2); // 3-5 seconden
+      const translate = Math.floor(5 + Math.random() * 10);  // 5-15px horizontaal
+      const delay = (Math.random() * 1).toFixed(2); // 0-1s vertraging
+  
+      quote.style.animationDuration = `${duration}s`;
+      quote.style.animationDelay = `${delay}s`;
+      quote.style.setProperty('--translateX', `${translate}px`);
     });
   </script>
 
