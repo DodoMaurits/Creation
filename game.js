@@ -316,7 +316,9 @@ renderClosed();
 // ----- RENDER CLOSED MAPS -----
 function renderClosed() {
   closedContainer.innerHTML = "";
-  closedContainer.classList.remove("hidden");
+  closedContainer.classList.remove("hidden", "left", "right"); // ← verwijder alle posities
+  closedContainer.style.transition = "opacity 0.3s ease"; // fade-in
+  closedContainer.style.opacity = 0;
 
   const grid = document.createElement("div");
   grid.className = "grid-closed";
@@ -325,16 +327,15 @@ function renderClosed() {
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
-    img.onclick = () => openMap(map);
+    img.onclick = () => openMap(map, img);
     grid.appendChild(img);
   });
 
   closedContainer.appendChild(grid);
 
-  // Fade-in
-  setTimeout(() => {
-    closedContainer.style.opacity = 1;
-  }, 20);
+  // forceer repaint
+  closedContainer.offsetHeight;
+  closedContainer.style.opacity = 1;
 }
 
 // ----- OPEN MAP -----
@@ -355,53 +356,15 @@ function openMap(map, clickedImg) {
   }
 
   // Render de map meteen
-  renderSide(container, map, side, clickedImg);
+  renderSide(container, map, side);
 
   updateClosedContainer();
-}
-
-function renderSide(container, map, side, clickedImg) {
-  container.innerHTML = "";
-
-  const title = document.createElement("img");
-  title.src = map.icoon;
-  title.className = "icon map-title";
-  title.onclick = () => closeMap(side);
-  container.appendChild(title);
-
-  const grid = document.createElement("div");
-  grid.className = "grid-elements";
-  map.elementen.forEach(el => {
-    const img = document.createElement("img");
-    img.src = el.icoon;
-    img.className = "icon element";
-    img.onclick = () => toggleSelect(el, img);
-    grid.appendChild(img);
-  });
-  container.appendChild(grid);
-
-  // Plaats de container eerst op de positie van de aangeklikte closed-map
-  const rect = clickedImg.getBoundingClientRect();
-  const appRect = document.getElementById("app").getBoundingClientRect();
-  const offsetX = rect.left - appRect.left; // positie relatief aan #app
-  container.style.transform = `translateX(${offsetX}px)`;
-
-  // Forceer browser repaint
-  container.offsetHeight;
-
-  // Verschijn direct naar linker of rechter helft
-  if (side === "left") {
-    container.style.transform = `translateX(0)`; // links gecentreerd
-  } else {
-    container.style.transform = `translateX(0)`; // rechts gecentreerd via absolute right=0
-  }
 }
 
 // ----- RENDER SIDE -----
 function renderSide(container, map, side) {
   container.innerHTML = "";
-  container.classList.remove("hidden");
-  container.classList.remove("visible");
+  container.classList.remove("hidden", "visible");
 
   const title = document.createElement("img");
   title.src = map.icoon;
@@ -422,8 +385,12 @@ function renderSide(container, map, side) {
 
   container.appendChild(grid);
 
-  // Fade-in
+  // Fade-in via opacity
+  container.style.opacity = 0;
+  container.classList.remove("visible");
   setTimeout(() => {
+    container.style.transition = "opacity 0.3s ease";
+    container.style.opacity = 1;
     container.classList.add("visible");
   }, 20);
 }
@@ -444,23 +411,18 @@ function closeMap(side) {
 }
 
 function updateClosedContainer() {
+  closedContainer.classList.remove("left", "right");
+
   if (openLeft && openRight) {
-    // Beide open → fade-out
-    closedContainer.style.opacity = 0;
+    closedContainer.style.opacity = 0; // beide open → fade-out
   } else if (openLeft && !openRight) {
-    // Alleen links open → closed-maps naar rechter helft
-    closedContainer.classList.remove("left", "right");
-    closedContainer.classList.add("right");
+    closedContainer.classList.add("right"); // midden rechterhelft
     closedContainer.style.opacity = 1;
   } else if (openRight && !openLeft) {
-    // Alleen rechts open → closed-maps naar linker helft
-    closedContainer.classList.remove("left", "right");
-    closedContainer.classList.add("left");
+    closedContainer.classList.add("left"); // midden linkerhelft
     closedContainer.style.opacity = 1;
   } else {
-    // Geen open → terug naar midden
-    closedContainer.classList.remove("left", "right");
-    closedContainer.style.opacity = 1;
+    closedContainer.style.opacity = 1; // geen open → midden
   }
 }
 
@@ -590,18 +552,13 @@ function renderNewElements(elements) {
 
   // ----- Klik anywhere → reset alles naar startpositie -----
   overlay.onclick = () => {
-    // Sluit overlay
     overlay.remove();
-
-    // Reset open maps
     openLeft = null;
     openRight = null;
-
-    // Verwijder inhoud van linker en rechter side
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
-
-    // Render alleen closed maps in het midden
+  
+    // Closed maps in midden
     renderClosed();
   };
 }
