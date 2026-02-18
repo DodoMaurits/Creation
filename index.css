@@ -68,3 +68,74 @@ body {
   50% { transform: translateX(10px); } /* 10px naar rechts */
   100% { transform: translateX(0); }
 }
+
+/* ---------------- MOBILE FRIENDLY HOMEPAGE ---------------- */
+@media (max-width: 900px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  .homepage {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .overlay {
+    padding: 40px 30px;
+    border-radius: 15px;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+
+  .start-button {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Kleinste schermen: nog meer verkleinen */
+  .homepage {
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .overlay {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+
+  .start-button {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  /* Optioneel: hint om telefoon te draaien */
+  .homepage::after {
+    content: "Draai je telefoon voor de beste ervaring";
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+}
+
