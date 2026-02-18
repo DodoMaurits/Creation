@@ -381,16 +381,19 @@ function createCloseMap(mapObj) {
 
   closeMapDiv = document.createElement("div");
   closeMapDiv.className = "map close-map";
-  closeMapDiv.dataset.name = mapObj.naam; // of je wilt iets anders zoals "Sluit"
+  closeMapDiv.dataset.name = mapObj.naam; // of "Sluit"
   closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
-  
-  // Zelfde styling
+
+  // Styling: bovenaan, gecentreerd in linkerhelft
   closeMapDiv.style.position = "absolute";
   closeMapDiv.style.width = "100px";
   closeMapDiv.style.height = "100px";
-  closeMapDiv.style.top = "50%"; // midden verticaal
-  closeMapDiv.style.left = "0px"; // linkerzijde
-  closeMapDiv.style.transform = "translateY(-50%)";
+  
+  // Horizontaal centrum van linkerhelft
+  const leftHalfCenter = window.innerWidth * 0.25; 
+  closeMapDiv.style.left = `${leftHalfCenter - 50}px`; // 50 = half van map width
+  closeMapDiv.style.top = "20px"; // beetje afstand vanaf bovenkant
+
   closeMapDiv.style.cursor = "pointer";
   closeMapDiv.style.zIndex = "20"; // boven de andere maps
   closeMapDiv.style.transition = "top 0.5s ease, left 0.5s ease";
