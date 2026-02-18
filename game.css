@@ -156,6 +156,12 @@ body {
   opacity: 1;
 }
 
+/* Alleen hover-titles van elementen in open maps */
+.grid-elements .icon-container .tooltip {
+  left: 52%; /* tikkie naar rechts */
+  transform: translateX(-50%);
+}
+
 /* ---------------- GRID LAYOUTS ---------------- */
 .grid-elements {
   display: grid;
