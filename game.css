@@ -167,10 +167,17 @@ body {
   animation: scaleIn 0.8s ease-in-out;
 }
 
+@keyframes floatSoft {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
 .result-image {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
+  animation: floatSoft 4s ease-in-out infinite;
 }
 
 .result-title {
