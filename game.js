@@ -305,6 +305,7 @@ const groepsIconen = {
 let openLeftMaps = [];   // maps links
 let openRightMaps = [];  // maps rechts
 let mapsMovedRight = false; // nieuwe status
+let closeMapDiv = null;
 let selectedElement = null;
 
 // ---------------- INIT ----------------
@@ -371,6 +372,52 @@ function updateMapPositions() {
   });
 }
 
+// ---------------- SLUITMAP ----------------
+function createCloseMap(mapObj) {
+  const container = document.getElementById("maps-container");
+
+  // --- Check of sluitmap al bestaat ---
+  if (closeMapDiv) return;
+
+  closeMapDiv = document.createElement("div");
+  closeMapDiv.className = "map close-map";
+  closeMapDiv.dataset.name = mapObj.naam; // of je wilt iets anders zoals "Sluit"
+  closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
+  
+  // Zelfde styling
+  closeMapDiv.style.position = "absolute";
+  closeMapDiv.style.width = "100px";
+  closeMapDiv.style.height = "100px";
+  closeMapDiv.style.top = "50%"; // midden verticaal
+  closeMapDiv.style.left = "0px"; // linkerzijde
+  closeMapDiv.style.transform = "translateY(-50%)";
+  closeMapDiv.style.cursor = "pointer";
+  closeMapDiv.style.zIndex = "20"; // boven de andere maps
+  closeMapDiv.style.transition = "top 0.5s ease, left 0.5s ease";
+
+  closeMapDiv.addEventListener("click", () => resetMaps());
+
+  container.appendChild(closeMapDiv);
+}
+
+function resetMaps() {
+  // Verwijder sluitmap
+  if (closeMapDiv) {
+    closeMapDiv.remove();
+    closeMapDiv = null;
+  }
+
+  // Reset status
+  mapsMovedRight = false;
+  openLeftMaps = [];
+  openRightMaps = [];
+  selectedElement = null;
+
+  // Herstel positie van maps
+  updateMapPositions();
+  renderElements();
+}
+
 // ---------------- RENDER ELEMENTEN ----------------
 function renderElements() {
   const leftContainer = document.getElementById("left-elements");
@@ -396,13 +443,18 @@ function renderElements() {
 
 // ---------------- HANDLE MAP CLICK ----------------
 function handleMapClick(idx) {
+  const container = document.getElementById("maps-container");
+  const clickedMap = mappen[idx];
+
   // --- Eerste klik verplaatst alle maps naar rechts ---
   if (!mapsMovedRight) {
     mapsMovedRight = true;
-    // Voeg alleen de aangeklikte map toe aan de linker elementen
     openLeftMaps = [idx];
+
+    // Maak de sluitmap
+    createCloseMap(clickedMap);
   } else {
-    // Als maps al naar rechts zijn, klik op map voegt toe of toggle
+    // Toggle links
     if (openLeftMaps.includes(idx)) openLeftMaps = openLeftMaps.filter(i => i !== idx);
     else openLeftMaps.push(idx);
   }
@@ -411,7 +463,7 @@ function handleMapClick(idx) {
   updateMapPositions();
   renderElements();
 }
-  
+
 // ---------------- HANDLE ELEMENT CLICK ----------------
 function handleElementClick(name, div) {
   if (!selectedElement) {
