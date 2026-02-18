@@ -310,6 +310,11 @@ let selectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
+  console.log("init called");
+  console.log("maps-container:", document.getElementById("maps-container"));
+  console.log("left-elements:", document.getElementById("left-elements"));
+  console.log("right-elements:", document.getElementById("right-elements"));
+
   openLeftMaps = [];
   openRightMaps = [];
   
@@ -516,7 +521,3 @@ window.addEventListener("resize", () => {
   }
 });
 
-// ---------------- START ----------------
-window.addEventListener("DOMContentLoaded", () => {
-  init();
-});
