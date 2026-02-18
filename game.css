@@ -142,9 +142,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 680px; /* 4 icons + gaps */
+  width: auto;
   margin: 0 auto;
 }
+
 
 /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 .selected {
