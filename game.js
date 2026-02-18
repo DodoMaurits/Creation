@@ -338,23 +338,63 @@ function renderClosed() {
 }
 
 // ----- OPEN MAP -----
-function openMap(map) {
+function openMap(map, clickedImg) {
   let side = null;
+  let container;
 
   if (!openLeft) {
     openLeft = map;
     side = "left";
-    renderSide(leftSide, map, "left");
+    container = leftSide;
   } else if (!openRight) {
     openRight = map;
     side = "right";
-    renderSide(rightSide, map, "right");
+    container = rightSide;
   } else {
-    // Beide open → niks doen
-    return;
+    return; // beide open → niks doen
   }
 
+  // Render de map meteen
+  renderSide(container, map, side, clickedImg);
+
   updateClosedContainer();
+}
+
+function renderSide(container, map, side, clickedImg) {
+  container.innerHTML = "";
+
+  const title = document.createElement("img");
+  title.src = map.icoon;
+  title.className = "icon map-title";
+  title.onclick = () => closeMap(side);
+  container.appendChild(title);
+
+  const grid = document.createElement("div");
+  grid.className = "grid-elements";
+  map.elementen.forEach(el => {
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "icon";
+    img.onclick = () => toggleSelect(el, img);
+    grid.appendChild(img);
+  });
+  container.appendChild(grid);
+
+  // Plaats de container eerst op de positie van de aangeklikte closed-map
+  const rect = clickedImg.getBoundingClientRect();
+  const appRect = document.getElementById("app").getBoundingClientRect();
+  const offsetX = rect.left - appRect.left; // positie relatief aan #app
+  container.style.transform = `translateX(${offsetX}px)`;
+
+  // Forceer browser repaint
+  container.offsetHeight;
+
+  // Verschijn direct naar linker of rechter helft
+  if (side === "left") {
+    container.style.transform = `translateX(0)`; // links gecentreerd
+  } else {
+    container.style.transform = `translateX(0)`; // rechts gecentreerd via absolute right=0
+  }
 }
 
 // ----- RENDER SIDE -----
