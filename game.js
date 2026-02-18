@@ -373,60 +373,59 @@ function openMap(map, clickedImg) {
 }
 
 // ----- RENDER SIDE -----
-function renderSide(container, map, side) {
-  container.innerHTML = "";
-  container.classList.remove("hidden", "visible");
+function renderSide(parentContainer, map, side) {
+  parentContainer.innerHTML = "";
+  parentContainer.classList.remove("hidden", "visible");
 
-  const container = document.createElement("div");
-  container.className = "icon-container";
-  
-  const title = document.createElement("img");
-  title.src = map.icoon;
-  title.className = "icon map-title";
-  title.onclick = () => closeMap(side);
-  
-  const tooltip = document.createElement("div");
-  tooltip.className = "tooltip";
-  tooltip.textContent = map.naam;
-  
-  container.appendChild(title);
-  container.appendChild(tooltip);
-  container.style.marginBottom = "20px"; // optioneel, ruimte tussen titel en grid
-  container.style.display = "inline-block";
-  
-  container.appendChild(title);
-  container.appendChild(tooltip);
-  
+  // --- Title van de open map ---
+  const titleContainer = document.createElement("div");
+  titleContainer.className = "icon-container";
+
+  const titleImg = document.createElement("img");
+  titleImg.src = map.icoon;
+  titleImg.className = "icon map-title";
+  titleImg.onclick = () => closeMap(side);
+
+  const titleTooltip = document.createElement("div");
+  titleTooltip.className = "tooltip";
+  titleTooltip.textContent = map.naam;
+
+  titleContainer.appendChild(titleImg);
+  titleContainer.appendChild(titleTooltip);
+
+  parentContainer.appendChild(titleContainer);
+
+  // --- Grid van elementen ---
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
   map.elementen.forEach(el => {
-    const container = document.createElement("div");
-    container.className = "icon-container";
-  
+    const elContainer = document.createElement("div");
+    elContainer.className = "icon-container";
+
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "icon element";
     img.onclick = () => toggleSelect(el, img, side, map.naam);
-  
+
     const tooltip = document.createElement("div");
     tooltip.className = "tooltip";
     tooltip.textContent = el.naam;
-  
-    container.appendChild(img);
-    container.appendChild(tooltip);
-    grid.appendChild(container);
+
+    elContainer.appendChild(img);
+    elContainer.appendChild(tooltip);
+
+    grid.appendChild(elContainer);
   });
 
-  container.appendChild(grid);
+  parentContainer.appendChild(grid);
 
-  // Fade-in via opacity
-  container.style.opacity = 0;
-  container.classList.remove("visible");
+  // --- Fade-in ---
+  parentContainer.style.opacity = 0;
   setTimeout(() => {
-    container.style.transition = "opacity 0.3s ease";
-    container.style.opacity = 1;
-    container.classList.add("visible");
+    parentContainer.style.transition = "opacity 0.3s ease";
+    parentContainer.style.opacity = 1;
+    parentContainer.classList.add("visible");
   }, 20);
 }
 
