@@ -300,42 +300,6 @@ const groepsIconen = {
   "Vuur": "icons/Vuur.png"
 };
 
-// ----- DATA (jouw data hier plakken) -----
-const mappen = [
-  {
-    naam: "Heelal",
-    icoon: "icons/Heelal.png",
-    elementen: [{ naam: "Oerknal", icoon: "icons/Oerknal.png" }]
-  },
-  {
-    naam: "Krachten",
-    icoon: "icons/Krachten.png",
-    elementen: [
-      { naam: "Warmte", icoon: "icons/Warmte.png" },
-      { naam: "Kou", icoon: "icons/Kou.png" }
-    ]
-  }
-];
-
-const combinaties = [
-  {
-    input: ["Oerknal", "Kou"],
-    output: [
-      {
-        naam: "Zwaartekracht",
-        icoon: "icons/Zwaartekracht.png",
-        map: "Krachten"
-      }
-    ]
-  }
-];
-
-const groepsIconen = {
-  Heelal: "icons/Heelal.png",
-  Krachten: "icons/Krachten.png",
-  Chemie: "icons/Chemie.png"
-};
-
 // ----- STATE -----
 let openLeft = null;
 let openRight = null;
