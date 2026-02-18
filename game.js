@@ -531,6 +531,12 @@ function combineElements(e1, e2) {
 window.addEventListener("resize", () => {
   updateMapPositions();
   renderElements();
+
+  // Update sluitmap positie bij resize
+  if (closeMapDiv) {
+    const leftHalfCenter = window.innerWidth * 0.25;
+    closeMapDiv.style.left = `${leftHalfCenter - 50}px`;
+  }
 });
 
 // ---------------- START ----------------
