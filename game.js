@@ -304,6 +304,7 @@ const groepsIconen = {
 // ---------------- STATUS ----------------
 let openLeftMaps = [];   // maps links
 let openRightMaps = [];  // maps rechts
+let mapsMovedRight = false; // nieuwe status
 let selectedElement = null;
 
 // ---------------- INIT ----------------
@@ -346,38 +347,28 @@ function updateMapPositions() {
   maps.forEach((div, i) => {
     let top, left;
 
-    if (openLeftMaps.includes(i)) {
-      const idxInLeft = openLeftMaps.indexOf(i);
-      const row = Math.floor(idxInLeft / maxPerRow);
-      const col = idxInLeft % maxPerRow;
-      const rowWidth = Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow) * size +
-                       (Math.min(maxPerRow, openLeftMaps.length - row * maxPerRow) - 1) * gap;
-      top = 20 + row * (size + gap);
-      left = window.innerWidth / 4 - rowWidth / 2 + col * (size + gap);
-
-    } else if (openRightMaps.includes(i)) {
-      const idxInRight = openRightMaps.indexOf(i);
-      const row = Math.floor(idxInRight / maxPerRow);
-      const col = idxInRight % maxPerRow;
-      const rowWidth = Math.min(maxPerRow, openRightMaps.length - row * maxPerRow) * size +
-                       (Math.min(maxPerRow, openRightMaps.length - row * maxPerRow) - 1) * gap;
-      const totalHeight = Math.ceil(openRightMaps.length / maxPerRow) * (size + gap);
-      const startTop = (window.innerHeight - totalHeight) / 2;
-      top = startTop + row * (size + gap);
-      left = window.innerWidth / 2 + (window.innerWidth / 2 - rowWidth) / 2 + col * (size + gap);
-
-    } else {
-      // ----- INIT / gesloten maps: horizontaal gecentreerd -----
+    if (!mapsMovedRight) {
+      // --- INIT: alle maps horizontaal gecentreerd in midden ---
       const totalMaps = mappen.length;
       const rowWidth = Math.min(maxPerRow, totalMaps) * size + (Math.min(maxPerRow, totalMaps) - 1) * gap;
       top = window.innerHeight / 2 - size / 2;
       left = window.innerWidth / 2 - rowWidth / 2 + i * (size + gap);
+    } else {
+      // --- ALLE MAPS naar rechterhelft ---
+      const totalMaps = mappen.length;
+      const rowWidth = Math.min(maxPerRow, totalMaps) * size + (Math.min(maxPerRow, totalMaps) - 1) * gap;
+      const totalHeight = Math.ceil(totalMaps / maxPerRow) * (size + gap);
+      const startTop = (window.innerHeight - totalHeight) / 2;
+      const row = Math.floor(i / maxPerRow);
+      const col = i % maxPerRow;
+
+      top = startTop + row * (size + gap);
+      left = window.innerWidth / 2 + (window.innerWidth / 2 - rowWidth) / 2 + col * (size + gap);
     }
 
     div.style.top = `${top}px`;
     div.style.left = `${left}px`;
   });
-
 }
 
 // ---------------- RENDER ELEMENTEN ----------------
@@ -405,18 +396,22 @@ function renderElements() {
 
 // ---------------- HANDLE MAP CLICK ----------------
 function handleMapClick(idx) {
-  // Als al links: verwijder
-  if (openLeftMaps.includes(idx)) openLeftMaps = openLeftMaps.filter(i => i !== idx);
-  else openLeftMaps.push(idx);
-
-  // Rechterhelft = rest
-  openRightMaps = mappen.map((_, i) => i).filter(i => !openLeftMaps.includes(i));
+  // --- Eerste klik verplaatst alle maps naar rechts ---
+  if (!mapsMovedRight) {
+    mapsMovedRight = true;
+    // Voeg alleen de aangeklikte map toe aan de linker elementen
+    openLeftMaps = [idx];
+  } else {
+    // Als maps al naar rechts zijn, klik op map voegt toe of toggle
+    if (openLeftMaps.includes(idx)) openLeftMaps = openLeftMaps.filter(i => i !== idx);
+    else openLeftMaps.push(idx);
+  }
 
   selectedElement = null;
   updateMapPositions();
   renderElements();
 }
-
+  
 // ---------------- HANDLE ELEMENT CLICK ----------------
 function handleElementClick(name, div) {
   if (!selectedElement) {
