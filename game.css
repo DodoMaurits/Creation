@@ -340,36 +340,116 @@ body {
   }
 }
 
-/* ---------------- MEDIA ---------------- */
+/* ---------------- MOBILE FRIENDLY ---------------- */
 @media (max-width: 900px) {
+  /* Dwing iets kleinere landscape layout */
+  body {
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+
+  #app {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* Open maps: minder kolommen */
   .grid-elements {
+    grid-template-columns: repeat(2, minmax(80px, 1fr));
+    column-gap: 20px;
+    row-gap: 15px;
+  }
+
+  /* Closed maps: maximaal 2 per rij */
+  #closed-container {
+    grid-template-columns: repeat(2, minmax(70px, 1fr));
+    gap: 15px;
+    width: 90%; /* smaller dan desktop */
+  }
+
+  /* Iconen */
+  .icon.element {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon.map,
+  .icon.map-title {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon.map-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  /* Result overlay grid */
+  .result-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
-}
-@media (max-width: 900px) {
-  .result-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  /* Result box font en afbeeldingen kleiner */
+  .result-title {
+    font-size: 28px;
+  }
+
+  .result-quote {
+    font-size: 16px;
+  }
+
+  .result-image {
+    width: 100px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 500px) {
-  .result-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-}
-
-@media (max-width: 500px) {
+  /* Kleinste schermen: 1 kolom per rij */
   .grid-elements {
     grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  #closed-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 10px;
+  }
+
+  .icon.element {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon.map,
+  .icon.map-title {
+    width: 90px;
+    height: 90px;
+  }
+
+  .icon.map-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .result-title {
+    font-size: 22px;
+  }
+
+  .result-quote {
+    font-size: 14px;
+  }
+
+  .result-image {
+    width: 80px;
+    margin-bottom: 8px;
   }
 }
-
-@media (max-width: 500px) {
-  .icon.element { width: 80px; height: 80px; }
-  .icon.map { width: 100px; height: 100px; }
-  .icon.map-title { width: 100px; height: 100px; margin-top: 30px; }
-}
-
-
-
-
