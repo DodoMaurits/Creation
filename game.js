@@ -374,24 +374,26 @@ function updateMapPositions() {
 
 // ---------------- SLUITMAP ----------------
 function createCloseMap(mapObj) {
-  // --- maak de div ---
-  if (closeMapDiv) return; // al aanwezig
+  if (closeMapDiv) return;
+
   closeMapDiv = document.createElement("div");
   closeMapDiv.className = "map close-map";
   closeMapDiv.dataset.name = mapObj.naam; 
   closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
-
-  // voeg toe aan body
-  document.body.appendChild(closeMapDiv);
-
-  // Positie: centrum van linkerhelft
-  const leftHalfCenter = window.innerWidth / 2 * 0.5;
-  closeMapDiv.style.left = `${leftHalfCenter - closeMapDiv.offsetWidth / 2}px`;
-  closeMapDiv.style.top = "20px"; // afstand van boven
+  closeMapDiv.style.position = "absolute";
+  closeMapDiv.style.top = "20px";
   closeMapDiv.style.cursor = "pointer";
   closeMapDiv.style.zIndex = "50";
 
-  // klik om te resetten
+  document.body.appendChild(closeMapDiv);
+
+  // Wacht tot het element is gerenderd, dan center
+  requestAnimationFrame(() => {
+    const leftHalfCenter = window.innerWidth / 4; // helft van linkerhelft
+    const width = closeMapDiv.getBoundingClientRect().width;
+    closeMapDiv.style.left = `${leftHalfCenter - width / 2}px`;
+  });
+
   closeMapDiv.addEventListener("click", () => resetMaps());
 }
 
