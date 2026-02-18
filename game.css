@@ -33,7 +33,7 @@ body {
 }
 
 #right-side {
-  right: 0;
+  left: 50%;
 }
 
 .hidden {
