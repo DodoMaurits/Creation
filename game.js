@@ -324,14 +324,8 @@ function renderMaps() {
   container.innerHTML = "";
 
   mappen.forEach((map, idx) => {
-    const div = document.createElement("div");
-    div.className = "map";
-    div.dataset.index = idx;
-    div.dataset.name = map.naam;
-    div.innerHTML = `<img src="${map.icoon}" alt="${map.naam}">`;
-    div.style.position = "absolute"; // kan ook via CSS
-    div.addEventListener("click", () => handleMapClick(idx));
-    container.appendChild(div);
+    let currentIdx = idx; // belangrijk bij dynamische listeners
+    div.addEventListener("click", () => handleMapClick(currentIdx));
   });
 }
 
@@ -381,10 +375,14 @@ function createCloseMap(mapObj) {
   closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
   
   // Zelfde styling
-  closeMapDiv.style.top = "20px";   // afstand vanaf bovenkant van container
-  closeMapDiv.style.left = "20px";  // afstand vanaf linkerkant van container
+  closeMapDiv.style.position = "absolute";
+  closeMapDiv.style.width = "100px";
+  closeMapDiv.style.height = "100px";
+  closeMapDiv.style.top = "50%"; // midden verticaal
+  closeMapDiv.style.left = "0px"; // linkerzijde
+  closeMapDiv.style.transform = "translateY(-50%)";
   closeMapDiv.style.cursor = "pointer";
-  closeMapDiv.style.zIndex = "20"; 
+  closeMapDiv.style.zIndex = "20"; // boven de andere maps
   closeMapDiv.style.transition = "top 0.5s ease, left 0.5s ease";
 
   closeMapDiv.addEventListener("click", () => resetMaps());
@@ -420,21 +418,9 @@ function renderElements() {
 
   openLeftMaps.forEach(idx => {
     const elements = mappen[idx].elementen;
-
     elements.forEach(el => {
-      const div = document.createElement("div");
-      div.className = "element";
-      div.dataset.name = el.naam;
-      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-
-      leftContainer.appendChild(div);
-
-      // kleine delay voor animatie
-      setTimeout(() => div.classList.add("show"), 10);
-
-      div.addEventListener("click", () => {
-        handleElementClick(el.naam, div);
-      });
+      let elName = el.naam;
+      div.addEventListener("click", () => handleElementClick(elName, div));
     });
   });
 }
@@ -526,6 +512,11 @@ function combineElements(e1, e2) {
 window.addEventListener("resize", () => {
   updateMapPositions();
   renderElements();
+
+  // Update sluitmap positie bij resize
+  if (closeMapDiv) {
+    const leftHalfCenter = window.innerWidth * 0.25;
+    closeMapDiv.style.left = `${window.innerWidth * 0.25 - 50}px`;
   }
 });
 
