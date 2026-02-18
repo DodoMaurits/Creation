@@ -145,6 +145,16 @@ body {
   background-color: transparent;
 }
 
+.close-map {
+  position: fixed;      /* FIXED, zodat het altijd tov viewport staat */
+  top: 20px;            /* beetje afstand vanaf bovenkant */
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 50;          /* boven de andere maps */
+  transition: top 0.5s ease, left 0.5s ease;
+}
+
 .map img {
   width: 100px;
   height: 100px;
