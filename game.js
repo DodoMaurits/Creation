@@ -374,30 +374,25 @@ function updateMapPositions() {
 
 // ---------------- SLUITMAP ----------------
 function createCloseMap(mapObj) {
+  // --- maak de div ---
+  if (closeMapDiv) return; // al aanwezig
+  closeMapDiv = document.createElement("div");
+  closeMapDiv.className = "map close-map";
+  closeMapDiv.dataset.name = mapObj.naam; 
+  closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
+
+  // voeg toe aan body
   document.body.appendChild(closeMapDiv);
 
-  // Horizontaal centrum van linkerhelft
-  const leftHalfCenter = window.innerWidth / 2 * 0.5; // halve breedte van linkerhelft
+  // Positie: centrum van linkerhelft
+  const leftHalfCenter = window.innerWidth / 2 * 0.5;
   closeMapDiv.style.left = `${leftHalfCenter - closeMapDiv.offsetWidth / 2}px`;
-  closeMapDiv.style.top = "20px"; // beetje afstand vanaf bovenkant
-}
+  closeMapDiv.style.top = "20px"; // afstand van boven
+  closeMapDiv.style.cursor = "pointer";
+  closeMapDiv.style.zIndex = "50";
 
-function resetMaps() {
-  // Verwijder sluitmap
-  if (closeMapDiv) {
-    closeMapDiv.remove();
-    closeMapDiv = null;
-  }
-
-  // Reset status
-  mapsMovedRight = false;
-  openLeftMaps = [];
-  openRightMaps = [];
-  selectedElement = null;
-
-  // Herstel positie van maps
-  updateMapPositions();
-  renderElements();
+  // klik om te resetten
+  closeMapDiv.addEventListener("click", () => resetMaps());
 }
 
 // ---------------- RENDER ELEMENTEN ----------------
