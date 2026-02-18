@@ -319,7 +319,7 @@ function renderClosed() {
   closedContainer.className = "";
 
   const grid = document.createElement("div");
-  grid.className = "grid";
+  grid.className = "grid-closed";
 
   mappen.forEach(map => {
     const img = document.createElement("img");
@@ -357,7 +357,7 @@ function renderSide(container, map, side) {
   container.appendChild(title);
 
   const grid = document.createElement("div");
-  grid.className = "grid";
+  grid.className = "grid-elements";
 
   map.elementen.forEach(el => {
     const img = document.createElement("img");
