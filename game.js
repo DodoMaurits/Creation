@@ -419,15 +419,22 @@ function renderElements() {
   rightContainer.innerHTML = "";
 
   openLeftMaps.forEach(idx => {
-    const div = document.createElement("div");
-    div.className = "element";
-    div.dataset.name = el.naam;
-    div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
-    leftContainer.appendChild(div); // of rightContainer afhankelijk
     const elements = mappen[idx].elementen;
+
     elements.forEach(el => {
-      let elName = el.naam;
-      div.addEventListener("click", () => handleElementClick(elName, div));
+      const div = document.createElement("div");
+      div.className = "element";
+      div.dataset.name = el.naam;
+      div.innerHTML = `<img src="${el.icoon}" alt="${el.naam}">`;
+
+      leftContainer.appendChild(div);
+
+      // kleine delay voor animatie
+      setTimeout(() => div.classList.add("show"), 10);
+
+      div.addEventListener("click", () => {
+        handleElementClick(el.naam, div);
+      });
     });
   });
 }
