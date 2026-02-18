@@ -323,34 +323,37 @@ function init() {
     div.style.transition = "all 0.4s ease";
 
     div.addEventListener("click", () => {
-    
       const index = idx;
-    
-      // Sluiten als al open in links
+
+      // --------- SLUITEN LINKS ---------
       if (openLeftMaps.includes(index)) {
         openLeftMaps = openLeftMaps.filter(i => i !== index);
       }
-      // Sluiten als al open in rechts
+      // --------- SLUITEN RECHTS ---------
       else if (openRightMaps.includes(index)) {
         openRightMaps = openRightMaps.filter(i => i !== index);
       }
-      // Anders openen
+      // --------- OPENEN ---------
       else {
         if (openLeftMaps.length === 0) {
+          // Open links
           openLeftMaps.push(index);
-        } 
-        else if (openRightMaps.length === 0) {
-          // Voeg map toe aan rechts, zelfs als hij al links open is
-          if (!openRightMaps.includes(index)) {
-            openRightMaps.push(index);
-          }
+
+          // Voeg meteen kopie toe rechts als die nog niet bestaat
+          if (!openRightMaps.includes(index)) openRightMaps.push(index);
+        } else if (openRightMaps.length === 0) {
+          // Open rechts
+          openRightMaps.push(index);
         } else {
-          // Beide helften vol → doe niets of laat een melding zien
-          console.log("Beide helften vol");
+          // Beide helften al vol → optioneel nog kopie rechts
+          if (!openRightMaps.includes(index)) openRightMaps.push(index);
         }
       }
-    
+
+      // Reset geselecteerd element
       selectedElement = null;
+
+      // Update posities van mappen en render de elementen
       updateMapPositions();
       renderElements();
     });
@@ -358,6 +361,7 @@ function init() {
     container.appendChild(div);
   });
 
+  // Eerste render
   updateMapPositions();
   renderElements();
 }
