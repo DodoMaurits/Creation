@@ -540,45 +540,44 @@ function shakeErrorElements(elements) {
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements) {
-  // Check of er al een container is
-  let popup = document.getElementById("new-elements-popup");
-  if (!popup) {
-    popup = document.createElement("div");
-    popup.id = "new-elements-popup";
-    document.body.appendChild(popup);
-  }
+  // Verwijder bestaande overlay indien aanwezig
+  const oldOverlay = document.getElementById("result-overlay");
+  if (oldOverlay) oldOverlay.remove();
 
-  // Maak leeg
-  popup.innerHTML = "";
+  const overlay = document.createElement("div");
+  overlay.id = "result-overlay";
 
-  // Voeg titel toe
-  const title = document.createElement("h2");
-  title.innerText = "Nieuwe elementen ontdekt!";
-  popup.appendChild(title);
-
-  // Voeg elementen toe
   const grid = document.createElement("div");
-  grid.className = "grid-elements";
+  grid.className = "result-grid";
+
   elements.forEach(el => {
+    const box = document.createElement("div");
+    box.className = "result-box";
+
     const img = document.createElement("img");
     img.src = el.icoon;
-    img.className = "icon";
-    grid.appendChild(img);
+    img.className = "result-image";
 
-    // Optioneel: klik op nieuwe element → opent map automatisch
-    img.onclick = () => {
-      const map = mappen.find(m => m.naam === el.map);
-      if (map) openMap(map);
-      popup.style.opacity = 0; // verdwijnt
-      setTimeout(() => popup.remove(), 300);
-    };
+    const title = document.createElement("div");
+    title.className = "result-title";
+    title.innerHTML = el.naam;
+
+    const quote = document.createElement("div");
+    quote.className = "result-quote";
+    quote.innerHTML = el.quote || "";
+
+    box.appendChild(img);
+    box.appendChild(title);
+    box.appendChild(quote);
+
+    grid.appendChild(box);
   });
 
-  popup.appendChild(grid);
+  overlay.appendChild(grid);
+  document.body.appendChild(overlay);
 
-  // Fade-in
-  popup.style.opacity = 0;
-  setTimeout(() => {
-    popup.style.opacity = 1;
-  }, 20);
+  // Sluit overlay bij klik
+  overlay.onclick = () => {
+    overlay.remove();
+  };
 }
