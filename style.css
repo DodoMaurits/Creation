@@ -8,7 +8,7 @@ body {
 
 /* ---------------- HOMEPAGE ---------------- */
 .homepage {
-  height: 100vh;
+  height: 100vh;f
   width: 100vw;
   background-image: url("afb/beginscherm.png");
   background-position: center;
@@ -161,14 +161,14 @@ body {
 }
 
 /* ---------------- ELEMENTEN ---------------- */
-#left-elements,
-#right-elements {
-  position: relative;
+#left-elements, #right-elements {
+  position: absolute;
   top: 150px;
   display: grid;
   grid-template-columns: repeat(4, 100px);
   gap: 25px;
-  justify-items: center;  /* items in de grid zelf */
+  left: 25%; /* resp. 75% voor right */
+  transform: translateX(-50%);
 }
 
 /* Linkerhelft - grid precies gecentreerd op 25% van scherm */
@@ -192,10 +192,8 @@ body {
   height: 100px;
 }
 
-/* grid wrapper */
 #left-elements,
 #right-elements {
-  flex-wrap: wrap;
   gap: 25px;
   max-width: 475px; /* 4 * 100px + 3 * 25px */
 }
