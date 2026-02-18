@@ -131,13 +131,15 @@ body {
 .icon-container {
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 
 .tooltip {
   position: absolute;
-  bottom: -25px;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 6px;
   background: rgba(0,0,0,0.85);
   color: white;
   padding: 4px 8px;
@@ -146,7 +148,8 @@ body {
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.15s ease;
-  pointer-events: none; /* zodat hover blijft werken op icon */
+  pointer-events: none;
+  z-index: 10;
 }
 
 .icon-container:hover .tooltip {
