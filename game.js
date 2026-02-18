@@ -349,6 +349,7 @@ function openMap(map) {
 function renderSide(container, map, side) {
   container.innerHTML = "";
   container.classList.remove("hidden");
+  container.classList.remove("visible");
 
   const title = document.createElement("img");
   title.src = map.icoon;
@@ -368,6 +369,11 @@ function renderSide(container, map, side) {
   });
 
   container.appendChild(grid);
+
+  // Kleine timeout zodat transition speelt
+  setTimeout(() => {
+    container.classList.add("visible");
+  }, 20);
 }
 
 // ----- CLOSE MAP -----
