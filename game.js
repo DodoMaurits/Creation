@@ -384,15 +384,10 @@ function createCloseMap(mapObj) {
   closeMapDiv.dataset.name = mapObj.naam; // of "Sluit"
   closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
 
-  // Styling: bovenaan, gecentreerd in linkerhelft
-  closeMapDiv.style.position = "absolute";
-  closeMapDiv.style.width = "100px";
-  closeMapDiv.style.height = "100px";
-  
+  closeMapDiv.classList.add("close-map"); // CSS class met fixed position
   // Horizontaal centrum van linkerhelft
   const leftHalfCenter = window.innerWidth * 0.25; 
-  closeMapDiv.style.left = `${leftHalfCenter - 50}px`; // 50 = half van map width
-  closeMapDiv.style.top = "20px"; // beetje afstand vanaf bovenkant
+  closeMapDiv.style.left = `${leftHalfCenter - 50}px`; // center horizontaal
 
   closeMapDiv.style.cursor = "pointer";
   closeMapDiv.style.zIndex = "20"; // boven de andere maps
