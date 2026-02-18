@@ -307,6 +307,7 @@ let openRightMaps = [];  // maps rechts
 let selectedElement = null;
 
 // ---------------- INIT ----------------
+// ---------------- INIT ----------------
 function init() {
   const container = document.getElementById("maps-container");
   container.innerHTML = "";
@@ -322,26 +323,32 @@ function init() {
     div.style.height = "100px";
     div.style.transition = "all 0.4s ease";
 
-    div.addEventListener("click", () => {
-      const index = idx;
-
-      // Klik op een map → linkerkant = aangeklikte map, rechterkant = alle andere + kopie
-      openLeftMaps = [index]; // linkerhelft: alleen aangeklikte map
-      openRightMaps = mappen.map((_, i) => i).filter(i => i !== index); // alle andere mappen
-      openRightMaps.push(index); // kopie van aangeklikte map rechts
-
-      // Reset geselecteerd element
-      selectedElement = null;
-
-      // Update posities van mappen en render de elementen
-      updateMapPositions();
-      renderElements();
-    });
+    // Kliklogica via aparte functie
+    div.addEventListener("click", () => handleMapClick(idx));
 
     container.appendChild(div);
   });
 
-  // Eerste render
+  updateMapPositions();
+  renderElements();
+}
+
+// ---------------- HANDLE MAP CLICK ----------------
+function handleMapClick(index) {
+  if (openLeftMaps.includes(index)) {
+    // Sluit de map
+    openLeftMaps = [];
+    openRightMaps = openRightMaps.filter(i => i !== index);
+  } else {
+    // Open linker map
+    openLeftMaps = [index];
+
+    // Rechterhelft: alle andere mappen + kopie van linker
+    openRightMaps = mappen.map((_, i) => i).filter(i => i !== index);
+    openRightMaps.push(index);
+  }
+
+  selectedElement = null;
   updateMapPositions();
   renderElements();
 }
@@ -461,6 +468,21 @@ function renderElements() {
   }
 }
 
+function handleMapClick(index) {
+  if (openLeftMaps.includes(index)) {
+    openLeftMaps = [];
+    openRightMaps = openRightMaps.filter(i => i !== index);
+  } else {
+    openLeftMaps = [index];
+    openRightMaps = mappen.map((_, i) => i).filter(i => i !== index);
+    openRightMaps.push(index);
+  }
+
+  selectedElement = null;
+  updateMapPositions();
+  renderElements();
+}
+    
 function handleElementClick(name, div) {
 
   if (!selectedElement) {
@@ -512,7 +534,23 @@ function combineElements(e1, e2) {
         elementen: []
       };
       mappen.push(mapObj);
-      init(); // nieuwe map renderen
+    
+      // Alleen de map DOM toevoegen
+      const container = document.getElementById("maps-container");
+      const idx = mappen.length - 1;
+      const div = document.createElement("div");
+      div.className = "map";
+      div.dataset.index = idx;
+      div.dataset.name = mapObj.naam;
+      div.innerHTML = `<img src="${mapObj.icoon}" alt="">`;
+      div.style.position = "absolute";
+      div.style.width = "100px";
+      div.style.height = "100px";
+      div.style.transition = "all 0.4s ease";
+    
+      // Event listener zoals bij init
+      div.addEventListener("click", () => handleMapClick(idx));
+      container.appendChild(div);
     }
 
     if (!mapObj.elementen.find(el => el.naam === out.naam)) {
