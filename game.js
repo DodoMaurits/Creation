@@ -466,13 +466,13 @@ function checkCombination() {
     return;
   }
 
-  // Verzamel alle nieuwe elementen uit alle matches
+  // Verzamel **altijd** alle output-elementen voor de overlay
   const newElements = [];
-
+  
   matches.forEach(match => {
     match.output.forEach(newEl => {
       let map = mappen.find(m => m.naam === newEl.map);
-
+  
       // Voeg map toe als die nog niet bestaat
       if (!map) {
         map = {
@@ -482,12 +482,14 @@ function checkCombination() {
         };
         mappen.push(map);
       }
-
-      // Voeg element toe als die nog niet bestaat
+  
+      // Voeg element toe aan map als die nog niet bestaat
       if (!map.elementen.find(e => e.naam === newEl.naam)) {
         map.elementen.push(newEl);
-        newElements.push(newEl); // voor overlay
       }
+  
+      // Voeg **altijd** toe voor overlay
+      newElements.push(newEl);
     });
   });
 
