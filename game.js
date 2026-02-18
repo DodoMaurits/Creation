@@ -310,14 +310,9 @@ let selectedElement = null;
 
 // ---------------- INIT ----------------
 function init() {
-  console.log("init called");
-  console.log("maps-container:", document.getElementById("maps-container"));
-  console.log("left-elements:", document.getElementById("left-elements"));
-  console.log("right-elements:", document.getElementById("right-elements"));
-
-  openLeftMaps = [0]; // <-- eerste map standaard open
-  mapsMovedRight = false; // startpositie is nog midden
-
+  openLeftMaps = [];
+  openRightMaps = [];
+  
   renderMaps();
   updateMapPositions();
   renderElements();
@@ -379,27 +374,30 @@ function updateMapPositions() {
 
 // ---------------- SLUITMAP ----------------
 function createCloseMap(mapObj) {
-  if (closeMapDiv) return;
-
-  closeMapDiv = document.createElement("div");
-  closeMapDiv.className = "map close-map";
-  closeMapDiv.dataset.name = mapObj.naam; 
-  closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
-  closeMapDiv.style.position = "absolute";
-  closeMapDiv.style.top = "20px";
-  closeMapDiv.style.cursor = "pointer";
-  closeMapDiv.style.zIndex = "50";
-
   document.body.appendChild(closeMapDiv);
 
-  // Wacht tot het element is gerenderd, dan center
-  requestAnimationFrame(() => {
-    const leftHalfCenter = window.innerWidth / 4; // helft van linkerhelft
-    const width = closeMapDiv.getBoundingClientRect().width;
-    closeMapDiv.style.left = `${leftHalfCenter - width / 2}px`;
-  });
+  // Horizontaal centrum van linkerhelft
+  const leftHalfCenter = window.innerWidth / 2 * 0.5; // halve breedte van linkerhelft
+  closeMapDiv.style.left = `${leftHalfCenter - closeMapDiv.offsetWidth / 2}px`;
+  closeMapDiv.style.top = "20px"; // beetje afstand vanaf bovenkant
+}
 
-  closeMapDiv.addEventListener("click", () => resetMaps());
+function resetMaps() {
+  // Verwijder sluitmap
+  if (closeMapDiv) {
+    closeMapDiv.remove();
+    closeMapDiv = null;
+  }
+
+  // Reset status
+  mapsMovedRight = false;
+  openLeftMaps = [];
+  openRightMaps = [];
+  selectedElement = null;
+
+  // Herstel positie van maps
+  updateMapPositions();
+  renderElements();
 }
 
 // ---------------- RENDER ELEMENTEN ----------------
@@ -515,9 +513,11 @@ window.addEventListener("resize", () => {
 
   // Update sluitmap positie bij resize
     if (closeMapDiv) {
-      const leftHalfCenter = window.innerWidth / 4;
+      const leftHalfCenter = window.innerWidth / 2 * 0.5;
       closeMapDiv.style.left = `${leftHalfCenter - closeMapDiv.offsetWidth / 2}px`;
     }
   }
 });
 
+// ---------------- START ----------------
+init();
