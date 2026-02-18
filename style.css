@@ -169,6 +169,7 @@ body {
   grid-template-columns: repeat(4, 100px);
   gap: 25px;
   justify-items: center;  /* items in de grid zelf */
+  z-index: 20;
 }
 
 /* Linkerhelft - grid precies gecentreerd op 25% van scherm */
