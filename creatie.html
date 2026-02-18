@@ -3,105 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Creation</title>
-  <style>
-    html, body {
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      background: 
-        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
-        url("afb/creatiescherm.png") center center / cover no-repeat;
-    }
-
-    .container {
-      position: relative;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      color: white;
-      text-align: center;
-      font-family: "Times New Roman", serif;
-      font-size: 32px;
-      opacity: 0.85;
-    }
-
-    /* ---------------- GOD ICON ---------------- */
-    .god-icon {
-      width: 300px;
-      height: auto;
-      margin-top: 100px; /* typo opgelost */
-      z-index: 1;
-      animation: floatUpDown 3s ease-in-out infinite;
-    }
-
-    .god-icon:hover {
-      transform: scale(1.1);
-    }
-
-    @keyframes floatUpDown {
-      0%   { transform: translateY(0); }
-      50%  { transform: translateY(-15px); }
-      100% { transform: translateY(0); }
-    }
-
-    /* ---------------- TITEL ---------------- */
-    .result-title {
-      font-family: "Cinzel", serif;
-      font-size: 40px;
-      letter-spacing: 3px;
-      margin: 20px 0 5px 0;
-    }
-
-    /* ---------------- QUOTES ---------------- */
-    .caption {
-      width: 90%;
-      text-align: center;
-      font-family: "Times New Roman", serif;
-      font-size: 18px;
-      line-height: 1.4;
-      opacity: 0.85;
-      margin-top: 0;
-    }
-
-    .caption span {
-      display: block; /* elke quote op aparte regel */
-      margin-bottom: 15px;
-    }
-
-    @keyframes floatSide1 {
-      0%   { transform: translateX(0); }
-      50%  { transform: translateX(-10px); }
-      100% { transform: translateX(0); }
-    }
-
-    @keyframes floatSide2 {
-      0%   { transform: translateX(0); }
-      50%  { transform: translateX(12px); }
-      100% { transform: translateX(0); }
-    }
-
-    @keyframes floatSide3 {
-      0%   { transform: translateX(0); }
-      50%  { transform: translateX(-8px); }
-      100% { transform: translateX(0); }
-    }
-
-    /* Toepassen van animatie op quotes */
-    .caption span:nth-child(1) { animation: floatSide1 4s ease-in-out infinite; }
-    .caption span:nth-child(2) { animation: floatSide2 4.5s ease-in-out infinite; }
-    .caption span:nth-child(3) { animation: floatSide3 3.8s ease-in-out infinite; }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <!-- Klik alleen op het God-icoon -->
     <a href="elementen.html">
       <img src="icons/God.png" alt="God" class="god-icon">
     </a>
