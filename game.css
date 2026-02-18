@@ -192,6 +192,12 @@ body {
   flex-direction: column;
   align-items: center;
   animation: boxSlideIn 0.8s ease-in-out forwards;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.result-box.fade-in {
+  opacity: 1;
 }
 
 /* Soft floating animatie voor nieuwe elementen */
