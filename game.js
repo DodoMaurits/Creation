@@ -357,9 +357,7 @@ function init() {
 
 // ---------------- UPDATE MAP POSITIES ----------------
 function updateMapPositions() {
-
   const maps = document.querySelectorAll(".map");
-
   const screenW = window.innerWidth;
   const screenH = window.innerHeight;
 
@@ -367,70 +365,65 @@ function updateMapPositions() {
   const gap = 20;
   const maxPerRow = 4;
 
-  // Alle gesloten mappen verzamelen
+  // Gesloten mappen verzamelen
   const closed = [];
   maps.forEach((_, i) => {
-    if (i !== openLeft && i !== openRight) {
-      closed.push(i);
-    }
+    if (i !== openLeft && i !== openRight) closed.push(i);
   });
 
+  // ========== CLOSED MAPS POSITIES ==========
   const rowsClosed = Math.ceil(closed.length / maxPerRow);
   const totalHeightClosed = rowsClosed * size + (rowsClosed - 1) * gap;
   const startTopClosed = (screenH - totalHeightClosed) / 2;
 
   maps.forEach((div, i) => {
-
     let top, left;
 
-    // =========================
-    // LINKER OPEN MAP
-    // =========================
+    // ----- LINKER OPEN MAP -----
     if (i === openLeft) {
-
       top = 20;
       left = screenW * 0.25 - size / 2;
     }
-
-    // =========================
-    // RECHTER OPEN MAP
-    // =========================
+    // ----- RECHTER OPEN MAP -----
     else if (i === openRight) {
-
       top = 20;
       left = screenW * 0.75 - size / 2;
     }
-
-    // =========================
-    // GESLOTEN MAPPEN
-    // =========================
+    // ----- GESLOTEN MAPS -----
     else {
-    
       const idx = closed.indexOf(i);
       const row = Math.floor(idx / maxPerRow);
       const col = idx % maxPerRow;
-    
+
       const itemsInRow = Math.min(maxPerRow, closed.length - row * maxPerRow);
       const rowWidth = itemsInRow * size + (itemsInRow - 1) * gap;
-    
+
       top = startTopClosed + row * (size + gap);
-    
-      if (openLeft !== null) {
-        // Linkermap open → andere mappen naar rechterhelft
-        const rightHalfStart = screenW / 2;
+
+      // Bepaal in welke helft gesloten maps gecentreerd moeten worden
+      if (openLeft !== null && openRight === null) {
+        // Alleen linker open → andere mappen naar rechterhelft
+        const halfStart = screenW / 2;
         const halfWidth = screenW / 2;
-    
-        left = rightHalfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
-      }
-      else if (openRight !== null) {
-        // Alleen rechtermap open → andere mappen naar linkerhelft
-        const leftHalfStart = 0;
+        left = halfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
+      } else if (openRight !== null && openLeft === null) {
+        // Alleen rechter open → andere mappen naar linkerhelft
+        const halfStart = 0;
         const halfWidth = screenW / 2;
-    
-        left = leftHalfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
-      }
-      else {
-        // Geen open maps → alles gecentreerd over het hele scherm
+        left = halfStart + (halfWidth - rowWidth) / 2 + col * (size + gap);
+      } else if (openLeft !== null && openRight !== null) {
+        // Beide open → gesloten mappen verdelen in linker + rechter vrije ruimtes
+        const halfWidth = screenW / 2;
+
+        if (idx < Math.ceil(closed.length / 2)) {
+          // Eerste helft → linkerhelft
+          left = (halfWidth - rowWidth) / 2 + col * (size + gap);
+        } else {
+          // Tweede helft → rechterhelft
+          left = halfWidth + (halfWidth - rowWidth) / 2 + col * (size + gap);
+        }
+      } else {
+        // Geen open maps → alles gecentreerd over hele scherm
         left = (screenW - rowWidth) / 2 + col * (size + gap);
       }
     }
