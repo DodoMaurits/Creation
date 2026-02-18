@@ -1,3 +1,4 @@
+/* ---------------- BODY & APP ---------------- */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -14,6 +15,7 @@ body {
   position: relative;
 }
 
+/* ---------------- SIDES (OPEN MAPS) ---------------- */
 .side {
   position: absolute;
   top: 20px;
@@ -41,11 +43,46 @@ body {
   display: none;
 }
 
+/* ---------------- MAP TITLES & ICONS ---------------- */
 .map-title {
   cursor: pointer;
   margin-bottom: 20px;
 }
 
+/* Alle iconen */
+.icon {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Specifiek voor elementen */
+.icon.element {
+  width: 100px;
+  height: 100px;
+}
+
+/* Specifiek voor open map iconen */
+.icon.map {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
+}
+
+/* Map titel boven open map */
+.icon.map-title {
+  width: 140px; 
+  height: 140px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* ---------------- GRID LAYOUTS ---------------- */
 .grid-elements {
   display: grid;
   grid-template-columns: repeat(4, 100px);
@@ -62,35 +99,7 @@ body {
   margin: 0 auto;
 }
 
-.icon {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.icon:hover {
-  transform: scale(1.1);
-}
-
-.icon.element {
-  width: 100px;
-  height: 100px;
-}
-
-.icon.map {
-  width: 120px;
-  height: 120px;
-  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
-}
-
-.icon.map-title {
-  width: 140px; 
-  height: 140px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
+/* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 .selected {
   animation: shake 0.6s infinite;
 }
@@ -117,6 +126,7 @@ body {
   animation: errorShake 0.6s ease;
 }
 
+/* ---------------- CLOSED CONTAINER ---------------- */
 #closed-container {
   position: absolute;
   top: 50%;
@@ -185,17 +195,18 @@ body {
   animation: scaleIn 0.8s ease-in-out;
 }
 
+/* Soft floating animatie voor nieuwe elementen */
 @keyframes floatSoft {
   0%   { transform: translateY(0px); }
   50%  { transform: translateY(-8px); }
   100% { transform: translateY(0px); }
 }
 
+/* Animation delay voor stagger effect */
 .result-box:nth-child(1) .result-image { animation-delay: 0s; }
 .result-box:nth-child(2) .result-image { animation-delay: 0.5s; }
 .result-box:nth-child(3) .result-image { animation-delay: 1s; }
 .result-box:nth-child(4) .result-image { animation-delay: 1.5s; }
-
 
 .result-image {
   width: 120px;
@@ -220,6 +231,7 @@ body {
   overflow-wrap: break-word;
 }
 
+/* ---------------- KEYFRAMES ---------------- */
 @keyframes fadeIn {
   from { opacity: 0 }
   to { opacity: 1 }
