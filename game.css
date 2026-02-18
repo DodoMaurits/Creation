@@ -282,7 +282,7 @@ body {
 /* Soft floating animatie voor nieuwe elementen */
 @keyframes floatSoft {
   0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-8px); }
+  50%  { transform: translateY(-16px); }
   100% { transform: translateY(0px); }
 }
 
@@ -296,7 +296,7 @@ body {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  animation: floatSoft 4s ease-in-out infinite;
+  animation: floatSoft 2s ease-in-out infinite;
   cursor: pointer;
 }
 
