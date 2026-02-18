@@ -338,10 +338,14 @@ function init() {
       else {
         if (openLeftMaps.length === 0) {
           openLeftMaps.push(index);
-        } else if (openRightMaps.length === 0) {
-          openRightMaps.push(index);
+        } 
+        else if (openRightMaps.length === 0) {
+          // Voeg map toe aan rechts, zelfs als hij al links open is
+          if (!openRightMaps.includes(index)) {
+            openRightMaps.push(index);
+          }
         } else {
-          // optioneel: beide helften vol → doe niets of laat een melding zien
+          // Beide helften vol → doe niets of laat een melding zien
           console.log("Beide helften vol");
         }
       }
