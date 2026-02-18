@@ -424,18 +424,30 @@ function closeMap(side) {
 }
 
 function updateClosedContainer() {
-  closedContainer.classList.remove("left", "right");
+  let leftOpen = !!openLeft;
+  let rightOpen = !!openRight;
+  let halfWidth = window.innerWidth / 2;
 
-  if (openLeft && openRight) {
-    closedContainer.style.opacity = 0; // beide open → fade-out
-  } else if (openLeft && !openRight) {
-    closedContainer.classList.add("right"); // midden rechterhelft
+  if (leftOpen && rightOpen) {
+    // beide open → fade-out
+    closedContainer.style.opacity = 0;
+    closedContainer.style.left = "50%";
+    closedContainer.style.transform = "translate(-50%, -50%)";
+  } else if (leftOpen && !rightOpen) {
+    // alleen links open → center in rechterhelft
     closedContainer.style.opacity = 1;
-  } else if (openRight && !openLeft) {
-    closedContainer.classList.add("left"); // midden linkerhelft
+    closedContainer.style.left = `${halfWidth + halfWidth/2}px`; // midden van rechterhelft
+    closedContainer.style.transform = "translate(-50%, -50%)";
+  } else if (!leftOpen && rightOpen) {
+    // alleen rechts open → center in linkerhelft
     closedContainer.style.opacity = 1;
+    closedContainer.style.left = `${halfWidth/2}px`; // midden van linkerhelft
+    closedContainer.style.transform = "translate(-50%, -50%)";
   } else {
-    closedContainer.style.opacity = 1; // geen open → midden
+    // geen open maps → center in scherm
+    closedContainer.style.opacity = 1;
+    closedContainer.style.left = "50%";
+    closedContainer.style.transform = "translate(-50%, -50%)";
   }
 }
 
