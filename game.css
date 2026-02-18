@@ -148,6 +148,8 @@ body {
 
 /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 .selected {
+  width: 130px;
+  height: 130px;
   animation: shake 0.6s infinite;
 }
 
