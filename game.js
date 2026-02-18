@@ -375,14 +375,10 @@ function createCloseMap(mapObj) {
   closeMapDiv.innerHTML = `<img src="${mapObj.icoon}" alt="${mapObj.naam}">`;
   
   // Zelfde styling
-  closeMapDiv.style.position = "absolute";
-  closeMapDiv.style.width = "100px";
-  closeMapDiv.style.height = "100px";
-  closeMapDiv.style.top = "50%"; // midden verticaal
-  closeMapDiv.style.left = "0px"; // linkerzijde
-  closeMapDiv.style.transform = "translateY(-50%)";
+  closeMapDiv.style.top = "20px";   // afstand vanaf bovenkant van container
+  closeMapDiv.style.left = "20px";  // afstand vanaf linkerkant van container
   closeMapDiv.style.cursor = "pointer";
-  closeMapDiv.style.zIndex = "20"; // boven de andere maps
+  closeMapDiv.style.zIndex = "20"; 
   closeMapDiv.style.transition = "top 0.5s ease, left 0.5s ease";
 
   closeMapDiv.addEventListener("click", () => resetMaps());
