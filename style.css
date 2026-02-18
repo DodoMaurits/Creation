@@ -151,15 +151,24 @@ body {
 }
 
 /* ---------------- ELEMENTEN ---------------- */
-#left-elements, #right-elements {
+
+#left-elements,
+#right-elements {
   position: absolute;
-  top: 130px; /* direct onder map */
-  left: 0;
+  top: 130px;               /* zelfde horizontale lijn */
   width: 50%;
   display: grid;
   grid-template-columns: repeat(4, 100px);
   gap: 25px;
-  justify-content: center;
+  justify-content: center;  /* rij van max 4 centreren */
+}
+
+#left-elements {
+  left: 0;                  /* linkerhelft */
+}
+
+#right-elements {
+  left: 50%;                /* rechterhelft */
 }
 
 .element {
