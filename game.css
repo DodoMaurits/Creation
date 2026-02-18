@@ -97,3 +97,30 @@ body {
   10%, 30%, 50%, 70%, 90% { transform: translate(-1px, 0); }
   20%, 40%, 60%, 80% { transform: translate(1px, 0); }
 }
+
+#new-elements-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+  z-index: 1000;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#new-elements-popup h2 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+#new-elements-popup .grid-elements {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 20px;
+  justify-content: center;
+}
