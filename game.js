@@ -332,6 +332,46 @@ const combinaties = [
                     quote: "I always look up at the moon and see it as the single most romantic place within the cosmos <br><br>- Tom Hanks"
                   }
                 ]
+            },
+              {
+                input: ["Lava", "Water"],
+                output: [
+                  {
+                    naam: "Damp",
+                    icoon: "icons/Damp.png",
+                    map: "Lucht",
+                    quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
+                  },
+                  {
+                    naam: "Basalt",
+                    icoon: "icons/Basalt.png",
+                    map: "Aarde",
+                    quote: "Every changes, even stone <br><br>Claude Monet"
+                  }
+                ]
+            },
+              {
+                input: ["Zee", "Kou"],
+                output: [
+                  {
+                    naam: "Graniet",
+                    icoon: "icons/Graniet.png",
+                    map: "Aarde",
+                    quote: "The block of granite which was an obstacle in the pathway of the weak, became a stepping-stone in the pathway of the strong <br><br>- Thomas Carlyle"
+                  },
+                  {
+                    naam: "Basalt",
+                    icoon: "icons/De_Aarde.png",
+                    map: "Aarde",
+                    quote: "Every changes, even stone <br><br>Claude Monet"
+                  },
+                  {
+                    naam: "Obsidiaan",
+                    icoon: "icons/Obsidiaan.png",
+                    map: "Aarde",
+                    quote: "Eyes as black and as shiny as chips of obsidian stared back into his. They were eyes like black holes, letting nothing out, not even information <br><br>- Neil Gaiman"
+                  }
+                ]
             }
 ];
 
@@ -573,7 +613,7 @@ function checkCombination() {
   
   // Pak alle combinaties die exact matchen
   const matches = combinaties.filter(c =>
-    arraysEqual(c.input, names)
+    c.input.some(set => arraysEqual(set, names))
   );
 
   if (matches.length === 0) {
