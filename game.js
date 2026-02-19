@@ -349,7 +349,7 @@ const combinaties = [
                     naam: "Basalt",
                     icoon: "icons/Basalt.png",
                     map: "Aarde",
-                    quote: "Every changes, even stone <br><br>Claude Monet"
+                    quote: "Every changes, even stone <br><br>- Claude Monet"
                   }
                 ]
             },
@@ -363,7 +363,7 @@ const combinaties = [
                     naam: "Zout",
                     icoon: "icons/Zout.png",
                     map: "Chemie",
-                    quote: ""
+                    quote: "Salt is born of the purest parents: the sun and the sea <br><br>- Pythagoras"
                   },
                   {
                     naam: "Gipssteen",
@@ -376,6 +376,20 @@ const combinaties = [
                     icoon: "icons/Damp.png",
                     map: "Lucht",
                     quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Zee", "Water"],
+                  ["Zee", "Zee"]
+                  ],
+                output: [
+                  {
+                    naam: "Oceaan",
+                    icoon: "icons/Oceaan.png",
+                    map: "Water",
+                    quote: "Individually, we are one drop. Together, we are an ocean <br><br>- Ryunosuke Akutagawa"
                   }
                 ]
             }
