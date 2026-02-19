@@ -267,7 +267,10 @@ const combinaties = [
               ]
           },
             {
-              input: ["Water", "Meer"],
+              input: [
+                ["Water", "Meer"],
+                ["Meer", "Meer"]
+              ],
               output: [
                 {
                   naam: "Zee",
@@ -351,25 +354,28 @@ const combinaties = [
                 ]
             },
               {
-                input: ["Zee", "Kou"],
+                input: [
+                  ["Zee", "Warmte"],
+                  ["Zee", "Lava"]
+                ],
                 output: [
                   {
-                    naam: "Graniet",
-                    icoon: "icons/Graniet.png",
-                    map: "Aarde",
-                    quote: "The block of granite which was an obstacle in the pathway of the weak, became a stepping-stone in the pathway of the strong <br><br>- Thomas Carlyle"
+                    naam: "Zout",
+                    icoon: "icons/Zout.png",
+                    map: "Chemie",
+                    quote: ""
                   },
                   {
-                    naam: "Basalt",
-                    icoon: "icons/De_Aarde.png",
+                    naam: "Gipssteen",
+                    icoon: "icons/Gipssteen.png",
                     map: "Aarde",
-                    quote: "Every changes, even stone <br><br>Claude Monet"
+                    quote: ""
                   },
                   {
-                    naam: "Obsidiaan",
-                    icoon: "icons/Obsidiaan.png",
-                    map: "Aarde",
-                    quote: "Eyes as black and as shiny as chips of obsidian stared back into his. They were eyes like black holes, letting nothing out, not even information <br><br>- Neil Gaiman"
+                    naam: "Damp",
+                    icoon: "icons/Damp.png",
+                    map: "Lucht",
+                    quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
                   }
                 ]
             }
