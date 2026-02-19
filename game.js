@@ -313,7 +313,7 @@ const combinaties = [
                   },
                   {
                     naam: "Basalt",
-                    icoon: "icons/De_Aarde.png",
+                    icoon: "icons/Basalt.png",
                     map: "Aarde",
                     quote: "Every changes, even stone <br><br>Claude Monet"
                   },
