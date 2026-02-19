@@ -76,7 +76,7 @@ const combinaties = [
             naam: "Gas",
             icoon: "icons/Gas.png",
             map: "Lucht",
-            quote: "All flight is based upon producing air pressure, all flight energy consists in overcoming air pressure <br><br>- Otto Lilienthal"
+            quote: "Hydrogen is a light, odorless gas, which, given enough time, turns into people <br><br>- Edward Harrison"
           }
         ]
       },
