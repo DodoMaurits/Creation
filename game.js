@@ -653,9 +653,15 @@ function checkCombination() {
   }
   
   // Pak alle combinaties die exact matchen
-  const matches = combinaties.filter(c =>
-    c.input.some(set => arraysEqual(set, names))
-  );
+  const matches = combinaties.filter(c => {
+    // Als input gewoon ["A","B"] is
+    if (typeof c.input[0] === "string") {
+      return arraysEqual(c.input, names);
+    }
+  
+    // Als input [ ["A","B"], ["C","D"] ] is
+    return c.input.some(set => arraysEqual(set, names));
+  });
 
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
