@@ -395,9 +395,8 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Graniet", "Water"],
-                  ["Graniet", "Meer"],
-                  ["Graniet", "Zee"]
+                  ["Graniet", "Water"], ["Graniet", "Meer"], ["Graniet", "Zee"],
+                  ["Basalt", "Water"], ["Basalt", "Meer"], ["Basalt", "Zee"]
                 ],
                 output: [
                   {
@@ -411,6 +410,26 @@ const combinaties = [
                     icoon: "icons/Klei.png",
                     map: "Aarde",
                     quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Graniet", "Lava"],
+                  ["Basalt", "Lava"]
+                ],
+                output: [
+                  {
+                    naam: "Platentektoniek",
+                    icoon: "icons/Platentektoniek.png",
+                    map: "Krachten",
+                    quote: "Loyalties shifting like the earth's tectonic plates ... changing my loves shape <br><br>- Ranata Suzuki"
+                  },
+                  {
+                    naam: "Granietmagma",
+                    icoon: "icons/Granietmagma.png",
+                    map: "Vuur",
+                    quote: "Of course the entire planet Earth consists of magma under us, and only the very inner-core is different <br><br>- Werner Herzog"
                   }
                 ]
             }
