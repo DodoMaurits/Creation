@@ -287,7 +287,30 @@ const combinaties = [
                     quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
                   }
                 ]
-              }
+            }
+              {
+                input: ["Lava", "Kou"],
+                output: [
+                  {
+                    naam: "Graniet",
+                    icoon: "icons/Graniet.png",
+                    map: "Aarde",
+                    quote: "The block of granite which was an obstacle in the pathway of the weak, became a stepping-stone in the pathway of the strong <br><br>- Thomas Carlyle"
+                  },
+                  {
+                    naam: "Basalt",
+                    icoon: "icons/De_Aarde.png",
+                    map: "Aarde",
+                    quote: "Every changes, even stone <br><br>Claude Monet"
+                  },
+                  {
+                    naam: "Obsidiaan",
+                    icoon: "icons/Obsidiaan.png",
+                    map: "Aarde",
+                    quote: "Eyes as black and as shiny as chips of obsidian stared back into his. They were eyes like black holes, letting nothing out, not even information <br><br>- Neil Gaiman"
+                  }
+                ]
+            }
 ];
 
 const groepsIconen = {
@@ -296,8 +319,8 @@ const groepsIconen = {
   "Chemie": "icons/Chemie.png",
   "Lucht": "icons/Lucht.png",
   "Water": "icons/Water.png",
-  "Aarde": "icons/Aarde.png",
-  "Vuur": "icons/Vuur.png"
+  "Vuur": "icons/Vuur.png",
+  "Aarde": "icons/Aarde.png"
 };
 
 // ----- STATE -----
