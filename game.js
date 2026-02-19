@@ -383,13 +383,34 @@ const combinaties = [
                 input: [
                   ["Zee", "Water"],
                   ["Zee", "Zee"]
-                  ],
+                ],
                 output: [
                   {
                     naam: "Oceaan",
                     icoon: "icons/Oceaan.png",
                     map: "Water",
                     quote: "Individually, we are one drop. Together, we are an ocean <br><br>- Ryunosuke Akutagawa"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Graniet", "Water"],
+                  ["Graniet", "Meer"],
+                  ["Graniet", "Zee"]
+                ],
+                output: [
+                  {
+                    naam: "Zand",
+                    icoon: "icons/Zand.png",
+                    map: "Aarde",
+                    quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
                   }
                 ]
             }
