@@ -109,7 +109,7 @@ const combinaties = [
             naam: "Water",
             icoon: "icons/Water.png",
             map: "Water",
-            quote: "Water is the softest thing, yet it can penetrate mountains and earth. This shows clearly the principle of softness overcoming hardness <br><br>-Lao Tzu"
+            quote: "Water is the softest thing, yet it can penetrate mountains and earth. This shows clearly the principle of softness overcoming hardness <br><br>- Lao Tzu"
           }
         ]
       },
@@ -278,6 +278,17 @@ const combinaties = [
               ]
             },
               {
+              input: ["Vuur", "IJs"],
+              output: [
+                {
+                  naam: "Water",
+                  icoon: "icons/Water.png",
+                  map: "Water",
+                  quote: "Water is the softest thing, yet it can penetrate mountains and earth. This shows clearly the principle of softness overcoming hardness <br><br>- Lao Tzu"
+                }
+              ]
+            },
+              {
                 input: ["Vuur", "Water"],
                 output: [
                   {
@@ -287,7 +298,7 @@ const combinaties = [
                     quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
                   }
                 ]
-            }
+            },
               {
                 input: ["Lava", "Kou"],
                 output: [
@@ -308,6 +319,17 @@ const combinaties = [
                     icoon: "icons/Obsidiaan.png",
                     map: "Aarde",
                     quote: "Eyes as black and as shiny as chips of obsidian stared back into his. They were eyes like black holes, letting nothing out, not even information <br><br>- Neil Gaiman"
+                  }
+                ]
+            },
+              {
+                input: ["De Aarde", "Planeet"],
+                output: [
+                  {
+                    naam: "De Maan",
+                    icoon: "icons/Maan.png",
+                    map: "Heelal",
+                    quote: "I always look up at the moon and see it as the single most romantic place within the cosmos <br><br>- Tom Hanks"
                   }
                 ]
             }
