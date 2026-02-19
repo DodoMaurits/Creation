@@ -432,6 +432,26 @@ const combinaties = [
                     quote: "Of course the entire planet Earth consists of magma under us, and only the very inner-core is different <br><br>- Werner Herzog"
                   }
                 ]
+            },
+              {
+                input: [
+                  ["Obsidiaan", "Water"],
+                  ["Obsidiaan", "Meer"]
+                ],
+                output: [
+                  {
+                    naam: "Glas",
+                    icoon: "icons/Glas.png",
+                    map: "Aarde",
+                    quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
             }
 ];
 
