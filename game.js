@@ -565,6 +565,38 @@ const combinaties = [
                     quote: "Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain  <br><br>- Sun Tzu"
                   }
                 ]
+            },
+              {
+                input: [
+                  ["Granietmagma", "Kou"],
+                  ["Granietmagma", "Water"]
+                ],
+                output: [
+                  {
+                    naam: "Magmadamp",
+                    icoon: "icons/Magmadamp.png",
+                    map: "Vuur",
+                    quote: "The gases that igneous rocks contain, probably as essential features of the molten magma <br><br>- A.J. Grenville"
+                  },
+                  {
+                    naam: "Kwarts",
+                    icoon: "icons/Kwarts.png",
+                    map: "Aarde",
+                    quote: "Quartz is as hard as anything it is likely to meet with in use <br><br>- Frank Wade"
+                  },
+                  {
+                    naam: "Mica",
+                    icoon: "icons/Mica.png",
+                    map: "Aarde",
+                    quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
+                  },
+                  {
+                    naam: "Veldspaat",
+                    icoon: "icons/Veldspaat.png",
+                    map: "Aarde",
+                    quote: "Even the hardest rock can be worn away by water <br><br>- Lucretius"
+                  }
+                ]
             }
 ];
 
