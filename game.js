@@ -369,7 +369,7 @@ const combinaties = [
                     naam: "Gipssteen",
                     icoon: "icons/Gipssteen.png",
                     map: "Aarde",
-                    quote: ""
+                    quote: "Rocks are the books of the earth <br><br>- Charles Lyell"
                   },
                   {
                     naam: "Damp",
@@ -520,7 +520,7 @@ const combinaties = [
                     naam: "Gips",
                     icoon: "icons/Gips.png",
                     map: "Aarde",
-                    quote: ""
+                    quote: "The broken bone, once set together, is stronger than ever <br><br>- John Lyly"
                   }
                 ]
             },
