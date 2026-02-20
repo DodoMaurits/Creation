@@ -382,87 +382,101 @@ body {
 }
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
-@media (max-width: 900px) and (orientation: portrait) {
-
-  /* Basis */
-  body {
-    overflow-x: hidden;
-  }
-
-  /* HELFTEN BLIJVEN STRIKT 50% */
-  .side {
-    width: 50%;
-    top: 10px;
-  }
-
-  #left-side {
-    left: 0;
-  }
-
-  #right-side {
-    left: 50%;
-  }
-
-  /* ---------------- ICONEN KLEINER ---------------- */
-  .icon.element {
-    width: 75px;
-    height: 75px;
-  }
-
-  .icon.map,
-  .icon.map-title {
-    width: 90px;
-    height: 90px;
-  }
-
-  .icon.map-title {
-    margin-top: 25px;
-    margin-bottom: 10px;
-  }
-
-  /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
-  .tooltip {
-    position: static;
-    transform: none;
-    opacity: 1 !important;
-    margin-top: 6px;
-    font-size: 11px;
-    white-space: normal;
-  }
-
-  .icon-container:hover .tooltip {
-    opacity: 1;
-  }
-
-  /* ---------------- OPEN MAP GRID: 3 PER RIJ ---------------- */
-  .grid-elements {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 15px;
-    width: 100%;
-    padding: 0 5px;
-    box-sizing: border-box;
-  }
-
-  /* ---------------- CLOSED MAPS OOK 3 PER RIJ ---------------- */
-  #closed-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /* Zorg dat closed container binnen eigen helft blijft */
-  #closed-container.left {
-    left: 25%;
-    transform: translate(-50%, -50%);
-  }
-
-  #closed-container.right {
-    left: 75%;
-    transform: translate(-50%, -50%);
-  }
-
-}
+            @media (max-width: 900px) and (orientation: portrait) {
+            
+              /* ---------------- BASIS ---------------- */
+              body {
+                overflow-x: hidden;
+              }
+            
+              .side {
+                width: 50%;
+                top: 10px;
+                padding: 0 5px; /* voorkomt overlap bij open maps */
+                box-sizing: border-box;
+              }
+            
+              #left-side {
+                left: 0;
+              }
+            
+              #right-side {
+                left: 50%;
+              }
+            
+              /* ---------------- ICONEN KLEINER ---------------- */
+              .icon.element {
+                width: 75px;
+                height: 75px;
+              }
+            
+              .icon.map,
+              .icon.map-title {
+                width: 90px;
+                height: 90px;
+              }
+            
+              .icon.map-title {
+                margin-top: 15px;
+                margin-bottom: 10px;
+              }
+            
+              /* ---------------- TITELS ONDER ICONEN ---------------- */
+              .icon.map-title::after,
+              .icon.element::after {
+                position: static;
+                display: block;
+                margin-top: 6px;
+                opacity: 1 !important; /* altijd zichtbaar */
+                font-size: 11px;
+                white-space: normal;
+                text-align: center;
+              }
+            
+              /* ---------------- GRID OPEN MAP ---------------- */
+              .grid-elements {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
+                column-gap: 10px;
+                row-gap: 15px;
+                width: 100%;
+                max-width: 50vw; /* nooit over andere helft */
+                padding: 0 5px;
+                box-sizing: border-box;
+              }
+            
+              /* ---------------- GRID CLOSED MAPS ---------------- */
+              #closed-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
+                gap: 15px;
+                width: 100%;
+                max-width: 50vw; /* binnen helft */
+                box-sizing: border-box;
+              }
+            
+              #closed-container.left {
+                left: 25%; /* midden van linkerhelft */
+                transform: translate(-50%, -50%);
+              }
+            
+              #closed-container.right {
+                left: 75%; /* midden van rechterhelft */
+                transform: translate(-50%, -50%);
+              }
+            
+              /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
+              .tooltip {
+                position: static;
+                transform: none;
+                opacity: 1 !important;
+                margin-top: 6px;
+                font-size: 11px;
+                white-space: normal;
+                text-align: center;
+              }
+            
+              .icon-container:hover .tooltip {
+                opacity: 1;
+              }
+            }
