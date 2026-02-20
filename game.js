@@ -597,6 +597,32 @@ const combinaties = [
                     quote: "Even the hardest rock can be worn away by water <br><br>- Lucretius"
                   }
                 ]
+            },
+             {
+                input: [
+                  ["Wolk", "Zwaartekracht"],
+                  ["Wolk", "Water"],
+                  ["Wolk", "Berg"]
+                ],
+                output: [
+                  {
+                    naam: "Regen",
+                    icoon: "icons/Regen.png",
+                    map: "Water",
+                    quote: ""
+                  }
+                ]
+            },
+             {
+                input: ["Wolk", "Rook"],
+                output: [
+                  {
+                    naam: "Zure regen",
+                    icoon: "icons/Zure_regen.png",
+                    map: "Water",
+                    quote: ""
+                  }
+                ]
             }
 ];
 
