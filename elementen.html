@@ -33,9 +33,9 @@
     const icons = document.querySelectorAll('.result-image');
     
     icons.forEach(icon => {
-      const duration = (2 + Math.random() * 2).toFixed(2); // 2-4 seconden
+      const duration = (2 + Math.random() * 3).toFixed(2); // 2-5 seconden
       const translate = Math.floor(5 + Math.random() * 10);  // 5-15px omhoog
-      const delay = (Math.random() * 1).toFixed(2); // 0-1s vertraging
+      const delay = (Math.random() * 2).toFixed(2); // 0-2s vertraging
     
       icon.style.animationDuration = `${duration}s`;
       icon.style.animationDelay = `${delay}s`;
