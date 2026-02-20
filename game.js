@@ -148,7 +148,10 @@ const combinaties = [
         ]
       },
         {
-          input: ["Water", "IJzer"],
+          input: [
+            ["Water", "IJzer"],
+            ["Lucht", "IJzer"]
+          ],
           output: [
             {
               naam: "Roest",
@@ -609,7 +612,7 @@ const combinaties = [
                     naam: "Regen",
                     icoon: "icons/Regen.png",
                     map: "Water",
-                    quote: ""
+                    quote: "It can't rain all the time <br><br>- James O'Barr"
                   }
                 ]
             },
@@ -620,7 +623,126 @@ const combinaties = [
                     naam: "Zure regen",
                     icoon: "icons/Zure_regen.png",
                     map: "Water",
-                    quote: ""
+                    quote: "Tragedy is like strong acid - it dissolves away all but the very gold of truth <br><br>- D.H. Lawrence"
+                  }
+                ]
+            },
+             {
+                input: ["Wolk", "Wolk"],
+                output: [
+                  {
+                    naam: "Storm",
+                    icoon: "icons/Storm.png",
+                    map: "Lucht",
+                    quote: "If you want to see the sunshine, you have to weather the storm <br><br>- Frank Lane"
+                  },
+                  {
+                    naam: "Bliksem",
+                    icoon: "icons/Bliksem.png",
+                    map: "Vuur",
+                    quote: "Serenity is not freedom from the storm, but peace amid the storm <br><br>- Barbara West"
+                  }
+                ]
+            },
+             {
+                input: [
+                  ["Lucht", "Warmte"],
+                  ["Lucht", "Kou"]
+                ],
+                output: [
+                  {
+                    naam: "Wind",
+                    icoon: "icons/Wind.png",
+                    map: "Lucht",
+                    quote: "Sunshine is delicious, rain is refreshing, wind braces us up, sonw is exhilarating: there is really no such thing as bad weather, only different kinds of good weather <br><br>- John Ruskin"
+                  }
+                ]
+            },
+             {
+                input: ["Lucht", "Vuur"],
+                output: [
+                  {
+                    naam: "Rook",
+                    icoon: "icons/Rook.png",
+                    map: "Lucht",
+                    quote: "Surely where there's smoke there's fire? No, where there's so much smoke there's smoke<br><br>- John Wheeler"
+                  }
+                ]
+            },
+             {
+                input: [
+                  ["Vulkaan", "Oceaan"],
+                  ["Berg", "Oceaan"]
+                ],
+                output: [
+                  {
+                    naam: "Eiland",
+                    icoon: "icons/Eiland.png",
+                    map: "Landschap",
+                    quote: "We are like islands in the sea, separate on the surface but connected in the deep <br><br>- William James"
+                  }
+                ]
+            },
+             {
+                input: ["As", "Water"],
+                output: [
+                  {
+                    naam: "Tufsteen",
+                    icoon: "icons/Tufsteen.png",
+                    map: "Aarde",
+                    quote: "Life is not tough as rocks, it is as simple as your brain perceives <br><br>- Myra Yadav"
+                  }
+                ]
+            },
+             {
+                input: ["Berg", "Zee"],
+                output: [
+                  {
+                    naam: "Kust",
+                    icoon: "icons/Kust.png",
+                    map: "Landschap",
+                    quote: "Because there's nothing more beautiful than the way the ocean refuses to stop kissing the shoreline, no matter how many times it's sent away <br><br>- Sarah Kay"
+                  }
+                ]
+            },
+              {
+                input: ["Magmadamp", "Kou"],
+                output: [
+                  {
+                    naam: "Koper",
+                    icoon: "icons/Koper.png",
+                    map: "Chemie",
+                    quote: "Through love scraps of copper are turned to gold <br><br>- Rumi"
+                  },
+                  {
+                    naam: "Zilver",
+                    icoon: "icons/Zilver.png",
+                    map: "Chemie",
+                    quote: "Silver is purified in fire and so are we. It is in the most trying times that our real character is shaped and revealed <br><br>- Helen Keller"
+                  },
+                  {
+                    naam: "Goud",
+                    icoon: "icons/Goud.png",
+                    map: "Chemie",
+                    quote: "Praise, like gold and diamonds, owes its value only to its scarcity <br><br>- Samuel Johnson"
+                  },
+                  {
+                    naam: "Lood",
+                    icoon: "icons/Lood.png",
+                    map: "Chemie",
+                    quote: "Lead is slow, elated, and resolved <br><br>- Arthur Rimbaud"
+                  },
+                  {
+                    naam: "Zink",
+                    icoon: "icons/Zink.png",
+                    map: "Chemie",
+                    quote: "Zinc is gray and its salts are colorless... in short, it is a boring metal<br><br>- Primo Levi"
+                  },
+                  {
+                    naam: "Tin",
+                    icoon: "icons/Tin.png",
+                    map: "Chemie",
+                    quote: "The tin hat shines with a cold reflection, as though it wore the mind of the earth upon its brow <br><br>- D.H. Lawrence"
                   }
                 ]
             }
