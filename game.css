@@ -281,7 +281,7 @@ body {
   gap: 40px;
   justify-content: center;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
   width: auto;
   max-width: 1200px;
 }
@@ -381,88 +381,32 @@ body {
   }
 }
 
-/* ---------------- MOBILE FRIENDLY ---------------- */
-@media (max-width: 900px) {
-  /* Dwing iets kleinere landscape layout */
+/* ================= MOBILE PORTRAIT ONLY ================= */
+@media (max-width: 900px) and (orientation: portrait) {
+
+  /* Basis */
   body {
     overflow-x: hidden;
-    font-size: 14px;
   }
 
-  #app {
-    height: 100vh;
-    width: 100vw;
+  /* HELFTEN BLIJVEN STRIKT 50% */
+  .side {
+    width: 50%;
+    top: 10px;
   }
 
-  /* Open maps: minder kolommen */
-  .grid-elements {
-    grid-template-columns: repeat(2, minmax(80px, 1fr));
-    column-gap: 20px;
-    row-gap: 15px;
+  #left-side {
+    left: 0;
   }
 
-  /* Closed maps: maximaal 2 per rij */
-  #closed-container {
-    grid-template-columns: repeat(2, minmax(70px, 1fr));
-    gap: 15px;
-    width: 90%; /* smaller dan desktop */
+  #right-side {
+    left: 50%;
   }
 
-  /* Iconen */
+  /* ---------------- ICONEN KLEINER ---------------- */
   .icon.element {
-    width: 80px;
-    height: 80px;
-  }
-
-  .icon.map,
-  .icon.map-title {
-    width: 100px;
-    height: 100px;
-  }
-
-  .icon.map-title {
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-
-  /* Result overlay grid */
-  .result-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-
-  /* Result box font en afbeeldingen kleiner */
-  .result-title {
-    font-size: 28px;
-  }
-
-  .result-quote {
-    font-size: 16px;
-  }
-
-  .result-image {
-    width: 100px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-  /* Kleinste schermen: 1 kolom per rij */
-  .grid-elements {
-    grid-template-columns: 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-  }
-
-  #closed-container {
-    grid-template-columns: 1fr;
-    width: 95%;
-    gap: 10px;
-  }
-
-  .icon.element {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
   }
 
   .icon.map,
@@ -472,25 +416,53 @@ body {
   }
 
   .icon.map-title {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 10px;
   }
 
-  .result-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
+  .tooltip {
+    position: static;
+    transform: none;
+    opacity: 1 !important;
+    margin-top: 6px;
+    font-size: 11px;
+    white-space: normal;
   }
 
-  .result-title {
-    font-size: 22px;
+  .icon-container:hover .tooltip {
+    opacity: 1;
   }
 
-  .result-quote {
-    font-size: 14px;
+  /* ---------------- OPEN MAP GRID: 3 PER RIJ ---------------- */
+  .grid-elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
   }
 
-  .result-image {
-    width: 80px;
-    margin-bottom: 8px;
+  /* ---------------- CLOSED MAPS OOK 3 PER RIJ ---------------- */
+  #closed-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 100%;
   }
+
+  /* Zorg dat closed container binnen eigen helft blijft */
+  #closed-container.left {
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  #closed-container.right {
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+
 }
