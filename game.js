@@ -1060,6 +1060,9 @@ function renderNewElements(elements) {
 
   const grid = document.createElement("div");
   grid.className = "result-grid";
+    if (elements.length === 6) {
+    grid.style.gridTemplateColumns = "repeat(3, 250px)";
+  }
 
   elements.forEach(el => {
     const box = document.createElement("div");
