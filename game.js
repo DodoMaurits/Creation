@@ -395,8 +395,8 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Graniet", "Water"], ["Graniet", "Meer"], ["Graniet", "Zee"],
-                  ["Basalt", "Water"], ["Basalt", "Meer"], ["Basalt", "Zee"]
+                  ["Graniet", "Water"], ["Graniet", "Meer"], ["Graniet", "Zee"], ["Graniet", "Oceaan"],
+                  ["Basalt", "Water"], ["Basalt", "Meer"], ["Basalt", "Zee"], ["Basalt", "Oceaan"]
                 ],
                 output: [
                   {
@@ -452,6 +452,119 @@ const combinaties = [
                     quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
                   }
                 ]
+            },
+              {
+                input: [
+                  ["Obsidiaan", "Zee"],
+                  ["Obsidiaan", "Oceaan"]
+                ],
+                output: [
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
+            },
+              {
+                input: ["Damp", "Zwaartekracht"],
+                output: [
+                  {
+                    naam: "Wolk",
+                    icoon: "icons/Wolk.png",
+                    map: "Lucht",
+                    quote: "The sky and the sun are always there. It's the clouds that come and go <br><br>- Rachel Joyce"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Damp", "Planeet"],
+                  ["Damp", "De Aarde"]
+                ],
+                output: [
+                  {
+                    naam: "Lucht",
+                    icoon: "icons/Lucht (Sky).png",
+                    map: "Lucht",
+                    quote: "Stars are holes in the sky from which the light of the infinite shines <br><br>- Confucius"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Maan", "Water"],
+                  ["Maan", "Meer"],
+                  ["Maan", "Zee"],
+                  ["Maan", "Oceaan"]
+                ],
+                output: [
+                  {
+                    naam: "Golf",
+                    icoon: "icons/Golf.png",
+                    map: "Water",
+                    quote: "You don't understand. You're not a wave. You're part of the ocean <br><br>- Morrie Schwartz"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Gipssteen", "Water"],
+                  ["Gipssteen", "Meer"],
+                  ["Gipssteen", "Zee"],
+                  ["Gipssteen", "Oceaan"]
+                ],
+                output: [
+                  {
+                    naam: "Gips",
+                    icoon: "icons/Gips.png",
+                    map: "Aarde",
+                    quote: ""
+                  }
+                ]
+            },
+              {
+                input: ["Zand", "Zand"],
+                output: [
+                  {
+                    naam: "Woestijn",
+                    icoon: "icons/Woestijn.png",
+                    map: "Landschap",
+                    quote: "If the desert is holy, it is because it is a forgotten place that allows us to remember the sacred <br><br>- Terry Williams"
+                  }
+                ]
+            },
+              {
+                input: ["Platentektoniek", "Lava"],
+                output: [
+                  {
+                    naam: "Vulkaan",
+                    icoon: "icons/Vulkaan.png",
+                    map: "Landschap",
+                    quote: "Remind me that the most fertile lands were built by the fires of volcanoes <br><br>- Andrea Gibson"
+                  },
+                  {
+                    naam: "As",
+                    icoon: "icons/As.png",
+                    map: "Vuur",
+                    quote: "Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return <br><br>- Alexander Anderson"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Platentektoniek", "Graniet"],
+                  ["Platentektoniek", "Basalt"]
+                ],
+                output: [
+                  {
+                    naam: "Berg",
+                    icoon: "icons/Berg.png",
+                    map: "Landschap",
+                    quote: "Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain  <br><br>- Sun Tzu"
+                  }
+                ]
             }
 ];
 
@@ -462,7 +575,8 @@ const groepsIconen = {
   "Lucht": "icons/Lucht.png",
   "Water": "icons/Water.png",
   "Vuur": "icons/Vuur.png",
-  "Aarde": "icons/Aarde.png"
+  "Aarde": "icons/Aarde.png",
+  "Landschap": "icons/Landschap.png"
 };
 
 // ----- STATE -----
