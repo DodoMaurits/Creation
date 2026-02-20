@@ -131,7 +131,10 @@ const combinaties = [
         ]
       },
         {
-        input: ["Ster", "Gas"],
+        input: [
+          ["Ster", "Gas"],
+          ["Ster", "IJzer"]
+        ],
         output: [
           {
             naam: "Asteroïden",
