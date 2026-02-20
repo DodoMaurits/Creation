@@ -126,7 +126,7 @@ const combinaties = [
             naam: "IJzer",
             icoon: "icons/IJzer.png",
             map: "Chemie",
-            quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Butler Yeatsu"
+            quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
           }
         ]
       },
@@ -184,7 +184,10 @@ const combinaties = [
             ]
           },
             {
-          input: ["Asteroïden", "Planeet"],
+          input: [
+            ["Asteroïden", "Planeet"], 
+            ["Asteroïden", "De Aarde"], ["Ast  eroïden", "Mars"], ["Asteroïden", "Venus"], ["Asteroïden", "Mercurius"], ["Asteroïden", "De Maan"]
+          ],
           output: [
             {
               naam: "Vuur",
@@ -617,7 +620,10 @@ const combinaties = [
                 ]
             },
              {
-                input: ["Wolk", "Rook"],
+                input: [
+                  ["Wolk", "Rook"],
+                  ["Regen", "Rook"]
+                ],
                 output: [
                   {
                     naam: "Zure regen",
@@ -706,7 +712,10 @@ const combinaties = [
                 ]
             },
               {
-                input: ["Magmadamp", "Kou"],
+                input: [
+                  ["Magmadamp", "Kou"],
+                  ["Regen", "Magmadamp"]
+                ],
                 output: [
                   {
                     naam: "Koper",
@@ -743,6 +752,201 @@ const combinaties = [
                     icoon: "icons/Tin.png",
                     map: "Chemie",
                     quote: "The tin hat shines with a cold reflection, as though it wore the mind of the earth upon its brow <br><br>- D.H. Lawrence"
+                  }
+                ]
+            },
+             {
+                input: [
+                  ["Kwarts", "Water"], ["Kwarts", "Meer"], ["Kwarts", "Zee"], ["Kwarts", "Oceaan"], ["Kwarts", "Regen"], ["Kwarts", "Zure regen"]
+                ],
+                output: [
+                  {
+                    naam: "Zand",
+                    icoon: "icons/Zand.png",
+                    map: "Aarde",
+                    quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Mica", "Water"], ["Mica", "Meer"], ["Mica", "Zee"], ["Mica", "Oceaan"], ["Mica", "Regen"],
+                  ["Veldspaat", "Water"], ["Veldspaat", "Meer"], ["Veldspaat", "Zee"], ["Veldspaat", "Oceaan"], ["Veldspaat", "Regen"]
+                ],
+                output: [
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
+            },
+              {
+                input: ["Regen", "Kou"],
+                output: [
+                  {
+                    naam: "Sneeuw",
+                    icoon: "icons/Sneeuw.png",
+                    map: "Water",
+                    quote: "The first fall of snow is not only an event, it is a magical event. You go to bed in one kind of a world and wake up in another quite different <br><br>- J.B. Priestley"
+                  }
+                ]
+            },
+              {
+                input: ["Regen", "IJs"],
+                output: [
+                  {
+                    naam: "Hagel",
+                    icoon: "icons/Hagel.png",
+                    map: "Water",
+                    quote: "Life is a hailstorm of distractions. It's not the monster that stops us but the mosquito <br><br>- Robert Allen"
+                  }
+                ]
+            },
+              {
+                input: ["Regen", "Berg"],
+                output: [
+                  {
+                    naam: "Rivier",
+                    icoon: "icons/Rivier.png",
+                    map: "Water",
+                    quote: "No man ever steps in the same river twice, for it's not the same river and he's not the same man <br><br>- Heraclitus"
+                  }
+                ]
+            }, 
+              {
+                input: [
+                  ["Zure regen", "Graniet"],
+                  ["Zure regen", "Basalt"]
+                ],
+                output: [
+                  {
+                    naam: "Silicium",
+                    icoon: "icons/Silicium.png",
+                    map: "Chemie",
+                    quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+                  }, 
+                  {
+                    naam: "Kalk",
+                    icoon: "icons/Kalk.png",
+                    map: "Chemie",
+                    quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+                  },
+                  {
+                    naam: "Aluminium",
+                    icoon: "icons/Aluminium.png",
+                    map: "Chemie",
+                    quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+                  }, 
+                  {
+                    naam: "IJzer",
+                    icoon: "icons/IJzer.png",
+                    map: "Chemie",
+                    quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+                  },
+                  {
+                    naam: "Roest",
+                    icoon: "icons/Roest.png",
+                    map: "Chemie",
+                    quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  },
+                  {
+                    naam: "Zand",
+                    icoon: "icons/Zand.png",
+                    map: "Aarde",
+                    quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+                  }
+                ]
+            }, 
+              {
+                input: ["Zure regen", "Obsidiaan"],
+                output: [
+                  {
+                    naam: "Glas",
+                    icoon: "icons/Glas.png",
+                    map: "Aarde",
+                    quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+                  },
+                  {
+                    naam: "Silicium",
+                    icoon: "icons/Silicium.png",
+                    map: "Chemie",
+                    quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+                  }, 
+                  {
+                    naam: "Kalk",
+                    icoon: "icons/Kalk.png",
+                    map: "Chemie",
+                    quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+                  },
+                  {
+                    naam: "Aluminium",
+                    icoon: "icons/Aluminium.png",
+                    map: "Chemie",
+                    quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+                  }, 
+                  {
+                    naam: "IJzer",
+                    icoon: "icons/IJzer.png",
+                    map: "Chemie",
+                    quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+                  },
+                  {
+                    naam: "Roest",
+                    icoon: "icons/Roest.png",
+                    map: "Chemie",
+                    quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
+            },
+              {
+                input: [ 
+                  ["Zure regen", "Mica"],
+                  ["Zure regen", "Veldspaat"]
+                ],
+                output: [
+                  {
+                    naam: "Silicium",
+                    icoon: "icons/Silicium.png",
+                    map: "Chemie",
+                    quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+                  }, 
+                  {
+                    naam: "Kalk",
+                    icoon: "icons/Kalk.png",
+                    map: "Chemie",
+                    quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+                  },
+                  {
+                    naam: "Aluminium",
+                    icoon: "icons/Aluminium.png",
+                    map: "Chemie",
+                    quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+                  }, 
+                  {
+                    naam: "IJzer",
+                    icoon: "icons/IJzer.png",
+                    map: "Chemie",
+                    quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
                   }
                 ]
             }
