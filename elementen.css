@@ -45,6 +45,7 @@ html, body {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-fill-mode: both;
   --translateY: 10px; /* fallback hoogte */
 }
 
