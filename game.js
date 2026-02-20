@@ -117,16 +117,16 @@ const combinaties = [
         input: ["Ster", "Zwaartekracht"],
         output: [
           {
-            naam: "IJzer",
-            icoon: "icons/IJzer.png",
-            map: "Chemie",
-            quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Butler Yeatsu"
-          },
-          {
             naam: "Supernova",
             icoon: "icons/Supernova.png",
             map: "Heelal",
             quote: "A supernova is one of the most powerful explosions in the universe. It's so luminous, it can be seen across billions of light years. It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime<br><br>- Neil Tyson"
+          },
+          {
+            naam: "IJzer",
+            icoon: "icons/IJzer.png",
+            map: "Chemie",
+            quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Butler Yeatsu"
           }
         ]
       },
@@ -494,10 +494,10 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Maan", "Water"],
-                  ["Maan", "Meer"],
-                  ["Maan", "Zee"],
-                  ["Maan", "Oceaan"]
+                  ["De Maan", "Water"],
+                  ["De Maan", "Meer"],
+                  ["De Maan", "Zee"],
+                  ["De Maan", "Oceaan"]
                 ],
                 output: [
                   {
