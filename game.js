@@ -1294,7 +1294,7 @@ const combinaties = [
                     naam: "Dood",
                     icoon: "icons/Dood.png",
                     map: "Krachten",
-                    quote: "Death smiles at us all, all a man can do is smile back <br><br>- Marcus Aurelius"
+                    quote: "Death does not concern us, because as long as we exist, death is not here. And when it does come, we no longer exist <br><br>- Epicurus"
                   },
                   {
                     naam: "Detritus",
@@ -1371,6 +1371,104 @@ const combinaties = [
                     icoon: "icons/Fotosynthese.png",
                     map: "Biologie",
                     quote: "He had a love affair with photosynthesis. He could talk about moss for an hour. He said that plants carried wisdom humans would never be around long enough to understand <br><br>- Anthony Doerr"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Leca", "Basalt"],
+                  ["Leca", "Klei"]
+                ],
+                output: [
+                  {
+                    naam: "Amoebe",
+                    icoon: "icons/Amoebe.png",
+                    map: "Pril leven",
+                    quote: "Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain generals, fade away. It just divides and becomes two new amoebas <br><br>- George Wald"
+                  }
+                ]
+            },
+              {
+                input: ["Leca", "Zand"],
+                output: [
+                  {
+                    naam: "Foraminiferen",
+                    icoon: "icons/Foraminiferen.png",
+                    map: "Pril leven",
+                    quote: "The deep-sea ooze is largely made up of the shells of foraminifera <br><br>- Thomas Huxley"
+                  }
+                ]
+            },
+              {
+                input: ["Leca", "Silicium"],
+                output: [
+                  {
+                    naam: "Stralendiertjes",
+                    icoon: "icons/Stralendiertjes.png",
+                    map: "Pril leven",
+                    quote: "The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature <br><br>- Ernst Haeckel"
+                  }
+                ]
+            },
+              {
+                input: ["Leca", "Detritus"],
+                output: [
+                  {
+                    naam: "Schimmel",
+                    icoon: "icons/Schimmel.png",
+                    map: "Pril leven",
+                    quote: "Fungi are the interface organisms between life and death <br><br>- Paul Stamets"
+                  }
+                ]
+            },
+              {
+                input: ["Leca", "Evolutie"],
+                output: [
+                  {
+                    naam: "Haar",
+                    icoon: "icons/Haar.png",
+                    map: "Biologie",
+                    quote: "And forget not that the earth delights to feel your bare feet and the winds long to play with your hair <br><br>- Khalid Gibran"
+                  },
+                  {
+                    naam: "Weefsel",
+                    icoon: "icons/Weefsel.png",
+                    map: "Biologie",
+                    quote: "That's the way it is: life includes a lot of empty space. We are one-tenth living tissue, nine-tenths water; life is one-tenth Here and Now, nine-tenths a history lesson. For most of the time the Here and Now is neither now nor here <br><br>- Graham Swift"
+                  },
+                  {
+                    naam: "Parasieten",
+                    icoon: "icons/Parasieten.png",
+                    map: "Pril leven",
+                    quote: "Thought, like any parasite, cannot exist without a compliant host <br><br>- Bernard Beckett"
+                  },
+                  {
+                    naam: "Sponzen",
+                    icoon: "icons/Sponzen.png",
+                    map: "Pril leven",
+                    quote: "Be like a sponge when it comes to each new experience. If you want to be able to express it well, you must first be able to absorb it well <br><br>- Jim Rohn"
+                  }
+                ]
+            },
+              {
+                input: ["Leca", "Blauwalgen"],
+                output: [
+                  {
+                    naam: "Archaeplastiden",
+                    icoon: "icons/Archaeplastiden.png",
+                    map: "Pril leven",
+                    quote: "The origin of plastids within the archaeplastida marked one of the most consequential events in the history of life <br><br>- Andrew Knoll"
+                  }
+                ]
+            },
+              {
+                input: ["Amoebe", "Evolutie"],
+                output: [
+                  {
+                    naam: "Slijm",
+                    icoon: "icons/Slijm.png",
+                    map: "Water",
+                    quote: "Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined <br><br>- Lewis Thomas"
                   }
                 ]
             }
