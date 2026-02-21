@@ -966,7 +966,7 @@ const combinaties = [
                     naam: "Luca",
                     icoon: "icons/Luca.png",
                     map: "Pril leven",
-                    quote: "God and nature create nothing that does not fulfill a purpose <br><br>- Aristotle"
+                    quote: "Life originated in the sea, and about eighty percent of it is still there <br><br>- Isaac Asimov"
                   }
                 ]
             }
@@ -980,7 +980,8 @@ const groepsIconen = {
   "Water": "icons/Water.png",
   "Vuur": "icons/Vuur.png",
   "Aarde": "icons/Aarde.png",
-  "Landschap": "icons/Landschap.png"
+  "Landschap": "icons/Landschap.png",
+  "Pril leven": "icons/Pril_leven.png"
 };
 
 // ----- STATE -----
