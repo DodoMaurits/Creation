@@ -960,13 +960,24 @@ const combinaties = [
                     naam: "Leven",
                     icoon: "icons/Leven.png",
                     map: "Krachten",
-                    quote: "Life is not a problem to be solved, but a reality to be experienced <br><br>Soren Kierkegaard"
+                    quote: "Life is not a problem to be solved, but a reality to be experienced <br><br>- Søren Kierkegaard"
                   },
                   {
                     naam: "Luca",
                     icoon: "icons/Luca.png",
                     map: "Pril leven",
                     quote: "Life originated in the sea, and about eighty percent of it is still there <br><br>- Isaac Asimov"
+                  }
+                ]
+            },
+              {
+                input: ["Wind", "Storm"],
+                output: [
+                  {
+                    naam: "Orkaan",
+                    icoon: "icons/Orkaan.png",
+                    map: "Lucht",
+                    quote: "The first rule of hurricane coverage is that every broadcast must begin with palm trees bending in the wind <br><br>- Carl Hiaasen"
                   }
                 ]
             }
