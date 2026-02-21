@@ -189,7 +189,7 @@ const combinaties = [
             {
           input: [
             ["Asteroïden", "Planeet"], 
-            ["Asteroïden", "De Aarde"], ["Ast  eroïden", "Mars"], ["Asteroïden", "Venus"], ["Asteroïden", "Mercurius"], ["Asteroïden", "De Maan"]
+            ["Asteroïden", "De Aarde"], ["Asteroïden", "Mars"], ["Asteroïden", "Venus"], ["Asteroïden", "Mercurius"], ["Asteroïden", "De Maan"]
           ],
           output: [
             {
@@ -517,7 +517,7 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Gipssteen", "Water"], ["Gipssteen", "Meer"], ["Gipssteen", "Zee"], ["Gipssteen", "Oceaan"]
+                  ["Gipssteen", "Water"], ["Gipssteen", "Meer"], ["Gipssteen", "Zee"], ["Gipssteen", "Oceaan"],
                   ["Rivier", "Gipssteen"]
                 ],
                 output: [
@@ -756,7 +756,7 @@ const combinaties = [
             },
              {
                 input: [
-                  ["Kwarts", "Water"], ["Kwarts", "Meer"], ["Kwarts", "Zee"], ["Kwarts", "Oceaan"], ["Kwarts", "Regen"], ["Kwarts", "Zure regen"]
+                  ["Kwarts", "Water"], ["Kwarts", "Meer"], ["Kwarts", "Zee"], ["Kwarts", "Oceaan"], ["Kwarts", "Regen"], ["Kwarts", "Zure regen"],
                   ["Rivier", "Kwarts"]
                 ],
                 output: [
@@ -983,7 +983,7 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Tufsteen", "Water"], ["Tufsteen", "Meer"], ["Tufsteen", "Zee"], ["Tufsteen", "Oceaan"], ["Tufsteen", "Regen"]
+                  ["Tufsteen", "Water"], ["Tufsteen", "Meer"], ["Tufsteen", "Zee"], ["Tufsteen", "Oceaan"], ["Tufsteen", "Regen"],
                   ["Rivier", "Tufsteen"]
                 ],
                 output: [
