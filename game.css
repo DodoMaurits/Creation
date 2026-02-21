@@ -446,13 +446,17 @@ body {
               }
             
               /* ---------------- GRID CLOSED MAPS ---------------- */
-              #closed-container {
+              .grid-closed {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
+                grid-template-columns: repeat(3, 1fr);
                 gap: 15px;
+              
+                max-width: 100%;   /* overschrijft 680px */
                 width: 100%;
-                max-width: 50vw; /* binnen helft */
-                box-sizing: border-box;
+              }
+
+              #closed-container {
+                width: 50vw;
               }
             
               #closed-container.left {
