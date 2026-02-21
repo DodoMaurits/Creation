@@ -980,6 +980,84 @@ const combinaties = [
                     quote: "The first rule of hurricane coverage is that every broadcast must begin with palm trees bending in the wind <br><br>- Carl Hiaasen"
                   }
                 ]
+            },
+              {
+                input: [
+                  ["Tufsteen", "Water"], ["Tufsteen", "Meer"], ["Tufsteen", "Zee"], ["Tufsteen", "Oceaan"], ["Tufsteen", "Regen"]
+                ],
+                output: [
+                  {
+                    naam: "Glas",
+                    icoon: "icons/Glas.png",
+                    map: "Aarde",
+                    quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+                  },
+                  {
+                    naam: "As",
+                    icoon: "icons/As.png",
+                    map: "Vuur",
+                    quote: "Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return <br><br>- Alexander Anderson"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
+            },
+              {
+                input: ["Tufsteen", "Zure regen"],
+                output: [
+                  {
+                    naam: "Glas",
+                    icoon: "icons/Glas.png",
+                    map: "Aarde",
+                    quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+                  },
+                  {
+                    naam: "Silicium",
+                    icoon: "icons/Silicium.png",
+                    map: "Chemie",
+                    quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+                  }, 
+                  {
+                    naam: "Kalk",
+                    icoon: "icons/Kalk.png",
+                    map: "Chemie",
+                    quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+                  },
+                  {
+                    naam: "Aluminium",
+                    icoon: "icons/Aluminium.png",
+                    map: "Chemie",
+                    quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+                  }, 
+                  {
+                    naam: "IJzer",
+                    icoon: "icons/IJzer.png",
+                    map: "Chemie",
+                    quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+                  },
+                  {
+                    naam: "Roest",
+                    icoon: "icons/Roest.png",
+                    map: "Chemie",
+                    quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  },
+                  {
+                    naam: "As",
+                    icoon: "icons/As.png",
+                    map: "Vuur",
+                    quote: "Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return <br><br>- Alexander Anderson"
+                  }
+                ]
             }
 ];
 
