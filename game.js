@@ -489,8 +489,8 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Damp", "Planeet"],
-                  ["Damp", "De Aarde"]
+                  ["Damp", "Planeet"], ["Damp", "De Aarde"],
+                  ["Wolk", "De Aarde"]
                 ],
                 output: [
                   {
