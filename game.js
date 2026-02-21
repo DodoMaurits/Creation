@@ -503,10 +503,8 @@ const combinaties = [
             },
               {
                 input: [
-                  ["De Maan", "Water"],
-                  ["De Maan", "Meer"],
-                  ["De Maan", "Zee"],
-                  ["De Maan", "Oceaan"]
+                  ["De Maan", "Water"], ["De Maan", "Meer"], ["De Maan", "Zee"], ["De Maan", "Oceaan"],
+                  ["Wind", "Water"], ["Wind", "Meer"], ["Wind", "Zee"], ["Wind", "Oceaan"]
                 ],
                 output: [
                   {
@@ -950,6 +948,25 @@ const combinaties = [
                     icoon: "icons/Klei.png",
                     map: "Aarde",
                     quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Bliksem", "Water"], ["Bliksem", "Meer"], ["Bliksem", "Zee"], ["Bliksem", "Oceaan"], ["Bliksem", "Golf"]
+                ],
+                output: [
+                  {
+                    naam: "Leven",
+                    icoon: "icons/Leven.png",
+                    map: "Krachten",
+                    quote: "Life is not a problem to be solved, but a reality to be experienced <br><br>Soren Kierkegaard"
+                  },
+                  {
+                    naam: "Luca",
+                    icoon: "icons/Luca.png",
+                    map: "Pril leven",
+                    quote: "God and nature create nothing that does not fulfill a purpose <br><br>- Aristotle"
                   }
                 ]
             }
