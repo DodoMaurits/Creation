@@ -1292,7 +1292,7 @@ const combinaties = [
                   {
                     naam: "Detritus",
                     icoon: "icons/Detritus.png",
-                    map: "Pril leven",
+                    map: "Biologie",
                     quote: "I choose not to make a graveyard of my body for the rotting corpses of dead animals <br><br>- George Shaw"
                   }
                 ]
@@ -1348,7 +1348,7 @@ const combinaties = [
                   {
                     naam: "Detritus",
                     icoon: "icons/Detritus.png",
-                    map: "Pril leven",
+                    map: "Biologie",
                     quote: "I choose not to make a graveyard of my body for the rotting corpses of dead animals <br><br>- George Shaw"
                   }
                 ]
