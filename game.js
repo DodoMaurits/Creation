@@ -633,7 +633,11 @@ const combinaties = [
                 ]
             },
              {
-                input: ["Wolk", "Wolk"],
+                input: [
+                  ["Wolk", "Wolk"],
+                  ["Wind", "Wolk"], 
+                  ["Wind", "Wind"]
+                ],
                 output: [
                   {
                     naam: "Storm",
@@ -1106,7 +1110,10 @@ const combinaties = [
                 ]
             },
               {
-                input: ["Rivier", "Zand"],
+                input: [
+                  ["Zand", "Meer"], ["Klei", "Meer"],
+                  ["Rivier", "Zand"], ["Rivier", "Klei"]
+                ],
                 output: [
                   {
                     naam: "Ven",
