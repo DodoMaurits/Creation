@@ -444,8 +444,8 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Obsidiaan", "Water"],
-                  ["Obsidiaan", "Meer"]
+                  ["Obsidiaan", "Water"], ["Obsidiaan", "Meer"],
+                  ["Rivier", "Obsidiaan"]
                 ],
                 output: [
                   {
@@ -517,10 +517,8 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Gipssteen", "Water"],
-                  ["Gipssteen", "Meer"],
-                  ["Gipssteen", "Zee"],
-                  ["Gipssteen", "Oceaan"]
+                  ["Gipssteen", "Water"], ["Gipssteen", "Meer"], ["Gipssteen", "Zee"], ["Gipssteen", "Oceaan"]
+                  ["Rivier", "Gipssteen"]
                 ],
                 output: [
                   {
@@ -759,6 +757,7 @@ const combinaties = [
              {
                 input: [
                   ["Kwarts", "Water"], ["Kwarts", "Meer"], ["Kwarts", "Zee"], ["Kwarts", "Oceaan"], ["Kwarts", "Regen"], ["Kwarts", "Zure regen"]
+                  ["Rivier", "Kwarts"]
                 ],
                 output: [
                   {
@@ -772,7 +771,8 @@ const combinaties = [
               {
                 input: [
                   ["Mica", "Water"], ["Mica", "Meer"], ["Mica", "Zee"], ["Mica", "Oceaan"], ["Mica", "Regen"],
-                  ["Veldspaat", "Water"], ["Veldspaat", "Meer"], ["Veldspaat", "Zee"], ["Veldspaat", "Oceaan"], ["Veldspaat", "Regen"]
+                  ["Veldspaat", "Water"], ["Veldspaat", "Meer"], ["Veldspaat", "Zee"], ["Veldspaat", "Oceaan"], ["Veldspaat", "Regen"],
+                  ["Rivier", "Graniet"], ["Rivier", "Mica"], ["Rivier", "Veldspaat"]
                 ],
                 output: [
                   {
@@ -984,6 +984,7 @@ const combinaties = [
               {
                 input: [
                   ["Tufsteen", "Water"], ["Tufsteen", "Meer"], ["Tufsteen", "Zee"], ["Tufsteen", "Oceaan"], ["Tufsteen", "Regen"]
+                  ["Rivier", "Tufsteen"]
                 ],
                 output: [
                   {
@@ -1058,6 +1059,313 @@ const combinaties = [
                     quote: "Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return <br><br>- Alexander Anderson"
                   }
                 ]
+            },
+             {
+                input: ["Kust", "Zand"],
+                output: [
+                  {
+                    naam: "Strand",
+                    icoon: "icons/Strand.png",
+                    map: "Landschap",
+                    quote: "At the beach, life is different. Time doesn't move hour to hour but mood to moment. We live by the currents, plan by the tides, and follow the sun <br><br>- Sandy Gingras"
+                  }
+                ]
+            },
+             {
+                input: ["Kust", "Storm"],
+                output: [
+                  {
+                    naam: "Overstroming",
+                    icoon: "icons/Overstroming.png",
+                    map: "Water",
+                    quote: "Great floods have flown from simple sources <br><br>- William Shakespeare"
+                  }
+                ]
+            },
+              {
+                input: ["Rivier", "Basalt"],
+                output: [
+                  {
+                    naam: "Goud",
+                    icoon: "icons/Goud.png",
+                    map: "Chemie",
+                    quote: "Praise, like gold and diamonds, owes its value only to its scarcity <br><br>- Samuel Johnson"
+                  },
+                  {
+                    naam: "Zand",
+                    icoon: "icons/Zand.png",
+                    map: "Aarde",
+                    quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+                  },
+                  {
+                    naam: "Klei",
+                    icoon: "icons/Klei.png",
+                    map: "Aarde",
+                    quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+                  }
+                ]
+            },
+              {
+                input: ["Rivier", "Zand"],
+                output: [
+                  {
+                    naam: "Ven",
+                    icoon: "icons/Ven.png",
+                    map: "Water",
+                    quote: "Feather footed through the plashy fen passes the questing vole <br><br>- Evelyn Waugh"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Silicium", "Zand"],
+                  ["Kalk", "Zand"]
+                ],
+                output: [
+                  {
+                    naam: "Zandsteen", 
+                    icoon: "icons/Zandsteen.png",
+                    map: "Aarde",
+                    quote: "Write your worries in the sand, carve your blessings in stone <br><br>- Robert Kennedy"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Kalk", "Warmte"], ["Kalk", "Zee"]
+                ],
+                output: [
+                  {
+                    naam: "Kalksteen", 
+                    icoon: "icons/Kalksteen.png",
+                    map: "Aarde",
+                    quote: "If by some fiat I had to restrict all this writing to one sentence, this is the one I would choose: The summit of Mt. Everest is marine limestone <br><br>- John McPhee"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Leven", "Kalk"],
+                  ["Evolutie", "Kalk"]
+                ],
+                output: [
+                  {
+                    naam: "Bot", 
+                    icoon: "icons/Bot.png",
+                    map: "Biologie",
+                    quote: "In a way, humans are not made of skin and bones as such, as we're made of stories <br><br>- Sue Monk Kidd"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Luca", "Elektriciteit"],
+                  ["Luca", "Leven"]
+                ],
+                output: [
+                  {
+                    naam: "Bacteriën", 
+                    icoon: "icons/Bacteriën.png",
+                    map: "Pril leven",
+                    quote: "We are all of us walking communities of bacteria. The world shimmers, a pointillist landscape made of tiny living beings <br><br>- Lynn Margulis"
+                  },
+                  {
+                    naam: "Virus", 
+                    icoon: "icons/Virus.png",
+                    map: "Pril leven",
+                    quote: "A virus has three purposes: to duplicate, to infiltrate and to spread from one host to the next. Ultimately, even a single virus can shut down an entire system <br><br>- Wayne Dyer"
+                  }
+                ]
+            },
+              {
+                input: ["Zandsteen", "Warmte"],
+                output: [
+                  {
+                    naam: "Kwartsiet", 
+                    icoon: "icons/Kwartsiet.png",
+                    map: "Aarde",
+                    quote: "The conversion of sandstone into quartzite is sometimes the work of percolating water under ordinary conditions <br><br>- John Flett"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Zandsteen", "Water"], ["Zandsteen", "Meer"], ["Zandsteen", "Zee"], ["Zandsteen", "Oceaan"], ["Zandsteen", "Regen"], ["Zandsteen", "Zure regen"], ["Zandsteen", "Rivier"],
+                  ["Kwartsiet", "Water"], ["Kwartsiet", "Meer"], ["Kwartsiet", "Zee"], ["Kwartsiet", "Oceaan"], ["Kwartsiet", "Regen"], ["Kwartsiet", "Zure regen"], ["Kwartsiet", "Rivier"]
+                ],
+                output: [
+                  {
+                    naam: "Kwarts",
+                    icoon: "icons/Kwarts.png",
+                    map: "Aarde",
+                    quote: "Quartz is as hard as anything it is likely to meet with in use <br><br>- Frank Wade"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Kalksteen", "Water"], ["Kalksteen", "Meer"], ["Kwartsiet", "Regen"], ["Kwartsiet", "Rivier"]
+                ],
+                output: [
+                  {
+                    naam: "Kalk",
+                    icoon: "icons/Kalk.png",
+                    map: "Chemie",
+                    quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Kalksteen", "Zee"], ["Kalksteen", "Oceaan"]
+                ],
+                output: [
+                  {
+                    naam: "Calciet",
+                    icoon: "icons/Calciet.png",
+                    map: "Aarde",
+                    quote: "Through calcite, the air took on a strange luminousness, as though the light itself were split into delicate fragments <br><br>- Albert Durer"
+                  },
+                  {
+                    naam: "Kalk",
+                    icoon: "icons/Kalk.png",
+                    map: "Chemie",
+                    quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Kalksteen", "Zure regen"],
+                  ["Calciet", "Zure regen"]
+                ],
+                output: [
+                  {
+                    naam: "Sulfaat",
+                    icoon: "icons/Sulfaat.png",
+                    map: "Chemie",
+                    quote: "Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum <br><br>- Linus Pauling"
+                  },
+                  {
+                    naam: "Nitraat",
+                    icoon: "icons/Nitraat.png",
+                    map: "Chemie",
+                    quote: "For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, its breath, but the land is so much more <br><br>- John Steinbeck"
+                  },
+                  {
+                    naam: "Kalk",
+                    icoon: "icons/Kalk.png",
+                    map: "Chemie",
+                    quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Bacteriën", "Kou"], ["Bacteriën", "Radioactiviteit"], ["Bacteriën", "IJs"], ["Bacteriën", "Vuur"], ["Bacteriën", "Lava"],
+                  ["Stromatolieten", "Kou"], ["Stromatolieten", "Radioactiviteit"], ["Stromatolieten", "IJs"], ["Stromatolieten", "Vuur"], ["Stromatolieten", "Lava"],
+                  ["Blauwalgen", "Kou"], ["Blauwalgen", "Radioactiviteit"], ["Blauwalgen", "IJs"], ["Blauwalgen", "Vuur"], ["Blauwalgen", "Lava"],
+                  ["Leca", "Kou"], ["Leca", "Radioactiviteit"], ["Leca", "IJs"], ["Leca", "Vuur"], ["Leca", "Lava"],
+                  ["Amoebe", "Kou"], ["Amoebe", "Radioactiviteit"], ["Amoebe", "IJs"], ["Amoebe", "Vuur"], ["Amoebe", "Lava"],
+                  ["Foraminiferen", "Kou"], ["Foraminiferen", "Radioactiviteit"], ["Foraminiferen", "IJs"], ["Foraminiferen", "Vuur"], ["Foraminiferen", "Lava"],
+                  ["Schimmel", "Kou"], ["Schimmel", "Radioactiviteit"], ["Schimmel", "IJs"], ["Schimmel", "Vuur"], ["Schimmel", "Lava"],
+                  ["Sponzen", "Kou"], ["Sponzen", "Radioactiviteit"], ["Sponzen", "IJs"], ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
+                  ["Parasieten", "Kou"], ["Parasieten", "Radioactiviteit"], ["Parasieten", "IJs"], ["Parasieten", "Vuur"], ["Parasieten", "Lava"],
+                  ["Archaeplastiden", "Kou"], ["Archaeplastiden", "Radioactiviteit"], ["Archaeplastiden", "IJs"], ["Archaeplastiden", "Vuur"], ["Archaeplastiden", "Lava"],
+                  ["Koraal", "Kou"], ["Koraal", "Radioactiviteit"], ["Koraal", "IJs"], ["Koraal", "Vuur"], ["Koraal", "Lava"],
+                  ["Rode algen", "Kou"], ["Rode algen", "Radioactiviteit"], ["Rode algen", "IJs"], ["Rode algen", "Vuur"], ["Rode algen", "Lava"],
+                  ["Groene algen", "Kou"], ["Groene algen", "Radioactiviteit"], ["Groene algen", "IJs"], ["Groene algen", "Vuur"], ["Groene algen", "Lava"],
+                  ["Neteldiervoorouder", "Kou"], ["Neteldiervoorouder", "Radioactiviteit"], ["Neteldiervoorouder", "IJs"], ["Neteldiervoorouder", "Vuur"], ["Neteldiervoorouder", "Lava"],
+                  ["Bilateria-voorouder", "Kou"], ["Bilateria-voorouder", "Radioactiviteit"], ["Bilateria-voorouder", "IJs"], ["Bilateria-voorouder", "Vuur"], ["Bilateria-voorouder", "Lava"],
+                  ["Plakdiertjes", "Kou"], ["Plakdiertjes", "Radioactiviteit"], ["Plakdiertjes", "IJs"], ["Plakdiertjes", "Vuur"], ["Plakdiertjes", "Lava"],
+                  ["Roodwieren", "Kou"], ["Roodwieren", "Radioactiviteit"], ["Roodwieren", "IJs"], ["Roodwieren", "Vuur"], ["Roodwieren", "Lava"],
+                  ["Steenwortelalgen", "Kou"], ["Steenwortelalgen", "Radioactiviteit"], ["Steenwortelalgen", "IJs"], ["Steenwortelalgen", "Vuur"], ["Steenwortelalgen", "Lava"],
+                  ["Groenwieren", "Kou"], ["Groenwieren", "Radioactiviteit"], ["Groenwieren", "IJs"], ["Groenwieren", "Vuur"], ["Groenwieren", "Lava"]
+                ],
+                output: [
+                  {
+                    naam: "Dood",
+                    icoon: "icons/Dood.png",
+                    map: "Krachten",
+                    quote: "Death smiles at us all, all a man can do is smile back <br><br>- Marcus Aurelius"
+                  },
+                  {
+                    naam: "Detritus",
+                    icoon: "icons/Detritus.png",
+                    map: "Pril leven",
+                    quote: "I choose not to make a graveyard of my body for the rotting corpses of dead animals <br><br>- George Shaw"
+                  }
+                ]
+            },
+              {
+                input: ["Bacteriën", "Leven"],
+                output: [
+                  {
+                    naam: "Evolutie",
+                    icoon: "icons/Evolutie.png",
+                    map: "Biologie",
+                    quote: "It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is the most adaptable to change, that lives within the means available and works co-operatively against common threats <br><br>- Charles Darwin"
+                  }
+                ]
+            },
+              {
+                input: ["Bacteriën", "Bacteriën"],
+                output: [
+                  {
+                    naam: "Stromatolieten",
+                    icoon: "icons/Stromatolieten.png",
+                    map: "Pril leven",
+                    quote: "For the first half of geological time our ancestors were bacteria. Most creatures still are bacteria, and each one of our trillions of cells is a colony of bacteria <br><br>- Richard Dawkins"
+                  }
+                ]
+            },
+              {
+                input: ["Evolutie", "Bacteriën"],
+                output: [
+                  {
+                    naam: "Blauwalgen",
+                    icoon: "icons/Blauwalgen.png",
+                    map: "Pril leven",
+                    quote: "No matter how politely one says it, we owe our existence to the farts of blue-green algae <br><br>- Diane Ackerman"
+                  },
+                  {
+                    naam: "Leca",
+                    icoon: "icons/Leca.png",
+                    map: "Pril leven",
+                    quote: "The cell is immortal. It is merely the fluid in which it floats that degenerates. Renew this fluid at regular intervals, give the cells at they require for nutrition, and as far as we know, the pulsation of life can go on forever <br><br>- Alexis Carrel"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"],
+                  ["Amoebe", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"],
+                  ["Parasieten", "Dood"], ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"],
+                  ["Groene algen", "Dood"], ["Neteldiervoorouder", "Dood"], ["Bilateria-voorouder", "Dood"],                  ["Plakdiertjes", "Dood"],
+                  ["Roodwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"]
+                ],
+                output: [
+                  {
+                    naam: "Detritus",
+                    icoon: "icons/Detritus.png",
+                    map: "Pril leven",
+                    quote: "I choose not to make a graveyard of my body for the rotting corpses of dead animals <br><br>- George Shaw"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Stromatolieten", "Straling"], ["Stromatolieten", "Ster"],
+                  ["Blauwalgen", "Straling"], ["Blauwalgen", "Ster"]
+                ],
+                output: [
+                  {
+                    naam: "Fotosynthese",
+                    icoon: "icons/Fotosynthese.png",
+                    map: "Biologie",
+                    quote: "He had a love affair with photosynthesis. He could talk about moss for an hour. He said that plants carried wisdom humans would never be around long enough to understand <br><br>- Anthony Doerr"
+                  }
+                ]
             }
 ];
 
@@ -1070,7 +1378,8 @@ const groepsIconen = {
   "Vuur": "icons/Vuur.png",
   "Aarde": "icons/Aarde.png",
   "Landschap": "icons/Landschap.png",
-  "Pril leven": "icons/Pril_leven.png"
+  "Pril leven": "icons/Pril_leven.png",
+  "Biologie": "icons/Biologie.png"
 };
 
 // ----- STATE -----
