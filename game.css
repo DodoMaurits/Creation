@@ -432,7 +432,15 @@ body {
                 white-space: normal;
                 text-align: center;
               }
-            
+
+              /* Hover uitzetten op mobiel */
+              .icon:hover,
+              .icon.map:hover,
+              .icon.element:hover,
+              .icon.map-title:hover {
+                transform: none;
+              }
+
               /* ---------------- GRID OPEN MAP ---------------- */
               .grid-elements {
                 display: grid;
