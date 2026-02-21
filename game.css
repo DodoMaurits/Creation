@@ -422,6 +422,13 @@ body {
               }
             
               /* ---------------- TITELS ONDER ICONEN ---------------- */
+              /* pseudo tooltips volledig uitschakelen */
+              .icon.map::after,
+              .icon.element::after,
+              .icon.map-title::after {
+                display: none !important;
+              }
+
               .icon.map-title::after,
               .icon.element::after {
                 position: static;
@@ -432,15 +439,7 @@ body {
                 white-space: normal;
                 text-align: center;
               }
-
-              /* Hover uitzetten op mobiel */
-              .icon:hover,
-              .icon.map:hover,
-              .icon.element:hover,
-              .icon.map-title:hover {
-                transform: none;
-              }
-
+              
               /* ---------------- GRID OPEN MAP ---------------- */
               .grid-elements {
                 display: grid;
@@ -465,6 +464,7 @@ body {
 
               #closed-container {
                 width: 50vw;
+                overflow: hidden;
               }
             
               #closed-container.left {
