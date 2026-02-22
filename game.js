@@ -2190,32 +2190,65 @@ function renderSide(parentContainer, map, side) {
 
   titleContainer.appendChild(titleImg);
   titleContainer.appendChild(titleTooltip);
-
   parentContainer.appendChild(titleContainer);
 
   // --- Grid van elementen ---
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
-  map.elementen.forEach(el => {
-    const elContainer = document.createElement("div");
-    elContainer.className = "icon-container";
+  // Dynamische layout
+  const totalElements = map.elementen.length;
 
-    const img = document.createElement("img");
-    img.src = el.icoon;
-    img.className = "icon element";
-    img.onclick = () => toggleSelect(el, img, side, map.naam);
+  if (totalElements > 20) {
+    // 5 kolommen + iets kleinere iconen
+    grid.style.gridTemplateColumns = "repeat(5, 100px)";
+    grid.style.columnGap = "30px";
+    grid.style.rowGap = "15px";
 
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = el.naam;
+    map.elementen.forEach(el => {
+      const elContainer = document.createElement("div");
+      elContainer.className = "icon-container";
 
-    elContainer.appendChild(img);
-    elContainer.appendChild(tooltip);
+      const img = document.createElement("img");
+      img.src = el.icoon;
+      img.className = "icon element";
+      img.style.width = "110px";
+      img.style.height = "110px"; // iets kleiner dan 130px
+      img.onclick = () => toggleSelect(el, img, side, map.naam);
 
-    grid.appendChild(elContainer);
-  });
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = el.naam;
 
+      elContainer.appendChild(img);
+      elContainer.appendChild(tooltip);
+      grid.appendChild(elContainer);
+    });
+  } else {
+    // normaal: 4 kolommen
+    grid.style.gridTemplateColumns = "repeat(4, 100px)";
+    grid.style.columnGap = "50px";
+    grid.style.rowGap = "20px";
+
+    map.elementen.forEach(el => {
+      const elContainer = document.createElement("div");
+      elContainer.className = "icon-container";
+
+      const img = document.createElement("img");
+      img.src = el.icoon;
+      img.className = "icon element";
+      img.onclick = () => toggleSelect(el, img, side, map.naam);
+
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = el.naam;
+
+      elContainer.appendChild(img);
+      elContainer.appendChild(tooltip);
+      grid.appendChild(elContainer);
+    });
+  }
+  
   parentContainer.appendChild(grid);
 
   // --- Fade-in ---
