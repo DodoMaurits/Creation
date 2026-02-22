@@ -1348,7 +1348,7 @@ const combinaties = [
                   ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"],
                   ["Amoebe", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"],
                   ["Parasieten", "Dood"], ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"],
-                  ["Groene algen", "Dood"], ["Neteldiervoorouder", "Dood"], ["Bilateria-voorouder", "Dood"],                  ["Plakdiertjes", "Dood"],
+                  ["Groene algen", "Dood"], ["Neteldiervoorouder", "Dood"], ["Bilateria-voorouder", "Dood"],
                   ["Roodwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"]
                 ],
                 output: [
@@ -1363,7 +1363,13 @@ const combinaties = [
               {
                 input: [
                   ["Stromatolieten", "Straling"], ["Stromatolieten", "Ster"],
-                  ["Blauwalgen", "Straling"], ["Blauwalgen", "Ster"]
+                  ["Blauwalgen", "Straling"], ["Blauwalgen", "Ster"],
+                  ["Archaeplastiden", "Straling"], ["Archaeplastiden", "Ster"],
+                  ["Rode algen", "Straling"], ["Rode algen", "Ster"],
+                  ["Groene algen", "Straling"], ["Groene algen", "Ster"],
+                  ["Roodwieren", "Straling"], ["Roodwieren", "Ster"]
+                  ["Steenwortelalgen", "Straling"], ["Steenwortelalgen", "Ster"],
+                  ["Grownieren", "Straling"], ["Groenwieren", "Ster"]
                 ],
                 output: [
                   {
@@ -1377,7 +1383,8 @@ const combinaties = [
               {
                 input: [
                   ["Leca", "Basalt"],
-                  ["Leca", "Klei"]
+                  ["Leca", "Klei"],
+                  ["Aarde", "Leca"]
                 ],
                 output: [
                   {
@@ -1471,6 +1478,243 @@ const combinaties = [
                     quote: "Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined <br><br>- Lewis Thomas"
                   }
                 ]
+            },
+              {
+                input: ["Foraminiferen", "Schelp"],
+                output: [
+                  {
+                    naam: "Schelp",
+                    icoon: "icons/Schelp.png",
+                    map: "Biologie",
+                    quote: "I see a broken shell and I remind myself that something might have needed setting free <br><br>- Sara Pennypacker"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Schimmel", "Basalt"],
+                  ["Schimmel", "Zand"],
+                  ["Schimmel", "Klei"]
+                ],
+                output: [
+                  {
+                    naam: "Aarde",
+                    icoon: "icons/Aarde.png",
+                    map: "Aarde",
+                    quote: "Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and animals <br><br>- Aldo Leopold"
+                  }
+                ]
+            },
+              {
+                input: ["Weefsel", "Evolutie"],
+                output: [
+                  {
+                    naam: "Spieren",
+                    icoon: "icons/Spieren.png",
+                    map: "Biologie",
+                    quote: "The muscles are the instruments of movement, and the bones are the levers <br><br>- Leonardo da Vinci"
+                  },
+                  {
+                    naam: "Zenuwen",
+                    icoon: "icons/Zenuwen.png",
+                    map: "Biologie",
+                    quote: "With the nervous system intact the reactions of the various parts of that system, the 'simple reflexes', are ever combined into great unitary harmonies <br><br>- Charles Sherrington"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Sponzen", "Kalk"],
+                  ["Sponzen", "Bot"],
+                  ["Sponzen", "Evolutie"]
+                ].
+                output: [
+                  {
+                    naam: "Koraal",
+                    icoon: "icons/Koraal.png",
+                    map: "Waterdieren",
+                    quote: "Coral reefs represent some of the world's most spectacular beauty spots, but they are also the foundation of marine life: without them many of the sea's most exquisite species will not survive <br><br>- Sheherazade Goldsmith"
+                  }
+                ]
+            },
+              {
+                input: ["Archaeplastiden", "Evolutie"],
+                output: [
+                  {
+                    naam: "Rode algen",
+                    icoon: "icons/Rode_algen.png",
+                    map: "Pril leven",
+                    quote: "The red algae represent one of the most ancient lineages of eukaryotic life <br><br>- Andrew Knoll"
+                  },
+                  {
+                    naam: "Groene algen",
+                    icoon: "icons/Groene_algen.png",
+                    map: "Pril leven",
+                    quote: "Even the simplest green algae possess the fundamental machinery of photosynthesis that sustains life on Earth <br><br>- Peter Raven"
+                  }
+                ]
+            },
+              {
+                input: ["Spieren", "Leca"],
+                output: [
+                  {
+                    naam: "Cnidaria-voorouder",
+                    icoon: "icons/Cnidaria-voorouder.png",
+                    map: "Pril leven",
+                    quote: "Grip the nettle firmly and it will become a stick with which to beat your enemey <br><br>- Isaac Asimov"
+                  },
+                  {
+                    naam: "Bilateria-voorouder",
+                    icoon: "icons/Bilateria-voorouder.png",
+                    map: "Pril leven",
+                    quote: "We are all worms. But I believe that I am a glow-worm <br><br>- Winston Churchill"
+                  }
+                ]
+            },
+              {
+                input: ["Zenuwen", "Leca"],
+                output: [
+                  {
+                    naam: "Druk",
+                    icoon: "icons/Druk.png",
+                    map: "Brein",
+                    quote: "The scientist states that pressure is exerted outwards in all directions equally, whereas natural pressure (e.g. air pressure) is exerted inwards from all directions equally <br><br>- Viktor Schawberger"
+                  },
+                  {
+                    naam: "Tast",
+                    icoon: "icons/Tast.png",
+                    map: "Brein",
+                    quote: "Too often we underestimate the power of touch <br><br>- Leo Buscaglia"
+                  }
+                ]
+            },
+              {
+                input: [
+                  ["Koraal", "Koraal"],
+                  ["Roodwieren", "Kalk"]
+                ],
+                output: [
+                  {
+                    naam: "Rif",
+                    icoon: "icons/Rif.png",
+                    map: "Landschap",
+                    quote: "Coral reefs are the backbone for the entire ocean. They are the nursery for the ocean. About a quarter of all marine life in the ocean spends part of its lifecycle on a coral reef <br><br>- Jeff Orbowski"
+                  }
+                ]
+            },
+              {
+                input: ["Rode algen", "Evolutie"],
+                output: [
+                  {
+                    naam: "Roodwieren",
+                    icoon: "icons/Roodwieren.png",
+                    map: "Planten",
+                    quote: "To know how it feels to be seaweed you have to get in the water <br><br>- Saul Bellow"
+                  }
+                ]
+            },
+              {
+                input: ["Groene algen", "Kalk"],
+                output: [
+                  {
+                    naam: "Steenwortelalgen",
+                    icoon: "icons/Steenwortelalgen.png",
+                    map: "Pril leven",
+                    quote: "Let the gentle bush dig its root deep and spread upward to split the boulder <br><br>- Carl Sandburg"
+                  }
+                ]
+            },
+              {
+                input: ["Groene algen", "Evolutie"],
+                output: [
+                  {
+                    naam: "Groenwieren",
+                    icoon: "icons/Groenwieren.png",
+                    map: "Planten",
+                    quote: "Green is the fresh emblem of well found hopes. In blue the spirit can wander, but in green it can rest <br><br>- Mary Webb"
+                  },
+                  {
+                    naam: "Steenwortelalgen",
+                    icoon: "icons/Steenwortelalgen.png",
+                    map: "Pril leven",
+                    quote: "Let the gentle bush dig its root deep and spread upward to split the boulder <br><br>- Carl Sandburg"
+                  }
+                ]
+            },
+              {
+                input: ["Cnidaria-voorouder", "Evolutie"],
+                output: [
+                  {
+                    naam: "Kwallen",
+                    icoon: "icons/Kwallen.png",
+                    map: "Waterdieren",
+                    quote: "A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive opening through which it both eats and excretes - as regrettable an example of economy of design as ever was <b><br>- Jeffrey Kluger"
+                  },
+                  {
+                    naam: "Bloemdieren",
+                    icoon: "icons/Bloemdieren.png",
+                    map: "Waterdieren",
+                    quote: "The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul <b><br>- Robert Wyland"
+                  },
+                  {
+                    naam: "Parasieten",
+                    icoon: "icons/Parasieten.png",
+                    map: "Pril leven",
+                    quote: "Thought, like any parasite, cannot exist without a compliant host <br><br>- Bernard Beckett"
+                  }
+                ]
+            },
+              {
+                input: ["Bilateria-voorouder", "Bot"],
+                output: [
+                  {
+                    naam: "Agnathen",
+                    icoon: "icons/Agnathen.png",
+                    map: "Vissen",
+                    quote: "Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid <br><br>- Albert Einstein"
+                  },
+                  {
+                    naam: "Lancetvisjes",
+                    icoon: "icons/Lancetvisjes.png",
+                    map: "Vissen",
+                    quote: "For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the sea <br><br>- Empedocles"
+                  },
+                  {
+                    naam: "Trilobieten",
+                    icoon: "icons/Trilobieten.png",
+                    map: "Geleedpotige",
+                    quote: "The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must have been light to enter it <br><br>- Louis Agassiz"
+                  },
+                  {
+                    naam: "Manteldieren",
+                    icoon: "icons/Manteldieren.png",
+                    map: "Waterdieren",
+                    quote: "The ascidians are among the most extraordinary of marine animals <br><br>- Thomas Huxley"
+                  },
+                  {
+                    naam: "Beerdiertjes",
+                    icoon: "icons/Beerdiertjes.png",
+                    map: "Waterdieren",
+                    quote: "There is one living organism, called a tardigrade, that has survived the five great mass extinctions on Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures <br><br>- Alycia Carey"
+                  }
+                ]
+            },
+              {
+                input: ["Bilateria-voorouder", "Evolutie"],
+                output: [
+                  {
+                    naam: "Wormen",
+                    icoon: "icons/Wormen.png",
+                    map: "Waterdieren",
+                    quote: ""
+                  },
+                  {
+                    naam: "Zeesterren",
+                    icoon: "icons/Zeesterren.png",
+                    map: "Waterdieren",
+                    quote: ""
+                  }
+                ]
             }
 ];
 
@@ -1484,7 +1728,10 @@ const groepsIconen = {
   "Aarde": "icons/Aarde.png",
   "Landschap": "icons/Landschap.png",
   "Pril leven": "icons/Pril_leven.png",
-  "Biologie": "icons/Biologie.png"
+  "Biologie": "icons/Biologie.png",
+  "Waterdieren": "icons/Waterdieren.png",
+  "Vissen": "icons/Vissen.png",
+  "Geleedpotige": "icons/Geleedpotige.png"
 };
 
 // ----- STATE -----
