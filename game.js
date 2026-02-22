@@ -2198,38 +2198,59 @@ function renderSide(parentContainer, map, side) {
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
-  // Dynamische layout via CSS-klassen
+  // Dynamische layout
   const totalElements = map.elementen.length;
 
-  // Verwijder eerdere kolomklassen (als deze opnieuw renderen)
-  grid.classList.remove("five-cols", "six-cols");
-
   if (totalElements > 20) {
-    grid.classList.add("six-cols");   // 6 kolommen, icoongrootte zoals 5 kolommen
-  } else if (totalElements > 16) {
-    grid.classList.add("five-cols");  // 5 kolommen, iets kleinere iconen
-  } 
-  // <16 items: geen extra klasse nodig, standaard CSS geldt
+    // 5 kolommen + iets kleinere iconen
+    grid.style.gridTemplateColumns = "repeat(5, 100px)";
+    grid.style.columnGap = "30px";
+    grid.style.rowGap = "15px";
 
-  // --- Voeg elementen toe ---
-  map.elementen.forEach(el => {
-    const elContainer = document.createElement("div");
-    elContainer.className = "icon-container";
+    map.elementen.forEach(el => {
+      const elContainer = document.createElement("div");
+      elContainer.className = "icon-container";
 
-    const img = document.createElement("img");
-    img.src = el.icoon;
-    img.className = "icon element";
-    img.onclick = () => toggleSelect(el, img, side, map.naam);
+      const img = document.createElement("img");
+      img.src = el.icoon;
+      img.className = "icon element";
+      img.style.width = "110px";
+      img.style.height = "110px"; // iets kleiner dan 130px
+      img.onclick = () => toggleSelect(el, img, side, map.naam);
 
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = el.naam;
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = el.naam;
 
-    elContainer.appendChild(img);
-    elContainer.appendChild(tooltip);
-    grid.appendChild(elContainer);
-  });
+      elContainer.appendChild(img);
+      elContainer.appendChild(tooltip);
+      grid.appendChild(elContainer);
+    });
+  } else {
+    // normaal: 4 kolommen
+    grid.style.gridTemplateColumns = "repeat(4, 100px)";
+    grid.style.columnGap = "50px";
+    grid.style.rowGap = "20px";
 
+    map.elementen.forEach(el => {
+      const elContainer = document.createElement("div");
+      elContainer.className = "icon-container";
+
+      const img = document.createElement("img");
+      img.src = el.icoon;
+      img.className = "icon element";
+      img.onclick = () => toggleSelect(el, img, side, map.naam);
+
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = el.naam;
+
+      elContainer.appendChild(img);
+      elContainer.appendChild(tooltip);
+      grid.appendChild(elContainer);
+    });
+  }
+  
   parentContainer.appendChild(grid);
 
   // --- Fade-in ---
@@ -2461,4 +2482,3 @@ function renderNewElements(elements) {
     updateClosedContainer(); // ← dit zorgt dat ze weer gecentreerd staan
   };
 }
-
