@@ -1834,7 +1834,7 @@ const combinaties = [
                   {
                     naam: "Oog",
                     icoon: "icons/Oog.png",
-                    map: "Biologie",
+                    map: "Brein",
                     quote: "Eye contact is way more intimate than words will ever be <br><br>- Faraaz Kazi"
                   },
                   {
