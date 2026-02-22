@@ -954,7 +954,7 @@ const combinaties = [
                     naam: "IJzer",
                     icoon: "icons/IJzer.png",
                     map: "Chemie",
-                    quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+                    quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>- William Yeatsu"
                   },
                   {
                     naam: "Klei",
@@ -1382,7 +1382,7 @@ const combinaties = [
                   ["Archaeplastiden", "Straling"], ["Archaeplastiden", "Ster"],
                   ["Rode algen", "Straling"], ["Rode algen", "Ster"],
                   ["Groene algen", "Straling"], ["Groene algen", "Ster"],
-                  ["Roodwieren", "Straling"], ["Roodwieren", "Ster"]
+                  ["Roodwieren", "Straling"], ["Roodwieren", "Ster"],
                   ["Steenwortelalgen", "Straling"], ["Steenwortelalgen", "Ster"],
                   ["Grownieren", "Straling"], ["Groenwieren", "Ster"]
                 ],
@@ -1541,7 +1541,7 @@ const combinaties = [
                 input: [
                   ["Sponzen", "Kalk"], ["Sponzen", "Bot"], ["Sponzen", "Evolutie"],
                   ["Bloemdieren", "Kalk"], ["Bloemdieren", "Bot"]
-                ].
+                ],
                 output: [
                   {
                     naam: "Koraal",
