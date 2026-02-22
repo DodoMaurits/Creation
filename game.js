@@ -1842,7 +1842,7 @@ const combinaties = [
                     icoon: "icons/Geur.png",
                     map: "Brein",
                     quote: "Smell is a potent wizard that transports you across thousands of miles and all the years you have lived <br><br>- Helen Keller"
-                  }
+                  },
                   {
                     naam: "Tast",
                     icoon: "icons/Tast.png",
@@ -1865,7 +1865,7 @@ const combinaties = [
                     icoon: "icons/Geur.png",
                     map: "Brein",
                     quote: "Smell is a potent wizard that transports you across thousands of miles and all the years you have lived <br><br>- Helen Keller"
-                  }
+                  },
                   {
                     naam: "Tast",
                     icoon: "icons/Tast.png",
@@ -1875,9 +1875,7 @@ const combinaties = [
                 ]
             },
               {
-                input: [
-                  ["Gneis", "Regen"],
-                ],
+                input: ["Gneis", "Regen"],
                 output: [
                   {
                     naam: "Roest",
