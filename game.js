@@ -1495,7 +1495,7 @@ const combinaties = [
                 ]
             },
               {
-                input: ["Foraminiferen", "Schelp"],
+                input: ["Foraminiferen", "Zand"],
                 output: [
                   {
                     naam: "Schelp",
