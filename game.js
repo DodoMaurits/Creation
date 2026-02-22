@@ -1126,7 +1126,8 @@ const combinaties = [
               {
                 input: [
                   ["Silicium", "Zand"],
-                  ["Kalk", "Zand"]
+                  ["Kalk", "Zand"],
+                  ["Druk", "Zand"]
                 ],
                 output: [
                   {
@@ -1185,7 +1186,10 @@ const combinaties = [
                 ]
             },
               {
-                input: ["Zandsteen", "Warmte"],
+                input: [
+                  ["Zandsteen", "Warmte"],
+                  ["Druk", "Zandsteen"]
+                ],
                 output: [
                   {
                     naam: "Kwartsiet", 
@@ -1524,9 +1528,8 @@ const combinaties = [
             },
               {
                 input: [
-                  ["Sponzen", "Kalk"],
-                  ["Sponzen", "Bot"],
-                  ["Sponzen", "Evolutie"]
+                  ["Sponzen", "Kalk"], ["Sponzen", "Bot"], ["Sponzen", "Evolutie"],
+                  ["Bloemdieren", "Kalk"], ["Bloemdieren", "Bot"]
                 ].
                 output: [
                   {
@@ -1706,11 +1709,100 @@ const combinaties = [
                     naam: "Wormen",
                     icoon: "icons/Wormen.png",
                     map: "Waterdieren",
-                    quote: ""
+                    quote: "Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor <br><br>- Rachel Carson"
                   },
                   {
                     naam: "Zeesterren",
                     icoon: "icons/Zeesterren.png",
+                    map: "Waterdieren",
+                    quote: "In the tidal pools the starfish cling to the rocks while the waves break over them <br><br>- Rachel Carson"
+                  }
+                ]
+            },
+              {
+                input: ["Druk", "Graniet"],
+                output: [
+                  {
+                    naam: "Gneis",
+                    icoon: "icons/Gneis.png",
+                    map: "Aarde",
+                    quote: "Geologists have a saying - rocks remember <br><br>- Neil Armstrong"
+                  }
+                ]
+            },
+              {
+                input: ["Druk", "Zout"],
+                output: [
+                  {
+                    naam: "Steenzout",
+                    icoon: "icons/Steenzout.png",
+                    map: "Chemie",
+                    quote: "Salt is the only rock directly consumed by man <br><br>- Margaret Visser"
+                  }
+                ]
+            },
+              {
+                input: ["Druk", "Klei"],
+                output: [
+                  {
+                    naam: "Kleisteen",
+                    icoon: "icons/Kleisteen.png",
+                    map: "Aarde",
+                    quote: "Everything changes, even stone <br><br>- Claude Monet"
+                  }
+                ]
+            },
+              {
+                input: ["Druk", "Kalksteen"],
+                output: [
+                  {
+                    naam: "Marmer",
+                    icoon: "icons/Marmer.png",
+                    map: "Aarde",
+                    quote: "The marble not yet carved can hold the form of every thought the greatest artist has <br><br>- Michelangelo"
+                  }
+                ]
+            },
+              {
+                input: ["Steenwortelalgen", "Evolutie"],
+                output: [
+                  {
+                    naam: "Wortels",
+                    icoon: "icons/Wortels.png",
+                    map: "Biologie",
+                    quote: "Let the gentle bush dig its root deep and spread upward to split the boulder <br><br>- Carl Sandburg"
+                  }
+                ]
+            },
+              {
+                input: ["Kwallen", "Zenuwen"],
+                output: [
+                  {
+                    naam: "Licht",
+                    icoon: "icons/Licht.png",
+                    map: "Brein",
+                    quote: "In every person there is a sun. Just let them shine <br><br>- Socrates"
+                  },
+                  {
+                    naam: "Druk",
+                    icoon: "icons/Druk.png",
+                    map: "Brein",
+                    quote: "The scientist states that pressure is exerted outwards in all directions equally, whereas natural pressure (e.g. air pressure) is exerted inwards from all directions equally <br><br>- Viktor Schawberger"
+                  },
+                  {
+                    naam: "Tast",
+                    icoon: "icons/Tast.png",
+                    map: "Brein",
+                    quote: "Too often we underestimate the power of touch <br><br>- Leo Buscaglia"
+                  }
+                ]
+            },
+              {
+                input: ["Bloemdieren", "Evolutie"],
+                output: [
+                  {
+                    naam: "Zeeanemonen",
+                    icoon: "icons/Zeeanemonen.png",
                     map: "Waterdieren",
                     quote: ""
                   }
