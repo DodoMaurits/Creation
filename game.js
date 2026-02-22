@@ -2094,6 +2094,7 @@ const groepsIconen = {
   "Pril leven": "icons/Pril_leven.png",
   "Biologie": "icons/Biologie.png",
   "Waterdieren": "icons/Waterdieren.png",
+  "Brein": "icons/Brein.png",
   "Vissen": "icons/Vissen.png",
   "Geleedpotige": "icons/Geleedpotige.png"
 };
