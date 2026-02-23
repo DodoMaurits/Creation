@@ -463,27 +463,30 @@ body {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 15px;
-              
                 max-width: 100%;   /* overschrijft 680px */
                 width: 100%;
               }
               
+              /* ---------------- GRID CLOSED MAPS ---------------- */
               #closed-container {
-                  width: 100%;
+                  width: 90%;               /* max 90% van schermbreedte */
+                  max-width: 500px;         /* limiet zodat 3 icons per rij passen */
                   left: 50%;
                   top: 50%;
                   transform: translate(-50%, -50%);
                   display: flex;
                   justify-content: center;
-                  gap: 20px;
-                  flex-wrap: wrap;   /* dit is nieuw */
+                  gap: 15px;
+                  flex-wrap: wrap;          /* meerdere rijen mogelijk */
               }
-
+              
               #closed-container .icon-container {
+                  flex: 1 1 30%;            /* basis 30%, groeit of krimpt */
+                  max-width: 90px;          /* voorkomt dat icon te groot wordt */
                   display: flex;
-                  flex-direction: column; /* belangrijk voor titel onder icoon */
-                  align-items: center;    /* centreert icoon + titel */
-                  justify-content: center;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;  /* titel onder icoon netjes gecentreerd */
               }
               
               /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
