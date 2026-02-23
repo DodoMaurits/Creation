@@ -386,10 +386,12 @@ body {
             
               #left-side {
                 left: 0;
+          	    transform: translateX(0) !important;
               }
             
               #right-side {
                 left: 50%;
+          	    transform: translateX(0) !important;
               }
             
               /* ---------------- ICONEN KLEINER ---------------- */
@@ -416,17 +418,6 @@ body {
               .icon.map-title::after {
                 display: none !important;
               }
-
-              .icon.map-title::after,
-              .icon.element::after {
-                position: static;
-                display: block;
-                margin-top: 6px;
-                opacity: 1 !important; /* altijd zichtbaar */
-                font-size: 11px;
-                white-space: normal;
-                text-align: center;
-              }
               
               /* ---------------- GRID OPEN MAP ---------------- */
               .grid-elements {
@@ -441,16 +432,12 @@ body {
               }
 
               .grid-elements .icon-container {
-                width: 75px;     /* zelfde als icoon */
-                height: auto;    /* geen vaste hoogte meer */
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
               }
-              
-              .tooltip {
-                max-width: 75px;       /* max breedte = icoonbreedte */
-                white-space: normal;   /* tekst mag afbreken */
-                word-break: break-word;
-              }
-                            
+                
               /* ---------------- GRID CLOSED MAPS ---------------- */
               .grid-closed {
                 display: grid;
@@ -484,7 +471,9 @@ body {
                 margin-top: 6px;
                 font-size: 11px;
                 white-space: normal;
+                word-break: break-word;
                 text-align: center;
+                max-width: 75px;
               }
             
               .icon-container:hover .tooltip {
