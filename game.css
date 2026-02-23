@@ -392,34 +392,32 @@ body {
             } 
   
             /* ---------------- ICONEN IETS KLEINER ---------------- */
-            .icon.map,
-            .icon.map-title {
-              width: 100px;
-              height: 100px;
+            .icon.element {
+              width: 60px;
+              height: 60px;
             }
           
-            .icon.element {
-              width: 75px;
-              height: 75px;
+            .icon.map,
+            .icon.map-title {
+              width: 80px;
+              height: 80px;
             }
   
             /* ---------------- CLOSED MAPS ---------------- */
             .side {
-              width: 50vw;               /* halve schermbreedte */
-              position: absolute;         /* belangrijk! behoud absolute */
-              top: 0;                     /* of waar je wilt */
-              left: 0;                    /* linker helft, rechter helft via left:50% */
-              transform: translateX(-100%); /* start buiten beeld */
+              width: 50vw;
+              position: absolute;
+              top: 0;
+              left: 0; /* voor linkerzijde, rechter via left:50% */
+              transform: translateX(-100%);
               transition: transform 0.6s ease, opacity 0.6s ease;
               opacity: 0;
-              display: block;             /* NIET flex */
+              display: block;
               text-align: center;
             }
           
-            .side.visible {
-              transform: translateX(0);
-              opacity: 1;
-            }
+            .side.right { left: 50%; } /* rechter helft */
+            .side.visible { transform: translateX(0); opacity: 1; }
           
             #closed-container {
               display: flex;
@@ -434,15 +432,14 @@ body {
               pointer-events: none;       /* voorkomen dat je op de verborgen container klikt */
             }
 
-            /* ELEMENTEN GRID OP MOBIEL */
+            /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(3, 50px);
-              width: 100%;
-              max-width: 100%;          /* nooit breder dan de halve side */
-              column-gap: 10px;         /* kleine gap */
-              row-gap: 12px;
-              justify-items: center;    /* center per cel */
+              grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* flexibel, max 3 per rij */
+              justify-items: center;   /* centreert elk icoon in zijn cel */
+              gap: 8px;                /* krappe gap */
+              width: 100%;             /* vult de halve side */
+              max-width: 100%;
             }
 
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
