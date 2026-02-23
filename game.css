@@ -451,20 +451,20 @@ body {
               }
 
               #closed-container {
-                width: 50vw;
-                overflow: hidden;
-              }
-            
-              #closed-container.left {
-                left: 25%; /* midden van linkerhelft */
+                width: 100%;
+                left: 50%;
                 transform: translate(-50%, -50%);
+                display: flex;
+                justify-content: center;
+                gap: 20px;
               }
-            
-              #closed-container.right {
-                left: 75%; /* midden van rechterhelft */
-                transform: translate(-50%, -50%);
+
+              #closed-container .icon-container {
+                flex: 1;
+                display: flex;
+                justify-content: center;
               }
-            
+              
               /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
               .tooltip {
                 position: static;
