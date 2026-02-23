@@ -2123,7 +2123,23 @@ function renderClosed() {
 
   const grid = document.createElement("div");
   grid.className = "grid-closed";
-
+  
+  if (window.innerWidth <= 900 && window.innerHeight > window.innerWidth) {
+    // mobiele portrait: niets instellen in JS
+  } else {
+    // Desktop: normale layout
+    const totalElements = map.elementen.length;
+    if (totalElements > 20) {
+      grid.style.gridTemplateColumns = "repeat(5, 100px)";
+      grid.style.columnGap = "30px";
+      grid.style.rowGap = "15px";
+    } else {
+      grid.style.gridTemplateColumns = "repeat(4, 100px)";
+      grid.style.columnGap = "50px";
+      grid.style.rowGap = "20px";
+    }
+  }
+  
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
