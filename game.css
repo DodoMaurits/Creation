@@ -239,18 +239,6 @@ body {
   width: 130px;              /* breedte van één icoon */
 }
 
-/* standaard breedte: midden van scherm */
-#closed-container.center {
-  width: auto;           /* flexibele breedte, geen vaste 680px */
-  max-width: 680px;      /* optioneel: beperkt tot 4 icons + gaps */
-}
-
-/* linker- of rechterhelft */
-#closed-container.side {
-  width: auto;           /* niet vastzetten! */
-  max-width: 680px;      /* limiet voor 4 icons + gaps */
-}
-
 /* Links/ midden van linkerhelft */
 #closed-container.left {
   left: 25%;
