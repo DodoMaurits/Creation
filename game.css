@@ -404,14 +404,12 @@ body {
             }
   
             /* ---------------- CLOSED MAPS ---------------- */
-          
             #closed-container {
               width: 95%;
               max-width: 420px;        /* ruimte voor 3 iconen + gaps */
               left: 50%;
               top: 50%;
               transform: translate(-50%, -50%);
-              
               display: flex;
               flex-wrap: wrap;
               justify-content: center; /* elke rij gecentreerd */
@@ -426,32 +424,38 @@ body {
             }
   
             /* ---------------- OPEN MAP LINKS/RECHTS ---------------- */
-              .side {
-                position: absolute;
-                top: 20px;
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-              }
-            
-              .grid-elements {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
-                column-gap: 6px;
-                justify-items: center;
-              }
-            
-              .grid-elements .icon-container {
-                width: 75px;
-                height: 75px;
-              }
-  
-              /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
-              .icon.map::after,
-              .icon.element::after,
-              .icon.map-title::after {
-                display: none; /* hover werkt toch niet op mobiel */
-              }
+            .side {
+              width: 50vw;              /* harde limiet */
+              overflow-x: hidden;       /* niks mag eruit steken */
+              display: flex;
+              flex-direction: column;
+              align-items: center;      /* center alles in de helft */
+            }
+          
+            #left-side {
+              left: 0;
+            }
+          
+            #right-side {
+              left: 50vw;
+            }
+
+            /* ELEMENTEN GRID OP MOBIEL */
+            .grid-elements {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              width: 100%;
+              max-width: 100%;          /* nooit breder dan de halve side */
+              column-gap: 10px;         /* kleine gap */
+              row-gap: 12px;
+              justify-items: center;    /* center per cel */
+            }
+
+            /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
+            .icon.map::after,
+            .icon.element::after,
+            .icon.map-title::after {
+               display: none; /* hover werkt toch niet op mobiel */
+            }
 }
 
