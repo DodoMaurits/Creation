@@ -383,118 +383,109 @@ body {
 }
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
-            @media (max-width: 900px) and (orientation: portrait) {
-            
-              /* ---------------- BASIS ---------------- */
-              body {
-                overflow-x: hidden;
-              }
-            
-              .side {
-                width: 50%;
-                top: 10px;
-                padding: 0 5px; /* voorkomt overlap bij open maps */
-                box-sizing: border-box;
-              }
-            
-              #left-side {
-                left: 0;
-          	    transform: translateX(0) !important;
-              }
-            
-              #right-side {
-                left: 50%;
-          	    transform: translateX(0) !important;
-              }
-            
-              /* ---------------- ICONEN KLEINER ---------------- */
-              .icon.element {
-                width: 75px;
-                height: 75px;
-              }
-            
-              .icon.map,
-              .icon.map-title {
-                width: 90px;
-                height: 90px;
-              }
-            
-              .icon.map-title {
-                margin-top: 15px;
-                margin-bottom: 10px;
-              }
-
-              .icon.map,
-              .icon.element,
-              .icon.map-title {
-                  max-width: 90px;  /* of een waarde die past */
-                  max-height: 90px;
-              }
-              /* ---------------- TITELS ONDER ICONEN ---------------- */
-              /* pseudo tooltips volledig uitschakelen */
-              .icon.map::after,
-              .icon.element::after,
-              .icon.map-title::after {
-                display: none !important;
-              }
-              
-              /* ---------------- GRID OPEN MAP ---------------- */
-              .grid-elements {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
-                column-gap: 10px;
-                row-gap: 15px;
-                width: 100%;
-                max-width: 50vw; /* nooit over andere helft */
-                padding: 0 5px;
-                box-sizing: border-box;
-              }
-
-              .icon-container {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: static;   /* BELANGRIJK */
-              }
-                
-              /* ---------------- GRID CLOSED MAPS ---------------- */
-              .grid-closed {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 15px;
-                max-width: 100%;   /* overschrijft 680px */
-                width: 100%;
-              }
-              
-              /* ---------------- GRID CLOSED MAPS ---------------- */
-              #closed-container {
-                  width: 90%;               /* max 90% van schermbreedte */
-                  max-width: 500px;         /* limiet zodat 3 icons per rij passen */
-                  left: 50%;
-                  top: 50%;
-                  transform: translate(-50%, -50%);
-                  display: flex;
-                  justify-content: center;
-                  gap: 15px;
-                  flex-wrap: wrap;          /* meerdere rijen mogelijk */
-              }
-              
-              #closed-container .icon-container {
-                  flex: 1 1 30%;            /* basis 30%, groeit of krimpt */
-                  max-width: 90px;          /* voorkomt dat icon te groot wordt */
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;  /* titel onder icoon netjes gecentreerd */
-              }
-              
-              /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
-              .tooltip {
-                position: static;
-                transform: none;
-                margin-top: 6px;
-                text-align: center;
-                opacity: 1;
-              }
-            }
+                  @media (max-width: 900px) and (orientation: portrait) {
+                  
+                    /* ---------------- BASIS ---------------- */
+                    body {
+                      overflow-x: hidden;
+                    }
+                  
+                    .side {
+                      width: 50%;
+                      top: 10px;
+                      padding: 0 5px;
+                      box-sizing: border-box;
+                    }
+                  
+                    #left-side {
+                      left: 0;
+                      transform: translateX(0) !important;
+                    }
+                  
+                    #right-side {
+                      left: 50%;
+                      transform: translateX(0) !important;
+                    }
+                  
+                    /* ---------------- ICONEN KLEINER ---------------- */
+                    .icon.element {
+                      width: 75px;
+                      height: 75px;
+                    }
+                  
+                    .icon.map,
+                    .icon.map-title {
+                      width: 90px;
+                      height: 90px;
+                    }
+                  
+                    .icon.map-title {
+                      margin-top: 15px;
+                      margin-bottom: 10px;
+                    }
+                  
+                    .icon.map,
+                    .icon.element,
+                    .icon.map-title {
+                      max-width: 90px;
+                      max-height: 90px;
+                    }
+                  
+                    /* ---------------- TITELS ONDER ICONEN ---------------- */
+                    .icon.map::after,
+                    .icon.element::after,
+                    .icon.map-title::after {
+                      display: none !important;
+                    }
+                  
+                    /* ---------------- GRID OPEN MAP ---------------- */
+                    .grid-elements {
+                      display: grid;
+                      grid-template-columns: repeat(3, 1fr);
+                      column-gap: 10px;
+                      row-gap: 15px;
+                      width: 100%;
+                      max-width: 50vw;
+                      padding: 0 5px;
+                      box-sizing: border-box;
+                    }
+                  
+                    .icon-container {
+                      width: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      position: static;
+                    }
+                  
+                    /* ---------------- CLOSED MAPS ---------------- */
+                    #closed-container {
+                      width: 90%;              
+                      max-width: 500px;        
+                      left: 50%;
+                      top: 50%;
+                      transform: translate(-50%, -50%);
+                      display: flex;
+                      justify-content: center;
+                      gap: 15px;
+                      flex-wrap: wrap;
+                    }
+                  
+                    #closed-container .icon-container {
+                      flex: 1 1 30%;           
+                      max-width: 90px;         
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                    }
+                  
+                    /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
+                    .tooltip {
+                      position: static;
+                      transform: none;
+                      margin-top: 6px;
+                      text-align: center;
+                      opacity: 1;
+                    }
+                  }
