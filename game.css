@@ -226,17 +226,15 @@ body {
   transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;   /* centraalt items per rij */
+  justify-content: center;
   gap: 20px;
-  width: 680px;             /* of 100% van 4 items + gaps */
+  max-width: 720px; /* ruimte voor 4 icons + gaps */
 }
 
 #closed-container .icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 130px;              /* breedte van één icoon */
 }
 
 /* Links/ midden van linkerhelft */
