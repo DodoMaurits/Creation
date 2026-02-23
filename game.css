@@ -404,40 +404,34 @@ body {
             }
   
             /* ---------------- CLOSED MAPS ---------------- */
+            .side {
+              width: 50vw;               /* halve schermbreedte */
+              position: absolute;         /* belangrijk! behoud absolute */
+              top: 0;                     /* of waar je wilt */
+              left: 0;                    /* linker helft, rechter helft via left:50% */
+              transform: translateX(-100%); /* start buiten beeld */
+              transition: transform 0.6s ease, opacity 0.6s ease;
+              opacity: 0;
+              display: block;             /* NIET flex */
+              text-align: center;
+            }
+          
+            .side.visible {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          
             #closed-container {
-              width: 95%;
-              max-width: 420px;        /* ruimte voor 3 iconen + gaps */
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%);
               display: flex;
               flex-wrap: wrap;
-              justify-content: center; /* elke rij gecentreerd */
+              justify-content: center;
               gap: 15px;
+              opacity: 1;
             }
           
-            #closed-container .icon-container {
-              flex: 0 0 90px;          /* vaste breedte zodat max 3 passen */
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            }
-  
-            /* ---------------- OPEN MAP LINKS/RECHTS ---------------- */
-            .side {
-              width: 50vw;              /* harde limiet */
-              overflow-x: hidden;       /* niks mag eruit steken */
-              display: flex;
-              flex-direction: column;
-              align-items: center;      /* center alles in de helft */
-            }
-          
-            #left-side {
-              left: 0;
-            }
-          
-            #right-side {
-              left: 50vw;
+            #closed-container.hidden {
+              opacity: 0;
+              pointer-events: none;       /* voorkomen dat je op de verborgen container klikt */
             }
 
             /* ELEMENTEN GRID OP MOBIEL */
