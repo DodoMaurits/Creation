@@ -405,15 +405,10 @@ body {
   
             /* ---------------- CLOSED MAPS ---------------- */
             .side {
-              width: 50vw;
-              position: absolute;
-              top: 0;
-              left: 0; /* voor linkerzijde, rechter via left:50% */
-              transform: translateX(-100%);
-              transition: transform 0.6s ease, opacity 0.6s ease;
-              opacity: 0;
-              display: block;
-              text-align: center;
+              width: 50vw;      /* halve schermbreedte */
+              overflow-x: hidden; 
+              box-sizing: border-box; 
+              z-index: 10;      /* boven closed-container */
             }
           
             .side.right { left: 50%; } /* rechter helft */
@@ -421,15 +416,15 @@ body {
           
             #closed-container {
               width: 90%;
-              max-width: 300px;       /* 3 icons + gaps passen */
+              max-width: 300px;  /* 3 icons + gaps */
               display: flex;
               flex-wrap: wrap;
               justify-content: center;
               gap: 10px;
             }
-
+            
             #closed-container .icon-container {
-              flex: 1 1 30%;          /* max 3 per rij */
+              flex: 1 1 30%;    /* max 3 per rij */
               max-width: 90px;
               display: flex;
               flex-direction: column;
@@ -445,11 +440,11 @@ body {
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* flexibel, max 3 per rij */
-              justify-items: center;   /* centreert elk icoon in zijn cel */
-              gap: 8px;                /* krappe gap */
-              width: 100%;             /* vult de halve side */
-              max-width: 100%;
+              grid-template-columns: repeat(3, minmax(0, 60px)); /* max 3 per rij */
+              gap: 8px;
+              justify-content: center;   /* center binnen de halve side */
+              width: 100%;
+              max-width: 50vw;           /* zorgt dat het nooit buiten de helft komt */
             }
 
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
