@@ -390,5 +390,67 @@ body {
               text-align: center; 
               opacity: 1; 
             } 
+  
+            /* ---------------- ICONEN IETS KLEINER ---------------- */
+            .icon.map,
+            .icon.map-title {
+              width: 100px;
+              height: 100px;
+            }
+          
+            .icon.element {
+              width: 75px;
+              height: 75px;
+            }
+  
+            /* ---------------- CLOSED MAPS ---------------- */
+          
+            #closed-container {
+              width: 95%;
+              max-width: 420px;        /* ruimte voor 3 iconen + gaps */
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center; /* elke rij gecentreerd */
+              gap: 15px;
+            }
+          
+            #closed-container .icon-container {
+              flex: 0 0 90px;          /* vaste breedte zodat max 3 passen */
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+  
+            /* ---------------- OPEN MAP LINKS/RECHTS ---------------- */
+              .side {
+                width: 50%;
+                padding: 0 6px;
+                box-sizing: border-box;
+              }
+            
+              .grid-elements {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
+                gap: 12px;
+            
+                width: 100%;
+                justify-items: center;
+              }
+            
+              .grid-elements .icon-container {
+                width: 75px;
+                height: 75px;
+              }
+  
+              /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
+              .icon.map::after,
+              .icon.element::after,
+              .icon.map-title::after {
+                display: none; /* hover werkt toch niet op mobiel */
+              }
 }
 
