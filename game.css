@@ -178,16 +178,16 @@ body {
   row-gap: 20px;
 }
 
-/* ---------------- SMALL GRID (meer dan 20 elementen) ---------------- */
-.grid-elements.small .icon.element {
-  width: 120px;
-  height: 120px;
+.grid-closed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 680px;
+  width: auto;
+  margin: 0 auto;
 }
 
-.grid-elements.small {
-  column-gap: 20px;
-  row-gap: 20px;
-}
 
 /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 .selected {
@@ -222,31 +222,35 @@ body {
 #closed-container {
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 1;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 720px; /* ruimte voor 4 icons + gaps */
 }
 
-#closed-container .icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* standaard breedte: midden van scherm */
+#closed-container.center {
+  width: 680px; /* 4 icons + gaps */
+}
+
+/* linker- of rechterhelft */
+#closed-container.side {
+  width: 680px; /* of een breedte die 4 icons + gaps past */
 }
 
 /* Links/ midden van linkerhelft */
 #closed-container.left {
-  left: 25%;
-  transform: translate(-50%, -50%);
+  transform: translate(-150%, -50%);
 }
 
 /* Midden van rechterhelft */
 #closed-container.right {
-  left: 75%;
-  transform: translate(-50%, -50%);
+  left: 75%; /* midden van de rechterhelft (50% + 50%/2) */
+  transform: translate(-50%, -50%); /* center horizontaal en verticaal op deze positie */
 }
 
 /* ---------------- RESULTAAT COMBINATIE ---------------- */
@@ -277,9 +281,21 @@ body {
   gap: 40px;
   justify-content: center;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   width: auto;
   max-width: 1200px;
+}
+
+@media (max-width: 900px) {
+  .result-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .result-box {
@@ -365,110 +381,3 @@ body {
   }
 }
 
-/* ================= MOBILE PORTRAIT ONLY ================= */
-                  @media (max-width: 900px) and (orientation: portrait) {
-                  
-                    /* ---------------- BASIS ---------------- */
-                    body {
-                      overflow-x: hidden;
-                    }
-                  
-                    .side {
-                      width: 50%;
-                      top: 10px;
-                      padding: 0 5px;
-                      box-sizing: border-box;
-                    }
-                  
-                    #left-side {
-                      left: 0;
-                      transform: translateX(0) !important;
-                    }
-                  
-                    #right-side {
-                      left: 50%;
-                      transform: translateX(0) !important;
-                    }
-                  
-                    /* ---------------- ICONEN KLEINER ---------------- */
-                    .icon.element {
-                      width: 75px;
-                      height: 75px;
-                    }
-                  
-                    .icon.map,
-                    .icon.map-title {
-                      width: 90px;
-                      height: 90px;
-                    }
-                  
-                    .icon.map-title {
-                      margin-top: 15px;
-                      margin-bottom: 10px;
-                    }
-                  
-                    .icon.map,
-                    .icon.element,
-                    .icon.map-title {
-                      max-width: 90px;
-                      max-height: 90px;
-                    }
-                  
-                    /* ---------------- TITELS ONDER ICONEN ---------------- */
-                    .icon.map::after,
-                    .icon.element::after,
-                    .icon.map-title::after {
-                      display: none !important;
-                    }
-                  
-                    /* ---------------- GRID OPEN MAP ---------------- */
-                    .grid-elements {
-                      display: grid;
-                      grid-template-columns: repeat(3, 1fr);
-                      column-gap: 10px;
-                      row-gap: 15px;
-                      width: 100%;
-                      max-width: 50vw;
-                      padding: 0 5px;
-                      box-sizing: border-box;
-                    }
-                  
-                    .grid-elements .icon-container {
-                      width: 100%;
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      position: static;
-                    }
-                  
-                    /* ---------------- CLOSED MAPS ---------------- */
-                    #closed-container {
-                      width: 90%;
-                      max-width: 500px;
-                      left: 50%;
-                      top: 50%;
-                      transform: translate(-50%, -50%);
-                      display: flex;
-                      flex-wrap: wrap;
-                      justify-content: center;
-                      gap: 15px;
-                    }
-                  
-                    #closed-container .icon-container {
-                      flex: 1 1 30%;       /* past max 3 per rij */
-                      max-width: 90px;
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      justify-content: center;
-                    }
-                  
-                    /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
-                    .tooltip {
-                      position: static;
-                      transform: none;
-                      margin-top: 6px;
-                      text-align: center;
-                      opacity: 1;
-                    }
-                  }
