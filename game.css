@@ -220,6 +220,8 @@ body {
 
 /* ---------------- CLOSED CONTAINER ---------------- */
 #closed-container {
+  width: auto; 
+  max-width: 1000px;    /* correctie */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -234,12 +236,14 @@ body {
 
 /* standaard breedte: midden van scherm */
 #closed-container.center {
-  width: 680px; /* 4 icons + gaps */
+  width: auto;           /* flexibele breedte, geen vaste 680px */
+  max-width: 680px;      /* optioneel: beperkt tot 4 icons + gaps */
 }
 
 /* linker- of rechterhelft */
 #closed-container.side {
-  width: 680px; /* of een breedte die 4 icons + gaps past */
+  width: auto;           /* niet vastzetten! */
+  max-width: 680px;      /* limiet voor 4 icons + gaps */
 }
 
 /* Links/ midden van linkerhelft */
@@ -250,8 +254,16 @@ body {
 
 /* Midden van rechterhelft */
 #closed-container.right {
-  left: 75%; /* midden van de rechterhelft (50% + 50%/2) */
-  transform: translate(-50%, -50%); /* center horizontaal en verticaal op deze positie */
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+/* container-items */
+#closed-container .icon-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    /* icon + titel centreren */
+  justify-content: center;
 }
 
 /* ---------------- RESULTAAT COMBINATIE ---------------- */
