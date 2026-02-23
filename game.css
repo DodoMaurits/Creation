@@ -473,8 +473,4 @@ body {
                 text-align: center;
                 opacity: 1;
               }
-            
-              .icon-container:hover .tooltip {
-                opacity: 1;
-              }
             }
