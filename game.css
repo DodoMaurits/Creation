@@ -433,7 +433,7 @@ body {
                       box-sizing: border-box;
                     }
                   
-                    .icon-container {
+                    .grid-elements .icon-container {
                       width: 100%;
                       display: flex;
                       flex-direction: column;
