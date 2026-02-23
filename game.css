@@ -189,17 +189,6 @@ body {
   row-gap: 20px;
 }
 
-/* ---------------- SMALL GRID (meer dan 20 elementen) ---------------- */
-.grid-elements.small .icon.element {
-  width: 110px;
-  height: 110px;
-}
-
-.grid-elements.small {
-  column-gap: 30px;
-  row-gap: 15px;
-}
-
 /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 .selected {
   width: 130px;
@@ -295,18 +284,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
   width: auto;
   max-width: 1200px;
-}
-
-@media (max-width: 900px) {
-  .result-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .result-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .result-box {
@@ -462,7 +439,18 @@ body {
                 padding: 0 5px;
                 box-sizing: border-box;
               }
-            
+
+              .grid-elements .icon-container {
+                width: 75px;     /* zelfde als icoon */
+                height: auto;    /* geen vaste hoogte meer */
+              }
+              
+              .tooltip {
+                max-width: 75px;       /* max breedte = icoonbreedte */
+                white-space: normal;   /* tekst mag afbreken */
+                word-break: break-word;
+              }
+                            
               /* ---------------- GRID CLOSED MAPS ---------------- */
               .grid-closed {
                 display: grid;
