@@ -443,7 +443,7 @@ body {
             /* ELEMENTEN GRID OP MOBIEL */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(3, 1fr);
+              grid-template-columns: repeat(3, 50px);
               width: 100%;
               max-width: 100%;          /* nooit breder dan de halve side */
               column-gap: 10px;         /* kleine gap */
