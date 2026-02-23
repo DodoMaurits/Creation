@@ -420,11 +420,21 @@ body {
             .side.visible { transform: translateX(0); opacity: 1; }
           
             #closed-container {
+              width: 90%;
+              max-width: 300px;       /* 3 icons + gaps passen */
               display: flex;
               flex-wrap: wrap;
               justify-content: center;
-              gap: 15px;
-              opacity: 1;
+              gap: 10px;
+            }
+
+            #closed-container .icon-container {
+              flex: 1 1 30%;          /* max 3 per rij */
+              max-width: 90px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
             }
           
             #closed-container.hidden {
