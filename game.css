@@ -435,7 +435,7 @@ body {
               .grid-elements {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
-                gap: 12px;
+                column-gap: 6px;
                 justify-items: center;
               }
             
