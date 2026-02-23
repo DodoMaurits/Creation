@@ -392,47 +392,36 @@ body {
             } 
   
             /* ---------------- ICONEN IETS KLEINER ---------------- */
-            .icon.element {
-              width: 60px;
-              height: 60px;
-            }
-            
-            .icon.map,
-            .icon.map-title {
-              width: 80px;
-              height: 80px;
-            }
+            .icon.element { width: 50px; height: 50px; }
+            .icon.map, .icon.map-title { width: 70px; height: 70px; }
   
             /* ---------------- CLOSED MAPS ---------------- */
             .side {
               width: 50vw;          /* halve schermbreedte */
-              max-width: 50vw;      /* voorkomt overschrijden */
+              max-width: 50vw;      /* nooit breder */
               box-sizing: border-box;
               text-align: center;
-              overflow: hidden;     /* voorkomt dat items buiten zicht gaan */
+              overflow: hidden;     /* voorkomt dat icons buiten vallen */
               position: absolute;
               top: 0;
             }
-            
+          
             .side.left { left: 0; }
             .side.right { left: 50%; }
-            
-            .side.visible {
-              transform: translateX(0);
-              opacity: 1;
-            }
+            .side.visible { transform: translateX(0); opacity: 1; }
                       
             #closed-container {
               width: 90%;
-              max-width: 300px;    /* 3 icons + kleine gaps */
+              max-width: 300px;              /* max 3 icons per rij */
               display: flex;
               flex-wrap: wrap;
               justify-content: center;
-              gap: 8px;             /* kleine gap */
+              gap: 8px;                       /* krappe gap */
+              margin: 0 auto;
             }
-            
+          
             #closed-container .icon-container {
-              flex: 1 1 30%;        /* max 3 per rij */
+              flex: 1 1 30%;                  /* max 3 per rij */
               max-width: 90px;
               display: flex;
               flex-direction: column;
@@ -442,17 +431,18 @@ body {
           
             #closed-container.hidden {
               opacity: 0;
-              pointer-events: none;       /* voorkomen dat je op de verborgen container klikt */
+              pointer-events: none;
             }
 
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(4, 1fr); /* max 4 per rij */
-              gap: 4px;               /* krappe gap */
-              justify-items: center;   /* center elk icoon in cel */
-              width: 100%;             /* vult de hele halve side */
-              max-width: 100%;         /* niet breder dan side */
+              grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* max 4 per rij */
+              gap: 4px;                     /* kleine gap */
+              justify-items: center;         /* center elk icoon in zijn cel */
+              width: 100%;                   /* vult de halve side */
+              max-width: 100%;               /* nooit breder dan side */
+              margin: 0 auto;                /* centreert de grid horizontaal */
               box-sizing: border-box;
             }
 
