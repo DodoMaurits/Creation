@@ -427,9 +427,12 @@ body {
   
             /* ---------------- OPEN MAP LINKS/RECHTS ---------------- */
               .side {
+                position: absolute;
+                top: 20px;
                 width: 50%;
-                padding: 0 6px;
-                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
               }
             
               .grid-elements {
