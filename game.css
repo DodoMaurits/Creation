@@ -411,7 +411,13 @@ body {
                 margin-top: 15px;
                 margin-bottom: 10px;
               }
-            
+
+              .icon.map,
+              .icon.element,
+              .icon.map-title {
+                  max-width: 90px;  /* of een waarde die past */
+                  max-height: 90px;
+              }
               /* ---------------- TITELS ONDER ICONEN ---------------- */
               /* pseudo tooltips volledig uitschakelen */
               .icon.map::after,
@@ -449,20 +455,23 @@ body {
                 max-width: 100%;   /* overschrijft 680px */
                 width: 100%;
               }
-
+              
               #closed-container {
-                width: 100%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                display: flex;
-                justify-content: center;
-                gap: 20px;
+                  width: 100%;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  display: flex;
+                  justify-content: center;
+                  gap: 20px;
+                  flex-wrap: wrap;   /* dit is nieuw */
               }
 
               #closed-container .icon-container {
-                flex: 1;
-                display: flex;
-                justify-content: center;
+                  display: flex;
+                  flex-direction: column; /* belangrijk voor titel onder icoon */
+                  align-items: center;    /* centreert icoon + titel */
+                  justify-content: center;
               }
               
               /* ---------------- TOOLTIP ALTIJD ZICHTBAAR ---------------- */
