@@ -2474,3 +2474,4 @@ function renderNewElements(elements) {
     updateClosedContainer(); // ← dit zorgt dat ze weer gecentreerd staan
   };
 }
+
