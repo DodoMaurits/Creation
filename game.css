@@ -220,18 +220,23 @@ body {
 
 /* ---------------- CLOSED CONTAINER ---------------- */
 #closed-container {
-  width: auto; 
-  max-width: 1000px;    /* correctie */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  opacity: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;   /* centraalt items per rij */
   gap: 20px;
+  width: 680px;             /* of 100% van 4 items + gaps */
+}
+
+#closed-container .icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;              /* breedte van één icoon */
 }
 
 /* standaard breedte: midden van scherm */
@@ -256,14 +261,6 @@ body {
 #closed-container.right {
   left: 75%;
   transform: translate(-50%, -50%);
-}
-
-/* container-items */
-#closed-container .icon-container {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;    /* icon + titel centreren */
-  justify-content: center;
 }
 
 /* ---------------- RESULTAAT COMBINATIE ---------------- */
@@ -460,20 +457,20 @@ body {
                   
                     /* ---------------- CLOSED MAPS ---------------- */
                     #closed-container {
-                      width: 90%;              
-                      max-width: 500px;        
+                      width: 90%;
+                      max-width: 500px;
                       left: 50%;
                       top: 50%;
                       transform: translate(-50%, -50%);
                       display: flex;
+                      flex-wrap: wrap;
                       justify-content: center;
                       gap: 15px;
-                      flex-wrap: wrap;
                     }
                   
                     #closed-container .icon-container {
-                      flex: 1 1 30%;           
-                      max-width: 90px;         
+                      flex: 1 1 30%;       /* past max 3 per rij */
+                      max-width: 90px;
                       display: flex;
                       flex-direction: column;
                       align-items: center;
