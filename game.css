@@ -182,7 +182,6 @@ body {
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
-  justify-items: center;
   gap: 20px;
   max-width: 680px;
   width: auto;
