@@ -180,7 +180,6 @@ body {
 
 .grid-closed {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
