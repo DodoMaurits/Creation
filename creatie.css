@@ -115,8 +115,8 @@ html, body {
               }
             
               .god-icon {
-                width: 40vw;           /* past proportioneel op scherm */
-                max-width: 300px;      /* voorkomt te groot op tablets */
+                width: 80vw;           /* past proportioneel op scherm */
+                max-width: none;    /* verwijder limiet, zodat hij groot kan zijn op kleine schermen */
                 height: auto;
                 margin-top: 0;
               }
