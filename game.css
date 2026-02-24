@@ -371,7 +371,14 @@ body {
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
+            body {
+              overflow: auto;
+            }
 
+            #app {
+              height: auto;
+              min-height: 100vh;
+            }
   
             /* ---------------- ICONEN IETS KLEINER ---------------- */
             .icon.element { width: 50px; height: 50px; }
@@ -383,7 +390,7 @@ body {
               max-width: 50vw;      /* nooit breder */
               box-sizing: border-box;
               text-align: center;
-              overflow: hidden;     /* voorkomt dat icons buiten vallen */
+              overflow: visible;
               position: absolute;
               top: 0;
             }
@@ -434,21 +441,33 @@ body {
               align-items: center;
               width: 50px;
             }
-            
+  
+            /* Zorg dat de hover tooltip uitgeschakeld is */
+            .icon-container:hover .tooltip {
+              opacity: 1; /* mag blijven maar niet nodig */
+            }
+  
+            /* TOOLTIP permanent zichtbaar en normaal onder icoon */
             .grid-elements .tooltip {
-              position: static;         /* terug in normale flow */
-              transform: none;
+              position: static !important;
+              transform: none !important;
+              opacity: 1 !important;
+              pointer-events: auto;
+              display: block;
               margin-top: 6px;
-              display: inline-block;    /* breedte = tekst */
-              width: auto;
-              max-width: 80px;
-              white-space: normal;      /* mag afbreken */
+              white-space: normal;
               text-align: center;
-              opacity: 1;               /* altijd zichtbaar */
+              max-width: 80px;
             }
   
             .result-grid {
               grid-template-columns: repeat(2, 1fr);
+            }
+
+            #result-overlay {
+              position: fixed;
+              inset: 0;
+              z-index: 9999;
             }
   
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
