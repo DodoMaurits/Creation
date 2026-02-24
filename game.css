@@ -398,25 +398,23 @@ body {
             .side.left { left: 0; }
             .side.right { left: 50%; }
             .side.visible { transform: translateX(0); opacity: 1; }
-                      
+            
             #closed-container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr); /* 3 items per rij */
-                gap: 8px;                               /* horizontaal + verticaal */
-                justify-items: center;                   /* items gecentreerd in cell */
+                gap: 8px;
+                justify-items: center;
                 width: 100%;
                 max-width: 300px;
-                margin: 20px auto;                        /* center container horizontaal */
+                margin: 20px auto;
             }
             
             #closed-container .icon-container {
-                width: 100%;      /* neem hele grid-cell breedte */
-                max-width: none;  /* NIET beperken tot 70px */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                box-sizing: border-box;
+                width: 70px;   /* <-- probleem! */
             }
                       
             #closed-container.hidden {
