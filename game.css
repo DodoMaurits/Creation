@@ -405,7 +405,7 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* max 3 per rij */
+              grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* max 3 per rij */
               justify-items: center;   /* iconen in cel centreren */
               width: 95vw;             /* nooit buiten scherm */
               max-width: 95vw;
@@ -418,7 +418,7 @@ body {
             #closed-container.side {
               width: 47vw;             /* halve schermbreedte */
               max-width: 47vw;
-              grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* maximaal 3 iconen per rij */
+              grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* maximaal 3 iconen per rij */
               justify-items: center;
               gap: 0;                  /* gaps flexibel via minmax + fr */
               padding: 0 1vw;
@@ -439,17 +439,6 @@ body {
             #closed-container.side .icon.map {
               width: 40px;
               height: 40px;
-            }
-
-            /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
-            .grid-elements {
-              display: grid;
-              grid-template-columns: repeat(3, 50px);
-              column-gap: 8px;
-              row-gap: 4px;
-              justify-content: center;
-              width: auto;
-              margin: 0 auto;
             }
             
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
