@@ -408,11 +408,13 @@ body {
             
             #closed-container .icon-container {
                 flex: 1 1 calc(33.333% - 8px); /* maximaal 3 per rij */
-                max-width: 90px;               /* of de gewenste icoonbreedte */
+                min-width: 60px; /* kleinste iconenbreedte mobiel */
+                max-width: none;               /* verwijder limiet */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                box-sizing: border-box;        /* zodat padding/gap goed meerekent */
             }
           
             #closed-container.hidden {
