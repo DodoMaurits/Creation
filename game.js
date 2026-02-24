@@ -2128,35 +2128,34 @@ updateClosedContainer(); // <--- voeg dit toe
 // ----- RENDER CLOSED MAPS -----
 function renderClosed() {
   closedContainer.innerHTML = "";
-  closedContainer.classList.remove("hidden", "left", "right"); // ← verwijder alle posities
-  closedContainer.style.transition = "opacity 0.3s ease"; // fade-in
+  closedContainer.classList.remove("hidden", "left", "right");
+  closedContainer.style.transition = "opacity 0.3s ease";
   closedContainer.style.opacity = 0;
 
   const grid = document.createElement("div");
   grid.className = "grid-closed";
 
-  // ==== MOBIELE GRID LAYOUT ====
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
   if (isMobile) {
     grid.style.display = "grid";
-    grid.style.gridTemplateColumns = "repeat(3, 1fr)"; // max 3 per rij
-    grid.style.justifyItems = "center";                // centreren in de cel
-    grid.style.gap = "8px";                            // kleine ruimte
+    grid.style.gridTemplateColumns = "repeat(3, 1fr)";
+    grid.style.justifyItems = "center";
+    grid.style.gap = "8px";
   }
 
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
-  
+
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
-  
+
     const tooltip = document.createElement("div");
     tooltip.className = "tooltip";
     tooltip.textContent = map.naam;
-  
+
     container.appendChild(img);
     container.appendChild(tooltip);
     grid.appendChild(container);
@@ -2164,9 +2163,10 @@ function renderClosed() {
 
   closedContainer.appendChild(grid);
 
-  // forceer repaint
-  closedContainer.offsetHeight;
-  closedContainer.style.opacity = 1;
+  requestAnimationFrame(() => {
+    updateClosedContainer();
+    closedContainer.style.opacity = 1;
+  });
 }
 
 // ----- OPEN MAP -----
