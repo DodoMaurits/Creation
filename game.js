@@ -2135,6 +2135,15 @@ function renderClosed() {
   const grid = document.createElement("div");
   grid.className = "grid-closed";
 
+  // ==== MOBIELE GRID LAYOUT ====
+  const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
+  if (isMobile) {
+    grid.style.display = "grid";
+    grid.style.gridTemplateColumns = "repeat(3, 1fr)"; // max 3 per rij
+    grid.style.justifyItems = "center";                // centreren in de cel
+    grid.style.gap = "8px";                            // kleine ruimte
+  }
+
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
