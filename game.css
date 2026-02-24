@@ -371,13 +371,7 @@ body {
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
-            .tooltip { 
-              position: static; 
-              transform: none; 
-              margin-top: 6px; 
-              text-align: center; 
-              opacity: 1; 
-            } 
+
   
             /* ---------------- ICONEN IETS KLEINER ---------------- */
             .icon.element { width: 50px; height: 50px; }
@@ -436,22 +430,22 @@ body {
 
             /* Zorg dat de container niet breder is dan nodig */
             .grid-elements .icon-container {
-              width: auto;
-              max-width: 90px; /* zelfde als icoonruimte */
-              display: inline-flex;
+              position: relative;   /* belangrijk */
+              display: flex;
               flex-direction: column;
               align-items: center;
+              width: 70px;          /* zelfde als element-icoon ruimte */
             }
           
-            /* Titel onder icoon */
             .grid-elements .tooltip {
-              position: static;
-              transform: none;
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              transform: translateX(-50%);
               margin-top: 6px;
-              display: inline-block;     /* 👈 breedte = tekst */
-              width: auto;
-              max-width: 100%;
-              white-space: normal;       /* mag afbreken */
+              width: max-content;   /* 👈 breedte = tekst */
+              max-width: 120px;     /* voorkomt uitlopen */
+              white-space: normal;  /* mag afbreken */
               text-align: center;
             }
   
