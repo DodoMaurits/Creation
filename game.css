@@ -392,7 +392,7 @@ body {
               text-align: center;
               overflow: visible;
               position: absolute;
-              top: 0;
+              top: 20px;
             }
           
             .side.left { left: 0; }
