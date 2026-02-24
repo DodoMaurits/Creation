@@ -426,9 +426,9 @@ body {
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(3, 50px);
-              column-gap: 8px;
-              row-gap: 10px; /* verkleinde rijen */
+              grid-template-columns: repeat(3, 50px); /* 3 icoontjes per rij */
+              column-gap: 8px;   /* kleine horizontale ruimte */
+              row-gap: 10px;     /* kleine verticale ruimte tussen rijen */
               justify-content: center;
               width: auto;
               margin: 0 auto;
@@ -443,16 +443,19 @@ body {
             }
   
             /* alle tooltip divs permanent zichtbaar */
-            .icon-container .tooltip {
+            .grid-elements .tooltip {
+              font-size: 10px;     
               position: static !important;
               transform: none !important;
-              display: block !important;
               opacity: 1 !important;
               pointer-events: auto;
-              margin-top: 6px;
+              display: block;
+              margin-top: 4px;     /* kleine afstand van icoon */
               text-align: center;
-              max-width: 80px;
-              white-space: normal;
+              width: 120px;        /* breder dan icoon */
+              max-width: 90%;      
+              white-space: normal; 
+              word-wrap: break-word;
             }
   
             /* TOOLTIP permanent zichtbaar en normaal onder icoon */
