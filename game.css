@@ -469,13 +469,40 @@ body {
             }
   
             .result-grid {
-              grid-template-columns: repeat(2, 1fr);
+              grid-template-columns: repeat(2, 1fr); /* max 2 per rij */
+              gap: 20px;
+              max-width: 300px; /* past op mobiel */
+              width: 100%;
+              justify-items: center;
             }
 
+            .result-box {
+              max-width: 120px; /* past binnen de grid */
+              font-size: 14px;
+            }
+          
+            .result-title {
+              font-size: 16px; /* kleinere titels */
+              margin-bottom: 4px;
+              letter-spacing: 1px;
+            }
+          
+            .result-image {
+              width: 60px; /* kleiner icoon */
+              height: auto;
+              margin-bottom: 4px;
+            }
+          
+            .result-quote {
+              font-size: 12px;
+              line-height: 1.2;
+            }
+  
             #result-overlay {
-              position: fixed;
-              inset: 0;
-              z-index: 9999;
+              padding: 20px;
+              overflow-y: auto;
+              justify-content: center;
+              align-items: flex-start;
             }
   
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
