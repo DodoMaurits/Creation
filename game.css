@@ -390,8 +390,8 @@ body {
                 max-width: 50vw;
                 box-sizing: border-box;
                 text-align: center;
-                position: relative;   /* ⬅ eerder absolute */
-                top: auto;            /* verwijder top */
+                position: absolute;
+                top: 0;
                 overflow: visible;
             }
   
@@ -399,28 +399,28 @@ body {
             .side.right { left: 50%; }
             .side.visible { transform: translateX(0); opacity: 1; }
             
+            /* CLOSED CONTAINER binnen side */
             #closed-container {
-                position: relative;   /* niet absoluut meer */
+                position: relative;          /* binnen side */
                 top: auto;
-                transform: none;      /* verwijder translate */
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 8px;
-                justify-items: center;
+                transform: none;
+                display: flex;               /* flex voor meerdere iconen naast elkaar */
+                flex-wrap: wrap;             /* meerdere rijen indien nodig */
+                justify-content: center;     /* horizontaal gecentreerd */
+                gap: 8px;                    /* ruimte tussen iconen */
                 width: 100%;
-                max-width: 300px;
-                margin: 0 auto;       /* centrum horizontaal */
+                max-width: 300px;            /* past op mobiel */
+                margin: 20px auto 0 auto;    /* centrum horizontaal */
             }
         
             #closed-container .icon-container {
-                width: 100%;
-                max-width: none;
+                width: 70px;                 /* mobiel icoon */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 box-sizing: border-box;
-            }  
+            }
   
             #closed-container.hidden {
               opacity: 0;
