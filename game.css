@@ -405,23 +405,23 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               display: grid;
-              grid-template-columns: repeat(3, minmax(40px, 1fr)); /* max 3 per rij */
-              gap: 8px;               /* default gap */
-              width: 95vw;            /* nooit buiten scherm */
+              grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* max 3 per rij */
+              justify-items: center;   /* iconen in cel centreren */
+              width: 95vw;             /* nooit buiten scherm */
               max-width: 95vw;
-              padding: 0 2vw;         /* minimale padding links/rechts */
+              padding: 0 2vw;          /* minimale padding */
               box-sizing: border-box;
-              justify-items: center;   /* iconen centreren */
+              gap: 0;                  /* gap wordt later via grid-template-columns flexibel */
             }
 
             /* Half-screen positioning voor open maps */
             #closed-container.side {
-              width: 47vw;            /* past binnen halve schermhelft */
+              width: 47vw;             /* halve schermbreedte */
               max-width: 47vw;
-              grid-template-columns: repeat(3, minmax(40px, 1fr));
-              gap: calc((47vw - 3*40px)/2); /* gaps passen automatisch zodat 3 iconen + gaps exact binnen halve scherm passen */
-              padding: 0 1vw;
+              grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* maximaal 3 iconen per rij */
               justify-items: center;
+              gap: 0;                  /* gaps flexibel via minmax + fr */
+              padding: 0 1vw;
             }
 
             /* Icon-container centreren */
