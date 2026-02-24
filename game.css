@@ -409,8 +409,8 @@ body {
             /* Grid bepaalt volledig de layout */
             .grid-closed {
               display: grid;
-              grid-template-columns: repeat(3, 1fr); /* altijd 3 kolommen */
-              justify-content: center;   /* centreert de hele grid */
+              grid-template-columns: repeat(auto-fit, 70px);
+              justify-content: center;   /* centreert de volledige rij */
               gap: 8px;
             }
 
