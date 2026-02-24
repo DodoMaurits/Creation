@@ -37,21 +37,26 @@ html, body {
 
 /* ---------------- RESULT IMAGE ---------------- */
 .result-image {
-  width: 220px; /* groter */
+  width: 180px;
   height: auto;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-  animation-name: floatRandom;
-  animation-duration: 1.6s; /* SNELLER */
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  --translateY: 25px; /* MEER BEWEGING */
+  margin-bottom: 15px;
+
+  animation: floatFast 0.9s linear infinite alternate;
+
+  will-change: transform; /* performance boost */
+  backface-visibility: hidden;
+  transform: translateZ(0); /* GPU force */
 }
 
 .result-image:hover {
-  transform: scale(1.15);
+  transform: scale(1.12);
   cursor: pointer;
+}
+
+/* ---------------- FAST FLOAT ---------------- */
+@keyframes floatFast {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(20px); }
 }
 
 /* ---------------- FLOAT ANIMATIE ---------------- */
@@ -120,23 +125,6 @@ html, body {
   font-size: 32px;
   margin-top: 15px;
   opacity: 0.85;
-}
-
-/* ---------------- RESULT IMAGE ---------------- */
-.result-image {
-  width: 150px;
-  height: auto;
-  margin-bottom: 15px;
-  transition: transform 0.5s ease;
-  animation-name: floatRandom;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  --translateY: 10px; /* fallback hoogte */
-}
-
-.result-image:hover {
-  transform: scale(1.1);
 }
 
 /* ---------------- FLOAT ANIMATIE ---------------- */
