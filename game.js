@@ -2139,14 +2139,6 @@ function renderClosed() {
   const grid = document.createElement("div");
   grid.className = "grid-closed";
 
-  const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  if (isMobile) {
-    grid.style.display = "grid";
-    grid.style.gridTemplateColumns = "repeat(3, 1fr)";
-    grid.style.justifyItems = "center";
-    grid.style.gap = "8px";
-  }
-
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
