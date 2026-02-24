@@ -443,22 +443,6 @@ body {
               min-width: 50px;   /* minstens de breedte van icoon */
             }
   
-            /* alle tooltip divs permanent zichtbaar */
-            .grid-elements .tooltip {
-              font-size: 10px;     
-              position: static !important;
-              transform: none !important;
-              opacity: 1 !important;
-              pointer-events: auto;
-              display: block;
-              margin-top: 4px;     /* kleine afstand van icoon */
-              text-align: center;
-              width: 120px;        /* breder dan icoon */
-              max-width: 90%;      
-              white-space: normal; 
-              word-wrap: break-word;
-            }
-  
             .result-grid {
               grid-template-columns: repeat(2, 1fr); /* max 2 per rij */
               gap: 20px;
@@ -499,24 +483,35 @@ body {
               min-height: 100vh;         /* volledige schermhoogte */
               text-align: center;
             }
-  
-            /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
-            /* Alle titels (.tooltip divs) zichtbaar onder icoon, zowel elementen als mappen */
+    
+            /* ================= MOBILE PORTRAIT ONLY ================= */
+            /* Alle tooltips onder iconen: standaard volgt de tekst */
             .icon-container .tooltip {
-              display: block !important;
-              position: static !important;
-              transform: none !important;
-              opacity: 1 !important;
-              pointer-events: auto !important;
-              margin-top: 4px;
-              text-align: center;
-              white-space: normal;
-              word-wrap: break-word;
-              font-size: 10px;
-            
-              width: auto;           /* breedte volgt tekst */
-              min-width: 50px;       /* minstens breedte van icoon */
-              max-width: 50px;       /* voor element-icoon tooltips niet breder dan icoon */
+                display: inline-block !important;   /* breedte volgt tekst */
+                position: static !important;
+                transform: none !important;
+                opacity: 1 !important;
+                pointer-events: auto !important;
+                margin-top: 4px;
+                text-align: center;
+                white-space: normal;                /* tekst kan afbreken */
+                word-wrap: break-word;
+                word-break: break-word;
+                font-size: 10px;
+                width: auto !important;             /* volgt tekst */
+                min-width: 0;                       /* geen minimum */
+            }
+        
+            /* Tooltips van elementen in de grid: max 50px (icoonbreedte) */
+            .grid-elements .icon-container .tooltip {
+                max-width: 50px;                    /* niet breder dan icoon */
+                overflow-wrap: break-word;          /* breek tekst indien nodig */
+            }
+        
+            /* Map-titels & closed-container tooltips: altijd tekstbreedte volgen */
+            .icon.map-title .tooltip,
+            #closed-container .icon-container .tooltip {
+                max-width: none !important;         /* geen beperking */
             }
 }
 
