@@ -401,21 +401,21 @@ body {
                       
             #closed-container {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr); /* maximaal 3 per rij */
-                gap: 8px;                               /* horizontaal & verticaal */
-                justify-content: center;
+                grid-template-columns: repeat(3, 1fr); /* 3 items per rij */
+                gap: 8px;                               /* horizontaal + verticaal */
+                justify-items: center;                   /* items gecentreerd in elke grid cell */
                 width: 100%;
                 max-width: 300px;                        /* past op mobiel */
+                margin: 20px auto;                        /* centrum container horizontaal */
             }
             
             #closed-container .icon-container {
-                flex: 1 1 calc(33.333% - 8px);  /* max 3 per rij */
-                min-width: 60px;                 /* voorkomt te klein */
-                max-width: none;                 /* geen beperking meer */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                width: 100%;      /* neemt hele grid-cell breedte */
+                max-width: 70px;  /* past bij de mobiele icon grootte */
                 box-sizing: border-box;
             }
           
