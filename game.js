@@ -2290,43 +2290,31 @@ function closeMap(side) {
 function updateClosedContainer() {
   let leftOpen = !!openLeft;
   let rightOpen = !!openRight;
+  let halfWidth = window.innerWidth / 2;
 
-  const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-
-  if (!isMobile) {
-    let halfWidth = window.innerWidth / 2;
-
-    if (leftOpen && rightOpen) {
-      closedContainer.style.opacity = 0;
-      closedContainer.style.left = "50%";
-      closedContainer.style.transform = "translate(-50%, -50%)";
-      closedContainer.classList.add("center");
-      closedContainer.classList.remove("side");
-    } else if (leftOpen && !rightOpen) {
-      closedContainer.style.opacity = 1;
-      closedContainer.style.left = `${halfWidth + halfWidth/2}px`; // midden rechterhelft
-      closedContainer.style.transform = "translate(-50%, -50%)";
-      closedContainer.classList.add("side");
-      closedContainer.classList.remove("center");
-    } else if (!leftOpen && rightOpen) {
-      closedContainer.style.opacity = 1;
-      closedContainer.style.left = `${halfWidth/2}px`; // midden linkerhelft
-      closedContainer.style.transform = "translate(-50%, -50%)";
-      closedContainer.classList.add("side");
-      closedContainer.classList.remove("center");
-    } else {
-      closedContainer.style.opacity = 1;
-      closedContainer.style.left = "50%";
-      closedContainer.style.transform = "translate(-50%, -50%)";
-      closedContainer.classList.add("center");
-      closedContainer.classList.remove("side");
-    }
-  } else {
-    // mobiel: altijd horizontaal gecentreerd binnen eigen .side
+  if (leftOpen && rightOpen) {
+    closedContainer.style.opacity = 0;
+    closedContainer.style.left = "50%";
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("center");
+    closedContainer.classList.remove("side");
+  } else if (leftOpen && !rightOpen) {
     closedContainer.style.opacity = 1;
-    closedContainer.style.left = "50%"; 
-    closedContainer.style.transform = "translateX(-50%)"; // geen Y-transformatie meer
+    closedContainer.style.left = `${halfWidth + halfWidth/2}px`; // midden rechterhelft
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("side");
     closedContainer.classList.remove("center");
+  } else if (!leftOpen && rightOpen) {
+    closedContainer.style.opacity = 1;
+    closedContainer.style.left = `${halfWidth/2}px`; // midden linkerhelft
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("side");
+    closedContainer.classList.remove("center");
+  } else {
+    closedContainer.style.opacity = 1;
+    closedContainer.style.left = "50%";
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("center");
     closedContainer.classList.remove("side");
   }
 }
