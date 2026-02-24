@@ -523,7 +523,7 @@ body {
                 display: block;           /* altijd zichtbaar */
                 margin-top: 4px;          /* ruimte tussen icoon en titel */
                 width: auto;
-                max-width: 45px;          /* past bij container/icoon */
+                max-width: 70px;          /* past bij container/icoon */
                 text-align: center;       /* gecentreerde tekst */
                 font-size: 10px;
             
