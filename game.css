@@ -471,22 +471,34 @@ body {
             }
   
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
-            /* ALLE tooltips permanent zichtbaar op mobiel */
+            /* Alle titels permanent zichtbaar op mobiel */
             .icon.map::after,
-            .icon.element::after,
             .icon.map-title::after {
-              opacity: 1 !important;
+              content: attr(data-title);       /* titel uit HTML attribuut data-title */
+              display: block !important;
               position: static !important;
               transform: none !important;
-              display: block;
+              opacity: 1 !important;
               margin-top: 6px;
+              text-align: center;
+              background: rgba(0,0,0,0.85);
+              color: white;
+              padding: 6px 10px;
+              border-radius: 8px;
+              font-size: 13px;
             }
             
-            /* Hover-regel uitschakelen (niet nodig op mobiel) */
-            .icon.map:hover::after,
-            .icon.element:hover::after,
-            .icon.map-title:hover::after {
-              opacity: 1;
+            /* Elementen blijven zoals eerder met tooltip/span */
+            .grid-elements .tooltip {
+              position: static !important;
+              transform: none !important;
+              opacity: 1 !important;
+              pointer-events: auto;
+              display: block;
+              margin-top: 6px;
+              white-space: normal;
+              text-align: center;
+              max-width: 80px;
             }
 }
 
