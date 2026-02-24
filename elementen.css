@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   font-family: Arial, sans-serif;
   background: 
@@ -18,7 +18,7 @@ html, body {
 .result-box-container {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 80px; /* meer ruimte */
   flex-wrap: wrap;
   text-align: center;
 }
@@ -28,59 +28,60 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 200px;
+  max-width: 320px; /* groter */
   font-family: "Times New Roman", serif;
-  font-size: 18px;
-  margin-top: 15px;
-  opacity: 0.85;
+  font-size: 36px; /* groter */
+  margin-top: 20px;
+  opacity: 0.9;
 }
 
 /* ---------------- RESULT IMAGE ---------------- */
 .result-image {
-  width: 150px;
+  width: 220px; /* groter */
   height: auto;
-  margin-bottom: 15px;
-  transition: transform 0.5s ease;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
   animation-name: floatRandom;
+  animation-duration: 1.6s; /* SNELLER */
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-fill-mode: both;
-  --translateY: 10px; /* fallback hoogte */
+  --translateY: 25px; /* MEER BEWEGING */
 }
 
 .result-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
   cursor: pointer;
 }
 
 /* ---------------- FLOAT ANIMATIE ---------------- */
 @keyframes floatRandom {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(var(--translateY)); }
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(var(--translateY)); }
   100% { transform: translateY(0); }
 }
 
 /* ---------------- TITEL EN QUOTE ---------------- */
 .result-title {
-  font-size: 32px;
-  margin: 5px 0;
+  font-size: 52px; /* groter en krachtiger */
+  margin: 10px 0;
 }
 
 .result-quote {
-  font-size: 24px;
+  font-size: 18px; /* blijft zoals jij wilde */
   line-height: 1.4;
-  display: inline-block; /* nodig voor translateX */
+  display: inline-block;
   animation-name: floatQuote;
+  animation-duration: 2s; /* iets sneller */
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  --translateX: 5px; /* fallback */
+  --translateX: 12px; /* meer beweging */
 }
 
 @keyframes floatQuote {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(var(--translateX)); }
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(var(--translateX)); }
   100% { transform: translateX(0); }
 }
 
