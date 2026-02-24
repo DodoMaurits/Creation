@@ -419,13 +419,12 @@ body {
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* max 4 per rij */
-              gap: 4px;                     /* kleine gap */
-              justify-items: center;         /* center elk icoon in zijn cel */
-              width: 100%;                   /* vult de halve side */
-              max-width: 100%;               /* nooit breder dan side */
-              margin: 0 auto;                /* centreert de grid horizontaal */
-              box-sizing: border-box;
+              grid-template-columns: repeat(3, 50px); /* EXACT 3 per rij */
+              column-gap: 8px;   /* kleine horizontale gap */
+              row-gap: 12px;     /* verticale ruimte */
+              justify-content: center; /* centreer hele gridblok */
+              width: auto;             /* niet full width */
+              margin: 0 auto;
             }
 
             /* Zorg dat de container niet breder is dan nodig */
