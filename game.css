@@ -446,11 +446,11 @@ body {
               display: grid;
               grid-template-columns: repeat(3, 50px);
               column-gap: 8px;
-              row-gap: 4px;
+              row-gap: 40px;
               justify-content: center;
               width: auto;
               margin: 0 auto;
-              margin-top: 20px;
+              margin-top: 40px;
             }
           
             .grid-elements .icon-container {
@@ -460,7 +460,6 @@ body {
               width: auto;
               min-width: 50px;
               height: auto;
-              margin-top: 40px;
             }
 
             /* ---------------- RESULT OVERLAY ---------------- */
@@ -526,9 +525,12 @@ body {
                 max-width: 100%;          /* past bij container/icoon */
                 text-align: center;       /* gecentreerde tekst */
                 font-size: 10px;
-                white-space: normal;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
+            
+                white-space: normal;      /* normale regelafbreking */
+                word-wrap: break-word;    /* oudere browsers */
+                overflow-wrap: break-word;/* moderne browsers */
+                hyphens: auto;            /* automatische streepjes bij afbreking */
+            
                 opacity: 1 !important;    /* altijd zichtbaar */
                 pointer-events: none;     /* voorkomt hover issues */
                 width: fit-content;       /* past exact onder icoon */
