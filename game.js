@@ -2123,7 +2123,10 @@ const rightSide = document.getElementById("right-side");
 
 // ----- INIT -----
 renderClosed();
-updateClosedContainer();
+
+requestAnimationFrame(() => {
+    updateClosedContainer(); // nu correct gecentreerd
+});
 
 // ----- RENDER CLOSED MAPS -----
 function renderClosed() {
