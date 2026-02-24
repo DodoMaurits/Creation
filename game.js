@@ -151,6 +151,17 @@ const combinaties = [
         ]
       },
         {
+        input: ["Ster", "Ster"],
+        output: [
+          {
+            naam: "Sterrenstelsel",
+            icoon: "icons/Sterrenstelsel.png",
+            map: "Heelal",
+            quote: "Never apologize for burning too brightly or collapsing into yourself every night. That is how galaxies are made <br><br>- Tyler Kent"
+          }
+        ]
+      },
+        {
           input: [
             ["Water", "IJzer"],
             ["Lucht", "IJzer"]
