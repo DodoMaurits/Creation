@@ -439,7 +439,8 @@ body {
               display: flex;
               flex-direction: column;
               align-items: center;
-              width: 50px;
+              width: auto;       /* container past zich aan inhoud aan */
+              min-width: 50px;   /* minstens de breedte van icoon */
             }
   
             /* alle tooltip divs permanent zichtbaar */
@@ -507,16 +508,15 @@ body {
               transform: none !important;
               opacity: 1 !important;
               pointer-events: auto !important;
-              margin-top: 4px;       /* kleine afstand van icoon */
+              margin-top: 4px;
               text-align: center;
-              white-space: normal; 
+              white-space: normal;
               word-wrap: break-word;
               font-size: 10px;
             
-              /* Breedte volgt tekst maar minstens icoonbreedte */
-              min-width: 50px;       /* minstens breedte icoon */
-              max-width: 120px;      /* maximaal */
-              width: max-content;    /* breedte volgt tekst */
+              width: auto;           /* breedte volgt tekst */
+              min-width: 50px;       /* minstens breedte van icoon */
+              max-width: 50px;       /* voor element-icoon tooltips niet breder dan icoon */
             }
 }
 
