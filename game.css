@@ -450,6 +450,7 @@ body {
               justify-content: center;
               width: auto;
               margin: 0 auto;
+              margin-top: 20px;
             }
           
             .grid-elements .icon-container {
@@ -459,6 +460,7 @@ body {
               width: auto;
               min-width: 50px;
               height: auto;
+              margin-top: 20px;
             }
 
             /* ---------------- RESULT OVERLAY ---------------- */
