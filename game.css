@@ -409,7 +409,7 @@ body {
             /* Grid bepaalt volledig de layout */
             .grid-closed {
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* automatisch aanpassen */
+              grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* automatisch aanpassen */
               justify-content: center;   /* centreert de volledige rij */
               justify-content: center;   /* centreert de iconen binnen hun cel */
               gap: 8px;
@@ -432,18 +432,20 @@ body {
             /* MOBILE CLOSED MAPS — max 3 per rij, altijd binnen scherm */
             #closed-container.side.right {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* 50px per icoon, max 1fr */
+                grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* 50px per icoon, max 1fr */
                 gap: 8px;
                 justify-items: center;    /* centreren van de iconen in de cel */
-                width: 100%;
+                justify-content: center;  /* korte rijen centreren */
+                width: 50vw;              /* halve schermbreedte */
                 max-width: 50vw;          /* past binnen halve schermbreedte */
                 box-sizing: border-box;
             }
             
             /* Sluit maps iconen automatisch verkleinen indien nodig */
-            #closed-container.side.right .icon.map {
-              width: 50px;  /* past netjes in halve schermbreedte */
-              height: 50px;
+            #closed-container.side.right .icon.map,
+            #closed-container.side.left .icon.map {
+                width: 40px;
+                height: 40px;
             }
 
               /* Icon-container centreren binnen elke cel */
