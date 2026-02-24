@@ -386,40 +386,33 @@ body {
   
             /* ---------------- CLOSED MAPS ---------------- */
             .side {
-                width: 50vw;
-                max-width: 50vw;
-                box-sizing: border-box;
-                text-align: center;
-                position: absolute;
-                top: 0;
-                overflow: visible;
+              position: absolute;
+              top: 50%;               /* verticale center van de helft van het scherm */
+              transform: translateY(-50%);
+              width: 50vw;            /* halve schermbreedte */
+              max-width: 50vw;
+              box-sizing: border-box;
+              text-align: center;
             }
-  
+          
             .side.left { left: 0; }
             .side.right { left: 50%; }
-            .side.visible { transform: translateX(0); opacity: 1; }
-            
-            /* CLOSED CONTAINER binnen side */
+          
             #closed-container {
-                position: relative;          /* binnen side */
-                top: auto;
-                transform: none;
-                display: flex;               /* flex voor meerdere iconen naast elkaar */
-                flex-wrap: wrap;             /* meerdere rijen indien nodig */
-                justify-content: center;     /* horizontaal gecentreerd */
-                gap: 8px;                    /* ruimte tussen iconen */
-                width: 100%;
-                max-width: 300px;            /* past op mobiel */
-                margin: 20px auto 0 auto;    /* centrum horizontaal */
+              display: grid;
+              grid-template-columns: repeat(3, 1fr); /* max 3 per rij */
+              gap: 8px;
+              justify-items: center;   /* center per grid cell */
+              width: 100%;
+              margin: 0 auto;
             }
-        
+          
             #closed-container .icon-container {
-                width: 70px;                 /* mobiel icoon */
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 70px;             /* passend bij icoon */
             }
   
             #closed-container.hidden {
