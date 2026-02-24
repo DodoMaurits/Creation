@@ -400,16 +400,12 @@ body {
             .side.visible { transform: translateX(0); opacity: 1; }
                       
             #closed-container {
-                position: relative;   /* ipv absolute */
-                top: auto;            /* verwijder top 50% */
-                transform: none;      /* geen translate meer nodig */
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* maximaal 3 per rij */
+                gap: 8px;                               /* horizontaal & verticaal */
                 justify-content: center;
-                gap: 8px;
-                width: 90%;           /* past op mobiel */
-                max-width: 300px;     /* max 3 iconen per rij */
-                margin: 20px auto;    /* center horizontaal + wat verticale ruimte */
+                width: 100%;
+                max-width: 300px;                        /* past op mobiel */
             }
             
             #closed-container .icon-container {
