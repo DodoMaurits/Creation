@@ -491,8 +491,12 @@ body {
             #result-overlay {
               padding: 20px;
               overflow-y: auto;
+              display: flex;
+              flex-direction: column;
               justify-content: center;
-              align-items: flex-start;
+              align-items: center;       /* ⬅ verticaal gecentreerd */
+              min-height: 100vh;         /* volledige schermhoogte */
+              text-align: center;
             }
   
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
