@@ -410,6 +410,7 @@ body {
             .grid-closed {
               display: grid;
               grid-template-columns: repeat(3, 1fr); /* altijd 3 kolommen */
+              justify-content: center;   /* centreert de hele grid */
               gap: 8px;
             }
 
