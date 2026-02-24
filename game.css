@@ -400,17 +400,14 @@ body {
             .side.visible { transform: translateX(0); opacity: 1; }
                       
             #closed-container {
-                position: relative !important;   /* niet meer absolute */
-                top: auto !important;            /* overschrijf top */
-                left: auto !important;           /* overschrijf left */
-                transform: none !important;      /* geen verticaal/horizontaal verplaatsen */
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                justify-items: center;
-                gap: 8px;
+                grid-template-columns: repeat(3, 1fr); /* 3 per rij */
+                gap: 8px; /* horizontaal + verticaal */
+                justify-items: center; /* iconen horizontaal gecentreerd */
                 width: 100%;
-                max-width: 300px;
-                margin: 20px auto;               /* horizontaal gecentreerd + verticale ruimte */
+                max-width: 300px;      /* past op mobiel */
+                margin: 20px auto;     /* center container + verticale ruimte */
+                position: relative;    /* voor tooltips */
             }
             
             #closed-container .icon-container {
