@@ -411,6 +411,7 @@ body {
               display: grid;
               grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* automatisch aanpassen */
               justify-content: center;   /* centreert de volledige rij */
+              justify-content: center;   /* centreert de iconen binnen hun cel */
               gap: 8px;
             }
 
