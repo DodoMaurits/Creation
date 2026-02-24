@@ -93,63 +93,48 @@ html, body {
 
 /* ---------------- MOBILE FRIENDLY CREATION PAGE ---------------- */
 @media (max-width: 900px) {
-  .container {
-    font-size: 24px;
-    padding: 10px;
-  }
 
-  .god-icon {
-    width: 260px;  /* GROTER ipv kleiner */
-    margin-top: 0;
-  }
-
-  .result-title {
-    font-size: 34px;  /* Groter */
-  }
-
-  .caption {
-    font-size: 20px;  /* Groter */
-  }
-
-  .caption span:nth-child(1) { animation: floatSide1 3s ease-in-out infinite; }
-  .caption span:nth-child(2) { animation: floatSide2 3.5s ease-in-out infinite; }
-  .caption span:nth-child(3) { animation: floatSide3 3.2s ease-in-out infinite; }
+              html, body {
+                height: 100vh;
+                width: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            
+              .container {
+                font-size: 4vw;        /* automatisch schaalbaar */
+                padding: 2vw;          /* proportioneel met scherm */
+                max-width: 95vw;       /* vult bijna het scherm */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+              }
+            
+              .god-icon {
+                width: 40vw;           /* past proportioneel op scherm */
+                max-width: 300px;      /* voorkomt te groot op tablets */
+                height: auto;
+                margin-top: 0;
+              }
+            
+              .result-title {
+                font-size: 6vw;        /* automatisch schaalbaar */
+                margin: 2vw 0 1vw 0;
+                letter-spacing: 0.3vw;
+              }
+            
+              .caption {
+                font-size: 3.5vw;      /* schaalbaar */
+                line-height: 1.5;
+                width: 90%;
+              }
+            
+              .caption span {
+                display: block;
+                margin-bottom: 2vw;
+              }
 }
-
-@media (max-width: 500px) {
-  .container {
-    font-size: 18px;
-    padding: 5px;
-  }
-
-  .god-icon {
-    width: 280px;   /* Nog groter voor impact */
-  }
-
-  .result-title {
-    font-size: 32px;
-    letter-spacing: 2px;
-  }
-
-  .caption {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-  .caption span:nth-child(1) { animation: floatSide1 2.5s ease-in-out infinite; }
-  .caption span:nth-child(2) { animation: floatSide2 2.8s ease-in-out infinite; }
-  .caption span:nth-child(3) { animation: floatSide3 2.5s ease-in-out infinite; }
-
-  /* Hint om scherm te draaien voor een betere ervaring */
-  html::after {
-    content: "Draai je telefoon voor de beste ervaring";
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    opacity: 0.8;
-  }
-}
-
