@@ -520,28 +520,27 @@ body {
             .grid-elements .icon-container,
             .icon.map-title {
                 display: flex;
-                flex-direction: column;    /* icoon boven, titel eronder */
-                align-items: center;       /* horizontaal centreren */
+                flex-direction: column;   /* icoon boven, titel eronder */
+                align-items: center;      /* horizontaal centreren */
                 justify-content: flex-start;
-                position: relative;        /* container voor de titel/tooltip */
                 margin: 0;
             }
             
-            /* Titels / labels altijd zichtbaar onder het icoon */
+            /* Titels / labels altijd zichtbaar, direct onder het icoon */
             .icon-container .tooltip,
             .icon.map-title .tooltip,
             #closed-container .icon-container .tooltip {
-                position: relative;        /* niet absolute, dus altijd in flow */
-                display: block;            /* altijd zichtbaar */
-                margin-top: 4px;           /* ruimte tussen icoon en titel */
-                max-width: 70px;           /* past bij mobiel icoon */
-                text-align: center;
+                display: block;           /* altijd zichtbaar */
+                margin-top: 4px;          /* ruimte tussen icoon en titel */
+                max-width: 100%;          /* past bij container/icoon */
+                text-align: center;       /* gecentreerde tekst */
                 font-size: 10px;
-                white-space: normal;       /* tekst kan afbreken */
+                white-space: normal;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
-                opacity: 1 !important;     /* altijd zichtbaar */
-                pointer-events: none;      /* voorkomt dat titel hover blokkeert */
+                opacity: 1 !important;    /* altijd zichtbaar */
+                pointer-events: none;     /* voorkomt hover issues */
+                width: fit-content;       /* past exact onder icoon */
             }
 }
 
