@@ -425,11 +425,14 @@ body {
             }
 
             /* Icon-container centreren */
-            #closed-container .icon-container {
+            #closed-container .icon-container,
+            .grid-elements .icon-container {
               display: flex;
               flex-direction: column;
               align-items: center;
-              justify-content: center;
+              justify-content: flex-start; /* tooltip onder iconen */
+              position: relative;          /* voor eventueel pseudo-elementen */
+              margin: 0;
             }
 
             /* Sluit maps iconen automatisch verkleinen indien nodig */
@@ -513,49 +516,29 @@ body {
             }
     
              /* ---------------- TOOLTIP ---------------- */
-            .icon-container .tooltip {
-              display: inline-block !important;
-              position: absolute !important;
-              top: 100%;
-              left: 50%;
-              transform: translateX(-50%);
-              opacity: 1 !important;
-              pointer-events: auto !important;
-              margin-top: 4px;
-              font-size: 10px;
-              max-width: 50px;
-              text-align: center;
-              white-space: normal;
-              word-wrap: break-word;
-              overflow-wrap: break-word;
-            }
-
-            /* Map-titels & closed-container tooltips */
-            .icon.map-title,
-            #closed-container .icon-container {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              width: 70px;
-              position: relative;
-              box-sizing: border-box;
-              margin: 0;
-            }
-
+            .icon-container .tooltip,
             .icon.map-title .tooltip,
             #closed-container .icon-container .tooltip {
-              position: absolute;
-              top: 100%;
-              left: 50%;
-              transform: translateX(-50%);
-              max-width: 50px;
+              position: static !important;    /* geen absolute positie */
+              transform: none !important;
+              display: block !important;
+              margin-top: 4px;               /* ruimte onder icoon */
+              max-width: 70px;               /* past bij mobiel icoon */
               font-size: 10px;
-              margin-top: 4px;
               text-align: center;
               white-space: normal;
               word-wrap: break-word;
               overflow-wrap: break-word;
+            }
+
+            .icon-container,
+            .grid-elements .icon-container,
+            .icon.map-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;  /* tooltip onder icoon */
+                position: relative;           /* nodig voor desktop tooltips */
             }
 }
 
