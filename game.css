@@ -401,23 +401,22 @@ body {
                       
             #closed-container {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr); /* 3 per rij */
-                gap: 8px; /* horizontaal + verticaal */
-                justify-items: center; /* iconen horizontaal gecentreerd */
+                grid-template-columns: repeat(3, 1fr); /* maximaal 3 per rij */
+                gap: 8px;                               /* horizontaal & verticaal */
+                justify-content: center;
                 width: 100%;
-                max-width: 300px;      /* past op mobiel */
-                margin: 20px auto;     /* center container + verticale ruimte */
-                position: relative;    /* voor tooltips */
+                max-width: 300px;                        /* past op mobiel */
             }
             
             #closed-container .icon-container {
+                flex: 1 1 calc(33.333% - 8px);  /* max 3 per rij */
+                min-width: 60px;                 /* voorkomt te klein */
+                max-width: none;                 /* geen beperking meer */
                 display: flex;
                 flex-direction: column;
-                align-items: center;  /* iconen gecentreerd in hun grid-cel */
+                align-items: center;
                 justify-content: center;
-                width: 70px;          /* icoonbreedte mobiel */
                 box-sizing: border-box;
-                position: relative;   /* voor tooltip */
             }
           
             #closed-container.hidden {
