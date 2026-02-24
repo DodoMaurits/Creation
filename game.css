@@ -430,14 +430,26 @@ body {
 
             /* Als een map open is, halve scherm voor closed maps */
             #closed-container.side.right {
-              width: 100%;      /* vul de halve schermbreedte */
-              max-width: 50vw;      /* rechterhelft scherm */
+              width: 100%;       /* vul halve schermbreedte */
+              max-width: 50vw;   /* nooit breder dan halve schermbreedte */
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);  /* max 3 per rij */
+              justify-items: center;                  /* iconen horizontaal in cel */
+              gap: 8px;                               /* kleine ruimte tussen iconen */
             }
-  
-            /* Iconen kleiner maken als er een map open is */
+            
+            /* Sluit maps iconen automatisch verkleinen indien nodig */
             #closed-container.side.right .icon.map {
-              width: 50px;
+              width: 50px;  /* past netjes in halve schermbreedte */
               height: 50px;
+            }
+
+              /* Icon-container centreren binnen elke cel */
+            #closed-container.side.right .icon-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
             }
 
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
