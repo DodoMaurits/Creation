@@ -471,10 +471,22 @@ body {
             }
   
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
+            /* ALLE tooltips permanent zichtbaar op mobiel */
             .icon.map::after,
             .icon.element::after,
             .icon.map-title::after {
-               display: none; /* hover werkt toch niet op mobiel */
+              opacity: 1 !important;
+              position: static !important;
+              transform: none !important;
+              display: block;
+              margin-top: 6px;
+            }
+            
+            /* Hover-regel uitschakelen (niet nodig op mobiel) */
+            .icon.map:hover::after,
+            .icon.element:hover::after,
+            .icon.map-title:hover::after {
+              opacity: 1;
             }
 }
 
