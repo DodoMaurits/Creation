@@ -518,10 +518,14 @@ body {
             /* Map-titels & closed-container tooltips: gecentreerd binnen eigen helft */
             .icon.map-title,
             #closed-container .icon-container {
-                position: relative;       /* tooltip positioneert zich t.o.v. icoon */
-                display: block;           /* nodig voor margin auto centering */
-                margin: 0 auto;           /* horizontaal gecentreerd in container */
-                width: 70px;              /* icoonbreedte mobiel */
+                display: flex;
+                flex-direction: column;
+                align-items: center;       /* iconen + titels gecentreerd */
+                justify-content: center;
+                width: 70px;               /* icoonbreedte mobiel */
+                position: relative;        /* voor tooltip */
+                box-sizing: border-box;
+                margin: 0;                 /* geen aparte centering meer nodig */
             }
             
             .icon.map-title .tooltip,
