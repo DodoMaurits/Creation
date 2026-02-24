@@ -399,30 +399,34 @@ body {
             .side.right { left: 50%; }
             .side.visible { transform: translateX(0); opacity: 1; }
                       
+            /* Container centreert alleen — doet GEEN layout */
             #closed-container {
               width: 90%;
-              max-width: 300px;              /* max 3 icons per rij */
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              gap: 8px;                       /* krappe gap */
+              max-width: 300px;      /* ruimte voor 3 iconen */
               margin: 0 auto;
             }
-          
-            #closed-container .icon-container {
-              flex: 1 1 30%;                  /* max 3 per rij */
-              max-width: 90px;
+
+            /* Grid bepaalt volledig de layout */
+            .grid-closed {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr); /* altijd 3 kolommen */
+              gap: 8px;
+            }
+
+            /* Icoon containers netjes centreren binnen hun grid-cel */
+            .grid-closed .icon-container {
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
             }
-  
+
+            /* Verberg state */
             #closed-container.hidden {
               opacity: 0;
               pointer-events: none;
             }
-
+  
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
