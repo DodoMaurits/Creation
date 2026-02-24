@@ -442,9 +442,17 @@ body {
               width: 50px;
             }
   
-            /* Zorg dat de hover tooltip uitgeschakeld is */
-            .icon-container:hover .tooltip {
-              opacity: 1; /* mag blijven maar niet nodig */
+            /* alle tooltip divs permanent zichtbaar */
+            .icon-container .tooltip {
+              position: static !important;
+              transform: none !important;
+              display: block !important;
+              opacity: 1 !important;
+              pointer-events: auto;
+              margin-top: 6px;
+              text-align: center;
+              max-width: 80px;
+              white-space: normal;
             }
   
             /* TOOLTIP permanent zichtbaar en normaal onder icoon */
@@ -473,32 +481,9 @@ body {
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
             /* Alle titels permanent zichtbaar op mobiel */
             .icon.map::after,
-            .icon.map-title::after {
-              content: attr(data-title);       /* titel uit HTML attribuut data-title */
-              display: block !important;
-              position: static !important;
-              transform: none !important;
-              opacity: 1 !important;
-              margin-top: 6px;
-              text-align: center;
-              background: rgba(0,0,0,0.85);
-              color: white;
-              padding: 6px 10px;
-              border-radius: 8px;
-              font-size: 13px;
-            }
-            
-            /* Elementen blijven zoals eerder met tooltip/span */
-            .grid-elements .tooltip {
-              position: static !important;
-              transform: none !important;
-              opacity: 1 !important;
-              pointer-events: auto;
-              display: block;
-              margin-top: 6px;
-              white-space: normal;
-              text-align: center;
-              max-width: 80px;
+            .icon.map-title::after,
+            .icon.element::after {
+              display: none;
             }
 }
 
