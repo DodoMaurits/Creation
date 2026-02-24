@@ -515,30 +515,33 @@ body {
               text-align: center;
             }
     
-             /* ---------------- TOOLTIP ---------------- */
-            .icon-container .tooltip,
-            .icon.map-title .tooltip,
-            #closed-container .icon-container .tooltip {
-              position: static !important;    /* geen absolute positie */
-              transform: none !important;
-              display: block !important;
-              margin-top: 4px;               /* ruimte onder icoon */
-              max-width: 70px;               /* past bij mobiel icoon */
-              font-size: 10px;
-              text-align: center;
-              white-space: normal;
-              word-wrap: break-word;
-              overflow-wrap: break-word;
-            }
-
+            /* ================= PERMANENTE TITELS ONDER ICONEN ================= */
             .icon-container,
             .grid-elements .icon-container,
             .icon.map-title {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;  /* tooltip onder icoon */
-                position: relative;           /* nodig voor desktop tooltips */
+                flex-direction: column;    /* icoon boven, titel eronder */
+                align-items: center;       /* horizontaal centreren */
+                justify-content: flex-start;
+                position: relative;        /* container voor de titel/tooltip */
+                margin: 0;
+            }
+            
+            /* Titels / labels altijd zichtbaar onder het icoon */
+            .icon-container .tooltip,
+            .icon.map-title .tooltip,
+            #closed-container .icon-container .tooltip {
+                position: relative;        /* niet absolute, dus altijd in flow */
+                display: block;            /* altijd zichtbaar */
+                margin-top: 4px;           /* ruimte tussen icoon en titel */
+                max-width: 70px;           /* past bij mobiel icoon */
+                text-align: center;
+                font-size: 10px;
+                white-space: normal;       /* tekst kan afbreken */
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                opacity: 1 !important;     /* altijd zichtbaar */
+                pointer-events: none;      /* voorkomt dat titel hover blokkeert */
             }
 }
 
