@@ -522,6 +522,7 @@ body {
             #closed-container .icon-container .tooltip {
                 display: block;           /* altijd zichtbaar */
                 margin-top: 4px;          /* ruimte tussen icoon en titel */
+                width: auto;
                 max-width: 45px;          /* past bij container/icoon */
                 text-align: center;       /* gecentreerde tekst */
                 font-size: 10px;
@@ -533,7 +534,6 @@ body {
             
                 opacity: 1 !important;    /* altijd zichtbaar */
                 pointer-events: none;     /* voorkomt hover issues */
-                width: fit-content;       /* past exact onder icoon */
             }
 }
 
