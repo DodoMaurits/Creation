@@ -286,18 +286,6 @@ body {
   max-width: 1200px;
 }
 
-@media (max-width: 900px) {
-  .result-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .result-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .result-box {
   width: 100%;
   max-width: 250px;
@@ -446,6 +434,31 @@ body {
               box-sizing: border-box;
             }
 
+            /* Zorg dat de container niet breder is dan nodig */
+            .grid-elements .icon-container {
+              width: auto;
+              max-width: 90px; /* zelfde als icoonruimte */
+              display: inline-flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          
+            /* Titel onder icoon */
+            .grid-elements .tooltip {
+              position: static;
+              transform: none;
+              margin-top: 6px;
+              display: inline-block;     /* 👈 breedte = tekst */
+              width: auto;
+              max-width: 100%;
+              white-space: normal;       /* mag afbreken */
+              text-align: center;
+            }
+  
+            .result-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+  
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
             .icon.map::after,
             .icon.element::after,
