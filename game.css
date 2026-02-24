@@ -428,7 +428,7 @@ body {
               display: grid;
               grid-template-columns: repeat(3, 50px);
               column-gap: 8px;
-              row-gap: 10px;
+              row-gap: 10px; /* verkleinde rijen */
               justify-content: center;
               width: auto;
               margin: 0 auto;
@@ -457,16 +457,18 @@ body {
   
             /* TOOLTIP permanent zichtbaar en normaal onder icoon */
             .grid-elements .tooltip {
+              font-size: 10px;             /* kleinere tekst */
               position: static !important;
               transform: none !important;
               opacity: 1 !important;
               pointer-events: auto;
               display: block;
               margin-top: 6px;
-              white-space: normal;
               text-align: center;
-              max-width: 80px;
-              font-size: 10px;   /* kleiner tekst */
+              width: 120px;                /* breder dan icoon (bijv 50px) */
+              max-width: 90%;              /* nooit groter dan scherm */
+              white-space: normal;         /* zorg dat tekst afbreekt */
+              word-wrap: break-word;       /* lange woorden afbreken */
             }
   
             .result-grid {
