@@ -382,101 +382,92 @@ body {
   
             /* ---------------- ICONEN IETS KLEINER ---------------- */
             .icon.element { width: 50px; height: 50px; }
-            .icon.map, .icon.map-title { width: 70px; height: 70px; }
+            .icon.map, .icon.map-title { width: 60px; height: 60px; }
   
-            /* ---------------- CLOSED MAPS ---------------- */
+            /* ---------------- SIDES (OPEN MAPS) ---------------- */
             .side {
-              width: 50vw;          /* halve schermbreedte */
-              max-width: 50vw;      /* nooit breder */
+              position: absolute;
+              top: 20px;
+              width: 50vw;       /* halve schermbreedte */
+              max-width: 50vw;   /* nooit breder */
               box-sizing: border-box;
               text-align: center;
               overflow: visible;
-              position: absolute;
-              top: 20px;
             }
-          
             .side.left { left: 0; }
             .side.right { left: 50%; }
             .side.visible { transform: translateX(0); opacity: 1; }
                       
-            /* Container centreert alleen — doet GEEN layout */
+            /* ---------------- CLOSED MAPS ---------------- */
             #closed-container {
-              width: 90%;
-              max-width: 300px;      /* ruimte voor 3 iconen */
-              margin: 0 auto;
-            }
-
-            /* Grid bepaalt volledig de layout */
-            .grid-closed {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* automatisch aanpassen */
-              justify-content: center;   /* centreert de volledige rij */
-              justify-content: center;   /* centreert de iconen binnen hun cel */
+              grid-template-columns: repeat(auto-fit, minmax(calc(33.33% - 8px), 1fr)); /* max 3 per rij */
               gap: 8px;
+              justify-items: center;
+              width: 95vw;        /* nooit buiten scherm */
+              max-width: 95vw;
+              padding: 0 5vw;     /* minimale padding */
+              box-sizing: border-box;
             }
 
-            /* Icoon containers netjes centreren binnen hun grid-cel */
-            .grid-closed .icon-container {
+            /* Half-screen positioning voor open maps */
+            #closed-container.side {
+              width: 47vw;        /* past altijd binnen halve schermhelft */
+              max-width: 47vw;
+              padding: 0 3%;      /* kleine padding */
+              grid-template-columns: repeat(auto-fit, minmax(calc(33.33% - 6px), 1fr));
+            }
+
+            /* Icon-container centreren */
+            #closed-container .icon-container {
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
             }
 
-            /* Verberg state */
-            #closed-container.hidden {
-              opacity: 0;
-              pointer-events: none;
-            }
-
-            /* MOBILE CLOSED MAPS — max 3 per rij, altijd binnen scherm */
-            #closed-container.side.right {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* 50px per icoon, max 1fr */
-                gap: 8px;
-                justify-items: center;    /* centreren van de iconen in de cel */
-                justify-content: center;  /* korte rijen centreren */
-                width: 50vw;              /* halve schermbreedte */
-                max-width: 50vw;          /* past binnen halve schermbreedte */
-                box-sizing: border-box;
-            }
-            
             /* Sluit maps iconen automatisch verkleinen indien nodig */
-            #closed-container.side.right .icon.map,
-            #closed-container.side.left .icon.map {
-                width: 40px;
-                height: 40px;
-            }
-
-              /* Icon-container centreren binnen elke cel */
-            #closed-container.side.right .icon-container {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
+            #closed-container.side .icon.map {
+              width: 40px;
+              height: 40px;
             }
 
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(3, 50px); /* 3 icoontjes per rij */
-              column-gap: 8px;   /* kleine horizontale ruimte */
-              row-gap: 4px;     /* kleine verticale ruimte tussen rijen */
+              grid-template-columns: repeat(3, 50px);
+              column-gap: 8px;
+              row-gap: 4px;
               justify-content: center;
               width: auto;
               margin: 0 auto;
             }
-
-            /* Zorg dat de container niet breder is dan nodig */
-            .grid-elements .icon-container {
-                width: auto;
-                min-width: 50px;
-                height: auto;   /* i.p.v. 130px */
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            
+            /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
+            .grid-elements {
+              display: grid;
+              grid-template-columns: repeat(3, 50px);
+              column-gap: 8px;
+              row-gap: 4px;
+              justify-content: center;
+              width: auto;
+              margin: 0 auto;
             }
-  
+          
+            .grid-elements .icon-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: auto;
+              min-width: 50px;
+              height: auto;
+            }
+
+            /* ---------------- RESULT OVERLAY ---------------- */
             .result-grid {
               grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
               gap: 20px;
@@ -519,61 +510,50 @@ body {
               text-align: center;
             }
     
-            /* ================= MOBILE PORTRAIT ONLY ================= */
-            /* Alle tooltips onder iconen: standaard volgt de tekst */
+             /* ---------------- TOOLTIP ---------------- */
             .icon-container .tooltip {
-                display: inline-block !important;   /* breedte volgt tekst */
-                position: static !important;
-                transform: none !important;
-                opacity: 1 !important;
-                pointer-events: auto !important;
-                margin-top: 4px;
-                text-align: center;
-                white-space: normal;                /* tekst kan afbreken */
-                word-wrap: break-word;
-                word-break: break-word;
-                font-size: 10px;
-                width: auto !important;             /* volgt tekst */
-                min-width: 0;                       /* geen minimum */
+              display: inline-block !important;
+              position: absolute !important;
+              top: 100%;
+              left: 50%;
+              transform: translateX(-50%);
+              opacity: 1 !important;
+              pointer-events: auto !important;
+              margin-top: 4px;
+              font-size: 10px;
+              max-width: 50px;
+              text-align: center;
+              white-space: normal;
+              word-wrap: break-word;
+              overflow-wrap: break-word;
             }
 
-            /* Tooltips van elementen in de grid: max 50px (icoonbreedte) */
-            .grid-elements .icon-container .tooltip {
-                max-width: 50px;                    /* niet breder dan icoon */
-                white-space: normal;
-                overflow-wrap: break-word;
-                line-height: 1.1; 
-                margin-top: 2px;
-                padding: 2px 4px;
-            }
-        
-            /* Map-titels & closed-container tooltips: gecentreerd binnen eigen helft */
+            /* Map-titels & closed-container tooltips */
             .icon.map-title,
             #closed-container .icon-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;       /* iconen + titels gecentreerd */
-                justify-content: center;
-                width: 70px;               /* icoonbreedte mobiel */
-                position: relative;        /* voor tooltip */
-                box-sizing: border-box;
-                margin: 0;                 /* geen aparte centering meer nodig */
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 70px;
+              position: relative;
+              box-sizing: border-box;
+              margin: 0;
             }
-            
+
             .icon.map-title .tooltip,
             #closed-container .icon-container .tooltip {
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                transform: translateX(-50%);
-                max-width: 50px;          /* past bij icoonbreedte op mobiel */
-                white-space: normal;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                word-break: normal;
-                margin-top: 4px;
-                font-size: 10px;
-                text-align: center;
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              transform: translateX(-50%);
+              max-width: 50px;
+              font-size: 10px;
+              margin-top: 4px;
+              text-align: center;
+              white-space: normal;
+              word-wrap: break-word;
+              overflow-wrap: break-word;
             }
 }
 
