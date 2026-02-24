@@ -2202,18 +2202,23 @@ function renderSide(parentContainer, map, side) {
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
   
-    if (!isMobile) {
-      // --- Desktop: JS bepaalt kolommen ---
-      if (totalElements > 20) {
-        grid.style.gridTemplateColumns = "repeat(5, 100px)";
-        grid.style.columnGap = "30px";
-        grid.style.rowGap = "15px";
-      } else {
-        grid.style.gridTemplateColumns = "repeat(4, 100px)";
-        grid.style.columnGap = "50px";
-        grid.style.rowGap = "20px";
-      }
+  if (!isMobile) {
+    // Desktop
+    if (totalElements > 20) {
+      grid.style.gridTemplateColumns = "repeat(5, 100px)";
+      grid.style.columnGap = "30px";
+      grid.style.rowGap = "15px";
+    } else {
+      grid.style.gridTemplateColumns = "repeat(4, 100px)";
+      grid.style.columnGap = "50px";
+      grid.style.rowGap = "20px";
     }
+  } else {
+    // Mobiel: kleinere icoontjes, kleine gaps
+    grid.style.gridTemplateColumns = "repeat(3, 50px)";
+    grid.style.columnGap = "8px";
+    grid.style.rowGap = "10px";   // ⬅ hier je gewenste 10px
+  }
 
     map.elementen.forEach(el => {
       const elContainer = document.createElement("div");
