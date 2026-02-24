@@ -419,33 +419,32 @@ body {
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(3, 50px); /* EXACT 3 per rij */
-              column-gap: 8px;   /* kleine horizontale gap */
-              row-gap: 12px;     /* verticale ruimte */
-              justify-content: center; /* centreer hele gridblok */
-              width: auto;             /* niet full width */
+              grid-template-columns: repeat(3, 50px);
+              column-gap: 8px;
+              row-gap: 18px;
+              justify-content: center;
+              width: auto;
               margin: 0 auto;
             }
 
             /* Zorg dat de container niet breder is dan nodig */
             .grid-elements .icon-container {
-              position: relative;   /* belangrijk */
               display: flex;
               flex-direction: column;
               align-items: center;
-              width: 70px;          /* zelfde als element-icoon ruimte */
+              width: 50px;
             }
-          
+            
             .grid-elements .tooltip {
-              position: absolute;
-              top: 100%;
-              left: 50%;
-              transform: translateX(-50%);
+              position: static;         /* terug in normale flow */
+              transform: none;
               margin-top: 6px;
-              width: max-content;   /* 👈 breedte = tekst */
-              max-width: 120px;     /* voorkomt uitlopen */
-              white-space: normal;  /* mag afbreken */
+              display: inline-block;    /* breedte = tekst */
+              width: auto;
+              max-width: 80px;
+              white-space: normal;      /* mag afbreken */
               text-align: center;
+              opacity: 1;               /* altijd zichtbaar */
             }
   
             .result-grid {
