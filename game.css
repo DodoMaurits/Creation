@@ -558,13 +558,15 @@ body {
             
             .icon.map-title .tooltip,
             #closed-container .icon-container .tooltip {
-                position: absolute;       /* t.o.v. container */
-                top: 100%;                /* direct onder icoon */
-                left: 50%;                /* horizontaal midden */
+                position: absolute;
+                top: 100%;
+                left: 50%;
                 transform: translateX(-50%);
-                max-width: none !important;  /* breedte volgt tekst */
+                max-width: 50px;          /* past bij icoonbreedte op mobiel */
                 white-space: normal;
                 word-wrap: break-word;
+                overflow-wrap: break-word;
+                word-break: normal;
                 margin-top: 4px;
                 font-size: 10px;
                 text-align: center;
