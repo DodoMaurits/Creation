@@ -500,25 +500,23 @@ body {
             }
   
             /* ---------------- TOOLTIP ONDER ICONEN OP MOBIEL ---------------- */
-            /* Alle titels permanent zichtbaar op mobiel */
-            .icon.map-title::after {
+            /* Alle titels (.tooltip divs) zichtbaar onder icoon, zowel elementen als mappen */
+            .icon-container .tooltip {
               display: block !important;
               position: static !important;
               transform: none !important;
               opacity: 1 !important;
               pointer-events: auto !important;
-              margin-top: 4px;        /* ruimte onder het icoon */
+              margin-top: 4px;       /* kleine afstand van icoon */
               text-align: center;
-              width: 120px;           /* breder dan icoon */
-              max-width: 90%;
               white-space: normal; 
               word-wrap: break-word;
               font-size: 10px;
-            }
             
-            .icon.map::after,
-            .icon.element::after {
-              display: none; /* blijven verborgen op mobiel */
+              /* Breedte volgt tekst maar minstens icoonbreedte */
+              min-width: 50px;       /* minstens breedte icoon */
+              max-width: 120px;      /* maximaal */
+              width: max-content;    /* breedte volgt tekst */
             }
 }
 
