@@ -428,14 +428,15 @@ body {
               pointer-events: none;
             }
 
-            /* Als een map open is, halve scherm voor closed maps */
+            /* MOBILE CLOSED MAPS — max 3 per rij, altijd binnen scherm */
             #closed-container.side.right {
-              width: 100%;       /* vul halve schermbreedte */
-              max-width: 50vw;   /* nooit breder dan halve schermbreedte */
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);  /* max 3 per rij */
-              justify-items: center;                  /* iconen horizontaal in cel */
-              gap: 8px;                               /* kleine ruimte tussen iconen */
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* 50px per icoon, max 1fr */
+                gap: 8px;
+                justify-items: center;    /* centreren van de iconen in de cel */
+                width: 100%;
+                max-width: 50vw;          /* past binnen halve schermbreedte */
+                box-sizing: border-box;
             }
             
             /* Sluit maps iconen automatisch verkleinen indien nodig */
