@@ -450,11 +450,12 @@ body {
             }
   
             .result-grid {
-              grid-template-columns: repeat(2, 1fr); /* max 2 per rij */
+              grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
               gap: 20px;
               max-width: 300px; /* past op mobiel */
               width: 100%;
-              justify-items: center;
+              justify-items: center;   /* centreren binnen cel */
+              justify-content: center; /* centreren van de hele grid / rij */
             }
 
             .result-box {
@@ -463,7 +464,7 @@ body {
             }
           
             .result-title {
-              font-size: 16px; /* kleinere titels */
+              font-size: 14px; /* kleinere titels */
               margin-bottom: 4px;
               letter-spacing: 1px;
             }
@@ -475,7 +476,7 @@ body {
             }
           
             .result-quote {
-              font-size: 12px;
+              font-size: 10px;
               line-height: 1.2;
             }
   
