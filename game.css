@@ -528,11 +528,11 @@ body {
                 max-width: 90px;
                 text-align: center;       /* gecentreerde tekst */
                 font-size: 10px;
-            
-                white-space: normal;      /* normale regelafbreking */
-                word-wrap: normal;    /* oudere browsers */
-                overflow-wrap: break-word;/* moderne browsers */
-                hyphens: auto;            /* automatische streepjes bij afbreking */
+                        
+                white-space: normal;     /* laat regelafbreking toe */
+                word-break: normal;      /* voorkom te vroege afbreking */
+                overflow-wrap: normal;   /* breekt alleen als max-width overschreden */
+                hyphens: auto;           /* streepjes alleen indien nodig */
             
                 opacity: 1 !important;    /* altijd zichtbaar */
                 pointer-events: none;     /* voorkomt hover issues */
