@@ -386,37 +386,42 @@ body {
   
             /* ---------------- CLOSED MAPS ---------------- */
             .side {
-              width: 50vw;          /* halve schermbreedte */
-              max-width: 50vw;      /* nooit breder */
-              box-sizing: border-box;
-              text-align: center;
-              overflow: visible;
-              position: absolute;
-              top: 0;
+                width: 50vw;
+                max-width: 50vw;
+                box-sizing: border-box;
+                text-align: center;
+                position: relative;   /* ⬅ eerder absolute */
+                top: auto;            /* verwijder top */
+                overflow: visible;
             }
-          
+  
             .side.left { left: 0; }
             .side.right { left: 50%; }
             .side.visible { transform: translateX(0); opacity: 1; }
             
             #closed-container {
+                position: relative;   /* niet absoluut meer */
+                top: auto;
+                transform: none;      /* verwijder translate */
                 display: grid;
-                grid-template-columns: repeat(3, 1fr); /* 3 items per rij */
+                grid-template-columns: repeat(3, 1fr);
                 gap: 8px;
                 justify-items: center;
                 width: 100%;
                 max-width: 300px;
-                margin: 20px auto;
+                margin: 0 auto;       /* centrum horizontaal */
             }
-            
+        
             #closed-container .icon-container {
+                width: 100%;
+                max-width: none;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 70px;   /* <-- probleem! */
-            }
-                      
+                box-sizing: border-box;
+            }  
+  
             #closed-container.hidden {
               opacity: 0;
               pointer-events: none;
