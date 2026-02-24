@@ -400,22 +400,19 @@ body {
             .side.visible { transform: translateX(0); opacity: 1; }
                       
             #closed-container {
-              width: 90%;
-              max-width: 300px;              /* max 3 icons per rij */
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              gap: 8px;                       /* krappe gap */
-              margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px; /* krappe gap voor mobiel */
             }
-          
+            
             #closed-container .icon-container {
-              flex: 1 1 30%;                  /* max 3 per rij */
-              max-width: 90px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
+                flex: 1 1 calc(33.333% - 8px); /* maximaal 3 per rij */
+                max-width: 90px;               /* of de gewenste icoonbreedte */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
           
             #closed-container.hidden {
