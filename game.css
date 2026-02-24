@@ -513,10 +513,24 @@ body {
                 padding: 2px 4px;
             }
         
-            /* Map-titels & closed-container tooltips: altijd tekstbreedte volgen */
+            /* Map-titels & closed-container tooltips: altijd tekstbreedte volgen en gecentreerd */
+            .icon.map-title,
+            #closed-container .icon-container {
+                display: inline-block;      /* nodig voor centering */
+                position: relative;         /* container t.o.v. tooltip */
+                width: 70px;                /* icoonbreedte */
+            }
+            
             .icon.map-title .tooltip,
             #closed-container .icon-container .tooltip {
-                max-width: none !important;         /* geen beperking */
+                position: absolute;         /* t.o.v. container */
+                top: 100%;                  /* direct onder icoon */
+                left: 50%;                  /* horizontaal midden container */
+                transform: translateX(-50%);
+                max-width: none !important; /* breedte volgt tekst */
+                white-space: normal;
+                word-wrap: break-word;
+                margin-top: 4px;
             }
 }
 
