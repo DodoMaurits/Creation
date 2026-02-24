@@ -1,27 +1,28 @@
 html, body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  overflow: hidden;
+  margin: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center; /* CENTREREN */
   background: 
     linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
     url("afb/creatiescherm.png") center center / cover no-repeat;
 }
 
 .container {
-  position: relative;
   width: 100%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
   font-family: "Times New Roman", serif;
   font-size: 32px;
-  opacity: 0.85;
+  opacity: 0.9;
+  padding: 20px;
 }
 
 /* ---------------- GOD ICON ---------------- */
@@ -98,17 +99,16 @@ html, body {
   }
 
   .god-icon {
-    width: 200px;
-    margin-top: 50px;
-    animation: floatUpDown 2.5s ease-in-out infinite;
+    width: 260px;  /* GROTER ipv kleiner */
+    margin-top: 0;
   }
 
   .result-title {
-    font-size: 28px;
+    font-size: 34px;  /* Groter */
   }
 
   .caption {
-    font-size: 16px;
+    font-size: 20px;  /* Groter */
   }
 
   .caption span:nth-child(1) { animation: floatSide1 3s ease-in-out infinite; }
@@ -123,17 +123,17 @@ html, body {
   }
 
   .god-icon {
-    width: 150px;
-    margin-top: 30px;
-    animation: floatUpDown 2s ease-in-out infinite;
+    width: 280px;   /* Nog groter voor impact */
   }
 
   .result-title {
-    font-size: 22px;
+    font-size: 32px;
+    letter-spacing: 2px;
   }
 
   .caption {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.5;
   }
 
   .caption span:nth-child(1) { animation: floatSide1 2.5s ease-in-out infinite; }
