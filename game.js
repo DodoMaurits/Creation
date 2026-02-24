@@ -2132,8 +2132,8 @@ requestAnimationFrame(() => {
 // ----- RENDER CLOSED MAPS -----
 function renderClosed() {
   closedContainer.innerHTML = "";
-  closedContainer.classList.remove("hidden", "left", "right");
-  closedContainer.style.transition = "opacity 0.3s ease";
+  closedContainer.classList.remove("hidden", "left", "right"); // ← verwijder alle posities
+  closedContainer.style.transition = "opacity 0.3s ease"; // fade-in
   closedContainer.style.opacity = 0;
 
   const grid = document.createElement("div");
@@ -2142,16 +2142,16 @@ function renderClosed() {
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
-
+  
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
-
+  
     const tooltip = document.createElement("div");
     tooltip.className = "tooltip";
     tooltip.textContent = map.naam;
-
+  
     container.appendChild(img);
     container.appendChild(tooltip);
     grid.appendChild(container);
@@ -2159,10 +2159,9 @@ function renderClosed() {
 
   closedContainer.appendChild(grid);
 
-  requestAnimationFrame(() => {
-    updateClosedContainer();
-    closedContainer.style.opacity = 1;
-  });
+  // forceer repaint
+  closedContainer.offsetHeight;
+  closedContainer.style.opacity = 1;
 }
 
 // ----- OPEN MAP -----
