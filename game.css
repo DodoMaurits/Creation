@@ -433,6 +433,7 @@ body {
               justify-content: flex-start; /* tooltip onder iconen */
               position: relative;          /* voor eventueel pseudo-elementen */
               margin: 0;
+              min-wdith: 70px;
             }
 
             /* Sluit maps iconen automatisch verkleinen indien nodig */
@@ -444,7 +445,7 @@ body {
             /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
             .grid-elements {
               display: grid;
-              grid-template-columns: repeat(3, 50px);
+              grid-template-columns: repeat(3, minmax(70px, 1fr)); /* min 70px ipv 50px */
               column-gap: 8px;
               row-gap: 40px;
               justify-content: center;
@@ -525,7 +526,7 @@ body {
                 margin-top: 4px;          /* ruimte tussen icoon en titel */
                 margin-bottom: 8px;
                 width: auto;
-                max-width: 90px;
+                max-width: 100%;
                 text-align: center;       /* gecentreerde tekst */
                 font-size: 10px;
                         
