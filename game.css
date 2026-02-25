@@ -286,18 +286,6 @@ body {
   max-width: 1200px;
 }
 
-@media (max-width: 900px) {
-  .result-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .result-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .result-box {
   width: 100%;
   max-width: 250px;
@@ -384,147 +372,49 @@ body {
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
             body {
-              overflow: auto;
+              overflow-x: hidden; 
+              overflow-y: auto; 
+              max-width: 100%;
             }
-
+  
             #app {
-              height: auto;
+              height: auto; 
               min-height: 100vh;
             }
   
-            /* ---------------- ICONEN IETS KLEINER ---------------- */
-            .icon.element { width: 50px; height: 50px; }
-            .icon.map, .icon.map-title { width: 60px; height: 60px; }
-  
             /* ---------------- SIDES (OPEN MAPS) ---------------- */
-            .side {
-              position: absolute;
-              top: 20px;
+            .side {position: absolute; top: 20px; text-align: center; 
+                   transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0;
               width: 50vw;       /* halve schermbreedte */
               max-width: 50vw;   /* nooit breder */
               box-sizing: border-box;
-              text-align: center;
-              overflow: visible;
             }
+  
             .side.left { left: 0; }
             .side.right { left: 50%; }
             .side.visible { transform: translateX(0); opacity: 1; }
-                      
-            /* ---------------- CLOSED MAPS ---------------- */
-            .grid-closed {
-              grid-template-columns: repeat(3, 1fr); /* maximaal 3 iconen per rij */
-              gap: 8px;       /* column & row gap */
+
+            /* ---------------- MAP TITLES & ICONS ---------------- */
+            .map-title {
+              margin-bottom: 40px;
+            }
+
+            .icon.element { 
+              width: 50px; 
+              height: 50px; 
             }
   
-            #closed-container {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* max 3 per rij */
-              justify-items: center;   /* iconen in cel centreren */
-              width: 95vw;             /* nooit buiten scherm */
-              max-width: 95vw;
-              padding: 0 2vw;          /* minimale padding */
-              box-sizing: border-box;
-              gap: 0;                  /* gap wordt later via grid-template-columns flexibel */
+            .icon.map { 
+              width: 60px; 
+              height: 60px; 
             }
 
-            /* Half-screen positioning voor open maps */
-            #closed-container.side {
-              width: 47vw;             /* halve schermbreedte */
-              max-width: 47vw;
-              grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* maximaal 3 iconen per rij */
-              justify-items: center;
-              gap: 0;                  /* gaps flexibel via minmax + fr */
-              padding: 0 1vw;
+            .icon.map-title { margin-top: 50px; margin-bottom: 20px;
+              width: 60px; 
+              height: 60px; 
             }
 
-            /* Icon-container centreren */
-            #closed-container .icon-container,
-            .grid-elements .icon-container {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-start; /* tooltip onder iconen */
-              position: relative;          /* voor eventueel pseudo-elementen */
-              margin: 0;
-              min-wdith: 70px;
-            }
-
-            /* Sluit maps iconen automatisch verkleinen indien nodig */
-            #closed-container.side .icon.map {
-              width: 40px;
-              height: 40px;
-            }
-            
-            /* GRID ELEMENTEN FLEXIBEL BINNEN SIDE */
-            .grid-elements {
-              display: grid;
-              grid-template-columns: repeat(3, 70px); /* mobiel: kleinere elementen grid */
-              column-gap: 8px;
-              row-gap: 40px;
-              justify-content: center;
-              width: auto;
-              margin: 0 auto;
-              margin-top: 40px;
-            }
-          
-            .grid-elements .icon-container {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-start;
-              width: auto;
-              min-width: 70px;
-              height: auto;
-            }
-
-            /* ---------------- RESULT OVERLAY ---------------- */
-            .result-grid {
-              grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-              gap: 20px;
-              max-width: 300px; /* past op mobiel */
-              width: 100%;
-              justify-items: center;   /* centreren binnen cel */
-              justify-content: center; /* centreren van de hele grid / rij */
-            }
-
-            .result-box {
-              max-width: 120px; /* past binnen de grid */
-              font-size: 14px;
-            }
-          
-            .result-title {
-              font-size: 14px; /* kleinere titels */
-              margin-bottom: 4px;
-              letter-spacing: 1px;
-            }
-          
-            .result-image {
-              width: 60px; /* kleiner icoon */
-              height: auto;
-              margin-bottom: 4px;
-            }
-          
-            .result-quote {
-              font-size: 10px;
-              line-height: 1.2;
-            }
-  
-            #result-overlay {
-              padding: 20px;
-              overflow-y: auto;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;       /* ⬅ verticaal gecentreerd */
-              min-height: 100vh;         /* volledige schermhoogte */
-              text-align: center;
-            }
-    
-            /* ================= PERMANENTE TITELS ONDER ICONEN ================= */
+            /* ================= TOOLTIP (PERMANENT) ================= */
             .icon-container,
             .grid-elements .icon-container,
             .icon.map-title {
@@ -535,25 +425,147 @@ body {
                 margin: 0;
             }
             
-            /* Titels / labels altijd zichtbaar, direct onder het icoon */
-            .icon-container .tooltip,
-            .icon.map-title .tooltip,
-            #closed-container .icon-container .tooltip {
-                display: block;           /* altijd zichtbaar */
-                margin-top: 4px;          /* ruimte tussen icoon en titel */
+            .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+                      background: rgba(0,0,0,0.85); color: white; padding: 4px 8px; 
+                      border-radius: 6px; z-index: 10;
+                display: block;          /* altijd zichtbaar */
+                margin-top: 4px;         /* ruimte tussen icoon en titel */
                 margin-bottom: 8px;
                 width: auto;
                 max-width: 100%;
-                text-align: center;       /* gecentreerde tekst */
-                font-size: 10px;
+                text-align: center;      /* gecentreerde tekst */
+                font-size: 8px;
                         
                 white-space: normal;     /* laat regelafbreking toe */
                 word-break: normal;      /* voorkom te vroege afbreking */
                 overflow-wrap: normal;   /* breekt alleen als max-width overschreden */
                 hyphens: auto;           /* streepjes alleen indien nodig */
             
-                opacity: 1 !important;    /* altijd zichtbaar */
-                pointer-events: none;     /* voorkomt hover issues */
+                opacity: 1;              /* altijd zichtbaar */
+                pointer-events: none;    /* voorkomt hover issues */
+            }
+  
+            /* Alleen tooltips van elementen in open maps corrigeren */
+            .grid-elements .icon-container {
+              display: flex;
+              position: relative;          /* voor eventueel pseudo-elementen */
+              min-wdith: 70px;
+              margin: 0;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start; /* tooltip onder iconen */
+            }
+  
+            /* ---------------- GRID LAYOUTS ---------------- */
+            .grid-elements { display: grid; justify-content: center;
+              grid-template-columns: repeat(3, 70px); /* mobiel: kleinere elementen grid */
+              column-gap: 8px;
+              row-gap: 40px;
+              width: auto;
+              margin: 0 auto;
+              margin-top: 40px;
+            }
+
+            .grid-closed { display: flex; flex-wrap: wrap; justify-content: center; 
+                          max-width: 680px; width: auto; margin: 0 auto;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 8px;        /* column & row gap */
+              box-sizing: border-box;
+            }
+  
+            /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
+
+            /* ---------------- CLOSED CONTAINTER ---------------- */
+            #closed-container { position: absolute; top: 50%; transform: translate(-50%, -50%);
+                               transition: transform 0.6s ease, opacity 0.6s ease; opacity: 1;
+                                justify-items: center;
+              display: grid;
+              left: 50%;
+              width: 95vw;             /* nooit buiten scherm */
+              max-width: 95vw;
+              padding: 0 2vw;          /* minimale padding */
+              box-sizing: border-box;
+              column-gap: 8px;
+              row-gap: 40px;
+            }
+
+            /* standaard breedte: midden van scherm */
+            #closed-container.center { width: 680px; } /* ? */
+  
+            /* linker- of rechterhelft */
+            #closed-container.side {
+              width: 47vw;             /* halve schermbreedte */
+              max-width: 47vw;
+              grid-template-columns: repeat(3, 1fr); /* maximaal 3 iconen per rij */
+              justify-items: center;
+              padding: 0 1vw;
+              column-gap: 8px;
+              row-gap: 40px;
+            }
+
+            /* Sluit maps iconen automatisch verkleinen indien nodig */
+            #closed-container.side .icon.map {
+              width: 40px;
+              height: 40px;
+            }
+
+            #closed-container.side .tooltip {
+                font-size: 6px;
+            }
+  
+              /* Icon-container centreren */
+            #closed-container .icon-container, {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start; /* tooltip onder iconen */
+              position: relative;          /* voor eventueel pseudo-elementen */
+              margin: 0;
+              min-wdith: 70px;
+            }
+  
+            /* ---------------- RESULTAAT COMBINATIE ---------------- */
+            #result-overlay { position: fixed; inset: 0; background: linear-gradient(rgba(0,0,0,0.85), 
+                             rgba(0,0,0,0.9)), url("afb/beginscherm.png"); background-size: cover;
+                             background-position: center; display: flex; justify-container: center;
+                             align-items: center; z-index: 2000; box-sizing: border-box; opacity: 0;
+                             transition: opacity 0.3s ease;
+              padding: 20px 20px;
+              overflow-y: auto;
+              flex-direction: column;
+              min-height: 100vh;         /* volledige schermhoogte */
+              text-align: center;
+            }
+  
+            .result-grid { display: grid; justify-content: center;
+              gap: 20px;
+              grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+              width: 100%;
+              max-width: 300px;         /* past op mobiel */
+              justify-items: center;    /* centreren binnen cel */
+            }
+  
+            .result-box { width: 100%; text-align: center; color: white; display: flex; 
+                         flex-direction: column; align-items: center; opacity: 0; transition: opacity 0.3s ease; 
+              max-width: 120px; /* past binnen de grid */
+              font-size: 12px;
+            }
+
+            .result-image { height: auto; animation: floatSoft 2s ease-in-out infinite;
+              width: 60px;
+              margin-bottom: 4px;
+            }
+  
+            .result-title { font-family: "Cinzel", serif; 
+              font-size: 14px;
+              letter-spacing: 1px;
+              margin-bottom: 5px;
+            }
+          
+            .result-quote { font-family: "Times New Roman", serif; opacity: 0.85;
+                           word-wrap: break-word; overflow-wrap: break-word;
+              font-size: 10px;
+              line-height: 1.2;
             }
 }
 
