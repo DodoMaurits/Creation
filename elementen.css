@@ -37,32 +37,25 @@ html, body {
 
 /* ---------------- RESULT IMAGE ---------------- */
 .result-image {
-  width: 180px;
+  width: 130px;
   height: auto;
   margin-bottom: 15px;
-  animation: floatFast 0.6s ease-in-out infinite alternate; /* sneller en vloeiender */
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-}
-
-.result-image:hover {
-  transform: scale(1.12);
+  animation: floatSoft 2s ease-in-out infinite;
   cursor: pointer;
 }
 
-/* ---------------- FAST FLOAT ---------------- */
-@keyframes floatFast {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-15px); } /* omhoog en omlaag voor meer dynamiek */
-  100% { transform: translateY(10px); }  /* eindpunt anders voor variatie */
+@keyframes floatSoft {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-16px); }
+  100% { transform: translateY(0px); }
 }
 
-/* ---------------- FLOAT ANIMATIE ---------------- */
-@keyframes floatRandom {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(var(--translateY)); }
-  100% { transform: translateY(0); }
+.result-box:nth-child(1) .result-image { animation-delay: 0s; }
+.result-box:nth-child(2) .result-image { animation-delay: 0.5s; }
+
+.result-image:hover {
+  transform: scale(1.12);  /* licht groter bij hover */
+  transition: transform 0.3s ease;
 }
 
 /* ---------------- TITEL EN QUOTE ---------------- */
