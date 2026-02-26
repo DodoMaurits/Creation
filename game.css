@@ -392,7 +392,8 @@ body {
             }
 
             .map-title .tooltip {
-              opacity: 0 !important;
+              display: none;
+              opacity: 0;
             }
   
             /* Alleen tooltips van elementen in open maps corrigeren */
