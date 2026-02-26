@@ -26,7 +26,7 @@ html, body {
 .result-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   max-width: 320px;
   font-family: "Times New Roman", serif;
   font-size: 36px;
@@ -62,13 +62,15 @@ html, body {
 
 /* ---------------- TITEL EN QUOTE ---------------- */
 .result-title {
-  font-size: 52px;
-  margin: 10px 0;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin: 5px 0 5px 0;
 }
 
 .result-quote {
   font-size: 18px
   line-height: 1.4;
+  text-align: center;
   display: inline-block;
   animation-name: floatQuote;
   animation-duration: 2s;
@@ -82,4 +84,8 @@ html, body {
   0%   { transform: translateX(0); }
   50%  { transform: translateX(var(--translateX)); }
   100% { transform: translateX(0); }
+}
+
+@media (max-width: 900px) {
+
 }
