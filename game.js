@@ -45,7 +45,13 @@ const combinaties = [
         map: "Krachten",
         quote: "We're electrical items and when we die the electricity goes somewhere else <br><br>- Dominic Monaghan"
       }
-    ]
+    ],
+    uitleg: {
+      titel: "Eerste symmetriebreking", 
+      tekst: "De eerste symmetriebreking...",
+      tijd: 13_800_000_000,
+      type: "normal"
+    }
   },
     {
       input: ["Quarks", "Kou"],
@@ -2418,8 +2424,8 @@ function checkCombination() {
     });
   });
 
-  // Toon alle nieuwe elementen in de overlay
-  renderNewElements(newElements);
+  // Toon uitleg/new elements
+  handleCombinationScreen(matches[0], newElements);
 
   // Reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
@@ -2434,6 +2440,54 @@ function shakeErrorElements(elements) {
       setTimeout(() => el.classList.remove("error"), 600); // na animatie verwijderen
     }
   });
+}
+
+// ----- CHECK WEL OF GEEN UITLEG -----
+function handleCombinationScreen(combination, newElements) {
+  if (combination.uitleg) {
+    // 👇 Visueel aparte uitleg-overlay
+    showExplanationScreen(combination, newElements);
+  } else {
+    // 👇 Direct tonen van nieuwe elementen
+    renderNewElements(newElements);
+  }
+}
+
+// ----- VISUEEL SCHERM VOOR UITLEG -----
+function showExplanationScreen(combination, newElements) {
+  const oldOverlay = document.getElementById("result-overlay");
+  if (oldOverlay) oldOverlay.remove();
+
+  const overlay = document.createElement("div");
+  overlay.id = "result-overlay";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.cursor = "pointer";
+
+  const box = document.createElement("div");
+  box.className = "result-box fade-in explanation-box";
+
+  const title = document.createElement("div");
+  title.className = "result-title";
+  title.textContent = combination.uitleg.titel;
+
+  const text = document.createElement("div");
+  text.className = "result-quote";
+  text.innerHTML = combination.uitleg.tekst;
+
+  box.appendChild(title);
+  box.appendChild(text);
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+
+  setTimeout(() => overlay.classList.add("visible"), 20);
+
+  // Klik → nieuwe elementen
+  overlay.onclick = () => {
+    overlay.remove();
+    renderNewElements(newElements);
+  };
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
