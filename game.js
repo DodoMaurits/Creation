@@ -2130,6 +2130,11 @@ let openLeft = null;
 let openRight = null;
 let selected = [];
 
+// 🔹 Tijdlijn
+let currentTime = 0;
+const maxTime = 13_800_000_000; // leeftijd universum
+const timelineFill = document.getElementById("timeline-fill");
+
 // ----- DOM -----
 const closedContainer = document.getElementById("closed-container");
 const leftSide = document.getElementById("left-side");
@@ -2463,8 +2468,15 @@ function handleCombinationScreen(match, newElements) {
     renderNewElements(newElements);
   }
 
-  // Voeg nieuwe elementen toe aan unlockedElements
+  // 🔹 Voeg nieuwe elementen toe aan unlockedElements
   addUnlockedElements(newElements);
+
+  // 🔹 Update tijdlijn als match een tijd heeft
+  if (match.uitleg && match.uitleg.tijd) {
+    currentTime = Math.max(currentTime, match.uitleg.tijd);
+    const percentage = (currentTime / maxTime) * 100;
+    if (timelineFill) timelineFill.style.width = percentage + "%";
+  }
 }
 
 // ----- VISUEEL SCHERM VOOR UITLEG -----
