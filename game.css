@@ -239,7 +239,7 @@ body {
 
 /* linker- of rechterhelft */
 #closed-container.side {
-  width: 680px; /* of een breedte die 4 icons + gaps past */
+  width: 50vw;
 }
 
 /* Links/ midden van linkerhelft */
