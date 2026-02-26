@@ -391,7 +391,7 @@ body {
                 pointer-events: none;    /* voorkomt hover issues */
             }
 
-            .map-title .tooltip {
+            .icon-container.map-title .tooltip {
               display: none;
               opacity: 0;
             }
