@@ -2148,6 +2148,8 @@ requestAnimationFrame(() => {
     updateClosedContainer(); // nu correct gecentreerd
 });
 
+updateTimelineLabel();
+
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
   if (!timelineLabel) return;
