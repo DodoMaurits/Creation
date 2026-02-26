@@ -114,6 +114,7 @@ html, body {
                 }
                 
                 .result-quote { line-height: 1.4; text-align: center; display: inline-block;
+                  width: 200px;
                   font-size: 12px;
                 }
 }
