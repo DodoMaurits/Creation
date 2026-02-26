@@ -2,9 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100%;
-  font-family: Arial, sans-serif;
+  height: 100dvh;
+  width: 100dvw;
   background: 
     linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
     url('afb/beginscherm.png') center center / cover no-repeat;
@@ -18,7 +17,7 @@ html, body {
 .result-box-container {
   display: flex;
   justify-content: center;
-  gap: 80px; /* meer ruimte */
+  gap: 80px;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -28,20 +27,24 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 320px; /* groter */
+  max-width: 320px;
   font-family: "Times New Roman", serif;
-  font-size: 36px; /* groter */
+  font-size: 36px;
   margin-top: 20px;
   opacity: 0.9;
 }
 
 /* ---------------- RESULT IMAGE ---------------- */
+.image-wrapper {
+  animation: floatSoft 2s ease-in-out infinite; 
+}
+
 .result-image {
   width: 130px;
   height: auto;
   margin-bottom: 15px;
-  animation: floatSoft 2s ease-in-out infinite;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 @keyframes floatSoft {
@@ -54,26 +57,25 @@ html, body {
 .result-box:nth-child(2) .result-image { animation-delay: 0.5s; }
 
 .result-image:hover {
-  transform: scale(1.12);  /* licht groter bij hover */
-  transition: transform 0.3s ease;
+  transform: scale(1.12);
 }
 
 /* ---------------- TITEL EN QUOTE ---------------- */
 .result-title {
-  font-size: 52px; /* groter en krachtiger */
+  font-size: 52px;
   margin: 10px 0;
 }
 
 .result-quote {
-  font-size: 18px; /* blijft zoals jij wilde */
+  font-size: 18px
   line-height: 1.4;
   display: inline-block;
   animation-name: floatQuote;
-  animation-duration: 2s; /* iets sneller */
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  --translateX: 12px; /* meer beweging */
+  --translateX: 12px;
 }
 
 @keyframes floatQuote {
