@@ -2461,10 +2461,7 @@ function showExplanationScreen(combination, newElements) {
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
-  overlay.style.display = "flex";
-  overlay.style.justifyContent = "center";
-  overlay.style.alignItems = "center";
-  overlay.style.cursor = "default"; // overlay zelf klikbaar niet nodig
+  overlay.classList.add("visible");
 
   // Box voor uitleg
   const box = document.createElement("div");
