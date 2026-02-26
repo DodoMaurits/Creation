@@ -17,7 +17,7 @@ html, body {
 .result-box-container {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  column-gap: 100px;
   flex-wrap: wrap;
   text-align: center;
 }
