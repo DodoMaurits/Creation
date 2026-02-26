@@ -92,7 +92,7 @@ html, body {
 
 /* ---------------- MOBILE FRIENDLY CREATION PAGE ---------------- */
 @media (max-width: 900px) {
-            .container {;
+            .container {
               font-size: 28px;
             }
             
