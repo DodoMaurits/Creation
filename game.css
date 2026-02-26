@@ -336,7 +336,7 @@ body {
             }
 
             .map-title .tooltip {
-              display: none;
+              opacity: 0;
             }
   
             .side {position: absolute; top: 20px; width: 50vw; text-align: center; 
