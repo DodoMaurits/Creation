@@ -334,10 +334,6 @@ body {
               cursor: none;
               margin-bottom: 1px;
             }
-
-            .map-title .tooltip {
-              opacity: 0;
-            }
   
             .side {position: absolute; top: 20px; width: 50vw; text-align: center; 
                    transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0; }
@@ -392,6 +388,10 @@ body {
             
                 opacity: 1;              /* altijd zichtbaar */
                 pointer-events: none;    /* voorkomt hover issues */
+            }
+
+            .map-title .tooltip {
+              opacity: 0 !important;
             }
   
             /* Alleen tooltips van elementen in open maps corrigeren */
