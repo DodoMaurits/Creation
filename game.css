@@ -340,10 +340,14 @@ body {
             .side {position: absolute; top: 20px; width: 50%; text-align: center; 
                    transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0; }
   
-            .side.left { transform: translateX(-100%); }
-            .side.right { transform: translateX(100%); }
             .side.visible { transform: translateX(0); opacity: 1; }
             .hidden { display: none; }
+  
+            .side.left { transform: translateX(-100%); }
+            #left-side { left: 0; }
+  
+            .side.right { transform: translateX(100%); }
+            #right-side { left: 50%; }
 
             /* ---------------- ICONS ---------------- */
             .icon { transition: transform 0.3s ease, filter 0.3s ease;
