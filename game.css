@@ -439,6 +439,7 @@ body {
 
             #closed-container.side .tooltip {
                 font-size: 6px;
+                width: 30px;
             }
   
             /* ---------------- RESULTAAT COMBINATIE ---------------- */
