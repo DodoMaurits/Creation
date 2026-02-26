@@ -2134,6 +2134,7 @@ let selected = [];
 let currentTime = 13_800_000_000; // start bij oerknal
 const maxTime = 13_800_000_000;   // leeftijd universum
 const timelineFill = document.getElementById("timeline-fill");
+const timelineLabel = document.getElementById("timeline-label");
 
 // ----- DOM -----
 const closedContainer = document.getElementById("closed-container");
@@ -2146,6 +2147,32 @@ renderClosed();
 requestAnimationFrame(() => {
     updateClosedContainer(); // nu correct gecentreerd
 });
+
+// ----- TIMELINE LABEL -----
+function updateTimelineLabel() {
+  if (!timelineLabel) return;
+  // omzetting in miljard jaar met 1 decimaal
+  const miljard = (currentTime / 1_000_000_000).toFixed(1);
+  timelineLabel.textContent = `${miljard} miljard jaar geleden`;
+}
+
+function animateTimeline(newTime) {
+  const oldTime = currentTime;
+  const duration = 500; // halve seconde
+  const start = performance.now();
+
+  function step(timestamp) {
+    const progress = Math.min((timestamp - start) / duration, 1);
+    currentTime = oldTime + (newTime - oldTime) * progress;
+    updateTimelineLabel();
+    if (timelineFill) {
+      const percentage = ((maxTime - currentTime) / maxTime) * 100;
+      timelineFill.style.width = percentage + "%";
+    }
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
 
 // ----- RENDER CLOSED MAPS -----
 function renderClosed() {
@@ -2473,10 +2500,7 @@ function handleCombinationScreen(match, newElements) {
 
   // 🔹 Update tijdlijn als match een tijd heeft
   if (match.uitleg && match.uitleg.tijd !== undefined) {
-    // Hoeveel tijd is al voorbij in "jaar geleden" termen
-    currentTime = Math.min(currentTime, match.uitleg.tijd); // kleiner = dichter bij nu
-    const percentage = ((maxTime - currentTime) / maxTime) * 100;
-    if (timelineFill) timelineFill.style.width = percentage + "%";
+    animateTimeline(Math.min(currentTime, match.uitleg.tijd));
   }
 }
 
@@ -2587,4 +2611,3 @@ function renderNewElements(elements) {
     updateClosedContainer(); // ← dit zorgt dat ze weer gecentreerd staan
   };
 }
-
