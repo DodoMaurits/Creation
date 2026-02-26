@@ -2455,6 +2455,7 @@ function handleCombinationScreen(combination, newElements) {
 
 // ----- VISUEEL SCHERM VOOR UITLEG -----
 function showExplanationScreen(combination, newElements) {
+  // Verwijder bestaande overlay als die er is
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
@@ -2463,31 +2464,44 @@ function showExplanationScreen(combination, newElements) {
   overlay.style.display = "flex";
   overlay.style.justifyContent = "center";
   overlay.style.alignItems = "center";
-  overlay.style.cursor = "pointer";
+  overlay.style.cursor = "default"; // overlay zelf klikbaar niet nodig
 
+  // Box voor uitleg
   const box = document.createElement("div");
   box.className = "result-box fade-in explanation-box";
 
+  // Titel
   const title = document.createElement("div");
   title.className = "result-title";
   title.textContent = combination.uitleg.titel;
 
+  // Uitleg tekst
   const text = document.createElement("div");
   text.className = "result-quote";
   text.innerHTML = combination.uitleg.tekst;
 
-  box.appendChild(title);
-  box.appendChild(text);
-  overlay.appendChild(box);
-  document.body.appendChild(overlay);
+  // CREATE knop
+  const button = document.createElement("button");
+  button.className = "start-button";
+  button.textContent = "CREATE";
 
-  setTimeout(() => overlay.classList.add("visible"), 20);
-
-  // Klik → nieuwe elementen
-  overlay.onclick = () => {
+  // Klik event → naar nieuwe elementen
+  button.onclick = (e) => {
+    e.stopPropagation(); // voorkomt dat click op overlay wordt getriggerd
     overlay.remove();
     renderNewElements(newElements);
   };
+
+  // Voeg alles toe aan de box
+  box.appendChild(title);
+  box.appendChild(text);
+  box.appendChild(button);
+  overlay.appendChild(box);
+
+  document.body.appendChild(overlay);
+
+  // Fade-in trigger
+  setTimeout(() => overlay.classList.add("visible"), 20);
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
