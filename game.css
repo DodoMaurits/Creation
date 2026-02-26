@@ -412,10 +412,11 @@ body {
               row-gap: 1px;
             }
 
-            .grid-closed { justify-content: center; width: auto; margin: 0 auto;
+            .grid-closed { justify-content: center; margin: 0 auto;
               display: grid; 
               grid-template-columns: repeat(3, 60px);
               justify-items: center;
+              width: 65px;
               column-gap: 8px;
               row-gap: 1px;
             }
