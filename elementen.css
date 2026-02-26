@@ -27,8 +27,7 @@ html, body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 320px;
-  font-family: "Times New Roman", serif;
+  max-width: 280px;
   margin-top: 20px;
   opacity: 0.9;
 }
@@ -61,12 +60,14 @@ html, body {
 
 /* ---------------- TITEL EN QUOTE ---------------- */
 .result-title {
+  font-family: "Cinzel", serif;
   font-size: 40px;
   letter-spacing: 3px;
   margin: 5px 0 5px 0;
 }
 
 .result-quote {
+  font-family: "Times New Roman", serif;
   font-size: 18px;
   line-height: 1.4;
   text-align: center;
