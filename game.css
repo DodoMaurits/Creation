@@ -433,7 +433,9 @@ body {
             }
 
             /* standaard breedte: midden van scherm */
-            #closed-container.center { width: 100vw; }
+            #closed-container.center { width: 100vw; 
+              grid-template-columns: repeat(3, 1fr);
+            }
   
             /* linker- of rechterhelft */
             #closed-container.side {
