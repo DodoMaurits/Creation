@@ -49,7 +49,7 @@ const combinaties = [
     uitleg: {
       titel: "Eerste symmetriebreking", 
       tekst: "De eerste symmetriebreking...",
-      tijd: 13_800_000_000,
+      tijd: 13_800_000_000 - 13_800_000_000,
       type: "normal"
     }
   },
@@ -99,7 +99,7 @@ const combinaties = [
         uitleg: {
           titel: "Water op Aarde",
           tekst: "Oceaanvorming",
-          tijd: 4_400_000_000,
+          tijd: 13_800_000_000 - 4_400_000_000,
           type: "threshold", 
           requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", "Sterrenstelsel", "Radioacitiviteit"]
         }
@@ -2131,8 +2131,8 @@ let openRight = null;
 let selected = [];
 
 // 🔹 Tijdlijn
-let currentTime = 0;
-const maxTime = 13_800_000_000; // leeftijd universum
+let currentTime = 13_800_000_000; // start bij oerknal
+const maxTime = 13_800_000_000;   // leeftijd universum
 const timelineFill = document.getElementById("timeline-fill");
 
 // ----- DOM -----
@@ -2472,9 +2472,10 @@ function handleCombinationScreen(match, newElements) {
   addUnlockedElements(newElements);
 
   // 🔹 Update tijdlijn als match een tijd heeft
-  if (match.uitleg && match.uitleg.tijd) {
-    currentTime = Math.max(currentTime, match.uitleg.tijd);
-    const percentage = (currentTime / maxTime) * 100;
+  if (match.uitleg && match.uitleg.tijd !== undefined) {
+    // Hoeveel tijd is al voorbij in "jaar geleden" termen
+    currentTime = Math.min(currentTime, match.uitleg.tijd); // kleiner = dichter bij nu
+    const percentage = ((maxTime - currentTime) / maxTime) * 100;
     if (timelineFill) timelineFill.style.width = percentage + "%";
   }
 }
