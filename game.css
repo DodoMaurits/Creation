@@ -391,9 +391,11 @@ body {
                 pointer-events: none;    /* voorkomt hover issues */
             }
 
-            .icon-container.map-title .tooltip {
-              display: none;
-              opacity: 0;
+            .icon.map-title + .tooltip,
+            .icon.map-title ~ .tooltip {
+              display: none !important;
+              opacity: 0 !important;
+              pointer-events: none;
             }
   
             /* Alleen tooltips van elementen in open maps corrigeren */
