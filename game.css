@@ -361,6 +361,24 @@ body {
   }
 }
 
+/* ---------------- TIMELINE ---------------- */
+#timeline {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: rgba(100, 100, 100, 0.5);
+  z-index: 1000; /* boven andere elementen */
+}
+
+#timeline-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, darkred, red);
+  transition: width 1s ease;
+}
+
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
             body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto; }
