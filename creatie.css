@@ -19,7 +19,6 @@ html, body {
   color: white;
   text-align: center;
   font-family: "Times New Roman", serif;
-  font-size: 32px;
   opacity: 0.9;
   padding: 20px;
 }
@@ -92,23 +91,19 @@ html, body {
 
 /* ---------------- MOBILE FRIENDLY CREATION PAGE ---------------- */
 @media (max-width: 900px) {
-            .container {
-              font-size: 28px;
-            }
-            
             .god-icon {
-              width: 75%;
-              height: auto;
+              width: auto;
+              height: 50%;
             }
             
             .result-title {
-              font-size: 32px;
+              font-size: 40px;
               letter-spacing: 3px;
-              margin: 20px 0 5px 0;
+              margin: 5px 0 5px 0;
             }
             
             .caption {
               width: 90%;
-              font-size: 16px;
+              font-size: 24px;
             }
 }
