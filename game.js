@@ -2432,14 +2432,28 @@ function checkCombination() {
 
   // Verzamel nieuwe elementen
   const newElements = [];
+  
   matches.forEach(match => {
     match.output.forEach(newEl => {
+      // Zoek of de map al bestaat
       let map = mappen.find(m => m.naam === newEl.map);
+  
+      // Zo niet, maak een nieuwe map aan
       if (!map) {
-        map = { naam: newEl.map, icoon: groepsIconen[newEl.map], elementen: [] };
+        map = {
+          naam: newEl.map,
+          icoon: groepsIconen[newEl.map] || "icons/default.png", // fallback icoon
+          elementen: []
+        };
         mappen.push(map);
       }
-      if (!map.elementen.find(e => e.id === newEl.id)) map.elementen.push(newEl);
+  
+      // Voeg element toe als het nog niet in de map zit (controle via naam)
+      if (!map.elementen.find(e => e.naam === newEl.naam)) {
+        map.elementen.push(newEl);
+      }
+  
+      // Voeg toe aan lijst van nieuwe elementen om te renderen
       newElements.push(newEl);
     });
   });
