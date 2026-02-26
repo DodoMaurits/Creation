@@ -31,12 +31,12 @@ body {
   opacity: 0;
 }
 
-.side.left {
+#left-side {
   left: 0;
   transform: translateX(-100%);
 }
 
-.side.right {
+#right-side {
   left: 50%;
   transform: translateX(100%);
 }
