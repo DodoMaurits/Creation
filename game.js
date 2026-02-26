@@ -95,14 +95,7 @@ const combinaties = [
             map: "Water",
             quote: "Just as when water is frozen in to a form as ice and then melts so at the time of death, there is no death. The spirit simply changes form <br><br>- Frederick Lenz"
           }
-        ],
-        uitleg: {
-          titel: "Water op Aarde",
-          tekst: "Oceaanvorming",
-          tijd: 13_800_000_000 - 4_400_000_000,
-          type: "threshold", 
-          requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", "Sterrenstelsel", "Radioacitiviteit"]
-        }
+        ]
       },
       {
         input: ["Gas", "Zwaartekracht"],
@@ -124,7 +117,14 @@ const combinaties = [
             map: "Water",
             quote: "Water is the softest thing, yet it can penetrate mountains and earth. This shows clearly the principle of softness overcoming hardness <br><br>- Lao Tzu"
           }
-        ]
+        ],
+        uitleg: {
+          titel: "Water op Aarde",
+          tekst: "Oceaanvorming",
+          tijd: 13_800_000_000 - 4_400_000_000,
+          type: "threshold", 
+          requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", "Sterrenstelsel", "Radioacitiviteit"]
+        }
       },
       {
         input: ["Ster", "Zwaartekracht"],
@@ -2462,7 +2462,7 @@ function shakeErrorElements(elements) {
   });
 }
 
-// ----- CHECK TRESHOLD -----
+// ----- CHECK THRESHOLD -----
 let unlockedElements = new Set();
 
 function addUnlockedElements(elements) {
