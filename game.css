@@ -380,7 +380,7 @@ body {
             .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
                       background: rgba(0,0,0,0.85); color: white; border-radius: 6px; z-index: 10;
                 display: block;          /* altijd zichtbaar */
-                margin-bottom: 6px;
+                margin-bottom: 16px;
                 width: 45px;
                 padding: 4px 0px;
                 text-align: center;      /* gecentreerde tekst */
