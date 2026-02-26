@@ -243,6 +243,31 @@ body {
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
+/* ---------------- CREATE BUTTON VOOR UITLEG-OVERLAY ---------------- */
+.create-button {
+  font-family: "Cinzel", serif;
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5); /* 50% transparant */
+  transition: all 0.3s ease;
+  animation: floatButton 2s ease-in-out infinite alternate;
+}
+
+.create-button:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.8); /* iets minder transparant bij hover */
+}
+
+/* Zachte heen-en-weer beweging van de knop */
+@keyframes floatButton {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); } /* 10px naar rechts */
+  100% { transform: translateX(0); }
+}
+
 .result-grid {
   display: grid;
   gap: 40px;
