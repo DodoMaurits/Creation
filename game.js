@@ -2480,7 +2480,7 @@ function shakeErrorElements(elements) {
 let unlockedElements = new Set();
 
 function addUnlockedElements(elements) {
-  elements.forEach(el => unlockedElements.add(el.id));
+  elements.forEach(el => unlockedElements.add(el.naam));
 }
 
 // ----- CHECK WEL OF GEEN UITLEG -----
