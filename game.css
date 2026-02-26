@@ -374,11 +374,11 @@ body {
             .icon-container { display: inline-block; position: relative; text-align: center; }
             
             .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-                      background: rgba(0,0,0,0.85); color: white; padding: 4px 8px; 
-                      border-radius: 6px; z-index: 10;
+                      background: rgba(0,0,0,0.85); color: white; border-radius: 6px; z-index: 10;
                 display: block;          /* altijd zichtbaar */
                 margin-bottom: 6px;
                 width: 45px;
+                padding: 4px 0px;
                 text-align: center;      /* gecentreerde tekst */
                 font-size: 8px;
                         
