@@ -417,10 +417,6 @@ body {
               gap: 8px;
               max-width: 100%;
             }
-
-            .grid-closed .icon.map {
-              flex: 0 0 60px;
-            }
   
             /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 
@@ -430,7 +426,7 @@ body {
                                 justify-items: center;
               display: grid;
               left: 50%;
-              width: 100vw;             /* nooit buiten scherm */
+              width: calc(3 * 60px + 2 * 8px); /* 3 icons + 2 gaps van 8 px */
               max-width: 100vw;
               padding: 0 2vw;          /* minimale padding */
               column-gap: 8px;
@@ -438,18 +434,22 @@ body {
             }
 
             /* standaard breedte: midden van scherm */
-            #closed-container.center { width: 100vw; }
+            #closed-container.center { 
+              width: 210px; 
+            }
+
+            #closed-container.center .icon.map {
+              width: 60px;
+              height: 60px;
+            }
   
             /* linker- of rechterhelft */
-            #closed-container.side {
-              width: 50vw;             /* halve schermbreedte */
-            }
+            #closed-container.side { width: 50vw; }
 
             /* Sluit maps iconen automatisch verkleinen indien nodig */
             #closed-container.side .icon.map {
               width: 40px;
               height: 40px;
-              flex: 0 0 40px;
             }
 
             #closed-container.side .tooltip {
