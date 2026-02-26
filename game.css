@@ -435,6 +435,8 @@ body {
             /* standaard breedte: midden van scherm */
             #closed-container.center { width: 100vw; 
               grid-template-columns: repeat(3, 1fr);
+              justify-content: center;
+              row-gap: 20px;
             }
   
             /* linker- of rechterhelft */
