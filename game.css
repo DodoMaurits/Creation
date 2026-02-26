@@ -395,7 +395,9 @@ body {
             }
   
             /* Alleen tooltips van elementen in open maps corrigeren */
-            .grid-elements .icon-container { display: inline-block; position: relative; }
+            .grid-elements .icon-container { display: inline-block; position: relative; 
+              margin-bottom: 20px;
+            }
 
             .grid-elements. icon-container .tooltip { left: 50%; transform: translateX(-50%); } 
   
