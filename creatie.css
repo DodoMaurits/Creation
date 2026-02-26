@@ -27,7 +27,7 @@ html, body {
 /* ---------------- GOD ICON ---------------- */
 .god-icon {
   width: auto;
-  height: 75%;
+  height: 50%;
   margin-top: 20px;
   z-index: 1;
   animation: floatUpDown 3s ease-in-out infinite;
