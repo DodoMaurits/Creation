@@ -334,6 +334,10 @@ body {
               cursor: none;
               margin-bottom: 1px;
             }
+
+            .map-title .tooltip {
+              display: none;
+            }
   
             .side {position: absolute; top: 20px; width: 50vw; text-align: center; 
                    transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0; }
@@ -400,7 +404,7 @@ body {
             .grid-elements { display: grid; justify-content: center;
               grid-template-columns: repeat(3, 1fr);
               column-gap: 8px;
-              row-gap: 8px;
+              row-gap: 4px;
             }
 
             .grid-closed { display: flex; flex-wrap: wrap; justify-content: center; 
