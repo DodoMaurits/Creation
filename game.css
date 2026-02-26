@@ -379,10 +379,8 @@ body {
                       background: rgba(0,0,0,0.85); color: white; padding: 4px 8px; 
                       border-radius: 6px; z-index: 10;
                 display: block;          /* altijd zichtbaar */
-                margin-top: 2px;         /* ruimte tussen icoon en titel */
-                margin-bottom: 20px;
-                width: auto;
-                max-width: 100%;
+                margin-bottom: 6px;
+                width: 50px;
                 text-align: center;      /* gecentreerde tekst */
                 font-size: 8px;
                         
