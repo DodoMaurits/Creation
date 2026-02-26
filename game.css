@@ -444,7 +444,9 @@ body {
             }
   
             /* linker- of rechterhelft */
-            #closed-container.side { width: 50vw; }
+            #closed-container.side { 
+              width: 150px; 
+            }
 
             /* Sluit maps iconen automatisch verkleinen indien nodig */
             #closed-container.side .icon.map {
