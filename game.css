@@ -17,6 +17,11 @@ body {
 }
 
 /* ---------------- SIDES (OPEN MAPS) ---------------- */
+.map-title {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
 .side {
   position: absolute;
   top: 20px;
@@ -53,13 +58,7 @@ body {
   display: none;
 }
 
-/* ---------------- OPEN MAP ---------------- */
-.map-title {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-/* ---------------- ICONS ---------------- */
+/* ---------------- ICONS & HOVERS ---------------- */
 .icon {
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;  
@@ -345,6 +344,11 @@ body {
             #app { width: 100vw; height: 100vh; position: relative; }
   
             /* ---------------- SIDES (OPEN MAPS) ---------------- */
+            .map-title {
+              cursor: none;
+              margin-bottom: 8px;
+            }
+  
             .side {position: absolute; top: 20px; width: 50%; text-align: center; 
                    transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0; }
   
@@ -354,12 +358,6 @@ body {
             #left-side { left: 0; transform: translateX(0); }
             #right-side { left: 50%; transform: translateX(0); }
             .hidden { display: none; }
-
-            /* ---------------- OPEN MAP ---------------- */
-            .map-title {
-              cursor: none;
-              margin-bottom: 8px;
-            }
 
             /* ---------------- ICONS ---------------- */
             .icon { transition: transform 0.3s ease, filter 0.3s ease;
