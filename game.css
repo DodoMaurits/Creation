@@ -121,8 +121,6 @@ body {
 .grid-elements .icon-container {
   display: inline-block;
   position: relative;
-  width: 130px; /* zelfde als .icon.element breedte */
-  height: 130px; /* zelfde als .icon.element hoogte */
 }
 
 .grid-elements .icon-container .tooltip {
@@ -337,7 +335,7 @@ body {
               margin-bottom: 8px;
             }
   
-            .side {position: absolute; top: 20px; width: 50%; text-align: center; 
+            .side {position: absolute; top: 20px; width: 50vw; text-align: center; 
                    transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0; }
   
             .side.visible { transform: translateX(0); opacity: 1; }
@@ -375,19 +373,17 @@ body {
             }
 
             /* ================= TOOLTIP (PERMANENT) ================= */
-            .icon-container {
-                display: flex;
+            .icon-container { display: inline-block; position: relative; text-align: center; 
                 flex-direction: column;   /* icoon boven, titel eronder */
                 align-items: center;      /* horizontaal centreren */
                 justify-content: flex-start;
-                margin: 0;
             }
             
             .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
                       background: rgba(0,0,0,0.85); color: white; padding: 4px 8px; 
                       border-radius: 6px; z-index: 10;
                 display: block;          /* altijd zichtbaar */
-                margin-top: 4px;         /* ruimte tussen icoon en titel */
+                margin-top: 2px;         /* ruimte tussen icoon en titel */
                 margin-bottom: 20px;
                 width: auto;
                 max-width: 100%;
@@ -405,10 +401,12 @@ body {
   
             /* Alleen tooltips van elementen in open maps corrigeren */
             .grid-elements .icon-container { display: inline-block; position: relative; }
+
+            .grid-elements. icon-container .tooltip { left: 50%; transform: translateX(-50%); } 
   
             /* ---------------- GRID LAYOUTS ---------------- */
             .grid-elements { display: grid; justify-content: center;
-              grid-template-columns: repeat(3, 70px); /* mobiel: kleinere elementen grid */
+              grid-template-columns: repeat(3, 1fr);
               column-gap: 8px;
               row-gap: 8px;
             }
