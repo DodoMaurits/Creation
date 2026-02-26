@@ -430,7 +430,7 @@ body {
                       border-radius: 6px; z-index: 10;
                 display: block;          /* altijd zichtbaar */
                 margin-top: 4px;         /* ruimte tussen icoon en titel */
-                margin-bottom: 8px;
+                margin-bottom: 20px;
                 width: auto;
                 max-width: 100%;
                 text-align: center;      /* gecentreerde tekst */
@@ -460,7 +460,7 @@ body {
             .grid-elements { display: grid; justify-content: center;
               grid-template-columns: repeat(3, 70px); /* mobiel: kleinere elementen grid */
               column-gap: 8px;
-              row-gap: 40px;
+              row-gap: 8px;
               width: auto;
               margin: 0 auto;
               margin-top: 40px;
