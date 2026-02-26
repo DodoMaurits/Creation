@@ -1174,7 +1174,8 @@ const combinaties = [
               {
                 input: [
                   ["Leven", "Kalk"],
-                  ["Evolutie", "Kalk"]
+                  ["Evolutie", "Kalk"],
+                  ["Bilateria-voorouder", "Kalk"]
                 ],
                 output: [
                   {
