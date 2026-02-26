@@ -412,13 +412,14 @@ body {
               row-gap: 1px;
             }
 
-            .grid-closed { justify-content: center; margin: 0 auto;
-              display: grid; 
-              grid-template-columns: repeat(3, 60px);
-              justify-items: center;
-              width: 60px;
-              column-gap: 4px;
-              row-gap: 20px;
+            .grid-closed { display: flex; flex-wrap: wrap; justify-content: center; 
+                           width: auto; margin: 0 auto;
+              gap: 8px;
+              max-width: 100%;
+            }
+
+            .grid-closed .icon.map {
+              flex: 0 0 60px;
             }
   
             /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
@@ -448,6 +449,7 @@ body {
             #closed-container.side .icon.map {
               width: 40px;
               height: 40px;
+              flex: 0 0 40px;
             }
 
             #closed-container.side .tooltip {
