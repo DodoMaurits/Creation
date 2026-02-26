@@ -379,6 +379,18 @@ body {
   transition: width 1s ease;
 }
 
+#timeline-label {
+  position: fixed;
+  bottom: 25px; /* iets boven de timeline */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+  font-size: 14px;
+  pointer-events: none; /* klikbaar niet nodig */
+}
+
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
             body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto; }
