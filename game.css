@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #app {
@@ -52,13 +53,13 @@ body {
   display: none;
 }
 
-/* ---------------- MAP TITLES & ICONS ---------------- */
+/* ---------------- OPEN MAP ---------------- */
 .map-title {
   cursor: pointer;
   margin-bottom: 20px;
 }
 
-/* Alle iconen */
+/* ---------------- ICONS ---------------- */
 .icon {
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;  
@@ -68,17 +69,15 @@ body {
   transform: scale(1.1);
 }
 
-/* Specifiek voor elementen */
 .icon.element {
   width: 130px;
   height: 130px;
 }
 
 .icon.element:hover {
-  transform: scale(1.15); /* iets meer vergroting dan standaard */
+  transform: scale(1.15);
 }
 
-/* Specifiek voor closed map */
 .icon.map {
   width: 145px;
   height: 145px;
@@ -89,7 +88,6 @@ body {
   transform: scale(1.12);
 }
 
-/* Specifiek voor open map */
 .icon.map-title {
   width: 145px; 
   height: 145px;
@@ -100,10 +98,10 @@ body {
 }
 
 .icon.map-title:hover {
-  transform: scale(1.12); /* subtiel groter */
+  transform: scale(1.12);
 }
 
-/* Tooltip */
+/* ================= TOOLTIP ================= */
 .icon.map::after,
 .icon.element::after,
 .icon.map-title::after {
@@ -229,22 +227,18 @@ body {
   gap: 20px;
 }
 
-/* standaard breedte: midden van scherm */
 #closed-container.center {
   width: 680px; /* 4 icons + gaps */
 }
 
-/* linker- of rechterhelft */
 #closed-container.side {
   width: 50vw;
 }
 
-/* Links/ midden van linkerhelft */
 #closed-container.left {
   transform: translate(-150%, -50%);
 }
 
-/* Midden van rechterhelft */
 #closed-container.right {
   left: 75%; /* midden van de rechterhelft (50% + 50%/2) */
   transform: translate(-50%, -50%); /* center horizontaal en verticaal op deze positie */
@@ -368,34 +362,28 @@ body {
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
-            body {
-              overflow-x: hidden; 
-              overflow-y: auto; 
-              max-width: 100%;
-            }
+            body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto; }
   
-            #app {
-              height: auto; 
-              min-height: 100vh;
-            }
+            #app { width: 100vw; height: 100vh; position: relative; }
   
             /* ---------------- SIDES (OPEN MAPS) ---------------- */
-            .side {position: absolute; top: 20px; text-align: center; 
-                   transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0;
-              width: 50vw;       /* halve schermbreedte */
-              max-width: 50vw;   /* nooit breder */
-              box-sizing: border-box;
-            }
+            .side {position: absolute; top: 20px; width: 50%; text-align: center; 
+                   transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0; }
   
-            .side.left { left: 0; }
-            .side.right { left: 50%; }
+            .side.left { transform: translateX(-100%); }
+            .side.right { transform: translateX(100%); }
             .side.visible { transform: translateX(0); opacity: 1; }
+            #left-side { left: 0; transform: translateX(0); }
+            #right-side { left: 50%; transform: translateX(0); }
+            .hidden { display: none; }
 
-            /* ---------------- MAP TITLES & ICONS ---------------- */
+            /* ---------------- OPEN MAP ---------------- */
             .map-title {
+              cursor: none;
               margin-bottom: 8px;
             }
 
+            /* ---------------- ICONS ---------------- */
             .icon { transition: transform 0.3s ease, filter 0.3s ease;
               cursor: none;
             }
