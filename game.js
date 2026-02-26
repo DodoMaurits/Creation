@@ -2482,7 +2482,7 @@ function showExplanationScreen(combination, newElements) {
 
   // CREATE knop
   const button = document.createElement("button");
-  button.className = "start-button";
+  button.className = "create-button";
   button.textContent = "CREATE";
 
   // Klik event → naar nieuwe elementen
