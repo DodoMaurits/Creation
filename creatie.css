@@ -26,7 +26,7 @@ html, body {
 /* ---------------- GOD ICON ---------------- */
 .god-icon {
   width: auto;
-  height: 50%;
+  height: 40%;
   margin-top: 20px;
   z-index: 1;
   animation: floatUpDown 3s ease-in-out infinite;
@@ -47,7 +47,7 @@ html, body {
   font-family: "Cinzel", serif;
   font-size: 40px;
   letter-spacing: 3px;
-  margin: 20px 0 5px 0;
+  margin: 5px 0 5px 0;
 }
 
 /* ---------------- QUOTES ---------------- */
