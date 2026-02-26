@@ -102,28 +102,6 @@ body {
 }
 
 /* ================= TOOLTIP ================= */
-.icon.map::after,
-.icon.element::after,
-.icon.map-title::after {
-  position: static; /* of laat position weg */
-  display: block;
-  margin-top: 6px;
-  background: rgba(0,0,0,0.85);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 8px;
-  font-size: 13px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-}
-
-.icon.map:hover::after,
-.icon.element:hover::after,
-.icon.map-title:hover::after {
-  opacity: 1;
-}
-
 .icon-container {
   display: inline-block;
   position: relative;
