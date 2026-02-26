@@ -24,7 +24,7 @@ html, body {
 /* ---------------- GOD ICON ---------------- */
 .god-icon {
   width: auto;
-  height: 30%;
+  height: 45dvh;
   margin-top: 20px;
   z-index: 1;
   animation: floatUpDown 3s ease-in-out infinite;
@@ -91,18 +91,17 @@ html, body {
 @media (max-width: 900px) {
             .god-icon {
               width: auto;
-              height: 50%;
+              height: 45dvh;
             }
             
             .result-title {
-              font-size: 40px;
+              font-size: 32px;
               letter-spacing: 3px;
               margin: 5px 0 5px 0;
             }
             
             .caption {
               width: 90%;
-              font-size: 30px;
-              color: red;
+              font-size: 16px;
             }
 }
