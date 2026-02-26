@@ -32,10 +32,12 @@ body {
 }
 
 .side.left {
+  left: 0;
   transform: translateX(-100%);
 }
 
 .side.right {
+  left: 50%;
   transform: translateX(100%);
 }
 
