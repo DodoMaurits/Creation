@@ -373,11 +373,7 @@ body {
             }
 
             /* ================= TOOLTIP (PERMANENT) ================= */
-            .icon-container { display: inline-block; position: relative; text-align: center; 
-                flex-direction: column;   /* icoon boven, titel eronder */
-                align-items: center;      /* horizontaal centreren */
-                justify-content: flex-start;
-            }
+            .icon-container { display: inline-block; position: relative; text-align: center; }
             
             .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
                       background: rgba(0,0,0,0.85); color: white; padding: 4px 8px; 
