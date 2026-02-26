@@ -95,7 +95,14 @@ const combinaties = [
             map: "Water",
             quote: "Just as when water is frozen in to a form as ice and then melts so at the time of death, there is no death. The spirit simply changes form <br><br>- Frederick Lenz"
           }
-        ]
+        ],
+        uitleg: {
+          titel: "Water op Aarde",
+          tekst: "Oceaanvorming",
+          tijd: 4_400_000_000,
+          type: "threshold", 
+          requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", "Sterrenstelsel", "Radioacitiviteit"]
+        }
       },
       {
         input: ["Gas", "Zwaartekracht"],
@@ -2370,61 +2377,40 @@ function toggleSelect(el, img, side, mapNaam) {
 function checkCombination() {
   const names = selected.map(e => e.naam);
 
-  // Functie om twee arrays exact te vergelijken, inclusief duplicaten
   function arraysEqual(a, b) {
     if (a.length !== b.length) return false;
     const aSorted = [...a].sort();
     const bSorted = [...b].sort();
     return aSorted.every((val, index) => val === bSorted[index]);
   }
-  
-  // Pak alle combinaties die exact matchen
+
   const matches = combinaties.filter(c => {
-    // Als input gewoon ["A","B"] is
-    if (typeof c.input[0] === "string") {
-      return arraysEqual(c.input, names);
-    }
-  
-    // Als input [ ["A","B"], ["C","D"] ] is
+    if (typeof c.input[0] === "string") return arraysEqual(c.input, names);
     return c.input.some(set => arraysEqual(set, names));
   });
 
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
-
     selected.forEach(e => e.dom.classList.remove("selected"));
     selected = [];
     return;
   }
 
-  // Verzamel **altijd** alle output-elementen voor de overlay
+  // Verzamel nieuwe elementen
   const newElements = [];
-  
   matches.forEach(match => {
     match.output.forEach(newEl => {
       let map = mappen.find(m => m.naam === newEl.map);
-  
-      // Voeg map toe als die nog niet bestaat
       if (!map) {
-        map = {
-          naam: newEl.map,
-          icoon: groepsIconen[newEl.map],
-          elementen: []
-        };
+        map = { naam: newEl.map, icoon: groepsIconen[newEl.map], elementen: [] };
         mappen.push(map);
       }
-  
-      // Voeg element toe aan map als die nog niet bestaat
-      if (!map.elementen.find(e => e.naam === newEl.naam)) {
-        map.elementen.push(newEl);
-      }
-  
-      // Voeg **altijd** toe voor overlay
+      if (!map.elementen.find(e => e.id === newEl.id)) map.elementen.push(newEl);
       newElements.push(newEl);
     });
   });
 
-  // Toon uitleg/new elements
+  // Threshold & uitleg afhandelen
   handleCombinationScreen(matches[0], newElements);
 
   // Reset selectie
@@ -2442,15 +2428,43 @@ function shakeErrorElements(elements) {
   });
 }
 
+// ----- CHECK TRESHOLD -----
+let unlockedElements = new Set();
+
+function addUnlockedElements(elements) {
+  elements.forEach(el => unlockedElements.add(el.id));
+}
+
 // ----- CHECK WEL OF GEEN UITLEG -----
-function handleCombinationScreen(combination, newElements) {
-  if (combination.uitleg) {
-    // 👇 Visueel aparte uitleg-overlay
-    showExplanationScreen(combination, newElements);
+function handleCombinationScreen(match, newElements) {
+  if (match.uitleg) {
+    // 🔹 Threshold check
+    if (match.uitleg.type === "threshold") {
+      const requirements = match.uitleg.requirements || [];
+      const allMet = requirements.every(r => unlockedElements.has(r));
+
+      if (!allMet) {
+        // Case A – requirements NIET gehaald
+        showExplanationScreen({
+          uitleg: {
+            titel: match.uitleg.titel,
+            tekst: `Je hebt nog niet alles om ${match.uitleg.titel} te maken. Probeer eerst: ${requirements.join(", ")}.`,
+            type: "threshold"
+          }
+        }, []); // geen nieuwe elementen
+        return;
+      }
+    }
+
+    // Case B – requirements WEL gehaald
+    showExplanationScreen(match, newElements);
   } else {
-    // 👇 Direct tonen van nieuwe elementen
+    // Normale combinaties zonder uitleg
     renderNewElements(newElements);
   }
+
+  // Voeg nieuwe elementen toe aan unlockedElements
+  addUnlockedElements(newElements);
 }
 
 // ----- VISUEEL SCHERM VOOR UITLEG -----
