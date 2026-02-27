@@ -48,91 +48,8 @@ body {
 
 /* ---------------- ICONS & HOVERS ---------------- */
 .icon {
-  position: relative;
-  display: inline-block;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;  
-}
-
-.icon img {
-  display: block;
-  position: relative;
-  z-index: 2;
-  filter: drop-shadow(0 0 6px white)
-          drop-shadow(0 0 12px rgba(255,255,255,0.8))
-          drop-shadow(0 0 24px rgba(255,255,255,0.6));
-}
-
-/* Zon-achterkant effect */
-.icon::before {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  background: radial-gradient(circle,
-      rgba(255,255,255,0.9) 0%,
-      rgba(255,255,255,0.6) 40%,
-      rgba(255,255,255,0.2) 60%,
-      transparent 75%);
-  filter: blur(8px);
-  z-index: 1;
-  animation: pulseGlow 3s ease-in-out infinite;
-}
-
-@keyframes pulseGlow {
-  0%   { transform: scale(1); opacity: 0.8; }
-  50%  { transform: scale(1.08); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.8; }
-}
-
-.icon.active {
-  animation: chemicalBurn 2s ease-in-out infinite alternate;
-}
-
-@keyframes chemicalBurn {
-  from {
-    filter: brightness(1);
-  }
-  to {
-    filter: brightness(1.2);
-  }
-}
-
-.particle {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 0 6px white;
-  animation: floatUp 4s linear infinite;
-  opacity: 0;
-}
-
-.particle:nth-child(2) {
-  left: 30%;
-  animation-delay: 1s;
-}
-
-.particle:nth-child(3) {
-  left: 60%;
-  animation-delay: 2s;
-}
-
-@keyframes floatUp {
-  0% {
-    bottom: 20%;
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    bottom: 120%;
-    opacity: 0;
-    transform: scale(1.2);
-  }
 }
 
 .icon:hover {
@@ -747,4 +664,3 @@ body {
               line-height: 1.2;
             }
 }
-
