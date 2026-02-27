@@ -59,17 +59,14 @@
     const overlay = document.getElementById('explanation-overlay');
     const closeBtn = document.getElementById('close-btn');
   
+    // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
       overlay.style.display = 'flex';
     });
   
+    // Klik op "Sluit" stuurt naar elementen.html
     closeBtn.addEventListener('click', () => {
-      overlay.style.display = 'none';
-    });
-  
-    // Optioneel: klik buiten de box sluit overlay
-    overlay.addEventListener('click', (e) => {
-      if(e.target === overlay) overlay.style.display = 'none';
+      window.location.href = "elementen.html";
     });
   </script>
 
