@@ -230,9 +230,13 @@ body {
   opacity: 1;
 }
 
+/* ---------------- UITLEG ---------------- */
+/* ---------------- UITLEG ---------------- */
 .explanation-box {
-  max-width: 700px;
-  background: rgba(0,0,0,0.9); /* donkere, semi-transparante achtergrond */
+  position: relative; /* nodig voor pseudo-element */
+  height: 60dvh;
+  width: 60dvw;
+  background: rgba(0,0,0,0.7); /* donkere, semi-transparante achtergrond */
   padding: 40px;
   border-radius: 12px;
   color: white;
@@ -241,6 +245,19 @@ body {
   font-size: 20px;
   line-height: 1.5;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  overflow: hidden; /* pseudo-element niet buiten laten steken */
+}
+
+.explanation-box::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid white; /* dikte van de lijn */
+  border-radius: 10px;     /* iets kleiner dan main box */
+  pointer-events: none;    /* klikbaar niet beïnvloeden */
 }
 
 /* ---------------- CREATE BUTTON VOOR UITLEG-OVERLAY ---------------- */
@@ -254,6 +271,7 @@ body {
   background: rgba(255, 255, 255, 0.5); /* 50% transparant */
   transition: all 0.3s ease;
   animation: floatButton 2s ease-in-out infinite alternate;
+  margin-top: 20px;
 }
 
 .create-button:hover {
@@ -261,7 +279,6 @@ body {
   background: rgba(255, 255, 255, 0.8); /* iets minder transparant bij hover */
 }
 
-/* Zachte heen-en-weer beweging van de knop */
 @keyframes floatButton {
   0% { transform: translateX(0); }
   50% { transform: translateX(10px); } /* 10px naar rechts */
