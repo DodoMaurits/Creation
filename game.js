@@ -1763,11 +1763,15 @@ function renderNewElements(elements) {
   }
 
   elements.forEach(el => {
-    const box = document.createElement("div");
-    box.className = "result-box fade-in"; // CSS class voor fade-in effect
-
-    const img = document.createElement("img");
-    img.src = el.icoon;
+    box.classList.add("magic-icon");
+    
+    box.appendChild(img);
+    
+    for (let i = 0; i < 3; i++) {
+      const particle = document.createElement("span");
+      particle.className = "particle";
+      box.appendChild(particle);
+    }
     img.className = "result-image";
 
     const title = document.createElement("div");
@@ -1873,11 +1877,20 @@ function renderClosed() {
 
   mappen.forEach(map => {
     const container = document.createElement("div");
-    container.className = "icon-container";
-
+    container.className = "icon-container magic-icon";
+    
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
+    
+    container.appendChild(img);
+    
+    // ✨ particles toevoegen
+    for (let i = 0; i < 3; i++) {
+      const particle = document.createElement("span");
+      particle.className = "particle";
+      container.appendChild(particle);
+    }
     img.onclick = () => openMap(map, img);
 
     const tooltip = document.createElement("div");
@@ -1986,12 +1999,15 @@ function renderSide(parentContainer, map, side) {
   parentContainer.classList.remove("hidden", "visible");
 
   // --- Title van de open map ---
-  const titleContainer = document.createElement("div");
-  titleContainer.className = "icon-container";
-
-  const titleImg = document.createElement("img");
-  titleImg.src = map.icoon;
-  titleImg.className = "icon map-title";
+  elContainer.className = "icon-container magic-icon";
+  elContainer.appendChild(img);
+  
+  // ✨ particles
+  for (let i = 0; i < 3; i++) {
+    const particle = document.createElement("span");
+    particle.className = "particle";
+    elContainer.appendChild(particle);
+  }
   titleImg.onclick = () => closeMap(side);
 
   const titleTooltip = document.createElement("div");
