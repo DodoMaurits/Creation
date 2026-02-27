@@ -364,7 +364,7 @@ body {
 /* ---------------- TIMELINE ---------------- */
 #timeline {
   position: fixed;
-  bottom: 50px;
+  bottom: 25px;
   left: 7%;
   width: 86%;
   height: 14px;
@@ -438,7 +438,7 @@ body {
   bottom: 85px; /* iets boven de timeline */
   left: 0;
   transform: translateX(-50%);
-  padding: 6px 12px;
+  padding: 4px 4px;
   background: rgba(0,0,0,0.75);
   border-radius: 10px;
   color: white;
