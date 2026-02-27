@@ -49,7 +49,7 @@ const combinaties = [
     uitleg: {
       titel: "Eerste symmetriebreking", 
       tekst: "De eerste symmetriebreking...",
-      tijd: 13_800_000_000 - 13_800_000_000,
+      tijd: 13_800_000_000,
       type: "normal"
     }
   },
