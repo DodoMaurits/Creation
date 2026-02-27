@@ -2441,7 +2441,7 @@ function toggleSelect(el, img, side, mapNaam) {
 // ----- CHECK COMBINATIONS -----
 function checkCombination() {
   const names = selected.map(e => e.naam);
-  
+
   const matches = combinaties.filter(c => {
     if (typeof c.input[0] === "string") return arraysEqual(c.input, names);
     return c.input.some(set => arraysEqual(set, names));
@@ -2462,7 +2462,7 @@ function checkCombination() {
     const allMet = requirements.every(r => unlockedElements.has(r));
 
     if (!allMet) {
-      // toon enkel uitleg, geen elementen
+      // toon enkel uitleg, geen nieuwe elementen
       showExplanationScreen({
         uitleg: {
           titel: match.uitleg.titel,
@@ -2492,7 +2492,7 @@ function checkCombination() {
     newElements.push(newEl);
   });
 
-  // 🔹 Nu renderen via handleCombinationScreen
+  // 🔹 Nu renderen
   handleCombinationScreen(match, newElements);
 
   selected.forEach(e => e.dom.classList.remove("selected"));
