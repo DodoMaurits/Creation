@@ -2537,7 +2537,6 @@ function handleCombinationScreen(match, newElements) {
 }
 
 // ----- VISUEEL SCHERM VOOR UITLEG -----
-// ----- VISUEEL SCHERM VOOR UITLEG -----
 function showExplanationScreen(combination, newElements) {
   // Verwijder bestaande overlay als die er is
   const oldOverlay = document.getElementById("result-overlay");
@@ -2549,8 +2548,8 @@ function showExplanationScreen(combination, newElements) {
 
   // Box voor uitleg
   const box = document.createElement("div");
-  box.className = "result-box fade-in explanation-box";
-
+  box.className = "explanation-box fade-in";
+  
   // Titel
   const title = document.createElement("div");
   title.className = "explanation-title";
