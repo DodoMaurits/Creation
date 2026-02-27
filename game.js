@@ -2441,14 +2441,7 @@ function toggleSelect(el, img, side, mapNaam) {
 // ----- CHECK COMBINATIONS -----
 function checkCombination() {
   const names = selected.map(e => e.naam);
-
-  function arraysEqual(a, b) {
-    if (a.length !== b.length) return false;
-    const aSorted = [...a].sort();
-    const bSorted = [...b].sort();
-    return aSorted.every((val, index) => val === bSorted[index]);
-  }
-
+  
   const matches = combinaties.filter(c => {
     if (typeof c.input[0] === "string") return arraysEqual(c.input, names);
     return c.input.some(set => arraysEqual(set, names));
@@ -2461,38 +2454,45 @@ function checkCombination() {
     return;
   }
 
-  // Verzamel nieuwe elementen
+  const match = matches[0];
+
+  // 🔹 Threshold check eerst
+  if (match.uitleg && match.uitleg.type === "threshold") {
+    const requirements = match.uitleg.requirements || [];
+    const allMet = requirements.every(r => unlockedElements.has(r));
+
+    if (!allMet) {
+      showExplanationScreen({
+        uitleg: {
+          titel: match.uitleg.titel,
+          tekst: match.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!",
+          type: "threshold"
+        }
+      }, []); // geen nieuwe elementen
+      selected.forEach(e => e.dom.classList.remove("selected"));
+      selected = [];
+      return; // stop hier, geen nieuwe elementen aanmaken
+    }
+  }
+
+  // 🔹 Nieuwe elementen pas toevoegen **NA** threshold check
   const newElements = [];
-  
-  matches.forEach(match => {
-    match.output.forEach(newEl => {
-      // Zoek of de map al bestaat
-      let map = mappen.find(m => m.naam === newEl.map);
-  
-      // Zo niet, maak een nieuwe map aan
-      if (!map) {
-        map = {
-          naam: newEl.map,
-          icoon: groepsIconen[newEl.map] || "icons/default.png", // fallback icoon
-          elementen: []
-        };
-        mappen.push(map);
-      }
-  
-      // Voeg element toe als het nog niet in de map zit (controle via naam)
-      if (!map.elementen.find(e => e.naam === newEl.naam)) {
-        map.elementen.push(newEl);
-      }
-  
-      // Voeg toe aan lijst van nieuwe elementen om te renderen
-      newElements.push(newEl);
-    });
+  match.output.forEach(newEl => {
+    let map = mappen.find(m => m.naam === newEl.map);
+    if (!map) {
+      map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
+      mappen.push(map);
+    }
+
+    if (!map.elementen.find(e => e.naam === newEl.naam)) {
+      map.elementen.push(newEl);
+    }
+
+    newElements.push(newEl);
   });
 
-  // Threshold & uitleg afhandelen
-  handleCombinationScreen(matches[0], newElements);
+  handleCombinationScreen(match, newElements);
 
-  // Reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
@@ -2517,25 +2517,6 @@ function addUnlockedElements(elements) {
 // ----- CHECK WEL OF GEEN UITLEG -----
 function handleCombinationScreen(match, newElements) {
   if (match.uitleg) {
-    // 🔹 Threshold check
-    if (match.uitleg.type === "threshold") {
-      const requirements = match.uitleg.requirements || [];
-      const allMet = requirements.every(r => unlockedElements.has(r));
-
-      if (!allMet) {
-        // Case A – requirements NIET gehaald
-        showExplanationScreen({
-          uitleg: {
-            titel: match.uitleg.titel,
-            // Geef alleen een neutrale tekst, geen hints van requirements
-            tekst: match.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!",
-            type: "threshold"
-          }
-        }, []); // geen nieuwe elementen, geen CREATE-knop
-        return;
-      }
-    }
-
     // Case B – requirements WEL gehaald
     showExplanationScreen(match, newElements);
   } else {
