@@ -9,9 +9,7 @@
 <body>
 
   <div class="container">
-    <a href="elementen.html">
-      <img src="icons/Oerknal-God.png" alt="Oerknal" class="oerknal-icon">
-    </a>
+    <img src="icons/Oerknal.png" alt="Oerknal" class="oerknal-icon" id="oerknal-icon">
   
     <h2 class="result-title">Oerknal</h2>
   
@@ -25,7 +23,30 @@
       <span>"The Big Bang theory says nothing about what banged, why it banged, 
         or what happened before it banged" - Alan Guth</span>
     </div>
+
+    <!-- Uitlegveld, standaard verborgen -->
+    <div class="explanation-box" id="explanation-box" style="display: none;">
+      <div class="explanation-title">Oerknal Uitleg</div>
+      <div class="explanation-text">
+        De Oerknal markeert het ontstaan van het universum ongeveer 13,8 miljard jaar geleden. 
+        Het was een snelle expansie van ruimte, tijd, materie en energie uit een extreem compacte toestand.
+      </div>
+    </div>
   </div>
+
+  <script>
+    const icon = document.getElementById('oerknal-icon');
+    const explanationBox = document.getElementById('explanation-box');
+
+    icon.addEventListener('click', () => {
+      // Toggle zichtbaarheid
+      if(explanationBox.style.display === 'none') {
+        explanationBox.style.display = 'flex';
+      } else {
+        explanationBox.style.display = 'none';
+      }
+    });
+  </script>
 
 </body>
 </html>
