@@ -2129,6 +2129,7 @@ const groepsIconen = {
 let openLeft = null;
 let openRight = null;
 let selected = [];
+let unlockedElements = new Set();
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -2167,250 +2168,6 @@ function preloadAllIcons() {
   });
 
   console.log("Alle iconen worden vooraf geladen!");
-}
-
-// ----- TIMELINE LABEL -----
-function updateTimelineLabel() {
-  if (!timelineLabel || !timelineFill) return;
-
-  const miljard = (currentTime / 1_000_000_000).toFixed(1);
-  timelineLabel.textContent = `${miljard} miljard jaar geleden`;
-
-  const timeline = timelineFill.parentElement;
-  const timelineRect = timeline.getBoundingClientRect();
-  const timelineWidth = timeline.offsetWidth;
-
-  const percentage = (maxTime - currentTime) / maxTime;
-  
-  const offset = 16; // schuif label naar rechts, pas aan naar wens
-  const labelPos = timelineRect.left + percentage * timelineWidth + offset;
-  
-  timelineLabel.style.left = labelPos + "px";
-  timelineLabel.style.transform = "translateX(-50%)";
-
-  timelineFill.style.width = (percentage * 100) + "%";
-}
-
-function animateTimeline(newTime) {
-  const oldTime = currentTime;
-  const duration = 500;
-  const start = performance.now();
-
-  function step(timestamp) {
-    const progress = Math.min((timestamp - start) / duration, 1);
-    currentTime = oldTime + (newTime - oldTime) * progress;
-
-    updateTimelineLabel();
-
-    if (progress < 1) requestAnimationFrame(step);
-  }
-  requestAnimationFrame(step);
-}
-
-// ----- RENDER CLOSED MAPS -----
-function renderClosed() {
-  closedContainer.innerHTML = "";
-  closedContainer.classList.remove("hidden", "left", "right");
-  closedContainer.style.transition = "opacity 0.3s ease";
-  closedContainer.style.opacity = 0;
-
-  const grid = document.createElement("div");
-  grid.className = "grid-closed";
-
-  mappen.forEach(map => {
-    const container = document.createElement("div");
-    container.className = "icon-container";
-
-    const img = document.createElement("img");
-    img.src = map.icoon;
-    img.className = "icon map";
-    img.onclick = () => openMap(map, img);
-
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = map.naam;
-
-    container.appendChild(img);
-    container.appendChild(tooltip);
-    grid.appendChild(container);
-  });
-
-  closedContainer.appendChild(grid);
-
-  requestAnimationFrame(() => {
-    updateClosedContainer();
-    closedContainer.style.opacity = 1;
-  });
-}
-
-// ----- OPEN MAP -----
-function openMap(map, clickedImg) {
-  let side = null;
-  let container;
-
-  if (!openLeft) {
-    openLeft = map;
-    side = "left";
-    container = leftSide;
-  } else if (!openRight) {
-    openRight = map;
-    side = "right";
-    container = rightSide;
-  } else {
-    return; // beide open → niks doen
-  }
-
-  // Render de map meteen
-  renderSide(container, map, side);
-
-  updateClosedContainer();
-}
-
-// ----- RENDER SIDE -----
-function renderSide(parentContainer, map, side) {
-  parentContainer.innerHTML = "";
-  parentContainer.classList.remove("hidden", "visible");
-
-  // --- Title van de open map ---
-  const titleContainer = document.createElement("div");
-  titleContainer.className = "icon-container";
-
-  const titleImg = document.createElement("img");
-  titleImg.src = map.icoon;
-  titleImg.className = "icon map-title";
-  titleImg.onclick = () => closeMap(side);
-
-  const titleTooltip = document.createElement("div");
-  titleTooltip.className = "tooltip";
-  titleTooltip.textContent = map.naam;
-
-  titleContainer.appendChild(titleImg);
-  titleContainer.appendChild(titleTooltip);
-  parentContainer.appendChild(titleContainer);
-
-  // --- Grid van elementen ---
-  const grid = document.createElement("div");
-  grid.className = "grid-elements";
-
-  // Dynamische layout
-  const totalElements = map.elementen.length;
-  const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  
-  if (!isMobile) {
-    // Desktop
-    if (totalElements > 20) {
-      grid.style.gridTemplateColumns = "repeat(5, 100px)";
-      grid.style.columnGap = "30px";
-      grid.style.rowGap = "15px";
-    } else {
-      grid.style.gridTemplateColumns = "repeat(4, 100px)";
-      grid.style.columnGap = "50px";
-      grid.style.rowGap = "20px";
-    }
-  } else {
-    // Mobiel: kleinere icoontjes, kleine gaps
-    grid.style.gridTemplateColumns = "repeat(3, 50px)";
-    grid.style.columnGap = "8px";
-    grid.style.rowGap = "10px";   // ⬅ hier je gewenste 10px
-  }
-
-    map.elementen.forEach(el => {
-      const elContainer = document.createElement("div");
-      elContainer.className = "icon-container";
-
-      const img = document.createElement("img");
-      img.src = el.icoon;
-      img.className = "icon element";
-      if (!isMobile) {
-        // desktop: maak iets kleiner als >20
-        if (totalElements > 20) {
-          img.style.width = "110px";
-          img.style.height = "110px";
-        } else {
-          img.style.width = "130px";
-          img.style.height = "130px";
-        }
-      }
-      img.onclick = () => toggleSelect(el, img, side, map.naam);
-
-      const tooltip = document.createElement("div");
-      tooltip.className = "tooltip";
-      tooltip.textContent = el.naam;
-
-      elContainer.appendChild(img);
-      elContainer.appendChild(tooltip);
-      grid.appendChild(elContainer);
-    });
-  
-  parentContainer.appendChild(grid);
-
-  // --- Fade-in ---
-  parentContainer.style.opacity = 0;
-  setTimeout(() => {
-    parentContainer.style.transition = "opacity 0.3s ease";
-    parentContainer.style.opacity = 1;
-    parentContainer.classList.add("visible");
-  }, 20);
-}
-
-// ----- CLOSE MAP -----
-function closeMap(side) {
-  const container = side === "left" ? leftSide : rightSide;
-  const closingMap = side === "left" ? openLeft : openRight; // welke map wordt gesloten
-
-  container.classList.remove("visible");
-
-  setTimeout(() => {
-    // deselecteer alle geselecteerde elementen die in deze map zitten
-    selected = selected.filter(e => {
-      // als dit element bij de map hoort die gesloten wordt **en aan dezelfde kant**
-      if (e.mapNaam === closingMap.naam && e.side === side) {
-        // stop met trillen
-        e.dom.classList.remove("selected");
-        return false; // verwijder uit selectie
-      }
-      return true; // houdt over
-    });
-
-    if (side === "left") openLeft = null;
-    else openRight = null;
-
-    container.classList.add("hidden");
-
-    updateClosedContainer(); // herbereken positie closed-maps
-  }, 300);
-}
-
-function updateClosedContainer() {
-  let leftOpen = !!openLeft;
-  let rightOpen = !!openRight;
-  let halfWidth = window.innerWidth / 2;
-
-  if (leftOpen && rightOpen) {
-    closedContainer.style.opacity = 0;
-    closedContainer.style.left = "50%";
-    closedContainer.style.transform = "translate(-50%, -50%)";
-    closedContainer.classList.add("center");
-    closedContainer.classList.remove("side");
-  } else if (leftOpen && !rightOpen) {
-    closedContainer.style.opacity = 1;
-    closedContainer.style.left = `${halfWidth + halfWidth/2}px`; // midden rechterhelft
-    closedContainer.style.transform = "translate(-50%, -50%)";
-    closedContainer.classList.add("side");
-    closedContainer.classList.remove("center");
-  } else if (!leftOpen && rightOpen) {
-    closedContainer.style.opacity = 1;
-    closedContainer.style.left = `${halfWidth/2}px`; // midden linkerhelft
-    closedContainer.style.transform = "translate(-50%, -50%)";
-    closedContainer.classList.add("side");
-    closedContainer.classList.remove("center");
-  } else {
-    closedContainer.style.opacity = 1;
-    closedContainer.style.left = "50%";
-    closedContainer.style.transform = "translate(-50%, -50%)";
-    closedContainer.classList.add("center");
-    closedContainer.classList.remove("side");
-  }
 }
 
 // ----- SELECT ELEMENT -----
@@ -2497,23 +2254,6 @@ function checkCombination() {
 
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
-}
-
-// ----- ERROR SHAKE FUNCTION -----
-function shakeErrorElements(elements) {
-  elements.forEach(el => {
-    if(el) {
-      el.classList.add("error");
-      setTimeout(() => el.classList.remove("error"), 600); // na animatie verwijderen
-    }
-  });
-}
-
-// ----- CHECK THRESHOLD -----
-let unlockedElements = new Set();
-
-function addUnlockedElements(elements) {
-  elements.forEach(el => unlockedElements.add(el.naam));
 }
 
 // ----- CHECK WEL OF GEEN UITLEG -----
@@ -2616,9 +2356,9 @@ function renderNewElements(elements) {
 
     const title = document.createElement("div");
     title.className = "result-title";
-    title.innerHTML = el.naam;
+    title.innerHTML = elnaam;
 
-    const quote = document.createElement("div");
+    const quote = document..createElement("div");
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
 
@@ -2649,4 +2389,264 @@ function renderNewElements(elements) {
     renderClosed();
     updateClosedContainer(); // ← dit zorgt dat ze weer gecentreerd staan
   };
+}
+
+// ----- ERROR SHAKE FUNCTION -----
+function shakeErrorElements(elements) {
+  elements.forEach(el => {
+    if(el) {
+      el.classList.add("error");
+      setTimeout(() => el.classList.remove("error"), 600); // na animatie verwijderen
+    }
+  });
+}
+
+// ----- CHECK THRESHOLD -----
+function addUnlockedElements(elements) {
+  elements.forEach(el => unlockedElements.add(el.naam));
+}
+
+// ----- TIMELINE  -----
+function animateTimeline(newTime) {
+  const oldTime = currentTime;
+  const duration = 500;
+  const start = performance.now();
+
+  function step(timestamp) {
+    const progress = Math.min((timestamp - start) / duration, 1);
+    currentTime = oldTime + (newTime - oldTime) * progress;
+
+    updateTimelineLabel();
+
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ----- TIMELINE LABEL -----
+function updateTimelineLabel() {
+  if (!timelineLabel || !timelineFill) return;
+
+  const miljard = (currentTime / 1_000_000_000).toFixed(1);
+  timelineLabel.textContent = `${miljard} miljard jaar geleden`;
+
+  const timeline = timelineFill.parentElement;
+  const timelineRect = timeline.getBoundingClientRect();
+  const timelineWidth = timeline.offsetWidth;
+
+  const percentage = (maxTime - currentTime) / maxTime;
+  
+  const offset = 16; // schuif label naar rechts, pas aan naar wens
+  const labelPos = timelineRect.left + percentage * timelineWidth + offset;
+  
+  timelineLabel.style.left = labelPos + "px";
+  timelineLabel.style.transform = "translateX(-50%)";
+
+  timelineFill.style.width = (percentage * 100) + "%";
+}
+
+// ----- RENDER CLOSED MAPS -----
+function renderClosed() {
+  closedContainer.innerHTML = "";
+  closedContainer.classList.remove("hidden", "left", "right");
+  closedContainer.style.transition = "opacity 0.3s ease";
+  closedContainer.style.opacity = 0;
+
+  const grid = document.createElement("div");
+  grid.className = "grid-closed";
+
+  mappen.forEach(map => {
+    const container = document.createElement("div");
+    container.className = "icon-container";
+
+    const img = document.createElement("img");
+    img.src = map.icoon;
+    img.className = "icon map";
+    img.onclick = () => openMap(map, img);
+
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.textContent = map.naam;
+
+    container.appendChild(img);
+    container.appendChild(tooltip);
+    grid.appendChild(container);
+  });
+
+  closedContainer.appendChild(grid);
+
+  requestAnimationFrame(() => {
+    updateClosedContainer();
+    closedContainer.style.opacity = 1;
+  });
+}
+
+function updateClosedContainer() {
+  let leftOpen = !!openLeft;
+  let rightOpen = !!openRight;
+  let halfWidth = window.innerWidth / 2;
+
+  if (leftOpen && rightOpen) {
+    closedContainer.style.opacity = 0;
+    closedContainer.style.left = "50%";
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("center");
+    closedContainer.classList.remove("side");
+  } else if (leftOpen && !rightOpen) {
+    closedContainer.style.opacity = 1;
+    closedContainer.style.left = `${halfWidth + halfWidth/2}px`; // midden rechterhelft
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("side");
+    closedContainer.classList.remove("center");
+  } else if (!leftOpen && rightOpen) {
+    closedContainer.style.opacity = 1;
+    closedContainer.style.left = `${halfWidth/2}px`; // midden linkerhelft
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("side");
+    closedContainer.classList.remove("center");
+  } else {
+    closedContainer.style.opacity = 1;
+    closedContainer.style.left = "50%";
+    closedContainer.style.transform = "translate(-50%, -50%)";
+    closedContainer.classList.add("center");
+    closedContainer.classList.remove("side");
+  }
+}
+
+// ----- OPEN MAP -----
+function openMap(map, clickedImg) {
+  let side = null;
+  let container;
+
+  if (!openLeft) {
+    openLeft = map;
+    side = "left";
+    container = leftSide;
+  } else if (!openRight) {
+    openRight = map;
+    side = "right";
+    container = rightSide;
+  } else {
+    return; // beide open → niks doen
+  }
+
+  // Render de map meteen
+  renderSide(container, map, side);
+
+  updateClosedContainer();
+}
+
+// ----- CLOSE MAP -----
+function closeMap(side) {
+  const container = side === "left" ? leftSide : rightSide;
+  const closingMap = side === "left" ? openLeft : openRight; // welke map wordt gesloten
+
+  container.classList.remove("visible");
+
+  setTimeout(() => {
+    // deselecteer alle geselecteerde elementen die in deze map zitten
+    selected = selected.filter(e => {
+      // als dit element bij de map hoort die gesloten wordt **en aan dezelfde kant**
+      if (e.mapNaam === closingMap.naam && e.side === side) {
+        // stop met trillen
+        e.dom.classList.remove("selected");
+        return false; // verwijder uit selectie
+      }
+      return true; // houdt over
+    });
+
+    if (side === "left") openLeft = null;
+    else openRight = null;
+
+    container.classList.add("hidden");
+
+    updateClosedContainer(); // herbereken positie closed-maps
+  }, 300);
+}
+
+// ----- RENDER SIDE -----
+function renderSide(parentContainer, map, side) {
+  parentContainer.innerHTML = "";
+  parentContainer.classList.remove("hidden", "visible");
+
+  // --- Title van de open map ---
+  const titleContainer = document.createElement("div");
+  titleContainer.className = "icon-container";
+
+  const titleImg = document.createElement("img");
+  titleImg.src = map.icoon;
+  titleImg.className = "icon map-title";
+  titleImg.onclick = () => closeMap(side);
+
+  const titleTooltip = document.createElement("div");
+  titleTooltip.className = "tooltip";
+  titleTooltip.textContent = map.naam;
+
+  titleContainer.appendChild(titleImg);
+  titleContainer.appendChild(titleTooltip);
+  parentContainer.appendChild(titleContainer);
+
+  // --- Grid van elementen ---
+  const grid = document.createElement("div");
+  grid.className = "grid-elements";
+
+  // Dynamische layout
+  const totalElements = map.elementen.length;
+  const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
+  
+  if (!isMobile) {
+    // Desktop
+    if (totalElements > 20) {
+      grid.style.gridTemplateColumns = "repeat(5, 100px)";
+      grid.style.columnGap = "30px";
+      grid.style.rowGap = "15px";
+    } else {
+      grid.style.gridTemplateColumns = "repeat(4, 100px)";
+      grid.style.columnGap = "50px";
+      grid.style.rowGap = "20px";
+    }
+  } else {
+    // Mobiel: kleinere icoontjes, kleine gaps
+    grid.style.gridTemplateColumns = "repeat(3, 50px)";
+    grid.style.columnGap = "8px";
+    grid.style.rowGap = "10px";   // ⬅ hier je gewenste 10px
+  }
+
+    map.elementen.forEach(el => {
+      const elContainer = document.createElement("div");
+      elContainer.className = "icon-container";
+
+      const img = document.createElement("img");
+      img.src = el.icoon;
+      img.className = "icon element";
+      if (!isMobile) {
+        // desktop: maak iets kleiner als >20
+        if (totalElements > 20) {
+          img.style.width = "110px";
+          img.style.height = "110px";
+        } else {
+          img.style.width = "130px";
+          img.style.height = "130px";
+        }
+      }
+      img.onclick = () => toggleSelect(el, img, side, map.naam);
+
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = el.naam;
+
+      elContainer.appendChild(img);
+      elContainer.appendChild(tooltip);
+      grid.appendChild(elContainer);
+    });
+  
+  parentContainer.appendChild(grid);
+
+  // --- Fade-in ---
+  parentContainer.style.opacity = 0;
+  setTimeout(() => {
+    parentContainer.style.transition = "opacity 0.3s ease";
+    parentContainer.style.opacity = 1;
+    parentContainer.classList.add("visible");
+  }, 20);
 }
