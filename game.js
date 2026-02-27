@@ -2537,6 +2537,7 @@ function handleCombinationScreen(match, newElements) {
 }
 
 // ----- VISUEEL SCHERM VOOR UITLEG -----
+// ----- VISUEEL SCHERM VOOR UITLEG -----
 function showExplanationScreen(combination, newElements) {
   // Verwijder bestaande overlay als die er is
   const oldOverlay = document.getElementById("result-overlay");
@@ -2558,7 +2559,6 @@ function showExplanationScreen(combination, newElements) {
   // Uitleg tekst
   const text = document.createElement("div");
   text.className = "explanation-text";
-  // Als er geen nieuwe elementen zijn (threshold nog niet gehaald), laat dan alleen neutrale tekst zien
   if (!newElements || newElements.length === 0) {
     text.innerHTML = combination.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!";
   } else {
@@ -2568,17 +2568,38 @@ function showExplanationScreen(combination, newElements) {
   box.appendChild(title);
   box.appendChild(text);
 
-  // CREATE knop alleen toevoegen als er nieuwe elementen zijn
+  // CREATE-knop of GA VERDER-knop
   if (newElements && newElements.length > 0) {
+    // CREATE knop voor echte nieuwe elementen
     const button = document.createElement("button");
     button.className = "create-button";
     button.textContent = "CREATE";
 
-    // Klik event → render nieuwe elementen
     button.onclick = (e) => {
-      e.stopPropagation(); // voorkomt click op overlay
+      e.stopPropagation();
       overlay.remove();
       renderNewElements(newElements);
+    };
+
+    box.appendChild(button);
+  } else {
+    // Threshold niet gehaald → GA VERDER knop
+    const button = document.createElement("button");
+    button.className = "create-button"; // zelfde stijl als CREATE
+    button.textContent = "GA VERDER";
+
+    button.onclick = (e) => {
+      e.stopPropagation();
+      overlay.remove();
+
+      // Reset open maps, terug naar closed
+      leftSide.innerHTML = "";
+      rightSide.innerHTML = "";
+      openLeft = null;
+      openRight = null;
+
+      renderClosed();
+      updateClosedContainer();
     };
 
     box.appendChild(button);
