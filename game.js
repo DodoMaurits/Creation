@@ -2154,19 +2154,21 @@ updateTimelineLabel();
 function updateTimelineLabel() {
   if (!timelineLabel || !timelineFill) return;
 
-  // Tekst bijwerken
   const miljard = (currentTime / 1_000_000_000).toFixed(1);
   timelineLabel.textContent = `${miljard} miljard jaar geleden`;
 
-  // Bereken positie op de timeline in pixels
-  const timelineWidth = timelineFill.parentElement.offsetWidth;
-  const percentage = (maxTime - currentTime) / maxTime;
-  const labelPos = percentage * timelineWidth;
+  const timeline = timelineFill.parentElement;
+  const timelineRect = timeline.getBoundingClientRect();
+  const timelineWidth = timeline.offsetWidth;
 
+  const percentage = (maxTime - currentTime) / maxTime;
+  
+  const offset = 100; // schuif label 100px naar rechts, pas aan naar wens
+  const labelPos = timelineRect.left + percentage * timelineWidth + offset;
+  
   timelineLabel.style.left = labelPos + "px";
   timelineLabel.style.transform = "translateX(-50%)";
 
-  // Update fill width
   timelineFill.style.width = (percentage * 100) + "%";
 }
 
