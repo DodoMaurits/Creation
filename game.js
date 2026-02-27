@@ -2524,17 +2524,11 @@ function handleCombinationScreen(match, newElements) {
   // 🔹 Voeg nieuwe elementen toe aan unlockedElements
   addUnlockedElements(newElements);
 
-  // 🔹 Update tijdlijn als match een tijd heeft
-  if (match.uitleg && match.uitleg.tijd !== undefined) {
-  
+  // 🔹 Update tijdlijn alleen bij threshold type
+  if (match.uitleg && match.uitleg.type === "threshold" && match.uitleg.tijd !== undefined) {
     const eventTime = match.uitleg.tijd;
-  
-    // Zorg dat tijd binnen 0 en 13.8 miljard blijft
     const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
-  
-    // Alleen vooruit in de tijd (dus richting 0)
-    const targetTime = Math.min(currentTime, clampedTime);
-  
+    const targetTime = Math.min(currentTime, clampedTime); // alleen vooruit
     animateTimeline(targetTime);
   }
 }
