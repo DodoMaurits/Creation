@@ -119,11 +119,17 @@ const combinaties = [
           }
         ],
         uitleg: {
-          titel: "Water op Aarde",
-          tekst: "Oceaanvorming",
-          tijd: 4_400_000_000,
-          type: "threshold", 
-          requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", "Sterrenstelsel", "Radioacitiviteit"]
+          threshold: {
+            titel: "Water op Aarde", 
+            tekst: "Je moet eerst nog wat meer halen...",
+            tijd: 4_400_000_000,
+            requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", "Sterrenstelsel", "Radioacitiviteit"]
+          },
+          normal: {
+            titel: "Water op Aarde",
+            tekst: "Oceaanvorming",
+            tijd: 4_400_000_000
+          }
         }
       },
       {
@@ -2223,18 +2229,28 @@ function checkCombination() {
     return;
   }
 
-  // 🔹 Threshold check
   for (let match of matches) {
-    if (match.uitleg && match.uitleg.type === "threshold") {
-      const requirements = match.uitleg.requirements || [];
+  
+    // Als er een threshold bestaat
+    if (match.uitleg && match.uitleg.threshold) {
+  
+      const requirements = match.uitleg.threshold.requirements || [];
       const allMet = requirements.every(r => unlockedElements.has(r));
-
+  
+      // ❌ Requirements NIET gehaald
       if (!allMet) {
-        showExplanationScreen(match, []);
+        showExplanationScreen(
+          { uitleg: match.uitleg.threshold },
+          []
+        );
+  
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
         return;
       }
+  
+      // ✅ Requirements WEL gehaald
+      match.uitleg = match.uitleg.normal;
     }
   }
 
