@@ -2152,24 +2152,28 @@ updateTimelineLabel();
 
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
-  if (!timelineLabel) return;
+  if (!timelineLabel || !timelineFill) return;
 
+  // Tekst bijwerken
   const miljard = (currentTime / 1_000_000_000).toFixed(1);
   timelineLabel.textContent = `${miljard} miljard jaar geleden`;
 
-  // Bereken positie op de tijdlijn
-  const percentage = ((maxTime - currentTime) / maxTime) * 100;
+  // Bereken positie op de timeline in pixels
+  const timelineWidth = timelineFill.parentElement.offsetWidth;
+  const percentage = (maxTime - currentTime) / maxTime;
+  const labelPos = percentage * timelineWidth;
 
-  // Verplaats label horizontaal
-  timelineLabel.style.left = percentage + "%";
+  timelineLabel.style.left = labelPos + "px";
   timelineLabel.style.transform = "translateX(-50%)";
+
+  // Update fill width
+  timelineFill.style.width = (percentage * 100) + "%";
 }
 
 function animateTimeline(newTime) {
   const oldTime = currentTime;
   const duration = 500;
   const start = performance.now();
-  const timelineWidth = timelineFill.parentElement.offsetWidth; // totale breedte van timeline
 
   function step(timestamp) {
     const progress = Math.min((timestamp - start) / duration, 1);
@@ -2177,15 +2181,6 @@ function animateTimeline(newTime) {
 
     updateTimelineLabel();
 
-    const percentage = (maxTime - currentTime) / maxTime;
-    if (timelineFill) {
-      timelineFill.style.width = (percentage * 100) + "%";
-    }
-    if (timelineLabel) {
-      // label position = percentage * timelineWidth
-      const labelPos = percentage * timelineWidth;
-      timelineLabel.style.left = labelPos + "px";
-    }
     if (progress < 1) requestAnimationFrame(step);
   }
   requestAnimationFrame(step);
