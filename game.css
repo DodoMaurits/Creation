@@ -257,6 +257,18 @@ body {
   border: 2px solid white; /* dikte van de lijn */
   border-radius: 10px;     /* iets kleiner dan main box */
   pointer-events: none;    /* klikbaar niet beïnvloeden */
+  opacity: 0.7;
+}
+
+.explanation-title {
+  font-family: "Cinzel", serif;
+  font-size: 36px;
+}
+
+.explanation-text {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 /* ---------------- CREATE BUTTON VOOR UITLEG-OVERLAY ---------------- */
