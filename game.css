@@ -49,11 +49,36 @@ body {
 /* ---------------- ICONS & HOVERS ---------------- */
 .icon {
   cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;  
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 0 4px #9eff00)   /* groene basisglow */
+          drop-shadow(0 0 10px #9eff00)  /* extra intensiteit */
+          drop-shadow(0 0 20px #00ff00); /* verspreiding */
+  transition: filter 0.3s ease;
 }
 
 .icon:hover {
   transform: scale(1.1);
+  filter: drop-shadow(0 0 6px #9eff00)
+          drop-shadow(0 0 12px #9eff00)
+          drop-shadow(0 0 28px #00ff00);
+}
+
+.icon.pulse {
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+  0%   { filter: drop-shadow(0 0 4px #9eff00)
+                  drop-shadow(0 0 10px #9eff00)
+                  drop-shadow(0 0 20px #00ff00); }
+  50%  { filter: drop-shadow(0 0 6px #cfff00)
+                  drop-shadow(0 0 14px #cfff00)
+                  drop-shadow(0 0 28px #aaff00); }
+  100% { filter: drop-shadow(0 0 4px #9eff00)
+                  drop-shadow(0 0 10px #9eff00)
+                  drop-shadow(0 0 20px #00ff00); }
 }
 
 .icon.element {
