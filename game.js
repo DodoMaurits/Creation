@@ -2462,20 +2462,21 @@ function checkCombination() {
     const allMet = requirements.every(r => unlockedElements.has(r));
 
     if (!allMet) {
+      // toon enkel uitleg, geen elementen
       showExplanationScreen({
         uitleg: {
           titel: match.uitleg.titel,
           tekst: match.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!",
           type: "threshold"
         }
-      }, []); // geen nieuwe elementen
+      }, []); 
       selected.forEach(e => e.dom.classList.remove("selected"));
       selected = [];
       return; // stop hier, geen nieuwe elementen aanmaken
     }
   }
 
-  // 🔹 Nieuwe elementen pas toevoegen **NA** threshold check
+  // 🔹 Pas hier nieuwe elementen aanmaken, alleen als threshold gehaald
   const newElements = [];
   match.output.forEach(newEl => {
     let map = mappen.find(m => m.naam === newEl.map);
@@ -2491,6 +2492,7 @@ function checkCombination() {
     newElements.push(newEl);
   });
 
+  // 🔹 Nu renderen via handleCombinationScreen
   handleCombinationScreen(match, newElements);
 
   selected.forEach(e => e.dom.classList.remove("selected"));
@@ -2517,21 +2519,18 @@ function addUnlockedElements(elements) {
 // ----- CHECK WEL OF GEEN UITLEG -----
 function handleCombinationScreen(match, newElements) {
   if (match.uitleg) {
-    // Case B – requirements WEL gehaald
     showExplanationScreen(match, newElements);
   } else {
-    // Normale combinaties zonder uitleg
     renderNewElements(newElements);
   }
 
-  // 🔹 Voeg nieuwe elementen toe aan unlockedElements
   addUnlockedElements(newElements);
 
-  // 🔹 Update tijdlijn alleen bij threshold type
+  // update tijdlijn
   if (match.uitleg && match.uitleg.type === "threshold" && match.uitleg.tijd !== undefined) {
     const eventTime = match.uitleg.tijd;
     const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
-    const targetTime = Math.min(currentTime, clampedTime); // alleen vooruit
+    const targetTime = Math.min(currentTime, clampedTime);
     animateTimeline(targetTime);
   }
 }
