@@ -2150,6 +2150,25 @@ requestAnimationFrame(() => {
 
 updateTimelineLabel();
 
+preloadAllIcons();
+
+// ----- PRELOAD -----
+function preloadAllIcons() {
+  const urls = [...new Set(
+    mappen.flatMap(map => [
+      map.icoon,
+      ...map.elementen.map(el => el.icoon)
+    ])
+  )];
+
+  urls.forEach(url => {
+    const img = new Image();
+    img.src = url;
+  });
+
+  console.log("Alle iconen worden vooraf geladen!");
+}
+
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
   if (!timelineLabel || !timelineFill) return;
