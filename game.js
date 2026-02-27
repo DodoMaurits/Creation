@@ -1765,7 +1765,6 @@ function renderNewElements(elements) {
   elements.forEach(el => {
   
     const box = document.createElement("div");
-    box.className = "result-box fade-in magic-icon";
   
     const img = document.createElement("img");
     img.src = el.icoon;
@@ -1882,7 +1881,7 @@ function renderClosed() {
 
   mappen.forEach(map => {
     const container = document.createElement("div");
-    container.className = "icon-container magic-icon";
+    container.className = "icon-container";
     
     const img = document.createElement("img");
     img.src = map.icoon;
@@ -1898,8 +1897,10 @@ function renderClosed() {
       container.appendChild(particle);
     }
     
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.textContent = map.naam;
     container.appendChild(tooltip);
-    grid.appendChild(container);
   });
 
   closedContainer.appendChild(grid);
@@ -2003,7 +2004,7 @@ function renderSide(parentContainer, map, side) {
   // 1️⃣ Titel van de map
   // ------------------------
   const titleContainer = document.createElement("div");
-  titleContainer.className = "icon-container magic-icon";
+  titleContainer.className = "icon-container";
 
   const titleImg = document.createElement("img");
   titleImg.src = map.icoon;
@@ -2057,7 +2058,7 @@ function renderSide(parentContainer, map, side) {
   // ------------------------
   map.elementen.forEach(el => {
     const elContainer = document.createElement("div");
-    elContainer.className = "icon-container magic-icon";
+    elContainer.className = "icon-container";
 
     const img = document.createElement("img");
     img.src = el.icoon;
