@@ -885,7 +885,7 @@ const combinaties = [
     ]
   },
   {
-    input: {
+    input: [
       ["Bacteriën", "Kou"], ["Bacteriën", "Radioactiviteit"], ["Bacteriën", "IJs"], ["Bacteriën", "Vuur"], ["Bacteriën", "Lava"],
       ["Stromatolieten", "Kou"], ["Stromatolieten", "Radioactiviteit"], ["Stromatolieten", "IJs"], ["Stromatolieten", "Vuur"], ["Stromatolieten", "Lava"],
       ["Blauwalgen", "Kou"], ["Blauwalgen", "Radioactiviteit"], ["Blauwalgen", "IJs"], ["Blauwalgen", "Vuur"], ["Blauwalgen", "Lava"],
