@@ -1993,3 +1993,43 @@ function renderSide(parentContainer, map, side) {
     parentContainer.classList.add("visible");
   }, 20);
 }
+
+function enhanceIconsWithGlow() {
+  document.querySelectorAll('.icon').forEach(icon => {
+    // Maak wrapper
+    const wrapper = document.createElement('div');
+    wrapper.className = 'icon-wrapper';
+
+    // Plaats wrapper rond icon
+    icon.parentNode.insertBefore(wrapper, icon);
+    wrapper.appendChild(icon);
+
+    // Voeg spark-container toe
+    const sparkContainer = document.createElement('div');
+    sparkContainer.className = 'spark-container';
+    wrapper.appendChild(sparkContainer);
+
+    // Voeg 10 willekeurige vonkjes toe
+    for (let i = 0; i < 10; i++) {
+      const spark = document.createElement('div');
+      spark.className = 'spark';
+      spark.style.width = spark.style.height = `${Math.random()*4+2}px`;
+      spark.style.top = `${Math.random()*100}%`;
+      spark.style.left = `${Math.random()*100}%`;
+      spark.style.opacity = Math.random() * 0.8 + 0.2;
+
+      // Willekeurige animatie afstand
+      const dx = `${Math.random()*20-10}px`;
+      const dy = `${Math.random()*20-10}px`;
+      spark.style.setProperty('--dx', dx);
+      spark.style.setProperty('--dy', dy);
+
+      spark.style.animation = `sparkMove ${Math.random()*2+1}s infinite alternate`;
+
+      sparkContainer.appendChild(spark);
+    }
+  });
+}
+
+// ⚡ Roep aan na renderClosed() en renderSide()
+enhanceIconsWithGlow();
