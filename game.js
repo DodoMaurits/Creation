@@ -2169,24 +2169,25 @@ function animateTimeline(newTime) {
   const oldTime = currentTime;
   const duration = 500;
   const start = performance.now();
+  const timelineWidth = timelineFill.parentElement.offsetWidth; // totale breedte van timeline
 
   function step(timestamp) {
     const progress = Math.min((timestamp - start) / duration, 1);
     currentTime = oldTime + (newTime - oldTime) * progress;
-    
-    updateTimelineLabel();
-    
-    const percentage = ((maxTime - currentTime) / maxTime) * 100;
 
+    updateTimelineLabel();
+
+    const percentage = (maxTime - currentTime) / maxTime;
     if (timelineFill) {
-      timelineFill.style.width = percentage + "%";
+      timelineFill.style.width = (percentage * 100) + "%";
     }
     if (timelineLabel) {
-      timelineLabel.style.left = percentage + "%";
+      // label position = percentage * timelineWidth
+      const labelPos = percentage * timelineWidth;
+      timelineLabel.style.left = labelPos + "px";
     }
     if (progress < 1) requestAnimationFrame(step);
   }
-
   requestAnimationFrame(step);
 }
 
