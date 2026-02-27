@@ -2316,7 +2316,7 @@ function showExplanationScreen(combination, newElements) {
 
   // box
   const box = document.createElement("div");
-  box.className = "result-box fade-in explanation-box";
+  box.className = "fade-in explanation-box";
 
   // inner wrapper
   const content = document.createElement("div");
