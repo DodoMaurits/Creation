@@ -1560,39 +1560,23 @@ function checkCombination() {
   // 🔹 Nieuwe elementen maken
   const newElements = [];
   matches.forEach(match => {
-      match.output.forEach(newEl => {
-          let map = mappen.find(m => m.naam === newEl.map);
-          if (!map) {
-              map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
-              mappen.push(map);
-          }
-          if (!map.elementen.find(e => e.naam === newEl.naam)) {
-              map.elementen.push(newEl);
-          }
-          newElements.push(newEl);
-  
-          // ✅ direct unlocked maken
-          unlockedElements.add(newEl.naam);
-      });
-  });
-  
-  // 🔹 Threshold check (nu alle nieuwe elementen zijn unlocked)
-  if (firstMatch.uitleg && firstMatch.uitleg.threshold) {
-      const requirements = firstMatch.uitleg.threshold.requirements || [];
-      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-      const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
-  
-      if (!allMet) {
-          showExplanationScreen({ uitleg: firstMatch.uitleg.threshold }, []);
-          selected.forEach(e => e.dom.classList.remove("selected"));
-          selected = [];
-          return;
+    match.output.forEach(newEl => {
+      let map = mappen.find(m => m.naam === newEl.map);
+      if (!map) {
+        map = {
+          naam: newEl.map,
+          icoon: groepsIconen[newEl.map] || "icons/default.png",
+          elementen: []
+        };
+        mappen.push(map);
       }
-  }
-  
-  // 🔹 Alle requirements gehaald → normale uitleg
-  let finalUitleg = firstMatch.uitleg.normal || null;
-    
+      if (!map.elementen.find(e => e.naam === newEl.naam)) {
+        map.elementen.push(newEl);
+      }
+      newElements.push(newEl);
+    });
+  });
+
   // 🔹 Toon uitleg of nieuwe elementen
   if (finalUitleg) {
     showExplanationScreen({ uitleg: finalUitleg }, newElements);
