@@ -369,7 +369,8 @@ body {
   width: 100%;
   height: 20px;
   background: rgba(100, 100, 100, 0.5);
-  z-index: 1000; /* boven andere elementen */
+  z-index: 1000;
+  position: fixed;
 }
 
 #timeline-fill {
@@ -379,16 +380,23 @@ body {
   transition: width 1s ease;
 }
 
+/* Label */
 #timeline-label {
-  position: fixed;
-  bottom: 25px; /* iets boven de timeline */
-  left: 50%;
+  position: absolute;
+  bottom: 30px;          /* boven de balk */
+  left: 0%;
   transform: translateX(-50%);
+  white-space: nowrap;
+
+  background: rgba(0, 0, 0, 0.75);  /* zwart, licht transparant */
   color: white;
-  font-weight: bold;
-  text-shadow: 0 0 5px black;
+  padding: 6px 10px;
+  border-radius: 8px;   /* afgevlakte hoeken */
   font-size: 14px;
-  pointer-events: none; /* klikbaar niet nodig */
+  font-weight: normal;  /* niet dikgedrukt */
+  pointer-events: none;
+
+  transition: left 0.5s ease;
 }
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
