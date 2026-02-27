@@ -78,7 +78,14 @@ const combinaties = [
       { naam: "Ster", icoon: "icons/Ster.png", map: "Heelal",
         quote: "Every star may be a sun to someone <br><br>-Carl Sagan"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "A Star Is Born",
+        tekst: "Stervorming...",
+        tijd: 13_600_000_000
+      }
+    }
   },
   {
     input: ["Ster", "Zwaartekracht"],
@@ -147,7 +154,14 @@ const combinaties = [
       { naam: "Saturnus", icoon: "icons/Saturnus.png", map: "Heelal",
         quote: "At depth on Jupiter and Saturn, the pressures are so great that atoms sweat electrons, and the air becomes a metal <br><br>- Carl Sagan"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Gasplaneten",
+        tekst: "Onze gasplaneten...",
+        tijd: 4_570_000_000
+      }
+    }
   },
   {
     input: ["Planeet", "IJs"],
@@ -158,7 +172,14 @@ const combinaties = [
       { naam: "Neptunus", icoon: "icons/Neptunus.png", map: "Heelal",
         quote: "We see it as Columbus saw America from the coast of Spain. Its movements have been felt, trembling along the far-reaching line of our analysis with a certainty hardly inferior to that of ocular demonstration <br><br>- William Herschel"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "IJsplaneten",
+        tekst: "Onze ijsplaneten...",
+        tijd: 4_570_000_000
+      }
+    }
   },
   {
     input: ["Planeet", "IJzer"],
@@ -175,7 +196,14 @@ const combinaties = [
       { naam: "Mercurius", icoon: "icons/Mercurius.png", map: "Heelal",
         quote: "I had rather be Mercury, the smallest among seven, resolving round the sun, than the first among five revolving round Saturn <br><br>- Johann von Goethe"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "IJzerplaneten",
+        tekst: "Onze ijzerplaneten...",
+        tijd: 4_570_000_000
+      }
+    }
   },
   {
     input: ["Lava", "Kou"],
@@ -197,7 +225,14 @@ const combinaties = [
       { naam: "De Maan", icoon: "icons/Maan.png", map: "Heelal",
         quote: "I always look up at the moon and see it as the single most romantic place within the cosmos <br><br>- Tom Hanks"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Grote Inslag van Theia",
+        tekst: "Onze broederplaneet...",
+        tijd: 4_527_000_000
+      }
+    }
   },
   {
     input: [
@@ -211,7 +246,14 @@ const combinaties = [
       { naam: "Granietmagma", icoon: "icons/Granietmagma.png", map: "Vuur",
         quote: "Of course the entire planet Earth consists of magma under us, and only the very inner-core is different <br><br>- Werner Herzog"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Platentektoniek",
+        tekst: "...",
+        tijd: 4_400_000_000
+      }
+    }
   },
   {
     input: ["Platentektoniek", "Lava"],
@@ -281,7 +323,7 @@ const combinaties = [
       }
     ]
   },
-//------------ THRESHOLD !: WATER --------------//
+//------------ THRESHOLD 1: WATER --------------//
   {
     input: [
       ["IJs", "Warmte"],
@@ -859,7 +901,21 @@ const combinaties = [
       { naam: "Luca", icoon: "icons/Luca.png", map: "Pril leven", 
         quote: "Life originated in the sea, and about eighty percent of it is still there <br><br>- Isaac Asimov"
       }
-    ]
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Leven", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        tijd: 4_400_000_000,
+        requirements: ["Rivier", "Tufsteen", "Koper", "Zure regen", "Kust", "Eiland", 
+          "Roest", "Zand", "Klei", "Glas", "Golf", "Wind", "Zout", "Kalk"]
+      },
+      normal: {
+        titel: "Leven",
+        tekst: "Eerste leven",
+        tijd: 4_400_000_000
+      }
+    }
   },
   {
     input: [
@@ -1285,7 +1341,7 @@ const combinaties = [
         quote: "The slates of Wales furnish one of the most striking examples of cleavage produced by pressure <br><br>- Archibald Geikie"
       }
     ]
-  },              
+  },
 //------------ THRESHOLD 3: CAMBRISCHE EXPLOSIE --------------//
   {
     input: ["Bilateria-voorouder", "Bot"],
@@ -1305,7 +1361,24 @@ const combinaties = [
       { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
         quote: "There is one living organism, called a tardigrade, that has survived the five great mass extinctions on Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures <br><br>- Alycia Carey"
       }
-    ]
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Cambrische Explosie", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        tijd: 541_000_000,
+        requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
+          "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
+          "Dood", "Stromatolieten", "Fotosynthese", "Amoebe", "Foraminiferen", "Stralendiertjes", 
+          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Schelp", "Rif", 
+          "Druk", "Tast", "Steenwortelalgen", "Kwallen", "Zeeanemonen", "Wormen", "Zeesterren"]
+      },
+      normal: {
+        titel: "Cambrische Explosie",
+        tekst: "De Cambrscche explosie...",
+        tijd: 541_000_000
+      }
+    }
   },
   {
     input: ["Druk", "Kalksteen"],
@@ -1690,25 +1763,34 @@ function renderNewElements(elements) {
   }
 
   elements.forEach(el => {
+  
     const box = document.createElement("div");
-    box.className = "result-box fade-in"; // CSS class voor fade-in effect
-
+    box.className = "result-box fade-in magic-icon";
+  
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "result-image";
-
+  
+    box.appendChild(img);
+  
+    // ✨ particles
+    for (let i = 0; i < 3; i++) {
+      const particle = document.createElement("span");
+      particle.className = "particle";
+      box.appendChild(particle);
+    }
+  
     const title = document.createElement("div");
     title.className = "result-title";
     title.innerHTML = el.naam;
-
+  
     const quote = document.createElement("div");
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
-
-    box.appendChild(img);
+  
     box.appendChild(title);
     box.appendChild(quote);
-
+  
     grid.appendChild(box);
   });
 
@@ -1800,18 +1882,22 @@ function renderClosed() {
 
   mappen.forEach(map => {
     const container = document.createElement("div");
-    container.className = "icon-container";
-
+    container.className = "icon-container magic-icon";
+    
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
-
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = map.naam;
-
+    
     container.appendChild(img);
+    
+    // ✨ particles
+    for (let i = 0; i < 3; i++) {
+      const particle = document.createElement("span");
+      particle.className = "particle";
+      container.appendChild(particle);
+    }
+    
     container.appendChild(tooltip);
     grid.appendChild(container);
   });
@@ -1909,36 +1995,48 @@ function closeMap(side) {
 
 // ----- RENDER SIDE -----
 function renderSide(parentContainer, map, side) {
+  // Maak parent leeg en zichtbaar
   parentContainer.innerHTML = "";
   parentContainer.classList.remove("hidden", "visible");
 
-  // --- Title van de open map ---
+  // ------------------------
+  // 1️⃣ Titel van de map
+  // ------------------------
   const titleContainer = document.createElement("div");
-  titleContainer.className = "icon-container";
+  titleContainer.className = "icon-container magic-icon";
 
   const titleImg = document.createElement("img");
   titleImg.src = map.icoon;
   titleImg.className = "icon map-title";
   titleImg.onclick = () => closeMap(side);
 
+  titleContainer.appendChild(titleImg);
+
+  // ✨ particles rond titel
+  for (let i = 0; i < 3; i++) {
+    const particle = document.createElement("span");
+    particle.className = "particle";
+    titleContainer.appendChild(particle);
+  }
+
   const titleTooltip = document.createElement("div");
   titleTooltip.className = "tooltip";
   titleTooltip.textContent = map.naam;
-
-  titleContainer.appendChild(titleImg);
   titleContainer.appendChild(titleTooltip);
+
   parentContainer.appendChild(titleContainer);
 
-  // --- Grid van elementen ---
+  // ------------------------
+  // 2️⃣ Grid van elementen
+  // ------------------------
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
-  // Dynamische layout
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  
+
+  // Dynamische layout
   if (!isMobile) {
-    // Desktop
     if (totalElements > 20) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
@@ -1949,43 +2047,51 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "20px";
     }
   } else {
-    // Mobiel: kleinere icoontjes, kleine gaps
     grid.style.gridTemplateColumns = "repeat(3, 50px)";
     grid.style.columnGap = "8px";
-    grid.style.rowGap = "10px";   // ⬅ hier je gewenste 10px
+    grid.style.rowGap = "10px";
   }
 
-    map.elementen.forEach(el => {
-      const elContainer = document.createElement("div");
-      elContainer.className = "icon-container";
+  // ------------------------
+  // 3️⃣ Voeg elementen toe
+  // ------------------------
+  map.elementen.forEach(el => {
+    const elContainer = document.createElement("div");
+    elContainer.className = "icon-container magic-icon";
 
-      const img = document.createElement("img");
-      img.src = el.icoon;
-      img.className = "icon element";
-      if (!isMobile) {
-        // desktop: maak iets kleiner als >20
-        if (totalElements > 20) {
-          img.style.width = "110px";
-          img.style.height = "110px";
-        } else {
-          img.style.width = "130px";
-          img.style.height = "130px";
-        }
-      }
-      img.onclick = () => toggleSelect(el, img, side, map.naam);
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "icon element";
 
-      const tooltip = document.createElement("div");
-      tooltip.className = "tooltip";
-      tooltip.textContent = el.naam;
+    // Pas grootte aan desktop
+    if (!isMobile) {
+      img.style.width = totalElements > 20 ? "110px" : "130px";
+      img.style.height = totalElements > 20 ? "110px" : "130px";
+    }
 
-      elContainer.appendChild(img);
-      elContainer.appendChild(tooltip);
-      grid.appendChild(elContainer);
-    });
-  
+    img.onclick = () => toggleSelect(el, img, side, map.naam);
+    elContainer.appendChild(img);
+
+    // ✨ particles rond elk element
+    for (let i = 0; i < 3; i++) {
+      const particle = document.createElement("span");
+      particle.className = "particle";
+      elContainer.appendChild(particle);
+    }
+
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.textContent = el.naam;
+    elContainer.appendChild(tooltip);
+
+    grid.appendChild(elContainer);
+  });
+
   parentContainer.appendChild(grid);
 
-  // --- Fade-in ---
+  // ------------------------
+  // 4️⃣ Fade-in
+  // ------------------------
   parentContainer.style.opacity = 0;
   setTimeout(() => {
     parentContainer.style.transition = "opacity 0.3s ease";
