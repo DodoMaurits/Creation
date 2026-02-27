@@ -2508,10 +2508,11 @@ function handleCombinationScreen(match, newElements) {
         showExplanationScreen({
           uitleg: {
             titel: match.uitleg.titel,
-            tekst: `Je hebt nog niet alles om ${match.uitleg.titel} te maken. Probeer eerst: ${requirements.join(", ")}.`,
+            // Geef alleen een neutrale tekst, geen hints van requirements
+            tekst: match.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!",
             type: "threshold"
           }
-        }, []); // geen nieuwe elementen
+        }, []); // geen nieuwe elementen, geen CREATE-knop
         return;
       }
     }
@@ -2557,26 +2558,33 @@ function showExplanationScreen(combination, newElements) {
   // Uitleg tekst
   const text = document.createElement("div");
   text.className = "result-quote";
-  text.innerHTML = combination.uitleg.tekst;
+  // Als er geen nieuwe elementen zijn (threshold nog niet gehaald), laat dan alleen neutrale tekst zien
+  if (!newElements || newElements.length === 0) {
+    text.innerHTML = combination.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!";
+  } else {
+    text.innerHTML = combination.uitleg.tekst;
+  }
 
-  // CREATE knop
-  const button = document.createElement("button");
-  button.className = "create-button";
-  button.textContent = "CREATE";
-
-  // Klik event → naar nieuwe elementen
-  button.onclick = (e) => {
-    e.stopPropagation(); // voorkomt dat click op overlay wordt getriggerd
-    overlay.remove();
-    renderNewElements(newElements);
-  };
-
-  // Voeg alles toe aan de box
   box.appendChild(title);
   box.appendChild(text);
-  box.appendChild(button);
-  overlay.appendChild(box);
 
+  // CREATE knop alleen toevoegen als er nieuwe elementen zijn
+  if (newElements && newElements.length > 0) {
+    const button = document.createElement("button");
+    button.className = "create-button";
+    button.textContent = "CREATE";
+
+    // Klik event → render nieuwe elementen
+    button.onclick = (e) => {
+      e.stopPropagation(); // voorkomt click op overlay
+      overlay.remove();
+      renderNewElements(newElements);
+    };
+
+    box.appendChild(button);
+  }
+
+  overlay.appendChild(box);
   document.body.appendChild(overlay);
 
   // Fade-in trigger
