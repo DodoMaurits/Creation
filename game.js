@@ -281,7 +281,7 @@ const combinaties = [
       }
     ]
   },
-//------------ THRESHOLD !: WATER --------------//
+//------------ THRESHOLD 1: WATER --------------//
   {
     input: [
       ["IJs", "Warmte"],
@@ -859,7 +859,21 @@ const combinaties = [
       { naam: "Luca", icoon: "icons/Luca.png", map: "Pril leven", 
         quote: "Life originated in the sea, and about eighty percent of it is still there <br><br>- Isaac Asimov"
       }
-    ]
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Leven", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        tijd: 4_400_000_000,
+        requirements: ["Rivier", "Tufsteen", "Koper", "Zure regen", "Kust", "Eiland", 
+          "Roest", "Zand", "Klei", "Glas", "Golf", "Wind", "Zout", "Kalk"]
+      },
+      normal: {
+        titel: "Leven",
+        tekst: "Eerste leven",
+        tijd: 4_400_000_000
+      }
+    }
   },
   {
     input: [
@@ -1285,7 +1299,7 @@ const combinaties = [
         quote: "The slates of Wales furnish one of the most striking examples of cleavage produced by pressure <br><br>- Archibald Geikie"
       }
     ]
-  },              
+  },
 //------------ THRESHOLD 3: CAMBRISCHE EXPLOSIE --------------//
   {
     input: ["Bilateria-voorouder", "Bot"],
@@ -1305,7 +1319,24 @@ const combinaties = [
       { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
         quote: "There is one living organism, called a tardigrade, that has survived the five great mass extinctions on Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures <br><br>- Alycia Carey"
       }
-    ]
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Cambrische Explosie", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        tijd: 541_000_000,
+        requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
+          "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
+          "Dood", "Stromatolieten", "Fotosynthese", "Amoebe", "Foraminiferen", "Stralendiertjes", 
+          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Schelp", "Rif", 
+          "Druk", "Tast", "Steenwortelalgen", "Kwallen", "Zeeanemonen", "Wormen", "Zeesterren"]
+      },
+      normal: {
+        titel: "Cambrische Explosie",
+        tekst: "De Cambrscche explosie...",
+        tijd: 541_000_000
+      }
+    }
   },
   {
     input: ["Druk", "Kalksteen"],
