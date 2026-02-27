@@ -2538,76 +2538,57 @@ function handleCombinationScreen(match, newElements) {
 
 // ----- VISUEEL SCHERM VOOR UITLEG -----
 function showExplanationScreen(combination, newElements) {
-  // Verwijder bestaande overlay als die er is
-  const oldOverlay = document.getElementById("result-overlay");
-  if (oldOverlay) oldOverlay.remove();
-
+  // overlay maken
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
   overlay.classList.add("visible");
 
-  // Box voor uitleg
+  // box
   const box = document.createElement("div");
-  box.className = "explanation-box fade-in";
-  
-  // Titel
+  box.className = "result-box fade-in explanation-box";
+
+  // inner wrapper
+  const content = document.createElement("div");
+  content.className = "explanation-content";
+
+  // titel
   const title = document.createElement("div");
   title.className = "explanation-title";
   title.textContent = combination.uitleg.titel;
 
-  // Uitleg tekst
+  // tekst
   const text = document.createElement("div");
   text.className = "explanation-text";
-  if (!newElements || newElements.length === 0) {
-    text.innerHTML = combination.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!";
-  } else {
-    text.innerHTML = combination.uitleg.tekst;
-  }
+  text.innerHTML = combination.uitleg.tekst || "";
 
-  box.appendChild(title);
-  box.appendChild(text);
+  content.appendChild(title);
+  content.appendChild(text);
 
-  // CREATE-knop of GA VERDER-knop
-  if (newElements && newElements.length > 0) {
-    // CREATE knop voor echte nieuwe elementen
-    const button = document.createElement("button");
-    button.className = "create-button";
-    button.textContent = "CREATE";
+  // CREATE/GA VERDER knop
+  const button = document.createElement("button");
+  button.className = "create-button";
+  button.textContent = (newElements && newElements.length) ? "CREATE" : "GA VERDER";
 
-    button.onclick = (e) => {
-      e.stopPropagation();
-      overlay.remove();
-      renderNewElements(newElements);
-    };
-
-    box.appendChild(button);
-  } else {
-    // Threshold niet gehaald → GA VERDER knop
-    const button = document.createElement("button");
-    button.className = "create-button"; // zelfde stijl als CREATE
-    button.textContent = "GA VERDER";
-
-    button.onclick = (e) => {
-      e.stopPropagation();
-      overlay.remove();
-
-      // Reset open maps, terug naar closed
+  button.onclick = (e) => {
+    e.stopPropagation();
+    overlay.remove();
+    if (newElements && newElements.length) renderNewElements(newElements);
+    else {
       leftSide.innerHTML = "";
       rightSide.innerHTML = "";
       openLeft = null;
       openRight = null;
-
       renderClosed();
       updateClosedContainer();
-    };
+    }
+  };
 
-    box.appendChild(button);
-  }
-
+  content.appendChild(button);
+  box.appendChild(content);
   overlay.appendChild(box);
   document.body.appendChild(overlay);
 
-  // Fade-in trigger
+  // fade-in
   setTimeout(() => overlay.classList.add("visible"), 20);
 }
 
