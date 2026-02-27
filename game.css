@@ -48,6 +48,8 @@ body {
 
 /* ---------------- ICONS & HOVERS ---------------- */
 .icon {
+  position: relative;
+  display: inline-block;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;  
 }
