@@ -435,11 +435,11 @@ body {
 /* Label */
 #timeline-label {
   position: absolute;
-  bottom: 35px;
-  left: 0; 
+  bottom: 85px; /* iets boven de timeline */
+  left: 0;
   transform: translateX(-50%);
   padding: 6px 12px;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0,0,0,0.75);
   border-radius: 10px;
   color: white;
   font-weight: normal;
@@ -448,6 +448,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
   transition: left 0.8s ease;
   pointer-events: none;
+  z-index: 1001; /* boven timeline */
 }
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
