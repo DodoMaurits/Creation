@@ -48,57 +48,55 @@ body {
 
 /* ---------------- ICONS & HOVERS ---------------- */
 .icon-container {
-  position: relative; /* al aanwezig, belangrijk voor pseudo-element */
+  position: relative;
   display: inline-block;
+  z-index: 0;
 }
 
-/* Glow + magische vonkjes */
+/* Pulserende permanente witte gloed met vonkjes */
 .icon-container::after {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 160%;      /* iets groter dan het icoon */
+  width: 160%;
   height: 160%;
   pointer-events: none;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, transparent 70%);
   filter: blur(12px);
-  opacity: 0.7;
   transform: translate(-50%, -50%) scale(1);
-  animation: glowPulse 2s infinite alternate, sparkFloat 3s infinite;
+  opacity: 0.8;
   z-index: -1; /* achter het icoon */
+  animation: glowPulse 2s infinite alternate, sparkFloat 3s infinite;
 }
 
 /* Pulsatie van glow */
 @keyframes glowPulse {
   0%   { transform: translate(-50%, -50%) scale(0.9); opacity: 0.5; }
-  50%  { transform: translate(-50%, -50%) scale(1.1); opacity: 0.9; }
+  50%  { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
   100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.5; }
 }
 
 /* Zwevende vonkjes effect */
 @keyframes sparkFloat {
-  0%   { box-shadow: 0 0 2px #fff, 0 0 5px #fff; }
-  25%  { box-shadow: 0 -2px 4px #fff, 2px 2px 6px #fff; }
-  50%  { box-shadow: -2px 2px 6px #fff, 2px -2px 4px #fff; }
-  75%  { box-shadow: 2px 0 5px #fff, -2px 0 5px #fff; }
-  100% { box-shadow: 0 0 2px #fff, 0 0 5px #fff; }
+  0%   { box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff; }
+  25%  { box-shadow: -2px 1px 3px #fff, 2px -2px 5px #fff, 1px 2px 4px #fff; }
+  50%  { box-shadow: 2px 2px 5px #fff, -1px -2px 6px #fff, -2px 1px 3px #fff; }
+  75%  { box-shadow: 1px -2px 4px #fff, -2px 2px 5px #fff, 2px -1px 6px #fff; }
+  100% { box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff; }
 }
 
 .icon {
   cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
   position: relative;
   display: inline-block;
-  z-index: 1; /*boven de glow */
+  z-index: 1; /* boven de glow */
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .icon:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 6px #9eff00)
-          drop-shadow(0 0 12px #9eff00)
-          drop-shadow(0 0 28px #00ff00);
+  transform: scale(1.12);
 }
 
 .icon.element {
