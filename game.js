@@ -2203,21 +2203,17 @@ function toggleSelect(el, img, side, mapNaam) {
 
 // ----- CHECK COMBINATIONS -----
 function checkCombination() {
-  // Pak de namen van de geselecteerde elementen
   const [a, b] = selected.map(e => e.naam);
 
-  // Zoek combinaties die exact matchen (inclusief omgekeerde volgorde)
   const matches = combinaties.filter(c => {
     if (typeof c.input[0] === "string") {
       return (c.input[0] === a && c.input[1] === b) || (c.input[0] === b && c.input[1] === a);
     }
-    // Meerdere sets mogelijk
     return c.input.some(set =>
       (set[0] === a && set[1] === b) || (set[0] === b && set[1] === a)
     );
   });
 
-  // ❌ Geen match → shake & reset
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
     selected.forEach(e => e.dom.classList.remove("selected"));
@@ -2228,22 +2224,25 @@ function checkCombination() {
   const firstMatch = matches[0];
 
   // 🔹 Threshold check
-  let finalUitleg = firstMatch.uitleg;
-  if (finalUitleg && finalUitleg.threshold) {
-    const requirements = finalUitleg.threshold.requirements || [];
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
+  let finalUitleg = null;
 
-    if (!allMet) {
-      // ❌ Nog niet alle requirements gehaald → threshold uitleg
-      showExplanationScreen({ uitleg: finalUitleg.threshold }, []);
-      selected.forEach(e => e.dom.classList.remove("selected"));
-      selected = [];
-      return;
+  if (firstMatch.uitleg) {
+    if (firstMatch.uitleg.threshold) {
+      const requirements = firstMatch.uitleg.threshold.requirements || [];
+      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+      const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
+
+      if (!allMet) {
+        // ❌ Nog niet alle requirements gehaald → threshold uitleg
+        showExplanationScreen({ uitleg: firstMatch.uitleg.threshold }, []);
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+        return;
+      }
     }
 
-    // ✅ Alle requirements gehaald → gebruik normale uitleg
-    finalUitleg = finalUitleg.normal;
+    // ✅ Alle requirements gehaald of geen threshold → gebruik normale uitleg
+    finalUitleg = firstMatch.uitleg.normal || null;
   }
 
   // 🔹 Nieuwe elementen maken
@@ -2259,11 +2258,9 @@ function checkCombination() {
         };
         mappen.push(map);
       }
-
       if (!map.elementen.find(e => e.naam === newEl.naam)) {
         map.elementen.push(newEl);
       }
-
       newElements.push(newEl);
     });
   });
