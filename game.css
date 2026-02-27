@@ -231,7 +231,6 @@ body {
 }
 
 /* ---------------- UITLEG ---------------- */
-/* ---------------- UITLEG ---------------- */
 .explanation-box {
   position: relative; /* nodig voor pseudo-element */
   height: 60dvh;
