@@ -2552,12 +2552,12 @@ function showExplanationScreen(combination, newElements) {
 
   // Titel
   const title = document.createElement("div");
-  title.className = "result-title";
+  title.className = "explanation-title";
   title.textContent = combination.uitleg.titel;
 
   // Uitleg tekst
   const text = document.createElement("div");
-  text.className = "result-quote";
+  text.className = "explanation-text";
   // Als er geen nieuwe elementen zijn (threshold nog niet gehaald), laat dan alleen neutrale tekst zien
   if (!newElements || newElements.length === 0) {
     text.innerHTML = combination.uitleg.tekst || "Je hebt nog niet alles om dit te maken. Probeer verder!";
