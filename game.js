@@ -1763,29 +1763,34 @@ function renderNewElements(elements) {
   }
 
   elements.forEach(el => {
-    box.classList.add("magic-icon");
-    
+  
+    const box = document.createElement("div");
+    box.className = "result-box fade-in magic-icon";
+  
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "result-image";
+  
     box.appendChild(img);
-    
+  
+    // ✨ particles
     for (let i = 0; i < 3; i++) {
       const particle = document.createElement("span");
       particle.className = "particle";
       box.appendChild(particle);
     }
-    img.className = "result-image";
-
+  
     const title = document.createElement("div");
     title.className = "result-title";
     title.innerHTML = el.naam;
-
+  
     const quote = document.createElement("div");
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
-
-    box.appendChild(img);
+  
     box.appendChild(title);
     box.appendChild(quote);
-
+  
     grid.appendChild(box);
   });
 
@@ -1882,22 +1887,17 @@ function renderClosed() {
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
+    img.onclick = () => openMap(map, img);
     
     container.appendChild(img);
     
-    // ✨ particles toevoegen
+    // ✨ particles
     for (let i = 0; i < 3; i++) {
       const particle = document.createElement("span");
       particle.className = "particle";
       container.appendChild(particle);
     }
-    img.onclick = () => openMap(map, img);
-
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = map.naam;
-
-    container.appendChild(img);
+    
     container.appendChild(tooltip);
     grid.appendChild(container);
   });
@@ -1995,39 +1995,48 @@ function closeMap(side) {
 
 // ----- RENDER SIDE -----
 function renderSide(parentContainer, map, side) {
+  // Maak parent leeg en zichtbaar
   parentContainer.innerHTML = "";
   parentContainer.classList.remove("hidden", "visible");
 
-  // --- Title van de open map ---
-  elContainer.className = "icon-container magic-icon";
-  elContainer.appendChild(img);
-  
-  // ✨ particles
+  // ------------------------
+  // 1️⃣ Titel van de map
+  // ------------------------
+  const titleContainer = document.createElement("div");
+  titleContainer.className = "icon-container magic-icon";
+
+  const titleImg = document.createElement("img");
+  titleImg.src = map.icoon;
+  titleImg.className = "icon map-title";
+  titleImg.onclick = () => closeMap(side);
+
+  titleContainer.appendChild(titleImg);
+
+  // ✨ particles rond titel
   for (let i = 0; i < 3; i++) {
     const particle = document.createElement("span");
     particle.className = "particle";
-    elContainer.appendChild(particle);
+    titleContainer.appendChild(particle);
   }
-  titleImg.onclick = () => closeMap(side);
 
   const titleTooltip = document.createElement("div");
   titleTooltip.className = "tooltip";
   titleTooltip.textContent = map.naam;
-
-  titleContainer.appendChild(titleImg);
   titleContainer.appendChild(titleTooltip);
+
   parentContainer.appendChild(titleContainer);
 
-  // --- Grid van elementen ---
+  // ------------------------
+  // 2️⃣ Grid van elementen
+  // ------------------------
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
-  // Dynamische layout
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  
+
+  // Dynamische layout
   if (!isMobile) {
-    // Desktop
     if (totalElements > 20) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
@@ -2038,43 +2047,51 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "20px";
     }
   } else {
-    // Mobiel: kleinere icoontjes, kleine gaps
     grid.style.gridTemplateColumns = "repeat(3, 50px)";
     grid.style.columnGap = "8px";
-    grid.style.rowGap = "10px";   // ⬅ hier je gewenste 10px
+    grid.style.rowGap = "10px";
   }
 
-    map.elementen.forEach(el => {
-      const elContainer = document.createElement("div");
-      elContainer.className = "icon-container";
+  // ------------------------
+  // 3️⃣ Voeg elementen toe
+  // ------------------------
+  map.elementen.forEach(el => {
+    const elContainer = document.createElement("div");
+    elContainer.className = "icon-container magic-icon";
 
-      const img = document.createElement("img");
-      img.src = el.icoon;
-      img.className = "icon element";
-      if (!isMobile) {
-        // desktop: maak iets kleiner als >20
-        if (totalElements > 20) {
-          img.style.width = "110px";
-          img.style.height = "110px";
-        } else {
-          img.style.width = "130px";
-          img.style.height = "130px";
-        }
-      }
-      img.onclick = () => toggleSelect(el, img, side, map.naam);
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "icon element";
 
-      const tooltip = document.createElement("div");
-      tooltip.className = "tooltip";
-      tooltip.textContent = el.naam;
+    // Pas grootte aan desktop
+    if (!isMobile) {
+      img.style.width = totalElements > 20 ? "110px" : "130px";
+      img.style.height = totalElements > 20 ? "110px" : "130px";
+    }
 
-      elContainer.appendChild(img);
-      elContainer.appendChild(tooltip);
-      grid.appendChild(elContainer);
-    });
-  
+    img.onclick = () => toggleSelect(el, img, side, map.naam);
+    elContainer.appendChild(img);
+
+    // ✨ particles rond elk element
+    for (let i = 0; i < 3; i++) {
+      const particle = document.createElement("span");
+      particle.className = "particle";
+      elContainer.appendChild(particle);
+    }
+
+    const tooltip = document.createElement("div");
+    tooltip.className = "tooltip";
+    tooltip.textContent = el.naam;
+    elContainer.appendChild(tooltip);
+
+    grid.appendChild(elContainer);
+  });
+
   parentContainer.appendChild(grid);
 
-  // --- Fade-in ---
+  // ------------------------
+  // 4️⃣ Fade-in
+  // ------------------------
   parentContainer.style.opacity = 0;
   setTimeout(() => {
     parentContainer.style.transition = "opacity 0.3s ease";
