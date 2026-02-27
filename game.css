@@ -233,8 +233,8 @@ body {
 /* ---------------- UITLEG ---------------- */
 .explanation-box {
   position: relative; /* nodig voor pseudo-element */
-  height: 60dvh;
-  width: 60dvw;
+  height: 90vh;
+  width: 80vw;
   background: rgba(0,0,0,0.7); /* donkere, semi-transparante achtergrond */
   padding: 40px;
   border-radius: 12px;
