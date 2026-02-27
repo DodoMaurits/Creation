@@ -20,8 +20,8 @@ html, body {
   opacity: 0.9;
 }
 
-/* ---------------- GOD ICON ---------------- */
-.god-icon {
+/* ---------------- OERKNAL ICON ---------------- */
+.oerknal-icon {
   width: auto;
   height: 45dvh;
   margin-top: 20px;
@@ -29,7 +29,7 @@ html, body {
   animation: floatUpDown 3s ease-in-out infinite;
 }
 
-.god-icon:hover {
+.oerknal-icon:hover {
   transform: scale(1.1);
 }
 
@@ -88,7 +88,7 @@ html, body {
 
 /* ---------------- MOBILE FRIENDLY CREATION PAGE ---------------- */
 @media (max-width: 900px) {
-            .god-icon {
+            .oerknal-icon {
               width: auto;
               height: 45dvh;
             }
