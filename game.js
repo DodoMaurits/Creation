@@ -2203,25 +2203,21 @@ function toggleSelect(el, img, side, mapNaam) {
 
 // ----- CHECK COMBINATIONS -----
 function checkCombination() {
+  // Pak de namen van de geselecteerde elementen
   const [a, b] = selected.map(e => e.naam);
 
+  // Zoek combinaties die exact matchen (inclusief omgekeerde volgorde)
   const matches = combinaties.filter(c => {
-
-    // Als input gewoon ["A","B"]
     if (typeof c.input[0] === "string") {
-      return (
-        (c.input[0] === a && c.input[1] === b) ||
-        (c.input[0] === b && c.input[1] === a)
-      );
+      return (c.input[0] === a && c.input[1] === b) || (c.input[0] === b && c.input[1] === a);
     }
-
-    // Als input meerdere mogelijke sets bevat
+    // Meerdere sets mogelijk
     return c.input.some(set =>
-      (set[0] === a && set[1] === b) ||
-      (set[0] === b && set[1] === a)
+      (set[0] === a && set[1] === b) || (set[0] === b && set[1] === a)
     );
   });
 
+  // ❌ Geen match → shake & reset
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
     selected.forEach(e => e.dom.classList.remove("selected"));
@@ -2229,37 +2225,31 @@ function checkCombination() {
     return;
   }
 
-  for (let match of matches) {
-  
-    // Als er een threshold bestaat
-    if (match.uitleg && match.uitleg.threshold) {
-  
-      const requirements = match.uitleg.threshold.requirements || [];
-      const allMet = requirements.every(r => unlockedElements.has(r));
-  
-      // ❌ Requirements NIET gehaald
-      if (!allMet) {
-        showExplanationScreen(
-          { uitleg: match.uitleg.threshold },
-          []
-        );
-  
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-        return;
-      }
-  
-      // ✅ Requirements WEL gehaald
-      match.uitleg = match.uitleg.normal;
+  const firstMatch = matches[0];
+
+  // 🔹 Threshold check
+  let finalUitleg = firstMatch.uitleg;
+  if (finalUitleg && finalUitleg.threshold) {
+    const requirements = finalUitleg.threshold.requirements || [];
+    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+    const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
+
+    if (!allMet) {
+      // ❌ Nog niet alle requirements gehaald → threshold uitleg
+      showExplanationScreen({ uitleg: finalUitleg.threshold }, []);
+      selected.forEach(e => e.dom.classList.remove("selected"));
+      selected = [];
+      return;
     }
+
+    // ✅ Alle requirements gehaald → gebruik normale uitleg
+    finalUitleg = finalUitleg.normal;
   }
 
   // 🔹 Nieuwe elementen maken
   const newElements = [];
-
   matches.forEach(match => {
     match.output.forEach(newEl => {
-
       let map = mappen.find(m => m.naam === newEl.map);
       if (!map) {
         map = {
@@ -2278,27 +2268,24 @@ function checkCombination() {
     });
   });
 
-  const firstMatch = matches[0];
-
-  if (firstMatch.uitleg) {
-    showExplanationScreen(firstMatch, newElements);
+  // 🔹 Toon uitleg of nieuwe elementen
+  if (finalUitleg) {
+    showExplanationScreen({ uitleg: finalUitleg }, newElements);
   } else {
     renderNewElements(newElements);
   }
 
+  // 🔹 Voeg unlocked elementen toe
   newElements.forEach(el => unlockedElements.add(el.naam));
 
-  // 🔹 Timeline
-  if (
-    firstMatch.uitleg &&
-    firstMatch.uitleg.type === "threshold" &&
-    firstMatch.uitleg.tijd !== undefined
-  ) {
-    const eventTime = Math.max(0, Math.min(maxTime, firstMatch.uitleg.tijd));
+  // 🔹 Timeline update
+  if (finalUitleg && finalUitleg.tijd !== undefined) {
+    const eventTime = Math.max(0, Math.min(maxTime, finalUitleg.tijd));
     const targetTime = Math.min(currentTime, eventTime);
     animateTimeline(targetTime);
   }
 
+  // 🔹 Reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
