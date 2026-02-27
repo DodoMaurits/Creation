@@ -2153,9 +2153,16 @@ updateTimelineLabel();
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
   if (!timelineLabel) return;
-  // omzetting in miljard jaar met 1 decimaal
+
   const miljard = (currentTime / 1_000_000_000).toFixed(1);
   timelineLabel.textContent = `${miljard} miljard jaar geleden`;
+
+  // Bereken positie op de tijdlijn
+  const percentage = ((maxTime - currentTime) / maxTime) * 100;
+
+  // Verplaats label horizontaal
+  timelineLabel.style.left = percentage + "%";
+  timelineLabel.style.transform = "translateX(-50%)";
 }
 
 function animateTimeline(newTime) {
