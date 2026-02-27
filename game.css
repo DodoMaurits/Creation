@@ -47,30 +47,51 @@ body {
 #right-side { left: 50% }
 
 /* ---------------- ICONS & HOVERS ---------------- */
-/* Wrapper voor iconen zodat glow + vonkjes mogelijk zijn */
+/* Wrapper iets groter zodat glow buiten het icoon zichtbaar is */
 .icon-wrapper {
   position: relative;
   display: inline-block;
+  width: 160px;  /* iets groter dan icoon */
+  height: 160px;
 }
 
-/* Iconen zelf */
+/* Icoon zelf, gecentreerd in wrapper */
 .icon {
-  display: block;
   width: 130px;
   height: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
-  position: relative;
+}
+
+/* Pulserende witte glow rondom icoon */
+.icon-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 8px #fff,
+    0 0 16px #fff,
+    0 0 32px #fff;
   animation: pulseGlow 2s infinite alternate;
+  z-index: 0;
 }
 
-/* Pulserende glow van het icoon */
+/* Pulserende animatie */
 @keyframes pulseGlow {
-  0% { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #fff); }
-  50% { filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #fff) drop-shadow(0 0 32px #fff); }
-  100% { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #fff); }
+  0% { box-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 16px #fff; }
+  50% { box-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 32px #fff; }
+  100% { box-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 16px #fff; }
 }
 
-/* Container voor zwevende vonkjes */
+/* Container voor vonkjes die buiten icoon bewegen */
 .spark-container {
   position: absolute;
   top: 0; left: 0;
@@ -79,18 +100,20 @@ body {
   z-index: 2;
 }
 
-/* Keyframes voor vonkjes */
+/* Keyframes voor vonkjes vanaf rand naar buiten */
 @keyframes sparkMove {
-  0% { transform: translate(0,0) scale(0.5); opacity: 0.3; }
+  0% { transform: translate(0,0) scale(0.5); opacity: 0.5; }
   50% { transform: translate(var(--dx), var(--dy)) scale(1); opacity: 1; }
-  100% { transform: translate(0,0) scale(0.5); opacity: 0.3; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(0); opacity: 0; }
 }
 
-/* Style voor elk vonkje */
 .spark {
   position: absolute;
   border-radius: 50%;
   background: white;
+  width: 3px; height: 3px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
   will-change: transform, opacity;
 }
 
