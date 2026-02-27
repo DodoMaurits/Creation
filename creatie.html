@@ -24,46 +24,52 @@
         or what happened before it banged" - Alan Guth</span>
     </div>
 
-    <!-- Uitlegveld, standaard verborgen -->
-    <div class="explanation-box" id="explanation-box" style="display: none;">
-      <div class="explanation-title">Welkom Ziener</div>
-      <div class="explanation-text">
-        Als Ziener bezit jij de magische kracht te ervaren wat is gebeurd. 
-        Combineer de elementen vanaf het prille begin, creëer tot je je weer in het heden bevindt en 
-        leer de weg van de ontstaansgeschiedenis correct te bewandelen.
-        <br><br>
-        Introductie
-        <br>
-        Uit de kern van alles groeide de kosmos.
-        In termen van kwantumfysica bestaat het kleinste wat we kunnen waarnemen uit een vacuüm, 
-        een energieveld met een energiewaarde van netto nul.
-        In dit vacuüm poppen kortstondige energiebelletjes op als kwantumschuim en vergaan,  
-        maar 13,8 miljard jaar geleden gebeurde iets bijzonders - een uitzonderlijke creatie.
-        In een fractie van een seconde nam de kern toe met een factor hoger dan 1000. 
-        Uit het allerheetste verspreidde bewegingsenergie zich met de groeispurt mee, 
-        en omdat temperatuur niks meer is dan de mate van chaotische bewegingsenergie van deeltjes, 
-        koelde de kosmos in razend tempo af.
-        De kosmos ontstond uit de kern door een fenomenale groeispurt ervan 
-        en nog altijd dijen de hemelen uit en koelen zij af.
-        De kosmos als het grootste en quantumschuim als het kleinste delen een energie-inhoud van netto nul 
-        – wat een werkelijkheid van symmetrie suggereert.
-        Maar daar tussenin - tussen het kleinste en het grootste, de groei en het begin -
-        werd een tijdelijke wereld gecreëerd die de symmetrie verbrak: de wereld van ruimtetijd.
+    <div class="explanation-overlay" id="explanation-overlay">
+      <div class="explanation-box">
+        <div class="explanation-title">Oerknal Uitleg</div>
+        <div class="explanation-text">
+          Als Ziener bezit jij de magische kracht te ervaren wat is gebeurd. 
+          Combineer de elementen vanaf het prille begin, creëer tot je je weer in het heden bevindt en 
+          leer de weg van de ontstaansgeschiedenis correct te bewandelen.
+          <br><br>
+          Introductie
+          <br>
+          Uit de kern van alles groeide de kosmos.
+          In termen van kwantumfysica bestaat het kleinste wat we kunnen waarnemen uit een vacuüm, 
+          een energieveld met een energiewaarde van netto nul.
+          In dit vacuüm poppen kortstondige energiebelletjes op als kwantumschuim en vergaan,  
+          maar 13,8 miljard jaar geleden gebeurde iets bijzonders - een uitzonderlijke creatie.
+          In een fractie van een seconde nam de kern toe met een factor hoger dan 1000. 
+          Uit het allerheetste verspreidde bewegingsenergie zich met de groeispurt mee, 
+          en omdat temperatuur niks meer is dan de mate van chaotische bewegingsenergie van deeltjes, 
+          koelde de kosmos in razend tempo af.
+          De kosmos ontstond uit de kern door een fenomenale groeispurt ervan 
+          en nog altijd dijen de hemelen uit en koelen zij af.
+          De kosmos als het grootste en quantumschuim als het kleinste delen een energie-inhoud van netto nul 
+          – wat een werkelijkheid van symmetrie suggereert.
+          Maar daar tussenin - tussen het kleinste en het grootste, de groei en het begin -
+          werd een tijdelijke wereld gecreëerd die de symmetrie verbrak: de wereld van ruimtetijd.
+        </div>
+        <button class="close-btn" id="close-btn">CREATE</button>
       </div>
     </div>
-  </div>
 
   <script>
     const icon = document.getElementById('oerknal-icon');
-    const explanationBox = document.getElementById('explanation-box');
-
+    const overlay = document.getElementById('explanation-overlay');
+    const closeBtn = document.getElementById('close-btn');
+  
     icon.addEventListener('click', () => {
-      // Toggle zichtbaarheid
-      if(explanationBox.style.display === 'none') {
-        explanationBox.style.display = 'flex';
-      } else {
-        explanationBox.style.display = 'none';
-      }
+      overlay.style.display = 'flex';
+    });
+  
+    closeBtn.addEventListener('click', () => {
+      overlay.style.display = 'none';
+    });
+  
+    // Optioneel: klik buiten de box sluit overlay
+    overlay.addEventListener('click', (e) => {
+      if(e.target === overlay) overlay.style.display = 'none';
     });
   </script>
 
