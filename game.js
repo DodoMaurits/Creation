@@ -48,9 +48,9 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "Water op Aarde",
-        tekst: "Oceaanvorming",
-        tijd: 4_400_000_000
+        titel: "Eerste symmetriebreking",
+        tekst: "De eerste symmetriebreking...",
+        tijd: 13_800_000_000
       }
     }
   },
