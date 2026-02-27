@@ -1996,40 +1996,37 @@ function renderSide(parentContainer, map, side) {
 
 function enhanceIconsWithGlow() {
   document.querySelectorAll('.icon').forEach(icon => {
-    // Maak wrapper
+    // Maak wrapper groter dan icoon
     const wrapper = document.createElement('div');
     wrapper.className = 'icon-wrapper';
-
-    // Plaats wrapper rond icon
     icon.parentNode.insertBefore(wrapper, icon);
     wrapper.appendChild(icon);
 
-    // Voeg spark-container toe
+    // Spark container
     const sparkContainer = document.createElement('div');
     sparkContainer.className = 'spark-container';
     wrapper.appendChild(sparkContainer);
 
-    // Voeg 10 willekeurige vonkjes toe
+    // Voeg 10 vonkjes toe
     for (let i = 0; i < 10; i++) {
       const spark = document.createElement('div');
       spark.className = 'spark';
-      spark.style.width = spark.style.height = `${Math.random()*4+2}px`;
-      spark.style.top = `${Math.random()*100}%`;
-      spark.style.left = `${Math.random()*100}%`;
-      spark.style.opacity = Math.random() * 0.8 + 0.2;
 
-      // Willekeurige animatie afstand
-      const dx = `${Math.random()*20-10}px`;
-      const dy = `${Math.random()*20-10}px`;
+      // willekeurige animatie richting buiten rand
+      const angle = Math.random() * 2 * Math.PI;
+      const distance = 50 + Math.random() * 20; // afstand vanaf rand
+      const dx = Math.cos(angle) * distance + 'px';
+      const dy = Math.sin(angle) * distance + 'px';
       spark.style.setProperty('--dx', dx);
       spark.style.setProperty('--dy', dy);
 
-      spark.style.animation = `sparkMove ${Math.random()*2+1}s infinite alternate`;
+      // willekeurige animatie duur
+      spark.style.animation = `sparkMove ${Math.random()*1.5 + 1.5}s infinite`;
 
       sparkContainer.appendChild(spark);
     }
   });
 }
 
-// ⚡ Roep aan na renderClosed() en renderSide()
+// Roep dit aan na renderClosed() en renderSide()
 enhanceIconsWithGlow();
