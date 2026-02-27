@@ -121,7 +121,7 @@ const combinaties = [
         uitleg: {
           titel: "Water op Aarde",
           tekst: "Oceaanvorming",
-          tijd: 13_800_000_000 - 4_400_000_000,
+          tijd: 4_400_000_000,
           type: "threshold", 
           requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", "Sterrenstelsel", "Radioacitiviteit"]
         }
@@ -2516,7 +2516,16 @@ function handleCombinationScreen(match, newElements) {
 
   // 🔹 Update tijdlijn als match een tijd heeft
   if (match.uitleg && match.uitleg.tijd !== undefined) {
-    animateTimeline(Math.min(currentTime, match.uitleg.tijd));
+  
+    const eventTime = match.uitleg.tijd;
+  
+    // Zorg dat tijd binnen 0 en 13.8 miljard blijft
+    const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
+  
+    // Alleen vooruit in de tijd (dus richting 0)
+    const targetTime = Math.min(currentTime, clampedTime);
+  
+    animateTimeline(targetTime);
   }
 }
 
