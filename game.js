@@ -2356,9 +2356,9 @@ function renderNewElements(elements) {
 
     const title = document.createElement("div");
     title.className = "result-title";
-    title.innerHTML = elnaam;
+    title.innerHTML = el.naam;
 
-    const quote = document..createElement("div");
+    const quote = document.createElement("div");
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
 
