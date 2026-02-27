@@ -2163,7 +2163,7 @@ function updateTimelineLabel() {
 
   const percentage = (maxTime - currentTime) / maxTime;
   
-  const offset = 100; // schuif label 100px naar rechts, pas aan naar wens
+  const offset = 60; // schuif label 100px naar rechts, pas aan naar wens
   const labelPos = timelineRect.left + percentage * timelineWidth + offset;
   
   timelineLabel.style.left = labelPos + "px";
