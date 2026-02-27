@@ -1882,29 +1882,34 @@ function renderClosed() {
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
-    
+
+    // ⚡ Map afbeelding
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
-    
     container.appendChild(img);
-    
-    // ✨ particles
+
+    // ✨ Particles
     for (let i = 0; i < 3; i++) {
       const particle = document.createElement("span");
       particle.className = "particle";
       container.appendChild(particle);
     }
-    
+
+    // 🏷 Tooltip
     const tooltip = document.createElement("div");
     tooltip.className = "tooltip";
     tooltip.textContent = map.naam;
     container.appendChild(tooltip);
+
+    // ✅ Voeg container toe aan de grid
+    grid.appendChild(container);
   });
 
   closedContainer.appendChild(grid);
 
+  // Center de closed container
   requestAnimationFrame(() => {
     updateClosedContainer();
     closedContainer.style.opacity = 1;
