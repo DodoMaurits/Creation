@@ -2177,7 +2177,7 @@ function animateTimeline(newTime) {
     updateTimelineLabel();
     
     const percentage = ((maxTime - currentTime) / maxTime) * 100;
-    
+
     if (timelineFill) {
       timelineFill.style.width = percentage + "%";
     }
@@ -2186,6 +2186,7 @@ function animateTimeline(newTime) {
     }
     if (progress < 1) requestAnimationFrame(step);
   }
+
   requestAnimationFrame(step);
 }
 
