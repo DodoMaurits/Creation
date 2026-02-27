@@ -78,7 +78,14 @@ const combinaties = [
       { naam: "Ster", icoon: "icons/Ster.png", map: "Heelal",
         quote: "Every star may be a sun to someone <br><br>-Carl Sagan"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "A Star Is Born",
+        tekst: "Stervorming...",
+        tijd: 13_600_000_000
+      }
+    }
   },
   {
     input: ["Ster", "Zwaartekracht"],
@@ -147,7 +154,14 @@ const combinaties = [
       { naam: "Saturnus", icoon: "icons/Saturnus.png", map: "Heelal",
         quote: "At depth on Jupiter and Saturn, the pressures are so great that atoms sweat electrons, and the air becomes a metal <br><br>- Carl Sagan"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Gasplaneten",
+        tekst: "Onze gasplaneten...",
+        tijd: 4_570_000_000
+      }
+    }
   },
   {
     input: ["Planeet", "IJs"],
@@ -158,7 +172,14 @@ const combinaties = [
       { naam: "Neptunus", icoon: "icons/Neptunus.png", map: "Heelal",
         quote: "We see it as Columbus saw America from the coast of Spain. Its movements have been felt, trembling along the far-reaching line of our analysis with a certainty hardly inferior to that of ocular demonstration <br><br>- William Herschel"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "IJsplaneten",
+        tekst: "Onze ijsplaneten...",
+        tijd: 4_570_000_000
+      }
+    }
   },
   {
     input: ["Planeet", "IJzer"],
@@ -175,7 +196,14 @@ const combinaties = [
       { naam: "Mercurius", icoon: "icons/Mercurius.png", map: "Heelal",
         quote: "I had rather be Mercury, the smallest among seven, resolving round the sun, than the first among five revolving round Saturn <br><br>- Johann von Goethe"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "IJzerplaneten",
+        tekst: "Onze ijzerplaneten...",
+        tijd: 4_570_000_000
+      }
+    }
   },
   {
     input: ["Lava", "Kou"],
@@ -197,7 +225,14 @@ const combinaties = [
       { naam: "De Maan", icoon: "icons/Maan.png", map: "Heelal",
         quote: "I always look up at the moon and see it as the single most romantic place within the cosmos <br><br>- Tom Hanks"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Grote Inslag van Theia",
+        tekst: "Onze broederplaneet...",
+        tijd: 4_527_000_000
+      }
+    }
   },
   {
     input: [
@@ -211,7 +246,14 @@ const combinaties = [
       { naam: "Granietmagma", icoon: "icons/Granietmagma.png", map: "Vuur",
         quote: "Of course the entire planet Earth consists of magma under us, and only the very inner-core is different <br><br>- Werner Herzog"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Platentektoniek",
+        tekst: "...",
+        tijd: 4_400_000_000
+      }
+    }
   },
   {
     input: ["Platentektoniek", "Lava"],
