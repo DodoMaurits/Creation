@@ -2167,16 +2167,22 @@ function updateTimelineLabel() {
 
 function animateTimeline(newTime) {
   const oldTime = currentTime;
-  const duration = 500; // halve seconde
+  const duration = 500;
   const start = performance.now();
 
   function step(timestamp) {
     const progress = Math.min((timestamp - start) / duration, 1);
     currentTime = oldTime + (newTime - oldTime) * progress;
+    
     updateTimelineLabel();
+    
+    const percentage = ((maxTime - currentTime) / maxTime) * 100;
+    
     if (timelineFill) {
-      const percentage = ((maxTime - currentTime) / maxTime) * 100;
       timelineFill.style.width = percentage + "%";
+    }
+    if (timelineLabel) {
+      timelineLabel.style.left = percentage + "%";
     }
     if (progress < 1) requestAnimationFrame(step);
   }
