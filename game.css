@@ -249,12 +249,13 @@ body {
 /* ---------------- UITLEG ---------------- */
 .explanation-box {
   position: relative; /* nodig voor pseudo-element */
-  height: auto;
-  max-height: 80dvh;
-  width: 40dvw;
-  padding: 40px 80px;
   background: rgba(0,0,0,0.2);
+  width: 40dvw;
+  height: auto;
+  max-height: 90dvh;
   border-radius: 12px;
+  padding: 80px;
+  box-sizing: border-box;
   color: white;
   text-align: center;
   font-family: "Times New Roman", serif;
