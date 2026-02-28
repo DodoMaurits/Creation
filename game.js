@@ -1567,45 +1567,58 @@ function showIntroHint() {
   setTimeout(() => {
     let target;
     let hintText;
+    let useArrow = true; // standaard gebruiken we pijl
     if (introStep === 0) {
       target = document.querySelector(".icon.map"); // eerste map links
       hintText = "open een groep";
     } else if (introStep === 1) {
       const maps = document.querySelectorAll(".icon.map");
-      target = maps[1] || maps[0]; // fallback op eerste als er maar 1 is
+      target = maps[1] || maps[0]; // tweede map rechts
       hintText = "open nog een groep";
+    } else if (introStep === 2) {
+      target = null;
+      hintText = "klik op oerknal en kou";
+      useArrow = false;
     } else {
-      return; // niets meer tonen
+      return; // alle hints gedaan
     }
-    if (!target) return;
-    const rect = target.getBoundingClientRect();
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
-    wrapper.style.left = rect.left + rect.width / 2 + "px";
-    wrapper.style.top = rect.top - 70 + "px";
-    wrapper.innerHTML = `
-      <div class="intro-text">${hintText}</div>
-      <svg width="180" height="60" viewBox="0 0 180 60">
-        <defs>
-          <marker id="arrowhead${introStep}" markerWidth="8" markerHeight="8"
-                  refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L0,6 L6,3 z" fill="#000" />
-          </marker>
-        </defs>
+    if (target) {
+      const rect = target.getBoundingClientRect();
+      wrapper.style.left = rect.left + rect.width / 2 + "px";
+      wrapper.style.top = rect.top - 70 + "px";
+    } else {
+      wrapper.style.left = window.innerWidth / 2 + "px";
+      wrapper.style.top = window.innerHeight / 2 - 50 + "px";
+      wrapper.style.textAlign = "center";
+    }
+    if (useArrow) {
+      wrapper.innerHTML = `
+        <div class="intro-text">${hintText}</div>
+        <svg width="180" height="60" viewBox="0 0 180 60">
+          <defs>
+            <marker id="arrowhead${introStep}" markerWidth="8" markerHeight="8"
+                    refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L6,3 z" fill="#000" />
+            </marker>
+          </defs>
 
-        <line x1="10" y1="50" x2="170" y2="10" class="intro-arrow" marker-end="url(#arrowhead${introStep})" />
-      </svg>
-    `;
+          <line x1="10" y1="50" x2="170" y2="10" class="intro-arrow" marker-end="url(#arrowhead${introStep})" />
+        </svg>
+      `;
+    } else {
+      wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
+    }
     document.body.appendChild(wrapper);
     function removeIntro() {
       wrapper.classList.add("fade-out");
       setTimeout(() => wrapper.remove(), 400);
       document.removeEventListener("click", removeIntro);
       introStep++;
-      showIntroHint();
+      showIntroHint(); // toon de volgende hint
     }
     document.addEventListener("click", removeIntro);
-
   }, 600);
 }
 
