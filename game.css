@@ -511,6 +511,7 @@ body {
   stroke: #000;
   stroke-width: 1.5;
   stroke-linecap: round;
+  fill: none;
   stroke-dasharray: 200;
   stroke-dashoffset: 200;
   animation: drawArrow 1.3s ease forwards;
@@ -519,32 +520,6 @@ body {
 
 @keyframes drawArrow {
   to { stroke-dashoffset: 0; }
-}
-
-/* Getekende pijl via CSS */
-.intro-wrapper.has-arrow::after {
-  content: '';
-  position: absolute;
-  width: 60px;      /* lengte van pijl */
-  height: 1.5px;    /* lijn dikte */
-  background: #000;
-  left: 50%;
-  top: 100%;        /* onder tekst */
-  transform: translateX(-50%) rotate(30deg); /* hoek of curve */
-  transform-origin: left center;
-}
-
-.intro-wrapper.has-arrow::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 10px solid #000; /* pijl punt */
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%) rotate(30deg);
 }
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
