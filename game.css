@@ -506,42 +506,6 @@ body {
   to { opacity: 1; }
 }
 
-/* halve cirkel pijl via ::after + marker */
-.intro-wrapper.has-arrow::after {
-  content: '';
-  position: absolute;
-  width: 80px;      /* horizontale lengte van halve cirkel */
-  height: 40px;     /* verticale hoogte */
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-  background: none;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
-  border-radius: 50% 50% 0 0;
-  animation: drawHalfCircle 1.3s ease forwards;
-  animation-delay: 0.5s;
-}
-
-/* punt van de pijl */
-.intro-wrapper.has-arrow::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 10px solid #000; 
-  left: calc(50% + 40px); /* einde halve cirkel */
-  top: 0;
-}
-
-/* animatie halve cirkel */
-@keyframes drawHalfCircle {
-  from { transform: translateX(-50%) scaleX(0); }
-  to   { transform: translateX(-50%) scaleX(1); }
-}
-
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
             body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto; }
