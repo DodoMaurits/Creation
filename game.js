@@ -1622,6 +1622,20 @@ function showIntroHint() {
       wrapper.style.textAlign = "center";
     }
     if (useArrow) {
+        const rect = target.getBoundingClientRect();
+        const wrapperWidth = 180;
+        const wrapperHeight = 80;
+        // lijn startpunt: onder de tekst
+        const startX = 10;
+        const startY = 10;
+        // lijn eindpunt: midden van icoon
+        const endX = rect.width / 2;
+        const endY = rect.height;
+        // controlepunten voor kromming
+        const cp1X = startX;
+        const cp1Y = startY + 30; // buig naar beneden
+        const cp2X = endX;
+        const cp2Y = endY - 30; // buig naar icoon
       wrapper.innerHTML = `
         <div class="intro-text">${hintText}</div>
         <svg width="180" height="60" viewBox="0 0 180 60">
