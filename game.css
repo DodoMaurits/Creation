@@ -135,6 +135,8 @@ body {
 .grid-elements .icon-container {
   display: inline-block;
   position: relative;
+  width: fit-content;
+  text-align: center;
 }
 
 .grid-elements .icon-container .tooltip {
