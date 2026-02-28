@@ -1521,6 +1521,8 @@ let openLeft = null;
 let openRight = null;
 let selected = [];
 let unlockedElements = new Set();
+let introStep = 0;
+
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -1535,7 +1537,6 @@ const rightSide = document.getElementById("right-side");
 
 // ----- INIT -----
 renderClosed();
-showIntroHint();
 requestAnimationFrame(() => {
     updateClosedContainer(); // nu correct gecentreerd
 });
@@ -1564,24 +1565,35 @@ function preloadAllIcons() {
 // ----- INTRO HINTS -----
 function showIntroHint() {
   setTimeout(() => {
-    const firstMap = document.querySelector(".icon.map");
-    if (!firstMap) return;
-    const rect = firstMap.getBoundingClientRect();
+    let target;
+    let hintText;
+    if (introStep === 0) {
+      target = document.querySelector(".icon.map"); // eerste map links
+      hintText = "open een groep";
+    } else if (introStep === 1) {
+      const maps = document.querySelectorAll(".icon.map");
+      target = maps[1] || maps[0]; // fallback op eerste als er maar 1 is
+      hintText = "open nog een groep";
+    } else {
+      return; // niets meer tonen
+    }
+    if (!target) return;
+    const rect = target.getBoundingClientRect();
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
-    // Plaats boven de map
     wrapper.style.left = rect.left + rect.width / 2 + "px";
     wrapper.style.top = rect.top - 70 + "px";
     wrapper.innerHTML = `
-      <div class="intro-text">open een groep</div>
+      <div class="intro-text">${hintText}</div>
       <svg width="180" height="60" viewBox="0 0 180 60">
         <defs>
-          <marker id="arrowhead" markerWidth="8" markerHeight="8"
+          <marker id="arrowhead${introStep}" markerWidth="8" markerHeight="8"
                   refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
             <path d="M0,0 L0,6 L6,3 z" fill="#000" />
           </marker>
         </defs>
-        <line x1="10" y1="50" x2="170" y2="10" class="intro-arrow" marker-end="url(#arrowhead)" />
+
+        <line x1="10" y1="50" x2="170" y2="10" class="intro-arrow" marker-end="url(#arrowhead${introStep})" />
       </svg>
     `;
     document.body.appendChild(wrapper);
@@ -1589,8 +1601,11 @@ function showIntroHint() {
       wrapper.classList.add("fade-out");
       setTimeout(() => wrapper.remove(), 400);
       document.removeEventListener("click", removeIntro);
+      introStep++;
+      showIntroHint();
     }
     document.addEventListener("click", removeIntro);
+
   }, 600);
 }
 
