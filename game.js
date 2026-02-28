@@ -1845,7 +1845,9 @@ function updateTimelineLabel() {
   let labelText;
 
   if (currentTime >= 1_000_000_000) {
-    labelText = (currentTime / 1_000_000_000).toFixed(2) + " miljard jaar geleden";
+    labelText = (currentTime / 1_000_000_000)
+      .toLocaleString("nl-NL", { maximumFractionDigits: 3 }) 
+      + " miljard jaar geleden";
   } else if (currentTime >= 1_000_000) {
     labelText = Math.round(currentTime / 1_000_000) + " miljoen jaar geleden";
   } else if (currentTime >= 1_000) {
