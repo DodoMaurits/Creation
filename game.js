@@ -1592,7 +1592,6 @@ function showIntroHint() {
   setTimeout(() => {
     let target = null;
     let hintText = "";
-    let useArrow = true;
 
     const maps = document.querySelectorAll(".icon.map");
 
@@ -1605,15 +1604,10 @@ function showIntroHint() {
     } else if (introStep === 2) {
       target = null;
       hintText = "klik op oerknal<br>en klik op kou om een combinatie te maken";
-      useArrow = false;
     }
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
-    if (useArrow) wrapper.classList.add("has-arrow");
-
-    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
-    document.body.appendChild(wrapper);
 
     // positionering wrapper
     if (target) {
