@@ -1608,7 +1608,10 @@ function showIntroHint() {
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
-
+    
+    // voeg hinttekst toe
+    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
+    
     // positionering wrapper
     if (target) {
       const rect = target.getBoundingClientRect();
@@ -1619,6 +1622,8 @@ function showIntroHint() {
       wrapper.style.top = window.innerHeight / 2 - 50 + "px";
       wrapper.style.textAlign = "center";
     }
+    
+    document.body.appendChild(wrapper);
 
     function removeIntro() {
       wrapper.classList.add("fade-out");
