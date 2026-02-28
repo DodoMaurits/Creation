@@ -68,7 +68,8 @@ body {
   border-radius: 50%;
   position: relative;
   z-index: 1;
-  background: #fff; /* het icoon zelf */
+  background: #fff;
+  overflow: visible;
 }
 
 .icon.map::before {
@@ -76,27 +77,49 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300%;
-  height: 300%;
-  transform: translate(-50%, -50%);
+  width: 400%;
+  height: 400%;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  background:
+    radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),
+    conic-gradient(from 0deg, rgba(255,255,255,0.8) 0deg 20deg, rgba(255,255,255,0) 20deg 40deg,
+                    rgba(255,255,255,0.8) 40deg 60deg, rgba(255,255,255,0) 60deg 360deg);
+  background-blend-mode: screen;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
-  filter: blur(8px);
-  opacity: 0.8;
-  animation: sunRays 2s infinite ease-in-out;
+  filter: blur(2px);
+  opacity: 0.9;
+  animation: sunFlare 1.5s infinite linear;
   pointer-events: none;
-  z-index: -1; /* achter het icoon */
+  z-index: -1;
 }
 
-@keyframes sunRays {
-  0%, 100% {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    opacity: 0.7;
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(45deg) scale(1.05);
-    opacity: 1;
-  }
+.icon.map::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350%;
+  height: 350%;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  background: conic-gradient(from 10deg, rgba(255,255,255,1) 0deg 30deg, rgba(255,255,255,0) 30deg 60deg, rgba(255,255,255,1) 60deg 360deg);
+  border-radius: 50%;
+  filter: blur(3px);
+  opacity: 0.8;
+  animation: sunFlare2 2s infinite linear reverse;
+  pointer-events: none;
+  z-index: -2;
+}
+
+@keyframes sunFlare {
+  0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); opacity: 0.8; }
+  50% { transform: translate(-50%, -50%) rotate(45deg) scale(1.05); opacity: 1; }
+  100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); opacity: 0.8; }
+}
+
+@keyframes sunFlare2 {
+  0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); opacity: 0.7; }
+  50% { transform: translate(-50%, -50%) rotate(-60deg) scale(1.08); opacity: 1; }
+  100% { transform: translate(-50%, -50%) rotate(-360deg) scale(1); opacity: 0.7; }
 }
 
 .icon.map:hover { transform: scale(1.12); }
