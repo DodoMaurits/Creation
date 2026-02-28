@@ -249,8 +249,8 @@ body {
   position: relative; /* nodig voor pseudo-element */
   height: auto;
   max-height: 80dvh;
-  width: 60dvw;
-  padding: 40px 30px;
+  width: 40dvw;
+  padding: 40px 80px;
   background: rgba(0,0,0,0.2);
   border-radius: 12px;
   color: white;
