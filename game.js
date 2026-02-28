@@ -41,27 +41,24 @@ const combinaties = [
         titel: "Symmetriebreking",
         tekst: `De oerknalfase duurde fracties van een seconde, waarin 4 keer de temperatuur zo laag daalde dat 
         het uitdijende energieveld spontaan de symmetrie verbrak, zoals water ijs wordt bij het vriespunt. 
+        De oerknal was voorbij met het bereiken van 10 miljoen graden – vergelijkbaar met het binnenste van een 
+        ster - en de 4 natuurkrachten waren geboren...
         
-        <br><br>De eerste symmetriebreking was die van zwaartekracht. Terwijl de oerknal de ruimte uit elkaar duwt, 
+        <br><br>1. Zwaartekracht. Terwijl de oerknal de ruimte uit elkaar duwt, 
         probeert deze natuurkracht energie en materie onderling bij elkaar te houden, als een natuurlijke 
         aantrekkingskracht.
         
-        <br><br>Bij temperaturen onder 10<sup>28</sup> graden brak de sterke nucleaire kracht, die de kleinste deeltjes,
+        <br><br>2. Onder de 10<sup>28</sup> graden brak de sterke nucleaire kracht, die de kleinste deeltjes,
         genaamd quarks, op miniscule afstanden bindt tot atoomkernen. Het heelal bestond nu echter nog uit een kokende soep 
         van massaloze deeltjes, kleiner dan een atoomkern zelf.
         
-        <br><br>Bij 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende materie en 
+        <br><br>3. Onder de 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende materie en 
         massaloze straling (fotonen). Door afwezigheid van de beweging afremmende massa, bewegen fotonen altijd op 
-        lichtsnelheid en kunnen afhankelijk van de frequentie vormen aannemen als radiogolven, uv-straling en licht verdeeld 
-        in alle kleuren van de regenboog.
+        lichtsnelheid en nemen vormen aan als radiogolven, uv-straling, licht en kleur.
         
-        <br><br>Tussen een miljoenste en tienduizendste van een seconde, bij 10<sup>13</sup> graden, viel de elektrozwakke 
-        kracht uiteen in zwakke kernkracht en elektromagnetische kracht. De zwakke kernkracht zorgt voor de omzetting en 
-        uitwisseling van energie, massa en elektromagnetische lading. Op zoek naar neutrale combinaties knetterden 
-        plasma's van de elektriciteit.
-        
-        <br><br>De oerknal was voorbij met het bereiken van 10 miljoen graden – vergelijkbaar met het binnenste van een 
-        ster. De 4 natuurkrachten waren geboren...`,
+        <br><br>4. Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
+        elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit. Op zoek naar 
+        neutrale combinaties knetterden plasma's van de elektriciteit`,
         tijd: 13_800_000_000
       }
     }
