@@ -1591,13 +1591,13 @@ function showIntroHint() {
   setTimeout(() => {
     let target;
     let hintText;
-    let useArrow = true; // standaard gebruiken we pijl
+    let useArrow = true; // standaard pijl tonen
     if (introStep === 0) {
-      target = document.querySelector(".icon.map"); // eerste map links
+      target = document.querySelector(".icon.map");
       hintText = "open een groep";
     } else if (introStep === 1) {
       const maps = document.querySelectorAll(".icon.map");
-      target = maps[1] || maps[0]; // tweede map rechts
+      target = maps[1] || maps[0];
       hintText = "open nog een groep";
     } else if (introStep === 2) {
       target = null;
@@ -1606,8 +1606,11 @@ function showIntroHint() {
     } else {
       return; // alle hints gedaan
     }
+
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
+    if (useArrow) wrapper.classList.add("has-arrow");
+
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -1617,30 +1620,16 @@ function showIntroHint() {
       wrapper.style.top = window.innerHeight / 2 - 50 + "px";
       wrapper.style.textAlign = "center";
     }
-    if (useArrow) {
-      wrapper.innerHTML = `
-        <div class="intro-text">${hintText}</div>
-        <svg width="180" height="60" viewBox="0 0 180 60">
-          <defs>
-            <marker id="arrowhead${introStep}" markerWidth="8" markerHeight="8"
-                    refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
-              <path d="M0,0 L0,6 L6,3 z" fill="#000" />
-            </marker>
-          </defs>
 
-          <line x1="10" y1="50" x2="170" y2="10" class="intro-arrow" marker-end="url(#arrowhead${introStep})" />
-        </svg>
-      `;
-    } else {
-      wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
-    }
+    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
     document.body.appendChild(wrapper);
+
     function removeIntro() {
       wrapper.classList.add("fade-out");
       setTimeout(() => wrapper.remove(), 400);
       document.removeEventListener("click", removeIntro);
       introStep++;
-      showIntroHint(); // toon de volgende hint
+      showIntroHint();
     }
     document.addEventListener("click", removeIntro);
   }, 600);
