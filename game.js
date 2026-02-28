@@ -1625,7 +1625,6 @@ function checkCombination() {
         return;
       }
     }
-
     // ✅ Alle requirements gehaald of geen threshold → gebruik normale uitleg
     finalUitleg = firstMatch.uitleg.normal || null;
   }
@@ -1843,21 +1842,29 @@ function animateTimeline(newTime) {
 function updateTimelineLabel() {
   if (!timelineLabel || !timelineFill) return;
 
-  const miljard = (currentTime / 1_000_000_000).toFixed(1);
-  timelineLabel.textContent = `${miljard} miljard jaar geleden`;
+  let labelText;
+
+  if (currentTime >= 1_000_000_000) {
+    labelText = (currentTime / 1_000_000_000).toFixed(2) + " miljard jaar geleden";
+  } else if (currentTime >= 1_000_000) {
+    labelText = Math.round(currentTime / 1_000_000) + " miljoen jaar geleden";
+  } else if (currentTime >= 1_000) {
+    labelText = Math.round(currentTime / 1_000) + " duizend jaar geleden";
+  } else {
+    labelText = Math.round(currentTime) + " jaar geleden";
+  }
+
+  timelineLabel.textContent = labelText;
 
   const timeline = timelineFill.parentElement;
   const timelineRect = timeline.getBoundingClientRect();
   const timelineWidth = timeline.offsetWidth;
-
   const percentage = (maxTime - currentTime) / maxTime;
-  
-  const offset = 16; // schuif label naar rechts, pas aan naar wens
+  const offset = 16;
   const labelPos = timelineRect.left + percentage * timelineWidth + offset;
   
   timelineLabel.style.left = labelPos + "px";
   timelineLabel.style.transform = "translateX(-50%)";
-
   timelineFill.style.width = (percentage * 100) + "%";
 }
 
@@ -1945,10 +1952,7 @@ function openMap(map, clickedImg) {
   } else {
     return; // beide open → niks doen
   }
-
-  // Render de map meteen
   renderSide(container, map, side);
-
   updateClosedContainer();
 }
 
