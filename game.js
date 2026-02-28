@@ -1535,7 +1535,7 @@ const rightSide = document.getElementById("right-side");
 
 // ----- INIT -----
 renderClosed();
-
+showIntroHint();
 requestAnimationFrame(() => {
     updateClosedContainer(); // nu correct gecentreerd
 });
@@ -1559,6 +1559,38 @@ function preloadAllIcons() {
   });
 
   console.log("Alle iconen worden vooraf geladen!");
+}
+
+function showIntroHint() {
+  // Alleen tonen als het nog nooit is getoond
+  if (localStorage.getItem("introShown")) return;
+
+  // Wacht tot maps gerenderd zijn
+  setTimeout(() => {
+    const firstMap = document.querySelector(".icon.map");
+    if (!firstMap) return;
+
+    const hint = document.createElement("div");
+    hint.className = "intro-hint";
+    hint.textContent = "open een groep";
+
+    document.body.appendChild(hint);
+
+    // Positioneer rond eerste map-icoon
+    const rect = firstMap.getBoundingClientRect();
+    hint.style.left = rect.left + rect.width / 2 + "px";
+    hint.style.top = rect.top - 30 + "px";
+
+    // Na paar seconden verdwijnen
+    setTimeout(() => {
+      hint.classList.add("fade-out");
+      setTimeout(() => hint.remove(), 1000);
+    }, 4000);
+
+    // Markeer als getoond
+    localStorage.setItem("introShown", "true");
+
+  }, 600);
 }
 
 // ----- SELECT ELEMENT -----
