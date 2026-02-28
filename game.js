@@ -1587,39 +1587,29 @@ function preloadAllIcons() {
 }
 
 // ----- INTRO HINTS -----
-// ----- INTRO HINTS -----
 function showIntroHint() {
-  if (introStep > 2) return; // alle hints gedaan
+  if (introStep > 2) return;
 
   setTimeout(() => {
+    const maps = document.querySelectorAll(".icon.map");
     let target = null;
     let hintText = "";
     let useArrow = true;
 
-    const maps = document.querySelectorAll(".icon.map");
-
-    if (introStep === 0) {
-      target = maps[0]; // eerste map links
-      hintText = "open een groep";
-    } else if (introStep === 1) {
-      target = maps[1]; // tweede map rechts
-      hintText = "open nog een groep";
-    } else if (introStep === 2) {
-      target = null;
-      hintText = "klik op oerknal en<br>klik op kou om een combinatie te maken";
-      useArrow = false;
-    }
+    if (introStep === 0) { target = maps[0]; hintText = "open een groep"; }
+    else if (introStep === 1) { target = maps[1]; hintText = "open nog een groep"; }
+    else { hintText = "klik op oerknal en<br>klik op kou om een combinatie te maken"; useArrow = false; }
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     if (useArrow) wrapper.classList.add("has-arrow");
 
-    // positionering
+    // positioneer wrapper
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
       wrapper.style.top = rect.top - 80 + "px";
-      // voor CSS-pijl opslaan van target center
+      // SVG kan target center ophalen via dataset
       wrapper.dataset.targetX = rect.left + rect.width / 2;
       wrapper.dataset.targetY = rect.top + rect.height / 2;
     } else {
@@ -1628,7 +1618,20 @@ function showIntroHint() {
       wrapper.style.textAlign = "center";
     }
 
-    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
+    // innerHTML met inline SVG voor kromme pijl
+    wrapper.innerHTML = `
+      <div class="intro-text">${hintText}</div>
+      ${useArrow ? `
+      <svg class="intro-arrow-svg" width="200" height="100">
+        <path d="M10,0 C60,40,140,40,190,90" stroke="#000" stroke-width="2" fill="transparent" marker-end="url(#arrowhead)"/>
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#000" />
+          </marker>
+        </defs>
+      </svg>` : ''}
+    `;
+
     document.body.appendChild(wrapper);
 
     function removeIntro() {
