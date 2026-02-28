@@ -102,7 +102,12 @@ const combinaties = [
     uitleg: {
       normal: {
         titel: "A Star Is Born",
-        tekst: "Stervorming...",
+        tekst: `Zwaartekracht werd sterker en sterker naarmate massa door afremming dichter bij elkaar kwam. Kubus voor
+        kubus werd het heelal korreliger en klonteriger. Bij het botsen van materie kwam opnieuw energie vrij dat lokaal
+        temperaturen opdreef. Klonterige gaswolken begonnen hun eigen hitte te produceren met als climax het bereiken van 
+        de 10 miljoen graden. Atomen vielen weer uit elkaar en plasma's knetterden weer van elektriciteit, waarbij
+        triljoenen protonen zich fuseerden tot heliumkernen. De enorme energie verhit de kern dusdanig dat deze uitzet en 
+        tegen de zwaartekracht in duwt. Zie daar, de eerste generatie sterren.`,
         tijd: 13_600_000_000
       }
     }
@@ -116,7 +121,23 @@ const combinaties = [
       { naam: "Supernova", icoon: "icons/Supernova.png", map: "Heelal",
         quote: "A supernova is one of the most powerful explosions in the universe. It's so luminous, it can be seen across billions of light years. It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime<br><br>- Neil Tyson"
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Supernova",
+        tekst: `Wanneer sterren opbranden, bezwijkt de kern onder de eigen zwaartekracht. Door de implosie stijgt de 
+        temperatuur van de kern opnieuw, maar ditmaal met koele rode buitenlagen. Als deze rode reus genoeg massa heeft, 
+        drukt de zwaartekracht de kern zo sterk samen dat ze heter wordt dan ooit tevoren. Uiteindelijk verandert elke kern 
+        zo in een compacte ijzeren bol.
+        <br><br>Stadia van inkrimpen en uitdijen volgen elkaar op tot echt geen energie meer kan worden opgewekt, waarna 
+        de buitenste lagen worden weggeblazen en een extreem dichte, witte dwerg overblijft. De zwaartekracht kan materie
+        aantrekken van een nabije ster en zo een explosie veroorzaken die zo heet kan zijn, dat het veel van de
+        resterende elementen uit het periodiek systeem kan creëren. Als dit niet het geval is, kan de kern in minder dan
+        een seconde door de eigen extreme zwaartekracht met enorm geweld in elkaar smijten, en zo even veel energie
+        produceren als een heel sterrenstelsel, waarbij de laatste zware elementen de ruimte in zijn geslingerd.`,
+        tijd: 13_600_000_000
+      }
+    }
   },
   {
     input: [
