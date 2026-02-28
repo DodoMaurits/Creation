@@ -89,9 +89,10 @@ html, body {
 
 /* ---------------- UITLEG ---------------- */
 .explanation-overlay {
-  display: none; /* standaard verborgen */
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
+  display: flex;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.7);
@@ -101,8 +102,9 @@ html, body {
 }
 
 .explanation-overlay.active {
-  display: flex;
+  visibility: visible;
   opacity: 1;
+  transition-delay: 0s;
 }
 
 .explanation-box {
@@ -111,6 +113,8 @@ html, body {
   width: 60dvw;
   height: 60dvh;
   border-radius: 12px;
+  padding: 40px;
+  box-sizing: border-box;
   color: white;
   text-align: center;
   font-family: "Times New Roman", serif;
@@ -148,6 +152,9 @@ html, body {
   font-family: "Times New Roman", sans-serif;
   font-size: 18px;
   line-height: 1.4;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .explanation-text p {
