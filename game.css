@@ -293,6 +293,10 @@ body {
   font-family: "Times New Roman", sans-serif;
   font-size: 18px;
   line-height: 1.4;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  word-break: normal;
 }
 
 /* ---------------- CREATE BUTTON VOOR UITLEG-OVERLAY ---------------- */
