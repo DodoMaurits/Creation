@@ -283,6 +283,7 @@ body {
 .explanation-title {
   font-family: "Cinzel", serif;
   font-size: 36px;
+  margin-bottom: 16px;
 }
 
 .explanation-text {
