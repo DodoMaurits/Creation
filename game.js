@@ -1553,7 +1553,6 @@ let selected = [];
 let unlockedElements = new Set();
 let introStep = 0;
 
-
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
 const maxTime = 13_800_000_000;   // leeftijd universum
@@ -1568,13 +1567,12 @@ const rightSide = document.getElementById("right-side");
 // ----- INIT -----
 renderClosed();
 requestAnimationFrame(() => {
-    updateClosedContainer(); // nu correct gecentreerd
+    updateClosedContainer();
+    showIntroHint();
 });
 
 updateTimelineLabel();
-
 preloadAllIcons();
-
 // ----- PRELOAD -----
 function preloadAllIcons() {
   const urls = [...new Set(
