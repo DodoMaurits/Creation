@@ -52,18 +52,14 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;  
 }
 
-.icon:hover {
-  transform: scale(1.1);
-}
+.icon:hover { transform: scale(1.1); }
 
 .icon.element {
   width: 130px;
   height: 130px;
 }
 
-.icon.element:hover {
-  transform: scale(1.15);
-}
+.icon.element:hover { transform: scale(1.15); }
 
 .icon.map {
   width: 145px;
@@ -71,9 +67,7 @@ body {
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
 }
 
-.icon.map:hover {
-  transform: scale(1.12);
-}
+.icon.map:hover { transform: scale(1.12); }
 
 .icon.map-title {
   width: 145px; 
@@ -84,9 +78,7 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.icon.map-title:hover {
-  transform: scale(1.12);
-}
+.icon.map-title:hover { transform: scale(1.12); }
 
 /* ================= TOOLTIP ================= */
 .icon-container {
@@ -113,9 +105,7 @@ body {
   z-index: 10;
 }
 
-.icon-container:hover .tooltip {
-  opacity: 1;
-}
+.icon-container:hover .tooltip { opacity: 1; }
 
 /* Alleen tooltips van elementen in open maps corrigeren */
 .grid-elements .icon-container {
