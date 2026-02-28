@@ -1587,35 +1587,41 @@ function preloadAllIcons() {
 }
 
 // ----- INTRO HINTS -----
+// ----- INTRO HINTS -----
 function showIntroHint() {
+  if (introStep > 2) return; // alle hints gedaan
+
   setTimeout(() => {
-    let target;
-    let hintText;
-    let useArrow = true; // standaard pijl tonen
+    let target = null;
+    let hintText = "";
+    let useArrow = true;
+
+    const maps = document.querySelectorAll(".icon.map");
+
     if (introStep === 0) {
-      target = document.querySelector(".icon.map");
+      target = maps[0]; // eerste map links
       hintText = "open een groep";
     } else if (introStep === 1) {
-      const maps = document.querySelectorAll(".icon.map");
-      target = maps[1] || maps[0];
+      target = maps[1]; // tweede map rechts
       hintText = "open nog een groep";
     } else if (introStep === 2) {
       target = null;
-      hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
+      hintText = "klik op oerknal en<br>klik op kou om een combinatie te maken";
       useArrow = false;
-    } else {
-      return;
     }
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     if (useArrow) wrapper.classList.add("has-arrow");
 
-    // Positie van de tekst
+    // positionering
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
-      wrapper.style.top = rect.top - 70 + "px";
+      wrapper.style.top = rect.top - 80 + "px";
+      // voor CSS-pijl opslaan van target center
+      wrapper.dataset.targetX = rect.left + rect.width / 2;
+      wrapper.dataset.targetY = rect.top + rect.height / 2;
     } else {
       wrapper.style.left = window.innerWidth / 2 + "px";
       wrapper.style.top = window.innerHeight / 2 - 50 + "px";
@@ -1625,62 +1631,9 @@ function showIntroHint() {
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
     document.body.appendChild(wrapper);
 
-    if (useArrow && target) {
-      const rect = target.getBoundingClientRect();
-      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-      svg.classList.add("intro-svg");
-      svg.setAttribute("width", window.innerWidth);
-      svg.setAttribute("height", window.innerHeight);
-      svg.style.position = "fixed";
-      svg.style.left = 0;
-      svg.style.top = 0;
-      svg.style.pointerEvents = "none";
-      svg.style.zIndex = 2999;
-
-      // Startpunt onder de tekst
-      const startX = wrapper.offsetLeft;
-      const startY = wrapper.offsetTop + wrapper.offsetHeight;
-
-      // Eindpunt: midden icoon
-      const endX = rect.left + rect.width / 2;
-      const endY = rect.top + rect.height / 2;
-
-      // Controlepunten voor mooie kromme
-      const cp1X = startX;
-      const cp1Y = startY + 50;
-      const cp2X = endX;
-      const cp2Y = endY - 50;
-
-      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      path.setAttribute("d", `M${startX},${startY} C${cp1X},${cp1Y} ${cp2X},${cp2Y} ${endX},${endY}`);
-      path.setAttribute("class", "intro-arrow");
-
-      // Marker voor pijlpunt
-      const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
-      const marker = document.createElementNS("http://www.w3.org/2000/svg", "marker");
-      marker.setAttribute("id", `arrowhead${introStep}`);
-      marker.setAttribute("markerWidth", "8");
-      marker.setAttribute("markerHeight", "8");
-      marker.setAttribute("refX", "0");
-      marker.setAttribute("refY", "3");
-      marker.setAttribute("orient", "auto");
-      marker.setAttribute("markerUnits", "strokeWidth");
-      const arrowPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      arrowPath.setAttribute("d", "M0,0 L0,6 L6,3 z");
-      arrowPath.setAttribute("fill", "#000");
-      marker.appendChild(arrowPath);
-      defs.appendChild(marker);
-      svg.appendChild(defs);
-
-      path.setAttribute("marker-end", `url(#arrowhead${introStep})`);
-      svg.appendChild(path);
-      document.body.appendChild(svg);
-    }
-
     function removeIntro() {
       wrapper.classList.add("fade-out");
       setTimeout(() => wrapper.remove(), 400);
-      document.querySelectorAll(".intro-svg").forEach(s => s.remove());
       document.removeEventListener("click", removeIntro);
       introStep++;
       showIntroHint();
