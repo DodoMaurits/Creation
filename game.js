@@ -1569,6 +1569,7 @@ requestAnimationFrame(() => {
 
 updateTimelineLabel();
 preloadAllIcons();
+
 // ----- PRELOAD -----
 function preloadAllIcons() {
   const urls = [...new Set(
@@ -1577,12 +1578,10 @@ function preloadAllIcons() {
       ...map.elementen.map(el => el.icoon)
     ])
   )];
-
   urls.forEach(url => {
     const img = new Image();
     img.src = url;
   });
-
   console.log("Alle iconen worden vooraf geladen!");
 }
 
@@ -1609,8 +1608,7 @@ function showIntroHint() {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
       wrapper.style.top = rect.top - 80 + "px";
-      // SVG kan target center ophalen via dataset
-      wrapper.dataset.targetX = rect.left + rect.width / 2;
+      wrapper.dataset.targetX = rect.left + rect.width / 2 - 20; // tikje links
       wrapper.dataset.targetY = rect.top + rect.height / 2;
     } else {
       wrapper.style.left = window.innerWidth / 2 + "px";
@@ -1618,15 +1616,18 @@ function showIntroHint() {
       wrapper.style.textAlign = "center";
     }
 
-    // innerHTML met inline SVG voor kromme pijl
     wrapper.innerHTML = `
       <div class="intro-text">${hintText}</div>
       ${useArrow ? `
-      <svg class="intro-arrow-svg" width="200" height="100">
-        <path d="M10,0 C60,40,140,40,190,90" stroke="#000" stroke-width="2" fill="transparent" marker-end="url(#arrowhead)"/>
+      <svg class="intro-arrow-svg" width="220" height="120">
+        <!-- halve cirkel curve -->
+        <path d="M10,0 
+                 C10,60 210,60 210,110"
+              stroke="#000" stroke-width="2" fill="transparent" 
+              marker-end="url(#arrowhead)"/>
         <defs>
           <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
-            <path d="M0,0 L0,6 L6,3 z" fill="#000" />
+            <path d="M0,0 L0,6 L6,3 z" fill="#000"/>
           </marker>
         </defs>
       </svg>` : ''}
