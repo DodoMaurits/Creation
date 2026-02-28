@@ -110,8 +110,8 @@ html, body {
 .explanation-box {
   position: relative;
   background: rgba(0,0,0,0.5);
-  width: 60dvw;
-  height: 60dvh;
+  width: 40dvw;
+  height: 80dvh;
   border-radius: 12px;
   padding: 80px;
   box-sizing: border-box;
