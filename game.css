@@ -521,6 +521,32 @@ body {
   to { stroke-dashoffset: 0; }
 }
 
+/* Getekende pijl via CSS */
+.intro-wrapper.has-arrow::after {
+  content: '';
+  position: absolute;
+  width: 60px;      /* lengte van pijl */
+  height: 1.5px;    /* lijn dikte */
+  background: #000;
+  left: 50%;
+  top: 100%;        /* onder tekst */
+  transform: translateX(-50%) rotate(30deg); /* hoek of curve */
+  transform-origin: left center;
+}
+
+.intro-wrapper.has-arrow::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #000; /* pijl punt */
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) rotate(30deg);
+}
+
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
             body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto; }
