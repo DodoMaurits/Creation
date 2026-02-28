@@ -90,6 +90,8 @@ html, body {
 /* ---------------- UITLEG ---------------- */
 .explanation-overlay {
   display: none; /* standaard verborgen */
+  opacity: 0;
+  transition: opacity 0.3s ease;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.7);
@@ -100,6 +102,7 @@ html, body {
 
 .explanation-overlay.active {
   display: flex;
+  opacity: 1;
 }
 
 .explanation-box {
