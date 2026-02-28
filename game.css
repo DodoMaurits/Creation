@@ -474,6 +474,28 @@ body {
   z-index: 1001; /* boven timeline */
 }
 
+/* ---------------- INTRO HINTS ---------------- */
+.intro-hint {
+  position: fixed;
+  transform: translateX(-50%);
+  font-family: "Brush Script MT", cursive;
+  font-size: 22px;
+  color: rgba(200,200,200,0.8);
+  pointer-events: none;
+  z-index: 3000;
+  animation: floatHint 2s ease-in-out infinite alternate;
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@keyframes floatHint {
+  0% { transform: translate(-50%, 0); }
+  100% { transform: translate(-50%, -6px); }
+}
+
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
             body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto; }
