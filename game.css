@@ -64,7 +64,14 @@ body {
 .icon.map {
   width: 145px;
   height: 145px;
-  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
+  border-radius: 50%; /* optioneel, voor ronde gloed */
+  box-shadow: 0 0 20px 10px rgba(255,255,255,0.5);
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px 10px rgba(255,255,255,0.5); }
+  50% { box-shadow: 0 0 40px 20px rgba(255,255,255,0.8); }
 }
 
 .icon.map:hover { transform: scale(1.12); }
