@@ -1601,7 +1601,7 @@ function showIntroHint() {
       hintText = "open nog een groep";
     } else if (introStep === 2) {
       target = null;
-      hintText = "klik op oerknal en klik op kou om een combinatie te maken";
+      hintText = "klik op oerknal en klik op kou<br> om een combinatie te maken";
       useArrow = false;
     } else {
       return; // alle hints gedaan
