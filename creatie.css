@@ -93,8 +93,8 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 900px;
-  height: 900px;
+  width: 60dvw;
+  height: 60dvh;
   background: rgba(0,0,0,0.7);
   justify-content: center;
   align-items: center;
@@ -104,8 +104,8 @@ html, body {
 .explanation-box {
   position: relative;
   background: rgba(0,0,0,0.5);
-  width: 900px;
-  height: 900px;
+  width: 60dvw;
+  height: 60dvh;
   border-radius: 12px;
   color: white;
   text-align: center;
