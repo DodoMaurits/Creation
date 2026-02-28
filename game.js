@@ -1587,23 +1587,35 @@ function preloadAllIcons() {
 
 // ----- INTRO HINTS -----
 function showIntroHint() {
-  if (introStep > 2) return;
+  if (introStep > 2) return; // alle hints gedaan
 
   setTimeout(() => {
-    const maps = document.querySelectorAll(".icon.map");
     let target = null;
     let hintText = "";
     let useArrow = true;
 
-    if (introStep === 0) { target = maps[0]; hintText = "open een groep"; }
-    else if (introStep === 1) { target = maps[1]; hintText = "open nog een groep"; }
-    else { hintText = "klik op oerknal en<br>klik op kou"; useArrow = false; }
+    const maps = document.querySelectorAll(".icon.map");
+
+    if (introStep === 0) {
+      target = maps[0]; // linker map
+      hintText = "open een groep";
+    } else if (introStep === 1) {
+      target = maps[1]; // rechter map
+      hintText = "open nog een groep";
+    } else if (introStep === 2) {
+      target = null;
+      hintText = "klik op oerknal<br>en klik op kou om een combinatie te maken";
+      useArrow = false;
+    }
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     if (useArrow) wrapper.classList.add("has-arrow");
 
-    // positie wrapper boven tekst
+    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
+    document.body.appendChild(wrapper);
+
+    // positionering wrapper
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -1613,19 +1625,6 @@ function showIntroHint() {
       wrapper.style.top = window.innerHeight / 2 - 50 + "px";
       wrapper.style.textAlign = "center";
     }
-
-    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>
-      ${useArrow ? `
-      <svg class="intro-arrow-svg" width="100" height="60">
-        <path d="M0,50 Q50,0 100,50" stroke="#000" stroke-width="2" fill="transparent" marker-end="url(#arrowhead)"/>
-        <defs>
-          <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
-            <path d="M0,0 L0,6 L6,3 z" fill="#000"/>
-          </marker>
-        </defs>
-      </svg>` : ''}`;
-
-    document.body.appendChild(wrapper);
 
     function removeIntro() {
       wrapper.classList.add("fade-out");
