@@ -251,9 +251,10 @@ body {
 /* ---------------- UITLEG ---------------- */
 .explanation-box {
   position: relative; /* nodig voor pseudo-element */
-  height: 60dvh;
+  height: auto;
+  max-height: 80dvh;
   width: 60dvw;
-  background: rgba(0,0,0,0.2); /* donkere, semi-transparante achtergrond */
+  background: rgba(0,0,0,0.2);
   border-radius: 12px;
   color: white;
   text-align: center;
@@ -262,7 +263,6 @@ body {
   line-height: 1.5;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
   overflow: hidden; /* pseudo-element niet buiten laten steken */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,9 +277,9 @@ body {
   left: 15px;
   right: 15px;
   bottom: 15px;
-  border: 2px solid white; /* dikte van de lijn */
-  border-radius: 10px;     /* iets kleiner dan main box */
-  pointer-events: none;    /* klikbaar niet beïnvloeden */
+  border: 2px solid white; 
+  border-radius: 10px;
+  pointer-events: none; 
   opacity: 0.7;
 }
 
