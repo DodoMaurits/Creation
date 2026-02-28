@@ -1561,36 +1561,47 @@ function preloadAllIcons() {
   console.log("Alle iconen worden vooraf geladen!");
 }
 
+// ----- INTRO HINTS -----
 function showIntroHint() {
-  // Alleen tonen als het nog nooit is getoond
   if (localStorage.getItem("introShown")) return;
 
-  // Wacht tot maps gerenderd zijn
   setTimeout(() => {
     const firstMap = document.querySelector(".icon.map");
     if (!firstMap) return;
 
-    const hint = document.createElement("div");
-    hint.className = "intro-hint";
-    hint.textContent = "open een groep";
-
-    document.body.appendChild(hint);
-
-    // Positioneer rond eerste map-icoon
     const rect = firstMap.getBoundingClientRect();
-    hint.style.left = rect.left + rect.width / 2 + "px";
-    hint.style.top = rect.top - 30 + "px";
 
-    // Na paar seconden verdwijnen
+    const wrapper = document.createElement("div");
+    wrapper.className = "intro-wrapper";
+
+    wrapper.style.left = rect.left + rect.width / 2 + "px";
+    wrapper.style.top = rect.top - 80 + "px";
+
+    wrapper.innerHTML = `
+      <svg width="220" height="120" viewBox="0 0 220 120">
+        <!-- Tekst -->
+        <text x="10" y="40" class="intro-text">
+          open een groep
+        </text>
+        <!-- Pijl -->
+        <path class="intro-arrow"
+          d="M 140 55 Q 160 75 110 95"
+        />
+        <path class="intro-arrow-head"
+          d="M105 90 L110 95 L100 95"
+        />
+      </svg>
+    `;
+    document.body.appendChild(wrapper);
+    // Verdwijnen na 5 sec
     setTimeout(() => {
-      hint.classList.add("fade-out");
-      setTimeout(() => hint.remove(), 1000);
-    }, 4000);
+      wrapper.classList.add("fade-out");
+      setTimeout(() => wrapper.remove(), 1200);
+    }, 5000);
 
-    // Markeer als getoond
     localStorage.setItem("introShown", "true");
 
-  }, 600);
+  }, 800);
 }
 
 // ----- SELECT ELEMENT -----
