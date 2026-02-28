@@ -58,12 +58,12 @@
     const icon = document.getElementById('oerknal-icon');
     const overlay = document.getElementById('explanation-overlay');
     const closeBtn = document.getElementById('close-btn');
-  
+    
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
-      overlay.style.display = 'flex';
+      overlay.classList.add('active');
     });
-  
+    
     // Klik op "Sluit" stuurt naar elementen.html
     closeBtn.addEventListener('click', () => {
       window.location.href = "elementen.html";
