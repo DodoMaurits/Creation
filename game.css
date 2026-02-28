@@ -507,19 +507,38 @@ body {
 }
 
 /* --- Getekende pijl --- */
-.intro-arrow {
-  stroke: #000;
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  fill: none;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
+.intro-wrapper.has-arrow::after {
+  content: '';
+  position: absolute;
+  width: 120px;       /* lengte van de lijn */
+  height: 2px;        /* lijn dikte */
+  background: #000;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) rotate(30deg);
+  transform-origin: left center;
+  border-radius: 1px; /* subtiel afgerond */
   animation: drawArrow 1.3s ease forwards;
   animation-delay: 0.5s;
 }
 
+.intro-wrapper.has-arrow::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #000; /* punt van de pijl */
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) rotate(30deg);
+}
+
+/* animatie */
 @keyframes drawArrow {
-  to { stroke-dashoffset: 0; }
+  from { width: 0; }
+  to { width: 120px; }
 }
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
