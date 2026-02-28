@@ -1563,8 +1563,6 @@ function preloadAllIcons() {
 
 // ----- INTRO HINTS -----
 function showIntroHint() {
-  if (localStorage.getItem("introShown")) return;
-
   setTimeout(() => {
     const firstMap = document.querySelector(".icon.map");
     if (!firstMap) return;
@@ -1573,35 +1571,36 @@ function showIntroHint() {
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
-
     wrapper.style.left = rect.left + rect.width / 2 + "px";
-    wrapper.style.top = rect.top - 80 + "px";
-
+    wrapper.style.top = rect.top - 90 + "px";
     wrapper.innerHTML = `
-      <svg width="220" height="120" viewBox="0 0 220 120">
-        <!-- Tekst -->
-        <text x="10" y="40" class="intro-text">
-          open een groep
+      <svg width="260" height="140" viewBox="0 0 260 140">
+        <!-- Handgeschreven tekst -->
+        <text x="10" y="45" class="intro-text">
+          Open een groep
         </text>
-        <!-- Pijl -->
+        <!-- Duidelijkere pijl -->
         <path class="intro-arrow"
-          d="M 140 55 Q 160 75 110 95"
+          d="M 170 60 Q 200 95 130 120"
         />
         <path class="intro-arrow-head"
-          d="M105 90 L110 95 L100 95"
+          d="M120 112 L130 120 L118 120"
         />
       </svg>
     `;
+
     document.body.appendChild(wrapper);
-    // Verdwijnen na 5 sec
-    setTimeout(() => {
+
+    // Verwijder bij eerste klik ergens in de app
+    function removeIntro() {
       wrapper.classList.add("fade-out");
-      setTimeout(() => wrapper.remove(), 1200);
-    }, 5000);
+      setTimeout(() => wrapper.remove(), 500);
+      document.removeEventListener("click", removeIntro);
+    }
 
-    localStorage.setItem("introShown", "true");
+    document.addEventListener("click", removeIntro);
 
-  }, 800);
+  }, 600);
 }
 
 // ----- SELECT ELEMENT -----
