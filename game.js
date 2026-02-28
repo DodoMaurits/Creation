@@ -1569,17 +1569,19 @@ function showIntroHint() {
     const rect = firstMap.getBoundingClientRect();
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
+    // Plaats boven de map
     wrapper.style.left = rect.left + rect.width / 2 + "px";
-    wrapper.style.top = rect.top - 85 + "px";
+    wrapper.style.top = rect.top - 70 + "px";
     wrapper.innerHTML = `
       <div class="intro-text">open een groep</div>
-      <svg width="220" height="110" viewBox="0 0 220 110">
-        <path class="intro-arrow"
-          d="M 150 30 Q 185 65 120 95"
-        />
-        <path class="intro-arrow-head"
-          d="M110 88 L120 95 L108 95"
-        />
+      <svg width="180" height="60" viewBox="0 0 180 60">
+        <defs>
+          <marker id="arrowhead" markerWidth="8" markerHeight="8"
+                  refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L6,3 z" fill="#000" />
+          </marker>
+        </defs>
+        <line x1="10" y1="50" x2="170" y2="10" class="intro-arrow" marker-end="url(#arrowhead)" />
       </svg>
     `;
     document.body.appendChild(wrapper);
