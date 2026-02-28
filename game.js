@@ -1566,40 +1566,29 @@ function showIntroHint() {
   setTimeout(() => {
     const firstMap = document.querySelector(".icon.map");
     if (!firstMap) return;
-
     const rect = firstMap.getBoundingClientRect();
-
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     wrapper.style.left = rect.left + rect.width / 2 + "px";
-    wrapper.style.top = rect.top - 90 + "px";
+    wrapper.style.top = rect.top - 85 + "px";
     wrapper.innerHTML = `
-      <svg width="260" height="140" viewBox="0 0 260 140">
-        <!-- Handgeschreven tekst -->
-        <text x="10" y="45" class="intro-text">
-          Open een groep
-        </text>
-        <!-- Duidelijkere pijl -->
+      <div class="intro-text">open een groep</div>
+      <svg width="220" height="110" viewBox="0 0 220 110">
         <path class="intro-arrow"
-          d="M 170 60 Q 200 95 130 120"
+          d="M 150 30 Q 185 65 120 95"
         />
         <path class="intro-arrow-head"
-          d="M120 112 L130 120 L118 120"
+          d="M110 88 L120 95 L108 95"
         />
       </svg>
     `;
-
     document.body.appendChild(wrapper);
-
-    // Verwijder bij eerste klik ergens in de app
     function removeIntro() {
       wrapper.classList.add("fade-out");
-      setTimeout(() => wrapper.remove(), 500);
+      setTimeout(() => wrapper.remove(), 400);
       document.removeEventListener("click", removeIntro);
     }
-
     document.addEventListener("click", removeIntro);
-
   }, 600);
 }
 
