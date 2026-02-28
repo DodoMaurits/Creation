@@ -61,17 +61,42 @@ body {
 
 .icon.element:hover { transform: scale(1.15); }
 
+/*  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));*/
 .icon.map {
   width: 145px;
   height: 145px;
-  border-radius: 50%; /* optioneel, voor ronde gloed */
-  box-shadow: 0 0 20px 10px rgba(255,255,255,0.5);
-  animation: pulseGlow 2s infinite ease-in-out;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  background: #fff; /* het icoon zelf */
 }
 
-@keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 20px 10px rgba(255,255,255,0.5); }
-  50% { box-shadow: 0 0 40px 20px rgba(255,255,255,0.8); }
+.icon.map::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+  filter: blur(8px);
+  opacity: 0.8;
+  animation: sunRays 2s infinite ease-in-out;
+  pointer-events: none;
+  z-index: -1; /* achter het icoon */
+}
+
+@keyframes sunRays {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.05);
+    opacity: 1;
+  }
 }
 
 .icon.map:hover { transform: scale(1.12); }
