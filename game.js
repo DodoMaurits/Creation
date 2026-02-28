@@ -1597,41 +1597,33 @@ function showIntroHint() {
 
     if (introStep === 0) { target = maps[0]; hintText = "open een groep"; }
     else if (introStep === 1) { target = maps[1]; hintText = "open nog een groep"; }
-    else { hintText = "klik op oerknal en<br>klik op kou om een combinatie te maken"; useArrow = false; }
+    else { hintText = "klik op oerknal en<br>klik op kou"; useArrow = false; }
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     if (useArrow) wrapper.classList.add("has-arrow");
 
-    // positioneer wrapper
+    // positie wrapper boven tekst
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
       wrapper.style.top = rect.top - 80 + "px";
-      wrapper.dataset.targetX = rect.left + rect.width / 2 - 20; // tikje links
-      wrapper.dataset.targetY = rect.top + rect.height / 2;
     } else {
       wrapper.style.left = window.innerWidth / 2 + "px";
       wrapper.style.top = window.innerHeight / 2 - 50 + "px";
       wrapper.style.textAlign = "center";
     }
 
-    wrapper.innerHTML = `
-      <div class="intro-text">${hintText}</div>
+    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>
       ${useArrow ? `
-      <svg class="intro-arrow-svg" width="220" height="120">
-        <!-- halve cirkel curve -->
-        <path d="M10,0 
-                 C10,60 210,60 210,110"
-              stroke="#000" stroke-width="2" fill="transparent" 
-              marker-end="url(#arrowhead)"/>
+      <svg class="intro-arrow-svg" width="100" height="60">
+        <path d="M0,50 Q50,0 100,50" stroke="#000" stroke-width="2" fill="transparent" marker-end="url(#arrowhead)"/>
         <defs>
           <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
             <path d="M0,0 L0,6 L6,3 z" fill="#000"/>
           </marker>
         </defs>
-      </svg>` : ''}
-    `;
+      </svg>` : ''}`;
 
     document.body.appendChild(wrapper);
 
