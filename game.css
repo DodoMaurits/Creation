@@ -510,25 +510,17 @@ body {
 .intro-wrapper.has-arrow::after {
   content: '';
   position: absolute;
-  width: 100px;          /* horizontale lengte */
-  height: 60px;          /* verticale hoogte */
+  width: 80px;      /* horizontale lengte van halve cirkel */
+  height: 40px;     /* verticale hoogte */
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
   background: none;
-
-  /* pseudo-SVG curve via border-radius trick: */
   border-top: 2px solid #000;
   border-left: 2px solid #000;
   border-radius: 50% 50% 0 0;
   animation: drawHalfCircle 1.3s ease forwards;
   animation-delay: 0.5s;
-}
-
-/* animatie van halve cirkel lijn */
-@keyframes drawHalfCircle {
-  from { transform: translateX(-50%) scaleX(0); }
-  to   { transform: translateX(-50%) scaleX(1); }
 }
 
 /* punt van de pijl */
@@ -540,8 +532,14 @@ body {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 10px solid #000; 
-  left: calc(50% + 50px);  /* einde halve cirkel */
+  left: calc(50% + 40px); /* einde halve cirkel */
   top: 0;
+}
+
+/* animatie halve cirkel */
+@keyframes drawHalfCircle {
+  from { transform: translateX(-50%) scaleX(0); }
+  to   { transform: translateX(-50%) scaleX(1); }
 }
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
