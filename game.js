@@ -20,22 +20,52 @@ const combinaties = [
     input: ["Oerknal", "Kou"],
     output: [
       { naam: "Zwaartekracht", icoon: "icons/Zwaartekracht.png", map: "Krachten",
-        quote: "Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion <br><br>- Isaac Newton"
+        quote: `Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion 
+        <br><br>- Isaac Newton`
       },
       { naam: "Straling", icoon: "icons/Straling.png", map: "Krachten",
-        quote: "A compassionate heart radiates rays of beauty that remove the clouds of million hearts <br><br>- Amit Ray"
+        quote: `A compassionate heart radiates rays of beauty that remove the clouds of million hearts 
+        <br><br>- Amit Ray`
       },
       { naam: "Quarks", icoon: "icons/Quarks.png", map: "Chemie",
-        quote: "Every atom in your body is the same quark in different places at the same moment in time <br><br>- David Eagleman"
+        quote: `Every atom in your body is the same quark in different places at the same moment in time 
+        <br><br>- David Eagleman`
       },
       { naam: "Elektriciteit", icoon: "icons/Elektriciteit.png", map: "Krachten",
-        quote: "We're electrical items and when we die the electricity goes somewhere else <br><br>- Dominic Monaghan"
+        quote: `We're electrical items and when we die the electricity goes somewhere else 
+        <br><br>- Dominic Monaghan`
       }
     ],
     uitleg: {
       normal: {
-        titel: "Eerste symmetriebreking",
-        tekst: "De eerste symmetriebreking...",
+        titel: "Symmetriebreking",
+        tekst: `De oerknalfase duurde slechts fracties van een seconde, waarin 4 keer een drempel van een zodanig 
+          lage temperatuur werd bereikt dat een spontane symmetriebreking plaatsvond van het snel uitdijende energieveld, 
+          zoals water bevriest bij de drempel van het vriespunt. 
+          <br><br>De eerste symmetriebreking was die van de zwaartekracht. Terwijl de oerknal de ruimte uit elkaar duwt, 
+          probeert deze natuurkracht energie en materie onderling bij elkaar te houden, als een natuurlijke 
+          aantrekkingskracht.
+          <br><br>In een onvoorstelbaar kort moment zakte de temperatuur onder de 10<sup>28</sup> graden, waarbij de 
+          tweede symmetriebreking plaatsvond van de sterke nucleaire kracht. In tegenstelling tot zwaartekracht, werkt de
+          sterke nucleaire kracht alleen over miniscule afstanden. Deze natuurkracht bindt subatomaire deeltjes - quarks - 
+          in een stabiele structuur: atoomkernen. Let wel, het heelal was nog steeds een kokende soep van massaloze 
+          deeltjes, kleiner dan een atoomkern zelf.
+          <br><br>Nog altijd binnen een miljoenste van een seconde zakte de temperatuur onder de 10<sup>15</sup> graden.
+          De overgebleven elektrozwakke kracht splitste op in massa-dragende materie, die weerstand boden tegen de 
+          uitdijing, en massaloze straling, bestaande uit fotonen. Soms gedragen fotonen zich als een golf en soms als een 
+          deeltje. Omdat fotonen de enige zonder een hoeveelheid rustmassa zijn, kan niets sneller bewegen dan zij - 
+          de lichtsnelheid. Afhankelijk van het aantal trillingen per sconde nemen wij fotonen waar als radiogolven, 
+          infrarood, licht verdeeld in kleuren, uv-straling, röntgenstraling en gammastraling.
+          <br><br>De laatste symmetriebreking vond plaats tussen een miljoenste en tienduizendste van een seconde, toen
+          de temperatuur van het heelal was gedaald tot 10<sup>13</sup> graden. De elektrozwakke kracht viel uiteen in 
+          zwakke kernkracht en elektromagnetische kracht. De zwakke kernkracht zorgt voor de omzetting en uitwisseling van 
+          energie, massa en elektromagnetische lading. In afwezigheid van combinaties die elektrische ladingen 
+          neutraliseerden, ontstonden er plasma's die knetterden van de elektriciteit door de rondvliegende negatieve en 
+          positieve deeltjes, op zoek naar neutrale combinaties.
+          <br><br>Binnen enkele minuten was de fase waarin heel veel nieuws ontstond voorbij. De temperatuur was gezakt 
+          tot 10 miljoen graden - vergelijkbaar met de hitte van het binnenste van een ster. De vier natuurkrachten waren
+          geboren...
+          `,
         tijd: 13_800_000_000
       }
     }
