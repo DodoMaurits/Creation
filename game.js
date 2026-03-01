@@ -43,19 +43,14 @@ const combinaties = [
         een ster. De oerknal was ten einde maar, zoals water bevriest onder nul, was er viermaal een drempel overschreden. 
         De 4 natuurkrachten waren geboren...
         
-        <br><br>1. Vrijwel meteen brak de zwaartekracht. Tegen de uitdijing van energie in, houdt deze natuurkracht 
-        energie en materie bij elkaar, als een natuurlijke aantrekkingskracht.
-        
-        <br><br>2. Onder de 10<sup>28</sup> graden brak de sterke kernkracht. Op miniscule afstanden bindt het de kleinste
-        deeltjes, genaamd quarks, tot atoomkernen.
-        
-        <br><br>3. Onder de 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende 
+        <br><br>Vrijwel meteen brak de zwaartekracht. Tegen de uitdijing van energie in, houdt deze natuurkracht 
+        energie en materie bij elkaar, als een natuurlijke aantrekkingskracht. Onder de 10<sup>28</sup> graden brak de 
+        sterke kernkracht. Op miniscule afstanden bindt het de kleinste deeltjes, genaamd quarks, tot atoomkernen.
+        Onder de 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende 
         materie en massaloze straling. Massa remt beweging af, maar straling kan op lichtsnelheid bewegen en vormen 
-        aannemen als radiogolven, uv-straling, licht en kleur.
-        
-        <br><br>4. Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
-        elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's op
-        zoek naar neutrale combinaties knetterden van de elektriciteit.`,
+        aannemen als radiogolven, uv-straling, licht en kleur. Onder de 10<sup>13</sup> graden viel de elektrozwakke 
+        kracht uiteen in zwakke kernkracht en elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt 
+        lading en massa uit, terwijl plasma's op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
         tijd: 13_800_000_000
       }
     }
