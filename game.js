@@ -272,6 +272,16 @@ const combinaties = [
   },
   {
     input: [
+      ["Warmte", "Gneis"], ["Druk", "Graniet"], ["Schist", "Warmte"], ["Schist", "Druk"] 
+    ],
+    output: [
+      { naam: "Gneis", icoon: "icons/Gneis.png", map: "Aarde", 
+        quote: "Geologists have a saying - rocks remember <br><br>- Neil Armstrong"
+      }
+    ]
+  },
+  {
+    input: [
       ["Graniet", "Lava"],
       ["Basalt", "Lava"]
     ],
@@ -559,8 +569,17 @@ const combinaties = [
   },
   {
     input: [
-      ["Water", "Meer"],
-      ["Meer", "Meer"]
+      ["Klei", "Warmte"], ["Druk", "Klei"]
+    ],
+    output: [
+      { naam: "Kleisteen", icoon: "icons/Kleisteen.png", map: "Aarde",
+        quote: "Everything changes, even stone <br><br>- Claude Monet"
+      }
+    ]
+  },
+  {
+    input: [
+      ["Water", "Meer"], ["Meer", "Meer"]
     ],
     output: [
       { naam: "Zee", icoon: "icons/Zee.png", map: "Water", 
@@ -611,6 +630,16 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: [
+      ["Kleisteen", "Warmte"], ["Kleisteen", "Druk"]
+    ],
+    output: [
+      { naam: "Schalie", icoon: "icons/Schalie.png", map: "Aarde", 
+        quote: "In the structure of shale we read the operations of water and the lapse of time <br><br>- James Hutton"
+      }
+    ]
+  }, 
   {
     input: ["Lucht", "Vuur"],
     output: [
@@ -792,6 +821,26 @@ const combinaties = [
   },
   {
     input: [
+      ["Schalie", "Warmte"], ["Schalie", "Druk"]
+    ],
+    output: [
+      { naam: "Leisteen", icoon: "icons/Leisteen.png", map: "Aarde", 
+        quote: "The slates of Wales furnish one of the most striking examples of cleavage produced by pressure <br><br>- Archibald Geikie"
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zout", "Warmte"], ["Druk", "Zout"]
+    ],
+    output: [
+      { naam: "Steenzout", icoon: "icons/Steenzout.png", map: "Chemie", 
+        quote: "Salt is the only rock directly consumed by man <br><br>- Margaret Visser"
+      }
+    ]
+  },
+  {
+    input: [
       ["Gipssteen", "Water"], ["Gipssteen", "Meer"], ["Gipssteen", "Zee"], ["Gipssteen", "Oceaan"],
       ["Rivier", "Gipssteen"]
     ],
@@ -853,11 +902,21 @@ const combinaties = [
   },
   {
     input: [
-      ["Kalk", "Warmte"], ["Kalk", "Zee"]
+      ["Kalk", "Warmte"], ["Kalk", "Zee"], ["Kalk", "Zand"]
     ],
     output: [
       { naam: "Kalksteen", icoon: "icons/Kalksteen.png", map: "Aarde", 
         quote: "If by some fiat I had to restrict all this writing to one sentence, this is the one I would choose: The summit of Mt. Everest is marine limestone <br><br>- John McPhee"
+      }
+    ]
+  },
+  {
+    input: [
+      ["Leisteen", "Warmte"], ["Leisteen", "Druk"]
+    ],
+    output: [
+      { naam: "Fylliet", icoon: "icons/Fylliet.png", map: "Aarde", 
+        quote: "Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism <br><br>- Rollin Salisbury"
       }
     ]
   },
@@ -868,6 +927,16 @@ const combinaties = [
     output: [
       { naam: "Kwartsiet", icoon: "icons/Kwartsiet.png", map: "Aarde", 
         quote: "The conversion of sandstone into quartzite is sometimes the work of percolating water under ordinary conditions <br><br>- John Flett"
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kalksteen", "Warmte"], ["Druk", "Kalksteen"]
+    ],
+    output: [
+      { naam: "Marmer", icoon: "icons/Marmer.png", map: "Aarde", 
+        quote: "The marble not yet carved can hold the form of every thought the greatest artist has <br><br>- Michelangelo"
       }
     ]
   },
@@ -924,6 +993,68 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: [
+      ["Fylliet", "Warmte"], ["Fylliet", "Druk"]
+    ],
+    output: [
+      { naam: "Schist", icoon: "icons/Schist.png", map: "Aarde", 
+        quote: "The schist is contorted, glittering with mica, a record of heat and pressure beyond imagination <br><br>- John McPhee"
+      }
+    ]
+  },
+  {
+    input: [
+      ["Fylliet", "Regen"], ["Schist", "Regen"]
+    ],
+    output: [ 
+      { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
+        quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
+      },
+      { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
+        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+      }
+    ]
+  },
+  {
+    input: [ 
+      ["Fylliet", "Zure regen"], ["Schist", "Zure regen"]
+    ],
+    output: [
+      { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
+        Quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+      }, 
+      { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
+        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+      },
+      { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
+        quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
+      },
+      { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
+        quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+      },
+      { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
+        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+      }
+    ]
+  },
+  {
+    input: ["Marmer", "Zure regen"],
+    output: [
+      { naam: "Sulfaat", icoon: "icons/Sulfaat.png", map: "Chemie", 
+        quote: "Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum <br><br>- Linus Pauling"
+      },
+      { naam: "Nitraat", icoon: "icons/Nitraat.png", map: "Chemie", 
+        quote: "For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, its breath, but the land is so much more <br><br>- John Steinbeck"
+      },
+      { naam: "Calciet", icoon: "icons/Calciet.png", map: "Aarde", 
+        quote: "Through calcite, the air took on a strange luminousness, as though the light itself were split into delicate fragments <br><br>- Albert Durer"
+      },
+      { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
+        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+      }
+    ]
+  },
 //------------ THRESHOLD 2: LEVEN --------------//
   {
     input: [
@@ -955,7 +1086,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Leven", "Kalk"], ["Evolutie", "Kalk"], ["Bilateria-voorouder", "Kalk"]
+      ["Leven", "Kalk"], ["Evolutie", "Kalk"], ["Oerbilateria", "Kalk"]
     ],
     output: [
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
@@ -992,7 +1123,7 @@ const combinaties = [
       ["Rode algen", "Kou"], ["Rode algen", "Radioactiviteit"], ["Rode algen", "IJs"], ["Rode algen", "Vuur"], ["Rode algen", "Lava"],
       ["Groene algen", "Kou"], ["Groene algen", "Radioactiviteit"], ["Groene algen", "IJs"], ["Groene algen", "Vuur"], ["Groene algen", "Lava"],
       ["Neteldiervoorouder", "Kou"], ["Neteldiervoorouder", "Radioactiviteit"], ["Neteldiervoorouder", "IJs"], ["Neteldiervoorouder", "Vuur"], ["Neteldiervoorouder", "Lava"],
-      ["Bilateria-voorouder", "Kou"], ["Bilateria-voorouder", "Radioactiviteit"], ["Bilateria-voorouder", "IJs"], ["Bilateria-voorouder", "Vuur"], ["Bilateria-voorouder", "Lava"],
+      ["Oerbilateria", "Kou"], ["Oerbilateria", "Radioactiviteit"], ["Oerbilateria", "IJs"], ["Oerbilateria", "Vuur"], ["Oerbilateria", "Lava"],
       ["Plakdiertjes", "Kou"], ["Plakdiertjes", "Radioactiviteit"], ["Plakdiertjes", "IJs"], ["Plakdiertjes", "Vuur"], ["Plakdiertjes", "Lava"],
       ["Roodwieren", "Kou"], ["Roodwieren", "Radioactiviteit"], ["Roodwieren", "IJs"], ["Roodwieren", "Vuur"], ["Roodwieren", "Lava"],
       ["Steenwortelalgen", "Kou"], ["Steenwortelalgen", "Radioactiviteit"], ["Steenwortelalgen", "IJs"], ["Steenwortelalgen", "Vuur"], ["Steenwortelalgen", "Lava"],
@@ -1056,7 +1187,7 @@ const combinaties = [
       ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"],
       ["Amoebe", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"],
       ["Parasieten", "Dood"], ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"],
-      ["Groene algen", "Dood"], ["Neteldiervoorouder", "Dood"], ["Bilateria-voorouder", "Dood"],
+      ["Groene algen", "Dood"], ["Neteldiervoorouder", "Dood"], ["Oerbilateria", "Dood"],
       ["Roodwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"]
     ],
     output: [
@@ -1186,10 +1317,10 @@ const combinaties = [
   {
     input: ["Spieren", "Leca"],
     output: [
-      { naam: "Cnidaria-voorouder", icoon: "icons/Cnidaria-voorouder.png", map: "Pril leven", 
+      { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
         quote: "Grip the nettle firmly and it will become a stick with which to beat your enemey <br><br>- Isaac Asimov"
       },
-      { naam: "Bilateria-voorouder", icoon: "icons/Bilateria-voorouder.png", map: "Pril leven", 
+      { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
         quote: "We are all worms. But I believe that I am a glow-worm <br><br>- Winston Churchill"
       }
     ]
@@ -1243,7 +1374,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Cnidaria-voorouder", "Evolutie"],
+    input: ["Oercnidaria", "Evolutie"],
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
         quote: "A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive opening through which it both eats and excretes - as regrettable an example of economy of design as ever was <b><br>- Jeffrey Kluger"
@@ -1257,39 +1388,13 @@ const combinaties = [
     ]
   },
   {
-    input: ["Bilateria-voorouder", "Evolutie"],
+    input: ["Oerbilateria", "Evolutie"],
     output: [
       { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
         quote: "Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor <br><br>- Rachel Carson"
       },
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
         quote: "In the tidal pools the starfish cling to the rocks while the waves break over them <br><br>- Rachel Carson"
-      }
-    ]
-  },
-  {
-    input: [
-      ["Druk", "Graniet"], ["Schist", "Druk"] 
-    ],
-    output: [
-      { naam: "Gneis", icoon: "icons/Gneis.png", map: "Aarde", 
-        quote: "Geologists have a saying - rocks remember <br><br>- Neil Armstrong"
-      }
-    ]
-  },
-  {
-    input: ["Druk", "Zout"],
-    output: [
-      { naam: "Steenzout", icoon: "icons/Steenzout.png", map: "Chemie", 
-        quote: "Salt is the only rock directly consumed by man <br><br>- Margaret Visser"
-      }
-    ]
-  },
-  {
-    input: ["Druk", "Klei"],
-    output: [
-      { naam: "Kleisteen", icoon: "icons/Kleisteen.png", map: "Aarde",
-        quote: "Everything changes, even stone <br><br>- Claude Monet"
       }
     ]
   },
@@ -1344,14 +1449,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Kleisteen", "Druk"],
-    output: [
-      { naam: "Schalie", icoon: "icons/Schalie.png", map: "Aarde", 
-        quote: "In the structure of shale we read the operations of water and the lapse of time <br><br>- James Hutton"
-      }
-    ]
-  }, 
-  {
     input: [ 
       ["Schalie", "Zure regen"], ["Leisteen", "Zure regen"]
     ],
@@ -1370,17 +1467,9 @@ const combinaties = [
       }
     ]
   },
-  {
-    input: ["Schalie", "Druk"],
-    output: [
-      { naam: "Leisteen", icoon: "icons/Leisteen.png", map: "Aarde", 
-        quote: "The slates of Wales furnish one of the most striking examples of cleavage produced by pressure <br><br>- Archibald Geikie"
-      }
-    ]
-  },
 //------------ THRESHOLD 3: CAMBRISCHE EXPLOSIE --------------//
   {
-    input: ["Bilateria-voorouder", "Bot"],
+    input: ["Oerbilateria", "Bot"],
     output: [
       { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
         quote: "Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid <br><br>- Albert Einstein"
@@ -1415,14 +1504,6 @@ const combinaties = [
         tijd: 541_000_000
       }
     }
-  },
-  {
-    input: ["Druk", "Kalksteen"],
-    output: [
-      { naam: "Marmer", icoon: "icons/Marmer.png", map: "Aarde", 
-        quote: "The marble not yet carved can hold the form of every thought the greatest artist has <br><br>- Michelangelo"
-      }
-    ]
   },
   {
     input: ["Steenwortelalgen", "Evolutie"],
@@ -1462,75 +1543,7 @@ const combinaties = [
         quote: "Too often we underestimate the power of touch <br><br>- Leo Buscaglia"
       }
     ]
-  },
-  {
-    input: ["Marmer", "Zure regen"],
-    output: [
-      { naam: "Sulfaat", icoon: "icons/Sulfaat.png", map: "Chemie", 
-        quote: "Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum <br><br>- Linus Pauling"
-      },
-      { naam: "Nitraat", icoon: "icons/Nitraat.png", map: "Chemie", 
-        quote: "For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, its breath, but the land is so much more <br><br>- John Steinbeck"
-      },
-      { naam: "Calciet", icoon: "icons/Calciet.png", map: "Aarde", 
-        quote: "Through calcite, the air took on a strange luminousness, as though the light itself were split into delicate fragments <br><br>- Albert Durer"
-      },
-      { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
-      }
-    ]
-  },
-  {
-    input: ["Leisteen", "Druk"],
-    output: [
-      { naam: "Fylliet", icoon: "icons/Fylliet.png", map: "Aarde", 
-        quote: "Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism <br><br>- Rollin Salisbury"
-      }
-    ]
-  },
-    {
-      input: [
-        ["Fylliet", "Regen"], ["Schist", "Regen"]
-      ],
-      output: [ 
-        { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
-          quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
-        },
-        { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-          quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
-        }
-      ]
-    },
-    {
-      input: [ 
-        ["Fylliet", "Zure regen"], ["Schist", "Zure regen"]
-      ],
-        output: [
-          { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-            Quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
-          }, 
-          { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-            quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
-          },
-          { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
-            quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
-          },
-          { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
-            quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
-          },
-          { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-            quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
-          }
-        ]
-      },
-      {
-        input: ["Fylliet", "Druk"],
-        output: [
-          { naam: "Schist", icoon: "icons/Schist.png", map: "Aarde", 
-            quote: "The schist is contorted, glittering with mica, a record of heat and pressure beyond imagination <br><br>- John McPhee"
-          }
-        ]
-      }
+  }
 ];
 
 
