@@ -493,7 +493,7 @@ body {
   position: absolute;
   bottom: 45px;
   left: 0;
-  transform: translateX(-50%);
+  transform: translateX(calc(-50% + 6px));
   padding: 4px 4px;
   background: rgba(0,0,0,0.75);
   border-radius: 10px;
