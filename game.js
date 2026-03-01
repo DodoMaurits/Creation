@@ -1943,16 +1943,11 @@ function updateTimelineLabel() {
 
   timelineLabel.textContent = labelText;
 
-  const timeline = timelineFill.parentElement;
-  const timelineRect = timeline.getBoundingClientRect();
-  const timelineWidth = timeline.offsetWidth;
   const percentage = (maxTime - currentTime) / maxTime;
-  const offset = 16;
-  const labelPos = timelineRect.left + percentage * timelineWidth + offset;
-  
-  timelineLabel.style.left = labelPos + "px";
-  timelineLabel.style.transform = "translateX(-50%)";
+
+  // 🔥 koppel label exact aan fill
   timelineFill.style.width = (percentage * 100) + "%";
+  timelineLabel.style.left = (percentage * 100) + "%";
 }
 
 // ----- RENDER CLOSED MAPS -----
