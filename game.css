@@ -504,7 +504,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
   transition: left 0.8s ease;
   pointer-events: none;
-  z-index: 1001; /* boven timeline */
+  z-index: 4000; /* boven timeline */
 }
 
 /* ---------------- INTRO HINTS ---------------- */
