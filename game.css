@@ -488,7 +488,7 @@ body {
 /* Label */
 #timeline-label {
   position: absolute;
-  top: -24px;
+  top: -18px;
   left: 0%;
   transform: translateX(-50%);
   padding: 4px 4px;
