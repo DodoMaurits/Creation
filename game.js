@@ -1617,6 +1617,7 @@ function showIntroHint() {
     const elements = document.querySelectorAll(".icon.element");
     let target = null;
     let hintText = "";
+    let offsetY = -80; // standaard offset
 
     function nextStep() {
       wrapper.classList.add("fade-out");
@@ -1626,22 +1627,30 @@ function showIntroHint() {
     }
 
     if (introStep === 0) {
+      // hint 1 mag op "Heelal" of "Krachten"
       const validMaps = Array.from(maps).filter(
         map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
       );
       if (validMaps.length > 0) {
-        target = validMaps[0];
+        target = validMaps[0]; // voor positionering
         hintText = "open een groep";
         validMaps.forEach(map => map.addEventListener("click", nextStep, { once: true }));
-    }
+      } else {
+        // fallback: geen geldige map, tekst toch tonen
+        hintText = "open een groep";
+        target = null;
+      }
+
     } else if (introStep === 1 && maps[1]) {
       target = maps[1];
       hintText = "open nog een groep";
-      offsetY = -120;
+      offsetY = -120; // hogere positie voor hint 2
       maps[1].addEventListener("click", nextStep, { once: true });
+
     } else if (introStep === 2 && elements.length > 0) {
       target = null;
       hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
+      offsetY = -50;
       elements.forEach(el => el.addEventListener("click", nextStep, { once: true }));
     }
 
@@ -1649,17 +1658,19 @@ function showIntroHint() {
     wrapper.className = "intro-wrapper";
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
 
+    // positionering wrapper
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
-      wrapper.style.top = rect.top - 80 + "px";
+      wrapper.style.top = rect.top + offsetY + "px";
     } else {
       wrapper.style.left = window.innerWidth / 2 + "px";
-      wrapper.style.top = window.innerHeight / 2 - 50 + "px";
+      wrapper.style.top = window.innerHeight / 2 + offsetY + "px";
       wrapper.style.textAlign = "center";
     }
 
     document.body.appendChild(wrapper);
+
   }, 600);
 }
 
