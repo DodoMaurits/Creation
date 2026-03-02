@@ -1617,35 +1617,34 @@ function showIntroHint() {
     const elements = Array.from(document.querySelectorAll(".icon.element"));
     let target = null;
     let hintText = "";
-    let offsetY = -80; // standaard offset
+    let offsetY = -80;
 
     // ---- bepaal hint en target ----
+    let clickableEls = []; // dit zijn de elementen waarop de gebruiker kan klikken
     if (introStep === 0) {
-      // Hint 1 mag op "Heelal" of "Krachten"
-      const validMaps = maps.filter(
-        map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
-      );
-      if (validMaps.length > 0) {
-        target = validMaps[0]; // positie van eerste geldige map
-      }
+      // hint 1: "Heelal" of "Krachten"
+      clickableEls = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
+      target = clickableEls[0] || null;
       hintText = "open een groep";
-      offsetY = -140; // hoger boven de map
+      offsetY = -140;
     } else if (introStep === 1) {
-      // Hint 2 → rechter map
+      // hint 2: rechter map
       target = maps[1] || null;
       hintText = "open nog een groep";
-      offsetY = -120; // iets hoger
+      offsetY = -120;
+      if (maps[1]) clickableEls = [maps[1]];
     } else if (introStep === 2) {
       target = null;
       hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
       offsetY = -50;
+      clickableEls = elements;
     }
 
     // ---- maak wrapper ----
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
-    wrapper.style.zIndex = 1500; // boven maps
+    wrapper.style.zIndex = 1500;
 
     // ---- positioneer wrapper ----
     if (target) {
@@ -1668,17 +1667,8 @@ function showIntroHint() {
       showIntroHint();
     }
 
-    // ---- voeg klik toe op juiste elementen ----
-    if (introStep === 0) {
-      const validMaps = maps.filter(
-        map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
-      );
-      validMaps.forEach(map => map.addEventListener("click", nextStep, { once: true }));
-    } else if (introStep === 1 && maps[1]) {
-      maps[1].addEventListener("click", nextStep, { once: true });
-    } else if (introStep === 2 && elements.length) {
-      elements.forEach(el => el.addEventListener("click", nextStep, { once: true }));
-    }
+    // ---- voeg klik toe op de juiste elementen ----
+    clickableEls.forEach(el => el.addEventListener("click", nextStep, { once: true }));
 
   }, 600);
 }
