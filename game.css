@@ -718,4 +718,8 @@ body {
               font-size: 10px;
               line-height: 1.2;
             }
+
+            .intro-text {
+              font-size: 18px; /* kleinere tekst voor mobiel */
+            }
 }
