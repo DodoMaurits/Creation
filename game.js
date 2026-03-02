@@ -1613,22 +1613,23 @@ function showIntroHint() {
   if (introStep > 2) return;
 
   setTimeout(() => {
+    // verwijder oude hints
+    document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
+
     const maps = Array.from(document.querySelectorAll(".icon.map"));
     const elements = Array.from(document.querySelectorAll(".icon.element"));
     let target = null;
     let hintText = "";
     let offsetY = -80;
 
-    // ---- bepaal hint en target ----
-    let clickableEls = []; // dit zijn de elementen waarop de gebruiker kan klikken
+    let clickableEls = [];
+
     if (introStep === 0) {
-      // hint 1: "Heelal" of "Krachten"
       clickableEls = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
       target = clickableEls[0] || null;
       hintText = "open een groep";
       offsetY = -140;
     } else if (introStep === 1) {
-      // hint 2: rechter map
       target = maps[1] || null;
       hintText = "open nog een groep";
       offsetY = -120;
@@ -1640,13 +1641,18 @@ function showIntroHint() {
       clickableEls = elements;
     }
 
+    if (!clickableEls.length && introStep < 2) {
+      // fallback: probeer opnieuw na kleine delay
+      setTimeout(showIntroHint, 300);
+      return;
+    }
+
     // ---- maak wrapper ----
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
     wrapper.style.zIndex = 1500;
 
-    // ---- positioneer wrapper ----
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -1667,11 +1673,11 @@ function showIntroHint() {
       showIntroHint();
     }
 
-    // ---- voeg klik toe op de juiste elementen ----
     clickableEls.forEach(el => el.addEventListener("click", nextStep, { once: true }));
 
   }, 600);
 }
+
 // ----- SELECT ELEMENT -----
 function toggleSelect(el, img, side, mapNaam) {
   const index = selected.findIndex(e => e.naam === el.naam && e.dom === img);
