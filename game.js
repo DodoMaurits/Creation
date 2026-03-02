@@ -1987,10 +1987,12 @@ function updateTimelineLabel() {
   timelineLabel.textContent = labelText;
 
   const percentage = (maxTime - currentTime) / maxTime;
-
-  // 🔥 koppel label exact aan fill
+  
+  // timeline-fill breedte
   timelineFill.style.width = (percentage * 100) + "%";
-  timelineLabel.style.left = (percentage * 100) + "%";
+  
+  // label exact boven de bol (timeline-fill::before is 16px breed)
+  timelineLabel.style.left = `calc(${percentage * 100}% + 8px)`; 
 }
 
 // ----- RENDER CLOSED MAPS -----
