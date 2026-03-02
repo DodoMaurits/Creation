@@ -1951,7 +1951,7 @@ function animateTimeline(newTime) {
 
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
-  if (!timelineLabel || !timelineFill) return;
+  if (!timelineLabel || !timelineFill || !timeline) return;
 
   let labelText;
 
@@ -1971,13 +1971,12 @@ function updateTimelineLabel() {
 
   const percentage = (maxTime - currentTime) / maxTime;
 
-  // breedte timeline-fill
+  // Breedte timeline-fill
   timelineFill.style.width = (percentage * 100) + "%";
 
-  // bereken label positie exact boven bol
-  const bolWidth = 16;      // ::before bol breedte
-  const bolOffset = -6;     // ::before right offset
-  timelineLabel.style.left = `calc(${percentage * 100}% + ${bolWidth/2 + bolOffset}px)`;
+  // Label positioneren **exact boven de bol**
+  timelineLabel.style.left = `${percentage * 100}%`;
+  // transform: translateX(-50%) in CSS doet de centering
 }
 
 // ----- RENDER CLOSED MAPS -----
