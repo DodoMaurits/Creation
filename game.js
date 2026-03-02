@@ -1618,7 +1618,6 @@ function showIntroHint() {
   const maps = Array.from(document.querySelectorAll(".icon.map"));
   const elements = Array.from(document.querySelectorAll(".icon.element"));
 
-  // fallback: maps nog niet in DOM
   if ((introStep === 0 || introStep === 1) && maps.length === 0) {
     requestAnimationFrame(showIntroHint);
     return;
@@ -1630,7 +1629,6 @@ function showIntroHint() {
   let clickableEls = [];
 
   if (introStep === 0) {
-    // voeg data-name toe voor betrouwbaarheid
     maps.forEach(map => map.dataset.name = map.alt || map.title || "");
     clickableEls = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
     target = clickableEls[0] || maps[0];
@@ -1648,13 +1646,11 @@ function showIntroHint() {
     clickableEls = elements;
   }
 
-  // maak wrapper
   const wrapper = document.createElement("div");
-  wrapper.className = "intro-wrapper fade-in"; // fade-in CSS class
+  wrapper.className = "intro-wrapper fade-in";
   wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
   wrapper.style.zIndex = 1500;
 
-  // positionering
   if (target) {
     const rect = target.getBoundingClientRect();
     wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -1667,15 +1663,22 @@ function showIntroHint() {
 
   document.body.appendChild(wrapper);
 
-  // ---- event listener voor volgende stap ----
+  // functie om wrapper te verwijderen + volgende hint
   function nextStep() {
-    wrapper.classList.add("fade-out"); // start fade-out
-    setTimeout(() => wrapper.remove(), 400); // verwijder na animatie
+    wrapper.classList.add("fade-out");
+    setTimeout(() => wrapper.remove(), 400);
     introStep++;
-    showIntroHint(); // volgende hint
+    showIntroHint();
   }
 
-  clickableEls.forEach(el => el.addEventListener("click", nextStep, { once: true }));
+  // ✅ VERBETERING: luister op hele document voor klik op map-element
+  document.addEventListener("click", function docClickListener(e) {
+    if (e.target.classList.contains("icon") && e.target.classList.contains("map")) {
+      nextStep();
+      // event listener opruimen na eerste klik
+      document.removeEventListener("click", docClickListener);
+    }
+  });
 }
 
 // ----- SELECT ELEMENT -----
