@@ -1613,14 +1613,16 @@ function showIntroHint() {
   if (introStep > 2) return;
 
   setTimeout(() => {
-    const maps = document.querySelectorAll(".icon.map");
-    const elements = document.querySelectorAll(".icon.element");
+    const maps = Array.from(document.querySelectorAll(".icon.map"));
+    const elements = Array.from(document.querySelectorAll(".icon.element"));
     let target = null;
     let hintText = "";
     let offsetY = -80; // standaard offset
 
+    // bepaal hint en target
     if (introStep === 0) {
-      const validMaps = Array.from(maps).filter(
+      // Hint 1 mag op "Heelal" of "Krachten"
+      const validMaps = maps.filter(
         map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
       );
       if (validMaps.length > 0) {
@@ -1631,23 +1633,24 @@ function showIntroHint() {
         target = null;
       }
 
-    } else if (introStep === 1 && maps[1]) {
-      target = maps[1];
+    } else if (introStep === 1) {
+      // Hint 2 → rechter map
+      target = maps[1] || null;
       hintText = "open nog een groep";
-      offsetY = -120;
+      offsetY = -120; // hoger plaatsen
 
-    } else if (introStep === 2 && elements.length > 0) {
+    } else if (introStep === 2) {
       target = null;
       hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
       offsetY = -50;
     }
 
-    // ---- Maak wrapper ----
+    // maak wrapper
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
 
-    // positionering
+    // positioneer wrapper
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -1658,9 +1661,12 @@ function showIntroHint() {
       wrapper.style.textAlign = "center";
     }
 
+    // z-index iets lager dan intro-overlay, boven maps
+    wrapper.style.zIndex = 1500;
+
     document.body.appendChild(wrapper);
 
-    // ---- Pas event listeners toe, **na wrapper** ----
+    // ---- event listener functie ----
     function nextStep() {
       wrapper.classList.add("fade-out");
       setTimeout(() => wrapper.remove(), 400);
@@ -1668,9 +1674,9 @@ function showIntroHint() {
       showIntroHint();
     }
 
-    // klik op de juiste elementen
-    if (introStep === 0 && maps.length) {
-      const validMaps = Array.from(maps).filter(
+    // voeg klik toe op juiste elementen
+    if (introStep === 0) {
+      const validMaps = maps.filter(
         map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
       );
       validMaps.forEach(map => map.addEventListener("click", nextStep, { once: true }));
