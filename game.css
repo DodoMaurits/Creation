@@ -687,6 +687,22 @@ body {
               min-height: 100vh;
               text-align: center;
             }
+
+            /* ---------------- UITLEG ---------------- */
+            .explanation-box {
+              width: 80vw;      /* smaller box op mobiel */
+              padding: 40px;    /* minder padding */
+              font-size: 16px;  /* basisfont kleiner */
+            }
+          
+            .explanation-title {
+              font-size: 24px;  /* kleinere titel */
+            }
+          
+            .explanation-text {
+              font-size: 14px;  /* kleinere bodytekst */
+              line-height: 1.4; /* iets strakker voor kleine schermen */
+            }
   
             .result-grid { display: grid; justify-content: center;
               gap: 20px;
