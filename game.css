@@ -494,8 +494,6 @@ body {
 #timeline-label {
   position: absolute;
   top: -28px;
-  left: 0%;
-  transform: translateX(-50%);
   padding: 4px 4px;
   background: rgba(0,0,0,0.75);
   border-radius: 10px;
@@ -505,6 +503,7 @@ body {
   letter-spacing: 0.5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
   pointer-events: none;
+  transition: left 0.8s ease;
   z-index: 4000; /* boven timeline */
   white-space: nowrap;
 }
