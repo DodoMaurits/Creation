@@ -1619,38 +1619,35 @@ function showIntroHint() {
     let hintText = "";
     let offsetY = -80; // standaard offset
 
-    // bepaal hint en target
+    // ---- bepaal hint en target ----
     if (introStep === 0) {
       // Hint 1 mag op "Heelal" of "Krachten"
       const validMaps = maps.filter(
         map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
       );
       if (validMaps.length > 0) {
-        target = validMaps[0]; // voor positionering
-        hintText = "open een groep";
-      } else {
-        hintText = "open een groep";
-        target = null;
+        target = validMaps[0]; // positie van eerste geldige map
       }
-
+      hintText = "open een groep";
+      offsetY = -140; // hoger boven de map
     } else if (introStep === 1) {
       // Hint 2 → rechter map
       target = maps[1] || null;
       hintText = "open nog een groep";
-      offsetY = -120; // hoger plaatsen
-
+      offsetY = -120; // iets hoger
     } else if (introStep === 2) {
       target = null;
       hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
       offsetY = -50;
     }
 
-    // maak wrapper
+    // ---- maak wrapper ----
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
+    wrapper.style.zIndex = 1500; // boven maps
 
-    // positioneer wrapper
+    // ---- positioneer wrapper ----
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -1660,9 +1657,6 @@ function showIntroHint() {
       wrapper.style.top = window.innerHeight / 2 + offsetY + "px";
       wrapper.style.textAlign = "center";
     }
-
-    // z-index iets lager dan intro-overlay, boven maps
-    wrapper.style.zIndex = 1500;
 
     document.body.appendChild(wrapper);
 
@@ -1674,7 +1668,7 @@ function showIntroHint() {
       showIntroHint();
     }
 
-    // voeg klik toe op juiste elementen
+    // ---- voeg klik toe op juiste elementen ----
     if (introStep === 0) {
       const validMaps = maps.filter(
         map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
@@ -1688,7 +1682,6 @@ function showIntroHint() {
 
   }, 600);
 }
-
 // ----- SELECT ELEMENT -----
 function toggleSelect(el, img, side, mapNaam) {
   const index = selected.findIndex(e => e.naam === el.naam && e.dom === img);
