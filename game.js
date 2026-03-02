@@ -1609,35 +1609,33 @@ function preloadAllIcons() {
 }
 
 // ----- INTRO HINTS -----
-let introStep = 0;
-
-// ----- INTRO HINTS -----
 function showIntroHint() {
-  if (introStep > 2) return; // alle hints gedaan
+  if (introStep > 2) return;
 
   setTimeout(() => {
+    const maps = document.querySelectorAll(".icon.map");
+    const elements = document.querySelectorAll(".icon.element");
     let target = null;
     let hintText = "";
 
-    const maps = document.querySelectorAll(".icon.map");
-    const elements = document.querySelectorAll(".icon.element");
+    function nextStep() {
+      wrapper.classList.add("fade-out");
+      setTimeout(() => wrapper.remove(), 400);
+      introStep++;
+      showIntroHint();
+    }
 
-    if (introStep === 0) {
-      target = maps[0]; // linker map
+    if (introStep === 0 && maps[0]) {
+      target = maps[0];
       hintText = "open een groep";
-
-      // alleen deze map mag klikken triggeren
       maps[0].addEventListener("click", nextStep, { once: true });
-    } else if (introStep === 1) {
-      target = maps[1]; // rechter map
+    } else if (introStep === 1 && maps[1]) {
+      target = maps[1];
       hintText = "open nog een groep";
-
       maps[1].addEventListener("click", nextStep, { once: true });
-    } else if (introStep === 2) {
+    } else if (introStep === 2 && elements.length > 0) {
       target = null;
       hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
-
-      // klik op *een element* om verder te gaan
       elements.forEach(el => el.addEventListener("click", nextStep, { once: true }));
     }
 
@@ -1645,7 +1643,6 @@ function showIntroHint() {
     wrapper.className = "intro-wrapper";
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
 
-    // positionering wrapper
     if (target) {
       const rect = target.getBoundingClientRect();
       wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -1657,19 +1654,8 @@ function showIntroHint() {
     }
 
     document.body.appendChild(wrapper);
-
-    function nextStep() {
-      wrapper.classList.add("fade-out");
-      setTimeout(() => wrapper.remove(), 400);
-      introStep++;
-      showIntroHint();
-    }
-
   }, 600);
 }
-
-// start de introductie
-showIntroHint();
 
 // ----- SELECT ELEMENT -----
 function toggleSelect(el, img, side, mapNaam) {
