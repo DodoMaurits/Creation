@@ -507,13 +507,17 @@ body {
 
 /* ---------------- INTRO HINTS ---------------- */
 .intro-wrapper {
-  position: fixed;
+  position: absolute;
   transform: translateX(-50%);
   pointer-events: none;
   z-index: 3000;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.intro-wrapper.fade-in {
   opacity: 1;
-  transition: opacity 0.3s ease;
 }
 
 .intro-wrapper.fade-out {
