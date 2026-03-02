@@ -1609,6 +1609,9 @@ function preloadAllIcons() {
 }
 
 // ----- INTRO HINTS -----
+let introStep = 0;
+
+// ----- INTRO HINTS -----
 function showIntroHint() {
   if (introStep > 2) return; // alle hints gedaan
 
@@ -1617,24 +1620,31 @@ function showIntroHint() {
     let hintText = "";
 
     const maps = document.querySelectorAll(".icon.map");
+    const elements = document.querySelectorAll(".icon.element");
 
     if (introStep === 0) {
       target = maps[0]; // linker map
       hintText = "open een groep";
+
+      // alleen deze map mag klikken triggeren
+      maps[0].addEventListener("click", nextStep, { once: true });
     } else if (introStep === 1) {
       target = maps[1]; // rechter map
       hintText = "open nog een groep";
+
+      maps[1].addEventListener("click", nextStep, { once: true });
     } else if (introStep === 2) {
       target = null;
       hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
+
+      // klik op *een element* om verder te gaan
+      elements.forEach(el => el.addEventListener("click", nextStep, { once: true }));
     }
 
     const wrapper = document.createElement("div");
     wrapper.className = "intro-wrapper";
-    
-    // voeg hinttekst toe
     wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
-    
+
     // positionering wrapper
     if (target) {
       const rect = target.getBoundingClientRect();
@@ -1645,19 +1655,21 @@ function showIntroHint() {
       wrapper.style.top = window.innerHeight / 2 - 50 + "px";
       wrapper.style.textAlign = "center";
     }
-    
+
     document.body.appendChild(wrapper);
 
-    function removeIntro() {
+    function nextStep() {
       wrapper.classList.add("fade-out");
       setTimeout(() => wrapper.remove(), 400);
-      document.removeEventListener("click", removeIntro);
       introStep++;
       showIntroHint();
     }
-    document.addEventListener("click", removeIntro);
+
   }, 600);
 }
+
+// start de introductie
+showIntroHint();
 
 // ----- SELECT ELEMENT -----
 function toggleSelect(el, img, side, mapNaam) {
