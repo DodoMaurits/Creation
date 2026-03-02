@@ -1612,70 +1612,70 @@ function preloadAllIcons() {
 function showIntroHint() {
   if (introStep > 2) return;
 
-  setTimeout(() => {
-    // verwijder oude hints
-    document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
+  // verwijder oude hints eerst
+  document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
 
-    const maps = Array.from(document.querySelectorAll(".icon.map"));
-    const elements = Array.from(document.querySelectorAll(".icon.element"));
-    let target = null;
-    let hintText = "";
-    let offsetY = -80;
+  const maps = Array.from(document.querySelectorAll(".icon.map"));
+  const elements = Array.from(document.querySelectorAll(".icon.element"));
 
-    let clickableEls = [];
+  // fallback: maps nog niet in DOM
+  if ((introStep === 0 || introStep === 1) && maps.length === 0) {
+    requestAnimationFrame(showIntroHint);
+    return;
+  }
 
-    if (introStep === 0) {
-      clickableEls = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
-      target = clickableEls[0] || null;
-      hintText = "open een groep";
-      offsetY = -140;
-    } else if (introStep === 1) {
-      target = maps[1] || null;
-      hintText = "open nog een groep";
-      offsetY = -120;
-      if (maps[1]) clickableEls = [maps[1]];
-    } else if (introStep === 2) {
-      target = null;
-      hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
-      offsetY = -50;
-      clickableEls = elements;
-    }
+  let target = null;
+  let hintText = "";
+  let offsetY = -80;
+  let clickableEls = [];
 
-    if (!clickableEls.length && introStep < 2) {
-      // fallback: probeer opnieuw na kleine delay
-      setTimeout(showIntroHint, 300);
-      return;
-    }
+  if (introStep === 0) {
+    // voeg data-name toe voor betrouwbaarheid
+    maps.forEach(map => map.dataset.name = map.alt || map.title || "");
+    clickableEls = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
+    target = clickableEls[0] || maps[0];
+    hintText = "open een groep";
+    offsetY = -140;
+  } else if (introStep === 1) {
+    target = maps[1] || maps[0];
+    hintText = "open nog een groep";
+    offsetY = -120;
+    clickableEls = [target];
+  } else if (introStep === 2) {
+    target = null;
+    hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
+    offsetY = -50;
+    clickableEls = elements;
+  }
 
-    // ---- maak wrapper ----
-    const wrapper = document.createElement("div");
-    wrapper.className = "intro-wrapper";
-    wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
-    wrapper.style.zIndex = 1500;
+  // maak wrapper
+  const wrapper = document.createElement("div");
+  wrapper.className = "intro-wrapper fade-in"; // fade-in CSS class
+  wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
+  wrapper.style.zIndex = 1500;
 
-    if (target) {
-      const rect = target.getBoundingClientRect();
-      wrapper.style.left = rect.left + rect.width / 2 + "px";
-      wrapper.style.top = rect.top + offsetY + "px";
-    } else {
-      wrapper.style.left = window.innerWidth / 2 + "px";
-      wrapper.style.top = window.innerHeight / 2 + offsetY + "px";
-      wrapper.style.textAlign = "center";
-    }
+  // positionering
+  if (target) {
+    const rect = target.getBoundingClientRect();
+    wrapper.style.left = rect.left + rect.width / 2 + "px";
+    wrapper.style.top = rect.top + offsetY + "px";
+  } else {
+    wrapper.style.left = window.innerWidth / 2 + "px";
+    wrapper.style.top = window.innerHeight / 2 + offsetY + "px";
+    wrapper.style.textAlign = "center";
+  }
 
-    document.body.appendChild(wrapper);
+  document.body.appendChild(wrapper);
 
-    // ---- event listener functie ----
-    function nextStep() {
-      wrapper.classList.add("fade-out");
-      setTimeout(() => wrapper.remove(), 400);
-      introStep++;
-      showIntroHint();
-    }
+  // ---- event listener voor volgende stap ----
+  function nextStep() {
+    wrapper.classList.add("fade-out"); // start fade-out
+    setTimeout(() => wrapper.remove(), 400); // verwijder na animatie
+    introStep++;
+    showIntroHint(); // volgende hint
+  }
 
-    clickableEls.forEach(el => el.addEventListener("click", nextStep, { once: true }));
-
-  }, 600);
+  clickableEls.forEach(el => el.addEventListener("click", nextStep, { once: true }));
 }
 
 // ----- SELECT ELEMENT -----
