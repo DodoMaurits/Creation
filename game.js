@@ -1625,10 +1625,15 @@ function showIntroHint() {
       showIntroHint();
     }
 
-    if (introStep === 0 && maps[0]) {
-      target = maps[0];
-      hintText = "open een groep";
-      maps[0].addEventListener("click", nextStep, { once: true });
+    if (introStep === 0) {
+      const validMaps = Array.from(maps).filter(
+        map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten"
+      );
+      if (validMaps.length > 0) {
+        target = validMaps[0];
+        hintText = "open een groep";
+        validMaps.forEach(map => map.addEventListener("click", nextStep, { once: true }));
+    }
     } else if (introStep === 1 && maps[1]) {
       target = maps[1];
       hintText = "open nog een groep";
