@@ -1980,12 +1980,14 @@ function updateTimelineLabel() {
   timelineLabel.textContent = labelText;
 
   const percentage = (maxTime - currentTime) / maxTime;
-  
-  // timeline-fill breedte
+
+  // breedte timeline-fill
   timelineFill.style.width = (percentage * 100) + "%";
-  
-  // label exact boven de bol (timeline-fill::before is 16px breed)
-  timelineLabel.style.left = `calc(${percentage * 100}% + 8px)`; 
+
+  // bereken label positie exact boven bol
+  const bolWidth = 16;      // ::before bol breedte
+  const bolOffset = -6;     // ::before right offset
+  timelineLabel.style.left = `calc(${percentage * 100}% + ${bolWidth/2 + bolOffset}px)`;
 }
 
 // ----- RENDER CLOSED MAPS -----
