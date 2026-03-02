@@ -1632,6 +1632,7 @@ function showIntroHint() {
     } else if (introStep === 1 && maps[1]) {
       target = maps[1];
       hintText = "open nog een groep";
+      offsetY = -120;
       maps[1].addEventListener("click", nextStep, { once: true });
     } else if (introStep === 2 && elements.length > 0) {
       target = null;
