@@ -1377,10 +1377,10 @@ const combinaties = [
     input: ["Oercnidaria", "Evolutie"],
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
-        quote: "A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive opening through which it both eats and excretes - as regrettable an example of economy of design as ever was <b><br>- Jeffrey Kluger"
+        quote: "A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive opening through which it both eats and excretes - as regrettable an example of economy of design as ever was <br><br>- Jeffrey Kluger"
       },
       { naam: "Bloemdieren", icoon: "icons/Bloemdieren.png", map: "Waterdieren",
-        quote: "The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul <b><br>- Robert Wyland"
+        quote: "The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul <br><br>- Robert Wyland"
       },
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
         quote: "Thought, like any parasite, cannot exist without a compliant host <br><br>- Bernard Beckett"
