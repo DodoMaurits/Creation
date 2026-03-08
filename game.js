@@ -1639,12 +1639,21 @@ function showIntroHint() {
     hintText = "open nog een groep";
     offsetY = -120;
     clickableEls = [target];
-  } else if (introStep === 2) {
-    target = null;
-    hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
-    offsetY = -50;
-    clickableEls = elements;
-  }
+    } else if (introStep === 2) {
+      target = null;
+      hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
+      offsetY = -50;
+      clickableEls = elements;
+    
+      const checkCombinationHint = setInterval(() => {
+        if (selected.length === 2) {
+          wrapper.classList.add("fade-out");
+          setTimeout(() => wrapper.remove(), 400);
+          introStep++;
+          clearInterval(checkCombinationHint);
+        }
+      }, 50);
+    }
 
   const wrapper = document.createElement("div");
   wrapper.className = "intro-wrapper fade-in";
