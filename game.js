@@ -1644,15 +1644,6 @@ function showIntroHint() {
       hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
       offsetY = -50;
       clickableEls = elements;
-    
-      const checkCombinationHint = setInterval(() => {
-        if (selected.length === 2) {
-          wrapper.classList.add("fade-out");
-          setTimeout(() => wrapper.remove(), 400);
-          introStep++;
-          clearInterval(checkCombinationHint);
-        }
-      }, 50);
     }
 
   const wrapper = document.createElement("div");
@@ -1671,6 +1662,17 @@ function showIntroHint() {
   }
 
   document.body.appendChild(wrapper);
+
+  if (introStep === 2) {
+    const checkCombinationHint = setInterval(() => {
+      if (selected.length === 2) {
+        wrapper.classList.add("fade-out");
+        setTimeout(() => wrapper.remove(), 400);
+        introStep++;
+        clearInterval(checkCombinationHint);
+      }
+    }, 50);
+  }
 
   // functie om wrapper te verwijderen + volgende hint
   function nextStep() {
@@ -2145,7 +2147,7 @@ function renderSide(parentContainer, map, side) {
   
   if (!isMobile) {
     // Desktop
-    if (totalElements > 17) {
+    if (totalElements > 16) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
       grid.style.rowGap = "15px";
@@ -2169,7 +2171,7 @@ function renderSide(parentContainer, map, side) {
       img.src = el.icoon;
       img.className = "icon element";
       if (!isMobile) {
-        if (totalElements > 17) {
+        if (totalElements > 16) {
           img.style.width = "110px";
           img.style.height = "110px";
         } else {
