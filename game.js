@@ -2136,7 +2136,7 @@ function renderSide(parentContainer, map, side) {
   
   if (!isMobile) {
     // Desktop
-    if (totalElements > 20) {
+    if (totalElements > 17) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
       grid.style.rowGap = "15px";
@@ -2160,8 +2160,7 @@ function renderSide(parentContainer, map, side) {
       img.src = el.icoon;
       img.className = "icon element";
       if (!isMobile) {
-        // desktop: maak iets kleiner als >20
-        if (totalElements > 20) {
+        if (totalElements > 17) {
           img.style.width = "110px";
           img.style.height = "110px";
         } else {
