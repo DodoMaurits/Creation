@@ -1662,14 +1662,12 @@ function showIntroHint() {
   }
 
   document.body.appendChild(wrapper);
-
   if (introStep === 2) {
-    const checkCombinationHint = setInterval(() => {
-      if (selected.length === 2) {
-        wrapper.classList.add("fade-out");
-        setTimeout(() => wrapper.remove(), 400);
+    const checkResultOverlay = setInterval(() => {
+      if (document.getElementById("result-overlay")) {
+        wrapper.remove();
         introStep++;
-        clearInterval(checkCombinationHint);
+        clearInterval(checkResultOverlay);
       }
     }, 50);
   }
