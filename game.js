@@ -1916,20 +1916,36 @@ function renderNewElements(elements) {
 
   // ⭐ Info knop als er uitleg bestaat
   if (lastExplanation) {
+  
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
   
-    const infoBox = document.createElement("div");
-    infoBox.className = "info-popup";
+    const popup = document.createElement("div");
+    popup.className = "info-popup";
   
-    infoBox.innerHTML = `
-      <div class="explanation-title">${lastExplanation.titel}</div>
-      <div class="explanation-text">${lastExplanation.tekst}</div>
+    popup.innerHTML = `
+      <div class="info-popup-content">
+        <div class="info-popup-title">${lastExplanation.titel}</div>
+        <div class="info-popup-text">${lastExplanation.tekst}</div>
+        <div class="info-popup-close">×</div>
+      </div>
     `;
   
-    infoButton.appendChild(infoBox);
     overlay.appendChild(infoButton);
+    overlay.appendChild(popup);
+  
+    // openen
+    infoButton.onclick = (e) => {
+      e.stopPropagation();
+      popup.classList.add("visible");
+    };
+  
+    // sluiten
+    popup.querySelector(".info-popup-close").onclick = (e) => {
+      e.stopPropagation();
+      popup.classList.remove("visible");
+    };
   }
 
   // ✅ Hier voeg je de overlay toe aan de DOM
