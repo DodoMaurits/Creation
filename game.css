@@ -249,7 +249,7 @@ body {
 /* ---------------- INFO BUTTON ---------------- */
 .info-button {
   position: absolute;   /* relatief aan overlay */
-  top: 35px;            /* rechtsboven in overlay */
+  top: 35px;
   right: 45px;
   width: 44px;
   height: 44px;
@@ -263,21 +263,23 @@ body {
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 0 12px rgba(255,255,255,0.6);
-  z-index: 3000;        /* boven overlay */
+  z-index: 3000;
 }
 
 .info-popup {
-  position: absolute;
-  bottom: 120%;          /* net boven knop */
-  left: 50%;
-  transform: translateX(-50%);
+  position: fixed; 
+  inset: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.75);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
   z-index: 3001;
 }
 
-.info-button:hover .info-popup {
+.info-button:hover + .info-popup {
   opacity: 1;
   pointer-events: auto;
 }
@@ -292,6 +294,7 @@ body {
   color: white;
   font-family: "Times New Roman", serif;
   box-shadow: 0 0 40px rgba(0,0,0,0.9);
+  animation: infoFade 0.25s ease;
 }
 
 .info-popup-title {
@@ -307,14 +310,8 @@ body {
 }
 
 @keyframes infoFade {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
 }
 
 /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
