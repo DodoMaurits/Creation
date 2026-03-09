@@ -1760,7 +1760,6 @@ function checkCombination() {
   }
     // ✅ Alle requirements gehaald of geen threshold → gebruik normale uitleg
     finalUitleg = firstMatch.uitleg.normal || null;
-  }
 
   // 🔹 Nieuwe elementen maken
   const newElements = [];
