@@ -1808,18 +1808,18 @@ function renderNewElements(elements) {
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
-  let cols = 4; // standaard
+  let cols = 4;
   if (elements.length === 1) cols = 1;
   else if (elements.length === 2) cols = 2;
   else if (elements.length === 3) cols = 3;
-  else if (elements.length === 4) cols = 2;  // 2x2
-  else if (elements.length === 5) cols = 3;  // 3 + 2
-  else if (elements.length === 6) cols = 3;  // 3 + 3
-  else cols = Math.ceil(Math.sqrt(elements.length)); // 7+ → n x n of n x n+1
-
-  grid.style.gridTemplateColumns = `repeat(${cols}, 250px)`;
+  else if (elements.length === 4) cols = 2;
+  else if (elements.length === 5) cols = 3;
+  else if (elements.length === 6) cols = 3;
+  else cols = Math.ceil(Math.sqrt(elements.length));
+  
+  grid.style.gridTemplateColumns = `repeat(${cols}, minmax(180px, 1fr))`;
   grid.style.justifyContent = "center";
-  grid.style.gap = "30px";
+  grid.style.gap = elements.length > 8 ? "20px" : "30px";
 
   elements.forEach(el => {
     const box = document.createElement("div");
