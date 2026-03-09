@@ -319,7 +319,7 @@ body {
   padding: 60px;
   border-radius: 12px;
   color: white;
-  font-family: "Merriweather", serif;
+  font-family: "Palatino", serif;
   box-shadow: 0 0 40px rgba(0,0,0,0.9);
   animation: infoFade 0.25s ease;
 }
@@ -335,6 +335,9 @@ body {
   font-size: 18px;
   line-height: 1.6;
   text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 @keyframes infoFade {
