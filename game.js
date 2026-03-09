@@ -1740,28 +1740,26 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
-  // 🔹 Threshold check
-  let finalUitleg = null;
-  
-  if (firstMatch.uitleg) {
-    if (firstMatch.uitleg.threshold) {
-      const requirements = firstMatch.uitleg.threshold.requirements || [];
-      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-      const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
-  
-      if (!allMet) {
-        // Threshold niet gehaald → overlay tonen
-        showThresholdExplanation(firstMatch.uitleg.threshold, () => {
-          selected.forEach(e => e.dom.classList.remove("selected"));
-          selected = [];
-        });
-        return; // stop verdere verwerking
-      }
-    }
-    // ✅ Alle requirements gehaald of geen threshold
-    finalUitleg = firstMatch.uitleg.normal || null;
-  }
+  // 🔹 Check threshold requirements
+  if (firstMatch.uitleg?.threshold) {
+    const requirements = firstMatch.uitleg.threshold.requirements || [];
+    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+    const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
 
+    if (!allMet) {
+      // Threshold niet gehaald → toon overlay met uitleg
+      showThresholdExplanation(firstMatch.uitleg.threshold, () => {
+        // reset geselecteerde elementen
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+      });
+      return; // stop verdere verwerking
+    }
+  }
+  
+  // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
+  const finalUitleg = firstMatch.uitleg?.normal || null;
+  
   // 🔹 Nieuwe elementen maken
   const newElements = [];
   matches.forEach(match => {
@@ -1785,12 +1783,15 @@ function checkCombination() {
   lastExplanation = finalUitleg || null;
   renderNewElements(newElements);
   newElements.forEach(el => unlockedElements.add(el.naam));
+
+  // Update timeline op basis van uitleg
   if (finalUitleg && finalUitleg.tijd !== undefined) {
     const eventTime = Math.max(0, Math.min(maxTime, finalUitleg.tijd));
     const targetTime = Math.min(currentTime, eventTime);
     animateTimeline(targetTime);
   }
-
+  
+  // reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
