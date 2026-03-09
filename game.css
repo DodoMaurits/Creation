@@ -248,48 +248,28 @@ body {
 
 /* ---------------- INFO BUTTON ---------------- */
 .info-button {
-  position: absolute;
-  top: 35px;
-  right: 45px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.9);
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 0 12px rgba(255,255,255,0.6);
-  transition: transform 0.25s ease;
+  position: relative; /* belangrijk */
   z-index: 3000;
 }
 
-.info-button:hover {
-  transform: scale(1.15);
-}
-
-/* ---------------- INFO POPUP ---------------- */
 .info-popup {
-  position: absolute; /* ipv fixed */
+  position: absolute;           /* t.o.v. de knop */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.85); /* of donkerder overlay */
+  background: rgba(0,0,0,0.75);
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none;         /* niet klikbaar zolang hidden */
   transition: opacity 0.25s ease;
-  z-index: 3000;
+  z-index: 3001;                /* boven de knop */
 }
 
 .info-button:hover .info-popup {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: auto;         /* activeer interactie bij hover */
 }
 
 .info-popup-box {
