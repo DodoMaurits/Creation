@@ -22,5 +22,16 @@
   <audio id="backgroundmusic" src="music.mp3" loop autoplay></audio>
   
   <script src="game.js"></script>
+  <script>
+    const music = document.getElementById("backgroundMusic");
+    music.volume = 0.4;
+    music.play().catch(() => {
+      console.log("Autoplay geblokkeerd, start na eerste klik");
+    });
+    document.addEventListener("click", () => {
+      music.play();
+    }, { once: true });
+  </script>
+  
 </body>
 </html>
