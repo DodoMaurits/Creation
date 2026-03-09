@@ -1855,22 +1855,22 @@ function renderNewElements(elements) {
       </div>
     `;
 
+    const infoButton = document.createElement("div");
+    infoButton.className = "info-button";
+    infoButton.innerHTML = "ℹ";
+    
+    const popup = document.createElement("div");
+    popup.className = "info-popup";
+    
+    popup.innerHTML = `
+      <div class="info-popup-content">
+        <div class="info-popup-title">${lastExplanation.titel}</div>
+        <div class="info-popup-text">${lastExplanation.tekst}</div>
+      </div>
+    `;
+    
+    infoButton.appendChild(popup);
     overlay.appendChild(infoButton);
-    overlay.appendChild(popup);
-
-    infoButton.onclick = (e) => {
-      e.stopPropagation();
-      popup.classList.add("visible");
-    };
-
-    popup.onclick = (e) => {
-      e.stopPropagation();
-    };
-
-    popup.querySelector(".info-popup-close").onclick = (e) => {
-      e.stopPropagation();
-      popup.classList.remove("visible");
-    };
   }
 
   document.body.appendChild(overlay);
