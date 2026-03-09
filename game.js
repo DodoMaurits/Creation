@@ -1751,8 +1751,7 @@ function checkCombination() {
 
       if (!allMet) {
         // ❌ Nog niet alle requirements gehaald → threshold uitleg
-        lastExplanation = firstMatch.uitleg.threshold;
-        renderNewElements([]);
+        showThresholdExplanation(firstMatch.uitleg.threshold);
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
         return;
@@ -1793,6 +1792,51 @@ function checkCombination() {
 
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
+}
+
+// ----- BOX VOOR THRESHOLD -----
+function showThresholdExplanation(threshold) {
+  // overlay maken
+  const oldOverlay = document.getElementById("result-overlay");
+  if (oldOverlay) oldOverlay.remove();
+
+  const overlay = document.createElement("div");
+  overlay.id = "result-overlay";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0,0,0,0.7)";
+  overlay.style.zIndex = 2000;
+
+  const box = document.createElement("div");
+  box.className = "explanation-box";
+
+  const title = document.createElement("div");
+  title.className = "explanation-title";
+  title.innerHTML = threshold.titel;
+
+  const text = document.createElement("div");
+  text.className = "explanation-text";
+  text.innerHTML = threshold.tekst;
+
+  const button = document.createElement("button");
+  button.className = "create-button";
+  button.textContent = "Ga verder";
+  button.onclick = () => {
+    overlay.remove();
+  };
+
+  box.appendChild(title);
+  box.appendChild(text);
+  box.appendChild(button);
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
