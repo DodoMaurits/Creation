@@ -327,43 +327,93 @@ body {
 /* ---------------- INFO BUTTON ---------------- */
 .info-button {
   position: absolute;
-  top: 30px;
-  right: 40px;
-  width: 42px;
-  height: 42px;
+  top: 35px;
+  right: 45px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.9);
   color: black;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  z-index: 2500;
+  box-shadow: 0 0 12px rgba(255,255,255,0.6);
+  transition: transform 0.25s ease;
+  z-index: 3000;
 }
 
 .info-button:hover {
   transform: scale(1.15);
 }
 
+/* ---------------- INFO POPUP ---------------- */
+
 .info-popup {
   position: absolute;
-  top: 55px;
-  right: 0;
+  top: 90px;
+  right: 60px;
   width: 420px;
-  background: rgba(0,0,0,0.9);
-  color: white;
-  padding: 25px;
-  border-radius: 10px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
-  font-family: "Times New Roman", serif;
+  transform: translateY(20px);
+  transition: all 0.25s ease;
+  z-index: 3000;
 }
 
-.info-button:hover .info-popup {
+.info-popup.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.info-popup-content {
+  position: relative;
+  background: rgba(0,0,0,0.75);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Times New Roman", serif;
+  box-shadow: 0 0 25px rgba(0,0,0,0.9);
+}
+
+.info-popup-content::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.info-popup-title {
+  font-family: "Cinzel", serif;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.info-popup-text {
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.info-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.info-popup-close:hover {
   opacity: 1;
 }
 
