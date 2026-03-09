@@ -1905,7 +1905,7 @@ function animateTimeline(newTime) {
 
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
-  if (!timelineLabel || !timelineFill) return;
+  if (!timelineLabel || !timelineFill || !timeline) return;
 
   let labelText;
 
