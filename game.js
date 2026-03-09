@@ -1848,15 +1848,14 @@ function renderNewElements(elements) {
     popup.className = "info-popup";
 
     popup.innerHTML = `
-      <div class="info-popup-content">
-        <div class="info-popup-title">${lastExplanation.titel}</div>
-        <div class="info-popup-text">${lastExplanation.tekst}</div>
-        <div class="info-popup-close">×</div>
-      </div>
+    <div class="info-popup-box">
+      <div class="info-popup-title">${lastExplanation.titel}</div>
+      <div class="info-popup-text">${lastExplanation.tekst}</div>
+    </div>
     `;
     
-    infoButton.appendChild(popup);
     overlay.appendChild(infoButton);
+    overlay.appendChild(popup);
   }
 
   document.body.appendChild(overlay);
