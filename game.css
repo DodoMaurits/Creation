@@ -254,9 +254,9 @@ body {
 
 .info-popup {
   position: absolute;           /* t.o.v. de knop */
-  top: 50%;
+  top: -10px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,6 +270,14 @@ body {
 .info-button:hover .info-popup {
   opacity: 1;
   pointer-events: auto;         /* activeer interactie bij hover */
+}
+
+.info-popup::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
 }
 
 .info-popup-box {
