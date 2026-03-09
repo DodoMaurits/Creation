@@ -285,7 +285,8 @@ body {
   z-index: 2500;
 }
 
-.info-button:hover + .info-popup {
+.info-button:hover + .info-popup,
+.info-popup:hover {
   opacity: 1;
   pointer-events: auto;
 }
@@ -301,6 +302,7 @@ body {
   font-family: "Times New Roman", serif;
   box-shadow: 0 0 40px rgba(0,0,0,0.9);
   animation: infoFade 0.25s ease;
+  pointer-events: auto;
 }
 
 .info-popup-box::before {
