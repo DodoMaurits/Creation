@@ -1573,6 +1573,7 @@ let openRight = null;
 let selected = [];
 let unlockedElements = new Set();
 let introStep = 0;
+let lastExplanation = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -1780,24 +1781,20 @@ function checkCombination() {
     });
   });
 
-  // 🔹 Toon uitleg of nieuwe elementen
   if (finalUitleg) {
+    lastExplanation = finalUitleg;   // ⭐ uitleg onthouden
     showExplanationScreen({ uitleg: finalUitleg }, newElements);
   } else {
+    lastExplanation = null;
     renderNewElements(newElements);
   }
-
-  // 🔹 Voeg unlocked elementen toe
   newElements.forEach(el => unlockedElements.add(el.naam));
-
-  // 🔹 Timeline update
   if (finalUitleg && finalUitleg.tijd !== undefined) {
     const eventTime = Math.max(0, Math.min(maxTime, finalUitleg.tijd));
     const targetTime = Math.min(currentTime, eventTime);
     animateTimeline(targetTime);
   }
 
-  // 🔹 Reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
@@ -1916,6 +1913,24 @@ function renderNewElements(elements) {
   });
 
   overlay.appendChild(grid);
+
+  // ⭐ Info knop als er uitleg bestaat
+  if (lastExplanation) {
+    const infoButton = document.createElement("div");
+    infoButton.className = "info-button";
+    infoButton.innerHTML = "ℹ";
+  
+    const infoBox = document.createElement("div");
+    infoBox.className = "info-popup";
+  
+    infoBox.innerHTML = `
+      <div class="explanation-title">${lastExplanation.titel}</div>
+      <div class="explanation-text">${lastExplanation.tekst}</div>
+    `;
+  
+    infoButton.appendChild(infoBox);
+    overlay.appendChild(infoButton);
+  }
 
   // ✅ Hier voeg je de overlay toe aan de DOM
   document.body.appendChild(overlay);
