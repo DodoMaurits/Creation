@@ -1743,20 +1743,21 @@ function checkCombination() {
   // 🔹 Threshold check
   let finalUitleg = null;
 
-  if (firstMatch.uitleg) {
-    if (firstMatch.uitleg.threshold) {
-      const requirements = firstMatch.uitleg.threshold.requirements || [];
-      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-      const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
-
-      if (!allMet) {
-        // ❌ Nog niet alle requirements gehaald → threshold uitleg
-        showThresholdExplanation(firstMatch.uitleg.threshold);
+  if (firstMatch.uitleg && firstMatch.uitleg.threshold) {
+    const requirements = firstMatch.uitleg.threshold.requirements || [];
+    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+    const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
+  
+    if (!allMet) {
+      // ❌ Nog niet alle requirements gehaald → threshold uitleg
+      showThresholdExplanation(firstMatch.uitleg.threshold, () => {
+        // reset selectie zodat speler opnieuw kan proberen
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
-        return;
-      }
+      });
+      return; // stop verdere verwerking
     }
+  }
     // ✅ Alle requirements gehaald of geen threshold → gebruik normale uitleg
     finalUitleg = firstMatch.uitleg.normal || null;
   }
@@ -1795,8 +1796,8 @@ function checkCombination() {
 }
 
 // ----- BOX VOOR THRESHOLD -----
-function showThresholdExplanation(threshold) {
-  // overlay maken
+function showThresholdExplanation(threshold, callback) {
+  // verwijder oude overlay
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
@@ -1829,6 +1830,7 @@ function showThresholdExplanation(threshold) {
   button.textContent = "Ga verder";
   button.onclick = () => {
     overlay.remove();
+    if (callback) callback(); // voer callback uit
   };
 
   box.appendChild(title);
