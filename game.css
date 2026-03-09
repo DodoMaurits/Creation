@@ -273,20 +273,21 @@ body {
 
 /* ---------------- INFO POPUP ---------------- */
 .info-popup {
-  position: fixed;
-  inset: 0;
+  position: absolute; /* ipv fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.85); /* of donkerder overlay */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
-  z-index: 2500;
+  z-index: 3000;
 }
 
-.info-button:hover + .info-popup,
-.info-popup:hover {
+.info-button:hover .info-popup {
   opacity: 1;
   pointer-events: auto;
 }
