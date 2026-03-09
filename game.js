@@ -1751,7 +1751,8 @@ function checkCombination() {
 
       if (!allMet) {
         // ❌ Nog niet alle requirements gehaald → threshold uitleg
-        showExplanationScreen({ uitleg: firstMatch.uitleg.threshold }, []);
+        lastExplanation = firstMatch.uitleg.threshold;
+        renderNewElements([]);
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
         return;
@@ -1781,13 +1782,8 @@ function checkCombination() {
     });
   });
 
-  if (finalUitleg) {
-    lastExplanation = finalUitleg;   // ⭐ uitleg onthouden
-    showExplanationScreen({ uitleg: finalUitleg }, newElements);
-  } else {
-    lastExplanation = null;
-    renderNewElements(newElements);
-  }
+  lastExplanation = finalUitleg || null;
+  renderNewElements(newElements);
   newElements.forEach(el => unlockedElements.add(el.naam));
   if (finalUitleg && finalUitleg.tijd !== undefined) {
     const eventTime = Math.max(0, Math.min(maxTime, finalUitleg.tijd));
@@ -1799,83 +1795,9 @@ function checkCombination() {
   selected = [];
 }
 
-// ----- CHECK WEL OF GEEN UITLEG -----
-function handleCombinationScreen(match, newElements) {
-  if (match.uitleg) {
-    showExplanationScreen(match, newElements);
-  } else {
-    renderNewElements(newElements);
-  }
-
-  addUnlockedElements(newElements);
-
-  // update tijdlijn
-  if (match.uitleg && match.uitleg.type === "threshold" && match.uitleg.tijd !== undefined) {
-    const eventTime = match.uitleg.tijd;
-    const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
-    const targetTime = Math.min(currentTime, clampedTime);
-    animateTimeline(targetTime);
-  }
-}
-
-// ----- VISUEEL SCHERM VOOR UITLEG -----
-function showExplanationScreen(combination, newElements) {
-  // overlay maken
-  const overlay = document.createElement("div");
-  overlay.id = "result-overlay";
-  overlay.classList.add("visible");
-
-  // box
-  const box = document.createElement("div");
-  box.className = "fade-in explanation-box";
-
-  // inner wrapper
-  const content = document.createElement("div");
-  content.className = "explanation-content";
-
-  // titel
-  const title = document.createElement("div");
-  title.className = "explanation-title";
-  title.textContent = combination.uitleg.titel;
-
-  // tekst
-  const text = document.createElement("div");
-  text.className = "explanation-text";
-  text.innerHTML = combination.uitleg.tekst || "";
-
-  content.appendChild(title);
-  content.appendChild(text);
-
-  // CREATE/GA VERDER knop
-  const button = document.createElement("button");
-  button.className = "create-button";
-  button.textContent = (newElements && newElements.length) ? "CREATE" : "GA VERDER";
-
-  button.onclick = (e) => {
-    e.stopPropagation();
-    overlay.remove();
-    if (newElements && newElements.length) renderNewElements(newElements);
-    else {
-      leftSide.innerHTML = "";
-      rightSide.innerHTML = "";
-      openLeft = null;
-      openRight = null;
-      renderClosed();
-      updateClosedContainer();
-    }
-  };
-
-  content.appendChild(button);
-  box.appendChild(content);
-  overlay.appendChild(box);
-  document.body.appendChild(overlay);
-
-  // fade-in
-  setTimeout(() => overlay.classList.add("visible"), 20);
-}
-
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements) {
+
   // Verwijder bestaande overlay indien aanwezig
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
@@ -1885,13 +1807,14 @@ function renderNewElements(elements) {
 
   const grid = document.createElement("div");
   grid.className = "result-grid";
-    if (elements.length === 6) {
+
+  if (elements.length === 6) {
     grid.style.gridTemplateColumns = "repeat(3, 250px)";
   }
 
   elements.forEach(el => {
     const box = document.createElement("div");
-    box.className = "result-box fade-in"; // CSS class voor fade-in effect
+    box.className = "result-box fade-in";
 
     const img = document.createElement("img");
     img.src = el.icoon;
@@ -1916,14 +1839,14 @@ function renderNewElements(elements) {
 
   // ⭐ Info knop als er uitleg bestaat
   if (lastExplanation) {
-  
+
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
-  
+
     const popup = document.createElement("div");
     popup.className = "info-popup";
-  
+
     popup.innerHTML = `
       <div class="info-popup-content">
         <div class="info-popup-title">${lastExplanation.titel}</div>
@@ -1931,40 +1854,39 @@ function renderNewElements(elements) {
         <div class="info-popup-close">×</div>
       </div>
     `;
-  
+
     overlay.appendChild(infoButton);
     overlay.appendChild(popup);
-  
-    // openen
+
     infoButton.onclick = (e) => {
       e.stopPropagation();
       popup.classList.add("visible");
     };
-  
-    // sluiten
+
+    popup.onclick = (e) => {
+      e.stopPropagation();
+    };
+
     popup.querySelector(".info-popup-close").onclick = (e) => {
       e.stopPropagation();
       popup.classList.remove("visible");
     };
   }
 
-  // ✅ Hier voeg je de overlay toe aan de DOM
   document.body.appendChild(overlay);
 
-  // ✅ Trigger fade-in door de CSS class 'visible' toe te voegen
   setTimeout(() => overlay.classList.add("visible"), 20);
 
-  // ----- Klik anywhere → reset alles naar startpositie -----
+  // Klik anywhere → reset
   overlay.onclick = () => {
     overlay.remove();
     openLeft = null;
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
-  
-    // Closed maps opnieuw renderen en positioneren
+
     renderClosed();
-    updateClosedContainer(); // ← dit zorgt dat ze weer gecentreerd staan
+    updateClosedContainer();
   };
 }
 
