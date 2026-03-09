@@ -1808,9 +1808,18 @@ function renderNewElements(elements) {
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
-  if (elements.length === 6) {
-    grid.style.gridTemplateColumns = "repeat(3, 250px)";
-  }
+  let cols = 4; // standaard
+  if (elements.length === 1) cols = 1;
+  else if (elements.length === 2) cols = 2;
+  else if (elements.length === 3) cols = 3;
+  else if (elements.length === 4) cols = 2;  // 2x2
+  else if (elements.length === 5) cols = 3;  // 3 + 2
+  else if (elements.length === 6) cols = 3;  // 3 + 3
+  else cols = Math.ceil(Math.sqrt(elements.length)); // 7+ → n x n of n x n+1
+
+  grid.style.gridTemplateColumns = `repeat(${cols}, 250px)`;
+  grid.style.justifyContent = "center";
+  grid.style.gap = "30px";
 
   elements.forEach(el => {
     const box = document.createElement("div");
