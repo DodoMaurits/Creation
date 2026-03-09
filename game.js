@@ -1841,19 +1841,17 @@ function renderNewElements(elements) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
-  
+    overlay.appendChild(infoButton);
+    
     const popup = document.createElement("div");
     popup.className = "info-popup";
-  
     popup.innerHTML = `
       <div class="info-popup-box">
         <div class="info-popup-title">${lastExplanation.titel}</div>
         <div class="info-popup-text">${lastExplanation.tekst}</div>
       </div>
     `;
-  
-    infoButton.appendChild(popup);
-    overlay.appendChild(infoButton);
+    overlay.appendChild(popup);
   }
 
   document.body.appendChild(overlay);
