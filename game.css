@@ -285,7 +285,7 @@ body {
   z-index: 2500;
 }
 
-.info-button:hover .info-popup {
+.info-button:hover + .info-popup {
   opacity: 1;
   pointer-events: auto;
 }
