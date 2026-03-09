@@ -1853,13 +1853,16 @@ function renderNewElements(elements) {
   grid.className = "result-grid";
 
   let cols = 4;
-  if (elements.length === 1) cols = 1;
-  else if (elements.length === 2) cols = 2;
-  else if (elements.length === 3) cols = 3;
-  else if (elements.length === 4) cols = 2;
-  else if (elements.length === 5) cols = 3;
-  else if (elements.length === 6) cols = 3;
-  else cols = Math.ceil(Math.sqrt(elements.length));
+  switch(elements.length) { case 1: cols = 1; break; case 2: cols = 2; break; case 3: cols = 3; break;
+    case 4: cols = 4; break;
+    case 5: cols = 3; break;
+    case 6: cols = 3; break;
+    case 7: cols = 4; break;
+    case 8: cols = 4; break;
+    case 9: cols = 5; break;
+    case 10: cols = 5; break;
+    default: cols = Math.ceil(Math.sqrt(elements.length));
+  }
   
   grid.style.gridTemplateColumns = `repeat(${cols}, minmax(180px, 1fr))`;
   grid.style.justifyContent = "center";
