@@ -1837,25 +1837,23 @@ function renderNewElements(elements) {
 
   overlay.appendChild(grid);
 
-  // ⭐ Info knop als er uitleg bestaat
   if (lastExplanation) {
-
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
-
+  
     const popup = document.createElement("div");
     popup.className = "info-popup";
-
+  
     popup.innerHTML = `
-    <div class="info-popup-box">
-      <div class="info-popup-title">${lastExplanation.titel}</div>
-      <div class="info-popup-text">${lastExplanation.tekst}</div>
-    </div>
+      <div class="info-popup-box">
+        <div class="info-popup-title">${lastExplanation.titel}</div>
+        <div class="info-popup-text">${lastExplanation.tekst}</div>
+      </div>
     `;
-    
+  
+    infoButton.appendChild(popup);
     overlay.appendChild(infoButton);
-    overlay.appendChild(popup);
   }
 
   document.body.appendChild(overlay);
