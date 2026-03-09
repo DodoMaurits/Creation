@@ -248,36 +248,38 @@ body {
 
 /* ---------------- INFO BUTTON ---------------- */
 .info-button {
-  position: relative; /* belangrijk */
-  z-index: 3000;
+  position: absolute;   /* relatief aan overlay */
+  top: 35px;            /* rechtsboven in overlay */
+  right: 45px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(255,255,255,0.6);
+  z-index: 3000;        /* boven overlay */
 }
 
 .info-popup {
-  position: absolute;           /* t.o.v. de knop */
-  top: -10px;
+  position: absolute;
+  bottom: 120%;          /* net boven knop */
   left: 50%;
-  transform: translate(-50%, -100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0,0.75);
+  transform: translateX(-50%);
   opacity: 0;
-  pointer-events: none;         /* niet klikbaar zolang hidden */
+  pointer-events: none;
   transition: opacity 0.25s ease;
-  z-index: 3001;                /* boven de knop */
+  z-index: 3001;
 }
 
 .info-button:hover .info-popup {
   opacity: 1;
-  pointer-events: auto;         /* activeer interactie bij hover */
-}
-
-.info-popup::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: -1;
+  pointer-events: auto;
 }
 
 .info-popup-box {
@@ -290,20 +292,6 @@ body {
   color: white;
   font-family: "Times New Roman", serif;
   box-shadow: 0 0 40px rgba(0,0,0,0.9);
-  animation: infoFade 0.25s ease;
-  pointer-events: auto;
-}
-
-.info-popup-box::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 2px solid white;
-  border-radius: 10px;
-  opacity: 0.7;
 }
 
 .info-popup-title {
