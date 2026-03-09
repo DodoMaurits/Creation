@@ -306,8 +306,7 @@ body {
   z-index: 3001;
 }
 
-.info-button:hover .info-popup,
-.info-button:focus .info-popup {
+.info-button:hover + .info-popup {
   opacity: 1;
   pointer-events: auto;
 }
