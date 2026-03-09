@@ -1854,20 +1854,6 @@ function renderNewElements(elements) {
         <div class="info-popup-close">×</div>
       </div>
     `;
-
-    const infoButton = document.createElement("div");
-    infoButton.className = "info-button";
-    infoButton.innerHTML = "ℹ";
-    
-    const popup = document.createElement("div");
-    popup.className = "info-popup";
-    
-    popup.innerHTML = `
-      <div class="info-popup-content">
-        <div class="info-popup-title">${lastExplanation.titel}</div>
-        <div class="info-popup-text">${lastExplanation.tekst}</div>
-      </div>
-    `;
     
     infoButton.appendChild(popup);
     overlay.appendChild(infoButton);
@@ -1924,7 +1910,7 @@ function animateTimeline(newTime) {
 
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
-  if (!timelineLabel || !timelineFill || !timeline) return;
+  if (!timelineLabel || !timelineFill) return;
 
   let labelText;
 
