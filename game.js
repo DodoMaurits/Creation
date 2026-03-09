@@ -1749,17 +1749,15 @@ function checkCombination() {
     const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
   
     if (!allMet) {
-      // ❌ Nog niet alle requirements gehaald → threshold uitleg
       showThresholdExplanation(firstMatch.uitleg.threshold, () => {
-        // reset selectie zodat speler opnieuw kan proberen
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
       return; // stop verdere verwerking
     }
   }
-    // ✅ Alle requirements gehaald of geen threshold → gebruik normale uitleg
-    finalUitleg = firstMatch.uitleg.normal || null;
+  // ✅ Alle requirements gehaald of geen threshold → gebruik normale uitleg
+  finalUitleg = firstMatch.uitleg.normal || null;
 
   // 🔹 Nieuwe elementen maken
   const newElements = [];
