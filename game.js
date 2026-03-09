@@ -1747,13 +1747,11 @@ function checkCombination() {
     const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
 
     if (!allMet) {
-      // Threshold niet gehaald → toon overlay met uitleg
       showThresholdExplanation(firstMatch.uitleg.threshold, () => {
-        // reset geselecteerde elementen
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
-      return; // stop verdere verwerking
+      return;
     }
   }
   
@@ -1798,12 +1796,11 @@ function checkCombination() {
 
 // ----- BOX VOOR THRESHOLD -----
 function showThresholdExplanation(threshold, callback) {
-  // verwijder oude overlay
-  const oldOverlay = document.getElementById("result-overlay");
+  const oldOverlay = document.getElementById("threshold-overlay");
   if (oldOverlay) oldOverlay.remove();
 
   const overlay = document.createElement("div");
-  overlay.id = "result-overlay";
+  overlay.id = "threshold-overlay";
   overlay.style.display = "flex";
   overlay.style.justifyContent = "center";
   overlay.style.alignItems = "center";
