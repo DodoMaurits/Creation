@@ -1842,7 +1842,6 @@ function renderNewElements(elements) {
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
   
-    // popup als kind van de knop
     const popup = document.createElement("div");
     popup.className = "info-popup";
   
