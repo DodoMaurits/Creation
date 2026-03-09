@@ -273,55 +273,69 @@ body {
 
 /* ---------------- INFO POPUP ---------------- */
 .info-popup {
-  position: absolute;
-  top: 55px;
-  right: 0;
-  width: 420px;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.75);
   opacity: 0;
-  transform: translateY(10px);
   pointer-events: none;
-  transition: all 0.25s ease;
+  transition: opacity 0.25s ease;
+  z-index: 2500;
 }
 
-/* ⭐ verschijnt bij hover */
 .info-button:hover .info-popup {
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
 }
 
-.info-popup-content {
+.info-popup-box {
   position: relative;
   background: rgba(0,0,0,0.85);
-  padding: 30px;
-  border-radius: 10px;
+  width: 40dvw;
+  max-width: 650px;
+  padding: 60px;
+  border-radius: 12px;
   color: white;
   font-family: "Times New Roman", serif;
-  box-shadow: 0 0 25px rgba(0,0,0,0.9);
+  box-shadow: 0 0 40px rgba(0,0,0,0.9);
+  animation: infoFade 0.25s ease;
 }
 
-.info-popup-content::before {
+.info-popup-box::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
   border: 2px solid white;
-  border-radius: 8px;
+  border-radius: 10px;
   opacity: 0.7;
 }
 
 .info-popup-title {
   font-family: "Cinzel", serif;
-  font-size: 26px;
-  margin-bottom: 12px;
+  font-size: 34px;
+  margin-bottom: 20px;
 }
 
 .info-popup-text {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.6;
   text-align: justify;
+}
+
+@keyframes infoFade {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
