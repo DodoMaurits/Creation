@@ -1742,22 +1742,25 @@ function checkCombination() {
 
   // 🔹 Threshold check
   let finalUitleg = null;
-
-  if (firstMatch.uitleg && firstMatch.uitleg.threshold) {
-    const requirements = firstMatch.uitleg.threshold.requirements || [];
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
   
-    if (!allMet) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
-      return; // stop verdere verwerking
+  if (firstMatch.uitleg) {
+    if (firstMatch.uitleg.threshold) {
+      const requirements = firstMatch.uitleg.threshold.requirements || [];
+      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+      const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
+  
+      if (!allMet) {
+        // Threshold niet gehaald → overlay tonen
+        showThresholdExplanation(firstMatch.uitleg.threshold, () => {
+          selected.forEach(e => e.dom.classList.remove("selected"));
+          selected = [];
+        });
+        return; // stop verdere verwerking
+      }
     }
+    // ✅ Alle requirements gehaald of geen threshold
+    finalUitleg = firstMatch.uitleg.normal || null;
   }
-  // ✅ Alle requirements gehaald of geen threshold → gebruik normale uitleg
-  finalUitleg = firstMatch.uitleg.normal || null;
 
   // 🔹 Nieuwe elementen maken
   const newElements = [];
