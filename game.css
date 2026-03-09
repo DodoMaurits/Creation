@@ -246,84 +246,6 @@ body {
   opacity: 1;
 }
 
-/* ---------------- UITLEG ---------------- */
-.explanation-box {
-  position: relative; /* nodig voor pseudo-element */
-  background: rgba(0,0,0,0.2);
-  width: 40dvw;
-  height: auto;
-  max-height: 90dvh;
-  border-radius: 12px;
-  padding: 80px;
-  box-sizing: border-box;
-  color: white;
-  text-align: center;
-  font-family: "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 1.5;
-  box-shadow: 0 0 20px rgba(0,0,0,0.8);
-  overflow: hidden; /* pseudo-element niet buiten laten steken */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.explanation-box::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 2px solid white; 
-  border-radius: 10px;
-  pointer-events: none; 
-  opacity: 0.7;
-}
-
-.explanation-title {
-  font-family: "Cinzel", serif;
-  font-size: 36px;
-  margin-bottom: 16px;
-}
-
-.explanation-text {
-  font-family: "Times New Roman", serif;
-  font-size: 18px;
-  line-height: 1.6;
-  hyphens: auto;
-  word-break: normal;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-/* ---------------- CREATE BUTTON VOOR UITLEG-OVERLAY ---------------- */
-.create-button {
-  font-family: "Cinzel", serif;
-  padding: 15px 40px;
-  font-size: 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.5); /* 50% transparant */
-  transition: all 0.3s ease;
-  animation: floatButton 2s ease-in-out infinite alternate;
-  margin-top: 20px;
-}
-
-.create-button:hover {
-  transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.8); /* iets minder transparant bij hover */
-}
-
-@keyframes floatButton {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(10px); } /* 10px naar rechts */
-  100% { transform: translateX(0); }
-}
-
 /* ---------------- INFO BUTTON ---------------- */
 .info-button {
   position: absolute;
@@ -784,22 +706,7 @@ body {
               text-align: center;
             }
 
-            /* ---------------- UITLEG ---------------- */
-            .explanation-box {
-              width: 80vw;      /* smaller box op mobiel */
-              padding: 40px;    /* minder padding */
-              font-size: 16px;  /* basisfont kleiner */
-            }
-          
-            .explanation-title {
-              font-size: 24px;  /* kleinere titel */
-            }
-          
-            .explanation-text {
-              font-size: 14px;  /* kleinere bodytekst */
-              line-height: 1.4; /* iets strakker voor kleine schermen */
-            }
-  
+            /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
             .result-grid { display: grid; justify-content: center;
               gap: 20px;
               grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
