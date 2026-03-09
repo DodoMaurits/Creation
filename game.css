@@ -324,6 +324,50 @@ body {
   100% { transform: translateX(0); }
 }
 
+/* ---------------- INFO BUTTON ---------------- */
+.info-button {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.85);
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 2500;
+}
+
+.info-button:hover {
+  transform: scale(1.15);
+}
+
+.info-popup {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 420px;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  font-family: "Times New Roman", serif;
+}
+
+.info-button:hover .info-popup {
+  opacity: 1;
+}
+
+/* ---------------- NIEUW ELEMENT SCHERM ---------------- */
 .result-grid {
   display: grid;
   gap: 40px;
