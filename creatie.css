@@ -246,18 +246,18 @@ html, body {
             }
           
             .explanation-title {
-              font-size: 28px;
+              font-size: 24px;
             }
           
             .explanation-text {
-              font-size: 14px;
-              line-height: 1.5;
+              font-size: 8px;
+              line-height: 0.5;
               overflow-y: auto;
               max-height: 60%; 
             }
           
             .close-btn {
-              font-size: 18px;
+              font-size: 12px;
               padding: 12px 30px;
             }
 }
