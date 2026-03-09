@@ -6,6 +6,33 @@ body {
   height: 100vh;
 }
 
+/* ---------------- MUTE BUTTON ---------------- */
+#mute-button {
+  position: fixed;         /* altijd rechtsboven */
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  background: rgba(200,200,200,0.3); /* lichtgrijs, onopvallend */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5000;
+  transition: background 0.2s ease;
+}
+
+#mute-button:hover {
+  background: rgba(200,200,200,0.5);
+}
+
+#mute-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #555; /* donkergrijs icoon */
+}
+
 /* ---------------- HOMEPAGE ---------------- */
 .homepage {
   height: 100vh;
