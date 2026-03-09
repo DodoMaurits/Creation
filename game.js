@@ -859,7 +859,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Kust", "Storm"],
+    input: [
+      ["Kust", "Storm"], ["Kust", "Orkaan"]
+    ],
     output: [
       { naam: "Overstroming", icoon: "icons/Overstroming.png", map: "Water", 
         quote: "Great floods have flown from simple sources <br><br>- William Shakespeare"
