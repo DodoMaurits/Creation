@@ -18,7 +18,7 @@ const mappen = [
 const combinaties = [
   {
     input: ["Oerknal", "Kou"],
-    hint: `Wat zal er gebeuren wanneer energie de ruimte krijgt?`,
+    hint: `Hm.. Wat zal er gebeuren wanneer energie de ruimte krijgt?`,
     output: [
       { naam: "Zwaartekracht", icoon: "icons/Zwaartekracht.png", map: "Krachten",
         quote: `Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion 
