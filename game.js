@@ -1789,11 +1789,11 @@ function checkCombination() {
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-  
+    
     const missing = requirements.filter(r =>
       !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
-  
+    
     if (missing.length > 0) {
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
@@ -1872,18 +1872,15 @@ function showThresholdExplanation(threshold, missing, callback) {
   text.innerHTML = threshold.tekst;
 
   if (missing && missing.length > 0) {
-    const reqTitle = document.createElement("div");
-    reqTitle.className = "threshold-req-title";
-    reqTitle.innerHTML = "<br><b>Nog nodig:</b>";
-    const reqList = document.createElement("ul");
-    reqList.className = "threshold-req-list";
+    const grid = document.createElement("div");
+    grid.className = "threshold-grid";
     missing.forEach(req => {
-      const li = document.createElement("li");
-      li.textContent = req;
-      reqList.appendChild(li);
+      const circle = document.createElement("div");
+      circle.className = "threshold-circle";
+      circle.textContent = req;
+      grid.appendChild(circle);
     });
-    text.appendChild(reqTitle);
-    text.appendChild(reqList);
+    box.appendChild(grid);
   }
 
   const button = document.createElement("button");
