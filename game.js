@@ -431,7 +431,7 @@ const combinaties = [
         requirements: ["Radioactiviteit", "Sterrenstelsel", "Zwart Gat",
                        "Neptunus", "Uranus", "Saturnus", "Jupiter",
                        "Mars", "De Aarde", "De Maan", "Venus", "Mercurius", 
-                       "Basalt", "Obsidiaan", "Platentekoniek", "Vulkaan"]
+                       "Basalt", "Obsidiaan", "Platentektoniek", "Vulkaan"]
       },
       normal: {
         titel: "Water op Aarde",
