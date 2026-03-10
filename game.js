@@ -428,8 +428,10 @@ const combinaties = [
         titel: "Water op Aarde", 
         tekst: `Je moet eerst nog wat meer halen...<br>`,
         tijd: 4_400_000_000,
-        requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", 
-                       "Sterrenstelsel", "Radioactiviteit", "Platentektoniek"]
+        requirements: ["Radioactiviteit", "Sterrenstelsel", "Zwart Gat",
+                       "Neptunus", "Uranus", "Saturnus", "Jupiter",
+                       "Mars", "De Aarde", "De Maan", "Venus", "Mercurius", 
+                       "Basalt", "Obsidiaan", "Platentekoniek", "Vulkaan"]
       },
       normal: {
         titel: "Water op Aarde",
