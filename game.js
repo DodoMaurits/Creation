@@ -45,38 +45,74 @@ const combinaties = [
         De 4 natuurkrachten waren geboren...
         
         <br><br>Vrijwel meteen brak de zwaartekracht. Tegen de uitdijing van energie in, houdt deze natuurkracht 
-        energie en materie bij elkaar, als een natuurlijke aantrekkingskracht. Onder de 10<sup>28</sup> graden brak de 
-        sterke kernkracht. Op miniscule afstanden bindt het de kleinste deeltjes, genaamd quarks, tot atoomkernen.
-        Onder de 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende 
+        energie en materie bij elkaar, als een natuurlijke aantrekkingskracht. 
+        
+        <br><br>Onder de 10<sup>28</sup> graden brak de sterke kernkracht. Op miniscule afstanden bindt het de kleinste 
+        deeltjes, genaamd quarks, tot atoomkernen.
+        
+        <br><br>Onder de 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende 
         materie en massaloze straling. Massa remt beweging af, maar straling kan op lichtsnelheid bewegen en vormen 
-        aannemen als radiogolven, uv-straling, licht en kleur. Onder de 10<sup>13</sup> graden viel de elektrozwakke 
-        kracht uiteen in zwakke kernkracht en elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt 
-        lading en massa uit, terwijl plasma's op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
+        aannemen als radiogolven, uv-straling, licht en kleur.
+        
+        <br><br>Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
+        elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's 
+        op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
         tijd: 13_800_000_000
       }
     }
   },
   {
     input: ["Quarks", "Kou"],
-    hint: `Hm.. Wat zal er gebeuren wanneer energie de ruimte krijgt?`,
+    hint: `Kou remt chaotische energie af... benieuwd wat de kleine bouwstenen gaan doen`,
     output: [
       { naam: "Atomen", icoon: "icons/Atomen.png", map: "Chemie",
         quote: `In reality, nothing but atoms and the void 
         <br><br>- Democritos`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Atoomvorming",
+        tekst: `380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 3000 Kelvin (2727 graden Celsius).
+        <br><br>De bewegingsenergie was zo laag dat protonen, elektronen en neutronen konden fuseren tot neutrale 
+        structuren die op lange termijn stabiel blijven. Het grootste deel van de materie in het heelal werd daardoor 
+        elektrisch neutraal, waardoor het zichtbare plasma verdampte. Fotonen konden nu vrij door de elektrisch neutrale 
+        nevel en donkere materie stromen. Tot op heden kunnen astronomen de resultaten van deze faseverandering waarnemen,
+        omdat fotonen die uit het plasma ontsnapten een dun achtergrondbrommetje van energie voortbrachten, bekend als de 
+        kosmische achtergrondstraling.
+        <br><br>Atomen hebben elk een kleine kern in het centrum, bestaande uit één of meer positief geladen protonen en 
+        nul of meer neutrale neutronen. Rond de kern cirkelen op grote afstanden negatief geladen elektronen, één voor 
+        elke positief geladen proton in de kern. Zij worden door de elektromagnetische kracht bij elkaar gehouden in het 
+        gebied dat men gewoonlijk de elektronenwolk noemt. In dit gebied vindt de chemie plaats. 
+        <br><br>Er worden continu bindingen gevormd en verbroken tussen protonen en elektronen, met als resultaat de 
+        opkomst van geheel nieuwe vormen van materie. De drijvende kracht achter al deze activiteit is het feit dat 
+        elektronen negatieve ladingen hebben en elkaar afstoten, maar ze worden aangetrokken door de positieve ladingen 
+        van protonen, hetzij in hun eigen atoom, hetzij in naburige atomen.`,
+        tijd: 13_700_620_000
+      }
+    }
   },
   {
     input: ["Atomen", "Straling"],
+    hint: `Hm.. Wat als de straling sterk genoeg is atomen te splitsen?`,
     output: [
       { naam: "Radioactiviteit", icoon: "icons/Radioactiviteit.png", map: "Krachten",
         quote: `Nuclear power is one hell of a way to boil water 
         <br><br>- Albert Einstein`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        titel: "Radioactiviteit",
+        tekst: `Gamma-, röntgen- en hoogenergetische uv-straling zijn zo frequent, dat zij genoeg energie hebben om elektronen
+        van atoomkernen te splitsen. Wanneer de frequentie hier hoog genoeg voor is, spreken wij van radioactief.`,
+        tijd: 13_700_620_000
+      }
+    }
   },
   {
     input: ["Atomen", "Zwaartekracht"],
+    hint: `Laat de bouwstenen elkaar aantrekken, dan zal er pas echt iets zweven...`,
     output: [
       { naam: "Gas", icoon: "icons/Gas.png", map: "Lucht",
       quote: `Hydrogen is a light, odorless gas, which, given enough time, turns into people 
@@ -86,6 +122,7 @@ const combinaties = [
   },
   {
     input: ["Gas", "Kou"],
+    hint: `Brrr.. zwevend onder 0 zal het bevriezen`,
     output: [
       { naam: "IJs", icoon: "icons/IJs.png", map: "Water",
         quote: `Just as when water is frozen in to a form as ice and then melts so at the time of death, 
@@ -96,6 +133,7 @@ const combinaties = [
   },
   {
     input: ["Gas", "Zwaartekracht"],
+    hint: `Hoe meer opeengepakte massa, hoe groter de kans op een ontploffing`,
     output: [
       { naam: "Ster", icoon: "icons/Ster.png", map: "Heelal",
         quote: `Every star may be a sun to someone 
@@ -107,7 +145,8 @@ const combinaties = [
         titel: "A Star Is Born",
         tekst: `Zwaartekracht werd sterker en sterker naarmate massa door afremming dichter bij elkaar kwam. Kubus voor
         kubus werd het heelal korreliger en klonteriger. Bij het botsen van materie kwam opnieuw energie vrij dat lokaal
-        temperaturen opdreef. Klonterige gaswolken begonnen hun eigen hitte te produceren met als climax het bereiken van 
+        temperaturen opdreef. 
+        <br><br>Klonterige gaswolken begonnen hun eigen hitte te produceren met als climax het bereiken van 
         de 10 miljoen graden. Atomen vielen weer uit elkaar en plasma's knetterden weer van elektriciteit, waarbij
         triljoenen protonen zich fuseerden tot heliumkernen. De enorme energie verhit de kern dusdanig dat deze uitzet en 
         tegen de zwaartekracht in duwt. Zie daar, de eerste generatie sterren.`,
@@ -117,6 +156,7 @@ const combinaties = [
   },
   {
     input: ["Ster", "Zwaartekracht"],
+    hint: `Uiteindelijk verliest elke ster het gevecht van de natuurkrachten...`,
     output: [
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie",
         quote: `Do not wait to strike till the iron is hot but make it hot by striking 
@@ -152,6 +192,7 @@ const combinaties = [
       ["Ster", "Gas"],
       ["Ster", "IJzer"]
     ],
+    hint: `Kijk hoe het blijft hangen in een baan rond haar ster...`,
     output: [
       { naam: "Asteroïden", icoon: "icons/Asteroïden.png", map: "Heelal",
         quote: `If you keep chasing shooting stars, you'll never feel the warmth of the sun 
@@ -165,6 +206,7 @@ const combinaties = [
   },
   {
     input: ["Ster", "Ster"],
+    hint: `Zo veel sterren.. het lijken wel witte melkslierten rond het afvoerputje`,
     output: [
       { naam: "Sterrenstelsel", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
         quote: `Never apologize for burning too brightly or collapsing into yourself every night. 
@@ -175,6 +217,7 @@ const combinaties = [
   }, 
   {
     input: ["Supernova", "Zwaartekracht"],
+    hint: `Als daar alles implodeert onder de zwaartekracht, prikken we dan geen gaten in ons systeem?`,
     output: [
       { naam: "Zwart Gat", icoon: "icons/Zwartgat.png", map: "Heelal",
         quote: `I believe in black holes. I believe that as the universe empties into nothingness, 
@@ -188,6 +231,7 @@ const combinaties = [
       ["Asteroïden", "Planeet"], ["Asteroïden", "De Aarde"], ["Asteroïden", "Mars"], 
       ["Asteroïden", "Venus"], ["Asteroïden", "Mercurius"], ["Asteroïden", "De Maan"]
     ],
+    hint: `Wow.. een spectaculaire botsing maakt alles heet en vloeibaar...`,
     output: [
       { naam: "Vuur", icoon: "icons/Vuur.png", map: "Vuur",
         quote: `Tampering with fire will burn you, even in the coldest regions 
@@ -205,6 +249,7 @@ const combinaties = [
   },
   {
     input: ["Planeet", "Gas"],
+    hint: `Ik ken een paar planeten, dat zijn grote vriendelijke gasreuzen`,
     output: [
       { naam: "Jupiter", icoon: "icons/Jupiter.png", map: "Heelal",
         quote: `Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... 
@@ -226,7 +271,10 @@ const combinaties = [
     }
   },
   {
-    input: ["Planeet", "IJs"],
+    input: [
+      ["Planeet", "Kou"], ["Planeet", "IJs"]
+    ],
+    hint: `De schoonheid van sommige planeten wil ik gekoeld bewaard...`,
     output: [
       { naam: "Neptunus", icoon: "icons/Neptunus.png", map: "Heelal",
         quote: `We see it as Columbus saw America from the coast of Spain. 
@@ -249,6 +297,7 @@ const combinaties = [
   },
   {
     input: ["Planeet", "IJzer"],
+    hint: `Als ijzer zijn baan om de zon vindt, kan het wel eens iets moois opleveren...`,
     output: [
       { naam: "Mars", icoon: "icons/Mars.png", map: "Heelal",
         quote: `It was Mars. the God of War, and for me, the fighting man, it had always held the power of 
