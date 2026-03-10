@@ -398,26 +398,25 @@ body {
 
 .threshold-grid {
   display: grid;
-  grid-template-columns: repeat(5, 130px);
+  grid-template-columns: repeat(5, 80px);
   justify-content: center;
-  gap: 20px;
-  margin-top: 25px;
+  gap: 14px;
+  margin-top: 20px;
 }
 
 .threshold-circle {
-  width: 130px;
-  height: 130px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background: rgba(255,255,255,0.08);
   border: 2px solid rgba(255,255,255,0.25);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 12px;
+  padding: 6px;
+  line-height: 1.2;
 }
 
 /* ---------------- GA VERDER BUTTON BIJ THRESHOLD ---------------- */
