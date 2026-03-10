@@ -331,7 +331,7 @@ body {
 }
 
 .info-popup-text {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif !important;
   font-size: 18px;
   line-height: 1.6;
   text-align: justify;
@@ -344,6 +344,7 @@ body {
   from { transform: translateY(20px); opacity: 0; }
   to   { transform: translateY(0); opacity: 1; }
 }
+
 /* ---------------- THRESHOLD UITLEG ---------------- */
 .explanation-box {
   position: relative; /* nodig voor pseudo-element */
