@@ -137,15 +137,11 @@ html, body {
 .explanation-box {
   position: relative;
   background: rgba(0,0,0,0.5);
-  width: 40dvw;
-  height: 80dvh;
   border-radius: 12px;
-  padding: 80px;
   box-sizing: border-box;
   color: white;
   text-align: center;
   font-family: "Times New Roman", serif;
-  font-size: 20px;
   line-height: 1.5;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
   overflow: hidden;
@@ -154,7 +150,11 @@ html, body {
   flex-direction: column; 
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: clamp(320px, 40vw, 700px);
+  height: clamp(400px, 80vh, 900px);
+  padding: clamp(20px, 5vw, 80px);
+  gap: clamp(10px, 2vh, 30px);
+  font-size: clamp(14px, 1.2vw, 20px);
 }
 
 .explanation-box::before {
@@ -172,12 +172,12 @@ html, body {
 
 .explanation-title {
   font-family: "Cinzel", serif;
-  font-size: 36px;
+  font-size: clamp(20px, 3vw, 36px);
 }
 
 .explanation-text {
   font-family: "Times New Roman", sans-serif;
-  font-size: 18px;
+  font-size: clamp(12px, 1.2vw, 18px);
   line-height: 1.4;
   max-width: 100%;
   word-wrap: break-word;
@@ -186,7 +186,7 @@ html, body {
 
 .explanation-text p {
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: clamp(13px, 1.3vw, 19px);
   margin-top: 15px;
   color: #e0e0e0;
   text-align: justify;
@@ -198,8 +198,8 @@ html, body {
 
 .close-btn {
   font-family: "Cinzel", serif;
-  padding: 15px 40px;
-  font-size: 20px;
+  padding: clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 40px);
+  font-size: clamp(14px, 1.4vw, 20px);
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -236,28 +236,5 @@ html, body {
             .caption {
               width: 90%;
               font-size: 12px;
-            }
-  
-            .explanation-box {
-              width: 90%; 
-              height: 80%;
-              padding: 20px;
-              font-size: 16px;
-            }
-          
-            .explanation-title {
-              font-size: 24px;
-            }
-          
-            .explanation-text {
-              font-size: 8px;
-              line-height: 0.5;
-              overflow-y: auto;
-              max-height: 60%; 
-            }
-          
-            .close-btn {
-              font-size: 12px;
-              padding: 12px 30px;
             }
 }
