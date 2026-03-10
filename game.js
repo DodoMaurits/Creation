@@ -426,11 +426,12 @@ const combinaties = [
     uitleg: {
       threshold: {
         titel: "Water op Aarde", 
-        tekst: "Je moet eerst nog wat meer halen...
-          <br><br>",
+        tekst: `Je moet eerst nog wat meer halen...
+          <br><br>4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
+          van vloeibaar water...`,
         tijd: 4_400_000_000,
         requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", 
-                       "Sterrenstelsel", "Radioactiviteit"]
+                       "Sterrenstelsel", "Radioactiviteit", "Platentektoniek"]
       },
       normal: {
         titel: "Water op Aarde",
@@ -1788,10 +1789,13 @@ function checkCombination() {
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    const allMet = requirements.every(r => normalizedUnlocked.includes(r.trim().toLowerCase()));
-
-    if (!allMet) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, () => {
+  
+    const missing = requirements.filter(r =>
+      !normalizedUnlocked.includes(r.trim().toLowerCase())
+    );
+  
+    if (missing.length > 0) {
+      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
@@ -1839,7 +1843,7 @@ function checkCombination() {
 }
 
 // ----- BOX VOOR THRESHOLD -----
-function showThresholdExplanation(threshold, callback) {
+function showThresholdExplanation(threshold, missing, callback) {
   const oldOverlay = document.getElementById("threshold-overlay");
   if (oldOverlay) oldOverlay.remove();
 
@@ -1866,6 +1870,21 @@ function showThresholdExplanation(threshold, callback) {
   const text = document.createElement("div");
   text.className = "explanation-text";
   text.innerHTML = threshold.tekst;
+
+  if (missing && missing.length > 0) {
+    const reqTitle = document.createElement("div");
+    reqTitle.className = "threshold-req-title";
+    reqTitle.innerHTML = "<br><b>Nog nodig:</b>";
+    const reqList = document.createElement("ul");
+    reqList.className = "threshold-req-list";
+    missing.forEach(req => {
+      const li = document.createElement("li");
+      li.textContent = req;
+      reqList.appendChild(li);
+    });
+    text.appendChild(reqTitle);
+    text.appendChild(reqList);
+  }
 
   const button = document.createElement("button");
   button.className = "create-button";
