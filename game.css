@@ -43,6 +43,81 @@ body {
   fill: #555; /* donkergrijs icoon */
 }
 
+/* ---------------- HINT BUTTON ---------------- */
+#hint-container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+}
+
+#hint-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.85);
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+#hint-button::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+  animation: hintPulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes hintPulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.4); opacity: 0.3; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+#hint-button:hover::after {
+  content: "Hint";
+  position: absolute;
+  right: 55px;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+#hint-bubble {
+  position: absolute;
+  right: 60px;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  max-width: 220px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+#hint-bubble.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* ---------------- SIDES (OPEN MAPS) ---------------- */
 .map-title {
   cursor: pointer;
