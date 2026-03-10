@@ -226,15 +226,15 @@ const combinaties = [
   {
     input: ["Planeet", "IJs"],
     output: [
-      { naam: "Uranus", icoon: "icons/Uranus.png", map: "Heelal",
-        quote: `If the world seems cold to you, kindle fires to warm it 
-        <br><br>- Lucy Larcom`
-      },
       { naam: "Neptunus", icoon: "icons/Neptunus.png", map: "Heelal",
         quote: `We see it as Columbus saw America from the coast of Spain. 
         Its movements have been felt, trembling along the far-reaching line of our analysis 
         with a certainty hardly inferior to that of ocular demonstration 
         <br><br>- William Herschel`
+      },
+      { naam: "Uranus", icoon: "icons/Uranus.png", map: "Heelal",
+        quote: `If the world seems cold to you, kindle fires to warm it 
+        <br><br>- Lucy Larcom`
       }
     ],
     uitleg: {
