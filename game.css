@@ -89,13 +89,16 @@ body {
 #hint-button:hover::after {
   content: "Hint";
   position: absolute;
-  right: 55px;
+  top: 50px; /* onder de button, past bij de 44px hoogte + kleine marge */
+  left: 50%;
+  transform: translateX(-50%); /* horizontaal centreren */
   background: rgba(0,0,0,0.85);
   color: white;
   padding: 4px 8px;
   font-size: 12px;
   border-radius: 6px;
   white-space: nowrap;
+  z-index: 5000;
 }
 
 #hint-bubble {
