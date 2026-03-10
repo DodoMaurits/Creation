@@ -118,7 +118,7 @@ const combinaties = [
     output: [
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie",
         quote: `Do not wait to strike till the iron is hot but make it hot by striking 
-        <br><br>- William Yeatsu`
+        <br><br>- William Yeats`
       },
       { naam: "Supernova", icoon: "icons/Supernova.png", map: "Heelal",
         quote: `A supernova is one of the most powerful explosions in the universe. 
