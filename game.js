@@ -2290,51 +2290,41 @@ hintButton.onclick = showHint;
 
 // ----- HINTS FUNCTIE -----
 function showHint() {
-
   const available = [];
-
   mappen.forEach(map => {
     map.elementen.forEach(el => {
-      if (unlockedElements.has(el.naam)) {
+      if (unlockedElements.has(el.naam) || el.naam === "Oerknal") {
         available.push(el.naam);
       }
     });
   });
 
   const possible = combinaties.filter(c => {
-
     const inputs = Array.isArray(c.input[0]) ? c.input.flat() : c.input;
-
     const inputsAvailable = inputs.every(i => available.includes(i));
-
     const outputUnlocked = c.output.every(o =>
       unlockedElements.has(o.naam)
     );
-
     return inputsAvailable && !outputUnlocked;
-
   });
 
   if (possible.length === 0) {
     hintBubble.textContent = "Nog geen hints beschikbaar.";
   } else {
-
-    let random;
-
-    do {
-      random = possible[Math.floor(Math.random()*possible.length)];
-    } while (possible.length > 1 && random === lastHint);
-
-    lastHint = random;
-
-    hintBubble.textContent =
-      random.hint || "Probeer elementen te combineren.";
-
+    const random = possible[Math.floor(Math.random() * possible.length)];
+    hintBubble.textContent = random.hint || "Probeer elementen te combineren.";
   }
 
-  hintBubble.classList.add("visible");
+  // Plaats de bubble links van de hint-button
+  const buttonRect = hintButton.getBoundingClientRect();
+  const bubbleRect = hintBubble.getBoundingClientRect();
 
-  setTimeout(()=>{
+  hintBubble.style.top = buttonRect.top + "px";
+  // rechterkant van bubble = rechterkant van button
+  hintBubble.style.left = (buttonRect.right - bubbleRect.width) + "px";
+
+  hintBubble.classList.add("visible");
+  setTimeout(() => {
     hintBubble.classList.remove("visible");
-  },4000);
+  }, 4000);
 }
