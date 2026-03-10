@@ -2316,21 +2316,8 @@ function showHint() {
     hintBubble.textContent = random.hint || "Probeer elementen te combineren.";
   }
 
-  // Voeg bubble eerst toe aan body (als nog niet aanwezig)
-  if (!document.body.contains(hintBubble)) document.body.appendChild(hintBubble);
-
-  // wacht 1 frame zodat width correct berekend wordt
-  requestAnimationFrame(() => {
-    const buttonRect = hintButton.getBoundingClientRect();
-    const bubbleRect = hintBubble.getBoundingClientRect();
-
-    hintBubble.style.top = buttonRect.top + "px";
-    hintBubble.style.left = (buttonRect.right - bubbleRect.width) + "px";
-
-    hintBubble.classList.add("visible");
-
-    setTimeout(() => {
-      hintBubble.classList.remove("visible");
-    }, 4000);
-  });
+  hintBubble.classList.add("visible");
+  setTimeout(() => {
+    hintBubble.classList.remove("visible");
+  }, 4000);
 }
