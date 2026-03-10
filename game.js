@@ -18,6 +18,7 @@ const mappen = [
 const combinaties = [
   {
     input: ["Oerknal", "Kou"],
+    hint: `De kleinste bouwstenen zoeken stabiliteit bij lagere temperaturen...`,
     output: [
       { naam: "Zwaartekracht", icoon: "icons/Zwaartekracht.png", map: "Krachten",
         quote: `Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion 
@@ -1648,6 +1649,8 @@ let selected = [];
 let unlockedElements = new Set();
 let introStep = 0;
 let lastExplanation = null;
+let lastHint = null;
+
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -2271,7 +2274,6 @@ function renderSide(parentContainer, map, side) {
   
   parentContainer.appendChild(grid);
 
-  // --- Fade-in ---
   parentContainer.style.opacity = 0;
   setTimeout(() => {
     parentContainer.style.transition = "opacity 0.3s ease";
@@ -2280,3 +2282,59 @@ function renderSide(parentContainer, map, side) {
   }, 20);
 }
 
+// ----- HINTS -----
+const hintButton = document.getElementById("hint-button");
+const hintBubble = document.getElementById("hint-bubble");
+
+hintButton.onclick = showHint;
+
+// ----- HINTS FUNCTIE -----
+function showHint() {
+
+  const available = [];
+
+  mappen.forEach(map => {
+    map.elementen.forEach(el => {
+      if (unlockedElements.has(el.naam)) {
+        available.push(el.naam);
+      }
+    });
+  });
+
+  const possible = combinaties.filter(c => {
+
+    const inputs = Array.isArray(c.input[0]) ? c.input.flat() : c.input;
+
+    const inputsAvailable = inputs.every(i => available.includes(i));
+
+    const outputUnlocked = c.output.every(o =>
+      unlockedElements.has(o.naam)
+    );
+
+    return inputsAvailable && !outputUnlocked;
+
+  });
+
+  if (possible.length === 0) {
+    hintBubble.textContent = "Nog geen hints beschikbaar.";
+  } else {
+
+    let random;
+
+    do {
+      random = possible[Math.floor(Math.random()*possible.length)];
+    } while (possible.length > 1 && random === lastHint);
+
+    lastHint = random;
+
+    hintBubble.textContent =
+      random.hint || "Probeer elementen te combineren.";
+
+  }
+
+  hintBubble.classList.add("visible");
+
+  setTimeout(()=>{
+    hintBubble.classList.remove("visible");
+  },4000);
+}
