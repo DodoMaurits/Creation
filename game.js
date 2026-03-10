@@ -426,16 +426,15 @@ const combinaties = [
     uitleg: {
       threshold: {
         titel: "Water op Aarde", 
-        tekst: `Je moet eerst nog wat meer halen...
-          <br><br>4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
-          van vloeibaar water...`,
+        tekst: `Je moet eerst nog wat meer halen...<br>`,
         tijd: 4_400_000_000,
         requirements: ["De Maan", "Obsidiaan", "Neptunus", "Uranus", "Zwart Gat", 
                        "Sterrenstelsel", "Radioactiviteit", "Platentektoniek"]
       },
       normal: {
         titel: "Water op Aarde",
-        tekst: "Oceaanvorming",
+        tekst: `4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
+          van vloeibaar water...`,
         tijd: 4_400_000_000
       }
     }
