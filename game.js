@@ -1880,7 +1880,7 @@ function showThresholdExplanation(threshold, missing, callback) {
       circle.textContent = req;
       grid.appendChild(circle);
     });
-    box.appendChild(grid);
+    text.appendChild(grid);
   }
 
   const button = document.createElement("button");
