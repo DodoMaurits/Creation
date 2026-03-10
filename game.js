@@ -58,6 +58,7 @@ const combinaties = [
   },
   {
     input: ["Quarks", "Kou"],
+    hint: `Hm.. Wat zal er gebeuren wanneer energie de ruimte krijgt?`,
     output: [
       { naam: "Atomen", icoon: "icons/Atomen.png", map: "Chemie",
         quote: `In reality, nothing but atoms and the void 
