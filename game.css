@@ -299,7 +299,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.6);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
@@ -313,27 +313,39 @@ body {
 
 .info-popup-box {
   position: relative;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
   width: 40dvw;
   max-width: 650px;
   padding: 60px;
-  border-radius: 12px;
-  color: white;
-  box-shadow: 0 0 40px rgba(0,0,0,0.9);
+  border-radius: 14px;
+  color: rgba(240,240,240,0.95);
+  box-shadow:
+    0 15px 60px rgba(0,0,0,0.8),
+    inset 0 0 0 1px rgba(255,255,255,0.08);
   animation: infoFade 0.25s ease;
 }
 
 .info-popup-title {
   font-family: "Cinzel", serif;
   font-size: 34px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   text-align: center;
+  color: #e6d3a3;
+  animation: titleFloat 6s ease-in-out infinite;
+}
+
+@keyframes titleFloat {
+  0%   { transform: translateX(-6px); }
+  50%  { transform: translateX(6px); }
+  100% { transform: translateX(-6px); }
 }
 
 .info-popup-text {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Merriweather", serif;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: rgba(230,230,230,0.9);
   text-align: justify;
   word-wrap: break-word;
   overflow-wrap: break-word;
