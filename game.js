@@ -138,9 +138,9 @@ const combinaties = [
         de buitenste lagen worden weggeblazen en een extreem dichte, witte dwerg overblijft. De zwaartekracht kan materie
         aantrekken van een nabije ster en zo een explosie veroorzaken die zo heet kan zijn, dat het veel van de
         resterende elementen uit het periodiek systeem kan creëren. 
-        <br><br>Als dit niet het geval is, kan de kern in minder dan
-        een seconde door de eigen extreme zwaartekracht met enorm geweld in elkaar smijten, en zo even veel energie
-        produceren als een heel sterrenstelsel, waarbij de laatste zware elementen de ruimte in zijn geslingerd.`,
+        <br><br>Als dit niet het geval is, kan de kern in minder dan een seconde door de eigen extreme zwaartekracht met 
+        enorm geweld in elkaar smijten, en zo even veel energie produceren als een heel sterrenstelsel, waarbij de 
+        laatste zware elementen de ruimte in zijn geslingerd.`,
         tijd: 13_600_000_000
       }
     }
@@ -218,7 +218,7 @@ const combinaties = [
     uitleg: {
       normal: {
         titel: "Gasplaneten",
-        tekst: "Onze gasplaneten...",
+        tekst: `Onze gasplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
         tijd: 4_570_000_000
       }
     }
@@ -240,7 +240,7 @@ const combinaties = [
     uitleg: {
       normal: {
         titel: "IJsplaneten",
-        tekst: "Onze ijsplaneten...",
+        tekst: `Onze ijsplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
         tijd: 4_570_000_000
       }
     }
@@ -272,7 +272,7 @@ const combinaties = [
     uitleg: {
       normal: {
         titel: "IJzerplaneten",
-        tekst: "Onze ijzerplaneten...",
+        tekst: `Onze ijzerplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
         tijd: 4_570_000_000
       }
     }
@@ -307,7 +307,11 @@ const combinaties = [
     uitleg: {
       normal: {
         titel: "Grote Inslag van Theia",
-        tekst: "Onze broederplaneet...",
+        tekst: `Onze broederplaneet de Maan ontstond zo'n 30 tot 50 miljoen jaar na het ontstaan van ons zonnestelsel. 
+        Een andere planeet genaamd Theia botste toen tegen de jonge Aarde. De inslag maakte beide hemellichamen 
+        grotendeels vloeibaar en slingerde veel materie de ruimte in, die in een baan rond de gehavende Aarde terechtkwam.
+        Opnieuw verhitte de Aarde tot temperaturen van wel 230 graden. Al snel klonterde dit materiaal samen tot onze 
+        broederplaneet.`, 
         tijd: 4_527_000_000
       }
     }
@@ -330,16 +334,23 @@ const combinaties = [
     ],
     output: [
       { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png", map: "Krachten",
-        quote: "Loyalties shifting like the earth's tectonic plates ... changing my loves shape <br><br>- Ranata Suzuki"
+        quote: `Loyalties shifting like the earth's tectonic plates ... changing my loves shape 
+        <br><br>- Ranata Suzuki`
       },
       { naam: "Granietmagma", icoon: "icons/Granietmagma.png", map: "Vuur",
-        quote: "Of course the entire planet Earth consists of magma under us, and only the very inner-core is different <br><br>- Werner Herzog"
+        quote: `Of course the entire planet Earth consists of magma under us, and only the very inner-core is different 
+          <br><br>- Werner Herzog`
       }
     ],
     uitleg: {
       normal: {
         titel: "Platentektoniek",
-        tekst: "...",
+        tekst: `Na de klap van de Maan herstelde de Aarde zich. Zwaartekracht sorteerde de elementen opnieuw en 
+          wederom vormden zich een aardkorst en prille atmosfeer. Lava stroomde door de aardmantel, waardoor de 
+          aardkorst in platen kon scheuren die tegen elkaar aan duwen. Waar de lava het aardoppervlakte bereikte,
+          werden waterrijke gassen de fragiele atmosfeer in gepompt die na afkoeling de toestand aannamen van 
+          vloeibaar water. De Aarde zou bevroren zijn geweest mits lavastromen hun weg naar buiten niet hadden 
+          gevonden...`,
         tijd: 4_400_000_000
       }
     }
@@ -348,10 +359,12 @@ const combinaties = [
     input: ["Platentektoniek", "Lava"],
     output: [
       { naam: "Vulkaan", icoon: "icons/Vulkaan.png", map: "Landschap",
-        quote: "Remind me that the most fertile lands were built by the fires of volcanoes <br><br>- Andrea Gibson"
+        quote: `Remind me that the most fertile lands were built by the fires of volcanoes 
+        <br><br>- Andrea Gibson`
       },
       { naam: "As", icoon: "icons/As.png", map: "Vuur",
-        quote: "Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return <br><br>- Alexander Anderson"
+        quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
+        <br><br>- Alexander Anderson`
       }
     ]
   },
@@ -362,7 +375,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Berg", icoon: "icons/Berg.png", map: "Landschap",
-        quote: "Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain  <br><br>- Sun Tzu"
+        quote: `Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain 
+        <br><br>- Sun Tzu`
       }
     ]
   },
@@ -373,16 +387,21 @@ const combinaties = [
     ],
     output: [
       { naam: "Magmadamp", icoon: "icons/Magmadamp.png", map: "Vuur",
-        quote: "The gases that igneous rocks contain, probably as essential features of the molten magma <br><br>- A.J. Grenville"
+        quote: `The gases that igneous rocks contain, probably as essential features of the molten magma 
+        <br><br>- A.J. Grenville`
       },
       { naam: "Kwarts", icoon: "icons/Kwarts.png", map: "Aarde",
-        quote: "Quartz is as hard as anything it is likely to meet with in use <br><br>- Frank Wade"
+        quote: `Quartz is as hard as anything it is likely to meet with in use 
+        <br><br>- Frank Wade`
       },
       { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
-        quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
+        quote: `That great dark bit out there is mica, and all this that runs in a vein like is quartz. 
+        Quartz and mica are the natural home of gold 
+        <br><br>- Charles Reade`
       },
       { naam: "Veldspaat", icoon: "icons/Veldspaat.png", map: "Aarde", 
-        quote: "Even the hardest rock can be worn away by water <br><br>- Lucretius"
+        quote: `Even the hardest rock can be worn away by water 
+        <br><br>- Lucretius`
       }
     ]
   },
@@ -393,22 +412,29 @@ const combinaties = [
     ],
     output: [
       { naam: "Koper", icoon: "icons/Koper.png", map: "Chemie", 
-        quote: "Through love scraps of copper are turned to gold <br><br>- Rumi"
+        quote: `Through love scraps of copper are turned to gold 
+        <br><br>- Rumi`
       },
       { naam: "Zilver", icoon: "icons/Zilver.png", map: "Chemie",
-        quote: "Silver is purified in fire and so are we. It is in the most trying times that our real character is shaped and revealed <br><br>- Helen Keller"
+        quote: `Silver is purified in fire and so are we. It is in the most trying times that our real character 
+        is shaped and revealed 
+        <br><br>- Helen Keller`
       },
       { naam: "Goud", icoon: "icons/Goud.png", map: "Chemie", 
-        quote: "Praise, like gold and diamonds, owes its value only to its scarcity <br><br>- Samuel Johnson"
+        quote: `Praise, like gold and diamonds, owes its value only to its scarcity 
+        <br><br>- Samuel Johnson`
       },
       { naam: "Lood", icoon: "icons/Lood.png", map: "Chemie", 
-        quote: "Lead is slow, elated, and resolved <br><br>- Arthur Rimbaud"
+        quote: `Lead is slow, elated, and resolved 
+        <br><br>- Arthur Rimbaud`
       },
       { naam: "Zink", icoon: "icons/Zink.png", map: "Chemie", 
-        quote: "Zinc is gray and its salts are colorless... in short, it is a boring metal<br><br>- Primo Levi"
+        quote: `Zinc is gray and its salts are colorless... in short, it is a boring metal
+        <br><br>- Primo Levi`
       },
       { naam: "Tin", icoon: "icons/Tin.png", map: "Chemie", 
-        quote: "The tin hat shines with a cold reflection, as though it wore the mind of the earth upon its brow <br><br>- D.H. Lawrence"
+        quote: `The tin hat shines with a cold reflection, as though it wore the mind of the earth upon its brow 
+        <br><br>- D.H. Lawrence`
       }
     ]
   },
@@ -420,7 +446,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Water", icoon: "icons/Water.png", map: "Water",
-        quote: "Water is the softest thing, yet it can penetrate mountains and earth. This shows clearly the principle of softness overcoming hardness <br><br>- Lao Tzu"
+        quote: `Water is the softest thing, yet it can penetrate mountains and earth. 
+        This shows clearly the principle of softness overcoming hardness 
+        <br><br>- Lao Tzu`
       }
     ],
     uitleg: {
