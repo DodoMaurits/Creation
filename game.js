@@ -2005,7 +2005,7 @@ function animateTimeline(newTime) {
 
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
-  if (!timelineLabel || !timelineFill || !timeline) return;
+  if (!timelineLabel || !timelineFill) return;
 
   let labelText;
 
