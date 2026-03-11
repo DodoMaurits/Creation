@@ -656,37 +656,40 @@ const combinaties = [
     hint: `Hoe meer water, hoe beter.`,
     output: [
       { naam: "Meer", icoon: "icons/Meer.png", map: "Water", 
-        quote: "Make your heart like a lake <br>with a calm, still surface and great depths of kindness<br><br>- Lao Tzu"
+        quote: `Make your heart like a lake <br>with a calm, still surface and great depths of kindness
+        <br><br>- Lao Tzu`
       }
     ]
   },
   {
     input: ["Damp", "Zwaartekracht"],
+    hint: `Dampen pakken zich samen in nieuwe formaties...`,
     output: [
       { naam: "Wolk", icoon: "icons/Wolk.png", map: "Lucht", 
-        quote: "The sky and the sun are always there. It's the clouds that come and go <br><br>- Rachel Joyce"
+        quote: `The sky and the sun are always there. It's the clouds that come and go 
+        <br><br>- Rachel Joyce`
       }
     ]
   },
   {
     input: [
-      ["Damp", "Planeet"], ["Damp", "De Aarde"],
-      ["Wolk", "De Aarde"]
+      ["Damp", "Planeet"], ["Damp", "De Aarde"], ["Wolk", "De Aarde"]
     ],
     output: [
       { naam: "Lucht", icoon: "icons/Lucht (Sky).png", map: "Lucht", 
-        quote: "Stars are holes in the sky from which the light of the infinite shines <br><br>- Confucius"
+        quote: `Stars are holes in the sky from which the light of the infinite shines 
+        <br><br>- Confucius`
       }
     ]
   },
   {
     input: [
-      ["Zand", "Meer"], ["Klei", "Meer"],
-      ["Rivier", "Zand"], ["Rivier", "Klei"]
+      ["Zand", "Meer"], ["Klei", "Meer"], ["Rivier", "Zand"], ["Rivier", "Klei"]
     ],
     output: [
       { naam: "Ven", icoon: "icons/Ven.png", map: "Water", 
-        quote: "Feather footed through the plashy fen passes the questing vole <br><br>- Evelyn Waugh"
+        quote: `Feather footed through the plashy fen passes the questing vole 
+        <br><br>- Evelyn Waugh`
       }
     ]
   },
