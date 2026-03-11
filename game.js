@@ -675,6 +675,7 @@ const combinaties = [
     input: [
       ["Damp", "Planeet"], ["Damp", "De Aarde"], ["Wolk", "De Aarde"]
     ],
+    hint: `Wolken van damp kringelen rond... het is tijd om de planeten lucht te geven.`,
     output: [
       { naam: "Lucht", icoon: "icons/Lucht (Sky).png", map: "Lucht", 
         quote: `Stars are holes in the sky from which the light of the infinite shines 
@@ -686,6 +687,7 @@ const combinaties = [
     input: [
       ["Zand", "Meer"], ["Klei", "Meer"], ["Rivier", "Zand"], ["Rivier", "Klei"]
     ],
+    hint: `Water op land kan verzanden...`,
     output: [
       { naam: "Ven", icoon: "icons/Ven.png", map: "Water", 
         quote: `Feather footed through the plashy fen passes the questing vole 
@@ -695,9 +697,11 @@ const combinaties = [
   },
   {
     input: ["Zand", "Zand"],
+    hint: `Zand zo ver je kan kijken.. dat kan ook mooi zijn.`,
     output: [
       { naam: "Woestijn", icoon: "icons/Woestijn.png", map: "Landschap", 
-        quote: "If the desert is holy, it is because it is a forgotten place that allows us to remember the sacred <br><br>- Terry Williams"
+        quote: `If the desert is holy, it is because it is a forgotten place that allows us to remember the sacred 
+        <br><br>- Terry Williams`
       }
     ]
   },
@@ -706,15 +710,20 @@ const combinaties = [
       ["Tufsteen", "Water"], ["Tufsteen", "Meer"], ["Tufsteen", "Zee"], ["Tufsteen", "Oceaan"], 
       ["Tufsteen", "Regen"], ["Rivier", "Tufsteen"]
     ],
+    hint: `Wat een glinsteringen, is het nog wel tufsteen of kijk ik er dwars doorheen?`,
     output: [
       { naam: "Glas", icoon: "icons/Glas.png", map: "Aarde", 
-        quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+        quote: `Some days seem to fit together like a stained glass window. 
+        A hundred little pieces of different color and mood that, when combined, create a complete picture 
+        <br><br>- Maggie Stiefvater`
       },
       { naam: "As", icoon: "icons/As.png", map: "Vuur", 
-        quote: "Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return <br><br>- Alexander Anderson"
+        quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
+        <br><br>- Alexander Anderson`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -722,9 +731,11 @@ const combinaties = [
     input: [
       ["Klei", "Warmte"], ["Druk", "Klei"]
     ],
+    hint: `Kan je stenen ook kleien? Waarom niet.`,
     output: [
       { naam: "Kleisteen", icoon: "icons/Kleisteen.png", map: "Aarde",
-        quote: "Everything changes, even stone <br><br>- Claude Monet"
+        quote: `Everything changes, even stone 
+        <br><br>- Claude Monet`
       }
     ]
   },
@@ -732,9 +743,11 @@ const combinaties = [
     input: [
       ["Water", "Meer"], ["Meer", "Meer"]
     ],
+    hint: `Meer water? Of een zee van water...`,
     output: [
       { naam: "Zee", icoon: "icons/Zee.png", map: "Water", 
-        quote: "Water is the driving force of all nature<br><br>- Leonardo da Vinci"
+        quote: `Water is the driving force of all nature
+        <br><br>- Leonardo da Vinci`
       }
     ]
   },
@@ -742,9 +755,11 @@ const combinaties = [
     input: [
       ["Wolk", "Zwaartekracht"], ["Wolk", "Water"], ["Wolk", "Berg"]
     ],
+    hint: `Laat de wolken niet neerdalen, wie weet wat er dan gebeurt.`,
     output: [
       { naam: "Regen", icoon: "icons/Regen.png", map: "Water", 
-        quote: "It can't rain all the time <br><br>- James O'Barr"
+        quote: `It can't rain all the time 
+        <br><br>- James O'Barr`
       }
     ]
   },
@@ -752,9 +767,11 @@ const combinaties = [
     input: [
       ["Wolk", "Rook"], ["Regen", "Rook"]
     ],
+    hint: `Oei, oei, regen uit zwarte wolken.`,
     output: [
       { naam: "Zure regen", icoon: "icons/Zure_regen.png", map: "Water", 
-        quote: "Tragedy is like strong acid - it dissolves away all but the very gold of truth <br><br>- D.H. Lawrence"
+        quote: `Tragedy is like strong acid - it dissolves away all but the very gold of truth 
+        <br><br>- D.H. Lawrence`
       }
     ]
   },
@@ -762,12 +779,15 @@ const combinaties = [
     input: [
       ["Wolk", "Wolk"], ["Wind", "Wolk"], ["Wind", "Wind"]
     ],
+    hint: `Wanneer de wolken samenkomen, barst het los.`,
     output: [
       { naam: "Storm", icoon: "icons/Storm.png", map: "Lucht", 
-        quote: "If you want to see the sunshine, you have to weather the storm <br><br>- Frank Lane"
+        quote: `If you want to see the sunshine, you have to weather the storm 
+        <br><br>- Frank Lane`
       },
       { naam: "Bliksem", icoon: "icons/Bliksem.png", map: "Vuur", 
-        quote: "Serenity is not freedom from the storm, but peace amid the storm <br><br>- Barbara West"
+        quote: `Serenity is not freedom from the storm, but peace amid the storm 
+        <br><br>- Barbara West`
       }
     ]
   },
@@ -775,9 +795,12 @@ const combinaties = [
     input: [
       ["Lucht", "Warmte"], ["Lucht", "Kou"]
     ],
+    hint: `Ik zucht bij verschillende temperaturen in de lucht.`,
     output: [
       { naam: "Wind", icoon: "icons/Wind.png", map: "Lucht", 
-        quote: "Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating: there is really no such thing as bad weather, only different kinds of good weather <br><br>- John Ruskin"
+        quote: `Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating: there is really 
+        no such thing as bad weather, only different kinds of good weather 
+        <br><br>- John Ruskin`
       }
     ]
   },
@@ -785,9 +808,11 @@ const combinaties = [
     input: [
       ["Kleisteen", "Warmte"], ["Kleisteen", "Druk"]
     ],
+    hint: `Hm.. is er nog een stenen metamorfose door druk en hitte te bedenken?`,
     output: [
       { naam: "Schalie", icoon: "icons/Schalie.png", map: "Aarde", 
-        quote: "In the structure of shale we read the operations of water and the lapse of time <br><br>- James Hutton"
+        quote: `In the structure of shale we read the operations of water and the lapse of time 
+        <br><br>- James Hutton`
       }
     ]
   }, 
@@ -795,7 +820,8 @@ const combinaties = [
     input: ["Lucht", "Vuur"],
     output: [
       { naam: "Rook", icoon: "icons/Rook.png", map: "Lucht", 
-        quote: "Surely where there's smoke there's fire? No, where there's so much smoke there's smoke<br><br>- John Wheeler"
+        quote: `Surely where there's smoke there's fire? No, where there's so much smoke there's smoke
+        <br><br>- John Wheeler`
       }
     ]
   },
@@ -803,23 +829,30 @@ const combinaties = [
     input: [
       ["Zee", "Warmte"], ["Zee", "Lava"]
     ],
+    hint: `Hm.. wat houd je over als zout water snel verdampt?`,
     output: [
       { naam: "Zout", icoon: "icons/Zout.png", map: "Chemie", 
-        quote: "Salt is born of the purest parents: the sun and the sea <br><br>- Pythagoras"
+        quote: `Salt is born of the purest parents: the sun and the sea 
+        <br><br>- Pythagoras`
       },
       { naam: "Gipssteen", icoon: "icons/Gipssteen.png", map: "Aarde",
-        quote: "Rocks are the books of the earth <br><br>- Charles Lyell"
+        quote: `Rocks are the books of the earth 
+        <br><br>- Charles Lyell`
       },
       { naam: "Damp", icoon: "icons/Damp.png", map: "Lucht", 
-        quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
+        quote: `Enthusiasm is the steam that drives the engine
+        <br><br>- Napoleon Hill`
       }
     ]
   },
   {
     input: ["Berg", "Zee"],
+    hint: `Een speciale plek is daar waar de berg het water raakt..`,
     output: [
       { naam: "Kust", icoon: "icons/Kust.png", map: "Landschap", 
-        quote: "Because there's nothing more beautiful than the way the ocean refuses to stop kissing the shoreline, no matter how many times it's sent away <br><br>- Sarah Kay"
+        quote: `Because there's nothing more beautiful than the way the ocean refuses to stop kissing the shoreline, 
+        no matter how many times it's sent away 
+        <br><br>- Sarah Kay`
       }
     ]
   },
@@ -827,6 +860,7 @@ const combinaties = [
     input: [
       ["Zee", "Water"], ["Zee", "Zee"]
     ],
+    hint: `Ik heb meer zee nodig om in te schuilen.`,
     output: [
       { naam: "Oceaan", icoon: "icons/Oceaan.png", map: "Water", 
         quote: "Individually, we are one drop. Together, we are an ocean <br><br>- Ryunosuke Akutagawa"
@@ -835,25 +869,32 @@ const combinaties = [
   },
   {
     input: ["Regen", "Kou"],
+    hint: `Wat als druppels dwarrelen als kristallen?`,
     output: [
       { naam: "Sneeuw", icoon: "icons/Sneeuw.png", map: "Water", 
-        quote: "The first fall of snow is not only an event, it is a magical event. You go to bed in one kind of a world and wake up in another quite different <br><br>- J.B. Priestley"
+        quote: `The first fall of snow is not only an event, it is a magical event. You go to bed in one kind of a 
+        world and wake up in another quite different 
+        <br><br>- J.B. Priestley`
       }
     ]
   },
   {
     input: ["Regen", "IJs"],
+    hint: `Er mist nog iets.. harde regenbolletjes?`,
     output: [
       { naam: "Hagel", icoon: "icons/Hagel.png", map: "Water", 
-        quote: "Life is a hailstorm of distractions. It's not the monster that stops us but the mosquito <br><br>- Robert Allen"
+        quote: `Life is a hailstorm of distractions. It's not the monster that stops us but the mosquito 
+        <br><br>- Robert Allen`
       }
     ]
   },
   {
     input: ["Regen", "Berg"],
+    hint: `Bergen zouden glijbanen kunnen zijn van wolken naar de zee...`,
     output: [
       { naam: "Rivier", icoon: "icons/Rivier.png", map: "Water", 
-        quote: "No man ever steps in the same river twice, for it's not the same river and he's not the same man <br><br>- Heraclitus"
+        quote: `No man ever steps in the same river twice, for it's not the same river and he's not the same man 
+        <br><br>- Heraclitus`
       }
     ]
   }, 
@@ -861,53 +902,72 @@ const combinaties = [
     input: [
       ["Zure regen", "Graniet"], ["Zure regen", "Basalt"], ["Zure regen", "Gneis"] 
     ],
+    hint: `Kijk.. als de regen maar zuur genoeg is, weekt het vanzelf de elementen los.`,
     output: [
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-        quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+        quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
+        it's built on literal sand 
+        <br><br>- Bruce Sterling`
       }, 
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       },
       { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+        quote: `In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light 
+        <br><br>- V.S. Naipaul`
       }, 
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
-        quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+        quote: `Do not wait to strike till the iron is hot but make it hot by striking 
+        <br><br>-William Yeatsu`
       },
       { naam: "Roest", icoon: "icons/Roest.png", map: "Chemie", 
-        quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+        quote: `None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can
+        <br><br>- Ratan Tata`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       },
       { naam: "Zand", icoon: "icons/Zand.png", map: "Aarde",
-        quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+        quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
+        <br><br>- Sergei Devlatov`
       }
     ]
   }, 
   {
     input: ["Zure regen", "Obsidiaan"],
+    hint: `Kijk.. als de regen maar zuur genoeg is, weekt het vanzelf de elementen los.`,
     output: [
       { naam: "Glas", icoon: "icons/Glas.png", map: "Aarde",
-        quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+        quote: `Some days seem to fit together like a stained glass window. A hundred little pieces of different color 
+        and mood that, when combined, create a complete picture 
+        <br><br>- Maggie Stiefvater`
       },
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-        quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+        quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
+        it's built on literal sand 
+        <br><br>- Bruce Sterling`
       }, 
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       },
       { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+        quote: `In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light 
+        <br><br>- V.S. Naipaul`
       }, 
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
-        quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+        quote: `Do not wait to strike till the iron is hot but make it hot by striking 
+        <br><br>-William Yeatsu`
       },
       { naam: "Roest", icoon: "icons/Roest.png", map: "Chemie", 
-        quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+        quote: `None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can
+        <br><br>- Ratan Tata`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -915,58 +975,79 @@ const combinaties = [
     input: [ 
       ["Zure regen", "Mica"], ["Zure regen", "Veldspaat"]
     ],
+    hint: `Kijk.. als de regen maar zuur genoeg is, weekt het vanzelf de elementen los.`,
     output: [
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-        quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+        quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
+        it's built on literal sand 
+        <br><br>- Bruce Sterling`
       }, 
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       },
       { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+        quote: `In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light 
+        <br><br>- V.S. Naipaul`
       }, 
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
-        quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>- William Yeatsu"
+        quote: `Do not wait to strike till the iron is hot but make it hot by striking 
+        <br><br>- William Yeatsu`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
   {
     input: ["Tufsteen", "Zure regen"],
+    hint: `Kijk.. als de regen maar zuur genoeg is, weekt het vanzelf de elementen los.`,
     output: [
       { naam: "Glas", icoon: "icons/Glas.png", map: "Aarde", 
-        quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+        quote: `Some days seem to fit together like a stained glass window. A hundred little pieces of different color 
+        and mood that, when combined, create a complete picture 
+        <br><br>- Maggie Stiefvater`
       },
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-        quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+        quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
+        it's built on literal sand 
+        <br><br>- Bruce Sterling`
       }, 
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       },
       { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+        quote: `In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light 
+        <br><br>- V.S. Naipaul`
       }, 
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
-        quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+        quote: `Do not wait to strike till the iron is hot but make it hot by striking 
+        <br><br>-William Yeatsu`
       },
       { naam: "Roest", icoon: "icons/Roest.png", map: "Chemie", 
-        quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+        quote: `None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can
+        <br><br>- Ratan Tata`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       },
       { naam: "As", icoon: "icons/As.png", map: "Vuur", 
-        quote: "Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return <br><br>- Alexander Anderson"
+        quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
+        <br><br>- Alexander Anderson`
       }
     ]
   },
   {
     input: ["Wind", "Storm"],
+    hint: `Het mag ook megalomaner: meer storm, meer wind...`,
     output: [
       { naam: "Orkaan", icoon: "icons/Orkaan.png", map: "Lucht", 
-        quote: "The first rule of hurricane coverage is that every broadcast must begin with palm trees bending in the wind <br><br>- Carl Hiaasen"
+        quote: `The first rule of hurricane coverage is that every broadcast must begin 
+        with palm trees bending in the wind 
+        <br><br>- Carl Hiaasen`
       }
     ]
   },
@@ -974,9 +1055,11 @@ const combinaties = [
     input: [
       ["Schalie", "Warmte"], ["Schalie", "Druk"]
     ],
+    hint: `Het mag ook megalomaner: meer storm, meer wind...`,
     output: [
       { naam: "Leisteen", icoon: "icons/Leisteen.png", map: "Aarde", 
-        quote: "The slates of Wales furnish one of the most striking examples of cleavage produced by pressure <br><br>- Archibald Geikie"
+        quote: `The slates of Wales furnish one of the most striking examples of cleavage produced by pressure 
+        <br><br>- Archibald Geikie`
       }
     ]
   },
@@ -984,9 +1067,11 @@ const combinaties = [
     input: [
       ["Zout", "Warmte"], ["Druk", "Zout"]
     ],
+    hint: `Ook zout kan door de grond zakken en dan wordt het zwaar.`,
     output: [
       { naam: "Steenzout", icoon: "icons/Steenzout.png", map: "Chemie", 
-        quote: "Salt is the only rock directly consumed by man <br><br>- Margaret Visser"
+        quote: `Salt is the only rock directly consumed by man 
+        <br><br>- Margaret Visser`
       }
     ]
   },
@@ -995,17 +1080,21 @@ const combinaties = [
       ["Gipssteen", "Water"], ["Gipssteen", "Meer"], ["Gipssteen", "Zee"], ["Gipssteen", "Oceaan"],
       ["Rivier", "Gipssteen"]
     ],
+    hint: `Het eroderen van meer stenen kan nog wel eens van pas komen...`,
     output: [
       { naam: "Gips", icoon: "icons/Gips.png", map: "Aarde", 
-        quote: "The broken bone, once set together, is stronger than ever <br><br>- John Lyly"
+        quote: `The broken bone, once set together, is stronger than ever <br><br>- John Lyly`
       }
     ]
   },
   {
     input: ["Kust", "Zand"],
+    hint: `Versleten steen aan de kust kan slijten tot zachte grond.`,
     output: [
       { naam: "Strand", icoon: "icons/Strand.png", map: "Landschap", 
-        quote: "At the beach, life is different. Time doesn't move hour to hour but mood to moment. We live by the currents, plan by the tides, and follow the sun <br><br>- Sandy Gingras"
+        quote: `At the beach, life is different. Time doesn't move hour to hour but mood to moment. 
+        We live by the currents, plan by the tides, and follow the sun 
+        <br><br>- Sandy Gingras`
       }
     ]
   },
@@ -1013,9 +1102,11 @@ const combinaties = [
     input: [
       ["Kust", "Storm"], ["Kust", "Orkaan"]
     ],
+    hint: `Slaat het weer om? Dan wordt de kust als eerste de dupe...`,
     output: [
       { naam: "Overstroming", icoon: "icons/Overstroming.png", map: "Water", 
-        quote: "Great floods have flown from simple sources <br><br>- William Shakespeare"
+        quote: `Great floods have flown from simple sources 
+        <br><br>- William Shakespeare`
       }
     ]
   },
@@ -1023,6 +1114,7 @@ const combinaties = [
     input: [
       ["Vulkaan", "Oceaan"], ["Berg", "Oceaan"] 
     ],
+    hint: `De oceaanvloer die zich een weg naar boven baant? Dat kan natuurlijk ook.`,
     output: [
       { naam: "Eiland", icoon: "icons/Eiland.png", map: "Landschap", 
         quote: "We are like islands in the sea, separate on the surface but connected in the deep <br><br>- William James"
