@@ -2404,4 +2404,8 @@ function showHint() {
   hintBubble.textContent = random.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
+  setTimeout(() => {
+    hintBubble.classList.remove("visible");
+    hintVisible = false;
+  }, 5000);
 }
