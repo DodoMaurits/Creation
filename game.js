@@ -2361,13 +2361,11 @@ function showHint() {
   if (possible.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
-    hintButton.style.backgroundColor = "#555";
     return;
   }
 
   const random = possible[Math.floor(Math.random() * possible.length)];
-  hintBubble.textContent =
-    random.hint || "Probeer elementen te combineren.";
+  hintBubble.textContent = random.hint;
   hintBubble.classList.add("visible");
 
   setTimeout(() => {
