@@ -1727,6 +1727,7 @@ let introStep = 0;
 let lastExplanation = null;
 let lastHint = null;
 let hintVisible = false;
+let hintTimer = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -2369,6 +2370,10 @@ function showHint() {
   if (hintVisible) {
     hintBubble.classList.remove("visible");
     hintVisible = false;
+    if (hintTimer) {
+      clearTimeout(hintTimer);
+      hintTimer = null;
+    }
     return;
   }
 
@@ -2387,6 +2392,8 @@ function showHint() {
     const outputUnlocked = c.output.every(o =>
       unlockedElements.has(o.naam)
     );
+
+    // threshold check
     if (c.uitleg?.threshold?.requirements) {
       const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
       const requirementsMet = c.uitleg.threshold.requirements.every(r =>
@@ -2402,13 +2409,16 @@ function showHint() {
     hintButton.style.pointerEvents = "none";
     return;
   }
-
+  
   const random = possible[Math.floor(Math.random() * possible.length)];
   hintBubble.textContent = random.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
-  setTimeout(() => {
+
+  if (hintTimer) clearTimeout(hintTimer);
+  hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
     hintVisible = false;
+    hintTimer = null;
   }, 5000);
 }
