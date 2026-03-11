@@ -2384,6 +2384,13 @@ function showHint() {
     const outputUnlocked = c.output.every(o =>
       unlockedElements.has(o.naam)
     );
+    if (c.uitleg?.threshold?.requirements) {
+      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+      const requirementsMet = c.uitleg.threshold.requirements.every(r =>
+        normalizedUnlocked.includes(r.trim().toLowerCase())
+      );
+      if (!requirementsMet) return false;
+    }
     return inputsAvailable && !outputUnlocked;
   });
 
