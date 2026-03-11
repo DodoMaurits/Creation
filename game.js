@@ -2359,13 +2359,17 @@ function showHint() {
   });
 
   if (possible.length === 0) {
-    hintBubble.textContent = "Nog geen hints beschikbaar.";
-  } else {
-    const random = possible[Math.floor(Math.random() * possible.length)];
-    hintBubble.textContent = random.hint || "Probeer elementen te combineren.";
+    hintButton.classList.add("disabled");
+    hintButton.style.pointerEvents = "none";
+    hintButton.style.backgroundColor = "#555";
+    return;
   }
 
+  const random = possible[Math.floor(Math.random() * possible.length)];
+  hintBubble.textContent =
+    random.hint || "Probeer elementen te combineren.";
   hintBubble.classList.add("visible");
+
   setTimeout(() => {
     hintBubble.classList.remove("visible");
   }, 4000);
