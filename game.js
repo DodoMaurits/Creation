@@ -1723,7 +1723,7 @@ let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
 let lastHint = null;
-
+let hintVisible = false;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -2363,6 +2363,12 @@ hintButton.onclick = showHint;
 
 // ----- HINTS FUNCTIE -----
 function showHint() {
+  if (hintVisible) {
+    hintBubble.classList.remove("visible");
+    hintVisible = false;
+    return;
+  }
+
   const available = [];
   mappen.forEach(map => {
     map.elementen.forEach(el => {
@@ -2390,8 +2396,5 @@ function showHint() {
   const random = possible[Math.floor(Math.random() * possible.length)];
   hintBubble.textContent = random.hint;
   hintBubble.classList.add("visible");
-
-  setTimeout(() => {
-    hintBubble.classList.remove("visible");
-  }, 4000);
+  hintVisible = true;
 }
