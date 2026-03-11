@@ -330,6 +330,7 @@ const combinaties = [
   },
   {
     input: ["Lava", "Kou"],
+    hint: `Ook het vuur van lava moet ooit rusten en bedaren...`,
     output: [
       { naam: "Graniet", icoon: "icons/Graniet.png", map: "Aarde",
       quote: `The block of granite which was an obstacle in the pathway of the weak,
@@ -349,6 +350,7 @@ const combinaties = [
   },
   {
     input: ["De Aarde", "Planeet"],
+    hint: `De Aarde.. daar past een mooi broertje bij voor de nacht.`,
     output: [
       { naam: "De Maan", icoon: "icons/Maan.png", map: "Heelal",
         quote: `I always look up at the moon and see it as the single most romantic place within the cosmos 
@@ -369,8 +371,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Warmte", "Gneis"], ["Druk", "Graniet"], ["Schist", "Warmte"], ["Schist", "Druk"] 
+      ["Warmte", "Graniet"], ["Druk", "Graniet"], ["Schist", "Warmte"], ["Schist", "Druk"] 
     ],
+    hint: `Stenen worden compacter onder druk en hitte, zo ook graniet.`,
     output: [
       { naam: "Gneis", icoon: "icons/Gneis.png", map: "Aarde", 
         quote: `Geologists have a saying - rocks remember 
@@ -380,9 +383,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Graniet", "Lava"],
-      ["Basalt", "Lava"]
+      ["Graniet", "Lava"], ["Basalt", "Lava"]
     ],
+    hint: `Laat magma de aardkorst in beweging houden...`,
     output: [
       { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png", map: "Krachten",
         quote: `Loyalties shifting like the earth's tectonic plates ... changing my loves shape 
@@ -408,6 +411,7 @@ const combinaties = [
   },
   {
     input: ["Platentektoniek", "Lava"],
+    hint: `Lava beweegt, dus laat het ook naar boven komen...`,
     output: [
       { naam: "Vulkaan", icoon: "icons/Vulkaan.png", map: "Landschap",
         quote: `Remind me that the most fertile lands were built by the fires of volcanoes 
@@ -421,9 +425,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Platentektoniek", "Graniet"],
-      ["Platentektoniek", "Basalt"]
+      ["Platentektoniek", "Graniet"], ["Platentektoniek", "Basalt"]
     ],
+    hint: `Die platentektoniek kan nog wel eens voor wat stenen reliëf zorgen...`,
     output: [
       { naam: "Berg", icoon: "icons/Berg.png", map: "Landschap",
         quote: `Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain 
@@ -433,9 +437,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Granietmagma", "Kou"],
-      ["Granietmagma", "Water"]
+      ["Granietmagma", "Kou"], ["Granietmagma", "Water"]
     ],
+    hint: `Ik zie potentie in granietmagma.. laat maar even rusten.`,
     output: [
       { naam: "Magmadamp", icoon: "icons/Magmadamp.png", map: "Vuur",
         quote: `The gases that igneous rocks contain, probably as essential features of the molten magma 
@@ -458,9 +462,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Magmadamp", "Kou"],
-      ["Regen", "Magmadamp"]
+      ["Magmadamp", "Kou"], ["Regen", "Magmadamp"]
     ],
+    hint: `Het neerregenen van magmadamp is een scheikundig feestje...`,
     output: [
       { naam: "Koper", icoon: "icons/Koper.png", map: "Chemie", 
         quote: `Through love scraps of copper are turned to gold 
@@ -492,9 +496,9 @@ const combinaties = [
 //------------ THRESHOLD 1: WATER --------------//
   {
     input: [
-      ["IJs", "Warmte"],
-      ["Vuur", "IJs"]
+      ["IJs", "Warmte"], ["Vuur", "IJs"]
     ],
+    hint: `Nu zijn de omstandigheden juist om water te laten vloeien.`,
     output: [
       { naam: "Water", icoon: "icons/Water.png", map: "Water",
         quote: `Water is the softest thing, yet it can penetrate mountains and earth. 
@@ -522,31 +526,37 @@ const combinaties = [
   },
   {
     input: [
-      ["Water", "IJzer"],
-      ["Lucht", "IJzer"]
+      ["Water", "IJzer"], ["Lucht", "IJzer"]
     ],
+    hint: `Oei, dat gebeurt er dus als ijzer oxideert...`,
     output: [
       { naam: "Roest", icoon: "icons/Roest.png", map: "Chemie", 
-        quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+        quote: `None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can
+        <br><br>- Ratan Tata`
       }
     ]
   },
   {
     input: ["Vuur", "Water"],
+    hint: `Een big splash, vuur gedoofd en de energie kringelt omhoog...`,
     output: [
       { naam: "Damp", icoon: "icons/Damp.png", map: "Lucht", 
-        quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
+        quote: `Enthusiasm is the steam that drives the engine
+        <br><br>- Napoleon Hill`
       }
     ]
   },
   {
     input: ["Lava", "Water"],
+    hint: `Een big splash, vuur gedoofd en de energie kringelt omhoog...`,
     output: [
       { naam: "Damp", icoon: "icons/Damp.png", map: "Lucht", 
-        quote: "Enthusiasm is the steam that drives the engine<br><br>- Napoleon Hill"
+        quote: `Enthusiasm is the steam that drives the engine
+        <br><br>- Napoleon Hill`
       },
       { naam: "Basalt", icoon: "icons/Basalt.png", map: "Aarde", 
-        quote: "Every changes, even stone <br><br>- Claude Monet"
+        quote: `Every changes, even stone 
+        <br><br>- Claude Monet`
       }
     ]
   },
@@ -556,26 +566,32 @@ const combinaties = [
       ["Basalt", "Water"], ["Basalt", "Meer"], ["Basalt", "Zee"], ["Basalt", "Oceaan"],
       ["Gneis", "Water"], ["Gneis", "Meer"], ["Gneis", "Zee"], ["Gneis", "Oceaan"], ["Gneis", "Rivier"]
     ],
+    hint: `Erosie, erosie, erosie...`,
     output: [
       { naam: "Zand", icoon: "icons/Zand.png", map: "Aarde", 
-        quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+        quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
+        <br><br>- Sergei Devlatov`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
   {
     input: [
-      ["Obsidiaan", "Water"], ["Obsidiaan", "Meer"],
-      ["Rivier", "Obsidiaan"]
+      ["Obsidiaan", "Water"], ["Obsidiaan", "Meer"], ["Rivier", "Obsidiaan"]
     ],
+    hint: `Wat een glinsteringen, is het nog wel obsidiaan of kijk ik er dwars doorheen?`,
     output: [
       { naam: "Glas", icoon: "icons/Glas.png", map: "Aarde", 
-        quote: "Some days seem to fit together like a stained glass window. A hundred little pieces of different color and mood that, when combined, create a complete picture <br><br>- Maggie Stiefvater"
+        quote: `Some days seem to fit together like a stained glass window. A hundred little pieces of different color 
+        and mood that, when combined, create a complete picture 
+        <br><br>- Maggie Stiefvater`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -584,17 +600,21 @@ const combinaties = [
       ["De Maan", "Water"], ["De Maan", "Meer"], ["De Maan", "Zee"], ["De Maan", "Oceaan"],
       ["Wind", "Water"], ["Wind", "Meer"], ["Wind", "Zee"], ["Wind", "Oceaan"]
     ],
+    hint: `De zichtbare invloed van de Maan zit 'm in de getijden.`,
     output: [
       { naam: "Golf", icoon: "icons/Golf.png", map: "Water", 
-        quote: "You don't understand. You're not a wave. You're part of the ocean <br><br>- Morrie Schwartz"
+        quote: `You don't understand. You're not a wave. You're part of the ocean 
+        <br><br>- Morrie Schwartz`
       }
     ]
   },
   {
     input: ["As", "Water"],
+    hint: `As? Laat maar aanpappen en nathouden, dat wordt vanzelf weer wat.`, 
     output: [
       { naam: "Tufsteen", icoon: "icons/Tufsteen.png", map: "Aarde", 
-        quote: "Life is not tough as rocks, it is as simple as your brain perceives <br><br>- Myra Yadav"
+        quote: `Life is not tough as rocks, it is as simple as your brain perceives 
+        <br><br>- Myra Yadav`
       }
     ]
   },
@@ -605,7 +625,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Zand", icoon: "icons/Zand.png", map: "Aarde", 
-        quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+        quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
+        <br><br>- Sergei Devlatov`
       }
     ]
   },
@@ -625,12 +646,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
   {
     input: ["Water", "Water"],
+    hint: `Hoe meer water, hoe beter.`,
     output: [
       { naam: "Meer", icoon: "icons/Meer.png", map: "Water", 
         quote: "Make your heart like a lake <br>with a calm, still surface and great depths of kindness<br><br>- Lao Tzu"
