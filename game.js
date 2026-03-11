@@ -2359,7 +2359,45 @@ function renderSide(parentContainer, map, side) {
   }, 20);
 }
 
-// ----- HINTS -----
+// ----- HINT ENGINE -----
+function getHint() {
+  for (const c of combinaties) {
+    // -------- INPUT CHECK --------
+    let inputsSatisfied = false;
+    if (typeof c.input[0] === "string") {
+      const [a, b] = c.input;
+      inputsSatisfied =
+        unlockedElements.has(a) &&
+        unlockedElements.has(b);
+    } else {
+      inputsSatisfied = c.input.some(set =>
+        unlockedElements.has(set[0]) &&
+        unlockedElements.has(set[1])
+      );
+    }
+    if (!inputsSatisfied) continue;
+
+    // -------- OUTPUT CHECK --------
+    const allOutputsUnlocked = c.output.every(o =>
+      unlockedElements.has(o.naam)
+    );
+    if (allOutputsUnlocked) continue;
+
+    // -------- THRESHOLD CHECK --------
+    if (c.uitleg?.threshold?.requirements) {
+      const normalizedUnlocked =
+        [...unlockedElements].map(e => e.trim().toLowerCase());
+      const requirementsMet =
+        c.uitleg.threshold.requirements.every(r =>
+          normalizedUnlocked.includes(r.trim().toLowerCase())
+        );
+      if (!requirementsMet) continue;
+    }
+    return c.hint;
+  }
+  return null;
+}
+
 const hintButton = document.getElementById("hint-button");
 const hintBubble = document.getElementById("hint-bubble");
 
@@ -2377,44 +2415,16 @@ function showHint() {
     return;
   }
 
-  const available = [];
-  mappen.forEach(map => {
-    map.elementen.forEach(el => {
-      if (unlockedElements.has(el.naam) || el.naam === "Oerknal") {
-        available.push(el.naam);
-      }
-    });
-  });
-
-  const possible = combinaties.filter(c => {
-    const inputs = Array.isArray(c.input[0]) ? c.input.flat() : c.input;
-    const inputsAvailable = inputs.every(i => available.includes(i));
-    const outputUnlocked = c.output.every(o =>
-      unlockedElements.has(o.naam)
-    );
-
-    // threshold check
-    if (c.uitleg?.threshold?.requirements) {
-      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-      const requirementsMet = c.uitleg.threshold.requirements.every(r =>
-        normalizedUnlocked.includes(r.trim().toLowerCase())
-      );
-      if (!requirementsMet) return false;
-    }
-    return inputsAvailable && !outputUnlocked;
-  });
-
-  if (possible.length === 0) {
+  const hint = getHint();
+  if (!hint) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
     return;
   }
-  
-  const random = possible[Math.floor(Math.random() * possible.length)];
-  hintBubble.textContent = random.hint;
+
+  hintBubble.innerHTML = hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
-
   if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
@@ -2422,3 +2432,4 @@ function showHint() {
     hintTimer = null;
   }, 5000);
 }
+
