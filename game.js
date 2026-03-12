@@ -1117,7 +1117,8 @@ const combinaties = [
     hint: `De oceaanvloer die zich een weg naar boven baant? Dat kan natuurlijk ook.`,
     output: [
       { naam: "Eiland", icoon: "icons/Eiland.png", map: "Landschap", 
-        quote: "We are like islands in the sea, separate on the surface but connected in the deep <br><br>- William James"
+        quote: `We are like islands in the sea, separate on the surface but connected in the deep 
+        <br><br>- William James`
       }
     ]
   },
@@ -1125,13 +1126,16 @@ const combinaties = [
     input: ["Rivier", "Basalt"],
     output: [
       { naam: "Goud", icoon: "icons/Goud.png", map: "Chemie", 
-        quote: "Praise, like gold and diamonds, owes its value only to its scarcity <br><br>- Samuel Johnson"
+        quote: `Praise, like gold and diamonds, owes its value only to its scarcity 
+        <br><br>- Samuel Johnson`
       },
       { naam: "Zand", icoon: "icons/Zand.png", map: "Aarde",
-        quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+        quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
+        <br><br>- Sergei Devlatov`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -1141,7 +1145,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Zandsteen", icoon: "icons/Zandsteen.png", map: "Aarde", 
-        quote: "Write your worries in the sand, carve your blessings in stone <br><br>- Robert Kennedy"
+        quote: `Write your worries in the sand, carve your blessings in stone 
+        <br><br>- Robert Kennedy`
       }
     ]
   },
@@ -1151,7 +1156,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Kalksteen", icoon: "icons/Kalksteen.png", map: "Aarde", 
-        quote: "If by some fiat I had to restrict all this writing to one sentence, this is the one I would choose: The summit of Mt. Everest is marine limestone <br><br>- John McPhee"
+        quote: `If by some fiat I had to restrict all this writing to one sentence, this is the one I would choose: 
+        The summit of Mt. Everest is marine limestone 
+        <br><br>- John McPhee`
       }
     ]
   },
@@ -1161,7 +1168,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Fylliet", icoon: "icons/Fylliet.png", map: "Aarde", 
-        quote: "Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism <br><br>- Rollin Salisbury"
+        quote: `Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism 
+        <br><br>- Rollin Salisbury`
       }
     ]
   },
@@ -1171,7 +1179,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Kwartsiet", icoon: "icons/Kwartsiet.png", map: "Aarde", 
-        quote: "The conversion of sandstone into quartzite is sometimes the work of percolating water under ordinary conditions <br><br>- John Flett"
+        quote: `The conversion of sandstone into quartzite is sometimes the work of percolating water
+        under ordinary conditions 
+        <br><br>- John Flett`
       }
     ]
   },
@@ -1181,7 +1191,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Marmer", icoon: "icons/Marmer.png", map: "Aarde", 
-        quote: "The marble not yet carved can hold the form of every thought the greatest artist has <br><br>- Michelangelo"
+        quote: `The marble not yet carved can hold the form of every thought the greatest artist has 
+        <br><br>- Michelangelo`
       }
     ]
   },
@@ -1205,7 +1216,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       }
     ]
   },
@@ -1215,10 +1227,13 @@ const combinaties = [
     ],
     output: [
       { naam: "Calciet", icoon: "icons/Calciet.png", map: "Aarde", 
-        quote: "Through calcite, the air took on a strange luminousness, as though the light itself were split into delicate fragments <br><br>- Albert Durer"
+        quote: `Through calcite, the air took on a strange luminousness, as though the light itself were split into 
+        delicate fragments 
+        <br><br>- Albert Durer`
       },
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       }
     ]
   },
@@ -1228,13 +1243,17 @@ const combinaties = [
     ],
     output: [
       { naam: "Sulfaat", icoon: "icons/Sulfaat.png", map: "Chemie",  
-        quote: "Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum <br><br>- Linus Pauling"
+        quote: `Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum 
+        <br><br>- Linus Pauling`
       },
       { naam: "Nitraat", icoon: "icons/Nitraat.png", map: "Chemie", 
-        quote: "For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, its breath, but the land is so much more <br><br>- John Steinbeck"
+        quote: `For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, 
+        its breath, but the land is so much more 
+        <br><br>- John Steinbeck`
       },
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       }
     ]
   },
@@ -1244,7 +1263,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Schist", icoon: "icons/Schist.png", map: "Aarde", 
-        quote: "The schist is contorted, glittering with mica, a record of heat and pressure beyond imagination <br><br>- John McPhee"
+        quote: `The schist is contorted, glittering with mica, a record of heat and pressure beyond imagination 
+        <br><br>- John McPhee`
       }
     ]
   },
@@ -1254,10 +1274,13 @@ const combinaties = [
     ],
     output: [ 
       { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
-        quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
+        quote: `That great dark bit out there is mica, and all this that runs in a vein like is quartz. 
+        Quartz and mica are the natural home of gold 
+        <br><br>- Charles Reade`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -1267,19 +1290,26 @@ const combinaties = [
     ],
     output: [
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-        Quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+        Quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
+        it's built on literal sand 
+        <br><br>- Bruce Sterling`
       }, 
       { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+        quote: `In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light 
+        <br><br>- V.S. Naipaul`
       },
       { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
-        quote: "That great dark bit out there is mica, and all this that runs in a vein like is quartz. Quartz and mica are the natural home of gold <br><br>- Charles Reade"
+        quote: `That great dark bit out there is mica, and all this that runs in a vein like is quartz. 
+        Quartz and mica are the natural home of gold 
+        <br><br>- Charles Reade`
       },
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
-        quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+        quote: `Do not wait to strike till the iron is hot but make it hot by striking 
+        <br><br>-William Yeatsu`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -1287,16 +1317,22 @@ const combinaties = [
     input: ["Marmer", "Zure regen"],
     output: [
       { naam: "Sulfaat", icoon: "icons/Sulfaat.png", map: "Chemie", 
-        quote: "Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum <br><br>- Linus Pauling"
+        quote: `Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum 
+        <br><br>- Linus Pauling`
       },
       { naam: "Nitraat", icoon: "icons/Nitraat.png", map: "Chemie", 
-        quote: "For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, its breath, but the land is so much more <br><br>- John Steinbeck"
+        quote: `For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, 
+        its breath, but the land is so much more 
+        <br><br>- John Steinbeck`
       },
       { naam: "Calciet", icoon: "icons/Calciet.png", map: "Aarde", 
-        quote: "Through calcite, the air took on a strange luminousness, as though the light itself were split into delicate fragments <br><br>- Albert Durer"
+        quote: `Through calcite, the air took on a strange luminousness, as though the light itself were split into 
+        delicate fragments 
+        <br><br>- Albert Durer`
       },
       { naam: "Kalk", icoon: "icons/Kalk.png", map: "Chemie", 
-        quote: "The hills of chalk and limestone rise like the bones of the earth <br><br>- Wendell Berry"
+        quote: `The hills of chalk and limestone rise like the bones of the earth 
+        <br><br>- Wendell Berry`
       }
     ]
   },
@@ -1308,10 +1344,12 @@ const combinaties = [
     ],
     output: [
       { naam: "Leven", icoon: "icons/Leven.png", map: "Krachten", 
-        quote: "Life is not a problem to be solved, but a reality to be experienced <br><br>- Søren Kierkegaard"
+        quote: `Life is not a problem to be solved, but a reality to be experienced 
+        <br><br>- Søren Kierkegaard`
       },
       { naam: "Luca", icoon: "icons/Luca.png", map: "Pril leven", 
-        quote: "Life originated in the sea, and about eighty percent of it is still there <br><br>- Isaac Asimov"
+        quote: `Life originated in the sea, and about eighty percent of it is still there 
+        <br><br>- Isaac Asimov`
       }
     ],
     uitleg: {
@@ -1324,7 +1362,7 @@ const combinaties = [
       },
       normal: {
         titel: "Leven",
-        tekst: "Eerste leven",
+        tekst: `Eerste leven`,
         tijd: 4_400_000_000
       }
     }
@@ -1335,7 +1373,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
-        quote: "In a way, humans are not made of skin and bones as such, as we're made of stories <br><br>- Sue Monk Kidd"
+        quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
+        <br><br>- Sue Monk Kidd`
       }
     ]
   },
@@ -1348,7 +1387,9 @@ const combinaties = [
         quote: "We are all of us walking communities of bacteria. The world shimmers, a pointillist landscape made of tiny living beings <br><br>- Lynn Margulis"
       },
       { naam: "Virus", icoon: "icons/Virus.png", map: "Pril leven", 
-        quote: "A virus has three purposes: to duplicate, to infiltrate and to spread from one host to the next. Ultimately, even a single virus can shut down an entire system <br><br>- Wayne Dyer"
+        quote: `A virus has three purposes: to duplicate, to infiltrate and to spread from one host to the next. 
+        Ultimately, even a single virus can shut down an entire system 
+        <br><br>- Wayne Dyer`
       }
     ]
   },
@@ -1376,10 +1417,13 @@ const combinaties = [
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
-        quote: "Death does not concern us, because as long as we exist, death is not here. And when it does come, we no longer exist <br><br>- Epicurus"
+        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
+        we no longer exist 
+        <br><br>- Epicurus`
       },
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: "I choose not to make a graveyard of my body for the rotting corpses of dead animals <br><br>- George Shaw"
+        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
+        <br><br>- George Shaw`
       }
     ]
   },
@@ -1387,7 +1431,10 @@ const combinaties = [
     input: ["Bacteriën", "Leven"],
     output: [
       { naam: "Evolutie", icoon: "icons/Evolutie.png", map: "Biologie", 
-        quote: "It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is the most adaptable to change, that lives within the means available and works co-operatively against common threats <br><br>- Charles Darwin"
+        quote: `It is not the strongest of the species that survives, nor the most intelligent that survives. 
+        It is the one that is the most adaptable to change, that lives within the means available and works 
+        co-operatively against common threats 
+        <br><br>- Charles Darwin`
       }
     ]
   },
@@ -1395,7 +1442,9 @@ const combinaties = [
     input: ["Bacteriën", "Bacteriën"],
     output: [
       { naam: "Stromatolieten", icoon: "icons/Stromatolieten.png", map: "Pril leven", 
-        quote: "For the first half of geological time our ancestors were bacteria. Most creatures still are bacteria, and each one of our trillions of cells is a colony of bacteria <br><br>- Richard Dawkins"
+        quote: `For the first half of geological time our ancestors were bacteria. Most creatures still are bacteria, 
+        and each one of our trillions of cells is a colony of bacteria 
+        <br><br>- Richard Dawkins`
       }
     ]
   },
@@ -1403,10 +1452,14 @@ const combinaties = [
     input: ["Evolutie", "Bacteriën"],
     output: [
       { naam: "Blauwalgen", icoon: "icons/Blauwalgen.png", map: "Pril leven", 
-        quote: "No matter how politely one says it, we owe our existence to the farts of blue-green algae <br><br>- Diane Ackerman"
+        quote: `No matter how politely one says it, we owe our existence to the farts of blue-green algae 
+        <br><br>- Diane Ackerman`
       },
       { naam: "Leca", icoon: "icons/Leca.png", map: "Pril leven", 
-        quote: "The cell is immortal. It is merely the fluid in which it floats that degenerates. Renew this fluid at regular intervals, give the cells at they require for nutrition, and as far as we know, the pulsation of life can go on forever <br><br>- Alexis Carrel"
+        quote: `The cell is immortal. It is merely the fluid in which it floats that degenerates. Renew this fluid 
+        at regular intervals, give the cells at they require for nutrition, and as far as we know, the pulsation of 
+        life can go on forever 
+        <br><br>- Alexis Carrel`
       }
     ]
   },
@@ -1423,7 +1476,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Fotosynthese", icoon: "icons/Fotosynthese.png", map: "Biologie", 
-        quote: "He had a love affair with photosynthesis. He could talk about moss for an hour. He said that plants carried wisdom humans would never be around long enough to understand <br><br>- Anthony Doerr"
+        quote: `He had a love affair with photosynthesis. He could talk about moss for an hour. He said that plants 
+        carried wisdom humans would never be around long enough to understand 
+        <br><br>- Anthony Doerr`
       }
     ]
   },
@@ -1437,7 +1492,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: "I choose not to make a graveyard of my body for the rotting corpses of dead animals <br><br>- George Shaw"
+        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
+        <br><br>- George Shaw`
       }
     ]
   },
@@ -1447,7 +1503,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Amoebe", icoon: "icons/Amoebe.png", map: "Pril leven", 
-        quote: "Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain generals, fade away. It just divides and becomes two new amoebas <br><br>- George Wald"
+        quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
+        generals, fade away. It just divides and becomes two new amoebas 
+        <br><br>- George Wald`
       }
     ]
   },
@@ -1455,7 +1513,8 @@ const combinaties = [
     input: ["Leca", "Zand"],
     output: [
       { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
-        quote: "The deep-sea ooze is largely made up of the shells of foraminifera <br><br>- Thomas Huxley"
+        quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
+        <br><br>- Thomas Huxley`
       }
     ]
   },
@@ -1463,7 +1522,8 @@ const combinaties = [
     input: ["Leca", "Silicium"],
     output: [
       { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
-        quote: "The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature <br><br>- Ernst Haeckel"
+        quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
+        <br><br>- Ernst Haeckel`
       }
     ]
   },
@@ -1471,7 +1531,8 @@ const combinaties = [
     input: ["Leca", "Detritus"],
     output: [
       { naam: "Schimmel", icoon: "icons/Schimmel.png", map: "Pril leven",
-        quote: "Fungi are the interface organisms between life and death <br><br>- Paul Stamets"
+        quote: `Fungi are the interface organisms between life and death 
+        <br><br>- Paul Stamets`
       }
     ]
   },
@@ -1479,16 +1540,23 @@ const combinaties = [
     input: ["Leca", "Evolutie"],
     output: [
       { naam: "Haar", icoon: "icons/Haar.png", map: "Biologie", 
-        quote: "And forget not that the earth delights to feel your bare feet and the winds long to play with your hair <br><br>- Khalid Gibran"
+        quote: `And forget not that the earth delights to feel your bare feet and the winds long to play with your hair 
+        <br><br>- Khalid Gibran`
       },
       { naam: "Weefsel", icoon: "icons/Weefsel.png", map: "Biologie", 
-        quote: "That's the way it is: life includes a lot of empty space. We are one-tenth living tissue, nine-tenths water; life is one-tenth Here and Now, nine-tenths a history lesson. For most of the time the Here and Now is neither now nor here <br><br>- Graham Swift"
+        quote: `That's the way it is: life includes a lot of empty space. We are one-tenth living tissue, nine-tenths 
+        water; life is one-tenth Here and Now, nine-tenths a history lesson. For most of the time the Here and Now is 
+        neither now nor here 
+        <br><br>- Graham Swift`
       },
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
-        quote: "Thought, like any parasite, cannot exist without a compliant host <br><br>- Bernard Beckett"
+        quote: `Thought, like any parasite, cannot exist without a compliant host 
+        <br><br>- Bernard Beckett`
       },
       { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Pril leven", 
-        quote: "Be like a sponge when it comes to each new experience. If you want to be able to express it well, you must first be able to absorb it well <br><br>- Jim Rohn"
+        quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
+        must first be able to absorb it well 
+        <br><br>- Jim Rohn`
       }
     ]
   },
@@ -1496,7 +1564,9 @@ const combinaties = [
     input: ["Leca", "Blauwalgen"],
     output: [
       { naam: "Archaeplastiden", icoon: "icons/Archaeplastiden.png", map: "Pril leven", 
-        quote: "The origin of plastids within the archaeplastida marked one of the most consequential events in the history of life <br><br>- Andrew Knoll"
+        quote: `The origin of plastids within the archaeplastida marked one of the most consequential events in the 
+        history of life 
+        <br><br>- Andrew Knoll`
       }
     ]
   },
@@ -1504,7 +1574,8 @@ const combinaties = [
     input: ["Amoebe", "Evolutie"],
     output: [
       { naam: "Slijm", icoon: "icons/Slijm.png", map: "Water", 
-        quote: "Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined <br><br>- Lewis Thomas"
+        quote: `Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined 
+        <br><br>- Lewis Thomas`
       }
     ]
   },
@@ -1512,7 +1583,8 @@ const combinaties = [
     input: ["Foraminiferen", "Zand"],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: "I see a broken shell and I remind myself that something might have needed setting free <br><br>- Sara Pennypacker"
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -1522,7 +1594,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Aarde", icoon: "icons/Aarde.png", map: "Aarde", 
-        quote: "Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and animals <br><br>- Aldo Leopold"
+        quote: `Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and 
+        animals 
+        <br><br>- Aldo Leopold`
       }
     ]
   },
@@ -1530,10 +1604,13 @@ const combinaties = [
     input: ["Weefsel", "Evolutie"],
     output: [
       { naam: "Spieren", icoon: "icons/Spieren.png", map: "Biologie", 
-        quote: "The muscles are the instruments of movement, and the bones are the levers <br><br>- Leonardo da Vinci"
+        quote: `The muscles are the instruments of movement, and the bones are the levers 
+        <br><br>- Leonardo da Vinci`
       },
       { naam: "Zenuwen", icoon: "icons/Zenuwen.png", map: "Biologie", 
-        quote: "With the nervous system intact the reactions of the various parts of that system, the 'simple reflexes', are ever combined into great unitary harmonies <br><br>- Charles Sherrington"
+        quote: `With the nervous system intact the reactions of the various parts of that system, the 'simple reflexes', 
+        are ever combined into great unitary harmonies 
+        <br><br>- Charles Sherrington`
       }
     ]
   },
@@ -1544,7 +1621,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
-        quote: "Coral reefs represent some of the world's most spectacular beauty spots, but they are also the foundation of marine life: without them many of the sea's most exquisite species will not survive <br><br>- Sheherazade Goldsmith"
+        quote: `Coral reefs represent some of the world's most spectacular beauty spots, but they are also the 
+        foundation of marine life: without them many of the sea's most exquisite species will not survive
+        <br><br>- Sheherazade Goldsmith`
       }
     ]
   },
@@ -1552,10 +1631,13 @@ const combinaties = [
     input: ["Archaeplastiden", "Evolutie"],
     output: [
       { naam: "Rode algen", icoon: "icons/Rode_algen.png", map: "Pril leven", 
-        quote: "The red algae represent one of the most ancient lineages of eukaryotic life <br><br>- Andrew Knoll"
+        quote: `The red algae represent one of the most ancient lineages of eukaryotic life 
+        <br><br>- Andrew Knoll`
       },
       { naam: "Groene algen", icoon: "icons/Groene_algen.png", map: "Pril leven", 
-        quote: "Even the simplest green algae possess the fundamental machinery of photosynthesis that sustains life on Earth <br><br>- Peter Raven"
+        quote: `Even the simplest green algae possess the fundamental machinery of photosynthesis that sustains life on 
+        Earth 
+        <br><br>- Peter Raven`
       }
     ]
   },
@@ -1563,10 +1645,12 @@ const combinaties = [
     input: ["Spieren", "Leca"],
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
-        quote: "Grip the nettle firmly and it will become a stick with which to beat your enemey <br><br>- Isaac Asimov"
+        quote: `Grip the nettle firmly and it will become a stick with which to beat your enemey 
+        <br><br>- Isaac Asimov`
       },
       { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
-        quote: "We are all worms. But I believe that I am a glow-worm <br><br>- Winston Churchill"
+        quote: `We are all worms. But I believe that I am a glow-worm 
+        <br><br>- Winston Churchill`
       }
     ]
   },
@@ -1574,10 +1658,13 @@ const combinaties = [
     input: ["Zenuwen", "Leca"],
     output: [
       { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
-        quote: "The scientist states that pressure is exerted outwards in all directions equally, whereas natural pressure (e.g. air pressure) is exerted inwards from all directions equally <br><br>- Viktor Schawberger"
+        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
+        pressure (e.g. air pressure) is exerted inwards from all directions equally 
+        <br><br>- Viktor Schawberger`
       },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: "Too often we underestimate the power of touch <br><br>- Leo Buscaglia"
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
       }
     ]
   },
@@ -1587,7 +1674,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Rif", icoon: "icons/Rif.png", map: "Landschap", 
-        quote: "Coral reefs are the backbone for the entire ocean. They are the nursery for the ocean. About a quarter of all marine life in the ocean spends part of its lifecycle on a coral reef <br><br>- Jeff Orbowski"
+        quote: `Coral reefs are the backbone for the entire ocean. They are the nursery for the ocean. About a quarter 
+        of all marine life in the ocean spends part of its lifecycle on a coral reef 
+        <br><br>- Jeff Orbowski`
       }
     ]
   },
@@ -1595,7 +1684,8 @@ const combinaties = [
     input: ["Rode algen", "Evolutie"],
     output: [
       { naam: "Roodwieren", icoon: "icons/Roodwieren.png", map: "Planten", 
-        quote: "To know how it feels to be seaweed you have to get in the water <br><br>- Saul Bellow"
+        quote: `To know how it feels to be seaweed you have to get in the water 
+        <br><br>- Saul Bellow`
       }
     ]
   },
@@ -1603,7 +1693,8 @@ const combinaties = [
     input: ["Groene algen", "Kalk"],
     output: [
       { naam: "Steenwortelalgen", icoon: "icons/Steenwortelalgen.png", map: "Pril leven", 
-        quote: "Let the gentle bush dig its root deep and spread upward to split the boulder <br><br>- Carl Sandburg"
+        quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
+        <br><br>- Carl Sandburg`
       }
     ]
   },
@@ -1611,10 +1702,12 @@ const combinaties = [
     input: ["Groene algen", "Evolutie"],
     output: [
       { naam: "Groenwieren", icoon: "icons/Groenwieren.png", map: "Planten", 
-        quote: "Green is the fresh emblem of well found hopes. In blue the spirit can wander, but in green it can rest <br><br>- Mary Webb"
+        quote: `Green is the fresh emblem of well found hopes. In blue the spirit can wander, but in green it can rest 
+        <br><br>- Mary Webb`
       },
       { naam: "Steenwortelalgen", icoon: "icons/Steenwortelalgen.png", map: "Pril leven", 
-        quote: "Let the gentle bush dig its root deep and spread upward to split the boulder <br><br>- Carl Sandburg"
+        quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
+        <br><br>- Carl Sandburg`
       }
     ]
   },
@@ -1622,13 +1715,17 @@ const combinaties = [
     input: ["Oercnidaria", "Evolutie"],
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
-        quote: "A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive opening through which it both eats and excretes - as regrettable an example of economy of design as ever was <br><br>- Jeffrey Kluger"
+        quote: `A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive 
+        opening through which it both eats and excretes - as regrettable an example of economy of design as ever was 
+        <br><br>- Jeffrey Kluger`
       },
       { naam: "Bloemdieren", icoon: "icons/Bloemdieren.png", map: "Waterdieren",
-        quote: "The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul <br><br>- Robert Wyland"
+        quote: `The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul 
+        <br><br>- Robert Wyland`
       },
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
-        quote: "Thought, like any parasite, cannot exist without a compliant host <br><br>- Bernard Beckett"
+        quote: `Thought, like any parasite, cannot exist without a compliant host
+        <br><br>- Bernard Beckett`
       }
     ]
   },
@@ -1636,10 +1733,13 @@ const combinaties = [
     input: ["Oerbilateria", "Evolutie"],
     output: [
       { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
-        quote: "Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor <br><br>- Rachel Carson"
+        quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean 
+        floor 
+        <br><br>- Rachel Carson`
       },
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
-        quote: "In the tidal pools the starfish cling to the rocks while the waves break over them <br><br>- Rachel Carson"
+        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
+        <br><br>- Rachel Carson`
       }
     ]
   },
@@ -1647,13 +1747,17 @@ const combinaties = [
     input: ["Kwallen", "Zenuwen"],
     output: [
       { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: "In every person there is a sun. Just let them shine <br><br>- Socrates"
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
       },
       { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
-        quote: "The scientist states that pressure is exerted outwards in all directions equally, whereas natural pressure (e.g. air pressure) is exerted inwards from all directions equally <br><br>- Viktor Schawberger"
+        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
+        pressure (e.g. air pressure) is exerted inwards from all directions equally 
+        <br><br>- Viktor Schawberger`
       },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: "Too often we underestimate the power of touch <br><br>- Leo Buscaglia"
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
       }
     ]
   },
@@ -1661,7 +1765,8 @@ const combinaties = [
     input: ["Bloemdieren", "Evolutie"],
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
-        quote: "The sea-anemone, though fixed to the rock, is a most voracious and living creature <br><br>- Charles Darwin"
+        quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
+        <br><br>- Charles Darwin`
       }
     ]
   },
@@ -1669,16 +1774,20 @@ const combinaties = [
     input: ["Gneis", "Regen"],
     output: [
       { naam: "Roest", icoon: "icons/Roest.png", map: "Chemie", 
-        quote: "None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can<br><br>- Ratan Tata"
+        quote: `None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can
+        <br><br>- Ratan Tata`
       },
       { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+        quote: `In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light 
+        <br><br>- V.S. Naipaul`
       }, 
       { naam: "Zand", icoon: "icons/Zand.png", map: "Aarde",
-        quote: "Our life is but a grain of sand in the indifferent ocean of infinity <br><br>- Sergei Devlatov"
+        quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
+        <br><br>- Sergei Devlatov`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -1689,7 +1798,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Zout", icoon: "icons/Zout.png", map: "Chemie", 
-        quote: "Salt is born of the purest parents: the sun and the sea <br><br>- Pythagoras"
+        quote: `Salt is born of the purest parents: the sun and the sea 
+        <br><br>- Pythagoras`
       }
     ]
   },
@@ -1699,16 +1809,21 @@ const combinaties = [
     ],
     output: [
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-        quote: "Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, it's built on literal sand <br><br>- Bruce Sterling"
+        quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
+        it's built on literal sand 
+        <br><br>- Bruce Sterling`
       }, 
       { naam: "Aluminium", icoon: "icons/Aluminium.png", map: "Chemie", 
-        quote: "In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light <br><br>- V.S. Naipaul"
+        quote: `In the dusk of the railway shed, aluminium gleamed like a promise etched in cold light 
+        <br><br>- V.S. Naipaul`
       }, 
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
-        quote: "Do not wait to strike till the iron is hot but make it hot by striking <br><br>-William Yeatsu"
+        quote: `Do not wait to strike till the iron is hot but make it hot by striking 
+        <br><br>-William Yeatsu`
       },
       { naam: "Klei", icoon: "icons/Klei.png", map: "Aarde", 
-        quote: "Clay is used to make vases. But where there is no clay is where it is useful <br><br>- Lao Tzu"
+        quote: `Clay is used to make vases. But where there is no clay is where it is useful 
+        <br><br>- Lao Tzu`
       }
     ]
   },
@@ -1717,19 +1832,29 @@ const combinaties = [
     input: ["Oerbilateria", "Bot"],
     output: [
       { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
-        quote: "Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid <br><br>- Albert Einstein"
+        quote: `Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole 
+        life believing that it is stupid 
+        <br><br>- Albert Einstein`
       },
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
-        quote: "For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the sea <br><br>- Empedocles"
+        quote: `For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the 
+        sea 
+        <br><br>- Empedocles`
       },
       { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotige", 
-        quote: "The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must have been light to enter it <br><br>- Louis Agassiz"
+        quote: `The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is 
+        nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must 
+        have been light to enter it 
+        <br><br>- Louis Agassiz`
       },
       { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
-        quote: "The ascidians are among the most extraordinary of marine animals <br><br>- Thomas Huxley"
+        quote: `The ascidians are among the most extraordinary of marine animals 
+        <br><br>- Thomas Huxley`
       },
       { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
-        quote: "There is one living organism, called a tardigrade, that has survived the five great mass extinctions on Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures <br><br>- Alycia Carey"
+        quote: `There is one living organism, called a tardigrade, that has survived the five great mass extinctions on 
+        Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures 
+        <br><br>- Alycia Carey`
       }
     ],
     uitleg: {
@@ -1745,7 +1870,7 @@ const combinaties = [
       },
       normal: {
         titel: "Cambrische Explosie",
-        tekst: "De Cambrscche explosie...",
+        tekst: `De Cambrscche explosie...`,
         tijd: 541_000_000
       }
     }
@@ -1754,7 +1879,8 @@ const combinaties = [
     input: ["Steenwortelalgen", "Evolutie"],
     output: [
       { naam: "Wortels", icoon: "icons/Wortels.png", map: "Biologie", 
-        quote: "Let the gentle bush dig its root deep and spread upward to split the boulder <br><br>- Carl Sandburg"
+        quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
+        <br><br>- Carl Sandburg`
       }
     ]
   },
@@ -1762,16 +1888,20 @@ const combinaties = [
     input: ["Agnathen", "Zenuwen"],
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: "The great events of the world take place in the brain <br><br>- Oscar Wilde"
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
       },
       { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: "Eye contact is way more intimate than words will ever be <br><br>- Faraaz Kazi"
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
       },
       { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: "Smell is a potent wizard that transports you across thousands of miles and all the years you have lived <br><br>- Helen Keller"
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
       },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: "Too often we underestimate the power of touch <br><br>- Leo Buscaglia"
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
       }
     ]
   },
@@ -1779,13 +1909,16 @@ const combinaties = [
     input: ["Trilobieten", "Zenuwen"],
     output: [
       { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: "Eye contact is way more intimate than words will ever be <br><br>- Faraaz Kazi"
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
       },
       { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: "Smell is a potent wizard that transports you across thousands of miles and all the years you have lived <br><br>- Helen Keller"
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
       },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: "Too often we underestimate the power of touch <br><br>- Leo Buscaglia"
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
       }
     ]
   }
