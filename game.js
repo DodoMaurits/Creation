@@ -249,7 +249,7 @@ const combinaties = [
   },
   {
     input: ["Planeet", "Gas"],
-    : `Ik ken een paar planeten, dat zijn grote vriendelijke gasreuzen`,
+    hint: `Ik ken een paar planeten, dat zijn grote vriendelijke gasreuzen`,
     output: [
       { naam: "Jupiter", icoon: "icons/Jupiter.png", map: "Heelal",
         quote: `Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... 
@@ -1476,7 +1476,7 @@ const combinaties = [
       ["Groene algen", "Straling"], ["Groene algen", "Ster"],
       ["Roodwieren", "Straling"], ["Roodwieren", "Ster"],
       ["Steenwortelalgen", "Straling"], ["Steenwortelalgen", "Ster"],
-      ["Grownieren", "Straling"], ["Groenwieren", "Ster"]
+      ["Groenwieren", "Straling"], ["Groenwieren", "Ster"]
     ],
     output: [
       { naam: "Fotosynthese", icoon: "icons/Fotosynthese.png", map: "Biologie", 
