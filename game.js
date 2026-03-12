@@ -863,7 +863,8 @@ const combinaties = [
     hint: `Ik heb meer zee nodig om in te schuilen.`,
     output: [
       { naam: "Oceaan", icoon: "icons/Oceaan.png", map: "Water", 
-        quote: "Individually, we are one drop. Together, we are an ocean <br><br>- Ryunosuke Akutagawa"
+        quote: `Individually, we are one drop. Together, we are an ocean 
+        <br><br>- Ryunosuke Akutagawa`
       }
     ]
   },
@@ -919,7 +920,7 @@ const combinaties = [
       }, 
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie", 
         quote: `Do not wait to strike till the iron is hot but make it hot by striking 
-        <br><br>-William Yeatsu`
+        <br><br>- William Yeatsu`
       },
       { naam: "Roest", icoon: "icons/Roest.png", map: "Chemie", 
         quote: `None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can
@@ -1083,7 +1084,8 @@ const combinaties = [
     hint: `Het eroderen van meer stenen kan nog wel eens van pas komen...`,
     output: [
       { naam: "Gips", icoon: "icons/Gips.png", map: "Aarde", 
-        quote: `The broken bone, once set together, is stronger than ever <br><br>- John Lyly`
+        quote: `The broken bone, once set together, is stronger than ever 
+        <br><br>- John Lyly`
       }
     ]
   },
@@ -1206,7 +1208,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Kwarts", icoon: "icons/Kwarts.png", map: "Aarde", 
-        quote: "Quartz is as hard as anything it is likely to meet with in use <br><br>- Frank Wade"
+        quote: `Quartz is as hard as anything it is likely to meet with in use 
+        <br><br>- Frank Wade`
       }
     ]
   },
@@ -1291,7 +1294,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
-        Quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
+        quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
         it's built on literal sand 
         <br><br>- Bruce Sterling`
       }, 
