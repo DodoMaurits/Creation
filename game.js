@@ -1145,7 +1145,7 @@ const combinaties = [
     input: [
       ["Silicium", "Zand"], ["Kalk", "Zand"], ["Druk", "Zand"] 
     ],
-    hint: ``,
+    hint: `Silicium verhardt en kan verzanden in steen.`,
     output: [
       { naam: "Zandsteen", icoon: "icons/Zandsteen.png", map: "Aarde", 
         quote: `Write your worries in the sand, carve your blessings in stone 
@@ -1157,6 +1157,7 @@ const combinaties = [
     input: [
       ["Kalk", "Warmte"], ["Kalk", "Zee"], ["Kalk", "Zand"]
     ],
+    hint: `Tot op het bot verkalken... dat wordt weer steen.`,
     output: [
       { naam: "Kalksteen", icoon: "icons/Kalksteen.png", map: "Aarde", 
         quote: `If by some fiat I had to restrict all this writing to one sentence, this is the one I would choose: 
@@ -1169,6 +1170,7 @@ const combinaties = [
     input: [
       ["Leisteen", "Warmte"], ["Leisteen", "Druk"]
     ],
+    hint: `Onder hoge druk wordt alles... vast?`,
     output: [
       { naam: "Fylliet", icoon: "icons/Fylliet.png", map: "Aarde", 
         quote: `Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism 
@@ -1180,6 +1182,7 @@ const combinaties = [
     input: [
       ["Zandsteen", "Warmte"], ["Druk", "Zandsteen"]
     ],
+    hint: `Het mooiste steen ontstaat onder hoge druk en warmte.`,
     output: [
       { naam: "Kwartsiet", icoon: "icons/Kwartsiet.png", map: "Aarde", 
         quote: `The conversion of sandstone into quartzite is sometimes the work of percolating water
@@ -1192,6 +1195,7 @@ const combinaties = [
     input: [
       ["Kalksteen", "Warmte"], ["Druk", "Kalksteen"]
     ],
+    hint: `Mijn favoriete steen moet nog komen.. en het komt uit wit gesteente.`,
     output: [
       { naam: "Marmer", icoon: "icons/Marmer.png", map: "Aarde", 
         quote: `The marble not yet carved can hold the form of every thought the greatest artist has 
@@ -1202,7 +1206,17 @@ const combinaties = [
   {
     input: [
       ["Zandsteen", "Water"], ["Zandsteen", "Meer"], ["Zandsteen", "Zee"], ["Zandsteen", "Oceaan"], 
-      ["Zandsteen", "Regen"], ["Zandsteen", "Zure regen"], ["Zandsteen", "Rivier"], ["Kwartsiet", "Water"], 
+      ["Zandsteen", "Regen"], ["Zandsteen", "Zure regen"], ["Zandsteen", "Rivier"], ["Kwartsiet", "Water"]
+    ],
+    output: [
+      { naam: "Zand", icoon: "icons/Zand.png", map: "Aarde", 
+        quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
+        <br><br>- Sergei Devlatov`
+      }
+    ]
+  },
+  {
+    input: [
       ["Kwartsiet", "Meer"], ["Kwartsiet", "Zee"], ["Kwartsiet", "Oceaan"], ["Kwartsiet", "Regen"], 
       ["Kwartsiet", "Zure regen"], ["Kwartsiet", "Rivier"]
     ],
@@ -1229,6 +1243,7 @@ const combinaties = [
     input: [
       ["Kalksteen", "Zee"], ["Kalksteen", "Oceaan"], ["Marmer", "Regen"]
     ],
+    hint: `Een mineraal ontbreekt nog.. uit verwering van wit gesteente.`,
     output: [
       { naam: "Calciet", icoon: "icons/Calciet.png", map: "Aarde", 
         quote: `Through calcite, the air took on a strange luminousness, as though the light itself were split into 
@@ -1245,6 +1260,7 @@ const combinaties = [
     input: [
       ["Kalksteen", "Zure regen"], ["Calciet", "Zure regen"]
     ],
+    hint: `Waar zure regen soms niet goed voor kan zijn..`,
     output: [
       { naam: "Sulfaat", icoon: "icons/Sulfaat.png", map: "Chemie",  
         quote: `Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum 
@@ -1265,6 +1281,7 @@ const combinaties = [
     input: [
       ["Fylliet", "Warmte"], ["Fylliet", "Druk"]
     ],
+    hint: `Fylliet is slechts een tussenstadium.. er komt nog meer.`,
     output: [
       { naam: "Schist", icoon: "icons/Schist.png", map: "Aarde", 
         quote: `The schist is contorted, glittering with mica, a record of heat and pressure beyond imagination 
@@ -1292,6 +1309,7 @@ const combinaties = [
     input: [ 
       ["Fylliet", "Zure regen"], ["Schist", "Zure regen"]
     ],
+    hint: `Kijk.. als de regen maar zuur genoeg is, weekt het vanzelf de elementen los.`,
     output: [
       { naam: "Silicium", icoon: "icons/Silicium.png", map: "Chemie", 
         quote: `Since the Internet of Things is built on silicon, on the tremendous instability of modern electronics, 
@@ -1319,6 +1337,7 @@ const combinaties = [
   },
   {
     input: ["Marmer", "Zure regen"],
+    hint: `Waar zure regen soms niet goed voor kan zijn..`,
     output: [
       { naam: "Sulfaat", icoon: "icons/Sulfaat.png", map: "Chemie", 
         quote: `Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum 
@@ -1346,6 +1365,7 @@ const combinaties = [
       ["Bliksem", "Water"], ["Bliksem", "Meer"], ["Bliksem", "Zee"], ["Bliksem", "Oceaan"], 
       ["Bliksem", "Golf"]
     ],
+    hint: `Nu zijn de omstandigheden juist.. de vijfde natuurkracht strijdend voor diens voortbestaan.`,
     output: [
       { naam: "Leven", icoon: "icons/Leven.png", map: "Krachten", 
         quote: `Life is not a problem to be solved, but a reality to be experienced 
@@ -1375,6 +1395,7 @@ const combinaties = [
     input: [
       ["Leven", "Kalk"], ["Evolutie", "Kalk"], ["Oerbilateria", "Kalk"]
     ],
+    hint: `Wat leven wel niet met een beetje kalk kan doen...`,
     output: [
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
         quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
@@ -1386,9 +1407,12 @@ const combinaties = [
     input: [
       ["Luca", "Elektriciteit"], ["Luca", "Leven"]
     ],
+    hint: `Een grotere schok is nodig om de motortjes van die zombiecellen te laten blijven draaien...`,
     output: [
       { naam: "Bacteriën", icoon: "icons/Bacteriën.png", map: "Pril leven", 
-        quote: "We are all of us walking communities of bacteria. The world shimmers, a pointillist landscape made of tiny living beings <br><br>- Lynn Margulis"
+        quote: `We are all of us walking communities of bacteria. The world shimmers, a pointillist landscape
+        made of tiny living beings 
+        <br><br>- Lynn Margulis`
       },
       { naam: "Virus", icoon: "icons/Virus.png", map: "Pril leven", 
         quote: `A virus has three purposes: to duplicate, to infiltrate and to spread from one host to the next. 
@@ -1419,6 +1443,7 @@ const combinaties = [
       ["Steenwortelalgen", "Kou"], ["Steenwortelalgen", "Radioactiviteit"], ["Steenwortelalgen", "IJs"], ["Steenwortelalgen", "Vuur"], ["Steenwortelalgen", "Lava"],
       ["Groenwieren", "Kou"], ["Groenwieren", "Radioactiviteit"], ["Groenwieren", "IJs"], ["Groenwieren", "Vuur"], ["Groenwieren", "Lava"]
     ],
+    hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
@@ -1433,6 +1458,7 @@ const combinaties = [
   },
   {
     input: ["Bacteriën", "Leven"],
+    hint: `Hoe meer bacteriën, hoe meer variatie...`,
     output: [
       { naam: "Evolutie", icoon: "icons/Evolutie.png", map: "Biologie", 
         quote: `It is not the strongest of the species that survives, nor the most intelligent that survives. 
@@ -1444,6 +1470,7 @@ const combinaties = [
   },
   {
     input: ["Bacteriën", "Bacteriën"],
+    hint: `Kolonies bacteriën zo groot als rotsen? Now we're talking.`,
     output: [
       { naam: "Stromatolieten", icoon: "icons/Stromatolieten.png", map: "Pril leven", 
         quote: `For the first half of geological time our ancestors were bacteria. Most creatures still are bacteria, 
@@ -1454,6 +1481,7 @@ const combinaties = [
   },
   {
     input: ["Evolutie", "Bacteriën"],
+    hint: `Bacteriën zijn geavanceerde cellen, maar die cel kan nog veel geavanceerder.`,
     output: [
       { naam: "Blauwalgen", icoon: "icons/Blauwalgen.png", map: "Pril leven", 
         quote: `No matter how politely one says it, we owe our existence to the farts of blue-green algae 
@@ -1478,6 +1506,7 @@ const combinaties = [
       ["Steenwortelalgen", "Straling"], ["Steenwortelalgen", "Ster"],
       ["Groenwieren", "Straling"], ["Groenwieren", "Ster"]
     ],
+    hint: `Het regent zonnestralen en dus regent het voedsel voor archaeplastiden.`,
     output: [
       { naam: "Fotosynthese", icoon: "icons/Fotosynthese.png", map: "Biologie", 
         quote: `He had a love affair with photosynthesis. He could talk about moss for an hour. He said that plants 
@@ -1505,6 +1534,7 @@ const combinaties = [
     input: [
       ["Leca", "Basalt"], ["Leca", "Klei"], ["Aarde", "Leca"] 
     ],
+    hint: `Als zelfs 1 cel kleine voetjes kan hebben, dan leerde het lopen op de bodem.`,
     output: [
       { naam: "Amoebe", icoon: "icons/Amoebe.png", map: "Pril leven", 
         quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
@@ -1515,6 +1545,7 @@ const combinaties = [
   },
   {
     input: ["Leca", "Zand"],
+    hint: `Wat gebruikt een eencellige als schild? Juist ja, een zandkorrel.`,
     output: [
       { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
         quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
@@ -1524,6 +1555,7 @@ const combinaties = [
   },
   {
     input: ["Leca", "Silicium"],
+    hint: `Het vroegste skelet bestond uit silicium.. en er was maar 1 cel voor nodig.`,
     output: [
       { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
         quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
@@ -1533,6 +1565,7 @@ const combinaties = [
   },
   {
     input: ["Leca", "Detritus"],
+    hint: `De een zijn dood is de ander zijn brood.. maar wat zijn ze broodnodig.`,
     output: [
       { naam: "Schimmel", icoon: "icons/Schimmel.png", map: "Pril leven",
         quote: `Fungi are the interface organisms between life and death 
@@ -1542,6 +1575,7 @@ const combinaties = [
   },
   {
     input: ["Leca", "Evolutie"],
+    hint: `Schimmel eet dood materiaal, planten hebben fotosynthese, maar welke eerste meercelligen aten leven?`,
     output: [
       { naam: "Haar", icoon: "icons/Haar.png", map: "Biologie", 
         quote: `And forget not that the earth delights to feel your bare feet and the winds long to play with your hair 
@@ -1566,6 +1600,7 @@ const combinaties = [
   },
   {
     input: ["Leca", "Blauwalgen"],
+    hint: `Kent u endosymbiose? Het is wat je krijgt als de ene cel in de ander leeft en zo het geheel iets nieuws wordt.`,
     output: [
       { naam: "Archaeplastiden", icoon: "icons/Archaeplastiden.png", map: "Pril leven", 
         quote: `The origin of plastids within the archaeplastida marked one of the most consequential events in the 
@@ -1576,6 +1611,7 @@ const combinaties = [
   },
   {
     input: ["Amoebe", "Evolutie"],
+    hint: `Als amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
     output: [
       { naam: "Slijm", icoon: "icons/Slijm.png", map: "Water", 
         quote: `Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined 
@@ -1585,6 +1621,7 @@ const combinaties = [
   },
   {
     input: ["Foraminiferen", "Zand"],
+    hint: `Foraminiferen die hun schildjes aan elkaar lijmen tot één groot schild? Goed gevonden.`,
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
@@ -1596,6 +1633,7 @@ const combinaties = [
     input: [
       ["Schimmel", "Basalt"], ["Schimmel", "Zand"], ["Schimmel", "Klei"] 
     ],
+    hint: `Kijk, nu kan het land worden omgeploegd door schimmels voor de anderen om op te leven.`,
     output: [
       { naam: "Aarde", icoon: "icons/Aarde.png", map: "Aarde", 
         quote: `Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and 
@@ -1605,7 +1643,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Weefsel", "Evolutie"],
+    input: [
+      ["Weefsel", "Evolutie"], ["Weefsel", "Leca"]
+    ],
+    hint: `Meercelligheid heeft als voordeel dat het kan specialiseren in bewegen en de directe omgeving meten.`,
     output: [
       { naam: "Spieren", icoon: "icons/Spieren.png", map: "Biologie", 
         quote: `The muscles are the instruments of movement, and the bones are the levers 
@@ -1623,6 +1664,7 @@ const combinaties = [
       ["Sponzen", "Kalk"], ["Sponzen", "Bot"], ["Sponzen", "Evolutie"],
       ["Bloemdieren", "Kalk"], ["Bloemdieren", "Bot"]
     ],
+    hint: `Wat nou... als sponzen skeletten zouden maken?`,
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
         quote: `Coral reefs represent some of the world's most spectacular beauty spots, but they are also the 
@@ -1633,6 +1675,7 @@ const combinaties = [
   },
   {
     input: ["Archaeplastiden", "Evolutie"],
+    hint: `Die plantencellen reageren op licht.. laten we ze verschillende kleuren geven.`,
     output: [
       { naam: "Rode algen", icoon: "icons/Rode_algen.png", map: "Pril leven", 
         quote: `The red algae represent one of the most ancient lineages of eukaryotic life 
@@ -1647,6 +1690,7 @@ const combinaties = [
   },
   {
     input: ["Spieren", "Leca"],
+    hint: `Laat de eencellige dieren eerst vertakken in twee ideeën over de beweging van hun lichaam.`,
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
         quote: `Grip the nettle firmly and it will become a stick with which to beat your enemey 
@@ -1660,6 +1704,7 @@ const combinaties = [
   },
   {
     input: ["Zenuwen", "Leca"],
+    hint: `Wat zou het mooi zijn, als leven zichzelf ervaren kan...`,
     output: [
       { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
@@ -1676,6 +1721,7 @@ const combinaties = [
     input: [
       ["Koraal", "Koraal"], ["Roodwieren", "Kalk"]
     ],
+    hint: `Een onderwaterlandschap? Ik zeg meer koraal.`,
     output: [
       { naam: "Rif", icoon: "icons/Rif.png", map: "Landschap", 
         quote: `Coral reefs are the backbone for the entire ocean. They are the nursery for the ocean. About a quarter 
@@ -1686,6 +1732,7 @@ const combinaties = [
   },
   {
     input: ["Rode algen", "Evolutie"],
+    hint: `Geef planten ook een lichaam, wier schoonheid ik waardeer.`,
     output: [
       { naam: "Roodwieren", icoon: "icons/Roodwieren.png", map: "Planten", 
         quote: `To know how it feels to be seaweed you have to get in the water 
@@ -1695,6 +1742,7 @@ const combinaties = [
   },
   {
     input: ["Groene algen", "Kalk"],
+    hint: `Ook algen kunnen skeletten maken...`,
     output: [
       { naam: "Steenwortelalgen", icoon: "icons/Steenwortelalgen.png", map: "Pril leven", 
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
@@ -1704,6 +1752,7 @@ const combinaties = [
   },
   {
     input: ["Groene algen", "Evolutie"],
+    hint: `Geef planten ook een lichaam, wier schoonheid ik waardeer.`,
     output: [
       { naam: "Groenwieren", icoon: "icons/Groenwieren.png", map: "Planten", 
         quote: `Green is the fresh emblem of well found hopes. In blue the spirit can wander, but in green it can rest 
@@ -1717,6 +1766,7 @@ const combinaties = [
   },
   {
     input: ["Oercnidaria", "Evolutie"],
+    hint: `Ik houd van symmetrie, maar kan jij je symmetrische dieren voorstellen?`,
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
         quote: `A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive 
@@ -1735,6 +1785,7 @@ const combinaties = [
   },
   {
     input: ["Oerbilateria", "Evolutie"],
+    hint: `Als je dieren een mond geeft en een anus, dan voorspel ik dat evolutie ze ver brengt.`,
     output: [
       { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
         quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean 
@@ -1749,6 +1800,7 @@ const combinaties = [
   },
   {
     input: ["Kwallen", "Zenuwen"],
+    hint: `Kwallen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
       { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
         quote: `In every person there is a sun. Just let them shine 
@@ -1767,6 +1819,7 @@ const combinaties = [
   },
   {
     input: ["Bloemdieren", "Evolutie"],
+    hint: `Sommige dieren zijn als bloemen en komen dan tot bloei...`,
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
         quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
@@ -1834,6 +1887,7 @@ const combinaties = [
 //------------ THRESHOLD 3: CAMBRISCHE EXPLOSIE --------------//
   {
     input: ["Oerbilateria", "Bot"],
+    hint: `Nu zijn de omstandigheden juist om extra kracht te geven aan de bilateria...`,
     output: [
       { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
         quote: `Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole 
@@ -1881,6 +1935,7 @@ const combinaties = [
   },
   {
     input: ["Steenwortelalgen", "Evolutie"],
+    hint: `Geaard en geworteld komen sommige planten verder...`,
     output: [
       { naam: "Wortels", icoon: "icons/Wortels.png", map: "Biologie", 
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
@@ -1890,6 +1945,7 @@ const combinaties = [
   },
   {
     input: ["Agnathen", "Zenuwen"],
+    hint: `Hier heb ik lang aan gewerkt... een werkelijkheid voor vissen om te ervaren.`,
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -1911,6 +1967,7 @@ const combinaties = [
   },
   {
     input: ["Trilobieten", "Zenuwen"],
+    hint: `Hier heb ik lang aan gewerkt... een werkelijkheid voor trilobieten om te ervaren.`,
     output: [
       { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
         quote: `Eye contact is way more intimate than words will ever be 
