@@ -43,6 +43,14 @@ body {
   fill: #555; /* donkergrijs icoon */
 }
 
+#volume-slider {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 120px;
+  z-index: 5000;
+}
+
 /* ---------------- HINT BUTTON ---------------- */
 #hint-container {
   position: fixed;
