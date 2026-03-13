@@ -2488,25 +2488,21 @@ function updateClosedContainer() {
   if (leftOpen && rightOpen) {
     closedContainer.style.opacity = 0;
     closedContainer.style.left = "50%";
-    closedContainer.style.transform = "translate(-50%, -50%)";
     closedContainer.classList.add("center");
     closedContainer.classList.remove("side");
   } else if (leftOpen && !rightOpen) {
     closedContainer.style.opacity = 1;
     closedContainer.style.left = `${halfWidth + halfWidth/2}px`; // midden rechterhelft
-    closedContainer.style.transform = "translate(-50%, -50%)";
     closedContainer.classList.add("side");
     closedContainer.classList.remove("center");
   } else if (!leftOpen && rightOpen) {
     closedContainer.style.opacity = 1;
     closedContainer.style.left = `${halfWidth/2}px`; // midden linkerhelft
-    closedContainer.style.transform = "translate(-50%, -50%)";
     closedContainer.classList.add("side");
     closedContainer.classList.remove("center");
   } else {
     closedContainer.style.opacity = 1;
     closedContainer.style.left = "50%";
-    closedContainer.style.transform = "translate(-50%, -50%)";
     closedContainer.classList.add("center");
     closedContainer.classList.remove("side");
   }
