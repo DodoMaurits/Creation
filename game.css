@@ -880,9 +880,8 @@ body {
 
             .icon.map-title + .tooltip,
             .icon.map-title ~ .tooltip {
-              display: none !important;
-              opacity: 0 !important;
-              pointer-events: none;
+              display: block !important;  /* niet verbergen */
+              opacity: 1 !important;
             }
   
             /* Alleen tooltips van elementen in open maps corrigeren */
