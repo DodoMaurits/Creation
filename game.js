@@ -2012,6 +2012,7 @@ let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
 let lastHint = null;
+let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
 
@@ -2654,7 +2655,10 @@ function renderSide(parentContainer, map, side) {
 }
 
 // ----- HINT ENGINE -----
-function getHint() {
+function getAvailableHints() {
+  // verzamelt alle hints waarvan combinaties nog niet volledig unlocked zijn
+  const availableHints = [];
+
   for (const c of combinaties) {
     // -------- INPUT CHECK --------
     let inputsSatisfied = false;
@@ -2687,9 +2691,11 @@ function getHint() {
         );
       if (!requirementsMet) continue;
     }
-    return c.hint;
+
+    availableHints.push(c.hint);
   }
-  return null;
+
+  return availableHints;
 }
 
 const hintButton = document.getElementById("hint-button");
@@ -2709,16 +2715,28 @@ function showHint() {
     return;
   }
 
-  const hint = getHint();
-  if (!hint) {
+  const availableHints = getAvailableHints();
+  if (availableHints.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
     return;
   }
 
-  hintBubble.innerHTML = hint;
+  // kies een andere hint dan de laatst getoonde
+  let hintIndex = lastHintIndex;
+  if (availableHints.length === 1) {
+    hintIndex = 0;
+  } else {
+    while (hintIndex === lastHintIndex) {
+      hintIndex = Math.floor(Math.random() * availableHints.length);
+    }
+  }
+  lastHintIndex = hintIndex;
+
+  hintBubble.innerHTML = availableHints[hintIndex];
   hintBubble.classList.add("visible");
   hintVisible = true;
+
   if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
