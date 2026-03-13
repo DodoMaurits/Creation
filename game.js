@@ -2641,12 +2641,8 @@ function renderSide(parentContainer, map, side) {
       }
       img.onclick = () => toggleSelect(el, img, side, map.naam);
 
-      const tooltip = document.createElement("div");
-      tooltip.className = "tooltip";
-      tooltip.textContent = el.naam;
-
       elContainer.appendChild(img);
-      elContainer.appendChild(tooltip);
+      attachTooltip(img, el.naam);
       grid.appendChild(elContainer);
     });
   
