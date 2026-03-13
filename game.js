@@ -2487,8 +2487,17 @@ function renderClosed() {
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
 
+    // ✨ Voeg permanente tooltip toe op mobiel
+    if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = map.naam;
+      container.appendChild(tooltip);
+    } else {
+      attachTooltip(img, map.naam);
+    }
+
     container.appendChild(img);
-    attachTooltip(img, map.naam);
     grid.appendChild(container);
   });
 
