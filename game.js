@@ -2051,6 +2051,26 @@ function preloadAllIcons() {
   console.log("Alle iconen worden vooraf geladen!");
 }
 
+function attachTooltip(el, text) {
+  let tooltip;
+
+  el.addEventListener("mouseenter", () => {
+    tooltip = document.createElement("div");
+    tooltip.className = "tooltip-floating visible";
+    tooltip.textContent = text;
+    document.body.appendChild(tooltip);
+
+    const rect = el.getBoundingClientRect();
+    tooltip.style.left = rect.left + rect.width / 2 + "px";
+    tooltip.style.top = rect.bottom + 6 + "px"; // marge onder icoon
+    tooltip.style.transform = "translateX(-50%)";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    if (tooltip) tooltip.remove();
+  });
+}
+
 // ----- INTRO HINTS -----
 function showIntroHint() {
   if (introStep > 2) return;
@@ -2463,12 +2483,8 @@ function renderClosed() {
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
 
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = map.naam;
-
     container.appendChild(img);
-    container.appendChild(tooltip);
+    attachTooltip(img, map.naam);
     grid.appendChild(container);
   });
 
@@ -2574,12 +2590,11 @@ function renderSide(parentContainer, map, side) {
   titleImg.className = "icon map-title";
   titleImg.onclick = () => closeMap(side);
 
-  const titleTooltip = document.createElement("div");
-  titleTooltip.className = "tooltip";
-  titleTooltip.textContent = map.naam;
-
-  titleContainer.appendChild(titleImg);
-  titleContainer.appendChild(titleTooltip);
+  // Voor de map-title
+  attachTooltip(titleImg, map.naam);
+  
+  // Voor elk element
+  attachTooltip(img, el.naam);
   parentContainer.appendChild(titleContainer);
 
   // --- Grid van elementen ---
