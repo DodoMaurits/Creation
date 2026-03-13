@@ -266,6 +266,24 @@ body {
 
 .icon-container:hover .tooltip { opacity: 1; }
 
+.tooltip-floating {
+  position: absolute;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 5000;
+}
+
+.tooltip-floating.visible {
+  opacity: 1;
+}
+
 /* Alleen tooltips van elementen in open maps corrigeren */
 .grid-elements .icon-container {
   display: inline-block;
