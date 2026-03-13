@@ -2714,4 +2714,3 @@ function showHint() {
     hintTimer = null;
   }, 5000);
 }
-
