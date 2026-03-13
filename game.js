@@ -2053,11 +2053,8 @@ function preloadAllIcons() {
 }
 
 function attachTooltip(el, text) {
-  if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-    return;
-  }
-
   let tooltip;
+
   el.addEventListener("mouseenter", () => {
     tooltip = document.createElement("div");
     tooltip.className = "tooltip-floating visible";
@@ -2066,7 +2063,7 @@ function attachTooltip(el, text) {
 
     const rect = el.getBoundingClientRect();
     tooltip.style.left = rect.left + rect.width / 2 + "px";
-    tooltip.style.top = rect.bottom + 6 + "px"; 
+    tooltip.style.top = rect.bottom + 6 + "px"; // marge onder icoon
     tooltip.style.transform = "translateX(-50%)";
   });
 
@@ -2395,8 +2392,14 @@ function renderNewElements(elements) {
 
   // Klik anywhere → reset
   overlay.onclick = () => {
-      overlay.remove();
-      // open maps blijven open, iconen verdwijnen niet meer
+    overlay.remove();
+    openLeft = null;
+    openRight = null;
+    leftSide.innerHTML = "";
+    rightSide.innerHTML = "";
+
+    renderClosed();
+    updateClosedContainer();
   };
 }
 
@@ -2481,17 +2484,8 @@ function renderClosed() {
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
 
-    // ✨ Voeg permanente tooltip toe op mobiel
-    if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-      const tooltip = document.createElement("div");
-      tooltip.className = "tooltip";
-      tooltip.textContent = map.naam;
-      container.appendChild(tooltip);
-    } else {
-      attachTooltip(img, map.naam);
-    }
-
     container.appendChild(img);
+    attachTooltip(img, map.naam);
     grid.appendChild(container);
   });
 
@@ -2588,9 +2582,6 @@ function renderSide(parentContainer, map, side) {
   parentContainer.innerHTML = "";
   parentContainer.classList.remove("hidden", "visible");
 
-  const totalElements = map.elementen.length;
-  const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-
   // --- Title van de open map ---
   const titleContainer = document.createElement("div");
   titleContainer.className = "icon-container";
@@ -2601,20 +2592,17 @@ function renderSide(parentContainer, map, side) {
   titleImg.onclick = () => closeMap(side);
 
   // Tooltip voor de map-title
-  if (isMobile) {
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = map.naam;
-    titleContainer.appendChild(tooltip);
-  } else {
-    attachTooltip(titleImg, map.naam);
-  }
+  attachTooltip(titleImg, map.naam);
 
+  titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
 
   // --- Grid van elementen ---
   const grid = document.createElement("div");
   grid.className = "grid-elements";
+
+  const totalElements = map.elementen.length;
+  const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
 
   // Layout instellen
   if (!isMobile) {
@@ -2647,18 +2635,11 @@ function renderSide(parentContainer, map, side) {
     }
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
-    elContainer.appendChild(img);
 
     // Tooltip per element
-    if (isMobile) {
-      const tooltip = document.createElement("div");
-      tooltip.className = "tooltip";
-      tooltip.textContent = el.naam;
-      elContainer.appendChild(tooltip);
-    } else {
-      attachTooltip(img, el.naam);
-    }
+    attachTooltip(img, el.naam);
 
+    elContainer.appendChild(img);
     grid.appendChild(elContainer);
   });
 
