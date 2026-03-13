@@ -260,7 +260,7 @@ body {
   opacity: 0;
   transition: opacity 0.15s ease;
   pointer-events: none;
-  z-index: 2000;
+  z-index: 5000;
 }
 
 .icon-container:hover .tooltip { opacity: 1; }
