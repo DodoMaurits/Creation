@@ -2030,6 +2030,7 @@ renderClosed();
 requestAnimationFrame(() => {
     updateClosedContainer();
     showIntroHint();
+    setupTooltips();
 });
 
 updateTimelineLabel();
@@ -2129,6 +2130,16 @@ function showIntroHint() {
       // event listener opruimen na eerste klik
       document.removeEventListener("click", docClickListener);
     }
+  });
+}
+
+// ----- TOOLTIP FIX: zet tooltips voor timeline -----
+function setupTooltips() {
+  const tooltips = document.querySelectorAll(".tooltip");
+  tooltips.forEach(tt => {
+    tt.style.position = "fixed";       // boven timeline
+    tt.style.zIndex = 3000;            // hoger dan timeline en label
+    tt.style.pointerEvents = "none";   // nog steeds hover only
   });
 }
 
@@ -2635,6 +2646,7 @@ function renderSide(parentContainer, map, side) {
     });
   
   parentContainer.appendChild(grid);
+  setupTooltips();   // ← nieuwe tooltips van open map corrigeren
 
   parentContainer.style.opacity = 0;
   setTimeout(() => {
