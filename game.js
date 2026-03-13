@@ -2590,23 +2590,21 @@ function renderSide(parentContainer, map, side) {
   titleImg.className = "icon map-title";
   titleImg.onclick = () => closeMap(side);
 
-  // Voor de map-title
+  // Tooltip voor de map-title
   attachTooltip(titleImg, map.naam);
-  
-  // Voor elk element
-  attachTooltip(img, el.naam);
+
+  titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
 
   // --- Grid van elementen ---
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
-  // Dynamische layout
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  
+
+  // Layout instellen
   if (!isMobile) {
-    // Desktop
     if (totalElements > 16) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
@@ -2617,37 +2615,36 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "20px";
     }
   } else {
-    // Mobiel: kleinere icoontjes, kleine gaps
     grid.style.gridTemplateColumns = "repeat(3, 50px)";
     grid.style.columnGap = "8px";
-    grid.style.rowGap = "10px";   // ⬅ hier je gewenste 10px
+    grid.style.rowGap = "10px";
   }
 
-    map.elementen.forEach(el => {
-      const elContainer = document.createElement("div");
-      elContainer.className = "icon-container";
+  // Maak de elementen
+  map.elementen.forEach(el => {
+    const elContainer = document.createElement("div");
+    elContainer.className = "icon-container";
 
-      const img = document.createElement("img");
-      img.src = el.icoon;
-      img.className = "icon element";
-      if (!isMobile) {
-        if (totalElements > 16) {
-          img.style.width = "110px";
-          img.style.height = "110px";
-        } else {
-          img.style.width = "130px";
-          img.style.height = "130px";
-        }
-      }
-      img.onclick = () => toggleSelect(el, img, side, map.naam);
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "icon element";
+    if (!isMobile) {
+      img.style.width = totalElements > 16 ? "110px" : "130px";
+      img.style.height = totalElements > 16 ? "110px" : "130px";
+    }
 
-      elContainer.appendChild(img);
-      attachTooltip(img, el.naam);
-      grid.appendChild(elContainer);
-    });
-  
+    img.onclick = () => toggleSelect(el, img, side, map.naam);
+
+    // Tooltip per element
+    attachTooltip(img, el.naam);
+
+    elContainer.appendChild(img);
+    grid.appendChild(elContainer);
+  });
+
   parentContainer.appendChild(grid);
 
+  // Fade-in animatie
   parentContainer.style.opacity = 0;
   setTimeout(() => {
     parentContainer.style.transition = "opacity 0.3s ease";
