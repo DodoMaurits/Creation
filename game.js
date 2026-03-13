@@ -2742,5 +2742,5 @@ function showHint() {
     hintBubble.classList.remove("visible");
     hintVisible = false;
     hintTimer = null;
-  }, 5000);
+  }, 4000);
 }
