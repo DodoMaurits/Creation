@@ -2395,14 +2395,8 @@ function renderNewElements(elements) {
 
   // Klik anywhere → reset
   overlay.onclick = () => {
-    overlay.remove();
-    openLeft = null;
-    openRight = null;
-    leftSide.innerHTML = "";
-    rightSide.innerHTML = "";
-
-    renderClosed();
-    updateClosedContainer();
+      overlay.remove();
+      // open maps blijven open, iconen verdwijnen niet meer
   };
 }
 
