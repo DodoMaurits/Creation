@@ -1985,7 +1985,6 @@ const combinaties = [
   }
 ];
 
-
 const groepsIconen = {
   "Heelal": "icons/Heelal.png",
   "Krachten": "icons/Krachten.png",
