@@ -2012,7 +2012,6 @@ let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
 let lastHint = null;
-let hintIndex = 0;
 let hintVisible = false;
 let hintTimer = null;
 
@@ -2695,25 +2694,12 @@ function getHint() {
 
 const hintButton = document.getElementById("hint-button");
 const hintBubble = document.getElementById("hint-bubble");
-const hints = [
-  "Hint 1: Kijk goed naar de kleuren.",
-  "Hint 2: Het antwoord begint met een A.",
-  "Hint 3: Denk aan de volgorde van de cijfers."
-];
 
 hintButton.onclick = showHint;
 
 // ----- HINTS FUNCTIE -----
-function getNextHint() {
-  if (hintIndex >= hints.length) return null; // Geen hints meer
-  const hint = hints[hintIndex];
-  hintIndex++; // Volgende hint bij volgende klik
-  return hint;
-}
-
 function showHint() {
   if (hintVisible) {
-    // Sluit de huidige hint
     hintBubble.classList.remove("visible");
     hintVisible = false;
     if (hintTimer) {
@@ -2723,7 +2709,7 @@ function showHint() {
     return;
   }
 
-  const hint = getNextHint();
+  const hint = getHint();
   if (!hint) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
@@ -2733,7 +2719,6 @@ function showHint() {
   hintBubble.innerHTML = hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
-
   if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
