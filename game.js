@@ -2485,7 +2485,17 @@ function renderClosed() {
     img.onclick = () => openMap(map, img);
 
     container.appendChild(img);
-    attachTooltip(img, map.naam);
+    
+    // ✅ permanente tooltip op mobiel
+    if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = map.naam;
+        container.appendChild(tooltip);
+    } else {
+        attachTooltip(img, map.naam);
+    }
+    
     grid.appendChild(container);
   });
 
@@ -2592,8 +2602,14 @@ function renderSide(parentContainer, map, side) {
   titleImg.onclick = () => closeMap(side);
 
   // Tooltip voor de map-title
-  attachTooltip(titleImg, map.naam);
-
+  if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = map.naam;
+      titleContainer.appendChild(tooltip);
+  } else {
+      attachTooltip(titleImg, map.naam);
+  }
   titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
 
@@ -2637,10 +2653,16 @@ function renderSide(parentContainer, map, side) {
     img.onclick = () => toggleSelect(el, img, side, map.naam);
 
     // Tooltip per element
-    attachTooltip(img, el.naam);
-
-    elContainer.appendChild(img);
-    grid.appendChild(elContainer);
+    if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = el.naam;
+        elContainer.appendChild(tooltip);
+    } else {
+        attachTooltip(img, el.naam);
+    }
+        elContainer.appendChild(img);
+        grid.appendChild(elContainer);
   });
 
   parentContainer.appendChild(grid);
