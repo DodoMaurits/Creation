@@ -247,10 +247,10 @@ body {
 }
 
 .tooltip {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  transform: translate(0,0); /* wordt overschreven door JS */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 6px;
   background: rgba(0,0,0,0.85);
   color: white;
@@ -261,7 +261,7 @@ body {
   opacity: 0;
   transition: opacity 0.15s ease;
   pointer-events: none;
-  z-index: 5000; /* boven alles */
+  z-index: 100;
 }
 
 .icon-container:hover .tooltip { opacity: 1; }
