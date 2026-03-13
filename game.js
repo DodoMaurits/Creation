@@ -2053,8 +2053,11 @@ function preloadAllIcons() {
 }
 
 function attachTooltip(el, text) {
-  let tooltip;
+  if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
+    return;
+  }
 
+  let tooltip;
   el.addEventListener("mouseenter", () => {
     tooltip = document.createElement("div");
     tooltip.className = "tooltip-floating visible";
@@ -2063,7 +2066,7 @@ function attachTooltip(el, text) {
 
     const rect = el.getBoundingClientRect();
     tooltip.style.left = rect.left + rect.width / 2 + "px";
-    tooltip.style.top = rect.bottom + 6 + "px"; // marge onder icoon
+    tooltip.style.top = rect.bottom + 6 + "px"; 
     tooltip.style.transform = "translateX(-50%)";
   });
 
