@@ -177,8 +177,8 @@ html, body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   padding-right: 0;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .explanation-text p {
