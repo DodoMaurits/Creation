@@ -1927,15 +1927,15 @@ const combinaties = [
     input: ["Oerbilateria", "Bot"],
     hint: `Nu zijn de omstandigheden juist om extra kracht te geven aan de bilateria...`,
     output: [
-      { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
-        quote: `Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole 
-        life believing that it is stupid 
-        <br><br>- Albert Einstein`
-      },
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
         quote: `For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the 
         sea 
         <br><br>- Empedocles`
+      },
+      { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
+        quote: `Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole 
+        life believing that it is stupid 
+        <br><br>- Albert Einstein`
       },
       { naam: "Oergeleedpotigen", icoon: "icons/Oergeleedpotigen.png", map: "Geleedpotigen", 
         quote: `So important are insects and other land-dwelling arthropods that if all were to disappear, 
