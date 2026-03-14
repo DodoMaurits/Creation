@@ -1860,7 +1860,8 @@ const combinaties = [
         <br><br>- Helen Keller`
       },
       { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: ``
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
       }
     ]
   },
@@ -1937,7 +1938,9 @@ const combinaties = [
         <br><br>- Empedocles`
       },
       { naam: "Oergeleedpotigen", icoon: "icons/Oergeleedpotigen.png", map: "Geleedpotigen", 
-        quote: ``
+        quote: `So important are insects and other land-dwelling arthropods that if all were to disappear, 
+        humanity probably could not last more than a few months
+        <br><br>- E.O. Wilson`
       },
       { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
         quote: `The ascidians are among the most extraordinary of marine animals 
@@ -1992,7 +1995,8 @@ const combinaties = [
         <br><br>- Helen Keller`
       },
       { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: ``
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
       },
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -2003,7 +2007,8 @@ const combinaties = [
         <br><br>- Faraaz Kazi`
       },
       { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
-        quote: ``
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordon`
       }
     ]
   },
