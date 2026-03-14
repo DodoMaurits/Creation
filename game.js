@@ -1577,16 +1577,6 @@ const combinaties = [
     input: ["Leca", "Evolutie"],
     hint: `Schimmel eet dood materiaal, planten hebben fotosynthese, maar welke eerste meercelligen aten leven?`,
     output: [
-      { naam: "Haar", icoon: "icons/Haar.png", map: "Biologie", 
-        quote: `And forget not that the earth delights to feel your bare feet and the winds long to play with your hair 
-        <br><br>- Khalid Gibran`
-      },
-      { naam: "Weefsel", icoon: "icons/Weefsel.png", map: "Biologie", 
-        quote: `That's the way it is: life includes a lot of empty space. We are one-tenth living tissue, nine-tenths 
-        water; life is one-tenth Here and Now, nine-tenths a history lesson. For most of the time the Here and Now is 
-        neither now nor here 
-        <br><br>- Graham Swift`
-      },
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
         quote: `Thought, like any parasite, cannot exist without a compliant host 
         <br><br>- Bernard Beckett`
@@ -1595,6 +1585,12 @@ const combinaties = [
         quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
         must first be able to absorb it well 
         <br><br>- Jim Rohn`
+      },
+      { naam: "Weefsel", icoon: "icons/Weefsel.png", map: "Biologie", 
+        quote: `That's the way it is: life includes a lot of empty space. We are one-tenth living tissue, nine-tenths 
+        water; life is one-tenth Here and Now, nine-tenths a history lesson. For most of the time the Here and Now is 
+        neither now nor here 
+        <br><br>- Graham Swift`
       }
     ]
   },
@@ -1703,7 +1699,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Zenuwen", "Leca"],
+    input: ["Zenuwen", "Sponzen"],
     hint: `Wat zou het mooi zijn, als leven zichzelf ervaren kan...`,
     output: [
       { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
@@ -1714,6 +1710,27 @@ const combinaties = [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
         <br><br>- Leo Buscaglia`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zenuwen", "Koraal"], ["Bloemdieren", "Zenuwen"], ["Zeeanemonen", "Zenuwen"]
+    ],
+    hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
+    output: [
+      { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
+        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
+        pressure (e.g. air pressure) is exerted inwards from all directions equally 
+        <br><br>- Viktor Schawberger`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
       }
     ]
   },
@@ -1784,6 +1801,22 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Oercnidaria", "Zenuwen"], ["Oerbilateria", "Zenuwen"], ["Kwallen", "Zenuwen"]
+    ],
+    hint: `Kwallen zijn als licht in de duisternis... maar ervaren zij dat ook?`, 
+    output: [
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      }
+    ]
+  },
+  {
     input: ["Oerbilateria", "Evolutie"],
     hint: `Als je dieren een mond geeft en een anus, dan voorspel ik dat evolutie ze ver brengt.`,
     output: [
@@ -1799,31 +1832,35 @@ const combinaties = [
     ]
   },
   {
-    input: ["Kwallen", "Zenuwen"],
-    hint: `Kwallen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
-    output: [
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
-        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
-        pressure (e.g. air pressure) is exerted inwards from all directions equally 
-        <br><br>- Viktor Schawberger`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      }
-    ]
-  },
-  {
     input: ["Bloemdieren", "Evolutie"],
     hint: `Sommige dieren zijn als bloemen en komen dan tot bloei...`,
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
         quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
         <br><br>- Charles Darwin`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Wormen", "Zenuwen"], ["Zeesterren", "Zenuwen"], ["Lancetvisjes", "Zenuwen"], ["Beerdiertjes", "Zenuwen"]
+    ],
+    hint: `Het is voor sommigen niet fijn, maar de zenuw doet het als handige waarschuwing.`,
+    output: [
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: ``
       }
     ]
   },
@@ -1944,9 +1981,22 @@ const combinaties = [
     ]
   },
   {
-    input: ["Agnathen", "Zenuwen"],
-    hint: `Hier heb ik lang aan gewerkt... een werkelijkheid voor vissen om te ervaren.`,
+    input: [
+      ["Agnathen", "Zenuwen"], ["Oergeleedpotigen", "Zenuwen"], ["Trilobieten", "Zenuwen"]
+    ],
+    hint: `Hier heb ik lang aan gewerkt... elk nieuw leven zijn eigen binnenwereld.`,
     output: [
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: ``
+      },
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
         <br><br>- Oscar Wilde`
@@ -1955,31 +2005,31 @@ const combinaties = [
         quote: `Eye contact is way more intimate than words will ever be 
         <br><br>- Faraaz Kazi`
       },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: ``
       }
     ]
   },
   {
-    input: ["Trilobieten", "Zenuwen"],
-    hint: `Hier heb ik lang aan gewerkt... een werkelijkheid voor trilobieten om te ervaren.`,
+    input: ["Manteldieren", "Zenuwen"],
+    hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
-      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: `Eye contact is way more intimate than words will ever be 
-        <br><br>- Faraaz Kazi`
-      },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
+      { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
+        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
+        pressure (e.g. air pressure) is exerted inwards from all directions equally 
+        <br><br>- Viktor Schawberger`
       },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
         <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
       }
     ]
   }
