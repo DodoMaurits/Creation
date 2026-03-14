@@ -181,8 +181,11 @@ html, body {
   font-size: clamp(12px, 1.2vw, 18px);
   line-height: 1.4;
   max-width: 100%;
+  max-height: calc(100% - 120px);
+  overflow-y: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  padding-right: 5px;
 }
 
 .explanation-text p {
