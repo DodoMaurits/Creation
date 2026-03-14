@@ -1936,11 +1936,8 @@ const combinaties = [
         sea 
         <br><br>- Empedocles`
       },
-      { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotige", 
-        quote: `The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is 
-        nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must 
-        have been light to enter it 
-        <br><br>- Louis Agassiz`
+      { naam: "Oergeleedpotigen", icoon: "icons/Oergeleedpotigen.png", map: "Geleedpotigen", 
+        quote: ``
       },
       { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
         quote: `The ascidians are among the most extraordinary of marine animals 
@@ -2011,6 +2008,18 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oergeleedpotigen", "Evolutie"],
+    hint: ``,
+    output: [
+      { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotige", 
+        quote: `The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is 
+        nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must 
+        have been light to enter it 
+        <br><br>- Louis Agassiz`
+      }
+    ]
+  },
+  {
     input: ["Manteldieren", "Zenuwen"],
     hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
@@ -2051,7 +2060,7 @@ const groepsIconen = {
   "Brein": "icons/Brein.png",
   "Planten": "icons/Planten.png",
   "Vissen": "icons/Vissen.png",
-  "Geleedpotige": "icons/Geleedpotige.png"
+  "Geleedpotigen": "icons/Geleedpotigen.png"
 };
 
 // ----- STATE -----
