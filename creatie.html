@@ -97,37 +97,41 @@
     });
 
     // ----------------- Fit Text Script -----------------
-    function fitBoxContent(containerSelector, elementsSelectors, minFont = 10, maxFont = 36) {
+    function fitBoxContent(containerSelector, elementsSelectors) {
       const container = document.querySelector(containerSelector);
       const elements = elementsSelectors.map(sel => Array.from(container.querySelectorAll(sel))).flat();
     
-      // Bereken beschikbare hoogte (inclusief padding en 15px van ::before)
+      // Bereken echte beschikbare hoogte binnen de box (clientHeight is al zonder borders)
       const containerStyle = getComputedStyle(container);
-      const paddingTop = parseFloat(containerStyle.paddingTop) + 15;
-      const paddingBottom = parseFloat(containerStyle.paddingBottom) + 15;
-      const availableHeight = () => container.clientHeight - paddingTop - paddingBottom;
+      const paddingTop = parseFloat(containerStyle.paddingTop);
+      const paddingBottom = parseFloat(containerStyle.paddingBottom);
+      const availableHeight = container.clientHeight - paddingTop - paddingBottom;
     
-      // Begin met maximale font-size
-      elements.forEach(el => el.style.fontSize = maxFont + 'px');
+      // Begin met de font-size zoals in CSS (clamp max)
+      elements.forEach(el => {
+        const cssSize = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = cssSize + 'px';
+      });
     
+      // Iteratief verkleinen totdat alles past
       const resizeText = () => {
-        elements.forEach(el => el.style.fontSize = maxFont + 'px');
-        let fontSize = maxFont;
-    
-        // Verklein lettergrootte totdat alles binnen de box past
-        while (container.scrollHeight > availableHeight() && fontSize > minFont) {
-          fontSize -= 0.5;
-          elements.forEach(el => el.style.fontSize = fontSize + 'px');
+        let tooBig = container.scrollHeight > availableHeight;
+        while (tooBig) {
+          elements.forEach(el => {
+            let size = parseFloat(getComputedStyle(el).fontSize);
+            if (size > 10) {  // minFont hard-coded 10px
+              el.style.fontSize = (size - 0.5) + 'px';
+            }
+          });
+          tooBig = container.scrollHeight > availableHeight;
         }
       };
     
       resizeText();
-    
-      // Pas opnieuw aan bij window resize
       window.addEventListener('resize', resizeText);
     }
     
-    // Voorbeeld: toepassen bij klik op icon
+    // Bij click op icon
     document.getElementById('oerknal-icon').addEventListener('click', () => {
       const overlay = document.getElementById('explanation-overlay');
       overlay.classList.add('active');
@@ -136,7 +140,7 @@
         '.explanation-text', 
         '.explanation-text p', 
         '.close-btn'
-      ], 10, 36);
+      ]);
     });
   </script>
     
