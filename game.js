@@ -2016,7 +2016,7 @@ const combinaties = [
     input: ["Oergeleedpotigen", "Evolutie"],
     hint: ``,
     output: [
-      { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotige", 
+      { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotigen", 
         quote: `The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is 
         nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must 
         have been light to enter it 
