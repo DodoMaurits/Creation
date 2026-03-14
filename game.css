@@ -439,17 +439,19 @@ body {
 
 .info-popup-box {
   position: relative;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.75);
   backdrop-filter: blur(6px);
-  width: 40dvw;
-  max-width: 650px;
-  padding: 60px;
-  border-radius: 14px;
-  color: rgba(240,240,240,0.95);
+  width: 45dvw;
+  max-width: 600px;
+  padding: 40px 30px;
+  border-radius: 12px;
+  color: #f0f0f0;
   box-shadow:
-    0 15px 60px rgba(0,0,0,0.8),
+    0 15px 45px rgba(0,0,0,0.7),
     inset 0 0 0 1px rgba(255,255,255,0.08);
   animation: infoFade 0.25s ease;
+  font-family: "Merriweather", serif;
+  line-height: 1.6;
 }
 
 .info-popup-title {
@@ -468,13 +470,9 @@ body {
 }
 
 .info-popup-text {
-  font-family: "Merriweather", serif;
-  font-size: 18px;
-  line-height: 1.7;
-  color: rgba(230,230,230,0.9);
+  font-size: 16px;
+  color: #e8e8e8;
   text-align: justify;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   hyphens: auto;
 }
 
