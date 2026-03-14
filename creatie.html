@@ -102,38 +102,38 @@
     });
 
     // ----------------- Fit Text Script -----------------
-  function fitBoxContent(containerSelector, elementsSelectors) {
-    const container = document.querySelector(containerSelector);
-    const elements = elementsSelectors.map(sel => Array.from(container.querySelectorAll(sel))).flat();
-
-    const containerStyle = getComputedStyle(container);
-    const paddingTop = parseFloat(containerStyle.paddingTop);
-    const paddingBottom = parseFloat(containerStyle.paddingBottom);
-    const availableHeight = container.clientHeight - paddingTop - paddingBottom;
-
-    // Begin met font-size zoals in CSS
-    elements.forEach(el => {
-      const cssSize = parseFloat(getComputedStyle(el).fontSize);
-      el.style.fontSize = cssSize + 'px';
-    });
-
-    // Iteratief verkleinen totdat alles past
-    const resizeText = () => {
-      let tooBig = container.scrollHeight > availableHeight;
-      while (tooBig) {
-        elements.forEach(el => {
-          let size = parseFloat(getComputedStyle(el).fontSize);
-          if (size > 12) { // minFont iets hoger voor betere leesbaarheid
-            el.style.fontSize = (size - 0.5) + 'px';
-          }
-        });
-        tooBig = container.scrollHeight > availableHeight;
-      }
-    };
-
-    resizeText();
-    window.addEventListener('resize', resizeText);
-  }
+    function fitBoxContent(containerSelector, elementsSelectors) {
+      const container = document.querySelector(containerSelector);
+      const elements = elementsSelectors.map(sel => Array.from(container.querySelectorAll(sel))).flat();
+    
+      const containerStyle = getComputedStyle(container);
+      const paddingTop = parseFloat(containerStyle.paddingTop);
+      const paddingBottom = parseFloat(containerStyle.paddingBottom);
+      const availableHeight = container.clientHeight - paddingTop - paddingBottom;
+    
+      // Begin met font-size zoals in CSS
+      elements.forEach(el => {
+        const cssSize = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = cssSize + 'px';
+      });
+    
+      // Iteratief verkleinen totdat alles past
+      const resizeText = () => {
+        let tooBig = container.scrollHeight > availableHeight;
+        while (tooBig) {
+          elements.forEach(el => {
+            let size = parseFloat(getComputedStyle(el).fontSize);
+            if (size > 12) { // minFont iets hoger voor leesbaarheid
+              el.style.fontSize = (size - 0.5) + 'px';
+            }
+          });
+          tooBig = container.scrollHeight > availableHeight;
+        }
+      };
+    
+      resizeText();
+      window.addEventListener('resize', resizeText);
+    }
   </script>
     
 </body>
