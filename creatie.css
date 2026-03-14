@@ -146,7 +146,7 @@ html, body {
   align-items: center;
   width: clamp(320px, 50vw, 800px);
   max-height: 80vh;
-  padding: 40px;
+  padding: 40px 80px;
   gap: 20px;
 }
 
