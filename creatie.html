@@ -57,6 +57,7 @@
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
       overlay.classList.add('active');
+      fitTextToBox('.explanation-box', '.explanation-text', 12, 20); // pas tekstgrootte aan bij openen
     });
     
     // Klik op "Sluit" stuurt naar elementen.html
@@ -64,10 +65,13 @@
       window.location.href = "elementen.html";
     });
 
+    // Background music
     const music = document.getElementById("backgroundmusic");
     music.volume = 0.4;
     music.play().catch(() => console.log("Autoplay geblokkeerd, start na eerste klik"));
     document.addEventListener("click", () => music.play(), { once: true });
+
+    // Mute button
     const muteButton = document.createElement("div");
     muteButton.id = "mute-button";
     document.body.appendChild(muteButton);
@@ -91,6 +95,31 @@
       music.muted = muted;
       updateMuteIcon();
     });
+
+    // ----------------- Fit Text Script -----------------
+    function fitTextToBox(containerSelector, textSelector, minFont = 12, maxFont = 20) {
+      const container = document.querySelector(containerSelector);
+      const textEl = container.querySelector(textSelector);
+
+      let fontSize = maxFont;
+      textEl.style.fontSize = fontSize + 'px';
+
+      const resizeText = () => {
+        fontSize = maxFont;
+        textEl.style.fontSize = fontSize + 'px';
+
+        while (textEl.scrollHeight > container.clientHeight && fontSize > minFont) {
+          fontSize -= 0.5;
+          textEl.style.fontSize = fontSize + 'px';
+        }
+      }
+
+      // Initial fit
+      resizeText();
+
+      // Pas opnieuw aan bij window resize
+      window.addEventListener('resize', resizeText);
+    }
   </script>
     
 </body>
