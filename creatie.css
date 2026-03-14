@@ -145,7 +145,6 @@ html, body {
   line-height: 1.5;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
   overflow: hidden;
-
   display: flex;
   flex-direction: column; 
   justify-content: center;
@@ -178,8 +177,8 @@ html, body {
 
 .explanation-text {
   font-family: "Times New Roman", sans-serif;
-  font-size: clamp(12px, 1.2vw, 18px);
-  line-height: 1.4;
+  font-size: clamp(10px, 1vw, 16px);
+  line-height: 1.2;
   max-width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -187,8 +186,8 @@ html, body {
 }
 
 .explanation-text p {
-  line-height: 1.7;
-  font-size: clamp(13px, 1.3vw, 19px);
+  line-height: 1.2;
+  font-size: clamp(11px, 1vw, 16px);
   margin-top: 15px;
   color: #e0e0e0;
   text-align: justify;
