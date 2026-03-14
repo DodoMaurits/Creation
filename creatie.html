@@ -57,12 +57,14 @@
     // Klik op het Oerknal-icoon opent de overlay en past tekst aan
     icon.addEventListener('click', () => {
       overlay.classList.add('active');
-      fitBoxContent('.explanation-box', [
-        '.explanation-title', 
-        '.explanation-text', 
-        '.explanation-text p', 
-        '.close-btn'
-      ]);
+        requestAnimationFrame(() => {
+        fitBoxContent('.explanation-box', [
+          '.explanation-title',
+          '.explanation-text',
+          '.explanation-text p',
+          '.close-btn'
+        ]);
+      });
     });
         
     // Klik op "CREATE" stuurt naar elementen.html
@@ -111,28 +113,30 @@
       const paddingBottom = parseFloat(containerStyle.paddingBottom);
       const availableHeight = container.clientHeight - paddingTop - paddingBottom;
     
-      // Begin met font-size zoals in CSS
+      // Start met de CSS font-size
       elements.forEach(el => {
         const cssSize = parseFloat(getComputedStyle(el).fontSize);
         el.style.fontSize = cssSize + 'px';
       });
     
-      // Iteratief verkleinen totdat alles past
-      const resizeText = () => {
-        let tooBig = container.scrollHeight > availableHeight;
-        while (tooBig) {
-          elements.forEach(el => {
-            let size = parseFloat(getComputedStyle(el).fontSize);
-            if (size > 12) { // minFont iets hoger voor leesbaarheid
-              el.style.fontSize = (size - 0.5) + 'px';
-            }
-          });
-          tooBig = container.scrollHeight > availableHeight;
+      // Stapsgewijs verkleinen totdat alles past
+      let tooBig = container.scrollHeight > availableHeight;
+      function shrinkStep() {
+        if (!tooBig) return;
+        elements.forEach(el => {
+          let size = parseFloat(getComputedStyle(el).fontSize);
+          if (size > 12) { // minimum font-size
+            el.style.fontSize = (size - 0.5) + 'px';
+          }
+        });
+        tooBig = container.scrollHeight > availableHeight;
+        if (tooBig) {
+          requestAnimationFrame(shrinkStep);
         }
-      };
+      }
     
-      resizeText();
-      window.addEventListener('resize', resizeText);
+      shrinkStep();
+      window.addEventListener('resize', () => fitBoxContent(containerSelector, elementsSelectors));
     }
   </script>
     
