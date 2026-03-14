@@ -54,15 +54,15 @@
     const overlay = document.getElementById('explanation-overlay');
     const closeBtn = document.getElementById('close-btn');
     
-    // Klik op het Oerknal-icoon opent de overlay en past tekst aan
+    // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
       overlay.classList.add('active');
         requestAnimationFrame(() => {
         fitBoxContent('.explanation-box', [
-          '.explanation-title',
-          '.explanation-text',
-          '.explanation-text p',
-          '.close-btn'
+          {selector: '.explanation-title', min: 18},
+          {selector: '.explanation-text', min: 14},
+          {selector: '.explanation-text p', min: 14},
+          {selector: '.close-btn', min: 14}
         ]);
       });
     });
@@ -104,39 +104,44 @@
     });
 
     // ----------------- Fit Text Script -----------------
-    function fitBoxContent(containerSelector, elementsSelectors) {
+    function fitBoxContent(containerSelector, elementsData) {
       const container = document.querySelector(containerSelector);
-      const elements = elementsSelectors.map(sel => Array.from(container.querySelectorAll(sel))).flat();
+      if (!container) return;
     
       const containerStyle = getComputedStyle(container);
       const paddingTop = parseFloat(containerStyle.paddingTop);
       const paddingBottom = parseFloat(containerStyle.paddingBottom);
       const availableHeight = container.clientHeight - paddingTop - paddingBottom;
     
-      // Start met de CSS font-size
-      elements.forEach(el => {
-        const cssSize = parseFloat(getComputedStyle(el).fontSize);
-        el.style.fontSize = cssSize + 'px';
-      });
+      // Zet start-fontsize (zoals CSS)
+      const elements = elementsData.map(e => {
+        const el = container.querySelector(e.selector);
+        if (el) {
+          const cssSize = parseFloat(getComputedStyle(el).fontSize);
+          el.style.fontSize = cssSize + 'px';
+          return {el: el, min: e.min};
+        }
+      }).filter(Boolean);
     
-      // Stapsgewijs verkleinen totdat alles past
+      // Alleen verkleinen als nodig
       let tooBig = container.scrollHeight > availableHeight;
       function shrinkStep() {
         if (!tooBig) return;
-        elements.forEach(el => {
-          let size = parseFloat(getComputedStyle(el).fontSize);
-          if (size > 12) { // minimum font-size
-            el.style.fontSize = (size - 0.5) + 'px';
+        elements.forEach(obj => {
+          let size = parseFloat(getComputedStyle(obj.el).fontSize);
+          if (size > obj.min) {
+            obj.el.style.fontSize = (size - 0.5) + 'px';
           }
         });
         tooBig = container.scrollHeight > availableHeight;
-        if (tooBig) {
-          requestAnimationFrame(shrinkStep);
-        }
+        if (tooBig) requestAnimationFrame(shrinkStep);
       }
-    
       shrinkStep();
-      window.addEventListener('resize', () => fitBoxContent(containerSelector, elementsSelectors));
+    
+      // Pas aan bij resize
+      window.addEventListener('resize', () => {
+        fitBoxContent(containerSelector, elementsData);
+      }, {passive: true});
     }
   </script>
     
