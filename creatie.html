@@ -97,34 +97,47 @@
     });
 
     // ----------------- Fit Text Script -----------------
-    function fitTextToBox(containerSelector, textSelector, minFont = 12, maxFont = 20) {
+    function fitBoxContent(containerSelector, elementsSelectors, minFont = 10, maxFont = 36) {
       const container = document.querySelector(containerSelector);
-      const textEl = container.querySelector(textSelector);
+      const elements = elementsSelectors.map(sel => Array.from(container.querySelectorAll(sel))).flat();
     
+      // Bereken beschikbare hoogte (inclusief padding en 15px van ::before)
       const containerStyle = getComputedStyle(container);
-      const paddingTop = parseFloat(containerStyle.paddingTop);
-      const paddingBottom = parseFloat(containerStyle.paddingBottom);
+      const paddingTop = parseFloat(containerStyle.paddingTop) + 15;
+      const paddingBottom = parseFloat(containerStyle.paddingBottom) + 15;
       const availableHeight = () => container.clientHeight - paddingTop - paddingBottom;
     
-      let fontSize = maxFont;
-      textEl.style.fontSize = fontSize + 'px';
+      // Begin met maximale font-size
+      elements.forEach(el => el.style.fontSize = maxFont + 'px');
     
       const resizeText = () => {
-        fontSize = maxFont;
-        textEl.style.fontSize = fontSize + 'px';
+        elements.forEach(el => el.style.fontSize = maxFont + 'px');
+        let fontSize = maxFont;
     
-        while (textEl.scrollHeight > availableHeight() && fontSize > minFont) {
+        // Verklein lettergrootte totdat alles binnen de box past
+        while (container.scrollHeight > availableHeight() && fontSize > minFont) {
           fontSize -= 0.5;
-          textEl.style.fontSize = fontSize + 'px';
+          elements.forEach(el => el.style.fontSize = fontSize + 'px');
         }
       };
     
-      // Initial fit
       resizeText();
     
       // Pas opnieuw aan bij window resize
       window.addEventListener('resize', resizeText);
     }
+    
+    // Voorbeeld: toepassen bij klik op icon
+    document.getElementById('oerknal-icon').addEventListener('click', () => {
+      const overlay = document.getElementById('explanation-overlay');
+      overlay.classList.add('active');
+      fitBoxContent('.explanation-box', [
+        '.explanation-title', 
+        '.explanation-text', 
+        '.explanation-text p', 
+        '.close-btn'
+      ], 10, 36);
+    });
   </script>
     
 </body>
