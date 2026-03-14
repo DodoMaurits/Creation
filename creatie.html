@@ -57,19 +57,11 @@
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
       overlay.classList.add('active');
-        setTimeout(() => {
-        fitBoxContent('.explanation-box', [
-          {selector: '.explanation-title', min: 18},
-          {selector: '.explanation-text', min: 14},
-          {selector: '.explanation-text p', min: 14},
-          {selector: '.close-btn', min: 14}
-        ]);
-      }, 50);
     });
-        
-    // Klik op "CREATE" stuurt naar elementen.html
+    
     closeBtn.addEventListener('click', () => {
-      window.location.href = "elementen.html";
+      overlay.classList.remove('active');
+      // of window.location.href = "elementen.html";
     });
 
     // Background music
