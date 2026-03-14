@@ -57,9 +57,9 @@
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
       overlay.classList.add('active');
-      fitTextToBox('.explanation-box', '.explanation-text', 12, 20); // pas tekstgrootte aan bij openen
+      fitTextToBox('.explanation-box', '.explanation-text', 12, 20);
     });
-    
+        
     // Klik op "Sluit" stuurt naar elementen.html
     closeBtn.addEventListener('click', () => {
       window.location.href = "elementen.html";
@@ -100,23 +100,28 @@
     function fitTextToBox(containerSelector, textSelector, minFont = 12, maxFont = 20) {
       const container = document.querySelector(containerSelector);
       const textEl = container.querySelector(textSelector);
-
+    
+      const containerStyle = getComputedStyle(container);
+      const paddingTop = parseFloat(containerStyle.paddingTop);
+      const paddingBottom = parseFloat(containerStyle.paddingBottom);
+      const availableHeight = () => container.clientHeight - paddingTop - paddingBottom;
+    
       let fontSize = maxFont;
       textEl.style.fontSize = fontSize + 'px';
-
+    
       const resizeText = () => {
         fontSize = maxFont;
         textEl.style.fontSize = fontSize + 'px';
-
-        while (textEl.scrollHeight > container.clientHeight && fontSize > minFont) {
+    
+        while (textEl.scrollHeight > availableHeight() && fontSize > minFont) {
           fontSize -= 0.5;
           textEl.style.fontSize = fontSize + 'px';
         }
-      }
-
+      };
+    
       // Initial fit
       resizeText();
-
+    
       // Pas opnieuw aan bij window resize
       window.addEventListener('resize', resizeText);
     }
