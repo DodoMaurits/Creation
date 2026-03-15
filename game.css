@@ -596,10 +596,21 @@ body {
   display: grid;
   gap: 40px;
   justify-content: center;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, 200px)
-  width: auto;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+  max-width: 920px;
+  margin: 0 auto;
+  animation: resultAppear 0.8s ease;
+}
+
+@keyframes resultAppear {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .result-box {
