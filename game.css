@@ -604,7 +604,7 @@ body {
 
 .result-box {
   width: 100%;
-  max-width: 250px;
+  max-width: 220px;
   text-align: center;
   color: white;
   display: flex;
@@ -646,9 +646,14 @@ body {
 
 .result-title {
   font-family: "Cinzel", serif;
-  font-size: 40px;
+  font-size: clamp(18px, 3vw, 40px);
   letter-spacing: 3px;
   margin-bottom: 10px;
+  text-align: center;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  line-height: 1.1;
+  word-break: break-word;
 }
 
 .result-quote {
