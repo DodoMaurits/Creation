@@ -1929,7 +1929,8 @@ const combinaties = [
     hint: `Nu zijn de omstandigheden juist om extra kracht te geven aan de bilateria...`,
     output: [
       { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
-        quote: ``
+        quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
+        <br><br>- Andrew H. Knoll`
       },
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
         quote: `For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the 
@@ -1978,10 +1979,11 @@ const combinaties = [
     input: [
       ["Steenwortelalgen", "Rivier"], ["Steenwortelalgen", "Meer"], ["Steenwortelalgen", "Ven"]
     ],
-    hint: ``,
+    hint: `Hoe zit het met algen in zoet water?`,
     output: [
       { naam: "Mos", icoon: "icons/Mos.png", map: "Planten", 
-        quote: ``
+        quote: `Every antique farm-house and moss-grown cottage is a picture
+        <br><br>- Washington Irving`
       }
     ]
   },
@@ -1997,16 +1999,21 @@ const combinaties = [
   },
   {
     input: ["Oertrochozoa", "Evolutie"],
-    hint: ``,
+    hint: `Van trochozoa is het een kleine stap naar de weekdieren.`, 
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
-        quote: ``
+        quote: `I would love to see a giant squid. Very few people have seen them. 
+        And only about half a dozen people have seen one alive
+        <br><br>- David Attenborough`
       },
-      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Waterdieren", 
-        quote: ``
+      { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
+        quote: `Even a snail will eventually reach its destination
+        <br><br>- Gail Tsukiyama`
       },
       { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
-        quote: ``
+        quote: `Every life deserves a certain amount of dignity, no matter how poor or damaged the shell
+        that carries it
+        <br><br>- Rick Bragg`
       }
     ]
   },
@@ -2014,10 +2021,11 @@ const combinaties = [
     input: [
       ["Agnathen", "Evolutie"], ["Agnathen", "Bot"]
     ],
-    hint: ``,
+    hint: `Agnathen zouden iets kunnen bedenken om voedsel te vermalen, maar wat...`,
     output: [
       { naam: "Tand", icoon: "icons/Tand.png", map: "Biologie", 
-        quote: ``
+        quote: `Behind every smile there's teeth
+        <br><br>- Confucius`
       }
     ]
   },
@@ -2057,7 +2065,7 @@ const combinaties = [
   },
   {
     input: ["Oergeleedpotigen", "Evolutie"],
-    hint: ``,
+    hint: `Geleedpotigen zouden nog wel eens divers kunnen worden...`,
     output: [
       { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotigen", 
         quote: `The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is 
