@@ -662,16 +662,14 @@ body {
 }
 
 .result-title {
-  display: block;
-  box-sizing: border-box;
   font-family: "Cinzel", serif;
-  font-size: clamp(18px, 2.2vw, 40px);
-  letter-spacing: 3px;
-  margin-bottom: 10px;
+  font-size: clamp(12px, 5vw, 24px);
+  line-height: 1.2;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 100%;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .result-quote {
