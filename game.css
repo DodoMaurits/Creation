@@ -597,7 +597,7 @@ body {
   gap: 40px;
   justify-content: center;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, 200px)
   width: auto;
   max-width: 1200px;
 }
