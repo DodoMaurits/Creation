@@ -2594,9 +2594,7 @@ function renderNewElements(elements) {
     box.appendChild(img);
     box.appendChild(title);
     box.appendChild(quote);
-    
-    requestAnimationFrame(() => fitTitleToBox(title));
-    
+        
     grid.appendChild(box);
   });
 
@@ -2634,17 +2632,6 @@ function renderNewElements(elements) {
     renderClosed();
     updateClosedContainer();
   };
-}
-
-function fitTitleToBox(titleEl) {
-  const parentWidth = titleEl.parentElement.clientWidth;
-
-  let fontSize = parseFloat(window.getComputedStyle(titleEl).fontSize);
-
-  while (titleEl.scrollWidth > parentWidth && fontSize > 10) {
-    fontSize -= 1;
-    titleEl.style.fontSize = fontSize + "px";
-  }
 }
 
 // ----- ERROR SHAKE FUNCTION -----
