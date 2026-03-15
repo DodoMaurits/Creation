@@ -2213,6 +2213,53 @@ const combinaties = [
         <br><br>- Rick Riordon`
       }
     ]
+  },
+//------------ THRESHOLD 4: SILUUR --------------//
+  {
+    input: ["Wortels", "Steenwortelalgen"],
+    hint: `Het is tijd voor planten en geleedpotigen om het land te verkennen...`,
+    output: [
+      { naam: "Oervaatplanten", icoon: "icons/Oervaatplanten.png", map: "Planten", 
+        quote: ``
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Siluur", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        tijd: 444_000_000,
+        requirements: ["Schorpioenen", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein"
+          "Oog", "Smaak", "Kleur", "Tand", "Mos"]
+      },
+      normal: {
+        titel: "Siluur",
+        tekst: `Tijd om het land te verkennen...`,
+        tijd: 444_000_000
+      }
+    }
+  },
+  {
+    input: ["Schimmel", "Evolutie"],
+    hint: `Schimmel heeft nog zo veel potentie...`,
+    output: [
+      { naam: "Korstmos", icoon: "icons/Korstmos.png", map: "Pril leven", 
+        quote: ``
+      },
+      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Vruchten",
+        quote: ``
+      },
+      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Vruchten",
+        quote: ``
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oervaatplanten", 
+        titel: "Probeer opnieuw in het Siluur",
+        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
+        gezet kan worden.`
+      }
+    }
   }
 ];
 
@@ -2432,6 +2479,23 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
+  // 🔹 Check threshold-element dependency
+  if (firstMatch.uitleg?.thresholdElement) {
+    const needed = firstMatch.uitleg.thresholdElement.naam;
+    if (!unlockedElements.has(needed)) {
+      // toon overlay met titel + tekst van thresholdElement
+      showThresholdExplanation(
+        firstMatch.uitleg.thresholdElement,
+        null, // geen missing circles
+        () => {
+          selected.forEach(e => e.dom.classList.remove("selected"));
+          selected = [];
+        }
+      );
+      return; // stop verder uitvoeren
+    }
+  }
+  
   // 🔹 Check threshold requirements
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
