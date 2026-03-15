@@ -2685,8 +2685,6 @@ function renderNewElements(elements) {
     default: cols = Math.ceil(Math.sqrt(elements.length));
   }
   
-  grid.style.gridTemplateColumns = `repeat(${cols}, minmax(180px, 1fr))`;
-  grid.style.justifyContent = "center";
   grid.style.justifyItems = "center";
   grid.style.gap = elements.length > 8 ? "20px" : "30px";
 
