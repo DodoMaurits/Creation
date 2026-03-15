@@ -598,7 +598,7 @@ body {
   justify-content: center;
   justify-items: center;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 330px));
   max-width: 920px;
   margin: 0 auto;
   animation: resultAppear 0.8s ease;
@@ -617,12 +617,12 @@ body {
 
 .result-box {
   width: 100%;
-  max-width: 220px;
+  max-width: 330px;
   text-align: center;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
