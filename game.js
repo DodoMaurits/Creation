@@ -2260,6 +2260,29 @@ const combinaties = [
         gezet kan worden.`
       }
     }
+  },
+  {
+    input: ["Tand", "Agnathen"],
+    hint: ``,
+    output: [
+      { naam: "Korstmos", icoon: "icons/Korstmos.png", map: "Pril leven", 
+        quote: ``
+      },
+      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Vruchten",
+        quote: ``
+      },
+      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Vruchten",
+        quote: ``
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oervaatplanten", 
+        titel: "Probeer opnieuw in het Siluur",
+        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
+        gezet kan worden.`
+      }
+    }
   }
 ];
 
@@ -2974,7 +2997,6 @@ function renderSide(parentContainer, map, side) {
 
 // ----- HINT ENGINE -----
 function getAvailableHints() {
-  // verzamelt alle hints waarvan combinaties nog niet volledig unlocked zijn
   const availableHints = [];
 
   for (const c of combinaties) {
@@ -3010,9 +3032,17 @@ function getAvailableHints() {
       if (!requirementsMet) continue;
     }
 
+    // -------- THRESHOLD-ELEMENT CHECK --------
+    if (c.uitleg?.thresholdElement) {
+      const needed = c.uitleg.thresholdElement.naam.trim().toLowerCase();
+      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+      if (!normalizedUnlocked.includes(needed)) continue; // hint nog niet tonen
+    }
+
+    // -------- ALS ALLES OK IS --------
     availableHints.push(c.hint);
   }
-
+  
   return availableHints;
 }
 
