@@ -2074,25 +2074,32 @@ const combinaties = [
         <br><br>- Louis Agassiz`
       },
       { naam: "Oercheliceraten", icoon: "icons/Oercheliceraten.png", map: "Geleedpotigen", 
-        quote: ``
+        quote: `The seas of the Cambrian were a theatre of evolutionary invention, 
+        where arthropods in particular explored a bewildering variety of forms
+        <br><br>- Richard Fortey`
       },
       { naam: "Duizendpoten", icoon: "icons/Duizendpoten.png", map: "Geleedpotigen", 
-        quote: ``
+        quote: `The centipede has rhythm and flow in its hundred legs precisely because it does not have to think
+        about it
+        <br><br>- Robert Genn`
       },
       { naam: "Oerkreeftjes", icoon: "icons/Oerkreeftjes.png", map: "Geleedpotigen", 
-        quote: ``
+        quote: `Crustaceans represent one of the most diverse and ecologically important groups of animals in the sea
+        <br><br>- Martin Thiel`
       },
       { naam: "Oerinsecten", icoon: "icons/Oerinsecten.png", map: "Geleedpotigen", 
-        quote: ``
+        quote: `An insect is more complex than a star.. and is a far greater challenge to understand
+        <br><br>- Martin Rees`
       }
     ]
   },
   {
     input: ["Inktvissen", "Schelp"],
-    hint: ``,
+    hint: `Er zijn nog weekdieren zonder schelp...`,
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
-        quote: ``
+        quote: `You don't have to bee Greek to enjoy this one
+        <br><br>- Jeff Smith`
       }
     ]
   },
@@ -2101,7 +2108,7 @@ const combinaties = [
       ["Inktvissen", "Zenuwen"], ["Oerkreeftjes", "Zenuwen"], ["Oerinsecten", "Zenuwen"],
       ["Zwaardstaarten", "Zenuwen"], ["Krill", "Zenuwen"]
     ],
-    hint: ``,
+    hint: `Kijk naar de dieren... sommigen kunnen al kleuren zien.`,
     output: [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
@@ -2128,7 +2135,8 @@ const combinaties = [
         <br><br>- Rick Riordon`
       },
       { naam: "Kleur", icoon: "icons/Kleur.png", map: "Brein",
-        quote: ``
+        quote: `Colour in a picture is like enthusiasm in life
+        <br><br>- Vincent van Gogh`
       }
     ]
   },
