@@ -663,7 +663,7 @@ body {
 
 .result-title {
   font-family: "Cinzel", serif;
-  font-size: clamp(12px, 5vw, 24px);
+  font-size: clamp(24px, 5vw, 24px);
   line-height: 1.2;
   text-align: center;
   white-space: nowrap;
