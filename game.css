@@ -597,7 +597,7 @@ body {
   gap: 40px;
   justify-content: center;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: auto;
   max-width: 1200px;
 }
@@ -627,9 +627,13 @@ body {
 
 /* Animation delay voor stagger effect */
 .result-box:nth-child(1) .result-image { animation-delay: 0s; }
-.result-box:nth-child(2) .result-image { animation-delay: 0.5s; }
-.result-box:nth-child(3) .result-image { animation-delay: 1s; }
-.result-box:nth-child(4) .result-image { animation-delay: 1.5s; }
+.result-box:nth-child(2) .result-image { animation-delay: 0.3s; }
+.result-box:nth-child(3) .result-image { animation-delay: 0.6s; }
+.result-box:nth-child(4) .result-image { animation-delay: 0.9s; }
+.result-box:nth-child(5) .result-image { animation-delay: 1.2s; }
+.result-box:nth-child(6) .result-image { animation-delay: 1.5s; }
+.result-box:nth-child(7) .result-image { animation-delay: 1.8s; }
+.result-box:nth-child(8) .result-image { animation-delay: 2.1s; }
 
 .result-image {
   width: 130px;
