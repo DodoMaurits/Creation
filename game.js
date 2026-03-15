@@ -2283,6 +2283,32 @@ const combinaties = [
         gezet kan worden.`
       }
     }
+  },
+  {
+    input: ["Oerkreeftjes", "Evolutie"],
+    hint: ``,
+    output: [
+      { naam: "Pissebedden", icoon: "icons/Pissebedden.png", map: "Geleedpotigen", 
+        quote: ``
+      },
+      { naam: "Garnalen", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
+        quote: ``
+      },
+      { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
+        quote: ``
+      },
+      { naam: "Krabben", icoon: "icons/Krabben.png", map: "Geleedpotigen",
+        quote: ``
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oervaatplanten", 
+        titel: "Probeer opnieuw in het Siluur",
+        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
+        gezet kan worden.`
+      }
+    }
   }
 ];
 
@@ -2302,7 +2328,8 @@ const groepsIconen = {
   "Brein": "icons/Brein.png",
   "Planten": "icons/Planten.png",
   "Vissen": "icons/Vissen.png",
-  "Geleedpotigen": "icons/Geleedpotigen.png"
+  "Geleedpotigen": "icons/Geleedpotigen.png",
+  "Vruchten": "icons/Vruchten.png"
 };
 
 // ----- STATE -----
