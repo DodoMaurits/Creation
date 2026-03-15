@@ -1927,6 +1927,9 @@ const combinaties = [
     input: ["Oerbilateria", "Bot"],
     hint: `Nu zijn de omstandigheden juist om extra kracht te geven aan de bilateria...`,
     output: [
+      { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
+        quote: ``
+      },
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
         quote: `For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the 
         sea 
@@ -1971,6 +1974,17 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Steenwortelalgen", "Rivier"], ["Steenwortelalgen", "Meer"], ["Steenwortelalgen", "Ven"]
+    ],
+    hint: ``,
+    output: [
+      { naam: "Mos", icoon: "icons/Mos.png", map: "Planten", 
+        quote: ``
+      }
+    ]
+  },
+  {
     input: ["Steenwortelalgen", "Evolutie"],
     hint: `Geaard en geworteld komen sommige planten verder...`,
     output: [
@@ -1981,10 +1995,36 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oertrochozoa", "Evolutie"],
+    hint: ``,
+    output: [
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        quote: ``
+      },
+      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Waterdieren", 
+        quote: ``
+      },
+      { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
+        quote: ``
+      }
+    ]
+  },
+  {
+    input: [
+      ["Agnathen", "Evolutie"], ["Agnathen", "Bot"]
+    ],
+    hint: ``,
+    output: [
+      { naam: "Tand", icoon: "icons/Tand.png", map: "Biologie", 
+        quote: ``
+      }
+    ]
+  },
+  {
     input: [
       ["Agnathen", "Zenuwen"], ["Oergeleedpotigen", "Zenuwen"], ["Trilobieten", "Zenuwen"]
     ],
-    hint: `Hier heb ik lang aan gewerkt... elk nieuw leven zijn eigen binnenwereld.`,
+    hint: `Wat een meesterwerk... elk nieuw leven zijn eigen binnenwereld.`,
     output: [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
@@ -2021,6 +2061,27 @@ const combinaties = [
         nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must 
         have been light to enter it 
         <br><br>- Louis Agassiz`
+      },
+      { naam: "Oercheliceraten", icoon: "icons/Oercheliceraten.png", map: "Geleedpotigen", 
+        quote: ``
+      },
+      { naam: "Duizendpoten", icoon: "icons/Duizendpoten.png", map: "Geleedpotigen", 
+        quote: ``
+      },
+      { naam: "Oerkreeftjes", icoon: "icons/Oerkreeftjes.png", map: "Geleedpotigen", 
+        quote: ``
+      },
+      { naam: "Oerinsecten", icoon: "icons/Oerinsecten.png", map: "Geleedpotigen", 
+        quote: ``
+      }
+    ]
+  },
+  {
+    input: ["Inktvissen", "Schelp"],
+    hint: ``,
+    output: [
+      { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
+        quote: ``
       }
     ]
   },
@@ -2044,6 +2105,24 @@ const combinaties = [
       { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
         quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
         <br><br>- Helen Keller`
+      }
+    ]
+  },
+  {
+    input: ["Oercheliceraten", "Evolutie"],
+    hint: ``,
+    output: [
+      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Geleedpotigen", 
+        quote: ``
+      },
+      { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Geleedpotigen", 
+        quote: ``
+      },
+      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
+        quote: ``
+      },
+      { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
+        quote: ``
       }
     ]
   }
