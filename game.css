@@ -646,7 +646,7 @@ body {
 
 .result-title {
   font-family: "Cinzel", serif;
-  font-size: clamp(18px, 3vw, 40px);
+  font-size: clamp(18px, 2.2vw, 40px);
   letter-spacing: 3px;
   margin-bottom: 10px;
   text-align: center;
