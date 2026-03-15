@@ -596,6 +596,8 @@ body {
   display: grid;
   gap: 40px;
   justify-content: center;
+  justify-items: center;
+  grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
   max-width: 920px;
   margin: 0 auto;
@@ -660,6 +662,8 @@ body {
 }
 
 .result-title {
+  display: block;
+  box-sizing: border-box;
   font-family: "Cinzel", serif;
   font-size: clamp(18px, 2.2vw, 40px);
   letter-spacing: 3px;
@@ -667,7 +671,6 @@ body {
   text-align: center;
   max-width: 100%;
   overflow-wrap: break-word;
-  line-height: 1.1;
   word-break: break-word;
 }
 
