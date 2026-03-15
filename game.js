@@ -2228,7 +2228,7 @@ const combinaties = [
         titel: "Siluur", 
         tekst: "Je moet eerst nog wat meer halen...",
         tijd: 444_000_000,
-        requirements: ["Schorpioenen", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein"
+        requirements: ["Schorpioenen", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
           "Oog", "Smaak", "Kleur", "Tand", "Mos"]
       },
       normal: {
