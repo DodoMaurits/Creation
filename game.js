@@ -2684,7 +2684,8 @@ function renderNewElements(elements) {
     case 10: cols = 5; break;
     default: cols = Math.ceil(Math.sqrt(elements.length));
   }
-  
+
+  grid.style.setProperty("--cols", cols);
   grid.style.justifyItems = "center";
   grid.style.gap = elements.length > 8 ? "20px" : "30px";
 
