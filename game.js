@@ -2265,10 +2265,10 @@ const combinaties = [
     input: ["Tand", "Agnathen"],
     hint: ``,
     output: [
-      { naam: "Oerchondrichthyes", icoon: "icons/Oerchondrichthyes.png", map: "Vissen", 
+      { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
         quote: ``
       },
-      { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen",
+      { naam: "Oerchondrichthyes", icoon: "icons/Oerchondrichthyes.png", map: "Vissen",
         quote: ``
       },
       { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
