@@ -1392,7 +1392,7 @@ const combinaties = [
         titel: "Leven", 
         tekst: "Je moet eerst nog wat meer halen...",
         tijd: 4_400_000_000,
-        requirements: ["Rivier", "Tufsteen", "Koper", "Zure regen", "Kust", "Eiland", 
+        requirements: ["Rivier", "Tufsteen", "Koper", "Zure regen", "Strand", "Eiland", 
           "Roest", "Zand", "Klei", "Glas", "Golf", "Wind", "Zout", "Kalk"]
       },
       normal: {
@@ -2332,7 +2332,9 @@ const combinaties = [
         <br><br>- Epicurus`
       },
       { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
-        quote: ``
+        quote: `Once one has kissed a cadaver's forehead, there always remains something of it on the lips, an infinite
+        bitterness, an aftertaste of nothingness that nothing can erase
+        <br><br>- Gustave Flaubert`
       }
     ]
   },
@@ -2343,7 +2345,9 @@ const combinaties = [
     ],
     output: [
       { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
-        quote: ``
+        quote: `Once one has kissed a cadaver's forehead, there always remains something of it on the lips, an infinite
+        bitterness, an aftertaste of nothingness that nothing can erase
+        <br><br>- Gustave Flaubert`
       }
     ]
   },
