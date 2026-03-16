@@ -1430,7 +1430,12 @@ const combinaties = [
         Ultimately, even a single virus can shut down an entire system 
         <br><br>- Wayne Dyer`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 3_700_000_000
+      }
+    }
   },
   {
     input: [
@@ -1596,7 +1601,12 @@ const combinaties = [
         and each one of our trillions of cells is a colony of bacteria 
         <br><br>- Richard Dawkins`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 3_500_000_000
+      }
+    }
   },
   {
     input: ["Evolutie", "Bacteriën"],
@@ -1612,7 +1622,12 @@ const combinaties = [
         life can go on forever 
         <br><br>- Alexis Carrel`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 1_900_000_000
+      }
+    }
   },
   {
     input: [
@@ -1660,7 +1675,12 @@ const combinaties = [
         generals, fade away. It just divides and becomes two new amoebas 
         <br><br>- George Wald`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 1_800_000_000
+      }
+    }
   },
   {
     input: ["Leca", "Zand"],
@@ -1680,7 +1700,12 @@ const combinaties = [
         quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
         <br><br>- Ernst Haeckel`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 800_000_000
+      }
+    }
   },
   {
     input: ["Leca", "Detritus"],
@@ -1690,7 +1715,12 @@ const combinaties = [
         quote: `Fungi are the interface organisms between life and death 
         <br><br>- Paul Stamets`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 1_100_000_000
+      }
+    }
   },
   {
     input: ["Leca", "Evolutie"],
@@ -1711,7 +1741,12 @@ const combinaties = [
         neither now nor here 
         <br><br>- Graham Swift`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 900_000_000
+      }
+    }
   },
   {
     input: ["Leca", "Blauwalgen"],
@@ -1722,7 +1757,12 @@ const combinaties = [
         history of life 
         <br><br>- Andrew Knoll`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 1_600_000_000
+      }
+    }
   },
   {
     input: ["Amoebe", "Evolutie"],
@@ -1732,7 +1772,12 @@ const combinaties = [
         quote: `Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined 
         <br><br>- Lewis Thomas`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 900_000_000
+      }
+    }
   },
   {
     input: ["Foraminiferen", "Zand"],
@@ -1786,7 +1831,12 @@ const combinaties = [
         foundation of marine life: without them many of the sea's most exquisite species will not survive
         <br><br>- Sheherazade Goldsmith`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 580_000_000
+      }
+    }
   },
   {
     input: ["Archaeplastiden", "Evolutie"],
@@ -1801,7 +1851,12 @@ const combinaties = [
         Earth 
         <br><br>- Peter Raven`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 1_500_000_000
+      }
+    }
   },
   {
     input: ["Spieren", "Leca"],
@@ -1815,7 +1870,12 @@ const combinaties = [
         quote: `We are all worms. But I believe that I am a glow-worm 
         <br><br>- Winston Churchill`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 800_000_000
+      }
+    }
   },
   {
     input: ["Zenuwen", "Sponzen"],
@@ -1884,7 +1944,12 @@ const combinaties = [
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 700_000_000
+      }
+    }
   },
   {
     input: ["Groene algen", "Evolutie"],
@@ -1898,7 +1963,12 @@ const combinaties = [
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 700_000_000
+      }
+    }
   },
   {
     input: ["Oercnidaria", "Evolutie"],
@@ -1917,7 +1987,12 @@ const combinaties = [
         quote: `Thought, like any parasite, cannot exist without a compliant host
         <br><br>- Bernard Beckett`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 580_000_000
+      }
+    }
   },
   {
     input: [
@@ -1958,7 +2033,12 @@ const combinaties = [
         quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
         <br><br>- Charles Darwin`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 580_000_000
+      }
+    }
   },
   {
     input: [
@@ -2104,7 +2184,12 @@ const combinaties = [
         quote: `Every antique farm-house and moss-grown cottage is a picture
         <br><br>- Washington Irving`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 470_000_000
+      }
+    }
   },
   {
     input: ["Steenwortelalgen", "Evolutie"],
@@ -2210,7 +2295,12 @@ const combinaties = [
         quote: `An insect is more complex than a star.. and is a far greater challenge to understand
         <br><br>- Martin Rees`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 490_000_000
+      }
+    }
   },
   {
     input: ["Inktvissen", "Schelp"],
@@ -2220,7 +2310,12 @@ const combinaties = [
         quote: `You don't have to bee Greek to enjoy this one
         <br><br>- Jeff Smith`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 490_000_000
+      }
+    }
   },
   {
     input: [
@@ -2485,6 +2580,9 @@ const combinaties = [
         titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
         gezet kan worden.`
+      },
+      normal: {
+        tijd: 400_000_000
       }
     }
   },
@@ -2543,7 +2641,12 @@ const combinaties = [
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 415_000_000
+      }
+    }
   },
   {
     input: [
@@ -2631,7 +2734,12 @@ const combinaties = [
         beauty and peace come in
         <br><br>- John Muir`
       }
-    ]
+    ],
+    uitleg: {
+      normal: {
+        tijd: 400_000_000
+      }
+    }
   }
 ];
 
