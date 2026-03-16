@@ -2220,7 +2220,8 @@ const combinaties = [
     hint: `Het is tijd voor planten en geleedpotigen om het land te verkennen...`,
     output: [
       { naam: "Oervaatplanten", icoon: "icons/Oervaatplanten.png", map: "Planten", 
-        quote: ``
+        quote: `Nature is painting for us, day after day, pictures of infinite beauty
+        <br><br>- John Ruskin`
       }
     ],
     uitleg: {
@@ -2243,13 +2244,17 @@ const combinaties = [
     hint: `Schimmel heeft nog zo veel potentie...`,
     output: [
       { naam: "Korstmos", icoon: "icons/Korstmos.png", map: "Pril leven", 
-        quote: ``
+        quote: `Fermentation is the exhalation of a substance through the admixture of a ferment which,
+        by virtue of its spirit, penetrates the mass and transforms it into its own nature
+        <br><br>- Andreas Libavius`
       },
       { naam: "Truffels", icoon: "icons/Truffels.png", map: "Vruchten",
-        quote: ``
+        quote: `All fungi are edible. Some fungi are only edible once
+        <br><br>- Terry Pratchett`
       },
       { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Vruchten",
-        quote: ``
+        quote: `Nature alone is antique, and the oldest art a mushroom
+        <br><br>- Thomas Carlyle`
       }
     ],
     uitleg: {
@@ -2263,19 +2268,25 @@ const combinaties = [
   },
   {
     input: ["Tand", "Agnathen"],
-    hint: ``,
+    hint: `Grote vissen zouden het goed doen met tanden.`,
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
-        quote: ``
+        quote: `In order to see a fish you must watch the water
+        <br><br>- Bodhidharma`
       },
       { naam: "Oerchondrichthyes", icoon: "icons/Oerchondrichthyes.png", map: "Vissen",
-        quote: ``
+        quote: `Fishes live in the sea, as men do a-land; the great ones eat up the little ones
+        <br><br>- William Shakespeare`
       },
       { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
-        quote: ``
+        quote: `Ideas are like fish. If you want to catch little fish, you can stay in the shallow water.
+        But if you want to catch the big fish, you've got to go deeper. Down deep, the fish are more powerful and
+        more pure
+        <br><br>- David Lynch`
       },
       { naam: "Longvissen", icoon: "icons/Longvissen.png", map: "Vissen",
-        quote: ``
+        quote: `Our lungs are best when we don't realize they are helping us breathe
+        <br><br>- Lao Tzu`
       }
     ],
     uitleg: {
@@ -2289,19 +2300,25 @@ const combinaties = [
   },
   {
     input: ["Oerkreeftjes", "Evolutie"],
-    hint: ``,
+    hint: `Uit de eerste kreeftachtige verschijnen een hoop herkenbare soorten.`,
     output: [
       { naam: "Pissebedden", icoon: "icons/Pissebedden.png", map: "Geleedpotigen", 
-        quote: ``
+        quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
+        Each tells a story
+        <br><br>- Fennel Hudson`
       },
       { naam: "Garnalen", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
-        quote: ``
+        quote: `“Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
+        <br><br>- Raymond Bauer`
       },
       { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
-        quote: ``
+        quote: `Lobsters are among the most ancient designs in the sea, animals whose basic form has persisted for
+        millions of years
+        <br><br>- Trevor Corson`
       },
       { naam: "Krabben", icoon: "icons/Krabben.png", map: "Geleedpotigen",
-        quote: ``
+        quote: `You cannot teach a crab to walk straight
+        <br><br>- Aristophanes`
       }
     ],
     uitleg: {
