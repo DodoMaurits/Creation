@@ -1423,25 +1423,46 @@ const combinaties = [
   },
   {
     input: [
-      ["Bacteriën", "Kou"], ["Bacteriën", "Radioactiviteit"], ["Bacteriën", "IJs"], ["Bacteriën", "Vuur"], ["Bacteriën", "Lava"],
-      ["Stromatolieten", "Kou"], ["Stromatolieten", "Radioactiviteit"], ["Stromatolieten", "IJs"], ["Stromatolieten", "Vuur"], ["Stromatolieten", "Lava"],
-      ["Blauwalgen", "Kou"], ["Blauwalgen", "Radioactiviteit"], ["Blauwalgen", "IJs"], ["Blauwalgen", "Vuur"], ["Blauwalgen", "Lava"],
-      ["Leca", "Kou"], ["Leca", "Radioactiviteit"], ["Leca", "IJs"], ["Leca", "Vuur"], ["Leca", "Lava"],
-      ["Amoebe", "Kou"], ["Amoebe", "Radioactiviteit"], ["Amoebe", "IJs"], ["Amoebe", "Vuur"], ["Amoebe", "Lava"],
-      ["Foraminiferen", "Kou"], ["Foraminiferen", "Radioactiviteit"], ["Foraminiferen", "IJs"], ["Foraminiferen", "Vuur"], ["Foraminiferen", "Lava"],
-      ["Schimmel", "Kou"], ["Schimmel", "Radioactiviteit"], ["Schimmel", "IJs"], ["Schimmel", "Vuur"], ["Schimmel", "Lava"],
-      ["Sponzen", "Kou"], ["Sponzen", "Radioactiviteit"], ["Sponzen", "IJs"], ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
-      ["Parasieten", "Kou"], ["Parasieten", "Radioactiviteit"], ["Parasieten", "IJs"], ["Parasieten", "Vuur"], ["Parasieten", "Lava"],
-      ["Archaeplastiden", "Kou"], ["Archaeplastiden", "Radioactiviteit"], ["Archaeplastiden", "IJs"], ["Archaeplastiden", "Vuur"], ["Archaeplastiden", "Lava"],
-      ["Koraal", "Kou"], ["Koraal", "Radioactiviteit"], ["Koraal", "IJs"], ["Koraal", "Vuur"], ["Koraal", "Lava"],
-      ["Rode algen", "Kou"], ["Rode algen", "Radioactiviteit"], ["Rode algen", "IJs"], ["Rode algen", "Vuur"], ["Rode algen", "Lava"],
-      ["Groene algen", "Kou"], ["Groene algen", "Radioactiviteit"], ["Groene algen", "IJs"], ["Groene algen", "Vuur"], ["Groene algen", "Lava"],
-      ["Neteldiervoorouder", "Kou"], ["Neteldiervoorouder", "Radioactiviteit"], ["Neteldiervoorouder", "IJs"], ["Neteldiervoorouder", "Vuur"], ["Neteldiervoorouder", "Lava"],
-      ["Oerbilateria", "Kou"], ["Oerbilateria", "Radioactiviteit"], ["Oerbilateria", "IJs"], ["Oerbilateria", "Vuur"], ["Oerbilateria", "Lava"],
-      ["Plakdiertjes", "Kou"], ["Plakdiertjes", "Radioactiviteit"], ["Plakdiertjes", "IJs"], ["Plakdiertjes", "Vuur"], ["Plakdiertjes", "Lava"],
-      ["Roodwieren", "Kou"], ["Roodwieren", "Radioactiviteit"], ["Roodwieren", "IJs"], ["Roodwieren", "Vuur"], ["Roodwieren", "Lava"],
-      ["Steenwortelalgen", "Kou"], ["Steenwortelalgen", "Radioactiviteit"], ["Steenwortelalgen", "IJs"], ["Steenwortelalgen", "Vuur"], ["Steenwortelalgen", "Lava"],
-      ["Groenwieren", "Kou"], ["Groenwieren", "Radioactiviteit"], ["Groenwieren", "IJs"], ["Groenwieren", "Vuur"], ["Groenwieren", "Lava"]
+      ["Bacteriën", "Radioactiviteit"], ["Bacteriën", "IJs"],
+      ["Stromatolieten", "Radioactiviteit"], ["Stromatolieten", "IJs"],
+      ["Blauwalgen", "Radioactiviteit"], ["Blauwalgen", "IJs"],
+      ["Leca", "Radioactiviteit"], ["Leca", "IJs"],
+      ["Amoebe", "Radioactiviteit"], ["Amoebe", "IJs"],
+      ["Foraminiferen", "Radioactiviteit"], ["Foraminiferen", "IJs"],
+      ["Schimmel", "Radioactiviteit"], ["Schimmel", "IJs"],
+      ["Sponzen", "Radioactiviteit"], ["Sponzen", "IJs"],
+      ["Parasieten", "Radioactiviteit"], ["Parasieten", "IJs"],
+      ["Archaeplastiden", "Radioactiviteit"], ["Archaeplastiden", "IJs"],
+      ["Koraal", "Radioactiviteit"], ["Koraal", "IJs"],
+      ["Rode algen", "Radioactiviteit"], ["Rode algen", "IJs"],
+      ["Groene algen", "Radioactiviteit"], ["Groene algen", "IJs"], 
+      ["Oercnidaria", "Radioactiviteit"], ["Oercnidaria", "IJs"],
+      ["Oerbilateria", "Radioactiviteit"], ["Oerbilateria", "IJs"],
+      ["Plakdiertjes", "Radioactiviteit"], ["Plakdiertjes", "IJs"],
+      ["Roodwieren", "Radioactiviteit"], ["Roodwieren", "IJs"],
+      ["Steenwortelalgen", "Radioactiviteit"], ["Steenwortelalgen", "IJs"],
+      ["Groenwieren", "Radioactiviteit"], ["Groenwieren", "IJs"],
+      ["Kwallen", "Radioactiviteit"], ["Kwallen", "IJs"],
+      ["Bloemdieren", "Radioactiviteit"], ["Bloemdieren", "IJs"],
+      ["Zeeanemonen", "Radioactiviteit"], ["Zeeanemonen", "IJs"],
+      ["Oertrochozoa", "Radioactiviteit"], ["Oertrochozoa", "IJs"],
+      ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "IJs"],
+      ["Manteldieren", "Radioactiviteit"], ["Manteldieren", "IJs"],
+      ["Mos", "Radioactiviteit"], ["Mos", "IJs"],
+      ["Oervaatplanten", "Radioactiviteit"], ["Oervaatplanten", "IJs"],
+      ["Korstmos", "Radioactiviteit"], ["Korstmos", "IJs"],
+      ["Truffels", "Radioactiviteit"], ["Truffels", "IJs"],
+      ["Paddenstoelen", "Radioactiviteit"], ["Paddenstoelen", "IJs"],
+
+      ["Agnathen", "Radioactiviteit"],
+      ["Wormen", "Radioactiviteit"],
+      ["Zeesterren", "Radioactiviteit"],
+      ["Beerdiertjes", "Radioactiviteit"],
+      ["Inktvissen", "Radioactiviteit"],
+      ["Oerchondrichthyes", "Radioactiviteit"],
+      ["Oerstraalvinnigen", "Radioactiviteit"],
+      ["Coelacanthen", "Radioactiviteit"],
+      ["Longvissen", "Radioactiviteit"]
     ],
     hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     output: [
@@ -1450,6 +1471,90 @@ const combinaties = [
         we no longer exist 
         <br><br>- Epicurus`
       },
+      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
+        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
+        <br><br>- George Shaw`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Bacteriën", "Vuur"], ["Bacteriën", "Lava"],
+      ["Stromatolieten", "Vuur"], ["Stromatolieten", "Lava"],
+      ["Blauwalgen", "Vuur"], ["Blauwalgen", "Lava"],
+      ["Leca", "Vuur"], ["Leca", "Lava"],
+      ["Amoebe", "Vuur"], ["Amoebe", "Lava"],
+      ["Foraminiferen", "Vuur"], ["Foraminiferen", "Lava"],
+      ["Schimmel", "Vuur"], ["Schimmel", "Lava"],
+      ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
+      ["Parasieten", "Vuur"], ["Parasieten", "Lava"],
+      ["Archaeplastiden", "Vuur"], ["Archaeplastiden", "Lava"],
+      ["Koraal", "Vuur"], ["Koraal", "Lava"],
+      ["Rode algen", "Vuur"], ["Rode algen", "Lava"],
+      ["Groene algen", "Vuur"], ["Groene algen", "Lava"],
+      ["Oercnidaria", "Vuur"], ["Oercnidaria", "Lava"],
+      ["Oerbilateria", "Vuur"], ["Oerbilateria", "Lava"],
+      ["Plakdiertjes", "Vuur"], ["Plakdiertjes", "Lava"],
+      ["Roodwieren", "Vuur"], ["Roodwieren", "Lava"],
+      ["Steenwortelalgen", "Vuur"], ["Steenwortelalgen", "Lava"],
+      ["Groenwieren", "Vuur"], ["Groenwieren", "Lava"],
+      ["Kwallen", "Vuur"], ["Kwallen", "Lava"],
+      ["Bloemdieren", "Vuur"], ["Bloemdieren", "Lava"],
+      ["Wormen", "Vuur"], ["Wormen", "Lava"],
+      ["Zeesterren", "Vuur"], ["Zeesterren", "Lava"],
+      ["Zeeanemonen", "Vuur"], ["Zeeanemonen", "Lava"],
+      ["Oertrochozoa", "Vuur"], ["Oertrochozoa", "Lava"],
+      ["Lancetvisjes", "Vuur"], ["Lancetvisjes", "Lava"],
+      ["Agnathen", "Vuur"], ["Agnathen", "Lava"],
+      ["Manteldieren", "Vuur"], ["Manteldieren", "Lava"],
+      ["Beerdiertjes", "Vuur"], ["Beerdiertjes", "Lava"],
+      ["Mos", "Vuur"], ["Mos", "Lava"],
+      ["Inktvissen", "Vuur"], ["Inktvissen", "Lava"],
+      ["Zeeslakken", "Vuur"], ["Zeeslakken", "Lava"],
+      ["Tweekleppigen", "Vuur"], ["Tweekleppigen", "Lava"],
+      ["Oercheliceraten", "Vuur"], ["Oercheliceraten", "Lava"],
+      ["Duizendpoten", "Vuur"], ["Duizendpoten", "Lava"],
+      ["Oerkreeftjes", "Vuur"], ["Oerkreeftjes", "Lava"],
+      ["Oerinsecten", "Vuur"], ["Oerinsecten", "Lava"],
+      ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
+      ["Spinnen", "Vuur"], ["Spinnen", "Lava"],
+      ["Krill", "Vuur"], ["Krill", "Lava"],
+      ["Pissebedden", "Vuur"], ["Pissebedden", "Lava"],
+      ["Garnalen", "Vuur"], ["Garnalen", "Lava"],
+
+      ["Trilobieten", "Lava"],
+      ["Schorpioenen", "Lava"],
+      ["Zwaardstaarten", "Lava"],
+      ["Kreeften", "Lava"], 
+      ["Krabben", "Lava"]
+    ],
+    output: [
+      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
+        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
+        we no longer exist 
+        <br><br>- Epicurus`
+      },
+      { naam: "As", icoon: "icons/As.png", map: "Vuur", 
+        quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
+        <br><br>- Alexander Anderson`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"], 
+      ["Amoebe", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"], ["Parasieten", "Dood"], 
+      ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"], ["Groene algen", "Dood"], 
+      ["Oercnidaria", "Dood"], ["Oerbilateria", "Dood"], ["Plakdiertjes", "Dood"], ["Roodwieren", "Dood"], 
+      ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"], ["Kwallen", "Dood"], ["Bloemdieren", "Dood"], 
+      ["Wormen", "Dood"], ["Zeesterren", "Dood"], ["Zeeanemonen", "Dood"], ["Oertrochozoa", "Dood"], 
+      ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Manteldieren", "Dood"], ["Beerdiertjes", "Dood"], ["Mos", "Dood"],
+      ["Inktvissen", "Dood"], ["Oercheliceraten", "Dood"], ["Duizendpoten", "Dood"], ["Oerkreeftjes", "Dood"], 
+      ["Oerinsecten", "Dood"], ["Spinnen", "Dood"], ["Krill", "Dood"], ["Oervaatplanten", "Dood"], ["Korstmos", "Dood"], 
+      ["Truffels", "Dood"], ["Paddenstoelen", "Dood"], ["Oerchondrichthyes", "Dood"], ["Oerstraalvinnigen", "Dood"], 
+      ["Coelacanthen", "Dood"], ["Longvissen", "Dood"], ["Pissebedden", "Dood"], ["Garnalen", "Dood"]
+    ],
+    output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
         quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
         <br><br>- George Shaw`
@@ -2106,7 +2211,8 @@ const combinaties = [
   {
     input: [
       ["Inktvissen", "Zenuwen"], ["Oerkreeftjes", "Zenuwen"], ["Oerinsecten", "Zenuwen"],
-      ["Zwaardstaarten", "Zenuwen"], ["Krill", "Zenuwen"]
+      ["Zwaardstaarten", "Zenuwen"], ["Krill", "Zenuwen"], ["Pissebedden", "Zenuwen"], ["Garnalen", "Zenuwen"],
+      ["Kreeften", "Zenuwen"], ["Krabben", "Zenuwen"]
     ],
     hint: `Kijk naar de dieren... sommigen kunnen al kleuren zien.`,
     output: [
@@ -2162,6 +2268,71 @@ const combinaties = [
       { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
         quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
         <br><br>- Helen Keller`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeslakken", "Radioactiviteit"], ["Tweekleppigen", "Radioactiviteit"], ["Nautilussen", "Radioactiviteit"]
+    ],
+    output: [
+      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
+        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
+        we no longer exist 
+        <br><br>- Epicurus`
+      },
+      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
+        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
+        <br><br>- George Shaw`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"]
+    ],
+    output: [
+      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
+        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
+        <br><br>- George Shaw`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Trilobieten", "Radioactiviteit"], ["Trilobieten", "Vuur"],
+      ["Schorpioenen", "Radioactiviteit"], ["Schorpioenen", "Vuur"], 
+      ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Vuur"]
+      ["Kreeften", "Radioactiviteit"], ["Kreeften", "Vuur"]
+      ["Krabben", "Radioactiviteit"], ["Krabben", "Vuur"]
+    ],
+    output: [
+      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
+        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
+        we no longer exist 
+        <br><br>- Epicurus`
+      },
+      { naam: "Karkas", icoon: "icons/Karkas.png", map: "Biologie", 
+        quote: ``
+      }
+    ]
+  },
+  {
+    input: [
+      ["Trilobieten", "Dood"], ["Schorpioenen", "Dood"], ["Zwaardstaarten", "Dood"], ["Kreeften", "Dood"],
+      ["Krabben", "Dood"]
+    ],
+    output: [
+      { naam: "Karkas", icoon: "icons/Karkas.png", map: "Biologie", 
+        quote: ``
       }
     ]
   },
@@ -2329,6 +2500,93 @@ const combinaties = [
         gezet kan worden.`
       }
     }
+  },
+  {
+    input: ["Oervaatplanten", "Evolutie"],
+    hint: `Sommige planten zouden er goed aan doen met grote opperlvaktes meer zonlicht te pakken.`,
+    output: [
+      { naam: "Blad", icoon: "icons/Blad.png", map: "Biologie", 
+        quote: `How beautiful the leaves grow old. How full of light and colour are their last days
+        <br><br>- John Burroughs`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerchondrichthyes", "Zenuwen"], ["Haaien", "Zenuwen"], ["Holocefalen", "Zenuwen"]
+    ],
+    hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
+    output: [
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      },
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordon`
+      },
+      { naam: "Geluid", icoon: "icons/Geluid.png", map: "Brein",
+        quote: `Everything in the world has a spirit which is released by its sound
+        <br><br>- Oskar Fischinger`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "Zenuwen"], ["Coelacanthen", "Zenuwen"], ["Longvissen", "Zenuwen"], 
+      ["Oerchondrostei", "Zenuwen"], ["Oercladistia", "Zenuwen"], ["Oerneopterygen", "Zenuwen"]
+    ],
+    hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
+    output: [
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      },
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordon`
+      },
+      { naam: "Kleur", icoon: "icons/Kleur.png", map: "Brein",
+        quote: `Colour in a picture is like enthusiasm in life
+        <br><br>- Vincent van Gogh`
+      },
+      { naam: "Geluid", icoon: "icons/Geluid.png", map: "Brein",
+        quote: `Everything in the world has a spirit which is released by its sound
+        <br><br>- Oskar Fischinger`
+      }
+    ]
   }
 ];
 
