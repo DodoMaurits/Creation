@@ -1532,12 +1532,15 @@ const combinaties = [
       ["Krill", "Vuur"], ["Krill", "Lava"],
       ["Pissebedden", "Vuur"], ["Pissebedden", "Lava"],
       ["Garnalen", "Vuur"], ["Garnalen", "Lava"],
+      ["Varens", "Vuur"], ["Varens", "Lava"],
 
       ["Trilobieten", "Lava"],
       ["Schorpioenen", "Lava"],
       ["Zwaardstaarten", "Lava"],
       ["Kreeften", "Lava"], 
-      ["Krabben", "Lava"]
+      ["Krabben", "Lava"], 
+      ["Haaien", "Lava"],
+      ["Holocefalen", "Lava"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -1563,7 +1566,7 @@ const combinaties = [
       ["Inktvissen", "Dood"], ["Oercheliceraten", "Dood"], ["Duizendpoten", "Dood"], ["Oerkreeftjes", "Dood"], 
       ["Oerinsecten", "Dood"], ["Spinnen", "Dood"], ["Krill", "Dood"], ["Oervaatplanten", "Dood"], ["Korstmos", "Dood"], 
       ["Truffels", "Dood"], ["Paddenstoelen", "Dood"], ["Oerchondrichthyes", "Dood"], ["Oerstraalvinnigen", "Dood"], 
-      ["Coelacanthen", "Dood"], ["Longvissen", "Dood"], ["Pissebedden", "Dood"], ["Garnalen", "Dood"]
+      ["Coelacanthen", "Dood"], ["Longvissen", "Dood"], ["Pissebedden", "Dood"], ["Garnalen", "Dood"], ["Varens", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
