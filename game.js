@@ -2320,7 +2320,7 @@ const combinaties = [
         we no longer exist 
         <br><br>- Epicurus`
       },
-      { naam: "Karkas", icoon: "icons/Karkas.png", map: "Biologie", 
+      { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
         quote: ``
       }
     ]
@@ -2331,7 +2331,7 @@ const combinaties = [
       ["Krabben", "Dood"]
     ],
     output: [
-      { naam: "Karkas", icoon: "icons/Karkas.png", map: "Biologie", 
+      { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
         quote: ``
       }
     ]
