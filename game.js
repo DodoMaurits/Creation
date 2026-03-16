@@ -2527,6 +2527,21 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerchondrichthyes", "Evolutie"],
+    hint: `We moeten nog iets met chondrichthyes, oftewel kraakbeenvissen...`,
+    output: [
+      { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
+        quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
+        in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
+        <br><br>- Sylvia Earle`
+      },
+      { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
+        quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
+        <br><br>- Peter Last`
+      }
+    ]
+  },
+  {
     input: [
       ["Oerchondrichthyes", "Zenuwen"], ["Haaien", "Zenuwen"], ["Holocefalen", "Zenuwen"]
     ],
