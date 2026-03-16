@@ -19,6 +19,7 @@ const combinaties = [
   {
     input: ["Oerknal", "Kou"],
     hint: `Hm.. Wat zal er gebeuren wanneer energie de ruimte krijgt? Afkoelen dus...`,
+    tijd: 13_800_000_000,
     output: [
       { naam: "Zwaartekracht", icoon: "icons/Zwaartekracht.png", map: "Krachten",
         quote: `Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion 
@@ -57,13 +58,14 @@ const combinaties = [
         <br><br>Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
         elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's 
         op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
-        tijd: 13_800_000_000
+
       }
     }
   },
   {
     input: ["Quarks", "Kou"],
     hint: `Kou remt chaotische energie af... benieuwd wat de kleine bouwstenen gaan doen`,
+    tijd: 13_700_620_000,
     output: [
       { naam: "Atomen", icoon: "icons/Atomen.png", map: "Chemie",
         quote: `In reality, nothing but atoms and the void 
@@ -88,13 +90,13 @@ const combinaties = [
         opkomst van geheel nieuwe vormen van materie. De drijvende kracht achter al deze activiteit is het feit dat 
         elektronen negatieve ladingen hebben en elkaar afstoten, maar ze worden aangetrokken door de positieve ladingen 
         van protonen, hetzij in hun eigen atoom, hetzij in naburige atomen.`,
-        tijd: 13_700_620_000
       }
     }
   },
   {
     input: ["Atomen", "Straling"],
     hint: `Hm.. Wat als de straling sterk genoeg is atomen te splitsen?`,
+    tijd: 13_700_620_000,
     output: [
       { naam: "Radioactiviteit", icoon: "icons/Radioactiviteit.png", map: "Krachten",
         quote: `Nuclear power is one hell of a way to boil water 
@@ -106,7 +108,6 @@ const combinaties = [
         titel: "Radioactiviteit",
         tekst: `Gamma-, röntgen- en hoogenergetische uv-straling zijn zo frequent, dat zij genoeg energie hebben om elektronen
         van atoomkernen te splitsen. Wanneer de frequentie hier hoog genoeg voor is, spreken wij van radioactief.`,
-        tijd: 13_700_620_000
       }
     }
   },
@@ -134,6 +135,7 @@ const combinaties = [
   {
     input: ["Gas", "Zwaartekracht"],
     hint: `Hoe meer opeengepakte massa, hoe groter de kans op een ontploffing`,
+    tijd: 13_600_000_000,
     output: [
       { naam: "Ster", icoon: "icons/Ster.png", map: "Heelal",
         quote: `Every star may be a sun to someone 
@@ -150,13 +152,13 @@ const combinaties = [
         de 10 miljoen graden. Atomen vielen weer uit elkaar en plasma's knetterden weer van elektriciteit, waarbij
         triljoenen protonen zich fuseerden tot heliumkernen. De enorme energie verhit de kern dusdanig dat deze uitzet en 
         tegen de zwaartekracht in duwt. Zie daar, de eerste generatie sterren.`,
-        tijd: 13_600_000_000
       }
     }
   },
   {
     input: ["Ster", "Zwaartekracht"],
     hint: `Uiteindelijk verliest elke ster het gevecht van de natuurkrachten...`,
+    tijd: 13_600_000_000,
     output: [
       { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie",
         quote: `Do not wait to strike till the iron is hot but make it hot by striking 
@@ -183,7 +185,6 @@ const combinaties = [
         <br><br>Als dit niet het geval is, kan de kern in minder dan een seconde door de eigen extreme zwaartekracht met 
         enorm geweld in elkaar smijten, en zo even veel energie produceren als een heel sterrenstelsel, waarbij de 
         laatste zware elementen de ruimte in zijn geslingerd.`,
-        tijd: 13_600_000_000
       }
     }
   },
@@ -250,6 +251,7 @@ const combinaties = [
   {
     input: ["Planeet", "Gas"],
     hint: `Ik ken een paar planeten, dat zijn grote vriendelijke gasreuzen`,
+    tijd: 4_570_000_000,
     output: [
       { naam: "Jupiter", icoon: "icons/Jupiter.png", map: "Heelal",
         quote: `Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... 
@@ -266,7 +268,6 @@ const combinaties = [
       normal: {
         titel: "Gasplaneten",
         tekst: `Onze gasplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
-        tijd: 4_570_000_000
       }
     }
   },
@@ -275,6 +276,7 @@ const combinaties = [
       ["Planeet", "Kou"], ["Planeet", "IJs"]
     ],
     hint: `De schoonheid van sommige planeten wil ik gekoeld bewaard...`,
+    tijd: 4_570_000_000,
     output: [
       { naam: "Neptunus", icoon: "icons/Neptunus.png", map: "Heelal",
         quote: `We see it as Columbus saw America from the coast of Spain. 
@@ -291,13 +293,13 @@ const combinaties = [
       normal: {
         titel: "IJsplaneten",
         tekst: `Onze ijsplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
-        tijd: 4_570_000_000
       }
     }
   },
   {
     input: ["Planeet", "IJzer"],
     hint: `Als ijzer zijn baan om de zon vindt, kan het wel eens iets moois opleveren...`,
+    tijd: 4_570_000_000,
     output: [
       { naam: "Mars", icoon: "icons/Mars.png", map: "Heelal",
         quote: `It was Mars. the God of War, and for me, the fighting man, it had always held the power of 
@@ -324,7 +326,6 @@ const combinaties = [
       normal: {
         titel: "IJzerplaneten",
         tekst: `Onze ijzerplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
-        tijd: 4_570_000_000
       }
     }
   },
@@ -351,6 +352,7 @@ const combinaties = [
   {
     input: ["De Aarde", "Planeet"],
     hint: `De Aarde.. daar past een mooi broertje bij voor de nacht.`,
+    tijd: 4_527_000_000,
     output: [
       { naam: "De Maan", icoon: "icons/Maan.png", map: "Heelal",
         quote: `I always look up at the moon and see it as the single most romantic place within the cosmos 
@@ -365,7 +367,6 @@ const combinaties = [
         grotendeels vloeibaar en slingerde veel materie de ruimte in, die in een baan rond de gehavende Aarde terechtkwam.
         Opnieuw verhitte de Aarde tot temperaturen van wel 230 graden. Al snel klonterde dit materiaal samen tot onze 
         broederplaneet.`, 
-        tijd: 4_527_000_000
       }
     }
   },
@@ -386,6 +387,7 @@ const combinaties = [
       ["Graniet", "Lava"], ["Basalt", "Lava"]
     ],
     hint: `Laat magma de aardkorst in beweging houden...`,
+    tijd: 4_400_000_000,
     output: [
       { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png", map: "Krachten",
         quote: `Loyalties shifting like the earth's tectonic plates ... changing my loves shape 
@@ -405,7 +407,6 @@ const combinaties = [
           werden waterrijke gassen de fragiele atmosfeer in gepompt die na afkoeling de toestand aannamen van 
           vloeibaar water. De Aarde zou bevroren zijn geweest mits lavastromen hun weg naar buiten niet hadden 
           gevonden...`,
-        tijd: 4_400_000_000
       }
     }
   },
@@ -510,6 +511,7 @@ const combinaties = [
       ["IJs", "Warmte"], ["Vuur", "IJs"]
     ],
     hint: `Nu zijn de omstandigheden juist om water te laten vloeien.`,
+    tijd: 4_400_000_000,
     output: [
       { naam: "Water", icoon: "icons/Water.png", map: "Water",
         quote: `Water is the softest thing, yet it can penetrate mountains and earth. 
@@ -521,7 +523,6 @@ const combinaties = [
       threshold: {
         titel: "Water op Aarde", 
         tekst: `Je moet eerst nog wat meer halen...<br>`,
-        tijd: 4_400_000_000,
         requirements: ["Radioactiviteit", "Sterrenstelsel", "Zwart Gat", "Magnetisme",
                        "Neptunus", "Uranus", "Saturnus", "Jupiter",
                        "Mars", "De Aarde", "De Maan", "Venus", "Mercurius", 
@@ -531,7 +532,6 @@ const combinaties = [
         titel: "Water op Aarde",
         tekst: `4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
           van vloeibaar water...`,
-        tijd: 4_400_000_000
       }
     }
   },
@@ -1377,6 +1377,7 @@ const combinaties = [
       ["Bliksem", "Golf"]
     ],
     hint: `Nu zijn de omstandigheden juist.. de vijfde natuurkracht strijdend voor diens voortbestaan.`,
+    tijd: 4_400_000_000,
     output: [
       { naam: "Leven", icoon: "icons/Leven.png", map: "Krachten", 
         quote: `Life is not a problem to be solved, but a reality to be experienced 
@@ -1391,14 +1392,12 @@ const combinaties = [
       threshold: {
         titel: "Leven", 
         tekst: "Je moet eerst nog wat meer halen...",
-        tijd: 4_400_000_000,
         requirements: ["Rivier", "Tufsteen", "Koper", "Zure regen", "Strand", "Eiland", 
           "Roest", "Zand", "Klei", "Glas", "Golf", "Wind", "Zout", "Kalk"]
       },
       normal: {
         titel: "Leven",
         tekst: `Eerste leven`,
-        tijd: 4_400_000_000
       }
     }
   },
@@ -1419,6 +1418,7 @@ const combinaties = [
       ["Luca", "Elektriciteit"], ["Luca", "Leven"]
     ],
     hint: `Een grotere schok is nodig om de motortjes van die zombiecellen te laten blijven draaien...`,
+    tijd: 3_700_000_000,
     output: [
       { naam: "Bacteriën", icoon: "icons/Bacteriën.png", map: "Pril leven", 
         quote: `We are all of us walking communities of bacteria. The world shimmers, a pointillist landscape
@@ -1430,12 +1430,7 @@ const combinaties = [
         Ultimately, even a single virus can shut down an entire system 
         <br><br>- Wayne Dyer`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 3_700_000_000
-      }
-    }
+    ]
   },
   {
     input: [
@@ -1595,22 +1590,19 @@ const combinaties = [
   {
     input: ["Bacteriën", "Bacteriën"],
     hint: `Kolonies bacteriën zo groot als rotsen? Now we're talking.`,
+    tijd: 3_500_000_000,
     output: [
       { naam: "Stromatolieten", icoon: "icons/Stromatolieten.png", map: "Pril leven", 
         quote: `For the first half of geological time our ancestors were bacteria. Most creatures still are bacteria, 
         and each one of our trillions of cells is a colony of bacteria 
         <br><br>- Richard Dawkins`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 3_500_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Evolutie", "Bacteriën"],
     hint: `Bacteriën zijn geavanceerde cellen, maar die cel kan nog veel geavanceerder.`,
+    tijd: 1_900_000_000,
     output: [
       { naam: "Blauwalgen", icoon: "icons/Blauwalgen.png", map: "Pril leven", 
         quote: `No matter how politely one says it, we owe our existence to the farts of blue-green algae 
@@ -1622,12 +1614,7 @@ const combinaties = [
         life can go on forever 
         <br><br>- Alexis Carrel`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 1_900_000_000
-      }
-    }
+    ]
   },
   {
     input: [
@@ -1669,18 +1656,14 @@ const combinaties = [
       ["Leca", "Basalt"], ["Leca", "Klei"], ["Aarde", "Leca"] 
     ],
     hint: `Als zelfs 1 cel kleine voetjes kan hebben, dan leerde het lopen op de bodem.`,
+    tijd: 1_800_000_000,
     output: [
       { naam: "Amoebe", icoon: "icons/Amoebe.png", map: "Pril leven", 
         quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
         generals, fade away. It just divides and becomes two new amoebas 
         <br><br>- George Wald`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 1_800_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Leca", "Zand"],
@@ -1695,36 +1678,29 @@ const combinaties = [
   {
     input: ["Leca", "Silicium"],
     hint: `Het vroegste skelet bestond uit silicium.. en er was maar 1 cel voor nodig.`,
+    tijd: 800_000_000,
     output: [
       { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
         quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
         <br><br>- Ernst Haeckel`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 800_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Leca", "Detritus"],
     hint: `De een zijn dood is de ander zijn brood.. maar wat zijn ze broodnodig.`,
+    tijd: 1_100_000_000,
     output: [
       { naam: "Schimmel", icoon: "icons/Schimmel.png", map: "Pril leven",
         quote: `Fungi are the interface organisms between life and death 
         <br><br>- Paul Stamets`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 1_100_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Leca", "Evolutie"],
     hint: `Schimmel eet dood materiaal, planten hebben fotosynthese, maar welke eerste meercelligen aten leven?`,
+    tijd: 900_000_000,
     output: [
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
         quote: `Thought, like any parasite, cannot exist without a compliant host 
@@ -1741,43 +1717,30 @@ const combinaties = [
         neither now nor here 
         <br><br>- Graham Swift`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 900_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Leca", "Blauwalgen"],
     hint: `Kent u endosymbiose? Het is wat je krijgt als de ene cel in de ander leeft en zo het geheel iets nieuws wordt.`,
+    tijd: 1_600_000_000,
     output: [
       { naam: "Archaeplastiden", icoon: "icons/Archaeplastiden.png", map: "Pril leven", 
         quote: `The origin of plastids within the archaeplastida marked one of the most consequential events in the 
         history of life 
         <br><br>- Andrew Knoll`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 1_600_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Amoebe", "Evolutie"],
     hint: `Als amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
+    tijd: 900_000_000,
     output: [
       { naam: "Slijm", icoon: "icons/Slijm.png", map: "Water", 
         quote: `Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined 
         <br><br>- Lewis Thomas`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 900_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Foraminiferen", "Zand"],
@@ -1825,22 +1788,19 @@ const combinaties = [
       ["Bloemdieren", "Kalk"], ["Bloemdieren", "Bot"]
     ],
     hint: `Wat nou... als sponzen skeletten zouden maken?`,
+    tijd: 580_000_000,
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
         quote: `Coral reefs represent some of the world's most spectacular beauty spots, but they are also the 
         foundation of marine life: without them many of the sea's most exquisite species will not survive
         <br><br>- Sheherazade Goldsmith`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 580_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Archaeplastiden", "Evolutie"],
     hint: `Die plantencellen reageren op licht.. laten we ze verschillende kleuren geven.`,
+    tijd: 1_500_000_000,
     output: [
       { naam: "Rode algen", icoon: "icons/Rode_algen.png", map: "Pril leven", 
         quote: `The red algae represent one of the most ancient lineages of eukaryotic life 
@@ -1851,16 +1811,12 @@ const combinaties = [
         Earth 
         <br><br>- Peter Raven`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 1_500_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Spieren", "Leca"],
     hint: `Laat de eencellige dieren eerst vertakken in twee ideeën over de beweging van hun lichaam.`,
+    tijd: 800_000_000,
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
         quote: `Grip the nettle firmly and it will become a stick with which to beat your enemey 
@@ -1870,12 +1826,7 @@ const combinaties = [
         quote: `We are all worms. But I believe that I am a glow-worm 
         <br><br>- Winston Churchill`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 800_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Zenuwen", "Sponzen"],
@@ -1939,21 +1890,18 @@ const combinaties = [
   {
     input: ["Groene algen", "Kalk"],
     hint: `Ook algen kunnen skeletten maken...`,
+    tijd: 700_000_000,
     output: [
       { naam: "Steenwortelalgen", icoon: "icons/Steenwortelalgen.png", map: "Pril leven", 
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 700_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Groene algen", "Evolutie"],
     hint: `Geef planten ook een lichaam, wier schoonheid ik waardeer.`,
+    tijd: 700_000_000,
     output: [
       { naam: "Groenwieren", icoon: "icons/Groenwieren.png", map: "Planten", 
         quote: `Green is the fresh emblem of well found hopes. In blue the spirit can wander, but in green it can rest 
@@ -1963,16 +1911,12 @@ const combinaties = [
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 700_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Oercnidaria", "Evolutie"],
     hint: `Ik houd van symmetrie, maar kan jij je symmetrische dieren voorstellen?`,
+    tijd: 580_000_000,
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
         quote: `A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive 
@@ -1987,12 +1931,7 @@ const combinaties = [
         quote: `Thought, like any parasite, cannot exist without a compliant host
         <br><br>- Bernard Beckett`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 580_000_000
-      }
-    }
+    ]
   },
   {
     input: [
@@ -2028,17 +1967,13 @@ const combinaties = [
   {
     input: ["Bloemdieren", "Evolutie"],
     hint: `Sommige dieren zijn als bloemen en komen dan tot bloei...`,
+    tijd: 580_000_000,
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
         quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
         <br><br>- Charles Darwin`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 580_000_000
-      }
-    }
+    ]
   },
   {
     input: [
@@ -2126,6 +2061,7 @@ const combinaties = [
   {
     input: ["Oerbilateria", "Bot"],
     hint: `Nu zijn de omstandigheden juist om extra kracht te geven aan de bilateria...`,
+    tijd: 541_000_000,
     output: [
       { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
         quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
@@ -2160,7 +2096,6 @@ const combinaties = [
       threshold: {
         titel: "Cambrische Explosie", 
         tekst: "Je moet eerst nog wat meer halen...",
-        tijd: 541_000_000,
         requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
           "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
           "Dood", "Stromatolieten", "Fotosynthese", "Amoebe", "Foraminiferen", "Stralendiertjes", 
@@ -2170,7 +2105,6 @@ const combinaties = [
       normal: {
         titel: "Cambrische Explosie",
         tekst: `De Cambrscche explosie...`,
-        tijd: 541_000_000
       }
     }
   },
@@ -2179,17 +2113,13 @@ const combinaties = [
       ["Steenwortelalgen", "Rivier"], ["Steenwortelalgen", "Meer"], ["Steenwortelalgen", "Ven"]
     ],
     hint: `Hoe zit het met algen in zoet water?`,
+    tijd: 470_000_000,
     output: [
       { naam: "Mos", icoon: "icons/Mos.png", map: "Planten", 
         quote: `Every antique farm-house and moss-grown cottage is a picture
         <br><br>- Washington Irving`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 470_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Steenwortelalgen", "Evolutie"],
@@ -2270,6 +2200,7 @@ const combinaties = [
   {
     input: ["Oergeleedpotigen", "Evolutie"],
     hint: `Geleedpotigen zouden nog wel eens divers kunnen worden...`,
+    tijd: 490_000_000,
     output: [
       { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotigen", 
         quote: `The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is 
@@ -2295,27 +2226,18 @@ const combinaties = [
         quote: `An insect is more complex than a star.. and is a far greater challenge to understand
         <br><br>- Martin Rees`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 490_000_000
-      }
-    }
+    ]
   },
   {
     input: ["Inktvissen", "Schelp"],
     hint: `Er zijn nog weekdieren zonder schelp...`,
+    tijd: 490_000_000,
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
         quote: `You don't have to bee Greek to enjoy this one
         <br><br>- Jeff Smith`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 490_000_000
-      }
-    }
+    ]
   },
   {
     input: [
@@ -2503,6 +2425,7 @@ const combinaties = [
   {
     input: ["Wortels", "Steenwortelalgen"],
     hint: `Het is tijd voor planten en geleedpotigen om het land te verkennen...`,
+    tijd: 444_000_000,
     output: [
       { naam: "Oervaatplanten", icoon: "icons/Oervaatplanten.png", map: "Planten", 
         quote: `Nature is painting for us, day after day, pictures of infinite beauty
@@ -2513,14 +2436,12 @@ const combinaties = [
       threshold: {
         titel: "Siluur", 
         tekst: "Je moet eerst nog wat meer halen...",
-        tijd: 444_000_000,
         requirements: ["Schorpioenen", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
           "Oog", "Smaak", "Kleur", "Tand", "Mos"]
       },
       normal: {
         titel: "Siluur",
         tekst: `Tijd om het land te verkennen...`,
-        tijd: 444_000_000
       }
     }
   },
@@ -2554,6 +2475,7 @@ const combinaties = [
   {
     input: ["Tand", "Agnathen"],
     hint: `Grote vissen zouden het goed doen met tanden.`,
+    tijd: 400_000_000,
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
         quote: `In order to see a fish you must watch the water
@@ -2580,9 +2502,6 @@ const combinaties = [
         titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
         gezet kan worden.`
-      },
-      normal: {
-        tijd: 400_000_000
       }
     }
   },
@@ -2631,6 +2550,7 @@ const combinaties = [
   {
     input: ["Oerchondrichthyes", "Evolutie"],
     hint: `We moeten nog iets met chondrichthyes, oftewel kraakbeenvissen...`,
+    tijd: 415_000_000,
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
         quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
@@ -2641,12 +2561,7 @@ const combinaties = [
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 415_000_000
-      }
-    }
+    ]
   },
   {
     input: [
@@ -2728,18 +2643,14 @@ const combinaties = [
   {
     input: ["Blad", "Oervaatplanten"],
     hint: `Stengels vol water en bladeren vol energie - een gouden combinatie.`,
+    tijd: 400_000_000,
     output: [
       { naam: "Varens", icoon: "icons/Varens.png", map: "Planten", 
         quote: `Only spread a fern-frond over a man's head and worldly cares are cast out, and freedom and
         beauty and peace come in
         <br><br>- John Muir`
       }
-    ],
-    uitleg: {
-      normal: {
-        tijd: 400_000_000
-      }
-    }
+    ]
   }
 ];
 
@@ -3022,11 +2933,12 @@ function checkCombination() {
   renderNewElements(newElements);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
-  // Update timeline op basis van uitleg
-  if (finalUitleg && finalUitleg.tijd !== undefined) {
-    const eventTime = Math.max(0, Math.min(maxTime, finalUitleg.tijd));
-    const targetTime = Math.min(currentTime, eventTime);
-    animateTimeline(targetTime);
+  // Update timeline op basis van combinatie-tijd
+  const eventTime = firstMatch.tijd;
+  
+  if (eventTime !== undefined && eventTime < currentTime) {
+    const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
+    animateTimeline(clampedTime);
   }
   
   // reset selectie
