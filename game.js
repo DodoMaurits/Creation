@@ -2617,6 +2617,17 @@ const combinaties = [
         <br><br>- Oskar Fischinger`
       }
     ]
+  },
+  {
+    input: ["Blad", "Oervaatplanten"],
+    hint: `Stengels vol water en bladeren vol energie - een gouden combinatie.`,
+    output: [
+      { naam: "Varens", icoon: "icons/Varens.png", map: "Planten", 
+        quote: `Only spread a fern-frond over a man's head and worldly cares are cast out, and freedom and
+        beauty and peace come in
+        <br><br>- John Muir`
+      }
+    ]
   }
 ];
 
