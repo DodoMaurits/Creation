@@ -410,6 +410,17 @@ const combinaties = [
     }
   },
   {
+    input: ["Platentektoniek", "IJzer"],
+    hint: `Al die beweging op dat aardoppervlak, dat zal vast iets doen met de kern.`,
+    output: [
+      { naam: "Magnetisme", icoon: "icons/Magnetisme.png", map: "Krachten",
+        quote: `Electricity and magnetism are those forces of nature by which people who know nothing about electricity
+        and magnetism can explain everything
+        <br><br>- Egon Friedell`
+      }
+    ]
+  },
+  {
     input: ["Platentektoniek", "Lava"],
     hint: `Lava beweegt, dus laat het ook naar boven komen...`,
     output: [
