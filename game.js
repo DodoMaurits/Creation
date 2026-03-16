@@ -1113,7 +1113,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Kust", "Storm"], ["Kust", "Orkaan"]
+      ["Kust", "Storm"], ["Kust", "Orkaan"], ["Strand", "Storm"], ["Strand", "Orkaan"]
     ],
     hint: `Slaat het weer om? Dan wordt de kust als eerste de dupe...`,
     output: [
