@@ -610,7 +610,7 @@ body {
 
 .result-box {
   width: 100%;
-  max-width: 330px;
+  max-width: 180px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -620,11 +620,21 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.result-box.fade-in {
-  opacity: 1;
+.result-box.fade-in { opacity: 1; }
+
+.result-image {
+  width: 130px;
+  height: auto;
+  margin-bottom: 15px;
+  animation: floatSoft 2s ease-in-out infinite;
+  cursor: pointer;
 }
 
-/* Soft floating animatie voor nieuwe elementen */
+.result-image:hover {
+  transform: scale(1.12);  /* licht groter bij hover */
+  transition: transform 0.3s ease;
+}
+
 @keyframes floatSoft {
   0%   { transform: translateY(0px); }
   50%  { transform: translateY(-16px); }
@@ -641,23 +651,10 @@ body {
 .result-box:nth-child(7) .result-image { animation-delay: 1.8s; }
 .result-box:nth-child(8) .result-image { animation-delay: 2.1s; }
 
-.result-image {
-  width: 130px;
-  height: auto;
-  margin-bottom: 15px;
-  animation: floatSoft 2s ease-in-out infinite;
-  cursor: pointer;
-}
-
-.result-image:hover {
-  transform: scale(1.12);  /* licht groter bij hover */
-  transition: transform 0.3s ease;
-}
-
 .result-title {
   font-family: "Cinzel", serif;
   font-size: clamp(24px, 5vw, 24px);
-  line-height: 1.2;
+  letter-spacing: 3px;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
