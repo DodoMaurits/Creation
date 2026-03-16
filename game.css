@@ -376,29 +376,6 @@ body {
   transform: translate(-50%, -50%); /* center horizontaal en verticaal op deze positie */
 }
 
-/* ---------------- RESULTAAT COMBINATIE ---------------- */
-#result-overlay {
-  position: fixed;
-  inset: 0;
-  background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
-    url("afb/beginscherm.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-  padding: 60px 20px;
-  box-sizing: border-box;
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
-}
-
-#result-overlay.visible {
-  opacity: 1;
-}
-
 /* ---------------- INFO BUTTON ---------------- */
 .info-button {
   position: absolute;   /* relatief aan overlay */
@@ -592,27 +569,43 @@ body {
 }
 
 /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
+#result-overlay {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
+    url("afb/beginscherm.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+#result-overlay.visible {
+  opacity: 1;
+}
+
 .result-grid {
   display: grid;
   gap: 40px;
   justify-content: center;
   justify-items: center;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 330px));
-  max-width: 920px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(var(--cols), 180px);
+  width: fit-content;
   margin: 0 auto;
   animation: resultAppear 0.8s ease;
 }
 
 @keyframes resultAppear {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .result-box {
