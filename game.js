@@ -2323,7 +2323,8 @@ const combinaties = [
       ["Schorpioenen", "Radioactiviteit"], ["Schorpioenen", "Vuur"], 
       ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Vuur"],
       ["Kreeften", "Radioactiviteit"], ["Kreeften", "Vuur"],
-      ["Krabben", "Radioactiviteit"], ["Krabben", "Vuur"]
+      ["Krabben", "Radioactiviteit"], ["Krabben", "Vuur"],
+      ["Haaien", "Radioactiviteit"], ["Holocefalen", "Vuur"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2341,7 +2342,7 @@ const combinaties = [
   {
     input: [
       ["Trilobieten", "Dood"], ["Schorpioenen", "Dood"], ["Zwaardstaarten", "Dood"], ["Kreeften", "Dood"],
-      ["Krabben", "Dood"]
+      ["Krabben", "Dood"], ["Haaien", "Dood"], ["Holocefalen", "Dood"]
     ],
     output: [
       { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
