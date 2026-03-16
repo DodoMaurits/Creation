@@ -2321,8 +2321,8 @@ const combinaties = [
     input: [
       ["Trilobieten", "Radioactiviteit"], ["Trilobieten", "Vuur"],
       ["Schorpioenen", "Radioactiviteit"], ["Schorpioenen", "Vuur"], 
-      ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Vuur"]
-      ["Kreeften", "Radioactiviteit"], ["Kreeften", "Vuur"]
+      ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Vuur"],
+      ["Kreeften", "Radioactiviteit"], ["Kreeften", "Vuur"],
       ["Krabben", "Radioactiviteit"], ["Krabben", "Vuur"]
     ],
     output: [
