@@ -3426,7 +3426,7 @@ const combinaties = [
         <br><br>- Fennel Hudson`
       },
       { naam: "Garnalen", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
-        quote: `“Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
+        quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
         <br><br>- Raymond Bauer`
       },
       { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
@@ -3600,7 +3600,7 @@ const combinaties = [
     input: [
       ["Oerstraalvinnigen", "Wormen"], ["Oerstraalvinnigen", "Oertrochozoa"], ["Oerstraalvinnigen", "Agnathen"], 
       ["Oerstraalvinnigen", "Oergeleedpotigen"], ["Oerstraalvinnigen", "Manteldieren"], 
-      ["Oerstraalvinnigen", "Beerdiertjes"], ["Oerstraalvinnigen", "Trilobieten"], ["Oerstraalvinnigen", "Oerkreeftjes"]
+      ["Oerstraalvinnigen", "Beerdiertjes"], ["Oerstraalvinnigen", "Trilobieten"], ["Oerstraalvinnigen", "Oerkreeftjes"],
       ["Oerstraalvinnigen", "Krill"], ["Oerstraalvinnigen", "Pissebedden"], ["Oerstraalvinnigen", "Garnalen"]
     ],
     output: [
@@ -3645,7 +3645,7 @@ const combinaties = [
     input: [
       ["Coelacanthen", "Wormen"], ["Coelacanthen", "Oertrochozoa"], ["Coelacanthen", "Lancetvisjes"], 
       ["Coelacanthen", "Agnathen"], ["Coelacanthen", "Oergeleedpotigen"], ["Coelacanthen", "Manteldieren"], 
-      ["Coelacanthen", "Beerdiertjes"], ["Coelacanthen", "Trilobieten"], ["Coelacanthen", "Oerkreeftjes"]
+      ["Coelacanthen", "Beerdiertjes"], ["Coelacanthen", "Trilobieten"], ["Coelacanthen", "Oerkreeftjes"],
       ["Coelacanthen", "Krill"], ["Coelacanthen", "Garnalen"]
     ],
     output: [
@@ -3741,7 +3741,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Garnalen", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
-        quote: `“Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
+        quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
         <br><br>- Raymond Bauer`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
@@ -3759,7 +3759,7 @@ const combinaties = [
     input: ["Garnalen", "Tweekleppigen"],
     output: [
       { naam: "Garnalen", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
-        quote: `“Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
+        quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
         <br><br>- Raymond Bauer`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
@@ -3782,7 +3782,7 @@ const combinaties = [
       ["Kreeften", "Bacteriën"], ["Kreeften", "Blauwalgen"], ["Kreeften", "Leca"], ["Kreeften", "Amoeben"],
       ["Kreeften", "Foraminiferen"], ["Kreeften", "Stralendiertjes"], ["Kreeften", "Wormen"], ["Kreeften", "Oertrochozoa"],
       ["Kreeften", "Lancetvisjes"], ["Kreeften", "Oergeleedpotigen"], ["Kreeften", "Beerdiertjes"], 
-      ["Kreeften", "Oerkreefjtjes"], ["Kreeften", "Oerinsecten"], ["Kreeften", "Zwaardstaarten"], ["Kreeften", "Krill"],
+      ["Kreeften", "Oerkreeftjes"], ["Kreeften", "Oerinsecten"], ["Kreeften", "Zwaardstaarten"], ["Kreeften", "Krill"],
       ["Kreeften", "Pissebedden"], ["Kreeften", "Garnalen"], ["Kreeften", "Krabben"]
     ],
     output: [
