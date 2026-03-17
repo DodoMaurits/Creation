@@ -1735,21 +1735,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"],
-      ["Amoeben", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"],
-      ["Parasieten", "Dood"], ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"],
-      ["Groene algen", "Dood"], ["Neteldiervoorouder", "Dood"], ["Oerbilateria", "Dood"],
-      ["Roodwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"]
-    ],
-    output: [
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      }
-    ]
-  },
-  {
     input: ["Stromatolieten", "Detritus"],
     output: [
       { naam: "Stromatolieten", icoon: "icons/Stromatolieten.png", map: "Pril leven", 
