@@ -1438,7 +1438,7 @@ const combinaties = [
       ["Stromatolieten", "Radioactiviteit"], ["Stromatolieten", "IJs"],
       ["Blauwalgen", "Radioactiviteit"], ["Blauwalgen", "IJs"],
       ["Leca", "Radioactiviteit"], ["Leca", "IJs"],
-      ["Amoebe", "Radioactiviteit"], ["Amoebe", "IJs"],
+      ["Amoeben", "Radioactiviteit"], ["Amoeben", "IJs"],
       ["Foraminiferen", "Radioactiviteit"], ["Foraminiferen", "IJs"],
       ["Schimmel", "Radioactiviteit"], ["Schimmel", "IJs"],
       ["Sponzen", "Radioactiviteit"], ["Sponzen", "IJs"],
@@ -1494,7 +1494,7 @@ const combinaties = [
       ["Stromatolieten", "Vuur"], ["Stromatolieten", "Lava"],
       ["Blauwalgen", "Vuur"], ["Blauwalgen", "Lava"],
       ["Leca", "Vuur"], ["Leca", "Lava"],
-      ["Amoebe", "Vuur"], ["Amoebe", "Lava"],
+      ["Amoeben", "Vuur"], ["Amoeben", "Lava"],
       ["Foraminiferen", "Vuur"], ["Foraminiferen", "Lava"],
       ["Schimmel", "Vuur"], ["Schimmel", "Lava"],
       ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
@@ -1557,7 +1557,7 @@ const combinaties = [
   {
     input: [
       ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"], 
-      ["Amoebe", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"], ["Parasieten", "Dood"], 
+      ["Amoeben", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"], ["Parasieten", "Dood"], 
       ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"], ["Groene algen", "Dood"], 
       ["Oercnidaria", "Dood"], ["Oerbilateria", "Dood"], ["Plakdiertjes", "Dood"], ["Roodwieren", "Dood"], 
       ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"], ["Kwallen", "Dood"], ["Bloemdieren", "Dood"], 
@@ -1639,7 +1639,7 @@ const combinaties = [
   {
     input: [
       ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"],
-      ["Amoebe", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"],
+      ["Amoeben", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"],
       ["Parasieten", "Dood"], ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"],
       ["Groene algen", "Dood"], ["Neteldiervoorouder", "Dood"], ["Oerbilateria", "Dood"],
       ["Roodwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"]
@@ -1658,7 +1658,7 @@ const combinaties = [
     hint: `Als zelfs 1 cel kleine voetjes kan hebben, dan leerde het lopen op de bodem.`,
     tijd: 1_800_000_000,
     output: [
-      { naam: "Amoebe", icoon: "icons/Amoebe.png", map: "Pril leven", 
+      { naam: "Amoeben", icoon: "icons/Amoeben.png", map: "Pril leven", 
         quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
         generals, fade away. It just divides and becomes two new amoebas 
         <br><br>- George Wald`
@@ -1732,8 +1732,8 @@ const combinaties = [
     ]
   },
   {
-    input: ["Amoebe", "Evolutie"],
-    hint: `Als amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
+    input: ["Amoeben", "Evolutie"],
+    hint: `Als Amoebenn samenkomen gaan ze functioneren als één grote zwam van...`,
     tijd: 900_000_000,
     output: [
       { naam: "Slijm", icoon: "icons/Slijm.png", map: "Water", 
@@ -2098,7 +2098,7 @@ const combinaties = [
         tekst: "Je moet eerst nog wat meer halen...",
         requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
           "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
-          "Dood", "Stromatolieten", "Fotosynthese", "Amoebe", "Foraminiferen", "Stralendiertjes", 
+          "Dood", "Stromatolieten", "Fotosynthese", "Amoeben", "Foraminiferen", "Stralendiertjes", 
           "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Schelp", "Rif", 
           "Druk", "Tast", "Steenwortelalgen", "Kwallen", "Zeeanemonen", "Wormen", "Zeesterren"]
       },
