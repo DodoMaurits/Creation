@@ -1440,6 +1440,7 @@ const combinaties = [
       ["Leca", "Radioactiviteit"], ["Leca", "IJs"],
       ["Amoeben", "Radioactiviteit"], ["Amoeben", "IJs"],
       ["Foraminiferen", "Radioactiviteit"], ["Foraminiferen", "IJs"],
+      ["Stralendiertjes", "Radioactiviteit"], ["Stralendiertjes", "IJs"],
       ["Schimmel", "Radioactiviteit"], ["Schimmel", "IJs"],
       ["Sponzen", "Radioactiviteit"], ["Sponzen", "IJs"],
       ["Parasieten", "Radioactiviteit"], ["Parasieten", "IJs"],
@@ -1460,7 +1461,6 @@ const combinaties = [
       ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "IJs"],
       ["Manteldieren", "Radioactiviteit"], ["Manteldieren", "IJs"],
       ["Mos", "Radioactiviteit"], ["Mos", "IJs"],
-      ["Oervaatplanten", "Radioactiviteit"], ["Oervaatplanten", "IJs"],
       ["Korstmos", "Radioactiviteit"], ["Korstmos", "IJs"],
       ["Truffels", "Radioactiviteit"], ["Truffels", "IJs"],
       ["Paddenstoelen", "Radioactiviteit"], ["Paddenstoelen", "IJs"],
@@ -1470,10 +1470,19 @@ const combinaties = [
       ["Zeesterren", "Radioactiviteit"],
       ["Beerdiertjes", "Radioactiviteit"],
       ["Inktvissen", "Radioactiviteit"],
+      ["Oercheliceraten", "Radioactiviteit"],
+      ["Duizendpoten", "Radioactiviteit"],
+      ["Oerkreeftjes", "Radioactiviteit"],
+      ["Oerinsecten", "Radioactiviteit"],
+      ["Spinnen", "Radioactiviteit"],
+      ["Krill", "Radioactiviteit"],
+      ["Oervaatplanten", "Radioactiviteit"],
       ["Oerchondrichthyes", "Radioactiviteit"],
       ["Oerstraalvinnigen", "Radioactiviteit"],
       ["Coelacanthen", "Radioactiviteit"],
-      ["Longvissen", "Radioactiviteit"]
+      ["Longvissen", "Radioactiviteit"],
+      ["Pissebedden", "Radioactiviteit"],
+      ["Garnalen", "Radioactiviteit"]
     ],
     hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     output: [
@@ -1496,6 +1505,7 @@ const combinaties = [
       ["Leca", "Vuur"], ["Leca", "Lava"],
       ["Amoeben", "Vuur"], ["Amoeben", "Lava"],
       ["Foraminiferen", "Vuur"], ["Foraminiferen", "Lava"],
+      ["Stralendiertjes", "Vuur"], ["Stralendiertjes", "Lava"],
       ["Schimmel", "Vuur"], ["Schimmel", "Lava"],
       ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
       ["Parasieten", "Vuur"], ["Parasieten", "Lava"],
@@ -1530,10 +1540,16 @@ const combinaties = [
       ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
       ["Spinnen", "Vuur"], ["Spinnen", "Lava"],
       ["Krill", "Vuur"], ["Krill", "Lava"],
+      ["Oervaatplanten", "Vuur"], ["Oervaatplanten", "Lava"],
+      ["Oerchondrichthyes", "Vuur"], ["Oerchondrichthyes", "Lava"],
+      ["Oerstraalvinnigen", "Vuur"], ["Oerstraalvinnigen", "Lava"],
+      ["Coelacanthen", "Vuur"], ["Coelacanthen", "Lava"],
+      ["Longvissen", "Vuur"], ["Longvissen", "Lava"],
       ["Pissebedden", "Vuur"], ["Pissebedden", "Lava"],
       ["Garnalen", "Vuur"], ["Garnalen", "Lava"],
       ["Varens", "Vuur"], ["Varens", "Lava"],
 
+      ["Oergeleedpotigen", "Lava"],
       ["Trilobieten", "Lava"],
       ["Schorpioenen", "Lava"],
       ["Zwaardstaarten", "Lava"],
@@ -1556,17 +1572,18 @@ const combinaties = [
   },
   {
     input: [
-      ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"], 
-      ["Amoeben", "Dood"], ["Foraminiferen", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"], ["Parasieten", "Dood"], 
-      ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"], ["Groene algen", "Dood"], 
-      ["Oercnidaria", "Dood"], ["Oerbilateria", "Dood"], ["Plakdiertjes", "Dood"], ["Roodwieren", "Dood"], 
-      ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"], ["Kwallen", "Dood"], ["Bloemdieren", "Dood"], 
-      ["Wormen", "Dood"], ["Zeesterren", "Dood"], ["Zeeanemonen", "Dood"], ["Oertrochozoa", "Dood"], 
-      ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Manteldieren", "Dood"], ["Beerdiertjes", "Dood"], ["Mos", "Dood"],
-      ["Inktvissen", "Dood"], ["Oercheliceraten", "Dood"], ["Duizendpoten", "Dood"], ["Oerkreeftjes", "Dood"], 
-      ["Oerinsecten", "Dood"], ["Spinnen", "Dood"], ["Krill", "Dood"], ["Oervaatplanten", "Dood"], ["Korstmos", "Dood"], 
-      ["Truffels", "Dood"], ["Paddenstoelen", "Dood"], ["Oerchondrichthyes", "Dood"], ["Oerstraalvinnigen", "Dood"], 
-      ["Coelacanthen", "Dood"], ["Longvissen", "Dood"], ["Pissebedden", "Dood"], ["Garnalen", "Dood"], ["Varens", "Dood"]
+      ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"], ["Amoeben", "Dood"], 
+      ["Foraminiferen", "Dood"], ["Stralendiertjes", "Dood"], ["Schimmel", "Dood"], ["Sponzen", "Dood"], 
+      ["Parasieten", "Dood"], ["Archaeplastiden", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"], 
+      ["Groene algen", "Dood"], ["Oercnidaria", "Dood"], ["Oerbilateria", "Dood"], ["Plakdiertjes", "Dood"], 
+      ["Roodwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"], ["Kwallen", "Dood"], 
+      ["Bloemdieren", "Dood"], ["Wormen", "Dood"], ["Zeesterren", "Dood"], ["Zeeanemonen", "Dood"], 
+      ["Oertrochozoa", "Dood"], ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Oergeleedpotigen", "Dood"], ["Manteldieren", "Dood"], 
+      ["Beerdiertjes", "Dood"], ["Mos", "Dood"], ["Inktvissen", "Dood"], ["Oercheliceraten", "Dood"], 
+      ["Duizendpoten", "Dood"], ["Oerkreeftjes", "Dood"], ["Oerinsecten", "Dood"], ["Spinnen", "Dood"], ["Krill", "Dood"], 
+      ["Oervaatplanten", "Dood"], ["Korstmos", "Dood"], ["Truffels", "Dood"], ["Paddenstoelen", "Dood"], 
+      ["Oerchondrichthyes", "Dood"], ["Oerstraalvinnigen", "Dood"], ["Coelacanthen", "Dood"], ["Longvissen", "Dood"], 
+      ["Pissebedden", "Dood"], ["Garnalen", "Dood"], ["Varens", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2339,6 +2356,7 @@ const combinaties = [
   },
   {
     input: [
+      ["Oergeleedpotigen", "Radioactiviteit"], ["Oergeleedpotigen", "Vuur"],
       ["Trilobieten", "Radioactiviteit"], ["Trilobieten", "Vuur"],
       ["Schorpioenen", "Radioactiviteit"], ["Schorpioenen", "Vuur"], 
       ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Vuur"],
@@ -2361,8 +2379,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Trilobieten", "Dood"], ["Schorpioenen", "Dood"], ["Zwaardstaarten", "Dood"], ["Kreeften", "Dood"],
-      ["Krabben", "Dood"], ["Haaien", "Dood"], ["Holocefalen", "Dood"]
+      ["Oergeleedpotigen", "Dood"], ["Trilobieten", "Dood"], ["Schorpioenen", "Dood"], ["Zwaardstaarten", "Dood"], 
+      ["Kreeften", "Dood"], ["Krabben", "Dood"], ["Haaien", "Dood"], ["Holocefalen", "Dood"]
     ],
     output: [
       { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
