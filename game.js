@@ -2030,7 +2030,7 @@ const combinaties = [
     tijd: 800_000_000,
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
-        quote: `Grip the nettle firmly and it will become a stick with which to beat your enemey 
+        quote: `Grip the nettle firmly and it will become a stick with which to beat your enemy 
         <br><br>- Isaac Asimov`
       },
       { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
@@ -2101,7 +2101,7 @@ const combinaties = [
   {
     input: [
       ["Rode algen", "Koraal"], ["Groene algen", "Koraal"], ["Roodwieren", "Koraal"], ["Groenwieren", "Koraal"]
-    ].
+    ],
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
         quote: `Coral reefs represent some of the world's most spectacular beauty spots, but they are also the 
@@ -2145,7 +2145,7 @@ const combinaties = [
     input: [
       ["Oercnidaria", "Bacteriën"], ["Oercnidaria", "Blauwalgen"], ["Oercnidaria", "Leca"], ["Oercnidaria", "Amoeben"],
       ["Oercnidaria", "Foraminiferen"], ["Oercnidaria", "Stralendiertjes"]
-    ].
+    ],
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
         quote: `Grip the nettle firmly and it will become a stick with which to beat your enemey 
@@ -2198,7 +2198,7 @@ const combinaties = [
     input: [
       ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Blauwalgen"], ["Oerbilateria", "Leca"], ["Oerbilateria", "Amoeben"],
       ["Oerbilateria", "Foraminiferen"], ["Oerbilateria", "Stralendiertjes"]
-    ].
+    ],
     output: [
       { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
         quote: `We are all worms. But I believe that I am a glow-worm 
@@ -2438,7 +2438,7 @@ const combinaties = [
       },
       normal: {
         titel: "Cambrische Explosie",
-        tekst: `De Cambrscche explosie...`,
+        tekst: `De Cambriscche explosie...`,
       }
     }
   },
