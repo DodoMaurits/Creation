@@ -4747,7 +4747,7 @@ function renderSide(parentContainer, map, side) {
 
   // Layout instellen
   if (!isMobile) {
-    if (totalElements > 16) {
+    if (totalElements >= 17 && totalElements <=25) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
       grid.style.rowGap = "15px";
