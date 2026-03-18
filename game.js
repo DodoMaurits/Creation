@@ -2024,6 +2024,16 @@ const combinaties = [
     ]
   },
   {
+    input: ["Aarde", "Aarde"],
+    hint: `Een landschap heeft heel wat voeten in de aarde.`,
+    output: [
+      { naam: "Veld", icoon: "icons/Veld.png", map: "Landschap",
+        quote: `Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and animals
+        <br><br>- Aldo Leopold`
+      }
+    ]
+  },
+  {
     input: ["Gist", "Glucose"],
     hint: `Gesuikerde schimmels.. dat kan niet goed zijn voor het brein.`,
     output: [
@@ -3356,6 +3366,15 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: ["Spinnen", "Glucose"],
+    output: [
+      { naam: "Zijde", icoon: "icons/Zijde.png", map: "Biologie", 
+        quote: `Silk does for the body what diamonds do for the hand
+        <br><br>- Oscar de la Renta`
       }
     ]
   },
