@@ -1947,19 +1947,11 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Weefsel", "Evolutie"], ["Weefsel", "Leca"]
-    ],
-    hint: `Meercelligheid heeft als voordeel dat het kan specialiseren in bewegen en de directe omgeving meten.`,
+    input: ["Schimmel", "Glucose"],
     output: [
-      { naam: "Spieren", icoon: "icons/Spieren.png", map: "Biologie", 
-        quote: `The muscles are the instruments of movement, and the bones are the levers 
-        <br><br>- Leonardo da Vinci`
-      },
-      { naam: "Zenuwen", icoon: "icons/Zenuwen.png", map: "Biologie", 
-        quote: `With the nervous system intact the reactions of the various parts of that system, the 'simple reflexes', 
-        are ever combined into great unitary harmonies 
-        <br><br>- Charles Sherrington`
+      { naam: "Gist", icoon: "icons/Gist.png", map: "Pril leven",
+        quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
+        <br><br>- Ralph Emerson`
       }
     ]
   },
@@ -1975,6 +1967,23 @@ const combinaties = [
         quote: `Coral reefs represent some of the world's most spectacular beauty spots, but they are also the 
         foundation of marine life: without them many of the sea's most exquisite species will not survive
         <br><br>- Sheherazade Goldsmith`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Weefsel", "Evolutie"], ["Weefsel", "Leca"]
+    ],
+    hint: `Meercelligheid heeft als voordeel dat het kan specialiseren in bewegen en de directe omgeving meten.`,
+    output: [
+      { naam: "Spieren", icoon: "icons/Spieren.png", map: "Biologie", 
+        quote: `The muscles are the instruments of movement, and the bones are the levers 
+        <br><br>- Leonardo da Vinci`
+      },
+      { naam: "Zenuwen", icoon: "icons/Zenuwen.png", map: "Biologie", 
+        quote: `With the nervous system intact the reactions of the various parts of that system, the 'simple reflexes', 
+        are ever combined into great unitary harmonies 
+        <br><br>- Charles Sherrington`
       }
     ]
   },
@@ -2008,6 +2017,15 @@ const combinaties = [
         quote: `Even the simplest green algae possess the fundamental machinery of photosynthesis that sustains life on 
         Earth 
         <br><br>- Peter Raven`
+      }
+    ]
+  },
+  {
+    input: ["Gist", "Glucose"],
+    output: [
+      { naam: "Alcohol", icoon: "icons/Alcohol.png", map: "Dranken",
+        quote: `Reality is an illusion that occurs duo to the lack of alcohol
+        <br><br>- W.C. Fields`
       }
     ]
   },
@@ -3980,7 +3998,8 @@ const groepsIconen = {
   "Planten": "icons/Planten.png",
   "Vissen": "icons/Vissen.png",
   "Geleedpotigen": "icons/Geleedpotigen.png",
-  "Vruchten": "icons/Vruchten.png"
+  "Vruchten": "icons/Vruchten.png",
+  "Dranken": "icons/Dranken.png"
 };
 
 // ----- STATE -----
