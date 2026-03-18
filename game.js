@@ -4058,6 +4058,16 @@ const combinaties = [
     ]
   },
   {
+    input: ["Veen", "Druk"],
+    hint: `Met vegetatie onder druk groeit brandstof als kool.`,
+    output: [
+      { naam: "Bruinkool", icoon: "icons/Bruinkool.png", map: "Aarde", 
+        quote: `Even coal shimmers in the light
+        <br><br>- Jocelyn Murray`
+      }
+    ]
+  },
+  {
     input: ["Blad", "Oervaatplanten"],
     hint: `Stengels vol water en bladeren vol energie - een gouden combinatie.`,
     tijd: 400_000_000,
