@@ -457,7 +457,7 @@ const combinaties = [
         quote: `The gases that igneous rocks contain, probably as essential features of the molten magma 
         <br><br>- A.J. Grenville`
       },
-      { naam: "Kwarts", icoon: "icons/Kwarts.png", map: "Aarde",
+      { naam: "Kwarts", icoon: "icons/Kwarts.png", map: "Chemie",
         quote: `Quartz is as hard as anything it is likely to meet with in use 
         <br><br>- Frank Wade`
       },
