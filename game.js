@@ -1866,7 +1866,7 @@ const combinaties = [
   },
   {
     input: ["Amoeben", "Evolutie"],
-    hint: `Als Amoebenn samenkomen gaan ze functioneren als één grote zwam van...`,
+    hint: `Als Amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
     tijd: 900_000_000,
     output: [
       { naam: "Slijm", icoon: "icons/Slijm.png", map: "Water", 
