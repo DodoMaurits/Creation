@@ -1865,7 +1865,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Amoeben", "Evolutie"],
+    input: [
+      ["Amoeben", "Evolutie"], ["Amoeben", "Amoeben"]
+    ],
     hint: `Als Amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
     tijd: 900_000_000,
     output: [
