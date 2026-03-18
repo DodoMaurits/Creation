@@ -1211,7 +1211,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Kalk", "Warmte"], ["Kalk", "Zee"], ["Kalk", "Zand"]
+      ["Kalk", "Warmte"], ["Kalk", "Zee"], ["Kalk", "Zand"], ["Druk", "Kalk"], ["Druk", "Schelp"], ["Druk", "Koraal"]
     ],
     hint: `Tot op het bot verkalken... dat wordt weer steen.`,
     output: [
@@ -2238,6 +2238,27 @@ const combinaties = [
     ]
   },
   {
+    input: ["Druk", "Detritus"],
+    hint: `Organisch materiaal zinkt naar de bodem en komt onder hoge druk te staan.`,
+    output: [
+      { naam: "Aardolie", icoon: "icons/Aardolie.png", map: "Water", 
+        quote: `Petroleum is the product of a distillation from great depth and issues from the primitive rocks
+        beneath which the forces of all volcanic action lie
+        <br><br>- Alexander von Humboldt`
+      }
+    ]
+  },
+  {
+    input: ["Druk", "Foraminiferen"],
+    hint: `Die kleine schelpjes van foraminiferen leveren onder druk ook iets moois op.`,
+    output: [
+      { naam: "Krijt", icoon: "icons/Krijt.png", map: "Aarde", 
+        quote: `Teachers can change lives with just the right mix of chalk and challenges
+        <br><br>- Joyce Meyer`
+      }
+    ]
+  },
+  {
     input: [
       ["Kwallen", "Bacteriën"], ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], ["Kwallen", "Amoeben"],
       ["Kwallen", "Foraminiferen"], ["Kwallen", "Stralendiertjes"], ["Kwallen", "Wormen"], ["Kwallen", "Beerdiertjes"],
@@ -2339,38 +2360,21 @@ const combinaties = [
   },
   {
     input: [
-      ["Wormen", "Druk"], ["Wormen", "Pijn"],
-      ["Zeesterren", "Druk"], ["Zeesterren", "Pijn"], 
-      ["Oerbilateria", "Pijn"],
-      ["Oertrochozoa", "Druk"], ["Oertrochozoa", "Pijn"],
-      ["Lancetvisjes", "Druk"], ["Lancetvisjes", "Pijn"],
-      ["Agnathen", "Druk"], ["Agnathen", "Pijn"],
-      ["Oergeleedpotigen", "Druk"], ["Oergeleedpotigen", "Pijn"],
-      ["Zeeslakken", "Druk"], ["Zeeslakken", "Pijn"],
-      ["Tweekleppigen", "Druk"], ["Tweekleppigen", "Pijn"],
-      ["Trilobieten", "Druk"], ["Trilobieten", "Pijn"],
-      ["Oercheliceraten", "Druk"], ["Oercheliceraten", "Pijn"],
-      ["Duizendpoten", "Druk"], ["Duizendpoten", "Pijn"],
-      ["Oerkreeftjes", "Druk"], ["Oerkreeftjes", "Pijn"],
-      ["Oerinsecten", "Druk"], ["Oerinsecten", "Pijn"],
-      ["Schorpioenen", "Druk"], ["Schorpioenen", "Pijn"],
-      ["Spinnen", "Druk"], ["Spinnen", "Pijn"],
-      ["Zwaardstaarten", "Druk"], ["Zwaardstaarten", "Pijn"],
-      ["Krill", "Druk"], ["Krill", "Pijn"],
-      ["Pissebedden", "Druk"], ["Pissebedden", "Pijn"],
-      ["Garnalen", "Druk"], ["Garnalen", "Pijn"],
-      ["Kreeften", "Druk"], ["Kreeften", "Pijn"],
-
-      ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Druk"], ["Inktvissen", "Pijn"],
-      ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Druk"], ["Nautilussen", "Pijn"],
-      ["Oerchondrichthyes", "Storm"], ["Oerchondrichthyes", "Orkaan"], ["Oerchondrichthyes", "Druk"], 
-      ["Oerchondrichthyes", "Pijn"],
-      ["Oerstraalvinnigen", "Storm"], ["Oerstraalvinnigen", "Orkaan"], ["Oerstraalvinnigen", "Druk"], 
-      ["Oerstraalvinnigen", "Pijn"],
-      ["Coelacanthen", "Storm"], ["Coelacanthen", "Orkaan"], ["Coelacanthen", "Druk"], ["Coelacanthen", "Pijn"],
-      ["Longvissen", "Storm"], ["Longvissen", "Orkaan"], ["Longvissen", "Druk"], ["Longvissen", "Pijn"],
-      ["Haaien", "Storm"], ["Haaien", "Orkaan"], ["Haaien", "Druk"], ["Haaien", "Pijn"],
-      ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Druk"], ["Holocefalen", "Pijn"]
+      ["Wormen", "Pijn"], ["Zeesterren", "Pijn"], ["Oerbilateria", "Pijn"], ["Oertrochozoa", "Pijn"],
+      ["Lancetvisjes", "Pijn"], ["Agnathen", "Pijn"], ["Oergeleedpotigen", "Pijn"], ["Zeeslakken", "Pijn"],
+      ["Tweekleppigen", "Pijn"], ["Trilobieten", "Pijn"], ["Oercheliceraten", "Pijn"], ["Duizendpoten", "Pijn"],
+      ["Oerkreeftjes", "Pijn"], ["Oerinsecten", "Pijn"], ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"],
+      ["Zwaardstaarten", "Pijn"], ["Krill", "Pijn"],["Pissebedden", "Pijn"], ["Garnalen", "Pijn"],
+      ["Kreeften", "Pijn"],
+      
+      ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Pijn"],
+      ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
+      ["Oerchondrichthyes", "Storm"], ["Oerchondrichthyes", "Orkaan"], ["Oerchondrichthyes", "Pijn"],
+      ["Oerstraalvinnigen", "Storm"], ["Oerstraalvinnigen", "Orkaan"], ["Oerstraalvinnigen", "Pijn"],
+      ["Coelacanthen", "Storm"], ["Coelacanthen", "Orkaan"], ["Coelacanthen", "Pijn"],
+      ["Longvissen", "Storm"], ["Longvissen", "Orkaan"], ["Longvissen", "Pijn"],
+      ["Haaien", "Storm"], ["Haaien", "Orkaan"], ["Haaien", "Pijn"],
+      ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Pijn"]
     ],
     hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
     output: [
