@@ -2551,7 +2551,7 @@ const combinaties = [
     ],
     hint: `Niet ziek willen worden, daar kan het bewustzijn ook bij helpen.`, 
     output: [
-      { naam: "Walging", icoon: "icons/Walging.png", map: "Brein", 
+      { naam: "Afkeer", icoon: "icons/Afkeer.png", map: "Brein", 
         quote: `Disgust and resolve are two of the great emotions that lead to change
         <br><br>- Jim Rohn`
       }
