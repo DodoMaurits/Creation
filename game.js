@@ -2113,6 +2113,11 @@ const combinaties = [
         foundation of marine life: without them many of the sea's most exquisite species will not survive
         <br><br>- Sheherazade Goldsmith`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -2242,6 +2247,11 @@ const combinaties = [
         opening through which it both eats and excretes - as regrettable an example of economy of design as ever was 
         <br><br>- Jeffrey Kluger`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -2259,6 +2269,11 @@ const combinaties = [
       { naam: "Bloemdieren", icoon: "icons/Bloemdieren.png", map: "Waterdieren",
         quote: `The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul 
         <br><br>- Robert Wyland`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -2389,6 +2404,11 @@ const combinaties = [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
         quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
         <br><br>- Charles Darwin`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -3122,6 +3142,11 @@ const combinaties = [
         about it
         <br><br>- Robert Genn`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -3259,6 +3284,11 @@ const combinaties = [
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -3280,6 +3310,11 @@ const combinaties = [
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
