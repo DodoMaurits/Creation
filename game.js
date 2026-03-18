@@ -3521,6 +3521,17 @@ const combinaties = [
     }
   },
   {
+    input: ["Oervaatplanten", "Ven"],
+    hint: `Een broeinest voor leven is dichte begroeiing en laag stilstaand water.`,
+    output: [
+      { naam: "Moeras", icoon: "icons/Moeras.png", map: "Landschap", 
+        quote: `Nature is a tropical swamp in sunshine, on whose purlieus we hear the song of summer birds,
+        and see prismatic dewdrops, - but her interiors are terrific, full of hydras and crocodiles
+        <br><br>- Ralph Emerson`
+      }
+    ]
+  },
+  {
     input: ["Oervaatplanten", "Evolutie"],
     hint: `Sommige planten zouden er goed aan doen met grote opperlvaktes meer zonlicht te pakken.`,
     output: [
