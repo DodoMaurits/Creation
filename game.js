@@ -2727,6 +2727,7 @@ const combinaties = [
       ["Krabben", "Radioactiviteit"], ["Krabben", "Vuur"],
       ["Haaien", "Radioactiviteit"], ["Holocefalen", "Vuur"]
     ],
+    hint: `Waar de geleedpotigen overlijden, blijven skeletten over.`,
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
