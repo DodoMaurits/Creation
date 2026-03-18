@@ -4048,6 +4048,16 @@ const combinaties = [
     ]
   },
   {
+    input: ["Moeras", "Detritus"],
+    hint: `Al dat dood organisch materiaal is nooit weg en kan ophopen in laag water.`,
+    output: [
+      { naam: "Veen", icoon: "icons/Veen.png", map: "Aarde", 
+        quote: `Peatlands hold the carbon and stories of our past and are key to a livable future
+        <br><br>- Catherine Fitzgerald`
+      }
+    ]
+  },
+  {
     input: ["Blad", "Oervaatplanten"],
     hint: `Stengels vol water en bladeren vol energie - een gouden combinatie.`,
     tijd: 400_000_000,
