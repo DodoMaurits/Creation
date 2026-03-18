@@ -3017,9 +3017,11 @@ const combinaties = [
       ["Tweekleppigen", "Zand"], ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Blauwalgen"], 
       ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"]
     ],
+    hint: `Oh wat kan die zandkorrel irritant zijn voor schelpdieren.`,
     output: [
       { naam: "Parel", icoon: "icons/Parel.png", map: "Biologie", 
-        quote: ``
+        quote: `The world is your oyster. It's up to you to find the pearls
+        <br><br>- Chris Gardner`
       }
     ]
   },
