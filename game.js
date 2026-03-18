@@ -2023,7 +2023,7 @@ const combinaties = [
   {
     input: ["Gist", "Glucose"],
     output: [
-      { naam: "Alcohol", icoon: "icons/Alcohol.png", map: "Dranken",
+      { naam: "Alcohol", icoon: "icons/Alcohol.png", map: "Chemie",
         quote: `Reality is an illusion that occurs duo to the lack of alcohol
         <br><br>- W.C. Fields`
       }
@@ -3999,7 +3999,6 @@ const groepsIconen = {
   "Vissen": "icons/Vissen.png",
   "Geleedpotigen": "icons/Geleedpotigen.png",
   "Vruchten": "icons/Vruchten.png",
-  "Dranken": "icons/Dranken.png"
 };
 
 // ----- STATE -----
