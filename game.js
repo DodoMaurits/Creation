@@ -4078,6 +4078,16 @@ const combinaties = [
         <br><br>- John Muir`
       }
     ]
+  },
+  {
+    input: ["Bruinkool", "Druk"],
+    hint: `Kolen kunnen ook verstenen...`,
+    output: [
+      { naam: "Steenkool", icoon: "icons/Steenkool.png", map: "Aarde", 
+        quote: `Without a whole lot of pressure, a diamond is just a piece of coal
+        <br><br>- Miriam`
+      }
+    ]
   }
 ];
 
