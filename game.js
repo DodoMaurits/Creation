@@ -3521,7 +3521,9 @@ const combinaties = [
     }
   },
   {
-    input: ["Oervaatplanten", "Ven"],
+    input: [
+      ["Oervaatplanten", "Ven"], ["Varens", "Ven"]
+    ],
     hint: `Een broeinest voor leven is dichte begroeiing en laag stilstaand water.`,
     output: [
       { naam: "Moeras", icoon: "icons/Moeras.png", map: "Landschap", 
