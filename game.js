@@ -2404,6 +2404,17 @@ const combinaties = [
   },
   {
     input: [
+      ["Aardolie", "Warmte"], ["Aardolie", "Druk"]
+    ],
+    output: [
+      { naam: "Gas", icoon: "icons/Gas.png", map: "Lucht",
+      quote: `Hydrogen is a light, odorless gas, which, given enough time, turns into people 
+      <br><br>- Edward Harrison`
+      }
+    ]
+  },
+  {
+    input: [
       ["Zeeanemonen", "Bacteriën"], ["Zeeanemonen", "Blauwalgen"], ["Zeeanemonen", "Leca"], ["Zeeanemonen", "Amoeben"],
       ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"], ["Zeeanemonen", "Wormen"],
       ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemonen", "Krill"], ["Zeeanemonen", "Garnalen"]
