@@ -2030,7 +2030,7 @@ const combinaties = [
     input: ["Zenuwen", "Sponzen"],
     hint: `Wat zou het mooi zijn, als leven zichzelf ervaren kan...`,
     output: [
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
+      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
         pressure (e.g. air pressure) is exerted inwards from all directions equally 
         <br><br>- Viktor Schawberger`
@@ -2047,7 +2047,7 @@ const combinaties = [
     ],
     hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
+      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
         pressure (e.g. air pressure) is exerted inwards from all directions equally 
         <br><br>- Viktor Schawberger`
@@ -2766,7 +2766,7 @@ const combinaties = [
     ],
     hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Brein", 
+      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
         pressure (e.g. air pressure) is exerted inwards from all directions equally 
         <br><br>- Viktor Schawberger`
