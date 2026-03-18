@@ -4771,8 +4771,12 @@ function renderSide(parentContainer, map, side) {
     img.src = el.icoon;
     img.className = "icon element";
     if (!isMobile) {
-      img.style.width = totalElements > 16 ? "110px" : "130px";
-      img.style.height = totalElements > 16 ? "110px" : "130px";
+      img.style.width   = totalElements > 25 ? "120px"
+                        : totalElements > 16 ? "110px" 
+                        : "130px";
+      img.style.height  = totalElements > 25 ? "120px"
+                        : totalElements > 16 ? "110px" 
+                        : "130px";
     }
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
