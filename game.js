@@ -2523,7 +2523,6 @@ const combinaties = [
       ["Agnathen", "Virus"], ["Agnathen", "Schimmel"], ["Agnathen", "Parasieten"],
       ["Oergeleedpotigen", "Virus"], ["Oergeleedpotigen", "Schimmel"], ["Oergeleedpotigen", "Parasieten"],
       ["Zeeslakken", "Virus"], ["Zeeslakken", "Schimmel"], ["Zeeslakken", "Parasieten"],
-      ["Tweekleppigen", "Virus"], ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"],
       ["Trilobieten", "Virus"], ["Trilobieten", "Schimmel"], ["Trilobieten", "Parasieten"],
       ["Oercheliceraten", "Virus"], ["Oercheliceraten", "Schimmel"], ["Oercheliceraten", "Parasieten"],
       ["Duizendpoten", "Virus"], ["Duizendpoten", "Schimmel"], ["Duizendpoten", "Parasieten"],
@@ -3015,9 +3014,20 @@ const combinaties = [
   },
   {
     input: [
-      ["Tweekleppigen", "Bacteriën"], ["Tweekleppigen", "Blauwalgen"], ["Tweekleppigen", "Leca"], 
-      ["Tweekleppigen", "Amoeben"], ["Tweekleppigen", "Foraminiferen"], ["Tweekleppigen", "Stralendiertjes"], 
-      ["Tweekleppigen", "Beerdiertjes"], ["Tweekleppigen", "Krill"]
+      ["Tweekleppigen", "Zand"], ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Blauwalgen"], 
+      ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"]
+    ],
+    output: [
+      { naam: "Parel", icoon: "icons/Parel.png", map: "Biologie", 
+        quote: ``
+      }
+    ]
+  },
+  {
+    input: [
+      ["Tweekleppigen", "Bacteriën"], ["Tweekleppigen", "Leca"], ["Tweekleppigen", "Amoeben"], 
+      ["Tweekleppigen", "Foraminiferen"], ["Tweekleppigen", "Stralendiertjes"], ["Tweekleppigen", "Beerdiertjes"], 
+      ["Tweekleppigen", "Krill"]
     ],
     output: [
       { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
