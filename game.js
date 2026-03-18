@@ -1211,7 +1211,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Kalk", "Warmte"], ["Kalk", "Zee"], ["Kalk", "Zand"], ["Druk", "Kalk"], ["Druk", "Schelp"], ["Druk", "Koraal"]
+      ["Kalk", "Warmte"], ["Kalk", "Zee"], ["Kalk", "Zand"], ["Druk", "Kalk"], ["Druk", "Schelp"], ["Druk", "Koraal"],
+      ["Bloemdieren", "Druk"], ["Zeesterren", "Druk"], ["Zeeanemonen", "Druk"], ["Zeeslakken", "Druk"], 
+      ["Tweekleppigen", "Druk"], ["Nautilussen", "Druk"]
     ],
     hint: `Tot op het bot verkalken... dat wordt weer steen.`,
     output: [
