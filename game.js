@@ -3045,6 +3045,14 @@ const combinaties = [
     input: ["Oercheliceraten", "Evolutie"],
     hint: `Cheliceraten laten zien hoeveel schorpioenen en spinnen eigenlijk gemeen hebben.`,
     output: [
+      { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
+        quote: `Tiny creatures such as krill form the living foundation of ocean life
+        <br><br>- Sylvia Earle`
+      },
+      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
+        quote: `The horseshoe crab is a reminder that survival does not always require change
+        <br><br>- Stephen Gould`
+      },
       { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Geleedpotigen", 
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
@@ -3054,14 +3062,6 @@ const combinaties = [
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
-      },
-      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
-        quote: `The horseshoe crab is a reminder that survival does not always require change
-        <br><br>- Stephen Gould`
-      },
-      { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
-        quote: `Tiny creatures such as krill form the living foundation of ocean life
-        <br><br>- Sylvia Earle`
       }
     ]
   },
