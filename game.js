@@ -3859,9 +3859,9 @@ const combinaties = [
     input: [
       ["Haaien", "Kwallen"], ["Haaien", "Bloemdieren"], ["Haaien", "Wormen"], ["Haaien", "Oertrochozoa"],
       ["Haaien", "Lancetvisjes"], ["Haaien", "Agnathen"], ["Haaien", "Manteldieren"], ["Haaien", "Inktvissen"],
-      ["Haaien", "Oerkreeftjes"], ["Haaien", "Zwaardstaarten"], ["Haaien", "Krill"], ["Haaien", "Oerstraalvinnigen"],
-      ["Haaien", "Coelacanthen"], ["Haaien", "Longvissen"], ["Haaien", "Garnalen"], ["Haaien", "Kreeften"], 
-      ["Haaien", "Krabben"], ["Haaien", "Holocefalen"]
+      ["Haaien", "Oerkreeftjes"], ["Haaien", "Zwaardstaarten"], ["Haaien", "Krill"], ["Haaien", "Oerchondrichthyes"],
+      ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Longvissen"], ["Haaien", "Garnalen"], 
+      ["Haaien", "Kreeften"], ["Haaien", "Krabben"], ["Haaien", "Holocefalen"]
     ],
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
