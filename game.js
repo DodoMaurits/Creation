@@ -1948,6 +1948,7 @@ const combinaties = [
   },
   {
     input: ["Schimmel", "Glucose"],
+    hint: `Sommige eencellige schimmels specialiseren zich in suikers.`,
     output: [
       { naam: "Gist", icoon: "icons/Gist.png", map: "Pril leven",
         quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
@@ -2022,6 +2023,7 @@ const combinaties = [
   },
   {
     input: ["Gist", "Glucose"],
+    hint: `Gesuikerde schimmels.. dat kan niet goed zijn voor het brein.`,
     output: [
       { naam: "Alcohol", icoon: "icons/Alcohol.png", map: "Chemie",
         quote: `Reality is an illusion that occurs duo to the lack of alcohol
@@ -3278,6 +3280,7 @@ const combinaties = [
       ["Schorpioenen", "Oerkreeftjes"], ["Schorpioenen", "Oerinsecten"], ["Schorpioenen", "Spinnen"],
       ["Schorpioenen", "Garnalen"]
     ],
+    hint: `Het is evolutionair handig als prooien meteen verlamd worden door giftige stofjes.`,
     output: [
       { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Geleedpotigen", 
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
