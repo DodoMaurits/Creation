@@ -4716,7 +4716,7 @@ function getAvailableHints() {
     }
 
     // -------- ALS ALLES OK IS --------
-    availableHints.push(c.hint);
+    if (c.hint) { availableHints.push(c.hint); }
   }
   
   return availableHints;
