@@ -1139,7 +1139,7 @@ const combinaties = [
     ],
     hint: `Het eroderen van meer stenen kan nog wel eens van pas komen...`,
     output: [
-      { naam: "Gips", icoon: "icons/Gips.png", map: "Aarde", 
+      { naam: "Gips", icoon: "icons/Gips.png", map: "Chemie", 
         quote: `The broken bone, once set together, is stronger than ever 
         <br><br>- John Lyly`
       }
@@ -1315,7 +1315,7 @@ const combinaties = [
     ],
     hint: `Een mineraal ontbreekt nog.. uit verwering van wit gesteente.`,
     output: [
-      { naam: "Calciet", icoon: "icons/Calciet.png", map: "Aarde", 
+      { naam: "Calciet", icoon: "icons/Calciet.png", map: "Chemie", 
         quote: `Through calcite, the air took on a strange luminousness, as though the light itself were split into 
         delicate fragments 
         <br><br>- Albert Durer`
@@ -1418,7 +1418,7 @@ const combinaties = [
         its breath, but the land is so much more 
         <br><br>- John Steinbeck`
       },
-      { naam: "Calciet", icoon: "icons/Calciet.png", map: "Aarde", 
+      { naam: "Calciet", icoon: "icons/Calciet.png", map: "Chemie", 
         quote: `Through calcite, the air took on a strange luminousness, as though the light itself were split into 
         delicate fragments 
         <br><br>- Albert Durer`
