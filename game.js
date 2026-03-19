@@ -4428,7 +4428,8 @@ function checkCombination() {
   });
 
   lastExplanation = finalUitleg || null;
-  renderNewElements(newElements);
+  const versText = firstMatch.vers || null;
+  renderNewElements(newElements, versText);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
   // Update timeline op basis van combinatie-tijd
@@ -4502,7 +4503,7 @@ function showThresholdExplanation(threshold, missing, callback) {
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
-function renderNewElements(elements) {
+function renderNewElements(elements, vers = null) {
 
   // Verwijder bestaande overlay indien aanwezig
   const oldOverlay = document.getElementById("result-overlay");
@@ -4555,6 +4556,13 @@ function renderNewElements(elements) {
 
   overlay.appendChild(grid);
 
+  if (vers) {
+    const versDiv = document.createElement("div");
+    versDiv.className = "vers-text";
+    versDiv.innerHTML = vers;
+    overlay.appendChild(versDiv);
+  }
+  
   if (lastExplanation) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
@@ -4583,7 +4591,6 @@ function renderNewElements(elements) {
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
-
     renderClosed();
     updateClosedContainer();
   };
