@@ -4235,14 +4235,15 @@ function attachTooltip(el, text) {
   let tooltip;
 
   el.addEventListener("mouseenter", () => {
+    if (el.offsetParent === null) return; // niet zichtbaar → stop
     tooltip = document.createElement("div");
     tooltip.className = "tooltip-floating visible";
     tooltip.textContent = text;
     document.body.appendChild(tooltip);
-
+    
     const rect = el.getBoundingClientRect();
     tooltip.style.left = rect.left + rect.width / 2 + "px";
-    tooltip.style.top = rect.bottom + 6 + "px"; // marge onder icoon
+    tooltip.style.top = rect.bottom + 6 + "px";
     tooltip.style.transform = "translateX(-50%)";
   });
 
