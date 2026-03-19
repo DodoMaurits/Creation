@@ -4555,9 +4555,7 @@ function renderNewElements(elements, vers = null) {
   });
 
   const contentWrapper = document.createElement("div");
-  contentWrapper.style.display = "flex";
-  contentWrapper.style.flexDirection = "column";
-  contentWrapper.style.alignItems = "center";
+  contentWrapper.className = "result-content";
   
   contentWrapper.appendChild(grid);
   
