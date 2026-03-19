@@ -38,8 +38,9 @@ const combinaties = [
         <br><br>- Dominic Monaghan`
       }
     ],
-    vers: `Vers
-    <br><br>(21:30)`,
+    vers: `Hebben degenen die niet geloven niet gezien dat de Hemelen en de Aarde één geheel waren, 
+    en Wij ze vervolgens uit elkaar hebben gescheiden?
+    <br><br>De Profeten (21:30)`,
     uitleg: {
       normal: {
         titel: "Symmetriebreking",
@@ -1477,6 +1478,8 @@ const combinaties = [
         <br><br>- Isaac Asimov`
       }
     ],
+    vers: `En Wij hebben uit water alles wat leeft gemaakt. Zien zij dan niet?
+    <br><br>De Profeten (21:30)`,
     uitleg: {
       threshold: {
         titel: "Leven", 
