@@ -4555,13 +4555,6 @@ function renderNewElements(elements, vers = null) {
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
 
-  if (vers) {
-    const versLabel = document.createElement("div");
-    versLabel.className = "vers-label";
-    versLabel.textContent = vers;
-    overlay.appendChild(versLabel);
-  }
-
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
@@ -4606,6 +4599,13 @@ function renderNewElements(elements, vers = null) {
 
   overlay.appendChild(grid);
 
+  if (vers) {
+    const versText = document.createElement("div");
+    versText.className = "vers-text";
+    versText.innerHTML = vers;
+    overlay.appendChild(versText);
+  }
+  
   if (lastExplanation && !lastExplanation.thresholdRelated) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
@@ -4625,14 +4625,11 @@ function renderNewElements(elements, vers = null) {
 
   document.body.appendChild(overlay);
 
-  setTimeout(() => overlay.classList.add("visible"), 20);
-
   // Klik anywhere → reset
   overlay.onclick = () => {
     overlay.remove();
     if (lastExplanation && lastExplanation.thresholdRelated) {
       showThresholdExplanation(lastExplanation, null, () => {
-        // reset na klik op uitleg
         openLeft = null;
         openRight = null;
         leftSide.innerHTML = "";
