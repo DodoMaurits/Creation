@@ -4370,10 +4370,20 @@ function checkCombination() {
   const firstMatch = matches[0];
 
   // 🔹 Check threshold-element dependency
-  if (firstMatch.uitleg?.threshold || firstMatch.uitleg?.thresholdElement) {
-      return;
-  } else {
-      renderNewElements(newElements, firstMatch.vers);
+  if (firstMatch.uitleg?.thresholdElement) {
+    const needed = firstMatch.uitleg.thresholdElement.naam;
+    if (!unlockedElements.has(needed)) {
+      // toon overlay met titel + tekst van thresholdElement
+      showThresholdExplanation(
+        firstMatch.uitleg.thresholdElement,
+        null, // geen missing circles
+        () => {
+          selected.forEach(e => e.dom.classList.remove("selected"));
+          selected = [];
+        }
+      );
+      return; // stop verder uitvoeren
+    }
   }
   
   // 🔹 Check threshold requirements
@@ -4417,16 +4427,10 @@ function checkCombination() {
     });
   });
 
-  lastExplanation = finalUitleg
-    ? { ...finalUitleg, thresholdRelated: !!firstMatch.uitleg?.threshold }
-    : firstMatch.vers
-      ? { titel: "Vers", tekst: firstMatch.vers, thresholdRelated: false }
-      : null;
+  lastExplanation = finalUitleg || null;
+  renderNewElements(newElements);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
-  const versLabelText = firstMatch.vers || null;
-  renderNewElements(newElements, versLabelText);
-  
   // Update timeline op basis van combinatie-tijd
   const eventTime = firstMatch.tijd;
   
@@ -4497,50 +4501,10 @@ function showThresholdExplanation(threshold, missing, callback) {
   document.body.appendChild(overlay);
 }
 
-function showNormalExplanationBeforeResult(explanation, newElements) {
-  const overlay = document.createElement("div");
-  overlay.id = "threshold-overlay";
-  overlay.style.display = "flex";
-  overlay.style.justifyContent = "center";
-  overlay.style.alignItems = "center";
-  overlay.style.position = "fixed";
-  overlay.style.top = 0;
-  overlay.style.left = 0;
-  overlay.style.width = "100%";
-  overlay.style.height = "100%";
-  overlay.style.background = "rgba(0,0,0,0.7)";
-  overlay.style.zIndex = 2000;
-
-  const box = document.createElement("div");
-  box.className = "explanation-box";
-
-  const title = document.createElement("div");
-  title.className = "explanation-title";
-  title.innerHTML = explanation.titel;
-
-  const text = document.createElement("div");
-  text.className = "explanation-text";
-  text.innerHTML = explanation.tekst;
-
-  const button = document.createElement("button");
-  button.className = "create-button";
-  button.textContent = "Ga verder";
-  button.onclick = () => {
-    overlay.remove();
-    renderNewElements(newElements); // daarna pas het normale resultaat-scherm
-  };
-
-  box.appendChild(title);
-  box.appendChild(text);
-  box.appendChild(button);
-  overlay.appendChild(box);
-  document.body.appendChild(overlay);
-}
-
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
-function renderNewElements(elements, vers = null) {
-  if (!elements || elements.length === 0) return;
-  
+function renderNewElements(elements) {
+
+  // Verwijder bestaande overlay indien aanwezig
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
@@ -4591,19 +4555,12 @@ function renderNewElements(elements, vers = null) {
 
   overlay.appendChild(grid);
 
-  if (vers) {
-    const versText = document.createElement("div");
-    versText.className = "vers-text";
-    versText.innerHTML = vers;
-    overlay.appendChild(versText);
-  }
-  
-  if (lastExplanation && !lastExplanation.thresholdRelated) {
+  if (lastExplanation) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
     overlay.appendChild(infoButton);
-  
+    
     const popup = document.createElement("div");
     popup.className = "info-popup";
     popup.innerHTML = `
@@ -4617,6 +4574,8 @@ function renderNewElements(elements, vers = null) {
 
   document.body.appendChild(overlay);
 
+  setTimeout(() => overlay.classList.add("visible"), 20);
+
   // Klik anywhere → reset
   overlay.onclick = () => {
     overlay.remove();
@@ -4624,6 +4583,7 @@ function renderNewElements(elements, vers = null) {
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
+
     renderClosed();
     updateClosedContainer();
   };
@@ -4848,7 +4808,7 @@ function renderSide(parentContainer, map, side) {
 
   // Layout instellen
   if (!isMobile) {
-    if (totalElements >= 17 && totalElements <=25) {
+    if (totalElements > 16) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
       grid.style.rowGap = "15px";
@@ -4872,12 +4832,8 @@ function renderSide(parentContainer, map, side) {
     img.src = el.icoon;
     img.className = "icon element";
     if (!isMobile) {
-      img.style.width   = totalElements > 25 ? "120px"
-                        : totalElements > 16 ? "110px" 
-                        : "130px";
-      img.style.height  = totalElements > 25 ? "120px"
-                        : totalElements > 16 ? "110px" 
-                        : "130px";
+      img.style.width = totalElements > 16 ? "110px" : "130px";
+      img.style.height = totalElements > 16 ? "110px" : "130px";
     }
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
@@ -4951,7 +4907,7 @@ function getAvailableHints() {
     }
 
     // -------- ALS ALLES OK IS --------
-    if (c.hint) { availableHints.push(c.hint); }
+    availableHints.push(c.hint);
   }
   
   return availableHints;
