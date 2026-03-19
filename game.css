@@ -682,17 +682,17 @@ body {
 
 .vers-text {
   position: absolute;
-  top: calc(50% + 200px);
+  top: calc(50% + 240px);
   left: 50%;
   transform: translateX(-50%);
   width: 580px;
   color: white;
   text-align: center;
   font-family: "Times New Roman", serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   opacity: 0.85;
-  animation: sway 2s ease-in-out infinite alternate;
+  animation: sway 4s ease-in-out infinite alternate;
 }
 
 @keyframes sway {
