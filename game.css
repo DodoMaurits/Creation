@@ -591,14 +591,10 @@ body {
   opacity: 1;
 }
 
-.result-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; 
-}
-
 .result-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: grid;
   gap: 40px;
   justify-content: center;
@@ -606,6 +602,7 @@ body {
   grid-auto-flow: row;
   grid-template-columns: repeat(var(--cols), 250px);
   width: fit-content;
+  transform: translate(-50%, -50%);
   animation: resultAppear 0.8s ease;
 }
 
@@ -677,7 +674,10 @@ body {
 }
 
 .vers-text {
-  display: block;
+  position: absolute;
+  top: calc(50% + 200px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 580px;
   color: white;
   text-align: center;
