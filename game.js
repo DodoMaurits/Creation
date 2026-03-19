@@ -211,6 +211,8 @@ const combinaties = [
   {
     input: ["Ster", "Ster"],
     hint: `Zo veel sterren.. het lijken wel witte melkslierten rond het afvoerputje`,
+    vers: `En de Zon stroomt naar haar Bestemming, dat is de bepaling van de Macht, van de Wijsheid
+    <br><br>Ya-Sin (36:38)`,
     output: [
       { naam: "Sterrenstelsel", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
         quote: `Never apologize for burning too brightly or collapsing into yourself every night. 
@@ -356,6 +358,8 @@ const combinaties = [
     input: ["De Aarde", "Planeet"],
     hint: `De Aarde.. daar past een mooi broertje bij voor de nacht.`,
     tijd: 4_527_000_000,
+    vers: `Niet mag de Zon de Maan inhalen, noch de nacht voorbijlopen aan de dag, en ieder van hen beweegt in een baan
+    <br><br>Ya-Sin (36:40)`,
     output: [
       { naam: "De Maan", icoon: "icons/Maan.png", map: "Heelal",
         quote: `I always look up at the moon and see it as the single most romantic place within the cosmos 
@@ -443,6 +447,9 @@ const combinaties = [
       ["Platentektoniek", "Graniet"], ["Platentektoniek", "Basalt"]
     ],
     hint: `Die platentektoniek kan nog wel eens voor wat stenen reliëf zorgen...`,
+    vers: `En Wij plaatsten in de aarde stevige bergen opdat het niet met hen zou schudden, en Wij maakten daarin
+    doorgangen als bergpassen, zodat zij misschien de weg vinden
+    <br><br>De Profeten (21:31)`,
     output: [
       { naam: "Berg", icoon: "icons/Berg.png", map: "Landschap",
         quote: `Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain 
@@ -718,6 +725,8 @@ const combinaties = [
       ["Damp", "Planeet"], ["Damp", "De Aarde"], ["Wolk", "De Aarde"]
     ],
     hint: `Wolken van damp kringelen rond... het is tijd om de planeten lucht te geven.`,
+    vers: `En Wij maakten van de hemel een beschermend dak, maar zij wenden zich af van haar signalen 
+    <br><br>De Profeten (21:32)`,
     output: [
       { naam: "Lucht", icoon: "icons/Lucht (Sky).png", map: "Lucht", 
         quote: `Stars are holes in the sky from which the light of the infinite shines 
@@ -1973,6 +1982,8 @@ const combinaties = [
       ["Schimmel", "Basalt"], ["Schimmel", "Zand"], ["Schimmel", "Klei"] 
     ],
     hint: `Kijk, nu kan het land worden omgeploegd door schimmels voor de anderen om op te leven.`,
+    vers: `En een teken voor hen is de dode aarde, Wij brengen haar tot leven en brengen daaruit graan waaarvan zij eten
+    <br><br>Ya-Sin (36:33)`,
     output: [
       { naam: "Aarde", icoon: "icons/Aarde.png", map: "Aarde", 
         quote: `Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and 
