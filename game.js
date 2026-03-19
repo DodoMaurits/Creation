@@ -1570,7 +1570,7 @@ const combinaties = [
       ["Coelacanthen", "Radioactiviteit"], ["Coelacanthen", "Gif"],
       ["Longvissen", "Radioactiviteit"], ["Longvissen", "Gif"],
       ["Pissebedden", "Radioactiviteit"], ["Pissebedden", "Gif"],
-      ["Garnalen", "Radioactiviteit"] ["Garnalen", "Gif"],
+      ["Garnalen", "Radioactiviteit"] ["Garnalen", "Gif"]
     ],
     hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     output: [
