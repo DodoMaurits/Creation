@@ -2990,7 +2990,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Inktvissen", "Kwallen"], ["Inktvissen", "Wormen"], ["Inktvissen", "Lancetvisjes"], ["Inktvissen", "Agnathen"],
+      ["Inktvissen", "Kwallen"], ["Inktvissen", "Bloemdieren"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],
       ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Oerkreeftjes"],
       ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Krill"], ["Inktvissen", "Garnalen"]
     ],
@@ -3008,6 +3008,54 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Inktvissen", "Lancetvisjes"], ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"]
+    ],
+    output: [
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        quote: `I would love to see a giant squid. Very few people have seen them. 
+        And only about half a dozen people have seen one alive
+        <br><br>- David Attenborough`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: ["Inktvissen", "Tweekleppigen"],
+    output: [
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        quote: `I would love to see a giant squid. Very few people have seen them. 
+        And only about half a dozen people have seen one alive
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -3322,9 +3370,9 @@ const combinaties = [
   {
     input: [
       ["Nautilussen", "Kwallen"], ["Nautilussen", "Bloemdieren"], ["Nautilussen", "Wormen"], 
-      ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Lancetvisjes"], ["Nautilussen", "Agnathen"], 
-      ["Nautilussen", "Oergeleedpotigen"], ["Nautilussen", "Manteldieren"], ["Nautilussen", "Oerkreeftjes"],
-      ["Nautilussen", "Krill"], ["Nautilussen", "Garnalen"], ["Nautilussen", "Kreeften"], ["Nautilussen", "Krabben"]
+      ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Oergeleedpotigen"], ["Nautilussen", "Manteldieren"], 
+      ["Nautilussen", "Oerkreeftjes"], ["Nautilussen", "Krill"], ["Nautilussen", "Garnalen"], ["Nautilussen", "Kreeften"], 
+      ["Nautilussen", "Krabben"]
     ],
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
@@ -3335,6 +3383,30 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Nautilussen", "Lancetvisjes"], ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"]
+    ],
+    output: [
+      { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
+        quote: `You don't have to bee Greek to enjoy this one
+        <br><br>- Jeff Smith`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
@@ -3669,10 +3741,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerchondrichthyes", "Wormen"], ["Oerchondrichthyes", "Oertrochozoa"], ["Oerchondrichthyes", "Lancetvisjes"], 
-      ["Oerchondrichthyes", "Agnathen"], ["Oerchondrichthyes", "Oergeleedpotigen"], ["Oerchondrichthyes", "Manteldieren"], 
-      ["Oerchondrichthyes", "Trilobieten"], ["Oerchondrichthyes", "Oerkreeftjes"], ["Oerchondrichthyes", "Zwaardstaarten"], 
-      ["Oerchondrichthyes", "Krill"], ["Oerchondrichthyes", "Garnalen"]
+      ["Oerchondrichthyes", "Wormen"], ["Oerchondrichthyes", "Oertrochozoa"], ["Oerchondrichthyes", "Oergeleedpotigen"], 
+      ["Oerchondrichthyes", "Manteldieren"], ["Oerchondrichthyes", "Trilobieten"], ["Oerchondrichthyes", "Oerkreeftjes"], 
+      ["Oerchondrichthyes", "Zwaardstaarten"], ["Oerchondrichthyes", "Krill"], ["Oerchondrichthyes", "Garnalen"]
     ],
     output: [
       { naam: "Oerchondrichthyes", icoon: "icons/Oerchondrichthyes.png", map: "Vissen",
@@ -3683,6 +3754,30 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerchondrichthyes", "Lancetvisjes"], ["Oerchondrichthyes", "Agnathen"], ["Oerchondrichthyes", "Oerstraalvinnigen"]
+    ],
+    output: [
+      { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
+        quote: `You don't have to bee Greek to enjoy this one
+        <br><br>- Jeff Smith`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
@@ -3777,6 +3872,30 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Oerstraalvinnigen", "Lancetivsjes"], ["Oerstraalvinnigen", "Agnathen"]
+    ],
+    output: [
+      { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
+        quote: `In order to see a fish you must watch the water
+        <br><br>- Bodhidharma`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Oerstraalvinnigen", "Tweekleppigen"],
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
@@ -3800,10 +3919,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Coelacanthen", "Wormen"], ["Coelacanthen", "Oertrochozoa"], ["Coelacanthen", "Lancetvisjes"], 
-      ["Coelacanthen", "Agnathen"], ["Coelacanthen", "Oergeleedpotigen"], ["Coelacanthen", "Manteldieren"], 
-      ["Coelacanthen", "Beerdiertjes"], ["Coelacanthen", "Trilobieten"], ["Coelacanthen", "Oerkreeftjes"],
-      ["Coelacanthen", "Krill"], ["Coelacanthen", "Garnalen"]
+      ["Coelacanthen", "Wormen"], ["Coelacanthen", "Oertrochozoa"], ["Coelacanthen", "Oergeleedpotigen"], 
+      ["Coelacanthen", "Manteldieren"], ["Coelacanthen", "Beerdiertjes"], ["Coelacanthen", "Trilobieten"], 
+      ["Coelacanthen", "Oerkreeftjes"], ["Coelacanthen", "Krill"], ["Coelacanthen", "Garnalen"]
     ],
     output: [
       { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
@@ -3844,6 +3962,32 @@ const combinaties = [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Coelacanthen", "Lancetvisjes"], ["Coelacanthen", "Agnathen"], ["Coelacanthen", "Oerstraalvinnigen"]
+    ],
+    output: [
+      { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
+        quote: `Ideas are like fish. If you want to catch little fish, you can stay in the shallow water.
+        But if you want to catch the big fish, you've got to go deeper. Down deep, the fish are more powerful and
+        more pure
+        <br><br>- David Lynch`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
@@ -3938,9 +4082,9 @@ const combinaties = [
     input: [
       ["Kreeften", "Bacteriën"], ["Kreeften", "Blauwalgen"], ["Kreeften", "Leca"], ["Kreeften", "Amoeben"],
       ["Kreeften", "Foraminiferen"], ["Kreeften", "Stralendiertjes"], ["Kreeften", "Wormen"], ["Kreeften", "Oertrochozoa"],
-      ["Kreeften", "Lancetvisjes"], ["Kreeften", "Oergeleedpotigen"], ["Kreeften", "Beerdiertjes"], 
-      ["Kreeften", "Oerkreeftjes"], ["Kreeften", "Oerinsecten"], ["Kreeften", "Zwaardstaarten"], ["Kreeften", "Krill"],
-      ["Kreeften", "Pissebedden"], ["Kreeften", "Garnalen"], ["Kreeften", "Krabben"]
+      ["Kreeften", "Oergeleedpotigen"], ["Kreeften", "Beerdiertjes"], ["Kreeften", "Oerkreeftjes"], 
+      ["Kreeften", "Oerinsecten"], ["Kreeften", "Zwaardstaarten"], ["Kreeften", "Krill"], ["Kreeften", "Pissebedden"], 
+      ["Kreeften", "Garnalen"], ["Kreeften", "Krabben"]
     ],
     output: [
       { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
@@ -3979,6 +4123,29 @@ const combinaties = [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: ["Kreeften", "Lancetvisjes"],
+    output: [
+      { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
+        quote: `Lobsters are among the most ancient designs in the sea, animals whose basic form has persisted for
+        millions of years
+        <br><br>- Trevor Corson`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
@@ -4030,16 +4197,40 @@ const combinaties = [
   {
     input: [
       ["Haaien", "Kwallen"], ["Haaien", "Bloemdieren"], ["Haaien", "Wormen"], ["Haaien", "Oertrochozoa"],
-      ["Haaien", "Lancetvisjes"], ["Haaien", "Agnathen"], ["Haaien", "Manteldieren"], ["Haaien", "Inktvissen"],
-      ["Haaien", "Oerkreeftjes"], ["Haaien", "Zwaardstaarten"], ["Haaien", "Krill"], ["Haaien", "Oerchondrichthyes"],
-      ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Longvissen"], ["Haaien", "Garnalen"], 
-      ["Haaien", "Kreeften"], ["Haaien", "Krabben"], ["Haaien", "Holocefalen"]
+      ["Haaien", "Manteldieren"], ["Haaien", "Oerkreeftjes"], ["Haaien", "Zwaardstaarten"], ["Haaien", "Krill"], 
+      ["Haaien", "Garnalen"], ["Haaien", "Kreeften"], ["Haaien", "Krabben"]
     ],
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
         quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
         in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
         <br><br>- Sylvia Earle`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Haaien", "Lancetvisjes"], ["Haaien", "Agnathen"], ["Haaien", "Inktvissen"], ["Haaien", "Oerchondrichthyes"],
+      ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Longvissen"], ["Haaien", "Holocefalen"]
+    ],
+    output: [
+      { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
+        quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
+        in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
+        <br><br>- Sylvia Earle`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -4060,6 +4251,10 @@ const combinaties = [
         in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
         <br><br>- Sylvia Earle`
       },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -4077,9 +4272,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Holocefalen", "Lancetvisjes"], ["Holocefalen", "Agnathen"], ["Holocefalen", "Inktvissen"],
-      ["Holocefalen", "Oerkreeftjes"], ["Holocefalen", "Krill"], ["Holocefalen", "Oerstraalvinnigen"],
-      ["Holocefalen", "Garnalen"], ["Holocefalen", "Kreeften"], ["Holocefalen", "Krabben"]
+      ["Holocefalen", "Oerkreeftjes"], ["Holocefalen", "Krill"], ["Holocefalen", "Garnalen"], 
+      ["Holocefalen", "Kreeften"], ["Holocefalen", "Krabben"]
     ],
     output: [
       { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
@@ -4098,11 +4292,62 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Holocefalen", "Lancetvisjes"], ["Holocefalen", "Agnathen"], ["Holocefalen", "Inktvissen"],
+      ["Holocefalen", "Oerstraalvinnigen"]
+    ],
+    output: [
+      { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
+        quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
+        <br><br>- Peter Last`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Holocefalen", "Tweekleppigen"],
     output: [
       { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: ["Holocefalen", "Nautilussen"],
+    output: [
+      { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
+        quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
+        <br><br>- Peter Last`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
