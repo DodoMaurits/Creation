@@ -690,13 +690,13 @@ body {
 }
 
 .vers-text {
-  margin-top: 20px;
-  font-size: 1.2rem; 
-  color: rgba(255,255,255,0.85);
+  width: 580px;
   text-align: center;
-  max-width: 90%;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
   line-height: 1.4;
-  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  opacity: 0.85;
+  margin-top: 0;
 }
 
 /* ---------------- KEYFRAMES ---------------- */
