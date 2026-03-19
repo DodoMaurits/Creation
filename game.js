@@ -2065,16 +2065,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Aarde", "Aarde"],
-    hint: `Een landschap heeft heel wat voeten in de aarde.`,
-    output: [
-      { naam: "Veld", icoon: "icons/Veld.png", map: "Landschap",
-        quote: `Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and animals
-        <br><br>- Aldo Leopold`
-      }
-    ]
-  },
-  {
     input: ["Gist", "Glucose"],
     hint: `Gesuikerde schimmels.. dat kan niet goed zijn voor het brein.`,
     output: [
