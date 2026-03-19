@@ -4554,14 +4554,19 @@ function renderNewElements(elements, vers = null) {
     grid.appendChild(box);
   });
 
-  overlay.appendChild(grid);
-
+  const contentWrapper = document.createElement("div");
+  contentWrapper.className = "result-content"; // wrapper voor grid + vers
+  
+  contentWrapper.appendChild(grid);
+  
   if (vers) {
     const versDiv = document.createElement("div");
-    versDiv.className = "vers-text";
-    versDiv.innerHTML = vers;
-    overlay.appendChild(versDiv);
+    versDiv.className = "vers-text"; 
+    versDiv.innerHTML = vers; 
+    contentWrapper.appendChild(versDiv);
   }
+  
+  overlay.appendChild(contentWrapper);
   
   if (lastExplanation) {
     const infoButton = document.createElement("div");
