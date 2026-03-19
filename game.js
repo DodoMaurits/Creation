@@ -4424,7 +4424,9 @@ function checkCombination() {
     });
   });
 
-  lastExplanation = finalUitleg ? { ...finalUitleg, thresholdRelated: !!firstMatch.uitleg?.threshold } : null;
+  lastExplanation = finalUitleg
+    ? { ...finalUitleg, thresholdRelated: false }
+    : null;
   newElements.forEach(el => unlockedElements.add(el.naam));
 
   const versLabelText = firstMatch.vers || null;
@@ -4601,12 +4603,12 @@ function renderNewElements(elements, vers = null) {
 
   overlay.appendChild(grid);
 
-  if (lastExplanation) {
+  if (lastExplanation && !lastExplanation.thresholdRelated) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
     overlay.appendChild(infoButton);
-    
+  
     const popup = document.createElement("div");
     popup.className = "info-popup";
     popup.innerHTML = `
