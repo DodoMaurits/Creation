@@ -585,7 +585,7 @@ body {
   background-position: center;
   justify-content: center;
   align-items: center;
-  z-index: 2000;
+  z-index: 8000;
   padding: 60px 20px;
   box-sizing: border-box;
   opacity: 0; 
