@@ -4425,7 +4425,6 @@ function checkCombination() {
   });
 
   lastExplanation = finalUitleg ? { ...finalUitleg, thresholdRelated: !!firstMatch.uitleg?.threshold } : null;
-  renderNewElements(newElements);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
   const versLabelText = firstMatch.vers || null;
