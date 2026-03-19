@@ -38,6 +38,8 @@ const combinaties = [
         <br><br>- Dominic Monaghan`
       }
     ],
+    vers: `Vers
+    <br><br>(21:30)`,
     uitleg: {
       normal: {
         titel: "Symmetriebreking",
@@ -4426,6 +4428,9 @@ function checkCombination() {
   renderNewElements(newElements);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
+  const versLabelText = firstMatch.vers || null;
+  renderNewElements(newElements, versLabelText);
+  
   // Update timeline op basis van combinatie-tijd
   const eventTime = firstMatch.tijd;
   
@@ -4537,16 +4542,21 @@ function showNormalExplanationBeforeResult(explanation, newElements) {
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
-function renderNewElements(elements) {
-
+function renderNewElements(elements, vers = null) {
   if (!elements || elements.length === 0) return;
   
-  // Verwijder bestaande overlay indien aanwezig
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
+
+  if (vers) {
+    const versLabel = document.createElement("div");
+    versLabel.className = "vers-label";
+    versLabel.textContent = vers;
+    overlay.appendChild(versLabel);
+  }
 
   const grid = document.createElement("div");
   grid.className = "result-grid";
