@@ -473,6 +473,24 @@ const combinaties = [
     ]
   },
   {
+    input: ["Vulkaan", "Gas"],
+    output: [
+      { naam: "Damp", icoon: "icons/Damp.png", map: "Lucht", 
+        quote: `Enthusiasm is the steam that drives the engine
+        <br><br>- Napoleon Hill`
+      },
+      { naam: "Rook", icoon: "icons/Rook.png", map: "Lucht", 
+        quote: `Surely where there's smoke there's fire? No, where there's so much smoke there's smoke
+        <br><br>- John Wheeler`
+      },
+      { naam: "Zwavel", icoon: "icons/Zwavel.png", map: "Chemie", 
+        quote: `Sulfur is essential for life, woven into the very proteins that make metabolism 
+        — and thus existence — possible
+        <br><br>- Isaac Asimov`
+      }
+    ]
+  },
+  {
     input: [
       ["Magmadamp", "Kou"], ["Regen", "Magmadamp"]
     ],
@@ -1626,6 +1644,19 @@ const combinaties = [
       { naam: "As", icoon: "icons/As.png", map: "Vuur", 
         quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
         <br><br>- Alexander Anderson`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Bacteriën", "Sulfaat"], ["Moeras", "Bacteriën"]
+    ],
+    hint: `Sommige micro-organismen kunnen sulfaat goed gebruiken.`,
+    output: [
+      { naam: "Zwavel", icoon: "icons/Zwavel.png", map: "Chemie", 
+        quote: `Sulfur is essential for life, woven into the very proteins that make metabolism 
+        — and thus existence — possible
+        <br><br>- Isaac Asimov`
       }
     ]
   },
