@@ -523,6 +523,16 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: ["Zwavel", "Magmadamp"],
+    hint: `Een bijzonder goedje komt vrij wanneer zwavel zich mengt in de chemische soep van magmadamp.`,
+    output: [
+      { naam: "Kwik", icoon: "icons/Kwik.png", map: "Chemie", 
+        quote: `Mercury contains all that the Sages seek; it dissolves, softens, and extracts the soul from the body
+        <br><br>- Edward Kelley`
+      }
+    ]
+  },
 //------------ THRESHOLD 1: WATER --------------//
   {
     input: [
