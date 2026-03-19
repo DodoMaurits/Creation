@@ -4582,8 +4582,10 @@ function renderNewElements(elements, vers = null) {
 
   document.body.appendChild(overlay);
 
-  setTimeout(() => overlay.classList.add("visible"), 20);
-
+  requestAnimationFrame(() => {
+    overlay.classList.add("visible");
+  });
+  
   // Klik anywhere → reset
   overlay.onclick = () => {
     overlay.remove();
