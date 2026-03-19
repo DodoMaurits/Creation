@@ -678,7 +678,7 @@ body {
   font-size: 18px;
   line-height: 1.4;
   opacity: 0.85;
-  margin-top: 20px;
+  margin-top: 20px auto 0 auto;
   display: inline-block;
   animation: sway 2s ease-in-out infinite alternate;
 }
