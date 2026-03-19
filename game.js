@@ -39,7 +39,7 @@ const combinaties = [
       }
     ],
     vers: `Hebben degenen die niet geloven niet gezien dat de Hemelen en de Aarde één geheel waren, 
-    en Wij ze vervolgens uit elkaar hebben gescheiden?
+    en Wij ze vervolgens van elkaar hebben gescheiden?
     <br><br>De Profeten (21:30)`,
     uitleg: {
       normal: {
