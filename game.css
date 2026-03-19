@@ -578,7 +578,6 @@ body {
     url("afb/beginscherm.png");
   background-size: cover;
   background-position: center;
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2000;
@@ -609,8 +608,14 @@ body {
 }
 
 @keyframes resultAppear {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from { 
+    transform: translate(-50%, calc(-50% + 30px));
+    opacity: 0; 
+  }
+  to { 
+    transform: translate(-50%, -50%);
+    opacity: 1; 
+  }
 }
 
 .result-box {
