@@ -591,6 +591,13 @@ body {
   opacity: 1;
 }
 
+.result-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
 .result-grid {
   display: grid;
   gap: 40px;
@@ -599,7 +606,6 @@ body {
   grid-auto-flow: row;
   grid-template-columns: repeat(var(--cols), 250px);
   width: fit-content;
-  margin: 0 auto;
   animation: resultAppear 0.8s ease;
 }
 
@@ -678,7 +684,6 @@ body {
   font-size: 18px;
   line-height: 1.4;
   opacity: 0.85;
-  margin-top: 20px auto 0 auto;
   display: inline-block;
   animation: sway 2s ease-in-out infinite alternate;
 }
