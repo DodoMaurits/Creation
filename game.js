@@ -4540,11 +4540,6 @@ function showNormalExplanationBeforeResult(explanation, newElements) {
 function renderNewElements(elements) {
 
   if (!elements || elements.length === 0) return;
-
-  if (lastExplanation && lastExplanation.thresholdRelated) {
-    showNormalExplanationBeforeResult(lastExplanation, elements);
-    return; 
-  }
   
   // Verwijder bestaande overlay indien aanwezig
   const oldOverlay = document.getElementById("result-overlay");
@@ -4621,11 +4616,21 @@ function renderNewElements(elements) {
   // Klik anywhere → reset
   overlay.onclick = () => {
     overlay.remove();
+    if (lastExplanation && lastExplanation.thresholdRelated) {
+      showThresholdExplanation(lastExplanation, null, () => {
+        // reset na klik op uitleg
+        openLeft = null;
+        openRight = null;
+        leftSide.innerHTML = "";
+        rightSide.innerHTML = "";
+        renderClosed();
+        updateClosedContainer();
+      });
+    } else {
     openLeft = null;
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
-
     renderClosed();
     updateClosedContainer();
   };
