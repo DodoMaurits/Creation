@@ -4370,20 +4370,10 @@ function checkCombination() {
   const firstMatch = matches[0];
 
   // 🔹 Check threshold-element dependency
-  if (firstMatch.uitleg?.thresholdElement) {
-    const needed = firstMatch.uitleg.thresholdElement.naam;
-    if (!unlockedElements.has(needed)) {
-      // toon overlay met titel + tekst van thresholdElement
-      showThresholdExplanation(
-        firstMatch.uitleg.thresholdElement,
-        null, // geen missing circles
-        () => {
-          selected.forEach(e => e.dom.classList.remove("selected"));
-          selected = [];
-        }
-      );
-      return; // stop verder uitvoeren
-    }
+  if (firstMatch.uitleg?.threshold || firstMatch.uitleg?.thresholdElement) {
+      return;
+  } else {
+      renderNewElements(newElements, firstMatch.vers);
   }
   
   // 🔹 Check threshold requirements
@@ -4428,8 +4418,10 @@ function checkCombination() {
   });
 
   lastExplanation = finalUitleg
-    ? { ...finalUitleg, thresholdRelated: false }
-    : null;
+    ? { ...finalUitleg, thresholdRelated: !!firstMatch.uitleg?.threshold }
+    : firstMatch.vers
+      ? { titel: "Vers", tekst: firstMatch.vers, thresholdRelated: false }
+      : null;
   newElements.forEach(el => unlockedElements.add(el.naam));
 
   const versLabelText = firstMatch.vers || null;
@@ -4628,16 +4620,6 @@ function renderNewElements(elements, vers = null) {
   // Klik anywhere → reset
   overlay.onclick = () => {
     overlay.remove();
-    if (lastExplanation && lastExplanation.thresholdRelated) {
-      showThresholdExplanation(lastExplanation, null, () => {
-        openLeft = null;
-        openRight = null;
-        leftSide.innerHTML = "";
-        rightSide.innerHTML = "";
-        renderClosed();
-        updateClosedContainer();
-      });
-    } else {
     openLeft = null;
     openRight = null;
     leftSide.innerHTML = "";
