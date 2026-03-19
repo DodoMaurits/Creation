@@ -316,6 +316,11 @@ body {
   margin: 0 auto;
 }
 
+.grid-closed.hidden,
+.icon-container.hidden {
+  pointer-events: none;
+}
+
 /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 .selected {
   width: 130px;
