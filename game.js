@@ -1627,6 +1627,7 @@ const combinaties = [
       ["Oerchondrichthyes", "Radioactiviteit"], ["Oerchondrichthyes", "Gif"],
       ["Oerstraalvinnigen", "Radioactiviteit"], ["Oerstraalvinnigen", "Gif"],
       ["Coelacanthen", "Radioactiviteit"], ["Coelacanthen", "Gif"],
+      ["Tiktaalik", "Radioactiviteit"], ["Tiktaalik", "Gif"],
       ["Longvissen", "Radioactiviteit"], ["Longvissen", "Gif"],
       ["Pissebedden", "Radioactiviteit"], ["Pissebedden", "Gif"],
       ["Garnalen", "Radioactiviteit"], ["Garnalen", "Gif"]
@@ -1691,6 +1692,7 @@ const combinaties = [
       ["Oerchondrichthyes", "Vuur"], ["Oerchondrichthyes", "Lava"],
       ["Oerstraalvinnigen", "Vuur"], ["Oerstraalvinnigen", "Lava"],
       ["Coelacanthen", "Vuur"], ["Coelacanthen", "Lava"],
+      ["Tiktaalik", "Vuur"], ["Tiktaalik", "Lava"],
       ["Longvissen", "Vuur"], ["Longvissen", "Lava"],
       ["Pissebedden", "Vuur"], ["Pissebedden", "Lava"],
       ["Garnalen", "Vuur"], ["Garnalen", "Lava"],
@@ -1742,8 +1744,8 @@ const combinaties = [
       ["Beerdiertjes", "Dood"], ["Mos", "Dood"], ["Inktvissen", "Dood"], ["Oercheliceraten", "Dood"], 
       ["Duizendpoten", "Dood"], ["Oerkreeftjes", "Dood"], ["Oerinsecten", "Dood"], ["Spinnen", "Dood"], ["Krill", "Dood"], 
       ["Oervaatplanten", "Dood"], ["Korstmos", "Dood"], ["Truffels", "Dood"], ["Paddenstoelen", "Dood"], 
-      ["Oerchondrichthyes", "Dood"], ["Oerstraalvinnigen", "Dood"], ["Coelacanthen", "Dood"], ["Longvissen", "Dood"], 
-      ["Pissebedden", "Dood"], ["Garnalen", "Dood"], ["Varens", "Dood"]
+      ["Oerchondrichthyes", "Dood"], ["Oerstraalvinnigen", "Dood"], ["Coelacanthen", "Dood"], ["Tiktaalik", "Dood"],
+      ["Longvissen", "Dood"], ["Pissebedden", "Dood"], ["Garnalen", "Dood"], ["Varens", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2506,6 +2508,7 @@ const combinaties = [
       ["Oerchondrichthyes", "Storm"], ["Oerchondrichthyes", "Orkaan"], ["Oerchondrichthyes", "Pijn"],
       ["Oerstraalvinnigen", "Storm"], ["Oerstraalvinnigen", "Orkaan"], ["Oerstraalvinnigen", "Pijn"],
       ["Coelacanthen", "Storm"], ["Coelacanthen", "Orkaan"], ["Coelacanthen", "Pijn"],
+      ["Tiktaalik", "Storm"], ["Tiktaalik", "Orkaan"], ["Tiktaalik", "Pijn"],
       ["Longvissen", "Storm"], ["Longvissen", "Orkaan"], ["Longvissen", "Pijn"],
       ["Haaien", "Storm"], ["Haaien", "Orkaan"], ["Haaien", "Pijn"],
       ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Pijn"]
@@ -2693,6 +2696,7 @@ const combinaties = [
       ["Oerstraalvinnigen", "Parasieten"],
       ["Coelacanthen", "Bacteriën"], ["Coelacanthen", "Virus"], ["Coelacanthen", "Schimmel"], 
       ["Coelacanthen", "Parasieten"],
+      ["Tiktaalik", "Bacteriën"], ["Tiktaalik", "Virus"], ["Tiktaalik", "Schimmel"], ["Tiktaalik", "Parasieten"],
       ["Longvissen", "Bacteriën"], ["Longvissen", "Virus"], ["Longvissen", "Schimmel"], ["Longvissen", "Parasieten"],
       ["Haaien", "Bacteriën"], ["Haaien", "Virus"], ["Haaien", "Schimmel"], ["Haaien", "Parasieten"],
       ["Holocefalen", "Bacteriën"], ["Holocefalen", "Virus"], ["Holocefalen", "Schimmel"], ["Holocefalen", "Parasieten"]
@@ -2733,9 +2737,9 @@ const combinaties = [
       ["Oerkreeftjes", "Oerkreeftjes"], ["Oerinsecten", "Oerinsecten"], ["Nautilussen", "Nautilussen"],
       ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], ["Zwaardstaarten", "Zwaardstaarten"],
       ["Krill", "Krill"], ["Oerchondrichthyes", "Oerchondrichthyes"], ["Oerstraalvinnigen", "Oerstraalvinnigen"],
-      ["Coelacanthen", "Coelacanthen"], ["Longvissen", "Longvissen"], ["Pissebedden", "Pissebedden"],
-      ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], ["Krabben", "Krabben"], ["Haaien", "Haaien"],
-      ["Holocefalen", "Holocefalen"]
+      ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], ["Longvissen", "Longvissen"], 
+      ["Pissebedden", "Pissebedden"], ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], ["Krabben", "Krabben"], 
+      ["Haaien", "Haaien"], ["Holocefalen", "Holocefalen"]
     ],
     hint: `Hm.. dieren van dezelfde soorten kunnen behoorlijk anders op elkaar reageren.`, 
     output: [
@@ -3049,6 +3053,7 @@ const combinaties = [
       ["Oerchondrichthyes", "Licht"], ["Oerchondrichthyes", "Kleur"],
       ["Oerstraalvinnigen", "Licht"], ["Oerstraalvinnigen", "Kleur"],
       ["Coelacanthen", "Licht"], ["Coelacanthen", "Kleur"],
+      ["Tiktaalik", "Licht"], ["Tiktaalik", "Kleur"],
       ["Longvissen", "Licht"], ["Longvissen", "Kleur"],
       ["Haaien", "Licht"], ["Haaien", "Kleur"],
       ["Holocefalen", "Licht"], ["Holocefalen", "Kleur"]
@@ -3888,7 +3893,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerstraalvinnigen", "Zenuwen"], ["Coelacanthen", "Zenuwen"], ["Longvissen", "Zenuwen"], 
+      ["Oerstraalvinnigen", "Zenuwen"], ["Coelacanthen", "Zenuwen"], ["Tiktaalik", "Zenuwen"], ["Longvissen", "Zenuwen"], 
       ["Oerchondrostei", "Zenuwen"], ["Oercladistia", "Zenuwen"], ["Oerneopterygen", "Zenuwen"]
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
@@ -4058,6 +4063,29 @@ const combinaties = [
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Tiktaalik", "Wormen"], ["Tiktaalik", "Oertrochozoa"], ["Tiktaalik", "Oergeleedpotigen"],
+      ["Tiktaalik", "Beerdiertjes"], ["Tiktaalik", "Oerkreeftjes"], ["Tiktaalik", "Oerinsecten"],
+      ["Tiktaalik", "Zwaardstaarten"], ["Tiktaalik", "Krill"], ["Tiktaalik", "Pissebedden"], ["Tiktaalik", "Garnalen"]
+    ],
+    output: [
+      { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png", map: "Vissen",
+        quote: `Tiktaalik is a fish with a neck and wrists — a mix of features that shows us how bodies were reshaped as 
+        vertebrates moved onto land
+        <br><br>- Neil Shubin`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -4299,7 +4327,8 @@ const combinaties = [
   {
     input: [
       ["Haaien", "Lancetvisjes"], ["Haaien", "Agnathen"], ["Haaien", "Inktvissen"], ["Haaien", "Oerchondrichthyes"],
-      ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Longvissen"], ["Haaien", "Holocefalen"]
+      ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Tiktaalik"], ["Haaien", "Longvissen"], 
+      ["Haaien", "Holocefalen"]
     ],
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
