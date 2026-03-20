@@ -418,6 +418,18 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Graniet", "Graniet"], ["Graniet", "Basalt"], ["Basalt", "Basalt"]
+    ],
+    output: [
+      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
+        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
+        pressure (e.g. air pressure) is exerted inwards from all directions equally 
+        <br><br>- Viktor Schawberger`
+      }
+    ]
+  },
+  {
     input: ["Platentektoniek", "IJzer"],
     hint: `Al die beweging op dat aardoppervlak, dat zal vast iets doen met de kern.`,
     output: [
