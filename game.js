@@ -1830,6 +1830,10 @@ const combinaties = [
         carried wisdom humans would never be around long enough to understand 
         <br><br>- Anthony Doerr`
       },
+      { naam: "Zuurstof", icoon: "icons/Zuurstof.png", map: "Lucht",
+       quote: `Singing is like a celebration of oxygen
+       <br><br>- Bjork`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
