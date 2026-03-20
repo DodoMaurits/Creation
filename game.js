@@ -4553,7 +4553,10 @@ function attachTooltip(el, text) {
   let tooltip;
 
   el.addEventListener("mouseenter", () => {
-    if (el.offsetParent === null) return; // niet zichtbaar → stop
+    document.querySelectorAll(".tooltip-floating").forEach(t => t.remove());
+
+    if (el.offsetParent === null) return;
+
     tooltip = document.createElement("div");
     tooltip.className = "tooltip-floating visible";
     tooltip.textContent = text;
