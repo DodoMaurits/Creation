@@ -436,7 +436,7 @@ const combinaties = [
       ["Kalksteen", "Zandsteen"], ["Kalksteen", "Kalksteen"],
       ["Fylliet", "Graniet"], ["Fylliet", "Basalt"], ["Fylliet", "Obsidiaan"], ["Fylliet", "Tufsteen"], 
       ["Fylliet", "Kleisteen"], ["Fylliet", "Schalie"], ["Fylliet", "Gipssteen"], ["Fylliet", "Leisteen"],
-      ["Fylliet", "Zandsteen"], ["Fylliet", "Kalksteen"], ["Fylliet", "Fylliet"]
+      ["Fylliet", "Zandsteen"], ["Fylliet", "Kalksteen"], ["Fylliet", "Fylliet"],
       ["Kwartsiet", "Graniet"], ["Kwartsiet", "Basalt"], ["Kwartsiet", "Obsidiaan"], ["Kwartsiet", "Tufsteen"], 
       ["Kwartsiet", "Kleisteen"], ["Kwartsiet", "Schalie"], ["Kwartsiet", "Gipssteen"], ["Kwartsiet", "Leisteen"],
       ["Kwartsiet", "Zandsteen"], ["Kwartsiet", "Kalksteen"], ["Kwartsiet", "Fylliet"], ["Kwartsiet", "Kwartsiet"],
