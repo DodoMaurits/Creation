@@ -4374,6 +4374,18 @@ const combinaties = [
     ]
   },
   {
+    input: ["Blad", "Oervaatplanten"],
+    hint: `Stengels vol water en bladeren vol energie - een gouden combinatie.`,
+    tijd: 400_000_000,
+    output: [
+      { naam: "Varens", icoon: "icons/Varens.png", map: "Planten", 
+        quote: `Only spread a fern-frond over a man's head and worldly cares are cast out, and freedom and
+        beauty and peace come in
+        <br><br>- John Muir`
+      }
+    ]
+  },
+  {
     input: [
       ["Haaien", "Kwallen"], ["Haaien", "Bloemdieren"], ["Haaien", "Wormen"], ["Haaien", "Oertrochozoa"],
       ["Haaien", "Manteldieren"], ["Haaien", "Oerkreeftjes"], ["Haaien", "Zwaardstaarten"], ["Haaien", "Krill"], 
@@ -4545,24 +4557,40 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerpolyneopteren", "Evolutie"],
+    hint: `Insecten met langgerekte, rechte vleugels.. we zullen zien wat daaruit komt.`,
+    output: [
+      { naam: "Krekels", icoon: "icons/Krekels.png", map: "Klein landleven", 
+        quote: `I love being outdoors. I love listening to the crickets
+        <br><br>- Miranda Kerr`
+      },
+      { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
+        quote: `Now climb, young grasshopper, so your Kung Fu won't be weak
+        <br><br>- Hona Andrews`
+      },
+      { naam: "Wandelende takken", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
+        quote: `Stick insects are masters of disguise, their bodies sculpted by evolution to vanish in plain sight
+        <br><br>- Paul Brock`
+      },
+      { naam: "Kakkerlakken", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
+        quote: `Both the cockroach and the bird would get along very well without us, although the cockroach would miss us
+        most
+        <br><br>- Joseph Krutch`
+      },
+      { naam: "Termieten", icoon: "icons/Termieten.png", map: "Klein landleven", 
+        quote: `But once the ants and termites jumped the high barrier that prevents the vast variety of evovling animal
+        groups from becoming fully social, they dominated the world
+        <br><br>- E.O. Wilson`
+      }
+    ]
+  },
+  {
     input: ["Veen", "Druk"],
     hint: `Met vegetatie onder druk groeit brandstof als kool.`,
     output: [
       { naam: "Bruinkool", icoon: "icons/Bruinkool.png", map: "Aarde", 
         quote: `Even coal shimmers in the light
         <br><br>- Jocelyn Murray`
-      }
-    ]
-  },
-  {
-    input: ["Blad", "Oervaatplanten"],
-    hint: `Stengels vol water en bladeren vol energie - een gouden combinatie.`,
-    tijd: 400_000_000,
-    output: [
-      { naam: "Varens", icoon: "icons/Varens.png", map: "Planten", 
-        quote: `Only spread a fern-frond over a man's head and worldly cares are cast out, and freedom and
-        beauty and peace come in
-        <br><br>- John Muir`
       }
     ]
   },
