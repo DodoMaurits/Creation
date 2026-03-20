@@ -1931,7 +1931,7 @@ const combinaties = [
         quote: `Thought, like any parasite, cannot exist without a compliant host 
         <br><br>- Bernard Beckett`
       },
-      { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Pril leven", 
+      { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Waterdieren", 
         quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
         must first be able to absorb it well 
         <br><br>- Jim Rohn`
@@ -2117,7 +2117,7 @@ const combinaties = [
       ["Sponzen", "Bacteriën"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Foraminiferen"], ["Sponzen", "Stralendiertjes"]
     ],
     output: [
-      { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Pril leven", 
+      { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Waterdieren", 
         quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
         must first be able to absorb it well 
         <br><br>- Jim Rohn`
