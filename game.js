@@ -3692,6 +3692,11 @@ const combinaties = [
         more pure
         <br><br>- David Lynch`
       },
+      { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png", map: "Vissen",
+        quote: `Tiktaalik is a fish with a neck and wrists — a mix of features that shows us how bodies were reshaped as 
+        vertebrates moved onto land
+        <br><br>- Neil Shubin`
+      },
       { naam: "Longvissen", icoon: "icons/Longvissen.png", map: "Vissen",
         quote: `Our lungs are best when we don't realize they are helping us breathe
         <br><br>- Lao Tzu`
