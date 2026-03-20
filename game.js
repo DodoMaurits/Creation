@@ -4334,6 +4334,11 @@ const combinaties = [
         and terrestrial lifestyles emerged in evolution
         <br><br>- Ben Wipfler`
       },
+      { naam: "Oerhymenopteren", icoon: "icons/Oerhymenopteren.png", map: "Klein landleven", 
+        quote: `The evolution of ants, bees, and wasps demonstrates how complex social systems and cooperation can arise 
+        from simple beginnings
+        <br><br>- E.O. Wilson`
+      },
       { naam: "Luizen", icoon: "icons/Luizen.png", map: "Klein landleven", 
         quote: `The louse, a wingless parasite, has shaped history far more than its size would suggest
         <br><br>- Hans Zinsser`
