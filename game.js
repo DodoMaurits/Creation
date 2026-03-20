@@ -4578,7 +4578,7 @@ const combinaties = [
         <br><br>- Joseph Krutch`
       },
       { naam: "Termieten", icoon: "icons/Termieten.png", map: "Klein landleven", 
-        quote: `But once the ants and termites jumped the high barrier that prevents the vast variety of evovling animal
+        quote: `But once the ants and termites jumped the high barrier that prevents the vast variety of evolving animal
         groups from becoming fully social, they dominated the world
         <br><br>- E.O. Wilson`
       }
