@@ -455,7 +455,16 @@ const combinaties = [
       ["Gneis", "Graniet"], ["Gneis", "Basalt"], ["Gneis", "Obsidiaan"], ["Gneis", "Tufsteen"], 
       ["Gneis", "Kleisteen"], ["Gneis", "Schalie"], ["Gneis", "Gipssteen"], ["Gneis", "Leisteen"],
       ["Gneis", "Zandsteen"], ["Gneis", "Kalksteen"], ["Gneis", "Fylliet"], ["Gneis", "Kwartsiet"], 
-      ["Gneis", "Marmer"], ["Gneis", "Calciet"], ["Gneis", "Schist"], ["Gneis", "Gneis"]
+      ["Gneis", "Marmer"], ["Gneis", "Calciet"], ["Gneis", "Schist"], ["Gneis", "Gneis"],
+      ["Mica", "Graniet"], ["Mica", "Basalt"], ["Mica", "Obsidiaan"], ["Mica", "Tufsteen"], 
+      ["Mica", "Kleisteen"], ["Mica", "Schalie"], ["Mica", "Gipssteen"], ["Mica", "Leisteen"],
+      ["Mica", "Zandsteen"], ["Mica", "Kalksteen"], ["Mica", "Fylliet"], ["Mica", "Kwartsiet"], 
+      ["Mica", "Marmer"], ["Mica", "Calciet"], ["Mica", "Schist"], ["Mica", "Gneis"], ["Mica", "Mica"],
+      ["Veldspaat", "Graniet"], ["Veldspaat", "Basalt"], ["Veldspaat", "Obsidiaan"], ["Veldspaat", "Tufsteen"], 
+      ["Veldspaat", "Kleisteen"], ["Veldspaat", "Schalie"], ["Veldspaat", "Gipssteen"], ["Veldspaat", "Leisteen"],
+      ["Veldspaat", "Zandsteen"], ["Veldspaat", "Kalksteen"], ["Veldspaat", "Fylliet"], ["Veldspaat", "Kwartsiet"], 
+      ["Veldspaat", "Marmer"], ["Veldspaat", "Calciet"], ["Veldspaat", "Schist"], ["Veldspaat", "Gneis"], 
+      ["Veldspaat", "Mica"], ["Veldspaat", "Veldspaat"]
     ],
     output: [
       { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
