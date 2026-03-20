@@ -2900,7 +2900,7 @@ const combinaties = [
         where arthropods in particular explored a bewildering variety of forms
         <br><br>- Richard Fortey`
       },
-      { naam: "Duizendpoten", icoon: "icons/Duizendpoten.png", map: "Geleedpotigen", 
+      { naam: "Duizendpoten", icoon: "icons/Duizendpoten.png", map: "Klein landleven", 
         quote: `The centipede has rhythm and flow in its hundred legs precisely because it does not have to think
         about it
         <br><br>- Robert Genn`
@@ -3291,12 +3291,12 @@ const combinaties = [
         quote: `The horseshoe crab is a reminder that survival does not always require change
         <br><br>- Stephen Gould`
       },
-      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Geleedpotigen", 
+      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
       },
-      { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Geleedpotigen", 
+      { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Klein landleven", 
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
@@ -3335,7 +3335,7 @@ const combinaties = [
       ["Duizendpoten", "Oerinsecten"], ["Duizendpoten", "Garnalen"]
     ],
     output: [
-      { naam: "Duizendpoten", icoon: "icons/Duizendpoten.png", map: "Geleedpotigen", 
+      { naam: "Duizendpoten", icoon: "icons/Duizendpoten.png", map: "Klein landleven", 
         quote: `The centipede has rhythm and flow in its hundred legs precisely because it does not have to think
         about it
         <br><br>- Robert Genn`
@@ -3502,7 +3502,7 @@ const combinaties = [
     ],
     hint: `Het is evolutionair handig als prooien meteen verlamd worden door giftige stofjes.`,
     output: [
-      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Geleedpotigen", 
+      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
@@ -3529,7 +3529,7 @@ const combinaties = [
       ["Spinnen", "Duizendpoten"], ["Spinnen", "Oerkreeftjes"], ["Spinnen", "Oerinsecten"], ["Spinnen", "Garnalen"]
     ],
     output: [
-      { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Geleedpotigen", 
+      { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Klein landleven", 
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
@@ -3693,7 +3693,7 @@ const combinaties = [
     input: ["Oerkreeftjes", "Evolutie"],
     hint: `Uit de eerste kreeftachtige verschijnen een hoop herkenbare soorten.`,
     output: [
-      { naam: "Pissebedden", icoon: "icons/Pissebedden.png", map: "Geleedpotigen", 
+      { naam: "Pissebedden", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
         Each tells a story
         <br><br>- Fennel Hudson`
@@ -4075,7 +4075,7 @@ const combinaties = [
       ["Pissebedden", "Bacteriën"], ["Pissebedden", "Schimmel"], ["Pissebedden", "Paddenstoelen"]
     ],
     output: [
-      { naam: "Pissebedden", icoon: "icons/Pissebedden.png", map: "Geleedpotigen", 
+      { naam: "Pissebedden", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
         Each tells a story
         <br><br>- Fennel Hudson`
@@ -4482,6 +4482,7 @@ const groepsIconen = {
   "Planten": "icons/Planten.png",
   "Vissen": "icons/Vissen.png",
   "Geleedpotigen": "icons/Geleedpotigen.png",
+  "Klein landleven": "icons/Klein landleven.png",
   "Vruchten": "icons/Vruchten.png",
 };
 
