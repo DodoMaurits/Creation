@@ -3749,6 +3749,30 @@ const combinaties = [
     }
   },
   {
+    input: ["Oerinsecten", "Evolutie"],
+    hint: `Met een kleine evolutionaire aanpassing gaan deze kleine beestjes de lucht in.`,
+    tijd: 410_000_000,
+    output: [
+      { naam: "Vleugels", icoon: "icons/Vleugels.png", map: "Biologie", 
+        quote: `Until you spread your wings, you'll have no idea how far you can fly
+        <br><br>- Napoleon Bonaparte`
+      },
+      { naam: "Zilvervisjes", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
+        quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
+        insect evolution
+        <br><br>- Norman Platnick`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oervaatplanten", 
+        titel: "Probeer opnieuw in het Siluur",
+        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
+        gezet kan worden.`
+      }
+    }
+  },
+  {
     input: [
       ["Oervaatplanten", "Ven"], ["Varens", "Ven"]
     ],
