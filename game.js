@@ -1561,18 +1561,6 @@ const combinaties = [
   },
   {
     input: [
-      ["Leven", "Kalk"], ["Evolutie", "Kalk"], ["Oerbilateria", "Kalk"]
-    ],
-    hint: `Wat leven wel niet met een beetje kalk kan doen...`,
-    output: [
-      { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
-        quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
-        <br><br>- Sue Monk Kidd`
-      }
-    ]
-  },
-  {
-    input: [
       ["Luca", "Elektriciteit"], ["Luca", "Leven"]
     ],
     hint: `Een grotere schok is nodig om de motortjes van die zombiecellen te laten blijven draaien...`,
@@ -2196,6 +2184,18 @@ const combinaties = [
       { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
         quote: `In every person there is a sun. Just let them shine 
         <br><br>- Socrates`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Koraal", "Kalk"], ["Oerbilateria", "Kalk"], ["Wormen", "Kalk"], ["Zeesterren", "Kalk"]
+    ],
+    hint: `Wat leven wel niet met een beetje kalk kan doen...`,
+    output: [
+      { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
+        quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
+        <br><br>- Sue Monk Kidd`
       }
     ]
   },
