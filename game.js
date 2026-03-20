@@ -1956,6 +1956,19 @@ const combinaties = [
   },
   {
     input: [
+      ["Zuurstof", "Straling"], ["Zuurstof", "Ster"], ["Licht", "Zuurstof"]
+    ],
+    hint: `UV-straling splitst zuurstof op en vormt tezamen met zuurstof iets nieuws.`,
+    output: [
+      { naam: "Ozon", icoon: "icons/Ozon.png", map: "Lucht", 
+        quote: `Man must rise above the Earth to the top of the atmosphere and beyond - for only thus will he fully
+        understand the world in which he lives
+        <br><br>- Socrates`
+      }
+    ]
+  },
+  {
+    input: [
       ["Amoeben", "Bacteriën"], ["Amoeben", "Blauwalgen"]
     ],
     output: [
@@ -2376,17 +2389,6 @@ const combinaties = [
       { naam: "Krijt", icoon: "icons/Krijt.png", map: "Aarde", 
         quote: `Teachers can change lives with just the right mix of chalk and challenges
         <br><br>- Joyce Meyer`
-      }
-    ]
-  },
-  {
-    input: ["Licht", "Zuurstof"],
-    hint: `UV-straling splitst zuurstof op en vormt tezamen met zuurstof iets nieuws.`,
-    output: [
-      { naam: "Ozon", icoon: "icons/Ozon.png", map: "Lucht", 
-        quote: `Man must rise above the Earth to the top of the atmosphere and beyond - for only thus will he fully
-        understand the world in which he lives
-        <br><br>- Socrates`
       }
     ]
   },
