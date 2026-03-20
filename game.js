@@ -5173,7 +5173,9 @@ function getAvailableHints() {
     }
 
     // -------- ALS ALLES OK IS --------
-    availableHints.push(c.hint);
+    if (typeof c.hint === "string" && c.hint.trim() !== "") {
+      availableHints.push(c.hint);
+    }
   }
   
   return availableHints;
