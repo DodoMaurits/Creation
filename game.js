@@ -4357,7 +4357,7 @@ const combinaties = [
         <br><br>- May Berenbaum`
       },
       { naam: "Vlinders", icoon: "icons/Vlinders.png", map: "Klein landleven", 
-        quote: `We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achive 
+        quote: `We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve 
         that beauty
         <br><br>- Maya Angelou`
       }
