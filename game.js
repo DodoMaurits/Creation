@@ -1309,7 +1309,7 @@ const combinaties = [
   {
     input: [
       ["Kalk", "Warmte"], ["Kalk", "Zee"], ["Kalk", "Zand"], ["Druk", "Kalk"], ["Druk", "Schelp"], ["Druk", "Koraal"],
-      ["Bloemdieren", "Druk"], ["Zeesterren", "Druk"], ["Zeeanemonen", "Druk"], ["Zeeslakken", "Druk"], 
+      ["Zeesterren", "Druk"], ["Zeeanemonen", "Druk"], ["Zeeslakken", "Druk"], 
       ["Tweekleppigen", "Druk"], ["Nautilussen", "Druk"]
     ],
     hint: `Tot op het bot verkalken... dat wordt weer steen.`,
@@ -1602,7 +1602,6 @@ const combinaties = [
       ["Steenwortelalgen", "Radioactiviteit"], ["Steenwortelalgen", "IJs"], ["Steenwortelalgen", "Gif"],
       ["Groenwieren", "Radioactiviteit"], ["Groenwieren", "IJs"], ["Groenwieren", "Gif"],
       ["Kwallen", "Radioactiviteit"], ["Kwallen", "IJs"], ["Kwallen", "Gif"],
-      ["Bloemdieren", "Radioactiviteit"], ["Bloemdieren", "IJs"], ["Bloemdieren", "Gif"],
       ["Zeeanemonen", "Radioactiviteit"], ["Zeeanemonen", "IJs"], ["Zeeanemonen", "Gif"],
       ["Oertrochozoa", "Radioactiviteit"], ["Oertrochozoa", "IJs"], ["Oertrochozoa", "Gif"],
       ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "IJs"], ["Lancetvisjes", "Gif"],
@@ -1668,7 +1667,6 @@ const combinaties = [
       ["Steenwortelalgen", "Vuur"], ["Steenwortelalgen", "Lava"],
       ["Groenwieren", "Vuur"], ["Groenwieren", "Lava"],
       ["Kwallen", "Vuur"], ["Kwallen", "Lava"],
-      ["Bloemdieren", "Vuur"], ["Bloemdieren", "Lava"],
       ["Wormen", "Vuur"], ["Wormen", "Lava"],
       ["Zeesterren", "Vuur"], ["Zeesterren", "Lava"],
       ["Zeeanemonen", "Vuur"], ["Zeeanemonen", "Lava"],
@@ -1739,7 +1737,6 @@ const combinaties = [
       ["Parasieten", "Dood"], ["Archaeplastiden", "Dood"], ["Gist", "Dood"], ["Koraal", "Dood"], ["Rode algen", "Dood"], 
       ["Groene algen", "Dood"], ["Oercnidaria", "Dood"], ["Oerbilateria", "Dood"], ["Plakdiertjes", "Dood"], 
       ["Roodwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"], ["Kwallen", "Dood"], 
-      ["Bloemdieren", "Dood"], ["Wormen", "Dood"], ["Zeesterren", "Dood"], ["Zeeanemonen", "Dood"], 
       ["Oertrochozoa", "Dood"], ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Oergeleedpotigen", "Dood"], ["Manteldieren", "Dood"], 
       ["Beerdiertjes", "Dood"], ["Mos", "Dood"], ["Inktvissen", "Dood"], ["Oercheliceraten", "Dood"], 
       ["Duizendpoten", "Dood"], ["Oerkreeftjes", "Dood"], ["Oerinsecten", "Dood"], ["Spinnen", "Dood"], ["Krill", "Dood"], 
@@ -2083,7 +2080,6 @@ const combinaties = [
   {
     input: [
       ["Sponzen", "Kalk"], ["Sponzen", "Bot"], ["Sponzen", "Evolutie"],
-      ["Bloemdieren", "Kalk"], ["Bloemdieren", "Bot"]
     ],
     hint: `Wat nou... als sponzen skeletten zouden maken?`,
     tijd: 580_000_000,
@@ -2187,7 +2183,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Zenuwen", "Koraal"], ["Bloemdieren", "Zenuwen"], ["Zeeanemonen", "Zenuwen"]
+      ["Zenuwen", "Koraal"], ["Zeeanemonen", "Zenuwen"]
     ],
     hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
@@ -2316,9 +2312,9 @@ const combinaties = [
         opening through which it both eats and excretes - as regrettable an example of economy of design as ever was 
         <br><br>- Jeffrey Kluger`
       },
-      { naam: "Bloemdieren", icoon: "icons/Bloemdieren.png", map: "Waterdieren",
-        quote: `The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul 
-        <br><br>- Robert Wyland`
+      { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
+        quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
+        <br><br>- Charles Darwin`
       },
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
         quote: `Thought, like any parasite, cannot exist without a compliant host
@@ -2415,40 +2411,6 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Bloemdieren", "Bacteriën"], ["Bloemdieren", "Blauwalgen"], ["Bloemdieren", "Leca"], ["Bloemdieren", "Amoeben"],
-      ["Bloemdieren", "Foraminiferen"], ["Bloemdieren", "Stralendiertjes"], ["Bloemdieren", "Wormen"], 
-      ["Bloemdieren", "Beerdiertjes"], ["Bloemdieren", "Krill"], ["Bloemdieren", "Garnalen"]
-    ],
-    output: [
-      { naam: "Bloemdieren", icoon: "icons/Bloemdieren.png", map: "Waterdieren",
-        quote: `The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul 
-        <br><br>- Robert Wyland`
-      },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
-    input: ["Bloemdieren", "Evolutie"],
-    hint: `Sommige dieren zijn als bloemen en komen dan tot bloei...`,
-    tijd: 580_000_000,
-    output: [
-      { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
-        quote: `The sea-anemone, though fixed to the rock, is a most voracious and living creature 
-        <br><br>- Charles Darwin`
       }
     ]
   },
@@ -3069,7 +3031,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Inktvissen", "Kwallen"], ["Inktvissen", "Bloemdieren"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],
+      ["Inktvissen", "Kwallen"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],
       ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Oerkreeftjes"],
       ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Krill"], ["Inktvissen", "Garnalen"]
     ],
@@ -3452,7 +3414,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Nautilussen", "Kwallen"], ["Nautilussen", "Bloemdieren"], ["Nautilussen", "Wormen"], 
+      ["Nautilussen", "Kwallen"], ["Nautilussen", "Wormen"], 
       ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Oergeleedpotigen"], ["Nautilussen", "Manteldieren"], 
       ["Nautilussen", "Oerkreeftjes"], ["Nautilussen", "Krill"], ["Nautilussen", "Garnalen"], ["Nautilussen", "Kreeften"], 
       ["Nautilussen", "Krabben"]
@@ -4386,7 +4348,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Haaien", "Kwallen"], ["Haaien", "Bloemdieren"], ["Haaien", "Wormen"], ["Haaien", "Oertrochozoa"],
+      ["Haaien", "Kwallen"], ["Haaien", "Wormen"], ["Haaien", "Oertrochozoa"],
       ["Haaien", "Manteldieren"], ["Haaien", "Oerkreeftjes"], ["Haaien", "Zwaardstaarten"], ["Haaien", "Krill"], 
       ["Haaien", "Garnalen"], ["Haaien", "Kreeften"], ["Haaien", "Krabben"]
     ],
