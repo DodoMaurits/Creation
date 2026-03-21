@@ -3920,7 +3920,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerchondrichthyes", "Evolutie"],
+    input: ["Oerstraalvinnigen", "Evolutie"],
     hint: ``,
     output: [
       { naam: "Oerchondrostei", icoon: "icons/Oerchondrostei.png", map: "Vissen",
