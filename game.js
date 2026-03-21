@@ -4376,8 +4376,12 @@ const combinaties = [
   {
     input: ["Blad", "Oervaatplanten"],
     hint: `Stengels vol water en bladeren vol energie - een gouden combinatie.`,
-    tijd: 400_000_000,
+    tijd: 365_000_000,
     output: [
+      { naam: "Zaadjes", icoon: "icons/Zaadjes.png", map: "Biologie", 
+        quote: `Each day of my life I am sowing seeds that one day I will harvest
+        <br><br>- Guatama Buddha`
+      },
       { naam: "Varens", icoon: "icons/Varens.png", map: "Planten", 
         quote: `Only spread a fern-frond over a man's head and worldly cares are cast out, and freedom and
         beauty and peace come in
@@ -4594,6 +4598,30 @@ const combinaties = [
       }
     ]
   },
+//------------ THRESHOLD 5: CARBOON --------------//
+  {
+    input: ["Zaadjes", "Oervaatplanten"],
+    hint: `Het is tijd voor planten om groot te worden...`,
+    tijd: 359_000_000,
+    output: [
+      { naam: "Oerzaadplanten", icoon: "icons/Oerzaadplanten.png", map: "Planten", 
+        quote: `Keep planting new seeds until your mind becomes the earth that gives birth to new worlds
+        <br><br>- Curtis Tyrone Jones`
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Carboon", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: ["Paddenstoelen", "Kreeften", "Vleugels", "Moeras", "Haaien", "Geluid", "Oerchondrostei", 
+          "Oercladistia", "Oerneopterygen", "Oertetrapoden", "Bruinkool"]
+      },
+      normal: {
+        titel: "Carboon",
+        tekst: `Tijd om met zaadjes en eieren verder het droge op te gaan...`,
+      }
+    }
+  },
   {
     input: ["Bruinkool", "Druk"],
     hint: `Kolen kunnen ook verstenen...`,
@@ -4602,8 +4630,15 @@ const combinaties = [
         quote: `Without a whole lot of pressure, a diamond is just a piece of coal
         <br><br>- Miriam`
       }
-    ]
-  }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oerzaadplanten", 
+        titel: "Probeer opnieuw in het Carboon",
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
+      }
+    }
+  },
 ];
 
 
