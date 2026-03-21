@@ -3927,7 +3927,7 @@ const combinaties = [
         quote: `
         <br><br>- `
       },
-      { naam: "Oercladistia", icoon: "icons/Oercladistia.png", map: "Vissen",
+      { naam: "Wimpelalen", icoon: "icons/Wimpelalen.png", map: "Vissen",
        quote: `
        <br><br>- `
       },
@@ -3940,7 +3940,7 @@ const combinaties = [
   {
     input: [
       ["Oerstraalvinnigen", "Zenuwen"], ["Coelacanthen", "Zenuwen"], ["Tiktaalik", "Zenuwen"], ["Longvissen", "Zenuwen"], 
-      ["Oerchondrostei", "Zenuwen"], ["Oercladistia", "Zenuwen"], ["Oerneopterygen", "Zenuwen"]
+      ["Oerchondrostei", "Zenuwen"], ["Wimpelalen", "Zenuwen"], ["Oerneopterygen", "Zenuwen"]
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
     output: [
@@ -4608,7 +4608,7 @@ const combinaties = [
         titel: "Carboon", 
         tekst: "Je moet eerst nog wat meer halen...",
         requirements: ["Paddenstoelen", "Kreeften", "Vleugels", "Moeras", "Haaien", "Geluid", "Oerchondrostei", 
-          "Oercladistia", "Oerneopterygen", "Oertetrapoden", "Bruinkool"]
+          "Wimpelalen", "Oerneopterygen", "Oertetrapoden", "Bruinkool"]
       },
       normal: {
         titel: "Carboon",
