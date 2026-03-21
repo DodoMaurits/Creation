@@ -3322,6 +3322,10 @@ const combinaties = [
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
+      },
+      { naam: "Mijten", icoon: "icons/Mijten.png", map: "Klein landleven", 
+        quote: `Go pick up a mite — you’ve likely just found a new species or a fascinating example of nature’s diversity
+        <br><br>- Ray Fisher`
       }
     ]
   },
@@ -4326,44 +4330,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Vleugels", "Oerinsecten"],
-    hint: `Water, land.. nu is het de beurt aan gevleugelden in de lucht.`,
-    output: [
-      { naam: "Oerpolyneopteren", icoon: "icons/Oerpolyneopteren.png", map: "Klein landleven", 
-        quote: `Polyneoptera represent one of the major early branches of winged insects, helping us trace how wings 
-        and terrestrial lifestyles emerged in evolution
-        <br><br>- Ben Wipfler`
-      },
-      { naam: "Oerhymenopteren", icoon: "icons/Oerhymenopteren.png", map: "Klein landleven", 
-        quote: `The evolution of ants, bees, and wasps demonstrates how complex social systems and cooperation can arise 
-        from simple beginnings
-        <br><br>- E.O. Wilson`
-      },
-      { naam: "Luizen", icoon: "icons/Luizen.png", map: "Klein landleven", 
-        quote: `The louse, a wingless parasite, has shaped history far more than its size would suggest
-        <br><br>- Hans Zinsser`
-      },
-      { naam: "Kevers", icoon: "icons/Kevers.png", map: "Klein landleven", 
-        quote: `Beetles are endlessly inventive; every species is a tiny masterpiece of adaptation and design
-        <br><br>- May Berenbaum`
-      },
-      { naam: "Muggen", icoon: "icons/Muggen.png", map: "Klein landleven", 
-        quote: `A mountain is not nearly as much a wonder as a mosquito
-        <br><br>- Mokokoma Mokhonoana`
-      },
-      { naam: "Vliegen", icoon: "icons/Vliegen.png", map: "Klein landleven", 
-        quote: `Flies are marvelous creatures; their wings, eyes, and tiny bodies are engineered for a life 
-        we barely notice, yet they touch every corner of our world
-        <br><br>- May Berenbaum`
-      },
-      { naam: "Vlinders", icoon: "icons/Vlinders.png", map: "Klein landleven", 
-        quote: `We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve 
-        that beauty
-        <br><br>- Maya Angelou`
-      }
-    ]
-  },
-  {
     input: ["Moeras", "Detritus"],
     hint: `Al dat dood organisch materiaal is nooit weg en kan ophopen in laag water.`,
     output: [
@@ -4623,6 +4589,51 @@ const combinaties = [
     }
   },
   {
+    input: ["Vleugels", "Oerinsecten"],
+    hint: `Water, land.. nu is het de beurt aan gevleugelden in de lucht.`,
+    output: [
+      { naam: "Oerpolyneopteren", icoon: "icons/Oerpolyneopteren.png", map: "Klein landleven", 
+        quote: `Polyneoptera represent one of the major early branches of winged insects, helping us trace how wings 
+        and terrestrial lifestyles emerged in evolution
+        <br><br>- Ben Wipfler`
+      },
+      { naam: "Oerhymenopteren", icoon: "icons/Oerhymenopteren.png", map: "Klein landleven", 
+        quote: `The evolution of ants, bees, and wasps demonstrates how complex social systems and cooperation can arise 
+        from simple beginnings
+        <br><br>- E.O. Wilson`
+      },
+      { naam: "Luizen", icoon: "icons/Luizen.png", map: "Klein landleven", 
+        quote: `The louse, a wingless parasite, has shaped history far more than its size would suggest
+        <br><br>- Hans Zinsser`
+      },
+      { naam: "Kevers", icoon: "icons/Kevers.png", map: "Klein landleven", 
+        quote: `Beetles are endlessly inventive; every species is a tiny masterpiece of adaptation and design
+        <br><br>- May Berenbaum`
+      },
+      { naam: "Muggen", icoon: "icons/Muggen.png", map: "Klein landleven", 
+        quote: `A mountain is not nearly as much a wonder as a mosquito
+        <br><br>- Mokokoma Mokhonoana`
+      },
+      { naam: "Vliegen", icoon: "icons/Vliegen.png", map: "Klein landleven", 
+        quote: `Flies are marvelous creatures; their wings, eyes, and tiny bodies are engineered for a life 
+        we barely notice, yet they touch every corner of our world
+        <br><br>- May Berenbaum`
+      },
+      { naam: "Vlinders", icoon: "icons/Vlinders.png", map: "Klein landleven", 
+        quote: `We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve 
+        that beauty
+        <br><br>- Maya Angelou`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oerzaadplanten", 
+        titel: "Probeer opnieuw in het Carboon",
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
+      }
+    }
+  },
+  {
     input: ["Bruinkool", "Druk"],
     hint: `Kolen kunnen ook verstenen...`,
     output: [
@@ -4639,6 +4650,33 @@ const combinaties = [
       }
     }
   },
+//------------ THRESHOLD 6: PERM --------------//
+  {
+    input: ["Oerneopterygen", "Evolutie"],
+    hint: `Het is tijd voor de eerste grote gewervelde dieren om het land te betreden...`,
+    tijd: 299_000_000,
+    output: [
+      { naam: "Oerteleostvissen", icoon: "icons/Oerteleostvissen.png", map: "Vissen", 
+        quote: `
+        <br><br>-`
+      },
+      { naam: "Oerholostvissen", icoon: "icons/Oerholostvissen.png", map: "Vissen", 
+        quote: `
+        <br><br>-`
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Perm", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: ["Vlinders", "Ei", "Steenkool"]
+      },
+      normal: {
+        titel: "Carboon",
+        tekst: `Tijd om met zaadjes en eieren verder het droge op te gaan...`,
+      }
+    }
+  }
 ];
 
 
