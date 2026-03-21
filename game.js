@@ -4663,6 +4663,36 @@ const combinaties = [
     }
   },
   {
+    input: ["Tiktaalik", "Evolutie"],
+    hint: `De planten hebben hun zaadjes, nu is het aan de tetrapoden om hun eigen zaadjes te ontwikkelen.`,
+    output: [
+      { naam: "Ei", icoon: "icons/Ei.png", map: "Biologie",
+        quote: `The present was an egg laid by the past that had the future inside its shell
+        <br><br>- Zora Hurston`
+      },
+      { naam: "Salamanders", icoon: "icons/Salamanders.png", map: "Klein landleven",
+        quote: `Salamanders are tiny wizards of the animal world: lose a limb, and they simply grow it back, 
+        as if nature itself is performing a quiet magic
+        <br><br>- Randal Voss`
+      },
+      { naam: "Kikkers", icoon: "icons/Kikkers.png", map: "Klein landleven",
+        quote: `A frog in a well cannot conceive of the ocean
+        <br><br>- Zhuangzi`
+      },
+      { naam: "Padden", icoon: "icons/Padden.png", map: "Klein landleven",
+        quote: `The music of all creatures had to do with their loves, even of toads and frogs
+        <br><br>- Henry Thoreau`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oerzaadplanten", 
+        titel: "Probeer opnieuw in het Carboon",
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
+      }
+    }
+  },
+  {
     input: ["Bruinkool", "Druk"],
     hint: `Kolen kunnen ook verstenen...`,
     output: [
