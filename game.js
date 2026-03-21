@@ -3920,6 +3920,24 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerchondrichthyes", "Evolutie"],
+    hint: ``,
+    output: [
+      { naam: "Oerchondrostei", icoon: "icons/Oerchondrostei.png", map: "Vissen",
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Oercladistia", icoon: "icons/Oercladistia.png", map: "Vissen",
+       quote: `
+       <br><br>- `
+      },
+      { naam: "Oerneopterygen", icoon: "icons/Oerneopterygen.png", map: "Vissen", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
+  {
     input: [
       ["Oerstraalvinnigen", "Zenuwen"], ["Coelacanthen", "Zenuwen"], ["Tiktaalik", "Zenuwen"], ["Longvissen", "Zenuwen"], 
       ["Oerchondrostei", "Zenuwen"], ["Oercladistia", "Zenuwen"], ["Oerneopterygen", "Zenuwen"]
@@ -4100,6 +4118,16 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: ["Tiktaalik", "Evolutie"],
+    hint: ``,
+    output: [
+      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        quote: `
+        <br><br>- `
       }
     ]
   },
@@ -4672,8 +4700,8 @@ const combinaties = [
         requirements: ["Vlinders", "Ei", "Steenkool"]
       },
       normal: {
-        titel: "Carboon",
-        tekst: `Tijd om met zaadjes en eieren verder het droge op te gaan...`,
+        titel: "Perm",
+        tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
       }
     }
   }
