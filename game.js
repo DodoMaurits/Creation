@@ -4556,34 +4556,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerpolyneopteren", "Evolutie"],
-    hint: `Insecten met langgerekte, rechte vleugels.. we zullen zien wat daaruit komt.`,
-    output: [
-      { naam: "Krekels", icoon: "icons/Krekels.png", map: "Klein landleven", 
-        quote: `I love being outdoors. I love listening to the crickets
-        <br><br>- Miranda Kerr`
-      },
-      { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
-        quote: `Now climb, young grasshopper, so your Kung Fu won't be weak
-        <br><br>- Hona Andrews`
-      },
-      { naam: "Wandelende takken", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
-        quote: `Stick insects are masters of disguise, their bodies sculpted by evolution to vanish in plain sight
-        <br><br>- Paul Brock`
-      },
-      { naam: "Kakkerlakken", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
-        quote: `Both the cockroach and the bird would get along very well without us, although the cockroach would miss us
-        most
-        <br><br>- Joseph Krutch`
-      },
-      { naam: "Termieten", icoon: "icons/Termieten.png", map: "Klein landleven", 
-        quote: `But once the ants and termites jumped the high barrier that prevents the vast variety of evolving animal
-        groups from becoming fully social, they dominated the world
-        <br><br>- E.O. Wilson`
-      }
-    ]
-  },
-  {
     input: ["Veen", "Druk"],
     hint: `Met vegetatie onder druk groeit brandstof als kool.`,
     output: [
@@ -4709,17 +4681,37 @@ const combinaties = [
       }
     }
   },
+  {
+    input: ["Oerzaadplanten", "Evolutie"],
+    hint: `Zaadjes brengen planten in drogere gebieden, waar ze bomen vormen.`,
+    output: [
+      { naam: "Hout", icoon: "icons/Hout.png", map: "Biologie", 
+        quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
+        <br><br>- Aristoteles`
+      },
+      { naam: "Coniferen", icoon: "icons/Coniferen.png", map: "Planten", 
+        quote: `The pine endures the winter winds, its needles unwavering, a friend to the solitary scholar
+        <br><br>- Wang Wei`
+      },
+      { naam: "Palmvarens", icoon: "icons/Palmvarens.png", map: "Planten", 
+        quote: `The romance of cycads, the gymnosperms that have been with us so long, can never be matched by any 
+        somber row of pines standing in the churchyard of science and memory
+        <br><br>- Edith Roberts`
+      },
+      { naam: "Ginkgo", icoon: "icons/Ginkgo.png", map: "Planten", 
+        quote: `This leaf from a tree in the East … has been given to my garden. It reveals a certain secret which 
+        pleases me and thoughtful people
+        <br><br>- Johan von Goethe`
+      }
+    ]
+  },
 //------------ THRESHOLD 6: PERM --------------//
   {
-    input: ["Oerneopterygen", "Evolutie"],
+    input: ["Ei", "Oertetrapoden"],
     hint: `Het is tijd voor de eerste grote gewervelde dieren om het land te betreden...`,
     tijd: 299_000_000,
     output: [
-      { naam: "Oerteleostvissen", icoon: "icons/Oerteleostvissen.png", map: "Vissen", 
-        quote: `
-        <br><br>-`
-      },
-      { naam: "Oerholostvissen", icoon: "icons/Oerholostvissen.png", map: "Vissen", 
+      { naam: "Binnenkort", icoon: "icons/.png", map: "Binnenkort", 
         quote: `
         <br><br>-`
       }
@@ -4733,6 +4725,41 @@ const combinaties = [
       normal: {
         titel: "Perm",
         tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
+      }
+    }
+  },
+  {
+    input: ["Oerpolyneopteren", "Evolutie"],
+    hint: `Insecten met langgerekte, rechte vleugels.. we zullen zien wat daaruit komt.`,
+    output: [
+      { naam: "Krekels", icoon: "icons/Krekels.png", map: "Klein landleven", 
+        quote: `I love being outdoors. I love listening to the crickets
+        <br><br>- Miranda Kerr`
+      },
+      { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
+        quote: `Now climb, young grasshopper, so your Kung Fu won't be weak
+        <br><br>- Hona Andrews`
+      },
+      { naam: "Wandelende takken", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
+        quote: `Stick insects are masters of disguise, their bodies sculpted by evolution to vanish in plain sight
+        <br><br>- Paul Brock`
+      },
+      { naam: "Kakkerlakken", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
+        quote: `Both the cockroach and the bird would get along very well without us, although the cockroach would miss us
+        most
+        <br><br>- Joseph Krutch`
+      },
+      { naam: "Termieten", icoon: "icons/Termieten.png", map: "Klein landleven", 
+        quote: `But once the ants and termites jumped the high barrier that prevents the vast variety of evolving animal
+        groups from becoming fully social, they dominated the world
+        <br><br>- E.O. Wilson`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Binnenkort", 
+        titel: "Probeer opnieuw in het Perm",
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.`
       }
     }
   }
