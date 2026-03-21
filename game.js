@@ -4084,17 +4084,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Tiktaalik", "Evolutie"],
-    hint: `De ozonlaag, kleine insecten, planten.. alle ingrediënten zijn er voor de tiktaalik om het land op te gaan.`,
-    output: [
-      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
-        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
-        land began with creatures very much like fish
-        <br><br>- Neil Shubin`
-      }
-    ]
-  },
-  {
     input: [
       ["Tiktaalik", "Wormen"], ["Tiktaalik", "Oertrochozoa"], ["Tiktaalik", "Oergeleedpotigen"],
       ["Tiktaalik", "Beerdiertjes"], ["Tiktaalik", "Oerkreeftjes"], ["Tiktaalik", "Oerinsecten"],
@@ -4548,6 +4537,24 @@ const combinaties = [
       normal: {
         titel: "Carboon",
         tekst: `Tijd om met zaadjes en eieren verder het droge op te gaan...`,
+      }
+    }
+  },
+  {
+    input: ["Tiktaalik", "Evolutie"],
+    hint: `De ozonlaag, kleine insecten, planten.. alle ingrediënten zijn er voor de tiktaalik om het land op te gaan.`,
+    output: [
+      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
+        land began with creatures very much like fish
+        <br><br>- Neil Shubin`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oerzaadplanten", 
+        titel: "Probeer opnieuw in het Carboon",
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
       }
     }
   },
