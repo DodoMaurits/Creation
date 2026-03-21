@@ -4635,7 +4635,7 @@ const combinaties = [
     }
   },
   {
-    input: ["Tiktaalik", "Evolutie"],
+    input: ["Oertetrapoden", "Evolutie"],
     hint: `De planten hebben hun zaadjes, nu is het aan de tetrapoden om hun eigen zaadjes te ontwikkelen.`,
     output: [
       { naam: "Ei", icoon: "icons/Ei.png", map: "Biologie",
