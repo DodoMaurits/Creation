@@ -2130,7 +2130,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Sponzen", "Bacteriën"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Foraminiferen"], ["Sponzen", "Stralendiertjes"]
+      ["Sponzen", "Bacteriën"], ["Sponzen", "Detritus"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Foraminiferen"], 
+      ["Sponzen", "Stralendiertjes"]
     ],
     output: [
       { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Waterdieren", 
