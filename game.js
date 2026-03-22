@@ -4755,7 +4755,19 @@ const combinaties = [
   },
   {
     input: [
-      ["Coniferen", "Coniferen"], ["Ginkgo", "Coniferen"], ["Ginkgo", "Ginkgo"]
+      ["Hout", "Vuur"], ["Hout", "Lava"]
+    ],
+    output: [
+      { naam: "As", icoon: "icons/As.png", map: "Vuur",
+        quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
+        <br><br>- Alexander Anderson`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Coniferen", "Coniferen"], ["Palmvarens", "Coniferen"], ["Palmvarens", "Palmvarens"], ["Ginkgo", "Coniferen"], 
+      ["Ginkgo", "Palmvarens"], ["Ginkgo", "Ginkgo"]
     ],
     hint: `Waar de bomen samenkomen...`,
     output: [
