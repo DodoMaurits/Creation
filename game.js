@@ -2840,10 +2840,9 @@ const combinaties = [
         we no longer exist 
         <br><br>- Epicurus`
       },
-      { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
-        quote: `Once one has kissed a cadaver's forehead, there always remains something of it on the lips, an infinite
-        bitterness, an aftertaste of nothingness that nothing can erase
-        <br><br>- Gustave Flaubert`
+      { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
+        quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
+        <br><br>- Sue Monk Kidd`
       }
     ]
   },
@@ -2877,10 +2876,9 @@ const combinaties = [
       ["Kreeften", "Dood"], ["Krabben", "Dood"], ["Haaien", "Dood"], ["Holocefalen", "Dood"]
     ],
     output: [
-      { naam: "Kadaver", icoon: "icons/Kadaver.png", map: "Biologie", 
-        quote: `Once one has kissed a cadaver's forehead, there always remains something of it on the lips, an infinite
-        bitterness, an aftertaste of nothingness that nothing can erase
-        <br><br>- Gustave Flaubert`
+      { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
+        quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
+        <br><br>- Sue Monk Kidd`
       }
     ]
   },
