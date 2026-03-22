@@ -631,6 +631,16 @@ const combinaties = [
     }
   },
   {
+    input: ["IJs", "IJs"],
+    hint: `We moeten ook een plek hebben waar het altijd koud is en vol ijs.`,
+    output: [
+      { naam: "Poolgebied", icoon: "icons/Poolgebied.png", map: "Landschap", 
+        quote: `The only place on Earth that is still as it should be. May we never tame it
+        <br><br>- Andrew Denton`
+      }
+    ]
+  },
+  {
     input: [
       ["Water", "IJzer"], ["Lucht", "IJzer"]
     ],
