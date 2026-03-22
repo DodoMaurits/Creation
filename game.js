@@ -2280,7 +2280,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Rode algen", "Koraal"], ["Groene algen", "Koraal"], ["Roodwieren", "Koraal"], ["Groenwieren", "Koraal"]
+      ["Koraal", "Bacteriën"], ["Koraal", "Detritus"], ["Koraal", "Blauwalgen"], ["Koraal", "Leca"], 
+      ["Koraal", "Archaeplastiden"], ["Rode algen", "Koraal"], ["Groene algen", "Koraal"], ["Roodwieren", "Koraal"], 
+      ["Groenwieren", "Koraal"]
     ],
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
