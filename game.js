@@ -1909,7 +1909,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Leca", "Bacteriën"], ["Leca", "Amoeben"]
+      ["Leca", "Bacteriën"], ["Leca", "Archaeplastiden"]
     ],
     output: [
       { naam: "Leca", icoon: "icons/Leca.png", map: "Pril leven", 
@@ -1985,7 +1985,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Amoeben", "Bacteriën"], ["Amoeben", "Blauwalgen"]
+      ["Amoeben", "Bacteriën"], ["Amoeben", "Detritus"], ["Amoeben", "Blauwalgen"], ["Amoeben", "LECA"], 
+      ["Amoeben", "Foraminiferen"], ["Amoeben", "Archaeplastiden"]
     ],
     output: [
       { naam: "Amoeben", icoon: "icons/Amoeben.png", map: "Pril leven", 
@@ -2025,7 +2026,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Foraminiferen", "Bacteriën"], ["Foraminiferen", "Blauwalgen"]
+      ["Foraminiferen", "Bacteriën"], ["Foraminiferen", "Detritus"], ["Foraminiferen", "Blauwalgen"], 
+      ["Foraminiferen", "Leca"], ["Foraminiferen", "Archaeplastiden"]
     ],
     output: [
       { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
@@ -2041,7 +2043,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Stralendiertjes", "Bacteriën"], ["Stralendiertjes", "Blauwalgen"], ["Stralendiertjes", "Amoeben"]
+      ["Stralendiertjes", "Bacteriën"], ["Stralendiertjes", "Detritus"], ["Stralendiertjes", "Blauwalgen"], 
+      ["Stralendiertjes", "Leca"], ["Stralendiertjes", "Amoeben"], ["Stralendiertjes", "Archaeplastiden"]
     ],
     output: [
       { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
@@ -2155,6 +2158,22 @@ const combinaties = [
         quote: `Even the simplest green algae possess the fundamental machinery of photosynthesis that sustains life on 
         Earth 
         <br><br>- Peter Raven`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Gist", "Detritus"], ["Gist", "Schimmel"]
+    ],
+    output: [
+      { naam: "Gist", icoon: "icons/Gist.png", map: "Pril leven",
+        quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
+        <br><br>- Ralph Emerson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2308,8 +2327,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Oercnidaria", "Bacteriën"], ["Oercnidaria", "Blauwalgen"], ["Oercnidaria", "Leca"], ["Oercnidaria", "Amoeben"],
-      ["Oercnidaria", "Foraminiferen"], ["Oercnidaria", "Stralendiertjes"]
+      ["Oercnidaria", "Bacteriën"], ["Oercnidaria", "Detritus"], ["Oercnidaria", "Blauwalgen"], ["Oercnidaria", "Leca"], 
+      ["Oercnidaria", "Amoeben"], ["Oercnidaria", "Foraminiferen"], ["Oercnidaria", "Stralendiertjes"], 
+      ["Oercnidaria", "Archaeplastiden"]
     ],
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
@@ -2361,8 +2381,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Blauwalgen"], ["Oerbilateria", "Leca"], ["Oerbilateria", "Amoeben"],
-      ["Oerbilateria", "Foraminiferen"], ["Oerbilateria", "Stralendiertjes"]
+      ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Detritus"], ["Oerbilateria", "Blauwalgen"], 
+      ["Oerbilateria", "Leca"], ["Oerbilateria", "Amoeben"], ["Oerbilateria", "Foraminiferen"], 
+      ["Oerbilateria", "Stralendiertjes"], ["Oerbilateria", "Archaeplastiden"]
     ],
     output: [
       { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
@@ -3145,9 +3166,9 @@ const combinaties = [
   {
     input: [
       ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], ["Zeeslakken", "Amoeben"], 
-      ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], ["Zeeslakken", "Rode algen"], 
-      ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Roodwieren"], ["Zeeslakken", "Groenwieren"], 
-      ["Zeeslakken", "Wormen"]
+      ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], ["Zeeslakken", "Sponzen"],
+      ["Zeeslakken", "Rode algen"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Roodwieren"], 
+      ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Wormen"]
     ],
     output: [
       { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
