@@ -4532,7 +4532,7 @@ const combinaties = [
         titel: "Carboon", 
         tekst: "Je moet eerst nog wat meer halen...",
         requirements: ["Paddenstoelen", "Kreeften", "Vleugels", "Moeras", "Haaien", "Geluid", "Oerchondrostei", 
-          "Wimpelalen", "Oerneopterygen", "Oertetrapoden", "Bruinkool"]
+          "Wimpelalen", "Oerneopterygen", "Bruinkool"]
       },
       normal: {
         titel: "Carboon",
