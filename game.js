@@ -4787,8 +4787,8 @@ const combinaties = [
     hint: `Termieten zijn kunstzinnige beestjes, kijk maar wat ze kunnen met simpele grond.`,
     output: [
       { naam: "Heuvel", icoon: "icons/Heuvel.png", map: "Landschap", 
-        quote: `Say, if I only could I'd make a deal with God and I'd get Him to swap our places.
-        I'd be runnin' up that road, be runnin' up that hill.. with no problems
+        quote: `Say, if I only could... I'd make a deal with God and I'd get Him to swap our places.
+        I'd be running up that road, be running up that hill.. with no problems
         <br><br>- Kate Bush`
       }
     ]
