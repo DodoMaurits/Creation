@@ -2437,9 +2437,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Kwallen", "Bacteriën"], ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], ["Kwallen", "Amoeben"],
-      ["Kwallen", "Foraminiferen"], ["Kwallen", "Stralendiertjes"], ["Kwallen", "Wormen"], ["Kwallen", "Beerdiertjes"],
-      ["Kwallen", "Krill"], ["Kwallen", "Garnalen"]
+      ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], ["Kwallen", "Archaeplastiden"], ["Kwallen", "Rode algen"],
+      ["Kwallen", "Groene algen"], ["Kwallen", "Steenwortelalgen"], ["Kwallen", "Wormen"], ["Kwallen", "Oertrochozoa"],
+      ["Kwallen", "Beerdiertjes"], ["Kwallen", "Krill"], ["Kwallen", "Garnalen"]
     ],
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
