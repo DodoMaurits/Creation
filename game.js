@@ -4794,6 +4794,16 @@ const combinaties = [
         <br><br>- Kate Bush`
       }
     ]
+  },
+  {
+    input: ["Termieten", "Termieten"],
+    hint: `De eerste samenlevingen werden gebouwd door eusociale dieren als termieten en mieren.`,
+    output: [
+      { naam: "Hiërarchie", icoon: "icons/Hierarchie.png", map: "Samenleving", 
+        quote: `Society soon grows used to any state of things which is imposed upon it without explanation
+        <br><br>- Edith Wharton`
+      }
+    ]
   }
 ];
 
@@ -4816,6 +4826,7 @@ const groepsIconen = {
   "Geleedpotigen": "icons/Geleedpotigen.png",
   "Klein landleven": "icons/Klein landleven.png",
   "Vruchten": "icons/Vruchten.png",
+  "Samenleving": "icons/Samenleving.png"
 };
 
 // ----- STATE -----
