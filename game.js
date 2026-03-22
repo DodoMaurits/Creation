@@ -4804,6 +4804,24 @@ const combinaties = [
         <br><br>- Edith Wharton`
       }
     ]
+  },
+  {
+    input: ["Hierarchie", "Termieten"],
+    hint: `Kijk wat hiërarchie zoal kan brengen...`,
+    output: [
+      { naam: "Werk", icoon: "icons/Werk.png", map: "Samenleving", 
+        quote: `The best preparation for good work tomorrow is to do good work today
+        <br><br>- Elbert Hubbard`
+      },
+      { naam: "Leger", icoon: "icons/Leger.png", map: "Samenleving", 
+        quote: `Victory is reserved for those who are willing to pay its price
+        <br><br>- Sun Tzu`
+      },
+      { naam: "Heerser", icoon: "icons/Heerser.png", map: "Samenleving", 
+        quote: `He who is to be a good ruler must have first been ruled
+        <br><br>- Aristoteles`
+      }
+    ]
   }
 ];
 
