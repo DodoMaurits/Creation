@@ -4678,11 +4678,32 @@ const combinaties = [
     input: [
       ["Coniferen", "Coniferen"], ["Ginkgo", "Coniferen"], ["Ginkgo", "Ginkgo"]
     ],
-    hint: `Zaadjes brengen planten in drogere gebieden, waar ze bomen vormen.`,
+    hint: `Waar de bomen samenkomen...`,
     output: [
       { naam: "Bos", icoon: "icons/Bos.png", map: "Landschap", 
         quote: `The clearest way into the Universe is through a forest wilderness
         <br><br>- John Muir`
+      }
+    ]
+  },
+  {
+    input: ["Bos", "Regen"],
+    hint: `Meer begroeiing, meer vocht, meer leven.`,
+    output: [
+      { naam: "Regenwoud", icoon: "icons/Regenwoud.png", map: "Landschap", 
+        quote: `When we walk into a grove of trees or under an open sky the magic of nature takes over
+        and the heaviness of life lifts a little
+        <br><br>- Natassia Cassinero`
+      }
+    ]
+  },
+  {
+    input: ["Regenwoud", "Warmte"],
+    hint: `Een regenwoud kent al veel diversiteit, maar het ontploft pas echt in de tropen.`,
+    output: [
+      { naam: "Tropisch regenwoud", icoon: "icons/Tropisch regenwoud.png", map: "Landschap", 
+        quote: `The jungle is dark but full of diamonds
+        <br><br>- Arthur Miller`
       }
     ]
   },
