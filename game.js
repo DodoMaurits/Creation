@@ -638,7 +638,14 @@ const combinaties = [
         quote: `The only place on Earth that is still as it should be. May we never tame it
         <br><br>- Andrew Denton`
       }
-    ]
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Water", 
+        titel: "Te vroeg",
+        tekst: `Probeer opnieuw als de Aarde wat meer is afgekoeld...`
+      }
+    }
   },
   {
     input: [
@@ -4776,6 +4783,17 @@ const combinaties = [
         tekst: `Eerst moeten grotere dieren zich over het land verspreiden.`
       }
     }
+  },
+  {
+    input: ["Termieten", "Aarde"],
+    hint: `Termieten zijn kunstzinnige beestjes, kijk maar wat ze kunnen met simpele grond.`,
+    output: [
+      { naam: "Heuvel", icoon: "icons/Heuvel.png", map: "Landschap", 
+        quote: `Say, if I only could I'd make a deal with God and I'd get Him to swap our places.
+        I'd be runnin' up that road, be runnin' up that hill.. with no problems
+        <br><br>- Kate Bush`
+      }
+    ]
   }
 ];
 
