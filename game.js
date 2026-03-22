@@ -3893,19 +3893,21 @@ const combinaties = [
   },
   {
     input: ["Oerstraalvinnigen", "Evolutie"],
-    hint: ``,
+    hint: `Ook de straalvinnigen zullen blijven veranderen...`,
     output: [
       { naam: "Oerchondrostei", icoon: "icons/Oerchondrostei.png", map: "Vissen",
-        quote: `
-        <br><br>- `
+        quote: `“Sturgeons seem almost out of time, their armored bodies and slow movements giving the impression of 
+        creatures that have quietly ignored the passing ages
+        <br><br>- Helen Scales`
       },
       { naam: "Wimpelalen", icoon: "icons/Wimpelalen.png", map: "Vissen",
-       quote: `
-       <br><br>- `
+       quote: `Eels are very peculiar fish. They are so odd that they almost seem like creatures from another world
+       <br><br>- Rachel Carson`
       },
       { naam: "Oerneopterygen", icoon: "icons/Oerneopterygen.png", map: "Vissen", 
-        quote: `
-        <br><br>- `
+        quote: `Fishes have evolved an extraordinary diversity of forms and ways of moving, revealing a flexibility in 
+        design unmatched among vertebrates
+        <br><br>- Melanie Stiassny`
       }
     ]
   },
