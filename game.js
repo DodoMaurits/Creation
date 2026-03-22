@@ -2224,6 +2224,10 @@ const combinaties = [
       ["Koraal", "Kalk"], ["Oerbilateria", "Kalk"], ["Wormen", "Kalk"], ["Zeesterren", "Kalk"]
     ],
     hint: `Wat leven wel niet met een beetje kalk kan doen...`,
+    vers: `Toen maakten Wij van de Druppel een Bloedklodder, daarna maakten Wij van de Bloedklodder een kneedbaar klompje,
+    daarna maakten Wij van het kneedbaar klmpje Botten, daarna bekleedden Wij de Botten met Vlees, toen lieten Wij het 
+    groeien tot een nieuwe Creatie, aldus gezegend zij God - de Schepper der Scheppers
+    <br><br>De Gelovigen (23:14)`,
     output: [
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
         quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
@@ -2833,7 +2837,6 @@ const combinaties = [
       ["Haaien", "Radioactiviteit"], ["Haaien", "Vuur"], ["Haaien", "Gif"],
       ["Holocefalen", "Radioactiviteit"], ["Holocefalen", "Vuur"], ["Holocefalen", "Gif"]
     ],
-    hint: `Waar de geleedpotigen overlijden, blijven skeletten over.`,
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
@@ -3071,6 +3074,8 @@ const combinaties = [
     input: [
       ["Inktvissen", "Lancetvisjes"], ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
         quote: `I would love to see a giant squid. Very few people have seen them. 
@@ -3454,6 +3459,8 @@ const combinaties = [
     input: [
       ["Nautilussen", "Lancetvisjes"], ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
         quote: `You don't have to bee Greek to enjoy this one
@@ -3854,6 +3861,8 @@ const combinaties = [
     input: [
       ["Oerchondrichthyes", "Lancetvisjes"], ["Oerchondrichthyes", "Agnathen"], ["Oerchondrichthyes", "Oerstraalvinnigen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
         quote: `You don't have to bee Greek to enjoy this one
@@ -3984,6 +3993,8 @@ const combinaties = [
     input: [
       ["Oerstraalvinnigen", "Lancetivsjes"], ["Oerstraalvinnigen", "Agnathen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
         quote: `In order to see a fish you must watch the water
@@ -4078,6 +4089,8 @@ const combinaties = [
     input: [
       ["Coelacanthen", "Lancetvisjes"], ["Coelacanthen", "Agnathen"], ["Coelacanthen", "Oerstraalvinnigen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
         quote: `Ideas are like fish. If you want to catch little fish, you can stay in the shallow water.
@@ -4260,6 +4273,8 @@ const combinaties = [
   },
   {
     input: ["Kreeften", "Lancetvisjes"],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
         quote: `Lobsters are among the most ancient designs in the sea, animals whose basic form has persisted for
@@ -4381,6 +4396,8 @@ const combinaties = [
       ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Tiktaalik"], ["Haaien", "Longvissen"], 
       ["Haaien", "Holocefalen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
         quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
@@ -4499,6 +4516,8 @@ const combinaties = [
   },
   {
     input: ["Holocefalen", "Nautilussen"],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
