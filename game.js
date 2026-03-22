@@ -4806,7 +4806,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Hierarchie", "Termieten"],
+    input: ["Hiërarchie", "Termieten"],
     hint: `Kijk wat hiërarchie zoal kan brengen...`,
     output: [
       { naam: "Werk", icoon: "icons/Werk.png", map: "Samenleving", 
