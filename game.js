@@ -2529,14 +2529,14 @@ const combinaties = [
         to trace a perfect circle
         <br><br>- Pablo Picasso`
       },
-      { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
-        quote: `The ascidians are among the most extraordinary of marine animals 
-        <br><br>- Thomas Huxley`
-      },
       { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
         quote: `There is one living organism, called a tardigrade, that has survived the five great mass extinctions on 
         Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures 
         <br><br>- Alycia Carey`
+      },
+      { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
+        quote: `The ascidians are among the most extraordinary of marine animals 
+        <br><br>- Thomas Huxley`
       }
     ],
     uitleg: {
