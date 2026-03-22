@@ -2015,8 +2015,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Foraminiferen", "Zand"],
-    hint: `Foraminiferen die hun schildjes aan elkaar lijmen tot één groot schild? Goed gevonden.`,
+    input: [
+      ["Foraminiferen", "Zand"], ["Oertrochozoa", "Kalk"]
+    ],
+    hint: `Kijk naar het zand van foraminiferen of de kalk van trochozoa...`,
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
@@ -2207,11 +2209,6 @@ const combinaties = [
     input: ["Zenuwen", "Sponzen"],
     hint: `Wat zou het mooi zijn, als leven zichzelf ervaren kan...`,
     output: [
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
-        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
-        pressure (e.g. air pressure) is exerted inwards from all directions equally 
-        <br><br>- Viktor Schawberger`
-      },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
         <br><br>- Leo Buscaglia`
@@ -2224,11 +2221,6 @@ const combinaties = [
     ],
     hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
-        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
-        pressure (e.g. air pressure) is exerted inwards from all directions equally 
-        <br><br>- Viktor Schawberger`
-      },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
         <br><br>- Leo Buscaglia`
@@ -2401,20 +2393,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerbilateria", "Evolutie"],
-    hint: `Als je dieren een mond geeft en een anus, dan voorspel ik dat evolutie ze ver brengt.`,
-    output: [
-      { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
-        quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor 
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
-        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
-        <br><br>- Rachel Carson`
-      }
-    ]
-  },
-  {
     input: ["Druk", "Detritus"],
     hint: `Organisch materiaal zinkt naar de bodem en komt onder hoge druk te staan.`,
     output: [
@@ -2461,91 +2439,6 @@ const combinaties = [
   },
   {
     input: [
-      ["Wormen", "Bacteriën"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], ["Wormen", "Amoeben"],
-      ["Wormen", "Foraminiferen"], ["Wormen", "Stralendiertjes"], ["Wormen", "Beerdiertjes"], ["Wormen", "Krill"]
-    ],
-    output: [
-      { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
-        quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor 
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Wormen", "Zenuwen"], ["Zeesterren", "Zenuwen"], ["Oertrochozoa", "Zenuwen"],
-      ["Lancetvisjes", "Zenuwen"], ["Beerdiertjes", "Zenuwen"]
-    ],
-    hint: `Het is voor sommigen niet fijn, maar de zenuw doet het als handige waarschuwing.`,
-    output: [
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
-      },
-      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: `Pain is inevitable. Suffering is optional
-        <br><br>- Haruki Murakami`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Wormen", "Pijn"], ["Zeesterren", "Pijn"], ["Oerbilateria", "Pijn"], ["Oertrochozoa", "Pijn"],
-      ["Lancetvisjes", "Pijn"], ["Agnathen", "Pijn"], ["Oergeleedpotigen", "Pijn"], ["Zeeslakken", "Pijn"],
-      ["Tweekleppigen", "Pijn"], ["Trilobieten", "Pijn"], ["Oercheliceraten", "Pijn"], ["Duizendpoten", "Pijn"],
-      ["Oerkreeftjes", "Pijn"], ["Oerinsecten", "Pijn"], ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"],
-      ["Zwaardstaarten", "Pijn"], ["Krill", "Pijn"],["Pissebedden", "Pijn"], ["Garnalen", "Pijn"],
-      ["Kreeften", "Pijn"],
-      
-      ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Pijn"],
-      ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
-      ["Oerchondrichthyes", "Storm"], ["Oerchondrichthyes", "Orkaan"], ["Oerchondrichthyes", "Pijn"],
-      ["Oerstraalvinnigen", "Storm"], ["Oerstraalvinnigen", "Orkaan"], ["Oerstraalvinnigen", "Pijn"],
-      ["Coelacanthen", "Storm"], ["Coelacanthen", "Orkaan"], ["Coelacanthen", "Pijn"],
-      ["Tiktaalik", "Storm"], ["Tiktaalik", "Orkaan"], ["Tiktaalik", "Pijn"],
-      ["Longvissen", "Storm"], ["Longvissen", "Orkaan"], ["Longvissen", "Pijn"],
-      ["Haaien", "Storm"], ["Haaien", "Orkaan"], ["Haaien", "Pijn"],
-      ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Pijn"]
-    ],
-    hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
-    output: [
-      { naam: "Angst", icoon: "icons/Angst.png", map: "Brein", 
-        quote: `Fear defeats more people than any other thing in the world
-        <br><br>- Ralph Emerson`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Zeesterren", "Sponzen"], ["Zeesterren", "Wormen"], ["Zeeanemonen", "Zeesterren"]
-    ],
-    output: [
-      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
-        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
-    input: [
       ["Aardolie", "Warmte"], ["Aardolie", "Druk"]
     ],
     output: [
@@ -2580,14 +2473,43 @@ const combinaties = [
   },
 //------------ THRESHOLD 3: CAMBRISCHE EXPLOSIE --------------//
   {
-    input: ["Oerbilateria", "Bot"],
-    hint: `Nu zijn de omstandigheden juist om extra kracht te geven aan de bilateria...`,
+    input: ["Oerbilateria", "Evolutie"],
+    hint: `Nu zijn de omstandigheden juist om de bilateria te laten floreren...`,
     tijd: 541_000_000,
     output: [
       { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
         quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
         <br><br>- Andrew H. Knoll`
       },
+      { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
+        quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor 
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
+        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
+        <br><br>- Rachel Carson`
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Cambrische Explosie", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
+          "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
+          "Dood", "Stromatolieten", "Fotosynthese", "Amoeben", "Foraminiferen", "Stralendiertjes", 
+          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Rif", 
+          "Druk", "Tast", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
+      },
+      normal: {
+        titel: "Cambrische Explosie",
+        tekst: `De Cambriscche explosie...`,
+      }
+    }
+  },
+  {
+    input: ["Oerbilateria", "Bot"],
+    hint: `Die kleine vooroudertjes van de wormen waren heel handig met botten.`,
+    output: [
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
         quote: `For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the sea 
         <br><br>- Empedocles`
@@ -2602,6 +2524,11 @@ const combinaties = [
         humanity probably could not last more than a few months
         <br><br>- E.O. Wilson`
       },
+      { naam: "Zee-egels", icoon: "icons/Zee-egels.png", map: "Waterdieren", 
+        quote: `Why should I copy this owl, this sea urchin? Why should I try to imitate nature? I might just as well try
+        to trace a perfect circle
+        <br><br>- Pablo Picasso`
+      },
       { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
         quote: `The ascidians are among the most extraordinary of marine animals 
         <br><br>- Thomas Huxley`
@@ -2613,18 +2540,10 @@ const combinaties = [
       }
     ],
     uitleg: {
-      threshold: {
-        titel: "Cambrische Explosie", 
-        tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
-          "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
-          "Dood", "Stromatolieten", "Fotosynthese", "Amoeben", "Foraminiferen", "Stralendiertjes", 
-          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Schelp", "Rif", 
-          "Druk", "Tast", "Steenwortelalgen", "Kwallen", "Zeeanemonen", "Wormen", "Zeesterren"]
-      },
-      normal: {
-        titel: "Cambrische Explosie",
-        tekst: `De Cambriscche explosie...`,
+      thresholdElement: {
+        naam: "Wormen", 
+        titel: "Probeer opnieuw in het Cambrium",
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...`
       }
     }
   },
@@ -2639,7 +2558,14 @@ const combinaties = [
         quote: `Every antique farm-house and moss-grown cottage is a picture
         <br><br>- Washington Irving`
       }
-    ]
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Wormen", 
+        titel: "Probeer opnieuw in het Cambrium",
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...`
+      }
+    }
   },
   {
     input: ["Steenwortelalgen", "Evolutie"],
@@ -2649,7 +2575,14 @@ const combinaties = [
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
-    ]
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Wormen", 
+        titel: "Probeer opnieuw in het Cambrium",
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...`
+      }
+    }
   },
   {
     input: [
@@ -2671,6 +2604,84 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oertrochozoa", "Pijn"], ["Lancetvisjes", "Pijn"], ["Agnathen", "Pijn"], ["Oergeleedpotigen", "Pijn"], 
+      ["Zeeslakken", "Pijn"],
+      ["Tweekleppigen", "Pijn"], ["Trilobieten", "Pijn"], ["Oercheliceraten", "Pijn"], ["Duizendpoten", "Pijn"],
+      ["Oerkreeftjes", "Pijn"], ["Oerinsecten", "Pijn"], ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"],
+      ["Zwaardstaarten", "Pijn"], ["Krill", "Pijn"],["Pissebedden", "Pijn"], ["Garnalen", "Pijn"],
+      ["Kreeften", "Pijn"],
+      
+      ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Pijn"],
+      ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
+      ["Oerchondrichthyes", "Storm"], ["Oerchondrichthyes", "Orkaan"], ["Oerchondrichthyes", "Pijn"],
+      ["Oerstraalvinnigen", "Storm"], ["Oerstraalvinnigen", "Orkaan"], ["Oerstraalvinnigen", "Pijn"],
+      ["Coelacanthen", "Storm"], ["Coelacanthen", "Orkaan"], ["Coelacanthen", "Pijn"],
+      ["Tiktaalik", "Storm"], ["Tiktaalik", "Orkaan"], ["Tiktaalik", "Pijn"],
+      ["Longvissen", "Storm"], ["Longvissen", "Orkaan"], ["Longvissen", "Pijn"],
+      ["Haaien", "Storm"], ["Haaien", "Orkaan"], ["Haaien", "Pijn"],
+      ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Pijn"]
+    ],
+    hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
+    output: [
+      { naam: "Angst", icoon: "icons/Angst.png", map: "Brein", 
+        quote: `Fear defeats more people than any other thing in the world
+        <br><br>- Ralph Emerson`
+      }
+    ]
+  },
+  {
+    input: ["Oertrochozoa", "Evolutie"],
+    hint: `Van trochozoa is het een kleine stap naar de weekdieren.`, 
+    output: [
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        quote: `I would love to see a giant squid. Very few people have seen them. 
+        And only about half a dozen people have seen one alive
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oertrochozoa", "Zenuwen"], ["Wormen", "Zenuwen"], ["Zeesterren", "Zenuwen"], 
+      ["Lancetvisjes", "Zenuwen"], ["Beerdiertjes", "Zenuwen"]
+    ],
+    hint: `Het is voor sommigen niet fijn, maar de zenuw doet het als handige waarschuwing.`,
+    output: [
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      }
+    ]
+  },
+  {
+    input: ["Oertrochozoa", "Schelp"],
+    hint: `Geef bescherming aan de trochozoa want zij zijn zo week.`, 
+    output: [
+      { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
+        quote: `Even a snail will eventually reach its destination
+        <br><br>- Gail Tsukiyama`
+      },
+      { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
+        quote: `Every life deserves a certain amount of dignity, no matter how poor or damaged the shell
+        that carries it
+        <br><br>- Rick Bragg`
       }
     ]
   },
@@ -2717,26 +2728,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oertrochozoa", "Evolutie"],
-    hint: `Van trochozoa is het een kleine stap naar de weekdieren.`, 
-    output: [
-      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
-        quote: `I would love to see a giant squid. Very few people have seen them. 
-        And only about half a dozen people have seen one alive
-        <br><br>- David Attenborough`
-      },
-      { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
-        quote: `Even a snail will eventually reach its destination
-        <br><br>- Gail Tsukiyama`
-      },
-      { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
-        quote: `Every life deserves a certain amount of dignity, no matter how poor or damaged the shell
-        that carries it
-        <br><br>- Rick Bragg`
-      }
-    ]
-  },
-  {
     input: [
       ["Oertrochozoa", "Oertrochozoa"], ["Agnathen", "Agnathen"], ["Oergeleedpotigen", "Oergeleedpotigen"],
       ["Inktvissen", "Inktvissen"], ["Zeeslakken", "Zeeslakken"], ["Tweekleppigen", "Tweekleppigen"],
@@ -2760,6 +2751,39 @@ const combinaties = [
         and at the right time and for the right purpose, and in the right way - that is not within everybody's power
         and is not easy
         <br><br>- Aristoteles`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Wormen", "Bacteriën"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], ["Wormen", "Amoeben"],
+      ["Wormen", "Foraminiferen"], ["Wormen", "Stralendiertjes"], ["Wormen", "Beerdiertjes"], ["Wormen", "Krill"]
+    ],
+    output: [
+      { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
+        quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor 
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeesterren", "Sponzen"], ["Zeesterren", "Wormen"], ["Zeeanemonen", "Zeesterren"]
+    ],
+    output: [
+      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
+        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2964,11 +2988,6 @@ const combinaties = [
     ],
     hint: `Koralen zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
-        quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
-        pressure (e.g. air pressure) is exerted inwards from all directions equally 
-        <br><br>- Viktor Schawberger`
-      },
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
         <br><br>- Leo Buscaglia`
