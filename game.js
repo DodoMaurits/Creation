@@ -2557,9 +2557,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeanemonen", "Bacteriën"], ["Zeeanemonen", "Blauwalgen"], ["Zeeanemonen", "Leca"], ["Zeeanemonen", "Amoeben"],
-      ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"], ["Zeeanemonen", "Wormen"],
-      ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemonen", "Krill"], ["Zeeanemonen", "Garnalen"]
+      ["Zeeanemonen", "Bacteriën"], ["Zeeanemonen", "Detritus"], ["Zeeanemonen", "Blauwalgen"], ["Zeeanemonen", "Leca"], 
+      ["Zeeanemonen", "Amoeben"], ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"], 
+      ["Zeeanemonen", "Wormen"], ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemonen", "Krill"], ["Zeeanemonen", "Garnalen"]
     ],
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
@@ -3171,7 +3171,7 @@ const combinaties = [
       ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], ["Zeeslakken", "Amoeben"], 
       ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], ["Zeeslakken", "Sponzen"],
       ["Zeeslakken", "Rode algen"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Roodwieren"], 
-      ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Wormen"]
+      ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Zeeanemonen"], ["Zeeslakken", "Wormen"]
     ],
     output: [
       { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
