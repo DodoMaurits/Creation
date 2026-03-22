@@ -2524,19 +2524,19 @@ const combinaties = [
         humanity probably could not last more than a few months
         <br><br>- E.O. Wilson`
       },
-      { naam: "Zee-egels", icoon: "icons/Zee-egels.png", map: "Waterdieren", 
-        quote: `Why should I copy this owl, this sea urchin? Why should I try to imitate nature? I might just as well try
-        to trace a perfect circle
-        <br><br>- Pablo Picasso`
+      { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
+        quote: `The ascidians are among the most extraordinary of marine animals 
+        <br><br>- Thomas Huxley`
       },
       { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
         quote: `There is one living organism, called a tardigrade, that has survived the five great mass extinctions on 
         Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures 
         <br><br>- Alycia Carey`
       },
-      { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
-        quote: `The ascidians are among the most extraordinary of marine animals 
-        <br><br>- Thomas Huxley`
+      { naam: "Zee-egels", icoon: "icons/Zee-egels.png", map: "Waterdieren", 
+        quote: `Why should I copy this owl, this sea urchin? Why should I try to imitate nature? I might just as well try
+        to trace a perfect circle
+        <br><br>- Pablo Picasso`
       }
     ],
     uitleg: {
