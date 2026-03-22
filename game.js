@@ -2477,13 +2477,13 @@ const combinaties = [
     hint: `Nu zijn de omstandigheden juist om de bilateria te laten floreren...`,
     tijd: 541_000_000,
     output: [
-      { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
-        quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
-        <br><br>- Andrew H. Knoll`
-      },
       { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
         quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor 
         <br><br>- Rachel Carson`
+      },
+      { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
+        quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
+        <br><br>- Andrew H. Knoll`
       },
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
         quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
