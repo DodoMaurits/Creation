@@ -4674,6 +4674,18 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: [
+      ["Coniferen", "Coniferen"], ["Ginkgo", "Coniferen"], ["Ginkgo", "Ginkgo"]
+    ],
+    hint: `Zaadjes brengen planten in drogere gebieden, waar ze bomen vormen.`,
+    output: [
+      { naam: "Bos", icoon: "icons/Bos.png", map: "Landschap", 
+        quote: `The clearest way into the Universe is through a forest wilderness
+        <br><br>- John Muir`
+      }
+    ]
+  },
 //------------ THRESHOLD 6: PERM --------------//
   {
     input: ["Ei", "Oertetrapoden"],
