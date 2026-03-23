@@ -1633,7 +1633,7 @@ const combinaties = [
       ["Duizendpoten", "Radioactiviteit"], ["Duizendpoten", "Gif"],
       ["Oerkreeftjes", "Radioactiviteit"], ["Oerkreeftjes", "Gif"],
       ["Oerinsecten", "Radioactiviteit"], ["Oerinsecten", "Gif"],
-      ["Schorpioenen", "Radioactiviteit"], ["Schorpioenen", "Gif"],
+      ["Schorpioenen", "Gif"],
       ["Spinnen", "Radioactiviteit"], ["Spinnen", "Gif"],
       ["Mijten", "Radioactiviteit"], ["Mijten", "Gif"],
       ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Gif"],
@@ -1662,7 +1662,7 @@ const combinaties = [
       ["Krekels", "Radioactiviteit"], ["Krekels", "Gif"],
       ["Sprinkhanen", "Radioactiviteit"], ["Sprinkhanen", "Gif"],
       ["Wandelende takken", "Radioactiviteit"], ["Wandelende takken", "Gif"],
-      ["Kakkerlakken", "Radioactiviteit"], ["Kakkerlakken", "Gif"],
+      ["Kakkerlakken", "Gif"],
       ["Termieten", "Radioactiviteit"], ["Termieten", "Gif"]
 
     ],
