@@ -4902,7 +4902,7 @@ const combinaties = [
       ["Oertetrapoden", "Oertrochozoa"], ["Oertetrapoden", "Wormen"], ["Oertetrapoden", "Lancetvisjes"], 
       ["Oertetrapoden", "Oergeleedpotigen"], ["Oertetrapoden", "Duizendpoten"], 
       ["Oertetrapoden", "Oerkreeftjes"], ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Spinnen"], 
-      ["Oertetrapoden", "Mijten"] ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Krill"], 
+      ["Oertetrapoden", "Mijten"], ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Krill"], 
       ["Oertetrapoden", "Pissebedden"], ["Oertetrapoden", "Garnalen"], 
       ["Oertetrapoden", "Zilvervisjes"], ["Oertetrapoden", "Oerpolyneopteren"], ["Oertetrapoden", "Oerhymenopteren"], 
       ["Oertetrapoden", "Luizen"], ["Oertetrapoden", "Kevers"], ["Oertetrapoden", "Muggen"], ["Oertetrapoden", "Vliegen"], 
