@@ -2590,7 +2590,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Agnathen", "Zenuwen"], ["Zeeslakken", "Zenuwen"], ["Oerinsecten", "Zenuwen"], ["Oerpolyneopteren", "Zenuwen"]
+      ["Agnathen", "Zenuwen"], ["Zeeslakken", "Zenuwen"], ["Oerinsecten", "Zenuwen"], ["Oerpolyneopteren", "Zenuwen"],
       ["Wandelende takken", "Zenuwen"], ["Kakkerlakken", "Zenuwen"], ["Termieten", "Zenuwen"]
     ],
     hint: `Wat proef ik?`,
@@ -2617,7 +2617,7 @@ const combinaties = [
       },
       { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
         quote: `Eat bitter, taste sweet
-        <br><br>- Rick Riordon`
+        <br><br>- Rick Riordan`
       },
       { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
         quote: `Eye contact is way more intimate than words will ever be 
