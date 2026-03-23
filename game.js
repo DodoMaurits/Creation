@@ -4902,7 +4902,7 @@ const combinaties = [
       ["Oertetrapoden", "Oertrochozoa"], ["Oertetrapoden", "Wormen"], ["Oertetrapoden", "Lancetvisjes"], 
       ["Oertetrapoden", "Oergeleedpotigen"], ["Oertetrapoden", "Duizendpoten"], 
       ["Oertetrapoden", "Oerkreeftjes"], ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Spinnen"], 
-      ["Oertetrapoden", "Mijten"], ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Krill"], 
+      ["Oertetrapoden", "Mijten"], ["Oertetrapoden", "Krill"], 
       ["Oertetrapoden", "Pissebedden"], ["Oertetrapoden", "Garnalen"], 
       ["Oertetrapoden", "Zilvervisjes"], ["Oertetrapoden", "Oerpolyneopteren"], ["Oertetrapoden", "Oerhymenopteren"], 
       ["Oertetrapoden", "Luizen"], ["Oertetrapoden", "Kevers"], ["Oertetrapoden", "Muggen"], ["Oertetrapoden", "Vliegen"], 
@@ -5173,7 +5173,7 @@ const combinaties = [
       { naam: "Ginkgo", icoon: "icons/Ginkgo.png", map: "Planten", 
         quote: `This leaf from a tree in the East … has been given to my garden. It reveals a certain secret which 
         pleases me and thoughtful people
-        <br><br>- Johan von Goethe`
+        <br><br>- Johann von Goethe`
       }
     ]
   },
@@ -5283,7 +5283,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Krekels", "Detitrus"], ["Krekels", "Mos"], ["Krekels", "Oervaatplanten"], ["Krekels", "Blad"], 
+      ["Krekels", "Detritus"], ["Krekels", "Mos"], ["Krekels", "Oervaatplanten"], ["Krekels", "Blad"], 
       ["Krekels", "Zilvervisjes"], ["Krekels", "Luizen"], ["Krekels", "Muggen"],
       ["Krekels", "Vliegen"], ["Krekels", "Vlinders"], ["Krekels", "Wandelende takken"],
       ["Krekels", "Varens"], ["Krekels", "Oerzaadplanten"], ["Krekels", "Hout"], ["Krekels", "Coniferen"], 
@@ -5353,7 +5353,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Kakkerlakken", "Detitrus"], ["Kakkerlakken", "Schimmel"], ["Kakkerlakken", "Gist"], ["Kakkerlakken", "Rode algen"], 
+      ["Kakkerlakken", "Detritus"], ["Kakkerlakken", "Schimmel"], ["Kakkerlakken", "Gist"], ["Kakkerlakken", "Rode algen"], 
       ["Kakkerlakken", "Groene algen"], ["Kakkerlakken", "Roodwieren"], ["Kakkerlakken", "Steenwortelalgen"], 
       ["Kakkerlakken", "Groenwieren"], ["Kakkerlakken", "Mos"], ["Kakkerlakken", "Oervaatplanten"], 
       ["Kakkerlakken", "Korstmos"], ["Kakkerlakken", "Truffels"], ["Kakkerlakken", "Paddenstoelen"], 
@@ -5379,7 +5379,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Termieten", "Detitrus"], ["Termieten", "Schimmel"], ["Termieten", "Rode algen"], ["Termieten", "Groene algen"],
+      ["Termieten", "Detritus"], ["Termieten", "Schimmel"], ["Termieten", "Rode algen"], ["Termieten", "Groene algen"],
       ["Termieten", "Roodwieren"], ["Termieten", "Steenwortelalgen"], ["Termieten", "Groenwieren"], ["Termieten", "Mos"],
       ["Termieten", "Oervaatplanten"], ["Termieten", "Korstmos"], ["Termieten", "Truffels"], ["Termieten", "Paddenstoelen"],
       ["Termieten", "Varens"], ["Termieten", "Oerzaadplanten"], ["Termieten", "Hout"], ["Termieten", "Coniferen"], 
