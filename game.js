@@ -5228,7 +5228,7 @@ const combinaties = [
     hint: `Het is tijd voor de eerste grote gewervelde dieren om het land te betreden...`,
     tijd: 299_000_000,
     output: [
-      { naam: "Binnenkort", icoon: "icons/.png", map: "Binnenkort", 
+      { naam: "Binnenkort", icoon: "icons/Binnenkort.png", map: "Reptielen", 
         quote: `
         <br><br>-`
       }
@@ -5461,6 +5461,7 @@ const groepsIconen = {
   "Geleedpotigen": "icons/Geleedpotigen.png",
   "Klein landleven": "icons/Klein landleven.png",
   "Vruchten": "icons/Vruchten.png",
+  "Reptielen": "icons/Binnenkort.png",
   "Samenleving": "icons/Samenleving.png"
 };
 
