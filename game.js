@@ -2022,6 +2022,24 @@ const combinaties = [
   },
   {
     input: [
+      ["Leca", "Bacteriën"], ["Leca", "Archaeplastiden"]
+    ],
+    output: [
+      { naam: "Leca", icoon: "icons/Leca.png", map: "Pril leven", 
+        quote: `The cell is immortal. It is merely the fluid in which it floats that degenerates. Renew this fluid 
+        at regular intervals, give the cells at they require for nutrition, and as far as we know, the pulsation of 
+        life can go on forever 
+        <br><br>- Alexis Carrel`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: [
       ["Stromatolieten", "Ster"], ["Stromatolieten", "Licht"],
       ["Blauwalgen", "Ster"], ["Blauwalgen", "Licht"],
       ["Archaeplastiden", "Ster"], ["Archaeplastiden", "Licht"],
@@ -2086,12 +2104,50 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Amoeben", "Bacteriën"], ["Amoeben", "Detritus"], ["Amoeben", "Blauwalgen"], ["Amoeben", "Leca"],
+      ["Amoeben", "Schimmel"], ["Amoeben", "Archaeplastiden"], ["Amoeben", "Gist"], 
+      ["Amoeben", "Foraminiferen"]
+    ],
+    output: [
+      { naam: "Amoeben", icoon: "icons/Amoeben.png", map: "Pril leven", 
+        quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
+        generals, fade away. It just divides and becomes two new amoebas 
+        <br><br>- George Wald`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
     input: ["Leca", "Zand"],
     hint: `Wat gebruikt een eencellige als schild? Juist ja, een zandkorrel.`,
     output: [
       { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
         quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
         <br><br>- Thomas Huxley`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Foraminiferen", "Bacteriën"], ["Foraminiferen", "Detritus"], ["Foraminiferen", "Blauwalgen"], 
+      ["Foraminiferen", "Leca"], ["Foraminiferen", "Schimmel"], ["Foraminiferen", "Archaeplastiden"],
+      ["Foraminiferen", "Gist"], ["Foraminiferen", "Rode algen"], ["Foraminiferen", "Groene algen"],
+      ["Foraminiferen", "Roodwieren"], ["Foraminiferen", "Steenwortelalgen"], ["Foraminiferen", "Groenwieren"]
+    ],
+    output: [
+      { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
+        quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
+        <br><br>- Thomas Huxley`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2108,14 +2164,15 @@ const combinaties = [
   },
   {
     input: [
-      ["Leca", "Bacteriën"], ["Leca", "Archaeplastiden"]
+      ["Stralendiertjes", "Bacteriën"], ["Stralendiertjes", "Detritus"], ["Stralendiertjes", "Blauwalgen"], 
+      ["Stralendiertjes", "Leca"], ["Stralendiertjes", "Schimmel"], ["Stralendiertjes", "Archaeplastiden"],
+      ["Stralendiertjes", "Gist"], ["Stralendiertjes", "Rode algen"], ["Stralendiertjes", "Groene algen"],
+      ["Stralendiertjes", "Roodiweren"], ["Stralendiertjes", "Steenwortelalgen"], ["Stralendiertjes", "Groenwieren"]
     ],
     output: [
-      { naam: "Leca", icoon: "icons/Leca.png", map: "Pril leven", 
-        quote: `The cell is immortal. It is merely the fluid in which it floats that degenerates. Renew this fluid 
-        at regular intervals, give the cells at they require for nutrition, and as far as we know, the pulsation of 
-        life can go on forever 
-        <br><br>- Alexis Carrel`
+      { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
+        quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
+        <br><br>- Ernst Haeckel`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -2132,6 +2189,20 @@ const combinaties = [
       { naam: "Schimmel", icoon: "icons/Schimmel.png", map: "Pril leven",
         quote: `Fungi are the interface organisms between life and death 
         <br><br>- Paul Stamets`
+      }
+    ]
+  },
+  {
+    input: ["Schimmel", "Detritus"],
+    output: [
+      { naam: "Schimmel", icoon: "icons/Schimmel.png", map: "Pril leven",
+        quote: `Fungi are the interface organisms between life and death 
+        <br><br>- Paul Stamets`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2154,6 +2225,25 @@ const combinaties = [
         water; life is one-tenth Here and Now, nine-tenths a history lesson. For most of the time the Here and Now is 
         neither now nor here 
         <br><br>- Graham Swift`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Sponzen", "Bacteriën"], ["Sponzen", "Detritus"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Gist"],
+      ["Sponzen", "Groene algen"], ["Sponzen", "Amoeben"], ["Sponzen", "Foraminiferen"], ["Sponzen", "Groenwieren"],
+      ["Sponzen", "Beerdiertjes"]
+    ],
+    output: [
+      { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Waterdieren", 
+        quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
+        must first be able to absorb it well 
+        <br><br>- Jim Rohn`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2184,24 +2274,6 @@ const combinaties = [
   },
   {
     input: [
-      ["Amoeben", "Bacteriën"], ["Amoeben", "Detritus"], ["Amoeben", "Blauwalgen"], ["Amoeben", "LECA"], 
-      ["Amoeben", "Foraminiferen"], ["Amoeben", "Archaeplastiden"]
-    ],
-    output: [
-      { naam: "Amoeben", icoon: "icons/Amoeben.png", map: "Pril leven", 
-        quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
-        generals, fade away. It just divides and becomes two new amoebas 
-        <br><br>- George Wald`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
-    input: [
       ["Amoeben", "Evolutie"], ["Amoeben", "Amoeben"]
     ],
     hint: `Als Amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
@@ -2217,45 +2289,11 @@ const combinaties = [
     input: [
       ["Foraminiferen", "Zand"], ["Oertrochozoa", "Kalk"]
     ],
-    hint: `Kijk naar het zand van foraminiferen of de kalk van trochozoa...`,
+    hint: `Kijk wat foraminiferen met zand doen of weekdieren met kalk...`,
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Foraminiferen", "Bacteriën"], ["Foraminiferen", "Detritus"], ["Foraminiferen", "Blauwalgen"], 
-      ["Foraminiferen", "Leca"], ["Foraminiferen", "Archaeplastiden"]
-    ],
-    output: [
-      { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
-        quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
-        <br><br>- Thomas Huxley`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Stralendiertjes", "Bacteriën"], ["Stralendiertjes", "Detritus"], ["Stralendiertjes", "Blauwalgen"], 
-      ["Stralendiertjes", "Leca"], ["Stralendiertjes", "Amoeben"], ["Stralendiertjes", "Archaeplastiden"]
-    ],
-    output: [
-      { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
-        quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
-        <br><br>- Ernst Haeckel`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2275,26 +2313,28 @@ const combinaties = [
     ]
   },
   {
-    input: ["Schimmel", "Detritus"],
-    output: [
-      { naam: "Schimmel", icoon: "icons/Schimmel.png", map: "Pril leven",
-        quote: `Fungi are the interface organisms between life and death 
-        <br><br>- Paul Stamets`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
     input: ["Schimmel", "Glucose"],
     hint: `Sommige eencellige schimmels specialiseren zich in suikers.`,
     output: [
       { naam: "Gist", icoon: "icons/Gist.png", map: "Pril leven",
         quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
         <br><br>- Ralph Emerson`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Gist", "Detritus"], ["Gist", "Schimmel"]
+    ],
+    output: [
+      { naam: "Gist", icoon: "icons/Gist.png", map: "Pril leven",
+        quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
+        <br><br>- Ralph Emerson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2314,9 +2354,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Bacteriën"], ["Koraal", "Detritus"], ["Koraal", "Blauwalgen"], ["Koraal", "Leca"], 
-      ["Koraal", "Archaeplastiden"], ["Rode algen", "Koraal"], ["Groene algen", "Koraal"], ["Roodwieren", "Koraal"], 
-      ["Groenwieren", "Koraal"]
+      ["Koraal", "Leca"], ["Koraal", "Foraminiferen"], ["Koraal", "Krill"]
     ],
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
@@ -2354,24 +2392,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Sponzen", "Bacteriën"], ["Sponzen", "Detritus"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Foraminiferen"], 
-      ["Sponzen", "Stralendiertjes"]
-    ],
-    output: [
-      { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Waterdieren", 
-        quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
-        must first be able to absorb it well 
-        <br><br>- Jim Rohn`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
     input: ["Archaeplastiden", "Evolutie"],
     hint: `Die plantencellen reageren op licht.. laten we ze verschillende kleuren geven.`,
     tijd: 1_500_000_000,
@@ -2384,22 +2404,6 @@ const combinaties = [
         quote: `Even the simplest green algae possess the fundamental machinery of photosynthesis that sustains life on 
         Earth 
         <br><br>- Peter Raven`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Gist", "Detritus"], ["Gist", "Schimmel"]
-    ],
-    output: [
-      { naam: "Gist", icoon: "icons/Gist.png", map: "Pril leven",
-        quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
-        <br><br>- Ralph Emerson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2431,8 +2435,8 @@ const combinaties = [
   {
     input: [
       ["Oercnidaria", "Bacteriën"], ["Oercnidaria", "Detritus"], ["Oercnidaria", "Blauwalgen"], ["Oercnidaria", "Leca"], 
-      ["Oercnidaria", "Amoeben"], ["Oercnidaria", "Foraminiferen"], ["Oercnidaria", "Stralendiertjes"], 
-      ["Oercnidaria", "Archaeplastiden"]
+      ["Oercnidaria", "Schimmel"], ["Oercnidaria", "Sponzen"], ["Oercnidaria", "Archaeplastiden"], ["Oercnidaria", "Gist"],
+      ["Oercnidaria", "Amoeben"], ["Oercnidaria", "Foraminiferen"], ["Oercnidaria", "Stralendiertjes"]
     ],
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
@@ -2448,9 +2452,10 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Detritus"], ["Oerbilateria", "Blauwalgen"], 
-      ["Oerbilateria", "Leca"], ["Oerbilateria", "Amoeben"], ["Oerbilateria", "Foraminiferen"], 
-      ["Oerbilateria", "Stralendiertjes"], ["Oerbilateria", "Archaeplastiden"]
+      ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Detritus"], ["Oerbilateria", "Blauwalgen"], ["Oerbilateria", "Leca"],
+      ["Oerbilateria", "Schimmel"], ["Oerbilateria", "Sponzen"], ["Oerbilateira", "Archaeplastiden"], 
+      ["Oerbilateria", "Gist"], ["Oerbilateria", "Amoeben"], ["Oerbilateria", "Foraminiferen"], 
+      ["Oerbilateria", "Stralendiertjes"], ["Oerbilateria", "Oercnidaria"]
     ],
     output: [
       { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
@@ -2944,9 +2949,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], ["Kwallen", "Archaeplastiden"], ["Kwallen", "Rode algen"],
-      ["Kwallen", "Groene algen"], ["Kwallen", "Steenwortelalgen"], ["Kwallen", "Wormen"], ["Kwallen", "Oertrochozoa"],
-      ["Kwallen", "Beerdiertjes"], ["Kwallen", "Krill"], ["Kwallen", "Garnalen"]
+      ["Kwallen", "Bacteriën"], ["Kwallen", "Detritus"], ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], 
+      ["Kwallen", "Schimmel"], ["Kwallen", "Sponzen"], ["Kwallen", "Archaeplastiden"], ["Kwallen", "Gist"],
+      ["Kwallen", "Rode algen"], ["Kwallen", "Groene algen"], ["Kwallen", "Amoeben"], ["Kwallen", "Foraminiferen"],
+      ["Kwallen", "Stralendiertjes"], ["Kwallen", "Oercnidaria"], ["Kwallen", "Oerbilateria"],
+      ["Kwallen", "Oertrochozoa"], ["Kwallen", "Wormen"], ["Kwallen", "Beerdiertjes"], ["Kwallen", "Mijten"],
+      ["Kwallen", "Krill"]
     ],
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
@@ -2969,8 +2977,11 @@ const combinaties = [
   {
     input: [
       ["Zeeanemonen", "Bacteriën"], ["Zeeanemonen", "Detritus"], ["Zeeanemonen", "Blauwalgen"], ["Zeeanemonen", "Leca"], 
-      ["Zeeanemonen", "Amoeben"], ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"], 
-      ["Zeeanemonen", "Wormen"], ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemonen", "Krill"], ["Zeeanemonen", "Garnalen"]
+      ["Zeeanemonen", "Schimmel"], ["Zeeanemonen", "Sponzen"], ["Zeeanemonen", "Archaeplastiden"], ["Zeeanemonen", "Gist"],
+      ["Zeeanemonen", "Rode algen"], ["Zeeanemonen", "Groene algen"], ["Zeeanemonen", "Amoeben"], 
+      ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"], ["Zeeanemonen", "Oercnidaria"], 
+      ["Zeeanemonen", "Oerbilateria"], ["Zeeanemonen", "Groenwieren"], ["Zeeanemonen", "Oertrochozoa"],
+      ["Zeeanemonen", "Wormen"], ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemeonen", "Mijten"], ["Zeeanemonen", "Krill"]
     ],
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
@@ -3058,8 +3069,11 @@ const combinaties = [
   },
   {
     input: [
-      ["Wormen", "Bacteriën"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], ["Wormen", "Amoeben"],
-      ["Wormen", "Foraminiferen"], ["Wormen", "Stralendiertjes"], ["Wormen", "Beerdiertjes"], ["Wormen", "Krill"]
+      ["Wormen", "Bacteriën"], ["Wormen", "Detritus"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], ["Wormen", "Schimmel"], 
+      ["Wormen", "Sponzen"], ["Wormen", "Archaeplastiden"], ["Wormen", "Gist"], ["Wormen", "Rode algen"], 
+      ["Wormen", "Groene algen"], ["Wormen", "Amoeben"], ["Wormen", "Foraminiferen"], ["Wormen", "Stralendiertjes"], 
+      ["Wormen", "Oercnidaria"], ["Wormen", "Oerbilateria"], ["Wormen", "Groenwieren"], ["Wormen", "Beerdiertjes"], 
+      ["Wormen", "Mijten"], ["Wormen", "Krill"]
     ],
     output: [
       { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
@@ -3075,9 +3089,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Oertrochozoa", "Bacteriën"], ["Oertrochozoa", "Blauwalgen"], ["Oertrochozoa", "Leca"], 
+      ["Oertrochozoa", "Bacteriën"], ["Oertrochozoa", "Detritus"], ["Oertrochozoa", "Blauwalgen"], ["Oertrochozoa", "Leca"], 
+      ["Oertrochozoa", "Schimmel"], ["Oertrochozoa", "Sponzen"], ["Oertrochozoa", "Archaeplastiden"], 
+      ["Oertrochozoa", "Gist"], ["Oertrochozoa", "Rode algen"], ["Oertrochozoa", "Groene algen"], 
       ["Oertrochozoa", "Amoeben"], ["Oertrochozoa", "Foraminiferen"], ["Oertrochozoa", "Stralendiertjes"],
-      ["Oertrochozoa", "Wormen"], ["Oertrochozoa", "Beerdiertjes"], ["Oertrochozoa", "Krill"]
+      ["Oertrochozoa", "Oercnidaria"], ["Oertrochozoa", "Oerbilateria"], ["Oertrochozoa", "Groenwieren"],
+      ["Oertrochozoa", "Wormen"], ["Oertrochozoa", "Beerdiertjes"], ["Oertrochozoa", "Mijten"], ["Oertrochozoa", "Krill"]
     ],
     hint: `Voor de bewuste dieren is eten meer dan alleen een beloning.`, 
     output: [
@@ -3089,16 +3106,18 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
       }
     ]
   },
   {
     input: [
-      ["Zeesterren", "Sponzen"], ["Zeesterren", "Wormen"], ["Zeeanemonen", "Zeesterren"]
+      ["Zeesterren", "Bacteriën"], ["Zeesterren", "Detritus"], ["Zeesterren", "Blauwalgen"], ["Zeesterren", "Leca"],
+      ["Zeesterren", "Schimmel"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Archaeplastiden"], ["Zeesterren", "Gist"],
+      ["Zeesterren", "Rode algen"], ["Zeesterren", "Groene algen"], ["Zeesterren", "Amoeben"], 
+      ["Zeesterren", "Foraminiferen"], ["Zeesterren", "Stralendiertjes"], ["Zeesterren", "Oercnidaria"], 
+      ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Roodiweren"], ["Zeesterren", "Groenwieren"], 
+      ["Zeesterren", "Oertrochozoa"], ["Zeesterren", "Wormen"], ["Zeesterren", "Beerdiertjes"], ["Zeesterren", "Mijten"],
+      ["Zeestserren", "Krill"]
     ],
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
@@ -3109,6 +3128,24 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: ["Zeesterren", "Tweekleppigen"],
+    output: [
+      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
+        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -3155,9 +3192,14 @@ const combinaties = [
   },
   {
     input: [
-      ["Lancetvisjes", "Bacteriën"], ["Lancetvisjes", "Blauwalgen"], ["Lancetvisjes", "Leca"], ["Lancetvisjes", "Amoeben"],
-      ["Lancetvisjes", "Foraminiferen"], ["Lancetvisjes", "Stralendiertjes"], ["Lancetvisjes", "Wormen"],
-      ["Lancetvisjes", "Beerdiertjes"], ["Lancetvisjes", "Krill"]
+      ["Lancetvisjes", "Bacteriën"], ["Lancetvisjes", "Detritus"], ["Lancetvisjes", "Blauwalgen"], 
+      ["Lancetvisjes", "Leca"], ["Lancetvisjes", "Schimmel"], ["Lancetvisjes", "Sponzen"], 
+      ["Lancetvisjes", "Archaeplastiden"], ["Lancetvisjes", "Gist"], ["Lancetvisjes", "Rode algen"], 
+      ["Lancetvisjes", "Groene algen"], ["Lancetvisjes", "Amoeben"], ["Lancetvisjes", "Foraminiferen"],
+      ["Lancetvisjes", "Stralendiertjes"], ["Lancetvisjes", "Oercnidaria"], ["Lancetvisjes", "Oerbilateria"],
+      ["Lancetvisjes", "Roodwieren"], ["Lancetvisjes", "Groenwieren"], ["Lancetvisjes", "Oertrochozoa"],
+      ["Lancetvisjes", "Wormen"], ["Lancetvisjes", "Zeesterren"], ["Lancetvisjes", "Beerdiertjes"], 
+      ["Lancetvisjes", "Mijten"], ["Lancetvisjes", "Krill"]
     ],
     output: [
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
@@ -3173,9 +3215,13 @@ const combinaties = [
   },
   {
     input: [
-      ["Agnathen", "Bacteriën"], ["Agnathen", "Blauwalgen"], ["Agnathen", "Leca"], ["Agnathen", "Amoeben"],
-      ["Agnathen", "Foraminiferen"], ["Agnathen", "Stralendiertjes"], ["Agnathen", "Wormen"], ["Agnathen", "Beerdiertjes"],
-      ["Agnathen", "Krill"], ["Agnathen", "Garnalen"]
+      ["Agnathen", "Bacteriën"], ["Agnathen", "Detritus"], ["Agnathen", "Blauwalgen"], ["Agnathen", "Leca"], 
+      ["Agnathen", "Schimmel"], ["Agnathen", "Sponzen"], ["Agnathen", "Archaeplastiden"], ["Agnathen", "Gist"], 
+      ["Agnathen", "Rode algen"], ["Agnathen", "Groene algen"], ["Agnathen", "Amoeben"], ["Agnathen", "Foraminiferen"],
+      ["Agnathen", "Stralendiertjes"], ["Agnathen", "Oercnidaria"], ["Agnathen", "Oerbilateria"], 
+      ["Agnathen", "Roodwieren"], ["Agnathen", "Groenwieren"], ["Agnathen", "Oertrochozoa"], ["Agnathen", "Wormen"], 
+      ["Agnathen", "Zeesterren"], ["Agnathen", "Lancetvisjes"], ["Agnathen", "Beerdiertjes"], ["Agnathen", "Mijten"], 
+      ["Agnathen", "Krill"]
     ],
     output: [
       { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
@@ -3196,10 +3242,13 @@ const combinaties = [
   },
   {
     input: [
-      ["Oergeleedpotigen", "Bacteriën"], ["Oergeleedpotigen", "Blauwalgen"], ["Oergeleedpotigen", "Leca"], 
-      ["Oergeleedpotigen", "Amoeben"], ["Oergeleedpotigen", "Foraminiferen"], ["Oergeleedpotigen", "Stralendiertjes"],
-      ["Oergeleedpotigen", "Wormen"], ["Oergeleedpotigen", "Beerdiertjes"], ["Oergeleedpotigen", "Krill"],
-      ["Oergeleedpotigen", "Garnalen"]
+      ["Oergeleedpotigen", "Bacteriën"], ["Oergeleedpotigen", "Detritus"], ["Oergeleedpotigen", "Blauwalgen"], 
+      ["Oergeleedpotigen", "Schimmel"], ["Oergeleedpotigen", "Gist"], ["Oergeleedpotigen", "Rode algen"],
+      ["Oergeleedpotigen", "Groene algen"], ["Oergeleedpotigen", "Amoeben"], ["Oergeleedpotigen", "Foraminiferen"], 
+      ["Oergeleedpotigen", "Stralendiertjes"], ["Oergeleedpotigen", "Oercnidaria"], ["Oergeleedpotigen", "Oerbilateria"],
+      ["Oergeleedpotigen", "Roodwieren"], ["Oergeleedpotigen", "Groenwieren"], ["Oergeleedpotigen", "Oertrochozoa"],
+      ["Oergeleedpotigen", "Wormen"], ["Oergeleedpotigen", "Beerdiertjes"], ["Oergeleedpotigen", "Mijten"], 
+      ["Oergeleedpotigen", "Krill"]
     ],
     output: [
       { naam: "Oergeleedpotigen", icoon: "icons/Oergeleedpotigen.png", map: "Geleedpotigen", 
@@ -3220,9 +3269,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Manteldieren", "Bacteriën"], ["Manteldieren", "Blauwalgen"], ["Manteldieren", "Leca"], ["Manteldieren", "Amoeben"],
-      ["Manteldieren", "Foraminiferen"], ["Manteldieren", "Stralendiertjes"], ["Manteldieren", "Beerdiertjes"],
-      ["Manteldieren", "Krill"]
+      ["Manteldieren", "Bacteriën"], ["Manteldieren", "Detritus"], ["Manteldieren", "Blauwalgen"], 
+      ["Manteldieren", "Schimmel"], ["Manteldieren", "Gist"], ["Manteldieren", "Rode algen"], 
+      ["Manteldieren", "Groene algen"], ["Manteldieren", "Amoeben"], ["Manteldieren", "Foraminiferen"], 
+      ["Manteldieren", "Stralendiertjes"], ["Manteldieren", "Oercnidaria"], ["Manteldieren", "Oerbilateria"], 
+      ["Manteldieren", "Oertrochozoa"], ["Manteldieren", "Wormen"], ["Manteldieren", "Beerdiertjes"], 
+      ["Manteldieren", "Mijten"], ["Manteldieren", "Krill"]
     ],
     output: [
       { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
@@ -3238,14 +3290,38 @@ const combinaties = [
   },
   {
     input: [
-      ["Beerdiertjes", "Bacteriën"], ["Beerdiertjes", "Blauwalgen"], ["Beerdiertjes", "Leca"], ["Beerdiertjes", "Amoeben"],
-      ["Beerdiertjes", "Foraminiferen"], ["Beerdiertjes", "Stralendiertjes"]
+      ["Beerdiertjes", "Bacteriën"], ["Beerdiertjes", "Detritus"], ["Beerdiertjes", "Blauwalgen"], 
+      ["Beerdiertjes", "Leca"], ["Beerdiertjes", "Schimmel"], ["Beerdiertjes", "Gist"], ["Beerdiertjes", "Rode algen"], 
+      ["Beerdiertjes", "Groene algen"], ["Beerdiertjes", "Amoeben"], ["Beerdiertjes", "Foraminiferen"], 
+      ["Beerdiertjes", "Stralendiertjes"], ["Beerdiertjes", "Oercnidaria"], ["Beerdiertjes", "Oerbilateria"]
     ],
     output: [
       { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
         quote: `There is one living organism, called a tardigrade, that has survived the five great mass extinctions on 
         Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures 
         <br><br>- Alycia Carey`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zee-egels", "Bacteriën"], ["Zee-egels", "Detritus"], ["Zee-egels", "Blauwalgen"], 
+      ["Zee-egels", "Schimmel"], ["Zee-egels", "Sponzen"], ["Zee-egels", "Gist"], ["Zee-egels", "Rode algen"], 
+      ["Zee-egels", "Groene algen"], ["Zee-egels", "Amoeben"], ["Zee-egels", "Foraminiferen"], 
+      ["Zee-egels", "Stralendiertjes"], ["Zee-egels", "Oercnidaria"], ["Zee-egels", "Oerbilateria"], 
+      ["Zee-egels", "Roodwieren"], ["Zee-egels", "Groenwieren"], ["Zee-egels", "Oertrochozoa"], ["Zee-egels", "Wormen"], 
+      ["Zee-egels", "Beerdiertjes"], ["Zee-egels", "Beerdiertjes"]
+    ],
+    output: [
+      { naam: "Zee-egels", icoon: "icons/Zee-egels.png", map: "Waterdieren", 
+        quote: `Why should I copy this owl, this sea urchin? Why should I try to imitate nature? I might just as well try
+        to trace a perfect circle
+        <br><br>- Pablo Picasso`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -3293,12 +3369,13 @@ const combinaties = [
   },
   {
     input: [
-      ["Oertrochozoa", "Pijn"], ["Lancetvisjes", "Pijn"], ["Agnathen", "Pijn"], ["Oergeleedpotigen", "Pijn"], 
-      ["Zeeslakken", "Pijn"],
-      ["Tweekleppigen", "Pijn"], ["Trilobieten", "Pijn"], ["Oercheliceraten", "Pijn"], ["Duizendpoten", "Pijn"],
-      ["Oerkreeftjes", "Pijn"], ["Oerinsecten", "Pijn"], ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"],
-      ["Zwaardstaarten", "Pijn"], ["Krill", "Pijn"],["Pissebedden", "Pijn"], ["Garnalen", "Pijn"],
-      ["Kreeften", "Pijn"],
+      ["Agnathen", "Pijn"], ["Oergeleedpotigen", "Pijn"], ["Zeeslakken", "Pijn"], ["Trilobieten", "Pijn"], 
+      ["Oercheliceraten", "Pijn"], ["Duizendpoten", "Pijn"], ["Oerkreeftjes", "Pijn"], ["Oerinsecten", "Pijn"], 
+      ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"], ["Mijten", "Mijten"], ["Zwaardstaarten", "Pijn"], ["Krill", "Pijn"],
+      ["Pissebedden", "Pijn"], ["Garnalen", "Pijn"], ["Kreeften", "Pijn"], ["Krabben", "Pijn"], ["Zilvervisjes", "Pijn"],
+      ["Oerpolyneopteren", "Pijn"], ["Oerhymenopteren", "Pijn"], ["Luizen", "Pijn "], ["Kevers", "Pijn"], 
+      ["Muggen", "Pijn"], ["Vliegen", "Pijn"], ["Vlinders", "Pijn"], ["Krekels", "Pijn"], ["Sprinkhanen", "Pijn"], 
+      ["Wandelende takken", "Pijn"], ["Kakkerlakken", "Pijn"], ["Termieten", "Pijn"],
       
       ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Pijn"],
       ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
@@ -3308,7 +3385,15 @@ const combinaties = [
       ["Tiktaalik", "Storm"], ["Tiktaalik", "Orkaan"], ["Tiktaalik", "Pijn"],
       ["Longvissen", "Storm"], ["Longvissen", "Orkaan"], ["Longvissen", "Pijn"],
       ["Haaien", "Storm"], ["Haaien", "Orkaan"], ["Haaien", "Pijn"],
-      ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Pijn"]
+      ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Pijn"],
+      ["Oerchondrostei", "Storm"], ["Oerchondrostei", "Orkaan"], ["Oerchondrostei", "Pijn"],
+      ["Wimpelalen", "Storm"], ["Wimpelalen", "Orkaan"], ["Wimpelalen", "Pijn"],
+      ["Oerneopterygen", "Storm"], ["Oerneopterygen", "Orkaan"], ["Oerneopterygen", "Pijn"],
+      ["Oertetrapoden", "Storm"], ["Oertetrapoden", "Orkaan"], ["Oertetrapoden", "Pijn"],
+      ["Oersynapsiden", "Storm"], ["Oersynapsiden", "Orkaan"], ["Oersynapsiden", "Pijn"],
+      ["Oeranapsiden", "Storm"], ["Oeranapsiden", "Orkaan"], ["Oeranapsiden", "Pijn"],
+      ["Oerdiapsiden", "Storm"], ["Oerdiapsiden", "Orkaan"], ["Oerdiapsiden", "Pijn"],
+      ["Schildpadden", "Storm"], ["Schildpadden", "Orkaan"], ["Schildpadden", "Pijn"]
     ],
     hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
     output: [
@@ -3330,6 +3415,79 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Inktvissen", "Kwallen"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"], ["Inktvissen", "Lancetvisjes"], 
+      ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Oerkreeftjes"],
+      ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Krill"], ["Inktvissen", "Garnalen"]
+    ],
+    output: [
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        quote: `I would love to see a giant squid. Very few people have seen them. 
+        And only about half a dozen people have seen one alive
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        quote: `I would love to see a giant squid. Very few people have seen them. 
+        And only about half a dozen people have seen one alive
+        <br><br>- David Attenborough`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: ["Inktvissen", "Tweekleppigen"],
+    output: [
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        quote: `I would love to see a giant squid. Very few people have seen them. 
+        And only about half a dozen people have seen one alive
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
     input: ["Oertrochozoa", "Schelp"],
     hint: `Geef bescherming aan de trochozoa want zij zijn zo week.`, 
     output: [
@@ -3346,11 +3504,27 @@ const combinaties = [
   },
   {
     input: [
+      ["Agnathen", "Virus"], ["Agnathen", "Parasieten"],
+      ["Oergeleedpotigen", "Virus"], ["Oergeleedpotigen", "Parasieten"],
+      ["Zwaardstaarten", "Virus"], ["Zwaardstaarten", "Parasieten"],
       ["Pissebedden", "Virus"], ["Pissebedden", "Parasieten"],
+      ["Garnalen", "Virus"], ["Garnalen", "Parasieten"],
+      ["Kreeften", "Virus"], ["Kreeften", "Parasieten"],
+      ["Krabben", "Virus"], ["Krabben", "Parasieten"],
+      ["Zilvervisjes", "Virus"], ["Zilvervisjes", "Parasieten"],
+      ["Oerpolyneopteren", "Virus"], ["Oerpolyneopteren", "Parasieten"],
+      ["Oerhymenopteren", "Virus"], ["Oerhymenopteren", "Parasieten"],
+      ["Luizen", "Virus"], ["Luizen", "Parasieten"],
+      ["Kevers", "Virus"], ["Kevers", "Parasieten"],
+      ["Muggen", "Virus"], ["Muggen", "Parasieten"],
+      ["Vliegen", "Virus"], ["Vliegen", "Parasieten"],
+      ["Vlinders", "Virus"], ["Vlinders", "Parasieten"],
+      ["Krekels", "Virus"], ["Krekels", "Parasieten"],
+      ["Sprinkhanen", "Virus"], ["Sprinkhanen", "Parasieten"],
+      ["Wandelende takken", "Virus"], ["Wandelende takken", "Parasieten"],
+      ["Kakkerlakken", "Virus"], ["Kakkerlakken", "Parasieten"],
+      ["Termieten", "Virus"], ["Termieten", "Parasieten"],
       
-      ["Oertrochozoa", "Virus"], ["Oertrochozoa", "Schimmel"], ["Oertrochozoa", "Parasieten"],
-      ["Agnathen", "Virus"], ["Agnathen", "Schimmel"], ["Agnathen", "Parasieten"],
-      ["Oergeleedpotigen", "Virus"], ["Oergeleedpotigen", "Schimmel"], ["Oergeleedpotigen", "Parasieten"],
       ["Zeeslakken", "Virus"], ["Zeeslakken", "Schimmel"], ["Zeeslakken", "Parasieten"],
       ["Trilobieten", "Virus"], ["Trilobieten", "Schimmel"], ["Trilobieten", "Parasieten"],
       ["Oercheliceraten", "Virus"], ["Oercheliceraten", "Schimmel"], ["Oercheliceraten", "Parasieten"],
@@ -3360,12 +3534,9 @@ const combinaties = [
       ["Nautilussen", "Virus"], ["Nautilussen", "Schimmel"], ["Nautilussen", "Parasieten"],
       ["Schorpioenen", "Virus"], ["Schorpioenen", "Schimmel"], ["Schorpioenen", "Parasieten"],
       ["Spinnen", "Virus"], ["Spinnen", "Schimmel"], ["Spinnen", "Parasieten"],
+      ["Mijten", "Virus"], ["Mijten", "Schimmel"], ["Mijten", "Parasieten"],
       ["Krill", "Virus"], ["Krill", "Schimmel"], ["Krill", "Parasieten"],
-      ["Garnalen", "Virus"], ["Garnalen", "Schimmel"], ["Garnalen", "Parasieten"],
-      ["Kreeften", "Virus"], ["Kreeften", "Schimmel"], ["Kreeften", "Parasieten"],
-      ["Krabben", "Virus"], ["Krabben", "Schimmel"], ["Krabben", "Parasieten"],
       
-      ["Zwaardstaarten", "Virus"], ["Zwaardstaarten", "Schimmel"], ["Zwaardstaarten", "Parasieten"],
       ["Inktvissen", "Bacteriën"], ["Inktvissen", "Virus"], ["Inktvissen", "Schimmel"], ["Inktvissen", "Parasieten"],
       ["Oerchondrichthyes", "Bacteriën"], ["Oerchondrichthyes", "Virus"], ["Oerchondrichthyes", "Schimmel"], 
       ["Oerchondrichthyes", "Parasieten"],
@@ -3376,7 +3547,26 @@ const combinaties = [
       ["Tiktaalik", "Bacteriën"], ["Tiktaalik", "Virus"], ["Tiktaalik", "Schimmel"], ["Tiktaalik", "Parasieten"],
       ["Longvissen", "Bacteriën"], ["Longvissen", "Virus"], ["Longvissen", "Schimmel"], ["Longvissen", "Parasieten"],
       ["Haaien", "Bacteriën"], ["Haaien", "Virus"], ["Haaien", "Schimmel"], ["Haaien", "Parasieten"],
-      ["Holocefalen", "Bacteriën"], ["Holocefalen", "Virus"], ["Holocefalen", "Schimmel"], ["Holocefalen", "Parasieten"]
+      ["Holocefalen", "Bacteriën"], ["Holocefalen", "Virus"], ["Holocefalen", "Schimmel"], ["Holocefalen", "Parasieten"],
+      ["Oerchondrostei", "Bacteriën"], ["Oerchondrostei", "Virus"], ["Oerchondrostei", "Schimmel"], 
+      ["Oerchondrostei", "Parasieten"],
+      ["Wimpelalen", "Bacteriën"], ["Wimpelalen", "Virus"], ["Wimpelalen", "Schimmel"], 
+      ["Wimpelalen", "Parasieten"],
+      ["Oerneopterygen", "Bacteriën"], ["Oerneopterygen", "Virus"], ["Oerneopterygen", "Schimmel"], 
+      ["Oerneopterygen", "Parasieten"],
+      ["Oertetrapoden", "Bacteriën"], ["Oertetrapoden", "Virus"], ["Oertetrapoden", "Schimmel"], 
+      ["Oertetrapoden", "Parasieten"],
+      ["Salamanders", "Bacteriën"], ["Salamanders", "Virus"], ["Salamanders", "Schimmel"], ["Salamanders", "Parasieten"],
+      ["Kikkers", "Bacteriën"], ["Kikkers", "Virus"], ["Kikkers", "Schimmel"], ["Kikkers", "Parasieten"],
+      ["Padden", "Bacteriën"], ["Padden", "Virus"], ["Padden", "Schimmel"], ["Padden", "Parasieten"],
+      ["Oersynapsiden", "Bacteriën"], ["Oersynapsiden", "Virus"], ["Oersynapsiden", "Schimmel"], 
+      ["Oersynapsiden", "Parasieten"],
+      ["Oeranapsiden", "Bacteriën"], ["Oeranapsiden", "Virus"], ["Oeranapsiden", "Schimmel"], 
+      ["Oeranapsiden", "Parasieten"],
+      ["Oerdiapsiden", "Bacteriën"], ["Oerdiapsiden", "Virus"], ["Oerdiapsiden", "Schimmel"], 
+      ["Oerdiapsiden", "Parasieten"],
+      ["Schildpadden", "Bacteriën"], ["Schildpadden", "Virus"], ["Schildpadden", "Schimmel"], 
+      ["Schildpadden", "Parasieten"]
     ],
     hint: `Niet ziek willen worden, daar kan het bewustzijn ook bij helpen.`, 
     output: [
@@ -3388,15 +3578,21 @@ const combinaties = [
   },
   {
     input: [
-      ["Oertrochozoa", "Oertrochozoa"], ["Agnathen", "Agnathen"], ["Oergeleedpotigen", "Oergeleedpotigen"],
-      ["Inktvissen", "Inktvissen"], ["Zeeslakken", "Zeeslakken"], ["Tweekleppigen", "Tweekleppigen"],
-      ["Trilobieten", "Trilobieten"], ["Oercheliceraten", "Oercheliceraten"], ["Duizendpoten", "Duizendpoten"],
-      ["Oerkreeftjes", "Oerkreeftjes"], ["Oerinsecten", "Oerinsecten"], ["Nautilussen", "Nautilussen"],
-      ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], ["Zwaardstaarten", "Zwaardstaarten"],
-      ["Krill", "Krill"], ["Oerchondrichthyes", "Oerchondrichthyes"], ["Oerstraalvinnigen", "Oerstraalvinnigen"],
-      ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], ["Longvissen", "Longvissen"], 
-      ["Pissebedden", "Pissebedden"], ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], ["Krabben", "Krabben"], 
-      ["Holocefalen", "Holocefalen"]
+      ["Agnathen", "Agnathen"], ["Oergeleedpotigen", "Oergeleedpotigen"], ["Inktvissen", "Inktvissen"], 
+      ["Zeeslakken", "Zeeslakken"], ["Trilobieten", "Trilobieten"], ["Oercheliceraten", "Oercheliceraten"], 
+      ["Duizendpoten", "Duizendpoten"], ["Oerkreeftjes", "Oerkreeftjes"], ["Oerinsecten", "Oerinsecten"], 
+      ["Nautilussen", "Nautilussen"], ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], 
+      ["Zwaardstaarten", "Zwaardstaarten"], ["Krill", "Krill"], ["Oerchondrichthyes", "Oerchondrichthyes"], 
+      ["Oerstraalvinnigen", "Oerstraalvinnigen"], ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], 
+      ["Longvissen", "Longvissen"], ["Pissebedden", "Pissebedden"], ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], 
+      ["Krabben", "Krabben"], ["Zilvervisjes", "Zilvervisjes"], ["Holocefalen", "Holocefalen"], 
+      ["Oerchondrostei", "Oerchondrostei"], ["Wimpelalen", "Wimpelalen"], ["Oerneopterygen", "Oerneopterygen"], 
+      ["Oerpolyneopteren", "Oerpolyneopteren"], ["Oerhymenopteren", "Oerhymenopteren"], ["Luizen", "Luizen"], 
+      ["Kevers", "Kevers"], ["Muggen", "Muggen"], ["Vliegen", "Vliegen"], ["Vlinders", "Vlinders"], 
+      ["Oertetrapoden", "Oertetrapoden"], ["Salamanders", "Salamanders"], ["Kikkers", "Kikkers"], ["Padden", "Padden"],
+      ["Oersynapsiden", "Oersynapsiden"], ["Oeranapsiden", "Oeranapsiden"], ["Oerdiapsiden", "Oerdiapsiden"],
+      ["Krekels", "Krekels"], ["Sprinkhanen", "Sprinkhanen"], ["Wandelende takken", "Wandelende takken"], 
+      ["Kakkerlakken", "Kakkerlakken"], ["Schildpadden", "Schildpadden"]
     ],
     hint: `Hm.. dieren van dezelfde soorten kunnen behoorlijk anders op elkaar reageren.`, 
     output: [
@@ -3486,190 +3682,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Inktvissen", "Schelp"],
-    hint: `Er zijn nog weekdieren zonder schelp...`,
-    tijd: 490_000_000,
-    output: [
-      { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
-        quote: `You don't have to bee Greek to enjoy this one
-        <br><br>- Jeff Smith`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Inktvissen", "Licht"], ["Inktvissen", "Kleur"],
-      ["Nautilussen", "Licht"], ["Nautilussen", "Kleur"],
-      ["Oerchondrichthyes", "Licht"], ["Oerchondrichthyes", "Kleur"],
-      ["Oerstraalvinnigen", "Licht"], ["Oerstraalvinnigen", "Kleur"],
-      ["Coelacanthen", "Licht"], ["Coelacanthen", "Kleur"],
-      ["Tiktaalik", "Licht"], ["Tiktaalik", "Kleur"],
-      ["Longvissen", "Licht"], ["Longvissen", "Kleur"],
-      ["Haaien", "Licht"], ["Haaien", "Kleur"],
-      ["Holocefalen", "Licht"], ["Holocefalen", "Kleur"]
-    ],
-    hint: `De slimste dieren zullen je met de speling van het licht verbazen.`,
-    output: [
-      { naam: "Verbazing", icoon: "icons/Verbazing.png", map: "Brein", 
-        quote: `Every day is a surprise. There are confirmations of an interconnectivity and synchronicity which inspire,
-        titillate and confirm the inherent comedy of the universe
-        <br><br>- Billy Zane`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Inktvissen", "Kwallen"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],
-      ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Oerkreeftjes"],
-      ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Krill"], ["Inktvissen", "Garnalen"]
-    ],
-    output: [
-      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
-        quote: `I would love to see a giant squid. Very few people have seen them. 
-        And only about half a dozen people have seen one alive
-        <br><br>- David Attenborough`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Inktvissen", "Lancetvisjes"], ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"]
-    ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    output: [
-      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
-        quote: `I would love to see a giant squid. Very few people have seen them. 
-        And only about half a dozen people have seen one alive
-        <br><br>- David Attenborough`
-      },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-        find the point where these molecules became conscious
-        <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: ["Inktvissen", "Tweekleppigen"],
-    output: [
-      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
-        quote: `I would love to see a giant squid. Very few people have seen them. 
-        And only about half a dozen people have seen one alive
-        <br><br>- David Attenborough`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-        find the point where these molecules became conscious
-        <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], ["Zeeslakken", "Amoeben"], 
-      ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], ["Zeeslakken", "Sponzen"],
-      ["Zeeslakken", "Rode algen"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Roodwieren"], 
-      ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Zeeanemonen"], ["Zeeslakken", "Wormen"]
-    ],
-    output: [
-      { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
-        quote: `Even a snail will eventually reach its destination
-        <br><br>- Gail Tsukiyama`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
-    ],
-    output: [
-      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
-        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Tweekleppigen", "Zand"], ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Blauwalgen"], 
-      ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"]
-    ],
-    hint: `Oh wat kan die zandkorrel irritant zijn voor schelpdieren.`,
-    output: [
-      { naam: "Parel", icoon: "icons/Parel.png", map: "Biologie", 
-        quote: `The world is your oyster. It's up to you to find the pearls
-        <br><br>- Chris Gardner`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Tweekleppigen", "Bacteriën"], ["Tweekleppigen", "Leca"], ["Tweekleppigen", "Amoeben"], 
-      ["Tweekleppigen", "Foraminiferen"], ["Tweekleppigen", "Stralendiertjes"], ["Tweekleppigen", "Beerdiertjes"], 
-      ["Tweekleppigen", "Krill"]
-    ],
-    output: [
-      { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
-        quote: `Every life deserves a certain amount of dignity, no matter how poor or damaged the shell
-        that carries it
-        <br><br>- Rick Bragg`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
     input: [
       ["Trilobieten", "Bacteriën"], ["Trilobieten", "Blauwalgen"], ["Trilobieten", "Leca"], 
       ["Trilobieten", "Amoeben"], ["Trilobieten", "Foraminiferen"], ["Trilobieten", "Stralendiertjes"], 
@@ -3713,34 +3725,6 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: ["Oercheliceraten", "Evolutie"],
-    hint: `Cheliceraten laten zien hoeveel schorpioenen en spinnen eigenlijk gemeen hebben.`,
-    output: [
-      { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
-        quote: `Tiny creatures such as krill form the living foundation of ocean life
-        <br><br>- Sylvia Earle`
-      },
-      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
-        quote: `The horseshoe crab is a reminder that survival does not always require change
-        <br><br>- Stephen Gould`
-      },
-      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
-        quote: `Scorpions are among the most ancient of terrestrial arthropods, 
-        their basic body plan little changed for hundreds of millions of years
-        <br><br>- Gary Polis`
-      },
-      { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Klein landleven", 
-        quote: `The next time you see a spider web, please, pause and look a little closer.
-        You'll be seeing one of the most high-performance materials known to man 
-        <br><br>- Cheryl Hayashi`
-      },
-      { naam: "Mijten", icoon: "icons/Mijten.png", map: "Klein landleven", 
-        quote: `Go pick up a mite — you’ve likely just found a new species or a fascinating example of nature’s diversity
-        <br><br>- Ray Fisher`
       }
     ]
   },
@@ -3841,6 +3825,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Inktvissen", "Schelp"],
+    hint: `Er zijn nog weekdieren zonder schelp...`,
+    tijd: 490_000_000,
+    output: [
+      { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
+        quote: `You don't have to bee Greek to enjoy this one
+        <br><br>- Jeff Smith`
+      }
+    ]
+  },
+  {
     input: [
       ["Nautilussen", "Kwallen"], ["Nautilussen", "Wormen"], 
       ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Oergeleedpotigen"], ["Nautilussen", "Manteldieren"], 
@@ -3913,6 +3908,186 @@ const combinaties = [
   },
   {
     input: [
+      ["Inktvissen", "Licht"], ["Inktvissen", "Kleur"],
+      ["Nautilussen", "Licht"], ["Nautilussen", "Kleur"],
+      ["Oerchondrichthyes", "Licht"], ["Oerchondrichthyes", "Kleur"],
+      ["Oerstraalvinnigen", "Licht"], ["Oerstraalvinnigen", "Kleur"],
+      ["Coelacanthen", "Licht"], ["Coelacanthen", "Kleur"],
+      ["Tiktaalik", "Licht"], ["Tiktaalik", "Kleur"],
+      ["Longvissen", "Licht"], ["Longvissen", "Kleur"],
+      ["Haaien", "Licht"], ["Haaien", "Kleur"],
+      ["Holocefalen", "Licht"], ["Holocefalen", "Kleur"],
+      ["Oerchondrostei", "Licht"], ["Oerchondrostei", "Kleur"],
+      ["Wimpelalen", "Licht"], ["Wimpelalen", "Kleur"],
+      ["Oerneopterygen", "Licht"], ["Oerneopterygen", "Kleur"],
+      ["Oertetrapoden", "Licht"], ["Oertetrapoden", "Kleur"],
+      ["Salamanders", "Licht"], ["Salamanders", "Kleur"],
+      ["Kikkers", "Licht"], ["Kikkers", "Kleur"],
+      ["Padden", "Licht"], ["Padden", "Kleur"],
+      ["Oersynapsiden", "Licht"], ["Oersynapsiden", "Kleur"],
+      ["Oeranapsiden", "Licht"], ["Oeranapsiden", "Kleur"],
+      ["Oerdiapsiden", "Licht"], ["Oerdiapsiden", "Kleur"],
+      ["Schildpadden", "Licht"], ["Schildpadden", "Kleur"]
+    ],
+    hint: `De slimste dieren zullen je met de speling van het licht verbazen.`,
+    output: [
+      { naam: "Verbazing", icoon: "icons/Verbazing.png", map: "Brein", 
+        quote: `Every day is a surprise. There are confirmations of an interconnectivity and synchronicity which inspire,
+        titillate and confirm the inherent comedy of the universe
+        <br><br>- Billy Zane`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], ["Zeeslakken", "Amoeben"], 
+      ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], ["Zeeslakken", "Sponzen"],
+      ["Zeeslakken", "Rode algen"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Roodwieren"], 
+      ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Zeeanemonen"], ["Zeeslakken", "Wormen"]
+    ],
+    output: [
+      { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
+        quote: `Even a snail will eventually reach its destination
+        <br><br>- Gail Tsukiyama`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
+        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Tweekleppigen", "Zand"], ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Blauwalgen"], 
+      ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"]
+    ],
+    hint: `Oh wat kan die zandkorrel irritant zijn voor schelpdieren.`,
+    output: [
+      { naam: "Parel", icoon: "icons/Parel.png", map: "Biologie", 
+        quote: `The world is your oyster. It's up to you to find the pearls
+        <br><br>- Chris Gardner`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Tweekleppigen", "Bacteriën"], ["Tweekleppigen", "Leca"], ["Tweekleppigen", "Amoeben"], 
+      ["Tweekleppigen", "Foraminiferen"], ["Tweekleppigen", "Stralendiertjes"], ["Tweekleppigen", "Beerdiertjes"], 
+      ["Tweekleppigen", "Krill"]
+    ],
+    output: [
+      { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
+        quote: `Every life deserves a certain amount of dignity, no matter how poor or damaged the shell
+        that carries it
+        <br><br>- Rick Bragg`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: ["Oercheliceraten", "Evolutie"],
+    hint: `Cheliceraten laten zien hoeveel schorpioenen en spinnen eigenlijk gemeen hebben.`,
+    output: [
+      { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
+        quote: `Tiny creatures such as krill form the living foundation of ocean life
+        <br><br>- Sylvia Earle`
+      },
+      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
+        quote: `The horseshoe crab is a reminder that survival does not always require change
+        <br><br>- Stephen Gould`
+      },
+      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
+        quote: `Scorpions are among the most ancient of terrestrial arthropods, 
+        their basic body plan little changed for hundreds of millions of years
+        <br><br>- Gary Polis`
+      },
+      { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Klein landleven", 
+        quote: `The next time you see a spider web, please, pause and look a little closer.
+        You'll be seeing one of the most high-performance materials known to man 
+        <br><br>- Cheryl Hayashi`
+      },
+      { naam: "Mijten", icoon: "icons/Mijten.png", map: "Klein landleven", 
+        quote: `Go pick up a mite — you’ve likely just found a new species or a fascinating example of nature’s diversity
+        <br><br>- Ray Fisher`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Krill", "Bacteriën"], ["Krill", "Blauwalgen"], ["Krill", "Leca"], ["Krill", "Amoeben"], 
+      ["Krill", "Foraminiferen"], ["Krill", "Stralendiertjes"], ["Krill", "Groene algen"], ["Krill", "Groenwieren"],
+      ["Krill", "Beerdiertjes"]
+    ],
+    output: [
+      { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
+        quote: `Tiny creatures such as krill form the living foundation of ocean life
+        <br><br>- Sylvia Earle`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zwaardstaarten", "Bacteriën"], ["Zwaardstaarten", "Blauwalgen"], ["Zwaardstaarten", "Leca"], 
+      ["Zwaardstaarten", "Amoeben"], ["Zwaardstaarten", "Foraminiferen"], ["Zwaardstaarten", "Stralendiertjes"],
+      ["Zwaardstaarten", "Wormen"], ["Zwaardstaarten", "Beerdiertjes"], ["Zwaardstaarten", "Krill"],
+      ["Zwaardstaarten", "Garnalen"]
+    ],
+    output: [
+      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
+        quote: `The horseshoe crab is a reminder that survival does not always require change
+        <br><br>- Stephen Gould`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
       ["Schorpioenen", "Wormen"], ["Schorpioenen", "Oertrochozoa"], ["Schorpioenen", "Oergeleedpotigen"], 
       ["Schorpioenen", "Beerdiertjes"], ["Schorpioenen", "Oercheliceraten"], ["Schorpioenen", "Duizendpoten"],
       ["Schorpioenen", "Oerkreeftjes"], ["Schorpioenen", "Oerinsecten"], ["Schorpioenen", "Spinnen"],
@@ -3969,57 +4144,34 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Mijten", "Bacteriën"], ["Mijten", "Detritus"], ["Mijten", "Blauwalgen"], ["Mijten", "Schimmel"], ["Mijten", "Gist"], 
+      ["Mijten", "Rode algen"], ["Mijten", "Groene algen"], ["Mijten", "Amoeben"], ["Mijten", "Foraminiferen"],
+      ["Mijten", "Stralendiertjes"], ["Mijten", "Oerbilateria"], ["Mijten", "Beerdiertjes"]
+    ],
+    output: [
+      { naam: "Mijten", icoon: "icons/Mijten.png", map: "Klein landleven", 
+        quote: `Go pick up a mite — you’ve likely just found a new species or a fascinating example of nature’s diversity
+        <br><br>- Ray Fisher`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Spinnen", "Glucose"],
     hint: `Geef de spin wat ze nodig heeft en ze maakt er iets moois van.`,
     output: [
       { naam: "Zijde", icoon: "icons/Zijde.png", map: "Biologie", 
         quote: `Silk does for the body what diamonds do for the hand
         <br><br>- Oscar de la Renta`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Zwaardstaarten", "Bacteriën"], ["Zwaardstaarten", "Blauwalgen"], ["Zwaardstaarten", "Leca"], 
-      ["Zwaardstaarten", "Amoeben"], ["Zwaardstaarten", "Foraminiferen"], ["Zwaardstaarten", "Stralendiertjes"],
-      ["Zwaardstaarten", "Wormen"], ["Zwaardstaarten", "Beerdiertjes"], ["Zwaardstaarten", "Krill"],
-      ["Zwaardstaarten", "Garnalen"]
-    ],
-    output: [
-      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
-        quote: `The horseshoe crab is a reminder that survival does not always require change
-        <br><br>- Stephen Gould`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Krill", "Bacteriën"], ["Krill", "Blauwalgen"], ["Krill", "Leca"], ["Krill", "Amoeben"], 
-      ["Krill", "Foraminiferen"], ["Krill", "Stralendiertjes"], ["Krill", "Groene algen"], ["Krill", "Groenwieren"],
-      ["Krill", "Beerdiertjes"]
-    ],
-    output: [
-      { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
-        quote: `Tiny creatures such as krill form the living foundation of ocean life
-        <br><br>- Sylvia Earle`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
       }
     ]
   },
