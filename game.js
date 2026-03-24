@@ -5460,20 +5460,8 @@ const combinaties = [
     ]
   },
   {
-    input: ["Regenwoud", "Warmte"],
-    hint: `Een regenwoud kent al veel diversiteit, maar het ontploft pas echt in de tropen.`,
-    output: [
-      { naam: "Tropisch regenwoud", icoon: "icons/Tropisch regenwoud.png", map: "Landschap", 
-        quote: `The jungle is dark but full of diamonds
-        <br><br>- Arthur Miller`
-      }
-    ]
-  },
-//------------ THRESHOLD 6: PERM --------------//
-  {
     input: ["Ei", "Oertetrapoden"],
-    hint: `Het is tijd voor de eerste grote gewervelde dieren om het land te betreden...`,
-    tijd: 299_000_000,
+    hint: `Het is tijd voor de eerste grote gewervelde dieren om uit hun schulp te komen...`,
     output: [
       { naam: "Oersynapsiden", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
         quote: `The mammal-like reptiles show us that the boundary between reptiles and mammals is not a sharp line, 
@@ -5489,18 +5477,7 @@ const combinaties = [
         quote: `Early reptiles were small, close to the ground, and lived in intimate contact with the surface of the Earth
         <br><br>-Alfred Romer`
       }
-    ],
-    uitleg: {
-      threshold: {
-        titel: "Perm", 
-        tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Vlinders", "Ei", "Steenkool"]
-      },
-      normal: {
-        titel: "Perm",
-        tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
-      }
-    }
+    ]
   },
   {
     input: [
@@ -5661,6 +5638,40 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]  
+  },
+  {
+    input: ["Regenwoud", "Warmte"],
+    hint: `Een regenwoud kent al veel diversiteit, maar het ontploft pas echt in de tropen.`,
+    output: [
+      { naam: "Tropisch regenwoud", icoon: "icons/Tropisch regenwoud.png", map: "Landschap", 
+        quote: `The jungle is dark but full of diamonds
+        <br><br>- Arthur Miller`
+      }
+    ]
+  },
+
+//------------ THRESHOLD 6: PERM --------------//
+  {
+    input: ["Oersynapsiden", "Evolutie"],
+    hint: `Het is tijd voor zoogdieren.`,
+    tijd: 299_000_000,
+    output: [
+      { naam: "Binnenkort", icoon: "icons/.png", map: "Binnenkort", 
+        quote: `
+        <br><br>- `
+      },
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Perm", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: ["Vlinders", "Ei", "Steenkool", "Tropisch regenwoud"]
+      },
+      normal: {
+        titel: "Perm",
+        tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
+      }
+    }
   },
   {
     input: ["Oerpolyneopteren", "Evolutie"],
