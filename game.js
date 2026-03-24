@@ -4043,9 +4043,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Krill", "Bacteriën"], ["Krill", "Blauwalgen"], ["Krill", "Leca"], ["Krill", "Amoeben"], 
-      ["Krill", "Foraminiferen"], ["Krill", "Stralendiertjes"], ["Krill", "Groene algen"], ["Krill", "Groenwieren"],
-      ["Krill", "Beerdiertjes"]
+      ["Krill", "Bacteriën"], ["Krill", "Detritus"], ["Krill", "Blauwalgen"], ["Krill", "Rode algen"], 
+      ["Krill", "Groene algen"], ["Krill", "Amoeben"], ["Krill", "Foraminiferen"], ["Krill", "Stralendiertjes"], 
+      ["Krill", "Roodwieren"], ["Krill", "Groenwieren"], ["Krill", "Beerdiertjes"]
     ],
     output: [
       { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
@@ -4065,10 +4065,20 @@ const combinaties = [
   },
   {
     input: [
-      ["Zwaardstaarten", "Bacteriën"], ["Zwaardstaarten", "Blauwalgen"], ["Zwaardstaarten", "Leca"], 
+      ["Zwaardstaarten", "Bacteriën"], ["Zwaardstaarten", "Detritus"], ["Zwaardstaarten", "Blauwalgen"], 
+      ["Zwaardstaarten", "Leca"], ["Zwaardstaarten", "Schimmel"], ["Zwaardstaarten", "Archaeplastiden"], 
+      ["Zwaardstaarten", "Gist"], ["Zwaardstaarten", "Rode algen"], ["Zwaardstaarten", "Groene algen"],
       ["Zwaardstaarten", "Amoeben"], ["Zwaardstaarten", "Foraminiferen"], ["Zwaardstaarten", "Stralendiertjes"],
-      ["Zwaardstaarten", "Wormen"], ["Zwaardstaarten", "Beerdiertjes"], ["Zwaardstaarten", "Krill"],
-      ["Zwaardstaarten", "Garnalen"]
+      ["Zwaardstaarten", "Oercnidaria"], ["Zwaardstaarten", "Oerbilateria"], ["Zwaardstaarten", "Roodwieren"], 
+      ["Zwaardstaarten", "Steenwortelalgen"], ["Zwaardstaarten", "Groenwieren"], ["Zwaardstaarten", "Oertrochozoa"],
+      ["Zwaardstaarten", "Wormen"], ["Zwaaardstaarten", "Oergeleedpotigen"], ["Zwaardstaarten", "Beerdiertjes"],
+      ["Zwaardstaarten", "Oercheliceraten"], ["Zwaardstaarten", "Oerkreeftjes"], ["Zwaardstaarten", "Oerinsecten"],
+      ["Zwaardstaarten", "Mijten"], ["Zwaardstaarten", "Krill"], ["Zwaardstaarten", "Paddenstoelen"], 
+      ["Zwaardstaarten", "Pissebedden"], ["Zwaardstaarten", "Zilvervisjes"], ["Zwaardstaarten", "Blad"], 
+      ["Zwaardstaarten", "Oerpolyneopteren"], ["Zwaardstaarten", "Oerhymenopteren"], ["Zwaardstaarten", "Luizen"], 
+      ["Zwaardstaarten", "Kevers"], ["Zwaardstaarten", "Muggen"], ["Zwaardstaarten", "Vliegen"], 
+      ["Zwaardstaarten", "Vlinders"], ["Zwaardstaarten", "Krekels"], ["Zwaardstaarten", "Sprinkhanen"], 
+      ["Zwaardstaarten", "Wandelende takken"], ["Zwaardstaarten", "Kakkerlakken"], ["Zwaardstaarten", "Termieten"]
     ],
     output: [
       { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
@@ -4088,10 +4098,15 @@ const combinaties = [
   },
   {
     input: [
-      ["Schorpioenen", "Wormen"], ["Schorpioenen", "Oertrochozoa"], ["Schorpioenen", "Oergeleedpotigen"], 
-      ["Schorpioenen", "Beerdiertjes"], ["Schorpioenen", "Oercheliceraten"], ["Schorpioenen", "Duizendpoten"],
-      ["Schorpioenen", "Oerkreeftjes"], ["Schorpioenen", "Oerinsecten"], ["Schorpioenen", "Spinnen"],
-      ["Schorpioenen", "Garnalen"]
+      ["Schorpioenen", "Oertrochozoa"], ["Schorpioenen", "Wormen"], ["Schorpioenen", "Oergeleedpotigen"], 
+      ["Schorpioenen", "Beerdiertjes"], ["Schorpioenen", "Trilobieten"], ["Schorpioenen", "Oercheliceraten"], 
+      ["Schorpioenen", "Duizendpoten"], ["Schorpioenen", "Oerkreeftjes"], ["Schorpioenen", "Oerinsecten"], 
+      ["Schorpioenen", "Spinnen"], ["Schorpioenen", "Mijten"], ["Schorpioenen", "Zwaardstaarten"],
+      ["Schorpioenen", "Krill"], ["Schorpioenen", "Pissebedden"], ["Schorpioenen", "Zilvervisjes"],
+      ["Schorpioenen", "Oerpolyneopteren"], ["Schorpioenen", "Oerhymenopteren"], ["Schorpioenen", "Luizen"],
+      ["Schorpioenen", "Kevers"], ["Schorpioenen", "Muggen"], ["Schorpioenen", "Vliegen"], ["Schorpioenen", "Vlinders"],
+      ["Schorpioenen", "Krekels"], ["Schorpioenen", "Sprinkhanen"], ["Schorpioenen", "Wandelende takken"],
+      ["Schorpioenen", "Kakkerlakken"], ["Schorpioenen", "Termieten"]
     ],
     hint: `Het is evolutionair handig als prooien meteen verlamd worden door giftige stofjes.`,
     output: [
@@ -4118,8 +4133,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Spinnen", "Oergeleedpotigen"], ["Spinnen", "Beerdiertjes"], ["Spinnen", "Oercheliceraten"], 
-      ["Spinnen", "Duizendpoten"], ["Spinnen", "Oerkreeftjes"], ["Spinnen", "Oerinsecten"], ["Spinnen", "Garnalen"]
+      ["Spinnen", "Oergeleedpotigen"], ["Spinnen", "Oercheliceraten"], ["Spinnen", "Duizendpoten"], 
+      ["Spinnen", "Oerkreeftjes"], ["Spinnen", "Oerinsecten"], ["Spinnen", "Mijten"], ["Spinnen", "Pissebedden"], 
+      ["Spinnen", "Zilvervisjes"], ["Spinnen", "Oerpolyneopteren"], ["Spinnen", "Oerhymenopteren"], 
+      ["Spinnen", "Luizen"], ["Spinnen", "Kevers"], ["Spinnen", "Muggen"], ["Spinnen", "Vliegen"],
+      ["Spinnen", "Vlinders"], ["Spinnen", "Krekels"], ["Spinnen", "Sprinkhanen"], ["Spinnen", "Wandelende takken"],
+      ["Spinnen", "Kakkerlakken"], ["Spinnen", "Termieten"]
     ],
     output: [
       { naam: "Spinnen", icoon: "icons/Spinnen.png", map: "Klein landleven", 
@@ -4225,6 +4244,49 @@ const combinaties = [
         gezet kan worden.`
       }
     }
+  },
+  {
+    input: ["Korstmos", "Detritus"],
+    output: [
+      { naam: "Korstmos", icoon: "icons/Korstmos.png", map: "Pril leven", 
+        quote: `Fermentation is the exhalation of a substance through the admixture of a ferment which,
+        by virtue of its spirit, penetrates the mass and transforms it into its own nature
+        <br><br>- Andreas Libavius`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: ["Truffels", "Detritus"],
+    output: [
+      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Vruchten",
+        quote: `All fungi are edible. Some fungi are only edible once
+        <br><br>- Terry Pratchett`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: ["Paddenstoelen", "Detritus"],
+    output: [
+      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Vruchten",
+        quote: `Nature alone is antique, and the oldest art a mushroom
+        <br><br>- Thomas Carlyle`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
   },
   {
     input: ["Tand", "Agnathen"],
@@ -4960,10 +5022,9 @@ const combinaties = [
   {
     input: [
       ["Oertetrapoden", "Oertrochozoa"], ["Oertetrapoden", "Wormen"], ["Oertetrapoden", "Lancetvisjes"], 
-      ["Oertetrapoden", "Oergeleedpotigen"], ["Oertetrapoden", "Duizendpoten"], 
-      ["Oertetrapoden", "Oerkreeftjes"], ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Spinnen"], 
-      ["Oertetrapoden", "Mijten"], ["Oertetrapoden", "Krill"], 
-      ["Oertetrapoden", "Pissebedden"], ["Oertetrapoden", "Garnalen"], 
+      ["Oertetrapoden", "Oergeleedpotigen"], ["Oertetrapoden", "Duizendpoten"], ["Oertetrapoden", "Oerkreeftjes"], 
+      ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Spinnen"], ["Oertetrapoden", "Mijten"], 
+      ["Oertetrapoden", "Krill"], ["Oertetrapoden", "Pissebedden"], ["Oertetrapoden", "Garnalen"], 
       ["Oertetrapoden", "Zilvervisjes"], ["Oertetrapoden", "Oerpolyneopteren"], ["Oertetrapoden", "Oerhymenopteren"], 
       ["Oertetrapoden", "Luizen"], ["Oertetrapoden", "Kevers"], ["Oertetrapoden", "Muggen"], ["Oertetrapoden", "Vliegen"], 
       ["Oertetrapoden", "Vlinders"], ["Oertetrapoden", "Krekels"], ["Oertetrapoden", "Sprinkhanen"], 
