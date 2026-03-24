@@ -5622,7 +5622,7 @@ const combinaties = [
     output: [
       { naam: "Oeranapsiden", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
         quote: `Early reptiles were small, close to the ground, and lived in intimate contact with the surface of the Earth
-        <br><br>-Alfred Romer`
+        <br><br>- Alfred Romer`
       },
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
@@ -5829,6 +5829,16 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oeranapsiden", "Evolutie"],
+    hint: `Er is er maar 1 overgebleven van de anapsiden, maar wie...`,
+    output: [
+      { naam: "Schildpadden", icoon: "icons/Schildpadden.png", map: "Reptielen", 
+        quote: `Slow but steady wins the race
+        <br><br>- Aesopos`
+      }
+    ]
+  },
+  {
     input: ["Termieten", "Aarde"],
     hint: `Termieten zijn kunstzinnige beestjes, kijk maar wat ze kunnen met simpele grond.`,
     output: [
@@ -5846,6 +5856,18 @@ const combinaties = [
       { naam: "Hiërarchie", icoon: "icons/Hierarchie.png", map: "Samenleving", 
         quote: `Society soon grows used to any state of things which is imposed upon it without explanation
         <br><br>- Edith Wharton`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Schildpadden", "Zee"], ["Schildpadden", "Oceaan"]
+    ],
+    hint: `Wie o wie wil er terug naar de oceaan?`,
+    output: [
+      { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
+        quote: `Try to be like the turtle - at ease in your own shell
+        <br><br>- Bill Copeland`
       }
     ]
   },
