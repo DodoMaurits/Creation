@@ -5298,6 +5298,85 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Salamanders", "Wormen"], ["Salamanders", "Oergeleedpotigen"], ["Salamanders", "Oercheliceraten"],
+      ["Salamanders", "Duizendpoten"], ["Salamanders", "Oerkreeftjes"], ["Salamanders", "Oerinsecten"], 
+      ["Salamanders", "Spinnen"], ["Salamanders", "Mijten"], ["Salamanders", "Pissebedden"], 
+      ["Salamanders", "Zilvervisjes"], ["Salamanders", "Oerpolyneopteren"], ["Salamanders", "Oerhymenopteren"], 
+      ["Salamanders", "Luizen"], ["Salamanders", "Kevers"], ["Salamanders", "Muggen"], ["Salamanders", "Vliegen"], 
+      ["Salamanders", "Vlinders"], ["Salamanders", "Krekels"], ["Salamanders", "Sprinkhanen"], 
+      ["Salamanders", "Wandelende takken"], ["Salamanders", "Kakkerlakken"], ["Salamanders", "Termieten"]
+    ],
+    output: [
+      { naam: "Salamanders", icoon: "icons/Salamanders.png", map: "Klein landleven",
+        quote: `Salamanders are tiny wizards of the animal world: lose a limb, and they simply grow it back, 
+        as if nature itself is performing a quiet magic
+        <br><br>- Randal Voss`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kikkers", "Wormen"], ["Kikkers", "Oergeleedpotigen"], ["Kikkers", "Oercheliceraten"],
+      ["Kikkers", "Duizendpoten"], ["Kikkers", "Oerkreeftjes"], ["Kikkers", "Oerinsecten"], 
+      ["Kikkers", "Spinnen"], ["Kikkers", "Mijten"], ["Kikkers", "Pissebedden"], 
+      ["Kikkers", "Zilvervisjes"], ["Kikkers", "Oerpolyneopteren"], ["Kikkers", "Oerhymenopteren"], 
+      ["Kikkers", "Luizen"], ["Kikkers", "Kevers"], ["Kikkers", "Muggen"], ["Kikkers", "Vliegen"], 
+      ["Kikkers", "Vlinders"], ["Kikkers", "Krekels"], ["Kikkers", "Sprinkhanen"], 
+      ["Kikkers", "Wandelende takken"], ["Kikkers", "Kakkerlakken"], ["Kikkers", "Termieten"]
+    ],
+    output: [
+      { naam: "Kikkers", icoon: "icons/Kikkers.png", map: "Klein landleven",
+        quote: `A frog in a well cannot conceive of the ocean
+        <br><br>- Zhuangzi`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Padden", "Wormen"], ["Padden", "Oergeleedpotigen"], ["Padden", "Oercheliceraten"],
+      ["Padden", "Duizendpoten"], ["Padden", "Oerkreeftjes"], ["Padden", "Oerinsecten"], 
+      ["Padden", "Spinnen"], ["Padden", "Mijten"], ["Padden", "Pissebedden"], 
+      ["Padden", "Zilvervisjes"], ["Padden", "Oerpolyneopteren"], ["Padden", "Oerhymenopteren"], 
+      ["Padden", "Luizen"], ["Padden", "Kevers"], ["Padden", "Muggen"], ["Padden", "Vliegen"], 
+      ["Padden", "Vlinders"], ["Padden", "Krekels"], ["Padden", "Sprinkhanen"], 
+      ["Padden", "Wandelende takken"], ["Padden", "Kakkerlakken"], ["Padden", "Termieten"]
+    ],
+    output: [
+      { naam: "Padden", icoon: "icons/Padden.png", map: "Klein landleven",
+        quote: `The music of all creatures had to do with their loves, even of toads and frogs
+        <br><br>- Henry Thoreau`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Bruinkool", "Druk"],
     hint: `Kolen kunnen ook verstenen...`,
     output: [
@@ -5445,10 +5524,9 @@ const combinaties = [
   {
     input: [
       ["Krekels", "Detritus"], ["Krekels", "Mos"], ["Krekels", "Oervaatplanten"], ["Krekels", "Blad"], 
-      ["Krekels", "Zilvervisjes"], ["Krekels", "Luizen"], ["Krekels", "Muggen"],
-      ["Krekels", "Vliegen"], ["Krekels", "Vlinders"], ["Krekels", "Wandelende takken"],
-      ["Krekels", "Varens"], ["Krekels", "Oerzaadplanten"], ["Krekels", "Hout"], ["Krekels", "Coniferen"], 
-      ["Krekels", "Palmvarens"], ["Krekels", "Ginkgo"]
+      ["Krekels", "Zilvervisjes"], ["Krekels", "Luizen"], ["Krekels", "Muggen"], ["Krekels", "Vliegen"], 
+      ["Krekels", "Vlinders"], ["Krekels", "Wandelende takken"], ["Krekels", "Varens"], ["Krekels", "Oerzaadplanten"], 
+      ["Krekels", "Hout"], ["Krekels", "Coniferen"], ["Krekels", "Palmvarens"], ["Krekels", "Ginkgo"]
     ],
     output: [
       { naam: "Krekels", icoon: "icons/Krekels.png", map: "Klein landleven", 
@@ -5470,9 +5548,9 @@ const combinaties = [
     input: [
       ["Sprinkhanen", "Mos"], ["Sprinkhanen", "Oervaatplanten"], ["Sprinkhanen", "Blad"], ["Sprinkhanen", "Zilvervisjes"], 
       ["Sprinkhanen", "Luizen"], ["Sprinkhanen", "Muggen"], ["Sprinkhanen", "Vliegen"], ["Sprinkhanen", "Vlinders"], 
-      ["Sprinkhanen", "Krekels"], ["Sprinkhanen", "Wandelende takken"],
-      ["Sprinkhanen", "Varens"], ["Sprinkhanen", "Oerzaadplanten"], ["Sprinkhanen", "Coniferen"], 
-      ["Sprinkhanen", "Palmvarens"], ["Sprinkhanen", "Ginkgo"]
+      ["Sprinkhanen", "Krekels"], ["Sprinkhanen", "Wandelende takken"], ["Sprinkhanen", "Varens"], 
+      ["Sprinkhanen", "Oerzaadplanten"], ["Sprinkhanen", "Coniferen"], ["Sprinkhanen", "Palmvarens"], 
+      ["Sprinkhanen", "Ginkgo"]
     ],
     output: [
       { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
