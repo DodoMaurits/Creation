@@ -3611,6 +3611,8 @@ const combinaties = [
   },
   {
     input: ["Haaien", "Haaien"],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Drift", icoon: "icons/Drift.png", map: "Brein", 
         quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
@@ -4851,6 +4853,8 @@ const combinaties = [
   },
   {
     input: ["Haaien", "Nautilussen"],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
         quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
@@ -5051,20 +5055,22 @@ const combinaties = [
     input: [
       ["Oertetrapoden", "Agnathen"], ["Oertetrapoden", "Oerstraalvinnigen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
         quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
         land began with creatures very much like fish
         <br><br>- Neil Shubin`
       },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
-      },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
       },
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
@@ -5469,9 +5475,19 @@ const combinaties = [
     hint: `Het is tijd voor de eerste grote gewervelde dieren om het land te betreden...`,
     tijd: 299_000_000,
     output: [
-      { naam: "Binnenkort", icoon: "icons/Binnenkort.png", map: "Reptielen", 
-        quote: `
-        <br><br>-`
+      { naam: "Oersynapsiden", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
+        quote: `The mammal-like reptiles show us that the boundary between reptiles and mammals is not a sharp line, 
+        but a gradual blending of forms
+        <br><br>- Robert Bakker`
+      },
+      { naam: "Oerdiapsiden", icoon: "icons/Oerdiapsiden.png", map: "Reptielen", 
+        quote: `Reptiles move with an economy and precision that reflects a body perfectly attuned to its environment 
+        — every scale, every motion, a study in efficiency
+        <br><br>-David Attenborough`
+      },
+      { naam: "Oeranapsiden", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
+        quote: `Early reptiles were small, close to the ground, and lived in intimate contact with the surface of the Earth
+        <br><br>-Alfred Romer`
       }
     ],
     uitleg: {
@@ -5485,6 +5501,166 @@ const combinaties = [
         tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
       }
     }
+  },
+  {
+    input: [
+      ["Oersynapsiden", "Wormen"], ["Oersynapsiden", "Oergeleedpotigen"], ["Oersynapsiden", "Oercheliceraten"],
+      ["Oersynapsiden", "Duizendpoten"], ["Oersynapsiden", "Oerkreeftjes"], ["Oersynapsiden", "Oerinsecten"], 
+      ["Oersynapsiden", "Spinnen"], ["Oersynapsiden", "Mijten"], ["Oersynapsiden", "Pissebedden"], 
+      ["Oersynapsiden", "Zilvervisjes"], ["Oersynapsiden", "Oerpolyneopteren"], ["Oersynapsiden", "Oerhymenopteren"], 
+      ["Oersynapsiden", "Luizen"], ["Oersynapsiden", "Kevers"], ["Oersynapsiden", "Muggen"], ["Oersynapsiden", "Vliegen"], 
+      ["Oersynapsiden", "Vlinders"], ["Oersynapsiden", "Krekels"], ["Oersynapsiden", "Sprinkhanen"], 
+      ["Oersynapsiden", "Wandelende takken"], ["Oersynapsiden", "Kakkerlakken"], ["Oersynapsiden", "Termieten"]
+    ],
+    output: [
+      { naam: "Oersynapsiden", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
+        quote: `The mammal-like reptiles show us that the boundary between reptiles and mammals is not a sharp line, 
+        but a gradual blending of forms
+        <br><br>- Robert Bakker`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Oersynapsiden", "Zwaardstaarten"], ["Oersynapsiden", "Oertetrapoden"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Oersynapsiden", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
+        quote: `The mammal-like reptiles show us that the boundary between reptiles and mammals is not a sharp line, 
+        but a gradual blending of forms
+        <br><br>- Robert Bakker`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Oerdiapsiden", "Wormen"], ["Oerdiapsiden", "Oergeleedpotigen"], ["Oerdiapsiden", "Oercheliceraten"],
+      ["Oerdiapsiden", "Duizendpoten"], ["Oerdiapsiden", "Oerkreeftjes"], ["Oerdiapsiden", "Oerinsecten"], 
+      ["Oerdiapsiden", "Spinnen"], ["Oerdiapsiden", "Mijten"], ["Oerdiapsiden", "Pissebedden"], 
+      ["Oerdiapsiden", "Zilvervisjes"], ["Oerdiapsiden", "Oerpolyneopteren"], ["Oerdiapsiden", "Oerhymenopteren"], 
+      ["Oerdiapsiden", "Luizen"], ["Oerdiapsiden", "Kevers"], ["Oerdiapsiden", "Muggen"], ["Oerdiapsiden", "Vliegen"], 
+      ["Oerdiapsiden", "Vlinders"], ["Oerdiapsiden", "Krekels"], ["Oerdiapsiden", "Sprinkhanen"], 
+      ["Oerdiapsiden", "Wandelende takken"], ["Oerdiapsiden", "Kakkerlakken"], ["Oerdiapsiden", "Termieten"]
+    ],
+    output: [
+      { naam: "Oerdiapsiden", icoon: "icons/Oerdiapsiden.png", map: "Reptielen", 
+        quote: `Reptiles move with an economy and precision that reflects a body perfectly attuned to its environment 
+        — every scale, every motion, a study in efficiency
+        <br><br>-David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Oerdiapsiden", "Zwaardstaarten"], ["Oerdiapsiden", "Oertetrapoden"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Oerdiapsiden", icoon: "icons/Oerdiapsiden.png", map: "Reptielen", 
+        quote: `Reptiles move with an economy and precision that reflects a body perfectly attuned to its environment 
+        — every scale, every motion, a study in efficiency
+        <br><br>-David Attenborough`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Oeranapsiden", "Wormen"], ["Oeranapsiden", "Oergeleedpotigen"], ["Oeranapsiden", "Oercheliceraten"],
+      ["Oeranapsiden", "Duizendpoten"], ["Oeranapsiden", "Oerkreeftjes"], ["Oeranapsiden", "Oerinsecten"], 
+      ["Oeranapsiden", "Spinnen"], ["Oeranapsiden", "Mijten"], ["Oeranapsiden", "Pissebedden"], 
+      ["Oeranapsiden", "Zilvervisjes"], ["Oeranapsiden", "Oerpolyneopteren"], ["Oeranapsiden", "Oerhymenopteren"], 
+      ["Oeranapsiden", "Luizen"], ["Oeranapsiden", "Kevers"], ["Oeranapsiden", "Muggen"], ["Oeranapsiden", "Vliegen"], 
+      ["Oeranapsiden", "Vlinders"], ["Oeranapsiden", "Krekels"], ["Oeranapsiden", "Sprinkhanen"], 
+      ["Oeranapsiden", "Wandelende takken"], ["Oeranapsiden", "Kakkerlakken"], ["Oeranapsiden", "Termieten"]
+    ],
+    output: [
+      { naam: "Oeranapsiden", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
+        quote: `Early reptiles were small, close to the ground, and lived in intimate contact with the surface of the Earth
+        <br><br>-Alfred Romer`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Oeranapsiden", "Zwaardstaarten"], ["Oeranapsiden", "Oertetrapoden"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Oeranapsiden", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
+        quote: `Early reptiles were small, close to the ground, and lived in intimate contact with the surface of the Earth
+        <br><br>-Alfred Romer`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
   },
   {
     input: ["Oerpolyneopteren", "Evolutie"],
