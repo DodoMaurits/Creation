@@ -1242,6 +1242,19 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Bliksem", "Plasma"], ["Bliksem", "Damp"], ["Bliksem", "Wolk"]
+    ],
+    hint: `Bliksem is zo heet dat bij inslag en dampwolk kan ontstaan met knetterend spectaculair resultaat.`,
+    output: [
+      { naam: "Bolbliksem", icoon: "icons/Bolbliksem.png", map: "Vuur", 
+        quote: `Ball lightning is one of the most enigmatic atmospheric phenomena: small, glowing spheres that appear 
+        during thunderstorms, with behavior that remains only partially understood
+        <br><br>- Martin Uman`
+      }
+    ]
+  }, 
+  {
     input: ["Wind", "Storm"],
     hint: `Het mag ook megalomaner: meer storm, meer wind...`,
     output: [
