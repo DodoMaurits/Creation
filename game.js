@@ -106,7 +106,7 @@ const combinaties = [
       { naam: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
         quote: `Plasma seems to have the kinds of properties one would like for life. It's somewhat like liquid water - 
         unpredictable and thus able to behave in an enormously complex fashion. It could probably carry as much information
-        as DNA does. It has at least the potential for organising itself in interesting ways
+        as DNA does
         <br><br>- Freeman Dyson`
       }
     ]
