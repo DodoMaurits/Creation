@@ -97,6 +97,21 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Atomen", "Warmte"], ["Atomen", "Elektriciteit"], 
+      ["Gas", "Warmte"], ["Gas", "Elektriciteit"]
+    ],
+    hint: `Een gas kan zo heet worden dat atomen uit elkaar vallen in geladen deeltjes.`,
+    output: [
+      { naam: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
+        quote: `Plasma seems to have the kinds of properties one would like for life. It's somewhat like liquid water - 
+        unpredictable and thus able to behave in an enormously complex fashion. It could probably carry as much information
+        as DNA does. It has at least the potential for organising itself in interesting ways
+        <br><br>- Freeman Dyson`
+      }
+    ]
+  },
+  {
     input: ["Atomen", "Straling"],
     hint: `Hm.. Wat als de straling sterk genoeg is atomen te splitsen?`,
     tijd: 13_700_620_000,
@@ -121,18 +136,6 @@ const combinaties = [
       { naam: "Gas", icoon: "icons/Gas.png", map: "Lucht",
       quote: `Hydrogen is a light, odorless gas, which, given enough time, turns into people 
       <br><br>- Edward Harrison`
-      }
-    ]
-  },
-  {
-    input: ["Gas", "Warmte"],
-    hint: `Een gas kan zo heet worden dat atomen uit elkaar vallen in geladen deeltjes.`,
-    output: [
-      { naam: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
-        quote: `Plasma seems to have the kinds of properties one would like for life. It's somewhat like liquid water - 
-        unpredictable and thus able to behave in an enormously complex fashion. It could probably carry as much information
-        as DNA does. It has at least the potential for organising itself in interesting ways
-        <br><br>- Freeman Dyson`
       }
     ]
   },
