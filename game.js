@@ -579,6 +579,21 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Magnetisme", "Zonnewind"], ["Poolgebied", "Zonnewind"], ["Poolgebied", "Plasma"], 
+      ["Lucht", "Zonnewind"], ["Lucht", "Plasma"], ["Zuurstof", "Zonnewind"], ["Zuurstof", "Plasma"],
+      ["Ozon", "Zonnewind"], ["Ozon", "Plasma"]
+    ],
+    hint: `Als plasma van de Zon te dichtbij komt, vallen de atomen neer als dansend licht.`,
+    output: [
+      { naam: "Noorderlicht", icoon: "icons/Noorderlicht.png", map: "Vuur",
+        quote: `Up at the poles, towards the north of the north, in those magical skies, exists a Goddess called
+        Aurora Borealis
+        <br><br>- Sayali Jadhav`
+      }
+    ]
+  },
+  {
     input: ["Vulkaan", "Gas"],
     output: [
       { naam: "Damp", icoon: "icons/Damp.png", map: "Lucht", 
