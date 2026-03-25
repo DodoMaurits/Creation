@@ -171,6 +171,17 @@ const combinaties = [
     }
   },
   {
+    input: ["Ster", "Warmte"],
+    hint: `De corona is de extreemhete buitenlaag van de zon, waar het effect van de hitte zichtbaar wordt.`,
+    output: [
+      { naam: "Zonnewind", icoon: "icons/Zonnewind.png", map: "Vuur",
+        quote: `The solar wind is a continuous outflow of charged particles from the Sun, shaping the space environment 
+        throughout the solar system
+        <br><br>- Eugene Parker`
+      }
+    ]
+  },
+  {
     input: ["Ster", "Zwaartekracht"],
     hint: `Uiteindelijk verliest elke ster het gevecht van de natuurkrachten...`,
     tijd: 13_600_000_000,
