@@ -335,6 +335,19 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Vuur", "Gas"], ["Lava", "Gas"], ["Granietmagma", "Gas"], ["Bliksem", "Gas"],
+      ["Nitraat", "Vuur"], ["Nitraat", "Lava"], ["Nitraat", "Granietmagma"], ["Nitraat", "Bliksem"]
+    ],
+    hint: `... ... ... BOEM!`,
+    output: [
+      { naam: "Explosie", icoon: "icons/Explosie.png", map: "Vuur",
+      quote: `As in an explosion, I would erupt with all the wonderful things I saw and understood in this world
+      <br><br>- Boris Pasternak`
+      }
+    ]
+  },
+  {
     input: ["Lava", "Kou"],
     hint: `Ook het vuur van lava moet ooit rusten en bedaren...`,
     output: [
