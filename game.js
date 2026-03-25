@@ -99,7 +99,7 @@ const combinaties = [
   {
     input: [
       ["Atomen", "Warmte"], ["Atomen", "Elektriciteit"], 
-      ["Gas", "Warmte"], ["Gas", "Elektriciteit"]
+      ["Gas", "Warmte"]
     ],
     hint: `Een gas kan zo heet worden dat atomen uit elkaar vallen in geladen deeltjes.`,
     output: [
