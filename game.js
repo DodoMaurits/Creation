@@ -5516,6 +5516,24 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Bos", "Vuur"], ["Bos", "Lava"], ["Bos", "Explosie"], ["Bos", "Granietmagma"], ["Bos", "Bliksem"],
+      ["Bos", "Bolbliksem"],
+      ["Regenwoud", "Vuur"], ["Regenwoud", "Lava"], ["Regenwoud", "Explosie"], ["Regenwoud", "Granietmagma"], 
+      ["Regenwoud", "Bliksem"], ["Regenwoud", "Bolbliksem"],
+      ["Tropisch regenwoud", "Vuur"], ["Tropisch regenwoud", "Lava"], ["Tropisch regenwoud", "Explosie"], 
+      ["Tropisch regenwoud", "Granietmagma"], ["Tropisch regenwoud", "Bliksem"], ["Tropisch regenwoud", "Bolbliksem"]
+    ],
+    hint: `Met de eerste bossen, ontstonden ook de eerste bosbranden.`,
+    output: [
+      { naam: "Regenwoud", icoon: "icons/Regenwoud.png", map: "Landschap", 
+        quote: `When we walk into a grove of trees or under an open sky the magic of nature takes over
+        and the heaviness of life lifts a little
+        <br><br>- Natassia Cassinero`
+      }
+    ]
+  },
+  {
     input: ["Bos", "Regen"],
     hint: `Meer begroeiing, meer vocht, meer leven.`,
     output: [
