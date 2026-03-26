@@ -6488,23 +6488,49 @@ function renderNewElements(elements, vers = null) {
     updateClosedContainer();
   
     // Toon uitleg van threshold-element bij klik, als dat zo is
-    if (lastExplanation && lastExplanationIsThresholdElement) {
+    if (lastExplanation && !lastExplanationIsThresholdElement) {
+      // Maak een donkere overlay
+      const infoOverlay = document.createElement("div");
+      infoOverlay.id = "info-overlay";
+      infoOverlay.style.position = "fixed";
+      infoOverlay.style.top = 0;
+      infoOverlay.style.left = 0;
+      infoOverlay.style.width = "100%";
+      infoOverlay.style.height = "100%";
+      infoOverlay.style.background = "rgba(0,0,0,0.7)";
+      infoOverlay.style.display = "flex";
+      infoOverlay.style.justifyContent = "center";
+      infoOverlay.style.alignItems = "center";
+      infoOverlay.style.zIndex = 3000; // hoger dan result-overlay
+      infoOverlay.style.flexDirection = "column";
+    
+      // Maak de box met titel + tekst
       const box = document.createElement("div");
-      box.className = "explanation-box threshold-clicked";
-  
+      box.className = "info-popup-box";
+      box.style.background = "#fff";
+      box.style.padding = "20px";
+      box.style.borderRadius = "12px";
+      box.style.maxWidth = "500px";
+      box.style.textAlign = "center";
+      box.style.boxShadow = "0 8px 20px rgba(0,0,0,0.3)";
+    
       const title = document.createElement("div");
-      title.className = "explanation-title";
-      title.innerHTML = lastExplanation.titel;
-  
+      title.className = "info-popup-title";
+      title.textContent = lastExplanation.titel;
+      title.style.fontWeight = "bold";
+      title.style.marginBottom = "10px";
+    
       const text = document.createElement("div");
-      text.className = "explanation-text";
+      text.className = "info-popup-text";
       text.innerHTML = lastExplanation.tekst;
-  
+    
       box.appendChild(title);
       box.appendChild(text);
-      document.body.appendChild(box);
-  
-      setTimeout(() => box.remove(), 5000);
+      infoOverlay.appendChild(box);
+      document.body.appendChild(infoOverlay);
+    
+      // Klik op overlay sluit hem
+      infoOverlay.onclick = () => infoOverlay.remove();
     }
   };
 }
