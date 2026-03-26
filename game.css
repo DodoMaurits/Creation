@@ -758,24 +758,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 8001; /* boven result-overlay */
+  z-index: 8001; /* net boven result-overlay */
   opacity: 0;
   transition: opacity 0.3s ease;
+
+  /* MATCH RESULT-OVERLAY STIJL */
   background:
     linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
-    url("afb/beginscherm.png");
+    url("afb/beginscherm.png"); /* zelfde achtergrond als result-overlay */
   background-size: cover;
   background-position: center;
-  color: white;
-  font-family: "Times New Roman", serif;
-  text-align: center;
-  padding: 20px; /* zodat tekst niet tegen de randen zit */
-  box-sizing: border-box;
 }
 
-#info-overlay.visible {
+.info-overlay.visible {
   opacity: 1;
-  pointer-events: auto; /* alleen interactief als zichtbaar */
 }
 
 .info-inner {
