@@ -782,9 +782,6 @@ body {
 }
 
 .info-inner {
-  background: #fff;
-  padding: 20px 30px;
-  border-radius: 12px;
   max-width: 400px;
   text-align: center;
 }
