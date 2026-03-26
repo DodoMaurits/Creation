@@ -6396,6 +6396,32 @@ function renderNewElements(elements, vers = null) {
     versDiv.innerHTML = vers;
     overlay.appendChild(versDiv);
   }
+
+  // ⚡ GODLIKE FLASH
+  const flash = document.createElement("div");
+  flash.className = "godlike-flash";
+  overlay.appendChild(flash);
+
+  document.body.appendChild(overlay);
+
+  // trigger animatie
+  requestAnimationFrame(() => {
+    overlay.classList.add("visible");
+  });
+
+  // verwijder flash na animatie
+  flash.addEventListener("animationend", () => flash.remove());
+
+  // klik anywhere → reset
+  overlay.onclick = () => {
+    overlay.remove();
+    openLeft = null;
+    openRight = null;
+    leftSide.innerHTML = "";
+    rightSide.innerHTML = "";
+    renderClosed();
+    updateClosedContainer();
+  };
   
   if (lastExplanation) {
     const infoButton = document.createElement("div");
