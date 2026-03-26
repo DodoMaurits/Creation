@@ -61,10 +61,10 @@ const combinaties = [
         <br><br>Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
         elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's 
         op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
-
       }
     }
   },
+//------------ THRESHOLD TEST --------------//
   {
     input: ["Quarks", "Kou"],
     hint: `Kou remt chaotische energie af... benieuwd wat de kleine bouwstenen gaan doen`,
@@ -76,6 +76,11 @@ const combinaties = [
       }
     ],
     uitleg: {
+      threshold: {
+        titel: "Quarks op Aarde", 
+        tekst: `Je moet eerst nog wat meer halen...<br>`,
+        requirements: ["Quarks"]
+      },
       normal: {
         titel: "Atoomvorming",
         tekst: `380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 3000 Kelvin (2727 graden Celsius).
