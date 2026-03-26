@@ -6367,6 +6367,47 @@ function showThresholdExplanation(threshold, missing, callback) {
   document.body.appendChild(overlay);
 }
 
+function showNormalExplanation(explanation) {
+  const overlay = document.createElement("div");
+  overlay.id = "info-overlay";
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0,0,0,0.7)";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = 3000;
+
+  const box = document.createElement("div");
+  box.className = "info-popup-box";
+  box.style.background = "#fff";
+  box.style.padding = "20px";
+  box.style.borderRadius = "12px";
+  box.style.maxWidth = "500px";
+  box.style.textAlign = "center";
+  box.style.boxShadow = "0 8px 20px rgba(0,0,0,0.3)";
+
+  const title = document.createElement("div");
+  title.className = "info-popup-title";
+  title.textContent = explanation.titel;
+  title.style.fontWeight = "bold";
+  title.style.marginBottom = "10px";
+
+  const text = document.createElement("div");
+  text.className = "info-popup-text";
+  text.innerHTML = explanation.tekst;
+
+  box.appendChild(title);
+  box.appendChild(text);
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+
+  overlay.onclick = () => overlay.remove(); // klik om te sluiten
+}
+
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements, vers = null) {
 
@@ -6454,21 +6495,8 @@ function renderNewElements(elements, vers = null) {
     updateClosedContainer();
   };
   
-  if (lastExplanation && !lastExplanationIsThresholdElement) {
-    const infoButton = document.createElement("div");
-    infoButton.className = "info-button";
-    infoButton.innerHTML = "ℹ";
-    overlay.appendChild(infoButton);
-    
-    const popup = document.createElement("div");
-    popup.className = "info-popup";
-    popup.innerHTML = `
-      <div class="info-popup-box">
-        <div class="info-popup-title">${lastExplanation.titel}</div>
-        <div class="info-popup-text">${lastExplanation.tekst}</div>
-      </div>
-    `;
-    overlay.appendChild(popup);
+  if (lastExplanation && !lastExplanationIsThresholdElement && lastExplanation.normal) {
+      showNormalExplanation(lastExplanation.normal);
   }
 
   document.body.appendChild(overlay);
@@ -6486,52 +6514,6 @@ function renderNewElements(elements, vers = null) {
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
-  
-    // Toon uitleg van threshold-element bij klik, als dat zo is
-    if (lastExplanation && !lastExplanationIsThresholdElement) {
-      // Maak een donkere overlay
-      const infoOverlay = document.createElement("div");
-      infoOverlay.id = "info-overlay";
-      infoOverlay.style.position = "fixed";
-      infoOverlay.style.top = 0;
-      infoOverlay.style.left = 0;
-      infoOverlay.style.width = "100%";
-      infoOverlay.style.height = "100%";
-      infoOverlay.style.background = "rgba(0,0,0,0.7)";
-      infoOverlay.style.display = "flex";
-      infoOverlay.style.justifyContent = "center";
-      infoOverlay.style.alignItems = "center";
-      infoOverlay.style.zIndex = 3000; // hoger dan result-overlay
-      infoOverlay.style.flexDirection = "column";
-    
-      // Maak de box met titel + tekst
-      const box = document.createElement("div");
-      box.className = "info-popup-box";
-      box.style.background = "#fff";
-      box.style.padding = "20px";
-      box.style.borderRadius = "12px";
-      box.style.maxWidth = "500px";
-      box.style.textAlign = "center";
-      box.style.boxShadow = "0 8px 20px rgba(0,0,0,0.3)";
-    
-      const title = document.createElement("div");
-      title.className = "info-popup-title";
-      title.textContent = lastExplanation.titel;
-      title.style.fontWeight = "bold";
-      title.style.marginBottom = "10px";
-    
-      const text = document.createElement("div");
-      text.className = "info-popup-text";
-      text.innerHTML = lastExplanation.tekst;
-    
-      box.appendChild(title);
-      box.appendChild(text);
-      infoOverlay.appendChild(box);
-      document.body.appendChild(infoOverlay);
-    
-      // Klik op overlay sluit hem
-      infoOverlay.onclick = () => infoOverlay.remove();
-    }
   };
 }
 
