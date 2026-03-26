@@ -6390,7 +6390,12 @@ function godlikeFlash(callback) {
   // maak overlay
   let flash = document.createElement("div");
   flash.id = "flash-overlay";
+
+  // voeg hem toe aan body
   document.body.appendChild(flash);
+
+  // stel de radial gradient via JS in
+  flash.style.background = "radial-gradient(circle, white 0%, rgba(255,255,255,0) 70%)";
 
   // poef effect
   requestAnimationFrame(() => {
@@ -6400,13 +6405,13 @@ function godlikeFlash(callback) {
   // laat flits kort zien en dan verdwijnen
   setTimeout(() => {
     flash.style.opacity = 0;
+  }, 70);
 
-    // verwijder na animatie
-    flash.addEventListener("transitionend", () => {
-      flash.remove();
-      if (callback) callback();
-    }, { once: true });
-  }, 100); // flits duurt 100ms
+  // verwijder na animatie
+  flash.addEventListener("transitionend", () => {
+    flash.remove();
+    if (callback) callback();
+  }, { once: true });
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
