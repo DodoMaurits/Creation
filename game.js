@@ -6013,6 +6013,7 @@ let lastHint = null;
 let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
+let lastWasThreshold = false;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -6237,7 +6238,8 @@ function checkCombination() {
       return;
     }
   }
-  
+
+  lastWasThreshold = !!firstMatch.uitleg?.threshold;
   // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
   
@@ -6397,7 +6399,7 @@ function renderNewElements(elements, vers = null) {
     overlay.appendChild(versDiv);
   }
   
-  if (lastExplanation) {
+  if (lastExplanation && !lastWasThreshold) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
@@ -6421,15 +6423,27 @@ function renderNewElements(elements, vers = null) {
   });
   
   // Klik anywhere → reset
-  overlay.onclick = () => {
-    overlay.remove();
-    openLeft = null;
-    openRight = null;
-    leftSide.innerHTML = "";
-    rightSide.innerHTML = "";
-    renderClosed();
-    updateClosedContainer();
-  };
+  overlay.addEventListener("click", (e) => {
+    if (e.target !== overlay) return;
+  
+    if (lastWasThreshold && lastExplanation) {
+      overlay.remove();
+      showResultExplanation(lastExplanation);
+    } else {
+      overlay.remove();
+      resetGameView();
+    }
+  });
+}
+
+// ----- NIEUWE ELEMENTEN BIJ THRESHOLD -----
+function resetGameView() {
+  openLeft = null;
+  openRight = null;
+  leftSide.innerHTML = "";
+  rightSide.innerHTML = "";
+  renderClosed();
+  updateClosedContainer();
 }
 
 // ----- ERROR SHAKE FUNCTION -----
