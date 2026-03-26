@@ -754,17 +754,18 @@ body {
 /* ---------------- THRESHOLD INFO ---------------- */
 .info-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9500;
+  z-index: 8001; /* net boven result-overlay */
   opacity: 0;
   transition: opacity 0.3s ease;
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
+    url("afb/beginscherm.png"); /* zelfde achtergrond als result-overlay */
+  background-size: cover;
+  background-position: center;
 }
 
 .info-overlay.visible,
@@ -773,10 +774,12 @@ body {
 }
 
 .info-inner {
-  background: #fff;
-  padding: 20px 30px;
+  padding: 50px 80px;
   border-radius: 12px;
-  max-width: 400px;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+  color: #f0f0f0;
+  max-width: 650px;
   text-align: center;
 }
 
