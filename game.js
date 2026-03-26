@@ -6330,7 +6330,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     if (thresholdOverlay) {
       const uitleg = thresholdOverlay.uitleg?.normal;
       if (uitleg) {
-        alert(`${uitleg.titel}\n\n${uitleg.tekst}`); // tijdelijk, vervang later door je echte info-overlay
+        showInfoOverlay(uitleg.titel, uitleg.tekst, uitleg.achtergrond);
       }
     }
   };
@@ -6442,13 +6442,22 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
 }
 
 // Hulpfunctie: info-overlay voor threshold-elementen
-function showInfoOverlay(title, text) {
+function showInfoOverlay(title, text, backgroundImage = null) {
   const old = document.getElementById("info-overlay");
   if (old) old.remove();
 
   const overlay = document.createElement("div");
   overlay.id = "info-overlay";
   overlay.className = "info-overlay fade-in";
+
+  if (backgroundImage) {
+    overlay.style.background = `
+      linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
+      url("${backgroundImage}")
+    `;
+    overlay.style.backgroundSize = "cover";
+    overlay.style.backgroundPosition = "center";
+  }
 
   const inner = document.createElement("div");
   inner.className = "info-inner";
