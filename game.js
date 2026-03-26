@@ -6206,22 +6206,19 @@ function checkCombination() {
 
   // 🔹 Check threshold-element dependency
   if (firstMatch.uitleg?.thresholdElement) {
-    const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+      const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
+      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+      console.log("Threshold-element check:", needed, normalizedUnlocked); // DEBUG
   
-    // Als het threshold-element nog niet is gehaald
-    if (!normalizedUnlocked.includes(needed)) {
-      // Zet de lastExplanation zodat overlay weet dat dit een threshold is
-      lastExplanationIsThresholdElement = true;
-      lastExplanation = firstMatch.uitleg.thresholdElement;
-  
-      // Toon de threshold-overlay
-      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
-      return; // stop verder uitvoeren
-    }
+      if (!normalizedUnlocked.includes(needed)) {
+          lastExplanationIsThresholdElement = true;
+          lastExplanation = firstMatch.uitleg.thresholdElement;
+          showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
+              selected.forEach(e => e.dom.classList.remove("selected"));
+              selected = [];
+          });
+          return; // stop verdere uitvoering
+      }
   }
   
   // 🔹 Check threshold requirements
@@ -6254,29 +6251,37 @@ function checkCombination() {
     });
   });
 
-  // ----- PAS THRESHOLD LOGICA TOE -----
+  // ----- THRESHOLD CHECKS -----
   let allThresholdRequirementsMet = true;
+  const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
   
-  // Check threshold requirements
+  // 1️⃣ Check threshold requirements
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
     const missing = requirements.filter(r => !normalizedUnlocked.includes(r.trim().toLowerCase()));
+    
     if (missing.length > 0) {
       allThresholdRequirementsMet = false;
+      lastExplanationIsThresholdElement = true; // belangrijk!
+      lastExplanation = firstMatch.uitleg.threshold; // zet de uitleg zodat overlay weet dat het threshold is
+      
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
-      return; // stop verder uitvoeren
+      return; // stop verdere uitvoering
     }
   }
   
-  // Check threshold-element dependency
+  // 2️⃣ Check threshold-element dependency
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+  
     if (!normalizedUnlocked.includes(needed)) {
+      allThresholdRequirementsMet = false;
+      lastExplanationIsThresholdElement = true; // belangrijk!
+      lastExplanation = firstMatch.uitleg.thresholdElement; // zet de uitleg
+      
       showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
@@ -6285,13 +6290,10 @@ function checkCombination() {
     }
   }
   
-  // Stel lastExplanation pas in als de threshold volledig is gehaald
+  // 3️⃣ Pas lastExplanation aan als alles gehaald is
   if (allThresholdRequirementsMet) {
-    lastExplanationIsThresholdElement = !!firstMatch.uitleg?.threshold;
-    lastExplanation = firstMatch.uitleg?.normal || null;
-  } else {
     lastExplanationIsThresholdElement = false;
-    lastExplanation = null;
+    lastExplanation = firstMatch.uitleg?.normal || null;
   }
 
   const versText = firstMatch.vers || null;
