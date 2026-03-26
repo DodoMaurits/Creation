@@ -6387,27 +6387,29 @@ function showResultExplanation(explanation) {
 
 // ----- FLITS -----
 function godlikeFlash(callback) {
-  // maak overlay
   let flash = document.createElement("div");
   flash.id = "flash-overlay";
-
-  // voeg hem toe aan body
   document.body.appendChild(flash);
 
-  // stel de radial gradient via JS in
+  // ✅ Styling
+  flash.style.position = "fixed";
+  flash.style.top = 0;
+  flash.style.left = 0;
+  flash.style.width = "100%";
+  flash.style.height = "100%";
   flash.style.background = "radial-gradient(circle, white 0%, rgba(255,255,255,0) 70%)";
+  flash.style.opacity = 0;
+  flash.style.pointerEvents = "none"; // voorkomt dat hij clicks blokkeert
+  flash.style.transition = "opacity 0.2s ease"; // ✅ overgang nodig
 
-  // poef effect
   requestAnimationFrame(() => {
     flash.style.opacity = 1;
   });
 
-  // laat flits kort zien en dan verdwijnen
   setTimeout(() => {
     flash.style.opacity = 0;
   }, 70);
 
-  // verwijder na animatie
   flash.addEventListener("transitionend", () => {
     flash.remove();
     if (callback) callback();
