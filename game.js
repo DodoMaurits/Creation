@@ -685,7 +685,7 @@ const combinaties = [
         titel: "Water op Aarde",
         tekst: `4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
           van vloeibaar water...`,
-        achtergrond: "afb/wateropaarde.jpg"
+        afbeelding: "afb/wateropaarde.jpg"
       }
     }
   },
