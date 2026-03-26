@@ -6227,11 +6227,11 @@ function checkCombination() {
   // Alleen als er zowel threshold als normal uitleg is
   const isSpecialThreshold = firstMatch.uitleg?.threshold && firstMatch.uitleg?.normal;
   
-  // Toon result-overlay
+  // Geef het hele combinaties-object door aan renderNewElements als het een threshold-combinatie is
   renderNewElements(
     newElements,
     firstMatch.vers,
-    isSpecialThreshold ? firstMatch.uitleg.threshold : null
+    isSpecialThreshold ? firstMatch : null
   );
 
   // Reset selectie
@@ -6316,24 +6316,23 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   flash.addEventListener("animationend", () => flash.remove());
 
   // klik anywhere → reset
-  if (thresholdOverlay) {
-    // Speciaal threshold-element → toon threshold-overlay na klik
-    overlay.onclick = () => {
-      overlay.remove();
-      showThresholdExplanation(thresholdOverlay, null, () => {});
-    };
-  } else {
-    // Normale overlay → sluit gewoon
-    overlay.onclick = () => {
-      overlay.remove();
-      openLeft = null;
-      openRight = null;
-      leftSide.innerHTML = "";
-      rightSide.innerHTML = "";
-      renderClosed();
-      updateClosedContainer();
-    };
-  }
+  overlay.onclick = () => {
+    overlay.remove();
+    openLeft = null;
+    openRight = null;
+    leftSide.innerHTML = "";
+    rightSide.innerHTML = "";
+    renderClosed();
+    updateClosedContainer();
+  
+    // ⚡ Als er een threshold overlay is, toon gewoon de normale uitleg
+    if (thresholdOverlay) {
+      const uitleg = thresholdOverlay.uitleg?.normal;
+      if (uitleg) {
+        alert(`${uitleg.titel}\n\n${uitleg.tekst}`); // tijdelijk, vervang later door je echte info-overlay
+      }
+    }
+  };
 }
 
 // ----- ERROR SHAKE FUNCTION -----
