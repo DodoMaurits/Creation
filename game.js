@@ -6209,16 +6209,17 @@ function checkCombination() {
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam;
     if (!unlockedElements.has(needed)) {
-      // toon overlay met titel + tekst van thresholdElement
+      lastWasThreshold = true; // ✅ HIER
+    
       showThresholdExplanation(
         firstMatch.uitleg.thresholdElement,
-        null, // geen missing circles
+        null,
         () => {
           selected.forEach(e => e.dom.classList.remove("selected"));
           selected = [];
         }
       );
-      return; // stop verder uitvoeren
+      return;
     }
   }
   
@@ -6230,8 +6231,10 @@ function checkCombination() {
     const missing = requirements.filter(r =>
       !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
-    
+        
     if (missing.length > 0) {
+      lastWasThreshold = true; // ✅ HIER
+    
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
@@ -6240,7 +6243,7 @@ function checkCombination() {
     }
   }
 
-  lastWasThreshold = !!firstMatch.uitleg?.threshold;
+  lastWasThreshold = false;  
   // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
   
@@ -6470,9 +6473,13 @@ function renderNewElements(elements, vers = null) {
   overlay.addEventListener("click", (e) => {
     if (e.target !== overlay) return;
   
-    if (lastWasThreshold && lastExplanation) {
+    if (lastWasThreshold) {
       overlay.remove();
-      showResultExplanation(lastExplanation);
+      if (lastExplanation) {
+        showResultExplanation(lastExplanation);
+      } else {
+        resetGameView();
+      }
     } else {
       overlay.remove();
       resetGameView();
