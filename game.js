@@ -6206,17 +6206,20 @@ function checkCombination() {
 
   // 🔹 Check threshold-element dependency
   if (firstMatch.uitleg?.thresholdElement) {
-    const needed = firstMatch.uitleg.thresholdElement.naam;
-    if (!unlockedElements.has(needed)) {
-      // toon overlay met titel + tekst van thresholdElement
-      showThresholdExplanation(
-        firstMatch.uitleg.thresholdElement,
-        null, // geen missing circles
-        () => {
-          selected.forEach(e => e.dom.classList.remove("selected"));
-          selected = [];
-        }
-      );
+    const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
+    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+  
+    // Als het threshold-element nog niet is gehaald
+    if (!normalizedUnlocked.includes(needed)) {
+      // Zet de lastExplanation zodat overlay weet dat dit een threshold is
+      lastExplanationIsThresholdElement = true;
+      lastExplanation = firstMatch.uitleg.thresholdElement;
+  
+      // Toon de threshold-overlay
+      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+      });
       return; // stop verder uitvoeren
     }
   }
