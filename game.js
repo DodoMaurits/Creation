@@ -6203,12 +6203,6 @@ function checkCombination() {
   }
 
   const firstMatch = matches[0];
-  
-  // 🔹 CHECK OF HET EEN THRESHOLD-ELEMENT IS
-  lastExplanationIsThresholdElement = firstMatch.output.some(el => {
-    return firstMatch.uitleg?.thresholdElement &&
-           el.naam === firstMatch.uitleg.thresholdElement.naam;
-  });
 
   // 🔹 Check threshold-element dependency
   if (firstMatch.uitleg?.thresholdElement) {
@@ -6231,11 +6225,9 @@ function checkCombination() {
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    
     const missing = requirements.filter(r =>
       !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
-    
     if (missing.length > 0) {
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
@@ -6245,37 +6237,32 @@ function checkCombination() {
     }
   }
   
-  // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
-  const finalUitleg = firstMatch.uitleg?.normal || null;
-  
   // 🔹 Nieuwe elementen maken
   const newElements = [];
   matches.forEach(match => {
     match.output.forEach(newEl => {
       let map = mappen.find(m => m.naam === newEl.map);
       if (!map) {
-        map = {
-          naam: newEl.map,
-          icoon: groepsIconen[newEl.map] || "icons/default.png",
-          elementen: []
-        };
+        map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
         mappen.push(map);
       }
-      if (!map.elementen.find(e => e.naam === newEl.naam)) {
-        map.elementen.push(newEl);
-      }
+      if (!map.elementen.find(e => e.naam === newEl.naam)) map.elementen.push(newEl);
       newElements.push(newEl);
     });
   });
 
-  lastExplanation = finalUitleg || null;
+   // 🔹 Pas lastExplanationIsThresholdElement correct toe
+  lastExplanationIsThresholdElement = firstMatch.uitleg?.thresholdElement ? true : false;
+
+  // 🔹 finalUitleg wordt alleen gebruikt als de threshold volledig ontgrendeld is
+  lastExplanation = firstMatch.uitleg?.normal || null;
+
   const versText = firstMatch.vers || null;
   renderNewElements(newElements, versText);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
-  // Update timeline op basis van combinatie-tijd
+  // Update timeline
   const eventTime = firstMatch.tijd;
-  
   if (eventTime !== undefined && eventTime < currentTime) {
     const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
     animateTimeline(clampedTime);
@@ -6480,7 +6467,6 @@ function renderNewElements(elements, vers = null) {
       box.appendChild(text);
       document.body.appendChild(box);
   
-      // Verwijder na bijvoorbeeld 5 seconden
       setTimeout(() => box.remove(), 5000);
     }
   };
