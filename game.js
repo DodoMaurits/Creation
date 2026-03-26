@@ -685,7 +685,6 @@ const combinaties = [
         titel: "Water op Aarde",
         tekst: `4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
           van vloeibaar water...`,
-        afbeelding: "afb/wateropaarde.jpg"
       }
     }
   },
@@ -6014,7 +6013,6 @@ let lastHint = null;
 let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
-let lastWasThreshold = false;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -6205,19 +6203,24 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
-  // 🔹 THRESHOLD ELEMENT CHECK
+  // 🔹 Check threshold-element dependency
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam;
     if (!unlockedElements.has(needed)) {
-      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
-      return; // stop hier
+      // toon overlay met titel + tekst van thresholdElement
+      showThresholdExplanation(
+        firstMatch.uitleg.thresholdElement,
+        null, // geen missing circles
+        () => {
+          selected.forEach(e => e.dom.classList.remove("selected"));
+          selected = [];
+        }
+      );
+      return; // stop verder uitvoeren
     }
   }
-
-  // 🔹 THRESHOLD REQUIREMENTS CHECK
+  
+  // 🔹 Check threshold requirements
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
@@ -6225,26 +6228,30 @@ function checkCombination() {
     const missing = requirements.filter(r =>
       !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
-        
+    
     if (missing.length > 0) {
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
-      return; // stop hier
+      return;
     }
   }
-
-  // 🔹 ALLES GOED → NORMAL uitleg tonen
+  
+  // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
-
-  // Nieuwe elementen aanmaken
+  
+  // 🔹 Nieuwe elementen maken
   const newElements = [];
   matches.forEach(match => {
     match.output.forEach(newEl => {
       let map = mappen.find(m => m.naam === newEl.map);
       if (!map) {
-        map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
+        map = {
+          naam: newEl.map,
+          icoon: groepsIconen[newEl.map] || "icons/default.png",
+          elementen: []
+        };
         mappen.push(map);
       }
       if (!map.elementen.find(e => e.naam === newEl.naam)) {
@@ -6254,17 +6261,19 @@ function checkCombination() {
     });
   });
 
-  lastExplanation = finalUitleg;   // ⚡ alleen voor NORMAL uitleg
-  lastWasThreshold = false;         // ⚡ scheiding duidelijk
-
-  renderNewElements(newElements, firstMatch.vers);
+  lastExplanation = finalUitleg || null;
+  const versText = firstMatch.vers || null;
+  renderNewElements(newElements, versText);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
-  // Tijdlijn updaten
-  if (firstMatch.tijd !== undefined && firstMatch.tijd < currentTime) {
-    animateTimeline(Math.max(0, Math.min(maxTime, firstMatch.tijd)));
+  // Update timeline op basis van combinatie-tijd
+  const eventTime = firstMatch.tijd;
+  
+  if (eventTime !== undefined && eventTime < currentTime) {
+    const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
+    animateTimeline(clampedTime);
   }
-
+  
   // reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
@@ -6277,11 +6286,16 @@ function showThresholdExplanation(threshold, missing, callback) {
 
   const overlay = document.createElement("div");
   overlay.id = "threshold-overlay";
-  overlay.style = `
-    display:flex; justify-content:center; align-items:center;
-    position:fixed; top:0; left:0; width:100%; height:100%;
-    background:rgba(0,0,0,0.7); z-index:2000;
-  `;
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0,0,0,0.7)";
+  overlay.style.zIndex = 2000;
 
   const box = document.createElement("div");
   box.className = "explanation-box";
@@ -6294,7 +6308,7 @@ function showThresholdExplanation(threshold, missing, callback) {
   text.className = "explanation-text";
   text.innerHTML = threshold.tekst;
 
-  if (missing?.length) {
+  if (missing && missing.length > 0) {
     const grid = document.createElement("div");
     grid.className = "threshold-grid";
     missing.forEach(req => {
@@ -6311,48 +6325,20 @@ function showThresholdExplanation(threshold, missing, callback) {
   button.textContent = "Ga verder";
   button.onclick = () => {
     overlay.remove();
-    callback?.();
+    if (callback) callback(); // voer callback uit
   };
 
-  box.append(title, text, button);
+  box.appendChild(title);
+  box.appendChild(text);
+  box.appendChild(button);
+
   overlay.appendChild(box);
   document.body.appendChild(overlay);
 }
 
-// ----- FLITS -----
-function godlikeFlash(callback) {
-  let flash = document.createElement("div");
-  flash.id = "flash-overlay";
-  document.body.appendChild(flash);
-
-  // ✅ Styling
-  flash.style.position = "fixed";
-  flash.style.top = 0;
-  flash.style.left = 0;
-  flash.style.width = "100%";
-  flash.style.height = "100%";
-  flash.style.background = "radial-gradient(circle, white 0%, rgba(255,255,255,0) 70%)";
-  flash.style.opacity = 0;
-  flash.style.pointerEvents = "none"; // voorkomt dat hij clicks blokkeert
-  flash.style.transition = "opacity 0.2s ease"; // ✅ overgang nodig
-
-  requestAnimationFrame(() => {
-    flash.style.opacity = 1;
-  });
-
-  setTimeout(() => {
-    flash.style.opacity = 0;
-  }, 70);
-
-  flash.addEventListener("transitionend", () => {
-    flash.remove();
-    if (callback) callback();
-  }, { once: true });
-}
-
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements, vers = null) {
-  godlikeFlash(() => {
+
   // Verwijder bestaande overlay indien aanwezig
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
@@ -6411,7 +6397,7 @@ function renderNewElements(elements, vers = null) {
     overlay.appendChild(versDiv);
   }
   
-  if (lastExplanation && !lastWasThreshold) {
+  if (lastExplanation) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
@@ -6435,61 +6421,15 @@ function renderNewElements(elements, vers = null) {
   });
   
   // Klik anywhere → reset
-  overlay.addEventListener("click", (e) => {
-    if (e.target !== overlay) return;
+  overlay.onclick = () => {
     overlay.remove();
-    resetGameView();
-  });
-}
-
-function showResultExplanation(explanation) {
-  const oldOverlay = document.getElementById("explanation-overlay");
-  if (oldOverlay) oldOverlay.remove();
-
-  const overlay = document.createElement("div");
-  overlay.id = "explanation-overlay";
-
-  // ⚡ alleen bij NORMAL uitleg
-  if (explanation.afbeelding) {
-    overlay.style.backgroundImage = `url(${explanation.afbeelding})`;
-    overlay.style.backgroundSize = "cover";
-    overlay.style.backgroundPosition = "center";
-  } else {
-    overlay.style.background = "rgba(0,0,0,0.8)";
-  }
-
-  const box = document.createElement("div");
-  box.className = "explanation-box";
-
-  const title = document.createElement("div");
-  title.className = "explanation-title";
-  title.innerHTML = explanation.titel;
-
-  const text = document.createElement("div");
-  text.className = "explanation-text";
-  text.innerHTML = explanation.tekst;
-
-  const button = document.createElement("button");
-  button.className = "create-button";
-  button.textContent = "Ga verder";
-  button.onclick = () => {
-    overlay.remove();
-    resetGameView();
+    openLeft = null;
+    openRight = null;
+    leftSide.innerHTML = "";
+    rightSide.innerHTML = "";
+    renderClosed();
+    updateClosedContainer();
   };
-
-  box.append(title, text, button);
-  overlay.appendChild(box);
-  document.body.appendChild(overlay);
-}
-               
-// ----- NIEUWE ELEMENTEN BIJ THRESHOLD -----
-function resetGameView() {
-  openLeft = null;
-  openRight = null;
-  leftSide.innerHTML = "";
-  rightSide.innerHTML = "";
-  renderClosed();
-  updateClosedContainer();
 }
 
 // ----- ERROR SHAKE FUNCTION -----
