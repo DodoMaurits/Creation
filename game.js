@@ -82,7 +82,7 @@ const combinaties = [
         requirements: ["Quarks"]
       },
       normal: {
-        achtergrond: "afb/wateropaarde.jpg",
+        achtergrond: "afb/wateropaarde.png",
         titel: "Atoomvorming",
         tekst: `380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 3000 Kelvin (2727 graden Celsius).
         <br><br>De bewegingsenergie was zo laag dat protonen, elektronen en neutronen konden fuseren tot neutrale 
