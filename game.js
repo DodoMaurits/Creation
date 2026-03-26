@@ -685,6 +685,7 @@ const combinaties = [
         titel: "Water op Aarde",
         tekst: `4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
           van vloeibaar water...`,
+        achtergrond: "afb/wateropaarde.jpg"
       }
     }
   },
@@ -6328,6 +6329,49 @@ function showThresholdExplanation(threshold, missing, callback) {
   button.onclick = () => {
     overlay.remove();
     if (callback) callback(); // voer callback uit
+  };
+
+  box.appendChild(title);
+  box.appendChild(text);
+  box.appendChild(button);
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+}
+
+function showResultExplanation(explanation) {
+  const oldOverlay = document.getElementById("explanation-overlay");
+  if (oldOverlay) oldOverlay.remove();
+
+  const overlay = document.createElement("div");
+  overlay.id = "explanation-overlay";
+
+  // 👉 achtergrond alleen voor NORMAL uitleg
+  if (explanation.afbeelding) {
+    overlay.style.backgroundImage = `url(${explanation.afbeelding})`;
+    overlay.style.backgroundSize = "cover";
+    overlay.style.backgroundPosition = "center";
+  } else {
+    overlay.style.background = "rgba(0,0,0,0.8)";
+  }
+
+  const box = document.createElement("div");
+  box.className = "explanation-box";
+
+  const title = document.createElement("div");
+  title.className = "explanation-title";
+  title.innerHTML = explanation.titel;
+
+  const text = document.createElement("div");
+  text.className = "explanation-text";
+  text.innerHTML = explanation.tekst;
+
+  const button = document.createElement("button");
+  button.className = "create-button";
+  button.textContent = "Ga verder";
+  button.onclick = () => {
+    overlay.remove();
+    resetGameView();
   };
 
   box.appendChild(title);
