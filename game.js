@@ -5530,10 +5530,9 @@ const combinaties = [
     ],
     hint: `Met de eerste bossen, ontstonden ook de eerste bosbranden.`,
     output: [
-      { naam: "Regenwoud", icoon: "icons/Regenwoud.png", map: "Landschap", 
-        quote: `When we walk into a grove of trees or under an open sky the magic of nature takes over
-        and the heaviness of life lifts a little
-        <br><br>- Natassia Cassinero`
+      { naam: "Brand", icoon: "icons/Brand.png", map: "Vuur", 
+        quote: `
+        <br><br>- `
       }
     ]
   },
