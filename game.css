@@ -758,14 +758,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 8001; /* net boven result-overlay */
+  z-index: 8001; /* boven result-overlay */
   opacity: 0;
   transition: opacity 0.3s ease;
   background:
     linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
-    url("afb/beginscherm.png"); /* zelfde achtergrond als result-overlay */
+    url("afb/beginscherm.png");
   background-size: cover;
   background-position: center;
+  color: white;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  padding: 20px; /* zodat tekst niet tegen de randen zit */
+  box-sizing: border-box;
 }
 
 .info-overlay.visible,
