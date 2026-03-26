@@ -775,6 +775,7 @@ body {
   text-align: center;
   padding: 20px; /* zodat tekst niet tegen de randen zit */
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .info-overlay.visible,
