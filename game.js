@@ -6385,9 +6385,33 @@ function showResultExplanation(explanation) {
   document.body.appendChild(overlay);
 }
 
+// ----- FLITS -----
+function godlikeFlash(callback) {
+  // maak overlay
+  let flash = document.createElement("div");
+  flash.id = "flash-overlay";
+  document.body.appendChild(flash);
+
+  // poef effect
+  requestAnimationFrame(() => {
+    flash.style.opacity = 1;
+  });
+
+  // laat flits kort zien en dan verdwijnen
+  setTimeout(() => {
+    flash.style.opacity = 0;
+
+    // verwijder na animatie
+    flash.addEventListener("transitionend", () => {
+      flash.remove();
+      if (callback) callback();
+    }, { once: true });
+  }, 100); // flits duurt 100ms
+}
+
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements, vers = null) {
-
+  godlikeFlash(() => {
   // Verwijder bestaande overlay indien aanwezig
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
