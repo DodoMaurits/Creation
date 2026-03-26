@@ -6009,6 +6009,7 @@ let selected = [];
 let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
+let lastExplanationIsThresholdElement = false;
 let lastHint = null;
 let lastHintIndex = -1;
 let hintVisible = false;
@@ -6184,7 +6185,7 @@ function toggleSelect(el, img, side, mapNaam) {
 // ----- CHECK COMBINATIONS -----
 function checkCombination() {
   const [a, b] = selected.map(e => e.naam);
-
+  
   const matches = combinaties.filter(c => {
     if (typeof c.input[0] === "string") {
       return (c.input[0] === a && c.input[1] === b) || (c.input[0] === b && c.input[1] === a);
@@ -6202,6 +6203,12 @@ function checkCombination() {
   }
 
   const firstMatch = matches[0];
+  
+  // 🔹 CHECK OF HET EEN THRESHOLD-ELEMENT IS
+  lastExplanationIsThresholdElement = firstMatch.output.some(el => {
+    return firstMatch.uitleg?.thresholdElement &&
+           el.naam === firstMatch.uitleg.thresholdElement.naam;
+  });
 
   // 🔹 Check threshold-element dependency
   if (firstMatch.uitleg?.thresholdElement) {
@@ -6423,7 +6430,7 @@ function renderNewElements(elements, vers = null) {
     updateClosedContainer();
   };
   
-  if (lastExplanation) {
+  if (lastExplanation && !lastExplanationIsThresholdElement) {
     const infoButton = document.createElement("div");
     infoButton.className = "info-button";
     infoButton.innerHTML = "ℹ";
@@ -6455,6 +6462,27 @@ function renderNewElements(elements, vers = null) {
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
+  
+    // Toon uitleg van threshold-element bij klik, als dat zo is
+    if (lastExplanation && lastExplanationIsThresholdElement) {
+      const box = document.createElement("div");
+      box.className = "explanation-box threshold-clicked";
+  
+      const title = document.createElement("div");
+      title.className = "explanation-title";
+      title.innerHTML = lastExplanation.titel;
+  
+      const text = document.createElement("div");
+      text.className = "explanation-text";
+      text.innerHTML = lastExplanation.tekst;
+  
+      box.appendChild(title);
+      box.appendChild(text);
+      document.body.appendChild(box);
+  
+      // Verwijder na bijvoorbeeld 5 seconden
+      setTimeout(() => box.remove(), 5000);
+    }
   };
 }
 
