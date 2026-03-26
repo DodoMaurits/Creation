@@ -6335,6 +6335,8 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   };
 }
 
+
+
 // ----- ERROR SHAKE FUNCTION -----
 function shakeErrorElements(elements) {
   elements.forEach(el => {
@@ -6343,6 +6345,130 @@ function shakeErrorElements(elements) {
       setTimeout(() => el.classList.remove("error"), 600); // na animatie verwijderen
     }
   });
+}
+
+function renderNewElements(elements, vers = null, thresholdOverlay = null) {
+  // Verwijder bestaande overlay
+  const oldOverlay = document.getElementById("result-overlay");
+  if (oldOverlay) oldOverlay.remove();
+
+  const overlay = document.createElement("div");
+  overlay.id = "result-overlay";
+
+  // Grid voor de nieuwe elementen
+  const grid = document.createElement("div");
+  grid.className = "result-grid";
+
+  // Dynamische kolommen afhankelijk van aantal elementen
+  let cols;
+  switch(elements.length) {
+    case 1: cols = 1; break;
+    case 2: cols = 2; break;
+    case 3: cols = 3; break;
+    case 4: cols = 4; break;
+    case 5: cols = 5; break;
+    case 6: cols = 3; break;
+    case 7: cols = 4; break;
+    case 8: cols = 4; break;
+    case 9: cols = 5; break;
+    case 10: cols = 5; break;
+    default: cols = Math.ceil(Math.sqrt(elements.length));
+  }
+
+  grid.style.setProperty("--cols", cols);
+  grid.style.justifyItems = "center";
+  grid.style.gap = elements.length > 8 ? "20px" : "30px";
+
+  elements.forEach(el => {
+    const box = document.createElement("div");
+    box.className = "result-box fade-in";
+
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "result-image";
+
+    const title = document.createElement("div");
+    title.className = "result-title";
+    title.innerHTML = el.naam;
+
+    const quote = document.createElement("div");
+    quote.className = "result-quote";
+    quote.innerHTML = el.quote || "";
+
+    box.appendChild(img);
+    box.appendChild(title);
+    box.appendChild(quote);
+    grid.appendChild(box);
+  });
+
+  overlay.appendChild(grid);
+
+  if (vers) {
+    const versDiv = document.createElement("div");
+    versDiv.className = "vers-text";
+    versDiv.innerHTML = vers;
+    overlay.appendChild(versDiv);
+  }
+
+  // ⚡ Godlike flash
+  const flash = document.createElement("div");
+  flash.className = "godlike-flash";
+  overlay.appendChild(flash);
+
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add("visible"));
+
+  flash.addEventListener("animationend", () => flash.remove());
+
+  // Klik overlay → sluit en reset maps
+  overlay.onclick = () => {
+    overlay.remove();
+    openLeft = null;
+    openRight = null;
+    leftSide.innerHTML = "";
+    rightSide.innerHTML = "";
+    renderClosed();
+    updateClosedContainer();
+
+    // ⚡ Threshold-element info-overlay
+    if (thresholdOverlay) {
+      const uitleg = thresholdOverlay.uitleg?.normal;
+      if (uitleg) {
+        showInfoOverlay(uitleg.titel, uitleg.tekst);
+      }
+    }
+  };
+}
+
+// Hulpfunctie: info-overlay voor threshold-elementen
+function showInfoOverlay(title, text) {
+  const old = document.getElementById("info-overlay");
+  if (old) old.remove();
+
+  const overlay = document.createElement("div");
+  overlay.id = "info-overlay";
+  overlay.className = "info-overlay fade-in";
+
+  const inner = document.createElement("div");
+  inner.className = "info-inner";
+
+  const titleEl = document.createElement("div");
+  titleEl.className = "info-title";
+  titleEl.textContent = title;
+
+  const textEl = document.createElement("div");
+  textEl.className = "info-text";
+  textEl.innerHTML = text;
+
+  inner.appendChild(titleEl);
+  inner.appendChild(textEl);
+  overlay.appendChild(inner);
+  document.body.appendChild(overlay);
+
+  overlay.onclick = () => {
+    overlay.classList.add("fade-out");
+    setTimeout(() => overlay.remove(), 300);
+  };
 }
 
 // ----- CHECK THRESHOLD -----
