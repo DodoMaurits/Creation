@@ -6205,25 +6205,19 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
-  // 🔹 Check threshold-element dependency
+  // 🔹 THRESHOLD ELEMENT CHECK
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam;
     if (!unlockedElements.has(needed)) {
-      lastWasThreshold = true; // ✅ HIER
-    
-      showThresholdExplanation(
-        firstMatch.uitleg.thresholdElement,
-        null,
-        () => {
-          selected.forEach(e => e.dom.classList.remove("selected"));
-          selected = [];
-        }
-      );
-      return;
+      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+      });
+      return; // stop hier
     }
   }
-  
-  // 🔹 Check threshold requirements
+
+  // 🔹 THRESHOLD REQUIREMENTS CHECK
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
@@ -6233,31 +6227,24 @@ function checkCombination() {
     );
         
     if (missing.length > 0) {
-      lastWasThreshold = true; // ✅ HIER
-    
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
-      return;
+      return; // stop hier
     }
   }
 
-  lastWasThreshold = false;  
-  // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
+  // 🔹 ALLES GOED → NORMAL uitleg tonen
   const finalUitleg = firstMatch.uitleg?.normal || null;
-  
-  // 🔹 Nieuwe elementen maken
+
+  // Nieuwe elementen aanmaken
   const newElements = [];
   matches.forEach(match => {
     match.output.forEach(newEl => {
       let map = mappen.find(m => m.naam === newEl.map);
       if (!map) {
-        map = {
-          naam: newEl.map,
-          icoon: groepsIconen[newEl.map] || "icons/default.png",
-          elementen: []
-        };
+        map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
         mappen.push(map);
       }
       if (!map.elementen.find(e => e.naam === newEl.naam)) {
@@ -6267,19 +6254,17 @@ function checkCombination() {
     });
   });
 
-  lastExplanation = finalUitleg || null;
-  const versText = firstMatch.vers || null;
-  renderNewElements(newElements, versText);
+  lastExplanation = finalUitleg;   // ⚡ alleen voor NORMAL uitleg
+  lastWasThreshold = false;         // ⚡ scheiding duidelijk
+
+  renderNewElements(newElements, firstMatch.vers);
   newElements.forEach(el => unlockedElements.add(el.naam));
 
-  // Update timeline op basis van combinatie-tijd
-  const eventTime = firstMatch.tijd;
-  
-  if (eventTime !== undefined && eventTime < currentTime) {
-    const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
-    animateTimeline(clampedTime);
+  // Tijdlijn updaten
+  if (firstMatch.tijd !== undefined && firstMatch.tijd < currentTime) {
+    animateTimeline(Math.max(0, Math.min(maxTime, firstMatch.tijd)));
   }
-  
+
   // reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
@@ -6292,16 +6277,11 @@ function showThresholdExplanation(threshold, missing, callback) {
 
   const overlay = document.createElement("div");
   overlay.id = "threshold-overlay";
-  overlay.style.display = "flex";
-  overlay.style.justifyContent = "center";
-  overlay.style.alignItems = "center";
-  overlay.style.position = "fixed";
-  overlay.style.top = 0;
-  overlay.style.left = 0;
-  overlay.style.width = "100%";
-  overlay.style.height = "100%";
-  overlay.style.background = "rgba(0,0,0,0.7)";
-  overlay.style.zIndex = 2000;
+  overlay.style = `
+    display:flex; justify-content:center; align-items:center;
+    position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.7); z-index:2000;
+  `;
 
   const box = document.createElement("div");
   box.className = "explanation-box";
@@ -6314,7 +6294,7 @@ function showThresholdExplanation(threshold, missing, callback) {
   text.className = "explanation-text";
   text.innerHTML = threshold.tekst;
 
-  if (missing && missing.length > 0) {
+  if (missing?.length) {
     const grid = document.createElement("div");
     grid.className = "threshold-grid";
     missing.forEach(req => {
@@ -6331,56 +6311,10 @@ function showThresholdExplanation(threshold, missing, callback) {
   button.textContent = "Ga verder";
   button.onclick = () => {
     overlay.remove();
-    if (callback) callback(); // voer callback uit
+    callback?.();
   };
 
-  box.appendChild(title);
-  box.appendChild(text);
-  box.appendChild(button);
-
-  overlay.appendChild(box);
-  document.body.appendChild(overlay);
-}
-
-function showResultExplanation(explanation) {
-  const oldOverlay = document.getElementById("explanation-overlay");
-  if (oldOverlay) oldOverlay.remove();
-
-  const overlay = document.createElement("div");
-  overlay.id = "explanation-overlay";
-
-  // 👉 achtergrond alleen voor NORMAL uitleg
-  if (explanation.afbeelding) {
-    overlay.style.backgroundImage = `url(${explanation.afbeelding})`;
-    overlay.style.backgroundSize = "cover";
-    overlay.style.backgroundPosition = "center";
-  } else {
-    overlay.style.background = "rgba(0,0,0,0.8)";
-  }
-
-  const box = document.createElement("div");
-  box.className = "explanation-box";
-
-  const title = document.createElement("div");
-  title.className = "explanation-title";
-  title.innerHTML = explanation.titel;
-
-  const text = document.createElement("div");
-  text.className = "explanation-text";
-  text.innerHTML = explanation.tekst;
-
-  const button = document.createElement("button");
-  button.className = "create-button";
-  button.textContent = "Ga verder";
-  button.onclick = () => {
-    overlay.remove();
-    resetGameView();
-  };
-
-  box.appendChild(title);
-  box.appendChild(text);
-  box.appendChild(button);
-
+  box.append(title, text, button);
   overlay.appendChild(box);
   document.body.appendChild(overlay);
 }
@@ -6503,21 +6437,51 @@ function renderNewElements(elements, vers = null) {
   // Klik anywhere → reset
   overlay.addEventListener("click", (e) => {
     if (e.target !== overlay) return;
-  
-    if (lastWasThreshold) {
-      overlay.remove();
-      if (lastExplanation) {
-        showResultExplanation(lastExplanation);
-      } else {
-        resetGameView();
-      }
-    } else {
-      overlay.remove();
-      resetGameView();
-    }
+    overlay.remove();
+    resetGameView();
   });
 }
 
+function showResultExplanation(explanation) {
+  const oldOverlay = document.getElementById("explanation-overlay");
+  if (oldOverlay) oldOverlay.remove();
+
+  const overlay = document.createElement("div");
+  overlay.id = "explanation-overlay";
+
+  // ⚡ alleen bij NORMAL uitleg
+  if (explanation.afbeelding) {
+    overlay.style.backgroundImage = `url(${explanation.afbeelding})`;
+    overlay.style.backgroundSize = "cover";
+    overlay.style.backgroundPosition = "center";
+  } else {
+    overlay.style.background = "rgba(0,0,0,0.8)";
+  }
+
+  const box = document.createElement("div");
+  box.className = "explanation-box";
+
+  const title = document.createElement("div");
+  title.className = "explanation-title";
+  title.innerHTML = explanation.titel;
+
+  const text = document.createElement("div");
+  text.className = "explanation-text";
+  text.innerHTML = explanation.tekst;
+
+  const button = document.createElement("button");
+  button.className = "create-button";
+  button.textContent = "Ga verder";
+  button.onclick = () => {
+    overlay.remove();
+    resetGameView();
+  };
+
+  box.append(title, text, button);
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+}
+               
 // ----- NIEUWE ELEMENTEN BIJ THRESHOLD -----
 function resetGameView() {
   openLeft = null;
