@@ -762,7 +762,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2000;
+  z-index: 9500;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
