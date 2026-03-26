@@ -6223,12 +6223,16 @@ function checkCombination() {
     unlockedElements.add(newEl.naam);
   });
 
-  // ----- SPECIAL THRESHOLD ELEMENT? -----
+  // SPECIAL THRESHOLD ELEMENT?
   // Alleen als er zowel threshold als normal uitleg is
   const isSpecialThreshold = firstMatch.uitleg?.threshold && firstMatch.uitleg?.normal;
-
+  
   // Toon result-overlay
-  renderNewElements(newElements, firstMatch.vers, isSpecialThreshold ? firstMatch.uitleg.threshold : null);
+  renderNewElements(
+    newElements,
+    firstMatch.vers,
+    isSpecialThreshold ? firstMatch.uitleg.threshold : null
+  );
 
   // Reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
