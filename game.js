@@ -6312,6 +6312,7 @@ function checkCombination() {
     });
       if (!firstMatch.uitleg?.normal) {
       return;
+      }
     }
   }
   // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
