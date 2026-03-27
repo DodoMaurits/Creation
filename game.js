@@ -6316,7 +6316,8 @@ function checkCombination() {
   
   // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
-  
+
+  const newElements = [];
   // ----- Unlock nieuwe elementen -----
   firstMatch.output.forEach(newEl => {
     let map = mappen.find(m => m.naam === newEl.map);
