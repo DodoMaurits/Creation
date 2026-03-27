@@ -1673,8 +1673,36 @@ const combinaties = [
           "Roest", "Zand", "Klei", "Glas", "Golf", "Wind", "Zout", "Kalk"]
       },
       normal: {
-        titel: "Leven",
-        tekst: `Eerste leven`,
+        achtergrond: "afb/eersteleven.png",
+        titel: "Oersoep",
+        tekst: `
+        <span>Oceanen en plasma's - water en vuur - zijn nodig voor het creëren van leven uit niet-leven. In 1952 bootsten
+        wetenschappers dit proces voor het eerst na in een lab, waarbij een vroege aardatmosfeer elektrische schokken te 
+        verduren kreeg. Binnen enkele dagen dreven eenvoudige organische moleculen als roze slib van aminozuren op het
+        water. Dit gebeurde in het groot toen de Maan noog veel dichter bij de Aarde stond. Blikseminslagen van boven en
+        spuwende vulkanen van onder maakten van de oceaan een chemische soep: de oersoep.
+        </span>
+        <br><br>
+        <span>Elektrische ontladingen zijn nodig om nieuwe moleculen te vormen, omdat temperaturen normaal te kil zijn.
+        En omgekeerd konden atomen zich pas vormen toen het Heelal koel genoeg was. Toch zijn uitzonderlijke omstandigheden
+        nodig om deze moleculen aan elkaar vast te rijgen om zo eiwitten en koolhydraten te vormen. De Aarde bood precies 
+        die omstandigheden waar chemisch rijke magma uit haar binnenste door de oceaanbodem sijpelde, beschermd tegen 
+        zonnestraling en meteorietenbombardementen.</span?
+        <br><br>
+        <span>Cruciaal voor deze ketens is koolstof. In normale toestand heeft koolstof vier elektronen in de buitenste 
+        baan, ook al is daar ruimte voor acht. In aantallen van vier springen zij over of delen een atoom twee om twee. 
+        Dit biedt vele mogelijkheden, zoals ringen en kettingen, die tezamen de oer-basisstoffen van een de vijfde 
+        natuurkracht vormde: leven. Waar één miljoen moleculen individueel de natuurwetten volgen, lijken ze tezamen 
+        doelgericht te handelen: in leven blijven en nieuw leven maken. Dit wil leven zo graag, dat het de omgeving scant 
+        om te voorkomen dat het sterft. Zij handelen naar deze informatie en geven deze door aan hun nakomelingen in DNA.
+        Leven volgt de vier natuurkrachten niet, zij kijken, reageren en gebruiken alles om leven te behouden.</span>
+        <br><br>
+        <span>Een cel is de kleinste vorm van leven. Als moleculaire metropolen bevatten zij een bibliotheek (celkern met
+        genetisch materiaal), energiecentrales (mitochondriën), afvalverwerking (lysosomen), stadsmuren (membraan), 
+        postkantoren (Golgi-apparaat), en ga zo maar door. Maar niet alle cellen zijn even geavanceerd. Luca - onze oudste 
+        universele voorouder - leefde net zoals virussen niet geheel zelfstandig, maar waren afhankelijk van vulkanische 
+        hitte op de oceaanbodem. Hun dunne elektrische schil tussen binnen- en buitenwereld leverde energie om
+        voedingsstoffen binnen te halen en afvalstoffen af te voeren.</span>`,
       }
     }
   },
