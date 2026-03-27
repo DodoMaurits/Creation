@@ -84,21 +84,26 @@ const combinaties = [
       normal: {
         achtergrond: "afb/atoomvorming.jpg",
         titel: "Atoomvorming",
-        tekst: `380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 3000 Kelvin (2727 graden Celsius).
-        <br><br>De bewegingsenergie was zo laag dat protonen, elektronen en neutronen konden fuseren tot neutrale 
+        tekst: `
+        <span>380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 3000 Kelvin 
+        (2727 graden Celsius).</span>
+        <br><br>
+        <span>De bewegingsenergie was zo laag dat protonen, elektronen en neutronen konden fuseren tot neutrale 
         structuren die op lange termijn stabiel blijven. Het grootste deel van de materie in het heelal werd daardoor 
         elektrisch neutraal, waardoor het zichtbare plasma verdampte. Fotonen konden nu vrij door de elektrisch neutrale 
         nevel en donkere materie stromen. Tot op heden kunnen astronomen de resultaten van deze faseverandering waarnemen,
         omdat fotonen die uit het plasma ontsnapten een dun achtergrondbrommetje van energie voortbrachten, bekend als de 
-        kosmische achtergrondstraling.
-        <br><br>Atomen hebben elk een kleine kern in het centrum, bestaande uit één of meer positief geladen protonen en 
+        kosmische achtergrondstraling.</span>
+        <br><br>
+        <span>Atomen hebben elk een kleine kern in het centrum, bestaande uit één of meer positief geladen protonen en 
         nul of meer neutrale neutronen. Rond de kern cirkelen op grote afstanden negatief geladen elektronen, één voor 
         elke positief geladen proton in de kern. Zij worden door de elektromagnetische kracht bij elkaar gehouden in het 
-        gebied dat men gewoonlijk de elektronenwolk noemt. In dit gebied vindt de chemie plaats. 
-        <br><br>Er worden continu bindingen gevormd en verbroken tussen protonen en elektronen, met als resultaat de 
+        gebied dat men gewoonlijk de elektronenwolk noemt. In dit gebied vindt de chemie plaats.</span> 
+        <br><br>
+        <span>Er worden continu bindingen gevormd en verbroken tussen protonen en elektronen, met als resultaat de 
         opkomst van geheel nieuwe vormen van materie. De drijvende kracht achter al deze activiteit is het feit dat 
         elektronen negatieve ladingen hebben en elkaar afstoten, maar ze worden aangetrokken door de positieve ladingen 
-        van protonen, hetzij in hun eigen atoom, hetzij in naburige atomen.`,
+        van protonen, hetzij in hun eigen atoom, hetzij in naburige atomen.</span>`,
       }
     }
   },
