@@ -6305,14 +6305,12 @@ function checkCombination() {
       !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
     
-  if (missing.length > 0) {
-    showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
-      selected.forEach(e => e.dom.classList.remove("selected"));
-      selected = [];
-    });
-      if (!firstMatch.uitleg?.normal) {
-      return;
-      }
+    if (missing.length > 0) {
+      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+      });
+      return; // ❗ ALTIJD stoppen
     }
   }
   // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
