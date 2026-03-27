@@ -784,7 +784,8 @@ body {
 }
 
 .info-inner {
-  max-width: 520px;
+  width: 50%;
+  min-width: 600px;
   text-align: center;
 }
 
