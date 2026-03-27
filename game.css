@@ -784,19 +784,19 @@ body {
 }
 
 .info-inner {
-  width: 50%;
+  width: 48%;
   min-width: 600px;
   text-align: center;
 }
 
 .info-title {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: bold;
   margin-bottom: 12px;
 }
 
 .info-text {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4;
   display: inline-block;
   animation: infoSway 6s ease-in-out infinite alternate;
