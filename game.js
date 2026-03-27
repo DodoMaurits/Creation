@@ -6281,76 +6281,60 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
-  // 🔹 1. Threshold-element check
+  // --- THRESHOLD ELEMENT
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-  
     if (!normalizedUnlocked.includes(needed)) {
-      const dummyElements = [{ naam: firstMatch.uitleg.thresholdElement.naam, icoon: firstMatch.uitleg.thresholdElement.icoon || "icons/default.png" }];
-      
-      renderNewElements(dummyElements, null, null);
-      selected.forEach(e => e.dom.classList.remove("selected"));
-      selected = [];
-      return; 
+      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, resetSelection);
+      return;
     }
   }
   
-  // 🔹 2. Threshold-requirements check
+  // --- THRESHOLD REQUIREMENTS
   if (firstMatch.uitleg?.threshold?.requirements?.length) {
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
     const missing = firstMatch.uitleg.threshold.requirements.filter(
       r => !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
-  
     if (missing.length > 0) {
-      const dummyElements = [{ naam: firstMatch.uitleg.threshold.titel || "???", icoon: "icons/default.png" }];
-      
-      renderNewElements(dummyElements, null, { uitleg: { requirements: missing } });
-      selected.forEach(e => e.dom.classList.remove("selected"));
-      selected = [];
-      return;
+      showThresholdExplanation(firstMatch.uitleg.threshold, missing, resetSelection);
+      return; // stop
     }
   }
   
-  // 🔹 3. Alles ok → unlock normale uitleg / nieuwe elementen
-  const finalUitleg = firstMatch.uitleg?.normal || null;
+  // --- NORMALE UNLOCKS
   const newElements = [];
-
   firstMatch.output.forEach(newEl => {
-    let map = mappen.find(m => m.naam === newEl.map);
-    if (!map) {
-      map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
-      mappen.push(map);
+    if (!unlockedElements.has(newEl.naam)) {
+      unlockedElements.add(newEl.naam);
+      let map = mappen.find(m => m.naam === newEl.map);
+      if (!map) {
+        map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
+        mappen.push(map);
+      }
+      if (!map.elementen.find(e => e.naam === newEl.naam)) map.elementen.push(newEl);
+      newElements.push(newEl);
     }
-    if (!map.elementen.find(e => e.naam === newEl.naam)) map.elementen.push(newEl);
-    newElements.push(newEl);
-    unlockedElements.add(newEl.naam);
   });
 
-  // 🔹 Special threshold? Alleen als zowel threshold als normal uitleg bestaat
-  const isSpecialThreshold = firstMatch.uitleg?.threshold && firstMatch.uitleg?.normal;
+  if (newElements.length > 0) renderNewElements(newElements, firstMatch.vers);
   
-  // Geef het hele combinaties-object door aan renderNewElements als het een threshold-combinatie is
-  renderNewElements(
-    newElements,
-    firstMatch.vers,
-    isSpecialThreshold ? firstMatch : null
-  );
-
-  // Reset selectie
-  selected.forEach(e => e.dom.classList.remove("selected"));
-  selected = [];
-
-  // Update timeline
+  resetSelection();
+  
   if (firstMatch.tijd !== undefined && firstMatch.tijd < currentTime) {
     animateTimeline(Math.max(0, Math.min(maxTime, firstMatch.tijd)));
   }
 }
+  
+function resetSelection() {
+  selected.forEach(e => e.dom.classList.remove("selected"));
+  selected = [];
+}
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
-function renderNewElements(elements, vers = null, thresholdOverlay = null) {
-  elements = elements || [];
+function renderNewElements(elements, vers = null) {
+  if (!elements || elements.length === 0) return;
   
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
@@ -6428,18 +6412,6 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
-    
-    requestAnimationFrame(() => {
-      if (thresholdOverlay?.uitleg?.normal) {
-        const uitleg = thresholdOverlay.uitleg.normal;
-        showInfoOverlay(uitleg.titel, uitleg.tekst, uitleg.achtergrond);
-      } else if (thresholdOverlay?.uitleg?.requirements) {
-        showInfoOverlay(
-          "Nog nodig",
-          thresholdOverlay.uitleg.requirements.join(", ")
-        );
-      }
-    });
   };
 }
 
