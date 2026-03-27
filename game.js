@@ -6281,21 +6281,22 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
-  // 🔹 1. Threshold-element check (geüpdatet, case-insensitive en trim)
+  // 🔹 1. Threshold-element check
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
   
     if (!normalizedUnlocked.includes(needed)) {
-      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
-      return; // STOP hier
+      const dummyElements = [{ naam: firstMatch.uitleg.thresholdElement.naam, icoon: firstMatch.uitleg.thresholdElement.icoon || "icons/default.png" }];
+      
+      renderNewElements(dummyElements, null, null);
+      selected.forEach(e => e.dom.classList.remove("selected"));
+      selected = [];
+      return; 
     }
   }
   
-  // 🔹 2. Threshold-requirements check (geüpdatet)
+  // 🔹 2. Threshold-requirements check
   if (firstMatch.uitleg?.threshold?.requirements?.length) {
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
     const missing = firstMatch.uitleg.threshold.requirements.filter(
@@ -6303,11 +6304,12 @@ function checkCombination() {
     );
   
     if (missing.length > 0) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
-      return; // STOP hier
+      const dummyElements = [{ naam: firstMatch.uitleg.threshold.titel || "???", icoon: "icons/default.png" }];
+      
+      renderNewElements(dummyElements, null, { uitleg: { requirements: missing } });
+      selected.forEach(e => e.dom.classList.remove("selected"));
+      selected = [];
+      return;
     }
   }
   
@@ -6348,14 +6350,14 @@ function checkCombination() {
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements, vers = null, thresholdOverlay = null) {
-  // Verwijder bestaande overlay
+  elements = elements || [];
+  
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
 
-  // Grid voor de nieuwe elementen
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
@@ -6410,35 +6412,32 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     overlay.appendChild(versDiv);
   }
 
-  // ⚡ Godlike flash
   const flash = document.createElement("div");
   flash.className = "godlike-flash";
   overlay.appendChild(flash);
 
   document.body.appendChild(overlay);
   requestAnimationFrame(() => overlay.classList.add("visible"));
-
   flash.addEventListener("animationend", () => flash.remove());
 
   overlay.onclick = () => {
     overlay.remove();
-  
     openLeft = null;
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
+    
     requestAnimationFrame(() => {
-      if (thresholdOverlay) {
-        const uitleg = thresholdOverlay.uitleg?.normal;
-        if (uitleg) {
-          showInfoOverlay(
-            uitleg.titel,
-            uitleg.tekst,
-            uitleg.achtergrond
-          );
-        }
+      if (thresholdOverlay?.uitleg?.normal) {
+        const uitleg = thresholdOverlay.uitleg.normal;
+        showInfoOverlay(uitleg.titel, uitleg.tekst, uitleg.achtergrond);
+      } else if (thresholdOverlay?.uitleg?.requirements) {
+        showInfoOverlay(
+          "Nog nodig",
+          thresholdOverlay.uitleg.requirements.join(", ")
+        );
       }
     });
   };
