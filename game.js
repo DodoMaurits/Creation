@@ -85,15 +85,13 @@ const combinaties = [
         achtergrond: "afb/atoomvorming.jpg",
         titel: "ATOOMVORMING",
         tekst: `
-        <span>380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 3000 Kelvin 
-        (2727 graden Celsius).</span>
+        <span>380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 2727 graden.</span>
         <br><br>
-        <span>De bewegingsenergie was zo laag dat protonen, elektronen en neutronen konden fuseren tot neutrale 
-        structuren die op lange termijn stabiel blijven. Het grootste deel van de materie in het heelal werd daardoor 
-        elektrisch neutraal, waardoor het zichtbare plasma verdampte. Fotonen konden nu vrij door de elektrisch neutrale 
-        nevel en donkere materie stromen. Tot op heden kunnen astronomen de resultaten van deze faseverandering waarnemen,
-        omdat fotonen die uit het plasma ontsnapten een dun achtergrondbrommetje van energie voortbrachten, bekend als de 
-        kosmische achtergrondstraling.</span>
+        <span>Chaos koelde zo veel af dat protonen, elektronen en neutronen met elkaar fuseerden tot energieneutrale 
+        structuren, die op lange termijn stabiel bleven. Veel materie werd elektrisch neutraal, waardoor zichtbaar plasma 
+        verdampte. Fotonen stroomden vrij door de elektrisch neutrale nevel en donkere materie. Nog altijd kunnen
+        astronomen de resultaten van deze faseverandering waarnemen, namelijk de kosmische achtergrondstraling. Dit is 
+        een achtergrondbrommetje aan energie dat loskwam toen fotonen uit het plasma konden ontsnappen.</span>
         <br><br>
         <span>Atomen hebben elk een kleine kern in het centrum, bestaande uit één of meer positief geladen protonen en 
         nul of meer neutrale neutronen. Rond de kern cirkelen op grote afstanden negatief geladen elektronen, één voor 
