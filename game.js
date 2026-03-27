@@ -6364,11 +6364,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   overlay.className = "info-overlay fade-in";
 
   if (backgroundImage) {
-    overlay.style.background = `
-      url("${backgroundImage}")
-    `;
-    overlay.style.backgroundSize = "cover";
-    overlay.style.backgroundPosition = "center";
+    overlay.style.setProperty("--bg-image", `url("${backgroundImage}")`);
   }
 
   const inner = document.createElement("div");
