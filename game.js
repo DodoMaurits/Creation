@@ -83,7 +83,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/atoomvorming.jpg",
-        titel: "Atoomvorming",
+        titel: "ATOOMVORMING",
         tekst: `
         <span>380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 3000 Kelvin 
         (2727 graden Celsius).</span>
