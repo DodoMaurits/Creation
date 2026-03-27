@@ -6320,26 +6320,27 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
 
   flash.addEventListener("animationend", () => flash.remove());
 
-  // Klik overlay → sluit en reset maps
   overlay.onclick = () => {
     overlay.remove();
+  
     openLeft = null;
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
-
-    if (thresholdOverlay) {
-      const uitleg = thresholdOverlay.uitleg?.normal;
-      if (uitleg) {
-        showInfoOverlay(
-          uitleg.titel,
-          uitleg.tekst,
-          uitleg.achtergrond
-        );
+    requestAnimationFrame(() => {
+      if (thresholdOverlay) {
+        const uitleg = thresholdOverlay.uitleg?.normal;
+        if (uitleg) {
+          showInfoOverlay(
+            uitleg.titel,
+            uitleg.tekst,
+            uitleg.achtergrond
+          );
+        }
       }
-    }
+    });
   };
 }
 
