@@ -90,8 +90,8 @@ const combinaties = [
         <span>Chaos koelde zo veel af dat protonen, elektronen en neutronen met elkaar fuseerden tot energieneutrale 
         structuren, die op lange termijn stabiel bleven. Veel materie werd elektrisch neutraal, waardoor zichtbaar plasma 
         verdampte. Fotonen stroomden vrij door de elektrisch neutrale nevel en donkere materie. Nog altijd kunnen
-        astronomen de resultaten van deze faseverandering waarnemen, namelijk de kosmische achtergrondstraling. Dit is 
-        een achtergrondbrommetje aan energie dat loskwam toen fotonen uit het plasma konden ontsnappen.</span>
+        astronomen de resultaten van deze faseverandering waarnemen, namelijk de kosmische achtergrondstraling aan energie
+        die vrijkwam toen fotonen uit het plasma konden ontsnappen.</span>
         <br><br>
         <span>Atomen hebben elk een kleine kern in het centrum, bestaande uit één of meer positief geladen protonen en 
         nul of meer neutrale neutronen. Rond de kern cirkelen op grote afstanden negatief geladen elektronen, één voor 
