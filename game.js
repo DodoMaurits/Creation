@@ -708,14 +708,13 @@ const combinaties = [
           ontvankelijk voor de zwaartekracht van de Aarde. Regen kon nu op de prille aardkorst neerdalen, waarbij door 
           afkoeling van lava nog meer water verdampte. Zo ontstond de dampkring. Dankzij de platentektoniek bleef lava
           altijd wel weer haar weg naar boven vinden, waardoor de afkoeling niet net zo lang doorging tot al het water 
-          zou zijn bevroren.</span> 
+          zou zijn bevroren.</span>
           <br><br>
           <span>Terwijl de watercyclus op gang kwam, was de prille oeratmosfeer lange tijd nog niet sterk genoeg om alle
           broeikasgassen vast te houden. Mars bijvoorbeeld is kleiner dan de Aarde en heeft minder zwaartekracht, waardoor
           al het water daar is bevroren. Aarde kon meer broeikasgassen van de vulkanen vasthouden en zo veranderde Aarde
           in één grote waterbol zonder land. Dit duurde 400 miljoen jaar, tot vulkanen en bergen nieuw land hadden gevormd.
-          </span>
-          `,
+          </span>`,
       }
     }
   },
@@ -1674,7 +1673,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/eersteleven.png",
-        titel: "Oersoep",
+        titel: "NATUURKRACHT 5: LEVEN",
         tekst: `
         <span>Oceanen en plasma's - water en vuur - zijn nodig voor het creëren van leven uit niet-leven. In 1952 bootsten
         wetenschappers dit proces voor het eerst na in een lab, waarbij een vroege aardatmosfeer elektrische schokken te 
@@ -3192,8 +3191,25 @@ const combinaties = [
           "Brein", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
       },
       normal: {
-        titel: "Cambrische Explosie",
-        tekst: `De Cambriscche explosie...`,
+        achtergrond: "afb/cambrischeexplosie.png",
+        titel: "CAMBRISCHE EXPLOSIE",
+        tekst: `
+        <span>In de gesteenten lezen wij in laagjes wanneer Wij wat creëerden. 541 miljoen jaar geleden zien wij plots
+        op grote schaal macroscopische fossielen van schelpen, skeletten en pantsers. Vernoemd naar de eerste vindplek in 
+        Cambria, Wales, zien wij hoe meer dan de helft van alle fyla (de grootste bekende groepen van leven) ontstond in de 
+        periode van 541 tot 485 miljoen jaar geleden: het Cambrium.</span>
+        <br><br>
+        <span>Het uiteenvallen van supercontinent Pannotia creëerde nieuwe oceanen en lange, grillige kustlijnen. Continenten
+        dreven uiteen, riftscheuren en vulkanisme verrijkten de zeeën met mineralen zoals calcium (kalk) en silica 
+        (silicium) - bouwstoffen van de fossielen. Uit de grote toename van het calcietgebruik ontstonden dikke lagen krijt, 
+        zoals te zien bij de witte kliffen van Dover.</span>
+        <br><br>
+        <span>De Cambrische wereld was een broeikaswereld: het CO2-gehalte lag veel hoger dan nu, temperaturen waren immens
+        hoog en nergens was poolijs te bekennen. Met name in de warme, zuurstofrijker wordende ondiepe zeeën was waar de
+        vroege geleedpotige trilobieten met extern skelet en gewervelde wormen met intern skelet leefden. De gewervelden 
+        hadden nog niet de geconcentreerde bol neuronen die wij nu hersenen noemen, maar wel zenuwstelsels met honderden tot 
+        duizenden zenuwcellen in een netwerk. Zij konden veel informatie verwerken, aangevoerd door sensorcellen, om 
+        vervolgens beslissingen door te geven aan gespecialiseerde organen.</span>`,
       }
     }
   },
