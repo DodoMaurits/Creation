@@ -6298,6 +6298,63 @@ function checkCombination() {
   }
 }
 
+// ----- BOX VOOR THRESHOLD -----
+function showThresholdExplanation(threshold, missing, callback) {
+  const oldOverlay = document.getElementById("threshold-overlay");
+  if (oldOverlay) oldOverlay.remove();
+
+  const overlay = document.createElement("div");
+  overlay.id = "threshold-overlay";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0,0,0,0.7)";
+  overlay.style.zIndex = 2000;
+
+  const box = document.createElement("div");
+  box.className = "explanation-box";
+
+  const title = document.createElement("div");
+  title.className = "explanation-title";
+  title.innerHTML = threshold.titel;
+
+  const text = document.createElement("div");
+  text.className = "explanation-text";
+  text.innerHTML = threshold.tekst;
+
+  if (missing && missing.length > 0) {
+    const grid = document.createElement("div");
+    grid.className = "threshold-grid";
+    missing.forEach(req => {
+      const circle = document.createElement("div");
+      circle.className = "threshold-circle";
+      circle.textContent = req;
+      grid.appendChild(circle);
+    });
+    text.appendChild(grid);
+  }
+
+  const button = document.createElement("button");
+  button.className = "create-button";
+  button.textContent = "Ga verder";
+  button.onclick = () => {
+    overlay.remove();
+    if (callback) callback(); // voer callback uit
+  };
+
+  box.appendChild(title);
+  box.appendChild(text);
+  box.appendChild(button);
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+}
+
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   // Verwijder bestaande overlay
