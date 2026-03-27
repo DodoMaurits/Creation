@@ -714,8 +714,7 @@ const combinaties = [
           broeikasgassen vast te houden. Mars bijvoorbeeld is kleiner dan de Aarde en heeft minder zwaartekracht, waardoor
           al het water daar is bevroren. Aarde kon meer broeikasgassen van de vulkanen vasthouden en zo veranderde Aarde
           in één grote waterbol zonder land. Dit duurde 400 miljoen jaar, tot vulkanen en bergen nieuw land hadden gevormd.
-          </span>
-          `,
+          </span>`,
       }
     }
   },
@@ -1674,20 +1673,19 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/eersteleven.png",
-        titel: "Oersoep",
+        titel: "NATUURKRACHT VIJF: LEVEN",
         tekst: `
         <span>Oceanen en plasma's - water en vuur - zijn nodig voor het creëren van leven uit niet-leven. In 1952 bootsten
         wetenschappers dit proces voor het eerst na in een lab, waarbij een vroege aardatmosfeer elektrische schokken te 
         verduren kreeg. Binnen enkele dagen dreven eenvoudige organische moleculen als roze slib van aminozuren op het
         water. Dit gebeurde in het groot toen de Maan noog veel dichter bij de Aarde stond. Blikseminslagen van boven en
-        spuwende vulkanen van onder maakten van de oceaan een chemische soep: de oersoep.
-        </span>
+        spuwende vulkanen van onder maakten van de oceaan een chemische soep: de oersoep.</span>
         <br><br>
         <span>Elektrische ontladingen zijn nodig om nieuwe moleculen te vormen, omdat temperaturen normaal te kil zijn.
         En omgekeerd konden atomen zich pas vormen toen het Heelal koel genoeg was. Toch zijn uitzonderlijke omstandigheden
         nodig om deze moleculen aan elkaar vast te rijgen om zo eiwitten en koolhydraten te vormen. De Aarde bood precies 
         die omstandigheden waar chemisch rijke magma uit haar binnenste door de oceaanbodem sijpelde, beschermd tegen 
-        zonnestraling en meteorietenbombardementen.</span?
+        zonnestraling en meteorietenbombardementen.</span>
         <br><br>
         <span>Cruciaal voor deze ketens is koolstof. In normale toestand heeft koolstof vier elektronen in de buitenste 
         baan, ook al is daar ruimte voor acht. In aantallen van vier springen zij over of delen een atoom twee om twee. 
@@ -5590,8 +5588,8 @@ const combinaties = [
     hint: `Met de eerste bossen, ontstonden ook de eerste bosbranden.`,
     output: [
       { naam: "Brand", icoon: "icons/Brand.png", map: "Vuur", 
-        quote: `
-        <br><br>- `
+        quote: `No time to grieve for roses when the forests are burning
+        <br><br>- Zbigniew Herbert`
       }
     ]
   },
