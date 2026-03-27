@@ -797,6 +797,15 @@ body {
 .info-text {
   font-size: 20px;
   line-height: 1.4;
+  display: inline-block;
+  animation: infoSway 6s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes infoSway {
+  0%   { transform: translateX(-5px); }
+  50%  { transform: translateX(5px); }
+  100% { transform: translateX(-5px); }
 }
 
 .info-overlay.fade-out {
