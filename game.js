@@ -6278,9 +6278,65 @@ function checkCombination() {
   }
 
   const firstMatch = matches[0];
-  const newElements = [];
-  const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
 
+  // 🔹 Check threshold-element dependency
+  if (firstMatch.uitleg?.thresholdElement) {
+    const needed = firstMatch.uitleg.thresholdElement.naam;
+    if (!unlockedElements.has(needed)) {
+      // toon overlay met titel + tekst van thresholdElement
+      showThresholdExplanation(
+        firstMatch.uitleg.thresholdElement,
+        null, // geen missing circles
+        () => {
+          selected.forEach(e => e.dom.classList.remove("selected"));
+          selected = [];
+        }
+      );
+      return; // stop verder uitvoeren
+    }
+  }
+  
+  // 🔹 Check threshold requirements
+  if (firstMatch.uitleg?.threshold) {
+    const requirements = firstMatch.uitleg.threshold.requirements || [];
+    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+    
+    const missing = requirements.filter(r =>
+      !normalizedUnlocked.includes(r.trim().toLowerCase())
+    );
+    
+    if (missing.length > 0) {
+      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+      });
+      return;
+    }
+  }
+  
+  // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
+  const finalUitleg = firstMatch.uitleg?.normal || null;
+  
+  // 🔹 Nieuwe elementen maken
+  const newElements = [];
+  matches.forEach(match => {
+    match.output.forEach(newEl => {
+      let map = mappen.find(m => m.naam === newEl.map);
+      if (!map) {
+        map = {
+          naam: newEl.map,
+          icoon: groepsIconen[newEl.map] || "icons/default.png",
+          elementen: []
+        };
+        mappen.push(map);
+      }
+      if (!map.elementen.find(e => e.naam === newEl.naam)) {
+        map.elementen.push(newEl);
+      }
+      newElements.push(newEl);
+    });
+  });
+  
   // ----- Unlock nieuwe elementen -----
   firstMatch.output.forEach(newEl => {
     let map = mappen.find(m => m.naam === newEl.map);
