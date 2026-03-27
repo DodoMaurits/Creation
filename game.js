@@ -6365,6 +6365,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
 
   if (backgroundImage) {
     overlay.style.background = `
+      radial-gradient(circle, rgba(0,0,0,4) 20%, rgba(0,0,0,9) 100%),
       url("${backgroundImage}")
     `;
     overlay.style.backgroundSize = "cover";
