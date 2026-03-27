@@ -6286,8 +6286,10 @@ function checkCombination() {
     const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
     if (!normalizedUnlocked.includes(needed)) {
-      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, resetSelection);
-      return;
+      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+      });
     }
   }
   
@@ -6298,8 +6300,10 @@ function checkCombination() {
       r => !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
     if (missing.length > 0) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, missing, resetSelection);
-      return; // stop
+      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
+      selected.forEach(e => e.dom.classList.remove("selected"));
+      selected = [];
+      });
     }
   }
   
