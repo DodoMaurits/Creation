@@ -6281,10 +6281,12 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
-  // 🔹 1. Threshold-element check
+  // 🔹 1. Threshold-element check (geüpdatet, case-insensitive en trim)
   if (firstMatch.uitleg?.thresholdElement) {
-    const needed = firstMatch.uitleg.thresholdElement.naam;
-    if (!unlockedElements.has(needed)) {
+    const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
+    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+  
+    if (!normalizedUnlocked.includes(needed)) {
       showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
@@ -6293,12 +6295,13 @@ function checkCombination() {
     }
   }
   
-  // 🔹 2. Threshold-requirements check
+  // 🔹 2. Threshold-requirements check (geüpdatet)
   if (firstMatch.uitleg?.threshold?.requirements?.length) {
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
     const missing = firstMatch.uitleg.threshold.requirements.filter(
       r => !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
+  
     if (missing.length > 0) {
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
