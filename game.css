@@ -766,7 +766,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
+    radial-gradient(circle, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.9) 100%)
     url("afb/beginscherm.png");
   background-size: cover;
   background-position: center;
