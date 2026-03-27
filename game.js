@@ -6305,15 +6305,15 @@ function checkCombination() {
       !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
     
-    if (missing.length > 0) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
+  if (missing.length > 0) {
+    showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
+      selected.forEach(e => e.dom.classList.remove("selected"));
+      selected = [];
+    });
+      if (!firstMatch.uitleg?.normal) {
       return;
     }
   }
-  
   // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
 
