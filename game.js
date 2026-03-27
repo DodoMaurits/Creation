@@ -708,13 +708,14 @@ const combinaties = [
           ontvankelijk voor de zwaartekracht van de Aarde. Regen kon nu op de prille aardkorst neerdalen, waarbij door 
           afkoeling van lava nog meer water verdampte. Zo ontstond de dampkring. Dankzij de platentektoniek bleef lava
           altijd wel weer haar weg naar boven vinden, waardoor de afkoeling niet net zo lang doorging tot al het water 
-          zou zijn bevroren.</span>
+          zou zijn bevroren.</span> 
           <br><br>
           <span>Terwijl de watercyclus op gang kwam, was de prille oeratmosfeer lange tijd nog niet sterk genoeg om alle
           broeikasgassen vast te houden. Mars bijvoorbeeld is kleiner dan de Aarde en heeft minder zwaartekracht, waardoor
           al het water daar is bevroren. Aarde kon meer broeikasgassen van de vulkanen vasthouden en zo veranderde Aarde
           in één grote waterbol zonder land. Dit duurde 400 miljoen jaar, tot vulkanen en bergen nieuw land hadden gevormd.
-          </span>`,
+          </span>
+          `,
       }
     }
   },
@@ -1673,7 +1674,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/eersteleven.png",
-        titel: "NATUURKRACHT 5: LEVEN",
+        titel: "Oersoep",
         tekst: `
         <span>Oceanen en plasma's - water en vuur - zijn nodig voor het creëren van leven uit niet-leven. In 1952 bootsten
         wetenschappers dit proces voor het eerst na in een lab, waarbij een vroege aardatmosfeer elektrische schokken te 
@@ -3191,25 +3192,8 @@ const combinaties = [
           "Brein", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
       },
       normal: {
-        achtergrond: "afb/cambrischeexplosie.png",
-        titel: "CAMBRISCHE EXPLOSIE",
-        tekst: `
-        <span>In de gesteenten lezen wij in laagjes wanneer Wij wat creëerden. 541 miljoen jaar geleden zien wij plots
-        op grote schaal macroscopische fossielen van schelpen, skeletten en pantsers. Vernoemd naar de eerste vindplek in 
-        Cambria, Wales, zien wij hoe meer dan de helft van alle fyla (de grootste bekende groepen van leven) ontstond in de 
-        periode van 541 tot 485 miljoen jaar geleden: het Cambrium.</span>
-        <br><br>
-        <span>Het uiteenvallen van supercontinent Pannotia creëerde nieuwe oceanen en lange, grillige kustlijnen. Continenten
-        dreven uiteen, riftscheuren en vulkanisme verrijkten de zeeën met mineralen zoals calcium (kalk) en silica 
-        (silicium) - bouwstoffen van de fossielen. Uit de grote toename van het calcietgebruik ontstonden dikke lagen krijt, 
-        zoals te zien bij de witte kliffen van Dover.</span>
-        <br><br>
-        <span>De Cambrische wereld was een broeikaswereld: het CO2-gehalte lag veel hoger dan nu, temperaturen waren immens
-        hoog en nergens was poolijs te bekennen. Met name in de warme, zuurstofrijker wordende ondiepe zeeën was waar de
-        vroege geleedpotige trilobieten met extern skelet en gewervelde wormen met intern skelet leefden. De gewervelden 
-        hadden nog niet de geconcentreerde bol neuronen die wij nu hersenen noemen, maar wel zenuwstelsels met honderden tot 
-        duizenden zenuwcellen in een netwerk. Zij konden veel informatie verwerken, aangevoerd door sensorcellen, om 
-        vervolgens beslissingen door te geven aan gespecialiseerde organen.</span>`,
+        titel: "Cambrische Explosie",
+        tekst: `De Cambriscche explosie...`,
       }
     }
   },
@@ -6261,7 +6245,6 @@ function toggleSelect(el, img, side, mapNaam) {
 function checkCombination() {
   const [a, b] = selected.map(e => e.naam);
 
-  // --- Zoek alle combinaties die matchen ---
   const matches = combinaties.filter(c => {
     if (typeof c.input[0] === "string") {
       return (c.input[0] === a && c.input[1] === b) || (c.input[0] === b && c.input[1] === a);
@@ -6271,7 +6254,6 @@ function checkCombination() {
     );
   });
 
-  // --- Geen match → trillen ---
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
     selected.forEach(e => e.dom.classList.remove("selected"));
@@ -6280,74 +6262,52 @@ function checkCombination() {
   }
 
   const firstMatch = matches[0];
-
-  // --- THRESHOLD ELEMENT
-  if (firstMatch.uitleg?.thresholdElement) {
-    const needed = firstMatch.uitleg.thresholdElement.naam.trim().toLowerCase();
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    if (!normalizedUnlocked.includes(needed)) {
-      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
-      return; // ⛔ STOP hier!
-    }
-  }
-  
-  // --- THRESHOLD REQUIREMENTS
-  if (firstMatch.uitleg?.threshold?.requirements?.length) {
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    const missing = firstMatch.uitleg.threshold.requirements.filter(
-      r => !normalizedUnlocked.includes(r.trim().toLowerCase())
-    );
-    if (missing.length > 0) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
-      return; // ⛔ STOP hier!
-    }
-  }
-  
-  // --- NORMALE UNLOCKS
   const newElements = [];
+  const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+
+  // ----- Unlock nieuwe elementen -----
   firstMatch.output.forEach(newEl => {
-    if (!unlockedElements.has(newEl.naam)) {
-      unlockedElements.add(newEl.naam);
-      let map = mappen.find(m => m.naam === newEl.map);
-      if (!map) {
-        map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
-        mappen.push(map);
-      }
-      if (!map.elementen.find(e => e.naam === newEl.naam)) map.elementen.push(newEl);
-      newElements.push(newEl);
+    let map = mappen.find(m => m.naam === newEl.map);
+    if (!map) {
+      map = { naam: newEl.map, icoon: groepsIconen[newEl.map] || "icons/default.png", elementen: [] };
+      mappen.push(map);
     }
+    if (!map.elementen.find(e => e.naam === newEl.naam)) map.elementen.push(newEl);
+    newElements.push(newEl);
+    unlockedElements.add(newEl.naam);
   });
 
-  if (newElements.length > 0) renderNewElements(newElements, firstMatch.vers);
+  // SPECIAL THRESHOLD ELEMENT?
+  // Alleen als er zowel threshold als normal uitleg is
+  const isSpecialThreshold = firstMatch.uitleg?.threshold && firstMatch.uitleg?.normal;
   
-  resetSelection();
-  
+  // Geef het hele combinaties-object door aan renderNewElements als het een threshold-combinatie is
+  renderNewElements(
+    newElements,
+    firstMatch.vers,
+    isSpecialThreshold ? firstMatch : null
+  );
+
+  // Reset selectie
+  selected.forEach(e => e.dom.classList.remove("selected"));
+  selected = [];
+
+  // Update timeline
   if (firstMatch.tijd !== undefined && firstMatch.tijd < currentTime) {
     animateTimeline(Math.max(0, Math.min(maxTime, firstMatch.tijd)));
   }
 }
-  
-function resetSelection() {
-  selected.forEach(e => e.dom.classList.remove("selected"));
-  selected = [];
-}
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
-function renderNewElements(elements, vers = null) {
-  if (!elements || elements.length === 0) return;
-  
+function renderNewElements(elements, vers = null, thresholdOverlay = null) {
+  // Verwijder bestaande overlay
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
 
+  // Grid voor de nieuwe elementen
   const grid = document.createElement("div");
   grid.className = "result-grid";
 
@@ -6402,22 +6362,37 @@ function renderNewElements(elements, vers = null) {
     overlay.appendChild(versDiv);
   }
 
+  // ⚡ Godlike flash
   const flash = document.createElement("div");
   flash.className = "godlike-flash";
   overlay.appendChild(flash);
 
   document.body.appendChild(overlay);
   requestAnimationFrame(() => overlay.classList.add("visible"));
+
   flash.addEventListener("animationend", () => flash.remove());
 
   overlay.onclick = () => {
     overlay.remove();
+  
     openLeft = null;
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
+    requestAnimationFrame(() => {
+      if (thresholdOverlay) {
+        const uitleg = thresholdOverlay.uitleg?.normal;
+        if (uitleg) {
+          showInfoOverlay(
+            uitleg.titel,
+            uitleg.tekst,
+            uitleg.achtergrond
+          );
+        }
+      }
+    });
   };
 }
 
