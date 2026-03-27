@@ -6290,6 +6290,7 @@ function checkCombination() {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
+      return; // ⛔ STOP hier!
     }
   }
   
@@ -6301,9 +6302,10 @@ function checkCombination() {
     );
     if (missing.length > 0) {
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
-      selected.forEach(e => e.dom.classList.remove("selected"));
-      selected = [];
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
       });
+      return; // ⛔ STOP hier!
     }
   }
   
