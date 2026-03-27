@@ -6317,26 +6317,6 @@ function checkCombination() {
   // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
   
-  // 🔹 Nieuwe elementen maken
-  const newElements = [];
-  matches.forEach(match => {
-    match.output.forEach(newEl => {
-      let map = mappen.find(m => m.naam === newEl.map);
-      if (!map) {
-        map = {
-          naam: newEl.map,
-          icoon: groepsIconen[newEl.map] || "icons/default.png",
-          elementen: []
-        };
-        mappen.push(map);
-      }
-      if (!map.elementen.find(e => e.naam === newEl.naam)) {
-        map.elementen.push(newEl);
-      }
-      newElements.push(newEl);
-    });
-  });
-  
   // ----- Unlock nieuwe elementen -----
   firstMatch.output.forEach(newEl => {
     let map = mappen.find(m => m.naam === newEl.map);
