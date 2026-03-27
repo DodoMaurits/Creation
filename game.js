@@ -6261,6 +6261,7 @@ function toggleSelect(el, img, side, mapNaam) {
 function checkCombination() {
   const [a, b] = selected.map(e => e.naam);
 
+  // --- Zoek alle combinaties die matchen ---
   const matches = combinaties.filter(c => {
     if (typeof c.input[0] === "string") {
       return (c.input[0] === a && c.input[1] === b) || (c.input[0] === b && c.input[1] === a);
@@ -6270,6 +6271,7 @@ function checkCombination() {
     );
   });
 
+  // --- Geen match → trillen ---
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
     selected.forEach(e => e.dom.classList.remove("selected"));
@@ -6279,45 +6281,37 @@ function checkCombination() {
 
   const firstMatch = matches[0];
 
-  // 🔹 Check threshold-element dependency
+  // 🔹 1. Threshold-element check
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam;
     if (!unlockedElements.has(needed)) {
-      // toon overlay met titel + tekst van thresholdElement
-      showThresholdExplanation(
-        firstMatch.uitleg.thresholdElement,
-        null, // geen missing circles
-        () => {
-          selected.forEach(e => e.dom.classList.remove("selected"));
-          selected = [];
-        }
-      );
-      return; // stop verder uitvoeren
+      showThresholdExplanation(firstMatch.uitleg.thresholdElement, null, () => {
+        selected.forEach(e => e.dom.classList.remove("selected"));
+        selected = [];
+      });
+      return; // STOP hier
     }
   }
   
-  // 🔹 Check threshold requirements
-  if (firstMatch.uitleg?.threshold) {
-    const requirements = firstMatch.uitleg.threshold.requirements || [];
+  // 🔹 2. Threshold-requirements check
+  if (firstMatch.uitleg?.threshold?.requirements?.length) {
     const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    
-    const missing = requirements.filter(r =>
-      !normalizedUnlocked.includes(r.trim().toLowerCase())
+    const missing = firstMatch.uitleg.threshold.requirements.filter(
+      r => !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
-    
     if (missing.length > 0) {
       showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
-      return; // ❗ ALTIJD stoppen
+      return; // STOP hier
     }
   }
-  // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
+  
+  // 🔹 3. Alles ok → unlock normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
-
   const newElements = [];
-  // ----- Unlock nieuwe elementen -----
+
   firstMatch.output.forEach(newEl => {
     let map = mappen.find(m => m.naam === newEl.map);
     if (!map) {
@@ -6329,8 +6323,7 @@ function checkCombination() {
     unlockedElements.add(newEl.naam);
   });
 
-  // SPECIAL THRESHOLD ELEMENT?
-  // Alleen als er zowel threshold als normal uitleg is
+  // 🔹 Special threshold? Alleen als zowel threshold als normal uitleg bestaat
   const isSpecialThreshold = firstMatch.uitleg?.threshold && firstMatch.uitleg?.normal;
   
   // Geef het hele combinaties-object door aan renderNewElements als het een threshold-combinatie is
