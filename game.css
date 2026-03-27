@@ -805,10 +805,26 @@ body {
   will-change: transform;
 }
 
-@keyframes infoSway {
+.info-text span {
+  display: inline-block;
+  will-change: transform;
+  animation: swayLeft 6s ease-in-out infinite alternate;
+}
+
+.info-text span:nth-child(even) {
+  animation-name: swayRight;
+}
+
+@keyframes swayLeft {
   0%   { transform: translateX(-5px); }
   50%  { transform: translateX(5px); }
   100% { transform: translateX(-5px); }
+}
+
+@keyframes swayRight {
+  0%   { transform: translateX(5px); }
+  50%  { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
 }
 
 .info-overlay.fade-out {
