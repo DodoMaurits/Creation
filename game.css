@@ -16,7 +16,7 @@ body {
   position: relative;
 }
 
-/* ---------------- MUTE BUTTON ---------------- */
+/* ---------------- MUTE BUTTON ----------------- */
 #audio-controls {
   position: fixed;
   top: 20px;
