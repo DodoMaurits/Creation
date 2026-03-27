@@ -694,9 +694,30 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/wateropaarde.png",
-        titel: "Water op Aarde",
-        tekst: `4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
-          van vloeibaar water...`,
+        titel: "WATER OP AARDE",
+        tekst: `
+          <span>4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
+          van vloeibaar water...</span>
+          <br><br>
+          <span>Waar lava het aardoppervlakte bereikte, pompte het waterrijke gassen de fragiele atmosfeer in. Na afkoeling
+          namen deze gassen de toestand aan van vloeibaar water. Hierbij draaien elektronen niet om één, maar om twee 
+          atoomkernen, die hun elektromagnetische lading delen in een zogeheten covalente binding. Het scheve watermolecuul
+          vormen zij met twee kleine waterstofatomen en een groter zuurstofatoom. Die vreemde vorm verdeelt negatieve en 
+          positieve ladingen ongelijkmatig over het oppervlak van het molecuul en laat waterstofatomen willen overspringen 
+          naar zuurstofatomen van naburige moleculen - een vloeiende stof.</span>
+          <br><br>
+          <span>Met het herstel van de atmosfeer vloog water niet meer zo vrijelijk de ruimte in, maar werd het 
+          ontvankelijk voor de zwaartekracht van de Aarde. Regen kon nu op de prille aardkorst neerdalen, waarbij door 
+          afkoeling van lava nog meer water verdampte. Zo ontstond de dampkring. Dankzij de platentektoniek bleef lava
+          altijd wel weer haar weg naar boven vinden, waardoor de afkoeling niet net zo lang doorging tot al het water 
+          zou zijn bevroren.</span> 
+          <br><br>
+          <span>Terwijl de watercyclus op gang kwam, was de prille oeratmosfeer lange tijd nog niet sterk genoeg om alle
+          broeikasgassen vast te houden. Mars bijvoorbeeld is kleiner dan de Aarde en heeft minder zwaartekracht, waardoor
+          al het water daar is bevroren. Aarde kon meer broeikasgassen van de vulkanen vasthouden en zo veranderde Aarde
+          in één grote waterbol zonder land. Dit duurde 400 miljoen jaar, tot vulkanen en bergen nieuw land hadden gevormd.
+          </span>
+          `,
       }
     }
   },
