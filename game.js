@@ -6416,7 +6416,7 @@ function checkCombination() {
   renderNewElements(
     newElements,
     versText,
-    shouldShowInfo ? firstMatch : null
+    firstMatch
   );
   
   lastExplanation = finalUitleg || null;
@@ -6577,9 +6577,17 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     updateClosedContainer();
     requestAnimationFrame(() => {
     if (thresholdOverlay) {
-      const uitleg = 
-        thresholdOverlay.uitleg?.normal ||
-        thresholdOverlay.uitleg?.threshold;
+      const hasThreshold = !!thresholdOverlay.uitleg?.threshold;
+      const hasNormal = !!thresholdOverlay.uitleg?.normal;
+      let uitleg = null;
+      if (hasThreshold && hasNormal) {
+        uitleg = thresholdOverlay.uitleg.normal;
+      } 
+      else {
+        uitleg =
+          thresholdOverlay.uitleg?.normal ||
+          thresholdOverlay.uitleg?.threshold;
+      }
         if (uitleg) {
           showInfoOverlay(
             uitleg.titel,
