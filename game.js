@@ -6323,12 +6323,14 @@ function checkCombination() {
   const versText = firstMatch.vers || null;
 
   // SPECIAL THRESHOLD ELEMENT?
-  const isSpecialThreshold = firstMatch.uitleg?.threshold && firstMatch.uitleg?.normal;
+  const hasThreshold = !!firstMatch.uitleg?.threshold;
+  const hasNormal = !!firstMatch.uitleg?.normal;
+  const shouldShowInfo = !(hasThreshold && hasNormal);  
   
   renderNewElements(
     newElements,
     versText,
-    isSpecialThreshold ? firstMatch : null
+    shouldShowInfo ? firstMatch : null
   );
   
   lastExplanation = finalUitleg || null;
@@ -6488,8 +6490,10 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     renderClosed();
     updateClosedContainer();
     requestAnimationFrame(() => {
-      if (thresholdOverlay) {
-        const uitleg = thresholdOverlay.uitleg?.normal;
+    if (thresholdOverlay) {
+      const uitleg = 
+        thresholdOverlay.uitleg?.normal ||
+        thresholdOverlay.uitleg?.threshold;
         if (uitleg) {
           showInfoOverlay(
             uitleg.titel,
