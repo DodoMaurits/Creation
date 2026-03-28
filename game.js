@@ -1869,7 +1869,8 @@ const combinaties = [
       ["Oersynapsiden", "Radioactiviteit"], ["Oersynapsiden", "Gif"],
       ["Oeranapsiden", "Radioactiviteit"], ["Oeranapsiden", "Gif"],
       ["Oerdiapsiden", "Radioactiviteit"], ["Oerdiapsiden", "Gif"],
-      ["Schildpadden", "Radioactiviteit"], ["Schildpadden", "Gif"]
+      ["Schildpadden", "Radioactiviteit"], ["Schildpadden", "Gif"],
+      ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -1965,7 +1966,7 @@ const combinaties = [
       ["Coelacanthen", "Lava"], ["Tiktaalik", "Lava"], ["Longvissen", "Lava"], ["Oerchondrostei", "Lava"],
       ["Wimpelalen", "Lava"], ["Oerneopterygen", "Lava"], ["Oertetrapoden", "Lava"], ["Salamanders", "Lava"],
       ["Kikkers", "Lava"], ["Padden", "Lava"], ["Oersynapsiden", "Lava"], ["Oeranapsiden", "Lava"],
-      ["Oerdiapsiden", "Lava"], ["Schildpadden", "Lava"]
+      ["Oerdiapsiden", "Lava"], ["Schildpadden", "Lava"], ["Zeeschildpadden", "Lava"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2035,7 +2036,7 @@ const combinaties = [
       ["Coelacanthen", "Dood"], ["Tiktaalik", "Dood"], ["Longvissen", "Dood"], ["Oerchondrostei", "Dood"], 
       ["Wimpelalen", "Dood"], ["Oerneopterygen", "Dood"], ["Oertetrapoden", "Dood"], ["Salamanders", "Dood"], 
       ["Kikkers", "Dood"], ["Padden", "Dood"], ["Oersynapsiden", "Dood"], ["Oeranapsiden", "Dood"], 
-      ["Oerdiapsiden", "Dood"], ["Schildpadden", "Dood"]
+      ["Oerdiapsiden", "Dood"], ["Schildpadden", "Dood"], ["Zeeschildpadden", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2952,7 +2953,8 @@ const combinaties = [
       ["Holocefalen", "Zenuwen"], ["Wimpelalen", "Zenuwen"], ["Oerneopterygen", "Zenuwen"], ["Kevers", "Zenuwen"],
       ["Muggen", "Zenuwen"], ["Vliegen", "Zenuwen"], ["Vlinders", "Zenuwen"], ["Oertetrapoden", "Zenuwen"],
       ["Salamanders", "Zenuwen"], ["Kikkers", "Zenuwen"], ["Padden", "Zenuwen"], ["Oersynapsiden", "Zenuwen"],
-      ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Sprinkhanen", "Zenuwen"], ["Schildpadden", "Zenuwen"]
+      ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Sprinkhanen", "Zenuwen"], ["Schildpadden", "Zenuwen"],
+      ["Zeeschildpadden", "Zenuwen"]
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
     output: [
@@ -3521,7 +3523,8 @@ const combinaties = [
       ["Oersynapsiden", "Storm"], ["Oersynapsiden", "Orkaan"], ["Oersynapsiden", "Pijn"],
       ["Oeranapsiden", "Storm"], ["Oeranapsiden", "Orkaan"], ["Oeranapsiden", "Pijn"],
       ["Oerdiapsiden", "Storm"], ["Oerdiapsiden", "Orkaan"], ["Oerdiapsiden", "Pijn"],
-      ["Schildpadden", "Storm"], ["Schildpadden", "Orkaan"], ["Schildpadden", "Pijn"]
+      ["Schildpadden", "Storm"], ["Schildpadden", "Orkaan"], ["Schildpadden", "Pijn"],
+      ["Zeeschildpadden", "Storm"], ["Zeeschildpadden", "Orkaan"], ["Zeeschildpadden", "Pijn"]
     ],
     hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
     output: [
@@ -3694,7 +3697,9 @@ const combinaties = [
       ["Oerdiapsiden", "Bacteriën"], ["Oerdiapsiden", "Virus"], ["Oerdiapsiden", "Schimmel"], 
       ["Oerdiapsiden", "Parasieten"],
       ["Schildpadden", "Bacteriën"], ["Schildpadden", "Virus"], ["Schildpadden", "Schimmel"], 
-      ["Schildpadden", "Parasieten"]
+      ["Schildpadden", "Parasieten"],
+      ["Zeeschildpadden", "Bacteriën"], ["Zeeschildpadden", "Virus"], ["Zeeschildpadden", "Schimmel"], 
+      ["Zeeschildpadden", "Parasieten"]
     ],
     hint: `Niet ziek willen worden, daar kan het bewustzijn ook bij helpen.`, 
     output: [
@@ -3720,7 +3725,7 @@ const combinaties = [
       ["Oertetrapoden", "Oertetrapoden"], ["Salamanders", "Salamanders"], ["Kikkers", "Kikkers"], ["Padden", "Padden"],
       ["Oersynapsiden", "Oersynapsiden"], ["Oeranapsiden", "Oeranapsiden"], ["Oerdiapsiden", "Oerdiapsiden"],
       ["Krekels", "Krekels"], ["Sprinkhanen", "Sprinkhanen"], ["Wandelende takken", "Wandelende takken"], 
-      ["Kakkerlakken", "Kakkerlakken"], ["Schildpadden", "Schildpadden"]
+      ["Kakkerlakken", "Kakkerlakken"], ["Schildpadden", "Schildpadden"], ["Zeeschildpadden", "Zeeschildpadden"]
     ],
     hint: `Hm.. dieren van dezelfde soorten kunnen behoorlijk anders op elkaar reageren.`, 
     output: [
@@ -4057,7 +4062,8 @@ const combinaties = [
       ["Oersynapsiden", "Licht"], ["Oersynapsiden", "Kleur"],
       ["Oeranapsiden", "Licht"], ["Oeranapsiden", "Kleur"],
       ["Oerdiapsiden", "Licht"], ["Oerdiapsiden", "Kleur"],
-      ["Schildpadden", "Licht"], ["Schildpadden", "Kleur"]
+      ["Schildpadden", "Licht"], ["Schildpadden", "Kleur"],
+      ["Zeeschildpadden", "Licht"], ["Zeeschildpadden", "Kleur"]
     ],
     hint: `De slimste dieren zullen je met de speling van het licht verbazen.`,
     output: [
@@ -4929,7 +4935,8 @@ const combinaties = [
       ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Tiktaalik"], ["Haaien", "Longvissen"], 
       ["Haaien", "Holocefalen"], ["Haaien", "Oerchondrostei"], ["Haaien", "Wimpelalen"], ["Haaien", "Oerneopterygen"], 
       ["Haaien", "Oertetrapoden"], ["Haaien", "Salamanders"], ["Haaien", "Kikkers"], ["Haaien", "Padden"], 
-      ["Haaien", "Oersynapsiden"], ["Haaien", "Oeranapsiden"], ["Haaien", "Oerdiapsiden"], ["Haaien", "Schildpadden"]
+      ["Haaien", "Oersynapsiden"], ["Haaien", "Oeranapsiden"], ["Haaien", "Oerdiapsiden"], ["Haaien", "Schildpadden"],
+      ["Haaien", "Zeeschildpadden"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -5984,6 +5991,33 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Schildpadden", "Detritus"], ["Schildpadden", "Rode algen"], ["Schildpadden", "Groene algen"], 
+      ["Schildpadden", "Roodwieren"], ["Schildpadden", "Groenwieren"], ["Schildpadden", "Wormen"], 
+      ["Schildpadden", "Mos"], ["Schildpadden", "Duizendpoten"], ["Schildpadden", "Oerinsecten"], 
+      ["Schildpadden", "Spinnen"], ["Schildpadden", "Oervaatplanten"], ["Schildpadden", "Pissebedden"],
+      ["Schildpadden", "Blad"], ["Schildpadden", "Varens"], ["Schildpadden", "Oerzaadplanten"],
+      ["Schildpadden", "Kevers"], ["Schildpadden", "Muggen"], ["Schildpadden", "Vliegen"], ["Schilpadden", "Vlinders"],
+      ["Schildpadden", "Krekels"], ["Schildpadden", "Sprinkhanen"], ["Schildpadden", "Wandelende takken"],
+      ["Schildpadden", "Kakkerlakken"], ["Schildpadden", "Termieten"]
+    ],
+    output: [
+      { naam: "Schildpadden", icoon: "icons/Schildpadden.png", map: "Reptielen", 
+        quote: `Slow but steady wins the race
+        <br><br>- Aesopos`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Termieten", "Aarde"],
     hint: `Termieten zijn kunstzinnige beestjes, kijk maar wat ze kunnen met simpele grond.`,
     output: [
@@ -6013,6 +6047,58 @@ const combinaties = [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
         quote: `Try to be like the turtle - at ease in your own shell
         <br><br>- Bill Copeland`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeschildpadden", "Detritus"], ["Zeeschildpadden", "Sponzen"], ["Zeeschildpadden", "Rode algen"], 
+      ["Zeeschildpadden", "Groene algen"], ["Zeeschildpadden", "Roodwieren"], ["Zeeschildpadden", "Groenwieren"], 
+      ["Zeeschildpadden", "Kwallen"], ["Zeeschildpadden", "Zeeanemonen"], ["Zeeschildpadden", "Oertrochozoa"], 
+      ["Zeeschildpadden", "Wormen"], ["Zeeschildpadden", "Zeesterren"], ["Zeeschildpadden", "Oergeleedpotigen"], 
+      ["Zeeschildpadden", "Manteldieren"], ["Zeeschildpadden", "Mos"], ["Zeeschildpadden", "Trilobieten"], 
+      ["Zeeschildpadden", "Oercheliceraten"], ["Zeeschildpadden", "Oerkreeftjes"], ["Zeeschildpadden", "Oerinsecten"], 
+      ["Zeeschildpadden", "Zwaardstaarten"], ["Zeeschildpadden", "Krill"], ["Zeeschildpadden", "Oervaatplanten"], 
+      ["Zeeschildpadden", "Garnalen"], ["Zeeschildpadden", "Kreeften"], ["Zeeschildpadden", "Krabben"], 
+      ["Zeeschildpadden", "Blad"], ["Zeeschildpadden", "Varens"], ["Zeeschildpadden", "Oerzaadplanten"]
+    ],
+    output: [
+      { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
+        quote: `Try to be like the turtle - at ease in your own shell
+        <br><br>- Bill Copeland`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
+        quote: `Try to be like the turtle - at ease in your own shell
+        <br><br>- Bill Copeland`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
