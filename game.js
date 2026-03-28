@@ -6498,6 +6498,9 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
 
+  const hasThreshold = !!thresholdOverlay?.uitleg?.threshold;
+  const hasNormal = !!thresholdOverlay?.uitleg?.normal;
+
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
 
@@ -6561,12 +6564,51 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   flash.className = "godlike-flash";
   overlay.appendChild(flash);
 
+  // ✅ CASE 1: alleen normal → info-button tonen
+  if (!hasThreshold && hasNormal) {
+    const uitleg = thresholdOverlay.uitleg.normal;
+  
+    const infoBtn = document.createElement("div");
+    infoBtn.className = "info-button";
+    infoBtn.textContent = "i";
+  
+    const popup = document.createElement("div");
+    popup.className = "info-popup";
+  
+    const box = document.createElement("div");
+    box.className = "info-popup-box";
+  
+    const title = document.createElement("div");
+    title.className = "info-popup-title";
+    title.innerHTML = uitleg.titel;
+  
+    const text = document.createElement("div");
+    text.className = "info-popup-text";
+    text.innerHTML = uitleg.tekst;
+  
+    box.appendChild(title);
+    box.appendChild(text);
+    popup.appendChild(box);
+  
+    overlay.appendChild(infoBtn);
+    overlay.appendChild(popup);
+  }
+
   document.body.appendChild(overlay);
   requestAnimationFrame(() => overlay.classList.add("visible"));
 
   flash.addEventListener("animationend", () => flash.remove());
 
-  overlay.onclick = () => {
+  overlay.addEventListener("click", (e) => {
+    // ❌ klik op info-button of popup → NIET sluiten
+    if (
+      e.target.closest(".info-button") ||
+      e.target.closest(".info-popup") ||
+      e.target.closest(".info-popup-box")
+    ) {
+      return;
+    }
+  
     overlay.remove();
   
     openLeft = null;
@@ -6575,19 +6617,12 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
+  
     requestAnimationFrame(() => {
-    if (thresholdOverlay) {
-      const hasThreshold = !!thresholdOverlay.uitleg?.threshold;
-      const hasNormal = !!thresholdOverlay.uitleg?.normal;
-      let uitleg = null;
+      // ✅ CASE 2: threshold + normal
       if (hasThreshold && hasNormal) {
-        uitleg = thresholdOverlay.uitleg.normal;
-      } 
-      else {
-        uitleg =
-          thresholdOverlay.uitleg?.normal ||
-          thresholdOverlay.uitleg?.threshold;
-      }
+        const uitleg = thresholdOverlay.uitleg.normal;
+  
         if (uitleg) {
           showInfoOverlay(
             uitleg.titel,
@@ -6597,7 +6632,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
         }
       }
     });
-  };
+  });
 }
 
 // ----- ERROR SHAKE FUNCTION -----
