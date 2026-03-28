@@ -3188,8 +3188,7 @@ const combinaties = [
         requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
           "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
           "Dood", "Stromatolieten", "Fotosynthese", "Amoeben", "Foraminiferen", "Stralendiertjes", 
-          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Rif", 
-          "Brein", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
+          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Rif", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
       },
       normal: {
         achtergrond: "afb/cambrischeexplosie.png",
@@ -4366,8 +4365,16 @@ const combinaties = [
           "Oog", "Smaak", "Kleur", "Tand", "Mos"]
       },
       normal: {
-        titel: "Siluur",
-        tekst: `Tijd om het land te verkennen...`,
+        achtergrond: "afb/siluur.png",
+        titel: "SILUUR 444-419 MA",
+        tekst: `
+        <span>Een plotselinge ijstijd leidde tot minder ondiepe zeeën. Veel habitats gingen verloren en ecosystemen stortten
+        in. De oudst bekende massa-extinctie vond plaats en trof aldus het mariene leven, aangezien vrijwel al het leven
+        zich nog onder water bevond. Naar schatting verdween circa 60-85 procent van alle mariene soorten, waaronder veel
+        trilobieten en koralen.</span>
+        <br><br>
+        
+        `,
       }
     }
   },
