@@ -5159,6 +5159,7 @@ const combinaties = [
           "Wimpelalen", "Oerneopterygen", "Bruinkool"]
       },
       normal: {
+        achtergrond: "afb/carboon.png",
         titel: "Carboon",
         tekst: `Tijd om met zaadjes en eieren verder het droge op te gaan...`,
       }
@@ -5844,6 +5845,7 @@ const combinaties = [
         requirements: ["Vlinders", "Ei", "Steenkool", "Tropisch regenwoud"]
       },
       normal: {
+        achtergrond: "afb/perm.png",
         titel: "Perm",
         tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
       }
