@@ -3192,6 +3192,7 @@ const combinaties = [
           "Brein", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
       },
       normal: {
+        achtergrond: "afb/cambrischeexplosie.png",
         titel: "Cambrische Explosie",
         tekst: `De Cambriscche explosie...`,
       }
