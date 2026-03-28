@@ -5160,7 +5160,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/carboon.png",
-        titel: "Carboon",
+        titel: "CARBOON 359-299 MA",
         tekst: `Tijd om met zaadjes en eieren verder het droge op te gaan...`,
       }
     }
@@ -5846,7 +5846,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/perm.png",
-        titel: "Perm",
+        titel: "PERM 299-252 MA",
         tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
       }
     }
