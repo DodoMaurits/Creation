@@ -6826,15 +6826,6 @@ function renderClosed() {
   } else {
     cols = Math.ceil(Math.sqrt(totalMaps));
   }
-  
-  grid.style.setProperty("--cols", cols);
-  grid.style.justifyItems = "center";
-  grid.style.gap = elements.length > 8 ? "20px" : "30px";
-  
-  grid.style.display = "grid";
-  grid.style.gridTemplateColumns = `repeat(${cols}, 100px)`; // breedte van een icoon
-  grid.style.justifyContent = "center";
-  grid.style.gap = totalMaps > 8 ? "20px" : "30px";
 
   mappen.forEach(map => {
     const container = document.createElement("div");
