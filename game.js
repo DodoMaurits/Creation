@@ -4373,8 +4373,23 @@ const combinaties = [
         zich nog onder water bevond. Naar schatting verdween circa 60-85 procent van alle mariene soorten, waaronder veel
         trilobieten en koralen.</span>
         <br><br>
-        
-        `,
+        <span>De periode na de eerste massa-extinctie werd omgedoopt tot Siluur. Het mariene leven herstelde zich in een 
+        warm klimaat met hoge zeespiegel, waarin koralen zich opnieuw goed konden gedijen en grote koraalriffen vormen. De
+        pas geëvolueerde kaakvissen met een deels verbeend skelet floreerden in deze periode, waarbij sommige exemplaren
+        tot wel een meter groot konden groeien. Zeeschorpioenen daarentegen bereikten resuachtige proporties van meerdere 
+        meters lang.</span>
+        <br><br>
+        <span>Het Siluur was ook een cruciale periode in de overgang naar het landleven, nu sommige steenwortelalgen zich
+        naast mos ook evolueerden tot de eerste landplanten met bladeren en vaatstelsels. Na 3 miljard jaar in het water
+        te hebben geleefd, moest op land naar nieuwe manieren worden gezocht om zowel te beschermen tegen droogte - middels
+        een dikke beschermlaag - als CO2 of zuurstof op te kunnen nemen. Bladeren boden hiervoor een oplossing dankzij 
+        kleine huidmondjes (poriën) die CO2 binnenlaten en water reguleren.</span>
+        <br><br>
+        <span>Voor grotere planten was ook de zwaartekracht een uitdaging. Nieuwe evolutionaire aanpassingen met stengels
+        of hout en een pompend vaatstelsel waren cruciaal om voedingsstoffen en water tegen de zwaartekracht in naar alle
+        delen van het lichaam te transporteren. Tot slot leefden ook de eerste dieren op land bestaande uit eenvoudige
+        geleedpotige, zoals schorpioenen en voorlopers van de mijten en duizendpoten, die tijdelijk konden overleven op land,
+        maar altijd dichtbij de ondiepe zeeën of brakwater bleven.</span>`,
       }
     }
   },
@@ -5161,7 +5176,25 @@ const combinaties = [
       normal: {
         achtergrond: "afb/carboon.png",
         titel: "CARBOON 359-299 MA",
-        tekst: `Tijd om met zaadjes en eieren verder het droge op te gaan...`,
+        tekst: `
+        <span>De eerste uitgestrekte, dichtbegroeide bossen van varens en vroege zaadplanten in de laaggelegen 
+        moerasgebieden die nu delen van Europa en Noord-Amerika beslaan, groeiden enorm in aantallen en produceerden zo 
+        enorme hoeveelheden organisch materiaal. Omdat er nog geen micro-organismen of schimmels waren die hars en lignine 
+        efficiënt konden afbreken, werden veel plantenresten behouden in veen, dat in de loop van miljoenen jaren door 
+        sedimentatie en druk werd omgezet in steenkool - vandaar de naam van deze periode.</span>
+        <br><br>
+        <span>Ongeveer 90 procent van de huidige steenkoollagen stamt uit de latere periode van 330-260 miljoen jaar 
+        geleden. Het Carboon werd gekenmerkt door rijke zoetwater- en mariene ecosystemen. Zoet water werd gedomineerd door
+        mollusken, schorpioenen en grote kraakbeenvissen, terwijl de oceanen complexe riffen en stekelhuidigen huisvestten. 
+        In de lucht en op het land verschenen reusachtige geleedpotigen, zoals de libelachtige meganeura met een 
+        spanwijdte tot 70 centimer, maar ook de eerste spinnen, duizendpoten en landslakken.</span>
+        <br><br>
+        <span>De uitgestrekte bossen hadden ook gevolgen voor het klimaat en de geochemie van de Aarde. Planten verdubbelden
+        mogelijk de fotosynthesesnelheid, waardoor het totale energiebudget van de biosfeer toenam en dus meer organismen 
+        konden worden ondersteund. Door wortel- en bladwerking versnelden ze de verwering van gesteenten, waardoor koolstof
+        uit de atmosfeer gemakkelijker werd gebodnen en begraven in bodems en sedimenten. Dit leidde tot een stijging van 
+        zuurstofniveaus in de atmosfeer tot circa 30-35 procent, wat op zijn beurt nieuwe chemische reacties in de 
+        aardkorst mogelijk maakte en bijdroeg aan de vorming van veel van de mineralen die we vandaag kennen.</span>`,
       }
     }
   },
@@ -5847,7 +5880,12 @@ const combinaties = [
       normal: {
         achtergrond: "afb/perm.png",
         titel: "PERM 299-252 MA",
-        tekst: `Tijd om voor de grotere dieren het droge te verkennen...`,
+        tekst: `
+        <span>Het supercontinent Pangea werd voltooid en resulteerde in een overwegend continentaal en droger klimaat met
+        uitgestrekte woestijnen en seizoensgebonden moerassen. In deze omstandigheden diversifieerde de landdieren de 
+        landdieren zich sterk. Binnen de sauropsiden werden de reptielen dominant en breidden izch uit naar uiteenlopende
+        niches. Tegelijkertijd vertakten de synapsiden als voorlopers van de zoogdieren van kleine nisecteneters tot grote
+        roofdieren.</span>`,
       }
     }
   },
