@@ -5929,7 +5929,7 @@ const combinaties = [
     ],
     uitleg: {
       thresholdElement: {
-        naam: "Binnenkort", 
+        naam: "Oercynodonten", 
         titel: "Probeer opnieuw in het Perm",
         tekst: `Eerst moeten grotere dieren zich over het land verspreiden.`
       }
