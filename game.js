@@ -245,8 +245,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Ster", "Gas"],
-      ["Ster", "IJzer"]
+      ["Ster", "Gas"], ["Ster", "IJzer"]
     ],
     hint: `Kijk hoe het blijft hangen in een baan rond haar ster...`,
     output: [
@@ -5870,7 +5869,6 @@ const combinaties = [
       }
     ]
   },
-
 //------------ THRESHOLD 6: PERM --------------//
   {
     input: ["Oersynapsiden", "Evolutie"],
@@ -6073,7 +6071,7 @@ const combinaties = [
       ["Schildpadden", "Mos"], ["Schildpadden", "Duizendpoten"], ["Schildpadden", "Oerinsecten"], 
       ["Schildpadden", "Spinnen"], ["Schildpadden", "Oervaatplanten"], ["Schildpadden", "Pissebedden"],
       ["Schildpadden", "Blad"], ["Schildpadden", "Varens"], ["Schildpadden", "Oerzaadplanten"],
-      ["Schildpadden", "Kevers"], ["Schildpadden", "Muggen"], ["Schildpadden", "Vliegen"], ["Schilpadden", "Vlinders"],
+      ["Schildpadden", "Kevers"], ["Schildpadden", "Muggen"], ["Schildpadden", "Vliegen"], ["Schildpadden", "Vlinders"],
       ["Schildpadden", "Krekels"], ["Schildpadden", "Sprinkhanen"], ["Schildpadden", "Wandelende takken"],
       ["Schildpadden", "Kakkerlakken"], ["Schildpadden", "Termieten"]
     ],
