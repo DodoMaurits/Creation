@@ -5888,7 +5888,7 @@ const combinaties = [
     hint: `Het is tijd voor zoogdieren.`,
     tijd: 260_000_000,
     output: [
-      { naam: "Haar", icoon: "icons/haar.png", map: "Biologie", 
+      { naam: "Haar", icoon: "icons/Haar.png", map: "Biologie", 
         quote: `And forget not that the earth delights to feel your bare feet and the winds long to play with your hair 
         <br><br>- Khalid Gibran`
       },
