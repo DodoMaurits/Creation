@@ -966,7 +966,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Wolk", "Zwaartekracht"], ["Wolk", "Water"], ["Wolk", "Berg"]
+      ["Wolk", "Kou"], ["Wolk", "Zwaartekracht"], ["Wolk", "Water"], ["Wolk", "Berg"],
+      ["Damp", "Kou"], ["Damp", "Zwaartekracht"], ["Damp", "Water"]
     ],
     hint: `Laat de wolken niet neerdalen, wie weet wat er dan gebeurt.`,
     output: [
@@ -990,7 +991,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Wolk", "Wolk"], ["Wind", "Wolk"], ["Wind", "Wind"]
+      ["Wolk", "Wolk"], ["Wind", "Wolk"], ["Wind", "Wind"], ["Regen", "Wind"]
     ],
     hint: `Wanneer de wolken samenkomen, barst het los.`,
     output: [
@@ -1289,7 +1290,9 @@ const combinaties = [
     ]
   }, 
   {
-    input: ["Wind", "Storm"],
+    input: [
+      ["Wind", "Storm"], ["Storm", "Storm"], ["Storm", "Regen"]
+    ],
     hint: `Het mag ook megalomaner: meer storm, meer wind...`,
     output: [
       { naam: "Orkaan", icoon: "icons/Orkaan.png", map: "Lucht", 
