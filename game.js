@@ -880,7 +880,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Damp", "Zwaartekracht"],
+    input: [
+      ["Damp", "Zwaartekracht"], ["Damp", "De Aarde"], ["Damp", "Planeet"], ["Damp", "Water"]
+    ],
     hint: `Dampen pakken zich samen in nieuwe formaties...`,
     output: [
       { naam: "Wolk", icoon: "icons/Wolk.png", map: "Lucht", 
@@ -891,9 +893,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Damp", "Planeet"], ["Damp", "De Aarde"], ["Wolk", "De Aarde"]
+      ["Wolk", "De Aarde"], ["Wolk", "Planeet"]
     ],
-    hint: `Wolken van damp kringelen rond... het is tijd om de planeten lucht te geven.`,
+    hint: `Wolken kringelen rond... het is tijd om de planeten lucht te geven.`,
     vers: `En Wij maakten van de hemel een beschermend dak, maar zij wenden zich af van haar signalen 
     <br><br>De Profeten (21:32)`,
     output: [
@@ -973,8 +975,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Wolk", "Kou"], ["Wolk", "Zwaartekracht"], ["Wolk", "Water"], ["Wolk", "Berg"],
-      ["Damp", "Kou"], ["Damp", "Zwaartekracht"], ["Damp", "Water"]
+      ["Wolk", "Kou"], ["Wolk", "Zwaartekracht"], ["Wolk", "Water"], ["Wolk", "Berg"]
     ],
     hint: `Laat de wolken niet neerdalen, wie weet wat er dan gebeurt.`,
     output: [
