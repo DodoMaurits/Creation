@@ -609,10 +609,6 @@ const combinaties = [
   {
     input: ["Vulkaan", "Gas"],
     output: [
-      { naam: "Damp", icoon: "icons/Damp.png", map: "Lucht", 
-        quote: `Enthusiasm is the steam that drives the engine
-        <br><br>- Napoleon Hill`
-      },
       { naam: "Rook", icoon: "icons/Rook.png", map: "Lucht", 
         quote: `Surely where there's smoke there's fire? No, where there's so much smoke there's smoke
         <br><br>- John Wheeler`
