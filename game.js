@@ -4376,7 +4376,7 @@ const combinaties = [
           "Oog", "Smaak", "Kleur", "Tand", "Mos"]
       },
       normal: {
-        achtergrond: "afb/siluur.png",
+        achtergrond: "afb/siluur.jpg",
         titel: "SILUUR 444-419 MA",
         tekst: `
         <span>Een plotselinge ijstijd leidde tot minder ondiepe zeeën. Veel habitats gingen verloren en ecosystemen stortten
@@ -5185,7 +5185,7 @@ const combinaties = [
           "Wimpelalen", "Oerneopterygen", "Bruinkool"]
       },
       normal: {
-        achtergrond: "afb/carboon.png",
+        achtergrond: "afb/carboon.jpg",
         titel: "CARBOON 359-299 MA",
         tekst: `
         <span>De eerste uitgestrekte, dichtbegroeide bossen van varens en vroege zaadplanten in de laaggelegen 
