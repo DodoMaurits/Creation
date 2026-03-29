@@ -5877,9 +5877,10 @@ const combinaties = [
     hint: `Het is tijd voor zoogdieren.`,
     tijd: 299_000_000,
     output: [
-      { naam: "Binnenkort", icoon: "icons/.png", map: "Reptielen", 
-        quote: `
-        <br><br>- `
+      { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
+        quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
+        making them the most intimate companions of humans
+        <br><br>- Richard Dawkins`
       },
     ],
     uitleg: {
@@ -6217,7 +6218,8 @@ const groepsIconen = {
   "Klein landleven": "icons/Klein landleven.png",
   "Vruchten": "icons/Vruchten.png",
   "Reptielen": "icons/Reptielen.png",
-  "Samenleving": "icons/Samenleving.png"
+  "Samenleving": "icons/Samenleving.png",
+  "Zoogdieren": "icons/Zoogdieren.png"
 };
 
 // ----- STATE -----
