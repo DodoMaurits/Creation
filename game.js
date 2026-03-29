@@ -869,6 +869,18 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Damp", "Kou"], ["Damp", "Damp"]
+    ],
+    hint: `Nog iets meer damp en ik zie geen hand voor ogen.`,
+    output: [
+      { naam: "Mist", icoon: "icons/Mist.png", map: "Lucht", 
+        quote: `In nature, everything has a job. The job of the fog is to beautify further the existing beauties
+        <br><br>- Mehmet Hdan`
+      }
+    ]
+  },
+  {
     input: ["Damp", "Zwaartekracht"],
     hint: `Dampen pakken zich samen in nieuwe formaties...`,
     output: [
