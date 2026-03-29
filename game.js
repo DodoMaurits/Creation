@@ -4150,6 +4150,19 @@ const combinaties = [
   },
   {
     input: [
+      ["Zeeslakken", "Zand"], ["Zeeslakken", "Klei"], ["Zeeslakken", "Kust"], ["Zeeslakken", "Strand"], 
+      ["Zeeslakken", "Eiland"], ["Zeeslakken", "Zuurstof"], ["Zeeslakken", "Aarde"]
+    ],
+    hint: `Zo'n schelp zal vast ook van pas komen als je het land op wilt.`,
+    output: [
+      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Klein landleven", 
+        quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
+        <br><br>- Frank Wright`
+      }
+    ]
+  },
+  {
+    input: [
       ["Tweekleppigen", "Zand"], ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Blauwalgen"], 
       ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"]
     ],
