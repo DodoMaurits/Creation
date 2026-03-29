@@ -726,7 +726,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Water", 
         titel: "Te vroeg",
-        tekst: `Probeer opnieuw als de Aarde wat meer is afgekoeld...`
+        tekst: `Probeer opnieuw als de Aarde wat meer is afgekoeld...
+        <br><br>Eerst nodig: water.`
       }
     }
   },
@@ -3343,7 +3344,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Wormen", 
         titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...`
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
+        <br><br>Eerst nodig: wormen.`
       }
     }
   },
@@ -3503,7 +3505,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Wormen", 
         titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...`
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
+        <br><br>Eerst nodig: wormen.`
       }
     }
   },
@@ -3520,7 +3523,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Wormen", 
         titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...`
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
+        <br><br>Eerst nodig: wormen.`
       }
     }
   },
@@ -4427,7 +4431,8 @@ const combinaties = [
         naam: "Oervaatplanten", 
         titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.`
+        gezet kan worden.
+        <br><br>Eerst nodig: oervaatplanten.`
       }
     }
   },
@@ -4508,7 +4513,8 @@ const combinaties = [
         naam: "Oervaatplanten", 
         titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.`
+        gezet kan worden.
+        <br><br>Eerst nodig: oervaatplanten.`
       }
     }
   },
@@ -4737,7 +4743,8 @@ const combinaties = [
         naam: "Oervaatplanten", 
         titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.`
+        gezet kan worden
+        <br><br>Eerst nodig: oervaatplanten.`
       }
     }
   },
@@ -4913,7 +4920,8 @@ const combinaties = [
         naam: "Oervaatplanten", 
         titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.`
+        gezet kan worden
+        <br><br>Eerst nodig: oervaatplanten.`
       }
     }
   },
@@ -5223,7 +5231,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Oerzaadplanten", 
         titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
+        <br><br>Eerst nodig: eerste zaadplanten.`
       }
     }
   },
@@ -5323,7 +5332,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Oerzaadplanten", 
         titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
+        <br><br>Eerst nodig: eerste zaadplanten.`
       }
     }
   },
@@ -5503,7 +5513,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Oerzaadplanten", 
         titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
+        <br><br>Eerst nodig: eerste zaadplanten.`
       }
     }
   },
@@ -5599,7 +5610,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Oerzaadplanten", 
         titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.`
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
+        <br><br>Eerst nodig: eerste zaadplanten.`
       }
     }
   },
@@ -5935,7 +5947,8 @@ const combinaties = [
       thresholdElement: {
         naam: "Oercynodonten", 
         titel: "Probeer opnieuw in het Perm",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.`
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
+        <br><br>Eerst nodig: eerste zoogdieren.`
       }
     }
   },
