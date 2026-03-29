@@ -5881,7 +5881,7 @@ const combinaties = [
         quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
         making them the most intimate companions of humans
         <br><br>- Richard Dawkins`
-      },
+      }
     ],
     uitleg: {
       threshold: {
@@ -6818,7 +6818,17 @@ function renderClosed() {
 
   const grid = document.createElement("div");
   grid.className = "grid-closed";
-
+  
+  // Dynamische kolommen afhankelijk van aantal maps
+  const totalMaps = mappen.length;
+  if (totalMaps <= 20) {
+    cols = 4;
+  } else if (totalMaps <= 100) { 
+    cols = 5;
+  } else {
+    cols = Math.ceil(Math.sqrt(totalMaps));
+  }
+  
   grid.style.setProperty("--cols", cols);
   grid.style.justifyItems = "center";
   grid.style.gap = elements.length > 8 ? "20px" : "30px";
