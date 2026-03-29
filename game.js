@@ -5875,7 +5875,7 @@ const combinaties = [
   {
     input: ["Oersynapsiden", "Evolutie"],
     hint: `Het is tijd voor zoogdieren.`,
-    tijd: 299_000_000,
+    tijd: 260_000_000,
     output: [
       { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
         quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
@@ -6818,6 +6818,26 @@ function renderClosed() {
 
   const grid = document.createElement("div");
   grid.className = "grid-closed";
+
+  // Dynamische kolommen afhankelijk van aantal maps
+  const totalMaps = mappen.length;
+  
+  if (totalMaps <= 20) {
+    cols = 4;
+  } else if (totalMaps <= 100) { 
+    cols = 5;
+  } else {
+    cols = Math.ceil(Math.sqrt(totalMaps));
+  }
+
+  grid.style.setProperty("--cols", cols);
+  grid.style.justifyItems = "center";
+  grid.style.gap = elements.length > 8 ? "20px" : "30px";
+  
+  grid.style.display = "grid";
+  grid.style.gridTemplateColumns = `repeat(${cols}, 100px)`; // breedte van een icoon
+  grid.style.justifyContent = "center";
+  grid.style.gap = totalMaps > 8 ? "20px" : "30px";
 
   mappen.forEach(map => {
     const container = document.createElement("div");
