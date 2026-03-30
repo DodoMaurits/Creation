@@ -6935,6 +6935,7 @@ function updateClosedContainer() {
 
 // ----- OPEN MAP -----
 function openMap(map, clickedImg) {
+  loadMapOrder(map); 
   let side = null;
   let container;
 
@@ -7054,18 +7055,14 @@ function renderSide(parentContainer, map, side) {
     if (grid !== dragSourceGrid) return;
     if (draggedIndex === null) return;
   
-    const children = [...grid.querySelectorAll(".icon-container")];
-    let newIndex = children.findIndex(child => {
-      const rect = child.getBoundingClientRect();
-      return  e.clientY < rect.top + rect.height / 2;
-    });
-  
+    const children = [...grid.querySelectorAll(".icon-container:not(.placeholder)")];
+    let newIndex = children.indexOf(draggedEl);
     if (newIndex === -1) newIndex = map.elementen.length;
-    if (newIndex > draggedIndex) newIndex--;
   
     // Update array
     const movedItem = map.elementen.splice(draggedIndex, 1)[0];
     map.elementen.splice(newIndex, 0, movedItem);
+    saveMapOrder(map);
   
     // Verplaats het element in DOM
     if (placeholder.parentNode) placeholder.parentNode.insertBefore(draggedEl, placeholder);
@@ -7146,6 +7143,44 @@ function renderSide(parentContainer, map, side) {
     parentContainer.classList.add("visible");
   }, 20);
 }
+
+function saveMapOrder(map) {
+  const order = map.elementen.map(el => el.naam);
+  localStorage.setItem("mapOrder_" + map.naam, JSON.stringify(order));
+}
+
+function loadMapOrder(map) {
+  const saved = localStorage.getItem("mapOrder_" + map.naam);
+  if (!saved) return;
+  const order = JSON.parse(saved);
+  map.elementen.sort((a, b) => order.indexOf(a.naam) - order.indexOf(b.naam));
+}
+
+function updateElementPositions(grid, placeholderIndex) {
+  const children = [...grid.children];
+  children.forEach((child, index) => {
+    if (child.classList.contains("dragging") || child.classList.contains("placeholder")) return;
+    let offset = 0;
+    if (index >= placeholderIndex) offset = 1;
+    child.style.transition = "transform 0.2s ease";
+    child.style.transform = `translateX(${offset * 140}px)`; // 140px is slot-width
+  });
+}
+
+grid.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  if (!draggedEl) return;
+
+  const afterEl = getDragAfterElement(grid, e.clientX, e.clientY);
+  const index = afterEl ? [...grid.children].indexOf(afterEl) : grid.children.length;
+
+  if (placeholder.parentNode !== grid) {
+    grid.appendChild(placeholder);
+  }
+  grid.insertBefore(placeholder, afterEl);
+
+  updateElementPositions(grid, index);
+});
 
 function getDragAfterElement(container, x, y) {
   const elements = [...container.querySelectorAll(".icon-container:not(.dragging)")];
