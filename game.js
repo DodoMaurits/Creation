@@ -7035,67 +7035,38 @@ function renderSide(parentContainer, map, side) {
     grid.style.rowGap = "10px";
   }
 
-  // Slepen
+  // Dragover
   grid.addEventListener("dragover", (e) => {
     e.preventDefault();
-    if (!draggedEl) return;
+    if (!draggedEl || !placeholder) return;
   
-    const children = [...grid.querySelectorAll(".icon-container:not(.dragging):not(.placeholder)")];
-    if (children.length === 0) return;
-  
-    let closest = { offset: Number.POSITIVE_INFINITY, element: null };
-  
-    children.forEach(child => {
-      const rect = child.getBoundingClientRect();
-      const centerX = rect.left + rect.width/2;
-      const centerY = rect.top + rect.height/2;
-      const offset = Math.hypot(e.clientX - centerX, e.clientY - centerY);
-  
-      if (offset < closest.offset) closest = { offset, element: child };
-    });
-  
-    // Nieuw index bepalen
-    const newIndex = closest.element ? children.indexOf(closest.element) : children.length;
-  
-    if (lastPlaceholderIndex !== newIndex) {
-      // Plaats placeholder **altijd in plaats van element**, nooit appendChild willekeurig
-      grid.insertBefore(placeholder, closest.element || null);
-      lastPlaceholderIndex = newIndex;
-  
-      // update DOM transform: alleen elementen links/rechts van placeholder
-      children.forEach((child, idx) => {
-        child.style.transition = "transform 0.2s ease";
-        const offsetX = 0; // of bereken rijen/kolommen op basis van grid
-        child.style.transform = `translateX(${offsetX}px) translateY(0px)`;
-      });
-    }
+    const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
+    // Als afterElement null is → append aan einde
+    grid.insertBefore(placeholder, afterElement || null);
   });
-
+  
+  // Drop
   grid.addEventListener("drop", (e) => {
     e.preventDefault();
-    if (grid !== dragSourceGrid) return;
-    if (draggedIndex === null) return;
+    if (!draggedEl || !dragSourceGrid) return;
   
-    const children = [...grid.querySelectorAll(".icon-container:not(.placeholder)")];
-    let newIndex = children.indexOf(draggedEl);
-    if (newIndex === -1) newIndex = map.elementen.length;
+    let newIndex = Array.from(grid.children).indexOf(placeholder);
+    if (newIndex === -1) newIndex = map.elementen.length; // append aan einde
   
-    // Update array
     const movedItem = map.elementen.splice(draggedIndex, 1)[0];
     map.elementen.splice(newIndex, 0, movedItem);
     saveMapOrder(map);
   
-    // Verplaats het element in DOM
-    if (placeholder.parentNode) placeholder.parentNode.insertBefore(draggedEl, placeholder);
-    placeholder.remove();
+    grid.insertBefore(draggedEl, grid.children[newIndex] || null);
   
     draggedEl.classList.remove("dragging");
+    if (placeholder.parentNode) placeholder.remove();
     draggedEl = null;
     placeholder = null;
     dragSourceGrid = null;
     draggedIndex = null;
   });
-    
+  
   // Maak de elementen
   map.elementen.forEach((el, index) => {
     const elContainer = document.createElement("div");
@@ -7199,7 +7170,7 @@ function updateElementPositionsDebounced(grid, placeholderIndex) {
       child.style.transition = "transform 0.3s ease";
       child.style.transform = `translateX(${offset * 140}px)`;
     });
-  }, 150); // 150ms vertraging → rustig
+  }, 150);
 }
 
 function getDragAfterElement(container, x, y) {
@@ -7208,13 +7179,9 @@ function getDragAfterElement(container, x, y) {
 
   elements.forEach(child => {
     const rect = child.getBoundingClientRect();
-    // center van het element
     const childCenterX = rect.left + rect.width / 2;
     const childCenterY = rect.top + rect.height / 2;
-
     const offset = Math.hypot(x - childCenterX, y - childCenterY);
-
-    // threshold: alleen verplaats placeholder als de cursor echt over >25% van het element zit
     const thresholdX = rect.width * 0.25;
     const thresholdY = rect.height * 0.25;
     if (Math.abs(x - childCenterX) > thresholdX || Math.abs(y - childCenterY) > thresholdY) return;
@@ -7223,7 +7190,6 @@ function getDragAfterElement(container, x, y) {
       closest = { offset, element: child };
     }
   });
-
   return closest.element;
 }
 
