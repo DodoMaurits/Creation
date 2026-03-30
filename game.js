@@ -5807,7 +5807,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oersynapsiden", "Zwaardstaarten"], ["Oersynapsiden", "Oertetrapoden"]
+      ["Oersynapsiden", "Zwaardstaarten"], ["Oersynapsiden", "Oertetrapoden"], ["Oersynapsiden", "Oercynodonten"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -5861,7 +5861,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerdiapsiden", "Zwaardstaarten"], ["Oerdiapsiden", "Oertetrapoden"]
+      ["Oerdiapsiden", "Zwaardstaarten"], ["Oerdiapsiden", "Oertetrapoden"], ["Oerdiapsiden", "Oercynodonten"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -5914,7 +5914,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oeranapsiden", "Zwaardstaarten"], ["Oeranapsiden", "Oertetrapoden"]
+      ["Oeranapsiden", "Zwaardstaarten"], ["Oeranapsiden", "Oertetrapoden"], ["Oeranapsiden", "Oercynodonten"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
