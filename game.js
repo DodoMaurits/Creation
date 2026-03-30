@@ -7036,6 +7036,7 @@ function renderSide(parentContainer, map, side) {
   grid.addEventListener("dragover", (e) => {
     e.preventDefault();
     if (!draggedEl || !placeholder) return;
+    if (dragSourceGrid !== grid) return;
   
     const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
     const newIndex = afterElement
@@ -7050,9 +7051,10 @@ function renderSide(parentContainer, map, side) {
   grid.addEventListener("drop", (e) => {
     e.preventDefault();
     if (!draggedEl || !dragSourceGrid) return;
-  
+    if (dragSourceGrid !== grid) return;
+    
     let newIndex = Array.from(grid.children).indexOf(placeholder);
-    if (newIndex === -1) newIndex = map.elementen.length; // append aan einde
+    if (newIndex === -1) newIndex = map.elementen.length;
   
     const movedItem = map.elementen.splice(draggedIndex, 1)[0];
     map.elementen.splice(newIndex, 0, movedItem);
