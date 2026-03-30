@@ -6269,6 +6269,7 @@ let hintTimer = null;
 let draggedEl = null;
 let placeholder = null;
 let dragSourceGrid = null;
+let dragUpdateTimeout = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -7035,19 +7036,18 @@ function renderSide(parentContainer, map, side) {
   // Slepen
   let isDragging = false;
   grid.addEventListener("dragover", (e) => {
-    if (grid !== dragSourceGrid) return;
     e.preventDefault();
+    if (!draggedEl) return;
   
-    if (!isDragging) {
-      requestAnimationFrame(() => {
-        const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
-        if (!placeholder) return;
-        if (afterElement == null) grid.appendChild(placeholder);
-        else grid.insertBefore(placeholder, afterElement);
-        isDragging = false;
-      });
-      isDragging = true;
+    const afterEl = getDragAfterElement(grid, e.clientX, e.clientY);
+    const index = afterEl ? [...grid.children].indexOf(afterEl) : grid.children.length;
+  
+    if (placeholder.parentNode !== grid) {
+      grid.appendChild(placeholder);
     }
+    grid.insertBefore(placeholder, afterEl);
+  
+    updateElementPositionsDebounced(grid, index);
   });
 
   grid.addEventListener("drop", (e) => {
@@ -7167,20 +7167,19 @@ function updateElementPositions(grid, placeholderIndex) {
   });
 }
 
-grid.addEventListener("dragover", (e) => {
-  e.preventDefault();
-  if (!draggedEl) return;
+function updateElementPositionsDebounced(grid, placeholderIndex) {
+  if (dragUpdateTimeout) clearTimeout(dragUpdateTimeout);
 
-  const afterEl = getDragAfterElement(grid, e.clientX, e.clientY);
-  const index = afterEl ? [...grid.children].indexOf(afterEl) : grid.children.length;
-
-  if (placeholder.parentNode !== grid) {
-    grid.appendChild(placeholder);
-  }
-  grid.insertBefore(placeholder, afterEl);
-
-  updateElementPositions(grid, index);
-});
+  dragUpdateTimeout = setTimeout(() => {
+    const children = [...grid.children];
+    children.forEach((child, index) => {
+      if (child.classList.contains("dragging") || child.classList.contains("placeholder")) return;
+      let offset = index >= placeholderIndex ? 1 : 0;
+      child.style.transition = "transform 0.3s ease";
+      child.style.transform = `translateX(${offset * 140}px)`;
+    });
+  }, 150); // 150ms vertraging → rustig
+}
 
 function getDragAfterElement(container, x, y) {
   const elements = [...container.querySelectorAll(".icon-container:not(.dragging)")];
