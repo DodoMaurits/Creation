@@ -6268,7 +6268,6 @@ let hintVisible = false;
 let hintTimer = null;
 let draggedEl = null;
 let placeholder = null;
-let lastPlaceholderIndex = null;
 let dragHoverTimeout = null;
 let currentHoverElement = null;
 let dragSourceGrid = null;
@@ -7105,8 +7104,6 @@ function renderSide(parentContainer, map, side) {
       placeholder.className = "placeholder";
       placeholder.style.width = elContainer.offsetWidth + "px";
       placeholder.style.height = elContainer.offsetHeight + "px";
-
-      lastPlaceholderIndex = null; 
     
       setTimeout(() => {
         elContainer.classList.add("dragging");
