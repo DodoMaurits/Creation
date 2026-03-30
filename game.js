@@ -7025,6 +7025,28 @@ function renderSide(parentContainer, map, side) {
     grid.style.rowGap = "10px";
   }
 
+  // Slepen
+  let draggedIndex = null;
+  grid.addEventListener("dragover", (e) => {
+    e.preventDefault();
+  });
+
+  grid.addEventListener("drop", (e) => {
+    e.preventDefault();
+    if (draggedIndex === null) return;
+    const afterElement = getDragAfterElement(grid, e.clientY);
+    let newIndex;
+    if (!afterElement) {
+      newIndex = map.elementen.length - 1;
+    } else {
+      const children = [...grid.querySelectorAll(".icon-container")];
+      newIndex = children.indexOf(afterElement);
+    }
+    const movedItem = map.elementen.splice(draggedIndex, 1)[0];
+    map.elementen.splice(newIndex, 0, movedItem);
+    renderSide(parentContainer, map, side);
+  });
+  
   // Maak de elementen
   map.elementen.forEach(el => {
     const elContainer = document.createElement("div");
@@ -7033,12 +7055,22 @@ function renderSide(parentContainer, map, side) {
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "icon element";
+    img.draggable = true;
     if (!isMobile) {
       img.style.width = totalElements > 16 ? "110px" : "130px";
       img.style.height = totalElements > 16 ? "110px" : "130px";
     }
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
+
+    img.addEventListener("dragstart", () => {
+      draggedIndex = index;
+      img.classList.add("dragging");
+    });
+
+    img.addEventListener("dragend", () => {
+      img.classList.remove("dragging");
+    });
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
@@ -7062,6 +7094,21 @@ function renderSide(parentContainer, map, side) {
     parentContainer.style.opacity = 1;
     parentContainer.classList.add("visible");
   }, 20);
+}
+
+function getDragAfterElement(container, y) {
+  const elements = [...container.querySelectorAll(".icon-container:not(.dragging)")];
+
+  return elements.reduce((closest, child) => {
+    const box = child.getBoundingClientRect();
+    const offset = y - box.top - box.height / 2;
+
+    if (offset < 0 && offset > closest.offset) {
+      return { offset, element: child };
+    } else {
+      return closest;
+    }
+  }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
 // ----- HINT ENGINE -----
