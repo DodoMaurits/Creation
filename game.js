@@ -7034,21 +7034,32 @@ function renderSide(parentContainer, map, side) {
   grid.addEventListener("drop", (e) => {
     e.preventDefault();
     if (draggedIndex === null) return;
-    const afterElement = getDragAfterElement(grid, e.clientY);
-    let newIndex;
-    if (!afterElement) {
-      newIndex = map.elementen.length - 1;
-    } else {
-      const children = [...grid.querySelectorAll(".icon-container")];
-      newIndex = children.indexOf(afterElement);
+  
+    const children = [...grid.querySelectorAll(".icon-container")];
+  
+    let newIndex = children.findIndex(child => {
+      const rect = child.getBoundingClientRect();
+      return (
+        e.clientY < rect.top + rect.height / 2 &&
+        e.clientX < rect.left + rect.width
+      );
+    });
+  
+    if (newIndex === -1) newIndex = map.elementen.length;
+  
+    // 🔥 correctie als je naar voren sleept
+    if (newIndex > draggedIndex) {
+      newIndex--;
     }
+  
     const movedItem = map.elementen.splice(draggedIndex, 1)[0];
     map.elementen.splice(newIndex, 0, movedItem);
+  
     renderSide(parentContainer, map, side);
   });
   
   // Maak de elementen
-  map.elementen.forEach(el => {
+  map.elementen.forEach((el, index) => {
     const elContainer = document.createElement("div");
     elContainer.className = "icon-container";
 
