@@ -6268,6 +6268,7 @@ let hintVisible = false;
 let hintTimer = null;
 let draggedEl = null;
 let placeholder = null;
+let dragSourceGrid = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -7033,11 +7034,10 @@ function renderSide(parentContainer, map, side) {
   // Slepen
   let draggedIndex = null;
   grid.addEventListener("dragover", (e) => {
+    if (grid !== dragSourceGrid) return; 
     e.preventDefault();
-  
     const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
     if (!placeholder) return;
-  
     if (afterElement == null) {
       grid.appendChild(placeholder);
     } else {
@@ -7047,10 +7047,9 @@ function renderSide(parentContainer, map, side) {
 
   grid.addEventListener("drop", (e) => {
     e.preventDefault();
+    if (grid !== dragSourceGrid) return;
     if (draggedIndex === null) return;
-  
     const children = [...grid.querySelectorAll(".icon-container")];
-  
     let newIndex = children.findIndex(child => {
       const rect = child.getBoundingClientRect();
       return (
@@ -7058,20 +7057,19 @@ function renderSide(parentContainer, map, side) {
         e.clientX < rect.left + rect.width
       );
     });
-  
     if (newIndex === -1) newIndex = map.elementen.length;
-  
-    // 🔥 correctie als je naar voren sleept
     if (newIndex > draggedIndex) {
       newIndex--;
     }
-  
     const movedItem = map.elementen.splice(draggedIndex, 1)[0];
     map.elementen.splice(newIndex, 0, movedItem);
-  
     renderSide(parentContainer, map, side);
+    draggedEl = null;
+    placeholder = null;
+    dragSourceGrid = null;
+    draggedIndex = null;
   });
-  
+    
   // Maak de elementen
   map.elementen.forEach((el, index) => {
     const elContainer = document.createElement("div");
@@ -7090,6 +7088,7 @@ function renderSide(parentContainer, map, side) {
 
     img.addEventListener("dragstart", (e) => {
       draggedEl = elContainer;
+      dragSourceGrid = grid; // 🔥 BELANGRIJK
     
       placeholder = document.createElement("div");
       placeholder.className = "placeholder";
@@ -7115,6 +7114,7 @@ function renderSide(parentContainer, map, side) {
       });
       draggedEl = null;
       placeholder = null;
+      dragSourceGrid = null;
     });
     
     // Tooltip per element
