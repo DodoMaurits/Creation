@@ -6264,6 +6264,7 @@ let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
 let draggedEl = null;
+let placeholder = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -7032,13 +7033,12 @@ function renderSide(parentContainer, map, side) {
     e.preventDefault();
   
     const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
-  
-    if (!draggedEl) return;
+    if (!placeholder) return;
   
     if (afterElement == null) {
-      grid.appendChild(draggedEl);
+      grid.appendChild(placeholder);
     } else {
-      grid.insertBefore(draggedEl, afterElement);
+      grid.insertBefore(placeholder, afterElement);
     }
   });
 
@@ -7088,19 +7088,30 @@ function renderSide(parentContainer, map, side) {
     img.addEventListener("dragstart", (e) => {
       draggedEl = elContainer;
     
+      placeholder = document.createElement("div");
+      placeholder.className = "placeholder";
+      placeholder.style.width = elContainer.offsetWidth + "px";
+      placeholder.style.height = elContainer.offsetHeight + "px";
+    
       setTimeout(() => {
         elContainer.classList.add("dragging");
+        elContainer.parentNode.insertBefore(placeholder, elContainer);
       }, 0);
     });
     
     img.addEventListener("dragend", () => {
-    elContainer.classList.remove("dragging");
+      elContainer.classList.remove("dragging");
+      if (placeholder && placeholder.parentNode) {
+        placeholder.parentNode.insertBefore(elContainer, placeholder);
+        placeholder.remove();
+      }
       const newOrder = [...grid.querySelectorAll(".icon-container")];
       map.elementen = newOrder.map(container => {
-        const name = container.querySelector("img").alt || container.querySelector("img").title || container.querySelector("img").src;
-        return map.elementen.find(el => el.icoon === container.querySelector("img").src);
+        const src = container.querySelector("img").src;
+        return map.elementen.find(el => el.icoon === src);
       });
       draggedEl = null;
+      placeholder = null;
     });
     
     // Tooltip per element
