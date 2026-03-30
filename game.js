@@ -1822,7 +1822,8 @@ const combinaties = [
     input: [
       ["Zeeslakken", "Radioactiviteit"], ["Zeeslakken", "Gif"],
       ["Tweekleppigen", "Radioactiviteit"], ["Tweekleppigen", "Gif"],
-      ["Nautilussen", "Radioactiviteit"], ["Nautilussen", "Gif"]
+      ["Nautilussen", "Radioactiviteit"], ["Nautilussen", "Gif"],
+      ["Slakken", "Radioactiviteit"], ["Slakken", "Gif"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -1882,7 +1883,8 @@ const combinaties = [
       ["Oeranapsiden", "Radioactiviteit"], ["Oeranapsiden", "Gif"],
       ["Oerdiapsiden", "Radioactiviteit"], ["Oerdiapsiden", "Gif"],
       ["Schildpadden", "Radioactiviteit"], ["Schildpadden", "Gif"],
-      ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"]
+      ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
+      ["Oercynodonten", "Radioactiviteit"], ["Oercynodonten", "Gif"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -1940,6 +1942,7 @@ const combinaties = [
       ["Oerkreeftjes", "Vuur"], ["Oerkreeftjes", "Lava"],
       ["Oerinsecten", "Vuur"], ["Oerinsecten", "Lava"],
       ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
+      ["Slakken", "Vuur"], ["Slakken", "Lava"],
       ["Spinnen", "Vuur"], ["Spinnen", "Lava"],
       ["Mijten", "Vuur"], ["Mijten", "Lava"],
       ["Zwaardstaarten", "Vuur"], ["Zwaardstaarten", "Lava"],
@@ -1978,7 +1981,7 @@ const combinaties = [
       ["Coelacanthen", "Lava"], ["Tiktaalik", "Lava"], ["Longvissen", "Lava"], ["Oerchondrostei", "Lava"],
       ["Wimpelalen", "Lava"], ["Oerneopterygen", "Lava"], ["Oertetrapoden", "Lava"], ["Salamanders", "Lava"],
       ["Kikkers", "Lava"], ["Padden", "Lava"], ["Oersynapsiden", "Lava"], ["Oeranapsiden", "Lava"],
-      ["Oerdiapsiden", "Lava"], ["Schildpadden", "Lava"], ["Zeeschildpadden", "Lava"]
+      ["Oerdiapsiden", "Lava"], ["Schildpadden", "Lava"], ["Zeeschildpadden", "Lava"], ["Oercynodonten", "Lava"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -1998,7 +2001,7 @@ const combinaties = [
       ["Coelacanthen", "Vuur"], ["Tiktaalik", "Vuur"], ["Longvissen", "Vuur"], ["Oerchondrostei", "Vuur"],
       ["Wimpelalen", "Vuur"], ["Oerneopterygen", "Vuur"], ["Oertetrapoden", "Vuur"], ["Salamanders", "Vuur"],
       ["Kikkers", "Vuur"], ["Padden", "Vuur"], ["Oersynapsiden", "Vuur"], ["Oeranapsiden", "Vuur"], 
-      ["Oerdiapsiden", "Vuur"], ["Schildpadden", "Vuur"]
+      ["Oerdiapsiden", "Vuur"], ["Schildpadden", "Vuur"], ["Oercynodonten", "Vuur"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2048,7 +2051,7 @@ const combinaties = [
       ["Coelacanthen", "Dood"], ["Tiktaalik", "Dood"], ["Longvissen", "Dood"], ["Oerchondrostei", "Dood"], 
       ["Wimpelalen", "Dood"], ["Oerneopterygen", "Dood"], ["Oertetrapoden", "Dood"], ["Salamanders", "Dood"], 
       ["Kikkers", "Dood"], ["Padden", "Dood"], ["Oersynapsiden", "Dood"], ["Oeranapsiden", "Dood"], 
-      ["Oerdiapsiden", "Dood"], ["Schildpadden", "Dood"], ["Zeeschildpadden", "Dood"]
+      ["Oerdiapsiden", "Dood"], ["Schildpadden", "Dood"], ["Zeeschildpadden", "Dood"], ["Oercynodonten", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2063,7 +2066,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"]
+      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"], ["Slakken", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
