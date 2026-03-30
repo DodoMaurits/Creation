@@ -7032,16 +7032,20 @@ function renderSide(parentContainer, map, side) {
   }
 
   // Slepen
-  let draggedIndex = null;
+  let isDragging = false;
   grid.addEventListener("dragover", (e) => {
-    if (grid !== dragSourceGrid) return; 
+    if (grid !== dragSourceGrid) return;
     e.preventDefault();
-    const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
-    if (!placeholder) return;
-    if (afterElement == null) {
-      grid.appendChild(placeholder);
-    } else {
-      grid.insertBefore(placeholder, afterElement);
+  
+    if (!isDragging) {
+      requestAnimationFrame(() => {
+        const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
+        if (!placeholder) return;
+        if (afterElement == null) grid.appendChild(placeholder);
+        else grid.insertBefore(placeholder, afterElement);
+        isDragging = false;
+      });
+      isDragging = true;
     }
   });
 
@@ -7052,15 +7056,14 @@ function renderSide(parentContainer, map, side) {
     const children = [...grid.querySelectorAll(".icon-container")];
     let newIndex = children.findIndex(child => {
       const rect = child.getBoundingClientRect();
-      return (
-        e.clientY < rect.top + rect.height / 2 &&
-        e.clientX < rect.left + rect.width
-      );
+      return  e.clientY < rect.top + rect.height / 2 &&
+              e.clientX < rect.left + rect.width /2;
     });
+
+    // Als geen element wordt gevonden → append op het einde
     if (newIndex === -1) newIndex = map.elementen.length;
-    if (newIndex > draggedIndex) {
-      newIndex--;
-    }
+    // Alleen aanpassen als we verder naar rechts slepen
+    if (newIndex > draggedIndex) newIndex--;
     const movedItem = map.elementen.splice(draggedIndex, 1)[0];
     map.elementen.splice(newIndex, 0, movedItem);
     renderSide(parentContainer, map, side);
@@ -7088,7 +7091,8 @@ function renderSide(parentContainer, map, side) {
 
     img.addEventListener("dragstart", (e) => {
       draggedEl = elContainer;
-      dragSourceGrid = grid; // 🔥 BELANGRIJK
+      dragSourceGrid = grid;
+      draggedIndex = map.elementen.findIndex(el2 => el2 === el);
     
       placeholder = document.createElement("div");
       placeholder.className = "placeholder";
@@ -7143,19 +7147,27 @@ function renderSide(parentContainer, map, side) {
 
 function getDragAfterElement(container, x, y) {
   const elements = [...container.querySelectorAll(".icon-container:not(.dragging)")];
-  return elements.reduce((closest, child) => {
+  let closest = { offset: Number.POSITIVE_INFINITY, element: null };
+
+  elements.forEach(child => {
     const rect = child.getBoundingClientRect();
-    const offset =
-      Math.hypot(
-        x - (rect.left + rect.width / 2),
-        y - (rect.top + rect.height / 2)
-      );
+    // center van het element
+    const childCenterX = rect.left + rect.width / 2;
+    const childCenterY = rect.top + rect.height / 2;
+
+    const offset = Math.hypot(x - childCenterX, y - childCenterY);
+
+    // threshold: alleen verplaats placeholder als de cursor echt over >25% van het element zit
+    const thresholdX = rect.width * 0.25;
+    const thresholdY = rect.height * 0.25;
+    if (Math.abs(x - childCenterX) > thresholdX || Math.abs(y - childCenterY) > thresholdY) return;
+
     if (offset < closest.offset) {
-      return { offset, element: child };
-    } else {
-      return closest;
+      closest = { offset, element: child };
     }
-  }, { offset: Number.POSITIVE_INFINITY }).element;
+  });
+
+  return closest.element;
 }
 
 // ----- HINT ENGINE -----
