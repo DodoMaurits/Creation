@@ -7053,20 +7053,25 @@ function renderSide(parentContainer, map, side) {
     e.preventDefault();
     if (grid !== dragSourceGrid) return;
     if (draggedIndex === null) return;
+  
     const children = [...grid.querySelectorAll(".icon-container")];
     let newIndex = children.findIndex(child => {
       const rect = child.getBoundingClientRect();
-      return  e.clientY < rect.top + rect.height / 2 &&
-              e.clientX < rect.left + rect.width /2;
+      return  e.clientY < rect.top + rect.height / 2;
     });
-
-    // Als geen element wordt gevonden → append op het einde
+  
     if (newIndex === -1) newIndex = map.elementen.length;
-    // Alleen aanpassen als we verder naar rechts slepen
     if (newIndex > draggedIndex) newIndex--;
+  
+    // Update array
     const movedItem = map.elementen.splice(draggedIndex, 1)[0];
     map.elementen.splice(newIndex, 0, movedItem);
-    renderSide(parentContainer, map, side);
+  
+    // Verplaats het element in DOM
+    if (placeholder.parentNode) placeholder.parentNode.insertBefore(draggedEl, placeholder);
+    placeholder.remove();
+  
+    draggedEl.classList.remove("dragging");
     draggedEl = null;
     placeholder = null;
     dragSourceGrid = null;
@@ -7106,19 +7111,16 @@ function renderSide(parentContainer, map, side) {
     });
     
     img.addEventListener("dragend", () => {
-      elContainer.classList.remove("dragging");
+      if (!draggedEl) return;
+      draggedEl.classList.remove("dragging");
       if (placeholder && placeholder.parentNode) {
-        placeholder.parentNode.insertBefore(elContainer, placeholder);
+        placeholder.parentNode.insertBefore(draggedEl, placeholder);
         placeholder.remove();
       }
-      const newOrder = [...grid.querySelectorAll(".icon-container")];
-      map.elementen = newOrder.map(container => {
-        const src = container.querySelector("img").src;
-        return map.elementen.find(el => el.icoon === src);
-      });
       draggedEl = null;
       placeholder = null;
       dragSourceGrid = null;
+      draggedIndex = null;
     });
     
     // Tooltip per element
