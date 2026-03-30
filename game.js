@@ -6267,7 +6267,6 @@ let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
 let draggedEl = null;
-let isDragging = false;
 let placeholder = null;
 let lastPlaceholderIndex = null;
 let dragHoverTimeout = null;
