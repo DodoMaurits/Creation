@@ -3699,6 +3699,7 @@ const combinaties = [
       ["Oerkreeftjes", "Virus"], ["Oerkreeftjes", "Schimmel"], ["Oerkreeftjes", "Parasieten"],
       ["Oerinsecten", "Virus"], ["Oerinsecten", "Schimmel"], ["Oerinsecten", "Parasieten"],
       ["Nautilussen", "Virus"], ["Nautilussen", "Schimmel"], ["Nautilussen", "Parasieten"],
+      ["Slakken", "Virus"], ["Slakken", "Schimmel"], ["Slakken", "Parasieten"],
       ["Schorpioenen", "Virus"], ["Schorpioenen", "Schimmel"], ["Schorpioenen", "Parasieten"],
       ["Spinnen", "Virus"], ["Spinnen", "Schimmel"], ["Spinnen", "Parasieten"],
       ["Mijten", "Virus"], ["Mijten", "Schimmel"], ["Mijten", "Parasieten"],
@@ -3735,7 +3736,9 @@ const combinaties = [
       ["Schildpadden", "Bacteriën"], ["Schildpadden", "Virus"], ["Schildpadden", "Schimmel"], 
       ["Schildpadden", "Parasieten"],
       ["Zeeschildpadden", "Bacteriën"], ["Zeeschildpadden", "Virus"], ["Zeeschildpadden", "Schimmel"], 
-      ["Zeeschildpadden", "Parasieten"]
+      ["Zeeschildpadden", "Parasieten"],
+      ["Oercynodonten", "Bacteriën"], ["Oercynodonten", "Virus"], ["Oercynodonten", "Schimmel"], 
+      ["Oercynodonten", "Parasieten"]
     ],
     hint: `Niet ziek willen worden, daar kan het bewustzijn ook bij helpen.`, 
     output: [
@@ -4184,6 +4187,30 @@ const combinaties = [
       { naam: "Slakken", icoon: "icons/Slakken.png", map: "Klein landleven", 
         quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
         <br><br>- Frank Wright`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Slakken", "Bacteriën"], ["Slakken", "Detritus"], ["Slakken", "Blauwalgen"], ["Slakken", "Schimmel"],
+      ["Slakken", "Archaeplastiden"], ["Slakken", "Gist"], ["Slakken", "Rode algen"], ["Slakken", "Groene algen"],
+      ["Slakken", "Roodwieren"], ["Slakken", "Steenwortelalgen"], ["Slakken", "Groenwieren"], ["Slakken", "Mos"], 
+      ["Slakken", "Oervaatplanten"], ["Slakken", "Korstmos"], ["Slakken", "Truffels"], ["Slakken", "Paddenstoelen"],
+      ["Slakken", "Blad"], ["Slakken", "Varens"], ["Slakken", "Oerzaadplanten"]
+    ],
+    output: [
+      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Klein landleven", 
+        quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
+        <br><br>- Frank Wright`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
@@ -5954,6 +5981,55 @@ const combinaties = [
         roofdieren.</span>`,
       }
     }
+  },
+  {
+    input: [
+      ["Oercynodonten", "Wormen"], ["Oercynodonten", "Oergeleedpotigen"], ["Oercynodonten", "Oercheliceraten"], 
+      ["Oercynodonten", "Duizendpoten"], ["Oercynodonten", "Oerinsecten"], ["Oercynodonten", "Spinnen"], 
+      ["Oercynodonten", "Pissebedden"], ["Oercynodonten", "Zilvervisjes"], ["Oercynodonten", "Oerpolyneopteren"], 
+      ["Oercynodonten", "Oerhymenopteren"], ["Oercynodonten", "Luizen"], ["Oercynodonten", "Kevers"], 
+      ["Oercynodonten", "Muggen"], ["Oercynodonten", "Vliegen"], ["Oercynodonten", "Krekels"], 
+      ["Oercynodonten", "Sprinkhanen"], ["Oercynodonten", "Kakkerlakken"], ["Oercynodonten", "Termieten"]
+    ],
+    output: [
+      { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
+        quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
+        making them the most intimate companions of humans
+        <br><br>- Richard Dawkins`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: ["Oercynodonten", "Slakken"],
+    output: [
+      { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
+        quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
+        making them the most intimate companions of humans
+        <br><br>- Richard Dawkins`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: ["Oerpolyneopteren", "Evolutie"],
