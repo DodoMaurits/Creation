@@ -195,7 +195,12 @@ body {
 
 .icon.element:hover { transform: scale(1.15); }
 
-.icon-container.dragging { opacity: 0; pointer-events: none; }
+.icon-container.dragging {
+  opacity: 0.6;
+  z-index: 1000;
+  position: absolute;
+  pointer-events: none;
+}
 
 .grid-elements .icon-container { transition: transform 0.2s ease; }
 
@@ -204,10 +209,20 @@ body {
 }
 
 .placeholder {
+  width: 130px;
+  height: 130px;
   border: 2px dashed rgba(255,255,255,0.3);
+  box-sizing: border-box;
   border-radius: 12px;
   background: rgba(255,255,255,0.05);
   transition: transform 0.15s ease;
+}
+
+.dragging {
+  opacity: 0.6;
+  z-index: 1000;
+  position: absolute;
+  pointer-events: none;
 }
 
 /*  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));*/
@@ -259,6 +274,7 @@ body {
   position: relative;
   text-align: center;
   z-index: 50;
+  transition: transform 0.3s ease;
 }
 
 .tooltip {
