@@ -6744,84 +6744,6 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   });
 }
 
-// ----- DRAG & DROP ELEMENTS -----
-function enableDragAndDrop(grid, mapNaam) {
-  let draggedEl = null;
-  let placeholder = null;
-  let startIndex = null;
-
-  const saveOrder = () => {
-    const order = Array.from(grid.children).map(c => c.dataset.name);
-    localStorage.setItem(`order-${mapNaam}`, JSON.stringify(order));
-  };
-
-  // Herstel volgorde bij openen
-  const savedOrder = JSON.parse(localStorage.getItem(`order-${mapNaam}`) || "[]");
-  if (savedOrder.length) {
-    const containers = Array.from(grid.children);
-    savedOrder.forEach((name, i) => {
-      const el = containers.find(c => c.dataset.name === name);
-      if (el) grid.appendChild(el);
-    });
-  }
-
-  Array.from(grid.children).forEach((container, index) => {
-    container.dataset.name = container.querySelector("img").alt || container.querySelector("img").title || `el-${index}`;
-
-    container.addEventListener("mousedown", e => {
-      draggedEl = container;
-      startIndex = Array.from(grid.children).indexOf(draggedEl);
-
-      placeholder = document.createElement("div");
-      placeholder.className = "placeholder";
-      grid.insertBefore(placeholder, draggedEl.nextSibling);
-
-      draggedEl.classList.add("dragging");
-      draggedEl.style.width = `${draggedEl.offsetWidth}px`;
-      draggedEl.style.height = `${draggedEl.offsetHeight}px`;
-
-      document.body.appendChild(draggedEl);
-
-      const onMouseMove = (eMove) => {
-        draggedEl.style.left = `${eMove.pageX - draggedEl.offsetWidth / 2}px`;
-        draggedEl.style.top = `${eMove.pageY - draggedEl.offsetHeight / 2}px`;
-
-        const rects = Array.from(grid.children)
-          .filter(c => c !== placeholder)
-          .map(c => c.getBoundingClientRect());
-
-        rects.forEach((rect, i) => {
-          const midpoint = rect.left + rect.width / 2;
-          if (eMove.clientX < midpoint && grid.children[i] !== placeholder) {
-            grid.insertBefore(placeholder, grid.children[i]);
-          } else if (eMove.clientX > midpoint && i === rects.length - 1) {
-            grid.appendChild(placeholder);
-          }
-        });
-      };
-
-      const onMouseUp = () => {
-        placeholder.replaceWith(draggedEl);
-        draggedEl.classList.remove("dragging");
-        draggedEl.style.left = "";
-        draggedEl.style.top = "";
-        draggedEl.style.width = "";
-        draggedEl.style.height = "";
-
-        draggedEl = null;
-        placeholder = null;
-        document.removeEventListener("mousemove", onMouseMove);
-        document.removeEventListener("mouseup", onMouseUp);
-
-        saveOrder();
-      };
-
-      document.addEventListener("mousemove", onMouseMove);
-      document.addEventListener("mouseup", onMouseUp);
-    });
-  });
-}
-
 // ----- ERROR SHAKE FUNCTION -----
 function shakeErrorElements(elements) {
   elements.forEach(el => {
@@ -7108,91 +7030,33 @@ function renderSide(parentContainer, map, side) {
 
   // Maak de elementen
   map.elementen.forEach(el => {
-      const elContainer = document.createElement("div");
-      elContainer.className = "icon-container";
-  
-      const img = document.createElement("img");
-      img.src = el.icoon;
-      img.className = "icon element";
-      if (!isMobile) {
-        img.style.width = totalElements > 16 ? "110px" : "130px";
-        img.style.height = totalElements > 16 ? "110px" : "130px";
-      }
-  
-      // Klikfunctionaliteit behouden
-      img.onclick = () => toggleSelect(el, img, side, map.naam);
-  
-      // Tooltip per element
-      if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-          const tooltip = document.createElement("div");
-          tooltip.className = "tooltip";
-          tooltip.textContent = el.naam;
-          elContainer.appendChild(tooltip);
-      } else {
-          attachTooltip(img, el.naam);
-      }
-  
-      elContainer.appendChild(img);
-      grid.appendChild(elContainer);
-  
-      // ---------------- DRAG & DROP ----------------
-      let placeholder, draggingEl, offsetX, offsetY;
-  
-      elContainer.addEventListener("mousedown", (e) => {
-          if (e.button !== 0) return;
-          draggingEl = elContainer;
-          const rect = draggingEl.getBoundingClientRect();
-          offsetX = e.clientX - rect.left;
-          offsetY = e.clientY - rect.top;
-  
-          placeholder = document.createElement("div");
-          placeholder.className = "placeholder";
-          placeholder.style.width = rect.width + "px";
-          placeholder.style.height = rect.height + "px";
-          draggingEl.parentNode.insertBefore(placeholder, draggingEl.nextSibling);
-  
-          draggingEl.classList.add("dragging");
-          draggingEl.style.position = "absolute";
-          draggingEl.style.left = rect.left + "px";
-          draggingEl.style.top = rect.top + "px";
-          draggingEl.style.width = rect.width + "px";
-          draggingEl.style.height = rect.height + "px";
-  
-          document.body.appendChild(draggingEl);
-      });
-  
-      document.addEventListener("mousemove", (e) => {
-          if (!draggingEl) return;
-          draggingEl.style.left = (e.clientX - offsetX) + "px";
-          draggingEl.style.top = (e.clientY - offsetY) + "px";
-  
-          const siblings = Array.from(grid.children).filter(c => c !== draggingEl);
-          for (const sib of siblings) {
-              const sibRect = sib.getBoundingClientRect();
-              if (e.clientX > sibRect.left && e.clientX < sibRect.right &&
-                  e.clientY > sibRect.top && e.clientY < sibRect.bottom) {
-                  grid.insertBefore(placeholder, sib.nextSibling);
-                  break;
-              }
-          }
-      });
-  
-      document.addEventListener("mouseup", () => {
-          if (!draggingEl) return;
-          grid.insertBefore(draggingEl, placeholder);
-          draggingEl.classList.remove("dragging");
-          draggingEl.style.position = "";
-          draggingEl.style.left = "";
-          draggingEl.style.top = "";
-          draggingEl.style.width = "";
-          draggingEl.style.height = "";
-          placeholder.remove();
-          placeholder = null;
-          draggingEl = null;
-  
-          // TODO: opslaan nieuwe volgorde map.elementen
-      });
+    const elContainer = document.createElement("div");
+    elContainer.className = "icon-container";
+
+    const img = document.createElement("img");
+    img.src = el.icoon;
+    img.className = "icon element";
+    if (!isMobile) {
+      img.style.width = totalElements > 16 ? "110px" : "130px";
+      img.style.height = totalElements > 16 ? "110px" : "130px";
+    }
+
+    img.onclick = () => toggleSelect(el, img, side, map.naam);
+
+    // Tooltip per element
+    if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = el.naam;
+        elContainer.appendChild(tooltip);
+    } else {
+        attachTooltip(img, el.naam);
+    }
+        elContainer.appendChild(img);
+        grid.appendChild(elContainer);
   });
+
+  parentContainer.appendChild(grid);
 
   // Fade-in animatie
   parentContainer.style.opacity = 0;
