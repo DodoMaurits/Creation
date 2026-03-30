@@ -6270,6 +6270,8 @@ let draggedEl = null;
 let isDragging = false;
 let placeholder = null;
 let lastPlaceholderIndex = null;
+let dragHoverTimeout = null;
+let currentHoverElement = null;
 let dragSourceGrid = null;
 let dragUpdateTimeout = null;
 
@@ -7039,13 +7041,22 @@ function renderSide(parentContainer, map, side) {
     if (dragSourceGrid !== grid) return;
   
     const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
-    const newIndex = afterElement
-      ? Array.from(grid.children).indexOf(afterElement)
-      : grid.children.length;
-    if (newIndex === lastPlaceholderIndex) return;
-    lastPlaceholderIndex = newIndex;
+    if (afterElement !== currentHoverElement) {
+      if (dragHoverTimeout) clearTimeout(dragHoverTimeout);
+      currentHoverElement = afterElement;
   
-    grid.insertBefore(placeholder, afterElement || null);
+      dragHoverTimeout = setTimeout(() => {
+        // Verplaats placeholder pas na 2 seconden stil staan
+        const newIndex = afterElement
+          ? Array.from(grid.children).indexOf(afterElement)
+          : grid.children.length;
+        
+        grid.insertBefore(placeholder, afterElement || null);
+  
+        // Update de visual positie van de rest
+        updateElementPositionsDebounced(grid, newIndex);
+      }, 2000); // 2 seconden wachten
+    }
   });
   
   grid.addEventListener("drop", (e) => {
@@ -7108,10 +7119,21 @@ function renderSide(parentContainer, map, side) {
       if (!draggedEl) return;
       draggedEl.classList.remove("dragging");
       if (placeholder && placeholder.parentNode) placeholder.remove();
+    
+      if (currentHoverElement !== null) {
+        const newIndex = Array.from(grid.children).indexOf(placeholder);
+        const movedItem = map.elementen.splice(draggedIndex, 1)[0];
+        map.elementen.splice(newIndex, 0, movedItem);
+        saveMapOrder(map);
+      }
+    
       draggedEl = null;
       placeholder = null;
       dragSourceGrid = null;
       draggedIndex = null;
+      currentHoverElement = null;
+      if (dragHoverTimeout) clearTimeout(dragHoverTimeout);
+      dragHoverTimeout = null;
     });
     
     // Tooltip per element
