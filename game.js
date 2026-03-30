@@ -6263,6 +6263,7 @@ let lastHint = null;
 let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
+let draggedEl = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -7029,6 +7030,16 @@ function renderSide(parentContainer, map, side) {
   let draggedIndex = null;
   grid.addEventListener("dragover", (e) => {
     e.preventDefault();
+  
+    const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
+  
+    if (!draggedEl) return;
+  
+    if (afterElement == null) {
+      grid.appendChild(draggedEl);
+    } else {
+      grid.insertBefore(draggedEl, afterElement);
+    }
   });
 
   grid.addEventListener("drop", (e) => {
@@ -7074,15 +7085,24 @@ function renderSide(parentContainer, map, side) {
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
 
-    img.addEventListener("dragstart", () => {
-      draggedIndex = index;
-      img.classList.add("dragging");
+    img.addEventListener("dragstart", (e) => {
+      draggedEl = elContainer;
+    
+      setTimeout(() => {
+        elContainer.classList.add("dragging");
+      }, 0);
     });
-
+    
     img.addEventListener("dragend", () => {
-      img.classList.remove("dragging");
+    elContainer.classList.remove("dragging");
+      const newOrder = [...grid.querySelectorAll(".icon-container")];
+      map.elementen = newOrder.map(container => {
+        const name = container.querySelector("img").alt || container.querySelector("img").title || container.querySelector("img").src;
+        return map.elementen.find(el => el.icoon === container.querySelector("img").src);
+      });
+      draggedEl = null;
     });
-
+    
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
         const tooltip = document.createElement("div");
@@ -7107,19 +7127,21 @@ function renderSide(parentContainer, map, side) {
   }, 20);
 }
 
-function getDragAfterElement(container, y) {
+function getDragAfterElement(container, x, y) {
   const elements = [...container.querySelectorAll(".icon-container:not(.dragging)")];
-
   return elements.reduce((closest, child) => {
-    const box = child.getBoundingClientRect();
-    const offset = y - box.top - box.height / 2;
-
-    if (offset < 0 && offset > closest.offset) {
+    const rect = child.getBoundingClientRect();
+    const offset =
+      Math.hypot(
+        x - (rect.left + rect.width / 2),
+        y - (rect.top + rect.height / 2)
+      );
+    if (offset < closest.offset) {
       return { offset, element: child };
     } else {
       return closest;
     }
-  }, { offset: Number.NEGATIVE_INFINITY }).element;
+  }, { offset: Number.POSITIVE_INFINITY }).element;
 }
 
 // ----- HINT ENGINE -----
