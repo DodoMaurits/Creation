@@ -195,6 +195,10 @@ body {
 
 .icon.element:hover { transform: scale(1.15); }
 
+.icon.dragging { opacity: 0.4; }
+
+.grid-elements { cursor: grab; }
+
 /*  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));*/
 .icon.map {
   width: 145px;
