@@ -7040,16 +7040,34 @@ function renderSide(parentContainer, map, side) {
     e.preventDefault();
     if (!draggedEl) return;
   
-    const afterEl = getDragAfterElement(grid, e.clientX, e.clientY);
-    const newIndex = afterEl ? [...grid.children].indexOf(afterEl) : grid.children.length;
+    const children = [...grid.querySelectorAll(".icon-container:not(.dragging):not(.placeholder)")];
+    if (children.length === 0) return;
   
-    if (placeholder.parentNode !== grid) grid.appendChild(placeholder);
+    let closest = { offset: Number.POSITIVE_INFINITY, element: null };
   
-    // ✅ Update alleen als index verandert
-    if (newIndex !== lastPlaceholderIndex) {
-      grid.insertBefore(placeholder, afterEl);
+    children.forEach(child => {
+      const rect = child.getBoundingClientRect();
+      const centerX = rect.left + rect.width/2;
+      const centerY = rect.top + rect.height/2;
+      const offset = Math.hypot(e.clientX - centerX, e.clientY - centerY);
+  
+      if (offset < closest.offset) closest = { offset, element: child };
+    });
+  
+    // Nieuw index bepalen
+    const newIndex = closest.element ? children.indexOf(closest.element) : children.length;
+  
+    if (lastPlaceholderIndex !== newIndex) {
+      // Plaats placeholder **altijd in plaats van element**, nooit appendChild willekeurig
+      grid.insertBefore(placeholder, closest.element || null);
       lastPlaceholderIndex = newIndex;
-      updateElementPositions(grid, newIndex);
+  
+      // update DOM transform: alleen elementen links/rechts van placeholder
+      children.forEach((child, idx) => {
+        child.style.transition = "transform 0.2s ease";
+        const offsetX = 0; // of bereken rijen/kolommen op basis van grid
+        child.style.transform = `translateX(${offsetX}px) translateY(0px)`;
+      });
     }
   });
 
