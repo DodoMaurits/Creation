@@ -7035,8 +7035,7 @@ function renderSide(parentContainer, map, side) {
 
   grid.addEventListener("dragover", (e) => {
     e.preventDefault();
-    if (!draggedEl || !placeholder) return;
-    if (dragSourceGrid !== grid) return;
+    if (!draggedEl || !placeholder || dragSourceGrid !== grid) return;
   
     const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
     if (afterElement !== currentHoverElement) {
@@ -7044,16 +7043,24 @@ function renderSide(parentContainer, map, side) {
       currentHoverElement = afterElement;
   
       dragHoverTimeout = setTimeout(() => {
-        // Verplaats placeholder pas na 2 seconden stil staan
         const newIndex = afterElement
           ? Array.from(grid.children).indexOf(afterElement)
           : grid.children.length;
-        
+  
+        // ✅ Verplaats placeholder in DOM
         grid.insertBefore(placeholder, afterElement || null);
   
-        // Update de visual positie van de rest
+        // ✅ Update map.elementen: haal draggedEl uit oude index, plaats op nieuwe
+        const movedItem = map.elementen.splice(draggedIndex, 1)[0];
+        map.elementen.splice(newIndex, 0, movedItem);
+        saveMapOrder(map);
+  
+        // ✅ Update visual positions van de rest
         updateElementPositionsDebounced(grid, newIndex);
-      }, 2000); // 2 seconden wachten
+  
+        // Update draggedIndex zodat meerdere hovers achter elkaar correct werken
+        draggedIndex = newIndex;
+      }, 2000); // 2 seconden stilstand
     }
   });
   
@@ -7113,23 +7120,20 @@ function renderSide(parentContainer, map, side) {
     
     img.addEventListener("dragend", () => {
       if (!draggedEl) return;
+    
       draggedEl.classList.remove("dragging");
       if (placeholder && placeholder.parentNode) placeholder.remove();
-    
-      if (currentHoverElement !== null) {
-        const newIndex = Array.from(grid.children).indexOf(placeholder);
-        const movedItem = map.elementen.splice(draggedIndex, 1)[0];
-        map.elementen.splice(newIndex, 0, movedItem);
-        saveMapOrder(map);
-      }
     
       draggedEl = null;
       placeholder = null;
       dragSourceGrid = null;
       draggedIndex = null;
       currentHoverElement = null;
-      if (dragHoverTimeout) clearTimeout(dragHoverTimeout);
-      dragHoverTimeout = null;
+    
+      if (dragHoverTimeout) {
+        clearTimeout(dragHoverTimeout);
+        dragHoverTimeout = null;
+      }
     });
     
     // Tooltip per element
