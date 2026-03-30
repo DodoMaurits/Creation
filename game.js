@@ -6267,7 +6267,9 @@ let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
 let draggedEl = null;
+let isDragging = false;
 let placeholder = null;
+let lastPlaceholderIndex = null;
 let dragSourceGrid = null;
 let dragUpdateTimeout = null;
 
@@ -7034,20 +7036,21 @@ function renderSide(parentContainer, map, side) {
   }
 
   // Slepen
-  let isDragging = false;
   grid.addEventListener("dragover", (e) => {
     e.preventDefault();
     if (!draggedEl) return;
   
     const afterEl = getDragAfterElement(grid, e.clientX, e.clientY);
-    const index = afterEl ? [...grid.children].indexOf(afterEl) : grid.children.length;
+    const newIndex = afterEl ? [...grid.children].indexOf(afterEl) : grid.children.length;
   
-    if (placeholder.parentNode !== grid) {
-      grid.appendChild(placeholder);
+    if (placeholder.parentNode !== grid) grid.appendChild(placeholder);
+  
+    // ✅ Update alleen als index verandert
+    if (newIndex !== lastPlaceholderIndex) {
+      grid.insertBefore(placeholder, afterEl);
+      lastPlaceholderIndex = newIndex;
+      updateElementPositions(grid, newIndex);
     }
-    grid.insertBefore(placeholder, afterEl);
-  
-    updateElementPositionsDebounced(grid, index);
   });
 
   grid.addEventListener("drop", (e) => {
