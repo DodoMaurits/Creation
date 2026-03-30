@@ -6744,6 +6744,84 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   });
 }
 
+// ----- DRAG & DROP ELEMENTS -----
+function enableDragAndDrop(grid, mapNaam) {
+  let draggedEl = null;
+  let placeholder = null;
+  let startIndex = null;
+
+  const saveOrder = () => {
+    const order = Array.from(grid.children).map(c => c.dataset.name);
+    localStorage.setItem(`order-${mapNaam}`, JSON.stringify(order));
+  };
+
+  // Herstel volgorde bij openen
+  const savedOrder = JSON.parse(localStorage.getItem(`order-${mapNaam}`) || "[]");
+  if (savedOrder.length) {
+    const containers = Array.from(grid.children);
+    savedOrder.forEach((name, i) => {
+      const el = containers.find(c => c.dataset.name === name);
+      if (el) grid.appendChild(el);
+    });
+  }
+
+  Array.from(grid.children).forEach((container, index) => {
+    container.dataset.name = container.querySelector("img").alt || container.querySelector("img").title || `el-${index}`;
+
+    container.addEventListener("mousedown", e => {
+      draggedEl = container;
+      startIndex = Array.from(grid.children).indexOf(draggedEl);
+
+      placeholder = document.createElement("div");
+      placeholder.className = "placeholder";
+      grid.insertBefore(placeholder, draggedEl.nextSibling);
+
+      draggedEl.classList.add("dragging");
+      draggedEl.style.width = `${draggedEl.offsetWidth}px`;
+      draggedEl.style.height = `${draggedEl.offsetHeight}px`;
+
+      document.body.appendChild(draggedEl);
+
+      const onMouseMove = (eMove) => {
+        draggedEl.style.left = `${eMove.pageX - draggedEl.offsetWidth / 2}px`;
+        draggedEl.style.top = `${eMove.pageY - draggedEl.offsetHeight / 2}px`;
+
+        const rects = Array.from(grid.children)
+          .filter(c => c !== placeholder)
+          .map(c => c.getBoundingClientRect());
+
+        rects.forEach((rect, i) => {
+          const midpoint = rect.left + rect.width / 2;
+          if (eMove.clientX < midpoint && grid.children[i] !== placeholder) {
+            grid.insertBefore(placeholder, grid.children[i]);
+          } else if (eMove.clientX > midpoint && i === rects.length - 1) {
+            grid.appendChild(placeholder);
+          }
+        });
+      };
+
+      const onMouseUp = () => {
+        placeholder.replaceWith(draggedEl);
+        draggedEl.classList.remove("dragging");
+        draggedEl.style.left = "";
+        draggedEl.style.top = "";
+        draggedEl.style.width = "";
+        draggedEl.style.height = "";
+
+        draggedEl = null;
+        placeholder = null;
+        document.removeEventListener("mousemove", onMouseMove);
+        document.removeEventListener("mouseup", onMouseUp);
+
+        saveOrder();
+      };
+
+      document.addEventListener("mousemove", onMouseMove);
+      document.addEventListener("mouseup", onMouseUp);
+    });
+  });
+}
+
 // ----- ERROR SHAKE FUNCTION -----
 function shakeErrorElements(elements) {
   elements.forEach(el => {
@@ -7057,6 +7135,8 @@ function renderSide(parentContainer, map, side) {
   });
 
   parentContainer.appendChild(grid);
+
+  enableDragAndDrop(grid, map.naam);
 
   // Fade-in animatie
   parentContainer.style.opacity = 0;
