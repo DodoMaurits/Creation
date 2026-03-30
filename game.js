@@ -7108,35 +7108,91 @@ function renderSide(parentContainer, map, side) {
 
   // Maak de elementen
   map.elementen.forEach(el => {
-    const elContainer = document.createElement("div");
-    elContainer.className = "icon-container";
-
-    const img = document.createElement("img");
-    img.src = el.icoon;
-    img.className = "icon element";
-    if (!isMobile) {
-      img.style.width = totalElements > 16 ? "110px" : "130px";
-      img.style.height = totalElements > 16 ? "110px" : "130px";
-    }
-
-    img.onclick = () => toggleSelect(el, img, side, map.naam);
-
-    // Tooltip per element
-    if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        const tooltip = document.createElement("div");
-        tooltip.className = "tooltip";
-        tooltip.textContent = el.naam;
-        elContainer.appendChild(tooltip);
-    } else {
-        attachTooltip(img, el.naam);
-    }
-        elContainer.appendChild(img);
-        grid.appendChild(elContainer);
+      const elContainer = document.createElement("div");
+      elContainer.className = "icon-container";
+  
+      const img = document.createElement("img");
+      img.src = el.icoon;
+      img.className = "icon element";
+      if (!isMobile) {
+        img.style.width = totalElements > 16 ? "110px" : "130px";
+        img.style.height = totalElements > 16 ? "110px" : "130px";
+      }
+  
+      // Klikfunctionaliteit behouden
+      img.onclick = () => toggleSelect(el, img, side, map.naam);
+  
+      // Tooltip per element
+      if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
+          const tooltip = document.createElement("div");
+          tooltip.className = "tooltip";
+          tooltip.textContent = el.naam;
+          elContainer.appendChild(tooltip);
+      } else {
+          attachTooltip(img, el.naam);
+      }
+  
+      elContainer.appendChild(img);
+      grid.appendChild(elContainer);
+  
+      // ---------------- DRAG & DROP ----------------
+      let placeholder, draggingEl, offsetX, offsetY;
+  
+      elContainer.addEventListener("mousedown", (e) => {
+          if (e.button !== 0) return;
+          draggingEl = elContainer;
+          const rect = draggingEl.getBoundingClientRect();
+          offsetX = e.clientX - rect.left;
+          offsetY = e.clientY - rect.top;
+  
+          placeholder = document.createElement("div");
+          placeholder.className = "placeholder";
+          placeholder.style.width = rect.width + "px";
+          placeholder.style.height = rect.height + "px";
+          draggingEl.parentNode.insertBefore(placeholder, draggingEl.nextSibling);
+  
+          draggingEl.classList.add("dragging");
+          draggingEl.style.position = "absolute";
+          draggingEl.style.left = rect.left + "px";
+          draggingEl.style.top = rect.top + "px";
+          draggingEl.style.width = rect.width + "px";
+          draggingEl.style.height = rect.height + "px";
+  
+          document.body.appendChild(draggingEl);
+      });
+  
+      document.addEventListener("mousemove", (e) => {
+          if (!draggingEl) return;
+          draggingEl.style.left = (e.clientX - offsetX) + "px";
+          draggingEl.style.top = (e.clientY - offsetY) + "px";
+  
+          const siblings = Array.from(grid.children).filter(c => c !== draggingEl);
+          for (const sib of siblings) {
+              const sibRect = sib.getBoundingClientRect();
+              if (e.clientX > sibRect.left && e.clientX < sibRect.right &&
+                  e.clientY > sibRect.top && e.clientY < sibRect.bottom) {
+                  grid.insertBefore(placeholder, sib.nextSibling);
+                  break;
+              }
+          }
+      });
+  
+      document.addEventListener("mouseup", () => {
+          if (!draggingEl) return;
+          grid.insertBefore(draggingEl, placeholder);
+          draggingEl.classList.remove("dragging");
+          draggingEl.style.position = "";
+          draggingEl.style.left = "";
+          draggingEl.style.top = "";
+          draggingEl.style.width = "";
+          draggingEl.style.height = "";
+          placeholder.remove();
+          placeholder = null;
+          draggingEl = null;
+  
+          // TODO: opslaan nieuwe volgorde map.elementen
+      });
   });
-
-  parentContainer.appendChild(grid);
-
-  enableDragAndDrop(grid, map.naam);
 
   // Fade-in animatie
   parentContainer.style.opacity = 0;
