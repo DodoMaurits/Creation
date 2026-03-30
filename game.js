@@ -2799,8 +2799,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Agnathen", "Zenuwen"], ["Zeeslakken", "Zenuwen"], ["Oerinsecten", "Zenuwen"], ["Oerpolyneopteren", "Zenuwen"],
-      ["Wandelende takken", "Zenuwen"], ["Kakkerlakken", "Zenuwen"], ["Termieten", "Zenuwen"]
+      ["Agnathen", "Zenuwen"], ["Zeeslakken", "Zenuwen"], ["Oerinsecten", "Zenuwen"], ["Slakken", "Zenuwen"],
+      ["Oerpolyneopteren", "Zenuwen"], ["Wandelende takken", "Zenuwen"], ["Kakkerlakken", "Zenuwen"], 
+      ["Termieten", "Zenuwen"]
     ],
     hint: `Wat proef ik?`,
     output: [
@@ -3535,11 +3536,11 @@ const combinaties = [
     input: [
       ["Agnathen", "Pijn"], ["Oergeleedpotigen", "Pijn"], ["Zeeslakken", "Pijn"], ["Trilobieten", "Pijn"], 
       ["Oercheliceraten", "Pijn"], ["Duizendpoten", "Pijn"], ["Oerkreeftjes", "Pijn"], ["Oerinsecten", "Pijn"], 
-      ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"], ["Mijten", "Mijten"], ["Zwaardstaarten", "Pijn"], ["Krill", "Pijn"],
-      ["Pissebedden", "Pijn"], ["Garnalen", "Pijn"], ["Kreeften", "Pijn"], ["Krabben", "Pijn"], ["Zilvervisjes", "Pijn"],
-      ["Oerpolyneopteren", "Pijn"], ["Oerhymenopteren", "Pijn"], ["Luizen", "Pijn "], ["Kevers", "Pijn"], 
-      ["Muggen", "Pijn"], ["Vliegen", "Pijn"], ["Vlinders", "Pijn"], ["Krekels", "Pijn"], ["Sprinkhanen", "Pijn"], 
-      ["Wandelende takken", "Pijn"], ["Kakkerlakken", "Pijn"], ["Termieten", "Pijn"],
+      ["Slakken", "Pijn"], ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"], ["Mijten", "Mijten"], ["Zwaardstaarten", "Pijn"], 
+      ["Krill", "Pijn"], ["Pissebedden", "Pijn"], ["Garnalen", "Pijn"], ["Kreeften", "Pijn"], ["Krabben", "Pijn"], 
+      ["Zilvervisjes", "Pijn"], ["Oerpolyneopteren", "Pijn"], ["Oerhymenopteren", "Pijn"], ["Luizen", "Pijn "], 
+      ["Kevers", "Pijn"], ["Muggen", "Pijn"], ["Vliegen", "Pijn"], ["Vlinders", "Pijn"], ["Krekels", "Pijn"], 
+      ["Sprinkhanen", "Pijn"], ["Wandelende takken", "Pijn"], ["Kakkerlakken", "Pijn"], ["Termieten", "Pijn"],
       
       ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Pijn"],
       ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
@@ -3558,7 +3559,8 @@ const combinaties = [
       ["Oeranapsiden", "Storm"], ["Oeranapsiden", "Orkaan"], ["Oeranapsiden", "Pijn"],
       ["Oerdiapsiden", "Storm"], ["Oerdiapsiden", "Orkaan"], ["Oerdiapsiden", "Pijn"],
       ["Schildpadden", "Storm"], ["Schildpadden", "Orkaan"], ["Schildpadden", "Pijn"],
-      ["Zeeschildpadden", "Storm"], ["Zeeschildpadden", "Orkaan"], ["Zeeschildpadden", "Pijn"]
+      ["Zeeschildpadden", "Storm"], ["Zeeschildpadden", "Orkaan"], ["Zeeschildpadden", "Pijn"],
+      ["Oercynodonten", "storm"], ["Oercynodonten", "Orkaan"], ["Oercynodonten", "Pijn"]
     ],
     hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
     output: [
@@ -3748,7 +3750,7 @@ const combinaties = [
       ["Agnathen", "Agnathen"], ["Oergeleedpotigen", "Oergeleedpotigen"], ["Inktvissen", "Inktvissen"], 
       ["Zeeslakken", "Zeeslakken"], ["Trilobieten", "Trilobieten"], ["Oercheliceraten", "Oercheliceraten"], 
       ["Duizendpoten", "Duizendpoten"], ["Oerkreeftjes", "Oerkreeftjes"], ["Oerinsecten", "Oerinsecten"], 
-      ["Nautilussen", "Nautilussen"], ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], 
+      ["Nautilussen", "Nautilussen"], ["Slakken", "Slakken"], ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], 
       ["Zwaardstaarten", "Zwaardstaarten"], ["Krill", "Krill"], ["Oerchondrichthyes", "Oerchondrichthyes"], 
       ["Oerstraalvinnigen", "Oerstraalvinnigen"], ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], 
       ["Longvissen", "Longvissen"], ["Pissebedden", "Pissebedden"], ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], 
@@ -3759,7 +3761,8 @@ const combinaties = [
       ["Oertetrapoden", "Oertetrapoden"], ["Salamanders", "Salamanders"], ["Kikkers", "Kikkers"], ["Padden", "Padden"],
       ["Oersynapsiden", "Oersynapsiden"], ["Oeranapsiden", "Oeranapsiden"], ["Oerdiapsiden", "Oerdiapsiden"],
       ["Krekels", "Krekels"], ["Sprinkhanen", "Sprinkhanen"], ["Wandelende takken", "Wandelende takken"], 
-      ["Kakkerlakken", "Kakkerlakken"], ["Schildpadden", "Schildpadden"], ["Zeeschildpadden", "Zeeschildpadden"]
+      ["Kakkerlakken", "Kakkerlakken"], ["Schildpadden", "Schildpadden"], ["Zeeschildpadden", "Zeeschildpadden"],
+      ["Oercynodonten", "Oercynodonten"]
     ],
     hint: `Hm.. dieren van dezelfde soorten kunnen behoorlijk anders op elkaar reageren.`, 
     output: [
@@ -4089,15 +4092,35 @@ const combinaties = [
       ["Oerchondrostei", "Licht"], ["Oerchondrostei", "Kleur"],
       ["Wimpelalen", "Licht"], ["Wimpelalen", "Kleur"],
       ["Oerneopterygen", "Licht"], ["Oerneopterygen", "Kleur"],
-      ["Oertetrapoden", "Licht"], ["Oertetrapoden", "Kleur"],
-      ["Salamanders", "Licht"], ["Salamanders", "Kleur"],
-      ["Kikkers", "Licht"], ["Kikkers", "Kleur"],
-      ["Padden", "Licht"], ["Padden", "Kleur"],
-      ["Oersynapsiden", "Licht"], ["Oersynapsiden", "Kleur"],
-      ["Oeranapsiden", "Licht"], ["Oeranapsiden", "Kleur"],
-      ["Oerdiapsiden", "Licht"], ["Oerdiapsiden", "Kleur"],
-      ["Schildpadden", "Licht"], ["Schildpadden", "Kleur"],
-      ["Zeeschildpadden", "Licht"], ["Zeeschildpadden", "Kleur"]
+      ["Zeeschildpadden", "Licht"], ["Zeeschildpadden", "Kleur"], 
+
+      ["Oertetrapoden", "Explosie"], ["Oertetrapoden", "Noorderlicht"], ["Oertetrapoden", "Bliksem"], 
+      ["Oertetrapoden", "Sneeuw"], ["Oertetrapoden", "Hagel"], ["Oertetrapoden", "Bolbliksem"], 
+      ["Oertetrapoden", "Overstroming"], 
+      ["Salamanders", "Explosie"], ["Salamanders", "Noorderlicht"], ["Salamanders", "Bliksem"],
+      ["Salamanders", "Sneeuw"], ["Salamanders", "Hagel"], ["Salamanders", "Bolbliksem"], 
+      ["Salamanders", "Overstroming"], 
+      ["Kikkers", "Explosie"], ["Kikkers", "Noorderlicht"], ["Kikkers", "Bliksem"], 
+      ["Kikkers", "Sneeuw"], ["Kikkers", "Hagel"] ,["Kikkers", "Bolbliksem"], 
+      ["Kikkers", "Overstroming"], 
+      ["Padden", "Explosie"], ["Padden", "Noorderlicht"], ["Padden", "Bliksem"], 
+      ["Padden", "Sneeuw"], ["Padden", "Hagel"], ["Padden", "Bolbliksem"], 
+      ["Padden", "Overstroming"], 
+      ["Oersynapsiden", "Explosie"], ["Oersynapsiden", "Noorderlicht"], ["Oersynapsiden", "Bliksem"],
+      ["Oersynapsiden", "Sneeuw"], ["Oersynapsiden", "Hagel"], ["Oersynapsiden", "Bolbliksem"],
+      ["Oersynapsiden", "Overstroming"], 
+      ["Oeranapsiden", "Explosie"], ["Oeranapsiden", "Noorderlicht"], ["Oeranapsiden", "Bliksem"], 
+      ["Oeranapsiden", "Sneeuw"], ["Oeranapsiden", "Hagel"], ["Oeranapsiden", "Bolbliksem"],
+      ["Oeranapsiden", "Overstroming"], 
+      ["Oerdiapsiden", "Explosie"], ["Oerdiapsiden", "Noorderlicht"], ["Oerdiapsiden", "Bliksem"],
+      ["Oerdiapsiden", "Sneeuw"], ["Oerdiapsiden", "Hagel"], ["Oerdiapsiden", "Bolbliksem"],
+      ["Oerdiapsiden", "Overstroming"], 
+      ["Schildpadden", "Explosie"], ["Schildpadden", "Noorderlicht"], ["Schildpadden", "Bliksem"], 
+      ["Schildpadden", "Sneeuw"], ["Schildpadden", "Hagel"], ["Schildpadden", "Bolbliksem"],
+      ["Schildpadden", "Overstroming"], 
+      ["Oercynodonten", "Explosie"], ["Oercynodonten", "Noorderlicht"], ["Oercynodonten", "Noorderlicht"],
+      ["Oercynodonten", "Sneeuw"], ["Oercynodonten", "Hagel"], ["Oercynodonten", "Bolbliksem"],
+      ["Oercynodonten", "Overstroming"]
     ],
     hint: `De slimste dieren zullen je met de speling van het licht verbazen.`,
     output: [
