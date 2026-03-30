@@ -7011,14 +7011,12 @@ function renderSide(parentContainer, map, side) {
   titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
 
-  // --- Grid van elementen ---
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
 
-  // Layout instellen
   if (!isMobile) {
     if (totalElements > 16) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
@@ -7035,17 +7033,20 @@ function renderSide(parentContainer, map, side) {
     grid.style.rowGap = "10px";
   }
 
-  // Dragover
   grid.addEventListener("dragover", (e) => {
     e.preventDefault();
     if (!draggedEl || !placeholder) return;
   
     const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
-    // Als afterElement null is → append aan einde
+    const newIndex = afterElement
+      ? Array.from(grid.children).indexOf(afterElement)
+      : grid.children.length;
+    if (newIndex === lastPlaceholderIndex) return;
+    lastPlaceholderIndex = newIndex;
+  
     grid.insertBefore(placeholder, afterElement || null);
   });
   
-  // Drop
   grid.addEventListener("drop", (e) => {
     e.preventDefault();
     if (!draggedEl || !dragSourceGrid) return;
@@ -7092,6 +7093,8 @@ function renderSide(parentContainer, map, side) {
       placeholder.className = "placeholder";
       placeholder.style.width = elContainer.offsetWidth + "px";
       placeholder.style.height = elContainer.offsetHeight + "px";
+
+      lastPlaceholderIndex = null; 
     
       setTimeout(() => {
         elContainer.classList.add("dragging");
@@ -7102,10 +7105,7 @@ function renderSide(parentContainer, map, side) {
     img.addEventListener("dragend", () => {
       if (!draggedEl) return;
       draggedEl.classList.remove("dragging");
-      if (placeholder && placeholder.parentNode) {
-        placeholder.parentNode.insertBefore(draggedEl, placeholder);
-        placeholder.remove();
-      }
+      if (placeholder && placeholder.parentNode) placeholder.remove();
       draggedEl = null;
       placeholder = null;
       dragSourceGrid = null;
