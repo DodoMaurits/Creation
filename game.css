@@ -199,6 +199,11 @@ body {
 
 .grid-elements .icon-container { transition: transform 0.2s ease; }
 
+.placeholder {
+  border: 2px dashed rgba(255,255,255,0.3);
+  border-radius: 12px;
+}
+
 /*  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));*/
 .icon.map {
   width: 145px;
