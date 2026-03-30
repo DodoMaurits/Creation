@@ -195,7 +195,7 @@ body {
 
 .icon.element:hover { transform: scale(1.15); }
 
-.icon-container.dragging { opacity: 0; }
+.icon-container.dragging { opacity: 0; pointer-events: none; }
 
 .grid-elements .icon-container { transition: transform 0.2s ease; }
 
