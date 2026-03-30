@@ -195,9 +195,9 @@ body {
 
 .icon.element:hover { transform: scale(1.15); }
 
-.icon.dragging { opacity: 0.4; }
+.icon.container.dragging { opacity: 0; }
 
-.grid-elements { cursor: grab; }
+.grid-elements .icon-container { transition: transform 0.2s ease; }
 
 /*  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));*/
 .icon.map {
