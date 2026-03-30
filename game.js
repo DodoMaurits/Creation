@@ -6266,12 +6266,6 @@ let lastHint = null;
 let lastHintIndex = -1;
 let hintVisible = false;
 let hintTimer = null;
-let draggedEl = null;
-let placeholder = null;
-let dragHoverTimeout = null;
-let currentHoverElement = null;
-let dragSourceGrid = null;
-let dragUpdateTimeout = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -6938,7 +6932,6 @@ function updateClosedContainer() {
 
 // ----- OPEN MAP -----
 function openMap(map, clickedImg) {
-  loadMapOrder(map); 
   let side = null;
   let container;
 
@@ -7011,12 +7004,14 @@ function renderSide(parentContainer, map, side) {
   titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
 
+  // --- Grid van elementen ---
   const grid = document.createElement("div");
   grid.className = "grid-elements";
 
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
 
+  // Layout instellen
   if (!isMobile) {
     if (totalElements > 16) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
@@ -7033,68 +7028,14 @@ function renderSide(parentContainer, map, side) {
     grid.style.rowGap = "10px";
   }
 
-  grid.addEventListener("dragover", (e) => {
-    e.preventDefault();
-    if (!draggedEl || !placeholder || dragSourceGrid !== grid) return;
-  
-    const afterElement = getDragAfterElement(grid, e.clientX, e.clientY);
-    if (afterElement !== currentHoverElement) {
-      if (dragHoverTimeout) clearTimeout(dragHoverTimeout);
-      currentHoverElement = afterElement;
-  
-      dragHoverTimeout = setTimeout(() => {
-        const newIndex = afterElement
-          ? Array.from(grid.children).indexOf(afterElement)
-          : grid.children.length;
-  
-        // ✅ Verplaats placeholder in DOM
-        grid.insertBefore(placeholder, afterElement || null);
-  
-        // ✅ Update map.elementen: haal draggedEl uit oude index, plaats op nieuwe
-        const movedItem = map.elementen.splice(draggedIndex, 1)[0];
-        map.elementen.splice(newIndex, 0, movedItem);
-        saveMapOrder(map);
-  
-        // ✅ Update visual positions van de rest
-        updateElementPositionsDebounced(grid, newIndex);
-  
-        // Update draggedIndex zodat meerdere hovers achter elkaar correct werken
-        draggedIndex = newIndex;
-      }, 2000); // 2 seconden stilstand
-    }
-  });
-  
-  grid.addEventListener("drop", (e) => {
-    e.preventDefault();
-    if (!draggedEl || !dragSourceGrid) return;
-    if (dragSourceGrid !== grid) return;
-    
-    let newIndex = Array.from(grid.children).indexOf(placeholder);
-    if (newIndex === -1) newIndex = map.elementen.length;
-  
-    const movedItem = map.elementen.splice(draggedIndex, 1)[0];
-    map.elementen.splice(newIndex, 0, movedItem);
-    saveMapOrder(map);
-  
-    grid.insertBefore(draggedEl, grid.children[newIndex] || null);
-  
-    draggedEl.classList.remove("dragging");
-    if (placeholder.parentNode) placeholder.remove();
-    draggedEl = null;
-    placeholder = null;
-    dragSourceGrid = null;
-    draggedIndex = null;
-  });
-  
   // Maak de elementen
-  map.elementen.forEach((el, index) => {
+  map.elementen.forEach(el => {
     const elContainer = document.createElement("div");
     elContainer.className = "icon-container";
 
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "icon element";
-    img.draggable = true;
     if (!isMobile) {
       img.style.width = totalElements > 16 ? "110px" : "130px";
       img.style.height = totalElements > 16 ? "110px" : "130px";
@@ -7102,40 +7043,6 @@ function renderSide(parentContainer, map, side) {
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
 
-    img.addEventListener("dragstart", (e) => {
-      draggedEl = elContainer;
-      dragSourceGrid = grid;
-      draggedIndex = map.elementen.findIndex(el2 => el2 === el);
-    
-      placeholder = document.createElement("div");
-      placeholder.className = "placeholder";
-      placeholder.style.width = elContainer.offsetWidth + "px";
-      placeholder.style.height = elContainer.offsetHeight + "px";
-    
-      setTimeout(() => {
-        elContainer.classList.add("dragging");
-        elContainer.parentNode.insertBefore(placeholder, elContainer);
-      }, 0);
-    });
-    
-    img.addEventListener("dragend", () => {
-      if (!draggedEl) return;
-    
-      draggedEl.classList.remove("dragging");
-      if (placeholder && placeholder.parentNode) placeholder.remove();
-    
-      draggedEl = null;
-      placeholder = null;
-      dragSourceGrid = null;
-      draggedIndex = null;
-      currentHoverElement = null;
-    
-      if (dragHoverTimeout) {
-        clearTimeout(dragHoverTimeout);
-        dragHoverTimeout = null;
-      }
-    });
-    
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
         const tooltip = document.createElement("div");
@@ -7158,63 +7065,6 @@ function renderSide(parentContainer, map, side) {
     parentContainer.style.opacity = 1;
     parentContainer.classList.add("visible");
   }, 20);
-}
-
-function saveMapOrder(map) {
-  const order = map.elementen.map(el => el.naam);
-  localStorage.setItem("mapOrder_" + map.naam, JSON.stringify(order));
-}
-
-function loadMapOrder(map) {
-  const saved = localStorage.getItem("mapOrder_" + map.naam);
-  if (!saved) return;
-  const order = JSON.parse(saved);
-  map.elementen.sort((a, b) => order.indexOf(a.naam) - order.indexOf(b.naam));
-}
-
-function updateElementPositions(grid, placeholderIndex) {
-  const children = [...grid.children];
-  children.forEach((child, index) => {
-    if (child.classList.contains("dragging") || child.classList.contains("placeholder")) return;
-    let offset = 0;
-    if (index >= placeholderIndex) offset = 1;
-    child.style.transition = "transform 0.2s ease";
-    child.style.transform = `translateX(${offset * 140}px)`; // 140px is slot-width
-  });
-}
-
-function updateElementPositionsDebounced(grid, placeholderIndex) {
-  if (dragUpdateTimeout) clearTimeout(dragUpdateTimeout);
-
-  dragUpdateTimeout = setTimeout(() => {
-    const children = [...grid.children];
-    children.forEach((child, index) => {
-      if (child.classList.contains("dragging") || child.classList.contains("placeholder")) return;
-      let offset = index >= placeholderIndex ? 1 : 0;
-      child.style.transition = "transform 0.3s ease";
-      child.style.transform = `translateX(${offset * 140}px)`;
-    });
-  }, 150);
-}
-
-function getDragAfterElement(container, x, y) {
-  const elements = [...container.querySelectorAll(".icon-container:not(.dragging)")];
-  let closest = { offset: Number.POSITIVE_INFINITY, element: null };
-
-  elements.forEach(child => {
-    const rect = child.getBoundingClientRect();
-    const childCenterX = rect.left + rect.width / 2;
-    const childCenterY = rect.top + rect.height / 2;
-    const offset = Math.hypot(x - childCenterX, y - childCenterY);
-    const thresholdX = rect.width * 0.25;
-    const thresholdY = rect.height * 0.25;
-    if (Math.abs(x - childCenterX) > thresholdX || Math.abs(y - childCenterY) > thresholdY) return;
-
-    if (offset < closest.offset) {
-      closest = { offset, element: child };
-    }
-  });
-  return closest.element;
 }
 
 // ----- HINT ENGINE -----
