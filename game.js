@@ -3048,6 +3048,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Rode algen", "Leca"],
+    hint: `Van rood is het een kleine stap naar bruin.. in het algenmeen.`,
+    output: [
+      { naam: "Bruinwieren", icoon: "icons/Bruinwieren.png", map: "Pril leven", 
+        quote: `Kelp forests are the towering cities of the sea, providing shelter, food, and life to countless marine 
+        organisms
+        <br><br>- Jeremy Jackson`
+      }
+    ]
+  },
+  {
     input: ["Groene algen", "Kalk"],
     hint: `Ook algen kunnen skeletten maken...`,
     tijd: 700_000_000,
@@ -3090,6 +3101,17 @@ const combinaties = [
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
         quote: `Thought, like any parasite, cannot exist without a compliant host
         <br><br>- Bernard Beckett`
+      }
+    ]
+  },
+  {
+    input: ["Bruinwieren", "Bruinwieren"],
+    hint: `Al gedacht aan bossen onder water?`,
+    output: [
+      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png", map: "Landschap", 
+        quote: `Kelp forests are among the most productive and dynamic ecosystems on Earth, forming underwater jungles 
+        that shelter thousands of species
+        <br><br>- Nancy Foster`
       }
     ]
   },
