@@ -7304,9 +7304,11 @@ function renderClosed() {
   grid.className = "grid-closed";
   
   const totalMaps = mappen.length;
-  const cols = totalMaps > 20 ? 5 : 4;
   const itemWidth = totalMaps > 20 ? 130 : 145;
-  grid.style.gridTemplateColumns = `repeat(${cols}, ${itemWidth}px)`;
+  document.querySelectorAll('.grid-closed .icon-container').forEach(container => {
+    container.style.width = `${itemWidth}px`;
+    container.style.flex = `0 0 ${itemWidth}px`; 
+  });
 
   mappen.forEach(map => {
     const container = document.createElement("div");
