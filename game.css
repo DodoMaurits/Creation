@@ -341,7 +341,7 @@ body {
   justify-content: center;
   gap: 20px;
   max-width: 680px;
-  width: auto;
+  width: calc(5 * 130px + 4 * 20px);
   margin: 0 auto;
 }
 
