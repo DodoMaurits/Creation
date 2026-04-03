@@ -6017,7 +6017,7 @@ const combinaties = [
         requirements: ["Vlinders", "Ei", "Steenkool", "Tropisch regenwoud"]
       },
       normal: {
-        achtergrond: "afb/perm.png",
+        achtergrond: "afb/perm.jpg",
         titel: "PERM 299-252 MA",
         tekst: `
         <span>Het supercontinent Pangea werd voltooid en resulteerde in een overwegend continentaal en droger klimaat met
