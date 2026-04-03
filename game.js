@@ -7334,7 +7334,7 @@ function renderClosed() {
     if (unlockedElements.size > 20) {
       const mapIcons = document.querySelectorAll(".icon.map");
       const gridClosed = document.querySelector(".grid-closed");
-      const closedContainerCenter = document.querySelector("#closed-containter.center");
+      const closedContainerCenter = document.querySelector("#closed-container.center");
       mapIcons.forEach(icon => {
         icon.style.width = "130px";
         icon.style.height = "130px";
