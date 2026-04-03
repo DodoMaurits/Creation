@@ -3060,17 +3060,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Rode algen", "Leca"],
-    hint: `Van rood is het een kleine stap naar bruin.. in het algenmeen.`,
-    output: [
-      { naam: "Bruinwieren", icoon: "icons/Bruinwieren.png", map: "Pril leven", 
-        quote: `Kelp forests are the towering cities of the sea, providing shelter, food, and life to countless marine 
-        organisms
-        <br><br>- Jeremy Jackson`
-      }
-    ]
-  },
-  {
     input: ["Groene algen", "Kalk"],
     hint: `Ook algen kunnen skeletten maken...`,
     tijd: 700_000_000,
@@ -3113,17 +3102,6 @@ const combinaties = [
       { naam: "Parasieten", icoon: "icons/Parasieten.png", map: "Pril leven", 
         quote: `Thought, like any parasite, cannot exist without a compliant host
         <br><br>- Bernard Beckett`
-      }
-    ]
-  },
-  {
-    input: ["Bruinwieren", "Bruinwieren"],
-    hint: `Al gedacht aan bossen onder water?`,
-    output: [
-      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png", map: "Landschap", 
-        quote: `Kelp forests are among the most productive and dynamic ecosystems on Earth, forming underwater jungles 
-        that shelter thousands of species
-        <br><br>- Nancy Foster`
       }
     ]
   },
@@ -4237,43 +4215,6 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeslakken", "Zand"], ["Zeeslakken", "Klei"], ["Zeeslakken", "Kust"], ["Zeeslakken", "Strand"], 
-      ["Zeeslakken", "Eiland"], ["Zeeslakken", "Zuurstof"], ["Zeeslakken", "Aarde"]
-    ],
-    hint: `Zo'n schelp zal vast ook van pas komen als je het land op wilt.`,
-    output: [
-      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Klein landleven", 
-        quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
-        <br><br>- Frank Wright`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Slakken", "Bacteriën"], ["Slakken", "Detritus"], ["Slakken", "Blauwalgen"], ["Slakken", "Schimmel"],
-      ["Slakken", "Archaeplastiden"], ["Slakken", "Gist"], ["Slakken", "Rode algen"], ["Slakken", "Groene algen"],
-      ["Slakken", "Roodwieren"], ["Slakken", "Steenwortelalgen"], ["Slakken", "Groenwieren"], ["Slakken", "Mos"], 
-      ["Slakken", "Oervaatplanten"], ["Slakken", "Korstmos"], ["Slakken", "Truffels"], ["Slakken", "Paddenstoelen"],
-      ["Slakken", "Blad"], ["Slakken", "Varens"], ["Slakken", "Oerzaadplanten"]
-    ],
-    output: [
-      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Klein landleven", 
-        quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
-        <br><br>- Frank Wright`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
       ["Tweekleppigen", "Zand"], ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Blauwalgen"], 
       ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"]
     ],
@@ -4600,6 +4541,53 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeslakken", "Zand"], ["Zeeslakken", "Klei"], ["Zeeslakken", "Kust"], ["Zeeslakken", "Strand"], 
+      ["Zeeslakken", "Eiland"], ["Zeeslakken", "Zuurstof"], ["Zeeslakken", "Aarde"]
+    ],
+    hint: `Zo'n schelp zal vast ook van pas komen als je het land op wilt.`,
+    tijd: 420_000_000,
+    output: [
+      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Klein landleven", 
+        quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
+        <br><br>- Frank Wright`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oervaatplanten", 
+        titel: "Probeer opnieuw in het Siluur",
+        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
+        gezet kan worden.
+        <br><br>Eerst nodig: oervaatplanten.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Slakken", "Bacteriën"], ["Slakken", "Detritus"], ["Slakken", "Blauwalgen"], ["Slakken", "Schimmel"],
+      ["Slakken", "Archaeplastiden"], ["Slakken", "Gist"], ["Slakken", "Rode algen"], ["Slakken", "Groene algen"],
+      ["Slakken", "Roodwieren"], ["Slakken", "Steenwortelalgen"], ["Slakken", "Groenwieren"], ["Slakken", "Mos"], 
+      ["Slakken", "Oervaatplanten"], ["Slakken", "Korstmos"], ["Slakken", "Truffels"], ["Slakken", "Paddenstoelen"],
+      ["Slakken", "Blad"], ["Slakken", "Varens"], ["Slakken", "Oerzaadplanten"]
+    ],
+    output: [
+      { naam: "Slakken", icoon: "icons/Slakken.png", map: "Klein landleven", 
+        quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
+        <br><br>- Frank Wright`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
@@ -6640,7 +6628,7 @@ const combinaties = [
   {
     input: ["Oerdinosauriërs", "Evolutie"],
     hint: `Ook dinosauriërs vertakken in vele soorten.`,
-    tijd: 155_000_000,
+    tijd: 201_000_000,
     output: [
       { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
@@ -6665,6 +6653,25 @@ const combinaties = [
     ]
   },
   {
+    input: ["Rode algen", "Leca"],
+    hint: `Van rood is het een kleine stap naar bruin.. in het algenmeen.`,
+    output: [
+      { naam: "Bruinwieren", icoon: "icons/Bruinwieren.png", map: "Pril leven", 
+        quote: `Kelp forests are the towering cities of the sea, providing shelter, food, and life to countless marine 
+        organisms
+        <br><br>- Jeremy Jackson`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oermaniraptoren", 
+        titel: "Probeer opnieuw in het Jura",
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
+        <br><br>Eerst nodig: dinosauriërs.`
+      }
+    }
+  },
+  {
     input: [
       ["Oermaniraptoren", "Evolutie"], ["Oermaniraptoren", "Lucht"]
     ],
@@ -6680,6 +6687,17 @@ const combinaties = [
         quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
         wings, and a skeletal form that could take to the air
         <br><br>- Alan Feduccia`
+      }
+    ]
+  },
+  {
+    input: ["Bruinwieren", "Bruinwieren"],
+    hint: `Al gedacht aan bossen onder water?`,
+    output: [
+      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png", map: "Landschap", 
+        quote: `Kelp forests are among the most productive and dynamic ecosystems on Earth, forming underwater jungles 
+        that shelter thousands of species
+        <br><br>- Nancy Foster`
       }
     ]
   }
