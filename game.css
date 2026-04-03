@@ -317,7 +317,7 @@ body {
 .grid-elements .icon-container {
   display: inline-block;
   position: relative;
-  width: fit-content;
+  width: calc(5 * 130px + 4 * 20px);
   text-align: center;
   transition: transform 0.2s ease;
 }
@@ -341,7 +341,7 @@ body {
   justify-content: center;
   gap: 20px;
   max-width: 680px;
-  width: calc(5 * 130px + 4 * 20px);
+  width: auto;
   margin: 0 auto;
 }
 
