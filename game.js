@@ -6665,7 +6665,27 @@ const combinaties = [
         achtergrond: "afb/jura.png",
         titel: "JURA 201-145 MA",
         tekst: `
-        <span></span>`,
+        <span>Opnieuw vond een grote sterfte aan soorten leven plaats, maar dit keer is de aanleiding tot dusver nog 
+        onbekend. Gedacht wordt aan een meteoriet, klimaatverandering, vulkanisme of het vrijkomen van methaan uit de
+        oceaanbodem. Het heeft de kaarten van het evolutiespel op land flink door elkaar geschud, maar vooral in zee waren 
+        de gevolgen ernstig. Circa 20 procent van de mariene families stierf uit, waaronder veel grote zeereptielen. 
+        De dinosauriërs zouden juist van deze gebeurtenis hebben geprofiteerd en werden nog dominanter op land. 
+        In totaal stierf mogelijk ongeveer 75 procent van alle diersoorten uit.</span>
+        <br><br>
+        <span>Deze periode is vernoemd naar het Jura-gebergte op de Zwitsers-Franse grens, waar veel gesteenten uit deze 
+        tijd aan het oppervlak liggen. Op de zeebodem leefden veel diersoorten die er nu nog zijn, zoals oesters, 
+        slangsterren, zeesterren en zee-egels. In deze periode kwamen ook kreeftachtigen sterk tot ontwikkeling, 
+        waaronder krabben, kreeften, garnalen en zelfs pissebedden (op land). Sommige waterdieren profiteerden van de 
+        Trias-Jura-massaextinctie, waaronder de plesiosauriërs (zeereptielen), ichthyosauriërs (reptielachtige 
+        zeereptielen), haaien en krokodilachtige zeereptielen.</span>
+        <br><br>
+        Op land varieerden soorten dinosauriërs van plantenetende stegosauriërs (met rijen stekels of botplaten op de rug) 
+        en sauropoden (met zeer lange nekken en tevens de langste en zwaarste landdieren die ooit hebben geleefd), tot 
+        vleesetende theropoden en de vliegende pterosauriërs. Zoogdieren waren kleine, onopvallende dieren die meestal 
+        ’s nachts leefden om confrontaties met dinosauriërs uit de weg te gaan, zoals de fruitafossor (een insecteneter 
+        van circa 15 centimeter) of otterachtige viseters. De flora werd gedomineerd door palmvarens, boomvarens en 
+        coniferen of kegeldragers (voorouders van veel naaldbomen), wat wijst op een overwegend warm en vochtig klimaat.
+        </span>`,
       }
     }
   },
