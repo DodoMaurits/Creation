@@ -394,7 +394,7 @@ body {
 }
 
 #closed-container.center {
-  width: 680px; /* 4 icons + gaps */
+  width: fit-content;
 }
 
 #closed-container.side {
