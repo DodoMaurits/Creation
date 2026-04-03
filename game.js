@@ -6761,6 +6761,33 @@ const combinaties = [
   },
 //------------ THRESHOLD 8: KRIJT --------------//
   {
+    input: [
+      ["Zaadjes", "Evolutie"], ["Zaadjes", "Blad"]
+    ],
+    hint: `Het is tijd voor bloemen.`,
+    tijd: 145_000_000,
+    output: [
+      { naam: "Bloem", icoon: "icons/Bloem.png", map: "Biologie", 
+        quote: `You're only here for a short visit. Don't hurry, don't worry. And be sure to smell the flowers along the
+        way
+        <br><br>- Walter Hagen`
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Krijt", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: ["Termieten"]
+      },
+      normal: {
+        achtergrond: "afb/krijt.jpg",
+        titel: "KRIJT 145-66 MA",
+        tekst: `
+        <span></span>`,
+      }
+    }
+  },
+  {
     input: ["Oerhymenopteren", "Evolutie"],
     hint: `Vliesvleugelige insecten hebben nu vrij spel dankzij de bloemmetjes van het Krijt.`,
     tijd: 120_000_000,
@@ -6774,6 +6801,25 @@ const combinaties = [
         quote: `As a bee without harming the flower, its colour or scent, flies away, collecting only the honey, even so
         should the sage wander in the village
         <br><br>- Gautama Buddha`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Bloem", 
+        titel: "Probeer opnieuw in het Krijt",
+        tekst: `De volgorde is eerst de bloem, dan de bij.
+        <br><br>Eerst nodig: eerste bloem.`
+      }
+    }
+  },
+  {
+    input: ["Bijen", "Bloem"],
+    hint: `Sommige bloemen en insecten zijn goed in lekkernijen.`,
+    output: [
+      { naam: "Honing", icoon: "icons/Honing.png", map: "Voedsel", 
+        quote: `Honey is the only food which includes all the substances necessary to sustain life, including enzymes, 
+        vitamins, minerals, and water
+        <br><br>- John Kellogg`
       }
     ]
   }
