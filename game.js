@@ -4483,11 +4483,11 @@ const combinaties = [
         by virtue of its spirit, penetrates the mass and transforms it into its own nature
         <br><br>- Andreas Libavius`
       },
-      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Vruchten",
+      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Voedsel",
         quote: `All fungi are edible. Some fungi are only edible once
         <br><br>- Terry Pratchett`
       },
-      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Vruchten",
+      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Voedsel",
         quote: `Nature alone is antique, and the oldest art a mushroom
         <br><br>- Thomas Carlyle`
       }
@@ -4520,7 +4520,7 @@ const combinaties = [
   {
     input: ["Truffels", "Detritus"],
     output: [
-      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Vruchten",
+      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Voedsel",
         quote: `All fungi are edible. Some fungi are only edible once
         <br><br>- Terry Pratchett`
       },
@@ -4534,7 +4534,7 @@ const combinaties = [
   {
     input: ["Paddenstoelen", "Detritus"],
     output: [
-      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Vruchten",
+      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Voedsel",
         quote: `Nature alone is antique, and the oldest art a mushroom
         <br><br>- Thomas Carlyle`
       },
@@ -6777,7 +6777,7 @@ const groepsIconen = {
   "Vissen": "icons/Vissen.png",
   "Geleedpotigen": "icons/Geleedpotigen.png",
   "Klein landleven": "icons/Klein landleven.png",
-  "Vruchten": "icons/Vruchten.png",
+  "Voedsel": "icons/Voedsel.png",
   "Reptielen": "icons/Reptielen.png",
   "Samenleving": "icons/Samenleving.png",
   "Zoogdieren": "icons/Zoogdieren.png",
