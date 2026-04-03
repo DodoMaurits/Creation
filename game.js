@@ -7314,7 +7314,7 @@ function renderClosed() {
 
     container.appendChild(img);
     
-    // ✅ permanente tooltip op mobiel
+    // Permanente tooltip op mobiel
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
         const tooltip = document.createElement("div");
         tooltip.className = "tooltip";
@@ -7328,9 +7328,20 @@ function renderClosed() {
   });
 
   closedContainer.appendChild(grid);
-
+  
   requestAnimationFrame(() => {
     updateClosedContainer();
+    if (unlockedElements.size > 20) {
+      const mapIcons = document.querySelectorAll(".icon.map");
+      const gridClosed = document.querySelector(".grid-closed");
+      const closedContainerCenter = document.querySelector("#closed-containter.center");
+      mapIcons.forEach(icon => {
+        icon.style.width = "130px";
+        icon.style.height = "130px";
+      });
+      if (gridClosed) gridClosed.style.maxWidth = "730px";
+      if (closedContainerCenter) closedContainerCenter.style.width = "730px";
+    }
     closedContainer.style.opacity = 1;
   });
 }
