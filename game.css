@@ -340,7 +340,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 680px;
+  max-width: calc(5 * 130px + 5 * 20px);
   width: auto;
   margin: 0 auto;
 }
