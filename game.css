@@ -331,7 +331,6 @@ body {
 /* ---------------- GRID LAYOUTS ---------------- */
 .grid-elements {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
   justify-content: center;
   column-gap: 50px;
   row-gap: 20px;
