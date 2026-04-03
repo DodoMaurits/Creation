@@ -1883,6 +1883,10 @@ const combinaties = [
       ["Oersynapsiden", "Radioactiviteit"], ["Oersynapsiden", "Gif"],
       ["Oeranapsiden", "Radioactiviteit"], ["Oeranapsiden", "Gif"],
       ["Oerdiapsiden", "Radioactiviteit"], ["Oerdiapsiden", "Gif"],
+      ["Pterosauriërs", "Radioactiviteit"], ["Pterosauriërs", "Gif"],
+      ["Lepidosauriërs", "Radioactiviteit"], ["Lepidosauriërs", "Gif"],
+      ["Crurotarsi", "Radioactiviteit"], ["Crurotarsi", "Gif"],
+      ["Oerdinosauriërs", "Radioactiviteit"], ["Oerdinosauriërs", "Gif"],
       ["Schildpadden", "Radioactiviteit"], ["Schildpadden", "Gif"],
       ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
       ["Oercynodonten", "Radioactiviteit"], ["Oercynodonten", "Gif"]
@@ -1983,7 +1987,8 @@ const combinaties = [
       ["Coelacanthen", "Lava"], ["Tiktaalik", "Lava"], ["Longvissen", "Lava"], ["Oerchondrostei", "Lava"],
       ["Wimpelalen", "Lava"], ["Oerneopterygen", "Lava"], ["Oertetrapoden", "Lava"], ["Salamanders", "Lava"],
       ["Kikkers", "Lava"], ["Padden", "Lava"], ["Oersynapsiden", "Lava"], ["Oeranapsiden", "Lava"],
-      ["Oerdiapsiden", "Lava"], ["Schildpadden", "Lava"], ["Zeeschildpadden", "Lava"], ["Oercynodonten", "Lava"]
+      ["Oerdiapsiden", "Lava"], ["Pterosauriërs", "Lava"], ["Lepidosauriërs", "Lava"], ["Crurotarsi", "Lava"],
+      ["Oerdinosauriërs", "Lava"], ["Schildpadden", "Lava"], ["Zeeschildpadden", "Lava"], ["Oercynodonten", "Lava"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2003,7 +2008,8 @@ const combinaties = [
       ["Coelacanthen", "Vuur"], ["Tiktaalik", "Vuur"], ["Longvissen", "Vuur"], ["Oerchondrostei", "Vuur"],
       ["Wimpelalen", "Vuur"], ["Oerneopterygen", "Vuur"], ["Oertetrapoden", "Vuur"], ["Salamanders", "Vuur"],
       ["Kikkers", "Vuur"], ["Padden", "Vuur"], ["Oersynapsiden", "Vuur"], ["Oeranapsiden", "Vuur"], 
-      ["Oerdiapsiden", "Vuur"], ["Schildpadden", "Vuur"], ["Oercynodonten", "Vuur"]
+      ["Oerdiapsiden", "Vuur"], ["Pterosauriërs", "Vuur"], ["Lepidosauriërs", "Vuur"], ["Crurotarsi", "Vuur"],
+      ["Oerdinosauriërs", "Vuur"], ["Schildpadden", "Vuur"], ["Oercynodonten", "Vuur"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2053,7 +2059,8 @@ const combinaties = [
       ["Coelacanthen", "Dood"], ["Tiktaalik", "Dood"], ["Longvissen", "Dood"], ["Oerchondrostei", "Dood"], 
       ["Wimpelalen", "Dood"], ["Oerneopterygen", "Dood"], ["Oertetrapoden", "Dood"], ["Salamanders", "Dood"], 
       ["Kikkers", "Dood"], ["Padden", "Dood"], ["Oersynapsiden", "Dood"], ["Oeranapsiden", "Dood"], 
-      ["Oerdiapsiden", "Dood"], ["Schildpadden", "Dood"], ["Zeeschildpadden", "Dood"], ["Oercynodonten", "Dood"]
+      ["Oerdiapsiden", "Dood"], ["Pterosauriërs", "Dood"], ["Lepidosauriërs", "Dood"], ["Crurotarsi", "Dood"],
+      ["Oerdinosauriërs", "Dood"], ["Schildpadden", "Dood"], ["Zeeschildpadden", "Dood"], ["Oercynodonten", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2973,7 +2980,8 @@ const combinaties = [
       ["Holocefalen", "Zenuwen"], ["Wimpelalen", "Zenuwen"], ["Oerneopterygen", "Zenuwen"], ["Kevers", "Zenuwen"],
       ["Muggen", "Zenuwen"], ["Vliegen", "Zenuwen"], ["Vlinders", "Zenuwen"], ["Oertetrapoden", "Zenuwen"],
       ["Salamanders", "Zenuwen"], ["Kikkers", "Zenuwen"], ["Padden", "Zenuwen"], ["Oersynapsiden", "Zenuwen"],
-      ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Sprinkhanen", "Zenuwen"], ["Schildpadden", "Zenuwen"],
+      ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Sprinkhanen", "Zenuwen"], ["Pterosauriërs", "Zenuwen"],
+      ["Lepidosauriërs", "Zenuwen"], ["Crurotarsi", "Zenuwen"], ["Oerdinosauriërs", "Zenuwen"], ["Schildpadden", "Zenuwen"],
       ["Zeeschildpadden", "Zenuwen"]
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
@@ -3584,6 +3592,10 @@ const combinaties = [
       ["Oersynapsiden", "Storm"], ["Oersynapsiden", "Orkaan"], ["Oersynapsiden", "Pijn"],
       ["Oeranapsiden", "Storm"], ["Oeranapsiden", "Orkaan"], ["Oeranapsiden", "Pijn"],
       ["Oerdiapsiden", "Storm"], ["Oerdiapsiden", "Orkaan"], ["Oerdiapsiden", "Pijn"],
+      ["Pterosauriërs", "Storm"], ["Pterosauriërs", "Orkaan"], ["Pterosauriërs", "Pijn"],
+      ["Lepidosauriërs", "Storm"], ["Lepidosauriërs", "Orkaan"], ["Lepidosauriërs", "Pijn"],
+      ["Crurotarsi", "Storm"], ["Crurotarsi", "Orkaan"], ["Crurotarsi", "Pijn"],
+      ["Oerdinosauriërs", "Storm"], ["Oerdinosauriërs", "Orkaan"], ["Oerdinosauriërs", "Pijn"],
       ["Schildpadden", "Storm"], ["Schildpadden", "Orkaan"], ["Schildpadden", "Pijn"],
       ["Zeeschildpadden", "Storm"], ["Zeeschildpadden", "Orkaan"], ["Zeeschildpadden", "Pijn"],
       ["Oercynodonten", "storm"], ["Oercynodonten", "Orkaan"], ["Oercynodonten", "Pijn"]
@@ -3759,6 +3771,13 @@ const combinaties = [
       ["Oeranapsiden", "Parasieten"],
       ["Oerdiapsiden", "Bacteriën"], ["Oerdiapsiden", "Virus"], ["Oerdiapsiden", "Schimmel"], 
       ["Oerdiapsiden", "Parasieten"],
+      ["Pterosauriërs", "Bacteriën"], ["Pterosauriërs", "Virus"], ["Pterosauriërs", "Schimmel"], 
+      ["Pterosauriërs", "Parasieten"],
+      ["Lepidosauriërs", "Bacteriën"], ["Lepidosauriërs", "Virus"], ["Lepidosauriërs", "Schimmel"], 
+      ["Lepidosauriërs", "Parasieten"],
+      ["Crurotarsi", "Bacteriën"], ["Crurotarsi", "Virus"], ["Crurotarsi", "Schimmel"], ["Crurotarsi", "Parasieten"],
+      ["Oerdinosauriërs", "Bacteriën"], ["Oerdinosauriërs", "Virus"], ["Oerdinosauriërs", "Schimmel"], 
+      ["Oerdinosauriërs", "Parasieten"],
       ["Schildpadden", "Bacteriën"], ["Schildpadden", "Virus"], ["Schildpadden", "Schimmel"], 
       ["Schildpadden", "Parasieten"],
       ["Zeeschildpadden", "Bacteriën"], ["Zeeschildpadden", "Virus"], ["Zeeschildpadden", "Schimmel"], 
@@ -3789,9 +3808,10 @@ const combinaties = [
       ["Kevers", "Kevers"], ["Muggen", "Muggen"], ["Vliegen", "Vliegen"], ["Vlinders", "Vlinders"], 
       ["Oertetrapoden", "Oertetrapoden"], ["Salamanders", "Salamanders"], ["Kikkers", "Kikkers"], ["Padden", "Padden"],
       ["Oersynapsiden", "Oersynapsiden"], ["Oeranapsiden", "Oeranapsiden"], ["Oerdiapsiden", "Oerdiapsiden"],
-      ["Krekels", "Krekels"], ["Sprinkhanen", "Sprinkhanen"], ["Wandelende takken", "Wandelende takken"], 
-      ["Kakkerlakken", "Kakkerlakken"], ["Schildpadden", "Schildpadden"], ["Zeeschildpadden", "Zeeschildpadden"],
-      ["Oercynodonten", "Oercynodonten"]
+      ["Pterosauriërs", "Pterosauriërs"], ["Lepidosauriërs", "Lepidosauriërs"], ["Crurotarsi", "Crurotarsi"], 
+      ["Oerdinosauriërs", "Oerdinosauriërs"], ["Krekels", "Krekels"], ["Sprinkhanen", "Sprinkhanen"], 
+      ["Wandelende takken", "Wandelende takken"], ["Kakkerlakken", "Kakkerlakken"], ["Schildpadden", "Schildpadden"], 
+      ["Zeeschildpadden", "Zeeschildpadden"], ["Oercynodonten", "Oercynodonten"]
     ],
     hint: `Hm.. dieren van dezelfde soorten kunnen behoorlijk anders op elkaar reageren.`, 
     output: [
@@ -4144,6 +4164,18 @@ const combinaties = [
       ["Oerdiapsiden", "Explosie"], ["Oerdiapsiden", "Noorderlicht"], ["Oerdiapsiden", "Bliksem"],
       ["Oerdiapsiden", "Sneeuw"], ["Oerdiapsiden", "Hagel"], ["Oerdiapsiden", "Bolbliksem"],
       ["Oerdiapsiden", "Overstroming"], 
+      ["Pterosauriërs", "Explosie"], ["Pterosauriërs", "Noorderlicht"], ["Pterosauriërs", "Bliksem"],
+      ["Pterosauriërs", "Sneeuw"], ["Pterosauriërs", "Hagel"], ["Pterosauriërs", "Bolbliksem"],
+      ["Pterosauriërs", "Overstroming"], 
+      ["Lepidosauriërs", "Explosie"], ["Lepidosauriërs", "Noorderlicht"], ["Lepidosauriërs", "Bliksem"],
+      ["Lepidosauriërs", "Sneeuw"], ["Lepidosauriërs", "Hagel"], ["Lepidosauriërs", "Bolbliksem"],
+      ["Lepidosauriërs", "Overstroming"], 
+      ["Crurotarsi", "Explosie"], ["Crurotarsi", "Noorderlicht"], ["Crurotarsi", "Bliksem"],
+      ["Crurotarsi", "Sneeuw"], ["Crurotarsi", "Hagel"], ["Crurotarsi", "Bolbliksem"],
+      ["Crurotarsi", "Overstroming"], 
+      ["Oerdinosauriërs", "Explosie"], ["Oerdinosauriërs", "Noorderlicht"], ["Oerdinosauriërs", "Bliksem"],
+      ["Oerdinosauriërs", "Sneeuw"], ["Oerdinosauriërs", "Hagel"], ["Oerdinosauriërs", "Bolbliksem"],
+      ["Oerdinosauriërs", "Overstroming"], 
       ["Schildpadden", "Explosie"], ["Schildpadden", "Noorderlicht"], ["Schildpadden", "Bliksem"], 
       ["Schildpadden", "Sneeuw"], ["Schildpadden", "Hagel"], ["Schildpadden", "Bolbliksem"],
       ["Schildpadden", "Overstroming"], 
@@ -5085,8 +5117,8 @@ const combinaties = [
       ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Tiktaalik"], ["Haaien", "Longvissen"], 
       ["Haaien", "Holocefalen"], ["Haaien", "Oerchondrostei"], ["Haaien", "Wimpelalen"], ["Haaien", "Oerneopterygen"], 
       ["Haaien", "Oertetrapoden"], ["Haaien", "Salamanders"], ["Haaien", "Kikkers"], ["Haaien", "Padden"], 
-      ["Haaien", "Oersynapsiden"], ["Haaien", "Oeranapsiden"], ["Haaien", "Oerdiapsiden"], ["Haaien", "Schildpadden"],
-      ["Haaien", "Zeeschildpadden"]
+      ["Haaien", "Oersynapsiden"], ["Haaien", "Oeranapsiden"], ["Haaien", "Oerdiapsiden"], ["Haaien", "Lepidosauriërs"], 
+      ["Haaien", "Crurotarsi"], ["Haaien", "Oerdinosauriërs"], ["Haaien", "Schildpadden"], ["Haaien", "Zeeschildpadden"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -6245,6 +6277,222 @@ const combinaties = [
         <br><br>Eerst nodig: eerste zoogdieren.`
       }
     }
+  },
+  {
+    input: [
+      ["Pterosauriërs", "Wormen"], ["Pterosauriërs", "Oergeleedpotigen"], ["Pterosauriërs", "Oercheliceraten"],
+      ["Pterosauriërs", "Duizendpoten"], ["Pterosauriërs", "Oerkreeftjes"], ["Pterosauriërs", "Oerinsecten"], 
+      ["Pterosauriërs", "Spinnen"], ["Pterosauriërs", "Mijten"], ["Pterosauriërs", "Pissebedden"], 
+      ["Pterosauriërs", "Zilvervisjes"], ["Pterosauriërs", "Oerpolyneopteren"], ["Pterosauriërs", "Oerhymenopteren"], 
+      ["Pterosauriërs", "Luizen"], ["Pterosauriërs", "Kevers"], ["Pterosauriërs", "Muggen"], ["Pterosauriërs", "Vliegen"], 
+      ["Pterosauriërs", "Vlinders"], ["Pterosauriërs", "Krekels"], ["Pterosauriërs", "Sprinkhanen"], 
+      ["Pterosauriërs", "Wandelende takken"], ["Pterosauriërs", "Kakkerlakken"], ["Pterosauriërs", "Termieten"]
+    ],
+    output: [
+      { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+        quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
+        unlike anything seen before or since.
+        <br><br>- David Unwin`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Pterosauriërs", "Zwaardstaarten"], ["Pterosauriërs", "Oertetrapoden"], ["Pterosauriërs", "Oercynodonten"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+        quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
+        unlike anything seen before or since.
+        <br><br>- David Unwin`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Lepidosauriërs", "Wormen"], ["Lepidosauriërs", "Oergeleedpotigen"], ["Lepidosauriërs", "Oercheliceraten"],
+      ["Lepidosauriërs", "Duizendpoten"], ["Lepidosauriërs", "Oerkreeftjes"], ["Lepidosauriërs", "Oerinsecten"], 
+      ["Lepidosauriërs", "Spinnen"], ["Lepidosauriërs", "Mijten"], ["Lepidosauriërs", "Pissebedden"], 
+      ["Lepidosauriërs", "Zilvervisjes"], ["Lepidosauriërs", "Oerpolyneopteren"], ["Lepidosauriërs", "Oerhymenopteren"], 
+      ["Lepidosauriërs", "Luizen"], ["Lepidosauriërs", "Kevers"], ["Lepidosauriërs", "Muggen"], 
+      ["Lepidosauriërs", "Vliegen"], ["Lepidosauriërs", "Vlinders"], ["Lepidosauriërs", "Krekels"], 
+      ["Lepidosauriërs", "Sprinkhanen"], ["Lepidosauriërs", "Wandelende takken"], ["Lepidosauriërs", "Kakkerlakken"], 
+      ["Lepidosauriërs", "Termieten"]
+    ],
+    output: [
+      { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+        quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
+        the finest details of their surroundings
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Lepidosauriërs", "Zwaardstaarten"], ["Lepidosauriërs", "Oertetrapoden"], ["Lepidosauriërs", "Oercynodonten"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+        quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
+        the finest details of their surroundings
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Crurotarsi", "Wormen"], ["Crurotarsi", "Oergeleedpotigen"], ["Crurotarsi", "Oercheliceraten"],
+      ["Crurotarsi", "Duizendpoten"], ["Crurotarsi", "Oerkreeftjes"], ["Crurotarsi", "Oerinsecten"], 
+      ["Crurotarsi", "Spinnen"], ["Crurotarsi", "Mijten"], ["Crurotarsi", "Pissebedden"], 
+      ["Crurotarsi", "Zilvervisjes"], ["Crurotarsi", "Oerpolyneopteren"], ["Crurotarsi", "Oerhymenopteren"], 
+      ["Crurotarsi", "Luizen"], ["Crurotarsi", "Kevers"], ["Crurotarsi", "Muggen"], ["Crurotarsi", "Vliegen"], 
+      ["Crurotarsi", "Vlinders"], ["Crurotarsi", "Krekels"], ["Crurotarsi", "Sprinkhanen"], 
+      ["Crurotarsi", "Wandelende takken"], ["Crurotarsi", "Kakkerlakken"], ["Crurotarsi", "Termieten"]
+    ],
+    output: [
+      { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+        quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
+        efficiency that has changed little over time
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Crurotarsi", "Zwaardstaarten"], ["Crurotarsi", "Oertetrapoden"], ["Crurotarsi", "Oercynodonten"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+        quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
+        efficiency that has changed little over time
+        <br><br>- David Attenborough`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ] 
+  },
+  {
+    input: [
+      ["Oerdinosauriërs", "Wormen"], ["Oerdinosauriërs", "Oergeleedpotigen"], ["Oerdinosauriërs", "Oercheliceraten"],
+      ["Oerdinosauriërs", "Duizendpoten"], ["Oerdinosauriërs", "Oerkreeftjes"], ["Oerdinosauriërs", "Oerinsecten"], 
+      ["Oerdinosauriërs", "Spinnen"], ["Oerdinosauriërs", "Mijten"], ["Oerdinosauriërs", "Pissebedden"], 
+      ["Oerdinosauriërs", "Zilvervisjes"], ["Oerdinosauriërs", "Oerpolyneopteren"], ["Oerdinosauriërs", "Oerhymenopteren"], 
+      ["Oerdinosauriërs", "Luizen"], ["Oerdinosauriërs", "Kevers"], ["Oerdinosauriërs", "Muggen"], 
+      ["Oerdinosauriërs", "Vliegen"], ["Oerdinosauriërs", "Vlinders"], ["Oerdinosauriërs", "Krekels"], 
+      ["Oerdinosauriërs", "Sprinkhanen"], ["Oerdinosauriërs", "Wandelende takken"], ["Oerdinosauriërs", "Kakkerlakken"], 
+      ["Oerdinosauriërs", "Termieten"]
+    ],
+    output: [
+      { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
+        quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
+        <br><br>- Robert Bakker`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]  
+  },
+  {
+    input: [
+      ["Crurotarsi", "Zwaardstaarten"], ["Crurotarsi", "Oertetrapoden"], ["Crurotarsi", "Oercynodonten"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
+        quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
+        <br><br>- Robert Bakker`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ] 
   },
   {
     input: ["Oeranapsiden", "Evolutie"],
