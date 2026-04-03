@@ -339,6 +339,9 @@ body {
 
 .grid-closed {
   display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  justify-content: center;
   gap: 20px;
   width: fit-content;
   margin: 0 auto;
