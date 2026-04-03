@@ -6648,8 +6648,8 @@ const combinaties = [
         <br><br>- Philip Currie`
       },
       { naam: "Sauropoden", icoon: "icons/Sauropoden.png", map: "Reptielen", 
-        quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
-        the evolutionary roots of modern birds
+        quote: `Sauropods were the gentle giants of the Mesozoic, moving with ponderous grace, their immense bodies 
+        shaping the landscapes they traversed
         <br><br>- John McIntosh`
       },
       { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
@@ -7336,7 +7336,7 @@ function renderClosed() {
   
   requestAnimationFrame(() => {
     updateClosedContainer();
-    if (unlockedMaps.size > 20) {
+    if (totalMaps.size > 20) {
       const mapIcons = document.querySelectorAll(".icon.map");
       const gridClosed = document.querySelector(".grid-closed");
       const closedContainerCenter = document.querySelector("#closed-container.center");
