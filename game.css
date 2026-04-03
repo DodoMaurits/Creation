@@ -317,7 +317,7 @@ body {
 .grid-elements .icon-container {
   display: inline-block;
   position: relative;
-  width: calc(5 * 130px + 4 * 20px);
+  width: fit-content;
   text-align: center;
   transition: transform 0.2s ease;
 }
@@ -396,7 +396,7 @@ body {
 }
 
 #closed-container.center {
-  width: fit-content;
+  width: calc(5 * 130px + 4 * 20px);
 }
 
 #closed-container.side {
