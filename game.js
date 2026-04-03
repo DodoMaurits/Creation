@@ -94,7 +94,7 @@ const combinaties = [
       { naam: "18", icoon: "icons/.png", map: "18", quote: `.`},
       { naam: "19", icoon: "icons/.png", map: "19", quote: `.`},
       { naam: "20", icoon: "icons/.png", map: "20", quote: `.`},
-      { naam: "21", icoon: "icons/.png", map: "21", quote: `.`},
+      { naam: "21", icoon: "icons/.png", map: "21", quote: `.`}
     ],
     uitleg: {
       threshold: {
