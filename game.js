@@ -6533,7 +6533,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Termieten", "Termieten"],
+    input: [
+      ["Termieten", "Termieten"], ["Mieren", "Mieren"]
+    ],
     hint: `De eerste samenlevingen werden gebouwd door eusociale dieren als termieten en mieren.`,
     output: [
       { naam: "Hiërarchie", icoon: "icons/Hierarchie.png", map: "Samenleving", 
@@ -6607,7 +6609,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Hiërarchie", "Termieten"],
+    input: [
+      ["Hiërarchie", "Termieten"], ["Hiërarchie", "Mieren"]
+    ],
     hint: `Kijk wat hiërarchie zoal kan brengen...`,
     output: [
       { naam: "Werk", icoon: "icons/Werk.png", map: "Samenleving", 
@@ -6650,7 +6654,20 @@ const combinaties = [
         for both hunting and intimidation
         <br><br>- Jack Horner`
       }
-    ]
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Jura", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: ["Schildpadden"]
+      },
+      normal: {
+        achtergrond: "afb/jura.png",
+        titel: "JURA 201-145 MA",
+        tekst: `
+        <span></span>`,
+      }
+    }
   },
   {
     input: ["Rode algen", "Leca"],
@@ -6700,8 +6717,25 @@ const combinaties = [
         <br><br>- Nancy Foster`
       }
     ]
-  }
+  },
 //------------ THRESHOLD 8: KRIJT --------------//
+  {
+    input: ["Oerhymenopteren", "Evolutie"],
+    hint: `Vliesvleugelige insecten hebben nu vrij spel dankzij de bloemmetjes van het Krijt.`,
+    tijd: 120_000_000,
+    output: [
+      { naam: "Mieren", icoon: "icons/Mieren.png", map: "Klein landleven", 
+        quote: `Ants are good citizens, they place group interest first; but they carry it so far, they have few or no 
+        political rights. An ant doesn't have the vote, apparently; he just has his duties
+        <br><br>- Clarence Day`
+      },
+      { naam: "Bijen", icoon: "icons/Bijen.png", map: "Klein landleven", 
+        quote: `As a bee without harming the flower, its colour or scent, flies away, collecting only the honey, even so
+        should the sage wander in the village
+        <br><br>- Gautama Buddha`
+      }
+    ]
+  }
 ];
 
 
