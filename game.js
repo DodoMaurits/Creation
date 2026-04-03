@@ -6633,7 +6633,31 @@ const combinaties = [
         <br><br>- Aristoteles`
       }
     ]
+  },
+//------------ THRESHOLD 7: JURA --------------//
+  {
+    input: ["Oerdinosauriërs", "Evolutie"],
+    hint: `Ook dinosauriërs vertakken in vele soorten.`,
+    output: [
+      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Vogels", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Sauropoden", icoon: "icons/Sauropoden.png", map: "Reptielen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Tyrannosauriërs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
+        quote: `
+        <br><br>- `
+      }
+    ]
   }
+//------------ THRESHOLD 8: KRIJT --------------//
 ];
 
 
@@ -6657,7 +6681,8 @@ const groepsIconen = {
   "Vruchten": "icons/Vruchten.png",
   "Reptielen": "icons/Reptielen.png",
   "Samenleving": "icons/Samenleving.png",
-  "Zoogdieren": "icons/Zoogdieren.png"
+  "Zoogdieren": "icons/Zoogdieren.png",
+  "Vogels": "icons/Vogels.png"
 };
 
 // ----- STATE -----
