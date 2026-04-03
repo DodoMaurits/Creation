@@ -7306,6 +7306,8 @@ function renderClosed() {
   const totalMaps = mappen.length;
   const cols = totalMaps > 20 ? 5 : 4;
   grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+  grid.style.justifyContent = "center";
+  grid.style.justifyItems = "center";
 
   mappen.forEach(map => {
     const container = document.createElement("div");
