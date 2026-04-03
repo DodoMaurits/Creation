@@ -73,7 +73,28 @@ const combinaties = [
       { naam: "Atomen", icoon: "icons/Atomen.png", map: "Chemie",
         quote: `In reality, nothing but atoms and the void 
         <br><br>- Democritos`
-      }
+      },
+      { naam: "1", icoon: "icons/.png", map: "1", quote: `.`},
+      { naam: "2", icoon: "icons/.png", map: "2", quote: `.`},
+      { naam: "3", icoon: "icons/.png", map: "3", quote: `.`},
+      { naam: "4", icoon: "icons/.png", map: "4", quote: `.`},
+      { naam: "5", icoon: "icons/.png", map: "5", quote: `.`},
+      { naam: "6", icoon: "icons/.png", map: "6", quote: `.`},
+      { naam: "7", icoon: "icons/.png", map: "7", quote: `.`},
+      { naam: "8", icoon: "icons/.png", map: "8", quote: `.`},
+      { naam: "9", icoon: "icons/.png", map: "9", quote: `.`},
+      { naam: "10", icoon: "icons/.png", map: "10", quote: `.`},
+      { naam: "11", icoon: "icons/.png", map: "11", quote: `.`},
+      { naam: "12", icoon: "icons/.png", map: "12", quote: `.`},
+      { naam: "13", icoon: "icons/.png", map: "13", quote: `.`},
+      { naam: "14", icoon: "icons/.png", map: "14", quote: `.`},
+      { naam: "15", icoon: "icons/.png", map: "15", quote: `.`},
+      { naam: "16", icoon: "icons/.png", map: "16", quote: `.`},
+      { naam: "17", icoon: "icons/.png", map: "17", quote: `.`},
+      { naam: "18", icoon: "icons/.png", map: "18", quote: `.`},
+      { naam: "19", icoon: "icons/.png", map: "19", quote: `.`},
+      { naam: "20", icoon: "icons/.png", map: "20", quote: `.`},
+      { naam: "21", icoon: "icons/.png", map: "21", quote: `.`},
     ],
     uitleg: {
       threshold: {
@@ -7278,19 +7299,13 @@ function renderClosed() {
   closedContainer.classList.remove("hidden", "left", "right");
   closedContainer.style.transition = "opacity 0.3s ease";
   closedContainer.style.opacity = 0;
-
+  
   const grid = document.createElement("div");
   grid.className = "grid-closed";
   
-  // Dynamische kolommen afhankelijk van aantal maps
   const totalMaps = mappen.length;
-  if (totalMaps <= 20) {
-    cols = 4;
-  } else if (totalMaps <= 100) { 
-    cols = 5;
-  } else {
-    cols = Math.ceil(Math.sqrt(totalMaps));
-  }
+  const cols = totalMaps > 20 ? 5 : 4;
+  grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
 
   mappen.forEach(map => {
     const container = document.createElement("div");
