@@ -202,8 +202,6 @@ body {
   pointer-events: none;
 }
 
-.grid-elements .icon-container { transition: transform 0.2s ease; }
-
 .icon-container:not(.dragging):hover {
   transform: scale(1.05);
 }
@@ -321,6 +319,7 @@ body {
   position: relative;
   width: fit-content;
   text-align: center;
+  transition: transform 0.2s ease;
 }
 
 .grid-elements .icon-container .tooltip {
