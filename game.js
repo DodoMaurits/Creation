@@ -4221,8 +4221,9 @@ const combinaties = [
     hint: `Oh wat kan die zandkorrel irritant zijn voor schelpdieren.`,
     output: [
       { naam: "Parel", icoon: "icons/Parel.png", map: "Biologie", 
-        quote: `The world is your oyster. It's up to you to find the pearls
-        <br><br>- Chris Gardner`
+        quote: `We build a shell around it, like an oyster dealing with a painful particle of grit, coating it 
+        with smooth pearl layers in order to cope
+        <br><br>- Neil Gaiman`
       }
     ]
   },
