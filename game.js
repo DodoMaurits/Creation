@@ -6214,6 +6214,39 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerdiapsiden", "Evolutie"],
+    hint: `Reptielen verspreidden al snel naar water, land en lucht.`,
+    output: [
+      { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+        quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
+        unlike anything seen before or since.
+        <br><br>- David Unwin`
+      },
+      { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+        quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
+        the finest details of their surroundings
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+        quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
+        efficiency that has changed little over time
+        <br><br>- David Attenborough`
+      },
+      { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
+        quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
+        <br><br>- Robert Bakker`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oercynodonten", 
+        titel: "Probeer opnieuw in het Perm",
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
+        <br><br>Eerst nodig: eerste zoogdieren.`
+      }
+    }
+  },
+  {
     input: ["Oeranapsiden", "Evolutie"],
     hint: `Er is er maar 1 overgebleven van de anapsiden, maar wie...`,
     output: [
