@@ -7302,18 +7302,6 @@ function renderClosed() {
   
   const grid = document.createElement("div");
   grid.className = "grid-closed";
-  
-  const totalMaps = mappen.length;
-  const itemWidth = totalMaps > 20 ? 130 : 145;
-  grid.querySelectorAll("#closed-container").forEach(container => {
-    container.style.width = `${itemWidth}px`;
-    container.style.flex = `0 0 ${itemWidth}px`; 
-    const img = containre.querySelector("img.icon.map");
-    if (img) {
-      img.style.width = `${itemWidth}px`;
-      img.style.height = `$(itemWidht}px`;
-    }
-  });
 
   mappen.forEach(map => {
     const container = document.createElement("div");
