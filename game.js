@@ -6248,6 +6248,7 @@ const combinaties = [
   {
     input: ["Oerdiapsiden", "Evolutie"],
     hint: `Reptielen verspreidden al snel naar water, land en lucht.`,
+    tijd: 230_000_000,
     output: [
       { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
         quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
@@ -6497,6 +6498,7 @@ const combinaties = [
   {
     input: ["Oeranapsiden", "Evolutie"],
     hint: `Er is er maar 1 overgebleven van de anapsiden, maar wie...`,
+    tijd: 260_000_000,
     output: [
       { naam: "Schildpadden", icoon: "icons/Schildpadden.png", map: "Reptielen", 
         quote: `Slow but steady wins the race
@@ -6638,22 +6640,46 @@ const combinaties = [
   {
     input: ["Oerdinosauriërs", "Evolutie"],
     hint: `Ook dinosauriërs vertakken in vele soorten.`,
+    tijd: 155_000_000,
     output: [
-      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Vogels", 
-        quote: `
-        <br><br>- `
+      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+        quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
+        the evolutionary roots of modern birds
+        <br><br>- Philip Currie`
       },
       { naam: "Sauropoden", icoon: "icons/Sauropoden.png", map: "Reptielen", 
-        quote: `
-        <br><br>- `
+        quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
+        the evolutionary roots of modern birds
+        <br><br>- John McIntosh`
       },
       { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
-        quote: `
-        <br><br>- `
+        quote: `Stegosaurs are among the most iconic of dinosaurs, with their plated backs and spiked tails, suggesting 
+        both defense and display in equal measure
+        <br><br>- Peter Galton`
       },
       { naam: "Tyrannosauriërs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
-        quote: `
-        <br><br>- `
+        quote: `Tyrannosaurs were the apex predators of their time, with massive skulls, powerful jaws, and a body built 
+        for both hunting and intimidation
+        <br><br>- Jack Horner`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oermaniraptoren", "Evolutie"], ["Oermaniraptoren", "Lucht"]
+    ],
+    hint: `Wie o wie voelt zich vogelvrij genoeg?`,
+    tijd: 150_000_000,
+    output: [
+      { naam: "Veer", icoon: "icons/Veer.png", map: "Biologie", 
+        quote: `Let me be as a feather strong, with purpose, yet light at heart, able to bend, and, tho I might become
+        frayed, able to pull myself together again
+        <br><br>- Anita Sams`
+      },
+      { naam: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
+        quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
+        wings, and a skeletal form that could take to the air
+        <br><br>- Alan Feduccia`
       }
     ]
   }
