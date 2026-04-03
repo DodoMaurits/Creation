@@ -2429,7 +2429,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Amoeben", "Evolutie"], ["Amoeben", "Amoeben"]
+      ["Amoeben", "Evolutie"], ["Amoeben", "Amoeben"], ["Slakken", "Glucose"]
     ],
     hint: `Als Amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
     tijd: 900_000_000,
@@ -3776,7 +3776,7 @@ const combinaties = [
       ["Agnathen", "Agnathen"], ["Oergeleedpotigen", "Oergeleedpotigen"], ["Inktvissen", "Inktvissen"], 
       ["Zeeslakken", "Zeeslakken"], ["Trilobieten", "Trilobieten"], ["Oercheliceraten", "Oercheliceraten"], 
       ["Duizendpoten", "Duizendpoten"], ["Oerkreeftjes", "Oerkreeftjes"], ["Oerinsecten", "Oerinsecten"], 
-      ["Nautilussen", "Nautilussen"], ["Slakken", "Slakken"], ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], 
+      ["Nautilussen", "Nautilussen"], ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], 
       ["Zwaardstaarten", "Zwaardstaarten"], ["Krill", "Krill"], ["Oerchondrichthyes", "Oerchondrichthyes"], 
       ["Oerstraalvinnigen", "Oerstraalvinnigen"], ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], 
       ["Longvissen", "Longvissen"], ["Pissebedden", "Pissebedden"], ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], 
@@ -3803,6 +3803,26 @@ const combinaties = [
         and at the right time and for the right purpose, and in the right way - that is not within everybody's power
         and is not easy
         <br><br>- Aristoteles`
+      }
+    ]
+  },
+  {
+    input: ["Slakken", "Slakken"],
+    output: [
+      { naam: "Drift", icoon: "icons/Drift.png", map: "Brein", 
+        quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
+        force our involuntary
+        <br><br>- Blaise Pascal`
+      },
+      { naam: "Woede", icoon: "icons/Woede.png", map: "Brein", 
+        quote: `Anybody can become angry - that is easy, but to be angry with the right person and to the right degree
+        and at the right time and for the right purpose, and in the right way - that is not within everybody's power
+        and is not easy
+        <br><br>- Aristoteles`
+      },
+      { naam: "Slijm", icoon: "icons/Slijm.png", map: "Water", 
+        quote: `Even the lowliest forms of life, the molds and slimes, are far more intricate than we had imagined 
+        <br><br>- Lewis Thomas`
       }
     ]
   },
