@@ -331,21 +331,22 @@ body {
 /* ---------------- GRID LAYOUTS ---------------- */
 .grid-elements {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
   justify-content: center;
   column-gap: 50px;
   row-gap: 20px;
 }
 
 .grid-closed {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  width: fit-content;
+  max-width: 680px;
+  width: auto;
   margin: 0 auto;
 }
+
 
 .grid-closed.hidden,
 .icon-container.hidden {
