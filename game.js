@@ -7475,7 +7475,7 @@ function renderClosed() {
   
   requestAnimationFrame(() => {
     updateClosedContainer();
-    if (totalMaps.size > 20) {
+    if (mappen.length > 20) {
       const mapIcons = document.querySelectorAll(".icon.map");
       const gridClosed = document.querySelector(".grid-closed");
       const closedContainerCenter = document.querySelector("#closed-container.center");
