@@ -6543,7 +6543,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Termieten", "Aarde"],
+    input: [
+      ["Termieten", "Aarde"], ["Mieren", "Aarde"]
+    ],
     hint: `Termieten zijn kunstzinnige beestjes, kijk maar wat ze kunnen met simpele grond.`,
     output: [
       { naam: "Heuvel", icoon: "icons/Heuvel.png", map: "Landschap", 
