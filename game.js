@@ -6819,12 +6819,14 @@ const combinaties = [
     hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
     output: [
       { naam: "Oereenzaadlobbige", icoon: "icons/Oereenzaadlobbige.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `In monocotyledons the stem grows without secondary thickening, giving rise to forms that are often elegant, 
+        flexible, and perfectly suited to their environment
+        <br><br>- Katherine Esau`
       },
       { naam: "Oertweezaadlobbige", icoon: "icons/Oertweezaadlobbige.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `In dicotyledons the capacity for secondary growth allows the plant to build strength, branching complexity, 
+        and longevity
+        <br><br>- Arthur Cronquist`
       }
     ]
   },
@@ -6844,20 +6846,22 @@ const combinaties = [
     hint: `Eenzaadlobbige plantjes groeien als gras.`,
     output: [
       { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `The orchid is mother nature's masterpiece
+        <br><br>- Robyn`
       },
       { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
+        <br><br>- Blaise Pascal`
       },
       { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
+        on which we write
+        <br><br>- Pliny the Elder`
       },
       { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
+        but they rule the plains and feed the world
+        <br><br>- Peter Raven`
       }
     ]
   }
