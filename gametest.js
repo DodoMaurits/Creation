@@ -91,7 +91,7 @@ const mappen = [
       { naam: "Oceaan", icoon: "icons/Oceaan.png" },
       { naam: "Golf", icoon: "icons/Golf.png" },
       { naam: "Regen", icoon: "icons/Regen.png" },
-      { naam: "Zure regen", icoon: "icons/Zur regen.png" },
+      { naam: "Zure regen", icoon: "icons/Zure_regen.png" },
       { naam: "Rivier", icoon: "icons/Rivier.png" },
       { naam: "Ven", icoon: "icons/Ven.png" },
       { naam: "Sneeuw", icoon: "icons/Sneeuw.png" },
@@ -105,17 +105,17 @@ const mappen = [
     naam: "Vuur", icoon: "icons/Vuur.png", 
     elementen: [
       { naam: "Vuur", icoon: "icons/Vuur.png" },
-      { naam: "Lava", icoon: "icons/Water.png" },
-      { naam: "Granietmagma", icoon: "icons/Meer.png" },
-      { naam: "Magmadamp", icoon: "icons/Zee.png" },
-      { naam: "As", icoon: "icons/Oceaan.png" },
-      { naam: "Bliksem", icoon: "icons/Golf.png" },
-      { naam: "Bolbliksem", icoon: "icons/Regen.png" },
-      { naam: "Explosie", icoon: "icons/Zur regen.png" },
-      { naam: "Plasma", icoon: "icons/Rivier.png" },
-      { naam: "Zonnewind", icoon: "icons/Ven.png" },
-      { naam: "Noorderlicht", icoon: "icons/Sneeuw.png" },
-      { naam: "Brand", icoon: "icons/Hagel.png" }
+      { naam: "Lava", icoon: "icons/Lava.png" },
+      { naam: "Granietmagma", icoon: "icons/Granietmagma.png" },
+      { naam: "Magmadamp", icoon: "icons/Magmadamp.png" },
+      { naam: "As", icoon: "icons/As.png" },
+      { naam: "Bliksem", icoon: "icons/Bliksem.png" },
+      { naam: "Bolbliksem", icoon: "icons/Bolbliksem.png" },
+      { naam: "Explosie", icoon: "icons/Explosie.png" },
+      { naam: "Plasma", icoon: "icons/Plasma.png" },
+      { naam: "Zonnewind", icoon: "icons/Zonnewind.png" },
+      { naam: "Noorderlicht", icoon: "icons/Noorderlicht.png" },
+      { naam: "Brand", icoon: "icons/Brand.png" }
     ]
   },
   {
