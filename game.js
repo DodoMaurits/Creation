@@ -6950,6 +6950,7 @@ const combinaties = [
   {
     input: ["Gras", "Hout"],
     hint: `Denk bij sommige grassen aan bomen.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Planten", 
         quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
