@@ -126,7 +126,7 @@ const mappen = [
       { naam: "Obsidiaan", icoon: "icons/Obsidiaan.png" },
       { naam: "Gneis", icoon: "icons/Gneis.png" },
       { naam: "Mica", icoon: "icons/Mica.png" },
-      { naam: "Vedspaat", icoon: "icons/Vedspaat.png" },
+      { naam: "Veldspaat", icoon: "icons/Veldspaat.png" },
       { naam: "Zand", icoon: "icons/Zand.png" },
       { naam: "Klei", icoon: "icons/Klei.png" },
       { naam: "Glas", icoon: "icons/Glas.png" },
