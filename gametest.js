@@ -54,7 +54,7 @@ const mappen = [
       { naam: "Roest", icoon: "icons/Roest.png" },
       { naam: "Silicium", icoon: "icons/Silicium.png" },
       { naam: "Kalk", icoon: "icons/Kalk.png" },
-      { naam: "Aluminium", icoon: "icons/Aluminium.png" }
+      { naam: "Aluminium", icoon: "icons/Aluminium.png" },
       { naam: "Kwarts", icoon: "icons/Kwarts.png" },
       { naam: "Gips", icoon: "icons/Gips.png" },
       { naam: "Calciet", icoon: "icons/Calciet.png" },
