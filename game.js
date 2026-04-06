@@ -6952,8 +6952,9 @@ const combinaties = [
     hint: `Denk bij sommige grassen aan bomen.`,
     output: [
       { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Planten", 
-        quote: `The bamboo that bends is stronger than the oak that resists; in flexibility lies resilience and survival
-        <br><br>- Masanobu Fukuoka`
+        quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
+        the wind
+        <br><br>- Bruce Lee`
       }
     ]
   },
