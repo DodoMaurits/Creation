@@ -6773,7 +6773,7 @@ const combinaties = [
     input: [
       ["Zaadjes", "Evolutie"], ["Zaadjes", "Blad"]
     ],
-    hint: `Het is tijd voor bloemen.`,
+    hint: `Het is tijd voor bloemen, die zaadjes accentueren met kleurrijke blaadjes.`,
     tijd: 145_000_000,
     output: [
       { naam: "Bloem", icoon: "icons/Bloem.png", map: "Biologie", 
