@@ -6879,6 +6879,19 @@ const combinaties = [
         <br><br>- Peter Raven`
       }
     ]
+  },
+  {
+    input: [
+      ["Gras", "Zand"], ["Gras", "Kust"], ["Gras", "Strand"]
+    ],
+    hint: `Langs de kust vormt gras en zand een muur.`,
+    output: [
+      { naam: "Duinen", icoon: "icons/Duinen.png", map: "Landschap", 
+        quote: `Coastal dunes are living landscapes, where sand and grass work together, shaped by wind and sea into 
+        ever-changing forms
+        <br><br>- Hans van der Maarel`
+      }
+    ]
   }
 ];
 
