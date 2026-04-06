@@ -4044,6 +4044,21 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Mos", "IJs"], ["Mos", "Poolgebied"], ["Mos", "Sneeuw"], 
+      ["Korstmos", "IJs"], ["Korstmos", "Poolgebied"], ["Korstmos", "Sneeuw"],
+      ["Gras", "IJs"], ["Gras", "Poolgebied"], ["Gras", "Sneeuw"]
+    ],
+    hint: `Aan de rand van het poolgebied bevindt zich begroeiing.`,
+    output: [
+      { naam: "Toendra", icoon: "icons/Toendra.png", map: "Landschap", 
+        quote: `Over lowland, over snow and tundra span arches, raised by the rising sun. See: the light is winning! 
+        And the stream is streaming towards open minds and towards seeds dreaming of growth
+        <br><br>- Einar Skjaeraasen`
+      }
+    ]
+  },
+  {
     input: ["Inktvissen", "Schelp"],
     hint: `Er zijn nog weekdieren zonder schelp...`,
     tijd: 490_000_000,
