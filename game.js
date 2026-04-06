@@ -6822,6 +6822,55 @@ const combinaties = [
     }
   },
   {
+    input: ["Lepidosauriërs", "Evolutie"],
+    hint: `Vergeet de lepidosauriërs niet!`,
+    tijd: 50_000_000,
+    output: [
+      { naam: "Gekko's", icoon: "icons/Gekko's.png", map: "Reptielen", 
+        quote: `Geckos can run up walls and across ceilings with ease, their feet equipped with millions of microscopic 
+        hairs that cling by the slightest forces
+        <br><br>- Kellar Autumn`
+      },
+      { naam: "Leguanen", icoon: "icons/Leguanen.png", map: "Reptielen", 
+        quote: `Iguanas bask for hours in the sun, conserving energy, their stillness broken only by slow, deliberate 
+        movements
+        <br><br>- David Attenborough`
+      },
+      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+        quote: `The snake sheds its skin, but not its nature
+        <br><br>- Aristoteles`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Bloem", 
+        titel: "Probeer opnieuw in het Krijt",
+        tekst: `De volgorde is eerst de bloem, dan de bij.
+        <br><br>Eerst nodig: eerste bloem.`
+      }
+    }
+  },
+  {
+    input: ["Lepidosauriërs", "Evolutie"],
+    hint: `In het Krijt namen de crurotarsi toch wel hele bekende vormen aan.`,
+    tijd: 55_000_000,
+    output: [
+      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
+        quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
+        it beneath the water
+        <br><br>- Herodotus`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Bloem", 
+        titel: "Probeer opnieuw in het Krijt",
+        tekst: `De volgorde is eerst de bloem, dan de bij.
+        <br><br>Eerst nodig: eerste bloem.`
+      }
+    }
+  },
+  {
     input: ["Bloem", "Oerzaadplanten"],
     hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
     output: [
