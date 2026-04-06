@@ -5322,6 +5322,16 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: ["Bruinkool", "Druk"],
+    hint: `Kolen kunnen ook verstenen...`,
+    output: [
+      { naam: "Steenkool", icoon: "icons/Steenkool.png", map: "Aarde", 
+        quote: `Without a whole lot of pressure, a diamond is just a piece of coal
+        <br><br>- Miriam`
+      }
+    ]
+  },
 //------------ THRESHOLD 5: CARBOON --------------//
   {
     input: ["Zaadjes", "Oervaatplanten"],
@@ -5337,7 +5347,7 @@ const combinaties = [
       threshold: {
         titel: "Carboon", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Paddenstoelen", "Kreeften", "Vleugels", "Moeras", "Haaien", "Geluid", "Oerchondrostei", 
+        requirements: ["Paddenstoelen", "Kreeften", "Vleugels", "Moeras", "Haaien", "Oerchondrostei", 
           "Wimpelalen", "Oerneopterygen", "Bruinkool"]
       },
       normal: {
@@ -5744,24 +5754,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: ["Bruinkool", "Druk"],
-    hint: `Kolen kunnen ook verstenen...`,
-    output: [
-      { naam: "Steenkool", icoon: "icons/Steenkool.png", map: "Aarde", 
-        quote: `Without a whole lot of pressure, a diamond is just a piece of coal
-        <br><br>- Miriam`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oerzaadplanten", 
-        titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
-        <br><br>Eerst nodig: eerste zaadplanten.`
-      }
-    }
   },
   {
     input: ["Oerzaadplanten", "Evolutie"],
