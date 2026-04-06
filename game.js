@@ -6851,7 +6851,7 @@ const combinaties = [
     }
   },
   {
-    input: ["Lepidosauriërs", "Evolutie"],
+    input: ["Crurotarsi", "Evolutie"],
     hint: `In het Krijt namen de crurotarsi toch wel hele bekende vormen aan.`,
     tijd: 55_000_000,
     output: [
