@@ -6873,6 +6873,7 @@ const combinaties = [
   {
     input: ["Bloem", "Oerzaadplanten"],
     hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
+    tijd: 135_000_000,
     output: [
       { naam: "Oereenzaadlobbige", icoon: "icons/Oereenzaadlobbige.png", map: "Planten", 
         quote: `In monocotyledons the stem grows without secondary thickening, giving rise to forms that are often elegant, 
@@ -6900,6 +6901,7 @@ const combinaties = [
   {
     input: ["Oereenzaadlobbige", "Evolutie"],
     hint: `Eenzaadlobbige plantjes groeien als gras.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Planten", 
         quote: `The orchid is mother nature's masterpiece
@@ -6942,6 +6944,16 @@ const combinaties = [
         quote: `Lions rest in the shade of scattered trees while gazelles graze, elephants wander in ponderous silence, 
         and the plain itself pulses with life
         <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Hout"],
+    hint: `Denk bij sommige grassen aan bomen.`,
+    output: [
+      { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Planten", 
+        quote: `The bamboo that bends is stronger than the oak that resists; in flexibility lies resilience and survival
+        <br><br>- Masanobu Fukuoka`
       }
     ]
   },
