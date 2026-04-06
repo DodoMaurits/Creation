@@ -6815,6 +6815,20 @@ const combinaties = [
     }
   },
   {
+    input: ["Bloem", "Oerzaadplanten"],
+    hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
+    output: [
+      { naam: "Oereenzaadlobbige", icoon: "icons/Oereenzaadlobbige.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Oertweezaadlobbige", icoon: "icons/Oertweezaadlobbige.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
+  {
     input: ["Bijen", "Bloem"],
     hint: `Sommige bloemen en insecten zijn goed in lekkernijen.`,
     output: [
@@ -6822,6 +6836,28 @@ const combinaties = [
         quote: `Honey is the only food which includes all the substances necessary to sustain life, including enzymes, 
         vitamins, minerals, and water
         <br><br>- John Kellogg`
+      }
+    ]
+  },
+  {
+    input: ["Oereenzaadlobbige", "Evolutie"],
+    hint: `Eenzaadlobbige plantjes groeien als gras.`,
+    output: [
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
+        quote: `
+        <br><br>- `
       }
     ]
   }
