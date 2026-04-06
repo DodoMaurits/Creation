@@ -5,9 +5,9 @@ const mappen = [
     elementen: [
       { naam: "Oerknal", icoon: "icons/Oerknal.png" },
       { naam: "Ster", icoon: "icons/Ster.png" },
-      { naam: "Sterrenstelsel", icoon: "icons/Sterrestelsel.png" },
+      { naam: "Sterrenstelsel", icoon: "icons/Sterrenstelsel.png" },
       { naam: "Supernova", icoon: "icons/Supernova.png" },
-      { naam: "Asteroïde", icoon: "icons/Asteroïde.png" },
+      { naam: "Asteroïden", icoon: "icons/Asteroïden.png" },
       { naam: "Planeet", icoon: "icons/Planeet.png" },
       { naam: "Zwart Gat", icoon: "icons/Zwartgat.png" },
       { naam: "Jupiter", icoon: "icons/Jupiter.png" },
