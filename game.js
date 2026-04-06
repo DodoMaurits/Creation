@@ -6892,6 +6892,38 @@ const combinaties = [
         <br><br>- Hans van der Maarel`
       }
     ]
+  },
+  {
+    input: ["Gras", "Woestijn"],
+    hint: `Ook aan het eind van de woestijn moet het ooit weer groen kleuren..`,
+    output: [
+      { naam: "Savanne", icoon: "icons/Savanne.png", map: "Landschap", 
+        quote: `Lions rest in the shade of scattered trees while gazelles graze, elephants wander in ponderous silence, 
+        and the plain itself pulses with life
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Gras"],
+    hint: `Gras, gras, gras...`,
+    output: [
+      { naam: "Weiland", icoon: "icons/Weiland.png", map: "Landschap", 
+        quote: `The boy and the girl going hand in hand through a meadow
+        <br><br>- Edward Steichen`
+      }
+    ]
+  },
+  {
+    input: ["Savanne", "Gras"],
+    hint: `Sommige landschappen veranderen door gras zover je kunt kijken..`,
+    output: [
+      { naam: "Steppe", icoon: "icons/Steppe.png", map: "Landschap", 
+        quote: `Vast, open plains stretch to the horizon, dotted with grazing animals, burrowing rodents, 
+        and the ever-watchful predators that stalk between them
+        <br><br>- George Schaller`
+      }
+    ]
   }
 ];
 
