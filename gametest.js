@@ -64,6 +64,118 @@ const mappen = [
       { naam: "Kwik", icoon: "icons/Kwik.png" },
       { naam: "Alcohol", icoon: "icons/Alcohol.png" }
     ]
+  },
+  {
+    naam: "Lucht", icoon: "icons/Lucht.png", 
+    elementen: [
+      { naam: "Gas", icoon: "icons/Gas.png" },
+      { naam: "Rook", icoon: "icons/Rook.png" },
+      { naam: "Damp", icoon: "icons/Damp.png" },
+      { naam: "Wolk", icoon: "icons/Wolk.png" },
+      { naam: "Lucht", icoon: "icons/Lucht.png" },
+      { naam: "Wind", icoon: "icons/Wind.png" },
+      { naam: "Storm", icoon: "icons/Storm.png" },
+      { naam: "Orkaan", icoon: "icons/Orkaan.png" },
+      { naam: "Mist", icoon: "icons/Mist.png" },
+      { naam: "Zuurstof", icoon: "icons/Zuurstof.png" },
+      { naam: "Ozon", icoon: "icons/Ozon.png" }
+    ]
+  },
+  {
+    naam: "Water", icoon: "icons/Water.png", 
+    elementen: [
+      { naam: "IJs", icoon: "icons/IJs.png" },
+      { naam: "Water", icoon: "icons/Water.png" },
+      { naam: "Meer", icoon: "icons/Meer.png" },
+      { naam: "Zee", icoon: "icons/Zee.png" },
+      { naam: "Oceaan", icoon: "icons/Oceaan.png" },
+      { naam: "Golf", icoon: "icons/Golf.png" },
+      { naam: "Regen", icoon: "icons/Regen.png" },
+      { naam: "Zure regen", icoon: "icons/Zur regen.png" },
+      { naam: "Rivier", icoon: "icons/Rivier.png" },
+      { naam: "Ven", icoon: "icons/Ven.png" },
+      { naam: "Sneeuw", icoon: "icons/Sneeuw.png" },
+      { naam: "Hagel", icoon: "icons/Hagel.png" },
+      { naam: "Overstroming", icoon: "icons/Overstroming.png" },
+      { naam: "Slijm", icoon: "icons/Slijm.png" },
+      { naam: "Aardolie", icoon: "icons/Aardolie.png" }
+    ]
+  },
+  {
+    naam: "Vuur", icoon: "icons/Vuur.png", 
+    elementen: [
+      { naam: "Vuur", icoon: "icons/Vuur.png" },
+      { naam: "Lava", icoon: "icons/Water.png" },
+      { naam: "Granietmagma", icoon: "icons/Meer.png" },
+      { naam: "Magmadamp", icoon: "icons/Zee.png" },
+      { naam: "As", icoon: "icons/Oceaan.png" },
+      { naam: "Bliksem", icoon: "icons/Golf.png" },
+      { naam: "Bolbliksem", icoon: "icons/Regen.png" },
+      { naam: "Explosie", icoon: "icons/Zur regen.png" },
+      { naam: "Plasma", icoon: "icons/Rivier.png" },
+      { naam: "Zonnewind", icoon: "icons/Ven.png" },
+      { naam: "Noorderlicht", icoon: "icons/Sneeuw.png" },
+      { naam: "Brand", icoon: "icons/Hagel.png" }
+    ]
+  },
+  {
+    naam: "Aarde", icoon: "icons/Aarde.png", 
+    elementen: [
+      { naam: "Graniet", icoon: "icons/Graniet.png" },
+      { naam: "Basalt", icoon: "icons/Basalt.png" },
+      { naam: "Obsidiaan", icoon: "icons/Obsidiaan.png" },
+      { naam: "Gneis", icoon: "icons/Gneis.png" },
+      { naam: "Mica", icoon: "icons/Mica.png" },
+      { naam: "Vedspaat", icoon: "icons/Vedspaat.png" },
+      { naam: "Zand", icoon: "icons/Zand.png" },
+      { naam: "Klei", icoon: "icons/Klei.png" },
+      { naam: "Glas", icoon: "icons/Glas.png" },
+      { naam: "Tufsteen", icoon: "icons/Tufsteen.png" },
+      { naam: "Kleisteen", icoon: "icons/Kleisteen.png" },
+      { naam: "Schalie", icoon: "icons/Schalie.png" },
+      { naam: "Gipssteen", icoon: "icons/Gipssteen.png" },
+      { naam: "Leisteen", icoon: "icons/Leisteen.png" },
+      { naam: "Zandsteen", icoon: "icons/Zandsteen.png" },
+      { naam: "Kalksteen", icoon: "icons/Kalksteen.png" },
+      { naam: "Fylliet", icoon: "icons/Fylliet.png" },
+      { naam: "Kwartsiet", icoon: "icons/Kwartsiet.png" },
+      { naam: "Marmer", icoon: "icons/Marmer.png" },
+      { naam: "Schist", icoon: "icons/Schist.png" },
+      { naam: "Aarde", icoon: "icons/Aarde.png" },
+      { naam: "Krijt", icoon: "icons/Krijt.png" },
+      { naam: "Veen", icoon: "icons/Veen.png" },
+      { naam: "Bruinkool", icoon: "icons/Bruinkool.png" },
+      { naam: "Steenkool", icoon: "icons/Steenkool.png" }
+    ]
+  },
+  {
+    naam: "Landschap", icoon: "icons/Landschap.png", 
+    elementen: [
+      { naam: "Vulkaan", icoon: "icons/Vulkaan.png" },
+      { naam: "Berg", icoon: "icons/Berg.png" },
+      { naam: "Poolgebied", icoon: "icons/Poolgebied.png" },
+      { naam: "Woestijn", icoon: "icons/Woestijn.png" },
+      { naam: "Eiland", icoon: "icons/Eiland.png" },
+      { naam: "Kust", icoon: "icons/Kust.png" },
+      { naam: "Strand", icoon: "icons/Strand.png" }
+    ]
+  },
+  {
+    naam: "Pril leven", icoon: "icons/Pril_leven.png", 
+    elementen: [
+      { naam: "Luca", icoon: "icons/Luca.png" },
+      { naam: "Bacteriën", icoon: "icons/Bacteriën.png" },
+      { naam: "Virus", icoon: "icons/Virus.png" },
+      { naam: "Stromatolieten", icoon: "icons/Stromatolieten.png" },
+      { naam: "Blauwalgen", icoon: "icons/Blauwalgen.png" },
+      { naam: "Leca", icoon: "icons/Leca.png" }
+    ]
+  },
+  {
+    naam: "Biologie", icoon: "icons/Biologie.png", 
+    elementen: [
+      { naam: "Evolutie", icoon: "icons/Evolutie.png" }
+    ]
   }
 ];
 
