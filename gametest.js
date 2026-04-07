@@ -30,9 +30,9 @@ const mappen = [
       { naam: "Straling", icoon: "icons/Straling.png" },
       { naam: "Elektriciteit", icoon: "icons/Elektriciteit.png" },
       { naam: "Radioactiviteit", icoon: "icons/Radioactiviteit.png" },
+      { naam: "Druk", icoon: "icons/Druk.png" },
       { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png" },
       { naam: "Magnetisme", icoon: "icons/Magnetisme.png" },
-      { naam: "Druk", icoon: "icons/Druk.png" },
       { naam: "Leven", icoon: "icons/Leven.png" },
       { naam: "Dood", icoon: "icons/Dood.png" }
     ]
@@ -124,7 +124,6 @@ const mappen = [
       { naam: "Graniet", icoon: "icons/Graniet.png" },
       { naam: "Basalt", icoon: "icons/Basalt.png" },
       { naam: "Obsidiaan", icoon: "icons/Obsidiaan.png" },
-      { naam: "Gneis", icoon: "icons/Gneis.png" },
       { naam: "Mica", icoon: "icons/Mica.png" },
       { naam: "Veldspaat", icoon: "icons/Veldspaat.png" },
       { naam: "Zand", icoon: "icons/Zand.png" },
@@ -132,15 +131,16 @@ const mappen = [
       { naam: "Glas", icoon: "icons/Glas.png" },
       { naam: "Tufsteen", icoon: "icons/Tufsteen.png" },
       { naam: "Kleisteen", icoon: "icons/Kleisteen.png" },
-      { naam: "Schalie", icoon: "icons/Schalie.png" },
-      { naam: "Gipssteen", icoon: "icons/Gipssteen.png" },
       { naam: "Leisteen", icoon: "icons/Leisteen.png" },
-      { naam: "Zandsteen", icoon: "icons/Zandsteen.png" },
-      { naam: "Kalksteen", icoon: "icons/Kalksteen.png" },
+      { naam: "Schalie", icoon: "icons/Schalie.png" },
       { naam: "Fylliet", icoon: "icons/Fylliet.png" },
-      { naam: "Kwartsiet", icoon: "icons/Kwartsiet.png" },
-      { naam: "Marmer", icoon: "icons/Marmer.png" },
       { naam: "Schist", icoon: "icons/Schist.png" },
+      { naam: "Gneis", icoon: "icons/Gneis.png" },
+      { naam: "Zandsteen", icoon: "icons/Zandsteen.png" },
+      { naam: "Kwartsiet", icoon: "icons/Kwartsiet.png" },
+      { naam: "Kalksteen", icoon: "icons/Kalksteen.png" },
+      { naam: "Marmer", icoon: "icons/Marmer.png" },
+      { naam: "Gipssteen", icoon: "icons/Gipssteen.png" },
       { naam: "Aarde", icoon: "icons/Aarde.png" },
       { naam: "Krijt", icoon: "icons/Krijt.png" },
       { naam: "Veen", icoon: "icons/Veen.png" },
@@ -157,7 +157,19 @@ const mappen = [
       { naam: "Woestijn", icoon: "icons/Woestijn.png" },
       { naam: "Eiland", icoon: "icons/Eiland.png" },
       { naam: "Kust", icoon: "icons/Kust.png" },
-      { naam: "Strand", icoon: "icons/Strand.png" }
+      { naam: "Strand", icoon: "icons/Strand.png" },
+      { naam: "Rif", icoon: "icons/Rif.png" },
+      { naam: "Moeras", icoon: "icons/Moeras.png" },
+      { naam: "Bos", icoon: "icons/Bos.png" },
+      { naam: "Regenwoud", icoon: "icons/Regenwoud.png" },
+      { naam: "Tropisch regenwoud", icoon: "icons/Tropisch_regenwoud.png" },
+      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png" },
+      { naam: "Heuvel", icoon: "icons/Heuvel.png" },
+      { naam: "Toendra", icoon: "icons/Toendra.png" },
+      { naam: "Savanne", icoon: "icons/Savanne.png" },
+      { naam: "Weiland", icoon: "icons/Weiland.png" },
+      { naam: "Duinen", icoon: "icons/Duinen.png" },
+      { naam: "Steppe", icoon: "icons/Steppe.png" }
     ]
   },
   {
@@ -168,13 +180,235 @@ const mappen = [
       { naam: "Virus", icoon: "icons/Virus.png" },
       { naam: "Stromatolieten", icoon: "icons/Stromatolieten.png" },
       { naam: "Blauwalgen", icoon: "icons/Blauwalgen.png" },
-      { naam: "Leca", icoon: "icons/Leca.png" }
+      { naam: "Leca", icoon: "icons/Leca.png" },
+      { naam: "Archaeplastiden", icoon: "icons/Archaeplastiden.png" },
+      { naam: "Rode algen", icoon: "icons/Rode_algen.png" },
+      { naam: "Groene algen", icoon: "icons/Groene_algen.png" },
+      { naam: "Steenwortelalgen", icoon: "icons/Steenwortelalgen.png" },
+      { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png" },
+      { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png" },
+      { naam: "Amoeben", icoon: "icons/Amoeben.png" },
+      { naam: "Parasieten", icoon: "icons/Parasieten.png" },
+      { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png" },
+      { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png" },
+      { naam: "Schimmel", icoon: "icons/Schimmel.png" },
+      { naam: "Gist", icoon: "icons/Gist.png" },
+      { naam: "Korstmos", icoon: "icons/Korstmos.png" }
     ]
   },
   {
     naam: "Biologie", icoon: "icons/Biologie.png", 
     elementen: [
-      { naam: "Evolutie", icoon: "icons/Evolutie.png" }
+      { naam: "Evolutie", icoon: "icons/Evolutie.png" },
+      { naam: "Fotosynthese", icoon: "icons/Fotosynthese.png" },
+      { naam: "Glucose", icoon: "icons/Glucose.png" },
+      { naam: "Weefsel", icoon: "icons/Weefsel.png" },
+      { naam: "Spieren", icoon: "icons/Spieren.png" },
+      { naam: "Schelp", icoon: "icons/Schelp.png" },
+      { naam: "Bot", icoon: "icons/Bot.png" },
+      { naam: "Gif", icoon: "icons/Gif.png" },
+      { naam: "Detritus", icoon: "icons/Detritus.png" },
+      { naam: "Wortels", icoon: "icons/Wortels.png" },
+      { naam: "Tand", icoon: "icons/Tand.png" },
+      { naam: "Oog", icoon: "icons/Oog.png" },
+      { naam: "Bloed", icoon: "icons/Bloed.png" },
+      { naam: "Parel", icoon: "icons/Parel.png" },
+      { naam: "Zijde", icoon: "icons/Zijde.png" },
+      { naam: "Vleugels", icoon: "icons/Vleugels.png" },
+      { naam: "Blad", icoon: "icons/Blad.png" },
+      { naam: "Zaadjes", icoon: "icons/Zaadjes.png" },
+      { naam: "Hout", icoon: "icons/Hout.png" },
+      { naam: "Ei", icoon: "icons/Ei.png" },
+      { naam: "Veer", icoon: "icons/Veer.png" },
+      { naam: "Bloem", icoon: "icons/Bloem.png" }
+    ]
+  },
+  {
+    naam: "Waterdieren", icoon: "icons/Waterdieren.png", 
+    elementen: [
+      { naam: "Sponzen", icoon: "icons/Sponzen.png" },
+      { naam: "Koraal", icoon: "icons/Koraal.png" },
+      { naam: "Kwallen", icoon: "icons/Kwallen.png" },
+      { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png" },
+      { naam: "Wormen", icoon: "icons/Wormen.png" },
+      { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png" },
+      { naam: "Zeesterren", icoon: "icons/Zeesterren.png" },
+      { naam: "Zee-egels", icoon: "icons/Zee-egels.png" },
+      { naam: "Manteldieren", icoon: "icons/Manteldieren.png" },
+      { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png" },
+      { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png" },
+      { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png" },
+      { naam: "Inktvissen", icoon: "icons/Inktvissen.png" },
+      { naam: "Nautilussen", icoon: "icons/Nautilussen.png" },
+      { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png" }
+    ]
+  },
+  {
+    naam: "Brein", icoon: "icons/Brein.png", 
+    elementen: [
+      { naam: "Zenuwen", icoon: "icons/Sponzen.png" },
+      { naam: "Tast", icoon: "icons/Tast.png" },
+      { naam: "Licht", icoon: "icons/Licht.png" },
+      { naam: "Brein", icoon: "icons/Brein.png" },
+      { naam: "Pijn", icoon: "icons/Pijn.png" },
+      { naam: "Geur", icoon: "icons/Geur.png" },
+      { naam: "Smaak", icoon: "icons/Smaak.png" },
+      { naam: "Kleur", icoon: "icons/Kleur.png" },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png" },
+      { naam: "Drift", icoon: "icons/Drift.png" },
+      { naam: "Woede", icoon: "icons/Woede.png" },
+      { naam: "Afkeer", icoon: "icons/Afkeer.png" },
+      { naam: "Verbazing", icoon: "icons/Verbazing.png" },
+      { naam: "Geluid", icoon: "icons/Geluid.png" }
+    ]
+  },
+    {
+    naam: "Brein", icoon: "icons/Brein.png", 
+    elementen: [
+      { naam: "Zenuwen", icoon: "icons/Sponzen.png" },
+      { naam: "Tast", icoon: "icons/Tast.png" },
+      { naam: "Licht", icoon: "icons/Licht.png" },
+      { naam: "Brein", icoon: "icons/Brein.png" },
+      { naam: "Pijn", icoon: "icons/Pijn.png" },
+      { naam: "Geur", icoon: "icons/Geur.png" },
+      { naam: "Smaak", icoon: "icons/Smaak.png" },
+      { naam: "Kleur", icoon: "icons/Kleur.png" },
+      { naam: "Angst", icoon: "icons/Angst.png" },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png" },
+      { naam: "Drift", icoon: "icons/Drift.png" },
+      { naam: "Woede", icoon: "icons/Woede.png" },
+      { naam: "Afkeer", icoon: "icons/Afkeer.png" },
+      { naam: "Verbazing", icoon: "icons/Verbazing.png" },
+      { naam: "Geluid", icoon: "icons/Geluid.png" }
+    ]
+  },
+  {
+    naam: "Planten", icoon: "icons/Planten.png", 
+    elementen: [
+      { naam: "Roodwieren", icoon: "icons/Roodwieren.png" },
+      { naam: "Groenwieren", icoon: "icons/Groenwieren.png" },
+      { naam: "Mos", icoon: "icons/Mos.png" },
+      { naam: "Oervaatplanten", icoon: "icons/Oervaatplanten.png" },
+      { naam: "Varens", icoon: "icons/Varens.png" },
+      { naam: "Oerzaadplanten", icoon: "icons/Oerzaadplanten.png" },
+      { naam: "Coniferen", icoon: "icons/Coniferen.png" },
+      { naam: "Palmvarens", icoon: "icons/Palmvarens.png" },
+      { naam: "Ginkgo's", icoon: "icons/Ginkgo's.png" },
+      { naam: "Oereenzaadlobbige", icoon: "icons/Oereenzaadlobbige.png" },
+      { naam: "Oertweezaadlobbige", icoon: "icons/Oertweezaadlobbige.png" },
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png" },
+      { naam: "Waterriet", icoon: "icons/Waterriet.png" },
+      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png" },
+      { naam: "Gras", icoon: "icons/Gras.png" },
+      { naam: "Bamboe", icoon: "icons/Bamboe.png" }
+    ]
+  },
+  {
+    naam: "Vissen", icoon: "icons/Vissen.png", 
+    elementen: [
+      { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png" },
+      { naam: "Agnathen", icoon: "icons/Agnathen.png" },
+      { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png" },
+      { naam: "Oerchondrichthyes", icoon: "icons/Oerchondrichthyes.png" },
+      { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png" },
+      { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png" },
+      { naam: "Longvissen", icoon: "icons/Longvissen.png" },
+      { naam: "Haaien", icoon: "icons/Haaien.png" },
+      { naam: "Holocefalen", icoon: "icons/Holocefalen.png" },
+      { naam: "Oerchondrostei", icoon: "icons/Oerchondrostei.png" },
+      { naam: "Wimpelalen", icoon: "icons/Wimpelalen.png" },
+      { naam: "Oerneopterygen", icoon: "icons/Oerneopterygen.png" }
+    ]
+  },
+  {
+    naam: "Geleedpotigen", icoon: "icons/Geleedpotigen.png", 
+    elementen: [
+      { naam: "Oergeleedpotigen", icoon: "icons/Oergeleedpotigen.png" },
+      { naam: "Trilobieten", icoon: "icons/Trilobieten.png" },
+      { naam: "Oercheliceraten", icoon: "icons/Oercheliceraten.png" },
+      { naam: "Oerkreeftjes", icoon: "icons/Oerkreeftjes.png" },
+      { naam: "Oerinsecten", icoon: "icons/Oerinsecten.png" },
+      { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png" },
+      { naam: "Krill", icoon: "icons/Krill.png" },
+      { naam: "Garnalen", icoon: "icons/Garnalen.png" },
+      { naam: "Kreeften", icoon: "icons/Kreeften.png" },
+      { naam: "Krabben", icoon: "icons/Krabben.png" }
+    ]
+  },
+  {
+    naam: "Klein landleven", icoon: "icons/Klein_landleven.png", 
+    elementen: [
+      { naam: "Duizendpoten", icoon: "icons/Duizendpoten.png" },
+      { naam: "Schorpioenen", icoon: "icons/Schorpioenen.png" },
+      { naam: "Spinnen", icoon: "icons/Spinnen.png" },
+      { naam: "Mijten", icoon: "icons/Mijten.png" },
+      { naam: "Pissebedden", icoon: "icons/Pissebedden.png" },
+      { naam: "Zilvervisjes", icoon: "icons/Zilvervisjes.png" },
+      { naam: "Oerpolyneopteren", icoon: "icons/Oerpolyneopteren.png" },
+      { naam: "Oerhymenopteren", icoon: "icons/Oerhymenopteren.png" },
+      { naam: "Luizen", icoon: "icons/Luizen.png" },
+      { naam: "Kevers", icoon: "icons/Kevers.png" },
+      { naam: "Muggen", icoon: "icons/Muggen.png" },
+      { naam: "Vliegen", icoon: "icons/Vliegen.png" },
+      { naam: "Vlinders", icoon: "icons/Vlinders.png" },
+      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png" },
+      { naam: "Salamanders", icoon: "icons/Salamanders.png" },
+      { naam: "Kikkers", icoon: "icons/Kikkers.png" },
+      { naam: "Padden", icoon: "icons/Padden.png" },
+      { naam: "Krekels", icoon: "icons/Krekels.png" },
+      { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png" },
+      { naam: "Wandelende takken", icoon: "icons/Wandelende_takken.png" },
+      { naam: "Kakkerlakken", icoon: "icons/Kakkerlakken.png" },
+      { naam: "Termieten", icoon: "icons/Termieten.png" },
+      { naam: "Slakken", icoon: "icons/Slakken.png" },
+      { naam: "Mieren", icoon: "icons/Mieren.png" },
+      { naam: "Bijen", icoon: "icons/Bijen.png" }
+    ]
+  },
+  {
+    naam: "Voedsel", icoon: "icons/Voedsel.png", 
+    elementen: [
+      { naam: "Truffels", icoon: "icons/Truffels.png" },
+      { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png" },
+      { naam: "Honing", icoon: "icons/Honing.png" }
+    ]
+  },
+  {
+    naam: "Reptielen", icoon: "icons/Reptielen.png", 
+    elementen: [
+      { naam: "Oersynapsiden", icoon: "icons/Oersynapsiden.png" },
+      { naam: "Oerdiapsiden", icoon: "icons/Oerdiapsiden.png" },
+      { naam: "Oeranapsiden", icoon: "icons/Oeranapsiden.png" },
+      { naam: "Schildpadden", icoon: "icons/Schildpadden.png" },
+      { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png" },
+      { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png" },
+      { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png" },
+      { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png" },
+      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png" },
+      { naam: "Sauropoden", icoon: "icons/Sauropoden.png" },
+      { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png" },
+      { naam: "Tyrannosauriërs", icoon: "icons/Tyrannosauriërs.png" }
+    ]
+  },
+  {
+    naam: "Zoogdieren", icoon: "icons/Zoogdieren.png", 
+    elementen: [
+      { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png" }
+    ]
+  },
+  {
+    naam: "Vogels", icoon: "icons/Vogels.png", 
+    elementen: [
+      { naam: "Oerarchaeopteryx", icoon: "icons/Oerarchaeopteryx.png" }
+    ]
+  },
+  {
+    naam: "Samenleving", icoon: "icons/Samenleving.png", 
+    elementen: [
+      { naam: "Hiërarchie", icoon: "icons/Hiërarchie.png" },
+      { naam: "Werk", icoon: "icons/Werk.png" },
+      { naam: "Leger", icoon: "icons/Leger.png" },
+      { naam: "Heerser", icoon: "icons/Heerser.png" }
     ]
   }
 ];
