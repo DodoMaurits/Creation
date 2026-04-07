@@ -458,7 +458,6 @@ const combinaties = [
       threshold: {
         titel: "Quarks op Aarde", 
         tekst: `Je moet eerst nog wat meer halen...<br>`,
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/atoomvorming.jpg",
@@ -1059,7 +1058,6 @@ const combinaties = [
       threshold: {
         titel: "Water op Aarde", 
         tekst: `Je moet eerst nog wat meer halen...<br>`,
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/wateropaarde.png",
@@ -2048,7 +2046,6 @@ const combinaties = [
       threshold: {
         titel: "Leven", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/eersteleven.png",
@@ -3580,7 +3577,6 @@ const combinaties = [
       threshold: {
         titel: "Cambrische Explosie", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/cambrischeexplosie.png",
@@ -4817,7 +4813,6 @@ const combinaties = [
       threshold: {
         titel: "Siluur", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/siluur.jpg",
@@ -5641,7 +5636,6 @@ const combinaties = [
       threshold: {
         titel: "Carboon", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/carboon.jpg",
@@ -6311,7 +6305,6 @@ const combinaties = [
       threshold: {
         titel: "Perm", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/perm.jpg",
@@ -6942,7 +6935,6 @@ const combinaties = [
       threshold: {
         titel: "Jura", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/jura.png",
@@ -7031,7 +7023,6 @@ const combinaties = [
       threshold: {
         titel: "Krijt", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: [""]
       },
       normal: {
         achtergrond: "afb/krijt.jpg",
