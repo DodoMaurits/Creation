@@ -246,7 +246,7 @@ const mappen = [
     {
     naam: "Brein", icoon: "icons/Brein.png", 
     elementen: [
-      { naam: "Zenuwen", icoon: "icons/Sponzen.png" },
+      { naam: "Zenuwen", icoon: "icons/Zenuwen.png" },
       { naam: "Tast", icoon: "icons/Tast.png" },
       { naam: "Licht", icoon: "icons/Licht.png" },
       { naam: "Brein", icoon: "icons/Brein.png" },
