@@ -458,7 +458,7 @@ const combinaties = [
       threshold: {
         titel: "Quarks op Aarde", 
         tekst: `Je moet eerst nog wat meer halen...<br>`,
-        requirements: ["Quarks"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/atoomvorming.jpg",
@@ -1059,10 +1059,7 @@ const combinaties = [
       threshold: {
         titel: "Water op Aarde", 
         tekst: `Je moet eerst nog wat meer halen...<br>`,
-        requirements: ["Radioactiviteit", "Sterrenstelsel", "Zwart Gat", "Magnetisme",
-                       "Neptunus", "Uranus", "Saturnus", "Jupiter",
-                       "Mars", "De Aarde", "De Maan", "Venus", "Mercurius", 
-                       "Basalt", "Obsidiaan", "Platentektoniek", "Vulkaan"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/wateropaarde.png",
@@ -1100,15 +1097,7 @@ const combinaties = [
         quote: `The only place on Earth that is still as it should be. May we never tame it
         <br><br>- Andrew Denton`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Water", 
-        titel: "Te vroeg",
-        tekst: `Probeer opnieuw als de Aarde wat meer is afgekoeld...
-        <br><br>Eerst nodig: water.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -2059,8 +2048,7 @@ const combinaties = [
       threshold: {
         titel: "Leven", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Rivier", "Tufsteen", "Koper", "Zure regen", "Strand", "Eiland", 
-          "Roest", "Zand", "Klei", "Glas", "Golf", "Wind", "Zout", "Kalk"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/eersteleven.png",
@@ -3592,10 +3580,7 @@ const combinaties = [
       threshold: {
         titel: "Cambrische Explosie", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
-          "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
-          "Dood", "Stromatolieten", "Fotosynthese", "Amoeben", "Foraminiferen", "Stralendiertjes", 
-          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Rif", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/cambrischeexplosie.png",
@@ -3734,15 +3719,7 @@ const combinaties = [
         to trace a perfect circle
         <br><br>- Pablo Picasso`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Wormen", 
-        titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
-        <br><br>Eerst nodig: wormen.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -3895,15 +3872,7 @@ const combinaties = [
         quote: `Every antique farm-house and moss-grown cottage is a picture
         <br><br>- Washington Irving`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Wormen", 
-        titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
-        <br><br>Eerst nodig: wormen.`
-      }
-    }
+    ]
   },
   {
     input: ["Steenwortelalgen", "Evolutie"],
@@ -3913,15 +3882,7 @@ const combinaties = [
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Wormen", 
-        titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
-        <br><br>Eerst nodig: wormen.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -4856,8 +4817,7 @@ const combinaties = [
       threshold: {
         titel: "Siluur", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Schorpioenen", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
-          "Oog", "Smaak", "Kleur", "Tand", "Mos"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/siluur.jpg",
@@ -4905,16 +4865,7 @@ const combinaties = [
         quote: `Nature alone is antique, and the oldest art a mushroom
         <br><br>- Thomas Carlyle`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
-        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
+    ]
   },
   {
     input: ["Korstmos", "Detritus"],
@@ -4971,16 +4922,7 @@ const combinaties = [
         quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
         <br><br>- Frank Wright`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
-        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -5034,16 +4976,7 @@ const combinaties = [
         quote: `Our lungs are best when we don't realize they are helping us breathe
         <br><br>- Lao Tzu`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
-        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -5264,16 +5197,7 @@ const combinaties = [
         quote: `You cannot teach a crab to walk straight
         <br><br>- Aristophanes`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
-        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -5441,16 +5365,7 @@ const combinaties = [
         insect evolution
         <br><br>- Norman Platnick`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
-        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -5726,8 +5641,7 @@ const combinaties = [
       threshold: {
         titel: "Carboon", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Paddenstoelen", "Kreeften", "Vleugels", "Moeras", "Haaien", "Oerchondrostei", 
-          "Wimpelalen", "Oerneopterygen", "Bruinkool"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/carboon.jpg",
@@ -5763,15 +5677,7 @@ const combinaties = [
         land began with creatures very much like fish
         <br><br>- Neil Shubin`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oerzaadplanten", 
-        titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
-        <br><br>Eerst nodig: eerste zaadplanten.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -5864,15 +5770,7 @@ const combinaties = [
         that beauty
         <br><br>- Maya Angelou`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oerzaadplanten", 
-        titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
-        <br><br>Eerst nodig: eerste zaadplanten.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -6045,15 +5943,7 @@ const combinaties = [
         quote: `The music of all creatures had to do with their loves, even of toads and frogs
         <br><br>- Henry Thoreau`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oerzaadplanten", 
-        titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
-        <br><br>Eerst nodig: eerste zaadplanten.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -6421,7 +6311,7 @@ const combinaties = [
       threshold: {
         titel: "Perm", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Vlinders", "Ei", "Steenkool", "Tropisch regenwoud"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/perm.jpg",
@@ -6510,15 +6400,7 @@ const combinaties = [
         groups from becoming fully social, they dominated the world
         <br><br>- E.O. Wilson`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oercynodonten", 
-        titel: "Probeer opnieuw in het Perm",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
-        <br><br>Eerst nodig: eerste zoogdieren.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -6664,15 +6546,7 @@ const combinaties = [
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oercynodonten", 
-        titel: "Probeer opnieuw in het Perm",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
-        <br><br>Eerst nodig: eerste zoogdieren.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -7068,7 +6942,7 @@ const combinaties = [
       threshold: {
         titel: "Jura", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Schildpadden"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/jura.png",
@@ -7107,15 +6981,7 @@ const combinaties = [
         organisms
         <br><br>- Jeremy Jackson`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oermaniraptoren", 
-        titel: "Probeer opnieuw in het Jura",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
-        <br><br>Eerst nodig: dinosauriërs.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -7165,7 +7031,7 @@ const combinaties = [
       threshold: {
         titel: "Krijt", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Termieten"]
+        requirements: [""]
       },
       normal: {
         achtergrond: "afb/krijt.jpg",
@@ -7190,15 +7056,7 @@ const combinaties = [
         should the sage wander in the village
         <br><br>- Gautama Buddha`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Bloem", 
-        titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.`
-      }
-    }
+    ]
   },
   {
     input: ["Lepidosauriërs", "Evolutie"],
@@ -7219,15 +7077,7 @@ const combinaties = [
         quote: `The snake sheds its skin, but not its nature
         <br><br>- Aristoteles`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Bloem", 
-        titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.`
-      }
-    }
+    ]
   },
   {
     input: ["Crurotarsi", "Evolutie"],
@@ -7239,15 +7089,7 @@ const combinaties = [
         it beneath the water
         <br><br>- Herodotus`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Bloem", 
-        titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.`
-      }
-    }
+    ]
   },
   {
     input: ["Bloem", "Oerzaadplanten"],
