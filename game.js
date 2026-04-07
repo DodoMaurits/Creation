@@ -6890,8 +6890,8 @@ const combinaties = [
   {
     input: ["Bijen", "Bloem"],
     hint: `Sommige bloemen en insecten zijn goed in lekkernijen.`,
-    vers: `Uit haar buik komt een drank van verschillende kleuren, daarin is genezing voor de mens, aldus zit daarin
-    zeker een teken voor de mensen die nadenken
+    vers: `Uit haar buik komt een drank van verschillende kleuren, <br>daarin is genezing voor de mens, aldus zit daarin
+    zeker een teken <br>voor de mensen die nadenken
     <br><br>De Bij (16:69)`,
     output: [
       { naam: "Honing", icoon: "icons/Honing.png", map: "Voedsel", 
