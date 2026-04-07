@@ -262,7 +262,7 @@ const combinaties = [
   {
     input: ["Ster", "Ster"],
     hint: `Zo veel sterren.. het lijken wel witte melkslierten rond het afvoerputje`,
-    vers: `En de Zon stroomt naar haar Bestemming, dat is de bepaling van de Macht, van de Wijsheid
+    vers: `En de Zon stroomt naar haar Bestemming, <br>dat is de bepaling van de Macht, van de Wijsheid
     <br><br>Ya-Sin (36:38)`,
     output: [
       { naam: "Sterrenstelsel", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
@@ -897,7 +897,7 @@ const combinaties = [
       ["Wolk", "De Aarde"], ["Wolk", "Planeet"]
     ],
     hint: `Wolken kringelen rond... het is tijd om de planeten lucht te geven.`,
-    vers: `En Wij maakten van de hemel een beschermend dak, maar zij wenden zich af van haar signalen 
+    vers: `En Wij maakten van de hemel een beschermend dak, <br>maar zij wenden zich af van haar signalen 
     <br><br>De Profeten (21:32)`,
     output: [
       { naam: "Lucht", icoon: "icons/Lucht (Sky).png", map: "Lucht", 
@@ -1674,7 +1674,7 @@ const combinaties = [
         <br><br>- Isaac Asimov`
       }
     ],
-    vers: `En Wij hebben uit water alles wat leeft gemaakt. Zien zij dan niet?
+    vers: `En Wij hebben uit water alles wat leeft gemaakt. <br>Zien zij dan niet?
     <br><br>De Profeten (21:30)`,
     uitleg: {
       threshold: {
@@ -2457,7 +2457,7 @@ const combinaties = [
       ["Schimmel", "Basalt"], ["Schimmel", "Zand"], ["Schimmel", "Klei"] 
     ],
     hint: `Kijk, nu kan het land worden omgeploegd door schimmels voor de anderen om op te leven.`,
-    vers: `En een teken voor hen is de dode aarde, Wij brengen haar tot leven en brengen daaruit graan waaarvan zij eten
+    vers: `En een teken voor hen is de dode aarde, Wij brengen haar tot leven <br>en brengen daaruit graan waaarvan zij eten
     <br><br>Ya-Sin (36:33)`,
     output: [
       { naam: "Aarde", icoon: "icons/Aarde.png", map: "Aarde", 
@@ -3624,7 +3624,7 @@ const combinaties = [
     input: [
       ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
@@ -3828,7 +3828,7 @@ const combinaties = [
   },
   {
     input: ["Haaien", "Haaien"],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Drift", icoon: "icons/Drift.png", map: "Brein", 
@@ -4096,7 +4096,7 @@ const combinaties = [
     input: [
       ["Nautilussen", "Lancetvisjes"], ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
@@ -4692,7 +4692,7 @@ const combinaties = [
     input: [
       ["Oerstraalvinnigen", "Agnathen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
@@ -4742,7 +4742,7 @@ const combinaties = [
       ["Oerchondrichthyes", "Tiktaalik"], ["Oerchondrichthyes", "Longvissen"], ["Oerchondrichthyes", "Oerchondrostei"],
       ["Oerchondrichthyes", "Wimpelalen"], ["Oerchondrichthyes", "Oerneopterygen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oerchondrichthyes", icoon: "icons/Oerchondrichthyes.png", map: "Vissen",
@@ -4792,7 +4792,7 @@ const combinaties = [
     input: [
       ["Coelacanthen", "Agnathen"], ["Coelacanthen", "Inktvissen"], ["Coelacanthen", "Oerstraalvinnigen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
@@ -5144,7 +5144,7 @@ const combinaties = [
       ["Haaien", "Oersynapsiden"], ["Haaien", "Oeranapsiden"], ["Haaien", "Oerdiapsiden"], ["Haaien", "Lepidosauriërs"], 
       ["Haaien", "Crurotarsi"], ["Haaien", "Oerdinosauriërs"], ["Haaien", "Schildpadden"], ["Haaien", "Zeeschildpadden"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
@@ -5194,7 +5194,7 @@ const combinaties = [
   },
   {
     input: ["Haaien", "Nautilussen"],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
@@ -5426,7 +5426,7 @@ const combinaties = [
     input: [
       ["Oertetrapoden", "Agnathen"], ["Oertetrapoden", "Oerstraalvinnigen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
@@ -5883,7 +5883,7 @@ const combinaties = [
     input: [
       ["Oersynapsiden", "Zwaardstaarten"], ["Oersynapsiden", "Oertetrapoden"], ["Oersynapsiden", "Oercynodonten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oersynapsiden", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
@@ -5937,7 +5937,7 @@ const combinaties = [
     input: [
       ["Oerdiapsiden", "Zwaardstaarten"], ["Oerdiapsiden", "Oertetrapoden"], ["Oerdiapsiden", "Oercynodonten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oerdiapsiden", icoon: "icons/Oerdiapsiden.png", map: "Reptielen", 
@@ -5990,7 +5990,7 @@ const combinaties = [
     input: [
       ["Oeranapsiden", "Zwaardstaarten"], ["Oeranapsiden", "Oertetrapoden"], ["Oeranapsiden", "Oercynodonten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oeranapsiden", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
@@ -6326,7 +6326,7 @@ const combinaties = [
     input: [
       ["Pterosauriërs", "Zwaardstaarten"], ["Pterosauriërs", "Oertetrapoden"], ["Pterosauriërs", "Oercynodonten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
@@ -6381,7 +6381,7 @@ const combinaties = [
     input: [
       ["Lepidosauriërs", "Zwaardstaarten"], ["Lepidosauriërs", "Oertetrapoden"], ["Lepidosauriërs", "Oercynodonten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
@@ -6435,7 +6435,7 @@ const combinaties = [
     input: [
       ["Crurotarsi", "Zwaardstaarten"], ["Crurotarsi", "Oertetrapoden"], ["Crurotarsi", "Oercynodonten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
@@ -6489,7 +6489,7 @@ const combinaties = [
     input: [
       ["Crurotarsi", "Zwaardstaarten"], ["Crurotarsi", "Oertetrapoden"], ["Crurotarsi", "Oercynodonten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
