@@ -6826,6 +6826,10 @@ const combinaties = [
     hint: `Vergeet de lepidosauriërs niet!`,
     tijd: 50_000_000,
     output: [
+      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+        quote: `The snake sheds its skin, but not its nature
+        <br><br>- Aristoteles`
+      },
       { naam: "Gekko's", icoon: "icons/Gekko's.png", map: "Reptielen", 
         quote: `Geckos can run up walls and across ceilings with ease, their feet equipped with millions of microscopic 
         hairs that cling by the slightest forces
@@ -6835,10 +6839,6 @@ const combinaties = [
         quote: `Iguanas bask for hours in the sun, conserving energy, their stillness broken only by slow, deliberate 
         movements
         <br><br>- David Attenborough`
-      },
-      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
-        quote: `The snake sheds its skin, but not its nature
-        <br><br>- Aristoteles`
       }
     ],
     uitleg: {
