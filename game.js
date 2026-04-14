@@ -4835,10 +4835,6 @@ const combinaties = [
         quote: `
         <br><br>- `
       },
-      { naam: "Eenoogkreeftjes", icoon: "icons/Eenoogkreeftjes.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
-      },
       { naam: "Vlokreeftjes", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
         quote: `
         <br><br>- `
@@ -5536,18 +5532,6 @@ const combinaties = [
       { naam: "Zijde", icoon: "icons/Zijde.png", map: "Biologie", 
         quote: `Silk does for the body what diamonds do for the hand
         <br><br>- Oscar de la Renta`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Mijten", "Rivier"], ["Mijten", "Meer"], ["Mijten", "Ven"]
-    ],
-    hint: `...`,
-    output: [
-      { naam: "Watermijten", icoon: "icons/Watermijten.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
       }
     ]
   },
