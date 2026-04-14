@@ -4828,20 +4828,22 @@ const combinaties = [
     hint: `Uit de eerste kreeftachtige verschijnen een hoop herkenbare soorten.`,
     output: [
       { naam: "Zeepissebedden", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
+        quote: `Marine littoral isopods are highly mobile scavengers, often found in large numbers along rocky shorelines
+        <br><br>- Gary Poore`
       },
       { naam: "Zeepokken", icoon: "icons/Zeepokken.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
+        quote: `Despite their immobility as adults, barnacles are active filter feeders, relying on water movement to 
+        bring food particles within reach
+        <br><br>- Graham Walker`
       },
       { naam: "Vlokreeftjes", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
+        quote: `Many amphipods are important scavengers, playing a key role in the breakdown of organic matter in aquatic 
+        ecosystems
+        <br><br>- Gary Poore`
       },
       { naam: "Oertienpotigen", icoon: "icons/Oertienpotigen.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
+        quote: `The evolution of decapods reflects a long history of ecological diversification in marine environments
+        <br><br>- H. Komai`
       }
     ],
     uitleg: {
