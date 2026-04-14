@@ -5641,6 +5641,11 @@ const combinaties = [
         from simple beginnings
         <br><br>- E.O. Wilson`
       },
+      { naam: "Libellen", icoon: "icons/Libellen.png", map: "Klein landleven", 
+        quote: `The beauteous dragonfly's dancing by the waves of the rivulet glancing; she dances here and she dances
+        there, the glimmering, glittering flutterer fair
+        <br><br>- Heinrich Heine`
+      },
       { naam: "Luizen", icoon: "icons/Luizen.png", map: "Klein landleven", 
         quote: `The louse, a wingless parasite, has shaped history far more than its size would suggest
         <br><br>- Hans Zinsser`
