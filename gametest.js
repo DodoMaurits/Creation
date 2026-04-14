@@ -7360,7 +7360,7 @@ const combinaties = [
         quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
         <br><br>- Trevor Dunn`
       }
-    }
+    ]
   },
   {
     input: ["Lepidosauriërs", "Evolutie"],
