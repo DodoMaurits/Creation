@@ -314,7 +314,7 @@ const mappen = [
       { naam: "Garnalen", icoon: "icons/Garnalen.png" },
       { naam: "Kreeften", icoon: "icons/Kreeften.png" },
       { naam: "Krabben", icoon: "icons/Krabben.png" },
-      { naam: "Heremietkreeften", icoon: "icons/Heremeietkreeften.png" },
+      { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png" },
       { naam: "Waterspinnen", icoon: "icons/Waterspinnen.png" }
     ]
   },
