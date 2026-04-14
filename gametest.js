@@ -332,6 +332,7 @@ const mappen = [
       { naam: "Pissebedden", icoon: "icons/Pissebedden.png" },
       { naam: "Oerpolyneopteren", icoon: "icons/Oerpolyneopteren.png" },
       { naam: "Oerhymenopteren", icoon: "icons/Oerhymenopteren.png" },
+      { naam: "Libellen", icoon: "icons/Libellen.png" },
       { naam: "Luizen", icoon: "icons/Luizen.png" },
       { naam: "Kevers", icoon: "icons/Kevers.png" },
       { naam: "Muggen", icoon: "icons/Muggen.png" },
