@@ -4824,6 +4824,66 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerkreeftjes", "Evolutie"],
+    hint: `Uit de eerste kreeftachtige verschijnen een hoop herkenbare soorten.`,
+    output: [
+      { naam: "Zeepissebedden", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Zeepokken", icoon: "icons/Zeepokken.png", map: "Geleedpotigen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Eenoogkreeftjes", icoon: "icons/Eenoogkreeftjes.png", map: "Geleedpotigen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Vlokreeftjes", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Oertienpotigen", icoon: "icons/Oertienpotigen.png", map: "Geleedpotigen", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oervaatplanten", 
+        titel: "Probeer opnieuw in het Siluur",
+        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
+        gezet kan worden
+        <br><br>Eerst nodig: oervaatplanten.`
+      }
+    }
+  },
+  {
+    input: ["Oerinsecten", "Evolutie"],
+    hint: `Met een kleine evolutionaire aanpassing gaan deze kleine beestjes de lucht in.`,
+    tijd: 410_000_000,
+    output: [
+      { naam: "Vleugels", icoon: "icons/Vleugels.png", map: "Biologie", 
+        quote: `Until you spread your wings, you'll have no idea how far you can fly
+        <br><br>- Napoleon Bonaparte`
+      },
+      { naam: "Zilvervisjes", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
+        quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
+        insect evolution
+        <br><br>- Norman Platnick`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oervaatplanten", 
+        titel: "Probeer opnieuw in het Siluur",
+        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
+        gezet kan worden
+        <br><br>Eerst nodig: oervaatplanten.`
+      }
+    }
+  },
+  {
     input: ["Oerspinachtigen", "Evolutie"],
     hint: `Daar gingen de voorouders van de spinnen en schorpioenen ieder hun eigen weg.`,
     tijd: 390_000_000,
@@ -4993,66 +5053,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: ["Oerkreeftjes", "Evolutie"],
-    hint: `Uit de eerste kreeftachtige verschijnen een hoop herkenbare soorten.`,
-    output: [
-      { naam: "Zeepissebedden", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Zeepokken", icoon: "icons/Zeepokken.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Eenoogkreeftjes", icoon: "icons/Eenoogkreeftjes.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Vlokreeftjes", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Oertienpotigen", icoon: "icons/Oertienpotigen.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
-        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
-  },
-  {
-    input: ["Oerinsecten", "Evolutie"],
-    hint: `Met een kleine evolutionaire aanpassing gaan deze kleine beestjes de lucht in.`,
-    tijd: 410_000_000,
-    output: [
-      { naam: "Vleugels", icoon: "icons/Vleugels.png", map: "Biologie", 
-        quote: `Until you spread your wings, you'll have no idea how far you can fly
-        <br><br>- Napoleon Bonaparte`
-      },
-      { naam: "Zilvervisjes", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
-        quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
-        insect evolution
-        <br><br>- Norman Platnick`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
-        tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
   },
   {
     input: [
@@ -5467,12 +5467,87 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Heremietkreeften", "Bacteriën"], ["Heremietkreeften", "Detritus"], ["Heremietkreeften", "Blauwalgen"], 
+      ["Heremietkreeften", "Schimmel"], ["Heremietkreeften", "Archaeplastiden"], ["Heremietkreeften", "Gist"], 
+      ["Heremietkreeften", "Rode algen"], ["Heremietkreeften", "Groene algen"], ["Heremietkreeften", "Roodwieren"], 
+      ["Heremietkreeften", "Groenwieren"], ["Heremietkreeften", "Wormen"], ["Heremietkreeften", "Oergeleedpotigen"], 
+      ["Heremietkreeften", "Manteldieren"], ["Heremietkreeften", "Mos"], ["Heremietkreeften", "Trilobieten"], 
+      ["Heremietkreeften", "Oerkreeftjes"], ["Heremietkreeften", "Oervaatplanten"], ["Heremietkreeften", "Korstmos"], 
+      ["Heremietkreeften", "Truffels"], ["Heremietkreeften", "Paddenstoelen"], ["Heremietkreeften", "Pissebedden"], 
+      ["Heremietkreeften", "Garnalen"], ["Heremietkreeften", "Blad"]
+    ],
+    output: [
+      { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      },
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Spinnen", "Rivier"], ["Spinnen", "Meer"], ["Spinnen", "Ven"]
+    ],
+    hint: `...`,
+    output: [
+      { naam: "Waterspinnen", icoon: "icons/Waterspinnen.png", map: "Geleedpotigen", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
+  {
     input: ["Spinnen", "Glucose"],
     hint: `Geef de spin wat ze nodig heeft en ze maakt er iets moois van.`,
     output: [
       { naam: "Zijde", icoon: "icons/Zijde.png", map: "Biologie", 
         quote: `Silk does for the body what diamonds do for the hand
         <br><br>- Oscar de la Renta`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Mijten", "Rivier"], ["Mijten", "Meer"], ["Mijten", "Ven"]
+    ],
+    hint: `...`,
+    output: [
+      { naam: "Watermijten", icoon: "icons/Watermijten.png", map: "Geleedpotigen", 
+        quote: `
+        <br><br>- `
       }
     ]
   },
@@ -5564,80 +5639,6 @@ const combinaties = [
         aardkorst mogelijk maakte en bijdroeg aan de vorming van veel van de mineralen die we vandaag kennen.</span>`,
       }
     }
-  },
-  {
-    input: ["Tiktaalik", "Evolutie"],
-    hint: `De ozonlaag, kleine insecten, planten.. alle ingrediënten zijn er voor de tiktaalik om het land op te gaan.`,
-    output: [
-      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
-        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
-        land began with creatures very much like fish
-        <br><br>- Neil Shubin`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oerzaadplanten", 
-        titel: "Probeer opnieuw in het Carboon",
-        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
-        <br><br>Eerst nodig: eerste zaadplanten.`
-      }
-    }
-  },
-  {
-    input: [
-      ["Oertetrapoden", "Oertrochozoa"], ["Oertetrapoden", "Wormen"], ["Oertetrapoden", "Lancetvisjes"], 
-      ["Oertetrapoden", "Oergeleedpotigen"], ["Oertetrapoden", "Duizendpoten"], ["Oertetrapoden", "Oerkreeftjes"], 
-      ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Spinnen"], ["Oertetrapoden", "Mijten"], 
-      ["Oertetrapoden", "Krill"], ["Oertetrapoden", "Pissebedden"], ["Oertetrapoden", "Garnalen"], 
-      ["Oertetrapoden", "Zilvervisjes"], ["Oertetrapoden", "Oerpolyneopteren"], ["Oertetrapoden", "Oerhymenopteren"], 
-      ["Oertetrapoden", "Luizen"], ["Oertetrapoden", "Kevers"], ["Oertetrapoden", "Muggen"], ["Oertetrapoden", "Vliegen"], 
-      ["Oertetrapoden", "Vlinders"], ["Oertetrapoden", "Krekels"], ["Oertetrapoden", "Sprinkhanen"], 
-      ["Oertetrapoden", "Wandelende takken"], ["Oertetrapoden", "Kakkerlakken"], ["Oertetrapoden", "Termieten"]
-    ],
-    output: [
-      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
-        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
-        land began with creatures very much like fish
-        <br><br>- Neil Shubin`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Oertetrapoden", "Agnathen"], ["Oertetrapoden", "Oerstraalvinnigen"]
-    ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    output: [
-      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
-        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
-        land began with creatures very much like fish
-        <br><br>- Neil Shubin`
-      },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
   },
   {
     input: ["Vleugels", "Oerinsecten"],
@@ -5836,6 +5837,104 @@ const combinaties = [
     ]
   },
   {
+    input: ["Tiktaalik", "Evolutie"],
+    hint: `De ozonlaag, kleine insecten, planten.. alle ingrediënten zijn er voor de tiktaalik om het land op te gaan.`,
+    output: [
+      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
+        land began with creatures very much like fish
+        <br><br>- Neil Shubin`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Oerzaadplanten", 
+        titel: "Probeer opnieuw in het Carboon",
+        tekst: `Eerst moeten de oervaatplanten zich met zaadjes kunnen verspreiden in droge gebieden.
+        <br><br>Eerst nodig: eerste zaadplanten.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Oertetrapoden", "Oertrochozoa"], ["Oertetrapoden", "Wormen"], ["Oertetrapoden", "Lancetvisjes"], 
+      ["Oertetrapoden", "Oergeleedpotigen"], ["Oertetrapoden", "Duizendpoten"], ["Oertetrapoden", "Oerkreeftjes"], 
+      ["Oertetrapoden", "Oerinsecten"], ["Oertetrapoden", "Spinnen"], ["Oertetrapoden", "Mijten"], 
+      ["Oertetrapoden", "Krill"], ["Oertetrapoden", "Pissebedden"], ["Oertetrapoden", "Garnalen"], 
+      ["Oertetrapoden", "Zilvervisjes"], ["Oertetrapoden", "Oerpolyneopteren"], ["Oertetrapoden", "Oerhymenopteren"], 
+      ["Oertetrapoden", "Luizen"], ["Oertetrapoden", "Kevers"], ["Oertetrapoden", "Muggen"], ["Oertetrapoden", "Vliegen"], 
+      ["Oertetrapoden", "Vlinders"], ["Oertetrapoden", "Krekels"], ["Oertetrapoden", "Sprinkhanen"], 
+      ["Oertetrapoden", "Wandelende takken"], ["Oertetrapoden", "Kakkerlakken"], ["Oertetrapoden", "Termieten"]
+    ],
+    output: [
+      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
+        land began with creatures very much like fish
+        <br><br>- Neil Shubin`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oertetrapoden", "Agnathen"], ["Oertetrapoden", "Oerstraalvinnigen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
+        land began with creatures very much like fish
+        <br><br>- Neil Shubin`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: ["Oerzaadplanten", "Evolutie"],
+    hint: `Zaadjes brengen planten in drogere gebieden, waar ze bomen vormen.`,
+    output: [
+      { naam: "Hout", icoon: "icons/Hout.png", map: "Biologie", 
+        quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
+        <br><br>- Aristoteles`
+      },
+      { naam: "Coniferen", icoon: "icons/Coniferen.png", map: "Bomen", 
+        quote: `The pine endures the winter winds, its needles unwavering, a friend to the solitary scholar
+        <br><br>- Wang Wei`
+      },
+      { naam: "Palmvarens", icoon: "icons/Palmvarens.png", map: "Bomen", 
+        quote: `The romance of cycads, the gymnosperms that have been with us so long, can never be matched by any 
+        somber row of pines standing in the churchyard of science and memory
+        <br><br>- Edith Roberts`
+      },
+      { naam: "Ginkgo", icoon: "icons/Ginkgo.png", map: "Bomen", 
+        quote: `This leaf from a tree in the East … has been given to my garden. It reveals a certain secret which 
+        pleases me and thoughtful people
+        <br><br>- Johann von Goethe`
+      }
+    ]
+  },
+  {
     input: ["Oertetrapoden", "Evolutie"],
     hint: `De planten hebben hun zaadjes, nu is het aan de tetrapoden om hun eigen zaadjes te ontwikkelen.`,
     output: [
@@ -5946,30 +6045,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerzaadplanten", "Evolutie"],
-    hint: `Zaadjes brengen planten in drogere gebieden, waar ze bomen vormen.`,
-    output: [
-      { naam: "Hout", icoon: "icons/Hout.png", map: "Biologie", 
-        quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
-        <br><br>- Aristoteles`
-      },
-      { naam: "Coniferen", icoon: "icons/Coniferen.png", map: "Bomen", 
-        quote: `The pine endures the winter winds, its needles unwavering, a friend to the solitary scholar
-        <br><br>- Wang Wei`
-      },
-      { naam: "Palmvarens", icoon: "icons/Palmvarens.png", map: "Bomen", 
-        quote: `The romance of cycads, the gymnosperms that have been with us so long, can never be matched by any 
-        somber row of pines standing in the churchyard of science and memory
-        <br><br>- Edith Roberts`
-      },
-      { naam: "Ginkgo", icoon: "icons/Ginkgo.png", map: "Bomen", 
-        quote: `This leaf from a tree in the East … has been given to my garden. It reveals a certain secret which 
-        pleases me and thoughtful people
-        <br><br>- Johann von Goethe`
-      }
-    ]
-  },
-  {
     input: [
       ["Hout", "Vuur"], ["Hout", "Lava"]
     ],
@@ -5990,34 +6065,6 @@ const combinaties = [
       { naam: "Bos", icoon: "icons/Bos.png", map: "Landschap", 
         quote: `The clearest way into the Universe is through a forest wilderness
         <br><br>- John Muir`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Bos", "Vuur"], ["Bos", "Lava"], ["Bos", "Explosie"], ["Bos", "Granietmagma"], ["Bos", "Bliksem"],
-      ["Bos", "Bolbliksem"],
-      ["Regenwoud", "Vuur"], ["Regenwoud", "Lava"], ["Regenwoud", "Explosie"], ["Regenwoud", "Granietmagma"], 
-      ["Regenwoud", "Bliksem"], ["Regenwoud", "Bolbliksem"],
-      ["Tropisch regenwoud", "Vuur"], ["Tropisch regenwoud", "Lava"], ["Tropisch regenwoud", "Explosie"], 
-      ["Tropisch regenwoud", "Granietmagma"], ["Tropisch regenwoud", "Bliksem"], ["Tropisch regenwoud", "Bolbliksem"]
-    ],
-    hint: `Met de eerste bossen, ontstonden ook de eerste bosbranden.`,
-    output: [
-      { naam: "Brand", icoon: "icons/Brand.png", map: "Vuur", 
-        quote: `No time to grieve for roses when the forests are burning
-        <br><br>- Zbigniew Herbert`
-      }
-    ]
-  },
-  {
-    input: ["Bos", "Regen"],
-    hint: `Meer begroeiing, meer vocht, meer leven.`,
-    output: [
-      { naam: "Regenwoud", icoon: "icons/Regenwoud.png", map: "Landschap", 
-        quote: `When we walk into a grove of trees or under an open sky the magic of nature takes over
-        and the heaviness of life lifts a little
-        <br><br>- Natassia Cassinero`
       }
     ]
   },
@@ -6200,6 +6247,34 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]  
+  },
+  {
+    input: [
+      ["Bos", "Vuur"], ["Bos", "Lava"], ["Bos", "Explosie"], ["Bos", "Granietmagma"], ["Bos", "Bliksem"],
+      ["Bos", "Bolbliksem"],
+      ["Regenwoud", "Vuur"], ["Regenwoud", "Lava"], ["Regenwoud", "Explosie"], ["Regenwoud", "Granietmagma"], 
+      ["Regenwoud", "Bliksem"], ["Regenwoud", "Bolbliksem"],
+      ["Tropisch regenwoud", "Vuur"], ["Tropisch regenwoud", "Lava"], ["Tropisch regenwoud", "Explosie"], 
+      ["Tropisch regenwoud", "Granietmagma"], ["Tropisch regenwoud", "Bliksem"], ["Tropisch regenwoud", "Bolbliksem"]
+    ],
+    hint: `Met de eerste bossen, ontstonden ook de eerste bosbranden.`,
+    output: [
+      { naam: "Brand", icoon: "icons/Brand.png", map: "Vuur", 
+        quote: `No time to grieve for roses when the forests are burning
+        <br><br>- Zbigniew Herbert`
+      }
+    ]
+  },
+  {
+    input: ["Bos", "Regen"],
+    hint: `Meer begroeiing, meer vocht, meer leven.`,
+    output: [
+      { naam: "Regenwoud", icoon: "icons/Regenwoud.png", map: "Landschap", 
+        quote: `When we walk into a grove of trees or under an open sky the magic of nature takes over
+        and the heaviness of life lifts a little
+        <br><br>- Natassia Cassinero`
+      }
+    ]
   },
   {
     input: ["Regenwoud", "Warmte"],
@@ -7091,14 +7166,12 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oereenzaadlobbige", "Evolutie"],
-    hint: `Eenzaadlobbige plantjes groeien als gras.`,
+    input: [
+      ["Oereenzaadlobbige", "Ven"], ["Oereenzaadlobbige", "Rivier"], ["Oereenzaadlobbige", "Moeras"]
+    ],
+    hint: `...`,
     tijd: 95_000_000,
     output: [
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Planten", 
-        quote: `The orchid is mother nature's masterpiece
-        <br><br>- Robyn`
-      },
       { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
         <br><br>- Blaise Pascal`
@@ -7107,11 +7180,72 @@ const combinaties = [
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
         on which we write
         <br><br>- Pliny the Elder`
-      },
+      }
+    ]
+  },
+  {
+    input: ["Oereenzaadlobbige", "Evolutie"],
+    hint: `Eenzaadlobbige plantjes groeien als gras.`,
+    tijd: 95_000_000,
+    output: [
       { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
         quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
         but they rule the plains and feed the world
         <br><br>- Peter Raven`
+      }
+    ]
+  },
+  {
+    input: ["Oereenzaadlobbige", "Tropisch regenwoud"],
+    hint: `...`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Palmen", icoon: "icons/Palmen.png", map: "Bomen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Kokosnoten", icoon: "icons/Kokosnoten.png", map: "Voedsel", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Voedsel", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Bananen", icoon: "icons/Bananen.png", map: "Voedsel", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Gember", icoon: "icons/Gember.png", map: "Voedsel", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
+  {
+    input: ["Oereenzaadlobbige", "Bloem"],
+    hint: `...`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Planten", 
+        quote: `The orchid is mother nature's masterpiece
+        <br><br>- Robyn`
+      },
+      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Planten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Asperges", icoon: "icons/Asperges.png", map: "Voedsel", 
+        quote: `
+        <br><br>- `
       }
     ]
   },
