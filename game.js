@@ -5519,11 +5519,12 @@ const combinaties = [
     input: [
       ["Spinnen", "Rivier"], ["Spinnen", "Meer"], ["Spinnen", "Ven"]
     ],
-    hint: `...`,
+    hint: `Onder water spinnen webben als lucht gevulde duikklokken tussen de waterplanten.`,
     output: [
       { naam: "Waterspinnen", icoon: "icons/Waterspinnen.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
+        quote: `The diving bell spider constructs an օդome of silk filled with air, allowing it to live and hunt beneath 
+        the surface
+        <br><br>- Rainer Foelix`
       }
     ]
   },
