@@ -5267,11 +5267,11 @@ const combinaties = [
   },
   {
     input: ["Zeepissebedden", "Oceaan"],
-    hint: `...`,
+    hint: `In de krochten van de oceaan nemen pissebedden grote vormen aan.`,
     output: [
       { naam: "Reuzenpissebedden", icoon: "icons/Reuzenpissebedden.png", map: "Geleedpotigen", 
-        quote: `
-        <br><br>- `
+        quote: `These large isopods are scavengers of the deep ocean floor, feeding on carcasses and organic debris
+        <br><br>- Diva Abele`
       },
     ]
   },
@@ -5280,7 +5280,7 @@ const combinaties = [
       ["Zeepissebedden", "Zand"], ["Zeepissebedden", "Klei"], ["Zeepissebedden", "Kust"], ["Zeepissebedden", "Strand"],
       ["Zeepissebedden", "Eiland"], ["Zeepissebedden", "Zuurstof"], ["Zeepissebedden", "Aarde"]
     ],
-    hint: `...`,
+    hint: `Pissebedden zouden ook prima op het land kunnen gedijen...`,
     output: [
       { naam: "Pissebedden", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
@@ -5319,7 +5319,7 @@ const combinaties = [
   },
   {
     input: ["Oertienpotigen", "Evolutie"],
-    hint: `...`,
+    hint: `Sommige tienpotigen bewegen zijwaarts en anderen vooruit.`,
     output: [
       { naam: "Garnalen", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
         quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
@@ -5335,8 +5335,8 @@ const combinaties = [
         <br><br>- Aristophanes`
       },
       { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
-        quote: `
-        <br><br>- `
+        quote: `The growth of hermit crabs is constrained by their dependence on finding progressively larger shells
+        <br><br>- Martin West`
       }
     ]
   },
