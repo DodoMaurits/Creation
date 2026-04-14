@@ -7057,6 +7057,11 @@ const combinaties = [
         political rights. An ant doesn't have the vote, apparently; he just has his duties
         <br><br>- Clarence Day`
       },
+      { naam: "Wespen", icoon: "icons/Wespen.png", map: "Klein landleven", 
+        quote: `Wasps are among the most efficient insect predators, provisioning their nests with paralyzed prey for 
+        their larvae
+        <br><br>- Edward Wilson`
+      },
       { naam: "Bijen", icoon: "icons/Bijen.png", map: "Klein landleven", 
         quote: `As a bee without harming the flower, its colour or scent, flies away, collecting only the honey, even so
         should the sage wander in the village
