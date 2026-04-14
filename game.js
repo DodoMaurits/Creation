@@ -8081,7 +8081,11 @@ function renderSide(parentContainer, map, side) {
 
   // Layout instellen
   if (!isMobile) {
-    if (totalElements > 16) {
+    if (totalElements > 20) {
+      grid.style.gridTemplateColumns = "repeat(6, 100px)";
+      grid.style.columnGap = "30px";
+      grid.style.rowGap = "10px";
+    } else if (totalElements > 16) {
       grid.style.gridTemplateColumns = "repeat(5, 100px)";
       grid.style.columnGap = "30px";
       grid.style.rowGap = "15px";
