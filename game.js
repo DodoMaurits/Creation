@@ -4437,7 +4437,7 @@ const combinaties = [
       threshold: {
         titel: "Siluur", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Schorpioenen", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
+        requirements: ["Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
           "Oog", "Smaak", "Kleur", "Tand", "Mos"]
       },
       normal: {
