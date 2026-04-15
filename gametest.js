@@ -7458,55 +7458,57 @@ const combinaties = [
   },
   {
     input: ["Oereenzaadlobbige", "Tropisch regenwoud"],
-    hint: `...`,
+    hint: `Plant zaadjes in de tropen en pluk daar de zoete vruchten van.`,
     tijd: 20_000_000,
     output: [
       { naam: "Palmen", icoon: "icons/Palmen.png", map: "Bomen", 
-        quote: `
-        <br><br>- `
+        quote: `The dance of the palm trees, the oceans calling, the first rays of sun and heaven is here
+        <br><br>- Michael Dolan`
       },
       { naam: "Kokosnoten", icoon: "icons/Kokosnoten.png", map: "Voedsel", 
-        quote: `
-        <br><br>- `
+        quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
+        for millions of people
+        <br><br>- Harold Clifford`
       },
       { naam: "Dadels", icoon: "icons/Dadels.png", map: "Voedsel", 
-        quote: `
-        <br><br>- `
+        quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
+        <br><br>- Ibn al-Awwam`
       },
       { naam: "Bananen", icoon: "icons/Bananen.png", map: "Voedsel", 
-        quote: `
-        <br><br>- `
+        quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
+        <br><br>- Paul Allen`
       },
       { naam: "Gember", icoon: "icons/Gember.png", map: "Voedsel", 
-        quote: `
-        <br><br>- `
+        quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
+        <br><br>- James Duke`
       }
     ]
   },
   {
     input: ["Oereenzaadlobbige", "Bloem"],
-    hint: `...`,
+    hint: `Zo veel soorten bloemmetjes onder de eenzaadlobbige sprieten.`,
     tijd: 15_000_000,
     output: [
       { naam: "Lelies", icoon: "icons/Lelies.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
+        <br><br>- Yosa Buson`
       },
       { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
+        <br><br>- Elizabeth Murray`
       },
       { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Planten", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
       },
       { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Planten", 
-        quote: `
-        <br><br>- `
+        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
+        arrival of spring
+        <br><br>- Anna Pavord`
       },
       { naam: "Asperges", icoon: "icons/Asperges.png", map: "Voedsel", 
-        quote: `
-        <br><br>- `
+        quote: `Asparagus is valued for its tender young shoots, which are harvested before they become woody
+        <br><br>- Harold McGee`
       }
     ]
   },
