@@ -7342,27 +7342,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oercynodonten", "Evolutie"],
-    hint: `Verschillen tussen de eerste zoogdieren zaten in de cloaca, placenta en buidel.`,
-    tijd: 100_000_000,
-    output: [
-      { naam: "Oerplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
-        quote: `The placenta enables an intimate physiological connection between mother and embryo, supporting growth, 
-        nourishment, and protection
-        <br><br>- Knox Hays`
-      },
-      { naam: "Oerbuideldieren", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
-        quote: `The pouch of marsupials provides a protected environment in which the young attach to a teat and continue 
-        their growth
-        <br><br>- Jill Pemberton`
-      },
-      { naam: "Vogelbekdieren", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
-        quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
-        <br><br>- Trevor Dunn`
-      }
-    ]
-  },
-  {
     input: ["Lepidosauriërs", "Evolutie"],
     hint: `Vergeet de lepidosauriërs niet!`,
     tijd: 50_000_000,
