@@ -7457,6 +7457,85 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Gras", "Zand"], ["Gras", "Kust"], ["Gras", "Strand"]
+    ],
+    hint: `Langs de kust vormt gras en zand een muur.`,
+    output: [
+      { naam: "Duinen", icoon: "icons/Duinen.png", map: "Landschap", 
+        quote: `Coastal dunes are living landscapes, where sand and grass work together, shaped by wind and sea into 
+        ever-changing forms
+        <br><br>- Hans van der Maarel`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Woestijn"],
+    hint: `Ook aan het eind van de woestijn moet het ooit weer groen kleuren..`,
+    output: [
+      { naam: "Savanne", icoon: "icons/Savanne.png", map: "Landschap", 
+        quote: `Lions rest in the shade of scattered trees while gazelles graze, elephants wander in ponderous silence, 
+        and the plain itself pulses with life
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Gras"],
+    hint: `Gras, gras, gras...`,
+    output: [
+      { naam: "Weiland", icoon: "icons/Weiland.png", map: "Landschap", 
+        quote: `The boy and the girl going hand in hand through a meadow
+        <br><br>- Edward Steichen`
+      }
+    ]
+  },
+  {
+    input: ["Savanne", "Gras"],
+    hint: `Sommige landschappen veranderen door gras zover je kunt kijken..`,
+    output: [
+      { naam: "Steppe", icoon: "icons/Steppe.png", map: "Landschap", 
+        quote: `Vast, open plains stretch to the horizon, dotted with grazing animals, burrowing rodents, 
+        and the ever-watchful predators that stalk between them
+        <br><br>- George Schaller`
+      }
+    ]
+  },
+//------------ THRESHOLD 9: DINOSAURIËRS UITGESTORVEN 66 Ma --------------//
+  {
+    input: ["Oercynodonten", "Evolutie"],
+    hint: `Verschillen tussen de eerste zoogdieren zaten in de cloaca, placenta en buidel.`,
+    tijd: 66_000_000,
+    output: [
+      { naam: "Oerplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
+        quote: `The placenta enables an intimate physiological connection between mother and embryo, supporting growth, 
+        nourishment, and protection
+        <br><br>- Knox Hays`
+      },
+      { naam: "Oerbuideldieren", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
+        quote: `The pouch of marsupials provides a protected environment in which the young attach to a teat and continue 
+        their growth
+        <br><br>- Jill Pemberton`
+      },
+      { naam: "Vogelbekdieren", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
+        quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
+        <br><br>- Trevor Dunn`
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Dinosauriërs uitgestorven", 
+        tekst: "Je moet eerst nog wat meer halen...",
+      },
+      normal: {
+        achtergrond: "afb/paleogeen.jpg",
+        titel: "DINOSAURIËRS UITGESTORVEN 66 MA",
+        tekst: `
+        <span></span>`,
+      }
+    }
+  },
+  {
     input: ["Oereenzaadlobbige", "Tropisch regenwoud"],
     hint: `Plant zaadjes in de tropen en pluk daar de zoete vruchten van.`,
     tijd: 20_000_000,
@@ -7513,26 +7592,22 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Gras", "Zand"], ["Gras", "Kust"], ["Gras", "Strand"]
-    ],
-    hint: `Langs de kust vormt gras en zand een muur.`,
+    input: ["Gras", "Evolutie"],
+    hint: `Met het warmer worden tussen de Tigris en de Eufraat evolueerden grasweides tot tarwe en gerst.`,
+    tijd: 5_000_000,
     output: [
-      { naam: "Duinen", icoon: "icons/Duinen.png", map: "Landschap", 
-        quote: `Coastal dunes are living landscapes, where sand and grass work together, shaped by wind and sea into 
-        ever-changing forms
-        <br><br>- Hans van der Maarel`
-      }
-    ]
-  },
-  {
-    input: ["Gras", "Woestijn"],
-    hint: `Ook aan het eind van de woestijn moet het ooit weer groen kleuren..`,
-    output: [
-      { naam: "Savanne", icoon: "icons/Savanne.png", map: "Landschap", 
-        quote: `Lions rest in the shade of scattered trees while gazelles graze, elephants wander in ponderous silence, 
-        and the plain itself pulses with life
-        <br><br>- David Attenborough`
+      { naam: "Gerst", icoon: "icons/Gerst.png", map: "Voedsel", 
+        quote: `Among cereals, barley is notable for its resilience and ability to grow in a wide range of climates
+        <br><br>- Jack Harlan`
+      },
+      { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Voedsel", 
+        quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
+        grass in the beginnning
+        <br><br>- Vincent van Gogh`
+      },
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Voedsel", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
       }
     ]
   },
@@ -7545,27 +7620,6 @@ const combinaties = [
         quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
         the wind
         <br><br>- Bruce Lee`
-      }
-    ]
-  },
-  {
-    input: ["Gras", "Gras"],
-    hint: `Gras, gras, gras...`,
-    output: [
-      { naam: "Weiland", icoon: "icons/Weiland.png", map: "Landschap", 
-        quote: `The boy and the girl going hand in hand through a meadow
-        <br><br>- Edward Steichen`
-      }
-    ]
-  },
-  {
-    input: ["Savanne", "Gras"],
-    hint: `Sommige landschappen veranderen door gras zover je kunt kijken..`,
-    output: [
-      { naam: "Steppe", icoon: "icons/Steppe.png", map: "Landschap", 
-        quote: `Vast, open plains stretch to the horizon, dotted with grazing animals, burrowing rodents, 
-        and the ever-watchful predators that stalk between them
-        <br><br>- George Schaller`
       }
     ]
   }
