@@ -736,11 +736,11 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   animation-name: floatQuote;
-  animation-duration: 2s;
+  animation-duration: 2s - 3s max;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  --translateX: 12px;
+  --translateX: 8px to 15px
 }
 
 @keyframes floatQuote {
