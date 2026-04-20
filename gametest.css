@@ -741,11 +741,16 @@ body {
 }
 
 @keyframes quoteDrift {
-  0%   { transform: translateX(0px); }
-  50%  { transform: translateX(var(--move)); }
-  100% { transform: translateX(0px); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(var(--move-x), var(--move-y));
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
-
 
 .vers-text {
   position: absolute;
