@@ -1,0 +1,1187 @@
+/* ---------------- BODY & APP ------------------ */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url("afb/perkament.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* ---------------- MUTE BUTTON ----------------- */
+#audio-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mute-button {
+  width: 36px;
+  height: 36px;
+  background: rgba(200,200,200,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#mute-button:hover {
+  background: rgba(200,200,200,0.5);
+}
+
+#mute-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+}
+
+#volume-slider {
+  margin-top: 10px;
+  height: 100px;
+  width: 6px;
+  writing-mode: bt-lr;
+  -webkit-appearance: slider-vertical;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+#audio-controls:hover #volume-slider {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ---------------- HINT BUTTON ---------------- */
+#hint-container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+}
+
+#hint-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.85);
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+#hint-button::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+  animation: hintPulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes hintPulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.4); opacity: 0.3; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+#hint-button:hover::after {
+  content: "Hint";
+  position: absolute;
+  top: 50px; /* onder de button, past bij de 44px hoogte + kleine marge */
+  left: 50%;
+  transform: translateX(-50%); /* horizontaal centreren */
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  z-index: 5000;
+}
+
+#hint-bubble {
+  display: none;
+  white-space: nowrap;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  color: #333333;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: left;
+}
+
+#hint-bubble.visible {
+  display: inline-block;
+  opacity: 1;
+}
+
+#hint-button.disabled {
+  background-color: #555;
+  filter: grayscale(100%);
+  cursor: default;
+  opacity: 0.7;
+}
+
+/* ---------------- SIDES (OPEN MAPS) ---------------- */
+.map-title {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.side {
+  position: absolute;
+  top: 20px;
+  width: 50%;
+  text-align: center;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.side.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.side.left { transform: translateX(-100%); }
+#left-side { left: 0; }
+
+.side.right { transform: translateX(100%); }
+#right-side { left: 50% }
+
+/* ---------------- ICONS & HOVERS ---------------- */
+.icon {
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;  
+}
+
+.icon:hover { transform: scale(1.1); }
+
+.icon.element {
+  width: 130px;
+  height: 130px;
+}
+
+.icon.element:hover { transform: scale(1.15); }
+
+.icon-container.dragging {
+  opacity: 0.6;
+  z-index: 1000;
+  position: absolute;
+  pointer-events: none;
+}
+
+.icon-container:not(.dragging):hover {
+  transform: scale(1.05);
+}
+
+.placeholder {
+  width: 130px;
+  height: 130px;
+  border: 2px dashed rgba(255,255,255,0.3);
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  transition: transform 0.15s ease;
+}
+
+.dragging {
+  opacity: 0.6;
+  z-index: 1000;
+  position: absolute;
+  pointer-events: none;
+}
+
+/*  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));*/
+.icon.map {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  position: relative; /* nodig voor pseudo-element */
+  z-index: 10;
+}
+
+.icon.map::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  filter: blur(20px);
+  animation: pulse 1.5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  50% { transform: translate(-50%, -50%) scale(1.4); opacity: 0.6; }
+}
+
+.icon.map:hover { transform: scale(1.12); }
+
+.icon.map-title {
+  width: 145px; 
+  height: 145px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon.map-title:hover { transform: scale(1.12); }
+
+/* ================= TOOLTIP ================= */
+.icon-container {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: 50;
+  transition: transform 0.3s ease;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.icon-container:hover .tooltip { opacity: 1; }
+
+.tooltip-floating {
+  position: absolute;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 5000;
+}
+
+.tooltip-floating.visible {
+  opacity: 1;
+}
+
+/* Alleen tooltips van elementen in open maps corrigeren */
+.grid-elements .icon-container {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.grid-elements .icon-container .tooltip {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------------- GRID LAYOUTS ---------------- */
+.grid-elements {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /*JS aanpassen!*/
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.grid-closed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 680px; /*JS aanpassen!*/
+  width: auto;
+  margin: 0 auto;
+}
+
+
+.grid-closed.hidden,
+.icon-container.hidden {
+  pointer-events: none;
+}
+
+/* ---------------- SELECT & SHAKE EFFECTS ---------------- */
+.selected {
+  width: 130px;
+  height: 130px;
+  animation: shake 0.6s infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); } /* alleen horizontaal verplaatsen */
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+  20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+
+/* ERROR SHAKE VOOR NIET GELDIGE COMBINATIES */
+@keyframes errorShake {
+  0%   { transform: translateX(0); }
+  15%  { transform: translateX(-10px); }
+  30%  { transform: translateX(10px); }
+  45%  { transform: translateX(-8px); }
+  60%  { transform: translateX(8px); }
+  75%  { transform: translateX(-4px); }
+  90%  { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+
+.icon.error {
+  animation: errorShake 0.6s ease;
+}
+
+/* ---------------- CLOSED CONTAINER ---------------- */
+#closed-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#closed-container.center {
+  width: 680px; /*JS aanpassen!*/
+}
+
+#closed-container.side {
+  width: 50vw;
+}
+
+#closed-container.left {
+  transform: translate(-150%, -50%);
+}
+
+#closed-container.right {
+  left: 75%; /* midden van de rechterhelft (50% + 50%/2) */
+  transform: translate(-50%, -50%); /* center horizontaal en verticaal op deze positie */
+}
+
+/* ---------------- INFO BUTTON ---------------- */
+.info-button {
+  position: absolute;   /* relatief aan overlay */
+  top: 50px;
+  right: 60px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(255,255,255,0.6);
+  z-index: 3000;
+}
+
+.info-popup {
+  position: fixed; 
+  inset: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 3001;
+}
+
+.info-button:hover + .info-popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.info-popup-box {
+  position: relative;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+  width: 45dvw;
+  max-width: 650px;
+  padding: 50px 80px;
+  border-radius: 12px;
+  color: #f0f0f0;
+  box-shadow:
+    0 15px 45px rgba(0,0,0,0.7),
+    inset 0 0 0 1px rgba(255,255,255,0.08);
+  animation: infoFade 0.25s ease;
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+}
+
+.info-popup-title {
+  font-family: "Cinzel", serif;
+  font-size: 34px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #e6d3a3;
+  animation: titleFloat 6s ease-in-out infinite;
+}
+
+@keyframes titleFloat {
+  0%   { transform: translateX(-6px); }
+  50%  { transform: translateX(6px); }
+  100% { transform: translateX(-6px); }
+}
+
+.info-popup-text {
+  font-size: 16px;
+  color: #e8e8e8;
+  text-align: justify;
+  hyphens: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@keyframes infoFade {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* ---------------- THRESHOLD UITLEG ---------------- */
+.explanation-box {
+  position: relative; /* nodig voor pseudo-element */
+  background: rgba(0,0,0,0.2);
+  width: 40dvw;
+  height: auto;
+  max-height: 90dvh;
+  border-radius: 12px;
+  padding: 80px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  overflow: hidden; /* pseudo-element niet buiten laten steken */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.explanation-box::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid white; 
+  border-radius: 10px;
+  pointer-events: none; 
+  opacity: 0.7;
+}
+
+.explanation-title {
+  font-family: "Cinzel", serif;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.explanation-text {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  hyphens: auto;
+  word-break: normal;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.threshold-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 22px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.threshold-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 6px;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.18), rgba(0,0,0,0.55));
+  border: 2px solid rgba(255,255,255,0.25);
+  box-shadow:
+    inset 0 3px 8px rgba(0,0,0,0.7),
+    0 6px 14px rgba(0,0,0,0.6);
+  color: white;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* ---------------- GA VERDER BUTTON BIJ THRESHOLD ---------------- */
+.create-button {
+  font-family: "Cinzel", serif;
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5); /* 50% transparant */
+  transition: all 0.3s ease;
+  animation: floatButton 2s ease-in-out infinite alternate;
+  margin-top: 20px;
+}
+
+.create-button:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.8); /* iets minder transparant bij hover */
+}
+
+@keyframes floatButton {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); } /* 10px naar rechts */
+  100% { transform: translateX(0); }
+}
+
+/* ---------------- NIEUW ELEMENT SCHERM ---------------- */
+#result-overlay {
+  position: fixed;
+  inset: 0;
+  display: block;
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
+    url("afb/beginscherm.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 8000;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  opacity: 0; 
+  will-change: opacity, transform;
+  transition: opacity 0.3s ease; 
+  cursor: pointer;
+}
+
+#result-overlay.visible {
+  opacity: 1;
+}
+
+.result-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(var(--cols), 250px);
+  width: fit-content;
+  transform: translate(-50%, -50%);
+  animation: resultAppear 0.8s ease;
+}
+
+@keyframes resultAppear {
+  from { 
+    transform: translate(-50%, calc(-50% + 30px));
+    opacity: 0; 
+  }
+  to { 
+    transform: translate(-50%, -50%);
+    opacity: 1; 
+  }
+}
+
+.godlike-flash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+  animation: godlikeFlash 0.8s ease-out forwards;
+  z-index: 9000;
+}
+
+@keyframes godlikeFlash {
+  0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+  50% { transform: translate(-50%, -50%) scale(2); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(4); opacity: 0; }
+}
+
+.result-box {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.result-box.fade-in { opacity: 1; }
+
+.result-image {
+  width: 130px;
+  height: auto;
+  margin-bottom: 15px;
+  animation: floatSoft 2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.result-image:hover {
+  transform: scale(1.12);  /* licht groter bij hover */
+  transition: transform 0.3s ease;
+}
+
+@keyframes floatSoft {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-16px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Animation delay voor stagger effect */
+.result-box:nth-child(1) .result-image { animation-delay: 0s; }
+.result-box:nth-child(2) .result-image { animation-delay: 0.3s; }
+.result-box:nth-child(3) .result-image { animation-delay: 0.6s; }
+.result-box:nth-child(4) .result-image { animation-delay: 0.9s; }
+.result-box:nth-child(5) .result-image { animation-delay: 1.2s; }
+.result-box:nth-child(6) .result-image { animation-delay: 1.5s; }
+.result-box:nth-child(7) .result-image { animation-delay: 1.8s; }
+.result-box:nth-child(8) .result-image { animation-delay: 2.1s; }
+
+.result-title {
+  font-family: "Cinzel", serif;
+  font-size: clamp(32px, 5vw, 32px);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.result-quote {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.4;
+  opacity: 0.85;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.vers-text {
+  position: absolute;
+  top: calc(50% + 240px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 540px;
+  color: white;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.4;
+  opacity: 0.85;
+  animation: sway 4s ease-in-out infinite alternate;
+}
+
+@keyframes sway {
+  0% { transform: translateX(-50%) translateX(-10px); }
+  50% { transform: translateX(-50%) translateX(10px); }
+  100% { transform: translateX(-50%) translateX(-10px); }
+}
+
+/* ---------------- KEYFRAMES ---------------- */
+/* Result overlay van buiten beeld naar center */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100vh); /* begint buiten beeld onder */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);     /* eindigt op center */
+    opacity: 1;
+  }
+}
+
+/* Result box van buiten links/rechts naar positie */
+@keyframes boxSlideIn {
+  0% {
+    transform: translateX(-200px); /* start links buiten scherm */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);      /* eindigt op plek */
+    opacity: 1;
+  }
+}
+
+/* ---------------- THRESHOLD INFO ---------------- */
+.info-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background:
+    radial-gradient(circle, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.9) 100%),
+    var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding: 20px; 
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.info-overlay.visible,
+.info-overlay.fade-in {
+  opacity: 1;
+}
+
+.info-inner {
+  width: 48%;
+  min-width: 600px;
+  text-align: center;
+}
+
+.info-title {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "Alegreya Slab", serif;
+  margin-bottom: 12px;
+}
+
+.info-text {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.4;
+  display: inline-block;
+  animation: infoSway 6s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.info-text span {
+  display: inline-block;
+  will-change: transform;
+  animation: swayLeft 6s ease-in-out infinite alternate;
+}
+
+.info-text span:nth-child(even) {
+  animation-name: swayRight;
+}
+
+@keyframes swayLeft {
+  0%   { transform: translateX(-5px); }
+  50%  { transform: translateX(5px); }
+  100% { transform: translateX(-5px); }
+}
+
+@keyframes swayRight {
+  0%   { transform: translateX(5px); }
+  50%  { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+.info-overlay.fade-out {
+  opacity: 0;
+}
+
+/* ---------------- TIMELINE ---------------- */
+#timeline {
+  position: fixed;
+  bottom: 25px;
+  left: 7%;
+  width: 86%;
+  height: 14px;
+  border-radius: 20px;
+  overflow: visible;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.15), 0 0 20px rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+#timeline-container {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+  z-index: 1;
+}
+
+#timeline-fill {
+  position: relative;
+  height: 100%;
+  width: 0%;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #2b0000, #7a0000, #ff0000);
+  box-shadow: 0 0 15px rgba(255,255,255,0.7), inset 0 0 6px rgba(255,255,255,0.3);
+  transition: width 0.8s ease;
+}
+
+/* Lichtpuls animatie */
+#timeline-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 40px;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.2) 40%,
+    transparent 70%
+  );
+  animation: energyPulse 2s infinite;
+}
+
+@keyframes energyPulse {
+  0% { opacity: 0.3; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(-5px); }
+  100% { opacity: 0.3; transform: translateX(0); }
+}
+
+/* bol */
+#timeline-fill::before {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #ff4d4d 0%, #990000 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(255,0,0,0.9);
+}
+
+/* Label */
+#timeline-label {
+  position: absolute;
+  top: -40px;
+  left: 0%;
+  transform: translateX(-50%);
+  padding: 4px 4px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 10px;
+  color: white;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  pointer-events: none;
+  transition: left 0.8s ease;
+  z-index: 2; /* boven timeline */
+  white-space: nowrap;
+}
+
+/* ---------------- INTRO HINTS ---------------- */
+.intro-wrapper {
+  position: absolute;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 3000;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.intro-wrapper.fade-in {
+  opacity: 1;
+}
+
+.intro-wrapper.fade-out {
+  opacity: 0;
+}
+
+/* Handgeschreven tekst */
+.intro-text {
+  font-family: "Bradley Hand", "Segoe Script", cursive;
+  font-size: 28px;
+  color: #000;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  transform: rotate(-2deg);
+  animation: fadeInText 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInText {
+  to { opacity: 1; }
+}
+
+/* ================= MOBILE PORTRAIT ONLY ================= */
+@media (max-width: 900px) and (orientation: portrait) {
+            body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto; }
+  
+            #app { width: 100vw; height: 100vh; position: relative; }
+  
+            /* ---------------- SIDES (OPEN MAPS) ---------------- */
+            .map-title {
+              cursor: none;
+              margin-bottom: 1px;
+            }
+  
+            .side {position: absolute; top: 20px; width: 50vw; text-align: center; 
+                   transition: transform 0.6s ease, opacity 0.6s ease; opacity: 0; }
+  
+            .side.visible { transform: translateX(0); opacity: 1; }
+            .hidden { display: none; }
+  
+            .side.left { transform: translateX(-100%); }
+            #left-side { left: 0; }
+  
+            .side.right { transform: translateX(100%); }
+            #right-side { left: 50%; }
+
+            /* ---------------- ICONS ---------------- */
+            .icon { transition: transform 0.3s ease, filter 0.3s ease;
+              cursor: none;
+            }
+
+            .icon.element { 
+              width: 50px; 
+              height: 50px;
+            }
+  
+            .icon.map { 
+              width: 60px; 
+              height: 60px; 
+            }
+
+            .icon.map-title { transition: transform 0.3s ease, filter 0.3s ease;
+              width: 60px; 
+              height: 60px; 
+              margin-top: 0px;
+              margin-bottom: 0px;
+              cursor: none;
+            }
+
+            /* ================= TOOLTIP (PERMANENT) ================= */
+            .icon-container { display: inline-block; position: relative; text-align: center; }
+            
+            .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+                      background: rgba(0,0,0,0.85); color: white; border-radius: 6px; z-index: 2000;
+                display: block;          /* altijd zichtbaar */
+                margin-top: 0px;
+                width: 45px;
+                padding: 4px 0px;
+                text-align: center;      /* gecentreerde tekst */
+                font-size: 8px;
+                        
+                white-space: normal;     /* laat regelafbreking toe */
+                word-break: normal;      /* voorkom te vroege afbreking */
+                overflow-wrap: normal;   /* breekt alleen als max-width overschreden */
+                hyphens: auto;           /* streepjes alleen indien nodig */
+            
+                opacity: 1;              /* altijd zichtbaar */
+                pointer-events: none;    /* voorkomt hover issues */
+            }
+
+            .icon.map-title + .tooltip,
+            .icon.map-title ~ .tooltip {
+              display: block !important;  /* niet verbergen */
+              opacity: 1 !important;
+            }
+  
+            /* Alleen tooltips van elementen in open maps corrigeren */
+            .grid-elements .icon-container { display: inline-block; position: relative; 
+              margin-bottom: 20px;
+            }
+
+            .grid-elements. icon-container .tooltip { left: 50%; transform: translateX(-50%); } 
+  
+            /* ---------------- GRID LAYOUTS ---------------- */
+            .grid-elements { display: grid; justify-content: center;
+              grid-template-columns: repeat(3, 1fr);
+              column-gap: 8px;
+              row-gap: 1px;
+            }
+
+            .grid-closed { display: flex; flex-wrap: wrap; justify-content: center; 
+                           width: auto; margin: 0 auto;
+              gap: 8px;
+              max-width: 100%;
+            }
+  
+            /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
+
+            /* ---------------- CLOSED CONTAINTER ---------------- */
+            #closed-container { position: absolute; top: 50%; transform: translate(-50%, -50%);
+                                transition: transform 0.6s ease, opacity 0.6s ease; opacity: 1;
+                                justify-items: center;
+              display: grid;
+              left: 50%;
+              width: calc(3 * 60px + 2 * 8px); /* 3 icons + 2 gaps van 8 px */
+              max-width: 100vw;
+              padding: 0 2vw;          /* minimale padding */
+              column-gap: 8px;
+              row-gap: 100px;
+            }
+
+            /* standaard breedte: midden van scherm */
+            #closed-container.center { 
+              width: 210px; 
+            }
+
+            #closed-container.center .icon.map {
+              width: 60px;
+              height: 60px;
+            }
+  
+            /* linker- of rechterhelft */
+            #closed-container.side { 
+              width: 150px; 
+            }
+
+            /* Sluit maps iconen automatisch verkleinen indien nodig */
+            #closed-container.side .icon.map {
+              width: 40px;
+              height: 40px;
+            }
+
+            #closed-container.side .tooltip {
+              font-size: 6px;
+              width: 30px;
+            }
+  
+            /* ---------------- RESULTAAT COMBINATIE ---------------- */
+            #result-overlay { position: fixed; inset: 0; background: linear-gradient(rgba(0,0,0,0.85), 
+                             rgba(0,0,0,0.9)), url("afb/beginscherm.png"); background-size: cover;
+                             background-position: center; display: flex; justify-container: center;
+                             align-items: center; z-index: 2000; box-sizing: border-box; opacity: 0;
+                             transition: opacity 0.3s ease;
+              padding: 20px 20px;
+              overflow-y: auto;
+              flex-direction: column;
+              min-height: 100vh;
+              text-align: center;
+            }
+
+            /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
+            .result-grid { display: grid; justify-content: center;
+              gap: 20px;
+              grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+              width: 100%;
+              max-width: 100vw;
+              justify-items: center;
+            }
+  
+            .result-box { width: 100%; text-align: center; color: white; display: flex; 
+                         flex-direction: column; align-items: center; opacity: 0; transition: opacity 0.3s ease; 
+              max-width: 100vw;
+              font-size: 12px;
+            }
+
+            .result-image { height: auto; animation: floatSoft 2s ease-in-out infinite;
+              width: 60px;
+              margin-bottom: 4px;
+            }
+  
+            .result-title { font-family: "Cinzel", serif; 
+              font-size: 14px;
+              letter-spacing: 1px;
+              margin-bottom: 5px;
+            }
+          
+            .result-quote { font-family: "Times New Roman", serif; opacity: 0.85;
+                           word-wrap: break-word; overflow-wrap: break-word;
+              font-size: 10px;
+              line-height: 1.2;
+            }
+
+            .intro-wrapper { position: absolute; transform: translateX(-50%); 
+                            pointer-events: none; z-index: 3000; text-align: center;
+                            opacity: 0; transition: opacity 0.6s ease;
+              top: 10%;
+              width: 90%;
+              padding: 0 10px;
+            }
+            
+            .intro-text { font-family: "Bradley Hand", "Segoe Script", cursive;
+                         color: #000; font-weight: normal; transform: rotate(-2deg);
+                         animation: fadeInText 1.2s ease forwards; opacity: 0;
+              font-size: 18px;
+              line-height: 1.4;
+              letter-spacing: 0.5px;
+              margin-bottom: 5px;
+              white-space: normal;
+            }
+}
