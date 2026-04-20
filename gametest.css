@@ -737,6 +737,12 @@ body {
   overflow-wrap: break-word;
 }
 
+@keyframes floatQuote {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(var(--translateX)); }
+  100% { transform: translateX(0); }
+}
+
 .vers-text {
   position: absolute;
   top: calc(50% + 240px);
