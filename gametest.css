@@ -735,18 +735,6 @@ body {
   opacity: 0.85;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  animation-name: floatQuote;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  --translateX: 8px to 15px
-}
-
-@keyframes floatQuote {
-  0%   { transform: translateX(0); }
-  50%  { transform: translateX(var(--translateX)); }
-  100% { transform: translateX(0); }
 }
 
 .vers-text {
