@@ -735,6 +735,12 @@ body {
   opacity: 0.85;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  animation-name: floatQuote;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  --translateX: 12px;
 }
 
 @keyframes floatQuote {
