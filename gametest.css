@@ -736,7 +736,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   display: inline-block;
-  animation: quoteDrift var(--dur) ease-in-out infinite;
+  animation: quoteDrift var(--dur) ease-in-out infinite alternate;
   will-change: transform;
 }
 
