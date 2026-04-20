@@ -78,8 +78,8 @@ html, body {
   100% { transform: translateY(0px); }
 }
 
-.result-box:nth-child(1) .result-image { animation-delay: 0s; }
-.result-box:nth-child(2) .result-image { animation-delay: 0.5s; }
+.result-box:nth-child(1) .image-wrapper { animation-delay: 0s; }
+.result-box:nth-child(2) .image-wrapper { animation-delay: 0.5s; }
 
 .result-image:hover {
   transform: scale(1.12);
