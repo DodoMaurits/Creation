@@ -8029,8 +8029,8 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     quote.innerHTML = el.quote || "";
 
     // 🔹 kleine random X + Y beweging (millimeters/subtiel)
-    const moveX = (Math.random() * 4 - 2).toFixed(2) + "px"; // -2px tot +2px
-    const moveY = (Math.random() * 2 - 1).toFixed(2) + "px"; // -1px tot +1px
+    const moveX = (Math.random() * 20 - 10).toFixed(1) + "px";
+    const moveY = (Math.random() * 10 - 5).toFixed(1) + "px";
     
     // 🔹 random duur zodat alles onafhankelijk beweegt
     const duration = (6 + Math.random() * 6).toFixed(2) + "s"; // 6–12 sec
