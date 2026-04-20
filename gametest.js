@@ -8028,6 +8028,13 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
 
+    // kleine random beweging instellen
+    const move = (Math.random() * 4 - 2).toFixed(2) + "px"; // -2px tot +2px
+    const duration = (6 + Math.random() * 6).toFixed(2) + "s"; // 6–12s
+    
+    quote.style.setProperty("--move", move);
+    quote.style.setProperty("--dur", duration);
+
     box.appendChild(img);
     box.appendChild(title);
     box.appendChild(quote);
