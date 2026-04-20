@@ -8028,11 +8028,15 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
 
-    // kleine random beweging instellen
-    const move = (Math.random() * 4 - 2).toFixed(2) + "px"; // -2px tot +2px
-    const duration = (6 + Math.random() * 6).toFixed(2) + "s"; // 6–12s
+    // 🔹 kleine random X + Y beweging (millimeters/subtiel)
+    const moveX = (Math.random() * 4 - 2).toFixed(2) + "px"; // -2px tot +2px
+    const moveY = (Math.random() * 2 - 1).toFixed(2) + "px"; // -1px tot +1px
     
-    quote.style.setProperty("--move", move);
+    // 🔹 random duur zodat alles onafhankelijk beweegt
+    const duration = (6 + Math.random() * 6).toFixed(2) + "s"; // 6–12 sec
+    
+    quote.style.setProperty("--move-x", moveX);
+    quote.style.setProperty("--move-y", moveY);
     quote.style.setProperty("--dur", duration);
 
     box.appendChild(img);
