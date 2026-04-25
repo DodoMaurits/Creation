@@ -167,7 +167,7 @@ const mappen = [
       { naam: "Heuvel", icoon: "icons/Heuvel.png" },
       { naam: "Toendra", icoon: "icons/Toendra.png" },
       { naam: "Savanne", icoon: "icons/Savanne.png" },
-      { naam: "Weiland", icoon: "icons/Weiland.png" },
+      { naam: "Weide", icoon: "icons/Weide.png" },
       { naam: "Duinen", icoon: "icons/Duinen.png" },
       { naam: "Steppe", icoon: "icons/Steppe.png" }
     ]
@@ -7463,7 +7463,7 @@ const combinaties = [
     input: ["Gras", "Gras"],
     hint: `Gras, gras, gras...`,
     output: [
-      { naam: "Weiland", icoon: "icons/Weiland.png", map: "Landschap", 
+      { naam: "Weide", icoon: "icons/Weide.png", map: "Landschap", 
         quote: `The boy and the girl going hand in hand through a meadow
         <br><br>- Edward Steichen`
       }
