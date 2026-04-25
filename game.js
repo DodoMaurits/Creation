@@ -7220,7 +7220,7 @@ const combinaties = [
     input: ["Gras", "Gras"],
     hint: `Gras, gras, gras...`,
     output: [
-      { naam: "Weiland", icoon: "icons/Weiland.png", map: "Landschap", 
+      { naam: "Weide", icoon: "icons/Weide.png", map: "Landschap", 
         quote: `The boy and the girl going hand in hand through a meadow
         <br><br>- Edward Steichen`
       }
