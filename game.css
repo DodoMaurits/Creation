@@ -735,6 +735,22 @@ body {
   opacity: 0.85;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  display: inline-block;
+  transform-origin: center;
+  animation: quoteDrift var(--dur) ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes quoteDrift {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(var(--move-x), var(--move-y));
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 .vers-text {
