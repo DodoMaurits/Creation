@@ -7596,7 +7596,7 @@ const combinaties = [
       threshold: {
         titel: "Dinosauriërs uitgestorven", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Savanne"], ["Oase"], ["Steppe"]
+        requirements: ["Savanne", "Oase", "Steppe"]
       },
       normal: {
         achtergrond: "afb/paleogeen.jpg",
