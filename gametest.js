@@ -7421,6 +7421,18 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Bloem", "Zaadjes"], ["Bloem", "Tropisch regenwoud"]
+    ],
+    hint: `De oudste bloem maakte een belangrijke ontwikkeling door in de tropen.`,
+    output: [
+      { naam: "Steranijs", icoon: "icons/Steranijs.png", map: "Smaakmakers", 
+        quote: `The fruit of star anise forms a star-shaped cluster of carpels, each containing a single seed
+        <br><br>- K.R. Kirtikar`
+      }
+    ]
+  },
+  {
     input: ["Bloem", "Oerzaadplanten"],
     hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
     tijd: 135_000_000,
