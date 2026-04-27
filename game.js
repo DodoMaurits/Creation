@@ -7540,13 +7540,23 @@ const combinaties = [
     ]
   },
   {
-    input: ["Savanne", "Gras"],
-    hint: `Sommige landschappen veranderen door gras zover je kunt kijken..`,
+    input: ["Weide", "Weide"],
+    hint: `Sommige landschappen veranderen door weides zover je kunt kijken..`,
     output: [
       { naam: "Steppe", icoon: "icons/Steppe.png", map: "Landschap", 
         quote: `Vast, open plains stretch to the horizon, dotted with grazing animals, burrowing rodents, 
         and the ever-watchful predators that stalk between them
         <br><br>- George Schaller`
+      }
+    ]
+  },
+  {
+    input: ["Steppe", "Regen"],
+    hint: `De Noord-Amerikaanse graslanden lijken steppes, ware het niet dat het er meer regent..`,
+    output: [
+      { naam: "Prairie", icoon: "icons/Prairie.png", map: "Landschap", 
+        quote: `I was born on the prairies where the wind blew free and there was nothing to break the light of the sun
+        <br><br>- Geronimo`
       }
     ]
   },
@@ -7575,7 +7585,7 @@ const combinaties = [
       threshold: {
         titel: "Dinosauriërs uitgestorven", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Savanne"]
+        requirements: ["Savanne"], ["Oase"], ["Steppe"]
       },
       normal: {
         achtergrond: "afb/paleogeen.jpg",
