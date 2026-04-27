@@ -7784,8 +7784,8 @@ const combinaties = [
     ]
   },
   {
-    input: ["Savanne", "Gras"],
-    hint: `Sommige landschappen veranderen door gras zover je kunt kijken..`,
+    input: ["Weide", "Weide"],
+    hint: `Sommige landschappen veranderen door weides zover je kunt kijken..`,
     output: [
       { naam: "Steppe", icoon: "icons/Steppe.png", map: "Landschap", 
         quote: `Vast, open plains stretch to the horizon, dotted with grazing animals, burrowing rodents, 
