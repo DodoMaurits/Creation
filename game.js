@@ -7319,11 +7319,16 @@ const combinaties = [
         <br><br>Eerst nodig: eerste bloem.`
       }
     }
-  }/*
+  },
   {
-    input: ["", ""],
-    hint: `Plant zaadjes in  ... en pluk daar de zoete vruchten van.`,
+    input: [
+      ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
+    ],
     output: [
+      { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
+        quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
+        <br><br>- Elhadi M. Yahia`
+      }
     ],
     uitleg: {
       thresholdElement: {
@@ -7333,7 +7338,7 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
       }
     }
-  }*/
+  }
 ];
 
 
