@@ -7426,8 +7426,8 @@ const combinaties = [
     tijd: 135_000_000,
     output: [
       { naam: "Oermagnoliden", icoon: "icons/Oermagnoliden.png", map: "Planten", 
-        quote: `...
-        <br><br>- `
+        quote: `The origin of flowering plants is one of the greatest mysteries in evolutionary biology
+        <br><br>- Charles Darwin`
       },
       { naam: "Oermonocotylen", icoon: "icons/Oermonocotylen.png", map: "Planten", 
         quote: `In monocotyledons the stem grows without secondary thickening, giving rise to forms that are often elegant, 
@@ -7571,7 +7571,9 @@ const groepsIconen = {
   "Zoogdieren": "icons/Zoogdieren.png",
   "Vogels": "icons/Vogels.png",
   "Bloemen": "icons/Bloemen.png",
-  "Genotwaren": "icons/Genotwaren.png"
+  "Genotwaren": "icons/Genotwaren.png",
+  "Fruit": "icons/Fruit.png",
+  "Groenten": "icons/Groenten.png"
 };
 
 // ----- STATE -----
