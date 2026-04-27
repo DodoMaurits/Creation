@@ -7408,6 +7408,19 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Bloem", "Ven"], ["Bloem", "Moeras"], ["Bloem", "Kevers"]
+    ],
+    hint: `De oudste bloem gedijt goed in het moeras.`,
+    output: [
+      { naam: "Waterlelies", icoon: "icons/Waterlelies.png", map: "Bloemen", 
+        quote: `It took me time to understand my water lilies. I had planted them for the pleasure of it; 
+        I grew them without ever thinking of painting them
+        <br><br>- Claude Monet`
+      }
+    ]
+  },
+  {
     input: ["Bloem", "Oerzaadplanten"],
     hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
     tijd: 135_000_000,
@@ -7557,6 +7570,7 @@ const groepsIconen = {
   "Samenleving": "icons/Samenleving.png",
   "Zoogdieren": "icons/Zoogdieren.png",
   "Vogels": "icons/Vogels.png",
+  "Bloemen": "icons/Bloemen.png",
   "Genotwaren": "icons/Genotwaren.png"
 };
 
