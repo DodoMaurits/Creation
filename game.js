@@ -8117,6 +8117,114 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
+  },
+  {
+    input: [
+      ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Moeras"]
+    ],
+    hint: `....`,
+    output: [
+      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
+        quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
+        <br><br>- Blaise Pascal`
+      },
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      },
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Gras", "Rivier"],
+    hint: `....`,
+    output: [
+      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
+        quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
+        <br><br>- Blaise Pascal`
+      },
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      },
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      },
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Gras", "Overstroming"],
+    hint: `....`,
+    output: [
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      },
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Gras", "Glucose"],
+    hint: `....`,
+    output: [
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Gras", "Zaadjes"],
+    hint: `....`,
+    output: [
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      ,
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      },
+      { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Gierst", icoon: "icons/Gierst.png", map: "Granen", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
   }
 ];
 
@@ -8148,7 +8256,8 @@ const groepsIconen = {
   "Genotwaren": "icons/Genotwaren.png",
   "Fruit": "icons/Fruit.png",
   "Groenten": "icons/Groenten.png",
-  "Materialen": "icons/Materialen.png"
+  "Materialen": "icons/Materialen.png",
+  "Granen": "icons/Granen.png"
 };
 
 // ----- STATE -----
