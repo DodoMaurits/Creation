@@ -4885,13 +4885,13 @@ const combinaties = [
         by virtue of its spirit, penetrates the mass and transforms it into its own nature
         <br><br>- Andreas Libavius`
       },
-      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Smaakmakers",
-        quote: `All fungi are edible. Some fungi are only edible once
-        <br><br>- Terry Pratchett`
-      },
       { naam: "Paddenstoelen", icoon: "icons/Paddenstoelen.png", map: "Pril leven",
         quote: `Nature alone is antique, and the oldest art a mushroom
         <br><br>- Thomas Carlyle`
+      },
+      { naam: "Truffels", icoon: "icons/Truffels.png", map: "Smaakmakers",
+        quote: `All fungi are edible. Some fungi are only edible once
+        <br><br>- Terry Pratchett`
       }
     ]
   },
