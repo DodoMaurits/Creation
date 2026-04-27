@@ -1029,6 +1029,19 @@ const combinaties = [
   },
   {
     input: [
+      ["Woestijn", "Water"], ["Woestijn", "Meer"], ["Woestijn", "Ven"], ["Woestijn", "Rivier"]
+    ],
+    hint: `In de droogste gebieden komt het water soms gewoon uit de grond.`,
+    output: [
+      { naam: "Oase", icoon: "icons/Oase.png", map: "Landschap", 
+        quote: `All that the historians give us are little oases in the desert of time, and we linger fondly in these,
+        forgetting the vast tracks betwewen one and another that were trodden by the weary generations of men
+        <br><br>- J.A. Spender`
+      }
+    ]
+  },
+  {
+    input: [
       ["Kleisteen", "Warmte"], ["Kleisteen", "Druk"]
     ],
     hint: `Hm.. is er nog een stenen metamorfose door druk en hitte te bedenken?`,
