@@ -2069,6 +2069,25 @@ const combinaties = [
     ]
   },
   {
+    input: ["Zuurstof", "Gas"],
+    output: [
+      { naam: "Nitraat", icoon: "icons/Nitraat.png", map: "Chemie", 
+        quote: `For nitrates are not the land, nor phosphates, nor the fiber of the cotton. They are its trace, 
+        its breath, but the land is so much more 
+        <br><br>- John Steinbeck`
+      }
+    ]
+  },
+  {
+    input: ["Zuurstof", "Zwavel"],
+    output: [
+      { naam: "Sulfaat", icoon: "icons/Sulfaat.png", map: "Chemie", 
+        quote: `Sulfate ion, when present in significant amount, tends to inhibit the growth of gypsum 
+        <br><br>- Linus Pauling`
+      }
+    ]
+  },
+  {
     input: [
       ["Amoeben", "Evolutie"], ["Amoeben", "Amoeben"], ["Slakken", "Glucose"]
     ],
