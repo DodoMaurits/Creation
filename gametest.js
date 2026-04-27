@@ -7556,6 +7556,17 @@ const combinaties = [
         <span></span>`,
       }
     }
+  },
+  {
+    input: [
+      ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
+    ],
+    output: [
+      { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
+        quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
+        <br><br>- Elhadi M. Yahia`
+      }
+    ]
   }
 ];
 
