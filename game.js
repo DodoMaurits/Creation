@@ -7224,6 +7224,114 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oermagnoliden", "Wind"],
+    hint: `Sommige magnoliden bestuiven met de wind.`,
+    output: [
+      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
+        quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
+        its crown
+        <br><br>- Donald Peattie`
+      }
+    ]
+  },
+  {
+    input: ["Oermagnoliden", "Evolutie"],
+    hint: `De kernlijn van de magnoliden is die van de magnolia.`,
+    output: [
+      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
+        quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
+        simple, elegant form
+        <br><br>- Armen Takhtajan`
+      }
+    ]
+  },
+  {
+    input: ["Oermagnoliden", "Blad"],
+    hint: `Sommige magnoliden gingen voorts op hun geurige bladeren.`,
+    output: [
+      { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
+        quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oermagnoliden", "Zaadjes"],
+    hint: `Sommige magnoliden gingen voorts op hun geurige zaadjes.`,
+    output: [
+      { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
+        quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
+        savory dishes
+        <br><br>- Harold McGee`
+      },
+      { naam: "Peper", icoon: "icons/Peper.png", map: "Smaakmakers", 
+        quote: `Black pepper has been one of the most widely traded spices in history
+        <br><br>- Andrew Dalby`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oermagnoliden", "Kevers"], ["Oermagnoliden", "Bloem"]
+    ],
+    hint: `Sommige magnoliden kwamen verder met de kevers.`,
+    output: [
+      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
+        quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
+        simple, elegant form
+        <br><br>- Armen Takhtajan`
+      },
+      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
+        quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
+        its crown
+        <br><br>- Donald Peattie`
+      }
+    ]
+  },
+  {
+    input: ["Oermagnoliden", "Hout"],
+    output: [
+      { naam: "Avocado", icoon: "icons/Avocado.png", map: "Fruit", 
+        quote: `The avocado is a large berry with a single seed and a soft, buttery flesh rich in oil
+        <br><br>- Harold McGee`
+      },
+      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
+        quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
+        its crown
+        <br><br>- Donald Peattie`
+      },
+      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
+        quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
+        simple, elegant form
+        <br><br>- Armen Takhtajan`
+      },
+      { naam: "Kaneel", icoon: "icons/Kaneel.png", map: "Smaakmakers", 
+        quote: `Cinnamon is obtained from the inner bark of a tropical evergreen tree, which curls into quills as it dries
+        <br><br>- Harold McGee`
+      }
+    ]
+  },
+  {
+    input: ["Oermagnoliden", "Bos"],
+    hint: `Sommige magnoliden voelen zich van nature thuis in de bossen.`,
+    output: [
+      { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
+        quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
+        quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
+        its crown
+        <br><br>- Donald Peattie`
+      },
+      { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
+        quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
+        savory dishes
+        <br><br>- Harold McGee`
+      }
+    ]
+  },
+  {
     input: ["Oermonocotylen", "Evolutie"],
     hint: `Monocotylen versprieten en verspreiden uiteindelijk over de hele wereld.`,
     output: [
@@ -7324,6 +7432,7 @@ const combinaties = [
     input: [
       ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
     ],
+    hint: `Sommige bloemen en insecten zijn goed in lekkernijen.`,
     output: [
       { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
         quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
