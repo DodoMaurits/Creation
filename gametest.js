@@ -274,8 +274,9 @@ const mappen = [
       { naam: "Oervaatplanten", icoon: "icons/Oervaatplanten.png" },
       { naam: "Varens", icoon: "icons/Varens.png" },
       { naam: "Oerzaadplanten", icoon: "icons/Oerzaadplanten.png" },
-      { naam: "Oereenzaadlobbige", icoon: "icons/Oereenzaadlobbige.png" },
-      { naam: "Oertweezaadlobbige", icoon: "icons/Oertweezaadlobbige.png" },
+      { naam: "Oermagnoliden", icoon: "icons/Oermagnoliden.png" },
+      { naam: "Oermonocotylen", icoon: "icons/Oermonocotylen.png" },
+      { naam: "Oereudicoten", icoon: "icons/Oereudicoten.png" },
       { naam: "Gras", icoon: "icons/Gras.png" }
     ]
   },
@@ -7415,12 +7416,12 @@ const combinaties = [
         quote: `...
         <br><br>- `
       },
-      { naam: "Oereenzaadlobbige", icoon: "icons/Oereenzaadlobbige.png", map: "Planten", 
+      { naam: "Oermonocotylen", icoon: "icons/Oermonocotylen.png", map: "Planten", 
         quote: `In monocotyledons the stem grows without secondary thickening, giving rise to forms that are often elegant, 
         flexible, and perfectly suited to their environment
         <br><br>- Katherine Esau`
       },
-      { naam: "Oertweezaadlobbige", icoon: "icons/Oertweezaadlobbige.png", map: "Planten", 
+      { naam: "Oereudicoten", icoon: "icons/Oereudicoten.png", map: "Planten", 
         quote: `In dicotyledons the capacity for secondary growth allows the plant to build strength, branching complexity, 
         and longevity
         <br><br>- Arthur Cronquist`
