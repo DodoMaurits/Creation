@@ -7660,7 +7660,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7683,7 +7683,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7713,7 +7713,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7737,7 +7737,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7758,7 +7758,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7776,7 +7776,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7797,7 +7797,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7820,7 +7820,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7835,7 +7835,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7857,7 +7857,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7872,7 +7872,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7891,7 +7891,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7914,7 +7914,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7933,7 +7933,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7960,7 +7960,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7973,7 +7973,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7991,7 +7991,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8008,7 +8008,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8026,7 +8026,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8067,7 +8067,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8098,7 +8098,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8115,7 +8115,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   }
 ];
