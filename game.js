@@ -7247,7 +7247,7 @@ const combinaties = [
   },
   {
     input: ["Oermagnoliden", "Blad"],
-    hint: `Sommige magnoliden gingen voorts op hun geurige bladeren.`,
+    hint: `Sommige magnoliden gaan voorts op hun geurige bladeren.`,
     output: [
       { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
         quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
@@ -7257,7 +7257,7 @@ const combinaties = [
   },
   {
     input: ["Oermagnoliden", "Zaadjes"],
-    hint: `Sommige magnoliden gingen voorts op hun geurige zaadjes.`,
+    hint: `Sommige magnoliden gaan voorts op hun geurige zaadjes.`,
     output: [
       { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
         quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
@@ -7274,7 +7274,7 @@ const combinaties = [
     input: [
       ["Oermagnoliden", "Kevers"], ["Oermagnoliden", "Bloem"]
     ],
-    hint: `Sommige magnoliden kwamen verder met de kevers.`,
+    hint: `Sommige magnoliden komen verder met de kevers.`,
     output: [
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
         quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
@@ -7333,12 +7333,175 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Evolutie"],
-    hint: `Monocotylen versprieten en verspreiden uiteindelijk over de hele wereld.`,
+    hint: `Monocotylen evolueren sprieten en verspreiden uiteindelijk over de hele wereld.`,
     output: [
       { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
         quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
         but they rule the plains and feed the world
         <br><br>- Peter Raven`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oereudicoten", "Water"], ["Oereudicoten", "Woestijn"]
+    ],
+    hint: `Sommige eudicoten voelen zich van nature thuis in de woestijn.`,
+    output: [
+      { naam: "Vetplanten", icoon: "icons/Vetplanten.png", map: "Planten", 
+        quote: `The fleshy tissues of succulents are specialized for water storage, giving them their characteristic
+        thickened form
+        <br><br>- Peter Raven`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oereudicoten", "Meer"], ["Oereudicoten", "Ven"], ["Oereudicoten", "Moeras"], ["Oereudicoten", "Kevers"]
+    ],
+    hint: `Sommige eudicoten voelen zich van nature thuis in stilstaand water.`,
+    output: [
+      { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
+        quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
+        <br><br>- Gautama Buddha`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oereudicoten", "Wind"], ["Oereudicoten", "Hout"], ["Oereudicoten", "Rivier"], ["Oereudicoten", "Overstroming"]
+    ],
+    hint: `Sommige eudicoten van de rivieren bestuiven met de wind.`,
+    output: [
+      { naam: "Platanen", icoon: "icons/Platanen.png", map: "Bomen", 
+        quote: `The plane tree is notable for its broad leaves and its bark, which flakes away in patches to reveal 
+        lighter layers beneath
+        <br><br>- John Loudon`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oereudicoten", "Kalk"], ["Oereudicoten", "Gif"], ["Oereudicoten", "Blad"]
+    ],
+    hint: `Sommige oeudicoten kiezen voor kalk.`,
+    output: [
+      { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
+        quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
+        <br><br>- W.J. Bean`
+      }
+    ]
+  },
+  {
+    input: ["Oereudicoten", "Evolutie"],
+    hint: `Het succes van de eudicoten is te zien aan de vele vormen van evolutie.`,
+    output: [
+      { naam: "Oerfabiden", icoon: "icons/Oerfabiden.png", map: "Planten", 
+        quote: `Fabids are distinguished in part by their frequent ability to form nitrogen-fixing symbioses with bacteria
+        <br><br>- Peter Raven`
+      },
+      { naam: "Oermalviden", icoon: "icons/Oermalviden.png", map: "Planten", 
+        quote: `A defining feature of many malvids is the presence of specialized chemical defenses within their tissues
+        <br><br>- Peter Raven`
+      },
+      { naam: "Oercaryophyllales", icoon: "icons/Oercaryophyllales.png", map: "Planten", 
+        quote: `A defining feature of Caryophyllales is their frequent ability to thrive in stressful habitats such as 
+        deserts and salt marshes
+        <br><br>- Peter Raven`
+      },
+      { naam: "Oerasteriden", icoon: "icons/Oerasteriden.png", map: "Planten", 
+        quote: `Asterids are characterized by sympetalous flowers, in which the petals are fused into a tube or funnel 
+        shape
+        <br><br>- Peter Raven`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oereudicoten", "Glucose"], ["Laurierbomen", "Oereudicoten"], ["Acacia", "Oereudicoten"], ["Wilgen", "Oereudicoten"],
+      ["Populieren", "Oereudicoten"], ["Eiken", "Oereudicoten"], ["Essen", "Oereudicoten"], ["Olijven", "Oereudicoten"]
+    ],
+    hint: `Sommige eudicoten bouwen voort op het vermeerderen van hun glucose.`,
+    output: [
+      { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
+        quote: `The grapevine is a woody climber that produces berries arranged in bunches
+        <br><br>- Julia Morton`
+      }
+    ]
+  },
+  {
+    input: ["Oereudicoten", "Kevers"],
+    output: [
+      { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
+        quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
+        <br><br>- Gautama Buddha`
+      },
+      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+        quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
+        <br><br>- Michael Dirr`
+      }
+    ]
+  },
+  {
+    input: ["Oereudicoten", "Vlinders"],
+    hint: `Sommige eudicoten kiezen voor de vlinders.`,
+    output: [
+      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+        quote: `Carrying a poppy he passes through the quarrel
+        <br><br>- Kobayashi Issa`
+      },
+      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+        quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
+        <br><br>- Michael Dirr`
+      }
+    ]
+  },
+  {
+    input: ["Oereudicoten", "Bos"],
+    hint: `Sommige eudicoten voelen zich thuis in de bossen.`,
+    output: [
+      { naam: "Platanen", icoon: "icons/Platanen.png", map: "Bomen", 
+        quote: `The plane tree is notable for its broad leaves and its bark, which flakes away in patches to reveal 
+        lighter layers beneath
+        <br><br>- John Loudon`
+      },
+      { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
+        quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
+        <br><br>- W.J. Bean`
+      },
+      { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
+        quote: `The grapevine is a woody climber that produces berries arranged in bunches
+        <br><br>- Julia Morton`
+      }
+    ]
+  },
+  {
+    input: ["Oereudicoten", "Bijen"],
+    hint: `Sommige eudicoten komen verder met de bijtjes.`,
+    output: [
+      { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
+        quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
+        <br><br>- Gautama Buddha`
+      },
+      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+        quote: `Carrying a poppy he passes through the quarrel
+        <br><br>- Kobayashi Issa`
+      },
+      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+        quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
+        <br><br>- Michael Dirr`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Magnolia", "Oermagnoliden"], ["Laurierbomen", "Oermagnoliden"], ["Acacia", "Oermagnoliden"], 
+      ["Vijgen", "Oermagnoliden"], ["Eiken", "Oermagnoliden"], ["Teak", "Oermagnoliden"]
+    ],
+    output: [
+      { naam: "Peper", icoon: "icons/Peper.png", map: "Smaakmakers", 
+        quote: `Black pepper has been one of the most widely traded spices in history
+        <br><br>- Andrew Dalby`
       }
     ]
   },
@@ -7432,7 +7595,7 @@ const combinaties = [
     input: [
       ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
     ],
-    hint: `Sommige magnoliden bouwden voort op hun wateropslag.`,
+    hint: `Sommige magnoliden bouwen voort op hun wateropslag.`,
     output: [
       { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
         quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
@@ -7485,7 +7648,7 @@ const combinaties = [
   },
   {
     input: ["Oermagnoliden", "Bijen"],
-    hint: `Sommige magnoliden kwamen verder met de bijtjes.`,
+    hint: `Sommige magnoliden komen verder met de bijtjes.`,
     output: [
       { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
