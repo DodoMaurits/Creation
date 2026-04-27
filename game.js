@@ -7199,6 +7199,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oermonocotylen", "Evolutie"],
+    hint: `Monocotylen versprieten en verspreiden uiteindelijk over de hele wereld.`,
+    output: [
+      { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
+        quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
+        but they rule the plains and feed the world
+        <br><br>- Peter Raven`
+      }
+    ]
+  },
+  {
     input: [
       ["Gras", "Zand"], ["Gras", "Kust"], ["Gras", "Strand"]
     ],
