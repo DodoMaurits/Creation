@@ -155,6 +155,7 @@ const mappen = [
       { naam: "Berg", icoon: "icons/Berg.png" },
       { naam: "Poolgebied", icoon: "icons/Poolgebied.png" },
       { naam: "Woestijn", icoon: "icons/Woestijn.png" },
+      { naam: "Oase", icoon: "icons/Oase.png" },
       { naam: "Eiland", icoon: "icons/Eiland.png" },
       { naam: "Kust", icoon: "icons/Kust.png" },
       { naam: "Strand", icoon: "icons/Strand.png" },
