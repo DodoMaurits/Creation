@@ -166,11 +166,7 @@ const mappen = [
       { naam: "Tropisch regenwoud", icoon: "icons/Tropisch regenwoud.png" },
       { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png" },
       { naam: "Heuvel", icoon: "icons/Heuvel.png" },
-      { naam: "Toendra", icoon: "icons/Toendra.png" },
-      { naam: "Savanne", icoon: "icons/Savanne.png" },
-      { naam: "Weide", icoon: "icons/Weide.png" },
-      { naam: "Duinen", icoon: "icons/Duinen.png" },
-      { naam: "Steppe", icoon: "icons/Steppe.png" }
+      { naam: "Toendra", icoon: "icons/Toendra.png" }
     ]
   },
   {
