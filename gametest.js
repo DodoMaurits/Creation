@@ -276,8 +276,7 @@ const mappen = [
       { naam: "Oerzaadplanten", icoon: "icons/Oerzaadplanten.png" },
       { naam: "Oermagnoliden", icoon: "icons/Oermagnoliden.png" },
       { naam: "Oermonocotylen", icoon: "icons/Oermonocotylen.png" },
-      { naam: "Oereudicoten", icoon: "icons/Oereudicoten.png" },
-      { naam: "Gras", icoon: "icons/Gras.png" }
+      { naam: "Oereudicoten", icoon: "icons/Oereudicoten.png" }
     ]
   },
   {
