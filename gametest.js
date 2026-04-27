@@ -7784,6 +7784,17 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Duinen", "Oereudicoten"], ["Weide", "Oereudicoten"], ["Steppe", "Oereudicoten"], ["Prairie", "Oereudicoten"]
+    ],
+    output: [
+      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+        quote: `Carrying a poppy he passes through the quarrel
+        <br><br>- Kobayashi Issa`
+      }
+    ]
+  },
+  {
     input: ["Weide", "Weide"],
     hint: `Sommige landschappen veranderen door weides zover je kunt kijken..`,
     output: [
