@@ -7168,12 +7168,16 @@ const combinaties = [
     hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
     tijd: 135_000_000,
     output: [
-      { naam: "Oereenzaadlobbige", icoon: "icons/Oereenzaadlobbige.png", map: "Planten", 
+      { naam: "Oermagnoliden", icoon: "icons/Oermagnoliden.png", map: "Planten", 
+        quote: `...
+        <br><br>- `
+      },
+      { naam: "Oermonocotylen", icoon: "icons/Oermonocotylen.png", map: "Planten", 
         quote: `In monocotyledons the stem grows without secondary thickening, giving rise to forms that are often elegant, 
         flexible, and perfectly suited to their environment
         <br><br>- Katherine Esau`
       },
-      { naam: "Oertweezaadlobbige", icoon: "icons/Oertweezaadlobbige.png", map: "Planten", 
+      { naam: "Oereudicoten", icoon: "icons/Oereudicoten.png", map: "Planten", 
         quote: `In dicotyledons the capacity for secondary growth allows the plant to build strength, branching complexity, 
         and longevity
         <br><br>- Arthur Cronquist`
@@ -7187,40 +7191,10 @@ const combinaties = [
     zeker een teken <br>voor de mensen die nadenken
     <br><br>De Bij (16:69)`,
     output: [
-      { naam: "Honing", icoon: "icons/Honing.png", map: "Voedsel", 
+      { naam: "Honing", icoon: "icons/Honing.png", map: "Genotwaren", 
         quote: `Honey is the only food which includes all the substances necessary to sustain life, including enzymes, 
         vitamins, minerals, and water
         <br><br>- John Kellogg`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Oereenzaadlobbige", "Ven"], ["Oereenzaadlobbige", "Rivier"], ["Oereenzaadlobbige", "Moeras"]
-    ],
-    hint: `...`,
-    tijd: 95_000_000,
-    output: [
-      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
-        quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
-        <br><br>- Blaise Pascal`
-      },
-      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Planten", 
-        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
-        on which we write
-        <br><br>- Pliny the Elder`
-      }
-    ]
-  },
-  {
-    input: ["Oereenzaadlobbige", "Evolutie"],
-    hint: `Eenzaadlobbige plantjes groeien als gras.`,
-    tijd: 95_000_000,
-    output: [
-      { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
-        quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
-        but they rule the plains and feed the world
-        <br><br>- Peter Raven`
       }
     ]
   },
@@ -7309,33 +7283,11 @@ const combinaties = [
         <br><br>Eerst nodig: eerste bloem.`
       }
     }
-  },
+  }/*
   {
-    input: ["Oereenzaadlobbige", "Tropisch regenwoud"],
-    hint: `Plant zaadjes in de tropen en pluk daar de zoete vruchten van.`,
-    tijd: 20_000_000,
+    input: ["Oermonocotylen", ""],
+    hint: `Plant zaadjes in  ... en pluk daar de zoete vruchten van.`,
     output: [
-      { naam: "Palmen", icoon: "icons/Palmen.png", map: "Bomen", 
-        quote: `The dance of the palm trees, the oceans calling, the first rays of sun and heaven is here
-        <br><br>- Michael Dolan`
-      },
-      { naam: "Kokosnoten", icoon: "icons/Kokosnoten.png", map: "Voedsel", 
-        quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
-        for millions of people
-        <br><br>- Harold Clifford`
-      },
-      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Voedsel", 
-        quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
-        <br><br>- Ibn al-Awwam`
-      },
-      { naam: "Bananen", icoon: "icons/Bananen.png", map: "Voedsel", 
-        quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
-        <br><br>- Paul Allen`
-      },
-      { naam: "Gember", icoon: "icons/Gember.png", map: "Voedsel", 
-        quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
-        <br><br>- James Duke`
-      }
     ],
     uitleg: {
       thresholdElement: {
@@ -7345,91 +7297,7 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
       }
     }
-  },
-  {
-    input: ["Oereenzaadlobbige", "Bloem"],
-    hint: `Zo veel soorten bloemmetjes onder de eenzaadlobbige sprieten.`,
-    tijd: 15_000_000,
-    output: [
-      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Planten", 
-        quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
-        <br><br>- Yosa Buson`
-      },
-      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Planten", 
-        quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
-        <br><br>- Elizabeth Murray`
-      },
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Planten", 
-        quote: `The orchid is mother nature's masterpiece
-        <br><br>- Robyn`
-      },
-      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Planten", 
-        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
-        arrival of spring
-        <br><br>- Anna Pavord`
-      },
-      { naam: "Asperges", icoon: "icons/Asperges.png", map: "Voedsel", 
-        quote: `Asparagus is valued for its tender young shoots, which are harvested before they become woody
-        <br><br>- Harold McGee`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
-  },
-  {
-    input: ["Gras", "Evolutie"],
-    hint: `Met het warmer worden tussen de Tigris en de Eufraat evolueerden grasweides tot tarwe en gerst.`,
-    tijd: 5_000_000,
-    output: [
-      { naam: "Gerst", icoon: "icons/Gerst.png", map: "Voedsel", 
-        quote: `Among cereals, barley is notable for its resilience and ability to grow in a wide range of climates
-        <br><br>- Jack Harlan`
-      },
-      { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Voedsel", 
-        quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
-        grass in the beginnning
-        <br><br>- Vincent van Gogh`
-      },
-      { naam: "Maïs", icoon: "icons/Mais.png", map: "Voedsel", 
-        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
-        <br><br>- Barbara McClintock`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
-  },
-  {
-    input: ["Gras", "Hout"],
-    hint: `Denk bij sommige grassen aan bomen.`,
-    tijd: 50_000_000,
-    output: [
-      { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Planten", 
-        quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
-        the wind
-        <br><br>- Bruce Lee`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
-  }
+  }*/
 ];
 
 
@@ -7455,7 +7323,8 @@ const groepsIconen = {
   "Reptielen": "icons/Reptielen.png",
   "Samenleving": "icons/Samenleving.png",
   "Zoogdieren": "icons/Zoogdieren.png",
-  "Vogels": "icons/Vogels.png"
+  "Vogels": "icons/Vogels.png",
+  "Genotwaren": "icons/Genotwaren.png"
 };
 
 // ----- STATE -----
