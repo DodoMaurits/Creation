@@ -7794,6 +7794,16 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: ["Steppe", "Regen"],
+    hint: `De Noord-Amerikaanse graslanden lijken steppes, ware het niet dat het er meer regent..`,
+    output: [
+      { naam: "Prairie", icoon: "icons/Prairie.png", map: "Landschap", 
+        quote: `I was born on the prairies where the wind blew free and there was nothing to break the light of the sun
+        <br><br>- Geronimo`
+      }
+    ]
+  },
 //------------ THRESHOLD 9: DINOSAURIËRS UITGESTORVEN 66 Ma --------------//
   {
     input: ["Oercynodonten", "Evolutie"],
