@@ -7658,13 +7658,9 @@ const combinaties = [
         <br><br>- Andrew Dalby`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
     }
   },
   {
@@ -7685,13 +7681,441 @@ const combinaties = [
         <br><br>- Elhadi M. Yahia`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Zwavel"],
+    hint: `Sommige monocotylen komen verder met de bijtjes.`,
+    output: [
+      { naam: "Asperges", icoon: "icons/Asperges.png", map: "Groenten", 
+        quote: `Asparagus is valued for its tender young shoots, which are harvested before they become woody
+        <br><br>- Harold McGee`
+      },
+      { naam: "Knoflook", icoon: "icons/Knoflook.png", map: "Smaakmakers", 
+        quote: `Without garlic I simply would not care to live
+        <br><br>- Louis Diat`
+      },
+      { naam: "Ui", icoon: "icons/Ui.png", map: "Smaakmakers", 
+        quote: `Life is like an onion. You peel it off one layer at a time and sometimes you weep
+        <br><br>- Carl Sandburg`
+      },
+      { naam: "Prei", icoon: "icons/Prei.png", map: "Groenten", 
+        quote: `The leek grows slowly, its pale stem formed in the dark soil before reaching the light
+        <br><br>- Harold McGee`
+      },
+      { naam: "Bieslook", icoon: "icons/Bieslook.png", map: "Smaakmakers", 
+        quote: `Allium schoenoprasum produces fine, grass-like leaves and small purple flowers in rounded clusters
+        <br><br>- Maud Grieve`
       }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Water"],
+    hint: `Sommige monocotylen bouwen voort op hun wateropslag.`,
+    output: [
+      { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
+        quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
+        for millions of people
+        <br><br>- Harold Clifford`
+      },
+      { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
+        quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
+        single towering flower stalk
+        <br><br>- Armen Takhtajan`
+      },
+      { naam: "Aloe Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+        quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
+        <br><br>- James Duke`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: [
+      ["Oermonocotylen", "Meer"], ["Oermonocotylen", "Ven"]
+    ],
+    hint: `Sommige monocotylen voelen zich thuis bij stilstaand water.`,
+    output: [
+      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
+        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
+        on which we write
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Kroos", icoon: "icons/Kroos.png", map: "Planten", 
+        quote: `Duckweed consists of tiny floating plants that form green mats on still freshwater surfaces
+        <br><br>- John Anderson`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: [
+      ["Oermonocotylen", "Zee"], ["Oermonocotylen", "Zout"], ["Oermonocotylen", "Oceaan"], ["Oermonocotylen", "Kust"],
+      ["Oermonocotylen", "Strand"]
+    ],
+    hint: `Welke monocotylen kunnen hun zaden laten drijven en verspreiden over zeeën en oceanen?`,
+    output: [
+      { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
+        quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
+        for millions of people
+        <br><br>- Harold Clifford`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: [
+      ["Oermonocotylen", "Agave"], ["Oermonocotylen", "Aloe Vera"]
+    ],
+    hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
+    output: [
+      { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
+        quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
+        single towering flower stalk
+        <br><br>- Armen Takhtajan`
+      },
+      { naam: "Aloe Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+        quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
+        <br><br>- James Duke`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Oase"],
+    hint: `Sommige monocotylen voelen zich thuis in de oases van woestijnen.`,
+    output: [
+      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Fruit", 
+        quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
+        <br><br>- Ibn al-Awwam`
+      },
+      { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
+        quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
+        single towering flower stalk
+        <br><br>- Armen Takhtajan`
+      },
+      { naam: "Aloe Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+        quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
+        <br><br>- James Duke`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Rivier"],
+    hint: `Sommige monocotylen voelen zich thuis langs de oevers van rivieren.`,
+    output: [
+      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
+        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
+        on which we write
+        <br><br>- Plinius de Oudere`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Glucose"],
+    hint: `Sommige monocotylen varen volledig op hun het vermeerderen van hun glucose.`,
+    output: [
+      { naam: "Bananen", icoon: "icons/Bananen.png", map: "Fruit", 
+        quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
+        <br><br>- Paul Allen`
+      },
+      { naam: "Ananas", icoon: "icons/Ananas.png", map: "Fruit", 
+        quote: `The pineapple is a tropical fruit composed of many fused berries forming a single, fleshy structure
+        <br><br>- Harold McGee`
+      },
+      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Fruit", 
+        quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
+        <br><br>- Ibn al-Awwam`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Gif"],
+    hint: `Sommige monocotylen zien gif als hun redding.`,
+    output: [
+      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
+        arrival of spring
+        <br><br>- Anna Pavord`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Wortels"],
+    hint: `Sommige monocotylen gaan voorts op het groot maken van hun wortels.`,
+    output: [
+      { naam: "Gember", icoon: "icons/Gember.png", map: "Smaakmakers", 
+        quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
+        <br><br>- James Duke`
+      },
+      { naam: "Kurkuma", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
+        quote: `The rhizome of turmeric contains a deep yellow pigment and is widely used in cooking and 
+        traditional practices
+        <br><br>- Maud Grieve`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Moeras"],
+    hint: `Sommige monocotylen voelen zich thuis in het moeras.`,
+    output: [
+      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
+        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
+        on which we write
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Kroos", icoon: "icons/Kroos.png", map: "Planten", 
+        quote: `Duckweed consists of tiny floating plants that form green mats on still freshwater surfaces
+        <br><br>- John Anderson`
+      },
+      { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
+        quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
+        <br><br>- W.J. Bean`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Zaadjes"],
+    output: [
+      { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
+        quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
+        for millions of people
+        <br><br>- Harold Clifford`
+      },
+      { naam: "Kardemom", icoon: "icons/Kardemom.png", map: "Smaakmakers", 
+        quote: `Cardamom is prized in cooking for the fragrance of its seeds, which are released only 
+        when the pods are broken
+        <br><br>- Maud Grieve`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Kevers"],
+    hint: `Sommige monocotylen gaan voorts samen met de kevers.`,
+    output: [
+      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
+        quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
+        <br><br>- Yosa Buson`
+      },
+      { naam: "Gember", icoon: "icons/Gember.png", map: "Smaakmakers", 
+        quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
+        <br><br>- James Duke`
+      },
+      { naam: "Kurkuma", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
+        quote: `The rhizome of turmeric contains a deep yellow pigment and is widely used in cooking and 
+        traditional practices
+        <br><br>- Maud Grieve`
+      },
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: " Bloemen", 
+        quote: `The orchid is mother nature's masterpiece
+        <br><br>- Robyn`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Vliegen"],
+    output: [
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: " Bloemen", 
+        quote: `The orchid is mother nature's masterpiece
+        <br><br>- Robyn`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Vlinders"],
+    hint: `Sommige monocotylen kiezen voor de vlinders.`,
+    output: [
+      { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
+        quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
+        <br><br>- Christopher Brickell`
+      },
+      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
+        quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
+        <br><br>- Yosa Buson`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Hout"],
+    output: [
+      { naam: "Oliepalmen", icoon: "icons/Oliepalmen.png", map: "Bomen", 
+        quote: `The dance of the palm trees, the oceans calling, the first rays of sun and heaven is here
+        <br><br>- Michael Dolan`
+      },
+      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Fruit", 
+        quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
+        <br><br>- Ibn al-Awwam`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Bos"],
+    hint: `Sommige monocotylen voelen zich thuis in het bos.`,
+    output: [
+      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
+        quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
+        <br><br>- Yosa Buson`
+      },
+      { naam: "Hyacinten", icoon: "icons/Hyacinten.png", map: "Bloemen", 
+        quote: `The garden was adorned with hyacinth and roses, as if Eden itself remembered the purity of first creation
+        <br><br>- John Milton`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Tropisch regenwoud"],
+    hint: `Sommige monocotylen voelen zich thuis in het tropisch regenwoud.`,
+    output: [
+      { naam: "Rotan", icoon: "icons/Rotan.png", map: "Materialen", 
+        quote: `Rattans are among the most useful products of the forest, supplying canes for endless 
+        purposes of native industry
+        <br><br>- Henry Forbes`
+      },
+      { naam: "Oliepalmen", icoon: "icons/Oliepalmen.png", map: "Bomen", 
+        quote: `The dance of the palm trees, the oceans calling, the first rays of sun and heaven is here
+        <br><br>- Michael Dolan`
+      },
+      { naam: "Bananen", icoon: "icons/Bananen.png", map: "Fruit", 
+        quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
+        <br><br>- Paul Allen`
+      },
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: " Bloemen", 
+        quote: `The orchid is mother nature's masterpiece
+        <br><br>- Robyn`
+      },
+      { naam: "Gember", icoon: "icons/Gember.png", map: "Smaakmakers", 
+        quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
+        <br><br>- James Duke`
+      },
+      { naam: "Kurkuma", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
+        quote: `The rhizome of turmeric contains a deep yellow pigment and is widely used in cooking and 
+        traditional practices
+        <br><br>- Maud Grieve`
+      },
+      { naam: "Kardemom", icoon: "icons/Kardemom.png", map: "Smaakmakers", 
+        quote: `Cardamom is prized in cooking for the fragrance of its seeds, which are released only 
+        when the pods are broken
+        <br><br>- Maud Grieve`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: ["Oermonocotylen", "Bijen"],
+    hint: `Sommige monocotylen gedijen goed bij de bijen.`,
+    output: [
+      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: " Bloemen", 
+        quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
+        <br><br>- Elizabeth Murray`
+      },
+      { naam: "Hyacinten", icoon: "icons/Hyacinten.png", map: "Bloemen", 
+        quote: `The garden was adorned with hyacinth and roses, as if Eden itself remembered the purity of first creation
+        <br><br>- John Milton`
+      },
+      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
+        arrival of spring
+        <br><br>- Anna Pavord`
+      },
+      { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
+        quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
+        <br><br>- W.J. Bean`
+      },
+      { naam: "Krokussen", icoon: "icons/Krokussen.png", map: "Bloemen", 
+        quote: `Welcome, wild harbinger of spring! To this small nook of Earth
+        <br><br>- Bernard Barton`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
+    }
+  },
+  {
+    input: [
+      ["Oermonocotylen", "Magnolia"], ["Oermonocotylen", "Laurierbomen"], ["Oermonocotylen", "Vijgen"],
+      ["Oermonocotylen", "Teak"]
+    ],
+    output: [
+      { naam: "Rotan", icoon: "icons/Rotan.png", map: "Materialen", 
+        quote: `Rattans are among the most useful products of the forest, supplying canes for endless 
+        purposes of native industry
+        <br><br>- Henry Forbes`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`}
     }
   }
 ];
@@ -7723,7 +8147,8 @@ const groepsIconen = {
   "Bloemen": "icons/Bloemen.png",
   "Genotwaren": "icons/Genotwaren.png",
   "Fruit": "icons/Fruit.png",
-  "Groenten": "icons/Groenten.png"
+  "Groenten": "icons/Groenten.png",
+  "Materialen": "icons/Materialen.png"
 };
 
 // ----- STATE -----
