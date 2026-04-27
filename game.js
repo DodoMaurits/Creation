@@ -8122,7 +8122,7 @@ const combinaties = [
     input: [
       ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Moeras"]
     ],
-    hint: `....`,
+    hint: `Sommige grassen vinden hun thuis bij stilstaand of kabbelend water.`,
     output: [
       { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
@@ -8144,7 +8144,7 @@ const combinaties = [
   },
   {
     input: ["Gras", "Rivier"],
-    hint: `....`,
+    hint: `Sommige grassen vinden hun thuis bij rivieren en beekjes.`,
     output: [
       { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
@@ -8170,7 +8170,7 @@ const combinaties = [
   },
   {
     input: ["Gras", "Overstroming"],
-    hint: `....`,
+    hint: `Sommige grassen gedijen goed bij overstroming.`,
     output: [
       { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
         quote: `Rice is the basis of nourishment for all under heaven
@@ -8188,7 +8188,7 @@ const combinaties = [
   },
   {
     input: ["Gras", "Glucose"],
-    hint: `....`,
+    hint: `Sommige grassen specialiseren zich in alsmaar meer glucose.`,
     output: [
       { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
@@ -8202,7 +8202,6 @@ const combinaties = [
   },
   {
     input: ["Gras", "Zaadjes"],
-    hint: `....`,
     output: [
       { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
         quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
@@ -8213,12 +8212,32 @@ const combinaties = [
         <br><br>- Wang Zhen`
       },
       { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
-        quote: `
-        <br><br>- `
+        quote: `The sorghum fields were dense and tall, their red tassels blazing like a sea of blood in the sun
+        <br><br>- Mo Yan`
       },
       { naam: "Gierst", icoon: "icons/Gierst.png", map: "Granen", 
-        quote: `
-        <br><br>- `
+        quote: `Millet grows quickly and thrives even in poor and dry soils where other grains fail
+        <br><br>- Olivier de Serres`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Gras", "Tropisch regenwoud"],
+    hint: `Sommige grassen voelen zich thuis in het tropisch regenwoud.`,
+    output: [
+      { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Materialen", 
+        quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
+        the wind
+        <br><br>- Bruce Lee`
+      },
+      { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Granen", 
+        quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
+        grass in the beginnning
+        <br><br>- Vincent van Gogh`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
