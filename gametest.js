@@ -8389,16 +8389,24 @@ function renderClosed() {
   
   requestAnimationFrame(() => {
     updateClosedContainer();
-    if (mappen.length > 20) {
-      const mapIcons = document.querySelectorAll(".icon.map");
-      const gridClosed = document.querySelector(".grid-closed");
-      const closedContainerCenter = document.querySelector("#closed-container.center");
+    const mapIcons = document.querySelectorAll(".icon.map");
+    const gridClosed = document.querySelector(".grid-closed");
+    const closedContainerCenter = document.querySelector("#closed-container.center");
+    if (mappen.length > 20 && mappen.length <= 25) {
       mapIcons.forEach(icon => {
         icon.style.width = "130px";
         icon.style.height = "130px";
       });
       if (gridClosed) gridClosed.style.maxWidth = "730px";
       if (closedContainerCenter) closedContainerCenter.style.width = "730px";
+    }
+    if (mappen.length > 25) {
+      mapIcons.forEach(icon => {
+        icon.style.width = "117px";
+        icon.style.height = "117px";
+      });
+      if (gridClosed) gridClosed.style.maxWidth = "802px";
+      if (closedContainerCenter) closedContainerCenter.style.width = "802px";
     }
     closedContainer.style.opacity = 1;
   });
