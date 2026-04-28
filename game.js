@@ -9410,6 +9410,137 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
+  },
+  {
+    input: ["Oercaryophyllales", "Berg"],
+    hint: `Sommige caryophyllales voelen zich thuis in de bergen.`,
+    output: [
+      { naam: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
+        quote: `Quinoa represents the resilience of traditional Andean agriculture
+        <br><br>- Miguel Altieri`
+      },
+      { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
+        quote: `The fairest flowers o’ the season are the carnations
+        <br><br>- William Shakespeare`
+      },
+      { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
+        quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
+        <br><br>- John Gerard`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: [
+      ["Oercaryophyllales", "Zand"], ["Oercaryophyllales", "Woestijn"]
+    ],
+    hint: `Sommige caryophyllales voelen zich thuis in de woestijn.`,
+    output: [
+      { naam: "Cactussen", icoon: "icons/Cactussen.png", map: "Planten", 
+        quote: `The cactus is the silent guardian of the arid land
+        <br><br>- Zane Grey`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: [
+      ["Oercaryophyllales", "Ven"], ["Oercaryophyllales", "Moeras"], ["Oercaryophyllales", "Spinnen"],
+      ["Oercaryophyllales", "Bladluizen"], ["Oercaryophyllales", "Vliegen"], ["Oercaryophyllales", "Muggen"]
+    ],
+    hint: `Sommige caryophyllales weten insecten te verteren in het moeras.`,
+    output: [
+      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
+        quote: `The sundew catches flies by means of a sticky fluid on its leaves
+        <br><br>- John Ellis`
+      },
+      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
+        quote: `“The sensitive leaves respond to touch in a manner almost animal-like
+        <br><br>- Francis Darwin`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oercaryophyllales", "Zout"],
+    hint: `Sommige caryophyllales neigen naar zoute bodems.`,
+    output: [
+      { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
+        quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
+        <br><br>- George Marsh`
+      },
+      { naam: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
+        quote: `Quinoa represents the resilience of traditional Andean agriculture
+        <br><br>- Miguel Altieri`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oercaryophyllales", "Kust"],
+    output: [
+      { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
+        quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
+        <br><br>- George Marsh`
+      },
+      { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
+        quote: `The fairest flowers o’ the season are the carnations
+        <br><br>- William Shakespeare`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: [
+      ["Oercaryophyllales", "Glucose"], ["Oercaryophyllales", "Wortels"]
+    ],
+    output: [
+      { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
+        quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
+        <br><br>- George Marsh`
+      },
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oercaryophyllales", "Gif"],
+    hint: `Sommige caryophyllales kiezen de strategie van het gif.`,
+    output: [
+      { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
+        quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
+        <br><br>- John Gerard`
+      },
+      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
+        quote: `The sundew catches flies by means of a sticky fluid on its leaves
+        <br><br>- John Ellis`
+      },
+      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
+        quote: `“The sensitive leaves respond to touch in a manner almost animal-like
+        <br><br>- Francis Darwin`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
   }
 ];
 
