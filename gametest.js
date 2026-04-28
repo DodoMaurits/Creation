@@ -8891,7 +8891,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerfabiden", "Buxus"],
+    input: [
+      ["Oerfabiden", "Buxus"], ["Oerfabiden", "Wilgen"], ["Oerfabiden", "Klavers"], ["Oerfabiden", "Brandnetels"],
+      ["Oerfabiden", "Elzen"]
+    ],
     output: [
       { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
         quote: `Hop adds bitterness to the drink and preserves it from spoiling
