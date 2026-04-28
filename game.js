@@ -8206,7 +8206,7 @@ const combinaties = [
       { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
         quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
         <br><br>- Barbara McClintock`
-      ,
+      },
       { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
         quote: `Rice is the basis of nourishment for all under heaven
         <br><br>- Wang Zhen`
