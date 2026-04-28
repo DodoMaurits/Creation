@@ -8396,8 +8396,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Weide", "Gras"],
-    hint: `Sommige grassen voelen zich thuis op de grasweides.`,
+    input: [
+      ["Weide", "Gras"], ["Steppe", "Gras"]
+    ],
+    hint: `Sommige grassen voelen zich thuis in de weides en steppen.`,
     output: [
       { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Granen", 
         quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
