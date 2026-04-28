@@ -9961,6 +9961,182 @@ const combinaties = [
         <br><br>- Barbara Platts`
       }
     ]
+  },
+  {
+    input: ["Oerlamiden", "Water"],
+    hint: `Sommige lamiden bouwen voort op hun wateropslag.`,
+    output: [
+      { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
+        quote: `A ripe tomato is one of the simplest and greatest pleasures of eating
+        <br><br>- Alice Waters`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Berg"],
+    hint: `Sommige lamiden voelen zich thuis in de bergen.`,
+    output: [
+      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+        quote: `Oregano is the taste of the Mediterranean itself
+        <br><br>- Elizabeth David`
+      },
+      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
+        quote: `The potato is a most valuable root for sustenance
+        <br><br>- James Boswell`
+      },
+      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+        quote: `Sage is singularly good for the head and brain
+        <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+        quote: `Thyme comforts the head and strengthens the senses
+        <br><br>- William Turner`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Wind"],
+    output: [
+      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
+        quote: `The ash stands by the water and shapes the land around it
+        <br><br>- William Morris`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerlamiden", "Ven"], ["Oerlamiden", "Moeras"]
+    ],
+    hint: `Sommige lamiden voelen zich thuis bij stilstaand water.`,
+    output: [
+      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
+        quote: `The ash stands by the water and shapes the land around it
+        <br><br>- William Morris`
+      },
+      { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
+        quote: `Fresh mint transforms the simplest dish into something alive
+        <br><br>- Julia Child`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerlamiden", "Kust"], ["Oerlamiden", "Zout"]
+    ],
+    hint: `Sommige lamiden voelen zich thuis aan de kust.`,
+    output: [
+      { naam: "Olijven", icoon: "icons/Olijven.png", map: "Fruit", 
+        quote: `The olive is a gift of the gods to man
+        <br><br>- Homeros`
+      },
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+        quote: `The hills were covered with lavender, stretching like a purple sea
+        <br><br>- Peter Mayle`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Kalk"],
+    output: [
+      { naam: "Tijm", icoon: "icons/TIjm.png", map: "Smaakmakers", 
+        quote: `Thyme comforts the head and strengthens the senses
+        <br><br>- William Turner`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Glucose"],
+    hint: `Sommige lamiden specialiseren zich in glucose.`,
+    output: [
+      { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
+        quote: `The sweet potato is part of the ancient food heritage of the Andes
+        <br><br>- Carlos Ochoa`
+      },
+      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
+        quote: `The potato is a most valuable root for sustenance
+        <br><br>- James Boswell`
+      },
+      { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
+        quote: `A ripe tomato is one of the simplest and greatest pleasures of eating
+        <br><br>- Alice Waters`
+      },
+      { naam: "Paprika", icoon: "icons/Paprika.png", map: "Groenten", 
+        quote: `Peppers show how a wild plant becomes a domestic staple through selection for flavor and form
+        <br><br>- Michael Pollan`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Gif"],
+    hint: `Sommige lamiden kiezen voor de strategie van gif.`,
+    output: [
+      { naam: "Tabaksplanten", icoon: "icons/Tabaksplanten.png", map: "Genotwaren", 
+        quote: `The herb which the inhabitants call uppowoc is of great estimation among them
+        <br><br>- Thomas Hariot`
+      },
+      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
+        quote: `The potato is a most valuable root for sustenance
+        <br><br>- James Boswell`
+      },
+      { naam: "Chilipepers", icoon: "icons/Chilipepers.png", map: "Smaakmakers", 
+        quote: `The chili pepper transformed human experience of flavor through pain and heat
+        <br><br>- Michael Pollan`
+      },
+      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
+        quote: `Coffee has shaped societies, economies, and daily habits across the globe
+        <br><br>- Mark Pendergrast`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Wortels"],
+    hint: `Sommige lamiden concentreren zich op hun wortels.`,
+    output: [
+      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
+        quote: `The potato is a most valuable root for sustenance
+        <br><br>- James Boswell`
+      },
+      { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
+        quote: `The sweet potato is part of the ancient food heritage of the Andes
+        <br><br>- Carlos Ochoa`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Blad"],
+    hint: `Sommige lamiden specialiseren zich in aromatische bladeren.`,
+    output: [
+      { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
+        quote: `Fresh mint transforms the simplest dish into something alive
+        <br><br>- Julia Child`
+      },
+      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+        quote: `Sage is singularly good for the head and brain
+        <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Basilicum", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
+        quote: `Without basil, Italian cooking loses its soul
+        <br><br>- Marcella Hazen`
+      },
+      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+        quote: `Oregano is the taste of the Mediterranean itself
+        <br><br>- Elizabeth David`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Zaadjes"],
+    hint: `Sommige lamiden specialiseren zich in hun zaadjes.`,
+    output: [
+      { naam: "Sesam", icoon: "icons/Sesam.png", map: "Zaden", 
+        quote: `Sesam is one of the oldest oilseed crops known to cultivation
+        <br><br>- George Watt`
+      },
+      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
+        quote: `Coffee has shaped societies, economies, and daily habits across the glob
+        <br><br>- Mark Pendergrast`
+      }
+    ]
   }
 ];
 
