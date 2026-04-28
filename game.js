@@ -8234,10 +8234,267 @@ const combinaties = [
         the wind
         <br><br>- Bruce Lee`
       },
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      },
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Savanne", "Oermonocotylen"],
+    hint: `Sommige monocotylen voelen zich thuis op de savanne.`,
+    output: [
+      { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
+        quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
+        <br><br>- Christopher Brickell`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Savanne", "Gras"],
+    hint: `Sommige grassen voelen zich thuis op de savanne.`,
+    output: [
+      { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
+        quote: `The sorghum fields were dense and tall, their red tassels blazing like a sea of blood in the sun
+        <br><br>- Mo Yan`
+      },
+      { naam: "Gierst", icoon: "icons/Gierst.png", map: "Granen", 
+        quote: `Millet grows quickly and thrives even in poor and dry soils where other grains fail
+        <br><br>- Olivier de Serres`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Weide", "Oermonocotylen"],
+    hint: `Sommige monocotylen ontpoppen zich op de grasweides.`,
+    output: [
+      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
+        arrival of spring
+        <br><br>- Anna Pavord`
+      },
+      { naam: "Krokussen", icoon: "icons/Krokussen.png", map: "Bloemen", 
+        quote: `Welcome, wild harbinger of spring! To this small nook of Earth
+        <br><br>- Bernard Barton`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Weide", "Gras"],
+    hint: `Sommige grassen voelen zich thuis op de grasweides.`,
+    output: [
       { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Granen", 
         quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
         grass in the beginnning
         <br><br>- Vincent van Gogh`
+      },
+      { naam: "Gerst", icoon: "icons/Gerst.png", map: "Granen", 
+        quote: `Among cereals, barley is notable for its resilience and ability to grow in a wide range of climates
+        <br><br>- Jack Harlan`
+      },
+      { naam: "Haver", icoon: "icons/Haver.png", map: "Granen", 
+        quote: `Oats are of a cleansing quality and are used more for feeding than for bread
+        <br><br>- John Gerard`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oerfabiden", "Water"],
+    hint: `Sommige fabiden bouwen voort op hun wateropslag.`,
+    output: [
+      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
+        quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
+        <br><br>- Olivier de Serres`
+      },
+      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+        quote: `When one has tasted watermelon, he knows what the angels eat
+        <br><br>- Mark Twain`
+      },
+      { naam: "Komkommers", icoon: "icons/Komkommers.png", map: "Groenten", 
+        quote: `The cucumber is of a cooling nature and is much desired in the heat
+        <br><br>- Plinius de Oudere`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oerfabiden", "Berg"],
+    hint: `Sommige fabiden voelen zich thuis in de bergen.`,
+    output: [
+      { naam: "Amandelen", icoon: "icons/Amandelen.png", map: "Zaden", 
+        quote: `The almond hastens to blossom before the spring is sure
+        <br><br>- Virgilius`
+      },
+      { naam: "Abrikozen", icoon: "icons/Abrikozen.png", map: "Fruit", 
+        quote: `Apricots require warmth and careful cultivation, but yield fruit of exquisite sweetness
+        <br><br>- Olivier de Serres`
+      },
+      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
+        quote: `The cherries hung like drops of blood in the summer sun
+        <br><br>- D.H. Lawrence`
+      },
+      { naam: "Perziken", icoon: "icons/Perziken.png", map: "Fruit", 
+        quote: `The peach ripens in silence, gathering sweetness from the sun
+        <br><br>- Paul Valéry`
+      },
+      { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
+        quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
+        and relief from fatigue
+        <br><br>- Sigmund Freud`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oerfabiden", "Zand"],
+    output: [
+      { naam: "Acacia", icoon: "icons/Amandelen.png", map: "Zaden", 
+        quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
+        <br><br>- Henry Stanley`
+      },
+      { naam: "Pinda", icoon: "icons/Pinda.png", map: "Zaden", 
+        quote: `The peanut is remarkable in that its fruit develops underground
+        <br><br>- Charles Millspaugh`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oerfabiden", "Zand"],
+    hint: `Sommige fabiden voelen zich thuis bij meertjes en vennetjes.`,
+    output: [
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: [
+      ["Oerfabiden", "Woestijn"], ["Oerfabiden", "Oase"]
+    ],
+    hint: `Sommige fabiden voelen zich thuis in de woestijn.`,
+    output: [
+      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
+        quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
+        <br><br>- Olivier de Serres`
+      },
+      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+        quote: `When one has tasted watermelon, he knows what the angels eat
+        <br><br>- Mark Twain`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oerfabiden", "Wind"],
+    output: [
+      { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
+        quote: `The elm trees stand like guardians of the quiet lane
+        <br><br>- John Clare`
+      },
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      },
+      { naam: "Hennep", icoon: "icons/Hennep.png", map: "Materialen", 
+        quote: `From hemp are made ropes of great strength; its seed is sometimes used as food or medicine
+        <br><br>- Plinius de Oudere`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oerfabiden", "Rivier"],
+    output: [
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      },
+      { naam: "Soja", icoon: "icons/Soja.png", map: "Zaden", 
+        quote: `Soybeans enrich the soil through nitrogen fixation and provide a high-protein crop
+        <br><br>- O.W. Willcox`
+      },
+      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
+        quote: `Hop adds bitterness to the drink and preserves it from spoiling
+        <br><br>- Hildegard von Bingen`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Oerfabiden", "Rivier"],
+    hint: `Sommige fabiden voelen zich thuis in de duinen.`,
+    output: [
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      },
+      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+        quote: `Clover enriches the soil and is excellent fodder for cattle
+        <br><br>- John Evelyn`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -8276,7 +8533,8 @@ const groepsIconen = {
   "Fruit": "icons/Fruit.png",
   "Groenten": "icons/Groenten.png",
   "Materialen": "icons/Materialen.png",
-  "Granen": "icons/Granen.png"
+  "Granen": "icons/Granen.png",
+  "Zaden": "icons/Zaden.png"
 };
 
 // ----- STATE -----
