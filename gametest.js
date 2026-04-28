@@ -8895,6 +8895,417 @@ const combinaties = [
         <br><br>- Hildegard von Bingen`
       }
     ]
+  },
+ {
+    input: [
+      ["Oermalviden", "Vuur"], ["Oermalviden", "Lava"], ["Oermalviden", "Brand"]
+    ],
+    hint: `Er zijn malviden die handig inspelen op brand en vuur.`,
+    output: [
+      { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
+        quote: `In the blue haze of eucalyptus the land seems endless and still
+        <br><br>- Banjo Paterson`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oermalviden", "Berg"], ["Oermalviden", "Steppe"]
+    ],
+    hint: `Sommige malviden voelen zich thuis op bergen en steppes.`,
+    output: [
+      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oermalviden", "Berg"], ["Oermalviden", "Steppe"]
+    ],
+    hint: `Sommige malviden voelen zich thuis op bergen en steppes.`,
+    output: [
+      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
+        quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
+        quote: `The pomegranate opens like a secret heart full of blood-red jewels
+        <br><br>- D.H. Lawrence`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Zwavel"],
+    hint: `Sommige malviden verleggen de focus naar zwavel.`,
+    output: [
+      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+        quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
+        <br><br>- Henry Ridley`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Woestijn"],
+    hint: `Sommige malviden voelen zich thuis in de woestijn.`,
+    output: [
+      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Genotwaren", 
+        quote: `Arabia produces frankincense from trees guarded against winged serpents
+        <br><br>- Herodotos`
+      },
+      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Genotwaren", 
+        quote: `Myrrh is among the most esteemed of perfumes, used both in medicine and sacred rites
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Wind"],
+    output: [
+      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
+        quote: `Under the maple’s crimson leaves the year seems to pause in flame
+        <br><br>- Henry Longfellow`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Oase"],
+    output: [
+      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Genotwaren", 
+        quote: `Arabia produces frankincense from trees guarded against winged serpents
+        <br><br>- Herodotos`
+      },
+      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
+        quote: `The pomegranate opens like a secret heart full of blood-red jewels
+        <br><br>- D.H. Lawrence`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Rivier"],
+    hint: `Sommige malviden voelen zich thuis bij de rivier.`,
+    output: [
+      { naam: "Katoen", icoon: "icons/Katoen.png", map: "Materialen", 
+        quote: `Cotton threads bind together the fabric of modern industry and commerce
+        <br><br>- John Ruskin`
+      },
+      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
+        quote: `Beneath the linden walks a gentler air, where thought may rest
+        <br><br>- Alexander Pope`
+      },
+      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
+        quote: `Under the maple’s crimson leaves the year seems to pause in flame
+        <br><br>- Henry Longfellow`
+      },
+      { naam: "Jute", icoon: "icons/Jute.png", map: "Materialen", 
+        quote: `Jute became indispensable in the manufacture of sacks for global trade
+        <br><br>- Andrew Watt`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Glucose"],
+    hint: `Sommige malviden specialiseren zich in het vermeerderen van hun glucose.`,
+    output: [
+      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
+        quote: `Under the maple’s crimson leaves the year seems to pause in flame
+        <br><br>- Henry Longfellow`
+      },
+      { naam: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
+        quote: `A single lychee carried a thousand miles is worth the fall of an empire
+        <br><br>- Du Mu`
+      },
+      { naam: "Mandarijnen", icoon: "icons/Mandarijnen.png", map: "Fruit", 
+        quote: `Cultivated fruits such as oranges exhibit remarkable variation under human selection
+        <br><br>- Charles Darwin`
+      },
+      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+        quote: `The mango blossom perfumes the air like the promise of spring
+        <br><br>- Kalidasa`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Gif"],
+    hint: `Sommige malviden maken van gif hun strategie en redding.`,
+    output: [
+      { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
+        quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
+        <br><br>- V.S. Naipaul`
+      },
+      { naam: "Paardenkastanjes", icoon: "icons/Paardenkastanjes.png", map: "Bomen", 
+        quote: `Beneath the chestnut’s spreading shade the village children played
+        <br><br>- William Wordsworth`
+      },
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+        quote: `Cocoa gives warmth and strength to the fatigued traveller
+        <br><br>- James Thomson`
+      },
+      { naam: "Kola", icoon: "icons/Kola.png", map: "Genotwaren", 
+        quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
+        of West Africa
+        <br><br>- William Johnson`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Wortels"],
+    output: [
+      { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
+        quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
+        <br><br>- John Gerard`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Blad"],
+    hint: `Sommige malviden maken van hun bladeren hun strategie.`,
+    output: [
+      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
+        quote: `The humble cabbage is often the foundation of the simplest meals
+        <br><br>- Charles Lamb`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Zaadjes"],
+    output: [
+      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
+        quote: `Mustard is hot and biting, and good to stir the humours of the body
+        <br><br>- Nicholas Culpeper`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Kevers"],
+    hint: `Sommige malviden vinden hun weg met met de kevers.`,
+    output: [
+      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+        quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
+        <br><br>- Henry Ridley`
+      },
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+        quote: `Cocoa gives warmth and strength to the fatigued traveller
+        <br><br>- James Thomson`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Vliegen"],
+    hint: `Sommige malviden vinden hun weg met met de vliegen.`,
+    output: [
+      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+        quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
+        <br><br>- Henry Ridley`
+      },
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+        quote: `Cocoa gives warmth and strength to the fatigued traveller
+        <br><br>- James Thomson`
+      },
+      { naam: "Papaja", icoon: "icons/Papaja.png", map: "Fruit", 
+        quote: `There are fruits of great softness, which melt upon the tongue
+        <br><br>- Hernán Cortés`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Vlinders"],
+    hint: `Sommige malviden vinden hun weg met de vlinders.`,
+    output: [
+      { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
+        quote: `The hibiscus lends color and grace to tropical gardens
+        <br><br>- David Faichild`
+      },
+      { naam: "Mandarijnen", icoon: "icons/Mandarijnen.png", map: "Fruit", 
+        quote: `Cultivated fruits such as oranges exhibit remarkable variation under human selection
+        <br><br>- Charles Darwin`
+      },
+      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
+        quote: `The pomegranate opens like a secret heart full of blood-red jewels
+        <br><br>- D.H. Lawrence`
+      },
+      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+        quote: `The mango blossom perfumes the air like the promise of spring
+        <br><br>- Kalidasa`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Hout"],
+    output: [
+      { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
+        quote: `In the blue haze of eucalyptus the land seems endless and still
+        <br><br>- Banjo Paterson`
+      },
+      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
+        quote: `Beneath the linden walks a gentler air, where thought may rest
+        <br><br>- Alexander Pope`
+      },
+      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
+        quote: `Under the maple’s crimson leaves the year seems to pause in flame
+        <br><br>- Henry Longfellow`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Bos"],
+    hint: `Sommige malviden voelen zich thuis in het bos.`,
+    output: [
+      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
+        quote: `Under the maple’s crimson leaves the year seems to pause in flame
+        <br><br>- Henry Longfellow`
+      },
+      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
+        quote: `Beneath the linden walks a gentler air, where thought may rest
+        <br><br>- Alexander Pope`
+      },
+      { naam: "Paardenkastanjes", icoon: "icons/Paardenkastanjes.png", map: "Bomen", 
+        quote: `Beneath the chestnut’s spreading shade the village children played
+        <br><br>- William Wordsworth`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Tropisch regenwoud"],
+    hint: `Sommige malviden voelen zich thuis in het tropisch regenwoud.`,
+    output: [
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+        quote: `Cocoa gives warmth and strength to the fatigued traveller
+        <br><br>- James Thomson`
+      },
+      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+        quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
+        <br><br>- Henry Ridley`
+      },
+      { naam: "Kapok", icoon: "icons/Kapok.png", map: "Materialen", 
+        quote: `The gigantic forest trees rise like columns, among them the lofty cotton tree
+        <br><br>- Alfred Wallace`
+      },
+      { naam: "Kola", icoon: "icons/Kola.png", map: "Genotwaren", 
+        quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
+        of West Africa
+        <br><br>- William Johnson`
+      },
+      { naam: "Zeepnoten", icoon: "icons/Zeepnoten.png", map: "Bomen", 
+        quote: `Sapindus yields fruits rich in saponin, extensively used as a substitute for soap
+        <br><br>- George Watt`
+      },
+      { naam: "Guaves", icoon: "icons/Guaves.png", map: "Fruit", 
+        quote: `Guavas hang in the heat, soft and fragrant in the tropical air
+        <br><br>- Patrick Fermor`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Bloem"],
+    hint: `Sommige malviden floreren in de strategie van de bloem.`,
+    output: [
+      { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
+        quote: `The hibiscus lends color and grace to tropical gardens
+        <br><br>- David Faichild`
+      },
+      { naam: "Geraniums", icoon: "icons/Geraniums.png", map: "Bloemen", 
+        quote: `Geraniums are the comfort of windows, faithful and unpretending
+        <br><br>- Elizabeth von Arnim`
+      },
+      { naam: "Kruidnagel", icoon: "icons/Kruidnagel.png", map: "Smaakmakers", 
+        quote: `The scent of cloves carries the memory of the islands
+        <br><br>- Haji Amrullah`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Wespen"],
+    hint: `Sommige malviden gaan goed samen met de wespen.`,
+    output: [
+      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+        quote: `The mango blossom perfumes the air like the promise of spring
+        <br><br>- Kalidasa`
+      },
+      { naam: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
+        quote: `A single lychee carried a thousand miles is worth the fall of an empire
+        <br><br>- Du Mu`
+      },
+      { naam: "Papaja", icoon: "icons/Papaja.png", map: "Fruit", 
+        quote: `There are fruits of great softness, which melt upon the tongue
+        <br><br>- Hernán Cortés`
+      },
+      { naam: "Guaves", icoon: "icons/Guaves.png", map: "Fruit", 
+        quote: `Guavas hang in the heat, soft and fragrant in the tropical air
+        <br><br>- Patrick Fermor`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Wespen"],
+    hint: `Sommige malviden gaan samen voorts met de bijen.`,
+    output: [
+      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
+        quote: `Beneath the linden walks a gentler air, where thought may rest
+        <br><br>- Alexander Pope`
+      },
+      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
+        quote: `Mustard is hot and biting, and good to stir the humours of the body
+        <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
+        quote: `The humble cabbage is often the foundation of the simplest meals
+        <br><br>- Charles Lamb`
+      },
+      { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
+        quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
+        <br><br>- John Gerard`
+      },
+      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+        quote: `The mango blossom perfumes the air like the promise of spring
+        <br><br>- Kalidasa`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Savanne"],
+    hint: `Sommige malviden voelen zich thuis op de savanne.`,
+    output: [
+      { naam: "Baobabs", icoon: "icons/Baobabs.png", map: "Bomen", 
+        quote: `The baobab stands like a monument to endurance in the dry lands
+        <br><br>- Richard Baker`
+      },
+      { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
+        quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
+        <br><br>- V.S. Naipaul`
+      },
+      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Genotwaren", 
+        quote: `Myrrh is among the most esteemed of perfumes, used both in medicine and sacred rites
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
+        quote: `In the blue haze of eucalyptus the land seems endless and still
+        <br><br>- Banjo Paterson`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Weide"],
+    hint: `Sommige malviden voelen zich thuis op uitgestrekte grasweides.`,
+    output: [
+      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
+        quote: `The humble cabbage is often the foundation of the simplest meals
+        <br><br>- Charles Lamb`
+      },
+      { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
+        quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
+        <br><br>- John Gerard`
+      },
+      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
+        quote: `Mustard is hot and biting, and good to stir the humours of the body
+        <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Geraniums", icoon: "icons/Geraniums.png", map: "Bloemen", 
+        quote: `Geraniums are the comfort of windows, faithful and unpretending
+        <br><br>- Elizabeth von Arnim`
+      }
+    ]
   }
 ];
 
