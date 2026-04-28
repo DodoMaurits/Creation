@@ -8925,7 +8925,9 @@ const groepsIconen = {
   "Genotwaren": "icons/Genotwaren.png",
   "Fruit": "icons/Fruit.png",
   "Groenten": "icons/Groenten.png",
-  "Materialen": "icons/Materialen.png"
+  "Materialen": "icons/Materialen.png",
+  "Granen": "icons/Granen.png",
+  "Zaden": "icons/Zaden.png"
 };
 
 // ----- STATE -----
