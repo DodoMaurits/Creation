@@ -8894,7 +8894,10 @@ const combinaties = [
     }
   },
   {
-    input: ["Oerfabiden", "Buxus"],
+    input: [
+      ["Oerfabiden", "Buxus"], ["Oerfabiden", "Wilgen"], ["Oerfabiden", "Klavers"], ["Oerfabiden", "Brandnetels"],
+      ["Oerfabiden", "Elzen"]
+    ],
     output: [
       { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
         quote: `Hop adds bitterness to the drink and preserves it from spoiling
@@ -9141,7 +9144,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Kevers"],
-    hint: `Sommige malviden vinden hun weg met met de kevers.`,
+    hint: `Sommige malviden vinden hun weg met de kevers.`,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
@@ -9159,7 +9162,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Vliegen"],
-    hint: `Sommige malviden vinden hun weg met met de vliegen.`,
+    hint: `Sommige malviden vinden hun weg met de vliegen.`,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
@@ -9545,28 +9548,6 @@ const combinaties = [
     }
   },
   {
-    input: ["Oercaryophyllales", "Gif"],
-    hint: `Sommige caryophyllales kiezen de strategie van het gif.`,
-    output: [
-      { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
-        quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
-        <br><br>- John Gerard`
-      },
-      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
-        quote: `The sundew catches flies by means of a sticky fluid on its leaves
-        <br><br>- John Ellis`
-      },
-      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
-        quote: `“The sensitive leaves respond to touch in a manner almost animal-like
-        <br><br>- Francis Darwin`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: ["Oercaryophyllales", "Blad"],
     output: [
       { naam: "Spinazie", icoon: "icons/Spinazie.png", map: "Groenten", 
@@ -9739,6 +9720,245 @@ const combinaties = [
       { naam: "Suiker", icoon: "icons/Suiker.png", map: " Genotwaren", 
         quote: `Sugar is a substance that has taken hold of the modern world like a drug
         <br><br>- William Dufty`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerfagales", "Berg"], ["Oerfagales", "Ven"], ["Oerfagales", "Rivier"], ["Oerfagales", "Moeras"]
+    ],
+    hint: `Sommige fagales voelen zich thuis bij waterige grond.`,
+    output: [
+      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
+        quote: `Alders are the silent pioneers of wet ground and riverbanks
+        <br><br>- Richard Mabey`
+      },
+      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
+        quote: `The birch is the emblem of the northern wilderness
+        <br><br>- Henry Thoreau`
+      }
+    ]
+  },
+  {
+    input: ["Oerfagales", "Wind"],
+    output: [
+      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
+        quote: `Alders are the silent pioneers of wet ground and riverbanks
+        <br><br>- Richard Mabey`
+      },
+      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
+        quote: `The birch is the emblem of the northern wilderness
+        <br><br>- Henry Thoreau`
+      },
+      { naam: "Hazelaars", icoon: "icons/Hazelaars.png", map: "Zaden", 
+        quote: `The hazel is the tree of wisdom and poetic inspiration
+        <br><br>- Robert Graves`
+      },
+      { naam: "Beuken", icoon: "icons/Beuken.png", map: "Bomen", 
+        quote: `Beech woods are remarkable for their smooth trunks and noble height
+        <br><br>- Gilbert White`
+      }
+    ]
+  },
+  {
+    input: ["Oerfagales", "Zaadjes"],
+    hint: `Sommige fagales maken werk van hun zaden.`,
+    output: [
+      { naam: "Hazelnoten", icoon: "icons/Hazelnoten.png", map: "Zaden", 
+        quote: `The hazel is the tree of wisdom and poetic inspiration
+        <br><br>- Robert Graves`
+      },
+      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Bomen", 
+        quote: `Under the spreading chestnut tree, I sold you and you sold me
+        <br><br>- George Orwell`
+      },
+      { naam: "Eiken", icoon: "icons/Eiken.png", map: "Bomen", 
+        quote: `The mighty oak was once a little nut
+        <br><br>- Alfred Tennyson`
+      },
+      { naam: "Walnoten", icoon: "icons/Walnoten.png", map: "Zaden", 
+        quote: `The walnut carries strength within a guarded shell
+        <br><br>- John Ruskin`
+      }
+    ]
+  },
+  {
+    input: ["Oerfagales", "Zaadjes"],
+    hint: `Veel fagales voelen zich thuis in het bos en creëren tezamen grote loofbossen.`,
+    output: [
+      { naam: "Beuken", icoon: "icons/Beuken.png", map: "Bomen", 
+        quote: `Beech woods are remarkable for their smooth trunks and noble height
+        <br><br>- Gilbert White`
+      },
+      { naam: "Eiken", icoon: "icons/Eiken.png", map: "Bomen", 
+        quote: `The mighty oak was once a little nut
+        <br><br>- Alfred Tennyson`
+      },
+      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Bomen", 
+        quote: `Under the spreading chestnut tree, I sold you and you sold me
+        <br><br>- George Orwell`
+      },
+      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
+        quote: `The birch is the emblem of the northern wilderness
+        <br><br>- Henry Thoreau`
+      },
+      { naam: "Hazelnoten", icoon: "icons/Hazelnoten.png", map: "Zaden", 
+        quote: `The hazel is the tree of wisdom and poetic inspiration
+        <br><br>- Robert Graves`
+      }
+    ]
+  },
+  {
+    input: ["Oerericales", "Berg"],
+    hint: `Sommige ericales voelen zich thuis in de bergen.`,
+    output: [
+      { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
+        quote: `Tea is a religion of the art of life
+        <br><br>- Okakura Kakuzo`
+      },
+      { naam: "Bosbessen", icoon: "icons/Bosbessen.png", map: "Fruit", 
+        quote: `I have been in the woods all afternoon, and my body has become a simple thing, tasting berries and
+        listening
+        <br><br>- Mary Oliver`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerericales", "Zand"], ["Oerericales", "Duinen"], ["Oerericales", "Gras"], ["Oerericales", "Zand"]
+    ],
+    hint: `Sommige ericales voelen zich thuis in zand en duinen.`,
+    output: [
+      { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
+        quote: `The heather spreads like a purple sea across the hills
+        <br><br>- W.H. Hudson`
+      }
+    ]
+  },
+  {
+    input: ["Oerericales", "Woestijn"],
+    hint: `Sommige ericales voelen zich thuis in de woestijn.`,
+    output: [
+      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
+        quote: `The argan tree gives us oil, shade, and life in a difficult land
+        <br><br>- Fatima Tihihit`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerericales", "Glucose"], ["Oerericales", "Bos"]
+    ],
+    hint: `Sommige ericales leven in de bossen en richten zich op hun vruchten.`,
+    output: [
+      { naam: "Kaki", icoon: "icons/Kaki.png", map: "Fruit", 
+        quote: `Even a persimmon is enough for a small life of contentment
+        <br><br>- Kobayashi Issa`
+      },
+      { naam: "Kiwi", icoon: "icons/Kiwi.png", map: "Fruit", 
+        quote: `The vine of the kiwifruit requires patience but rewards abundance
+        <br><br>- Barbara Platts`
+      },
+      { naam: "Bosbessen", icoon: "icons/Bosbessen.png", map: "Fruit", 
+        quote: `I have been in the woods all afternoon, and my body has become a simple thing, tasting berries and
+        listening
+        <br><br>- Mary Oliver`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerericales", "Gif"], ["Oerericales", "Blad"]
+    ],
+    hint: `Sommige ericales kiezen voor de straetgie van het gif en blad.`,
+    output: [
+      { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
+        quote: `Tea is a religion of the art of life
+        <br><br>- Okakura Kakuzo`
+      }
+    ]
+  },
+  {
+    input: ["Oerericales", "Zaadjes"],
+    hint: `Sommige ericales richten zich op hun zaadjes.`,
+    output: [
+      { naam: "Paranoten", icoon: "icons/Paranoten.png", map: "Zaden", 
+        quote: `Brazil nut trees are among the most important non-timber forest products of the Amazon
+        <br><br>- T.H. Hollowell`
+      },
+      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
+        quote: `The argan tree gives us oil, shade, and life in a difficult land
+        <br><br>- Fatima Tihihit`
+      },
+      { naam: "Sheabomen", icoon: "icons/Sheabomen.png", map: "Bomen", 
+        quote: `Vitellaria paradoxa is a long-lived tree of the dry savanna, deeply adapted to fire and drought
+        <br><br>- Daniel Hall`
+      }
+    ]
+  },
+  {
+    input: ["Oerericales", "Hout"],
+    output: [
+      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
+        quote: `The argan tree gives us oil, shade, and life in a difficult land
+        <br><br>- Fatima Tihihit`
+      },
+      { naam: "Sheabomen", icoon: "icons/Sheabomen.png", map: "Bomen", 
+        quote: `Vitellaria paradoxa is a long-lived tree of the dry savanna, deeply adapted to fire and drought
+        <br><br>- Daniel Hall`
+      }
+    ]
+  },
+  {
+    input: ["Oerericales", "Tropisch regenwoud"],
+    hint: `Sommige ericales voelen zich thuis in het tropische Amazonewoud.`,
+    output: [
+      { naam: "Paranoten", icoon: "icons/Paranoten.png", map: "Zaden", 
+        quote: `Brazil nut trees are among the most important non-timber forest products of the Amazon
+        <br><br>- T.H. Hollowell`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerericales", "Vlinders"], ["Oerericales", "Bijen"]
+    ],
+    hint: `Sommige ericales gaan samen voorts met de vlinders en bijen.`,
+    output: [
+      { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
+        quote: `The heather spreads like a purple sea across the hills
+        <br><br>- W.H. Hudson`
+      },
+      { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
+        quote: `Tea is a religion of the art of life
+        <br><br>- Okakura Kakuzo`
+      },
+      { naam: "Bosbessen", icoon: "icons/Bosbessen.png", map: "Fruit", 
+        quote: `I have been in the woods all afternoon, and my body has become a simple thing, tasting berries and
+        listening
+        <br><br>- Mary Oliver`
+      }
+    ]
+  },
+  {
+    input: ["Oerericales", "Savanne"],
+    hint: `Sommige ericales voelen zich thuis op de savanne.`,
+    output: [
+      { naam: "Sheabomen", icoon: "icons/Sheabomen.png", map: "Bomen", 
+        quote: `Vitellaria paradoxa is a long-lived tree of the dry savanna, deeply adapted to fire and drought
+        <br><br>- Daniel Hall`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerericales", "Wilgen"], ["Oerericales", "Populieren"], ["Oerericales", "Esdoorns"], ["Oerericales", "Eiken"],
+      ["Oerericales", "Essen"]
+    ],
+    output: [
+      { naam: "Kiwi", icoon: "icons/Kiwi.png", map: "Fruit", 
+        quote: `The vine of the kiwifruit requires patience but rewards abundance
+        <br><br>- Barbara Platts`
       }
     ]
   }
