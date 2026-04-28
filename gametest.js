@@ -8249,6 +8249,652 @@ const combinaties = [
         <br><br>- Henry Forbes`
       }
     ]
+  },
+  {
+    input: [
+      ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Moeras"]
+    ],
+    hint: `Sommige grassen vinden hun thuis bij stilstaand of kabbelend water.`,
+    output: [
+      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
+        quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
+        <br><br>- Blaise Pascal`
+      },
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      },
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Rivier"],
+    hint: `Sommige grassen vinden hun thuis bij rivieren en beekjes.`,
+    output: [
+      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
+        quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
+        <br><br>- Blaise Pascal`
+      },
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      },
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      },
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Overstroming"],
+    hint: `Sommige grassen gedijen goed bij overstroming.`,
+    output: [
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      },
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Glucose"],
+    hint: `Sommige grassen specialiseren zich in alsmaar meer glucose.`,
+    output: [
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Zaadjes"],
+    output: [
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      },
+      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+        quote: `Rice is the basis of nourishment for all under heaven
+        <br><br>- Wang Zhen`
+      },
+      { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
+        quote: `The sorghum fields were dense and tall, their red tassels blazing like a sea of blood in the sun
+        <br><br>- Mo Yan`
+      },
+      { naam: "Gierst", icoon: "icons/Gierst.png", map: "Granen", 
+        quote: `Millet grows quickly and thrives even in poor and dry soils where other grains fail
+        <br><br>- Olivier de Serres`
+      }
+    ]
+  },
+  {
+    input: ["Gras", "Tropisch regenwoud"],
+    hint: `Sommige grassen voelen zich thuis in het tropisch regenwoud.`,
+    output: [
+      { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Materialen", 
+        quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
+        the wind
+        <br><br>- Bruce Lee`
+      },
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
+        <br><br>- James Grainger`
+      },
+      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
+        <br><br>- Barbara McClintock`
+      }
+    ]
+  },
+  {
+    input: ["Savanne", "Oermonocotylen"],
+    hint: `Sommige monocotylen voelen zich thuis op de savanne.`,
+    output: [
+      { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
+        quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
+        <br><br>- Christopher Brickell`
+      }
+    ]
+  },
+  {
+    input: ["Savanne", "Gras"],
+    hint: `Sommige grassen voelen zich thuis op de savanne.`,
+    output: [
+      { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
+        quote: `The sorghum fields were dense and tall, their red tassels blazing like a sea of blood in the sun
+        <br><br>- Mo Yan`
+      },
+      { naam: "Gierst", icoon: "icons/Gierst.png", map: "Granen", 
+        quote: `Millet grows quickly and thrives even in poor and dry soils where other grains fail
+        <br><br>- Olivier de Serres`
+      }
+    ]
+  },
+  {
+    input: ["Weide", "Oermonocotylen"],
+    hint: `Sommige monocotylen ontpoppen zich op de grasweides.`,
+    output: [
+      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
+        arrival of spring
+        <br><br>- Anna Pavord`
+      },
+      { naam: "Krokussen", icoon: "icons/Krokussen.png", map: "Bloemen", 
+        quote: `Welcome, wild harbinger of spring! To this small nook of Earth
+        <br><br>- Bernard Barton`
+      }
+    ]
+  },
+  {
+    input: ["Weide", "Gras"],
+    hint: `Sommige grassen voelen zich thuis op de grasweides.`,
+    output: [
+      { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Granen", 
+        quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
+        grass in the beginnning
+        <br><br>- Vincent van Gogh`
+      },
+      { naam: "Gerst", icoon: "icons/Gerst.png", map: "Granen", 
+        quote: `Among cereals, barley is notable for its resilience and ability to grow in a wide range of climates
+        <br><br>- Jack Harlan`
+      },
+      { naam: "Haver", icoon: "icons/Haver.png", map: "Granen", 
+        quote: `Oats are of a cleansing quality and are used more for feeding than for bread
+        <br><br>- John Gerard`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Water"],
+    hint: `Sommige fabiden bouwen voort op hun wateropslag.`,
+    output: [
+      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
+        quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
+        <br><br>- Olivier de Serres`
+      },
+      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+        quote: `When one has tasted watermelon, he knows what the angels eat
+        <br><br>- Mark Twain`
+      },
+      { naam: "Komkommers", icoon: "icons/Komkommers.png", map: "Groenten", 
+        quote: `The cucumber is of a cooling nature and is much desired in the heat
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Berg"],
+    hint: `Sommige fabiden voelen zich thuis in de bergen.`,
+    output: [
+      { naam: "Amandelen", icoon: "icons/Amandelen.png", map: "Zaden", 
+        quote: `The almond hastens to blossom before the spring is sure
+        <br><br>- Virgilius`
+      },
+      { naam: "Abrikozen", icoon: "icons/Abrikozen.png", map: "Fruit", 
+        quote: `Apricots require warmth and careful cultivation, but yield fruit of exquisite sweetness
+        <br><br>- Olivier de Serres`
+      },
+      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
+        quote: `The cherries hung like drops of blood in the summer sun
+        <br><br>- D.H. Lawrence`
+      },
+      { naam: "Perziken", icoon: "icons/Perziken.png", map: "Fruit", 
+        quote: `The peach ripens in silence, gathering sweetness from the sun
+        <br><br>- Paul Valéry`
+      },
+      { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
+        quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
+        and relief from fatigue
+        <br><br>- Sigmund Freud`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Zand"],
+    output: [
+      { naam: "Acacia", icoon: "icons/Amandelen.png", map: "Zaden", 
+        quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
+        <br><br>- Henry Stanley`
+      },
+      { naam: "Pinda", icoon: "icons/Pinda.png", map: "Zaden", 
+        quote: `The peanut is remarkable in that its fruit develops underground
+        <br><br>- Charles Millspaugh`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Zand"],
+    hint: `Sommige fabiden voelen zich thuis bij meertjes en vennetjes.`,
+    output: [
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerfabiden", "Woestijn"], ["Oerfabiden", "Oase"]
+    ],
+    hint: `Sommige fabiden voelen zich thuis in de woestijn.`,
+    output: [
+      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
+        quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
+        <br><br>- Olivier de Serres`
+      },
+      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+        quote: `When one has tasted watermelon, he knows what the angels eat
+        <br><br>- Mark Twain`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Wind"],
+    output: [
+      { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
+        quote: `The elm trees stand like guardians of the quiet lane
+        <br><br>- John Clare`
+      },
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      },
+      { naam: "Hennep", icoon: "icons/Hennep.png", map: "Materialen", 
+        quote: `From hemp are made ropes of great strength; its seed is sometimes used as food or medicine
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Rivier"],
+    output: [
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      },
+      { naam: "Soja", icoon: "icons/Soja.png", map: "Zaden", 
+        quote: `Soybeans enrich the soil through nitrogen fixation and provide a high-protein crop
+        <br><br>- O.W. Willcox`
+      },
+      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
+        quote: `Hop adds bitterness to the drink and preserves it from spoiling
+        <br><br>- Hildegard von Bingen`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Rivier"],
+    hint: `Sommige fabiden voelen zich thuis in de duinen.`,
+    output: [
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      },
+      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+        quote: `Clover enriches the soil and is excellent fodder for cattle
+        <br><br>- John Evelyn`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Overstroming"],
+    output: [
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Nitraat"],
+    hint: `Sommige fabiden floreren door nitraat.`,
+    output: [
+      { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
+        quote: `The nettle grows among the ruins and the broken hedge
+        <br><br>- John Clare`
+      },
+      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
+        quote: `Hop adds bitterness to the drink and preserves it from spoiling
+        <br><br>- Hildegard von Bingen`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Glucose"],
+    hint: `Sommige fabiden specialiseren zich in het vermeerderen van hun glucose.`,
+    output: [
+      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+        quote: `When one has tasted watermelon, he knows what the angels eat
+        <br><br>- Mark Twain`
+      },
+      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
+        quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
+        <br><br>- Olivier de Serres`
+      },
+      { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
+        quote: `The fig tree yields its fruit freely, a gift of the warm earth
+        <br><br>- Ovidius`
+      },
+      { naam: "Aardbeien", icoon: "icons/Aardbeien.png", map: "Fruit", 
+        quote: `Wild strawberries are the sweetest reward of wandering in the fields
+        <br><br>- Henry Thoreau`
+      },
+      { naam: "Perziken", icoon: "icons/Perziken.png", map: "Fruit", 
+        quote: `The peach ripens in silence, gathering sweetness from the sun
+        <br><br>- Paul Valéry`
+      },
+      { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
+        quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
+        <br><br>- John Keats`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Gif"],
+    hint: `Sommige fabiden gaan goed op hun gifstoffen.`,
+    output: [
+      { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
+        quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
+        and relief from fatigue
+        <br><br>- Sigmund Freud`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Wortels"],
+    output: [
+      { naam: "Cassave", icoon: "icons/Cassave.png", map: "Groenten", 
+        quote: `Manioc is indispensable to the subsistence of many Amazonian peoples
+        <br><br>- Richard Spruce`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Zaadjes"],
+    hint: `Sommige fabiden gaan hun weg voorts door het gebruik van hun zaadjes.`,
+    output: [
+      { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png", map: "Zaden", 
+        quote: `Chickpeas are eaten both green and dried, and are thought to produce warmth in the body
+        <br><br>- Dioscorides`
+      },
+      { naam: "Linzen", icoon: "icons/Linzen.png", map: "Zaden", 
+        quote: `Lentils are of great use as food, though they produce a dulling effect on the mind
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Erwten", icoon: "icons/Erwten.png", map: "Zaden", 
+        quote: `The pea is a crop that gives both pleasure and sustenance in the garden
+        <br><br>- William Cobbett`
+      },
+      { naam: "Sperziebonen", icoon: "icons/Sperziebonen.png", map: "Zaden", 
+        quote: `The beans are eaten while the pods are yet tender and gree
+        <br><br>- John Gerard`
+      },
+      { naam: "Kidneybonen", icoon: "icons/Kidneybonen.png", map: "Zaden", 
+        quote: `The kidney bean is cultivated for its edible seeds, which are highly nutritious when properly cooked
+        <br><br>- John Lindley`
+      },
+      { naam: "Soja", icoon: "icons/Soja.png", map: "Zaden", 
+        quote: `Soybeans enrich the soil through nitrogen fixation and provide a high-protein crop
+        <br><br>- O.W. Willcox`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Vlinders"],
+    output: [
+      { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
+        quote: `The nettle grows among the ruins and the broken hedge
+        <br><br>- John Clare`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Hout"],
+    output: [
+      { naam: "Oerfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
+        quote: `Oak, beech, and other timber trees form the strength of our forests and ships
+        <br><br>- John Evelyn`
+      },
+      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+        quote: `She wept beneath the willow boughs
+        <br><br>- Christina Rossetti`
+      },
+      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+        quote: `Poplars stand along the riverbank, whispering in the wind
+        <br><br>- Virgilius`
+      },
+      { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
+        quote: `The elm trees stand like guardians of the quiet lane
+        <br><br>- John Clare`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Bos"],
+    hint: `Sommige fabiden voelen zich thuis in de bossen.`,
+    output: [
+      { naam: "Oerfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
+        quote: `Oak, beech, and other timber trees form the strength of our forests and ships
+        <br><br>- John Evelyn`
+      },
+      { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
+        quote: `The elm trees stand like guardians of the quiet lane
+        <br><br>- John Clare`
+      },
+      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
+        quote: `The cherries hung like drops of blood in the summer sun
+        <br><br>- D.H. Lawrence`
+      },
+      { naam: "Appels", icoon: "icons/Appels.png", map: "Fruit", 
+        quote: `The apple tree is a sign of love and youth
+        <br><br>- William Blake`
+      },
+      { naam: "Peren", icoon: "icons/Peren.png", map: "Fruit", 
+        quote: `The pear tree bears its fruit with quiet patience in the orchard
+        <br><br>- Henry Thoreau`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Tropisch regenwoud"],
+    hint: `Sommige fabiden voelen zich thuis in het tropisch regenwoud.`,
+    output: [
+      { naam: "Rubberbomen", icoon: "icons/Rubberbomen.png", map: "Materialen", 
+        quote: `The rubber tree yields a milky latex which can be coagulated into a material of great elasticity
+        <br><br>- Henry Wickham`
+      },
+      { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
+        quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
+        and relief from fatigue
+        <br><br>- Sigmund Freud`
+      },
+      { naam: "Sperziebonen", icoon: "icons/Sperziebonen.png", map: "Zaden", 
+        quote: `The beans are eaten while the pods are yet tender and gree
+        <br><br>- John Gerard`
+      },
+      { naam: "Kidneybonen", icoon: "icons/Kidneybonen.png", map: "Zaden", 
+        quote: `The kidney bean is cultivated for its edible seeds, which are highly nutritious when properly cooked
+        <br><br>- John Lindley`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Bloem"],
+    output: [
+      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
+        quote: `Love and a red rose can't be hid
+        <br><br>- Thomas Holcroft`
+      },
+      { naam: "Vlas", icoon: "icons/Vlas.png", map: "Materialen", 
+        quote: `Flax, slender in stem, yields threads for linen when ripened in the sun
+        <br><br>- Virgilius`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Wespen"],
+    hint: `Sommige fabiden gaan goed samen met de wespen.`,
+    output: [
+      { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
+        quote: `The fig tree yields its fruit freely, a gift of the warm earth
+        <br><br>- Ovidius`
+      },
+      { naam: "Appels", icoon: "icons/Appels.png", map: "Fruit", 
+        quote: `The apple tree is a sign of love and youth
+        <br><br>- William Blake`
+      },
+      { naam: "Peren", icoon: "icons/Peren.png", map: "Fruit", 
+        quote: `The pear tree bears its fruit with quiet patience in the orchard
+        <br><br>- Henry Thoreau`
+      },
+      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
+        quote: `The cherries hung like drops of blood in the summer sun
+        <br><br>- D.H. Lawrence`
+      },
+      { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
+        quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
+        <br><br>- John Keats`
+      },
+      { naam: "Perziken", icoon: "icons/Perziken.png", map: "Fruit", 
+        quote: `The peach ripens in silence, gathering sweetness from the sun
+        <br><br>- Paul Valéry`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Bijen"],
+    hint: `Sommige fabiden gaan samen voorts met de bijtjes.`,
+    output: [
+      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
+        quote: `Love and a red rose can't be hid
+        <br><br>- Thomas Holcroft`
+      },
+      { naam: "Pompoenen", icoon: "icons/Pompoenen.png", map: "Groenten", 
+        quote: `The pumpkin ripened beneath the mellow sun of autumn
+        <br><br>- Washington Irving`
+      },
+      { naam: "Courgettes", icoon: "icons/Courgettes.png", map: "Groenten", 
+        quote: `Zucchini is a versatile squash that absorbs flavors while remaining delicate in texture
+        <br><br>- Elizabeth Schneider`
+      },
+      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+        quote: `When one has tasted watermelon, he knows what the angels eat
+        <br><br>- Mark Twain`
+      },
+      { naam: "Aardbeien", icoon: "icons/Aardbeien.png", map: "Fruit", 
+        quote: `Wild strawberries are the sweetest reward of wandering in the fields
+        <br><br>- Henry Thoreau`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Savanne"],
+    hint: `Sommige fabiden voelen zich thuis in de savanne.`,
+    output: [
+      { naam: "Acacia", icoon: "icons/Amandelen.png", map: "Zaden", 
+        quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
+        <br><br>- Henry Stanley`
+      },
+      { naam: "Cassave", icoon: "icons/Cassave.png", map: "Groenten", 
+        quote: `Manioc is indispensable to the subsistence of many Amazonian peoples
+        <br><br>- Richard Spruce`
+      },
+      { naam: "Pinda", icoon: "icons/Pinda.png", map: "Zaden", 
+        quote: `The peanut is remarkable in that its fruit develops underground
+        <br><br>- Charles Millspaugh`
+      },
+      { naam: "Pompoenen", icoon: "icons/Pompoenen.png", map: "Groenten", 
+        quote: `The pumpkin ripened beneath the mellow sun of autumn
+        <br><br>- Washington Irving`
+      },
+      { naam: "Courgettes", icoon: "icons/Courgettes.png", map: "Groenten", 
+        quote: `Zucchini is a versatile squash that absorbs flavors while remaining delicate in texture
+        <br><br>- Elizabeth Schneider`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Weide"],
+    hint: `Sommige fabiden voelen zich thuis in de grasweides.`,
+    output: [
+      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+        quote: `Clover enriches the soil and is excellent fodder for cattle
+        <br><br>- John Evelyn`
+      },
+      { naam: "Aardbeien", icoon: "icons/Aardbeien.png", map: "Fruit", 
+        quote: `Wild strawberries are the sweetest reward of wandering in the fields
+        <br><br>- Henry Thoreau`
+      },
+      { naam: "Vlas", icoon: "icons/Vlas.png", map: "Materialen", 
+        quote: `Flax, slender in stem, yields threads for linen when ripened in the sun
+        <br><br>- Virgilius`
+      },
+      { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
+        quote: `The nettle grows among the ruins and the broken hedge
+        <br><br>- John Clare`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Steppe"],
+    hint: `Sommige fabiden voelen zich thuis op de steppe.`,
+    output: [
+      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
+        quote: `Hop adds bitterness to the drink and preserves it from spoiling
+        <br><br>- Hildegard von Bingen`
+      },
+      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+        quote: `Clover enriches the soil and is excellent fodder for cattle
+        <br><br>- John Evelyn`
+      },
+      { naam: "Linzen", icoon: "icons/Linzen.png", map: "Zaden", 
+        quote: `Lentils are of great use as food, though they produce a dulling effect on the mind
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png", map: "Zaden", 
+        quote: `Chickpeas are eaten both green and dried, and are thought to produce warmth in the body
+        <br><br>- Dioscorides`
+      },
+      { naam: "Hennep", icoon: "icons/Hennep.png", map: "Materialen", 
+        quote: `From hemp are made ropes of great strength; its seed is sometimes used as food or medicine
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oerfabiden", "Buxus"],
+    output: [
+      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
+        quote: `Hop adds bitterness to the drink and preserves it from spoiling
+        <br><br>- Hildegard von Bingen`
+      }
+    ]
   }
 ];
 
