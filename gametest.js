@@ -7483,7 +7483,7 @@ const combinaties = [
   },
   {
     input: ["Oermagnoliden", "Blad"],
-    hint: `Sommige magnoliden gingen voorts op hun geurige bladeren.`,
+    hint: `Sommige magnoliden gaan voorts op hun geurige bladeren.`,
     output: [
       { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
         quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
@@ -7493,7 +7493,7 @@ const combinaties = [
   },
   {
     input: ["Oermagnoliden", "Zaadjes"],
-    hint: `Sommige magnoliden gingen voorts op hun geurige zaadjes.`,
+    hint: `Sommige magnoliden gaan voorts op hun geurige zaadjes.`,
     output: [
       { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
         quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
@@ -7510,7 +7510,7 @@ const combinaties = [
     input: [
       ["Oermagnoliden", "Kevers"], ["Oermagnoliden", "Bloem"]
     ],
-    hint: `Sommige magnoliden kwamen verder met de kevers.`,
+    hint: `Sommige magnoliden komen verder met de kevers.`,
     output: [
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
         quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
@@ -7569,7 +7569,7 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Evolutie"],
-    hint: `Monocotylen versprieten en verspreiden uiteindelijk over de hele wereld.`,
+    hint: `Monocotylen evolueren sprieten en verspreiden uiteindelijk over de hele wereld.`,
     output: [
       { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
         quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
@@ -7845,6 +7845,7 @@ const combinaties = [
     input: [
       ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
     ],
+    hint: `Sommige magnoliden bouwen voort op hun wateropslag.`,
     output: [
       { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
         quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
@@ -7900,7 +7901,7 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Zwavel"],
-    hint: `Sommige monocotylen komen verder met de bijtjes.`,
+    hint: `Sommige monocotylen verleggen de focus naar zwavel.`,
     output: [
       { naam: "Asperges", icoon: "icons/Asperges.png", map: "Groenten", 
         quote: `Asparagus is valued for its tender young shoots, which are harvested before they become woody
@@ -8042,7 +8043,7 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Gif"],
-    hint: `Sommige monocotylen zien gif als hun redding.`,
+    hint: `Sommige monocotylen maken van gif hun strategie en redding.`,
     output: [
       { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
         quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
@@ -8619,7 +8620,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Gif"],
-    hint: `Sommige fabiden gaan goed op hun gifstoffen.`,
+    hint: `Sommige fabiden maken van gif hun strategie en redding.`,
     output: [
       { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
         quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
@@ -9081,7 +9082,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Kevers"],
-    hint: `Sommige malviden vinden hun weg met met de kevers.`,
+    hint: `Sommige malviden vinden hun weg met de kevers.`,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
@@ -9095,7 +9096,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Vliegen"],
-    hint: `Sommige malviden vinden hun weg met met de vliegen.`,
+    hint: `Sommige malviden vinden hun weg met de vliegen.`,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
@@ -9392,24 +9393,6 @@ const combinaties = [
         quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
         <br><br>- George Marsh`
       },
-    ]
-  },
-  {
-    input: ["Oercaryophyllales", "Gif"],
-    hint: `Sommige caryophyllales kiezen de strategie van het gif.`,
-    output: [
-      { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
-        quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
-        <br><br>- John Gerard`
-      },
-      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
-        quote: `The sundew catches flies by means of a sticky fluid on its leaves
-        <br><br>- John Ellis`
-      },
-      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
-        quote: `“The sensitive leaves respond to touch in a manner almost animal-like
-        <br><br>- Francis Darwin`
-      }
     ]
   },
   {
