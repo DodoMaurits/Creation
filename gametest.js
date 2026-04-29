@@ -9345,7 +9345,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oermalviden", "Wespen"],
+    input: ["Oermalviden", "Bijen"],
     hint: `Sommige malviden gaan samen voorts met de bijen.`,
     tijd: 5_000_000,
     output: [
