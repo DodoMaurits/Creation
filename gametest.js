@@ -10894,24 +10894,36 @@ function toggleSelect(el, img, side, mapNaam) {
 }
 
 // ----- CHECK COMBINATIONS -----
-function matches(rule, el) {
+function matchElement(rule, el) {
+  if (!rule || !el) return false;
+
   if (typeof rule !== "string") return false;
 
+  // map support
   if (rule.startsWith("map:")) {
     const mapNaam = rule.slice(4);
-    return el.mapNaam === mapNaam || el.map === mapNaam;
+    return (el.map || el.mapNaam) === mapNaam;
   }
 
+  // normal element match
   return el.naam === rule;
 }
 
-function checkCombination() {  
+function matchPair(set, selected) {
+  const [a, b] = selected;
+
+  return (
+    matchElement(set[0], a) && matchElement(set[1], b)
+  ) || (
+    matchElement(set[0], b) && matchElement(set[1], a)
+  );
+}
+
+function checkCombination() {
   if (selected.length < 2) return;
-  
+
   const matches = combinaties.filter(c =>
-    c.input.some(set =>
-      matchInput(set, selected)
-    )
+    c.input.some(set => matchPair(set, selected))
   );
 
   if (matches.length === 0) {
