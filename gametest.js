@@ -8257,7 +8257,7 @@ const combinaties = [
     hint: `Sommige monocotylen gedijen goed bij de bijen.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: " Bloemen", 
+      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Bloemen", 
         quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
         <br><br>- Elizabeth Murray`
       },
@@ -9647,7 +9647,7 @@ const combinaties = [
     hint: `Sommige monocotylen voelen zich thuis op de steppe.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: " Bloemen", 
+      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Bloemen", 
         quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
         <br><br>- Elizabeth Murray`
       },
