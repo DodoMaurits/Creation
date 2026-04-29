@@ -7846,6 +7846,7 @@ const combinaties = [
       ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
     ],
     hint: `Sommige magnoliden bouwen voort op hun wateropslag.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
         quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
@@ -7856,6 +7857,7 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Tropisch regenwoud"],
     hint: `Sommige magnoliden voelen zich van nature thuis in het tropisch regenwoud.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
         quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
@@ -7883,6 +7885,7 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Bijen"],
     hint: `Sommige magnoliden komen verder met de bijtjes.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
@@ -7902,6 +7905,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Zwavel"],
     hint: `Sommige monocotylen verleggen de focus naar zwavel.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Asperges", icoon: "icons/Asperges.png", map: "Groenten", 
         quote: `Asparagus is valued for its tender young shoots, which are harvested before they become woody
@@ -7928,6 +7932,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Water"],
     hint: `Sommige monocotylen bouwen voort op hun wateropslag.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
         quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
@@ -7950,6 +7955,7 @@ const combinaties = [
       ["Oermonocotylen", "Meer"], ["Oermonocotylen", "Ven"]
     ],
     hint: `Sommige monocotylen voelen zich thuis bij stilstaand water.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
@@ -7968,6 +7974,7 @@ const combinaties = [
       ["Oermonocotylen", "Strand"]
     ],
     hint: `Welke monocotylen kunnen hun zaden laten drijven en verspreiden over zeeën en oceanen?`,
+    tijd: 10_000_000,
     output: [
       { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
         quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
@@ -7981,6 +7988,7 @@ const combinaties = [
       ["Oermonocotylen", "Agave"], ["Oermonocotylen", "Aloe Vera"]
     ],
     hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
         quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
@@ -7996,6 +8004,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Oase"],
     hint: `Sommige monocotylen voelen zich thuis in de oases van woestijnen.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Dadels", icoon: "icons/Dadels.png", map: "Fruit", 
         quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
@@ -8015,6 +8024,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Rivier"],
     hint: `Sommige monocotylen voelen zich thuis langs de oevers van rivieren.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
@@ -8026,6 +8036,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Glucose"],
     hint: `Sommige monocotylen varen volledig op hun het vermeerderen van hun glucose.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Bananen", icoon: "icons/Bananen.png", map: "Fruit", 
         quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
@@ -8055,6 +8066,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Wortels"],
     hint: `Sommige monocotylen gaan voorts op het groot maken van hun wortels.`,
+    tijd: 35_000_000,
     output: [
       { naam: "Gember", icoon: "icons/Gember.png", map: "Smaakmakers", 
         quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
@@ -8070,6 +8082,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Moeras"],
     hint: `Sommige monocotylen voelen zich thuis in het moeras.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
@@ -8088,6 +8101,7 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Zaadjes"],
+    tijd: 10_000_000,
     output: [
       { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
         quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
@@ -8104,6 +8118,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Kevers"],
     hint: `Sommige monocotylen gaan voorts samen met de kevers.`,
+    tijd: 35_000_000,
     output: [
       { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
         quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
@@ -8136,6 +8151,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Vlinders"],
     hint: `Sommige monocotylen kiezen voor de vlinders.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
         quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
@@ -8149,6 +8165,7 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Hout"],
+    tijd: 5_000_000,
     output: [
       { naam: "Oliepalmen", icoon: "icons/Oliepalmen.png", map: "Bomen", 
         quote: `The dance of the palm trees, the oceans calling, the first rays of sun and heaven is here
@@ -8163,6 +8180,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Bos"],
     hint: `Sommige monocotylen voelen zich thuis in het bos.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
         quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
@@ -8177,6 +8195,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Tropisch regenwoud"],
     hint: `Sommige monocotylen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Rotan", icoon: "icons/Rotan.png", map: "Materialen", 
         quote: `Rattans are among the most useful products of the forest, supplying canes for endless 
@@ -8214,6 +8233,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Bijen"],
     hint: `Sommige monocotylen gedijen goed bij de bijen.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Tulpen", icoon: "icons/Tulpen.png", map: " Bloemen", 
         quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
@@ -8243,6 +8263,7 @@ const combinaties = [
       ["Oermonocotylen", "Magnolia"], ["Oermonocotylen", "Laurierbomen"], ["Oermonocotylen", "Vijgen"],
       ["Oermonocotylen", "Teak"]
     ],
+    tijd: 20_000_000,
     output: [
       { naam: "Rotan", icoon: "icons/Rotan.png", map: "Materialen", 
         quote: `Rattans are among the most useful products of the forest, supplying canes for endless 
@@ -8256,6 +8277,7 @@ const combinaties = [
       ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Moeras"]
     ],
     hint: `Sommige grassen vinden hun thuis bij stilstaand of kabbelend water.`,
+    tijd: 4_000_000,
     output: [
       { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
@@ -8274,6 +8296,7 @@ const combinaties = [
   {
     input: ["Gras", "Rivier"],
     hint: `Sommige grassen vinden hun thuis bij rivieren en beekjes.`,
+    tijd: 4_000_000,
     output: [
       { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
@@ -8296,6 +8319,7 @@ const combinaties = [
   {
     input: ["Gras", "Overstroming"],
     hint: `Sommige grassen gedijen goed bij overstroming.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
         quote: `Rice is the basis of nourishment for all under heaven
@@ -8310,6 +8334,7 @@ const combinaties = [
   {
     input: ["Gras", "Glucose"],
     hint: `Sommige grassen specialiseren zich in alsmaar meer glucose.`,
+    tijd: 4_000_000,
     output: [
       { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
@@ -8319,6 +8344,7 @@ const combinaties = [
   },
   {
     input: ["Gras", "Zaadjes"],
+    tijd: 4_000_000,
     output: [
       { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
         quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
@@ -8341,6 +8367,7 @@ const combinaties = [
   {
     input: ["Gras", "Tropisch regenwoud"],
     hint: `Sommige grassen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 4_000_000,
     output: [
       { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Materialen", 
         quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
@@ -8360,6 +8387,7 @@ const combinaties = [
   {
     input: ["Savanne", "Oermonocotylen"],
     hint: `Sommige monocotylen voelen zich thuis op de savanne.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
         quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
@@ -8370,6 +8398,7 @@ const combinaties = [
   {
     input: ["Savanne", "Gras"],
     hint: `Sommige grassen voelen zich thuis op de savanne.`,
+    tijd: 4_000_000,
     output: [
       { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
         quote: `The sorghum fields were dense and tall, their red tassels blazing like a sea of blood in the sun
@@ -8384,6 +8413,7 @@ const combinaties = [
   {
     input: ["Weide", "Oermonocotylen"],
     hint: `Sommige monocotylen ontpoppen zich op de grasweides.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
         quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
@@ -8401,6 +8431,7 @@ const combinaties = [
       ["Weide", "Gras"], ["Steppe", "Gras"]
     ],
     hint: `Sommige grassen voelen zich thuis in de weides en steppen.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Granen", 
         quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
@@ -8420,6 +8451,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Water"],
     hint: `Sommige fabiden bouwen voort op hun wateropslag.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
         quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
@@ -8438,6 +8470,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Berg"],
     hint: `Sommige fabiden voelen zich thuis in de bergen.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Amandelen", icoon: "icons/Amandelen.png", map: "Zaden", 
         quote: `The almond hastens to blossom before the spring is sure
@@ -8464,6 +8497,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Zand"],
+    tijd: 20_000_000,
     output: [
       { naam: "Acacia", icoon: "icons/Amandelen.png", map: "Zaden", 
         quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
@@ -8478,6 +8512,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Zand"],
     hint: `Sommige fabiden voelen zich thuis bij meertjes en vennetjes.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
         quote: `She wept beneath the willow boughs
@@ -8494,6 +8529,7 @@ const combinaties = [
       ["Oerfabiden", "Woestijn"], ["Oerfabiden", "Oase"]
     ],
     hint: `Sommige fabiden voelen zich thuis in de woestijn.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
         quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
@@ -8507,6 +8543,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Wind"],
+    tijd: 30_000_000,
     output: [
       { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
         quote: `The elm trees stand like guardians of the quiet lane
@@ -8528,6 +8565,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Rivier"],
+    tijd: 30_000_000,
     output: [
       { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
         quote: `She wept beneath the willow boughs
@@ -8550,6 +8588,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Rivier"],
     hint: `Sommige fabiden voelen zich thuis in de duinen.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
         quote: `She wept beneath the willow boughs
@@ -8567,6 +8606,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Overstroming"],
+    tijd: 30_000_000,
     output: [
       { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
         quote: `Poplars stand along the riverbank, whispering in the wind
@@ -8577,6 +8617,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Nitraat"],
     hint: `Sommige fabiden floreren door nitraat.`,
+    tijd: 60_000_000,
     output: [
       { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
         quote: `The nettle grows among the ruins and the broken hedge
@@ -8591,6 +8632,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Glucose"],
     hint: `Sommige fabiden specialiseren zich in het vermeerderen van hun glucose.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
         quote: `When one has tasted watermelon, he knows what the angels eat
@@ -8621,6 +8663,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Gif"],
     hint: `Sommige fabiden maken van gif hun strategie en redding.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
         quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
@@ -8631,6 +8674,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Wortels"],
+    tijd: 10_000_000,
     output: [
       { naam: "Cassave", icoon: "icons/Cassave.png", map: "Groenten", 
         quote: `Manioc is indispensable to the subsistence of many Amazonian peoples
@@ -8641,6 +8685,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Zaadjes"],
     hint: `Sommige fabiden gaan hun weg voorts door het gebruik van hun zaadjes.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png", map: "Zaden", 
         quote: `Chickpeas are eaten both green and dried, and are thought to produce warmth in the body
@@ -8679,6 +8724,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Hout"],
+    tijd: 30_000_000,
     output: [
       { naam: "Oerfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
         quote: `Oak, beech, and other timber trees form the strength of our forests and ships
@@ -8701,6 +8747,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Bos"],
     hint: `Sommige fabiden voelen zich thuis in de bossen.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Oerfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
         quote: `Oak, beech, and other timber trees form the strength of our forests and ships
@@ -8727,6 +8774,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Tropisch regenwoud"],
     hint: `Sommige fabiden voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Rubberbomen", icoon: "icons/Rubberbomen.png", map: "Materialen", 
         quote: `The rubber tree yields a milky latex which can be coagulated into a material of great elasticity
@@ -8763,6 +8811,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Wespen"],
     hint: `Sommige fabiden gaan goed samen met de wespen.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
         quote: `The fig tree yields its fruit freely, a gift of the warm earth
@@ -8793,6 +8842,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Bijen"],
     hint: `Sommige fabiden gaan samen voorts met de bijtjes.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
         quote: `Love and a red rose can't be hid
@@ -8819,6 +8869,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Savanne"],
     hint: `Sommige fabiden voelen zich thuis in de savanne.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Acacia", icoon: "icons/Amandelen.png", map: "Zaden", 
         quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
@@ -8845,6 +8896,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Weide"],
     hint: `Sommige fabiden voelen zich thuis in de grasweides.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
         quote: `Clover enriches the soil and is excellent fodder for cattle
@@ -8867,6 +8919,7 @@ const combinaties = [
   {
     input: ["Oerfabiden", "Steppe"],
     hint: `Sommige fabiden voelen zich thuis op de steppe.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
         quote: `Hop adds bitterness to the drink and preserves it from spoiling
@@ -8895,6 +8948,7 @@ const combinaties = [
       ["Oerfabiden", "Buxus"], ["Oerfabiden", "Wilgen"], ["Oerfabiden", "Klavers"], ["Oerfabiden", "Brandnetels"],
       ["Oerfabiden", "Elzen"]
     ],
+    tijd: 60_000_000,
     output: [
       { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
         quote: `Hop adds bitterness to the drink and preserves it from spoiling
@@ -8907,6 +8961,7 @@ const combinaties = [
       ["Oermalviden", "Vuur"], ["Oermalviden", "Lava"], ["Oermalviden", "Brand"]
     ],
     hint: `Er zijn malviden die handig inspelen op brand en vuur.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
         quote: `In the blue haze of eucalyptus the land seems endless and still
@@ -8919,10 +8974,11 @@ const combinaties = [
       ["Oermalviden", "Berg"], ["Oermalviden", "Steppe"]
     ],
     hint: `Sommige malviden voelen zich thuis op bergen en steppes.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
-        quote: `
-        <br><br>- `
+        quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
+        <br><br>- Plinius de Oudere`
       }
     ]
   },
@@ -8931,6 +8987,7 @@ const combinaties = [
       ["Oermalviden", "Berg"], ["Oermalviden", "Steppe"]
     ],
     hint: `Sommige malviden voelen zich thuis op bergen en steppes.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
         quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
@@ -8945,6 +9002,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Zwavel"],
     hint: `Sommige malviden verleggen de focus naar zwavel.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
@@ -8968,6 +9026,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Wind"],
+    tijd: 50_000_000,
     output: [
       { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
         quote: `Under the maple’s crimson leaves the year seems to pause in flame
@@ -8977,6 +9036,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Oase"],
+    tijd: 20_000_000,
     output: [
       { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Genotwaren", 
         quote: `Arabia produces frankincense from trees guarded against winged serpents
@@ -8991,6 +9051,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Rivier"],
     hint: `Sommige malviden voelen zich thuis bij de rivier.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Katoen", icoon: "icons/Katoen.png", map: "Materialen", 
         quote: `Cotton threads bind together the fabric of modern industry and commerce
@@ -9013,6 +9074,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Glucose"],
     hint: `Sommige malviden specialiseren zich in het vermeerderen van hun glucose.`,
+    tijd: 8_000_000,
     output: [
       { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
         quote: `Under the maple’s crimson leaves the year seems to pause in flame
@@ -9035,6 +9097,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Gif"],
     hint: `Sommige malviden maken van gif hun strategie en redding.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
         quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
@@ -9057,6 +9120,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Wortels"],
+    tijd: 5_000_000,
     output: [
       { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
         quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
@@ -9067,6 +9131,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Blad"],
     hint: `Sommige malviden maken van hun bladeren hun strategie.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
         quote: `The humble cabbage is often the foundation of the simplest meals
@@ -9076,6 +9141,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Zaadjes"],
+    tijd: 10_000_000,
     output: [
       { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
@@ -9086,6 +9152,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Kevers"],
     hint: `Sommige malviden vinden hun weg met de kevers.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
@@ -9100,6 +9167,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Vliegen"],
     hint: `Sommige malviden vinden hun weg met de vliegen.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
@@ -9118,6 +9186,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Vlinders"],
     hint: `Sommige malviden vinden hun weg met de vlinders.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
         quote: `The hibiscus lends color and grace to tropical gardens
@@ -9139,6 +9208,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Hout"],
+    tijd: 50_000_000,
     output: [
       { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
         quote: `In the blue haze of eucalyptus the land seems endless and still
@@ -9157,6 +9227,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Bos"],
     hint: `Sommige malviden voelen zich thuis in het bos.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
         quote: `Under the maple’s crimson leaves the year seems to pause in flame
@@ -9175,6 +9246,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Tropisch regenwoud"],
     hint: `Sommige malviden voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
@@ -9206,6 +9278,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Bloem"],
     hint: `Sommige malviden floreren in de strategie van de bloem.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
         quote: `The hibiscus lends color and grace to tropical gardens
@@ -9224,6 +9297,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Wespen"],
     hint: `Sommige malviden gaan goed samen met de wespen.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
         quote: `The mango blossom perfumes the air like the promise of spring
@@ -9246,6 +9320,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Wespen"],
     hint: `Sommige malviden gaan samen voorts met de bijen.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
         quote: `Beneath the linden walks a gentler air, where thought may rest
@@ -9272,6 +9347,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Savanne"],
     hint: `Sommige malviden voelen zich thuis op de savanne.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Baobabs", icoon: "icons/Baobabs.png", map: "Bomen", 
         quote: `The baobab stands like a monument to endurance in the dry lands
@@ -9294,6 +9370,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Weide"],
     hint: `Sommige malviden voelen zich thuis op uitgestrekte grasweides.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
         quote: `The humble cabbage is often the foundation of the simplest meals
@@ -9316,6 +9393,7 @@ const combinaties = [
   {
     input: ["Oercaryophyllales", "Berg"],
     hint: `Sommige caryophyllales voelen zich thuis in de bergen.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
         quote: `Quinoa represents the resilience of traditional Andean agriculture
@@ -9336,6 +9414,7 @@ const combinaties = [
       ["Oercaryophyllales", "Zand"], ["Oercaryophyllales", "Woestijn"]
     ],
     hint: `Sommige caryophyllales voelen zich thuis in de woestijn.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Cactussen", icoon: "icons/Cactussen.png", map: "Planten", 
         quote: `The cactus is the silent guardian of the arid land
@@ -9349,6 +9428,7 @@ const combinaties = [
       ["Oercaryophyllales", "Bladluizen"], ["Oercaryophyllales", "Vliegen"], ["Oercaryophyllales", "Muggen"]
     ],
     hint: `Sommige caryophyllales weten insecten te verteren in het moeras.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
         quote: `The sundew catches flies by means of a sticky fluid on its leaves
@@ -9363,6 +9443,7 @@ const combinaties = [
   {
     input: ["Oercaryophyllales", "Zout"],
     hint: `Sommige caryophyllales neigen naar zoute bodems.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
         quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
@@ -9376,6 +9457,7 @@ const combinaties = [
   },
   {
     input: ["Oercaryophyllales", "Kust"],
+    tijd: 30_000_000,
     output: [
       { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
         quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
@@ -9391,6 +9473,7 @@ const combinaties = [
     input: [
       ["Oercaryophyllales", "Glucose"], ["Oercaryophyllales", "Wortels"]
     ],
+    tijd: 35_000_000,
     output: [
       { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
         quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
@@ -9401,6 +9484,7 @@ const combinaties = [
   {
     input: ["Oercaryophyllales", "Gif"],
     hint: `Sommige caryophyllales kiezen de strategie van het gif.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
         quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
@@ -9418,6 +9502,7 @@ const combinaties = [
   },
   {
     input: ["Oercaryophyllales", "Blad"],
+    tijd: 35_000_000,
     output: [
       { naam: "Spinazie", icoon: "icons/Spinazie.png", map: "Groenten", 
         quote: `Spinach stands in our culture for what is green, clean, and strengthening
@@ -9427,6 +9512,7 @@ const combinaties = [
   },
   {
     input: ["Oercaryophyllales", "Zaadjes"],
+    tijd: 5_000_000,
     output: [
       { naam: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
         quote: `Quinoa represents the resilience of traditional Andean agriculture
@@ -9437,6 +9523,7 @@ const combinaties = [
   {
     input: ["Oercaryophyllales", "Bijen"],
     hint: `Sommige caryophyllales gaan samen voorts met de bijtjes.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
         quote: `The fairest flowers o’ the season are the carnations
@@ -9450,6 +9537,7 @@ const combinaties = [
   },
   {
     input: ["Oercaryophyllales", "Duinen"],
+    tijd: 30_000_000,
     output: [
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
         quote: `The fairest flowers o’ the season are the carnations
@@ -9460,6 +9548,7 @@ const combinaties = [
   {
     input: ["Oercaryophyllales", "Weide"],
     hint: `Sommige caryophyllales voelen zich thuis in de grasweides.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Spinazie", icoon: "icons/Spinazie.png", map: "Groenten", 
         quote: `Spinach stands in our culture for what is green, clean, and strengthening
@@ -9482,6 +9571,7 @@ const combinaties = [
   {
     input: ["Oercaryophyllales", "Steppe"],
     hint: `Sommige caryophyllales voelen zich thuis op de steppe.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Boekweit", icoon: "icons/Boekweit.png", map: "Zaden", 
         quote: `Buckwheat is the food of the simple man
@@ -9533,6 +9623,7 @@ const combinaties = [
   {
     input: ["Steppe", "Oermonocotylen"],
     hint: `Sommige monocotylen voelen zich thuis op de steppe.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Tulpen", icoon: "icons/Tulpen.png", map: " Bloemen", 
         quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
@@ -9549,6 +9640,7 @@ const combinaties = [
       ["Suikerriet", "Ster"], ["Suikerriet", "Licht"], ["Suikerriet", "Fotosynthese"]
     ],
     hint: `In hun sappige stengels verwerkt suikerriet met behulp van de zon hun glucose tot sacharose.`,
+    tijd: 4_000_000,
     output: [
       { naam: "Suiker", icoon: "icons/Suiker.png", map: " Genotwaren", 
         quote: `Sugar is a substance that has taken hold of the modern world like a drug
@@ -9561,6 +9653,7 @@ const combinaties = [
       ["Oerfagales", "Berg"], ["Oerfagales", "Ven"], ["Oerfagales", "Rivier"], ["Oerfagales", "Moeras"]
     ],
     hint: `Sommige fagales voelen zich thuis bij waterige grond.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
         quote: `Alders are the silent pioneers of wet ground and riverbanks
@@ -9574,6 +9667,7 @@ const combinaties = [
   },
   {
     input: ["Oerfagales", "Wind"],
+    tijd: 50_000_000,
     output: [
       { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
         quote: `Alders are the silent pioneers of wet ground and riverbanks
@@ -9596,6 +9690,7 @@ const combinaties = [
   {
     input: ["Oerfagales", "Zaadjes"],
     hint: `Sommige fagales maken werk van hun zaden.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Hazelnoten", icoon: "icons/Hazelnoten.png", map: "Zaden", 
         quote: `The hazel is the tree of wisdom and poetic inspiration
@@ -9618,6 +9713,7 @@ const combinaties = [
   {
     input: ["Oerfagales", "Zaadjes"],
     hint: `Veel fagales voelen zich thuis in het bos en creëren tezamen grote loofbossen.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Beuken", icoon: "icons/Beuken.png", map: "Bomen", 
         quote: `Beech woods are remarkable for their smooth trunks and noble height
@@ -9644,6 +9740,7 @@ const combinaties = [
   {
     input: ["Oerericales", "Berg"],
     hint: `Sommige ericales voelen zich thuis in de bergen.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
@@ -9661,6 +9758,7 @@ const combinaties = [
       ["Oerericales", "Zand"], ["Oerericales", "Duinen"], ["Oerericales", "Gras"], ["Oerericales", "Zand"]
     ],
     hint: `Sommige ericales voelen zich thuis in zand en duinen.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
         quote: `The heather spreads like a purple sea across the hills
@@ -9671,6 +9769,7 @@ const combinaties = [
   {
     input: ["Oerericales", "Woestijn"],
     hint: `Sommige ericales voelen zich thuis in de woestijn.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
         quote: `The argan tree gives us oil, shade, and life in a difficult land
@@ -9683,6 +9782,7 @@ const combinaties = [
       ["Oerericales", "Glucose"], ["Oerericales", "Bos"]
     ],
     hint: `Sommige ericales leven in de bossen en richten zich op hun vruchten.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Kaki", icoon: "icons/Kaki.png", map: "Fruit", 
         quote: `Even a persimmon is enough for a small life of contentment
@@ -9714,6 +9814,7 @@ const combinaties = [
   {
     input: ["Oerericales", "Zaadjes"],
     hint: `Sommige ericales richten zich op hun zaadjes.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Paranoten", icoon: "icons/Paranoten.png", map: "Zaden", 
         quote: `Brazil nut trees are among the most important non-timber forest products of the Amazon
@@ -9731,6 +9832,7 @@ const combinaties = [
   },
   {
     input: ["Oerericales", "Hout"],
+    tijd: 5_000_000,
     output: [
       { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
         quote: `The argan tree gives us oil, shade, and life in a difficult land
@@ -9745,6 +9847,7 @@ const combinaties = [
   {
     input: ["Oerericales", "Tropisch regenwoud"],
     hint: `Sommige ericales voelen zich thuis in het tropische Amazonewoud.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Paranoten", icoon: "icons/Paranoten.png", map: "Zaden", 
         quote: `Brazil nut trees are among the most important non-timber forest products of the Amazon
@@ -9757,6 +9860,7 @@ const combinaties = [
       ["Oerericales", "Vlinders"], ["Oerericales", "Bijen"]
     ],
     hint: `Sommige ericales gaan samen voorts met de vlinders en bijen.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
         quote: `The heather spreads like a purple sea across the hills
@@ -9776,6 +9880,7 @@ const combinaties = [
   {
     input: ["Oerericales", "Savanne"],
     hint: `Sommige ericales voelen zich thuis op de savanne.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Sheabomen", icoon: "icons/Sheabomen.png", map: "Bomen", 
         quote: `Vitellaria paradoxa is a long-lived tree of the dry savanna, deeply adapted to fire and drought
@@ -9788,6 +9893,7 @@ const combinaties = [
       ["Oerericales", "Wilgen"], ["Oerericales", "Populieren"], ["Oerericales", "Esdoorns"], ["Oerericales", "Eiken"],
       ["Oerericales", "Essen"]
     ],
+    tijd: 5_000_000,
     output: [
       { naam: "Kiwi", icoon: "icons/Kiwi.png", map: "Fruit", 
         quote: `The vine of the kiwifruit requires patience but rewards abundance
@@ -9798,6 +9904,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Water"],
     hint: `Sommige lamiden bouwen voort op hun wateropslag.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
         quote: `A ripe tomato is one of the simplest and greatest pleasures of eating
@@ -9808,6 +9915,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Berg"],
     hint: `Sommige lamiden voelen zich thuis in de bergen.`,
+    tijd: 3_000_000,
     output: [
       { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
         quote: `Oregano is the taste of the Mediterranean itself
@@ -9829,6 +9937,7 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Wind"],
+    tijd: 40_000_000,
     output: [
       { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
         quote: `The ash stands by the water and shapes the land around it
@@ -9841,6 +9950,7 @@ const combinaties = [
       ["Oerlamiden", "Ven"], ["Oerlamiden", "Moeras"]
     ],
     hint: `Sommige lamiden voelen zich thuis bij stilstaand water.`,
+    tijd: 25_000_000,
     output: [
       { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
         quote: `The ash stands by the water and shapes the land around it
@@ -9857,6 +9967,7 @@ const combinaties = [
       ["Oerlamiden", "Kust"], ["Oerlamiden", "Zout"]
     ],
     hint: `Sommige lamiden voelen zich thuis aan de kust.`,
+    tijd: 25_000_000,
     output: [
       { naam: "Olijven", icoon: "icons/Olijven.png", map: "Fruit", 
         quote: `The olive is a gift of the gods to man
@@ -9870,6 +9981,7 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Kalk"],
+    tijd: 20_000_000,
     output: [
       { naam: "Tijm", icoon: "icons/TIjm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
@@ -9880,6 +9992,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Glucose"],
     hint: `Sommige lamiden specialiseren zich in glucose.`,
+    tijd: 3_000_000,
     output: [
       { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
         quote: `The sweet potato is part of the ancient food heritage of the Andes
@@ -9902,6 +10015,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Gif"],
     hint: `Sommige lamiden kiezen voor de strategie van gif.`,
+    tijd: 3_000_000,
     output: [
       { naam: "Tabaksplanten", icoon: "icons/Tabaksplanten.png", map: "Genotwaren", 
         quote: `The herb which the inhabitants call uppowoc is of great estimation among them
@@ -9924,6 +10038,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Wortels"],
     hint: `Sommige lamiden concentreren zich op hun wortels.`,
+    tijd: 3_000_000,
     output: [
       { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
         quote: `The potato is a most valuable root for sustenance
@@ -9938,6 +10053,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Blad"],
     hint: `Sommige lamiden specialiseren zich in aromatische bladeren.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
         quote: `Fresh mint transforms the simplest dish into something alive
@@ -9960,6 +10076,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Zaadjes"],
     hint: `Sommige lamiden specialiseren zich in hun zaadjes.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Sesam", icoon: "icons/Sesam.png", map: "Zaden", 
         quote: `Sesam is one of the oldest oilseed crops known to cultivation
@@ -9974,6 +10091,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Hout"],
     hint: `Sommige lamiden staan bekend om hun bruikbaar hout.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
         quote: `Teak thrives in tropical forests where seasonal rains shape its growth
@@ -9992,6 +10110,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Bos"],
     hint: `Sommige lamiden voelen zich thuis in de bossen.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
         quote: `The ash stands by the water and shapes the land around it
@@ -10002,6 +10121,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Tropisch regenwoud"],
     hint: `Sommige lamiden voelen zich thuis in het tropisch regewnoud.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
         quote: `Teak thrives in tropical forests where seasonal rains shape its growth
@@ -10032,6 +10152,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Vlinders"],
     hint: `Sommige lamiden gaan samen voorts met de vlinders.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
         quote: `The hills were covered with lavender, stretching like a purple sea
@@ -10054,6 +10175,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Bijen"],
     hint: `Sommige lamiden gaan samen voorts met de bijtjes.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
         quote: `The hills were covered with lavender, stretching like a purple sea
@@ -10071,6 +10193,7 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Duinen"],
+    tijd: 20_000_000,
     output: [
       { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
@@ -10085,6 +10208,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Weide"],
     hint: `Sommige lamiden voelen zich thuis op de grasweides.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
         quote: `The hills were covered with lavender, stretching like a purple sea
@@ -10107,6 +10231,7 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Steppe"],
     hint: `Sommige lamiden voelen zich thuis op de steppe.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
         quote: `Sage is singularly good for the head and brain
@@ -10131,6 +10256,7 @@ const combinaties = [
       ["Oerlamiden", "Laurierbomen"], ["Oerlamiden", "Buxus"], ["Oerlamiden", "Vijgen"], ["Oerlamiden", "Acacia"],
       ["Oerlamiden", "Heide"], ["Oerlamiden", "Olijven"]
     ],
+    tijd: 40_000_000,
     output: [
       { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
         quote: `Jasmine opens in the night like a secret
@@ -10141,6 +10267,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Water"],
     hint: `Sommige campanuliden bouwen voort op hun wateropslag.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
         quote: `Celery gives depth to simple broths and stews
@@ -10159,6 +10286,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Berg"],
     hint: `Sommige campanuliden bouwen voort op hun wateropslag.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
@@ -10177,6 +10305,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Klei"],
     hint: `Sommige campanuliden doen het goed met hun poten in de klei.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
         quote: `Chamomile tea is like a small act of peace
@@ -10191,6 +10320,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Wind"],
     hint: `Sommige campanuliden verspreiden hun zaadjes via de wind.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
@@ -10203,6 +10333,7 @@ const combinaties = [
       ["Oercampanuliden", "Ven"], ["Oercampanuliden", "Moeras"]
     ],
     hint: `Sommige campanuliden voelen zich thuis bij stilstaand water`,
+    tijd: 2_000_000,
     output: [
       { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
         quote: `Celery gives depth to simple broths and stews
@@ -10213,6 +10344,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Kust"],
     hint: `Sommige campanuliden voelen zich thuis aan de kust.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
         quote: `Fennel is of great use for improving sight
@@ -10223,6 +10355,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Rivier"],
     hint: `Sommige campanuliden voelen zich thuis bij de rivier.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
         quote: `Celery gives depth to simple broths and stews
@@ -10237,6 +10370,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Glucose"],
     hint: `Sommige campanuliden specialiseren zich in de aanmaak van glucose.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
         quote: `Cherry blossoms fall — the temple bell rings in the evening wind
@@ -10259,6 +10393,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Gif"],
     hint: `Sommige campanuliden kiezen voor de strategie van gif.`,
+    tijd: 25_000_000,
     output: [
       { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
         quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
@@ -10269,6 +10404,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Wortels"],
     hint: `Sommige campanuliden specialiseren zich in hun wortels.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
         quote: `Carrots store their energy in the root, which becomes sweeter over time
@@ -10278,6 +10414,7 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Blad"],
+    tijd: 2_000_000,
     output: [
       { naam: "Sla", icoon: "icons/Sla.png", map: "Groenten", 
         quote: `A salad without lettuce is like a day without sunshine
@@ -10300,6 +10437,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Zaadjes"],
     hint: `Sommige campanuliden specialiseren zich in hun zaadjes.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
         quote: `Fennel is of great use for improving sight
@@ -10321,6 +10459,7 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Hout"],
+    tijd: 20_000_000,
     output: [
       { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
         quote: `Cherry blossoms fall — the temple bell rings in the evening wind
@@ -10331,6 +10470,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Bos"],
     hint: `Sommige campanuliden voelen zich thuis in het bos.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
         quote: `Cherry blossoms fall — the temple bell rings in the evening wind
@@ -10344,6 +10484,7 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Bloem"],
+    tijd: 2_000_000,
     output: [
       { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
         quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
@@ -10374,6 +10515,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Vlinders"],
     hint: `Sommige campanuliden kiezen hun pad met de vlinders.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
@@ -10396,6 +10538,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Bijen"],
     hint: `Sommige campanuliden kiezen het pad van de bijtjes.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
         quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
@@ -10418,6 +10561,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Weide"],
     hint: `Sommige campanuliden voelen zich thuis op de grasweides.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
@@ -10440,6 +10584,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Steppe"],
     hint: `Sommige campanuliden voelen zich thuis op de steppe.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Dille", icoon: "icons/Dille.png", map: "Smaakmakers", 
         quote: `Dill doth ease and comfort the inward parts of man
@@ -10462,6 +10607,7 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Prairie"],
     hint: `Sommige campanuliden voelen zich thuis op de prairie.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
         quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
@@ -10486,6 +10632,7 @@ const combinaties = [
   {
     input: ["Fynbos", "Oerfabiden"],
     hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Rooibos", icoon: "icons/Rooibos.png", map: "Genotwaren", 
         quote: `Rooibos is uniquely South African, shaped by the harshness of the Cederberg
@@ -10496,6 +10643,7 @@ const combinaties = [
   {
     input: ["Fynbos", "Oercampanuliden"],
     hint: `Sommige campanuliden voelen zich thuis in het fynbos.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Gerbera", icoon: "icons/Gerbera.png", map: "Bloemen", 
         quote: `The genus Gerbera produces flowers of remarkable brilliance
