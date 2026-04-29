@@ -10897,28 +10897,23 @@ function toggleSelect(el, img, side, mapNaam) {
 function matchInput(input, selected) {
   const [a, b] = selected;
 
-  function matches(rule, el) {
-    if (typeof rule === "string") {
-      if (rule.startsWith("map:")) {
-        return el.mapNaam === rule.replace("map:", "");
-      }
-      return el.naam === rule;
-    }
-    return false;
-  }
-
   const [r1, r2] = input;
 
   return (
-    (matches(r1, a) && matches(r2, b)) ||
-    (matches(r1, b) && matches(r2, a))
+    matches(r1, a) && matches(r2, b) ||
+    matches(r1, b) && matches(r2, a)
   );
 }
 
-function checkCombination() {
-  const matches = combinaties.filter(c => {
-    return c.input.some(pair => matchInput(pair, selected));
-  });
+function checkCombination() {  
+  if (selected.length < 2) return;
+  
+  const matches = combinaties.filter(c =>
+    c.input.some(set =>
+      (set[0] === selected[0].naam && set[1] === selected[1].naam) ||
+      (set[0] === selected[1].naam && set[1] === selected[0].naam)
+    )
+  );
 
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
