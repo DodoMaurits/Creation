@@ -7600,7 +7600,7 @@ const combinaties = [
     input: [
       ["Oereudicoten", "Kalk"], ["Oereudicoten", "Gif"], ["Oereudicoten", "Blad"]
     ],
-    hint: `Sommige oeudicoten kiezen voor kalk.`,
+    hint: `Sommige oereudicoten kiezen voor kalk.`,
     tijd: 80_000_000,
     output: [
       { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
