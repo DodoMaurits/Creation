@@ -9902,7 +9902,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerfagales", "Zaadjes"],
+    input: ["Oerfagales", "Bos"],
     hint: `Veel fagales voelen zich thuis in het bos en creëren tezamen grote loofbossen.`,
     tijd: 50_000_000,
     output: [
