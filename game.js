@@ -5616,7 +5616,7 @@ const combinaties = [
     input: ["Spinnen", "Glucose"],
     hint: `Geef de spin wat ze nodig heeft en ze maakt er iets moois van.`,
     output: [
-      { naam: "Zijde", icoon: "icons/Zijde.png", map: "Biologie", 
+      { naam: "Zijde", icoon: "icons/Zijde.png", map: "Materialen", 
         quote: `Silk does for the body what diamonds do for the hand
         <br><br>- Oscar de la Renta`
       }
