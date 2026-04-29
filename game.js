@@ -9014,6 +9014,10 @@ const combinaties = [
       { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
         quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
         <br><br>- Plinius de Oudere`
+      },
+      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
+        quote: `The pomegranate opens like a secret heart full of blood-red jewels
+        <br><br>- D.H. Lawrence`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -9046,6 +9050,10 @@ const combinaties = [
       },
       { naam: "Mirre", icoon: "icons/Mirre.png", map: "Genotwaren", 
         quote: `Myrrh is among the most esteemed of perfumes, used both in medicine and sacred rites
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
+        quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
         <br><br>- Plinius de Oudere`
       }
     ],
@@ -9204,6 +9212,18 @@ const combinaties = [
       { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
         <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+        quote: `Cocoa gives warmth and strength to the fatigued traveller
+        <br><br>- James Thomson`
+      },
+      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
+        quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
+        quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
+        <br><br>- V.S. Naipaul`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
