@@ -8547,7 +8547,9 @@ const combinaties = [
     }
   },
   {
-    input: ["Oerfabiden", "Rivier"],
+    input: [
+      ["Oerfabiden", "Kust"], ["Oerfabiden", "Duinen"]
+    ],
     hint: `Sommige fabiden voelen zich thuis in de duinen.`,
     tijd: 30_000_000,
     output: [
