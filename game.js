@@ -11061,32 +11061,48 @@ function toggleSelect(el, img, side, mapNaam) {
 }
 
 // ----- CHECK COMBINATIONS -----
-function matchInput(input, selected) {
-  const [a, b] = selected;
+function matchElement(rule, el) {
+  if (!rule || !el) return false;
 
-  function matches(rule, el) {
-    if (typeof rule === "string") {
-      if (rule.startsWith("map:")) {
-        return el.mapNaam === rule.replace("map:", "");
-      }
-      return el.naam === rule;
-    }
-    return false;
+  if (typeof rule !== "string") return false;
+
+  // map support
+  if (rule.startsWith("map:")) {
+    const mapNaam = rule.slice(4);
+    return (el.map || el.mapNaam) === mapNaam;
   }
 
-  const [r1, r2] = input;
+  // normal element match
+  return el.naam === rule;
+}
+
+function matchPair(set, selected) {
+  const [a, b] = selected;
 
   return (
-    (matches(r1, a) && matches(r2, b)) ||
-    (matches(r1, b) && matches(r2, a))
+    matchElement(set[0], a) && matchElement(set[1], b)
+  ) || (
+    matchElement(set[0], b) && matchElement(set[1], a)
   );
 }
 
-function checkCombination() {
-  const matches = combinaties.filter(c => {
-    return c.input.some(pair => matchInput(pair, selected));
-  });
+function normalizeInput(input) {
+  // al correct formaat
+  if (Array.isArray(input[0])) return input;
 
+  // single pair → wrap in array
+  return [input];
+}
+
+function checkCombination() {
+  if (selected.length < 2) return;
+
+  const matches = combinaties.filter(c =>
+    normalizeInput(c.input).some(set =>
+      matchPair(set, selected)
+    )
+  );
+  
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
     selected.forEach(e => e.dom.classList.remove("selected"));
