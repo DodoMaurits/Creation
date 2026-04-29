@@ -10137,6 +10137,538 @@ const combinaties = [
         <br><br>- Mark Pendergrast`
       }
     ]
+  },
+  {
+    input: ["Oerlamiden", "Hout"],
+    hint: `Sommige lamiden staan bekend om hun bruikbaar hout.`,
+    output: [
+      { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
+        quote: `Teak thrives in tropical forests where seasonal rains shape its growth
+        <br><br>- Hugh Cleghorn`
+      },
+      { naam: "Olijven", icoon: "icons/Olijven.png", map: "Fruit", 
+        quote: `The olive is a gift of the gods to man
+        <br><br>- Homeros`
+      },
+      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
+        quote: `The ash stands by the water and shapes the land around it
+        <br><br>- William Morris`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Bos"],
+    hint: `Sommige lamiden voelen zich thuis in de bossen.`,
+    output: [
+      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
+        quote: `The ash stands by the water and shapes the land around it
+        <br><br>- William Morris`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Tropisch regenwoud"],
+    hint: `Sommige lamiden voelen zich thuis in het tropisch regewnoud.`,
+    output: [
+      { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
+        quote: `Teak thrives in tropical forests where seasonal rains shape its growth
+        <br><br>- Hugh Cleghorn`
+      },
+      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
+        quote: `Coffee has shaped societies, economies, and daily habits across the globe
+        <br><br>- Mark Pendergrast`
+      },
+      { naam: "Tabaksplanten", icoon: "icons/Tabaksplanten.png", map: "Genotwaren", 
+        quote: `The herb which the inhabitants call uppowoc is of great estimation among them
+        <br><br>- Thomas Hariot`
+      },
+      { naam: "Basilicum", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
+        quote: `Without basil, Italian cooking loses its soul
+        <br><br>- Marcella Hazen`
+      },
+      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+        quote: `Jasmine opens in the night like a secret
+        <br><br>- Adonis`
+      },
+      { naam: "Aubergines", icoon: "icons/Aubergines.png", map: "Groenten", 
+        quote: `The aubergine is a vegetable which absorbs flavors like a sponge
+        <br><br>- Elizabeth David`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Vlinders"],
+    hint: `Sommige lamiden gaan samen voorts met de vlinders.`,
+    output: [
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+        quote: `The hills were covered with lavender, stretching like a purple sea
+        <br><br>- Peter Mayle`
+      },
+      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+        quote: `Jasmine opens in the night like a secret
+        <br><br>- Adonis`
+      },
+      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+        quote: `Sage is singularly good for the head and brain
+        <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+        quote: `Thyme comforts the head and strengthens the senses
+        <br><br>- William Turner`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Bijen"],
+    hint: `Sommige lamiden gaan samen voorts met de bijtjes.`,
+    output: [
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+        quote: `The hills were covered with lavender, stretching like a purple sea
+        <br><br>- Peter Mayle`
+      },
+      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+        quote: `Jasmine opens in the night like a secret
+        <br><br>- Adonis`
+      },
+      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
+        quote: `Coffee has shaped societies, economies, and daily habits across the globe
+        <br><br>- Mark Pendergrast`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Duinen"],
+    output: [
+      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+        quote: `Thyme comforts the head and strengthens the senses
+        <br><br>- William Turner`
+      },
+      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+        quote: `Oregano is the taste of the Mediterranean itself
+        <br><br>- Elizabeth David`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Weide"],
+    hint: `Sommige lamiden voelen zich thuis op de grasweides.`,
+    output: [
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+        quote: `The hills were covered with lavender, stretching like a purple sea
+        <br><br>- Peter Mayle`
+      },
+      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+        quote: `Thyme comforts the head and strengthens the senses
+        <br><br>- William Turner`
+      },
+      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+        quote: `Sage is singularly good for the head and brain
+        <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+        quote: `Oregano is the taste of the Mediterranean itself
+        <br><br>- Elizabeth David`
+      }
+    ]
+  },
+  {
+    input: ["Oerlamiden", "Steppe"],
+    hint: `Sommige lamiden voelen zich thuis op de steppe.`,
+    output: [
+      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+        quote: `Sage is singularly good for the head and brain
+        <br><br>- Nicholas Culpeper`
+      },
+      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+        quote: `Thyme comforts the head and strengthens the senses
+        <br><br>- William Turner`
+      },
+      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+        quote: `Oregano is the taste of the Mediterranean itself
+        <br><br>- Elizabeth David`
+      },
+      { naam: "Sesam", icoon: "icons/Sesam.png", map: "Zaden", 
+        quote: `Sesam is one of the oldest oilseed crops known to cultivation
+        <br><br>- George Watt`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerlamiden", "Laurierbomen"], ["Oerlamiden", "Buxus"], ["Oerlamiden", "Vijgen"], ["Oerlamiden", "Acacia"],
+      ["Oerlamiden", "Heide"], ["Oerlamiden", "Olijven"]
+    ],
+    output: [
+      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+        quote: `Jasmine opens in the night like a secret
+        <br><br>- Adonis`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Water"],
+    hint: `Sommige campanuliden bouwen voort op hun wateropslag.`,
+    output: [
+      { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
+        quote: `Celery gives depth to simple broths and stews
+        <br><br>- Elizabeth David`
+      },
+      { naam: "Sla", icoon: "icons/Sla.png", map: "Groenten", 
+        quote: `A salad without lettuce is like a day without sunshine
+        <br><br>- Jean Brillat-Savarin`
+      },
+      { naam: "Andijvie", icoon: "icons/Andijvie.png", map: "Groenten", 
+        quote: `The faint bitterness of endive sharpens the appetite
+        <br><br>- M.F.K. Fisher`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Berg"],
+    hint: `Sommige campanuliden bouwen voort op hun wateropslag.`,
+    output: [
+      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+        quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
+        <br><br>- John Burroughs`
+      },
+      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
+        quote: `The common daisy and meadow flowers spread their cheerful face
+        <br><br>- William Wordsworth`
+      },
+      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
+        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
+        <br><br>- Richard Jefferies`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Klei"],
+    hint: `Sommige campanuliden doen het goed met hun poten in de klei.`,
+    output: [
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+        quote: `Chamomile tea is like a small act of peace
+        <br><br>- M.F.K. Fisher`
+      },
+      { naam: "Goudsbloemen", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
+        quote: `The marigold opens at the sun’s coming and shuts at his going
+        <br><br>- John Gerard`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Wind"],
+    hint: `Sommige campanuliden verspreiden hun zaadjes via de wind.`,
+    output: [
+      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+        quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
+        <br><br>- John Burroughs`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oercampanuliden", "Ven"], ["Oercampanuliden", "Moeras"]
+    ],
+    hint: `Sommige campanuliden voelen zich thuis bij stilstaand water`,
+    output: [
+      { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
+        quote: `Celery gives depth to simple broths and stews
+        <br><br>- Elizabeth David`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Kust"],
+    hint: `Sommige campanuliden voelen zich thuis aan de kust.`,
+    output: [
+      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
+        quote: `Fennel is of great use for improving sight
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Rivier"],
+    hint: `Sommige campanuliden voelen zich thuis bij de rivier.`,
+    output: [
+      { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
+        quote: `Celery gives depth to simple broths and stews
+        <br><br>- Elizabeth David`
+      },
+      { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
+        quote: `Carrots store their energy in the root, which becomes sweeter over time
+        <br><br>- Harold McGee`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Glucose"],
+    hint: `Sommige campanuliden specialiseren zich in de aanmaak van glucose.`,
+    output: [
+      { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
+        quote: `Cherry blossoms fall — the temple bell rings in the evening wind
+        <br><br>- Yosa Buson`
+      },
+      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
+        quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
+        <br><br>- André Breton`
+      },
+      { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
+        quote: `Carrots store their energy in the root, which becomes sweeter over time
+        <br><br>- Harold McGee`
+      },
+      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
+        quote: `Fennel is of great use for improving sight
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Gif"],
+    hint: `Sommige campanuliden kiezen voor de strategie van gif.`,
+    output: [
+      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
+        quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
+        <br><br>- John Ruskin`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Wortels"],
+    hint: `Sommige campanuliden specialiseren zich in hun wortels.`,
+    output: [
+      { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
+        quote: `Carrots store their energy in the root, which becomes sweeter over time
+        <br><br>- Harold McGee`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Blad"],
+    output: [
+      { naam: "Sla", icoon: "icons/Sla.png", map: "Groenten", 
+        quote: `A salad without lettuce is like a day without sunshine
+        <br><br>- Jean Brillat-Savarin`
+      },
+      { naam: "Andijvie", icoon: "icons/Andijvie.png", map: "Groenten", 
+        quote: `The faint bitterness of endive sharpens the appetite
+        <br><br>- M.F.K. Fisher`
+      },
+      { naam: "Artisjokken", icoon: "icons/Artisjokken.png", map: "Groenten", 
+        quote: `The artichoke is valued for its heart, hidden beneath protective bracts
+        <br><br>- Alan Davidson`
+      },
+      { naam: "Peterselie", icoon: "icons/Peterselie.png", map: "Smaakmakers", 
+        quote: `Parsley is one of the most essential herbs in European cooking
+        <br><br>- Elizabeth David`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Zaadjes"],
+    hint: `Sommige campanuliden specialiseren zich in hun zaadjes.`,
+    output: [
+      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
+        quote: `Fennel is of great use for improving sight
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Koriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
+        quote: `Cilantro has a distinctive aroma that some people perceive as soapy
+        <br><br>- Harold McGee`
+      },
+      { naam: "Anijs", icoon: "icons/Anijs.png", map: "Smaakmakers", 
+        quote: `Anise helps ease the breath and clears the chest
+        <br><br>- Dioscorides`
+      },
+      { naam: "Komijn", icoon: "icons/Komijn.png", map: "Smaakmakers", 
+        quote: `Cumin is valued for its warming properties and strong flavor
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Hout"],
+    output: [
+      { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
+        quote: `Cherry blossoms fall — the temple bell rings in the evening wind
+        <br><br>- Yosa Buson`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Bos"],
+    hint: `Sommige campanuliden voelen zich thuis in het bos.`,
+    output: [
+      { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
+        quote: `Cherry blossoms fall — the temple bell rings in the evening wind
+        <br><br>- Yosa Buson`
+      },
+      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
+        quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
+        <br><br>- John Ruskin`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Bloem"],
+    output: [
+      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
+        quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
+        <br><br>- André Breton`
+      },
+      { naam: "Gerbera", icoon: "icons/Gerbera.png", map: "Bloemen", 
+        quote: `The genus Gerbera produces flowers of remarkable brilliance
+        <br><br>- William Aiton`
+      },
+      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
+        quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
+        <br><br>- John Ruskin`
+      },
+      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
+        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
+        <br><br>- Richard Jefferies`
+      },
+      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
+        quote: `The common daisy and meadow flowers spread their cheerful face
+        <br><br>- William Wordsworth`
+      },
+      { naam: "Goudsbloemen", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
+        quote: `The marigold opens at the sun’s coming and shuts at his going
+        <br><br>- John Gerard`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Vlinders"],
+    hint: `Sommige campanuliden kiezen hun pad met de vlinders.`,
+    output: [
+      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+        quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
+        <br><br>- John Burroughs`
+      },
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+        quote: `Chamomile tea is like a small act of peace
+        <br><br>- M.F.K. Fisher`
+      },
+      { naam: "Goudsbloemen", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
+        quote: `The marigold opens at the sun’s coming and shuts at his going
+        <br><br>- John Gerard`
+      },
+      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
+        quote: `The common daisy and meadow flowers spread their cheerful face
+        <br><br>- William Wordsworth`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Bijen"],
+    hint: `Sommige campanuliden kiezen het pad van de bijtjes.`,
+    output: [
+      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
+        quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
+        <br><br>- André Breton`
+      },
+      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+        quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
+        <br><br>- John Burroughs`
+      },
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+        quote: `Chamomile tea is like a small act of peace
+        <br><br>- M.F.K. Fisher`
+      },
+      { naam: "Koriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
+        quote: `Cilantro has a distinctive aroma that some people perceive as soapy
+        <br><br>- Harold McGee`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Weide"],
+    hint: `Sommige campanuliden voelen zich thuis op de grasweides.`,
+    output: [
+      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
+        quote: `The common daisy and meadow flowers spread their cheerful face
+        <br><br>- William Wordsworth`
+      },
+      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
+        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
+        <br><br>- Richard Jefferies`
+      },
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+        quote: `Chamomile tea is like a small act of peace
+        <br><br>- M.F.K. Fisher`
+      },
+      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+        quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
+        <br><br>- John Burroughs`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Steppe"],
+    hint: `Sommige campanuliden voelen zich thuis op de steppe.`,
+    output: [
+      { naam: "Dille", icoon: "icons/Dille.png", map: "Smaakmakers", 
+        quote: `Dill doth ease and comfort the inward parts of man
+        <br><br>- John Gerard`
+      },
+      { naam: "Anijs", icoon: "icons/Anijs.png", map: "Smaakmakers", 
+        quote: `Anise helps ease the breath and clears the chest
+        <br><br>- Dioscorides`
+      },
+      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
+        quote: `Fennel is of great use for improving sight
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Komijn", icoon: "icons/Komijn.png", map: "Smaakmakers", 
+        quote: `Cumin is valued for its warming properties and strong flavor
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Prairie"],
+    hint: `Sommige campanuliden voelen zich thuis op de prairie.`,
+    output: [
+      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
+        quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
+        <br><br>- André Breton`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Heide", "Vuur"], ["Heide", "Berg"], ["Heide", "Kust"], ["Heide", "Brand"], ["Heide", "Heuvel"], 
+      ["Heide", "Bloem"], ["Heide", "Gras"], ["Heide", "Vetplanten"], ["Heide", "Aloe Vera"], ["Heide", "Gladiolen"],
+      ["Heide", "Heide"]
+    ],
+    hint: `Het Kaapse florarijk van heidevuur en bloemen is 's werelds rijkste gebieden aan plantensoorten.`,
+    output: [
+      { naam: "Fynbos", icoon: "icons/Fynbos.png", map: "Landschap", 
+        quote: `Fynbos is not a forest or a grassland, but a world of its own
+        <br><br>- Rita Hill`
+      }
+    ]
+  },
+  {
+    input: ["Fynbos", "Oerfabiden"],
+    hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
+    output: [
+      { naam: "Rooibos", icoon: "icons/Rooibos.png", map: "Genotwaren", 
+        quote: `Rooibos is uniquely South African, shaped by the harshness of the Cederberg
+        <br><br>- Annelise le Roux`
+      }
+    ]
+  },
+  {
+    input: ["Fynbos", "Oercampanuliden"],
+    hint: `Sommige campanuliden voelen zich thuis in het fynbos.`,
+    output: [
+      { naam: "Gerbera", icoon: "icons/Gerbera.png", map: "Bloemen", 
+        quote: `The genus Gerbera produces flowers of remarkable brilliance
+        <br><br>- William Aiton`
+      }
+    ]
   }
 ];
 
