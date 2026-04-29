@@ -9569,7 +9569,7 @@ const combinaties = [
         <br><br>- John Ellis`
       },
       { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
-        quote: `“The sensitive leaves respond to touch in a manner almost animal-like
+        quote: `The sensitive leaves respond to touch in a manner almost animal-like
         <br><br>- Francis Darwin`
       }
     ],
@@ -9645,7 +9645,7 @@ const combinaties = [
         <br><br>- John Ellis`
       },
       { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
-        quote: `“The sensitive leaves respond to touch in a manner almost animal-like
+        quote: `The sensitive leaves respond to touch in a manner almost animal-like
         <br><br>- Francis Darwin`
       }
     ],
