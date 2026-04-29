@@ -2818,74 +2818,76 @@ const combinaties = [
 //------------ DOOD --------------//
   {
     input: [
-      ["Bacteriën", "Radioactiviteit"], ["Bacteriën", "IJs"], ["Bacteriën", "Gif"],
-      ["Stromatolieten", "Radioactiviteit"], ["Stromatolieten", "IJs"], ["Stromatolieten", "Gif"],
-      ["Blauwalgen", "Radioactiviteit"], ["Blauwalgen", "IJs"], ["Blauwalgen", "Gif"],
-      ["Leca", "Radioactiviteit"], ["Leca", "IJs"], ["Leca", "Gif"],
-      ["Schimmel", "Radioactiviteit"], ["Schimmel", "IJs"], ["Schimmel", "Gif"],
-      ["Parasieten", "Radioactiviteit"], ["Parasieten", "IJs"], ["Parasieten", "Gif"],
-      ["Sponzen", "Radioactiviteit"], ["Sponzen", "IJs"], ["Sponzen", "Gif"],
-      ["Archaeplastiden", "Radioactiviteit"], ["Archaeplastiden", "IJs"], ["Archaeplastiden", "Gif"],
-      ["Gist", "Radioactiviteit"], ["Gist", "IJs"], ["Gist", "Gif"],
-      ["Rode algen", "Radioactiviteit"], ["Rode algen", "IJs"], ["Rode algen", "Gif"],
-      ["Groene algen", "Radioactiviteit"], ["Groene algen", "IJs"], ["Groene algen", "Gif"],
-      ["Amoeben", "Radioactiviteit"], ["Amoeben", "IJs"], ["Amoeben", "Gif"],
-      ["Foraminiferen", "Radioactiviteit"], ["Foraminiferen", "IJs"], ["Foraminiferen", "Gif"],
-      ["Stralendiertjes", "Radioactiviteit"], ["Stralendiertjes", "IJs"], ["Stralendiertjes", "Gif"],
-      ["Oercnidaria", "Radioactiviteit"], ["Oercnidaria", "IJs"], ["Oercnidaria", "Gif"],
-      ["Oerbilateria", "Radioactiviteit"], ["Oerbilateria", "IJs"], ["Oerbilateria", "Gif"],
-      ["Roodwieren", "Radioactiviteit"], ["Roodwieren", "IJs"], ["Roodwieren", "Gif"],
-      ["Bruinwieren", "Radioactiviteit"], ["Bruinwieren", "IJs"], ["Bruinwieren", "Gif"],
-      ["Steenwortelalgen", "Radioactiviteit"], ["Steenwortelalgen", "IJs"], ["Steenwortelalgen", "Gif"],
-      ["Groenwieren", "Radioactiviteit"], ["Groenwieren", "IJs"], ["Groenwieren", "Gif"],
-      ["Kwallen", "Radioactiviteit"], ["Kwallen", "IJs"], ["Kwallen", "Gif"],
-      ["Zeeanemonen", "Radioactiviteit"], ["Zeeanemonen", "IJs"], ["Zeeanemonen", "Gif"],
-      ["Oertrochozoa", "Radioactiviteit"], ["Oertrochozoa", "IJs"], ["Oertrochozoa", "Gif"],
-      ["Wormen", "Radioactiviteit"], ["Wormen", "Gif"],
-      ["Zeesterren", "Radioactiviteit"], ["Zeesterren", "Gif"],
-      ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "IJs"], ["Lancetvisjes", "Gif"],
-      ["Agnathen", "Radioactiviteit"], ["Agnathen", "Gif"],
-      ["Oergeleedpotigen", "Radioactiviteit"], ["Oergeleedpotigen", "Gif"],
-      ["Manteldieren", "Radioactiviteit"], ["Manteldieren", "IJs"], ["Manteldieren", "Gif"],
-      ["Beerdiertjes", "Gif"],
-      ["Mos", "Radioactiviteit"], ["Mos", "IJs"], ["Mos", "Gif"],
-      ["Inktvissen", "Radioactiviteit"], ["Inktvissen", "Gif"],
-      ["Oercheliceraten", "Radioactiviteit"], ["Oercheliceraten", "Gif"],
-      ["Duizendpoten", "Radioactiviteit"], ["Duizendpoten", "Gif"],
-      ["Oerkreeftjes", "Radioactiviteit"], ["Oerkreeftjes", "Gif"],
-      ["Oerinsecten", "Radioactiviteit"], ["Oerinsecten", "Gif"],
-      ["Schorpioenen", "Gif"],
-      ["Spinnen", "Radioactiviteit"], ["Spinnen", "Gif"],
-      ["Mijten", "Radioactiviteit"], ["Mijten", "Gif"],
-      ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Gif"],
-      ["Krill", "Radioactiviteit"], ["Krill", "Gif"],
-      ["Oervaatplanten", "Radioactiviteit"], ["Oervaatplanten", "Gif"],
-      ["Korstmos", "Radioactiviteit"], ["Korstmos", "IJs"], ["Korstmos", "Gif"],
-      ["Truffels", "Radioactiviteit"], ["Truffels", "IJs"], ["Truffels", "Gif"],
-      ["Paddenstoelen", "Radioactiviteit"], ["Paddenstoelen", "IJs"], ["Paddenstoelen", "Gif"],
-      ["Oerchondrichthyes", "Radioactiviteit"], ["Oerchondrichthyes", "Gif"],
-      ["Pissebedden", "Radioactiviteit"], ["Pissebedden", "Gif"],
-      ["Garnalen", "Radioactiviteit"], ["Garnalen", "Gif"],
-      ["Kreeften", "Radioactiviteit"], ["Kreeften", "Gif"],
-      ["Krabben", "Radioactiviteit"], ["Krabben", "Gif"],
-      ["Zilvervisjes", "Radioactiviteit"], ["Zilvervisjes", "Gif"],
-      ["Haaien", "Radioactiviteit"], ["Haaien", "Gif"],
-      ["Holocefalen", "Radioactiviteit"], ["Holocefalen", "Gif"],
-      ["Varens", "Radioactiviteit"], ["Varens", "Gif"],
-      ["Oerzaadplanten", "Radioactiviteit"], ["Oerzaadplanten", "Gif"],
-      ["Oerpolyneopteren", "Radioactiviteit"], ["Oerpolyneopteren", "Gif"],
-      ["Oerhymenopteren", "Radioactiviteit"], ["Oerhymenopteren", "Gif"],
-      ["Luizen", "Radioactiviteit"], ["Luizen", "Gif"],
-      ["Kevers", "Radioactiviteit"], ["Kevers", "Gif"],
-      ["Muggen", "Radioactiviteit"], ["Muggen", "Gif"],
-      ["Vliegen", "Radioactiviteit"], ["Vliegen", "Gif"],
-      ["Vlinders", "Radioactiviteit"], ["Vlinders", "Gif"],
-      ["Krekels", "Radioactiviteit"], ["Krekels", "Gif"],
-      ["Sprinkhanen", "Radioactiviteit"], ["Sprinkhanen", "Gif"],
-      ["Wandelende takken", "Radioactiviteit"], ["Wandelende takken", "Gif"],
-      ["Kakkerlakken", "Gif"],
-      ["Termieten", "Radioactiviteit"], ["Termieten", "Gif"]
+      ["map:Pril leven", "Radioactiviteit"], ["map:Pril leven", "IJs"], ["map:Pril leven", "Gif"],
+      ["map:Vissen", "Radioactiviteit"], ["map:Vissen", "Gif"],
+      ["map:Planten", "Radioactiviteit"],
+      ["map:Smaakmakers", "Radioactiviteit"],
+      ["map:Bloemen", "Radioactiviteit"],
+      ["map:Fruit", "Radioactiviteit"],
+      ["map:Groenten", "Radioactiviteit"],
+      ["map:Granen", "Radioactiviteit"],
 
+      /* --- BIOLOGIE --- */
+      ["Weefsel", "Radioactiviteit"], 
+      ["Spieren", "Radioactiviteit"], 
+      ["Wortels", "Radioactiviteit"], ["Wortels", "Gif"], 
+      ["Blad", "Radioactiviteit"], ["Blad", "Gif"], 
+      ["Bloem", "Radioactiviteit"], ["Bloem", "Gif"],
+
+      /* --- WATERDIEREN --- */
+      ["Sponzen", "Radioactiviteit"], ["Sponzen", "Gif"], 
+      ["Kwallen", "Radioactiviteit"], ["Kwallen", "Gif"], 
+      ["Zeeanemonen", "Radioactiviteit"], ["Zeeanemonen", "Gif"], 
+      ["Wormen", "Radioactiviteit"], ["Wormen", "Gif"], 
+      ["Oertrochozoa", "Radioactiviteit"], ["Oertrochozoa", "Gif"],
+      ["Zeesterren", "Radioactiviteit"], ["Zeesterren", "Gif"], 
+      ["Manteldieren", "Radioactiviteit"], ["Manteldieren", "Gif"], 
+        ["Beerdiertjes", "Gif"], 
+      ["Inktvissen", "Radioactiviteit"], ["Inktvissen", "Gif"],
+
+      /* --- KLEIN LANDLEVEN --- */ 
+      ["Duizendpoten", "Radioactiviteit"], ["Duizendpoten", "Gif"],
+      ["Zilvervisjes", "Radioactiviteit"], ["Zilvervisjes", "Gif"],
+      ["Hooiwagens", "Radioactiviteit"], ["Hooiwagens", "Gif"], 
+      ["Spinnen", "Radioactiviteit"], ["Spinnen", "Gif"], 
+      ["Mijten", "Radioactiviteit"], ["Mijten", "Gif"], 
+      ["Teken", "Radioactiviteit"], ["Teken", "Gif"], 
+      ["Pissebedden", "Radioactiviteit"], ["Pissebedden", "Gif"], 
+      ["Oerpolyneopteren", "Radioactiviteit"], ["Oerpolyneopteren", "Gif"],
+      ["Oerhymenopteren", "Radioactiviteit"], ["Oerhymenopteren", "Gif"], 
+      ["Libellen", "Radioactiviteit"], ["Libellen", "Gif"], 
+      ["Luizen", "Radioactiviteit"], ["Luizen", "Gif"], 
+      ["Kevers", "Radioactiviteit"], ["Kevers", "Gif"], 
+      ["Muggen", "Radioactiviteit"], ["Muggen", "Gif"], 
+      ["Vliegen", "Radioactiviteit"], ["Vliegen", "Gif"],
+      ["Vlinders", "Radioactiviteit"], ["Vlinders", "Gif"], 
+      ["Krekels", "Radioactiviteit"], ["Krekels", "Gif"], 
+      ["Sprinkhanen", "Radioactiviteit"], ["Sprinkhanen", "Gif"], 
+      ["Wandelende takken", "Radioactiviteit"], ["Wandelende takken", "Gif"], 
+        ["Kakkerlakken", "Gif"], 
+      ["Termieten", "Radioactiviteit"], ["Termieten", "Gif"], 
+      ["Mieren", "Radioactiviteit"], ["Mieren", "Gif"],
+      ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
+      ["Bijen", "Radioactiviteit"], ["Bijen", "Gif"],
+      
+      /* --- GENOTWAREN --- */
+      ["Agave", "Radioactiviteit"], 
+      ["Suikerriet", "Radioactiviteit"], 
+      ["Coca", "Radioactiviteit"], 
+      ["Hop", "Radioactiviteit"], 
+      ["Theeplanten", "Radioactiviteit"], 
+      ["Lavendel", "Radioactiviteit"], 
+      ["Tabaksplanten", "Radioactiviteit"], 
+      ["Koffieplanten", "Radioactiviteit"], 
+      ["Jasmijn", "Radioactiviteit"], 
+      ["Kamille", "Radioactiviteit"],
+      
+      /* --- MATERIALEN --- */
+      ["Papyrusriet", "Radioactiviteit"],
+      ["Rotan", "Radioactiviteit"],
+      ["Bamboe", "Radioactiviteit"],
+      ["Hennep", "Radioactiviteit"],
+      ["Vlas", "Radioactiviteit"]
     ],
     hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     output: [
@@ -2902,10 +2904,48 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeslakken", "Radioactiviteit"], ["Zeeslakken", "Gif"],
+      ["map:Geleedpotigen", "Radioactiviteit"], ["map:Geleedpotigen", "Gif"], 
+      ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
+      ["map:Zoogdieren", "Radioactiviteit"], ["map:Zoogdieren", "Gif"],
+      ["map:Vogels", "Radioactiviteit"], ["map:Vogels", "Gif"],
+
+      /* --- WATERDIEREN --- */
+      ["Koraal", "Radioactiviteit"], ["Koraal", "Gif"], 
+      ["Zee-egels", "Radioactiviteit"], ["Zee-egels", "Gif"], 
+      ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
+
+      /* --- KLEIN LANDLEVEN --- */
+        ["Schorpioenen", "Gif"], 
+      ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
+      ["Salamanders", "Radioactiviteit"], ["Salamanders", "Gif"],
+      ["Kikkers", "Radioactiviteit"], ["Kikkers", "Gif"],
+      ["Padden", "Radioactiviteit"], ["Padden", "Gif"]
+    ],
+    output: [
+      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
+        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
+        we no longer exist 
+        <br><br>- Epicurus`
+      },
+      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
+        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
+        <br><br>- George Shaw`
+      },
+      { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
+        quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
+        <br><br>- Sue Monk Kidd`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Zeeslakken", "Radioactiviteit"], ["Zeeslakken", "Gif"], 
       ["Tweekleppigen", "Radioactiviteit"], ["Tweekleppigen", "Gif"],
       ["Nautilussen", "Radioactiviteit"], ["Nautilussen", "Gif"],
-      ["Slakken", "Radioactiviteit"], ["Slakken", "Gif"]
+
+      /* --- KLEIN LANDLEVEN --- */
+      ["Slakken", "Radioactiviteit"], ["Slakken", "Zout"], ["Slakken", "Steenzout"], ["Slakken", "Gif"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2925,7 +2965,14 @@ const combinaties = [
   },
   {
     input: [
-      ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"]
+      ["map:Bomen", "Radioactiviteit"],
+
+      /* --- GENOTWAREN --- */
+      ["Wierookbomen", "Radioactiviteit"], 
+      ["Mirre", "Radioactiviteit"],
+      
+      /* --- MATERIALEN --- */
+     ["Rubberbomen", "Radioactiviteit"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2940,49 +2987,6 @@ const combinaties = [
       { naam: "Hout", icoon: "icons/Hout.png", map: "Biologie", 
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
         <br><br>- Aristoteles`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Koraal", "Radioactiviteit"], ["Koraal", "Gif"],
-      ["Zee-egels", "Radioactiviteit"], ["Zee-egels", "Gif"],
-      ["Trilobieten", "Radioactiviteit"], ["Trilobieten", "Gif"],
-      ["Oerstraalvinnigen", "Radioactiviteit"], ["Oerstraalvinnigen", "Gif"],
-      ["Coelacanthen", "Radioactiviteit"], ["Coelacanthen", "Gif"],
-      ["Tiktaalik", "Radioactiviteit"], ["Tiktaalik", "Gif"],
-      ["Longvissen", "Radioactiviteit"], ["Longvissen", "Gif"],
-      ["Oerchondrostei", "Radioactiviteit"], ["Oerchondrostei", "Gif"],
-      ["Wimpelalen", "Radioactiviteit"], ["Wimpelalen", "Gif"],
-      ["Oerneopterygen", "Radioactiviteit"], ["Oerneopterygen", "Gif"],
-      ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
-      ["Salamanders", "Radioactiviteit"], ["Salamanders", "Gif"],
-      ["Kikkers", "Radioactiviteit"], ["Kikkers", "Gif"],
-      ["Padden", "Radioactiviteit"], ["Padden", "Gif"],
-      ["Oersynapsiden", "Radioactiviteit"], ["Oersynapsiden", "Gif"],
-      ["Oeranapsiden", "Radioactiviteit"], ["Oeranapsiden", "Gif"],
-      ["Oerdiapsiden", "Radioactiviteit"], ["Oerdiapsiden", "Gif"],
-      ["Pterosauriërs", "Radioactiviteit"], ["Pterosauriërs", "Gif"],
-      ["Lepidosauriërs", "Radioactiviteit"], ["Lepidosauriërs", "Gif"],
-      ["Crurotarsi", "Radioactiviteit"], ["Crurotarsi", "Gif"],
-      ["Oerdinosauriërs", "Radioactiviteit"], ["Oerdinosauriërs", "Gif"],
-      ["Schildpadden", "Radioactiviteit"], ["Schildpadden", "Gif"],
-      ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
-      ["Oercynodonten", "Radioactiviteit"], ["Oercynodonten", "Gif"]
-    ],
-    output: [
-      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
-        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
-        we no longer exist 
-        <br><br>- Epicurus`
-      },
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      },
-      { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
-        quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
-        <br><br>- Sue Monk Kidd`
       }
     ]
   },
@@ -6415,10 +6419,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Coniferen", "Coniferen"], ["Palmvarens", "Coniferen"], ["Palmvarens", "Palmvarens"], ["Ginkgo", "Coniferen"], 
-      ["Ginkgo", "Palmvarens"], ["Ginkgo", "Ginkgo"]
-    ],
+    input: ["map:Bomen", "map:Bomen"],
     hint: `Waar de bomen samenkomen...`,
     output: [
       { naam: "Bos", icoon: "icons/Bos.png", map: "Landschap", 
