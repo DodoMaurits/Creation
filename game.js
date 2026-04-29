@@ -8673,7 +8673,7 @@ const combinaties = [
     input: ["Oerfabiden", "Bos"],
     hint: `Sommige fabiden voelen zich thuis in de bossen.`,
     output: [
-      { naam: "Oerfagales", icoon: "icons/Bomen.png", map: "Planten", 
+      { naam: "Oerfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
         quote: `Oak, beech, and other timber trees form the strength of our forests and ships
         <br><br>- John Evelyn`
       },
