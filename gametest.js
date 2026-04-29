@@ -10919,13 +10919,23 @@ function matchPair(set, selected) {
   );
 }
 
+function normalizeInput(input) {
+  // al correct formaat
+  if (Array.isArray(input[0])) return input;
+
+  // single pair → wrap in array
+  return [input];
+}
+
 function checkCombination() {
   if (selected.length < 2) return;
 
   const matches = combinaties.filter(c =>
-    c.input.some(set => matchPair(set, selected))
+    normalizeInput(c.input).some(set =>
+      matchPair(set, selected)
+    )
   );
-
+  
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
     selected.forEach(e => e.dom.classList.remove("selected"));
