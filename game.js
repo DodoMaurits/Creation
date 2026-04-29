@@ -7164,6 +7164,55 @@ const combinaties = [
     }
   },
   {
+    input: ["Lepidosauriërs", "Evolutie"],
+    hint: `Vergeet de lepidosauriërs niet!`,
+    tijd: 70_000_000,
+    output: [
+      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+        quote: `The snake sheds its skin, but not its nature
+        <br><br>- Aristoteles`
+      },
+      { naam: "Gekko's", icoon: "icons/Gekko's.png", map: "Reptielen", 
+        quote: `Geckos can run up walls and across ceilings with ease, their feet equipped with millions of microscopic 
+        hairs that cling by the slightest forces
+        <br><br>- Kellar Autumn`
+      },
+      { naam: "Leguanen", icoon: "icons/Leguanen.png", map: "Reptielen", 
+        quote: `Iguanas bask for hours in the sun, conserving energy, their stillness broken only by slow, deliberate 
+        movements
+        <br><br>- David Attenborough`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Bloem", 
+        titel: "Probeer opnieuw in het Krijt",
+        tekst: `De volgorde is eerst de bloem, dan de bij.
+        <br><br>Eerst nodig: eerste bloem.`
+      }
+    }
+  },
+  {
+    input: ["Crurotarsi", "Evolutie"],
+    hint: `In het Krijt namen de crurotarsi toch wel hele bekende vormen aan.`,
+    tijd: 70_000_000,
+    output: [
+      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
+        quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
+        it beneath the water
+        <br><br>- Herodotus`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Bloem", 
+        titel: "Probeer opnieuw in het Krijt",
+        tekst: `De volgorde is eerst de bloem, dan de bij.
+        <br><br>Eerst nodig: eerste bloem.`
+      }
+    }
+  },
+  {
     input: [
       ["Bloem", "Ven"], ["Bloem", "Moeras"], ["Bloem", "Kevers"]
     ],
@@ -7631,57 +7680,6 @@ const combinaties = [
         titel: "Probeer opnieuw in het Krijt",
         tekst: `De volgorde is eerst de bloem, dan de bij.
         <br><br>Eerst nodig: eerste bloem.`
-      }
-    }
-  },
-  {
-    input: ["Lepidosauriërs", "Evolutie"],
-    hint: `Vergeet de lepidosauriërs niet!`,
-    tijd: 50_000_000,
-    output: [
-      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
-        quote: `The snake sheds its skin, but not its nature
-        <br><br>- Aristoteles`
-      },
-      { naam: "Gekko's", icoon: "icons/Gekko's.png", map: "Reptielen", 
-        quote: `Geckos can run up walls and across ceilings with ease, their feet equipped with millions of microscopic 
-        hairs that cling by the slightest forces
-        <br><br>- Kellar Autumn`
-      },
-      { naam: "Leguanen", icoon: "icons/Leguanen.png", map: "Reptielen", 
-        quote: `Iguanas bask for hours in the sun, conserving energy, their stillness broken only by slow, deliberate 
-        movements
-        <br><br>- David Attenborough`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Veel van de bekende reptielen ontstonden pas na het uitsterven van de dinosauriërs in de wereld van 
-        zoogdieren en grassen.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
-  },
-  {
-    input: ["Crurotarsi", "Evolutie"],
-    hint: `In het Krijt namen de crurotarsi toch wel hele bekende vormen aan.`,
-    tijd: 55_000_000,
-    output: [
-      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
-        quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
-        it beneath the water
-        <br><br>- Herodotus`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Veel van de bekende reptielen ontstonden pas na het uitsterven van de dinosauriërs in de wereld van 
-        zoogdieren en grassen.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
       }
     }
   },
