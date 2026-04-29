@@ -7119,6 +7119,7 @@ const combinaties = [
       ["Bloem", "Ven"], ["Bloem", "Moeras"], ["Bloem", "Kevers"]
     ],
     hint: `De oudste bloem gedijt goed in het moeras.`,
+    tijd: 125_000_000,
     output: [
       { naam: "Waterlelies", icoon: "icons/Waterlelies.png", map: "Bloemen", 
         quote: `It took me time to understand my water lilies. I had planted them for the pleasure of it; 
@@ -7132,6 +7133,7 @@ const combinaties = [
       ["Bloem", "Zaadjes"], ["Bloem", "Tropisch regenwoud"]
     ],
     hint: `De oudste bloem maakte een belangrijke ontwikkeling door in de tropen.`,
+    tijd: 100_000_000,
     output: [
       { naam: "Steranijs", icoon: "icons/Steranijs.png", map: "Smaakmakers", 
         quote: `The fruit of star anise forms a star-shaped cluster of carpels, each containing a single seed
@@ -7177,6 +7179,7 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Wind"],
     hint: `Sommige magnoliden bestuiven met de wind.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
@@ -7188,6 +7191,7 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Evolutie"],
     hint: `De kernlijn van de magnoliden is die van de magnolia.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
         quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
@@ -7199,6 +7203,7 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Blad"],
     hint: `Sommige magnoliden gaan voorts op hun geurige bladeren.`,
+    tijd: 70_000_000,
     output: [
       { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
         quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
@@ -7209,6 +7214,7 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Zaadjes"],
     hint: `Sommige magnoliden gaan voorts op hun geurige zaadjes.`,
+    tijd: 70_000_000,
     output: [
       { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
         quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
@@ -7226,6 +7232,7 @@ const combinaties = [
       ["Oermagnoliden", "Kevers"], ["Oermagnoliden", "Bloem"]
     ],
     hint: `Sommige magnoliden komen verder met de kevers.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
         quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
@@ -7241,6 +7248,7 @@ const combinaties = [
   },
   {
     input: ["Oermagnoliden", "Hout"],
+    tijd: 70_000_000,
     output: [
       { naam: "Avocado", icoon: "icons/Avocado.png", map: "Fruit", 
         quote: `The avocado is a large berry with a single seed and a soft, buttery flesh rich in oil
@@ -7265,6 +7273,7 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Bos"],
     hint: `Sommige magnoliden voelen zich van nature thuis in de bossen.`,
+    tijd: 70_000_000,
     output: [
       { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
         quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
@@ -7285,6 +7294,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Evolutie"],
     hint: `Monocotylen evolueren sprieten en verspreiden uiteindelijk over de hele wereld.`,
+    tijd: 80_000_000,
     output: [
       { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
         quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
@@ -7298,6 +7308,7 @@ const combinaties = [
       ["Oereudicoten", "Water"], ["Oereudicoten", "Woestijn"]
     ],
     hint: `Sommige eudicoten voelen zich van nature thuis in de woestijn.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Vetplanten", icoon: "icons/Vetplanten.png", map: "Planten", 
         quote: `The fleshy tissues of succulents are specialized for water storage, giving them their characteristic
@@ -7311,6 +7322,7 @@ const combinaties = [
       ["Oereudicoten", "Meer"], ["Oereudicoten", "Ven"], ["Oereudicoten", "Moeras"], ["Oereudicoten", "Kevers"]
     ],
     hint: `Sommige eudicoten voelen zich van nature thuis in stilstaand water.`,
+    tijd: 100_000_000,
     output: [
       { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
         quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
@@ -7323,6 +7335,7 @@ const combinaties = [
       ["Oereudicoten", "Wind"], ["Oereudicoten", "Hout"], ["Oereudicoten", "Rivier"], ["Oereudicoten", "Overstroming"]
     ],
     hint: `Sommige eudicoten van de rivieren bestuiven met de wind.`,
+    tijd: 115_000_000,
     output: [
       { naam: "Platanen", icoon: "icons/Platanen.png", map: "Bomen", 
         quote: `The plane tree is notable for its broad leaves and its bark, which flakes away in patches to reveal 
@@ -7336,6 +7349,7 @@ const combinaties = [
       ["Oereudicoten", "Kalk"], ["Oereudicoten", "Gif"], ["Oereudicoten", "Blad"]
     ],
     hint: `Sommige oeudicoten kiezen voor kalk.`,
+    tijd: 80_000_000,
     output: [
       { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
         quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
@@ -7346,6 +7360,7 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Evolutie"],
     hint: `Het succes van de eudicoten is te zien aan de vele vormen van evolutie.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Oerfabiden", icoon: "icons/Oerfabiden.png", map: "Planten", 
         quote: `Fabids are distinguished in part by their frequent ability to form nitrogen-fixing symbioses with bacteria
@@ -7373,6 +7388,7 @@ const combinaties = [
       ["Populieren", "Oereudicoten"], ["Eiken", "Oereudicoten"], ["Essen", "Oereudicoten"], ["Olijven", "Oereudicoten"]
     ],
     hint: `Sommige eudicoten bouwen voort op het vermeerderen van hun glucose.`,
+    tijd: 90_000_000,
     output: [
       { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
         quote: `The grapevine is a woody climber that produces berries arranged in bunches
@@ -7382,6 +7398,7 @@ const combinaties = [
   },
   {
     input: ["Oereudicoten", "Kevers"],
+    tijd: 95_000_000,
     output: [
       { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
         quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
@@ -7396,6 +7413,7 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Vlinders"],
     hint: `Sommige eudicoten kiezen voor de vlinders.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
         quote: `Carrying a poppy he passes through the quarrel
@@ -7410,6 +7428,7 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Bos"],
     hint: `Sommige eudicoten voelen zich thuis in de bossen.`,
+    tijd: 80_000_000,
     output: [
       { naam: "Platanen", icoon: "icons/Platanen.png", map: "Bomen", 
         quote: `The plane tree is notable for its broad leaves and its bark, which flakes away in patches to reveal 
@@ -7429,6 +7448,7 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Bijen"],
     hint: `Sommige eudicoten komen verder met de bijtjes.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
         quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
@@ -7449,6 +7469,7 @@ const combinaties = [
       ["Magnolia", "Oermagnoliden"], ["Laurierbomen", "Oermagnoliden"], ["Acacia", "Oermagnoliden"], 
       ["Vijgen", "Oermagnoliden"], ["Eiken", "Oermagnoliden"], ["Teak", "Oermagnoliden"]
     ],
+    tijd: 70_000_000,
     output: [
       { naam: "Peper", icoon: "icons/Peper.png", map: "Smaakmakers", 
         quote: `Black pepper has been one of the most widely traded spices in history
@@ -7494,6 +7515,7 @@ const combinaties = [
     input: [
       ["Duinen", "Oereudicoten"], ["Weide", "Oereudicoten"], ["Steppe", "Oereudicoten"], ["Prairie", "Oereudicoten"]
     ],
+    tijd: 95_000_000,
     output: [
       { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
         quote: `Carrying a poppy he passes through the quarrel
@@ -7876,7 +7898,6 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Gif"],
     hint: `Sommige monocotylen maken van gif hun strategie en redding.`,
-    tijd: 70_000_000,
     output: [
       { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
         quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
