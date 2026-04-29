@@ -7194,7 +7194,7 @@ const combinaties = [
     tijd: 95_000_000,
     output: [
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
-        quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
+        quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
         simple, elegant form
         <br><br>- Armen Takhtajan`
       }
@@ -7235,7 +7235,7 @@ const combinaties = [
     tijd: 95_000_000,
     output: [
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
-        quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
+        quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
         simple, elegant form
         <br><br>- Armen Takhtajan`
       },
@@ -7260,7 +7260,7 @@ const combinaties = [
         <br><br>- Donald Peattie`
       },
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
-        quote: `“Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
+        quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
         simple, elegant form
         <br><br>- Armen Takhtajan`
       },
@@ -7348,7 +7348,7 @@ const combinaties = [
     input: [
       ["Oereudicoten", "Kalk"], ["Oereudicoten", "Gif"], ["Oereudicoten", "Blad"]
     ],
-    hint: `Sommige oeudicoten kiezen voor kalk.`,
+    hint: `Sommige eudicoten kiezen voor kalk.`,
     tijd: 80_000_000,
     output: [
       { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
@@ -8362,7 +8362,7 @@ const combinaties = [
     output: [
       { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Granen", 
         quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
-        grass in the beginnning
+        grass in the beginning
         <br><br>- Vincent van Gogh`
       },
       { naam: "Gerst", icoon: "icons/Gerst.png", map: "Granen", 
@@ -8454,7 +8454,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerfabiden", "Meer"], ["Oerfabiden", "Vem"]
+      ["Oerfabiden", "Meer"], ["Oerfabiden", "Ven"]
     ],
     hint: `Sommige fabiden voelen zich thuis bij meertjes en vennetjes.`,
     tijd: 50_000_000,
@@ -8687,7 +8687,7 @@ const combinaties = [
         <br><br>- William Cobbett`
       },
       { naam: "Sperziebonen", icoon: "icons/Sperziebonen.png", map: "Zaden", 
-        quote: `The beans are eaten while the pods are yet tender and gree
+        quote: `The beans are eaten while the pods are yet tender and green
         <br><br>- John Gerard`
       },
       { naam: "Kidneybonen", icoon: "icons/Kidneybonen.png", map: "Zaden", 
@@ -8789,7 +8789,7 @@ const combinaties = [
         <br><br>- Sigmund Freud`
       },
       { naam: "Sperziebonen", icoon: "icons/Sperziebonen.png", map: "Zaden", 
-        quote: `The beans are eaten while the pods are yet tender and gree
+        quote: `The beans are eaten while the pods are yet tender and green
         <br><br>- John Gerard`
       },
       { naam: "Kidneybonen", icoon: "icons/Kidneybonen.png", map: "Zaden", 
@@ -9707,6 +9707,7 @@ const combinaties = [
   },
   {
     input: ["Oercaryophyllales", "Duinen"],
+    hint: `Sommige caryophyllales voelen zich thuis in de duinen.`,
     tijd: 30_000_000,
     output: [
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
@@ -9798,7 +9799,7 @@ const combinaties = [
     input: [
       ["Oerasteriden", "Bloem"], ["Oerasteriden", "Bos"]
     ],
-    hint: `Sommige asteriden volgden een aparte iljn van bekende bosbloemen.`,
+    hint: `Sommige asteriden volgen een aparte lijn van bekende bosbloemen.`,
     output: [
       { naam: "Hortensia", icoon: "icons/Hortensia.png", map: "Bloemen", 
         quote: `Hydrangeas change colour with the soil, a most curious and pleasing effect
@@ -9949,7 +9950,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerericales", "Zand"], ["Oerericales", "Duinen"], ["Oerericales", "Gras"], ["Oerericales", "Zand"]
+      ["Oerericales", "Zand"], ["Oerericales", "Duinen"], ["Oerericales", "Gras"], ["Oerericales", "Weide"]
     ],
     hint: `Sommige ericales voelen zich thuis in zand en duinen.`,
     tijd: 40_000_000,
@@ -9997,7 +9998,7 @@ const combinaties = [
     input: [
       ["Oerericales", "Gif"], ["Oerericales", "Blad"]
     ],
-    hint: `Sommige ericales kiezen voor de straetgie van het gif en blad.`,
+    hint: `Sommige ericales kiezen voor de strategie van het gif en blad.`,
     output: [
       { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
@@ -10177,7 +10178,7 @@ const combinaties = [
     input: ["Oerlamiden", "Kalk"],
     tijd: 20_000_000,
     output: [
-      { naam: "Tijm", icoon: "icons/TIjm.png", map: "Smaakmakers", 
+      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
         <br><br>- William Turner`
       }
@@ -10277,7 +10278,7 @@ const combinaties = [
         <br><br>- George Watt`
       },
       { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
-        quote: `Coffee has shaped societies, economies, and daily habits across the glob
+        quote: `Coffee has shaped societies, economies, and daily habits across the globe
         <br><br>- Mark Pendergrast`
       }
     ]
@@ -10314,7 +10315,7 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Tropisch regenwoud"],
-    hint: `Sommige lamiden voelen zich thuis in het tropisch regewnoud.`,
+    hint: `Sommige lamiden voelen zich thuis in het tropisch regenwoud.`,
     tijd: 5_000_000,
     output: [
       { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
