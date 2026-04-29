@@ -11084,7 +11084,7 @@ function matchInput(input, selected) {
 
 function checkCombination() {
   const matches = combinaties.filter(c => {
-    return matchInput(c.input, selected);
+    return c.input.some(pair => matchInput(pair, selected));
   });
 
   if (matches.length === 0) {
