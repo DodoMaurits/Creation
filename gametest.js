@@ -2685,7 +2685,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Koraal"], ["Roodwieren", "Kalk"], ["Koraal" ,"Sponzen"], ["Koraal", "Zeeanemonen"]
+      ["Koraal", "Koraal"], ["Roodwieren", "Kalk"], ["Koraal", "Sponzen"], ["Koraal", "Zeeanemonen"]
     ],
     hint: `Een onderwaterlandschap? Ik zeg meer koraal.`,
     output: [
@@ -8155,7 +8155,7 @@ const combinaties = [
         traditional practices
         <br><br>- Maud Grieve`
       },
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: " Bloemen", 
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
       }
@@ -8164,7 +8164,7 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Vliegen"],
     output: [
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: " Bloemen", 
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
       }
@@ -8232,7 +8232,7 @@ const combinaties = [
         quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
         <br><br>- Paul Allen`
       },
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: " Bloemen", 
+      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
       },
@@ -9664,7 +9664,7 @@ const combinaties = [
     hint: `In hun sappige stengels verwerkt suikerriet met behulp van de zon hun glucose tot sacharose.`,
     tijd: 4_000_000,
     output: [
-      { naam: "Suiker", icoon: "icons/Suiker.png", map: " Genotwaren", 
+      { naam: "Suiker", icoon: "icons/Suiker.png", map: "Genotwaren", 
         quote: `Sugar is a substance that has taken hold of the modern world like a drug
         <br><br>- William Dufty`
       }
