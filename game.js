@@ -2552,9 +2552,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Coniferen", "Radioactiviteit"], ["Coniferen", "Gif"],
-      ["Palmvarens", "Radioactiviteit"], ["Palmvarens", "Gif"],
-      ["Ginkgo", "Radioactiviteit"], ["Ginkgo", "Gif"]
+      ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2617,86 +2615,94 @@ const combinaties = [
   },
   {
     input: [
-      ["Bacteriën", "Vuur"], ["Bacteriën", "Lava"],
-      ["Stromatolieten", "Vuur"], ["Stromatolieten", "Lava"],
-      ["Blauwalgen", "Vuur"], ["Blauwalgen", "Lava"],
-      ["Leca", "Vuur"], ["Leca", "Lava"],
-      ["Schimmel", "Vuur"], ["Schimmel", "Lava"],
-      ["Parasieten", "Vuur"], ["Parasieten", "Lava"],
+      ["map:Pril leven", "Vuur"], ["map:Pril leven", "Lava"],
+      ["map:Vissen", "Vuur"], ["map:Vissen", "Lava"],
+      ["map:Klein landleven", "Vuur"], ["map:Klein landleven", "Lava"],
+      ["map:Planten", "Vuur"], ["map:Planten", "Lava"],
+      ["map:Smaakmakers", "Vuur"], ["map:Smaakmakers", "Lava"],
+      ["map:Bomen", "Vuur"], ["map:Bomen", "Lava"],
+      ["map:Reptielen", "Lava"], 
+      ["map:Zoogdieren", "Lava"],
+      ["map:Vogels", "Lava"],
+      ["map:Bloemen", "Vuur"], ["map:Bloemen", "Lava"],
+      ["map:Fruit", "Vuur"], ["map:Fruit", "Lava"],
+      ["map:Groenten", "Vuur"], ["map:Groenten", "Lava"],
+      ["map:Granen", "Vuur"], ["map:Granen", "Lava"],
+
+      /* --- BIOLOGIE --- */
+      ["Weefsel", "Vuur"], ["Weefsel", "Lava"],
+      ["Spieren", "Vuur"], ["Spieren", "Lava"],
+      ["Wortels", "Vuur"], ["Wortels", "Lava"],
+      ["Oog", "Vuur"], ["Oog", "Lava"],
+      ["Vleugels", "Vuur"], ["Vleugels", "Lava"],
+      ["Blad", "Vuur"], ["Blad", "Lava"],
+      ["Zaadjes", "Vuur"], ["Zaadjes", "Lava"],
+      ["Ei", "Vuur"], ["Ei", "Lava"],
+      ["Bloem", "Vuur"], ["Bloem", "Lava"],
+
+      /* --- WATERDIEREN --- */
       ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
-      ["Archaeplastiden", "Vuur"], ["Archaeplastiden", "Lava"],
-      ["Gist", "Vuur"], ["Gist", "Lava"],
-      ["Rode algen", "Vuur"], ["Rode algen", "Lava"],
-      ["Groene algen", "Vuur"], ["Groene algen", "Lava"],
-      ["Amoeben", "Vuur"], ["Amoeben", "Lava"],
-      ["Foraminiferen", "Vuur"], ["Foraminiferen", "Lava"],
-      ["Stralendiertjes", "Vuur"], ["Stralendiertjes", "Lava"],
-      ["Oercnidaria", "Vuur"], ["Oercnidaria", "Lava"],
-      ["Oerbilateria", "Vuur"], ["Oerbilateria", "Lava"],
-      ["Roodwieren", "Vuur"], ["Roodwieren", "Lava"],
-      ["Bruinwieren", "Vuur"], ["Bruinwieren", "Lava"],
-      ["Steenwortelalgen", "Vuur"], ["Steenwortelalgen", "Lava"],
-      ["Groenwieren", "Vuur"], ["Groenwieren", "Lava"],
+      ["Koraal", "Lava"], 
       ["Kwallen", "Vuur"], ["Kwallen", "Lava"],
       ["Zeeanemonen", "Vuur"], ["Zeeanemonen", "Lava"],
-      ["Oertrochozoa", "Vuur"], ["Oertrochozoa", "Lava"],
       ["Wormen", "Vuur"], ["Wormen", "Lava"],
+      ["Oertrochozoa", "Vuur"], ["Oertrochozoa", "Lava"],
       ["Zeesterren", "Vuur"], ["Zeesterren", "Lava"],
-      ["Lancetvisjes", "Vuur"], ["Lancetvisjes", "Lava"],
-      ["Agnathen", "Vuur"], ["Agnathen", "Lava"],
-      ["Oergeleedpotigen", "Vuur"], ["Oergeleedpotigen", "Lava"],
+      ["Zee-egels", "Lava"], 
       ["Manteldieren", "Vuur"], ["Manteldieren", "Lava"],
       ["Beerdiertjes", "Vuur"], ["Beerdiertjes", "Lava"],
-      ["Mos", "Vuur"], ["Mos", "Lava"],
       ["Inktvissen", "Vuur"], ["Inktvissen", "Lava"],
       ["Zeeslakken", "Vuur"], ["Zeeslakken", "Lava"],
       ["Tweekleppigen", "Vuur"], ["Tweekleppigen", "Lava"],
+      ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
+      ["Zeeschildpadden", "Vuur"],
+
+      /* --- BREIN --- */
+      ["Brein", "Vuur"], ["Brein", "Lava"],
+      
+      /* --- GELEEDPOTIGEN --- */
+      ["Oergeleedpotigen", "Vuur"], ["Oergeleedpotigen", "Lava"],
+      ["Trilobieten", "Lava"],
       ["Oercheliceraten", "Vuur"], ["Oercheliceraten", "Lava"],
-      ["Duizendpoten", "Vuur"], ["Duizendpoten", "Lava"],
       ["Oerkreeftjes", "Vuur"], ["Oerkreeftjes", "Lava"],
       ["Oerinsecten", "Vuur"], ["Oerinsecten", "Lava"],
-      ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
-      ["Slakken", "Vuur"], ["Slakken", "Lava"],
-      ["Spinnen", "Vuur"], ["Spinnen", "Lava"],
-      ["Mijten", "Vuur"], ["Mijten", "Lava"],
-      ["Zwaardstaarten", "Vuur"], ["Zwaardstaarten", "Lava"],
+      ["Zeeschorpioenen", "Lava"],
+      ["Oerspinachtigen", "Vuur"], ["Oerspinachtigen", "Lava"],
+      ["Zwaardstaarten", "Vuur"],
       ["Krill", "Vuur"], ["Krill", "Lava"],
-      ["Oervaatplanten", "Vuur"], ["Oervaatplanten", "Lava"],
-      ["Korstmos", "Vuur"], ["Korstmos", "Lava"],
-      ["Truffels", "Vuur"], ["Truffels", "Lava"],
-      ["Paddenstoelen", "Vuur"], ["Paddenstoelen", "Lava"],
-      ["Oerchondrichthyes", "Vuur"], ["Oerchondrichthyes", "Lava"],
-      ["Pissebedden", "Vuur"], ["Pissebedden", "Lava"],
+      ["Aasgarnalen", "Vuur"], ["Aasgarnalen", "Lava"],
+      ["Zeepissebedden", "Vuur"], ["Zeepissebedden", "Lava"],
+      ["Zeepokken", "Vuur"],
+      ["Vlokreeftjes", "Vuur"], ["Vlokreeftjes", "Lava"],
+      ["Oertienpotigen", "Vuur"], ["Oertienpotigen", "Lava"],
+      ["Reuzenpissebedden", "Vuur"],
       ["Garnalen", "Vuur"], ["Garnalen", "Lava"],
-      ["Kreeften", "Vuur"], ["Kreeften", "Lava"],
-      ["Krabben", "Vuur"], ["Krabben", "Lava"],
-      ["Zilvervisjes", "Vuur"], ["Zilvervisjes", "Lava"],
-      ["Haaien", "Vuur"], ["Haaien", "Lava"],
-      ["Holocefalen", "Vuur"], ["Holocefalen", "Lava"],
-      ["Varens", "Vuur"], ["Varens", "Lava"],
-      ["Oerzaadplanten", "Vuur"], ["Oerzaadplanten", "Lava"],
-      ["Oerpolyneopteren", "Vuur"], ["Oerpolyneopteren", "Lava"],
-      ["Oerhymenopteren", "Vuur"], ["Oerhymenopteren", "Lava"],
-      ["Luizen", "Vuur"], ["Luizen", "Lava"],
-      ["Kevers", "Vuur"], ["Kevers", "Lava"],
-      ["Muggen", "Vuur"], ["Muggen", "Lava"],
-      ["Vliegen", "Vuur"], ["Vliegen", "Lava"],
-      ["Vlinders", "Vuur"], ["Vlinders", "Lava"],
-      ["Coniferen", "Vuur"], ["Coniferen", "Lava"],
-      ["Palmvarens", "Vuur"], ["Palmvarens", "Lava"],
-      ["Ginkgo", "Vuur"], ["Ginkgo", "Lava"],
-      ["Krekels", "Vuur"], ["Krekels", "Lava"],
-      ["Sprinkhanen", "Vuur"], ["Sprinkhanen", "Lava"],
-      ["Wandelende takken", "Vuur"], ["Wandelende takken", "Lava"],
-      ["Kakkerlakken", "Vuur"], ["Kakkerlakken", "Lava"],
-      ["Termieten", "Vuur"], ["Termieten", "Lava"],
+      ["Kreeften", "Vuur"],
+      ["Krabben", "Vuur"],
+      ["Heremietkrabben", "Vuur"],
+      ["Waterspinnen", "Vuur"], ["Waterspinnen", "Lava"],
 
-      ["Koraal", "Lava"], ["Zee-egels", "Lava"], ["Trilobieten", "Lava"], ["Oerstraalvinnigen", "Lava"], 
-      ["Coelacanthen", "Lava"], ["Tiktaalik", "Lava"], ["Longvissen", "Lava"], ["Oerchondrostei", "Lava"],
-      ["Wimpelalen", "Lava"], ["Oerneopterygen", "Lava"], ["Oertetrapoden", "Lava"], ["Salamanders", "Lava"],
-      ["Kikkers", "Lava"], ["Padden", "Lava"], ["Oersynapsiden", "Lava"], ["Oeranapsiden", "Lava"],
-      ["Oerdiapsiden", "Lava"], ["Pterosauriërs", "Lava"], ["Lepidosauriërs", "Lava"], ["Crurotarsi", "Lava"],
-      ["Oerdinosauriërs", "Lava"], ["Schildpadden", "Lava"], ["Zeeschildpadden", "Lava"], ["Oercynodonten", "Lava"]
+      /* --- GENOTWAREN --- */
+      ["Agave", "Vuur"], ["Agave", "Lava"],
+      ["Suikerriet", "Vuur"], ["Suikerriet", "Lava"],
+      ["Coca", "Vuur"], ["Coca", "Lava"],
+      ["Hop", "Vuur"], ["Hop", "Lava"],
+      ["Wierookbomen", "Vuur"], ["Wierookbomen", "Lava"],
+      ["Mirre", "Vuur"], ["Mirre", "Lava"],
+      ["Theeplanten", "Vuur"], ["Theeplanten", "Lava"],
+      ["Lavendel", "Vuur"], ["Lavendel", "Lava"],
+      ["Tabaksplanten", "Vuur"], ["Tabaksplanten", "Lava"],
+      ["Koffieplanten", "Vuur"], ["Koffieplanten", "Lava"],
+      ["Jasmijn", "Vuur"], ["Jasmijn", "Lava"],
+      ["Kamille", "Vuur"], ["Kamille", "Lava"],
+      
+      /* --- MATERIALEN --- */
+      ["Papyrusriet", "Vuur"], ["Papyrusriet", "Lava"],
+      ["Rotan", "Vuur"], ["Rotan", "Lava"],
+      ["Bamboe", "Vuur"], ["Bamboe", "Lava"],
+      ["Hennep", "Vuur"], ["Hennep", "Lava"],
+      ["Rubberbomen", "Vuur"], ["Rubberbomen", "Lava"],
+      ["Vlas", "Vuur"], ["Vlas", "Lava"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2712,12 +2718,16 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Vuur"], ["Zee-egels", "Vuur"], ["Trilobieten", "Vuur"], ["Oerstraalvinnigen", "Vuur"], 
-      ["Coelacanthen", "Vuur"], ["Tiktaalik", "Vuur"], ["Longvissen", "Vuur"], ["Oerchondrostei", "Vuur"],
-      ["Wimpelalen", "Vuur"], ["Oerneopterygen", "Vuur"], ["Oertetrapoden", "Vuur"], ["Salamanders", "Vuur"],
-      ["Kikkers", "Vuur"], ["Padden", "Vuur"], ["Oersynapsiden", "Vuur"], ["Oeranapsiden", "Vuur"], 
-      ["Oerdiapsiden", "Vuur"], ["Pterosauriërs", "Vuur"], ["Lepidosauriërs", "Vuur"], ["Crurotarsi", "Vuur"],
-      ["Oerdinosauriërs", "Vuur"], ["Schildpadden", "Vuur"], ["Oercynodonten", "Vuur"]
+      ["map:Reptielen", "Vuur"], 
+      ["map:Zoogdieren", "Vuur"],
+      ["map:Vogels", "Vuur"],
+
+      /* --- WATERDIEREN --- */
+      ["Koraal", "Vuur"], ["Zee-egels", "Vuur"], ["Zeeschildpadden", "Vuur"],
+
+      /* --- GELEEDPOTIGEN --- */
+      ["Trilobieten", "Vuur"], ["Zeeschorpioenen", "Vuur"], ["Zwaardstaarten", "Vuur"], ["Zeepokken", "Vuur"],
+      ["Reuzenpissebedden", "Vuur"], ["Kreeften", "Vuur"], ["Krabben", "Vuur"], ["Heremietkrabben", "Vuur"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2737,22 +2747,39 @@ const combinaties = [
   },
   {
     input: [
-      ["Bacteriën", "Dood"], ["Stromatolieten", "Dood"], ["Blauwalgen", "Dood"], ["Leca", "Dood"], ["Schimmel", "Dood"], 
-      ["Parasieten", "Dood"], ["Sponzen", "Dood"], ["Archaeplastiden", "Dood"], ["Gist", "Dood"],
-      ["Rode algen", "Dood"], ["Groene algen", "Dood"], ["Amoeben", "Dood"], ["Foraminiferen", "Dood"], 
-      ["Stralendiertjes", "Dood"], ["Oercnidaria", "Dood"], ["Oerbilateria", "Dood"], ["Roodwieren", "Dood"], 
-      ["Bruinwieren", "Dood"], ["Steenwortelalgen", "Dood"], ["Groenwieren", "Dood"], ["Kwallen", "Dood"], 
-      ["Zeeanemonen", "Dood"], ["Oertrochozoa", "Dood"], ["Wormen", "Dood"], ["Zeesterren", "Dood"], 
-      ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Oergeleedpotigen", "Dood"], ["Manteldieren", "Dood"], 
-      ["Beerdiertjes", "Dood"], ["Mos", "Dood"], ["Inktvissen", "Dood"], ["Oercheliceraten", "Dood"], 
-      ["Duizendpoten", "Dood"], ["Oerkreeftjes", "Dood"], ["Oerinsecten", "Dood"], ["Schorpioenen", "Dood"], 
-      ["Spinnen", "Dood"], ["Mijten", "Dood"], ["Zwaardstaarten", "Dood"], ["Krill", "Dood"], ["Oervaatplanten", "Dood"], 
-      ["Korstmos", "Dood"], ["Truffels", "Dood"], ["Paddenstoelen", "Dood"], ["Oerchondrichthyes", "Dood"], 
-      ["Pissebedden", "Dood"], ["Garnalen", "Dood"], ["Kreeften", "Dood"], ["Krabben", "Dood"], ["Haaien", "Dood"], 
-      ["Holocefalen", "Dood"], ["Varens", "Dood"], ["Oerzaadplanten", "Dood"], ["Oerpolyneopteren", "Dood"], 
-      ["Oerhymenopteren", "Dood"], ["Luizen", "Dood"], ["Kevers", "Dood"], ["Muggen", "Dood"], ["Vliegen", "Dood"], 
-      ["Vlinders", "Dood"], ["Krekels", "Dood"], ["Sprinkhanen", "Dood"], ["Wandelende takken", "Dood"], 
-      ["Kakkerlakken", "Dood"], ["Termieten", "Dood"]
+      ["map:Pril leven", "Dood"],
+      ["map:Vissen", "Dood"],
+      ["map:Planten", "Dood"],
+      ["map:Smaakmakers", "Dood"],
+      ["map:Bloemen", "Dood"],
+      ["map:Fruit", "Dood"],
+      ["map:Groenten", "Dood"], 
+      ["map:Granen", "Dood"],
+
+      /* --- BIOLOGIE --- */
+      ["Weefsel", "Dood"], ["Spieren", "Dood"], ["Wortels", "Dood"], ["Oog", "Dood"], ["Vleugels", "Dood"], ["Blad", "Dood"], 
+      ["Zaadjes", "Dood"], ["Ei", "Dood"], ["Bloem", "Dood"],
+
+      /* --- WATERDIEREN --- */
+      ["Sponzen", "Dood"], ["Kwallen", "Dood"], ["Zeeanemonen", "Dood"], ["Wormen", "Dood"], ["Oertrochozoa", "Dood"],
+      ["Zeesterren", "Dood"], ["Manteldieren", "Dood"], ["Beerdiertjes", "Dood"], ["Inktvissen", "Dood"],
+
+      /* --- BREIN --- */
+      ["Brein", "Dood"],
+
+      /* --- KLEIN LANDLEVEN --- */
+      ["Duizendpoten", "Dood"], ["Zilvervisjes", "Dood"], ["Hooiwagens", "Dood"], ["Spinnen", "Dood"], ["Mijten", "Dood"], 
+      ["Teken", "Dood"], ["Pissebedden", "Dood"], ["Oerpolyneopteren", "Dood"], ["Oerhymenopteren", "Dood"], ["Libellen", "Dood"], 
+      ["Luizen", "Dood"], ["Kevers", "Dood"], ["Muggen", "Dood"], ["Vliegen", "Dood"], ["Vlinders", "Dood"], ["Krekels", "Dood"], 
+      ["Sprinkhanen", "Dood"], ["Wandelende takken", "Dood"], ["Kakkerlakken", "Dood"], ["Termieten", "Dood"], ["Mieren", "Dood"],
+      ["Wespen", "Dood"], ["Bijen", "Dood"],
+      
+      /* --- GENOTWAREN --- */
+      ["Agave", "Dood"], ["Suikerriet", "Dood"], ["Coca", "Dood"], ["Hop", "Dood"], ["Theeplanten", "Dood"], ["Lavendel", "Dood"], 
+      ["Tabaksplanten", "Dood"], ["Koffieplanten", "Dood"], ["Jasmijn", "Dood"], ["Kamille", "Dood"],
+      
+      /* --- MATERIALEN --- */
+      ["Papyrusriet", "Dood"], ["Rotan", "Dood"], ["Bamboe", "Dood"], ["Hennep", "Dood"], ["Vlas", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2763,12 +2790,22 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Dood"], ["Zee-egels", "Dood"], ["Trilobieten", "Dood"], ["Oerstraalvinnigen", "Dood"], 
-      ["Coelacanthen", "Dood"], ["Tiktaalik", "Dood"], ["Longvissen", "Dood"], ["Oerchondrostei", "Dood"], 
-      ["Wimpelalen", "Dood"], ["Oerneopterygen", "Dood"], ["Oertetrapoden", "Dood"], ["Salamanders", "Dood"], 
-      ["Kikkers", "Dood"], ["Padden", "Dood"], ["Oersynapsiden", "Dood"], ["Oeranapsiden", "Dood"], 
-      ["Oerdiapsiden", "Dood"], ["Pterosauriërs", "Dood"], ["Lepidosauriërs", "Dood"], ["Crurotarsi", "Dood"],
-      ["Oerdinosauriërs", "Dood"], ["Schildpadden", "Dood"], ["Zeeschildpadden", "Dood"], ["Oercynodonten", "Dood"]
+      ["map:Geleedpotigen", "Dood"], 
+      ["map:Reptielen", "Dood"], 
+      ["map:Zoogdieren", "Dood"],
+      ["map:Vogels", "Dood"],
+
+      /* --- WATERDIEREN --- */
+      ["Koraal", "Dood"], 
+      ["Zee-egels", "Dood"], 
+      ["Zeeschildpadden", "Dood"],
+
+      /* --- KLEIN LANDLEVEN --- */
+      ["Schorpioenen", "Dood"], 
+      ["Oertetrapoden", "Dood"],
+      ["Salamanders", "Dood"],
+      ["Kikkers", "Dood"],
+      ["Padden", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2783,7 +2820,13 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"], ["Slakken", "Dood"]
+      /* --- WATERDIEREN --- */
+      ["Zeeslakken", "Dood"],
+      ["Tweekleppigen", "Dood"],
+      ["Nautilussen", "Dood"],
+
+      /* --- KLEIN LANDLEVEN --- */
+      ["Slakken", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2798,7 +2841,13 @@ const combinaties = [
   },
   {
     input: [
-      ["Coniferen", "Dood"], ["Palmvarens", "Dood"], ["Ginkgo", "Dood"]
+      ["map:Bomen", "Dood"],
+
+      /* --- GENOTWAREN --- */
+      ["Wierookbomen", "Dood"], ["Mirre", "Dood"],
+      
+      /* --- MATERIALEN --- */
+     ["Rubberbomen", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
