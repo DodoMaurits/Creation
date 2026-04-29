@@ -7759,7 +7759,7 @@ const combinaties = [
         single towering flower stalk
         <br><br>- Armen Takhtajan`
       },
-      { naam: "Aloe Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+      { naam: "Aloë Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
         quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
         <br><br>- James Duke`
       }
@@ -7822,7 +7822,7 @@ const combinaties = [
         single towering flower stalk
         <br><br>- Armen Takhtajan`
       },
-      { naam: "Aloe Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+      { naam: "Aloë Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
         quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
         <br><br>- James Duke`
       }
@@ -7846,7 +7846,7 @@ const combinaties = [
         single towering flower stalk
         <br><br>- Armen Takhtajan`
       },
-      { naam: "Aloe Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+      { naam: "Aloë Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
         quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
         <br><br>- James Duke`
       }
