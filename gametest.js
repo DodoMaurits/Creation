@@ -2231,13 +2231,12 @@ const combinaties = [
       ["Bruinwieren", "Ster"], ["Bruinwieren", "Licht"],
       ["Steenwortelalgen", "Ster"], ["Steenwortelalgen", "Licht"],
       ["Groenwieren", "Ster"], ["Groenwieren", "Licht"],
-      ["Mos", "Ster"], ["Mos", "Licht"],
-      ["Oervaatplanten", "Ster"], ["Oervaatplanten", "Licht"],
-      ["Varens", "Ster"], ["Varens", "Licht"],
-      ["Oerzaadplanten", "Ster"], ["Oerzaadplanten", "Licht"],
-      ["Coniferen", "Ster"], ["Coniferen", "Licht"],
-      ["Palmvarens", "Ster"], ["Palmvarens", "Licht"],
-      ["Ginkgo", "Ster"], ["Ginkgo", "Licht"]
+      ["map:Planten", "Ster"], ["map:Planten", "Licht"],
+      ["map:Bomen", "Ster"], ["map:Bomen", "Licht"],
+      ["map:Bloemen", "Ster"], ["map:Bloemen", "Licht"],
+      ["map:Fruit", "Ster"], ["map:Fruit", "Licht"],
+      ["map:Groenten", "Ster"], ["map:Groenten", "Licht"],
+      ["map:Granen", "Ster"], ["map:Granen", "Licht"]
     ],
     hint: `Het regent zonnestralen en dus regent het voedsel voor archaeplastiden.`,
     output: [
@@ -10895,16 +10894,30 @@ function toggleSelect(el, img, side, mapNaam) {
 }
 
 // ----- CHECK COMBINATIONS -----
-function checkCombination() {
-  const [a, b] = selected.map(e => e.naam);
+function matchInput(input, selected) {
+  const [a, b] = selected;
 
-  const matches = combinaties.filter(c => {
-    if (typeof c.input[0] === "string") {
-      return (c.input[0] === a && c.input[1] === b) || (c.input[0] === b && c.input[1] === a);
+  function matches(rule, el) {
+    if (typeof rule === "string") {
+      if (rule.startsWith("map:")) {
+        return el.mapNaam === rule.replace("map:", "");
+      }
+      return el.naam === rule;
     }
-    return c.input.some(set =>
-      (set[0] === a && set[1] === b) || (set[0] === b && set[1] === a)
-    );
+    return false;
+  }
+
+  const [r1, r2] = input;
+
+  return (
+    (matches(r1, a) && matches(r2, b)) ||
+    (matches(r1, b) && matches(r2, a))
+  );
+}
+
+function checkCombination() {
+  const matches = combinaties.filter(c => {
+    return matchInput(c.input, selected);
   });
 
   if (matches.length === 0) {
