@@ -7812,7 +7812,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oermonocotylen", "Agave"], ["Oermonocotylen", "Aloe Vera"]
+      ["Oermonocotylen", "Woestijn"], ["Oermonocotylen", "Blad"]
     ],
     hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
     tijd: 40_000_000,
@@ -10812,7 +10812,7 @@ const combinaties = [
   {
     input: [
       ["Heide", "Vuur"], ["Heide", "Berg"], ["Heide", "Kust"], ["Heide", "Brand"], ["Heide", "Heuvel"], 
-      ["Heide", "Bloem"], ["Heide", "Gras"], ["Heide", "Vetplanten"], ["Heide", "Aloe Vera"], ["Heide", "Gladiolen"],
+      ["Heide", "Bloem"], ["Heide", "Gras"], ["Heide", "Vetplanten"], ["Heide", "Aloë Vera"], ["Heide", "Gladiolen"],
       ["Heide", "Heide"]
     ],
     hint: `Het Kaapse florarijk van heidevuur en bloemen is 's werelds rijkste gebieden aan plantensoorten.`,
