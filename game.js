@@ -9022,27 +9022,6 @@ const combinaties = [
     }
   },
   {
-    input: [
-      ["Oermalviden", "Berg"], ["Oermalviden", "Steppe"]
-    ],
-    hint: `Sommige malviden voelen zich thuis op bergen en steppes.`,
-    tijd: 15_000_000,
-    output: [
-      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
-        quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
-        <br><br>- Plinius de Oudere`
-      },
-      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
-        quote: `The pomegranate opens like a secret heart full of blood-red jewels
-        <br><br>- D.H. Lawrence`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: ["Oermalviden", "Zwavel"],
     hint: `Sommige malviden verleggen de focus naar zwavel.`,
     tijd: 30_000_000,
