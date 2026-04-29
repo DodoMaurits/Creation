@@ -10894,15 +10894,15 @@ function toggleSelect(el, img, side, mapNaam) {
 }
 
 // ----- CHECK COMBINATIONS -----
-function matchInput(input, selected) {
-  const [a, b] = selected;
+function matches(rule, el) {
+  if (typeof rule !== "string") return false;
 
-  const [r1, r2] = input;
+  if (rule.startsWith("map:")) {
+    const mapNaam = rule.slice(4);
+    return el.mapNaam === mapNaam || el.map === mapNaam;
+  }
 
-  return (
-    matches(r1, a) && matches(r2, b) ||
-    matches(r1, b) && matches(r2, a)
-  );
+  return el.naam === rule;
 }
 
 function checkCombination() {  
@@ -10910,8 +10910,7 @@ function checkCombination() {
   
   const matches = combinaties.filter(c =>
     c.input.some(set =>
-      (set[0] === selected[0].naam && set[1] === selected[1].naam) ||
-      (set[0] === selected[1].naam && set[1] === selected[0].naam)
+      matchInput(set, selected)
     )
   );
 
