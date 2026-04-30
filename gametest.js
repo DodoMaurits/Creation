@@ -8574,7 +8574,7 @@ const combinaties = [
     input: ["Oerfabiden", "Zand"],
     tijd: 20_000_000,
     output: [
-      { naam: "Acacia", icoon: "icons/Acacia.png", map: "Zaden", 
+      { naam: "Acacia", icoon: "icons/Acacia.png", map: "Bomen", 
         quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
         <br><br>- Henry Stanley`
       },
@@ -8950,7 +8950,7 @@ const combinaties = [
     hint: `Sommige fabiden voelen zich thuis in de savanne.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Acacia", icoon: "icons/Acacia.png", map: "Zaden", 
+      { naam: "Acacia", icoon: "icons/Acacia.png", map: "Bomen", 
         quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
         <br><br>- Henry Stanley`
       },
