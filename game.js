@@ -10554,7 +10554,7 @@ const combinaties = [
     hint: `Sommige campanuliden doen het goed met hun poten in de klei.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
@@ -10768,7 +10768,7 @@ const combinaties = [
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
       },
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
@@ -10795,7 +10795,7 @@ const combinaties = [
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
       },
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
@@ -10818,7 +10818,7 @@ const combinaties = [
         quote: `The ox-eye daisy fills the summer fields with a quiet brightness
         <br><br>- Richard Jefferies`
       },
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Bloemen", 
+      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
