@@ -286,7 +286,9 @@ const combinaties = [
   {
     input: [
       ["Asteroïden", "Planeet"], ["Asteroïden", "De Aarde"], ["Asteroïden", "Mars"], 
-      ["Asteroïden", "Venus"], ["Asteroïden", "Mercurius"], ["Asteroïden", "De Maan"]
+      ["Asteroïden", "Venus"], ["Asteroïden", "Mercurius"], ["Asteroïden", "De Maan"],
+      ["Planeet", "Planeet"], ["Planeet", "Mars"], ["Planeet", "Venus"], 
+      ["Planeet", "Mercurius"], ["Planeet", "De Maan"]
     ],
     hint: `Wow.. een spectaculaire botsing maakt alles heet en vloeibaar...`,
     output: [
