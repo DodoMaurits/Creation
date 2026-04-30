@@ -2613,7 +2613,7 @@ const combinaties = [
         quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
         <br><br>- George Shaw`
       },
-      { naam: "Hout", icoon: "icons/Hout.png", map: "Biologie", 
+      { naam: "Hout", icoon: "icons/Hout.png", map: "Materialen", 
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
         <br><br>- Aristoteles`
       }
@@ -2860,7 +2860,7 @@ const combinaties = [
         quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
         <br><br>- George Shaw`
       },
-      { naam: "Hout", icoon: "icons/Hout.png", map: "Biologie", 
+      { naam: "Hout", icoon: "icons/Hout.png", map: "Materialen", 
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
         <br><br>- Aristoteles`
       }
@@ -5995,7 +5995,7 @@ const combinaties = [
     input: ["Oerzaadplanten", "Evolutie"],
     hint: `Zaadjes brengen planten in drogere gebieden, waar ze bomen vormen.`,
     output: [
-      { naam: "Hout", icoon: "icons/Hout.png", map: "Biologie", 
+      { naam: "Hout", icoon: "icons/Hout.png", map: "Materialen", 
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
         <br><br>- Aristoteles`
       },
