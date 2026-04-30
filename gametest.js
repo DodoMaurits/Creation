@@ -272,7 +272,7 @@ const mappen = [
       { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png" },
       { naam: "Longvissen", icoon: "icons/Longvissen.png" },
       { naam: "Haaien", icoon: "icons/Haaien.png" },
-      { naam: "Holocefalen", icoon: "icons/Holocefalen.png" },
+      { naam: "Spookhaaien", icoon: "icons/Spookhaaien.png" },
       { naam: "Oerchondrostei", icoon: "icons/Oerchondrostei.png" },
       { naam: "Wimpelalen", icoon: "icons/Wimpelalen.png" },
       { naam: "Oerneopterygen", icoon: "icons/Oerneopterygen.png" }
@@ -3594,7 +3594,7 @@ const combinaties = [
   {
     input: [
       ["Coelacanthen", "Zenuwen"], ["Tiktaalik", "Zenuwen"], ["Longvissen", "Zenuwen"], ["Haaien", "Zenuwen"],
-      ["Holocefalen", "Zenuwen"], ["Wimpelalen", "Zenuwen"], ["Oerneopterygen", "Zenuwen"], ["Kevers", "Zenuwen"],
+      ["Spookhaaien", "Zenuwen"], ["Wimpelalen", "Zenuwen"], ["Oerneopterygen", "Zenuwen"], ["Kevers", "Zenuwen"],
       ["Muggen", "Zenuwen"], ["Vliegen", "Zenuwen"], ["Vlinders", "Zenuwen"], ["Oertetrapoden", "Zenuwen"],
       ["Salamanders", "Zenuwen"], ["Kikkers", "Zenuwen"], ["Padden", "Zenuwen"], ["Oersynapsiden", "Zenuwen"],
       ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Sprinkhanen", "Zenuwen"], ["Pterosauriërs", "Zenuwen"],
@@ -3656,7 +3656,7 @@ const combinaties = [
       ["Tiktaalik", "Storm"], ["Tiktaalik", "Orkaan"], ["Tiktaalik", "Pijn"],
       ["Longvissen", "Storm"], ["Longvissen", "Orkaan"], ["Longvissen", "Pijn"],
       ["Haaien", "Storm"], ["Haaien", "Orkaan"], ["Haaien", "Pijn"],
-      ["Holocefalen", "Storm"], ["Holocefalen", "Orkaan"], ["Holocefalen", "Pijn"],
+      ["Spookhaaien", "Storm"], ["Spookhaaien", "Orkaan"], ["Spookhaaien", "Pijn"],
       ["Oerchondrostei", "Storm"], ["Oerchondrostei", "Orkaan"], ["Oerchondrostei", "Pijn"],
       ["Wimpelalen", "Storm"], ["Wimpelalen", "Orkaan"], ["Wimpelalen", "Pijn"],
       ["Oerneopterygen", "Storm"], ["Oerneopterygen", "Orkaan"], ["Oerneopterygen", "Pijn"],
@@ -3726,7 +3726,7 @@ const combinaties = [
       ["Tiktaalik", "Bacteriën"], ["Tiktaalik", "Virus"], ["Tiktaalik", "Schimmel"], ["Tiktaalik", "Parasieten"],
       ["Longvissen", "Bacteriën"], ["Longvissen", "Virus"], ["Longvissen", "Schimmel"], ["Longvissen", "Parasieten"],
       ["Haaien", "Bacteriën"], ["Haaien", "Virus"], ["Haaien", "Schimmel"], ["Haaien", "Parasieten"],
-      ["Holocefalen", "Bacteriën"], ["Holocefalen", "Virus"], ["Holocefalen", "Schimmel"], ["Holocefalen", "Parasieten"],
+      ["Spookhaaien", "Bacteriën"], ["Spookhaaien", "Virus"], ["Spookhaaien", "Schimmel"], ["Spookhaaien", "Parasieten"],
       ["Oerchondrostei", "Bacteriën"], ["Oerchondrostei", "Virus"], ["Oerchondrostei", "Schimmel"], 
       ["Oerchondrostei", "Parasieten"],
       ["Wimpelalen", "Bacteriën"], ["Wimpelalen", "Virus"], ["Wimpelalen", "Schimmel"], 
@@ -3775,7 +3775,7 @@ const combinaties = [
       ["Zwaardstaarten", "Zwaardstaarten"], ["Krill", "Krill"], ["Oerchondrichthyes", "Oerchondrichthyes"], 
       ["Oerstraalvinnigen", "Oerstraalvinnigen"], ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], 
       ["Longvissen", "Longvissen"], ["Pissebedden", "Pissebedden"], ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], 
-      ["Krabben", "Krabben"], ["Zilvervisjes", "Zilvervisjes"], ["Holocefalen", "Holocefalen"], 
+      ["Krabben", "Krabben"], ["Zilvervisjes", "Zilvervisjes"], ["Spookhaaien", "Spookhaaien"], 
       ["Oerchondrostei", "Oerchondrostei"], ["Wimpelalen", "Wimpelalen"], ["Oerneopterygen", "Oerneopterygen"], 
       ["Oerpolyneopteren", "Oerpolyneopteren"], ["Oerhymenopteren", "Oerhymenopteren"], ["Luizen", "Luizen"], 
       ["Kevers", "Kevers"], ["Muggen", "Muggen"], ["Vliegen", "Vliegen"], ["Vlinders", "Vlinders"], 
@@ -3862,7 +3862,7 @@ const combinaties = [
       ["Tiktaalik", "Licht"], ["Tiktaalik", "Kleur"],
       ["Longvissen", "Licht"], ["Longvissen", "Kleur"],
       ["Haaien", "Licht"], ["Haaien", "Kleur"],
-      ["Holocefalen", "Licht"], ["Holocefalen", "Kleur"],
+      ["Spookhaaien", "Licht"], ["Spookhaaien", "Kleur"],
       ["Oerchondrostei", "Licht"], ["Oerchondrostei", "Kleur"],
       ["Wimpelalen", "Licht"], ["Wimpelalen", "Kleur"],
       ["Oerneopterygen", "Licht"], ["Oerneopterygen", "Kleur"],
@@ -5489,7 +5489,7 @@ const combinaties = [
         in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
         <br><br>- Sylvia Earle`
       },
-      { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
+      { naam: "Spookhaaien", icoon: "icons/Spookhaaien.png", map: "Vissen", 
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       }
@@ -5522,7 +5522,7 @@ const combinaties = [
     input: [
       ["Haaien", "Agnathen"], ["Haaien", "Inktvissen"], ["Haaien", "Zwaardstaarten"], ["Haaien", "Oerchondrichthyes"], 
       ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Coelacanthen"], ["Haaien", "Tiktaalik"], ["Haaien", "Longvissen"], 
-      ["Haaien", "Holocefalen"], ["Haaien", "Oerchondrostei"], ["Haaien", "Wimpelalen"], ["Haaien", "Oerneopterygen"], 
+      ["Haaien", "Spookhaaien"], ["Haaien", "Oerchondrostei"], ["Haaien", "Wimpelalen"], ["Haaien", "Oerneopterygen"], 
       ["Haaien", "Oertetrapoden"], ["Haaien", "Salamanders"], ["Haaien", "Kikkers"], ["Haaien", "Padden"], 
       ["Haaien", "Oersynapsiden"], ["Haaien", "Oeranapsiden"], ["Haaien", "Oerdiapsiden"], ["Haaien", "Lepidosauriërs"], 
       ["Haaien", "Crurotarsi"], ["Haaien", "Oerdinosauriërs"], ["Haaien", "Schildpadden"], ["Haaien", "Zeeschildpadden"]
@@ -5606,11 +5606,11 @@ const combinaties = [
   },
   {
     input: [
-      ["Holocefalen", "Wormen"], ["Holocefalen", "Trilobieten"], ["Holocefalen", "Oerkreeftjes"], 
-      ["Holocefalen", "Garnalen"], ["Holocefalen", "Krill"], ["Holocefalen", "Kreeften"], ["Holocefalen", "Krabben"]
+      ["Spookhaaien", "Wormen"], ["Spookhaaien", "Trilobieten"], ["Spookhaaien", "Oerkreeftjes"], 
+      ["Spookhaaien", "Garnalen"], ["Spookhaaien", "Krill"], ["Spookhaaien", "Kreeften"], ["Spookhaaien", "Krabben"]
     ],
     output: [
-      { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
+      { naam: "Spookhaaien", icoon: "icons/Spookhaaien.png", map: "Vissen", 
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       },
@@ -5627,10 +5627,10 @@ const combinaties = [
   },
   {
     input: [
-      ["Holocefalen", "Zeeslakken"], ["Holocefalen", "Tweekleppigen"]
+      ["Spookhaaien", "Zeeslakken"], ["Spookhaaien", "Tweekleppigen"]
     ],
     output: [
-      { naam: "Holocefalen", icoon: "icons/Holocefalen.png", map: "Vissen", 
+      { naam: "Spookhaaien", icoon: "icons/Spookhaaien.png", map: "Vissen", 
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       },
