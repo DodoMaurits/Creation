@@ -10502,6 +10502,7 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Blad"],
+    hint: `Sommige campanuliden specialiseren zich in hun bladeren.`,
     tijd: 2_000_000,
     output: [
       { naam: "Sla", icoon: "icons/Sla.png", map: "Groenten", 
