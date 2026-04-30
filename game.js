@@ -9943,7 +9943,7 @@ const combinaties = [
         quote: `The hazel is the tree of wisdom and poetic inspiration
         <br><br>- Robert Graves`
       },
-      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Bomen", 
+      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Zaden", 
         quote: `Under the spreading chestnut tree, I sold you and you sold me
         <br><br>- George Orwell`
       },
@@ -9970,7 +9970,7 @@ const combinaties = [
         quote: `The mighty oak was once a little nut
         <br><br>- Alfred Tennyson`
       },
-      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Bomen", 
+      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Zaden", 
         quote: `Under the spreading chestnut tree, I sold you and you sold me
         <br><br>- George Orwell`
       },
