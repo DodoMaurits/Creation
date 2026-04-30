@@ -9219,7 +9219,7 @@ const combinaties = [
     input: ["Oermalviden", "Zaadjes"],
     tijd: 10_000_000,
     output: [
-      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
+      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
         <br><br>- Nicholas Culpeper`
       },
@@ -9414,7 +9414,7 @@ const combinaties = [
         quote: `Beneath the linden walks a gentler air, where thought may rest
         <br><br>- Alexander Pope`
       },
-      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
+      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
         <br><br>- Nicholas Culpeper`
       },
@@ -9468,7 +9468,7 @@ const combinaties = [
         quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
         <br><br>- John Gerard`
       },
-      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Zaden", 
+      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
         <br><br>- Nicholas Culpeper`
       },
