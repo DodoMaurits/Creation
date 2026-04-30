@@ -6217,7 +6217,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Tiktaalik", "Evolutie"],
+    input: [
+      ["Tiktaalik", "Evolutie"], ["Tiktaalik", "Aarde"], ["Tiktaalik", "Moeras"], ["Tiktaalik", "Ven"], 
+      ["Tiktaalik", "Kust"], ["Tiktaalik", "Strand"], ["Tiktaalik", "Zand"]
+    ],
     hint: `De ozonlaag, kleine insecten, planten.. alle ingrediënten zijn er voor de tiktaalik om het land op te gaan.`,
     output: [
       { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
