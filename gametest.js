@@ -7922,7 +7922,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerstraalvinnigen", "Ven"],
+    input: [
+      ["Oerstraalvinnigen", "Ven"], ["Oerstraalvinnigen", "Kroos"], ["Oerstraalvinnigen", "Waterriet"]
+    ],
     hint: `Sommige straalvinnigen voelen zich thuis in de troebele vennetjes.`,
     tijd: 10_000_000,
     output: [
