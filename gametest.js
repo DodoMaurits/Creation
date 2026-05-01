@@ -32,6 +32,7 @@ const mappen = [
       { naam: "Radioactiviteit", icoon: "icons/Radioactiviteit.png" },
       { naam: "Druk", icoon: "icons/Druk.png" },
       { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png" },
+      { naam: "Aardbeving", icoon: "icons/Aardbeving.png" },
       { naam: "Magnetisme", icoon: "icons/Magnetisme.png" },
       { naam: "Leven", icoon: "icons/Leven.png" },
       { naam: "Dood", icoon: "icons/Dood.png" }
@@ -1005,6 +1006,17 @@ const combinaties = [
         quote: `Sulfur is essential for life, woven into the very proteins that make metabolism 
         — and thus existence — possible
         <br><br>- Isaac Asimov`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Vulkaan", "Platentektoniek"], ["Berg", "Platentektoniek"]
+    ],
+    output: [
+      { naam: "Aardbeving", icoon: "icons/Aardbeving.png", map: "Krachten", 
+        quote: `An earthquake achieves what the law promises but does not in practice maintain - the equality of all men
+        <br><br>- Ignazio Silone`
       }
     ]
   },
