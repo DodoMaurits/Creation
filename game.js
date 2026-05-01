@@ -623,6 +623,17 @@ const combinaties = [
   },
   {
     input: [
+      ["Vulkaan", "Platentektoniek"], ["Berg", "Platentektoniek"]
+    ],
+    output: [
+      { naam: "Aardbeving", icoon: "icons/Aardbeving.png", map: "Krachten", 
+        quote: `An earthquake achieves what the law promises but does not in practice maintain - the equality of all men
+        <br><br>- Ignazio Silone`
+      }
+    ]
+  },
+  {
+    input: [
       ["Magmadamp", "Kou"], ["Regen", "Magmadamp"]
     ],
     hint: `Het neerregenen van magmadamp is een scheikundig feestje...`,
