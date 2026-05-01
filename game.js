@@ -7626,26 +7626,6 @@ const combinaties = [
     }
   },
   {
-    input: ["Oerstraalvinnigen", "Elektriciteit"],
-    hint: `Sommige straalvinnigen gebruikt elektriciteit om te navigeren en jagen.`,
-    tijd: 20_000_000,
-    output: [
-      { naam: "Elektrische paling", icoon: "icons/Elektrische paling.png", map: "Vissen", 
-        quote: `The electric eel generates powerful discharges, using electricity both to navigate and to subdue its prey 
-        in the dark waters it inhabits
-        <br><br>- Kenneth Catania`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
-  },
-  {
     input: [
       ["Oerstraalvinnigen", "IJs"], ["Oerstraalvinnigen", "Poolgebied"]
     ],
@@ -8134,11 +8114,6 @@ const combinaties = [
         quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome predators of
         popular imagination
         <br><br>- Herbert Axelrod`
-      },
-      { naam: "Elektrische paling", icoon: "icons/Elektrische paling.png", map: "Vissen", 
-        quote: `The electric eel generates powerful discharges, using electricity both to navigate and to subdue its prey 
-        in the dark waters it inhabits
-        <br><br>- Kenneth Catania`
       }
     ],
     uitleg: {
