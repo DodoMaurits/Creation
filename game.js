@@ -7006,6 +7006,28 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Oerstraalvinnigen", "Druk"], ["Oerstraalvinnigen", "Bacteriën"]
+    ],
+    hint: `Onder grote druk presteren sommige straalvinnigen het best.`,
+    tijd: 100_000_000,
+    output: [
+      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+        quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
+        a silent hunter of the ocean floor
+        <br><br>- David Attenborough`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Bloem", 
+        titel: "Probeer opnieuw in het Krijt",
+        tekst: `De volgorde is eerst de bloem, dan de bij.
+        <br><br>Eerst nodig: eerste bloem.`
+      }
+    }
+  },
+  {
     input: ["Oerhymenopteren", "Evolutie"],
     hint: `Vliesvleugelige insecten hebben nu vrij spel dankzij de bloemmetjes van het Krijt.`,
     tijd: 120_000_000,
@@ -7552,6 +7574,577 @@ const combinaties = [
         titel: "Probeer opnieuw in het Krijt",
         tekst: `De volgorde is eerst de bloem, dan de bij.
         <br><br>Eerst nodig: eerste bloem.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Agnathen", "Lucht"], ["Agnathen", "Oceaan"], ["Vleugels", "Agnathen"]
+    ],
+    hint: `Geef botloze agnathen vleugels en majestueuze vissen zullen zweven in en boven de oceaan.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Manta", icoon: "icons/Manta.png", map: "Vissen", 
+        quote: `Watching a manta ray glide past is like witnessing a bird in flight beneath the sea
+        <br><br>- Andrea Marshall`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Kou"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
+        rivers of their birth
+        <br><br>- Colin Braithwaite`
+      },
+      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
+        quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
+        <br><br>- Hugh Falkus`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Elektriciteit"],
+    hint: `Sommige straalvinnigen gebruikt elektriciteit om te navigeren en jagen.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Elektrische paling", icoon: "icons/Elektrische paling.png", map: "Vissen", 
+        quote: `The electric eel generates powerful discharges, using electricity both to navigate and to subdue its prey 
+        in the dark waters it inhabits
+        <br><br>- Kenneth Catania`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "IJs"], ["Oerstraalvinnigen", "Poolgebied"]
+    ],
+    hint: `Sommige straalvinnigen voelen zich thuis in de arctische wateren.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+        quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
+        a cornerstone of marine ecosystems
+        <br><br>- Daniel Pauly`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "Ster"], ["Oerstraalvinnigen", "Licht"], ["Oerstraalvinnigen", "De Maan"]
+    ],
+    hint: `Sommige straalvinnigen houden van zonnebaden aan het wateroppervlak.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Maanvissen", icoon: "icons/Maanvissen.png", map: "Vissen", 
+        quote: `Mola mola appears almost otherworldly, a giant, flattened fish that seems more like a drifting fragment of the sea 
+        itself than a conventional animal
+        <br><br>- Bruce Collette`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Berg"],
+    hint: `Sommige straalvinnigen voelen zich thuis in bergstromen en beekjes.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+        quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
+        beneath the surface
+        <br><br>- Hugh Falkus`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Zand"],
+    hint: `Sommige straalvinnigen produceren zand door koraal te vermalen.`,
+    tijd: 30_000_000,
+    output: [
+      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
+        quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
+        in the creation of tropical beaches
+        <br><br>- Peter Sale`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Meer"],
+    hint: `Sommige straalvinnigen voelen zich thuis in de zoete meren.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+        quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
+        <br><br>- David Attenborough`
+      },
+      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
+        <br><br>- Hugh Falkus`
+      },
+      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+        quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
+        beneath the surface
+        <br><br>- Hugh Falkus`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "Lucht"], ["Oerstraalvinnigen", "Wind"]
+    ],
+    hint: `Sommige straalvinnigen willen niks liever dan de lucht in.`,
+    tijd: 30_000_000,
+    output: [
+      { naam: "Vliegvissen", icoon: "icons/Vliegvissen.png", map: "Vissen", 
+        quote: `Fly fishing is as much about the rhythm of water and air as it is about catching fish; it is a form of quiet
+        observation of nature
+        <br><br>- John Gierach`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Ven"],
+    hint: `Sommige straalvinnigen voelen zich thuis in de troebele vennetjes.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+        quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
+        <br><br>- David Attenborough`
+      },
+      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
+        <br><br>- Hugh Falkus`
+      },
+      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+        quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
+        where sight is of little use
+        <br><br>- Herbert Boschung`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Zee"],
+    hint: `Sommige straalvinnigen zwemmen het liefst alle wereldzeeën over.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
+        quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
+        <br><br>- Callum Roberts`
+      },
+      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
+        rivers of their birth
+        <br><br>- Colin Braithwaite`
+      },
+      { naam: "Makreel ", icoon: "icons/Makreel.png", map: "Vissen", 
+        quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
+        <br><br>- Alister Hardy`
+      },
+      { naam: "Paling ", icoon: "icons/Paling.png", map: "Vissen", 
+        quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
+        thousands of kilometres
+        <br><br>- Frederik Kendall`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Kust"],
+    hint: `Sommige straalvinnigen voelen zich het meest thuis in ondiepe kustwateren.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+        quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
+        a cornerstone of marine ecosystems
+        <br><br>- Daniel Pauly`
+      },
+      { naam: "Makreel ", icoon: "icons/Makreel.png", map: "Vissen", 
+        quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
+        <br><br>- Alister Hardy`
+      },
+      { naam: "Paling ", icoon: "icons/Paling.png", map: "Vissen", 
+        quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
+        thousands of kilometres
+        <br><br>- Frederik Kendall`
+      },
+      { naam: "Zeepaardjes ", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
+        quote: `Male seahorses receive eggs from the female and incubate them in a ventral brood pouch, where the embryos develop 
+        until birth
+        <br><br>- Sara Lourie`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Oceaan"],
+    hint: `Sommige straalvinnigen voelen zich thuis diep in de immense oceanen.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+        quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
+        a silent hunter of the ocean floor
+        <br><br>- David Attenborough`
+      },
+      { naam: "Maanvissen", icoon: "icons/Maanvissen.png", map: "Vissen", 
+        quote: `Mola mola appears almost otherworldly, a giant, flattened fish that seems more like a drifting fragment of the sea 
+        itself than a conventional animal
+        <br><br>- Bruce Collette`
+      },
+      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
+        quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
+        <br><br>- Callum Roberts`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Sneeuw"],
+    hint: `Sommige straalvinnigen voelen zich thuis in het koude smeltwater van sneeuw.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+        quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
+        a cornerstone of marine ecosystems
+        <br><br>- Daniel Pauly`
+      },
+      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+        quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
+        beneath the surface
+        <br><br>- Hugh Falkus`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Rivier"],
+    hint: `Sommige straalvinnigen voelen zich thuis in de rivieren.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+        quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
+        <br><br>- David Attenborough`
+      },
+      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+        quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
+        beneath the surface
+        <br><br>- Hugh Falkus`
+      },
+      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
+        rivers of their birth
+        <br><br>- Colin Braithwaite`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Zuurstof"],
+    hint: `Sommige straalvinnigen excelleren in de meest zuurstofrijke wateren.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
+        quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
+        <br><br>- Callum Roberts`
+      },
+      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
+        quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Makreel ", icoon: "icons/Makreel.png", map: "Vissen", 
+        quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
+        <br><br>- Alister Hardy`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "Schelp"], ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"]
+    ],
+    hint: `De angst van de schelpdieren zijn straalvinnigen die ze kunnen doorboren.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png", map: "Vissen", 
+        quote: `Few fish combine such vulnerability in appearance with such extreme defensive capability as the pufferfish
+        <br><br>- David Attenborough`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "Koraal"], ["Oerstraalvinnigen", "Rif"], ["Oerstraalvinnigen", "Zeeanemeonen"]
+    ],
+    hint: `Sommige straalvinnigen voelen zich thuis in de wereld van de koraalriffen.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
+        quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
+        in the creation of tropical beaches
+        <br><br>- Peter Sale`
+      },
+      { naam: "Clownvissen", icoon: "icons/Clownvissen.png", map: "Vissen", 
+        quote: `Few marine relationships are as iconic as that between clownfish and sea anemones
+        <br><br>- Nancy Knowlton`
+      },
+      { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png", map: "Vissen", 
+        quote: `Surgeonfish are named for the sharp, scalpel-like spines located near the base of their tails
+        <br><br>- David Bellwood`
+      },
+      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
+        dangerous
+        <br><br>- James Morris`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "Groene algen"], ["Oerstraalvinnigen", "Rode algen"], 
+      ["Oerstraalvinnigen", "Groenwieren"], ["Oerstraalvinnigen", "Roodwieren"]
+    ],
+    tijd: 30_000_000,
+    output: [
+      { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png", map: "Vissen", 
+        quote: `Surgeonfish are named for the sharp, scalpel-like spines located near the base of their tails
+        <br><br>- David Bellwood`
+      },
+      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
+        quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
+        in the creation of tropical beaches
+        <br><br>- Peter Sale`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Oerstraalvinnigen", "Gif"],
+    hint: `Sommige straalvinnigen kiezen voor de strategie van het gif.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
+        dangerous
+        <br><br>- James Morris`
+      },
+      { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png", map: "Vissen", 
+        quote: `Few fish combine such vulnerability in appearance with such extreme defensive capability as the pufferfish
+        <br><br>- David Attenborough`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Moeras", "Oerstraalvinnigen"],
+    hint: `Sommige straalvinnigen voelen zich thuis in de moerassen.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+        quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
+        <br><br>- David Attenborough`
+      },
+      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
+        <br><br>- Hugh Falkus`
+      },
+      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+        quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
+        where sight is of little use
+        <br><br>- Herbert Boschung`
+      },
+      { naam: "Paling ", icoon: "icons/Paling.png", map: "Vissen", 
+        quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
+        thousands of kilometres
+        <br><br>- Frederik Kendall`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+      }
+    }
+  },
+  {
+    input: ["Tropisch regenwoud", "Oerstraalvinnigen"],
+    hint: `Sommige straalvinnigen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Piranha", icoon: "icons/Piranha.png", map: "Vissen", 
+        quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome predators of
+        popular imagination
+        <br><br>- Herbert Axelrod`
+      },
+      { naam: "Elektrische paling", icoon: "icons/Elektrische paling.png", map: "Vissen", 
+        quote: `The electric eel generates powerful discharges, using electricity both to navigate and to subdue its prey 
+        in the dark waters it inhabits
+        <br><br>- Kenneth Catania`
+      }
+    ],
+    uitleg: {
+      thresholdElement: {
+        naam: "Vogelbekdieren", 
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
       }
     }
   },
