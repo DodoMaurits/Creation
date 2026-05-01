@@ -7865,13 +7865,17 @@ const combinaties = [
   },
   {
     input: ["Oerstraalvinnigen", "Zand"],
-    hint: `Sommige straalvinnigen produceren zand door koraal te vermalen.`,
+    hint: `Sommige straalvinnigen produceren zand door koraal te vermalen en anderen verdwijnen erin.`,
     tijd: 30_000_000,
     output: [
       { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
         quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
         in the creation of tropical beaches
         <br><br>- Peter Sale`
+      },
+      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
+        <br><br>- David Attenborough`
       }
     ]
   },
@@ -7990,6 +7994,10 @@ const combinaties = [
       { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
+        <br><br>- David Attenborough`
+      },
+      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
         <br><br>- David Attenborough`
       },
       { naam: "Maanvissen", icoon: "icons/Maanvissen.png", map: "Vissen", 
