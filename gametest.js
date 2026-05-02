@@ -30,9 +30,9 @@ const mappen = [
       { naam: "Straling", icoon: "icons/Straling.png" },
       { naam: "Elektriciteit", icoon: "icons/Elektriciteit.png" },
       { naam: "Radioactiviteit", icoon: "icons/Radioactiviteit.png" },
-      { naam: "Druk", icoon: "icons/Druk.png" },
       { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png" },
       { naam: "Aardbeving", icoon: "icons/Aardbeving.png" },
+      { naam: "Druk", icoon: "icons/Druk.png" },
       { naam: "Magnetisme", icoon: "icons/Magnetisme.png" },
       { naam: "Leven", icoon: "icons/Leven.png" },
       { naam: "Dood", icoon: "icons/Dood.png" }
