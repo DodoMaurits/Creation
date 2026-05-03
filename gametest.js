@@ -11919,6 +11919,9 @@ function refillHintDeck() {
 }
 
 function showHint() {
+  hintButton.classList.remove("disabled");
+  hintButton.style.pointerEvents = "auto";
+  
   if (hintVisible) {
     hintBubble.classList.remove("visible");
     hintVisible = false;
@@ -11934,7 +11937,10 @@ function showHint() {
     return;
   }
 
-  if (hintDeck.length === 0) {
+  if (
+    hintDeck.length === 0 ||
+    !hintDeck.every(h => getAvailableHints().includes(h))
+  ) {
     refillHintDeck();
   }
 
