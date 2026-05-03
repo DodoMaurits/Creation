@@ -10986,6 +10986,7 @@ let lastExplanationIsThresholdElement = false;
 let lastTimeIndex = null;
 let lastRandomIndex = null;
 let lastChoiceType = null;
+let lastShownHint = null;
 let hintVisible = false;
 let hintTimer = null;
 
@@ -11889,7 +11890,10 @@ function getAvailableHints() {
 
     // -------- ALS ALLES OK IS --------
     if (typeof c.hint === "string" && c.hint.trim() !== "") {
-      availableHints.push(c.hint);
+      availableHints.push({
+        hint: c.hint,
+        tijd: c.tijd ?? null
+      });
     }
   }
   
@@ -11907,78 +11911,38 @@ function showHint() {
     hintBubble.classList.remove("visible");
     hintVisible = false;
     if (hintTimer) clearTimeout(hintTimer);
-    hintTimer = null;
     return;
   }
 
   const availableHints = getAvailableHints();
   if (availableHints.length === 0) return;
 
-  // split
-  let withTime = availableHints.filter(h => h.tijd != null);
-  let withoutTime = availableHints.filter(h => h.tijd == null);
+  const withTime = availableHints
+    .filter(h => h.tijd != null)
+    .sort((a, b) => b.tijd - a.tijd);
 
-  withTime.sort((a, b) => b.tijd - a.tijd);
+  const withoutTime = availableHints.filter(h => h.tijd == null);
 
-  let chosenHint;
+  let pool = withTime.length > 0 ? withTime : withoutTime;
+  if (pool.length === 0) return;
 
-  // --------------------------
-  // 1. RANDOM KEUZE (eerste klik gedrag)
-  // --------------------------
-  if (lastChoiceType == null) {
-    lastChoiceType = Math.random() < 0.5 ? "time" : "random";
+  // 🔥 kies altijd iets anders dan vorige
+  let filtered = pool;
+  if (pool.length > 1 && lastShownHint) {
+    filtered = pool.filter(h => h !== lastShownHint);
   }
 
-  // --------------------------
-  // 2. TIJD HINTS LOGICA
-  // --------------------------
-  if (lastChoiceType === "time" && withTime.length > 0) {
+  const chosenHint =
+    filtered[Math.floor(Math.random() * filtered.length)];
 
-    if (lastTimeIndex == null) lastTimeIndex = 0;
-    else lastTimeIndex++;
+  lastShownHint = chosenHint;
 
-    if (lastTimeIndex >= withTime.length) {
-      lastTimeIndex = 0;
-    }
-
-    chosenHint = withTime[lastTimeIndex];
-
-  } 
-  // --------------------------
-  // 3. RANDOM HINTS LOGICA
-  // --------------------------
-  else {
-
-    if (withoutTime.length === 0) {
-      // fallback naar tijd
-      lastChoiceType = "time";
-      return showHint();
-    }
-
-    let newIndex;
-
-    do {
-      newIndex = Math.floor(Math.random() * withoutTime.length);
-    } while (
-      withoutTime.length > 1 &&
-      newIndex === lastRandomIndex
-    );
-
-    lastRandomIndex = newIndex;
-    chosenHint = withoutTime[newIndex];
-  }
-
-  // --------------------------
-  // DISPLAY
-  // --------------------------
-  hintBubble.innerHTML = chosenHint;
+  hintBubble.innerHTML = chosenHint.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
-  if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
     hintVisible = false;
-    hintTimer = null;
   }, 4000);
 }
