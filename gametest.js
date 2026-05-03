@@ -11914,7 +11914,7 @@ function shuffle(array) {
 // ----- REFILL DECK -----
 function refillHintDeck() {
   const availableHints = getAvailableHints();
-  hintDeck = shuffle(availableHints.map(h => h.id));
+  hintDeck = shuffle([...availableHints]);
 }
 
 // ----- SHOW HINT -----
@@ -11953,8 +11953,7 @@ function showHint() {
   }
 
   // pak volgende hint
-  const hintId = hintDeck.pop();
-  const hintObj = availableHints.find(h => h.id === hintId);
+  const hintObj = hintDeck.pop();
 
   if (!hintObj) return;
 
