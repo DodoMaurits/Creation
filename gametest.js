@@ -10622,7 +10622,6 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Water"],
-    hint: `Sommige campanuliden bouwen voort op hun wateropslag.`,
     tijd: 2_000_000,
     output: [
       { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
@@ -10641,7 +10640,7 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Berg"],
-    hint: `Sommige campanuliden bouwen voort op hun wateropslag.`,
+    hint: `Sommige campanuliden voelen zich thuis in de bergen.`,
     tijd: 2_000_000,
     output: [
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
@@ -10724,29 +10723,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oercampanuliden", "Glucose"],
-    hint: `Sommige campanuliden specialiseren zich in de aanmaak van glucose.`,
-    tijd: 2_000_000,
-    output: [
-      { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
-        quote: `Cherry blossoms fall — the temple bell rings in the evening wind
-        <br><br>- Yosa Buson`
-      },
-      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
-        quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
-        <br><br>- André Breton`
-      },
-      { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
-        quote: `Carrots store their energy in the root, which becomes sweeter over time
-        <br><br>- Harold McGee`
-      },
-      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
-        quote: `Fennel is of great use for improving sight
-        <br><br>- Plinius de Oudere`
-      }
-    ]
-  },
-  {
     input: ["Oercampanuliden", "Gif"],
     hint: `Sommige campanuliden kiezen voor de strategie van gif.`,
     tijd: 25_000_000,
@@ -10759,7 +10735,6 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Wortels"],
-    hint: `Sommige campanuliden specialiseren zich in hun wortels.`,
     tijd: 20_000_000,
     output: [
       { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
@@ -10793,7 +10768,6 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Zaadjes"],
-    hint: `Sommige campanuliden specialiseren zich in hun zaadjes.`,
     tijd: 2_000_000,
     output: [
       { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
@@ -10815,16 +10789,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oercampanuliden", "Hout"],
-    tijd: 20_000_000,
-    output: [
-      { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
-        quote: `Cherry blossoms fall — the temple bell rings in the evening wind
-        <br><br>- Yosa Buson`
-      }
-    ]
-  },
-  {
     input: ["Oercampanuliden", "Bos"],
     hint: `Sommige campanuliden voelen zich thuis in het bos.`,
     tijd: 20_000_000,
@@ -10841,7 +10805,6 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Vlinders"],
-    hint: `Sommige campanuliden kiezen hun pad met de vlinders.`,
     tijd: 2_000_000,
     output: [
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
@@ -10864,13 +10827,8 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Bijen"],
-    hint: `Sommige campanuliden kiezen het pad van de bijtjes.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
-        quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
-        <br><br>- André Breton`
-      },
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
@@ -10887,9 +10845,13 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Weide"],
-    hint: `Sommige campanuliden voelen zich thuis op de grasweides.`,
+    hint: `Sommige campanuliden voelen zich thuis in grasweides.`,
     tijd: 2_000_000,
     output: [
+      { naam: "Koriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
+        quote: `Cilantro has a distinctive aroma that some people perceive as soapy
+        <br><br>- Harold McGee`
+      },
       { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
