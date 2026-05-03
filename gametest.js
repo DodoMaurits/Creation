@@ -11915,20 +11915,21 @@ function shuffle(array) {
 function refillHintDeck() {
   const availableHints = getAvailableHints();
 
-  const withTime = availableHints
+  const timeHints = availableHints
     .filter(h => h.tijd != null)
-    .sort((a, b) => b.tijd - a.tijd); // A, B, C (vast)
+    .sort((a, b) => b.tijd - a.tijd); // A → B → C (vast)
 
-  const withoutTime = availableHints
-    .filter(h => h.tijd == null);
+  const rest = availableHints.filter(h => h.tijd == null);
 
-  // stap 1: maak clusters
-  const ordered = [...withTime, ...withoutTime];
+  const orderedTime = [...timeHints];
 
-  // stap 2: shuffle ALLEEN zonder-time + globale posities,
-  // maar behoud order binnen withTime via "stable shuffle trick"
+  const shuffledRest = shuffle([...rest]);
 
-  hintDeck = stableGroupShuffle(withTime, withoutTime);
+  // combine
+  const combined = [...orderedTime, ...shuffledRest];
+
+  // NU pas shuffle van POSITIES, niet inhoud
+  hintDeck = shuffle(combined);
 }
 
 function stableGroupShuffle(timeGroup, normalGroup) {
