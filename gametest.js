@@ -11915,72 +11915,28 @@ function shuffle(array) {
 function refillHintDeck() {
   const availableHints = getAvailableHints();
 
-  // 1. tijd-hints: altijd vaste volgorde (hoog → laag)
   const timeHints = availableHints
     .filter(h => h.tijd != null)
     .sort((a, b) => b.tijd - a.tijd);
 
-  // 2. non-time hints: volledig random
   const rest = shuffle(
     availableHints.filter(h => h.tijd == null)
   );
 
-  // 3. merge met “interleaved random insertion”
   const result = [];
-  let t = 0;
-  let r = 0;
 
-  while (t < timeHints.length || r < rest.length) {
-    const takeTime =
-      t < timeHints.length &&
-      (r >= rest.length || Math.random() < 0.5);
+  // 👇 kernregel: bouw eerst tijdlijn-sequentie vast
+  for (const h of timeHints) {
+    result.push(h);
+  }
 
-    if (takeTime) {
-      result.push(timeHints[t++]);
-    } else {
-      result.push(rest[r++]);
-    }
+  // daarna pas random inserts van rest (zonder tijd te beïnvloeden)
+  for (const h of rest) {
+    const pos = Math.floor(Math.random() * (result.length + 1));
+    result.splice(pos, 0, h);
   }
 
   hintDeck = result;
-}
-
-function stableGroupShuffle(timeGroup, normalGroup) {
-  const combined = [...timeGroup, ...normalGroup];
-
-  return shuffleWithConstraint(combined, new Set(timeGroup.map(h => h.id)));
-}
-
-function shuffleWithConstraint(array, orderedGroupSet) {
-  const result = [];
-
-  const timeItems = [];
-  const rest = [];
-
-  for (const item of array) {
-    if (orderedGroupSet.has(item.id)) {
-      timeItems.push(item);
-    } else {
-      rest.push(item);
-    }
-  }
-
-  // shuffle alleen rest
-  shuffle(rest);
-
-  // merge met behoud interne volgorde timeItems
-  let t = 0, r = 0;
-
-  while (t < timeItems.length || r < rest.length) {
-    // random keuze tussen groepen
-    if (r >= rest.length || (t < timeItems.length && Math.random() < 0.5)) {
-      result.push(timeItems[t++]);
-    } else {
-      result.push(rest[r++]);
-    }
-  }
-
-  return result;
 }
 
 // ----- SHOW HINT -----
