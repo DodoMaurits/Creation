@@ -10985,6 +10985,7 @@ let lastExplanation = null;
 let lastExplanationIsThresholdElement = false;
 let lastHint = null;
 let lastHintIndex = -1;
+let hintDeck = [];
 let hintVisible = false;
 let hintTimer = null;
 
@@ -11898,42 +11899,48 @@ function getAvailableHints() {
   return availableHints;
 }
 
+// ----- HINTS FUNCTIE -----
 const hintButton = document.getElementById("hint-button");
 const hintBubble = document.getElementById("hint-bubble");
 
 hintButton.onclick = showHint;
 
-// ----- HINTS FUNCTIE -----
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function refillHintDeck() {
+  const availableHints = getAvailableHints();
+  hintDeck = shuffle([...availableHints]);
+}
+
 function showHint() {
   if (hintVisible) {
     hintBubble.classList.remove("visible");
     hintVisible = false;
-    if (hintTimer) {
-      clearTimeout(hintTimer);
-      hintTimer = null;
-    }
+    if (hintTimer) clearTimeout(hintTimer);
     return;
   }
-
-  const availableHints = getAvailableHints();
+  
+  let availableHints = getAvailableHints();
+  
   if (availableHints.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
     return;
   }
 
-  // kies een andere hint dan de laatst getoonde
-  let hintIndex = lastHintIndex;
-  if (availableHints.length === 1) {
-    hintIndex = 0;
-  } else {
-    while (hintIndex === lastHintIndex) {
-      hintIndex = Math.floor(Math.random() * availableHints.length);
-    }
+  if (hintDeck.length === 0) {
+    refillHintDeck();
   }
-  lastHintIndex = hintIndex;
 
-  hintBubble.innerHTML = availableHints[hintIndex];
+  const hint = hintDeck.pop();
+
+  hintBubble.innerHTML = hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
