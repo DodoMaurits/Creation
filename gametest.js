@@ -11914,7 +11914,15 @@ function shuffle(array) {
 // ----- REFILL DECK -----
 function refillHintDeck() {
   const availableHints = getAvailableHints();
-  hintDeck = shuffle([...availableHints]);
+
+  const withTime = availableHints
+    .filter(h => h.tijd != null)
+    .sort((a, b) => b.tijd - a.tijd); // oudste eerst
+
+  const withoutTime = availableHints
+    .filter(h => h.tijd == null);
+
+  hintDeck = shuffle([...withTime, ...withoutTime]);
 }
 
 // ----- SHOW HINT -----
