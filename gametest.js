@@ -2833,7 +2833,7 @@ const combinaties = [
   {
     input: [
       ["map:Pril leven", "Radioactiviteit"], ["map:Pril leven", "IJs"], ["map:Pril leven", "Gif"],
-      ["map:Vissen", "Radioactiviteit"], ["map:Vissen", "Gif"],
+      ["map:Vissen", "Radioactiviteit"],
       ["map:Planten", "Radioactiviteit"],
       ["map:Smaakmakers", "Radioactiviteit"],
       ["map:Bloemen", "Radioactiviteit"],
@@ -2883,6 +2883,14 @@ const combinaties = [
       ["Mieren", "Radioactiviteit"], ["Mieren", "Gif"],
       ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
       ["Bijen", "Radioactiviteit"], ["Bijen", "Gif"],
+
+      /* --- VISSEN --- */
+      ["Lancetvisjes", "Gif"], ["Agnathen", "Gif"], ["Haaien", "Gif"], ["Spookhaaien", "Gif"], ["Zeeduivels", "Gif"], 
+      ["Manta", "Gif"], ["Zalm", "Gif"], ["Haring", "Gif"], ["Snoeken", "Gif"], ["Kabeljauwen", "Gif"], 
+      ["Manvissen", "Gif"], ["Forel", "Gif"], ["Papegaaivissen", "Gif"], ["Platvissen", "Gif"], ["Karpers", "Gif"], 
+      ["Vliegvissen", "Gif"], ["Meervallen", "Gif"], ["Tonijn", "Gif"], ["Makreel", "Gif"], ["Paling", "Gif"],
+      ["Zeepaardjes", "Gif"], ["Kogelvissen", "Gif"], ["Clownvissen", "Gif"], ["Doktersvissen", "Gif"], 
+      ["Koraalduivels", "Gif"], ["Piranha", "Gif"], 
       
       /* --- GENOTWAREN --- */
       ["Agave", "Radioactiviteit"], 
