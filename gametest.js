@@ -11915,32 +11915,34 @@ function shuffle(array) {
 function refillHintDeck() {
   const availableHints = getAvailableHints();
 
+  // 1. tijd-hints: altijd vaste volgorde (hoog → laag)
   const timeHints = availableHints
     .filter(h => h.tijd != null)
-    .sort((a, b) => b.tijd - a.tijd); // vaste interne volgorde
+    .sort((a, b) => b.tijd - a.tijd);
 
-  const rest = availableHints.filter(h => h.tijd == null);
+  // 2. non-time hints: volledig random
+  const rest = shuffle(
+    availableHints.filter(h => h.tijd == null)
+  );
 
-  const combined = [...timeHints, ...rest];
+  // 3. merge met “interleaved random insertion”
+  const result = [];
+  let t = 0;
+  let r = 0;
 
-  // 1. random shuffle
-  const shuffled = shuffle([...combined]);
+  while (t < timeHints.length || r < rest.length) {
+    const takeTime =
+      t < timeHints.length &&
+      (r >= rest.length || Math.random() < 0.5);
 
-  // 2. correctie stap: fix time-volgorde binnen shuffled array
-  const timeMap = new Map(timeHints.map((h, i) => [h.id, i]));
-
-  shuffled.sort((a, b) => {
-    const aTime = timeMap.has(a.id);
-    const bTime = timeMap.has(b.id);
-
-    if (aTime && bTime) {
-      return timeMap.get(a.id) - timeMap.get(b.id);
+    if (takeTime) {
+      result.push(timeHints[t++]);
+    } else {
+      result.push(rest[r++]);
     }
+  }
 
-    return 0; // rest blijft random volgorde behouden
-  });
-
-  hintDeck = shuffled;
+  hintDeck = result;
 }
 
 function stableGroupShuffle(timeGroup, normalGroup) {
