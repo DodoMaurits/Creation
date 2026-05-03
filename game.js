@@ -2459,7 +2459,7 @@ const combinaties = [
   {
     input: [
       ["map:Pril leven", "Radioactiviteit"], ["map:Pril leven", "IJs"], ["map:Pril leven", "Gif"],
-      ["map:Vissen", "Radioactiviteit"], ["map:Vissen", "Gif"],
+      ["map:Vissen", "Radioactiviteit"],
       ["map:Planten", "Radioactiviteit"],
       ["map:Smaakmakers", "Radioactiviteit"],
       ["map:Bloemen", "Radioactiviteit"],
@@ -2509,6 +2509,14 @@ const combinaties = [
       ["Mieren", "Radioactiviteit"], ["Mieren", "Gif"],
       ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
       ["Bijen", "Radioactiviteit"], ["Bijen", "Gif"],
+
+      /* --- VISSEN --- */
+      ["Lancetvisjes", "Gif"], ["Agnathen", "Gif"], ["Haaien", "Gif"], ["Spookhaaien", "Gif"], ["Zeeduivels", "Gif"], 
+      ["Manta", "Gif"], ["Zalm", "Gif"], ["Haring", "Gif"], ["Snoeken", "Gif"], ["Kabeljauwen", "Gif"], 
+      ["Manvissen", "Gif"], ["Forel", "Gif"], ["Papegaaivissen", "Gif"], ["Platvissen", "Gif"], ["Karpers", "Gif"], 
+      ["Vliegvissen", "Gif"], ["Meervallen", "Gif"], ["Tonijn", "Gif"], ["Makreel", "Gif"], ["Paling", "Gif"],
+      ["Zeepaardjes", "Gif"], ["Kogelvissen", "Gif"], ["Clownvissen", "Gif"], ["Doktersvissen", "Gif"], 
+      ["Koraalduivels", "Gif"], ["Piranha", "Gif"], 
       
       /* --- GENOTWAREN --- */
       ["Agave", "Radioactiviteit"], 
@@ -8030,32 +8038,6 @@ const combinaties = [
         quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
         dangerous
         <br><br>- James Morris`
-      }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
-  },
-  {
-    input: [
-      ["Oerstraalvinnigen", "Groene algen"], ["Oerstraalvinnigen", "Rode algen"], 
-      ["Oerstraalvinnigen", "Groenwieren"], ["Oerstraalvinnigen", "Roodwieren"]
-    ],
-    tijd: 30_000_000,
-    output: [
-      { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png", map: "Vissen", 
-        quote: `Surgeonfish are named for the sharp, scalpel-like spines located near the base of their tails
-        <br><br>- David Bellwood`
-      },
-      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
-        quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
-        in the creation of tropical beaches
-        <br><br>- Peter Sale`
       }
     ],
     uitleg: {
