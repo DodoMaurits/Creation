@@ -10983,8 +10983,9 @@ let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
 let lastExplanationIsThresholdElement = false;
-let lastHint = null;
-let lastHintIndex = -1;
+let lastTimeIndex = null;
+let lastRandomIndex = null;
+let lastChoiceType = null;
 let hintVisible = false;
 let hintTimer = null;
 
@@ -11905,53 +11906,72 @@ function showHint() {
   if (hintVisible) {
     hintBubble.classList.remove("visible");
     hintVisible = false;
-    if (hintTimer) {
-      clearTimeout(hintTimer);
-      hintTimer = null;
-    }
+    if (hintTimer) clearTimeout(hintTimer);
+    hintTimer = null;
     return;
   }
 
   const availableHints = getAvailableHints();
-  if (availableHints.length === 0) {
-    hintButton.classList.add("disabled");
-    hintButton.style.pointerEvents = "none";
-    return;
-  }
-  
+  if (availableHints.length === 0) return;
+
+  // split
   let withTime = availableHints.filter(h => h.tijd != null);
   let withoutTime = availableHints.filter(h => h.tijd == null);
+
   withTime.sort((a, b) => b.tijd - a.tijd);
 
-  let hintIndex = lastHintIndex;
-  if (availableHints.length === 1) {
-    hintIndex = 0;
-  } else {
-    while (hintIndex === lastHintIndex) {
-      hintIndex = Math.floor(Math.random() * availableHints.length);
-    }
-  }
-  if (withTime.length > 0) {
-    if (lastHintIndex === null || lastHintIndex >= withTime.length - 1) {
-      lastHintIndex = 0;
-    } else {
-      lastHintIndex++;
-    }
-  chosenHint = withTime[lastHintIndex];
-  } else {
-    let randomIndex = lastHintIndex;
-    if (withoutTime.length === 1) {
-      randomIndex = 0;
-    } else {
-      while (randomIndex === lastHintIndex) {
-        randomIndex = Math.floor(Math.random() * withoutTime.length);
-      }
-    }
-   lastHintIndex = randomIndex;
-    chosenHint = withoutTime[randomIndex];
+  let chosenHint;
+
+  // --------------------------
+  // 1. RANDOM KEUZE (eerste klik gedrag)
+  // --------------------------
+  if (lastChoiceType == null) {
+    lastChoiceType = Math.random() < 0.5 ? "time" : "random";
   }
 
-  hintBubble.innerHTML = availableHints[hintIndex];
+  // --------------------------
+  // 2. TIJD HINTS LOGICA
+  // --------------------------
+  if (lastChoiceType === "time" && withTime.length > 0) {
+
+    if (lastTimeIndex == null) lastTimeIndex = 0;
+    else lastTimeIndex++;
+
+    if (lastTimeIndex >= withTime.length) {
+      lastTimeIndex = 0;
+    }
+
+    chosenHint = withTime[lastTimeIndex];
+
+  } 
+  // --------------------------
+  // 3. RANDOM HINTS LOGICA
+  // --------------------------
+  else {
+
+    if (withoutTime.length === 0) {
+      // fallback naar tijd
+      lastChoiceType = "time";
+      return showHint();
+    }
+
+    let newIndex;
+
+    do {
+      newIndex = Math.floor(Math.random() * withoutTime.length);
+    } while (
+      withoutTime.length > 1 &&
+      newIndex === lastRandomIndex
+    );
+
+    lastRandomIndex = newIndex;
+    chosenHint = withoutTime[newIndex];
+  }
+
+  // --------------------------
+  // DISPLAY
+  // --------------------------
+  hintBubble.innerHTML = chosenHint.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
