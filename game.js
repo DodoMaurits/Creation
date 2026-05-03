@@ -10588,7 +10588,6 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Water"],
-    hint: `Sommige lamiden bouwen voort op hun wateropslag.`,
     tijd: 5_000_000,
     output: [
       { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
@@ -10614,9 +10613,13 @@ const combinaties = [
         quote: `Sage is singularly good for the head and brain
         <br><br>- Nicholas Culpeper`
       },
-      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
-        quote: `Thyme comforts the head and strengthens the senses
-        <br><br>- William Turner`
+      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+        quote: `Jasmine opens in the night like a secret
+        <br><br>- Adonis`
+      },
+      { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
+        quote: `A ripe tomato is one of the simplest and greatest pleasures of eating
+        <br><br>- Alice Waters`
       }
     ]
   },
@@ -10665,7 +10668,19 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerlamiden", "Rivier"],
+    hint: `Sommige lamiden voelen zich thuis bij rivieroevers.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Basilicum", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
+        quote: `Without basil, Italian cooking loses its soul
+        <br><br>- Marcella Hazen`
+      }
+    ]
+  },
+  {
     input: ["Oerlamiden", "Kalk"],
+    hint: `Sommige lamiden houden van een kalkrijke grond.`,
     tijd: 20_000_000,
     output: [
       { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
@@ -10676,7 +10691,6 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Glucose"],
-    hint: `Sommige lamiden specialiseren zich in glucose.`,
     tijd: 3_000_000,
     output: [
       { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
@@ -10737,7 +10751,6 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Blad"],
-    hint: `Sommige lamiden specialiseren zich in aromatische bladeren.`,
     tijd: 20_000_000,
     output: [
       { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
@@ -10760,7 +10773,6 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Zaadjes"],
-    hint: `Sommige lamiden specialiseren zich in hun zaadjes.`,
     tijd: 15_000_000,
     output: [
       { naam: "Sesam", icoon: "icons/Sesam.png", map: "Zaden", 
@@ -10775,7 +10787,6 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Hout"],
-    hint: `Sommige lamiden staan bekend om hun bruikbaar hout.`,
     tijd: 10_000_000,
     output: [
       { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
@@ -10824,10 +10835,6 @@ const combinaties = [
         quote: `Without basil, Italian cooking loses its soul
         <br><br>- Marcella Hazen`
       },
-      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
-        quote: `Jasmine opens in the night like a secret
-        <br><br>- Adonis`
-      },
       { naam: "Aubergines", icoon: "icons/Aubergines.png", map: "Groenten", 
         quote: `The aubergine is a vegetable which absorbs flavors like a sponge
         <br><br>- Elizabeth David`
@@ -10836,7 +10843,6 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Vlinders"],
-    hint: `Sommige lamiden gaan samen voorts met de vlinders.`,
     tijd: 20_000_000,
     output: [
       { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
@@ -10859,7 +10865,6 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Bijen"],
-    hint: `Sommige lamiden gaan samen voorts met de bijtjes.`,
     tijd: 20_000_000,
     output: [
       { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
@@ -11165,36 +11170,6 @@ const combinaties = [
       { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
         quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
         <br><br>- John Ruskin`
-      }
-    ]
-  },
-  {
-    input: ["Oercampanuliden", "Bloem"],
-    tijd: 2_000_000,
-    output: [
-      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
-        quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
-        <br><br>- André Breton`
-      },
-      { naam: "Gerbera", icoon: "icons/Gerbera.png", map: "Bloemen", 
-        quote: `The genus Gerbera produces flowers of remarkable brilliance
-        <br><br>- William Aiton`
-      },
-      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
-        quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
-        <br><br>- John Ruskin`
-      },
-      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
-        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
-        <br><br>- Richard Jefferies`
-      },
-      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
-        quote: `The common daisy and meadow flowers spread their cheerful face
-        <br><br>- William Wordsworth`
-      },
-      { naam: "Goudsbloemen", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
-        quote: `The marigold opens at the sun’s coming and shuts at his going
-        <br><br>- John Gerard`
       }
     ]
   },
