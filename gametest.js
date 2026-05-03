@@ -11912,8 +11912,7 @@ function showHint() {
     return;
   }
 
-  let availableHints = getAvailableHints();
-
+  const availableHints = getAvailableHints();
   if (availableHints.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
@@ -11924,8 +11923,14 @@ function showHint() {
   let withoutTime = availableHints.filter(h => h.tijd == null);
   withTime.sort((a, b) => b.tijd - a.tijd);
 
-  let chosenHint;
-
+  let hintIndex = lastHintIndex;
+  if (availableHints.length === 1) {
+    hintIndex = 0;
+  } else {
+    while (hintIndex === lastHintIndex) {
+      hintIndex = Math.floor(Math.random() * availableHints.length);
+    }
+  }
   if (withTime.length > 0) {
     if (lastHintIndex === null || lastHintIndex >= withTime.length - 1) {
       lastHintIndex = 0;
@@ -11934,9 +11939,7 @@ function showHint() {
     }
   chosenHint = withTime[lastHintIndex];
   } else {
-    // random voor hints zonder tijd
     let randomIndex = lastHintIndex;
-
     if (withoutTime.length === 1) {
       randomIndex = 0;
     } else {
@@ -11948,7 +11951,7 @@ function showHint() {
     chosenHint = withoutTime[randomIndex];
   }
 
-  hintBubble.innerHTML = chosenHint.hint;
+  hintBubble.innerHTML = availableHints[hintIndex];
   hintBubble.classList.add("visible");
   hintVisible = true;
 
