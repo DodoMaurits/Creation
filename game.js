@@ -11321,8 +11321,10 @@ let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
 let lastExplanationIsThresholdElement = false;
-let lastHint = null;
-let lastHintIndex = -1;
+let lastTimeIndex = null;
+let lastRandomIndex = null;
+let lastChoiceType = null;
+let lastShownHint = null;
 let hintVisible = false;
 let hintTimer = null;
 
@@ -12243,39 +12245,39 @@ function showHint() {
   if (hintVisible) {
     hintBubble.classList.remove("visible");
     hintVisible = false;
-    if (hintTimer) {
-      clearTimeout(hintTimer);
-      hintTimer = null;
-    }
+    if (hintTimer) clearTimeout(hintTimer);
     return;
   }
 
   const availableHints = getAvailableHints();
-  if (availableHints.length === 0) {
-    hintButton.classList.add("disabled");
-    hintButton.style.pointerEvents = "none";
-    return;
+  if (availableHints.length === 0) return;
+
+  const withTime = availableHints
+    .filter(h => h.tijd != null)
+    .sort((a, b) => b.tijd - a.tijd);
+
+  const withoutTime = availableHints.filter(h => h.tijd == null);
+
+  let pool = withTime.length > 0 ? withTime : withoutTime;
+  if (pool.length === 0) return;
+
+  // 🔥 kies altijd iets anders dan vorige
+  let filtered = pool;
+  if (pool.length > 1 && lastShownHint) {
+    filtered = pool.filter(h => h !== lastShownHint);
   }
 
-  // kies een andere hint dan de laatst getoonde
-  let hintIndex = lastHintIndex;
-  if (availableHints.length === 1) {
-    hintIndex = 0;
-  } else {
-    while (hintIndex === lastHintIndex) {
-      hintIndex = Math.floor(Math.random() * availableHints.length);
-    }
-  }
-  lastHintIndex = hintIndex;
+  const chosenHint =
+    filtered[Math.floor(Math.random() * filtered.length)];
 
-  hintBubble.innerHTML = availableHints[hintIndex];
+  lastShownHint = chosenHint;
+
+  hintBubble.innerHTML = chosenHint.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
-  if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
     hintVisible = false;
-    hintTimer = null;
   }, 4000);
 }
