@@ -11945,10 +11945,7 @@ function showHint() {
   // deck leeg of niet meer geldig → opnieuw vullen
   const availableIds = new Set(availableHints.map(h => h.id));
 
-  if (
-    hintDeck.length === 0 ||
-    !hintDeck.every(id => availableIds.has(id))
-  ) {
+  if (hintDeck.length === 0) {
     refillHintDeck();
   }
 
