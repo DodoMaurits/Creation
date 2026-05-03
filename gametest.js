@@ -11900,10 +11900,6 @@ const hintBubble = document.getElementById("hint-bubble");
 
 hintButton.onclick = showHint;
 
-let lastHintIndex = null;
-let hintVisible = false;
-let hintTimer = null;
-
 // ----- HINTS FUNCTIE -----
 function showHint() {
   if (hintVisible) {
