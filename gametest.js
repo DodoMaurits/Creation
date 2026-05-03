@@ -10983,8 +10983,6 @@ let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
 let lastExplanationIsThresholdElement = false;
-let lastHint = null;
-let lastHintIndex = -1;
 let hintDeck = [];
 let hintVisible = false;
 let hintTimer = null;
@@ -10999,6 +10997,10 @@ const timelineLabel = document.getElementById("timeline-label");
 const closedContainer = document.getElementById("closed-container");
 const leftSide = document.getElementById("left-side");
 const rightSide = document.getElementById("right-side");
+const hintButton = document.getElementById("hint-button");
+const hintBubble = document.getElementById("hint-bubble");
+
+hintButton.onclick = showHint;
 
 // ----- INIT -----
 renderClosed();
@@ -11890,6 +11892,7 @@ function getAvailableHints() {
     // -------- ALS ALLES OK IS --------
     if (typeof c.hint === "string" && c.hint.trim() !== "") {
       availableHints.push({
+        id: c.id,   // 👈 BELANGRIJK
         hint: c.hint,
         tijd: c.tijd ?? null
       });
@@ -11899,12 +11902,7 @@ function getAvailableHints() {
   return availableHints;
 }
 
-// ----- HINTS FUNCTIE -----
-const hintButton = document.getElementById("hint-button");
-const hintBubble = document.getElementById("hint-bubble");
-
-hintButton.onclick = showHint;
-
+// ----- HINTS SHUFFLE -----
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -11913,43 +11911,59 @@ function shuffle(array) {
   return array;
 }
 
+// ----- REFILL DECK -----
 function refillHintDeck() {
   const availableHints = getAvailableHints();
-  hintDeck = shuffle([...availableHints]);
+  hintDeck = shuffle(availableHints.map(h => h.id));
 }
 
+// ----- SHOW HINT -----
 function showHint() {
-  hintButton.classList.remove("disabled");
-  hintButton.style.pointerEvents = "auto";
-  
+  const availableHints = getAvailableHints();
+
+  // knop state correct zetten
+  if (availableHints.length > 0) {
+    hintButton.classList.remove("disabled");
+    hintButton.style.pointerEvents = "auto";
+  }
+
+  // toggle sluiten
   if (hintVisible) {
     hintBubble.classList.remove("visible");
     hintVisible = false;
     if (hintTimer) clearTimeout(hintTimer);
     return;
   }
-  
-  let availableHints = getAvailableHints();
-  
+
+  // geen hints beschikbaar
   if (availableHints.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
     return;
   }
 
+  // deck leeg of niet meer geldig → opnieuw vullen
+  const availableIds = new Set(availableHints.map(h => h.id));
+
   if (
     hintDeck.length === 0 ||
-    !hintDeck.every(h => getAvailableHints().includes(h))
+    !hintDeck.every(id => availableIds.has(id))
   ) {
     refillHintDeck();
   }
 
-  const hint = hintDeck.pop();
+  // pak volgende hint
+  const hintId = hintDeck.pop();
+  const hintObj = availableHints.find(h => h.id === hintId);
 
-  hintBubble.innerHTML = hint;
+  if (!hintObj) return;
+
+  // toon hint
+  hintBubble.innerHTML = hintObj.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
+  // auto hide
   if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
