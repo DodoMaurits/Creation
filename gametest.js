@@ -11917,12 +11917,56 @@ function refillHintDeck() {
 
   const withTime = availableHints
     .filter(h => h.tijd != null)
-    .sort((a, b) => b.tijd - a.tijd); // oudste eerst
+    .sort((a, b) => b.tijd - a.tijd); // A, B, C (vast)
 
   const withoutTime = availableHints
     .filter(h => h.tijd == null);
 
-  hintDeck = shuffle([...withTime, ...withoutTime]);
+  // stap 1: maak clusters
+  const ordered = [...withTime, ...withoutTime];
+
+  // stap 2: shuffle ALLEEN zonder-time + globale posities,
+  // maar behoud order binnen withTime via "stable shuffle trick"
+
+  hintDeck = stableGroupShuffle(withTime, withoutTime);
+}
+
+function stableGroupShuffle(timeGroup, normalGroup) {
+  const combined = [...timeGroup, ...normalGroup];
+
+  return shuffleWithConstraint(combined, new Set(timeGroup.map(h => h.id)));
+}
+
+function shuffleWithConstraint(array, orderedGroupSet) {
+  const result = [];
+
+  const timeItems = [];
+  const rest = [];
+
+  for (const item of array) {
+    if (orderedGroupSet.has(item.id)) {
+      timeItems.push(item);
+    } else {
+      rest.push(item);
+    }
+  }
+
+  // shuffle alleen rest
+  shuffle(rest);
+
+  // merge met behoud interne volgorde timeItems
+  let t = 0, r = 0;
+
+  while (t < timeItems.length || r < rest.length) {
+    // random keuze tussen groepen
+    if (r >= rest.length || (t < timeItems.length && Math.random() < 0.5)) {
+      result.push(timeItems[t++]);
+    } else {
+      result.push(rest[r++]);
+    }
+  }
+
+  return result;
 }
 
 // ----- SHOW HINT -----
