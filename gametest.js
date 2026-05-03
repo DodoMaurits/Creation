@@ -10334,6 +10334,10 @@ const combinaties = [
     hint: `Sommige lamiden voelen zich thuis bij rivieroevers.`,
     tijd: 5_000_000,
     output: [
+      { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
+        quote: `Fresh mint transforms the simplest dish into something alive
+        <br><br>- Julia Child`
+      },
       { naam: "Basilicum", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
         quote: `Without basil, Italian cooking loses its soul
         <br><br>- Marcella Hazen`
