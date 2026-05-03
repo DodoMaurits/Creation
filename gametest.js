@@ -11923,24 +11923,46 @@ function showHint() {
 
   const withoutTime = availableHints.filter(h => h.tijd == null);
 
-  let pool = withTime.length > 0 ? withTime : withoutTime;
-  if (pool.length === 0) return;
+  let pool;
 
-  // 🔥 kies altijd iets anders dan vorige
-  let filtered = pool;
-  if (pool.length > 1 && lastShownHint) {
-    filtered = pool.filter(h => h !== lastShownHint);
+  // bepaal type (1x kiezen en onthouden)
+  if (!lastChoiceType) {
+    lastChoiceType = Math.random() < 0.5 ? "time" : "random";
   }
 
-  const chosenHint =
-    filtered[Math.floor(Math.random() * filtered.length)];
+  if (lastChoiceType === "time" && withTime.length > 0) {
+    pool = withTime;
 
-  lastShownHint = chosenHint;
+    if (lastTimeIndex == null) lastTimeIndex = 0;
+    else lastTimeIndex++;
 
-  hintBubble.innerHTML = chosenHint.hint;
+    if (lastTimeIndex >= pool.length) lastTimeIndex = 0;
+
+    lastShownHint = pool[lastTimeIndex];
+  } 
+  else {
+    pool = withoutTime.length > 0 ? withoutTime : withTime;
+
+    if (pool.length === 0) return;
+
+    let newIndex;
+
+    do {
+      newIndex = Math.floor(Math.random() * pool.length);
+    } while (
+      pool.length > 1 &&
+      lastRandomIndex === newIndex
+    );
+
+    lastRandomIndex = newIndex;
+    lastShownHint = pool[newIndex];
+  }
+
+  hintBubble.innerHTML = lastShownHint.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
+  if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
     hintVisible = false;
