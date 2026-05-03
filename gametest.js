@@ -11915,24 +11915,22 @@ function shuffle(array) {
 function refillHintDeck() {
   const availableHints = getAvailableHints();
 
+  // 1. tijd-hints: OUD → NIEUW (hoog → laag)
   const timeHints = availableHints
     .filter(h => h.tijd != null)
-    .sort((a, b) => a.tijd - b.tijd);
+    .sort((a, b) => b.tijd - a.tijd);
 
+  // 2. rest random
   const rest = shuffle(
     availableHints.filter(h => h.tijd == null)
   );
 
-  // interleave i.p.v. insert spaghettie
-  const result = [];
-  let t = 0, r = 0;
+  // 3. bouw deck: tijd blijft 100% stabiel, rest ertussen
+  const result = [...timeHints];
 
-  while (t < timeHints.length || r < rest.length) {
-    if (t < timeHints.length && (Math.random() < 0.6 || r >= rest.length)) {
-      result.push(timeHints[t++]);
-    } else {
-      result.push(rest[r++]);
-    }
+  for (const h of rest) {
+    const pos = Math.floor(Math.random() * (result.length + 1));
+    result.splice(pos, 0, h);
   }
 
   hintDeck = result;
