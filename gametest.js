@@ -11917,23 +11917,22 @@ function refillHintDeck() {
 
   const timeHints = availableHints
     .filter(h => h.tijd != null)
-    .sort((a, b) => b.tijd - a.tijd);
+    .sort((a, b) => a.tijd - b.tijd);
 
   const rest = shuffle(
     availableHints.filter(h => h.tijd == null)
   );
 
+  // interleave i.p.v. insert spaghettie
   const result = [];
+  let t = 0, r = 0;
 
-  // 👇 kernregel: bouw eerst tijdlijn-sequentie vast
-  for (const h of timeHints) {
-    result.push(h);
-  }
-
-  // daarna pas random inserts van rest (zonder tijd te beïnvloeden)
-  for (const h of rest) {
-    const pos = Math.floor(Math.random() * (result.length + 1));
-    result.splice(pos, 0, h);
+  while (t < timeHints.length || r < rest.length) {
+    if (t < timeHints.length && (Math.random() < 0.6 || r >= rest.length)) {
+      result.push(timeHints[t++]);
+    } else {
+      result.push(rest[r++]);
+    }
   }
 
   hintDeck = result;
@@ -11972,8 +11971,8 @@ function showHint() {
   }
 
   // pak volgende hint
-  const hintObj = hintDeck.pop();
-
+  const hintObj = hintDeck.shift();
+  
   if (!hintObj) return;
 
   // toon hint
