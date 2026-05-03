@@ -11900,6 +11900,10 @@ const hintBubble = document.getElementById("hint-bubble");
 
 hintButton.onclick = showHint;
 
+let lastHintIndex = null;
+let hintVisible = false;
+let hintTimer = null;
+
 // ----- HINTS FUNCTIE -----
 function showHint() {
   if (hintVisible) {
@@ -11912,25 +11916,43 @@ function showHint() {
     return;
   }
 
-  const availableHints = getAvailableHints();
+  let availableHints = getAvailableHints();
+
   if (availableHints.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
     return;
   }
+  
+  let withTime = availableHints.filter(h => h.tijd != null);
+  let withoutTime = availableHints.filter(h => h.tijd == null);
+  withTime.sort((a, b) => b.tijd - a.tijd);
 
-  // kies een andere hint dan de laatst getoonde
-  let hintIndex = lastHintIndex;
-  if (availableHints.length === 1) {
-    hintIndex = 0;
-  } else {
-    while (hintIndex === lastHintIndex) {
-      hintIndex = Math.floor(Math.random() * availableHints.length);
+  let chosenHint;
+
+  if (withTime.length > 0) {
+    if (lastHintIndex === null || lastHintIndex >= withTime.length - 1) {
+      lastHintIndex = 0;
+    } else {
+      lastHintIndex++;
     }
-  }
-  lastHintIndex = hintIndex;
+  chosenHint = withTime[lastHintIndex];
+  } else {
+    // random voor hints zonder tijd
+    let randomIndex = lastHintIndex;
 
-  hintBubble.innerHTML = availableHints[hintIndex];
+    if (withoutTime.length === 1) {
+      randomIndex = 0;
+    } else {
+      while (randomIndex === lastHintIndex) {
+        randomIndex = Math.floor(Math.random() * withoutTime.length);
+      }
+    }
+   lastHintIndex = randomIndex;
+    chosenHint = withoutTime[randomIndex];
+  }
+
+  hintBubble.innerHTML = chosenHint.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
