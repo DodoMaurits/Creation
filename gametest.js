@@ -11971,7 +11971,7 @@ function showHint() {
   // --------------------------
   // DISPLAY
   // --------------------------
-  hintBubble.innerHTML = chosenHint.hint;
+  hintBubble.innerHTML = chosenHint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
