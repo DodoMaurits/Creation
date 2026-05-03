@@ -11917,19 +11917,30 @@ function refillHintDeck() {
 
   const timeHints = availableHints
     .filter(h => h.tijd != null)
-    .sort((a, b) => b.tijd - a.tijd); // A → B → C (vast)
+    .sort((a, b) => b.tijd - a.tijd); // vaste interne volgorde
 
   const rest = availableHints.filter(h => h.tijd == null);
 
-  const orderedTime = [...timeHints];
+  const combined = [...timeHints, ...rest];
 
-  const shuffledRest = shuffle([...rest]);
+  // 1. random shuffle
+  const shuffled = shuffle([...combined]);
 
-  // combine
-  const combined = [...orderedTime, ...shuffledRest];
+  // 2. correctie stap: fix time-volgorde binnen shuffled array
+  const timeMap = new Map(timeHints.map((h, i) => [h.id, i]));
 
-  // NU pas shuffle van POSITIES, niet inhoud
-  hintDeck = shuffle(combined);
+  shuffled.sort((a, b) => {
+    const aTime = timeMap.has(a.id);
+    const bTime = timeMap.has(b.id);
+
+    if (aTime && bTime) {
+      return timeMap.get(a.id) - timeMap.get(b.id);
+    }
+
+    return 0; // rest blijft random volgorde behouden
+  });
+
+  hintDeck = shuffled;
 }
 
 function stableGroupShuffle(timeGroup, normalGroup) {
