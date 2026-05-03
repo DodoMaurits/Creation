@@ -11321,8 +11321,7 @@ let unlockedElements = new Set(["Oerknal", "Kou", "Warmte"]);
 let introStep = 0;
 let lastExplanation = null;
 let lastExplanationIsThresholdElement = false;
-let lastHint = null;
-let lastHintIndex = -1;
+let hintDeck = [];
 let hintVisible = false;
 let hintTimer = null;
 
@@ -11336,6 +11335,10 @@ const timelineLabel = document.getElementById("timeline-label");
 const closedContainer = document.getElementById("closed-container");
 const leftSide = document.getElementById("left-side");
 const rightSide = document.getElementById("right-side");
+const hintButton = document.getElementById("hint-button");
+const hintBubble = document.getElementById("hint-bubble");
+
+hintButton.onclick = showHint;
 
 // ----- INIT -----
 renderClosed();
@@ -12226,52 +12229,94 @@ function getAvailableHints() {
 
     // -------- ALS ALLES OK IS --------
     if (typeof c.hint === "string" && c.hint.trim() !== "") {
-      availableHints.push(c.hint);
+      availableHints.push({
+        id: c.id,   // 👈 BELANGRIJK
+        hint: c.hint,
+        tijd: c.tijd ?? null
+      });
     }
   }
   
   return availableHints;
 }
 
-const hintButton = document.getElementById("hint-button");
-const hintBubble = document.getElementById("hint-bubble");
+// ----- HINTS SHUFFLE -----
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
-hintButton.onclick = showHint;
+// ----- REFILL DECK -----
+function refillHintDeck() {
+  const availableHints = getAvailableHints();
 
-// ----- HINTS FUNCTIE -----
+  // 1. tijd-hints: OUD → NIEUW (hoog → laag)
+  const timeHints = availableHints
+    .filter(h => h.tijd != null)
+    .sort((a, b) => b.tijd - a.tijd);
+
+  // 2. rest random
+  const rest = shuffle(
+    availableHints.filter(h => h.tijd == null)
+  );
+
+  // 3. bouw deck: tijd blijft 100% stabiel, rest ertussen
+  const result = [...timeHints];
+
+  for (const h of rest) {
+    const pos = Math.floor(Math.random() * (result.length + 1));
+    result.splice(pos, 0, h);
+  }
+
+  hintDeck = result;
+}
+
+// ----- SHOW HINT -----
 function showHint() {
+  const availableHints = getAvailableHints();
+
+  // knop state correct zetten
+  if (availableHints.length > 0) {
+    hintButton.classList.remove("disabled");
+    hintButton.style.pointerEvents = "auto";
+  }
+
+  // toggle sluiten
   if (hintVisible) {
     hintBubble.classList.remove("visible");
     hintVisible = false;
-    if (hintTimer) {
-      clearTimeout(hintTimer);
-      hintTimer = null;
-    }
+    if (hintTimer) clearTimeout(hintTimer);
     return;
   }
 
-  const availableHints = getAvailableHints();
+  // geen hints beschikbaar
   if (availableHints.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
     return;
   }
 
-  // kies een andere hint dan de laatst getoonde
-  let hintIndex = lastHintIndex;
-  if (availableHints.length === 1) {
-    hintIndex = 0;
-  } else {
-    while (hintIndex === lastHintIndex) {
-      hintIndex = Math.floor(Math.random() * availableHints.length);
-    }
-  }
-  lastHintIndex = hintIndex;
+  // deck leeg of niet meer geldig → opnieuw vullen
+  const availableIds = new Set(availableHints.map(h => h.id));
 
-  hintBubble.innerHTML = availableHints[hintIndex];
+  if (hintDeck.length === 0) {
+    refillHintDeck();
+  }
+
+  // pak volgende hint
+  const hintObj = hintDeck.shift();
+  
+  if (!hintObj) return;
+
+  // toon hint
+  hintBubble.innerHTML = hintObj.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
+  // auto hide
   if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
