@@ -1387,6 +1387,19 @@ const combinaties = [
   },
   {
     input: [
+      ["Zout", "Meer"], ["Strand", "Meer"], ["Rif", "Kust"]
+    ],
+    hint: `Ken je die zoute meren langs de kust?`,
+    output: [
+      { naam: "Lagune", icoon: "icons/Lagune.png", map: "Water", 
+        quote: `Out to sea, the calm lagoon waters were darkening, while the commets overhead glowed brighter, omens 
+        in the gloaming
+        <br><br>- Julian May`
+      }
+    ]
+  },
+  {
+    input: [
       ["Gipssteen", "Water"], ["Gipssteen", "Meer"], ["Gipssteen", "Zee"], ["Gipssteen", "Oceaan"],
       ["Rivier", "Gipssteen"]
     ],
@@ -1395,6 +1408,20 @@ const combinaties = [
       { naam: "Gips", icoon: "icons/Gips.png", map: "Chemie", 
         quote: `The broken bone, once set together, is stronger than ever 
         <br><br>- John Lyly`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kust", "Graniet"], ["Kust", "Basalt"], ["Kust", "Berg"], ["Rivier", "Berg"], ["Zandsteen", "Kust"],
+      ["Kalksteen", "Kust"], ["Krijt", "Kust"]
+    ],
+    hint: `Bij de hoge rots.. pas op dat je niet van de rand van de wereld valt!`,
+    output: [
+      { naam: "Klif", icoon: "icons/Klif.png", map: "Landschap", 
+        quote: `Be like the cliff against which the waves continually break; but it stands firm and tames the fury
+        of the water around it
+        <br><br>- Marcus Aurelius`
       }
     ]
   },
@@ -1486,6 +1513,19 @@ const combinaties = [
       { naam: "Fylliet", icoon: "icons/Fylliet.png", map: "Aarde", 
         quote: `Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism 
         <br><br>- Rollin Salisbury`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Klif", "Meer"], ["Klif", "Rivier"]
+    ],
+    hint: `Laat het water niet over het randje vallen..`,
+    output: [
+      { naam: "Waterval", icoon: "icons/Waterval.png", map: "Landschap", 
+        quote: `As long as I live, I'll hear waterfalls and birds and winds sing... I'll acquaint myself with the glaciers
+        and wild gardens, and get as near the heart of the world as I can
+        <br><br>- John Muir`
       }
     ]
   },
@@ -7928,13 +7968,9 @@ const combinaties = [
         <br><br>- Hugh Falkus`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7957,13 +7993,9 @@ const combinaties = [
         <br><br>- Colin Braithwaite`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -7984,13 +8016,9 @@ const combinaties = [
         <br><br>- Alister Hardy`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8005,13 +8033,9 @@ const combinaties = [
         <br><br>- David Attenborough`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8040,13 +8064,9 @@ const combinaties = [
         <br><br>- James Morris`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8064,13 +8084,9 @@ const combinaties = [
         <br><br>- David Attenborough`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8097,13 +8113,9 @@ const combinaties = [
         <br><br>- Frederik Kendall`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8112,18 +8124,229 @@ const combinaties = [
     tijd: 20_000_000,
     output: [
       { naam: "Piranha", icoon: "icons/Piranha.png", map: "Vissen", 
-        quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome predators of
-        popular imagination
+        quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome 
+        predators of popular imagination
         <br><br>- Herbert Axelrod`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: [
+      ["Archaeopteryx", "IJs"], ["Archaeopteryx", "Poolgebied"], ["Archaeopteryx", "Sneeuw"],
+    ],
+    hint: `Sommige archaeopteryx voelen zich thuis in ijs en sneeuw.`,
+    tijd: 60_000_000,
+    output: [
+      { naam: "Pinguïns", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
+        much fun time in the water, we don't even want to fly!
+        <br><br>- Jasmin Martin`
       }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "De Maan"],
+    hint: `Sommige archaeopteryx voelen zich thuis in de nacht.`,
+    tijd: 45_000_000,
+    output: [
+      { naam: "Uilen", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `When the owl sings, the night is silent
+        <br><br>- Charles de Leusse`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "Berg"],
+    hint: `Sommige archaeopteryx voelen zich thuis in de bergen.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Duiven", icoon: "icons/Duiven.png", map: "Vogels", 
+        quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
+        messenger, companion, and symbol across cultures
+        <br><br>- Colin Tudge`
+      },
+      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: [
+      ["Archaeopteryx", "Meer"], ["Archaeopteryx", "Rivier"],
+    ],
+    hint: `Sommige archaeopteryx voelen zich thuis in rustig vaarwater.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Eenden", icoon: "icons/Eenden.png", map: "Vogels", 
+        quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
+        <br><br>- Wangari Maathai`
+      },
+      { naam: "Ganzen", icoon: "icons/Ganzen.png", map: "Vogels", 
+        quote: `Wild geese fly south; their cries drift away across the empty autumn sky
+        <br><br>- Li Bai`
+      },
+      { naam: "Zwanen", icoon: "icons/Zwanen.png", map: "Vogels", 
+        quote: `Wild geese and swans cross the cold river, their shadows vanishing into the pale sky above the water
+        <br><br>- Du Fu`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "Lucht"],
+    hint: `Sommige archaeopteryx voelen zich het meest thuis hoog in de lucht.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Zwaluwen", icoon: "icons/Zwaluwen.png", map: "Vogels", 
+        quote: `The swallow carries the scent of distant gardens across skies that never remain the same
+        <br><br>- Rumi`
+      },
+      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
+      },
+      { naam: "Spreeuwen", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+        quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
+        <br><br>- Giorgio Parisi`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "Ven"],
+    hint: `Sommige archaeopteryx voelen zich thuis in de begroeide vennetjes.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Ooievaars", icoon: "icons/Ooievaars.png", map: "Vogels", 
+        quote: `The arrival of the stork has long been associated with renewal and the return of life to the landscape 
+        in spring
+        <br><br>- Peter Scott`
+      },
+      { naam: "Eenden", icoon: "icons/Eenden.png", map: "Vogels", 
+        quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
+        <br><br>- Wangari Maathai`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "Zee"],
+    hint: `Sommige archaeopteryx voelen zich thuis bij de zee.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      },
+      { naam: "Aalscholvers", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+        quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
+        itself
+        <br><br>- Matsuo Basho`
+      },
+      { naam: "Pinguïns", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
+        much fun time in the water, we don't even want to fly!
+        <br><br>- Jasmin Martin`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: [
+      ["Archaeopteryx", "Regen"], ["Archaeopteryx", "Storm"], ["Archaeopteryx", "Wind"], ["Archaeopteryx", "Strand"],
+      ["Archaeopteryx", "Duinen"],
+    ],
+    hint: `Sommige archaeopteryx voelen zich thuis bij het strand.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "Kust"],
+    hint: `Sommige archaeopteryx voelen zich thuis aan de kust.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      },
+      { naam: "Aalscholvers", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+        quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
+        itself
+        <br><br>- Matsuo Basho`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "Oceaan"],
+    hint: `Sommige archaeopteryx voelen zich thuis bij de oceaan.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Papegaaiduikers", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
+        quote: `The cliffs were alive with puffins, each one a small spark of colour against stone and wind
+        <br><br>- Robert Macfarlane`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
+    input: ["Archaeopteryx", "Lagune"],
+    hint: `Sommige archaeopteryx voelen zich thuis bij het strand.`,
+    tijd: 45_000_000,
+    output: [
+      { naam: "Flamingo", icoon: "icons/Flamingo.png", map: "Vogels", 
+        quote: `Flamingos gather in shallow lakes where the water becomes a mirror for their colour, 
+        turning the landscape itself into something unreal
+        <br><br>- Alexander von Humboldt`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
@@ -8138,13 +8361,9 @@ const combinaties = [
         <br><br>- Elhadi M. Yahia`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
   },
   {
