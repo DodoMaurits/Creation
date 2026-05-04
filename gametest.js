@@ -1763,6 +1763,19 @@ const combinaties = [
   },
   {
     input: [
+      ["Zout", "Meer"], ["Strand", "Meer"], ["Rif", "Kust"]
+    ],
+    hint: `Ken je die zoute meren langs de kust?`,
+    output: [
+      { naam: "Lagune", icoon: "icons/Lagune.png", map: "Water", 
+        quote: `Out to sea, the calm lagoon waters were darkening, while the commets overhead glowed brighter, omens 
+        in the gloaming
+        <br><br>- Julian May`
+      }
+    ]
+  },
+  {
+    input: [
       ["Gipssteen", "Water"], ["Gipssteen", "Meer"], ["Gipssteen", "Zee"], ["Gipssteen", "Oceaan"],
       ["Rivier", "Gipssteen"]
     ],
@@ -1771,6 +1784,20 @@ const combinaties = [
       { naam: "Gips", icoon: "icons/Gips.png", map: "Chemie", 
         quote: `The broken bone, once set together, is stronger than ever 
         <br><br>- John Lyly`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kust", "Graniet"], ["Kust", "Basalt"], ["Kust", "Berg"], ["Rivier", "Berg"], ["Zandsteen", "Kust"],
+      ["Kalksteen", "Kust"], ["Krijt", "Kust"]
+    ],
+    hint: `Bij de hoge rots.. pas op dat je niet van de rand van de wereld valt!`,
+    output: [
+      { naam: "Klif", icoon: "icons/Klif.png", map: "Landschap", 
+        quote: `Be like the cliff against which the waves continually break; but it stands firm and tames the fury
+        of the water around it
+        <br><br>- Marcus Aurelius`
       }
     ]
   },
@@ -1862,6 +1889,19 @@ const combinaties = [
       { naam: "Fylliet", icoon: "icons/Fylliet.png", map: "Aarde", 
         quote: `Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism 
         <br><br>- Rollin Salisbury`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Klif", "Meer"], ["Klif", "Rivier"]
+    ],
+    hint: `Laat het water niet over het randje vallen..`,
+    output: [
+      { naam: "Waterval", icoon: "icons/Waterval.png", map: "Landschap", 
+        quote: `As long as I live, I'll hear waterfalls and birds and winds sing... I'll acquaint myself with the glaciers
+        and wild gardens, and get as near the heart of the world as I can
+        <br><br>- John Muir`
       }
     ]
   },
