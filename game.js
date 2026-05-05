@@ -12799,7 +12799,17 @@ function showHint() {
     refillHintDeck();
   }
 
-  // pak volgende hint
+  const availableHints = getAvailableHints();
+  
+  // sync deck met actuele staat
+  hintDeck = hintDeck.filter(h =>
+    availableHints.some(v => v.hint === h.hint && v.tijd === h.tijd)
+  );
+  
+  if (hintDeck.length === 0) {
+    refillHintDeck();
+  }
+  
   const hintObj = hintDeck.shift();
   
   if (!hintObj) return;
