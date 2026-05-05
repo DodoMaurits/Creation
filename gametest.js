@@ -8223,6 +8223,322 @@ const combinaties = [
   },
   {
     input: [
+      ["Archaeopteryx", "IJs"], ["Archaeopteryx", "Poolgebied"], ["Archaeopteryx", "Sneeuw"],
+    ],
+    hint: `Sommige archaeopteryx voelen zich thuis in ijs en sneeuw.`,
+    tijd: 60_000_000,
+    output: [
+      { naam: "Pinguïns", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
+        much fun time in the water, we don't even want to fly!
+        <br><br>- Jasmin Martin`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "De Maan"],
+    hint: `Sommige archaeopteryx voelen zich thuis in de nacht.`,
+    tijd: 45_000_000,
+    output: [
+      { naam: "Uilen", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `When the owl sings, the night is silent
+        <br><br>- Charles de Leusse`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Berg"],
+    hint: `Sommige archaeopteryx voelen zich thuis in de bergen.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Duiven", icoon: "icons/Duiven.png", map: "Vogels", 
+        quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
+        messenger, companion, and symbol across cultures
+        <br><br>- Colin Tudge`
+      },
+      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Archaeopteryx", "Meer"], ["Archaeopteryx", "Rivier"],
+    ],
+    hint: `Sommige archaeopteryx voelen zich thuis in rustig vaarwater.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Eenden", icoon: "icons/Eenden.png", map: "Vogels", 
+        quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
+        <br><br>- Wangari Maathai`
+      },
+      { naam: "Ganzen", icoon: "icons/Ganzen.png", map: "Vogels", 
+        quote: `Wild geese fly south; their cries drift away across the empty autumn sky
+        <br><br>- Li Bai`
+      },
+      { naam: "Zwanen", icoon: "icons/Zwanen.png", map: "Vogels", 
+        quote: `Wild geese and swans cross the cold river, their shadows vanishing into the pale sky above the water
+        <br><br>- Du Fu`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Lucht"],
+    hint: `Sommige archaeopteryx voelen zich het meest thuis hoog in de lucht.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Zwaluwen", icoon: "icons/Zwaluwen.png", map: "Vogels", 
+        quote: `The swallow carries the scent of distant gardens across skies that never remain the same
+        <br><br>- Rumi`
+      },
+      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
+      },
+      { naam: "Spreeuwen", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+        quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
+        <br><br>- Giorgio Parisi`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Ven"],
+    hint: `Sommige archaeopteryx voelen zich thuis in de begroeide vennetjes.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Ooievaars", icoon: "icons/Ooievaars.png", map: "Vogels", 
+        quote: `The arrival of the stork has long been associated with renewal and the return of life to the landscape 
+        in spring
+        <br><br>- Peter Scott`
+      },
+      { naam: "Eenden", icoon: "icons/Eenden.png", map: "Vogels", 
+        quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
+        <br><br>- Wangari Maathai`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Zee"],
+    hint: `Sommige archaeopteryx voelen zich thuis bij de zee.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      },
+      { naam: "Aalscholvers", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+        quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
+        itself
+        <br><br>- Matsuo Basho`
+      },
+      { naam: "Pinguïns", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
+        much fun time in the water, we don't even want to fly!
+        <br><br>- Jasmin Martin`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Archaeopteryx", "Regen"], ["Archaeopteryx", "Storm"], ["Archaeopteryx", "Wind"], ["Archaeopteryx", "Strand"],
+      ["Archaeopteryx", "Duinen"],
+    ],
+    hint: `Sommige archaeopteryx voelen zich thuis bij het strand.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Kust"],
+    hint: `Sommige archaeopteryx voelen zich thuis aan de kust.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      },
+      { naam: "Aalscholvers", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+        quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
+        itself
+        <br><br>- Matsuo Basho`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Oceaan"],
+    hint: `Sommige archaeopteryx voelen zich thuis bij de oceaan.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Papegaaiduikers", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
+        quote: `The cliffs were alive with puffins, each one a small spark of colour against stone and wind
+        <br><br>- Robert Macfarlane`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Lagune"],
+    hint: `Sommige archaeopteryx voelen zich thuis bij het strand.`,
+    tijd: 45_000_000,
+    output: [
+      { naam: "Flamingo", icoon: "icons/Flamingo.png", map: "Vogels", 
+        quote: `Flamingos gather in shallow lakes where the water becomes a mirror for their colour, 
+        turning the landscape itself into something unreal
+        <br><br>- Alexander von Humboldt`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Klif"],
+    hint: `Sommige archaeopteryx voelen zich thuis bij de kliffen.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Papegaaiduikers", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
+        quote: `The cliffs were alive with puffins, each one a small spark of colour against stone and wind
+        <br><br>- Robert Macfarlane`
+      },
+      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
+      },
+      { naam: "Duiven", icoon: "icons/Duiven.png", map: "Vogels", 
+        quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
+        messenger, companion, and symbol across cultures
+        <br><br>- Colin Tudge`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Bot"],
+    hint: `Sommige archaeopteryx feesten bij de kadavers.`,
+    tijd: 30_000_000,
+    output: [
+      { naam: "Gieren", icoon: "icons/Gieren.png", map: "Vogels", 
+        quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
+        <br><br>- Alexander von Humboldt`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Archaeopteryx", "Moeras"], ["Waterriet", "Archaeopteryx"]
+    ],
+    hint: `Sommige archaeopteryx voelen zich thuis bij het moerasriet.`,
+    tijd: 50_000_000,
+    output: [
+      { naam: "Reigers", icoon: "icons/Reigers.png", map: "Vogels", 
+        quote: `A heron stands motionless at the water’s edge, then strikes with a suddenness that breaks the 
+        illusion of stillnes
+        <br><br>- J.A. Baker`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Zaadjes"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Mussen", icoon: "icons/Mussen.png", map: "Vogels", 
+        quote: `A sparrow hops - and the quiet of the garden is suddenly complete
+        <br><br>- Kobayashi Issa`
+      },
+      { naam: "Kippen", icoon: "icons/Kippen.png", map: "Vogels", 
+        quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
+        <br><br>- Fridtjof Nansen`
+      },
+      { naam: "Duiven", icoon: "icons/Duiven.png", map: "Vogels", 
+        quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
+        messenger, companion, and symbol across cultures
+        <br><br>- Colin Tudge`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Hout"],
+    hint: `Sommige archaeopteryx voelen zich thuis in de bomen.`,
+    tijd: 45_000_000,
+    output: [
+      { naam: "Spechten", icoon: "icons/Spechten.png", map: "Vogels", 
+        quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
+        <br><br>- Annie Dillard`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "map:Bomen"],
+    tijd: 20_000_000,
+    output: [
+      { naam: "Spechten", icoon: "icons/Spechten.png", map: "Vogels", 
+        quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
+        <br><br>- Annie Dillard`
+      },
+      { naam: "Spreeuwen", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+        quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
+        <br><br>- Giorgio Parisi`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Bos"],
+    hint: `Sommige archaeopteryx voelen zich thuis in het bos.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Uilen", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `When the owl sings, the night is silent
+        <br><br>- Charles de Leusse`
+      },
+      { naam: "Vinken", icoon: "icons/Vinken.png", map: "Vogels", 
+        quote: `The small bird sings not to be heard, but because the world asks for sound
+        <br><br>- Mary Oliver`
+      },
+      { naam: "Fazanten", icoon: "icons/Fazanten.png", map: "Vogels", 
+        quote: `A pheasant bursts from the grass, scattering silence into wings and colour
+        <br><br>- Wang Wei`
+      },
+      { naam: "Kraaien", icoon: "icons/Kraaien.png", map: "Vogels", 
+        quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
+        <br><br>- Ma Zhiyuan`
+      }
+    ]
+  },
+  {
+    input: ["Archaeopteryx", "Tropisch regenwoud"],
+    hint: `Sommige archaeopteryx voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Kolibries", icoon: "icons/Kolibries.png", map: "Vogels", 
+        quote: `The hummingbird is a fragment of the rainbow, suspended in air
+        <br><br>- Pablo Neruda`
+      },
+      { naam: "Pauwen", icoon: "icons/Pauwen.png", map: "Vogels", 
+        quote: `In the garden, the peacock walks as if it remembers a lost paradise
+        <br><br>- Rumi`
+      },
+      { naam: "Papegaaien", icoon: "icons/Papegaaien.png", map: "Vogels", 
+        quote: `Parrots flash through the forest like fragments of fire moving between trees
+        <br><br>- Alexander von Humboldt`
+      },
+      { naam: "Kippen", icoon: "icons/Kippen.png", map: "Vogels", 
+        quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
+        <br><br>- Fridtjof Nansen`
+      }
+    ]
+  },
+  {
+    input: ["Bloem", "Archaeopteryx"],
+    tijd: 25_000_000,
+    output: [
+      { naam: "Kolibries", icoon: "icons/Kolibries.png", map: "Vogels", 
+        quote: `The hummingbird is a fragment of the rainbow, suspended in air
+        <br><br>- Pablo Neruda`
+      }
+    ]
+  },
+  {
+    input: [
       ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
     ],
     hint: `Sommige magnoliden bouwen voort op hun wateropslag.`,
@@ -8765,6 +9081,53 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Gras", "Archaeopteryx"], ["Weide", "Archaeopteryx"]
+    ],
+    hint: `Sommige arhaeopteryx voelen zich thuis op de grasweides.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Kieviten", icoon: "icons/Kieviten.png", map: "Vogels", 
+        quote: `The lapwing tumbles and twists over the fields, its flight full of sudden turns and restless energy
+        <br><br>- Richard Jefferies`
+      }
+    ]
+  },
+  {
+    input: ["Buxus", "Archaeopteryx"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Fazanten", icoon: "icons/Fazanten.png", map: "Vogels", 
+        quote: `A pheasant bursts from the grass, scattering silence into wings and colour
+        <br><br>- Wang Wei`
+      },
+      { naam: "Vinken", icoon: "icons/Vinken.png", map: "Vogels", 
+        quote: `The small bird sings not to be heard, but because the world asks for sound
+        <br><br>- Mary Oliver`
+      }
+    ]
+  },
+  {
+    input: ["Savanne", "Archaeopteryx"],
+    hint: `Sommige archaeopteryx voelen zich thuis op de savanne.`,
+    tijd: 25_000_000,
+    output: [
+      { naam: "Gieren", icoon: "icons/Gieren.png", map: "Vogels", 
+        quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
+        <br><br>- Alexander von Humboldt`
+      },
+      { naam: "Struisvogels", icoon: "icons/Struisvogels.png", map: "Vogels", 
+        quote: `The ostrich is the largest living bird, powerful on the ground yet unable to take to the air
+        <br><br>- Richard Lydekker`
+      },
+      { naam: "Secretarisvogels", icoon: "icons/Secretarisvogels.png", map: "Vogels", 
+        quote: `The secretarybird moves across the African savanna with long, deliberate strides, searching the ground 
+        for snakes and insects
+        <br><br>- Derek Ratcliffe`
+      }
+    ]
+  },
+  {
     input: ["Savanne", "Oermonocotylen"],
     hint: `Sommige monocotylen voelen zich thuis op de savanne.`,
     tijd: 50_000_000,
@@ -8825,6 +9188,21 @@ const combinaties = [
       { naam: "Haver", icoon: "icons/Haver.png", map: "Granen", 
         quote: `Oats are of a cleansing quality and are used more for feeding than for bread
         <br><br>- John Gerard`
+      }
+    ]
+  },
+  {
+    input: ["Steppe", "Archaeopteryx"],
+    hint: `Sommige archaeopteryx voelen zich thuis op de steppe.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Ganzen", icoon: "icons/Ganzen.png", map: "Vogels", 
+        quote: `Wild geese fly south; their cries drift away across the empty autumn sky
+        <br><br>- Li Bai`
+      },
+      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
       }
     ]
   },
@@ -10032,6 +10410,16 @@ const combinaties = [
       { naam: "Suiker", icoon: "icons/Suiker.png", map: "Genotwaren", 
         quote: `Sugar is a substance that has taken hold of the modern world like a drug
         <br><br>- William Dufty`
+      }
+    ]
+  },
+  {
+    input: ["map:Granen", "Archaeopteryx"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Mussen", icoon: "icons/Mussen.png", map: "Vogels", 
+        quote: `A sparrow hops - and the quiet of the garden is suddenly complete
+        <br><br>- Kobayashi Issa`
       }
     ]
   },
