@@ -12720,6 +12720,13 @@ function getAvailableHints() {
       if (!normalizedUnlocked.includes(needed)) continue; // hint nog niet tonen
     }
 
+    // -------- OUTPUT AL GEHAALD CHECK --------
+    const outputsAlreadyUnlocked = c.output.every(o =>
+      unlockedElements.has(o.naam)
+    );
+    
+    if (outputsAlreadyUnlocked) continue;
+    
     // -------- ALS ALLES OK IS --------
     if (typeof c.hint === "string" && c.hint.trim() !== "") {
       availableHints.push({
@@ -12799,17 +12806,7 @@ function showHint() {
     refillHintDeck();
   }
 
-  const availableHints = getAvailableHints();
-  
-  // sync deck met actuele staat
-  hintDeck = hintDeck.filter(h =>
-    availableHints.some(v => v.hint === h.hint && v.tijd === h.tijd)
-  );
-  
-  if (hintDeck.length === 0) {
-    refillHintDeck();
-  }
-  
+  // pak volgende hint
   const hintObj = hintDeck.shift();
   
   if (!hintObj) return;
