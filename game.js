@@ -8157,7 +8157,7 @@ const combinaties = [
     hint: `Sommige archaeopteryx voelen zich thuis in de nacht.`,
     tijd: 45_000_000,
     output: [
-      { naam: "Uilen", icoon: "icons/Pinguïns.png", map: "Vogels", 
+      { naam: "Uilen", icoon: "icons/Uilen.png", map: "Vogels", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       }
@@ -8467,7 +8467,7 @@ const combinaties = [
     hint: `Sommige archaeopteryx voelen zich thuis in het bos.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Uilen", icoon: "icons/Pinguïns.png", map: "Vogels", 
+      { naam: "Uilen", icoon: "icons/Uilen.png", map: "Vogels", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       },
