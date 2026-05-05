@@ -9584,7 +9584,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Wespen"],
-    hint: `Sommige fabiden gaan goed samen met de wespen.`,
+    hint: `Sommige fabiden en hun zoete vruchten gaan goed samen met de wespen.`,
     tijd: 50_000_000,
     output: [
       { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
@@ -9838,7 +9838,6 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Glucose"],
-    hint: `Sommige malviden specialiseren zich in het vermeerderen van hun glucose.`,
     tijd: 8_000_000,
     output: [
       { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
@@ -9895,7 +9894,6 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Blad"],
-    hint: `Sommige malviden maken van hun bladeren hun strategie.`,
     tijd: 5_000_000,
     output: [
       { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
@@ -9928,7 +9926,6 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Kevers"],
-    hint: `Sommige malviden vinden hun weg met de kevers.`,
     tijd: 30_000_000,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
@@ -9943,7 +9940,6 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Vliegen"],
-    hint: `Sommige malviden vinden hun weg met de vliegen.`,
     tijd: 5_000_000,
     output: [
       { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
@@ -10054,7 +10050,7 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Bloem"],
-    hint: `Sommige malviden floreren in de strategie van de bloem.`,
+    hint: `Sommige malviden floreren in de strategie van de opvallende bloem.`,
     tijd: 40_000_000,
     output: [
       { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
@@ -10204,7 +10200,7 @@ const combinaties = [
       ["Oercaryophyllales", "Ven"], ["Oercaryophyllales", "Moeras"], ["Oercaryophyllales", "Spinnen"],
       ["Oercaryophyllales", "Bladluizen"], ["Oercaryophyllales", "Vliegen"], ["Oercaryophyllales", "Muggen"]
     ],
-    hint: `Sommige caryophyllales weten insecten te verteren in het moeras.`,
+    hint: `Sommige caryophyllales weten insecten te verteren in moerassen.`,
     tijd: 10_000_000,
     output: [
       { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
@@ -10362,7 +10358,7 @@ const combinaties = [
   },
   {
     input: ["Oerasteriden", "Evolutie"],
-    hint: `De supergroep van asteriden moet nog evolueren in enorme verscheidenheid.`,
+    hint: `Vergeet niet hoeveel soorten wel niet voortkomen uit de voorouderlijke asteriden.`,
     output: [
       { naam: "Oerericales", icoon: "icons/Oerericales.png", map: "Planten", 
         quote: `The Ericales are a morphologically diverse order characterized by frequent adaptations to nutrient-poor 
@@ -10437,8 +10433,27 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerfagales", "Berg"],
+    hint: `Sommige fagales voelen zich thuis in bergachtig gebied.`,
+    tijd: 50_000_000,
+    output: [
+      { naam: "Walnoten", icoon: "icons/Walnoten.png", map: "Zaden", 
+        quote: `The walnut carries strength within a guarded shell
+        <br><br>- John Ruskin`
+      },
+      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
+        quote: `Alders are the silent pioneers of wet ground and riverbanks
+        <br><br>- Richard Mabey`
+      },
+      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
+        quote: `The birch is the emblem of the northern wilderness
+        <br><br>- Henry Thoreau`
+      }
+    ]
+  },
+  {
     input: [
-      ["Oerfagales", "Berg"], ["Oerfagales", "Ven"], ["Oerfagales", "Rivier"], ["Oerfagales", "Moeras"]
+      ["Oerfagales", "Ven"], ["Oerfagales", "Rivier"], ["Oerfagales", "Moeras"]
     ],
     hint: `Sommige fagales voelen zich thuis bij waterige grond.`,
     tijd: 50_000_000,
@@ -10477,7 +10492,6 @@ const combinaties = [
   },
   {
     input: ["Oerfagales", "Zaadjes"],
-    hint: `Sommige fagales maken werk van hun zaden.`,
     tijd: 50_000_000,
     output: [
       { naam: "Hazelnoten", icoon: "icons/Hazelnoten.png", map: "Zaden", 
@@ -10545,7 +10559,7 @@ const combinaties = [
     input: [
       ["Oerericales", "Zand"], ["Oerericales", "Duinen"], ["Oerericales", "Gras"], ["Oerericales", "Weide"]
     ],
-    hint: `Sommige ericales voelen zich thuis in zand en duinen.`,
+    hint: `Sommige ericales voelen zich thuis in de zanderige duinen.`,
     tijd: 40_000_000,
     output: [
       { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
@@ -10591,30 +10605,11 @@ const combinaties = [
     input: [
       ["Oerericales", "Gif"], ["Oerericales", "Blad"]
     ],
-    hint: `Sommige ericales kiezen voor de strategie van het gif en blad.`,
+    hint: `Sommige ericales kiezen voor de strategie van het gif.`,
     output: [
       { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
         <br><br>- Okakura Kakuzo`
-      }
-    ]
-  },
-  {
-    input: ["Oerericales", "Zaadjes"],
-    hint: `Sommige ericales richten zich op hun zaadjes.`,
-    tijd: 5_000_000,
-    output: [
-      { naam: "Paranoten", icoon: "icons/Paranoten.png", map: "Zaden", 
-        quote: `Brazil nut trees are among the most important non-timber forest products of the Amazon
-        <br><br>- T.H. Hollowell`
-      },
-      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
-        quote: `The argan tree gives us oil, shade, and life in a difficult land
-        <br><br>- Fatima Tihihit`
-      },
-      { naam: "Sheabomen", icoon: "icons/Sheabomen.png", map: "Bomen", 
-        quote: `Vitellaria paradoxa is a long-lived tree of the dry savanna, deeply adapted to fire and drought
-        <br><br>- Daniel Hall`
       }
     ]
   },
@@ -10647,7 +10642,6 @@ const combinaties = [
     input: [
       ["Oerericales", "Vlinders"], ["Oerericales", "Bijen"]
     ],
-    hint: `Sommige ericales gaan samen voorts met de vlinders en bijen.`,
     tijd: 40_000_000,
     output: [
       { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
