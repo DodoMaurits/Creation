@@ -8335,7 +8335,7 @@ const combinaties = [
   },
   {
     input: ["Archaeopteryx", "Lagune"],
-    hint: `Sommige archaeopteryx voelen zich thuis bij het strand.`,
+    hint: `Sommige archaeopteryx voelen zich thuis in de lagune.`,
     tijd: 45_000_000,
     output: [
       { naam: "Flamingo", icoon: "icons/Flamingo.png", map: "Vogels", 
