@@ -12722,7 +12722,7 @@ function getAvailableHints() {
 
     // -------- OUTPUT AL GEHAALD CHECK --------
     const outputsAlreadyUnlocked = c.output.every(o =>
-      unlockedElements.has(o.naam)
+      unlockedElements.has(o.naam?.trim())
     );
     
     if (outputsAlreadyUnlocked) continue;
