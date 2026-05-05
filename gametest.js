@@ -10415,6 +10415,7 @@ const combinaties = [
   },
   {
     input: ["map:Granen", "Archaeopteryx"],
+    hint: `Sommige archaeopteryx doen zich tegoed aan granen en zaadjes`,
     tijd: 10_000_000,
     output: [
       { naam: "Mussen", icoon: "icons/Mussen.png", map: "Vogels", 
