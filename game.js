@@ -1399,7 +1399,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Zout", "Meer"], ["Strand", "Meer"], ["Rif", "Kust"]
+      ["Zout", "Meer"], ["Kust", "Meer"], ["Strand", "Meer"], ["Rif", "Kust"]
     ],
     hint: `Ken je die zoute meren langs de kust?`,
     output: [
