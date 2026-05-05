@@ -1377,6 +1377,18 @@ const combinaties = [
   },
   {
     input: [
+      ["Wolk", "Ster"], ["Regen", "Ster"], ["Licht", "Wolk"], ["Licht", "Regen"]
+    ],
+    hint: `Als het licht schijnt door de regendruppels.. je weet wel waar ik naartoe wil.`,
+    output: [
+      { naam: "Regenboog", icoon: "icons/Regenboog.png", map: "Lucht", 
+        quote: `Somewhere over the rainbow, skies are blue, and the dreams that you dare to dream really do come true
+        <br><br>- Judy Garland`
+      }
+    ]
+  },
+  {
+    input: [
       ["Wolk", "Rook"], ["Regen", "Rook"]
     ],
     hint: `Oei, oei, regen uit zwarte wolken.`,
