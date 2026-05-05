@@ -12799,19 +12799,9 @@ function showHint() {
     refillHintDeck();
   }
 
-  // 🔹 deck opschonen vóór gebruik
-  const availableIds = new Set(availableHints.map(h => h.id));
-  
-  hintDeck = hintDeck.filter(h => availableIds.has(h.id));
-  
-  // als deck leeg is na cleanup → opnieuw vullen
-  if (hintDeck.length === 0) {
-    refillHintDeck();
-  }
-  
   // pak volgende hint
   const hintObj = hintDeck.shift();
-    
+  
   if (!hintObj) return;
 
   // toon hint
