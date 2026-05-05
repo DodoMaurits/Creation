@@ -12795,14 +12795,6 @@ function showHint() {
   // deck leeg of niet meer geldig → opnieuw vullen
   const availableIds = new Set(availableHints.map(h => h.id));
 
-  // 🔹 ALTijd syncen met actuele state (oude code gedrag)
-  const availableHints = getAvailableHints();
-  const availableIds = new Set(availableHints.map(h => h.id));
-  
-  // gooi oude/ongeldige hints weg
-  hintDeck = hintDeck.filter(h => availableIds.has(h.id));
-  
-  // als leeg → opnieuw vullen
   if (hintDeck.length === 0) {
     refillHintDeck();
   }
