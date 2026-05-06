@@ -7279,6 +7279,18 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oertrochozoa", "Brein"],
+    hint: `Laten we één creatie alles geven: hyperintelligentie, razendsnel camouflagevermogen, zuignappen, leervermogen,
+    de beste ogen, inkt spuiten, jetpropulsie... en 3 harten.`,
+    output: [
+      { naam: "Octopussen", icoon: "icons/Octopussen.png", map: "Waterdieren", 
+        quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
+        with an octopus
+        <br><br>- Sy Montgomery`
+      }
+    ]
+  },
+  {
     input: [
       ["Oermaniraptoren", "Evolutie"], ["Oermaniraptoren", "Lucht"]
     ],
