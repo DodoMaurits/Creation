@@ -9112,7 +9112,7 @@ const combinaties = [
     input: [
       ["Gras", "Archaeopteryx"], ["Weide", "Archaeopteryx"]
     ],
-    hint: `Sommige arhaeopteryx voelen zich thuis op de grasweides.`,
+    hint: `Sommige archaeopteryx voelen zich thuis op de grasweides.`,
     tijd: 15_000_000,
     output: [
       { naam: "Kieviten", icoon: "icons/Kieviten.png", map: "Vogels", 
