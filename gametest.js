@@ -12458,6 +12458,13 @@ function getAvailableHints() {
       if (!normalizedUnlocked.includes(needed)) continue; // hint nog niet tonen
     }
 
+    // -------- OUTPUT AL GEHAALD CHECK --------
+    const outputsAlreadyUnlocked = c.output.every(o =>
+      unlockedElements.has(o.naam?.trim())
+    );
+    
+    if (outputsAlreadyUnlocked) continue;
+    
     // -------- ALS ALLES OK IS --------
     if (typeof c.hint === "string" && c.hint.trim() !== "") {
       availableHints.push({
@@ -12532,7 +12539,9 @@ function showHint() {
 
   // deck leeg of niet meer geldig → opnieuw vullen
   const availableIds = new Set(availableHints.map(h => h.id));
-
+  
+  hintDeck = hintDeck.filter(h => availableIds.has(h.id));
+  
   if (hintDeck.length === 0) {
     refillHintDeck();
   }
