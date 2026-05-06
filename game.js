@@ -1,3 +1,5 @@
+console.log("BUTTON:", document.getElementById("hint-button"));
+
 // ---------------- DATA ------------------
 const mappen = [
   {
