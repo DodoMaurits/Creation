@@ -12425,30 +12425,34 @@ function getAvailableHints() {
 
   for (const c of combinaties) {
     // -------- INPUT CHECK --------
+    const allUnlocked = new Set([
+      ...unlockedElements,
+      ...mappen.flatMap(m => m.elementen.map(e => e.naam))
+    ]);
     let inputsSatisfied = false;
     if (typeof c.input[0] === "string") {
       const [a, b] = c.input;
       inputsSatisfied =
-        unlockedElements.has(a) &&
-        unlockedElements.has(b);
+        allUnlocked.has(a) &&
+        allUnlocked.has(b);
     } else {
       inputsSatisfied = c.input.some(set =>
-        unlockedElements.has(set[0]) &&
-        unlockedElements.has(set[1])
+        allUnlocked.has(set[0]) &&
+        allUnlocked.has(set[1])
       );
     }
     if (!inputsSatisfied) continue;
 
     // -------- OUTPUT CHECK --------
     const allOutputsUnlocked = c.output.every(o =>
-      unlockedElements.has(o.naam)
+      allUnlocked.has(o.naam)
     );
     if (allOutputsUnlocked) continue;
 
     // -------- THRESHOLD CHECK --------
     if (c.uitleg?.threshold?.requirements) {
       const normalizedUnlocked =
-        [...unlockedElements].map(e => e.trim().toLowerCase());
+        [...allUnlocked].map(e => e.trim().toLowerCase());
       const requirementsMet =
         c.uitleg.threshold.requirements.every(r =>
           normalizedUnlocked.includes(r.trim().toLowerCase())
@@ -12459,13 +12463,13 @@ function getAvailableHints() {
     // -------- THRESHOLD-ELEMENT CHECK --------
     if (c.uitleg?.thresholdElement) {
       const needed = c.uitleg.thresholdElement.naam.trim().toLowerCase();
-      const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
+      const normalizedUnlocked = [...allUnlocked].map(e => e.trim().toLowerCase());
       if (!normalizedUnlocked.includes(needed)) continue; // hint nog niet tonen
     }
 
     // -------- OUTPUT AL GEHAALD CHECK --------
     const outputsAlreadyUnlocked = c.output.every(o =>
-      unlockedElements.has(o.naam?.trim())
+      allUnlocked.has(o.naam?.trim())
     );
     
     if (outputsAlreadyUnlocked) continue;
