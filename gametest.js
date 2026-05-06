@@ -10458,7 +10458,7 @@ const combinaties = [
       ["Papegaaiduikers", "Papegaaiduikers"], ["Aalscholvers", "Aalscholvers"], ["Flamingo", "Flamingo"], 
       ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"]
     ],
-    hint: `Voor wie het zo ervaart mag trots zijn op het eten.`,
+    hint: `Van de grote dieren zijn er ook die liever samen leven.`,
     output: [
       { naam: "Gemeenschap", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
         quote: `Small communities grow great through harmony, great ones fall to pieces through discord
