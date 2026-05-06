@@ -6231,16 +6231,16 @@ const combinaties = [
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
         <br><br>- Aristoteles`
       },
-      { naam: "Coniferen", icoon: "icons/Coniferen.png", map: "Planten", 
+      { naam: "Coniferen", icoon: "icons/Coniferen.png", map: "Bomen", 
         quote: `The pine endures the winter winds, its needles unwavering, a friend to the solitary scholar
         <br><br>- Wang Wei`
       },
-      { naam: "Palmvarens", icoon: "icons/Palmvarens.png", map: "Planten", 
+      { naam: "Palmvarens", icoon: "icons/Palmvarens.png", map: "Bomen", 
         quote: `The romance of cycads, the gymnosperms that have been with us so long, can never be matched by any 
         somber row of pines standing in the churchyard of science and memory
         <br><br>- Edith Roberts`
       },
-      { naam: "Ginkgo", icoon: "icons/Ginkgo.png", map: "Planten", 
+      { naam: "Ginkgo", icoon: "icons/Ginkgo.png", map: "Bomen", 
         quote: `This leaf from a tree in the East … has been given to my garden. It reveals a certain secret which 
         pleases me and thoughtful people
         <br><br>- Johann von Goethe`
