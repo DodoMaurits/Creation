@@ -12425,10 +12425,7 @@ function getAvailableHints() {
 
   for (const c of combinaties) {
     // -------- INPUT CHECK --------
-    const allUnlocked = new Set([
-      ...unlockedElements,
-      ...mappen.flatMap(m => m.elementen.map(e => e.naam))
-    ]);
+    const allUnlocked = new Set(unlockedElements);
     let inputsSatisfied = false;
     if (typeof c.input[0] === "string") {
       const [a, b] = c.input;
