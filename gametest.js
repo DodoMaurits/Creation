@@ -11554,6 +11554,7 @@ let lastExplanation = null;
 let lastExplanationIsThresholdElement = false;
 let hintDeck = [];
 let hintVisible = false;
+let inputsSatisfied = false;
 let hintTimer = null;
 
 // 🔹 Tijdlijn
@@ -12426,9 +12427,7 @@ function getAvailableHints() {
   for (const c of combinaties) {
     // -------- INPUT CHECK --------
     const unlocked = new Set(unlockedElements);
-    
-    const unlocked = new Set(unlockedElements);
-    
+        
     function isStillRelevant(name) {
       const isUnlocked = unlocked.has(name);
     
