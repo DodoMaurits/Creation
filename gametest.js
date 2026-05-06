@@ -12431,14 +12431,7 @@ function getAvailableHints() {
         
       function isStillRelevant(name) {
         const isUnlocked = unlocked.has(name);
-      
-        // bestaat al in game (dus output bestaat al ergens)
-        const existsAsOutput = mappen.some(m =>
-          m.elementen.some(e => e.naam === name)
-        );
-      
-        // ❗ NIET tonen als het al in de game zit (dus al ooit gemaakt is)
-        return !isUnlocked && !existsAsOutput;
+        return !isUnlocked;
       }
     
     if (typeof c.input[0] === "string") {
@@ -12535,47 +12528,33 @@ function refillHintDeck() {
 function showHint() {
   const availableHints = getAvailableHints();
 
-  // knop state correct zetten
-  if (availableHints.length > 0) {
-    hintButton.classList.remove("disabled");
-    hintButton.style.pointerEvents = "auto";
-  }
-
-  // toggle sluiten
-  if (hintVisible) {
-    hintBubble.classList.remove("visible");
-    hintVisible = false;
-    if (hintTimer) clearTimeout(hintTimer);
-    return;
-  }
-
-  // geen hints beschikbaar
   if (availableHints.length === 0) {
     hintButton.classList.add("disabled");
     hintButton.style.pointerEvents = "none";
     return;
   }
 
-  // deck leeg of niet meer geldig → opnieuw vullen
+  hintButton.classList.remove("disabled");
+  hintButton.style.pointerEvents = "auto";
+
+  // ❗ altijd opnieuw bouwen als state mogelijk veranderd is
   const availableIds = new Set(availableHints.map(h => h.id));
-  
-  hintDeck = hintDeck.filter(h => availableIds.has(h.id));
-  
-  if (hintDeck.length === 0) {
+
+  const stillValid =
+    hintDeck.length > 0 &&
+    hintDeck.every(h => availableIds.has(h.id));
+
+  if (!stillValid) {
     refillHintDeck();
   }
 
-  // pak volgende hint
   const hintObj = hintDeck.shift();
-  
   if (!hintObj) return;
 
-  // toon hint
   hintBubble.innerHTML = hintObj.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
-  // auto hide
   if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
