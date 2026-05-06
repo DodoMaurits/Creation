@@ -12425,19 +12425,21 @@ function getAvailableHints() {
   const availableHints = [];
 
   for (const c of combinaties) {
+    let inputsSatisfied = false;
     // -------- INPUT CHECK --------
     const unlocked = new Set(unlockedElements);
         
-    function isStillRelevant(name) {
-      const isUnlocked = unlocked.has(name);
-    
-      // belangrijk: niet alleen unlocked, maar ook niet “overruled”
-      const existsInGame = mappen.some(m =>
-        m.elementen.some(e => e.naam === name)
-      );
-    
-      return existsInGame && !isUnlocked;
-    }
+      function isStillRelevant(name) {
+        const isUnlocked = unlocked.has(name);
+      
+        // bestaat al in game (dus output bestaat al ergens)
+        const existsAsOutput = mappen.some(m =>
+          m.elementen.some(e => e.naam === name)
+        );
+      
+        // ❗ NIET tonen als het al in de game zit (dus al ooit gemaakt is)
+        return !isUnlocked && !existsAsOutput;
+      }
     
     if (typeof c.input[0] === "string") {
       const [a, b] = c.input;
@@ -12454,10 +12456,11 @@ function getAvailableHints() {
     if (!inputsSatisfied) continue;
 
     // -------- OUTPUT CHECK --------
-    const allOutputsUnlocked = c.output.every(o =>
-      unlocked.has(o.naam)
+    const allOutputsAlreadyInGame = c.output.every(o =>
+      mappen.some(m => m.elementen.some(e => e.naam === o.naam))
     );
-    if (allOutputsUnlocked) continue;
+    
+    if (allOutputsAlreadyInGame) continue;
 
     // -------- THRESHOLD CHECK --------
     if (c.uitleg?.threshold?.requirements) {
