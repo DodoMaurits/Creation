@@ -12429,21 +12429,37 @@ function getAvailableHints() {
     // -------- INPUT CHECK --------
     const unlocked = new Set(unlockedElements);
         
-      function isStillRelevant(name) {
-        const isUnlocked = unlocked.has(name);
-        return !isUnlocked;
-      }
+    function existsInGame(name) {
+      return mappen.some(m =>
+        m.elementen.some(e => e.naam === name)
+      );
+    }
     
+    function isValidInput(name) {
+      const isUnlocked = unlocked.has(name);
+    
+      const exists = mappen.some(m =>
+        m.elementen.some(e => e.naam === name)
+      );
+    
+      if (!exists) return false;
+    
+      // alleen hint geven als:
+      // - element bestaat in game
+      // - en nog niet unlocked
+      return !isUnlocked;
+    }
+        
     if (typeof c.input[0] === "string") {
       const [a, b] = c.input;
     
       inputsSatisfied =
-        isStillRelevant(a) &&
-        isStillRelevant(b);
+        isValidInput(a) &&
+        isValidInput(b);
     } else {
       inputsSatisfied = c.input.some(set =>
-        isStillRelevant(set[0]) &&
-        isStillRelevant(set[1])
+        isValidInput(set[0]) &&
+        isValidInput(set[1])
       );
     }
     if (!inputsSatisfied) continue;
