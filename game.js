@@ -12939,7 +12939,9 @@ function showHint() {
 
   // deck leeg of niet meer geldig → opnieuw vullen
   const availableIds = new Set(availableHints.map(h => h.id));
-
+  
+  hintDeck = hintDeck.filter(h => availableIds.has(h.id));
+  
   if (hintDeck.length === 0) {
     refillHintDeck();
   }
