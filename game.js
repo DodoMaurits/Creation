@@ -11954,7 +11954,6 @@ let lastExplanation = null;
 let lastExplanationIsThresholdElement = false;
 let hintDeck = [];
 let hintVisible = false;
-let inputsSatisfied = false;
 let hintTimer = null;
 
 // 🔹 Tijdlijn
@@ -12822,143 +12821,76 @@ function renderSide(parentContainer, map, side) {
 
 // ----- HINT ENGINE -----
 function getAvailableHints() {
-  const availableHints = [];
+  const unlocked = new Set(unlockedElements);
 
-  for (const c of combinaties) {
-    let inputsSatisfied = false;
-    // -------- INPUT CHECK --------
-    const unlocked = new Set(unlockedElements);
-        
-      function isStillRelevant(name) {
-        const isUnlocked = unlocked.has(name);
-        return !isUnlocked;
-      }
-    
-    if (typeof c.input[0] === "string") {
-      const [a, b] = c.input;
-    
-      inputsSatisfied =
-        isStillRelevant(a) &&
-        isStillRelevant(b);
-    } else {
-      inputsSatisfied = c.input.some(set =>
-        isStillRelevant(set[0]) &&
-        isStillRelevant(set[1])
-      );
-    }
-    if (!inputsSatisfied) continue;
+  const isVisible = name =>
+    mappen.some(m => m.elementen.some(e => e.naam === name));
 
-    // -------- OUTPUT CHECK --------
-    const allOutputsAlreadyInGame = c.output.every(o =>
-      mappen.some(m => m.elementen.some(e => e.naam === o.naam))
-    );
-    
-    if (allOutputsAlreadyInGame) continue;
+  const hasInputs = (input) => {
+    const sets = Array.isArray(input[0]) ? input : [input];
+    return sets.some(([a, b]) => isVisible(a) && isVisible(b));
+  };
 
-    // -------- THRESHOLD CHECK --------
-    if (c.uitleg?.threshold?.requirements) {
-      const normalizedUnlocked =
-        [...unlocked].map(e => e.trim().toLowerCase());
-      const requirementsMet =
-        c.uitleg.threshold.requirements.every(r =>
-          normalizedUnlocked.includes(r.trim().toLowerCase())
-        );
-      if (!requirementsMet) continue;
-    }
+  const hasLockedOutput = (output) =>
+    output.some(o => !isVisible(o.naam));
 
-    // -------- THRESHOLD-ELEMENT CHECK --------
-    if (c.uitleg?.thresholdElement) {
-      const needed = c.uitleg.thresholdElement.naam.trim().toLowerCase();
-      const normalizedUnlocked = [...unlocked].map(e => e.trim().toLowerCase());
-      if (!normalizedUnlocked.includes(needed)) continue; // hint nog niet tonen
-    }
-
-    // -------- OUTPUT AL GEHAALD CHECK --------
-    const outputsAlreadyUnlocked = c.output.every(o => {
-      const inUnlock = unlocked.has(o.naam?.trim());
-      const inMap = mappen.some(m =>
-        m.elementen.some(e => e.naam === o.naam)
-      );
-      return inUnlock && inMap;
-    });
-    
-    if (outputsAlreadyUnlocked) continue;
-    
-    // -------- ALS ALLES OK IS --------
-    if (typeof c.hint === "string" && c.hint.trim() !== "") {
-      availableHints.push({
-        id: c.id,   // 👈 BELANGRIJK
-        hint: c.hint,
-        tijd: c.tijd ?? null
-      });
-    }
-  }
-  
-  return availableHints;
+  return combinaties
+    .filter(c =>
+      c.hint &&                               // moet hint hebben
+      hasInputs(c.input) &&                   // input zichtbaar
+      hasLockedOutput(c.output)               // min 1 output nog niet zichtbaar
+    )
+    .map((c, i) => ({
+      id: i,
+      hint: c.hint,
+      tijd: c.tijd ?? null
+    }));
 }
 
-// ----- HINTS SHUFFLE -----
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-// ----- REFILL DECK -----
 function refillHintDeck() {
-  const availableHints = getAvailableHints();
+  const hints = getAvailableHints();
 
-  // tijd-hints: HOOG → LAAG (oud → nieuw)
-  const timeHints = availableHints
+  const noTime = shuffle(hints.filter(h => h.tijd == null)); // PRIORITEIT
+  const withTime = hints
     .filter(h => h.tijd != null)
-    .sort((a, b) => b.tijd - a.tijd);
+    .sort((a, b) => b.tijd - a.tijd); // HOOG → LAAG
 
-  // rest random
-  const rest = shuffle(
-    availableHints.filter(h => h.tijd == null)
-  );
-
-  // 🔥 BELANGRIJK: geen mixing meer
-  hintDeck = [...timeHints, ...rest];
+  hintDeck = [...noTime, ...withTime];
 }
 
-// ----- SHOW HINT -----
 function showHint() {
-  const availableHints = getAvailableHints();
+  const available = getAvailableHints();
 
-  if (availableHints.length === 0) {
+  if (!available.length) {
     hintButton.classList.add("disabled");
-    hintButton.style.pointerEvents = "none";
     return;
   }
 
   hintButton.classList.remove("disabled");
-  hintButton.style.pointerEvents = "auto";
 
-  // ❗ altijd opnieuw bouwen als state mogelijk veranderd is
-  const availableIds = new Set(availableHints.map(h => h.id));
+  // klik terwijl zichtbaar → sluiten
+  if (hintVisible) {
+    hintBubble.classList.remove("visible");
+    hintVisible = false;
+    clearTimeout(hintTimer);
+    return;
+  }
 
-  const stillValid =
-    hintDeck.length > 0 &&
-    hintDeck.every(h => availableIds.has(h.id));
-
-  if (!stillValid) {
+  // deck refresh als nodig
+  const ids = new Set(available.map(h => h.id));
+  if (!hintDeck.length || !hintDeck.every(h => ids.has(h.id))) {
     refillHintDeck();
   }
 
-  const hintObj = hintDeck.shift();
-  if (!hintObj) return;
+  const hint = hintDeck.shift();
+  if (!hint) return;
 
-  hintBubble.innerHTML = hintObj.hint;
+  hintBubble.innerHTML = hint.hint;
   hintBubble.classList.add("visible");
   hintVisible = true;
 
-  if (hintTimer) clearTimeout(hintTimer);
   hintTimer = setTimeout(() => {
     hintBubble.classList.remove("visible");
     hintVisible = false;
-    hintTimer = null;
   }, 4000);
 }
