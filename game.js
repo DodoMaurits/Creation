@@ -11971,6 +11971,13 @@ const rightSide = document.getElementById("right-side");
 const hintButton = document.getElementById("hint-button");
 const hintBubble = document.getElementById("hint-bubble");
 
+const norm = s => String(s).trim().toLowerCase();
+const pairs = input => (Array.isArray(input[0]) ? input : [input]);
+const inMap = n => mappen.some(m => m.elementen.some(e => norm(e.naam) === norm(n)));
+const known = n =>
+  unlockedElements.has(norm(n)) ||
+  mappen.some(m => m.elementen.some(e => norm(e.naam) === norm(n)));
+
 hintButton.onclick = showHint;
 
 // ----- INIT -----
@@ -12260,6 +12267,8 @@ function checkCombination() {
   
   lastExplanation = finalUitleg || null;
   newElements.forEach(el => unlockedElements.add(el.naam));
+
+  refreshHintDeck();
 
   // Update timeline op basis van combinatie-tijd
   const eventTime = firstMatch.tijd;
@@ -12822,68 +12831,48 @@ function renderSide(parentContainer, map, side) {
 }
 
 // ----- HINT ENGINE -----
-function getAvailableHints() {
-  const unlocked = new Set(unlockedElements);
-
-  const isVisible = name =>
-    mappen.some(m => m.elementen.some(e => e.naam === name));
-
-  const hasInputs = (input) => {
-    const sets = Array.isArray(input[0]) ? input : [input];
-    return sets.some(([a, b]) => isVisible(a) && isVisible(b));
-  };
-
-  const hasLockedOutput = (output) =>
-    output.some(o => !isVisible(o.naam));
-
-  return combinaties
-    .filter(c =>
-      c.hint &&                               // moet hint hebben
-      hasInputs(c.input) &&                   // input zichtbaar
-      hasLockedOutput(c.output)               // min 1 output nog niet zichtbaar
-    )
-    .map((c, i) => ({
-      id: i,
-      hint: c.hint,
-      tijd: c.tijd ?? null
-    }));
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
-function refillHintDeck() {
-  const hints = getAvailableHints();
+function canShowHint(c) {
+  return !!c.hint?.trim()
+    && pairs(c.input).some(([a, b]) => inMap(a) && inMap(b))
+    && c.output.some(o => !inMap(o.naam))
+    && (!c.uitleg?.thresholdElement?.naam || known(c.uitleg.thresholdElement.naam))
+    && !(c.uitleg?.threshold?.requirements || []).some(r => !known(r));
+}
 
-  const noTime = shuffle(hints.filter(h => h.tijd == null)); // PRIORITEIT
-  const withTime = hints
-    .filter(h => h.tijd != null)
-    .sort((a, b) => b.tijd - a.tijd); // HOOG → LAAG
+function refreshHintDeck() {
+  const hints = combinaties
+    .map((c, id) => ({ ...c, id }))
+    .filter(canShowHint);
 
-  hintDeck = [...noTime, ...withTime];
+  hintDeck = [
+    ...shuffle(hints.filter(h => h.tijd == null)),
+    ...hints.filter(h => h.tijd != null).sort((a, b) => b.tijd - a.tijd)
+  ];
+
+  const on = hintDeck.length > 0;
+  hintButton.classList.toggle("disabled", !on);
+  hintButton.style.pointerEvents = on ? "auto" : "none";
+}
+
+function hideHint() {
+  clearTimeout(hintTimer);
+  hintTimer = 0;
+  hintVisible = false;
+  hintBubble.classList.remove("visible");
 }
 
 function showHint() {
-  const available = getAvailableHints();
+  if (hintVisible) return hideHint();
 
-  if (!available.length) {
-    hintButton.classList.add("disabled");
-    return;
-  }
-
-  hintButton.classList.remove("disabled");
-
-  // klik terwijl zichtbaar → sluiten
-  if (hintVisible) {
-    hintBubble.classList.remove("visible");
-    hintVisible = false;
-    clearTimeout(hintTimer);
-    return;
-  }
-
-  // deck refresh als nodig
-  const ids = new Set(available.map(h => h.id));
-  if (!hintDeck.length || !hintDeck.every(h => ids.has(h.id))) {
-    refillHintDeck();
-  }
-
+  if (!hintDeck.length) refreshHintDeck();
   const hint = hintDeck.shift();
   if (!hint) return;
 
@@ -12891,8 +12880,9 @@ function showHint() {
   hintBubble.classList.add("visible");
   hintVisible = true;
 
-  hintTimer = setTimeout(() => {
-    hintBubble.classList.remove("visible");
-    hintVisible = false;
-  }, 4000);
+  clearTimeout(hintTimer);
+  hintTimer = setTimeout(hideHint, 4000);
 }
+
+hintButton.onclick = showHint;
+refreshHintDeck();
