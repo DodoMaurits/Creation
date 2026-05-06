@@ -12517,25 +12517,18 @@ function shuffle(array) {
 function refillHintDeck() {
   const availableHints = getAvailableHints();
 
-  // 1. tijd-hints: OUD → NIEUW (hoog → laag)
+  // tijd-hints: HOOG → LAAG (oud → nieuw)
   const timeHints = availableHints
     .filter(h => h.tijd != null)
     .sort((a, b) => b.tijd - a.tijd);
 
-  // 2. rest random
+  // rest random
   const rest = shuffle(
     availableHints.filter(h => h.tijd == null)
   );
 
-  // 3. bouw deck: tijd blijft 100% stabiel, rest ertussen
-  const result = [...timeHints];
-
-  for (const h of rest) {
-    const pos = Math.floor(Math.random() * (result.length + 1));
-    result.splice(pos, 0, h);
-  }
-
-  hintDeck = result;
+  // 🔥 BELANGRIJK: geen mixing meer
+  hintDeck = [...timeHints, ...rest];
 }
 
 // ----- SHOW HINT -----
