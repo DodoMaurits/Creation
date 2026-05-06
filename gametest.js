@@ -32,8 +32,8 @@ const mappen = [
       { naam: "Radioactiviteit", icoon: "icons/Radioactiviteit.png" },
       { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png" },
       { naam: "Aardbeving", icoon: "icons/Aardbeving.png" },
-      { naam: "Druk", icoon: "icons/Druk.png" },
       { naam: "Magnetisme", icoon: "icons/Magnetisme.png" },
+      { naam: "Druk", icoon: "icons/Druk.png" },
       { naam: "Leven", icoon: "icons/Leven.png" },
       { naam: "Dood", icoon: "icons/Dood.png" }
     ]
@@ -78,6 +78,7 @@ const mappen = [
       { naam: "Storm", icoon: "icons/Storm.png" },
       { naam: "Orkaan", icoon: "icons/Orkaan.png" },
       { naam: "Mist", icoon: "icons/Mist.png" },
+      { naam: "Regenboog", icoon: "icons/Regenboog.png" },
       { naam: "Zuurstof", icoon: "icons/Zuurstof.png" },
       { naam: "Ozon", icoon: "icons/Ozon.png" }
     ]
@@ -94,9 +95,10 @@ const mappen = [
       { naam: "Regen", icoon: "icons/Regen.png" },
       { naam: "Zure regen", icoon: "icons/Zure_regen.png" },
       { naam: "Rivier", icoon: "icons/Rivier.png" },
-      { naam: "Ven", icoon: "icons/Ven.png" },
+      { naam: "Lagune", icoon: "icons/Lagune.png" },
       { naam: "Sneeuw", icoon: "icons/Sneeuw.png" },
       { naam: "Hagel", icoon: "icons/Hagel.png" },
+      { naam: "Ven", icoon: "icons/Ven.png" },
       { naam: "Overstroming", icoon: "icons/Overstroming.png" },
       { naam: "Slijm", icoon: "icons/Slijm.png" },
       { naam: "Aardolie", icoon: "icons/Aardolie.png" }
@@ -110,10 +112,10 @@ const mappen = [
       { naam: "Granietmagma", icoon: "icons/Granietmagma.png" },
       { naam: "Magmadamp", icoon: "icons/Magmadamp.png" },
       { naam: "As", icoon: "icons/As.png" },
+      { naam: "Plasma", icoon: "icons/Plasma.png" },
       { naam: "Bliksem", icoon: "icons/Bliksem.png" },
       { naam: "Bolbliksem", icoon: "icons/Bolbliksem.png" },
       { naam: "Explosie", icoon: "icons/Explosie.png" },
-      { naam: "Plasma", icoon: "icons/Plasma.png" },
       { naam: "Zonnewind", icoon: "icons/Zonnewind.png" },
       { naam: "Noorderlicht", icoon: "icons/Noorderlicht.png" },
       { naam: "Brand", icoon: "icons/Brand.png" }
@@ -160,14 +162,16 @@ const mappen = [
       { naam: "Eiland", icoon: "icons/Eiland.png" },
       { naam: "Kust", icoon: "icons/Kust.png" },
       { naam: "Strand", icoon: "icons/Strand.png" },
+      { naam: "Klif", icoon: "icons/Klif.png" },
+      { naam: "Waterval", icoon: "icons/Waterval.png" },
       { naam: "Rif", icoon: "icons/Rif.png" },
+      { naam: "Toendra", icoon: "icons/Toendra.png" },
       { naam: "Moeras", icoon: "icons/Moeras.png" },
       { naam: "Bos", icoon: "icons/Bos.png" },
       { naam: "Regenwoud", icoon: "icons/Regenwoud.png" },
       { naam: "Tropisch regenwoud", icoon: "icons/Tropisch regenwoud.png" },
-      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png" },
       { naam: "Heuvel", icoon: "icons/Heuvel.png" },
-      { naam: "Toendra", icoon: "icons/Toendra.png" }
+      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png" }
     ]
   },
   {
@@ -182,9 +186,9 @@ const mappen = [
       { naam: "Archaeplastiden", icoon: "icons/Archaeplastiden.png" },
       { naam: "Rode algen", icoon: "icons/Rode_algen.png" },
       { naam: "Groene algen", icoon: "icons/Groene_algen.png" },
+      { naam: "Steenwortelalgen", icoon: "icons/Steenwortelalgen.png" },
       { naam: "Roodwieren", icoon: "icons/Roodwieren.png" },
       { naam: "Groenwieren", icoon: "icons/Groenwieren.png" },
-      { naam: "Steenwortelalgen", icoon: "icons/Steenwortelalgen.png" },
       { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png" },
       { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png" },
       { naam: "Amoeben", icoon: "icons/Amoeben.png" },
@@ -203,17 +207,17 @@ const mappen = [
       { naam: "Evolutie", icoon: "icons/Evolutie.png" },
       { naam: "Fotosynthese", icoon: "icons/Fotosynthese.png" },
       { naam: "Glucose", icoon: "icons/Glucose.png" },
-      { naam: "Weefsel", icoon: "icons/Weefsel.png" },
-      { naam: "Spieren", icoon: "icons/Spieren.png" },
       { naam: "Schelp", icoon: "icons/Schelp.png" },
       { naam: "Bot", icoon: "icons/Bot.png" },
+      { naam: "Weefsel", icoon: "icons/Weefsel.png" },
+      { naam: "Spieren", icoon: "icons/Spieren.png" },
       { naam: "Gif", icoon: "icons/Gif.png" },
       { naam: "Detritus", icoon: "icons/Detritus.png" },
+      { naam: "Parel", icoon: "icons/Parel.png" },
       { naam: "Wortels", icoon: "icons/Wortels.png" },
       { naam: "Tand", icoon: "icons/Tand.png" },
       { naam: "Oog", icoon: "icons/Oog.png" },
       { naam: "Bloed", icoon: "icons/Bloed.png" },
-      { naam: "Parel", icoon: "icons/Parel.png" },
       { naam: "Vleugels", icoon: "icons/Vleugels.png" },
       { naam: "Blad", icoon: "icons/Blad.png" },
       { naam: "Zaadjes", icoon: "icons/Zaadjes.png" },
@@ -288,7 +292,6 @@ const mappen = [
       { naam: "Krill", icoon: "icons/Krill.png" },
       { naam: "Aasgarnalen", icoon: "icons/Aasgarnalen.png" },
       { naam: "Zeepissebedden", icoon: "icons/Zeepissebedden.png" },
-      { naam: "Reuzenpissebedden", icoon: "icons/Reuzenpissebedden.png" },
       { naam: "Zeepokken", icoon: "icons/Zeepokken.png" },
       { naam: "Vlokreeftjes", icoon: "icons/Vlokreeftjes.png" },
       { naam: "Oertienpotigen", icoon: "icons/Oertienpotigen.png" },
@@ -296,6 +299,7 @@ const mappen = [
       { naam: "Kreeften", icoon: "icons/Kreeften.png" },
       { naam: "Krabben", icoon: "icons/Krabben.png" },
       { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png" },
+      { naam: "Reuzenpissebedden", icoon: "icons/Reuzenpissebedden.png" },
       { naam: "Waterspinnen", icoon: "icons/Waterspinnen.png" }
     ]
   },
@@ -343,6 +347,12 @@ const mappen = [
     ]
   },
   {
+    naam: "Smaakmakers", icoon: "icons/Smaakmakers.png", 
+    elementen: [
+      { naam: "Truffels", icoon: "icons/Truffels.png" }
+    ]
+  },
+  {
     naam: "Materialen", icoon: "icons/Materialen.png", 
     elementen: [
       { naam: "Zijde", icoon: "icons/Zijde.png" },
@@ -350,9 +360,11 @@ const mappen = [
     ]
   },
   {
-    naam: "Smaakmakers", icoon: "icons/Smaakmakers.png", 
+    naam: "Bomen", icoon: "icons/Bomen.png",
     elementen: [
-      { naam: "Truffels", icoon: "icons/Truffels.png" }
+      { naam: "Coniferen", icoon: "icons/Coniferen.png" },
+      { naam: "Palmvarens", icoon: "icons/Palmvarens.png" },
+      { naam: "Ginkgo", icoon: "icons/Ginkgo.png" }
     ]
   },
   {
@@ -373,11 +385,12 @@ const mappen = [
     ]
   },
   {
-    naam: "Bomen", icoon: "icons/Bomen.png",
+    naam: "Samenleving", icoon: "icons/Samenleving.png", 
     elementen: [
-      { naam: "Coniferen", icoon: "icons/Coniferen.png" },
-      { naam: "Palmvarens", icoon: "icons/Palmvarens.png" },
-      { naam: "Ginkgo", icoon: "icons/Ginkgo.png" }
+      { naam: "Hiërarchie", icoon: "icons/Hierarchie.png" },
+      { naam: "Werk", icoon: "icons/Werk.png" },
+      { naam: "Leger", icoon: "icons/Leger.png" },
+      { naam: "Heerser", icoon: "icons/Heerser.png" }
     ]
   },
   {
@@ -390,15 +403,6 @@ const mappen = [
     naam: "Vogels", icoon: "icons/Vogels.png", 
     elementen: [
       { naam: "Archaeopteryx", icoon: "icons/Archaeopteryx.png" }
-    ]
-  },
-  {
-    naam: "Samenleving", icoon: "icons/Samenleving.png", 
-    elementen: [
-      { naam: "Hiërarchie", icoon: "icons/Hierarchie.png" },
-      { naam: "Werk", icoon: "icons/Werk.png" },
-      { naam: "Leger", icoon: "icons/Leger.png" },
-      { naam: "Heerser", icoon: "icons/Heerser.png" }
     ]
   }
 ];
