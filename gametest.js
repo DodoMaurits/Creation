@@ -11799,8 +11799,13 @@ function checkCombination() {
   // 🔹 Check threshold requirements
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
-    const normalizedUnlocked = [...unlockedElements].map(e => e.trim().toLowerCase());
-    
+    const normalizedUnlocked = [
+      ...new Set([
+        ...unlockedElements,
+        ...mappen.flatMap(m => m.elementen.map(e => e.naam))
+      ])
+    ].map(e => e.trim().toLowerCase());
+      
     const missing = requirements.filter(r =>
       !normalizedUnlocked.includes(r.trim().toLowerCase())
     );
