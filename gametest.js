@@ -3707,7 +3707,7 @@ const combinaties = [
       }
     ]
   },
-//------------ EMOTIES --------------//
+//------------ BASISEMOTIES --------------//
   {
     input: [
       ["Agnathen", "Pijn"], ["Oergeleedpotigen", "Pijn"], ["Zeeslakken", "Pijn"], ["Trilobieten", "Pijn"], 
@@ -10426,6 +10426,97 @@ const combinaties = [
   },
   {
     input: [
+      ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"]
+    ],
+    hint: `Verdriet is een complexe emotie die veel vraagt van sociale dieren.`,
+    output: [
+      { naam: "Verdriet", icoon: "icons/Verdriet.png", map: "Brein", 
+        quote: `A feeling of sadness and longing, that is not akin to pain, and resembles sorrow only, as the mist
+        resembles the rain
+        <br><br>- Henry Longfellow`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Pinguïns", "Vreugde"], ["Arenden", "Vreugde"], ["Ganzen", "Vreugde"], ["Zwanen", "Vreugde"], 
+      ["Flamingo", "Vreugde"], ["Fazanten", "Vreugde"], ["Kraaien", "Vreugde"], ["Pauwen", "Vreugde"], 
+      ["Papegaaien", "Vreugde"]
+    ],
+    hint: `Voor wie het zo ervaart mag trots zijn op het eten.`,
+    output: [
+      { naam: "Trots", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Pinguïns", "Pinguïns"], ["Duiven", "Duiven"], ["Eenden", "Eenden"], ["Ganzen", "Ganzen"], ["Zwanen", "Zwanen"],
+      ["Zwaluwen", "Zwaluwen"], ["Spreeuwen", "Spreeuwen"], ["Ooievaars", "Ooievaars"], ["Meeuwen", "Meeuwen"],
+      ["Papegaaiduikers", "Papegaaiduikers"], ["Aalscholvers", "Aalscholvers"], ["Flamingo", "Flamingo"], 
+      ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"]
+    ],
+    hint: `Voor wie het zo ervaart mag trots zijn op het eten.`,
+    output: [
+      { naam: "Gemeenschap", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
+        quote: `Small communities grow great through harmony, great ones fall to pieces through discord
+        <br><br>- Sallust`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kippen", "Hiërarchie"], ["Fazanten", "Hiërarchie"], ["Kraaien", "Hiërarchie"], ["Pauwen", "Hiërarchie"],
+      ["Papegaaien", "Hiërarchie"]
+    ],
+    hint: `Met hiërarchie komt ook een nieuwe emotie vrij bij hen die er last van hebben.`,
+    output: [
+      { naam: "Jaloezie", icoon: "icons/Jaloezie.png", map: "Brein", 
+        quote: `Envy is the art of counting the other fellow's blessings instead of your own
+        <br><br>- Harold Coffin`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kippen", "Kippen"], ["Fazanten", "Fazanten"], ["Pauwen", "Pauwen"]
+    ],
+    output: [
+      { naam: "Drift", icoon: "icons/Drift.png", map: "Brein", 
+        quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
+        force our involuntary
+        <br><br>- Blaise Pascal`
+      },
+      { naam: "Jaloezie", icoon: "icons/Jaloezie.png", map: "Brein", 
+        quote: `Envy is the art of counting the other fellow's blessings instead of your own
+        <br><br>- Harold Coffin`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kraaien", "Kraaien"], ["Papegaaien", "Papegaaien"]
+    ],
+    output: [
+      { naam: "Drift", icoon: "icons/Drift.png", map: "Brein", 
+        quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
+        force our involuntary
+        <br><br>- Blaise Pascal`
+      },
+      { naam: "Jaloezie", icoon: "icons/Jaloezie.png", map: "Brein", 
+        quote: `Envy is the art of counting the other fellow's blessings instead of your own
+        <br><br>- Harold Coffin`
+      },
+      { naam: "Gemeenschap", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
+        quote: `Small communities grow great through harmony, great ones fall to pieces through discord
+        <br><br>- Sallust`
+      }
+    ]
+  },
+  {
+    input: [
       ["Suikerriet", "Ster"], ["Suikerriet", "Licht"], ["Suikerriet", "Fotosynthese"]
     ],
     hint: `In hun sappige stengels verwerkt suikerriet met behulp van de zon hun glucose tot sacharose.`,
@@ -11352,6 +11443,33 @@ const combinaties = [
       { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
         quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
         <br><br>- André Breton`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
+      ["Verdriet", "Papegaaien"]
+    ],
+    hint: `Wat verdriet wel niet kan doen.`,
+    output: [
+      { naam: "Empathie", icoon: "icons/Empathie.png", map: "Brein", 
+        quote: `I do not ask the wounded person how he feels, I myself become the wounded person
+        <br><br>- Walt Whitman`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Jaloezie", "Kippen"], ["Jaloezie", "Fazanten"], ["Jaloezie", "Kraaien"], ["Jaloezie", "Pauwen"],
+      ["Jaloezie", "Papegaaien"]
+    ],
+    output: [
+      { naam: "Woede", icoon: "icons/Woede.png", map: "Brein", 
+        quote: `Anybody can become angry - that is easy, but to be angry with the right person and to the right degree
+        and at the right time and for the right purpose, and in the right way - that is not within everybody's power
+        and is not easy
+        <br><br>- Aristoteles`
       }
     ]
   },
