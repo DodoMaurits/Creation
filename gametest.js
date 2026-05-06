@@ -12427,19 +12427,29 @@ function getAvailableHints() {
     // -------- INPUT CHECK --------
     const unlocked = new Set(unlockedElements);
     
-    const available = new Set(
-      mappen.flatMap(m => m.elementen.map(e => e.naam))
-    );
-    let inputsSatisfied = false;
+    const unlocked = new Set(unlockedElements);
+    
+    function isStillRelevant(name) {
+      const isUnlocked = unlocked.has(name);
+    
+      // belangrijk: niet alleen unlocked, maar ook niet “overruled”
+      const existsInGame = mappen.some(m =>
+        m.elementen.some(e => e.naam === name)
+      );
+    
+      return existsInGame && !isUnlocked;
+    }
+    
     if (typeof c.input[0] === "string") {
       const [a, b] = c.input;
+    
       inputsSatisfied =
-        available.has(a) &&
-        available.has(b);
+        isStillRelevant(a) &&
+        isStillRelevant(b);
     } else {
       inputsSatisfied = c.input.some(set =>
-        available.has(set[0]) &&
-        available.has(set[1])
+        isStillRelevant(set[0]) &&
+        isStillRelevant(set[1])
       );
     }
     if (!inputsSatisfied) continue;
@@ -12469,9 +12479,13 @@ function getAvailableHints() {
     }
 
     // -------- OUTPUT AL GEHAALD CHECK --------
-    const outputsAlreadyUnlocked = c.output.every(o =>
-      unlocked.has(o.naam?.trim())
-    );
+    const outputsAlreadyUnlocked = c.output.every(o => {
+      const inUnlock = unlocked.has(o.naam?.trim());
+      const inMap = mappen.some(m =>
+        m.elementen.some(e => e.naam === o.naam)
+      );
+      return inUnlock && inMap;
+    });
     
     if (outputsAlreadyUnlocked) continue;
     
