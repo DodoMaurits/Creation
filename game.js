@@ -3357,7 +3357,7 @@ const combinaties = [
       ["Inktvissen", "Zenuwen"], ["Nautilussen", "Zenuwen"], ["Octopussen", "Zenuwen"],
       /* --- VISSEN --- */
       ["Clownvissen", "Zenuwen"], ["Doktersvissen", "Zenuwen"], ["Papegaaivissen", "Zenuwen"], ["Karpers", "Zenuwen"], 
-      ["Zeepaardjes", "Zenuwen"], ["Vliegvissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"]
+      ["Zeepaardjes", "Zenuwen"], ["Vliegvissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"],
       /* --- GELEEDPOTIGEN --- */
       ["Zwaardstaarten", "Zenuwen"],
       /* --- KLEIN LANDLEVEN --- */
@@ -3496,7 +3496,7 @@ const combinaties = [
       ["Oercheliceraten", "Pijn"], ["Duizendpoten", "Pijn"], ["Oerkreeftjes", "Pijn"], ["Oerinsecten", "Pijn"], 
       ["Slakken", "Pijn"], ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"], ["Mijten", "Mijten"], ["Zwaardstaarten", "Pijn"], 
       ["Krill", "Pijn"], ["Pissebedden", "Pijn"], ["Garnalen", "Pijn"], ["Kreeften", "Pijn"], ["Krabben", "Pijn"], 
-      ["Zilvervisjes", "Pijn"], ["Oerpolyneopteren", "Pijn"], ["Oerhymenopteren", "Pijn"], ["Luizen", "Pijn "], 
+      ["Zilvervisjes", "Pijn"], ["Oerpolyneopteren", "Pijn"], ["Oerhymenopteren", "Pijn"], ["Luizen", "Pijn"], 
       ["Kevers", "Pijn"], ["Muggen", "Pijn"], ["Vliegen", "Pijn"], ["Vlinders", "Pijn"], ["Krekels", "Pijn"], 
       ["Sprinkhanen", "Pijn"], ["Wandelende takken", "Pijn"], ["Kakkerlakken", "Pijn"], ["Termieten", "Pijn"],
       
@@ -3517,7 +3517,7 @@ const combinaties = [
       ["Oerdinosauriërs", "Storm"], ["Oerdinosauriërs", "Orkaan"], ["Oerdinosauriërs", "Pijn"],
       ["Schildpadden", "Storm"], ["Schildpadden", "Orkaan"], ["Schildpadden", "Pijn"],
       ["Zeeschildpadden", "Storm"], ["Zeeschildpadden", "Orkaan"], ["Zeeschildpadden", "Pijn"],
-      ["Oercynodonten", "storm"], ["Oercynodonten", "Orkaan"], ["Oercynodonten", "Pijn"]
+      ["Oercynodonten", "Storm"], ["Oercynodonten", "Orkaan"], ["Oercynodonten", "Pijn"]
     ],
     hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
     output: [
