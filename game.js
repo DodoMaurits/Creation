@@ -2606,7 +2606,6 @@ const combinaties = [
   },
   {
     input: [
-      ["map:Geleedpotigen", "Radioactiviteit"], ["map:Geleedpotigen", "Gif"], 
       ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
       ["map:Zoogdieren", "Radioactiviteit"], ["map:Zoogdieren", "Gif"],
       ["map:Vogels", "Radioactiviteit"], ["map:Vogels", "Gif"],
@@ -2616,6 +2615,54 @@ const combinaties = [
       ["Zee-egels", "Radioactiviteit"], ["Zee-egels", "Gif"], 
       ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
 
+      /* --- VISSEN --- */
+      ["Coelacanthen", "Radioactiviteit"], ["Coelacanthen", "Gif"], 
+      ["Tiktaalik", "Radioactiviteit"], ["Tiktaalik", "Gif"], 
+      ["Oerstraalvinnigen", "Radioactiviteit"], ["Oerstraalvinnigen", "Gif"],
+      ["Zeeduivels", "Radioactiviteit"], ["Zeeduivels", "Gif"],
+      ["Platvissen", "Radioactiviteit"], ["Platvissen", "Gif"],
+      ["Piranha", "Radioactiviteit"], ["Piranha", "Gif"],
+      ["Clownvissen", "Radioactiviteit"], ["Clownvissen", "Gif"],
+      ["Doktersvissen", "Radioactiviteit"], ["Doktersvissen", "Gif"],
+      ["Papegaaivissen", "Radioactiviteit"], ["Papegaaivissen", "Gif"],
+      ["Karpers", "Radioactiviteit"], ["Karpers", "Gif"],
+      ["Zeepaardjes", "Radioactiviteit"], ["Zeepaardjes", "Gif"],
+      ["Vliegvissen", "Radioactiviteit"], ["Vliegvissen", "Gif"],
+      ["Maanvissen", "Radioactiviteit"], ["Maanvissen", "Gif"],
+      ["Goudvissen", "Radioactiviteit"], ["Goudvissen", "Gif"],
+      ["Koraalduivels", "Radioactiviteit"], ["Koraalduivels", "Gif"],
+      ["Kogelvissen", "Radioactiviteit"], ["Kogelvissen", "Gif"],
+      ["Kabeljauwen", "Radioactiviteit"], ["Kabeljauwen", "Gif"],
+      ["Snoeken", "Radioactiviteit"], ["Snoeken", "Gif"],
+      ["Meervallen", "Radioactiviteit"], ["Meervallen", "Gif"],
+      ["Paling", "Radioactiviteit"], ["Paling", "Gif"],
+      ["Tonijn", "Radioactiviteit"], ["Tonijn", "Gif"],
+      ["Zalm", "Radioactiviteit"], ["Zalm", "Gif"],
+      ["Haring", "Radioactiviteit"], ["Haring", "Gif"],
+      ["Makreel", "Radioactiviteit"], ["Makreel", "Gif"],
+      ["Forel", "Radioactiviteit"], ["Forel", "Gif"],
+
+      /* --- GELEEDPOTIGEN --- */
+      ["Oergeleedpotigen", "Radioactiviteit"], ["Oergeleedpotigen", "Gif"], 
+      ["Trilobieten", "Radioactiviteit"], ["Trilobieten", "Gif"], 
+      ["Oercheliceraten", "Radioactiviteit"], ["Oercheliceraten", "Gif"], 
+      ["Oerspinnen", "Radioactiviteit"], ["Oerspinnen", "Gif"],       
+      ["Oertienpotigen", "Radioactiviteit"], ["Oertienpotigen", "Gif"], 
+      ["Waterspinnen", "Radioactiviteit"], ["Waterspinnen", "Gif"], 
+      ["Oerkreeftjes", "Radioactiviteit"], ["Oerkreeftjes", "Gif"], 
+      ["Krill", "Radioactiviteit"], ["Krill", "Gif"], 
+      ["Aasgarnalen", "Radioactiviteit"], ["Aasgarnalen", "Gif"], 
+      ["Zeepissebedden", "Radioactiviteit"], ["Zeepissebedden", "Gif"], 
+      ["Reuzenpissebedden", "Radioactiviteit"], ["Reuzenpissebedden", "Gif"], 
+      ["Oerinsecten", "Radioactiviteit"], ["Oerinsecten", "Gif"], 
+      ["Vlokreeftjes", "Radioactiviteit"], ["Vlokreeftjes", "Gif"], 
+      ["Garnalen", "Radioactiviteit"], ["Garnalen", "Gif"], 
+      ["Kreeften", "Radioactiviteit"], ["Kreeften", "Gif"], 
+      ["Krabben", "Radioactiviteit"], ["Krabben", "Gif"], 
+      ["Heremietkreeften", "Radioactiviteit"], ["Heremietkreeften", "Gif"], 
+      ["Zeeschorpioenen", "Radioactiviteit"], ["Zeeschorpioenen", "Gif"], 
+      ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Gif"], 
+      
       /* --- KLEIN LANDLEVEN --- */
         ["Schorpioenen", "Gif"], 
       ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
@@ -2646,6 +2693,9 @@ const combinaties = [
       ["Tweekleppigen", "Radioactiviteit"], ["Tweekleppigen", "Gif"],
       ["Nautilussen", "Radioactiviteit"], ["Nautilussen", "Gif"],
 
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeepokken", "Radioactiviteit"], ["Zeepokken", "Gif"],
+      
       /* --- KLEIN LANDLEVEN --- */
       ["Slakken", "Radioactiviteit"], ["Slakken", "Zout"], ["Slakken", "Steenzout"], ["Slakken", "Gif"]
     ],
@@ -2941,7 +2991,12 @@ const combinaties = [
   },
 //------------ ZENUWEN --------------//
   {
-    input: ["Zenuwen", "Parasieten"], 
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Zenuwen", "Parasieten"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeepokken", "Zenuwen"]
+    ],
     hint: `Wat voel ik?`,
     output: [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
@@ -2952,7 +3007,10 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Zenuwen"], ["Oercnidaria", "Zenuwen"], ["Kwallen", "Zenuwen"], ["Zeeanemonen", "Zenuwen"], 
+      /* --- PRIL LEVEN --- */
+      ["Oercnidaria", "Zenuwen"], 
+      /* --- WATERDIEREN --- */
+      ["Koraal", "Zenuwen"], ["Kwallen", "Zenuwen"], ["Zeeanemonen", "Zenuwen"], 
       ["Zeesterren", "Zenuwen"], ["Zee-egels", "Zenuwen"]
     ],
     output: [
@@ -2968,7 +3026,10 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerbilateria", "Zenuwen"], ["Tweekleppigen", "Zenuwen"]
+      /* --- PRIL LEVEN --- */
+      ["Oerbilateria", "Zenuwen"], 
+      /* --- WATERDIEREN --- */
+      ["Tweekleppigen", "Zenuwen"]
     ],
     hint: `Sommige dieren zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
@@ -2988,8 +3049,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Oertrochozoa", "Zenuwen"], ["Wormen", "Zenuwen"], ["Lancetvisjes", "Zenuwen"], ["Oergeleedpotigen", "Zenuwen"],
-      ["Beerdiertjes", "Zenuwen"]
+      /* --- WATERDIEREN --- */
+      ["Wormen", "Zenuwen"], ["Oertrochozoa", "Zenuwen"], ["Beerdiertjes", "Zenuwen"],
+      /* --- VISSEN --- */
+      ["Lancetvisjes", "Zenuwen"], 
+      /* --- OERGELEEDPOTIGEN --- */
+      ["Oergeleedpotigen", "Zenuwen"]
     ],
     hint: `Au!`,
     output: [
@@ -3012,9 +3077,9 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Manteldieren", "Zenuwen"], ["Mijten", "Zenuwen"], ["Luizen", "Zenuwen"]
-    ],
+    input:
+      /* --- WATERDIEREN --- */
+      ["Manteldieren", "Zenuwen"],
     hint: `Wat ruik ik?`,
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
@@ -3036,7 +3101,64 @@ const combinaties = [
     ]
   },
   {
-    input: ["Duizendpoten", "Zenuwen"],
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Mijten", "Zenuwen"], ["Luizen", "Zenuwen"]
+    ],
+    hint: `Wat ruik ik?`,
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordan`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Oercheliceraten", "Zenuwen"], 
+      ["Oerspinnen", "Zenuwen"], 
+      ["Oertienpotigen", "Zenuwen"], 
+      ["Waterspinnen", "Zenuwen"]
+    ],
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerkreeftjes", "Zenuwen"],
+      ["Krill", "Zenuwen"],
+      ["Aasgarnalen", "Zenuwen"],
+    ],
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -3062,7 +3184,71 @@ const combinaties = [
   },
   {
     input: [
-      ["Oercheliceraten", "Zenuwen"], ["Pissebedden", "Zenuwen"]
+      /* --- KLEIN LANDLEVEN --- */
+      ["Duizendpoten", "Zenuwen"], ["Hooiwagens", "Zenuwen"], ["Pissebedden", "Zenuwen"]
+    ],
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordan`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeepissebedden", "Zenuwen"],
+      ["Reuzenpissebedden", "Zenuwen"]
+    ],
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordan`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Trilobieten", "Zenuwen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerpolyneopteren", "Zenuwen"]
     ],
     hint: `Wat zie ik?`,
     output: [
@@ -3090,8 +3276,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerkreeftjes", "Zenuwen"], ["Schorpioenen", "Zenuwen"], ["Spinnen", "Zenuwen"], ["Garnalen", "Zenuwen"],
-      ["Zilvervisjes", "Zenuwen"]
+      /* --- KLEIN LANDLEVEN --- */
+      ["Schorpioenen", "Zenuwen"], ["Spinnen", "Zenuwen"]
     ],
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
@@ -3110,9 +3296,9 @@ const combinaties = [
         quote: `Pain is inevitable. Suffering is optional
         <br><br>- Haruki Murakami`
       },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordan`
       },
       { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
         quote: `Eye contact is way more intimate than words will ever be 
@@ -3122,9 +3308,16 @@ const combinaties = [
   },
   {
     input: [
-      ["Agnathen", "Zenuwen"], ["Zeeslakken", "Zenuwen"], ["Oerinsecten", "Zenuwen"], ["Slakken", "Zenuwen"],
-      ["Oerpolyneopteren", "Zenuwen"], ["Wandelende takken", "Zenuwen"], ["Kakkerlakken", "Zenuwen"], 
-      ["Termieten", "Zenuwen"]
+      /* --- WATERDIEREN --- */
+      ["Zeeslakken", "Zenuwen"], 
+      /* --- VISSEN --- */
+      ["Agnathen", "Zenuwen"], ["Zeeduivels", "Zenuwen"], ["Platvissen", "Zenuwen"], ["Piranha", "Zenuwen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerinsecten", "Zenuwen"], ["Vlokreeftjes", "Zenuwen"], ["Garnalen", "Zenuwen"], ["Kreeften", "Zenuwen"], 
+      ["Krabben", "Zenuwen"], ["Heremietkreeften", "Zenuwen"], ["Zeeschorpioenen", "Zenuwen"], 
+      /* --- KLEIN LANDLEVEN ---*/
+      ["Zilvervisjes", "Zenuwen"], ["Termieten", "Zenuwen"], ["Wandelende takken", "Zenuwen"], 
+      ["Kakkerlakken", "Zenuwen"], ["Oerhymenopteren", "Zenuwen"], ["Slakken", "Zenuwen"]
     ],
     hint: `Wat proef ik?`,
     output: [
@@ -3159,64 +3352,17 @@ const combinaties = [
     ]
   },
   {
-    input: ["Trilobieten", "Zenuwen"],
-    output: [
-      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: `The great events of the world take place in the brain 
-        <br><br>- Oscar Wilde`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: `Pain is inevitable. Suffering is optional
-        <br><br>- Haruki Murakami`
-      },
-      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: `Eye contact is way more intimate than words will ever be 
-        <br><br>- Faraaz Kazi`
-      },
-      { naam: "Kleur", icoon: "icons/Kleur.png", map: "Brein",
-        quote: `Colour in a picture is like enthusiasm in life
-        <br><br>- Vincent van Gogh`
-      }
-    ]
-  },
-  {
     input: [
-      ["Krill", "Zenuwen"], ["Kreeften", "Zenuwen"], ["Krabben", "Zenuwen"]
-    ],
-    output: [
-      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: `The great events of the world take place in the brain 
-        <br><br>- Oscar Wilde`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: `Pain is inevitable. Suffering is optional
-        <br><br>- Haruki Murakami`
-      },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
-      },
-      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: `Eye contact is way more intimate than words will ever be 
-        <br><br>- Faraaz Kazi`
-      },
-      { naam: "Kleur", icoon: "icons/Kleur.png", map: "Brein",
-        quote: `Colour in a picture is like enthusiasm in life
-        <br><br>- Vincent van Gogh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Inktvissen", "Zenuwen"], ["Nautilussen", "Zenuwen"], ["Zwaardstaarten", "Zenuwen"], ["Oerhymenopteren", "Zenuwen"]
+      /* --- WATERDIEREN --- */
+      ["Inktvissen", "Zenuwen"], ["Nautilussen", "Zenuwen"], ["Octopussen", "Zenuwen"],
+      /* --- VISSEN --- */
+      ["Clownvissen", "Zenuwen"], ["Doktersvissen", "Zenuwen"], ["Papegaaivissen", "Zenuwen"], ["Karpers", "Zenuwen"], 
+      ["Zeepaardjes", "Zenuwen"], ["Vliegvissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"]
+      /* --- GELEEDPOTIGEN --- */
+      ["Zwaardstaarten", "Zenuwen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Muggen", "Zenuwen"], ["Vliegen", "Zenuwen"], ["Kevers", "Zenuwen"], ["Vlinders", "Zenuwen"],
+      ["Libellen", "Zenuwen"], ["Mieren", "Zenuwen"], ["Wespen", "Zenuwen"], ["Bijen", "Zenuwen"]
     ],
     hint: `Kijk naar de dieren... sommigen kunnen al kleuren zien.`,
     output: [
@@ -3252,7 +3398,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerstraalvinnigen", "Zenuwen"], ["Krekels", "Zenuwen"]
+      /* --- VISSEN --- */
+      ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
+      ["Paling", "Zenuwen"]
     ],
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
@@ -3262,6 +3410,10 @@ const combinaties = [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
         <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
       },
       { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
         quote: `Pain is inevitable. Suffering is optional
@@ -3287,13 +3439,19 @@ const combinaties = [
   },
   {
     input: [
-      ["Coelacanthen", "Zenuwen"], ["Tiktaalik", "Zenuwen"], ["Haaien", "Zenuwen"],
-      ["Spookhaaien", "Zenuwen"], ["Kevers", "Zenuwen"],
-      ["Muggen", "Zenuwen"], ["Vliegen", "Zenuwen"], ["Vlinders", "Zenuwen"], ["Oertetrapoden", "Zenuwen"],
-      ["Salamanders", "Zenuwen"], ["Kikkers", "Zenuwen"], ["Padden", "Zenuwen"], ["Oersynapsiden", "Zenuwen"],
-      ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Sprinkhanen", "Zenuwen"], ["Pterosauriërs", "Zenuwen"],
-      ["Lepidosauriërs", "Zenuwen"], ["Crurotarsi", "Zenuwen"], ["Oerdinosauriërs", "Zenuwen"], ["Schildpadden", "Zenuwen"],
-      ["Zeeschildpadden", "Zenuwen"]
+      /* --- WATERDIEREN --- */
+      ["Zeeschildpadden", "Zenuwen"],
+      /* --- VISSEN --- */
+      ["Coelacanthen", "Zenuwen"], ["Tiktaalik", "Zenuwen"], ["Haaien", "Zenuwen"], ["Spookhaaien", "Zenuwen"], 
+      ["Manta", "Zenuwen"], ["Tonijn", "Zenuwen"], ["Zalm", "Zenuwen"], ["Haring", "Zenuwen"], 
+      ["Makreel", "Zenuwen"], ["Forel", "Zenuwen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Krekels", "Zenuwen"], ["Sprinkhanen", "Zenuwen"],
+      ["Oertetrapoden", "Zenuwen"], ["Salamanders", "Zenuwen"], ["Kikkers", "Zenuwen"], ["Padden", "Zenuwen"],
+      /* --- REPTIELEN --- */
+      ["Oersynapsiden", "Zenuwen"], ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Schildpadden", "Zenuwen"],
+      ["Pterosauriërs", "Zenuwen"], ["Lepidosauriërs", "Zenuwen"], ["Crurotarsi", "Zenuwen"], 
+      ["Oerdinosauriërs", "Zenuwen"]
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
     output: [
@@ -3532,15 +3690,22 @@ const combinaties = [
   },
   {
     input: [
+      ["map:Reptielen", "Explosie"], ["map:Reptielen", "Noorderlicht"], ["map:Reptielen", "Bliksem"], 
+      ["map:Reptielen", "Sneeuw"], ["map:Reptielen", "Hagel"], ["map:Reptielen", "Bolbliksem"],
+      ["map:Reptielen", "Overstroming"], 
+      ["map:Zoogdieren", "Explosie"], ["map:Zoogdieren", "Noorderlicht"], ["map:Zoogdieren", "Noorderlicht"],
+      ["map:Zoogdieren", "Sneeuw"], ["map:Zoogdieren", "Hagel"], ["map:Zoogdieren", "Bolbliksem"],
+      ["map:Zoogdieren", "Overstroming"],
+
+      /* --- WATERDIEREN --- */
       ["Inktvissen", "Licht"], ["Inktvissen", "Kleur"],
       ["Nautilussen", "Licht"], ["Nautilussen", "Kleur"],
-      ["Oerstraalvinnigen", "Licht"], ["Oerstraalvinnigen", "Kleur"],
-      ["Coelacanthen", "Licht"], ["Coelacanthen", "Kleur"],
-      ["Tiktaalik", "Licht"], ["Tiktaalik", "Kleur"],
-      ["Haaien", "Licht"], ["Haaien", "Kleur"],
-      ["Spookhaaien", "Licht"], ["Spookhaaien", "Kleur"],
       ["Zeeschildpadden", "Licht"], ["Zeeschildpadden", "Kleur"], 
+      ["Octopussen", "Explosie"], ["Octopussen", "Noorderlicht"], ["Octopussen", "Bliksem"],
+      ["Octopussen", "Sneeuw"], ["Octopussen", "Hagel"], ["Octopussen", "Bolbliksem"], 
+      ["Octopussen", "Overstroming"], ["Octopussen", "Licht"], ["Octopussen", "Kleur"], 
 
+      /* --- KLEIN LANDLEVEN --- */
       ["Oertetrapoden", "Explosie"], ["Oertetrapoden", "Noorderlicht"], ["Oertetrapoden", "Bliksem"], 
       ["Oertetrapoden", "Sneeuw"], ["Oertetrapoden", "Hagel"], ["Oertetrapoden", "Bolbliksem"], 
       ["Oertetrapoden", "Overstroming"], 
@@ -3552,34 +3717,7 @@ const combinaties = [
       ["Kikkers", "Overstroming"], 
       ["Padden", "Explosie"], ["Padden", "Noorderlicht"], ["Padden", "Bliksem"], 
       ["Padden", "Sneeuw"], ["Padden", "Hagel"], ["Padden", "Bolbliksem"], 
-      ["Padden", "Overstroming"], 
-      ["Oersynapsiden", "Explosie"], ["Oersynapsiden", "Noorderlicht"], ["Oersynapsiden", "Bliksem"],
-      ["Oersynapsiden", "Sneeuw"], ["Oersynapsiden", "Hagel"], ["Oersynapsiden", "Bolbliksem"],
-      ["Oersynapsiden", "Overstroming"], 
-      ["Oeranapsiden", "Explosie"], ["Oeranapsiden", "Noorderlicht"], ["Oeranapsiden", "Bliksem"], 
-      ["Oeranapsiden", "Sneeuw"], ["Oeranapsiden", "Hagel"], ["Oeranapsiden", "Bolbliksem"],
-      ["Oeranapsiden", "Overstroming"], 
-      ["Oerdiapsiden", "Explosie"], ["Oerdiapsiden", "Noorderlicht"], ["Oerdiapsiden", "Bliksem"],
-      ["Oerdiapsiden", "Sneeuw"], ["Oerdiapsiden", "Hagel"], ["Oerdiapsiden", "Bolbliksem"],
-      ["Oerdiapsiden", "Overstroming"], 
-      ["Pterosauriërs", "Explosie"], ["Pterosauriërs", "Noorderlicht"], ["Pterosauriërs", "Bliksem"],
-      ["Pterosauriërs", "Sneeuw"], ["Pterosauriërs", "Hagel"], ["Pterosauriërs", "Bolbliksem"],
-      ["Pterosauriërs", "Overstroming"], 
-      ["Lepidosauriërs", "Explosie"], ["Lepidosauriërs", "Noorderlicht"], ["Lepidosauriërs", "Bliksem"],
-      ["Lepidosauriërs", "Sneeuw"], ["Lepidosauriërs", "Hagel"], ["Lepidosauriërs", "Bolbliksem"],
-      ["Lepidosauriërs", "Overstroming"], 
-      ["Crurotarsi", "Explosie"], ["Crurotarsi", "Noorderlicht"], ["Crurotarsi", "Bliksem"],
-      ["Crurotarsi", "Sneeuw"], ["Crurotarsi", "Hagel"], ["Crurotarsi", "Bolbliksem"],
-      ["Crurotarsi", "Overstroming"], 
-      ["Oerdinosauriërs", "Explosie"], ["Oerdinosauriërs", "Noorderlicht"], ["Oerdinosauriërs", "Bliksem"],
-      ["Oerdinosauriërs", "Sneeuw"], ["Oerdinosauriërs", "Hagel"], ["Oerdinosauriërs", "Bolbliksem"],
-      ["Oerdinosauriërs", "Overstroming"], 
-      ["Schildpadden", "Explosie"], ["Schildpadden", "Noorderlicht"], ["Schildpadden", "Bliksem"], 
-      ["Schildpadden", "Sneeuw"], ["Schildpadden", "Hagel"], ["Schildpadden", "Bolbliksem"],
-      ["Schildpadden", "Overstroming"], 
-      ["Oercynodonten", "Explosie"], ["Oercynodonten", "Noorderlicht"], ["Oercynodonten", "Noorderlicht"],
-      ["Oercynodonten", "Sneeuw"], ["Oercynodonten", "Hagel"], ["Oercynodonten", "Bolbliksem"],
-      ["Oercynodonten", "Overstroming"]
+      ["Padden", "Overstroming"]
     ],
     hint: `De slimste dieren zullen je met de speling van het licht verbazen.`,
     output: [
