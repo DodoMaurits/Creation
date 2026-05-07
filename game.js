@@ -3362,7 +3362,9 @@ const combinaties = [
       ["Zwaardstaarten", "Zenuwen"],
       /* --- KLEIN LANDLEVEN --- */
       ["Muggen", "Zenuwen"], ["Vliegen", "Zenuwen"], ["Kevers", "Zenuwen"], ["Vlinders", "Zenuwen"],
-      ["Libellen", "Zenuwen"], ["Mieren", "Zenuwen"], ["Wespen", "Zenuwen"], ["Bijen", "Zenuwen"]
+      ["Libellen", "Zenuwen"], ["Mieren", "Zenuwen"], ["Wespen", "Zenuwen"], ["Bijen", "Zenuwen"],
+      /* --- REPTIELEN --- */
+      ["Slangen", "Zenuwen"]
     ],
     hint: `Kijk naar de dieren... sommigen kunnen al kleuren zien.`,
     output: [
@@ -3439,6 +3441,8 @@ const combinaties = [
   },
   {
     input: [
+      ["map:Zoogdieren", "Zenuwen"], 
+      ["map:Vogels", "Zenuwen"],
       /* --- WATERDIEREN --- */
       ["Zeeschildpadden", "Zenuwen"],
       /* --- VISSEN --- */
@@ -3451,7 +3455,9 @@ const combinaties = [
       /* --- REPTIELEN --- */
       ["Oersynapsiden", "Zenuwen"], ["Oeranapsiden", "Zenuwen"], ["Oerdiapsiden", "Zenuwen"], ["Schildpadden", "Zenuwen"],
       ["Pterosauriërs", "Zenuwen"], ["Lepidosauriërs", "Zenuwen"], ["Crurotarsi", "Zenuwen"], 
-      ["Oerdinosauriërs", "Zenuwen"]
+      ["Oerdinosauriërs", "Zenuwen"], ["Oermaniraptoren", "Zenuwen"], ["Sauropoden", "Zenuwen"], 
+      ["Stegosauriërs", "Zenuwen"], ["Tyrannosauriërs", "Zenuwen"], ["Gekko's", "Zenuwen"], ["Leguanen", "Zenuwen"],
+      ["Krokodillen", "Zenuwen"]
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
     output: [
