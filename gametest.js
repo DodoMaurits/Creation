@@ -4168,7 +4168,7 @@ const combinaties = [
       ["Zeesterren", "Schimmel"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Archaeplastiden"], ["Zeesterren", "Gist"],
       ["Zeesterren", "Rode algen"], ["Zeesterren", "Groene algen"], ["Zeesterren", "Amoeben"], 
       ["Zeesterren", "Foraminiferen"], ["Zeesterren", "Stralendiertjes"], ["Zeesterren", "Oercnidaria"], 
-      ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Roodiweren"], ["Zeesterren", "Groenwieren"], 
+      ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Roodwieren"], ["Zeesterren", "Groenwieren"], 
       ["Zeesterren", "Oertrochozoa"], ["Zeesterren", "Wormen"], ["Zeesterren", "Beerdiertjes"], ["Zeesterren", "Mijten"],
       ["Zeestserren", "Krill"]
     ],
