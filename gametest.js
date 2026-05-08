@@ -2405,7 +2405,7 @@ const combinaties = [
       ["Stralendiertjes", "Bacteriën"], ["Stralendiertjes", "Detritus"], ["Stralendiertjes", "Blauwalgen"], 
       ["Stralendiertjes", "Leca"], ["Stralendiertjes", "Schimmel"], ["Stralendiertjes", "Archaeplastiden"],
       ["Stralendiertjes", "Gist"], ["Stralendiertjes", "Rode algen"], ["Stralendiertjes", "Groene algen"],
-      ["Stralendiertjes", "Roodiweren"], ["Stralendiertjes", "Steenwortelalgen"], ["Stralendiertjes", "Groenwieren"]
+      ["Stralendiertjes", "Roodwieren"], ["Stralendiertjes", "Steenwortelalgen"], ["Stralendiertjes", "Groenwieren"]
     ],
     output: [
       { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
