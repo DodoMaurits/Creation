@@ -3844,12 +3844,32 @@ const combinaties = [
       ["Zeesterren", "Amoeben"], ["Zeesterren", "Foraminiferen"], ["Zeesterren", "Stralendiertjes"], 
       ["Zeesterren", "Oercnidaria"], ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Koraal"], 
       ["Zeesterren", "Wormen"], ["Zeesterren", "Oertrochozoa"], 
-      ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"], ["Zeestserren", "Garnalen"]
+      ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
         quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
         <br><br>- Rachel Carson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
+  },
+  {
+    input: ["Zeestserren", "Garnalen"],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
+        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -4125,8 +4145,7 @@ const combinaties = [
       /* --- GELEEDPOTIGEN --- */
       ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Oercheliceraten"], ["Inktvissen", "Oerinsecten"], 
       ["Inktvissen", "Oerkreeftjes"],
-      ["Inktvissen", "Krill"], ["Inktvissen", "Vlokreeftjes"],
-      ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Garnalen"]
+      ["Inktvissen", "Krill"], ["Inktvissen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
@@ -4147,7 +4166,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"]
+      /* --- VISSEN --- */
+      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"], ["Inktvissen", "Haring"], 
+      ["Inktvissen", "Makreel"], ["Inktvissen", "Krabben"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Garnalen"], ["Inktvissen", "Kreeften"], ["Inktvissen", "Krabben"],
+      ["Inktvissen", "Heremietkreeften"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -4173,7 +4197,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Inktvissen", "Tweekleppigen"],
+    input: [
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"],
+    ],
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
         quote: `I would love to see a giant squid. Very few people have seen them. 
@@ -4212,10 +4238,11 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], ["Zeeslakken", "Amoeben"], 
-      ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], ["Zeeslakken", "Sponzen"],
-      ["Zeeslakken", "Rode algen"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Roodwieren"], 
-      ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Zeeanemonen"], ["Zeeslakken", "Wormen"]
+      ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], 
+      ["Zeeslakken", "Archaeplastiden"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Rode algen"], 
+      ["Zeeslakken", "Roodwieren"], ["Zeeslakken", "Groenwieren"], 
+      ["Zeeslakken", "Amoeben"], ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], 
+      ["Zeeslakken", "Sponzen"], ["Zeeslakken", "Zeeanemonen"], ["Zeeslakken", "Wormen"]
     ],
     output: [
       { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
@@ -4235,9 +4262,10 @@ const combinaties = [
   },
   {
     input: [
-      ["Tweekleppigen", "Bacteriën"], ["Tweekleppigen", "Leca"], ["Tweekleppigen", "Amoeben"], 
-      ["Tweekleppigen", "Foraminiferen"], ["Tweekleppigen", "Stralendiertjes"], ["Tweekleppigen", "Beerdiertjes"], 
-      ["Tweekleppigen", "Krill"]
+      ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Bacteriën"], ["Tweekleppigen", "Blauwalgen"],
+      ["Tweekleppigen", "Leca"], 
+      ["Tweekleppigen", "Archaeplastiden"], ["Tweekleppigen", "Groene algen"], ["Tweekleppigen", "Rode algen"],
+      ["Tweekleppigen", "Amoeben"], ["Tweekleppigen", "Foraminiferen"], ["Tweekleppigen", "Stralendiertjes"]
     ],
     output: [
       { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
@@ -4464,10 +4492,14 @@ const combinaties = [
   },
   {
     input: [
-      ["Nautilussen", "Kwallen"], ["Nautilussen", "Wormen"], 
-      ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Oergeleedpotigen"], ["Nautilussen", "Manteldieren"], 
-      ["Nautilussen", "Oerkreeftjes"], ["Nautilussen", "Krill"], ["Nautilussen", "Garnalen"], ["Nautilussen", "Kreeften"], 
-      ["Nautilussen", "Krabben"]
+      /* --- WATERDIEREN --- */
+      ["Nautilussen", "Kwallen"], ["Nautilussen", "Manteldieren"], ["Nautilussen", "Wormen"], 
+      ["Nautilussen", "Oertrochozoa"], 
+      /* --- VISSEN --- */
+      ["Nautilussen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Nautilussen", "Oergeleedpotigen"], ["Nautilussen", "Oerkreeftjes"], ["Nautilussen", "Zeepissebedden"],
+      ["Nautilussen", "Krill"], ["Nautilussen", "Aasgarnalen"], ["Nautilussen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
@@ -4487,7 +4519,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Nautilussen", "Lancetvisjes"], ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"]
+      ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
