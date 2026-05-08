@@ -4122,11 +4122,11 @@ const combinaties = [
   },
   {
     input: [
-      ["Wormen", "Bacteriën"], ["Wormen", "Detritus"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], ["Wormen", "Schimmel"], 
-      ["Wormen", "Sponzen"], ["Wormen", "Archaeplastiden"], ["Wormen", "Gist"], ["Wormen", "Rode algen"], 
-      ["Wormen", "Groene algen"], ["Wormen", "Amoeben"], ["Wormen", "Foraminiferen"], ["Wormen", "Stralendiertjes"], 
-      ["Wormen", "Oercnidaria"], ["Wormen", "Oerbilateria"], ["Wormen", "Groenwieren"], ["Wormen", "Beerdiertjes"], 
-      ["Wormen", "Mijten"], ["Wormen", "Krill"]
+      ["Wormen", "Bacteriën"], ["Wormen", "Detritus"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], 
+      ["Wormen", "Schimmel"], ["Wormen", "Sponzen"], ["Wormen", "Archaeplastiden"], ["Wormen", "Gist"], 
+      ["Wormen", "Rode algen"], ["Wormen", "Groene algen"], ["Wormen", "Amoeben"], ["Wormen", "Foraminiferen"], 
+      ["Wormen", "Stralendiertjes"], ["Wormen", "Oercnidaria"], ["Wormen", "Oerbilateria"], ["Wormen", "Groenwieren"], 
+      ["Wormen", "Beerdiertjes"], ["Wormen", "Krill"], ["Wormen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
@@ -4142,12 +4142,13 @@ const combinaties = [
   },
   {
     input: [
-      ["Oertrochozoa", "Bacteriën"], ["Oertrochozoa", "Detritus"], ["Oertrochozoa", "Blauwalgen"], ["Oertrochozoa", "Leca"], 
-      ["Oertrochozoa", "Schimmel"], ["Oertrochozoa", "Sponzen"], ["Oertrochozoa", "Archaeplastiden"], 
-      ["Oertrochozoa", "Gist"], ["Oertrochozoa", "Rode algen"], ["Oertrochozoa", "Groene algen"], 
-      ["Oertrochozoa", "Amoeben"], ["Oertrochozoa", "Foraminiferen"], ["Oertrochozoa", "Stralendiertjes"],
-      ["Oertrochozoa", "Oercnidaria"], ["Oertrochozoa", "Oerbilateria"], ["Oertrochozoa", "Groenwieren"],
-      ["Oertrochozoa", "Wormen"], ["Oertrochozoa", "Beerdiertjes"], ["Oertrochozoa", "Mijten"], ["Oertrochozoa", "Krill"]
+      ["Oertrochozoa", "Bacteriën"], ["Oertrochozoa", "Detritus"], ["Oertrochozoa", "Blauwalgen"], 
+      ["Oertrochozoa", "Leca"], ["Oertrochozoa", "Schimmel"], ["Oertrochozoa", "Sponzen"], 
+      ["Oertrochozoa", "Archaeplastiden"], ["Oertrochozoa", "Gist"], ["Oertrochozoa", "Rode algen"], 
+      ["Oertrochozoa", "Groene algen"], ["Oertrochozoa", "Amoeben"], ["Oertrochozoa", "Foraminiferen"], 
+      ["Oertrochozoa", "Stralendiertjes"], ["Oertrochozoa", "Oercnidaria"], ["Oertrochozoa", "Oerbilateria"], 
+      ["Oertrochozoa", "Groenwieren"], ["Oertrochozoa", "Wormen"], ["Oertrochozoa", "Beerdiertjes"], 
+      ["Oertrochozoa", "Krill"], ["Oertrochozoa", "Vlokreeftjes"]
     ],
     /*hint: `Voor de bewuste dieren is eten meer dan alleen een beloning.`,*/
     output: [
@@ -4165,12 +4166,12 @@ const combinaties = [
   {
     input: [
       ["Zeesterren", "Bacteriën"], ["Zeesterren", "Detritus"], ["Zeesterren", "Blauwalgen"], ["Zeesterren", "Leca"],
-      ["Zeesterren", "Schimmel"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Archaeplastiden"], ["Zeesterren", "Gist"],
-      ["Zeesterren", "Rode algen"], ["Zeesterren", "Groene algen"], ["Zeesterren", "Amoeben"], 
-      ["Zeesterren", "Foraminiferen"], ["Zeesterren", "Stralendiertjes"], ["Zeesterren", "Oercnidaria"], 
-      ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Roodwieren"], ["Zeesterren", "Groenwieren"], 
-      ["Zeesterren", "Oertrochozoa"], ["Zeesterren", "Wormen"], ["Zeesterren", "Beerdiertjes"], ["Zeesterren", "Mijten"],
-      ["Zeestserren", "Krill"]
+      ["Zeesterren", "Archaeplastiden"], ["Zeesterren", "Groene algen"], ["Zeesterren", "Rode algen"], 
+      ["Zeesterren", "Roodwieren"], ["Zeesterren", "Groenwieren"], 
+      ["Zeesterren", "Amoeben"], ["Zeesterren", "Foraminiferen"], ["Zeesterren", "Stralendiertjes"], 
+      ["Zeesterren", "Oercnidaria"], ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Koraal"], 
+      ["Zeesterren", "Wormen"], ["Zeesterren", "Oertrochozoa"], 
+      ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"], ["Zeestserren", "Garnalen"]
     ],
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
@@ -4185,7 +4186,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Zeesterren", "Tweekleppigen"],
+    input: [
+      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
+    ],
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
         quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
@@ -4247,13 +4250,12 @@ const combinaties = [
   {
     input: [
       ["Lancetvisjes", "Bacteriën"], ["Lancetvisjes", "Detritus"], ["Lancetvisjes", "Blauwalgen"], 
-      ["Lancetvisjes", "Leca"], ["Lancetvisjes", "Schimmel"], ["Lancetvisjes", "Sponzen"], 
-      ["Lancetvisjes", "Archaeplastiden"], ["Lancetvisjes", "Gist"], ["Lancetvisjes", "Rode algen"], 
-      ["Lancetvisjes", "Groene algen"], ["Lancetvisjes", "Amoeben"], ["Lancetvisjes", "Foraminiferen"],
-      ["Lancetvisjes", "Stralendiertjes"], ["Lancetvisjes", "Oercnidaria"], ["Lancetvisjes", "Oerbilateria"],
-      ["Lancetvisjes", "Roodwieren"], ["Lancetvisjes", "Bruinwieren"], ["Lancetvisjes", "Groenwieren"], 
-      ["Lancetvisjes", "Oertrochozoa"], ["Lancetvisjes", "Wormen"], ["Lancetvisjes", "Zeesterren"], 
-      ["Lancetvisjes", "Beerdiertjes"], ["Lancetvisjes", "Mijten"], ["Lancetvisjes", "Krill"]
+      ["Lancetvisjes", "Leca"], 
+      ["Lancetvisjes", "Archaeplastiden"], ["Lancetvisjes", "Groene algen"], ["Lancetvisjes", "Rode algen"], 
+      ["Lancetvisjes", "Amoeben"], ["Lancetvisjes", "Foraminiferen"], ["Lancetvisjes", "Stralendiertjes"], 
+      ["Lancetvisjes", "Schimmel"], ["Lancetvisjes", "Gist"], 
+      ["Lancetvisjes", "Oercnidaria"], ["Lancetvisjes", "Oerbilateria"],
+      ["Lancetvisjes", "Oertrochozoa"], ["Lancetvisjes", "Krill"], ["Lancetvisjes", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
@@ -4275,7 +4277,7 @@ const combinaties = [
       ["Agnathen", "Stralendiertjes"], ["Agnathen", "Oercnidaria"], ["Agnathen", "Oerbilateria"], 
       ["Agnathen", "Roodwieren"], ["Agnathen", "Bruinwieren"], ["Agnathen", "Groenwieren"], ["Agnathen", "Oertrochozoa"], 
       ["Agnathen", "Wormen"], ["Agnathen", "Zeesterren"], ["Agnathen", "Lancetvisjes"], ["Agnathen", "Beerdiertjes"], 
-      ["Agnathen", "Mijten"], ["Agnathen", "Krill"]
+      ["Agnathen", "Krill"], ["Agnathen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
@@ -4297,12 +4299,12 @@ const combinaties = [
   {
     input: [
       ["Oergeleedpotigen", "Bacteriën"], ["Oergeleedpotigen", "Detritus"], ["Oergeleedpotigen", "Blauwalgen"], 
-      ["Oergeleedpotigen", "Schimmel"], ["Oergeleedpotigen", "Gist"], ["Oergeleedpotigen", "Rode algen"],
-      ["Oergeleedpotigen", "Groene algen"], ["Oergeleedpotigen", "Amoeben"], ["Oergeleedpotigen", "Foraminiferen"], 
-      ["Oergeleedpotigen", "Stralendiertjes"], ["Oergeleedpotigen", "Oercnidaria"], ["Oergeleedpotigen", "Oerbilateria"],
-      ["Oergeleedpotigen", "Roodwieren"], ["Oergeleedpotigen", "Groenwieren"], ["Oergeleedpotigen", "Oertrochozoa"],
-      ["Oergeleedpotigen", "Wormen"], ["Oergeleedpotigen", "Beerdiertjes"], ["Oergeleedpotigen", "Mijten"], 
-      ["Oergeleedpotigen", "Krill"]
+      ["Oergeleedpotigen", "Rode algen"], ["Oergeleedpotigen", "Groene algen"], 
+      ["Oergeleedpotigen", "Amoeben"], ["Oergeleedpotigen", "Foraminiferen"], ["Oergeleedpotigen", "Stralendiertjes"], 
+      ["Oergeleedpotigen", "Oercnidaria"], ["Oergeleedpotigen", "Oerbilateria"],
+      ["Oergeleedpotigen", "Schimmel"], ["Oergeleedpotigen", "Gist"], 
+      ["Oergeleedpotigen", "Wormen"], ["Oergeleedpotigen", "Oertrochozoa"], ["Oergeleedpotigen", "Beerdiertjes"], 
+      ["Oergeleedpotigen", "Krill"], ["Oergeleedpotigen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Oergeleedpotigen", icoon: "icons/Oergeleedpotigen.png", map: "Geleedpotigen", 
@@ -4324,11 +4326,13 @@ const combinaties = [
   {
     input: [
       ["Manteldieren", "Bacteriën"], ["Manteldieren", "Detritus"], ["Manteldieren", "Blauwalgen"], 
-      ["Manteldieren", "Schimmel"], ["Manteldieren", "Gist"], ["Manteldieren", "Rode algen"], 
-      ["Manteldieren", "Groene algen"], ["Manteldieren", "Amoeben"], ["Manteldieren", "Foraminiferen"], 
-      ["Manteldieren", "Stralendiertjes"], ["Manteldieren", "Oercnidaria"], ["Manteldieren", "Oerbilateria"], 
-      ["Manteldieren", "Oertrochozoa"], ["Manteldieren", "Wormen"], ["Manteldieren", "Beerdiertjes"], 
-      ["Manteldieren", "Mijten"], ["Manteldieren", "Krill"]
+      ["Manteldieren", "Leca"], 
+      ["Manteldieren", "Archaeplastiden"], ["Manteldieren", "Rode algen"], ["Manteldieren", "Groene algen"], 
+      ["Manteldieren", "Amoeben"], ["Manteldieren", "Foraminiferen"], ["Manteldieren", "Stralendiertjes"], 
+      ["Manteldieren", "Schimmel"], ["Manteldieren", "Gist"], 
+      ["Manteldieren", "Oercnidaria"], ["Manteldieren", "Oerbilateria"], 
+      ["Manteldieren", "Wormen"], ["Manteldieren", "Oertrochozoa"], ["Manteldieren", "Beerdiertjes"], 
+      ["Manteldieren", "Krill"], ["Manteldieren", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Manteldieren", icoon: "icons/Manteldieren.png", map: "Waterdieren",
@@ -4345,9 +4349,11 @@ const combinaties = [
   {
     input: [
       ["Beerdiertjes", "Bacteriën"], ["Beerdiertjes", "Detritus"], ["Beerdiertjes", "Blauwalgen"], 
-      ["Beerdiertjes", "Leca"], ["Beerdiertjes", "Schimmel"], ["Beerdiertjes", "Gist"], ["Beerdiertjes", "Rode algen"], 
-      ["Beerdiertjes", "Groene algen"], ["Beerdiertjes", "Amoeben"], ["Beerdiertjes", "Foraminiferen"], 
-      ["Beerdiertjes", "Stralendiertjes"], ["Beerdiertjes", "Oercnidaria"], ["Beerdiertjes", "Oerbilateria"]
+      ["Beerdiertjes", "Leca"], 
+      ["Beerdiertjes", "Rode algen"], ["Beerdiertjes", "Groene algen"], 
+      ["Beerdiertjes", "Amoeben"], ["Beerdiertjes", "Foraminiferen"], ["Beerdiertjes", "Stralendiertjes"], 
+      ["Beerdiertjes", "Oercnidaria"], ["Beerdiertjes", "Oerbilateria"],
+      ["Beerdiertjes", "Schimmel"], ["Beerdiertjes", "Gist"]
     ],
     output: [
       { naam: "Beerdiertjes", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
@@ -4364,12 +4370,14 @@ const combinaties = [
   },
   {
     input: [
-      ["Zee-egels", "Bacteriën"], ["Zee-egels", "Detritus"], ["Zee-egels", "Blauwalgen"], 
-      ["Zee-egels", "Schimmel"], ["Zee-egels", "Sponzen"], ["Zee-egels", "Gist"], ["Zee-egels", "Rode algen"], 
-      ["Zee-egels", "Groene algen"], ["Zee-egels", "Amoeben"], ["Zee-egels", "Foraminiferen"], 
-      ["Zee-egels", "Stralendiertjes"], ["Zee-egels", "Oercnidaria"], ["Zee-egels", "Oerbilateria"], 
-      ["Zee-egels", "Roodwieren"], ["Zee-egels", "Groenwieren"], ["Zee-egels", "Oertrochozoa"], ["Zee-egels", "Wormen"], 
-      ["Zee-egels", "Beerdiertjes"], ["Zee-egels", "Beerdiertjes"]
+      ["Zee-egels", "Bacteriën"], ["Zee-egels", "Detritus"], ["Zee-egels", "Blauwalgen"], ["Zee-egels", "Leca"],
+      ["Zee-egels", "Archaeplastiden"], ["Zee-egels", "Groene algen"], ["Zee-egels", "Rode algen"], 
+      ["Zee-egels", "Groenwieren"], ["Zee-egels", "Roodwieren"], 
+      ["Zee-egels", "Amoeben"], ["Zee-egels", "Foraminiferen"], ["Zee-egels", "Stralendiertjes"], 
+      ["Zee-egels", "Oercnidaria"], ["Zee-egels", "Oerbilateria"], 
+      ["Zee-egels", "Schimmel"], ["Zee-egels", "Gist"], 
+      ["Zee-egels", "Sponzen"], 
+      ["Zee-egels", "Wormen"], ["Zee-egels", "Oertrochozoa"], ["Zee-egels", "Beerdiertjes"]
     ],
     output: [
       { naam: "Zee-egels", icoon: "icons/Zee-egels.png", map: "Waterdieren", 
@@ -4395,15 +4403,7 @@ const combinaties = [
         quote: `Every antique farm-house and moss-grown cottage is a picture
         <br><br>- Washington Irving`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Wormen", 
-        titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
-        <br><br>Eerst nodig: wormen.`
-      }
-    }
+    ]
   },
   {
     input: ["Steenwortelalgen", "Evolutie"],
@@ -4413,15 +4413,7 @@ const combinaties = [
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Wormen", 
-        titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
-        <br><br>Eerst nodig: wormen.`
-      }
-    }
+    ]
   },
   {
     input: ["Oertrochozoa", "Evolutie"],
@@ -4436,9 +4428,16 @@ const combinaties = [
   },
   {
     input: [
-      ["Inktvissen", "Kwallen"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"], ["Inktvissen", "Lancetvisjes"], 
-      ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Oerkreeftjes"],
-      ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Krill"], ["Inktvissen", "Garnalen"]
+      /* --- WATERDIEREN --- */
+      ["Inktvissen", "Kwallen"], ["Inktvissen", "Manteldieren"], 
+      ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],
+      /* --- VISSEN --- */
+      ["Inktvissen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Oercheliceraten"], ["Inktvissen", "Oerinsecten"], 
+      ["Inktvissen", "Oerkreeftjes"],
+      ["Inktvissen", "Krill"], ["Inktvissen", "Vlokreeftjes"],
+      ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Garnalen"]
     ],
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
