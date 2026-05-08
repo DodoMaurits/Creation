@@ -2621,7 +2621,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Leca"], ["Koraal", "Foraminiferen"], ["Koraal", "Krill"]
+      ["Koraal", "Bacteriën"], ["Koraal", "Blauwalgen"], ["Koraal", "Groene algen"], ["Koraal", "Rode algen"],
+      ["Koraal", "Amoeben"], ["Koraal", "Foraminiferen"], ["Koraal", "Stralendiertjes"], ["Koraal", "Krill"],
+      ["Koraal", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
@@ -2742,8 +2744,8 @@ const combinaties = [
     ],
     /*hint: `Wat leven wel niet met een beetje kalk kan doen...`,*/
     vers: `Toen maakten Wij van de Druppel een Bloedklodder, daarna maakten Wij van de Bloedklodder een kneedbaar klompje,
-    daarna maakten Wij van het kneedbaar klmpje Botten, daarna bekleedden Wij de Botten met Vlees, toen lieten Wij het 
-    groeien tot een nieuwe Creatie, aldus gezegend zij God - de Schepper der Scheppers
+    daarna maakten Wij van het kneedbaar klompje Botten, daarna bekleedden Wij de Botten met Vlees, toen lieten Wij het 
+    groeien tot een nieuwe Creatie
     <br><br>De Gelovigen (23:14)`,
     output: [
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
@@ -2827,8 +2829,8 @@ const combinaties = [
       ["Kwallen", "Schimmel"], ["Kwallen", "Sponzen"], ["Kwallen", "Archaeplastiden"], ["Kwallen", "Gist"],
       ["Kwallen", "Rode algen"], ["Kwallen", "Groene algen"], ["Kwallen", "Amoeben"], ["Kwallen", "Foraminiferen"],
       ["Kwallen", "Stralendiertjes"], ["Kwallen", "Oercnidaria"], ["Kwallen", "Oerbilateria"],
-      ["Kwallen", "Oertrochozoa"], ["Kwallen", "Wormen"], ["Kwallen", "Beerdiertjes"], ["Kwallen", "Mijten"],
-      ["Kwallen", "Krill"]
+      ["Kwallen", "Oertrochozoa"], ["Kwallen", "Wormen"], ["Kwallen", "Beerdiertjes"], ["Kwallen", "Krill"],
+      ["Kwallen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
@@ -2854,8 +2856,8 @@ const combinaties = [
       ["Zeeanemonen", "Schimmel"], ["Zeeanemonen", "Sponzen"], ["Zeeanemonen", "Archaeplastiden"], ["Zeeanemonen", "Gist"],
       ["Zeeanemonen", "Rode algen"], ["Zeeanemonen", "Groene algen"], ["Zeeanemonen", "Amoeben"], 
       ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"], ["Zeeanemonen", "Oercnidaria"], 
-      ["Zeeanemonen", "Oerbilateria"], ["Zeeanemonen", "Groenwieren"], ["Zeeanemonen", "Oertrochozoa"],
-      ["Zeeanemonen", "Wormen"], ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemeonen", "Mijten"], ["Zeeanemonen", "Krill"]
+      ["Zeeanemonen", "Oerbilateria"], ["Zeeanemonen", "Oertrochozoa"], ["Zeeanemonen", "Wormen"], 
+      ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemeonen", "Krill"], ["Zeeanemonen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
@@ -2896,14 +2898,12 @@ const combinaties = [
       ["map:Fruit", "Radioactiviteit"],
       ["map:Groenten", "Radioactiviteit"],
       ["map:Granen", "Radioactiviteit"],
-
       /* --- BIOLOGIE --- */
       ["Weefsel", "Radioactiviteit"], 
       ["Spieren", "Radioactiviteit"], 
       ["Wortels", "Radioactiviteit"], ["Wortels", "Gif"], 
       ["Blad", "Radioactiviteit"], ["Blad", "Gif"], 
       ["Bloem", "Radioactiviteit"], ["Bloem", "Gif"],
-
       /* --- WATERDIEREN --- */
       ["Sponzen", "Radioactiviteit"], ["Sponzen", "Gif"], 
       ["Kwallen", "Radioactiviteit"], ["Kwallen", "Gif"], 
@@ -2914,7 +2914,6 @@ const combinaties = [
       ["Manteldieren", "Radioactiviteit"], ["Manteldieren", "Gif"], 
         ["Beerdiertjes", "Gif"], 
       ["Inktvissen", "Radioactiviteit"], ["Inktvissen", "Gif"],
-
       /* --- KLEIN LANDLEVEN --- */ 
       ["Duizendpoten", "Radioactiviteit"], ["Duizendpoten", "Gif"],
       ["Zilvervisjes", "Radioactiviteit"], ["Zilvervisjes", "Gif"],
@@ -2939,7 +2938,6 @@ const combinaties = [
       ["Mieren", "Radioactiviteit"], ["Mieren", "Gif"],
       ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
       ["Bijen", "Radioactiviteit"], ["Bijen", "Gif"],
-
       /* --- VISSEN --- */
       ["Lancetvisjes", "Gif"], ["Agnathen", "Gif"], ["Haaien", "Gif"], ["Spookhaaien", "Gif"], ["Zeeduivels", "Gif"], 
       ["Manta", "Gif"], ["Zalm", "Gif"], ["Haring", "Gif"], ["Snoeken", "Gif"], ["Kabeljauwen", "Gif"], 
@@ -2947,7 +2945,6 @@ const combinaties = [
       ["Vliegvissen", "Gif"], ["Meervallen", "Gif"], ["Tonijn", "Gif"], ["Makreel", "Gif"], ["Paling", "Gif"],
       ["Zeepaardjes", "Gif"], ["Kogelvissen", "Gif"], ["Clownvissen", "Gif"], ["Doktersvissen", "Gif"], 
       ["Koraalduivels", "Gif"], ["Piranha", "Gif"], 
-      
       /* --- GENOTWAREN --- */
       ["Agave", "Radioactiviteit"], 
       ["Suikerriet", "Radioactiviteit"], 
@@ -2959,7 +2956,6 @@ const combinaties = [
       ["Koffieplanten", "Radioactiviteit"], 
       ["Jasmijn", "Radioactiviteit"], 
       ["Kamille", "Radioactiviteit"],
-      
       /* --- MATERIALEN --- */
       ["Papyrusriet", "Radioactiviteit"],
       ["Rotan", "Radioactiviteit"],
@@ -2986,12 +2982,10 @@ const combinaties = [
       ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
       ["map:Zoogdieren", "Radioactiviteit"], ["map:Zoogdieren", "Gif"],
       ["map:Vogels", "Radioactiviteit"], ["map:Vogels", "Gif"],
-
       /* --- WATERDIEREN --- */
       ["Koraal", "Radioactiviteit"], ["Koraal", "Gif"], 
       ["Zee-egels", "Radioactiviteit"], ["Zee-egels", "Gif"], 
       ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
-
       /* --- KLEIN LANDLEVEN --- */
         ["Schorpioenen", "Gif"], 
       ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
@@ -3021,7 +3015,6 @@ const combinaties = [
       ["Zeeslakken", "Radioactiviteit"], ["Zeeslakken", "Gif"], 
       ["Tweekleppigen", "Radioactiviteit"], ["Tweekleppigen", "Gif"],
       ["Nautilussen", "Radioactiviteit"], ["Nautilussen", "Gif"],
-
       /* --- KLEIN LANDLEVEN --- */
       ["Slakken", "Radioactiviteit"], ["Slakken", "Zout"], ["Slakken", "Steenzout"], ["Slakken", "Gif"]
     ],
@@ -3044,11 +3037,9 @@ const combinaties = [
   {
     input: [
       ["map:Bomen", "Radioactiviteit"],
-
       /* --- GENOTWAREN --- */
       ["Wierookbomen", "Radioactiviteit"], 
       ["Mirre", "Radioactiviteit"],
-      
       /* --- MATERIALEN --- */
      ["Rubberbomen", "Radioactiviteit"]
     ],
@@ -3083,7 +3074,6 @@ const combinaties = [
       ["map:Fruit", "Vuur"], ["map:Fruit", "Lava"],
       ["map:Groenten", "Vuur"], ["map:Groenten", "Lava"],
       ["map:Granen", "Vuur"], ["map:Granen", "Lava"],
-
       /* --- BIOLOGIE --- */
       ["Weefsel", "Vuur"], ["Weefsel", "Lava"],
       ["Spieren", "Vuur"], ["Spieren", "Lava"],
@@ -3094,7 +3084,6 @@ const combinaties = [
       ["Zaadjes", "Vuur"], ["Zaadjes", "Lava"],
       ["Ei", "Vuur"], ["Ei", "Lava"],
       ["Bloem", "Vuur"], ["Bloem", "Lava"],
-
       /* --- WATERDIEREN --- */
       ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
       ["Koraal", "Lava"], 
@@ -3111,10 +3100,8 @@ const combinaties = [
       ["Tweekleppigen", "Vuur"], ["Tweekleppigen", "Lava"],
       ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
       ["Zeeschildpadden", "Vuur"],
-
       /* --- BREIN --- */
       ["Brein", "Vuur"], ["Brein", "Lava"],
-      
       /* --- GELEEDPOTIGEN --- */
       ["Oergeleedpotigen", "Vuur"], ["Oergeleedpotigen", "Lava"],
       ["Trilobieten", "Lava"],
@@ -3136,7 +3123,6 @@ const combinaties = [
       ["Krabben", "Vuur"],
       ["Heremietkrabben", "Vuur"],
       ["Waterspinnen", "Vuur"], ["Waterspinnen", "Lava"],
-
       /* --- GENOTWAREN --- */
       ["Agave", "Vuur"], ["Agave", "Lava"],
       ["Suikerriet", "Vuur"], ["Suikerriet", "Lava"],
@@ -3150,7 +3136,6 @@ const combinaties = [
       ["Koffieplanten", "Vuur"], ["Koffieplanten", "Lava"],
       ["Jasmijn", "Vuur"], ["Jasmijn", "Lava"],
       ["Kamille", "Vuur"], ["Kamille", "Lava"],
-      
       /* --- MATERIALEN --- */
       ["Papyrusriet", "Vuur"], ["Papyrusriet", "Lava"],
       ["Rotan", "Vuur"], ["Rotan", "Lava"],
@@ -3176,10 +3161,8 @@ const combinaties = [
       ["map:Reptielen", "Vuur"], 
       ["map:Zoogdieren", "Vuur"],
       ["map:Vogels", "Vuur"],
-
       /* --- WATERDIEREN --- */
       ["Koraal", "Vuur"], ["Zee-egels", "Vuur"], ["Zeeschildpadden", "Vuur"],
-
       /* --- GELEEDPOTIGEN --- */
       ["Trilobieten", "Vuur"], ["Zeeschorpioenen", "Vuur"], ["Zwaardstaarten", "Vuur"], ["Zeepokken", "Vuur"],
       ["Reuzenpissebedden", "Vuur"], ["Kreeften", "Vuur"], ["Krabben", "Vuur"], ["Heremietkrabben", "Vuur"]
@@ -3210,29 +3193,23 @@ const combinaties = [
       ["map:Fruit", "Dood"],
       ["map:Groenten", "Dood"], 
       ["map:Granen", "Dood"],
-
       /* --- BIOLOGIE --- */
       ["Weefsel", "Dood"], ["Spieren", "Dood"], ["Wortels", "Dood"], ["Oog", "Dood"], ["Vleugels", "Dood"], ["Blad", "Dood"], 
       ["Zaadjes", "Dood"], ["Ei", "Dood"], ["Bloem", "Dood"],
-
       /* --- WATERDIEREN --- */
       ["Sponzen", "Dood"], ["Kwallen", "Dood"], ["Zeeanemonen", "Dood"], ["Wormen", "Dood"], ["Oertrochozoa", "Dood"],
       ["Zeesterren", "Dood"], ["Manteldieren", "Dood"], ["Beerdiertjes", "Dood"], ["Inktvissen", "Dood"],
-
       /* --- BREIN --- */
       ["Brein", "Dood"],
-
       /* --- KLEIN LANDLEVEN --- */
       ["Duizendpoten", "Dood"], ["Zilvervisjes", "Dood"], ["Hooiwagens", "Dood"], ["Spinnen", "Dood"], ["Mijten", "Dood"], 
       ["Teken", "Dood"], ["Pissebedden", "Dood"], ["Oerpolyneopteren", "Dood"], ["Oerhymenopteren", "Dood"], ["Libellen", "Dood"], 
       ["Luizen", "Dood"], ["Kevers", "Dood"], ["Muggen", "Dood"], ["Vliegen", "Dood"], ["Vlinders", "Dood"], ["Krekels", "Dood"], 
       ["Sprinkhanen", "Dood"], ["Wandelende takken", "Dood"], ["Kakkerlakken", "Dood"], ["Termieten", "Dood"], ["Mieren", "Dood"],
       ["Wespen", "Dood"], ["Bijen", "Dood"],
-      
       /* --- GENOTWAREN --- */
       ["Agave", "Dood"], ["Suikerriet", "Dood"], ["Coca", "Dood"], ["Hop", "Dood"], ["Theeplanten", "Dood"], ["Lavendel", "Dood"], 
       ["Tabaksplanten", "Dood"], ["Koffieplanten", "Dood"], ["Jasmijn", "Dood"], ["Kamille", "Dood"],
-      
       /* --- MATERIALEN --- */
       ["Papyrusriet", "Dood"], ["Rotan", "Dood"], ["Bamboe", "Dood"], ["Hennep", "Dood"], ["Vlas", "Dood"]
     ],
@@ -3249,12 +3226,10 @@ const combinaties = [
       ["map:Reptielen", "Dood"], 
       ["map:Zoogdieren", "Dood"],
       ["map:Vogels", "Dood"],
-
       /* --- WATERDIEREN --- */
       ["Koraal", "Dood"], 
       ["Zee-egels", "Dood"], 
       ["Zeeschildpadden", "Dood"],
-
       /* --- KLEIN LANDLEVEN --- */
       ["Schorpioenen", "Dood"], 
       ["Oertetrapoden", "Dood"],
@@ -3279,7 +3254,6 @@ const combinaties = [
       ["Zeeslakken", "Dood"],
       ["Tweekleppigen", "Dood"],
       ["Nautilussen", "Dood"],
-
       /* --- KLEIN LANDLEVEN --- */
       ["Slakken", "Dood"]
     ],
@@ -3297,10 +3271,8 @@ const combinaties = [
   {
     input: [
       ["map:Bomen", "Dood"],
-
       /* --- GENOTWAREN --- */
       ["Wierookbomen", "Dood"], ["Mirre", "Dood"],
-      
       /* --- MATERIALEN --- */
      ["Rubberbomen", "Dood"]
     ],
