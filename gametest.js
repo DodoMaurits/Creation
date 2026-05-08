@@ -3799,14 +3799,12 @@ const combinaties = [
       ["map:Reptielen", "Storm"], ["map:Reptielen", "Orkaan"], ["map:Reptielen", "Pijn"],
       ["map:Zoogdieren", "Storm"], ["map:Zoogdieren", "Orkaan"], ["map:Zoogdieren", "Pijn"],
       ["map:Vogels", "Storm"], ["map:Vogels", "Orkaan"], ["map:Vogels", "Pijn"],
-
       /* --- WATERDIEREN --- */
       ["Zeeslakken", "Pijn"], 
       ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Pijn"],
       ["Octopussen", "Storm"], ["Octopussen", "Orkaan"], ["Octopussen", "Pijn"],
       ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
       ["Zeeschildpadden", "Storm"], ["Zeeschildpadden", "Orkaan"], ["Zeeschildpadden", "Pijn"],
-      
       /* --- VISSEN --- */
       ["Agnathen", "Pijn"], ["Zeeduivels", "Pijn"], ["Platvissen", "Pijn"], ["Piranha", "Pijn"], ["Clownvissen", "Pijn"],
       ["Doktersvissen", "Pijn"], ["Papegaaivissen", "Pijn"], ["Karpers", "Pijn"], ["Zeepaardjes", "Pijn"], 
@@ -3815,14 +3813,12 @@ const combinaties = [
       ["Paling", "Pijn"], ["Haaien", "Pijn"], ["Spookhaaien", "Pijn"], ["Manta", "Pijn"], ["Coelacanthen", "Pijn"],
       ["Tiktaalik", "Pijn"], ["Tonijn", "Pijn"], ["Zalm", "Pijn"], ["Haring", "Pijn"], ["Makreel", "Pijn"],
       ["Forel", "Pijn"],
-
       /* --- GELEEDPOTIGEN --- */
       ["Oergeleedpotigen", "Pijn"], ["Oercheliceraten", "Pijn"], ["Oerspinnen", "Pijn"], ["Oertienpotigen", "Pijn"], 
       ["Waterspinnen", "Pijn"], ["Trilobieten", "Pijn"], ["Oerkreeftjes", "Pijn"], ["Krill", "Pijn"], 
       ["Aasgarnalen", "Pijn"], ["Zeepissebedden", "Pijn"], ["Reuzenpissebedden", "Pijn"], ["Oerinsecten", "Pijn"], 
       ["Vlokreeftjes", "Pijn"], ["Garnalen", "Pijn"], ["Kreeften", "Pijn"], ["Krabben", "Pijn"], 
       ["Heremietkreeften", "Pijn"], ["Zeeschorpioenen", "Pijn"], ["Zwaardstaarten", "Pijn"], 
-
       /* --- KLEIN LANDLEVEN --- */
       ["Oerpolyneopteren", "Pijn"], ["Duizendpoten", "Pijn"], ["Hooiwagens", "Pijn"], ["Pissebedden", "Pijn"], 
       ["Schorpioenen", "Pijn"], ["Spinnen", "Pijn"], ["Zilvervisjes", "Pijn"], ["Termieten", "Pijn"],
@@ -3847,14 +3843,12 @@ const combinaties = [
       ["map:Reptielen", "Virus"], ["map:Reptielen", "Schimmel"], ["map:Reptielen", "Parasieten"], 
       ["map:Zoogdieren", "Virus"], ["map:Zoogdieren", "Schimmel"], ["map:Zoogdieren", "Parasieten"],
       ["map:Vogels", "Virus"], ["map:Vogels", "Schimmel"], ["map:Vogels", "Parasieten"],
-
       /* --- WATERDIEREN --- */
       ["Zeeslakken", "Virus"], ["Zeeslakken", "Schimmel"], ["Zeeslakken", "Parasieten"], 
       ["Inktvissen", "Virus"], ["Inktvissen", "Schimmel"], ["Inktvissen", "Parasieten"],
       ["Octopussen", "Virus"], ["Octopussen", "Schimmel"], ["Octopussen", "Parasieten"],
       ["Nautilussen", "Virus"], ["Nautilussen", "Schimmel"], ["Nautilussen", "Parasieten"],
       ["Zeeschildpadden", "Virus"], ["Zeeschildpadden", "Schimmel"], ["Zeeschildpadden", "Parasieten"],
-
       /* --- VISSEN --- */
       ["Agnathen", "Virus"], ["Agnathen", "Schimmel"], ["Agnathen", "Parasieten"], 
       ["Zeeduivels", "Virus"], ["Zeeduivels", "Schimmel"], ["Zeeduivels", "Parasieten"], 
@@ -3884,7 +3878,6 @@ const combinaties = [
       ["Haring", "Virus"], ["Haring", "Schimmel"], ["Haring", "Parasieten"], 
       ["Makreel", "Virus"], ["Makreel", "Schimmel"], ["Makreel", "Parasieten"],
       ["Forel", "Virus"], ["Forel", "Schimmel"], ["Forel", "Parasieten"],
-
       /* --- GELEEDPOTIGEN --- */
       ["Oergeleedpotigen", "Virus"], ["Oergeleedpotigen", "Parasieten"], 
       ["Oercheliceraten", "Virus"], ["Oercheliceraten", "Parasieten"], 
@@ -3905,7 +3898,6 @@ const combinaties = [
       ["Heremietkreeften", "Virus"], ["Heremietkreeften", "Schimmel"], ["Heremietkreeften", "Parasieten"], 
       ["Zeeschorpioenen", "Virus"], ["Zeeschorpioenen", "Schimmel"], ["Zeeschorpioenen", "Parasieten"], 
       ["Zwaardstaarten", "Virus"], ["Zwaardstaarten", "Parasieten"], 
-
       /* --- KLEIN LANDLEVEN --- */
       ["Oerpolyneopteren", "Virus"], ["Oerpolyneopteren", "Parasieten"], 
       ["Duizendpoten", "Virus"], ["Duizendpoten", "Parasieten"], 
@@ -3945,11 +3937,9 @@ const combinaties = [
   {
     input: [
       ["map:Reptielen", "map:Reptielen"], ["map:Zoogdieren", "map:Zoogdieren"], ["map:Vogels", "map:Vogels"],
-
       /* --- WATERDIEREN --- */
       ["Zeeslakken", "Zeeslakken"], ["Inktvissen", "Inktvissen"], ["Octopussen", "Octopussen"], 
       ["Nautilussen", "Nautilussen"], ["Zeeschildpadden", "Zeeschildpadden"],
-      
       /* --- VISSEN --- */
       ["Agnathen", "Agnathen"], ["Zeeduivels", "Zeeduivels"], ["Platvissen", "Platvissen"], ["Piranha", "Piranha"], 
       ["Clownvissen", "Clownvissen"], ["Doktersvissen", "Doktersvissen"], ["Papegaaivissen", "Papegaaivissen"], 
@@ -3959,7 +3949,6 @@ const combinaties = [
       ["Meervallen", "Meervallen"], ["Paling", "Paling"], /*Haaien + bloed*/ ["Spookhaaien", "Spookhaaien"], 
       ["Manta", "Manta"], ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], ["Tonijn", "Tonijn"], 
       ["Zalm", "Zalm"], ["Haring", "Haring"], ["Makreel", "Makreel"], ["Forel", "Forel"],
-
       /* --- GELEEDPOTIGEN --- */
       ["Oergeleedpotigen", "Oergeleedpotigen"], ["Oercheliceraten", "Oercheliceraten"], ["Oerspinnen", "Oerspinnen"], 
       ["Oertienpotigen", "Oertienpotigen"], ["Waterspinnen", "Waterspinnen"], ["Trilobieten", "Trilobieten"], 
@@ -3968,7 +3957,6 @@ const combinaties = [
       ["Vlokreeftjes", "Vlokreeftjes"], ["Garnalen", "Garnalen"], ["Kreeften", "Kreeften"], ["Krabben", "Krabben"], 
       ["Heremietkreeften", "Heremietkreeften"], ["Zeeschorpioenen", "Zeeschorpioenen"], 
       ["Zwaardstaarten", "Zwaardstaarten"], 
-
       /* --- KLEIN LANDLEVEN --- */
       ["Oerpolyneopteren", "Oerpolyneopteren"], ["Duizendpoten", "Duizendpoten"], ["Hooiwagens", "Hooiwagens"], 
       ["Pissebedden", "Pissebedden"], ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], 
