@@ -3970,10 +3970,11 @@ const combinaties = [
       ["Agnathen", "Zeeslakken"], ["Agnathen", "Tweekleppigen"],
       /* --- VISSEN --- */
       ["Agnathen", "Lancetvisjes"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Agnathen", "Oergeleedpotigen"], ["Agnathen", "Oerkreeftjes"], ["Agnathen", "Oerinsecten"],
-      ["Agnathen", "Krill"], ["Agnathen", "Aasgarnalen"], ["Agnathen", "Zeepissebedden"],
-      ["Agnathen", "Vlokreeftjes"], ["Agnathen", "Garnalen"]
+      /* --- KLEINE GELEEDPOTIGEN --- */
+      ["Agnathen", "Oergeleedpotigen"], ["Agnathen", "Oercheliceraten"], ["Agnathen", "Oerkreeftjes"],
+      ["Agnathen", "Oerinsecten"], ["Agnathen", "Oerspinnen"], ["Agnathen", "Krill"], ["Agnathen", "Aasgarnalen"], 
+      ["Agnathen", "Zeepissebedden"], ["Agnathen", "Vlokreeftjes"], ["Agnathen", "Oertienpotigen"], 
+      ["Agnathen", "Garnalen"], ["Agnathen", "Waterspinnen"]
     ],
     output: [
       { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
@@ -4159,7 +4160,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Inktvissen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Inktvissen", "map:Geleedpotigen"] /* zeepokken +schelp */
+      ["Inktvissen", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
     ],
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
@@ -4212,7 +4213,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"], ["Inktvissen", "Zeepokken"]
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"], ["Inktvissen", "Zeepokken"],
+      ["Inktvissen", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -4500,7 +4502,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Nautilussen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Nautilussen", "map:Geleedpotigen"] /* zeepokken +schelp */
+      ["Nautilussen", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
     ],
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
@@ -4551,7 +4553,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Zeepokken"]
+      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Zeepokken"],
+      ["Nautilussen", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -4888,9 +4891,20 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerstraalvinnigen", "Oertrochozoa"], ["Oerstraalvinnigen", "Wormen"], ["Oerstraalvinnigen", "Lancetivsjes"], 
-      ["Oerstraalvinnigen", "Oergeleedpotigen"], ["Oerstraalvinnigen", "Oerkreeftjes"], 
-      ["Oerstraalvinnigen", "Oerinsecten"], ["Oerstraalvinnigen", "Krill"], ["Oerstraalvinnigen", "Garnalen"]
+      /* --- PRIL LEVEN --- */
+      ["Oerstraalvinnigen", "Detritus"], ["Oerstraalvinnigen", "Oercnidaria"], ["Oerstraalvinnigen", "Oerbilateria"], 
+      ["Oerstraalvinnigen", "Wormen"], ["Oerstraalvinnigen", "Oertrochozoa"], 
+      ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Oerstraalvinnigen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerstraalvinnigen", "Oergeleedpotigen"], ["Oerstraalvinnigen", "Oercheliceraten"], 
+      ["Oerstraalvinnigen", "Oerkreeftjes"],
+      ["Oerstraalvinnigen", "Oerinsecten"], ["Oerstraalvinnigen", "Oerspinnen"], ["Oerstraalvinnigen", "Krill"], 
+      ["Oerstraalvinnigen", "Aasgarnalen"], 
+      ["Oerstraalvinnigen", "Zeepissebedden"], ["Oerstraalvinnigen", "Vlokreeftjes"], 
+      ["Oerstraalvinnigen", "Oertienpotigen"], 
+      ["Oerstraalvinnigen", "Garnalen"], ["Oerstraalvinnigen", "Waterspinnen"]
     ],
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
@@ -4936,9 +4950,25 @@ const combinaties = [
   },
   {
     input: [
-      ["Coelacanthen", "Wormen"], ["Coelacanthen", "Lancetvisjes"], ["Coelacanthen", "Oergeleedpotigen"], 
-      ["Coelacanthen", "Oerkreeftjes"], ["Coelacanthen", "Oerinsecten"], ["Coelacanthen", "Krill"], 
-      ["Coelacanthen", "Garnalen"]
+      ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Coelacanthen", "Wormen"], ["Coelacanthen", "Oertrochozoa"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Coelacanthen", "Oergeleedpotigen"], ["Coelacanthen", "Oercheliceraten"], ["Coelacanthen", "Oerkreeftjes"],
+      ["Coelacanthen", "Oerinsecten"], ["Coelacanthen", "Oerspinnen"], ["Coelacanthen", "Krill"], 
+      ["Coelacanthen", "Aasgarnalen"], 
+      ["Coelacanthen", "Zeepissebedden"], ["Coelacanthen", "Vlokreeftjes"], ["Coelacanthen", "Oertienpotigen"], 
+      ["Coelacanthen", "Garnalen"], ["Coelacanthen", "Krabben"], ["Coelacanthen", "Waterspinnen"]
     ],
     output: [
       { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
@@ -4960,16 +4990,46 @@ const combinaties = [
   },
   {
     input: [
-      ["Coelacanthen", "Agnathen"], ["Coelacanthen", "Inktvissen"], ["Coelacanthen", "Oerstraalvinnigen"]
+      /* --- PRIL LEVEN --- */
+      ["Tiktaalik", "Detritus"], ["Tiktaalik", "Oercnidaria"], ["Tiktaalik", "Oerbilateria"], 
+      ["Tiktaalik", "Wormen"], ["Tiktaalik", "Oertrochozoa"], 
+      ["Tiktaalik", "Zeeslakken"], ["Tiktaalik", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Tiktaalik", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Tiktaalik", "Oergeleedpotigen"], ["Tiktaalik", "Oercheliceraten"], ["Tiktaalik", "Oerkreeftjes"],
+      ["Tiktaalik", "Oerinsecten"], ["Tiktaalik", "Oerspinnen"], ["Tiktaalik", "Krill"], ["Tiktaalik", "Aasgarnalen"], 
+      ["Tiktaalik", "Zeepissebedden"], ["Tiktaalik", "Vlokreeftjes"], ["Tiktaalik", "Oertienpotigen"], 
+      ["Tiktaalik", "Garnalen"], ["Tiktaalik", "Waterspinnen"]
+    ],
+    output: [
+      { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png", map: "Vissen",
+        quote: `Tiktaalik is a fish with a neck and wrists — a mix of features that shows us how bodies were reshaped as 
+        vertebrates moved onto land
+        <br><br>- Neil Shubin`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Tiktaalik", "Agnathen"], ["Tiktaalik", "Oerstraalvinnigen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
-      { naam: "Coelacanthen", icoon: "icons/Coelacanthen.png", map: "Vissen",
-        quote: `Ideas are like fish. If you want to catch little fish, you can stay in the shallow water.
-        But if you want to catch the big fish, you've got to go deeper. Down deep, the fish are more powerful and
-        more pure
-        <br><br>- David Lynch`
+      { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png", map: "Vissen",
+        quote: `Tiktaalik is a fish with a neck and wrists — a mix of features that shows us how bodies were reshaped as 
+        vertebrates moved onto land
+        <br><br>- Neil Shubin`
       },
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
@@ -4988,24 +5048,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Tiktaalik", "Wormen"], ["Tiktaalik", "Lancetvisjes"], ["Tiktaalik", "Oergeleedpotigen"],
-      ["Tiktaalik", "Oerkreeftjes"], ["Tiktaalik", "Oerinsecten"], ["Tiktaalik", "Krill"], ["Tiktaalik", "Pissebedden"], 
-      ["Tiktaalik", "Garnalen"]
+      ["Tiktaalik", "Zeeslakken"], ["Tiktaalik", "Tweekleppigen"]
     ],
     output: [
-      { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png", map: "Vissen",
-        quote: `Tiktaalik is a fish with a neck and wrists — a mix of features that shows us how bodies were reshaped as 
-        vertebrates moved onto land
-        <br><br>- Neil Shubin`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -7076,7 +7124,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Zeeschildpadden", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Zeeschildpadden", "map:Geleedpotigen"] /* zeepokken +schelp */
+      ["Zeeschildpadden", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
     ],
     output: [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
@@ -7129,7 +7177,7 @@ const combinaties = [
   {
     input: [
       ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Nautilussen"],
-      ["Zeeschildpadden", "Zeepokken"]
+      ["Zeeschildpadden", "Zeepokken"], ["Zeeschildpadden", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -7268,7 +7316,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Octopussen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Octopussen", "map:Geleedpotigen"] /* zeepokken +schelp */
+      ["Octopussen", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
     ],
     output: [
       { naam: "Octopussen", icoon: "icons/Octopussen.png", map: "Waterdieren", 
@@ -7324,7 +7372,7 @@ const combinaties = [
   {
     input: [
       ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], ["Octopussen", "Nautilussen"],
-      ["Octopussen", "Zeepokken"]
+      ["Octopussen", "Zeepokken"], ["Octopussen", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
