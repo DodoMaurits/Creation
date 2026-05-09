@@ -4392,7 +4392,7 @@ const combinaties = [
     input: [
       ["Zee-egels", "Bacteriën"], ["Zee-egels", "Detritus"], ["Zee-egels", "Blauwalgen"], ["Zee-egels", "Leca"],
       ["Zee-egels", "Archaeplastiden"], ["Zee-egels", "Groene algen"], ["Zee-egels", "Rode algen"], 
-      ["Zee-egels", "Groenwieren"], ["Zee-egels", "Roodwieren"], 
+      ["Zee-egels", "Groenwieren"], ["Zee-egels", "Roodwieren"], ["Zee-egels", "Bruinwieren"],
       ["Zee-egels", "Amoeben"], ["Zee-egels", "Foraminiferen"], ["Zee-egels", "Stralendiertjes"], 
       ["Zee-egels", "Oercnidaria"], ["Zee-egels", "Oerbilateria"], 
       ["Zee-egels", "Schimmel"], ["Zee-egels", "Gist"], 
@@ -4449,8 +4449,8 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Inktvissen", "Kwallen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Wormen"], 
-      ["Inktvissen", "Oertrochozoa"], ["Inktvissen", "Zeesterren"],
+      ["Inktvissen", "Kwallen"],["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"], ["Inktvissen", "Zeesterren"], 
+      ["Inktvissen", "Zee-egels"], ["Inktvissen", "Manteldieren"], 
       /* --- +schelp --- */
       ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"], 
       /* --- VISSEN --- */
@@ -4535,10 +4535,11 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], ["Zeeslakken", "Amoeben"], 
-      ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], ["Zeeslakken", "Sponzen"],
-      ["Zeeslakken", "Rode algen"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Roodwieren"], 
-      ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Zeeanemonen"], ["Zeeslakken", "Wormen"]
+      ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], 
+      ["Zeeslakken", "Archaeplastiden"], ["Zeeslakken", "Groene algen"], ["Zeeslakken", "Rode algen"], 
+      ["Zeeslakken", "Roodwieren"], ["Zeeslakken", "Groenwieren"], ["Zeeslakken", "Bruinwieren"], 
+      ["Zeeslakken", "Amoeben"], ["Zeeslakken", "Foraminiferen"], ["Zeeslakken", "Stralendiertjes"], 
+      ["Zeeslakken", "Sponzen"], ["Zeeslakken", "Zeeanemonen"], ["Zeeslakken", "Wormen"]
     ],
     output: [
       { naam: "Zeeslakken", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
@@ -4789,8 +4790,8 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Nautilussen", "Kwallen"], ["Nautilussen", "Manteldieren"], ["Nautilussen", "Wormen"], 
-      ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Zeesterren"],
+      ["Nautilussen", "Kwallen"],["Nautilussen", "Wormen"], ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Zeesterren"], 
+      ["Nautilussen", "Zee-egels"], ["Nautilussen", "Manteldieren"], 
       /* --- +schelp --- */
       ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], 
       /* --- VISSEN --- */
@@ -7254,15 +7255,19 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeschildpadden", "Detritus"], ["Zeeschildpadden", "Sponzen"], ["Zeeschildpadden", "Rode algen"], 
-      ["Zeeschildpadden", "Groene algen"], ["Zeeschildpadden", "Roodwieren"], ["Zeeschildpadden", "Groenwieren"], 
-      ["Zeeschildpadden", "Kwallen"], ["Zeeschildpadden", "Zeeanemonen"], ["Zeeschildpadden", "Oertrochozoa"], 
-      ["Zeeschildpadden", "Wormen"], ["Zeeschildpadden", "Zeesterren"], ["Zeeschildpadden", "Oergeleedpotigen"], 
-      ["Zeeschildpadden", "Manteldieren"], ["Zeeschildpadden", "Mos"], ["Zeeschildpadden", "Trilobieten"], 
-      ["Zeeschildpadden", "Oercheliceraten"], ["Zeeschildpadden", "Oerkreeftjes"], ["Zeeschildpadden", "Oerinsecten"], 
-      ["Zeeschildpadden", "Zwaardstaarten"], ["Zeeschildpadden", "Krill"], ["Zeeschildpadden", "Oervaatplanten"], 
-      ["Zeeschildpadden", "Garnalen"], ["Zeeschildpadden", "Kreeften"], ["Zeeschildpadden", "Krabben"], 
-      ["Zeeschildpadden", "Blad"], ["Zeeschildpadden", "Varens"], ["Zeeschildpadden", "Oerzaadplanten"]
+      /* --- PRIL LEVEN --- */
+      ["Zeeschildpadden", "Groene algen"], ["Zeeschildpadden", "Rode algen"],
+      ["Zeeschildpadden", "Groenwieren"], ["Zeeschildpadden", "Roodwieren"], ["Zeeschildpadden", "Bruinwieren"],
+      /* --- WATERDIEREN --- */
+      ["Zeeschildpadden", "Sponzen"], ["Zeeschildpadden", "Koraal"], ["Zeeschildpadden", "Kwallen"], 
+      ["Zeeschildpadden", "Zeeanemonen"], ["Zeeschildpadden", "Wormen"], ["Zeeschildpadden", "Oertrochozoa"], 
+      ["Zeeschildpadden", "Zeesterren"], ["Zeeschildpadden", "Zee-egels"], ["Zeeschildpadden", "Manteldieren"], 
+      /* --- +schelp --- */
+      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"], 
+      /* --- VISSEN --- */
+      ["Zeeschildpadden", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeeschildpadden", "map:Geleedpotigen"] /* zeepokken +schelp */
     ],
     output: [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
@@ -7282,22 +7287,42 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"]
+      /* --- WATERDIEREN --- */
+      ["Zeeschildpadden", "Inktvissen"], ["Zeeschildpadden", "Nautilussen"], ["Zeeschildpadden", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Zeeschildpadden", "Agnathen"], ["Zeeschildpadden", "Oerstraalvinnigen"],
+      ["Platvissen", "Zeeschildpadden"], ["Clownvissen", "Zeeschildpadden"], ["Doktersvissen", "Zeeschildpadden"], 
+      ["Kabeljauwen", "Zeeschildpadden"], ["Haring", "Zeeschildpadden"], ["Makreel", "Zeeschildpadden"],
+      ["Paling", "Zeeschildpadden"], ["Zeepaardjes", "Zeeschildpadden"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
         quote: `Try to be like the turtle - at ease in your own shell
         <br><br>- Bill Copeland`
       },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      },
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Nautilussen"],
+      ["Zeeschildpadden", "Zeepokken"]
+    ],
+    output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
@@ -7410,8 +7435,8 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Octopussen", "Kwallen"], ["Octopussen", "Manteldieren"], ["Octopussen", "Wormen"], 
-      ["Octopussen", "Oertrochozoa"], ["Octopussen", "Zeesterren"],
+      ["Octopussen", "Kwallen"],["Octopussen", "Wormen"], ["Octopussen", "Oertrochozoa"], ["Octopussen", "Zeesterren"], 
+      ["Octopussen", "Zee-egels"], ["Octopussen", "Manteldieren"], 
       /* --- +schelp --- */
       ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], 
       /* --- VISSEN --- */
