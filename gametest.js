@@ -8505,6 +8505,60 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Koraalduivels", "Oergeleedpotigen"], ["Koraalduivels", "Oerkreeftjes"], ["Koraalduivels", "Oerinsecten"],
+      ["Koraalduivels", "Krill"], ["Koraalduivels", "Aasgarnalen"], ["Koraalduivels", "Vlokreeftjes"],
+      ["Koraalduivels", "Garnalen"],
+    ],
+    output: [
+      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
+        dangerous
+        <br><br>- James Morris`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Koraalduivels", "Agnathen"], ["Koraalduivels", "Oerstraalvinnigen"], ["Koraalduivels", "Clownvissen"], 
+      ["Koraalduivels", "Doktersvissen"], ["Koraalduivels", "Papegaaivissen"], ["Koraalduivels", "Zeepaardjes"],
+      ["Koraalduivels", "Goudvissen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
+        dangerous
+        <br><br>- James Morris`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Moeras", "Oerstraalvinnigen"],
     hint: `Sommige straalvinnigen voelen zich thuis in de moerassen.`,
     tijd: 10_000_000,
