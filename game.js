@@ -4138,14 +4138,14 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Inktvissen", "Kwallen"], ["Inktvissen", "Manteldieren"], 
-      ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],
+      ["Inktvissen", "Kwallen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Wormen"], 
+      ["Inktvissen", "Oertrochozoa"], ["Inktvissen", "Zeesterren"],
+      /* --- +schelp --- */
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"], 
       /* --- VISSEN --- */
       ["Inktvissen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Inktvissen", "Oergeleedpotigen"], ["Inktvissen", "Oercheliceraten"], ["Inktvissen", "Oerinsecten"], 
-      ["Inktvissen", "Oerkreeftjes"],
-      ["Inktvissen", "Krill"], ["Inktvissen", "Vlokreeftjes"]
+      ["Inktvissen", "map:Geleedpotigen"] /* zeepokken +schelp */
     ],
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
@@ -4167,11 +4167,11 @@ const combinaties = [
   {
     input: [
       /* --- VISSEN --- */
-      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"], ["Inktvissen", "Haring"], 
-      ["Inktvissen", "Makreel"], ["Inktvissen", "Krabben"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Inktvissen", "Zwaardstaarten"], ["Inktvissen", "Garnalen"], ["Inktvissen", "Kreeften"], ["Inktvissen", "Krabben"],
-      ["Inktvissen", "Heremietkreeften"]
+      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"],
+      ["Platvissen", "Inktvissen"], ["Clownvissen", "Inktvissen"], ["Doktersvissen", "Inktvissen"], 
+      ["Zalm", "Inktvissen"], ["Kabeljauwen", "Inktvissen"], ["Haring", "Inktvissen"], ["Makreel", "Inktvissen"],
+      ["Karpers", "Inktvissen"], ["Forel", "Inktvissen"], ["Meervallen", "Inktvissen"], ["Paling", "Inktvissen"], 
+      ["Zeepaardjes", "Inktvissen"], ["Piranha", "Inktvissen"], ["Goudvissen", "Inktvissen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -4198,23 +4198,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"],
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"], ["Inktvissen", "Zeepokken"]
     ],
     output: [
-      { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
-        quote: `I would love to see a giant squid. Very few people have seen them. 
-        And only about half a dozen people have seen one alive
-        <br><br>- David Attenborough`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-        find the point where these molecules became conscious
-        <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
@@ -4494,12 +4480,13 @@ const combinaties = [
     input: [
       /* --- WATERDIEREN --- */
       ["Nautilussen", "Kwallen"], ["Nautilussen", "Manteldieren"], ["Nautilussen", "Wormen"], 
-      ["Nautilussen", "Oertrochozoa"], 
+      ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Zeesterren"],
+      /* --- +schelp --- */
+      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], 
       /* --- VISSEN --- */
       ["Nautilussen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Nautilussen", "Oergeleedpotigen"], ["Nautilussen", "Oerkreeftjes"], ["Nautilussen", "Zeepissebedden"],
-      ["Nautilussen", "Krill"], ["Nautilussen", "Aasgarnalen"], ["Nautilussen", "Vlokreeftjes"]
+      ["Nautilussen", "map:Geleedpotigen"] /* zeepokken +schelp */
     ],
     output: [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
@@ -4519,7 +4506,12 @@ const combinaties = [
   },
   {
     input: [
-      ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"]
+      /* --- VISSEN --- */
+      ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"],
+      ["Platvissen", "Nautilussen"], ["Clownvissen", "Nautilussen"], ["Doktersvissen", "Nautilussen"], 
+      ["Zalm", "Nautilussen"], ["Kabeljauwen", "Nautilussen"], ["Haring", "Nautilussen"], ["Makreel", "Nautilussen"],
+      ["Karpers", "Nautilussen"], ["Forel", "Nautilussen"], ["Meervallen", "Nautilussen"], ["Paling", "Nautilussen"], 
+      ["Zeepaardjes", "Nautilussen"], ["Piranha", "Nautilussen"], ["Goudvissen", "Nautilussen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -4544,21 +4536,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Nautilussen", "Tweekleppigen"],
+    input: [
+      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Zeepokken"]
+    ],
     output: [
-      { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
-        quote: `You don't have to bee Greek to enjoy this one
-        <br><br>- Jeff Smith`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
