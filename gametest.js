@@ -4291,13 +4291,16 @@ const combinaties = [
   },
   {
     input: [
-      ["Agnathen", "Bacteriën"], ["Agnathen", "Detritus"], ["Agnathen", "Blauwalgen"], ["Agnathen", "Leca"], 
-      ["Agnathen", "Schimmel"], ["Agnathen", "Sponzen"], ["Agnathen", "Archaeplastiden"], ["Agnathen", "Gist"], 
-      ["Agnathen", "Rode algen"], ["Agnathen", "Groene algen"], ["Agnathen", "Amoeben"], ["Agnathen", "Foraminiferen"],
-      ["Agnathen", "Stralendiertjes"], ["Agnathen", "Oercnidaria"], ["Agnathen", "Oerbilateria"], 
-      ["Agnathen", "Roodwieren"], ["Agnathen", "Bruinwieren"], ["Agnathen", "Groenwieren"], ["Agnathen", "Oertrochozoa"], 
-      ["Agnathen", "Wormen"], ["Agnathen", "Zeesterren"], ["Agnathen", "Lancetvisjes"], ["Agnathen", "Beerdiertjes"], 
-      ["Agnathen", "Krill"], ["Agnathen", "Vlokreeftjes"]
+      /* --- PRIL LEVEN --- */
+      ["Agnathen", "Detritus"], ["Agnathen", "Oercnidaria"], ["Agnathen", "Oerbilateria"], 
+      ["Agnathen", "Wormen"], ["Agnathen", "Oertrochozoa"], 
+      ["Agnathen", "Zeeslakken"], ["Agnathen", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Agnathen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Agnathen", "Oergeleedpotigen"], ["Agnathen", "Oerkreeftjes"], ["Agnathen", "Oerinsecten"],
+      ["Agnathen", "Krill"], ["Agnathen", "Aasgarnalen"], ["Agnathen", "Zeepissebedden"],
+      ["Agnathen", "Vlokreeftjes"], ["Agnathen", "Garnalen"]
     ],
     output: [
       { naam: "Agnathen", icoon: "icons/Agnathen.png", map: "Vissen", 
@@ -4313,6 +4316,17 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Agnathen", "Zeeslakken"], ["Agnathen", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
