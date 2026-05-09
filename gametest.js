@@ -5179,9 +5179,17 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerstraalvinnigen", "Oertrochozoa"], ["Oerstraalvinnigen", "Wormen"], ["Oerstraalvinnigen", "Lancetivsjes"], 
+      /* --- PRIL LEVEN --- */
+      ["Oerstraalvinnigen", "Detritus"], ["Oerstraalvinnigen", "Oercnidaria"], ["Oerstraalvinnigen", "Oerbilateria"], 
+      ["Oerstraalvinnigen", "Wormen"], ["Oerstraalvinnigen", "Oertrochozoa"], 
+      ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Oerstraalvinnigen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
       ["Oerstraalvinnigen", "Oergeleedpotigen"], ["Oerstraalvinnigen", "Oerkreeftjes"], 
-      ["Oerstraalvinnigen", "Oerinsecten"], ["Oerstraalvinnigen", "Krill"], ["Oerstraalvinnigen", "Garnalen"]
+      ["Oerstraalvinnigen", "Oerinsecten"],
+      ["Oerstraalvinnigen", "Krill"], ["Oerstraalvinnigen", "Aasgarnalen"], ["Oerstraalvinnigen", "Zeepissebedden"],
+      ["Oerstraalvinnigen", "Vlokreeftjes"], ["Oerstraalvinnigen", "Garnalen"]
     ],
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
@@ -5203,7 +5211,7 @@ const combinaties = [
     input: [
       ["Oerstraalvinnigen", "Agnathen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; Die creëerde de mens uit een bloedklodder
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
@@ -5222,6 +5230,17 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
