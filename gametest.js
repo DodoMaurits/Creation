@@ -8517,6 +8517,11 @@ const combinaties = [
         dangerous
         <br><br>- James Morris`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -8542,6 +8547,11 @@ const combinaties = [
         quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
         dangerous
         <br><br>- James Morris`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
       },
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
