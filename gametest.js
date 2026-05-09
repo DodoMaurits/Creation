@@ -8477,22 +8477,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerstraalvinnigen", "Gif"],
-    hint: `Sommige straalvinnigen kiezen voor de strategie van het gif.`,
-    tijd: 20_000_000,
-    output: [
-      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
-        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
-        dangerous
-        <br><br>- James Morris`
-      },
-      { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png", map: "Vissen", 
-        quote: `Few fish combine such vulnerability in appearance with such extreme defensive capability as the pufferfish
-        <br><br>- David Attenborough`
-      }
-    ]
-  },
-  {
     input: ["Moeras", "Oerstraalvinnigen"],
     hint: `Sommige straalvinnigen voelen zich thuis in de moerassen.`,
     tijd: 10_000_000,
