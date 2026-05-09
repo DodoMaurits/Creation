@@ -8248,6 +8248,34 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Platvissen", "Wormen"], ["Platvissen", "Oertrochozoa"], 
+      /* --- VISSEN --- */
+      ["Platvissen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN ---*/
+      ["Platvissen", "Oergeleedpotigen"], ["Platvissen", "Oercheliceraten"], ["Platvissen", "Oerkreefjtes"],
+      ["Platvissen", "Oerinsecten"], ["Platvissen", "Oerspinnen"], ["Platvissen", "Krill"],
+      ["Platvissen", "Aasgarnalen"], ["Platvissen", "Zeepissebedden"], ["Platvissen", "Vlokreeftjes"],
+      ["Platvissen", "Oertienpotigen"], ["Platvissen", "Garnalen"], ["Platvissen", "Waterspinnen"]
+    ],
+    output: [
+      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Oerstraalvinnigen", "Meer"],
     hint: `Sommige straalvinnigen voelen zich thuis in de zoete meren.`,
     tijd: 10_000_000,
@@ -8510,6 +8538,37 @@ const combinaties = [
         quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome predators of
         popular imagination
         <br><br>- Herbert Axelrod`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Piranha", "Agnathen"], ["Piranha", "Oerstraalvinnigen"], ["Piranha", "Clownvissen"], 
+      ["Piranha", "Doktersvissen"], ["Piranha", "Zalm"], ["Piranha", "Haring"], ["Piranha", "Makreel"], 
+      ["Piranha", "Karpers"], ["Piranha", "Snoeken"], ["Piranha", "Forel"], ["Piranha", "Meervallen"], 
+      ["Piranha", "Paling"], ["Piranha", "Goudvissen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Piranha", icoon: "icons/Piranha.png", map: "Vissen", 
+        quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome 
+        predators of popular imagination
+        <br><br>- Herbert Axelrod`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
