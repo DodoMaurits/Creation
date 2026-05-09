@@ -8036,6 +8036,26 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Manta", "Krill"], ["Manta", "Aasgarnalen"], ["Manta", "Vlokreeftjes"]
+    ],
+    output: [
+      { naam: "Manta", icoon: "icons/Manta.png", map: "Vissen", 
+        quote: `Watching a manta ray glide past is like witnessing a bird in flight beneath the sea
+        <br><br>- Andrea Marshall`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Oerstraalvinnigen", "Kou"],
     tijd: 10_000_000,
     output: [
@@ -8149,6 +8169,34 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
       }
     }
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Platvissen", "Wormen"], ["Platvissen", "Oertrochozoa"], 
+      /* --- VISSEN --- */
+      ["Platvissen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN ---*/
+      ["Platvissen", "Oergeleedpotigen"], ["Platvissen", "Oercheliceraten"], ["Platvissen", "Oerkreefjtes"],
+      ["Platvissen", "Oerinsecten"], ["Platvissen", "Oerspinnen"], ["Platvissen", "Krill"],
+      ["Platvissen", "Aasgarnalen"], ["Platvissen", "Zeepissebedden"], ["Platvissen", "Vlokreeftjes"],
+      ["Platvissen", "Oertienpotigen"], ["Platvissen", "Garnalen"], ["Platvissen", "Waterspinnen"]
+    ],
+    output: [
+      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerstraalvinnigen", "Meer"],
@@ -8448,6 +8496,70 @@ const combinaties = [
     }
   },
   {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Koraalduivels", "Oergeleedpotigen"], ["Koraalduivels", "Oerkreeftjes"], ["Koraalduivels", "Oerinsecten"],
+      ["Koraalduivels", "Krill"], ["Koraalduivels", "Aasgarnalen"], ["Koraalduivels", "Vlokreeftjes"],
+      ["Koraalduivels", "Garnalen"],
+    ],
+    output: [
+      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
+        dangerous
+        <br><br>- James Morris`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Koraalduivels", "Agnathen"], ["Koraalduivels", "Oerstraalvinnigen"], ["Koraalduivels", "Clownvissen"], 
+      ["Koraalduivels", "Doktersvissen"], ["Koraalduivels", "Papegaaivissen"], ["Koraalduivels", "Zeepaardjes"],
+      ["Koraalduivels", "Goudvissen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
+        dangerous
+        <br><br>- James Morris`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Moeras", "Oerstraalvinnigen"],
     hint: `Sommige straalvinnigen voelen zich thuis in de moerassen.`,
     tijd: 10_000_000,
@@ -8491,6 +8603,37 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Piranha", "Agnathen"], ["Piranha", "Oerstraalvinnigen"], ["Piranha", "Clownvissen"], 
+      ["Piranha", "Doktersvissen"], ["Piranha", "Zalm"], ["Piranha", "Haring"], ["Piranha", "Makreel"], 
+      ["Piranha", "Karpers"], ["Piranha", "Snoeken"], ["Piranha", "Forel"], ["Piranha", "Meervallen"], 
+      ["Piranha", "Paling"], ["Piranha", "Goudvissen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Piranha", icoon: "icons/Piranha.png", map: "Vissen", 
+        quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome 
+        predators of popular imagination
+        <br><br>- Herbert Axelrod`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
