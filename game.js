@@ -7241,6 +7241,81 @@ const combinaties = [
   },
   {
     input: [
+      /* --- WATERDIEREN --- */
+      ["Octopussen", "Kwallen"], ["Octopussen", "Manteldieren"], ["Octopussen", "Wormen"], 
+      ["Octopussen", "Oertrochozoa"], ["Octopussen", "Zeesterren"],
+      /* --- +schelp --- */
+      ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], 
+      /* --- VISSEN --- */
+      ["Octopussen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Octopussen", "map:Geleedpotigen"] /* zeepokken +schelp */
+    ],
+    output: [
+      { naam: "Octopussen", icoon: "icons/Octopussen.png", map: "Waterdieren", 
+        quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
+        with an octopus
+        <br><br>- Sy Montgomery`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Octopussen", "Inktvissen"], ["Octopussen", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Octopussen", "Agnathen"], ["Octopussen", "Oerstraalvinnigen"],
+      ["Platvissen", "Octopussen"], ["Clownvissen", "Octopussen"], ["Doktersvissen", "Octopussen"], 
+      ["Zalm", "Octopussen"], ["Kabeljauwen", "Octopussen"], ["Haring", "Octopussen"], ["Makreel", "Octopussen"],
+      ["Karpers", "Octopussen"], ["Forel", "Octopussen"], ["Meervallen", "Octopussen"], ["Paling", "Octopussen"], 
+      ["Zeepaardjes", "Octopussen"], ["Piranha", "Octopussen"], ["Goudvissen", "Octopussen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Octopussen", icoon: "icons/Octopussen.png", map: "Waterdieren", 
+        quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
+        with an octopus
+        <br><br>- Sy Montgomery`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], ["Octopussen", "Nautilussen"],
+      ["Octopussen", "Zeepokken"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
       ["Oermaniraptoren", "Evolutie"], ["Oermaniraptoren", "Lucht"]
     ],
     hint: `Wie o wie voelt zich vogelvrij genoeg?`,
