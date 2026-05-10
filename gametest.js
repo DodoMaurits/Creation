@@ -7549,7 +7549,7 @@ const combinaties = [
         tekst: "Je moet eerst nog wat meer halen...",
       },
       normal: {
-        achtergrond: "afb/krijt.jpg",
+        achtergrond: "afb/Het_Krijt.png",
         titel: "KRIJT 145-66 MA",
         tekst: `
         <span></span>`,
@@ -8153,7 +8153,7 @@ const combinaties = [
         tekst: "Je moet eerst nog wat meer halen...",
       },
       normal: {
-        achtergrond: "afb/paleogeen.jpg",
+        achtergrond: "afb/Uitsterven_dinosauriërs.jpg",
         titel: "DINOSAURIËRS UITGESTORVEN 66 MA",
         tekst: `
         <span></span>`,
