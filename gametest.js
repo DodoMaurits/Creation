@@ -5153,7 +5153,6 @@ const combinaties = [
       /* --- PRIL LEVEN --- */
       ["Oerstraalvinnigen", "Detritus"], ["Oerstraalvinnigen", "Oercnidaria"], ["Oerstraalvinnigen", "Oerbilateria"], 
       ["Oerstraalvinnigen", "Wormen"], ["Oerstraalvinnigen", "Oertrochozoa"], 
-      ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"],
       /* --- VISSEN --- */
       ["Oerstraalvinnigen", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
@@ -5204,17 +5203,6 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"]
-    ],
-    output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
