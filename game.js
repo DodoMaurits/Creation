@@ -7364,7 +7364,7 @@ const combinaties = [
         requirements: ["Termieten"]
       },
       normal: {
-        achtergrond: "afb/krijt.jpg",
+        achtergrond: "afb/Het_Krijt.png",
         titel: "KRIJT 145-66 MA",
         tekst: `
         <span></span>`,
@@ -8001,7 +8001,7 @@ const combinaties = [
         requirements: ["Savanne", "Oase", "Steppe"]
       },
       normal: {
-        achtergrond: "afb/paleogeen.jpg",
+        achtergrond: "afb/Uitsterven_dinosauriërs.jpg",
         titel: "DINOSAURIËRS UITGESTORVEN 66 MA",
         tekst: `
         <span></span>`,
