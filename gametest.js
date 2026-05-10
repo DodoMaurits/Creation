@@ -8479,6 +8479,48 @@ const combinaties = [
   },
   {
     input: [
+      /* --- WATERDIEREN --- */
+      ["Kogelvissen", "Koraal"], ["Kogelvissen", "Wormen"], ["Kogelvissen", "Oertrochozoa"], 
+      ["Kogelvissen", "Zee-egels"], ["Kogelvissen", "Zeesterren"],
+      ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Kogelvissen", "map:Geleedpotigen"]
+    ],
+    output: [
+      { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png", map: "Vissen", 
+        quote: `Few fish combine such vulnerability in appearance with such extreme defensive capability as the pufferfish
+        <br><br>- David Attenborough`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
+      ["Kogelvissen", "Zeepokken"], ["Kogelvissen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
       ["Oerstraalvinnigen", "Koraal"], ["Oerstraalvinnigen", "Rif"], ["Oerstraalvinnigen", "Zeeanemeonen"]
     ],
     hint: `Sommige straalvinnigen voelen zich thuis in de wereld van de koraalriffen.`,
