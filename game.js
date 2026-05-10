@@ -8027,13 +8027,9 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
     input: [
@@ -8074,13 +8070,9 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs", 
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
     input: [
@@ -8096,13 +8088,78 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Kabeljauwen", "Wormen"], ["Kabeljauwen", "Oertrochozoa"],
+      ["Kabeljauwen", "Zeeslakken"], ["Kabeljauwen", "Tweekleppigen"],
+      ["Kabeljauwen", "Inktvissen"], ["Kabeljauwen", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Kabeljauwen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Kabeljauwen", "map:Geleedpotigen"]
+    ],
+    output: [
+      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+        quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
+        a cornerstone of marine ecosystems
+        <br><br>- Daniel Pauly`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Kabeljauwen", "Agnathen"], ["Kabeljauwen", "Oerstraalvinnigen"], ["Kabeljauwen", "Tonijn"],
+      ["Kabeljauwen", "Haring"], ["Kabeljauwen", "Makreel"], ["Kabeljauwen", "Karpers"], ["Kabeljauwen", "Snoeken"], 
+      ["Kabeljauwen", "Forel"], ["Kabeljauwen", "Meervallen"], ["Kabeljauwen", "Paling"], 
+      ["Kabeljauwen", "Goudvissen"]
+    ],
+    output: [
+      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+        quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
+        a cornerstone of marine ecosystems
+        <br><br>- Daniel Pauly`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Kabeljauwen", "Zeeslakken"], ["Kabeljauwen", "Tweekleppigen"],
+      ["Kabeljauwen", "Zeepokken"], ["Kabeljauwen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: [
@@ -8118,13 +8175,9 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
     input: ["Oerstraalvinnigen", "Berg"],
@@ -8138,13 +8191,9 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
-      }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
     input: ["Oerstraalvinnigen", "Zand"],
@@ -8162,13 +8211,37 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Papegaaivissen", "Blauwalgen"], 
+      ["Papegaaivissen", "Groene algen"], ["Papegaaivissen", "Rode algen"], ["Papegaaivissen", "Steenwortelalgen"],
+      ["Papegaaivissen", "Groenwieren"], ["Papegaaivissen", "Roodwieren"], ["Papegaaivissen", "Bruinwieren"],
+      /* --- WATERDIEREN --- */
+      ["Papegaaivissen", "Sponzen"], ["Papegaaivissen", "Koraal"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Papegaaivissen", "Aasgarnalen"], ["Papegaaivissen", "Vlokreeftjes"]
+    ],
+    output: [
+      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
+        quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
+        in the creation of tropical beaches
+        <br><br>- Peter Sale`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
   },
   {
     input: [
@@ -8217,14 +8290,37 @@ const combinaties = [
         <br><br>- Hugh Falkus`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      ["Karpers", "Detritus"],
+      /* --- PRIL LEVEN --- */
+      ["Karpers", "Blauwalgen"], ["Karpers", "Rode algen"], ["Karpers", "Groene algen"], ["Karpers", "Steenwortelalgen"],
+      ["Karpers", "Roodwieren"], ["Karpers", "Groenwieren"], ["Karpers", "Bruinwieren"],
+      /* --- WATERDIEREN --- */
+      ["Karpers", "Wormen"], ["Karpers", "Oertrochozoa"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Karpers", "Oerkreeftjes"], ["Karpers", "Oerinsecten"], ["Karpers", "Krill"], 
+      ["Karpers", "Aasgarnalen"], ["Karpers", "Vlokreeftjes"], ["Karpers", "Garnalen"]
+    ],
+    output: [
+      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+        quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
   },
   {
     input: [
@@ -8240,13 +8336,32 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Vliegvissen", "Oerkreeftjes"], ["Vliegvissen", "Oerinsecten"], ["Vliegvissen", "Krill"], 
+      ["Vliegvissen", "Aasgarnalen"], ["Vliegvissen", "Vlokreeftjes"], ["Vliegvissen", "Garnalen"]
+    ],
+    output: [
+      { naam: "Vliegvissen", icoon: "icons/Vliegvissen.png", map: "Vissen", 
+        quote: `Fly fishing is as much about the rhythm of water and air as it is about catching fish; it is a form of quiet
+        observation of nature
+        <br><br>- John Gierach`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
   },
   {
     input: [
@@ -8270,13 +8385,77 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Meervallen", "Wormen"], ["Meervallen", "Oertrochozoa"],
+      ["Meervallen", "Zeeslakken"], ["Meervallen", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Meervallen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Meervallen", "map:Geleedpotigen"]
+    ],
+    output: [
+      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+        quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
+        where sight is of little use
+        <br><br>- Herbert Boschung`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Meervallen", "Agnathen"], ["Meervallen", "Oerstraalvinnigen"],
+      ["Meervallen", "Kabeljauwen"], ["Meervallen", "Haring"], ["Meervallen", "Makreel"], 
+      ["Meervallen", "Karpers"], ["Meervallen", "Snoeken"], ["Meervallen", "Forel"], ["Meervallen", "Paling"], 
+      ["Meervallen", "Goudvissen"]
+    ],
+    output: [
+      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+        quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
+        where sight is of little use
+        <br><br>- Herbert Boschung`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Meervallen", "Zeeslakken"], ["Meervallen", "Tweekleppigen"],
+      ["Meervallen", "Zeepokken"], ["Meervallen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: ["Oerstraalvinnigen", "Zee"],
@@ -8337,13 +8516,32 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeepaardjes", "Oerkreeftjes"], ["Zeepaardjes", "Oerinsecten"], ["Zeepaardjes", "Krill"], 
+      ["Zeepaardjes", "Aasgarnalen"], ["Zeepaardjes", "Vlokreeftjes"], ["Zeepaardjes", "Garnalen"]
+    ],
+    output: [
+      { naam: "Zeepaardjes ", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
+        quote: `Male seahorses receive eggs from the female and incubate them in a ventral brood pouch, where the embryos develop 
+        until birth
+        <br><br>- Sara Lourie`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
   },
   {
     input: ["Oerstraalvinnigen", "Oceaan"],
@@ -8370,13 +8568,37 @@ const combinaties = [
       }
     ],
     uitleg: {
-      thresholdElement: {
-        naam: "Vogelbekdieren", 
-        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Maanvissen", "Blauwalgen"], ["Maanvissen", "Groene algen"], ["Maanvissen", "Rode algen"],
+      ["Maanvissen", "Groenwieren"], ["Maanvissen", "Roodwieren"], ["Maanvissen", "Bruinwieren"],
+      /* --- WATERDIEREN --- */
+      ["Maanvissen", "Sponzen"], ["Maanvissen", "Wormen"], ["Maanvissen", "Oertrochozoa"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Maanvissen", "Oerkreeftjes"], ["Maanvissen", "Oerinsecten"], ["Maanvissen", "Krill"], 
+      ["Maanvissen", "Aasgarnalen"], ["Maanvissen", "Vlokreeftjes"], ["Maanvissen", "Garnalen"]
+    ],
+    output: [
+      { naam: "Maanvissen", icoon: "icons/Maanvissen.png", map: "Vissen", 
+        quote: `Mola mola appears almost otherworldly, a giant, flattened fish that seems more like a drifting fragment of the sea 
+        itself than a conventional animal
+        <br><br>- Bruce Collette`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
   },
   {
     input: ["Oerstraalvinnigen", "Sneeuw"],
@@ -8536,6 +8758,59 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
+  },
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Clownvissen", "Blauwalgen"], ["Clownvissen", "Groene algen"], ["Clownvissen", "Rode algen"], 
+      ["Clownvissen", "Groenwieren"], ["Clownvissen", "Roodwieren"], ["Clownvissen", "Bruinwieren"],
+      /* --- WATERDIEREN --- */
+      ["Clownvissen", "Sponzen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Clownvissen", "Oerkreeftjes"], ["Clownvissen", "Oerinsecten"], ["Clownvissen", "Krill"], 
+      ["Clownvissen", "Aasgarnalen"], ["Clownvissen", "Vlokreeftjes"], ["Clownvissen", "Garnalen"]
+    ],
+    output: [
+      { naam: "Clownvissen", icoon: "icons/Clownvissen.png", map: "Vissen", 
+        quote: `Few marine relationships are as iconic as that between clownfish and sea anemones
+        <br><br>- Nancy Knowlton`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Doktersvissen", "Blauwalgen"], ["Doktersvissen", "Groene algen"], ["Doktersvissen", "Rode algen"], 
+      ["Doktersvissen", "Groenwieren"], ["Doktersvissen", "Roodwieren"], ["Doktersvissen", "Bruinwieren"],
+      /* --- WATERDIEREN --- */
+      ["Doktersvissen", "Sponzen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Doktersvissen", "Aasgarnalen"], ["Doktersvissen", "Vlokreeftjes"]
+    ],
+    output: [
+      { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png", map: "Vissen", 
+        quote: `Surgeonfish are named for the sharp, scalpel-like spines located near the base of their tails
+        <br><br>- David Bellwood`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
