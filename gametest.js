@@ -170,8 +170,7 @@ const mappen = [
       { naam: "Bos", icoon: "icons/Bos.png" },
       { naam: "Regenwoud", icoon: "icons/Regenwoud.png" },
       { naam: "Tropisch regenwoud", icoon: "icons/Tropisch regenwoud.png" },
-      { naam: "Heuvel", icoon: "icons/Heuvel.png" },
-      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png" }
+      { naam: "Heuvel", icoon: "icons/Heuvel.png" }
     ]
   },
   {
