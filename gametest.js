@@ -8576,11 +8576,11 @@ const combinaties = [
         rivers of their birth
         <br><br>- Colin Braithwaite`
       },
-      { naam: "Makreel ", icoon: "icons/Makreel.png", map: "Vissen", 
+      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
-      { naam: "Paling ", icoon: "icons/Paling.png", map: "Vissen", 
+      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
         quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
         thousands of kilometres
         <br><br>- Frederik Kendall`
@@ -8597,16 +8597,16 @@ const combinaties = [
         a cornerstone of marine ecosystems
         <br><br>- Daniel Pauly`
       },
-      { naam: "Makreel ", icoon: "icons/Makreel.png", map: "Vissen", 
+      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
-      { naam: "Paling ", icoon: "icons/Paling.png", map: "Vissen", 
+      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
         quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
         thousands of kilometres
         <br><br>- Frederik Kendall`
       },
-      { naam: "Zeepaardjes ", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
+      { naam: "Zeepaardjes", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
         quote: `Male seahorses receive eggs from the female and incubate them in a ventral brood pouch, where the embryos develop 
         until birth
         <br><br>- Sara Lourie`
@@ -8620,7 +8620,7 @@ const combinaties = [
       ["Zeepaardjes", "Aasgarnalen"], ["Zeepaardjes", "Vlokreeftjes"], ["Zeepaardjes", "Garnalen"]
     ],
     output: [
-      { naam: "Zeepaardjes ", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
+      { naam: "Zeepaardjes", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
         quote: `Male seahorses receive eggs from the female and incubate them in a ventral brood pouch, where the embryos develop 
         until birth
         <br><br>- Sara Lourie`
@@ -8712,7 +8712,7 @@ const combinaties = [
         quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
         <br><br>- Rachel Carson`
       },
-      { naam: "Makreel ", icoon: "icons/Makreel.png", map: "Vissen", 
+      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       }
@@ -8935,7 +8935,7 @@ const combinaties = [
         where sight is of little use
         <br><br>- Herbert Boschung`
       },
-      { naam: "Paling ", icoon: "icons/Paling.png", map: "Vissen", 
+      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
         quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
         thousands of kilometres
         <br><br>- Frederik Kendall`
