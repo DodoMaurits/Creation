@@ -6192,19 +6192,6 @@ const combinaties = [
       ["Krabben", "Zeepokken"], ["Krabben", "Zeeslakken"], ["Krabben", "Tweekleppigen"]
     ],
     output: [
-      { naam: "Krabben", icoon: "icons/Krabben.png", map: "Geleedpotigen",
-        quote: `You cannot teach a crab to walk straight
-        <br><br>- Aristophanes`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
