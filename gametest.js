@@ -5674,10 +5674,6 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
       }
     ]
   },
