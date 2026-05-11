@@ -2634,7 +2634,7 @@ const combinaties = [
       ["Oergeleedpotigen", "Radioactiviteit"], ["Oergeleedpotigen", "Gif"], 
       ["Trilobieten", "Radioactiviteit"], ["Trilobieten", "Gif"], 
       ["Oercheliceraten", "Radioactiviteit"], ["Oercheliceraten", "Gif"], 
-      ["Oerspinnen", "Radioactiviteit"], ["Oerspinnen", "Gif"],       
+      ["Oerspinachtigen", "Radioactiviteit"], ["Oerspinachtigen", "Gif"],       
       ["Oertienpotigen", "Radioactiviteit"], ["Oertienpotigen", "Gif"], 
       ["Waterspinnen", "Radioactiviteit"], ["Waterspinnen", "Gif"], 
       ["Oerkreeftjes", "Radioactiviteit"], ["Oerkreeftjes", "Gif"], 
@@ -3093,7 +3093,7 @@ const combinaties = [
     input: [
       /* --- GELEEDPOTIGEN --- */
       ["Oercheliceraten", "Zenuwen"], 
-      ["Oerspinnen", "Zenuwen"], 
+      ["Oerspinachtigen", "Zenuwen"], 
       ["Oertienpotigen", "Zenuwen"], 
       ["Waterspinnen", "Zenuwen"]
     ],
@@ -3480,7 +3480,7 @@ const combinaties = [
       ["Tiktaalik", "Pijn"], ["Tonijn", "Pijn"], ["Zalm", "Pijn"], ["Haring", "Pijn"], ["Makreel", "Pijn"],
       ["Forel", "Pijn"],
       /* --- GELEEDPOTIGEN --- */
-      ["Oergeleedpotigen", "Pijn"], ["Oercheliceraten", "Pijn"], ["Oerspinnen", "Pijn"], ["Oertienpotigen", "Pijn"], 
+      ["Oergeleedpotigen", "Pijn"], ["Oercheliceraten", "Pijn"], ["Oerspinachtigen", "Pijn"], ["Oertienpotigen", "Pijn"], 
       ["Waterspinnen", "Pijn"], ["Trilobieten", "Pijn"], ["Oerkreeftjes", "Pijn"], ["Krill", "Pijn"], 
       ["Aasgarnalen", "Pijn"], ["Zeepissebedden", "Pijn"], ["Reuzenpissebedden", "Pijn"], ["Oerinsecten", "Pijn"], 
       ["Vlokreeftjes", "Pijn"], ["Garnalen", "Pijn"], ["Kreeften", "Pijn"], ["Krabben", "Pijn"], 
@@ -3547,7 +3547,7 @@ const combinaties = [
       /* --- GELEEDPOTIGEN --- */
       ["Oergeleedpotigen", "Virus"], ["Oergeleedpotigen", "Parasieten"], 
       ["Oercheliceraten", "Virus"], ["Oercheliceraten", "Parasieten"], 
-      ["Oerspinnen", "Virus"], ["Oerspinnen", "Parasieten"], 
+      ["Oerspinachtigen", "Virus"], ["Oerspinachtigen", "Parasieten"], 
       ["Oertienpotigen", "Virus"], ["Oertienpotigen", "Parasieten"],
       ["Waterspinnen", "Virus"], ["Waterspinnen", "Parasieten"], 
       ["Trilobieten", "Virus"], ["Trilobieten", "Parasieten"], 
@@ -3616,7 +3616,7 @@ const combinaties = [
       ["Manta", "Manta"], ["Coelacanthen", "Coelacanthen"], ["Tiktaalik", "Tiktaalik"], ["Tonijn", "Tonijn"], 
       ["Zalm", "Zalm"], ["Haring", "Haring"], ["Makreel", "Makreel"], ["Forel", "Forel"],
       /* --- GELEEDPOTIGEN --- */
-      ["Oergeleedpotigen", "Oergeleedpotigen"], ["Oercheliceraten", "Oercheliceraten"], ["Oerspinnen", "Oerspinnen"], 
+      ["Oergeleedpotigen", "Oergeleedpotigen"], ["Oercheliceraten", "Oercheliceraten"], ["Oerspinachtigen", "Oerspinachtigen"], 
       ["Oertienpotigen", "Oertienpotigen"], ["Waterspinnen", "Waterspinnen"], ["Trilobieten", "Trilobieten"], 
       ["Oerkreeftjes", "Oerkreeftjes"], ["Krill", "Krill"], ["Aasgarnalen", "Aasgarnalen"], 
       ["Zeepissebedden", "Zeepissebedden"], ["Reuzenpissebedden", "Reuzenpissebedden"], ["Oerinsecten", "Oerinsecten"], 
@@ -3936,7 +3936,7 @@ const combinaties = [
       ["Agnathen", "Lancetvisjes"],
       /* --- KLEINE GELEEDPOTIGEN --- */
       ["Agnathen", "Oergeleedpotigen"], ["Agnathen", "Oercheliceraten"], ["Agnathen", "Oerkreeftjes"],
-      ["Agnathen", "Oerinsecten"], ["Agnathen", "Oerspinnen"], ["Agnathen", "Krill"], ["Agnathen", "Aasgarnalen"], 
+      ["Agnathen", "Oerinsecten"], ["Agnathen", "Oerspinachtigen"], ["Agnathen", "Krill"], ["Agnathen", "Aasgarnalen"], 
       ["Agnathen", "Zeepissebedden"], ["Agnathen", "Vlokreeftjes"], ["Agnathen", "Oertienpotigen"], 
       ["Agnathen", "Garnalen"], ["Agnathen", "Waterspinnen"]
     ],
@@ -3970,12 +3970,16 @@ const combinaties = [
   },
   {
     input: [
-      ["Oergeleedpotigen", "Bacteriën"], ["Oergeleedpotigen", "Detritus"], ["Oergeleedpotigen", "Blauwalgen"], 
+      ["Oergeleedpotigen", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Oergeleedpotigen", "Bacteriën"], ["Oergeleedpotigen", "Blauwalgen"], ["Oergeleedpotigen", "Archaeplastiden"], 
       ["Oergeleedpotigen", "Rode algen"], ["Oergeleedpotigen", "Groene algen"], 
       ["Oergeleedpotigen", "Amoeben"], ["Oergeleedpotigen", "Foraminiferen"], ["Oergeleedpotigen", "Stralendiertjes"], 
       ["Oergeleedpotigen", "Oercnidaria"], ["Oergeleedpotigen", "Oerbilateria"],
       ["Oergeleedpotigen", "Schimmel"], ["Oergeleedpotigen", "Gist"], 
-      ["Oergeleedpotigen", "Wormen"], ["Oergeleedpotigen", "Oertrochozoa"], ["Oergeleedpotigen", "Beerdiertjes"], 
+      /* --- WATERDIEREN --- */
+      ["Oergeleedpotigen", "Wormen"], ["Oergeleedpotigen", "Oertrochozoa"], ["Oergeleedpotigen", "Beerdiertjes"],
+      /* --- GELEEDPOTIGEN --- */
       ["Oergeleedpotigen", "Krill"], ["Oergeleedpotigen", "Vlokreeftjes"]
     ],
     output: [
@@ -4289,9 +4293,26 @@ const combinaties = [
   },
   {
     input: [
+      ["Trilobieten", "Detritus"], 
+      /* --- PRIL LEVEN --- */
       ["Trilobieten", "Bacteriën"], ["Trilobieten", "Blauwalgen"], ["Trilobieten", "Leca"], 
+      ["Trilobieten", "Archaeplastiden"], 
+      ["Trilobieten", "Rode algen"], ["Trilobieten", "Groene algen"], ["Trilobieten", "Steenwortelalgen"],
+      ["Trilobieten", "Roodwieren"], ["Trilobieten", "Groenwieren"],  
       ["Trilobieten", "Amoeben"], ["Trilobieten", "Foraminiferen"], ["Trilobieten", "Stralendiertjes"], 
-      ["Trilobieten", "Wormen"], ["Trilobieten", "Beerdiertjes"], ["Trilobieten", "Krill"]
+      /* --- WATERDIEREN --- */
+      ["Trilobieten", "Sponzen"], ["Trilobieten", "Wormen"], ["Trilobieten", "Oertrochozoa"], 
+      ["Trilobieten", "Zeeslakken"], ["Trilobieten", "Tweekleppigen"], 
+      ["Trilobieten", "Beerdiertjes"], 
+      /* --- VISSEN --- */
+      ["Trilobieten", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Trilobieten", "Oergeleedpotigen"], ["Trilobieten", "Oercheliceraten"], ["Trilobieten", "Oerkreeftjes"],
+      ["Trilobieten", "Oerinsecten"], ["Trilobieten", "Oerspinachtigen"], ["Trilobieten", "Krill"], 
+      ["Trilobieten", "Aasgarnalen"], ["Trilobieten", "Zeepissebedden"], ["Trilobieten", "Zeepokken"], 
+      ["Trilobieten", "Vlokreeftjes"], ["Trilobieten", "Oertienpotigen"], ["Trilobieten", "Reuzenpissebedden"], 
+      ["Trilobieten", "Garnalen"], ["Trilobieten", "Kreeften"], ["Trilobieten", "Krabben"], 
+      ["Trilobieten", "Heremietkreeften"], ["Trilobieten", "Waterspinnen"]
     ],
     output: [
       { naam: "Trilobieten", icoon: "icons/Trilobieten.png", map: "Geleedpotigen", 
@@ -4313,9 +4334,32 @@ const combinaties = [
   },
   {
     input: [
+      ["Trilobieten", "Zeeslakken"], ["Trilobieten", "Tweekleppigen"], 
+      ["Trilobieten", "Zeepokken"], ["Trilobieten", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
       ["Oercheliceraten", "Bacteriën"], ["Oercheliceraten", "Blauwalgen"], ["Oercheliceraten", "Leca"], 
       ["Oercheliceraten", "Amoeben"], ["Oercheliceraten", "Foraminiferen"], ["Oercheliceraten", "Stralendiertjes"], 
-      ["Oercheliceraten", "Wormen"], ["Oercheliceraten", "Beerdiertjes"], ["Oercheliceraten", "Krill"]
+      ["Oercheliceraten", "Oercnidaria"], ["Oercheliceraten", "Oerbilateria"], 
+      /* --- WATERDIEREN --- */
+      ["Oercheliceraten", "Sponzen"], ["Oercheliceraten", "Kwallen"],
+      ["Oercheliceraten", "Wormen"], ["Oercheliceraten", "Oertrochozoa"],
+      ["Oercheliceraten", "Beerdiertjes"], ["Oercheliceraten", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Oercheliceraten", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Oercheliceraten", "Oergeleedpotigen"], ["Oercheliceraten", "Oerkreeftjes"], ["Oercheliceraten", "Oerinsecten"],
+      ["Oercheliceraten", "Oerspinachtigen"], ["Oercheliceraten", "Krill"], ["Oercheliceraten", "Aasgarnalen"],
+      ["Oercheliceraten", "Zeepissebedden"], ["Oercheliceraten", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Oercheliceraten", icoon: "icons/Oercheliceraten.png", map: "Geleedpotigen", 
@@ -4331,6 +4375,15 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: ["Oercheliceraten", "Tweekleppigen"],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -4364,11 +4417,22 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerkreeftjes", "Bacteriën"], ["Oerkreeftjes", "Blauwalgen"], ["Oerkreeftjes", "Leca"], ["Oerkreeftjes", "Amoeben"], 
-      ["Oerkreeftjes", "Foraminiferen"], ["Oerkreeftjes", "Stralendiertjes"], ["Oerkreeftjes", "Wormen"], 
-      ["Oerkreeftjes", "Oertrochozoa"], ["Oerkreeftjes", "Manteldieren"], ["Oerkreeftjes", "Beerdiertjes"], 
-      ["Oerkreeftjes", "Trilobieten"], ["Oerkreeftjes", "Zwaardstaarten"], ["Oerkreeftjes", "Krill"],
-      ["Oerkreeftjes", "Garnalen"]
+      ["Oerkreeftjes", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Oerkreeftjes", "Bacteriën"], ["Oerkreeftjes", "Blauwalgen"], ["Oerkreeftjes", "Leca"], 
+      ["Oerkreeftjes", "Archaeplastiden"], 
+      ["Oerkreeftjes", "Rode algen"], ["Oerkreeftjes", "Groene algen"], ["Oerkreeftjes", "Steenwortelalgen"],
+      ["Oerkreeftjes", "Roodwieren"], ["Oerkreeftjes", "Groenwieren"],  
+      ["Oerkreeftjes", "Amoeben"], ["Oerkreeftjes", "Foraminiferen"], ["Oerkreeftjes", "Stralendiertjes"], 
+      /* --- WATERDIEREN --- */
+      ["Oerkreeftjes", "Wormen"], ["Oerkreeftjes", "Oertrochozoa"], 
+      ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Tweekleppigen"], 
+      ["Oerkreeftjes", "Beerdiertjes"], 
+      /* --- VISSEN --- */
+      ["Oerkreeftjes", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerkreeftjes", "Krill"], ["Oerkreeftjes", "Aasgarnalen"], ["Oerkreeftjes", "Zeepissebedden"], 
+      ["Oerkreeftjes", "Zeepokken"], ["Oerkreeftjes", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Oerkreeftjes", icoon: "icons/Oerkreeftjes.png", map: "Geleedpotigen", 
@@ -4387,21 +4451,11 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerkreeftjes", "Tweekleppigen"],
+    input: [
+      ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Tweekleppigen"],
+      ["Oerkreeftjes", "Zeepokken"]
+    ],
     output: [
-      { naam: "Oerkreeftjes", icoon: "icons/Oerkreeftjes.png", map: "Geleedpotigen", 
-        quote: `Crustaceans represent one of the most diverse and ecologically important groups of animals in the sea
-        <br><br>- Martin Thiel`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
@@ -4410,9 +4464,16 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerinsecten", "Bacteriën"], ["Oerinsecten", "Blauwalgen"], ["Oerinsecten", "Leca"], ["Oerinsecten", "Amoeben"], 
-      ["Oerinsecten", "Foraminiferen"], ["Oerinsecten", "Stralendiertjes"], ["Oerinsecten", "Wormen"], 
-      ["Oerinsecten", "Oergeleedpotigen"], ["Oerinsecten", "Beerdiertjes"]
+      ["Oerinsecten", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Oerinsecten", "Bacteriën"], ["Oerinsecten", "Blauwalgen"], ["Oerinsecten", "Leca"], 
+      ["Oerinsecten", "Archaeplastiden"], ["Oerinsecten", "Groene algen"], ["Oerinsecten", "Groenwieren"],  
+      ["Oerinsecten", "Amoeben"], ["Oerinsecten", "Foraminiferen"], ["Oerinsecten", "Stralendiertjes"], 
+      ["Oerinsecten", "Schimmel"], ["Oerinsecten", "Gist"], 
+      /* --- WATERDIEREN --- */
+      ["Oerinsecten", "Beerdiertjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerinsecten", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Oerinsecten", icoon: "icons/Oerinsecten.png", map: "Geleedpotigen", 
@@ -4619,9 +4680,20 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerspinachtigen", "Oertrochozoa"], ["Oerspinachtigen", "Wormen"], ["Oerspinachtigen", "Oergeleedpotigen"], 
-      ["Oerspinachtigen", "Beerdiertjes"], ["Oerspinachtigen", "Trilobieten"], ["Oerspinachtigen", "Oercheliceraten"], 
-      ["Oerspinachtigen", "Oerkreeftjes"], ["Oerspinachtigen", "Oerinsecten"], ["Oerspinachtigen", "Krill"]
+      /* --- PRIL LEVEN --- */
+      ["Oerspinachtigen", "Bacteriën"], ["Oerspinachtigen", "Blauwalgen"],
+      ["Oerspinachtigen", "Schimmel"], ["Oerspinachtigen", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Oerspinachtigen", "Wormen"], ["Oerspinachtigen", "Oertrochozoa"], ["Oerspinachtigen", "Beerdiertjes"], 
+      /* --- VISSEN --- */
+      ["Oerspinachtigen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerspinachtigen", "Oergeleedpotigen"], ["Oerspinachtigen", "Oerkreeftjes"], ["Oerspinachtigen", "Oerinsecten"], 
+      ["Oerspinachtigen", "Krill"], ["Oerspinachtigen", "Aasgarnalen"], ["Oerspinachtigen", "Zeepissebedden"], 
+      ["Oerspinachtigen", "Vlokreeftjes"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerspinachtigen", "Duizendpoten"], ["Oerspinachtigen", "Mijten"], ["Oerspinachtigen", "Teken"],
+      ["Oerspinachtigen", "Pissebedden"], ["Oerspinachtigen", "Zilvervisjes"]
     ],
     output: [
       { naam: "Oerspinachtigen", icoon: "icons/Oerspinachtigen.png", map: "Geleedpotigen", 
@@ -4674,9 +4746,14 @@ const combinaties = [
   },
   {
     input: [
-      ["Krill", "Bacteriën"], ["Krill", "Detritus"], ["Krill", "Blauwalgen"], ["Krill", "Rode algen"], 
-      ["Krill", "Groene algen"], ["Krill", "Amoeben"], ["Krill", "Foraminiferen"], ["Krill", "Stralendiertjes"], 
-      ["Krill", "Roodwieren"], ["Krill", "Groenwieren"], ["Krill", "Beerdiertjes"]
+      ["Krill", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Krill", "Bacteriën"], ["Krill", "Blauwalgen"], ["Krill", "Leca"], ["Krill", "Archaeplastiden"], 
+      ["Krill", "Rode algen"], ["Krill", "Groene algen"], ["Krill", "Steenwortelalgen"],
+      ["Krill", "Roodwieren"], ["Krill", "Groenwieren"],  
+      ["Krill", "Amoeben"], ["Krill", "Foraminiferen"], ["Krill", "Stralendiertjes"], 
+      /* --- WATERDIEREN --- */
+      ["Krill", "Beerdiertjes"]
     ],
     output: [
       { naam: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
@@ -4696,10 +4773,17 @@ const combinaties = [
   },
   {
     input: [
-      ["Aasgarnalen", "Bacteriën"], ["Aasgarnalen", "Detritus"], ["Aasgarnalen", "Blauwalgen"], 
-      ["Aasgarnalen", "Rode algen"], ["Aasgarnalen", "Groene algen"], ["Aasgarnalen", "Amoeben"], 
-      ["Aasgarnalen", "Foraminiferen"], ["Aasgarnalen", "Stralendiertjes"], ["Aasgarnalen", "Roodwieren"], 
-      ["Aasgarnalen", "Groenwieren"], ["Aasgarnalen", "Beerdiertjes"]
+      ["Aasgarnalen", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Aasgarnalen", "Bacteriën"], ["Aasgarnalen", "Blauwalgen"], ["Aasgarnalen", "Leca"], 
+      ["Aasgarnalen", "Archaeplastiden"], 
+      ["Aasgarnalen", "Rode algen"], ["Aasgarnalen", "Groene algen"], ["Aasgarnalen", "Steenwortelalgen"],
+      ["Aasgarnalen", "Roodwieren"], ["Aasgarnalen", "Groenwieren"],  
+      ["Aasgarnalen", "Amoeben"], ["Aasgarnalen", "Foraminiferen"], ["Aasgarnalen", "Stralendiertjes"], 
+      /* --- WATERDIEREN --- */
+      ["Aasgarnalen", "Beerdiertjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Aasgarnalen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Aasgarnalen", icoon: "icons/Aasgarnalen.png", map: "Geleedpotigen", 
@@ -4863,7 +4947,7 @@ const combinaties = [
       /* --- GELEEDPOTIGEN --- */
       ["Oerstraalvinnigen", "Oergeleedpotigen"], ["Oerstraalvinnigen", "Oercheliceraten"], 
       ["Oerstraalvinnigen", "Oerkreeftjes"],
-      ["Oerstraalvinnigen", "Oerinsecten"], ["Oerstraalvinnigen", "Oerspinnen"], ["Oerstraalvinnigen", "Krill"], 
+      ["Oerstraalvinnigen", "Oerinsecten"], ["Oerstraalvinnigen", "Oerspinachtigen"], ["Oerstraalvinnigen", "Krill"], 
       ["Oerstraalvinnigen", "Aasgarnalen"], 
       ["Oerstraalvinnigen", "Zeepissebedden"], ["Oerstraalvinnigen", "Vlokreeftjes"], 
       ["Oerstraalvinnigen", "Oertienpotigen"], 
@@ -4917,7 +5001,7 @@ const combinaties = [
       ["Coelacanthen", "Wormen"], ["Coelacanthen", "Oertrochozoa"],
       /* --- GELEEDPOTIGEN --- */
       ["Coelacanthen", "Oergeleedpotigen"], ["Coelacanthen", "Oercheliceraten"], ["Coelacanthen", "Oerkreeftjes"],
-      ["Coelacanthen", "Oerinsecten"], ["Coelacanthen", "Oerspinnen"], ["Coelacanthen", "Krill"], 
+      ["Coelacanthen", "Oerinsecten"], ["Coelacanthen", "Oerspinachtigen"], ["Coelacanthen", "Krill"], 
       ["Coelacanthen", "Aasgarnalen"], 
       ["Coelacanthen", "Zeepissebedden"], ["Coelacanthen", "Vlokreeftjes"], ["Coelacanthen", "Oertienpotigen"], 
       ["Coelacanthen", "Garnalen"], ["Coelacanthen", "Krabben"], ["Coelacanthen", "Waterspinnen"]
@@ -4950,7 +5034,7 @@ const combinaties = [
       ["Tiktaalik", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
       ["Tiktaalik", "Oergeleedpotigen"], ["Tiktaalik", "Oercheliceraten"], ["Tiktaalik", "Oerkreeftjes"],
-      ["Tiktaalik", "Oerinsecten"], ["Tiktaalik", "Oerspinnen"], ["Tiktaalik", "Krill"], ["Tiktaalik", "Aasgarnalen"], 
+      ["Tiktaalik", "Oerinsecten"], ["Tiktaalik", "Oerspinachtigen"], ["Tiktaalik", "Krill"], ["Tiktaalik", "Aasgarnalen"], 
       ["Tiktaalik", "Zeepissebedden"], ["Tiktaalik", "Vlokreeftjes"], ["Tiktaalik", "Oertienpotigen"], 
       ["Tiktaalik", "Garnalen"], ["Tiktaalik", "Waterspinnen"]
     ],
@@ -5216,15 +5300,133 @@ const combinaties = [
         <br><br>- H. Komai`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
+    uitleg: { thresholdElement: { naam: "Oervaatplanten", titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden
-        <br><br>Eerst nodig: oervaatplanten.`
+        gezet kan worden <br><br>Eerst nodig: oervaatplanten.` } }
+  },
+  {
+    input: [
+      ["Zeepissebedden", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Zeepissebedden", "Bacteriën"], ["Zeepissebedden", "Blauwalgen"], ["Zeepissebedden", "Leca"], 
+      ["Zeepissebedden", "Archaeplastiden"], 
+      ["Zeepissebedden", "Rode algen"], ["Zeepissebedden", "Groene algen"], ["Zeepissebedden", "Steenwortelalgen"],
+      ["Zeepissebedden", "Roodwieren"], ["Zeepissebedden", "Groenwieren"],  
+      ["Zeepissebedden", "Amoeben"], ["Zeepissebedden", "Foraminiferen"], ["Zeepissebedden", "Stralendiertjes"], 
+      ["Zeepissebedden", "Schimmel"], ["Zeepissebedden", "Gist"],  
+      /* --- WATERDIEREN --- */
+      ["Zeepissebedden", "Beerdiertjes"]
+    ],
+    output: [
+      { naam: "Zeepissebedden", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
+        quote: `Marine littoral isopods are highly mobile scavengers, often found in large numbers along rocky shorelines
+        <br><br>- Gary Poore`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
-    }
+    ]
+  },
+  {
+    input: [
+      ["Zeepokken", "Detritus"],
+      /* --- PRIL LEVEN --- */
+      ["Zeepokken", "Bacteriën"],  ["Zeepokken", "Blauwalgen"], ["Zeepokken", "Leca"], ["Zeepokken", "Archaeplastiden"], 
+      ["Zeepokken", "Rode algen"], ["Zeepokken", "Groene algen"], ["Zeepokken", "Steenwortelalgen"],
+      ["Zeepokken", "Amoeben"], ["Zeepokken", "Foraminiferen"], ["Zeepokken", "Stralendiertjes"], 
+      ["Zeepokken", "Oercnidaria"], ["Zeepokken", "Oerbilateria"], 
+      ["Zeepokken", "Schimmel"], ["Zeepokken", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Zeepokken", "Beerdiertjes"]
+    ],
+    output: [
+      { naam: "Zeepokken", icoon: "icons/Zeepokken.png", map: "Geleedpotigen", 
+        quote: `Despite their immobility as adults, barnacles are active filter feeders, relying on water movement to 
+        bring food particles within reach
+        <br><br>- Graham Walker`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Vlokreeftjes", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Vlokreeftjes", "Bacteriën"], ["Vlokreeftjes", "Blauwalgen"], ["Vlokreeftjes", "Leca"], 
+      ["Vlokreeftjes", "Archaeplastiden"], 
+      ["Vlokreeftjes", "Rode algen"], ["Vlokreeftjes", "Groene algen"], ["Vlokreeftjes", "Steenwortelalgen"], 
+      ["Vlokreeftjes", "Roodwieren"],  ["Vlokreeftjes", "Groenwieren"],  
+      ["Vlokreeftjes", "Amoeben"], ["Vlokreeftjes", "Foraminiferen"], ["Vlokreeftjes", "Stralendiertjes"], 
+      ["Vlokreeftjes", "Schimmel"], ["Vlokreeftjes", "Gist"], 
+      /* --- WATERDIEREN --- */
+      ["Vlokreeftjes", "Beerdiertjes"]
+    ],
+    output: [
+      { naam: "Vlokreeftjes", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
+        quote: `Many amphipods are important scavengers, playing a key role in the breakdown of organic matter in aquatic 
+        ecosystems
+        <br><br>- Gary Poore`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oertienpotigen", "Detritus"],
+      /* --- PRIL LEVEN --- */
+      ["Oertienpotigen", "Bacteriën"], ["Oertienpotigen", "Blauwalgen"], ["Oertienpotigen", "Archaeplastiden"],
+      ["Oertienpotigen", "Rode algen"], ["Oertienpotigen", "Groene algen"], ["Oertienpotigen", "Steenwortelalgen"],
+      ["Oertienpotigen", "Schimmel"], ["Oertienpotigen", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Oertienpotigen", "Sponzen"], ["Oertienpotigen", "Wormen"], ["Oertienpotigen", "Oertrochozoa"], 
+      ["Oertienpotigen", "Beerdiertjes"], 
+      /* --- VISSEN --- */
+      ["Oertienpotigen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Oertienpotigen", "Oergeleedpotigen"], ["Oertienpotigen", "Oercheliceraten"], ["Oertienpotigen", "Oerkreeftjes"], 
+      ["Oertienpotigen", "Oerinsecten"], ["Oertienpotigen", "Oerspinachtigen"], ["Oertienpotigen", "Krill"], 
+      ["Oertienpotigen", "Aasgarnalen"], ["Oertienpotigen", "Zeepissebedden"], ["Oertienpotigen", "Vlokreeftjes"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oertienpotigen", "Duizendpoten"], ["Oertienpotigen", "Mijten"], ["Oerspinachtigen", "Teken"],
+      ["Oertienpotigen", "Pissebedden"], ["Oertienpotigen", "Zilvervisjes"]
+    ],
+    output: [
+      { naam: "Oertienpotigen", icoon: "icons/Oertienpotigen.png", map: "Geleedpotigen", 
+        quote: `The evolution of decapods reflects a long history of ecological diversification in marine environments
+        <br><br>- H. Komai`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerinsecten", "Evolutie"],
@@ -5241,15 +5443,9 @@ const combinaties = [
         <br><br>- Norman Platnick`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
+    uitleg: { thresholdElement: { naam: "Oervaatplanten", titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
+        gezet kan worden <br><br>Eerst nodig: oervaatplanten.` } }
   },
   {
     input: ["Oerspinachtigen", "Evolutie"],
@@ -5279,15 +5475,9 @@ const combinaties = [
         <br><br>- Alan Bowman`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oervaatplanten", 
-        titel: "Probeer opnieuw in het Siluur",
+    uitleg: { thresholdElement: { naam: "Oervaatplanten", titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
-        gezet kan worden.
-        <br><br>Eerst nodig: oervaatplanten.`
-      }
-    }
+        gezet kan worden <br><br>Eerst nodig: oervaatplanten.` } }
   },
   {
     input: [
@@ -5452,7 +5642,53 @@ const combinaties = [
       { naam: "Reuzenpissebedden", icoon: "icons/Reuzenpissebedden.png", map: "Geleedpotigen", 
         quote: `These large isopods are scavengers of the deep ocean floor, feeding on carcasses and organic debris
         <br><br>- Diva Abele`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Reuzenpissebedden", "Detritus"],
+      /* --- PRIL LEVEN --- */
+      ["Reuzenpissebedden", "Bacteriën"], ["Reuzenpissebedden", "Blauwalgen"], ["Reuzenpissebedden", "Archaeplastiden"],
+      ["Reuzenpissebedden", "Rode algen"], ["Reuzenpissebedden", "Groene algen"], 
+      ["Reuzenpissebedden", "Steenwortelalgen"],
+      ["Reuzenpissebedden", "Schimmel"], ["Reuzenpissebedden", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Reuzenpissebedden", "Wormen"], ["Reuzenpissebedden", "Oertrochozoa"],
+      ["Reuzenpissebedden", "Zeeslakken"], ["Reuzenpissebedden", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Reuzenpissebedden", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Reuzenpissebedden", "Oergeleedpotigen"], ["Reuzenpissebedden", "Oerkreeftjes"], 
+      ["Reuzenpissebedden", "Oerinsecten"], ["Reuzenpissebedden", "Oerspinachtigen"], ["Reuzenpissebedden", "Krill"],
+      ["Reuzenpissebedden", "Aasgarnalen"], ["Reuzenpissebedden", "Zeepissebedden"], ["Reuzenpissebedden", "Zeepokken"], 
+      ["Reuzenpissebedden", "Vlokreeftjes"], ["Reuzenpissebedden", "Oertienpotigen"], ["Reuzenpissebedden", "Garnalen"]
+    ],
+    output: [
+      { naam: "Reuzenpissebedden", icoon: "icons/Reuzenpissebedden.png", map: "Geleedpotigen", 
+        quote: `These large isopods are scavengers of the deep ocean floor, feeding on carcasses and organic debris
+        <br><br>- Diva Abele`
       },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Reuzenpissebedden", "Zeepokken"], ["Reuzenpissebedden", "Zeeslakken"], ["Reuzenpissebedden", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
     ]
   },
   {
@@ -5522,11 +5758,19 @@ const combinaties = [
   },
   {
     input: [
-      ["Garnalen", "Bacteriën"], ["Garnalen", "Detritus"], ["Garnalen", "Blauwalgen"], ["Garnalen", "Schimmel"],
-      ["Garnalen", "Archaeplastiden"], ["Garnalen", "Gist"], ["Garnalen", "Rode algen"], ["Garnalen", "Groene algen"],
-      ["Garnalen", "Roodwieren"], ["Garnalen", "Groenwieren"], ["Garnalen", "Wormen"], ["Garnalen", "Mos"], 
-      ["Garnalen", "Oervaatplanten"], ["Garnalen", "Korstmos"], ["Garnalen", "Truffels"], ["Garnalen", "Paddenstoelen"],
-      ["Garnalen", "Krill"], ["Garnalen", "Blad"]
+      ["Garnalen", "Detritus"],
+      /* --- PRIL LEVEN --- */
+      ["Garnalen", "Bacteriën"], ["Garnalen", "Blauwalgen"], ["Garnalen", "Archaeplastiden"],
+      ["Garnalen", "Rode algen"], ["Garnalen", "Groene algen"], ["Garnalen", "Steenwortelalgen"],
+      ["Garnalen", "Schimmel"], ["Garnalen", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Garnalen", "Wormen"], ["Garnalen", "Oertrochozoa"], ["Garnalen", "Beerdiertjes"], 
+      /* --- VISSEN --- */
+      ["Garnalen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Garnalen", "Oergeleedpotigen"], ["Garnalen", "Oerkreeftjes"], 
+      ["Garnalen", "Oerinsecten"], ["Garnalen", "Krill"], 
+      ["Garnalen", "Aasgarnalen"], ["Garnalen", "Zeepissebedden"], ["Garnalen", "Vlokreeftjes"]
     ],
     output: [
       { naam: "Garnalen", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
@@ -5546,12 +5790,26 @@ const combinaties = [
   },
   {
     input: [
-      ["Kreeften", "Bacteriën"], ["Kreeften", "Detritus"], ["Kreeften", "Blauwalgen"], ["Kreeften", "Schimmel"],
-      ["Kreeften", "Archaeplastiden"], ["Kreeften", "Gist"], ["Kreeften", "Rode algen"], ["Kreeften", "Groene algen"],
-      ["Kreeften", "Roodwieren"], ["Kreeften", "Groenwieren"], ["Kreeften", "Wormen"], ["Kreeften", "Oergeleedpotigen"], 
-      ["Kreeften", "Manteldieren"], ["Kreeften", "Mos"], ["Kreeften", "Trilobieten"], ["Kreeften", "Oerkreeftjes"], 
-      ["Kreeften", "Oervaatplanten"], ["Kreeften", "Korstmos"], ["Kreeften", "Truffels"], ["Kreeften", "Paddenstoelen"],
-      ["Kreeften", "Pissebedden"], ["Kreeften", "Garnalen"], ["Kreeften", "Krabben"], ["Kreeften", "Blad"]
+      ["Kreeften", "Detritus"],
+      /* --- PRIL LEVEN --- */
+      ["Kreeften", "Bacteriën"], ["Kreeften", "Blauwalgen"], ["Kreeften", "Leca"], ["Kreeften", "Archaeplastiden"], 
+      ["Kreeften", "Rode algen"], ["Kreeften", "Groene algen"], ["Kreeften", "Steenwortelalgen"],
+      ["Kreeften", "Roodwieren"], ["Kreeften", "Groenwieren"], 
+      ["Kreeften", "Amoeben"], ["Kreeften", "Foraminiferen"], ["Kreeften", "Stralendiertjes"], 
+      ["Kreeften", "Oercnidaria"], ["Kreeften", "Oerbilateria"],  
+      ["Kreeften", "Schimmel"], ["Kreeften", "Gist"],  
+      /* --- WATERDIEREN --- */
+      ["Kreeften", "Wormen"], ["Kreeften", "Oertrochozoa"],
+      ["Kreeften", "Beerdiertjes"], 
+      ["Kreeften", "Zeeslakken"], ["Kreeften", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Kreeften", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Kreeften", "Oergeleedpotigen"], ["Kreeften", "Oercheliceraten"], ["Kreeften", "Oerkreeftjes"], 
+      ["Kreeften", "Oerinsecten"], ["Kreeften", "Oerspinachtigen"], ["Kreeften", "Krill"], ["Kreeften", "Aasgarnalen"],
+      ["Kreeften", "Zeepissebedden"],["Kreeften", "Zeepokken"],  ["Kreeften", "Vlokreeftjes"], 
+      ["Kreeften", "Oertienpotigen"], ["Kreeften", "Reuzenpissebedden"], ["Kreeften", "Garnalen"],
+      ["Kreeften", "Waterspinnen"] 
     ],
     output: [
       { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
@@ -5572,23 +5830,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Kreeften", "Zeeslakken"], ["Kreeften", "Tweekleppigen"]
+      ["Kreeften", "Zeepokken"], ["Kreeften", "Zeeslakken"], ["Kreeften", "Tweekleppigen"]
     ],
     output: [
-      { naam: "Kreeften", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
-        quote: `Lobsters are among the most ancient designs in the sea, animals whose basic form has persisted for
-        millions of years
-        <br><br>- Trevor Corson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
@@ -5596,13 +5840,27 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Krabben", "Bacteriën"], ["Krabben", "Detritus"], ["Krabben", "Blauwalgen"], ["Krabben", "Schimmel"],
-      ["Krabben", "Archaeplastiden"], ["Krabben", "Gist"], ["Krabben", "Rode algen"], ["Krabben", "Groene algen"],
-      ["Krabben", "Roodwieren"], ["Krabben", "Groenwieren"], ["Krabben", "Wormen"], ["Krabben", "Oergeleedpotigen"], 
-      ["Krabben", "Manteldieren"], ["Krabben", "Mos"], ["Krabben", "Trilobieten"], ["Krabben", "Oerkreeftjes"], 
-      ["Krabben", "Oervaatplanten"], ["Krabben", "Korstmos"], ["Krabben", "Truffels"], ["Krabben", "Paddenstoelen"],
-      ["Krabben", "Pissebedden"], ["Krabben", "Garnalen"], ["Krabben", "Blad"]
+    input: [      
+      ["Krabben", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Krabben", "Bacteriën"], ["Krabben", "Blauwalgen"], ["Krabben", "Leca"], ["Krabben", "Archaeplastiden"], 
+      ["Krabben", "Rode algen"], ["Krabben", "Groene algen"], ["Krabben", "Steenwortelalgen"],
+      ["Krabben", "Roodwieren"], ["Krabben", "Groenwieren"], 
+      ["Krabben", "Amoeben"], ["Krabben", "Foraminiferen"], ["Krabben", "Stralendiertjes"], 
+      ["Krabben", "Oercnidaria"], ["Krabben", "Oerbilateria"],  
+      ["Krabben", "Schimmel"], ["Krabben", "Gist"],  
+      /* --- WATERDIEREN --- */
+      ["Krabben", "Wormen"], ["Krabben", "Oertrochozoa"],
+      ["Krabben", "Beerdiertjes"], 
+      ["Krabben", "Zeeslakken"], ["Krabben", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Krabben", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Krabben", "Oergeleedpotigen"], ["Krabben", "Oercheliceraten"], ["Krabben", "Oerkreeftjes"], 
+      ["Krabben", "Oerinsecten"], ["Krabben", "Oerspinachtigen"], ["Krabben", "Krill"], ["Krabben", "Aasgarnalen"],
+      ["Krabben", "Zeepissebedden"],["Krabben", "Zeepokken"],  ["Krabben", "Vlokreeftjes"], 
+      ["Krabben", "Oertienpotigen"], ["Krabben", "Reuzenpissebedden"], ["Krabben", "Garnalen"],
+      ["Krabben", "Waterspinnen"] 
     ],
     output: [
       { naam: "Krabben", icoon: "icons/Krabben.png", map: "Geleedpotigen",
@@ -5622,7 +5880,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Krabben", "Zeeslakken"], ["Krabben", "Tweekleppigen"]
+      ["Krabben", "Zeepokken"], ["Krabben", "Zeeslakken"], ["Krabben", "Tweekleppigen"]
     ],
     output: [
       { naam: "Krabben", icoon: "icons/Krabben.png", map: "Geleedpotigen",
@@ -5657,8 +5915,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
-        quote: `
-        <br><br>- `
+        quote: `The growth of hermit crabs is constrained by their dependence on finding progressively larger shells
+        <br><br>- Martin West`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -5677,8 +5935,8 @@ const combinaties = [
     ],
     output: [
       { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
-        quote: `
-        <br><br>- `
+        quote: `The growth of hermit crabs is constrained by their dependence on finding progressively larger shells
+        <br><br>- Martin West`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -5705,6 +5963,38 @@ const combinaties = [
         quote: `The diving bell spider constructs an օդome of silk filled with air, allowing it to live and hunt beneath 
         the surface
         <br><br>- Rainer Foelix`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Waterspinnen", "Wormen"], ["Waterspinnen", "Oertrochozoa"], 
+      /* --- VISSEN --- */
+      ["Waterspinnen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Waterspinnen", "Oergeleedpotigen"], ["Waterspinnen", "Oerkreeftjes"], ["Waterspinnen", "Oerinsecten"], 
+      ["Waterspinnen", "Krill"], ["Waterspinnen", "Aasgarnalen"], ["Waterspinnen", "Zeepissebedden"], 
+      ["Waterspinnen", "Vlokreeftjes"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Waterspinnen", "Duizendpoten"], ["Waterspinnen", "Hooiwagens"], ["Waterspinnen", "Mijten"], 
+      ["Waterspinnen", "Teken"],["Waterspinnen", "Pissebedden"], ["Waterspinnen", "Zilvervisjes"], 
+      ["Waterspinnen", "Luizen"], ["Waterspinnen", "Kevers"], ["Waterspinnen", "Muggen"]   
+    ],
+    output: [
+      { naam: "Waterspinnen", icoon: "icons/Waterspinnen.png", map: "Geleedpotigen", 
+        quote: `The diving bell spider constructs an օդome of silk filled with air, allowing it to live and hunt beneath 
+        the surface
+        <br><br>- Rainer Foelix`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
@@ -8045,7 +8335,7 @@ const combinaties = [
       ["Zalm", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
       ["Zalm", "Oergeleedpotigen"], ["Zalm", "Oercheliceraten"], ["Zalm", "Oerkreeftjes"],
-      ["Zalm", "Oerinsecten"], ["Zalm", "Oerspinnen"], ["Zalm", "Krill"],
+      ["Zalm", "Oerinsecten"], ["Zalm", "Oerspinachtigen"], ["Zalm", "Krill"],
       ["Zalm", "Aasgarnalen"], ["Zalm", "Zeepissebedden"], ["Zalm", "Vlokreeftjes"],
       ["Zalm", "Oertienpotigen"], ["Zalm", "Garnalen"], ["Zalm", "Waterspinnen"]
     ],
@@ -8123,7 +8413,7 @@ const combinaties = [
       ["Snoeken", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
       ["Snoeken", "Oergeleedpotigen"], ["Snoeken", "Oercheliceraten"], ["Snoeken", "Oerkreeftjes"],
-      ["Snoeken", "Oerinsecten"], ["Snoeken", "Oerspinnen"], ["Snoeken", "Krill"],
+      ["Snoeken", "Oerinsecten"], ["Snoeken", "Oerspinachtigen"], ["Snoeken", "Krill"],
       ["Snoeken", "Aasgarnalen"], ["Snoeken", "Zeepissebedden"], ["Snoeken", "Vlokreeftjes"],
       ["Snoeken", "Oertienpotigen"], ["Snoeken", "Garnalen"], ["Snoeken", "Waterspinnen"]
     ],
@@ -8323,7 +8613,7 @@ const combinaties = [
       ["Forel", "Wormen"], ["Forel", "Oertrochozoa"],
       /* --- GELEEDPOTIGEN --- */
       ["Forel", "Oergeleedpotigen"], ["Forel", "Oercheliceraten"], ["Forel", "Oerkreeftjes"],
-      ["Forel", "Oerinsecten"], ["Forel", "Oerspinnen"], ["Forel", "Krill"],
+      ["Forel", "Oerinsecten"], ["Forel", "Oerspinachtigen"], ["Forel", "Krill"],
       ["Forel", "Aasgarnalen"], ["Forel", "Zeepissebedden"], ["Forel", "Vlokreeftjes"],
       ["Forel", "Oertienpotigen"], ["Forel", "Garnalen"], ["Forel", "Waterspinnen"]
     ],
@@ -8425,7 +8715,7 @@ const combinaties = [
       ["Platvissen", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN ---*/
       ["Platvissen", "Oergeleedpotigen"], ["Platvissen", "Oercheliceraten"], ["Platvissen", "Oerkreeftjes"],
-      ["Platvissen", "Oerinsecten"], ["Platvissen", "Oerspinnen"], ["Platvissen", "Krill"],
+      ["Platvissen", "Oerinsecten"], ["Platvissen", "Oerspinachtigen"], ["Platvissen", "Krill"],
       ["Platvissen", "Aasgarnalen"], ["Platvissen", "Zeepissebedden"], ["Platvissen", "Vlokreeftjes"],
       ["Platvissen", "Oertienpotigen"], ["Platvissen", "Garnalen"], ["Platvissen", "Waterspinnen"]
     ],
@@ -8666,7 +8956,7 @@ const combinaties = [
       ["Tonijn", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
       ["Tonijn", "Oergeleedpotigen"], ["Tonijn", "Oercheliceraten"], ["Tonijn", "Oerkreeftjes"],
-      ["Tonijn", "Oerinsecten"], ["Tonijn", "Oerspinnen"], ["Tonijn", "Krill"],
+      ["Tonijn", "Oerinsecten"], ["Tonijn", "Oerspinachtigen"], ["Tonijn", "Krill"],
       ["Tonijn", "Aasgarnalen"], ["Tonijn", "Zeepissebedden"], ["Tonijn", "Vlokreeftjes"],
       ["Tonijn", "Oertienpotigen"], ["Tonijn", "Garnalen"], ["Tonijn", "Waterspinnen"]
     ],
@@ -8721,7 +9011,7 @@ const combinaties = [
       ["Makreel", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
       ["Makreel", "Oergeleedpotigen"], ["Makreel", "Oercheliceraten"], ["Makreel", "Oerkreeftjes"],
-      ["Makreel", "Oerinsecten"], ["Makreel", "Oerspinnen"], ["Makreel", "Krill"],
+      ["Makreel", "Oerinsecten"], ["Makreel", "Oerspinachtigen"], ["Makreel", "Krill"],
       ["Makreel", "Aasgarnalen"], ["Makreel", "Zeepissebedden"], ["Makreel", "Vlokreeftjes"],
       ["Makreel", "Oertienpotigen"], ["Makreel", "Garnalen"], ["Makreel", "Waterspinnen"]
     ],
@@ -8777,7 +9067,7 @@ const combinaties = [
       ["Paling", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
       ["Paling", "Oergeleedpotigen"], ["Paling", "Oercheliceraten"], ["Paling", "Oerkreeftjes"],
-      ["Paling", "Oerinsecten"], ["Paling", "Oerspinnen"], ["Paling", "Krill"],
+      ["Paling", "Oerinsecten"], ["Paling", "Oerspinachtigen"], ["Paling", "Krill"],
       ["Paling", "Aasgarnalen"], ["Paling", "Zeepissebedden"], ["Paling", "Vlokreeftjes"],
       ["Paling", "Oertienpotigen"], ["Paling", "Garnalen"], ["Paling", "Heremietkreeften"], ["Paling", "Waterspinnen"]
     ],
