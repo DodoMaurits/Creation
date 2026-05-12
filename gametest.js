@@ -5008,10 +5008,23 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeschorpioenen", "Oertrochozoa"], ["Zeeschorpioenen", "Wormen"], ["Zeeschorpioenen", "Oergeleedpotigen"], 
-      ["Zeeschorpioenen", "Beerdiertjes"], ["Zeeschorpioenen", "Trilobieten"], ["Zeeschorpioenen", "Oercheliceraten"], 
-      ["Zeeschorpioenen", "Oerkreeftjes"], ["Zeeschorpioenen", "Oerinsecten"], ["Zeeschorpioenen", "Zwaardstaarten"], 
-      ["Zeeschorpioenen", "Krill"]
+      /* --- PRIL LEVEN --- */
+      ["Zeeschorpioenen", "Oercnidaria"], ["Zeeschorpioenen", "Oerbilateria"],  
+      /* --- WATERDIEREN --- */
+      ["Zeeschorpioenen", "Kwallen"], ["Zeeschorpioenen", "Wormen"], ["Zeeschorpioenen", "Oertrochozoa"],
+      ["Zeeschorpioenen", "Zeesterren"], ["Zeeschorpioenen", "Manteldieren"], 
+      ["Zeeschorpioenen", "Zeeslakken"], ["Zeeschorpioenen", "Tweekleppigen"],
+      ["Zeeschorpioenen", "Inktvissen"], ["Zeeschorpioenen", "Nautilussen"], ["Zeeschorpioenen", "Zeeschildpadden"], 
+      ["Zeeschorpioenen", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Zeeschorpioenen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeeschorpioenen", "Oergeleedpotigen"], ["Zeeschorpioenen", "Trilobieten"], ["Zeeschorpioenen", "Oercheliceraten"], 
+      ["Zeeschorpioenen", "Oerkreeftjes"], ["Zeeschorpioenen", "Oerinsecten"], ["Zeeschorpioenen", "Oerspinachtigen"], 
+      ["Zeeschorpioenen", "Zwaardstaarten"], ["Zeeschorpioenen", "Krill"], ["Zeeschorpioenen", "Aasgarnalen"],
+      ["Zeeschorpioenen", "Zeepissebedden"], ["Zeeschorpioenen", "Zeepokken"], ["Zeeschorpioenen", "Vlokreeftjes"], 
+      ["Zeeschorpioenen", "Oertienpotigen"], ["Zeeschorpioenen", "Reuzenpissebedden"], ["Zeeschorpioenen", "Garnalen"],
+      ["Zeeschorpioenen", "Waterspinnen"] 
     ],
     /*hint: `Het is evolutionair handig als prooien meteen verlamd worden door giftige stofjes.`,*/
     output: [
@@ -5032,6 +5045,47 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeschorpioenen", "Agnathen"], ["Zeeschorpioenen", "Oerstraalvinnigen"]
+    ],
+    output: [
+      { naam: "Zeeschorpioenen", icoon: "icons/Zeeschorpioenen.png", map: "Geleedpotigen", 
+        quote: `Some eurypterids reached enormous size, with powerful appendages adapted for grasping and cutting prey
+        <br><br>- Erik Tetlie`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zeeschorpioenen", "Nautilussen"], 
+      ["Zeeschorpioenen", "Zeeslakken"], ["Zeeschorpioenen", "Tweekleppigen"], ["Zeeschorpioenen", "Zeepokken"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -5070,20 +5124,27 @@ const combinaties = [
   },
   {
     input: [
-      ["Zwaardstaarten", "Bacteriën"], ["Zwaardstaarten", "Detritus"], ["Zwaardstaarten", "Blauwalgen"], 
-      ["Zwaardstaarten", "Leca"], ["Zwaardstaarten", "Schimmel"], ["Zwaardstaarten", "Archaeplastiden"], 
-      ["Zwaardstaarten", "Gist"], ["Zwaardstaarten", "Rode algen"], ["Zwaardstaarten", "Groene algen"],
-      ["Zwaardstaarten", "Amoeben"], ["Zwaardstaarten", "Foraminiferen"], ["Zwaardstaarten", "Stralendiertjes"],
-      ["Zwaardstaarten", "Oercnidaria"], ["Zwaardstaarten", "Oerbilateria"], ["Zwaardstaarten", "Roodwieren"], 
-      ["Zwaardstaarten", "Steenwortelalgen"], ["Zwaardstaarten", "Groenwieren"], ["Zwaardstaarten", "Oertrochozoa"],
-      ["Zwaardstaarten", "Wormen"], ["Zwaaardstaarten", "Oergeleedpotigen"], ["Zwaardstaarten", "Beerdiertjes"],
-      ["Zwaardstaarten", "Oercheliceraten"], ["Zwaardstaarten", "Oerkreeftjes"], ["Zwaardstaarten", "Oerinsecten"],
-      ["Zwaardstaarten", "Mijten"], ["Zwaardstaarten", "Krill"], ["Zwaardstaarten", "Paddenstoelen"], 
-      ["Zwaardstaarten", "Pissebedden"], ["Zwaardstaarten", "Zilvervisjes"], ["Zwaardstaarten", "Blad"], 
-      ["Zwaardstaarten", "Oerpolyneopteren"], ["Zwaardstaarten", "Oerhymenopteren"], ["Zwaardstaarten", "Luizen"], 
-      ["Zwaardstaarten", "Kevers"], ["Zwaardstaarten", "Muggen"], ["Zwaardstaarten", "Vliegen"], 
-      ["Zwaardstaarten", "Vlinders"], ["Zwaardstaarten", "Krekels"], ["Zwaardstaarten", "Sprinkhanen"], 
-      ["Zwaardstaarten", "Wandelende takken"], ["Zwaardstaarten", "Kakkerlakken"], ["Zwaardstaarten", "Termieten"]
+      ["Zwaardstaarten", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Zwaardstaarten", "Bacteriën"], ["Zwaardstaarten", "Blauwalgen"], ["Zwaardstaarten", "Leca"], 
+      ["Zwaardstaarten", "Archaeplastiden"], 
+      ["Zwaardstaarten", "Rode algen"], ["Zwaardstaarten", "Groene algen"], ["Zwaardstaarten", "Steenwortelalgen"],
+      ["Zwaardstaarten", "Roodwieren"], ["Zwaardstaarten", "Groenwieren"], 
+      ["Zwaardstaarten", "Amoeben"], ["Zwaardstaarten", "Foraminiferen"], ["Zwaardstaarten", "Stralendiertjes"], 
+      ["Zwaardstaarten", "Oercnidaria"], ["Zwaardstaarten", "Oerbilateria"],  
+      ["Zwaardstaarten", "Schimmel"], ["Zwaardstaarten", "Gist"],  
+      /* --- WATERDIEREN --- */
+      ["Zwaardstaarten", "Wormen"], ["Zwaardstaarten", "Oertrochozoa"],
+      ["Zwaardstaarten", "Manteldieren"], ["Zwaardstaarten", "Beerdiertjes"], 
+      ["Zwaardstaarten", "Zeeslakken"], ["Zwaardstaarten", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Zwaardstaarten", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Zwaardstaarten", "Oergeleedpotigen"], ["Zwaardstaarten", "Oercheliceraten"], ["Zwaardstaarten", "Oerkreeftjes"], 
+      ["Zwaardstaarten", "Oerinsecten"], ["Zwaardstaarten", "Oerspinachtigen"], ["Zwaardstaarten", "Krill"], 
+      ["Zwaardstaarten", "Aasgarnalen"],
+      ["Zwaardstaarten", "Zeepissebedden"],["Zwaardstaarten", "Zeepokken"],  ["Zwaardstaarten", "Vlokreeftjes"], 
+      ["Zwaardstaarten", "Oertienpotigen"], ["Zwaardstaarten", "Garnalen"]
     ],
     output: [
       { naam: "Zwaardstaarten", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
@@ -5098,6 +5159,17 @@ const combinaties = [
       { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Zwaardstaarten", "Zeeslakken"], ["Zwaardstaarten", "Tweekleppigen"], ["Zwaardstaarten", "Zeepokken"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -6200,19 +6272,32 @@ const combinaties = [
   },
   {
     input: [
-      ["Heremietkreeften", "Bacteriën"], ["Heremietkreeften", "Detritus"], ["Heremietkreeften", "Blauwalgen"], 
-      ["Heremietkreeften", "Schimmel"], ["Heremietkreeften", "Archaeplastiden"], ["Heremietkreeften", "Gist"], 
-      ["Heremietkreeften", "Rode algen"], ["Heremietkreeften", "Groene algen"], ["Heremietkreeften", "Roodwieren"], 
-      ["Heremietkreeften", "Groenwieren"], ["Heremietkreeften", "Wormen"], ["Heremietkreeften", "Oergeleedpotigen"], 
-      ["Heremietkreeften", "Manteldieren"], ["Heremietkreeften", "Mos"], ["Heremietkreeften", "Trilobieten"], 
-      ["Heremietkreeften", "Oerkreeftjes"], ["Heremietkreeften", "Oervaatplanten"], ["Heremietkreeften", "Korstmos"], 
-      ["Heremietkreeften", "Truffels"], ["Heremietkreeften", "Paddenstoelen"], ["Heremietkreeften", "Pissebedden"], 
-      ["Heremietkreeften", "Garnalen"], ["Heremietkreeften", "Blad"]
+      ["Heremietkreeften", "Detritus"], 
+      /* --- PRIL LEVEN --- */
+      ["Heremietkreeften", "Bacteriën"], ["Heremietkreeften", "Blauwalgen"], ["Heremietkreeften", "Leca"], 
+      ["Heremietkreeften", "Archaeplastiden"], 
+      ["Heremietkreeften", "Rode algen"], ["Heremietkreeften", "Groene algen"], ["Heremietkreeften", "Steenwortelalgen"],
+      ["Heremietkreeften", "Roodwieren"], ["Heremietkreeften", "Groenwieren"], 
+      ["Heremietkreeften", "Amoeben"], ["Heremietkreeften", "Foraminiferen"], ["Heremietkreeften", "Stralendiertjes"], 
+      ["Heremietkreeften", "Oercnidaria"], ["Heremietkreeften", "Oerbilateria"],  
+      ["Heremietkreeften", "Schimmel"], ["Heremietkreeften", "Gist"],  
+      /* --- WATERDIEREN --- */
+      ["Heremietkreeften", "Wormen"], ["Heremietkreeften", "Oertrochozoa"],
+      ["Heremietkreeften", "Beerdiertjes"], 
+      ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Tweekleppigen"],
+      /* --- VISSEN --- */
+      ["Heremietkreeften", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Heremietkreeften", "Oergeleedpotigen"], ["Heremietkreeften", "Oercheliceraten"], 
+      ["Heremietkreeften", "Oerkreeftjes"], ["Heremietkreeften", "Oerinsecten"], ["Heremietkreeften", "Oerspinachtigen"], 
+      ["Heremietkreeften", "Krill"], ["Heremietkreeften", "Aasgarnalen"], ["Heremietkreeften", "Zeepissebedden"],
+      ["Heremietkreeften", "Zeepokken"], ["Heremietkreeften", "Vlokreeftjes"], ["Heremietkreeften", "Oertienpotigen"], 
+      ["Heremietkreeften", "Garnalen"], ["Heremietkreeften", "Waterspinnen"] 
     ],
     output: [
       { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
-        quote: `
-        <br><br>- `
+        quote: `The growth of hermit crabs is constrained by their dependence on finding progressively larger shells
+        <br><br>- Martin West`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -6227,22 +6312,9 @@ const combinaties = [
   },
   {
     input: [
-      ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Tweekleppigen"]
+      ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Tweekleppigen"], ["Heremietkreeften", "Zeepokken"]
     ],
     output: [
-      { naam: "Heremietkreeften", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
