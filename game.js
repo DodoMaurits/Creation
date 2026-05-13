@@ -12274,6 +12274,105 @@ const combinaties = [
   },
   {
     input: [
+      ["Oerplacentalia", "Lucht"], ["Oerplacentalia", "Vleugels"]
+    ],
+    hint: `Sommige placentadieren gaan de lucht dankzij het vel tussen hun vingers.`,
+    output: [
+      { naam: "Vleermuizen", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
+        quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
+        <br><br>- Li Bai`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerplacentalia", "Zee"], ["Oerplacentalia", "Rivier"], ["Oerplacentalia", "Lagune"]
+    ],
+    hint: `Sommige placentadieren kiezen voor het ruime sop.`,
+    output: [
+      { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
+        quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
+        <br><br>- Charles Fransen`
+      }
+    ]
+  },
+  {
+    input: ["Oerplacentalia", "Klif"],
+    hint: `Sommige placentadieren leven op de kliffen.`,
+    output: [
+      { naam: "Klipdassen", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
+        quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
+        calls
+        <br><br>- Bernhard Grzimek`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerplacentalia", "Aarde"], ["Oerplacentalia", "Klei"], ["Oerplacentalia", "Heuvel"]
+    ],
+    hint: `Sommige placentadieren gaan ondergronds..`,
+    output: [
+      { naam: "Mollen", icoon: "icons/Mollen.png", map: "Zoogdieren", 
+        quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
+        <br><br>- Richard Mabey`
+      }
+    ]
+  },
+  {
+    input: ["Oerplacentalia", "Bos"], 
+    hint: `Sommige placentadieren voelen zich thuis in de bossen`,
+    output: [
+      { naam: "Oerhondachtigen", icoon: "icons/Oerhondachtigen.png", map: "Carnivoren", 
+        quote: `The Canidae are an ancient lineage of carnivores that originated in North America during the Eocene epoch
+        <br><br>- Xiaoming Wang`
+      },
+      { naam: "Oerkatachtigen", icoon: "icons/Oerkatachtigen.png", map: "Carnivoren", 
+        quote: `The diversification of felids reflects a shift toward hypercarnivory and specialized predation strategies
+        <br><br>- Alan Turner`
+      },
+      { naam: "Egels", icoon: "icons/Egels.png", map: "Zoogdieren", 
+        quote: `Hedgehogs are nocturnal mammals that forage for insects and small invertebrates in gardens and woodland 
+        edges
+        <br><br>- Richard Fitter`
+      },
+      { naam: "Spitsmuizen", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
+        quote: `The common shrew is a tiny, insectivorous mammal that lives hidden among grass and fallen leaves, rarely
+        seen despite its abundance
+        <br><br>- Derek Ratcliffe`
+      }
+    ]
+  },
+  {
+    input: ["Oerplacentalia", "Regenwoud"], 
+    output: [
+      { naam: "Spitsmuizen", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
+        quote: `The common shrew is a tiny, insectivorous mammal that lives hidden among grass and fallen leaves, rarely
+        seen despite its abundance
+        <br><br>- Derek Ratcliffe`
+      }
+    ]
+  },
+  {
+    input: ["Oerplacentalia", "Tropisch regenwoud"], 
+    output: [
+      { naam: "Oerprimaten", icoon: "icons/Oerprimaten.png", map: "Primaten", 
+        quote: `Among primates, social bonds and communication are as important as physical survival
+        <br><br>- Jane Goodall`
+      },
+      { naam: "Luiaards", icoon: "icons/Luiaards.png", map: "Zoogdieren", 
+        quote: `The sloth spends nearly all its life hanging upside down in the canopy, moving only when necessary
+        <br><br>- David Attenborough`
+      },
+      { naam: "Miereneters", icoon: "icons/Miereneters.png", map: "Zoogdieren", 
+        quote: `The giant anteater uses its long, tubular snout to feed on ants and termites, consuming thousands in a 
+        single day
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: [
       ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"]
     ],
     hint: `Verdriet is een complexe emotie die veel vraagt van sociale dieren.`,
@@ -13389,7 +13488,8 @@ const groepsIconen = {
   "Groenten": "icons/Groenten.png",
   "Materialen": "icons/Materialen.png",
   "Granen": "icons/Granen.png",
-  "Zaden": "icons/Zaden.png"
+  "Zaden": "icons/Zaden.png",
+  "Primaten": "icons/Primaten.png"
 };
 
 // ----- STATE -----
