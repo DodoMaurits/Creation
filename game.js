@@ -12360,7 +12360,7 @@ const combinaties = [
         quote: `Among primates, social bonds and communication are as important as physical survival
         <br><br>- Jane Goodall`
       },
-      { naam: "Luiaards", icoon: "icons/Luiaards.png", map: "Zoogdieren", 
+      { naam: "Luiaarden", icoon: "icons/Luiaarden.png", map: "Zoogdieren", 
         quote: `The sloth spends nearly all its life hanging upside down in the canopy, moving only when necessary
         <br><br>- David Attenborough`
       },
