@@ -13148,6 +13148,7 @@ const groepsIconen = {
   "Materialen": "icons/Materialen.png",
   "Granen": "icons/Granen.png",
   "Zaden": "icons/Zaden.png",
+  "Carnivoren": "icons/Carnivoren.png",
   "Primaten": "icons/Primaten.png"
 };
 
