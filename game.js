@@ -12372,6 +12372,89 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerplacentalia", "Savanne"], 
+    output: [
+      { naam: "Oerslurfdieren", icoon: "icons/Oerslurfdieren.png", map: "Zoogdieren", 
+        quote: `The mammoths, mastodons, and elephants belong to a lineage that has carried its immense bodies across 
+        changing worlds for millions of years
+        <br><br>- Adrian Lister`
+      },
+      { naam: "Aardvarkens", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
+        quote: `Aardvarks dig extensive burrow systems that provide shelter not only for themselves but for many other 
+        animals
+        <br><br>- Richard Estes`
+      }
+    ]
+  },
+  {
+    input: ["Oerplacentalia", "Weide"],
+    output: [
+      { naam: "Oerevenhoevigen", icoon: "icons/Oerevenhoevigen.png", map: "Hoefdieren", 
+        quote: `The evolution of the even-toed ungulates transformed the world’s grasslands into landscapes of migration, 
+        grazing, and herd movement
+        <br><br>- Richard Dawkins`
+      },
+      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
+        quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
+        <br><br>- Edward Wilson`
+      },
+      { naam: "Gordeldieren", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
+        quote: `Armadillos are burrowing mammals whose armour plates provide protection while they forage for insects 
+        and small invertebrates
+        <br><br>- Richard Estes`
+      },
+      { naam: "Konijnen", icoon: "icons/Konijnen.png", map: "Zoogdieren", 
+        quote: `Rabbits graze quietly in open fields, vanishing into burrows at the slightest sign of danger
+        <br><br>- Richard Adams`
+      }
+    ]
+  },
+  {
+    input: ["Oerplacentalia", "Steppe"],
+    output: [
+      { naam: "Oeronevenhoevigen", icoon: "icons/Oeronevenhoevigen.png", map: "Hoefdieren", 
+        quote: `Perissodactyls are ungulates that bear their weight primarily on the third toe
+        <br><br>- George Simpson`
+      },
+      { naam: "Hazen", icoon: "icons/Hazen.png", map: "Zoogdieren", 
+        quote: `The hare seems to belong to the wind as much as to the ground, appearing and vanishing in the same breath
+        <br><br>- J.A. Baker`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerbuideldieren", "Bos"], ["Oerbuideldieren", "Weide"]
+    ],
+    output: [
+      { naam: "Wombats", icoon: "icons/Wombats.png", map: "Zoogdieren", 
+        quote: `The common wombat digs extensive burrows and emerges mainly at night to graze on grasses and roots
+        <br><br>- Tim Flannery`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerbuideldieren", "Savanne"], ["Oerbuideldieren", "Woestijn"]
+    ],
+    output: [
+      { naam: "Kangoeroes", icoon: "icons/Kangoeroes.png", map: "Zoogdieren", 
+        quote: `Kangaroos move in bounds across the open landscape, their powerful hind legs allowing great leaps over 
+        long distances
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: ["Oerbuideldieren", "Eucalyptus"],
+    output: [
+      { naam: "Koala", icoon: "icons/Koala.png", map: "Zoogdieren", 
+        quote: `Koalas spend most of their lives in eucalyptus trees, feeding and sleeping among the branches
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
     input: [
       ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"]
     ],
@@ -13395,6 +13478,28 @@ const combinaties = [
   },
   {
     input: [
+      ["Oerhondachtigen", "IJs"], ["Oerhondachtigen", "Poolgebied"]
+    ],
+    output: [
+      { naam: "Walrussen", icoon: "icons/Walrussen.png", map: "Carnivoren", 
+        quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
+        <br><br>- Edward Wilson`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerhondachtigen", "Meer"], ["Oerhondachtigen", "Rivier"]
+    ],
+    output: [
+      { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
+        quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: [
       ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
       ["Verdriet", "Papegaaien"]
     ],
@@ -13490,7 +13595,8 @@ const groepsIconen = {
   "Granen": "icons/Granen.png",
   "Zaden": "icons/Zaden.png",
   "Carnivoren": "icons/Carnivoren.png",
-  "Primaten": "icons/Primaten.png"
+  "Primaten": "icons/Primaten.png",
+  "Hoefdieren": "icons/Hoefdieren.png"
 };
 
 // ----- STATE -----
