@@ -13137,6 +13137,28 @@ const combinaties = [
   },
   {
     input: [
+      ["Oerhondachtigen", "IJs"], ["Oerhondachtigen", "Poolgebied"]
+    ],
+    output: [
+      { naam: "Walrussen", icoon: "icons/Walrussen.png", map: "Carnivoren", 
+        quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
+        <br><br>- Edward Wilson`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerhondachtigen", "Meer"], ["Oerhondachtigen", "Rivier"]
+    ],
+    output: [
+      { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
+        quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: [
       ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
       ["Verdriet", "Papegaaien"]
     ],
