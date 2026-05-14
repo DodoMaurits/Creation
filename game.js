@@ -12277,6 +12277,7 @@ const combinaties = [
       ["Oerplacentalia", "Lucht"], ["Oerplacentalia", "Vleugels"]
     ],
     hint: `Sommige placentadieren gaan de lucht dankzij het vel tussen hun vingers.`,
+    tijd: 60_000_000,
     output: [
       { naam: "Vleermuizen", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
         quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
@@ -12289,6 +12290,7 @@ const combinaties = [
       ["Oerplacentalia", "Zee"], ["Oerplacentalia", "Rivier"], ["Oerplacentalia", "Lagune"]
     ],
     hint: `Sommige placentadieren kiezen voor het ruime sop.`,
+    tijd: 60_000_000,
     output: [
       { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
         quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
@@ -12299,6 +12301,7 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Klif"],
     hint: `Sommige placentadieren leven op de kliffen.`,
+    tijd: 60_000_000,
     output: [
       { naam: "Klipdassen", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
         quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
@@ -12312,6 +12315,7 @@ const combinaties = [
       ["Oerplacentalia", "Aarde"], ["Oerplacentalia", "Klei"], ["Oerplacentalia", "Heuvel"]
     ],
     hint: `Sommige placentadieren gaan ondergronds..`,
+    tijd: 10_000_000,
     output: [
       { naam: "Mollen", icoon: "icons/Mollen.png", map: "Zoogdieren", 
         quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
@@ -12322,6 +12326,7 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Bos"], 
     hint: `Sommige placentadieren voelen zich thuis in de bossen`,
+    tijd: 10_000_000,
     output: [
       { naam: "Oerhondachtigen", icoon: "icons/Oerhondachtigen.png", map: "Carnivoren", 
         quote: `The Canidae are an ancient lineage of carnivores that originated in North America during the Eocene epoch
@@ -12345,6 +12350,7 @@ const combinaties = [
   },
   {
     input: ["Oerplacentalia", "Regenwoud"], 
+    tijd: 10_000_000,
     output: [
       { naam: "Spitsmuizen", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
         quote: `The common shrew is a tiny, insectivorous mammal that lives hidden among grass and fallen leaves, rarely
@@ -12355,6 +12361,8 @@ const combinaties = [
   },
   {
     input: ["Oerplacentalia", "Tropisch regenwoud"], 
+    hint: `Sommige placentadieren voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 50_000_000,
     output: [
       { naam: "Oerprimaten", icoon: "icons/Oerprimaten.png", map: "Primaten", 
         quote: `Among primates, social bonds and communication are as important as physical survival
@@ -12373,6 +12381,8 @@ const combinaties = [
   },
   {
     input: ["Oerplacentalia", "Savanne"], 
+    hint: `Sommige placentadieren voelen zich thuis op de savanne.`,
+    tijd: 60_000_000,
     output: [
       { naam: "Oerslurfdieren", icoon: "icons/Oerslurfdieren.png", map: "Zoogdieren", 
         quote: `The mammoths, mastodons, and elephants belong to a lineage that has carried its immense bodies across 
@@ -12388,6 +12398,8 @@ const combinaties = [
   },
   {
     input: ["Oerplacentalia", "Weide"],
+    hint: `Sommige placentadieren voelen zich thuis op de grasvlaktes.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Oerevenhoevigen", icoon: "icons/Oerevenhoevigen.png", map: "Hoefdieren", 
         quote: `The evolution of the even-toed ungulates transformed the world’s grasslands into landscapes of migration, 
@@ -12411,6 +12423,8 @@ const combinaties = [
   },
   {
     input: ["Oerplacentalia", "Steppe"],
+    hint: `Sommige placentadieren voelen zich thuis op de steppe.`,
+    tijd: 10_000_000,
     output: [
       { naam: "Oeronevenhoevigen", icoon: "icons/Oeronevenhoevigen.png", map: "Hoefdieren", 
         quote: `Perissodactyls are ungulates that bear their weight primarily on the third toe
@@ -12426,6 +12440,8 @@ const combinaties = [
     input: [
       ["Oerbuideldieren", "Bos"], ["Oerbuideldieren", "Weide"]
     ],
+    hint: `Sommige buideldieren voelen zich thuis in de bossen.`,
+    tijd: 25_000_000,
     output: [
       { naam: "Wombats", icoon: "icons/Wombats.png", map: "Zoogdieren", 
         quote: `The common wombat digs extensive burrows and emerges mainly at night to graze on grasses and roots
@@ -12437,6 +12453,8 @@ const combinaties = [
     input: [
       ["Oerbuideldieren", "Savanne"], ["Oerbuideldieren", "Woestijn"]
     ],
+    hint: `Sommige buideldieren voelen zich thuis in droge zandvlaktes.`,
+    tijd: 25_000_000,
     output: [
       { naam: "Kangoeroes", icoon: "icons/Kangoeroes.png", map: "Zoogdieren", 
         quote: `Kangaroos move in bounds across the open landscape, their powerful hind legs allowing great leaps over 
@@ -12447,6 +12465,8 @@ const combinaties = [
   },
   {
     input: ["Oerbuideldieren", "Eucalyptus"],
+    hint: `Eucalyptus? Daar voelt maar één dier zich thuis.`,
+    tijd: 25_000_000,
     output: [
       { naam: "Koala", icoon: "icons/Koala.png", map: "Zoogdieren", 
         quote: `Koalas spend most of their lives in eucalyptus trees, feeding and sleeping among the branches
