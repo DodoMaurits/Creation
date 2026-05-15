@@ -13500,6 +13500,7 @@ const combinaties = [
     input: [
       ["Oerhondachtigen", "IJs"], ["Oerhondachtigen", "Poolgebied"]
     ],
+    hint: `Sommige hondachtigen voelen zich thuis in de poolgebieden.`,
     output: [
       { naam: "Walrussen", icoon: "icons/Walrussen.png", map: "Carnivoren", 
         quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
@@ -13509,12 +13510,118 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerhondachtigen", "Meer"], ["Oerhondachtigen", "Rivier"]
+      ["Oerhondachtigen", "Klei"], ["Oerhondachtigen", "Aarde"], ["Oerhondachtigen", "Heuvel"]
     ],
+    hint: `Sommige hondachtigen voelen zich thuis in de grond.`,
+    output: [
+      { naam: "Dassen", icoon: "icons/Dassen.png", map: "Carnivoren", 
+        quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
+        family
+        <br><br>- Ernest Neal`
+      }
+    ]
+  },
+  {
+    input: ["Oerhondachtigen", "Meer"],
+    hint: `Sommige hondachtigen voelen zich thuis in zoetwaterhabitats.`,
     output: [
       { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
         quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
         <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerhondachtigen", "Zee"], ["Oerhondachtigen", "Kust"], ["Oerhondachtigen", "Strand"]
+    ],
+    hint: `Sommige hondachtigen voelen zich thuis in zeeën en aan de kust.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Zeehonden", icoon: "icons/Zeehonden.png", map: "Carnivoren", 
+        quote: `A seal lifts its head from the water with the quiet curiosity of a creature that belongs more to the sea 
+        than to the shore
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Zeeleeuwen", icoon: "icons/Zeeleeuwen.png", map: "Carnivoren", 
+        quote: `The California sea lion is highly social, agile in the water, and capable of remarkable underwater 
+        manoeuvres
+        <br><br>- Bernd Würsig`
+      }
+    ]
+  },
+  {
+    input: ["Oerhondachtigen", "Rivier"],
+    output: [
+      { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
+        quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
+        <br><br>- David Attenborough`
+      },
+      { naam: "Dassen", icoon: "icons/Dassen.png", map: "Carnivoren", 
+        quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
+        family
+        <br><br>- Ernest Neal`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerhondachtigen", "Toendra"], ["Oerhondachtigen", "Steppe"]
+    ],
+    hint: `Sommige hondachtigen voelen zich thuis op de toendra en steppes.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Wolven", icoon: "icons/Wolven.png", map: "Carnivoren", 
+        quote: `A wolf’s howl carries through the forest not as noise, but as distance made audible
+        <br><br>- Barry Lopez`
+      }
+    ]
+  },
+  {
+    input: ["Oerhondachtigen", "Bos"],
+    hint: `Sommige hondachtigen voelen zich thuis op de toendra en steppes.`,
+    tijd: 30_000_000,
+    output: [
+      { naam: "Beren", icoon: "icons/Beren.png", map: "Carnivoren", 
+        quote: `The great bear moves through the forest with a power so quiet that the woods seem to make room for it
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Wasberen", icoon: "icons/Wasberen.png", map: "Carnivoren", 
+        quote: `With its dexterous front paws, the raccoon explores the world as if everything must be touched before it 
+        can be understood
+        <br><br>- Sy Montgomery`
+      },
+      { naam: "Marters", icoon: "icons/Marters.png", map: "Carnivoren", 
+        quote: `The marten moves like a thought through the branches—quick, silent, and almost never fully seen
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Wezels", icoon: "icons/Wezels.png", map: "Carnivoren", 
+        quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
+        <br><br>- Chris Duckworth`
+      }
+    ]
+  },
+  {
+    input: ["Oerhondachtigen", "Savanne"],
+    hint: `Sommige hondachtigen voelen zich thuis op de savanne.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Vossen", icoon: "icons/Vossen.png", map: "Carnivoren", 
+        quote: `A fox leaves almost no trace, as though it borrows the landscape and returns it unchanged
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Wilde honden", icoon: "icons/Wilde honden.png", map: "Carnivoren", 
+        quote: `Lycaon pictus is a highly social carnivore, with complex cooperation and communication within the pack
+        <br><br>- Rupert Richardson`
+      }
+    ]
+  },
+  {
+    input: ["Oerhondachtigen", "Weide"],
+    output: [
+      { naam: "Wezels", icoon: "icons/Wezels.png", map: "Carnivoren", 
+        quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
+        <br><br>- Chris Duckworth`
       }
     ]
   },
