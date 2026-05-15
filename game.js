@@ -13626,6 +13626,200 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerkatachtigen", "Berg"],
+    hint: `Sommige katachtigen voelen zich thuis in de bergen.`,
+    tijd: 8_000_000,
+    output: [
+      { naam: "Lynxen", icoon: "icons/Lynxen.png", map: "Carnivoren", 
+        quote: `The lynx belongs to deep forests and winter silence, where even its footsteps seem reluctant to remain
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Poema", icoon: "icons/Poema.png", map: "Carnivoren", 
+        quote: `The puma walks alone across enormous distances, carrying the silence of the mountains with it
+        <br><br>- Luis Sepúlveda`
+      }
+    ]
+  },
+  {
+    input: ["Oerkatachtigen", "Bos"],
+    hint: `Sommige katachtigen voelen zich thuis in de bossen.`,
+    tijd: 8_000_000,
+    output: [
+      { naam: "Katten", icoon: "icons/Katten.png", map: "Carnivoren", 
+        quote: `A cat seated in a window is a piece of stillness that has chosen a shape
+        <br><br>- Natsume Soseki`
+      },
+      { naam: "Stokstaartjes", icoon: "icons/Stokstaartjes.png", map: "Carnivoren", 
+        quote: `Meerkats depend on constant communication within the group, where one stands guard while others feed
+        <br><br>- Tim Clutton-Brock`
+      },
+      { naam: "Lynxen", icoon: "icons/Lynxen.png", map: "Carnivoren", 
+        quote: `The lynx belongs to deep forests and winter silence, where even its footsteps seem reluctant to remain
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Poema", icoon: "icons/Poema.png", map: "Carnivoren", 
+        quote: `The puma walks alone across enormous distances, carrying the silence of the mountains with it
+        <br><br>- Luis Sepúlveda`
+      }
+    ]
+  },
+  {
+    input: ["Oerkatachtigen", "Tropisch regenwoud"],
+    hint: `Sommige katachtigen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 6_000_000,
+    output: [
+      { naam: "Tijgers", icoon: "icons/Tijgers.png", map: "Carnivoren", 
+        quote: `The tiger does not strive to be fierce; it simply is what it is, and nothing in the forest resists it
+        <br><br>- Zhuang Zi`
+      },
+      { naam: "Jaguars", icoon: "icons/Jaguars.png", map: "Carnivoren", 
+        quote: `The jaguar was associated with night, power, and transformation in Mesoamerican belief systems
+        <br><br>- Karl Taube`
+      },
+      { naam: "Civetkatten", icoon: "icons/Civetkatten.png", map: "Carnivoren", 
+        quote: `Viverrids, including civets, are adaptable nocturnal mammals occupying a range of habitats across Africa 
+        and Asia
+        <br><br>- Richard Estes`
+      },
+      { naam: "Fossa", icoon: "icons/Fossa.png", map: "Carnivoren", 
+        quote: `The fossa is Madagascar’s top predator, an agile hunter moving silently through both forest floor and 
+        canopy
+        <br><br>- Nick Garbutt`
+      }
+    ]
+  },
+  {
+    input: ["Oerkatachtigen", "Savanne"],
+    hint: `Sommige katachtigen voelen zich thuis op de savanne.`,
+    tijd: 6_000_000,
+    output: [
+      { naam: "Leeuwen", icoon: "icons/Carnivoren.png", map: "Carnivoren", 
+        quote: `A lion’s life is mostly waiting, watching, and conserving energy for the moment of the hunt
+        <br><br>- Joy Adamson`
+      },
+      { naam: "Hyena", icoon: "icons/Hyena.png", map: "Carnivoren", 
+        quote: `Spotted hyenas are highly social animals living in complex clans with strict dominance hierarchies
+        <br><br>- George Schaller`
+      },
+      { naam: "Cheeta", icoon: "icons/Cheeta.png", map: "Carnivoren", 
+        quote: `The cheetah’s body is specialized for acceleration, sacrificing strength and stamina for speed
+        <br><br>- Alan Turner`
+      },
+      { naam: "Luipaarden", icoon: "icons/Luipaarden.png", map: "Carnivoren", 
+        quote: `The leopard is the master of concealment in Africa’s landscapes
+        <br><br>- Derek Joubert`
+      }
+    ]
+  },
+  {
+    input: ["Oerkatachtigen", "Steppe"],
+    hint: `Sommige katachtigen voelen zich thuis op de steppe.`,
+    tijd: 2_500_000,
+    output: [
+      { naam: "Sabeltandtijgers", icoon: "icons/Sabeltandtijgers.png", map: "Carnivoren", 
+        quote: `The saber-toothed cats were highly specialized predators adapted for killing large prey with precision 
+        bites
+        <br><br>- Alan Turner`
+      }
+    ]
+  },
+  {
+    input: ["Oerprimaten", "Bos"],
+    hint: `Sommige primaten voelen zich thuis in de bossen.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Lemuren", icoon: "icons/Lemuren.png", map: "Primaten", 
+        quote: `Lemurs show extraordinary variation in social organization compared to other primates
+        <br><br>- Alison Jolly`
+      },
+      { naam: "Makaken", icoon: "icons/Makaken.png", map: "Primaten", 
+        quote: `Macaques exhibit complex social hierarchies and frequent conflict-resolution behaviors
+        <br><br>- Carel van Schaik`
+      },
+      { naam: "Oermensapen", icoon: "icons/Oermensapen.png", map: "Primaten", 
+        quote: `Great apes demonstrate the roots of cooperation and shared intentionality that define human societies
+        <br><br>- Sarah Hrdy`
+      }
+    ]
+  },
+  {
+    input: ["Oerprimaten", "Tropisch regenwoud"],
+    hint: `Sommige primaten voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Spookdiertjes", icoon: "icons/Spookdiertjes.png", map: "Primaten", 
+        quote: `Tarsiers are among the most specialized nocturnal primates, with extraordinary leaping ability and 
+        large eyes adapted for hunting in darkness
+        <br><br>- Marc Ancrenaz`
+      },
+      { naam: "Kapucijnapen", icoon: "icons/Kapucijnapen.png", map: "Primaten", 
+        quote: `Capuchins are among the few non-human primates that regularly use tools in the wild
+        <br><br>- Dorothy Cheney`
+      },
+      { naam: "Slingerapen", icoon: "icons/Slingerapen.png", map: "Primaten", 
+        quote: `Spider monkeys rely heavily on fruit resources and travel long distances through the canopy in search of 
+        food
+        <br><br>- Alison Jolly`
+      },
+      { naam: "Brulapen", icoon: "icons/Brulapen.png", map: "Primaten", 
+        quote: `Howler monkeys are among the loudest terrestrial animals, with vocalizations that can carry over several 
+        kilometers through forest
+        <br><br>- Charles-Dominique`
+      },
+      { naam: "Saki", icoon: "icons/Saki.png", map: "Primaten", 
+        quote: `Saki monkeys are generally shy and elusive, making them difficult to observe in the wild
+        <br><br>- Marc van Roosmalen`
+      }
+    ]
+  },
+  {
+    input: ["Oerprimaten", "Savanne"],
+    hint: `Sommige primaten voelen zich thuis op de savanne.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Bavianen", icoon: "icons/Bavianen.png", map: "Primaten", 
+        quote: `Baboons are highly flexible primates capable of living in a wide range of habitats, 
+        including those altered by humans
+        <br><br>- Shirley Strum`
+      }
+    ]
+  },
+  {
+    input: ["Oerslurfdieren", "Toendra"],
+    hint: `Sommige slurfdieren voelen zich thuis op de koude toendra.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Mammoeten", icoon: "icons/Mammoeten.png", map: "Zoogdieren", 
+        quote: `Mammoths likely lived in herds similar to modern elephants, with complex social structures
+        <br><br>- Daniel Fisher`
+      }
+    ]
+  },
+  {
+    input: ["Oerslurfdieren", "Savanne"],
+    hint: `Sommige slurfdieren voelen zich thuis op de savanne.`,
+    tijd: 7_000_000,
+    output: [
+      { naam: "Olifanten", icoon: "icons/Olifanten.png", map: "Zoogdieren", 
+        quote: `Elephants learn from experience and from each other, passing knowledge through generations
+        <br><br>- Cynthia Moss`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerevenhoevigen", "IJs"], ["Oerevenhoevigen", "Poolgebied"]
+    ],
+    hint: `Sommige evenhoevigen voelen zich beter thuis in het ijskoude water van de polen.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Orka", icoon: "icons/Orka.png", map: "Zoogdieren", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
+  {
     input: [
       ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
       ["Verdriet", "Papegaaien"]
