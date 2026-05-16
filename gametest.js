@@ -13708,6 +13708,7 @@ const combinaties = [
   },
   {
     input: ["Oerknaagdieren", "Meer"],
+    hint: `Sommige knaagdieren voelen zich thuis in het meer.`,
     tijd: 30_000_000,
     output: [
       { naam: "Bevers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
