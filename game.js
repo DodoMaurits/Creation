@@ -14059,6 +14059,139 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerknaagdieren", "Rivier"],
+    hint: `Sommige knaagdieren voelen zich thuis in de rivieren.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Bevers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
+        quote: `The beaver builds not only with wood, but with an intelligence that seems almost human in its patience
+        <br><br>- Ernest Seton`
+      },
+      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+        quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
+        <br><br>- George Schaller`
+      }
+    ]
+  },
+  {
+    input: ["Oerknaagdieren", "Moeras"],
+    hint: `Sommige knaagdieren voelen zich thuis in het moeras.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+        quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
+        <br><br>- George Schaller`
+      },
+      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+        quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
+        <br><br>- William Hudson`
+      }
+    ]
+  },
+  {
+    input: ["Oerknaagdieren", "Bos"],
+    hint: `Sommige knaagdieren voelen zich thuis in de bossen.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Eekhoorns", icoon: "icons/Eekhoorns.png", map: "Zoogdieren", 
+        quote: `The squirrel is one of the most alert and restless of woodland creatures, never still for long
+        <br><br>- John Burroughs`
+      },
+      { naam: "Stekelvarkens", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
+        quote: `The porcupine’s quills are not for attack but for passive defense, making it one of the most effectively 
+        protected mammals
+        <br><br>- David Macdonald`
+      },
+      { naam: "Muizen", icoon: "icons/Muizen.png", map: "Zoogdieren", 
+        quote: `Even the smallest mouse has its own place in nature
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
+    input: ["Oerknaagdieren", "Steppe"],
+    hint: `Sommige knaagdieren voelen zich thuis op de steppe.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Hamsters", icoon: "icons/Hamsters.png", map: "Zoogdieren", 
+        quote: `Much of the hamster’s existence remains concealed beneath the surface of the landscape
+        <br><br>- Konrad Lorenz`
+      }
+    ]
+  },
+  {
+    input: ["Oerknaagdieren", "Prairie"],
+    hint: `Sommige knaagdieren voelen zich thuis op de prairie.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Prairiehonden", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
+        quote: `Where prairie dogs thrive, the grassland itself seems alive with conversation
+        <br><br>- Aldo Leopold`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oeronevenhoevigen", "Berg"], ["Oeronevenhoevigen", "Woestijn"]
+    ],
+    hint: `Sommige onevenhoevigen voelen zich thuis in de woestijn.`,
+    tijd: 3_000_000,
+    output: [
+      { naam: "Ezels", icoon: "icons/Ezels.png", map: "Hoefdieren", 
+        quote: `The donkey has always been a patient creature, bearing burdens without praise
+        <br><br>- Gilbert Chesterton`
+      }
+    ]
+  },
+  {
+    input: ["Oeronevenhoevigen", "Tropisch regenwoud"],
+    hint: `Sommige onevenhoevigen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 50_000_000,
+    output: [
+      { naam: "Tapirs", icoon: "icons/Tapirs.png", map: "Hoefdieren", 
+        quote: `In the Amazon, the tapir moves like a shadow through the forest undergrowth
+        <br><br>- Marc van Roosmalen`
+      }
+    ]
+  },
+  {
+    input: ["Oeronevenhoevigen", "Savanne"],
+    hint: `Sommige onevenhoevigen voelen zich thuis op de savanne.`,
+    tijd: 3_000_000,
+    output: [
+      { naam: "Zebra", icoon: "icons/Zebra.png", map: "Hoefdieren", 
+        quote: `The function of zebra stripes is likely linked to multiple ecological pressures, 
+        including predator confusion and social recognition
+        <br><br>- Tim Caro`
+      },
+      { naam: "Neushoorns", icoon: "icons/Neushoorns.png", map: "Hoefdieren", 
+        quote: `Rhinoceroses are massive, thick-skinned mammals with a prehistoric appearance and powerful build
+        <br><br>- Richard Estes`
+      }
+    ]
+  },
+  {
+    input: ["Oeronevenhoevigen", "Weide"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Neushoorns", icoon: "icons/Neushoorns.png", map: "Hoefdieren", 
+        quote: `Rhinoceroses are massive, thick-skinned mammals with a prehistoric appearance and powerful build
+        <br><br>- Richard Estes`
+      }
+    ]
+  },
+  {
+    input: ["Oeronevenhoevigen", "Steppe"],
+    hint: `Sommige onevenhoevigen voelen zich thuis op de steppe.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Paarden", icoon: "icons/Paarden.png", map: "Hoefdieren", 
+        quote: `A horse gallops with his lungs, preserves with his heart, and wins with his character
+        <br><br>- Federico Tesio`
+      }
+    ]
+  },
+  {
     input: [
       ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
       ["Verdriet", "Papegaaien"]
@@ -14096,6 +14229,79 @@ const combinaties = [
       { naam: "Fynbos", icoon: "icons/Fynbos.png", map: "Landschap", 
         quote: `Fynbos is not a forest or a grassland, but a world of its own
         <br><br>- Rita Hill`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Beren", "IJs"], ["Beren", "Poolgebied"]
+    ], 
+    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    output: [
+      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
+        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
+        <br><br>- Andrew Derocher`
+      }
+    ]
+  },
+  {
+    input: ["Beren", "Tropisch regenwoud"], 
+    hint: `Sommige beren voelen zich thuis in het tropisch regenwoud.`,
+    output: [
+      { naam: "Zonneberen", icoon: "icons/Zonneberen.png", map: "Carnivoren", 
+        quote: `Sun bears spend much of their lives hidden within dense rainforest habitats
+        <br><br>- Wong Siew Te`
+      }
+    ]
+  },
+  {
+    input: ["Beren", "Bamboe"], 
+    hint: `Sommige beren zijn onlosmakelijk verbonden aan bamboebossen.`,
+    output: [
+      { naam: "Pandaberen", icoon: "icons/Pandaberen.png", map: "Carnivoren", 
+        quote: `The giant panda’s survival depends entirely on the availability of bamboo and intact forest corridors
+        <br><br>- Zhang Hemin`
+      }
+    ]
+  },
+  {
+    input: ["Oermensapen", "Bos"], 
+    hint: `Sommige mensapen voelen zich thuis in de bossen.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Gorilla", icoon: "icons/Gorilla.png", map: "Primaten", 
+        quote: `The gorilla is a powerful yet quiet presence in the forest, moving with surprising grace for its size
+        <br><br>- Ian Redmond`
+      },
+      { naam: "Chimpansees", icoon: "icons/Chimpansees.png", map: "Primaten", 
+        quote: `Chimpanzees share with us not only genes, but also emotions such as joy, grief, and compassion
+        <br><br>- Jane Goodall`
+      }
+    ]
+  },
+  {
+    input: ["Oermensapen", "Tropisch regenwoud"], 
+    hint: `Sommige mensapen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Orang-oetans", icoon: "icons/Orang-oetans.png", map: "Primaten", 
+        quote: `Orangutans are remarkably solitary great apes, living quiet lives in the depths of the rainforest
+        <br><br>- Carel von Schaik`
+      },
+      { naam: "Bonobo", icoon: "icons/Bonobo.png", map: "Primaten", 
+        quote: `Bonobos show an exceptional degree of empathy and tolerance compared to other great apes
+        <br><br>- Frans de Waal`
+      }
+    ]
+  },
+  {
+    input: ["Oermensapen", "Savanne"], 
+    hint: `Sommige mensapen voelen zich thuis op de savanne.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Mens", icoon: "icons/Mens.png", map: "Primaten", 
+        quote: `Man must be regarded as an end in himself
+        <br><br>- Immanuel Kant`
       }
     ]
   },
