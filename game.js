@@ -13966,6 +13966,99 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerevenhoevigen", "Bos"],
+    hint: `Sommige evenhoevigen voelen zich thuis in de bossen.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Herten", icoon: "icons/Herten.png", map: "Hoefdieren", 
+        quote: `Prey species such as deer rely heavily on vigilance and early detection of predators
+        <br><br>- Tim Caro`
+      },
+      { naam: "Impala", icoon: "icons/Impala.png", map: "Hoefdieren", 
+        quote: `Impala combine speed and agility with constant alertness in predator-rich environments
+        <br><br>- George Schaller`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Tropisch regenwoud"],
+    hint: `Sommige evenhoevigen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Okapi", icoon: "icons/Okapi.png", map: "Hoefdieren", 
+        quote: `The okapi is a forest giraffid, an animal of extraordinary shyness, inhabiting the deepest parts of the 
+        Congo forest
+        <br><br>- Harry Johnston`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Savanne"],
+    hint: `Sommige evenhoevigen voelen zich thuis op de savanne.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Giraffen", icoon: "icons/Giraffen.png", map: "Hoefdieren", 
+        quote: `Giraffes often appear calm and observant, scanning their environment from an elevated vantage point
+        <br><br>- George Schaller`
+      },
+      { naam: "Gnoes", icoon: "icons/Gnoes.png", map: "Hoefdieren", 
+        quote: `The wildebeest is a heavily built antelope with a large, boxy head, sloping shoulders, and a dark mane
+        <br><br>- Richard Estes`
+      },
+      { naam: "Gazellen", icoon: "icons/Gazellen.png", map: "Hoefdieren", 
+        quote: `Gazelles are highly alert ungulates that form loose herds for increased predator detection
+        <br><br>- Richard Estes`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Weide"],
+    hint: `Sommige evenhoevigen voelen zich thuis op de grasweides.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Runderen", icoon: "icons/Runderen.png", map: "Hoefdieren", 
+        quote: `Bovids are typically robust, deep-chested ungulates with powerful limbs adapted for running and endurance
+        <br><br>- Valerius Geist`
+      },
+      { naam: "Geiten", icoon: "icons/Geiten.png", map: "Hoefdieren", 
+        quote: `Goats are among the most adaptable ungulates, thriving in environments ranging from mountains to deserts
+        <br><br>- Valerius Geist`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Steppe"],
+    hint: `Sommige evenhoevigen voelen zich thuis op de steppe.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Schapen", icoon: "icons/Schapen.png", map: "Hoefdieren", 
+        quote: `Sheep are adapted for grazing on open pasture and show a body plan suited to endurance rather than speed
+        <br><br>- Clutton-Brock`
+      }
+    ]
+  },
+  {
+    input: ["Oerknaagdieren", "Ven"],
+    tijd: 2_000_000,
+    output: [
+      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+        quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
+        <br><br>- William Hudson`
+      }
+    ]
+  },
+  {
+    input: ["Oerknaagdieren", "Meer"],
+    hint: `Sommige knaagdieren voelen zich thuis in het meer.`,
+    tijd: 30_000_000,
+    output: [
+      { naam: "Bevers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
+        quote: `The beaver builds not only with wood, but with an intelligence that seems almost human in its patience
+        <br><br>- Ernest Seton`
+      }
+    ]
+  },
+  {
     input: [
       ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
       ["Verdriet", "Papegaaien"]
