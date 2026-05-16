@@ -13467,6 +13467,165 @@ const combinaties = [
   },
   {
     input: [
+      ["Oerevenhoevigen", "IJs"], ["Oerevenhoevigen", "Poolgebied"]
+    ],
+    hint: `Sommige evenhoevigen voelen zich beter thuis in het ijskoude water van de polen.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+        quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
+        generations
+        <br><br>- Lance Barrett-Lennard`
+      },
+      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+        quote: `The narwhal tusk is a sensory organ with millions of nerve endings
+        <br><br>- Martin Nweeia`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Berg"],
+    hint: `Sommige evenhoevigen voelen zich thuis in de bergen.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Lama", icoon: "icons/Lama.png", map: "Hoefdieren", 
+        quote: `Llamas were essential pack animals in the development of Andean civilizations
+        <br><br>- Jane Wheeler`
+      },
+      { naam: "Alpaca", icoon: "icons/Alpaca.png", map: "Hoefdieren", 
+        quote: `Alpacas are exceptionally well adapted to the cold and hypoxic conditions of the Andes
+        <br><br>- Franklin Peake`
+      },
+      { naam: "Steenbokken", icoon: "icons/Steenbokken.png", map: "Hoefdieren", 
+        quote: `Wild goats and ibex move across cliffs with extraordinary balance and agility
+        <br><br>- George Schaller`
+      },
+      { naam: "Geiten", icoon: "icons/Geiten.png", map: "Hoefdieren", 
+        quote: `Goats are among the most adaptable ungulates, thriving in environments ranging from mountains to deserts
+        <br><br>- Valerius Geist`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Woestijn"],
+    hint: `Sommige evenhoevigen voelen zich thuis in de woestijn.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Kamelen", icoon: "icons/Kamelen.png", map: "Hoefdieren", 
+        quote: `Camels can tolerate extreme dehydration and rapidly rehydrate when water becomes available
+        <br><br>- Knox McIlroy`
+      },
+      { naam: "Dromedarissen", icoon: "icons/Dromedarissen.png", map: "Hoefdieren", 
+        quote: `Dromedaries are uniquely suited to arid environments where water is scarce and temperatures are extreme
+        <br><br>- Richard Bulliet`
+      },
+      { naam: "Gazellen", icoon: "icons/Gazellen.png", map: "Hoefdieren", 
+        quote: `Gazelles are highly alert ungulates that form loose herds for increased predator detection
+        <br><br>- Richard Estes`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerevenhoevigen", "Ven"], ["Oerevenhoevigen", "Regenwoud"]
+    ],
+    hint: `Sommige evenhoevigen voelen zich thuis in de moerassen.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Elanden", icoon: "icons/Elanden.png", map: "Hoefdieren", 
+        quote: `Despite their size, elands are surprisingly agile and efficient walkers over long distances
+        <br><br>- George Schaller`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Zee"],
+    tijd: 5_000_000,
+    output: [
+      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+        quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
+        generations
+        <br><br>- Lance Barrett-Lennard`
+      },
+      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+        quote: `The narwhal tusk is a sensory organ with millions of nerve endings
+        <br><br>- Martin Nweeia`
+      },
+      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+        quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
+        <br><br>- Lori Marino`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerevenhoevigen", "Kust"], ["Oerevenhoevigen", "Lagune"],
+    ],
+    hint: `Sommige evenhoevigen voelen zich thuis in de kustlagunes.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+        quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
+        <br><br>- Lori Marino`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Oceaan"],
+    hint: `Sommige evenhoevigen voelen zich gek genoeg toch thuis in de oceanen.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Walvissen", icoon: "icons/Walvissen.png", map: "Waterdieren", 
+        quote: `Gray whales undertake one of the longest annual migrations of any mammal
+        <br><br>- Bruce Mate`
+      },
+      { naam: "Vinvissen", icoon: "icons/Vinvissen.png", map: "Waterdieren", 
+        quote: `Fin whales produce some of the loudest and most far-reaching vocalizations in the ocean
+        <br><br>- Christopher Clark`
+      },
+      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
+        <br><br>- Peter Tyack`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Rivier"],
+    hint: `Sommige evenhoevigen voelen zich thuis in ondiepe rivieren.`,
+    output: [
+      { naam: "Nijlpaarden", icoon: "icons/Nijlpaarden.png", map: "Hoefdieren", 
+        quote: `Hippos are important ecosystem engineers, transferring nutrients between land and water
+        <br><br>- David Western`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Toendra"],
+    hint: `Sommige evenhoevigen voelen zich thuis op de toendra.`,
+    output: [
+      { naam: "Rendieren", icoon: "icons/Rendieren.png", map: "Hoefdieren", 
+        quote: `Reindeer form large, dynamic herds whose composition changes seasonally
+        <br><br>- Alistair Veitch`
+      }
+    ]
+  },
+  {
+    input: ["Oerevenhoevigen", "Moeras"],
+    hint: `Sommige evenhoevigen voelen zich thuis in de moerassen.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Elanden", icoon: "icons/Elanden.png", map: "Hoefdieren", 
+        quote: `Despite their size, elands are surprisingly agile and efficient walkers over long distances
+        <br><br>- George Schaller`
+      },
+      { naam: "Zwijnen", icoon: "icons/Zwijnen.png", map: "Hoefdieren", 
+        quote: `Wild boar exhibit complex foraging strategies and strong learning ability
+        <br><br>- David Macdonald`
+      }
+    ]
+  },
+  {
+    input: [
       ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
       ["Verdriet", "Papegaaien"]
     ],
