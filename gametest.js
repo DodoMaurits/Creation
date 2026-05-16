@@ -13892,6 +13892,79 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Beren", "IJs"], ["Beren", "Poolgebied"]
+    ], 
+    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    output: [
+      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
+        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
+        <br><br>- Andrew Derocher`
+      }
+    ]
+  },
+  {
+    input: ["Beren", "Tropisch regenwoud"], 
+    hint: `Sommige beren voelen zich thuis in het tropisch regenwoud.`,
+    output: [
+      { naam: "Zonneberen", icoon: "icons/Zonneberen.png", map: "Carnivoren", 
+        quote: `Sun bears spend much of their lives hidden within dense rainforest habitats
+        <br><br>- Wong Siew Te`
+      }
+    ]
+  },
+  {
+    input: ["Beren", "Bamboe"], 
+    hint: `Sommige beren zijn onlosmakelijk verbonden aan bamboebossen.`,
+    output: [
+      { naam: "Pandaberen", icoon: "icons/Pandaberen.png", map: "Carnivoren", 
+        quote: `The giant panda’s survival depends entirely on the availability of bamboo and intact forest corridors
+        <br><br>- Zhang Hemin`
+      }
+    ]
+  },
+  {
+    input: ["Oermensapen", "Bos"], 
+    hint: `Sommige mensapen voelen zich thuis in de bossen.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Gorilla", icoon: "icons/Gorilla.png", map: "Primaten", 
+        quote: `The gorilla is a powerful yet quiet presence in the forest, moving with surprising grace for its size
+        <br><br>- Ian Redmond`
+      },
+      { naam: "Chimpansees", icoon: "icons/Chimpansees.png", map: "Primaten", 
+        quote: `Chimpanzees share with us not only genes, but also emotions such as joy, grief, and compassion
+        <br><br>- Jane Goodall`
+      }
+    ]
+  },
+  {
+    input: ["Oermensapen", "Tropisch regenwoud"], 
+    hint: `Sommige mensapen voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Orang-oetans", icoon: "icons/Orang-oetans.png", map: "Primaten", 
+        quote: `Orangutans are remarkably solitary great apes, living quiet lives in the depths of the rainforest
+        <br><br>- Carel von Schaik`
+      },
+      { naam: "Bonobo", icoon: "icons/Bonobo.png", map: "Primaten", 
+        quote: `Bonobos show an exceptional degree of empathy and tolerance compared to other great apes
+        <br><br>- Frans de Waal`
+      }
+    ]
+  },
+  {
+    input: ["Oermensapen", "Savanne"], 
+    hint: `Sommige mensapen voelen zich thuis op de savanne.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Mens", icoon: "icons/Mens.png", map: "Primaten", 
+        quote: `Man must be regarded as an end in himself
+        <br><br>- Immanuel Kant`
+      }
+    ]
+  },
+  {
     input: ["Fynbos", "Oerfabiden"],
     hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
     tijd: 10_000_000,
