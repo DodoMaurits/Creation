@@ -14104,6 +14104,16 @@ const combinaties = [
     ]
   },
   {
+    input: ["Druiven", "Gist"],
+    hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
+    output: [
+      { naam: "Wijn", icoon: "icons/Wijn.png", map: "Genotwaren", 
+        quote: `When there is plenty of wine, sorrow and worry take wing
+        <br><br>- Ovidius`
+      }
+    ]
+  },
+  {
     input: [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
