@@ -8347,13 +8347,11 @@ const combinaties = [
         hersteld was. Kleine omnivore zoogdieren en vogels overleefden dankzij dode resten en de larven, wormen en slakken 
         die zich daarop voedden. Veel dieren leefden bovendien in holen of ondergronds en kwamen ’s nachts naar buiten.
         
-        <br><br>De periode Paleogeen was een tijd waarin nieuwe ecosystemen de leegtes van de massaextinctie vulden. 
-        Alleen de platen van India en Australië lagen nog op heel andere plaatsen dan de huidige continenten. 
-        Het tijdvak Paleoceen betekent letterlijk het oudste van het nieuwste (Grieks: palaiós kainós). Hoewel de 
-        gemiddelde temperaturen koeler waren dan in het Krijt en de zeespiegel lager stond, was de Aarde bedekt met 
-        weelderige tropische regenwouden en uitgestrekte naaldbossen, zelfs op hoge breedtegraden nabij de polen. 
-        Elk continent ontwikkelde zijn eigen unieke ecosysteem, maar Eurazië en Noord-Amerika waren via de Beringstraat 
-        nog wel verbonden, waardoor migratie van dieren nog altijd voorkwam. Zoogdieren waren nog klein en primitief, 
+        <br><br>Hoewel de gemiddelde temperaturen koeler waren dan in het Krijt en de zeespiegel lager stond, was de Aarde 
+        bedekt met weelderige tropische regenwouden en uitgestrekte naaldbossen, zelfs op hoge breedtegraden nabij de polen. 
+        Alleen de platen van India en Australië lagen nog op heel andere plaatsen dan de huidige continenten. Elk continent 
+        ontwikkelde zijn eigen unieke ecosysteem, maar Eurazië en Noord-Amerika waren via de Beringstraat nog wel verbonden, 
+        waardoor migratie van dieren nog altijd voorkwam. Zoogdieren waren nog klein en primitief, 
         maar in een periode van slechts 10 miljoen jaar ontstonden veel cruciale groepen.
         </span>`,
       },
