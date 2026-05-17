@@ -9974,6 +9974,7 @@ const combinaties = [
   },
   {
     input: ["Archaeopteryx", "Zaadjes"],
+    hint: `Sommige archaeopteryx verschijnen waar zaadjes zijn..`,
     tijd: 10_000_000,
     output: [
       { naam: "Mussen", icoon: "icons/Mussen.png", map: "Vogels", 
