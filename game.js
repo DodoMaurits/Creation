@@ -14389,6 +14389,10 @@ const combinaties = [
     hint: `Sommige mensapen voelen zich thuis in het tropisch regenwoud.`,
     tijd: 2_000_000,
     output: [
+      { naam: "Gibbons", icoon: "icons/Gibbons.png", map: "Primaten", 
+        quote: `The calls of the gibbon carry across the rainforest long before the animal itself is seen
+        <br><br>- John MacKinnon`
+      },
       { naam: "Orang-oetans", icoon: "icons/Orang-oetans.png", map: "Primaten", 
         quote: `Orangutans are remarkably solitary great apes, living quiet lives in the depths of the rainforest
         <br><br>- Carel von Schaik`
@@ -14396,6 +14400,30 @@ const combinaties = [
       { naam: "Bonobo", icoon: "icons/Bonobo.png", map: "Primaten", 
         quote: `Bonobos show an exceptional degree of empathy and tolerance compared to other great apes
         <br><br>- Frans de Waal`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Runderen", "Moeras"], ["Runderen", "Savanne"]
+    ],
+    hint: `Sommige runderen voelen zich thuis in moerassen en savannes.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Buffels", icoon: "icons/Buffels.png", map: "Hoefdieren", 
+        quote: `Buffalo are among the most cohesive and defensive of African herd animals
+        <br><br>- Richard Estes`
+      }
+    ]
+  },
+  {
+    input: ["Runderen", "Steppe"],
+    hint: `Sommige runderen voelen zich thuis op de steppe.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Bizons", icoon: "icons/Bizons.png", map: "Hoefdieren", 
+        quote: `The bison moved in immense herds across the plains, darkening the earth like a moving cloud
+        <br><br>- John Audubon`
       }
     ]
   },
