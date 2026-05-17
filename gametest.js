@@ -12856,6 +12856,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerlamiden", "Savanne"],
+    hint: `Sommige lamiden voelen zich thuis op de savanne.`,
+    tijd: 3_000_000,
+    output: [
+      { naam: "Paprika", icoon: "icons/Paprika.png", map: "Groenten", 
+        quote: `Peppers show how a wild plant becomes a domestic staple through selection for flavor and form
+        <br><br>- Michael Pollan`
+      }
+    ]
+  },
+  {
     input: ["Oerlamiden", "Weide"],
     hint: `Sommige lamiden voelen zich thuis op de grasweides.`,
     tijd: 20_000_000,
