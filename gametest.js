@@ -13440,6 +13440,45 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Oerprimaten", "Kust"], ["Oerprimaten", "Rivier"]
+    ],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Neusapen", icoon: "icons/Neusapen.png", map: "Primaten", 
+        quote: `Proboscis monkeys live in complex social groups with fluid harems and coordinated movement through 
+        mangroves
+        <br><br>- Dale Smith`
+      },
+      { naam: "Slankapen", icoon: "icons/Slankapen.png", map: "Primaten", 
+        quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
+        <br><br>- Robin Dunbar`
+      }
+    ]
+  },
+  {
+    input: ["Oerprimaten", "Klif"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Bavianen", icoon: "icons/Bavianen.png", map: "Primaten", 
+        quote: `Baboons are highly flexible primates capable of living in a wide range of habitats, 
+        including those altered by humans
+        <br><br>- Shirley Strum`
+      }
+    ]
+  },
+  {
+    input: ["Oerprimaten", "Moeras"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Neusapen", icoon: "icons/Neusapen.png", map: "Primaten", 
+        quote: `Proboscis monkeys live in complex social groups with fluid harems and coordinated movement through 
+        mangroves
+        <br><br>- Dale Smith`
+      }
+    ]
+  },
+  {
     input: ["Oerprimaten", "Bos"],
     hint: `Sommige primaten voelen zich thuis in de bossen.`,
     tijd: 10_000_000,
@@ -13452,6 +13491,10 @@ const combinaties = [
         quote: `Macaques exhibit complex social hierarchies and frequent conflict-resolution behaviors
         <br><br>- Carel van Schaik`
       },
+      { naam: "Slankapen", icoon: "icons/Slankapen.png", map: "Primaten", 
+        quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
+        <br><br>- Robin Dunbar`
+      },
       { naam: "Oermensapen", icoon: "icons/Oermensapen.png", map: "Primaten", 
         quote: `Great apes demonstrate the roots of cooperation and shared intentionality that define human societies
         <br><br>- Sarah Hrdy`
@@ -13463,6 +13506,10 @@ const combinaties = [
     hint: `Sommige primaten voelen zich thuis in het tropisch regenwoud.`,
     tijd: 2_000_000,
     output: [
+      { naam: "Lori", icoon: "icons/Lori.png", map: "Primaten", 
+        quote: `Loris are among the least visible primates due to their nocturnal and secretive habits
+        <br><br>- D. Nekaris`
+      },
       { naam: "Spookdiertjes", icoon: "icons/Spookdiertjes.png", map: "Primaten", 
         quote: `Tarsiers are among the most specialized nocturnal primates, with extraordinary leaping ability and 
         large eyes adapted for hunting in darkness
@@ -13493,6 +13540,10 @@ const combinaties = [
     hint: `Sommige primaten voelen zich thuis op de savanne.`,
     tijd: 10_000_000,
     output: [
+      { naam: "Galago", icoon: "icons/Galago.png", map: "Primaten", 
+        quote: `The galago is a small, elusive primate whose presence is often revealed only by its calls at night
+        <br><br>- Paul Honess`
+      },
       { naam: "Bavianen", icoon: "icons/Bavianen.png", map: "Primaten", 
         quote: `Baboons are highly flexible primates capable of living in a wide range of habitats, 
         including those altered by humans
@@ -13951,19 +14002,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Beren", "IJs"], ["Beren", "Poolgebied"]
-    ], 
-    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
-    tijd: 500_000,
-    output: [
-      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
-        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
-        <br><br>- Andrew Derocher`
-      }
-    ]
-  },
-  {
     input: ["Beren", "Tropisch regenwoud"], 
     hint: `Sommige beren voelen zich thuis in het tropisch regenwoud.`,
     tijd: 5_000_000,
@@ -14005,6 +14043,10 @@ const combinaties = [
     hint: `Sommige mensapen voelen zich thuis in het tropisch regenwoud.`,
     tijd: 2_000_000,
     output: [
+      { naam: "Gibbons", icoon: "icons/Gibbons.png", map: "Primaten", 
+        quote: `
+        <br><br>- `
+      },
       { naam: "Orang-oetans", icoon: "icons/Orang-oetans.png", map: "Primaten", 
         quote: `Orangutans are remarkably solitary great apes, living quiet lives in the depths of the rainforest
         <br><br>- Carel von Schaik`
@@ -14012,17 +14054,6 @@ const combinaties = [
       { naam: "Bonobo", icoon: "icons/Bonobo.png", map: "Primaten", 
         quote: `Bonobos show an exceptional degree of empathy and tolerance compared to other great apes
         <br><br>- Frans de Waal`
-      }
-    ]
-  },
-  {
-    input: ["Oermensapen", "Savanne"], 
-    hint: `Sommige mensapen voelen zich thuis op de savanne.`,
-    tijd: 2_000_000,
-    output: [
-      { naam: "Mens", icoon: "icons/Mens.png", map: "Primaten", 
-        quote: `Man must be regarded as an end in himself
-        <br><br>- Immanuel Kant`
       }
     ]
   },
@@ -14045,6 +14076,31 @@ const combinaties = [
       { naam: "Gerbera", icoon: "icons/Gerbera.png", map: "Bloemen", 
         quote: `The genus Gerbera produces flowers of remarkable brilliance
         <br><br>- William Aiton`
+      }
+    ]
+  },
+//------------ THRESHOLD 10: MENS 2 Ma --------------//
+  {
+    input: ["Oermensapen", "Savanne"],
+    hint: `Sommige mensapen voelen zich thuis op de savanne.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Mens", icoon: "icons/Mens.png", map: "Primaten", 
+        quote: `Man must be regarded as an end in himself
+        <br><br>- Immanuel Kant`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Beren", "IJs"], ["Beren", "Poolgebied"]
+    ], 
+    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    tijd: 500_000,
+    output: [
+      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
+        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
+        <br><br>- Andrew Derocher`
       }
     ]
   }
