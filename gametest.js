@@ -7958,7 +7958,7 @@ const combinaties = [
         magnolia’s ontstonden, hoewel coniferen en varens dominant bleven. Bloeiende planten boden een nieuw voedselbron 
         voor zoogdieren, met tanden geschikt voor fruit, zaden en insecten, terwijl insecten zoals mieren, termieten, 
         bladluizen, sprinkhanen, wespen en vlinders snel diversifieerden. Door het opbreken van de continenten kende elk 
-        continent zijn eigen dino-sauriërs. In de lucht namen vogels de overhand, waardoor de grote pterosauriërs in 
+        continent zijn eigen dinosauriërs. In de lucht namen vogels de overhand, waardoor de grote pterosauriërs in 
         aantal afnamen.
         </span>`,
       }
