@@ -14115,6 +14115,19 @@ const combinaties = [
   },
   {
     input: [
+      ["map:Granen", "Gist"], ["Hop", "map:Granen"]
+    ],
+    hint: `Wie, hop, de granen gist, krijgt vanzelf alcohol.`,
+    tijd: 6_000,
+    output: [
+      { naam: "Bier", icoon: "icons/Bier.png", map: "Genotwaren", 
+        quote: `Beer was the standard drink of ancient Egypt, safer than water and central to daily sustenance
+        <br><br>- Alan Gardiner`
+      }
+    ]
+  },
+  {
+    input: [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
     hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
@@ -14123,6 +14136,101 @@ const combinaties = [
       { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
         quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
         <br><br>- Andrew Derocher`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Vuur"],
+    hint: `Wanneer de mens meester is over het vuur, is hij niet meer te temmen.`,
+    tijd: 1_000_000,
+    output: [
+      { naam: "Kampvuur", icoon: "icons/Kampvuur.png", map: "Vuur", 
+        quote: `Things are born from transformation and return again through transformation, like fire turning wood into
+        ash
+        <br><br>- Zhuang Zi`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Karpers"],
+    hint: `Sommige karpers voelen zich thuis bij de mens.. of andersom?`,
+    output: [
+      { naam: "Goudvissen", icoon: "icons/Goudvissen.png", map: "Vissen", 
+        quote: `Goldfish possess a surprising capacity for memory and recognition
+        <br><br>- Sy Montgomery`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Krokussen"],
+    hint: `Sommige krokussen voelen zich thuis bij de mens.. of andersom?`,
+    output: [
+      { naam: "Saffraan", icoon: "icons/Saffraan.png", map: "Smaakmakers", 
+        quote: `Saffron strengthens the heart and uplifts the spirit, but must be used with care due to its potency
+        <br><br>- Avicenna`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Mandarijnen"],
+    hint: `Wat mensen wel niet kunnen verzinnen.. van een simpele mandarijn.`,
+    output: [
+      { naam: "Sinaasappels", icoon: "icons/Sinaasappels.png", map: "Fruit", 
+        quote: `To taste the orange is to hold sunlight in the hand
+        <br><br>- John Keats`
+      },
+      { naam: "Grapefruit", icoon: "icons/Grapefruit.png", map: "Fruit", 
+        quote: `The grapefruit is a relatively recent citrus hybrid, likely originating in the Caribbean in the 
+        18th century
+        <br><br>- David Karp`
+      },
+      { naam: "Citroenen", icoon: "icons/Citroenen.png", map: "Fruit", 
+        quote: `The scent of lemon is clean, sharp, and instantly awakening to the senses
+        <br><br>- M. Fisher`
+      },
+      { naam: "Limoenen", icoon: "icons/Limoenen.png", map: "Fruit", 
+        quote: `Lime is essential in many cuisines for its ability to balance richness with acidity
+        <br><br>- Jane Grigson`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Vinken"],
+    hint: `Sommige vinken voelen zich thuis bij de mens.. of andersom?`,
+    output: [
+      { naam: "Kanaries", icoon: "icons/Kanaries.png", map: "Vogels", 
+        quote: `Selective breeding has produced canaries with remarkable variation in color and song
+        <br><br>- William Beebe`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Wolven"],
+    hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
+    output: [
+      { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
+        quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
+        <br><br>- Raymond Coppinger`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Zwijnen"],
+    hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
+    output: [
+      { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
+        quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
+        <br><br>- Jeffrey Masson`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Runderen"],
+    hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
+    output: [
+      { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
+        quote: `I am as content as a cow in a meadow
+        <br><br>- Henry Thoreau`
       }
     ]
   }
