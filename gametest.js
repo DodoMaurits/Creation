@@ -14044,8 +14044,8 @@ const combinaties = [
     tijd: 2_000_000,
     output: [
       { naam: "Gibbons", icoon: "icons/Gibbons.png", map: "Primaten", 
-        quote: `
-        <br><br>- `
+        quote: `The calls of the gibbon carry across the rainforest long before the animal itself is seen
+        <br><br>- John MacKinnon`
       },
       { naam: "Orang-oetans", icoon: "icons/Orang-oetans.png", map: "Primaten", 
         quote: `Orangutans are remarkably solitary great apes, living quiet lives in the depths of the rainforest
