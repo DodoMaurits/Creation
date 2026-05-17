@@ -13428,18 +13428,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerkatachtigen", "Steppe"],
-    hint: `Sommige katachtigen voelen zich thuis op de steppe.`,
-    tijd: 2_500_000,
-    output: [
-      { naam: "Sabeltandtijgers", icoon: "icons/Sabeltandtijgers.png", map: "Carnivoren", 
-        quote: `The saber-toothed cats were highly specialized predators adapted for killing large prey with precision 
-        bites
-        <br><br>- Alan Turner`
-      }
-    ]
-  },
-  {
     input: [
       ["Oerprimaten", "Kust"], ["Oerprimaten", "Rivier"]
     ],
