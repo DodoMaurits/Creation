@@ -13161,6 +13161,7 @@ const combinaties = [
       ["Oerhondachtigen", "IJs"], ["Oerhondachtigen", "Poolgebied"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis in de poolgebieden.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Walrussen", icoon: "icons/Walrussen.png", map: "Carnivoren", 
         quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
@@ -13173,6 +13174,7 @@ const combinaties = [
       ["Oerhondachtigen", "Klei"], ["Oerhondachtigen", "Aarde"], ["Oerhondachtigen", "Heuvel"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis in de grond.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Dassen", icoon: "icons/Dassen.png", map: "Carnivoren", 
         quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
@@ -13184,6 +13186,7 @@ const combinaties = [
   {
     input: ["Oerhondachtigen", "Meer"],
     hint: `Sommige hondachtigen voelen zich thuis in zoetwaterhabitats.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
         quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
@@ -13212,6 +13215,7 @@ const combinaties = [
   },
   {
     input: ["Oerhondachtigen", "Rivier"],
+    tijd: 15_000_000,
     output: [
       { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
         quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
@@ -13240,7 +13244,7 @@ const combinaties = [
   {
     input: ["Oerhondachtigen", "Bos"],
     hint: `Sommige hondachtigen voelen zich thuis op de toendra en steppes.`,
-    tijd: 30_000_000,
+    tijd: 10_000_000,
     output: [
       { naam: "Beren", icoon: "icons/Beren.png", map: "Carnivoren", 
         quote: `The great bear moves through the forest with a power so quiet that the woods seem to make room for it
@@ -13278,6 +13282,7 @@ const combinaties = [
   },
   {
     input: ["Oerhondachtigen", "Weide"],
+    tijd: 10_000_000,
     output: [
       { naam: "Wezels", icoon: "icons/Wezels.png", map: "Carnivoren", 
         quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
@@ -13593,6 +13598,7 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Rivier"],
     hint: `Sommige evenhoevigen voelen zich thuis in ondiepe rivieren.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Nijlpaarden", icoon: "icons/Nijlpaarden.png", map: "Hoefdieren", 
         quote: `Hippos are important ecosystem engineers, transferring nutrients between land and water
@@ -13603,6 +13609,7 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Toendra"],
     hint: `Sommige evenhoevigen voelen zich thuis op de toendra.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Rendieren", icoon: "icons/Rendieren.png", map: "Hoefdieren", 
         quote: `Reindeer form large, dynamic herds whose composition changes seasonally
@@ -13655,7 +13662,7 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Savanne"],
     hint: `Sommige evenhoevigen voelen zich thuis op de savanne.`,
-    tijd: 5_000_000,
+    tijd: 2_000_000,
     output: [
       { naam: "Giraffen", icoon: "icons/Giraffen.png", map: "Hoefdieren", 
         quote: `Giraffes often appear calm and observant, scanning their environment from an elevated vantage point
@@ -13782,7 +13789,7 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Prairie"],
     hint: `Sommige knaagdieren voelen zich thuis op de prairie.`,
-    tijd: 2_000_000,
+    tijd: 5_000_000,
     output: [
       { naam: "Prairiehonden", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
         quote: `Where prairie dogs thrive, the grassland itself seems alive with conversation
@@ -13897,6 +13904,7 @@ const combinaties = [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
     hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    tijd: 500_000,
     output: [
       { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
         quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
@@ -13907,6 +13915,7 @@ const combinaties = [
   {
     input: ["Beren", "Tropisch regenwoud"], 
     hint: `Sommige beren voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Zonneberen", icoon: "icons/Zonneberen.png", map: "Carnivoren", 
         quote: `Sun bears spend much of their lives hidden within dense rainforest habitats
@@ -13917,6 +13926,7 @@ const combinaties = [
   {
     input: ["Beren", "Bamboe"], 
     hint: `Sommige beren zijn onlosmakelijk verbonden aan bamboebossen.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Pandaberen", icoon: "icons/Pandaberen.png", map: "Carnivoren", 
         quote: `The giant panda’s survival depends entirely on the availability of bamboo and intact forest corridors
