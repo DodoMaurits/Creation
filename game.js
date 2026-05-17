@@ -13640,7 +13640,7 @@ const combinaties = [
   },
   {
     input: ["Oerhondachtigen", "Bos"],
-    hint: `Sommige hondachtigen voelen zich thuis op de toendra en steppes.`,
+    hint: `Sommige hondachtigen voelen zich thuis in het bos.`,
     tijd: 10_000_000,
     output: [
       { naam: "Beren", icoon: "icons/Beren.png", map: "Carnivoren", 
