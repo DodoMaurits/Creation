@@ -7690,8 +7690,24 @@ const combinaties = [
       normal: {
         achtergrond: "afb/Het_Krijt.png",
         titel: "KRIJT 145-66 MA",
-        tekst: `
-        <span></span>`,
+        tekst: 
+        `<span>Net als het eiland Kreta is deze periode vernoemd naar het Latijnse creta (kalk) vanwege de dikke 
+        kalksteenlagen die geologen in 1822 in Noord-Franrijk aantroffen. Gondwana brak verder op, met de splitsing van 
+        Afrika, India en Australië-Antarctica. Door veel vulkanisme lag de zeespiegel hoog, waardoor grote delen van 
+        Noordwest-Europa onder de zogeheten Krijtzee stonden. Het zeeleven varieerde van zeereptielen tot ammonieten en 
+        veel beenvissen, die toen recordlengtes van 5 meter bereikten. Ook eencellig plankton ontstond, verantwoordelijk 
+        voor de karakteristieke kalksteen, terwijl op de zeebodem krabben, oesters en weekdieren tot een meter groot 
+        werden. 
+        
+        <br><br>De plesiosauriërs kregen een gigantische concurrent: de meer dan 15 meter lange mosasuiridae, vernoemd 
+        naar het eerste fossiel aan de rivier de Maas. Op het land verschenen de eerste bedektzadige planten, zogenaamde
+        bloemplanten, samen met de eerste bijen voor bestuiving. Ook bedektzadige bomen zoals vijgen, platanen en 
+        magnolia’s ontstonden, hoewel coniferen en varens dominant bleven. Bloeiende planten boden een nieuw voedselbron 
+        voor zoogdieren, met tanden geschikt voor fruit, zaden en insecten, terwijl insecten zoals mieren, termieten, 
+        bladluizen, sprinkhanen, wespen en vlinders snel diversifieerden. Door het opbreken van de continenten kende elk 
+        continent zijn eigen dino-sauriërs. In de lucht namen vogels de overhand, waardoor de grote pterosauriërs in 
+        aantal afnamen.
+        </span>`,
       }
     }
   },
@@ -8312,8 +8328,34 @@ const combinaties = [
       normal: {
         achtergrond: "afb/Uitsterven_dinosauriërs.jpg",
         titel: "DINOSAURIËRS UITGESTORVEN 66 MA",
-        tekst: `
-        <span></span>`,
+        tekst: 
+        `<span>Een asteroïde met een snelheid van 30 kilometer per seconde – 100.000 kilometer per uur – vloog door de 
+        dampkring en sloeg in op Aarde, waarna in relatief korte tijd hele ecosystemen die miljoenen jaren de Aarde hadden
+        gedomineerd verdwenen. Deze massaextinctie door een asteroïde kreeg in de jaren 1980 overtuigend bewijs, toen de
+        inslagkrater met een diameter van circa 180 kilometer werd ontdekt rondom het plaatsje Chicxulub Pueblo in Mexico.
+        Op deze plek is het zeldzame element iridium gevonden, dat wereldwijd in verhoogde concentraties voorkomt in de
+        Krijt-Paleogeen-laag. 
+        
+        <br><br>De inslag veroorzaakte enorme stofwolken en rook, die maandenlang de zon verduisterden, waardoor 
+        fotosynthese grotendeels stilviel. Grote delen van de Aarde stonden tegelijk in brand, te beginnen bij de massale
+        bosbranden rondom de inslagplaats. Met het verdwijnen van zonlicht stierven vele soorten plankton en planten, 
+        waarna herbivoren uitstierven en uiteindelijk de carnivoren die van hen afhankelijk waren verhongerden. 
+        Van de dinosauriërs overleefden alleen de voorouders van de vogels. 
+       
+        <br><br>Jaren na de inslag konden de overlevende soorten langzaam weer profiteren van fotosynthese, maar de 
+        wereld was nog altijd een hete broeikasomgeving. Het duurde duizenden jaren voordat de biosfeer enigszins 
+        hersteld was. Kleine omnivore zoogdieren en vogels overleefden dankzij dode resten en de larven, wormen en slakken 
+        die zich daarop voedden. Veel dieren leefden bovendien in holen of ondergronds en kwamen ’s nachts naar buiten.
+        
+        <br><br>De periode Paleogeen was een tijd waarin nieuwe ecosystemen de leegtes van de massaextinctie vulden. 
+        Alleen de platen van India en Australië lagen nog op heel andere plaatsen dan de huidige continenten. 
+        Het tijdvak Paleoceen betekent letterlijk het oudste van het nieuwste (Grieks: palaiós kainós). Hoewel de 
+        gemiddelde temperaturen koeler waren dan in het Krijt en de zeespiegel lager stond, was de Aarde bedekt met 
+        weelderige tropische regenwouden en uitgestrekte naaldbossen, zelfs op hoge breedtegraden nabij de polen. 
+        Elk continent ontwikkelde zijn eigen unieke ecosysteem, maar Eurazië en Noord-Amerika waren via de Beringstraat 
+        nog wel verbonden, waardoor migratie van dieren nog altijd voorkwam. Zoogdieren waren nog klein en primitief, 
+        maar in een periode van slechts 10 miljoen jaar ontstonden veel cruciale groepen.
+        </span>`,
       },
       thresholdElement: {
         naam: "Bloem", 
@@ -9888,6 +9930,7 @@ const combinaties = [
   },
   {
     input: ["Archaeopteryx", "Zaadjes"],
+    hint: `Sommige archaeopteryx verschijnen waar zaadjes zijn..`,
     tijd: 10_000_000,
     output: [
       { naam: "Mussen", icoon: "icons/Mussen.png", map: "Vogels", 
@@ -13154,6 +13197,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerlamiden", "Savanne"],
+    hint: `Sommige lamiden voelen zich thuis op de savanne.`,
+    tijd: 3_000_000,
+    output: [
+      { naam: "Paprika", icoon: "icons/Paprika.png", map: "Groenten", 
+        quote: `Peppers show how a wild plant becomes a domestic staple through selection for flavor and form
+        <br><br>- Michael Pollan`
+      }
+    ]
+  },
+  {
     input: ["Oerlamiden", "Weide"],
     hint: `Sommige lamiden voelen zich thuis op de grasweides.`,
     tijd: 20_000_000,
@@ -13501,6 +13555,7 @@ const combinaties = [
       ["Oerhondachtigen", "IJs"], ["Oerhondachtigen", "Poolgebied"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis in de poolgebieden.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Walrussen", icoon: "icons/Walrussen.png", map: "Carnivoren", 
         quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
@@ -13513,6 +13568,7 @@ const combinaties = [
       ["Oerhondachtigen", "Klei"], ["Oerhondachtigen", "Aarde"], ["Oerhondachtigen", "Heuvel"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis in de grond.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Dassen", icoon: "icons/Dassen.png", map: "Carnivoren", 
         quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
@@ -13524,6 +13580,7 @@ const combinaties = [
   {
     input: ["Oerhondachtigen", "Meer"],
     hint: `Sommige hondachtigen voelen zich thuis in zoetwaterhabitats.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
         quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
@@ -13552,6 +13609,7 @@ const combinaties = [
   },
   {
     input: ["Oerhondachtigen", "Rivier"],
+    tijd: 15_000_000,
     output: [
       { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
         quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
@@ -13580,7 +13638,7 @@ const combinaties = [
   {
     input: ["Oerhondachtigen", "Bos"],
     hint: `Sommige hondachtigen voelen zich thuis op de toendra en steppes.`,
-    tijd: 30_000_000,
+    tijd: 10_000_000,
     output: [
       { naam: "Beren", icoon: "icons/Beren.png", map: "Carnivoren", 
         quote: `The great bear moves through the forest with a power so quiet that the woods seem to make room for it
@@ -13618,6 +13676,7 @@ const combinaties = [
   },
   {
     input: ["Oerhondachtigen", "Weide"],
+    tijd: 10_000_000,
     output: [
       { naam: "Wezels", icoon: "icons/Wezels.png", map: "Carnivoren", 
         quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
@@ -13933,6 +13992,7 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Rivier"],
     hint: `Sommige evenhoevigen voelen zich thuis in ondiepe rivieren.`,
+    tijd: 15_000_000,
     output: [
       { naam: "Nijlpaarden", icoon: "icons/Nijlpaarden.png", map: "Hoefdieren", 
         quote: `Hippos are important ecosystem engineers, transferring nutrients between land and water
@@ -13943,6 +14003,7 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Toendra"],
     hint: `Sommige evenhoevigen voelen zich thuis op de toendra.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Rendieren", icoon: "icons/Rendieren.png", map: "Hoefdieren", 
         quote: `Reindeer form large, dynamic herds whose composition changes seasonally
@@ -13995,7 +14056,7 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Savanne"],
     hint: `Sommige evenhoevigen voelen zich thuis op de savanne.`,
-    tijd: 5_000_000,
+    tijd: 2_000_000,
     output: [
       { naam: "Giraffen", icoon: "icons/Giraffen.png", map: "Hoefdieren", 
         quote: `Giraffes often appear calm and observant, scanning their environment from an elevated vantage point
@@ -14122,7 +14183,7 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Prairie"],
     hint: `Sommige knaagdieren voelen zich thuis op de prairie.`,
-    tijd: 2_000_000,
+    tijd: 5_000_000,
     output: [
       { naam: "Prairiehonden", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
         quote: `Where prairie dogs thrive, the grassland itself seems alive with conversation
@@ -14237,6 +14298,7 @@ const combinaties = [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
     hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    tijd: 500_000,
     output: [
       { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
         quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
@@ -14247,6 +14309,7 @@ const combinaties = [
   {
     input: ["Beren", "Tropisch regenwoud"], 
     hint: `Sommige beren voelen zich thuis in het tropisch regenwoud.`,
+    tijd: 5_000_000,
     output: [
       { naam: "Zonneberen", icoon: "icons/Zonneberen.png", map: "Carnivoren", 
         quote: `Sun bears spend much of their lives hidden within dense rainforest habitats
@@ -14257,6 +14320,7 @@ const combinaties = [
   {
     input: ["Beren", "Bamboe"], 
     hint: `Sommige beren zijn onlosmakelijk verbonden aan bamboebossen.`,
+    tijd: 20_000_000,
     output: [
       { naam: "Pandaberen", icoon: "icons/Pandaberen.png", map: "Carnivoren", 
         quote: `The giant panda’s survival depends entirely on the availability of bamboo and intact forest corridors
