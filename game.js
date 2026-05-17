@@ -13774,18 +13774,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerkatachtigen", "Steppe"],
-    hint: `Sommige katachtigen voelen zich thuis op de steppe.`,
-    tijd: 2_500_000,
-    output: [
-      { naam: "Sabeltandtijgers", icoon: "icons/Sabeltandtijgers.png", map: "Carnivoren", 
-        quote: `The saber-toothed cats were highly specialized predators adapted for killing large prey with precision 
-        bites
-        <br><br>- Alan Turner`
-      }
-    ]
-  },
-  {
     input: [
       ["Oerprimaten", "Kust"], ["Oerprimaten", "Rivier"]
     ],
@@ -14518,7 +14506,6 @@ const combinaties = [
          "Walrussen", "Otters", "Zeehonden", "Zeeleeuwen", "Dassen", "Wolven", "Wezels", "Marters", "Wasberen", 
          "Beren", "Vossen", "Wilde honden", "Pandaberen", "Zonneberen", "Katten", "Stokstaartjes", "Lynxen", 
          "Poema", "Tijgers", "Jaguars", "Civetkatten", "Fossa", "Cheeta", "Leeuwen", "Luipaarden", "Hyena",
-         "Sabeltandtijgers",
          /* --- HOEFDIEREN --- */
          "Lama", "Alpaca", "Steenbokken", "Geiten", "Kamelen", "Dromedarissen", "Gazellen", "Elanden", "Nijlpaarden",
          "Rendieren", "Zwijnen", "Herten", "Impala", "Giraffen", "Okapi", "Gnoes", "Schapen", "Tapirs", "Neushoorns",
