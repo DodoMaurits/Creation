@@ -698,7 +698,7 @@ const combinaties = [
         requirements: ["Radioactiviteit", "Sterrenstelsel", "Zwart Gat", "Magnetisme",
                        "Neptunus", "Uranus", "Saturnus", "Jupiter",
                        "Mars", "De Aarde", "De Maan", "Venus", "Mercurius", 
-                       "Basalt", "Obsidiaan", "Platentektoniek", "Vulkaan"]
+                       "Basalt", "Obsidiaan", "Platentektoniek", "Aardbeving", "Vulkaan"]
       },
       normal: {
         achtergrond: "afb/wateropaarde.png",
@@ -1623,7 +1623,7 @@ const combinaties = [
     hint: `Een mineraal ontbreekt nog.. uit verwering van wit gesteente.`,
     output: [
       { naam: "Calciet", icoon: "icons/Calciet.png", map: "Chemie", 
-        quote: `Through calcite, the air took on a strange luminousness, as though the light itself were split into 
+        quote: `Through calcite, the air took on a strange luminousness, as though the flight itself were split into 
         delicate fragments 
         <br><br>- Albert Durer`
       },
@@ -1760,8 +1760,10 @@ const combinaties = [
       threshold: {
         titel: "Leven", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Rivier", "Tufsteen", "Koper", "Zure regen", "Strand", "Eiland", 
-          "Roest", "Zand", "Klei", "Glas", "Golf", "Wind", "Zout", "Kalk"]
+        requirements: ["Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", "Gips", 
+          "Steenzout", "Rivier", "Tufsteen", "Koper", "Zilver", "Goud", "Zure regen", "Mist", "Bolbliksem", "Regenboog", 
+          "Strand", "Klif", "Waterval", "Eiland", "Roest", "Zand", "Klei", "Ven", "Glas", "Golf", "Wind", "Zout", "Kalk", 
+          "Explosie", "Zonnewind", "Noorderlicht"]
       },
       normal: {
         achtergrond: "afb/eersteleven.png",
@@ -3729,10 +3731,9 @@ const combinaties = [
       threshold: {
         titel: "Cambrische Explosie", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Woestijn", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
-          "Zandsteen", "Kalksteen", "Kwartsiet", "Calciet", "Sulfaat", "Gneis", "Leisteen", 
-          "Dood", "Stromatolieten", "Fotosynthese", "Amoeben", "Foraminiferen", "Stralendiertjes", 
-          "Aarde", "Roodwieren", "Groenwieren", "Slijm", "Rif", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
+        requirements: ["Poolgebied", "Woestijn", "Oase", "Lagune", "Sneeuw", "Hagel", "Orkaan", "Strand", "Overstroming", 
+          "Dood", "Stromatolieten", "Fotosynthese", "Amoeben", "Foraminiferen", "Stralendiertjes", "Aarde", "Roodwieren", 
+          "Groenwieren", "Slijm", "Rif", "Gif", "Krijt", "Steenwortelalgen", "Kwallen", "Zeeanemonen"]
       },
       normal: {
         achtergrond: "afb/cambrischeexplosie.png",
@@ -4889,8 +4890,8 @@ const combinaties = [
       threshold: {
         titel: "Siluur", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
-          "Oog", "Smaak", "Kleur", "Tand", "Mos"]
+        requirements: ["Aardolie", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
+          "Oog", "Smaak", "Kleur", "Tand", "Parel", "Mos", "Bloed"]
       },
       normal: {
         achtergrond: "afb/siluur.jpg",
@@ -6124,7 +6125,9 @@ const combinaties = [
       threshold: {
         titel: "Carboon", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Paddenstoelen", "Kreeften", "Vleugels", "Moeras", "Haaien", "Bruinkool"]
+        requirements: 
+          ["Paddenstoelen", "Kreeften", "Reuzenpissebedden", "Pissebedden", "Slakken", "Vleugels", "Moeras", 
+            "Haaien", "Bruinkool", "Ozon", "Slijm", "Zijde"]
       },
       normal: {
         achtergrond: "afb/carboon.jpg",
@@ -6822,7 +6825,7 @@ const combinaties = [
       threshold: {
         titel: "Perm", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Vlinders", "Ei", "Steenkool", "Tropisch regenwoud"]
+        requirements: ["Waterspinnen", "Vlinders", "Ei", "Steenkool", "Tropisch regenwoud", "Brand"]
       },
       normal: {
         achtergrond: "afb/perm.png",
@@ -7685,7 +7688,7 @@ const combinaties = [
       threshold: {
         titel: "Krijt", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Termieten"]
+        requirements: ["Octopussen", "Veer", "Archaeopteryx", "Termieten", "Heuvel", "Bruinwieren", "Kelpwoud"]
       },
       normal: {
         achtergrond: "afb/Het_Krijt.png",
@@ -8323,7 +8326,9 @@ const combinaties = [
       threshold: {
         titel: "Dinosauriërs uitgestorven", 
         tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Savanne", "Oase", "Steppe"]
+        requirements: 
+          ["Mieren", "Wespen", "Bijen", "Slangen", "Krokodillen", "Waterlelies", "Steranijs",
+           "Honing", "Toendra", "Savanne", "Steppe", "Duinen", "Prairie", "Hiërarchie", "Werk", "Leger", "Heerser"]
       },
       normal: {
         achtergrond: "afb/Uitsterven_dinosauriërs.jpg",
@@ -13781,6 +13786,45 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Oerprimaten", "Kust"], ["Oerprimaten", "Rivier"]
+    ],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Neusapen", icoon: "icons/Neusapen.png", map: "Primaten", 
+        quote: `Proboscis monkeys live in complex social groups with fluid harems and coordinated movement through 
+        mangroves
+        <br><br>- Dale Smith`
+      },
+      { naam: "Slankapen", icoon: "icons/Slankapen.png", map: "Primaten", 
+        quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
+        <br><br>- Robin Dunbar`
+      }
+    ]
+  },
+  {
+    input: ["Oerprimaten", "Klif"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Bavianen", icoon: "icons/Bavianen.png", map: "Primaten", 
+        quote: `Baboons are highly flexible primates capable of living in a wide range of habitats, 
+        including those altered by humans
+        <br><br>- Shirley Strum`
+      }
+    ]
+  },
+  {
+    input: ["Oerprimaten", "Moeras"],
+    tijd: 10_000_000,
+    output: [
+      { naam: "Neusapen", icoon: "icons/Neusapen.png", map: "Primaten", 
+        quote: `Proboscis monkeys live in complex social groups with fluid harems and coordinated movement through 
+        mangroves
+        <br><br>- Dale Smith`
+      }
+    ]
+  },
+  {
     input: ["Oerprimaten", "Bos"],
     hint: `Sommige primaten voelen zich thuis in de bossen.`,
     tijd: 10_000_000,
@@ -13793,6 +13837,10 @@ const combinaties = [
         quote: `Macaques exhibit complex social hierarchies and frequent conflict-resolution behaviors
         <br><br>- Carel van Schaik`
       },
+      { naam: "Slankapen", icoon: "icons/Slankapen.png", map: "Primaten", 
+        quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
+        <br><br>- Robin Dunbar`
+      },
       { naam: "Oermensapen", icoon: "icons/Oermensapen.png", map: "Primaten", 
         quote: `Great apes demonstrate the roots of cooperation and shared intentionality that define human societies
         <br><br>- Sarah Hrdy`
@@ -13804,6 +13852,10 @@ const combinaties = [
     hint: `Sommige primaten voelen zich thuis in het tropisch regenwoud.`,
     tijd: 2_000_000,
     output: [
+      { naam: "Lori", icoon: "icons/Lori.png", map: "Primaten", 
+        quote: `Loris are among the least visible primates due to their nocturnal and secretive habits
+        <br><br>- D. Nekaris`
+      },
       { naam: "Spookdiertjes", icoon: "icons/Spookdiertjes.png", map: "Primaten", 
         quote: `Tarsiers are among the most specialized nocturnal primates, with extraordinary leaping ability and 
         large eyes adapted for hunting in darkness
@@ -13834,6 +13886,10 @@ const combinaties = [
     hint: `Sommige primaten voelen zich thuis op de savanne.`,
     tijd: 10_000_000,
     output: [
+      { naam: "Galago", icoon: "icons/Galago.png", map: "Primaten", 
+        quote: `The galago is a small, elusive primate whose presence is often revealed only by its calls at night
+        <br><br>- Paul Honess`
+      },
       { naam: "Bavianen", icoon: "icons/Bavianen.png", map: "Primaten", 
         quote: `Baboons are highly flexible primates capable of living in a wide range of habitats, 
         including those altered by humans
@@ -14292,19 +14348,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Beren", "IJs"], ["Beren", "Poolgebied"]
-    ], 
-    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
-    tijd: 500_000,
-    output: [
-      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
-        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
-        <br><br>- Andrew Derocher`
-      }
-    ]
-  },
-  {
     input: ["Beren", "Tropisch regenwoud"], 
     hint: `Sommige beren voelen zich thuis in het tropisch regenwoud.`,
     tijd: 5_000_000,
@@ -14357,17 +14400,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oermensapen", "Savanne"], 
-    hint: `Sommige mensapen voelen zich thuis op de savanne.`,
-    tijd: 2_000_000,
-    output: [
-      { naam: "Mens", icoon: "icons/Mens.png", map: "Primaten", 
-        quote: `Man must be regarded as an end in himself
-        <br><br>- Immanuel Kant`
-      }
-    ]
-  },
-  {
     input: ["Fynbos", "Oerfabiden"],
     hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
     tijd: 10_000_000,
@@ -14388,6 +14420,113 @@ const combinaties = [
         <br><br>- William Aiton`
       }
     ]
+  },
+//------------ THRESHOLD 10: MENS 2 Ma --------------//
+  {
+    input: ["Oermensapen", "Savanne"],
+    hint: `Sommige mensapen voelen zich thuis op de savanne.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Mens", icoon: "icons/Mens.png", map: "Primaten", 
+        quote: `Man must be regarded as an end in himself
+        <br><br>- Immanuel Kant`
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Mens", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: 
+        ["Kwik", "Alcohol", "Verdriet", "Trots", "Jaloezie", "Empathie", "Gemeenschap",
+          /* --- WATERDIEREN --- */
+          "Zeekoeien", "Walvissen", "Potvissen", "Dolfijnen", "Orka", "Narwallen"
+          /* --- VISSEN --- */
+          "Zeeduivels", "Manta", "Platvissen", "Clownvissen", "Doktersvissen", "Papegaaivissen", "Koraalduivels",
+          "Kogelvissen", "Tonijn", "Zalm", "Kabeljauwen", "Haring", "Makreel", "Karpers", "Snoeken", "Forel", 
+          "Meervallen", "Paling", "Zeepaardjes", "Vliegvissen", "Piranha", "Maanvissen",
+         /* --- PLANTEN --- */
+         "Vetplanten", "Buxus", "Oerfabiden", "Aloë Vera", "Kroos", "Waterriet", "Klavers", "Brandnetels", "Oerfagales",
+         "Cactussen", "Zonnedauw", "Venusvliegenvanger", "Oerericales", "Heide",
+         /* --- SMAAKMAKERS --- */
+         "Nootmuskaat", "Peper", "Kruidnagel", "Kaneel", "Knoflook", "Ui", "Bieslook", "Gember", "Kurkuma", "Kardemom",
+         "Mosterd", "Oregano", "Salie", "Tijm", "Munt", "Chilipepers", "Basilicum", "Peterselie", "Koriander", "Anijs", 
+         "Komijn", "Dille",
+         /* --- MATERIALEN --- */
+         "Papyrusriet", "Rotan", "Bamboe", "Hennep", "Vlas", "Katoen", "Jute", "Rubberbomen", "Kapok",
+         /* --- BOMEN --- */
+         "Tulpenbomen", "Magnolia", "Laurierbomen", "Platanen", "Oliepalmen", "Acacia", "Wilgen", "Populieren", "Iepen",
+         "Eucalyptus", "Esdoorns", "Lindes", "Paardenkastanjes", "Zeepnoten", "Baobabs", "Elzen", "Berken", "Beuken", 
+         "Eiken", "Arganbomen", "Sheabomen", "Essen", "Teak", "Japanse kers",
+         /* --- ZOOGDIEREN --- */
+         "Vleermuizen", "Klipdassen", "Mollen", "Egels", "Spitsmuizen", "Luiaarden", "Miereneters", "Aardvarkens", 
+         "Gordeldieren", "Konijnen", "Hazen", "Kangoeroes", "Koala", "Wombats", "Mammoeten", "Olifanten", "Ratten", 
+         "Bevers", "Capibara", "Eekhoorns", "Stekelvarkens", "Muizen", "Hamsters", "Prairiehonden"
+         /* --- VOGELS --- */
+         "Pinguïns", "Uilen", "Duiven", "Arenden", "Eenden", "Ganzen", "Zwanen", "Zwaluwen", "Spreeuwen", "Ooievaars",
+         "Meeuwen", "Aalscholvers", "Flamingo", "Papegaaiduikers", "Gieren", "Reigers", "Mussen", "Kippen", "Spechten", 
+         "Vinken", "Fazanten", "Kraaien", "Kolibries", "Pauwen", "Papegaaien", "Kieviten", "Struisvogels", 
+         "Secretarisvogels", "Kanaries",
+         /* --- BLOEMEN --- */
+         "Lotussen", "Pioenroezen", "Klaprozen", "Narcissen", "Irissen", "Lelies", "Orchideeën", "Gladiolen", "Hyacinten",
+         "Tulpen", "Krokussen", "Rozen", "Hibiscus", "Geraniums", "Anjers", "Hortensia", "Paardenbloemen", "Madeliefjes",
+         "Margrieten", "Goudsbloemen", "Zonnebloemen", "Chrysanten", "Gerbera",
+         /* --- GENOTWAREN --- */
+         "Agave", "Suiker", "Coca", "Hop", "Wierookbomen", "Mirre", "Cacao", "Kola", "Theeplanten", "Lavendel", 
+         "Tabaksplanten", "Koffieplanten", "Jasmijn", "Kamille", "Rooibos",
+         /* --- FRUIT --- */
+         "Avocado", "Druiven", "Zuurzakken", "Kokos", "Dadels", "Bananen", "Ananas", "Abrikozen", "Kersen", "Perziken", 
+         "Vijgen", "Aardbeien", "Pruimen", "Appels", "Peren", "Granaatappels", "Doerians", "Lychee", "Mandarijnen", 
+         "Mango", "Papaja", "Guaves", "Bosbessen", "Kiwi", "Olijven", "Kaki",
+         /* --- GRANEN --- */
+         "Rijst", "Maïs", "Sorghum", "Gierst", "Tarwe", "Gerst", "Haver",
+         /* --- GROENTEN --- */
+         "Asperges", "Prei", "Meloenen", "Watermeloenen", "Komkommers", "Cassave", "Pompoenen", "Courgettes", "Radijsjes",
+         "Kool", "Rabarber", "Bieten", "Spinazie", "Tomaten", "Aardappels", "Zoete aardappelen", "Paprika", "Aubergines", 
+         "Selderij", "Sla", "Andijvie", "Venkel", "Wortelen", "Artisjokken",
+         /* --- ZADEN --- */
+         "Amandelen", "Pinda", "Soja", "Kikkererwten", "Linzen", "Erwten", "Sperziebonen", "Kidneybonen", "Pistache", 
+         "Cashew", "Quinoa", "Boekweit", "Hazelaars", "Kastanjes", "Walnoten", "Paranoten", "Sesam",
+         /* --- CARNIVOREN --- */
+         "Walrussen", "Otters", "Zeehonden", "Zeeleeuwen", "Dassen", "Wolven", "Wezels", "Marters", "Wasberen", 
+         "Beren", "Vossen", "Wilde honden", "Pandaberen", "Zonneberen", "Katten", "Stokstaartjes", "Lynxen", 
+         "Poema", "Tijgers", "Jaguars", "Civetkatten", "Fossa", "Cheeta", "Leeuwen", "Luipaarden", "Hyena",
+         "Sabeltandtijgers",
+         /* --- HOEFDIEREN --- */
+         "Lama", "Alpaca", "Steenbokken", "Geiten", "Kamelen", "Dromedarissen", "Gazellen", "Elanden", "Nijlpaarden",
+         "Rendieren", "Zwijnen", "Herten", "Impala", "Giraffen", "Okapi", "Gnoes", "Schapen", "Tapirs", "Neushoorns",
+         "Ezels", "Zebra", "Paarden", "Bizons", "Buffels",
+         /* --- PRIMATEN --- */
+         "Lemuren", "Galago", "Lori", "Makaken", "Bavianen", "Spookdiertjes", "Kapucijnapen", "Slingerapen", "Brulapen",
+         "Saki", "Neusapen", "Slankapen", "Gibbons", "Gorilla", "Chimpansees", "Orang-oetans", "Bonobo"
+        ]
+      },
+      normal: {
+        achtergrond: "afb/Mens.jpg",
+        titel: "MENS 2 MA",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
+  },
+  {
+    input: [
+      ["Beren", "IJs"], ["Beren", "Poolgebied"]
+    ], 
+    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    tijd: 500_000,
+    output: [
+      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
+        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
+        <br><br>- Andrew Derocher`
+      }
+    ],
+    uitleg: 
+      { thresholdElement: { naam: "Mens", titel: "Probeer opnieuw na de zoogdieren en bloemen",
+        tekst: `Weet je zeker dat alle dieren klaar staan?
+        <br><br>Eerst nodig: alle vissen, reptielen, vogels, zoogdieren, carnivoren, hoefdieren, 
+        primaten, planten, bloemen, fruit, groenten, materialen, genotwaren, zaden, granen..` }
+    }
   }
 ];
 
