@@ -14058,6 +14058,30 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Runderen", "Moeras"], ["Runderen", "Savanne"]
+    ],
+    hint: `Sommige runderen voelen zich thuis in moerassen en savannes.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Buffels", icoon: "icons/Buffels.png", map: "Hoefdieren", 
+        quote: `Buffalo are among the most cohesive and defensive of African herd animals
+        <br><br>- Richard Estes`
+      }
+    ]
+  },
+  {
+    input: ["Runderen", "Steppe"],
+    hint: `Sommige runderen voelen zich thuis op de steppe.`,
+    tijd: 2_000_000,
+    output: [
+      { naam: "Bizons", icoon: "icons/Bizons.png", map: "Hoefdieren", 
+        quote: `The bison moved in immense herds across the plains, darkening the earth like a moving cloud
+        <br><br>- John Audubon`
+      }
+    ]
+  },
+  {
     input: ["Fynbos", "Oerfabiden"],
     hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
     tijd: 10_000_000,
