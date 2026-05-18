@@ -14499,7 +14499,7 @@ const combinaties = [
          /* --- ZOOGDIEREN --- */
          "Vleermuizen", "Klipdassen", "Mollen", "Egels", "Spitsmuizen", "Luiaarden", "Miereneters", "Aardvarkens", 
          "Gordeldieren", "Konijnen", "Hazen", "Kangoeroes", "Koala", "Wombats", "Mammoeten", "Olifanten", "Ratten", 
-         "Bevers", "Capibara", "Eekhoorns", "Stekelvarkens", "Muizen", "Hamsters", "Prairiehonden"
+         "Bevers", "Capibara", "Eekhoorns", "Stekelvarkens", "Muizen", "Hamsters", "Prairiehonden",
          /* --- VOGELS --- */
          "Pinguïns", "Uilen", "Duiven", "Arenden", "Eenden", "Ganzen", "Zwanen", "Zwaluwen", "Spreeuwen", "Ooievaars",
          "Meeuwen", "Aalscholvers", "Flamingo", "Papegaaiduikers", "Gieren", "Reigers", "Mussen", "Kippen", "Spechten", 
