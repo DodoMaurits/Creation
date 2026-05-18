@@ -14548,29 +14548,6 @@ const combinaties = [
     }
   },
   {
-    input: ["Druiven", "Gist"],
-    hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
-    output: [
-      { naam: "Wijn", icoon: "icons/Wijn.png", map: "Genotwaren", 
-        quote: `When there is plenty of wine, sorrow and worry take wing
-        <br><br>- Ovidius`
-      }
-    ]
-  },
-  {
-    input: [
-      ["map:Granen", "Gist"], ["Hop", "map:Granen"]
-    ],
-    hint: `Wie, hop, de granen gist, krijgt vanzelf alcohol.`,
-    tijd: 6_000,
-    output: [
-      { naam: "Bier", icoon: "icons/Bier.png", map: "Genotwaren", 
-        quote: `Beer was the standard drink of ancient Egypt, safer than water and central to daily sustenance
-        <br><br>- Alan Gardiner`
-      }
-    ]
-  },
-  {
     input: [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
@@ -14595,38 +14572,195 @@ const combinaties = [
       }
     ]
   },
+//------------ THRESHOLD 11: LAATSTE IJSTIJD 100.000 --------------//
+  {
+    input: ["Mens", "Katoen"],
+    hint: `Wat katoen kan doen.`,
+    tijd: 100_000,
+    output: [
+      { naam: "Kleding", icoon: "icons/Kleding.png", map: "Uitvindingen", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Laatste IJstijd", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: 
+        ["IJsberen", "Kampvuur"]
+      },
+      normal: {
+        achtergrond: "afb/IJstijd.jpg",
+        titel: "LAATSTE IJSTIJD 100.000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
+  },
+  {
+    input: ["Mens", "Wolven"],
+    hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 23_000,
+    output: [
+      { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
+        quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
+        <br><br>- Raymond Coppinger`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+        tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
+        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+  },
+//------------ THRESHOLD 12: LANDBOUW 12.000 --------------//
+  {
+    input: ["Mens", "Aarde"],
+    hint: `Kijk hoe mens hun stukje aarde gaat beheren.`,
+    tijd: 12_000,
+    output: [
+      { naam: "Akker", icoon: "icons/Akker.png", map: "Landschap", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Landbouw", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: 
+        ["Honden"]
+      },
+      normal: {
+        achtergrond: "afb/Landbouw.jpg",
+        titel: "Landbowu 12.000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
+  },
+  {
+    input: ["Druiven", "Gist"],
+    hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
+    tijd: 8_000,
+    output: [
+      { naam: "Wijn", icoon: "icons/Wijn.png", map: "Genotwaren", 
+        quote: `When there is plenty of wine, sorrow and worry take wing
+        <br><br>- Ovidius`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+  {
+    input: [
+      ["map:Granen", "Gist"], ["Hop", "map:Granen"]
+    ],
+    hint: `Wie, hop, de granen gist, krijgt vanzelf alcohol.`,
+    tijd: 6_000,
+    output: [
+      { naam: "Bier", icoon: "icons/Bier.png", map: "Genotwaren", 
+        quote: `Beer was the standard drink of ancient Egypt, safer than water and central to daily sustenance
+        <br><br>- Alan Gardiner`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+  {
+    input: ["Mens", "Zwijnen"],
+    hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 9_000,
+    output: [
+      { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
+        quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
+        <br><br>- Jeffrey Masson`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+  {
+    input: ["Mens", "Runderen"],
+    hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 8_500,
+    output: [
+      { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
+        quote: `I am as content as a cow in a meadow
+        <br><br>- Henry Thoreau`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+//------------ THRESHOLD 13: SCHRIFT 5000 --------------//
+  {
+    input: ["Mens", ""],
+    hint: ``,
+    tijd: 5_000,
+    output: [
+      { naam: "", icoon: "icons/.png", map: "", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Schrift", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: 
+        ["Honden"]
+      },
+      normal: {
+        achtergrond: "afb/Schrift.jpg",
+        titel: "Schrift 5000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
+  },
   {
     input: ["Mens", "Karpers"],
     hint: `Sommige karpers voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 1_700,
     output: [
       { naam: "Goudvissen", icoon: "icons/Goudvissen.png", map: "Vissen", 
         quote: `Goldfish possess a surprising capacity for memory and recognition
         <br><br>- Sy Montgomery`
       }
-    ]
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
     input: ["Mens", "Krokussen"],
     hint: `Sommige krokussen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 3_600,
     output: [
       { naam: "Saffraan", icoon: "icons/Saffraan.png", map: "Smaakmakers", 
         quote: `Saffron strengthens the heart and uplifts the spirit, but must be used with care due to its potency
         <br><br>- Avicenna`
       }
-    ]
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
     input: ["Mens", "Mandarijnen"],
     hint: `Wat mensen wel niet kunnen verzinnen.. van een simpele mandarijn.`,
+    tijd: 4_000,
     output: [
       { naam: "Sinaasappels", icoon: "icons/Sinaasappels.png", map: "Fruit", 
         quote: `To taste the orange is to hold sunlight in the hand
         <br><br>- John Keats`
-      },
-      { naam: "Grapefruit", icoon: "icons/Grapefruit.png", map: "Fruit", 
-        quote: `The grapefruit is a relatively recent citrus hybrid, likely originating in the Caribbean in the 
-        18th century
-        <br><br>- David Karp`
       },
       { naam: "Citroenen", icoon: "icons/Citroenen.png", map: "Fruit", 
         quote: `The scent of lemon is clean, sharp, and instantly awakening to the senses
@@ -14636,47 +14770,51 @@ const combinaties = [
         quote: `Lime is essential in many cuisines for its ability to balance richness with acidity
         <br><br>- Jane Grigson`
       }
-    ]
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+//------------ THRESHOLD 14: OVERZEESE IMPERIA 1000 --------------//
+  {
+    input: ["Mens", ""],
+    hint: ``,
+    tijd: 1_000,
+    output: [
+      { naam: "", icoon: "icons/.png", map: "", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Overzeese Imperia", 
+        tekst: "Je moet eerst nog wat meer halen...",
+        requirements: 
+        ["Honden"]
+      },
+      normal: {
+        achtergrond: "afb/Overzeese_imperia.jpg",
+        titel: "Overzeese Imperia 1000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
   },
   {
     input: ["Mens", "Vinken"],
     hint: `Sommige vinken voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 400,
     output: [
       { naam: "Kanaries", icoon: "icons/Kanaries.png", map: "Vogels", 
         quote: `Selective breeding has produced canaries with remarkable variation in color and song
         <br><br>- William Beebe`
       }
-    ]
-  },
-  {
-    input: ["Mens", "Wolven"],
-    hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
-    output: [
-      { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
-        quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
-        <br><br>- Raymond Coppinger`
-      }
-    ]
-  },
-  {
-    input: ["Mens", "Zwijnen"],
-    hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
-    output: [
-      { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
-        quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
-        <br><br>- Jeffrey Masson`
-      }
-    ]
-  },
-  {
-    input: ["Mens", "Runderen"],
-    hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
-    output: [
-      { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
-        quote: `I am as content as a cow in a meadow
-        <br><br>- Henry Thoreau`
-      }
-    ]
+    ],
+    uitleg: { thresholdElement: { naam: "", titel: "Probeer opnieuw na ...",
+        tekst: ` 
+        <br><br>Eerst nodig: .` } }
   }
 ];
 
