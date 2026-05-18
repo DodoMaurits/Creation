@@ -14172,8 +14172,8 @@ const combinaties = [
     hint: `Met hout of riet weet de mens wel raad.`,
     output: [
       { naam: "Vlot", icoon: "icons/Vlot.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `Early humans crossed waters using rafts long before advanced ships existed
+        <br><br>- Jared Diamond`
       }
     ]
   },
