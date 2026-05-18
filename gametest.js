@@ -321,6 +321,7 @@ const mappen = [
       { naam: "Muggen", icoon: "icons/Muggen.png" },
       { naam: "Vliegen", icoon: "icons/Vliegen.png" },
       { naam: "Vlinders", icoon: "icons/Vlinders.png" },
+      { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png" },
       { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png" },
       { naam: "Salamanders", icoon: "icons/Salamanders.png" },
       { naam: "Kikkers", icoon: "icons/Kikkers.png" },
@@ -6755,7 +6756,7 @@ const combinaties = [
     ],
     hint: `Sommige kevers ontpopten zich dankzij een overschot aan bladluizen.`,
     output: [
-      { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png", map: "Klein Landleven", 
+      { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png", map: "Klein landleven", 
         quote: `Ladybirds are universally loved insects, often seen as symbols of good fortune
         <br><br>- David Goulson`
       }
