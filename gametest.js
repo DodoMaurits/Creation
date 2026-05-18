@@ -14495,11 +14495,9 @@ let hintTimer = null;
 
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
-const startTime = 13_800_000_000;   // leeftijd universum
+const maxTime = 13_800_000_000;   // leeftijd universum
 const timelineFill = document.getElementById("timeline-fill");
 const timelineLabel = document.getElementById("timeline-label");
-let timelineMode = "universe"; 
-let startTime = timelineMode === "universe" ? maxTime : 12_000;
 
 // ----- DOM -----
 const closedContainer = document.getElementById("closed-container");
@@ -14811,7 +14809,7 @@ function checkCombination() {
   const eventTime = firstMatch.tijd;
   
   if (eventTime !== undefined && eventTime < currentTime) {
-    const clampedTime = Math.max(0, Math.min(startTime, eventTime));
+    const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
     animateTimeline(clampedTime);
   }
   
@@ -15091,12 +15089,6 @@ function animateTimeline(newTime) {
     const progress = Math.min((timestamp - start) / duration, 1);
     currentTime = oldTime + (newTime - oldTime) * progress;
 
-    if (timelineMode === "universe" && currentTime <= 12_000) {
-      timelineMode = "mini";
-      animateTimeline(12_000);
-      return;
-    }
-    
     updateTimelineLabel();
 
     if (progress < 1) requestAnimationFrame(step);
@@ -15124,8 +15116,8 @@ function updateTimelineLabel() {
 
   timelineLabel.textContent = labelText;
 
-  const percentage = (startTime - currentTime) / startTime;
-  
+  const percentage = (maxTime - currentTime) / maxTime;
+
   // Breedte timeline-fill
   timelineFill.style.width = (percentage * 100) + "%";
 
