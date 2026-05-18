@@ -14591,8 +14591,8 @@ const combinaties = [
     tijd: 100_000,
     output: [
       { naam: "Kleding", icoon: "icons/Kleding.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `The clothes you wear are a metamorphosis. They change you from the outside in
+        <br><br>- Linda Grant`
       }
     ],
     uitleg: {
@@ -14636,8 +14636,8 @@ const combinaties = [
     tijd: 31_000,
     output: [
       { naam: "Oven", icoon: "icons/Oven.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `Control of fire reached a new level with the enclosed oven, where heat itself became a tool
+        <br><br>- Lewis Mumford`
       }
     ],
     uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
@@ -14651,8 +14651,8 @@ const combinaties = [
     tijd: 12_000,
     output: [
       { naam: "Akker", icoon: "icons/Akker.png", map: "Landschap", 
-        quote: `
-        <br><br>- `
+        quote: `The fields repay the care of men
+        <br><br>- Virgilius`
       }
     ],
     uitleg: {
@@ -14735,8 +14735,8 @@ const combinaties = [
     tijd: 5_300,
     output: [
       { naam: "Zeilboot", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `A sailboat is not a means of transport, but a way of being in the world
+        <br><br>- Bernard Moitessier`
       }
     ],
     uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
@@ -14750,8 +14750,8 @@ const combinaties = [
     tijd: 5_000,
     output: [
       { naam: "Schrift", icoon: "icons/Schrift.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `To write is to remember more than one can hold in mind
+        <br><br>- Susan Sontag`
       }
     ],
     uitleg: {
@@ -14778,8 +14778,8 @@ const combinaties = [
     tijd: 3_200,
     output: [
       { naam: "Staal", icoon: "icons/Staal.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `The strength of steel lies in its refinement through fire
+        <br><br>- Henry Bessemer`
       }
     ],
     uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
@@ -14842,8 +14842,8 @@ const combinaties = [
     tijd: 2_200,
     output: [
       { naam: "Kompas", icoon: "icons/Kompas.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `Without a compass, the sea becomes a place without memory or direction
+        <br><br>- Francis Drake`
       }
     ]
   },
@@ -14854,8 +14854,8 @@ const combinaties = [
     tijd: 1_000,
     output: [
       { naam: "Oceaanvaartuig", icoon: "icons/Oceaanvaartuig.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `The ocean was not a barrier but a space of connection.
+        <br><br>- Fernand Braudel`
       }
     ],
     uitleg: {
