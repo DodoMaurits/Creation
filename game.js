@@ -14141,6 +14141,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerevenhoevigen", "Prairie"],
+    hint: `Sommige evenhoevigen voelen zich thuis op de prairie.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Gaffelantilopes", icoon: "icons/Gaffelantilopes.png", map: "Hoefdieren", 
+        quote: `The pronghorn is the fastest land mammal in North America, evolved for sustained speed across open country
+        <br><br>- Valerius Geist`
+      }
+    ]
+  },
+  {
     input: ["Oerknaagdieren", "Ven"],
     tijd: 2_000_000,
     output: [
