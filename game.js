@@ -14478,7 +14478,7 @@ const combinaties = [
         requirements: 
         ["Kwik", "Alcohol", "Verdriet", "Trots", "Jaloezie", "Empathie", "Gemeenschap",
           /* --- WATERDIEREN --- */
-          "Zeekoeien", "Walvissen", "Potvissen", "Dolfijnen", "Orka", "Narwallen"
+          "Zeekoeien", "Walvissen", "Potvissen", "Dolfijnen", "Orka", "Narwallen",
           /* --- VISSEN --- */
           "Zeeduivels", "Manta", "Platvissen", "Clownvissen", "Doktersvissen", "Papegaaivissen", "Koraalduivels",
           "Kogelvissen", "Tonijn", "Zalm", "Kabeljauwen", "Haring", "Makreel", "Karpers", "Snoeken", "Forel", 
