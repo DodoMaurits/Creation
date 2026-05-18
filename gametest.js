@@ -14497,6 +14497,7 @@ let hintTimer = null;
 // 🔹 Tijdlijn
 let currentTime = 13_800_000_000; // start bij oerknal
 const maxTime = 13_800_000_000;   // leeftijd universum
+let timelineStart = maxTime;
 const timelineFill = document.getElementById("timeline-fill");
 const timelineLabel = document.getElementById("timeline-label");
 
@@ -14810,8 +14811,12 @@ function checkCombination() {
   const eventTime = firstMatch.tijd;
   
   if (eventTime !== undefined && eventTime < currentTime) {
-    const clampedTime = Math.max(0, Math.min(maxTime, eventTime));
-    animateTimeline(clampedTime);
+    if (eventTime <= 12_000 && timelineStart !== 12_000) {
+      timelineFill.style.width = "0%";
+      timelineStart = 12_000;
+}
+
+animateTimeline(eventTime);
   }
   
   // reset selectie
@@ -15117,8 +15122,8 @@ function updateTimelineLabel() {
 
   timelineLabel.textContent = labelText;
 
-  const percentage = (maxTime - currentTime) / maxTime;
-
+  const percentage = (timelineStart - currentTime) / timelineStart;
+  
   // Breedte timeline-fill
   timelineFill.style.width = (percentage * 100) + "%";
 
