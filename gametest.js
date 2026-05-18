@@ -14205,7 +14205,7 @@ const combinaties = [
   {
     input: ["Mens", "Wolven"],
     hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 23_000,
+    tijd: 23000,
     output: [
       { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
         quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
@@ -14221,7 +14221,7 @@ const combinaties = [
       ["Kampvuur", "Kwartsiet"], ["Kampvuur", "Kalksteen"], ["Kampvuur", "Marmer"], ["Kampvuur", "Gipssteen"]
     ],
     hint: `Een kampvuur is heter als je er een stenen huisje van maakt..`,
-    tijd: 31_000,
+    tijd: 31000,
     output: [
       { naam: "Oven", icoon: "icons/Oven.png", map: "Uitvindingen", 
         quote: `
@@ -14233,7 +14233,7 @@ const combinaties = [
   {
     input: ["Mens", "Aarde"],
     hint: `Kijk hoe mens hun stukje aarde gaat beheren.`,
-    tijd: 12_000,
+    tijd: 12000,
     output: [
       { naam: "Akker", icoon: "icons/Akker.png", map: "Landschap", 
         quote: `
@@ -14247,7 +14247,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/Landbouw.jpg",
-        titel: "Landbowu 12.000 BP",
+        titel: "Landbouw 12.000 BP",
         tekst: 
         `<span>
         </span>`,
@@ -14257,7 +14257,7 @@ const combinaties = [
   {
     input: ["Druiven", "Gist"],
     hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
-    tijd: 8_000,
+    tijd: 8000,
     output: [
       { naam: "Wijn", icoon: "icons/Wijn.png", map: "Genotwaren", 
         quote: `When there is plenty of wine, sorrow and worry take wing
@@ -14270,7 +14270,7 @@ const combinaties = [
       ["map:Granen", "Gist"], ["Hop", "map:Granen"]
     ],
     hint: `Wie, hop, de granen gist, krijgt vanzelf alcohol.`,
-    tijd: 6_000,
+    tijd: 6000,
     output: [
       { naam: "Bier", icoon: "icons/Bier.png", map: "Genotwaren", 
         quote: `Beer was the standard drink of ancient Egypt, safer than water and central to daily sustenance
@@ -14281,7 +14281,7 @@ const combinaties = [
   {
     input: ["Mens", "Zwijnen"],
     hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 9_000,
+    tijd: 9000,
     output: [
       { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
         quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
@@ -14292,7 +14292,7 @@ const combinaties = [
   {
     input: ["Mens", "Runderen"],
     hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 8_500,
+    tijd: 8500,
     output: [
       { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
         quote: `I am as content as a cow in a meadow
@@ -14303,7 +14303,7 @@ const combinaties = [
   {
     input: ["Vlot", "Katoen"],
     hint: `Zou je met katoen niet meer wind kunnen vangen?`,
-    tijd: 5_300,
+    tijd: 5300,
     output: [
       { naam: "Zeilboot", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
         quote: `
@@ -14318,7 +14318,7 @@ const combinaties = [
   {
     input: ["Mens", "Klei"],
     hint: `De mens zou de mens niet zijn als het ging communiceren via klei.`,
-    tijd: 5_000,
+    tijd: 5000,
     output: [
       { naam: "Schrift", icoon: "icons/Schrift.png", map: "Uitvindingen", 
         quote: `
@@ -14344,7 +14344,7 @@ const combinaties = [
       ["Bruinkool", "IJzer"], ["Steenkool", "IJzer"], ["Oven", "IJzer"]
     ],
     hint: `Hm.. hoe smeed je ijzer het heetst?`,
-    tijd: 3_200,
+    tijd: 3200,
     output: [
       { naam: "Staal", icoon: "icons/Staal.png", map: "Uitvindingen", 
         quote: `
@@ -14358,7 +14358,7 @@ const combinaties = [
   {
     input: ["Mens", "Karpers"],
     hint: `Sommige karpers voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 1_700,
+    tijd: 1700,
     output: [
       { naam: "Goudvissen", icoon: "icons/Goudvissen.png", map: "Vissen", 
         quote: `Goldfish possess a surprising capacity for memory and recognition
@@ -14369,7 +14369,7 @@ const combinaties = [
   {
     input: ["Mens", "Krokussen"],
     hint: `Sommige krokussen voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 3_600,
+    tijd: 3600,
     output: [
       { naam: "Saffraan", icoon: "icons/Saffraan.png", map: "Smaakmakers", 
         quote: `Saffron strengthens the heart and uplifts the spirit, but must be used with care due to its potency
@@ -14380,7 +14380,7 @@ const combinaties = [
   {
     input: ["Mens", "Mandarijnen"],
     hint: `Wat mensen wel niet kunnen verzinnen.. van een simpele mandarijn.`,
-    tijd: 4_000,
+    tijd: 4000,
     output: [
       { naam: "Sinaasappels", icoon: "icons/Sinaasappels.png", map: "Fruit", 
         quote: `To taste the orange is to hold sunlight in the hand
@@ -14399,7 +14399,7 @@ const combinaties = [
   {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
-    tijd: 2_200,
+    tijd: 2200,
     output: [
       { naam: "Kompas", icoon: "icons/Kompas.png", map: "Uitvindingen", 
         quote: `
@@ -14411,7 +14411,7 @@ const combinaties = [
   {
     input: ["Kompas", "Zeilboot"],
     hint: `Wie had gedacht om het kompas op zee te gebruiken!`,
-    tijd: 1_000,
+    tijd: 1000,
     output: [
       { naam: "Oceaanvaartuig", icoon: "icons/Oceaanvaartuig.png", map: "Uitvindingen", 
         quote: `
