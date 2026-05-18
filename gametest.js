@@ -6750,6 +6750,18 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Kevers", "Evolutie"], ["Kevers", "Luizen"], ["Kevers", "Blad"]
+    ],
+    hint: `Sommige kevers ontpopten zich dankzij een overschot aan bladluizen.`,
+    output: [
+      { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png", map: "Klein Landleven", 
+        quote: `Ladybirds are universally loved insects, often seen as symbols of good fortune
+        <br><br>- David Goulson`
+      }
+    ]
+  },
+  {
     input: ["Oertetrapoden", "Evolutie"],
     /*hint: `De planten hebben hun zaadjes, nu is het aan de tetrapoden om hun eigen zaadjes te ontwikkelen.`,*/
     output: [
