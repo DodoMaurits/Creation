@@ -14572,6 +14572,18 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: [
+      ["Mens", "Hout"], ["Mens", "Papyrusriet"], ["Mens", "Waterriet"]
+    ],
+    hint: `Met hout of riet weet de mens wel raad.`,
+    output: [
+      { naam: "Vlot", icoon: "icons/Vlot.png", map: "Uitvindingen", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
 //------------ THRESHOLD 11: LAATSTE IJSTIJD 100.000 --------------//
   {
     input: ["Mens", "Katoen"],
@@ -14607,6 +14619,25 @@ const combinaties = [
       { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
         quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
         <br><br>- Raymond Coppinger`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+        tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
+        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+  },
+  {
+    input: [
+      ["Kampvuur", "Graniet"], ["Kampvuur", "Basalt"], ["Kampvuur", "Obsidiaan"], ["Kampvuur", "Mica"], 
+      ["Kampvuur", "Veldspaat"], ["Kampvuur", "Tufsteen"], ["Kampvuur", "Kleisteen"], ["Kampvuur", "Leisteen"], 
+      ["Kampvuur", "Schalie"], ["Kampvuur", "Fylliet"], ["Kampvuur", "Gneis"], ["Kampvuur", "Zandsteen"], 
+      ["Kampvuur", "Kwartsiet"], ["Kampvuur", "Kalksteen"], ["Kampvuur", "Marmer"], ["Kampvuur", "Gipssteen"]
+    ],
+    hint: `Een kampvuur is heter als je er een stenen huisje van maakt..`,
+    tijd: 31_000,
+    output: [
+      { naam: "Oven", icoon: "icons/Oven.png", map: "Uitvindingen", 
+        quote: `
+        <br><br>- `
       }
     ],
     uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
@@ -14698,13 +14729,27 @@ const combinaties = [
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
         <br><br>Eerst nodig: honden.` } }
   },
+  {
+    input: ["Vlot", "Katoen"],
+    hint: `Zou je met katoen niet meer wind kunnen vangen?`,
+    tijd: 5_300,
+    output: [
+      { naam: "Zeilboot", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
 //------------ THRESHOLD 13: SCHRIFT 5000 --------------//
   {
-    input: ["Mens", ""],
-    hint: ``,
+    input: ["Mens", "Klei"],
+    hint: `De mens zou de mens niet zijn als het ging communiceren via klei.`,
     tijd: 5_000,
     output: [
-      { naam: "", icoon: "icons/.png", map: "", 
+      { naam: "Schrift", icoon: "icons/Schrift.png", map: "Uitvindingen", 
         quote: `
         <br><br>- `
       }
@@ -14724,6 +14769,22 @@ const combinaties = [
         </span>`,
       }
     }
+  },
+  {
+    input: [
+      ["Bruinkool", "IJzer"], ["Steenkool", "IJzer"], ["Oven", "IJzer"]
+    ],
+    hint: `Hm.. hoe smeed je ijzer het heetst?`,
+    tijd: 3_200,
+    output: [
+      { naam: "Staal", icoon: "icons/Staal.png", map: "Uitvindingen", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
     input: ["Mens", "Karpers"],
@@ -14775,13 +14836,24 @@ const combinaties = [
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
+  {
+    input: ["Staal", "Magnetisme"],
+    hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
+    tijd: 2_200,
+    output: [
+      { naam: "Kompas", icoon: "icons/Kompas.png", map: "Uitvindingen", 
+        quote: `
+        <br><br>- `
+      }
+    ]
+  },
 //------------ THRESHOLD 14: OVERZEESE IMPERIA 1000 --------------//
   {
-    input: ["Mens", ""],
-    hint: ``,
+    input: ["Kompas", "Zeilboot"],
+    hint: `Wie had gedacht om het kompas op zee te gebruiken!`,
     tijd: 1_000,
     output: [
-      { naam: "", icoon: "icons/.png", map: "", 
+      { naam: "Oceaanvaartuig", icoon: "icons/Oceaanvaartuig.png", map: "Uitvindingen", 
         quote: `
         <br><br>- `
       }
@@ -14812,9 +14884,9 @@ const combinaties = [
         <br><br>- William Beebe`
       }
     ],
-    uitleg: { thresholdElement: { naam: "", titel: "Probeer opnieuw na ...",
-        tekst: ` 
-        <br><br>Eerst nodig: .` } }
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
+        tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
+        <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
   }
 ];
 
