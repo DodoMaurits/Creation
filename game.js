@@ -14664,7 +14664,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/Landbouw.jpg",
-        titel: "Landbowu 12.000 BP",
+        titel: "Landbouw 12.000 BP",
         tekst: 
         `<span>
         </span>`,
