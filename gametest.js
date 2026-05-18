@@ -14223,7 +14223,7 @@ const combinaties = [
     hint: `Een kampvuur is heter als je er een stenen huisje van maakt..`,
     tijd: 31000,
     output: [
-      { naam: "Oven", icoon: "icons/Oven.png", map: "Uitvindingen", 
+      { naam: "Oven", icoon: "icons/Oven.png", map: "Vuur", 
         quote: `Control of fire reached a new level with the enclosed oven, where heat itself became a tool
         <br><br>- Lewis Mumford`
       }
