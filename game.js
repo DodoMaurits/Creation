@@ -6462,7 +6462,7 @@ const combinaties = [
     ],
     hint: `Sommige kevers ontpopten zich dankzij een overschot aan bladluizen.`,
     output: [
-      { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png", map: "Klein Landleven", 
+      { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png", map: "Klein landleven", 
         quote: `Ladybirds are universally loved insects, often seen as symbols of good fortune
         <br><br>- David Goulson`
       }
