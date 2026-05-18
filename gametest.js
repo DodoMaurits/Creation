@@ -14402,8 +14402,8 @@ const combinaties = [
     tijd: 2200,
     output: [
       { naam: "Kompas", icoon: "icons/Kompas.png", map: "Uitvindingen", 
-        quote: `
-        <br><br>- `
+        quote: `Without a compass, the sea becomes a place without memory or direction
+        <br><br>- Francis Drake`
       }
     ]
   },
@@ -14414,8 +14414,8 @@ const combinaties = [
     tijd: 1000,
     output: [
       { naam: "Oceaanvaartuig", icoon: "icons/Oceaanvaartuig.png", map: "Uitvindingen", 
-        quote: `Without a compass, the sea becomes a place without memory or direction
-        <br><br>- Francis Drake`
+        quote: `The ocean was not a barrier but a space of connection.
+        <br><br>- Fernand Braudel`
       }
     ],
     uitleg: {
