@@ -14130,6 +14130,7 @@ const combinaties = [
   {
     input: ["Druiven", "Gist"],
     hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
+    tijd: 8_000,
     output: [
       { naam: "Wijn", icoon: "icons/Wijn.png", map: "Genotwaren", 
         quote: `When there is plenty of wine, sorrow and worry take wing
@@ -14178,6 +14179,7 @@ const combinaties = [
   {
     input: ["Mens", "Karpers"],
     hint: `Sommige karpers voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 1_700,
     output: [
       { naam: "Goudvissen", icoon: "icons/Goudvissen.png", map: "Vissen", 
         quote: `Goldfish possess a surprising capacity for memory and recognition
@@ -14188,6 +14190,7 @@ const combinaties = [
   {
     input: ["Mens", "Krokussen"],
     hint: `Sommige krokussen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 3_600,
     output: [
       { naam: "Saffraan", icoon: "icons/Saffraan.png", map: "Smaakmakers", 
         quote: `Saffron strengthens the heart and uplifts the spirit, but must be used with care due to its potency
@@ -14198,15 +14201,11 @@ const combinaties = [
   {
     input: ["Mens", "Mandarijnen"],
     hint: `Wat mensen wel niet kunnen verzinnen.. van een simpele mandarijn.`,
+    tijd: 4_000,
     output: [
       { naam: "Sinaasappels", icoon: "icons/Sinaasappels.png", map: "Fruit", 
         quote: `To taste the orange is to hold sunlight in the hand
         <br><br>- John Keats`
-      },
-      { naam: "Grapefruit", icoon: "icons/Grapefruit.png", map: "Fruit", 
-        quote: `The grapefruit is a relatively recent citrus hybrid, likely originating in the Caribbean in the 
-        18th century
-        <br><br>- David Karp`
       },
       { naam: "Citroenen", icoon: "icons/Citroenen.png", map: "Fruit", 
         quote: `The scent of lemon is clean, sharp, and instantly awakening to the senses
@@ -14221,6 +14220,7 @@ const combinaties = [
   {
     input: ["Mens", "Vinken"],
     hint: `Sommige vinken voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 400,
     output: [
       { naam: "Kanaries", icoon: "icons/Kanaries.png", map: "Vogels", 
         quote: `Selective breeding has produced canaries with remarkable variation in color and song
@@ -14231,6 +14231,7 @@ const combinaties = [
   {
     input: ["Mens", "Wolven"],
     hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 23_000,
     output: [
       { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
         quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
@@ -14241,6 +14242,7 @@ const combinaties = [
   {
     input: ["Mens", "Zwijnen"],
     hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 9_000,
     output: [
       { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
         quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
@@ -14251,6 +14253,7 @@ const combinaties = [
   {
     input: ["Mens", "Runderen"],
     hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 8_500,
     output: [
       { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
         quote: `I am as content as a cow in a meadow
