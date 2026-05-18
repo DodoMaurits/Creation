@@ -14125,7 +14125,106 @@ const combinaties = [
         quote: `Man must be regarded as an end in himself
         <br><br>- Immanuel Kant`
       }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Mens", 
+        tekst: "Je moet eerst nog wat meer halen...",
+      },
+      normal: {
+        achtergrond: "afb/Mens.jpg",
+        titel: "MENS 2 MA",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
+  },
+  {
+    input: [
+      ["Beren", "IJs"], ["Beren", "Poolgebied"]
+    ], 
+    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    tijd: 500_000,
+    output: [
+      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
+        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
+        <br><br>- Andrew Derocher`
+      }
     ]
+  },
+  {
+    input: ["Mens", "Vuur"],
+    hint: `Wanneer de mens meester is over het vuur, is hij niet meer te temmen.`,
+    tijd: 1_000_000,
+    output: [
+      { naam: "Kampvuur", icoon: "icons/Kampvuur.png", map: "Vuur", 
+        quote: `Things are born from transformation and return again through transformation, like fire turning wood into
+        ash
+        <br><br>- Zhuang Zi`
+      }
+    ]
+  },
+//------------ THRESHOLD 11: LAATSTE IJSTIJD 100.000 --------------//
+  {
+    input: ["Mens", "Katoen"],
+    hint: `Wat katoen kan doen.`,
+    tijd: 100_000,
+    output: [
+      { naam: "Kleding", icoon: "icons/Kleding.png", map: "Uitvindingen", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Laatste IJstijd", 
+        tekst: "Je moet eerst nog wat meer halen...",
+      },
+      normal: {
+        achtergrond: "afb/IJstijd.jpg",
+        titel: "LAATSTE IJSTIJD 100.000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
+  },
+  {
+    input: ["Mens", "Wolven"],
+    hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 23_000,
+    output: [
+      { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
+        quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
+        <br><br>- Raymond Coppinger`
+      }
+    ]
+  },
+//------------ THRESHOLD 12: LANDBOUW 12.000 --------------//
+  {
+    input: ["Mens", "Aarde"],
+    hint: `Kijk hoe mens hun stukje aarde gaat beheren.`,
+    tijd: 12_000,
+    output: [
+      { naam: "Akker", icoon: "icons/Akker.png", map: "Landschap", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Landbouw", 
+        tekst: "Je moet eerst nog wat meer halen...",
+      },
+      normal: {
+        achtergrond: "afb/Landbouw.jpg",
+        titel: "Landbowu 12.000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
   },
   {
     input: ["Druiven", "Gist"],
@@ -14152,29 +14251,51 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Beren", "IJs"], ["Beren", "Poolgebied"]
-    ], 
-    hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
-    tijd: 500_000,
+    input: ["Mens", "Zwijnen"],
+    hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 9_000,
     output: [
-      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
-        quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
-        <br><br>- Andrew Derocher`
+      { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
+        quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
+        <br><br>- Jeffrey Masson`
       }
     ]
   },
   {
-    input: ["Mens", "Vuur"],
-    hint: `Wanneer de mens meester is over het vuur, is hij niet meer te temmen.`,
-    tijd: 1_000_000,
+    input: ["Mens", "Runderen"],
+    hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
+    tijd: 8_500,
     output: [
-      { naam: "Kampvuur", icoon: "icons/Kampvuur.png", map: "Vuur", 
-        quote: `Things are born from transformation and return again through transformation, like fire turning wood into
-        ash
-        <br><br>- Zhuang Zi`
+      { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
+        quote: `I am as content as a cow in a meadow
+        <br><br>- Henry Thoreau`
       }
     ]
+  },
+//------------ THRESHOLD 13: SCHRIFT 5000 --------------//
+  {
+    input: ["Mens", ""],
+    hint: ``,
+    tijd: 5_000,
+    output: [
+      { naam: "", icoon: "icons/.png", map: "", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Schrift", 
+        tekst: "Je moet eerst nog wat meer halen...",
+      },
+      normal: {
+        achtergrond: "afb/Schrift.jpg",
+        titel: "Schrift 5000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
   },
   {
     input: ["Mens", "Karpers"],
@@ -14217,6 +14338,31 @@ const combinaties = [
       }
     ]
   },
+//------------ THRESHOLD 14: OVERZEESE IMPERIA 1000 --------------//
+  {
+    input: ["Mens", ""],
+    hint: ``,
+    tijd: 1_000,
+    output: [
+      { naam: "", icoon: "icons/.png", map: "", 
+        quote: `
+        <br><br>- `
+      }
+    ],
+    uitleg: {
+      threshold: {
+        titel: "Overzeese Imperia", 
+        tekst: "Je moet eerst nog wat meer halen...",
+      },
+      normal: {
+        achtergrond: "afb/Overzeese_imperia.jpg",
+        titel: "Overzeese Imperia 1000 BP",
+        tekst: 
+        `<span>
+        </span>`,
+      }
+    }
+  },
   {
     input: ["Mens", "Vinken"],
     hint: `Sommige vinken voelen zich thuis bij de mens.. of andersom?`,
@@ -14225,39 +14371,6 @@ const combinaties = [
       { naam: "Kanaries", icoon: "icons/Kanaries.png", map: "Vogels", 
         quote: `Selective breeding has produced canaries with remarkable variation in color and song
         <br><br>- William Beebe`
-      }
-    ]
-  },
-  {
-    input: ["Mens", "Wolven"],
-    hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 23_000,
-    output: [
-      { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
-        quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
-        <br><br>- Raymond Coppinger`
-      }
-    ]
-  },
-  {
-    input: ["Mens", "Zwijnen"],
-    hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 9_000,
-    output: [
-      { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
-        quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
-        <br><br>- Jeffrey Masson`
-      }
-    ]
-  },
-  {
-    input: ["Mens", "Runderen"],
-    hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
-    tijd: 8_500,
-    output: [
-      { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
-        quote: `I am as content as a cow in a meadow
-        <br><br>- Henry Thoreau`
       }
     ]
   }
