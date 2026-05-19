@@ -9413,6 +9413,16 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerstraalvinnigen", "Lagune"],
+    tijd: 40_000_000,
+    output: [
+      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
+        <br><br>- David Attenborough`
+      }
+    ]
+  },
+  {
     input: [
       ["Oerstraalvinnigen", "Schelp"], ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"]
     ],
