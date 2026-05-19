@@ -12099,75 +12099,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerlamiden", "Wortels"],
-    hint: `Sommige lamiden concentreren zich op hun wortels.`,
-    tijd: 3_000_000,
-    output: [
-      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
-        quote: `The potato is a most valuable root for sustenance
-        <br><br>- James Boswell`
-      },
-      { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
-        quote: `The sweet potato is part of the ancient food heritage of the Andes
-        <br><br>- Carlos Ochoa`
-      }
-    ]
-  },
-  {
-    input: ["Oerlamiden", "Blad"],
-    tijd: 20_000_000,
-    output: [
-      { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
-        quote: `Fresh mint transforms the simplest dish into something alive
-        <br><br>- Julia Child`
-      },
-      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
-        quote: `Sage is singularly good for the head and brain
-        <br><br>- Nicholas Culpeper`
-      },
-      { naam: "Basilicum", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
-        quote: `Without basil, Italian cooking loses its soul
-        <br><br>- Marcella Hazen`
-      },
-      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
-        quote: `Oregano is the taste of the Mediterranean itself
-        <br><br>- Elizabeth David`
-      }
-    ]
-  },
-  {
-    input: ["Oerlamiden", "Zaadjes"],
-    tijd: 15_000_000,
-    output: [
-      { naam: "Sesam", icoon: "icons/Sesam.png", map: "Zaden", 
-        quote: `Sesam is one of the oldest oilseed crops known to cultivation
-        <br><br>- George Watt`
-      },
-      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
-        quote: `Coffee has shaped societies, economies, and daily habits across the globe
-        <br><br>- Mark Pendergrast`
-      }
-    ]
-  },
-  {
-    input: ["Oerlamiden", "Hout"],
-    tijd: 10_000_000,
-    output: [
-      { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
-        quote: `Teak thrives in tropical forests where seasonal rains shape its growth
-        <br><br>- Hugh Cleghorn`
-      },
-      { naam: "Olijven", icoon: "icons/Olijven.png", map: "Fruit", 
-        quote: `The olive is a gift of the gods to man
-        <br><br>- Homeros`
-      },
-      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
-        quote: `The ash stands by the water and shapes the land around it
-        <br><br>- William Morris`
-      }
-    ]
-  },
-  {
     input: ["Oerlamiden", "Bos"],
     hint: `Sommige lamiden voelen zich thuis in de bossen.`,
     tijd: 40_000_000,
@@ -12195,13 +12126,13 @@ const combinaties = [
         quote: `The herb which the inhabitants call uppowoc is of great estimation among them
         <br><br>- Thomas Hariot`
       },
-      { naam: "Basilicum", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
-        quote: `Without basil, Italian cooking loses its soul
-        <br><br>- Marcella Hazen`
-      },
       { naam: "Aubergines", icoon: "icons/Aubergines.png", map: "Groenten", 
         quote: `The aubergine is a vegetable which absorbs flavors like a sponge
         <br><br>- Elizabeth David`
+      },
+      { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
+        quote: `The sweet potato is part of the ancient food heritage of the Andes
+        <br><br>- Carlos Ochoa`
       }
     ]
   },
@@ -12272,7 +12203,7 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Weide"],
-    hint: `Sommige lamiden voelen zich thuis op de grasweides.`,
+    hint: `Sommige lamiden voelen zich thuis in grasweides.`,
     tijd: 20_000_000,
     output: [
       { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
@@ -12317,37 +12248,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oerlamiden", "Laurierbomen"], ["Oerlamiden", "Buxus"], ["Oerlamiden", "Vijgen"], ["Oerlamiden", "Acacia"],
-      ["Oerlamiden", "Heide"], ["Oerlamiden", "Olijven"]
-    ],
-    tijd: 40_000_000,
-    output: [
-      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
-        quote: `Jasmine opens in the night like a secret
-        <br><br>- Adonis`
-      }
-    ]
-  },
-  {
-    input: ["Oercampanuliden", "Water"],
-    tijd: 2_000_000,
-    output: [
-      { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
-        quote: `Celery gives depth to simple broths and stews
-        <br><br>- Elizabeth David`
-      },
-      { naam: "Sla", icoon: "icons/Sla.png", map: "Groenten", 
-        quote: `A salad without lettuce is like a day without sunshine
-        <br><br>- Jean Brillat-Savarin`
-      },
-      { naam: "Andijvie", icoon: "icons/Andijvie.png", map: "Groenten", 
-        quote: `The faint bitterness of endive sharpens the appetite
-        <br><br>- M.F.K. Fisher`
-      }
-    ]
-  },
-  {
     input: ["Oercampanuliden", "Berg"],
     hint: `Sommige campanuliden voelen zich thuis in de bergen.`,
     tijd: 2_000_000,
@@ -12383,7 +12283,6 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Wind"],
-    hint: `Sommige campanuliden verspreiden hun zaadjes via de wind.`,
     tijd: 30_000_000,
     output: [
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
@@ -12407,12 +12306,15 @@ const combinaties = [
   },
   {
     input: ["Oercampanuliden", "Kust"],
-    hint: `Sommige campanuliden voelen zich thuis aan de kust.`,
     tijd: 2_000_000,
     output: [
       { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
         quote: `Fennel is of great use for improving sight
         <br><br>- Plinius de Oudere`
+      },
+      { naam: "Artisjokken", icoon: "icons/Artisjokken.png", map: "Groenten", 
+        quote: `The artichoke is valued for its heart, hidden beneath protective bracts
+        <br><br>- Alan Davidson`
       }
     ]
   },
@@ -12428,35 +12330,7 @@ const combinaties = [
       { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
         quote: `Carrots store their energy in the root, which becomes sweeter over time
         <br><br>- Harold McGee`
-      }
-    ]
-  },
-  {
-    input: ["Oercampanuliden", "Gif"],
-    hint: `Sommige campanuliden kiezen voor de strategie van gif.`,
-    tijd: 25_000_000,
-    output: [
-      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
-        quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
-        <br><br>- John Ruskin`
-      }
-    ]
-  },
-  {
-    input: ["Oercampanuliden", "Wortels"],
-    tijd: 20_000_000,
-    output: [
-      { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
-        quote: `Carrots store their energy in the root, which becomes sweeter over time
-        <br><br>- Harold McGee`
-      }
-    ]
-  },
-  {
-    input: ["Oercampanuliden", "Blad"],
-    hint: `Sommige campanuliden specialiseren zich in hun bladeren.`,
-    tijd: 2_000_000,
-    output: [
+      },
       { naam: "Sla", icoon: "icons/Sla.png", map: "Groenten", 
         quote: `A salad without lettuce is like a day without sunshine
         <br><br>- Jean Brillat-Savarin`
@@ -12464,7 +12338,14 @@ const combinaties = [
       { naam: "Andijvie", icoon: "icons/Andijvie.png", map: "Groenten", 
         quote: `The faint bitterness of endive sharpens the appetite
         <br><br>- M.F.K. Fisher`
-      },
+      }
+    ]
+  },
+  {
+    input: ["Oercampanuliden", "Klif"],
+    hint: `Sommige campanuliden voelen zich thuis bij rotsige kliffen.`,
+    tijd: 2_000_000,
+    output: [
       { naam: "Artisjokken", icoon: "icons/Artisjokken.png", map: "Groenten", 
         quote: `The artichoke is valued for its heart, hidden beneath protective bracts
         <br><br>- Alan Davidson`
@@ -12476,24 +12357,13 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oercampanuliden", "Zaadjes"],
-    tijd: 2_000_000,
+    input: ["Oercampanuliden", "Gif"],
+    hint: `Sommige campanuliden kiezen voor de strategie van het gif.`,
+    tijd: 25_000_000,
     output: [
-      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
-        quote: `Fennel is of great use for improving sight
-        <br><br>- Plinius de Oudere`
-      },
-      { naam: "Koriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
-        quote: `Cilantro has a distinctive aroma that some people perceive as soapy
-        <br><br>- Harold McGee`
-      },
-      { naam: "Anijs", icoon: "icons/Anijs.png", map: "Smaakmakers", 
-        quote: `Anise helps ease the breath and clears the chest
-        <br><br>- Dioscorides`
-      },
-      { naam: "Komijn", icoon: "icons/Komijn.png", map: "Smaakmakers", 
-        quote: `Cumin is valued for its warming properties and strong flavor
-        <br><br>- Plinius de Oudere`
+      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
+        quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
+        <br><br>- John Ruskin`
       }
     ]
   },
