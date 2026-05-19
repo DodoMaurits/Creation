@@ -11919,10 +11919,8 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oerericales", "Glucose"], ["Oerericales", "Bos"]
-    ],
-    hint: `Sommige ericales leven in de bossen en richten zich op hun vruchten.`,
+    input: ["Oerericales", "Bos"],
+    hint: `Sommige ericales voelen zich thuis in de bossen.`,
     tijd: 5_000_000,
     output: [
       { naam: "Kaki", icoon: "icons/Kaki.png", map: "Fruit", 
@@ -11941,28 +11939,12 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oerericales", "Gif"], ["Oerericales", "Blad"]
-    ],
+    input: ["Oerericales", "Gif"], 
     hint: `Sommige ericales kiezen voor de strategie van het gif.`,
     output: [
       { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
         <br><br>- Okakura Kakuzo`
-      }
-    ]
-  },
-  {
-    input: ["Oerericales", "Hout"],
-    tijd: 5_000_000,
-    output: [
-      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
-        quote: `The argan tree gives us oil, shade, and life in a difficult land
-        <br><br>- Fatima Tihihit`
-      },
-      { naam: "Sheabomen", icoon: "icons/Sheabomen.png", map: "Bomen", 
-        quote: `Vitellaria paradoxa is a long-lived tree of the dry savanna, deeply adapted to fire and drought
-        <br><br>- Daniel Hall`
       }
     ]
   },
@@ -12010,29 +11992,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oerericales", "Wilgen"], ["Oerericales", "Populieren"], ["Oerericales", "Esdoorns"], ["Oerericales", "Eiken"],
-      ["Oerericales", "Essen"]
-    ],
-    tijd: 5_000_000,
-    output: [
-      { naam: "Kiwi", icoon: "icons/Kiwi.png", map: "Fruit", 
-        quote: `The vine of the kiwifruit requires patience but rewards abundance
-        <br><br>- Barbara Platts`
-      }
-    ]
-  },
-  {
-    input: ["Oerlamiden", "Water"],
-    tijd: 5_000_000,
-    output: [
-      { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
-        quote: `A ripe tomato is one of the simplest and greatest pleasures of eating
-        <br><br>- Alice Waters`
-      }
-    ]
-  },
-  {
     input: ["Oerlamiden", "Berg"],
     hint: `Sommige lamiden voelen zich thuis in de bergen.`,
     tijd: 3_000_000,
@@ -12041,7 +12000,7 @@ const combinaties = [
         quote: `Oregano is the taste of the Mediterranean itself
         <br><br>- Elizabeth David`
       },
-      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
+      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
         quote: `The potato is a most valuable root for sustenance
         <br><br>- James Boswell`
       },
@@ -12060,20 +12019,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerlamiden", "Wind"],
-    tijd: 40_000_000,
-    output: [
-      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
-        quote: `The ash stands by the water and shapes the land around it
-        <br><br>- William Morris`
-      }
-    ]
-  },
-  {
     input: [
       ["Oerlamiden", "Ven"], ["Oerlamiden", "Moeras"]
     ],
-    hint: `Sommige lamiden voelen zich thuis bij stilstaand water.`,
+    hint: `Sommige lamiden voelen zich thuis bij vennetjes en moerassen.`,
     tijd: 25_000_000,
     output: [
       { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
@@ -12087,9 +12036,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oerlamiden", "Kust"], ["Oerlamiden", "Zout"]
-    ],
+    input: ["Oerlamiden", "Kust"],
     hint: `Sommige lamiden voelen zich thuis aan de kust.`,
     tijd: 25_000_000,
     output: [
@@ -12120,34 +12067,11 @@ const combinaties = [
   },
   {
     input: ["Oerlamiden", "Kalk"],
-    hint: `Sommige lamiden houden van een kalkrijke grond.`,
     tijd: 20_000_000,
     output: [
       { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
         <br><br>- William Turner`
-      }
-    ]
-  },
-  {
-    input: ["Oerlamiden", "Glucose"],
-    tijd: 3_000_000,
-    output: [
-      { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
-        quote: `The sweet potato is part of the ancient food heritage of the Andes
-        <br><br>- Carlos Ochoa`
-      },
-      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
-        quote: `The potato is a most valuable root for sustenance
-        <br><br>- James Boswell`
-      },
-      { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
-        quote: `A ripe tomato is one of the simplest and greatest pleasures of eating
-        <br><br>- Alice Waters`
-      },
-      { naam: "Paprika", icoon: "icons/Paprika.png", map: "Groenten", 
-        quote: `Peppers show how a wild plant becomes a domestic staple through selection for flavor and form
-        <br><br>- Michael Pollan`
       }
     ]
   },
@@ -12160,7 +12084,7 @@ const combinaties = [
         quote: `The herb which the inhabitants call uppowoc is of great estimation among them
         <br><br>- Thomas Hariot`
       },
-      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
+      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
         quote: `The potato is a most valuable root for sustenance
         <br><br>- James Boswell`
       },
@@ -12179,7 +12103,7 @@ const combinaties = [
     hint: `Sommige lamiden concentreren zich op hun wortels.`,
     tijd: 3_000_000,
     output: [
-      { naam: "Aardappels", icoon: "icons/Aardappels.png", map: "Groenten", 
+      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
         quote: `The potato is a most valuable root for sustenance
         <br><br>- James Boswell`
       },
