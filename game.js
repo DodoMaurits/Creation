@@ -7887,7 +7887,7 @@ const combinaties = [
     input: [
       ["Bloem", "Ven"], ["Bloem", "Moeras"], ["Bloem", "Kevers"]
     ],
-    hint: `De oudste bloem gedijt goed in het moeras.`,
+    hint: `Ik voorzie een bloem in het moeras...`,
     tijd: 125_000_000,
     output: [
       { naam: "Waterlelies", icoon: "icons/Waterlelies.png", map: "Bloemen", 
@@ -7898,10 +7898,8 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Bloem", "Zaadjes"], ["Bloem", "Tropisch regenwoud"]
-    ],
-    hint: `De oudste bloem maakte een belangrijke ontwikkeling door in de tropen.`,
+    input: ["Bloem", "Tropisch regenwoud"],
+    hint: `Ik voorzie een bloem in de tropen...`,
     tijd: 100_000_000,
     output: [
       { naam: "Steranijs", icoon: "icons/Steranijs.png", map: "Smaakmakers", 
@@ -7933,7 +7931,7 @@ const combinaties = [
   },
   {
     input: ["Bijen", "Bloem"],
-    hint: `Sommige bloemen en insecten zijn goed in lekkernijen.`,
+    hint: `De bloemmetjes en de bijtjes...`,
     vers: `Uit haar buik komt een drank van verschillende kleuren, <br>daarin is genezing voor de mens, aldus zit daarin
     zeker een teken <br>voor de mensen die nadenken
     <br><br>De Bij (16:69)`,
@@ -7946,61 +7944,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oermagnoliden", "Wind"],
-    hint: `Sommige magnoliden bestuiven met de wind.`,
-    tijd: 95_000_000,
-    output: [
-      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
-        quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
-        its crown
-        <br><br>- Donald Peattie`
-      }
-    ]
-  },
-  {
-    input: ["Oermagnoliden", "Evolutie"],
-    hint: `De kernlijn van de magnoliden is die van de magnolia.`,
-    tijd: 95_000_000,
-    output: [
-      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
-        quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
-        simple, elegant form
-        <br><br>- Armen Takhtajan`
-      }
-    ]
-  },
-  {
-    input: ["Oermagnoliden", "Blad"],
-    hint: `Sommige magnoliden gaan voorts op hun geurige bladeren.`,
-    tijd: 70_000_000,
-    output: [
-      { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
-        quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
-        <br><br>- Plinius de Oudere`
-      }
-    ]
-  },
-  {
-    input: ["Oermagnoliden", "Zaadjes"],
-    hint: `Sommige magnoliden gaan voorts op hun geurige zaadjes.`,
-    tijd: 70_000_000,
-    output: [
-      { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
-        quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
-        savory dishes
-        <br><br>- Harold McGee`
-      },
-      { naam: "Peper", icoon: "icons/Peper.png", map: "Smaakmakers", 
-        quote: `Black pepper has been one of the most widely traded spices in history
-        <br><br>- Andrew Dalby`
-      }
-    ]
-  },
-  {
     input: [
-      ["Oermagnoliden", "Kevers"], ["Oermagnoliden", "Bloem"]
+      ["Oermagnoliden", "Rivier"], ["Oermagnoliden", "Kevers"]
     ],
-    hint: `Sommige magnoliden komen verder met de kevers.`,
+    hint: `Sommige magnoliden voelen zich thuis bij rivieren.`,
     tijd: 95_000_000,
     output: [
       { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
@@ -8012,30 +7959,6 @@ const combinaties = [
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
         its crown
         <br><br>- Donald Peattie`
-      }
-    ]
-  },
-  {
-    input: ["Oermagnoliden", "Hout"],
-    tijd: 70_000_000,
-    output: [
-      { naam: "Avocado", icoon: "icons/Avocado.png", map: "Fruit", 
-        quote: `The avocado is a large berry with a single seed and a soft, buttery flesh rich in oil
-        <br><br>- Harold McGee`
-      },
-      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
-        quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
-        its crown
-        <br><br>- Donald Peattie`
-      },
-      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
-        quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
-        simple, elegant form
-        <br><br>- Armen Takhtajan`
-      },
-      { naam: "Kaneel", icoon: "icons/Kaneel.png", map: "Smaakmakers", 
-        quote: `Cinnamon is obtained from the inner bark of a tropical evergreen tree, which curls into quills as it dries
-        <br><br>- Harold McGee`
       }
     ]
   },
@@ -8044,19 +7967,19 @@ const combinaties = [
     hint: `Sommige magnoliden voelen zich van nature thuis in de bossen.`,
     tijd: 70_000_000,
     output: [
-      { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
-        quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
-        <br><br>- Plinius de Oudere`
+      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
+        quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
+        simple, elegant form
+        <br><br>- Armen Takhtajan`
       },
       { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
         its crown
         <br><br>- Donald Peattie`
       },
-      { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
-        quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
-        savory dishes
-        <br><br>- Harold McGee`
+      { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
+        quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
+        <br><br>- Plinius de Oudere`
       }
     ]
   },
@@ -8073,9 +7996,17 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oereudicoten", "Water"], ["Oereudicoten", "Woestijn"]
-    ],
+    input: ["Oereudicoten", "Berg"],
+    tijd: 95_000_000,
+    output: [
+      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+        quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
+        <br><br>- Michael Dirr`
+      }
+    ]
+  },
+  {
+    input: ["Oereudicoten", "Woestijn"],
     hint: `Sommige eudicoten voelen zich van nature thuis in de woestijn.`,
     tijd: 95_000_000,
     output: [
@@ -8088,7 +8019,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oereudicoten", "Meer"], ["Oereudicoten", "Ven"], ["Oereudicoten", "Moeras"], ["Oereudicoten", "Kevers"]
+      ["Oereudicoten", "Meer"], ["Oereudicoten", "Ven"], ["Oereudicoten", "Moeras"]
     ],
     hint: `Sommige eudicoten voelen zich van nature thuis in stilstaand water.`,
     tijd: 100_000_000,
@@ -8100,24 +8031,26 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oereudicoten", "Wind"], ["Oereudicoten", "Hout"], ["Oereudicoten", "Rivier"], ["Oereudicoten", "Overstroming"]
-    ],
-    hint: `Sommige eudicoten van de rivieren bestuiven met de wind.`,
-    tijd: 115_000_000,
+    input: ["Oereudicoten", "Rivier"],
+    hint: `Sommige eudicoten voelen zich thuis bij rivieren.`,
+    tijd: 90_000_000,
     output: [
       { naam: "Platanen", icoon: "icons/Platanen.png", map: "Bomen", 
         quote: `The plane tree is notable for its broad leaves and its bark, which flakes away in patches to reveal 
         lighter layers beneath
         <br><br>- John Loudon`
+      },
+      { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
+        quote: `The grapevine is a woody climber that produces berries arranged in bunches
+        <br><br>- Julia Morton`
       }
     ]
   },
   {
     input: [
-      ["Oereudicoten", "Kalk"], ["Oereudicoten", "Gif"], ["Oereudicoten", "Blad"]
+      ["Oereudicoten", "Kalk"], ["Oereudicoten", "Gif"]
     ],
-    hint: `Sommige eudicoten kiezen voor kalk.`,
+    hint: `Sommige eudicoten kiezen voor de strategie van het gif en kalkrijke ondergronden.`,
     tijd: 80_000_000,
     output: [
       { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
@@ -8152,20 +8085,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oereudicoten", "Glucose"], ["Laurierbomen", "Oereudicoten"], ["Acacia", "Oereudicoten"], ["Wilgen", "Oereudicoten"],
-      ["Populieren", "Oereudicoten"], ["Eiken", "Oereudicoten"], ["Essen", "Oereudicoten"], ["Olijven", "Oereudicoten"]
-    ],
-    hint: `Sommige eudicoten bouwen voort op het vermeerderen van hun glucose.`,
-    tijd: 90_000_000,
-    output: [
-      { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
-        quote: `The grapevine is a woody climber that produces berries arranged in bunches
-        <br><br>- Julia Morton`
-      }
-    ]
-  },
-  {
     input: ["Oereudicoten", "Kevers"],
     tijd: 95_000_000,
     output: [
@@ -8180,8 +8099,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oereudicoten", "Vlinders"],
-    hint: `Sommige eudicoten kiezen voor de vlinders.`,
+    input: [
+      ["Oereudicoten", "Vlinders"], ["Oereudicoten", "Weide"]
+    ],
+    hint: `Sommige eudicoten voelen zich thuis in de grasweides.`,
     tijd: 95_000_000,
     output: [
       { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
@@ -8216,7 +8137,6 @@ const combinaties = [
   },
   {
     input: ["Oereudicoten", "Bijen"],
-    hint: `Sommige eudicoten komen verder met de bijtjes.`,
     tijd: 95_000_000,
     output: [
       { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
@@ -8230,19 +8150,6 @@ const combinaties = [
       { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
         quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
         <br><br>- Michael Dirr`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Magnolia", "Oermagnoliden"], ["Laurierbomen", "Oermagnoliden"], ["Acacia", "Oermagnoliden"], 
-      ["Vijgen", "Oermagnoliden"], ["Eiken", "Oermagnoliden"], ["Teak", "Oermagnoliden"]
-    ],
-    tijd: 70_000_000,
-    output: [
-      { naam: "Peper", icoon: "icons/Peper.png", map: "Smaakmakers", 
-        quote: `Black pepper has been one of the most widely traded spices in history
-        <br><br>- Andrew Dalby`
       }
     ]
   },
@@ -8282,7 +8189,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Duinen", "Oereudicoten"], ["Weide", "Oereudicoten"], ["Steppe", "Oereudicoten"], ["Prairie", "Oereudicoten"]
+      ["Steppe", "Oereudicoten"], ["Prairie", "Oereudicoten"]
     ],
     tijd: 95_000_000,
     output: [
@@ -10069,10 +9976,7 @@ const combinaties = [
     }
   },
   {
-    input: [
-      ["Oermagnoliden", "Water"], ["Oermagnoliden", "Vliegen"]
-    ],
-    hint: `Sommige magnoliden bouwen voort op hun wateropslag.`,
+    input: ["Oermagnoliden", "Vliegen"],
     tijd: 30_000_000,
     output: [
       { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
@@ -10119,7 +10023,6 @@ const combinaties = [
   },
   {
     input: ["Oermagnoliden", "Bijen"],
-    hint: `Sommige magnoliden komen verder met de bijtjes.`,
     tijd: 10_000_000,
     output: [
       { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
@@ -10173,31 +10076,6 @@ const combinaties = [
     }
   },
   {
-    input: ["Oermonocotylen", "Water"],
-    hint: `Sommige monocotylen bouwen voort op hun wateropslag.`,
-    tijd: 10_000_000,
-    output: [
-      { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
-        quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
-        for millions of people
-        <br><br>- Harold Clifford`
-      },
-      { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
-        quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
-        single towering flower stalk
-        <br><br>- Armen Takhtajan`
-      },
-      { naam: "Aloë Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
-        quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
-        <br><br>- James Duke`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: [
       ["Oermonocotylen", "Meer"], ["Oermonocotylen", "Ven"]
     ],
@@ -10239,9 +10117,7 @@ const combinaties = [
     }
   },
   {
-    input: [
-      ["Oermonocotylen", "Woestijn"], ["Oermonocotylen", "Blad"]
-    ],
+    input: ["Oermonocotylen", "Woestijn"],
     hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
     tijd: 40_000_000,
     output: [
@@ -10293,29 +10169,6 @@ const combinaties = [
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
         on which we write
         <br><br>- Plinius de Oudere`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
-    input: ["Oermonocotylen", "Glucose"],
-    hint: `Sommige monocotylen varen volledig op hun het vermeerderen van hun glucose.`,
-    tijd: 5_000_000,
-    output: [
-      { naam: "Bananen", icoon: "icons/Bananen.png", map: "Fruit", 
-        quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
-        <br><br>- Paul Allen`
-      },
-      { naam: "Ananas", icoon: "icons/Ananas.png", map: "Fruit", 
-        quote: `The pineapple is a tropical fruit composed of many fused berries forming a single, fleshy structure
-        <br><br>- Harold McGee`
-      },
-      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Fruit", 
-        quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
-        <br><br>- Ibn al-Awwam`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -10383,28 +10236,7 @@ const combinaties = [
     }
   },
   {
-    input: ["Oermonocotylen", "Zaadjes"],
-    tijd: 10_000_000,
-    output: [
-      { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
-        quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
-        for millions of people
-        <br><br>- Harold Clifford`
-      },
-      { naam: "Kardemom", icoon: "icons/Kardemom.png", map: "Smaakmakers", 
-        quote: `Cardamom is prized in cooking for the fragrance of its seeds, which are released only 
-        when the pods are broken
-        <br><br>- Maud Grieve`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: ["Oermonocotylen", "Kevers"],
-    hint: `Sommige monocotylen gaan voorts samen met de kevers.`,
     tijd: 35_000_000,
     output: [
       { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
@@ -10445,7 +10277,6 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Vlinders"],
-    hint: `Sommige monocotylen kiezen voor de vlinders.`,
     tijd: 40_000_000,
     output: [
       { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
@@ -10517,18 +10348,13 @@ const combinaties = [
         quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
         <br><br>- Paul Allen`
       },
+      { naam: "Ananas", icoon: "icons/Ananas.png", map: "Fruit", 
+        quote: `The pineapple is a tropical fruit composed of many fused berries forming a single, fleshy structure
+        <br><br>- Harold McGee`
+      },
       { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
-      },
-      { naam: "Gember", icoon: "icons/Gember.png", map: "Smaakmakers", 
-        quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
-        <br><br>- James Duke`
-      },
-      { naam: "Kurkuma", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
-        quote: `The rhizome of turmeric contains a deep yellow pigment and is widely used in cooking and 
-        traditional practices
-        <br><br>- Maud Grieve`
       },
       { naam: "Kardemom", icoon: "icons/Kardemom.png", map: "Smaakmakers", 
         quote: `Cardamom is prized in cooking for the fragrance of its seeds, which are released only 
@@ -10543,7 +10369,6 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Bijen"],
-    hint: `Sommige monocotylen gedijen goed bij de bijen.`,
     tijd: 5_000_000,
     output: [
       { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Bloemen", 
@@ -10886,29 +10711,6 @@ const combinaties = [
     }
   },
   {
-    input: ["Oerfabiden", "Water"],
-    hint: `Sommige fabiden bouwen voort op hun wateropslag.`,
-    tijd: 30_000_000,
-    output: [
-      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
-        quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
-        <br><br>- Olivier de Serres`
-      },
-      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
-        quote: `When one has tasted watermelon, he knows what the angels eat
-        <br><br>- Mark Twain`
-      },
-      { naam: "Komkommers", icoon: "icons/Komkommers.png", map: "Groenten", 
-        quote: `The cucumber is of a cooling nature and is much desired in the heat
-        <br><br>- Plinius de Oudere`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: ["Oerfabiden", "Berg"],
     hint: `Sommige fabiden voelen zich thuis in de bergen.`,
     tijd: 20_000_000,
@@ -11001,33 +10803,8 @@ const combinaties = [
     }
   },
   {
-    input: ["Oerfabiden", "Wind"],
-    tijd: 30_000_000,
-    output: [
-      { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
-        quote: `The elm trees stand like guardians of the quiet lane
-        <br><br>- John Clare`
-      },
-      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
-        quote: `She wept beneath the willow boughs
-        <br><br>- Christina Rossetti`
-      },
-      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
-        quote: `Poplars stand along the riverbank, whispering in the wind
-        <br><br>- Virgilius`
-      },
-      { naam: "Hennep", icoon: "icons/Hennep.png", map: "Materialen", 
-        quote: `From hemp are made ropes of great strength; its seed is sometimes used as food or medicine
-        <br><br>- Plinius de Oudere`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: ["Oerfabiden", "Rivier"],
+    hint: `Sommige fabiden voelen zich thuis bij de rivieren.`,
     tijd: 30_000_000,
     output: [
       { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
@@ -11037,14 +10814,14 @@ const combinaties = [
       { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
         quote: `Poplars stand along the riverbank, whispering in the wind
         <br><br>- Virgilius`
+      },
+      { naam: "Komkommers", icoon: "icons/Komkommers.png", map: "Groenten", 
+        quote: `The cucumber is of a cooling nature and is much desired in the heat
+        <br><br>- Plinius de Oudere`
       },
       { naam: "Soja", icoon: "icons/Soja.png", map: "Zaden", 
         quote: `Soybeans enrich the soil through nitrogen fixation and provide a high-protein crop
         <br><br>- O.W. Willcox`
-      },
-      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
-        quote: `Hop adds bitterness to the drink and preserves it from spoiling
-        <br><br>- Hildegard von Bingen`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -11078,6 +10855,25 @@ const combinaties = [
     }
   },
   {
+    input: ["Oerfabiden", "Klif"],
+    hint: `Sommige fabiden voelen zich thuis op droge, rotsige kliffen.`,
+    tijd: 30_000_000,
+    output: [
+      { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
+        quote: `The fig tree yields its fruit freely, a gift of the warm earth
+        <br><br>- Ovidius`
+      },
+      { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png", map: "Zaden", 
+        quote: `Chickpeas are eaten both green and dried, and are thought to produce warmth in the body
+        <br><br>- Dioscorides`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
+    }
+  },
+  {
     input: ["Oerfabiden", "Overstroming"],
     tijd: 30_000_000,
     output: [
@@ -11093,7 +10889,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Nitraat"],
-    hint: `Sommige fabiden floreren door nitraat.`,
+    hint: `Sommige fabiden floreren dankzij stikstofrijke bodems vol nitraat.`,
     tijd: 60_000_000,
     output: [
       { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
@@ -11103,41 +10899,6 @@ const combinaties = [
       { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
         quote: `Hop adds bitterness to the drink and preserves it from spoiling
         <br><br>- Hildegard von Bingen`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
-    input: ["Oerfabiden", "Glucose"],
-    hint: `Sommige fabiden specialiseren zich in het vermeerderen van hun glucose.`,
-    tijd: 50_000_000,
-    output: [
-      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
-        quote: `When one has tasted watermelon, he knows what the angels eat
-        <br><br>- Mark Twain`
-      },
-      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
-        quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
-        <br><br>- Olivier de Serres`
-      },
-      { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
-        quote: `The fig tree yields its fruit freely, a gift of the warm earth
-        <br><br>- Ovidius`
-      },
-      { naam: "Aardbeien", icoon: "icons/Aardbeien.png", map: "Fruit", 
-        quote: `Wild strawberries are the sweetest reward of wandering in the fields
-        <br><br>- Henry Thoreau`
-      },
-      { naam: "Perziken", icoon: "icons/Perziken.png", map: "Fruit", 
-        quote: `The peach ripens in silence, gathering sweetness from the sun
-        <br><br>- Paul Valéry`
-      },
-      { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
-        quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
-        <br><br>- John Keats`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -11162,94 +10923,6 @@ const combinaties = [
     }
   },
   {
-    input: ["Oerfabiden", "Wortels"],
-    tijd: 10_000_000,
-    output: [
-      { naam: "Cassave", icoon: "icons/Cassave.png", map: "Groenten", 
-        quote: `Manioc is indispensable to the subsistence of many Amazonian peoples
-        <br><br>- Richard Spruce`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
-    input: ["Oerfabiden", "Zaadjes"],
-    hint: `Sommige fabiden gaan hun weg voorts door het gebruik van hun zaadjes.`,
-    tijd: 5_000_000,
-    output: [
-      { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png", map: "Zaden", 
-        quote: `Chickpeas are eaten both green and dried, and are thought to produce warmth in the body
-        <br><br>- Dioscorides`
-      },
-      { naam: "Linzen", icoon: "icons/Linzen.png", map: "Zaden", 
-        quote: `Lentils are of great use as food, though they produce a dulling effect on the mind
-        <br><br>- Plinius de Oudere`
-      },
-      { naam: "Erwten", icoon: "icons/Erwten.png", map: "Zaden", 
-        quote: `The pea is a crop that gives both pleasure and sustenance in the garden
-        <br><br>- William Cobbett`
-      },
-      { naam: "Sperziebonen", icoon: "icons/Sperziebonen.png", map: "Zaden", 
-        quote: `The beans are eaten while the pods are yet tender and green
-        <br><br>- John Gerard`
-      },
-      { naam: "Kidneybonen", icoon: "icons/Kidneybonen.png", map: "Zaden", 
-        quote: `The kidney bean is cultivated for its edible seeds, which are highly nutritious when properly cooked
-        <br><br>- John Lindley`
-      },
-      { naam: "Soja", icoon: "icons/Soja.png", map: "Zaden", 
-        quote: `Soybeans enrich the soil through nitrogen fixation and provide a high-protein crop
-        <br><br>- O.W. Willcox`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
-    input: ["Oerfabiden", "Vlinders"],
-    output: [
-      { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
-        quote: `The nettle grows among the ruins and the broken hedge
-        <br><br>- John Clare`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
-    input: ["Oerfabiden", "Hout"],
-    tijd: 30_000_000,
-    output: [
-      { naam: "Oerfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
-        quote: `Oak, beech, and other timber trees form the strength of our forests and ships
-        <br><br>- John Evelyn`
-      },
-      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
-        quote: `She wept beneath the willow boughs
-        <br><br>- Christina Rossetti`
-      },
-      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
-        quote: `Poplars stand along the riverbank, whispering in the wind
-        <br><br>- Virgilius`
-      },
-      { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
-        quote: `The elm trees stand like guardians of the quiet lane
-        <br><br>- John Clare`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: ["Oerfabiden", "Bos"],
     hint: `Sommige fabiden voelen zich thuis in de bossen.`,
     tijd: 50_000_000,
@@ -11262,10 +10935,6 @@ const combinaties = [
         quote: `The elm trees stand like guardians of the quiet lane
         <br><br>- John Clare`
       },
-      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
-        quote: `The cherries hung like drops of blood in the summer sun
-        <br><br>- D.H. Lawrence`
-      },
       { naam: "Appels", icoon: "icons/Appels.png", map: "Fruit", 
         quote: `The apple tree is a sign of love and youth
         <br><br>- William Blake`
@@ -11273,6 +10942,14 @@ const combinaties = [
       { naam: "Peren", icoon: "icons/Peren.png", map: "Fruit", 
         quote: `The pear tree bears its fruit with quiet patience in the orchard
         <br><br>- Henry Thoreau`
+      },
+      { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
+        quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
+        <br><br>- John Keats`
+      },
+      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
+        quote: `Love and a red rose can't be hid
+        <br><br>- Thomas Holcroft`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -11309,25 +10986,7 @@ const combinaties = [
     }
   },
   {
-    input: ["Oerfabiden", "Bloem"],
-    output: [
-      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
-        quote: `Love and a red rose can't be hid
-        <br><br>- Thomas Holcroft`
-      },
-      { naam: "Vlas", icoon: "icons/Vlas.png", map: "Materialen", 
-        quote: `Flax, slender in stem, yields threads for linen when ripened in the sun
-        <br><br>- Virgilius`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
     input: ["Oerfabiden", "Wespen"],
-    hint: `Sommige fabiden en hun zoete vruchten gaan goed samen met de wespen.`,
     tijd: 50_000_000,
     output: [
       { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
@@ -11362,7 +11021,6 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Bijen"],
-    hint: `Sommige fabiden gaan samen voorts met de bijtjes.`,
     tijd: 30_000_000,
     output: [
       { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
@@ -11393,7 +11051,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Savanne"],
-    hint: `Sommige fabiden voelen zich thuis in de savanne.`,
+    hint: `Sommige fabiden voelen zich thuis op de savanne.`,
     tijd: 10_000_000,
     output: [
       { naam: "Acacia", icoon: "icons/Acacia.png", map: "Bomen", 
@@ -11439,9 +11097,9 @@ const combinaties = [
         quote: `Flax, slender in stem, yields threads for linen when ripened in the sun
         <br><br>- Virgilius`
       },
-      { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
-        quote: `The nettle grows among the ruins and the broken hedge
-        <br><br>- John Clare`
+      { naam: "Erwten", icoon: "icons/Erwten.png", map: "Zaden", 
+        quote: `The pea is a crop that gives both pleasure and sustenance in the garden
+        <br><br>- William Cobbett`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -11473,23 +11131,6 @@ const combinaties = [
       { naam: "Hennep", icoon: "icons/Hennep.png", map: "Materialen", 
         quote: `From hemp are made ropes of great strength; its seed is sometimes used as food or medicine
         <br><br>- Plinius de Oudere`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
-  },
-  {
-    input: [
-      ["Oerfabiden", "Buxus"], ["Oerfabiden", "Wilgen"], ["Oerfabiden", "Klavers"], ["Oerfabiden", "Brandnetels"],
-      ["Oerfabiden", "Elzen"]
-    ],
-    tijd: 60_000_000,
-    output: [
-      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
-        quote: `Hop adds bitterness to the drink and preserves it from spoiling
-        <br><br>- Hildegard von Bingen`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
