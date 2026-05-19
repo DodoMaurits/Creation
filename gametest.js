@@ -11952,6 +11952,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerlamiden", "Vulkaan"],
+    hint: `Sommige lamiden worden ook wel de vulkaangewassen genoemd.`,
+    tijd: 3_000_000,
+    output: [
+      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
+        quote: `The potato is a most valuable root for sustenance
+        <br><br>- James Boswell`
+      }
+    ]
+  },
+  {
     input: ["Oerlamiden", "Berg"],
     hint: `Sommige lamiden voelen zich thuis in de bergen.`,
     tijd: 3_000_000,
