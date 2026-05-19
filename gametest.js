@@ -11460,10 +11460,8 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oerasteriden", "Bloem"], ["Oerasteriden", "Bos"]
-    ],
-    hint: `Sommige asteriden volgen een aparte lijn van bekende bosbloemen.`,
+    input: ["Oerasteriden", "Bos"],
+    hint: `Sommige asteriden volgen een aparte lijn als bekende bosbloemen.`,
     output: [
       { naam: "Hortensia", icoon: "icons/Hortensia.png", map: "Bloemen", 
         quote: `Hydrangeas change colour with the soil, a most curious and pleasing effect
