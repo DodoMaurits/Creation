@@ -10906,6 +10906,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerfabiden", "Prairie"],
+    hint: `Sommige fabiden voelen zich thuis op de prairie.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+        quote: `Clover enriches the soil and is excellent fodder for cattle
+        <br><br>- John Evelyn`
+      }
+    ]
+  },
+  {
     input: [
       ["Oermalviden", "Vuur"], ["Oermalviden", "Lava"], ["Oermalviden", "Brand"]
     ],
