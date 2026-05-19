@@ -10380,20 +10380,6 @@ const combinaties = [
   },
   {
     input: [
-      ["Oermonocotylen", "Magnolia"], ["Oermonocotylen", "Laurierbomen"], ["Oermonocotylen", "Vijgen"],
-      ["Oermonocotylen", "Teak"]
-    ],
-    tijd: 20_000_000,
-    output: [
-      { naam: "Rotan", icoon: "icons/Rotan.png", map: "Materialen", 
-        quote: `Rattans are among the most useful products of the forest, supplying canes for endless 
-        purposes of native industry
-        <br><br>- Henry Forbes`
-      }
-    ]
-  },
-  {
-    input: [
       ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Moeras"]
     ],
     hint: `Sommige grassen vinden hun thuis bij stilstaand of kabbelend water.`,
@@ -10448,39 +10434,6 @@ const combinaties = [
       { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
         quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
         <br><br>- Barbara McClintock`
-      }
-    ]
-  },
-  {
-    input: ["Gras", "Glucose"],
-    hint: `Sommige grassen specialiseren zich in alsmaar meer glucose.`,
-    tijd: 4_000_000,
-    output: [
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
-        quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
-        <br><br>- James Grainger`
-      }
-    ]
-  },
-  {
-    input: ["Gras", "Zaadjes"],
-    tijd: 4_000_000,
-    output: [
-      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
-        quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
-        <br><br>- Barbara McClintock`
-      },
-      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
-        quote: `Rice is the basis of nourishment for all under heaven
-        <br><br>- Wang Zhen`
-      },
-      { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
-        quote: `The sorghum fields were dense and tall, their red tassels blazing like a sea of blood in the sun
-        <br><br>- Mo Yan`
-      },
-      { naam: "Gierst", icoon: "icons/Gierst.png", map: "Granen", 
-        quote: `Millet grows quickly and thrives even in poor and dry soils where other grains fail
-        <br><br>- Olivier de Serres`
       }
     ]
   },
@@ -11004,6 +10957,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oermalviden", "Vulkaan"],
+    hint: `Sommige malviden voelen zich thuis op tropische, vulkanische bodems.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Kruidnagel", icoon: "icons/Kruidnagel.png", map: "Smaakmakers", 
+        quote: `The scent of cloves carries the memory of the islands
+        <br><br>- Haji Amrullah`
+      }
+    ]
+  },
+  {
     input: [
       ["Oermalviden", "Berg"], ["Oermalviden", "Steppe"]
     ],
@@ -11050,16 +11014,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oermalviden", "Wind"],
-    tijd: 50_000_000,
-    output: [
-      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
-        quote: `Under the maple’s crimson leaves the year seems to pause in flame
-        <br><br>- Henry Longfellow`
-      }
-    ]
-  },
-  {
     input: ["Oermalviden", "Oase"],
     tijd: 20_000_000,
     output: [
@@ -11074,8 +11028,19 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oermalviden", "Kust"],
+    hint: `Sommige malviden voelen zich thuis bij warme kustgebieden.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
+        quote: `A single lychee carried a thousand miles is worth the fall of an empire
+        <br><br>- Du Mu`
+      }
+    ]
+  },
+  {
     input: ["Oermalviden", "Rivier"],
-    hint: `Sommige malviden voelen zich thuis bij de rivier.`,
+    hint: `Sommige malviden voelen zich thuis bij natte riviergebieden.`,
     tijd: 20_000_000,
     output: [
       { naam: "Katoen", icoon: "icons/Katoen.png", map: "Materialen", 
@@ -11093,34 +11058,36 @@ const combinaties = [
       { naam: "Jute", icoon: "icons/Jute.png", map: "Materialen", 
         quote: `Jute became indispensable in the manufacture of sacks for global trade
         <br><br>- Andrew Watt`
-      }
-    ]
-  },
-  {
-    input: ["Oermalviden", "Glucose"],
-    tijd: 8_000_000,
-    output: [
-      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
-        quote: `Under the maple’s crimson leaves the year seems to pause in flame
-        <br><br>- Henry Longfellow`
-      },
-      { naam: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
-        quote: `A single lychee carried a thousand miles is worth the fall of an empire
-        <br><br>- Du Mu`
       },
       { naam: "Mandarijnen", icoon: "icons/Mandarijnen.png", map: "Fruit", 
         quote: `Cultivated fruits such as oranges exhibit remarkable variation under human selection
         <br><br>- Charles Darwin`
-      },
-      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
-        quote: `The mango blossom perfumes the air like the promise of spring
-        <br><br>- Kalidasa`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Klif"],
+    hint: `Sommige malviden voelen zich thuis bij de rotsachtige kustkliffen.`,
+    tijd: 5_000_000,
+    output: [
+      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
+        quote: `The humble cabbage is often the foundation of the simplest meals
+        <br><br>- Charles Lamb`
+      }
+    ]
+  },
+  {
+    input: ["Oermalviden", "Overstroming"],
+    tijd: 5_000_000,
+    output: [
+      { naam: "Jute", icoon: "icons/Jute.png", map: "Materialen", 
+        quote: `Jute became indispensable in the manufacture of sacks for global trade
+        <br><br>- Andrew Watt`
       }
     ]
   },
   {
     input: ["Oermalviden", "Gif"],
-    hint: `Sommige malviden maken van gif hun strategie en redding.`,
     tijd: 5_000_000,
     output: [
       { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
@@ -11139,48 +11106,6 @@ const combinaties = [
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
-      }
-    ]
-  },
-  {
-    input: ["Oermalviden", "Wortels"],
-    tijd: 5_000_000,
-    output: [
-      { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
-        quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
-        <br><br>- John Gerard`
-      }
-    ]
-  },
-  {
-    input: ["Oermalviden", "Blad"],
-    tijd: 5_000_000,
-    output: [
-      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
-        quote: `The humble cabbage is often the foundation of the simplest meals
-        <br><br>- Charles Lamb`
-      }
-    ]
-  },
-  {
-    input: ["Oermalviden", "Zaadjes"],
-    tijd: 10_000_000,
-    output: [
-      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
-        quote: `Mustard is hot and biting, and good to stir the humours of the body
-        <br><br>- Nicholas Culpeper`
-      },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
-        quote: `Cocoa gives warmth and strength to the fatigued traveller
-        <br><br>- James Thomson`
-      },
-      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
-        quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
-        <br><br>- Plinius de Oudere`
-      },
-      { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
-        quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
-        <br><br>- V.S. Naipaul`
       }
     ]
   },
@@ -11218,7 +11143,6 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Vlinders"],
-    hint: `Sommige malviden vinden hun weg met de vlinders.`,
     tijd: 10_000_000,
     output: [
       { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
@@ -11240,26 +11164,8 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oermalviden", "Hout"],
-    tijd: 50_000_000,
-    output: [
-      { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
-        quote: `In the blue haze of eucalyptus the land seems endless and still
-        <br><br>- Banjo Paterson`
-      },
-      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
-        quote: `Beneath the linden walks a gentler air, where thought may rest
-        <br><br>- Alexander Pope`
-      },
-      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
-        quote: `Under the maple’s crimson leaves the year seems to pause in flame
-        <br><br>- Henry Longfellow`
-      }
-    ]
-  },
-  {
     input: ["Oermalviden", "Bos"],
-    hint: `Sommige malviden voelen zich thuis in het bos.`,
+    hint: `Sommige malviden voelen zich thuis in de gematigde loofbossen.`,
     tijd: 50_000_000,
     output: [
       { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
@@ -11305,31 +11211,19 @@ const combinaties = [
       { naam: "Guaves", icoon: "icons/Guaves.png", map: "Fruit", 
         quote: `Guavas hang in the heat, soft and fragrant in the tropical air
         <br><br>- Patrick Fermor`
-      }
-    ]
-  },
-  {
-    input: ["Oermalviden", "Bloem"],
-    hint: `Sommige malviden floreren in de strategie van de opvallende bloem.`,
-    tijd: 40_000_000,
-    output: [
-      { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
-        quote: `The hibiscus lends color and grace to tropical gardens
-        <br><br>- David Faichild`
       },
-      { naam: "Geraniums", icoon: "icons/Geraniums.png", map: "Bloemen", 
-        quote: `Geraniums are the comfort of windows, faithful and unpretending
-        <br><br>- Elizabeth von Arnim`
+      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+        quote: `The mango blossom perfumes the air like the promise of spring
+        <br><br>- Kalidasa`
       },
-      { naam: "Kruidnagel", icoon: "icons/Kruidnagel.png", map: "Smaakmakers", 
-        quote: `The scent of cloves carries the memory of the islands
-        <br><br>- Haji Amrullah`
+      { naam: "Papaja", icoon: "icons/Papaja.png", map: "Fruit", 
+        quote: `There are fruits of great softness, which melt upon the tongue
+        <br><br>- Hernán Cortés`
       }
     ]
   },
   {
     input: ["Oermalviden", "Wespen"],
-    hint: `Sommige malviden gaan goed samen met de wespen.`,
     tijd: 10_000_000,
     output: [
       { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
@@ -11352,7 +11246,6 @@ const combinaties = [
   },
   {
     input: ["Oermalviden", "Bijen"],
-    hint: `Sommige malviden gaan samen voorts met de bijen.`,
     tijd: 5_000_000,
     output: [
       { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
@@ -11405,10 +11298,6 @@ const combinaties = [
     hint: `Sommige malviden voelen zich thuis op uitgestrekte grasweides.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
-        quote: `The humble cabbage is often the foundation of the simplest meals
-        <br><br>- Charles Lamb`
-      },
       { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
         quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
         <br><br>- John Gerard`
@@ -11416,10 +11305,6 @@ const combinaties = [
       { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
         <br><br>- Nicholas Culpeper`
-      },
-      { naam: "Geraniums", icoon: "icons/Geraniums.png", map: "Bloemen", 
-        quote: `Geraniums are the comfort of windows, faithful and unpretending
-        <br><br>- Elizabeth von Arnim`
       }
     ]
   },
@@ -11460,7 +11345,7 @@ const combinaties = [
       ["Oercaryophyllales", "Ven"], ["Oercaryophyllales", "Moeras"], ["Oercaryophyllales", "Spinnen"],
       ["Oercaryophyllales", "Bladluizen"], ["Oercaryophyllales", "Vliegen"], ["Oercaryophyllales", "Muggen"]
     ],
-    hint: `Sommige caryophyllales weten insecten te verteren in moerassen.`,
+    hint: `Sommige caryophyllales doen zich tegoed aan insecten in moerassen.`,
     tijd: 10_000_000,
     output: [
       { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
@@ -11470,21 +11355,6 @@ const combinaties = [
       { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
         quote: `The sensitive leaves respond to touch in a manner almost animal-like
         <br><br>- Francis Darwin`
-      }
-    ]
-  },
-  {
-    input: ["Oercaryophyllales", "Zout"],
-    hint: `Sommige caryophyllales neigen naar zoute bodems.`,
-    tijd: 5_000_000,
-    output: [
-      { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
-        quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
-        <br><br>- George Marsh`
-      },
-      { naam: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
-        quote: `Quinoa represents the resilience of traditional Andean agriculture
-        <br><br>- Miguel Altieri`
       }
     ]
   },
@@ -11503,59 +11373,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oercaryophyllales", "Glucose"], ["Oercaryophyllales", "Wortels"]
-    ],
-    tijd: 35_000_000,
-    output: [
-      { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
-        quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
-        <br><br>- George Marsh`
-      },
-    ]
-  },
-  {
-    input: ["Oercaryophyllales", "Gif"],
-    hint: `Sommige caryophyllales kiezen de strategie van het gif.`,
-    tijd: 10_000_000,
-    output: [
-      { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
-        quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
-        <br><br>- John Gerard`
-      },
-      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
-        quote: `The sundew catches flies by means of a sticky fluid on its leaves
-        <br><br>- John Ellis`
-      },
-      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
-        quote: `The sensitive leaves respond to touch in a manner almost animal-like
-        <br><br>- Francis Darwin`
-      }
-    ]
-  },
-  {
-    input: ["Oercaryophyllales", "Blad"],
-    tijd: 35_000_000,
-    output: [
-      { naam: "Spinazie", icoon: "icons/Spinazie.png", map: "Groenten", 
-        quote: `Spinach stands in our culture for what is green, clean, and strengthening
-        <br><br>- Michael Pollan`
-      }
-    ]
-  },
-  {
-    input: ["Oercaryophyllales", "Zaadjes"],
-    tijd: 5_000_000,
-    output: [
-      { naam: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
-        quote: `Quinoa represents the resilience of traditional Andean agriculture
-        <br><br>- Miguel Altieri`
-      }
-    ]
-  },
-  {
     input: ["Oercaryophyllales", "Bijen"],
-    hint: `Sommige caryophyllales gaan samen voorts met de bijtjes.`,
     tijd: 30_000_000,
     output: [
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
@@ -11986,78 +11804,37 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerfagales", "Berg"],
-    hint: `Sommige fagales voelen zich thuis in bergachtig gebied.`,
+    input: [
+      ["Oerfagales", "Berg"], ["Oerfagales", "Ven"], ["Oerfagales", "Moeras"]
+    ],
     tijd: 50_000_000,
     output: [
-      { naam: "Walnoten", icoon: "icons/Walnoten.png", map: "Zaden", 
-        quote: `The walnut carries strength within a guarded shell
-        <br><br>- John Ruskin`
-      },
       { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
         quote: `Alders are the silent pioneers of wet ground and riverbanks
         <br><br>- Richard Mabey`
-      },
-      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
-        quote: `The birch is the emblem of the northern wilderness
-        <br><br>- Henry Thoreau`
       }
     ]
   },
   {
     input: [
-      ["Oerfagales", "Ven"], ["Oerfagales", "Rivier"], ["Oerfagales", "Moeras"]
+      ["Oerfagales", "Zand"], ["Oerfagales", "Savanne"]
     ],
-    hint: `Sommige fagales voelen zich thuis bij waterige grond.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
-        quote: `Alders are the silent pioneers of wet ground and riverbanks
-        <br><br>- Richard Mabey`
-      },
-      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
-        quote: `The birch is the emblem of the northern wilderness
-        <br><br>- Henry Thoreau`
-      }
-    ]
-  },
-  {
-    input: ["Oerfagales", "Wind"],
-    tijd: 50_000_000,
-    output: [
-      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
-        quote: `Alders are the silent pioneers of wet ground and riverbanks
-        <br><br>- Richard Mabey`
-      },
-      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
-        quote: `The birch is the emblem of the northern wilderness
-        <br><br>- Henry Thoreau`
-      },
-      { naam: "Hazelaars", icoon: "icons/Hazelaars.png", map: "Zaden", 
-        quote: `The hazel is the tree of wisdom and poetic inspiration
-        <br><br>- Robert Graves`
-      },
-      { naam: "Beuken", icoon: "icons/Beuken.png", map: "Bomen", 
-        quote: `Beech woods are remarkable for their smooth trunks and noble height
-        <br><br>- Gilbert White`
-      }
-    ]
-  },
-  {
-    input: ["Oerfagales", "Zaadjes"],
-    tijd: 50_000_000,
-    output: [
-      { naam: "Hazelnoten", icoon: "icons/Hazelnoten.png", map: "Zaden", 
-        quote: `The hazel is the tree of wisdom and poetic inspiration
-        <br><br>- Robert Graves`
-      },
-      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Zaden", 
-        quote: `Under the spreading chestnut tree, I sold you and you sold me
-        <br><br>- George Orwell`
-      },
       { naam: "Eiken", icoon: "icons/Eiken.png", map: "Bomen", 
         quote: `The mighty oak was once a little nut
         <br><br>- Alfred Tennyson`
+      }
+    ]
+  },
+  {
+    input: ["Oerfagales", "Rivier"],
+    hint: `Sommige fagales voelen zich thuis bij de waterige grond van rivieren.`,
+    tijd: 50_000_000,
+    output: [
+      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
+        quote: `Alders are the silent pioneers of wet ground and riverbanks
+        <br><br>- Richard Mabey`
       },
       { naam: "Walnoten", icoon: "icons/Walnoten.png", map: "Zaden", 
         quote: `The walnut carries strength within a guarded shell
@@ -12082,13 +11859,22 @@ const combinaties = [
         quote: `Under the spreading chestnut tree, I sold you and you sold me
         <br><br>- George Orwell`
       },
-      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
-        quote: `The birch is the emblem of the northern wilderness
-        <br><br>- Henry Thoreau`
-      },
       { naam: "Hazelnoten", icoon: "icons/Hazelnoten.png", map: "Zaden", 
         quote: `The hazel is the tree of wisdom and poetic inspiration
         <br><br>- Robert Graves`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Oerfagales", "Regenwoud"], ["Oerfagales", "Heide"]
+    ],
+    hint: `Sommige fagales voelen zich thuis op heidegrond en in naaldbossen.`,
+    tijd: 50_000_000,
+    output: [
+      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
+        quote: `The birch is the emblem of the northern wilderness
+        <br><br>- Henry Thoreau`
       }
     ]
   },
@@ -13784,6 +13570,17 @@ const combinaties = [
       { naam: "Rooibos", icoon: "icons/Rooibos.png", map: "Genotwaren", 
         quote: `Rooibos is uniquely South African, shaped by the harshness of the Cederberg
         <br><br>- Annelise le Roux`
+      }
+    ]
+  },
+  {
+    input: ["Fynbos", "Oermalviden"],
+    hint: `Sommige malviden voelen zich thuis in het fynbos.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Geraniums", icoon: "icons/Geraniums.png", map: "Bloemen", 
+        quote: `Geraniums are the comfort of windows, faithful and unpretending
+        <br><br>- Elizabeth von Arnim`
       }
     ]
   },
