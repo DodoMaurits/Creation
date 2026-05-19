@@ -8294,6 +8294,21 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oereudicoten", "Klif"], 
+    tijd: 80_000_000,
+    output: [
+      { naam: "Vetplanten", icoon: "icons/Vetplanten.png", map: "Planten", 
+        quote: `The fleshy tissues of succulents are specialized for water storage, giving them their characteristic
+        thickened form
+        <br><br>- Peter Raven`
+      },
+      { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
+        quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
+        <br><br>- W.J. Bean`
+      }
+    ]
+  },
+  {
     input: ["Oereudicoten", "Evolutie"],
     hint: `Het succes van de eudicoten is te zien aan de vele vormen van evolutie.`,
     tijd: 95_000_000,
@@ -10124,7 +10139,9 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oermonocotylen", "Woestijn"],
+    input: [
+      ["Oermonocotylen", "Woestijn"], ["Oermonocotylen", "Klif"]
+    ],
     hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
     tijd: 40_000_000,
     output: [
@@ -11890,6 +11907,20 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oerericales", "Klif"],
+    tijd: 5_000_000,
+    output: [
+      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
+        quote: `The argan tree gives us oil, shade, and life in a difficult land
+        <br><br>- Fatima Tihihit`
+      },
+      { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
+        quote: `The heather spreads like a purple sea across the hills
+        <br><br>- W.H. Hudson`
+      }
+    ]
+  },
+  {
     input: ["Oerericales", "Bos"],
     hint: `Sommige ericales voelen zich thuis in de bossen.`,
     tijd: 5_000_000,
@@ -12018,8 +12049,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerlamiden", "Kust"],
-    hint: `Sommige lamiden voelen zich thuis aan de kust.`,
+    input: [
+      ["Oerlamiden", "Kust"], ["Oerlamiden", "Klif"]
+    ],
+    hint: `Sommige lamiden voelen zich thuis bij kustkliffen.`,
     tijd: 25_000_000,
     output: [
       { naam: "Olijven", icoon: "icons/Olijven.png", map: "Fruit", 
