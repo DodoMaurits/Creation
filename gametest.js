@@ -10726,10 +10726,6 @@ const combinaties = [
       { naam: "Soja", icoon: "icons/Soja.png", map: "Zaden", 
         quote: `Soybeans enrich the soil through nitrogen fixation and provide a high-protein crop
         <br><br>- O.W. Willcox`
-      },
-      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
-        quote: `Hop adds bitterness to the drink and preserves it from spoiling
-        <br><br>- Hildegard von Bingen`
       }
     ]
   },
@@ -10807,16 +10803,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerfabiden", "Wortels"],
-    tijd: 10_000_000,
-    output: [
-      { naam: "Cassave", icoon: "icons/Cassave.png", map: "Groenten", 
-        quote: `Manioc is indispensable to the subsistence of many Amazonian peoples
-        <br><br>- Richard Spruce`
-      }
-    ]
-  },
-  {
     input: ["Oerfabiden", "Bos"],
     hint: `Sommige fabiden voelen zich thuis in de bossen.`,
     tijd: 50_000_000,
@@ -10829,10 +10815,6 @@ const combinaties = [
         quote: `The elm trees stand like guardians of the quiet lane
         <br><br>- John Clare`
       },
-      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
-        quote: `The cherries hung like drops of blood in the summer sun
-        <br><br>- D.H. Lawrence`
-      },
       { naam: "Appels", icoon: "icons/Appels.png", map: "Fruit", 
         quote: `The apple tree is a sign of love and youth
         <br><br>- William Blake`
@@ -10844,6 +10826,10 @@ const combinaties = [
       { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
         quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
         <br><br>- John Keats`
+      },
+      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
+        quote: `Love and a red rose can't be hid
+        <br><br>- Thomas Holcroft`
       }
     ]
   },
@@ -10868,19 +10854,6 @@ const combinaties = [
       { naam: "Kidneybonen", icoon: "icons/Kidneybonen.png", map: "Zaden", 
         quote: `The kidney bean is cultivated for its edible seeds, which are highly nutritious when properly cooked
         <br><br>- John Lindley`
-      }
-    ]
-  },
-  {
-    input: ["Oerfabiden", "Bloem"],
-    output: [
-      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
-        quote: `Love and a red rose can't be hid
-        <br><br>- Thomas Holcroft`
-      },
-      { naam: "Vlas", icoon: "icons/Vlas.png", map: "Materialen", 
-        quote: `Flax, slender in stem, yields threads for linen when ripened in the sun
-        <br><br>- Virgilius`
       }
     ]
   },
@@ -10916,7 +10889,6 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Bijen"],
-    hint: `Sommige fabiden gaan samen voorts met de bijtjes.`,
     tijd: 30_000_000,
     output: [
       { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
@@ -10943,7 +10915,7 @@ const combinaties = [
   },
   {
     input: ["Oerfabiden", "Savanne"],
-    hint: `Sommige fabiden voelen zich thuis in de savanne.`,
+    hint: `Sommige fabiden voelen zich thuis op de savanne.`,
     tijd: 10_000_000,
     output: [
       { naam: "Acacia", icoon: "icons/Acacia.png", map: "Bomen", 
@@ -11019,19 +10991,6 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oerfabiden", "Buxus"], ["Oerfabiden", "Wilgen"], ["Oerfabiden", "Klavers"], ["Oerfabiden", "Brandnetels"],
-      ["Oerfabiden", "Elzen"]
-    ],
-    tijd: 60_000_000,
-    output: [
-      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
-        quote: `Hop adds bitterness to the drink and preserves it from spoiling
-        <br><br>- Hildegard von Bingen`
-      }
-    ]
-  },
- {
     input: [
       ["Oermalviden", "Vuur"], ["Oermalviden", "Lava"], ["Oermalviden", "Brand"]
     ],
