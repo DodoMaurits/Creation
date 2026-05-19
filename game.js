@@ -8324,163 +8324,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oerstraalvinnigen", "Kou"],
-    tijd: 10_000_000,
-    output: [
-      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
-        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
-        rivers of their birth
-        <br><br>- Colin Braithwaite`
-      },
-      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
-        quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
-        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
-        <br><br>- Hugh Falkus`
-      }
-    ],
-    uitleg: {
-      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs", 
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
-  {
-    input: [
-      /* --- WATERDIEREN --- */
-      ["Zalm", "Wormen"], ["Zalm", "Oertrochozoa"],
-      /* --- VISSEN --- */
-      ["Zalm", "Lancetvisjes"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Zalm", "Oergeleedpotigen"], ["Zalm", "Oercheliceraten"], ["Zalm", "Oerkreeftjes"],
-      ["Zalm", "Oerinsecten"], ["Zalm", "Oerspinachtigen"], ["Zalm", "Krill"],
-      ["Zalm", "Aasgarnalen"], ["Zalm", "Zeepissebedden"], ["Zalm", "Vlokreeftjes"],
-      ["Zalm", "Oertienpotigen"], ["Zalm", "Garnalen"], ["Zalm", "Waterspinnen"]
-    ],
-    output: [
-      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
-        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
-        rivers of their birth
-        <br><br>- Colin Braithwaite`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      /* --- VISSEN --- */
-      ["Zalm", "Agnathen"], ["Zalm", "Oerstraalvinnigen"], ["Zalm", "Haring"]
-    ],
-    output: [
-      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
-        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
-        rivers of their birth
-        <br><br>- Colin Braithwaite`
-      },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      /* --- PRIL LEVEN --- */
-      ["Haring", "Blauwalgen"], ["Haring", "Groene algen"], ["Haring", "Rode algen"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Haring", "Krill"], ["Haring", "Aasgarnalen"], ["Haring", "Vlokreeftjes"]
-    ],
-    output: [
-      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
-        quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      /* --- WATERDIEREN --- */
-      ["Snoeken", "Wormen"], ["Snoeken", "Oertrochozoa"],
-      /* --- VISSEN --- */
-      ["Snoeken", "Lancetvisjes"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Snoeken", "Oergeleedpotigen"], ["Snoeken", "Oercheliceraten"], ["Snoeken", "Oerkreeftjes"],
-      ["Snoeken", "Oerinsecten"], ["Snoeken", "Oerspinachtigen"], ["Snoeken", "Krill"],
-      ["Snoeken", "Aasgarnalen"], ["Snoeken", "Zeepissebedden"], ["Snoeken", "Vlokreeftjes"],
-      ["Snoeken", "Oertienpotigen"], ["Snoeken", "Garnalen"], ["Snoeken", "Waterspinnen"]
-    ],
-    output: [
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
-        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
-        <br><br>- Hugh Falkus`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      /* --- VISSEN --- */
-      ["Snoeken", "Agnathen"], ["Snoeken", "Oerstraalvinnigen"],
-      ["Snoeken", "Haring"], ["Snoeken", "Makreel"], 
-      ["Snoeken", "Karpers"], ["Snoeken", "Meervallen"], ["Snoeken", "Forel"], ["Snoeken", "Paling"], 
-      ["Snoeken", "Goudvissen"]
-    ],
-    output: [
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
-        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
-        <br><br>- Hugh Falkus`
-      },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
     input: [
       ["Oerstraalvinnigen", "IJs"], ["Oerstraalvinnigen", "Poolgebied"]
     ],
@@ -8807,6 +8650,62 @@ const combinaties = [
   },
   {
     input: [
+      /* --- WATERDIEREN --- */
+      ["Snoeken", "Wormen"], ["Snoeken", "Oertrochozoa"],
+      /* --- VISSEN --- */
+      ["Snoeken", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Snoeken", "Oergeleedpotigen"], ["Snoeken", "Oercheliceraten"], ["Snoeken", "Oerkreeftjes"],
+      ["Snoeken", "Oerinsecten"], ["Snoeken", "Oerspinachtigen"], ["Snoeken", "Krill"],
+      ["Snoeken", "Aasgarnalen"], ["Snoeken", "Zeepissebedden"], ["Snoeken", "Vlokreeftjes"],
+      ["Snoeken", "Oertienpotigen"], ["Snoeken", "Garnalen"], ["Snoeken", "Waterspinnen"]
+    ],
+    output: [
+      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
+        <br><br>- Hugh Falkus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Snoeken", "Agnathen"], ["Snoeken", "Oerstraalvinnigen"],
+      ["Snoeken", "Haring"], ["Snoeken", "Makreel"], 
+      ["Snoeken", "Karpers"], ["Snoeken", "Meervallen"], ["Snoeken", "Forel"], ["Snoeken", "Paling"], 
+      ["Snoeken", "Goudvissen"]
+    ],
+    output: [
+      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+        quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
+        <br><br>- Hugh Falkus`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
       ["Oerstraalvinnigen", "Lucht"], ["Oerstraalvinnigen", "Wind"]
     ],
     hint: `Sommige straalvinnigen willen niks liever dan de lucht in.`,
@@ -8960,6 +8859,10 @@ const combinaties = [
         quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
         thousands of kilometres
         <br><br>- Frederik Kendall`
+      },
+      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
+        quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
+        <br><br>- Rachel Carson`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
@@ -9006,6 +8909,61 @@ const combinaties = [
       { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
         quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
         <br><br>- Callum Roberts`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Zalm", "Wormen"], ["Zalm", "Oertrochozoa"],
+      /* --- VISSEN --- */
+      ["Zalm", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Zalm", "Oergeleedpotigen"], ["Zalm", "Oercheliceraten"], ["Zalm", "Oerkreeftjes"],
+      ["Zalm", "Oerinsecten"], ["Zalm", "Oerspinachtigen"], ["Zalm", "Krill"],
+      ["Zalm", "Aasgarnalen"], ["Zalm", "Zeepissebedden"], ["Zalm", "Vlokreeftjes"],
+      ["Zalm", "Oertienpotigen"], ["Zalm", "Garnalen"], ["Zalm", "Waterspinnen"]
+    ],
+    output: [
+      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
+        rivers of their birth
+        <br><br>- Colin Braithwaite`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Zalm", "Agnathen"], ["Zalm", "Oerstraalvinnigen"], ["Zalm", "Haring"]
+    ],
+    output: [
+      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
+        rivers of their birth
+        <br><br>- Colin Braithwaite`
       },
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
@@ -9146,6 +9104,29 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Haring", "Blauwalgen"], ["Haring", "Groene algen"], ["Haring", "Rode algen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Haring", "Krill"], ["Haring", "Aasgarnalen"], ["Haring", "Vlokreeftjes"]
+    ],
+    output: [
+      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
+        quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
+        <br><br>- Rachel Carson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Oerstraalvinnigen", "Kust"],
     hint: `Sommige straalvinnigen voelen zich het meest thuis in ondiepe kustwateren.`,
     tijd: 20_000_000,
@@ -9264,28 +9245,6 @@ const combinaties = [
         quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
         rivers of their birth
         <br><br>- Colin Braithwaite`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
-  {
-    input: ["Oerstraalvinnigen", "Zuurstof"],
-    hint: `Sommige straalvinnigen excelleren in de meest zuurstofrijke wateren.`,
-    tijd: 10_000_000,
-    output: [
-      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
-        quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
-        <br><br>- Callum Roberts`
-      },
-      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
-        quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
-        quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
-        <br><br>- Alister Hardy`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
