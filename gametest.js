@@ -12748,6 +12748,7 @@ const combinaties = [
   },
   {
     input: ["Oerprimaten", "Moeras"],
+    hint: `Sommige primaten voelen zich thuis in moerassige gebieden.`,
     tijd: 10_000_000,
     output: [
       { naam: "Neusapen", icoon: "icons/Neusapen.png", map: "Primaten", 
