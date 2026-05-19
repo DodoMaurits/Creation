@@ -9252,6 +9252,19 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
+    input: ["Oerstraalvinnigen", "Lagune"],
+    tijd: 40_000_000,
+    output: [
+      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
+        <br><br>- David Attenborough`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
     input: [
       ["Oerstraalvinnigen", "Schelp"], ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"]
     ],
