@@ -7885,7 +7885,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Bloem", "Ven"], ["Bloem", "Moeras"], ["Bloem", "Kevers"]
+      ["Bloem", "Ven"], ["Bloem", "Lagune"], ["Bloem", "Moeras"], ["Bloem", "Kevers"]
     ],
     hint: `Ik voorzie een bloem in het moeras...`,
     tijd: 125_000_000,
@@ -8019,7 +8019,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oereudicoten", "Meer"], ["Oereudicoten", "Ven"], ["Oereudicoten", "Moeras"]
+      ["Oereudicoten", "Meer"], ["Oereudicoten", "Ven"], ["Oereudicoten", "Lagune"], ["Oereudicoten", "Moeras"]
     ],
     hint: `Sommige eudicoten voelen zich van nature thuis in stilstaand water.`,
     tijd: 100_000_000,
@@ -10018,7 +10018,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oermonocotylen", "Meer"], ["Oermonocotylen", "Ven"]
+      ["Oermonocotylen", "Meer"], ["Oermonocotylen", "Ven"], ["Oermonocotylen", "Lagune"]
     ],
     hint: `Sommige monocotylen voelen zich thuis bij stilstaand water.`,
     tijd: 20_000_000,
@@ -10309,7 +10309,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Moeras"]
+      ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Lagune"], ["Gras", "Moeras"]
     ],
     hint: `Sommige grassen vinden hun thuis bij stilstaand of kabbelend water.`,
     tijd: 4_000_000,
