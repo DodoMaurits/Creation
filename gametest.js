@@ -10289,20 +10289,6 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oermonocotylen", "Hout"],
-    tijd: 5_000_000,
-    output: [
-      { naam: "Oliepalmen", icoon: "icons/Oliepalmen.png", map: "Bomen", 
-        quote: `The dance of the palm trees, the oceans calling, the first rays of sun and heaven is here
-        <br><br>- Michael Dolan`
-      },
-      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Fruit", 
-        quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
-        <br><br>- Ibn al-Awwam`
-      }
-    ]
-  },
-  {
     input: ["Oermonocotylen", "Bos"],
     hint: `Sommige monocotylen voelen zich thuis in het bos.`,
     tijd: 40_000_000,
