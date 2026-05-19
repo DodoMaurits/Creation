@@ -10960,6 +10960,20 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
+    input: ["Oerfabiden", "Prairie"],
+    hint: `Sommige fabiden voelen zich thuis op de prairie.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+        quote: `Clover enriches the soil and is excellent fodder for cattle
+        <br><br>- John Evelyn`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
     input: [
       ["Oermalviden", "Vuur"], ["Oermalviden", "Lava"], ["Oermalviden", "Brand"]
     ],
