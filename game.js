@@ -13496,6 +13496,21 @@ const combinaties = [
     ]
   },
   {
+    input: ["Fynbos", "Oermonocotylen"],
+    hint: `Sommige monocotylen voelen zich thuis in het fynbos.`,
+    tijd: 20_000_000,
+    output: [
+      { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
+        quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
+        <br><br>- Christopher Brickell`
+      },
+      { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
+        quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
+        <br><br>- W.J. Bean`
+      }
+    ]
+  },
+  {
     input: ["Fynbos", "Oerfabiden"],
     hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
     tijd: 10_000_000,
