@@ -283,7 +283,29 @@ const mappen = [
       { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png" },
       { naam: "Haaien", icoon: "icons/Haaien.png" },
       { naam: "Spookhaaien", icoon: "icons/Spookhaaien.png" },
-      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png" }
+      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png" },
+      { naam: "Manta", icoon: "icons/Manta.png" }, /*66*/
+      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png" }, /*40*/
+      { naam: "Maanvissen", icoon: "icons/Maanvissen.png" }, /*40*/
+      { naam: "Forel", icoon: "icons/Forel.png" }, /*40*/
+      { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png" }, /*40*/
+      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png" }, /*30*/
+      { naam: "Platvissen", icoon: "icons/Platvissen.png" }, /*30*/
+      { naam: "Vliegvissen", icoon: "icons/Vliegvissen.png" }, /*30*/
+      { naam: "Zeepaardjes", icoon: "icons/Zeepaardjes.png" }, /*20*/
+      { naam: "Clownvissen", icoon: "icons/Clownvissen.png" }, /*20*/
+      { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png" }, /*20*/
+      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png" }, /*20*/
+      { naam: "Piranha", icoon: "icons/Piranha.png" }, /*20*/
+      { naam: "Karpers", icoon: "icons/Karpers.png" }, /*10*/
+      { naam: "Snoeken", icoon: "icons/Snoeken.png" }, /*10*/
+      { naam: "Meervallen", icoon: "icons/Meervallen.png" }, /*10*/
+      { naam: "Tonijn", icoon: "icons/Tonijn.png" }, /*10*/
+      { naam: "Zalm", icoon: "icons/Zalm.png" }, /*10*/
+      { naam: "Makreel", icoon: "icons/Makreel.png" }, /*10*/
+      { naam: "Paling", icoon: "icons/Paling.png" }, /*10*/
+      { naam: "Haring", icoon: "icons/Haring.png" } /*10*/
+
     ]
   },
   {
@@ -362,21 +384,30 @@ const mappen = [
       { naam: "Oercarryophyllales", icoon: "icons/Oercaryophyllales.png" },
       { naam: "Oerasteriden", icoon: "icons/Oerasteriden.png" },
       { naam: "Vetplanten", icoon: "icons/Vetplanten.png" },
-      { naam: "Buxus", icoon: "icons/Buxus.png" }
+      { naam: "Buxus", icoon: "icons/Buxus.png" },
+      { naam: "Aloë Vera", icoon: "icons/Aloe vera.png" } /*40*/
+      { naam: "Kroos", icoon: "icons/Kroos.png" } /*20*/
     ]
   },
   {
     naam: "Smaakmakers", icoon: "icons/Smaakmakers.png", 
     elementen: [
       { naam: "Truffels", icoon: "icons/Truffels.png" },
-      { naam: "Steranijs", icoon: "icons/Steranijs.png" }
+      { naam: "Steranijs", icoon: "icons/Steranijs.png" },
+      { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png" }, /*10*/
+      { naam: "Kaneel", icoon: "icons/Kaneel.png" }, /*10*/
+      { naam: "Peper", icoon: "icons/Peper.png" }, /*10*/
+      { naam: "Knoflook", icoon: "icons/Knoflook.png" }, /*5*/
+      { naam: "Ui", icoon: "icons/Ui.png" }, /*5*/
+      { naam: "Bieslook", icoon: "icons/Bieslook.png" } /*5*/
     ]
   },
   {
     naam: "Materialen", icoon: "icons/Materialen.png", 
     elementen: [
       { naam: "Zijde", icoon: "icons/Zijde.png" },
-      { naam: "Hout", icoon: "icons/Hout.png" }
+      { naam: "Hout", icoon: "icons/Hout.png" },
+      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png" } /*20*/
     ]
   },
   {
@@ -433,7 +464,32 @@ const mappen = [
   {
     naam: "Vogels", icoon: "icons/Vogels.png", 
     elementen: [
-      { naam: "Archaeopteryx", icoon: "icons/Archaeopteryx.png" }
+      { naam: "Archaeopteryx", icoon: "icons/Archaeopteryx.png" },
+      { naam: "Pinguïns", icoon: "icons/Pinguïns.png" }, /*60*/
+      { naam: "Reigers", icoon: "icons/Reigers.png" }, /*50*/
+      { naam: "Uilen", icoon: "icons/Uilen.png" }, /*45*/
+      { naam: "Flamingo", icoon: "icons/Flamingo.png" }, /*45*/
+      { naam: "Spechten", icoon: "icons/Spechten.png" }, /*45*/
+      { naam: "Gieren", icoon: "icons/Gieren.png" }, /*30*/
+      { naam: "Kolibries", icoon: "icons/Kolibries.png" }, /*25*/
+      { naam: "Duiven", icoon: "icons/Duiven.png" }, /*20*/
+      { naam: "Arenden", icoon: "icons/Arenden.png" }, /*20*/
+      { naam: "Zwaluwen", icoon: "icons/Zwaluwen.png" }, /*20*/
+      { naam: "Spreeuwen", icoon: "icons/Spreeuwen.png" }, /*20*/
+      { naam: "Vinken", icoon: "icons/Vinken.png" }, /*20*/
+      { naam: "Fazanten", icoon: "icons/Fazanten.png" }, /*20*/
+      { naam: "Kraaien", icoon: "icons/Kraaien.png" }, /*20*/
+      { naam: "Ooievaars", icoon: "icons/Ooievaars.png" }, /*20*/
+      { naam: "Meeuwen", icoon: "icons/Meeuwen.png" }, /*15*/
+      { naam: "Aalscholvers", icoon: "icons/Aalscholvers.png" }, /*15*/
+      { naam: "Papegaaiduikers", icoon: "icons/Papegaaiduikers.png" }, /*15*/
+      { naam: "Eenden", icoon: "icons/Eenden.png" }, /*15*/
+      { naam: "Ganzen", icoon: "icons/Ganzen.png" }, /*15*/
+      { naam: "Zwanen", icoon: "icons/Zwanen.png" }, /*15*/
+      { naam: "Mussen", icoon: "icons/Mussen.png" }, /*15*/
+      { naam: "Kippen", icoon: "icons/Kippen.png" }, /*15*/
+      { naam: "Pauwen", icoon: "icons/Pauwen.png" }, /*10*/
+      { naam: "Papegaaien", icoon: "icons/Papegaaien.png" } /*10*/
     ]
   },
   {
@@ -448,13 +504,26 @@ const mappen = [
   {
     naam: "Genotwaren", icoon: "icons/Genotwaren.png", 
     elementen: [
-      { naam: "Honing", icoon: "icons/Honing.png" }
+      { naam: "Honing", icoon: "icons/Honing.png" },
+      { naam: "Agave", icoon: "icons/Agave.png" }, /*40*/
+
     ]
   },
   {
     naam: "Fruit", icoon: "icons/Fruit.png", 
     elementen: [
-      { naam: "Druiven", icoon: "icons/Druiven.png" }
+      { naam: "Druiven", icoon: "icons/Druiven.png" },
+      { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png" }, /*30*/
+      { naam: "Avocado", icoon: "icons/Avocado.png" }, /*10*/
+      { naam: "Kokos", icoon: "icons/Kokos.png" }, /*10*/
+      { naam: "Dadels", icoon: "icons/Dadels.png" } /*5*/
+    ]
+  },
+  {
+    naam: "Groenten", icoon: "icons/Groenten.png", 
+    elementen: [
+      { naam: "Asperges", icoon: "icons/Asperges.png" }, /*5*/
+      { naam: "Prei", icoon: "icons/Prei.png" } /*5*/
     ]
   }
 ];
@@ -8282,6 +8351,18 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oermonocotylen", "Gif"],
+    hint: `Sommige monocotylen maken van gif hun strategie en redding.`,
+    tijd: 70_000_000,
+    output: [
+      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
+        arrival of spring
+        <br><br>- Anna Pavord`
+      }
+    ]
+  },
+  {
     input: ["Oereudicoten", "Berg"],
     tijd: 95_000_000,
     output: [
@@ -10237,17 +10318,6 @@ const combinaties = [
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
         on which we write
         <br><br>- Plinius de Oudere`
-      }
-    ]
-  },
-  {
-    input: ["Oermonocotylen", "Gif"],
-    hint: `Sommige monocotylen maken van gif hun strategie en redding.`,
-    output: [
-      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
-        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
-        arrival of spring
-        <br><br>- Anna Pavord`
       }
     ]
   },
