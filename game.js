@@ -11586,6 +11586,7 @@ const combinaties = [
   {
     input: ["Oerasteriden", "Evolutie"],
     hint: `Vergeet niet hoeveel soorten wel niet voortkomen uit de voorouderlijke asteriden.`,
+    tijd: 95_000_000,
     output: [
       { naam: "Oerericales", icoon: "icons/Oerericales.png", map: "Planten", 
         quote: `The Ericales are a morphologically diverse order characterized by frequent adaptations to nutrient-poor 
