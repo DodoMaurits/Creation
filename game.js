@@ -10211,6 +10211,7 @@ const combinaties = [
   },
   {
     input: ["Oermonocotylen", "Vliegen"],
+    tijd: 100_000_000,
     output: [
       { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
@@ -11055,6 +11056,7 @@ const combinaties = [
   {
     input: ["Oermalviden", "Woestijn"],
     hint: `Sommige malviden voelen zich thuis in de woestijn.`,
+    tijd: 30_000_000,
     output: [
       { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Genotwaren", 
         quote: `Arabia produces frankincense from trees guarded against winged serpents
