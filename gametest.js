@@ -14151,7 +14151,7 @@ const combinaties = [
         tekst: "Je moet eerst nog wat meer halen...",
       },
       normal: {
-        achtergrond: "afb/Overzeese_imperia.jpg",
+        achtergrond: "afb/Overzeese_imperia.jpeg",
         titel: "OVERZEESE IMPERIA 1000 BP",
         tekst: 
         `<span>
