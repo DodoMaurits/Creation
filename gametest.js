@@ -8742,7 +8742,7 @@ const combinaties = [
   },
   {
     input: ["Oereudicoten", "Evolutie"],
-    hint: `Het succes van de eudicoten is te zien aan de vele vormen van evolutie.`,
+    /*hint: `Het succes van de eudicoten is te zien aan de vele vormen van evolutie.`,*/
     tijd: 95_000_000,
     output: [
       { naam: "Oerfabiden", icoon: "icons/Oerfabiden.png", map: "Planten", 
