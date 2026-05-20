@@ -11616,6 +11616,7 @@ const combinaties = [
   {
     input: ["Oerasteriden", "Bos"],
     hint: `Sommige asteriden volgen een aparte lijn als bekende bosbloemen.`,
+    tijd: 90_000_000,
     output: [
       { naam: "Hortensia", icoon: "icons/Hortensia.png", map: "Bloemen", 
         quote: `Hydrangeas change colour with the soil, a most curious and pleasing effect
