@@ -13973,7 +13973,7 @@ const combinaties = [
         tekst: "Je moet eerst nog wat meer halen...",
       },
       normal: {
-        achtergrond: "afb/Landbouw.jpg",
+        achtergrond: "afb/Landbouw.jpeg",
         titel: "LANDBOUW 12.000 BP",
         tekst: 
         `<span>
