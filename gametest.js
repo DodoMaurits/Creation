@@ -421,6 +421,7 @@ const mappen = [
       { naam: "Kruidnagel", icoon: "icons/Kruidnagel.png" }, /*40*/
       { naam: "Gember", icoon: "icons/Gember.png" }, /*35*/
       { naam: "Kurkuma", icoon: "icons/Kurkuma.png" }, /*35*/
+      { naam: "Munt", icoon: "icons/Munt.png" }, /*25*/
       { naam: "Tijm", icoon: "icons/Tijm.png" }, /*5*/
       { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png" }, /*10*/
       { naam: "Kaneel", icoon: "icons/Kaneel.png" }, /*10*/
@@ -680,7 +681,6 @@ const mappen = [
       { naam: "Courgettes", icoon: "icons/Courgettes.png" }, /*30*/
       { naam: "Bieten", icoon: "icons/Bieten.png" }, /*30*/
       { naam: "Spinazie", icoon: "icons/Spinazie.png" }, /*30*/
-      { naam: "Munt", icoon: "icons/Munt.png" }, /*25*/
       { naam: "Cassave", icoon: "icons/Cassave.png" }, /*10*/
       { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png" }, /*5*/
       { naam: "Aubergines", icoon: "icons/Aubergines.png" }, /*5*/
