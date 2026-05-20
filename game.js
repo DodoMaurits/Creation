@@ -12187,10 +12187,6 @@ const combinaties = [
         quote: `Oregano is the taste of the Mediterranean itself
         <br><br>- Elizabeth David`
       },
-      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
-        quote: `The potato is a most valuable root for sustenance
-        <br><br>- James Boswell`
-      },
       { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
         quote: `Sage is singularly good for the head and brain
         <br><br>- Nicholas Culpeper`
