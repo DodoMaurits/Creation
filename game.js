@@ -7996,6 +7996,18 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oermonocotylen", "Gif"],
+    hint: `Sommige monocotylen maken van gif hun strategie en redding.`,
+    tijd: 70_000_000,
+    output: [
+      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
+        arrival of spring
+        <br><br>- Anna Pavord`
+      }
+    ]
+  },
+  {
     input: ["Oereudicoten", "Berg"],
     tijd: 95_000_000,
     output: [
@@ -10123,20 +10135,6 @@ const combinaties = [
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
         on which we write
         <br><br>- Plinius de Oudere`
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
-        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
-  {
-    input: ["Oermonocotylen", "Gif"],
-    hint: `Sommige monocotylen maken van gif hun strategie en redding.`,
-    output: [
-      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
-        quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
-        arrival of spring
-        <br><br>- Anna Pavord`
       }
     ],
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
