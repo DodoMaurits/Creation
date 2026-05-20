@@ -13794,7 +13794,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/Landbouw.jpg",
-        titel: "Landbouw 12.000 BP",
+        titel: "LANDBOUW 12.000 BP",
         tekst: 
         `<span>
         </span>`,
@@ -13893,7 +13893,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/Schrift.jpg",
-        titel: "Schrift 5000 BP",
+        titel: "SCHRIFT 5000 BP",
         tekst: 
         `<span>
         </span>`,
@@ -13997,7 +13997,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/Overzeese_imperia.jpg",
-        titel: "Overzeese Imperia 1000 BP",
+        titel: "OVERZEESE IMPERIA 1000 BP",
         tekst: 
         `<span>
         </span>`,
