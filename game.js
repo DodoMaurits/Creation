@@ -12116,6 +12116,7 @@ const combinaties = [
   {
     input: ["Oerericales", "Gif"],
     hint: `Sommige ericales kiezen voor de strategie van het gif.`,
+    tijd: 40_000_000,
     output: [
       { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
