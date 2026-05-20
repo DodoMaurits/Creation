@@ -469,7 +469,6 @@ const mappen = [
       { naam: "Platanen", icoon: "icons/Platanen.png" },
       { naam: "Iepen", icoon: "icons/Iepen.png" }, /*50*/
       { naam: "Populieren", icoon: "icons/Populieren.png" }, /*50*/
-      { naam: "Oliepalmen", icoon: "icons/Oliepalmen.png" }, /*50*/
       { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png" }, /*50*/
       { naam: "Paardenkastanjes", icoon: "icons/Paardenkastanjes.png" }, /*50*/
       { naam: "Lindes", icoon: "icons/Lindes.png" }, /*50*/
