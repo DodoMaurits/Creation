@@ -13476,7 +13476,7 @@ const combinaties = [
   {
     input: ["Beren", "Bamboe"], 
     hint: `Sommige beren zijn onlosmakelijk verbonden aan bamboebossen.`,
-    tijd: 20_000_000,
+    tijd: 4_000_000,
     output: [
       { naam: "Pandaberen", icoon: "icons/Pandaberen.png", map: "Carnivoren", 
         quote: `The giant panda’s survival depends entirely on the availability of bamboo and intact forest corridors
