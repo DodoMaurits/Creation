@@ -4687,15 +4687,7 @@ const combinaties = [
         to trace a perfect circle
         <br><br>- Pablo Picasso`
       }
-    ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Wormen", 
-        titel: "Probeer opnieuw in het Cambrium",
-        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
-        <br><br>Eerst nodig: wormen.`
-      }
-    }
+    ]
   },
   {
     input: [
@@ -14064,10 +14056,7 @@ const combinaties = [
         quote: `A sailboat is not a means of transport, but a way of being in the world
         <br><br>- Bernard Moitessier`
       }
-    ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
-        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+    ]
   },
 //------------ THRESHOLD 13: SCHRIFT 5000 --------------//
   {
@@ -14105,10 +14094,7 @@ const combinaties = [
         quote: `The strength of steel lies in its refinement through fire
         <br><br>- Henry Bessemer`
       }
-    ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+    ]
   },
   {
     input: ["Mens", "Karpers"],
