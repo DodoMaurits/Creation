@@ -14054,8 +14054,10 @@ const combinaties = [
     ]
   },
   {
-    input: ["Vlot", "Katoen"],
-    hint: `Zou je met katoen niet meer wind kunnen vangen?`,
+    input: [
+      ["Vlot", "Papyrusriet"], ["Vlot", "Waterriet"], ["Vlot", "Vlas"], ["Vlot", "Hennep"]
+    ],
+    hint: `Zou je met iets van een licht materiaal niet meer wind kunnen vangen?`,
     tijd: 5300,
     output: [
       { naam: "Zeilboot", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
