@@ -13961,6 +13961,19 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Mens", "IJzer"], ["Mens", "Kalk"], ["Mens", "Kalksteen"]
+    ],
+    hint: `Een pallet avan ijzer, kalk en houtskool op grotwanden maakt rood, wit en zwart.`,
+    tijd: 66000,
+    output: [
+      { naam: "Pigment", icoon: "icons/Pigment.png", map: "Uitvindingen", 
+        quote: `Each day brings its own colours to be chosen, mixed, pigments of joy, happy moments, smiles and laughter
+        <br><br>- John McLeod`
+      }
+    ]
+  },
+  {
     input: ["Mens", "Wolven"],
     hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
     tijd: 23000,
