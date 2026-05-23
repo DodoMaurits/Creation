@@ -13890,9 +13890,11 @@ const combinaties = [
         <br><br>Eerst nodig: honden.` } }
   },
   {
-    input: ["Vlot", "Katoen"],
-    hint: `Zou je met katoen niet meer wind kunnen vangen?`,
-    tijd: 5_300,
+    input: [
+      ["Vlot", "Papyrusriet"], ["Vlot", "Waterriet"], ["Vlot", "Vlas"], ["Vlot", "Hennep"]
+    ],
+    hint: `Zou je met iets van een licht materiaal niet meer wind kunnen vangen?`,
+    tijd: 5300,
     output: [
       { naam: "Zeilboot", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
         quote: `A sailboat is not a means of transport, but a way of being in the world
