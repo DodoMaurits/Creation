@@ -13880,6 +13880,16 @@ const combinaties = [
     ]
   },
   {
+    input:["Mens", "Hout"], 
+    hint: `Hout kun je slijpen en scherp maken.`,
+    output: [
+      { naam: "Speer", icoon: "icons/Speer.png", map: "Uitvindingen", 
+        quote: `I wield my spear in the name of justice
+        <br><br>- Zhao Yun`
+      }
+    ]
+  },
+  {
     input: ["Mens", "Vuur"],
     hint: `Wanneer de mens meester is over het vuur, is hij niet meer te temmen.`,
     tijd: 1_000_000,
@@ -13903,10 +13913,27 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: ["Speer", "Mens"], 
+    hint: `Bij afwezigheid van klauwen, olifantenhuid of kracht, pakten mensen wat voorhanden was.`,
+    output: [
+      { naam: "Jacht", icoon: "icons/Jacht.png", map: "Samenleving", 
+        quote: `When the last deer disappears into the morning mist, when the last elk vanishes from the hills,
+        when the last buffalo falls on the plains, I will hunt mice for I am a hunter and I must have my freedom
+        <br><br>- Chief Joseph`
+      }
+    ]
+  },
 //------------ THRESHOLD 11: LAATSTE IJSTIJD 100.000 --------------//
   {
-    input: ["Mens", "Katoen"],
-    hint: `Wat katoen kan doen.`,
+    input: [
+      ["Jacht", "map:Carnivoren"], ["Jacht", "map:Hoefdieren"], 
+      ["Jacht", "Oercynodonten"], ["Jacht", "Oerplacentalia"], ["Jacht", "Oerbuideldieren"], ["Jacht", "Vogelbekdieren"],
+      ["Jacht", "Klipdassen"], ["Jacht", "Luiaarden"], ["Jacht", "Oerslurfdieren"], ["Jacht", "Hazen"], 
+      ["Jacht", "Kangoeroes"], ["Jacht", "Wombats"], ["Jacht", "Mammoeten"], ["Jacht", "Olifanten"], ["Jacht", "Bevers"],
+      ["Jacht", "Capibara"]
+    ],
+    hint: `Kijken wat de jacht opbrengt...`,
     tijd: 100_000,
     output: [
       { naam: "Kleding", icoon: "icons/Kleding.png", map: "Uitvindingen", 
