@@ -13788,6 +13788,22 @@ const combinaties = [
         <br><br>Eerst nodig: ijsberen en kampvuur.` } }
   },
   {
+    input: [
+      ["Mens", "IJzer"], ["Mens", "Kalk"], ["Mens", "Kalksteen"]
+    ],
+    hint: `Een pallet avan ijzer, kalk en houtskool op grotwanden maakt rood, wit en zwart.`,
+    tijd: 66000,
+    output: [
+      { naam: "Pigment", icoon: "icons/Pigment.png", map: "Uitvindingen", 
+        quote: `Each day brings its own colours to be chosen, mixed, pigments of joy, happy moments, smiles and laughter
+        <br><br>- John McLeod`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+        tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
+        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+  },
+  {
     input: ["Mens", "Wolven"],
     hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
     tijd: 23_000,
