@@ -775,7 +775,7 @@ const mappen = [
       { naam: "Makaken", icoon: "icons/Makaken.png" }, /*10*/
       { naam: "Oermensapen", icoon: "icons/Oermensapen.png" }, /*10*/
       { naam: "Neusapen", icoon: "icons/Neusapen.png" }, /*10*/
-      { naam: "Slankapen", icoon: "icons/Slankapen.png" }, /*10*/
+      { naam: "Langoeren", icoon: "icons/Langoeren.png" }, /*10*/
       { naam: "Bavianen", icoon: "icons/Bavianen.png" }, /*10*/
       { naam: "Galago", icoon: "icons/Galago.png" }, /*10*/
       { naam: "Lori", icoon: "icons/Lori.png" }, /*2*/
@@ -13150,7 +13150,7 @@ const combinaties = [
         mangroves
         <br><br>- Dale Smith`
       },
-      { naam: "Slankapen", icoon: "icons/Slankapen.png", map: "Primaten", 
+      { naam: "Langoeren", icoon: "icons/Langoeren.png", map: "Primaten", 
         quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
         <br><br>- Robin Dunbar`
       }
@@ -13192,7 +13192,7 @@ const combinaties = [
         quote: `Macaques exhibit complex social hierarchies and frequent conflict-resolution behaviors
         <br><br>- Carel van Schaik`
       },
-      { naam: "Slankapen", icoon: "icons/Slankapen.png", map: "Primaten", 
+      { naam: "Langoeren", icoon: "icons/Langoeren.png", map: "Primaten", 
         quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
         <br><br>- Robin Dunbar`
       },
