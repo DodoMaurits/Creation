@@ -13740,8 +13740,14 @@ const combinaties = [
   },
 //------------ THRESHOLD 11: LAATSTE IJSTIJD 100.000 --------------//
   {
-    input: ["Mens", "Katoen"],
-    hint: `Wat katoen kan doen.`,
+    input: [
+      ["Jacht", "map:Carnivoren"], ["Jacht", "map:Hoefdieren"], 
+      ["Jacht", "Oercynodonten"], ["Jacht", "Oerplacentalia"], ["Jacht", "Oerbuideldieren"], ["Jacht", "Vogelbekdieren"],
+      ["Jacht", "Klipdassen"], ["Jacht", "Luiaarden"], ["Jacht", "Oerslurfdieren"], ["Jacht", "Hazen"], 
+      ["Jacht", "Kangoeroes"], ["Jacht", "Wombats"], ["Jacht", "Mammoeten"], ["Jacht", "Olifanten"], ["Jacht", "Bevers"],
+      ["Jacht", "Capibara"]
+    ],
+    hint: `Kijken wat de jacht opbrengt...`,
     tijd: 100_000,
     output: [
       { naam: "Kleding", icoon: "icons/Kleding.png", map: "Uitvindingen", 
@@ -13754,7 +13760,7 @@ const combinaties = [
         titel: "Laatste IJstijd", 
         tekst: "Je moet eerst nog wat meer halen...",
         requirements: 
-        ["IJsberen", "Kampvuur"]
+        ["IJsberen", "Speer", "Kampvuur", "Vlot", "Jacht"]
       },
       normal: {
         achtergrond: "afb/IJstijd.jpg",
@@ -13814,7 +13820,7 @@ const combinaties = [
         titel: "Landbouw", 
         tekst: "Je moet eerst nog wat meer halen...",
         requirements: 
-        ["Honden"]
+        ["Kleding"]
       },
       normal: {
         achtergrond: "afb/Landbouw.jpeg",
