@@ -13948,6 +13948,19 @@ const combinaties = [
     }
   },
   {
+    input: [
+      ["Mens", "Obsidiaan"], ["Mens", "Schelp"], ["Mens", "Parel"]
+    ],
+    hint: `De oudste handelsroutes lieten sporen na van obsidiaan, parels en schelpen.`,
+    tijd: 34000,
+    output: [
+      { naam: "Handel", icoon: "icons/Handel.png", map: "Samenleving", 
+        quote: `The demand for money is regulated entirely by its value, and its value by its quantity
+        <br><br>- David Ricardo`
+      }
+    ]
+  },
+  {
     input: ["Mens", "Wolven"],
     hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
     tijd: 23000,
