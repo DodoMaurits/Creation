@@ -13688,6 +13688,19 @@ const combinaties = [
         quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
         <br><br>- Andrew Derocher`
       }
+    ],
+    uitleg: { thresholdElement: { naam: "Mens", titel: "Probeer opnieuw na de mens",
+        tekst: `Mensen bestonden uit verschillende soorten, waarvan alleen de Sapiens het hebben overleefd...
+        <br><br>Eerst nodig: mensen.` } }
+  },
+  {
+    input:["Mens", "Hout"], 
+    hint: `Hout kun je slijpen en scherp maken.`,
+    output: [
+      { naam: "Speer", icoon: "icons/Speer.png", map: "Uitvindingen", 
+        quote: `I wield my spear in the name of justice
+        <br><br>- Zhao Yun`
+      }
     ]
   },
   {
