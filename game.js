@@ -13836,6 +13836,25 @@ const combinaties = [
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
         <br><br>Eerst nodig: ijsberen en kampvuur.` } }
   },
+  {
+    input: [
+      ["Pigment", "Graniet"], ["Pigment", "Basalt"], ["Pigment", "Obsidiaan"], ["Pigment", "Berg"], ["Pigment", "Mica"], 
+      ["Pigment", "Veldspaat"], ["Pigment", "Tufsteen"], ["Pigment", "Kleisteen"], ["Pigment", "Leisteen"], 
+      ["Pigment", "Schalie"], ["Pigment", "Fylliet"], ["Pigment", "Gneis"], ["Pigment", "Zandsteen"], 
+      ["Pigment", "Kwartsiet"], ["Pigment", "Kalksteen"], ["Pigment", "Marmer"], ["Pigment", "Gipssteen"]
+    ],
+    hint: `Hm... is het nog een gekleurde steen of is het een pijp geworden?`,
+    tijd: 66000,
+    output: [
+      { naam: "Kunst", icoon: "icons/Kunst.png", map: "Uitvindingen", 
+        quote: `I dream of painting and then I paint my dream
+        <br><br>- Vincent van Gogh`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+        tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
+        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+  },
 //------------ THRESHOLD 12: LANDBOUW 12.000 --------------//
   {
     input: ["Mens", "Aarde"],
