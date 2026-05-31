@@ -13773,6 +13773,24 @@ const combinaties = [
   },
   {
     input: [
+      ["Mens", "Graniet"], ["Mens", "Basalt"], ["Mens", "Mica"], ["Mens", "Veldspaat"], ["Mens", "Kleisteen"],
+      ["Mens", "Leisteen"], ["Mens", "Schalie"], ["Mens", "Fylliet"], ["Mens", "Gneis"], ["Mens", "Zandsteen"],
+      ["Mens", "Kalksteen"], ["Mens", "Marmer"], ["Mens", "Gipssteen"]
+    ],
+    hint: `Geef de mens een steen en hij maakt het zijn thuis.`,
+    tijd: 12_850,
+    output: [
+      { naam: "Woning", icoon: "icons/Woning.png", map: "Samenleving", 
+        quote: `To dwell is to be at peace in a place
+        <br><br>- Martin Heidegger`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+        tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
+        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+  },
+  {
+    input: [
       ["Mens", "Obsidiaan"], ["Mens", "Schelp"], ["Mens", "Parel"]
     ],
     hint: `De oudste handelsroutes lieten sporen na van obsidiaan, parels en schelpen.`,
@@ -14067,6 +14085,36 @@ const combinaties = [
       { naam: "Zeilboot", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
         quote: `A sailboat is not a means of transport, but a way of being in the world
         <br><br>- Bernard Moitessier`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+  {
+    input: [
+      ["Oven", "Sorghum"], ["Oven", "Gierst"], ["Oven", "Tarwe"], ["Oven", "Gerst"]
+    ],
+    hint: `Word warm, bak en rijs!`,
+    tijd: 11_500,
+    output: [
+      { naam: "Brood", icoon: "icons/Brood.png", map: "Granen", 
+        quote: `To eat plain food and live honestly is the way of virtue
+        <br><br>- Confucius`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+  {
+    input: ["Melk", "Bacterie"],
+    hint: `In Oost-Europa lieten ze melk wat langer staan voor bacteriën..`,
+    tijd: 7_500,
+    output: [
+      { naam: "Kaas", icoon: "icons/Kaas.png", map: "Genotwaren", 
+        quote: `The Scythians store milk in animal skins, shaking it until it becomes thick and usable
+        <br><br>- Herodotos`
       }
     ],
     uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
