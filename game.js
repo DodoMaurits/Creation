@@ -13809,7 +13809,7 @@ const combinaties = [
     input: [
       ["Mens", "IJzer"], ["Mens", "Kalk"], ["Mens", "Kalksteen"], ["Houtskool", "Mens"]
     ],
-    hint: `Een pallet avan ijzer, kalk en houtskool op grotwanden maakt rood, wit en zwart.`,
+    hint: `Een pallet van ijzer, kalk en houtskool op grotwanden maakt rood, wit en zwart.`,
     tijd: 66000,
     output: [
       { naam: "Pigment", icoon: "icons/Pigment.png", map: "Uitvindingen", 
