@@ -14108,7 +14108,7 @@ const combinaties = [
         <br><br>Eerst nodig: honden.` } }
   },
   {
-    input: ["Melk", "Bacterie"],
+    input: ["Melk", "Bacteriën"],
     hint: `In Oost-Europa lieten ze melk wat langer staan voor bacteriën..`,
     tijd: 7_500,
     output: [
