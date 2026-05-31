@@ -13923,7 +13923,7 @@ const combinaties = [
       ["Jacht", "Oercynodonten"], ["Jacht", "Oerplacentalia"], ["Jacht", "Oerbuideldieren"], ["Jacht", "Vogelbekdieren"],
       ["Jacht", "Klipdassen"], ["Jacht", "Luiaarden"], ["Jacht", "Oerslurfdieren"], ["Jacht", "Hazen"], 
       ["Jacht", "Kangoeroes"], ["Jacht", "Wombats"], ["Jacht", "Mammoeten"], ["Jacht", "Olifanten"], ["Jacht", "Bevers"],
-      ["Jacht", "Capibara"]
+      ["Jacht", "Capibara"], ["Mens", "Vlas"], ["Mens", "Katoen"]
     ],
     hint: `Kijken wat de jacht opbrengt...`,
     tijd: 100_000,
@@ -13962,7 +13962,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Mens", "IJzer"], ["Mens", "Kalk"], ["Mens", "Kalksteen"]
+      ["Mens", "IJzer"], ["Mens", "Kalk"], ["Mens", "Kalksteen"], ["Houtskool", "Mens"]
     ],
     hint: `Een pallet avan ijzer, kalk en houtskool op grotwanden maakt rood, wit en zwart.`,
     tijd: 66000,
@@ -13970,6 +13970,44 @@ const combinaties = [
       { naam: "Pigment", icoon: "icons/Pigment.png", map: "Uitvindingen", 
         quote: `Each day brings its own colours to be chosen, mixed, pigments of joy, happy moments, smiles and laughter
         <br><br>- John McLeod`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Bot"],
+    hint: `Maakt bot geluid? Laten we dat onderzoeken.`,
+    tijd: 43000,
+    output: [
+      { naam: "Fluit", icoon: "icons/Fluit.png", map: "Uitvindingen", 
+        quote: `A flute's voice - floating above the fields in the evening mist
+        <br><br>- Bai Juyi`
+      },
+      { naam: "Muziek", icoon: "icons/Muziek.png", map: "Brein", 
+        quote: `Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything
+        <br><br>- Plato`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Rotan"],
+    hint: `Kijk eens wat een mens kan met rotan.`,
+    tijd: 27000,
+    output: [
+      { naam: "Mand", icoon: "icons/Mand.png", map: "Uitvindingen", 
+        quote: `I too had woven a kind of basket of a delicate texture, but I had not made it worth any one's while to 
+        buy them
+        <br><br>- Henry Thoreau`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Hennep"],
+    hint: `Van hennep is het makkelijk binden.`,
+    tijd: 50000,
+    output: [
+      { naam: "Touw", icoon: "icons/Touw.png", map: "Uitvindingen", 
+        quote: `A sailor's life is woven of ropes, wind, and water
+        <br><br>- Joseph Conrad`
       }
     ]
   },
@@ -14016,6 +14054,26 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: ["Oven", "Klei"],
+    hint: `Hé een oven! Bakken maar..`,
+    output: [
+      { naam: "Keramiek", icoon: "icons/Keramiek.png", map: "Uitvindingen", 
+        quote: `We shape clay into a pot, but it is the emptiness inside that holds whatever we want
+        <br><br>- Lao Tzu`
+      }
+    ]
+  },
+  {
+    input: ["Oven", "Hout"],
+    hint: `Een smeulbrand in gecontroleerd vuur levert de perfecte pigment voor zwart`,
+    output: [
+      { naam: "Houtskool", icoon: "icons/Houtskool.png", map: "Vuur", 
+        quote: `With charcoal the hand thinks directly on the surface
+        <br><br>- John Ruskin`
+      }
+    ]
+  },
 //------------ THRESHOLD 12: LANDBOUW 12.000 --------------//
   {
     input: ["Mens", "Aarde"],
@@ -14053,6 +14111,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["map:Granen", "Water"], 
+    hint: `Granen pappen en nat houden..`,
+    tijd: 11500,
+    output: [
+      { naam: "Pap", icoon: "icons/Pap.png", map: "Granen", 
+        quote: `Cooking grains in water transforms them into a digestible, nourishing porridge
+        <br><br>- Harold McGee`
+      }
+    ]
+  },
+  {
     input: [
       ["map:Granen", "Gist"], ["Hop", "map:Granen"]
     ],
@@ -14062,6 +14131,19 @@ const combinaties = [
       { naam: "Bier", icoon: "icons/Bier.png", map: "Genotwaren", 
         quote: `Beer was the standard drink of ancient Egypt, safer than water and central to daily sustenance
         <br><br>- Alan Gardiner`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Mens", "Geiten"], ["Koeien", "Mens"]
+    ],
+    hint: `Sommige zoogdieren voeden hun jongen zelf, maar laat de mens het niet zien.`,
+    tijd: 11_500,
+    output: [
+      { naam: "Melk", icoon: "icons/Melk.png", map: "Genotwaren", 
+        quote: `Milk is the essence of life and strength among the offerings to the gods
+        <br><br>- Rigveda`
       }
     ]
   },
@@ -14084,6 +14166,17 @@ const combinaties = [
       { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
         quote: `I am as content as a cow in a meadow
         <br><br>- Henry Thoreau`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Schapen"],
+    hint: `Scheer als je het koud hebt.`,
+    tijd: 11_000,
+    output: [
+      { naam: "Wol", icoon: "icons/Wol.png", map: "Materialen", 
+        quote: `Wool and sheep are among the chief wealth of pastoral peoples
+        <br><br>- Herodotos`
       }
     ]
   },
