@@ -398,7 +398,6 @@ const mappen = [
       { naam: "Oerericales", icoon: "icons/Oerericales.png" }, /*95*/
       { naam: "Oerlamiden", icoon: "icons/Oerlamiden.png" }, /*95*/
       { naam: "Oercampanuliden", icoon: "icons/Oercampanuliden.png" }, /*95*/
-      { naam: "Hortensia", icoon: "icons/Hortensia.png" }, /*90*/
       { naam: "Vetplanten", icoon: "icons/Vetplanten.png" }, /*80*/
       { naam: "Buxus", icoon: "icons/Buxus.png" }, /*80*/
       { naam: "Brandnetels", icoon: "icons/Brandnetels.png" }, /*60*/
@@ -598,6 +597,7 @@ const mappen = [
       { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png" }, /*95*/
       { naam: "Klaprozen", icoon: "icons/Klaprozen.png" }, /*95*/
       { naam: "Lotussen", icoon: "icons/Lotussen.png" }, /*95*/
+      { naam: "Hortensia", icoon: "icons/Hortensia.png" }, /*90*/
       { naam: "Narcissen", icoon: "icons/Narcissen.png" }, /*70*/
       { naam: "Krokussen", icoon: "icons/Krokussen.png" }, /*50*/
       { naam: "Gladiolen", icoon: "icons/Gladiolen.png" }, /*50*/
