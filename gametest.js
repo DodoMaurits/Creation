@@ -14402,6 +14402,23 @@ const combinaties = [
   },
   {
     input: [
+      ["Glas", "Water"], ["Glas", "Zand"],
+    ],
+    hint: `Met elke druppel, elke zandkorrel, gezien door glas, is de snelheid waarmee de Aarde draait te zien.`,
+    tijd: 3350,
+    output: [
+      { naam: "Klok", icoon: "icons/Klok.png", map: "Uitvindingen", 
+        quote: `What then is time? If no one asks me, I know; if I wish to explain it, I do not know
+        <br><br>- Augustinus van Hippo`
+      },
+      { naam: "Tijd", icoon: "icons/Tijd.png", map: "Brein", 
+        quote: `The distinction between past, present and future is only a stubbornly persistent illusion
+        <br><br>- Albert Einstein`
+      }
+    ]
+  },
+  {
+    input: [
       ["Bruinkool", "IJzer"], ["Steenkool", "IJzer"], ["Oven", "IJzer"]
     ],
     hint: `Hm.. hoe smeed je ijzer het heetst?`,
