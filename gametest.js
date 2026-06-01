@@ -14391,6 +14391,19 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Mens", "Theeplanten"], ["Mens", "Jasmijn"], ["Mens", "Lavendel"], ["Mens", "Kamille"], ["Mens", "Rooibos"]
+    ],
+    hint: `Theeplanten.. de naam zegt het al.`,
+    tijd: 4700,
+    output: [
+      { naam: "Thee", icoon: "icons/Thee.png", map: "Genotwaren", 
+        quote: `Drink your tea slowly and reverently, as if it is the axis on which the earth revolves
+        <br><br>- Thich Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2200,
