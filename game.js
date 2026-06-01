@@ -10526,6 +10526,28 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
+    input: ["Weide", "Oereudicoten"],
+    hint: `Sommige eudicoten gedijen op grasweides.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+        quote: `Carrying a poppy he passes through the quarrel
+        <br><br>- Kobayashi Issa`
+      },
+      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+        quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
+        <br><br>- Michael Dirr`
+      },
+      { naam: "Boterbloemen", icoon: "icons/Boterbloemen.png", map: "Bloemen", 
+        quote: `Buttercups turn whole meadows into sheets of gold under the sun
+        <br><br>- Richard Mabey`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
     input: [
       ["Weide", "Gras"], ["Steppe", "Gras"]
     ],
