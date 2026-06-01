@@ -14077,6 +14077,20 @@ const combinaties = [
     }
   },
   {
+    input: ["Tin", "Koper"],
+    hint: `Hoe harder de koper, hoe meer zit in tin.`, 
+    tijd: 5300,
+    output: [
+      { naam: "Brons", icoon: "icons/Brons.png", map: "Chemie", 
+        quote: `Their armor was of bronze, and their houses of bronze, and with bronze they worked
+        <br><br>- Hesiodos`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+  {
     input: ["Druiven", "Gist"],
     hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
     tijd: 8_000,
