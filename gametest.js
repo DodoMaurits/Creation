@@ -14354,6 +14354,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Nomaden", "Paarden"],
+    hint: `Toen de nomaden meester werden over het paard, was de tegenpool van de stad geboren.`,
+    tijd: 6000,
+    output: [
+      { naam: "Ruiternomaden", icoon: "icons/Ruiternomaden.png", map: "Samenleving", 
+        quote: `The greatest joy a man can know is to conquer his enemies and ride their horses
+        <br><br>- Genghis Khan`
+      }
+    ]
+  },
+  {
     input: ["Melk", "Bacteriën"],
     hint: `In Oost-Europa lieten ze melk wat langer staan voor bacteriën..`,
     tijd: 7_500,
