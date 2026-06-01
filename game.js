@@ -13596,6 +13596,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Fynbos", "Oereudicoten"],
+    hint: `Sommige eudicoten voelen zich thuis in het fynbos.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Protea", icoon: "icons/Protea.png", map: "Bloemen", 
+        quote: `South Africa’s flora is among the most remarkable in the world, with proteas as its emblem
+        <br><br>- E.H. Wilson`
+      }
+    ]
+  },
+  {
     input: ["Fynbos", "Oerfabiden"],
     hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
     tijd: 10_000_000,
