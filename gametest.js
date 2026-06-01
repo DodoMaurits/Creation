@@ -615,6 +615,7 @@ const mappen = [
       { naam: "Chrysanten", icoon: "icons/Chrysanten.png" }, /*25*/
       { naam: "Irissen", icoon: "icons/Irissen.png" }, /*20*/
       { naam: "Gerbera", icoon: "icons/Gerbera.png" }, /*20*/
+      { naam: "Protea", icoon: "icons/Protea.png" }, /*15*/
       { naam: "Tulpen", icoon: "icons/Tulpen.png" }, /*15*/
       { naam: "Hibiscus", icoon: "icons/Hibiscus.png" }, /*10*/
       { naam: "Geraniums", icoon: "icons/Geraniums.png" }, /*10*/
@@ -13837,6 +13838,17 @@ const combinaties = [
       { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
         quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
         <br><br>- W.J. Bean`
+      }
+    ]
+  },
+  {
+    input: ["Fynbos", "Oereudicoten"],
+    hint: `Sommige eudicoten voelen zich thuis in het fynbos.`,
+    tijd: 15_000_000,
+    output: [
+      { naam: "Protea", icoon: "icons/Protea.png", map: "Bloemen", 
+        quote: `South Africa’s flora is among the most remarkable in the world, with proteas as its emblem
+        <br><br>- E.H. Wilson`
       }
     ]
   },
