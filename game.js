@@ -14434,6 +14434,20 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
         tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
         <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
+  },
+  {
+    input: ["Kola", "Coca"],
+    hint: `We voegen de kolanoten bij cocabladeren..`,
+    tijd: 140,
+    output: [
+      { naam: "Cola", icoon: "icons/Cola.png", map: "Genotwaren", 
+        quote: `Coca-Cola was originally intended as a patent medicine for headaches and fatigue
+        <br><br>- John Pemberton`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
+        tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
+        <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
   }
 ];
 
