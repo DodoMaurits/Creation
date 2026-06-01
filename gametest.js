@@ -608,6 +608,7 @@ const mappen = [
       { naam: "Rododendron", icoon: "icons/Rododendron.png" }, /*40*/
       { naam: "Lelies", icoon: "icons/Lelies.png" }, /*40*/
       { naam: "Hyacinten", icoon: "icons/Hyacinten.png" }, /*40*/
+      { naam: "Boterbloemen", icoon: "icons/Boterbloemen.png" }, /*40*/
       { naam: "Anjers", icoon: "icons/Anjers.png" }, /*30*/
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png" }, /*30*/
       { naam: "Chrysanten", icoon: "icons/Chrysanten.png" }, /*25*/
@@ -10942,6 +10943,25 @@ const combinaties = [
       { naam: "Krokussen", icoon: "icons/Krokussen.png", map: "Bloemen", 
         quote: `Welcome, wild harbinger of spring! To this small nook of Earth
         <br><br>- Bernard Barton`
+      }
+    ]
+  },
+  {
+    input: ["Weide", "Oereudicoten"],
+    hint: `Sommige eudicoten gedijen op grasweides.`,
+    tijd: 40_000_000,
+    output: [
+      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+        quote: `Carrying a poppy he passes through the quarrel
+        <br><br>- Kobayashi Issa`
+      },
+      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+        quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
+        <br><br>- Michael Dirr`
+      },
+      { naam: "Boterbloemen", icoon: "icons/Boterbloemen.png", map: "Bloemen", 
+        quote: `Buttercups turn whole meadows into sheets of gold under the sun
+        <br><br>- Richard Mabey`
       }
     ]
   },
