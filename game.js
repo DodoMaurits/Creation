@@ -14035,6 +14035,14 @@ const combinaties = [
       { naam: "Houtskool", icoon: "icons/Houtskool.png", map: "Vuur", 
         quote: `With charcoal the hand thinks directly on the surface
         <br><br>- John Ruskin`
+      },
+      { naam: "Roet", icoon: "icons/Roet.png", map: "Vuur", 
+        quote: `The smoke lowered down from chimney-pots, making a soft black drizzle
+        <br><br>- Charles Dickens`
+      },
+      { naam: "As", icoon: "icons/As.png", map: "Vuur",
+        quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
+        <br><br>- Alexander Anderson`
       }
     ],
     uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
