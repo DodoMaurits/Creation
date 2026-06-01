@@ -14509,6 +14509,17 @@ const combinaties = [
         <br><br>- Voltaire`
       }
     ]
+  },
+  {
+    input: ["Kola", "Coca"],
+    hint: `We voegen de kolanoten bij cocabladeren..`,
+    tijd: 140,
+    output: [
+      { naam: "Cola", icoon: "icons/Cola.png", map: "Genotwaren", 
+        quote: `Coca-Cola was originally intended as a patent medicine for headaches and fatigue
+        <br><br>- John Pemberton`
+      }
+    ]
   }
 ];
 
