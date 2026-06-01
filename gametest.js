@@ -14217,6 +14217,17 @@ const combinaties = [
     }
   },
   {
+    input: ["Tin", "Koper"],
+    hint: `Hoe harder de koper, hoe meer zit in tin.`, 
+    tijd: 5300,
+    output: [
+      { naam: "Brons", icoon: "icons/Brons.png", map: "Chemie", 
+        quote: `Their armor was of bronze, and their houses of bronze, and with bronze they worked
+        <br><br>- Hesiodos`
+      }
+    ]
+  },
+  {
     input: ["Druiven", "Gist"],
     hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
     tijd: 8000,
