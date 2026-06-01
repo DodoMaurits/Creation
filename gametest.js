@@ -14328,6 +14328,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Kool", "Bacteriën"],
+    hint: `Ook kool eet de mens graag gefermenteerd.`,
+    tijd: 2200,
+    output: [
+      { naam: "Zuurkool", icoon: "icons/Zuurkool.png", map: "Groenten", 
+        quote: `In northern European traditions, preserved cabbage is a symbol of winter endurance
+        <br><br>- Jacob Grimm`
+      }
+    ]
+  },
+  {
     input: ["Mens", "Karpers"],
     hint: `Sommige karpers voelen zich thuis bij de mens.. of andersom?`,
     tijd: 1700,
