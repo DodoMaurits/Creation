@@ -14296,6 +14296,22 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: [
+      ["Mens", "Theeplanten"], ["Mens", "Jasmijn"], ["Mens", "Lavendel"], ["Mens", "Kamille"], ["Mens", "Rooibos"]
+    ],
+    hint: `Theeplanten.. de naam zegt het al.`,
+    tijd: 4700,
+    output: [
+      { naam: "Thee", icoon: "icons/Thee.png", map: "Genotwaren", 
+        quote: `Drink your tea slowly and reverently, as if it is the axis on which the earth revolves
+        <br><br>- Thich Nhat Hanh`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2_200,
