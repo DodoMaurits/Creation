@@ -14346,6 +14346,20 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Hout", "Bot"],
+    hint: `Van het hout zoekt men buigzame soorten, van de botten haalt het de pezen voor draad.`,
+    tijd: 4000,
+    output: [
+      { naam: "Pijl-en-boog", icoon: "icons/Pijl-en-boog.png", map: "Uitvindingen", 
+        quote: `An army without arrows is like a body without blood
+        <br><br>- Genghis Khan`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Kool", "Bacteriën"],
     hint: `Ook kool eet de mens graag gefermenteerd.`,
     tijd: 2200,
