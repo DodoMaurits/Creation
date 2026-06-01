@@ -8156,6 +8156,10 @@ const combinaties = [
         quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
         <br><br>- W.J. Bean`
       },
+      { naam: "Clematissen", icoon: "icons/Clematissen.png", map: "Bloemen", 
+        quote: `Clematis is the gardener’s poetry on walls and fences
+        <br><br>- Vita Sackville-West`
+      },
       { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
         quote: `The grapevine is a woody climber that produces berries arranged in bunches
         <br><br>- Julia Morton`
