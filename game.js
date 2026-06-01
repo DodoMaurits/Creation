@@ -13798,7 +13798,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Mens", "Hout"], ["Mens", "Papyrusriet"], ["Mens", "Waterriet"]
+      ["Mens", "Hout"], ["Mens", "Waterriet"]
     ],
     hint: `Met hout of riet weet de mens wel raad.`,
     output: [
@@ -13976,6 +13976,20 @@ const combinaties = [
       { naam: "Oven", icoon: "icons/Oven.png", map: "Vuur", 
         quote: `Control of fire reached a new level with the enclosed oven, where heat itself became a tool
         <br><br>- Lewis Mumford`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+        tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
+        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+  },
+  {
+    input: ["Woning", "Woning"],
+    hint: `Steeds meer mensen willen op één plek blijven wonen, maar ook steeds meer op dezelfde fijne plekjes.`,
+    tijd: 10_000,
+    output: [
+      { naam: "Stad", icoon: "icons/Stad.png", map: "Samenleving", 
+        quote: `The city is like some great house, and the house in turn a small city
+        <br><br>- Leon Alberti`
       }
     ],
     uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
