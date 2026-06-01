@@ -14416,6 +14416,33 @@ const combinaties = [
     }
   },
   {
+    input: ["Mens", "Kool"],
+    hint: `Kool heeft veel potentie om zich tot verschillende soorten te laten telen.`,
+    tijd: 700,
+    output: [
+      { naam: "Broccoli", icoon: "icons/Broccoli.png", map: "Groenten", 
+        quote: `Broccoli contains a wide range of vitamins, minerals, fiber, and sulfur-containing compounds
+        <br><br>- Harold McGee`
+      },
+      { naam: "Bloemkool", icoon: "icons/Bloemkool.png", map: "Groenten", 
+        quote: `The cauliflower head is a dense cluster of undeveloped flower buds
+        <br><br>- David Goodsell`
+      },
+      { naam: "Rode kool", icoon: "icons/Rode kool.png", map: "Groenten", 
+        quote: `Few vegetables are as visually striking as red cabbage when sliced open
+        <br><br>- Anna Pavord`
+      },
+      { naam: "Spruitjes", icoon: "icons/Spruitjes.png", map: "Groenten", 
+        quote: `Brussels sprouts were developed in Belgium from wild cabbage varieties during the Middle Ages
+        <br><br>- Andrew Smith`
+      },
+      { naam: "Boerenkool", icoon: "icons/Boerenkool.png", map: "Groenten", 
+        quote: `Simple greens such as kale belong to the ordinary dignity of everyday food
+        <br><br>- George Orwell`
+      }
+    ]
+  },
+  {
     input: ["Mens", "Vinken"],
     hint: `Sommige vinken voelen zich thuis bij de mens.. of andersom?`,
     tijd: 400,
