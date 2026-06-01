@@ -14306,6 +14306,10 @@ const combinaties = [
     hint: `Scheer als je het koud hebt.`,
     tijd: 11_000,
     output: [
+      { naam: "Nomaden", icoon: "icons/Nomaden.png", map: "Samenleving", 
+        quote: `We live, if we are able to live, in an infant past, planted in fields that were ours
+        <br><br>- Mahmoud Darwish`
+      },
       { naam: "Wol", icoon: "icons/Wol.png", map: "Materialen", 
         quote: `Wool and sheep are among the chief wealth of pastoral peoples
         <br><br>- Herodotos`
@@ -14335,6 +14339,17 @@ const combinaties = [
       { naam: "Brood", icoon: "icons/Brood.png", map: "Granen", 
         quote: `To eat plain food and live honestly is the way of virtue
         <br><br>- Confucius`
+      }
+    ]
+  },
+  {
+    input: ["Stad", "Stad"],
+    hint: `Kunnen we groter samenleven dan de stad alleen?`,
+    tijd: 4400,
+    output: [
+      { naam: "Imperium", icoon: "icons/Imperium.png", map: "Samenleving", 
+        quote: `When rewards are clear and punishments certain, the state is strong
+        <br><br>- Han Fei`
       }
     ]
   },
