@@ -13741,6 +13741,24 @@ const combinaties = [
     }
   },
   {
+    input: ["Leger", "Leger"],  
+    hint: `Wie de oorlog overleeft en verliest, wacht de onmenselijking.`,
+    output: [
+      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
+        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
+        we no longer exist 
+        <br><br>- Epicurus`
+      },
+      { naam: "Slavernij", icoon: "icons/Slavernij.png", map: "Samenleving", 
+        quote: `I freed a thousand slaves. I could have freed a thousand more if only they knew they were slaves
+        <br><br>- Harriet Tubman`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Mens", titel: "Probeer opnieuw na de mens",
+        tekst: `Mensen bestonden uit verschillende soorten, waarvan alleen de Sapiens het hebben overleefd...
+        <br><br>Eerst nodig: mensen.` } }
+  },
+  {
     input: [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
