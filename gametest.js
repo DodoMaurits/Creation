@@ -14380,6 +14380,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Mens", "Cacao"],
+    hint: `Ontdek hoe cacao een vreugdevol stofje in de hersenen vrijmaakt.`,
+    tijd: 1600,
+    output: [
+      { naam: "Chocolade", icoon: "icons/Chocolade.png", map: "Genotwaren", 
+        quote: `This chocolate drink is the most precious thing I have ever encountered in the New World
+        <br><br>- Hernán Cortés`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2200,
