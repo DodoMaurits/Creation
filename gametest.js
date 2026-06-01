@@ -14185,7 +14185,7 @@ const combinaties = [
   {
     input: ["map:Granen", "Water"], 
     hint: `Granen pappen en nat houden..`,
-    tijd: 11500,
+    tijd: 11_500,
     output: [
       { naam: "Pap", icoon: "icons/Pap.png", map: "Granen", 
         quote: `Cooking grains in water transforms them into a digestible, nourishing porridge
@@ -14198,7 +14198,7 @@ const combinaties = [
       ["map:Granen", "Gist"], ["Hop", "map:Granen"]
     ],
     hint: `Wie, hop, de granen gist, krijgt vanzelf alcohol.`,
-    tijd: 6000,
+    tijd: 6_000,
     output: [
       { naam: "Bier", icoon: "icons/Bier.png", map: "Genotwaren", 
         quote: `Beer was the standard drink of ancient Egypt, safer than water and central to daily sustenance
