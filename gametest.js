@@ -14404,6 +14404,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Mens", "Tabaksplanten"],
+    hint: `De bladeren van tabaksplanten kun je drogen, maar of dat goed is..`,
+    tijd: 2700,
+    output: [
+      { naam: "Tabak", icoon: "icons/Tabak.png", map: "Genotwaren", 
+        quote: `Man is born free, yet binds himself to habits that enslave him
+        <br><br>- Jean-Jacques Rousseau`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2200,
