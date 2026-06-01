@@ -11297,6 +11297,10 @@ const combinaties = [
         quote: `Clover enriches the soil and is excellent fodder for cattle
         <br><br>- John Evelyn`
       },
+      { naam: "Viooltjes", icoon: "icons/Viooltjes.png", map: "Bloemen", 
+        quote: `There is pansies, that's for thoughts
+        <br><br>- William Shakespeare`
+      },
       { naam: "Aardbeien", icoon: "icons/Aardbeien.png", map: "Fruit", 
         quote: `Wild strawberries are the sweetest reward of wandering in the fields
         <br><br>- Henry Thoreau`
