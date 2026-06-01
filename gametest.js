@@ -14491,11 +14491,22 @@ const combinaties = [
   {
     input: ["Mens", "Agave"],
     hint: `Vanwaar de agave zo gebruiken?`,
-    tijd: 400,
+    tijd: 450,
     output: [
       { naam: "Tequila", icoon: "icons/Tequila.png", map: "Genotwaren", 
         quote: `The Mexican is not the child of corn alone, but also of the agave
         <br><br>- Octavio Paz`
+      }
+    ]
+  },
+  {
+    input: ["Mens", "Koffieplanten"],
+    hint: `Koffieplanten.. de naam zegt het eigenlijk al.`,
+    tijd: 1000,
+    output: [
+      { naam: "Koffie", icoon: "icons/Koffie.png", map: "Genotwaren", 
+        quote: `Coffee is a drink that makes one sleep when one does not drink it
+        <br><br>- Voltaire`
       }
     ]
   }
