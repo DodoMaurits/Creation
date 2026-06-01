@@ -14392,8 +14392,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Mens", "Theeplanten"], ["Mens", "Jasmijn"], ["Mens", "Lavendel"], ["Mens", "Kamille"], ["Mens", "Rooibos"],
-      ["Mens", "map:Granen"]
+      ["Mens", "Theeplanten"], ["Mens", "Jasmijn"], ["Mens", "Lavendel"], ["Mens", "Kamille"], ["Mens", "Rooibos"]
     ],
     hint: `Theeplanten.. de naam zegt het al.`,
     tijd: 4700,
@@ -14512,7 +14511,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Kola", "Coca"],
+    input: ["map:Granen", "Coca"],
     hint: `We voegen de kolanoten bij cocabladeren..`,
     tijd: 140,
     output: [
