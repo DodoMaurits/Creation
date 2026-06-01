@@ -14269,6 +14269,10 @@ const combinaties = [
     hint: `Sommige zoogdieren voeden hun jongen zelf, maar laat de mens het niet zien.`,
     tijd: 11_500,
     output: [
+      { naam: "Nomaden", icoon: "icons/Nomaden.png", map: "Samenleving", 
+        quote: `We live, if we are able to live, in an infant past, planted in fields that were ours
+        <br><br>- Mahmoud Darwish`
+      },
       { naam: "Melk", icoon: "icons/Melk.png", map: "Genotwaren", 
         quote: `Milk is the essence of life and strength among the offerings to the gods
         <br><br>- Rigveda`
