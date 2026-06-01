@@ -14218,6 +14218,20 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Kool", "Bacteriën"],
+    hint: `Ook kool eet de mens graag gefermenteerd.`,
+    tijd: 2200,
+    output: [
+      { naam: "Zuurkool", icoon: "icons/Zuurkool.png", map: "Groenten", 
+        quote: `In northern European traditions, preserved cabbage is a symbol of winter endurance
+        <br><br>- Jacob Grimm`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Mens", "Karpers"],
     hint: `Sommige karpers voelen zich thuis bij de mens.. of andersom?`,
     tijd: 1_700,
@@ -14261,6 +14275,36 @@ const combinaties = [
       { naam: "Limoenen", icoon: "icons/Limoenen.png", map: "Fruit", 
         quote: `Lime is essential in many cuisines for its ability to balance richness with acidity
         <br><br>- Jane Grigson`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
+    input: ["Mens", "Kool"],
+    hint: `Kool heeft veel potentie om zich tot verschillende soorten te laten telen.`,
+    tijd: 2_600,
+    output: [
+      { naam: "Broccoli", icoon: "icons/Broccoli.png", map: "Groenten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Bloemkool", icoon: "icons/Bloemkool.png", map: "Groenten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Rode kool", icoon: "icons/Rode kool.png", map: "Groenten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Spruitjes", icoon: "icons/Spruitjes.png", map: "Groenten", 
+        quote: `
+        <br><br>- `
+      },
+      { naam: "Boerenkool", icoon: "icons/Boerenkool.png", map: "Groenten", 
+        quote: `
+        <br><br>- `
       }
     ],
     uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
