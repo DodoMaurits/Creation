@@ -667,6 +667,7 @@ const mappen = [
       { naam: "Guaves", icoon: "icons/Guaves.png" }, /*20*/
       { naam: "Mango", icoon: "icons/Mango.png" }, /*20*/
       { naam: "Papaja", icoon: "icons/Papaja.png" }, /*20*/
+      { naam: "Frambozen", icoon: "icons/Frambozen.png" }, /*15*/
       { naam: "Avocado", icoon: "icons/Avocado.png" }, /*10*/
       { naam: "Kokos", icoon: "icons/Kokos.png" }, /*10*/
       { naam: "Bananen", icoon: "icons/Bananen.png" }, /*10*/
@@ -11204,6 +11205,10 @@ const combinaties = [
       { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
         quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
         <br><br>- John Keats`
+      },
+      { naam: "Frambozen", icoon: "icons/Frambozen.png", map: "Fruit", 
+        quote: `Few fruits are as intensely flavored as the raspberry when freshly picked
+        <br><br>- Anna Pavord`
       },
       { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
         quote: `Love and a red rose can't be hid
