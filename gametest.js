@@ -14418,6 +14418,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Kalk", "Water"],
+    hint: `Maak van kalk een papje en verhard het met wat gruis, zie daar.`,
+    tijd: 2150,
+    output: [
+      { naam: "Beton", icoon: "icons/Beton.png", map: "Uitvindingen", 
+        quote: `There is a kind of earth which, when mixed with lime and rubble, becomes as hard as stone
+        <br><br>- Plinius de Oudere`
+      }
+    ]
+  },
+  {
     input: [
       ["Bruinkool", "IJzer"], ["Steenkool", "IJzer"], ["Oven", "IJzer"]
     ],
