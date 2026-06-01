@@ -595,6 +595,16 @@ const combinaties = [
     ]
   },
   {
+    input: ["Basalt", "Druk"],
+    hint: `Kijk naar de oceanen, waar basaltplaten onder extreme druk en lage temperaturen in elkaar schuiven..`,
+    output: [
+      { naam: "Jade", icoon: "icons/Jade.png", map: "Aarde",
+        quote: `The gentleman compares his virtue to jade
+        <br><br>- Confucius`
+      }
+    ]
+  },
+  {
     input: [
       ["Magnetisme", "Zonnewind"], ["Poolgebied", "Zonnewind"], ["Poolgebied", "Plasma"], 
       ["Lucht", "Zonnewind"], ["Lucht", "Plasma"], ["Zuurstof", "Zonnewind"], ["Zuurstof", "Plasma"],
