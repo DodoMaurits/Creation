@@ -609,6 +609,7 @@ const mappen = [
       { naam: "Lelies", icoon: "icons/Lelies.png" }, /*40*/
       { naam: "Hyacinten", icoon: "icons/Hyacinten.png" }, /*40*/
       { naam: "Boterbloemen", icoon: "icons/Boterbloemen.png" }, /*40*/
+      { naam: "Clematissen", icoon: "icons/Clematissen.png" }, /*35*/
       { naam: "Anjers", icoon: "icons/Anjers.png" }, /*30*/
       { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png" }, /*30*/
       { naam: "Chrysanten", icoon: "icons/Chrysanten.png" }, /*25*/
@@ -8801,6 +8802,10 @@ const combinaties = [
       { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
         quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
         <br><br>- W.J. Bean`
+      },
+      { naam: "Clematissen", icoon: "icons/Clematissen.png", map: "Bloemen", 
+        quote: `Clematis is the gardener’s poetry on walls and fences
+        <br><br>- Vita Sackville-West`
       },
       { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
         quote: `The grapevine is a woody climber that produces berries arranged in bunches
