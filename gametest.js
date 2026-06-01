@@ -10900,6 +10900,10 @@ const combinaties = [
     hint: `Sommige monocotylen voelen zich thuis op de savanne.`,
     tijd: 50_000_000,
     output: [
+      { naam: "Amaryllissen", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
+        quote: `An amaryllis has the confidence to bloom magnificently when all else is sleeping
+        <br><br>- Beverley Nichols`
+      },
       { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
         quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
         <br><br>- Christopher Brickell`
@@ -13785,6 +13789,10 @@ const combinaties = [
     hint: `Sommige monocotylen voelen zich thuis in het fynbos.`,
     tijd: 20_000_000,
     output: [
+      { naam: "Amaryllissen", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
+        quote: `An amaryllis has the confidence to bloom magnificently when all else is sleeping
+        <br><br>- Beverley Nichols`
+      },
       { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
         quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
         <br><br>- Christopher Brickell`
