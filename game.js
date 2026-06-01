@@ -14424,6 +14424,20 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Mens", "Papyrusriet"],
+    hint: `Wat denkt men wel niet, van papyrusriet?`,
+    tijd: 4900,
+    output: [
+      { naam: "Papyrus", icoon: "icons/Papyrus.png", map: "Uitvindingen", 
+        quote: `Papyrus grows in the marshes of Egypt, and from it is made the material for writing
+        <br><br>- Plinius de Oudere`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Mens", "Cacao"],
     hint: `Ontdek hoe cacao een vreugdevol stofje in de hersenen vrijmaakt.`,
     tijd: 1600,
