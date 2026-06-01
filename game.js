@@ -14305,6 +14305,10 @@ const combinaties = [
       { naam: "Klok", icoon: "icons/Klok.png", map: "Uitvindingen", 
         quote: `What then is time? If no one asks me, I know; if I wish to explain it, I do not know
         <br><br>- Augustinus van Hippo`
+      },
+      { naam: "Tijd", icoon: "icons/Tijd.png", map: "Brein", 
+        quote: `The distinction between past, present and future is only a stubbornly persistent illusion
+        <br><br>- Albert Einstein`
       }
     ],
     uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
