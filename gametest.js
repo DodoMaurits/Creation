@@ -13927,6 +13927,21 @@ const combinaties = [
     }
   },
   {
+    input: ["Leger", "Leger"],  
+    hint: `Wie de oorlog overleeft en verliest, wacht de onmenselijking.`,
+    output: [
+      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
+        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
+        we no longer exist 
+        <br><br>- Epicurus`
+      },
+      { naam: "Slavernij", icoon: "icons/Slavernij.png", map: "Samenleving", 
+        quote: `I freed a thousand slaves. I could have freed a thousand more if only they knew they were slaves
+        <br><br>- Harriet Tubman`
+      }
+    ]
+  },
+  {
     input: [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
