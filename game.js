@@ -14406,6 +14406,20 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
         tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
         <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
+  },
+  {
+    input: ["Mens", "Agave"],
+    hint: `Vanwaar de agave zo gebruiken?`,
+    tijd: 400,
+    output: [
+      { naam: "Tequila", icoon: "icons/Tequila.png", map: "Genotwaren", 
+        quote: `The Mexican is not the child of corn alone, but also of the agave
+        <br><br>- Octavio Paz`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
+        tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
+        <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
   }
 ];
 
