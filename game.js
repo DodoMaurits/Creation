@@ -14282,36 +14282,6 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
-    input: ["Mens", "Kool"],
-    hint: `Kool heeft veel potentie om zich tot verschillende soorten te laten telen.`,
-    tijd: 2_600,
-    output: [
-      { naam: "Broccoli", icoon: "icons/Broccoli.png", map: "Groenten", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Bloemkool", icoon: "icons/Bloemkool.png", map: "Groenten", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Rode kool", icoon: "icons/Rode kool.png", map: "Groenten", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Spruitjes", icoon: "icons/Spruitjes.png", map: "Groenten", 
-        quote: `
-        <br><br>- `
-      },
-      { naam: "Boerenkool", icoon: "icons/Boerenkool.png", map: "Groenten", 
-        quote: `
-        <br><br>- `
-      }
-    ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
-  },
-  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2_200,
@@ -14348,6 +14318,36 @@ const combinaties = [
         </span>`,
       }
     }
+  },
+  {
+    input: ["Mens", "Kool"],
+    hint: `Kool heeft veel potentie om zich tot verschillende soorten te laten telen.`,
+    tijd: 700,
+    output: [
+      { naam: "Broccoli", icoon: "icons/Broccoli.png", map: "Groenten", 
+        quote: `Broccoli contains a wide range of vitamins, minerals, fiber, and sulfur-containing compounds
+        <br><br>- Harold McGee`
+      },
+      { naam: "Bloemkool", icoon: "icons/Bloemkool.png", map: "Groenten", 
+        quote: `The cauliflower head is a dense cluster of undeveloped flower buds
+        <br><br>- David Goodsell`
+      },
+      { naam: "Rode kool", icoon: "icons/Rode kool.png", map: "Groenten", 
+        quote: `Few vegetables are as visually striking as red cabbage when sliced open
+        <br><br>- Anna Pavord`
+      },
+      { naam: "Spruitjes", icoon: "icons/Spruitjes.png", map: "Groenten", 
+        quote: `Brussels sprouts were developed in Belgium from wild cabbage varieties during the Middle Ages
+        <br><br>- Andrew Smith`
+      },
+      { naam: "Boerenkool", icoon: "icons/Boerenkool.png", map: "Groenten", 
+        quote: `Simple greens such as kale belong to the ordinary dignity of everyday food
+        <br><br>- George Orwell`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
     input: ["Mens", "Vinken"],
