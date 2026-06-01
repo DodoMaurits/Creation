@@ -14020,7 +14020,7 @@ const combinaties = [
     hint: `Van hennep is het makkelijk binden.`,
     tijd: 50000,
     output: [
-      { naam: "Touw", icoon: "icons/Touw.png", map: "Uitvindingen", 
+      { naam: "Touw", icoon: "icons/Touw.png", map: "Materialen", 
         quote: `A sailor's life is woven of ropes, wind, and water
         <br><br>- Joseph Conrad`
       }
