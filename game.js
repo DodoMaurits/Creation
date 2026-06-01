@@ -14043,7 +14043,7 @@ const combinaties = [
   {
     input: ["map:Granen", "Water"], 
     hint: `Granen pappen en nat houden..`,
-    tijd: 11500,
+    tijd: 11_500,
     output: [
       { naam: "Pap", icoon: "icons/Pap.png", map: "Granen", 
         quote: `Cooking grains in water transforms them into a digestible, nourishing porridge
