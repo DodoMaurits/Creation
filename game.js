@@ -13551,6 +13551,10 @@ const combinaties = [
     hint: `Sommige monocotylen voelen zich thuis in het fynbos.`,
     tijd: 20_000_000,
     output: [
+      { naam: "Freesia", icoon: "icons/Freesia.png", map: "Bloemen", 
+        quote: `Few flowers combine such grace and fragrance as the freesia in bloom
+        <br><br>- Reginald Farrer`
+      },
       { naam: "Amaryllissen", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
         quote: `An amaryllis has the confidence to bloom magnificently when all else is sleeping
         <br><br>- Beverley Nichols`
