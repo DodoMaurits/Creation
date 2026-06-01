@@ -14487,6 +14487,17 @@ const combinaties = [
         <br><br>- William Beebe`
       }
     ]
+  },
+  {
+    input: ["Mens", "Agave"],
+    hint: `Vanwaar de agave zo gebruiken?`,
+    tijd: 400,
+    output: [
+      { naam: "Tequila", icoon: "icons/Tequila.png", map: "Genotwaren", 
+        quote: `The Mexican is not the child of corn alone, but also of the agave
+        <br><br>- Octavio Paz`
+      }
+    ]
   }
 ];
 
