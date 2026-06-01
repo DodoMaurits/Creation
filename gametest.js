@@ -598,10 +598,14 @@ const mappen = [
       { naam: "Klaprozen", icoon: "icons/Klaprozen.png" }, /*95*/
       { naam: "Lotussen", icoon: "icons/Lotussen.png" }, /*95*/
       { naam: "Hortensia", icoon: "icons/Hortensia.png" }, /*90*/
+      { naam: "Viooltjes", icoon: "icons/Viooltjes.png" }, /*85*/
       { naam: "Narcissen", icoon: "icons/Narcissen.png" }, /*70*/
+      { naam: "Amaryllissen", icoon: "icons/Amaryllissen.png" }, /*70*/
       { naam: "Krokussen", icoon: "icons/Krokussen.png" }, /*50*/
       { naam: "Gladiolen", icoon: "icons/Gladiolen.png" }, /*50*/
+      { naam: "Freesia", icoon: "icons/Freesia.png" }, /*50*/
       { naam: "Rozen", icoon: "icons/Rozen.png" }, /*50*/
+      { naam: "Rododendron", icoon: "icons/Rododendron.png" }, /*40*/
       { naam: "Lelies", icoon: "icons/Lelies.png" }, /*40*/
       { naam: "Hyacinten", icoon: "icons/Hyacinten.png" }, /*40*/
       { naam: "Anjers", icoon: "icons/Anjers.png" }, /*30*/
@@ -13793,6 +13797,10 @@ const combinaties = [
     hint: `Sommige monocotylen voelen zich thuis in het fynbos.`,
     tijd: 20_000_000,
     output: [
+      { naam: "Freesia", icoon: "icons/Freesia.png", map: "Bloemen", 
+        quote: `Few flowers combine such grace and fragrance as the freesia in bloom
+        <br><br>- Reginald Farrer`
+      },
       { naam: "Amaryllissen", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
         quote: `An amaryllis has the confidence to bloom magnificently when all else is sleeping
         <br><br>- Beverley Nichols`
