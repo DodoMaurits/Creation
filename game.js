@@ -14282,6 +14282,20 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Mens", "Cacao"],
+    hint: `Ontdek hoe cacao een vreugdevol stofje in de hersenen vrijmaakt.`,
+    tijd: 1600,
+    output: [
+      { naam: "Chocolade", icoon: "icons/Chocolade.png", map: "Genotwaren", 
+        quote: `This chocolate drink is the most precious thing I have ever encountered in the New World
+        <br><br>- Hernán Cortés`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2_200,
