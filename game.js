@@ -14233,6 +14233,20 @@ const combinaties = [
         <br><br>Eerst nodig: honden.` } }
   },
   {
+    input: ["Stad", "Stad"],
+    hint: `Kunnen we groter samenleven dan de stad alleen?`,
+    tijd: 4400,
+    output: [
+      { naam: "Imperium", icoon: "icons/Imperium.png", map: "Samenleving", 
+        quote: `When rewards are clear and punishments certain, the state is strong
+        <br><br>- Han Fei`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
+        <br><br>Eerst nodig: honden.` } }
+  },
+  {
     input: ["Melk", "Bacteriën"],
     hint: `In Oost-Europa lieten ze melk wat langer staan voor bacteriën..`,
     tijd: 7_500,
@@ -14241,10 +14255,7 @@ const combinaties = [
         quote: `The Scythians store milk in animal skins, shaking it until it becomes thick and usable
         <br><br>- Herodotos`
       }
-    ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
-        tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+    ]
   },
 //------------ THRESHOLD 13: SCHRIFT 5000 --------------//
   {
