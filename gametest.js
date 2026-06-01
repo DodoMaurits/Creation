@@ -14511,7 +14511,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["map:Granen", "Coca"],
+    input: ["Kola", "Coca"],
     hint: `We voegen de kolanoten bij cocabladeren..`,
     tijd: 140,
     output: [
