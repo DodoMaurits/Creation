@@ -613,7 +613,6 @@ const mappen = [
       { naam: "Hibiscus", icoon: "icons/Hibiscus.png" }, /*10*/
       { naam: "Geraniums", icoon: "icons/Geraniums.png" }, /*10*/
       { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png" }, /*2*/
-      { naam: "Margrieten", icoon: "icons/Margrieten.png" }, /*2*/
       { naam: "Goudsbloemen", icoon: "icons/Goudsbloemen.png" }, /*2*/
       { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png" } /*2*/
     ]
@@ -12687,10 +12686,6 @@ const combinaties = [
       { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
-      },
-      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
-        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
-        <br><br>- Richard Jefferies`
       }
     ]
   },
@@ -12862,10 +12857,6 @@ const combinaties = [
       { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
-      },
-      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
-        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
-        <br><br>- Richard Jefferies`
       },
       { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
