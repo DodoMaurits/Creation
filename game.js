@@ -14316,6 +14316,20 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Kalk", "Water"],
+    hint: `Maak van kalk een papje en verhard het met wat gruis, zie daar.`,
+    tijd: 2150,
+    output: [
+      { naam: "Beton", icoon: "icons/Beton.png", map: "Uitvindingen", 
+        quote: `There is a kind of earth which, when mixed with lime and rubble, becomes as hard as stone
+        <br><br>- Plinius de Oudere`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: [
       ["Bruinkool", "IJzer"], ["Steenkool", "IJzer"], ["Oven", "IJzer"]
     ],
