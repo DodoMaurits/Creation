@@ -15461,8 +15461,8 @@ function shuffle(a) {
 function canShowHint(c) {
   return !!c.hint?.trim()
     && pairs(c.input).some(([a, b]) =>
-      (a.startsWith("map:") ? mapVisible(a.slice(4)) : inMap(a)) &&
-      (b.startsWith("map:") ? mapVisible(b.slice(4)) : inMap(b))
+      inMap(a.startsWith("map:") ? a.slice(4) : a) &&
+      inMap(b.startsWith("map:") ? b.slice(4) : b)
     )
     && c.output.some(o => !inMap(o.naam))
     && (!c.uitleg?.thresholdElement?.naam || known(c.uitleg.thresholdElement.naam))
