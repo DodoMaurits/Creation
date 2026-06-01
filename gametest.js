@@ -13929,6 +13929,7 @@ const combinaties = [
   {
     input: ["Leger", "Leger"],  
     hint: `Wie de oorlog overleeft en verliest, wacht de onmenselijking.`,
+    tijd: 2_000_000,
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
