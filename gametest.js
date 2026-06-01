@@ -127,6 +127,7 @@ const mappen = [
       { naam: "Kwarts", icoon: "icons/Kwarts.png" },
       { naam: "Mica", icoon: "icons/Mica.png" },
       { naam: "Veldspaat", icoon: "icons/Veldspaat.png" },
+      { naam: "Jade", icoon: "icons/Jade.png" },
       { naam: "Zand", icoon: "icons/Zand.png" },
       { naam: "Klei", icoon: "icons/Klei.png" },
       { naam: "Glas", icoon: "icons/Glas.png" },
@@ -1407,6 +1408,16 @@ const combinaties = [
       { naam: "Veldspaat", icoon: "icons/Veldspaat.png", map: "Aarde", 
         quote: `Even the hardest rock can be worn away by water 
         <br><br>- Lucretius`
+      }
+    ]
+  },
+  {
+    input: ["Basalt", "Druk"],
+    /*hint: `Kijk naar de oceanen, waar basaltplaten onder extreme druk en lage temperaturen in elkaar schuiven..`,*/
+    output: [
+      { naam: "Jade", icoon: "icons/Jade.png", map: "Aarde",
+        quote: `The gentleman compares his virtue to jade
+        <br><br>- Confucius`
       }
     ]
   },
