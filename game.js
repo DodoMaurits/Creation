@@ -12048,6 +12048,10 @@ const combinaties = [
         quote: `Tea is a religion of the art of life
         <br><br>- Okakura Kakuzo`
       },
+      { naam: "Rododendron", icoon: "icons/Rododendron.png", map: "Bloemen", 
+        quote: `The rhododendrons clothed the mountain sides in masses of brilliant colour
+        <br><br>- Joseph Hooker`
+      },
       { naam: "Bosbessen", icoon: "icons/Bosbessen.png", map: "Fruit", 
         quote: `I have been in the woods all afternoon, and my body has become a simple thing, tasting berries and
         listening
