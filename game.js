@@ -12444,10 +12444,6 @@ const combinaties = [
       { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
-      },
-      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
-        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
-        <br><br>- Richard Jefferies`
       }
     ]
   },
@@ -12619,10 +12615,6 @@ const combinaties = [
       { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
-      },
-      { naam: "Margrieten", icoon: "icons/Margrieten.png", map: "Bloemen", 
-        quote: `The ox-eye daisy fills the summer fields with a quiet brightness
-        <br><br>- Richard Jefferies`
       },
       { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
@@ -13638,7 +13630,7 @@ const combinaties = [
          /* --- BLOEMEN --- */
          "Lotussen", "Pioenroezen", "Klaprozen", "Narcissen", "Irissen", "Lelies", "Orchideeën", "Gladiolen", "Hyacinten",
          "Tulpen", "Krokussen", "Rozen", "Hibiscus", "Geraniums", "Anjers", "Hortensia", "Paardenbloemen", "Madeliefjes",
-         "Margrieten", "Goudsbloemen", "Zonnebloemen", "Chrysanten", "Gerbera",
+         "Goudsbloemen", "Zonnebloemen", "Chrysanten", "Gerbera",
          /* --- GENOTWAREN --- */
          "Agave", "Suiker", "Coca", "Hop", "Wierookbomen", "Mirre", "Cacao", "Kola", "Theeplanten", "Lavendel", 
          "Tabaksplanten", "Koffieplanten", "Jasmijn", "Kamille", "Rooibos",
