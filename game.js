@@ -10821,6 +10821,10 @@ const combinaties = [
         quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
         <br><br>- John Keats`
       },
+      { naam: "Frambozen", icoon: "icons/Frambozen.png", map: "Fruit", 
+        quote: `Few fruits are as intensely flavored as the raspberry when freshly picked
+        <br><br>- Anna Pavord`
+      },
       { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
         quote: `Love and a red rose can't be hid
         <br><br>- Thomas Holcroft`
