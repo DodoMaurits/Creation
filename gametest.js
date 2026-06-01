@@ -14392,7 +14392,8 @@ const combinaties = [
   },
   {
     input: [
-      ["Mens", "Theeplanten"], ["Mens", "Jasmijn"], ["Mens", "Lavendel"], ["Mens", "Kamille"], ["Mens", "Rooibos"]
+      ["Mens", "Theeplanten"], ["Mens", "Jasmijn"], ["Mens", "Lavendel"], ["Mens", "Kamille"], ["Mens", "Rooibos"],
+      ["Mens", "map:Granen"]
     ],
     hint: `Theeplanten.. de naam zegt het al.`,
     tijd: 4700,
