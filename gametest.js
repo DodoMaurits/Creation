@@ -14552,6 +14552,19 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      ["Roet", "Veer"], ["Roet", "Waterriet"]
+    ],
+    hint: `Met roet kun je prima schrijven..`,
+    tijd: 4900,
+    output: [
+      { naam: "Pen", icoon: "icons/Pen.png", map: "Uitvindingen", 
+        quote: `I have always imagined that Paradise will be a kind of library
+        <br><br>- Jorge Borges`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2200,
