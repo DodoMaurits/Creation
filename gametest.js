@@ -14655,6 +14655,18 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: ["Wet", "Gemeenschap"],
+    hint: `Gelijktijdig verjoegen Athene en Rome hun tiran, waarna de gemeenschap de wet overnam.`, 
+    tijd: 2530,
+    output: [
+      { naam: "Democratie", icoon: "icons/Democratie.png", map: "Samenleving", 
+        quote: `The people is not every group of men assembled in any way, 
+        but an assembly bound together by agreement about justice and partnership for the common good
+        <br><br>- Cicero`
+      }
+    ]
+  },
 //------------ THRESHOLD 14: OVERZEESE IMPERIA 1000 --------------//
   {
     input: ["Kompas", "Zeilboot"],
