@@ -14540,6 +14540,16 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Schrift", "Heerser"],
+    hint: `De wil van de heerser is in steen gebeiteld en door de stad gehangen.`,
+    output: [
+      { naam: "Wet", icoon: "icons/Wet.png", map: "Samenleving", 
+        quote: `We are all servants of the laws in order that we may be free
+        <br><br>- Cicero`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2_200,
