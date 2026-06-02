@@ -14584,6 +14584,19 @@ const combinaties = [
       }
     ]
   },
+  {
+    input: [
+      ["Vloot", "Handel"], ["Vloot", "Imperium"],
+    ],
+    hint: `Stadstaten met vloten zoeken naar graan en nieuwe handel overzee.`, 
+    tijd: 4200,
+    output: [
+      { naam: "Kustforten", icoon: "icons/Kustforten.png", map: "Samenleving", 
+        quote: `Cities placed on the sea are naturally strong because they command access to many lands
+        <br><br>- Strabo`
+      }
+    ]
+  },
 //------------ THRESHOLD 14: OVERZEESE IMPERIA 1000 --------------//
   {
     input: ["Kompas", "Zeilboot"],
