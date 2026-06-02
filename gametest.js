@@ -14168,7 +14168,7 @@ const combinaties = [
   },
   {
     input: ["Oven", "Klei"],
-    hint: `Hé een oven! Bakken maar..`,
+    hint: `Potjandorie, een oven! Pak het klei en bakken maar..`,
     output: [
       { naam: "Keramiek", icoon: "icons/Keramiek.png", map: "Uitvindingen", 
         quote: `We shape clay into a pot, but it is the emptiness inside that holds whatever we want
