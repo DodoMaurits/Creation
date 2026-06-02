@@ -14559,8 +14559,8 @@ const combinaties = [
     tijd: 4900,
     output: [
       { naam: "Pen", icoon: "icons/Pen.png", map: "Uitvindingen", 
-        quote: `I have always imagined that Paradise will be a kind of library
-        <br><br>- Jorge Borges`
+        quote: `The spoken word is the symbol of mental experience, and written words are the symbols of spoken words
+        <br><br>- Aristoteles`
       }
     ]
   },
@@ -14587,6 +14587,27 @@ const combinaties = [
     ]
   },
   {
+    input: ["Ruiternomaden", "Hout"],
+    hint: `In plaats van op het paard te zitten, kan je met wat plankjes ook mensen erachter meenemen.`,
+    tijd: 4100,
+    output: [
+      { naam: "Kar", icoon: "icons/Kar.png", map: "Uitvindingen", 
+        quote: `They excel in riding and the use of the bow and the chariot
+        <br><br>- Herodotos`
+      }
+    ]
+  },
+  {
+    input: ["Schrift", "Heerser"],
+    hint: `De wil van de heerser is in steen gebeiteld en door de stad gehangen.`,
+    output: [
+      { naam: "Wet", icoon: "icons/Wet.png", map: "Samenleving", 
+        quote: `We are all servants of the laws in order that we may be free
+        <br><br>- Cicero`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2200,
@@ -14594,6 +14615,30 @@ const combinaties = [
       { naam: "Kompas", icoon: "icons/Kompas.png", map: "Uitvindingen", 
         quote: `Without a compass, the sea becomes a place without memory or direction
         <br><br>- Francis Drake`
+      }
+    ]
+  },
+  {
+    input: ["Pijl-en-boog", "Ruiternomaden"],
+    hint: `Haal de vijand te paard in, draai je om op het paard en schiet de pijl in hun gezicht.`, 
+    tijd: 2230,
+    output: [
+      { naam: "Stepperijk", icoon: "icons/Stepperijk.png", map: "Samenleving", 
+        quote: `He rules over so many lands and peoples that their number cannot be told
+        <br><br>- Marco Polo`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Papyrus", "Papyrus"], ["Pen", "Papyrus"]
+    ],
+    hint: `Papyrusrollen, orakelbotten, perkament.. Romeinen stapelden ze op en bonden aan elkaar.`, 
+    tijd: 1900,
+    output: [
+      { naam: "Boek", icoon: "icons/Boek.png", map: "Uitvindingen", 
+        quote: `I have always imagined that Paradise will be a kind of library
+        <br><br>- Jorge Borges`
       }
     ]
   },
