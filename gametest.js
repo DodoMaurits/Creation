@@ -403,14 +403,17 @@ const mappen = [
       { naam: "Buxus", icoon: "icons/Buxus.png" }, /*80*/
       { naam: "Brandnetels", icoon: "icons/Brandnetels.png" }, /*60*/
       { naam: "Oerfagales", icoon: "icons/Oerfagales.png" }, /*50*/
+      { naam: "Agave", icoon: "icons/Agave.png" }, /*40*/
       { naam: "Aloë Vera", icoon: "icons/Aloe vera.png" }, /*40*/
       { naam: "Cactussen", icoon: "icons/Cactussen.png" }, /*40*/
       { naam: "Heide", icoon: "icons/Heide.png" }, /*40*/
+      { naam: "Lavendel", icoon: "icons/Lavendel.png" }, /*25*/
       { naam: "Klavers", icoon: "icons/Klavers.png" }, /*20*/
       { naam: "Kroos", icoon: "icons/Kroos.png" }, /*20*/
       { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png" }, /*10*/
       { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png" }, /*10*/
       { naam: "Waterriet", icoon: "icons/Waterriet.png" } /*4*/
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png" }, /*4*/
     ]
   },
   {
@@ -453,7 +456,6 @@ const mappen = [
       { naam: "Katoen", icoon: "icons/Katoen.png" }, /*20*/
       { naam: "Kapok", icoon: "icons/Kapok.png" }, /*20*/
       { naam: "Rotan", icoon: "icons/Rotan.png" }, /*10*/
-      { naam: "Rubberbomen", icoon: "icons/Rubberbomen.png" }, /*5*/
       { naam: "Jute", icoon: "icons/Jute.png" }, /*5*/
       { naam: "Bamboe", icoon: "icons/Bamboe.png" } /*4*/
     ]
@@ -479,11 +481,14 @@ const mappen = [
       { naam: "Beuken", icoon: "icons/Beuken.png" }, /*50*/
       { naam: "Berken", icoon: "icons/Berken.png" }, /*50*/
       { naam: "Essen", icoon: "icons/Essen.png" }, /*40*/
+      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png" }, /*40*/
+      { naam: "Mirre", icoon: "icons/Mirre.png" }, /*40*/
       { naam: "Japanse kers", icoon: "icons/Japanse kers.png" }, /*20*/
       { naam: "Acacia", icoon: "icons/Acacia.png" }, /*20*/
       { naam: "Zeepnoten", icoon: "icons/Zeepnoten.png" }, /*20*/
       { naam: "Wilgen", icoon: "icons/Wilgen.png" }, /*10*/
       { naam: "Oliepalmen", icoon: "icons/Oliepalmen.png" }, /*10*/
+      { naam: "Rubberbomen", icoon: "icons/Rubberbomen.png" }, /*5*/
       { naam: "Sheabomen", icoon: "icons/Sheabomen.png" }, /*5*/
       { naam: "Arganbomen", icoon: "icons/Arganbomen.png" }, /*5*/
       { naam: "Teak", icoon: "icons/Teak.png" }, /*5*/
@@ -630,14 +635,9 @@ const mappen = [
     elementen: [
       { naam: "Honing", icoon: "icons/Honing.png" },
       { naam: "Hop", icoon: "icons/Hop.png" }, /*60*/
-      { naam: "Agave", icoon: "icons/Agave.png" }, /*40*/
-      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png" }, /*40*/
-      { naam: "Mirre", icoon: "icons/Mirre.png" }, /*40*/
       { naam: "Theeplanten", icoon: "icons/Theeplanten.png" }, /*40*/
-      { naam: "Lavendel", icoon: "icons/Lavendel.png" }, /*25*/
       { naam: "Rooibos", icoon: "icons/Rooibos.png" }, /*10*/
       { naam: "Coca", icoon: "icons/Coca.png" }, /*4*/
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png" }, /*4*/
       { naam: "Suiker", icoon: "icons/Suiker.png" }, /*4*/
       { naam: "Tabaksplanten", icoon: "icons/Tabaksplanten.png" }, /*3*/
       { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png" }, /*3*/
@@ -3378,12 +3378,9 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Lancetvisjes", "Gif"], ["Agnathen", "Gif"], ["Haaien", "Gif"], ["Spookhaaien", "Gif"], ["Manta", "Gif"],
       /* --- GENOTWAREN --- */
-      ["Agave", "Radioactiviteit"], 
-      ["Suikerriet", "Radioactiviteit"], 
       ["Coca", "Radioactiviteit"], 
       ["Hop", "Radioactiviteit"], 
       ["Theeplanten", "Radioactiviteit"], 
-      ["Lavendel", "Radioactiviteit"], 
       ["Tabaksplanten", "Radioactiviteit"], 
       ["Koffieplanten", "Radioactiviteit"], 
       ["Jasmijn", "Radioactiviteit"], 
@@ -3514,14 +3511,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["map:Bomen", "Radioactiviteit"],
-      /* --- GENOTWAREN --- */
-      ["Wierookbomen", "Radioactiviteit"], 
-      ["Mirre", "Radioactiviteit"],
-      /* --- MATERIALEN --- */
-     ["Rubberbomen", "Radioactiviteit"]
-    ],
+    input: ["map:Bomen", "Radioactiviteit"],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
@@ -3603,14 +3593,9 @@ const combinaties = [
       ["Heremietkrabben", "Vuur"],
       ["Waterspinnen", "Vuur"], ["Waterspinnen", "Lava"],
       /* --- GENOTWAREN --- */
-      ["Agave", "Vuur"], ["Agave", "Lava"],
-      ["Suikerriet", "Vuur"], ["Suikerriet", "Lava"],
       ["Coca", "Vuur"], ["Coca", "Lava"],
       ["Hop", "Vuur"], ["Hop", "Lava"],
-      ["Wierookbomen", "Vuur"], ["Wierookbomen", "Lava"],
-      ["Mirre", "Vuur"], ["Mirre", "Lava"],
       ["Theeplanten", "Vuur"], ["Theeplanten", "Lava"],
-      ["Lavendel", "Vuur"], ["Lavendel", "Lava"],
       ["Tabaksplanten", "Vuur"], ["Tabaksplanten", "Lava"],
       ["Koffieplanten", "Vuur"], ["Koffieplanten", "Lava"],
       ["Jasmijn", "Vuur"], ["Jasmijn", "Lava"],
@@ -3620,7 +3605,6 @@ const combinaties = [
       ["Rotan", "Vuur"], ["Rotan", "Lava"],
       ["Bamboe", "Vuur"], ["Bamboe", "Lava"],
       ["Hennep", "Vuur"], ["Hennep", "Lava"],
-      ["Rubberbomen", "Vuur"], ["Rubberbomen", "Lava"],
       ["Vlas", "Vuur"], ["Vlas", "Lava"]
     ],
     output: [
@@ -3687,8 +3671,8 @@ const combinaties = [
       ["Sprinkhanen", "Dood"], ["Wandelende takken", "Dood"], ["Kakkerlakken", "Dood"], ["Termieten", "Dood"], ["Mieren", "Dood"],
       ["Wespen", "Dood"], ["Bijen", "Dood"],
       /* --- GENOTWAREN --- */
-      ["Agave", "Dood"], ["Suikerriet", "Dood"], ["Coca", "Dood"], ["Hop", "Dood"], ["Theeplanten", "Dood"], ["Lavendel", "Dood"], 
-      ["Tabaksplanten", "Dood"], ["Koffieplanten", "Dood"], ["Jasmijn", "Dood"], ["Kamille", "Dood"],
+      ["Coca", "Dood"], ["Hop", "Dood"], ["Theeplanten", "Dood"], ["Tabaksplanten", "Dood"], ["Koffieplanten", "Dood"], 
+      ["Jasmijn", "Dood"], ["Kamille", "Dood"],
       /* --- MATERIALEN --- */
       ["Papyrusriet", "Dood"], ["Rotan", "Dood"], ["Bamboe", "Dood"], ["Hennep", "Dood"], ["Vlas", "Dood"]
     ],
@@ -3748,13 +3732,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["map:Bomen", "Dood"],
-      /* --- GENOTWAREN --- */
-      ["Wierookbomen", "Dood"], ["Mirre", "Dood"],
-      /* --- MATERIALEN --- */
-     ["Rubberbomen", "Dood"]
-    ],
+    input: ["map:Bomen", "Dood"],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
         quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
@@ -10590,7 +10568,7 @@ const combinaties = [
     hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
+      { naam: "Agave", icoon: "icons/Agave.png", map: "Planten", 
         quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
         single towering flower stalk
         <br><br>- Armen Takhtajan`
@@ -10610,7 +10588,7 @@ const combinaties = [
         quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
         <br><br>- Ibn al-Awwam`
       },
-      { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
+      { naam: "Agave", icoon: "icons/Agave.png", map: "Planten", 
         quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
         single towering flower stalk
         <br><br>- Armen Takhtajan`
@@ -10803,7 +10781,7 @@ const combinaties = [
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
         <br><br>- Blaise Pascal`
       },
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Planten", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
         <br><br>- James Grainger`
       },
@@ -10822,7 +10800,7 @@ const combinaties = [
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
         <br><br>- Blaise Pascal`
       },
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Planten", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
         <br><br>- James Grainger`
       },
@@ -10861,7 +10839,7 @@ const combinaties = [
         the wind
         <br><br>- Bruce Lee`
       },
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Genotwaren", 
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Planten", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
         <br><br>- James Grainger`
       },
@@ -11232,7 +11210,7 @@ const combinaties = [
     hint: `Sommige fabiden voelen zich thuis in het tropisch regenwoud.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Rubberbomen", icoon: "icons/Rubberbomen.png", map: "Materialen", 
+      { naam: "Rubberbomen", icoon: "icons/Rubberbomen.png", map: "Bomen", 
         quote: `The rubber tree yields a milky latex which can be coagulated into a material of great elasticity
         <br><br>- Henry Wickham`
       },
@@ -11456,11 +11434,11 @@ const combinaties = [
     hint: `Sommige malviden voelen zich thuis in de woestijn.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Genotwaren", 
+      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Bomen", 
         quote: `Arabia produces frankincense from trees guarded against winged serpents
         <br><br>- Herodotos`
       },
-      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Genotwaren", 
+      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Bomen", 
         quote: `Myrrh is among the most esteemed of perfumes, used both in medicine and sacred rites
         <br><br>- Plinius de Oudere`
       },
@@ -11474,7 +11452,7 @@ const combinaties = [
     input: ["Oermalviden", "Oase"],
     tijd: 20_000_000,
     output: [
-      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Genotwaren", 
+      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Bomen", 
         quote: `Arabia produces frankincense from trees guarded against winged serpents
         <br><br>- Herodotos`
       },
@@ -11740,7 +11718,7 @@ const combinaties = [
         quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
         <br><br>- V.S. Naipaul`
       },
-      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Genotwaren", 
+      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Bomen", 
         quote: `Myrrh is among the most esteemed of perfumes, used both in medicine and sacred rites
         <br><br>- Plinius de Oudere`
       },
@@ -12529,7 +12507,7 @@ const combinaties = [
         quote: `The olive is a gift of the gods to man
         <br><br>- Homeros`
       },
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       }
@@ -12625,7 +12603,7 @@ const combinaties = [
     input: ["Oerlamiden", "Vlinders"],
     tijd: 20_000_000,
     output: [
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       },
@@ -12647,7 +12625,7 @@ const combinaties = [
     input: ["Oerlamiden", "Bijen"],
     tijd: 20_000_000,
     output: [
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       },
@@ -12691,7 +12669,7 @@ const combinaties = [
     hint: `Sommige lamiden voelen zich thuis in grasweides.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Genotwaren", 
+      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       },
