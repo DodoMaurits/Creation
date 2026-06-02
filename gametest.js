@@ -634,9 +634,7 @@ const mappen = [
       { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png" }, /*40*/
       { naam: "Mirre", icoon: "icons/Mirre.png" }, /*40*/
       { naam: "Theeplanten", icoon: "icons/Theeplanten.png" }, /*40*/
-      { naam: "Cacao", icoon: "icons/Cacao.png" }, /*30*/
       { naam: "Lavendel", icoon: "icons/Lavendel.png" }, /*25*/
-      { naam: "Kola", icoon: "icons/Kola.png" }, /*20*/
       { naam: "Rooibos", icoon: "icons/Rooibos.png" }, /*10*/
       { naam: "Coca", icoon: "icons/Coca.png" }, /*4*/
       { naam: "Suikerriet", icoon: "icons/Suikerriet.png" }, /*4*/
@@ -730,10 +728,12 @@ const mappen = [
       { naam: "Soja", icoon: "icons/Soja.png" }, /*30*/
       { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png" }, /*30*/
       { naam: "Boekweit", icoon: "icons/Boekweit.png" }, /*30*/
+      { naam: "Cacao", icoon: "icons/Cacao.png" }, /*30*/
       { naam: "Amandelen", icoon: "icons/Amandelen.png" }, /*20*/
       { naam: "Pinda", icoon: "icons/Pinda.png" }, /*20*/
       { naam: "Linzen", icoon: "icons/Linzen.png" }, /*20*/
       { naam: "Pistache", icoon: "icons/Pistache.png" }, /*20*/
+      { naam: "Kola", icoon: "icons/Kola.png" }, /*20*/
       { naam: "Paranoten", icoon: "icons/Paranoten.png" }, /*15*/
       { naam: "Sesam", icoon: "icons/Sesam.png" }, /*15*/
       { naam: "Cashew", icoon: "icons/Cashew.png" }, /*5*/
@@ -11555,11 +11555,11 @@ const combinaties = [
         quote: `Beneath the chestnut’s spreading shade the village children played
         <br><br>- William Wordsworth`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
-      { naam: "Kola", icoon: "icons/Kola.png", map: "Genotwaren", 
+      { naam: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
@@ -11574,7 +11574,7 @@ const combinaties = [
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       }
@@ -11588,7 +11588,7 @@ const combinaties = [
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
@@ -11644,7 +11644,7 @@ const combinaties = [
     hint: `Sommige malviden voelen zich thuis in het tropisch regenwoud.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
@@ -11656,7 +11656,7 @@ const combinaties = [
         quote: `The gigantic forest trees rise like columns, among them the lofty cotton tree
         <br><br>- Alfred Wallace`
       },
-      { naam: "Kola", icoon: "icons/Kola.png", map: "Genotwaren", 
+      { naam: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
