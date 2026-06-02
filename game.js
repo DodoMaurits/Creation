@@ -11223,11 +11223,11 @@ const combinaties = [
         quote: `Beneath the chestnut’s spreading shade the village children played
         <br><br>- William Wordsworth`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
-      { naam: "Kola", icoon: "icons/Kola.png", map: "Genotwaren", 
+      { naam: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
@@ -11245,7 +11245,7 @@ const combinaties = [
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       }
@@ -11263,7 +11263,7 @@ const combinaties = [
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
@@ -11331,7 +11331,7 @@ const combinaties = [
     hint: `Sommige malviden voelen zich thuis in het tropisch regenwoud.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Genotwaren", 
+      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
@@ -11343,7 +11343,7 @@ const combinaties = [
         quote: `The gigantic forest trees rise like columns, among them the lofty cotton tree
         <br><br>- Alfred Wallace`
       },
-      { naam: "Kola", icoon: "icons/Kola.png", map: "Genotwaren", 
+      { naam: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
