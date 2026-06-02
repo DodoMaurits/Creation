@@ -14576,6 +14576,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Zeilboot", "Leger"],
+    hint: `Ook het leger moet de baas zijn over het eigen water.`,
+    tijd: 3500,
+    output: [
+      { naam: "Vloot", icoon: "icons/Vloot.png", map: "Samenleving", 
+        quote: `He who commands the sea commands everything
+        <br><br>- Cicero`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2200,
