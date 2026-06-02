@@ -412,8 +412,8 @@ const mappen = [
       { naam: "Kroos", icoon: "icons/Kroos.png" }, /*20*/
       { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png" }, /*10*/
       { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png" }, /*10*/
-      { naam: "Waterriet", icoon: "icons/Waterriet.png" } /*4*/
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png" }, /*4*/
+      { naam: "Waterriet", icoon: "icons/Waterriet.png" }, /*4*/
+      { naam: "Suikerriet", icoon: "icons/Suikerriet.png" } /*4*/
     ]
   },
   {
