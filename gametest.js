@@ -14222,7 +14222,7 @@ const combinaties = [
     hint: `Hoe harder de koper, hoe meer zit in tin.`, 
     tijd: 5300,
     output: [
-      { naam: "Brons", icoon: "icons/Brons.png", map: "Uitvindingen", 
+      { naam: "Brons", icoon: "icons/Brons.png", map: "Materialen", 
         quote: `Their armor was of bronze, and their houses of bronze, and with bronze they worked
         <br><br>- Hesiodos`
       }
@@ -14423,7 +14423,7 @@ const combinaties = [
     hint: `Maak van kalk een papje en verhard het met wat gruis, zie daar.`,
     tijd: 2150,
     output: [
-      { naam: "Beton", icoon: "icons/Beton.png", map: "Uitvindingen", 
+      { naam: "Beton", icoon: "icons/Beton.png", map: "Materialen", 
         quote: `There is a kind of earth which, when mixed with lime and rubble, becomes as hard as stone
         <br><br>- Plinius de Oudere`
       }
@@ -14436,7 +14436,7 @@ const combinaties = [
     hint: `Hm.. hoe smeed je ijzer het heetst?`,
     tijd: 3200,
     output: [
-      { naam: "Staal", icoon: "icons/Staal.png", map: "Uitvindingen", 
+      { naam: "Staal", icoon: "icons/Staal.png", map: "Materialen", 
         quote: `The strength of steel lies in its refinement through fire
         <br><br>- Henry Bessemer`
       }
