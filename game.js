@@ -14512,6 +14512,20 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Zeilboot", "Leger"],
+    hint: `Ook het leger moet de baas zijn over het eigen water.`,
+    tijd: 3500,
+    output: [
+      { naam: "Vloot", icoon: "icons/Vloot.png", map: "Samenleving", 
+        quote: `He who commands the sea commands everything
+        <br><br>- Cicero`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2_200,
