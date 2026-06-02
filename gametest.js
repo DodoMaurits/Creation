@@ -15437,7 +15437,9 @@ function updateTimelineLabel() {
   } else if (currentTime >= 1_000_000) {
     labelText = Math.round(currentTime / 1_000_000) + " miljoen jaar geleden";
   } else if (currentTime >= 12_000) {
-    labelText = Math.round(currentTime) + " jaar geleden";
+    labelText = Math.round(currentTime / 1_000) + " duizend jaar geleden";
+  } else if (currentTime >= 1) {
+    labelText = Math.round(currentTime / 1) + " jaar geleden";
   }
 
   timelineLabel.textContent = labelText;
