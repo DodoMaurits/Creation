@@ -14489,8 +14489,8 @@ const combinaties = [
     tijd: 4900,
     output: [
       { naam: "Pen", icoon: "icons/Pen.png", map: "Uitvindingen", 
-        quote: `I have always imagined that Paradise will be a kind of library
-        <br><br>- Jorge Borges`
+        quote: `The spoken word is the symbol of mental experience, and written words are the symbols of spoken words
+        <br><br>- Aristoteles`
       }
     ],
     uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
@@ -14557,6 +14557,30 @@ const combinaties = [
       { naam: "Kompas", icoon: "icons/Kompas.png", map: "Uitvindingen", 
         quote: `Without a compass, the sea becomes a place without memory or direction
         <br><br>- Francis Drake`
+      }
+    ]
+  },
+  {
+    input: ["Pijl-en-boog", "Ruiternomaden"],
+    hint: `Haal de vijand te paard in, draai je om op het paard en schiet de pijl in hun gezicht.`, 
+    tijd: 2230,
+    output: [
+      { naam: "Stepperijk", icoon: "icons/Stepperijk.png", map: "Samenleving", 
+        quote: `He rules over so many lands and peoples that their number cannot be told
+        <br><br>- Marco Polo`
+      }
+    ]
+  },
+  {
+    input: [
+      ["Papyrus", "Papyrus"], ["Pen", "Papyrus"]
+    ],
+    hint: `Papyrusrollen, orakelbotten, perkament.. Romeinen stapelden ze op en bonden aan elkaar.`, 
+    tijd: 1900,
+    output: [
+      { naam: "Boek", icoon: "icons/Boek.png", map: "Uitvindingen", 
+        quote: `I have always imagined that Paradise will be a kind of library
+        <br><br>- Jorge Borges`
       }
     ]
   },
