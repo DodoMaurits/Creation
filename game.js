@@ -14526,6 +14526,20 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: ["Ruiternomaden", "Hout"],
+    hint: `In plaats van op het paard te zitten, kan je met wat plankjes ook mensen erachter meenemen.`,
+    tijd: 4100,
+    output: [
+      { naam: "Kar", icoon: "icons/Kar.png", map: "Uitvindingen", 
+        quote: `They excel in riding and the use of the bow and the chariot
+        <br><br>- Herodotos`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2_200,
