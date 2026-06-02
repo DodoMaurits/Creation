@@ -14565,6 +14565,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Brons", "Mens"],
+    hint: `Brons maakte het beroemde broertje van de speer.`,
+    tijd: 3800,
+    output: [
+      { naam: "Zwaard", icoon: "icons/Zwaard.png", map: "Uitvindingen", 
+        quote: `They would draw their swords for a friend and count death as nothing
+        <br><br>- Sima Qian`
+      }
+    ]
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2200,
