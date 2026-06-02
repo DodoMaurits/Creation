@@ -14615,6 +14615,20 @@ const combinaties = [
     }
   },
   {
+    input: ["Mens", "Orchideeën"],
+    hint: `Ideeën van de orchideeën zijn als orgasmes in de mond.`,
+    tijd: 900,
+    output: [
+      { naam: "Vanille", icoon: "icons/Vanille.png", map: "Smaakmakers", 
+        quote: `Chocolate flavored with vanilla was offered to us as a drink of nobility
+        <br><br>- Hernán Cortés`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Mens", "Kool"],
     hint: `Kool heeft veel potentie om zich tot verschillende soorten te laten telen.`,
     tijd: 700,
