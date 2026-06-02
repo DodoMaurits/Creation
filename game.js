@@ -14482,6 +14482,36 @@ const combinaties = [
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
   },
   {
+    input: [
+      ["Roet", "Veer"], ["Roet", "Waterriet"]
+    ],
+    hint: `Met roet kun je prima schrijven..`,
+    tijd: 4900,
+    output: [
+      { naam: "Pen", icoon: "icons/Pen.png", map: "Uitvindingen", 
+        quote: `I have always imagined that Paradise will be a kind of library
+        <br><br>- Jorge Borges`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
+    input: ["Brons", "Mens"],
+    hint: `Brons maakte het beroemde broertje van de speer.`,
+    tijd: 3800,
+    output: [
+      { naam: "Zwaard", icoon: "icons/Zwaard.png", map: "Uitvindingen", 
+        quote: `They would draw their swords for a friend and count death as nothing
+        <br><br>- Sima Qian`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
+        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  },
+  {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
     tijd: 2_200,
