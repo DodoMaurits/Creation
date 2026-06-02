@@ -14510,7 +14510,7 @@ const combinaties = [
     hint: `Wat denkt men wel niet, van papyrusriet?`,
     tijd: 4900,
     output: [
-      { naam: "Papyrus", icoon: "icons/Papyrus.png", map: "Uitvindingen", 
+      { naam: "Papyrus", icoon: "icons/Papyrus.png", map: "Materialen", 
         quote: `Papyrus grows in the marshes of Egypt, and from it is made the material for writing
         <br><br>- Plinius de Oudere`
       }
