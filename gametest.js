@@ -14677,7 +14677,7 @@ const combinaties = [
     hint: `Ideeën van de orchideeën zijn als orgasmes in de mond.`,
     tijd: 900,
     output: [
-      { naam: "Vanille", icoon: "icons/Vanille.png", map: "Smaakmakers", 
+      { naam: "Vanille", icoon: "icons/Vanille.png", map: "Genotwaren", 
         quote: `Chocolate flavored with vanilla was offered to us as a drink of nobility
         <br><br>- Hernán Cortés`
       }
