@@ -13688,7 +13688,7 @@ const combinaties = [
          "Pinguïns", "Uilen", "Duiven", "Arenden", "Eenden", "Ganzen", "Zwanen", "Zwaluwen", "Spreeuwen", "Ooievaars",
          "Meeuwen", "Aalscholvers", "Flamingo", "Papegaaiduikers", "Gieren", "Reigers", "Mussen", "Kippen", "Spechten", 
          "Vinken", "Fazanten", "Kraaien", "Kolibries", "Pauwen", "Papegaaien", "Kieviten", "Struisvogels", 
-         "Secretarisvogels", "Kanaries",
+         "Secretarisvogels",
          /* --- BLOEMEN --- */
          "Lotussen", "Pioenroezen", "Klaprozen", "Narcissen", "Irissen", "Lelies", "Orchideeën", "Gladiolen", "Hyacinten",
          "Tulpen", "Krokussen", "Rozen", "Hibiscus", "Geraniums", "Anjers", "Hortensia", "Paardenbloemen", "Madeliefjes",
