@@ -11545,6 +11545,17 @@ const combinaties = [
     ]
   },
   {
+    input: ["Oermalviden", "Moeras"],
+    hint: `Sommige malviden voelen zich thuis in het moeras.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
+        quote: `The hibiscus lends color and grace to tropical gardens
+        <br><br>- David Faichild`
+      }
+    ]
+  },
+  {
     input: ["Oermalviden", "Kevers"],
     tijd: 30_000_000,
     output: [
