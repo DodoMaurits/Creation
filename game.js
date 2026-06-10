@@ -11215,6 +11215,20 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
   },
   {
+    input: ["Oermalviden", "Moeras"],
+    hint: `Sommige malviden voelen zich thuis in het moeras.`,
+    tijd: 10_000_000,
+    output: [
+      { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
+        quote: `The hibiscus lends color and grace to tropical gardens
+        <br><br>- David Faichild`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
     input: ["Oermalviden", "Kevers"],
     tijd: 30_000_000,
     output: [
