@@ -2169,7 +2169,7 @@ const combinaties = [
     input: [
       ["Amoeben", "Evolutie"], ["Amoeben", "Amoeben"], ["Slakken", "Glucose"]
     ],
-    hint: `Als Amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
+    hint: `Als amoeben samenkomen gaan ze functioneren als één grote zwam van...`,
     tijd: 900_000_000,
     output: [
       { naam: "Slijm", icoon: "icons/Slijm.png", map: "Water", 
