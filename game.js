@@ -2392,7 +2392,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Koraal"], ["Roodwieren", "Kalk"], ["Koraal", "Sponzen"], ["Koraal", "Zeeanemonen"]
+      ["Koraal", "Koraal"], ["Koraal", "Sponzen"], ["Koraal", "Zeeanemonen"]
     ],
     hint: `Een onderwaterlandschap? Ik zeg meer koraal.`,
     output: [
