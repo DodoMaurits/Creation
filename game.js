@@ -2261,6 +2261,7 @@ const combinaties = [
       ["Koraal", "Amoeben"], ["Koraal", "Foraminiferen"], ["Koraal", "Stralendiertjes"], ["Koraal", "Krill"],
       ["Koraal", "Vlokreeftjes"]
     ],
+    hint: `Kijk eens met wat voor geavanceerde vloeistof koraal en kwallen hun eten eten.`,
     output: [
       { naam: "Koraal", icoon: "icons/Koraal.png", map: "Waterdieren", 
         quote: `Coral reefs represent some of the world's most spectacular beauty spots, but they are also the 
