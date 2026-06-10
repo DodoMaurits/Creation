@@ -1,6 +1,6 @@
 console.log("BUTTON:", document.getElementById("hint-button"));
 
-// ---------------- DATA -------------------
+// ---------------- DATA ------------------
 const mappen = [
   {
     naam: "Heelal", icoon: "icons/Heelal.png", 
