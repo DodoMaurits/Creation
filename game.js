@@ -9566,7 +9566,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Archaeopteryx", "IJs"], ["Archaeopteryx", "Poolgebied"], ["Archaeopteryx", "Sneeuw"],
+      ["Archaeopteryx", "IJs"], ["Archaeopteryx", "Poolgebied"]
     ],
     hint: `Sommige archaeopteryx voelen zich thuis in ijs en sneeuw.`,
     tijd: 60_000_000,
