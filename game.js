@@ -8116,10 +8116,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Oereudicoten", "Vlinders"], ["Oereudicoten", "Weide"]
-    ],
-    hint: `Sommige eudicoten voelen zich thuis in de grasweides.`,
+    input: ["Oereudicoten", "Vlinders"],
     tijd: 95_000_000,
     output: [
       { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
