@@ -3816,6 +3816,7 @@ const combinaties = [
     input: ["Zeestserren", "Garnalen"],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    hint: `Sommige dieren kunnen elkaars bloed wel drinken..`,
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
         quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
