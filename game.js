@@ -10083,7 +10083,7 @@ const combinaties = [
     hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Agave", icoon: "icons/Agave.png", map: "Genotwaren", 
+      { naam: "Agave", icoon: "icons/Agave.png", map: "Planten", 
         quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
         single towering flower stalk
         <br><br>- Armen Takhtajan`
