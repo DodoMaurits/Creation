@@ -13690,7 +13690,7 @@ const combinaties = [
          "Vinken", "Fazanten", "Kraaien", "Kolibries", "Pauwen", "Papegaaien", "Kieviten", "Struisvogels", 
          "Secretarisvogels",
          /* --- BLOEMEN --- */
-         "Lotussen", "Pioenroezen", "Klaprozen", "Narcissen", "Irissen", "Lelies", "Orchideeën", "Gladiolen", "Hyacinten",
+         "Lotussen", "Pioenrozen", "Klaprozen", "Narcissen", "Irissen", "Lelies", "Orchideeën", "Gladiolen", "Hyacinten",
          "Tulpen", "Krokussen", "Rozen", "Hibiscus", "Geraniums", "Anjers", "Hortensia", "Paardenbloemen", "Madeliefjes",
          "Goudsbloemen", "Zonnebloemen", "Chrysanten", "Gerbera",
          /* --- GENOTWAREN --- */
@@ -13708,7 +13708,7 @@ const combinaties = [
          "Selderij", "Sla", "Andijvie", "Venkel", "Wortelen", "Artisjokken",
          /* --- ZADEN --- */
          "Amandelen", "Pinda", "Soja", "Kikkererwten", "Linzen", "Erwten", "Sperziebonen", "Kidneybonen", "Pistache", 
-         "Cashew", "Quinoa", "Boekweit", "Hazelaars", "Kastanjes", "Walnoten", "Paranoten", "Sesam", "Kola", 
+         "Cashew", "Quinoa", "Boekweit", "Kastanjes", "Walnoten", "Paranoten", "Sesam", "Kola", 
          /* --- CARNIVOREN --- */
          "Walrussen", "Otters", "Zeehonden", "Zeeleeuwen", "Dassen", "Wolven", "Wezels", "Marters", "Wasberen", 
          "Beren", "Vossen", "Wilde honden", "Pandaberen", "Zonneberen", "Katten", "Stokstaartjes", "Lynxen", 
