@@ -1403,7 +1403,7 @@ const combinaties = [
     ],
     hint: `Ook zout kan door de grond zakken en dan wordt het zwaar.`,
     output: [
-      { naam: "Steenzout", icoon: "icons/Steenzout.png", map: "Chemie", 
+      { naam: "Steenzout", icoon: "icons/Steenzout.png", map: "Aarde", 
         quote: `Salt is the only rock directly consumed by man 
         <br><br>- Margaret Visser`
       }
