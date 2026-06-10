@@ -3193,7 +3193,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Koraal", "Koraal"], ["Roodwieren", "Kalk"], ["Koraal", "Sponzen"], ["Koraal", "Zeeanemonen"]
+      ["Koraal", "Koraal"], ["Koraal", "Sponzen"], ["Koraal", "Zeeanemonen"]
     ],
     /*hint: `Een onderwaterlandschap? Ik zeg meer koraal.`,*/
     output: [
@@ -10129,7 +10129,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Archaeopteryx", "IJs"], ["Archaeopteryx", "Poolgebied"], ["Archaeopteryx", "Sneeuw"],
+      ["Archaeopteryx", "IJs"], ["Archaeopteryx", "Poolgebied"]
     ],
     hint: `Sommige archaeopteryx voelen zich thuis in ijs en sneeuw.`,
     tijd: 60_000_000,
