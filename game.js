@@ -3813,7 +3813,7 @@ const combinaties = [
     ]
   },
   {
-    input: ["Zeestserren", "Garnalen"],
+    input: ["Zeesterren", "Garnalen"],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     hint: `Sommige dieren kunnen elkaars bloed wel drinken..`,
@@ -4149,6 +4149,7 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    hint: `Sommige dieren activeren fijne stofjes in de hersenen om te verzadigen..`,
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
         quote: `I would love to see a giant squid. Very few people have seen them. 
