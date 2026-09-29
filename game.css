@@ -1074,6 +1074,7 @@ body {
               white-space: normal;
               overflow: hidden;
               text-overflow: ellipsis;
+              opacity: 1 !important;
               z-index: 2000;
               pointer-events: none;
             }
@@ -1081,17 +1082,13 @@ body {
             .icon.map-title + .tooltip,
             .icon.map-title ~ .tooltip {
               opacity: 1 !important;
-              display: block !important;  /* niet verbergen */
-              padding-top: 12px;
-              box-sizing: border-box;
+              font-size: 9px;
             }
   
             /* Alleen tooltips van elementen in open maps corrigeren */
             .grid-elements .icon-container { display: inline-block; position: relative; 
               margin-bottom: 20px;
             }
-
-            .grid-elements. icon-container .tooltip { left: 50%; transform: translateX(-50%); } 
   
             /* ---------------- GRID LAYOUTS ---------------- */
             .grid-elements { display: grid; justify-content: center;
@@ -1111,7 +1108,7 @@ body {
             /* ---------------- CLOSED CONTAINTER ---------------- */
             #closed-container.side .tooltip {
               font-size: 6px;
-              padding: 3px 6px 4px 6px;
+              padding: 2px 6px 4px 6px;
             }
 
             /* standaard breedte: midden van scherm */
@@ -1133,13 +1130,6 @@ body {
             #closed-container.side .icon.map {
               width: 40px;
               height: 40px;
-            }
-
-            #closed-container.side .tooltip {
-              font-size: 6px;
-              min-width: 30px;
-              max-width: 45px;
-              padding: 2px 4px 4px 4px;
             }
   
             /* ---------------- RESULTAAT COMBINATIE ---------------- */
