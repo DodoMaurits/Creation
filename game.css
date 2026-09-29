@@ -1108,6 +1108,11 @@ body {
               pointer-events: none;
             }
 
+            .curved-label {
+              width: calc(100% + 16px);   /* icoonbreedte + de 16px boogmarge uit de helper */
+              height: auto;               /* hoogte volgt automatisch uit de viewBox-verhouding */
+            }
+
             .icon.map-title + .tooltip,
             .icon.map-title ~ .tooltip {
               opacity: 1 !important;
