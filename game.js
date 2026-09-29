@@ -15421,7 +15421,7 @@ function updateTimelineLabel() {
     const labelWidth = timelineLabel.offsetWidth;
     const barWidth = timeline.getBoundingClientRect().width;
 
-    let leftPx = percentage * barWidth;
+    let leftPx = percentage * barWidth -10;
 
     const minPx = labelWidth / 2;
     const maxPx = barWidth - labelWidth / 2;
