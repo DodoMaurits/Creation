@@ -95,11 +95,12 @@ function makeCurvedLabel(text, iconSize) {
 
   const r = iconSize / 2 + 4;
   const w = iconSize + 16;
-  const h = Math.ceil(r + 10);
+  const top = 6;                    // y van de platte bovenkant van de kom
+  const h = Math.ceil(top + r + 4); // hoogte: platte rand + boogdiepte + marge
   const cx = w / 2;
-  const cy = 10 + r;
 
-  const d = `M ${cx - r} ${cy} A ${r} ${r} 0 0 1 ${cx + r} ${cy}`;
+  // sweep 0 = tegen de klok mee = boog buigt OMLAAG (kom, geen koepel)
+  const d = `M ${cx - r} ${top} A ${r} ${r} 0 0 0 ${cx + r} ${top}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");        // alléén curved-label, geen tooltip
