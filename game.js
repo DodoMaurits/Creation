@@ -110,9 +110,30 @@ function makeCurvedLabel(text, iconSize) {
     `width:${w}px; height:${h}px; pointer-events:none; z-index:2000;`;
 
   // Grijze halve cirkel als achtergrond
+  const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
+  grad.setAttribute("id", "cl-grad-" + Math.random().toString(36).slice(2, 8));
+  grad.setAttribute("x1", "0");
+  grad.setAttribute("y1", top - 6);   // iets boven de platte rand: helemaal fade
+  grad.setAttribute("x2", "0");
+  grad.setAttribute("y2", top + r);   // onderkant van de boog
+  grad.setAttribute("gradientUnits", "userSpaceOnUse");
+
+  const stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+  stop1.setAttribute("offset", "0");
+  stop1.setAttribute("stop-color", "rgba(40, 40, 40, 0)");
+  grad.appendChild(stop1);
+
+  const stop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+  stop2.setAttribute("offset", "0.45");   // rond halverwege volledig kleur
+  stop2.setAttribute("stop-color", "rgba(40, 40, 40, 0.85)");
+  grad.appendChild(stop2);
+
+  svg.appendChild(grad);
+
+  // Grijze halve cirkel als achtergrond, met de fade als vulling
   const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
   bg.setAttribute("d", `${d} Z`);
-  bg.setAttribute("fill", "rgba(40, 40, 40, 0.85)");
+  bg.setAttribute("fill", `url(#${grad.id})`);
   svg.appendChild(bg);
 
   // Onzichtbaar pad voor de tekst
