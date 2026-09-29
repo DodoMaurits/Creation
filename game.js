@@ -85,33 +85,47 @@ function attachTooltip(el, text) {
 }
 
 function makeCurvedLabel(text, iconSize) {
-  const r = iconSize / 2 + 6;        // straal iets groter dan het icoon
-  const w = iconSize + 24;          // SVG-breedte
-  const h = Math.ceil(r) + 14;       // hoogte: boog + tekst
-  const cx = w / 2;
-  const cy = -iconSize / 2 + 4;     // cirkelmiddelpunt boven de SVG laat boog onderaan liggen
+  // Te lange namen: terugvallen op platte tooltip
+  if (text.length > 14) {
+    const div = document.createElement("div");
+    div.className = "tooltip";
+    div.textContent = text;
+    return div;
+  }
 
-  // Pad: halve cirkelboog van links naar rechts, meebuigend met het icoon
+  const r = iconSize / 2 + 4;
+  const w = iconSize + 16;
+  const h = Math.ceil(r + 10);
+  const cx = w / 2;
+  const cy = 10 + r;
+
   const d = `M ${cx - r} ${cy} A ${r} ${r} 0 0 1 ${cx + r} ${cy}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("class", "tooltip curved-label");
+  svg.setAttribute("class", "curved-label");        // alléén curved-label, geen tooltip
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
-    `position:absolute; left:50%; bottom:${-4}px; transform:translateX(-50%); ` +
+    `position:absolute; left:50%; bottom:-4px; transform:translateX(-50%); ` +
     `width:${w}px; height:${h}px; pointer-events:none; z-index:2000;`;
 
+  // Grijze halve cirkel als achtergrond
+  const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  bg.setAttribute("d", `${d} Z`);
+  bg.setAttribute("fill", "rgba(40, 40, 40, 0.85)");
+  svg.appendChild(bg);
+
+  // Onzichtbaar pad voor de tekst
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("d", d);
-  path.setAttribute("id", "curved-" + Math.random().toString(36).slice(2, 8));
+  path.setAttribute("id", "cl-" + Math.random().toString(36).slice(2, 8));
   path.setAttribute("fill", "none");
   svg.appendChild(path);
 
+  // De tekst langs de boog
   const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
   txt.setAttribute("fill", "white");
   txt.setAttribute("font-size", "8");
   txt.setAttribute("text-anchor", "middle");
-
   const tp = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
   tp.setAttribute("href", "#" + path.id);
   tp.setAttribute("startOffset", "50%");
@@ -728,7 +742,7 @@ function renderClosed() {
     
     // Permanente tooltip op mobiel
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        titleContainer.appendChild(makeCurvedLabel(map.naam, 60));
+        container.appendChild(makeCurvedLabel(map.naam, 40));
     } else {
         attachTooltip(titleImg, map.naam);
     }
@@ -864,7 +878,7 @@ function renderSide(parentContainer, map, side) {
 
   // Tooltip voor de map-title
   if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-    elContainer.appendChild(makeCurvedLabel(el.naam, 50));
+    titleContainer.appendChild(makeCurvedLabel(el.naam, 60));
   } else {
     attachTooltip(img, el.naam);
   }
@@ -916,7 +930,7 @@ function renderSide(parentContainer, map, side) {
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        container.appendChild(makeCurvedLabel(map.naam, 40));
+        elContainer.appendChild(makeCurvedLabel(map.naam, 50));
     } else {
         attachTooltip(img, map.naam);
     }
