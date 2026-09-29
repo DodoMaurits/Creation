@@ -15415,6 +15415,23 @@ function updateTimelineLabel() {
   // Label positioneren **exact boven de bol**
   timelineLabel.style.left = `${percentage * 100}%`;
   // transform: translateX(-50%) in CSS doet de centering
+  
+  // Alleen op mobiel clampen; laptop houdt de exacte percentage-positionering
+  if (window.matchMedia("(max-width: 900px) and (orientation: portrait)").matches) {
+    const labelWidth = timelineLabel.offsetWidth;
+    const barWidth = timeline.getBoundingClientRect().width;
+
+    let leftPx = percentage * barWidth;
+
+    const minPx = labelWidth / 2;
+    const maxPx = barWidth - labelWidth / 2;
+    if (leftPx < minPx) leftPx = minPx;
+    if (leftPx > maxPx) leftPx = maxPx;
+
+    timelineLabel.style.left = `${leftPx}px`;
+  } else {
+    timelineLabel.style.left = `${percentage * 100}%`;
+  }
 }
 
 // ----- RENDER CLOSED MAPS -----
