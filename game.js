@@ -106,7 +106,7 @@ function makeCurvedLabel(text, iconSize) {
   svg.setAttribute("class", "curved-label");        // alléén curved-label, geen tooltip
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
-    `position:absolute; left:50%; bottom:-4px; transform:translateX(-50%); ` +
+    `position:absolute; left:50%; bottom:-2px; transform:translateX(-50%); ` +
     `width:${w}px; height:${h}px; pointer-events:none; z-index:2000;`;
 
   // Grijze halve cirkel als achtergrond
