@@ -106,8 +106,8 @@ function makeCurvedLabel(text, iconSize) {
   svg.setAttribute("class", "curved-label");        // alléén curved-label, geen tooltip
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
-    `position:absolute; left:50%; bottom:-2px; transform:translateX(-50%); ` +
-    `width:${w}px; height:${h}px; pointer-events:none; z-index:2000;`;
+    `position:absolute; left:50%; bottom:-4px; transform:translateX(-50%); ` +
+    `pointer-events:none; z-index:2000;`;
 
   // Grijze halve cirkel als achtergrond
   const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
@@ -765,8 +765,7 @@ function renderClosed() {
     
     // Permanente tooltip op mobiel
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        const closedIconSize = (openLeft || openRight) ? 40 : 60;
-        container.appendChild(makeCurvedLabel(map.naam, closedIconSize));
+        container.appendChild(makeCurvedLabel(map.naam, 60));
     } else {
         attachTooltip(img, map.naam);
     }
