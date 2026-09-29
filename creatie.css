@@ -234,4 +234,21 @@ html, body {
               width: 90%;
               font-size: 12px;
             }
+  
+          .explanation-box {
+            padding: 20px;
+            max-height: 90vh;
+            overflow-y: auto;
+          }
+  
+          .explanation-text {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+          }
+  
+          .explanation-text p { text-align: left; hyphens: none; }
+          .oerknal-icon { height: 30dvh; }
+          html, body { min-height: 100dvh; height: auto; }
+          #mute-button { width: 44px; height: 44px; }
 }
