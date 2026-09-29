@@ -1005,8 +1005,7 @@ body {
 
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
-            body { margin: 0; font-family: sans-serif; 
-            overflow: hidden;    
+            body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto;
             }
   
             #app { width: 100vw; height: 100vh; position: relative; }
@@ -1194,9 +1193,10 @@ body {
               top: -28px;
             }
 
-            .intro-wrapper { position: absolute; transform: translateX(-50%); 
+            .intro-wrapper { transform: translateX(-50%); 
                             pointer-events: none; z-index: 3000; text-align: center;
                             opacity: 0; transition: opacity 0.6s ease;
+              position: fixed; 
               top: 10%;
               width: 90%;
               padding: 0 10px;
