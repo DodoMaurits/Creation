@@ -1054,31 +1054,36 @@ body {
             /* ================= TOOLTIP (PERMANENT) ================= */
             .icon-container { display: inline-block; position: relative; text-align: center; }
             
-            .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-                      color: white; z-index: 2000;
-                background: rgba(40, 40, 40, 0.9); 
-                border-radius: 0 0 999px 999px;
-                display: block;          /* altijd zichtbaar */
-                margin-top: -2px;
-                min-width: 45px;
-                max-wdith: 70px;
-                padding: 3px 6px 6px 6px;
-                text-align: center;      /* gecentreerde tekst */
-                font-size: 8px;
-                        
-                white-space: normal;     /* laat regelafbreking toe */
-                word-break: normal;      /* voorkom te vroege afbreking */
-                overflow-wrap: normal;   /* breekt alleen als max-width overschreden */
-                hyphens: auto;           /* streepjes alleen indien nodig */
-            
-                opacity: 1;              /* altijd zichtbaar */
-                pointer-events: none;    /* voorkomt hover issues */
+            .tooltip { 
+              position: absolute;
+              top: 50%;                          /* begint halverwege de cirkel */
+              left: -3px;
+              right: -3px;                       /* 3px uitsteeksel rondom de cirkel */
+              height: calc(50% + 3px);          /* onderste helft + randje */
+              background: rgba(40, 40, 40, 0.85); /* donkergrijs */
+              border-radius: 0 0 999px 999px;     /* onderrand volgt de cirkelboog */
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 4px 10px 6px 10px;
+              box-sizing: border-box;
+              color: white;
+              font-size: 8px;
+              line-height: 1.1;
+              text-align: center;
+              white-space: normal;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              z-index: 2000;
+              pointer-events: none;
             }
 
             .icon.map-title + .tooltip,
             .icon.map-title ~ .tooltip {
-              display: block !important;  /* niet verbergen */
               opacity: 1 !important;
+              display: block !important;  /* niet verbergen */
+              padding-top: 12px;
+              box-sizing: border-box;
             }
   
             /* Alleen tooltips van elementen in open maps corrigeren */
@@ -1104,16 +1109,9 @@ body {
             /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 
             /* ---------------- CLOSED CONTAINTER ---------------- */
-            #closed-container { position: absolute; top: 50%; transform: translate(-50%, -50%);
-                                transition: transform 0.6s ease, opacity 0.6s ease; opacity: 1;
-                                justify-items: center;
-              display: grid;
-              left: 50%;
-              width: calc(3 * 60px + 2 * 8px); /* 3 icons + 2 gaps van 8 px */
-              max-width: 100vw;
-              padding: 0 2vw;          /* minimale padding */
-              column-gap: 8px;
-              row-gap: 100px;
+            #closed-container.side .tooltip {
+              font-size: 6px;
+              padding: 3px 6px 4px 6px;
             }
 
             /* standaard breedte: midden van scherm */
