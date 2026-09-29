@@ -1009,6 +1009,29 @@ body {
             }
   
             #app { width: 100vw; height: 100vh; position: relative; }
+
+            /* ---------------- HINT BUTTON ---------------- */
+            #hint-container {
+              top: 12px;
+              right: 50%;
+              transform: translate(50%, 0);   /* container centreren: 50% terugduwen */
+              flex-direction: column;         /* bubble komt ónder de button i.p.v. ernaast */
+            }
+          
+            #hint-button {
+              width: 36px;
+              height: 36px;
+              font-size: 16px;
+            }
+          
+            #hint-bubble {
+              margin-right: 0;                /* geen zijmarge meer (was voor naast-positionering) */
+              margin-top: 6px;
+              max-width: 80vw;                /* lange hints breken af i.p.v. buiten beeld */
+              white-space: normal;
+              text-align: center;
+              font-size: 11px;
+            }
   
             /* ---------------- SIDES (OPEN MAPS) ---------------- */
             .map-title {
