@@ -1022,6 +1022,12 @@ body {
             #mute-button svg {
               fill: black;
             }
+
+            #volume-slider {
+              display: none !important;
+              opacity: 0 !important;
+              pointer-events: none !important;
+            }
   
             /* ---------------- HINT BUTTON ---------------- */
             #hint-container {
