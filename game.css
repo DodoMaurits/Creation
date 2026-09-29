@@ -1080,6 +1080,7 @@ body {
               overflow: hidden;
               text-overflow: ellipsis;
               opacity: 1 !important;
+              transform: none;
               z-index: 2000;
               pointer-events: none;
             }
