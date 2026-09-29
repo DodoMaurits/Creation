@@ -1023,11 +1023,16 @@ body {
               height: 36px;
               font-size: 16px;
             }
+
+            #hint-button::after {
+              content: none !important;    /* geen 'Hint'-label op touch, ook niet na tik */
+            }
           
             #hint-bubble {
-              margin-right: 0;                /* geen zijmarge meer (was voor naast-positionering) */
+              order: 2;              /* onder de button in de kolom */
+              margin-right: 0;
               margin-top: 6px;
-              max-width: 80vw;                /* lange hints breken af i.p.v. buiten beeld */
+              max-width: 80vw;
               white-space: normal;
               text-align: center;
               font-size: 11px;
