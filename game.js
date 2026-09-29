@@ -139,7 +139,6 @@ function makeCurvedLabel(text, iconSize) {
   svg.appendChild(bg);
 
   // Onzichtbaar pad voor de tekst
-  const dText = `M ${cx - r} ${top - 4} A ${r} ${r} 0 0 0 ${cx + r} ${top - 4}`;
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("d", dText);
   path.setAttribute("id", "cl-" + Math.random().toString(36).slice(2, 8));
