@@ -93,19 +93,20 @@ function makeCurvedLabel(text, iconSize) {
     return div;
   }
 
-  const r = iconSize / 2 + 4;      // straal: cirkel + randje
-  const k = 6;                    // hoeveel de randen OMLAAG meekrullen (net geen halve cirkel)
-  const a = Math.sqrt(r * r - k * k);  // halve breedte van de boog door de krul
+  const r = iconSize / 2 + 4;           // straal: cirkel + randje
+  const k = 6;                         // randen stoppen k px ÓNDER de midlijn van het icoon
+  const a = Math.sqrt(r * r - k * k);   // halve breedte van de boog
   const w = iconSize + 16;
   const top = 6;
   const h = Math.ceil(top + r + 4);
   const cx = w / 2;
 
-  // Boog: iets méér dan een halve cirkel — randen zitten k px ónder de helftlijn
-  const d = `M ${cx - a} ${top + k} A ${r} ${r} 0 1 0 ${cx + a} ${top + k}`;
+  // KOM: korte boog (vlag 0 0 0) — eindpunten net onder de midlijn,
+  // dippt tot dezelfde onderkant als voorheen, krult dus om het icoon heen
+  const d = `M ${cx - a} ${top + k} A ${r} ${r} 0 0 0 ${cx + a} ${top + k}`;
 
   // Tekstpad: zelfde boog, 4px hoger voor een kleine marge onder de tekst
-  const dText = `M ${cx - a} ${top + k - 4} A ${r} ${r} 0 1 0 ${cx + a} ${top + k - 4}`;
+  const dText = `M ${cx - a} ${top + k - 4} A ${r} ${r} 0 0 0 ${cx + a} ${top + k - 4}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");
@@ -118,7 +119,7 @@ function makeCurvedLabel(text, iconSize) {
   const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   grad.setAttribute("id", "cl-grad-" + Math.random().toString(36).slice(2, 8));
   grad.setAttribute("x1", "0");
-  grad.setAttribute("y1", top);
+  grad.setAttribute("y1", top + k - 2);
   grad.setAttribute("x2", "0");
   grad.setAttribute("y2", top + r);
   grad.setAttribute("gradientUnits", "userSpaceOnUse");
