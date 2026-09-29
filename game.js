@@ -89,7 +89,7 @@ function makeCurvedLabel(text, iconSize) {
   if (text.length > 14) {
     const div = document.createElement("div");
     div.className = "tooltip";
-    div.textContent = text;
+    div.textContent = text.toUpperCase();
     return div;
   }
 
@@ -116,8 +116,9 @@ function makeCurvedLabel(text, iconSize) {
   svg.appendChild(bg);
 
   // Onzichtbaar pad voor de tekst
+  const dText = `M ${cx - r} ${top - 4} A ${r} ${r} 0 0 0 ${cx + r} ${top - 4}`;
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-  path.setAttribute("d", d);
+  path.setAttribute("d", dText);
   path.setAttribute("id", "cl-" + Math.random().toString(36).slice(2, 8));
   path.setAttribute("fill", "none");
   svg.appendChild(path);
@@ -130,7 +131,7 @@ function makeCurvedLabel(text, iconSize) {
   const tp = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
   tp.setAttribute("href", "#" + path.id);
   tp.setAttribute("startOffset", "50%");
-  tp.textContent = text;
+  tp.textContent = text.toUpperCase();
   txt.appendChild(tp);
   svg.appendChild(txt);
 
@@ -931,7 +932,8 @@ function renderSide(parentContainer, map, side) {
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        elContainer.appendChild(makeCurvedLabel(el.naam, 50));
+        const closedIconSize = (openLeft || openRight) ? 40 : 60;
+        container.appendChild(makeCurvedLabel(map.naam, closedIconSize));
     } else {
         attachTooltip(img, el.naam);
     }
