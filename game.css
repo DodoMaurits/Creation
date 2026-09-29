@@ -1196,6 +1196,7 @@ body {
               white-space: normal;
               text-align: center;
               top: -28px;
+              transform: translateX(calc(-50% - 10px));
             }
 
             .intro-wrapper { transform: translateX(-50%); 
