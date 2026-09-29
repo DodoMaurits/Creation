@@ -744,7 +744,7 @@ function renderClosed() {
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
         container.appendChild(makeCurvedLabel(map.naam, 40));
     } else {
-        attachTooltip(titleImg, map.naam);
+        attachTooltip(img, map.naam);
     }
     
     grid.appendChild(container);
@@ -878,9 +878,9 @@ function renderSide(parentContainer, map, side) {
 
   // Tooltip voor de map-title
   if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-    titleContainer.appendChild(makeCurvedLabel(el.naam, 60));
+      titleContainer.appendChild(makeCurvedLabel(map.naam, 60));
   } else {
-    attachTooltip(img, el.naam);
+      attachTooltip(titleImg, map.naam);
   }
   titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
@@ -930,9 +930,9 @@ function renderSide(parentContainer, map, side) {
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        elContainer.appendChild(makeCurvedLabel(map.naam, 50));
+        elContainer.appendChild(makeCurvedLabel(el.naam, 50));
     } else {
-        attachTooltip(img, map.naam);
+        attachTooltip(img, el.naam);
     }
         elContainer.appendChild(img);
         grid.appendChild(elContainer);
