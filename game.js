@@ -93,31 +93,34 @@ function makeCurvedLabel(text, iconSize) {
     return div;
   }
 
-  const rx = iconSize / 2 + 4;       // breedte van de boog (onveranderd)
-  const ry = rx * 0.6;               // diepte: 60% van een halve cirkel → ondiepere kom
+  const r = iconSize / 2 + 4;      // straal: cirkel + randje
+  const k = 6;                    // hoeveel de randen OMLAAG meekrullen (net geen halve cirkel)
+  const a = Math.sqrt(r * r - k * k);  // halve breedte van de boog door de krul
   const w = iconSize + 16;
   const top = 6;
-  const h = Math.ceil(top + ry + 4);
+  const h = Math.ceil(top + r + 4);
   const cx = w / 2;
 
-  // Elliptische boog: even breed, maar ondieper dan een halve cirkel
-  const d = `M ${cx - rx} ${top} A ${rx} ${ry} 0 0 0 ${cx + rx} ${top}`;
-  const dText = `M ${cx - rx} ${top - 4} A ${rx} ${ry} 0 0 0 ${cx + rx} ${top - 4}`;
+  // Boog: iets méér dan een halve cirkel — randen zitten k px ónder de helftlijn
+  const d = `M ${cx - a} ${top + k} A ${r} ${r} 0 1 0 ${cx + a} ${top + k}`;
+
+  // Tekstpad: zelfde boog, 4px hoger voor een kleine marge onder de tekst
+  const dText = `M ${cx - a} ${top + k - 4} A ${r} ${r} 0 1 0 ${cx + a} ${top + k - 4}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("class", "curved-label");        // alléén curved-label, geen tooltip
+  svg.setAttribute("class", "curved-label");
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
-    `position:absolute; left:50%; bottom:${-(ry + 4)}px; transform:translateX(-50%); ` +
+    `position:absolute; left:50%; bottom:-4px; transform:translateX(-50%); ` +
     `pointer-events:none; z-index:2000;`;
 
-  // Grijze halve cirkel als achtergrond
+  // Fade: bovenaan transparant, naar beneden donkergrijs
   const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   grad.setAttribute("id", "cl-grad-" + Math.random().toString(36).slice(2, 8));
   grad.setAttribute("x1", "0");
-  grad.setAttribute("y1", top - 6);
+  grad.setAttribute("y1", top);
   grad.setAttribute("x2", "0");
-  grad.setAttribute("y2", top + ry);     // tot de onderkant van de ondiepe kom
+  grad.setAttribute("y2", top + r);
   grad.setAttribute("gradientUnits", "userSpaceOnUse");
 
   const stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
@@ -126,13 +129,13 @@ function makeCurvedLabel(text, iconSize) {
   grad.appendChild(stop1);
 
   const stop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
-  stop2.setAttribute("offset", "0.65");   // was 0.45 → fade loopt verder door
+  stop2.setAttribute("offset", "0.45");
   stop2.setAttribute("stop-color", "rgba(40, 40, 40, 0.85)");
   grad.appendChild(stop2);
 
   svg.appendChild(grad);
 
-  // Grijze halve cirkel als achtergrond, met de fade als vulling
+  // De kom, met de fade als vulling
   const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
   bg.setAttribute("d", `${d} Z`);
   bg.setAttribute("fill", `url(#${grad.id})`);
