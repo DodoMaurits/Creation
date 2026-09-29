@@ -1183,6 +1183,16 @@ body {
               line-height: 1.2;
             }
 
+            #timeline-label {
+              font-size: 11px;
+              padding: 3px 8px;
+              letter-spacing: 0.3px;
+              max-width: 60vw;
+              white-space: normal;
+              text-align: center;
+              top: -46px;
+            }
+
             .intro-wrapper { position: absolute; transform: translateX(-50%); 
                             pointer-events: none; z-index: 3000; text-align: center;
                             opacity: 0; transition: opacity 0.6s ease;
