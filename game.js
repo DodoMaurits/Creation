@@ -84,6 +84,44 @@ function attachTooltip(el, text) {
   });
 }
 
+function makeCurvedLabel(text, iconSize) {
+  const r = iconSize / 2 + 6;        // straal iets groter dan het icoon
+  const w = iconSize + 24;          // SVG-breedte
+  const h = Math.ceil(r) + 14;       // hoogte: boog + tekst
+  const cx = w / 2;
+  const cy = -iconSize / 2 + 4;     // cirkelmiddelpunt boven de SVG laat boog onderaan liggen
+
+  // Pad: halve cirkelboog van links naar rechts, meebuigend met het icoon
+  const d = `M ${cx - r} ${cy} A ${r} ${r} 0 0 1 ${cx + r} ${cy}`;
+
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", "tooltip curved-label");
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+  svg.style.cssText =
+    `position:absolute; left:50%; bottom:${-4}px; transform:translateX(-50%); ` +
+    `width:${w}px; height:${h}px; pointer-events:none; z-index:2000;`;
+
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("d", d);
+  path.setAttribute("id", "curved-" + Math.random().toString(36).slice(2, 8));
+  path.setAttribute("fill", "none");
+  svg.appendChild(path);
+
+  const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  txt.setAttribute("fill", "white");
+  txt.setAttribute("font-size", "8");
+  txt.setAttribute("text-anchor", "middle");
+
+  const tp = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
+  tp.setAttribute("href", "#" + path.id);
+  tp.setAttribute("startOffset", "50%");
+  tp.textContent = text;
+  txt.appendChild(tp);
+  svg.appendChild(txt);
+
+  return svg;
+}
+
 // ----- INTRO HINTS -----
 function showIntroHint() {
   if (introStep > 2) return;
@@ -690,12 +728,9 @@ function renderClosed() {
     
     // Permanente tooltip op mobiel
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        const tooltip = document.createElement("div");
-        tooltip.className = "tooltip";
-        tooltip.textContent = map.naam;
-        container.appendChild(tooltip);
+        titleContainer.appendChild(makeCurvedLabel(map.naam, 60));
     } else {
-        attachTooltip(img, map.naam);
+        attachTooltip(titleImg, map.naam);
     }
     
     grid.appendChild(container);
@@ -829,12 +864,9 @@ function renderSide(parentContainer, map, side) {
 
   // Tooltip voor de map-title
   if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-      const tooltip = document.createElement("div");
-      tooltip.className = "tooltip";
-      tooltip.textContent = map.naam;
-      titleContainer.appendChild(tooltip);
+    elContainer.appendChild(makeCurvedLabel(el.naam, 50));
   } else {
-      attachTooltip(titleImg, map.naam);
+    attachTooltip(img, el.naam);
   }
   titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
@@ -884,12 +916,9 @@ function renderSide(parentContainer, map, side) {
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        const tooltip = document.createElement("div");
-        tooltip.className = "tooltip";
-        tooltip.textContent = el.naam;
-        elContainer.appendChild(tooltip);
+        container.appendChild(makeCurvedLabel(map.naam, 40));
     } else {
-        attachTooltip(img, el.naam);
+        attachTooltip(img, map.naam);
     }
         elContainer.appendChild(img);
         grid.appendChild(elContainer);
