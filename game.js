@@ -765,7 +765,8 @@ function renderClosed() {
     
     // Permanente tooltip op mobiel
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        container.appendChild(makeCurvedLabel(map.naam, 40));
+        const closedIconSize = (openLeft || openRight) ? 40 : 60;
+        container.appendChild(makeCurvedLabel(map.naam, closedIconSize));
     } else {
         attachTooltip(img, map.naam);
     }
@@ -953,8 +954,7 @@ function renderSide(parentContainer, map, side) {
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        const closedIconSize = (openLeft || openRight) ? 40 : 60;
-        container.appendChild(makeCurvedLabel(map.naam, closedIconSize));
+        elContainer.appendChild(makeCurvedLabel(el.naam, 50));
     } else {
         attachTooltip(img, el.naam);
     }
