@@ -93,29 +93,31 @@ function makeCurvedLabel(text, iconSize) {
     return div;
   }
 
-  const r = iconSize / 2 + 4;
+  const rx = iconSize / 2 + 4;       // breedte van de boog (onveranderd)
+  const ry = rx * 0.6;               // diepte: 60% van een halve cirkel → ondiepere kom
   const w = iconSize + 16;
-  const top = 6;                    // y van de platte bovenkant van de kom
-  const h = Math.ceil(top + r + 4); // hoogte: platte rand + boogdiepte + marge
+  const top = 6;
+  const h = Math.ceil(top + ry + 4);
   const cx = w / 2;
 
-  // sweep 0 = tegen de klok mee = boog buigt OMLAAG (kom, geen koepel)
-  const d = `M ${cx - r} ${top} A ${r} ${r} 0 0 0 ${cx + r} ${top}`;
+  // Elliptische boog: even breed, maar ondieper dan een halve cirkel
+  const d = `M ${cx - rx} ${top} A ${rx} ${ry} 0 0 0 ${cx + rx} ${top}`;
+  const dText = `M ${cx - rx} ${top - 4} A ${rx} ${ry} 0 0 0 ${cx + rx} ${top - 4}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");        // alléén curved-label, geen tooltip
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
-    `position:absolute; left:50%; bottom:${-(r + 4)}px; transform:translateX(-50%); ` +
+    `position:absolute; left:50%; bottom:${-(ry + 4)}px; transform:translateX(-50%); ` +
     `pointer-events:none; z-index:2000;`;
 
   // Grijze halve cirkel als achtergrond
   const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   grad.setAttribute("id", "cl-grad-" + Math.random().toString(36).slice(2, 8));
   grad.setAttribute("x1", "0");
-  grad.setAttribute("y1", top - 6);   // iets boven de platte rand: helemaal fade
+  grad.setAttribute("y1", top - 6);
   grad.setAttribute("x2", "0");
-  grad.setAttribute("y2", top + r);   // onderkant van de boog
+  grad.setAttribute("y2", top + ry);     // tot de onderkant van de ondiepe kom
   grad.setAttribute("gradientUnits", "userSpaceOnUse");
 
   const stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
@@ -124,7 +126,7 @@ function makeCurvedLabel(text, iconSize) {
   grad.appendChild(stop1);
 
   const stop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
-  stop2.setAttribute("offset", "0.45");   // rond halverwege volledig kleur
+  stop2.setAttribute("offset", "0.65");   // was 0.45 → fade loopt verder door
   stop2.setAttribute("stop-color", "rgba(40, 40, 40, 0.85)");
   grad.appendChild(stop2);
 
