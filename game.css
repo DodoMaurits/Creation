@@ -1028,6 +1028,11 @@ body {
               opacity: 0 !important;
               pointer-events: none !important;
             }
+
+            #audio-controls {
+              top: 12px;
+              right: 12px;
+            }
   
             /* ---------------- HINT BUTTON ---------------- */
             #hint-container {
