@@ -1089,6 +1089,12 @@ body {
             .grid-elements .icon-container { display: inline-block; position: relative; 
               margin-bottom: 20px;
             }
+
+            .grid-elements .icon-container .tooltip {
+              left: -3px;
+              right: -3px;
+              transform: none;
+            }
   
             /* ---------------- GRID LAYOUTS ---------------- */
             .grid-elements { display: grid; justify-content: center;
