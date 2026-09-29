@@ -1053,6 +1053,11 @@ body {
 
             /* ================= TOOLTIP (PERMANENT) ================= */
             .icon-container { display: inline-block; position: relative; text-align: center; }
+          
+            .icon-container .icon {
+              position: relative;   /* z-index werkt alleen op positioned elements */
+              z-index: 2100;        /* hoger dan de 2000 van .tooltip */
+            }
             
             .tooltip { 
               position: absolute;
