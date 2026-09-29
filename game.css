@@ -1055,11 +1055,14 @@ body {
             .icon-container { display: inline-block; position: relative; text-align: center; }
             
             .tooltip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-                      background: rgba(0,0,0,0.85); color: white; border-radius: 6px; z-index: 2000;
+                      color: white; z-index: 2000;
+                background: rgba(40, 40, 40, 0.9); 
+                border-radius: 0 0 999px 999px;
                 display: block;          /* altijd zichtbaar */
-                margin-top: 0px;
-                width: 45px;
-                padding: 4px 0px;
+                margin-top: -2px;
+                min-width: 45px;
+                max-wdith: 70px;
+                padding: 3px 6px 6px 6px;
                 text-align: center;      /* gecentreerde tekst */
                 font-size: 8px;
                         
@@ -1136,7 +1139,9 @@ body {
 
             #closed-container.side .tooltip {
               font-size: 6px;
-              width: 30px;
+              min-width: 30px;
+              max-width: 45px;
+              padding: 2px 4px 4px 4px;
             }
   
             /* ---------------- RESULTAAT COMBINATIE ---------------- */
