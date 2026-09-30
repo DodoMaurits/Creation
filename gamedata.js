@@ -6782,7 +6782,7 @@ const combinaties = [
   },
   {
     input: ["Bos", "Regen"],
-    hint: `Meer begroeiing, meer vocht, meer leven.`,
+    hint: `Meer begroeiing, meer vocht, meer leven in het bos.`,
     output: [
       { naam: "Regenwoud", icoon: "icons/Regenwoud.png", map: "Landschap", 
         quote: `When we walk into a grove of trees or under an open sky the magic of nature takes over
