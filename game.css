@@ -1346,6 +1346,7 @@ body {
           
             .result-title {
               font-size: 13px;
+              margin-bottom: 2px;
               white-space: normal;
               overflow: visible;
               text-overflow: clip;
