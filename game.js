@@ -126,12 +126,12 @@ function makeCurvedLabel(text, iconSize) {
 
   const stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
   stop1.setAttribute("offset", "0");
-  stop1.setAttribute("stop-color", "rgba(40, 40, 40, 0)");
+  stop1.setAttribute("stop-color", "rgba(255, 255, 255, 0)");
   grad.appendChild(stop1);
 
   const stop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
   stop2.setAttribute("offset", "0.45");
-  stop2.setAttribute("stop-color", "rgba(40, 40, 40, 0.85)");
+  stop2.setAttribute("stop-color", "rgba(255, 255, 255, 0.85)");
   grad.appendChild(stop2);
 
   svg.appendChild(grad);
@@ -151,7 +151,7 @@ function makeCurvedLabel(text, iconSize) {
 
   // De tekst langs de boog
   const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
-  txt.setAttribute("fill", "white");
+  txt.setAttribute("fill", "#555");
   txt.setAttribute("font-size", "8");
   txt.setAttribute("text-anchor", "middle");
   const tp = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
