@@ -86,7 +86,7 @@ function attachTooltip(el, text) {
 
 function makeCurvedLabel(text, iconSize) {
   // Geometrie eerst berekenen, daarna pas de fallback-check
-  const ring = 12;                     // kom loopt ring px ÓNDER de icon-onderkant door
+  const ring = 9;                     // kom loopt ring px ÓNDER de icon-onderkant door
   const hang = ring + 2;               // SVG steekt hang px uit onder de container
   const h = iconSize + ring + 8;       // hoogte van de SVG
   const r = iconSize / 2 + ring;       // kom-straal: icoon + rand
