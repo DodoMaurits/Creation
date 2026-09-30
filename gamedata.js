@@ -1504,7 +1504,7 @@ const combinaties = [
     input: [
       ["Silicium", "Zand"], ["Kalk", "Zand"], ["Druk", "Zand"] 
     ],
-    hint: `Silicium verhardt en kan verzanden in steen.`,
+    hint: `Wat kan verzanden in steen...`,
     output: [
       { naam: "Zandsteen", icoon: "icons/Zandsteen.png", map: "Aarde", 
         quote: `Write your worries in the sand, carve your blessings in stone 
