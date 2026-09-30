@@ -1364,7 +1364,7 @@ const combinaties = [
     input: [
       ["Schalie", "Warmte"], ["Schalie", "Druk"]
     ],
-    hint: `Het mag ook megalomaner: meer storm, meer wind...`,
+    hint: `Onderdruk niet, maar doe het wel bij schalie.`,
     output: [
       { naam: "Leisteen", icoon: "icons/Leisteen.png", map: "Aarde", 
         quote: `The slates of Wales furnish one of the most striking examples of cleavage produced by pressure 
