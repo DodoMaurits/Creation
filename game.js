@@ -962,7 +962,7 @@ function renderSide(parentContainer, map, side) {
   } else {
     grid.style.gridTemplateColumns = "repeat(3, 50px)";
     grid.style.columnGap = "8px";
-    grid.style.rowGap = "5px";
+    grid.style.rowGap = "2px"; // Row-gaps mobiele versie
   }
 
   // Maak de elementen
