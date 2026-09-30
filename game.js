@@ -136,12 +136,58 @@ function makeCurvedLabel(text, iconSize) {
 
   svg.appendChild(grad);
 
-  // De kom, met de fade als vulling
+  // Horizontale fade: uiteinden van de kom vervliegen eerder dan het midden
+  const fadeLR = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
+  fadeLR.setAttribute("id", "cl-fade-" + Math.random().toString(36).slice(2, 8));
+  fadeLR.setAttribute("x1", "0%");
+  fadeLR.setAttribute("y1", "0%");
+  fadeLR.setAttribute("x2", "100%");
+  fadeLR.setAttribute("y2", "0%");
+
+  const fStop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+  fStop1.setAttribute("offset", "0");
+  fStop1.setAttribute("stop-color", "white");
+  fStop1.setAttribute("stop-opacity", "0");
+  fadeLR.appendChild(fStop1);
+
+  const fStop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+  fStop2.setAttribute("offset", "0.18");
+  fStop2.setAttribute("stop-color", "white");
+  fStop2.setAttribute("stop-opacity", "1");
+  fadeLR.appendChild(fStop2);
+
+  const fStop3 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+  fStop3.setAttribute("offset", "0.82");
+  fStop3.setAttribute("stop-color", "white");
+  fStop3.setAttribute("stop-opacity", "1");
+  fadeLR.appendChild(fStop3);
+
+  const fStop4 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+  fStop4.setAttribute("offset", "1");
+  fStop4.setAttribute("stop-color", "white");
+  fStop4.setAttribute("stop-opacity", "0");
+  fadeLR.appendChild(fStop4);
+
+  svg.appendChild(fadeLR);
+
+  const fadeMask = document.createElementNS("http://www.w3.org/2000/svg", "mask");
+  fadeMask.setAttribute("id", "cl-mask-" + Math.random().toString(36).slice(2, 8));
+  const maskRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  maskRect.setAttribute("x", "0");
+  maskRect.setAttribute("y", "0");
+  maskRect.setAttribute("width", "100%");
+  maskRect.setAttribute("height", "100%");
+  maskRect.setAttribute("fill", `url(#${fadeLR.id})`);
+  fadeMask.appendChild(maskRect);
+  svg.appendChild(fadeMask);
+
+  // De kom: verticale fade als vulling, horizontale fade als masker
   const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
   bg.setAttribute("d", `${d} Z`);
   bg.setAttribute("fill", `url(#${grad.id})`);
+  bg.setAttribute("mask", `url(#${fadeMask.id})`);
   svg.appendChild(bg);
-
+  
   // Onzichtbaar pad voor de tekst
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("d", dText);
