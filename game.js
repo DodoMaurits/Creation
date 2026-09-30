@@ -532,6 +532,10 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     case 10: cols = 5; break;
     default: cols = Math.ceil(Math.sqrt(elements.length));
   }
+  // Mobiel: 5 nieuwe elementen → 3 op rij 1, 2 op rij 2
+  if (window.innerWidth <= 900 && window.innerHeight > window.innerWidth && elements.length === 5) {
+    cols = 3;
+  }
 
   grid.style.setProperty("--cols", cols);
   grid.style.justifyItems = "center";
