@@ -97,11 +97,11 @@ function makeCurvedLabel(text, iconSize) {
   const a = Math.sqrt(r * r - k * k);  // halve breedte van de kom
   const iconBottom = h - hang;         // icon-onderkant in SVG-coördinaten
 
-  // Tekst-maatwerk: past de naam op de boog?
-  const yText = iconBottom + 1;       // tekstbasis net onder de icon-onderkant
-  const aText = a * 0.55;              // halve tekstboog-breedte
-  const rText = aText * 1.5;           // vlakke boog
-  const maxChars = Math.floor((aText * 1.8) / 4.8);  // ≈8px letters, ~4.8px per teken
+  // Tekst: bredere boog dan de kom — lange namen lopen door tot voorbij de kom
+  const yText = iconBottom + 1;
+  const aText = a * 1.15;              // BREDER dan de kom zelf (was 0.55)
+  const rText = aText * 1.8;           // flauwe curve: geen steile meedraaiende letters
+  const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
 
   // Te lange namen: terugvallen op platte tooltip
   if (text.length > maxChars) {
