@@ -1231,9 +1231,16 @@ body {
             }
 
             /* ---------------- THRESHOLD / UITLEG BOX ---------------- */
+            #threshold-overlay {
+              padding: 16px;
+              box-sizing: border-box;
+              overflow-y: auto;
+            }
+  
             .explanation-box {
+              margin: auto;
               width: calc(100vw - 32px);
-              max-height: 85dvh;
+              max-height: calc(85dvh - 32px);
               padding: 24px 18px;
               gap: 12px;
               font-size: 14px;
