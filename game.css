@@ -1069,7 +1069,7 @@ body {
             /* ---------------- SIDES (OPEN MAPS) ---------------- */
             .map-title {
               cursor: none;
-              margin-bottom: 1px;
+              margin-bottom: 28px;
             }
   
             .side {position: absolute; top: 20px; width: 50vw; text-align: center; 
