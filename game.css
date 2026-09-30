@@ -1315,10 +1315,10 @@ body {
             .result-title {
               font-size: 13px;
               white-space: normal;
-              overflow: visible;          /* was hidden (van desktop) */
-              text-overflow: clip;        /* was ellipsis (van desktop) */
+              overflow: visible;
+              text-overflow: clip;
               overflow-wrap: break-word;
-              hyphens: auto;              /* afbreken met streepje op de lettergreep */
+              hyphens: auto;
               max-width: 100%;
             }
           
