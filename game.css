@@ -1154,7 +1154,7 @@ body {
   
             /* Alleen tooltips van elementen in open maps corrigeren */
             .grid-elements .icon-container { display: inline-block; position: relative; 
-              margin-bottom: 34px;
+              margin-bottom: 17px;
             }
 
             .grid-elements .icon-container .tooltip {
@@ -1172,9 +1172,9 @@ body {
 
             .grid-closed { display: flex; flex-wrap: wrap; justify-content: center; 
                            width: auto; margin: 0 auto;
-              gap: 8px;
+              column-gap: 8px;
+              row-gap: 20px;
               max-width: 100%;
-              row-gap: 40px;
             }
   
             /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
