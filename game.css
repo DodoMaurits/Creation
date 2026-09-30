@@ -1408,10 +1408,18 @@ body {
             }
 
             /* ---------------- THRESHOLD INFO ---------------- */
-            .info-inner {
-              width: 88vw;
-              min-width: 0;
+            .info-overlay {
+              overflow-y: auto;
+              padding: 24px 0;
+              box-sizing: border-box;
+              align-items: flex-start;    /* niet centreren → top blijft bereikbaar */
             }
+            
+            .info-inner {
+              margin: auto 0;            /* centreert weer zodra het wél past */
+              padding-bottom: 40px;      /* lucht onderaan, comfortabel uitscrollen */
+            }
+  
             .info-title {
               font-size: 22px;
             }
