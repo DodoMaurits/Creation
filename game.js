@@ -106,7 +106,7 @@ function makeCurvedLabel(text, iconSize) {
   const d = `M ${cx - a} ${top + k} A ${r} ${r} 0 0 0 ${cx + a} ${top + k}`;
 
   // Tekstpad: zelfde boog, 4px hoger voor een kleine marge onder de tekst
-  const dText = `M ${cx - a} ${top + k - 4} A ${r} ${r} 0 0 0 ${cx + a} ${top + k - 4}`;
+  const dText = `M ${cx - a} ${top + r - 8} A ${r} ${r} 0 0 0 ${cx + a} ${top + r - 8}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");
