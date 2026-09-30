@@ -840,6 +840,7 @@ function renderClosed() {
       if (gridClosed) gridClosed.style.maxWidth = "802px";
       if (closedContainerCenter) closedContainerCenter.style.width = "802px";
     }
+  }
     closedContainer.style.opacity = 1;
   });
 }
