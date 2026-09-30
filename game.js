@@ -585,10 +585,12 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     const title = document.createElement("div");
     title.className = "result-title";
     title.innerHTML = el.naam;
+    title.lang = "nl";
 
     const quote = document.createElement("div");
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
+    quote.lang = "en";
 
     // 🔹 kleine random X + Y beweging (millimeters/subtiel)
     const moveX = (Math.random() * 20 - 10).toFixed(1) + "px";
