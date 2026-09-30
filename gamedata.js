@@ -2945,12 +2945,9 @@ const combinaties = [
   },
 //------------ ZENUWEN --------------//
   {
-    input: [
-      /* --- PRIL LEVEN --- */
-      ["Zenuwen", "Parasieten"],
+    input: 
       /* --- GELEEDPOTIGEN --- */
-      ["Zeepokken", "Zenuwen"]
-    ],
+      ["Zeepokken", "Zenuwen"],
     hint: `Wat voel ik?`,
     output: [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
