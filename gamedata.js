@@ -4143,6 +4143,7 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    hint: `Sommige dieren kunnen elkaars bloed wel drinken..`,
     output: [
       { naam: "Inktvissen", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
         quote: `I would love to see a giant squid. Very few people have seen them. 
