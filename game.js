@@ -110,7 +110,7 @@ function makeCurvedLabel(text, iconSize) {
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
     `position:absolute; left:50%; bottom:${-hang}px; transform:translateX(-50%); ` +
-    `pointer-events:none; z-index:2000;`;
+    `width:${w}px; height:${h}px; pointer-events:none; z-index:2000;`;
 
   // Verticale fade: transparant bij de randen, wit onderin de kom
   const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
