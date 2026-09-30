@@ -98,7 +98,7 @@ function makeCurvedLabel(text, iconSize) {
 
   // ---- TEKST: volledige cirkel rondom het icoon, gecentreerd onderaan ----
   // Baseline-cirkel: lettertop raakt de iconrand op 'air' px afstand
-  const rBase = iconSize / 2 + air + 6;
+  const rBase = iconSize / 2 + air + 2;
   // ¾-boog: van links-boven, via de onderkant, naar rechts-boven (symmetrisch om onder)
   const pt = (deg) => {
     const t = deg * Math.PI / 180;
