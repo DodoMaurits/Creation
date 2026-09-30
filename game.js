@@ -94,11 +94,12 @@ function makeCurvedLabel(text, iconSize) {
   }
 
   const r = iconSize / 2 + 4;           // straal: cirkel + randje
+  const k = 6;                         // (bestaat nog? zie kanttekening hieronder)
+  const top = 6;                        // EERST declareren
   const dip = 7;                        // kom loopt dip px ÓNDER de icononderkant door
   const yEnd = top + k + dip;           // eindpunten van de boog
   const a = Math.sqrt(r * r - (k + dip) * (k + dip));  // halve breedte
   const w = iconSize + 16;
-  const top = 6;
   const h = Math.ceil(top + r + dip + 4);
   const cx = w / 2;
 
