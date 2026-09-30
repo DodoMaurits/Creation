@@ -759,12 +759,10 @@ function updateTimelineLabel() {
     const barWidth = timeline.getBoundingClientRect().width;
 
     let leftPx = percentage * barWidth -10;
-
-    const minPx = labelWidth / 2;
-    const maxPx = barWidth - labelWidth / 2;
+    const minPx = labelWidth / 2 +10;
+    const maxPx = barWidth +10 - labelWidth / 2;
     if (leftPx < minPx) leftPx = minPx;
     if (leftPx > maxPx) leftPx = maxPx;
-
     timelineLabel.style.left = `${leftPx}px`;
   } else {
     timelineLabel.style.left = `${percentage * 100}%`;
