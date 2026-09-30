@@ -601,6 +601,12 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   
     const popup = document.createElement("div");
     popup.className = "info-popup";
+
+    // openen/sluiten met de info-button
+    infoBtn.onclick = (e) => {
+      e.stopPropagation();
+      popup.classList.toggle("open");
+    };
   
     const box = document.createElement("div");
     box.className = "info-popup-box";
