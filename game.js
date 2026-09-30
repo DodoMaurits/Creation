@@ -85,44 +85,48 @@ function attachTooltip(el, text) {
 }
 
 function makeCurvedLabel(text, iconSize) {
-  // Geometrie eerst berekenen, daarna pas de fallback-check
-  const ring = 9;                     // kom loopt ring px ÓNDER de icon-onderkant door
-  const hang = ring + 2;               // SVG steekt hang px uit onder de container
-  const h = iconSize + ring + 8;       // hoogte van de SVG
-  const r = iconSize / 2 + ring;       // kom-straal: icoon + rand
-  const k = 6;                         // eindpunten k px onder de icon-midlijn
-  const w = iconSize + 40;             // breder canvas voor de doorgelopen tekst
-  const cx = w / 2;                    // horizontaal middelpunt
-  const cy = h - hang - iconSize / 2;  // icon-middelpunt = kom-middelpunt
-  const yEnd = cy + k;                 // boog-eindpunten
-  const a = Math.sqrt(r * r - k * k);  // halve breedte van de kom
-  const iconBottom = h - hang;         // icon-onderkant in SVG-coördinaten
+  // ---- Twee onafhankelijke stuurknoppen ----
+  const air = 2;     // mm-lucht tussen lettertop en iconcirkel
+  const bowl = 5;   // komdiepte: px dat de kom onder de icon-onderkant doorloopt (was ~9)
 
-  const yText = iconBottom + 1;
-  const aText = a * 0.95;             // iets smaller dan de kom — past garandeerd binnen r
-  const rText = r;                   // zelfde straal als de kom-cirkel
-  const cText = cy;                   // zelfde middelpunt
-  const dText = `M ${cx - aText} ${cText + Math.sqrt(rText * rText - aText * aText)} A ${rText} ${rText} 
-  0 0 0 ${cx + aText} ${cText + Math.sqrt(rText * rText - aText * aText)}`;
+  // ---- Canvas: bedekt het hele icoon + kom (tekst mag om het icoon heen krullen) ----
+  const m = 14;                        // marge rondom in de SVG
+  const w = iconSize + 2 * m;
+  const h = m + iconSize + bowl + 2;
+  const cx = w / 2;
+  const cy = m + iconSize / 2;         // icon-middelpunt
 
-  const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
+  // ---- TEKST: volledige cirkel rondom het icoon, gecentreerd onderaan ----
+  // Baseline-cirkel: lettertop raakt de iconrand op 'air' px afstand
+  const rBase = iconSize / 2 + air + 8;
+  // ¾-boog: van links-boven, via de onderkant, naar rechts-boven (symmetrisch om onder)
+  const pt = (deg) => {
+    const t = deg * Math.PI / 180;
+    return `${(cx + rBase * Math.cos(t)).toFixed(2)} ${(cy + rBase * Math.sin(t)).toFixed(2)}`;
+  };
+  const dText = `M ${pt(225)} A ${rBase} ${rBase} 0 0 0 ${pt(90)} A ${rBase} ${rBase} 0 0 0 ${pt(-45)}`;
+  // startOffset 50% = het midden van de boog = exact onderaan het icoon
+
+  // ---- KOM: ondiepe elliptische rand om de onderkant van het icoon ----
+  const kEnd = 6;                              // eindpunten net onder de icon-midlijn
+  const rKomX = iconSize / 2 + 4;              // breedte: krult om de zijkanten van het icoon
+  const rKomY = iconSize / 2 + bowl - kEnd;    // bodem = icon-onderkant + bowl
+  const yEnd = cy + kEnd;
+  const d = `M ${cx - rKomX} ${yEnd} A ${rKomX} ${rKomY} 0 0 0 ${cx + rKomX} ${yEnd}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
-    `position:absolute; left:50%; bottom:${-hang}px; transform:translateX(-50%); ` +
+    `position:absolute; left:50%; top:${-m}px; transform:translateX(-50%); ` +
     `width:${w}px; height:${h}px; pointer-events:none; z-index:2000;`;
 
-  // Verticale fade: transparant bij de randen, wit onderin de kom
+  // Verticale fade op de kom
   const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   grad.setAttribute("id", "cl-grad-" + Math.random().toString(36).slice(2, 8));
-  grad.setAttribute("x1", "0");
-  grad.setAttribute("y1", yEnd - 2);
-  grad.setAttribute("x2", "0");
-  grad.setAttribute("y2", cy + r);
+  grad.setAttribute("x1", "0");  grad.setAttribute("y1", yEnd - 2);
+  grad.setAttribute("x2", "0");  grad.setAttribute("y2", cy + iconSize / 2 + bowl);
   grad.setAttribute("gradientUnits", "userSpaceOnUse");
-
   const stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
   stop1.setAttribute("offset", "0");
   stop1.setAttribute("stop-color", "rgba(255, 255, 255, 0)");
@@ -133,7 +137,7 @@ function makeCurvedLabel(text, iconSize) {
   grad.appendChild(stop2);
   svg.appendChild(grad);
 
-  // Horizontale fade als masker (uiteinden vervliegen eerder)
+  // Horizontale fade (masker) op de kom
   const fadeLR = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   fadeLR.setAttribute("id", "cl-fade-" + Math.random().toString(36).slice(2, 8));
   fadeLR.setAttribute("x1", "0%"); fadeLR.setAttribute("y1", "0%");
@@ -146,7 +150,6 @@ function makeCurvedLabel(text, iconSize) {
     fadeLR.appendChild(s);
   });
   svg.appendChild(fadeLR);
-
   const fadeMask = document.createElementNS("http://www.w3.org/2000/svg", "mask");
   fadeMask.setAttribute("id", "cl-mask-" + Math.random().toString(36).slice(2, 8));
   const maskRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -156,18 +159,19 @@ function makeCurvedLabel(text, iconSize) {
   fadeMask.appendChild(maskRect);
   svg.appendChild(fadeMask);
 
+  // De kom
   const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
   bg.setAttribute("d", `${d} Z`);
   bg.setAttribute("fill", `url(#${grad.id})`);
   bg.setAttribute("mask", `url(#${fadeMask.id})`);
   svg.appendChild(bg);
 
+  // Het tekstpad + de tekst
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("d", dText);
   path.setAttribute("id", "cl-" + Math.random().toString(36).slice(2, 8));
   path.setAttribute("fill", "none");
   svg.appendChild(path);
-
   const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
   txt.setAttribute("fill", "#555");
   txt.setAttribute("font-size", "8");
