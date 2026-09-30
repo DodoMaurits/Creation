@@ -85,130 +85,96 @@ function attachTooltip(el, text) {
 }
 
 function makeCurvedLabel(text, iconSize) {
+  // Geometrie eerst berekenen, daarna pas de fallback-check
+  const ring = 12;                     // kom loopt ring px ÓNDER de icon-onderkant door
+  const hang = ring + 2;               // SVG steekt hang px uit onder de container
+  const h = iconSize + ring + 8;       // hoogte van de SVG
+  const r = iconSize / 2 + ring;       // kom-straal: icoon + rand
+  const k = 6;                         // eindpunten k px onder de icon-midlijn
+  const cx = (iconSize + 16) / 2;      // horizontaal middelpunt
+  const cy = h - hang - iconSize / 2;  // icon-middelpunt = kom-middelpunt
+  const yEnd = cy + k;                 // boog-eindpunten
+  const a = Math.sqrt(r * r - k * k);  // halve breedte van de kom
+  const iconBottom = h - hang;         // icon-onderkant in SVG-coördinaten
+
+  // Tekst-maatwerk: past de naam op de boog?
+  const yText = iconBottom + 1;       // tekstbasis net onder de icon-onderkant
+  const aText = a * 0.55;              // halve tekstboog-breedte
+  const rText = aText * 1.5;           // vlakke boog
+  const maxChars = Math.floor((aText * 1.8) / 4.8);  // ≈8px letters, ~4.8px per teken
+
   // Te lange namen: terugvallen op platte tooltip
-  if (text.length > 14) {
+  if (text.length > maxChars) {
     const div = document.createElement("div");
     div.className = "tooltip";
     div.textContent = text.toUpperCase();
     return div;
   }
 
-  const r = iconSize / 2 + 4;           // straal: cirkel + randje
-  const k = 6;                         // (bestaat nog? zie kanttekening hieronder)
-  const top = 6;                        // EERST declareren
-  const dip = 7;                        // kom loopt dip px ÓNDER de icononderkant door
-  const yEnd = top + k + dip;           // eindpunten van de boog
-  const a = Math.sqrt(r * r - (k + dip) * (k + dip));  // halve breedte
-  const w = iconSize + 16;
-  const h = Math.ceil(top + r + dip + 4);
-  const cx = w / 2;
-
-  // KOM: korte boog (vlag 0 0 0) — eindpunten net onder de midlijn,
-  // dippt tot dezelfde onderkant als voorheen, krult dus om het icoon heen
   const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
-
-  // Tekstboog: smal en diep in het midden van de kom
-  const yText = top + r + dip - 7;      // iets dieper dan voorheen
-  const aText = a * 0.6;               // smaler: blijft in het vlakke, diepe midden
-  const rText = aText * 2.6;           // mildere curve daar
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
 
-  // Bepaal hoe ver de SVG onder het icoon moet uitsteken:
-  // tekst-top = laagste punt van de tekstboog minus letterhoogte (8px)
-  const mText = Math.sqrt(rText * rText - aText * aText);
-  const textDip = yText + (rText - mText);          // laagste punt van de tekstbasislijn
-  const textTop = textDip - 8;                      // bovenkant van de letters
-  // Icononderkant moet 2px BOVEN de tekst-top komen te liggen
-  const hang = h - (textTop - 2);                   // uitsteeksel onder de container
-  
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");
-  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+  svg.setAttribute("viewBox", `0 0 ${iconSize + 16} ${h}`);
   svg.style.cssText =
     `position:absolute; left:50%; bottom:${-hang}px; transform:translateX(-50%); ` +
     `pointer-events:none; z-index:2000;`;
 
-  // Fade: bovenaan transparant, naar beneden donkergrijs
+  // Verticale fade: transparant bij de randen, wit onderin de kom
   const grad = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   grad.setAttribute("id", "cl-grad-" + Math.random().toString(36).slice(2, 8));
   grad.setAttribute("x1", "0");
-  grad.setAttribute("y1", top + k - 2);
+  grad.setAttribute("y1", yEnd - 2);
   grad.setAttribute("x2", "0");
-  grad.setAttribute("y2", top + r + dip);
+  grad.setAttribute("y2", cy + r);
   grad.setAttribute("gradientUnits", "userSpaceOnUse");
 
   const stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
   stop1.setAttribute("offset", "0");
   stop1.setAttribute("stop-color", "rgba(255, 255, 255, 0)");
   grad.appendChild(stop1);
-
   const stop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
   stop2.setAttribute("offset", "0.45");
   stop2.setAttribute("stop-color", "rgba(255, 255, 255, 0.85)");
   grad.appendChild(stop2);
-
   svg.appendChild(grad);
 
-  // Horizontale fade: uiteinden van de kom vervliegen eerder dan het midden
+  // Horizontale fade als masker (uiteinden vervliegen eerder)
   const fadeLR = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   fadeLR.setAttribute("id", "cl-fade-" + Math.random().toString(36).slice(2, 8));
-  fadeLR.setAttribute("x1", "0%");
-  fadeLR.setAttribute("y1", "0%");
-  fadeLR.setAttribute("x2", "100%");
-  fadeLR.setAttribute("y2", "0%");
-
-  const fStop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
-  fStop1.setAttribute("offset", "0");
-  fStop1.setAttribute("stop-color", "white");
-  fStop1.setAttribute("stop-opacity", "0");
-  fadeLR.appendChild(fStop1);
-
-  const fStop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
-  fStop2.setAttribute("offset", "0.18");
-  fStop2.setAttribute("stop-color", "white");
-  fStop2.setAttribute("stop-opacity", "1");
-  fadeLR.appendChild(fStop2);
-
-  const fStop3 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
-  fStop3.setAttribute("offset", "0.82");
-  fStop3.setAttribute("stop-color", "white");
-  fStop3.setAttribute("stop-opacity", "1");
-  fadeLR.appendChild(fStop3);
-
-  const fStop4 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
-  fStop4.setAttribute("offset", "1");
-  fStop4.setAttribute("stop-color", "white");
-  fStop4.setAttribute("stop-opacity", "0");
-  fadeLR.appendChild(fStop4);
-
+  fadeLR.setAttribute("x1", "0%"); fadeLR.setAttribute("y1", "0%");
+  fadeLR.setAttribute("x2", "100%"); fadeLR.setAttribute("y2", "0%");
+  [[0, 0], [0.18, 1], [0.82, 1], [1, 0]].forEach(([off, op]) => {
+    const s = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+    s.setAttribute("offset", off);
+    s.setAttribute("stop-color", "white");
+    s.setAttribute("stop-opacity", op);
+    fadeLR.appendChild(s);
+  });
   svg.appendChild(fadeLR);
 
   const fadeMask = document.createElementNS("http://www.w3.org/2000/svg", "mask");
   fadeMask.setAttribute("id", "cl-mask-" + Math.random().toString(36).slice(2, 8));
   const maskRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-  maskRect.setAttribute("x", "0");
-  maskRect.setAttribute("y", "0");
-  maskRect.setAttribute("width", "100%");
-  maskRect.setAttribute("height", "100%");
+  maskRect.setAttribute("x", "0"); maskRect.setAttribute("y", "0");
+  maskRect.setAttribute("width", "100%"); maskRect.setAttribute("height", "100%");
   maskRect.setAttribute("fill", `url(#${fadeLR.id})`);
   fadeMask.appendChild(maskRect);
   svg.appendChild(fadeMask);
 
-  // De kom: verticale fade als vulling, horizontale fade als masker
   const bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
   bg.setAttribute("d", `${d} Z`);
   bg.setAttribute("fill", `url(#${grad.id})`);
   bg.setAttribute("mask", `url(#${fadeMask.id})`);
   svg.appendChild(bg);
-  
-  // Onzichtbaar pad voor de tekst
+
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("d", dText);
   path.setAttribute("id", "cl-" + Math.random().toString(36).slice(2, 8));
   path.setAttribute("fill", "none");
   svg.appendChild(path);
 
-  // De tekst langs de boog
   const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
   txt.setAttribute("fill", "#555");
   txt.setAttribute("font-size", "8");
