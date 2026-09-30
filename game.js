@@ -101,7 +101,7 @@ function makeCurvedLabel(text, iconSize) {
   // Tekst: bredere boog dan de kom — lange namen lopen door tot voorbij de kom
   const yText = iconBottom + 1;
   const aText = a * 1.15;              // BREDER dan de kom zelf (was 0.55)
-  const rText = aText * 1.8;           // flauwe curve: geen steile meedraaiende letters
+  const rText = aText * 2.84;         // dip = 7px, gelijk aan de 'perfecte' versie
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
   const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
 
