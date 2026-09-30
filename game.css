@@ -1274,11 +1274,13 @@ body {
   
             /* ---------------- RESULTAAT COMBINATIE ---------------- */
             #result-overlay {
-              justify-content: center;
-              align-items: center;
+              display: flex !important;      /* was block uit desktop-CSS — flex is nodig voor centrering */
               flex-direction: column;
+              justify-content: center;       /* verticale centrering in kolommodus */
+              align-items: center;           /* horizontale centrering */
               padding: 24px 16px;
               overflow-y: auto;
+              box-sizing: border-box;
             }
 
             /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
