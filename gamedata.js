@@ -2976,12 +2976,9 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      /* --- PRIL LEVEN --- */
-      ["Oerbilateria", "Zenuwen"], 
+    input: 
       /* --- WATERDIEREN --- */
-      ["Tweekleppigen", "Zenuwen"]
-    ],
+      ["Tweekleppigen", "Zenuwen"],
     hint: `Sommige dieren zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
