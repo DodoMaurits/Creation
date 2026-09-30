@@ -558,8 +558,8 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
     quote.lang = "en";
-    if (elements.length === 1) quote.classList.add("single");
-
+    if (elements.length === 1) { quote.classList.add("single"); title.classList.add("single"); }
+    
     // 🔹 kleine random X + Y beweging (millimeters/subtiel)
     const moveX = (Math.random() * 20 - 10).toFixed(1) + "px";
     const moveY = (Math.random() * 10 - 5).toFixed(1) + "px";
