@@ -1366,7 +1366,11 @@ body {
               -webkit-hyphens: auto;
               word-break: normal;
             }
-
+  
+            .result-title.single {
+              font-size: 16px;   /* normaal 13px op mobiel */
+            }
+  
             .result-quote.single {
               font-size: 14px;
             }
