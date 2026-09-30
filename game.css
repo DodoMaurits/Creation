@@ -1117,14 +1117,14 @@ body {
               left: -3px;
               right: -3px;                       /* 3px uitsteeksel rondom de cirkel */
               height: calc(50% + 3px);          /* onderste helft + randje */
-              background: rgba(40, 40, 40, 0.85); /* donkergrijs */
+              background: rgba(255, 255, 255, 0.85); /* donkergrijs */
               border-radius: 0 0 999px 999px;     /* onderrand volgt de cirkelboog */
               display: flex;
               align-items: center;
               justify-content: center;
               padding: 4px 10px 6px 10px;
               box-sizing: border-box;
-              color: white;
+              color: #555;
               font-size: 8px;
               line-height: 1.1;
               text-align: center;
