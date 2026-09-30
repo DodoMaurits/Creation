@@ -1041,6 +1041,10 @@ body {
               transform: translate(50%, 0);   /* container centreren: 50% terugduwen */
               flex-direction: column;         /* bubble komt ónder de button i.p.v. ernaast */
             }
+
+            body.result-open #hint-container {
+              display: none;
+            }
           
             #hint-button {
               width: 36px;
@@ -1202,11 +1206,7 @@ body {
               height: 40px;
             }
 
-            /* ---------------- INFO BUTTON ---------------- */
-            #hint-container {
-              display: none;               /* hint button wijkt voor de info button */
-            }
-          
+            /* ---------------- INFO BUTTON ---------------- */          
             .info-button {
               position: fixed;             /* was absolute t.o.v. overlay — nu t.o.v. scherm */
               top: 12px;
