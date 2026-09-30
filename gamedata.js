@@ -635,6 +635,7 @@ const combinaties = [
     input: [
       ["Vulkaan", "Platentektoniek"], ["Berg", "Platentektoniek"]
     ],
+    hint: `Wat staat nog vast, als de bergen schudden?`,
     output: [
       { naam: "Aardbeving", icoon: "icons/Aardbeving.png", map: "Krachten", 
         quote: `An earthquake achieves what the law promises but does not in practice maintain - the equality of all men
