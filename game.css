@@ -1244,24 +1244,26 @@ body {
             }
 
             /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
-            .result-grid { display: grid; justify-content: center;
-              grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)) !important;
-              gap: 10px;
-              width: calc(100vw - 32px) !important;
-              max-width: calc(100vw - 32px);
+            .result-grid {
+              display: grid;
+              justify-content: center;        /* het geheel gecentreerd */
               justify-items: center;
+              grid-template-columns: repeat(var(--cols), minmax(0, 90px)) !important;
+              gap: 10px !important;
+              width: fit-content !important;  /* net zo breed als de kolommen samen */
+              max-width: calc(100vw - 32px);
               left: 50%;
               transform: translate(-50%, -50%);
             }
   
-              .result-box {
-                width: 100%;
-                max-width: 110px;          /* compacter: één box neemt max 110px in */
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-              }
+            .result-box {
+              width: 100%;
+              max-width: 110px;          /* compacter: één box neemt max 110px in */
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+            }
 
             .result-image { height: auto; animation: floatSoft 2s ease-in-out infinite;
               width: 60px;
