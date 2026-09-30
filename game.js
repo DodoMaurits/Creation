@@ -91,7 +91,8 @@ function makeCurvedLabel(text, iconSize) {
   const h = iconSize + ring + 8;       // hoogte van de SVG
   const r = iconSize / 2 + ring;       // kom-straal: icoon + rand
   const k = 6;                         // eindpunten k px onder de icon-midlijn
-  const cx = (iconSize + 16) / 2;      // horizontaal middelpunt
+  const w = iconSize + 40;             // breder canvas voor de doorgelopen tekst
+  const cx = w / 2;                    // horizontaal middelpunt
   const cy = h - hang - iconSize / 2;  // icon-middelpunt = kom-middelpunt
   const yEnd = cy + k;                 // boog-eindpunten
   const a = Math.sqrt(r * r - k * k);  // halve breedte van de kom
@@ -102,13 +103,11 @@ function makeCurvedLabel(text, iconSize) {
   const aText = a * 1.15;              // BREDER dan de kom zelf (was 0.55)
   const rText = aText * 1.8;           // flauwe curve: geen steile meedraaiende letters
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
-
   const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
-  const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");
-  svg.setAttribute("viewBox", `0 0 ${iconSize + 16} ${h}`);
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
     `position:absolute; left:50%; bottom:${-hang}px; transform:translateX(-50%); ` +
     `pointer-events:none; z-index:2000;`;
