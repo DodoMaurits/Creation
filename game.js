@@ -105,9 +105,12 @@ function makeCurvedLabel(text, iconSize) {
   // dippt tot dezelfde onderkant als voorheen, krult dus om het icoon heen
   const d = `M ${cx - a} ${top + k} A ${r} ${r} 0 0 0 ${cx + a} ${top + k}`;
 
-  // Tekstpad: zelfde boog, 4px hoger voor een kleine marge onder de tekst
-  const dText = `M ${cx - a} ${top + r - 8} A ${r} ${r} 0 0 0 ${cx + a} ${top + r - 8}`;
-
+  // Tekstpad: vlakkere boog (kleinere straal), net boven de kom-bodem
+  const rText = r - 9;                  // tekstboog krapper dan de kom
+  const aText = a * 0.72;               // iets smaller dan de kom zelf
+  const yText = top + r - 9;            // 9px boven de onderkant van de kom
+  const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
+  
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
