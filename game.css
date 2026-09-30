@@ -445,7 +445,8 @@ body {
   z-index: 3001;
 }
 
-.info-button:hover + .info-popup {
+.info-button:hover + .info-popup,
+.info-popup.open {
   opacity: 1;
   pointer-events: auto;
 }
