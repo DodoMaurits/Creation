@@ -561,6 +561,15 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     default: cols = Math.ceil(Math.sqrt(elements.length));
   }
 
+  // Mobiel: zelfde vorm als desktop, maar in 2 rijen
+  if (window.innerWidth <= 900 && window.innerHeight > window.innerWidth) {
+    if (elements.length === 4) cols = 2;        // 2 rijen van 2
+    else if (elements.length === 5) cols = 3;   // 2 rijen: 3 + 2
+    else if (elements.length === 7) cols = 4;   // 2 rijen: 4 + 3
+    else if (elements.length === 9) cols = 5;   // 2 rijen: 5 + 4
+    else if (elements.length === 10) cols = 5; // 2 rijen van 5
+  }
+
   grid.style.setProperty("--cols", cols);
   grid.style.justifyItems = "center";
   grid.style.gap = elements.length > 8 ? "20px" : "30px";
