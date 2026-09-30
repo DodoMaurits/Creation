@@ -1103,6 +1103,15 @@ body {
               cursor: none;
             }
 
+            /* Geen hover-effecten op touch — :hover plakt op mobiel */
+            .icon:hover,
+            .icon.element:hover,
+            .icon.map:hover,
+            .icon.map-title:hover,
+            .icon-container:not(.dragging):hover {
+              transform: none;
+            }
+
             /* ================= TOOLTIP (PERMANENT) ================= */
             .icon-container { display: inline-block; position: relative; text-align: center; }
           
