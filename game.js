@@ -107,10 +107,10 @@ function makeCurvedLabel(text, iconSize) {
   // dippt tot dezelfde onderkant als voorheen, krult dus om het icoon heen
   const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
 
-  // Tekstboog: vlakke curve — groot straalgetal = milde dip, blijft binnen de kom
-  const yText = top + r + dip - 9;
-  const aText = a * 0.78;
-  const rText = aText * 2.2;
+  // Tekstboog: smal en diep in het midden van de kom
+  const yText = top + r + dip - 7;      // iets dieper dan voorheen
+  const aText = a * 0.6;               // smaler: blijft in het vlakke, diepe midden
+  const rText = aText * 2.6;           // mildere curve daar
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
 
   // Bepaal hoe ver de SVG onder het icoon moet uitsteken:
