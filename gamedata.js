@@ -594,7 +594,7 @@ const combinaties = [
   },
   {
     input: ["Basalt", "Druk"],
-    hint: `Kijk naar de oceanen, waar basaltplaten onder extreme druk en lage temperaturen in elkaar schuiven..`,
+    hint: `Onder druk ondergaat basalt logischerwijs een metamorfose.`,
     output: [
       { naam: "Jade", icoon: "icons/Jade.png", map: "Aarde",
         quote: `The gentleman compares his virtue to jade
