@@ -860,7 +860,8 @@ function renderClosed() {
 function refreshClosedLabels() {
   if (!(window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches)) return;
   const isSide = closedContainer.classList.contains("side");
-  const size = isSide ? 40 : 60;
+  const smallCenter = !isSide && mappen.length > 18;   // ← nieuw: verkleinde center-modus
+  const size = isSide ? 40 : (smallCenter ? 40 : 60);
   closedContainer.querySelectorAll(".icon-container").forEach(container => {
     const old = container.querySelector(".curved-label");
     if (old) old.remove();
@@ -872,6 +873,7 @@ function updateClosedContainer() {
   let leftOpen = !!openLeft;
   let rightOpen = !!openRight;
   let halfWidth = window.innerWidth / 2;
+  closedContainer.style.width = "";
 
   if (leftOpen && rightOpen) {
     closedContainer.style.opacity = 0;
