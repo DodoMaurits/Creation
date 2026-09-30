@@ -1162,6 +1162,11 @@ body {
               right: -3px;
               transform: none;
             }
+
+            .grid-elements .icon.selected {
+              width: 50px;
+              height: 50px;
+            }
   
             /* ---------------- GRID LAYOUTS ---------------- */
             .grid-elements { display: grid; justify-content: center;
@@ -1194,6 +1199,11 @@ body {
               width: 60px;
               height: 60px;
             }
+
+            #closed-container.center .icon.map.selected {
+              width: 60px;
+              height: 60px;
+            }
   
             /* linker- of rechterhelft */
             #closed-container.side { 
@@ -1202,6 +1212,11 @@ body {
 
             /* Sluit maps iconen automatisch verkleinen indien nodig */
             #closed-container.side .icon.map {
+              width: 40px;
+              height: 40px;
+            }
+
+            #closed-container.side .icon.map.selected {
               width: 40px;
               height: 40px;
             }
