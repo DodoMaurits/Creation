@@ -1288,12 +1288,12 @@ body {
             /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
             .result-grid {
               display: grid;
-              justify-content: stretch;          /* kolommen vullen de gridbreedte */
-              justify-items: center;             /* inhoud per kolom gecentreerd */
-              grid-template-columns: repeat(var(--cols), 1fr) !important;
-              gap: 16px !important;
-              width: calc(100vw - 32px) !important;   /* volle schermbreedte minus marge */
-              max-width: calc(100vw - 32px);
+              justify-content: center;
+              justify-items: center;
+              grid-template-columns: repeat(var(--cols), minmax(0, 110px)) !important;
+              gap: 8px !important;
+              width: fit-content !important;
+              max-width: calc(100vw - 24px);
               left: 50%;
               transform: translate(-50%, -50%);
             }
@@ -1307,20 +1307,20 @@ body {
             }
   
             .result-image {
-              width: 90px;
+              width: 70px;
               height: auto;
-              margin-bottom: 6px;
+              margin-bottom: 4px;
             }
           
             .result-title {
-              font-size: 15px;
+              font-size: 13px;
               white-space: normal;
               max-width: 100%;
             }
           
             .result-quote {
-              font-size: 11px;
-              line-height: 1.3;
+              font-size: 10px;
+              line-height: 1.25;
               max-width: 100%;
             }
 
