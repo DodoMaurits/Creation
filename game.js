@@ -975,6 +975,11 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "20px";
     }
   } else {
+    if (totalElements > 24) {
+    grid.style.gridTemplateColumns = "repeat(3, 45px)";
+    grid.style.columnGap = "8px";
+    grid.style.rowGap = "0px";
+  } else {
     grid.style.gridTemplateColumns = "repeat(3, 50px)";
     grid.style.columnGap = "8px";
     grid.style.rowGap = "2px"; // Row-gaps mobiele versie
