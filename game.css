@@ -1154,7 +1154,7 @@ body {
   
             /* Alleen tooltips van elementen in open maps corrigeren */
             .grid-elements .icon-container { display: inline-block; position: relative; 
-              margin-bottom: 17px;
+              margin-bottom: 12px;
             }
 
             .grid-elements .icon-container .tooltip {
