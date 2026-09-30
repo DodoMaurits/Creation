@@ -1420,6 +1420,7 @@ body {
             .info-inner {
               margin: auto 0;            /* centreert weer zodra het wél past */
               padding-bottom: 40px;      /* lucht onderaan, comfortabel uitscrollen */
+              min-width: 600px;
             }
   
             .info-title {
