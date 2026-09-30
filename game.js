@@ -104,10 +104,10 @@ function makeCurvedLabel(text, iconSize) {
 
   // KOM: korte boog (vlag 0 0 0) — eindpunten net onder de midlijn,
   // dippt tot dezelfde onderkant als voorheen, krult dus om het icoon heen
-  const d = `M ${cx - a} ${top + k} A ${r} ${r} 0 0 0 ${cx + a} ${top + k}`;
+  const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
 
   // Tekstboog: vlakke curve — groot straalgetal = milde dip, blijft binnen de kom
-  const yText = top + r - 9;
+  const yText = top + r + dip - 9;     // 9px boven de nieuwe, diepere kom-bodem
   const aText = a * 0.78;
   const rText = aText * 2.2;
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
