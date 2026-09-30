@@ -103,14 +103,6 @@ function makeCurvedLabel(text, iconSize) {
   const rText = aText * 1.8;           // flauwe curve: geen steile meedraaiende letters
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
 
-  // Te lange namen: terugvallen op platte tooltip
-  if (text.length > maxChars) {
-    const div = document.createElement("div");
-    div.className = "tooltip";
-    div.textContent = text.toUpperCase();
-    return div;
-  }
-
   const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
 
