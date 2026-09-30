@@ -1369,9 +1369,7 @@ body {
             #timeline-label {
               font-size: 11px;
               letter-spacing: 0.3px;
-              max-width: 60vw;
-              white-space: normal;
-              text-align: center;
+              white-space: nowrap;
               top: -28px;
               transform: translateX(calc(-50% - 10px));
             }
