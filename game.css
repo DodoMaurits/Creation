@@ -1329,6 +1329,9 @@ body {
               padding: 0 6px;
               box-sizing: border-box;
               --dur: 7s;
+              hypens: auto;
+              -webkit-hyphens: auto;
+              word-break: normal;
             }
 
             #timeline-label {
