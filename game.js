@@ -98,11 +98,11 @@ function makeCurvedLabel(text, iconSize) {
   const a = Math.sqrt(r * r - k * k);  // halve breedte van de kom
   const iconBottom = h - hang;         // icon-onderkant in SVG-coördinaten
 
-  // Tekst: bredere boog dan de kom — lange namen lopen door tot voorbij de kom
   const yText = iconBottom + 1;
-  const aText = a * 1.15;              // BREDER dan de kom zelf (was 0.55)
-  const rText = aText * 2.84;         // dip = 7px, gelijk aan de 'perfecte' versie
-  const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
+  const aText = a * 1.2;
+  const rText = r;
+  const cText = cy;
+  const dText = `M ${cx - aText} ${cText + Math.sqrt(rText * rText - aText * aText)} A ${rText} ${rText} 0 0 0 ${cx + aText} ${cText + Math.sqrt(rText * rText - aText * aText)}`;
   const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
