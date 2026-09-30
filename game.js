@@ -784,6 +784,7 @@ function renderClosed() {
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
+    container.dataset.naam = map.naam;
 
     const img = document.createElement("img");
     img.src = map.icoon;
@@ -829,6 +830,17 @@ function renderClosed() {
   });
 }
 
+function refreshClosedLabels() {
+  if (!(window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches)) return;
+  const isSide = closedContainer.classList.contains("side");
+  const size = isSide ? 40 : 60;
+  closedContainer.querySelectorAll(".icon-container").forEach(container => {
+    const old = container.querySelector(".curved-label");
+    if (old) old.remove();
+    container.appendChild(makeCurvedLabel(container.dataset.naam, size));
+  });
+}
+
 function updateClosedContainer() {
   let leftOpen = !!openLeft;
   let rightOpen = !!openRight;
@@ -864,6 +876,7 @@ function updateClosedContainer() {
     closedContainer.classList.add("center");
     closedContainer.classList.remove("side");
   }
+refreshClosedLabels();
 }
 
 // ----- OPEN MAP -----
