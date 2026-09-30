@@ -1099,6 +1099,39 @@ body {
   
             /* ---------------- SELECT & SHAKE EFFECTS ---------------- */
 
+            /* ---------------- INFO BUTTON ---------------- */
+            .info-popup {
+              align-items: flex-start;           /* box begint onder de knop i.p.v. erachter */
+              padding-top: 56px;                 /* ruimte vrijmaken voor de 36px-knop + marge */
+              justify-content: center;
+              padding-left: 12px;
+              padding-right: 12px;
+            }
+          
+            .info-popup-box {
+              width: 100%;
+              max-width: 100%;
+              max-height: calc(85dvh - 56px);   /* meegerekend met de knopruimte */
+              padding: 18px 16px;
+              overflow-y: auto;
+              -webkit-overflow-scrolling: touch;
+              box-sizing: border-box;
+            }
+          
+            .info-popup-title {
+              font-size: 18px;                   /* was 22px — past nu onder de knop */
+              margin-bottom: 10px;
+            }
+          
+            .info-popup-text {
+              font-size: 12px;                   /* was 13px — zoals gevraagd kleiner */
+              line-height: 1.45;
+              text-align: left;
+              hyphens: none;
+              margin-left: 0;
+              margin-right: 0;
+            }
+
             /* ---------------- CLOSED CONTAINTER ---------------- */
             #closed-container { position: absolute; top: 50%; transform: translate(-50%, -50%);
                                 transition: transform 0.6s ease, opacity 0.6s ease; opacity: 1;
