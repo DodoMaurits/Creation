@@ -1229,6 +1229,48 @@ body {
             .info-popup-text {
               font-size: 13px;
             }
+
+            /* ---------------- THRESHOLD / UITLEG BOX ---------------- */
+            .explanation-box {
+              width: calc(100vw - 32px);
+              max-height: 85dvh;
+              padding: 24px 18px;
+              gap: 12px;
+              font-size: 14px;
+              line-height: 1.4;
+              overflow-y: auto;
+              -webkit-overflow-scrolling: touch;
+            }
+          
+            .explanation-title {
+              font-size: 22px;
+              margin-bottom: 8px;
+            }
+          
+            .explanation-text {
+              font-size: 13px;
+              line-height: 1.5;
+              text-align: left;        /* justify geeft gaten op smalle kolommen */
+              hyphens: none;
+            }
+          
+            .threshold-grid {
+              gap: 10px;
+              margin-top: 14px;
+            }
+          
+            .threshold-circle {
+              width: 64px;
+              height: 64px;
+              font-size: 10px;
+              padding: 4px;
+            }
+          
+            .create-button {
+              padding: 10px 24px;
+              font-size: 15px;
+              margin-top: 12px;
+            }
   
             /* ---------------- RESULTAAT COMBINATIE ---------------- */
             #result-overlay { position: fixed; inset: 0; background: linear-gradient(rgba(0,0,0,0.85), 
