@@ -125,7 +125,7 @@ function makeCurvedLabel(text, iconSize) {
   grad.setAttribute("x1", "0");
   grad.setAttribute("y1", top + k - 2);
   grad.setAttribute("x2", "0");
-  grad.setAttribute("y2", top + r);
+  grad.setAttribute("y2", top + r + dip);
   grad.setAttribute("gradientUnits", "userSpaceOnUse");
 
   const stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
