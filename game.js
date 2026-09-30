@@ -829,8 +829,8 @@ function renderClosed() {
     const isMobileClosed = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
     if (isMobileClosed && mappen.length > 18) {
       mapIcons.forEach(icon => {
-        icon.style.width = "40px";
-        icon.style.height = "40px";
+        icon.style.width = "45px";
+        icon.style.height = "45px";
       });
       if (closedContainerCenter) closedContainerCenter.style.width = "240px";
     }
