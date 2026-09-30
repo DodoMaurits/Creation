@@ -1187,7 +1187,6 @@ body {
             }
 
             #closed-container.side .curved-label {
-              transform: translateX(-50%) scale(0.667) !important;
               transform-origin: top center;
             }
 
