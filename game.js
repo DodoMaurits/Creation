@@ -108,16 +108,24 @@ function makeCurvedLabel(text, iconSize) {
   const d = `M ${cx - a} ${yEnd} A ${r} ${r} 0 0 0 ${cx + a} ${yEnd}`;
 
   // Tekstboog: vlakke curve — groot straalgetal = milde dip, blijft binnen de kom
-  const yText = top + r + dip - 9;     // 9px boven de nieuwe, diepere kom-bodem
+  const yText = top + r + dip - 9;
   const aText = a * 0.78;
   const rText = aText * 2.2;
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
+
+  // Bepaal hoe ver de SVG onder het icoon moet uitsteken:
+  // tekst-top = laagste punt van de tekstboog minus letterhoogte (8px)
+  const mText = Math.sqrt(rText * rText - aText * aText);
+  const textDip = yText + (rText - mText);          // laagste punt van de tekstbasislijn
+  const textTop = textDip - 8;                      // bovenkant van de letters
+  // Icononderkant moet 2px BOVEN de tekst-top komen te liggen
+  const hang = h - (textTop - 2);                   // uitsteeksel onder de container
   
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "curved-label");
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.cssText =
-    `position:absolute; left:50%; bottom:-4px; transform:translateX(-50%); ` +
+    `position:absolute; left:50%; bottom:${-hang}px; transform:translateX(-50%); ` +
     `pointer-events:none; z-index:2000;`;
 
   // Fade: bovenaan transparant, naar beneden donkergrijs
