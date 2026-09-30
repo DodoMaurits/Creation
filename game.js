@@ -92,13 +92,13 @@ function makeCurvedLabel(text, iconSize) {
   // ---- Canvas: bedekt het hele icoon + kom (tekst mag om het icoon heen krullen) ----
   const m = 14;                        // marge rondom in de SVG
   const w = iconSize + 2 * m;
-  const h = m + iconSize + bowl + 2;
+  const h = m + iconSize + bowl + 4;
   const cx = w / 2;
   const cy = m + iconSize / 2;         // icon-middelpunt
 
   // ---- TEKST: volledige cirkel rondom het icoon, gecentreerd onderaan ----
   // Baseline-cirkel: lettertop raakt de iconrand op 'air' px afstand
-  const rBase = iconSize / 2 + air + 8;
+  const rBase = iconSize / 2 + air + 6;
   // ¾-boog: van links-boven, via de onderkant, naar rechts-boven (symmetrisch om onder)
   const pt = (deg) => {
     const t = deg * Math.PI / 180;
