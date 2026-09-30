@@ -1366,6 +1366,10 @@ body {
               word-break: normal;
             }
 
+            .result-quote.single {
+              font-size: 14px;
+            }
+
             #timeline-label {
               font-size: 11px;
               letter-spacing: 0.3px;
