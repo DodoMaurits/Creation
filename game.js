@@ -106,9 +106,9 @@ function makeCurvedLabel(text, iconSize) {
   const d = `M ${cx - a} ${top + k} A ${r} ${r} 0 0 0 ${cx + a} ${top + k}`;
 
   // Tekstboog: vlakke curve — groot straalgetal = milde dip, blijft binnen de kom
-  const yText = top + r - 7;       // eindpunten 7px boven de kom-bodem
-  const aText = a * 0.8;           // bijna zo breed als de kom
-  const rText = aText * 3;         // vlakke boog: dip slechts ~4px
+  const yText = top + r - 9;
+  const aText = a * 0.78;
+  const rText = aText * 2.2;
   const dText = `M ${cx - aText} ${yText} A ${rText} ${rText} 0 0 0 ${cx + aText} ${yText}`;
   
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
