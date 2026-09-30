@@ -4862,7 +4862,7 @@ const combinaties = [
 //------------ THRESHOLD 4: SILUUR --------------//
   {
     input: ["Wortels", "Steenwortelalgen"],
-    hint: `Het is tijd voor planten en geleedpotigen om het land te verkennen...`,
+    hint: `Het is tijd voor steenwortelalgen om zich op land te wortelen...`,
     tijd: 444_000_000,
     output: [
       { naam: "Oervaatplanten", icoon: "icons/Oervaatplanten.png", map: "Planten", 
