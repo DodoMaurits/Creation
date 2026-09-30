@@ -1418,9 +1418,10 @@ body {
             }
             
             .info-inner {
-              margin: auto 0;            /* centreert weer zodra het wél past */
-              padding-bottom: 40px;      /* lucht onderaan, comfortabel uitscrollen */
-              min-width: 600px;
+              width: 88vw;
+              min-width: 0;
+              margin: auto 0;
+              padding-bottom: 40px;
             }
   
             .info-title {
