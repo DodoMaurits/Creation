@@ -1007,6 +1007,7 @@ body {
 /* ================= MOBILE PORTRAIT ONLY ================= */
 @media (max-width: 900px) and (orientation: portrait) {
             body { margin: 0; font-family: sans-serif; overflow-x: hidden; overflow-y: auto;
+            background-attachment: fixed;
             }
   
             #app { width: 100vw; height: 100vh; position: relative; }
