@@ -1004,12 +1004,12 @@ function renderSide(parentContainer, map, side) {
   } else {
     if (totalElements > 27) {
       grid.style.gridTemplateColumns = "repeat(3, 40px)";
-      grid.style.columnGap = "8px";
-      grid.style.rowGap = "-4px";
+      grid.style.columnGap = "0px";
+      grid.style.rowGap = "2px";
     } else if (totalElements > 24) {
       grid.style.gridTemplateColumns = "repeat(3, 45px)";
-      grid.style.columnGap = "8px";
-      grid.style.rowGap = "0px";
+      grid.style.columnGap = "4px";
+      grid.style.rowGap = "2px";
     } else {
       grid.style.gridTemplateColumns = "repeat(3, 50px)";
       grid.style.columnGap = "8px";
