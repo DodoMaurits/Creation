@@ -11764,7 +11764,7 @@ const combinaties = [
         <br><br>- Miguel Altieri`
       },
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
-        quote: `The fairest flowers o’ the season are the carnations
+        quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       },
       { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
@@ -11813,7 +11813,7 @@ const combinaties = [
         <br><br>- George Marsh`
       },
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
-        quote: `The fairest flowers o’ the season are the carnations
+        quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       }
     ]
@@ -11823,7 +11823,7 @@ const combinaties = [
     tijd: 30_000_000,
     output: [
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
-        quote: `The fairest flowers o’ the season are the carnations
+        quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       },
       { naam: "Boekweit", icoon: "icons/Boekweit.png", map: "Zaden", 
@@ -11837,7 +11837,7 @@ const combinaties = [
     tijd: 30_000_000,
     output: [
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
-        quote: `The fairest flowers o’ the season are the carnations
+        quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       }
     ]
@@ -11856,7 +11856,7 @@ const combinaties = [
         <br><br>- George Marsh`
       },
       { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
-        quote: `The fairest flowers o’ the season are the carnations
+        quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       },
       { naam: "Boekweit", icoon: "icons/Boekweit.png", map: "Zaden", 
