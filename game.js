@@ -1002,7 +1002,11 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "20px";
     }
   } else {
-    if (totalElements > 24) {
+    if (totalElements > 27) {
+      grid.style.gridTemplateColumns = "repeat(3, 40px)";
+      grid.style.columnGap = "8px";
+      grid.style.rowGap = "-4px";
+    } else if (totalElements > 24) {
       grid.style.gridTemplateColumns = "repeat(3, 45px)";
       grid.style.columnGap = "8px";
       grid.style.rowGap = "0px";
