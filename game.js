@@ -846,10 +846,11 @@ function renderClosed() {
       else if (mappen.length <= 25) { icoon = 130; perRij = 5; }
       else { icoon = 117; perRij = 6; }
       // hoogte-check: past het verticaal? anders iconen verkleinen
-      const rijen = Math.ceil(mappen.length / perRij);
-      const benodigdeHoogte = rijen * (icoon + 20) - 20;
+      let rijen = Math.ceil(mappen.length / perRij);
+      let benodigdeHoogte = rijen * (icoon + 20) - 20;
       while (benodigdeHoogte > window.innerHeight - 160 && icoon > 80) {
         icoon -= 10;
+        benodigdeHoogte = rijen * (icoon + 20) - 20;
       }
       mapIcons.forEach(icon => {
         icon.style.width = icoon + "px";
