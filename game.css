@@ -634,13 +634,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  display: grid;
+  display: flex;                 /* was: grid */
+  flex-wrap: wrap;               /* rijen wraps zelf */
+  justify-content: center;       /* elke rij eigenlijk gecentreerd */
+  align-content: center;         /* verticale verdeling bij meerdere rijen */
   gap: 40px;
-  justify-content: center;
-  justify-items: center;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(var(--cols), 250px);
   width: fit-content;
+  max-width: min(90vw, 1400px);  /* zet hier de grens die bepaalt hoeveel er per rij passen */
   transform: translate(-50%, -50%);
   animation: resultAppear 0.8s ease;
 }
@@ -1318,9 +1318,9 @@ body {
 
             /* ---------------- NIEUW ELEMENT SCHERM ---------------- */
             .result-grid {
-              display: grid;
-              position: static !important;         /* uit de absolute desktop-modus */
-              grid-template-columns: repeat(var(--cols), minmax(0, 1fr)) !important;
+              display: flex !important;
+              flex-wrap: wrap;
+              justify-content: center;
               gap: 12px !important;
               width: 100% !important;
               max-width: 420px;
