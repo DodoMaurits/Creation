@@ -808,6 +808,8 @@ body {
   justify-content: center;
   align-items: safe center;
   overflow-y: auto;
+  padding: 20px; 
+  box-sizing: border-box;
   z-index: 9500;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -819,8 +821,6 @@ body {
   color: white;
   font-family: "Roboto Slab", serif;
   text-align: center;
-  padding: 20px; 
-  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -853,7 +853,7 @@ body {
 .info-text span {
   display: inline-block;
   will-change: transform;
-  animation: swayLeft 6s ease-in-out infinite alternate;
+  animation: swayLeft 10s ease-in-out infinite alternate;
 }
 
 .info-text span:nth-child(even) {
@@ -861,15 +861,15 @@ body {
 }
 
 @keyframes swayLeft {
-  0%   { transform: translateX(-5px); }
-  50%  { transform: translateX(5px); }
-  100% { transform: translateX(-5px); }
+  0%   { transform: translateX(-3px); }
+  50%  { transform: translateX(3px); }
+  100% { transform: translateX(-3px); }
 }
 
 @keyframes swayRight {
-  0%   { transform: translateX(5px); }
-  50%  { transform: translateX(-5px); }
-  100% { transform: translateX(5px); }
+  0%   { transform: translateX(3px); }
+  50%  { transform: translateX(-3px); }
+  100% { transform: translateX(3px); }
 }
 
 .info-overlay.fade-out {
