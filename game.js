@@ -826,15 +826,6 @@ function renderClosed() {
     const gridClosed = document.querySelector(".grid-closed");
     const closedContainerCenter = document.querySelector("#closed-container.center");
 
-    const isMobileClosed = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-    if (isMobileClosed) {
-      const mapIcoon = mappen.length > 18 ? 50 : 60;
-      mapIcons.forEach(icon => {
-        icon.style.width = mapIcoon + "px";
-        icon.style.height = mapIcoon + "px";
-      });
-    }
-  
     if (!isMobileClosed) {   
     if (mappen.length > 20 && mappen.length <= 25) {
       mapIcons.forEach(icon => {
