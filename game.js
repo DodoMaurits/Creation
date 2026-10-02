@@ -874,7 +874,7 @@ function updateClosedContainer() {
   } else if (isMobiel) {
     closedContainer.style.width = (3 * 40 + 2 * 8 + 2 * 16) + "px"; 
     const gridClosed = document.querySelector(".grid-closed");
-    if (gridClosed) gridClosed.style.rowGap = "";
+    if (gridClosed) gridClosed.style.rowGap = mappen.length > 18 ? "6px" : "";
   } else {
     closedContainer.style.width = "";
   }
