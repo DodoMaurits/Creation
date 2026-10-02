@@ -730,6 +730,21 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   overlay.appendChild(inner);
   document.body.appendChild(overlay);
 
+  // 🔹 Tekst automatisch laten krimpen tot hij past (i.p.v. scrollbar)
+  const vrij = () => window.innerHeight - 120;   // beschikbare hoogte (marge boven/onder)
+  let grootte = 20;                              // startgrootte in px
+  textEl.style.fontSize = grootte + "px";
+  let pogingen = 0;
+  while (
+    overlay.scrollHeight > vrij() &&
+    grootte > 10 &&
+    pogingen < 20
+  ) {
+    grootte -= 1;
+    textEl.style.fontSize = grootte + "px";
+    pogingen++;
+  }
+  
   overlay.onclick = () => {
     overlay.classList.add("fade-out");
     setTimeout(() => overlay.remove(), 300);
