@@ -14323,7 +14323,32 @@ const combinaties = [
         achtergrond: "afb/Schrift.jpg",
         titel: "SCHRIFT 5000 BP",
         tekst: 
-        `<span>
+        `<span>In Mesopotamië ontstonden 10 stadstaten, waar vanaf 3300 BCE een vroeg pictografisch schrift ontstond.
+        Dit was de voorloper van het latere spijkerschrift. Met rieten stiften werden tekens in natte kleitabletten
+        gedrukt om economische en administratieve gegevens vast te leggen. 
+        
+        <br><br>Dit was een revolutionaire uitvinding, want dankzij het schrift konden gemeenschappen informatie 
+        bewaren buiten het menselijk geheugen. Deze vastlegging van systemen voor opslag en overdracht maakte 
+        complexere vormen van organisatie mogelijk: van voorraadadministratie en handelsovereenkomsten tot het
+        bijhouden van tempelgiften en landbouwopbrengsten. 
+        
+        <br><br>In de eerste schriftcultuur woonde volgens de geschriften een van de oudste profeten genaamd Idris 
+        (Henoch): de eerste schrijver ooit die schreef met pen. Ook verdiende hij de kost als wever om kleding te 
+        maken en het onderwijzen van sterrenkunde en wiskunde. Symbolisch wordt Idris dan ook als eerste 
+        ‘beschaafde’ mens gezien, wiens verhaal laat zien dat kennis en rechtvaardigheid de mens kunnen verheffen
+        tot een hogere staat van bewustzijn. Hij staat symbool voor kennis, orde en rechtvaardigheid.
+
+        <br><br>Niet veel later werkten de Egyptenaren onafhankelijk van de Soemeriërs hun eigen schrift uit: 
+        hiërogliefen. Dit schrift maakte gebruik van ruim 700 tekens, die konden staan voor een woord, een idee,
+        een klank of een verduidelijkend teken. De klanktekens functioneerden dus als letters. Het schrift werd
+        door de mensen zelf 'Goddelijke Woorden' genoemd.
+
+        <br><br>Spijkerschrift in Mesopotamië kon informatie opslaan en verwerken buiten de hersenen om. 
+        De ene tekensoort stond voor getallen als 1, 10, 60, 600, 3600 en 36000. Een tweede tekensoort stond
+        voor namen van bijvoorbeeld dieren, mensen en producten. De oudste bekende boodschap ging als volgt:
+        ’29.086 maten gerst 37 maanden Kushim’ oftewel ‘in de loop van 37 maanden is een totaal van 29.086 maten 
+        gerst ontvangen, getekend Kushim’. Het ging hier om Kushim uit de stad Oeroek. In kleitabletten schreven 
+        vorsten decreten uit, priesters orakeluitspraken en de elite persoonlijke brieven.
         </span>`,
       }
     }
