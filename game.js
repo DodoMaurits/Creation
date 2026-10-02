@@ -545,7 +545,8 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     const mobielBox = 110;   // breedte van één mobiele box (zie aanpassing 3)
     grid.style.maxWidth = (cols * mobielBox + (cols - 1) * 12) + "px";
   } else {
-    const desktopBox = 250;  // breedte van één desktop box (zie aanpassing 2)
+    const desktopBox = 250;
+    grid.style.width = (cols * desktopBox + (cols - 1) * gapPx) + "px";
     grid.style.maxWidth = (cols * desktopBox + (cols - 1) * gapPx) + "px";
   }
 
