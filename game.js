@@ -832,7 +832,7 @@ function renderClosed() {
         icon.style.width = "50px";
         icon.style.height = "50px";
       });
-      if (closedContainerCenter) closedContainerCenter.style.width = "240px";
+      if (closedContainerCenter) closedContainerCenter.style.width = "264px";
     }
   
     if (!isMobileClosed) {   
