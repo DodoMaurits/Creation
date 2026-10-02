@@ -912,7 +912,6 @@ function updateClosedContainer() {
     const onder = 70;
     closedContainer.style.top = ((window.innerHeight - boven - onder) / 2 + boven) + "px";
   } else {
-    closedContainer.style.width = "";
     closedContainer.style.top = "";
   }
   if (isMobiel) {
