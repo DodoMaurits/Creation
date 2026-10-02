@@ -14749,7 +14749,31 @@ const combinaties = [
         achtergrond: "afb/Overzeese_imperia.jpeg",
         titel: "OVERZEESE IMPERIA 1000 BP",
         tekst: 
-        `<span>
+        `<span>Het jaar 1000 was een omslagpunt van de tijdelijke krimp van de wereldbevolking gaande sinds de 1e eeuw.
+        De wereldbevolking was hersteld in omvang en zou exponentieel-versnellend toenemen door de proto-globalisering
+        van Afro-Eurazië, dat met de Amerikaanse betrekking bij deze wereld in 1492 zou doorzetten tot ware
+        globalisering. Van circa 253 miljoen zou de wereldbevolking weer toenemen tot 374 miljoen in 1400.
+        
+        <br><br>Stepperuiternomaden hadden tot dan toe altijd militaire superioriteit gehad over de 
+        grote landbouwsamenlevingen en benut met afpersing, plundertochten of regelrechte verovering.
+        Alles veranderde nu vanaf 1000 de oceaan centraal kwam te staan. De steppemacht bereikte nog wel een 
+        hoogtepunt met het Mongoolse Rijk in de 13e eeuw, maar wat in rap tempo toenam waren de innovaties 
+        in de scheepvaart. Rond 1040 werd in China voor het eerst het kompas gebruikt voor navigatie op zee. De drijvende 
+        magnetische naald kon betrouwbaar richting geven, zelfs bij slecht weer. 
+        
+        <br><br> In de Stille Oceaan voeren de Austronesiërs van het ene eiland naar het andere, en bereikten 
+        Nieuw-Zeeland eind 13e eeuw. In 1405 begonnen de oceaanexpedities van de Chinese admiraal Zheng He in opdracht
+        van de keizer om het Chinese tribuutsysteem uit te breiden met de landen verbonden met de Indische Oceaan.
+        Na zes grote oceaanreizen was het in 1433 afgelopen, maar Portugual begon aan het andere continentale uiteinde
+        met verkennen van oceaanroutes west- en zuidwaarts. In 1420 ontdekten zij Madeira en in 1427 de Azoren.
+        Langs de kust van West-Afrika trokken zij verder naar Kaapverdië in 1456, São Tomé en Principe in 1470, en
+        Kongo in 1482. 
+        
+        <br><br>Na de ronding van Kaap de Goede Hoop in 1488 kon West-Europa zelf deelnemen aan de Indische
+        Oceaanhandel en met de ontdekte oceaanroute naar Amerika in 1492 was het recept voor werelddominantie door
+        oceaanvaart compleet. Overzeese imperia namen het stokje over van de stepperuiternomadenrijken en zouden
+        de welvaart militair opeisen met hun schepen, evenals ontwikkelingen in vuurwapens en mechanische energie 
+        door waterraden en windmolens.
         </span>`,
       }
     }
