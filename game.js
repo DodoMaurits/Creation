@@ -549,7 +549,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   let mobielBox = 110;
   if (isMobielResult) {
     const beschikbaar = window.innerWidth - 16;
-    mobielBox = Math.min(110, Math.floor((beschikbaar - (cols - 1) * 12) / cols));
+    mobielBox = Math.min(220, Math.floor((beschikbaar - (cols - 1) * 12) / cols));
     grid.style.maxWidth = (cols * mobielBox + (cols - 1) * 12) + "px";
   } else {
     const desktopBox = 250;
