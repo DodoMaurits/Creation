@@ -869,8 +869,12 @@ function updateClosedContainer() {
   if (isMobiel && geenMapOpen) {
     const mobielMapIcoon = mappen.length > 18 ? 50 : 60;
     closedContainer.style.width = (4 * mobielMapIcoon + 3 * 8) + "px";
+    const gridClosed = document.querySelector(".grid-closed");
+    if (gridClosed) gridClosed.style.rowGap = mappen.length > 18 ? "8px" : "";
   } else if (isMobiel) {
-    closedContainer.style.width = (3 * 40 + 2 * 8 + 2 * 16) + "px"; // side: 3 per rij
+    closedContainer.style.width = (3 * 40 + 2 * 8 + 2 * 16) + "px"; 
+    const gridClosed = document.querySelector(".grid-closed");
+    if (gridClosed) gridClosed.style.rowGap = "";
   } else {
     closedContainer.style.width = "";
   }
