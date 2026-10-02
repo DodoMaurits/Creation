@@ -876,8 +876,13 @@ function updateClosedContainer() {
   let leftOpen = !!openLeft;
   let rightOpen = !!openRight;
   let halfWidth = window.innerWidth / 2;
-  closedContainer.style.width = "";
-
+  if (window.innerWidth <= 900 && window.innerHeight > window.innerWidth) {
+    const mobielMapIcoon = mappen.length > 18 ? 50 : 60;
+    closedContainer.style.width = (4 * mobielMapIcoon + 3 * 8) + "px";
+  } else {
+    closedContainer.style.width = "";
+  }
+  
   if (leftOpen && rightOpen) {
     closedContainer.style.opacity = 0;
     closedContainer.style.pointerEvents = "none";
