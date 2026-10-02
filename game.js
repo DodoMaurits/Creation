@@ -864,7 +864,7 @@ function renderClosed() {
       const maxPerRijBreed = Math.floor((window.innerWidth - 40 + 20) / (icoon + 20));
       perRij = Math.min(perRij, maxPerRijBreed);
       rijen = Math.ceil(mappen.length / perRij);
-      }
+
       mapIcons.forEach(icon => {
         icon.style.width = icoon + "px";
         icon.style.height = icoon + "px";
