@@ -14032,7 +14032,17 @@ const combinaties = [
         achtergrond: "afb/IJstijd.jpg",
         titel: "LAATSTE IJSTIJD 100.000 BP",
         tekst: 
-        `<span>
+        `<span>In de laatste ijstijd tot nu toe reikten de ijskappen tot ver buiten het poolgebied.
+        Grote delen van Noord-Europa en Noord-Amerika waren bedekt met landijs. Andere noordelijke zeeën kwamen 
+        droog te liggen door de lage zeespiegel. 
+        
+        <br><br>Deze koude, droge gebieden, ook wel poolwoestijnen, waren nauwelijks begroeid. Met de komst van 
+        de 'wijze mens' (homo sapiens) in Europa halverwege deze periode, kregen zij te maken met de arctische kou
+        en joegen zij op wolharige mammoeten, steppebizons en rendieren. In sommige gebieden leefden ze korte tijd 
+        samen met de soort neanderthalers, die rond 40.000 BP uitstierven. 
+        
+        <br><br>In Noord-Amerika en Azië verschenen wijze mensen pas later, na 30.000 BP. Ook daar pasten zij zich 
+        aan aan de extreme koude en de unieke fauna van die streken.
         </span>`,
       }
     }
