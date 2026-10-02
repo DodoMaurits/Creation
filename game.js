@@ -506,41 +506,46 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   // Verwijder bestaande overlay
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
-
   const hasThreshold = !!thresholdOverlay?.uitleg?.threshold;
   const hasNormal = !!thresholdOverlay?.uitleg?.normal;
-
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
 
   // Grid voor de nieuwe elementen
   const grid = document.createElement("div");
   grid.className = "result-grid";
-
-  // Dynamische kolommen afhankelijk van aantal elementen
-  let cols;
-  switch(elements.length) {
-    case 1: cols = 1; break;
-    case 2: cols = 2; break;
-    case 3: cols = 3; break;
-    case 4: cols = 2; break;
-    case 5: cols = 3; break;
-    case 6: cols = 3; break;
-    case 7: cols = 4; break;
-    case 8: cols = 4; break;
-    case 9: cols = 5; break;
-    case 10: cols = 5; break;
-    default: cols = Math.ceil(Math.sqrt(elements.length));
-  }
-  // Mobiel: 5 nieuwe elementen → 3 op rij 1, 2 op rij 2
-  if (window.innerWidth <= 900 && window.innerHeight > window.innerWidth && elements.length === 5) {
-    cols = 3;
-  }
-
   const isMobielResult = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
+  let colsDesktop;
+  switch(elements.length) {
+    case 1: colsDesktop = 1; break;
+    case 2: colsDesktop = 2; break;
+    case 3: colsDesktop = 3; break;
+    case 4: colsDesktop = 2; break;
+    case 5: colsDesktop = 3; break;
+    case 6: colsDesktop = 3; break;
+    case 7: colsDesktop = 4; break;
+    case 8: colsDesktop = 4; break;
+    case 9: colsDesktop = 5; break;
+    case 10: colsDesktop = 5; break;
+    default: colsDesktop = Math.ceil(Math.sqrt(elements.length));
+  }
+  let colsMobiel;
+  switch(elements.length) {
+    case 1: colsMobiel = 1; break;
+    case 2: colsMobiel = 2; break;
+    case 3: colsMobiel = 3; break;
+    case 4: colsMobiel = 2; break;
+    case 5: colsMobiel = 3; break;
+    case 6: colsMobiel = 3; break;
+    case 7: colsMobiel = 3; break;
+    case 8: colsMobiel = 3; break;
+    case 9: colsMobiel = 3; break;
+    case 10: colsMobiel = 3; break;
+    default: colsMobiel = 3;
+  }
+  const cols = isMobielResult ? colsMobiel : colsDesktop;
   const gapPx = elements.length > 8 ? 20 : 30;
   grid.style.gap = gapPx + "px";
-
   if (isMobielResult) {
     const mobielBox = 110;   // breedte van één mobiele box (zie aanpassing 3)
     grid.style.maxWidth = (cols * mobielBox + (cols - 1) * 12) + "px";
