@@ -847,12 +847,23 @@ function renderClosed() {
       if (mappen.length <= 20) { icoon = 130; perRij = 4; }
       else if (mappen.length <= 25) { icoon = 130; perRij = 5; }
       else { icoon = 117; perRij = 6; }
-      // hoogte-check: past het verticaal? anders iconen verkleinen
+      // hoogte-check: past het verticaal? eerst meer per rij, dan iconen verkleinen
       let rijen = Math.ceil(mappen.length / perRij);
       let benodigdeHoogte = rijen * (icoon + 20) - 20;
-      while (benodigdeHoogte > window.innerHeight - 160 && icoon > 80) {
+      const maxHoogte = window.innerHeight - 160;
+      while (benodigdeHoogte > maxHoogte && perRij < 8) {
+        perRij++;
+        rijen = Math.ceil(mappen.length / perRij);
+        benodigdeHoogte = rijen * (icoon + 20) - 20;
+      }
+      while (benodigdeHoogte > maxHoogte && icoon > 80) {
         icoon -= 10;
         benodigdeHoogte = rijen * (icoon + 20) - 20;
+      }
+      // breedte-check: past het horizontaal?
+      while (perRij * icoon + (perRij - 1) * 20 > window.innerWidth - 40 && perRij > 1) {
+        perRij--;
+        rijen = Math.ceil(mappen.length / perRij);
       }
       mapIcons.forEach(icon => {
         icon.style.width = icoon + "px";
