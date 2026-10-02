@@ -985,6 +985,9 @@ function renderSide(parentContainer, map, side) {
 
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
+  const mobielIcoon = isMobile
+    ? (totalElements > 27 ? 42 : (totalElements > 24 ? 48 : 50))
+    : 50;
 
   // Layout instellen
   if (!isMobile) {
@@ -1002,18 +1005,16 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "20px";
     }
   } else {
+    grid.style.gridTemplateColumns = `repeat(3, ${mobielIcoon}px)`;
     if (totalElements > 27) {
-      grid.style.gridTemplateColumns = "repeat(3, 42px)";
       grid.style.columnGap = "12px";
       grid.style.rowGap = "0px";
     } else if (totalElements > 24) {
-      grid.style.gridTemplateColumns = "repeat(3, 48px)";
       grid.style.columnGap = "10px";
       grid.style.rowGap = "0px";
     } else {
-      grid.style.gridTemplateColumns = "repeat(3, 50px)";
       grid.style.columnGap = "8px";
-      grid.style.rowGap = "2px"; // Row-gaps mobiele versie
+      grid.style.rowGap = "2px";
     }
   }
 
@@ -1030,9 +1031,8 @@ function renderSide(parentContainer, map, side) {
       img.style.height = totalElements > 16 ? "110px" : "130px";
     }
     if (isMobile) {
-      img.style.width = grid.style.gridTemplateColumns.includes("42px") ? "42px"
-                      : grid.style.gridTemplateColumns.includes("48px") ? "48px" : "50px";
-      img.style.height = img.style.width;
+      img.style.width = mobielIcoon + "px";
+      img.style.height = mobielIcoon + "px";
       if (totalElements > 24) elContainer.style.marginBottom = "2px";
     }
 
@@ -1040,7 +1040,7 @@ function renderSide(parentContainer, map, side) {
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        elContainer.appendChild(makeCurvedLabel(el.naam, totalElements > 27 ? 42 : (totalElements > 24 ? 48 : 50)));
+        elContainer.appendChild(makeCurvedLabel(el.naam, mobielIcoon));
     } else {
         attachTooltip(img, el.naam);
     }
