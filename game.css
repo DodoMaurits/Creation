@@ -1308,7 +1308,7 @@ body {
               flex-direction: column;
               justify-content: center;       /* verticale centrering in kolommodus */
               align-items: center;           /* horizontale centrering */
-              padding: 24px 16px;
+              padding: 24px 8px;
               overflow-y: auto;
               box-sizing: border-box;
             }
