@@ -13910,7 +13910,22 @@ const combinaties = [
         achtergrond: "afb/Mens.jpg",
         titel: "MENS 2 MA",
         tekst: 
-        `<span>
+        `<span>Dat wat wij verstaan onder het begrip mens evolueerde langzaam en non-lineair in Oost-Afrika.
+        De oudste archeologische vondsten komen uit Ethiopië, Kenia en Tanzania.
+        
+        <br><br>Het geslacht 'mens' staat voor een nieuwe familietak binnen de mensachtigen. Rond deze tijd onderscheidde 
+        deze tak van diens voorouders - de zuidelijke mensapen (austrolopithecussen) - door een combinatie van 
+        lichaamsbouw, herseninhoud en gedrag.
+        
+        <br><br>Binnen het geslacht mens bevinden zich soorten afhankelijk van of ze de neiging hebben met elkaar 
+        te paren en in staat zijn vruchtbare nakomelingen te krijgen. 
+        De eerste soort van het nieuwe geslacht was de ‘handige mens’ (homo habilis).
+        Deze soort verspreidde zich over Oost- en Zuid-Afrika. Zij maakten gebruik van eenvoudige 
+        steenwerktuigen, bekend als Oldowan-gereedschap, om voedsel te verkrijgen. 
+        
+        <br><br>Waar andere zoogdieren van vergelijkbaar formaat een herseninhoud van circa 200 kubieke centimeter 
+        hadden, bezaten deze vroege mannen en vrouwen hersenen van maar liefst 600 kubieke centimeter. 
+        Deze slimheid betaalde zich uit, ondanks de hoge energiekosten en dus behoefte aan meer voedsel.
         </span>`,
       }
     }
