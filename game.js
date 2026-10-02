@@ -871,10 +871,16 @@ function updateClosedContainer() {
     closedContainer.style.width = (4 * mobielMapIcoon + 3 * 8) + "px";
     const gridClosed = document.querySelector(".grid-closed");
     if (gridClosed) gridClosed.style.rowGap = mappen.length > 18 ? "8px" : "";
+    const boven = 60;    // vrije ruimte begint onder de hint/mute-knoppen
+    const onder = 70;    // vrije ruimte eindigt boven de timeline + label
+    closedContainer.style.top = ((window.innerHeight - boven - onder) / 2 + boven) + "px";
   } else if (isMobiel) {
     closedContainer.style.width = (3 * 40 + 2 * 8 + 2 * 16) + "px"; 
     const gridClosed = document.querySelector(".grid-closed");
     if (gridClosed) gridClosed.style.rowGap = mappen.length > 18 ? "6px" : "";
+    const boven = 60;
+    const onder = 70;
+    closedContainer.style.top = ((window.innerHeight - boven - onder) / 2 + boven) + "px";
   } else {
     closedContainer.style.width = "";
   }
