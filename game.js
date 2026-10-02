@@ -547,7 +547,8 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   const gapPx = elements.length > 8 ? 20 : 30;
   grid.style.gap = gapPx + "px";
   if (isMobielResult) {
-    const mobielBox = 110;   // breedte van één mobiele box (zie aanpassing 3)
+    const beschikbaar = window.innerWidth - 32;   // scherm minus overlay-padding
+    const mobielBox = Math.min(110, Math.floor((beschikbaar - (cols - 1) * 12) / cols));
     grid.style.maxWidth = (cols * mobielBox + (cols - 1) * 12) + "px";
   } else {
     const desktopBox = 250;
@@ -558,6 +559,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   elements.forEach(el => {
     const box = document.createElement("div");
     box.className = "result-box fade-in";
+    if (isMobielResult) box.style.width = mobielBox + "px";
 
     const img = document.createElement("img");
     img.src = el.icoon;
