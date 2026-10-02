@@ -731,13 +731,13 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   document.body.appendChild(overlay);
 
   // 🔹 Tekst automatisch laten krimpen tot hij past (i.p.v. scrollbar)
-  const vrij = () => window.innerHeight - 120;   // beschikbare hoogte (marge boven/onder)
   const isMobielInfo = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  let grootte = isMobielInfo ? 12 : 20;         // mobiel start op 12px, desktop op 20px
+  let grootte = isMobielInfo ? 12 : 20;
   textEl.style.fontSize = grootte + "px";
+  const past = () => inner.scrollHeight <= window.innerHeight - 40;
   let pogingen = 0;
   while (
-    overlay.scrollHeight > vrij() &&
+    !past() &&
     grootte > (isMobielInfo ? 8 : 10) &&
     pogingen < 20
   ) {
