@@ -883,6 +883,7 @@ function updateClosedContainer() {
     closedContainer.style.top = ((window.innerHeight - boven - onder) / 2 + boven) + "px";
   } else {
     closedContainer.style.width = "";
+    closedContainer.style.top = "";
   }
   if (isMobiel) {
     const side = leftOpen || rightOpen;
