@@ -806,7 +806,8 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: safe center;
+  overflow-y: auto;
   z-index: 9500;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -829,8 +830,8 @@ body {
 }
 
 .info-inner {
-  width: 48%;
-  min-width: 600px;
+  width: min(48%, 900px);        /* nooit breder dan 900px... */
+  max-width: 100%;               /* ...en nooit breder dan het scherm */
   text-align: center;
 }
 
@@ -842,10 +843,9 @@ body {
 }
 
 .info-text {
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   font-family: "Roboto Slab", serif;
-  line-height: 1.4;
-  display: inline-block;
+  line-height: 1.5;
   animation: infoSway 6s ease-in-out infinite alternate;
   will-change: transform;
 }
