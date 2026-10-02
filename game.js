@@ -827,12 +827,15 @@ function renderClosed() {
     const closedContainerCenter = document.querySelector("#closed-container.center");
 
     const isMobileClosed = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-    if (isMobileClosed && mappen.length > 18) {
+    if (isMobileClosed) {
+      const mapIcoon = mappen.length > 18 ? 50 : 60;
       mapIcons.forEach(icon => {
-        icon.style.width = "50px";
-        icon.style.height = "50px";
+        icon.style.width = mapIcoon + "px";
+        icon.style.height = mapIcoon + "px";
       });
-      if (closedContainerCenter) closedContainerCenter.style.width = "264px";
+      if (closedContainerCenter) {
+        closedContainerCenter.style.width = (4 * mapIcoon + 3 * 8) + "px";
+      }
     }
   
     if (!isMobileClosed) {   
