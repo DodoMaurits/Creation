@@ -1033,7 +1033,7 @@ function renderSide(parentContainer, map, side) {
     if (isMobile) {
       img.style.width = mobielIcoon + "px";
       img.style.height = mobielIcoon + "px";
-      if (totalElements > 24) elContainer.style.marginBottom = "2px";
+      if (totalElements > 24) elContainer.style.marginBottom = "8px";
     }
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
