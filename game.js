@@ -537,8 +537,17 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     cols = 3;
   }
 
-  grid.style.justifyItems = "center";
-  grid.style.gap = elements.length > 8 ? "20px" : "30px";
+  const isMobielResult = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
+  const gapPx = elements.length > 8 ? 20 : 30;
+  grid.style.gap = gapPx + "px";
+
+  if (isMobielResult) {
+    const mobielBox = 110;   // breedte van één mobiele box (zie aanpassing 3)
+    grid.style.maxWidth = (cols * mobielBox + (cols - 1) * 12) + "px";
+  } else {
+    const desktopBox = 250;  // breedte van één desktop box (zie aanpassing 2)
+    grid.style.maxWidth = (cols * desktopBox + (cols - 1) * gapPx) + "px";
+  }
 
   elements.forEach(el => {
     const box = document.createElement("div");
