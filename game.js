@@ -520,7 +520,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     case 1: colsDesktop = 1; break;
     case 2: colsDesktop = 2; break;
     case 3: colsDesktop = 3; break;
-    case 4: colsDesktop = 2; break;
+    case 4: colsDesktop = 4; break;
     case 5: colsDesktop = 3; break;
     case 6: colsDesktop = 3; break;
     case 7: colsDesktop = 4; break;
@@ -537,10 +537,10 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     case 4: colsMobiel = 2; break;
     case 5: colsMobiel = 3; break;
     case 6: colsMobiel = 3; break;
-    case 7: colsMobiel = 3; break;
-    case 8: colsMobiel = 3; break;
-    case 9: colsMobiel = 3; break;
-    case 10: colsMobiel = 3; break;
+    case 7: colsMobiel = 4; break;
+    case 8: colsMobiel = 4; break;
+    case 9: colsMobiel = 4; break;
+    case 10: colsMobiel = 4; break;
     default: colsMobiel = 3;
   }
   const cols = isMobielResult ? colsMobiel : colsDesktop;
