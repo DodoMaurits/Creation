@@ -724,6 +724,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   const textEl = document.createElement("div");
   textEl.className = "info-text";
   textEl.innerHTML = text;
+  textEl.lang = "nl";
 
   inner.appendChild(titleEl);
   inner.appendChild(textEl);
