@@ -840,24 +840,25 @@ function renderClosed() {
     const gridClosed = document.querySelector(".grid-closed");
     const closedContainerCenter = document.querySelector("#closed-container.center");
     const isMobileClosed = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-    if (!isMobileClosed) {   
-    if (mappen.length > 20 && mappen.length <= 25) {
+    if (!isMobileClosed) {
+      let icoon, perRij;
+      if (mappen.length <= 20) { icoon = 130; perRij = 4; }
+      else if (mappen.length <= 25) { icoon = 130; perRij = 5; }
+      else { icoon = 117; perRij = 6; }
+      // hoogte-check: past het verticaal? anders iconen verkleinen
+      const rijen = Math.ceil(mappen.length / perRij);
+      const benodigdeHoogte = rijen * (icoon + 20) - 20;
+      while (benodigdeHoogte > window.innerHeight - 160 && icoon > 80) {
+        icoon -= 10;
+      }
       mapIcons.forEach(icon => {
-        icon.style.width = "130px";
-        icon.style.height = "130px";
+        icon.style.width = icoon + "px";
+        icon.style.height = icoon + "px";
       });
-      if (gridClosed) gridClosed.style.maxWidth = "730px";
-      if (closedContainerCenter) closedContainerCenter.style.width = "730px";
+      const breedte = perRij * icoon + (perRij - 1) * 20 + 8;  // +8px veiligheidsmarge
+      if (gridClosed) gridClosed.style.maxWidth = breedte + "px";
+      if (closedContainerCenter) closedContainerCenter.style.width = breedte + "px";
     }
-    if (mappen.length > 25) {
-      mapIcons.forEach(icon => {
-        icon.style.width = "117px";
-        icon.style.height = "117px";
-      });
-      if (gridClosed) gridClosed.style.maxWidth = "802px";
-      if (closedContainerCenter) closedContainerCenter.style.width = "802px";
-    }
-  }
     closedContainer.style.opacity = 1;
   });
 }
