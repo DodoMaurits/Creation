@@ -1030,8 +1030,8 @@ function renderSide(parentContainer, map, side) {
       img.style.height = totalElements > 16 ? "110px" : "130px";
     }
     if (isMobile) {
-      img.style.width = grid.style.gridTemplateColumns.includes("40px") ? "42px"
-                      : grid.style.gridTemplateColumns.includes("45px") ? "48px" : "50px";
+      img.style.width = grid.style.gridTemplateColumns.includes("42px") ? "42px"
+                      : grid.style.gridTemplateColumns.includes("48px") ? "48px" : "50px";
       img.style.height = img.style.width;
       if (totalElements > 24) elContainer.style.marginBottom = "2px";
     }
