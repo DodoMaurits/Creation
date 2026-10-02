@@ -876,9 +876,13 @@ function updateClosedContainer() {
   let leftOpen = !!openLeft;
   let rightOpen = !!openRight;
   let halfWidth = window.innerWidth / 2;
-  if (window.innerWidth <= 900 && window.innerHeight > window.innerWidth) {
+  const isMobiel = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
+  const geenMapOpen = !openLeft && !openRight;
+  if (isMobiel && geenMapOpen) {
     const mobielMapIcoon = mappen.length > 18 ? 50 : 60;
     closedContainer.style.width = (4 * mobielMapIcoon + 3 * 8) + "px";
+  } else if (isMobiel) {
+    closedContainer.style.width = (3 * 40 + 2 * 8 + 2 * 16) + "px"; // side: 3 per rij
   } else {
     closedContainer.style.width = "";
   }
