@@ -14228,7 +14228,28 @@ const combinaties = [
         achtergrond: "afb/Landbouw.jpeg",
         titel: "LANDBOUW 12.000 BP",
         tekst: 
-        `<span>
+        `<span>De enige overgebleven menssoort begon de levensloop van dieren en planten te manipuleren - 
+        gedreven door de gedachte dat dit meer voedselzekerheid zou opleveren. Het proces van domesticeren – van 
+        het Latijnse woord voor huis (domus) – betekent iets mens-eigen of huiselijk maken. In die zin domesticeerde 
+        graan eigenlijk de mens: de mens ging leven rondom de thuis-plekken van graan. 
+        
+        <br><br.Zonder het te beseffen stapten mensen met hun nieuwe dieet in een valkuil. Voedselvariëteit werd
+        slechter, boeren afhankelijk van grondbezit en veel werk ging zitten in de akkers. De 
+        Landbouwrevolutie bood dus de mogelijkheid om meer mensen in leven te houden, maar vaak onder slechtere 
+        leefomstandigheden. 
+        
+        <br><br>Toch bracht het een groot voordeel op, namelijk energie. Landbouwsamenlevingen veranderden 
+        ingrijpend de afhankelijkheid van zonne-energie en fotosynthese. Dankzij landbouw en veeteelt verschoof de
+        energiebron naar bio-energie. Via graan en vee konden mensen zonne-energie monopoliseren voor eigen 
+        behoeften. Dorpen organiseerden hiërarchische samenlevingen om energieproductie en consumptie te verdelen.
+        Dit stimuleerde technische innovatie, irrigatie en het inzetten van dierkracht. Waar een mens 
+        gemiddeld goed is voor een energieproductie van 100 watt, kan een lastdier het 3- tot 6-voudige opbrengen. 
+        
+        <br><br>Bijzonder is dat op circa 10 plaatsen in de wereld een landbouwrevolutie plaatsvond, onafhankelijk 
+        van elkaar. Elke plek kende een eigen culturele keuken en leeftraditie. Zo'n neolithische cultuur kenmerkte 
+        zich door domesticatie, gepolijste stenen werktuigen en de landbouwsamenleving. Deze gemeenschappen vormden
+        de basis voor de eerste beschavingen in rivierdelta’s zoals de Nijl, de Eufraat, de Tigris, de Indus, de
+        Huanghe en de Yangtze.
         </span>`,
       }
     }
