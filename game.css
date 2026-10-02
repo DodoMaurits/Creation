@@ -609,14 +609,15 @@ body {
 #result-overlay {
   position: fixed;
   inset: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: safe center;
+  overflow-y: auto;
   background:
     linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
     url("afb/beginscherm.png");
   background-size: cover;
   background-position: center;
-  justify-content: center;
-  align-items: center;
   z-index: 8000;
   padding: 60px 20px;
   box-sizing: border-box;
@@ -624,7 +625,6 @@ body {
   will-change: opacity, transform;
   transition: opacity 0.3s ease; 
   cursor: pointer;
-  overflow-y: auto;
 }
 
 #result-overlay.visible {
@@ -632,28 +632,25 @@ body {
 }
 
 .result-grid {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: flex;                 /* was: grid */
-  flex-wrap: wrap;               /* rijen wraps zelf */
-  justify-content: center;       /* elke rij eigenlijk gecentreerd */
-  align-content: center;         /* verticale verdeling bij meerdere rijen */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   gap: 40px;
   width: fit-content;
-  max-width: min(90vw, 1400px);  /* zet hier de grens die bepaalt hoeveel er per rij passen */
-  transform: translate(-50%, -50%);
+  max-width: min(90vw, 1400px);
+  margin: 0 auto;
   animation: resultAppear 0.8s ease;
 }
 
 @keyframes resultAppear {
-  from { 
-    transform: translate(-50%, calc(-50% + 30px));
-    opacity: 0; 
+  from {
+    transform: translateY(30px);
+    opacity: 0;
   }
-  to { 
-    transform: translate(-50%, -50%);
-    opacity: 1; 
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -1326,6 +1323,7 @@ body {
               max-width: 420px;
               margin: 0 auto;
               justify-items: center;
+              position: static !important;
               transform: none !important;
               animation: none !important;         /* resultAppear schuift hem met transform */
               inset: auto !important;
