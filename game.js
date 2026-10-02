@@ -1005,7 +1005,7 @@ function renderSide(parentContainer, map, side) {
     if (totalElements > 27) {
       grid.style.gridTemplateColumns = "repeat(3, 40px)";
       grid.style.columnGap = "12px";
-      grid.style.rowGap = "-10px";
+      grid.style.rowGap = "0px";
     } else if (totalElements > 24) {
       grid.style.gridTemplateColumns = "repeat(3, 45px)";
       grid.style.columnGap = "10px";
@@ -1029,12 +1029,18 @@ function renderSide(parentContainer, map, side) {
       img.style.width = totalElements > 16 ? "110px" : "130px";
       img.style.height = totalElements > 16 ? "110px" : "130px";
     }
+    if (isMobile) {
+      img.style.width = grid.style.gridTemplateColumns.includes("40px") ? "40px"
+                      : grid.style.gridTemplateColumns.includes("45px") ? "45px" : "50px";
+      img.style.height = img.style.width;
+      if (totalElements > 24) elContainer.style.marginBottom = "0px";
+    }
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        elContainer.appendChild(makeCurvedLabel(el.naam, 50));
+        elContainer.appendChild(makeCurvedLabel(el.naam, totalElements > 27 ? 40 : (totalElements > 24 ? 45 : 50)));
     } else {
         attachTooltip(img, el.naam);
     }
