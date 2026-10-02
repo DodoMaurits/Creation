@@ -860,10 +860,10 @@ function renderClosed() {
         icoon -= 10;
         benodigdeHoogte = rijen * (icoon + 20) - 20;
       }
-      // breedte-check: past het horizontaal?
-      while (perRij * icoon + (perRij - 1) * 20 > window.innerWidth - 40 && perRij > 1) {
-        perRij--;
-        rijen = Math.ceil(mappen.length / perRij);
+      // breedte-check: hoogstens zoveel per rij als het venster toelaat
+      const maxPerRijBreed = Math.floor((window.innerWidth - 40 + 20) / (icoon + 20));
+      perRij = Math.min(perRij, maxPerRijBreed);
+      rijen = Math.ceil(mappen.length / perRij);
       }
       mapIcons.forEach(icon => {
         icon.style.width = icoon + "px";
