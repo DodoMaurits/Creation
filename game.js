@@ -833,9 +833,6 @@ function renderClosed() {
         icon.style.width = mapIcoon + "px";
         icon.style.height = mapIcoon + "px";
       });
-      if (closedContainerCenter) {
-        closedContainerCenter.style.width = (4 * mapIcoon + 3 * 8) + "px";
-      }
     }
   
     if (!isMobileClosed) {   
@@ -864,7 +861,7 @@ function refreshClosedLabels() {
   if (!(window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches)) return;
   const isSide = closedContainer.classList.contains("side");
   const smallCenter = !isSide && mappen.length > 18;   // ← nieuw: verkleinde center-modus
-  const size = isSide ? 40 : (smallCenter ? 40 : 60);
+  const size = isSide ? 40 : (smallCenter ? 50 : 60);
   closedContainer.querySelectorAll(".icon-container").forEach(container => {
     const old = container.querySelector(".curved-label");
     if (old) old.remove();
@@ -885,6 +882,14 @@ function updateClosedContainer() {
     closedContainer.style.width = (3 * 40 + 2 * 8 + 2 * 16) + "px"; // side: 3 per rij
   } else {
     closedContainer.style.width = "";
+  }
+  if (isMobiel) {
+    const side = leftOpen || rightOpen;
+    const mapIcoon = side ? 40 : (mappen.length > 18 ? 50 : 60);
+    closedContainer.querySelectorAll(".icon.map").forEach(icon => {
+      icon.style.width = mapIcoon + "px";
+      icon.style.height = mapIcoon + "px";
+    });
   }
   
   if (leftOpen && rightOpen) {
