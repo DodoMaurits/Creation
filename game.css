@@ -833,6 +833,8 @@ body {
   width: min(48%, 900px);
   max-width: 100%;
   text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .info-title {
@@ -840,6 +842,7 @@ body {
   font-weight: bold;
   font-family: "Alegreya Slab", serif;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .info-text {
@@ -848,6 +851,7 @@ body {
   line-height: 1.5;
   hyphens: auto;
   -webkit-hyphens: auto;
+  overflow-wrap: break-word;
   animation: infoSway 6s ease-in-out infinite alternate;
   will-change: transform;
 }
@@ -1435,5 +1439,8 @@ body {
             .info-text {
               font-size: 12px;
               line-height: 1.5;
+              hyphens: auto;
+              -webkit-hyphens: auto;
+              overflow-wrap: break-word;
             }
 }
