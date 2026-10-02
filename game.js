@@ -1002,20 +1002,25 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "20px";
     }
   } else {
+    let mobielIcoon = 50;
     if (totalElements > 27) {
       grid.style.gridTemplateColumns = "repeat(3, 40px)";
       grid.style.columnGap = "12px";
-      grid.style.rowGap = "-10px";
+      grid.style.rowGap = "0px";
+      mobielIcoon = 40;
     } else if (totalElements > 24) {
       grid.style.gridTemplateColumns = "repeat(3, 45px)";
       grid.style.columnGap = "10px";
       grid.style.rowGap = "0px";
+      mobielIcoon = 45;
     } else {
       grid.style.gridTemplateColumns = "repeat(3, 50px)";
       grid.style.columnGap = "8px";
       grid.style.rowGap = "2px"; // Row-gaps mobiele versie
     }
+    grid.dataset.mobielIcoon = mobielIcoon;
   }
+  const mobielIcoonGrootte = isMobile ? parseInt(grid.dataset.mobielIcoon) : 50;
 
   // Maak de elementen
   map.elementen.forEach(el => {
@@ -1028,13 +1033,17 @@ function renderSide(parentContainer, map, side) {
     if (!isMobile) {
       img.style.width = totalElements > 16 ? "110px" : "130px";
       img.style.height = totalElements > 16 ? "110px" : "130px";
+    } else {
+      img.style.width = grid.dataset.mobielIcoon + "px";
+      img.style.height = grid.dataset.mobielIcoon + "px";
+      if (totalElements > 24) elContainer.style.marginBottom = "0px";
     }
 
     img.onclick = () => toggleSelect(el, img, side, map.naam);
 
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        elContainer.appendChild(makeCurvedLabel(el.naam, 50));
+        elContainer.appendChild(makeCurvedLabel(el.naam, mobielIcoonGrootte));
     } else {
         attachTooltip(img, el.naam);
     }
