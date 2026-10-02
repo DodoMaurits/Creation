@@ -830,9 +830,9 @@ body {
 }
 
 .info-inner {
-  width: min(48%, 900px);        /* nooit breder dan 900px... */
-  max-width: 100%;               /* ...en nooit breder dan het scherm */
-  text-align: center;
+  width: min(48%, 900px);
+  max-width: 100%;
+  text-align: left;
 }
 
 .info-title {
@@ -846,6 +846,8 @@ body {
   font-size: clamp(16px, 2vw, 20px);
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
+  hyphens: auto;
+  -webkit-hyphens: auto;
   animation: infoSway 6s ease-in-out infinite alternate;
   will-change: transform;
 }
