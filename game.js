@@ -537,7 +537,6 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     cols = 3;
   }
 
-  grid.style.setProperty("--cols", cols);
   grid.style.justifyItems = "center";
   grid.style.gap = elements.length > 8 ? "20px" : "30px";
 
