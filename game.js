@@ -547,7 +547,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   const gapPx = elements.length > 8 ? 20 : 30;
   grid.style.gap = gapPx + "px";
   if (isMobielResult) {
-    const beschikbaar = window.innerWidth - 32;   // scherm minus overlay-padding
+    const beschikbaar = window.innerWidth - 16;
     const mobielBox = Math.min(110, Math.floor((beschikbaar - (cols - 1) * 12) / cols));
     grid.style.maxWidth = (cols * mobielBox + (cols - 1) * 12) + "px";
   } else {
