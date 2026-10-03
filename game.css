@@ -735,8 +735,8 @@ body {
   overflow-wrap: break-word;
   hyphens: auto;                       /* ← afbreken aanzetten */
   -webkit-hyphens: auto;
-  -webkit-hyphenate-limit-chars: 8 4 4;  /* ← jouw limiet */
-  hyphenate-limit-chars: 8 4 4;          /* ← toekomstige standaard-schrijfwijze */
+  -webkit-hyphenate-limit-chars: 6 4 4;  /* ← jouw limiet */
+  hyphenate-limit-chars: 6 4 4;          /* ← toekomstige standaard-schrijfwijze */
   display: inline-block;
   transform-origin: center;
   animation: quoteDrift var(--dur) ease-in-out infinite alternate;
@@ -1374,8 +1374,8 @@ body {
               --dur: 7s;
               hyphens: auto;
               -webkit-hyphens: auto;
-              -webkit-hyphenate-limit-chars: 8 4 4;   /* ← toevoegen */
-              hyphenate-limit-chars: 8 4 4;           /* ← toevoegen */
+              -webkit-hyphenate-limit-chars: 6 4 4;   /* ← toevoegen */
+              hyphenate-limit-chars: 6 4 4;           /* ← toevoegen */
               word-break: normal;
             }
   
