@@ -1328,7 +1328,7 @@ body {
               display: flex !important;
               flex-wrap: wrap;
               justify-content: center;
-              gap: 12px !important;
+              gap: 18px !important;
               width: 100% !important;
               max-width: 420px;
               margin: 0 auto;
