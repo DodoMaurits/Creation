@@ -578,7 +578,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     if (elements.length === 1) {
       quote.classList.add("single");
       title.classList.add("single");
-    } else if (elements.length === 2) {
+    } else if (elements.length === 2 || (isMobielResult && elements.length === 4)) {
       quote.classList.add("pair");
       title.classList.add("pair");
     } 
