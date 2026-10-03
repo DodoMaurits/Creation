@@ -2122,7 +2122,7 @@ const combinaties = [
   },
   {
     input: ["Leca", "Blauwalgen"],
-    hint: `Kent u endosymbiose? Het is wat je krijgt als de ene cel in de ander leeft en zo het geheel iets nieuws wordt.`,
+    hint: `Wanneer de ene cel in de ander leeft en zo geheel iets nieuws vormt, heet dat endosymbiose.`,
     tijd: 1_600_000_000,
     output: [
       { naam: "Archaeplastiden", icoon: "icons/Archaeplastiden.png", map: "Pril leven", 
