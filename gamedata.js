@@ -1943,7 +1943,7 @@ const combinaties = [
       ["map:Groenten", "Ster"], ["map:Groenten", "Licht"],
       ["map:Granen", "Ster"], ["map:Granen", "Licht"]
     ],
-    hint: `Het regent zonnestralen en dus regent het voedsel voor archaeplastiden.`,
+    hint: `Het regent zonnestralen en dus regent het voedsel.`,
     output: [
       { naam: "Fotosynthese", icoon: "icons/Fotosynthese.png", map: "Biologie", 
         quote: `He had a love affair with photosynthesis. He could talk about moss for an hour. He said that plants 
