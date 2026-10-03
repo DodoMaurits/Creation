@@ -539,7 +539,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     case 6: colsMobiel = 3; break;
     case 7: colsMobiel = 4; break;
     case 8: colsMobiel = 4; break;
-    case 9: colsMobiel = 4; break;
+    case 9: colsMobiel = 3; break;
     case 10: colsMobiel = 4; break;
     default: colsMobiel = 3;
   }
