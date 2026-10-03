@@ -575,13 +575,17 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
     quote.lang = "en";
-    if (elements.length === 1) {
+    const perRij = isMobielResult ? colsMobiel : colsDesktop;
+    if (perRij === 1) {
       quote.classList.add("single");
       title.classList.add("single");
-    } else if (elements.length === 2 || (isMobielResult && elements.length === 4)) {
+    } else if (perRij === 2) {
       quote.classList.add("pair");
       title.classList.add("pair");
-    } 
+    } else if (perRij === 3) {
+      quote.classList.add("trio");
+      title.classList.add("trio");
+    }
     
     // 🔹 kleine random X + Y beweging (millimeters/subtiel)
     const moveX = (Math.random() * 20 - 10).toFixed(1) + "px";
