@@ -1394,7 +1394,7 @@ body {
               letter-spacing: 0.3px;
               white-space: nowrap;
               top: -28px;
-              transform: translateX(calc(-50% - 10px));
+              transform: translateX(-50%);
             }
 
             .intro-wrapper { transform: translateX(-50%); 
