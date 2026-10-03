@@ -1385,6 +1385,9 @@ body {
             .result-title.pair { font-size: 14px; }
             .result-quote.pair { font-size: 12px; }
 
+            .result-title.trio { font-size: 12px; }
+            .result-quote.trio { font-size: 10px; }
+
             #timeline-label {
               font-size: 11px;
               letter-spacing: 0.3px;
