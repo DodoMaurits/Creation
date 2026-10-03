@@ -812,13 +812,14 @@ function updateTimelineLabel() {
   if (window.matchMedia("(max-width: 900px) and (orientation: portrait)").matches) {
     const labelWidth = timelineLabel.offsetWidth;
     const barWidth = timeline.getBoundingClientRect().width;
+    // Het CENTER van het label clampen binnen de balk-randen
+    const minCenter = labelWidth / 2;
+    const maxCenter = barWidth - labelWidth / 2;
+    let centerPx = percentage * barWidth;
+    if (centerPx < minCenter) centerPx = minCenter;
+    if (centerPx > maxCenter) centerPx = maxCenter;
 
-    let leftPx = percentage * barWidth -10;
-    const minPx = labelWidth / 2 +10;
-    const maxPx = barWidth +10 - labelWidth / 2;
-    if (leftPx < minPx) leftPx = minPx;
-    if (leftPx > maxPx) leftPx = maxPx;
-    timelineLabel.style.left = `${leftPx}px`;
+    timelineLabel.style.left = `${centerPx}px`;
   } else {
     timelineLabel.style.left = `${percentage * 100}%`;
   }
