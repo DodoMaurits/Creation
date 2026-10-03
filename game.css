@@ -1328,7 +1328,8 @@ body {
               display: flex !important;
               flex-wrap: wrap;
               justify-content: center;
-              gap: 18px !important;
+              row-gap: 18px !important;     /* verticaal: ruimer */
+              column-gap: 12px !important;  /* horizontaal: blijft 12px */
               width: 100% !important;
               max-width: 420px;
               margin: 0 auto;
