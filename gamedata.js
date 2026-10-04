@@ -4163,6 +4163,7 @@ const combinaties = [
       }
     }
   },
+  /* ------------------ INKTVISSEN ------------------ */
   {
     input: ["Oertrochozoa", "Evolutie"],
     hint: `Van trochozoa is het een kleine stap naar de weekdieren.`, 
@@ -4177,10 +4178,9 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Inktvissen", "Kwallen"],["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"], ["Inktvissen", "Zeesterren"], 
-      ["Inktvissen", "Zee-egels"], ["Inktvissen", "Manteldieren"], 
+      ["Inktvissen", "Kwallen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],      
       /* --- +schelp --- */
-      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"], 
+      ["Inktvissen", "Zeeslakken"],
       /* --- VISSEN --- */
       ["Inktvissen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
@@ -4205,13 +4205,11 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* BLOED */
       /* --- VISSEN --- */
-      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"],
-      ["Platvissen", "Inktvissen"], ["Clownvissen", "Inktvissen"], ["Doktersvissen", "Inktvissen"], 
-      ["Zalm", "Inktvissen"], ["Haring", "Inktvissen"],
-      ["Karpers", "Inktvissen"], ["Forel", "Inktvissen"], ["Meervallen", "Inktvissen"], ["Paling", "Inktvissen"], 
-      ["Zeepaardjes", "Inktvissen"], ["Piranha", "Inktvissen"], ["Goudvissen", "Inktvissen"]
+      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"], ["Platvissen", "Inktvissen"], 
+      ["Clownvissen", "Inktvissen"], ["Doktersvissen", "Inktvissen"], ["Zalm", "Inktvissen"], ["Haring", "Inktvissen"],
+      ["Makreel", "Inktvissen"], ["Paling", "Inktvissen"], ["Zeepaardjes", "Inktvissen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -4238,9 +4236,8 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Tweekleppigen"], ["Inktvissen", "Zeepokken"],
-      ["Inktvissen", "Heremietkreeften"]
+    input: [ /* SCHELP */
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
