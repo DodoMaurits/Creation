@@ -11998,7 +11998,6 @@ const combinaties = [
         <br><br>- Li Bai`
       }
     ]
-  },
   },  /* ------------------ ZEEKOEIEN ------------------ */
   {
     input: [
