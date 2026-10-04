@@ -4237,7 +4237,7 @@ const combinaties = [
   },
   {
     input: [ /* SCHELP */
-      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Heremietkreeften"]
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Heremietkreeften"], ["Nautilussen", "Zeepokken"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -4561,6 +4561,7 @@ const combinaties = [
       }
     ]
   },
+  /* ------------------ NAUTILUSSEN ------------------ */
   {
     input: ["Inktvissen", "Schelp"],
     hint: `Er zijn nog weekdieren zonder schelp...`,
@@ -4575,12 +4576,10 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Nautilussen", "Kwallen"],["Nautilussen", "Wormen"], ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Zeesterren"], 
-      ["Nautilussen", "Zee-egels"], ["Nautilussen", "Manteldieren"], 
+      ["Nautilussen", "Kwallen"], ["Nautilussen", "Manteldieren"], ["Nautilussen", "Wormen"], 
+      ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Zeesterren"],
       /* --- +schelp --- */
-      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], 
-      /* --- VISSEN --- */
-      ["Nautilussen", "Lancetvisjes"], 
+      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Heremietkreeften"], 
       /* --- GELEEDPOTIGEN --- */
       ["Nautilussen", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
     ],
@@ -4601,13 +4600,10 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* BLOED */
       /* --- VISSEN --- */
-      ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"],
-      ["Platvissen", "Nautilussen"], ["Clownvissen", "Nautilussen"], ["Doktersvissen", "Nautilussen"], 
-      ["Zalm", "Nautilussen"], ["Kabeljauwen", "Nautilussen"], ["Haring", "Nautilussen"], ["Makreel", "Nautilussen"],
-      ["Karpers", "Nautilussen"], ["Forel", "Nautilussen"], ["Meervallen", "Nautilussen"], ["Paling", "Nautilussen"], 
-      ["Zeepaardjes", "Nautilussen"], ["Piranha", "Nautilussen"], ["Goudvissen", "Nautilussen"]
+      ["Nautilussen", "Agnathen"], ["Nautilussen", "Oerstraalvinnigen"], ["Platvissen", "Nautilussen"], 
+      ["Clownvissen", "Nautilussen"], ["Doktersvissen", "Nautilussen"], ["Zeepaardjes", "Nautilussen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -4632,7 +4628,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* SCHELP */
       ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Zeepokken"],
       ["Nautilussen", "Heremietkreeften"]
     ],
