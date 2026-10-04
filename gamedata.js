@@ -2945,9 +2945,11 @@ const combinaties = [
   },
 //------------ ZENUWEN --------------//
   {
-    input: 
+    input: [
+      ["Parasieten", "Zenuwen"],
       /* --- GELEEDPOTIGEN --- */
-      ["Zeepokken", "Zenuwen"],
+      ["Zeepokken", "Zenuwen"]
+    ],
     hint: `Wat voel ik?`,
     output: [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
@@ -2959,7 +2961,7 @@ const combinaties = [
   {
     input: [
       /* --- PRIL LEVEN --- */
-      ["Oercnidaria", "Zenuwen"], 
+      ["Oercnidaria", "Zenuwen"], ["Oerbilateria", "Zenuwen"], 
       /* --- WATERDIEREN --- */
       ["Koraal", "Zenuwen"], ["Kwallen", "Zenuwen"], ["Zeeanemonen", "Zenuwen"], 
       ["Zeesterren", "Zenuwen"], ["Zee-egels", "Zenuwen"]
