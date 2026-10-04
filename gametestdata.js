@@ -4654,7 +4654,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  },  /* ------------------ ZEESTERREN ------------------ */
   {
     input: [
       ["Zeesterren", "Bacteriën"], ["Zeesterren", "Detritus"], ["Zeesterren", "Blauwalgen"], ["Zeesterren", "Leca"],
@@ -4663,32 +4663,12 @@ const combinaties = [
       ["Zeesterren", "Amoeben"], ["Zeesterren", "Foraminiferen"], ["Zeesterren", "Stralendiertjes"], 
       ["Zeesterren", "Oercnidaria"], ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Koraal"], 
       ["Zeesterren", "Wormen"], ["Zeesterren", "Oertrochozoa"], 
-      ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"]
+      ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"], ["Zeesterren", "Garnalen"]
     ],
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
         quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
         <br><br>- Rachel Carson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      }
-    ]
-  },
-  {
-    input: ["Zeestserren", "Garnalen"],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    output: [
-      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
-        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
