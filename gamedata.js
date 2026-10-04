@@ -3376,7 +3376,7 @@ const combinaties = [
       ["map:Zoogdieren", "Zenuwen"], 
       ["map:Vogels", "Zenuwen"],
       /* --- WATERDIEREN --- */
-      ["Zeeschildpadden", "Zenuwen"],
+      ["Zeekoeien", "Zenuwen"], ["Zeeschildpadden", "Zenuwen"],
       /* --- VISSEN --- */
       ["Coelacanthen", "Zenuwen"], ["Tiktaalik", "Zenuwen"], ["Haaien", "Zenuwen"], ["Spookhaaien", "Zenuwen"], 
       ["Manta", "Zenuwen"], ["Tonijn", "Zenuwen"], ["Zalm", "Zenuwen"], ["Haring", "Zenuwen"], 
@@ -3429,6 +3429,8 @@ const combinaties = [
   },
   {
     input: [
+      /* --- WATERDIEREN --- */
+      ["Vinvissen", "Zenuwen"],
       /* --- VISSEN --- */
       ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
       ["Paling", "Zenuwen"]
@@ -3457,6 +3459,39 @@ const combinaties = [
       { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
         quote: `Eat bitter, taste sweet
         <br><br>- Rick Riordon`
+      },
+      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
+      },
+      { naam: "Geluid", icoon: "icons/Geluid.png", map: "Brein",
+        quote: `Everything in the world has a spirit which is released by its sound
+        <br><br>- Oskar Fischinger`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Walvissen", "Zenuwen"], ["Potvissen", "Zenuwen"], ["Orka", "Zenuwen"], ["Narwallen", "Zenuwen"], 
+      ["Dolfijnen", "Zenuwen"]
+    ],
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
       },
       { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
         quote: `Eye contact is way more intimate than words will ever be 
