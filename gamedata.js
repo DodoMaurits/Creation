@@ -2576,7 +2576,11 @@ const combinaties = [
       ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
       ["Bijen", "Radioactiviteit"], ["Bijen", "Gif"],
       /* --- VISSEN --- */
-      ["Lancetvisjes", "Gif"], ["Agnathen", "Gif"], ["Haaien", "Gif"], ["Spookhaaien", "Gif"], ["Manta", "Gif"],
+      ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "Gif"], 
+      ["Agnathen", "Radioactiviteit"], ["Agnathen", "Gif"], 
+      ["Haaien", "Radioactiviteit"], ["Haaien", "Gif"], 
+      ["Spookhaaien", "Radioactiviteit"], ["Spookhaaien", "Gif"], 
+      ["Manta", "Radioactiviteit"], ["Manta", "Gif"],
       /* --- GENOTWAREN --- */
       ["Coca", "Radioactiviteit"], 
       ["Hop", "Radioactiviteit"], 
@@ -2622,9 +2626,6 @@ const combinaties = [
       ["Zeekoeien", "Radioactiviteit"], ["Zeekoeien", "Gif"], 
       ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
       /* --- VISSEN --- */
-      ["Coelacanthen", "Radioactiviteit"], ["Coelacanthen", "Gif"], 
-      ["Tiktaalik", "Radioactiviteit"], ["Tiktaalik", "Gif"], 
-      ["Oerstraalvinnigen", "Radioactiviteit"], ["Oerstraalvinnigen", "Gif"],
       ["Zeeduivels", "Radioactiviteit"], ["Zeeduivels", "Gif"],
       ["Platvissen", "Radioactiviteit"], ["Platvissen", "Gif"],
       ["Piranha", "Radioactiviteit"], ["Piranha", "Gif"],
@@ -2635,13 +2636,16 @@ const combinaties = [
       ["Zeepaardjes", "Radioactiviteit"], ["Zeepaardjes", "Gif"],
       ["Vliegvissen", "Radioactiviteit"], ["Vliegvissen", "Gif"],
       ["Maanvissen", "Radioactiviteit"], ["Maanvissen", "Gif"],
-      ["Goudvissen", "Radioactiviteit"], ["Goudvissen", "Gif"],
       ["Koraalduivels", "Radioactiviteit"], ["Koraalduivels", "Gif"],
       ["Kogelvissen", "Radioactiviteit"], ["Kogelvissen", "Gif"],
+      ["Oerstraalvinnigen", "Radioactiviteit"], ["Oerstraalvinnigen", "Gif"],
       ["Kabeljauwen", "Radioactiviteit"], ["Kabeljauwen", "Gif"],
       ["Snoeken", "Radioactiviteit"], ["Snoeken", "Gif"],
       ["Meervallen", "Radioactiviteit"], ["Meervallen", "Gif"],
       ["Paling", "Radioactiviteit"], ["Paling", "Gif"],
+      ["Goudvissen", "Radioactiviteit"], ["Goudvissen", "Gif"],
+      ["Coelacanthen", "Radioactiviteit"], ["Coelacanthen", "Gif"], 
+      ["Tiktaalik", "Radioactiviteit"], ["Tiktaalik", "Gif"], 
       ["Tonijn", "Radioactiviteit"], ["Tonijn", "Gif"],
       ["Zalm", "Radioactiviteit"], ["Zalm", "Gif"],
       ["Haring", "Radioactiviteit"], ["Haring", "Gif"],
@@ -2868,7 +2872,6 @@ const combinaties = [
   {
     input: [
       ["map:Pril leven", "Dood"],
-      ["map:Vissen", "Dood"],
       ["map:Planten", "Dood"],
       ["map:Smaakmakers", "Dood"],
       ["map:Bloemen", "Dood"],
@@ -2882,6 +2885,8 @@ const combinaties = [
       ["Sponzen", "Dood"], ["Zeeanemonen", "Dood"], ["Zeesterren", "Dood"], ["Kwallen", "Dood"], 
       ["Manteldieren", "Dood"], ["Wormen", "Dood"], ["Beerdiertjes", "Dood"], ["Oertrochozoa", "Dood"],
       ["Octopussen", "Dood"], ["Inktvissen", "Dood"],
+      /* --- VISSEN --- */
+      ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Haaien", "Dood"], ["Spookhaaien", "Dood"], ["Manta", "Dood"],
       /* --- BREIN --- */
       ["Brein", "Dood"],
       /* --- KLEIN LANDLEVEN --- */
@@ -2911,6 +2916,13 @@ const combinaties = [
       ["Zee-egels", "Dood"], ["Koraal", "Dood"], ["Walvissen", "Dood"], ["Potvissen", "Dood"],
       ["Orka", "Dood"], ["Narwallen", "Dood"], ["Dolfijnen", "Dood"], ["Vinvissen", "Dood"],
       ["Zeekoeien", "Dood"], ["Zeeschildpadden", "Dood"],
+      /* --- VISSEN --- */
+      ["Zeeduivels", "Dood"], ["Platvissen", "Dood"], ["Piranha", "Dood"], ["Clownvissen", "Dood"],
+      ["Doktersvissen", "Dood"], ["Papegaaivissen", "Dood"], ["Karpers", "Dood"], ["Zeepaardjes", "Dood"],
+      ["Vliegvissen", "Dood"], ["Maanvissen", "Dood"], ["Koraalduivels", "Dood"], ["Kogelvissen", "Dood"],
+      ["Oerstraalvinnigen", "Dood"], ["Kabeljauwen", "Dood"], ["Snoeken", "Dood"], ["Meervallen", "Dood"],
+      ["Paling", "Dood"], ["Goudvissen", "Dood"], ["Coelacanthen", "Dood"], ["Tiktaalik", "Dood"],
+      ["Tonijn", "Dood"], ["Zalm", "Dood"], ["Haring", "Dood"], ["Makreel", "Dood"], ["Forel", "Dood"],
       /* --- KLEIN LANDLEVEN --- */
       ["Schorpioenen", "Dood"], ["Oertetrapoden", "Dood"], ["Salamanders", "Dood"],
       ["Kikkers", "Dood"], ["Padden", "Dood"]
