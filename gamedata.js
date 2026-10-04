@@ -1906,7 +1906,7 @@ const combinaties = [
         <br><br>- Alexis Carrel`
       }
     ]
-  },
+  }, /* ------------------ LECA ------------------ */
   {
     input: [
       ["Leca", "Bacteriën"], ["Leca", "Archaeplastiden"]
@@ -2053,7 +2053,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ SCHIMMEL ------------------ */
   {
     input: ["Leca", "Detritus"],
     hint: `De een zijn dood is de ander zijn brood.. maar wat zijn ze broodnodig.`,
@@ -2100,7 +2100,7 @@ const combinaties = [
         <br><br>- Graham Swift`
       }
     ]
-  },
+  }, /* ------------------ SPONZEN ------------------ */
   {
     input: [
       ["Sponzen", "Bacteriën"], ["Sponzen", "Detritus"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Gist"],
@@ -2213,7 +2213,7 @@ const combinaties = [
         <br><br>- Aldo Leopold`
       }
     ]
-  },
+  }, /* ------------------ GIST ------------------ */
   {
     input: ["Schimmel", "Glucose"],
     hint: `Sommige eencellige schimmels specialiseren zich in suikers.`,
@@ -2239,7 +2239,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ GIST ------------------ */
   {
     input: [
       ["Sponzen", "Kalk"], ["Sponzen", "Bot"], ["Sponzen", "Evolutie"],
@@ -7627,6 +7627,11 @@ const combinaties = [
         with an octopus
         <br><br>- Sy Montgomery`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -7657,6 +7662,11 @@ const combinaties = [
         quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
         with an octopus
         <br><br>- Sy Montgomery`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
       },
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
