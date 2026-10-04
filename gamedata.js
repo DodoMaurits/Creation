@@ -4575,6 +4575,7 @@ const combinaties = [
   },
   {
     input: [
+      ["Nautilussen", "Detritus"], 
       /* --- WATERDIEREN --- */
       ["Nautilussen", "Kwallen"], ["Nautilussen", "Manteldieren"], ["Nautilussen", "Wormen"], 
       ["Nautilussen", "Oertrochozoa"], ["Nautilussen", "Zeesterren"],
