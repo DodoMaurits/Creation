@@ -7608,6 +7608,7 @@ const combinaties = [
       }
     }
   },
+  /* ------------------ OCTOPUSSEN ------------------ */
   {
     input: ["Oertrochozoa", "Brein"],
     hint: `Laten we één creatie alles geven: hyperintelligentie, razendsnel camouflagevermogen, zuignappen, leervermogen,
@@ -7631,8 +7632,8 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Octopussen", "Kwallen"],["Octopussen", "Wormen"], ["Octopussen", "Oertrochozoa"], ["Octopussen", "Zeesterren"], 
-      ["Octopussen", "Zee-egels"], ["Octopussen", "Manteldieren"], 
+      ["Octopussen", "Kwallen"], ["Octopussen", "Manteldieren"], ["Octopussen", "Wormen"], 
+      ["Octopussen", "Oertrochozoa"], ["Octopussen", "Zee-egels"], 
       /* --- +schelp --- */
       ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], 
       /* --- VISSEN --- */
@@ -7658,14 +7659,15 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /*BLOED*/
       /* --- WATERDIEREN --- */
-      ["Octopussen", "Inktvissen"], ["Octopussen", "Nautilussen"],
+      ["Octopussen", "Inktvissen"], 
+      /* --- +schelp --- */
+      ["Octopussen", "Nautilussen"],
       /* --- VISSEN --- */
-      ["Octopussen", "Agnathen"], ["Octopussen", "Oerstraalvinnigen"],
-      ["Platvissen", "Octopussen"], ["Clownvissen", "Octopussen"], ["Doktersvissen", "Octopussen"], 
-      ["Zalm", "Octopussen"], ["Haring", "Octopussen"], ["Makreel", "Octopussen"],
-      ["Karpers", "Octopussen"], ["Forel", "Octopussen"], ["Meervallen", "Octopussen"], ["Paling", "Octopussen"], 
+      ["Octopussen", "Agnathen"], ["Octopussen", "Oerstraalvinnigen"], ["Platvissen", "Octopussen"], 
+      ["Clownvissen", "Octopussen"], ["Doktersvissen", "Octopussen"], ["Kabeljauwen", "Octopussen"], 
+      ["Karpers", "Octopussen"], ["Forel", "Octopussen"], ["Meervallen", "Octopussen"], 
       ["Zeepaardjes", "Octopussen"], ["Piranha", "Octopussen"], ["Goudvissen", "Octopussen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
@@ -7692,7 +7694,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/*SCHELP*/
       ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], ["Octopussen", "Nautilussen"],
       ["Octopussen", "Zeepokken"], ["Octopussen", "Heremietkreeften"]
     ],
