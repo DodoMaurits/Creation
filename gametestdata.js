@@ -11999,16 +11999,61 @@ const combinaties = [
       }
     ]
   },
+  },  /* ------------------ ZEEKOEIEN ------------------ */
   {
     input: [
       ["Oerplacentalia", "Zee"], ["Oerplacentalia", "Rivier"], ["Oerplacentalia", "Lagune"]
     ],
-    hint: `Sommige placentadieren kiezen voor het ruime sop.`,
+    /*hint: `Sommige placentadieren kiezen voor het ruime sop.`,*/
     tijd: 60_000_000,
     output: [
       { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
         quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
         <br><br>- Charles Fransen`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Zeekoeien", "Blauwalgen"], ["Zeekoeien", "Groene algen"], ["Zeekoeien", "Rode algen"], 
+      ["Zeekoeien", "Steenwortelalgen"], ["Zeekoeien", "Foraminiferen"], ["Zeekoeien", "Groenwieren"], 
+      ["Zeekoeien", "Roodwieren"], ["Zeekoeien", "Bruinwieren"], 
+      /* --- WATERDIEREN --- */
+      ["Zeekoeien", "Wormen"], ["Zeekoeien", "Zeeslakken"], ["Zeekoeien", "Tweekleppigen"], /* +schelp */
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeekoeien", "Zeepokken"], /* +schelp */
+      /* --- PLANTEN --- */
+      ["Zeekoeien", "Mos"], ["Zeekoeien", "Gras"], ["Zeekoeien", "Kroos"], ["Zeekoeien", "Waterriet"],
+      /* --- BLOEMEN --- */
+      ["Zeekoeien", "Waterlelies"],
+      /* --- GROENTEN --- */
+      ["Zeekoeien", "Sla"], ["Zeekoeien", "Andijvie"]
+    ],
+    output: [
+      { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
+        quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
+        <br><br>- Charles Fransen`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* SCHELP */
+      ["Zeekoeien", "Zeeslakken"], ["Zeekoeien", "Tweekleppigen"], ["Zeekoeien", "Zeepokken"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
