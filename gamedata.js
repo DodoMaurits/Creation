@@ -2957,9 +2957,10 @@ const combinaties = [
       }
     ]
   },
-//------------ ZENUWEN --------------//
+//------------ ZENUWEN 1 Tast --------------//
   {
     input: [
+      /* --- PRIL LEVEN --- */
       ["Parasieten", "Zenuwen"],
       /* --- GELEEDPOTIGEN --- */
       ["Zeepokken", "Zenuwen"]
@@ -2972,6 +2973,7 @@ const combinaties = [
       }
     ]
   },
+//------------ ZENUWEN 2 Licht --------------//
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -2991,6 +2993,7 @@ const combinaties = [
       }
     ]
   },
+//------------ ZENUWEN 3 Brein --------------//
   {
     input: 
       /* --- WATERDIEREN --- */
@@ -3011,6 +3014,7 @@ const combinaties = [
       }
     ]
   },
+//------------ ZENUWEN 4 Pijn --------------//
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -3040,82 +3044,7 @@ const combinaties = [
       }
     ]
   },
-  {
-    input:
-      /* --- WATERDIEREN --- */
-      ["Manteldieren", "Zenuwen"],
-    hint: `Wat ruik ik?`,
-    output: [
-      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: `The great events of the world take place in the brain 
-        <br><br>- Oscar Wilde`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
-      }
-    ]
-  },
-  {
-    input: [
-      /* --- KLEIN LANDLEVEN --- */
-      ["Mijten", "Zenuwen"], ["Luizen", "Zenuwen"]
-    ],
-    hint: `Wat ruik ik?`,
-    output: [
-      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: `The great events of the world take place in the brain 
-        <br><br>- Oscar Wilde`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
-      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
-        quote: `Eat bitter, taste sweet
-        <br><br>- Rick Riordan`
-      }
-    ]
-  },
-  {
-    input: [
-      /* --- GELEEDPOTIGEN --- */
-      ["Oercheliceraten", "Zenuwen"], 
-      ["Oerspinachtigen", "Zenuwen"], 
-      ["Oertienpotigen", "Zenuwen"], 
-      ["Waterspinnen", "Zenuwen"]
-    ],
-    output: [
-      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: `The great events of the world take place in the brain 
-        <br><br>- Oscar Wilde`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
-      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: `Eye contact is way more intimate than words will ever be 
-        <br><br>- Faraaz Kazi`
-      }
-    ]
-  },
+//------------ ZENUWEN 5 Geur --------------//
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
@@ -3147,10 +3076,10 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      /* --- KLEIN LANDLEVEN --- */
-      ["Duizendpoten", "Zenuwen"], ["Hooiwagens", "Zenuwen"], ["Pissebedden", "Zenuwen"]
-    ],
+    input:
+      /* --- WATERDIEREN --- */
+      ["Manteldieren", "Zenuwen"],
+    hint: `Wat ruik ik?`,
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -3164,16 +3093,13 @@ const combinaties = [
         quote: `In every person there is a sun. Just let them shine 
         <br><br>- Socrates`
       },
-      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: `Pain is inevitable. Suffering is optional
-        <br><br>- Haruki Murakami`
-      },
-      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
-        quote: `Eat bitter, taste sweet
-        <br><br>- Rick Riordan`
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
       }
     ]
   },
+//------------ ZENUWEN 6 Smaak --------------//
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
@@ -3204,6 +3130,132 @@ const combinaties = [
       { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
         quote: `Eat bitter, taste sweet
         <br><br>- Rick Riordan`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Mijten", "Zenuwen"], ["Luizen", "Zenuwen"]
+    ],
+    hint: `Wat ruik ik?`,
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordan`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Duizendpoten", "Zenuwen"], ["Hooiwagens", "Zenuwen"], ["Pissebedden", "Zenuwen"]
+    ],
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordan`
+      }
+    ]
+  },
+//------------ ZENUWEN 7 Oog --------------//
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Zeeslakken", "Zenuwen"], ["Octopussen", "Zenuwen"], 
+      /* --- VISSEN --- */
+      ["Agnathen", "Zenuwen"], ["Zeeduivels", "Zenuwen"], ["Platvissen", "Zenuwen"], ["Piranha", "Zenuwen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerinsecten", "Zenuwen"], ["Vlokreeftjes", "Zenuwen"], ["Garnalen", "Zenuwen"], ["Kreeften", "Zenuwen"], 
+      ["Krabben", "Zenuwen"], ["Heremietkreeften", "Zenuwen"], ["Zeeschorpioenen", "Zenuwen"], 
+      /* --- KLEIN LANDLEVEN ---*/
+      ["Zilvervisjes", "Zenuwen"], ["Termieten", "Zenuwen"], ["Wandelende takken", "Zenuwen"], 
+      ["Kakkerlakken", "Zenuwen"], ["Oerhymenopteren", "Zenuwen"], ["Slakken", "Zenuwen"]
+    ],
+    hint: `Wat proef ik?`,
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordan`
+      },
+      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Oercheliceraten", "Zenuwen"], 
+      ["Oerspinachtigen", "Zenuwen"], 
+      ["Oertienpotigen", "Zenuwen"], 
+      ["Waterspinnen", "Zenuwen"]
+    ],
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
       }
     ]
   },
@@ -3270,55 +3322,11 @@ const combinaties = [
       }
     ]
   },
+//------------ ZENUWEN 8 Kleur --------------//
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Zeeslakken", "Zenuwen"], 
-      /* --- VISSEN --- */
-      ["Agnathen", "Zenuwen"], ["Zeeduivels", "Zenuwen"], ["Platvissen", "Zenuwen"], ["Piranha", "Zenuwen"], 
-      /* --- GELEEDPOTIGEN --- */
-      ["Oerinsecten", "Zenuwen"], ["Vlokreeftjes", "Zenuwen"], ["Garnalen", "Zenuwen"], ["Kreeften", "Zenuwen"], 
-      ["Krabben", "Zenuwen"], ["Heremietkreeften", "Zenuwen"], ["Zeeschorpioenen", "Zenuwen"], 
-      /* --- KLEIN LANDLEVEN ---*/
-      ["Zilvervisjes", "Zenuwen"], ["Termieten", "Zenuwen"], ["Wandelende takken", "Zenuwen"], 
-      ["Kakkerlakken", "Zenuwen"], ["Oerhymenopteren", "Zenuwen"], ["Slakken", "Zenuwen"]
-    ],
-    hint: `Wat proef ik?`,
-    output: [
-      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: `The great events of the world take place in the brain 
-        <br><br>- Oscar Wilde`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
-      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: `Pain is inevitable. Suffering is optional
-        <br><br>- Haruki Murakami`
-      },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
-      },
-      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
-        quote: `Eat bitter, taste sweet
-        <br><br>- Rick Riordan`
-      },
-      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: `Eye contact is way more intimate than words will ever be 
-        <br><br>- Faraaz Kazi`
-      }
-    ]
-  },
-  {
-    input: [
-      /* --- WATERDIEREN --- */
-      ["Inktvissen", "Zenuwen"], ["Nautilussen", "Zenuwen"], ["Octopussen", "Zenuwen"],
+      ["Inktvissen", "Zenuwen"], ["Nautilussen", "Zenuwen"],
       /* --- VISSEN --- */
       ["Clownvissen", "Zenuwen"], ["Doktersvissen", "Zenuwen"], ["Papegaaivissen", "Zenuwen"], ["Karpers", "Zenuwen"], 
       ["Zeepaardjes", "Zenuwen"], ["Vliegvissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"],
@@ -3362,47 +3370,7 @@ const combinaties = [
       }
     ]
   },
-  {
-    input: [
-      /* --- VISSEN --- */
-      ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
-      ["Paling", "Zenuwen"]
-    ],
-    output: [
-      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
-        quote: `The great events of the world take place in the brain 
-        <br><br>- Oscar Wilde`
-      },
-      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
-        quote: `Too often we underestimate the power of touch 
-        <br><br>- Leo Buscaglia`
-      },
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
-      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
-        quote: `Pain is inevitable. Suffering is optional
-        <br><br>- Haruki Murakami`
-      },
-      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
-        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
-        <br><br>- Helen Keller`
-      },
-      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
-        quote: `Eat bitter, taste sweet
-        <br><br>- Rick Riordon`
-      },
-      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
-        quote: `Eye contact is way more intimate than words will ever be 
-        <br><br>- Faraaz Kazi`
-      },
-      { naam: "Geluid", icoon: "icons/Geluid.png", map: "Brein",
-        quote: `Everything in the world has a spirit which is released by its sound
-        <br><br>- Oskar Fischinger`
-      }
-    ]
-  },
+//------------ ZENUWEN 9 Geluid --------------//
   {
     input: [
       ["map:Zoogdieren", "Zenuwen"], 
@@ -3452,6 +3420,47 @@ const combinaties = [
       { naam: "Kleur", icoon: "icons/Kleur.png", map: "Brein",
         quote: `Colour in a picture is like enthusiasm in life
         <br><br>- Vincent van Gogh`
+      },
+      { naam: "Geluid", icoon: "icons/Geluid.png", map: "Brein",
+        quote: `Everything in the world has a spirit which is released by its sound
+        <br><br>- Oskar Fischinger`
+      }
+    ]
+  },
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
+      ["Paling", "Zenuwen"]
+    ],
+    output: [
+      { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
+        quote: `The great events of the world take place in the brain 
+        <br><br>- Oscar Wilde`
+      },
+      { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
+        quote: `Too often we underestimate the power of touch 
+        <br><br>- Leo Buscaglia`
+      },
+      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
+        quote: `In every person there is a sun. Just let them shine 
+        <br><br>- Socrates`
+      },
+      { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
+        quote: `Pain is inevitable. Suffering is optional
+        <br><br>- Haruki Murakami`
+      },
+      { naam: "Geur", icoon: "icons/Geur.png", map: "Brein", 
+        quote: `Smell is a potent wizard that transports you across thousands of miles and all the years you have lived 
+        <br><br>- Helen Keller`
+      },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordon`
+      },
+      { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
+        quote: `Eye contact is way more intimate than words will ever be 
+        <br><br>- Faraaz Kazi`
       },
       { naam: "Geluid", icoon: "icons/Geluid.png", map: "Brein",
         quote: `Everything in the world has a spirit which is released by its sound
