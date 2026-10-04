@@ -11783,9 +11783,9 @@ const combinaties = [
       ["Zeekoeien", "Sla"], ["Zeekoeien", "Andijvie"]
     ],
     output: [
-      { naam: "Nautilussen", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
-        quote: `You don't have to bee Greek to enjoy this one
-        <br><br>- Jeff Smith`
+      { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
+        quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
+        <br><br>- Charles Fransen`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -11800,7 +11800,7 @@ const combinaties = [
   },
   {
     input: [ /* SCHELP */
-      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Zeepokken"]
+      ["Zeekoeien", "Zeeslakken"], ["Zeekoeien", "Tweekleppigen"], ["Zeekoeien", "Zeepokken"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
