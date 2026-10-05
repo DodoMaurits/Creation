@@ -13232,6 +13232,14 @@ const combinaties = [
     input: ["Oerevenhoevigen", "Zee"],
     tijd: 15_000_000,
     output: [
+      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
+        quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
+        <br><br>- Roger Payne`
+      },
+      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
+        quote: `Gray whales undertake one of the longest annual migrations of any mammal
+        <br><br>- Bruce Mate`
+      },
       { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
         quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
         generations
@@ -13244,14 +13252,6 @@ const combinaties = [
       { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
         <br><br>- Lori Marino`
-      },
-      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
-        quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
-        <br><br>- Roger Payne`
-      },
-      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
-        quote: `Gray whales undertake one of the longest annual migrations of any mammal
-        <br><br>- Bruce Mate`
       }
     ]
   },
@@ -13262,10 +13262,6 @@ const combinaties = [
     hint: `Sommige evenhoevigen voelen zich thuis in de kustlagunes.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
-        quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
-        <br><br>- Lori Marino`
-      },
       { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
         <br><br>- Roger Payne`
@@ -13273,6 +13269,10 @@ const combinaties = [
       { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
         <br><br>- Bruce Mate`
+      },
+      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+        quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
+        <br><br>- Lori Marino`
       }
     ]
   },
