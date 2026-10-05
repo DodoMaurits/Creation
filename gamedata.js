@@ -2970,7 +2970,7 @@ const combinaties = [
         <br><br>- Aristoteles`
       }
     ]
-  },
+  }, /*- ZENUWEN -*/
   //------------ ZENUWEN 1 Tast --------------//
   {
     input: [
@@ -3204,7 +3204,7 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Zeeslakken", "Zenuwen"], ["Octopussen", "Zenuwen"], 
+      ["Zeeslakken", "Zenuwen"], ["Octopussen", "Zenuwen"], ["Reuzeninktvissen", "Zenuwen"], 
       /* --- VISSEN --- */
       ["Agnathen", "Zenuwen"], ["Zeeduivels", "Zenuwen"], ["Platvissen", "Zenuwen"], ["Piranha", "Zenuwen"], 
       /* --- GELEEDPOTIGEN --- */
@@ -3527,7 +3527,7 @@ const combinaties = [
       ["Zeeslakken", "Pijn"], 
       ["Inktvissen", "Storm"], ["Inktvissen", "Orkaan"], ["Inktvissen", "Pijn"],
       ["Octopussen", "Storm"], ["Octopussen", "Orkaan"], ["Octopussen", "Pijn"],
-      ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
+      ["Reuzeninktvissen", "Pijn"], ["Nautilussen", "Storm"], ["Nautilussen", "Orkaan"], ["Nautilussen", "Pijn"],
       ["Zeeschildpadden", "Storm"], ["Zeeschildpadden", "Orkaan"], ["Zeeschildpadden", "Pijn"],
       /* --- VISSEN --- */
       ["Agnathen", "Pijn"], ["Zeeduivels", "Pijn"], ["Platvissen", "Pijn"], ["Piranha", "Pijn"], ["Clownvissen", "Pijn"],
@@ -3571,6 +3571,7 @@ const combinaties = [
       ["Zeeslakken", "Virus"], ["Zeeslakken", "Schimmel"], ["Zeeslakken", "Parasieten"], 
       ["Inktvissen", "Virus"], ["Inktvissen", "Schimmel"], ["Inktvissen", "Parasieten"],
       ["Octopussen", "Virus"], ["Octopussen", "Schimmel"], ["Octopussen", "Parasieten"],
+      ["Reuzeninktvissen", "Virus"], ["Reuzeninktvissen", "Schimmel"], ["Reuzeninktvissen", "Parasieten"],
       ["Nautilussen", "Virus"], ["Nautilussen", "Schimmel"], ["Nautilussen", "Parasieten"],
       ["Zeeschildpadden", "Virus"], ["Zeeschildpadden", "Schimmel"], ["Zeeschildpadden", "Parasieten"],
       /* --- VISSEN --- */
@@ -3663,7 +3664,7 @@ const combinaties = [
       ["map:Reptielen", "map:Reptielen"], ["map:Zoogdieren", "map:Zoogdieren"], ["map:Vogels", "map:Vogels"],
       /* --- WATERDIEREN --- */
       ["Zeeslakken", "Zeeslakken"], ["Inktvissen", "Inktvissen"], ["Octopussen", "Octopussen"], 
-      ["Nautilussen", "Nautilussen"], ["Zeeschildpadden", "Zeeschildpadden"],
+      ["Reuzeninktvissen", "Reuzeninktvissen"], ["Nautilussen", "Nautilussen"], ["Zeeschildpadden", "Zeeschildpadden"],
       /* --- VISSEN --- */
       ["Agnathen", "Agnathen"], ["Zeeduivels", "Zeeduivels"], ["Platvissen", "Platvissen"], ["Piranha", "Piranha"], 
       ["Clownvissen", "Clownvissen"], ["Doktersvissen", "Doktersvissen"], ["Papegaaivissen", "Papegaaivissen"], 
@@ -3738,7 +3739,7 @@ const combinaties = [
       ["map:Vogels", "Sneeuw"], ["map:Vogels", "Hagel"], ["map:Vogels", "Bolbliksem"],
       ["map:Vogels", "Overstroming"],
       /* --- WATERDIEREN --- */
-      ["Inktvissen", "Licht"], ["Inktvissen", "Kleur"],
+      ["Inktvissen", "Licht"], ["Inktvissen", "Kleur"], ["Reuzeninktvissen", "Licht"],
       ["Nautilussen", "Licht"], ["Nautilussen", "Kleur"],
       ["Zeeschildpadden", "Licht"], ["Zeeschildpadden", "Kleur"], 
       ["Octopussen", "Explosie"], ["Octopussen", "Noorderlicht"], ["Octopussen", "Bliksem"],
