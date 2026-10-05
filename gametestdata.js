@@ -253,6 +253,7 @@ const mappen = [
       { naam: "Nautilussen", icoon: "icons/Nautilussen.png" },
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png" },
       { naam: "Octopussen", icoon: "icons/Octopussen.png" },
+      { naam: "Reuzeninktvissen", icoon: "icons/Reuzeninktvissen.png" },
       { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png" }, /*60*/
       { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png" }, /*34*/
       { naam: "Potvissen", icoon: "icons/Potvissen.png" }, /*34*/
