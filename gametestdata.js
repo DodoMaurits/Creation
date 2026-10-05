@@ -258,10 +258,9 @@ const mappen = [
       { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png" }, /*34*/
       { naam: "Orka", icoon: "icons/Orka.png" }, /*15*/
       { naam: "Narwallen", icoon: "icons/Narwallen.png" }, /*15*/
-      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png" } /*15*/
+      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png" }, /*15*/
       { naam: "Bultruggen", icoon: "icons/Bultruggen.png" }, /*15*/
-      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png" }, /*15*/
-
+      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png" } /*15*/
     ]
   },
     {
