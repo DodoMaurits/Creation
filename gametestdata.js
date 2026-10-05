@@ -3326,7 +3326,7 @@ const combinaties = [
       }
     ]
   },
-//------------ DOOD --------------//
+  //------------ DOOD --------------//
   {
     input: [
       ["map:Pril leven", "Radioactiviteit"], ["map:Pril leven", "IJs"], ["map:Pril leven", "Gif"],
@@ -3354,6 +3354,7 @@ const combinaties = [
       ["Oertrochozoa", "Radioactiviteit"], ["Oertrochozoa", "Gif"],
       ["Octopussen", "Radioactiviteit"], ["Octopussen", "Gif"],
       ["Inktvissen", "Radioactiviteit"], ["Inktvissen", "Gif"],
+      ["Reuzeninktvissen", "Radioactiviteit"], ["Reuzeninktvissen", "Gif"],
       /* --- KLEIN LANDLEVEN --- */ 
       ["Duizendpoten", "Radioactiviteit"], ["Duizendpoten", "Gif"],
       ["Zilvervisjes", "Radioactiviteit"], ["Zilvervisjes", "Gif"],
@@ -3411,7 +3412,7 @@ const combinaties = [
         <br><br>- George Shaw`
       }
     ]
-  },
+  }, /* ------------------ + BOT ------------------ */
   {
     input: [
       ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
@@ -3496,7 +3497,7 @@ const combinaties = [
         <br><br>- Sue Monk Kidd`
       }
     ]
-  },
+  }, /* ------------------ + SCHELP ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -3523,7 +3524,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ + HOUT ------------------ */
   {
     input: ["map:Bomen", "Radioactiviteit"],
     output: [
@@ -3541,7 +3542,7 @@ const combinaties = [
         <br><br>- Aristoteles`
       }
     ]
-  },
+  }, /* ------------------ VUUR/LAVA ------------------ */
   {
     input: [
       ["map:Pril leven", "Vuur"], ["map:Pril leven", "Lava"],
@@ -3583,6 +3584,7 @@ const combinaties = [
       ["Octopussen", "Vuur"], ["Octopussen", "Lava"],
       ["Inktvissen", "Vuur"], ["Inktvissen", "Lava"],
       ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
+      ["Reuzeninktvissen", "Vuur"], ["Reuzeninktvissen", "Lava"],
         ["Walvissen", "Lava"],
         ["Potvissen", "Lava"],
         ["Orka", "Lava"],
@@ -3640,7 +3642,7 @@ const combinaties = [
         <br><br>- Alexander Anderson`
       }
     ]
-  },
+  }, /* ------------------ VUUR/LAVA + BOT ------------------ */
   {
     input: [
       ["map:Reptielen", "Vuur"], 
@@ -3671,7 +3673,7 @@ const combinaties = [
         <br><br>- Sue Monk Kidd`
       }
     ]
-  },
+  }, /* ------------------ DETRITUS ------------------ */
   {
     input: [
       ["map:Pril leven", "Dood"],
@@ -3687,7 +3689,7 @@ const combinaties = [
       /* --- WATERDIEREN --- */
       ["Sponzen", "Dood"], ["Zeeanemonen", "Dood"], ["Zeesterren", "Dood"], ["Kwallen", "Dood"], 
       ["Manteldieren", "Dood"], ["Wormen", "Dood"], ["Beerdiertjes", "Dood"], ["Oertrochozoa", "Dood"],
-      ["Octopussen", "Dood"], ["Inktvissen", "Dood"],
+      ["Octopussen", "Dood"], ["Inktvissen", "Dood"], ["Reuzeninktvissen", "Dood"],
       /* --- VISSEN --- */
       ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Haaien", "Dood"], ["Spookhaaien", "Dood"], ["Manta", "Dood"],
       /* --- BREIN --- */
@@ -3710,7 +3712,7 @@ const combinaties = [
         <br><br>- George Shaw`
       }
     ]
-  },
+  }, /* ------------------ DETRITUS + BOT ------------------ */
   {
     input: [
       ["map:Geleedpotigen", "Dood"], ["map:Reptielen", "Dood"], 
@@ -3740,7 +3742,7 @@ const combinaties = [
         <br><br>- Sue Monk Kidd`
       }
     ]
-  },
+  }, /* ------------------ DETRITUS + SCHELP ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -3758,7 +3760,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ DETRITUS + HOUT ------------------ */
   {
     input: ["map:Bomen", "Dood"],
     output: [
