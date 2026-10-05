@@ -3204,7 +3204,8 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Zeeslakken", "Zenuwen"], ["Octopussen", "Zenuwen"], ["Reuzeninktvissen", "Zenuwen"], 
+      ["Zeeslakken", "Zenuwen"], ["Inktvissen", "Zenuwen"], ["Nautilussen", "Zenuwen"],
+      ["Octopussen", "Zenuwen"], ["Reuzeninktvissen", "Zenuwen"], 
       /* --- VISSEN --- */
       ["Agnathen", "Zenuwen"], ["Zeeduivels", "Zenuwen"], ["Platvissen", "Zenuwen"], ["Piranha", "Zenuwen"], 
       /* --- GELEEDPOTIGEN --- */
@@ -3339,8 +3340,6 @@ const combinaties = [
   //------------ ZENUWEN 8 Kleur --------------//
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Inktvissen", "Zenuwen"], ["Nautilussen", "Zenuwen"],
       /* --- VISSEN --- */
       ["Clownvissen", "Zenuwen"], ["Doktersvissen", "Zenuwen"], ["Papegaaivissen", "Zenuwen"], ["Karpers", "Zenuwen"], 
       ["Zeepaardjes", "Zenuwen"], ["Vliegvissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"],
@@ -3487,8 +3486,8 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Walvissen", "Zenuwen"], ["Potvissen", "Zenuwen"], ["Orka", "Zenuwen"], ["Narwallen", "Zenuwen"], 
-      ["Dolfijnen", "Zenuwen"]
+      ["Potvissen", "Zenuwen"], ["Orka", "Zenuwen"], ["Narwallen", "Zenuwen"], ["Dolfijnen", "Zenuwen"], 
+      ["Blauwe vinvissen", "Zenuwen"], ["Grijze walvissen", "Zenuwen"], ["Bultruggen", "Zenuwen"]
     ],
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
@@ -3499,17 +3498,21 @@ const combinaties = [
         quote: `Too often we underestimate the power of touch 
         <br><br>- Leo Buscaglia`
       },
-      { naam: "Licht", icoon: "icons/Licht.png", map: "Brein",
-        quote: `In every person there is a sun. Just let them shine 
-        <br><br>- Socrates`
-      },
       { naam: "Pijn", icoon: "icons/Pijn.png", map: "Brein",
         quote: `Pain is inevitable. Suffering is optional
         <br><br>- Haruki Murakami`
       },
+      { naam: "Smaak", icoon: "icons/Smaak.png", map: "Brein",
+        quote: `Eat bitter, taste sweet
+        <br><br>- Rick Riordon`
+      },
       { naam: "Oog", icoon: "icons/Oog.png", map: "Biologie", 
         quote: `Eye contact is way more intimate than words will ever be 
         <br><br>- Faraaz Kazi`
+      },
+      { naam: "Kleur", icoon: "icons/Kleur.png", map: "Brein",
+        quote: `Colour in a picture is like enthusiasm in life
+        <br><br>- Vincent van Gogh`
       },
       { naam: "Geluid", icoon: "icons/Geluid.png", map: "Brein",
         quote: `Everything in the world has a spirit which is released by its sound
