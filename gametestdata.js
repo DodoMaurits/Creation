@@ -254,12 +254,14 @@ const mappen = [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png" },
       { naam: "Octopussen", icoon: "icons/Octopussen.png" },
       { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png" }, /*60*/
-      { naam: "Walvissen", icoon: "icons/Walvissen.png" }, /*15*/
-      { naam: "Vinvissen", icoon: "icons/Vinvissen.png" }, /*15*/
-      { naam: "Potvissen", icoon: "icons/Potvissen.png" }, /*15*/
-      { naam: "Orka", icoon: "icons/Orka.png" }, /*5*/
-      { naam: "Narwallen", icoon: "icons/Narwallen.png" }, /*5*/
-      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png" } /*5*/
+      { naam: "Potvissen", icoon: "icons/Potvissen.png" }, /*34*/
+      { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png" }, /*34*/
+      { naam: "Orka", icoon: "icons/Orka.png" }, /*15*/
+      { naam: "Narwallen", icoon: "icons/Narwallen.png" }, /*15*/
+      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png" } /*15*/
+      { naam: "Bultruggen", icoon: "icons/Bultruggen.png" }, /*15*/
+      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png" }, /*15*/
+
     ]
   },
     {
