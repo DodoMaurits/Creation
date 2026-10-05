@@ -254,8 +254,8 @@ const mappen = [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png" },
       { naam: "Octopussen", icoon: "icons/Octopussen.png" },
       { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png" }, /*60*/
-      { naam: "Potvissen", icoon: "icons/Potvissen.png" }, /*34*/
       { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png" }, /*34*/
+      { naam: "Potvissen", icoon: "icons/Potvissen.png" }, /*34*/
       { naam: "Bultruggen", icoon: "icons/Bultruggen.png" }, /*15*/
       { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png" }, /*15*/
       { naam: "Orka", icoon: "icons/Orka.png" }, /*15*/
@@ -13529,14 +13529,14 @@ const combinaties = [
     /*hint: `Sommige evenhoevigen voelen zich gek genoeg toch thuis in de oceanen.`,*/
     tijd: 34_000_000,
     output: [
-      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
-        quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
-        <br><br>- Peter Tyack`
-      },
-      { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+          { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
+      },
+      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
+        <br><br>- Peter Tyack`
       }
     ]
   },
