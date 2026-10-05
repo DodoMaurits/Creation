@@ -2618,12 +2618,13 @@ const combinaties = [
       /* --- WATERDIEREN --- */
       ["Zee-egels", "Radioactiviteit"], ["Zee-egels", "Gif"], 
       ["Koraal", "Radioactiviteit"], ["Koraal", "Gif"], 
-      ["Walvissen", "Radioactiviteit"], ["Walvissen", "Gif"], 
       ["Potvissen", "Radioactiviteit"], ["Potvissen", "Gif"], 
       ["Orka", "Radioactiviteit"], ["Orka", "Gif"], 
       ["Narwallen", "Radioactiviteit"], ["Narwallen", "Gif"], 
       ["Dolfijnen", "Radioactiviteit"], ["Dolfijnen", "Gif"], 
-      ["Vinvissen", "Radioactiviteit"], ["Vinvissen", "Gif"], 
+      ["Blauwe vinvissen", "Radioactiviteit"], ["Blauwe vinvissen", "Gif"], 
+      ["Grijze walvissen", "Radioactiviteit"], ["Grijze walvissen", "Gif"], 
+      ["Bultruggen", "Radioactiviteit"], ["Bultruggen", "Gif"], 
       ["Zeekoeien", "Radioactiviteit"], ["Zeekoeien", "Gif"], 
       ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"],
       /* --- VISSEN --- */
@@ -2782,12 +2783,13 @@ const combinaties = [
       ["Inktvissen", "Vuur"], ["Inktvissen", "Lava"],
       ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
       ["Reuzeninktvissen", "Vuur"], ["Reuzeninktvissen", "Lava"],
-        ["Walvissen", "Lava"],
         ["Potvissen", "Lava"],
         ["Orka", "Lava"],
         ["Narwallen", "Lava"],
         ["Dolfijnen", "Lava"],
-        ["Vinvissen", "Lava"],
+        ["Blauwe vinvissen", "Lava"],
+        ["Grijze walvissen", "Lava"],
+        ["Bultruggen", "Lava"],
         ["Zeekoeien", "Lava"],
         ["Zeeschildpadden", "Lava"],
       /* --- BREIN --- */
@@ -2839,7 +2841,7 @@ const combinaties = [
         <br><br>- Alexander Anderson`
       }
     ]
-  }, /* ------------------ VUUR/LAVA + BOT ------------------ */
+  }, /* ------------------ VUUR + BOT ------------------ */
   {
     input: [
       ["map:Reptielen", "Vuur"], 
@@ -2847,9 +2849,8 @@ const combinaties = [
       ["map:Vogels", "Vuur"],
       /* --- WATERDIEREN --- */
       ["Zee-egels", "Vuur"], ["Koraal", "Vuur"], 
-      ["Walvissen", "Vuur"], ["Potvissen", "Vuur"], 
-      ["Orka", "Vuur"], ["Narwallen", "Vuur"], 
-      ["Dolfijnen", "Vuur"], ["Vinvissen", "Vuur"], 
+      ["Potvissen", "Vuur"], ["Orka", "Vuur"], ["Narwallen", "Vuur"], ["Dolfijnen", "Vuur"], 
+      ["Blauwe vinvissen", "Vuur"], ["Grijze walvissen", "Vuur"], ["Bultruggen", "Vuur"], 
       ["Zeekoeien", "Vuur"], ["Zeeschildpadden", "Vuur"],
       /* --- GELEEDPOTIGEN --- */
       ["Trilobieten", "Vuur"], ["Zeeschorpioenen", "Vuur"], ["Zwaardstaarten", "Vuur"], ["Zeepokken", "Vuur"],
@@ -2915,8 +2916,8 @@ const combinaties = [
       ["map:Geleedpotigen", "Dood"], ["map:Reptielen", "Dood"], 
       ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"],
       /* --- WATERDIEREN --- */
-      ["Zee-egels", "Dood"], ["Koraal", "Dood"], ["Walvissen", "Dood"], ["Potvissen", "Dood"],
-      ["Orka", "Dood"], ["Narwallen", "Dood"], ["Dolfijnen", "Dood"], ["Vinvissen", "Dood"],
+      ["Zee-egels", "Dood"], ["Koraal", "Dood"], ["Potvissen", "Dood"], ["Orka", "Dood"], ["Narwallen", "Dood"], 
+      ["Dolfijnen", "Dood"], ["Blauwe vinvissen", "Dood"],  ["Grijze walvissen", "Dood"], ["Bultruggen", "Dood"], 
       ["Zeekoeien", "Dood"], ["Zeeschildpadden", "Dood"],
       /* --- VISSEN --- */
       ["Zeeduivels", "Dood"], ["Platvissen", "Dood"], ["Piranha", "Dood"], ["Clownvissen", "Dood"],
