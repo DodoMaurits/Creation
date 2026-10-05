@@ -9016,6 +9016,22 @@ const combinaties = [
   },
   {
     input: [
+      ["Inktvissen", "Druk"], ["Inktvissen", "Oceaan"]
+    ],
+    /*hint: `In de diepe diepe oceaan nemen inktvissen immense proporties aan.`,*/
+    tijd: 50_000_000,
+    output: [
+      { naam: "Reuzeninktvissen", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+        quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
+        <br><br>- Edith Widder`
+      }
+    ],
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
       ["Oerstraalvinnigen", "IJs"], ["Oerstraalvinnigen", "Poolgebied"]
     ],
     hint: `Sommige straalvinnigen voelen zich thuis in de arctische wateren.`,
