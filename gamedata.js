@@ -13281,14 +13281,14 @@ const combinaties = [
     hint: `Sommige evenhoevigen voelen zich gek genoeg toch thuis in de oceanen.`,
     tijd: 34_000_000,
     output: [
-      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
-        quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
-        <br><br>- Peter Tyack`
-      },
       { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
+      },
+      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
+        <br><br>- Peter Tyack`
       }
     ]
   },
