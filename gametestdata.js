@@ -4673,6 +4673,8 @@ const combinaties = [
       ["Zeesterren", "Oercnidaria"], ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Koraal"], 
       ["Zeesterren", "Wormen"], ["Zeesterren", "Oertrochozoa"], 
       ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"], ["Zeesterren", "Garnalen"]
+      /* ------------------ = SCHELP ------------------ */
+      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
     ],
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
@@ -4691,15 +4693,6 @@ const combinaties = [
       ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
     ],
     output: [
-      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
-        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
@@ -5398,26 +5391,6 @@ const combinaties = [
       ["Nautilussen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
-    ],
-    output: [
-      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
-        quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
-        <br><br>- Rachel Carson`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
