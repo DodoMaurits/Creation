@@ -15073,6 +15073,37 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.` } }
+  }, /* ------------------ GOUDVISSEN ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Goudvissen", "Detritus"],
+      /* --- WATERDIEREN --- */
+      ["Goudvissen", "Wormen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Goudvissen", "Waterspinnen"], ["Goudvissen", "Aasgarnalen"], ["Goudvissen", "Vlokreeftjes"],
+      ["Goudvissen", "Garnalen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Goudvissen", "Pissebedden"], ["Goudvissen", "Slakken"],
+      /* --- PLANTEN --- */
+      ["Goudvissen", "Mos"], ["Goudvissen", "Kroos"], ["Goudvissen", "Waterriet"], ["Goudvissen", "Waterlelies"], 
+      ["Goudvissen", "Sla"], ["Goudvissen", "Andijvie"], ["Goudvissen", "Spinazie"]
+    ],
+    output: [
+      { naam: "Goudvissen", icoon: "icons/Goudvissen.png", map: "Vissen", 
+        quote: `Goldfish possess a surprising capacity for memory and recognition
+        <br><br>- Sy Montgomery`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Mens", "Krokussen"],
