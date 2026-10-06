@@ -2239,7 +2239,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  }, /* ------------------ GIST ------------------ */
+  }, /* ------------------ KORAAL ------------------ */
   {
     input: [
       ["Sponzen", "Kalk"], ["Sponzen", "Bot"], ["Sponzen", "Evolutie"],
@@ -2336,7 +2336,7 @@ const combinaties = [
         <br><br>- Winston Churchill`
       }
     ]
-  },
+  }, /* ------------------ OERCNIDARIA ------------------ */
   {
     input: [
       ["Oercnidaria", "Bacteriën"], ["Oercnidaria", "Detritus"], ["Oercnidaria", "Blauwalgen"], ["Oercnidaria", "Leca"], 
@@ -2354,7 +2354,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ OERBILATERIA ------------------ */
   {
     input: [
       ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Detritus"], ["Oerbilateria", "Blauwalgen"], ["Oerbilateria", "Leca"],
@@ -2458,7 +2458,7 @@ const combinaties = [
         <br><br>- Bernard Beckett`
       }
     ]
-  },
+  }, /* ------------------ KWALLEN ------------------ */
   {
     input: [
       ["Kwallen", "Bacteriën"], ["Kwallen", "Detritus"], ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], 
@@ -2485,7 +2485,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ ZEEANEMONEN ------------------ */
   {
     input: [
       ["Zeeanemonen", "Bacteriën"], ["Zeeanemonen", "Detritus"], ["Zeeanemonen", "Blauwalgen"], ["Zeeanemonen", "Leca"], 
@@ -2987,8 +2987,7 @@ const combinaties = [
         <br><br>- Leo Buscaglia`
       }
     ]
-  },
-  //------------ ZENUWEN 2 Licht --------------//
+  }, //------------ ZENUWEN 2 Licht --------------//
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -3007,8 +3006,7 @@ const combinaties = [
         <br><br>- Socrates`
       }
     ]
-  },
-  //------------ ZENUWEN 3 Brein --------------//
+  }, //------------ ZENUWEN 3 Brein --------------//
   {
     input: 
       /* --- WATERDIEREN --- */
@@ -3028,8 +3026,7 @@ const combinaties = [
         <br><br>- Socrates`
       }
     ]
-  },
-  //------------ ZENUWEN 4 Pijn --------------//
+  }, //------------ ZENUWEN 4 Pijn --------------//
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -3058,14 +3055,11 @@ const combinaties = [
         <br><br>- Haruki Murakami`
       }
     ]
-  },
-  //------------ ZENUWEN 5 Geur --------------//
+  }, //------------ ZENUWEN 5 Geur --------------//
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
-      ["Oerkreeftjes", "Zenuwen"],
-      ["Krill", "Zenuwen"],
-      ["Aasgarnalen", "Zenuwen"],
+      ["Oerkreeftjes", "Zenuwen"], ["Krill", "Zenuwen"], ["Aasgarnalen", "Zenuwen"]
     ],
     output: [
       { naam: "Brein", icoon: "icons/Brein.png", map: "Brein", 
@@ -3113,8 +3107,7 @@ const combinaties = [
         <br><br>- Helen Keller`
       }
     ]
-  },
-  //------------ ZENUWEN 6 Smaak --------------//
+  }, //------------ ZENUWEN 6 Smaak --------------//
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
@@ -3200,8 +3193,7 @@ const combinaties = [
         <br><br>- Rick Riordan`
       }
     ]
-  },
-  //------------ ZENUWEN 7 Oog --------------//
+  }, //------------ ZENUWEN 7 Oog --------------//
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -3337,8 +3329,7 @@ const combinaties = [
         <br><br>- Faraaz Kazi`
       }
     ]
-  },
-  //------------ ZENUWEN 8 Kleur --------------//
+  }, //------------ ZENUWEN 8 Kleur --------------//
   {
     input: [
       /* --- VISSEN --- */
@@ -3816,7 +3807,7 @@ const combinaties = [
         vervolgens beslissingen door te geven aan gespecialiseerde organen.</span>`,
       }
     }
-  },
+  }, /* ------------------ WORMEN ------------------ */
   {
     input: [
       ["Wormen", "Bacteriën"], ["Wormen", "Detritus"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], 
@@ -3836,7 +3827,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ OERTROCHOZOA ------------------ */
   {
     input: [
       ["Oertrochozoa", "Bacteriën"], ["Oertrochozoa", "Detritus"], ["Oertrochozoa", "Blauwalgen"], 
@@ -3936,7 +3927,7 @@ const combinaties = [
         <br><br>Eerst nodig: wormen.`
       }
     }
-  },
+  }, /* ------------------ LANCETVISJES ------------------ */
   {
     input: [
       ["Lancetvisjes", "Bacteriën"], ["Lancetvisjes", "Detritus"], ["Lancetvisjes", "Blauwalgen"], 
@@ -3958,7 +3949,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ AGNATHEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -4000,7 +3991,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ OERGELEEDPOTIGEN ------------------ */
   {
     input: [
       ["Oergeleedpotigen", "Detritus"], 
@@ -4031,7 +4022,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ MANTELDIEREN ------------------ */
   {
     input: [
       ["Manteldieren", "Bacteriën"], ["Manteldieren", "Detritus"], ["Manteldieren", "Blauwalgen"], 
@@ -4054,7 +4045,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ BEERDIERTJES ------------------ */
   {
     input: [
       ["Beerdiertjes", "Bacteriën"], ["Beerdiertjes", "Detritus"], ["Beerdiertjes", "Blauwalgen"], 
@@ -4076,7 +4067,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ ZEE-EGELS ------------------ */
   {
     input: [
       ["Zee-egels", "Bacteriën"], ["Zee-egels", "Detritus"], ["Zee-egels", "Blauwalgen"], ["Zee-egels", "Leca"],
@@ -4139,8 +4130,7 @@ const combinaties = [
         <br><br>Eerst nodig: wormen.`
       }
     }
-  },
-  /* ------------------ INKTVISSEN ------------------ */
+  }, /* ------------------ INKTVISSEN ------------------ */
   {
     input: ["Oertrochozoa", "Evolutie"],
     hint: `Van trochozoa is het een kleine stap naar de weekdieren.`, 
@@ -4184,9 +4174,9 @@ const combinaties = [
   {
     input: [ /* BLOED */
       /* --- VISSEN --- */
-      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"], ["Platvissen", "Inktvissen"], 
-      ["Clownvissen", "Inktvissen"], ["Doktersvissen", "Inktvissen"], ["Zalm", "Inktvissen"], ["Haring", "Inktvissen"],
-      ["Makreel", "Inktvissen"], ["Paling", "Inktvissen"], ["Zeepaardjes", "Inktvissen"]
+      ["Inktvissen", "Agnathen"], ["Inktvissen", "Oerstraalvinnigen"], ["Inktvissen", "Platvissen"], 
+      ["Inktvissen", "Clownvissen"], ["Inktvissen", "Doktersvissen"], ["Inktvissen", "Zalm"], ["Inktvissen", "Haring"],
+      ["Inktvissen", "Makreel"], ["Inktvissen", "Paling"], ["Inktvissen", "Zeepaardjes"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -4214,7 +4204,7 @@ const combinaties = [
   },
   {
     input: [ /* SCHELP */
-      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Heremietkreeften"], ["Nautilussen", "Zeepokken"]
+      ["Inktvissen", "Zeeslakken"], ["Nautilussen", "Zeepokken"], ["Inktvissen", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -4237,7 +4227,7 @@ const combinaties = [
         <br><br>- Rick Bragg`
       }
     ]
-  },
+  }, /* ------------------ ZEESLAKKEN ------------------ */
   {
     input: [
       ["Zeeslakken", "Bacteriën"], ["Zeeslakken", "Blauwalgen"], ["Zeeslakken", "Leca"], 
@@ -4261,13 +4251,13 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ TWEEKLEPPIGEN ------------------ */
   {
     input: [
       ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Bacteriën"], ["Tweekleppigen", "Blauwalgen"],
-      ["Tweekleppigen", "Leca"], 
-      ["Tweekleppigen", "Archaeplastiden"], ["Tweekleppigen", "Groene algen"], ["Tweekleppigen", "Rode algen"],
-      ["Tweekleppigen", "Amoeben"], ["Tweekleppigen", "Foraminiferen"], ["Tweekleppigen", "Stralendiertjes"]
+      ["Tweekleppigen", "Leca"], ["Tweekleppigen", "Archaeplastiden"], ["Tweekleppigen", "Groene algen"], 
+      ["Tweekleppigen", "Rode algen"], ["Tweekleppigen", "Amoeben"], ["Tweekleppigen", "Foraminiferen"], 
+      ["Tweekleppigen", "Stralendiertjes"]
     ],
     output: [
       { naam: "Tweekleppigen", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
@@ -4322,7 +4312,7 @@ const combinaties = [
         <br><br>- Martin Rees`
       }
     ]
-  },
+  }, /* ------------------ TRILOBIETEN ------------------ */
   {
     input: [
       ["Trilobieten", "Detritus"], 
@@ -4375,7 +4365,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ OERCHELICERATEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -4418,7 +4408,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ DUIZENDPOTEN ------------------ */
   {
     input: [
       ["Duizendpoten", "Wormen"], ["Duizendpoten", "Oertrochozoa"], ["Duizendpoten", "Oergeleedpotigen"], 
@@ -4446,7 +4436,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ OERKREEFTJES ------------------ */
   {
     input: [
       ["Oerkreeftjes", "Detritus"], 
@@ -4484,8 +4474,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Tweekleppigen"],
-      ["Oerkreeftjes", "Zeepokken"]
+      ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Tweekleppigen"], ["Oerkreeftjes", "Zeepokken"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -4493,7 +4482,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ OERINSECTEN ------------------ */
   {
     input: [
       ["Oerinsecten", "Detritus"], 
@@ -4537,8 +4526,7 @@ const combinaties = [
         <br><br>- Einar Skjaeraasen`
       }
     ]
-  },
-  /* ------------------ NAUTILUSSEN ------------------ */
+  }, /* ------------------ NAUTILUSSEN ------------------ */
   {
     input: ["Inktvissen", "Schelp"],
     hint: `Er zijn nog weekdieren zonder schelp...`,
@@ -4657,7 +4645,7 @@ const combinaties = [
         <br><br>- Diane McCauley`
       }
     ]
-  },
+  }, /* ------------------ ZEESCHORPIOENEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -4740,7 +4728,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ OERSPINACHTIGEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -4773,7 +4761,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ ZWAARDSTAARTEN ------------------ */
   {
     input: [
       ["Zwaardstaarten", "Detritus"], 
@@ -4824,7 +4812,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ KRILL ------------------ */
   {
     input: [
       ["Krill", "Detritus"], 
@@ -4851,7 +4839,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ AASGARNALEN ------------------ */
   {
     input: [
       ["Aasgarnalen", "Detritus"], 
@@ -5017,7 +5005,7 @@ const combinaties = [
         <br><br>Eerst nodig: oervaatplanten.`
       }
     }
-  },
+  }, /* ------------------ OERSTRAALVINNIGEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -5076,7 +5064,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ COELACANTHEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -5105,7 +5093,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ TIKTAALIK ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -5197,7 +5185,7 @@ const combinaties = [
         <br><br>Eerst nodig: oervaatplanten.`
       }
     }
-  },
+  }, /* ------------------ SLAKKEN ------------------ */
   {
     input: [
       ["Slakken", "Bacteriën"], ["Slakken", "Detritus"], ["Slakken", "Blauwalgen"], ["Slakken", "Schimmel"],
@@ -5242,7 +5230,7 @@ const combinaties = [
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
         gezet kan worden.
         <br><br>Eerst nodig: oervaatplanten.` } }
-  },
+  }, /* ------------------ HAAIEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -5322,7 +5310,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ SPOOKHAAIEN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -5385,7 +5373,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Oervaatplanten", titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
         gezet kan worden <br><br>Eerst nodig: oervaatplanten.` } }
-  },
+  }, /* ------------------ ZEEPISSEBEDDEN ------------------ */
   {
     input: [
       ["Zeepissebedden", "Detritus"], 
@@ -5414,7 +5402,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ ZEEPOKKEN ------------------ */
   {
     input: [
       ["Zeepokken", "Detritus"],
@@ -5439,7 +5427,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  },
+  }, /* ------------------ VLOKREEFTJES ------------------ */
   {
     input: [
       ["Vlokreeftjes", "Detritus"], 
@@ -5469,7 +5457,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ OERTIENPOTIGEN ------------------ */
   {
     input: [
       ["Oertienpotigen", "Detritus"],
@@ -5556,7 +5544,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Oervaatplanten", titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
         gezet kan worden <br><br>Eerst nodig: oervaatplanten.` } }
-  },
+  }, /* ------------------ SCHORPIOENEN ------------------ */
   {
     input: [
       ["Schorpioenen", "Oertrochozoa"], ["Schorpioenen", "Wormen"], ["Schorpioenen", "Oergeleedpotigen"], 
@@ -5591,7 +5579,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ HOOIWAGENS ------------------ */
   {
     input: [
       ["Hooiwagens", "Bacteriën"], ["Hooiwagens", "Detritus"], ["Hooiwagens", "Blauwalgen"], ["Hooiwagens", "Schimmel"], 
@@ -5614,7 +5602,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ SPINNEN ------------------ */
   {
     input: [
       ["Spinnen", "Oergeleedpotigen"], ["Spinnen", "Oercheliceraten"], ["Spinnen", "Duizendpoten"], 
@@ -5645,7 +5633,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ MIJTEN ------------------ */
   {
     input: [
       ["Mijten", "Bacteriën"], ["Mijten", "Detritus"], ["Mijten", "Blauwalgen"], ["Mijten", "Schimmel"], ["Mijten", "Gist"], 
@@ -5667,7 +5655,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ TEKEN ------------------ */
   {
     input: [
       ["Teken", "Bacteriën"], ["Teken", "Detritus"], ["Teken", "Blauwalgen"], ["Teken", "Schimmel"], ["Teken", "Gist"], 
@@ -5722,7 +5710,7 @@ const combinaties = [
         <br><br>- Diva Abele`
       }
     ]
-  },
+  }, /* ------------------ REUZENPISSEBEDDEN ------------------ */
   {
     input: [
       ["Reuzenpissebedden", "Detritus"],
@@ -5782,7 +5770,7 @@ const combinaties = [
         <br><br>- Fennel Hudson`
       },
     ]
-  },
+  }, /* ------------------ PISSEBEDDEN ------------------ */
   {
     input: [
       ["Pissebedden", "Bacteriën"], ["Pissebedden", "Detritus"], ["Pissebedden", "Blauwalgen"], ["Pissebedden", "Schimmel"],
@@ -5833,7 +5821,7 @@ const combinaties = [
         <br><br>- Martin West`
       }
     ]
-  },
+  }, /* ------------------ GARNALEN ------------------ */
   {
     input: [
       ["Garnalen", "Detritus"],
@@ -5865,7 +5853,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ KREEFTEN ------------------ */
   {
     input: [
       ["Kreeften", "Detritus"],
@@ -5916,7 +5904,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ KRABBEN ------------------ */
   {
     input: [      
       ["Krabben", "Detritus"], 
@@ -5966,7 +5954,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ HEREMIETKREEFTEN ------------------ */
   {
     input: [
       ["Heremietkreeften", "Detritus"], 
@@ -6030,7 +6018,7 @@ const combinaties = [
         <br><br>- Rainer Foelix`
       }
     ]
-  },
+  }, /* ------------------ WATERSPINNEN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -6213,7 +6201,7 @@ const combinaties = [
         <br><br>Eerst nodig: eerste zaadplanten.`
       }
     }
-  },
+  }, /* ------------------ OERPOLYNEOPTEREN ------------------ */
   {
     input: [
       ["Oerpolyneopteren", "Detritus"], ["Oerpolyneopteren", "Schimmel"], ["Oerpolyneopteren", "Gist"], 
@@ -6246,7 +6234,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ OERHYMENOPTEREN ------------------ */
   {
     input: [
       ["Oerhymenopteren", "Detritus"], ["Oerhymenopteren", "Schimmel"], ["Oerhymenopteren", "Gist"], 
@@ -6273,12 +6261,34 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ LUIZEN ------------------ */
   {
     input: [
       ["Luizen", "Detritus"], ["Luizen", "Schimmel"], ["Luizen", "Gist"], ["Luizen", "Mos"], ["Luizen", "Oervaatplanten"], 
       ["Luizen", "Korstmos"], ["Luizen", "Truffels"], ["Luizen", "Paddenstoelen"], ["Luizen", "Blad"], 
       ["Luizen", "Oerzaadplanten"], ["Luizen", "Coniferen"], ["Luizen", "Palmvarens"], ["Luizen", "Ginkgo"]
+    ],
+    output: [
+      { naam: "Luizen", icoon: "icons/Luizen.png", map: "Klein landleven", 
+        quote: `The louse, a wingless parasite, has shaped history far more than its size would suggest
+        <br><br>- Hans Zinsser`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ KEVERS ------------------ */
+  {
+    input: [
+      ["Kevers", "Detritus"], ["Kevers", "Schimmel"], ["Kevers", "Gist"], ["Luizen", "Mos"], ["Kevers", "Oervaatplanten"], 
+      ["Kevers", "Korstmos"], ["Kevers", "Truffels"], ["Kevers", "Paddenstoelen"], ["Kevers", "Blad"], 
+      ["Kevers", "Oerzaadplanten"], ["Kevers", "Coniferen"], ["Kevers", "Palmvarens"], ["Kevers", "Ginkgo"]
     ],
     output: [
       { naam: "Kevers", icoon: "icons/Kevers.png", map: "Klein landleven", 
@@ -6295,7 +6305,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ MUGGEN ------------------ */
   {
     input: [
       ["Muggen", "Bacteriën"], ["Muggen", "Detritus"], ["Muggen", "Blauwalgen"], ["Muggen", "Schimmel"],
@@ -6318,7 +6328,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ VLIEGEN ------------------ */
   {
     input: [
       ["Vliegen", "Detritus"], ["Vliegen", "Schimmel"], ["Vliegen", "Mos"], ["Vliegen", "Oervaatplanten"], 
@@ -6341,7 +6351,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ VLINDERS ------------------ */
   {
     input: [
       ["Vlinders", "Mos"], ["Vlinders", "Oervaatplanten"], ["Vlinders", "Blad"], ["Vlinders", "Varens"], 
@@ -6385,7 +6395,7 @@ const combinaties = [
         <br><br>Eerst nodig: eerste zaadplanten.`
       }
     }
-  },
+  }, /* ------------------ OERTETRAPODEN ------------------ */
   {
     input: [
       ["Oertetrapoden", "Oertrochozoa"], ["Oertetrapoden", "Wormen"], ["Oertetrapoden", "Lancetvisjes"], 
@@ -6507,7 +6517,7 @@ const combinaties = [
         <br><br>Eerst nodig: eerste zaadplanten.`
       }
     }
-  },
+  }, /* ------------------ SALAMANDERS ------------------ */
   {
     input: [
       ["Salamanders", "Wormen"], ["Salamanders", "Oergeleedpotigen"], ["Salamanders", "Oercheliceraten"],
@@ -6534,7 +6544,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ KIKKERS ------------------ */
   {
     input: [
       ["Kikkers", "Wormen"], ["Kikkers", "Oergeleedpotigen"], ["Kikkers", "Oercheliceraten"],
@@ -6560,7 +6570,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ PADDEN ------------------ */
   {
     input: [
       ["Padden", "Wormen"], ["Padden", "Oergeleedpotigen"], ["Padden", "Oercheliceraten"],
@@ -6627,7 +6637,7 @@ const combinaties = [
         <br><br>-Alfred Romer`
       }
     ]
-  },
+  }, /* ------------------ OERSYNAPSIDEN ------------------ */
   {
     input: [
       ["Oersynapsiden", "Wormen"], ["Oersynapsiden", "Oergeleedpotigen"], ["Oersynapsiden", "Oercheliceraten"],
@@ -6681,7 +6691,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]  
-  },
+  }, /* ------------------ OERDIAPSIDEN ------------------ */
   {
     input: [
       ["Oerdiapsiden", "Wormen"], ["Oerdiapsiden", "Oergeleedpotigen"], ["Oerdiapsiden", "Oercheliceraten"],
@@ -6735,7 +6745,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]  
-  },
+  }, /* ------------------ OERANAPSIDEN ------------------ */
   {
     input: [
       ["Oeranapsiden", "Wormen"], ["Oeranapsiden", "Oergeleedpotigen"], ["Oeranapsiden", "Oercheliceraten"],
@@ -6859,7 +6869,7 @@ const combinaties = [
         roofdieren.</span>`,
       }
     }
-  },
+  }, /* ------------------ OERCYNODONTEN ------------------ */
   {
     input: [
       ["Oercynodonten", "Wormen"], ["Oercynodonten", "Oergeleedpotigen"], ["Oercynodonten", "Oercheliceraten"], 
@@ -6867,7 +6877,8 @@ const combinaties = [
       ["Oercynodonten", "Pissebedden"], ["Oercynodonten", "Zilvervisjes"], ["Oercynodonten", "Oerpolyneopteren"], 
       ["Oercynodonten", "Oerhymenopteren"], ["Oercynodonten", "Luizen"], ["Oercynodonten", "Kevers"], 
       ["Oercynodonten", "Muggen"], ["Oercynodonten", "Vliegen"], ["Oercynodonten", "Krekels"], 
-      ["Oercynodonten", "Sprinkhanen"], ["Oercynodonten", "Kakkerlakken"], ["Oercynodonten", "Termieten"]
+      ["Oercynodonten", "Sprinkhanen"], ["Oercynodonten", "Kakkerlakken"], ["Oercynodonten", "Termieten"],
+      ["Oercynodonten", "Slakken"]
     ],
     output: [
       { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
@@ -6889,20 +6900,6 @@ const combinaties = [
   {
     input: ["Oercynodonten", "Slakken"],
     output: [
-      { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
-        quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
-        making them the most intimate companions of humans
-        <br><br>- Richard Dawkins`
-      },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
@@ -6944,7 +6941,7 @@ const combinaties = [
         <br><br>Eerst nodig: eerste zoogdieren.`
       }
     }
-  },
+  }, /* ------------------ KREKELS ------------------ */
   {
     input: [
       ["Krekels", "Detritus"], ["Krekels", "Mos"], ["Krekels", "Oervaatplanten"], ["Krekels", "Blad"], 
@@ -6967,7 +6964,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ SPRINKHANEN ------------------ */
   {
     input: [
       ["Sprinkhanen", "Mos"], ["Sprinkhanen", "Oervaatplanten"], ["Sprinkhanen", "Blad"], ["Sprinkhanen", "Zilvervisjes"], 
@@ -6991,7 +6988,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ WANDELENDE TAKKEN ------------------ */
   {
     input: [
       ["Wandelende takken", "Mos"], ["Wandelende takken", "Oervaatplanten"], ["Wandelende takken", "Blad"],
@@ -7013,7 +7010,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ KAKKERLAKKEN ------------------ */
   {
     input: [
       ["Kakkerlakken", "Detritus"], ["Kakkerlakken", "Schimmel"], ["Kakkerlakken", "Gist"], ["Kakkerlakken", "Rode algen"], 
@@ -7039,7 +7036,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ TERMIETEN ------------------ */
   {
     input: [
       ["Termieten", "Detritus"], ["Termieten", "Schimmel"], ["Termieten", "Rode algen"], ["Termieten", "Groene algen"],
@@ -7098,7 +7095,7 @@ const combinaties = [
         <br><br>Eerst nodig: eerste zoogdieren.`
       }
     }
-  },
+  }, /* ------------------ PTEROSAURIËRS ------------------ */
   {
     input: [
       ["Pterosauriërs", "Wormen"], ["Pterosauriërs", "Oergeleedpotigen"], ["Pterosauriërs", "Oercheliceraten"],
@@ -7152,7 +7149,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]  
-  },
+  }, /* ------------------ LEPIDOSAURIËRS ------------------ */
   {
     input: [
       ["Lepidosauriërs", "Wormen"], ["Lepidosauriërs", "Oergeleedpotigen"], ["Lepidosauriërs", "Oercheliceraten"],
@@ -7207,7 +7204,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ CRUROTARSI ------------------ */
   {
     input: [
       ["Crurotarsi", "Wormen"], ["Crurotarsi", "Oergeleedpotigen"], ["Crurotarsi", "Oercheliceraten"],
@@ -7261,7 +7258,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ] 
-  },
+  }, /* ------------------ OERDINOSAURIËRS ------------------ */
   {
     input: [
       ["Oerdinosauriërs", "Wormen"], ["Oerdinosauriërs", "Oergeleedpotigen"], ["Oerdinosauriërs", "Oercheliceraten"],
@@ -7325,7 +7322,7 @@ const combinaties = [
         <br><br>- Aesopos`
       }
     ]
-  },
+  }, /* ------------------ SCHILDPADDEN ------------------ */
   {
     input: [
       ["Schildpadden", "Detritus"], ["Schildpadden", "Rode algen"], ["Schildpadden", "Groene algen"], 
@@ -7389,22 +7386,24 @@ const combinaties = [
         <br><br>- Bill Copeland`
       }
     ]
-  },
+  }, /* ------------------ ZEESCHILDPADDEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
-      ["Zeeschildpadden", "Groene algen"], ["Zeeschildpadden", "Rode algen"],
+      ["Zeeschildpadden", "Blauwalgen"], ["Zeeschildpadden", "Groene algen"], ["Zeeschildpadden", "Rode algen"],
+      ["Zeeschildpadden", "Steenwortelalgen"], ["Zeeschildpadden", "Foraminiferen"],
       ["Zeeschildpadden", "Groenwieren"], ["Zeeschildpadden", "Roodwieren"], ["Zeeschildpadden", "Bruinwieren"],
       /* --- WATERDIEREN --- */
-      ["Zeeschildpadden", "Sponzen"], ["Zeeschildpadden", "Koraal"], ["Zeeschildpadden", "Kwallen"], 
+      ["Zeeschildpadden", "Sponzen"], ["Zeeschildpadden", "Koraal"], ["Zeeschildpadden", "Zeesterren"], 
+      ["Zeeschildpadden", "Zee-egels"], ["Zeeschildpadden", "Kwallen"], ["Zeeschildpadden", "Manteldieren"], 
       ["Zeeschildpadden", "Zeeanemonen"], ["Zeeschildpadden", "Wormen"], ["Zeeschildpadden", "Oertrochozoa"], 
-      ["Zeeschildpadden", "Zeesterren"], ["Zeeschildpadden", "Zee-egels"], ["Zeeschildpadden", "Manteldieren"], 
-      /* --- +schelp --- */
-      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"], 
+      /* Schelp */ ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Zeeslakken"], 
       /* --- VISSEN --- */
       ["Zeeschildpadden", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Zeeschildpadden", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
+      ["Zeeschildpadden", "map:Geleedpotigen"], /* Schelp: zeepo, herem */
+      /* --- PLANTEN --- */
+      ["Zeeschildpadden", "Gras"]
     ],
     output: [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
@@ -7425,12 +7424,15 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Zeeschildpadden", "Inktvissen"], ["Zeeschildpadden", "Nautilussen"], ["Zeeschildpadden", "Octopussen"],
+      ["Zeeschildpadden", "Inktvissen"], ["Zeeschildpadden", "Octopussen"],
+      /* Schelp */ ["Zeeschildpadden", "Nautilussen"], 
       /* --- VISSEN --- */
-      ["Zeeschildpadden", "Agnathen"], ["Zeeschildpadden", "Oerstraalvinnigen"],
-      ["Platvissen", "Zeeschildpadden"], ["Clownvissen", "Zeeschildpadden"], ["Doktersvissen", "Zeeschildpadden"], 
-      ["Kabeljauwen", "Zeeschildpadden"], ["Haring", "Zeeschildpadden"], ["Makreel", "Zeeschildpadden"],
-      ["Paling", "Zeeschildpadden"], ["Zeepaardjes", "Zeeschildpadden"]
+      ["Zeeschildpadden", "Agnathen"], ["Zeeschildpadden", "Oerstraalvinnigen"], ["Zeeschildpadden", "Platvissen"], 
+      ["Zeeschildpadden", "Piranha"], ["Doktersvissen", "Clownvissen"], ["Zeeschildpadden", "Doktersvissen"], 
+      ["Zeeschildpadden", "Papegaaivissen"], ["Zeeschildpadden", "Karpers"], ["Zeeschildpadden", "Zeepaardjes"], 
+      ["Zeeschildpadden", "Koraalduivels"], ["Zeeschildpadden", "Kabeljauwen"], ["Zeeschildpadden", "Snoeken"],
+      ["Zeeschildpadden", "Meervallen"], ["Zeeschildpadden", "Goudvissen"], ["Zeeschildpadden", "Coelacanthen"],
+      ["Zeeschildpadden", "Tiktaalik"], ["Zeeschildpadden", "Forel"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -7456,7 +7458,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Nautilussen"],
+      ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Nautilussen"],
       ["Zeeschildpadden", "Zeepokken"], ["Zeeschildpadden", "Heremietkreeften"]
     ],
     output: [
