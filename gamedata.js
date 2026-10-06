@@ -13321,6 +13321,80 @@ const combinaties = [
         <br><br>- Lori Marino`
       }
     ]
+  }, /* ------------------ ORKA ------------------ */
+  {
+    input: 
+      /* --- VISSEN --- */
+      ["Orka", "Lancetvisjes"],
+    output: [
+      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+        quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
+        generations
+        <br><br>- Lance Barrett-Lennard`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Orka", "Inktvissen"], ["Orka", "Octopussen"], ["Orka", "Reuzeninktvissen"], ["Orka", "Potvissen"], 
+      ["Orka", "Narwallen"], ["Orka", "Dolfijnen"], ["Orka", "Grijze walvissen"], ["Orka", "Bultruggen"], 
+      ["Orka", "Zeekoeien"], ["Orka", "Zeeschildpadden"], 
+      /* Schelp */ ["Orka", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Orka", "Agnathen"], ["Orka", "Zeeduivels"], ["Orka", "Platvissen"], ["Orka", "Piranha"], ["Orka", "Clownvissen"], 
+      ["Orka", "Doktersvissen"], ["Orka", "Papegaaivissen"], ["Orka", "Karpers"], ["Orka", "Zeepaardjes"], 
+      ["Orka", "Vliegvissen"], ["Orka", "Maanvissen"], ["Orka", "Koraalduivels"], ["Orka", "Kogelvissen"], 
+      ["Orka", "Oerstraalvinnigen"], ["Orka", "Kabeljauwen"], ["Orka", "Snoeken"], ["Orka", "Meervallen"], 
+      ["Orka", "Paling"], ["Orka", "Haaien"], ["Orka", "Spookhaaien"], ["Orka", "Manta"], ["Orka", "Goudvissen"], 
+      ["Orka", "Coelacanthen"], ["Orka", "Tiktaalik"], ["Orka", "Tonijn"], ["Orka", "Zalm"], ["Orka", "Haring"],
+      ["Orka", "Makreel"], ["Orka", "Forel"],
+      /* --- VOGELS --- */
+      ["Orka", "Pinguïns"], ["Orka", "Meeuwen"], ["Orka", "Aalscholvers"], ["Orka", "Papegaaiduikers"],
+      /* --- CARNIVOREN --- */
+      ["Orka", "Walrussen"], ["Orka", "Zeehonden"], ["Orka", "Zeeleeuwen"], ["Orka", "Otters"], ["Orka", "IJsberen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+        quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
+        generations
+        <br><br>- Lance Barrett-Lennard`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: /* SCHELP */
+      ["Orka", "Nautilussen"],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: [
