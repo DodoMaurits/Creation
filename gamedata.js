@@ -4130,12 +4130,11 @@ const combinaties = [
     input: [
       /* --- WATERDIEREN --- */
       ["Inktvissen", "Kwallen"], ["Inktvissen", "Manteldieren"], ["Inktvissen", "Wormen"], ["Inktvissen", "Oertrochozoa"],      
-      /* --- +schelp --- */
-      ["Inktvissen", "Zeeslakken"],
+      /* Schelp */ ["Inktvissen", "Zeeslakken"],
       /* --- VISSEN --- */
       ["Inktvissen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Inktvissen", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
+      ["Inktvissen", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     hint: `Sommige dieren activeren fijne stofjes in de hersenen om te verzadigen..`,
     output: [
@@ -4188,7 +4187,7 @@ const combinaties = [
   },
   {
     input: [ /* SCHELP */
-      ["Inktvissen", "Zeeslakken"], ["Nautilussen", "Zeepokken"], ["Inktvissen", "Heremietkreeften"]
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Zeepokken"], ["Inktvissen", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -13362,6 +13361,70 @@ const combinaties = [
       { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
+      }
+    ]
+  }, /* ------------------ POTVISSEN ------------------ */
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Potvissen", "Kreeften"], ["Potvissen", "Krabben"],
+      /* Schelp */ ["Potvissen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
+        <br><br>- Peter Tyack`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Potvissen", "Inktvissen"], ["Potvissen", "Octopussen"], ["Potvissen", "Reuzeninktvissen"], 
+      /* Schelp */ ["Potvissen", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Potvissen", "Zeeduivels"], ["Potvissen", "Platvissen"], ["Potvissen", "Vliegvissen"], 
+      ["Potvissen", "Spookhaaien"], ["Potvissen", "Coelacanthen"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
+        <br><br>- Peter Tyack`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* SCHELP */
+      ["Potvissen", "Nautilussen"], ["Potvissen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
       }
     ]
   },
