@@ -8078,22 +8078,24 @@ const combinaties = [
         <br><br>- Bill Copeland`
       }
     ]
-  },
+  }, /* ------------------ ZEESCHILDPADDEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
-      ["Zeeschildpadden", "Groene algen"], ["Zeeschildpadden", "Rode algen"],
+      ["Zeeschildpadden", "Blauwalgen"], ["Zeeschildpadden", "Groene algen"], ["Zeeschildpadden", "Rode algen"],
+      ["Zeeschildpadden", "Steenwortelalgen"], ["Zeeschildpadden", "Foraminiferen"],
       ["Zeeschildpadden", "Groenwieren"], ["Zeeschildpadden", "Roodwieren"], ["Zeeschildpadden", "Bruinwieren"],
       /* --- WATERDIEREN --- */
-      ["Zeeschildpadden", "Sponzen"], ["Zeeschildpadden", "Koraal"], ["Zeeschildpadden", "Kwallen"], 
+      ["Zeeschildpadden", "Sponzen"], ["Zeeschildpadden", "Koraal"], ["Zeeschildpadden", "Zeesterren"], 
+      ["Zeeschildpadden", "Zee-egels"], ["Zeeschildpadden", "Kwallen"], ["Zeeschildpadden", "Manteldieren"], 
       ["Zeeschildpadden", "Zeeanemonen"], ["Zeeschildpadden", "Wormen"], ["Zeeschildpadden", "Oertrochozoa"], 
-      ["Zeeschildpadden", "Zeesterren"], ["Zeeschildpadden", "Zee-egels"], ["Zeeschildpadden", "Manteldieren"], 
-      /* --- +schelp --- */
-      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"], 
+      /* Schelp */ ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Zeeslakken"], 
       /* --- VISSEN --- */
       ["Zeeschildpadden", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Zeeschildpadden", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
+      ["Zeeschildpadden", "map:Geleedpotigen"], /* Schelp: zeepo, herem */
+      /* --- PLANTEN --- */
+      ["Zeeschildpadden", "Gras"]
     ],
     output: [
       { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
@@ -8114,12 +8116,15 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Zeeschildpadden", "Inktvissen"], ["Zeeschildpadden", "Nautilussen"], ["Zeeschildpadden", "Octopussen"],
+      ["Zeeschildpadden", "Inktvissen"], ["Zeeschildpadden", "Octopussen"],
+      /* Schelp */ ["Zeeschildpadden", "Nautilussen"], 
       /* --- VISSEN --- */
-      ["Zeeschildpadden", "Agnathen"], ["Zeeschildpadden", "Oerstraalvinnigen"],
-      ["Platvissen", "Zeeschildpadden"], ["Clownvissen", "Zeeschildpadden"], ["Doktersvissen", "Zeeschildpadden"], 
-      ["Kabeljauwen", "Zeeschildpadden"], ["Haring", "Zeeschildpadden"], ["Makreel", "Zeeschildpadden"],
-      ["Paling", "Zeeschildpadden"], ["Zeepaardjes", "Zeeschildpadden"]
+      ["Zeeschildpadden", "Agnathen"], ["Zeeschildpadden", "Oerstraalvinnigen"], ["Zeeschildpadden", "Platvissen"], 
+      ["Zeeschildpadden", "Piranha"], ["Doktersvissen", "Clownvissen"], ["Zeeschildpadden", "Doktersvissen"], 
+      ["Zeeschildpadden", "Papegaaivissen"], ["Zeeschildpadden", "Karpers"], ["Zeeschildpadden", "Zeepaardjes"], 
+      ["Zeeschildpadden", "Koraalduivels"], ["Zeeschildpadden", "Kabeljauwen"], ["Zeeschildpadden", "Snoeken"],
+      ["Zeeschildpadden", "Meervallen"], ["Zeeschildpadden", "Goudvissen"], ["Zeeschildpadden", "Coelacanthen"],
+      ["Zeeschildpadden", "Tiktaalik"], ["Zeeschildpadden", "Forel"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -8145,7 +8150,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Nautilussen"],
+      ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Nautilussen"],
       ["Zeeschildpadden", "Zeepokken"], ["Zeeschildpadden", "Heremietkreeften"]
     ],
     output: [
