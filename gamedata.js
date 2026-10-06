@@ -3443,8 +3443,6 @@ const combinaties = [
   },
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Vinvissen", "Zenuwen"],
       /* --- VISSEN --- */
       ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
       ["Paling", "Zenuwen"]
@@ -13768,7 +13766,7 @@ const combinaties = [
         requirements: 
         ["Kwik", "Alcohol", "Verdriet", "Trots", "Jaloezie", "Empathie", "Gemeenschap",
           /* --- WATERDIEREN --- */
-          "Zeekoeien", "Walvissen", "Potvissen", "Dolfijnen", "Orka", "Narwallen",
+          "Zeekoeien", "Grijze walvissen", "Potvissen", "Dolfijnen", "Orka", "Narwallen",
           /* --- VISSEN --- */
           "Zeeduivels", "Manta", "Platvissen", "Clownvissen", "Doktersvissen", "Papegaaivissen", "Koraalduivels",
           "Kogelvissen", "Tonijn", "Zalm", "Kabeljauwen", "Haring", "Makreel", "Karpers", "Snoeken", "Forel", 
