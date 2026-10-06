@@ -13396,6 +13396,62 @@ const combinaties = [
       }
     ]
   },
+  }, /* ------------------ NARWALLEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Narwallen", "Wormen"],
+      /* --- VISSEN --- */
+      ["Narwallen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Narwallen", "Krill"], ["Narwallen", "Aasgarnalen"], ["Narwallen", "Vlokreeftjes"], ["Narwallen", "Garnalen"]
+    ],
+    output: [
+      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+        quote: `The narwhal tusk is a sensory organ with millions of nerve endings
+        <br><br>- Martin Nweeia`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Narwallen", "Inktvissen "], ["Narwallen", "Octopussen "], 
+      /* --- VISSEN --- */
+      ["Narwallen", "Agnathen"], ["Narwallen", "Platvissen"], ["Narwallen", "Kabeljauwen"], ["Narwallen", "Paling"], 
+      ["Narwallen", "Haring"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+        quote: `The narwhal tusk is a sensory organ with millions of nerve endings
+        <br><br>- Martin Nweeia`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
   {
     input: [
       ["Oerevenhoevigen", "Kust"], ["Oerevenhoevigen", "Lagune"],
