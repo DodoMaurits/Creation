@@ -11817,7 +11817,7 @@ const combinaties = [
         <br><br>- Li Bai`
       }
     ]
-  },  /* ------------------ ZEEKOEIEN ------------------ */
+  },
   {
     input: [
       ["Oerplacentalia", "Zee"], ["Oerplacentalia", "Rivier"], ["Oerplacentalia", "Lagune"]
@@ -11830,7 +11830,7 @@ const combinaties = [
         <br><br>- Charles Fransen`
       }
     ]
-  },
+  }, /* ------------------ ZEEKOEIEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
