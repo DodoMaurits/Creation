@@ -13321,6 +13321,132 @@ const combinaties = [
         <br><br>- Lori Marino`
       }
     ]
+  }, /* ------------------ BULTRUGGEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN--- */
+      ["Bultruggen", "Kwallen"], ["Bultruggen", "Manteldieren"], ["Bultruggen", "Wormen"],
+      /* --- VISSEN--- */
+      ["Bultruggen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN--- */
+      ["Bultruggen", "Oerkreeftjes"], ["Bultruggen", "Krill"], ["Bultruggen", "Aasgarnalen"],
+      ["Bultruggen", "Zeepissebedden"], ["Bultruggen", "Vlokreeftjes"], ["Bultruggen", "Garnalen"], 
+      ["Bultruggen", "Zeeschorpioenen"]
+    ],
+    output: [
+      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
+        quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
+        <br><br>- Roger Payne`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Bultruggen", "Inktvissen"], 
+      /* --- VISSEN --- */
+      ["Bultruggen", "Piranha"], ["Bultruggen", "Clownvissen"], ["Bultruggen", "Doktersvissen"], 
+      ["Bultruggen", "Papegaaivissen"], ["Bultruggen", "Karpers"], ["Bultruggen", "Zeepaardjes"],
+      ["Bultruggen", "Koraalduivels"], ["Bultruggen", "Snoeken"], ["Bultruggen", "Meervallen"],
+      ["Bultruggen", "Goudvissen"], ["Bultruggen", "Zalm"], ["Bultruggen", "Haring"], ["Bultruggen", "Makreel"],
+      ["Bultruggen", "Forel"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
+        quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
+        <br><br>- Roger Payne`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ GRIJZE WALVISSEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN--- */
+      ["Grijze walvissen", "Kwallen"], ["Grijze walvissen", "Manteldieren"], ["Grijze walvissen", "Wormen"],
+      /* Schelp */ ["Grijze walvissen", "Tweekleppigen"], ["Grijze walvissen", "Zeeslakken"],
+      /* --- VISSEN--- */
+      ["Grijze walvissen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN--- */
+      ["Grijze walvissen", "Trilobieten"], ["Grijze walvissen", "Oerkreeftjes"], ["Grijze walvissen", "Krill"],
+      ["Grijze walvissen", "Aasgarnalen"], ["Grijze walvissen", "Zeepissebedden"], ["Grijze walvissen", "Vlokreeftjes"], 
+      ["Grijze walvissen", "Garnalen"], ["Grijze walvissen", "Krabben"], ["Grijze walvissen", "Zeeschorpioenen"],
+      /* Schelp */ ["Grijze walvissen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
+        quote: `Gray whales undertake one of the longest annual migrations of any mammal
+        <br><br>- Bruce Mate`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Grijze walvissen", "Inktvissen"],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
+        quote: `Gray whales undertake one of the longest annual migrations of any mammal
+        <br><br>- Bruce Mate`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* SCHELP */
+      ["Grijze walvissen", "Tweekleppigen"], ["Grijze walvissen", "Zeeslakken"], ["Grijze walvissen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   }, /* ------------------ ORKA ------------------ */
   {
     input: 
@@ -13450,6 +13576,82 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ DOLFIJNEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Dolfijnen", "Zeesterren"], ["Dolfijnen", "Zee-egels"], ["Dolfijnen", "Wormen"], ["Dolfijnen", "Oertrochozoa"],
+      /* Schelp */ ["Dolfijnen", "Tweekleppigen"], ["Dolfijnen", "Zeeslakken"],
+      /* --- VISSEN --- */
+      ["Dolfijnen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Dolfijnen", "Trilobieten"], ["Dolfijnen", "Oerkreeftjes"], ["Dolfijnen", "Krill"], ["Dolfijnen", "Aasgarnalen"], 
+      ["Dolfijnen", "Zeepissebedden"], ["Dolfijnen", "Vlokreeftjes"], ["Dolfijnen", "Garnalen"], 
+      ["Dolfijnen", "Kreeften"], ["Dolfijnen", "Krabben"], 
+      /* Schelp */ ["Dolfijnen", "Zeepokken"]
+    ],
+    output: [
+      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+        quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
+        <br><br>- Lori Marino`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Dolfijnen", "Inktvissen "], ["Dolfijnen", "Octopussen "], ["Dolfijnen", "Zeeschildpadden"],
+      /* Schelp */ ["Dolfijnen", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Dolfijnen", "Platvissen"], ["Dolfijnen", "Piranha"], ["Dolfijnen", "Clownvissen"], 
+      ["Dolfijnen", "Doktersvissen"], ["Dolfijnen", "Karpers"], ["Dolfijnen", "Zeepaardjes"], 
+      ["Dolfijnen", "Maanvissen"], ["Dolfijnen", "Kogelvissen"], ["Dolfijnen", "Oerstraalvinnigen"], 
+      ["Dolfijnen", "Kabeljauwen"], ["Dolfijnen", "Snoeken"], ["Dolfijnen", "Meervallen"], 
+      ["Dolfijnen", "Goudvissen"], ["Dolfijnen", "Coelacanthen"], ["Dolfijnen", "Zalm"], ["Dolfijnen", "Haring"],
+      ["Dolfijnen", "Makreel"], ["Dolfijnen", "Forel"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+        quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
+        <br><br>- Lori Marino`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* SCHELP */
+      ["Dolfijnen", "Tweekleppigen"], ["Dolfijnen", "Zeeslakken"], ["Dolfijnen", "Nautilussen"], 
+      ["Dolfijnen", "Zeepokken"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: [
@@ -13485,6 +13687,63 @@ const combinaties = [
       { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
+      }
+    ]
+  }, /* ------------------ BLAUWE VINVISSEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Blauwe vinvissen", "Kwallen"], ["Blauwe vinvissen", "Manteldieren"], ["Blauwe vinvissen", "Wormen"],
+      /* --- VISSEN --- */
+      ["Blauwe vinvissen", "Lancetvisjes"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Blauwe vinvissen", "Krill"], ["Blauwe vinvissen", "Aasgarnalen"], ["Blauwe vinvissen", "Vlokreeftjes"],
+      ["Blauwe vinvissen", "Zeepissebedden"], ["Blauwe vinvissen", "Garnalen"]
+    ],
+    output: [
+      { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+        quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
+        are so wide that you could swim down them
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Blauwe vinvissen", "Inktvissen"], 
+      /* --- VISSEN --- */
+      ["Blauwe vinvissen", "Haring"], ["Blauwe vinvissen", "Makreel"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+        quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
+        are so wide that you could swim down them
+        <br><br>- David Attenborough`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   }, /* ------------------ POTVISSEN ------------------ */
