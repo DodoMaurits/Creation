@@ -3966,7 +3966,7 @@ const combinaties = [
   },
   {
     input: [
-      ["Agnathen", "Zeeslakken"], ["Agnathen", "Tweekleppigen"]
+      ["Agnathen", "Tweekleppigen"], ["Agnathen", "Zeeslakken"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -5076,7 +5076,7 @@ const combinaties = [
       /* --- PRIL LEVEN --- */
       ["Tiktaalik", "Detritus"], ["Tiktaalik", "Oercnidaria"], ["Tiktaalik", "Oerbilateria"], 
       ["Tiktaalik", "Wormen"], ["Tiktaalik", "Oertrochozoa"], 
-      ["Tiktaalik", "Zeeslakken"], ["Tiktaalik", "Tweekleppigen"],
+      /* Schelp */ ["Tiktaalik", "Tweekleppigen"], ["Tiktaalik", "Zeeslakken"], 
       /* --- VISSEN --- */
       ["Tiktaalik", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
@@ -5103,7 +5103,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       ["Tiktaalik", "Agnathen"], ["Tiktaalik", "Oerstraalvinnigen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
@@ -5130,8 +5130,8 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Tiktaalik", "Zeeslakken"], ["Tiktaalik", "Tweekleppigen"]
+    input: [/* Schelp */
+      ["Tiktaalik", "Tweekleppigen"], ["Tiktaalik", "Zeeslakken"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -5215,11 +5215,11 @@ const combinaties = [
       /* --- WATERDIEREN --- */
       ["Haaien", "Kwallen"], ["Haaien", "Wormen"], ["Haaien", "Oertrochozoa"], 
       ["Haaien", "Zeesterren"], ["Haaien", "Zee-egels"],
-      ["Haaien", "Zeeslakken"], ["Haaien", "Tweekleppigen"], /* +schelp */
+      /* Schelp */ ["Haaien", "Tweekleppigen"], ["Haaien", "Zeeslakken"], 
       /* --- VISSEN --- */
       ["Haaien", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Haaien", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
+      ["Haaien", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
       { naam: "Haaien", icoon: "icons/Haaien.png", map: "Vissen", 
@@ -5239,10 +5239,10 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Bloed */
       /* --- WATERDIEREN --- */
       ["Haaien", "Inktvissen"], ["Haaien", "Octopussen"], 
-      ["Haaien", "Nautilussen"], /* +schelp*/
+      /* Schelp */ ["Haaien", "Nautilussen"],
       /* --- VISSEN --- */
       ["Haaien", "Agnathen"], ["Haaien", "Haaien"], ["Haaien", "Spookhaaien"], ["Haaien", "Coelacanthen"],
       ["Haaien", "Tiktaalik"], ["Haaien", "Oerstraalvinnigen"], ["Haaien", "Zeeduivels"], ["Haaien", "Manta"],
@@ -5277,7 +5277,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Schelp */
       ["Haaien", "Zeeslakken"], ["Haaien", "Tweekleppigen"], ["Haaien", "Nautilussen"],
       ["Haaien", "Zeepokken"], ["Haaien", "Heremietkreeften"]
     ],
@@ -5292,9 +5292,9 @@ const combinaties = [
     input: [
       /* --- WATERDIEREN --- */
       ["Spookhaaien", "Wormen"], ["Spookhaaien", "Oertrochozoa"],
-      ["Spookhaaien", "Zeeslakken"], ["Spookhaaien", "Tweekleppigen"], 
+      /* Schelp */ ["Spookhaaien", "Tweekleppigen"], ["Spookhaaien", "Zeeslakken"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Spookhaaien", "map:Geleedpotigen"]
+      ["Spookhaaien", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
       { naam: "Spookhaaien", icoon: "icons/Spookhaaien.png", map: "Vissen", 
@@ -5313,7 +5313,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Schelp */
       ["Spookhaaien", "Zeeslakken"], ["Spookhaaien", "Tweekleppigen"], 
       ["Spookhaaien", "Zeepokken"], ["Spookhaaien", "Heremietkreeften"]
     ],
@@ -7747,7 +7747,7 @@ const combinaties = [
         <br><br>Eerst nodig: eerste bloem.`
       }
     }
-  },
+  }, /* ------------------ ZEEDUIVELS ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -7755,7 +7755,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Zeeduivels", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Zeeduivels", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
+      ["Zeeduivels", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
       { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
@@ -7775,7 +7775,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Bloed */
       /* --- VISSEN --- */
       ["Zeeduivels", "Agnathen"], ["Zeeduivels", "Coelacanthen"], ["Zeeduivels", "Tiktaalik"], 
       ["Zeeduivels", "Oerstraalvinnigen"], ["Zeeduivels", "Platvissen"], ["Zeeduivels", "Clownvissen"], 
@@ -7809,7 +7809,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Schelp */
       ["Zeeduivels", "Zeepokken"], ["Zeeduivels", "Heremietkreeften"]
     ],
     output: [
@@ -8330,7 +8330,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ MANTA ------------------ */
   {
     input: [
       ["Manta", "Krill"], ["Manta", "Aasgarnalen"], ["Manta", "Vlokreeftjes"]
@@ -8477,16 +8477,16 @@ const combinaties = [
       thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ KABELJAUWEN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
       ["Kabeljauwen", "Wormen"], ["Kabeljauwen", "Oertrochozoa"],
-      ["Kabeljauwen", "Zeeslakken"], ["Kabeljauwen", "Tweekleppigen"],
+      /* Schelp */ ["Kabeljauwen", "Tweekleppigen"], ["Kabeljauwen", "Zeeslakken"], 
       /* --- VISSEN --- */
       ["Kabeljauwen", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
-      ["Kabeljauwen", "map:Geleedpotigen"]
+      ["Kabeljauwen", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
       { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
@@ -8506,12 +8506,12 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       ["Kabeljauwen", "Inktvissen"], ["Kabeljauwen", "Octopussen"],
       /* --- VISSEN --- */
-      ["Kabeljauwen", "Agnathen"], ["Kabeljauwen", "Oerstraalvinnigen"],
-      ["Kabeljauwen", "Haring"], ["Kabeljauwen", "Makreel"], ["Kabeljauwen", "Karpers"], ["Kabeljauwen", "Forel"], 
-      ["Kabeljauwen", "Paling"], ["Kabeljauwen", "Goudvissen"]
+      ["Kabeljauwen", "Agnathen"], ["Kabeljauwen", "Oerstraalvinnigen"], ["Kabeljauwen", "Haring"], 
+      ["Kabeljauwen", "Makreel"], ["Kabeljauwen", "Karpers"], ["Kabeljauwen", "Forel"], ["Kabeljauwen", "Paling"], 
+      ["Kabeljauwen", "Goudvissen"]
     ],
     output: [
       { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
@@ -8535,8 +8535,8 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Kabeljauwen", "Zeeslakken"], ["Kabeljauwen", "Tweekleppigen"],
+    input: [/* Schelp */
+      ["Kabeljauwen", "Tweekleppigen"], ["Kabeljauwen", "Zeeslakken"], 
       ["Kabeljauwen", "Zeepokken"], ["Kabeljauwen", "Heremietkreeften"]
     ],
     output: [
@@ -8562,7 +8562,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ MAANVISSEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -8605,7 +8605,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ FOREL ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -8634,7 +8634,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       /* --- VISSEN --- */
       ["Forel", "Agnathen"], ["Forel", "Oerstraalvinnigen"], ["Forel", "Goudvissen"]
     ],
@@ -8677,7 +8677,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ PAPEGAAIVISSEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -8705,7 +8705,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ PLATVISSEN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -8756,7 +8756,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ KARPERS ------------------ */
   {
     input: [
       ["Karpers", "Detritus"],
@@ -8784,7 +8784,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ SNOEKEN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -8814,7 +8814,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Bloed */
       /* --- VISSEN --- */
       ["Snoeken", "Agnathen"], ["Snoeken", "Oerstraalvinnigen"],
       ["Snoeken", "Haring"], ["Snoeken", "Makreel"], 
@@ -8857,7 +8857,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ VLIEGVISSEN ------------------ */
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
@@ -8905,16 +8905,16 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ MEERVALLEN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
       ["Meervallen", "Wormen"], ["Meervallen", "Oertrochozoa"],
-      ["Meervallen", "Zeeslakken"], ["Meervallen", "Tweekleppigen"],
+      /* Schelp */ ["Meervallen", "Tweekleppigen"], ["Meervallen", "Zeeslakken"], 
       /* --- VISSEN --- */
       ["Meervallen", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
-      ["Meervallen", "map:Geleedpotigen"]
+      ["Meervallen", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
       { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
@@ -8932,14 +8932,13 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, 
   {
-    input: [
+    input: [ /* Bloed */
       /* --- VISSEN --- */
-      ["Meervallen", "Agnathen"], ["Meervallen", "Oerstraalvinnigen"],
-      ["Meervallen", "Kabeljauwen"], ["Meervallen", "Haring"], ["Meervallen", "Makreel"], 
-      ["Meervallen", "Karpers"], ["Meervallen", "Forel"], ["Meervallen", "Paling"], 
-      ["Meervallen", "Goudvissen"]
+      ["Meervallen", "Agnathen"], ["Meervallen", "Oerstraalvinnigen"], ["Meervallen", "Kabeljauwen"], 
+      ["Meervallen", "Haring"], ["Meervallen", "Makreel"], ["Meervallen", "Karpers"], ["Meervallen", "Forel"], 
+      ["Meervallen", "Paling"], ["Meervallen", "Goudvissen"]
     ],
     output: [
       { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
@@ -8963,7 +8962,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Schelp */
       ["Meervallen", "Zeeslakken"], ["Meervallen", "Tweekleppigen"],
       ["Meervallen", "Zeepokken"], ["Meervallen", "Heremietkreeften"]
     ],
@@ -9005,12 +9004,11 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ TONIJN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Tonijn", "Wormen"], ["Tonijn", "Oertrochozoa"],
-      ["Tonijn", "Inktvissen"], ["Tonijn", "Octopussen"],
+      ["Tonijn", "Wormen"], ["Tonijn", "Oertrochozoa"], ["Tonijn", "Inktvissen"], ["Tonijn", "Octopussen"],
       /* --- VISSEN --- */
       ["Tonijn", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
@@ -9036,11 +9034,10 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       /* --- VISSEN --- */
-      ["Tonijn", "Agnathen"], ["Tonijn", "Oerstraalvinnigen"], ["Tonijn", "Kabeljauwen"], 
-      ["Tonijn", "Haring"], ["Tonijn", "Makreel"], ["Tonijn", "Forel"], ["Tonijn", "Paling"], 
-      ["Tonijn", "Goudvissen"]
+      ["Tonijn", "Agnathen"], ["Tonijn", "Oerstraalvinnigen"], ["Tonijn", "Kabeljauwen"], ["Tonijn", "Haring"], 
+      ["Tonijn", "Makreel"], ["Tonijn", "Forel"], ["Tonijn", "Paling"], ["Tonijn", "Goudvissen"]
     ],
     output: [
       { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
@@ -9061,7 +9058,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ ZALM ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -9092,7 +9089,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       /* --- VISSEN --- */
       ["Zalm", "Agnathen"], ["Zalm", "Oerstraalvinnigen"], ["Zalm", "Haring"]
     ],
@@ -9116,7 +9113,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ MAKREEL ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -9146,11 +9143,10 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       ["Makreel", "Inktvissen"], 
       /* --- VISSEN --- */
-      ["Makreel", "Agnathen"], ["Makreel", "Oerstraalvinnigen"], 
-      ["Makreel", "Haring"], ["Makreel", "Goudvissen"]
+      ["Makreel", "Agnathen"], ["Makreel", "Oerstraalvinnigen"], ["Makreel", "Haring"], ["Makreel", "Goudvissen"]
     ],
     output: [
       { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
@@ -9171,12 +9167,12 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ PALING ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
       ["Paling", "Wormen"], ["Paling", "Oertrochozoa"],
-      ["Paling", "Zeeslakken"], ["Paling", "Tweekleppigen"],
+      /* Schelp */ ["Paling", "Tweekleppigen"], ["Paling", "Zeeslakken"], 
       /* --- VISSEN --- */
       ["Paling", "Lancetvisjes"],
       /* --- GELEEDPOTIGEN --- */
@@ -9203,7 +9199,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       /* --- VISSEN --- */
       ["Paling", "Agnathen"], ["Paling", "Oerstraalvinnigen"],
       ["Paling", "Karpers"], ["Paling", "Forel"], ["Paling", "Goudvissen"]
@@ -9230,8 +9226,8 @@ const combinaties = [
     ]
   },
   {
-    input: [
-      ["Paling", "Zeeslakken"], ["Paling", "Tweekleppigen"], ["Paling", "Heremietkreeften"]
+    input: [ /* Schelp */
+      ["Paling", "Tweekleppigen"], ["Paling", "Zeeslakken"], ["Paling", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
@@ -9239,7 +9235,7 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
+  }, /* ------------------ HARING ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -9291,7 +9287,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ ZEEPAARDJES ------------------ */
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
@@ -9416,15 +9412,15 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ KOGELVISSEN ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
       ["Kogelvissen", "Koraal"], ["Kogelvissen", "Wormen"], ["Kogelvissen", "Oertrochozoa"], 
       ["Kogelvissen", "Zee-egels"], ["Kogelvissen", "Zeesterren"],
-      ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
+      /* Schelp */ ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
       /* --- GELEEDPOTIGEN --- */
-      ["Kogelvissen", "map:Geleedpotigen"]
+      ["Kogelvissen", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
       { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png", map: "Vissen", 
@@ -9448,7 +9444,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Schelp */
       ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
       ["Kogelvissen", "Zeepokken"], ["Kogelvissen", "Heremietkreeften"]
     ],
@@ -9488,7 +9484,7 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ CLOWNVISSEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -9515,7 +9511,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ DOKTERSVISSEN ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -9541,7 +9537,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ KORAALDUIVELS ------------------ */
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
@@ -9572,7 +9568,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [ /* Bloed */
       /* --- VISSEN --- */
       ["Koraalduivels", "Agnathen"], ["Koraalduivels", "Oerstraalvinnigen"], ["Koraalduivels", "Clownvissen"], 
       ["Koraalduivels", "Doktersvissen"], ["Koraalduivels", "Papegaaivissen"], ["Koraalduivels", "Zeepaardjes"],
@@ -9648,9 +9644,9 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  },
+  }, /* ------------------ PIRANHA ------------------ */
   {
-    input: [
+    input: [ /* Bloed */
       /* --- VISSEN --- */
       ["Piranha", "Agnathen"], ["Piranha", "Oerstraalvinnigen"], ["Piranha", "Clownvissen"], 
       ["Piranha", "Doktersvissen"], ["Piranha", "Zalm"], ["Piranha", "Haring"], ["Piranha", "Makreel"], 
