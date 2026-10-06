@@ -8357,7 +8357,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ REUZENINKTVISSEN ------------------ */
   {
     input: [
       ["Inktvissen", "Druk"], ["Inktvissen", "Oceaan"]
@@ -8373,6 +8373,99 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+  },
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Reuzeninktvissen", "Zee-egels"], ["Reuzeninktvissen", "Wormen"], 
+      /* Schelp */ ["Reuzeninktvissen", "Tweekleppigen"], ["Reuzeninktvissen", "Zeeslakken"],
+      /* --- VISSEN --- */
+      ["Reuzeninktvissen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Reuzeninktvissen", "Oergeleedpotigen"], ["Reuzeninktvissen", "Oercheliceraten"],
+      ["Reuzeninktvissen", "Oerspinachtigen"], ["Reuzeninktvissen", "Oertienpotigen"], 
+      ["Reuzeninktvissen", "Trilobieten"], ["Reuzeninktvissen", "Oerkreeftjes"], ["Reuzeninktvissen", "Zeeschorpioenen"],
+      ["Reuzeninktvissen", "Krill"], ["Reuzeninktvissen", "Aasgarnalen"], ["Reuzeninktvissen", "Vlokreeftjes"],
+      ["Reuzeninktvissen", "Reuzenpissebedden"], ["Reuzeninktvissen", "Garnalen"], ["Reuzeninktvissen", "Kreeften"],
+      ["Reuzeninktvissen", "Krabben"], 
+      /* Schelp */ ["Reuzeninktvissen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Reuzeninktvissen", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+        quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
+        <br><br>- Edith Widder`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Reuzeninktvissen", "Inktvissen"], ["Reuzeninktvissen", "Octopussen"], ["Reuzeninktvissen", "Zeeschildpadden"], 
+      /* Schelp */ ["Reuzeninktvissen", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Reuzeninktvissen", "Agnathen"], ["Reuzeninktvissen", "Zeeduivels"], ["Reuzeninktvissen", "Platvissen"], 
+      ["Reuzeninktvissen", "Piranha"], ["Reuzeninktvissen", "Clownvissen"], ["Reuzeninktvissen", "Doktersvissen"], 
+      ["Reuzeninktvissen", "Papegaaivissen"], ["Reuzeninktvissen", "Karpers"], ["Reuzeninktvissen", "Zeepaardjes"], 
+      ["Reuzeninktvissen", "Vliegvissen"], ["Reuzeninktvissen", "Maanvissen"], ["Reuzeninktvissen", "Koraalduivels"], 
+      ["Reuzeninktvissen", "Kogelvissen"], ["Reuzeninktvissen", "Oerstraalvinnigen"], ["Reuzeninktvissen", "Kabeljauwen"], 
+      ["Reuzeninktvissen", "Snoeken"], ["Reuzeninktvissen", "Meervallen"], ["Reuzeninktvissen", "Paling"], 
+      ["Reuzeninktvissen", "Haaien"], ["Reuzeninktvissen", "Spookhaaien"], ["Reuzeninktvissen", "Manta"], 
+      ["Reuzeninktvissen", "Goudvissen"], ["Reuzeninktvissen", "Coelacanthen"], ["Reuzeninktvissen", "Tiktaalik"], 
+      ["Reuzeninktvissen", "Tonijn"], ["Reuzeninktvissen", "Zalm"], ["Reuzeninktvissen", "Haring"],
+      ["Reuzeninktvissen", "Makreel"], ["Reuzeninktvissen", "Forel"]
+    ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    output: [
+      { naam: "Reuzeninktvissen", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+        quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
+        <br><br>- Edith Widder`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* SCHELP */
+      ["Reuzeninktvissen", "Tweekleppigen"], ["Reuzeninktvissen", "Zeeslakken"], ["Reuzeninktvissen", "Nautilussen"],
+      ["Reuzeninktvissen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: [
