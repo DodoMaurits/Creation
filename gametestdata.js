@@ -4247,8 +4247,6 @@ const combinaties = [
   },
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Vinvissen", "Zenuwen"],
       /* --- VISSEN --- */
       ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
       ["Paling", "Zenuwen"]
