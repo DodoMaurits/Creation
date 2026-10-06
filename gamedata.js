@@ -13395,7 +13395,6 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  },
   }, /* ------------------ NARWALLEN ------------------ */
   {
     input: [
