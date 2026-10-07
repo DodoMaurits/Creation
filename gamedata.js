@@ -2720,6 +2720,21 @@ const combinaties = [
   {
     input: [
       ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"],
+      /* --- PLANTEN --- */
+      ["Oermagnoliden", "Radioactiviteit"], ["Oermagnoliden", "Gif"],
+      ["Oerericales", "Radioactiviteit"], ["Oerericales", "Gif"],
+      ["Buxus", "Radioactiviteit"], ["Buxus", "Gif"],
+      ["Oerfagales", "Radioactiviteit"], ["Oerfagales", "Gif"],
+      ["Heide", "Radioactiviteit"], ["Heide", "Gif"],
+      /* --- SMAAKMAKERS --- */
+      ["Steranijs", "Radioactiviteit"], ["Steranijs", "Gif"],
+      ["Kruidnagel", "Radioactiviteit"], ["Kruidnagel", "Gif"],
+      ["Nootmuskaat", "Radioactiviteit"], ["Nootmuskaat", "Gif"],
+      ["Kaneel", "Radioactiviteit"], ["Kaneel", "Gif"],
+      ["Peper", "Radioactiviteit"], ["Peper", "Gif"],
+      /* --- MATERIALEN --- */
+      ["Kapok", "Radioactiviteit"], ["Kapok", "Gif"],
+      ["Rotan", "Radioactiviteit"], ["Rotan", "Gif"],
       /* --- BLOEMEN --- */
       ["Hortensia", "Radioactiviteit"], ["Hortensia", "Gif"],
       ["Rozen", "Radioactiviteit"], ["Rozen", "Gif"],
