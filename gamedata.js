@@ -2511,25 +2511,53 @@ const combinaties = [
   {   //------------ ICM RADIOACTIVITEIT-GIF (DOOD, DETRITUS) --------------//
     input: [
       ["map:Pril leven", "Radioactiviteit"], ["map:Pril leven", "IJs"], ["map:Pril leven", "Gif"],
-      ["map:Waterdieren", "Radioactiviteit"], ["map:Waterdieren", "Gif"], 
-      /* Schelp: tweekl, zeesl, nau */ /* Bot: */
       ["map:Vissen", "Radioactiviteit"], ["map:Vissen", "Gif"],
-      ["map:Geleedpotigen", "Radioactiviteit"], ["map:Geleedpotigen", "Gif"], /* Schelp: zeepo, herem */
-      ["map:Planten", "Radioactiviteit"],
+      ["map:Geleedpotigen", "Radioactiviteit"], ["map:Geleedpotigen", "Gif"],
       ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
       ["map:Zoogdieren", "Radioactiviteit"], ["map:Zoogdieren", "Gif"],
       ["map:Vogels", "Radioactiviteit"], ["map:Vogels", "Gif"],
-      ["map:Smaakmakers", "Radioactiviteit"],
-      ["map:Bloemen", "Radioactiviteit"],
-      ["map:Fruit", "Radioactiviteit"],
-      ["map:Groenten", "Radioactiviteit"],
-      ["map:Granen", "Radioactiviteit"],
-      /* --- BIOLOGIE --- */
-      ["Weefsel", "Radioactiviteit"], 
-      ["Spieren", "Radioactiviteit"], 
-      ["Wortels", "Radioactiviteit"], ["Wortels", "Gif"], 
-      ["Blad", "Radioactiviteit"], ["Blad", "Gif"], 
-      ["Bloem", "Radioactiviteit"], ["Bloem", "Gif"],
+      ["map:Carnivoren", "Radioactiviteit"], ["map:Carnivoren", "Gif"],
+      ["map:Primaten", "Radioactiviteit"], ["map:Primaten", "Gif"],
+      ["map:Hoefdieren", "Radioactiviteit"], ["map:Hoefdieren", "Gif"],
+      ["map:Planten", "Radioactiviteit"], ["map:Planten", "Gif"],
+      ["map:Smaakmakers", "Radioactiviteit"], ["map:Smaakmakers", "Gif"],
+      ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"],
+      ["map:Bloemen", "Radioactiviteit"], ["map:Bloemen", "Gif"],
+      ["map:Fruit", "Radioactiviteit"], ["map:Fruit", "Gif"],
+      ["map:Groenten", "Radioactiviteit"], ["map:Groenten", "Gif"],
+      ["map:Zaden", "Radioactiviteit"], ["map:Zaden", "Gif"],
+      /* --- WATERDIEREN --- */
+      ["Sponzen", "Radioactiviteit"], ["Sponzen", "Gif"], 
+      ["Zeeanemonen", "Radioactiviteit"], ["Zeeanemonen", "Gif"], 
+      ["Zeesterren", "Radioactiviteit"], ["Zeesterren", "Gif"], 
+      /* Bot */ ["Zee-egels", "Radioactiviteit"], ["Zee-egels", "Gif"], 
+      ["Kwallen", "Radioactiviteit"], ["Kwallen", "Gif"], 
+      /* Bot */ ["Koraal", "Radioactiviteit"], ["Koraal", "Gif"],
+      /* Schelp */ ["Tweekleppigen", "Radioactiviteit"], ["Tweekleppigen", "Gif"],
+      ["Manteldieren", "Radioactiviteit"], ["Manteldieren", "Gif"], 
+      ["Wormen", "Radioactiviteit"], ["Wormen", "Gif"], 
+        ["Beerdiertjes", "Gif"], 
+      ["Oertrochozoa", "Radioactiviteit"], ["Oertrochozoa", "Gif"], 
+      /* Schelp */ ["Zeeslakken", "Radioactiviteit"], ["Zeeslakken", "Gif"], 
+      ["Inktvissen", "Radioactiviteit"], ["Inktvissen", "Gif"], 
+      /* Schelp */ ["Nautilussen", "Radioactiviteit"], ["Nautilussen", "Gif"],
+      ["Octopussen", "Radioactiviteit"], ["Octopussen", "Gif"],
+      ["Reuzeninktvissen", "Radioactiviteit"], ["Reuzeninktvissen", "Gif"], 
+      /* Bot */ ["Potvissen", "Radioactiviteit"], ["Potvissen", "Gif"], 
+      /* Bot */ ["Orka", "Radioactiviteit"], ["Orka", "Gif"], 
+      /* Bot */ ["Narwallen", "Radioactiviteit"], ["Narwallen", "Gif"], 
+      /* Bot */ ["Dolfijnen", "Radioactiviteit"], ["Dolfijnen", "Gif"], 
+      /* Bot */ ["Blauwe vinvissen", "Radioactiviteit"], ["Blauwe vinvissen", "Gif"], 
+      /* Bot */ ["Grijze walvissen", "Radioactiviteit"], ["Grijze walvissen", "Gif"],
+      /* Bot */ ["Bultruggen", "Radioactiviteit"], ["Bultruggen", "Gif"],
+      /* Bot */ ["Zeekoeien", "Radioactiviteit"], ["Zeekoeien", "Gif"], 
+      /* Bot */ ["Zeeschildpadden", "Radioactiviteit"], ["Zeeschildpadden", "Gif"], 
+      /* --- VISSEN --- */
+      ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "Gif"], 
+      ["Agnathen", "Radioactiviteit"], ["Agnathen", "Gif"], 
+      ["Haaien", "Radioactiviteit"], ["Haaien", "Gif"], 
+      ["Spookhaaien", "Radioactiviteit"], ["Spookhaaien", "Gif"], 
+      ["Manta", "Radioactiviteit"], ["Manta", "Gif"],
       /* --- KLEIN LANDLEVEN --- */ 
       ["Luizen", "Radioactiviteit"], ["Luizen", "Gif"], 
       ["Mijten", "Radioactiviteit"], ["Mijten", "Gif"], 
@@ -2561,26 +2589,42 @@ const combinaties = [
       ["Salamanders", "Radioactiviteit"], ["Salamanders", "Gif"],
       ["Kikkers", "Radioactiviteit"], ["Kikkers", "Gif"],
       ["Padden", "Radioactiviteit"], ["Padden", "Gif"],
-      /* --- VISSEN --- */
-      ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "Gif"], 
-      ["Agnathen", "Radioactiviteit"], ["Agnathen", "Gif"], 
-      ["Haaien", "Radioactiviteit"], ["Haaien", "Gif"], 
-      ["Spookhaaien", "Radioactiviteit"], ["Spookhaaien", "Gif"], 
-      ["Manta", "Radioactiviteit"], ["Manta", "Gif"],
-      /* --- GENOTWAREN --- */
-      ["Coca", "Radioactiviteit"], 
-      ["Hop", "Radioactiviteit"], 
-      ["Theeplanten", "Radioactiviteit"], 
-      ["Tabaksplanten", "Radioactiviteit"], 
-      ["Koffieplanten", "Radioactiviteit"], 
-      ["Jasmijn", "Radioactiviteit"], 
-      ["Kamille", "Radioactiviteit"],
+      /* --- BIOLOGIE --- */
+      ["Weefsel", "Radioactiviteit"], 
+      ["Spieren", "Radioactiviteit"], 
+      ["Wortels", "Radioactiviteit"], ["Wortels", "Gif"], 
+      ["Oog", "Radioactiviteit"],
+      ["Blad", "Radioactiviteit"], ["Blad", "Gif"], 
+      ["Zaadjes", "Radioactiviteit"], ["Zaadjes", "Gif"], 
+      ["Ei", "Radioactiviteit"], ["Ei", "Gif"], 
+      ["Bloem", "Radioactiviteit"], ["Bloem", "Gif"],
       /* --- MATERIALEN --- */
-      ["Papyrusriet", "Radioactiviteit"],
-      ["Rotan", "Radioactiviteit"],
-      ["Bamboe", "Radioactiviteit"],
-      ["Hennep", "Radioactiviteit"],
-      ["Vlas", "Radioactiviteit"]
+      ["Vlas", "Radioactiviteit"], ["Vlas", "Gif"],
+      ["Papyrusriet", "Radioactiviteit"], ["Papyrusriet", "Gif"],
+      ["Hennep", "Radioactiviteit"], ["Hennep", "Gif"],
+      ["Katoen", "Radioactiviteit"], ["Katoen", "Gif"],
+      ["Kapok", "Radioactiviteit"], ["Kapok", "Gif"],
+      ["Rotan", "Radioactiviteit"], ["Rotan", "Gif"],
+      ["Jute", "Radioactiviteit"], ["Jute", "Gif"],
+      ["Bamboe", "Radioactiviteit"], ["Bamboe", "Gif"],
+      /* --- GENOTWAREN --- */
+      ["Hop", "Radioactiviteit"], ["Hop", "Gif"], 
+      ["Theeplanten", "Radioactiviteit"], ["Theeplanten", "Gif"], 
+      ["Rooibos", "Radioactiviteit"], ["Rooibos", "Gif"], 
+      ["Coca", "Radioactiviteit"], ["Coca", "Gif"], 
+      ["Suikerriet", "Radioactiviteit"], ["Suikerriet", "Gif"], 
+      ["Tabaksplanten", "Radioactiviteit"], ["Tabaksplanten", "Gif"], 
+      ["Koffieplanten", "Radioactiviteit"], ["Koffieplanten", "Gif"], 
+      ["Jasmijn", "Radioactiviteit"], ["Jasmijn", "Gif"], 
+      ["Kamille", "Radioactiviteit"], ["Kamille", "Gif"],
+      /* --- GRANEN --- */
+      ["Rijst", "Radioactiviteit"], ["Rijst", "Gif"], 
+      ["Maïs", "Radioactiviteit"], ["Maïs", "Gif"],
+      ["Tarwe", "Radioactiviteit"], ["Tarwe", "Gif"],
+      ["Gerst", "Radioactiviteit"], ["Gerst", "Gif"],
+      ["Haver", "Radioactiviteit"], ["Haver", "Gif"],
+      ["Sorghum", "Radioactiviteit"], ["Sorghum", "Gif"],
+      ["Gierst", "Radioactiviteit"], ["Gierst", "Gif"]
     ],
     hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     output: [
@@ -2600,6 +2644,9 @@ const combinaties = [
       ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
       ["map:Zoogdieren", "Radioactiviteit"], ["map:Zoogdieren", "Gif"],
       ["map:Vogels", "Radioactiviteit"], ["map:Vogels", "Gif"],
+      ["map:Carnivoren", "Radioactiviteit"], ["map:Carnivoren", "Gif"],
+      ["map:Primaten", "Radioactiviteit"], ["map:Primaten", "Gif"],
+      ["map:Hoefdieren", "Radioactiviteit"], ["map:Hoefdieren", "Gif"],
       /* --- WATERDIEREN --- */
       ["Zee-egels", "Radioactiviteit"], ["Zee-egels", "Gif"], 
       ["Koraal", "Radioactiviteit"], ["Koraal", "Gif"], 
@@ -2639,7 +2686,6 @@ const combinaties = [
       ["Makreel", "Radioactiviteit"], ["Makreel", "Gif"],
       ["Forel", "Radioactiviteit"], ["Forel", "Gif"],
       /* --- KLEIN LANDLEVEN --- */
-        ["Schorpioenen", "Gif"], 
       ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
       ["Salamanders", "Radioactiviteit"], ["Salamanders", "Gif"],
       ["Kikkers", "Radioactiviteit"], ["Kikkers", "Gif"],
@@ -2673,18 +2719,56 @@ const combinaties = [
   }, /* ------------------ ICM RADIOACTIVITEIT-GIF (HOUT) ------------------ */
   {
     input: [
-      ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"]
+      ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"],
+      /* --- BLOEMEN --- */
+      ["Hortensia", "Radioactiviteit"], ["Hortensia", "Gif"],
+      ["Rozen", "Radioactiviteit"], ["Rozen", "Gif"],
+      ["Rododendron", "Radioactiviteit"], ["Rododendron", "Gif"],
+      ["Protea", "Radioactiviteit"], ["Protea", "Gif"],
+      ["Hibiscus", "Radioactiviteit"], ["Hibiscus", "Gif"],
+      /* --- GENOTWAREN --- */
+      ["Theeplanten", "Radioactiviteit"], ["Theeplanten", "Gif"],
+      ["Rooibos", "Radioactiviteit"], ["Rooibos", "Gif"],
+      ["Coca", "Radioactiviteit"], ["Coca", "Gif"],
+      ["Koffieplanten", "Radioactiviteit"], ["Koffieplanten", "Gif"],
+      ["Jasmijn", "Radioactiviteit"], ["Jasmijn", "Gif"],
+      /* --- FRUIT --- */
+      ["Druiven", "Radioactiviteit"], ["Druiven", "Gif"],
+      ["Appels", "Radioactiviteit"], ["Appels", "Gif"],
+      ["Peren", "Radioactiviteit"], ["Peren", "Gif"],
+      ["Pruimen", "Radioactiviteit"], ["Pruimen", "Gif"],
+      ["Zuurzakken", "Radioactiviteit"], ["Zuurzakken", "Gif"],
+      ["Doerians", "Radioactiviteit"], ["Doerians", "Gif"],
+      ["Vijgen", "Radioactiviteit"], ["Vijgen", "Gif"],
+      ["Olijven", "Radioactiviteit"], ["Olijven", "Gif"],
+      ["Abrikozen", "Radioactiviteit"], ["Abrikozen", "Gif"],
+      ["Kersen", "Radioactiviteit"], ["Kersen", "Gif"],
+      ["Perziken", "Radioactiviteit"], ["Perziken", "Gif"],
+      ["Granaatappels", "Radioactiviteit"], ["Granaatappels", "Gif"],
+      ["Mandarijnen", "Radioactiviteit"], ["Mandarijnen", "Gif"],
+      ["Guaves", "Radioactiviteit"], ["Guaves", "Gif"],
+      ["Mango", "Radioactiviteit"], ["Mango", "Gif"],
+      ["Avocado", "Radioactiviteit"], ["Avocado", "Gif"],
+      ["Kokos", "Radioactiviteit"], ["Kokos", "Gif"],
+      ["Lychee", "Radioactiviteit"], ["Lychee", "Gif"],
+      ["Kaki", "Radioactiviteit"], ["Kaki", "Gif"],
+      ["Kiwi", "Radioactiviteit"], ["Kiwi", "Gif"],
+      ["Dadels", "Radioactiviteit"], ["Dadels", "Gif"],
+      ["Sinaasappels", "Radioactiviteit"], ["Sinaasappels", "Gif"],
+      ["Citroenen", "Radioactiviteit"], ["Citroenen", "Gif"],
+      ["Limoenen", "Radioactiviteit"], ["Limoenen", "Gif"],
+      /* --- ZADEN --- */
+      ["Walnoten", "Radioactiviteit"], ["Walnoten", "Gif"],
+      ["Kastanjes", "Radioactiviteit"], ["Kastanjes", "Gif"],
+      ["Hazelnoten", "Radioactiviteit"], ["Hazelnoten", "Gif"],
+      ["Cacao", "Radioactiviteit"], ["Cacao", "Gif"],
+      ["Amandelen", "Radioactiviteit"], ["Amandelen", "Gif"],
+      ["Pistache", "Radioactiviteit"], ["Pistache", "Gif"],
+      ["Kola", "Radioactiviteit"], ["Kola", "Gif"],
+      ["Paranoten", "Radioactiviteit"], ["Paranoten", "Gif"],
+      ["Cashew", "Radioactiviteit"], ["Cashew", "Gif"]
     ],
     output: [
-      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
-        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
-        we no longer exist 
-        <br><br>- Epicurus`
-      },
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      },
       { naam: "Hout", icoon: "icons/Hout.png", map: "Materialen", 
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
         <br><br>- Aristoteles`
@@ -2695,15 +2779,18 @@ const combinaties = [
     input: [
       ["map:Pril leven", "Vuur"], ["map:Pril leven", "Lava"],
       ["map:Waterdieren", "Vuur"], ["map:Waterdieren", "Lava"],
-      ["map:Geleedpotigen", "Vuur"], ["map:Geleedpotigen", "Lava"],
       ["map:Vissen", "Vuur"], ["map:Vissen", "Lava"],
+      ["map:Geleedpotigen", "Vuur"], ["map:Geleedpotigen", "Lava"],
       ["map:Klein landleven", "Vuur"], ["map:Klein landleven", "Lava"],
-      ["map:Planten", "Vuur"], ["map:Planten", "Lava"],
-      ["map:Smaakmakers", "Vuur"], ["map:Smaakmakers", "Lava"],
-      ["map:Bomen", "Vuur"], ["map:Bomen", "Lava"],
       ["map:Reptielen", "Vuur"], ["map:Reptielen", "Lava"], 
       ["map:Zoogdieren", "Vuur"], ["map:Zoogdieren", "Lava"],
       ["map:Vogels", "Vuur"], ["map:Vogels", "Lava"],
+      ["map:Carnivoren", "Vuur"], ["map:Carnivoren", "Lava"],
+      ["map:Primaten", "Vuur"], ["map:Primaten", "Lava"],
+      ["map:Hoefdieren", "Vuur"], ["map:Hoefdieren", "Lava"],
+      ["map:Planten", "Vuur"], ["map:Planten", "Lava"],
+      ["map:Smaakmakers", "Vuur"], ["map:Smaakmakers", "Lava"],
+      ["map:Bomen", "Vuur"], ["map:Bomen", "Lava"],
       ["map:Bloemen", "Vuur"], ["map:Bloemen", "Lava"],
       ["map:Fruit", "Vuur"], ["map:Fruit", "Lava"],
       ["map:Groenten", "Vuur"], ["map:Groenten", "Lava"],
@@ -2749,7 +2836,8 @@ const combinaties = [
   }, /* ------------------ ICM VUUR (BOT) ------------------ */
   {
     input: [
-      ["map:Reptielen", "Vuur"], ["map:Zoogdieren", "Vuur"], ["map:Vogels", "Vuur"],
+      ["map:Reptielen", "Vuur"], ["map:Zoogdieren", "Vuur"], ["map:Vogels", "Vuur"], ["map:Carnivoren", "Vuur"],
+      ["map:Primaten", "Vuur"], ["map:Hoefdieren", "Vuur"],
       /* --- WATERDIEREN --- */
       ["Zee-egels", "Vuur"], ["Koraal", "Vuur"], 
       ["Potvissen", "Vuur"], ["Orka", "Vuur"], ["Narwallen", "Vuur"], ["Dolfijnen", "Vuur"], 
@@ -2765,9 +2853,10 @@ const combinaties = [
   }, /* ------------------ ICM DOOD (DETRITUS) ------------------ */
   {
     input: [
-      ["map:Pril leven", "Dood"], ["map:Waterdieren", "Dood"], ["map:Vissen", "Dood"], 
-      ["map:Geleedpotigen", "Dood"], ["map:Klein landleven", "Dood"], ["map:Planten", "Dood"], 
-      ["map:Smaakmakers", "Dood"], ["map:Reptielen", "Dood"], ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"],
+      ["map:Pril leven", "Dood"], ["map:Waterdieren", "Dood"], ["map:Vissen", "Dood"], ["map:Geleedpotigen", "Dood"], 
+      ["map:Klein landleven", "Dood"], ["map:Planten", "Dood"], ["map:Smaakmakers", "Dood"], ["map:Reptielen", "Dood"], 
+      ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"], ["map:Carnivoren", "Dood"], ["map:Primaten", "Dood"], 
+      ["map:Hoefdieren", "Dood"], 
       ["map:Bloemen", "Dood"], ["map:Fruit", "Dood"], ["map:Groenten", "Dood"], ["map:Granen", "Dood"],
       /* --- BIOLOGIE --- */
       ["Weefsel", "Dood"], ["Spieren", "Dood"], ["Wortels", "Dood"], ["Oog", "Dood"], ["Vleugels", "Dood"], ["Blad", "Dood"], 
@@ -2789,7 +2878,8 @@ const combinaties = [
   }, /* ------------------ ICM DOOD (BOT) ------------------ */
   {
     input: [
-      ["map:Reptielen", "Dood"], ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"],
+      ["map:Reptielen", "Dood"], ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"], ["map:Carnivoren", "Dood"],
+      ["map:Primaten", "Dood"], ["map:Hoefdieren", "Dood"],
       /* --- WATERDIEREN --- */
       ["Zee-egels", "Dood"], ["Koraal", "Dood"], ["Potvissen", "Dood"], ["Orka", "Dood"], ["Narwallen", "Dood"], 
       ["Dolfijnen", "Dood"], ["Blauwe vinvissen", "Dood"],  ["Grijze walvissen", "Dood"], ["Bultruggen", "Dood"], 
@@ -2802,8 +2892,7 @@ const combinaties = [
       ["Paling", "Dood"], ["Goudvissen", "Dood"], ["Coelacanthen", "Dood"], ["Tiktaalik", "Dood"],
       ["Tonijn", "Dood"], ["Zalm", "Dood"], ["Haring", "Dood"], ["Makreel", "Dood"], ["Forel", "Dood"],
       /* --- KLEIN LANDLEVEN --- */
-      ["Schorpioenen", "Dood"], ["Oertetrapoden", "Dood"], ["Salamanders", "Dood"],
-      ["Kikkers", "Dood"], ["Padden", "Dood"]
+      ["Oertetrapoden", "Dood"], ["Salamanders", "Dood"], ["Kikkers", "Dood"], ["Padden", "Dood"]
     ],
     output: [
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
@@ -2814,7 +2903,8 @@ const combinaties = [
   }, /* ------------------ ICM DOOD (SCHELP) ------------------ */
   {
     input: [
-      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"], ["Slakken", "Dood"]
+      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"], 
+      ["Zeepokken", "Dood"], ["Heremietkreeften", "Dood"], ["Slakken", "Dood"]
     ],
     output: [
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
