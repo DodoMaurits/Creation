@@ -7960,7 +7960,7 @@ const combinaties = [
   }, /* ------------------ MIEREN ------------------ */
   {
     input: [
-      ["map:Bloemen", "Mieren"], ["map:Zaden", "Mieren"],
+      ["Mieren", "map:Bloemen"], ["Mieren", "map:Zaden"],
       /* --- KLEIN LANDLEVEN --- */
       ["Mieren", "Luizen"], ["Mieren", "Mijten"], ["Mieren", "Teken"], ["Mieren", "Termieten"], 
       /* --- BIOLOGIE --- */
@@ -7973,6 +7973,48 @@ const combinaties = [
         quote: `Ants are good citizens, they place group interest first; but they carry it so far, they have few or no 
         political rights. An ant doesn't have the vote, apparently; he just has his duties
         <br><br>- Clarence Day`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ WESPEN ------------------ */
+  {
+    input: [
+      ["Wespen", "map:Bloemen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wespen", "Luizen"], ["Wespen", "Mijten"], ["Wespen", "Teken"], ["Wespen", "Kevers"], ["Wespen", "Vliegen"],
+      ["Wespen", "Vlinders"], ["Wespen", "Krekels"], ["Wespen", "Sprinkhanen"], ["Wespen", "Muggen"], 
+      ["Wespen", "Bijen"],     
+      /* --- PLANTEN --- */
+      ["Wespen", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Wespen", "Bloem"],
+      /* --- GENOTWAREN --- */
+      ["Wespen", "Honing"],
+      /* --- FRUIT --- */
+      ["Wespen", "Druiven"], ["Wespen", "Peren"], ["Wespen", "Pruimen"], ["Wespen", "Bosbessen"], 
+      ["Wespen", "Aardbeien"], ["Wespen", "Frambozen"], ["Wespen", "Vijgen"], ["Wespen", "Abrikozen"],
+      ["Wespen", "Kersen"], ["Wespen", "Perziken"], ["Wespen", "Kaki"], ["Wespen", "Dadels"], ["Wespen", "Appels"],
+      ["Wespen", "Bananen"], ["Wespen", "Mango"], ["Wespen", "Papaja"], ["Wespen", "Guaves"], ["Wespen", "Lychee"],
+      ["Wespen", "Kiwi"], ["Wespen", "Zuurzakken"]
+    ],
+    output: [
+      { naam: "Wespen", icoon: "icons/Wespen.png", map: "Klein landleven", 
+        quote: `Wasps are among the most efficient insect predators, provisioning their nests with paralyzed prey for 
+        their larvae
+        <br><br>- Edward Wilson`
       },
       { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
