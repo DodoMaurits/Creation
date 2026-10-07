@@ -5509,6 +5509,44 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Oervaatplanten", titel: "Probeer opnieuw in het Siluur",
         tekst: `Eerst moeten de oervaatplanten en geleedpotigen het land verkennen, voordat deze evolutionaire stap
         gezet kan worden <br><br>Eerst nodig: oervaatplanten.` } }
+  }, /* ------------------ ZILVERVISJES ------------------ */
+  {
+    input: [
+      ["map:Granen", "Zilvervisjes"], ["map:Zaden", "Zilvervisjes"], 
+      /* --- PRIL LEVEN --- */
+      ["Zilvervisjes", "Schimmel"], ["Zilvervisjes", "Gist"],
+      ["Zilvervisjes", "Korstmos"], ["Zilvervisjes", "Paddenstoelen"], 
+      /* --- PLANTEN --- */
+      ["Zilvervisjes", "Mos"], ["Zilvervisjes", "Vetplanten"], ["Zilvervisjes", "Agave"], ["Zilvervisjes", "Aloë Vera"], 
+      ["Zilvervisjes", "Suikerriet"], 
+      /* --- BIOLOGIE --- */
+      ["Zilvervisjes", "Detritus"], 
+      ["Zilvervisjes", "Wortels"], ["Zilvervisjes", "Blad"], ["Zilvervisjes", "Zaadjes"], ["Zilvervisjes", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Zilvervisjes", "Gember"], ["Zilvervisjes", "Kurkuma"], ["Zilvervisjes", "Knoflook"], ["Zilvervisjes", "Ui"], 
+      /* --- MATERIALEN --- */
+      ["Zilvervisjes", "Hout"], ["Zilvervisjes", "Vlas"], ["Zilvervisjes", "Hennep"], ["Zilvervisjes", "Katoen"], 
+      ["Zilvervisjes", "Jute"], ["Zilvervisjes", "Bamboe"],
+      /* --- GENOTWAREN --- */
+      ["Zilvervisjes", "Honing"], ["Zilvervisjes", "Hop"], ["Zilvervisjes", "Theeplanten"], ["Zilvervisjes", "Rooibos"], 
+      ["Zilvervisjes", "Tabaksplanten"], ["Zilvervisjes", "Kamille"]
+    ],
+    output: [
+      { naam: "Zilvervisjes", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
+        quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
+        insect evolution
+        <br><br>- Norman Platnick`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerspinachtigen", "Evolutie"],
@@ -6258,6 +6296,30 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ LIBELLEN ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Libellen", "Spinnen"], ["Libellen", "Wandelende takken"], ["Libellen", "Kakkerlakken"], ["Libellen", "Kevers"], 
+      ["Libellen", "Mieren"], ["Libellen", "Wespen"], ["Libellen", "Vliegen"], ["Libellen", "Vlinders"], 
+      ["Libellen", "Krekels"], ["Libellen", "Sprinkhanen"], ["Libellen", "Muggen"], ["Libellen", "Bijen"]
+    ],
+    output: [
+      { naam: "Libellen", icoon: "icons/Libellen.png", map: "Klein landleven", 
+        quote: `The beauteous dragonfly's dancing by the waves of the rivulet glancing; she dances here and she dances
+        there, the glimmering, glittering flutterer fair
+        <br><br>- Heinrich Heine`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   }, /* ------------------ LUIZEN ------------------ */
   {
     input: [
@@ -6481,6 +6543,33 @@ const combinaties = [
       { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png", map: "Klein landleven", 
         quote: `Ladybirds are universally loved insects, often seen as symbols of good fortune
         <br><br>- David Goulson`
+      }
+    ]
+  }, /* ------------------ LIEVEHEERSBEESTJES ------------------ */
+  {
+    input: [
+      ["map:Bloemen", "Lieveheersbeestjes"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Lieveheersbeestjes", "Luizen"], ["Lieveheersbeestjes", "Mijten"], ["Lieveheersbeestjes", "Teken"], 
+      ["Lieveheersbeestjes", "Pissebedden"],
+      /* --- BIOLOGIE --- */
+      ["Lieveheersbeestjes", "Bloem"],
+      /* --- GENOTWAREN --- */
+      ["Lieveheersbeestjes", "Honing"]
+    ],
+    output: [
+      { naam: "Lieveheersbeestjes", icoon: "icons/Lieveheersbeestjes.png", map: "Klein landleven", 
+        quote: `Ladybirds are universally loved insects, often seen as symbols of good fortune
+        <br><br>- David Goulson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
