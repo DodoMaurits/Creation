@@ -5512,7 +5512,7 @@ const combinaties = [
   }, /* ------------------ ZILVERVISJES ------------------ */
   {
     input: [
-      ["map:Granen", "Zilvervisjes"], ["map:Zaden", "Zilvervisjes"], 
+      ["Zilvervisjes", "map:Granen"], ["Zilvervisjes", "map:Zaden"], 
       /* --- PRIL LEVEN --- */
       ["Zilvervisjes", "Schimmel"], ["Zilvervisjes", "Gist"],
       ["Zilvervisjes", "Korstmos"], ["Zilvervisjes", "Paddenstoelen"], 
@@ -6548,7 +6548,7 @@ const combinaties = [
   }, /* ------------------ LIEVEHEERSBEESTJES ------------------ */
   {
     input: [
-      ["map:Bloemen", "Lieveheersbeestjes"],
+      ["Lieveheersbeestjes", "map:Bloemen"],
       /* --- KLEIN LANDLEVEN --- */
       ["Lieveheersbeestjes", "Luizen"], ["Lieveheersbeestjes", "Mijten"], ["Lieveheersbeestjes", "Teken"], 
       ["Lieveheersbeestjes", "Pissebedden"],
@@ -7957,6 +7957,38 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Bloem", titel: "Probeer opnieuw in het Krijt",
         tekst: `De volgorde is eerst de bloem, dan de bij.
         <br><br>Eerst nodig: eerste bloem.` } }
+  }, /* ------------------ MIEREN ------------------ */
+  {
+    input: [
+      ["map:Bloemen", "Mieren"], ["map:Zaden", "Mieren"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Mieren", "Luizen"], ["Mieren", "Mijten"], ["Mieren", "Teken"], ["Mieren", "Termieten"], 
+      /* --- BIOLOGIE --- */
+      ["Mieren", "Detritus"], ["Mieren", "Zaadjes"], ["Mieren", "Bloem"], 
+      /* --- GENOTWAREN --- */
+      ["Mieren", "Honing"]
+    ],
+    output: [
+      { naam: "Mieren", icoon: "icons/Mieren.png", map: "Klein landleven", 
+        quote: `Ants are good citizens, they place group interest first; but they carry it so far, they have few or no 
+        political rights. An ant doesn't have the vote, apparently; he just has his duties
+        <br><br>- Clarence Day`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Lepidosauriërs", "Evolutie"],
