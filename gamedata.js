@@ -2809,13 +2809,12 @@ const combinaties = [
       ["map:Bloemen", "Vuur"], ["map:Bloemen", "Lava"],
       ["map:Fruit", "Vuur"], ["map:Fruit", "Lava"],
       ["map:Groenten", "Vuur"], ["map:Groenten", "Lava"],
-      ["map:Granen", "Vuur"], ["map:Granen", "Lava"],
+      ["map:Zaden", "Vuur"], ["map:Zaden", "Lava"],
       /* --- BIOLOGIE --- */
       ["Weefsel", "Vuur"], ["Weefsel", "Lava"],
       ["Spieren", "Vuur"], ["Spieren", "Lava"],
       ["Wortels", "Vuur"], ["Wortels", "Lava"],
       ["Oog", "Vuur"], ["Oog", "Lava"],
-      ["Vleugels", "Vuur"], ["Vleugels", "Lava"],
       ["Blad", "Vuur"], ["Blad", "Lava"],
       ["Zaadjes", "Vuur"], ["Zaadjes", "Lava"],
       ["Ei", "Vuur"], ["Ei", "Lava"],
@@ -2823,19 +2822,32 @@ const combinaties = [
       /* --- BREIN --- */
       ["Brein", "Vuur"], ["Brein", "Lava"],
       /* --- GENOTWAREN --- */
-      ["Coca", "Vuur"], ["Coca", "Lava"],
       ["Hop", "Vuur"], ["Hop", "Lava"],
       ["Theeplanten", "Vuur"], ["Theeplanten", "Lava"],
+      ["Rooibos", "Vuur"], ["Rooibos", "Lava"],
+      ["Coca", "Vuur"], ["Coca", "Lava"],
+      ["Suikerriet", "Vuur"], ["Suikerriet", "Lava"],
       ["Tabaksplanten", "Vuur"], ["Tabaksplanten", "Lava"],
       ["Koffieplanten", "Vuur"], ["Koffieplanten", "Lava"],
       ["Jasmijn", "Vuur"], ["Jasmijn", "Lava"],
       ["Kamille", "Vuur"], ["Kamille", "Lava"],
       /* --- MATERIALEN --- */
+      ["Vlas", "Vuur"], ["Vlas", "Lava"],
       ["Papyrusriet", "Vuur"], ["Papyrusriet", "Lava"],
-      ["Rotan", "Vuur"], ["Rotan", "Lava"],
-      ["Bamboe", "Vuur"], ["Bamboe", "Lava"],
       ["Hennep", "Vuur"], ["Hennep", "Lava"],
-      ["Vlas", "Vuur"], ["Vlas", "Lava"]
+      ["Katoen", "Vuur"], ["Katoen", "Lava"],
+      ["Kapok", "Vuur"], ["Kapok", "Lava"],
+      ["Rotan", "Vuur"], ["Rotan", "Lava"],
+      ["Jute", "Vuur"], ["Jute", "Lava"],
+      ["Bamboe", "Vuur"], ["Bamboe", "Lava"],
+      /* --- GRANEN --- */
+      ["Rijst", "Vuur"], ["Rijst", "Lava"],
+      ["Maïs", "Vuur"], ["Maïs", "Lava"], 
+      ["Tarwe", "Vuur"], ["Tarwe", "Lava"], 
+      ["Gerst", "Vuur"], ["Gerst", "Lava"], 
+      ["Haver", "Vuur"], ["Haver", "Lava"], 
+      ["Sorghum", "Vuur"], ["Sorghum", "Lava"], 
+      ["Gierst", "Vuur"], ["Gierst", "Lava"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2869,12 +2881,12 @@ const combinaties = [
   {
     input: [
       ["map:Pril leven", "Dood"], ["map:Waterdieren", "Dood"], ["map:Vissen", "Dood"], ["map:Geleedpotigen", "Dood"], 
-      ["map:Klein landleven", "Dood"], ["map:Planten", "Dood"], ["map:Smaakmakers", "Dood"], ["map:Reptielen", "Dood"], 
-      ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"], ["map:Carnivoren", "Dood"], ["map:Primaten", "Dood"], 
-      ["map:Hoefdieren", "Dood"], 
-      ["map:Bloemen", "Dood"], ["map:Fruit", "Dood"], ["map:Groenten", "Dood"], ["map:Granen", "Dood"],
+      ["map:Klein landleven", "Dood"], ["map:Reptielen", "Dood"], ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"], 
+      ["map:Carnivoren", "Dood"], ["map:Primaten", "Dood"], ["map:Hoefdieren", "Dood"], ["map:Planten", "Dood"], 
+      ["map:Smaakmakers", "Dood"], ["map:Bomen", "Dood"], ["map:Bloemen", "Dood"], ["map:Fruit", "Dood"], 
+      ["map:Groenten", "Dood"], ["map:Zaden", "Dood"],
       /* --- BIOLOGIE --- */
-      ["Weefsel", "Dood"], ["Spieren", "Dood"], ["Wortels", "Dood"], ["Oog", "Dood"], ["Vleugels", "Dood"], ["Blad", "Dood"], 
+      ["Weefsel", "Dood"], ["Spieren", "Dood"], ["Wortels", "Dood"], ["Oog", "Dood"], ["Blad", "Dood"], 
       ["Zaadjes", "Dood"], ["Ei", "Dood"], ["Bloem", "Dood"],
       /* --- BREIN --- */
       ["Brein", "Dood"],
@@ -2882,7 +2894,11 @@ const combinaties = [
       ["Coca", "Dood"], ["Hop", "Dood"], ["Theeplanten", "Dood"], ["Tabaksplanten", "Dood"], ["Koffieplanten", "Dood"], 
       ["Jasmijn", "Dood"], ["Kamille", "Dood"],
       /* --- MATERIALEN --- */
-      ["Papyrusriet", "Dood"], ["Rotan", "Dood"], ["Bamboe", "Dood"], ["Hennep", "Dood"], ["Vlas", "Dood"]
+      ["Vlas", "Dood"], ["Papyrusriet", "Dood"], ["Hennep", "Dood"], ["Katoen", "Dood"], ["Kapok", "Dood"], 
+      ["Rotan", "Dood"], ["Jute", "Dood"], ["Bamboe", "Dood"],
+      /* --- GRANEN --- */
+      ["Rijst", "Dood"], ["Maïs", "Dood"], ["Tarwe", "Dood"], ["Gerst", "Dood"], ["Haver", "Dood"], ["Sorghum", "Dood"], 
+      ["Gierst", "Dood"]
     ],
     output: [
       { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
@@ -2927,14 +2943,30 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
-  }, /* ------------------ DETRITUS + HOUT ------------------ */
+  }, /* ------------------ ICM DOOD (HOUT) ------------------ */
   {
-    input: ["map:Bomen", "Dood"],
+    input: [
+      ["map:Bomen", "Dood"],
+      /* --- PLANTEN --- */
+      ["Oermagnoliden", "Dood"], ["Oerericales", "Dood"], ["Buxus", "Dood"], ["Oerfagales", "Dood"], ["Heide", "Dood"],
+      /* --- SMAAKMAKERS --- */
+      ["Steranijs", "Dood"], ["Kruidnagel", "Dood"], ["Nootmuskaat", "Dood"], ["Kaneel", "Dood"], ["Peper", "Dood"],
+      /* --- MATERIALEN --- */
+      ["Kapok", "Dood"], ["Rotan", "Dood"], 
+      /* --- BLOEMEN --- */
+      ["Hortensia", "Dood"], ["Rozen", "Dood"], ["Rododendron", "Dood"], ["Protea", "Dood"], ["Hibiscus", "Dood"], 
+      /* --- GENOTWAREN --- */
+      ["Theeplanten", "Dood"], ["Rooibos", "Dood"], ["Coca", "Dood"], ["Koffieplanten", "Dood"], ["Jasmijn", "Dood"], 
+      /* --- FRUIT --- */
+      ["Druiven", "Dood"], ["Appels", "Dood"], ["Peren", "Dood"], ["Pruimen", "Dood"], ["Zuurzakken", "Dood"],
+      ["Doerians", "Dood"], ["Vijgen", "Dood"], ["Olijven", "Dood"], ["Abrikozen", "Dood"], ["Kersen", "Dood"], 
+      ["Perziken", "Dood"], ["Granaatappels", "Dood"], ["Mandarijnen", "Dood"], ["Guaves", "Dood"], 
+      ["Mango", "Dood"], ["Avocado", "Dood"], ["Kokos", "Dood"], ["Lychee", "Dood"], ["Kaki", "Dood"], 
+      ["Kiwi", "Dood"], ["Dadels", "Dood"], ["Sinaasappels", "Dood"], ["Citroenen", "Dood"], ["Limoenen", "Dood"], 
+      /* --- ZADEN --- */
+      ["Walnoten", "Dood"], ["Kastanjes", "Dood"], ["Hazelnoten", "Dood"], ["Cacao", "Dood"], ["Amandelen", "Dood"], 
+      ["Pistache", "Dood"], ["Kola", "Dood"], ["Paranoten", "Dood"], ["Cashew", "Dood"]
     output: [
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      },
       { naam: "Hout", icoon: "icons/Hout.png", map: "Materialen", 
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
         <br><br>- Aristoteles`
@@ -2963,7 +2995,9 @@ const combinaties = [
       ["Oercnidaria", "Zenuwen"], ["Oerbilateria", "Zenuwen"], 
       /* --- WATERDIEREN --- */
       ["Koraal", "Zenuwen"], ["Kwallen", "Zenuwen"], ["Zeeanemonen", "Zenuwen"], 
-      ["Zeesterren", "Zenuwen"], ["Zee-egels", "Zenuwen"]
+      ["Zeesterren", "Zenuwen"], ["Zee-egels", "Zenuwen"],
+      /* --- PLANTEN --- */
+      ["Venusvliegenvanger", "Zenuwen"], ["Zonnedauw", "Zenuwen"]
     ],
     output: [
       { naam: "Tast", icoon: "icons/Tast.png", map: "Brein", 
