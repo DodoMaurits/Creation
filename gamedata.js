@@ -2532,29 +2532,30 @@ const combinaties = [
       ["Bloem", "Radioactiviteit"], ["Bloem", "Gif"],
       /* --- KLEIN LANDLEVEN --- */ 
       ["Luizen", "Radioactiviteit"], ["Luizen", "Gif"], 
+      ["Mijten", "Radioactiviteit"], ["Mijten", "Gif"], 
+      ["Teken", "Radioactiviteit"], ["Teken", "Gif"], 
+      ["Termieten", "Radioactiviteit"], ["Termieten", "Gif"], 
+      ["Pissebedden", "Radioactiviteit"], ["Pissebedden", "Gif"], 
+      ["Oerpolyneopteren", "Radioactiviteit"], ["Oerpolyneopteren", "Gif"],
       ["Duizendpoten", "Radioactiviteit"], ["Duizendpoten", "Gif"],
-      ["Zilvervisjes", "Radioactiviteit"], ["Zilvervisjes", "Gif"],
       ["Hooiwagens", "Radioactiviteit"], ["Hooiwagens", "Gif"], 
         ["Schorpioenen", "Gif"], 
       ["Spinnen", "Radioactiviteit"], ["Spinnen", "Gif"], 
-      ["Mijten", "Radioactiviteit"], ["Mijten", "Gif"], 
-      ["Teken", "Radioactiviteit"], ["Teken", "Gif"], 
-      ["Pissebedden", "Radioactiviteit"], ["Pissebedden", "Gif"], 
-      ["Oerpolyneopteren", "Radioactiviteit"], ["Oerpolyneopteren", "Gif"],
+      ["Zilvervisjes", "Radioactiviteit"], ["Zilvervisjes", "Gif"],
+      ["Wandelende takken", "Radioactiviteit"], ["Wandelende takken", "Gif"], 
+        ["Kakkerlakken", "Gif"], 
       ["Oerhymenopteren", "Radioactiviteit"], ["Oerhymenopteren", "Gif"], 
       /* Schelp */ ["Slakken", "Radioactiviteit"], ["Slakken", "Gif"], ["Slakken", "Zout"], ["Slakken", "Steenzout"], 
       ["Libellen", "Radioactiviteit"], ["Libellen", "Gif"], 
       ["Kevers", "Radioactiviteit"], ["Kevers", "Gif"], 
-      ["Muggen", "Radioactiviteit"], ["Muggen", "Gif"], 
+      ["Lieveheersbeestjes", "Radioactiviteit"], ["Lieveheersbeestjes", "Gif"], 
+      ["Mieren", "Radioactiviteit"], ["Mieren", "Gif"],
+      ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
       ["Vliegen", "Radioactiviteit"], ["Vliegen", "Gif"],
       ["Vlinders", "Radioactiviteit"], ["Vlinders", "Gif"], 
       ["Krekels", "Radioactiviteit"], ["Krekels", "Gif"], 
       ["Sprinkhanen", "Radioactiviteit"], ["Sprinkhanen", "Gif"], 
-      ["Wandelende takken", "Radioactiviteit"], ["Wandelende takken", "Gif"], 
-        ["Kakkerlakken", "Gif"], 
-      ["Termieten", "Radioactiviteit"], ["Termieten", "Gif"], 
-      ["Mieren", "Radioactiviteit"], ["Mieren", "Gif"],
-      ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
+      ["Muggen", "Radioactiviteit"], ["Muggen", "Gif"], 
       ["Bijen", "Radioactiviteit"], ["Bijen", "Gif"],
       ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
       ["Salamanders", "Radioactiviteit"], ["Salamanders", "Gif"],
@@ -2693,15 +2694,16 @@ const combinaties = [
   {
     input: [
       ["map:Pril leven", "Vuur"], ["map:Pril leven", "Lava"],
+      ["map:Waterdieren", "Vuur"], ["map:Waterdieren", "Lava"],
       ["map:Geleedpotigen", "Vuur"], ["map:Geleedpotigen", "Lava"],
       ["map:Vissen", "Vuur"], ["map:Vissen", "Lava"],
       ["map:Klein landleven", "Vuur"], ["map:Klein landleven", "Lava"],
       ["map:Planten", "Vuur"], ["map:Planten", "Lava"],
       ["map:Smaakmakers", "Vuur"], ["map:Smaakmakers", "Lava"],
       ["map:Bomen", "Vuur"], ["map:Bomen", "Lava"],
-      ["map:Reptielen", "Lava"], 
-      ["map:Zoogdieren", "Lava"],
-      ["map:Vogels", "Lava"],
+      ["map:Reptielen", "Vuur"], ["map:Reptielen", "Lava"], 
+      ["map:Zoogdieren", "Vuur"], ["map:Zoogdieren", "Lava"],
+      ["map:Vogels", "Vuur"], ["map:Vogels", "Lava"],
       ["map:Bloemen", "Vuur"], ["map:Bloemen", "Lava"],
       ["map:Fruit", "Vuur"], ["map:Fruit", "Lava"],
       ["map:Groenten", "Vuur"], ["map:Groenten", "Lava"],
@@ -2716,32 +2718,6 @@ const combinaties = [
       ["Zaadjes", "Vuur"], ["Zaadjes", "Lava"],
       ["Ei", "Vuur"], ["Ei", "Lava"],
       ["Bloem", "Vuur"], ["Bloem", "Lava"],
-      /* --- WATERDIEREN --- */
-      ["Sponzen", "Vuur"], ["Sponzen", "Lava"],
-      ["Zeeanemonen", "Vuur"], ["Zeeanemonen", "Lava"],
-      ["Zeesterren", "Vuur"], ["Zeesterren", "Lava"],
-        ["Zee-egels", "Lava"], 
-      ["Kwallen", "Vuur"], ["Kwallen", "Lava"],
-        ["Koraal", "Lava"], 
-      ["Tweekleppigen", "Vuur"], ["Tweekleppigen", "Lava"],
-      ["Manteldieren", "Vuur"], ["Manteldieren", "Lava"],
-      ["Wormen", "Vuur"], ["Wormen", "Lava"],
-      ["Beerdiertjes", "Vuur"], ["Beerdiertjes", "Lava"],
-      ["Oertrochozoa", "Vuur"], ["Oertrochozoa", "Lava"],
-      ["Zeeslakken", "Vuur"], ["Zeeslakken", "Lava"],
-      ["Octopussen", "Vuur"], ["Octopussen", "Lava"],
-      ["Inktvissen", "Vuur"], ["Inktvissen", "Lava"],
-      ["Nautilussen", "Vuur"], ["Nautilussen", "Lava"],
-      ["Reuzeninktvissen", "Vuur"], ["Reuzeninktvissen", "Lava"],
-        ["Potvissen", "Lava"],
-        ["Orka", "Lava"],
-        ["Narwallen", "Lava"],
-        ["Dolfijnen", "Lava"],
-        ["Blauwe vinvissen", "Lava"],
-        ["Grijze walvissen", "Lava"],
-        ["Bultruggen", "Lava"],
-        ["Zeekoeien", "Lava"],
-        ["Zeeschildpadden", "Lava"],
       /* --- BREIN --- */
       ["Brein", "Vuur"], ["Brein", "Lava"],
       /* --- GENOTWAREN --- */
@@ -2770,12 +2746,10 @@ const combinaties = [
         <br><br>- Alexander Anderson`
       }
     ]
-  }, /* ------------------ ICM VUUR (DOOD, AS, BOT) ------------------ */
+  }, /* ------------------ ICM VUUR (BOT) ------------------ */
   {
     input: [
-      ["map:Reptielen", "Vuur"], 
-      ["map:Zoogdieren", "Vuur"],
-      ["map:Vogels", "Vuur"],
+      ["map:Reptielen", "Vuur"], ["map:Zoogdieren", "Vuur"], ["map:Vogels", "Vuur"],
       /* --- WATERDIEREN --- */
       ["Zee-egels", "Vuur"], ["Koraal", "Vuur"], 
       ["Potvissen", "Vuur"], ["Orka", "Vuur"], ["Narwallen", "Vuur"], ["Dolfijnen", "Vuur"], 
@@ -2783,15 +2757,6 @@ const combinaties = [
       ["Zeekoeien", "Vuur"], ["Zeeschildpadden", "Vuur"]
     ],
     output: [
-      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
-        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
-        we no longer exist 
-        <br><br>- Epicurus`
-      },
-      { naam: "As", icoon: "icons/As.png", map: "Vuur", 
-        quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
-        <br><br>- Alexander Anderson`
-      },
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
         quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
         <br><br>- Sue Monk Kidd`
@@ -2800,25 +2765,15 @@ const combinaties = [
   }, /* ------------------ ICM DOOD (DETRITUS) ------------------ */
   {
     input: [
-      ["map:Pril leven", "Dood"], ["map:Geleedpotigen", "Dood"], ["map:Planten", "Dood"], ["map:Smaakmakers", "Dood"],
+      ["map:Pril leven", "Dood"], ["map:Waterdieren", "Dood"], ["map:Vissen", "Dood"], 
+      ["map:Geleedpotigen", "Dood"], ["map:Klein landleven", "Dood"], ["map:Planten", "Dood"], 
+      ["map:Smaakmakers", "Dood"], ["map:Reptielen", "Dood"], ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"],
       ["map:Bloemen", "Dood"], ["map:Fruit", "Dood"], ["map:Groenten", "Dood"], ["map:Granen", "Dood"],
       /* --- BIOLOGIE --- */
       ["Weefsel", "Dood"], ["Spieren", "Dood"], ["Wortels", "Dood"], ["Oog", "Dood"], ["Vleugels", "Dood"], ["Blad", "Dood"], 
       ["Zaadjes", "Dood"], ["Ei", "Dood"], ["Bloem", "Dood"],
-      /* --- WATERDIEREN --- */
-      ["Sponzen", "Dood"], ["Zeeanemonen", "Dood"], ["Zeesterren", "Dood"], ["Kwallen", "Dood"], 
-      ["Manteldieren", "Dood"], ["Wormen", "Dood"], ["Beerdiertjes", "Dood"], ["Oertrochozoa", "Dood"],
-      ["Octopussen", "Dood"], ["Inktvissen", "Dood"], ["Reuzeninktvissen", "Dood"],
-      /* --- VISSEN --- */
-      ["Lancetvisjes", "Dood"], ["Agnathen", "Dood"], ["Haaien", "Dood"], ["Spookhaaien", "Dood"], ["Manta", "Dood"],
       /* --- BREIN --- */
       ["Brein", "Dood"],
-      /* --- KLEIN LANDLEVEN --- */
-      ["Duizendpoten", "Dood"], ["Zilvervisjes", "Dood"], ["Hooiwagens", "Dood"], ["Spinnen", "Dood"], ["Mijten", "Dood"], 
-      ["Teken", "Dood"], ["Pissebedden", "Dood"], ["Oerpolyneopteren", "Dood"], ["Oerhymenopteren", "Dood"], ["Libellen", "Dood"], 
-      ["Luizen", "Dood"], ["Kevers", "Dood"], ["Muggen", "Dood"], ["Vliegen", "Dood"], ["Vlinders", "Dood"], ["Krekels", "Dood"], 
-      ["Sprinkhanen", "Dood"], ["Wandelende takken", "Dood"], ["Kakkerlakken", "Dood"], ["Termieten", "Dood"], ["Mieren", "Dood"],
-      ["Wespen", "Dood"], ["Bijen", "Dood"],
       /* --- GENOTWAREN --- */
       ["Coca", "Dood"], ["Hop", "Dood"], ["Theeplanten", "Dood"], ["Tabaksplanten", "Dood"], ["Koffieplanten", "Dood"], 
       ["Jasmijn", "Dood"], ["Kamille", "Dood"],
@@ -2831,7 +2786,7 @@ const combinaties = [
         <br><br>- George Shaw`
       }
     ]
-  }, /* ------------------ DETRITUS + BOT ------------------ */
+  }, /* ------------------ ICM DOOD (BOT) ------------------ */
   {
     input: [
       ["map:Reptielen", "Dood"], ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"],
@@ -2851,28 +2806,17 @@ const combinaties = [
       ["Kikkers", "Dood"], ["Padden", "Dood"]
     ],
     output: [
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      },
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
         quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
         <br><br>- Sue Monk Kidd`
       }
     ]
-  }, /* ------------------ DETRITUS + SCHELP ------------------ */
+  }, /* ------------------ ICM DOOD (SCHELP) ------------------ */
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"],
-      /* --- KLEIN LANDLEVEN --- */
-      ["Slakken", "Dood"]
+      ["Zeeslakken", "Dood"], ["Tweekleppigen", "Dood"], ["Nautilussen", "Dood"], ["Slakken", "Dood"]
     ],
     output: [
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
