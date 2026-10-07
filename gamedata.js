@@ -2966,6 +2966,7 @@ const combinaties = [
       /* --- ZADEN --- */
       ["Walnoten", "Dood"], ["Kastanjes", "Dood"], ["Hazelnoten", "Dood"], ["Cacao", "Dood"], ["Amandelen", "Dood"], 
       ["Pistache", "Dood"], ["Kola", "Dood"], ["Paranoten", "Dood"], ["Cashew", "Dood"]
+    ],
     output: [
       { naam: "Hout", icoon: "icons/Hout.png", map: "Materialen", 
         quote: `Nature does nothing in vain; the wood and bark of trees serve both shelter and sustenance
@@ -11658,6 +11659,36 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
+  }, /* ------------------ VENUSVLIEGENVANGER ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Venusvliegenvanger", "Luizen"], ["Venusvliegenvanger", "Mijten"], ["Venusvliegenvanger", "Teken"], 
+      ["Venusvliegenvanger", "Termieten"], ["Venusvliegenvanger", "Pissebedden"], ["Venusvliegenvanger", "Duizendpoten"],
+      ["Venusvliegenvanger", "Hooiwagens"], ["Venusvliegenvanger", "Spinnen"], ["Venusvliegenvanger", "Zilvervisjes"],
+      ["Venusvliegenvanger", "Wandelende takken"], ["Venusvliegenvanger", "Kakkerlakken"], 
+      ["Venusvliegenvanger", "Slakken"], ["Venusvliegenvanger", "Kevers"], ["Venusvliegenvanger", "Lieveheersbeestjes"],
+      ["Venusvliegenvanger", "Mieren"], ["Venusvliegenvanger", "Wespen"], ["Venusvliegenvanger", "Vliegen"],
+      ["Venusvliegenvanger", "Vlinders"], ["Venusvliegenvanger", "Krekels"], ["Venusvliegenvanger", "Sprinkhanen"],
+      ["Venusvliegenvanger", "Muggen"], ["Venusvliegenvanger", "Bijen"],
+      /* --- VISSEN --- */
+      ["Venusvliegenvanger", "Lancetvisjes"]
+    ],
+    output: [
+      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
+        quote: `The sensitive leaves respond to touch in a manner almost animal-like
+        <br><br>- Francis Darwin`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oercaryophyllales", "Kust"],
