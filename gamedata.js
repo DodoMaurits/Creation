@@ -11659,6 +11659,35 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
     }
+  }, /* ------------------ ZONNEDAUW ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Zonnedauw", "Luizen"], ["Zonnedauw", "Mijten"], ["Zonnedauw", "Teken"], 
+      ["Zonnedauw", "Termieten"], ["Zonnedauw", "Pissebedden"], ["Zonnedauw", "Duizendpoten"],
+      ["Zonnedauw", "Hooiwagens"], ["Zonnedauw", "Spinnen"], ["Zonnedauw", "Zilvervisjes"],
+      ["Zonnedauw", "Wandelende takken"], ["Zonnedauw", "Kakkerlakken"], 
+      ["Zonnedauw", "Slakken"], ["Zonnedauw", "Kevers"], ["Zonnedauw", "Lieveheersbeestjes"],
+      ["Zonnedauw", "Mieren"], ["Zonnedauw", "Wespen"], ["Zonnedauw", "Vliegen"],
+      ["Zonnedauw", "Vlinders"], ["Zonnedauw", "Krekels"], ["Zonnedauw", "Sprinkhanen"],
+      ["Zonnedauw", "Muggen"], ["Zonnedauw", "Bijen"]
+    ],
+    output: [
+      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
+        quote: `The sundew catches flies by means of a sticky fluid on its leaves
+        <br><br>- John Ellis`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      }
+    ]
   }, /* ------------------ VENUSVLIEGENVANGER ------------------ */
   {
     input: [
@@ -11670,9 +11699,7 @@ const combinaties = [
       ["Venusvliegenvanger", "Slakken"], ["Venusvliegenvanger", "Kevers"], ["Venusvliegenvanger", "Lieveheersbeestjes"],
       ["Venusvliegenvanger", "Mieren"], ["Venusvliegenvanger", "Wespen"], ["Venusvliegenvanger", "Vliegen"],
       ["Venusvliegenvanger", "Vlinders"], ["Venusvliegenvanger", "Krekels"], ["Venusvliegenvanger", "Sprinkhanen"],
-      ["Venusvliegenvanger", "Muggen"], ["Venusvliegenvanger", "Bijen"],
-      /* --- VISSEN --- */
-      ["Venusvliegenvanger", "Lancetvisjes"]
+      ["Venusvliegenvanger", "Muggen"], ["Venusvliegenvanger", "Bijen"]
     ],
     output: [
       { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
@@ -11683,10 +11710,6 @@ const combinaties = [
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
       }
     ]
   },
