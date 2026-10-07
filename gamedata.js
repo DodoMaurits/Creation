@@ -8031,6 +8031,55 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ BIJEN ------------------ */
+  {
+    input: [
+      ["Bijen", "map:Bomen"], ["Bijen", "map:Bloemen"], ["Bijen", "map:Fruit"], ["Bijen", "map:Groenten"], 
+      /* --- PLANTEN --- */
+      ["Bijen", "Heide"], ["Bijen", "Lavendel"], ["Bijen", "Klavers"], ["Bijen", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Bijen", "Bloem"],
+      /* --- SMAAKWAREN --- */
+      ["Bijen", "Kruidnagel"], ["Bijen", "Gember"], ["Bijen", "Kurkuma"], ["Bijen", "Munt"], ["Bijen", "Tijm"], 
+      ["Bijen", "Nootmuskaat"], ["Bijen", "Kaneel"], ["Bijen", "Peper"], ["Bijen", "Kardemom"], ["Bijen", "Mosterd"],
+      ["Bijen", "Knoflook"], ["Bijen", "Ui"], ["Bijen", "Bieslook"], ["Bijen", "Basilicum"], ["Bijen", "Chilipepers"],    
+      ["Bijen", "Oregano"], ["Bijen", "Salie"], ["Bijen", "Anijs"], ["Bijen", "Komijn"], ["Bijen", "Dille"], 
+      ["Bijen", "Koriander"], ["Bijen", "Peterselie"], ["Bijen", "Saffraan"], 
+      /* --- MATERIALEN --- */
+      ["Bijen", "Vlas"], ["Bijen", "Hennep"], ["Bijen", "Katoen"], ["Bijen", "Kapok"], ["Bijen", "Rotan"],
+      ["Bijen", "Jute"], ["Bijen", "Bamboe"],
+      /* --- GENOTWAREN --- */
+      ["Bijen", "Honing"], ["Bijen", "Hop"], ["Bijen", "Theeplanten"], ["Bijen", "Rooibos"], ["Bijen", "Coca"], 
+      ["Bijen", "Tabaksplanten"], ["Bijen", "Koffieplanten"], ["Bijen", "Jasmijn"], ["Bijen", "Kamille"], 
+      /* --- ZADEN --- */
+       ["Bijen", "Maïs"],
+      /* --- ZADEN --- */
+       ["Bijen", "Cacao"]
+    ],
+    vers: `Uit haar buik komt een drank van verschillende kleuren, <br>daarin is genezing voor de mens, aldus zit daarin
+    zeker een teken <br>voor de mensen die nadenken
+    <br><br>De Bij (16:69)`,
+    output: [
+      { naam: "Bijen", icoon: "icons/Bijen.png", map: "Klein landleven", 
+        quote: `As a bee without harming the flower, its colour or scent, flies away, collecting only the honey, even so
+        should the sage wander in the village
+        <br><br>- Gautama Buddha`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      },
+      { naam: "Honing", icoon: "icons/Honing.png", map: "Genotwaren", 
+        quote: `Honey is the only food which includes all the substances necessary to sustain life, including enzymes, 
+        vitamins, minerals, and water
+        <br><br>- John Kellogg`
+      }
+    ]
   },
   {
     input: ["Lepidosauriërs", "Evolutie"],
@@ -8114,20 +8163,6 @@ const combinaties = [
         quote: `In dicotyledons the capacity for secondary growth allows the plant to build strength, branching complexity, 
         and longevity
         <br><br>- Arthur Cronquist`
-      }
-    ]
-  },
-  {
-    input: ["Bijen", "Bloem"],
-    hint: `De bloemmetjes en de bijtjes...`,
-    vers: `Uit haar buik komt een drank van verschillende kleuren, <br>daarin is genezing voor de mens, aldus zit daarin
-    zeker een teken <br>voor de mensen die nadenken
-    <br><br>De Bij (16:69)`,
-    output: [
-      { naam: "Honing", icoon: "icons/Honing.png", map: "Genotwaren", 
-        quote: `Honey is the only food which includes all the substances necessary to sustain life, including enzymes, 
-        vitamins, minerals, and water
-        <br><br>- John Kellogg`
       }
     ]
   },
