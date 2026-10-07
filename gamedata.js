@@ -2508,11 +2508,17 @@ const combinaties = [
     ]
   },
   //------------ DOOD --------------//
-  {
+  {   //------------ ICM RADIOACTIVITEIT-GIF (DOOD, DETRITUS) --------------//
     input: [
       ["map:Pril leven", "Radioactiviteit"], ["map:Pril leven", "IJs"], ["map:Pril leven", "Gif"],
-      ["map:Vissen", "Radioactiviteit"],
+      ["map:Waterdieren", "Radioactiviteit"], ["map:Waterdieren", "Gif"], 
+      /* Schelp: tweekl, zeesl, nau */ /* Bot: */
+      ["map:Vissen", "Radioactiviteit"], ["map:Vissen", "Gif"],
+      ["map:Geleedpotigen", "Radioactiviteit"], ["map:Geleedpotigen", "Gif"], /* Schelp: zeepo, herem */
       ["map:Planten", "Radioactiviteit"],
+      ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
+      ["map:Zoogdieren", "Radioactiviteit"], ["map:Zoogdieren", "Gif"],
+      ["map:Vogels", "Radioactiviteit"], ["map:Vogels", "Gif"],
       ["map:Smaakmakers", "Radioactiviteit"],
       ["map:Bloemen", "Radioactiviteit"],
       ["map:Fruit", "Radioactiviteit"],
@@ -2524,30 +2530,20 @@ const combinaties = [
       ["Wortels", "Radioactiviteit"], ["Wortels", "Gif"], 
       ["Blad", "Radioactiviteit"], ["Blad", "Gif"], 
       ["Bloem", "Radioactiviteit"], ["Bloem", "Gif"],
-      /* --- WATERDIEREN --- */
-      ["Sponzen", "Radioactiviteit"], ["Sponzen", "Gif"], 
-      ["Zeeanemonen", "Radioactiviteit"], ["Zeeanemonen", "Gif"], 
-      ["Zeesterren", "Radioactiviteit"], ["Zeesterren", "Gif"], 
-      ["Kwallen", "Radioactiviteit"], ["Kwallen", "Gif"], 
-      ["Manteldieren", "Radioactiviteit"], ["Manteldieren", "Gif"], 
-      ["Wormen", "Radioactiviteit"], ["Wormen", "Gif"], 
-        ["Beerdiertjes", "Gif"], 
-      ["Oertrochozoa", "Radioactiviteit"], ["Oertrochozoa", "Gif"],
-      ["Octopussen", "Radioactiviteit"], ["Octopussen", "Gif"],
-      ["Inktvissen", "Radioactiviteit"], ["Inktvissen", "Gif"],
-      ["Reuzeninktvissen", "Radioactiviteit"], ["Reuzeninktvissen", "Gif"],
       /* --- KLEIN LANDLEVEN --- */ 
+      ["Luizen", "Radioactiviteit"], ["Luizen", "Gif"], 
       ["Duizendpoten", "Radioactiviteit"], ["Duizendpoten", "Gif"],
       ["Zilvervisjes", "Radioactiviteit"], ["Zilvervisjes", "Gif"],
       ["Hooiwagens", "Radioactiviteit"], ["Hooiwagens", "Gif"], 
+        ["Schorpioenen", "Gif"], 
       ["Spinnen", "Radioactiviteit"], ["Spinnen", "Gif"], 
       ["Mijten", "Radioactiviteit"], ["Mijten", "Gif"], 
       ["Teken", "Radioactiviteit"], ["Teken", "Gif"], 
       ["Pissebedden", "Radioactiviteit"], ["Pissebedden", "Gif"], 
       ["Oerpolyneopteren", "Radioactiviteit"], ["Oerpolyneopteren", "Gif"],
       ["Oerhymenopteren", "Radioactiviteit"], ["Oerhymenopteren", "Gif"], 
+      /* Schelp */ ["Slakken", "Radioactiviteit"], ["Slakken", "Gif"], ["Slakken", "Zout"], ["Slakken", "Steenzout"], 
       ["Libellen", "Radioactiviteit"], ["Libellen", "Gif"], 
-      ["Luizen", "Radioactiviteit"], ["Luizen", "Gif"], 
       ["Kevers", "Radioactiviteit"], ["Kevers", "Gif"], 
       ["Muggen", "Radioactiviteit"], ["Muggen", "Gif"], 
       ["Vliegen", "Radioactiviteit"], ["Vliegen", "Gif"],
@@ -2560,6 +2556,10 @@ const combinaties = [
       ["Mieren", "Radioactiviteit"], ["Mieren", "Gif"],
       ["Wespen", "Radioactiviteit"], ["Wespen", "Gif"], 
       ["Bijen", "Radioactiviteit"], ["Bijen", "Gif"],
+      ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
+      ["Salamanders", "Radioactiviteit"], ["Salamanders", "Gif"],
+      ["Kikkers", "Radioactiviteit"], ["Kikkers", "Gif"],
+      ["Padden", "Radioactiviteit"], ["Padden", "Gif"],
       /* --- VISSEN --- */
       ["Lancetvisjes", "Radioactiviteit"], ["Lancetvisjes", "Gif"], 
       ["Agnathen", "Radioactiviteit"], ["Agnathen", "Gif"], 
@@ -2593,7 +2593,7 @@ const combinaties = [
         <br><br>- George Shaw`
       }
     ]
-  }, /* ------------------ + BOT ------------------ */
+  }, /* ------------------ ICM RADIOACTIVITEIT-GIF (BOT) ------------------ */
   {
     input: [
       ["map:Reptielen", "Radioactiviteit"], ["map:Reptielen", "Gif"], 
@@ -2637,26 +2637,6 @@ const combinaties = [
       ["Haring", "Radioactiviteit"], ["Haring", "Gif"],
       ["Makreel", "Radioactiviteit"], ["Makreel", "Gif"],
       ["Forel", "Radioactiviteit"], ["Forel", "Gif"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Oergeleedpotigen", "Radioactiviteit"], ["Oergeleedpotigen", "Gif"], 
-      ["Trilobieten", "Radioactiviteit"], ["Trilobieten", "Gif"], 
-      ["Oercheliceraten", "Radioactiviteit"], ["Oercheliceraten", "Gif"], 
-      ["Oerspinachtigen", "Radioactiviteit"], ["Oerspinachtigen", "Gif"],       
-      ["Oertienpotigen", "Radioactiviteit"], ["Oertienpotigen", "Gif"], 
-      ["Waterspinnen", "Radioactiviteit"], ["Waterspinnen", "Gif"], 
-      ["Oerkreeftjes", "Radioactiviteit"], ["Oerkreeftjes", "Gif"], 
-      ["Krill", "Radioactiviteit"], ["Krill", "Gif"], 
-      ["Aasgarnalen", "Radioactiviteit"], ["Aasgarnalen", "Gif"], 
-      ["Zeepissebedden", "Radioactiviteit"], ["Zeepissebedden", "Gif"], 
-      ["Reuzenpissebedden", "Radioactiviteit"], ["Reuzenpissebedden", "Gif"], 
-      ["Oerinsecten", "Radioactiviteit"], ["Oerinsecten", "Gif"], 
-      ["Vlokreeftjes", "Radioactiviteit"], ["Vlokreeftjes", "Gif"], 
-      ["Garnalen", "Radioactiviteit"], ["Garnalen", "Gif"], 
-      ["Kreeften", "Radioactiviteit"], ["Kreeften", "Gif"], 
-      ["Krabben", "Radioactiviteit"], ["Krabben", "Gif"], 
-      ["Heremietkreeften", "Radioactiviteit"], ["Heremietkreeften", "Gif"], 
-      ["Zeeschorpioenen", "Radioactiviteit"], ["Zeeschorpioenen", "Gif"], 
-      ["Zwaardstaarten", "Radioactiviteit"], ["Zwaardstaarten", "Gif"], 
       /* --- KLEIN LANDLEVEN --- */
         ["Schorpioenen", "Gif"], 
       ["Oertetrapoden", "Radioactiviteit"], ["Oertetrapoden", "Gif"],
@@ -2665,21 +2645,12 @@ const combinaties = [
       ["Padden", "Radioactiviteit"], ["Padden", "Gif"]
     ],
     output: [
-      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
-        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
-        we no longer exist 
-        <br><br>- Epicurus`
-      },
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      },
       { naam: "Bot", icoon: "icons/Bot.png", map: "Biologie", 
         quote: `In a way, humans are not made of skin and bones as such, as we're made of stories
         <br><br>- Sue Monk Kidd`
       }
     ]
-  }, /* ------------------ + SCHELP ------------------ */
+  }, /* ------------------ ICM RADIOACTIVITEIT-GIF (SCHELP) ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -2688,27 +2659,21 @@ const combinaties = [
       ["Nautilussen", "Radioactiviteit"], ["Nautilussen", "Gif"],
       /* --- GELEEDPOTIGEN --- */
       ["Zeepokken", "Radioactiviteit"], ["Zeepokken", "Gif"],
+      ["Heremietkreeften", "Radioactiviteit"], ["Heremietkreeften", "Gif"],
       /* --- KLEIN LANDLEVEN --- */
       ["Slakken", "Radioactiviteit"], ["Slakken", "Zout"], ["Slakken", "Steenzout"], ["Slakken", "Gif"]
     ],
     output: [
-      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
-        quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
-        we no longer exist 
-        <br><br>- Epicurus`
-      },
-      { naam: "Detritus", icoon: "icons/Detritus.png", map: "Biologie", 
-        quote: `I choose not to make a graveyard of my body for the rotting corpses of dead animals 
-        <br><br>- George Shaw`
-      },
       { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
     ]
-  }, /* ------------------ + HOUT ------------------ */
+  }, /* ------------------ ICM RADIOACTIVITEIT-GIF (HOUT) ------------------ */
   {
-    input: ["map:Bomen", "Radioactiviteit"],
+    input: [
+      ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"]
+    ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
@@ -2724,10 +2689,11 @@ const combinaties = [
         <br><br>- Aristoteles`
       }
     ]
-  }, /* ------------------ VUUR/LAVA ------------------ */
+  }, /* ------------------ ICM VUUR-LAVA (DOOD, AS) ------------------ */
   {
     input: [
       ["map:Pril leven", "Vuur"], ["map:Pril leven", "Lava"],
+      ["map:Geleedpotigen", "Vuur"], ["map:Geleedpotigen", "Lava"],
       ["map:Vissen", "Vuur"], ["map:Vissen", "Lava"],
       ["map:Klein landleven", "Vuur"], ["map:Klein landleven", "Lava"],
       ["map:Planten", "Vuur"], ["map:Planten", "Lava"],
@@ -2778,27 +2744,6 @@ const combinaties = [
         ["Zeeschildpadden", "Lava"],
       /* --- BREIN --- */
       ["Brein", "Vuur"], ["Brein", "Lava"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Oergeleedpotigen", "Vuur"], ["Oergeleedpotigen", "Lava"],
-      ["Trilobieten", "Lava"],
-      ["Oercheliceraten", "Vuur"], ["Oercheliceraten", "Lava"],
-      ["Oerkreeftjes", "Vuur"], ["Oerkreeftjes", "Lava"],
-      ["Oerinsecten", "Vuur"], ["Oerinsecten", "Lava"],
-      ["Zeeschorpioenen", "Lava"],
-      ["Oerspinachtigen", "Vuur"], ["Oerspinachtigen", "Lava"],
-      ["Zwaardstaarten", "Vuur"],
-      ["Krill", "Vuur"], ["Krill", "Lava"],
-      ["Aasgarnalen", "Vuur"], ["Aasgarnalen", "Lava"],
-      ["Zeepissebedden", "Vuur"], ["Zeepissebedden", "Lava"],
-      ["Zeepokken", "Vuur"],
-      ["Vlokreeftjes", "Vuur"], ["Vlokreeftjes", "Lava"],
-      ["Oertienpotigen", "Vuur"], ["Oertienpotigen", "Lava"],
-      ["Reuzenpissebedden", "Vuur"],
-      ["Garnalen", "Vuur"], ["Garnalen", "Lava"],
-      ["Kreeften", "Vuur"],
-      ["Krabben", "Vuur"],
-      ["Heremietkrabben", "Vuur"],
-      ["Waterspinnen", "Vuur"], ["Waterspinnen", "Lava"],
       /* --- GENOTWAREN --- */
       ["Coca", "Vuur"], ["Coca", "Lava"],
       ["Hop", "Vuur"], ["Hop", "Lava"],
@@ -2825,7 +2770,7 @@ const combinaties = [
         <br><br>- Alexander Anderson`
       }
     ]
-  }, /* ------------------ VUUR + BOT ------------------ */
+  }, /* ------------------ ICM VUUR (DOOD, AS, BOT) ------------------ */
   {
     input: [
       ["map:Reptielen", "Vuur"], 
@@ -2835,10 +2780,7 @@ const combinaties = [
       ["Zee-egels", "Vuur"], ["Koraal", "Vuur"], 
       ["Potvissen", "Vuur"], ["Orka", "Vuur"], ["Narwallen", "Vuur"], ["Dolfijnen", "Vuur"], 
       ["Blauwe vinvissen", "Vuur"], ["Grijze walvissen", "Vuur"], ["Bultruggen", "Vuur"], 
-      ["Zeekoeien", "Vuur"], ["Zeeschildpadden", "Vuur"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Trilobieten", "Vuur"], ["Zeeschorpioenen", "Vuur"], ["Zwaardstaarten", "Vuur"], ["Zeepokken", "Vuur"],
-      ["Reuzenpissebedden", "Vuur"], ["Kreeften", "Vuur"], ["Krabben", "Vuur"], ["Heremietkrabben", "Vuur"]
+      ["Zeekoeien", "Vuur"], ["Zeeschildpadden", "Vuur"]
     ],
     output: [
       { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
@@ -2855,16 +2797,11 @@ const combinaties = [
         <br><br>- Sue Monk Kidd`
       }
     ]
-  }, /* ------------------ DETRITUS ------------------ */
+  }, /* ------------------ ICM DOOD (DETRITUS) ------------------ */
   {
     input: [
-      ["map:Pril leven", "Dood"],
-      ["map:Planten", "Dood"],
-      ["map:Smaakmakers", "Dood"],
-      ["map:Bloemen", "Dood"],
-      ["map:Fruit", "Dood"],
-      ["map:Groenten", "Dood"], 
-      ["map:Granen", "Dood"],
+      ["map:Pril leven", "Dood"], ["map:Geleedpotigen", "Dood"], ["map:Planten", "Dood"], ["map:Smaakmakers", "Dood"],
+      ["map:Bloemen", "Dood"], ["map:Fruit", "Dood"], ["map:Groenten", "Dood"], ["map:Granen", "Dood"],
       /* --- BIOLOGIE --- */
       ["Weefsel", "Dood"], ["Spieren", "Dood"], ["Wortels", "Dood"], ["Oog", "Dood"], ["Vleugels", "Dood"], ["Blad", "Dood"], 
       ["Zaadjes", "Dood"], ["Ei", "Dood"], ["Bloem", "Dood"],
@@ -2897,8 +2834,7 @@ const combinaties = [
   }, /* ------------------ DETRITUS + BOT ------------------ */
   {
     input: [
-      ["map:Geleedpotigen", "Dood"], ["map:Reptielen", "Dood"], 
-      ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"],
+      ["map:Reptielen", "Dood"], ["map:Zoogdieren", "Dood"], ["map:Vogels", "Dood"],
       /* --- WATERDIEREN --- */
       ["Zee-egels", "Dood"], ["Koraal", "Dood"], ["Potvissen", "Dood"], ["Orka", "Dood"], ["Narwallen", "Dood"], 
       ["Dolfijnen", "Dood"], ["Blauwe vinvissen", "Dood"],  ["Grijze walvissen", "Dood"], ["Bultruggen", "Dood"], 
