@@ -7832,6 +7832,37 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ TYRANNOSAURIËRS ------------------ */
+  {
+    input: [
+      ["Tyrannosauriërs", "map:Vissen"], ["Tyrannosauriërs", "map:Zoogdieren"], ["Tyrannosauriërs", "map:Vogels"],
+      ["Tyrannosauriërs", "map:Carnivoren"], ["Tyrannosauriërs", "map:Hoefdieren"], ["Tyrannosauriërs", "map:Primaten"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Tyrannosauriërs", "Oertetrapoden"], ["Tyrannosauriërs", "Salamanders"], ["Tyrannosauriërs", "Kikkers"], 
+      ["Tyrannosauriërs", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Tyrannosauriërs", "Slangen"], ["Tyrannosauriërs", "Oersynapsiden"], ["Tyrannosauriërs", "Oerdiapsiden"],
+      ["Tyrannosauriërs", "Oeranapsiden"], ["Tyrannosauriërs", "Schildpadden"], ["Tyrannosauriërs", "Pterosauriërs"],
+      ["Tyrannosauriërs", "Lepidosauriërs"], ["Tyrannosauriërs", "Crurotarsi"], ["Tyrannosauriërs", "Oerdinosauriërs"],
+      ["Tyrannosauriërs", "Oermaniraptoren"], ["Tyrannosauriërs", "Sauropoden"], ["Tyrannosauriërs", "Stegosauriërs"],
+      ["Tyrannosauriërs", "Gekko"], ["Tyrannosauriërs", "Leguanen"], ["Tyrannosauriërs", "Krokodillen"]
+    ],
+    output: [
+      { naam: "Tyrannosauriërs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
+        quote: `Tyrannosaurs were the apex predators of their time, with massive skulls, powerful jaws, and a body built 
+        for both hunting and intimidation
+        <br><br>- Jack Horner`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Rode algen", "Leca"],
@@ -8326,7 +8357,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  }, /* ------------------ SLANGEN ------------------ */
+  },
   {
     input: [/* BLoed */
       /* --- VISSEN --- */
@@ -8361,6 +8392,33 @@ const combinaties = [
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ GEKKO'S ------------------ */
+  {
+    input: [
+      ["Gekko's", "map:Klein landleven"], ["Gekko's", "map:Bloemen"], ["Gekko's", "map:Fruit"], 
+      /* --- WATERDIEREN --- */
+      ["Gekko's", "Wormen"],
+      /* --- BIOLOGIE --- */
+      ["Gekko's", "Bloem"],
+        /* --- GENOTWAREN --- */
+      ["Gekko's", "Honing"]
+    ],
+    output: [
+      { naam: "Gekko's", icoon: "icons/Gekko's.png", map: "Reptielen", 
+        quote: `Geckos can run up walls and across ceilings with ease, their feet equipped with millions of microscopic 
+        hairs that cling by the slightest forces
+        <br><br>- Kellar Autumn`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
