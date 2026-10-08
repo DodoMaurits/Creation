@@ -6731,13 +6731,18 @@ const combinaties = [
   }, /* ------------------ OERSYNAPSIDEN ------------------ */
   {
     input: [
-      ["Oersynapsiden", "Wormen"], ["Oersynapsiden", "Oergeleedpotigen"], ["Oersynapsiden", "Oercheliceraten"],
-      ["Oersynapsiden", "Duizendpoten"], ["Oersynapsiden", "Oerkreeftjes"], ["Oersynapsiden", "Oerinsecten"], 
-      ["Oersynapsiden", "Spinnen"], ["Oersynapsiden", "Mijten"], ["Oersynapsiden", "Pissebedden"], 
-      ["Oersynapsiden", "Zilvervisjes"], ["Oersynapsiden", "Oerpolyneopteren"], ["Oersynapsiden", "Oerhymenopteren"], 
-      ["Oersynapsiden", "Luizen"], ["Oersynapsiden", "Kevers"], ["Oersynapsiden", "Muggen"], ["Oersynapsiden", "Vliegen"], 
-      ["Oersynapsiden", "Vlinders"], ["Oersynapsiden", "Krekels"], ["Oersynapsiden", "Sprinkhanen"], 
-      ["Oersynapsiden", "Wandelende takken"], ["Oersynapsiden", "Kakkerlakken"], ["Oersynapsiden", "Termieten"]
+      /* --- WATERDIEREN --- */
+      ["Oersynapsiden", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oersynapsiden", "Oergeleedpotigen"], ["Oersynapsiden", "Oercheliceraten"], ["Oersynapsiden", "Oerkreeftjes"], 
+      ["Oersynapsiden", "Oerinsecten"], ["Oersynapsiden", "Zwaardstaarten"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oersynapsiden", "Luizen"], ["Oersynapsiden", "Mijten"], ["Oersynapsiden", "Termieten"], 
+      ["Oersynapsiden", "Pissebedden"], ["Oersynapsiden", "Oerpolyneopteren"], ["Oersynapsiden", "Duizendpoten"], 
+      ["Oersynapsiden", "Spinnen"], ["Oersynapsiden", "Zilvervisjes"], ["Oersynapsiden", "Wandelende takken"], 
+      ["Oersynapsiden", "Kakkerlakken"], ["Oersynapsiden", "Oerhymenopteren"], ["Oersynapsiden", "Kevers"], 
+      ["Oersynapsiden", "Vliegen"], ["Oersynapsiden", "Vlinders"], ["Oersynapsiden", "Krekels"], 
+      ["Oersynapsiden", "Sprinkhanen"], ["Oersynapsiden", "Muggen"]
     ],
     output: [
       { naam: "Oersynapsiden", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
@@ -6757,8 +6762,8 @@ const combinaties = [
     ]  
   },
   {
-    input: [
-      ["Oersynapsiden", "Zwaardstaarten"], ["Oersynapsiden", "Oertetrapoden"], ["Oersynapsiden", "Oercynodonten"]
+    input: [/* Bloed */
+      ["Oersynapsiden", "Oertetrapoden"], ["Oersynapsiden", "Oercynodonten"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -6785,13 +6790,18 @@ const combinaties = [
   }, /* ------------------ OERDIAPSIDEN ------------------ */
   {
     input: [
-      ["Oerdiapsiden", "Wormen"], ["Oerdiapsiden", "Oergeleedpotigen"], ["Oerdiapsiden", "Oercheliceraten"],
-      ["Oerdiapsiden", "Duizendpoten"], ["Oerdiapsiden", "Oerkreeftjes"], ["Oerdiapsiden", "Oerinsecten"], 
-      ["Oerdiapsiden", "Spinnen"], ["Oerdiapsiden", "Mijten"], ["Oerdiapsiden", "Pissebedden"], 
-      ["Oerdiapsiden", "Zilvervisjes"], ["Oerdiapsiden", "Oerpolyneopteren"], ["Oerdiapsiden", "Oerhymenopteren"], 
-      ["Oerdiapsiden", "Luizen"], ["Oerdiapsiden", "Kevers"], ["Oerdiapsiden", "Muggen"], ["Oerdiapsiden", "Vliegen"], 
-      ["Oerdiapsiden", "Vlinders"], ["Oerdiapsiden", "Krekels"], ["Oerdiapsiden", "Sprinkhanen"], 
-      ["Oerdiapsiden", "Wandelende takken"], ["Oerdiapsiden", "Kakkerlakken"], ["Oerdiapsiden", "Termieten"]
+      /* --- WATERDIEREN --- */
+      ["Oersynapsiden", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oersynapsiden", "Oergeleedpotigen"], ["Oersynapsiden", "Oercheliceraten"], ["Oersynapsiden", "Oerkreeftjes"], 
+      ["Oersynapsiden", "Oerinsecten"], ["Oersynapsiden", "Zwaardstaarten"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oersynapsiden", "Luizen"], ["Oersynapsiden", "Mijten"], ["Oersynapsiden", "Termieten"], 
+      ["Oersynapsiden", "Pissebedden"], ["Oersynapsiden", "Oerpolyneopteren"], ["Oersynapsiden", "Duizendpoten"], 
+      ["Oersynapsiden", "Spinnen"], ["Oersynapsiden", "Zilvervisjes"], ["Oersynapsiden", "Wandelende takken"], 
+      ["Oersynapsiden", "Kakkerlakken"], ["Oersynapsiden", "Oerhymenopteren"], ["Oersynapsiden", "Kevers"], 
+      ["Oersynapsiden", "Vliegen"], ["Oersynapsiden", "Vlinders"], ["Oersynapsiden", "Krekels"], 
+      ["Oersynapsiden", "Sprinkhanen"], ["Oersynapsiden", "Muggen"]
     ],
     output: [
       { naam: "Oerdiapsiden", icoon: "icons/Oerdiapsiden.png", map: "Reptielen", 
@@ -6811,8 +6821,8 @@ const combinaties = [
     ]  
   },
   {
-    input: [
-      ["Oerdiapsiden", "Zwaardstaarten"], ["Oerdiapsiden", "Oertetrapoden"], ["Oerdiapsiden", "Oercynodonten"]
+    input: [ /* Bloed */
+      ["Oerdiapsiden", "Oertetrapoden"], ["Oerdiapsiden", "Oercynodonten"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -6839,13 +6849,18 @@ const combinaties = [
   }, /* ------------------ OERANAPSIDEN ------------------ */
   {
     input: [
-      ["Oeranapsiden", "Wormen"], ["Oeranapsiden", "Oergeleedpotigen"], ["Oeranapsiden", "Oercheliceraten"],
-      ["Oeranapsiden", "Duizendpoten"], ["Oeranapsiden", "Oerkreeftjes"], ["Oeranapsiden", "Oerinsecten"], 
-      ["Oeranapsiden", "Spinnen"], ["Oeranapsiden", "Mijten"], ["Oeranapsiden", "Pissebedden"], 
-      ["Oeranapsiden", "Zilvervisjes"], ["Oeranapsiden", "Oerpolyneopteren"], ["Oeranapsiden", "Oerhymenopteren"], 
-      ["Oeranapsiden", "Luizen"], ["Oeranapsiden", "Kevers"], ["Oeranapsiden", "Muggen"], ["Oeranapsiden", "Vliegen"], 
-      ["Oeranapsiden", "Vlinders"], ["Oeranapsiden", "Krekels"], ["Oeranapsiden", "Sprinkhanen"], 
-      ["Oeranapsiden", "Wandelende takken"], ["Oeranapsiden", "Kakkerlakken"], ["Oeranapsiden", "Termieten"]
+      /* --- WATERDIEREN --- */
+      ["Oersynapsiden", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oersynapsiden", "Oergeleedpotigen"], ["Oersynapsiden", "Oercheliceraten"], ["Oersynapsiden", "Oerkreeftjes"], 
+      ["Oersynapsiden", "Oerinsecten"], ["Oersynapsiden", "Zwaardstaarten"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oersynapsiden", "Luizen"], ["Oersynapsiden", "Mijten"], ["Oersynapsiden", "Termieten"], 
+      ["Oersynapsiden", "Pissebedden"], ["Oersynapsiden", "Oerpolyneopteren"], ["Oersynapsiden", "Duizendpoten"], 
+      ["Oersynapsiden", "Spinnen"], ["Oersynapsiden", "Zilvervisjes"], ["Oersynapsiden", "Wandelende takken"], 
+      ["Oersynapsiden", "Kakkerlakken"], ["Oersynapsiden", "Oerhymenopteren"], ["Oersynapsiden", "Kevers"], 
+      ["Oersynapsiden", "Vliegen"], ["Oersynapsiden", "Vlinders"], ["Oersynapsiden", "Krekels"], 
+      ["Oersynapsiden", "Sprinkhanen"], ["Oersynapsiden", "Muggen"]
     ],
     output: [
       { naam: "Oeranapsiden", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
@@ -6864,8 +6879,8 @@ const combinaties = [
     ]  
   },
   {
-    input: [
-      ["Oeranapsiden", "Zwaardstaarten"], ["Oeranapsiden", "Oertetrapoden"], ["Oeranapsiden", "Oercynodonten"]
+    input: [/* Bloed */
+      ["Oeranapsiden", "Oertetrapoden"], ["Oeranapsiden", "Oercynodonten"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
@@ -7189,13 +7204,19 @@ const combinaties = [
   }, /* ------------------ PTEROSAURIËRS ------------------ */
   {
     input: [
-      ["Pterosauriërs", "Wormen"], ["Pterosauriërs", "Oergeleedpotigen"], ["Pterosauriërs", "Oercheliceraten"],
-      ["Pterosauriërs", "Duizendpoten"], ["Pterosauriërs", "Oerkreeftjes"], ["Pterosauriërs", "Oerinsecten"], 
-      ["Pterosauriërs", "Spinnen"], ["Pterosauriërs", "Mijten"], ["Pterosauriërs", "Pissebedden"], 
-      ["Pterosauriërs", "Zilvervisjes"], ["Pterosauriërs", "Oerpolyneopteren"], ["Pterosauriërs", "Oerhymenopteren"], 
-      ["Pterosauriërs", "Luizen"], ["Pterosauriërs", "Kevers"], ["Pterosauriërs", "Muggen"], ["Pterosauriërs", "Vliegen"], 
+      /* --- WATERDIEREN --- */
+      ["Pterosauriërs", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Pterosauriërs", "Oergeleedpotigen"], ["Pterosauriërs", "Oercheliceraten"],
+      ["Pterosauriërs", "Oerkreeftjes"], ["Pterosauriërs", "Oerinsecten"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Pterosauriërs", "Luizen"], ["Pterosauriërs", "Mijten"],  ["Pterosauriërs", "Termieten"], 
+      ["Pterosauriërs", "Pissebedden"], ["Pterosauriërs", "Oerpolyneopteren"], ["Pterosauriërs", "Duizendpoten"], 
+      ["Pterosauriërs", "Spinnen"], ["Pterosauriërs", "Zilvervisjes"], 
+      ["Pterosauriërs", "Wandelende takken"], ["Pterosauriërs", "Kakkerlakken"],
+      ["Pterosauriërs", "Oerhymenopteren"], ["Pterosauriërs", "Kevers"], ["Pterosauriërs", "Vliegen"], 
       ["Pterosauriërs", "Vlinders"], ["Pterosauriërs", "Krekels"], ["Pterosauriërs", "Sprinkhanen"], 
-      ["Pterosauriërs", "Wandelende takken"], ["Pterosauriërs", "Kakkerlakken"], ["Pterosauriërs", "Termieten"]
+      ["Pterosauriërs", "Muggen"]
     ],
     output: [
       { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
@@ -7243,14 +7264,19 @@ const combinaties = [
   }, /* ------------------ LEPIDOSAURIËRS ------------------ */
   {
     input: [
-      ["Lepidosauriërs", "Wormen"], ["Lepidosauriërs", "Oergeleedpotigen"], ["Lepidosauriërs", "Oercheliceraten"],
-      ["Lepidosauriërs", "Duizendpoten"], ["Lepidosauriërs", "Oerkreeftjes"], ["Lepidosauriërs", "Oerinsecten"], 
-      ["Lepidosauriërs", "Spinnen"], ["Lepidosauriërs", "Mijten"], ["Lepidosauriërs", "Pissebedden"], 
-      ["Lepidosauriërs", "Zilvervisjes"], ["Lepidosauriërs", "Oerpolyneopteren"], ["Lepidosauriërs", "Oerhymenopteren"], 
-      ["Lepidosauriërs", "Luizen"], ["Lepidosauriërs", "Kevers"], ["Lepidosauriërs", "Muggen"], 
-      ["Lepidosauriërs", "Vliegen"], ["Lepidosauriërs", "Vlinders"], ["Lepidosauriërs", "Krekels"], 
-      ["Lepidosauriërs", "Sprinkhanen"], ["Lepidosauriërs", "Wandelende takken"], ["Lepidosauriërs", "Kakkerlakken"], 
-      ["Lepidosauriërs", "Termieten"]
+      /* --- WATERDIEREN --- */
+      ["Lepidosauriërs", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Lepidosauriërs", "Oergeleedpotigen"], ["Lepidosauriërs", "Oercheliceraten"],
+      ["Lepidosauriërs", "Oerkreeftjes"], ["Lepidosauriërs", "Oerinsecten"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Lepidosauriërs", "Luizen"], ["Lepidosauriërs", "Mijten"],  ["Lepidosauriërs", "Termieten"], 
+      ["Lepidosauriërs", "Pissebedden"], ["Lepidosauriërs", "Oerpolyneopteren"], ["Lepidosauriërs", "Duizendpoten"], 
+      ["Lepidosauriërs", "Spinnen"], ["Lepidosauriërs", "Zilvervisjes"], 
+      ["Lepidosauriërs", "Wandelende takken"], ["Lepidosauriërs", "Kakkerlakken"],
+      ["Lepidosauriërs", "Oerhymenopteren"], ["Lepidosauriërs", "Kevers"], ["Lepidosauriërs", "Vliegen"], 
+      ["Lepidosauriërs", "Vlinders"], ["Lepidosauriërs", "Krekels"], ["Lepidosauriërs", "Sprinkhanen"], 
+      ["Lepidosauriërs", "Muggen"]
     ],
     output: [
       { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
@@ -7298,13 +7324,19 @@ const combinaties = [
   }, /* ------------------ CRUROTARSI ------------------ */
   {
     input: [
-      ["Crurotarsi", "Wormen"], ["Crurotarsi", "Oergeleedpotigen"], ["Crurotarsi", "Oercheliceraten"],
-      ["Crurotarsi", "Duizendpoten"], ["Crurotarsi", "Oerkreeftjes"], ["Crurotarsi", "Oerinsecten"], 
-      ["Crurotarsi", "Spinnen"], ["Crurotarsi", "Mijten"], ["Crurotarsi", "Pissebedden"], 
-      ["Crurotarsi", "Zilvervisjes"], ["Crurotarsi", "Oerpolyneopteren"], ["Crurotarsi", "Oerhymenopteren"], 
-      ["Crurotarsi", "Luizen"], ["Crurotarsi", "Kevers"], ["Crurotarsi", "Muggen"], ["Crurotarsi", "Vliegen"], 
+      /* --- WATERDIEREN --- */
+      ["Crurotarsi", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Crurotarsi", "Oergeleedpotigen"], ["Crurotarsi", "Oercheliceraten"],
+      ["Crurotarsi", "Oerkreeftjes"], ["Crurotarsi", "Oerinsecten"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Crurotarsi", "Luizen"], ["Crurotarsi", "Mijten"],  ["Crurotarsi", "Termieten"], 
+      ["Crurotarsi", "Pissebedden"], ["Crurotarsi", "Oerpolyneopteren"], ["Crurotarsi", "Duizendpoten"], 
+      ["Crurotarsi", "Spinnen"], ["Crurotarsi", "Zilvervisjes"], 
+      ["Crurotarsi", "Wandelende takken"], ["Crurotarsi", "Kakkerlakken"],
+      ["Crurotarsi", "Oerhymenopteren"], ["Crurotarsi", "Kevers"], ["Crurotarsi", "Vliegen"], 
       ["Crurotarsi", "Vlinders"], ["Crurotarsi", "Krekels"], ["Crurotarsi", "Sprinkhanen"], 
-      ["Crurotarsi", "Wandelende takken"], ["Crurotarsi", "Kakkerlakken"], ["Crurotarsi", "Termieten"]
+      ["Crurotarsi", "Muggen"]
     ],
     output: [
       { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
@@ -7352,14 +7384,19 @@ const combinaties = [
   }, /* ------------------ OERDINOSAURIËRS ------------------ */
   {
     input: [
-      ["Oerdinosauriërs", "Wormen"], ["Oerdinosauriërs", "Oergeleedpotigen"], ["Oerdinosauriërs", "Oercheliceraten"],
-      ["Oerdinosauriërs", "Duizendpoten"], ["Oerdinosauriërs", "Oerkreeftjes"], ["Oerdinosauriërs", "Oerinsecten"], 
-      ["Oerdinosauriërs", "Spinnen"], ["Oerdinosauriërs", "Mijten"], ["Oerdinosauriërs", "Pissebedden"], 
-      ["Oerdinosauriërs", "Zilvervisjes"], ["Oerdinosauriërs", "Oerpolyneopteren"], ["Oerdinosauriërs", "Oerhymenopteren"], 
-      ["Oerdinosauriërs", "Luizen"], ["Oerdinosauriërs", "Kevers"], ["Oerdinosauriërs", "Muggen"], 
-      ["Oerdinosauriërs", "Vliegen"], ["Oerdinosauriërs", "Vlinders"], ["Oerdinosauriërs", "Krekels"], 
-      ["Oerdinosauriërs", "Sprinkhanen"], ["Oerdinosauriërs", "Wandelende takken"], ["Oerdinosauriërs", "Kakkerlakken"], 
-      ["Oerdinosauriërs", "Termieten"]
+      /* --- WATERDIEREN --- */
+      ["Oerdinosauriërs", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerdinosauriërs", "Oergeleedpotigen"], ["Oerdinosauriërs", "Oercheliceraten"],
+      ["Oerdinosauriërs", "Oerkreeftjes"], ["Oerdinosauriërs", "Oerinsecten"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerdinosauriërs", "Luizen"], ["Oerdinosauriërs", "Mijten"],  ["Oerdinosauriërs", "Termieten"], 
+      ["Oerdinosauriërs", "Pissebedden"], ["Oerdinosauriërs", "Oerpolyneopteren"], ["Oerdinosauriërs", "Duizendpoten"], 
+      ["Oerdinosauriërs", "Spinnen"], ["Oerdinosauriërs", "Zilvervisjes"], 
+      ["Oerdinosauriërs", "Wandelende takken"], ["Oerdinosauriërs", "Kakkerlakken"],
+      ["Oerdinosauriërs", "Oerhymenopteren"], ["Oerdinosauriërs", "Kevers"], ["Oerdinosauriërs", "Vliegen"], 
+      ["Oerdinosauriërs", "Vlinders"], ["Oerdinosauriërs", "Krekels"], ["Oerdinosauriërs", "Sprinkhanen"], 
+      ["Oerdinosauriërs", "Muggen"]
     ],
     output: [
       { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
@@ -7416,14 +7453,23 @@ const combinaties = [
   }, /* ------------------ SCHILDPADDEN ------------------ */
   {
     input: [
-      ["Schildpadden", "Detritus"], ["Schildpadden", "Rode algen"], ["Schildpadden", "Groene algen"], 
-      ["Schildpadden", "Roodwieren"], ["Schildpadden", "Groenwieren"], ["Schildpadden", "Wormen"], 
-      ["Schildpadden", "Mos"], ["Schildpadden", "Duizendpoten"], ["Schildpadden", "Oerinsecten"], 
-      ["Schildpadden", "Spinnen"], ["Schildpadden", "Oervaatplanten"], ["Schildpadden", "Pissebedden"],
-      ["Schildpadden", "Blad"], ["Schildpadden", "Varens"], ["Schildpadden", "Oerzaadplanten"],
-      ["Schildpadden", "Kevers"], ["Schildpadden", "Muggen"], ["Schildpadden", "Vliegen"], ["Schildpadden", "Vlinders"],
-      ["Schildpadden", "Krekels"], ["Schildpadden", "Sprinkhanen"], ["Schildpadden", "Wandelende takken"],
-      ["Schildpadden", "Kakkerlakken"], ["Schildpadden", "Termieten"]
+      /* --- PRIL LEVEN --- */
+      ["Schildpadden", "Rode algen"], ["Schildpadden", "Groene algen"], ["Schildpadden", "Roodwieren"], 
+      ["Schildpadden", "Groenwieren"], 
+      /* --- WATERDIEREN --- */
+      ["Schildpadden", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Schildpadden", "Oerinsecten"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Schildpadden", "Termieten"], ["Schildpadden", "Pissebedden"], ["Schildpadden", "Duizendpoten"], 
+      ["Schildpadden", "Spinnen"], ["Schildpadden", "Wandelende takken"], ["Schildpadden", "Kakkerlakken"],
+      ["Schildpadden", "Kevers"], ["Schildpadden", "Vliegen"], ["Schildpadden", "Vlinders"], 
+      ["Schildpadden", "Krekels"], ["Schildpadden", "Sprinkhanen"], ["Schildpadden", "Muggen"], 
+      /* --- PLANTEN --- */
+      ["Schildpadden", "Mos"], ["Schildpadden", "Oervaatplanten"], ["Schildpadden", "Varens"], 
+      ["Schildpadden", "Oerzaadplanten"],
+      /* --- BIOLOGIE --- */
+      ["Schildpadden", "Detritus"], ["Schildpadden", "Blad"]
     ],
     output: [
       { naam: "Schildpadden", icoon: "icons/Schildpadden.png", map: "Reptielen", 
@@ -7639,6 +7685,116 @@ const combinaties = [
         </span>`,
       }
     }
+  }, /* ------------------ OERMANIRAPTOREN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Oermaniraptoren", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oermaniraptoren", "Slakken"], ["Oermaniraptoren", "Kevers"], ["Oermaniraptoren", "Krekels"], 
+      ["Oermaniraptoren", "Sprinkhanen"],
+      /* --- BIOLOGIE --- */
+      ["Oermaniraptoren", "Ei"]
+    ],
+    output: [
+      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+        quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
+        the evolutionary roots of modern birds
+        <br><br>- Philip Currie`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- VISSEN --- */
+      ["Oermaniraptoren", "Paling"], ["Oermaniraptoren", "Goudvissen"], ["Oermaniraptoren", "Zalm"],
+      ["Oermaniraptoren", "Karpers"], ["Oermaniraptoren", "Haring"], ["Oermaniraptoren", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oermaniraptoren", "Salamanders"], ["Oermaniraptoren", "Kikkers"], ["Oermaniraptoren", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Oermaniraptoren", "Slangen"], ["Oermaniraptoren", "Oersynapsiden"], ["Oermaniraptoren", "Pterosauriërs"],
+      ["Oermaniraptoren", "Gekko"], ["Oermaniraptoren", "Leguanen"], ["Oermaniraptoren", "Mollen"],
+      ["Oermaniraptoren", "Oerbuideldieren"], ["Oermaniraptoren", "Luiaarden"], ["Oermaniraptoren", "Oerknaagdieren"],
+      ["Oermaniraptoren", "Konijnen"], ["Oermaniraptoren", "Hazen"], ["Oermaniraptoren", "Prairiehonden"],
+      ["Oermaniraptoren", "Ratten"], ["Oermaniraptoren", "Capibara"], ["Oermaniraptoren", "Eekhoorns"],
+      ["Oermaniraptoren", "Muizen"], ["Oermaniraptoren", "Hamsters"], ["Oermaniraptoren", "Spitsmuizen"],
+      /* --- BIOLOGIE --- */
+      ["Oermaniraptoren", "Archaeopteryx"], ["Oermaniraptoren", "Duiven"], ["Oermaniraptoren", "Zwaluwen"],
+      ["Oermaniraptoren", "Spreeuwen"], ["Oermaniraptoren", "Reigers"], ["Oermaniraptoren", "Mussen"],
+      ["Oermaniraptoren", "Vinken"], ["Oermaniraptoren", "Fazanten"], ["Oermaniraptoren", "Kraaien"],
+      ["Oermaniraptoren", "Kieviten"], 
+      /* --- BIOLOGIE --- */
+      ["Oermaniraptoren", "Gazellen"], ["Oermaniraptoren", "Impala"],
+      /* --- PRIMATEN --- */
+      ["Oermaniraptoren", "Oerprimaten"]
+    ],
+    output: [
+      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+        quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
+        the evolutionary roots of modern birds
+        <br><br>- Philip Currie`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ SAUROPODEN ------------------ */
+  {
+    input: [
+      ["Sauropoden", "map:Bloemen"]
+      /* --- PLANTEN --- */
+      ["Sauropoden", "Mos"], ["Sauropoden", "Oervaatplanten"], ["Sauropoden", "Varens"], ["Sauropoden", "Oerzaadplanten"],
+      ["Sauropoden", "Oermagnoliden"], ["Sauropoden", "Gras"], ["Sauropoden", "Vetplanten"], 
+      ["Sauropoden", "Brandnetels"], ["Sauropoden", "Agave"], ["Sauropoden", "Aloë vera"], ["Sauropoden", "Heide"],
+      ["Sauropoden", "Lavendel"], ["Sauropoden", "Klavers"], ["Sauropoden", "Kroos"], ["Sauropoden", "Waterriet"],
+      ["Sauropoden", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Sauropoden", "Blad"], ["Sauropoden", "Bloem"], 
+      /* --- MATERIALEN --- */
+      ["Sauropoden", "Hout"], ["Sauropoden", "Bamboe"], 
+      /* --- BOMEN --- */
+      ["Sauropoden", "Coniferen"], ["Sauropoden", "Palmvarens"], ["Sauropoden", "Ginkgo"], ["Sauropoden", "Tulpenbomen"], 
+      ["Sauropoden", "Magnolia"], ["Sauropoden", "Laurierbomen"], ["Sauropoden", "Platanen"], ["Sauropoden", "Oliepalmen"],
+      ["Sauropoden", "Acacia"], ["Sauropoden", "Wilgen"], ["Sauropoden", "Populieren"], ["Sauropoden", "Iepen"], 
+      ["Sauropoden", "Esdoorns"], ["Sauropoden", "Lindes"], ["Sauropoden", "Lindes"], ["Sauropoden", "Paardenkastanjes"], 
+      ["Sauropoden", "Baobabs"], ["Sauropoden", "Elzen"], ["Sauropoden", "Berken"], ["Sauropoden", "Beuken"], 
+      ["Sauropoden", "Eiken"], ["Sauropoden", "Arganbomen"], ["Sauropoden", "Sheabomen"], ["Sauropoden", "Essen"]
+    ],
+    output: [
+      { naam: "Sauropoden", icoon: "icons/Sauropoden.png", map: "Reptielen", 
+        quote: `Sauropods were the gentle giants of the Mesozoic, moving with ponderous grace, their immense bodies 
+        shaping the landscapes they traversed
+        <br><br>- John McIntosh`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Rode algen", "Leca"],
@@ -7658,8 +7814,7 @@ const combinaties = [
         <br><br>Eerst nodig: dinosauriërs.`
       }
     }
-  },
-  /* ------------------ OCTOPUSSEN ------------------ */
+  }, /* ------------------ OCTOPUSSEN ------------------ */
   {
     input: ["Oertrochozoa", "Brein"],
     hint: `Laten we één creatie alles geven: hyperintelligentie, razendsnel camouflagevermogen, zuignappen, leervermogen,
@@ -8104,6 +8259,82 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Bloem", titel: "Probeer opnieuw in het Krijt",
         tekst: `De volgorde is eerst de bloem, dan de bij.
         <br><br>Eerst nodig: eerste bloem.` } }
+  }, /* ------------------ SLANGEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Slangen", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Slangen", "Slakken"], ["Slangen", "Kevers"], ["Slangen", "Krekels"], ["Slangen", "Sprinkhanen"],
+      /* --- BIOLOGIE --- */
+      ["Slangen", "Ei"]
+    ],
+    output: [
+      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+        quote: `The snake sheds its skin, but not its nature
+        <br><br>- Aristoteles`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ SLANGEN ------------------ */
+  {
+    input: [/* BLoed */
+      /* --- VISSEN --- */
+      ["Slangen", "Agnathen"], ["Slangen", "Zeeduivels"], ["Slangen", "Platvissen"], ["Slangen", "Piranha"], 
+      ["Slangen", "Clownvissen"], ["Slangen", "Doktersvissen"], ["Slangen", "Papegaaivissen"], ["Slangen", "Karpers"], 
+      ["Slangen", "Zeepaardjes"], ["Slangen", "Koraalduivels"], ["Slangen", "Oerstraalvinnigen"], 
+      ["Slangen", "Kabeljauwen"], ["Slangen", "Snoeken"], ["Slangen", "Meervallen"], ["Slangen", "Paling"],    
+      ["Slangen", "Goudvissen"], ["Slangen", "Zalm"], ["Slangen", "Haring"], ["Slangen", "Makreel"], ["Slangen", "Forel"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Slangen", "Salamander"], ["Slangen", "Kikkers"], ["Slangen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Slangen", "Gekko"], ["Slangen", "Leguanen"],
+      /* --- ZOOGDIEREN --- */
+      ["Slangen", "Vleermuizen"], ["Slangen", "Konijnen"], ["Slangen", "Hazen"], ["Slangen", "Ratten"], 
+      ["Slangen", "Eekhoorns"], ["Slangen", "Muizen"], ["Slangen", "Hamsters"], ["Slangen", "Spitsmuizen"], 
+      /* --- VOGELS --- */
+      ["Slangen", "Duiven"], ["Slangen", "Zwaluwen"], ["Slangen", "Spreeuwen"], ["Slangen", "Mussen"],
+      ["Slangen", "Kippen"], ["Slangen", "Vinken"], ["Slangen", "Fazanten"], ["Slangen", "Kanaries"],
+      /* --- PRIMATEN --- */
+      ["Slangen", "Galago"], ["Slangen", "Spookdiertjes"], ["Slangen", "Lori"]  
+    ],
+    output: [
+      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+        quote: `The snake sheds its skin, but not its nature
+        <br><br>- Aristoteles`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Crurotarsi", "Evolutie"],
