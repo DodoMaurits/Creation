@@ -7795,6 +7795,43 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ STEGOSAURIËRS ------------------ */
+  {
+    input: [
+      ["Stegosauriërs", "map:Bloemen"]
+      /* --- PLANTEN --- */
+      ["Stegosauriërs", "Mos"], ["Stegosauriërs", "Oervaatplanten"], ["Stegosauriërs", "Varens"], 
+      ["Stegosauriërs", "Oerzaadplanten"], ["Stegosauriërs", "Oermagnoliden"], ["Stegosauriërs", "Gras"], 
+      ["Stegosauriërs", "Vetplanten"], ["Stegosauriërs", "Brandnetels"], ["Stegosauriërs", "Agave"], 
+      ["Stegosauriërs", "Aloë vera"], ["Stegosauriërs", "Heide"], ["Stegosauriërs", "Lavendel"], 
+      ["Stegosauriërs", "Klavers"], ["Stegosauriërs", "Kroos"], ["Stegosauriërs", "Waterriet"], 
+      ["Stegosauriërs", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Stegosauriërs", "Blad"], ["Stegosauriërs", "Bloem"], 
+      /* --- BOMEN --- */
+      ["Stegosauriërs", "Coniferen"], ["Stegosauriërs", "Palmvarens"], ["Stegosauriërs", "Ginkgo"], 
+      ["Stegosauriërs", "Tulpenbomen"], ["Stegosauriërs", "Platanen"], ["Stegosauriërs", "Acacia"], 
+      ["Stegosauriërs", "Esdoorns"], ["Stegosauriërs", "Wilgen"], ["Stegosauriërs", "Populieren"], 
+      ["Stegosauriërs", "Iepen"], ["Stegosauriërs", "Lindes"], ["Stegosauriërs", "Lindes"], 
+      ["Stegosauriërs", "Paardenkastanjes"], ["Stegosauriërs", "Elzen"], ["Stegosauriërs", "Berken"], 
+      ["Stegosauriërs", "Beuken"], ["Stegosauriërs", "Eiken"], ["Stegosauriërs", "Essen"]
+    ],
+    output: [
+      { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
+        quote: `Stegosaurs are among the most iconic of dinosaurs, with their plated backs and spiked tails, suggesting 
+        both defense and display in equal measure
+        <br><br>- Peter Galton`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Rode algen", "Leca"],
