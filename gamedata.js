@@ -8493,6 +8493,99 @@ const combinaties = [
     uitleg: { thresholdElement: { naam: "Bloem", titel: "Probeer opnieuw in het Krijt",
         tekst: `De volgorde is eerst de bloem, dan de bij.
         <br><br>Eerst nodig: eerste bloem.` } }
+  }, /* ------------------ KROKODILLEN ------------------ */
+  {
+    input: [
+      /* --- VISSEN --- */
+      ["Krokodillen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Krokodillen", "Oergeleedpotigen"], ["Krokodillen", "Cheliceraten"], ["Krokodillen", "Oerspinachtigen"], 
+      ["Krokodillen", "Waterspinnen"], ["Krokodillen", "Trilobieten"], ["Krokodillen", "Oerkreeftjes"], 
+      ["Krokodillen", "Krill"], ["Krokodillen", "Aasgarnalen"], ["Krokodillen", "Zeepissebedden"], 
+      ["Krokodillen", "Reuzenpissebedden"], ["Krokodillen", "Oerinsecten"], ["Krokodillen", "Vlokreeftjes"],
+      ["Krokodillen", "Garnalen"], ["Krokodillen", "Kreeften"], ["Krokodillen", "Krabben"], 
+      ["Krokodillen", "Zwaardstaarten"],
+      /* Schelp */ ["Krokodillen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
+        quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
+        it beneath the water
+        <br><br>- Herodotus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [ /* Bloed */
+      ["Krokodillen", "map:Zoogdieren"], ["Krokodillen", "map:Vogels"], ["Krokodillen", "map:Primaten"], 
+      ["Krokodillen", "map:Hoefdieren"],
+      /* --- WATERDIEREN --- */
+      ["Krokodillen", "Zeeschildpadden"],
+      /* --- VISSEN --- */
+      ["Krokodillen", "Agnathen"], ["Krokodillen", "Zeeduivels"], ["Krokodillen", "Platvissen"], 
+      ["Krokodillen", "Piranha"], ["Krokodillen", "Clownvissen"], ["Krokodillen", "Doktersvissen"], 
+      ["Krokodillen", "Papegaaivissen"], ["Krokodillen", "Karpers"], ["Krokodillen", "Zeepaardjes"], 
+      ["Krokodillen", "Vliegvissen"], ["Krokodillen", "Maanvissen"], ["Krokodillen", "Koraalduivels"], 
+      ["Krokodillen", "Kogelvissen"], ["Krokodillen", "Oerstraalvinnigen"], ["Krokodillen", "Kabeljauwen"], 
+      ["Krokodillen", "Snoeken"], ["Krokodillen", "Meervallen"], ["Krokodillen", "Paling"], 
+      /*["Krokodillen", "Haaien"],*/ ["Krokodillen", "Spookhaaien"], ["Krokodillen", "Manta"], 
+      ["Krokodillen", "Goudvissen"], ["Krokodillen", "Coelacanthen"], ["Krokodillen", "Tiktaalik"], 
+      ["Krokodillen", "Tonijn"], ["Krokodillen", "Zalm"], ["Krokodillen", "Haring"],
+      ["Krokodillen", "Makreel"], ["Krokodillen", "Forel"]
+      /* --- KLEIN LANDLEVEN --- */
+      ["Krokodillen", "Oertetrapoden"], ["Krokodillen", "Salamanders"], ["Krokodillen", "Kikkers"], 
+      ["Krokodillen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Krokodillen", "Slangen"], ["Krokodillen", "Oersynapsiden"], ["Krokodillen", "Oerdiapsiden"], 
+      ["Krokodillen", "Oeranapsiden"], ["Krokodillen", "Schildpadden"], ["Krokodillen", "Pterosauriërs"], 
+      ["Krokodillen", "Lepidosauriërs"], ["Krokodillen", "Crurotarsi"], ["Krokodillen", "Oerdinosauriërs"], 
+      ["Krokodillen", "Oermaniraptoren"], ["Krokodillen", "Gekko"], ["Krokodillen", "Leguanen"], 
+      /* --- CARNIVOREN --- */
+      ["Krokodillen", "Oerhondachtigen"], ["Krokodillen", "Oerkatachtigen"], ["Krokodillen", "Walrussen"], 
+      ["Krokodillen", "Zeehonden"], ["Krokodillen", "Zeeleeuwen"], ["Krokodillen", "Otters"],
+      ["Krokodillen", "Dassen"], ["Krokodillen", "Wasberen"], ["Krokodillen", "Marters"], ["Krokodillen", "Wezels"], 
+      ["Krokodillen", "Lynxen"], ["Krokodillen", "Poema"], ["Krokodillen", "Katten"], ["Krokodillen", "Stokstaartjes"],
+      ["Krokodillen", "Jaguars"], ["Krokodillen", "Civetkatten"], ["Krokodillen", "Fossa"], ["Krokodillen", "Cheeta"],
+      ["Krokodillen", "Luipaarden"], ["Krokodillen", "Vossen"], ["Krokodillen", "Honden"]
+    ],
+    output: [
+      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
+        quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
+        it beneath the water
+        <br><br>- Herodotus`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  { /* Schelp */
+    input: ["Krokodillen", "Heremietkreeften"],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: [
