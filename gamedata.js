@@ -7783,7 +7783,7 @@ const combinaties = [
   }, /* ------------------ SAUROPODEN ------------------ */
   {
     input: [
-      ["Sauropoden", "map:Bloemen"]
+      ["Sauropoden", "map:Bloemen"],
       /* --- PLANTEN --- */
       ["Sauropoden", "Mos"], ["Sauropoden", "Oervaatplanten"], ["Sauropoden", "Varens"], ["Sauropoden", "Oerzaadplanten"],
       ["Sauropoden", "Oermagnoliden"], ["Sauropoden", "Gras"], ["Sauropoden", "Vetplanten"], 
