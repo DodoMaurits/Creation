@@ -12662,6 +12662,61 @@ const combinaties = [
         <br><br>- Richard Mabey`
       }
     ]
+  }, /* ------------------ MOLLEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Mollen", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Mollen", "Luizen"], ["Mollen", "Mijten"], ["Mollen", "Teken"], ["Mollen", "Termieten"], ["Mollen", "Pissebedden"], 
+      ["Mollen", "Oerpolyneopteren"], ["Mollen", "Duizendpoten"], ["Mollen", "Hooiwagens"], ["Mollen", "Spinnen"], 
+      ["Mollen", "Zilvervisjes"], ["Mollen", "Wandelende takken"], ["Mollen", "Kakkerlakken"], 
+      ["Mollen", "Oerhymenopteren"], ["Mollen", "Slakken"], ["Mollen", "Kevers"], ["Mollen", "Lieveheersbeestjes"],
+      ["Mollen", "Mieren"], ["Mollen", "Wespen"], ["Mollen", "Vliegen"], ["Mollen", "Vlinders"], ["Mollen", "Krekels"],
+      ["Mollen", "Sprinkhanen"], ["Mollen", "Muggen"], ["Mollen", "Bijen"]
+    ],
+    output: [
+      { naam: "Mollen", icoon: "icons/Mollen.png", map: "Zoogdieren", 
+        quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
+        <br><br>- Richard Mabey`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Mollen", "Oertetrapoden"], ["Mollen", "Salamanders"], ["Mollen", "Kikkers"], ["Mollen", "Padden"], 
+      /* --- ZOOGDIEREN --- */
+      ["Mollen", "Muizen"], ["Mollen", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Mollen", icoon: "icons/Mollen.png", map: "Zoogdieren", 
+        quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
+        <br><br>- Richard Mabey`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerplacentalia", "Bos"], 
