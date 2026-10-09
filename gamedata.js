@@ -7821,7 +7821,7 @@ const combinaties = [
   }, /* ------------------ STEGOSAURIËRS ------------------ */
   {
     input: [
-      ["Stegosauriërs", "map:Bloemen"]
+      ["Stegosauriërs", "map:Bloemen"],
       /* --- PLANTEN --- */
       ["Stegosauriërs", "Mos"], ["Stegosauriërs", "Oervaatplanten"], ["Stegosauriërs", "Varens"], 
       ["Stegosauriërs", "Oerzaadplanten"], ["Stegosauriërs", "Oermagnoliden"], ["Stegosauriërs", "Gras"], 
@@ -8563,7 +8563,7 @@ const combinaties = [
       /*["Krokodillen", "Haaien"],*/ ["Krokodillen", "Spookhaaien"], ["Krokodillen", "Manta"], 
       ["Krokodillen", "Goudvissen"], ["Krokodillen", "Coelacanthen"], ["Krokodillen", "Tiktaalik"], 
       ["Krokodillen", "Tonijn"], ["Krokodillen", "Zalm"], ["Krokodillen", "Haring"],
-      ["Krokodillen", "Makreel"], ["Krokodillen", "Forel"]
+      ["Krokodillen", "Makreel"], ["Krokodillen", "Forel"],
       /* --- KLEIN LANDLEVEN --- */
       ["Krokodillen", "Oertetrapoden"], ["Krokodillen", "Salamanders"], ["Krokodillen", "Kikkers"], 
       ["Krokodillen", "Padden"],
