@@ -8430,6 +8430,54 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ LEGUANEN ------------------ */
+  {
+    input: [
+      ["Leguanen", "map:Bloemen"],
+      /* --- PRIL LEVEN --- */
+      ["Leguanen", "Roodwieren"], ["Leguanen", "Groenwieren"], ["Leguanen", "Bruinwieren"],
+      /* --- WATERDIEREN --- */
+      ["Leguanen", "Wormen"],
+        /* --- KLEIN LANDLEVEN --- */
+      ["Leguanen", "Kakkerlakken"], ["Leguanen", "Slakken"], ["Leguanen", "Kevers"], ["Leguanen", "Vliegen"],
+      ["Leguanen", "Krekels"], ["Leguanen", "Sprinkhanen"], ["Leguanen", "Muggen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Leguanen", "Mos"], ["Leguanen", "Gras"], ["Leguanen", "Klavers"], ["Leguanen", "Kroos"], 
+      ["Leguanen", "Waterriet"], ["Leguanen", "Suikerriet"], ["Leguanen", "Brandnetels"],  ["Leguanen", "Heide"],
+      ["Leguanen", "Lavendel"],
+      /* --- BIOLOGIE --- */
+      ["Leguanen", "Blad"], ["Leguanen", "Zaadjes"],
+      /* --- BOMEN --- */
+      ["Leguanen", "Tulpenbomen"], ["Leguanen", "Magnolia"], ["Leguanen", "Laurierbomen"], ["Leguanen", "Platanen"],
+      ["Leguanen", "Acacia"], ["Leguanen", "Wilgen"], ["Leguanen", "Populieren"], ["Leguanen", "Iepen"], 
+      ["Leguanen", "Esdoorns"], ["Leguanen", "Lindes"], ["Leguanen", "Paardenkastanjes"], ["Leguanen", "Baobabs"],
+      ["Leguanen", "Elzen"], ["Leguanen", "Berken"], ["Leguanen", "Beuken"], ["Leguanen", "Eiken"], 
+      ["Leguanen", "Essen"],
+      /* --- GENOTWAREN --- */
+      ["Leguanen", "Honing"],
+      /* --- FRUIT --- */
+      ["Leguanen", "Vijgen"], ["Leguanen", "Aardbeien"], ["Leguanen", "Bosbessen"], ["Leguanen", "Guaves"], 
+      ["Leguanen", "Mango"], ["Leguanen", "Papaja"], ["Leguanen", "Frambozen"], ["Leguanen", "Bananen"],
+      ["Leguanen", "Kaki"],
+      /* --- GROENTES --- */
+      ["Leguanen", "Sla"], ["Leguanen", "Andijvie"], ["Leguanen", "Boerenkool"]
+    ],
+    output: [
+      { naam: "Leguanen", icoon: "icons/Leguanen.png", map: "Reptielen", 
+        quote: `Iguanas bask for hours in the sun, conserving energy, their stillness broken only by slow, deliberate 
+        movements
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Crurotarsi", "Evolutie"],
