@@ -6377,6 +6377,11 @@ const combinaties = [
         quote: `A mountain is not nearly as much a wonder as a mosquito
         <br><br>- Mokokoma Mokhonoana`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -6472,6 +6477,11 @@ const combinaties = [
         land began with creatures very much like fish
         <br><br>- Neil Shubin`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -6484,16 +6494,19 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Bloed */
       ["Oertetrapoden", "Agnathen"], ["Oertetrapoden", "Oerstraalvinnigen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
     output: [
       { naam: "Oertetrapoden", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
         quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
         land began with creatures very much like fish
         <br><br>- Neil Shubin`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
       },
       { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
@@ -6625,6 +6638,11 @@ const combinaties = [
         as if nature itself is performing a quiet magic
         <br><br>- Randal Voss`
       },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
@@ -6650,6 +6668,11 @@ const combinaties = [
       { naam: "Kikkers", icoon: "icons/Kikkers.png", map: "Klein landleven",
         quote: `A frog in a well cannot conceive of the ocean
         <br><br>- Zhuangzi`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
