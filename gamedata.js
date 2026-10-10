@@ -7001,13 +7001,43 @@ const combinaties = [
   }, /* ------------------ OERCYNODONTEN ------------------ */
   {
     input: [
-      ["Oercynodonten", "Wormen"], ["Oercynodonten", "Oergeleedpotigen"], ["Oercynodonten", "Oercheliceraten"], 
-      ["Oercynodonten", "Duizendpoten"], ["Oercynodonten", "Oerinsecten"], ["Oercynodonten", "Spinnen"], 
-      ["Oercynodonten", "Pissebedden"], ["Oercynodonten", "Zilvervisjes"], ["Oercynodonten", "Oerpolyneopteren"], 
-      ["Oercynodonten", "Oerhymenopteren"], ["Oercynodonten", "Luizen"], ["Oercynodonten", "Kevers"], 
-      ["Oercynodonten", "Muggen"], ["Oercynodonten", "Vliegen"], ["Oercynodonten", "Krekels"], 
-      ["Oercynodonten", "Sprinkhanen"], ["Oercynodonten", "Kakkerlakken"], ["Oercynodonten", "Termieten"],
-      ["Oercynodonten", "Slakken"]
+      ["Oercynodonten", "map:Fruit"], ["Oercynodonten", "map:Groenten"], 
+      /* --- PRIL LEVEN --- */
+      ["Oercynodonten", "Korstmos"], ["Oercynodonten", "Paddenstoelen"], ["Oercynodonten", "Truffels"],
+      /* --- WATERDIEREN --- */
+      ["Oercynodonten", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oercynodonten", "Luizen"], ["Oercynodonten", "Mijten"], ["Oercynodonten", "Teken"], 
+      ["Oercynodonten", "Termieten"], ["Oercynodonten", "Pissebedden"], ["Oercynodonten", "Oerpolyneopteren"], 
+      ["Oercynodonten", "Duizendpoten"], ["Oercynodonten", "Hooiwagens"], ["Oercynodonten", "Spinnen"], 
+      ["Oercynodonten", "Zilvervisjes"], ["Oercynodonten", "Wandelende takken"], ["Oercynodonten", "Kakkerlakken"], 
+      ["Oercynodonten", "Oerhymenopteren"], ["Oercynodonten", "Slakken"], ["Oercynodonten", "Kevers"], 
+      ["Oercynodonten", "Lieveheersbeestjes"], ["Oercynodonten", "Mieren"], ["Oercynodonten", "Wespen"], 
+      ["Oercynodonten", "Vliegen"], ["Oercynodonten", "Vlinders"], ["Oercynodonten", "Krekels"],
+      ["Oercynodonten", "Sprinkhanen"], ["Oercynodonten", "Muggen"], ["Oercynodonten", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Oercynodonten", "Mos"], ["Oercynodonten", "Oervaatplanten"], ["Oercynodonten", "Varens"], 
+      ["Oercynodonten", "Oerzaadplanten"], ["Oercynodonten", "Oermagnoliden"], ["Oercynodonten", "Oermonocotylen"],
+      ["Oercynodonten", "Oereudicoten"], ["Oercynodonten", "Oerfabiden"], ["Oercynodonten", "Oermalviden"],
+      ["Oercynodonten", "Oercaryophyllales"], ["Oercynodonten", "Oerasteriden"], ["Oercynodonten", "Oerericales"],
+      ["Oercynodonten", "Oerlamiden"], ["Oercynodonten", "Oercampanuliden"], ["Oercynodonten", "Vetplanten"], 
+      ["Oercynodonten", "Brandnetels"], ["Oercynodonten", "Aloë vera"], ["Oercynodonten", "Heide"], 
+      ["Oercynodonten", "Lavendel"], ["Oercynodonten", "Klavers"], ["Oercynodonten", "Waterriet"], 
+      ["Oercynodonten", "Suikerriet"],    
+      /* --- BIOLOGIE --- */
+      ["Oercynodonten", "Wortels"], ["Oercynodonten", "Blad"], ["Oercynodonten", "Zaadjes"], ["Oercynodonten", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Oercynodonten", "Truffels"], ["Oercynodonten", "Munt"], ["Oercynodonten", "Tijm"], ["Oercynodonten", "Knoflook"], 
+      ["Oercynodonten", "Ui"], ["Oercynodonten", "Bieslook"], ["Oercynodonten", "Basilicum"], 
+      ["Oercynodonten", "Chilipepers"], ["Oercynodonten", "Oregano"], ["Oercynodonten", "Salie"], 
+      ["Oercynodonten", "Anijs"], ["Oercynodonten", "Komijn"], ["Oercynodonten", "Dille"], ["Oercynodonten", "Koriander"],
+      ["Oercynodonten", "Peterselie"], ["Oercynodonten", "Saffraan"],  
+      /* --- GENOTWAREN --- */
+      ["Oercynodonten", "Honing"],
+      /* --- ZADEN --- */
+      ["Oercynodonten", "Erwten"], ["Oercynodonten", "Soja"], ["Oercynodonten", "Kikkererwten"], 
+      ["Oercynodonten", "Linzen"], ["Oercynodonten", "Sesam"], ["Oercynodonten", "Quinoa"], 
+      ["Oercynodonten", "Sperziebonen"], ["Oercynodonten", "Kidneybonen"] 
     ],
     output: [
       { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
@@ -7027,11 +7057,40 @@ const combinaties = [
     ]
   },
   {
-    input: ["Oercynodonten", "Slakken"],
+    input: [/* Bloed */
+      /* --- VISSEN --- */
+      ["Oercynodonten", "Karpers"], ["Oercynodonten", "Haring"], ["Oercynodonten", "Forel"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oercynodonten", "Oertetrapoden"], ["Oercynodonten", "Salamanders"], ["Oercynodonten", "Kikkers"], 
+      ["Oercynodonten", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Oercynodonten", "Oersynapsiden"], ["Oercynodonten", "Oerdiapsiden"], ["Oercynodonten", "Lepidosauriërs"], 
+      ["Oercynodonten", "Crurotarsi"], ["Oercynodonten", "Gekko"],
+      /* --- ZOOGDIEREN --- */
+      ["Oercynodonten", "Mollen"], ["Oercynodonten", "Oerbuideldieren"], ["Oercynodonten", "Oerknaagdieren"], 
+      ["Oercynodonten", "Konijnen"], ["Oercynodonten", "Ratten"], ["Oercynodonten", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Oercynodonten", "Zwaluwen"], ["Oercynodonten", "Mussen"], ["Oercynodonten", "Vinken"], 
+      ["Oercynodonten", "Kanaries"]  
+    ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
+      { naam: "Oercynodonten", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
+        quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
+        making them the most intimate companions of humans
+        <br><br>- Richard Dawkins`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
