@@ -12830,6 +12830,73 @@ const combinaties = [
         <br><br>- Li Bai`
       }
     ]
+  }, /* ------------------ VLEERMUIZEN ------------------ */
+  {
+    input: [
+      ["Vleermuizen", "map:Bloemen"], ["Vleermuizen", "map:Fruit"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Vleermuizen", "Waterspinnen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Vleermuizen", "Luizen"], ["Vleermuizen", "Mijten"], ["Vleermuizen", "Teken"], 
+      ["Vleermuizen", "Termieten"], ["Vleermuizen", "Pissebedden"], ["Vleermuizen", "Oerpolyneopteren"], 
+      ["Vleermuizen", "Duizendpoten"], ["Vleermuizen", "Hooiwagens"], ["Vleermuizen", "Spinnen"], 
+      ["Vleermuizen", "Zilvervisjes"], ["Vleermuizen", "Wandelende takken"], ["Vleermuizen", "Kakkerlakken"], 
+      ["Vleermuizen", "Oerhymenopteren"], ["Vleermuizen", "Slakken"], ["Vleermuizen", "Kevers"], 
+      ["Vleermuizen", "Lieveheersbeestjes"], ["Vleermuizen", "Mieren"], ["Vleermuizen", "Wespen"], 
+      ["Vleermuizen", "Vliegen"], ["Vleermuizen", "Vlinders"], ["Vleermuizen", "Krekels"],
+      ["Vleermuizen", "Sprinkhanen"], ["Vleermuizen", "Muggen"], ["Vleermuizen", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Vleermuizen", "Bloed"], ["Vleermuizen", "Ei"], ["Vleermuizen", "Bloem"], 
+      /* --- GENOTWAREN --- */
+      ["Vleermuizen", "Honing"]
+    ],
+    output: [
+      { naam: "Vleermuizen", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
+        quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
+        <br><br>- Li Bai`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- VISSEN --- */
+      ["Vleermuizen", "Karpers"], ["Vleermuizen", "Vliegvissen"], ["Vleermuizen", "Haring"], 
+      ["Vleermuizen", "Forel"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Vleermuizen", "Kikkers"], ["Vleermuizen", "Padden"], 
+      /* --- ZOOGDIEREN --- */
+      ["Vleermuizen", "Muizen"], ["Vleermuizen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Vleermuizen", "Mussen"], ["Vleermuizen", "Kolibries"], ["Vleermuizen", "Kanaries"]  
+    ],
+    output: [
+      { naam: "Vleermuizen", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
+        quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
+        <br><br>- Li Bai`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
