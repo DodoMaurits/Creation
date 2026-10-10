@@ -13008,7 +13008,8 @@ const combinaties = [
       ["Klipdassen", "Mos"], ["Klipdassen", "Varens"], ["Klipdassen", "Gras"], ["Klipdassen", "Brandnetels"], 
       ["Klipdassen", "Heide"], ["Klipdassen", "Klavers"],
       /* --- BIOLOGIE --- */
-      ["Klipdassen", "Wortels"], ["Klipdassen", "Blad"], ["Klipdassen", "Zaadjes"], ["Klipdassen", "Ei"], 
+      ["Klipdassen", "Detritus"], ["Klipdassen", "Wortels"], ["Klipdassen", "Blad"], ["Klipdassen", "Zaadjes"], 
+      ["Klipdassen", "Ei"], 
       /* --- SMAAKMAKERS --- */
       ["Klipdassen", "Truffels"], ["Klipdassen", "Munt"], ["Klipdassen", "Tijm"], ["Klipdassen", "Knoflook"], 
       ["Klipdassen", "Ui"], ["Klipdassen", "Bieslook"], ["Klipdassen", "Basilicum"], ["Klipdassen", "Chilipepers"], 
