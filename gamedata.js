@@ -7003,7 +7003,7 @@ const combinaties = [
     input: [
       ["Oercynodonten", "map:Fruit"], ["Oercynodonten", "map:Groenten"], 
       /* --- PRIL LEVEN --- */
-      ["Oercynodonten", "Korstmos"], ["Oercynodonten", "Paddenstoelen"], ["Oercynodonten", "Truffels"],
+      ["Oercynodonten", "Korstmos"], ["Oercynodonten", "Paddenstoelen"],
       /* --- WATERDIEREN --- */
       ["Oercynodonten", "Wormen"],
       /* --- KLEIN LANDLEVEN --- */
@@ -7132,10 +7132,17 @@ const combinaties = [
   }, /* ------------------ KREKELS ------------------ */
   {
     input: [
-      ["Krekels", "Detritus"], ["Krekels", "Mos"], ["Krekels", "Oervaatplanten"], ["Krekels", "Blad"], 
-      ["Krekels", "Zilvervisjes"], ["Krekels", "Luizen"], ["Krekels", "Muggen"], ["Krekels", "Vliegen"], 
-      ["Krekels", "Vlinders"], ["Krekels", "Wandelende takken"], ["Krekels", "Varens"], ["Krekels", "Oerzaadplanten"], 
-      ["Krekels", "Hout"], ["Krekels", "Coniferen"], ["Krekels", "Palmvarens"], ["Krekels", "Ginkgo"]
+      /* --- KLEIN LANDLEVEN --- */
+      ["Krekels", "Luizen"], ["Krekels", "Zilvervisjes"], ["Krekels", "Wandelende takken"], ["Krekels", "Vliegen"], 
+      ["Krekels", "Vlinders"], ["Krekels", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Krekels", "Mos"], ["Krekels", "Oervaatplanten"], ["Krekels", "Varens"], ["Krekels", "Oerzaadplanten"], 
+      /* --- BIOLOGIE --- */
+      ["Krekels", "Detritus"], ["Krekels", "Blad"], 
+      /* --- MATERIALEN--- */
+      ["Krekels", "Hout"], 
+      /* --- BOMEN --- */
+      ["Krekels", "Coniferen"], ["Krekels", "Palmvarens"], ["Krekels", "Ginkgo"]
     ],
     output: [
       { naam: "Krekels", icoon: "icons/Krekels.png", map: "Klein landleven", 
@@ -7155,11 +7162,16 @@ const combinaties = [
   }, /* ------------------ SPRINKHANEN ------------------ */
   {
     input: [
-      ["Sprinkhanen", "Mos"], ["Sprinkhanen", "Oervaatplanten"], ["Sprinkhanen", "Blad"], ["Sprinkhanen", "Zilvervisjes"], 
-      ["Sprinkhanen", "Luizen"], ["Sprinkhanen", "Muggen"], ["Sprinkhanen", "Vliegen"], ["Sprinkhanen", "Vlinders"], 
-      ["Sprinkhanen", "Krekels"], ["Sprinkhanen", "Wandelende takken"], ["Sprinkhanen", "Varens"], 
-      ["Sprinkhanen", "Oerzaadplanten"], ["Sprinkhanen", "Coniferen"], ["Sprinkhanen", "Palmvarens"], 
-      ["Sprinkhanen", "Ginkgo"]
+      /* --- KLEIN LANDLEVEN --- */
+      ["Sprinkhanen", "Luizen"], ["Sprinkhanen", "Zilvervisjes"], ["Sprinkhanen", "Wandelende takken"], 
+      ["Sprinkhanen", "Vliegen"], ["Sprinkhanen", "Vlinders"], ["Sprinkhanen", "Krekels"], ["Sprinkhanen", "Muggen"], 
+      /* --- PLANTEN --- */
+      ["Sprinkhanen", "Mos"], ["Sprinkhanen", "Oervaatplanten"], ["Sprinkhanen", "Varens"], 
+      ["Sprinkhanen", "Oerzaadplanten"], 
+      /* --- BIOLOGIE --- */
+      ["Sprinkhanen", "Blad"], 
+      /* --- BOMEN --- */
+      ["Sprinkhanen", "Coniferen"], ["Sprinkhanen", "Palmvarens"], ["Sprinkhanen", "Ginkgo"]
     ],
     output: [
       { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
@@ -7179,9 +7191,13 @@ const combinaties = [
   }, /* ------------------ WANDELENDE TAKKEN ------------------ */
   {
     input: [
-      ["Wandelende takken", "Mos"], ["Wandelende takken", "Oervaatplanten"], ["Wandelende takken", "Blad"],
-      ["Wandelende takken", "Varens"], ["Wandelende takken", "Oerzaadplanten"], ["Wandelende takken", "Coniferen"], 
-      ["Wandelende takken", "Palmvarens"], ["Wandelende takken", "Ginkgo"]
+      /* --- PLANTEN --- */
+      ["Wandelende takken", "Mos"], ["Wandelende takken", "Oervaatplanten"], ["Wandelende takken", "Varens"], 
+      ["Wandelende takken", "Oerzaadplanten"], 
+      /* --- BIOLOGIE --- */
+      ["Wandelende takken", "Blad"],
+      /* --- BOMEN --- */
+      ["Wandelende takken", "Coniferen"], ["Wandelende takken", "Palmvarens"], ["Wandelende takken", "Ginkgo"]
     ],
     output: [
       { naam: "Wandelende takken", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
@@ -7201,12 +7217,19 @@ const combinaties = [
   }, /* ------------------ KAKKERLAKKEN ------------------ */
   {
     input: [
-      ["Kakkerlakken", "Detritus"], ["Kakkerlakken", "Schimmel"], ["Kakkerlakken", "Gist"], ["Kakkerlakken", "Rode algen"], 
-      ["Kakkerlakken", "Groene algen"], ["Kakkerlakken", "Roodwieren"], ["Kakkerlakken", "Steenwortelalgen"], 
-      ["Kakkerlakken", "Groenwieren"], ["Kakkerlakken", "Mos"], ["Kakkerlakken", "Oervaatplanten"], 
-      ["Kakkerlakken", "Korstmos"], ["Kakkerlakken", "Truffels"], ["Kakkerlakken", "Paddenstoelen"], 
-      ["Kakkerlakken", "Varens"], ["Kakkerlakken", "Oerzaadplanten"], ["Kakkerlakken", "Coniferen"], 
-      ["Kakkerlakken", "Palmvarens"], ["Kakkerlakken", "Ginkgo"]
+      /* --- PRIL LEVEN --- */
+      ["Kakkerlakken", "Rode algen"], ["Kakkerlakken", "Groene algen"], ["Kakkerlakken", "Roodwieren"], 
+      ["Kakkerlakken", "Groenwieren"], ["Kakkerlakken", "Steenwortelalgen"], ["Kakkerlakken", "Schimmel"], 
+      ["Kakkerlakken", "Gist"], ["Kakkerlakken", "Korstmos"], ["Kakkerlakken", "Paddenstoelen"], 
+      /* --- PLANTEN --- */
+      ["Kakkerlakken", "Mos"], ["Kakkerlakken", "Oervaatplanten"], ["Kakkerlakken", "Varens"], 
+      ["Kakkerlakken", "Oerzaadplanten"], 
+      /* --- BIOLOGIE --- */
+      ["Kakkerlakken", "Detritus"], 
+      /* --- SMAAKMAKERS --- */
+      ["Kakkerlakken", "Truffels"], 
+      /* --- BOMEN --- */
+      ["Kakkerlakken", "Coniferen"], ["Kakkerlakken", "Palmvarens"], ["Kakkerlakken", "Ginkgo"]
     ],
     output: [
       { naam: "Kakkerlakken", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
@@ -12965,6 +12988,83 @@ const combinaties = [
         quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
         calls
         <br><br>- Bernhard Grzimek`
+      }
+    ]
+  }, /* ------------------ KLIPDASSEN ------------------ */
+  {
+    input: [
+      ["Klipdassen", "map:Bloemen"], ["Klipdassen", "map:Fruit"], ["Klipdassen", "map:Granen"], 
+      /* --- PRIL LEVEN --- */
+      ["Klipdassen", "Korstmos"], ["Klipdassen", "Paddenstoelen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Klipdassen", "Luizen"], ["Klipdassen", "Mijten"], ["Klipdassen", "Teken"], ["Klipdassen", "Termieten"], 
+      ["Klipdassen", "Pissebedden"], ["Klipdassen", "Oerpolyneopteren"], ["Klipdassen", "Hooiwagens"], 
+      ["Klipdassen", "Spinnen"], ["Klipdassen", "Zilvervisjes"], ["Klipdassen", "Wandelende takken"], 
+      ["Klipdassen", "Kakkerlakken"], ["Klipdassen", "Oerhymenopteren"], ["Klipdassen", "Slakken"], 
+      ["Klipdassen", "Libellen"], ["Klipdassen", "Kevers"], ["Klipdassen", "Lieveheersbeestjes"], 
+      ["Klipdassen", "Mieren"], ["Klipdassen", "Wespen"], ["Klipdassen", "Vliegen"], ["Klipdassen", "Vlinders"], 
+      ["Klipdassen", "Krekels"], ["Klipdassen", "Sprinkhanen"], ["Klipdassen", "Muggen"], ["Klipdassen", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Klipdassen", "Mos"], ["Klipdassen", "Varens"], ["Klipdassen", "Gras"], ["Klipdassen", "Brandnetels"], 
+      ["Klipdassen", "Heide"], ["Klipdassen", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Klipdassen", "Wortels"], ["Klipdassen", "Blad"], ["Klipdassen", "Zaadjes"], ["Klipdassen", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Klipdassen", "Truffels"], ["Klipdassen", "Munt"], ["Klipdassen", "Tijm"], ["Klipdassen", "Knoflook"], 
+      ["Klipdassen", "Ui"], ["Klipdassen", "Bieslook"], ["Klipdassen", "Basilicum"], ["Klipdassen", "Chilipepers"], 
+      ["Klipdassen", "Oregano"], ["Klipdassen", "Salie"], ["Klipdassen", "Anijs"], ["Klipdassen", "Komijn"], 
+      ["Klipdassen", "Dille"], ["Klipdassen", "Koriander"], ["Klipdassen", "Peterselie"], ["Klipdassen", "Saffraan"],  
+      /* --- GENOTWAREN --- */
+      ["Klipdassen", "Honing"],
+      /* --- ZADEN --- */
+      ["Klipdassen", "Erwten"], ["Klipdassen", "Soja"], ["Klipdassen", "Kikkererwten"], 
+      ["Klipdassen", "Linzen"], ["Klipdassen", "Sesam"], ["Klipdassen", "Quinoa"], 
+      ["Klipdassen", "Sperziebonen"], ["Klipdassen", "Kidneybonen"] 
+    ],
+    output: [
+      { naam: "Klipdassen", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
+        quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
+        calls
+        <br><br>- Bernhard Grzimek`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Klipdassen", "Salamanders"], ["Klipdassen", "Kikkers"], ["Klipdassen", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Klipdassen", "Gekko"],
+      /* --- ZOOGDIEREN --- */
+      ["Klipdassen", "Muizen"], ["Klipdassen", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Klipdassen", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
+        quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
+        calls
+        <br><br>- Bernhard Grzimek`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
