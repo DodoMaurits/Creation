@@ -7011,10 +7011,11 @@ const combinaties = [
       ["Oercynodonten", "Termieten"], ["Oercynodonten", "Pissebedden"], ["Oercynodonten", "Oerpolyneopteren"], 
       ["Oercynodonten", "Duizendpoten"], ["Oercynodonten", "Hooiwagens"], ["Oercynodonten", "Spinnen"], 
       ["Oercynodonten", "Zilvervisjes"], ["Oercynodonten", "Wandelende takken"], ["Oercynodonten", "Kakkerlakken"], 
-      ["Oercynodonten", "Oerhymenopteren"], ["Oercynodonten", "Slakken"], ["Oercynodonten", "Kevers"], 
-      ["Oercynodonten", "Lieveheersbeestjes"], ["Oercynodonten", "Mieren"], ["Oercynodonten", "Wespen"], 
-      ["Oercynodonten", "Vliegen"], ["Oercynodonten", "Vlinders"], ["Oercynodonten", "Krekels"],
-      ["Oercynodonten", "Sprinkhanen"], ["Oercynodonten", "Muggen"], ["Oercynodonten", "Bijen"],
+      ["Oercynodonten", "Oerhymenopteren"], ["Oercynodonten", "Slakken"], ["Oercynodonten", "Libellen"], 
+      ["Oercynodonten", "Kevers"], ["Oercynodonten", "Lieveheersbeestjes"], ["Oercynodonten", "Mieren"], 
+      ["Oercynodonten", "Wespen"], ["Oercynodonten", "Vliegen"], ["Oercynodonten", "Vlinders"], 
+      ["Oercynodonten", "Krekels"], ["Oercynodonten", "Sprinkhanen"], ["Oercynodonten", "Muggen"], 
+      ["Oercynodonten", "Bijen"],
       /* --- PLANTEN --- */
       ["Oercynodonten", "Mos"], ["Oercynodonten", "Oervaatplanten"], ["Oercynodonten", "Varens"], 
       ["Oercynodonten", "Oerzaadplanten"], ["Oercynodonten", "Oermagnoliden"], ["Oercynodonten", "Oermonocotylen"],
@@ -7068,7 +7069,8 @@ const combinaties = [
       ["Oercynodonten", "Crurotarsi"], ["Oercynodonten", "Gekko"],
       /* --- ZOOGDIEREN --- */
       ["Oercynodonten", "Mollen"], ["Oercynodonten", "Oerbuideldieren"], ["Oercynodonten", "Oerknaagdieren"], 
-      ["Oercynodonten", "Konijnen"], ["Oercynodonten", "Ratten"], ["Oercynodonten", "Spitsmuizen"],
+      ["Oercynodonten", "Konijnen"], ["Oercynodonten", "Ratten"], ["Oercynodonten", "Muizen"], 
+      ["Oercynodonten", "Spitsmuizen"],
       /* --- VOGELS --- */
       ["Oercynodonten", "Zwaluwen"], ["Oercynodonten", "Mussen"], ["Oercynodonten", "Vinken"], 
       ["Oercynodonten", "Kanaries"]  
@@ -9114,7 +9116,7 @@ const combinaties = [
     input: [
       ["Oerplacentalia", "map:Fruit"], ["Oerplacentalia", "map:Groenten"], 
       /* --- PRIL LEVEN --- */
-      ["Oerplacentalia", "Korstmos"], ["Oerplacentalia", "Paddenstoelen"], ["Oerplacentalia", "Truffels"],
+      ["Oerplacentalia", "Korstmos"], ["Oerplacentalia", "Paddenstoelen"],
       /* --- WATERDIEREN --- */
       ["Oerplacentalia", "Wormen"],
       /* --- KLEIN LANDLEVEN --- */
@@ -9122,10 +9124,11 @@ const combinaties = [
       ["Oerplacentalia", "Termieten"], ["Oerplacentalia", "Pissebedden"], ["Oerplacentalia", "Oerpolyneopteren"], 
       ["Oerplacentalia", "Duizendpoten"], ["Oerplacentalia", "Hooiwagens"], ["Oerplacentalia", "Spinnen"], 
       ["Oerplacentalia", "Zilvervisjes"], ["Oerplacentalia", "Wandelende takken"], ["Oerplacentalia", "Kakkerlakken"], 
-      ["Oerplacentalia", "Oerhymenopteren"], ["Oerplacentalia", "Slakken"], ["Oerplacentalia", "Kevers"], 
-      ["Oerplacentalia", "Lieveheersbeestjes"], ["Oerplacentalia", "Mieren"], ["Oerplacentalia", "Wespen"], 
-      ["Oerplacentalia", "Vliegen"], ["Oerplacentalia", "Vlinders"], ["Oerplacentalia", "Krekels"],
-      ["Oerplacentalia", "Sprinkhanen"], ["Oerplacentalia", "Muggen"], ["Oerplacentalia", "Bijen"],
+      ["Oerplacentalia", "Oerhymenopteren"], ["Oerplacentalia", "Slakken"], ["Oerplacentalia", "Libellen"], 
+      ["Oerplacentalia", "Kevers"], ["Oerplacentalia", "Lieveheersbeestjes"], ["Oerplacentalia", "Mieren"], 
+      ["Oerplacentalia", "Wespen"], ["Oerplacentalia", "Vliegen"], ["Oerplacentalia", "Vlinders"], 
+      ["Oerplacentalia", "Krekels"], ["Oerplacentalia", "Sprinkhanen"], ["Oerplacentalia", "Muggen"], 
+      ["Oerplacentalia", "Bijen"],
       /* --- PLANTEN --- */
       ["Oerplacentalia", "Mos"], ["Oerplacentalia", "Oervaatplanten"], ["Oerplacentalia", "Varens"], 
       ["Oerplacentalia", "Oerzaadplanten"], ["Oerplacentalia", "Oermagnoliden"], ["Oerplacentalia", "Oermonocotylen"],
@@ -9179,7 +9182,8 @@ const combinaties = [
       ["Oerplacentalia", "Crurotarsi"], ["Oerplacentalia", "Gekko"],
       /* --- ZOOGDIEREN --- */
       ["Oerplacentalia", "Mollen"], ["Oerplacentalia", "Oerbuideldieren"], ["Oerplacentalia", "Oerknaagdieren"], 
-      ["Oerplacentalia", "Konijnen"], ["Oerplacentalia", "Ratten"], ["Oerplacentalia", "Spitsmuizen"],
+      ["Oerplacentalia", "Konijnen"], ["Oerplacentalia", "Ratten"], ["Oerplacentalia", "Muizen"], 
+      ["Oerplacentalia", "Spitsmuizen"],
       /* --- VOGELS --- */
       ["Oerplacentalia", "Zwaluwen"], ["Oerplacentalia", "Mussen"], ["Oerplacentalia", "Vinken"], 
       ["Oerplacentalia", "Kanaries"]  
@@ -9209,7 +9213,7 @@ const combinaties = [
     input: [
       ["Oerbuideldieren", "map:Fruit"], ["Oerbuideldieren", "map:Groenten"], 
       /* --- PRIL LEVEN --- */
-      ["Oerbuideldieren", "Korstmos"], ["Oerbuideldieren", "Paddenstoelen"], ["Oerbuideldieren", "Truffels"],
+      ["Oerbuideldieren", "Korstmos"], ["Oerbuideldieren", "Paddenstoelen"],
       /* --- WATERDIEREN --- */
       ["Oerbuideldieren", "Wormen"],
       /* --- KLEIN LANDLEVEN --- */
@@ -9217,10 +9221,11 @@ const combinaties = [
       ["Oerbuideldieren", "Termieten"], ["Oerbuideldieren", "Pissebedden"], ["Oerbuideldieren", "Oerpolyneopteren"], 
       ["Oerbuideldieren", "Duizendpoten"], ["Oerbuideldieren", "Hooiwagens"], ["Oerbuideldieren", "Spinnen"], 
       ["Oerbuideldieren", "Zilvervisjes"], ["Oerbuideldieren", "Wandelende takken"], ["Oerbuideldieren", "Kakkerlakken"], 
-      ["Oerbuideldieren", "Oerhymenopteren"], ["Oerbuideldieren", "Slakken"], ["Oerbuideldieren", "Kevers"], 
-      ["Oerbuideldieren", "Lieveheersbeestjes"], ["Oerbuideldieren", "Mieren"], ["Oerbuideldieren", "Wespen"], 
-      ["Oerbuideldieren", "Vliegen"], ["Oerbuideldieren", "Vlinders"], ["Oerbuideldieren", "Krekels"],
-      ["Oerbuideldieren", "Sprinkhanen"], ["Oerbuideldieren", "Muggen"], ["Oerbuideldieren", "Bijen"],
+      ["Oerbuideldieren", "Oerhymenopteren"], ["Oerbuideldieren", "Slakken"], ["Oerbuideldieren", "Libellen"], 
+      ["Oerbuideldieren", "Kevers"], ["Oerbuideldieren", "Lieveheersbeestjes"], ["Oerbuideldieren", "Mieren"], 
+      ["Oerbuideldieren", "Wespen"], ["Oerbuideldieren", "Vliegen"], ["Oerbuideldieren", "Vlinders"], 
+      ["Oerbuideldieren", "Krekels"], ["Oerbuideldieren", "Sprinkhanen"], ["Oerbuideldieren", "Muggen"], 
+      ["Oerbuideldieren", "Bijen"],
       /* --- PLANTEN --- */
       ["Oerbuideldieren", "Mos"], ["Oerbuideldieren", "Oervaatplanten"], ["Oerbuideldieren", "Varens"], 
       ["Oerbuideldieren", "Oerzaadplanten"], ["Oerbuideldieren", "Oermagnoliden"], ["Oerbuideldieren", "Oermonocotylen"],
@@ -9276,7 +9281,8 @@ const combinaties = [
       ["Oerbuideldieren", "Crurotarsi"], ["Oerbuideldieren", "Gekko"],
       /* --- ZOOGDIEREN --- */
       ["Oerbuideldieren", "Mollen"], ["Oerbuideldieren", "Oerbuideldieren"], ["Oerbuideldieren", "Oerknaagdieren"], 
-      ["Oerbuideldieren", "Konijnen"], ["Oerbuideldieren", "Ratten"], ["Oerbuideldieren", "Spitsmuizen"],
+      ["Oerbuideldieren", "Konijnen"], ["Oerbuideldieren", "Ratten"], ["Oerbuideldieren", "Muizen"],
+      ["Oerbuideldieren", "Spitsmuizen"],
       /* --- VOGELS --- */
       ["Oerbuideldieren", "Zwaluwen"], ["Oerbuideldieren", "Mussen"], ["Oerbuideldieren", "Vinken"], 
       ["Oerbuideldieren", "Kanaries"]  
