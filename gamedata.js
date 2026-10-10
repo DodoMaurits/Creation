@@ -9181,6 +9181,103 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ OERBUIDELDIEREN ------------------ */
+  {
+    input: [
+      ["Oerbuideldieren", "map:Fruit"], ["Oerbuideldieren", "map:Groenten"], 
+      /* --- PRIL LEVEN --- */
+      ["Oerbuideldieren", "Korstmos"], ["Oerbuideldieren", "Paddenstoelen"], ["Oerbuideldieren", "Truffels"],
+      /* --- WATERDIEREN --- */
+      ["Oerbuideldieren", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerbuideldieren", "Luizen"], ["Oerbuideldieren", "Mijten"], ["Oerbuideldieren", "Teken"], 
+      ["Oerbuideldieren", "Termieten"], ["Oerbuideldieren", "Pissebedden"], ["Oerbuideldieren", "Oerpolyneopteren"], 
+      ["Oerbuideldieren", "Duizendpoten"], ["Oerbuideldieren", "Hooiwagens"], ["Oerbuideldieren", "Spinnen"], 
+      ["Oerbuideldieren", "Zilvervisjes"], ["Oerbuideldieren", "Wandelende takken"], ["Oerbuideldieren", "Kakkerlakken"], 
+      ["Oerbuideldieren", "Oerhymenopteren"], ["Oerbuideldieren", "Slakken"], ["Oerbuideldieren", "Kevers"], 
+      ["Oerbuideldieren", "Lieveheersbeestjes"], ["Oerbuideldieren", "Mieren"], ["Oerbuideldieren", "Wespen"], 
+      ["Oerbuideldieren", "Vliegen"], ["Oerbuideldieren", "Vlinders"], ["Oerbuideldieren", "Krekels"],
+      ["Oerbuideldieren", "Sprinkhanen"], ["Oerbuideldieren", "Muggen"], ["Oerbuideldieren", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Oerbuideldieren", "Mos"], ["Oerbuideldieren", "Oervaatplanten"], ["Oerbuideldieren", "Varens"], 
+      ["Oerbuideldieren", "Oerzaadplanten"], ["Oerbuideldieren", "Oermagnoliden"], ["Oerbuideldieren", "Oermonocotylen"],
+      ["Oerbuideldieren", "Oereudicoten"], ["Oerbuideldieren", "Oerfabiden"], ["Oerbuideldieren", "Oermalviden"],
+      ["Oerbuideldieren", "Oercaryophyllales"], ["Oerbuideldieren", "Oerasteriden"], ["Oerbuideldieren", "Oerericales"],
+      ["Oerbuideldieren", "Oerlamiden"], ["Oerbuideldieren", "Oercampanuliden"], ["Oerbuideldieren", "Vetplanten"], 
+      ["Oerbuideldieren", "Brandnetels"], ["Oerbuideldieren", "Aloë vera"], ["Oerbuideldieren", "Heide"], 
+      ["Oerbuideldieren", "Lavendel"], ["Oerbuideldieren", "Klavers"], ["Oerbuideldieren", "Waterriet"], 
+      ["Oerbuideldieren", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Oerbuideldieren", "Wortels"], ["Oerbuideldieren", "Blad"], ["Oerbuideldieren", "Zaadjes"], 
+      ["Oerbuideldieren", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Oerbuideldieren", "Truffels"], ["Oerbuideldieren", "Munt"], ["Oerbuideldieren", "Tijm"], 
+      ["Oerbuideldieren", "Knoflook"], ["Oerbuideldieren", "Ui"], ["Oerbuideldieren", "Bieslook"], 
+      ["Oerbuideldieren", "Basilicum"], ["Oerbuideldieren", "Chilipepers"], ["Oerbuideldieren", "Oregano"], 
+      ["Oerbuideldieren", "Salie"], ["Oerbuideldieren", "Anijs"], ["Oerbuideldieren", "Komijn"], 
+      ["Oerbuideldieren", "Dille"], ["Oerbuideldieren", "Koriander"], ["Oerbuideldieren", "Peterselie"], 
+      ["Oerbuideldieren", "Saffraan"],  
+      /* --- GENOTWAREN --- */
+      ["Oerbuideldieren", "Honing"],
+      /* --- ZADEN --- */
+      ["Oerbuideldieren", "Erwten"], ["Oerbuideldieren", "Soja"], ["Oerbuideldieren", "Kikkererwten"], 
+      ["Oerbuideldieren", "Linzen"], ["Oerbuideldieren", "Sesam"], ["Oerbuideldieren", "Quinoa"], 
+      ["Oerbuideldieren", "Sperziebonen"], ["Oerbuideldieren", "Kidneybonen"] 
+    ],
+    output: [
+      { naam: "Oerbuideldieren", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
+        quote: `The pouch of marsupials provides a protected environment in which the young attach to a teat and continue 
+        their growth
+        <br><br>- Jill Pemberton`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- VISSEN --- */
+      ["Oerbuideldieren", "Karpers"], ["Oerbuideldieren", "Haring"], ["Oerbuideldieren", "Forel"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerbuideldieren", "Oertetrapoden"], ["Oerbuideldieren", "Salamanders"], ["Oerbuideldieren", "Kikkers"], 
+      ["Oerbuideldieren", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Oerbuideldieren", "Oersynapsiden"], ["Oerbuideldieren", "Oerdiapsiden"], ["Oerbuideldieren", "Lepidosauriërs"], 
+      ["Oerbuideldieren", "Crurotarsi"], ["Oerbuideldieren", "Gekko"],
+      /* --- ZOOGDIEREN --- */
+      ["Oerbuideldieren", "Mollen"], ["Oerbuideldieren", "Oerbuideldieren"], ["Oerbuideldieren", "Oerknaagdieren"], 
+      ["Oerbuideldieren", "Konijnen"], ["Oerbuideldieren", "Ratten"], ["Oerbuideldieren", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Oerbuideldieren", "Zwaluwen"], ["Oerbuideldieren", "Mussen"], ["Oerbuideldieren", "Vinken"], 
+      ["Oerbuideldieren", "Kanaries"]  
+    ],
+    output: [
+      { naam: "Oerbuideldieren", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
+        quote: `The pouch of marsupials provides a protected environment in which the young attach to a teat and continue 
+        their growth
+        <br><br>- Jill Pemberton`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
