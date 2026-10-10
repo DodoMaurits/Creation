@@ -9086,6 +9086,101 @@ const combinaties = [
         <br><br>Eerst nodig: eerste bloem.`
       }
     }
+  }, /* ------------------ OERPLACENTALIA ------------------ */
+  {
+    input: [
+      ["Oerplacentalia", "map:Fruit"], ["Oerplacentalia", "map:Groenten"], 
+      /* --- PRIL LEVEN --- */
+      ["Oerplacentalia", "Korstmos"], ["Oerplacentalia", "Paddenstoelen"], ["Oerplacentalia", "Truffels"],
+      /* --- WATERDIEREN --- */
+      ["Oerplacentalia", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerplacentalia", "Luizen"], ["Oerplacentalia", "Mijten"], ["Oerplacentalia", "Teken"], 
+      ["Oerplacentalia", "Termieten"], ["Oerplacentalia", "Pissebedden"], ["Oerplacentalia", "Oerpolyneopteren"], 
+      ["Oerplacentalia", "Duizendpoten"], ["Oerplacentalia", "Hooiwagens"], ["Oerplacentalia", "Spinnen"], 
+      ["Oerplacentalia", "Zilvervisjes"], ["Oerplacentalia", "Wandelende takken"], ["Oerplacentalia", "Kakkerlakken"], 
+      ["Oerplacentalia", "Oerhymenopteren"], ["Oerplacentalia", "Slakken"], ["Oerplacentalia", "Kevers"], 
+      ["Oerplacentalia", "Lieveheersbeestjes"], ["Oerplacentalia", "Mieren"], ["Oerplacentalia", "Wespen"], 
+      ["Oerplacentalia", "Vliegen"], ["Oerplacentalia", "Vlinders"], ["Oerplacentalia", "Krekels"],
+      ["Oerplacentalia", "Sprinkhanen"], ["Oerplacentalia", "Muggen"], ["Oerplacentalia", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Oerplacentalia", "Mos"], ["Oerplacentalia", "Oervaatplanten"], ["Oerplacentalia", "Varens"], 
+      ["Oerplacentalia", "Oerzaadplanten"], ["Oerplacentalia", "Oermagnoliden"], ["Oerplacentalia", "Oermonocotylen"],
+      ["Oerplacentalia", "Oereudicoten"], ["Oerplacentalia", "Oerfabiden"], ["Oerplacentalia", "Oermalviden"],
+      ["Oerplacentalia", "Oercaryophyllales"], ["Oerplacentalia", "Oerasteriden"], ["Oerplacentalia", "Oerericales"],
+      ["Oerplacentalia", "Oerlamiden"], ["Oerplacentalia", "Oercampanuliden"], ["Oerplacentalia", "Vetplanten"], 
+      ["Oerplacentalia", "Brandnetels"], ["Oerplacentalia", "Aloë vera"], ["Oerplacentalia", "Heide"], 
+      ["Oerplacentalia", "Lavendel"], ["Oerplacentalia", "Klavers"], ["Oerplacentalia", "Waterriet"], 
+      ["Oerplacentalia", "Suikerriet"],    
+      /* --- BIOLOGIE --- */
+      ["Oerplacentalia", "Wortels"], ["Oerplacentalia", "Blad"], ["Oerplacentalia", "Zaadjes"], ["Oerplacentalia", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Oerplacentalia", "Truffels"], ["Oerplacentalia", "Munt"], ["Oerplacentalia", "Tijm"], 
+      ["Oerplacentalia", "Knoflook"], ["Oerplacentalia", "Ui"], ["Oerplacentalia", "Bieslook"], 
+      ["Oerplacentalia", "Basilicum"], ["Oerplacentalia", "Chilipepers"], ["Oerplacentalia", "Oregano"], 
+      ["Oerplacentalia", "Salie"], ["Oerplacentalia", "Anijs"], ["Oerplacentalia", "Komijn"], ["Oerplacentalia", "Dille"], 
+      ["Oerplacentalia", "Koriander"], ["Oerplacentalia", "Peterselie"], ["Oerplacentalia", "Saffraan"],  
+      /* --- GENOTWAREN --- */
+      ["Oerplacentalia", "Honing"],
+      /* --- ZADEN --- */
+      ["Oerplacentalia", "Erwten"], ["Oerplacentalia", "Soja"], ["Oerplacentalia", "Kikkererwten"], 
+      ["Oerplacentalia", "Linzen"], ["Oerplacentalia", "Sesam"], ["Oerplacentalia", "Quinoa"], 
+      ["Oerplacentalia", "Sperziebonen"], ["Oerplacentalia", "Kidneybonen"] 
+    ],
+    output: [
+      { naam: "Oerplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
+        quote: `The placenta enables an intimate physiological connection between mother and embryo, supporting growth, 
+        nourishment, and protection
+        <br><br>- Knox Hays`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- VISSEN --- */
+      ["Oerplacentalia", "Karpers"], ["Oerplacentalia", "Haring"], ["Oerplacentalia", "Forel"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerplacentalia", "Oertetrapoden"], ["Oerplacentalia", "Salamanders"], ["Oerplacentalia", "Kikkers"], 
+      ["Oerplacentalia", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Oerplacentalia", "Oersynapsiden"], ["Oerplacentalia", "Oerdiapsiden"], ["Oerplacentalia", "Lepidosauriërs"], 
+      ["Oerplacentalia", "Crurotarsi"], ["Oerplacentalia", "Gekko"],
+      /* --- ZOOGDIEREN --- */
+      ["Oerplacentalia", "Mollen"], ["Oerplacentalia", "Oerbuideldieren"], ["Oerplacentalia", "Oerknaagdieren"], 
+      ["Oerplacentalia", "Konijnen"], ["Oerplacentalia", "Ratten"], ["Oerplacentalia", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Oerplacentalia", "Zwaluwen"], ["Oerplacentalia", "Mussen"], ["Oerplacentalia", "Vinken"], 
+      ["Oerplacentalia", "Kanaries"]  
+    ],
+    output: [
+      { naam: "Oerplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
+        quote: `The placenta enables an intimate physiological connection between mother and embryo, supporting growth, 
+        nourishment, and protection
+        <br><br>- Knox Hays`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
