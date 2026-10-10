@@ -1958,12 +1958,14 @@ const combinaties = [
         <br><br>- George Wald`
       }
     ]
-  },
+  }, /* ------------------ AMOEBEN ------------------ */
   {
     input: [
-      ["Amoeben", "Bacteriën"], ["Amoeben", "Detritus"], ["Amoeben", "Blauwalgen"], ["Amoeben", "Leca"],
-      ["Amoeben", "Schimmel"], ["Amoeben", "Archaeplastiden"], ["Amoeben", "Gist"], 
-      ["Amoeben", "Foraminiferen"]
+      /* --- PRIL LEVEN --- */
+      ["Amoeben", "Bacteriën"], ["Amoeben", "Blauwalgen"], ["Amoeben", "Leca"], ["Amoeben", "Archaeplastiden"], 
+      ["Amoeben", "Foraminiferen"], ["Amoeben", "Schimmel"], ["Amoeben", "Gist"], 
+      /* --- BIOLOGIE --- */
+      ["Amoeben", "Detritus"]
     ],
     output: [
       { naam: "Amoeben", icoon: "icons/Amoeben.png", map: "Pril leven", 
@@ -1987,14 +1989,16 @@ const combinaties = [
         <br><br>- Thomas Huxley`
       }
     ]
-  },
+  }, /* ------------------ FORAMINIFEREN ------------------ */
   {
     input: [
-      ["Foraminiferen", "Bacteriën"], ["Foraminiferen", "Detritus"], ["Foraminiferen", "Blauwalgen"], 
-      ["Foraminiferen", "Leca"], ["Foraminiferen", "Schimmel"], ["Foraminiferen", "Archaeplastiden"],
-      ["Foraminiferen", "Gist"], ["Foraminiferen", "Rode algen"], ["Foraminiferen", "Groene algen"],
-      ["Foraminiferen", "Roodwieren"], ["Foraminiferen", "Bruinwieren"], ["Foraminiferen", "Steenwortelalgen"], 
-      ["Foraminiferen", "Groenwieren"]
+      /* --- PRIL LEVEN --- */
+      ["Foraminiferen", "Bacteriën"], ["Foraminiferen", "Blauwalgen"], ["Foraminiferen", "Leca"], 
+      ["Foraminiferen", "Archaeplastiden"], ["Foraminiferen", "Rode algen"], ["Foraminiferen", "Groene algen"],
+      ["Foraminiferen", "Steenwortelalgen"], ["Foraminiferen", "Roodwieren"], ["Foraminiferen", "Groenwieren"], 
+      ["Foraminiferen", "Bruinwieren"], ["Foraminiferen", "Schimmel"], ["Foraminiferen", "Gist"], 
+      /* --- BIOLOGIE --- */
+      ["Foraminiferen", "Detritus"]
     ],
     output: [
       { naam: "Foraminiferen", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
@@ -2018,13 +2022,16 @@ const combinaties = [
         <br><br>- Ernst Haeckel`
       }
     ]
-  },
+  }, /* ------------------ STRALENDIERTJES ------------------ */
   {
     input: [
-      ["Stralendiertjes", "Bacteriën"], ["Stralendiertjes", "Detritus"], ["Stralendiertjes", "Blauwalgen"], 
-      ["Stralendiertjes", "Leca"], ["Stralendiertjes", "Schimmel"], ["Stralendiertjes", "Archaeplastiden"],
-      ["Stralendiertjes", "Gist"], ["Stralendiertjes", "Rode algen"], ["Stralendiertjes", "Groene algen"],
-      ["Stralendiertjes", "Roodwieren"], ["Stralendiertjes", "Steenwortelalgen"], ["Stralendiertjes", "Groenwieren"]
+      /* --- PRIL LEVEN --- */
+      ["Stralendiertjes", "Bacteriën"], ["Stralendiertjes", "Blauwalgen"], ["Stralendiertjes", "Leca"], 
+      ["Stralendiertjes", "Archaeplastiden"], ["Stralendiertjes", "Rode algen"], ["Stralendiertjes", "Groene algen"],
+      ["Stralendiertjes", "Steenwortelalgen"], ["Stralendiertjes", "Roodwieren"], ["Stralendiertjes", "Groenwieren"], 
+      ["Stralendiertjes", "Schimmel"], ["Stralendiertjes", "Gist"], 
+      /* --- BIOLOGIE --- */
+      ["Stralendiertjes", "Detritus"]
     ],
     output: [
       { naam: "Stralendiertjes", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
@@ -2087,9 +2094,13 @@ const combinaties = [
   }, /* ------------------ SPONZEN ------------------ */
   {
     input: [
-      ["Sponzen", "Bacteriën"], ["Sponzen", "Detritus"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Gist"],
-      ["Sponzen", "Groene algen"], ["Sponzen", "Amoeben"], ["Sponzen", "Foraminiferen"], ["Sponzen", "Groenwieren"],
-      ["Sponzen", "Beerdiertjes"]
+      /* --- PRIL LEVEN --- */
+      ["Sponzen", "Bacteriën"], ["Sponzen", "Blauwalgen"], ["Sponzen", "Groene algen"], ["Sponzen", "Groenwieren"],
+      ["Sponzen", "Amoeben"], ["Sponzen", "Foraminiferen"], ["Sponzen", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Sponzen", "Beerdiertjes"], 
+      /* --- BIOLOGIE --- */
+      ["Sponzen", "Detritus"]
     ],
     output: [
       { naam: "Sponzen", icoon: "icons/Sponzen.png", map: "Waterdieren", 
@@ -2197,7 +2208,7 @@ const combinaties = [
         <br><br>- Aldo Leopold`
       }
     ]
-  }, /* ------------------ GIST ------------------ */
+  }, 
   {
     input: ["Schimmel", "Glucose"],
     hint: `Sommige eencellige schimmels specialiseren zich in suikers.`,
@@ -2207,10 +2218,10 @@ const combinaties = [
         <br><br>- Ralph Emerson`
       }
     ]
-  },
+  }, /* ------------------ GIST ------------------ */
   {
     input: [
-      ["Gist", "Detritus"], ["Gist", "Schimmel"]
+      ["Gist", "Schimmel"], ["Gist", "Detritus"]
     ],
     output: [
       { naam: "Gist", icoon: "icons/Gist.png", map: "Pril leven",
@@ -2223,7 +2234,7 @@ const combinaties = [
        <br><br>- Nassim Taleb`
       }
     ]
-  }, /* ------------------ KORAAL ------------------ */
+  }, 
   {
     input: [
       ["Sponzen", "Kalk"], ["Sponzen", "Bot"], ["Sponzen", "Evolutie"],
@@ -2237,12 +2248,14 @@ const combinaties = [
         <br><br>- Sheherazade Goldsmith`
       }
     ]
-  },
+  }, /* ------------------ KORAAL ------------------ */
   {
     input: [
-      ["Koraal", "Bacteriën"], ["Koraal", "Blauwalgen"], ["Koraal", "Groene algen"], ["Koraal", "Rode algen"],
-      ["Koraal", "Amoeben"], ["Koraal", "Foraminiferen"], ["Koraal", "Stralendiertjes"], ["Koraal", "Krill"],
-      ["Koraal", "Vlokreeftjes"]
+      /* --- PRIL LEVEN --- */
+      ["Koraal", "Bacteriën"], ["Koraal", "Blauwalgen"], ["Koraal", "Rode algen"], ["Koraal", "Groene algen"], 
+      ["Koraal", "Amoeben"], ["Koraal", "Foraminiferen"], ["Koraal", "Stralendiertjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Koraal", "Krill"], ["Koraal", "Vlokreeftjes"]
     ],
     hint: `Kijk eens met wat voor geavanceerde vloeistof koraal en kwallen hun eten eten.`,
     output: [
@@ -2323,9 +2336,14 @@ const combinaties = [
   }, /* ------------------ OERCNIDARIA ------------------ */
   {
     input: [
-      ["Oercnidaria", "Bacteriën"], ["Oercnidaria", "Detritus"], ["Oercnidaria", "Blauwalgen"], ["Oercnidaria", "Leca"], 
-      ["Oercnidaria", "Schimmel"], ["Oercnidaria", "Sponzen"], ["Oercnidaria", "Archaeplastiden"], ["Oercnidaria", "Gist"],
-      ["Oercnidaria", "Amoeben"], ["Oercnidaria", "Foraminiferen"], ["Oercnidaria", "Stralendiertjes"]
+      /* --- PRIL LEVEN --- */
+      ["Oercnidaria", "Bacteriën"], ["Oercnidaria", "Blauwalgen"], ["Oercnidaria", "Leca"], 
+      ["Oercnidaria", "Archaeplastiden"], ["Oercnidaria", "Amoeben"], ["Oercnidaria", "Foraminiferen"], 
+      ["Oercnidaria", "Stralendiertjes"], ["Oercnidaria", "Schimmel"], ["Oercnidaria", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Oercnidaria", "Sponzen"], 
+      /* --- BIOLOGIE --- */
+      ["Oercnidaria", "Detritus"]  
     ],
     output: [
       { naam: "Oercnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
@@ -2341,10 +2359,13 @@ const combinaties = [
   }, /* ------------------ OERBILATERIA ------------------ */
   {
     input: [
-      ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Detritus"], ["Oerbilateria", "Blauwalgen"], ["Oerbilateria", "Leca"],
-      ["Oerbilateria", "Schimmel"], ["Oerbilateria", "Sponzen"], ["Oerbilateira", "Archaeplastiden"], 
-      ["Oerbilateria", "Gist"], ["Oerbilateria", "Amoeben"], ["Oerbilateria", "Foraminiferen"], 
-      ["Oerbilateria", "Stralendiertjes"], ["Oerbilateria", "Oercnidaria"]
+      /* --- PRIL LEVEN --- */
+      ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Blauwalgen"], ["Oerbilateria", "Leca"], ["Oerbilateria", "Sponzen"], 
+      ["Oerbilateira", "Archaeplastiden"], ["Oerbilateria", "Schimmel"], ["Oerbilateria", "Gist"], 
+      ["Oerbilateria", "Amoeben"], ["Oerbilateria", "Foraminiferen"], ["Oerbilateria", "Stralendiertjes"], 
+      ["Oerbilateria", "Oercnidaria"],
+      /* --- BIOLOGIE --- */
+      ["Oerbilateria", "Detritus"]
     ],
     output: [
       { naam: "Oerbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
@@ -2445,12 +2466,17 @@ const combinaties = [
   }, /* ------------------ KWALLEN ------------------ */
   {
     input: [
-      ["Kwallen", "Bacteriën"], ["Kwallen", "Detritus"], ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], 
-      ["Kwallen", "Schimmel"], ["Kwallen", "Sponzen"], ["Kwallen", "Archaeplastiden"], ["Kwallen", "Gist"],
-      ["Kwallen", "Rode algen"], ["Kwallen", "Groene algen"], ["Kwallen", "Amoeben"], ["Kwallen", "Foraminiferen"],
-      ["Kwallen", "Stralendiertjes"], ["Kwallen", "Oercnidaria"], ["Kwallen", "Oerbilateria"],
-      ["Kwallen", "Oertrochozoa"], ["Kwallen", "Wormen"], ["Kwallen", "Beerdiertjes"], ["Kwallen", "Krill"],
-      ["Kwallen", "Vlokreeftjes"]
+      /* --- PRIL LEVEN --- */
+      ["Kwallen", "Bacteriën"], ["Kwallen", "Blauwalgen"], ["Kwallen", "Leca"], 
+      ["Kwallen", "Archaeplastiden"], ["Kwallen", "Rode algen"], ["Kwallen", "Groene algen"],
+      ["Kwallen", "Amoeben"], ["Kwallen", "Foraminiferen"], ["Kwallen", "Stralendiertjes"], 
+      ["Kwallen", "Oercnidaria"], ["Kwallen", "Oerbilateria"],["Kwallen", "Schimmel"], ["Kwallen", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Kwallen", "Sponzen"], ["Kwallen", "Wormen"], ["Kwallen", "Oertrochozoa"], ["Kwallen", "Beerdiertjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Kwallen", "Krill"], ["Kwallen", "Vlokreeftjes"],
+      /* --- BIOLOGIE --- */
+      ["Kwallen", "Detritus"]
     ],
     output: [
       { naam: "Kwallen", icoon: "icons/Kwallen.png", map: "Waterdieren", 
@@ -2472,12 +2498,19 @@ const combinaties = [
   }, /* ------------------ ZEEANEMONEN ------------------ */
   {
     input: [
-      ["Zeeanemonen", "Bacteriën"], ["Zeeanemonen", "Detritus"], ["Zeeanemonen", "Blauwalgen"], ["Zeeanemonen", "Leca"], 
-      ["Zeeanemonen", "Schimmel"], ["Zeeanemonen", "Sponzen"], ["Zeeanemonen", "Archaeplastiden"], ["Zeeanemonen", "Gist"],
-      ["Zeeanemonen", "Rode algen"], ["Zeeanemonen", "Groene algen"], ["Zeeanemonen", "Amoeben"], 
-      ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"], ["Zeeanemonen", "Oercnidaria"], 
-      ["Zeeanemonen", "Oerbilateria"], ["Zeeanemonen", "Oertrochozoa"], ["Zeeanemonen", "Wormen"], 
-      ["Zeeanemonen", "Beerdiertjes"], ["Zeeanemeonen", "Krill"], ["Zeeanemonen", "Vlokreeftjes"]
+      /* --- PRIL LEVEN --- */
+      ["Zeeanemonen", "Bacteriën"], ["Zeeanemonen", "Blauwalgen"], ["Zeeanemonen", "Leca"], 
+      ["Zeeanemonen", "Archaeplastiden"], ["Zeeanemonen", "Rode algen"], ["Zeeanemonen", "Groene algen"], 
+      ["Zeeanemonen", "Amoeben"], ["Zeeanemonen", "Foraminiferen"], ["Zeeanemonen", "Stralendiertjes"],
+      ["Zeeanemonen", "Oercnidaria"], ["Zeeanemonen", "Oerbilateria"], ["Zeeanemonen", "Schimmel"], 
+      ["Zeeanemonen", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Zeeanemonen", "Sponzen"], ["Zeeanemonen", "Wormen"], ["Zeeanemonen", "Oertrochozoa"], 
+      ["Zeeanemonen", "Beerdiertjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeeanemeonen", "Krill"], ["Zeeanemonen", "Vlokreeftjes"],
+      /* --- BIOLOGIE --- */
+      ["Zeeanemonen", "Detritus"]
     ],
     output: [
       { naam: "Zeeanemonen", icoon: "icons/Zeeanemonen.png", map: "Waterdieren", 
@@ -3814,11 +3847,17 @@ const combinaties = [
   }, /* ------------------ WORMEN ------------------ */
   {
     input: [
-      ["Wormen", "Bacteriën"], ["Wormen", "Detritus"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], 
-      ["Wormen", "Schimmel"], ["Wormen", "Sponzen"], ["Wormen", "Archaeplastiden"], ["Wormen", "Gist"], 
-      ["Wormen", "Rode algen"], ["Wormen", "Groene algen"], ["Wormen", "Amoeben"], ["Wormen", "Foraminiferen"], 
-      ["Wormen", "Stralendiertjes"], ["Wormen", "Oercnidaria"], ["Wormen", "Oerbilateria"], ["Wormen", "Groenwieren"], 
-      ["Wormen", "Beerdiertjes"], ["Wormen", "Krill"], ["Wormen", "Vlokreeftjes"]
+      /* --- PRIL LEVEN --- */
+      ["Wormen", "Bacteriën"], ["Wormen", "Blauwalgen"], ["Wormen", "Leca"], ["Wormen", "Archaeplastiden"], 
+      ["Wormen", "Rode algen"], ["Wormen", "Groene algen"], ["Wormen", "Groenwieren"], ["Wormen", "Amoeben"], 
+      ["Wormen", "Foraminiferen"], ["Wormen", "Stralendiertjes"], ["Wormen", "Oercnidaria"], ["Wormen", "Oerbilateria"], 
+      ["Wormen", "Schimmel"], ["Wormen", "Gist"], 
+      /* --- WATERDIEREN --- */
+      ["Wormen", "Sponzen"], ["Wormen", "Beerdiertjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Wormen", "Krill"], ["Wormen", "Vlokreeftjes"],
+      /* --- BIOLOGIE --- */
+      ["Wormen", "Detritus"]
     ],
     output: [
       { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
@@ -3834,13 +3873,18 @@ const combinaties = [
   }, /* ------------------ OERTROCHOZOA ------------------ */
   {
     input: [
-      ["Oertrochozoa", "Bacteriën"], ["Oertrochozoa", "Detritus"], ["Oertrochozoa", "Blauwalgen"], 
-      ["Oertrochozoa", "Leca"], ["Oertrochozoa", "Schimmel"], ["Oertrochozoa", "Sponzen"], 
-      ["Oertrochozoa", "Archaeplastiden"], ["Oertrochozoa", "Gist"], ["Oertrochozoa", "Rode algen"], 
-      ["Oertrochozoa", "Groene algen"], ["Oertrochozoa", "Amoeben"], ["Oertrochozoa", "Foraminiferen"], 
+      /* --- PRIL LEVEN --- */
+      ["Oertrochozoa", "Bacteriën"], ["Oertrochozoa", "Blauwalgen"], ["Oertrochozoa", "Leca"], 
+      ["Oertrochozoa", "Archaeplastiden"], ["Oertrochozoa", "Rode algen"], ["Oertrochozoa", "Groene algen"], 
+      ["Oertrochozoa", "Groenwieren"], ["Oertrochozoa", "Amoeben"], ["Oertrochozoa", "Foraminiferen"], 
       ["Oertrochozoa", "Stralendiertjes"], ["Oertrochozoa", "Oercnidaria"], ["Oertrochozoa", "Oerbilateria"], 
-      ["Oertrochozoa", "Groenwieren"], ["Oertrochozoa", "Wormen"], ["Oertrochozoa", "Beerdiertjes"], 
-      ["Oertrochozoa", "Krill"], ["Oertrochozoa", "Vlokreeftjes"]
+      ["Oertrochozoa", "Schimmel"], ["Oertrochozoa", "Gist"],
+      /* --- WATERDIEREN --- */
+      ["Oertrochozoa", "Sponzen"], ["Oertrochozoa", "Wormen"], ["Oertrochozoa", "Beerdiertjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oertrochozoa", "Krill"], ["Oertrochozoa", "Vlokreeftjes"],
+      /* --- BIOLOGIE --- */
+      ["Oertrochozoa", "Detritus"]
     ],
     hint: `Voor de bewuste dieren is eten meer dan alleen een beloning.`, 
     output: [
@@ -3857,14 +3901,18 @@ const combinaties = [
   },  /* ------------------ ZEESTERREN ------------------ */
   {
     input: [
-      ["Zeesterren", "Bacteriën"], ["Zeesterren", "Detritus"], ["Zeesterren", "Blauwalgen"], ["Zeesterren", "Leca"],
-      ["Zeesterren", "Archaeplastiden"], ["Zeesterren", "Groene algen"], ["Zeesterren", "Rode algen"], 
-      ["Zeesterren", "Roodwieren"], ["Zeesterren", "Groenwieren"], 
-      ["Zeesterren", "Amoeben"], ["Zeesterren", "Foraminiferen"], ["Zeesterren", "Stralendiertjes"], 
-      ["Zeesterren", "Oercnidaria"], ["Zeesterren", "Oerbilateria"], ["Zeesterren", "Sponzen"], ["Zeesterren", "Koraal"], 
-      ["Zeesterren", "Wormen"], ["Zeesterren", "Oertrochozoa"], 
+      /* --- PRIL LEVEN --- */
+      ["Zeesterren", "Bacteriën"], ["Zeesterren", "Blauwalgen"], ["Zeesterren", "Leca"], ["Zeesterren", "Archaeplastiden"], 
+      ["Zeesterren", "Groene algen"], ["Zeesterren", "Rode algen"], ["Zeesterren", "Roodwieren"], 
+      ["Zeesterren", "Groenwieren"], ["Zeesterren", "Amoeben"], ["Zeesterren", "Foraminiferen"], 
+      ["Zeesterren", "Stralendiertjes"], ["Zeesterren", "Oercnidaria"], ["Zeesterren", "Oerbilateria"], 
+      /* --- WATERDIEREN --- */
+      ["Zeesterren", "Sponzen"], ["Zeesterren", "Koraal"], ["Zeesterren", "Wormen"], ["Zeesterren", "Oertrochozoa"], 
+      /* --- GELEEDPOTIGEN --- */
       ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"], ["Zeesterren", "Garnalen"],
-      /* Schelp */ ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
+      /* Schelp */ ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"],
+      /* --- BIOLOGIE --- */
+      ["Zeesterren", "Detritus"]
     ],
     output: [
       { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
@@ -3879,7 +3927,7 @@ const combinaties = [
     ]
   },
   {
-    input: [
+    input: [/* Schelp */
       ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
     ],
     output: [
@@ -3933,13 +3981,18 @@ const combinaties = [
   }, /* ------------------ LANCETVISJES ------------------ */
   {
     input: [
-      ["Lancetvisjes", "Bacteriën"], ["Lancetvisjes", "Detritus"], ["Lancetvisjes", "Blauwalgen"], 
-      ["Lancetvisjes", "Leca"], 
-      ["Lancetvisjes", "Archaeplastiden"], ["Lancetvisjes", "Groene algen"], ["Lancetvisjes", "Rode algen"], 
+      /* --- PRIL LEVEN --- */
+      ["Lancetvisjes", "Bacteriën"], ["Lancetvisjes", "Blauwalgen"], ["Lancetvisjes", "Leca"], 
+      ["Lancetvisjes", "Archaeplastiden"], ["Lancetvisjes", "Rode algen"], ["Lancetvisjes", "Groene algen"], 
       ["Lancetvisjes", "Amoeben"], ["Lancetvisjes", "Foraminiferen"], ["Lancetvisjes", "Stralendiertjes"], 
-      ["Lancetvisjes", "Schimmel"], ["Lancetvisjes", "Gist"], 
-      ["Lancetvisjes", "Oercnidaria"], ["Lancetvisjes", "Oerbilateria"],
-      ["Lancetvisjes", "Oertrochozoa"], ["Lancetvisjes", "Krill"], ["Lancetvisjes", "Vlokreeftjes"]
+      ["Lancetvisjes", "Oercnidaria"], ["Lancetvisjes", "Oerbilateria"], ["Lancetvisjes", "Schimmel"], 
+      ["Lancetvisjes", "Gist"], 
+      /* --- WATERDIEREN --- */
+      ["Lancetvisjes", "Oertrochozoa"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Lancetvisjes", "Krill"], ["Lancetvisjes", "Vlokreeftjes"],
+      /* --- BIOLOGIE --- */
+      ["Lancetvisjes", "Detritus"]
     ],
     output: [
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
