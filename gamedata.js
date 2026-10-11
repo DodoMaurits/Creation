@@ -7997,9 +7997,9 @@ const combinaties = [
       ["Sauropoden", "Coniferen"], ["Sauropoden", "Palmvarens"], ["Sauropoden", "Ginkgo"], ["Sauropoden", "Tulpenbomen"], 
       ["Sauropoden", "Magnolia"], ["Sauropoden", "Laurierbomen"], ["Sauropoden", "Platanen"], ["Sauropoden", "Oliepalmen"],
       ["Sauropoden", "Acacia"], ["Sauropoden", "Wilgen"], ["Sauropoden", "Populieren"], ["Sauropoden", "Iepen"], 
-      ["Sauropoden", "Esdoorns"], ["Sauropoden", "Lindes"], ["Sauropoden", "Lindes"], ["Sauropoden", "Paardenkastanjes"], 
-      ["Sauropoden", "Baobabs"], ["Sauropoden", "Elzen"], ["Sauropoden", "Berken"], ["Sauropoden", "Beuken"], 
-      ["Sauropoden", "Eiken"], ["Sauropoden", "Arganbomen"], ["Sauropoden", "Sheabomen"], ["Sauropoden", "Essen"]
+      ["Sauropoden", "Esdoorns"], ["Sauropoden", "Lindes"], ["Sauropoden", "Paardenkastanjes"], ["Sauropoden", "Baobabs"], 
+      ["Sauropoden", "Elzen"], ["Sauropoden", "Berken"], ["Sauropoden", "Beuken"], ["Sauropoden", "Eiken"], 
+      ["Sauropoden", "Arganbomen"], ["Sauropoden", "Sheabomen"], ["Sauropoden", "Essen"]
     ],
     output: [
       { naam: "Sauropoden", icoon: "icons/Sauropoden.png", map: "Reptielen", 
@@ -8034,9 +8034,9 @@ const combinaties = [
       ["Stegosauriërs", "Coniferen"], ["Stegosauriërs", "Palmvarens"], ["Stegosauriërs", "Ginkgo"], 
       ["Stegosauriërs", "Tulpenbomen"], ["Stegosauriërs", "Platanen"], ["Stegosauriërs", "Acacia"], 
       ["Stegosauriërs", "Esdoorns"], ["Stegosauriërs", "Wilgen"], ["Stegosauriërs", "Populieren"], 
-      ["Stegosauriërs", "Iepen"], ["Stegosauriërs", "Lindes"], ["Stegosauriërs", "Lindes"], 
-      ["Stegosauriërs", "Paardenkastanjes"], ["Stegosauriërs", "Elzen"], ["Stegosauriërs", "Berken"], 
-      ["Stegosauriërs", "Beuken"], ["Stegosauriërs", "Eiken"], ["Stegosauriërs", "Essen"]
+      ["Stegosauriërs", "Iepen"], ["Stegosauriërs", "Lindes"], ["Stegosauriërs", "Paardenkastanjes"], 
+      ["Stegosauriërs", "Elzen"], ["Stegosauriërs", "Berken"], ["Stegosauriërs", "Beuken"], ["Stegosauriërs", "Eiken"], 
+      ["Stegosauriërs", "Essen"]
     ],
     output: [
       { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
@@ -13328,6 +13328,58 @@ const combinaties = [
         quote: `Aardvarks dig extensive burrow systems that provide shelter not only for themselves but for many other 
         animals
         <br><br>- Richard Estes`
+      }
+    ]
+  }, /* ------------------ OERSLURFDIEREN ------------------ */
+  {
+    input: [
+      ["Oerslurfdieren", "map:Smaakmakers"], ["Oerslurfdieren", "map:Bloemen"],
+      /* --- PRIL LEVEN --- */
+      ["Oerslurfdieren", "Paddenstoelen"], 
+      /* --- WATERDIEREN --- */
+      ["Oerslurfdieren", "Wormen"], 
+      /* --- PLANTEN --- */
+      ["Oerslurfdieren", "Mos"], ["Oerslurfdieren", "Oervaatplanten"], ["Oerslurfdieren", "Varens"], 
+      ["Oerslurfdieren", "Oerzaadplanten"], ["Oerslurfdieren", "Oermonocotylen"], ["Oerslurfdieren", "Oereudicoten"], 
+      ["Oerslurfdieren", "Gras"], ["Oerslurfdieren", "Brandnetels"], ["Oerslurfdieren", "Heide"],
+      ["Oerslurfdieren", "Klavers"], ["Oerslurfdieren", "Kroos"], ["Oerslurfdieren", "Waterriet"],
+      ["Oerslurfdieren", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Oerslurfdieren", "Detritus"], ["Oerslurfdieren", "Wortels"], ["Oerslurfdieren", "Blad"], ["Oerslurfdieren", "Ei"],
+      /* --- BOMEN --- */
+      ["Oerslurfdieren", "Acacia"], ["Oerslurfdieren", "Wilgen"], ["Oerslurfdieren", "Populieren"], 
+      ["Oerslurfdieren", "Iepen"], ["Oerslurfdieren", "Esdoorns"], ["Oerslurfdieren", "Lindes"], 
+      ["Oerslurfdieren", "Elzen"], ["Oerslurfdieren", "Berken"], ["Oerslurfdieren", "Beuken"], 
+      ["Oerslurfdieren", "Eiken"], ["Oerslurfdieren", "Essen"],
+      /* --- GENOTWAREN --- */
+      ["Oerslurfdieren", "Honing"],
+      /* --- FRUIT --- */
+      ["Oerslurfdieren", "Bosbessen"], ["Oerslurfdieren", "Vijgen"], ["Oerslurfdieren", "Aardbeien"], 
+      ["Oerslurfdieren", "Guaves"], ["Oerslurfdieren", "Mango"], ["Oerslurfdieren", "Bananen"], ["Oerslurfdieren", "Kaki"],
+      ["Oerslurfdieren", "Dadels"],
+      /* --- GROENTEN --- */
+      ["Oerslurfdieren", "Komkommers"], ["Oerslurfdieren", "Meloenen"], ["Oerslurfdieren", "Watermeloenen"],
+      ["Oerslurfdieren", "Pompoenen"], ["Oerslurfdieren", "Courgettes"], ["Oerslurfdieren", "Tomaten"],
+      ["Oerslurfdieren", "Selderij"], ["Oerslurfdieren", "Sla"], ["Oerslurfdieren", "Andijvie"], 
+      ["Oerslurfdieren", "Boerenkool"],
+      /* --- ZADEN --- */
+      ["Oerslurfdieren", "Erwten"], ["Oerslurfdieren", "Soja"], ["Oerslurfdieren", "Linzen"], 
+      ["Oerslurfdieren", "Sperziebonen"], ["Oerslurfdieren", "Kidneybonen"]
+    ],
+    output: [
+      { naam: "Oerslurfdieren", icoon: "icons/Oerslurfdieren.png", map: "Zoogdieren", 
+        quote: `The mammoths, mastodons, and elephants belong to a lineage that has carried its immense bodies across 
+        changing worlds for millions of years
+        <br><br>- Adrian Lister`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
