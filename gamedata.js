@@ -13313,6 +13313,45 @@ const combinaties = [
         <br><br>- David Attenborough`
       }
     ]
+  }, /* ------------------ LUIAARDEN ------------------ */
+  {
+    input: [
+      ["Luiaarden", "map:Bomen"], ["Luiaarden", "map:Bloemen"], 
+      /* --- PRIL LEVEN --- */
+      ["Luiaarden", "Paddenstoelen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Luiaarden", "Luizen"], ["Luiaarden", "Mijten"], ["Luiaarden", "Teken"], ["Luiaarden", "Termieten"],
+      ["Luiaarden", "Hooiwagens"], ["Luiaarden", "Spinnen"], ["Luiaarden", "Zilvervisjes"], 
+      ["Luiaarden", "Wandelende takken"], ["Luiaarden", "Kakkerlakken"], ["Luiaarden", "Slakken"],
+      ["Luiaarden", "Kevers"], ["Luiaarden", "Mieren"], ["Luiaarden", "Wespen"], ["Luiaarden", "Bijen"],    
+      /* --- PLANTEN --- */
+      ["Luiaarden", "Mos"], ["Luiaarden", "Varens"], ["Luiaarden", "Buxus"],
+      /* --- BIOLOGIE --- */
+      ["Luiaarden", "Blad"], ["Luiaarden", "Ei"],
+      /* --- GENOTWAREN --- */
+      ["Luiaarden", "Honing"],
+      /* --- FRUIT --- */
+      ["Luiaarden", "Druiven"], ["Luiaarden", "Appels"], ["Luiaarden", "Peren"], ["Luiaarden", "Pruimen"],
+      ["Luiaarden", "Bosbessen"], ["Luiaarden", "Vijgen"], ["Luiaarden", "Aardbeien"], ["Luiaarden", "Abrikozen"],
+      ["Luiaarden", "Kersen"], ["Luiaarden", "Perziken"], ["Luiaarden", "Guaves"], ["Luiaarden", "Mango"],
+      ["Luiaarden", "Papaja"], ["Luiaarden", "Frambozen"], ["Luiaarden", "Banane"], ["Luiaarden", "Lychee"],
+      ["Luiaarden", "Kaki"], ["Luiaarden", "Dadels"]
+    ],
+    output: [
+      { naam: "Luiaarden", icoon: "icons/Luiaarden.png", map: "Zoogdieren", 
+        quote: `The sloth spends nearly all its life hanging upside down in the canopy, moving only when necessary
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerplacentalia", "Savanne"], 
