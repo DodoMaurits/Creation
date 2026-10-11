@@ -13382,6 +13382,72 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ AARDVARKENS ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Aardvarkens", "Paddenstoelen"],
+      /* --- WATERDIEREN --- */
+      ["Aardvarkens", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Aardvarkens", "Luizen"], ["Aardvarkens", "Mijten"], ["Aardvarkens", "Teken"], ["Aardvarkens", "Termieten"], 
+      ["Aardvarkens", "Pissebedden"], ["Aardvarkens", "Oerpolyneopteren"], ["Aardvarkens", "Hooiwagens"], 
+      ["Aardvarkens", "Spinnen"], ["Aardvarkens", "Zilvervisjes"], ["Aardvarkens", "Wandelende takken"], 
+      ["Aardvarkens", "Kakkerlakken"], ["Aardvarkens", "Oerhymenopteren"], ["Aardvarkens", "Slakken"], 
+      ["Aardvarkens", "Libellen"], ["Aardvarkens", "Kevers"], ["Aardvarkens", "Lieveheersbeestjes"], 
+      ["Aardvarkens", "Mieren"], ["Aardvarkens", "Wespen"], ["Aardvarkens", "Vliegen"], ["Aardvarkens", "Vlinders"], 
+      ["Aardvarkens", "Krekels"], ["Aardvarkens", "Sprinkhanen"], ["Aardvarkens", "Muggen"], ["Aardvarkens", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Aardvarkens", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Aardvarkens", "Truffels"]
+    ],
+    output: [
+      { naam: "Aardvarkens", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
+        quote: `Aardvarks dig extensive burrow systems that provide shelter not only for themselves but for many other 
+        animals
+        <br><br>- Richard Estes`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Aardvarkens", "Salamanders"], ["Aardvarkens", "Kikkers"], ["Aardvarkens", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Aardvarkens", "Gekko"],
+      /* --- ZOOGDIEREN --- */
+      ["Aardvarkens", "Muizen"], ["Aardvarkens", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Aardvarkens", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
+        quote: `Aardvarks dig extensive burrow systems that provide shelter not only for themselves but for many other 
+        animals
+        <br><br>- Richard Estes`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerplacentalia", "Weide"],
