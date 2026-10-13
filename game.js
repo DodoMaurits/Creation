@@ -1192,17 +1192,3 @@ function showHint() {
 
 hintButton.onclick = showHint;
 refreshHintDeck();
-
-setTimeout(() => {
-  const tl = document.getElementById("timeline");
-  const lbl = document.getElementById("timeline-label");
-  const bar = tl.getBoundingClientRect();
-  const lab = lbl.getBoundingClientRect();
-  const mq = window.matchMedia("(max-width: 900px) and (orientation: portrait)").matches;
-  alert(
-    "matchMedia mobiel: " + mq +
-    "\nleft in CSS: " + getComputedStyle(lbl).left +
-    "\nbalk: " + Math.round(bar.left) + " breed " + Math.round(bar.width) +
-    "\nlabel: " + Math.round(lab.left) + " breed " + Math.round(lab.width)
-  );
-}, 3000);
