@@ -811,10 +811,13 @@ function updateTimelineLabel() {
   // Alleen op mobiel clampen; laptop houdt de exacte percentage-positionering
   if (window.matchMedia("(max-width: 900px) and (orientation: portrait)").matches) {
     const labelWidth = timelineLabel.offsetWidth;
-    const parentWidth = timelineLabel.parentElement.getBoundingClientRect().width;   // ← parent, niet de balk
-    const minCenter = labelWidth / 2;
-    const maxCenter = parentWidth - labelWidth / 2;
-    let centerPx = percentage * parentWidth;                                         // ← parentWidth hier ook
+    const barRect = timeline.getBoundingClientRect();
+    const barLeft = barRect.left;      // afstand balk ↔ schermrand (nu 27px)
+    const barWidth = barRect.width;
+    // Clamp t.o.v. het SCHERM, niet de balk:
+    const minCenter = labelWidth / 2 - barLeft;                    // linkerkant label = schermrand
+    const maxCenter = barWidth + barLeft - labelWidth / 2;        // rechterkant label = schermrand
+    let centerPx = percentage * barWidth;                          // centrum blijft op de bol
     if (centerPx < minCenter) centerPx = minCenter;
     if (centerPx > maxCenter) centerPx = maxCenter;
     timelineLabel.style.left = `${centerPx}px`;
