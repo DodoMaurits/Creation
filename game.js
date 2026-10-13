@@ -805,7 +805,7 @@ function updateTimelineLabel() {
   timelineFill.style.width = (percentage * 100) + "%";
 
   // Label positioneren **exact boven de bol**
-  timelineLabel.style.left = `${percentage * 100}%`;
+  timelineLabel.style.left = `calc(${percentage * 100}% - 8px)`;
   // transform: translateX(-50%) in CSS doet de centering
   
   // Alleen op mobiel clampen; laptop houdt de exacte percentage-positionering
@@ -814,12 +814,12 @@ function updateTimelineLabel() {
     const barWidth = timeline.getBoundingClientRect().width;
     const minCenter = labelWidth / 2;               // linkerkant label = linkerkant balk
     const maxCenter = barWidth - labelWidth / 2;   // rechterkant label = rechterkant balk
-    let centerPx = percentage * barWidth;
+    let centerPx = percentage * barWidth - 8;
     if (centerPx < minCenter) centerPx = minCenter;
     if (centerPx > maxCenter) centerPx = maxCenter;
     timelineLabel.style.left = `${centerPx}px`;
   } else {
-    timelineLabel.style.left = `${percentage * 100}%`;
+    timelineLabel.style.left = `calc(${percentage * 100}% - 8px)`;
   }
 }
 
