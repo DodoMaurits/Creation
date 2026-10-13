@@ -1,5 +1,3 @@
-console.log("BUTTON:", document.getElementById("hint-button"));
-
 // ----- STATE -----
 let openLeft = null;
 let openRight = null;
@@ -57,7 +55,6 @@ function preloadAllIcons() {
     const img = new Image();
     img.src = url;
   });
-  console.log("Alle iconen worden vooraf geladen!");
 }
 
 function attachTooltip(el, text) {
