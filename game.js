@@ -1192,3 +1192,10 @@ function showHint() {
 
 hintButton.onclick = showHint;
 refreshHintDeck();
+
+const tl = document.getElementById("timeline");
+const lbl = document.getElementById("timeline-label");
+const bar = tl.getBoundingClientRect();
+const lab = lbl.getBoundingClientRect();
+alert("balk: " + Math.round(bar.left) + " breed " + Math.round(bar.width) +
+      "\nlabel: " + Math.round(lab.left) + " breed " + Math.round(lab.width));
