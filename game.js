@@ -817,6 +817,10 @@ function updateTimelineLabel() {
     let centerPx = percentage * barWidth;
     if (centerPx < minCenter) centerPx = minCenter;
     if (centerPx > maxCenter) centerPx = maxCenter;
+    console.log("percentage:", percentage.toFixed(3),
+                "centerPx:", (percentage * barWidth).toFixed(1),
+                "minCenter:", (labelWidth / 2).toFixed(1),
+                "geclampt:", (percentage * barWidth) < (labelWidth / 2));
     timelineLabel.style.left = `${centerPx}px`;
   } else {
     timelineLabel.style.left = `${percentage * 100}%`;
@@ -1192,8 +1196,3 @@ function showHint() {
 
 hintButton.onclick = showHint;
 refreshHintDeck();
-
-console.log("percentage:", percentage.toFixed(3),
-            "centerPx:", (percentage * barWidth).toFixed(1),
-            "minCenter:", (labelWidth / 2).toFixed(1),
-            "geclampt:", (percentage * barWidth) < (labelWidth / 2));
