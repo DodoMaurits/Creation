@@ -1192,3 +1192,8 @@ function showHint() {
 
 hintButton.onclick = showHint;
 refreshHintDeck();
+
+console.log("percentage:", percentage.toFixed(3),
+            "centerPx:", (percentage * barWidth).toFixed(1),
+            "minCenter:", (labelWidth / 2).toFixed(1),
+            "geclampt:", (percentage * barWidth) < (labelWidth / 2));
