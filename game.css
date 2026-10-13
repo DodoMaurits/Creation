@@ -923,10 +923,11 @@ body {
 #timeline-fill::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: -20px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   width: 40px;
-  height: 100%;
+  height: 40px;
   background: radial-gradient(
     circle,
     rgba(255,255,255,0.8) 0%,
