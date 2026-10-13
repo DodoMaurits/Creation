@@ -13352,6 +13352,39 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ MIERENETERS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Miereneters", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Miereneters", "Oerinsecten"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Miereneters", "Luizen"], ["Miereneters", "Mijten"], ["Miereneters", "Teken"], ["Miereneters", "Termieten"],
+      ["Miereneters", "Pissebedden"], ["Miereneters", "Oerpolyneopteren"], ["Miereneters", "Duizendpoten"], 
+      ["Miereneters", "Hooiwagens"], ["Miereneters", "Spinnen"], ["Miereneters", "Zilvervisjes"], 
+      ["Miereneters", "Wandelende takken"], ["Miereneters", "Kakkerlakken"], ["Miereneters", "Oerhymenopteren"], 
+      ["Miereneters", "Slakken"], ["Miereneters", "Kevers"], ["Miereneters", "Mieren"], ["Miereneters", "Wespen"], 
+      ["Miereneters", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Miereneters", "Ei"]
+    ],
+    output: [
+      { naam: "Miereneters", icoon: "icons/Miereneters.png", map: "Zoogdieren", 
+        quote: `The giant anteater uses its long, tubular snout to feed on ants and termites, consuming thousands in a 
+        single day
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerplacentalia", "Savanne"], 
