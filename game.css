@@ -945,7 +945,7 @@ body {
 #timeline-fill::before {
   content: "";
   position: absolute;
-  right: -6px;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   width: 16px;
