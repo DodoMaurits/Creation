@@ -817,10 +817,6 @@ function updateTimelineLabel() {
     let centerPx = percentage * barWidth;
     if (centerPx < minCenter) centerPx = minCenter;
     if (centerPx > maxCenter) centerPx = maxCenter;
-    alert("percentage: " + percentage.toFixed(3) +
-          "\ncenterPx: " + (percentage * barWidth).toFixed(1) +
-          "\nminCenter: " + (labelWidth / 2).toFixed(1) +
-          "\ngeclampt: " + ((percentage * barWidth) < (labelWidth / 2)));
     timelineLabel.style.left = `${centerPx}px`;
   } else {
     timelineLabel.style.left = `${percentage * 100}%`;
