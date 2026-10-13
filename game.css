@@ -53,8 +53,8 @@ body {
   margin-top: 10px;
   height: 100px;
   width: 6px;
-  writing-mode: bt-lr;
-  -webkit-appearance: slider-vertical;
+  writing-mode: vertical-lr;
+  direction: rtl;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
