@@ -15498,6 +15498,48 @@ const combinaties = [
         <br><br>- Ernest Seton`
       }
     ]
+  }, /* ------------------ BEVERS ------------------ */
+  {
+    input: [
+      ["Bevers", "map:Bomen"],
+      /* --- PRIL LEVEN --- */
+      ["Bevers", "Paddenstoelen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Bevers", "Luizen"], ["Bevers", "Mijten"], ["Bevers", "Teken"], 
+      /* --- PLANTEN --- */
+      ["Bevers", "Mos"], ["Bevers", "Varens"], ["Bevers", "Gras"], ["Bevers", "Brandnetels"], ["Bevers", "Heide"],
+      ["Bevers", "Lavendel"], ["Bevers", "Klavers"], ["Bevers", "Kroos"], ["Bevers", "Waterriet"],
+      ["Bevers", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Bevers", "Wortels"], ["Bevers", "Blad"],
+      /* --- MATERIALEN --- */
+      ["Bevers", "Hout"],
+      /* --- SMAAKWAREN --- */
+      ["Bevers", "Truffels"],
+      /* --- BLOEMEN --- */
+      ["Bevers", "Waterlelies"],
+      /* --- FRUIT --- */
+      ["Bevers", "Druiven"], ["Bevers", "Appels"], ["Bevers", "Peren"], ["Bevers", "Pruimen"], ["Bevers", "Bosbessen"], 
+      ["Bevers", "Aardbeien"], ["Bevers", "Abrikozen"], ["Bevers", "Kersen"], ["Bevers", "Perziken"],
+      ["Bevers", "Mandarijnen"], ["Bevers", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Bevers", "Spinazie"], ["Bevers", "Selderij"], ["Bevers", "Wortelen"], ["Bevers", "Sla"], ["Bevers", "Andijvie"]
+    ],
+    output: [
+      { naam: "Bevers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
+        quote: `The beaver builds not only with wood, but with an intelligence that seems almost human in its patience
+        <br><br>- Ernest Seton`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerknaagdieren", "Rivier"],
