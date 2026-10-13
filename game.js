@@ -1192,3 +1192,15 @@ function showHint() {
 
 hintButton.onclick = showHint;
 refreshHintDeck();
+
+setTimeout(() => {
+  const tl = document.getElementById("timeline");
+  const lbl = document.getElementById("timeline-label");
+  const bar = tl.getBoundingClientRect();
+  const lab = lbl.getBoundingClientRect();
+  alert(
+    "left-waarde in CSS: " + getComputedStyle(lbl).left +
+    "\nbalk links: " + Math.round(bar.left) +
+    "\nlabel links: " + Math.round(lab.left)
+  );
+}, 3000);
