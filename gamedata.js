@@ -13545,6 +13545,56 @@ const combinaties = [
         <br><br>- Richard Adams`
       }
     ]
+  }, /* ------------------ OERKNAAGDIEREN ------------------ */
+  {
+    input: [
+      ["Oerknaagdieren", "map:Bloemen"], ["Oerknaagdieren", "map:Fruit"], ["Oerknaagdieren", "map:Groenten"],
+      ["Oerknaagdieren", "map:Granen"], ["Oerknaagdieren", "map:Zaden"],
+      /* --- PRIL LEVEN --- */
+      ["Oerknaagdieren", "Korstmos"], ["Oerknaagdieren", "Paddenstoelen"],
+      /* --- WATERDIEREN --- */
+      ["Oerknaagdieren", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerknaagdieren", "Luizen"], ["Oerknaagdieren", "Mijten"], ["Oerknaagdieren", "Teken"], 
+      ["Oerknaagdieren", "Termieten"], ["Oerknaagdieren", "Pissebedden"], ["Oerknaagdieren", "Oerpolyneopteren"], 
+      ["Oerknaagdieren", "Duizendpoten"], ["Oerknaagdieren", "Hooiwagens"], ["Oerknaagdieren", "Spinnen"], 
+      ["Oerknaagdieren", "Zilvervisjes"], ["Oerknaagdieren", "Wandelende takken"], 
+      ["Oerknaagdieren", "Kakkerlakken"], ["Oerknaagdieren", "Oerhymenopteren"], ["Oerknaagdieren", "Slakken"], 
+      ["Oerknaagdieren", "Libellen"], ["Oerknaagdieren", "Kevers"], ["Oerknaagdieren", "Lieveheersbeestjes"], 
+      ["Oerknaagdieren", "Mieren"], ["Oerknaagdieren", "Wespen"], ["Oerknaagdieren", "Vliegen"], 
+      ["Oerknaagdieren", "Vlinders"], ["Oerknaagdieren", "Krekels"], ["Oerknaagdieren", "Sprinkhanen"], 
+      ["Oerknaagdieren", "Muggen"], ["Oerknaagdieren", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Oerknaagdieren", "Mos"], ["Oerknaagdieren", "Varens"], ["Oerknaagdieren", "Gras"], 
+      ["Oerknaagdieren", "Brandnetels"], ["Oerknaagdieren", "Heide"], ["Oerknaagdieren", "Klavers"],  
+      /* --- BIOLOGIE --- */
+      ["Oerknaagdieren", "Wortels"], ["Oerknaagdieren", "Blad"], ["Oerknaagdieren", "Zaadjes"], ["Oerknaagdieren", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Oerknaagdieren", "Truffels"], ["Oerknaagdieren", "Munt"], ["Oerknaagdieren", "Tijm"], 
+      ["Oerknaagdieren", "Bieslook"], ["Oerknaagdieren", "Basilicum"], ["Oerknaagdieren", "Oregano"],
+      ["Oerknaagdieren", "Salie"], ["Oerknaagdieren", "Dille"], ["Oerknaagdieren", "Koriander"], 
+      ["Oerknaagdieren", "Peterselie"],
+      /* --- BOMEN --- */
+      ["Oerknaagdieren", "Wilgen"], ["Oerknaagdieren", "Populieren"], ["Oerknaagdieren", "Iepen"], 
+      ["Oerknaagdieren", "Elzen"], ["Oerknaagdieren", "Berken"],
+      /* --- GENOTWAREN --- */
+      ["Oerknaagdieren", "Honing"]
+    ],
+    output: [
+      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
+        quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
+        <br><br>- Edward Wilson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerplacentalia", "Steppe"],
