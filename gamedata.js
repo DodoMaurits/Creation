@@ -13587,6 +13587,48 @@ const combinaties = [
         <br><br>- David Attenborough`
       }
     ]
+  }, /* ------------------ KANGOEROES ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Kangoeroes", "Paddenstoelen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kangoeroes", "Luizen"], ["Kangoeroes", "Mijten"], ["Kangoeroes", "Teken"], 
+      /* --- PLANTEN --- */
+      ["Kangoeroes", "Mos"], ["Kangoeroes", "Varens"], ["Kangoeroes", "Gras"], ["Kangoeroes", "Vetplanten"], 
+      ["Kangoeroes", "Brandnetels"], ["Kangoeroes", "Aloë vera"], ["Kangoeroes", "Heide"], ["Kangoeroes", "Lavendel"], 
+      ["Kangoeroes", "Kroos"], ["Kangoeroes", "Kroos"], ["Kangoeroes", "Waterriet"], ["Kangoeroes", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Kangoeroes", "Detritus"], ["Kangoeroes", "Wortels"], ["Kangoeroes", "Blad"], ["Kangoeroes", "Ei"],
+      /* --- BOMEN --- */
+      ["Kangoeroes", "Acacia"], ["Kangoeroes", "Wilgen"], ["Kangoeroes", "Populieren"], ["Kangoeroes", "Iepen"],
+      ["Kangoeroes", "Esdoorns"], ["Kangoeroes", "Lindes"], ["Kangoeroes", "Elzen"], ["Kangoeroes", "Berken"],
+      ["Kangoeroes", "Beuken"], ["Kangoeroes", "Eiken"], ["Kangoeroes", "Essen"],   
+      /* --- FRUIT --- */
+      ["Kangoeroes", "Druiven"], ["Kangoeroes", "Appels"], ["Kangoeroes", "Peren"], ["Kangoeroes", "Pruimen"], 
+      ["Kangoeroes", "Bosbessen"], ["Kangoeroes", "Vijgen"], ["Kangoeroes", "Aardbeien"], ["Kangoeroes", "Abrikozen"], 
+      ["Kangoeroes", "Perziken"], ["Kangoeroes", "Mandarijnen"], ["Kangoeroes", "Guaves"], ["Kangoeroes", "Frambozen"], 
+      ["Kangoeroes", "Bananen"], ["Kangoeroes", "Kaki"], 
+      /* --- GROENTEN --- */
+      ["Kangoeroes", "Spinazie"], ["Kangoeroes", "Selderij"], ["Kangoeroes", "Wortelen"], ["Kangoeroes", "Sla"], 
+      ["Kangoeroes", "Andijvie"], ["Kangoeroes", "Boerenkool"]
+    ],
+    output: [
+      { naam: "Kangoeroes", icoon: "icons/Kangoeroes.png", map: "Zoogdieren", 
+        quote: `Kangaroos move in bounds across the open landscape, their powerful hind legs allowing great leaps over 
+        long distances
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerbuideldieren", "Eucalyptus"],
