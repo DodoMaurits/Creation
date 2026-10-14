@@ -13597,6 +13597,31 @@ const combinaties = [
     ]
   },
   {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerknaagdieren", "Salamanders"], ["Oerknaagdieren", "Kikkers"], ["Oerknaagdieren", "Padden"]
+    ],
+    output: [
+      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
+        quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
+        <br><br>- Edward Wilson`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
     input: ["Oerplacentalia", "Steppe"],
     hint: `Sommige placentadieren voelen zich thuis op de steppe.`,
     tijd: 10_000_000,
