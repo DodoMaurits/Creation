@@ -13573,6 +13573,52 @@ const combinaties = [
         <br><br>- Tim Flannery`
       }
     ]
+  }, /* ------------------ KANGOEROES ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Wombats", "Paddenstoelen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wombats", "Luizen"], ["Wombats", "Mijten"], ["Wombats", "Teken"], 
+      /* --- PLANTEN --- */
+      ["Wombats", "Mos"], ["Wombats", "Varens"], ["Wombats", "Gras"], ["Wombats", "Vetplanten"], 
+      ["Wombats", "Brandnetels"], ["Wombats", "Agave"], ["Wombats", "Aloë vera"], ["Wombats", "Heide"], 
+      ["Wombats", "Lavendel"], ["Wombats", "Klavers"], ["Wombats", "Kroos"], ["Wombats", "Waterriet"], 
+      ["Wombats", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Wombats", "Detritus"], ["Wombats", "Wortels"], ["Wombats", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Wombats", "Truffels"],
+      /* --- MATERIALEN --- */
+      ["Wombats", "Hout"],
+      /* --- BOMEN --- */
+      ["Wombats", "Acacia"], ["Wombats", "Wilgen"], ["Wombats", "Populieren"], ["Wombats", "Iepen"], 
+      ["Wombats", "Eucalyptus"], ["Wombats", "Lindes"], ["Wombats", "Elzen"], ["Wombats", "Berken"],
+      ["Wombats", "Beuken"], ["Wombats", "Eiken"], ["Wombats", "Essen"],
+      /* --- FRUIT --- */
+      ["Wombats", "Druiven"], ["Wombats", "Appels"], ["Wombats", "Peren"], ["Wombats", "Pruimen"], 
+      ["Wombats", "Bosbessen"], ["Wombats", "Vijgen"], ["Wombats", "Aardbeien"], ["Wombats", "Abrikozen"], 
+      ["Wombats", "Perziken"], ["Wombats", "Guaves"], ["Wombats", "Frambozen"], ["Wombats", "Bananen"], 
+      ["Wombats", "Kaki"], 
+      /* --- GROENTEN --- */
+      ["Wombats", "Spinazie"], ["Wombats", "Selderij"], ["Wombats", "Wortelen"], ["Wombats", "Sla"], 
+      ["Wombats", "Andijvie"], ["Wombats", "Boerenkool"]
+    ],
+    output: [
+      { naam: "Wombats", icoon: "icons/Wombats.png", map: "Zoogdieren", 
+        quote: `The common wombat digs extensive burrows and emerges mainly at night to graze on grasses and roots
+        <br><br>- Tim Flannery`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
