@@ -13573,7 +13573,7 @@ const combinaties = [
         <br><br>- Tim Flannery`
       }
     ]
-  }, /* ------------------ KANGOEROES ------------------ */
+  }, /* ------------------ WOMBATS ------------------ */
   {
     input: [
       /* --- PRIL LEVEN --- */
@@ -13684,6 +13684,29 @@ const combinaties = [
       { naam: "Koala", icoon: "icons/Koala.png", map: "Zoogdieren", 
         quote: `Koalas spend most of their lives in eucalyptus trees, feeding and sleeping among the branches
         <br><br>- David Attenborough`
+      }
+    ]
+  }, /* ------------------ KOALA ------------------ */
+  {
+    input: [
+      /* --- BIOLOGIE --- */
+      ["Koala", "Blad"],
+      /* --- BOMEN --- */
+      ["Koala", "Acacia"], ["Koala", "Eucalyptus"]
+    ],
+    output: [
+      { naam: "Koala", icoon: "icons/Koala.png", map: "Zoogdieren", 
+        quote: `Koalas spend most of their lives in eucalyptus trees, feeding and sleeping among the branches
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
