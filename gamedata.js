@@ -13765,7 +13765,7 @@ const combinaties = [
       /* --- PRIL LEVEN --- */
       ["Konijnen", "Paddenstoelen"], 
       /* --- KLEIN LANDLEVEN --- */
-      ["Konijnen", "Mijten"], ["Konijnen", "Teken"], 
+      ["Konijnen", "Luizen"], ["Konijnen", "Mijten"], ["Konijnen", "Teken"], 
       /* --- PLANTEN --- */
       ["Konijnen", "Mos"], ["Konijnen", "Gras"], ["Konijnen", "Brandnetels"], ["Konijnen", "Heide"], 
       ["Konijnen", "Lavendel"], ["Konijnen", "Klavers"], ["Konijnen", "Waterriet"], ["Konijnen", "Suikerriet"],
