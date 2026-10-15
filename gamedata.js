@@ -15175,6 +15175,40 @@ const combinaties = [
         <br><br>- Daniel Fisher`
       }
     ]
+  }, /* ------------------ MAMMOETEN ------------------ */
+  {
+    input: [
+      ["Mammoeten", "map:Smaakmakers"], ["Mammoeten", "map:Bomen"], ["Mammoeten", "map:Bloemen"], 
+      ["Mammoeten", "map:Fruit"], ["Mammoeten", "map:Groenten"], ["Mammoeten", "map:Granen"], ["Mammoeten", "map:Zaden"],  
+      /* --- PRIL LEVEN --- */
+      ["Mammoeten", "Paddenstoelen"], 
+      /* --- PLANTEN --- */
+      ["Mammoeten", "Mos"], ["Mammoeten", "Varens"], ["Mammoeten", "Gras"], ["Mammoeten", "Vetplanten"], 
+      ["Mammoeten", "Buxus"], ["Mammoeten", "Brandnetels"], ["Mammoeten", "Heide"], ["Mammoeten", "Lavendel"], 
+      ["Mammoeten", "Klavers"], ["Mammoeten", "Kroos"], ["Mammoeten", "Waterriet"], ["Mammoeten", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Mammoeten", "Detritus"], ["Mammoeten", "Wortels"], ["Mammoeten", "Blad"], ["Mammoeten", "Zaadjes"],
+      ["Mammoeten", "Bloem"],
+      /* --- MATERIALEN --- */
+      ["Mammoeten", "Hout"],
+      /* --- GENOTWAREN --- */
+      ["Mammoeten", "Honing"]
+    ],
+    output: [
+      { naam: "Mammoeten", icoon: "icons/Mammoeten.png", map: "Zoogdieren", 
+        quote: `Mammoths likely lived in herds similar to modern elephants, with complex social structures
+        <br><br>- Daniel Fisher`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerslurfdieren", "Savanne"],
