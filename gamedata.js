@@ -16098,6 +16098,47 @@ const combinaties = [
         <br><br>- Aldo Leopold`
       }
     ]
+  }, /* ------------------ PRAIRIEHONDEN ------------------ */
+  {
+    input: [ 
+      /* --- PRIL LEVEN --- */
+      ["Prairiehonden", "Paddenstoelen"], 
+      /* --- PLANTEN --- */
+      ["Prairiehonden", "Mos"], ["Prairiehonden", "Gras"], ["Prairiehonden", "Brandnetels"], ["Prairiehonden", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Prairiehonden", "Wortels"], ["Prairiehonden", "Blad"], ["Prairiehonden", "Zaadjes"], ["Prairiehonden", "Ei"],
+      /* --- BLOEMEN --- */
+      ["Prairiehonden", "Klaprozen"], ["Prairiehonden", "Paardenbloemen"], ["Prairiehonden", "Madeliefjes"],
+      ["Prairiehonden", "Goudsbloemen"], ["Prairiehonden", "Zonnebloemen"],
+      /* --- GENOTWAREN --- */
+      ["Prairiehonden", "Honing"],
+      /* --- FRUIT --- */
+      ["Prairiehonden", "Druiven"], ["Prairiehonden", "Bosbessen"], ["Prairiehonden", "Aardbeien"],
+      ["Prairiehonden", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Prairiehonden", "Spinazie"], ["Prairiehonden", "Wortelen"], ["Prairiehonden", "Sla"], 
+      ["Prairiehonden", "Andijvie"],
+      /* --- GRANEN --- */
+      ["Prairiehonden", "Maïs"], ["Prairiehonden", "Pap"], ["Prairiehonden", "Brood"],
+      /* --- ZADEN --- */
+      ["Prairiehonden", "Erwten"], ["Prairiehonden", "Soja"], ["Prairiehonden", "Linzen"], 
+      ["Prairiehonden", "Sperziebonen"], ["Prairiehonden", "Kidneybonen"]
+    ],
+    output: [
+      { naam: "Prairiehonden", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
+        quote: `Where prairie dogs thrive, the grassland itself seems alive with conversation
+        <br><br>- Aldo Leopold`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
