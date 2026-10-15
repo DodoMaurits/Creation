@@ -13662,6 +13662,31 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, 
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerknaagdieren", "Salamanders"], ["Oerknaagdieren", "Kikkers"], ["Oerknaagdieren", "Padden"]
+    ],
+    output: [
+      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
+        quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
+        <br><br>- Edward Wilson`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   }, /* ------------------ GORDELDIEREN ------------------ */
   {
     input: [
@@ -13734,20 +13759,41 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
+  }, /* ------------------ KONIJNEN ------------------ */
   {
     input: [
+      /* --- PRIL LEVEN --- */
+      ["Konijnen", "Paddenstoelen"], 
       /* --- KLEIN LANDLEVEN --- */
-      ["Oerknaagdieren", "Salamanders"], ["Oerknaagdieren", "Kikkers"], ["Oerknaagdieren", "Padden"]
+      ["Konijnen", "Mijten"], ["Konijnen", "Teken"], 
+      /* --- PLANTEN --- */
+      ["Konijnen", "Mos"], ["Konijnen", "Gras"], ["Konijnen", "Brandnetels"], ["Konijnen", "Heide"], 
+      ["Konijnen", "Lavendel"], ["Konijnen", "Klavers"], ["Konijnen", "Waterriet"], ["Konijnen", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Konijnen", "Detritus"], ["Konijnen", "Wortels"], ["Konijnen", "Blad"], ["Konijnen", "Zaadjes"],
+      /* --- BOMEN --- */
+      ["Konijnen", "Wilgen"], ["Konijnen", "Populieren"], ["Konijnen", "Iepen"], ["Konijnen", "Elzen"], 
+      ["Konijnen", "Berken"],
+      /* --- BLOEMEN --- */
+      ["Konijnen", "Klaprozen"], ["Konijnen", "Krokussen"], ["Konijnen", "Paardenbloemen"], ["Konijnen", "Tulpen"], 
+      ["Konijnen", "Geraniums"], ["Konijnen", "Madeliefjes"], ["Konijnen", "Goudsbloemen"],
+      /* --- GENOTWAREN --- */
+      ["Konijnen", "Honing"], 
+      /* --- FRUIT --- */
+      ["Konijnen", "Druiven"], ["Konijnen", "Appels"], ["Konijnen", "Peren"], ["Konijnen", "Pruimen"], 
+      ["Konijnen", "Bosbessen"], ["Konijnen", "Vijgen"], ["Konijnen", "Aardbeien"], ["Konijnen", "Abrikozen"], 
+      ["Konijnen", "Kersen"], ["Konijnen", "Perziken"], ["Konijnen", "Mandarijnen"], ["Konijnen", "Frambozen"], 
+      ["Konijnen", "Bananen"], ["Konijnen", "Kaki"], ["Konijnen", "Dadels"], 
+      /* --- GROENTEN --- */
+      ["Konijnen", "Spinazie"], ["Konijnen", "Selderij"], ["Konijnen", "Wortelen"], ["Konijnen", "Sla"], 
+      ["Konijnen", "Andijvie"], ["Konijnen", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Konijnen", "Pap"], ["Konijnen", "Brood"]
     ],
     output: [
-      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
-        quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
-        <br><br>- Edward Wilson`
-      },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
+      { naam: "Konijnen", icoon: "icons/Konijnen.png", map: "Zoogdieren", 
+        quote: `Rabbits graze quietly in open fields, vanishing into burrows at the slightest sign of danger
+        <br><br>- Richard Adams`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
