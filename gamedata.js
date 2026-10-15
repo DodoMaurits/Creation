@@ -13595,6 +13595,78 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ GORDELDIEREN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Gordeldieren", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Gordeldieren", "Luizen"], ["Gordeldieren", "Mijten"], ["Gordeldieren", "Teken"], 
+      ["Gordeldieren", "Termieten"], ["Gordeldieren", "Pissebedden"], ["Gordeldieren", "Oerpolyneopteren"], 
+      ["Gordeldieren", "Duizendpoten"], ["Gordeldieren", "Hooiwagens"], ["Gordeldieren", "Spinnen"], 
+      ["Gordeldieren", "Zilvervisjes"], ["Gordeldieren", "Wandelende takken"], ["Gordeldieren", "Kakkerlakken"], 
+      ["Gordeldieren", "Oerhymenopteren"], ["Gordeldieren", "Slakken"], ["Gordeldieren", "Libellen"], 
+      ["Gordeldieren", "Kevers"], ["Gordeldieren", "Lieveheersbeestjes"], ["Gordeldieren", "Mieren"], 
+      ["Gordeldieren", "Wespen"], ["Gordeldieren", "Vliegen"], ["Gordeldieren", "Vlinders"], ["Gordeldieren", "Krekels"], 
+      ["Gordeldieren", "Sprinkhanen"], ["Gordeldieren", "Muggen"], ["Gordeldieren", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Gordeldieren", "Kroos"], ["Gordeldieren", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Gordeldieren", "Wortels"], ["Gordeldieren", "Zaadjes"], ["Gordeldieren", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Gordeldieren", "Truffels"],
+      /* --- GENOTWAREN --- */
+      ["Gordeldieren", "Honing"],
+      /* --- FRUIT --- */
+      ["Gordeldieren", "Bosbessen"], ["Gordeldieren", "Vijgen"], ["Gordeldieren", "Aardbeien"], 
+      ["Gordeldieren", "Frambozen"], ["Gordeldieren", "Guaves"], ["Gordeldieren", "Bananen"]
+    ],
+    output: [
+      { naam: "Gordeldieren", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
+        quote: `Armadillos are burrowing mammals whose armour plates provide protection while they forage for insects 
+        and small invertebrates
+        <br><br>- Richard Estes`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- VISSEN --- */
+      ["Gordeldieren", "Goudvissen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Gordeldieren", "Salamanders"], ["Gordeldieren", "Kikkers"], ["Gordeldieren", "Padden"],
+      /* --- ZOOGDIEREN --- */
+      ["Gordeldieren", "Muizen"], ["Gordeldieren", "Mollen"]
+    ],
+    output: [
+      { naam: "Gordeldieren", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
+        quote: `Armadillos are burrowing mammals whose armour plates provide protection while they forage for insects 
+        and small invertebrates
+        <br><br>- Richard Estes`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
