@@ -13282,6 +13282,73 @@ const combinaties = [
         <br><br>- Derek Ratcliffe`
       }
     ]
+  }, /* ------------------ EGELS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Egels", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Egels", "Luizen"], ["Egels", "Mijten"], ["Egels", "Teken"], ["Egels", "Termieten"], ["Egels", "Pissebedden"], 
+      ["Egels", "Duizendpoten"], ["Egels", "Hooiwagens"], ["Egels", "Spinnen"], ["Egels", "Zilvervisjes"], 
+      ["Egels", "Wandelende takken"], ["Egels", "Kakkerlakken"], ["Egels", "Oerhymenopteren"], ["Egels", "Slakken"], 
+      ["Egels", "Libellen"], ["Egels", "Kevers"], ["Egels", "Lieveheersbeestjes"], ["Egels", "Mieren"], 
+      ["Egels", "Wespen"], ["Egels", "Vliegen"], ["Egels", "Vlinders"], ["Egels", "Krekels"], ["Egels", "Sprinkhanen"],
+      ["Egels", "Muggen"], ["Egels", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Egels", "Detritus"], ["Egels", "Ei"], 
+      /* --- SMAAKMAKERS --- */
+      ["Egels", "Truffels"],
+      /* --- GENOTWAREN --- */
+      ["Egels", "Honing"],
+      /* --- FRUIT --- */
+      ["Egels", "Bosbessen"], ["Egels", "Aardbeien"], ["Egels", "Frambozen"], ["Egels", "Bananen"]
+    ],
+    output: [
+      { naam: "Egels", icoon: "icons/Egels.png", map: "Zoogdieren", 
+        quote: `Hedgehogs are nocturnal mammals that forage for insects and small invertebrates in gardens and woodland 
+        edges
+        <br><br>- Richard Fitter`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Egels", "Salamanders"], ["Egels", "Kikkers"], ["Egels", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Egels", "Gekko"],
+      /* --- ZOOGDIEREN --- */
+      ["Egels", "Muizen"], ["Egels", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Egels", icoon: "icons/Egels.png", map: "Zoogdieren", 
+        quote: `Hedgehogs are nocturnal mammals that forage for insects and small invertebrates in gardens and woodland 
+        edges
+        <br><br>- Richard Fitter`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerplacentalia", "Regenwoud"], 
@@ -13612,7 +13679,7 @@ const combinaties = [
       /* --- PLANTEN --- */
       ["Gordeldieren", "Kroos"], ["Gordeldieren", "Waterriet"],
       /* --- BIOLOGIE --- */
-      ["Gordeldieren", "Wortels"], ["Gordeldieren", "Zaadjes"], ["Gordeldieren", "Ei"], 
+      ["Gordeldieren", "Detritus"], ["Gordeldieren", "Wortels"], ["Gordeldieren", "Zaadjes"], ["Gordeldieren", "Ei"], 
       /* --- SMAAKMAKERS --- */
       ["Gordeldieren", "Truffels"],
       /* --- GENOTWAREN --- */
