@@ -13820,6 +13820,53 @@ const combinaties = [
         <br><br>- J.A. Baker`
       }
     ]
+  }, /* ------------------ HAZEN ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Hazen", "Paddenstoelen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Hazen", "Luizen"], ["Hazen", "Mijten"], ["Hazen", "Teken"], 
+      /* --- PLANTEN --- */
+      ["Hazen", "Mos"], ["Hazen", "Gras"], ["Hazen", "Brandnetels"], ["Hazen", "Heide"], ["Hazen", "Lavendel"], 
+      ["Hazen", "Klavers"], ["Hazen", "Waterriet"], ["Hazen", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Hazen", "Detritus"], ["Hazen", "Wortels"], ["Hazen", "Blad"], ["Hazen", "Zaadjes"],
+      /* --- BOMEN --- */
+      ["Hazen", "Ginkgo"], ["Hazen", "Tulpenbomen"], ["Hazen", "Magnolia"], ["Hazen", "Laurierbomen"], 
+      ["Hazen", "Platanen"], ["Hazen", "Acacia"], ["Hazen", "Wilgen"], ["Hazen", "Populieren"], ["Hazen", "Iepen"],
+      ["Hazen", "Esdoorns"], ["Hazen", "Lindes"], ["Hazen", "Paardenkastanjes"], ["Hazen", "Elzen"],
+      ["Hazen", "Elzen"], ["Hazen", "Berken"], ["Hazen", "Eiken"], ["Hazen", "Essen"],  
+      /* --- BLOEMEN --- */
+      ["Hazen", "Klaprozen"], ["Hazen", "Krokussen"], ["Hazen", "Paardenbloemen"], ["Hazen", "Tulpen"], 
+      ["Hazen", "Geraniums"], ["Hazen", "Madeliefjes"], ["Hazen", "Goudsbloemen"],
+      /* --- GENOTWAREN --- */
+      ["Hazen", "Honing"], 
+      /* --- FRUIT --- */
+      ["Hazen", "Druiven"], ["Hazen", "Appels"], ["Hazen", "Peren"], ["Hazen", "Pruimen"], ["Hazen", "Bosbessen"], 
+      ["Hazen", "Vijgen"], ["Hazen", "Aardbeien"], ["Hazen", "Abrikozen"], ["Hazen", "Kersen"], ["Hazen", "Perziken"], 
+      ["Hazen", "Mandarijnen"], ["Hazen", "Frambozen"],  ["Hazen", "Bananen"], ["Hazen", "Kaki"], ["Hazen", "Dadels"], 
+      /* --- GROENTEN --- */
+      ["Hazen", "Spinazie"], ["Hazen", "Selderij"], ["Hazen", "Wortelen"], ["Hazen", "Sla"], ["Hazen", "Andijvie"], 
+      ["Hazen", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Hazen", "Pap"], ["Hazen", "Brood"]
+    ],
+    output: [
+      { naam: "Hazen", icoon: "icons/Hazen.png", map: "Zoogdieren", 
+        quote: `The hare seems to belong to the wind as much as to the ground, appearing and vanishing in the same breath
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
