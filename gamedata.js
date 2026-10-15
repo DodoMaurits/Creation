@@ -15186,6 +15186,40 @@ const combinaties = [
         <br><br>- Cynthia Moss`
       }
     ]
+  }, /* ------------------ OLIFANTEN ------------------ */
+  {
+    input: [
+      ["Olifanten", "map:Smaakmakers"], ["Olifanten", "map:Bomen"], ["Olifanten", "map:Bloemen"], 
+      ["Olifanten", "map:Fruit"], ["Olifanten", "map:Groenten"], ["Olifanten", "map:Granen"], ["Olifanten", "map:Zaden"],  
+      /* --- PRIL LEVEN --- */
+      ["Olifanten", "Paddenstoelen"], 
+      /* --- PLANTEN --- */
+      ["Olifanten", "Mos"], ["Olifanten", "Varens"], ["Olifanten", "Gras"], ["Olifanten", "Vetplanten"], 
+      ["Olifanten", "Buxus"], ["Olifanten", "Brandnetels"], ["Olifanten", "Heide"], ["Olifanten", "Lavendel"], 
+      ["Olifanten", "Klavers"], ["Olifanten", "Kroos"], ["Olifanten", "Waterriet"], ["Olifanten", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Olifanten", "Detritus"], ["Olifanten", "Wortels"], ["Olifanten", "Blad"], ["Olifanten", "Zaadjes"],
+      ["Olifanten", "Bloem"],
+      /* --- MATERIALEN --- */
+      ["Olifanten", "Hout"],
+      /* --- GENOTWAREN --- */
+      ["Olifanten", "Honing"]
+    ],
+    output: [
+      { naam: "Olifanten", icoon: "icons/Olifanten.png", map: "Zoogdieren", 
+        quote: `Elephants learn from experience and from each other, passing knowledge through generations
+        <br><br>- Cynthia Moss`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
