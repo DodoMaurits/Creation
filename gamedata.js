@@ -15973,6 +15973,80 @@ const combinaties = [
         <br><br>- William Hudson`
       }
     ]
+  }, /* ------------------ RATTEN ------------------ */
+  {
+    input: [
+      ["Ratten", "map:Smaakmakers"], ["Ratten", "map:Fruit"],
+      ["Ratten", "map:Groenten"], ["Ratten", "map:Granen"], ["Ratten", "map:Zaden"],
+      /* --- WATERDIEREN --- */
+      ["Ratten", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Ratten", "Luizen"], ["Ratten", "Mijten"], ["Ratten", "Teken"], ["Ratten", "Termieten"], ["Ratten", "Pissebedden"],
+      ["Ratten", "Oerpolyneopteren"], ["Ratten", "Duizendpoten"], ["Ratten", "Hooiwagens"], ["Ratten", "Schorpioenen"],
+      ["Ratten", "Spinnen"], ["Ratten", "Zilvervisjes"], ["Ratten", "Wandelende takken"], ["Ratten", "Kakkerlakken"],
+      ["Ratten", "Oerhymenopteren"], ["Ratten", "Slakken"], ["Ratten", "Libellen"], ["Ratten", "Kevers"],
+      ["Ratten", "Lieveheersbeestjes"], ["Ratten", "Mieren"], ["Ratten", "Wespen"], ["Ratten", "Vliegen"],
+      ["Ratten", "Vlinders"], ["Ratten", "Krekels"], ["Ratten", "Sprinkhanen"], ["Ratten", "Muggen"], ["Ratten", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Ratten", "Detritus"], ["Ratten", "Wortels"], ["Ratten", "Blad"], ["Ratten", "Zaadjes"], ["Ratten", "Ei"],
+      /* --- MATERIALEN --- */
+      ["Ratten", "Hout"],
+      /* --- BOMEN --- */
+      ["Ratten", "Wilgen"], ["Ratten", "Populieren"], ["Ratten", "Iepen"], ["Ratten", "Esdoorns"], ["Ratten", "Elzen"],
+      ["Ratten", "Berken"], ["Ratten", "Beuken"], ["Ratten", "Eiken"],
+      /* --- BLOEMEN --- */
+      ["Ratten", "Waterlelies"], ["Ratten", "Orchideeën"], ["Ratten", "Pioenrozen"], ["Ratten", "Klaprozen"], 
+      ["Ratten", "Lotussen"], ["Ratten", "Viooltjes"], ["Ratten", "Krokussen"], ["Ratten", "Gladiolen"],
+      ["Ratten", "Freesia"], ["Ratten", "Rozen"], ["Ratten", "Anjers"], ["Ratten", "Paardenbloemen"],
+      ["Ratten", "Chrysanten"], ["Ratten", "Gerbera"], ["Ratten", "Protea"], ["Ratten", "Tulpen"], ["Ratten", "Hibiscus"],
+      ["Ratten", "Geraniums"], ["Ratten", "Madeliefjes"], ["Ratten", "Goudsbloemen"], ["Ratten", "Zonnebloemen"],    
+      /* --- GENOTWAREN --- */
+      ["Ratten", "Honing"]
+    ],
+    output: [
+      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+        quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
+        <br><br>- William Hudson`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Ratten", "Oertetrapoden"], ["Ratten", "Salamanders"], ["Ratten", "Kikkers"], ["Ratten", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Ratten", "Gekko"],
+      /* --- ZOOGDIEREN --- */
+      ["Ratten", "Muizen"], ["Ratten", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+        quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
+        <br><br>- William Hudson`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerknaagdieren", "Meer"],
