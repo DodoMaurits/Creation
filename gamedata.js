@@ -16115,6 +16115,97 @@ const combinaties = [
         <br><br>- George Schaller`
       }
     ]
+  }, /* ------------------ CAPIBARA ------------------ */
+  {
+    input: [
+      ["Capibara", "map:Groenten"], 
+      /* --- PRIL LANDLEVEN --- */
+      ["Capibara", "Paddenstoelen"],
+      /* --- WATERDIEREN --- */
+      ["Capibara", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Capibara", "Luizen"], ["Capibara", "Mijten"], ["Capibara", "Teken"], ["Capibara", "Termieten"], 
+      ["Capibara", "Pissebedden"], ["Capibara", "Oerpolyneopteren"], ["Capibara", "Duizendpoten"], 
+      ["Capibara", "Hooiwagens"], ["Capibara", "Schorpioenen"], ["Capibara", "Spinnen"], ["Capibara", "Zilvervisjes"], 
+      ["Capibara", "Wandelende takken"], ["Capibara", "Kakkerlakken"], ["Capibara", "Oerhymenopteren"], 
+      ["Capibara", "Slakken"], ["Capibara", "Libellen"], ["Capibara", "Kevers"], ["Capibara", "Lieveheersbeestjes"], 
+      ["Capibara", "Mieren"], ["Capibara", "Wespen"], ["Capibara", "Vliegen"], ["Capibara", "Vlinders"], 
+      ["Capibara", "Krekels"], ["Capibara", "Sprinkhanen"], ["Capibara", "Muggen"], ["Capibara", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Capibara", "Mos"], ["Capibara", "Varens"], ["Capibara", "Gras"], ["Capibara", "Klavers"], ["Capibara", "Kroos"],
+      ["Capibara", "Waterriet"], ["Capibara", "Suikerriet"],
+      /* --- BIOLOGIE --- */
+      ["Capibara", "Detritus"], ["Capibara", "Wortels"], ["Capibara", "Blad"], ["Capibara", "Zaadjes"], 
+      ["Capibara", "Ei"], ["Capibara", "Bloem"],
+      /* --- SMAAKMAKERS --- */
+      ["Capibara", "Truffels"], 
+      /* --- MATERIALEN --- */
+      ["Capibara", "Hout"], ["Capibara", "Bamboe"], 
+      /* --- BOMEN --- */
+      ["Capibara", "Wilgen"], ["Capibara", "Populieren"], ["Capibara", "Iepen"], ["Capibara", "Elzen"],
+      /* --- BLOEMEN --- */
+      ["Capibara", "Waterlelies"], ["Capibara", "Orchideeën"], ["Capibara", "Lotussen"], ["Capibara", "Paardenbloemen"],
+      ["Capibara", "Hibiscus"], ["Capibara", "Madeliefjes"], ["Capibara", "Goudsbloemen"],
+      /* --- GENOTWAREN --- */
+      ["Capibara", "Honing"], ["Capibara", "Koffieplanten"], 
+      /* --- FRUIT --- */
+      ["Capibara", "Druiven"], ["Capibara", "Appels"], ["Capibara", "Peren"], ["Capibara", "Pruimen"], 
+      ["Capibara", "Bosbessen"], ["Capibara", "Zuurzakken"], ["Capibara", "Aardbeien"], ["Capibara", "Abrikozen"],
+      ["Capibara", "Kersen"], ["Capibara", "Perziken"], ["Capibara", "Mandarijnen"], ["Capibara", "Guaves"],
+      ["Capibara", "Mango"], ["Capibara", "Papaja"], ["Capibara", "Frambozen"], ["Capibara", "Avocado"],
+      ["Capibara", "Bananen"], ["Capibara", "Ananas"], ["Capibara", "Sinaasappelen"], ["Capibara", "Citroenen"],
+      ["Capibara", "Limoenen"],
+      /* --- GROENTEN --- */
+      ["Capibara", "Komkommers"], ["Capibara", "Meloenen"], ["Capibara", "Watermeloenen"],
+      /* --- GRANEN --- */
+      ["Capibara", "Rijst"], ["Capibara", "Maïs"], ["Capibara", "Pap"], ["Capibara", "Brood"],
+      /* --- ZADEN --- */
+      ["Capibara", "Erwten"], ["Capibara", "Kastanjes"], ["Capibara", "Soja"], ["Capibara", "Cacao"], 
+      ["Capibara", "Linzen"], ["Capibara", "Pinda"], ["Capibara", "Paranoten"], ["Capibara", "Cashew"], 
+      ["Capibara", "Sperziebonen"], ["Capibara", "Kidneybonen"]
+    ],
+    output: [
+      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+        quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
+        <br><br>- George Schaller`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Capibara", "Oertetrapoden"], ["Capibara", "Salamanders"], ["Capibara", "Kikkers"], ["Capibara", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Capibara", "Gekko"]
+    ],
+    output: [
+      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+        quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
+        <br><br>- George Schaller`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerknaagdieren", "Moeras"],
