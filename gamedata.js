@@ -16241,6 +16241,80 @@ const combinaties = [
         <br><br>- Plinius de Oudere`
       }
     ]
+  }, /* ------------------ EEKHOORNS ------------------ */
+  {
+    input: [
+      /* --- PRIL LANDLEVEN --- */
+      ["Eekhoorns", "Paddenstoelen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Eekhoorns", "Luizen"], ["Eekhoorns", "Mijten"], ["Eekhoorns", "Teken"], ["Eekhoorns", "Termieten"], 
+      ["Eekhoorns", "Pissebedden"], ["Eekhoorns", "Oerpolyneopteren"], ["Eekhoorns", "Duizendpoten"], 
+      ["Eekhoorns", "Hooiwagens"], ["Eekhoorns", "Schorpioenen"], ["Eekhoorns", "Spinnen"], ["Eekhoorns", "Zilvervisjes"], 
+      ["Eekhoorns", "Wandelende takken"], ["Eekhoorns", "Kakkerlakken"], ["Eekhoorns", "Oerhymenopteren"], 
+      ["Eekhoorns", "Slakken"], ["Eekhoorns", "Libellen"], ["Eekhoorns", "Kevers"], ["Eekhoorns", "Lieveheersbeestjes"], 
+      ["Eekhoorns", "Mieren"], ["Eekhoorns", "Wespen"], ["Eekhoorns", "Vliegen"], ["Eekhoorns", "Vlinders"], 
+      ["Eekhoorns", "Krekels"], ["Eekhoorns", "Sprinkhanen"], ["Eekhoorns", "Muggen"], ["Eekhoorns", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Eekhoorns", "Mos"], ["Eekhoorns", "Varens"], ["Eekhoorns", "Brandnetels"], ["Eekhoorns", "Heide"],
+      ["Eekhoorns", "Lavendel"], ["Eekhoorns", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Eekhoorns", "Detritus"], ["Eekhoorns", "Wortels"], ["Eekhoorns", "Blad"], ["Eekhoorns", "Zaadjes"], 
+      ["Eekhoorns", "Ei"], ["Eekhoorns", "Bloem"],
+      /* --- SMAAKMAKERS --- */
+      ["Eekhoorns", "Truffels"], ["Eekhoorns", "Munt"], ["Eekhoorns", "Tijm"], ["Eekhoorns", "Mosterdplanten"],
+      ["Eekhoorns", "Knoflook"], ["Eekhoorns", "Uien"], ["Eekhoorns", "Bieslook"], ["Eekhoorns", "Basilicum"],
+      ["Eekhoorns", "Oregano"], ["Eekhoorns", "Salie"], ["Eekhoorns", "Dille"], ["Eekhoorns", "Koriander"],
+      ["Eekhoorns", "Peterselie"],
+      /* --- MATERIALEN --- */
+      ["Eekhoorns", "Hout"], ["Eekhoorns", "Bamboe"], 
+      /* --- BOMEN --- */
+      ["Eekhoorns", "Coniferen"], ["Eekhoorns", "Ginkgo"], ["Eekhoorns", "Magnolia"], ["Eekhoorns", "Platanen"],
+      ["Eekhoorns", "Wilgen"], ["Eekhoorns", "Populieren"], ["Eekhoorns", "Iepen"], ["Eekhoorns", "Esdoorns"],
+      ["Eekhoorns", "Lindes"], ["Eekhoorns", "Paardenkastanjes"], ["Eekhoorns", "Elzen"], ["Eekhoorns", "Berken"],
+      ["Eekhoorns", "Beuken"], ["Eekhoorns", "Eiken"], ["Eekhoorns", "Essen"],
+      /* --- BLOEMEN --- */
+      ["Eekhoorns", "Pioenrozen"], ["Eekhoorns", "Klaprozen"], ["Eekhoorns", "Viooltjes"], ["Eekhoorns", "Krokussen"],
+      ["Eekhoorns", "Tulpen"], ["Eekhoorns", "Rozen"], ["Eekhoorns", "Geraniums"], ["Eekhoorns", "Paardenbloemen"],    
+      ["Eekhoorns", "Chrysanten"], ["Eekhoorns", "Madeliefjes"], ["Eekhoorns", "Goudsbloemen"], 
+      ["Eekhoorns", "Zonnebloemen"],
+      /* --- GENOTWAREN --- */
+      ["Eekhoorns", "Honing"], ["Eekhoorns", "Kamille"], 
+      /* --- FRUIT --- */
+      ["Eekhoorns", "Druiven"], ["Eekhoorns", "Appels"], ["Eekhoorns", "Peren"], ["Eekhoorns", "Pruimen"], 
+      ["Eekhoorns", "Bosbessen"], ["Eekhoorns", "Vijgen"],  ["Eekhoorns", "Aardbeien"],  ["Eekhoorns", "Olijven"],
+      ["Eekhoorns", "Abrikozen"], ["Eekhoorns", "Kersen"], ["Eekhoorns", "Perziken"], ["Eekhoorns", "Mandarijnen"], 
+      ["Eekhoorns", "Frambozen"], ["Eekhoorns", "Bananen"], ["Eekhoorns", "Kaki"], ["Eekhoorns", "Kiwi"], 
+      ["Eekhoorns", "Dadels"], ["Eekhoorns", "Sinaasappelen"], ["Eekhoorns", "Citroenen"], ["Eekhoorns", "Limoenen"],
+      /* --- GROENTEN --- */
+      ["Eekhoorns", "Komkommers"], ["Eekhoorns", "Meloenen"], ["Eekhoorns", "Watermeloenen"], ["Eekhoorns", "Pompoenen"],
+      ["Eekhoorns", "Courgettes"], ["Eekhoorns", "Bieten"], ["Eekhoorns", "Spinazie"], ["Eekhoorns", "Zoete aardappelen"],
+      ["Eekhoorns", "Aubergines"], ["Eekhoorns", "Radijsjes"], ["Eekhoorns", "Kool"], ["Eekhoorns", "Rabarber"],
+      ["Eekhoorns", "Asperges"], ["Eekhoorns", "Preien"], ["Eekhoorns", "Paprika"], ["Eekhoorns", "Tomaten"],
+      ["Eekhoorns", "Aardappelen"], ["Eekhoorns", "Selderij"], ["Eekhoorns", "Venkel"], ["Eekhoorns", "Wortelen"],
+      ["Eekhoorns", "Sla"], ["Eekhoorns", "Andijvie"], ["Eekhoorns", "Zuurkool"], ["Eekhoorns", "Broccoli"],
+      ["Eekhoorns", "Bloemkool"], ["Eekhoorns", "Rode kool"], ["Eekhoorns", "Spruitjes"], ["Eekhoorns", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Eekhoorns", "Maïs"], ["Eekhoorns", "Tarwe"], ["Eekhoorns", "Gerst"], ["Eekhoorns", "Haver"], 
+      ["Eekhoorns", "Gierst"], ["Eekhoorns", "Pap"], ["Eekhoorns", "Brood"],
+      /* --- ZADEN --- */
+      ["Eekhoorns", "Erwten"], ["Eekhoorns", "Walnoten"], ["Eekhoorns", "Kastanjes"], ["Eekhoorns", "Hazelnoten"], 
+      ["Eekhoorns", "Amandelen"], ["Eekhoorns", "Pinda"], ["Eekhoorns", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Eekhoorns", icoon: "icons/Eekhoorns.png", map: "Zoogdieren", 
+        quote: `The squirrel is one of the most alert and restless of woodland creatures, never still for long
+        <br><br>- John Burroughs`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerknaagdieren", "Steppe"],
