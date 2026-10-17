@@ -1101,6 +1101,9 @@ function maakSleepbaar(el, img, side, mapNaam) {
       .find(x => norm(x.naam) === norm(doelImg.dataset.naam));
     if (!doelEl) return;
 
+    selected.forEach(e => e.dom.classList.remove("selected"));
+    selected = [];
+
     toggleSelect(el, img, side, mapNaam);
     img.dataset.netGesleept = "1";
     toggleSelect(doelEl, doelImg, doelImg.closest("#left-side") ? "left" : "right", doelImg.dataset.mapnaam || "");
