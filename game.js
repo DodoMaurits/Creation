@@ -1297,6 +1297,12 @@ function startSuperhintCooldown() {
     superhintButton.classList.remove("cooldown");
   }, SUPERHINT_COOLDOWN);
 }
+if (superhintButton) superhintButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (superhintButton.classList.contains("cooldown")) return;
+  superHint();
+  startSuperhintCooldown();
+});
 
 // ----- HINT ENGINE -----
 function shuffle(a) {
