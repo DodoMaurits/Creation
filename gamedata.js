@@ -13360,6 +13360,36 @@ const combinaties = [
         <br><br>- Derek Ratcliffe`
       }
     ]
+  }, /* ------------------ SPITSMUIZEN ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Spitsmuizen", "Luizen"], ["Spitsmuizen", "Mijten"], ["Spitsmuizen", "Teken"], ["Spitsmuizen", "Pissebedden"], 
+      ["Spitsmuizen", "Duizendpoten"], ["Spitsmuizen", "Hooiwagens"], ["Spitsmuizen", "Spinnen"], 
+      ["Spitsmuizen", "Zilvervisjes"], ["Spitsmuizen", "Kakkerlakken"], ["Spitsmuizen", "Kevers"], 
+      ["Spitsmuizen", "Lieveheersbeestjes"], ["Spitsmuizen", "Mieren"], ["Spitsmuizen", "Krekels"], 
+      ["Spitsmuizen", "Sprinkhanen"], 
+      /* --- BIOLOGIE --- */
+      ["Spitsmuizen", "Detritus"], 
+      /* --- GENOTWAREN --- */
+      ["Spitsmuizen", "Honing"]
+    ],
+    output: [
+      { naam: "Spitsmuizen", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
+        quote: `The common shrew is a tiny, insectivorous mammal that lives hidden among grass and fallen leaves, rarely
+        seen despite its abundance
+        <br><br>- Derek Ratcliffe`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerplacentalia", "Tropisch regenwoud"], 
