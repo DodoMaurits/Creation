@@ -1203,6 +1203,28 @@ body {
             #reset-button svg { fill: black; }
 
             #reset-button:hover::after { content: none; }
+
+            #reset-overlay .reset-box {
+              width: calc(100vw - 48px);
+              max-width: 400px;
+              padding: 24px 20px;
+              gap: 14px;
+            }
+            
+            #reset-overlay .reset-title {
+              font-size: 22px;
+              margin-top: 10px;
+            }
+            
+            #reset-overlay .reset-text {
+              font-size: 15px;
+            }
+            
+            #reset-overlay .reset-buttons button {
+              padding: 8px 16px;
+              font-size: 14px;
+              margin-bottom: 4px;
+            }
   
             /* ---------------- HINT BUTTON ---------------- */
             #hint-container {
