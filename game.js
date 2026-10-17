@@ -1192,6 +1192,7 @@ function renderSide(parentContainer, map, side) {
       toggleSelect(el, img, side, map.naam);
     };
     img.dataset.naam = el.naam;
+    img.dataset.mapnaam = map.naam;
     maakSleepbaar(el, img, side, map.naam);
     
     // Tooltip per element
