@@ -1618,7 +1618,7 @@ body.result-open #corner-controls {
               margin: auto;
               width: calc(100vw - 32px);
               max-height: calc(85dvh - 32px);
-              padding: 24px 18px;
+              padding: 24px 32px;
               gap: 12px;
               font-size: 14px;
               line-height: 1.4;
