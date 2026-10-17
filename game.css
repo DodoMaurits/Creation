@@ -50,17 +50,23 @@ body {
 }
 
 #volume-slider {
-  margin-top: 10px;
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100px;
   width: 6px;
   writing-mode: vertical-lr;
   direction: rtl;
+  margin-top: 0; 
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
+  z-index: 2;
 }
 
-#corner-controls:hover #volume-slider {
+#mute-button:hover + #volume-slider,
+#volume-slider:hover {
   opacity: 1;
   pointer-events: auto;
 }
