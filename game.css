@@ -229,7 +229,9 @@ body {
   transform: translateY(-50%);
   z-index: 4000;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 12px;
 }
 
 #hint-button {
@@ -286,8 +288,12 @@ body {
 }
 
 #hint-bubble {
-  display: none;
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
   white-space: nowrap;
+  display: none;
   padding: 8px 12px;
   background: #f5f5f5;
   color: #333333;
@@ -1285,8 +1291,9 @@ body {
             #hint-container {
               top: 12px;
               right: 50%;
-              transform: translate(50%, 0);   /* container centreren: 50% terugduwen */
-              flex-direction: column;         /* bubble komt ónder de button i.p.v. ernaast */
+              transform: translate(50%, 0);
+              flex-direction: row;        /* ← was column: paar nu horizontaal */
+              gap: 12px;
             }
 
             body.result-open #hint-container {
@@ -1318,6 +1325,7 @@ body {
               width: 36px;
               height: 36px;
               font-size: 16px;
+              order: -1;
             }
             
             #superhint-button span { transform: translate(0, 2px); }
