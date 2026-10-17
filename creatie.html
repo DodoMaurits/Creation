@@ -68,14 +68,23 @@
     const icon = document.getElementById('oerknal-icon');
     const overlay = document.getElementById('explanation-overlay');
     const closeBtn = document.getElementById('close-btn');
+    const elementenOverlay = document.getElementById('elementen-overlay');
     
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
       overlay.classList.add('active');
     });
-    
-    closeBtn.addEventListener('click', () => {
-      window.location.href = "elementen.html";
+
+    // Klik op de knop en laat de nieuwe elementen zien
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      overlay.classList.remove('active');
+      elementenOverlay.classList.add('active');
+    });
+
+    // Klik ergens op het scherm van de nieuwe elementen en start de game
+    elementenOverlay.addEventListener('click', () => {
+      window.location.href = "game.html";
     });
 
     // Background music
