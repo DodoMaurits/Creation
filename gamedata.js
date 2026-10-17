@@ -16249,7 +16249,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Eekhoorns", "Luizen"], ["Eekhoorns", "Mijten"], ["Eekhoorns", "Teken"], ["Eekhoorns", "Termieten"], 
       ["Eekhoorns", "Pissebedden"], ["Eekhoorns", "Oerpolyneopteren"], ["Eekhoorns", "Duizendpoten"], 
-      ["Eekhoorns", "Hooiwagens"], ["Eekhoorns", "Schorpioenen"], ["Eekhoorns", "Spinnen"], ["Eekhoorns", "Zilvervisjes"], 
+      ["Eekhoorns", "Hooiwagens"], ["Eekhoorns", "Spinnen"], ["Eekhoorns", "Zilvervisjes"], 
       ["Eekhoorns", "Wandelende takken"], ["Eekhoorns", "Kakkerlakken"], ["Eekhoorns", "Oerhymenopteren"], 
       ["Eekhoorns", "Slakken"], ["Eekhoorns", "Libellen"], ["Eekhoorns", "Kevers"], ["Eekhoorns", "Lieveheersbeestjes"], 
       ["Eekhoorns", "Mieren"], ["Eekhoorns", "Wespen"], ["Eekhoorns", "Vliegen"], ["Eekhoorns", "Vlinders"], 
@@ -16395,8 +16395,61 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ MUIZEN ------------------ */
+  {
+    input: [
+      ["Muizen", "map:Smaakmakers"], ["Muizen", "map:Fruit"], ["Muizen", "map:Groenten"], ["Muizen", "map:Granen"],
+      ["Muizen", "map:Zaden"],
+      /* --- PRIL LANDLEVEN --- */
+      ["Muizen", "Paddenstoelen"],
+      /* --- WATERDIEREN --- */
+      ["Muizen", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Muizen", "Luizen"], ["Muizen", "Mijten"], ["Muizen", "Teken"], ["Muizen", "Termieten"], 
+      ["Muizen", "Pissebedden"], ["Muizen", "Oerpolyneopteren"], ["Muizen", "Duizendpoten"], 
+      ["Muizen", "Hooiwagens"], ["Muizen", "Spinnen"], ["Muizen", "Zilvervisjes"], 
+      ["Muizen", "Wandelende takken"], ["Muizen", "Kakkerlakken"], ["Muizen", "Oerhymenopteren"], 
+      ["Muizen", "Slakken"], ["Muizen", "Libellen"], ["Muizen", "Kevers"], ["Muizen", "Lieveheersbeestjes"], 
+      ["Muizen", "Mieren"], ["Muizen", "Vliegen"], ["Muizen", "Vlinders"], ["Muizen", "Krekels"], 
+      ["Muizen", "Sprinkhanen"], ["Muizen", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Muizen", "Mos"], ["Muizen", "Varens"], ["Muizen", "Gras"], ["Muizen", "Vetplanten"], ["Muizen", "Brandnetels"], 
+      ["Muizen", "Agave"], ["Muizen", "Aloë vera"], ["Muizen", "Heide"], ["Muizen", "Lavendel"], ["Muizen", "Klavers"], 
+      ["Muizen", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Muizen", "Detritus"], ["Muizen", "Wortels"], ["Muizen", "Blad"], ["Muizen", "Zaadjes"], 
+      ["Muizen", "Ei"], ["Muizen", "Bloem"],
+      /* --- MATERIALEN --- */
+      ["Muizen", "Hout"], ["Muizen", "Bamboe"], 
+      /* --- BOMEN --- */
+      ["Muizen", "Ginkgo"], ["Muizen", "Magnolia"], ["Muizen", "Platanen"], ["Muizen", "Wilgen"], ["Muizen", "Populieren"],
+      ["Muizen", "Iepen"], ["Muizen", "Esdoorns"], ["Muizen", "Lindes"], ["Muizen", "Elzen"], ["Muizen", "Berken"],
+      ["Muizen", "Beuken"], ["Muizen", "Eiken"], ["Muizen", "Essen"],
+      /* --- BLOEMEN --- */
+      ["Muizen", "Orchideeën"], ["Muizen", "Pioenrozen"], ["Muizen", "Klaprozen"], ["Muizen", "Viooltjes"], 
+      ["Muizen", "Krokussen"], ["Muizen", "Rozen"], ["Muizen", "Paardenbloemen"], ["Muizen", "Chrysanten"], 
+      ["Muizen", "Tulpen"], ["Muizen", "Hibiscus"], ["Muizen", "Geraniums"], ["Muizen", "Madeliefjes"], 
+      ["Muizen", "Goudsbloemen"], 
+      /* --- GENOTWAREN --- */
+      ["Muizen", "Honing"], ["Muizen", "Theeplanten"], ["Muizen", "Rooibos"], ["Muizen", "Kamille"]
+    ],
+    output: [
+      { naam: "Muizen", icoon: "icons/Muizen.png", map: "Zoogdieren", 
+        quote: `Even the smallest mouse has its own place in nature
+        <br><br>- Plinius de Oudere`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
-{
+  {
     input: ["Oerknaagdieren", "Steppe"],
     hint: `Sommige knaagdieren voelen zich thuis op de steppe.`,
     tijd: 2_000_000,
