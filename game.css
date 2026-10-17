@@ -375,6 +375,22 @@ body {
 #hint-button span      { transform: translate(-1px, 2px); }
 #superhint-button span { transform: translate(0, 3px);   }
 
+/* ---------------- SUPERHINT FLASH ---------------- */
+.superhint-flash {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.6) 100%);
+  pointer-events: none;
+  z-index: 9500;
+  animation: superhintFlash 0.6s ease-out forwards;
+}
+
+@keyframes superhintFlash {
+  0%   { opacity: 0; }
+  15%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 /* ---------------- SIDES (OPEN MAPS) ---------------- */
 .map-title {
   cursor: pointer;
