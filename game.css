@@ -1384,8 +1384,8 @@ body {
               transform: translateY(-50%);
               display: none;
               white-space: normal;
-              width: 200px;
-              padding: 8px 12px;
+              width: max-content;
+              max-width: 200px;
               background: #f5f5f5;
               color: #333333;
               border-radius: 6px;
