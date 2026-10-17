@@ -101,9 +101,9 @@ body {
 #reset-button:hover::after {
   content: "Opnieuw beginnen";
   position: absolute;
-  top: 42px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: calc(100% + 10px);
+  transform: translateY(-50%);
   background: rgba(0,0,0,0.85);
   color: white;
   padding: 4px 8px;
