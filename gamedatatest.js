@@ -397,7 +397,7 @@ const mappen = [
       { naam: "Gras", icoon: "icons/Gras.png" }, /*80*/
       { naam: "Oerfabiden", icoon: "icons/Oerfabiden.png" }, /*95*/
       { naam: "Oermalviden", icoon: "icons/Oermalviden.png" }, /*95*/
-      { naam: "Oercarryophyllales", icoon: "icons/Oercaryophyllales.png" }, /*95*/
+      { naam: "Oercaryophyllales", icoon: "icons/Oercaryophyllales.png" }, /*95*/
       { naam: "Oerasteriden", icoon: "icons/Oerasteriden.png" }, /*95*/
       { naam: "Oerericales", icoon: "icons/Oerericales.png" }, /*95*/
       { naam: "Oerlamiden", icoon: "icons/Oerlamiden.png" }, /*95*/
