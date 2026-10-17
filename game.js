@@ -1087,13 +1087,13 @@ function maakSleepbaar(el, img, side, mapNaam) {
   window.addEventListener("mouseup", los);
   img.addEventListener("touchend", los);
   function los(e) {
-    if (!kopie) { start = null; return; }   // gewone klik: onclick doet zijn werk
+    if (!kopie) { start = null; return; }
+    const centerX = kopie.offsetLeft + kopie.offsetWidth / 2;
+    const centerY = kopie.offsetTop + kopie.offsetHeight / 2;
     kopie.remove();
     kopie = null;
     start = null;
-
-    const p = e.changedTouches ? e.changedTouches[0] : e;
-    const onder = document.elementFromPoint(p.clientX, p.clientY);
+    const onder = document.elementFromPoint(centerX, centerY);
     const doelImg = onder && onder.closest ? onder.closest(".icon.element") : null;
     if (!doelImg) return;
 
