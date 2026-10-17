@@ -462,6 +462,8 @@ body {
   height: 130px;
 }
 
+.icon.element:active { cursor: grabbing; }
+
 .icon.element:hover { transform: scale(1.15); }
 
 .icon-container.dragging {
