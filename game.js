@@ -770,11 +770,11 @@ function showInfoOverlay(title, text, backgroundImage = null) {
 function addUnlockedElements(elements) {
   elements.forEach(el => unlockedElements.add(el.naam));
   saveProgress();
-
-  const totaalAantalElementen = new Set(
-    mappen.flatMap(m => m.elementen.map(e => e.naam))
-  ).size;
-  if (unlockedElements.size >= totaalAantalElementen) localStorage.removeItem(SAVE_KEY);
+}
+function checkVoltooid() {
+  const alleNamen = new Set(combinaties.flatMap(c => c.output.map(o => norm(o.naam))));
+  const klaar = [...alleNamen].every(n => unlockedElements.has(norm(n)));
+  if (klaar) localStorage.removeItem(SAVE_KEY);
 }
 
 // ----- TIMELINE  -----
