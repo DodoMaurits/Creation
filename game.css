@@ -88,6 +88,71 @@ body {
   fill: #555;
 }
 
+/* ---------------- RESET BEVESTIGINGS-POPUP ---------------- */
+#reset-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#reset-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#reset-overlay .reset-box {
+  background: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  padding: 28px 36px;
+  text-align: center;
+  color: white;
+  max-width: min(90vw, 420px);
+}
+
+#reset-overlay .reset-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
+
+#reset-overlay .reset-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+#reset-overlay .reset-buttons button {
+  font-family: "Cinzel", serif;
+  font-size: clamp(14px, 1.4vw, 17px);
+  letter-spacing: 1px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.5);
+  color: white;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#reset-overlay .reset-buttons button:hover {
+  background: rgba(255,255,255,0.8);
+  transform: scale(1.05);
+}
+#reset-overlay .reset-buttons #reset-ja {
+  background: rgba(180,60,60,0.6);
+}
+#reset-overlay .reset-buttons #reset-ja:hover {
+  background: rgba(180,60,60,0.85);
+}
+
 /* ---------------- HINT BUTTON ---------------- */
 #hint-container {
   position: fixed;
