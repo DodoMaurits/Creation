@@ -1160,6 +1160,67 @@ function renderSide(parentContainer, map, side) {
   }, 20);
 }
 
+// ----- SUPERHINT -----
+function superHint() {
+  // Alle nu maakbare combinaties
+  const kanNu = combinaties.filter(canShowHint);
+
+  if (!kanNu.length) return;
+
+  // Voorrang: zonder tijd; anders de eerstvolgende (grootste) tijd
+  const zonderTijd = kanNu.filter(c => c.tijd == null);
+  const kandidaten = zonderTijd.length ? zonderTijd : kanNu;
+  const doel = kandidaten.length
+    ? kandidaten.reduce((a, b) => (b.tijd == null ? b : (!a.tijd || b.tijd >= a.tijd ? b : a)), kandidaten[0])
+    : null;
+  if (!doel) return;
+
+  // Bepaal de twee in te openen mappen
+  const paren = pairs(doel.input);
+  const paar = paren.find(matchend) || paren[0];
+  function matchend(p) {
+    const [a, b] = p;
+    return bestaat(a) && bestaat(b);
+  }
+  function bestaat(rule) {
+    return rule.startsWith("map:")
+      ? mappen.some(m => norm(m.naam) === norm(rule.slice(4)))
+      : inMap(rule);
+  }
+
+  // Zoek de map-objecten bij beide regels (map:-regel = die map; element = zijn eigen map)
+  const mapVan = rule => {
+    if (rule.startsWith("map:")) {
+      return mappen.find(m => norm(m.naam) === norm(rule.slice(4)));
+    }
+    // element: zoek in welke map hij ligt
+    for (const m of mappen) {
+      if (m.elementen.some(e => norm(e.naam) === norm(rule))) return m;
+    }
+    return null;
+  };
+
+  const mapA = mapVan(paar[0]);
+  const mapB = mapVan(paar[1]);
+  if (!mapA || !mapB) return;
+
+  // Sluit wat open staat, open het nieuwe paar
+  if (openLeft) closeMap("left");
+  if (openRight) closeMap("right");
+
+  // Kleine vertraging zodat sluiten (300ms) af is vóór openen
+  setTimeout(() => {
+    openMap(mapA, null);
+    openMap(mapB, null);
+  }, 350);
+}
+
+const superhintButton = document.getElementById("superhint-button");
+if (superhintButton) superhintButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  superHint();
+});
+
 // ----- HINT ENGINE -----
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
