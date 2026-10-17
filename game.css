@@ -58,8 +58,6 @@ body {
   transform: translateX(-50%);
   height: 100px;
   width: 6px;
-  -webkit-appearance: none;
-  appearance: none;
   writing-mode: vertical-lr;
   direction: rtl;
   opacity: 0;
