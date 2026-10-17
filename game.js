@@ -1210,6 +1210,11 @@ function superHint() {
 
   // Kleine vertraging zodat sluiten (300ms) af is vóór openen
   setTimeout(() => {
+    const flash = document.createElement("div");
+    flash.className = "superhint-flash";
+    document.body.appendChild(flash);
+    setTimeout(() => flash.remove(), 700);
+
     openMap(mapA, null);
     openMap(mapB, null);
   }, 350);
