@@ -217,6 +217,22 @@ html, body {
   100% { transform: translateX(0); }
 }
 
+/* ---------------- NIEUWE ELEMENTEN OVERLAY ---------------- */
+.elementen-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.9) 100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2000;
+  cursor: pointer;
+}
+.elementen-overlay.active { visibility: visible; opacity: 1; }
+
 /* ---------------- RESULT BOX CONTAINER ---------------- */
 .result-box-container {
   display: flex;
@@ -224,6 +240,11 @@ html, body {
   column-gap: 100px;
   flex-wrap: wrap;
   text-align: center;
+  animation: resultAppear 0.8s ease;
+}
+@keyframes resultAppear {
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0);      opacity: 1; }
 }
 
 /* ---------------- RESULT BOX ---------------- */
@@ -256,7 +277,7 @@ html, body {
 }
 
 .result-box:nth-child(1) .image-wrapper { animation-delay: 0s; }
-.result-box:nth-child(2) .image-wrapper { animation-delay: 0.5s; }
+.result-box:nth-child(2) .image-wrapper { animation-delay: 0.3s; }
 
 .result-image:hover {
   transform: scale(1.12);
@@ -270,18 +291,15 @@ html, body {
   line-height: 1.4;
   text-align: center;
   display: inline-block;
-  animation-name: floatQuote;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  --translateX: 12px;
+  opacity: 0.85;
+  transform-origin: center;
+  animation: quoteDrift var(--dur) ease-in-out infinite alternate;
+  will-change: transform;
 }
-
-@keyframes floatQuote {
-  0%   { transform: translateX(0); }
-  50%  { transform: translateX(var(--translateX)); }
-  100% { transform: translateX(0); }
+@keyframes quoteDrift {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(var(--move-x), var(--move-y)); }
+  100% { transform: translate(0px, 0px); }
 }
 
 /* ---------------- MOBILE FRIENDLY CREATION PAGE ---------------- */
