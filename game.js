@@ -23,7 +23,6 @@ const leftSide = document.getElementById("left-side");
 const rightSide = document.getElementById("right-side");
 const hintButton = document.getElementById("hint-button");
 const hintBubble = document.getElementById("hint-bubble");
-const SAVE_KEY = "creation-save";
 
 const norm = s => String(s).trim().toLowerCase();
 const pairs = input => (Array.isArray(input[0]) ? input : [input]);
@@ -34,11 +33,36 @@ const known = n =>
 
 hintButton.onclick = showHint;
 
+// ----- SAVE -----
+const SAVE_KEY = "creation-save";
+function saveProgress() {
+  localStorage.setItem(SAVE_KEY, JSON.stringify({
+    unlocked: [...unlockedElements],
+    time: currentTime,
+    timelineStart: timelineStart
+  }));
+}
+// ----- LOAD -----
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem(SAVE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch { return null; }
+}
+const savedState = loadProgress();
+if (savedState) {
+  unlockedElements = new Set(savedState.unlocked);
+  currentTime = savedState.time;
+  timelineStart = savedState.timelineStart;
+  updateTimelineLabel();
+}
+
 // ----- INIT -----
 renderClosed();
 requestAnimationFrame(() => {
     updateClosedContainer();
-    showIntroHint();
+    if (!savedState) showIntroHint();
 });
 
 updateTimelineLabel();
@@ -56,24 +80,6 @@ function preloadAllIcons() {
     const img = new Image();
     img.src = url;
   });
-}
-
-// ----- SAVE -----
-function saveProgress() {
-  localStorage.setItem(SAVE_KEY, JSON.stringify({
-    unlocked: [...unlockedElements],
-    time: currentTime,
-    timelineStart: timelineStart
-  }));
-}
-
-// ----- LOAD -----
-function loadProgress() {
-  try {
-    const raw = localStorage.getItem(SAVE_KEY);
-    if (!raw) return null;
-    return JSON.parse(raw);
-  } catch { return null; }
 }
 
 // ----- MOBIELE VERSIE TOOLTIPS -----
@@ -425,7 +431,7 @@ function checkCombination() {
   );
   
   lastExplanation = finalUitleg || null;
-  newElements.forEach(el => unlockedElements.add(el.naam));
+  addUnlockedElements(newElements);
 
   refreshHintDeck();
 
@@ -439,6 +445,7 @@ function checkCombination() {
 }
 
 animateTimeline(eventTime);
+saveProgress();
   }
   
   // reset selectie
@@ -762,6 +769,12 @@ function showInfoOverlay(title, text, backgroundImage = null) {
 // ----- CHECK THRESHOLD -----
 function addUnlockedElements(elements) {
   elements.forEach(el => unlockedElements.add(el.naam));
+  saveProgress();
+
+  const totaalAantalElementen = new Set(
+    mappen.flatMap(m => m.elementen.map(e => e.naam))
+  ).size;
+  if (unlockedElements.size >= totaalAantalElementen) localStorage.removeItem(SAVE_KEY);
 }
 
 // ----- TIMELINE  -----
@@ -773,10 +786,9 @@ function animateTimeline(newTime) {
   function step(timestamp) {
     const progress = Math.min((timestamp - start) / duration, 1);
     currentTime = oldTime + (newTime - oldTime) * progress;
-
     updateTimelineLabel();
-
     if (progress < 1) requestAnimationFrame(step);
+    else saveProgress();
   }
   requestAnimationFrame(step);
 }
