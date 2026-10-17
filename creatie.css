@@ -232,6 +232,7 @@ html, body {
   transition: opacity 0.3s ease;
   z-index: 2000;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .elementen-overlay.active { visibility: visible; opacity: 1; }
 
