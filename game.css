@@ -58,6 +58,7 @@ body {
   transform: translateX(-50%);
   height: 100px;
   width: 6px;
+  accent-color: #8a8a8a;
   writing-mode: vertical-lr;
   direction: rtl;
   opacity: 0;
@@ -77,6 +78,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#mute-wrap::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;      /* even breed als de knop */
+  height: 110px;    /* sliderzone: 10px lucht + 100px slider */
 }
 
 /* ---------------- RESET BUTTON ---------------- */
