@@ -852,6 +852,12 @@ body {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+/* Knoppen uit bij pop-ups */
+body.result-open #hint-container,
+body.result-open #corner-controls {
+  display: none;
+}
+
 /* ---------------- GA VERDER BUTTON BIJ THRESHOLD ---------------- */
 .create-button {
   font-family: "Cinzel", serif;
