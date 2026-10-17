@@ -267,8 +267,10 @@ html, body {
   text-align: center;
   max-width: 260px;
   margin-top: 20px;
-  opacity: 0.9;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
+.result-box.fade-in { opacity: 1; }
 
 /* ---------------- RESULT IMAGE ---------------- */
 .image-wrapper {
@@ -409,7 +411,7 @@ html, body {
               width: 110px;
               max-width: none;
               margin-top: 0;
-              opacity: 1;        /* geen 0.9, zoals game */
+              opacity: 1;
             }
                 
             .elementen-overlay .result-image {
@@ -442,4 +444,7 @@ html, body {
               -webkit-hyphenate-limit-chars: 6 4 4;
               hyphenate-limit-chars: 6 4 4;
             }
+  
+            .elementen-overlay .result-title.pair { font-size: 14px; }
+            .elementen-overlay .result-quote.pair { font-size: 12px; }
 }
