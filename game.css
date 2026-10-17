@@ -1320,9 +1320,9 @@ body {
               position: fixed;
               left: 50%;
               transform: translateX(-50%);
-              top: 70px; 
-              width: 80vw;
-              max-width: 80vw;
+              top: 44px;
+              width: 100px;
+              max-width: none;
               white-space: normal;
               text-align: center;
               font-size: 11px;
