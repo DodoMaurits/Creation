@@ -391,6 +391,22 @@ body {
   100% { opacity: 0; }
 }
 
+#superhint-button.cooldown {
+  background: #555;
+  animation: cooldownHerstel 60s linear forwards;
+  pointer-events: auto;
+  cursor: not-allowed;
+}
+
+#superhint-button.cooldown::before {
+  animation: none !important;
+}
+
+@keyframes cooldownHerstel {
+  0%   { background: #555; }              /* donkergrijs */
+  100% { background: rgba(255,255,255,0.85); }   /* weer de normale kleur */
+}
+
 /* ---------------- SIDES (OPEN MAPS) ---------------- */
 .map-title {
   cursor: pointer;
