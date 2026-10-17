@@ -31,6 +31,16 @@
     <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.4">
     <div id="reset-button" title="Opnieuw beginnen"></div>
   </div>
+
+  <div id="reset-overlay">
+    <div class="reset-box">
+      <div class="reset-text">Weet je zeker dat je je voortgang wilt resetten?</div>
+      <div class="reset-buttons">
+        <button id="reset-ja">JA</button>
+        <button id="reset-nee">NEE</button>
+      </div>
+    </div>
+  </div>
   
   <audio id="backgroundmusic" src="music.mp3" loop autoplay></audio>
   
@@ -85,16 +95,27 @@
       updateMuteIcon();
     });
 
+    /* ----- RESET BUTTON ----- */
     const resetButton = document.getElementById("reset-button");
+    const resetOverlay = document.getElementById("reset-overlay");
     resetButton.innerHTML = `
       <svg viewBox="0 0 24 24" width="24" height="24">
         <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
       </svg>`;
     resetButton.addEventListener("click", (e) => {
       e.stopPropagation();
+      resetOverlay.classList.add("active");
+    });
+    document.getElementById("reset-nee").addEventListener("click", (e) => {
+      e.stopPropagation();
+      resetOverlay.classList.remove("active");
+    });
+    document.getElementById("reset-ja").addEventListener("click", (e) => {
+      e.stopPropagation();
       localStorage.removeItem("creation-save");
       window.location.reload();
     });
+    
   </script>
   
 </body>
