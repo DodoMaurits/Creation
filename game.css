@@ -53,7 +53,7 @@ body {
 #volume-slider {
   position: absolute;
   top: 92px;
-  left: calc(50% - 8px); 
+  left: calc(50% - 4px); 
   transform: translateX(-50%);
   height: 100px;
   width: 6px;
