@@ -30,6 +30,7 @@ body {
 #mute-button {
   width: 36px;
   height: 36px;
+  margin-top: 10px;
   background: rgba(200,200,200,0.3);
   border-radius: 50%;
   display: flex;
@@ -51,7 +52,7 @@ body {
 
 #volume-slider {
   position: absolute;
-  top: 46px;
+  top: 92px;
   left: 50%;
   transform: translateX(-50%);
   height: 100px;
@@ -73,7 +74,6 @@ body {
 
 /* ---------------- RESET BUTTON ---------------- */
 #reset-button {
-  margin-top: 10px;
   width: 36px;
   height: 36px;
   background: rgba(200,200,200,0.3);
