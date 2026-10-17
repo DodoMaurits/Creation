@@ -1171,6 +1171,11 @@ body {
   
             #app { width: 100vw; height: 100vh; position: relative; }
 
+            #corner-controls {
+              top: 12px;
+              right: 12px;
+            }
+  
             /* ---------------- MUTE BUTTON ---------------- */
             #mute-button {
               width: 36px;
@@ -1178,6 +1183,10 @@ body {
               background: rgba(255, 255, 255, 0.85);
               box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
               position: relative;
+            }
+
+            #mute-button:hover {
+              background: rgba(255, 255, 255, 0.85);
             }
           
             #mute-button svg {
@@ -1190,10 +1199,7 @@ body {
               pointer-events: none !important;
             }
 
-            #corner-controls {
-              top: 12px;
-              right: 12px;
-            }
+            #mute-wrap::after { display: none; }
   
             /* ---------------- RESET BUTTON ---------------- */
             #reset-button {
