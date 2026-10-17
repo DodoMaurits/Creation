@@ -65,6 +65,29 @@ body {
   pointer-events: auto;
 }
 
+/* ---------------- RESET BUTTON ---------------- */
+#reset-button {
+  margin-top: 10px;
+  width: 36px;
+  height: 36px;
+  background: rgba(200,200,200,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5000;
+  transition: background 0.2s ease;
+}
+
+#reset-button:hover { background: rgba(200,200,200,0.5); }
+
+#reset-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+}
+
 /* ---------------- HINT BUTTON ---------------- */
 #hint-container {
   position: fixed;
@@ -1044,6 +1067,16 @@ body {
               top: 12px;
               right: 12px;
             }
+  
+            /* ---------------- RESET BUTTON ---------------- */
+            #reset-button {
+              width: 36px;
+              height: 36px;
+              background: rgba(255, 255, 255, 0.85);
+              box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+              margin-top: 8px;
+            }
+            #reset-button svg { fill: black; }
   
             /* ---------------- HINT BUTTON ---------------- */
             #hint-container {
