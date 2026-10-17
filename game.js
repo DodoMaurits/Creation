@@ -1287,17 +1287,8 @@ let superhintTikker = 0;
 
 function startSuperhintCooldown() {
   clearTimeout(superhintCooldownTimer);
-  clearInterval(superhintTikker);
   superhintButton.classList.add("cooldown");
-  const span = superhintButton.querySelector("span");
-  const startTijd = Date.now();
-  superhintTikker = setInterval(() => {
-    const rest = Math.ceil((SUPERHINT_COOLDOWN - (Date.now() - startTijd)) / 1000);
-    span.textContent = rest > 0 ? rest : "!";
-  }, 250);
   superhintCooldownTimer = setTimeout(() => {
-    clearInterval(superhintTikker);
-    span.textContent = "!";
     superhintButton.classList.remove("cooldown");
   }, SUPERHINT_COOLDOWN);
 }
