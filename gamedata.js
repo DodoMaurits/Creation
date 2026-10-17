@@ -9422,6 +9422,87 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ VOGELBEKDIEREN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Vogelbekdieren", "Wormen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Vogelbekdieren", "Waterspinnen"], ["Vogelbekdieren", "Vlokreeftjes"], ["Vogelbekdieren", "Garnalen"],
+      ["Vogelbekdieren", "Kreeften"],
+      /* Schelp */ ["Vogelbekdieren", "Tweekleppigen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Vogelbekdieren", "Spinnen"], ["Vogelbekdieren", "Slakken"], ["Vogelbekdieren", "Libellen"], 
+      ["Vogelbekdieren", "Kevers"], ["Vogelbekdieren", "Mieren"], ["Vogelbekdieren", "Vliegen"],
+      ["Vogelbekdieren", "Krekels"], ["Vogelbekdieren", "Sprinkhanen"], ["Vogelbekdieren", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Vogelbekdieren", "Kroos"],
+      /* --- BIOLOGIE --- */
+      ["Vogelbekdieren", "Ei"]
+    ],
+    output: [
+      { naam: "Vogelbekdieren", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
+        quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
+        <br><br>- Trevor Dunn`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* Bloed */
+      /* --- VISSEN --- */
+      ["Vogelbekdieren", "Karpers"], ["Vogelbekdieren", "Meervallen"], ["Vogelbekdieren", "Paling"],
+      ["Vogelbekdieren", "Goudvissen"], ["Vogelbekdieren", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Vogelbekdieren", "Kikkers"]
+    ],
+    output: [
+      { naam: "Vogelbekdieren", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
+        quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
+        <br><br>- Trevor Dunn`
+      },
+      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+       makes a thing poison
+       <br><br>- Paracelsus`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: /* SCHELP */
+      ["Vogelbekdieren", "Tweekleppigen"],
+    output: [
+      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: [
