@@ -243,6 +243,12 @@ body {
   box-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
+#hint-button span {
+  display: block;
+  line-height: 1; /* regelbox = teken, geen extra lucht onder/boven */
+  transform: translate(-1px, 2px); /* optische nudging: iets links, iets omlaag */
+}
+
 #hint-button::before {
   content: "";
   position: absolute;
