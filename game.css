@@ -1318,7 +1318,7 @@ body {
           
             #hint-bubble {
               position: fixed;
-              left: 50vw;
+              left: 50%;
               transform: translateX(-50%);
               top: 70px; 
               width: 80vw;
