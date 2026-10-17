@@ -57,7 +57,7 @@ if (savedState) {
   timelineStart = savedState.timelineStart;
   combinaties.forEach(c => {
     c.output.forEach(newEl => {
-      if (!unlockedElements.has(norm(newEl.naam))) return;
+      if (!unlockedElements.has(newEl.naam)) return;
       let map = mappen.find(m => norm(m.naam) === norm(newEl.map));
       if (!map) {
         map = {
@@ -790,7 +790,9 @@ function addUnlockedElements(elements) {
 }
 function checkVoltooid() {
   const alleNamen = new Set(combinaties.flatMap(c => c.output.map(o => norm(o.naam))));
-  const klaar = [...alleNamen].every(n => unlockedElements.has(norm(n)));
+  const klaar = [...alleNamen].every(n =>
+    [...unlockedElements].some(u => norm(u) === norm(n))
+  );
   if (klaar) localStorage.removeItem(SAVE_KEY);
 }
 
