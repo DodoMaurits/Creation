@@ -1221,9 +1221,21 @@ function superHint() {
 }
 
 const superhintButton = document.getElementById("superhint-button");
+const SUPERHINT_COOLDOWN = 60_000;
+let superhintCooldownTimer = 0;
+
+function startSuperhintCooldown() {
+  clearTimeout(superhintCooldownTimer);
+  superhintButton.classList.add("cooldown");
+  superhintCooldownTimer = setTimeout(() => {
+    superhintButton.classList.remove("cooldown");
+  }, SUPERHINT_COOLDOWN);
+}
 if (superhintButton) superhintButton.addEventListener("click", (e) => {
   e.stopPropagation();
+  if (superhintButton.classList.contains("cooldown")) return;   // negeer klik tijdens cooldown
   superHint();
+  startSuperhintCooldown();
 });
 
 // ----- HINT ENGINE -----
