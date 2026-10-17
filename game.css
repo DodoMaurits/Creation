@@ -351,6 +351,21 @@ body {
   z-index: -1;
 }
 
+#superhint-button:hover::after {
+  content: "Superhint";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%); 
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  z-index: 5000;
+}
+
 #hint-button span,
 #superhint-button span {
   display: block;
