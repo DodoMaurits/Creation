@@ -235,6 +235,17 @@ html, body {
 }
 .elementen-overlay.active { visibility: visible; opacity: 1; }
 
+.elementen-overlay .result-title {
+  font-size: clamp(32px, 5vw, 32px);
+  letter-spacing: normal;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
 /* ---------------- RESULT BOX CONTAINER ---------------- */
 .result-box-container {
   display: flex;
