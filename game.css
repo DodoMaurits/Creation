@@ -64,6 +64,8 @@ body {
   pointer-events: none;
   transition: opacity 0.2s ease;
   z-index: 2;
+  cursor: grab;
+
 }
 
 #mute-wrap:hover #volume-slider,
@@ -71,6 +73,8 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+#volume-slider:active { cursor: grabbing; }
 
 #mute-wrap {
   position: relative;
