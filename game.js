@@ -1057,6 +1057,56 @@ function closeMap(side) {
   }, 300);
 }
 
+// ----- SLEPEN -----
+function maakSleepbaar(el, img, side, mapNaam) {
+  let start = null;
+  let kopie = null;
+
+  img.addEventListener("mousedown", (e) => { start = { x: e.clientX, y: e.clientY }; });
+  img.addEventListener("touchstart", (e) => {
+    start = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  }, { passive: true });
+
+  window.addEventListener("mousemove", beweeg);
+  img.addEventListener("touchmove", beweeg, { passive: false });
+  function beweeg(e) {
+    if (!start) return;
+    const p = e.touches ? e.touches[0] : e;
+    if (!kopie && Math.hypot(p.clientX - start.x, p.clientY - start.y) > 8) {
+      kopie = img.cloneNode(true);
+      kopie.className = "icon element sleep-kopie";
+      document.body.appendChild(kopie);
+    }
+    if (!kopie) return;
+    if (e.cancelable) e.preventDefault();
+    kopie.style.left = (p.clientX - 55) + "px";
+    kopie.style.top = (p.clientY - 55) + "px";
+  }
+
+  window.addEventListener("mouseup", los);
+  img.addEventListener("touchend", los);
+  function los(e) {
+    if (!kopie) { start = null; return; }   // gewone klik: onclick doet zijn werk
+    kopie.remove();
+    kopie = null;
+    start = null;
+
+    const p = e.changedTouches ? e.changedTouches[0] : e;
+    const onder = document.elementFromPoint(p.clientX, p.clientY);
+    const doelImg = onder && onder.closest ? onder.closest(".icon.element") : null;
+    if (!doelImg) return;
+
+    const doelEl = mappen.flatMap(m => m.elementen)
+      .find(x => norm(x.naam) === norm(doelImg.dataset.naam));
+    if (!doelEl) return;
+
+    toggleSelect(el, img, side, mapNaam);
+    img.dataset.netGesleept = "1";
+    toggleSelect(doelEl, doelImg, doelImg.closest("#left-side") ? "left" : "right", doelImg.dataset.mapnaam || "");
+    doelImg.dataset.netGesleept = "1";
+  }
+}
+
 // ----- RENDER SIDE -----
 function renderSide(parentContainer, map, side) {
   parentContainer.innerHTML = "";
@@ -1137,8 +1187,13 @@ function renderSide(parentContainer, map, side) {
       if (totalElements > 24) elContainer.style.marginBottom = "7px";
     }
 
-    img.onclick = () => toggleSelect(el, img, side, map.naam);
-
+    img.onclick = () => {
+      if (img.dataset.netGesleept === "1") { img.dataset.netGesleept = ""; return; }
+      toggleSelect(el, img, side, map.naam);
+    };
+    img.dataset.naam = el.naam;
+    maakSleepbaar(el, img, side, map.naam);
+    
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
         elContainer.appendChild(makeCurvedLabel(el.naam, mobielIcoon));
