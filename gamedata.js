@@ -16315,8 +16315,88 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ STEKELVARKENS ------------------ */
+  {
+    input: [
+      ["Stekelvarkens", "map:Smaakmakers"], ["Stekelvarkens", "map:Bloemen"], ["Stekelvarkens", "map:Groenten"], 
+      ["Stekelvarkens", "map:Granen"], ["Stekelvarkens", "map:Zaden"], 
+      /* --- PRIL LANDLEVEN --- */
+      ["Stekelvarkens", "Schimmel"], ["Stekelvarkens", "Paddenstoelen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Stekelvarkens", "Luizen"], ["Stekelvarkens", "Mijten"], ["Stekelvarkens", "Teken"], ["Stekelvarkens", "Termieten"], 
+      ["Stekelvarkens", "Pissebedden"], ["Stekelvarkens", "Oerpolyneopteren"], ["Stekelvarkens", "Duizendpoten"], 
+      ["Stekelvarkens", "Hooiwagens"], ["Stekelvarkens", "Schorpioenen"], ["Stekelvarkens", "Spinnen"], 
+      ["Stekelvarkens", "Zilvervisjes"], ["Stekelvarkens", "Wandelende takken"], ["Stekelvarkens", "Kakkerlakken"], 
+      ["Stekelvarkens", "Oerhymenopteren"], ["Stekelvarkens", "Slakken"], ["Stekelvarkens", "Libellen"], 
+      ["Stekelvarkens", "Kevers"], ["Stekelvarkens", "Lieveheersbeestjes"], ["Stekelvarkens", "Mieren"], 
+      ["Stekelvarkens", "Wespen"], ["Stekelvarkens", "Vliegen"], ["Stekelvarkens", "Vlinders"], 
+      ["Stekelvarkens", "Krekels"], ["Stekelvarkens", "Sprinkhanen"], ["Stekelvarkens", "Muggen"], 
+      ["Stekelvarkens", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Stekelvarkens", "Mos"], ["Stekelvarkens", "Varens"], ["Stekelvarkens", "Gras"], ["Stekelvarkens", "Brandnetels"], 
+      ["Stekelvarkens", "Heide"], ["Stekelvarkens", "Lavendel"], ["Stekelvarkens", "Klavers"], 
+      ["Stekelvarkens", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Stekelvarkens", "Detritus"], ["Stekelvarkens", "Bot"], ["Stekelvarkens", "Weefsel"], ["Stekelvarkens", "Spieren"], 
+      ["Stekelvarkens", "Wortels"], ["Stekelvarkens", "Oog"], ["Stekelvarkens", "Bloed"], ["Stekelvarkens", "Blad"],
+      ["Stekelvarkens", "Zaadjes"], ["Stekelvarkens", "Ei"], ["Stekelvarkens", "Bloem"],
+      /* --- MATERIALEN --- */
+      ["Stekelvarkens", "Hout"], ["Stekelvarkens", "Bamboe"], 
+      /* --- BOMEN --- */
+      ["Stekelvarkens", "Coniferen"], ["Stekelvarkens", "Magnolia"], ["Stekelvarkens", "Platanen"],
+      ["Stekelvarkens", "Wilgen"], ["Stekelvarkens", "Populieren"], ["Stekelvarkens", "Iepen"], 
+      ["Stekelvarkens", "Lindes"], ["Stekelvarkens", "Paardenkastanjes"], ["Stekelvarkens", "Elzen"], 
+      ["Stekelvarkens", "Berken"], ["Stekelvarkens", "Beuken"], ["Stekelvarkens", "Eiken"], ["Stekelvarkens", "Essen"],
+      /* --- GENOTWAREN --- */
+      ["Stekelvarkens", "Honing"], ["Stekelvarkens", "Kamille"]
+    ],
+    output: [
+      { naam: "Stekelvarkens", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
+        quote: `The porcupine’s quills are not for attack but for passive defense, making it one of the most effectively 
+        protected mammals
+        <br><br>- David Macdonald`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
+    input: [/* BLOED */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Stekelvarkens", "Oertetrapoden"], ["Stekelvarkens", "Salamanders"], ["Stekelvarkens", "Kikkers"], 
+      ["Stekelvarkens", "Padden"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Stekelvarkens", "Gekko"]
+    ],
+    output: [
+      { naam: "Stekelvarkens", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
+        quote: `The porcupine’s quills are not for attack but for passive defense, making it one of the most effectively 
+        protected mammals
+        <br><br>- David Macdonald`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+{
     input: ["Oerknaagdieren", "Steppe"],
     hint: `Sommige knaagdieren voelen zich thuis op de steppe.`,
     tijd: 2_000_000,
