@@ -203,7 +203,6 @@ body {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
-  animation: floatButton 2s ease-in-out infinite alternate;
   color: white;
   margin-bottom: clamp(10px, 2vh, 30px);
 }
@@ -211,11 +210,6 @@ body {
 #reset-overlay .reset-buttons button:hover {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.8);
-}
-
-@keyframes floatButton {
-  0%   { transform: translateY(0px); }
-  100% { transform: translateY(-10px); }
 }
 
 /* ---------------- HINT BUTTON ---------------- */
