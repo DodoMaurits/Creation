@@ -1389,11 +1389,12 @@ body.result-open #corner-controls {
               position: fixed; 
               left: 50%;
               transform: translateX(-50%);
-              top: 56px;
+              top: 32px;
               display: none;
               white-space: normal;
               width: max-content;
               max-width: 200px;
+              font-size: 11px;
               background: #f5f5f5;
               color: #333333;
               border-radius: 6px;
