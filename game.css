@@ -139,49 +139,70 @@ body {
 }
 
 #reset-overlay .reset-box {
-  background: rgba(0,0,0,0.6);
+  position: relative;
+  background: rgba(0,0,0,0.5);
   border-radius: 12px;
-  padding: 28px 36px;
-  text-align: center;
   color: white;
-  max-width: min(90vw, 420px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(320px, 50vw, 800px);
+  max-height: 80vh;
+  padding: 40px 80px;
+  gap: 20px;
+}
+
+#reset-overlay .reset-box::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+#reset-overlay .reset-title {
+  font-family: "Cinzel", serif;
+  font-size: clamp(28px, 4vw, 36px);
+  margin-top: 20px;
 }
 
 #reset-overlay .reset-text {
-  font-family: "Roboto Slab", serif;
-  font-size: 18px;
-  line-height: 1.4;
-  margin-bottom: 22px;
+  font-family: "Times New Roman", sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.2;
+  margin: 0;
 }
 
 #reset-overlay .reset-buttons {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
 }
 
 #reset-overlay .reset-buttons button {
   font-family: "Cinzel", serif;
-  font-size: clamp(14px, 1.4vw, 17px);
-  letter-spacing: 1px;
-  padding: 10px 22px;
+  padding: 10px 20px;
+  font-size: clamp(16px, 1.5vw, 20px);
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+  animation: floatButton 2s ease-in-out infinite alternate;
   color: white;
-  transition: background 0.2s ease, transform 0.2s ease;
+  margin-bottom: clamp(10px, 2vh, 30px);
 }
 
 #reset-overlay .reset-buttons button:hover {
-  background: rgba(255,255,255,0.8);
-  transform: scale(1.05);
-}
-#reset-overlay .reset-buttons #reset-ja {
-  background: rgba(180,60,60,0.6);
-}
-#reset-overlay .reset-buttons #reset-ja:hover {
-  background: rgba(180,60,60,0.85);
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* ---------------- HINT BUTTON ---------------- */
