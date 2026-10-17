@@ -1061,6 +1061,7 @@ function closeMap(side) {
 function maakSleepbaar(el, img, side, mapNaam) {
   let start = null;
   let kopie = null;
+  img.setAttribute("draggable", "false");
 
   img.addEventListener("mousedown", (e) => { start = { x: e.clientX, y: e.clientY }; });
   img.addEventListener("touchstart", (e) => {
