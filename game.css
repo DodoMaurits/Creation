@@ -205,6 +205,11 @@ body {
   background: rgba(255, 255, 255, 0.8);
 }
 
+@keyframes floatButton {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
 /* ---------------- HINT BUTTON ---------------- */
 #hint-container {
   position: fixed;
