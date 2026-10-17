@@ -56,9 +56,8 @@ body {
   margin-top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  width: 36px;
   height: 100px;
-  width: 6px;
-  accent-color: #8a8a8a;
   writing-mode: vertical-lr;
   direction: rtl;
   opacity: 0;
