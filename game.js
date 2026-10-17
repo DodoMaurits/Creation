@@ -1213,7 +1213,7 @@ function superHint() {
     const flash = document.createElement("div");
     flash.className = "superhint-flash";
     document.body.appendChild(flash);
-    setTimeout(() => flash.remove(), 700);
+    setTimeout(() => flash.remove(), 1250);
 
     openMap(mapA, null);
     openMap(mapB, null);
