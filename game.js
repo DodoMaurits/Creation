@@ -55,6 +55,25 @@ if (savedState) {
   unlockedElements = new Set(savedState.unlocked);
   currentTime = savedState.time;
   timelineStart = savedState.timelineStart;
+  // Mappen terugbouwen uit de combinaties waarvan de output al unlocked is
+  combinaties.forEach(c => {
+    pairs(c.input); // geen actie, voorkomt verwarring — weglaten mag
+    c.output.forEach(newEl => {
+      if (!unlockedElements.has(norm(newEl.naam))) return;
+      let map = mappen.find(m => norm(m.naam) === norm(newEl.map));
+      if (!map) {
+        map = {
+          naam: newEl.map,
+          icoon: groepsIconen[newEl.map] || "icons/default.png",
+          elementen: []
+        };
+        mappen.push(map);
+      }
+      if (!map.elementen.find(e => norm(e.naam) === norm(newEl.naam))) {
+        map.elementen.push(newEl);
+      }
+    });
+  });
   updateTimelineLabel();
 }
 
