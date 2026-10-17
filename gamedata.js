@@ -16459,6 +16459,58 @@ const combinaties = [
         <br><br>- Konrad Lorenz`
       }
     ]
+  }, /* ------------------ HAMSTERS ------------------ */
+  {
+    input: [
+      ["Hamsters", "map:Fruit"], ["Hamsters", "map:Groenten"], ["Hamsters", "map:Granen"], ["Hamsters", "map:Zaden"],
+      /* --- PRIL LANDLEVEN --- */
+      ["Hamsters", "Paddenstoelen"],
+      /* --- WATERDIEREN --- */
+      ["Hamsters", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Hamsters", "Luizen"], ["Hamsters", "Mijten"], ["Hamsters", "Teken"], ["Hamsters", "Termieten"], 
+      ["Hamsters", "Pissebedden"], ["Hamsters", "Oerpolyneopteren"], ["Hamsters", "Duizendpoten"], 
+      ["Hamsters", "Hooiwagens"], ["Hamsters", "Spinnen"], ["Hamsters", "Zilvervisjes"], 
+      ["Hamsters", "Wandelende takken"], ["Hamsters", "Kakkerlakken"], ["Hamsters", "Oerhymenopteren"], 
+      ["Hamsters", "Slakken"], ["Hamsters", "Libellen"], ["Hamsters", "Kevers"], ["Hamsters", "Lieveheersbeestjes"], 
+      ["Hamsters", "Mieren"], ["Hamsters", "Vliegen"], ["Hamsters", "Vlinders"], ["Hamsters", "Krekels"], 
+      ["Hamsters", "Sprinkhanen"], ["Hamsters", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Hamsters", "Mos"], ["Hamsters", "Varens"], ["Hamsters", "Gras"], ["Hamsters", "Vetplanten"], 
+      ["Hamsters", "Brandnetels"], ["Hamsters", "Agave"], ["Hamsters", "Aloë vera"], ["Hamsters", "Heide"], 
+      ["Hamsters", "Lavendel"], ["Hamsters", "Klavers"], ["Hamsters", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Hamsters", "Detritus"], ["Hamsters", "Wortels"], ["Hamsters", "Blad"], ["Hamsters", "Zaadjes"], 
+      ["Hamsters", "Ei"], ["Hamsters", "Bloem"],
+      /* --- MATERIALEN --- */
+      ["Hamsters", "Hout"], ["Hamsters", "Bamboe"], 
+      /* --- BOMEN --- */
+      ["Hamsters", "Coniferen"], ["Hamsters", "Ginkgo"], ["Hamsters", "Magnolia"], ["Hamsters", "Platanen"], 
+      ["Hamsters", "Wilgen"], ["Hamsters", "Populieren"], ["Hamsters", "Iepen"], ["Hamsters", "Esdoorns"], 
+      ["Hamsters", "Lindes"], ["Hamsters", "Elzen"], ["Hamsters", "Berken"], ["Hamsters", "Beuken"], ["Hamsters", "Eiken"],
+      ["Hamsters", "Essen"],
+      /* --- BLOEMEN --- */
+      ["Hamsters", "Pioenrozen"], ["Hamsters", "Klaprozen"], ["Hamsters", "Viooltjes"], ["Hamsters", "Krokussen"], 
+      ["Hamsters", "Rozen"], ["Hamsters", "Paardenbloemen"], ["Hamsters", "Chrysanten"], ["Hamsters", "Tulpen"], 
+      ["Hamsters", "Hibiscus"], ["Hamsters", "Geraniums"], ["Hamsters", "Madeliefjes"], ["Hamsters", "Goudsbloemen"], 
+      /* --- GENOTWAREN --- */
+      ["Hamsters", "Kamille"]
+    ],
+    output: [
+      { naam: "Hamsters", icoon: "icons/Hamsters.png", map: "Zoogdieren", 
+        quote: `Much of the hamster’s existence remains concealed beneath the surface of the landscape
+        <br><br>- Konrad Lorenz`
+      },
+      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerknaagdieren", "Prairie"],
