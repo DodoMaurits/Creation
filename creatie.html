@@ -87,6 +87,16 @@
       window.location.href = "game.html";
     });
 
+    // Random drift zoals game.js:590-596
+    document.querySelectorAll('#elementen-overlay .result-quote').forEach(quote => {
+      const moveX = (Math.random() * 20 - 10).toFixed(1) + "px";
+      const moveY = (Math.random() * 10 - 5).toFixed(1) + "px";
+      const duration = (6 + Math.random() * 6).toFixed(2) + "s";
+      quote.style.setProperty("--move-x", moveX);
+      quote.style.setProperty("--move-y", moveY);
+      quote.style.setProperty("--dur", duration);
+    });
+
     // Background music
     const music = document.getElementById("backgroundmusic");
     music.volume = 0.4;
