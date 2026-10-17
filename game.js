@@ -1225,8 +1225,6 @@ const SUPERHINT_COOLDOWN = 60_000;
 let superhintCooldownTimer = 0;
 let superhintTikker = 0;
 
-let superhintTikker = 0;
-
 function startSuperhintCooldown() {
   clearTimeout(superhintCooldownTimer);
   clearInterval(superhintTikker);
