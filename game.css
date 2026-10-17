@@ -408,6 +408,17 @@ body {
   100% { background: rgba(255,255,255,0.85); }   /* weer de normale kleur */
 }
 
+/* ---------------- SLEEPFUNCTIE ---------------- */
+.sleep-kopie {
+  position: fixed;
+  width: 110px;
+  height: auto;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 9600;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.5));
+}
+
 /* ---------------- SIDES (OPEN MAPS) ---------------- */
 .map-title {
   cursor: pointer;
