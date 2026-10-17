@@ -234,6 +234,12 @@ body {
   gap: 12px;
 }
 
+#hint-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 #hint-button {
   width: 44px;
   height: 44px;
@@ -292,22 +298,22 @@ body {
   right: calc(100% + 10px);
   top: 50%;
   transform: translateY(-50%);
-  white-space: nowrap;
   display: none;
+  white-space: nowrap;
   padding: 8px 12px;
   background: #f5f5f5;
   color: #333333;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-right: 10px;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
   text-align: left;
+  margin: 0; 
 }
 
 #hint-bubble.visible {
-  display: inline-block;
+  display: block;
   opacity: 1;
 }
 
@@ -1292,7 +1298,7 @@ body {
               top: 12px;
               right: 50%;
               transform: translate(50%, 0);
-              flex-direction: row;        /* ← was column: paar nu horizontaal */
+              flex-direction: row;
               gap: 12px;
             }
 
@@ -1311,9 +1317,9 @@ body {
             }
           
             #hint-bubble {
-              order: 2;              /* onder de button in de kolom */
-              margin-right: 0;
-              margin-top: 6px;
+              top: calc(100% + 6px);    /* onder de knop */
+              right: 0;                 /* rechterkanten gelijk; bubble groeit naar links */
+              transform: none;
               max-width: 80vw;
               white-space: normal;
               text-align: center;
