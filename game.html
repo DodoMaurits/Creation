@@ -115,6 +115,9 @@
       localStorage.removeItem("creation-save");
       window.location.reload();
     });
+    resetOverlay.addEventListener("click", (e) => {
+      if (e.target === resetOverlay) resetOverlay.classList.remove("active");
+    });
     
   </script>
   
