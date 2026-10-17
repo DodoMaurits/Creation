@@ -263,13 +263,6 @@ html, body {
 }
 
 /* ---------------- TITEL EN QUOTE ---------------- */
-.result-title {
-  font-family: "Cinzel", serif;
-  font-size: 40px;
-  letter-spacing: 3px;
-  margin: 5px 0 5px 0;
-}
-
 .result-quote {
   width: 200px;
   font-family: "Times New Roman", serif;
@@ -383,13 +376,7 @@ html, body {
             .result-image { width: 130px; height: auto; margin-bottom: 15px;
                             transition: transform 0.3s ease; cursor: none; }
                 
-            /* ---------------- TITEL EN QUOTE ---------------- */
-            .result-title {
-              font-size: 32px;
-              letter-spacing: 3px;
-              margin: 5px 0 5px 0;
-            }
-                
+            /* ---------------- RESULT QUOTE ---------------- */                
             .result-quote { line-height: 1.4; text-align: center; display: inline-block;
               width: 200px;
               font-size: 16px;
