@@ -17,7 +17,7 @@ body {
 }
 
 /* ---------------- MUTE BUTTON ----------------- */
-#audio-controls {
+#corner-controls {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -60,7 +60,7 @@ body {
   transition: opacity 0.2s ease;
 }
 
-#audio-controls:hover #volume-slider {
+#corner-controls:hover #volume-slider {
   opacity: 1;
   pointer-events: auto;
 }
@@ -1040,7 +1040,7 @@ body {
               pointer-events: none !important;
             }
 
-            #audio-controls {
+            #corner-controls {
               top: 12px;
               right: 12px;
             }
