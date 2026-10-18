@@ -12,7 +12,27 @@
     <button class="start-button" onclick="window.location.href='creatie.html'">start</button>
   </div>
 
+  <div class="taal-overlay" id="taal-overlay">
+    <div class="taal-box">
+      <div class="taal-title">Language</div>
+      <div class="taal-buttons">
+        <button class="taal-knop" onclick="kiesTaal('nl')">English</button>
+        <button class="taal-knop" onclick="kiesTaal('en')">Nederlands</button>
+      </div>
+    </div>
+  </div>
+
   <audio id="backgroundmusic" src="music.mp3" loop autoplay></audio>
+
+  <script>
+    function openTaalKeuze() {
+      document.getElementById("taal-overlay").classList.add("active");
+    }
+    function kiesTaal(taal) {
+      localStorage.setItem("creation-taal", taal);
+      window.location.href = "creatie.html";
+    }
+  </script>
   
 </body>
 </html>
