@@ -127,21 +127,43 @@ function preloadAllIcons() {
   });
 }
 
-// ----- TAAL KNOP -----
+/// ----- TAAL KNOP -----
 const taalButton = document.getElementById("taal-button");
+const taalOpties = document.getElementById("taal-opties");
 const VLAGGEN = {
   nl: "afb/Vlag_NL.png",
   en: "afb/Vlag_EN.jpg"
 };
-function zetTaalKnopVlag() {
-  taalButton.innerHTML = `<img src="${VLAGGEN[TAAL]}" alt="taal">`;
+taalButton.innerHTML = `<img src="${VLAGGEN[TAAL]}" alt="taal">`;
+
+function zetTaalOpties() {
+  taalOpties.querySelectorAll(".taal-optie").forEach(optie => {
+    const isHuidige = optie.dataset.taal === TAAL;
+    optie.style.display = isHuidige ? "none" : "flex";
+  });
 }
-zetTaalKnopVlag();
+zetTaalOpties();
+let taalMenuOpen = false;
 taalButton.addEventListener("click", (e) => {
   e.stopPropagation();
-  const nieuweTaal = TAAL === "nl" ? "en" : "nl";
-  localStorage.setItem("creation-taal", nieuweTaal);
-  window.location.reload();
+  taalMenuOpen = !taalMenuOpen;
+  taalOpties.classList.toggle("open", taalMenuOpen);
+});
+taalOpties.querySelectorAll(".taal-optie").forEach(optie => {
+  optie.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const nieuweTaal = optie.dataset.taal;
+    if (nieuweTaal === TAAL) return;
+    localStorage.setItem("creation-taal", nieuweTaal);
+    window.location.reload();
+  });
+});
+document.addEventListener("click", (e) => {
+  if (!taalMenuOpen) return;
+  if (!document.getElementById("taal-controls").contains(e.target)) {
+    taalMenuOpen = false;
+    taalOpties.classList.remove("open");
+  }
 });
 
 // ----- MOBIELE VERSIE TOOLTIPS -----
