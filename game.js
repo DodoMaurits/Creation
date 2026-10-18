@@ -79,7 +79,7 @@ if (savedState) {
 renderClosed();
 requestAnimationFrame(() => {
     updateClosedContainer();
-    if (!savedState) showIntroHint();
+    if (!savedState && unlockedElements.size <= 3) showIntroHint();
 });
 
 updateTimelineLabel();
