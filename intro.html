@@ -26,23 +26,8 @@
 
     <div class="explanation-overlay" id="explanation-overlay">
       <div class="explanation-box">
-        <div class="explanation-title">Oerknal</div>
-        <div class="explanation-text">
-          Combineer de elementen | Creëer tot het heden | Leer de Weg kennen
-          <br><br>
-          Introductie
-          <br>
-          <p>
-          Uit de kern van alles groeide de kosmos. Deze kern, het kleinst waarneembare, bestaat uit een vacuüm -
-          een energieveld met netto nul energie. Kortstondige energiebelletjes borrelen op en vergaan als kwantumschuim. 
-          Tot 13,8 miljard jaar geleden...
-          <br><br>In een fractie van een seconde nam de kern toe met een factor ruim boven de 1000: zie daar, de kosmos.
-          En hoe verder de energie zich verspreidde, hoe meer de extreme hitte en compactheid van het prille heelal afnam. 
-          <br><br>Nog altijd delen het grootste en het kleinste een energie-inhoud van netto nul – wat een werkelijkheid 
-          van symmetrie suggereert. Maar daar, tussen het kleinste en het grootste, de groei en het begin, ontstond de 
-          tijdelijke wereld die deze symmetrie verbrak: de wereld van ruimtetijd...
-          </p>
-        </div>
+        <div class="explanation-title"></div>
+        <div class="explanation-text"></div>
         <button class="close-btn" id="close-btn">CREATE</button>
       </div>
     </div>
@@ -69,6 +54,53 @@
     const overlay = document.getElementById('explanation-overlay');
     const closeBtn = document.getElementById('close-btn');
     const elementenOverlay = document.getElementById('elementen-overlay');
+
+    // ----- TAAL -----
+    const teksten = {
+      nl: {
+        titel: "Oerknal",
+        uitleg: `
+          Combineer de elementen | Creëer tot het heden | Leer de Weg kennen
+          <br><br>
+          Introductie
+          <br>
+          <p>
+          Uit de kern van alles groeide de kosmos. Deze kern, het kleinst waarneembare, bestaat uit een vacuüm -
+          een energieveld met netto nul energie. Kortstondige energiebelletjes borrelen op en vergaan als kwantumschuim.
+          Tot 13,8 miljard jaar geleden...
+          <br><br>In een fractie van een seconde nam de kern toe met een factor ruim boven de 1000: zie daar, de kosmos.
+          En hoe verder de energie zich verspreidde, hoe meer de extreme hitte en compactheid van het prille heelal afnam.
+          <br><br>Nog altijd delen het grootste en het kleinste een energie-inhoud van netto nul – wat een werkelijkheid
+          van symmetrie suggereert. Maar daar, tussen het kleinste en het grootste, de groei en het begin, ontstond de
+          tijdelijke wereld die deze symmetrie verbrak: de wereld van ruimtetijd...
+          </p>
+        `
+      },
+      en: {
+        titel: "Big Bang",
+        uitleg: `
+          Combine the elements | Create up to the present | Learn the Way
+          <br><br>
+          Introduction
+          <br>
+          <p>
+          From the core of everything the cosmos grew. This core, the smallest observable, consists of a vacuum -
+          an energy field with net zero energy. Fleeting bubbles of energy pop up and perish as quantum foam.
+          Until 13.8 billion years ago...
+          <br><br>In a fraction of a second the core increased by a factor well over 1000: behold, the cosmos.
+          And the further the energy spread, the more the extreme heat and density of the young universe decreased.
+          <br><br>Still, the largest and the smallest share a net zero energy content – which suggests a reality
+          of symmetry. But there, between the smallest and the largest, the growth and the beginning, arose the
+          temporary world that broke this symmetry: the world of spacetime...
+          </p>
+        `
+      }
+    };
+    
+    // Taal lezen en teksten invullen
+    const T = teksten[localStorage.getItem("creation-taal") || "nl"];
+    document.querySelector(".explanation-title").textContent = T.titel;
+    document.querySelector(".explanation-text").innerHTML = T.uitleg;
     
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
