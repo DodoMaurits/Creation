@@ -1025,7 +1025,8 @@ function refreshClosedLabels() {
   closedContainer.querySelectorAll(".icon-container").forEach(container => {
     const old = container.querySelector(".curved-label");
     if (old) old.remove();
-    container.appendChild(makeCurvedLabel(container.dataset.naam, size));
+    const map = mappen.find(m => m.naam === container.dataset.naam);
+    container.appendChild(makeCurvedLabel(map ? naamVan(map) : container.dataset.naam, size));
   });
 }
 
