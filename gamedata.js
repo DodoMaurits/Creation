@@ -129,6 +129,7 @@ const combinaties = [
       ["Gas", "Warmte"]
     ],
     hint: `Een gas kan zo heet worden dat atomen uit elkaar vallen in geladen deeltjes.`,
+    hint_en: `Even gasses when heated up can fall apart into charged particles.`,
     output: [
       { naam: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
         quote: `Plasma seems to have the kinds of properties one would like for life. It's somewhat like liquid water - 
