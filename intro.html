@@ -36,12 +36,12 @@
       <div class="result-box-container">
         <div class="result-box fade-in">
           <div class="image-wrapper"><img src="icons/Warmte.png" alt="Warmte" class="result-image"></div>
-          <h2 class="result-title pair">Warmte</h2>
+          <h2 class="result-title pair" id="titel-warmte">Warmte</h2>
           <p class="result-quote pair">"Heat is required to forge anything"<br><br>- Mary Lou Retton</p>
         </div>
         <div class="result-box fade-in">
           <div class="image-wrapper"><img src="icons/Kou.png" alt="Kou" class="result-image"></div>
-          <h2 class="result-title pair">Kou</h2>
+          <h2 class="result-title pair" id="titel-kou">Kou</h2>
           <p class="result-quote pair">"It's too cold outside for angels to fly"<br><br>- Ed Sheeran</p>
         </div>
       </div>
@@ -74,7 +74,9 @@
           van symmetrie suggereert. Maar daar, tussen het kleinste en het grootste, de groei en het begin, ontstond de
           tijdelijke wereld die deze symmetrie verbrak: de wereld van ruimtetijd...
           </p>
-        `
+        `,
+        warmte: "Warmte",
+        kou: "Kou"
       },
       en: {
         titel: "Big Bang",
@@ -93,7 +95,9 @@
           of symmetry. But there, between the smallest and the largest, the growth and the beginning, arose the
           temporary world that broke this symmetry: the world of spacetime...
           </p>
-        `
+        `,
+        warmte: "Heat",
+        kou: "Cold"
       }
     };
     
@@ -102,6 +106,8 @@
     document.querySelector(".explanation-title").textContent = T.titel;
     document.querySelector(".explanation-text").innerHTML = T.uitleg;
     document.getElementById("pagina-titel").textContent = T.titel;
+    document.getElementById("titel-warmte").textContent = T.warmte; 
+    document.getElementById("titel-kou").textContent = T.kou;
     
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
