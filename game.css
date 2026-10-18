@@ -433,7 +433,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 
 #hint-button span      { transform: translate(-1px, 2px); }
-#superhint-button span { transform: translate(0, 3px);   }
+#superhint-button span { transform: translate(0, 2px);   }
 
 /* ---------------- SUPERHINT FLASH ---------------- */
 .superhint-flash {
