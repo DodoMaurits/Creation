@@ -17,6 +17,21 @@ let timelineStart = maxTime;
 const timelineFill = document.getElementById("timeline-fill");
 const timelineLabel = document.getElementById("timeline-label");
 
+// ----- TAAL -----
+const TAAL = localStorage.getItem("creation-taal") || "nl";
+const INTRO_HINTS = {
+  nl: {
+    openGroep: "open een groep",
+    openNogEen: "open nog een groep",
+    combinatie: "sleep of klik op twee elementen<br>om een nieuwe creatie te maken"
+  },
+  en: {
+    openGroep: "open a map",
+    openNogEen: "open another map",
+    combinatie: "drag or click two elements<br>and create your new creation"
+  }
+};
+
 // ----- DOM -----
 const closedContainer = document.getElementById("closed-container");
 const leftSide = document.getElementById("left-side");
@@ -229,18 +244,18 @@ function updateIntroHint() {
     maps.forEach(map => map.dataset.name = map.alt || map.title || "");
     const start = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
     target = start[0] || maps[0];
-    hintText = "open een groep";
+    hintText = INTRO_HINTS[TAAL].openGroep;
     offsetY = -140;
   } else if (openAantal === 1) {
     // gesloten mappen staan aan de overgebleven kant
     const maps = Array.from(document.querySelectorAll(".icon.map"));
     if (maps.length === 0) { requestAnimationFrame(updateIntroHint); return; }
     target = maps[0];
-    hintText = "open nog een groep";
+    hintText = INTRO_HINTS[TAAL].openNogEen;
     offsetY = -120;
   } else {
     // beide open: combinatie-hint
-    hintText = "sleep of klik op twee elementen<br>om een nieuwe creatie te maken";
+    hintText = INTRO_HINTS[TAAL].combinatie;
     offsetY = -50;
   }
   const wrapper = document.createElement("div");
