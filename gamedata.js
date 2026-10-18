@@ -1322,7 +1322,7 @@ const combinaties = [
         quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
         <br><br>- Sergei Devlatov`
       },
-      { naam: "Klei", naam_en: "Clay", ,icoon: "icons/Klei.png", map: "Aarde", 
+      { naam: "Klei", naam_en: "Clay", icoon: "icons/Klei.png", map: "Aarde", 
         quote: `Clay is used to make vases. But where there is no clay is where it is useful 
         <br><br>- Lao Tzu`
       }
