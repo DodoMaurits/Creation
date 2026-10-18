@@ -585,9 +585,9 @@ body {
   opacity: 1;
 }
 
-/* Alleen tooltips van elementen in open maps corrigeren */
 .grid-elements .icon-container {
   display: inline-block;
+  justify-self: center;
   position: relative;
   width: fit-content;
   text-align: center;
