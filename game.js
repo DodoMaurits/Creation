@@ -66,7 +66,7 @@ const tekstVan = u  => veld(u, "tekst");
 
 // ----- MAP-NAMEN (NL-sleutel → EN) -----
 const MAP_NAMEN = {
-  Heelal: "Universe",
+  Heelal: "Space",
   Krachten: "Forces",
   Chemie: "Chemistry"
 };
