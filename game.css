@@ -23,11 +23,18 @@ body {
   position: relative;
 }
 
-/* ---------------- TAAL KNOP ---------------- */
-#taal-button {
+/* ---------------- TAAL WIJZIGEN ---------------- */
+#taal-controls {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 5000;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+#taal-button {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -36,19 +43,39 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 5000;
   transition: background 0.2s ease;
   overflow: hidden;
 }
-
 #taal-button:hover { background: rgba(200,200,200,0.5); }
+#taal-button img { width: 24px; height: 16px; object-fit: cover; border-radius: 3px; }
 
-#taal-button img {
-  width: 24px;
-  height: 16px;
-  object-fit: cover;
-  border-radius: 3px;
+#taal-opties {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
 }
+#taal-opties.open { max-height: 100px; opacity: 1; }
+
+.taal-optie {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(200,200,200,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  overflow: hidden;
+}
+.taal-optie:hover { background: rgba(200,200,200,0.5); }
+.taal-optie img { width: 24px; height: 16px; object-fit: cover; border-radius: 3px; }
 
 /* ---------------- MUTE BUTTON ----------------- */
 #corner-controls {
@@ -1335,18 +1362,26 @@ body.result-open #corner-controls {
               right: 12px;
             }
 
-            #taal-button {
-            top: 12px; 
-            left: 12px;
-            bottom: auto;
-            right: auto;
-            background: rgba(255, 255, 255, 0.85);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-            width: 36px;
-            height: 36px;
-          }
-          
-          #taal-button img { fill: black; } 
+            #taal-controls {
+              top: 12px;
+              left: 12px;
+              bottom: auto;
+              right: auto;
+              flex-direction: column; 
+            }
+            
+            #taal-button, .taal-optie {
+              background: rgba(255, 255, 255, 0.85);
+              box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            }
+            
+            #taal-opties {
+              flex-direction: column; 
+              order: 2; 
+              margin-bottom: 0;
+              margin-top: 8px;
+            }
+            #taal-button { order: 1; }
   
             /* ---------------- MUTE BUTTON ---------------- */
             #mute-button {
