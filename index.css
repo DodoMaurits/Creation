@@ -124,12 +124,13 @@ body {
 
 .taal-buttons {
   display: flex;
+  flex-direction: column; 
   gap: 16px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .taal-knop {
+  min-width: 220px;
   font-family: "Cinzel", serif;
   padding: 10px 20px;
   font-size: clamp(14px, 1.4vw, 17px);
