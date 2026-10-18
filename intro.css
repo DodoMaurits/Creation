@@ -144,9 +144,10 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: clamp(320px, 50vw, 800px);
+  width: max-content;
+  max-width: min(80vw, 800px);
   max-height: 80vh;
-  padding: 40px 80px;
+  padding: 40px 60px;
   gap: 20px;
 }
 
