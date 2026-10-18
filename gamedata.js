@@ -452,17 +452,18 @@ const combinaties = [
   {
     input: ["Lava", "Kou"],
     hint: `Ook het vuur van lava moet ooit rusten en bedaren...`,
+    hint_en: `Even the fire of lava must come to rest some day...`,
     output: [
-      { naam: "Graniet", icoon: "icons/Graniet.png", map: "Aarde",
+      { naam: "Graniet", naam_en: "Granite", icoon: "icons/Graniet.png", map: "Aarde",
       quote: `The block of granite which was an obstacle in the pathway of the weak,
       became a stepping-stone in the pathway of the strong 
       <br><br>- Thomas Carlyle`
       },
-      { naam: "Basalt", icoon: "icons/Basalt.png", map: "Aarde",
+      { naam: "Basalt", naam_en: "Basalt", icoon: "icons/Basalt.png", map: "Aarde",
         quote: `Everything changes, even stone 
         <br><br>- Claude Monet`
       },
-      { naam: "Obsidiaan", icoon: "icons/Obsidiaan.png", map: "Aarde",
+      { naam: "Obsidiaan", naam_en: "Obsidian", icoon: "icons/Obsidiaan.png", map: "Aarde",
         quote: `Eyes as black and as shiny as chips of obsidian stared back into his. 
         They were eyes like black holes, letting nothing out, not even information 
         <br><br>- Neil Gaiman`
@@ -472,23 +473,31 @@ const combinaties = [
   {
     input: ["De Aarde", "Planeet"],
     hint: `De Aarde.. daar past een mooi broertje bij voor de nacht.`,
+    hint_en: `The Earth.. I think a nice little brother would suit him well for the night.`,
     tijd: 4_527_000_000,
     vers: `Niet mag de Zon de Maan inhalen, noch de nacht voorbijlopen aan de dag, en ieder van hen beweegt in een baan
     <br><br>Ya-Sin (36:40)`,
+    vers_en: `No, the Sun may not overtake the Moon, nor is the night allowed to outrun the day, and each of them moves
+    in an orbit <br><br>Ya-Sin (36:40)`,
     output: [
-      { naam: "De Maan", icoon: "icons/Maan.png", map: "Heelal",
+      { naam: "De Maan", naam_en: "The Moon", icoon: "icons/Maan.png", map: "Heelal",
         quote: `I always look up at the moon and see it as the single most romantic place within the cosmos 
         <br><br>- Tom Hanks`
       }
     ],
     uitleg: {
       normal: {
-        titel: "Grote Inslag van Theia",
+        titel: "Grote Inslag van Theia", titel_en: "Major Impact of Theia", 
         tekst: `Onze broederplaneet de Maan ontstond zo'n 30 tot 50 miljoen jaar na het ontstaan van ons zonnestelsel. 
         Een andere planeet genaamd Theia botste toen tegen de jonge Aarde. De inslag maakte beide hemellichamen 
         grotendeels vloeibaar en slingerde veel materie de ruimte in, die in een baan rond de gehavende Aarde terechtkwam.
         Opnieuw verhitte de Aarde tot temperaturen van wel 230 graden. Al snel klonterde dit materiaal samen tot onze 
-        broederplaneet.`, 
+        broederplaneet.`,
+        tekst_en: `Our sibling planet, the Moon, came into existence some 30 to 50 million years after the formation of
+        our solar system. At that time, another planet named Theia collided with the young Earth. The impact rendered 
+        both celestial bodies largely molten and flung a great deal of material into space, where it settled into an 
+        orbit around the battered Earth. The Earth heated up once again, reaching temperatures as high as 230 degrees.
+        Before long, this material clumped together to form our sibling planet.`
       }
     }
   },
@@ -497,8 +506,9 @@ const combinaties = [
       ["Warmte", "Graniet"], ["Druk", "Graniet"], ["Schist", "Warmte"], ["Schist", "Druk"] 
     ],
     hint: `Stenen worden compacter onder druk en hitte, zo ook graniet.`,
+    hint_en: `Stone becomes more compact under pressure and heat, so does granite.`,
     output: [
-      { naam: "Gneis", icoon: "icons/Gneis.png", map: "Aarde", 
+      { naam: "Gneis", naam_en: "Gneiss", icoon: "icons/Gneis.png", map: "Aarde", 
         quote: `Geologists have a saying - rocks remember 
         <br><br>- Neil Armstrong`
       }
@@ -509,26 +519,32 @@ const combinaties = [
       ["Graniet", "Lava"], ["Basalt", "Lava"]
     ],
     hint: `Laat magma de aardkorst in beweging houden...`,
+    hint_en: `Let magma keep the Earth's crust in motion...`,
     tijd: 4_400_000_000,
     output: [
-      { naam: "Platentektoniek", icoon: "icons/Platentektoniek.png", map: "Krachten",
+      { naam: "Platentektoniek", naam_en: "Plate tectonics", icoon: "icons/Platentektoniek.png", map: "Krachten",
         quote: `Loyalties shifting like the earth's tectonic plates ... changing my loves shape 
         <br><br>- Ranata Suzuki`
       },
-      { naam: "Granietmagma", icoon: "icons/Granietmagma.png", map: "Vuur",
+      { naam: "Granietmagma", naam_en: "Granite magma", icoon: "icons/Granietmagma.png", map: "Vuur",
         quote: `Of course the entire planet Earth consists of magma under us, and only the very inner-core is different 
           <br><br>- Werner Herzog`
       }
     ],
     uitleg: {
       normal: {
-        titel: "Platentektoniek",
+        titel: "Platentektoniek", titel_en: "Plate tectonics",
         tekst: `Na de klap van de Maan herstelde de Aarde zich. Zwaartekracht sorteerde de elementen opnieuw en 
           wederom vormden zich een aardkorst en prille atmosfeer. Lava stroomde door de aardmantel, waardoor de 
           aardkorst in platen kon scheuren die tegen elkaar aan duwen. Waar de lava het aardoppervlakte bereikte,
           werden waterrijke gassen de fragiele atmosfeer in gepompt die na afkoeling de toestand aannamen van 
           vloeibaar water. De Aarde zou bevroren zijn geweest mits lavastromen hun weg naar buiten niet hadden 
           gevonden...`,
+        tekst_en: `After the impact of the Moon, the Earth recovered. Gravity re-sorted the elements, and once again,
+          a crust and a nascent atmosphere took shape. Lava flowed through the Earth's mantle, causing the crust to 
+          fracture into plates that pushed against one another. Where the lava reached the surface, water-rich gases
+          were pumped into the fragile atmosphere. Upon cooling, these gases condensed into liquid water. The Earth
+          would have remained frozen, if the lava would not have found their way to the surface...`
       }
     }
   },
@@ -582,7 +598,7 @@ const combinaties = [
       ["Veldspaat", "Mica"], ["Veldspaat", "Veldspaat"]
     ],
     output: [
-      { naam: "Druk", icoon: "icons/Druk.png", map: "Krachten", 
+      { naam: "Druk", naam_en: "Pressure", icoon: "icons/Druk.png", map: "Krachten", 
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
         pressure (e.g. air pressure) is exerted inwards from all directions equally 
         <br><br>- Viktor Schawberger`
@@ -591,9 +607,10 @@ const combinaties = [
   },
   {
     input: ["Platentektoniek", "IJzer"],
-    hint: `Al die beweging op dat aardoppervlak, dat zal vast iets doen met de kern.`,
+    hint: `Al die beweging op dat aardoppervlak, dat zal vast iets doen met de ijzeren kern.`,
+    hint_en: `All those things moving on the Earth's surface must surely have some effect on its iron core.`,
     output: [
-      { naam: "Magnetisme", icoon: "icons/Magnetisme.png", map: "Krachten",
+      { naam: "Magnetisme", naam_en: "Magnetism", icoon: "icons/Magnetisme.png", map: "Krachten",
         quote: `Electricity and magnetism are those forces of nature by which people who know nothing about electricity
         and magnetism can explain everything
         <br><br>- Egon Friedell`
@@ -603,12 +620,13 @@ const combinaties = [
   {
     input: ["Platentektoniek", "Lava"],
     hint: `Lava beweegt, dus laat het ook naar boven komen...`,
+    hint_en: `Lava moves, so just let it flow upwards...`,
     output: [
-      { naam: "Vulkaan", icoon: "icons/Vulkaan.png", map: "Landschap",
+      { naam: "Vulkaan", naam_en: "Volcano", icoon: "icons/Vulkaan.png", map: "Landschap",
         quote: `Remind me that the most fertile lands were built by the fires of volcanoes 
         <br><br>- Andrea Gibson`
       },
-      { naam: "As", icoon: "icons/As.png", map: "Vuur",
+      { naam: "As", naam_en: "Ash", icoon: "icons/As.png", map: "Vuur",
         quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
         <br><br>- Alexander Anderson`
       }
@@ -619,11 +637,15 @@ const combinaties = [
       ["Platentektoniek", "Graniet"], ["Platentektoniek", "Basalt"]
     ],
     hint: `Die platentektoniek kan nog wel eens voor wat stenen reliëf zorgen...`,
+    hint_en: `Those plate tectonics can definitely cause some rocky terrain...`,
     vers: `En Wij plaatsten in de aarde stevige bergen opdat het niet met hen zou schudden, en Wij maakten daarin
     doorgangen als bergpassen, zodat zij misschien de weg vinden
     <br><br>De Profeten (21:31)`,
+    vers_en: `And We placed firm mountains upon the Earth so that it would not shake with them, and We made passages
+    within it like mountain passes, so that perhaps they might find their way
+    <br><br>The Prophets (21:31)`,
     output: [
-      { naam: "Berg", icoon: "icons/Berg.png", map: "Landschap",
+      { naam: "Berg", naam_en: "Mountain", icoon: "icons/Berg.png", map: "Landschap",
         quote: `Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain 
         <br><br>- Sun Tzu`
       }
@@ -3769,7 +3791,6 @@ const combinaties = [
   },
   {
     input: [
-      ["map:Reptielen", "map:Reptielen"], ["map:Zoogdieren", "map:Zoogdieren"], ["map:Vogels", "map:Vogels"],
       /* --- WATERDIEREN --- */
       ["Zeeslakken", "Zeeslakken"], ["Inktvissen", "Inktvissen"], ["Octopussen", "Octopussen"], 
       ["Reuzeninktvissen", "Reuzeninktvissen"], ["Nautilussen", "Nautilussen"], ["Zeeschildpadden", "Zeeschildpadden"],
@@ -3798,7 +3819,56 @@ const combinaties = [
       ["Muggen", "Muggen"], ["Vliegen", "Vliegen"], ["Krekels", "Krekels"], ["Vlinders", "Vlinders"], 
       ["Libellen", "Libellen"], ["Mieren", "Mieren"], ["Wespen", "Wespen"], ["Bijen", "Bijen"], ["Kevers", "Kevers"], 
       ["Sprinkhanen", "Sprinkhanen"], ["Oertetrapoden", "Oertetrapoden"], ["Salamanders", "Salamanders"],
-      ["Kikkers", "Kikkers"], ["Padden", "Padden"]
+      ["Kikkers", "Kikkers"], ["Padden", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Oersynapsiden", "Oersynapsiden"], ["Oerdiapsiden", "Oerdiapsiden"], ["Oeranapsiden", "Oeranapsiden"], 
+      ["Schildpadden", "Schildpadden"], ["Pterosauriërs", "Pterosauriërs"], ["Lepidosauriërs", "Lepidosauriërs"], 
+      ["Crurotarsi", "Crurotarsi"], ["Oerdinosauriërs", "Oerdinosauriërs"], ["Oermaniraptoren", "Oermaniraptoren"], 
+      ["Sauropoden", "Sauropoden"], ["Stegosauriërs", "Stegosauriërs"], ["Tyrannosauriërs", "Tyrannosauriërs"], 
+      ["Slangen", "Slangen"], ["Gekko's", "Gekko's"], ["Leguanen", "Leguanen"], ["Krokodillen", "Krokodillen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Oercynodonten", "Oercynodonten"], ["Oerplacentalia", "Oerplacentalia"], ["Oerbuideldieren", "Oerbuideldieren"], 
+      ["Vogelbekdieren", "Vogelbekdieren"], ["Vleermuizen", "Vleermuizen"], ["Klipdassen", "Klipdassen"], 
+      ["Oerslurfdieren", "Oerslurfdieren"], ["Aardvarkens", "Aardvarkens"], ["Luiaarden", "Luiaarden"], 
+      ["Miereneters", "Miereneters"], ["Bevers", "Bevers"], ["Kangoeroes", "Kangoeroes"], ["Wombats", "Wombats"], 
+      ["Koala", "Koala"], ["Oerknaagdieren", "Oerknaagdieren"], ["Gordeldieren", "Gordeldieren"], ["Mollen", "Mollen"], 
+      ["Egels", "Egels"], ["Spitsmuizen", "Spitsmuizen"], ["Konijnen", "Konijnen"], ["Hazen", "Hazen"], 
+      ["Olifanten", "Olifanten"], ["Mammoeten", "Mammoeten"], ["Prairiehonden", "Prairiehonden"], ["Ratten", "Ratten"], 
+      ["Capibara", "Capibara"], ["Eekhoorns", "Eekhoorns"], ["Stekelvarkens", "Stekelvarkens"], ["Muizen", "Muizen"],
+      ["Hamsters", "Hamsters"],
+      /* --- VOGELS --- */
+      ["Archaeopteryx", "Archaeopteryx"], ["Pinguïns", "Pinguïns"], ["Reigers", "Reigers"], ["Uilen", "Uilen"], 
+      ["Flamingo", "Flamingo"], ["Spechten", "Spechten"], ["Gieren", "Gieren"], ["Struisvogels", "Struisvogels"], 
+      ["Secretarisvogels", "Secretarisvogels"], ["Kolibries", "Kolibries"], ["Duiven", "Duiven"], ["Arenden", "Arenden"], 
+      ["Zwaluwen", "Zwaluwen"], ["Spreeuwen", "Spreeuwen"], ["Kraaien", "Kraaien"], ["Ooievaars", "Ooievaars"], 
+      ["Meeuwen", "Meeuwen"], ["Aalscholvers", "Aalscholvers"], ["Papegaaiduikers", "Papegaaiduikers"], 
+      ["Eenden", "Eenden"], ["Ganzen", "Ganzen"], ["Zwanen", "Zwanen"], ["Kieviten", "Kieviten"], ["Kippen", "Kippen"],
+      ["Pauwen", "Pauwen"], ["Papegaaien", "Papegaaien"], ["Mussen", "Mussen"], ["Vinken", "Vinken"], 
+      ["Fazanten", "Fazanten"], 
+      /* --- CARNIVOREN --- */
+      ["Oerhondachtigen", "Oerhondachtigen"], ["Oerkatachtigen", "Oerkatachtigen"], ["Walrussen", "Walrussen"], 
+      ["Zeehonden", "Zeehonden"], ["Zeeleeuwen", "Zeeleeuwen"], ["Otters", "Otters"], ["Dassen", "Dassen"], 
+      ["Wolven", "Wolven"], ["Beren", "Beren"], ["Wasberen", "Wasberen"], ["Marters", "Marters"], ["Wezels", "Wezels"], 
+      ["Lynxen", "Lynxen"], ["Poema", "Poema"], ["Katten", "Katten"], ["Stokstaartjes", "Stokstaartjes"], 
+      ["Tijgers", "Tijgers"], ["Jaguars", "Jaguars"], ["Civetkatten", "Civetkatten"], ["Fossa", "Fossa"], 
+      ["Leeuwen", "Leeuwen"], ["Hyena", "Hyena"], ["Cheeta", "Cheeta"], ["Luipaarden", "Luipaarden"], 
+      ["Vossen", "Vossen"], ["Wilde honden", "Wilde honden"], ["Zonneberen", "Zonneberen"], ["Pandaberen", "Pandaberen"], 
+      ["Honden", "Honden"], 
+      /* --- PRIMATEN --- */
+      ["Oerprimaten", "Oerprimaten"], ["Lemuren", "Lemuren"], ["Makaken", "Makaken"], ["Oermensapen", "Oermensapen"], 
+      ["Neusapen", "Neusapen"], ["Langoeren", "Langoeren"], ["Bavianen", "Bavianen"], ["Galago", "Galago"], 
+      ["Lori", "Lori"], ["Spookdiertjes", "Spookdiertjes"], ["Kapucijnapen", "Kapucijnapen"], 
+      ["Slingerapen", "Slingerapen"], ["Brulapen", "Brulapen"], ["Saki", "Saki"], ["Gorilla", "Gorilla"], 
+      ["Chimpansees", "Chimpansees"], ["Gibbons", "Gibbons"], ["Orang-oetans", "Orang-oetans"], ["Bonobo", "Bonobo"], 
+      /* --- HOEFDIEREN --- */
+      ["Oerevenhoevigen", "Oerevenhoevigen"], ["Oeronevenhoevigen", "Oeronevenhoevigen"], ["Tapirs", "Tapirs"], 
+      ["Gaffelantilopes", "Gaffelantilopes"], ["Nijlpaarden", "Nijlpaarden"], ["Neushoorns", "Neushoorns"], 
+      ["Okapi", "Okapi"], ["Giraffen", "Giraffen"], ["Gnoes", "Gnoes"], ["Gazellen", "Gazellen"], 
+      ["Runderen", "Runderen"], ["Geiten", "Geiten"], ["Schapen", "Schapen"], ["Ezels", "Ezels"], ["Zebra", "Zebra"], 
+      ["Rendieren", "Rendieren"], ["Lama", "Lama"], ["Alpaca", "Alpaca"], ["Steenbokken", "Steenbokken"], 
+      ["Kamelen", "Kamelen"], ["Dromedarissen", "Dromedarissen"], ["Elanden", "Elanden"], ["Zwijnen", "Zwijnen"], 
+      ["Herten", "Herten"], ["Impala", "Impala"], ["Paarden", "Paarden"], ["Buffels", "Buffels"], ["Bizons", "Bizons"], 
+      ["Koeien", "Koeien"], ["Varkens", "Varkens"]
     ],
     hint: `Hm.. dieren van dezelfde soorten kunnen behoorlijk anders op elkaar reageren.`, 
     output: [
@@ -7259,7 +7329,7 @@ const combinaties = [
       ["Oercynodonten", "Padden"], 
       /* --- REPTIELEN --- */
       ["Oercynodonten", "Oersynapsiden"], ["Oercynodonten", "Oerdiapsiden"], ["Oercynodonten", "Lepidosauriërs"], 
-      ["Oercynodonten", "Crurotarsi"], ["Oercynodonten", "Gekko"],
+      ["Oercynodonten", "Crurotarsi"], ["Oercynodonten", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Oercynodonten", "Mollen"], ["Oercynodonten", "Oerbuideldieren"], ["Oercynodonten", "Oerknaagdieren"], 
       ["Oercynodonten", "Konijnen"], ["Oercynodonten", "Ratten"], ["Oercynodonten", "Muizen"], 
@@ -8022,7 +8092,7 @@ const combinaties = [
       ["Oermaniraptoren", "Salamanders"], ["Oermaniraptoren", "Kikkers"], ["Oermaniraptoren", "Padden"], 
       /* --- REPTIELEN --- */
       ["Oermaniraptoren", "Slangen"], ["Oermaniraptoren", "Oersynapsiden"], ["Oermaniraptoren", "Pterosauriërs"],
-      ["Oermaniraptoren", "Gekko"], ["Oermaniraptoren", "Leguanen"], ["Oermaniraptoren", "Mollen"],
+      ["Oermaniraptoren", "Gekko's"], ["Oermaniraptoren", "Leguanen"], ["Oermaniraptoren", "Mollen"],
       ["Oermaniraptoren", "Oerbuideldieren"], ["Oermaniraptoren", "Luiaarden"], ["Oermaniraptoren", "Oerknaagdieren"],
       ["Oermaniraptoren", "Konijnen"], ["Oermaniraptoren", "Hazen"], ["Oermaniraptoren", "Prairiehonden"],
       ["Oermaniraptoren", "Ratten"], ["Oermaniraptoren", "Capibara"], ["Oermaniraptoren", "Eekhoorns"],
@@ -8134,7 +8204,7 @@ const combinaties = [
     ]
   }, /* ------------------ TYRANNOSAURIËRS ------------------ */
   {
-    input: [
+    input: [/* Bloed */
       ["Tyrannosauriërs", "map:Vissen"], ["Tyrannosauriërs", "map:Zoogdieren"], ["Tyrannosauriërs", "map:Vogels"],
       ["Tyrannosauriërs", "map:Carnivoren"], ["Tyrannosauriërs", "map:Hoefdieren"], ["Tyrannosauriërs", "map:Primaten"],
       /* --- KLEIN LANDLEVEN --- */
@@ -8145,13 +8215,17 @@ const combinaties = [
       ["Tyrannosauriërs", "Oeranapsiden"], ["Tyrannosauriërs", "Schildpadden"], ["Tyrannosauriërs", "Pterosauriërs"],
       ["Tyrannosauriërs", "Lepidosauriërs"], ["Tyrannosauriërs", "Crurotarsi"], ["Tyrannosauriërs", "Oerdinosauriërs"],
       ["Tyrannosauriërs", "Oermaniraptoren"], ["Tyrannosauriërs", "Sauropoden"], ["Tyrannosauriërs", "Stegosauriërs"],
-      ["Tyrannosauriërs", "Gekko"], ["Tyrannosauriërs", "Leguanen"], ["Tyrannosauriërs", "Krokodillen"]
+      ["Tyrannosauriërs", "Gekko's"], ["Tyrannosauriërs", "Leguanen"], ["Tyrannosauriërs", "Krokodillen"]
     ],
     output: [
       { naam: "Tyrannosauriërs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
         quote: `Tyrannosaurs were the apex predators of their time, with massive skulls, powerful jaws, and a body built 
         for both hunting and intimidation
         <br><br>- Jack Horner`
+      },
+      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
       },
       { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
@@ -8669,7 +8743,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Slangen", "Salamander"], ["Slangen", "Kikkers"], ["Slangen", "Padden"],
       /* --- REPTIELEN --- */
-      ["Slangen", "Gekko"], ["Slangen", "Leguanen"],
+      ["Slangen", "Gekko's"], ["Slangen", "Leguanen"],
       /* --- ZOOGDIEREN --- */
       ["Slangen", "Vleermuizen"], ["Slangen", "Konijnen"], ["Slangen", "Hazen"], ["Slangen", "Ratten"], 
       ["Slangen", "Eekhoorns"], ["Slangen", "Muizen"], ["Slangen", "Hamsters"], ["Slangen", "Spitsmuizen"], 
@@ -8848,7 +8922,7 @@ const combinaties = [
       ["Krokodillen", "Slangen"], ["Krokodillen", "Oersynapsiden"], ["Krokodillen", "Oerdiapsiden"], 
       ["Krokodillen", "Oeranapsiden"], ["Krokodillen", "Schildpadden"], ["Krokodillen", "Pterosauriërs"], 
       ["Krokodillen", "Lepidosauriërs"], ["Krokodillen", "Crurotarsi"], ["Krokodillen", "Oerdinosauriërs"], 
-      ["Krokodillen", "Oermaniraptoren"], ["Krokodillen", "Gekko"], ["Krokodillen", "Leguanen"], 
+      ["Krokodillen", "Oermaniraptoren"], ["Krokodillen", "Gekko's"], ["Krokodillen", "Leguanen"], 
       /* --- CARNIVOREN --- */
       ["Krokodillen", "Oerhondachtigen"], ["Krokodillen", "Oerkatachtigen"], ["Krokodillen", "Walrussen"], 
       ["Krokodillen", "Zeehonden"], ["Krokodillen", "Zeeleeuwen"], ["Krokodillen", "Otters"],
@@ -9372,7 +9446,7 @@ const combinaties = [
       ["Oerplacentalia", "Padden"], 
       /* --- REPTIELEN --- */
       ["Oerplacentalia", "Oersynapsiden"], ["Oerplacentalia", "Oerdiapsiden"], ["Oerplacentalia", "Lepidosauriërs"], 
-      ["Oerplacentalia", "Crurotarsi"], ["Oerplacentalia", "Gekko"],
+      ["Oerplacentalia", "Crurotarsi"], ["Oerplacentalia", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Oerplacentalia", "Mollen"], ["Oerplacentalia", "Oerbuideldieren"], ["Oerplacentalia", "Oerknaagdieren"], 
       ["Oerplacentalia", "Konijnen"], ["Oerplacentalia", "Ratten"], ["Oerplacentalia", "Muizen"], 
@@ -9471,7 +9545,7 @@ const combinaties = [
       ["Oerbuideldieren", "Padden"], 
       /* --- REPTIELEN --- */
       ["Oerbuideldieren", "Oersynapsiden"], ["Oerbuideldieren", "Oerdiapsiden"], ["Oerbuideldieren", "Lepidosauriërs"], 
-      ["Oerbuideldieren", "Crurotarsi"], ["Oerbuideldieren", "Gekko"],
+      ["Oerbuideldieren", "Crurotarsi"], ["Oerbuideldieren", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Oerbuideldieren", "Mollen"], ["Oerbuideldieren", "Oerbuideldieren"], ["Oerbuideldieren", "Oerknaagdieren"], 
       ["Oerbuideldieren", "Konijnen"], ["Oerbuideldieren", "Ratten"], ["Oerbuideldieren", "Muizen"],
@@ -13324,7 +13398,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Klipdassen", "Salamanders"], ["Klipdassen", "Kikkers"], ["Klipdassen", "Padden"], 
       /* --- REPTIELEN --- */
-      ["Klipdassen", "Gekko"],
+      ["Klipdassen", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Klipdassen", "Muizen"], ["Klipdassen", "Spitsmuizen"]
     ],
@@ -13484,7 +13558,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Egels", "Salamanders"], ["Egels", "Kikkers"], ["Egels", "Padden"],
       /* --- REPTIELEN --- */
-      ["Egels", "Gekko"],
+      ["Egels", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Egels", "Muizen"], ["Egels", "Spitsmuizen"]
     ],
@@ -13757,7 +13831,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Aardvarkens", "Salamanders"], ["Aardvarkens", "Kikkers"], ["Aardvarkens", "Padden"], 
       /* --- REPTIELEN --- */
-      ["Aardvarkens", "Gekko"],
+      ["Aardvarkens", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Aardvarkens", "Muizen"], ["Aardvarkens", "Spitsmuizen"]
     ],
@@ -16218,7 +16292,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Ratten", "Oertetrapoden"], ["Ratten", "Salamanders"], ["Ratten", "Kikkers"], ["Ratten", "Padden"],
       /* --- REPTIELEN --- */
-      ["Ratten", "Gekko"],
+      ["Ratten", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Ratten", "Muizen"], ["Ratten", "Spitsmuizen"]
     ],
@@ -16379,7 +16453,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Capibara", "Oertetrapoden"], ["Capibara", "Salamanders"], ["Capibara", "Kikkers"], ["Capibara", "Padden"],
       /* --- REPTIELEN --- */
-      ["Capibara", "Gekko"]
+      ["Capibara", "Gekko's"]
     ],
     output: [
       { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
@@ -16567,7 +16641,7 @@ const combinaties = [
       ["Stekelvarkens", "Oertetrapoden"], ["Stekelvarkens", "Salamanders"], ["Stekelvarkens", "Kikkers"], 
       ["Stekelvarkens", "Padden"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Stekelvarkens", "Gekko"]
+      ["Stekelvarkens", "Gekko's"]
     ],
     output: [
       { naam: "Stekelvarkens", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
