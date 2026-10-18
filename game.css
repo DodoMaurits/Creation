@@ -118,7 +118,6 @@ body {
 #reset-button:hover { background: rgba(200,200,200,0.5); }
 
 #reset-button:hover::after {
-  content: "Opnieuw beginnen";
   position: absolute;
   top: 50%;
   right: calc(100% + 10px);
@@ -131,6 +130,9 @@ body {
   white-space: nowrap;
   z-index: 5000;
 }
+
+body.lang-nl #reset-button:hover::after { content: "Opnieuw beginnen"; }
+body.lang-en #reset-button:hover::after { content: "Start again"; }
 
 #reset-button svg {
   width: 20px;
