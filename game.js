@@ -345,7 +345,7 @@ function updateIntroHint() {
     const rect = target.getBoundingClientRect();
     wrapper.style.left = rect.left + rect.width / 2 + "px";
     if (window.innerWidth <= 900) {
-      wrapper.style.top = ""; 
+      wrapper.style.top = Math.max(140, rect.top + offsetY + 40) + "px";
     } else {
       wrapper.style.top = rect.top + offsetY + "px";
     }
