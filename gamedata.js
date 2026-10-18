@@ -656,21 +656,22 @@ const combinaties = [
       ["Granietmagma", "Kou"], ["Granietmagma", "Water"]
     ],
     hint: `Ik zie potentie in granietmagma.. laat maar even rusten.`,
+    hint_en: `I see potential in granite magma.. just let it rest for a while.`,
     output: [
-      { naam: "Magmadamp", icoon: "icons/Magmadamp.png", map: "Vuur",
+      { naam: "Magmadamp", naam_en: "Magma vapour", icoon: "icons/Magmadamp.png", map: "Vuur",
         quote: `The gases that igneous rocks contain, probably as essential features of the molten magma 
         <br><br>- A.J. Grenville`
       },
-      { naam: "Kwarts", icoon: "icons/Kwarts.png", map: "Aarde",
+      { naam: "Kwarts", naam_en: "Quartz", icoon: "icons/Kwarts.png", map: "Aarde",
         quote: `Quartz is as hard as anything it is likely to meet with in use 
         <br><br>- Frank Wade`
       },
-      { naam: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
+      { naam: "Mica", naam_en: "Mica", icoon: "icons/Mica.png", map: "Aarde", 
         quote: `That great dark bit out there is mica, and all this that runs in a vein like is quartz. 
         Quartz and mica are the natural home of gold 
         <br><br>- Charles Reade`
       },
-      { naam: "Veldspaat", icoon: "icons/Veldspaat.png", map: "Aarde", 
+      { naam: "Veldspaat", naam_en: "Feldspar", icoon: "icons/Veldspaat.png", map: "Aarde", 
         quote: `Even the hardest rock can be worn away by water 
         <br><br>- Lucretius`
       }
@@ -679,8 +680,9 @@ const combinaties = [
   {
     input: ["Basalt", "Druk"],
     hint: `Onder druk ondergaat basalt logischerwijs een metamorfose.`,
+    hint_en: `Under pressure, basalt logically undergoes a metamorphosis.`,
     output: [
-      { naam: "Jade", icoon: "icons/Jade.png", map: "Aarde",
+      { naam: "Jade", naam_en: "Jade", icoon: "icons/Jade.png", map: "Aarde",
         quote: `The gentleman compares his virtue to jade
         <br><br>- Confucius`
       }
@@ -693,8 +695,9 @@ const combinaties = [
       ["Ozon", "Zonnewind"], ["Ozon", "Plasma"]
     ],
     hint: `Als plasma van de Zon te dichtbij komt, vallen de atomen neer als dansend licht.`,
+    hint_en: `When plasma from the Sun comes too close, the atoms descend as dancing light.`,
     output: [
-      { naam: "Noorderlicht", icoon: "icons/Noorderlicht.png", map: "Vuur",
+      { naam: "Noorderlicht", naam_en: "Northern lights", icoon: "icons/Noorderlicht.png", map: "Vuur",
         quote: `Up at the poles, towards the north of the north, in those magical skies, exists a Goddess called
         Aurora Borealis
         <br><br>- Sayali Jadhav`
@@ -704,11 +707,11 @@ const combinaties = [
   {
     input: ["Vulkaan", "Gas"],
     output: [
-      { naam: "Rook", icoon: "icons/Rook.png", map: "Lucht", 
+      { naam: "Rook", naam_en: "Smoke", icoon: "icons/Rook.png", map: "Lucht", 
         quote: `Surely where there's smoke there's fire? No, where there's so much smoke there's smoke
         <br><br>- John Wheeler`
       },
-      { naam: "Zwavel", icoon: "icons/Zwavel.png", map: "Chemie", 
+      { naam: "Zwavel", naam_en: "Sulfur", icoon: "icons/Zwavel.png", map: "Chemie", 
         quote: `Sulfur is essential for life, woven into the very proteins that make metabolism 
         — and thus existence — possible
         <br><br>- Isaac Asimov`
@@ -720,8 +723,9 @@ const combinaties = [
       ["Vulkaan", "Platentektoniek"], ["Berg", "Platentektoniek"]
     ],
     hint: `Wat staat nog vast, als de bergen schudden?`,
+    hint_en: `What is all that remains when mountains are shaking?`, 
     output: [
-      { naam: "Aardbeving", icoon: "icons/Aardbeving.png", map: "Krachten", 
+      { naam: "Aardbeving", naam_en: "Earthquake", icoon: "icons/Aardbeving.png", map: "Krachten", 
         quote: `An earthquake achieves what the law promises but does not in practice maintain - the equality of all men
         <br><br>- Ignazio Silone`
       }
@@ -732,29 +736,30 @@ const combinaties = [
       ["Magmadamp", "Kou"], ["Regen", "Magmadamp"]
     ],
     hint: `Het neerregenen van magmadamp is een scheikundig feestje...`,
+    hint_en: `Raining down of magma vapour is a chemical feast...`,
     output: [
-      { naam: "Koper", icoon: "icons/Koper.png", map: "Chemie", 
+      { naam: "Koper", naam_en: "Copper", icoon: "icons/Koper.png", map: "Chemie", 
         quote: `Through love scraps of copper are turned to gold 
         <br><br>- Rumi`
       },
-      { naam: "Zilver", icoon: "icons/Zilver.png", map: "Chemie",
+      { naam: "Zilver", naam_en: "Silver", icoon: "icons/Zilver.png", map: "Chemie",
         quote: `Silver is purified in fire and so are we. It is in the most trying times that our real character 
         is shaped and revealed 
         <br><br>- Helen Keller`
       },
-      { naam: "Goud", icoon: "icons/Goud.png", map: "Chemie", 
+      { naam: "Goud", naam_en: "Gold", icoon: "icons/Goud.png", map: "Chemie", 
         quote: `Praise, like gold and diamonds, owes its value only to its scarcity 
         <br><br>- Samuel Johnson`
       },
-      { naam: "Lood", icoon: "icons/Lood.png", map: "Chemie", 
+      { naam: "Lood", naam_en: "Lead", icoon: "icons/Lood.png", map: "Chemie", 
         quote: `Lead is slow, elated, and resolved 
         <br><br>- Arthur Rimbaud`
       },
-      { naam: "Zink", icoon: "icons/Zink.png", map: "Chemie", 
+      { naam: "Zink", naam_en: "Zinc", icoon: "icons/Zink.png", map: "Chemie", 
         quote: `Zinc is gray and its salts are colorless... in short, it is a boring metal
         <br><br>- Primo Levi`
       },
-      { naam: "Tin", icoon: "icons/Tin.png", map: "Chemie", 
+      { naam: "Tin", naam_en: "Tin", icoon: "icons/Tin.png", map: "Chemie", 
         quote: `The tin hat shines with a cold reflection, as though it wore the mind of the earth upon its brow 
         <br><br>- D.H. Lawrence`
       }
@@ -763,8 +768,9 @@ const combinaties = [
   {
     input: ["Zwavel", "Magmadamp"],
     hint: `Een bijzonder goedje komt vrij wanneer zwavel zich mengt in de chemische soep van magmadamp.`,
+    hint_en: `A rather remarkable substance arises when sulfur is stirred into the chemical soup of magma vapour.`,
     output: [
-      { naam: "Kwik", icoon: "icons/Kwik.png", map: "Chemie", 
+      { naam: "Kwik", naam_en: "Mercury", icoon: "icons/Kwik.png", map: "Chemie", 
         quote: `Mercury contains all that the Sages seek; it dissolves, softens, and extracts the soul from the body
         <br><br>- Edward Kelley`
       }
@@ -776,9 +782,10 @@ const combinaties = [
       ["IJs", "Warmte"], ["Vuur", "IJs"]
     ],
     hint: `Nu zijn de omstandigheden juist om water te laten vloeien.`,
+    hint_en: `Now the conditions are wildly perfect to let the water flow.`,
     tijd: 4_400_000_000,
     output: [
-      { naam: "Water", icoon: "icons/Water.png", map: "Water",
+      { naam: "Water", naam_en: "Water", icoon: "icons/Water.png", map: "Water",
         quote: `Water is the softest thing, yet it can penetrate mountains and earth. 
         This shows clearly the principle of softness overcoming hardness 
         <br><br>- Lao Tzu`
@@ -786,8 +793,9 @@ const combinaties = [
     ],
     uitleg: {
       threshold: {
-        titel: "Water op Aarde", 
-        tekst: `Je moet eerst nog wat meer halen...<br>`,
+        titel: "Water op Aarde", titel_en: "Water on Earth", 
+        tekst: `Je moet eerst nog wat meer halen...<br>`, 
+        tekst_en: `You still need to create a bit more first...<br>`,
         requirements: ["Radioactiviteit", "Sterrenstelsel", "Zwart Gat", "Magnetisme",
                        "Neptunus", "Uranus", "Saturnus", "Jupiter",
                        "Mars", "De Aarde", "De Maan", "Venus", "Mercurius", 
@@ -795,7 +803,7 @@ const combinaties = [
       },
       normal: {
         achtergrond: "afb/wateropaarde.png",
-        titel: "WATER OP AARDE",
+        titel: "WATER OP AARDE", titel_en: "WATER ON EARTH", 
         tekst: `
           <span>4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
           van vloeibaar water...</span>
@@ -818,14 +826,38 @@ const combinaties = [
           al het water daar is bevroren. Aarde kon meer broeikasgassen van de vulkanen vasthouden en zo veranderde Aarde
           in één grote waterbol zonder land. Dit duurde 400 miljoen jaar, tot vulkanen en bergen nieuw land hadden gevormd.
           </span>`,
+
+        tekst_en: `
+          <span>4.4 billion years ago, the atmosphere stabilised, allowing water-rich gases to transition into a liquid 
+          state...</span>
+          <br><br>
+          <span>Wherever lava reached the Earth's surface, it pumped water-rich gases into the fragile atmosphere. Upon
+          cooling, these gases condensed into liquid water. In this process, electrons orbit not one, but two atomic 
+          nuclei, sharing their electromagnetic charge in what is known as a covalent bond. The asymmetrical water 
+          molecule is formed by two small hydrogen atoms and one larger oxygen atom. This unique shape causes an uneven
+          distribution of negative and positive charges across the molecule's surface, prompting hydrogen atoms to shift
+          toward the oxygen atoms of neighbouring molecules - resulting in a fluid substance.</span>
+          <br><br>
+          <span>As the atmosphere recovered, water no longer escaped freely into space; instead, it became subject to the
+          Earth's gravitational pull. Rain could now fall onto the nascent Earth's crust, while the cooling of lava
+          released even more water vapour. This is how the atmosphere - or vapour sphere - came into being. Thanks to 
+          plate tectonics, lava continued to find its way to the surface, ensuring that the cooling process did not 
+          continue until all the water had frozen solid.</span> 
+          <br><br>
+          <span>As the water cycle began to take shape, the early primordial atmosphere was, for a long time, not yet
+          robust enough to retain all its greenhouse gases. Mars, for instance is smaller than Earth and possesses
+          weaker gravity, which is why all the water there has frozen. The Earth was able to retain more greenhouse
+          gases from volcanoes, and in this way, it transformed into one vast water world with no land. This state lasted
+          for 400 million years, until volcanoes and mountains had formed new land.</span>`
       }
     }
   },
   {
     input: ["IJs", "IJs"],
     hint: `We moeten ook een plek hebben waar het altijd koud is en vol ijs.`,
+    hint_en: `We also need to have a place that is always cold and full of ice.`,
     output: [
-      { naam: "Poolgebied", icoon: "icons/Poolgebied.png", map: "Landschap", 
+      { naam: "Poolgebied", naam_en: "The Arctic", icoon: "icons/Poolgebied.png", map: "Landschap", 
         quote: `The only place on Earth that is still as it should be. May we never tame it
         <br><br>- Andrew Denton`
       }
@@ -833,9 +865,9 @@ const combinaties = [
     uitleg: {
       thresholdElement: {
         naam: "Water", 
-        titel: "Te vroeg",
-        tekst: `Probeer opnieuw als de Aarde wat meer is afgekoeld...
-        <br><br>Eerst nodig: water.`
+        titel: "Te vroeg", titel_en: "Too early", 
+        tekst: `Probeer opnieuw als de Aarde wat meer is afgekoeld... <br><br>Eerst nodig: water.`,
+        tekst_en: `Try again once the Earth has cooled down a bit more... <br><br>Required first: water.`
       }
     }
   },
@@ -844,8 +876,9 @@ const combinaties = [
       ["Water", "IJzer"], ["Lucht", "IJzer"]
     ],
     hint: `Oei, dat gebeurt er dus als ijzer oxideert...`,
+    hint_en: `Oops, so that's what happens when iron oxidizes...`,
     output: [
-      { naam: "Roest", icoon: "icons/Roest.png", map: "Chemie", 
+      { naam: "Roest", naam_en: "Rust", icoon: "icons/Roest.png", map: "Chemie", 
         quote: `None can destroy iron, but its own rust can. Likewise none can destroy a person, but its own mindset can
         <br><br>- Ratan Tata`
       }
@@ -854,8 +887,9 @@ const combinaties = [
   {
     input: ["Vuur", "Water"],
     hint: `Een big splash, vuur gedoofd en de energie kringelt omhoog...`,
+    hint_en: `A big splash, fire extinguished and the energy curling upward...`,
     output: [
-      { naam: "Damp", icoon: "icons/Damp.png", map: "Lucht", 
+      { naam: "Damp", naam_en: "Vapour", icoon: "icons/Damp.png", map: "Lucht", 
         quote: `Enthusiasm is the steam that drives the engine
         <br><br>- Napoleon Hill`
       }
