@@ -1,16 +1,16 @@
 // ---------------- DATA ------------------
 const mappen = [
   {
-    naam: "Heelal", icoon: "icons/Heelal.png", 
+    naam: "Heelal", naam_en: "Universe", icoon: "icons/Heelal.png", 
     elementen: [
-      { naam: "Oerknal", icoon: "icons/Oerknal.png" }
+      { naam: "Oerknal", naam_en: "Big Bang", icoon: "icons/Oerknal.png" }
     ]
   },
   {
-    naam: "Krachten", icoon: "icons/Krachten.png",
+    naam: "Krachten", naam_en: "Forces", icoon: "icons/Krachten.png",
     elementen: [
-      { naam: "Warmte", icoon: "icons/Warmte.png" },
-      { naam: "Kou", icoon: "icons/Kou.png" }
+      { naam: "Warmte", naam_en: "Heat", icoon: "icons/Warmte.png" },
+      { naam: "Kou", naam_en: "Cold", icoon: "icons/Kou.png" }
     ]
   }
 ];
