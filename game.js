@@ -51,6 +51,26 @@ const INTRO_HINTS = {
   }
 };
 
+const veld = (obj, basis) =>
+  (TAAL === "en" && obj && obj[basis + "_en"] != null) ? obj[basis + "_en"] : (obj ? obj[basis] : undefined);
+
+const naamVan = el => {
+  if (TAAL === "en" && el && el.naam_en != null) return el.naam_en;
+  if (TAAL === "en" && el && el.naam && MAP_NAMEN[el.naam]) return MAP_NAMEN[el.naam];
+  return el ? el.naam : undefined;
+};
+const hintVan  = c  => veld(c, "hint");
+const versVan  = c  => veld(c, "vers");
+const titelVan = u  => veld(u, "titel");
+const tekstVan = u  => veld(u, "tekst");
+
+// ----- MAP-NAMEN (NL-sleutel → EN) -----
+const MAP_NAMEN = {
+  Heelal: "Universe",
+  Krachten: "Forces",
+  Chemie: "Chemistry"
+};
+
 // ----- DOM -----
 const closedContainer = document.getElementById("closed-container");
 const leftSide = document.getElementById("left-side");
@@ -96,6 +116,7 @@ if (savedState) {
       if (!map) {
         map = {
           naam: newEl.map,
+          naam_en: MAP_NAMEN[newEl.map] || null,
           icoon: groepsIconen[newEl.map] || "icons/default.png",
           elementen: []
         };
@@ -486,7 +507,7 @@ function checkCombination() {
     });
   });
 
-  const versText = firstMatch.vers || null;
+  const versText = versVan(firstMatch);
 
   // SPECIAL THRESHOLD ELEMENT?
   const hasThreshold = !!firstMatch.uitleg?.threshold;
@@ -545,11 +566,11 @@ function showThresholdExplanation(threshold, missing, callback) {
 
   const title = document.createElement("div");
   title.className = "explanation-title";
-  title.innerHTML = threshold.titel;
+  title.innerHTML = titelVan(threshold);
 
   const text = document.createElement("div");
   text.className = "explanation-text";
-  text.innerHTML = threshold.tekst;
+  text.innerHTML = tekstVan(threshold);
 
   if (missing && missing.length > 0) {
     const grid = document.createElement("div");
@@ -646,8 +667,8 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
 
     const title = document.createElement("div");
     title.className = "result-title";
-    title.innerHTML = el.naam;
-    title.lang = "nl";
+    title.innerHTML = naamVan(el);
+    title.lang = TAAL;
 
     const quote = document.createElement("div");
     quote.className = "result-quote";
@@ -932,9 +953,9 @@ function renderClosed() {
     
     // Permanente tooltip op mobiel
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        container.appendChild(makeCurvedLabel(map.naam, 60));
+        container.appendChild(makeCurvedLabel(naamVan(map), 60));
     } else {
-        attachTooltip(img, map.naam);
+        attachTooltip(img, naamVan(map));
     }
     
     grid.appendChild(container);
@@ -1181,9 +1202,9 @@ function renderSide(parentContainer, map, side) {
 
   // Tooltip voor de map-title
   if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-      titleContainer.appendChild(makeCurvedLabel(map.naam, 60));
+      titleContainer.appendChild(makeCurvedLabel(naamVan(map), 60));
   } else {
-      attachTooltip(titleImg, map.naam);
+      attachTooltip(titleImg, naamVan(map));
   }
   titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
@@ -1255,9 +1276,9 @@ function renderSide(parentContainer, map, side) {
     
     // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
-        elContainer.appendChild(makeCurvedLabel(el.naam, mobielIcoon));
+        elContainer.appendChild(makeCurvedLabel(naamVan(el), mobielIcoon));
     } else {
-        attachTooltip(img, el.naam);
+        attachTooltip(img, naamVan(el));
     }
         elContainer.appendChild(img);
         grid.appendChild(elContainer);
@@ -1408,7 +1429,7 @@ function showHint() {
   const hint = hintDeck.shift();
   if (!hint) return;
 
-  hintBubble.innerHTML = hint.hint;
+  hintBubble.innerHTML = hintVan(hint);
   hintBubble.classList.add("visible");
   hintVisible = true;
 
