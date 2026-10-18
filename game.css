@@ -460,6 +460,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 
 #superhint-button.cooldown::before {
+  content: none;
   animation: none !important;
 }
 
