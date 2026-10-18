@@ -18,6 +18,7 @@ const timelineFill = document.getElementById("timeline-fill");
 const timelineLabel = document.getElementById("timeline-label");
 
 // ----- TAAL -----
+document.body.classList.add("lang-" + TAAL);
 const TAAL = localStorage.getItem("creation-taal") || "nl";
 
 const R = RESET_TEKSTEN[TAAL];
