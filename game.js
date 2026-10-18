@@ -19,6 +19,17 @@ const timelineLabel = document.getElementById("timeline-label");
 
 // ----- TAAL -----
 const TAAL = localStorage.getItem("creation-taal") || "nl";
+
+const R = RESET_TEKSTEN[TAAL];
+document.getElementById("reset-title").textContent = R.titel;
+document.getElementById("reset-text").textContent = R.vraag;
+document.getElementById("reset-ja").textContent = R.ja;
+document.getElementById("reset-nee").textContent = R.nee;
+const RESET_TEKSTEN = {
+  nl: { titel: "Resetten", vraag: "Weet je zeker dat je je voortgang wilt resetten?", ja: "Ja", nee: "Nee" },
+  en: { titel: "Reset", vraag: "Are you sure you want to reset your progress?", ja: "Yes", nee: "No" }
+};
+
 const INTRO_HINTS = {
   nl: {
     openGroep: "open een groep",
