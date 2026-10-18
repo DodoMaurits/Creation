@@ -147,6 +147,14 @@ body {
   background: rgba(255,255,255,0.8);
 }
 
+.taal-vlag {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 3px;        /* nette afgeronde hoekjes, past bij je stijl */
+}
+
 @media (max-width: 900px) {
                 /* ---------------- MOBIEL ---------------- */
                 body {
