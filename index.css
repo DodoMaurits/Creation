@@ -99,7 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   width: clamp(280px, 30vw, 400px);
-  padding: 40px 50px;
+  padding: 70px 50px;
   gap: 20px;
 }
 
