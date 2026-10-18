@@ -64,11 +64,40 @@ const versVan  = c  => veld(c, "vers");
 const titelVan = u  => veld(u, "titel");
 const tekstVan = u  => veld(u, "tekst");
 
-// ----- MAP-NAMEN (NL-sleutel → EN) -----
 const MAP_NAMEN = {
   Heelal: "Space",
   Krachten: "Forces",
-  Chemie: "Chemistry"
+  Chemie: "Chemistry",
+  Lucht: "Air",
+  Water: "Water",
+  Vuur: "Fire",
+  Aarde: "Earth",
+  Landschap: "Scenery",
+  "Pril leven": "Cellular life",
+  Biologie: "Biology",
+  Waterdieren: "Aquatic animals",
+  Brein: "Brain",
+  Vissen: "Fish",
+  Geleedpotigen: "Arthropods",
+  "Klein landleven": "Small land creatures",
+  Planten: "Plants",
+  Smaakmakers: "Flavourings",
+  Materialen: "Materials",
+  Bomen: "Trees",
+  Reptielen: "Reptiles",
+  Samenleving: "Society",
+  Zoogdieren: "Mammals",
+  Vogels: "Birds",
+  Bloemen: "Flowers",
+  Genotwaren: "Indulgent goods",
+  Fruit: "Fruit",
+  Groenten: "Vegetables",
+  Granen: "Cereals",
+  Zaden: "Seeds",
+  Carnivoren: "Carnivores",
+  Primaten: "Primates",
+  Hoefdieren: "Ungulates",
+  Uitvindingen: "Inventions"
 };
 
 // ----- DOM -----
