@@ -415,7 +415,7 @@ body {
   position: fixed;
   width: 110px;
   height: auto;
-  opacity: 0.6;
+  opacity: 0.9;
   pointer-events: none;
   z-index: 9600;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.5));
