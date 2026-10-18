@@ -127,6 +127,23 @@ function preloadAllIcons() {
   });
 }
 
+// ----- TAAL KNOP -----
+const taalButton = document.getElementById("taal-button");
+const VLAGGEN = {
+  nl: "afb/Vlag_NL.png",
+  en: "afb/Vlag_EN.jpg"
+};
+function zetTaalKnopVlag() {
+  taalButton.innerHTML = `<img src="${VLAGGEN[TAAL]}" alt="taal">`;
+}
+zetTaalKnopVlag();
+taalButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const nieuweTaal = TAAL === "nl" ? "en" : "nl";
+  localStorage.setItem("creation-taal", nieuweTaal);
+  window.location.reload();
+});
+
 // ----- MOBIELE VERSIE TOOLTIPS -----
 function attachTooltip(el, text) {
   let tooltip;
