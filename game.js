@@ -244,7 +244,7 @@ function updateIntroHint() {
     offsetY = -120;
   } else {
     // beide open: combinatie-hint
-    hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
+    hintText = "sleep of klik op twee elementen<br>om een nieuwe creatie te maken";
     offsetY = -50;
   }
 
