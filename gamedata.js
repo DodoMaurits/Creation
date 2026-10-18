@@ -110,9 +110,9 @@ const combinaties = [
         Still, astronomers observe the results of this transition phase today: the cosmic background radiation - energy
         that was released when photons were finally able to escape the plasma.</span>
         <br><br>
-        <span>Atoms each have a small nucleas at their centre, consisting of one or more positvely charged protons and
+        <span>Atoms each have a small nucleus at their centre, consisting of one or more positively charged protons and
         zero or more neutral neutrons. Orbiting the nucleus at a significant distance are negatively charged electrons 
-        - one for every positvely charged proton in the nucleus. They are held together by the electromagnetic force
+        - one for every positively charged proton in the nucleus. They are held together by the electromagnetic force
         within a region commonly referred to as the electron cloud. It is within this region that chemistry takes place.
         </span> 
         <br><br>
