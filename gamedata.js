@@ -65,24 +65,25 @@ const combinaties = [
   {
     input: ["Quarks", "Kou"],
     hint: `Kou remt chaotische energie af... benieuwd wat de kleine bouwstenen gaan doen`,
+    hint_en: `Cold slows down chaotic energy... curious what the tiniest building stones will do`, 
     tijd: 13_700_620_000,
     output: [
-      { naam: "Atomen", icoon: "icons/Atomen.png", map: "Chemie",
+      { naam: "Atomen", naam_en: "Atoms", icoon: "icons/Atomen.png", map: "Chemie",
         quote: `In reality, nothing but atoms and the void 
         <br><br>- Democritos`
       }
     ],
     uitleg: {
       threshold: {
-        titel: "Quarks op Aarde", 
-        tekst: `Je moet eerst nog wat meer halen...<br>`,
+        titel: "Quarks op Aarde", titel_en: "Quarks on Earth",
+        tekst: `Je moet eerst nog wat meer halen...<br>`, tekst_en: `You need to get a bit more first...<br>`,
         requirements: ["Quarks"]
       },
       normal: {
         achtergrond: "afb/atoomvorming.jpg",
-        titel: "ATOOMVORMING",
+        titel: "ATOOMVORMING", titel_en: "ATOM FORMATION",
         tekst: `
-        <span>380 duizend jaar na de oerknal bereikte het heelal een temperatuur van 2727 graden.</span>
+        <span>380 duizend Aardse jaren na de oerknal bereikte het heelal een temperatuur van 2727 graden.</span>
         <br><br>
         <span>Chaos koelde zo veel af dat protonen, elektronen en neutronen met elkaar fuseerden tot energieneutrale 
         structuren, die op lange termijn stabiel bleven. Veel materie werd elektrisch neutraal, waardoor zichtbaar plasma 
@@ -99,6 +100,26 @@ const combinaties = [
         opkomst van geheel nieuwe vormen van materie. De drijvende kracht achter al deze activiteit is het feit dat 
         elektronen negatieve ladingen hebben en elkaar afstoten, maar ze worden aangetrokken door de positieve ladingen 
         van protonen, hetzij in hun eigen atoom, hetzij in naburige atomen.</span>`,
+
+        tekst_en: `
+        <span>380.000 Earth years after the Big Bang, the universe reached a temperature of 2727 degrees.</span>
+        <br><br>
+        <span>The chaotic state cooled down sufficiently for protons, electrons and neutrons to fuse into electrically 
+        neutral structures remaining stable for the long term. A lot of matter turned electrically neutral, causing the
+        visible plasma to dissipate. Photons began to flow freely through the electrically neutral nebula and dark matter.
+        Still, astronomers observe the results of this transition phase today: the cosmic background radiation - energy
+        that was released when photons were finally able to escape the plasma.</span>
+        <br><br>
+        <span>Atoms each have a small nucleas at their centre, consisting of one or more positvely charged protons and
+        zero or more neutral neutrons. Orbiting the nucleus at a significant distance are negatively charged electrons 
+        - one for every positvely charged proton in the nucleus. They are held together by the electromagnetic force
+        within a region commonly referred to as the electron cloud. It is within this region that chemistry takes place.
+        </span> 
+        <br><br>
+        <span>Bonds between protons and electrons are continuously made and split up, resulting in the emergence of 
+        entirely new forms of matter. The driving force behind all this activity is the fact that electrons - which 
+        carry a negative charge - repel one another, yet are simultaneously attracted to the positive charges of protons, 
+        both within the same atom as in their neighbouring atoms.</span>`,
       }
     }
   },
