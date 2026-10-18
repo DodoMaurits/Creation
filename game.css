@@ -132,7 +132,7 @@ body {
   z-index: 5000;
 }
 
-body.lang-en #reset-button:hover::after { content: "Start over"; }
+body.lang-en #reset-button:hover::after { content: "Start again"; }
 
 #reset-button svg {
   width: 20px;
