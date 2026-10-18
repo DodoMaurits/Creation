@@ -3,21 +3,22 @@ const combinaties = [
   {
     input: ["Oerknal", "Kou"],
     hint: `Hm.. Wat zal er gebeuren wanneer energie de ruimte krijgt? Afkoelen dus...`,
+    hint_en: `Hmm.. What will happen when energy gets some space? Cooling down, so to speak...`,
     tijd: 13_800_000_000,
     output: [
-      { naam: "Zwaartekracht", icoon: "icons/Zwaartekracht.png", map: "Krachten",
+      { naam: "Zwaartekracht", naam_en: "Gravity", icoon: "icons/Zwaartekracht.png", map: "Krachten",
         quote: `Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion 
         <br><br>- Isaac Newton`
       },
-      { naam: "Straling", icoon: "icons/Straling.png", map: "Krachten",
+      { naam: "Straling", naam_en: "Radiation", icoon: "icons/Straling.png", map: "Krachten",
         quote: `A compassionate heart radiates rays of beauty that remove the clouds of million hearts 
         <br><br>- Amit Ray`
       },
-      { naam: "Quarks", icoon: "icons/Quarks.png", map: "Chemie",
+      { naam: "Quarks", naam_en :"Quarks", icoon: "icons/Quarks.png", map: "Chemie",
         quote: `Every atom in your body is the same quark in different places at the same moment in time 
         <br><br>- David Eagleman`
       },
-      { naam: "Elektriciteit", icoon: "icons/Elektriciteit.png", map: "Krachten",
+      { naam: "Elektriciteit", naam_en: "Electricity", icoon: "icons/Elektriciteit.png", map: "Krachten",
         quote: `We're electrical items and when we die the electricity goes somewhere else 
         <br><br>- Dominic Monaghan`
       }
@@ -25,9 +26,11 @@ const combinaties = [
     vers: `Hebben degenen die niet geloven niet gezien dat de Hemelen en de Aarde één geheel waren, 
     en Wij ze vervolgens van elkaar hebben gescheiden?
     <br><br>De Profeten (21:30)`,
+    vers_en: `Do not the Unbelievers see that the heavens and the earth were joined together, 
+    before We clove them asunder? <br><br>The Prophets (21:30)`,
     uitleg: {
       normal: {
-        titel: "Symmetriebreking",
+        titel: "Symmetriebreking", titel_en: "Symmetry breaks",
         tekst: `In een mum van tijd daalde de temperatuur tot 10 miljoen graden - te vergelijken met het binnenste van
         een ster. De oerknal was ten einde maar, zoals water bevriest onder nul, was er viermaal een drempel overschreden. 
         De 4 natuurkrachten waren geboren...
@@ -45,6 +48,8 @@ const combinaties = [
         <br><br>Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
         elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's 
         op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
+        tekst_en: `In
+        `
       }
     }
   },
