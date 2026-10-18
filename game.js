@@ -32,6 +32,12 @@ document.getElementById("reset-text").textContent = R.vraag;
 document.getElementById("reset-ja").textContent = R.ja;
 document.getElementById("reset-nee").textContent = R.nee;
 
+const TIJD_TEKSTEN = {
+  nl: { miljard: "miljard jaar geleden", miljoen: "miljoen jaar geleden", duizend: "duizend jaar geleden", jaar: "jaar geleden", locale: "nl-NL" },
+  en: { miljard: "billion years ago", miljoen: "million years ago", duizend: "thousand years ago", jaar: "years ago", locale: "en-GB" }
+};
+const TT = TIJD_TEKSTEN[TAAL];
+
 const INTRO_HINTS = {
   nl: {
     openGroep: "open een groep",
@@ -866,14 +872,14 @@ function updateTimelineLabel() {
 
   if (currentTime >= 1_000_000_000) {
     labelText = (currentTime / 1_000_000_000)
-      .toLocaleString("nl-NL", { maximumFractionDigits: 3 }) 
-      + " miljard jaar geleden";
+      .toLocaleString(TT.locale, { maximumFractionDigits: 3 }) 
+      + " " + TT.miljard;
   } else if (currentTime >= 1_000_000) {
-    labelText = Math.round(currentTime / 1_000_000) + " miljoen jaar geleden";
+    labelText = Math.round(currentTime / 1_000_000) + " " + TT.miljoen;
   } else if (currentTime >= 12_000) {
-    labelText = Math.round(currentTime / 1_000) + " duizend jaar geleden";
+    labelText = Math.round(currentTime / 1_000) + " " + TT.duizend;
   } else if (currentTime >= 1) {
-    labelText = Math.round(currentTime / 1) + " jaar geleden";
+    labelText = Math.round(currentTime / 1) + " " + TT.jaar;
   }
 
   timelineLabel.textContent = labelText;
