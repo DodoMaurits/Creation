@@ -149,10 +149,11 @@ body {
 
 .taal-vlag {
   width: 24px;
-  height: auto;
+  height: 16px;
+  object-fit: cover;
   vertical-align: middle;
   margin-right: 8px;
-  border-radius: 3px;        /* nette afgeronde hoekjes, past bij je stijl */
+  border-radius: 3px;
 }
 
 @media (max-width: 900px) {
