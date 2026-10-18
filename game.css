@@ -356,7 +356,6 @@ body.lang-en #reset-button:hover::after { content: "Start over"; }
 }
 
 #superhint-button:hover::after {
-  content: "Superhint";
   position: absolute;
   top: 50px;
   left: 50%;
@@ -369,6 +368,9 @@ body.lang-en #reset-button:hover::after { content: "Start over"; }
   white-space: nowrap;
   z-index: 5000;
 }
+
+#superhint-button:hover::after { content: "Superhint"; ... } 
+body.lang-en #superhint-button:hover::after { content: "Show"; }
 
 #hint-button span,
 #superhint-button span {
