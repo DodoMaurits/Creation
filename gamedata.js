@@ -34,22 +34,30 @@ const combinaties = [
         tekst: `In een mum van tijd daalde de temperatuur tot 10 miljoen graden - te vergelijken met het binnenste van
         een ster. De oerknal was ten einde maar, zoals water bevriest onder nul, was er viermaal een drempel overschreden. 
         De 4 natuurkrachten waren geboren...
-        
         <br><br>Vrijwel meteen brak de zwaartekracht. Tegen de uitdijing van energie in, houdt deze natuurkracht 
         energie en materie bij elkaar, als een natuurlijke aantrekkingskracht. 
-        
         <br><br>Onder de 10<sup>28</sup> graden brak de sterke kernkracht. Op miniscule afstanden bindt het de kleinste 
         deeltjes, genaamd quarks, tot atoomkernen.
-        
         <br><br>Onder de 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende 
         materie en massaloze straling. Massa remt beweging af, maar straling kan op lichtsnelheid bewegen en vormen 
         aannemen als radiogolven, uv-straling, licht en kleur.
-        
         <br><br>Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
         elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's 
         op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
-        tekst_en: `In
-        `
+        
+        tekst_en: `In a split second, the temperature dropped to 10 million degrees - which is comparable to the interior
+        of stars. The Big Bang had come to an end, but much like water freezing below zero, a threshold had been crossed
+        four times. Each giving birth to one of the four forces of nature. 
+        <br><br>Gravity emerged almost immediately. Countering the expansion of energy, this force acts as a natural 
+        attraction, holding energy and matter together.
+        <br><br>Below 10<sup>28</sup> degrees, the strong nuclear force emerges. On the tiniest distances, it binds the
+        smallest particles called quarks into atomic nuclei.
+        <br><br>Below 10<sup>15</sup> degrees, the remaining electroweak force splits into mass-bearing matter and nameless
+        radiation. While mass slows down movement, radiation can travel at the speed of light, taking forms such as radio
+        waves, ultraviolet radiation, light and colour.
+        <br><br>Below 10<sup>13</sup> degrees, the electroweak force breaks apart into the weak nuclear force and the
+        electromagnetic force. The weak nuclear force facilitates the conversion of energy and the exchange of charge
+        and mass, while plasmas - striving toward neutral combinations - crackle like electricity.`
       }
     }
   },
