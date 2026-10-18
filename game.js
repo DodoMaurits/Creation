@@ -111,8 +111,8 @@ const norm = s => String(s).trim().toLowerCase();
 const pairs = input => (Array.isArray(input[0]) ? input : [input]);
 const inMap = n => mappen.some(m => m.elementen.some(e => e.naam === n));
 const known = n =>
-  unlockedElements.has(norm(n)) ||
-  mappen.some(m => m.elementen.some(e => norm(e.naam) === norm(n)));
+  unlockedElements.has(n) ||
+  mappen.some(m => m.elementen.some(e => e.naam === n));
 
 hintButton.onclick = showHint;
 
@@ -497,15 +497,15 @@ function checkCombination() {
   // 🔹 Check threshold requirements
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
-    const normalizedUnlocked = [
+    const unlockedNamen = [
       ...new Set([
         ...unlockedElements,
         ...mappen.flatMap(m => m.elementen.map(e => e.naam))
       ])
-    ].map(e => e.trim().toLowerCase());
-      
+    ];
+
     const missing = requirements.filter(r =>
-      !normalizedUnlocked.includes(r)
+      !unlockedNamen.includes(r)
     );
     
     if (missing.length > 0) {
