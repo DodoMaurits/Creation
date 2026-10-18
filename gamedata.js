@@ -119,7 +119,7 @@ const combinaties = [
         <span>Bonds between protons and electrons are continuously made and split up, resulting in the emergence of 
         entirely new forms of matter. The driving force behind all this activity is the fact that electrons - which 
         carry a negative charge - repel one another, yet are simultaneously attracted to the positive charges of protons, 
-        both within the same atom as in their neighbouring atoms.</span>`,
+        both within the same atom as in their neighbouring atoms.</span>`
       }
     }
   },
