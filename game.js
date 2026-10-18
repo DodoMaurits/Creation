@@ -477,7 +477,7 @@ function checkCombination() {
     );
     
     if (missing.length > 0) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {
+      showThresholdExplanation(firstMatch.uitleg.threshold, null, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
         selected = [];
       });
@@ -588,7 +588,7 @@ function showThresholdExplanation(threshold, missing, callback) {
 
   const button = document.createElement("button");
   button.className = "create-button";
-  button.textContent = "Ga verder";
+  button.textContent = TAAL === "en" ? "Continue" : "Ga verder";
   button.onclick = () => {
     overlay.remove();
     if (callback) callback(); // voer callback uit
