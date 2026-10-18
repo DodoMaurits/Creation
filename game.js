@@ -79,7 +79,7 @@ if (savedState) {
 renderClosed();
 requestAnimationFrame(() => {
     updateClosedContainer();
-    if (!savedState && unlockedElements.size <= 3) showIntroHint();
+    if (!savedState && unlockedElements.size <= 3) updateIntroHint();
 });
 
 updateTimelineLabel();
@@ -212,42 +212,41 @@ function makeCurvedLabel(text, iconSize) {
 }
 
 // ----- INTRO HINTS -----
-function showIntroHint() {
-  if (introStep > 2) return;
+// ----- INTRO HINTS (toestand-gedreven) -----
+let introKlaar = false;   // combinatie-hint eenmaal afgerond?
 
-  // verwijder oude hints eerst
+function updateIntroHint() {
+  if (introKlaar) return;
+
+  // oude hint weghalen
   document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
 
-  const maps = Array.from(document.querySelectorAll(".icon.map"));
-  const elements = Array.from(document.querySelectorAll(".icon.element"));
+  const openAantal = (openLeft ? 1 : 0) + (openRight ? 1 : 0);
 
-  if ((introStep === 0 || introStep === 1) && maps.length === 0) {
-    requestAnimationFrame(showIntroHint);
-    return;
-  }
-
-  let target = null;
   let hintText = "";
+  let target = null;
   let offsetY = -80;
-  let clickableEls = [];
 
-  if (introStep === 0) {
+  if (openAantal === 0) {
+    const maps = Array.from(document.querySelectorAll(".icon.map"));
+    if (maps.length === 0) { requestAnimationFrame(updateIntroHint); return; }
     maps.forEach(map => map.dataset.name = map.alt || map.title || "");
-    clickableEls = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
-    target = clickableEls[0] || maps[0];
+    const start = maps.filter(map => map.dataset.name === "Heelal" || map.dataset.name === "Krachten");
+    target = start[0] || maps[0];
     hintText = "open een groep";
     offsetY = -140;
-  } else if (introStep === 1) {
-    target = maps[1] || maps[0];
+  } else if (openAantal === 1) {
+    // gesloten mappen staan aan de overgebleven kant
+    const maps = Array.from(document.querySelectorAll(".icon.map"));
+    if (maps.length === 0) { requestAnimationFrame(updateIntroHint); return; }
+    target = maps[0];
     hintText = "open nog een groep";
     offsetY = -120;
-    clickableEls = [target];
-    } else if (introStep === 2) {
-      target = null;
-      hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
-      offsetY = -50;
-      clickableEls = elements;
-    }
+  } else {
+    // beide open: combinatie-hint
+    hintText = "klik op oerknal en klik op kou<br>om een combinatie te maken";
+    offsetY = -50;
+  }
 
   const wrapper = document.createElement("div");
   wrapper.className = "intro-wrapper fade-in";
@@ -263,17 +262,19 @@ function showIntroHint() {
     wrapper.style.top = window.innerHeight / 2 + offsetY + "px";
     wrapper.style.textAlign = "center";
   }
-
   document.body.appendChild(wrapper);
-  if (introStep === 2) {
-    const checkResultOverlay = setInterval(() => {
+
+  // combinatie geslaagd? → intro klaar
+  if (openAantal === 2 && !document.getElementById("result-overlay")) {
+    const check = setInterval(() => {
       if (document.getElementById("result-overlay")) {
-        wrapper.remove();
-        introStep++;
-        clearInterval(checkResultOverlay);
+        document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
+        introKlaar = true;
+        clearInterval(check);
       }
     }, 50);
   }
+}
 
   // functie om wrapper te verwijderen + volgende hint
   function nextStep() {
@@ -1027,6 +1028,7 @@ function openMap(map, clickedImg) {
   }
   renderSide(container, map, side);
   updateClosedContainer();
+  updateIntroHint();
 }
 
 // ----- CLOSE MAP -----
@@ -1053,7 +1055,8 @@ function closeMap(side) {
 
     container.classList.add("hidden");
 
-    updateClosedContainer(); // herbereken positie closed-maps
+    updateClosedContainer();
+    updateIntroHint();
   }, 300);
 }
 
