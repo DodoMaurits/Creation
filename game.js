@@ -138,23 +138,26 @@ if (savedState) {
   unlockedElements = new Set(savedState.unlocked);
   currentTime = savedState.time;
   timelineStart = savedState.timelineStart;
-  combinaties.forEach(c => {
-    c.output.forEach(newEl => {
-      if (!unlockedElements.has(newEl.naam)) return;
-      let map = mappen.find(m => norm(m.naam) === norm(newEl.map));
-      if (!map) {
-        map = {
-          naam: newEl.map,
-          naam_en: MAP_NAMEN[newEl.map] || null,
-          icoon: groepsIconen[newEl.map] || "icons/default.png",
-          elementen: []
-        };
-        mappen.push(map);
-      }
-      if (!map.elementen.find(e => norm(e.naam) === norm(newEl.naam))) {
-        map.elementen.push(newEl);
-      }
-    });
+  savedState.unlocked.forEach(naam => {
+    let el = null;
+    for (const c of combinaties) {
+      const gevonden = c.output.find(o => norm(o.naam) === norm(naam));
+      if (gevonden) { el = gevonden; break; }
+    }
+    if (!el) return;
+    let map = mappen.find(m => norm(m.naam) === norm(el.map));
+    if (!map) {
+      map = {
+        naam: el.map,
+        naam_en: MAP_NAMEN[el.map] || null,
+        icoon: groepsIconen[el.map] || "icons/default.png",
+        elementen: []
+      };
+      mappen.push(map);
+    }
+    if (!map.elementen.find(e => norm(e.naam) === norm(naam))) {
+      map.elementen.push(el);
+    }
   });
   updateTimelineLabel();
 }
