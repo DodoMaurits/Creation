@@ -113,7 +113,7 @@ if (savedState) {
 renderClosed();
 requestAnimationFrame(() => {
     updateClosedContainer();
-    if (!savedState && unlockedElements.size <= 3) updateIntroHint();
+    if (!document.body.classList.contains("test-mode") && !savedState && unlockedElements.size <= 3) updateIntroHint();
 });
 
 updateTimelineLabel();
