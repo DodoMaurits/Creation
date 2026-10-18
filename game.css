@@ -131,8 +131,8 @@ body {
   z-index: 5000;
 }
 
-body.lang-nl #reset-button:hover::after { content: "Opnieuw beginnen"; }
-body.lang-en #reset-button:hover::after { content: "Start again"; }
+#reset-button:hover::after { content: "Opnieuw beginnen"; ... }
+body.lang-en #reset-button:hover::after { content: "Start over"; }
 
 #reset-button svg {
   width: 20px;
