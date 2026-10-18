@@ -131,7 +131,7 @@ const combinaties = [
     hint: `Een gas kan zo heet worden dat atomen uit elkaar vallen in geladen deeltjes.`,
     hint_en: `Even gasses when heated up can fall apart into charged particles.`,
     output: [
-      { naam: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
+      { naam: "Plasma", naam_en: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
         quote: `Plasma seems to have the kinds of properties one would like for life. It's somewhat like liquid water - 
         unpredictable and thus able to behave in an enormously complex fashion. It could probably carry as much information
         as DNA does
@@ -142,26 +142,32 @@ const combinaties = [
   {
     input: ["Atomen", "Straling"],
     hint: `Hm.. Wat als de straling sterk genoeg is atomen te splitsen?`,
+    hint_em: `Hm.. What if radiation becomes strong enough to split atoms apart?`,
     tijd: 13_700_620_000,
     output: [
-      { naam: "Radioactiviteit", icoon: "icons/Radioactiviteit.png", map: "Krachten",
+      { naam: "Radioactiviteit", naam_en: "Radioactivity", icoon: "icons/Radioactiviteit.png", map: "Krachten",
         quote: `Nuclear power is one hell of a way to boil water 
         <br><br>- Albert Einstein`
       }
     ],
     uitleg: {
       normal: {
-        titel: "Radioactiviteit",
-        tekst: `Gamma-, röntgen- en hoogenergetische uv-straling zijn zo frequent, dat zij genoeg energie hebben om elektronen
-        van atoomkernen te splitsen. Wanneer de frequentie hier hoog genoeg voor is, spreken wij van radioactief.`,
+        titel: "Radioactiviteit", titel_en: "Radioactivity",
+        tekst: `Gamma-, röntgen- en hoogenergetische uv-straling zijn zo frequent, dat zij genoeg energie hebben om
+        elektronen van atoomkernen te splitsen. Wanneer de frequentie hier hoog genoeg voor is, spreken wij van 
+        radioactief.`,
+        tekst_en: `Gamma rays, X-rays and high-energy ultraviolet radiation possess such high frequencies that they 
+        inhabite enough energy to detach electrons from atomic nuclei. When the frequency is high enough for this to 
+        occur, we refer to it as radioactive.`
       }
     }
   },
   {
     input: ["Atomen", "Zwaartekracht"],
     hint: `Laat de bouwstenen elkaar aantrekken, dan zal er pas echt iets zweven...`,
+    hint_en: `When building blocks attract one another, something will truly levitate...`,
     output: [
-      { naam: "Gas", icoon: "icons/Gas.png", map: "Lucht",
+      { naam: "Gas", naam_en: "Gas", icoon: "icons/Gas.png", map: "Lucht",
       quote: `Hydrogen is a light, odorless gas, which, given enough time, turns into people 
       <br><br>- Edward Harrison`
       }
@@ -170,8 +176,9 @@ const combinaties = [
   {
     input: ["Gas", "Kou"],
     hint: `Brrr.. zwevend onder 0 zal het bevriezen`,
+    hint_en: `Brrr.. you know, below zero degrees Celsius, you will be frozen`,
     output: [
-      { naam: "IJs", icoon: "icons/IJs.png", map: "Water",
+      { naam: "IJs", naam_en: "Ice", icoon: "icons/IJs.png", map: "Water",
         quote: `Just as when water is frozen in to a form as ice and then melts so at the time of death, 
         there is no death. The spirit simply changes form
         <br><br>- Frederick Lenz`
@@ -181,16 +188,17 @@ const combinaties = [
   {
     input: ["Gas", "Zwaartekracht"],
     hint: `Hoe meer opeengepakte massa, hoe groter de kans op een ontploffing`,
+    hint_en: `The more mass accumulates, the greater the chance of an explosion`, 
     tijd: 13_600_000_000,
     output: [
-      { naam: "Ster", icoon: "icons/Ster.png", map: "Heelal",
+      { naam: "Ster", naam_en: "Star", icoon: "icons/Ster.png", map: "Heelal",
         quote: `Every star may be a sun to someone 
         <br><br>- Carl Sagan`
       }
     ],
     uitleg: {
       normal: {
-        titel: "A Star Is Born",
+        titel: "A Star Is Born", titel_en: "A Star Is Born", 
         tekst: `Zwaartekracht werd sterker en sterker naarmate massa door afremming dichter bij elkaar kwam. Kubus voor
         kubus werd het heelal korreliger en klonteriger. Bij het botsen van materie kwam opnieuw energie vrij dat lokaal
         temperaturen opdreef. 
@@ -198,6 +206,13 @@ const combinaties = [
         de 10 miljoen graden. Atomen vielen weer uit elkaar en plasma's knetterden weer van elektriciteit, waarbij
         triljoenen protonen zich fuseerden tot heliumkernen. De enorme energie verhit de kern dusdanig dat deze uitzet en 
         tegen de zwaartekracht in duwt. Zie daar, de eerste generatie sterren.`,
+
+        tekst_en: `Gravity grew ever stronger as matter drew closer together when slowing down. Cube by cube, the universe
+        became more granular and clumped. Collisions between matter released energy, driving up local temperatures. 
+        <br><br>These clumps of gas began to generate their own heat, eventually reaching a climax at 10 million degrees. 
+        Atoms broke apart once more, and plasmas crackled with electricity as trillions of protons fused into helium 
+        nuclei. The immense energy heated the core to such an extent that it expanded, pushing outward against the force 
+        of gravity. And there you have it: the first generation of stars.`
       }
     }
   },
@@ -211,8 +226,9 @@ const combinaties = [
       ["Aluminium", "Bliksem"], ["Aluminium", "Bolbliksem"]
     ],
     hint: `... ... ... BOEM!`,
+    hint_en: `... ... ... BOOM!`,
     output: [
-      { naam: "Explosie", icoon: "icons/Explosie.png", map: "Vuur",
+      { naam: "Explosie", naam_en: "Explosion", icoon: "icons/Explosie.png", map: "Vuur",
       quote: `As in an explosion, I would erupt with all the wonderful things I saw and understood in this world
       <br><br>- Boris Pasternak`
       }
@@ -221,8 +237,9 @@ const combinaties = [
   {
     input: ["Ster", "Warmte"],
     hint: `De corona is de extreemhete buitenlaag van de zon, waar het effect van de hitte zichtbaar wordt.`,
+    hint_en: `Corona - the incredible hot outer layer of the Sun, where the effect of heat becomes visible.`,
     output: [
-      { naam: "Zonnewind", icoon: "icons/Zonnewind.png", map: "Vuur",
+      { naam: "Zonnewind", naam_en: "Solar wind", icoon: "icons/Zonnewind.png", map: "Vuur",
         quote: `The solar wind is a continuous outflow of charged particles from the Sun, shaping the space environment 
         throughout the solar system
         <br><br>- Eugene Parker`
@@ -232,13 +249,14 @@ const combinaties = [
   {
     input: ["Ster", "Zwaartekracht"],
     hint: `Uiteindelijk verliest elke ster het gevecht van de natuurkrachten...`,
+    hint_en: `Eventually, every star loses in the battle against the forces of nature...`,
     tijd: 13_600_000_000,
     output: [
-      { naam: "IJzer", icoon: "icons/IJzer.png", map: "Chemie",
+      { naam: "IJzer", naam_en: "Iron", icoon: "icons/IJzer.png", map: "Chemie",
         quote: `Do not wait to strike till the iron is hot but make it hot by striking 
         <br><br>- William Yeats`
       },
-      { naam: "Supernova", icoon: "icons/Supernova.png", map: "Heelal",
+      { naam: "Supernova", naam_en: "Supernova", icoon: "icons/Supernova.png", map: "Heelal",
         quote: `A supernova is one of the most powerful explosions in the universe. 
         It's so luminous, it can be seen across billions of light years. 
         It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime
@@ -247,7 +265,7 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "Supernova",
+        titel: "Supernova", titel_en: "Supernova", 
         tekst: `Wanneer sterren opbranden, bezwijkt de kern onder de eigen zwaartekracht. Door de implosie stijgt de 
         temperatuur van de kern opnieuw, maar ditmaal met koele rode buitenlagen. Als deze rode reus genoeg massa heeft, 
         drukt de zwaartekracht de kern zo sterk samen dat ze heter wordt dan ooit tevoren. Uiteindelijk verandert elke kern 
@@ -259,6 +277,18 @@ const combinaties = [
         <br><br>Als dit niet het geval is, kan de kern in minder dan een seconde door de eigen extreme zwaartekracht met 
         enorm geweld in elkaar smijten, en zo even veel energie produceren als een heel sterrenstelsel, waarbij de 
         laatste zware elementen de ruimte in zijn geslingerd.`,
+
+        tekst_en: `When stars burn out, their cores collapse under their own gravity. This implosion causes the core's 
+        temperature to rise once again, while the sar develops cool, red outer layers. If this 'red giant' possesses 
+        sufficient mass, gravity compresses the core so intensely that it becomes hotter than ever before. Eventually,
+        the core transforms into a compact sphere of iron.
+        <br><br>Successive stages of contraction and expansion continue until no more energy can be generated; at this 
+        point, the outer layers are blown away, leaving behind an extremely dense white dwarf. Gravity may also pull in 
+        matter from a nearby star, triggering an explosion so intense that it can synthesize many of the remaining
+        elements found in the periodic table.
+        <br><br>Alternatively, the core may collapse violently under its own extreme gravity in less than a second - 
+        releasing as much energy as an entire galaxy - and in the process, hurling the final heavy elements out into
+        space.`
       }
     }
   },
@@ -267,12 +297,13 @@ const combinaties = [
       ["Ster", "Gas"], ["Ster", "IJzer"]
     ],
     hint: `Kijk hoe het blijft hangen in een baan rond haar ster...`,
+    hint_en: `Watch how it sticks, orbitting around its star...`,
     output: [
-      { naam: "Asteroïden", icoon: "icons/Asteroïden.png", map: "Heelal",
+      { naam: "Asteroïden", naam_en: "Asteroids", icoon: "icons/Asteroïden.png", map: "Heelal",
         quote: `If you keep chasing shooting stars, you'll never feel the warmth of the sun 
         <br><br>- Ann Marie Frohoff`
       },
-      { naam: "Planeet", icoon: "icons/Planeet.png", map: "Heelal",
+      { naam: "Planeet", naam_en: "Planet", icoon: "icons/Planeet.png", map: "Heelal",
         quote: `Astronomy compels the soul to look upwards and leads us from this world to another 
         <br><br>- Plato`
       }
@@ -281,10 +312,13 @@ const combinaties = [
   {
     input: ["Ster", "Ster"],
     hint: `Zo veel sterren.. het lijken wel witte melkslierten rond het afvoerputje`,
+    hint_en: `So many stars.. as white streaks of milk swirling into the drain`,
     vers: `En de Zon stroomt naar haar Bestemming, <br>dat is de bepaling van de Macht, van de Wijsheid
     <br><br>Ya-Sin (36:38)`,
+    vers_en: `And the Sun flows toward its Destination, and that is the decision of the Power, of the Wisdom.
+    <br><br>Ya-Sin (36:38)`,
     output: [
-      { naam: "Sterrenstelsel", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
+      { naam: "Sterrenstelsel", naam_en: "Galaxy", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
         quote: `Never apologize for burning too brightly or collapsing into yourself every night. 
         That is how galaxies are made 
         <br><br>- Tyler Kent`
@@ -294,8 +328,10 @@ const combinaties = [
   {
     input: ["Supernova", "Zwaartekracht"],
     hint: `Als daar alles implodeert onder de zwaartekracht, prikken we dan geen gaten in ons systeem?`,
+    hint_en: `If we continue imploding everything under the force of gravity, aren't we punching holes in our 
+    own system?`,
     output: [
-      { naam: "Zwart Gat", icoon: "icons/Zwartgat.png", map: "Heelal",
+      { naam: "Zwart Gat", naam_en: "Black Hole", icoon: "icons/Zwartgat.png", map: "Heelal",
         quote: `I believe in black holes. I believe that as the universe empties into nothingness, 
         past and future will smack together in the last swirl around the drain
         <br><br>- Abraham Verghese`
@@ -310,32 +346,61 @@ const combinaties = [
       ["Planeet", "Mercurius"], ["Planeet", "De Maan"]
     ],
     hint: `Wow.. een spectaculaire botsing maakt alles heet en vloeibaar...`,
+    hint_en: `Wow.. a spectacular collision turns everything into flames and liquid...`,
     output: [
-      { naam: "Vuur", icoon: "icons/Vuur.png", map: "Vuur",
+      { naam: "Vuur", naam_en: "Fire", icoon: "icons/Vuur.png", map: "Vuur",
         quote: `Tampering with fire will burn you, even in the coldest regions 
         <br><br>- H.S. Crow`
       },
-      { naam: "Lava", icoon: "icons/Lava.png", map: "Vuur",
+      { naam: "Lava", naam_en: "Lava", icoon: "icons/Lava.png", map: "Vuur",
         quote: `It is the lava of the imagination whose eruption prevents an earthquake
         <br><br>- Lord Byron`
       },
-      { naam: "Rook", icoon: "icons/Rook.png", map: "Lucht",
+      { naam: "Rook", naam_en: "Smoke", icoon: "icons/Rook.png", map: "Lucht",
         quote: `Surely where there's smoke there's fire? No, where there's so much smoke there's smoke
         <br><br>- John Wheeler`
       }
     ]
   },
   {
-    input: ["Planeet", "Gas"],
-    hint: `Ik ken een paar planeten, dat zijn grote vriendelijke gasreuzen`,
+    input: [
+      ["Planeet", "Kou"], ["Planeet", "IJs"]
+    ],
+    hint: `De schoonheid van sommige planeten wil ik gekoeld bewaard...`,
+    hint: `I wish to keep the beauty of some planets preserved, keeping it cool...`,
     tijd: 4_570_000_000,
     output: [
-      { naam: "Jupiter", icoon: "icons/Jupiter.png", map: "Heelal",
+      { naam: "Neptunus", naam_en: "Neptune", icoon: "icons/Neptunus.png", map: "Heelal",
+        quote: `We see it as Columbus saw America from the coast of Spain. 
+        Its movements have been felt, trembling along the far-reaching line of our analysis 
+        with a certainty hardly inferior to that of ocular demonstration 
+        <br><br>- William Herschel`
+      },
+      { naam: "Uranus", naam_en: "Uranus", icoon: "icons/Uranus.png", map: "Heelal",
+        quote: `If the world seems cold to you, kindle fires to warm it 
+        <br><br>- Lucy Larcom`
+      }
+    ],
+    uitleg: {
+      normal: {
+        titel: "IJsplaneten", titel_en: "Ice planets", 
+        tekst: `Onze ijsplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
+        tekst_en: `Our ice planets originated 4.57 billion years ago, just like the rest of our solar system...`,
+      }
+    }
+  },
+  {
+    input: ["Planeet", "Gas"],
+    hint: `Ik ken een paar planeten, dat zijn grote vriendelijke gasreuzen`,
+    hint_en: `I know a few planets; they are big, friendly gas giants`,
+    tijd: 4_570_000_000,
+    output: [
+      { naam: "Jupiter", naam_en: "Jupiter", icoon: "icons/Jupiter.png", map: "Heelal",
         quote: `Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... 
         and he looked every single inch of it 
         <br><br>- Lulu Moore`
       },
-      { naam: "Saturnus", icoon: "icons/Saturnus.png", map: "Heelal",
+      { naam: "Saturnus", naam_en: "Saturn", icoon: "icons/Saturnus.png", map: "Heelal",
         quote: `At depth on Jupiter and Saturn, the pressures are so great that atoms sweat electrons, 
         and the air becomes a metal 
         <br><br>- Carl Sagan`
@@ -343,57 +408,34 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "Gasplaneten",
+        titel: "Gasplaneten", titel_en: "Gas planets", 
         tekst: `Onze gasplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
-      }
-    }
-  },
-  {
-    input: [
-      ["Planeet", "Kou"], ["Planeet", "IJs"]
-    ],
-    hint: `De schoonheid van sommige planeten wil ik gekoeld bewaard...`,
-    tijd: 4_570_000_000,
-    output: [
-      { naam: "Neptunus", icoon: "icons/Neptunus.png", map: "Heelal",
-        quote: `We see it as Columbus saw America from the coast of Spain. 
-        Its movements have been felt, trembling along the far-reaching line of our analysis 
-        with a certainty hardly inferior to that of ocular demonstration 
-        <br><br>- William Herschel`
-      },
-      { naam: "Uranus", icoon: "icons/Uranus.png", map: "Heelal",
-        quote: `If the world seems cold to you, kindle fires to warm it 
-        <br><br>- Lucy Larcom`
-      }
-    ],
-    uitleg: {
-      normal: {
-        titel: "IJsplaneten",
-        tekst: `Onze ijsplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
+        tekst_en: `Our gas planets originated 4.57 billion years ago, just like the rest of our solar system...`,
       }
     }
   },
   {
     input: ["Planeet", "IJzer"],
-    hint: `Als ijzer zijn baan om de zon vindt, kan het wel eens iets moois opleveren...`,
+    hint: `Als ijzer zijn baan om de Zon vindt, kan het wel eens iets moois opleveren...`,
+    hint_en: `When iron finds its way around the Sun, it might result into something splendid...`,
     tijd: 4_570_000_000,
     output: [
-      { naam: "Mars", icoon: "icons/Mars.png", map: "Heelal",
+      { naam: "Mars", naam_en: "Mars", icoon: "icons/Mars.png", map: "Heelal",
         quote: `It was Mars. the God of War, and for me, the fighting man, it had always held the power of 
         irresistible enchantment. As I gazed at it on that far-gone night it seemed to call across the 
         unthinkable void, to lure me to it, to draw me as the lodestone attracts a particle of iron 
         <br><br>- Edgar Rice Burroughs`
       },
-      { naam: "De Aarde", icoon: "icons/De_Aarde.png", map: "Heelal",
+      { naam: "De Aarde", naam: "The Earth", icoon: "icons/De_Aarde.png", map: "Heelal",
         quote: `On Earth there is no heaven, but there are pieces of it 
         <br><br>- Jules Renard`
       },
-      { naam: "Venus", icoon: "icons/Venus.png", map: "Heelal",
+      { naam: "Venus", naam_en: "Venus", icoon: "icons/Venus.png", map: "Heelal",
         quote: `She was the Goddess of Love. It's nice that love comes on first thing in the evening, 
         and goes out last in the morning. Love keeps the light on all night 
         <br><br>- Catherynne Valente`
       },
-      { naam: "Mercurius", icoon: "icons/Mercurius.png", map: "Heelal",
+      { naam: "Mercurius", naam_en: "Mercury", icoon: "icons/Mercurius.png", map: "Heelal",
         quote: `I had rather be Mercury, the smallest among seven, resolving round the sun, 
         than the first among five revolving round Saturn 
         <br><br>- Johann von Goethe`
@@ -401,8 +443,9 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "IJzerplaneten",
+        titel: "IJzerplaneten", titel_en: "Iron planets",
         tekst: `Onze ijzerplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
+        tekst_en: `Our iron planets originated 4.57 billion years ago, just like the rest of our solar system...`,
       }
     }
   },
