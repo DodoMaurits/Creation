@@ -109,7 +109,7 @@ const hintBubble = document.getElementById("hint-bubble");
 
 const norm = s => String(s).trim().toLowerCase();
 const pairs = input => (Array.isArray(input[0]) ? input : [input]);
-const inMap = n => mappen.some(m => m.elementen.some(e => norm(e.naam) === norm(n)));
+const inMap = n => mappen.some(m => m.elementen.some(e => e.naam === n));
 const known = n =>
   unlockedElements.has(norm(n)) ||
   mappen.some(m => m.elementen.some(e => norm(e.naam) === norm(n)));
@@ -141,11 +141,11 @@ if (savedState) {
   savedState.unlocked.forEach(naam => {
     let el = null;
     for (const c of combinaties) {
-      const gevonden = c.output.find(o => norm(o.naam) === norm(naam));
+      const gevonden = c.output.find(o => o.naam === naam); 
       if (gevonden) { el = gevonden; break; }
     }
     if (!el) return;
-    let map = mappen.find(m => norm(m.naam) === norm(el.map));
+    let map = mappen.find(m => m.naam === el.map);
     if (!map) {
       map = {
         naam: el.map,
@@ -155,7 +155,7 @@ if (savedState) {
       };
       mappen.push(map);
     }
-    if (!map.elementen.find(e => norm(e.naam) === norm(naam))) {
+    if (!map.elementen.find(e => e.naam === naam)) { 
       map.elementen.push(el);
     }
   });
@@ -505,7 +505,7 @@ function checkCombination() {
     ].map(e => e.trim().toLowerCase());
       
     const missing = requirements.filter(r =>
-      !normalizedUnlocked.includes(r.trim().toLowerCase())
+      !normalizedUnlocked.includes(r)
     );
     
     if (missing.length > 0) {
