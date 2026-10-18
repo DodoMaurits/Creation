@@ -797,8 +797,8 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   
         if (uitleg) {
           showInfoOverlay(
-            uitleg.titel,
-            uitleg.tekst,
+            titelVan(uitleg),
+            tekstVan(uitleg),
             uitleg.achtergrond
           );
         }
@@ -840,7 +840,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   const textEl = document.createElement("div");
   textEl.className = "info-text";
   textEl.innerHTML = text;
-  textEl.lang = "nl";
+  textEl.lang = TAAL;
 
   inner.appendChild(titleEl);
   inner.appendChild(textEl);
