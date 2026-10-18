@@ -311,6 +311,8 @@ let introCheckInterval = 0;
 
 function updateIntroHint() {
   if (introKlaar) return;
+  if (document.body.classList.contains("test-mode")) return; 
+  if (savedState || unlockedElements.size > 3) return; 
   clearInterval(introCheckInterval); 
   document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
   const openAantal = (openLeft ? 1 : 0) + (openRight ? 1 : 0);
