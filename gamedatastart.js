@@ -1,7 +1,7 @@
 // ---------------- DATA ------------------
 const mappen = [
   {
-    naam: "Heelal", naam_en: "Universe", icoon: "icons/Heelal.png", 
+    naam: "Heelal", naam_en: "Space", icoon: "icons/Heelal.png", 
     elementen: [
       { naam: "Oerknal", naam_en: "Big Bang", icoon: "icons/Oerknal.png" }
     ]
