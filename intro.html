@@ -11,7 +11,7 @@
   <div class="container">
     <img src="icons/Oerknal-God.png" alt="Oerknal" class="oerknal-icon" id="oerknal-icon">
   
-    <h2 class="result-title">Oerknal</h2>
+    <h2 class="result-title" id="pagina-titel"></h2>
   
     <div class="caption">
       <span>"The Big Bang banged, and for some reason we're here. And that's astonishing. 
@@ -56,6 +56,8 @@
     const elementenOverlay = document.getElementById('elementen-overlay');
 
     // ----- TAAL -----
+    document.getElementById("pagina-titel").textContent = T.titel;
+
     const teksten = {
       nl: {
         titel: "Oerknal",
