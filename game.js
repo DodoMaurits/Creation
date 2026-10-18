@@ -276,24 +276,6 @@ function updateIntroHint() {
   }
 }
 
-  // functie om wrapper te verwijderen + volgende hint
-  function nextStep() {
-    wrapper.classList.add("fade-out");
-    setTimeout(() => wrapper.remove(), 400);
-    introStep++;
-    showIntroHint();
-  }
-
-  // ✅ VERBETERING: luister op hele document voor klik op map-element
-  document.addEventListener("click", function docClickListener(e) {
-    if (e.target.classList.contains("icon") && e.target.classList.contains("map")) {
-      nextStep();
-      // event listener opruimen na eerste klik
-      document.removeEventListener("click", docClickListener);
-    }
-  });
-}
-
 // ----- SELECT ELEMENT -----
 function toggleSelect(el, img, side, mapNaam) {
   const index = selected.findIndex(e => e.naam === el.naam && e.dom === img);
