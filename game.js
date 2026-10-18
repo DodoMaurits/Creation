@@ -728,10 +728,21 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     const popup = document.createElement("div");
     popup.className = "info-popup";
 
-    // openen/sluiten met de info-button
     infoBtn.onclick = (e) => {
       e.stopPropagation();
-      popup.classList.toggle("open");
+      if (window.matchMedia("(hover: none)").matches) {
+        const wasOpen = popup.classList.contains("open");
+        popup.classList.toggle("open");
+        if (!wasOpen) {
+          setTimeout(() => {
+            const sluitBijTik = (ev) => {
+              popup.classList.remove("open");
+              document.removeEventListener("click", sluitBijTik);
+            };
+            document.addEventListener("click", sluitBijTik);
+          }, 0);
+        }
+      }
     };
   
     const box = document.createElement("div");
@@ -739,11 +750,11 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
   
     const title = document.createElement("div");
     title.className = "info-popup-title";
-    title.innerHTML = uitleg.titel;
-  
+    title.innerHTML = titelVan(uitleg);
+
     const text = document.createElement("div");
     text.className = "info-popup-text";
-    text.innerHTML = uitleg.tekst;
+    text.innerHTML = tekstVan(uitleg);
   
     box.appendChild(title);
     box.appendChild(text);
