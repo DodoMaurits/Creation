@@ -56,8 +56,6 @@
     const elementenOverlay = document.getElementById('elementen-overlay');
 
     // ----- TAAL -----
-    document.getElementById("pagina-titel").textContent = T.titel;
-
     const teksten = {
       nl: {
         titel: "Oerknal",
@@ -103,6 +101,7 @@
     const T = teksten[localStorage.getItem("creation-taal") || "nl"];
     document.querySelector(".explanation-title").textContent = T.titel;
     document.querySelector(".explanation-text").innerHTML = T.uitleg;
+    document.getElementById("pagina-titel").textContent = T.titel;
     
     // Klik op het Oerknal-icoon opent de overlay
     icon.addEventListener('click', () => {
