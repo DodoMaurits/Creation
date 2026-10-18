@@ -139,7 +139,6 @@ body {
   background: rgba(255,255,255,0.5);
   color: white;
   transition: all 0.3s ease;
-  margin-bottom: clamp(10px, 2vh, 30px);
 }
 
 .taal-knop:hover {
