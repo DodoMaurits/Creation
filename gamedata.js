@@ -30,7 +30,7 @@ const combinaties = [
     before We clove them asunder? <br><br>The Prophets (21:30)`,
     uitleg: {
       normal: {
-        titel: "Symmetriebreking", titel_en: "Symmetry breaks",
+        titel: "SYMMETRIEBREKING", titel_en: "SYMMETRY BREAKS",
         tekst: `In een mum van tijd daalde de temperatuur tot 10 miljoen graden - te vergelijken met het binnenste van
         een ster. De oerknal was ten einde maar, zoals water bevriest onder nul, was er viermaal een drempel overschreden. 
         De 4 natuurkrachten waren geboren...
