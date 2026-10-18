@@ -212,21 +212,17 @@ function makeCurvedLabel(text, iconSize) {
 }
 
 // ----- INTRO HINTS -----
-// ----- INTRO HINTS (toestand-gedreven) -----
-let introKlaar = false;   // combinatie-hint eenmaal afgerond?
+let introKlaar = false;
+let introCheckInterval = 0;
 
 function updateIntroHint() {
   if (introKlaar) return;
-
-  // oude hint weghalen
+  clearInterval(introCheckInterval); 
   document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
-
   const openAantal = (openLeft ? 1 : 0) + (openRight ? 1 : 0);
-
   let hintText = "";
   let target = null;
   let offsetY = -80;
-
   if (openAantal === 0) {
     const maps = Array.from(document.querySelectorAll(".icon.map"));
     if (maps.length === 0) { requestAnimationFrame(updateIntroHint); return; }
@@ -247,12 +243,10 @@ function updateIntroHint() {
     hintText = "sleep of klik op twee elementen<br>om een nieuwe creatie te maken";
     offsetY = -50;
   }
-
   const wrapper = document.createElement("div");
   wrapper.className = "intro-wrapper fade-in";
   wrapper.innerHTML = `<div class="intro-text">${hintText}</div>`;
   wrapper.style.zIndex = 1500;
-
   if (target) {
     const rect = target.getBoundingClientRect();
     wrapper.style.left = rect.left + rect.width / 2 + "px";
@@ -263,14 +257,12 @@ function updateIntroHint() {
     wrapper.style.textAlign = "center";
   }
   document.body.appendChild(wrapper);
-
-  // combinatie geslaagd? → intro klaar
   if (openAantal === 2 && !document.getElementById("result-overlay")) {
-    const check = setInterval(() => {
+    introCheckInterval = setInterval(() => {
       if (document.getElementById("result-overlay")) {
         document.querySelectorAll(".intro-wrapper").forEach(el => el.remove());
         introKlaar = true;
-        clearInterval(check);
+        clearInterval(introCheckInterval);
       }
     }, 50);
   }
