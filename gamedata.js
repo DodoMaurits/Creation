@@ -14,7 +14,7 @@ const combinaties = [
         quote: `A compassionate heart radiates rays of beauty that remove the clouds of million hearts 
         <br><br>- Amit Ray`
       },
-      { naam: "Quarks", naam_en :"Quarks", icoon: "icons/Quarks.png", map: "Chemie",
+      { naam: "Quarks", naam_en:"Quarks", icoon: "icons/Quarks.png", map: "Chemie",
         quote: `Every atom in your body is the same quark in different places at the same moment in time 
         <br><br>- David Eagleman`
       },
