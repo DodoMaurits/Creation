@@ -2811,7 +2811,6 @@ const combinaties = [
       ["map:Carnivoren", "Radioactiviteit"], ["map:Carnivoren", "Gif"],
       ["map:Primaten", "Radioactiviteit"], ["map:Primaten", "Gif"],
       ["map:Hoefdieren", "Radioactiviteit"], ["map:Hoefdieren", "Gif"],
-      ["map:Planten", "Radioactiviteit"], ["map:Planten", "Gif"],
       ["map:Smaakmakers", "Radioactiviteit"], ["map:Smaakmakers", "Gif"],
       ["map:Bomen", "Radioactiviteit"], ["map:Bomen", "Gif"],
       ["map:Bloemen", "Radioactiviteit"], ["map:Bloemen", "Gif"],
@@ -2881,6 +2880,37 @@ const combinaties = [
       ["Salamanders", "Radioactiviteit"], ["Salamanders", "Gif"],
       ["Kikkers", "Radioactiviteit"], ["Kikkers", "Gif"],
       ["Padden", "Radioactiviteit"], ["Padden", "Gif"],
+      /* --- PLANTEN --- */
+      ["Mos", "Radioactiviteit"], ["Mos", "Gif"],
+      ["Oervaatplanten", "Radioactiviteit"], ["Oervaatplanten", "Gif"],
+      ["Varens", "Radioactiviteit"], ["Varens", "Gif"],
+      ["Oerzaadplanten", "Radioactiviteit"], ["Oerzaadplanten", "Gif"],
+      ["Oermagnoliden", "Radioactiviteit"], ["Oermagnoliden", "Gif"],
+      ["Oermonocotylen", "Radioactiviteit"], /*["Oermoncotylen", "Gif"],*/
+      ["Oereudicoten", "Radioactiviteit"], /*["Oereudicoten", "Gif"],*/
+      ["Gras", "Radioactiviteit"], ["Gras", "Gif"],
+      ["Oerfabiden", "Radioactiviteit"], /*["Oerfabiden", "Gif"],*/
+      ["Oermalviden", "Radioactiviteit"], /*["Oermalviden", "Gif"],*/
+      ["Oercaryophyllales", "Radioactiviteit"], ["Oercaryophyllales", "Gif"],
+      ["Oerasteriden", "Radioactiviteit"], ["Oerasteriden", "Gif"],
+      ["Oerericales", "Radioactiviteit"], /*["Oerericales", "Gif"],*/
+      ["Oerlamiden", "Radioactiviteit"], /*["Oerlamiden", "Gif"],*/
+      ["Oercampanuliden", "Radioactiviteit"], /*["Oercampanuliden", "Gif"],*/
+      ["Vetplanten", "Radioactiviteit"], ["Vetplanten", "Gif"],
+      ["Buxus", "Radioactiviteit"], ["Buxus", "Gif"],
+      ["Brandnetels", "Radioactiviteit"], ["Brandnetels", "Gif"],
+      ["Oerfagales", "Radioactiviteit"], ["Oerfagales", "Gif"],
+      ["Agave", "Radioactiviteit"], ["Agave", "Gif"],
+      ["Aloë vera", "Radioactiviteit"], ["Aloë vera", "Gif"],
+      ["Cactussen", "Radioactiviteit"], ["Cactussen", "Gif"],
+      ["Heide", "Radioactiviteit"], ["Heide", "Gif"],
+      ["Lavendel", "Radioactiviteit"], ["Lavendel", "Gif"],
+      ["Klavers", "Radioactiviteit"], ["Klavers", "Gif"],
+      ["Kroos", "Radioactiviteit"], ["Kroos", "Gif"],
+      ["Waterriet", "Radioactiviteit"], ["Waterriet", "Gif"],
+      ["Suikerriet", "Radioactiviteit"], ["Suikerriet", "Gif"],
+      ["Venusvliegenvanger", "Radioactiviteit"], ["Venusvliegenvanger", "Gif"],
+      ["Zonnedauw", "Radioactiviteit"], ["Zonnedauw", "Gif"],
       /* --- BIOLOGIE --- */
       ["Weefsel", "Radioactiviteit"], 
       ["Spieren", "Radioactiviteit"], 
@@ -4164,6 +4194,26 @@ const combinaties = [
         hadden nog niet de geconcentreerde bol neuronen die wij nu hersenen noemen, maar wel zenuwstelsels met honderden tot 
         duizenden zenuwcellen in een netwerk. Zij konden veel informatie verwerken, aangevoerd door sensorcellen, om 
         vervolgens beslissingen door te geven aan gespecialiseerde organen.</span>`,
+
+        tekst_en: `
+        <span>In the rock strata, we can read the timeline of creation - layer by layer. 541 million years ago, 
+        macroscopic fossils of shells, skeletons and protective armour suddenly appeared on a massive scale. Named after
+        the site where they were first discovered - Cambria, Wales - this period from 541 to 485 million years ago is 
+        known as the Cambrian; it was during this time that more than half of all known phyla (the largest biological 
+        groupings) emerged.</span>
+        <br><br>
+        <span>The breaukup of the supercontinent Pannotia created new oceans and long, irregular coastlines. As continents
+        drifted apart, rifting and volcanic activity enriched the seas with minerals such as calcium (lime) and silica
+        (silicon) - the building blocks of fossils. The significant increase in the use of calcite led to the formation 
+        of thick layers of chalk, such as those een in the White Cliffs of Dover.</span>
+        <br><br>
+        <span>The Cambrian world was a greenhouse world: CO2 levels were much higher than they are today, temperatures 
+        were immensely high, and there was no polar ice to be found anywhere. It was, in particular, within the warm,
+        increasingly oxygen-rich shallow seas that early arthropods (trilobites with external skeletons) and 
+        vertebrate-like worms with internal skeletons lived. These vertebrates did not yet possess the concentrated cluster
+        of neurons that we now call a brain, but they did have nervous systems consisting of networks of hundreds to 
+        thousands of nerve cells. They were capable of processing large amounts of information - supplied by sensory cells
+        - and subsequently relaying decisions to specialised organs.</span>`
       }
     }
   }, /* ------------------ WORMEN ------------------ */
@@ -4182,11 +4232,11 @@ const combinaties = [
       ["Wormen", "Detritus"]
     ],
     output: [
-      { naam: "Wormen", icoon: "icons/Wormen.png", map: "Waterdieren", 
+      { naam: "Wormen", naam_en: "Worms", icoon: "icons/Wormen.png", map: "Waterdieren", 
         quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor 
         <br><br>- Rachel Carson`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -4209,12 +4259,13 @@ const combinaties = [
       ["Oertrochozoa", "Detritus"]
     ],
     hint: `Voor de bewuste dieren is eten meer dan alleen een beloning.`, 
+    hint_en: `For sentient animals, food is more than just a reward`, 
     output: [
-      { naam: "Oertrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
+      { naam: "Oertrochozoa", naam_en: "Urtrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
         quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
         <br><br>- Andrew H. Knoll`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -4237,11 +4288,11 @@ const combinaties = [
       ["Zeesterren", "Detritus"]
     ],
     output: [
-      { naam: "Zeesterren", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
+      { naam: "Zeesterren", naam_en: "Starfish", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
         quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
         <br><br>- Rachel Carson`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
