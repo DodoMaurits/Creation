@@ -307,7 +307,7 @@ const mappen = [
       { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png" }, /*40*/
       { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png" }, /*30*/
       { naam: "Platvissen", icoon: "icons/Platvissen.png" }, /*30*/
-      { naam: "Vliegvissen", icoon: "icons/Vliegvissen.png" }, /*30*/
+      { naam: "Vliegende vissen", icoon: "icons/Vliegende vissen.png" }, /*30*/
       { naam: "Zeepaardjes", icoon: "icons/Zeepaardjes.png" }, /*20*/
       { naam: "Clownvissen", icoon: "icons/Clownvissen.png" }, /*20*/
       { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png" }, /*20*/
