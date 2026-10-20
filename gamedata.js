@@ -143,7 +143,7 @@ const combinaties = [
   {
     input: ["Atomen", "Straling"],
     hint: `Hm.. Wat als de straling sterk genoeg is atomen te splitsen?`,
-    hint_em: `Hm.. What if radiation becomes strong enough to split atoms apart?`,
+    hint_en: `Hm.. What if radiation becomes strong enough to split atoms apart?`,
     tijd: 13_700_620_000,
     output: [
       { naam: "Radioactiviteit", naam_en: "Radioactivity", icoon: "icons/Radioactiviteit.png", map: "Krachten",
@@ -158,7 +158,7 @@ const combinaties = [
         elektronen van atoomkernen te splitsen. Wanneer de frequentie hier hoog genoeg voor is, spreken wij van 
         radioactief.`,
         tekst_en: `Gamma rays, X-rays and high-energy ultraviolet radiation possess such high frequencies that they 
-        inhabite enough energy to detach electrons from atomic nuclei. When the frequency is high enough for this to 
+        possess enough energy to detach electrons from atomic nuclei. When the frequency is high enough for this to 
         occur, we refer to it as radioactive.`
       }
     }
@@ -280,7 +280,7 @@ const combinaties = [
         laatste zware elementen de ruimte in zijn geslingerd.`,
 
         tekst_en: `When stars burn out, their cores collapse under their own gravity. This implosion causes the core's 
-        temperature to rise once again, while the sar develops cool, red outer layers. If this 'red giant' possesses 
+        temperature to rise once again, while the star develops cool, red outer layers. If this 'red giant' possesses 
         sufficient mass, gravity compresses the core so intensely that it becomes hotter than ever before. Eventually,
         the core transforms into a compact sphere of iron.
         <br><br>Successive stages of contraction and expansion continue until no more energy can be generated; at this 
@@ -368,7 +368,7 @@ const combinaties = [
       ["Planeet", "Kou"], ["Planeet", "IJs"]
     ],
     hint: `De schoonheid van sommige planeten wil ik gekoeld bewaard...`,
-    hint: `I wish to keep the beauty of some planets preserved, keeping it cool...`,
+    hint_en: `I wish to keep the beauty of some planets preserved, keeping it cool...`,
     tijd: 4_570_000_000,
     output: [
       { naam: "Neptunus", naam_en: "Neptune", icoon: "icons/Neptunus.png", map: "Heelal",
@@ -427,7 +427,7 @@ const combinaties = [
         unthinkable void, to lure me to it, to draw me as the lodestone attracts a particle of iron 
         <br><br>- Edgar Rice Burroughs`
       },
-      { naam: "De Aarde", naam: "The Earth", icoon: "icons/De_Aarde.png", map: "Heelal",
+      { naam: "De Aarde", naam_en: "The Earth", icoon: "icons/De_Aarde.png", map: "Heelal",
         quote: `On Earth there is no heaven, but there are pieces of it 
         <br><br>- Jules Renard`
       },
@@ -906,7 +906,7 @@ const combinaties = [
         <br><br>- Napoleon Hill`
       },
       { naam: "Basalt", naam_en: "Basalt", icoon: "icons/Basalt.png", map: "Aarde", 
-        quote: `Every changes, even stone 
+        quote: `Everything changes, even stone 
         <br><br>- Claude Monet`
       }
     ]
@@ -1112,7 +1112,7 @@ const combinaties = [
       ["Klei", "Warmte"], ["Druk", "Klei"]
     ],
     hint: `Kan je stenen ook kleien? Waarom niet.`,
-    hint: `Making stones out of clay? Why not.`,
+    hint_en: `Making stones out of clay? Why not.`,
     output: [
       { naam: "Kleisteen", naam_en: "Claystone", icoon: "icons/Kleisteen.png", map: "Aarde",
         quote: `Everything changes, even stone 
@@ -1194,7 +1194,7 @@ const combinaties = [
       ["Lucht", "Warmte"], ["Lucht", "Kou"]
     ],
     hint: `Ik zucht bij verschillende temperaturen in de lucht.`,
-    hint_en: `I have to sigh because of the varying temperatues in the air.`,
+    hint_en: `I have to sigh because of the varying temperatures in the air.`,
     output: [
       { naam: "Wind", naam_en: "Wind", icoon: "icons/Wind.png", map: "Lucht", 
         quote: `Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating: there is really 
@@ -1212,7 +1212,7 @@ const combinaties = [
     output: [
       { naam: "Oase", naam_en: "Oasis", icoon: "icons/Oase.png", map: "Landschap", 
         quote: `All that the historians give us are little oases in the desert of time, and we linger fondly in these,
-        forgetting the vast tracks betwewen one and another that were trodden by the weary generations of men
+        forgetting the vast tracks between one and another that were trodden by the weary generations of men
         <br><br>- J.A. Spender`
       }
     ]
@@ -1979,15 +1979,15 @@ const combinaties = [
         hitte op de oceaanbodem. Hun dunne elektrische schil tussen binnen- en buitenwereld leverde energie om
         voedingsstoffen binnen te halen en afvalstoffen af te voeren.</span>`,
         
-        tekst: `
-        <span>Oceans and plasmass - water and fire - are necessary for the creation of life from non-living matter. In 
+        tekst_en: `
+        <span>Oceans and plasmas - water and fire - are necessary for the creation of life from non-living matter. In 
         1952, scientists first replicated this process in a laboratory by subjecting a simulated early Earth 
         atmosphere to electrical discharges. Within a few days, simple organic molecules - an amino acid-rich, pinkish 
         sludge - were found floating on the water. This process occurred on a massive scale when the Moon was still 
         much closer to the Earth. Lightning strikes from above and erupting volcanoes from below transformed the ocean 
         into a chemical concoction: the primordial soup.</span>
         <br><br>
-        <span>Electrical discharges are required to form new molecules, as ambient temperatues are typically too low. 
+        <span>Electrical discharges are required to form new molecules, as ambient temperatures are typically too low. 
         Conversely, atoms themselves could only form once the Universe had cooled sufficiently. Yet, exceptional 
         conditions are required to link these molecules together to form proteins and carbohydrates. Earth provided
         precisely such conditions, where chemically rich magma from the planet's interior seeped through the ocean floor,
@@ -2326,7 +2326,7 @@ const combinaties = [
         quote: `Fungi are the interface organisms between life and death 
         <br><br>- Paul Stamets`
       },
-      { naam: "Glucose", naame_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -2373,7 +2373,7 @@ const combinaties = [
         must first be able to absorb it well 
         <br><br>- Jim Rohn`
       },
-      { naam: "Glucose", naame_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -4431,7 +4431,7 @@ const combinaties = [
       thresholdElement: {
         naam: "Wormen", naam_en: "Worms", 
         titel: "Probeer opnieuw in het Cambrium", titel_en: "Try again in the Camrbrian", 
-        tekst: `Everything  moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
         <br><br>Eerst nodig: wormen.`,
         tekst_en: `Everything must be properly ready before the Cambrian Explosion can begin...
         <br><br>Required first: worms.`
@@ -4535,7 +4535,7 @@ const combinaties = [
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", naam_en; "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -4634,7 +4634,7 @@ const combinaties = [
       thresholdElement: {
         naam: "Wormen", naam_en: "Worms", 
         titel: "Probeer opnieuw in het Cambrium", titel_en: "Try again in the Camrbrian", 
-        tekst: `Everything  moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
         <br><br>Eerst nodig: wormen.`,
         tekst_en: `Everything must be properly ready before the Cambrian Explosion can begin...
         <br><br>Required first: worms.`
@@ -4655,7 +4655,7 @@ const combinaties = [
       thresholdElement: {
         naam: "Wormen", naam_en: "Worms", 
         titel: "Probeer opnieuw in het Cambrium", titel_en: "Try again in the Camrbrian", 
-        tekst: `Everything  moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
+        tekst: `Alles moet netjes klaarstaan voor de Cambrische Explosie kan beginnen...
         <br><br>Eerst nodig: wormen.`,
         tekst_en: `Everything must be properly ready before the Cambrian Explosion can begin...
         <br><br>Required first: worms.`
@@ -5499,7 +5499,7 @@ const combinaties = [
   {
     input: ["Schimmel", "Evolutie"],
     hint: `Schimmel heeft nog zo veel potentie...`,
-    hint: `Mold still has so much potential...`,
+    hint_en: `Mold still has so much potential...`,
     output: [
       { naam: "Korstmos", naam_en: "Lichens", icoon: "icons/Korstmos.png", map: "Pril leven", 
         quote: `Fermentation is the exhalation of a substance through the admixture of a ferment which,
@@ -5536,7 +5536,7 @@ const combinaties = [
         by virtue of its spirit, penetrates the mass and transforms it into its own nature
         <br><br>- Andreas Libavius`
       },
-      { naam: "Glucose", naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -5815,7 +5815,7 @@ const combinaties = [
   {
     input: ["Tand", "Agnathen"],
     hint: `Voor grote roofvissen is kraakbeen genoeg, maar zijn scherpe tanden wel handig.`,
-    hint_eb: `For large predatory fish, cartilage is sufficient, but sharp teeth certainly is an advantage.`,
+    hint_en: `For large predatory fish, cartilage is sufficient, but sharp teeth certainly is an advantage.`,
     tijd: 415_000_000,
     output: [
       { naam: "Haaien", naam_en: "Sharks", icoon: "icons/Haaien.png", map: "Vissen", 
@@ -6447,6 +6447,7 @@ const combinaties = [
       ["Zeepissebedden", "Eiland"], ["Zeepissebedden", "Zuurstof"], ["Zeepissebedden", "Aarde"]
     ],
     hint: `Pissebedden zouden ook prima op het land kunnen gedijen...`,
+    hint_en: `Marine isopods could thrive perfectly well on land too...`,
     output: [
       { naam: "Pissebedden", naam_en: "Woodlice", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
@@ -6849,7 +6850,7 @@ const combinaties = [
         zuurstofniveaus in de atmosfeer tot circa 30-35 procent, wat op zijn beurt nieuwe chemische reacties in de 
         aardkorst mogelijk maakte en bijdroeg aan de vorming van veel van de mineralen die we vandaag kennen.</span>`,
 
-        tekst: `
+        tekst_en: `
         <span>The first vast, dense forests of ferns and early seed-bearing plants-located in low-lying swampy regions 
         that now encompass parts of Europe and North America - proliferated, producing enormous quantities of organic
         matter. Because there were not yet any microorganisms or fungi capable of efficiently breaking down resin and
@@ -8623,7 +8624,7 @@ const combinaties = [
       ["Sauropoden", "Arganbomen"], ["Sauropoden", "Sheabomen"], ["Sauropoden", "Essen"]
     ],
     output: [
-      { naam: "Sauropoden", icoon: "icons/Sauropoden.png", map: "Reptielen", 
+      { naam: "Sauropoden", naam_en: "Sauropods", icoon: "icons/Sauropoden.png", map: "Reptielen", 
         quote: `Sauropods were the gentle giants of the Mesozoic, moving with ponderous grace, their immense bodies 
         shaping the landscapes they traversed
         <br><br>- John McIntosh`
@@ -9696,7 +9697,7 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Bos"],
     hint: `Sommige eudicoten voelen zich thuis in de bossen.`,
-    hint: `Some eudicots feel at home in the forest.`,
+    hint_en: `Some eudicots feel at home in the forest.`,
     tijd: 80_000_000,
     output: [
       { naam: "Platanen", naam_en: "Plane trees", icoon: "icons/Platanen.png", map: "Bomen", 
@@ -13955,6 +13956,7 @@ const combinaties = [
   {
     input: ["Oercaryophyllales", "Berg"],
     hint: `Sommige caryophyllales voelen zich thuis in de bergen.`,
+    hint_en: `Some caryophyllales feel at home in the mountains.`,
     tijd: 5_000_000,
     output: [
       { naam: "Quinoa", naam_en: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
@@ -18499,6 +18501,7 @@ const combinaties = [
     ],
     uitleg: { threshold: { titel: "Laatste IJstijd", titel_en: "The Last Ice Age",
         tekst: "Je moet eerst nog wat meer halen...",
+        tekst_en: "You need to create a bit more first...",
         requirements: 
           ["IJsberen", "Speer", "Kampvuur", "Vlot", "Jacht"]
       }, normal: { achtergrond: "afb/IJstijd.jpg",
@@ -18527,7 +18530,7 @@ const combinaties = [
         Neanderthals for a short while, before the latter went extinct around 40.000 years before the present (BP).
         </span><br><br>
         <span>In North America and Asia, modern humans appeared only later - after 30.000 BP. There, they adapted
-        to the extreme cold and the unique fauna of those regions as well.</span>`,
+        to the extreme cold and the unique fauna of those regions as well.</span>`
       }
     }
   },
@@ -19192,7 +19195,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19211,7 +19214,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19232,7 +19235,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19251,7 +19254,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19270,7 +19273,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19282,14 +19285,14 @@ const combinaties = [
     hint_en: `Some carp feel at home around humans... or the other way around?`,
     tijd: 1_700,
     output: [
-      { naam: "Goudvissen", naam: "Goldfish", icoon: "icons/Goudvissen.png", map: "Vissen", 
+      { naam: "Goudvissen", naam_en: "Goldfish", icoon: "icons/Goudvissen.png", map: "Vissen", 
         quote: `Goldfish possess a surprising capacity for memory and recognition
         <br><br>- Sy Montgomery`
       }
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19339,7 +19342,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19366,7 +19369,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19385,7 +19388,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19404,7 +19407,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19425,7 +19428,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19444,7 +19447,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19465,7 +19468,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19484,7 +19487,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19503,7 +19506,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19523,7 +19526,7 @@ const combinaties = [
     ],
     uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
         titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        titel: "Try again after the invention of writing..",
+        titel_en: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
         <br><br>Eerst nodig: landbouwproducten en vee.`,
         tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
@@ -19625,7 +19628,7 @@ const combinaties = [
         ["Honden"]
       },
       normal: { achtergrond: "afb/Overzeese_imperia.jpeg",
-        titel: "OVERZEESE IMPERIA 1000 BP", titel_en, "EMPIRES OVERSEAS 1000 BP",
+        titel: "OVERZEESE IMPERIA 1000 BP", titel_en: "EMPIRES OVERSEAS 1000 BP",
         tekst: 
         `<span>Het jaar 1000 was een omslagpunt van de tijdelijke krimp van de wereldbevolking gaande sinds de 1e eeuw.
         De wereldbevolking was hersteld in omvang en zou exponentieel-versnellend toenemen door de proto-globalisering
