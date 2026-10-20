@@ -2148,12 +2148,42 @@ const combinaties = [
       ["Bruinwieren", "Ster"], ["Bruinwieren", "Licht"],
       ["Steenwortelalgen", "Ster"], ["Steenwortelalgen", "Licht"],
       ["Groenwieren", "Ster"], ["Groenwieren", "Licht"],
-      ["map:Planten", "Ster"], ["map:Planten", "Licht"],
       ["map:Bomen", "Ster"], ["map:Bomen", "Licht"],
       ["map:Bloemen", "Ster"], ["map:Bloemen", "Licht"],
       ["map:Fruit", "Ster"], ["map:Fruit", "Licht"],
       ["map:Groenten", "Ster"], ["map:Groenten", "Licht"],
-      ["map:Granen", "Ster"], ["map:Granen", "Licht"]
+      ["map:Granen", "Ster"], ["map:Granen", "Licht"],
+      /* --- PLANTEN --- */
+      ["Mos", "Ster"], ["Mos", "Licht"],
+      ["Oervaatplanten", "Ster"], ["Oervaatplanten", "Licht"],
+      ["Varens", "Ster"], ["Varens", "Licht"],
+      ["Oerzaadplanten", "Ster"], ["Oerzaadplanten", "Licht"],
+      ["Oermagnoliden", "Ster"], ["Oermagnoliden", "Licht"],
+      ["Oermonocotylen", "Ster"], ["Oermonocotylen", "Licht"],
+      ["Oereudicoten", "Ster"], ["Oereudicoten", "Licht"],
+      ["Gras", "Ster"], ["Gras", "Licht"],
+      ["Oerfabiden", "Ster"], ["Oerfabiden", "Licht"],
+      ["Oermalviden", "Ster"], ["Oermalviden", "Licht"],
+      ["Oercaryophyllales", "Ster"], ["Oercaryophyllales", "Licht"],
+      ["Oerasteriden", "Ster"], ["Oerasteriden", "Licht"],
+      ["Oerericales", "Ster"], ["Oerericales", "Licht"],
+      ["Oerlamiden", "Ster"], ["Oerlamiden", "Licht"],
+      ["Oercampanuliden", "Ster"], ["Oercampanuliden", "Licht"],
+      ["Vetplanten", "Ster"], ["Vetplanten", "Licht"],
+      ["Buxus", "Ster"], ["Buxus", "Licht"],
+      ["Brandnetels", "Ster"], ["Brandnetels", "Licht"],
+      ["Oerfagales", "Ster"], ["Oerfagales", "Licht"],
+      ["Agave", "Ster"], ["Agave", "Licht"],
+      ["Aloë vera", "Ster"], ["Aloë vera", "Licht"],
+      ["Cactussen", "Ster"], ["Cactussen", "Licht"],
+      ["Heide", "Ster"], ["Heide", "Licht"],
+      ["Lavendel", "Ster"], ["Lavendel", "Licht"],
+      ["Klavers", "Ster"], ["Klavers", "Licht"],
+      ["Kroos", "Ster"], ["Kroos", "Licht"],
+      ["Waterriet", "Ster"], ["Waterriet", "Licht"],
+      /* ["Suikerriet", "Ster"], ["Suikerriet", "Licht"], */
+      ["Venusvliegenvanger", "Ster"], ["Venusvliegenvanger", "Licht"],
+      ["Zonnedauw", "Ster"], ["Zonnedauw", "Licht"]
     ],
     hint: `Het regent zonnestralen en dus regent het voedsel.`,
     hint_en: `It is raining sunbeams, and therefore it is raining food.`,
@@ -13623,7 +13653,7 @@ const combinaties = [
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
-      { naam: "Kola", naam_en: "Kola trees", icoon: "icons/Kola.png", map: "Zaden", 
+      { naam: "Kola", naam_en: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
@@ -13640,291 +13670,334 @@ const combinaties = [
   {
     input: ["Oermalviden", "Moeras"],
     hint: `Sommige malviden voelen zich thuis in het moeras.`,
+    hint_en: `Some malvids feel at home in the swamps.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
+      { naam: "Hibiscus", naam_en: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
         quote: `The hibiscus lends color and grace to tropical gardens
         <br><br>- David Faichild`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Kevers"],
     tijd: 30_000_000,
     output: [
-      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+      { naam: "Doerians", naam_en: "Durians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
+      { naam: "Cacao", naam_en: "Cocoa", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Vliegen"],
     tijd: 5_000_000,
     output: [
-      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+      { naam: "Doerians", naam_en: "Durians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
+      { naam: "Cacao", naam_en: "Cocoa", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
-      { naam: "Papaja", icoon: "icons/Papaja.png", map: "Fruit", 
+      { naam: "Papaja", naam_en: "Papayas", icoon: "icons/Papaja.png", map: "Fruit", 
         quote: `There are fruits of great softness, which melt upon the tongue
         <br><br>- Hernán Cortés`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Vlinders"],
     tijd: 10_000_000,
     output: [
-      { naam: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
+      { naam: "Hibiscus", naam_en: "Hibiscus", icoon: "icons/Hibiscus.png", map: "Bloemen", 
         quote: `The hibiscus lends color and grace to tropical gardens
         <br><br>- David Faichild`
       },
-      { naam: "Mandarijnen", icoon: "icons/Mandarijnen.png", map: "Fruit", 
+      { naam: "Mandarijnen", naam_en: "Mandarins", icoon: "icons/Mandarijnen.png", map: "Fruit", 
         quote: `Cultivated fruits such as oranges exhibit remarkable variation under human selection
         <br><br>- Charles Darwin`
       },
-      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
+      { naam: "Granaatappels", naam_en: "Pomegranates", icoon: "icons/Granaatappels.png", map: "Fruit", 
         quote: `The pomegranate opens like a secret heart full of blood-red jewels
         <br><br>- D.H. Lawrence`
       },
-      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+      { naam: "Mango", naam_en: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
         quote: `The mango blossom perfumes the air like the promise of spring
         <br><br>- Kalidasa`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Bos"],
     hint: `Sommige malviden voelen zich thuis in de gematigde loofbossen.`,
+    hint_en: `Some malvids feel at home in temperate deciduous forests.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
+      { naam: "Esdoorns", naam_en: "Maples", icoon: "icons/Esdoorns.png", map: "Bomen", 
         quote: `Under the maple’s crimson leaves the year seems to pause in flame
         <br><br>- Henry Longfellow`
       },
-      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
+      { naam: "Lindes", naam_en: "Linden trees", icoon: "icons/Lindes.png", map: "Bomen", 
         quote: `Beneath the linden walks a gentler air, where thought may rest
         <br><br>- Alexander Pope`
       },
-      { naam: "Paardenkastanjes", icoon: "icons/Paardenkastanjes.png", map: "Bomen", 
+      { naam: "Paardenkastanjes", naam_en: "Horse chestnuts", icoon: "icons/Paardenkastanjes.png", map: "Bomen", 
         quote: `Beneath the chestnut’s spreading shade the village children played
         <br><br>- William Wordsworth`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Tropisch regenwoud"],
     hint: `Sommige malviden voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some malvids feel at home in the tropical rainforest.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
+      { naam: "Cacao", naam_en: "Cocoa", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
-      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+      { naam: "Doerians", naam_en: "Durians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       },
-      { naam: "Kapok", icoon: "icons/Kapok.png", map: "Materialen", 
+      { naam: "Kapok", naam_en: "Kapok", icoon: "icons/Kapok.png", map: "Materialen", 
         quote: `The gigantic forest trees rise like columns, among them the lofty cotton tree
         <br><br>- Alfred Wallace`
       },
-      { naam: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
+      { naam: "Kola", naam_en: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
       },
-      { naam: "Zeepnoten", icoon: "icons/Zeepnoten.png", map: "Bomen", 
+      { naam: "Zeepnoten", naam_en: "Soapberries", icoon: "icons/Zeepnoten.png", map: "Bomen", 
         quote: `Sapindus yields fruits rich in saponin, extensively used as a substitute for soap
         <br><br>- George Watt`
       },
-      { naam: "Guaves", icoon: "icons/Guaves.png", map: "Fruit", 
+      { naam: "Guaves", naam_en: "Guavas", icoon: "icons/Guaves.png", map: "Fruit", 
         quote: `Guavas hang in the heat, soft and fragrant in the tropical air
         <br><br>- Patrick Fermor`
       },
-      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+      { naam: "Mango", naam_en: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
         quote: `The mango blossom perfumes the air like the promise of spring
         <br><br>- Kalidasa`
       },
-      { naam: "Papaja", icoon: "icons/Papaja.png", map: "Fruit", 
+      { naam: "Papaja", naam_en: "Papayas", icoon: "icons/Papaja.png", map: "Fruit", 
         quote: `There are fruits of great softness, which melt upon the tongue
         <br><br>- Hernán Cortés`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Wespen"],
     tijd: 10_000_000,
     output: [
-      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+      { naam: "Mango", naam_en: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
         quote: `The mango blossom perfumes the air like the promise of spring
         <br><br>- Kalidasa`
       },
-      { naam: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
+      { naam: "Lychee", naam_en: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
         quote: `A single lychee carried a thousand miles is worth the fall of an empire
         <br><br>- Du Mu`
       },
-      { naam: "Papaja", icoon: "icons/Papaja.png", map: "Fruit", 
+      { naam: "Papaja", naam_en: "Papayas", icoon: "icons/Papaja.png", map: "Fruit", 
         quote: `There are fruits of great softness, which melt upon the tongue
         <br><br>- Hernán Cortés`
       },
-      { naam: "Guaves", icoon: "icons/Guaves.png", map: "Fruit", 
+      { naam: "Guaves", naam_en: "Guavas", icoon: "icons/Guaves.png", map: "Fruit", 
         quote: `Guavas hang in the heat, soft and fragrant in the tropical air
         <br><br>- Patrick Fermor`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Bijen"],
     tijd: 5_000_000,
     output: [
-      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
+      { naam: "Lindes", naam_en: "Linden trees", icoon: "icons/Lindes.png", map: "Bomen", 
         quote: `Beneath the linden walks a gentler air, where thought may rest
         <br><br>- Alexander Pope`
       },
-      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
+      { naam: "Mosterd", naam_en: "Mustard", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
         <br><br>- Nicholas Culpeper`
       },
-      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
+      { naam: "Kool", naam_en: "Cabbage", icoon: "icons/Kool.png", map: "Groenten", 
         quote: `The humble cabbage is often the foundation of the simplest meals
         <br><br>- Charles Lamb`
       },
-      { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
+      { naam: "Radijsjes", naam_en: "Radishes", icoon: "icons/Radijsjes.png", map: "Groenten", 
         quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
         <br><br>- John Gerard`
       },
-      { naam: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
+      { naam: "Mango", naam_en: "Mango", icoon: "icons/Mango.png", map: "Fruit", 
         quote: `The mango blossom perfumes the air like the promise of spring
         <br><br>- Kalidasa`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Savanne"],
     hint: `Sommige malviden voelen zich thuis op de savanne.`,
+    hint_en: `Some malvids feel at home on the savannah.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Baobabs", icoon: "icons/Baobabs.png", map: "Bomen", 
+      { naam: "Baobabs", naam_en: "Baobabs", icoon: "icons/Baobabs.png", map: "Bomen", 
         quote: `The baobab stands like a monument to endurance in the dry lands
         <br><br>- Richard Baker`
       },
-      { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
+      { naam: "Cashew", naam_en: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
         quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
         <br><br>- V.S. Naipaul`
       },
-      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Bomen", 
+      { naam: "Mirre", naam_en: "Myrrh", icoon: "icons/Mirre.png", map: "Bomen", 
         quote: `Myrrh is among the most esteemed of perfumes, used both in medicine and sacred rites
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
+      { naam: "Eucalyptus", naam_en: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
         quote: `In the blue haze of eucalyptus the land seems endless and still
         <br><br>- Banjo Paterson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Weide"],
     hint: `Sommige malviden voelen zich thuis op uitgestrekte grasweides.`,
+    hint_en: `Some malvids feel at home in the expansive grassy meadows.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Radijsjes", icoon: "icons/Radijsjes.png", map: "Groenten", 
+      { naam: "Radijsjes", naam_en: "Radishes", icoon: "icons/Radijsjes.png", map: "Groenten", 
         quote: `The radish root is of a sharp and biting taste, eaten chiefly when young
         <br><br>- John Gerard`
       },
-      { naam: "Mosterd", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
+      { naam: "Mosterd", naam_en: "Mustard", icoon: "icons/Mosterd.png", map: "Smaakmakers", 
         quote: `Mustard is hot and biting, and good to stir the humours of the body
         <br><br>- Nicholas Culpeper`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oercaryophyllales", "Berg"],
     hint: `Sommige caryophyllales voelen zich thuis in de bergen.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
+      { naam: "Quinoa", naam_en: "Quinoa", icoon: "icons/Quinoa.png", map: "Zaden", 
         quote: `Quinoa represents the resilience of traditional Andean agriculture
         <br><br>- Miguel Altieri`
       },
-      { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
+      { naam: "Anjers", naam_en: "Carnations", icoon: "icons/Anjers.png", map: "Bloemen", 
         quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       },
-      { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
+      { naam: "Rabarber", naam_en: "Rhubarb", icoon: "icons/Rabarber.png", map: "Groenten", 
         quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
         <br><br>- John Gerard`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oercaryophyllales", "Zand"], ["Oercaryophyllales", "Woestijn"]
     ],
     hint: `Sommige caryophyllales voelen zich thuis in de woestijn.`,
+    hint_en: `Some caryophyllales feel at home in the desert.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Cactussen", icoon: "icons/Cactussen.png", map: "Planten", 
+      { naam: "Cactussen", naam_en: "Cactus", icoon: "icons/Cactussen.png", map: "Planten", 
         quote: `The cactus is the silent guardian of the arid land
         <br><br>- Zane Grey`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
@@ -13932,21 +14005,25 @@ const combinaties = [
       ["Oercaryophyllales", "Bladluizen"], ["Oercaryophyllales", "Vliegen"], ["Oercaryophyllales", "Muggen"]
     ],
     hint: `Sommige caryophyllales doen zich tegoed aan insecten in moerassen.`,
+    hint_en: `Some caryophyllales feast on insects in the swamps.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
+      { naam: "Zonnedauw", naam_en: "Sundew", icoon: "icons/Zonnedauw.png", map: "Planten", 
         quote: `The sundew catches flies by means of a sticky fluid on its leaves
         <br><br>- John Ellis`
       },
-      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
+      { naam: "Venusvliegenvanger", naam_en: "Venus flytraps", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
         quote: `The sensitive leaves respond to touch in a manner almost animal-like
         <br><br>- Francis Darwin`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ ZONNEDAUW ------------------ */
   {
     input: [
@@ -13961,7 +14038,7 @@ const combinaties = [
       ["Zonnedauw", "Muggen"], ["Zonnedauw", "Bijen"]
     ],
     output: [
-      { naam: "Zonnedauw", icoon: "icons/Zonnedauw.png", map: "Planten", 
+      { naam: "Zonnedauw", naam_en: "Sundew", icoon: "icons/Zonnedauw.png", map: "Planten", 
         quote: `The sundew catches flies by means of a sticky fluid on its leaves
         <br><br>- John Ellis`
       },
@@ -13990,7 +14067,7 @@ const combinaties = [
       ["Venusvliegenvanger", "Muggen"], ["Venusvliegenvanger", "Bijen"]
     ],
     output: [
-      { naam: "Venusvliegenvanger", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
+      { naam: "Venusvliegenvanger", naam_en: "Venus flytraps", icoon: "icons/Venusvliegenvanger.png", map: "Planten", 
         quote: `The sensitive leaves respond to touch in a manner almost animal-like
         <br><br>- Francis Darwin`
       },
@@ -14005,171 +14082,202 @@ const combinaties = [
     input: ["Oercaryophyllales", "Kust"],
     tijd: 30_000_000,
     output: [
-      { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
+      { naam: "Bieten", naam_en: "Beets", icoon: "icons/Bieten.png", map: "Groenten", 
         quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
         <br><br>- George Marsh`
       },
-      { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
+      { naam: "Anjers", naam_en: "Carnations", icoon: "icons/Anjers.png", map: "Bloemen", 
         quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oercaryophyllales", "Bijen"],
     tijd: 30_000_000,
     output: [
-      { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
+      { naam: "Anjers", naam_en: "Carnations", icoon: "icons/Anjers.png", map: "Bloemen", 
         quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       },
-      { naam: "Boekweit", icoon: "icons/Boekweit.png", map: "Zaden", 
+      { naam: "Boekweit", naam_en: "Buckwheat", icoon: "icons/Boekweit.png", map: "Zaden", 
         quote: `Buckwheat is the food of the simple man
         <br><br>- Lev Tolstoy`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oercaryophyllales", "Duinen"],
     hint: `Sommige caryophyllales voelen zich thuis in de duinen.`,
+    hint_en: `Some caryophyllales feel at home in the dunes.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
+      { naam: "Anjers", naam_en: "Carnations", icoon: "icons/Anjers.png", map: "Bloemen", 
         quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oercaryophyllales", "Weide"],
     hint: `Sommige caryophyllales voelen zich thuis in de grasweides.`,
+    hint_en: `Some caryophyllales feel at home in grasslands.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Spinazie", icoon: "icons/Spinazie.png", map: "Groenten", 
+      { naam: "Spinazie", naam_en: "Spinach", icoon: "icons/Spinazie.png", map: "Groenten", 
         quote: `Spinach stands in our culture for what is green, clean, and strengthening
         <br><br>- Michael Pollan`
       },
-      { naam: "Bieten", icoon: "icons/Bieten.png", map: "Groenten", 
+      { naam: "Bieten", naam_en: "Beets", icoon: "icons/Bieten.png", map: "Groenten", 
         quote: `Sugar extracted from the beet has altered the economics of agriculture in temperate lands
         <br><br>- George Marsh`
       },
-      { naam: "Anjers", icoon: "icons/Anjers.png", map: "Bloemen", 
+      { naam: "Anjers", naam_en: "Carnations", icoon: "icons/Anjers.png", map: "Bloemen", 
         quote: `The fairest flowers of the season are the carnations
         <br><br>- William Shakespeare`
       },
-      { naam: "Boekweit", icoon: "icons/Boekweit.png", map: "Zaden", 
+      { naam: "Boekweit", naam_en: "Buckwheat", icoon: "icons/Boekweit.png", map: "Zaden", 
         quote: `Buckwheat is the food of the simple man
         <br><br>- Lev Tolstoy`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oercaryophyllales", "Steppe"],
     hint: `Sommige caryophyllales voelen zich thuis op de steppe.`,
+    hint_en: `Some caryophyllales feel at home on the steppe.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Boekweit", icoon: "icons/Boekweit.png", map: "Zaden", 
+      { naam: "Boekweit", naam_en: "Buckwheat", icoon: "icons/Boekweit.png", map: "Zaden", 
         quote: `Buckwheat is the food of the simple man
         <br><br>- Lev Tolstoy`
       },
-      { naam: "Rabarber", icoon: "icons/Rabarber.png", map: "Groenten", 
+      { naam: "Rabarber", naam_en: "Rhubarb", icoon: "icons/Rabarber.png", map: "Groenten", 
         quote: `Rhubarb is valued both for its root in medicine and its leafstalks in food
         <br><br>- John Gerard`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerasteriden", "Evolutie"],
     hint: `Vergeet niet hoeveel soorten wel niet voortkomen uit de voorouderlijke asteriden.`,
+    hint_en: `Don't forget just how many species can emerge from the great asterids.`,
     tijd: 95_000_000,
     output: [
-      { naam: "Oerericales", icoon: "icons/Oerericales.png", map: "Planten", 
+      { naam: "Oerericales", naam_en: "Urericales", icoon: "icons/Oerericales.png", map: "Planten", 
         quote: `The Ericales are a morphologically diverse order characterized by frequent adaptations to nutrient-poor 
         and acidic soils, often including evergreen shrubs with ericoid leaves
         <br><br>- K.A. Kron`
       },
-      { naam: "Oerlamiden", icoon: "icons/Oerlamiden.png", map: "Planten", 
+      { naam: "Oerlamiden", naam_en: "Urlamids", icoon: "icons/Oerlamiden.png", map: "Planten", 
         quote: `The Lamiales are characterized by a predominance of sympetalous flowers, often bilaterally symmetrical, 
         and a tendency toward specialized pollination systems
         <br><br>- Richard Olmstead`
       },
-      { naam: "Oercampanuliden", icoon: "icons/Oercampanuliden.png", map: "Planten", 
+      { naam: "Oercampanuliden", naam_en: "Urcampanulids", icoon: "icons/Oercampanuliden.png", map: "Planten", 
         quote: `The campanulid clade contains numerous lineages with highly modified flowers, often exhibiting reduced 
         perianth parts and adaptations to specialized pollination systems
         <br><br>- P.F. Stevens`
       },
-      { naam: "Hortensia", icoon: "icons/Hortensia.png", map: "Bloemen", 
+      { naam: "Hortensia", naam_en: "Hortensia", icoon: "icons/Hortensia.png", map: "Bloemen", 
         quote: `Hydrangeas change colour with the soil, a most curious and pleasing effect
         <br><br>- Christopher Lloyd`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerasteriden", "Bos"],
     hint: `Sommige asteriden volgen een aparte lijn als bekende bosbloemen.`,
+    hint_en: `Some asterids follow a distinct lineage as familiar woodland flowers.`,
     tijd: 90_000_000,
     output: [
-      { naam: "Hortensia", icoon: "icons/Hortensia.png", map: "Bloemen", 
+      { naam: "Hortensia", naam_en: "Hortensia", icoon: "icons/Hortensia.png", map: "Bloemen", 
         quote: `Hydrangeas change colour with the soil, a most curious and pleasing effect
         <br><br>- Christopher Lloyd`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Steppe", "Oermonocotylen"],
     hint: `Sommige monocotylen voelen zich thuis op de steppe.`,
+    hint_en: `Some monocots feel at home on the steppe.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Bloemen", 
+      { naam: "Tulpen", naam_en: "Tulips", icoon: "icons/Tulpen.png", map: "Bloemen", 
         quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
         <br><br>- Elizabeth Murray`
       },
-      { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
+      { naam: "Irissen", naam_en: "Irises", icoon: "icons/Irissen.png", map: "Bloemen", 
         quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
         <br><br>- W.J. Bean`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` }
-    }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oerplacentalia", "Lucht"], ["Oerplacentalia", "Vleugels"]
     ],
     hint: `Sommige placentadieren gaan de lucht dankzij het vel tussen hun vingers.`,
+    hint_en: `Some placental mammals take to the air thanks to the membrane between their fingers.`,
     tijd: 60_000_000,
     output: [
-      { naam: "Vleermuizen", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
+      { naam: "Vleermuizen", naam_en: "Bats", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
         quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
         <br><br>- Li Bai`
       }
@@ -14195,7 +14303,7 @@ const combinaties = [
       ["Vleermuizen", "Honing"]
     ],
     output: [
-      { naam: "Vleermuizen", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
+      { naam: "Vleermuizen", naam_en: "Bats", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
         quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
         <br><br>- Li Bai`
       },
@@ -14223,7 +14331,7 @@ const combinaties = [
       ["Vleermuizen", "Mussen"], ["Vleermuizen", "Kolibries"], ["Vleermuizen", "Kanaries"]  
     ],
     output: [
-      { naam: "Vleermuizen", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
+      { naam: "Vleermuizen", naam_en: "Bats", icoon: "icons/Vleermuizen.png", map: "Zoogdieren", 
         quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
         <br><br>- Li Bai`
       },
@@ -14247,9 +14355,10 @@ const combinaties = [
       ["Oerplacentalia", "Zee"], ["Oerplacentalia", "Rivier"], ["Oerplacentalia", "Lagune"]
     ],
     hint: `Sommige placentadieren kiezen voor het ruime sop.`,
+    hint_en: `Some placental mammals take to the open sea.`,
     tijd: 60_000_000,
     output: [
-      { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
+      { naam: "Zeekoeien", naam_en: "Manatees", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
         quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
         <br><br>- Charles Fransen`
       }
@@ -14274,7 +14383,7 @@ const combinaties = [
       ["Zeekoeien", "Sla"], ["Zeekoeien", "Andijvie"]
     ],
     output: [
-      { naam: "Zeekoeien", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
+      { naam: "Zeekoeien", naam_en: "Manatees", icoon: "icons/Zeekoeien.png", map: "Waterdieren", 
         quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
         <br><br>- Charles Fransen`
       },
@@ -14303,9 +14412,10 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Klif"],
     hint: `Sommige placentadieren leven op de kliffen.`,
+    hint_en: `Some placental mammals choose the cliffs.`,
     tijd: 60_000_000,
     output: [
-      { naam: "Klipdassen", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
+      { naam: "Klipdassen", naam_en: "Hyraxes", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
         quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
         calls
         <br><br>- Bernhard Grzimek`
@@ -14344,7 +14454,7 @@ const combinaties = [
       ["Klipdassen", "Sperziebonen"], ["Klipdassen", "Kidneybonen"] 
     ],
     output: [
-      { naam: "Klipdassen", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
+      { naam: "Klipdassen", naam_en: "Hyraxes", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
         quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
         calls
         <br><br>- Bernhard Grzimek`
@@ -14370,7 +14480,7 @@ const combinaties = [
       ["Klipdassen", "Muizen"], ["Klipdassen", "Spitsmuizen"]
     ],
     output: [
-      { naam: "Klipdassen", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
+      { naam: "Klipdassen", naam_en: "Hyraxes", icoon: "icons/Klipdassen.png", map: "Zoogdieren", 
         quote: `The hyrax lives among rocks and cliffs, where it forms colonies that communicate with sharp, birdlike 
         calls
         <br><br>- Bernhard Grzimek`
@@ -14395,9 +14505,10 @@ const combinaties = [
       ["Oerplacentalia", "Aarde"], ["Oerplacentalia", "Klei"], ["Oerplacentalia", "Heuvel"]
     ],
     hint: `Sommige placentadieren gaan ondergronds..`,
+    hint_en: `Some placental mammals go underground..`,
     tijd: 10_000_000,
     output: [
-      { naam: "Mollen", icoon: "icons/Mollen.png", map: "Zoogdieren", 
+      { naam: "Mollen", naam_en: "Moles", icoon: "icons/Mollen.png", map: "Zoogdieren", 
         quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
         <br><br>- Richard Mabey`
       }
@@ -14416,7 +14527,7 @@ const combinaties = [
       ["Mollen", "Sprinkhanen"], ["Mollen", "Muggen"], ["Mollen", "Bijen"]
     ],
     output: [
-      { naam: "Mollen", icoon: "icons/Mollen.png", map: "Zoogdieren", 
+      { naam: "Mollen", naam_en: "Moles", icoon: "icons/Mollen.png", map: "Zoogdieren", 
         quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
         <br><br>- Richard Mabey`
       },
@@ -14439,7 +14550,7 @@ const combinaties = [
       ["Mollen", "Muizen"], ["Mollen", "Spitsmuizen"]
     ],
     output: [
-      { naam: "Mollen", icoon: "icons/Mollen.png", map: "Zoogdieren", 
+      { naam: "Mollen", naam_en: "Moles", icoon: "icons/Mollen.png", map: "Zoogdieren", 
         quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
         <br><br>- Richard Mabey`
       },
@@ -14461,22 +14572,23 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Bos"], 
     hint: `Sommige placentadieren voelen zich thuis in de bossen`,
+    hint_en: `Some placental mammals feel at home in the forests`,
     tijd: 10_000_000,
     output: [
-      { naam: "Oerhondachtigen", icoon: "icons/Oerhondachtigen.png", map: "Carnivoren", 
+      { naam: "Oerhondachtigen", naam_en: "Urcanids", icoon: "icons/Oerhondachtigen.png", map: "Carnivoren", 
         quote: `The Canidae are an ancient lineage of carnivores that originated in North America during the Eocene epoch
         <br><br>- Xiaoming Wang`
       },
-      { naam: "Oerkatachtigen", icoon: "icons/Oerkatachtigen.png", map: "Carnivoren", 
+      { naam: "Oerkatachtigen", naam_en: "Urfelids", icoon: "icons/Oerkatachtigen.png", map: "Carnivoren", 
         quote: `The diversification of felids reflects a shift toward hypercarnivory and specialized predation strategies
         <br><br>- Alan Turner`
       },
-      { naam: "Egels", icoon: "icons/Egels.png", map: "Zoogdieren", 
+      { naam: "Egels", naam_en: "Hedgehogs", icoon: "icons/Egels.png", map: "Zoogdieren", 
         quote: `Hedgehogs are nocturnal mammals that forage for insects and small invertebrates in gardens and woodland 
         edges
         <br><br>- Richard Fitter`
       },
-      { naam: "Spitsmuizen", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
+      { naam: "Spitsmuizen", naam_en: "Shrews", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
         quote: `The common shrew is a tiny, insectivorous mammal that lives hidden among grass and fallen leaves, rarely
         seen despite its abundance
         <br><br>- Derek Ratcliffe`
@@ -14504,7 +14616,7 @@ const combinaties = [
       ["Egels", "Bosbessen"], ["Egels", "Aardbeien"], ["Egels", "Frambozen"], ["Egels", "Bananen"]
     ],
     output: [
-      { naam: "Egels", icoon: "icons/Egels.png", map: "Zoogdieren", 
+      { naam: "Egels", naam_en: "Hedgehogs", icoon: "icons/Egels.png", map: "Zoogdieren", 
         quote: `Hedgehogs are nocturnal mammals that forage for insects and small invertebrates in gardens and woodland 
         edges
         <br><br>- Richard Fitter`
@@ -14530,7 +14642,7 @@ const combinaties = [
       ["Egels", "Muizen"], ["Egels", "Spitsmuizen"]
     ],
     output: [
-      { naam: "Egels", icoon: "icons/Egels.png", map: "Zoogdieren", 
+      { naam: "Egels", naam_en: "Hedgehogs", icoon: "icons/Egels.png", map: "Zoogdieren", 
         quote: `Hedgehogs are nocturnal mammals that forage for insects and small invertebrates in gardens and woodland 
         edges
         <br><br>- Richard Fitter`
@@ -14554,7 +14666,7 @@ const combinaties = [
     input: ["Oerplacentalia", "Regenwoud"], 
     tijd: 10_000_000,
     output: [
-      { naam: "Spitsmuizen", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
+      { naam: "Spitsmuizen", naam_en: "Shrews", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
         quote: `The common shrew is a tiny, insectivorous mammal that lives hidden among grass and fallen leaves, rarely
         seen despite its abundance
         <br><br>- Derek Ratcliffe`
@@ -14575,7 +14687,7 @@ const combinaties = [
       ["Spitsmuizen", "Honing"]
     ],
     output: [
-      { naam: "Spitsmuizen", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
+      { naam: "Spitsmuizen", naam_en: "Shrews", icoon: "icons/Spitsmuizen.png", map: "Zoogdieren", 
         quote: `The common shrew is a tiny, insectivorous mammal that lives hidden among grass and fallen leaves, rarely
         seen despite its abundance
         <br><br>- Derek Ratcliffe`
@@ -14599,17 +14711,18 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Tropisch regenwoud"], 
     hint: `Sommige placentadieren voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some placental mammals feel at home in the tropical rainforest.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Oerprimaten", icoon: "icons/Oerprimaten.png", map: "Primaten", 
+      { naam: "Oerprimaten", naam_en: "Urprimates", icoon: "icons/Oerprimaten.png", map: "Primaten", 
         quote: `Among primates, social bonds and communication are as important as physical survival
         <br><br>- Jane Goodall`
       },
-      { naam: "Luiaarden", icoon: "icons/Luiaarden.png", map: "Zoogdieren", 
+      { naam: "Luiaarden", naam_en: "Sloths", icoon: "icons/Luiaarden.png", map: "Zoogdieren", 
         quote: `The sloth spends nearly all its life hanging upside down in the canopy, moving only when necessary
         <br><br>- David Attenborough`
       },
-      { naam: "Miereneters", icoon: "icons/Miereneters.png", map: "Zoogdieren", 
+      { naam: "Miereneters", naam_en: "Anteaters", icoon: "icons/Miereneters.png", map: "Zoogdieren", 
         quote: `The giant anteater uses its long, tubular snout to feed on ants and termites, consuming thousands in a 
         single day
         <br><br>- David Attenborough`
@@ -14640,7 +14753,7 @@ const combinaties = [
       ["Luiaarden", "Kaki"], ["Luiaarden", "Dadels"]
     ],
     output: [
-      { naam: "Luiaarden", icoon: "icons/Luiaarden.png", map: "Zoogdieren", 
+      { naam: "Luiaarden", naam_en: "Sloths", icoon: "icons/Luiaarden.png", map: "Zoogdieren", 
         quote: `The sloth spends nearly all its life hanging upside down in the canopy, moving only when necessary
         <br><br>- David Attenborough`
       },
@@ -14672,7 +14785,7 @@ const combinaties = [
       ["Miereneters", "Ei"]
     ],
     output: [
-      { naam: "Miereneters", icoon: "icons/Miereneters.png", map: "Zoogdieren", 
+      { naam: "Miereneters", naam_en: "Anteaters", icoon: "icons/Miereneters.png", map: "Zoogdieren", 
         quote: `The giant anteater uses its long, tubular snout to feed on ants and termites, consuming thousands in a 
         single day
         <br><br>- David Attenborough`
@@ -14691,14 +14804,15 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Savanne"], 
     hint: `Sommige placentadieren voelen zich thuis op de savanne.`,
+    hint_en: `Some placental mammals feel at home on the savannah.`,
     tijd: 60_000_000,
     output: [
-      { naam: "Oerslurfdieren", icoon: "icons/Oerslurfdieren.png", map: "Zoogdieren", 
+      { naam: "Oerslurfdieren", naam_en: "Urproboscideans", icoon: "icons/Oerslurfdieren.png", map: "Zoogdieren", 
         quote: `The mammoths, mastodons, and elephants belong to a lineage that has carried its immense bodies across 
         changing worlds for millions of years
         <br><br>- Adrian Lister`
       },
-      { naam: "Aardvarkens", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
+      { naam: "Aardvarkens", naam_en: "Aardvarks", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
         quote: `Aardvarks dig extensive burrow systems that provide shelter not only for themselves but for many other 
         animals
         <br><br>- Richard Estes`
@@ -14741,7 +14855,7 @@ const combinaties = [
       ["Oerslurfdieren", "Sperziebonen"], ["Oerslurfdieren", "Kidneybonen"]
     ],
     output: [
-      { naam: "Oerslurfdieren", icoon: "icons/Oerslurfdieren.png", map: "Zoogdieren", 
+      { naam: "Oerslurfdieren", naam_en: "Urproboscideans", icoon: "icons/Oerslurfdieren.png", map: "Zoogdieren", 
         quote: `The mammoths, mastodons, and elephants belong to a lineage that has carried its immense bodies across 
         changing worlds for millions of years
         <br><br>- Adrian Lister`
@@ -14777,7 +14891,7 @@ const combinaties = [
       ["Aardvarkens", "Truffels"]
     ],
     output: [
-      { naam: "Aardvarkens", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
+      { naam: "Aardvarkens", naam_en: "Aardvarks", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
         quote: `Aardvarks dig extensive burrow systems that provide shelter not only for themselves but for many other 
         animals
         <br><br>- Richard Estes`
@@ -14803,7 +14917,7 @@ const combinaties = [
       ["Aardvarkens", "Muizen"], ["Aardvarkens", "Spitsmuizen"]
     ],
     output: [
-      { naam: "Aardvarkens", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
+      { naam: "Aardvarkens", naam_en: "Aardvarks", icoon: "icons/Aardvarkens.png", map: "Zoogdieren", 
         quote: `Aardvarks dig extensive burrow systems that provide shelter not only for themselves but for many other 
         animals
         <br><br>- Richard Estes`
@@ -14826,23 +14940,24 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Weide"],
     hint: `Sommige placentadieren voelen zich thuis op de grasvlaktes.`,
+    hint_en: `Some placental mammals feel at home on the grasslands.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Oerevenhoevigen", icoon: "icons/Oerevenhoevigen.png", map: "Hoefdieren", 
+      { naam: "Oerevenhoevigen", naam_en: "Urartiodactyls", icoon: "icons/Oerevenhoevigen.png", map: "Hoefdieren", 
         quote: `The evolution of the even-toed ungulates transformed the world’s grasslands into landscapes of migration, 
         grazing, and herd movement
         <br><br>- Richard Dawkins`
       },
-      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
+      { naam: "Oerknaagdieren", naam_en: "Urrodents", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
         quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
         <br><br>- Edward Wilson`
       },
-      { naam: "Gordeldieren", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
+      { naam: "Gordeldieren", naam_en: "Armadillos", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
         quote: `Armadillos are burrowing mammals whose armour plates provide protection while they forage for insects 
         and small invertebrates
         <br><br>- Richard Estes`
       },
-      { naam: "Konijnen", icoon: "icons/Konijnen.png", map: "Zoogdieren", 
+      { naam: "Konijnen", naam_en: "Rabbits", icoon: "icons/Konijnen.png", map: "Zoogdieren", 
         quote: `Rabbits graze quietly in open fields, vanishing into burrows at the slightest sign of danger
         <br><br>- Richard Adams`
       }
@@ -14883,7 +14998,7 @@ const combinaties = [
       ["Oerknaagdieren", "Honing"]
     ],
     output: [
-      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
+      { naam: "Oerknaagdieren", naam_en: "Urrodents", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
         quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
         <br><br>- Edward Wilson`
       },
@@ -14904,7 +15019,7 @@ const combinaties = [
       ["Oerknaagdieren", "Salamanders"], ["Oerknaagdieren", "Kikkers"], ["Oerknaagdieren", "Padden"]
     ],
     output: [
-      { naam: "Oerknaagdieren", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
+      { naam: "Oerknaagdieren", naam_en: "Urrodents", icoon: "icons/Oerknaagdieren.png", map: "Zoogdieren", 
         quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
         <br><br>- Edward Wilson`
       },
@@ -14949,7 +15064,7 @@ const combinaties = [
       ["Gordeldieren", "Frambozen"], ["Gordeldieren", "Guaves"], ["Gordeldieren", "Bananen"]
     ],
     output: [
-      { naam: "Gordeldieren", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
+      { naam: "Gordeldieren", naam_en: "Armadillos", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
         quote: `Armadillos are burrowing mammals whose armour plates provide protection while they forage for insects 
         and small invertebrates
         <br><br>- Richard Estes`
@@ -14975,7 +15090,7 @@ const combinaties = [
       ["Gordeldieren", "Muizen"], ["Gordeldieren", "Mollen"]
     ],
     output: [
-      { naam: "Gordeldieren", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
+      { naam: "Gordeldieren", naam_en: "Armadillos", icoon: "icons/Gordeldieren.png", map: "Zoogdieren", 
         quote: `Armadillos are burrowing mammals whose armour plates provide protection while they forage for insects 
         and small invertebrates
         <br><br>- Richard Estes`
@@ -15026,7 +15141,7 @@ const combinaties = [
       ["Konijnen", "Pap"], ["Konijnen", "Brood"]
     ],
     output: [
-      { naam: "Konijnen", icoon: "icons/Konijnen.png", map: "Zoogdieren", 
+      { naam: "Konijnen", naam_en: "Rabbits", icoon: "icons/Konijnen.png", map: "Zoogdieren", 
         quote: `Rabbits graze quietly in open fields, vanishing into burrows at the slightest sign of danger
         <br><br>- Richard Adams`
       },
@@ -15044,13 +15159,14 @@ const combinaties = [
   {
     input: ["Oerplacentalia", "Steppe"],
     hint: `Sommige placentadieren voelen zich thuis op de steppe.`,
+    hint_en: `Some placental mammals feel at home on the steppe.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Oeronevenhoevigen", icoon: "icons/Oeronevenhoevigen.png", map: "Hoefdieren", 
+      { naam: "Oeronevenhoevigen", naam_en: "Urperissodactyls", icoon: "icons/Oeronevenhoevigen.png", map: "Hoefdieren", 
         quote: `Perissodactyls are ungulates that bear their weight primarily on the third toe
         <br><br>- George Simpson`
       },
-      { naam: "Hazen", icoon: "icons/Hazen.png", map: "Zoogdieren", 
+      { naam: "Hazen", naam_en: "Hares", icoon: "icons/Hazen.png", map: "Zoogdieren", 
         quote: `The hare seems to belong to the wind as much as to the ground, appearing and vanishing in the same breath
         <br><br>- J.A. Baker`
       }
@@ -15088,7 +15204,7 @@ const combinaties = [
       ["Hazen", "Pap"], ["Hazen", "Brood"]
     ],
     output: [
-      { naam: "Hazen", icoon: "icons/Hazen.png", map: "Zoogdieren", 
+      { naam: "Hazen", naam_en: "Hares", icoon: "icons/Hazen.png", map: "Zoogdieren", 
         quote: `The hare seems to belong to the wind as much as to the ground, appearing and vanishing in the same breath
         <br><br>- J.A. Baker`
       },
@@ -15108,9 +15224,10 @@ const combinaties = [
       ["Oerbuideldieren", "Bos"], ["Oerbuideldieren", "Weide"]
     ],
     hint: `Sommige buideldieren voelen zich thuis in de bossen.`,
+    hint_en: `Some marsupials feel at home in the forests.`,
     tijd: 25_000_000,
     output: [
-      { naam: "Wombats", icoon: "icons/Wombats.png", map: "Zoogdieren", 
+      { naam: "Wombats", naam_en: "Wombats", icoon: "icons/Wombats.png", map: "Zoogdieren", 
         quote: `The common wombat digs extensive burrows and emerges mainly at night to graze on grasses and roots
         <br><br>- Tim Flannery`
       }
@@ -15147,7 +15264,7 @@ const combinaties = [
       ["Wombats", "Andijvie"], ["Wombats", "Boerenkool"]
     ],
     output: [
-      { naam: "Wombats", icoon: "icons/Wombats.png", map: "Zoogdieren", 
+      { naam: "Wombats", naam_en: "Wombats", icoon: "icons/Wombats.png", map: "Zoogdieren", 
         quote: `The common wombat digs extensive burrows and emerges mainly at night to graze on grasses and roots
         <br><br>- Tim Flannery`
       },
@@ -15167,9 +15284,10 @@ const combinaties = [
       ["Oerbuideldieren", "Savanne"], ["Oerbuideldieren", "Woestijn"]
     ],
     hint: `Sommige buideldieren voelen zich thuis in droge zandvlaktes.`,
+    hint_en: `Some marsupials feel at home in dry sandy plains.`, 
     tijd: 25_000_000,
     output: [
-      { naam: "Kangoeroes", icoon: "icons/Kangoeroes.png", map: "Zoogdieren", 
+      { naam: "Kangoeroes", naam_en: "Kangaroos", icoon: "icons/Kangoeroes.png", map: "Zoogdieren", 
         quote: `Kangaroos move in bounds across the open landscape, their powerful hind legs allowing great leaps over 
         long distances
         <br><br>- David Attenborough`
@@ -15202,7 +15320,7 @@ const combinaties = [
       ["Kangoeroes", "Andijvie"], ["Kangoeroes", "Boerenkool"]
     ],
     output: [
-      { naam: "Kangoeroes", icoon: "icons/Kangoeroes.png", map: "Zoogdieren", 
+      { naam: "Kangoeroes", naam_en: "Kangaroos", icoon: "icons/Kangoeroes.png", map: "Zoogdieren", 
         quote: `Kangaroos move in bounds across the open landscape, their powerful hind legs allowing great leaps over 
         long distances
         <br><br>- David Attenborough`
@@ -15221,9 +15339,10 @@ const combinaties = [
   {
     input: ["Oerbuideldieren", "Eucalyptus"],
     hint: `Eucalyptus? Daar voelt maar één dier zich thuis.`,
+    hint_en: `Eucalyptus? Only one animal feels at home there.`,
     tijd: 25_000_000,
     output: [
-      { naam: "Koala", icoon: "icons/Koala.png", map: "Zoogdieren", 
+      { naam: "Koala", naam_en: "Koalas", icoon: "icons/Koala.png", map: "Zoogdieren", 
         quote: `Koalas spend most of their lives in eucalyptus trees, feeding and sleeping among the branches
         <br><br>- David Attenborough`
       }
@@ -15237,7 +15356,7 @@ const combinaties = [
       ["Koala", "Acacia"], ["Koala", "Eucalyptus"]
     ],
     output: [
-      { naam: "Koala", icoon: "icons/Koala.png", map: "Zoogdieren", 
+      { naam: "Koala", naam_en: "Koalas", icoon: "icons/Koala.png", map: "Zoogdieren", 
         quote: `Koalas spend most of their lives in eucalyptus trees, feeding and sleeping among the branches
         <br><br>- David Attenborough`
       },
@@ -15257,8 +15376,9 @@ const combinaties = [
       ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"]
     ],
     hint: `Verdriet is een complexe emotie die veel vraagt van sociale dieren.`,
+    hint_en: `Sadness is a complex emotion that places significant demands on social animals.`,
     output: [
-      { naam: "Verdriet", icoon: "icons/Verdriet.png", map: "Brein", 
+      { naam: "Verdriet", naam_en: "Sadness", icoon: "icons/Verdriet.png", map: "Brein", 
         quote: `A feeling of sadness and longing, that is not akin to pain, and resembles sorrow only, as the mist
         resembles the rain
         <br><br>- Henry Longfellow`
@@ -15272,8 +15392,9 @@ const combinaties = [
       ["Papegaaien", "Vreugde"]
     ],
     hint: `Voor wie het zo ervaart mag trots zijn op het eten.`,
+    hint_en: `Those who perceive it this way can take pride in their food.`,
     output: [
-      { naam: "Trots", icoon: "icons/Trots.png", map: "Brein", 
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
         quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
         <br><br>- Georges Bernanos`
       }
@@ -15287,8 +15408,9 @@ const combinaties = [
       ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"]
     ],
     hint: `Van de grote dieren zijn er ook die liever samen leven.`,
+    hint_en: `Among the largest animals, there are also some that prefer to live together.`,
     output: [
-      { naam: "Gemeenschap", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
+      { naam: "Gemeenschap", naam_en: "Community", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
         quote: `Small communities grow great through harmony, great ones fall to pieces through discord
         <br><br>- Sallust`
       }
@@ -15300,8 +15422,9 @@ const combinaties = [
       ["Papegaaien", "Hiërarchie"]
     ],
     hint: `Met hiërarchie komt ook een nieuwe emotie vrij bij hen die er last van hebben.`,
+    hint_en: `Hierarchy unlocks a new emotion in those who suffer because of it.`,
     output: [
-      { naam: "Jaloezie", icoon: "icons/Jaloezie.png", map: "Brein", 
+      { naam: "Jaloezie", naam_en: "Envy", icoon: "icons/Jaloezie.png", map: "Brein", 
         quote: `Envy is the art of counting the other fellow's blessings instead of your own
         <br><br>- Harold Coffin`
       }
@@ -15312,12 +15435,12 @@ const combinaties = [
       ["Kippen", "Kippen"], ["Fazanten", "Fazanten"], ["Pauwen", "Pauwen"]
     ],
     output: [
-      { naam: "Drift", icoon: "icons/Drift.png", map: "Brein", 
+      { naam: "Drift", naam_en: "Desire", icoon: "icons/Drift.png", map: "Brein", 
         quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
         force our involuntary
         <br><br>- Blaise Pascal`
       },
-      { naam: "Jaloezie", icoon: "icons/Jaloezie.png", map: "Brein", 
+      { naam: "Jaloezie", naam_en: "Envy", icoon: "icons/Jaloezie.png", map: "Brein", 
         quote: `Envy is the art of counting the other fellow's blessings instead of your own
         <br><br>- Harold Coffin`
       }
@@ -15328,16 +15451,16 @@ const combinaties = [
       ["Kraaien", "Kraaien"], ["Papegaaien", "Papegaaien"]
     ],
     output: [
-      { naam: "Drift", icoon: "icons/Drift.png", map: "Brein", 
+      { naam: "Drift", naam_en: "Desire", icoon: "icons/Drift.png", map: "Brein", 
         quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
         force our involuntary
         <br><br>- Blaise Pascal`
       },
-      { naam: "Jaloezie", icoon: "icons/Jaloezie.png", map: "Brein", 
+      { naam: "Jaloezie", naam_en: "Envy", icoon: "icons/Jaloezie.png", map: "Brein", 
         quote: `Envy is the art of counting the other fellow's blessings instead of your own
         <br><br>- Harold Coffin`
       },
-      { naam: "Gemeenschap", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
+      { naam: "Gemeenschap", naam_en: "Community", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
         quote: `Small communities grow great through harmony, great ones fall to pieces through discord
         <br><br>- Sallust`
       }
@@ -15348,9 +15471,10 @@ const combinaties = [
       ["Suikerriet", "Ster"], ["Suikerriet", "Licht"], ["Suikerriet", "Fotosynthese"]
     ],
     hint: `In hun sappige stengels verwerkt suikerriet met behulp van de zon hun glucose tot sacharose.`,
+    hint_en: `In their juicy stalks, sugarcanes use the sun to convert glucose into sucrose.`,
     tijd: 4_000_000,
     output: [
-      { naam: "Suiker", icoon: "icons/Suiker.png", map: "Genotwaren", 
+      { naam: "Suiker", naam_en: "Sugar", icoon: "icons/Suiker.png", map: "Genotwaren", 
         quote: `Sugar is a substance that has taken hold of the modern world like a drug
         <br><br>- William Dufty`
       }
@@ -15359,9 +15483,10 @@ const combinaties = [
   {
     input: ["map:Granen", "Archaeopteryx"],
     hint: `Sommige archaeopteryx doen zich tegoed aan granen en zaadjes`,
+    hint_en: `Some archaeopteryx feast on grains and seeds`,
     tijd: 10_000_000,
     output: [
-      { naam: "Mussen", icoon: "icons/Mussen.png", map: "Vogels", 
+      { naam: "Mussen", naam_en: "Sparrows", icoon: "icons/Mussen.png", map: "Vogels", 
         quote: `A sparrow hops - and the quiet of the garden is suddenly complete
         <br><br>- Kobayashi Issa`
       }
@@ -15373,7 +15498,7 @@ const combinaties = [
     ],
     tijd: 50_000_000,
     output: [
-      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
+      { naam: "Elzen", naam_en: "Alders", icoon: "icons/Elzen.png", map: "Bomen", 
         quote: `Alders are the silent pioneers of wet ground and riverbanks
         <br><br>- Richard Mabey`
       }
@@ -15385,7 +15510,7 @@ const combinaties = [
     ],
     tijd: 50_000_000,
     output: [
-      { naam: "Eiken", icoon: "icons/Eiken.png", map: "Bomen", 
+      { naam: "Eiken", naam_en: "Oaks", icoon: "icons/Eiken.png", map: "Bomen", 
         quote: `The mighty oak was once a little nut
         <br><br>- Alfred Tennyson`
       }
@@ -15394,13 +15519,14 @@ const combinaties = [
   {
     input: ["Oerfagales", "Rivier"],
     hint: `Sommige fagales voelen zich thuis bij de waterige grond van rivieren.`,
+    hint_en: `Some fagales feel at home in the waterlogged soil along rivers.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Elzen", icoon: "icons/Elzen.png", map: "Bomen", 
+      { naam: "Elzen", naam_en: "Alders", icoon: "icons/Elzen.png", map: "Bomen", 
         quote: `Alders are the silent pioneers of wet ground and riverbanks
         <br><br>- Richard Mabey`
       },
-      { naam: "Walnoten", icoon: "icons/Walnoten.png", map: "Zaden", 
+      { naam: "Walnoten", naam_en: "Walnuts", icoon: "icons/Walnoten.png", map: "Zaden", 
         quote: `The walnut carries strength within a guarded shell
         <br><br>- John Ruskin`
       }
@@ -15409,21 +15535,22 @@ const combinaties = [
   {
     input: ["Oerfagales", "Bos"],
     hint: `Veel fagales voelen zich thuis in het bos en creëren tezamen grote loofbossen.`,
+    hint_en: `Many fagales feel at home in the forest and, together, create large deciduous forests.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Beuken", icoon: "icons/Beuken.png", map: "Bomen", 
+      { naam: "Beuken", naam_en: "Beeches", icoon: "icons/Beuken.png", map: "Bomen", 
         quote: `Beech woods are remarkable for their smooth trunks and noble height
         <br><br>- Gilbert White`
       },
-      { naam: "Eiken", icoon: "icons/Eiken.png", map: "Bomen", 
+      { naam: "Eiken", naam_en: "Oaks", icoon: "icons/Eiken.png", map: "Bomen", 
         quote: `The mighty oak was once a little nut
         <br><br>- Alfred Tennyson`
       },
-      { naam: "Kastanjes", icoon: "icons/Kastanjes.png", map: "Zaden", 
+      { naam: "Kastanjes", naam_en: "Sweet chestnuts", icoon: "icons/Kastanjes.png", map: "Zaden", 
         quote: `Under the spreading chestnut tree, I sold you and you sold me
         <br><br>- George Orwell`
       },
-      { naam: "Hazelnoten", icoon: "icons/Hazelnoten.png", map: "Zaden", 
+      { naam: "Hazelnoten", naam_en: "Hazelnuts", icoon: "icons/Hazelnoten.png", map: "Zaden", 
         quote: `The hazel is the tree of wisdom and poetic inspiration
         <br><br>- Robert Graves`
       }
@@ -15434,9 +15561,10 @@ const combinaties = [
       ["Oerfagales", "Regenwoud"], ["Oerfagales", "Heide"]
     ],
     hint: `Sommige fagales voelen zich thuis op heidegrond en in naaldbossen.`,
+    hint_en: `Some fagales feel at home on heathland and in coniferous forests.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Berken", icoon: "icons/Berken.png", map: "Bomen", 
+      { naam: "Berken", naam_en: "Birches", icoon: "icons/Berken.png", map: "Bomen", 
         quote: `The birch is the emblem of the northern wilderness
         <br><br>- Henry Thoreau`
       }
@@ -15445,17 +15573,18 @@ const combinaties = [
   {
     input: ["Oerericales", "Berg"],
     hint: `Sommige ericales voelen zich thuis in de bergen.`,
+    hint_en: `Some ericales feel at home in the mountains.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
+      { naam: "Theeplanten", naam_en: "Tea plants", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
         <br><br>- Okakura Kakuzo`
       },
-      { naam: "Rododendron", icoon: "icons/Rododendron.png", map: "Bloemen", 
+      { naam: "Rododendron", naam_en: "Rhododendrons", icoon: "icons/Rododendron.png", map: "Bloemen", 
         quote: `The rhododendrons clothed the mountain sides in masses of brilliant colour
         <br><br>- Joseph Hooker`
       },
-      { naam: "Bosbessen", icoon: "icons/Bosbessen.png", map: "Fruit", 
+      { naam: "Bosbessen", naam_en: "Blueberries", icoon: "icons/Bosbessen.png", map: "Fruit", 
         quote: `I have been in the woods all afternoon, and my body has become a simple thing, tasting berries and
         listening
         <br><br>- Mary Oliver`
@@ -15467,9 +15596,10 @@ const combinaties = [
       ["Oerericales", "Zand"], ["Oerericales", "Duinen"], ["Oerericales", "Gras"], ["Oerericales", "Weide"]
     ],
     hint: `Sommige ericales voelen zich thuis in de zanderige duinen.`,
+    hint_en: `Some ericales feel at home in the sandy dunes.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
+      { naam: "Heide", naam_en: "Heath", icoon: "icons/Heide.png", map: "Planten", 
         quote: `The heather spreads like a purple sea across the hills
         <br><br>- W.H. Hudson`
       }
@@ -15478,9 +15608,10 @@ const combinaties = [
   {
     input: ["Oerericales", "Woestijn"],
     hint: `Sommige ericales voelen zich thuis in de woestijn.`,
+    hint_en: `Some ericales feel at home in the desert.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
+      { naam: "Arganbomen", naam_en: "Argan trees", icoon: "icons/Arganbomen.png", map: "Bomen", 
         quote: `The argan tree gives us oil, shade, and life in a difficult land
         <br><br>- Fatima Tihihit`
       }
@@ -15490,11 +15621,11 @@ const combinaties = [
     input: ["Oerericales", "Klif"],
     tijd: 5_000_000,
     output: [
-      { naam: "Arganbomen", icoon: "icons/Arganbomen.png", map: "Bomen", 
+      { naam: "Arganbomen", naam_en: "Argan trees", icoon: "icons/Arganbomen.png", map: "Bomen", 
         quote: `The argan tree gives us oil, shade, and life in a difficult land
         <br><br>- Fatima Tihihit`
       },
-      { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
+      { naam: "Heide", naam_en: "Heath", icoon: "icons/Heide.png", map: "Planten", 
         quote: `The heather spreads like a purple sea across the hills
         <br><br>- W.H. Hudson`
       }
@@ -15503,17 +15634,18 @@ const combinaties = [
   {
     input: ["Oerericales", "Bos"],
     hint: `Sommige ericales voelen zich thuis in de bossen.`,
+    hint_en: `Some ericales feel at home in the forests.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Kaki", icoon: "icons/Kaki.png", map: "Fruit", 
+      { naam: "Kaki", naam_en: "Persimmons", icoon: "icons/Kaki.png", map: "Fruit", 
         quote: `Even a persimmon is enough for a small life of contentment
         <br><br>- Kobayashi Issa`
       },
-      { naam: "Kiwi", icoon: "icons/Kiwi.png", map: "Fruit", 
+      { naam: "Kiwi", naam_en: "Kiwifruit", icoon: "icons/Kiwi.png", map: "Fruit", 
         quote: `The vine of the kiwifruit requires patience but rewards abundance
         <br><br>- Barbara Platts`
       },
-      { naam: "Bosbessen", icoon: "icons/Bosbessen.png", map: "Fruit", 
+      { naam: "Bosbessen", naam_en: "Blueberries", icoon: "icons/Bosbessen.png", map: "Fruit", 
         quote: `I have been in the woods all afternoon, and my body has become a simple thing, tasting berries and
         listening
         <br><br>- Mary Oliver`
@@ -15523,9 +15655,10 @@ const combinaties = [
   {
     input: ["Oerericales", "Gif"],
     hint: `Sommige ericales kiezen voor de strategie van het gif.`,
+    hint_en: `Some ericales opt for a strategy involving toxins.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
+      { naam: "Theeplanten", naam_en: "Tea plants", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
         <br><br>- Okakura Kakuzo`
       }
@@ -15534,9 +15667,10 @@ const combinaties = [
   {
     input: ["Oerericales", "Tropisch regenwoud"],
     hint: `Sommige ericales voelen zich thuis in het tropische Amazonewoud.`,
+    hint_en: `Some ericales feel at home in the tropical Amazon rainforest.`, 
     tijd: 15_000_000,
     output: [
-      { naam: "Paranoten", icoon: "icons/Paranoten.png", map: "Zaden", 
+      { naam: "Paranoten", naam_en: "Brazil nuts", icoon: "icons/Paranoten.png", map: "Zaden", 
         quote: `Brazil nut trees are among the most important non-timber forest products of the Amazon
         <br><br>- T.H. Hollowell`
       }
@@ -15548,15 +15682,15 @@ const combinaties = [
     ],
     tijd: 40_000_000,
     output: [
-      { naam: "Heide", icoon: "icons/Heide.png", map: "Planten", 
+      { naam: "Heide", naam_en: "Heath", icoon: "icons/Heide.png", map: "Planten", 
         quote: `The heather spreads like a purple sea across the hills
         <br><br>- W.H. Hudson`
       },
-      { naam: "Theeplanten", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
+      { naam: "Theeplanten", naam_en: "Tea plants", icoon: "icons/Theeplanten.png", map: "Genotwaren", 
         quote: `Tea is a religion of the art of life
         <br><br>- Okakura Kakuzo`
       },
-      { naam: "Bosbessen", icoon: "icons/Bosbessen.png", map: "Fruit", 
+      { naam: "Bosbessen", naam_en: "Blueberries", icoon: "icons/Bosbessen.png", map: "Fruit", 
         quote: `I have been in the woods all afternoon, and my body has become a simple thing, tasting berries and
         listening
         <br><br>- Mary Oliver`
