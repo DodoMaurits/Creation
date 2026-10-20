@@ -10163,7 +10163,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ MANTA ------------------ */
   {
     input: [
@@ -10204,7 +10204,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
@@ -10321,7 +10321,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ KABELJAUWEN ------------------ */
   {
     input: [
@@ -10411,7 +10411,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ MAANVISSEN ------------------ */
   {
     input: [
@@ -10459,7 +10459,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ FOREL ------------------ */
   {
     input: [
@@ -10536,7 +10536,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ PAPEGAAIVISSEN ------------------ */
   {
     input: [
@@ -10620,7 +10620,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ KARPERS ------------------ */
   {
     input: [
@@ -10726,7 +10726,7 @@ const combinaties = [
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
-        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ Vliegende vissen ------------------ */
   {
     input: [
@@ -10756,25 +10756,30 @@ const combinaties = [
       ["Oerstraalvinnigen", "Ven"], ["Oerstraalvinnigen", "Kroos"], ["Oerstraalvinnigen", "Waterriet"]
     ],
     hint: `Sommige straalvinnigen voelen zich thuis in de troebele vennetjes.`,
+    hint_en: `Some ray-finned fish feel right at home in murky little ponds.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+      { naam: "Karpers", naam_en: "Carp", icoon: "icons/Karpers.png", map: "Vissen", 
         quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
         <br><br>- David Attenborough`
       },
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+      { naam: "Snoeken", naam_en: "Pike", icoon: "icons/Snoeken.png", map: "Vissen", 
         quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
         <br><br>- Hugh Falkus`
       },
-      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+      { naam: "Meervallen", naam_en: "Catfish", icoon: "icons/Meervallen.png", map: "Vissen", 
         quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
         where sight is of little use
         <br><br>- Herbert Boschung`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ MEERVALLEN ------------------ */
   {
     input: [
@@ -10787,7 +10792,7 @@ const combinaties = [
       ["Meervallen", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
-      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+      { naam: "Meervallen", naam_en: "Catfish", icoon: "icons/Meervallen.png", map: "Vissen", 
         quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
         where sight is of little use
         <br><br>- Herbert Boschung`
@@ -10811,7 +10816,7 @@ const combinaties = [
       ["Meervallen", "Paling"], ["Meervallen", "Goudvissen"]
     ],
     output: [
-      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+      { naam: "Meervallen", naam_en: "Catfish", icoon: "icons/Meervallen.png", map: "Vissen", 
         quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
         where sight is of little use
         <br><br>- Herbert Boschung`
@@ -10846,34 +10851,39 @@ const combinaties = [
   {
     input: ["Oerstraalvinnigen", "Zee"],
     hint: `Sommige straalvinnigen zwemmen het liefst alle wereldzeeën over.`,
+    hint_en: `Some ray-finned fish prefer to discover the ocean, as we all would.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
+      { naam: "Tonijn", naam_en: "Tuna", icoon: "icons/Tonijn.png", map: "Vissen", 
         quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
         <br><br>- Callum Roberts`
       },
-      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+      { naam: "Zalm", naam_en: "Salmon", icoon: "icons/Zalm.png", map: "Vissen", 
         quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
         rivers of their birth
         <br><br>- Colin Braithwaite`
       },
-      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
+      { naam: "Makreel", naam_en: "Mackerel", icoon: "icons/Makreel.png", map: "Vissen", 
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
-      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
+      { naam: "Paling", naam_en: "Eel", icoon: "icons/Paling.png", map: "Vissen", 
         quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
         thousands of kilometres
         <br><br>- Frederik Kendall`
       },
-      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
+      { naam: "Haring", naam_en: "Herring", icoon: "icons/Haring.png", map: "Vissen", 
         quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
         <br><br>- Rachel Carson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ TONIJN ------------------ */
   {
     input: [
@@ -10888,7 +10898,7 @@ const combinaties = [
       ["Tonijn", "Oertienpotigen"], ["Tonijn", "Garnalen"], ["Tonijn", "Waterspinnen"]
     ],
     output: [
-      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
+      { naam: "Tonijn", naam_en: "Tuna", icoon: "icons/Tonijn.png", map: "Vissen", 
         quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
         <br><br>- Callum Roberts`
       },
@@ -10910,7 +10920,7 @@ const combinaties = [
       ["Tonijn", "Makreel"], ["Tonijn", "Forel"], ["Tonijn", "Paling"], ["Tonijn", "Goudvissen"]
     ],
     output: [
-      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
+      { naam: "Tonijn", naam_en: "Tuna", icoon: "icons/Tonijn.png", map: "Vissen", 
         quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
         <br><br>- Callum Roberts`
       },
@@ -10942,7 +10952,7 @@ const combinaties = [
       ["Zalm", "Oertienpotigen"], ["Zalm", "Garnalen"], ["Zalm", "Waterspinnen"]
     ],
     output: [
-      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+      { naam: "Zalm", naam_en: "Salmon", icoon: "icons/Zalm.png", map: "Vissen", 
         quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
         rivers of their birth
         <br><br>- Colin Braithwaite`
@@ -10964,7 +10974,7 @@ const combinaties = [
       ["Zalm", "Agnathen"], ["Zalm", "Oerstraalvinnigen"], ["Zalm", "Haring"]
     ],
     output: [
-      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
+      { naam: "Zalm", naam_en: "Salmon", icoon: "icons/Zalm.png", map: "Vissen", 
         quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
         rivers of their birth
         <br><br>- Colin Braithwaite`
@@ -10997,7 +11007,7 @@ const combinaties = [
       ["Makreel", "Oertienpotigen"], ["Makreel", "Garnalen"], ["Makreel", "Waterspinnen"]
     ],
     output: [
-      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
+      { naam: "Makreel", naam_en: "Mackerel", icoon: "icons/Makreel.png", map: "Vissen", 
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
@@ -11019,7 +11029,7 @@ const combinaties = [
       ["Makreel", "Agnathen"], ["Makreel", "Oerstraalvinnigen"], ["Makreel", "Haring"], ["Makreel", "Goudvissen"]
     ],
     output: [
-      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
+      { naam: "Makreel", naam_en: "Mackerel", icoon: "icons/Makreel.png", map: "Vissen", 
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
@@ -11052,7 +11062,7 @@ const combinaties = [
       ["Paling", "Oertienpotigen"], ["Paling", "Garnalen"], ["Paling", "Heremietkreeften"], ["Paling", "Waterspinnen"]
     ],
     output: [
-      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
+      { naam: "Paling", naam_en: "Eel", icoon: "icons/Paling.png", map: "Vissen", 
         quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
         thousands of kilometres
         <br><br>- Frederik Kendall`
@@ -11075,7 +11085,7 @@ const combinaties = [
       ["Paling", "Karpers"], ["Paling", "Forel"], ["Paling", "Goudvissen"]
     ],
     output: [
-      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
+      { naam: "Paling", naam_en: "Eel", icoon: "icons/Paling.png", map: "Vissen", 
         quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
         thousands of kilometres
         <br><br>- Frederik Kendall`
@@ -11114,7 +11124,7 @@ const combinaties = [
       ["Haring", "Krill"], ["Haring", "Aasgarnalen"], ["Haring", "Vlokreeftjes"]
     ],
     output: [
-      { naam: "Haring", icoon: "icons/Haring.png", map: "Vissen", 
+      { naam: "Haring", naam_en: "Herring", icoon: "icons/Haring.png", map: "Vissen", 
         quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
         <br><br>- Rachel Carson`
       },
@@ -11132,31 +11142,36 @@ const combinaties = [
   {
     input: ["Oerstraalvinnigen", "Kust"],
     hint: `Sommige straalvinnigen voelen zich het meest thuis in ondiepe kustwateren.`,
+    hint_en: `Some ray-finned fish feel most at home in shallow coastal waters.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+      { naam: "Kabeljauwen", naam_en: "Codfish", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
         quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
         a cornerstone of marine ecosystems
         <br><br>- Daniel Pauly`
       },
-      { naam: "Makreel", icoon: "icons/Makreel.png", map: "Vissen", 
+      { naam: "Makreel", naam_en: "Mackerel", icoon: "icons/Makreel.png", map: "Vissen", 
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
-      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
-        quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
-        thousands of kilometres
+      { naam: "Paling", naam_en: "Eel", icoon: "icons/Paling.png", map: "Vissen", 
+        quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and 
+        migrations that span thousands of kilometres
         <br><br>- Frederik Kendall`
       },
-      { naam: "Zeepaardjes", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
-        quote: `Male seahorses receive eggs from the female and incubate them in a ventral brood pouch, where the embryos develop 
-        until birth
+      { naam: "Zeepaardjes", naam_en: "Seahorses", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
+        quote: `Male seahorses receive eggs from the female and incubate them in a ventral brood pouch, where the 
+        embryos develop until birth
         <br><br>- Sara Lourie`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ ZEEPAARDJES ------------------ */
   {
     input: [
@@ -11165,7 +11180,7 @@ const combinaties = [
       ["Zeepaardjes", "Aasgarnalen"], ["Zeepaardjes", "Vlokreeftjes"], ["Zeepaardjes", "Garnalen"]
     ],
     output: [
-      { naam: "Zeepaardjes", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
+      { naam: "Zeepaardjes", naam_en: "Seahorses", icoon: "icons/Zeepaardjes.png", map: "Vissen", 
         quote: `Male seahorses receive eggs from the female and incubate them in a ventral brood pouch, where the embryos develop 
         until birth
         <br><br>- Sara Lourie`
@@ -11184,104 +11199,128 @@ const combinaties = [
   {
     input: ["Oerstraalvinnigen", "Oceaan"],
     hint: `Sommige straalvinnigen voelen zich thuis diep in de immense oceanen.`,
+    hint_en: `Can you imagine? Some ray-finned fish feel at home deep within the immense oceans.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+      { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
       },
-      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+      { naam: "Platvissen", naam_en: "Flatfish", icoon: "icons/Platvissen.png", map: "Vissen", 
         quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
         <br><br>- David Attenborough`
       },
-      { naam: "Maanvissen", icoon: "icons/Maanvissen.png", map: "Vissen", 
+      { naam: "Maanvissen", naam_en: "Molas", icoon: "icons/Maanvissen.png", map: "Vissen", 
         quote: `Mola mola appears almost otherworldly, a giant, flattened fish that seems more like a drifting fragment of the sea 
         itself than a conventional animal
         <br><br>- Bruce Collette`
       },
-      { naam: "Tonijn", icoon: "icons/Tonijn.png", map: "Vissen", 
+      { naam: "Tonijn", naam_en: "Tuna", icoon: "icons/Tonijn.png", map: "Vissen", 
         quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
         <br><br>- Callum Roberts`
       }
     ],
-    uitleg: {
-      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerstraalvinnigen", "Sneeuw"],
     hint: `Sommige straalvinnigen voelen zich thuis in het koude smeltwater van sneeuw.`,
+    hint_en: `Some ray-finned fish feel at home in the cold meltwater of snow.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+      { naam: "Kabeljauwen", naam_en: "Codfish", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
         quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
         a cornerstone of marine ecosystems
         <br><br>- Daniel Pauly`
       },
-      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+      { naam: "Forel", naam_en: "Trout", icoon: "icons/Forel.png", map: "Vissen", 
         quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
         beneath the surface
         <br><br>- Hugh Falkus`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerstraalvinnigen", "Rivier"],
     hint: `Sommige straalvinnigen voelen zich thuis in de rivieren.`,
+    hint_en: `Some ray-finned fish feel at home in the river.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+      { naam: "Karpers", naam_en: "Carp", icoon: "icons/Karpers.png", map: "Vissen", 
         quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
         <br><br>- David Attenborough`
       },
-      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
-        quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
-        beneath the surface
+      { naam: "Forel", naam_en: "Trout", icoon: "icons/Forel.png", map: "Vissen", 
+        quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or 
+        flash beneath the surface
         <br><br>- Hugh Falkus`
       },
-      { naam: "Zalm", icoon: "icons/Zalm.png", map: "Vissen", 
-        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring instinct to the 
-        rivers of their birth
+      { naam: "Zalm", naam_en: "Salmon", icoon: "icons/Zalm.png", map: "Vissen", 
+        quote: `Salmon live in two worlds, born in freshwater, maturing in the ocean, and returning with unerring 
+        instinct to the rivers of their birth
         <br><br>- Colin Braithwaite`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerstraalvinnigen", "Lagune"],
     tijd: 40_000_000,
     output: [
-      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
-        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
+      { naam: "Platvissen", naam_en: "Flatfish", icoon: "icons/Platvissen.png", map: "Vissen", 
+        quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand 
+        and sediment
         <br><br>- David Attenborough`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oerstraalvinnigen", "Schelp"], ["Oerstraalvinnigen", "Zeeslakken"], ["Oerstraalvinnigen", "Tweekleppigen"]
     ],
     hint: `De angst van de schelpdieren zijn straalvinnigen die ze kunnen doorboren.`,
+    hint_en: `The fear of shellfish is ray-finned fish that are able to pierce them.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png", map: "Vissen", 
+      { naam: "Kogelvissen", naam_en: "Pufferfish", icoon: "icons/Kogelvissen.png", map: "Vissen", 
         quote: `Few fish combine such vulnerability in appearance with such extreme defensive capability as the pufferfish
         <br><br>- David Attenborough`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ KOGELVISSEN ------------------ */
   {
     input: [
@@ -11293,7 +11332,7 @@ const combinaties = [
       ["Kogelvissen", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
-      { naam: "Kogelvissen", icoon: "icons/Kogelvissen.png", map: "Vissen", 
+      { naam: "Kogelvissen", naam_en: "Pufferfish", icoon: "icons/Kogelvissen.png", map: "Vissen", 
         quote: `Few fish combine such vulnerability in appearance with such extreme defensive capability as the pufferfish
         <br><br>- David Attenborough`
       },
@@ -11330,30 +11369,35 @@ const combinaties = [
       ["Oerstraalvinnigen", "Koraal"], ["Oerstraalvinnigen", "Rif"], ["Oerstraalvinnigen", "Zeeanemeonen"]
     ],
     hint: `Sommige straalvinnigen voelen zich thuis in de wereld van de koraalriffen.`,
+    hint_en: `Some ray-finned fish feel right at home in the world of coral reefs.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
-        quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
-        in the creation of tropical beaches
+      { naam: "Papegaaivissen", naam_en: "Parrotfish", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
+        quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a 
+        vital role in the creation of tropical beaches
         <br><br>- Peter Sale`
       },
-      { naam: "Clownvissen", icoon: "icons/Clownvissen.png", map: "Vissen", 
+      { naam: "Clownvissen", naam_en: "Clownfish", icoon: "icons/Clownvissen.png", map: "Vissen", 
         quote: `Few marine relationships are as iconic as that between clownfish and sea anemones
         <br><br>- Nancy Knowlton`
       },
-      { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png", map: "Vissen", 
+      { naam: "Doktersvissen", naam_en: "Surgeonfish", icoon: "icons/Doktersvissen.png", map: "Vissen", 
         quote: `Surgeonfish are named for the sharp, scalpel-like spines located near the base of their tails
         <br><br>- David Bellwood`
       },
-      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
-        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
-        dangerous
+      { naam: "Koraalduivels", naam_en: "Lionfish", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both 
+        beautiful and dangerous
         <br><br>- James Morris`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ CLOWNVISSEN ------------------ */
   {
     input: [
@@ -11367,7 +11411,7 @@ const combinaties = [
       ["Clownvissen", "Aasgarnalen"], ["Clownvissen", "Vlokreeftjes"], ["Clownvissen", "Garnalen"]
     ],
     output: [
-      { naam: "Clownvissen", icoon: "icons/Clownvissen.png", map: "Vissen", 
+      { naam: "Clownvissen", naam_en: "Clownfish", icoon: "icons/Clownvissen.png", map: "Vissen", 
         quote: `Few marine relationships are as iconic as that between clownfish and sea anemones
         <br><br>- Nancy Knowlton`
       },
@@ -11393,7 +11437,7 @@ const combinaties = [
       ["Doktersvissen", "Aasgarnalen"], ["Doktersvissen", "Vlokreeftjes"]
     ],
     output: [
-      { naam: "Doktersvissen", icoon: "icons/Doktersvissen.png", map: "Vissen", 
+      { naam: "Doktersvissen", naam_en: "Surgeonfish", icoon: "icons/Doktersvissen.png", map: "Vissen", 
         quote: `Surgeonfish are named for the sharp, scalpel-like spines located near the base of their tails
         <br><br>- David Bellwood`
       },
@@ -11416,7 +11460,7 @@ const combinaties = [
       ["Koraalduivels", "Garnalen"],
     ],
     output: [
-      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+      { naam: "Koraalduivels", naam_en: "Surgeonfish", icoon: "icons/Koraalduivels.png", map: "Vissen", 
         quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
         dangerous
         <br><br>- James Morris`
@@ -11446,10 +11490,12 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Koraalduivels", icoon: "icons/Koraalduivels.png", map: "Vissen", 
-        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
-        dangerous
+      { naam: "Koraalduivels", naam_en: "Lionfish", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+        quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both
+        beautiful and dangerous
         <br><br>- James Morris`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
@@ -11475,45 +11521,56 @@ const combinaties = [
   {
     input: ["Moeras", "Oerstraalvinnigen"],
     hint: `Sommige straalvinnigen voelen zich thuis in de moerassen.`,
+    hint_en: `Some ray-finned fish might feel at home in swamps.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
-        quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
+      { naam: "Karpers", naam_en: "Carp", icoon: "icons/Karpers.png", map: "Vissen", 
+        quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish 
+        persist
         <br><br>- David Attenborough`
       },
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+      { naam: "Snoeken", naam_en: "Pike", icoon: "icons/Snoeken.png", map: "Vissen", 
         quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
         <br><br>- Hugh Falkus`
       },
-      { naam: "Meervallen", icoon: "icons/Meervallen.png", map: "Vissen", 
+      { naam: "Meervallen", naam_en: "Catfish", icoon: "icons/Meervallen.png", map: "Vissen", 
         quote: `The catfish is an ancient and highly adapted fish, perfectly suited to life in dark, slow-moving waters 
         where sight is of little use
         <br><br>- Herbert Boschung`
       },
-      { naam: "Paling", icoon: "icons/Paling.png", map: "Vissen", 
-        quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and migrations that span 
-        thousands of kilometres
+      { naam: "Paling", naam_en: "Eel", icoon: "icons/Paling.png", map: "Vissen", 
+        quote: `The eel’s life cycle remains one of the great mysteries of zoology, involving transformations and 
+        migrations that span thousands of kilometres
         <br><br>- Frederik Kendall`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Tropisch regenwoud", "Oerstraalvinnigen"],
     hint: `Sommige straalvinnigen voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some ray-finned fish feel at home in the tropical rainforest.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Piranha", icoon: "icons/Piranha.png", map: "Vissen", 
+      { naam: "Piranha", naam_en: "Piranhas", icoon: "icons/Piranha.png", map: "Vissen", 
         quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome 
         predators of popular imagination
         <br><br>- Herbert Axelrod`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   }, /* ------------------ PIRANHA ------------------ */
   {
     input: [ /* Bloed */
@@ -11525,8 +11582,10 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Piranha", icoon: "icons/Piranha.png", map: "Vissen", 
+      { naam: "Piranha", naam_en: "Piranhas", icoon: "icons/Piranha.png", map: "Vissen", 
         quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome 
         predators of popular imagination
         <br><br>- Herbert Axelrod`
@@ -11551,139 +11610,174 @@ const combinaties = [
       ["Archaeopteryx", "IJs"], ["Archaeopteryx", "Poolgebied"]
     ],
     hint: `Sommige archaeopteryx voelen zich thuis in ijs en sneeuw.`,
+    hint_en: `Some archaeopteryx feel at home in ice and snow.`,
     tijd: 60_000_000,
     output: [
-      { naam: "Pinguïns", icoon: "icons/Pinguïns.png", map: "Vogels", 
+      { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "De Maan"],
     hint: `Sommige archaeopteryx voelen zich thuis in de nacht.`,
+    hint_en: `Some archaeopteryx have a greater affinity for the night.`,
     tijd: 45_000_000,
     output: [
-      { naam: "Uilen", icoon: "icons/Uilen.png", map: "Vogels", 
+      { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Berg"],
     hint: `Sommige archaeopteryx voelen zich thuis in de bergen.`,
+    hint_en: `Some archaeopteryx are at home in the mountains.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Duiven", icoon: "icons/Duiven.png", map: "Vogels", 
+      { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
       },
-      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+      { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Archaeopteryx", "Meer"], ["Archaeopteryx", "Rivier"],
     ],
     hint: `Sommige archaeopteryx voelen zich thuis in rustig vaarwater.`,
+    hint_en: `Some archaeopteryx are more at home in calm waters.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Eenden", icoon: "icons/Eenden.png", map: "Vogels", 
+      { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
         quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
         <br><br>- Wangari Maathai`
       },
-      { naam: "Ganzen", icoon: "icons/Ganzen.png", map: "Vogels", 
+      { naam: "Ganzen", naam_en: "Geese", icoon: "icons/Ganzen.png", map: "Vogels", 
         quote: `Wild geese fly south; their cries drift away across the empty autumn sky
         <br><br>- Li Bai`
       },
-      { naam: "Zwanen", icoon: "icons/Zwanen.png", map: "Vogels", 
+      { naam: "Zwanen", naam_en: "Swans", icoon: "icons/Zwanen.png", map: "Vogels", 
         quote: `Wild geese and swans cross the cold river, their shadows vanishing into the pale sky above the water
         <br><br>- Du Fu`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Lucht"],
     hint: `Sommige archaeopteryx voelen zich het meest thuis hoog in de lucht.`,
+    hint_en: `Some archaeopteryx feel most at home high up in the air.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Zwaluwen", icoon: "icons/Zwaluwen.png", map: "Vogels", 
+      { naam: "Zwaluwen", naam_en: "Swallows", icoon: "icons/Zwaluwen.png", map: "Vogels", 
         quote: `The swallow carries the scent of distant gardens across skies that never remain the same
         <br><br>- Rumi`
       },
-      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+      { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       },
-      { naam: "Spreeuwen", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+      { naam: "Spreeuwen", naam_en: "Starlings", icoon: "icons/Spreeuwen.png", map: "Vogels", 
         quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
         <br><br>- Giorgio Parisi`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Ven"],
     hint: `Sommige archaeopteryx voelen zich thuis in de begroeide vennetjes.`,
+    hint_en: `Some archaeopteryx feel at home in the overgrown pools.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Ooievaars", icoon: "icons/Ooievaars.png", map: "Vogels", 
+      { naam: "Ooievaars", naam_en: "Storks", icoon: "icons/Ooievaars.png", map: "Vogels", 
         quote: `The arrival of the stork has long been associated with renewal and the return of life to the landscape 
         in spring
         <br><br>- Peter Scott`
       },
-      { naam: "Eenden", icoon: "icons/Eenden.png", map: "Vogels", 
+      { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
         quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
         <br><br>- Wangari Maathai`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Zee"],
     hint: `Sommige archaeopteryx voelen zich thuis bij de zee.`,
+    hint_en: `Some archaeopteryx feel at home by the sea.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+      { naam: "Meeuwen", naam_en: "Seagulls", icoon: "icons/Meeuwen.png", map: "Vogels", 
         quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
         <br><br>- Virginia Woolf`
       },
-      { naam: "Aalscholvers", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+      { naam: "Aalscholvers", naam_en: "Cormorants", icoon: "icons/Aalscholvers.png", map: "Vogels", 
         quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
         itself
         <br><br>- Matsuo Basho`
       },
-      { naam: "Pinguïns", icoon: "icons/Pinguïns.png", map: "Vogels", 
+      { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
@@ -11691,354 +11785,440 @@ const combinaties = [
       ["Archaeopteryx", "Duinen"],
     ],
     hint: `Sommige archaeopteryx voelen zich thuis bij het strand.`,
+    hint_en: `Some archaeopteryx know they belong to the beach.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+      { naam: "Meeuwen", naam_en: "Seagulls", icoon: "icons/Meeuwen.png", map: "Vogels", 
         quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
         <br><br>- Virginia Woolf`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Kust"],
     hint: `Sommige archaeopteryx voelen zich thuis aan de kust.`,
+    hint_en: `Some archaeopteryx know they belong to the coast.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Meeuwen", icoon: "icons/Meeuwen.png", map: "Vogels", 
+      { naam: "Meeuwen", naam_en: "Seagulls", icoon: "icons/Meeuwen.png", map: "Vogels", 
         quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
         <br><br>- Virginia Woolf`
       },
-      { naam: "Aalscholvers", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+      { naam: "Aalscholvers", naam_en: "Cormorants", icoon: "icons/Aalscholvers.png", map: "Vogels", 
         quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
         itself
         <br><br>- Matsuo Basho`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Oceaan"],
     hint: `Sommige archaeopteryx voelen zich thuis bij de oceaan.`,
+    hint_en: `Some archaeopteryx know they belong to the ocean.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Papegaaiduikers", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
+      { naam: "Papegaaiduikers", naam_en: "Puffins", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
         quote: `The cliffs were alive with puffins, each one a small spark of colour against stone and wind
         <br><br>- Robert Macfarlane`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Lagune"],
     hint: `Sommige archaeopteryx voelen zich thuis in de lagune.`,
+    hint_en: `Some archaeopteryx feel at home in the lagoon.`,
     tijd: 45_000_000,
     output: [
-      { naam: "Flamingo", icoon: "icons/Flamingo.png", map: "Vogels", 
+      { naam: "Flamingo", naam_en: "Flamingos", icoon: "icons/Flamingo.png", map: "Vogels", 
         quote: `Flamingos gather in shallow lakes where the water becomes a mirror for their colour, 
         turning the landscape itself into something unreal
         <br><br>- Alexander von Humboldt`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Klif"],
     hint: `Sommige archaeopteryx voelen zich thuis bij de kliffen.`,
+    hint_en: `Some archaeopteryx stay near the cliffs.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Papegaaiduikers", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
+      { naam: "Papegaaiduikers", naam_en: "Puffins", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
         quote: `The cliffs were alive with puffins, each one a small spark of colour against stone and wind
         <br><br>- Robert Macfarlane`
       },
-      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+      { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       },
-      { naam: "Duiven", icoon: "icons/Duiven.png", map: "Vogels", 
+      { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Bot"],
     hint: `Sommige archaeopteryx feesten bij de kadavers.`,
+    hint_en: `Some archaeopteryx feast on the carcasses.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Gieren", icoon: "icons/Gieren.png", map: "Vogels", 
+      { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
         quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
         <br><br>- Alexander von Humboldt`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Archaeopteryx", "Moeras"], ["Waterriet", "Archaeopteryx"]
     ],
     hint: `Sommige archaeopteryx voelen zich thuis bij het moerasriet.`,
+    hint_en: `Some archaeopteryx feel at home among the marsh reeds.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Reigers", icoon: "icons/Reigers.png", map: "Vogels", 
+      { naam: "Reigers", naam_en: "Herons", icoon: "icons/Reigers.png", map: "Vogels", 
         quote: `A heron stands motionless at the water’s edge, then strikes with a suddenness that breaks the 
         illusion of stillnes
         <br><br>- J.A. Baker`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Zaadjes"],
     hint: `Sommige archaeopteryx verschijnen waar zaadjes zijn..`,
+    hint: `Some archaeopteryx appear where the seeds are..`,
     tijd: 10_000_000,
     output: [
-      { naam: "Mussen", icoon: "icons/Mussen.png", map: "Vogels", 
+      { naam: "Mussen", naam_en: "Sparrows", icoon: "icons/Mussen.png", map: "Vogels", 
         quote: `A sparrow hops - and the quiet of the garden is suddenly complete
         <br><br>- Kobayashi Issa`
       },
-      { naam: "Kippen", icoon: "icons/Kippen.png", map: "Vogels", 
+      { naam: "Kippen", naam_en: "Chickens", icoon: "icons/Kippen.png", map: "Vogels", 
         quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
         <br><br>- Fridtjof Nansen`
       },
-      { naam: "Duiven", icoon: "icons/Duiven.png", map: "Vogels", 
+      { naam: "Duiven", naam_en: "Grapes", icoon: "icons/Duiven.png", map: "Vogels", 
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Hout"],
     hint: `Sommige archaeopteryx voelen zich thuis in de bomen.`,
+    hint_en: `Some archaeopteryx feel at home in the trees.`,
     tijd: 45_000_000,
     output: [
-      { naam: "Spechten", icoon: "icons/Spechten.png", map: "Vogels", 
+      { naam: "Spechten", naam_en: "Woodpeckers", icoon: "icons/Spechten.png", map: "Vogels", 
         quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
         <br><br>- Annie Dillard`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "map:Bomen"],
     tijd: 20_000_000,
     output: [
-      { naam: "Spechten", icoon: "icons/Spechten.png", map: "Vogels", 
+      { naam: "Spechten", naam_en: "Woodpeckers", icoon: "icons/Spechten.png", map: "Vogels", 
         quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
         <br><br>- Annie Dillard`
       },
-      { naam: "Spreeuwen", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+      { naam: "Spreeuwen", naam_en: "Starlings", icoon: "icons/Spreeuwen.png", map: "Vogels", 
         quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
         <br><br>- Giorgio Parisi`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Bos"],
     hint: `Sommige archaeopteryx voelen zich thuis in het bos.`,
+    hint_en: `Some archaeopteryx feel at home in the forest.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Uilen", icoon: "icons/Uilen.png", map: "Vogels", 
+      { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       },
-      { naam: "Vinken", icoon: "icons/Vinken.png", map: "Vogels", 
+      { naam: "Vinken", naam_en: "Finches", icoon: "icons/Vinken.png", map: "Vogels", 
         quote: `The small bird sings not to be heard, but because the world asks for sound
         <br><br>- Mary Oliver`
       },
-      { naam: "Fazanten", icoon: "icons/Fazanten.png", map: "Vogels", 
+      { naam: "Fazanten", naam_en: "Pheasants", icoon: "icons/Fazanten.png", map: "Vogels", 
         quote: `A pheasant bursts from the grass, scattering silence into wings and colour
         <br><br>- Wang Wei`
       },
-      { naam: "Kraaien", icoon: "icons/Kraaien.png", map: "Vogels", 
+      { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
         quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
         <br><br>- Ma Zhiyuan`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Archaeopteryx", "Tropisch regenwoud"],
     hint: `Sommige archaeopteryx voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some archaeopteryx feel at home in the tropical rainforest.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Kolibries", icoon: "icons/Kolibries.png", map: "Vogels", 
+      { naam: "Kolibries", naam_en: "Hummingbirds", icoon: "icons/Kolibries.png", map: "Vogels", 
         quote: `The hummingbird is a fragment of the rainbow, suspended in air
         <br><br>- Pablo Neruda`
       },
-      { naam: "Pauwen", icoon: "icons/Pauwen.png", map: "Vogels", 
+      { naam: "Pauwen", naam_en: "Peacocks", icoon: "icons/Pauwen.png", map: "Vogels", 
         quote: `In the garden, the peacock walks as if it remembers a lost paradise
         <br><br>- Rumi`
       },
-      { naam: "Papegaaien", icoon: "icons/Papegaaien.png", map: "Vogels", 
+      { naam: "Papegaaien", naam_en: "Parrotfish", icoon: "icons/Papegaaien.png", map: "Vogels", 
         quote: `Parrots flash through the forest like fragments of fire moving between trees
         <br><br>- Alexander von Humboldt`
       },
-      { naam: "Kippen", icoon: "icons/Kippen.png", map: "Vogels", 
+      { naam: "Kippen", naam_en: "Chickens", icoon: "icons/Kippen.png", map: "Vogels", 
         quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
         <br><br>- Fridtjof Nansen`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Bloem", "Archaeopteryx"],
     tijd: 25_000_000,
     output: [
-      { naam: "Kolibries", icoon: "icons/Kolibries.png", map: "Vogels", 
+      { naam: "Kolibries", naam_en: "Hummingsbirds", icoon: "icons/Kolibries.png", map: "Vogels", 
         quote: `The hummingbird is a fragment of the rainbow, suspended in air
         <br><br>- Pablo Neruda`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermagnoliden", "Vliegen"],
     tijd: 30_000_000,
     output: [
-      { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
+      { naam: "Zuurzakken", naam_en: "Soursops", icoon: "icons/Zuurzakken.png", map: "Fruit", 
         quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
         <br><br>- Elhadi M. Yahia`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermagnoliden", "Tropisch regenwoud"],
     hint: `Sommige magnoliden voelen zich van nature thuis in het tropisch regenwoud.`,
+    hint_en: `Some magnolids are naturally at home in the tropical rainforest.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Nootmuskaat", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
+      { naam: "Nootmuskaat", naam_en: "Nutmeg", icoon: "icons/Nootmuskaat.png", map: "Smaakmakers", 
         quote: `Nutmeg is the seed of an evergreen tree, valued for its warm, aromatic spice used in both sweet and 
         savory dishes
         <br><br>- Harold McGee`
       },
-      { naam: "Kaneel", icoon: "icons/Kaneel.png", map: "Smaakmakers", 
+      { naam: "Kaneel", naam_en: "Cinnamon", icoon: "icons/Kaneel.png", map: "Smaakmakers", 
         quote: `Cinnamon is obtained from the inner bark of a tropical evergreen tree, which curls into quills as it dries
         <br><br>- Harold McGee`
       },
-      { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
+      { naam: "Zuurzakken", naam_en: "Soursops", icoon: "icons/Zuurzakken.png", map: "Fruit", 
         quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
         <br><br>- Elhadi M. Yahia`
       },
-      { naam: "Avocado", icoon: "icons/Avocado.png", map: "Fruit", 
+      { naam: "Avocado", naam_en: "Avocados", icoon: "icons/Avocado.png", map: "Fruit", 
         quote: `The avocado is a large berry with a single seed and a soft, buttery flesh rich in oil
         <br><br>- Harold McGee`
       },
-      { naam: "Peper", icoon: "icons/Peper.png", map: "Smaakmakers", 
+      { naam: "Peper", naam_en: "Pepper", icoon: "icons/Peper.png", map: "Smaakmakers", 
         quote: `Black pepper has been one of the most widely traded spices in history
         <br><br>- Andrew Dalby`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermagnoliden", "Bijen"],
     tijd: 10_000_000,
     output: [
-      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
+      { naam: "Tulpenbomen", naam_en: "Tulip trees", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
         its crown
         <br><br>- Donald Peattie`
       },
-      { naam: "Peper", icoon: "icons/Peper.png", map: "Smaakmakers", 
+      { naam: "Peper", naam_en: "Pepper", icoon: "icons/Peper.png", map: "Smaakmakers", 
         quote: `Black pepper has been one of the most widely traded spices in history
         <br><br>- Andrew Dalby`
       },
-      { naam: "Zuurzakken", icoon: "icons/Zuurzakken.png", map: "Fruit", 
+      { naam: "Zuurzakken", naam_en: "Soursops", icoon: "icons/Zuurzakken.png", map: "Fruit", 
         quote: `The flesh of the soursop is creamy and fragrant, combining sweetness with a sharp, refreshing acidity
         <br><br>- Elhadi M. Yahia`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Zwavel"],
     hint: `Sommige monocotylen verleggen de focus naar zwavel.`,
+    hint_en: `Some monocots shift their focus toward sulfur.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Asperges", icoon: "icons/Asperges.png", map: "Groenten", 
+      { naam: "Asperges", naam_en: "Asparagus", icoon: "icons/Asperges.png", map: "Groenten", 
         quote: `Asparagus is valued for its tender young shoots, which are harvested before they become woody
         <br><br>- Harold McGee`
       },
-      { naam: "Knoflook", icoon: "icons/Knoflook.png", map: "Smaakmakers", 
+      { naam: "Knoflook", naam_en: "Garlic", icoon: "icons/Knoflook.png", map: "Smaakmakers", 
         quote: `Without garlic I simply would not care to live
         <br><br>- Louis Diat`
       },
-      { naam: "Ui", icoon: "icons/Ui.png", map: "Smaakmakers", 
+      { naam: "Ui", naam_en: "Onions", icoon: "icons/Ui.png", map: "Smaakmakers", 
         quote: `Life is like an onion. You peel it off one layer at a time and sometimes you weep
         <br><br>- Carl Sandburg`
       },
-      { naam: "Prei", icoon: "icons/Prei.png", map: "Groenten", 
+      { naam: "Prei", naam_en: "Leek", icoon: "icons/Prei.png", map: "Groenten", 
         quote: `The leek grows slowly, its pale stem formed in the dark soil before reaching the light
         <br><br>- Harold McGee`
       },
-      { naam: "Bieslook", icoon: "icons/Bieslook.png", map: "Smaakmakers", 
+      { naam: "Bieslook", naam_en: "Chives", icoon: "icons/Bieslook.png", map: "Smaakmakers", 
         quote: `Allium schoenoprasum produces fine, grass-like leaves and small purple flowers in rounded clusters
         <br><br>- Maud Grieve`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oermonocotylen", "Meer"], ["Oermonocotylen", "Ven"], ["Oermonocotylen", "Lagune"]
     ],
     hint: `Sommige monocotylen voelen zich thuis bij stilstaand water.`,
+    hint_en: `Some monocots feel at home in still water.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
+      { naam: "Papyrusriet", naam_en: "Papyrus reed", icoon: "icons/Papyrusriet.png", map: "Materialen", 
         quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
         on which we write
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Kroos", icoon: "icons/Kroos.png", map: "Planten", 
+      { naam: "Kroos", naam_en: "Duckweed", icoon: "icons/Kroos.png", map: "Planten", 
         quote: `Duckweed consists of tiny floating plants that form green mats on still freshwater surfaces
         <br><br>- John Anderson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
@@ -12046,1158 +12226,1416 @@ const combinaties = [
       ["Oermonocotylen", "Strand"]
     ],
     hint: `Welke monocotylen kunnen hun zaden laten drijven en verspreiden over zeeën en oceanen?`,
+    hint_en: `Which monocots can make their seeds float and spread across fast seas and oceans?`,
     tijd: 10_000_000,
     output: [
-      { naam: "Kokos", icoon: "icons/Kokos.png", map: "Fruit", 
+      { naam: "Kokos", naam_en: "Coconuts", icoon: "icons/Kokos.png", map: "Fruit", 
         quote: `The coconut palm is one of the most useful trees in the world, providing food, drink, fiber, and shelter 
         for millions of people
         <br><br>- Harold Clifford`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oermonocotylen", "Woestijn"], ["Oermonocotylen", "Klif"]
     ],
     hint: `Sommige monocotylen voelen zich thuis in de woestijn.`,
+    hint_en: `Some monocots feel at home in the desert.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Agave", icoon: "icons/Agave.png", map: "Planten", 
+      { naam: "Agave", naam_en: "Agave", icoon: "icons/Agave.png", map: "Planten", 
         quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
         single towering flower stalk
         <br><br>- Armen Takhtajan`
       },
-      { naam: "Aloë Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+      { naam: "Aloë Vera", naam_en: "Aloe vera", icoon: "icons/Aloe vera.png", map: "Planten", 
         quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
         <br><br>- James Duke`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Oase"],
     hint: `Sommige monocotylen voelen zich thuis in de oases van woestijnen.`,
+    hint_en: `Some monocots feel at home in desert oases.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Dadels", icoon: "icons/Dadels.png", map: "Fruit", 
+      { naam: "Dadels", naam_en: "Dates", icoon: "icons/Dadels.png", map: "Fruit", 
         quote: `Dates are among the sweetest and most nourishing of fruits, sustaining those who dwell in arid lands
         <br><br>- Ibn al-Awwam`
       },
-      { naam: "Agave", icoon: "icons/Agave.png", map: "Planten", 
+      { naam: "Agave", naam_en: "Agave", icoon: "icons/Agave.png", map: "Planten", 
         quote: `The agave grows in a slow, patient rosette, holding its strength for many years before sending up a 
         single towering flower stalk
         <br><br>- Armen Takhtajan`
       },
-      { naam: "Aloë Vera", icoon: "icons/Aloe vera.png", map: "Planten", 
+      { naam: "Aloë Vera", naam_en: "Aloe vera", icoon: "icons/Aloe vera.png", map: "Planten", 
         quote: `Aloe has been valued in traditional medicine for its ability to calm and repair damaged skin tissue
         <br><br>- James Duke`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Rivier"],
     hint: `Sommige monocotylen voelen zich thuis langs de oevers van rivieren.`,
+    hint_en: `Some monocots feel at home along the banks of rivers.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
-        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
-        on which we write
+      { naam: "Papyrusriet", naam_en: "Papyrus reed", icoon: "icons/Papyrusriet.png", map: "Materialen", 
+        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the 
+        material on which we write
         <br><br>- Plinius de Oudere`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Wortels"],
     hint: `Sommige monocotylen gaan voorts op het groot maken van hun wortels.`,
+    hint_en: `Some monocots continue evolving, focussing on enlarging their roots.`,
     tijd: 35_000_000,
     output: [
-      { naam: "Gember", icoon: "icons/Gember.png", map: "Smaakmakers", 
+      { naam: "Gember", naam_en: "Ginger", icoon: "icons/Gember.png", map: "Smaakmakers", 
         quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
         <br><br>- James Duke`
       },
-      { naam: "Kurkuma", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
+      { naam: "Kurkuma", naam_en: "Turmeric", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
         quote: `The rhizome of turmeric contains a deep yellow pigment and is widely used in cooking and 
         traditional practices
         <br><br>- Maud Grieve`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Moeras"],
     hint: `Sommige monocotylen voelen zich thuis in het moeras.`,
+    hint_en: `Some monocots feel at home in a swamp.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Papyrusriet", icoon: "icons/Papyrusriet.png", map: "Materialen", 
-        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the material 
-        on which we write
+      { naam: "Papyrusriet", naam_en: "Papyrus reed", icoon: "icons/Papyrusriet.png", map: "Materialen", 
+        quote: `The papyrus plant serves many uses: from it are made boats, sails, mats, cords, and above all the 
+        material on which we write
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Kroos", icoon: "icons/Kroos.png", map: "Planten", 
+      { naam: "Kroos", naam_en: "Duckweed", icoon: "icons/Kroos.png", map: "Planten", 
         quote: `Duckweed consists of tiny floating plants that form green mats on still freshwater surfaces
         <br><br>- John Anderson`
       },
-      { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
+      { naam: "Irissen", naam_en: "Irises", icoon: "icons/Irissen.png", map: "Bloemen", 
         quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
         <br><br>- W.J. Bean`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Kevers"],
     tijd: 35_000_000,
     output: [
-      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
+      { naam: "Lelies", naam_en: "Lilies", icoon: "icons/Lelies.png", map: "Bloemen", 
         quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
         <br><br>- Yosa Buson`
       },
-      { naam: "Gember", icoon: "icons/Gember.png", map: "Smaakmakers", 
+      { naam: "Gember", naam_en: "Ginger", icoon: "icons/Gember.png", map: "Smaakmakers", 
         quote: `Ginger is both a spice and a medicine, its sharp flavor matched by its long history of human use
         <br><br>- James Duke`
       },
-      { naam: "Kurkuma", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
+      { naam: "Kurkuma", naam_en: "Turmeric", icoon: "icons/Kurkuma.png", map: "Smaakmakers", 
         quote: `The rhizome of turmeric contains a deep yellow pigment and is widely used in cooking and 
         traditional practices
         <br><br>- Maud Grieve`
       },
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
+      { naam: "Orchideeën", naam_en: "Orchids", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Vliegen"],
     tijd: 100_000_000,
     output: [
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
+      { naam: "Orchideeën", naam_en: "Orchids", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Vlinders"],
     tijd: 40_000_000,
     output: [
-      { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
+      { naam: "Gladiolen", naam_en: "Gladioli", icoon: "icons/Gladiolen.png", map: "Bloemen", 
         quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
         <br><br>- Christopher Brickell`
       },
-      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
+      { naam: "Lelies", naam_en: "Lilies", icoon: "icons/Lelies.png", map: "Bloemen", 
         quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
         <br><br>- Yosa Buson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Bos"],
     hint: `Sommige monocotylen voelen zich thuis in het bos.`,
+    hint_en: `Some monocots feel at home in the forest.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Lelies", icoon: "icons/Lelies.png", map: "Bloemen", 
+      { naam: "Lelies", naam_en: "Lilies", icoon: "icons/Lelies.png", map: "Bloemen", 
         quote: `A single lily stands, pure and untouched, its white petals opening to the quiet of the day
         <br><br>- Yosa Buson`
       },
-      { naam: "Hyacinten", icoon: "icons/Hyacinten.png", map: "Bloemen", 
+      { naam: "Hyacinten", naam_en: "Hyacinths", icoon: "icons/Hyacinten.png", map: "Bloemen", 
         quote: `The garden was adorned with hyacinth and roses, as if Eden itself remembered the purity of first creation
         <br><br>- John Milton`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Tropisch regenwoud"],
     hint: `Sommige monocotylen voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some monocots feel at home in the tropical rainforest.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Rotan", icoon: "icons/Rotan.png", map: "Materialen", 
+      { naam: "Rotan", naam_en: "Rattans", icoon: "icons/Rotan.png", map: "Materialen", 
         quote: `Rattans are among the most useful products of the forest, supplying canes for endless 
         purposes of native industry
         <br><br>- Henry Forbes`
       },
-      { naam: "Oliepalmen", icoon: "icons/Oliepalmen.png", map: "Bomen", 
+      { naam: "Oliepalmen", naam_en: "Oil palms", icoon: "icons/Oliepalmen.png", map: "Bomen", 
         quote: `The dance of the palm trees, the oceans calling, the first rays of sun and heaven is here
         <br><br>- Michael Dolan`
       },
-      { naam: "Bananen", icoon: "icons/Bananen.png", map: "Fruit", 
+      { naam: "Bananen", naam_en: "Bananas", icoon: "icons/Bananen.png", map: "Fruit", 
         quote: `Banana fruits develop in large hanging clusters, ripening from green to yellow as sugars accumulate
         <br><br>- Paul Allen`
       },
-      { naam: "Ananas", icoon: "icons/Ananas.png", map: "Fruit", 
+      { naam: "Ananas", naam_en: "Pineapples", icoon: "icons/Ananas.png", map: "Fruit", 
         quote: `The pineapple is a tropical fruit composed of many fused berries forming a single, fleshy structure
         <br><br>- Harold McGee`
       },
-      { naam: "Orchideeën", icoon: "icons/Orchideeën.png", map: "Bloemen", 
+      { naam: "Orchideeën", naam_en: "Orchids", icoon: "icons/Orchideeën.png", map: "Bloemen", 
         quote: `The orchid is mother nature's masterpiece
         <br><br>- Robyn`
       },
-      { naam: "Kardemom", icoon: "icons/Kardemom.png", map: "Smaakmakers", 
+      { naam: "Kardemom", naam_en: "Cardamom", icoon: "icons/Kardemom.png", map: "Smaakmakers", 
         quote: `Cardamom is prized in cooking for the fragrance of its seeds, which are released only 
         when the pods are broken
         <br><br>- Maud Grieve`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermonocotylen", "Bijen"],
     tijd: 5_000_000,
     output: [
-      { naam: "Tulpen", icoon: "icons/Tulpen.png", map: "Bloemen", 
+      { naam: "Tulpen", naam_en: "Tulips", icoon: "icons/Tulpen.png", map: "Bloemen", 
         quote: `Tulips open with the light of spring, their petals responding directly to warmth and sun
         <br><br>- Elizabeth Murray`
       },
-      { naam: "Hyacinten", icoon: "icons/Hyacinten.png", map: "Bloemen", 
+      { naam: "Hyacinten", naam_en: "Hyacinths", icoon: "icons/Hyacinten.png", map: "Bloemen", 
         quote: `The garden was adorned with hyacinth and roses, as if Eden itself remembered the purity of first creation
         <br><br>- John Milton`
       },
-      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+      { naam: "Narcissen", naam_en: "Daffodils", icoon: "icons/Narcissen.png", map: "Bloemen", 
         quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
         arrival of spring
         <br><br>- Anna Pavord`
       },
-      { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
+      { naam: "Irissen", naam_en: "Irises", icoon: "icons/Irissen.png", map: "Bloemen", 
         quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
         <br><br>- W.J. Bean`
       },
-      { naam: "Krokussen", icoon: "icons/Krokussen.png", map: "Bloemen", 
+      { naam: "Krokussen", naam_en: "Crocuses", icoon: "icons/Krokussen.png", map: "Bloemen", 
         quote: `Welcome, wild harbinger of spring! To this small nook of Earth
         <br><br>- Bernard Barton`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Gras", "Meer"], ["Gras", "Ven"], ["Gras", "Lagune"], ["Gras", "Moeras"]
     ],
     hint: `Sommige grassen vinden hun thuis bij stilstaand of kabbelend water.`,
+    hint_en: `Some grasses find their shelter in still or gently flowing water.`,
     tijd: 4_000_000,
     output: [
-      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
+      { naam: "Waterriet", naam_en: "Common reed", icoon: "icons/Waterriet.png", map: "Planten", 
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
         <br><br>- Blaise Pascal`
       },
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Planten", 
+      { naam: "Suikerriet", naam_en: "Sugarcanes", icoon: "icons/Suikerriet.png", map: "Planten", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
         <br><br>- James Grainger`
       },
-      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+      { naam: "Rijst", naam_en: "Rice", icoon: "icons/Rijst.png", map: "Granen", 
         quote: `Rice is the basis of nourishment for all under heaven
         <br><br>- Wang Zhen`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Gras", "Rivier"],
     hint: `Sommige grassen vinden hun thuis bij rivieren en beekjes.`,
+    hint_en: `Some grasses seize their opportunity near rivers and streams.`,
     tijd: 4_000_000,
     output: [
-      { naam: "Waterriet", icoon: "icons/Waterriet.png", map: "Planten", 
+      { naam: "Waterriet", naam_en: "Common reed", icoon: "icons/Waterriet.png", map: "Planten", 
         quote: `Man is but a reed, the most feeble thing in nature, but he is a thinking reed
         <br><br>- Blaise Pascal`
       },
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Planten", 
+      { naam: "Suikerriet", naam_en: "Sugarcanes", icoon: "icons/Suikerriet.png", map: "Planten", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
         <br><br>- James Grainger`
       },
-      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+      { naam: "Rijst", naam_en: "Rice", icoon: "icons/Rijst.png", map: "Granen", 
         quote: `Rice is the basis of nourishment for all under heaven
         <br><br>- Wang Zhen`
       },
-      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+      { naam: "Maïs", naam_en: "Corn", icoon: "icons/Mais.png", map: "Granen", 
         quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
         <br><br>- Barbara McClintock`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Gras", "Overstroming"],
     hint: `Sommige grassen gedijen goed bij overstroming.`,
+    hint_en: `Some grasses thrive in flooded conditions.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Rijst", icoon: "icons/Rijst.png", map: "Granen", 
+      { naam: "Rijst", naam_en: "Rice", icoon: "icons/Rijst.png", map: "Granen", 
         quote: `Rice is the basis of nourishment for all under heaven
         <br><br>- Wang Zhen`
       },
-      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+      { naam: "Maïs", naam_en: "Corn", icoon: "icons/Mais.png", map: "Granen", 
         quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
         <br><br>- Barbara McClintock`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Gras", "Tropisch regenwoud"],
     hint: `Sommige grassen voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some grasses feel at home in the tropical rainforest.`,
     tijd: 4_000_000,
     output: [
-      { naam: "Bamboe", icoon: "icons/Bamboe.png", map: "Materialen", 
+      { naam: "Bamboe", naam_en: "Bamboo", icoon: "icons/Bamboe.png", map: "Materialen", 
         quote: `Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with 
         the wind
         <br><br>- Bruce Lee`
       },
-      { naam: "Suikerriet", icoon: "icons/Suikerriet.png", map: "Planten", 
+      { naam: "Suikerriet", naam_en: "Sugarcanes", icoon: "icons/Suikerriet.png", map: "Planten", 
         quote: `Now let the cane, whose swelling juices fill the full-extended stalk, be reared with skill
         <br><br>- James Grainger`
       },
-      { naam: "Maïs", icoon: "icons/Mais.png", map: "Granen", 
+      { naam: "Maïs", naam_en: "Corn", icoon: "icons/Mais.png", map: "Granen", 
         quote: `Maize grows in rows of kernels, each ear shaped by long cultivation
         <br><br>- Barbara McClintock`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Gras", "Archaeopteryx"], ["Weide", "Archaeopteryx"]
     ],
     hint: `Sommige archaeopteryx voelen zich thuis op de grasweides.`,
+    hint_en: `Some archaeopteryx feel at home in the grassy meadows.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Kieviten", icoon: "icons/Kieviten.png", map: "Vogels", 
+      { naam: "Kieviten", naam_en: "Lapwings", icoon: "icons/Kieviten.png", map: "Vogels", 
         quote: `The lapwing tumbles and twists over the fields, its flight full of sudden turns and restless energy
         <br><br>- Richard Jefferies`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Buxus", "Archaeopteryx"],
     tijd: 10_000_000,
     output: [
-      { naam: "Fazanten", icoon: "icons/Fazanten.png", map: "Vogels", 
+      { naam: "Fazanten", naam_en: "Pheasants", icoon: "icons/Fazanten.png", map: "Vogels", 
         quote: `A pheasant bursts from the grass, scattering silence into wings and colour
         <br><br>- Wang Wei`
       },
-      { naam: "Vinken", icoon: "icons/Vinken.png", map: "Vogels", 
+      { naam: "Vinken", naam_en: "Finches", icoon: "icons/Vinken.png", map: "Vogels", 
         quote: `The small bird sings not to be heard, but because the world asks for sound
         <br><br>- Mary Oliver`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Savanne", "Archaeopteryx"],
     hint: `Sommige archaeopteryx voelen zich thuis op de savanne.`,
+    hint_en: `Some archaeopteryx feel at home on the savannah.`,
     tijd: 25_000_000,
     output: [
-      { naam: "Gieren", icoon: "icons/Gieren.png", map: "Vogels", 
+      { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
         quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
         <br><br>- Alexander von Humboldt`
       },
-      { naam: "Struisvogels", icoon: "icons/Struisvogels.png", map: "Vogels", 
+      { naam: "Struisvogels", naam_en: "Ostriches", icoon: "icons/Struisvogels.png", map: "Vogels", 
         quote: `The ostrich is the largest living bird, powerful on the ground yet unable to take to the air
         <br><br>- Richard Lydekker`
       },
-      { naam: "Secretarisvogels", icoon: "icons/Secretarisvogels.png", map: "Vogels", 
-        quote: `The secretarybird moves across the African savanna with long, deliberate strides, searching the ground 
+      { naam: "Secretarisvogels", naam_en: "Secretarybirds", icoon: "icons/Secretarisvogels.png", map: "Vogels", 
+        quote: `The secretarybird moves across the African savannah with long, deliberate strides, searching the ground 
         for snakes and insects
         <br><br>- Derek Ratcliffe`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Savanne", "Oermonocotylen"],
     hint: `Sommige monocotylen voelen zich thuis op de savanne.`,
+    hint_en: `Some monocots feel at home on the savannah.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Amaryllissen", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
+      { naam: "Amaryllissen", naam_en: "Amaryllis", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
         quote: `An amaryllis has the confidence to bloom magnificently when all else is sleeping
         <br><br>- Beverley Nichols`
       },
-      { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
+      { naam: "Gladiolen", naam_en: "Gladioli", icoon: "icons/Gladiolen.png", map: "Bloemen", 
         quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
         <br><br>- Christopher Brickell`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Savanne", "Gras"],
     hint: `Sommige grassen voelen zich thuis op de savanne.`,
+    hint_en: `Some grasses feel at home on the savannah.`,
     tijd: 4_000_000,
     output: [
-      { naam: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
+      { naam: "Sorghum", naam_en: "Sorghum", icoon: "icons/Sorghum.png", map: "Granen", 
         quote: `The sorghum fields were dense and tall, their red tassels blazing like a sea of blood in the sun
         <br><br>- Mo Yan`
       },
-      { naam: "Gierst", icoon: "icons/Gierst.png", map: "Granen", 
+      { naam: "Gierst", naam_en: "Millet", icoon: "icons/Gierst.png", map: "Granen", 
         quote: `Millet grows quickly and thrives even in poor and dry soils where other grains fail
         <br><br>- Olivier de Serres`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Weide", "Oermonocotylen"],
     hint: `Sommige monocotylen ontpoppen zich op de grasweides.`,
+    hint_en: `Some monocots grow in the grasslands.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+      { naam: "Narcissen", naam_en: "Daffodils", icoon: "icons/Narcissen.png", map: "Bloemen", 
         quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
         arrival of spring
         <br><br>- Anna Pavord`
       },
-      { naam: "Krokussen", icoon: "icons/Krokussen.png", map: "Bloemen", 
+      { naam: "Krokussen", naam_en: "Crocuses", icoon: "icons/Krokussen.png", map: "Bloemen", 
         quote: `Welcome, wild harbinger of spring! To this small nook of Earth
         <br><br>- Bernard Barton`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Weide", "Oereudicoten"],
     hint: `Sommige eudicoten gedijen op grasweides.`,
+    hint_en: `Some eudicots thrive in grasslands.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+      { naam: "Klaprozen", naam_en: "Poppies", icoon: "icons/Klaprozen.png", map: "Bloemen", 
         quote: `Carrying a poppy he passes through the quarrel
         <br><br>- Kobayashi Issa`
       },
-      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+      { naam: "Pioenrozen", naam_en: "Peonies", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
         quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
         <br><br>- Michael Dirr`
       },
-      { naam: "Boterbloemen", icoon: "icons/Boterbloemen.png", map: "Bloemen", 
+      { naam: "Boterbloemen", naam_en: "Buttercups", icoon: "icons/Boterbloemen.png", map: "Bloemen", 
         quote: `Buttercups turn whole meadows into sheets of gold under the sun
         <br><br>- Richard Mabey`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Weide", "Gras"], ["Steppe", "Gras"]
     ],
     hint: `Sommige grassen voelen zich thuis in de weides en steppen.`,
+    hint_en: `Some grasses feel at home in meadows and steppes.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Tarwe", icoon: "icons/Tarwe.png", map: "Granen", 
+      { naam: "Tarwe", naam_en: "Wheat", icoon: "icons/Tarwe.png", map: "Granen", 
         quote: `If I am worth anything later, I am worth something now. For wheat is wheat, even if people think it is a 
         grass in the beginning
         <br><br>- Vincent van Gogh`
       },
-      { naam: "Gerst", icoon: "icons/Gerst.png", map: "Granen", 
+      { naam: "Gerst", naam_en: "Barley", icoon: "icons/Gerst.png", map: "Granen", 
         quote: `Among cereals, barley is notable for its resilience and ability to grow in a wide range of climates
         <br><br>- Jack Harlan`
       },
-      { naam: "Haver", icoon: "icons/Haver.png", map: "Granen", 
+      { naam: "Haver", naam_en: "Oats", icoon: "icons/Haver.png", map: "Granen", 
         quote: `Oats are of a cleansing quality and are used more for feeding than for bread
         <br><br>- John Gerard`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Steppe", "Archaeopteryx"],
     hint: `Sommige archaeopteryx voelen zich thuis op de steppe.`,
+    hint_en: `Some archaeopteryx feel at home on the steppe.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Ganzen", icoon: "icons/Ganzen.png", map: "Vogels", 
+      { naam: "Ganzen", naam_en: "Geese", icoon: "icons/Ganzen.png", map: "Vogels", 
         quote: `Wild geese fly south; their cries drift away across the empty autumn sky
         <br><br>- Li Bai`
       },
-      { naam: "Arenden", icoon: "icons/Arenden.png", map: "Vogels", 
+      { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Berg"],
     hint: `Sommige fabiden voelen zich thuis in de bergen.`,
+    hint_en: `Some fabids feel at home in the mountains.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Amandelen", icoon: "icons/Amandelen.png", map: "Zaden", 
+      { naam: "Amandelen", naam_en: "Almonds", icoon: "icons/Amandelen.png", map: "Zaden", 
         quote: `The almond hastens to blossom before the spring is sure
         <br><br>- Virgilius`
       },
-      { naam: "Abrikozen", icoon: "icons/Abrikozen.png", map: "Fruit", 
+      { naam: "Abrikozen", naam_en: "Apricots", icoon: "icons/Abrikozen.png", map: "Fruit", 
         quote: `Apricots require warmth and careful cultivation, but yield fruit of exquisite sweetness
         <br><br>- Olivier de Serres`
       },
-      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
+      { naam: "Kersen", naam_en: "Cherries", icoon: "icons/Kersen.png", map: "Fruit", 
         quote: `The cherries hung like drops of blood in the summer sun
         <br><br>- D.H. Lawrence`
       },
-      { naam: "Perziken", icoon: "icons/Perziken.png", map: "Fruit", 
+      { naam: "Perziken", naam_en: "Peaches", icoon: "icons/Perziken.png", map: "Fruit", 
         quote: `The peach ripens in silence, gathering sweetness from the sun
         <br><br>- Paul Valéry`
       },
-      { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
+      { naam: "Coca", naam_en: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
         quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
         and relief from fatigue
         <br><br>- Sigmund Freud`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Zand"],
     tijd: 20_000_000,
     output: [
-      { naam: "Acacia", icoon: "icons/Acacia.png", map: "Bomen", 
+      { naam: "Acacia", naam_en: "Wattles", icoon: "icons/Acacia.png", map: "Bomen", 
         quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
         <br><br>- Henry Stanley`
       },
-      { naam: "Pinda", icoon: "icons/Pinda.png", map: "Zaden", 
+      { naam: "Pinda", naam_en: "Peanuts", icoon: "icons/Pinda.png", map: "Zaden", 
         quote: `The peanut is remarkable in that its fruit develops underground
         <br><br>- Charles Millspaugh`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oerfabiden", "Meer"], ["Oerfabiden", "Ven"]
     ],
     hint: `Sommige fabiden voelen zich thuis bij meertjes en vennetjes.`,
+    hint_en: `Some fabids feel at home near small and lakes and ponds.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+      { naam: "Wilgen", naam_en: "Willows", icoon: "icons/Wilgen.png", map: "Bomen", 
         quote: `She wept beneath the willow boughs
         <br><br>- Christina Rossetti`
       },
-      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+      { naam: "Populieren", naam_en: "Poplars", icoon: "icons/Populieren.png", map: "Bomen", 
         quote: `Poplars stand along the riverbank, whispering in the wind
         <br><br>- Virgilius`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oerfabiden", "Woestijn"], ["Oerfabiden", "Oase"]
     ],
     hint: `Sommige fabiden voelen zich thuis in de woestijn.`,
+    hint_en: `Some fabids feel at home in the desert.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Meloenen", icoon: "icons/Meloenen.png", map: "Groenten", 
+      { naam: "Meloenen", naam_en: "Melons", icoon: "icons/Meloenen.png", map: "Groenten", 
         quote: `Melons require warmth and careful tending, but reward the grower with delicate and sweet flesh
         <br><br>- Olivier de Serres`
       },
-      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+      { naam: "Watermeloenen", naam_en: "Watermelons", icoon: "icons/Watermeloenen.png", map: "Groenten", 
         quote: `When one has tasted watermelon, he knows what the angels eat
         <br><br>- Mark Twain`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Rivier"],
     hint: `Sommige fabiden voelen zich thuis bij de rivieren.`,
+    hint_en: `Some fabids feel at home near the rivers.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+      { naam: "Wilgen", naam_en: "Willows", icoon: "icons/Wilgen.png", map: "Bomen", 
         quote: `She wept beneath the willow boughs
         <br><br>- Christina Rossetti`
       },
-      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+      { naam: "Populieren", naam_en: "Poplars", icoon: "icons/Populieren.png", map: "Bomen", 
         quote: `Poplars stand along the riverbank, whispering in the wind
         <br><br>- Virgilius`
       },
-      { naam: "Komkommers", icoon: "icons/Komkommers.png", map: "Groenten", 
+      { naam: "Komkommers", naam_en: "Cucumbers", icoon: "icons/Komkommers.png", map: "Groenten", 
         quote: `The cucumber is of a cooling nature and is much desired in the heat
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Soja", icoon: "icons/Soja.png", map: "Zaden", 
+      { naam: "Soja", naam_en: "Soy", icoon: "icons/Soja.png", map: "Zaden", 
         quote: `Soybeans enrich the soil through nitrogen fixation and provide a high-protein crop
         <br><br>- O.W. Willcox`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oerfabiden", "Kust"], ["Oerfabiden", "Duinen"]
     ],
     hint: `Sommige fabiden voelen zich thuis in de duinen.`,
+    hint_en: `Some fabids feel at home in the dunes.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Wilgen", icoon: "icons/Wilgen.png", map: "Bomen", 
+      { naam: "Wilgen", naam_en: "Willows", icoon: "icons/Wilgen.png", map: "Bomen", 
         quote: `She wept beneath the willow boughs
         <br><br>- Christina Rossetti`
       },
-      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+      { naam: "Populieren", naam_en: "Poplars", icoon: "icons/Populieren.png", map: "Bomen", 
         quote: `Poplars stand along the riverbank, whispering in the wind
         <br><br>- Virgilius`
       },
-      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+      { naam: "Klavers", naam_en: "Clovers", icoon: "icons/Klavers.png", map: "Planten", 
         quote: `Clover enriches the soil and is excellent fodder for cattle
         <br><br>- John Evelyn`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Klif"],
     hint: `Sommige fabiden voelen zich thuis op droge, rotsige kliffen.`,
+    hint_en: `Some fabids feel at home on dry, rocky cliffs.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
+      { naam: "Vijgen", naam_en: "Figs", icoon: "icons/Vijgen.png", map: "Fruit", 
         quote: `The fig tree yields its fruit freely, a gift of the warm earth
         <br><br>- Ovidius`
       },
-      { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png", map: "Zaden", 
+      { naam: "Kikkererwten", naam_en: "Chickpeas", icoon: "icons/Kikkererwten.png", map: "Zaden", 
         quote: `Chickpeas are eaten both green and dried, and are thought to produce warmth in the body
         <br><br>- Dioscorides`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Overstroming"],
     tijd: 30_000_000,
     output: [
-      { naam: "Populieren", icoon: "icons/Populieren.png", map: "Bomen", 
+      { naam: "Populieren", naam_en: "Poplars", icoon: "icons/Populieren.png", map: "Bomen", 
         quote: `Poplars stand along the riverbank, whispering in the wind
         <br><br>- Virgilius`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Nitraat"],
     hint: `Sommige fabiden floreren dankzij stikstofrijke bodems vol nitraat.`,
+    hint_en: `Some fabids thrive in nitrogen-rich soils full of nitrate.`,
     tijd: 60_000_000,
     output: [
-      { naam: "Brandnetels", icoon: "icons/Brandnetels.png", map: "Planten", 
+      { naam: "Brandnetels", naam_en: "Nettles", icoon: "icons/Brandnetels.png", map: "Planten", 
         quote: `The nettle grows among the ruins and the broken hedge
         <br><br>- John Clare`
       },
-      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
+      { naam: "Hop", naam_en: "Hops", icoon: "icons/Hop.png", map: "Genotwaren", 
         quote: `Hop adds bitterness to the drink and preserves it from spoiling
         <br><br>- Hildegard von Bingen`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Gif"],
     hint: `Sommige fabiden maken van gif hun strategie en redding.`,
+    hint_en: `Some fabids make poison their strategy and their salvation.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
+      { naam: "Coca", naam_en: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
         quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
         and relief from fatigue
         <br><br>- Sigmund Freud`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Bos"],
     hint: `Sommige fabiden voelen zich thuis in de bossen.`,
+    hint_en: `Some fabids feel at home in the forests.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Oerfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
+      { naam: "Oerfagales", naam_en: "Urfagales", icoon: "icons/Oerfagales.png", map: "Planten", 
         quote: `Oak, beech, and other timber trees form the strength of our forests and ships
         <br><br>- John Evelyn`
       },
-      { naam: "Iepen", icoon: "icons/Iepen.png", map: "Bomen", 
+      { naam: "Iepen", naam_en: "Elms", icoon: "icons/Iepen.png", map: "Bomen", 
         quote: `The elm trees stand like guardians of the quiet lane
         <br><br>- John Clare`
       },
-      { naam: "Appels", icoon: "icons/Appels.png", map: "Fruit", 
+      { naam: "Appels", naam_en: "Apples", icoon: "icons/Appels.png", map: "Fruit", 
         quote: `The apple tree is a sign of love and youth
         <br><br>- William Blake`
       },
-      { naam: "Peren", icoon: "icons/Peren.png", map: "Fruit", 
+      { naam: "Peren", naam_en: "Pears", icoon: "icons/Peren.png", map: "Fruit", 
         quote: `The pear tree bears its fruit with quiet patience in the orchard
         <br><br>- Henry Thoreau`
       },
-      { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
+      { naam: "Pruimen", naam_en: "Plumes", icoon: "icons/Pruimen.png", map: "Fruit", 
         quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
         <br><br>- John Keats`
       },
-      { naam: "Frambozen", icoon: "icons/Frambozen.png", map: "Fruit", 
+      { naam: "Frambozen", naam_en: "Raspberries", icoon: "icons/Frambozen.png", map: "Fruit", 
         quote: `Few fruits are as intensely flavored as the raspberry when freshly picked
         <br><br>- Anna Pavord`
       },
-      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
+      { naam: "Rozen", naam_en: "Roses", icoon: "icons/Rozen.png", map: "Bloemen", 
         quote: `Love and a red rose can't be hid
         <br><br>- Thomas Holcroft`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Tropisch regenwoud"],
     hint: `Sommige fabiden voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some fabids feel at home in the tropical rainforest.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Rubberbomen", icoon: "icons/Rubberbomen.png", map: "Bomen", 
+      { naam: "Rubberbomen", naam_en: "Rubber trees", icoon: "icons/Rubberbomen.png", map: "Bomen", 
         quote: `The rubber tree yields a milky latex which can be coagulated into a material of great elasticity
         <br><br>- Henry Wickham`
       },
-      { naam: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
+      { naam: "Coca", naam_en: "Coca", icoon: "icons/Coca.png", map: "Genotwaren", 
         quote: `The leaves of the coca plant, when processed, yield a substance that produces remarkable stimulation 
         and relief from fatigue
         <br><br>- Sigmund Freud`
       },
-      { naam: "Sperziebonen", icoon: "icons/Sperziebonen.png", map: "Zaden", 
+      { naam: "Sperziebonen", naam_en: "Green beans", icoon: "icons/Sperziebonen.png", map: "Zaden", 
         quote: `The beans are eaten while the pods are yet tender and green
         <br><br>- John Gerard`
       },
-      { naam: "Kidneybonen", icoon: "icons/Kidneybonen.png", map: "Zaden", 
+      { naam: "Kidneybonen", naam_en: "Kidney beans", icoon: "icons/Kidneybonen.png", map: "Zaden", 
         quote: `The kidney bean is cultivated for its edible seeds, which are highly nutritious when properly cooked
         <br><br>- John Lindley`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Wespen"],
     tijd: 50_000_000,
     output: [
-      { naam: "Vijgen", icoon: "icons/Vijgen.png", map: "Fruit", 
+      { naam: "Vijgen", naam_en: "Figs", icoon: "icons/Vijgen.png", map: "Fruit", 
         quote: `The fig tree yields its fruit freely, a gift of the warm earth
         <br><br>- Ovidius`
       },
-      { naam: "Appels", icoon: "icons/Appels.png", map: "Fruit", 
+      { naam: "Appels", naam_en: "Apples", icoon: "icons/Appels.png", map: "Fruit", 
         quote: `The apple tree is a sign of love and youth
         <br><br>- William Blake`
       },
-      { naam: "Peren", icoon: "icons/Peren.png", map: "Fruit", 
+      { naam: "Peren", naam_en: "Pears", icoon: "icons/Peren.png", map: "Fruit", 
         quote: `The pear tree bears its fruit with quiet patience in the orchard
         <br><br>- Henry Thoreau`
       },
-      { naam: "Kersen", icoon: "icons/Kersen.png", map: "Fruit", 
+      { naam: "Kersen", naam_en: "Cherries", icoon: "icons/Kersen.png", map: "Fruit", 
         quote: `The cherries hung like drops of blood in the summer sun
         <br><br>- D.H. Lawrence`
       },
-      { naam: "Pruimen", icoon: "icons/Pruimen.png", map: "Fruit", 
+      { naam: "Pruimen", naam_en: "Plumes", icoon: "icons/Pruimen.png", map: "Fruit", 
         quote: `Season of mists and mellow fruitfulness, close bosom-friend of the maturing sun
         <br><br>- John Keats`
       },
-      { naam: "Perziken", icoon: "icons/Perziken.png", map: "Fruit", 
+      { naam: "Perziken", naam_en: "Peaches", icoon: "icons/Perziken.png", map: "Fruit", 
         quote: `The peach ripens in silence, gathering sweetness from the sun
         <br><br>- Paul Valéry`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Bijen"],
     tijd: 30_000_000,
     output: [
-      { naam: "Rozen", icoon: "icons/Rozen.png", map: "Bloemen", 
+      { naam: "Rozen", naam_en: "Roses", icoon: "icons/Rozen.png", map: "Bloemen", 
         quote: `Love and a red rose can't be hid
         <br><br>- Thomas Holcroft`
       },
-      { naam: "Pompoenen", icoon: "icons/Pompoenen.png", map: "Groenten", 
+      { naam: "Pompoenen", naam_en: "Pumpkins", icoon: "icons/Pompoenen.png", map: "Groenten", 
         quote: `The pumpkin ripened beneath the mellow sun of autumn
         <br><br>- Washington Irving`
       },
-      { naam: "Courgettes", icoon: "icons/Courgettes.png", map: "Groenten", 
+      { naam: "Courgettes", naam_en: "Zucchini", icoon: "icons/Courgettes.png", map: "Groenten", 
         quote: `Zucchini is a versatile squash that absorbs flavors while remaining delicate in texture
         <br><br>- Elizabeth Schneider`
       },
-      { naam: "Watermeloenen", icoon: "icons/Watermeloenen.png", map: "Groenten", 
+      { naam: "Watermeloenen", naam_en: "Watermelons", icoon: "icons/Watermeloenen.png", map: "Groenten", 
         quote: `When one has tasted watermelon, he knows what the angels eat
         <br><br>- Mark Twain`
       },
-      { naam: "Aardbeien", icoon: "icons/Aardbeien.png", map: "Fruit", 
+      { naam: "Aardbeien", naam_en: "Strawberries", icoon: "icons/Aardbeien.png", map: "Fruit", 
         quote: `Wild strawberries are the sweetest reward of wandering in the fields
         <br><br>- Henry Thoreau`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Savanne"],
     hint: `Sommige fabiden voelen zich thuis op de savanne.`,
+    hint_en: `Some fabids feel at home on the savannah.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Acacia", icoon: "icons/Acacia.png", map: "Bomen", 
+      { naam: "Acacia", naam_en: "Wattles", icoon: "icons/Acacia.png", map: "Bomen", 
         quote: `The acacias stood scattered over the plain, each tree casting a thin, sharp shadow upon the grass
         <br><br>- Henry Stanley`
       },
-      { naam: "Cassave", icoon: "icons/Cassave.png", map: "Groenten", 
+      { naam: "Cassave", naam_en: "Cassava", icoon: "icons/Cassave.png", map: "Groenten", 
         quote: `Manioc is indispensable to the subsistence of many Amazonian peoples
         <br><br>- Richard Spruce`
       },
-      { naam: "Pinda", icoon: "icons/Pinda.png", map: "Zaden", 
+      { naam: "Pinda", naam_en: "Peanuts", icoon: "icons/Pinda.png", map: "Zaden", 
         quote: `The peanut is remarkable in that its fruit develops underground
         <br><br>- Charles Millspaugh`
       },
-      { naam: "Pompoenen", icoon: "icons/Pompoenen.png", map: "Groenten", 
+      { naam: "Pompoenen", naam_en: "Pumpkins", icoon: "icons/Pompoenen.png", map: "Groenten", 
         quote: `The pumpkin ripened beneath the mellow sun of autumn
         <br><br>- Washington Irving`
       },
-      { naam: "Courgettes", icoon: "icons/Courgettes.png", map: "Groenten", 
+      { naam: "Courgettes", naam_en: "Zucchini", icoon: "icons/Courgettes.png", map: "Groenten", 
         quote: `Zucchini is a versatile squash that absorbs flavors while remaining delicate in texture
         <br><br>- Elizabeth Schneider`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Weide"],
     hint: `Sommige fabiden voelen zich thuis in de grasweides.`,
+    hint_en: `Some fabids feel at home in the grasslands.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+      { naam: "Klavers", naam_en: "Clovers", icoon: "icons/Klavers.png", map: "Planten", 
         quote: `Clover enriches the soil and is excellent fodder for cattle
         <br><br>- John Evelyn`
       },
-      { naam: "Viooltjes", icoon: "icons/Viooltjes.png", map: "Bloemen", 
+      { naam: "Viooltjes", naam_en: "Violets", icoon: "icons/Viooltjes.png", map: "Bloemen", 
         quote: `There is pansies, that's for thoughts
         <br><br>- William Shakespeare`
       },
-      { naam: "Aardbeien", icoon: "icons/Aardbeien.png", map: "Fruit", 
+      { naam: "Aardbeien", naam_en: "Strawberries", icoon: "icons/Aardbeien.png", map: "Fruit", 
         quote: `Wild strawberries are the sweetest reward of wandering in the fields
         <br><br>- Henry Thoreau`
       },
-      { naam: "Vlas", icoon: "icons/Vlas.png", map: "Materialen", 
+      { naam: "Vlas", naam_en: "Flax", icoon: "icons/Vlas.png", map: "Materialen", 
         quote: `Flax, slender in stem, yields threads for linen when ripened in the sun
         <br><br>- Virgilius`
       },
-      { naam: "Erwten", icoon: "icons/Erwten.png", map: "Zaden", 
+      { naam: "Erwten", naam_en: "Peas", icoon: "icons/Erwten.png", map: "Zaden", 
         quote: `The pea is a crop that gives both pleasure and sustenance in the garden
         <br><br>- William Cobbett`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Steppe"],
     hint: `Sommige fabiden voelen zich thuis op de steppe.`,
+    hint_en: `Some fabids feel at home on the steppe.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Hop", icoon: "icons/Hop.png", map: "Genotwaren", 
+      { naam: "Hop", naam_en: "Hops", icoon: "icons/Hop.png", map: "Genotwaren", 
         quote: `Hop adds bitterness to the drink and preserves it from spoiling
         <br><br>- Hildegard von Bingen`
       },
-      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+      { naam: "Klavers", naam_en: "Clovers", icoon: "icons/Klavers.png", map: "Planten", 
         quote: `Clover enriches the soil and is excellent fodder for cattle
         <br><br>- John Evelyn`
       },
-      { naam: "Linzen", icoon: "icons/Linzen.png", map: "Zaden", 
+      { naam: "Linzen", naam_en: "Lentils", icoon: "icons/Linzen.png", map: "Zaden", 
         quote: `Lentils are of great use as food, though they produce a dulling effect on the mind
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Kikkererwten", icoon: "icons/Kikkererwten.png", map: "Zaden", 
+      { naam: "Kikkererwten", naam_en: "Chickpeas", icoon: "icons/Kikkererwten.png", map: "Zaden", 
         quote: `Chickpeas are eaten both green and dried, and are thought to produce warmth in the body
         <br><br>- Dioscorides`
       },
-      { naam: "Hennep", icoon: "icons/Hennep.png", map: "Materialen", 
+      { naam: "Hennep", naam_en: "Hemp", icoon: "icons/Hennep.png", map: "Materialen", 
         quote: `From hemp are made ropes of great strength; its seed is sometimes used as food or medicine
         <br><br>- Plinius de Oudere`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oerfabiden", "Prairie"],
     hint: `Sommige fabiden voelen zich thuis op de prairie.`,
+    hint_en: `Some fabids feel at home on the prairie.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Klavers", icoon: "icons/Klavers.png", map: "Planten", 
+      { naam: "Klavers", naam_en: "Clovers", icoon: "icons/Klavers.png", map: "Planten", 
         quote: `Clover enriches the soil and is excellent fodder for cattle
         <br><br>- John Evelyn`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oermalviden", "Vuur"], ["Oermalviden", "Lava"], ["Oermalviden", "Brand"]
     ],
     hint: `Er zijn malviden die handig inspelen op brand en vuur.`,
+    hint_en: `There are malvids that cleverly responds to fire and blazes.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
+      { naam: "Eucalyptus", naam_en: "Eucalyptus", icoon: "icons/Eucalyptus.png", map: "Bomen", 
         quote: `In the blue haze of eucalyptus the land seems endless and still
         <br><br>- Banjo Paterson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Vulkaan"],
     hint: `Sommige malviden voelen zich thuis op tropische, vulkanische bodems.`,
+    hint_en: `Some malvids feel at home in tropical volcanic soils.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Kruidnagel", icoon: "icons/Kruidnagel.png", map: "Smaakmakers", 
+      { naam: "Kruidnagel", naam_en: "Cloves", icoon: "icons/Kruidnagel.png", map: "Smaakmakers", 
         quote: `The scent of cloves carries the memory of the islands
         <br><br>- Haji Amrullah`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }  
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: [
       ["Oermalviden", "Berg"], ["Oermalviden", "Steppe"]
     ],
     hint: `Sommige malviden voelen zich thuis op bergen en steppes.`,
+    hint_en: `Some malvids feel at home on mountains and steppes.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
+      { naam: "Pistache", naam_en: "Pistachio", icoon: "icons/Pistache.png", map: "Zaden", 
         quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
+      { naam: "Granaatappels", naam_en: "Pomegranates", icoon: "icons/Granaatappels.png", map: "Fruit", 
         quote: `The pomegranate opens like a secret heart full of blood-red jewels
         <br><br>- D.H. Lawrence`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Zwavel"],
     hint: `Sommige malviden verleggen de focus naar zwavel.`,
+    hint_en: `Some malvids shift their focus toward sulfur.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Doerians", icoon: "icons/Doerians.png", map: "Fruit", 
+      { naam: "Doerians", naam_en: "Durians", icoon: "icons/Doerians.png", map: "Fruit", 
         quote: `The durian is the king of fruits in Malaya, though its smell is offensive to many
         <br><br>- Henry Ridley`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Woestijn"],
     hint: `Sommige malviden voelen zich thuis in de woestijn.`,
+    hint_en: `Some malvids feel at home in the desert.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Bomen", 
+      { naam: "Wierookbomen", naam_en: "Frankincense trees", icoon: "icons/Wierookbomen.png", map: "Bomen", 
         quote: `Arabia produces frankincense from trees guarded against winged serpents
         <br><br>- Herodotos`
       },
-      { naam: "Mirre", icoon: "icons/Mirre.png", map: "Bomen", 
+      { naam: "Mirre", naam_en: "Myrrh", icoon: "icons/Mirre.png", map: "Bomen", 
         quote: `Myrrh is among the most esteemed of perfumes, used both in medicine and sacred rites
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Pistache", icoon: "icons/Pistache.png", map: "Zaden", 
+      { naam: "Pistache", naam_en: "Pistachio", icoon: "icons/Pistache.png", map: "Zaden", 
         quote: `The pistachio is a nut esteemed for its pleasant flavor and introduced from Syria
         <br><br>- Plinius de Oudere`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Oase"],
     tijd: 20_000_000,
     output: [
-      { naam: "Wierookbomen", icoon: "icons/Wierookbomen.png", map: "Bomen", 
+      { naam: "Wierookbomen", naam_en: "Frankincense trees", icoon: "icons/Wierookbomen.png", map: "Bomen", 
         quote: `Arabia produces frankincense from trees guarded against winged serpents
         <br><br>- Herodotos`
       },
-      { naam: "Granaatappels", icoon: "icons/Granaatappels.png", map: "Fruit", 
+      { naam: "Granaatappels", naam_en: "Pomegranates", icoon: "icons/Granaatappels.png", map: "Fruit", 
         quote: `The pomegranate opens like a secret heart full of blood-red jewels
         <br><br>- D.H. Lawrence`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Kust"],
     hint: `Sommige malviden voelen zich thuis bij warme kustgebieden.`,
+    hint_en: `Some malvids feel at home in warm coastal areas.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
+      { naam: "Lychee", naam_en: "Lychee", icoon: "icons/Lychee.png", map: "Fruit", 
         quote: `A single lychee carried a thousand miles is worth the fall of an empire
         <br><br>- Du Mu`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Rivier"],
     hint: `Sommige malviden voelen zich thuis bij natte riviergebieden.`,
+    hint_en: `Some malvids feel at home in wet river areas.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Katoen", icoon: "icons/Katoen.png", map: "Materialen", 
+      { naam: "Katoen", naam_en: "Cotton", icoon: "icons/Katoen.png", map: "Materialen", 
         quote: `Cotton threads bind together the fabric of modern industry and commerce
         <br><br>- John Ruskin`
       },
-      { naam: "Lindes", icoon: "icons/Lindes.png", map: "Bomen", 
+      { naam: "Lindes", naam_en: "Linden trees", icoon: "icons/Lindes.png", map: "Bomen", 
         quote: `Beneath the linden walks a gentler air, where thought may rest
         <br><br>- Alexander Pope`
       },
-      { naam: "Esdoorns", icoon: "icons/Esdoorns.png", map: "Bomen", 
+      { naam: "Esdoorns", naam_en: "Maples", icoon: "icons/Esdoorns.png", map: "Bomen", 
         quote: `Under the maple’s crimson leaves the year seems to pause in flame
         <br><br>- Henry Longfellow`
       },
-      { naam: "Jute", icoon: "icons/Jute.png", map: "Materialen", 
+      { naam: "Jute", naam_en: "Jute", icoon: "icons/Jute.png", map: "Materialen", 
         quote: `Jute became indispensable in the manufacture of sacks for global trade
         <br><br>- Andrew Watt`
       },
-      { naam: "Mandarijnen", icoon: "icons/Mandarijnen.png", map: "Fruit", 
+      { naam: "Mandarijnen", naam_en: "Mandarins", icoon: "icons/Mandarijnen.png", map: "Fruit", 
         quote: `Cultivated fruits such as oranges exhibit remarkable variation under human selection
         <br><br>- Charles Darwin`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Klif"],
     hint: `Sommige malviden voelen zich thuis bij de rotsachtige kustkliffen.`,
+    hint_en: `Some malvids feel at home among the rocky coastal cliffs.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Kool", icoon: "icons/Kool.png", map: "Groenten", 
+      { naam: "Kool", naam_en: "Cabbage", icoon: "icons/Kool.png", map: "Groenten", 
         quote: `The humble cabbage is often the foundation of the simplest meals
         <br><br>- Charles Lamb`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Overstroming"],
     tijd: 5_000_000,
     output: [
-      { naam: "Jute", icoon: "icons/Jute.png", map: "Materialen", 
+      { naam: "Jute", naam_en: "Jute", icoon: "icons/Jute.png", map: "Materialen", 
         quote: `Jute became indispensable in the manufacture of sacks for global trade
         <br><br>- Andrew Watt`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Gif"],
     tijd: 5_000_000,
     output: [
-      { naam: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
+      { naam: "Cashew", naam_en: "Cashew", icoon: "icons/Cashew.png", map: "Zaden", 
         quote: `The cashew tree stands in the coastal heat, its fruit both strange and familiar in the Indian landscape
         <br><br>- V.S. Naipaul`
       },
-      { naam: "Paardenkastanjes", icoon: "icons/Paardenkastanjes.png", map: "Bomen", 
+      { naam: "Paardenkastanjes", naam_en: "Horse chestnuts", icoon: "icons/Paardenkastanjes.png", map: "Bomen", 
         quote: `Beneath the chestnut’s spreading shade the village children played
         <br><br>- William Wordsworth`
       },
-      { naam: "Cacao", icoon: "icons/Cacao.png", map: "Zaden", 
+      { naam: "Cacao", naam_en: "Cocoa", icoon: "icons/Cacao.png", map: "Zaden", 
         quote: `Cocoa gives warmth and strength to the fatigued traveller
         <br><br>- James Thomson`
       },
-      { naam: "Kola", icoon: "icons/Kola.png", map: "Zaden", 
+      { naam: "Kola", naam_en: "Kola trees", icoon: "icons/Kola.png", map: "Zaden", 
         quote: `The kola nut is chewed for its stimulating effect and is of great social importance among the peoples 
         of West Africa
         <br><br>- William Johnson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
   },
   {
     input: ["Oermalviden", "Moeras"],
