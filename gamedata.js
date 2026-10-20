@@ -2993,7 +2993,7 @@ const combinaties = [
       ["Papegaaivissen", "Radioactiviteit"], ["Papegaaivissen", "Gif"],
       ["Karpers", "Radioactiviteit"], ["Karpers", "Gif"],
       ["Zeepaardjes", "Radioactiviteit"], ["Zeepaardjes", "Gif"],
-      ["Vliegvissen", "Radioactiviteit"], ["Vliegvissen", "Gif"],
+      ["Vliegende vissen", "Radioactiviteit"], ["Vliegende vissen", "Gif"],
       ["Maanvissen", "Radioactiviteit"], ["Maanvissen", "Gif"],
       ["Koraalduivels", "Radioactiviteit"], ["Koraalduivels", "Gif"],
       ["Kogelvissen", "Radioactiviteit"], ["Kogelvissen", "Gif"],
@@ -3293,7 +3293,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Zeeduivels", "Dood"], ["Platvissen", "Dood"], ["Piranha", "Dood"], ["Clownvissen", "Dood"],
       ["Doktersvissen", "Dood"], ["Papegaaivissen", "Dood"], ["Karpers", "Dood"], ["Zeepaardjes", "Dood"],
-      ["Vliegvissen", "Dood"], ["Maanvissen", "Dood"], ["Koraalduivels", "Dood"], ["Kogelvissen", "Dood"],
+      ["Vliegende vissen", "Dood"], ["Maanvissen", "Dood"], ["Koraalduivels", "Dood"], ["Kogelvissen", "Dood"],
       ["Oerstraalvinnigen", "Dood"], ["Kabeljauwen", "Dood"], ["Snoeken", "Dood"], ["Meervallen", "Dood"],
       ["Paling", "Dood"], ["Goudvissen", "Dood"], ["Coelacanten", "Dood"], ["Tiktaalik", "Dood"],
       ["Tonijn", "Dood"], ["Zalm", "Dood"], ["Haring", "Dood"], ["Makreel", "Dood"], ["Forel", "Dood"],
@@ -3720,7 +3720,7 @@ const combinaties = [
     input: [
       /* --- VISSEN --- */
       ["Clownvissen", "Zenuwen"], ["Doktersvissen", "Zenuwen"], ["Papegaaivissen", "Zenuwen"], ["Karpers", "Zenuwen"], 
-      ["Zeepaardjes", "Zenuwen"], ["Vliegvissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"],
+      ["Zeepaardjes", "Zenuwen"], ["Vliegende vissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"],
       /* --- GELEEDPOTIGEN --- */
       ["Zwaardstaarten", "Zenuwen"],
       /* --- KLEIN LANDLEVEN --- */
@@ -3913,7 +3913,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Agnathen", "Pijn"], ["Zeeduivels", "Pijn"], ["Platvissen", "Pijn"], ["Piranha", "Pijn"], ["Clownvissen", "Pijn"],
       ["Doktersvissen", "Pijn"], ["Papegaaivissen", "Pijn"], ["Karpers", "Pijn"], ["Zeepaardjes", "Pijn"], 
-      ["Vliegvissen", "Pijn"], ["Maanvissen", "Pijn"], ["Koraalduivels", "Pijn"], ["Kogelvissen", "Pijn"], 
+      ["Vliegende vissen", "Pijn"], ["Maanvissen", "Pijn"], ["Koraalduivels", "Pijn"], ["Kogelvissen", "Pijn"], 
       ["Oerstraalvinnigen", "Pijn"], ["Kabeljauwen", "Pijn"], ["Snoeken", "Pijn"], ["Meervallen", "Pijn"],
       ["Paling", "Pijn"], ["Haaien", "Pijn"], ["Spookhaaien", "Pijn"], ["Manta", "Pijn"], ["Coelacanten", "Pijn"],
       ["Tiktaalik", "Pijn"], ["Tonijn", "Pijn"], ["Zalm", "Pijn"], ["Haring", "Pijn"], ["Makreel", "Pijn"],
@@ -3966,7 +3966,7 @@ const combinaties = [
       ["Papegaaivissen", "Virus"], ["Papegaaivissen", "Schimmel"], ["Papegaaivissen", "Parasieten"], 
       ["Karpers", "Virus"], ["Karpers", "Schimmel"], ["Karpers", "Parasieten"], 
       ["Zeepaardjes", "Virus"], ["Zeepaardjes", "Schimmel"], ["Zeepaardjes", "Parasieten"], 
-      ["Vliegvissen", "Virus"], ["Vliegvissen", "Schimmel"], ["Vliegvissen", "Parasieten"], 
+      ["Vliegende vissen", "Virus"], ["Vliegende vissen", "Schimmel"], ["Vliegende vissen", "Parasieten"], 
       ["Maanvissen", "Virus"], ["Maanvissen", "Schimmel"], ["Maanvissen", "Parasieten"], 
       ["Koraalduivels", "Virus"], ["Koraalduivels", "Schimmel"], ["Koraalduivels", "Parasieten"], 
       ["Kogelvissen", "Virus"], ["Kogelvissen", "Schimmel"], ["Kogelvissen", "Parasieten"], 
@@ -4050,7 +4050,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Agnathen", "Agnathen"], ["Zeeduivels", "Zeeduivels"], ["Platvissen", "Platvissen"], ["Piranha", "Piranha"], 
       ["Clownvissen", "Clownvissen"], ["Doktersvissen", "Doktersvissen"], ["Papegaaivissen", "Papegaaivissen"], 
-      ["Karpers", "Karpers"], ["Zeepaardjes", "Zeepaardjes"], ["Vliegvissen", "Vliegvissen"], 
+      ["Karpers", "Karpers"], ["Zeepaardjes", "Zeepaardjes"], ["Vliegende vissen", "Vliegende vissen"], 
       ["Maanvissen", "Maanvissen"], ["Koraalduivels", "Koraalduivels"], ["Kogelvissen", "Kogelvissen"], 
       ["Oerstraalvinnigen", "Oerstraalvinnigen"], ["Kabeljauwen", "Kabeljauwen"], ["Snoeken", "Snoeken"], 
       ["Meervallen", "Meervallen"], ["Paling", "Paling"], ["Haaien", "Haaien"], ["Spookhaaien", "Spookhaaien"], 
@@ -5506,7 +5506,7 @@ const combinaties = [
         by virtue of its spirit, penetrates the mass and transforms it into its own nature
         <br><br>- Andreas Libavius`
       },
-      { naam: "Glucose", naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -5847,7 +5847,7 @@ const combinaties = [
       ["Haaien", "Clownvissen"], ["Haaien", "Doktersvissen"], ["Haaien", "Papegaaivissen"], ["Haaien", "Koraalduivels"], 
       ["Haaien", "Kogelvissen"], ["Haaien", "Tonijn"], ["Haaien", "Zalm"], ["Haaien", "Kabeljauwen"], ["Haaien", "Haring"],
       ["Haaien", "Makreel"], ["Haaien", "Karpers"], ["Haaien", "Snoeken"], ["Haaien", "Forel"], ["Haaien", "Meervallen"], 
-      ["Haaien", "Paling"], ["Haaien", "Zeepaardjes"], ["Haaien", "Vliegvissen"], ["Haaien", "Piranha"], 
+      ["Haaien", "Paling"], ["Haaien", "Zeepaardjes"], ["Haaien", "Vliegende vissen"], ["Haaien", "Piranha"], 
       ["Haaien", "Maanvissen"], ["Haaien", "Goudvissen"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
@@ -7777,38 +7777,35 @@ const combinaties = [
   {
     input: ["Oerpolyneopteren", "Evolutie"],
     hint: `Insecten met langgerekte, rechte vleugels.. we zullen zien wat daaruit komt.`,
+    hint_en: `Insects with elongated, straight wings.. we shall see what comes of that.`,
     output: [
-      { naam: "Krekels", icoon: "icons/Krekels.png", map: "Klein landleven", 
+      { naam: "Krekels", naam_en: "Crickets", icoon: "icons/Krekels.png", map: "Klein landleven", 
         quote: `I love being outdoors. I love listening to the crickets
         <br><br>- Miranda Kerr`
       },
-      { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
+      { naam: "Sprinkhanen", naam_en: "Grasshoppers", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
         quote: `Now climb, young grasshopper, so your Kung Fu won't be weak
         <br><br>- Hona Andrews`
       },
-      { naam: "Wandelende takken", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
+      { naam: "Wandelende takken", naam_en: "Stick insects", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
         quote: `Stick insects are masters of disguise, their bodies sculpted by evolution to vanish in plain sight
         <br><br>- Paul Brock`
       },
-      { naam: "Kakkerlakken", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
+      { naam: "Kakkerlakken", naam_en: "Cockroaches", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
         quote: `Both the cockroach and the bird would get along very well without us, although the cockroach would miss us
         most
         <br><br>- Joseph Krutch`
       },
-      { naam: "Termieten", icoon: "icons/Termieten.png", map: "Klein landleven", 
+      { naam: "Termieten", naam_en: "Termites", icoon: "icons/Termieten.png", map: "Klein landleven", 
         quote: `But once the ants and termites jumped the high barrier that prevents the vast variety of evolving animal
         groups from becoming fully social, they dominated the world
         <br><br>- E.O. Wilson`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oercynodonten", 
-        titel: "Probeer opnieuw in het Perm",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
-        <br><br>Eerst nodig: eerste zoogdieren.`
-      }
-    }
+    uitleg: { thresholdElement: { naam: "Oercynodonten", naam_en: "Urcynodonts",
+        titel: "Probeer opnieuw in het Perm", titel_en: "Try again in the Permian",
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden. <br><br>Eerst nodig: eerste zoogdieren.`,
+        tekst_en: `Larger animals must spread across the land first. <br><br>Required first: early mammals.` } }
   }, /* ------------------ KREKELS ------------------ */
   {
     input: [
@@ -7825,16 +7822,16 @@ const combinaties = [
       ["Krekels", "Coniferen"], ["Krekels", "Palmvarens"], ["Krekels", "Ginkgo"]
     ],
     output: [
-      { naam: "Krekels", icoon: "icons/Krekels.png", map: "Klein landleven", 
+      { naam: "Krekels", naam_en: "Crickets", icoon: "icons/Krekels.png", map: "Klein landleven", 
         quote: `I love being outdoors. I love listening to the crickets
         <br><br>- Miranda Kerr`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -7854,16 +7851,16 @@ const combinaties = [
       ["Sprinkhanen", "Coniferen"], ["Sprinkhanen", "Palmvarens"], ["Sprinkhanen", "Ginkgo"]
     ],
     output: [
-      { naam: "Sprinkhanen", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
+      { naam: "Sprinkhanen", naam_en: "Grasshoppers", icoon: "icons/Sprinkhanen.png", map: "Klein landleven", 
         quote: `Now climb, young grasshopper, so your Kung Fu won't be weak
         <br><br>- Hona Andrews`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -7880,16 +7877,16 @@ const combinaties = [
       ["Wandelende takken", "Coniferen"], ["Wandelende takken", "Palmvarens"], ["Wandelende takken", "Ginkgo"]
     ],
     output: [
-      { naam: "Wandelende takken", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
+      { naam: "Wandelende takken", naam_en: "Stick insects", icoon: "icons/Wandelende takken.png", map: "Klein landleven", 
         quote: `Stick insects are masters of disguise, their bodies sculpted by evolution to vanish in plain sight
         <br><br>- Paul Brock`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -7912,17 +7909,17 @@ const combinaties = [
       ["Kakkerlakken", "Coniferen"], ["Kakkerlakken", "Palmvarens"], ["Kakkerlakken", "Ginkgo"]
     ],
     output: [
-      { naam: "Kakkerlakken", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
+      { naam: "Kakkerlakken", naam_en: "Cockroaches", icoon: "icons/Kakkerlakken.png", map: "Klein landleven", 
         quote: `Both the cockroach and the bird would get along very well without us, although the cockroach would miss us
         most
         <br><br>- Joseph Krutch`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -7937,17 +7934,17 @@ const combinaties = [
       ["Termieten", "Palmvarens"], ["Termieten", "Ginkgo"]
     ],
     output: [
-      { naam: "Termieten", icoon: "icons/Termieten.png", map: "Klein landleven", 
+      { naam: "Termieten", naam_en: "Termites", icoon: "icons/Termieten.png", map: "Klein landleven", 
         quote: `But once the ants and termites jumped the high barrier that prevents the vast variety of evolving animal
         groups from becoming fully social, they dominated the world
         <br><br>- E.O. Wilson`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -7956,36 +7953,33 @@ const combinaties = [
   {
     input: ["Oerdiapsiden", "Evolutie"],
     hint: `Reptielen verspreidden al snel naar water, land en lucht.`,
+    hint_en: `Reptiles soon spread across water, land and air.`,
     tijd: 230_000_000,
     output: [
-      { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+      { naam: "Pterosauriërs", naam_en: "Pterosaurs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
         quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
         unlike anything seen before or since.
         <br><br>- David Unwin`
       },
-      { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+      { naam: "Lepidosauriërs", naam_en: "Lepidosaurs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
         quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
         the finest details of their surroundings
         <br><br>- Rachel Carson`
       },
-      { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+      { naam: "Crurotarsi", naam_en: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
         quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
         efficiency that has changed little over time
         <br><br>- David Attenborough`
       },
-      { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
+      { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oercynodonten", 
-        titel: "Probeer opnieuw in het Perm",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
-        <br><br>Eerst nodig: eerste zoogdieren.`
-      }
-    }
+    uitleg: { thresholdElement: { naam: "Oercynodonten", naam_en: "Urcynodonts",
+        titel: "Probeer opnieuw in het Perm", titel_en: "Try again in the Permian",
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden. <br><br>Eerst nodig: eerste zoogdieren.`,
+        tekst_en: `Larger animals must spread across the land first. <br><br>Required first: early mammals.` } }
   }, /* ------------------ PTEROSAURIËRS ------------------ */
   {
     input: [
@@ -8004,17 +7998,17 @@ const combinaties = [
       ["Pterosauriërs", "Muggen"]
     ],
     output: [
-      { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+      { naam: "Pterosauriërs", naam_en: "Pterosaurs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
         quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
         unlike anything seen before or since.
         <br><br>- David Unwin`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8026,22 +8020,24 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Pterosauriërs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+      { naam: "Pterosauriërs", naam_en: "Pterosaurs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
         quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
         unlike anything seen before or since.
         <br><br>- David Unwin`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8064,17 +8060,17 @@ const combinaties = [
       ["Lepidosauriërs", "Muggen"]
     ],
     output: [
-      { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+      { naam: "Lepidosauriërs", naam_en: "Lepidosaurs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
         quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
         the finest details of their surroundings
         <br><br>- Rachel Carson`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8086,22 +8082,24 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Lepidosauriërs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+      { naam: "Lepidosauriërs", naam_en: "Lepidosaurs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
         quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
         the finest details of their surroundings
         <br><br>- Rachel Carson`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8124,17 +8122,17 @@ const combinaties = [
       ["Crurotarsi", "Muggen"]
     ],
     output: [
-      { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+      { naam: "Crurotarsi", naam_en: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
         quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
         efficiency that has changed little over time
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8146,22 +8144,24 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+      { naam: "Crurotarsi", naam_en: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
         quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
         efficiency that has changed little over time
         <br><br>- David Attenborough`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8184,16 +8184,16 @@ const combinaties = [
       ["Oerdinosauriërs", "Muggen"]
     ],
     output: [
-      { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
+      { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8205,21 +8205,23 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Oerdinosauriërs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
+      { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8228,9 +8230,10 @@ const combinaties = [
   {
     input: ["Oeranapsiden", "Evolutie"],
     hint: `Er is er maar 1 overgebleven van de anapsiden, maar wie...`,
+    hint_en: `Only one of the anapsids will remain, but which one...`,
     tijd: 260_000_000,
     output: [
-      { naam: "Schildpadden", icoon: "icons/Schildpadden.png", map: "Reptielen", 
+      { naam: "Schildpadden", naam_en: "Tortoises", icoon: "icons/Schildpadden.png", map: "Reptielen", 
         quote: `Slow but steady wins the race
         <br><br>- Aesopos`
       }
@@ -8257,16 +8260,16 @@ const combinaties = [
       ["Schildpadden", "Detritus"], ["Schildpadden", "Blad"]
     ],
     output: [
-      { naam: "Schildpadden", icoon: "icons/Schildpadden.png", map: "Reptielen", 
+      { naam: "Schildpadden", naam_en: "Tortoises", icoon: "icons/Schildpadden.png", map: "Reptielen", 
         quote: `Slow but steady wins the race
         <br><br>- Aesopos`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8277,8 +8280,9 @@ const combinaties = [
       ["Termieten", "Aarde"], ["Mieren", "Aarde"]
     ],
     hint: `Termieten zijn kunstzinnige beestjes, kijk maar wat ze kunnen met simpele grond.`,
+    hint_en: `Termites are artistic little creatures - look at what they can do with just a little bit of earth.`,
     output: [
-      { naam: "Heuvel", icoon: "icons/Heuvel.png", map: "Landschap", 
+      { naam: "Heuvel", naam_en: "Hill", icoon: "icons/Heuvel.png", map: "Landschap", 
         quote: `Say, if I only could... I'd make a deal with God and I'd get Him to swap our places.
         I'd be running up that road, be running up that hill.. with no problems
         <br><br>- Kate Bush`
@@ -8290,8 +8294,9 @@ const combinaties = [
       ["Termieten", "Termieten"], ["Mieren", "Mieren"]
     ],
     hint: `De eerste samenlevingen werden gebouwd door eusociale dieren als termieten en mieren.`,
+    hint_en: `The first societies were built by eusocial animals such as termites and ants.`,
     output: [
-      { naam: "Hiërarchie", icoon: "icons/Hierarchie.png", map: "Samenleving", 
+      { naam: "Hiërarchie", naam_en: "Hierarchy", icoon: "icons/Hierarchie.png", map: "Samenleving", 
         quote: `Society soon grows used to any state of things which is imposed upon it without explanation
         <br><br>- Edith Wharton`
       }
@@ -8302,8 +8307,9 @@ const combinaties = [
       ["Schildpadden", "Zee"], ["Schildpadden", "Oceaan"]
     ],
     hint: `Wie o wie wil er terug naar de oceaan?`,
+    hint_en: `Who oh who wants to go back to the ocean?`,
     output: [
-      { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
+      { naam: "Zeeschildpadden", naam_en: "Turtles", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
         quote: `Try to be like the turtle - at ease in your own shell
         <br><br>- Bill Copeland`
       }
@@ -8328,16 +8334,16 @@ const combinaties = [
       ["Zeeschildpadden", "Gras"]
     ],
     output: [
-      { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
+      { naam: "Zeeschildpadden", naam_en: "Turtles", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
         quote: `Try to be like the turtle - at ease in your own shell
         <br><br>- Bill Copeland`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8358,21 +8364,23 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Zeeschildpadden", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
+      { naam: "Zeeschildpadden", naam_en: "Turtles", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
         quote: `Try to be like the turtle - at ease in your own shell
         <br><br>- Bill Copeland`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8384,7 +8392,7 @@ const combinaties = [
       ["Zeeschildpadden", "Zeepokken"], ["Zeeschildpadden", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -8395,16 +8403,17 @@ const combinaties = [
       ["Hiërarchie", "Termieten"], ["Hiërarchie", "Mieren"]
     ],
     hint: `Kijk wat hiërarchie zoal kan brengen...`,
+    hint_en: `Look what hierarchy can bring...`,
     output: [
-      { naam: "Werk", icoon: "icons/Werk.png", map: "Samenleving", 
+      { naam: "Werk", naam_en: "Labour", icoon: "icons/Werk.png", map: "Samenleving", 
         quote: `The best preparation for good work tomorrow is to do good work today
         <br><br>- Elbert Hubbard`
       },
-      { naam: "Leger", icoon: "icons/Leger.png", map: "Samenleving", 
+      { naam: "Leger", naam_en: "Army", icoon: "icons/Leger.png", map: "Samenleving", 
         quote: `Victory is reserved for those who are willing to pay its price
         <br><br>- Sun Tzu`
       },
-      { naam: "Heerser", icoon: "icons/Heerser.png", map: "Samenleving", 
+      { naam: "Heerser", naam_en: "Ruler", icoon: "icons/Heerser.png", map: "Samenleving", 
         quote: `He who is to be a good ruler must have first been ruled
         <br><br>- Aristoteles`
       }
@@ -8414,38 +8423,34 @@ const combinaties = [
   {
     input: ["Oerdinosauriërs", "Evolutie"],
     hint: `Ook dinosauriërs vertakken in vele soorten.`,
+    hint_en: `Dinosaurs branch out into many species as well.`,
     tijd: 201_000_000,
     output: [
-      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+      { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
         the evolutionary roots of modern birds
         <br><br>- Philip Currie`
       },
-      { naam: "Sauropoden", icoon: "icons/Sauropoden.png", map: "Reptielen", 
+      { naam: "Sauropoden", naam_en: "Sauropods", icoon: "icons/Sauropoden.png", map: "Reptielen", 
         quote: `Sauropods were the gentle giants of the Mesozoic, moving with ponderous grace, their immense bodies 
         shaping the landscapes they traversed
         <br><br>- John McIntosh`
       },
-      { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
+      { naam: "Stegosauriërs", naam_en: "Stegosaurs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
         quote: `Stegosaurs are among the most iconic of dinosaurs, with their plated backs and spiked tails, suggesting 
         both defense and display in equal measure
         <br><br>- Peter Galton`
       },
-      { naam: "Tyrannosauriërs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
+      { naam: "Tyrannosauriërs", naam_en: "Tyrannosaurs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
         quote: `Tyrannosaurs were the apex predators of their time, with massive skulls, powerful jaws, and a body built 
         for both hunting and intimidation
         <br><br>- Jack Horner`
       }
     ],
-    uitleg: {
-      threshold: {
-        titel: "Jura", 
-        tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Schildpadden"]
-      },
-      normal: {
-        achtergrond: "afb/jura.png",
-        titel: "JURA 201-145 MA",
+    uitleg: { threshold: { titel: "Jura", titel_en: "Jurassic", 
+        tekst: "Je moet eerst nog wat meer halen...", tekst_en: "You need to create a bit more first...",
+        requirements: ["Schildpadden"] 
+      }, normal: { achtergrond: "afb/jura.png", titel: "JURA 201-145 MA", titel_en: "JURASSIC 201-145 MA",
         tekst: `
         <span>Opnieuw vond een grote sterfte aan soorten leven plaats, maar dit keer is de aanleiding tot dusver nog 
         onbekend. Gedacht wordt aan een meteoriet, klimaatverandering, vulkanisme of het vrijkomen van methaan uit de
@@ -8461,13 +8466,36 @@ const combinaties = [
         Trias-Jura-massaextinctie, waaronder de plesiosauriërs (zeereptielen), ichthyosauriërs (reptielachtige 
         zeereptielen), haaien en krokodilachtige zeereptielen.</span>
         <br><br>
-        Op land varieerden soorten dinosauriërs van plantenetende stegosauriërs (met rijen stekels of botplaten op de rug) 
-        en sauropoden (met zeer lange nekken en tevens de langste en zwaarste landdieren die ooit hebben geleefd), tot 
-        vleesetende theropoden en de vliegende pterosauriërs. Zoogdieren waren kleine, onopvallende dieren die meestal 
+        <span>Op land varieerden soorten dinosauriërs van plantenetende stegosauriërs (met rijen stekels of botplaten op 
+        de rug) en sauropoden (met zeer lange nekken en tevens de langste en zwaarste landdieren die ooit hebben geleefd),
+        tot vleesetende theropoden en de vliegende pterosauriërs. Zoogdieren waren kleine, onopvallende dieren die meestal
         ’s nachts leefden om confrontaties met dinosauriërs uit de weg te gaan, zoals de fruitafossor (een insecteneter 
         van circa 15 centimeter) of otterachtige viseters. De flora werd gedomineerd door palmvarens, boomvarens en 
         coniferen of kegeldragers (voorouders van veel naaldbomen), wat wijst op een overwegend warm en vochtig klimaat.
         </span>`,
+
+        tekst_en: `
+        <span>Once again, a mass extinction of life forms occurred, though the cause remains unknown to this day. Theories
+        include a meteorite impact, climate change, volcanic activity, or the release of methane from the ocean floor.
+        This event significantly reshuffled the deck of the evolutionary game on land, but its impact was particularly 
+        severe in the oceans. Approximately 20 percent of marine families went extinct, including many large marine
+        reptiles. Dinosaurs, by contrast, appear to have benefitted from this event, becoming even more dominant on land.
+        In total, perhaps as much as 75 percent of all animal species may have perished.</span>
+        <br><br>
+        <span>This period is named after the Jura Mountains on the Swiss-French border, where many rocks from this era
+        are exposed at the surface. The seabed was home to many animal species that still exist today, such as oysters, 
+        brittle starts, starfish and sea urchins. This period also saw significant development among crustaceans, 
+        including crabs, lobsters, shrimp and even woodlice (on land). Some aquatic animals benefited from the Triassic-
+        Jurassic mass extinction, including plesiosaurs (marine reptiles), ichthyosaurs (reptile-like marine reptiles),
+        sharks and crocodilian-like marine reptiles.</span>
+        <br><br>
+        <span>On land, dinosaur species ranged from plant-eating stegosaurs (featuring rows of spikes or bony plates 
+        along their backs) and sauropods (which had very long necks and were the longest and heaviest land animals to 
+        have ever lived), to carnivorous theropods and flying pterosaurs. Mammals were small, inconspicuous creatures
+        that were mostly nocturnal - likely to avoid encounters with dinosaurs - such as the 'fruitafossor' (an
+        insectivore measuring about 15 centimeters) or otter-like piscivores. The flora was dominated by cycads, tree
+        ferns and conifers (ancestors of many modern needle-bearing trees), which points to a predominantly warm and
+        humid climate.</span>`
       }
     }
   }, /* ------------------ OERMANIRAPTOREN ------------------ */
@@ -8482,17 +8510,17 @@ const combinaties = [
       ["Oermaniraptoren", "Ei"]
     ],
     output: [
-      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+      { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
         the evolutionary roots of modern birds
         <br><br>- Philip Currie`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8523,21 +8551,21 @@ const combinaties = [
       ["Oermaniraptoren", "Oerprimaten"]
     ],
     output: [
-      { naam: "Oermaniraptoren", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+      { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
         the evolutionary roots of modern birds
         <br><br>- Philip Currie`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8570,12 +8598,12 @@ const combinaties = [
         shaping the landscapes they traversed
         <br><br>- John McIntosh`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8602,17 +8630,17 @@ const combinaties = [
       ["Stegosauriërs", "Essen"]
     ],
     output: [
-      { naam: "Stegosauriërs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
+      { naam: "Stegosauriërs", naam_en: "Stegosaurs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
         quote: `Stegosaurs are among the most iconic of dinosaurs, with their plated backs and spiked tails, suggesting 
         both defense and display in equal measure
         <br><br>- Peter Galton`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8633,21 +8661,21 @@ const combinaties = [
       ["Tyrannosauriërs", "Gekko's"], ["Tyrannosauriërs", "Leguanen"], ["Tyrannosauriërs", "Krokodillen"]
     ],
     output: [
-      { naam: "Tyrannosauriërs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
+      { naam: "Tyrannosauriërs", naam_en: "Tyrannosaurs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
         quote: `Tyrannosaurs were the apex predators of their time, with massive skulls, powerful jaws, and a body built 
         for both hunting and intimidation
         <br><br>- Jack Horner`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8656,41 +8684,36 @@ const combinaties = [
   {
     input: ["Rode algen", "Leca"],
     hint: `Van rood is het een kleine stap naar bruin.. in het algenmeen.`,
+    hint_en: `From red, it's a small step to brown.. algaenerally speaking.`,
     output: [
-      { naam: "Bruinwieren", icoon: "icons/Bruinwieren.png", map: "Pril leven", 
+      { naam: "Bruinwieren", naam_en: "Kelps", icoon: "icons/Bruinwieren.png", map: "Pril leven", 
         quote: `Kelp forests are the towering cities of the sea, providing shelter, food, and life to countless marine 
         organisms
         <br><br>- Jeremy Jackson`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oermaniraptoren", 
-        titel: "Probeer opnieuw in het Jura",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
-        <br><br>Eerst nodig: dinosauriërs.`
-      }
-    }
+    uitleg: { thresholdElement: { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", 
+        titel: "Probeer opnieuw in het Jura", titel_en: "Try again in the Jurassic",
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden. <br><br>Eerst nodig: dinosauriërs.`,
+        tekst_en: `Larger animals must spread across the land first. <br><br>Required first: dinosaurs.` } }
   }, /* ------------------ OCTOPUSSEN ------------------ */
   {
     input: ["Oertrochozoa", "Brein"],
     hint: `Laten we één creatie alles geven: hyperintelligentie, razendsnel camouflagevermogen, zuignappen, leervermogen,
     de beste ogen, inkt spuiten, jetpropulsie... en 3 harten.`,
+    hint_en: `Let's give one creature everything: hyperintelligence, lightning-fast camouflage, suction cups, ability to
+    learn, superior eyes, ink-spraying, jet propulsion... and 3 hearts.`,
     output: [
-      { naam: "Octopussen", icoon: "icons/Octopussen.png", map: "Waterdieren", 
+      { naam: "Octopussen", naam_en: "Octopuses", icoon: "icons/Octopussen.png", map: "Waterdieren", 
         quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
         with an octopus
         <br><br>- Sy Montgomery`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Oermaniraptoren", 
-        titel: "Probeer opnieuw in het Jura",
-        tekst: `Eerst moeten grotere dieren zich over het land verspreiden.
-        <br><br>Eerst nodig: dinosauriërs.`
-      }
-    }
+    uitleg: { thresholdElement: { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", 
+        titel: "Probeer opnieuw in het Jura", titel_en: "Try again in the Jurassic",
+        tekst: `Eerst moeten grotere dieren zich over het land verspreiden. <br><br>Eerst nodig: dinosauriërs.`,
+        tekst_en: `Larger animals must spread across the land first. <br><br>Required first: dinosaurs.` } }
   },
   {
     input: [
@@ -8705,22 +8728,22 @@ const combinaties = [
       ["Octopussen", "map:Geleedpotigen"] /* zeepokken, heremietkreeften +schelp */
     ],
     output: [
-      { naam: "Octopussen", icoon: "icons/Octopussen.png", map: "Waterdieren", 
+      { naam: "Octopussen", naam_en: "Octopuses", icoon: "icons/Octopussen.png", map: "Waterdieren", 
         quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
         with an octopus
         <br><br>- Sy Montgomery`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8740,27 +8763,29 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Octopussen", icoon: "icons/Octopussen.png", map: "Waterdieren", 
+      { naam: "Octopussen", naam_en: "Octopuses", icoon: "icons/Octopussen.png", map: "Waterdieren", 
         quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
         with an octopus
         <br><br>- Sy Montgomery`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8772,7 +8797,7 @@ const combinaties = [
       ["Octopussen", "Zeepokken"], ["Octopussen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -8783,14 +8808,15 @@ const combinaties = [
       ["Oermaniraptoren", "Evolutie"], ["Oermaniraptoren", "Lucht"]
     ],
     hint: `Wie o wie voelt zich vogelvrij genoeg?`,
+    hint_en: `Who oh who feels free as a bird?`,
     tijd: 150_000_000,
     output: [
-      { naam: "Veer", icoon: "icons/Veer.png", map: "Biologie", 
+      { naam: "Veer", naam_en: "Feather", icoon: "icons/Veer.png", map: "Biologie", 
         quote: `Let me be as a feather strong, with purpose, yet light at heart, able to bend, and, tho I might become
         frayed, able to pull myself together again
         <br><br>- Anita Sams`
       },
-      { naam: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
+      { naam: "Archaeopteryx", naam_en: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
         quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
         wings, and a skeletal form that could take to the air
         <br><br>- Alan Feduccia`
@@ -8800,8 +8826,9 @@ const combinaties = [
   {
     input: ["Bruinwieren", "Bruinwieren"],
     hint: `Al gedacht aan bossen onder water?`,
+    hint_en: `Have you thought about underwater forests?`,
     output: [
-      { naam: "Kelpwoud", icoon: "icons/Kelpwoud.png", map: "Landschap", 
+      { naam: "Kelpwoud", naam_en: "Kelp forest", icoon: "icons/Kelpwoud.png", map: "Landschap", 
         quote: `Kelp forests are among the most productive and dynamic ecosystems on Earth, forming underwater jungles 
         that shelter thousands of species
         <br><br>- Nancy Foster`
@@ -8814,23 +8841,20 @@ const combinaties = [
       ["Zaadjes", "Evolutie"], ["Zaadjes", "Blad"]
     ],
     hint: `Het is tijd voor bloemen, die zaadjes accentueren met kleurrijke blaadjes.`,
+    hint_en: `It is time for flowers, which accentuate their seeds with colourful petals.`,
     tijd: 145_000_000,
     output: [
-      { naam: "Bloem", icoon: "icons/Bloem.png", map: "Biologie", 
+      { naam: "Bloem", naam_en: "Flower", icoon: "icons/Bloem.png", map: "Biologie", 
         quote: `You're only here for a short visit. Don't hurry, don't worry. And be sure to smell the flowers along the
         way
         <br><br>- Walter Hagen`
       }
     ],
-    uitleg: {
-      threshold: {
-        titel: "Krijt", 
-        tekst: "Je moet eerst nog wat meer halen...",
-        requirements: ["Octopussen", "Veer", "Archaeopteryx", "Termieten", "Heuvel", "Bruinwieren", "Kelpwoud"]
-      },
+    uitleg: { threshold: { titel: "Krijt", titel_en: "Cretaceous",
+        tekst: "Je moet eerst nog wat meer halen...", tekst_en: "You need to create a bit more first...",
+        requirements: ["Octopussen", "Veer", "Archaeopteryx", "Termieten", "Heuvel", "Bruinwieren", "Kelpwoud"] },
       normal: {
-        achtergrond: "afb/Het_Krijt.png",
-        titel: "KRIJT 145-66 MA",
+        achtergrond: "afb/Het_Krijt.png", titel: "KRIJT 145-66 MA", titel_en: "CRETACEOUS 145-66 MA",
         tekst: 
         `<span>Net als het eiland Kreta is deze periode vernoemd naar het Latijnse creta (kalk) vanwege de dikke 
         kalksteenlagen die geologen in 1822 in Noord-Franrijk aantroffen. Gondwana brak verder op, met de splitsing van 
@@ -8838,17 +8862,34 @@ const combinaties = [
         Noordwest-Europa onder de zogeheten Krijtzee stonden. Het zeeleven varieerde van zeereptielen tot ammonieten en 
         veel beenvissen, die toen recordlengtes van 5 meter bereikten. Ook eencellig plankton ontstond, verantwoordelijk 
         voor de karakteristieke kalksteen, terwijl op de zeebodem krabben, oesters en weekdieren tot een meter groot 
-        werden. 
-        
-        <br><br>De plesiosauriërs kregen een gigantische concurrent: de meer dan 15 meter lange mosasuiridae, vernoemd 
+        werden. </span> 
+        <br><br>
+        <span>De plesiosauriërs kregen een gigantische concurrent: de meer dan 15 meter lange mosasuiridae, vernoemd 
         naar het eerste fossiel aan de rivier de Maas. Op het land verschenen de eerste bedektzadige planten, zogenaamde
         bloemplanten, samen met de eerste bijen voor bestuiving. Ook bedektzadige bomen zoals vijgen, platanen en 
         magnolia’s ontstonden, hoewel coniferen en varens dominant bleven. Bloeiende planten boden een nieuw voedselbron 
         voor zoogdieren, met tanden geschikt voor fruit, zaden en insecten, terwijl insecten zoals mieren, termieten, 
         bladluizen, sprinkhanen, wespen en vlinders snel diversifieerden. Door het opbreken van de continenten kende elk 
         continent zijn eigen dinosauriërs. In de lucht namen vogels de overhand, waardoor de grote pterosauriërs in 
-        aantal afnamen.
-        </span>`,
+        aantal afnamen.</span>`,
+
+        tekst: 
+        `<span>Like the island of Crete, this period is named after the Latin word 'creta' (chalk), owing to the thick
+        limestone layers that geologists discovered in northern France in 1822. Gondwana continued to break apart, with
+        Africa, India and the Australia-Antarctica landmass splitting off. Intense volcanic activity led to high sea 
+        levels, causing large parts of Northwest Europe to be submerged beneath what is known as the Cretaceous Sea.
+        Marine life ranged from sea reptiles to ammonites and numerous bony fish - some of which reached record lengths
+        of 5 meters. Single-celled plankton also emerged, contributing to the formation of the characteristic limestone,
+        while the seabed became home to crabs, oysters and mollusks that grew up to a meter in size.</span>
+        <br><br>
+        <span>Plesiosaurs faced a formidable competitor: the mosasaurs - a group that could exceed 15 meters in length
+        and was named after the first fossil discovered along the Meuse River. On land, the first angiosperms - or 
+        flowering plants - emerged, accompanied by the earliest bees for pollination. Angiosperm trees, such as figs, 
+        plane trees and magnolias, also appeared, though conifers and ferns remained dominant. Flowering plants provided
+        a new food source for mammals, which evolved teeth suited for consuming fruit, seeds and insects: meanwhile,
+        insects such as ants, termites, aphids, grasshoppers, wasps and butterflies underwent rapid diversification.
+        As the continents drifted apart, each developed its own unique dinosaur populations. In the skies, birds became
+        increasingly prevalent, leading to a decline in the number of large pterosaurs.</span>`
       }
     }
   },
@@ -8857,22 +8898,19 @@ const combinaties = [
       ["Oerstraalvinnigen", "Druk"], ["Oerstraalvinnigen", "Bacteriën"]
     ],
     hint: `Onder grote druk presteren sommige straalvinnigen het best.`,
+    hint_en: `Under great pressure, some ray-finned fish perform best.`,
     tijd: 100_000_000,
     output: [
-      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+      { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
       }
     ],
-    uitleg: {
-      thresholdElement: {
-        naam: "Bloem", 
-        titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.`
-      }
-    }
+    uitleg: { thresholdElement: { naam: "Bloem", naam_en: "Flower",
+        titel: "Probeer opnieuw in het Krijt", titel_en: "Try again in the Cretaceous",
+        tekst: `De volgorde is eerst de bloem, dan de bij. <br><br>Eerst nodig: eerste bloem.`,
+        tekst_en: `The sequence is: first the flower, then the bee. <br><br>Required first: flowers.` } }
   }, /* ------------------ ZEEDUIVELS ------------------ */
   {
     input: [
@@ -8884,17 +8922,17 @@ const combinaties = [
       ["Zeeduivels", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
-      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+      { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8913,22 +8951,24 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Zeeduivels", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+      { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -8939,7 +8979,7 @@ const combinaties = [
       ["Zeeduivels", "Zeepokken"], ["Zeeduivels", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -8947,28 +8987,30 @@ const combinaties = [
   },
   {
     input: ["Oerhymenopteren", "Evolutie"],
-    hint: `Vliesvleugelige insecten hebben nu vrij spel dankzij de bloemmetjes van het Krijt.`,
+    hint: `Vliesvleugelige insecten hebben nu vrij spel dankzij de bloemetjes van het Krijt.`,
+    hint_en: `Hymenopteran insects now have free rein, thanks to the flowers of the Cretaceous period.`,
     tijd: 120_000_000,
     output: [
-      { naam: "Mieren", icoon: "icons/Mieren.png", map: "Klein landleven", 
+      { naam: "Mieren", naam_en: "Ants", icoon: "icons/Mieren.png", map: "Klein landleven", 
         quote: `Ants are good citizens, they place group interest first; but they carry it so far, they have few or no 
         political rights. An ant doesn't have the vote, apparently; he just has his duties
         <br><br>- Clarence Day`
       },
-      { naam: "Wespen", icoon: "icons/Wespen.png", map: "Klein landleven", 
+      { naam: "Wespen", naam_en: "Wasps", icoon: "icons/Wespen.png", map: "Klein landleven", 
         quote: `Wasps are among the most efficient insect predators, provisioning their nests with paralyzed prey for 
         their larvae
         <br><br>- Edward Wilson`
       },
-      { naam: "Bijen", icoon: "icons/Bijen.png", map: "Klein landleven", 
+      { naam: "Bijen", naam_en: "Bees", icoon: "icons/Bijen.png", map: "Klein landleven", 
         quote: `As a bee without harming the flower, its colour or scent, flies away, collecting only the honey, even so
         should the sage wander in the village
         <br><br>- Gautama Buddha`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Bloem", titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.` } }
+    uitleg: { thresholdElement: { naam: "Bloem", naam_en: "Flower",
+        titel: "Probeer opnieuw in het Krijt", titel_en: "Try again in the Cretaceous",
+        tekst: `De volgorde is eerst de bloem, dan de bij. <br><br>Eerst nodig: eerste bloem.`,
+        tekst_en: `The sequence is: first the flower, then the bee. <br><br>Required first: flowers.` } }
   }, /* ------------------ MIEREN ------------------ */
   {
     input: [
@@ -8981,22 +9023,22 @@ const combinaties = [
       ["Mieren", "Honing"]
     ],
     output: [
-      { naam: "Mieren", icoon: "icons/Mieren.png", map: "Klein landleven", 
+      { naam: "Mieren", naam_en: "Ants", icoon: "icons/Mieren.png", map: "Klein landleven", 
         quote: `Ants are good citizens, they place group interest first; but they carry it so far, they have few or no 
         political rights. An ant doesn't have the vote, apparently; he just has his duties
         <br><br>- Clarence Day`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9023,22 +9065,22 @@ const combinaties = [
       ["Wespen", "Kiwi"], ["Wespen", "Zuurzakken"]
     ],
     output: [
-      { naam: "Wespen", icoon: "icons/Wespen.png", map: "Klein landleven", 
+      { naam: "Wespen", naam_en: "Wasps", icoon: "icons/Wespen.png", map: "Klein landleven", 
         quote: `Wasps are among the most efficient insect predators, provisioning their nests with paralyzed prey for 
         their larvae
         <br><br>- Edward Wilson`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9069,10 +9111,11 @@ const combinaties = [
        ["Bijen", "Cacao"]
     ],
     vers: `Uit haar buik komt een drank van verschillende kleuren, <br>daarin is genezing voor de mens, aldus zit daarin
-    zeker een teken <br>voor de mensen die nadenken
-    <br><br>De Bij (16:69)`,
+    zeker een teken <br>voor de mensen die nadenken <br><br>De Bij (16:69)`,
+    vers_en: `From their belly comes a drink of various colours <br>in which there is healing for mankind, indeed,
+    in this there is a sign <br>for people who contemplate <br><br>The Bee (16:69)`,
     output: [
-      { naam: "Honing", icoon: "icons/Honing.png", map: "Genotwaren", 
+      { naam: "Honing", naam_en: "Honey", icoon: "icons/Honing.png", map: "Genotwaren", 
         quote: `Honey is the only food which includes all the substances necessary to sustain life, including enzymes, 
         vitamins, minerals, and water
         <br><br>- John Kellogg`
@@ -9082,26 +9125,28 @@ const combinaties = [
   {
     input: ["Lepidosauriërs", "Evolutie"],
     hint: `Vergeet de lepidosauriërs niet!`,
+    hint_en: `Don't forget the lepidosaurs!`,
     tijd: 70_000_000,
     output: [
-      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+      { naam: "Slangen", naam_en: "Snakes", icoon: "icons/Slangen.png", map: "Reptielen", 
         quote: `The snake sheds its skin, but not its nature
         <br><br>- Aristoteles`
       },
-      { naam: "Gekko's", icoon: "icons/Gekko's.png", map: "Reptielen", 
+      { naam: "Gekko's", naam_en: "Geckos", icoon: "icons/Gekko's.png", map: "Reptielen", 
         quote: `Geckos can run up walls and across ceilings with ease, their feet equipped with millions of microscopic 
         hairs that cling by the slightest forces
         <br><br>- Kellar Autumn`
       },
-      { naam: "Leguanen", icoon: "icons/Leguanen.png", map: "Reptielen", 
+      { naam: "Leguanen", naam_en: "Iguanas", icoon: "icons/Leguanen.png", map: "Reptielen", 
         quote: `Iguanas bask for hours in the sun, conserving energy, their stillness broken only by slow, deliberate 
         movements
         <br><br>- David Attenborough`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Bloem", titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.` } }
+    uitleg: { thresholdElement: { naam: "Bloem", naam_en: "Flower",
+        titel: "Probeer opnieuw in het Krijt", titel_en: "Try again in the Cretaceous",
+        tekst: `De volgorde is eerst de bloem, dan de bij. <br><br>Eerst nodig: eerste bloem.`,
+        tekst_en: `The sequence is: first the flower, then the bee. <br><br>Required first: flowers.` } }
   }, /* ------------------ SLANGEN ------------------ */
   {
     input: [
@@ -9113,21 +9158,21 @@ const combinaties = [
       ["Slangen", "Ei"]
     ],
     output: [
-      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+      { naam: "Slangen", naam_en: "Snakes", icoon: "icons/Slangen.png", map: "Reptielen", 
         quote: `The snake sheds its skin, but not its nature
         <br><br>- Aristoteles`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9155,25 +9200,25 @@ const combinaties = [
       ["Slangen", "Galago"], ["Slangen", "Spookdiertjes"], ["Slangen", "Lori"]  
     ],
     output: [
-      { naam: "Slangen", icoon: "icons/Slangen.png", map: "Reptielen", 
+      { naam: "Slangen", naam_en: "Snakes", icoon: "icons/Slangen.png", map: "Reptielen", 
         quote: `The snake sheds its skin, but not its nature
         <br><br>- Aristoteles`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9190,17 +9235,17 @@ const combinaties = [
       ["Gekko's", "Honing"]
     ],
     output: [
-      { naam: "Gekko's", icoon: "icons/Gekko's.png", map: "Reptielen", 
+      { naam: "Gekko's", naam_en: "Geckos", icoon: "icons/Gekko's.png", map: "Reptielen", 
         quote: `Geckos can run up walls and across ceilings with ease, their feet equipped with millions of microscopic 
         hairs that cling by the slightest forces
         <br><br>- Kellar Autumn`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9238,17 +9283,17 @@ const combinaties = [
       ["Leguanen", "Sla"], ["Leguanen", "Andijvie"], ["Leguanen", "Boerenkool"]
     ],
     output: [
-      { naam: "Leguanen", icoon: "icons/Leguanen.png", map: "Reptielen", 
+      { naam: "Leguanen", naam_en: "Iguanas", icoon: "icons/Leguanen.png", map: "Reptielen", 
         quote: `Iguanas bask for hours in the sun, conserving energy, their stillness broken only by slow, deliberate 
         movements
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9257,17 +9302,19 @@ const combinaties = [
   {
     input: ["Crurotarsi", "Evolutie"],
     hint: `In het Krijt namen de crurotarsi toch wel hele bekende vormen aan.`,
+    hint_en: `During the Cretaceous, the crurotarsans took on some peculiar well-known forms.`,
     tijd: 70_000_000,
     output: [
-      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
+      { naam: "Krokodillen", naam_en: "Crocodiles", icoon: "icons/Krokodillen.png", map: "Reptielen", 
         quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
         it beneath the water
         <br><br>- Herodotus`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Bloem", titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.` } }
+    uitleg: { thresholdElement: { naam: "Bloem", naam_en: "Flower",
+        titel: "Probeer opnieuw in het Krijt", titel_en: "Try again in the Cretaceous",
+        tekst: `De volgorde is eerst de bloem, dan de bij. <br><br>Eerst nodig: eerste bloem.`,
+        tekst_en: `The sequence is: first the flower, then the bee. <br><br>Required first: flowers.` } }
   }, /* ------------------ KROKODILLEN ------------------ */
   {
     input: [
@@ -9283,17 +9330,17 @@ const combinaties = [
       /* Schelp */ ["Krokodillen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
+      { naam: "Krokodillen", naam_en: "Crocodiles", icoon: "icons/Krokodillen.png", map: "Reptielen", 
         quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
         it beneath the water
         <br><br>- Herodotus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9309,7 +9356,7 @@ const combinaties = [
       ["Krokodillen", "Agnathen"], ["Krokodillen", "Zeeduivels"], ["Krokodillen", "Platvissen"], 
       ["Krokodillen", "Piranha"], ["Krokodillen", "Clownvissen"], ["Krokodillen", "Doktersvissen"], 
       ["Krokodillen", "Papegaaivissen"], ["Krokodillen", "Karpers"], ["Krokodillen", "Zeepaardjes"], 
-      ["Krokodillen", "Vliegvissen"], ["Krokodillen", "Maanvissen"], ["Krokodillen", "Koraalduivels"], 
+      ["Krokodillen", "Vliegende vissen"], ["Krokodillen", "Maanvissen"], ["Krokodillen", "Koraalduivels"], 
       ["Krokodillen", "Kogelvissen"], ["Krokodillen", "Oerstraalvinnigen"], ["Krokodillen", "Kabeljauwen"], 
       ["Krokodillen", "Snoeken"], ["Krokodillen", "Meervallen"], ["Krokodillen", "Paling"], 
       /*["Krokodillen", "Haaien"],*/ ["Krokodillen", "Spookhaaien"], ["Krokodillen", "Manta"], 
@@ -9333,21 +9380,21 @@ const combinaties = [
       ["Krokodillen", "Luipaarden"], ["Krokodillen", "Vossen"], ["Krokodillen", "Honden"]
     ],
     output: [
-      { naam: "Krokodillen", icoon: "icons/Krokodillen.png", map: "Reptielen", 
+      { naam: "Krokodillen", naam_en: "Crocodiles", icoon: "icons/Krokodillen.png", map: "Reptielen", 
         quote: `The crocodile is the most dangerous of the creatures of the Nile, seizing its prey suddenly and dragging 
         it beneath the water
         <br><br>- Herodotus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9356,7 +9403,7 @@ const combinaties = [
   { /* Schelp */
     input: ["Krokodillen", "Heremietkreeften"],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -9367,9 +9414,10 @@ const combinaties = [
       ["Bloem", "Ven"], ["Bloem", "Lagune"], ["Bloem", "Moeras"], ["Bloem", "Kevers"]
     ],
     hint: `Ik voorzie een bloem in het moeras...`,
+    hint_en: `I foresee a flower in the swamp...`,
     tijd: 125_000_000,
     output: [
-      { naam: "Waterlelies", icoon: "icons/Waterlelies.png", map: "Bloemen", 
+      { naam: "Waterlelies", naam_en: "Water lilies", icoon: "icons/Waterlelies.png", map: "Bloemen", 
         quote: `It took me time to understand my water lilies. I had planted them for the pleasure of it; 
         I grew them without ever thinking of painting them
         <br><br>- Claude Monet`
@@ -9379,9 +9427,10 @@ const combinaties = [
   {
     input: ["Bloem", "Tropisch regenwoud"],
     hint: `Ik voorzie een bloem in de tropen...`,
+    hint_en: `I foresee a flower in the tropics...`,
     tijd: 100_000_000,
     output: [
-      { naam: "Steranijs", icoon: "icons/Steranijs.png", map: "Smaakmakers", 
+      { naam: "Steranijs", naam_en: "Star anise", icoon: "icons/Steranijs.png", map: "Smaakmakers", 
         quote: `The fruit of star anise forms a star-shaped cluster of carpels, each containing a single seed
         <br><br>- K.R. Kirtikar`
       }
@@ -9389,21 +9438,22 @@ const combinaties = [
   },
   {
     input: ["Bloem", "Oerzaadplanten"],
-    hint: `Zaadplanten gaan goed samen met bloemmetjes.`,
+    hint: `Zaadplanten gaan goed samen met bloemetjes.`,
+    hint_en: `Seed plants go well with magnificent flowers.`,
     tijd: 135_000_000,
     output: [
-      { naam: "Oermagnoliden", icoon: "icons/Oermagnoliden.png", map: "Planten", 
+      { naam: "Oermagnoliden", naam_en: "Urmagnolids", icoon: "icons/Oermagnoliden.png", map: "Planten", 
         quote: `The origin of flowering plants is one of the greatest mysteries in evolutionary biology
         <br><br>- Charles Darwin`
       },
-      { naam: "Oermonocotylen", icoon: "icons/Oermonocotylen.png", map: "Planten", 
-        quote: `In monocotyledons the stem grows without secondary thickening, giving rise to forms that are often elegant, 
-        flexible, and perfectly suited to their environment
+      { naam: "Oermonocotylen", naam_en: "Urmonocots", icoon: "icons/Oermonocotylen.png", map: "Planten", 
+        quote: `In monocotyledons the stem grows without secondary thickening, giving rise to forms that are often 
+        elegant, flexible, and perfectly suited to their environment
         <br><br>- Katherine Esau`
       },
-      { naam: "Oereudicoten", icoon: "icons/Oereudicoten.png", map: "Planten", 
-        quote: `In dicotyledons the capacity for secondary growth allows the plant to build strength, branching complexity, 
-        and longevity
+      { naam: "Oereudicoten", naam_en: "Urdicots", icoon: "icons/Oereudicoten.png", map: "Planten", 
+        quote: `In dicotyledons the capacity for secondary growth allows the plant to build strength, branching 
+        complexity, and longevity
         <br><br>- Arthur Cronquist`
       }
     ]
@@ -9413,14 +9463,15 @@ const combinaties = [
       ["Oermagnoliden", "Rivier"], ["Oermagnoliden", "Kevers"]
     ],
     hint: `Sommige magnoliden voelen zich thuis bij rivieren.`,
+    hint_en: `Some magnolids feel at home near the river.`,
     tijd: 95_000_000,
     output: [
-      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
+      { naam: "Magnolia", naam_en: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
         quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
         simple, elegant form
         <br><br>- Armen Takhtajan`
       },
-      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
+      { naam: "Tulpenbomen", naam_en: "Tulip trees", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
         its crown
         <br><br>- Donald Peattie`
@@ -9430,19 +9481,20 @@ const combinaties = [
   {
     input: ["Oermagnoliden", "Bos"],
     hint: `Sommige magnoliden voelen zich van nature thuis in de bossen.`,
+    hint_en: `Some magnolids would become so happy to be in the forests.`,
     tijd: 70_000_000,
     output: [
-      { naam: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
+      { naam: "Magnolia", naam_en: "Magnolia", icoon: "icons/Magnolia.png", map: "Bomen", 
         quote: `Magnolia flowers are among the most primitive of the angiosperms, with numerous petals arranged in a 
         simple, elegant form
         <br><br>- Armen Takhtajan`
       },
-      { naam: "Tulpenbomen", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
+      { naam: "Tulpenbomen", naam_en: "Tulip trees", icoon: "icons/Tulpenbomen.png", map: "Bomen", 
         quote: `The tulip tree rises tall and straight, bearing large, distinctive leaves and tulip-like flowers high in 
         its crown
         <br><br>- Donald Peattie`
       },
-      { naam: "Laurierbomen", icoon: "icons/Laurierbomen.png", map: "Bomen", 
+      { naam: "Laurierbomen", naam_en: "Laurels", icoon: "icons/Laurierbomen.png", map: "Bomen", 
         quote: `The laurel has been associated since antiquity with honor and victory, its leaves woven into crowns
         <br><br>- Plinius de Oudere`
       }
@@ -9451,9 +9503,10 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Evolutie"],
     hint: `Monocotylen evolueren sprieten en verspreiden uiteindelijk over de hele wereld.`,
+    hint_en: `Blades of monocots? Watch out, they will conquer the world entire.`,
     tijd: 80_000_000,
     output: [
-      { naam: "Gras", icoon: "icons/Gras.png", map: "Planten", 
+      { naam: "Gras", naam_en: "Grass", icoon: "icons/Gras.png", map: "Planten", 
         quote: `Grasses are the most widespread and successful of all plants; they may seem humble, 
         but they rule the plains and feed the world
         <br><br>- Peter Raven`
@@ -9463,9 +9516,10 @@ const combinaties = [
   {
     input: ["Oermonocotylen", "Gif"],
     hint: `Sommige monocotylen maken van gif hun strategie en redding.`,
+    hint_en: `Some monocots turn poison into their strategy and salvation.`,
     tijd: 70_000_000,
     output: [
-      { naam: "Narcissen", icoon: "icons/Narcissen.png", map: "Bloemen", 
+      { naam: "Narcissen", naam_en: "Daffodils", icoon: "icons/Narcissen.png", map: "Bloemen", 
         quote: `The narcissus has long been cultivated for its ornamental value and its association with the 
         arrival of spring
         <br><br>- Anna Pavord`
@@ -9476,7 +9530,7 @@ const combinaties = [
     input: ["Oereudicoten", "Berg"],
     tijd: 95_000_000,
     output: [
-      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+      { naam: "Pioenrozen", naam_en: "Peonies", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
         quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
         <br><br>- Michael Dirr`
       }
@@ -9485,9 +9539,10 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Woestijn"],
     hint: `Sommige eudicoten voelen zich van nature thuis in de woestijn.`,
+    hint_en: `Some eudicots feel naturally at home in the desert.`,
     tijd: 95_000_000,
     output: [
-      { naam: "Vetplanten", icoon: "icons/Vetplanten.png", map: "Planten", 
+      { naam: "Vetplanten", naam_en: "Succulents", icoon: "icons/Vetplanten.png", map: "Planten", 
         quote: `The fleshy tissues of succulents are specialized for water storage, giving them their characteristic
         thickened form
         <br><br>- Peter Raven`
@@ -9499,9 +9554,10 @@ const combinaties = [
       ["Oereudicoten", "Meer"], ["Oereudicoten", "Ven"], ["Oereudicoten", "Lagune"], ["Oereudicoten", "Moeras"]
     ],
     hint: `Sommige eudicoten voelen zich van nature thuis in stilstaand water.`,
+    hint_en: `Some eudicots would be delighted to be surrounded by a pool of water.`,
     tijd: 100_000_000,
     output: [
-      { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
+      { naam: "Lotussen", naam_en: "Lotuses", icoon: "icons/Lotussen.png", map: "Bloemen", 
         quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
         <br><br>- Gautama Buddha`
       }
@@ -9510,14 +9566,15 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Rivier"],
     hint: `Sommige eudicoten voelen zich thuis bij rivieren.`,
+    hint_en: `Some eudicots feel at home near rivers.`,
     tijd: 90_000_000,
     output: [
-      { naam: "Platanen", icoon: "icons/Platanen.png", map: "Bomen", 
+      { naam: "Platanen", naam_en: "Plane trees", icoon: "icons/Platanen.png", map: "Bomen", 
         quote: `The plane tree is notable for its broad leaves and its bark, which flakes away in patches to reveal 
         lighter layers beneath
         <br><br>- John Loudon`
       },
-      { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
+      { naam: "Druiven", naam_en: "Grapes", icoon: "icons/Druiven.png", map: "Fruit", 
         quote: `The grapevine is a woody climber that produces berries arranged in bunches
         <br><br>- Julia Morton`
       }
@@ -9528,9 +9585,10 @@ const combinaties = [
       ["Oereudicoten", "Kalk"], ["Oereudicoten", "Gif"]
     ],
     hint: `Sommige eudicoten kiezen voor de strategie van het gif en kalkrijke ondergronden.`,
+    hint_en: `Some eudicots opt for a strategy involving toxins and calcium-rich substrates.`,
     tijd: 80_000_000,
     output: [
-      { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
+      { naam: "Buxus", naam_en: "Boxes", icoon: "icons/Buxus.png", map: "Planten", 
         quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
         <br><br>- W.J. Bean`
       }
@@ -9540,12 +9598,12 @@ const combinaties = [
     input: ["Oereudicoten", "Klif"], 
     tijd: 80_000_000,
     output: [
-      { naam: "Vetplanten", icoon: "icons/Vetplanten.png", map: "Planten", 
+      { naam: "Vetplanten", naam_en: "Succulents", icoon: "icons/Vetplanten.png", map: "Planten", 
         quote: `The fleshy tissues of succulents are specialized for water storage, giving them their characteristic
         thickened form
         <br><br>- Peter Raven`
       },
-      { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
+      { naam: "Buxus", naam_en: "Boxes", icoon: "icons/Buxus.png", map: "Planten", 
         quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
         <br><br>- W.J. Bean`
       }
@@ -9554,22 +9612,23 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Evolutie"],
     hint: `Het succes van de eudicoten is te zien aan de vele vormen van evolutie.`,
+    hint_en: `The success of eudicots is shown by the many forms in which they can evolve.`,
     tijd: 95_000_000,
     output: [
-      { naam: "Oerfabiden", icoon: "icons/Oerfabiden.png", map: "Planten", 
+      { naam: "Oerfabiden", naam_en: "Urfabids", icoon: "icons/Oerfabiden.png", map: "Planten", 
         quote: `Fabids are distinguished in part by their frequent ability to form nitrogen-fixing symbioses with bacteria
         <br><br>- Peter Raven`
       },
-      { naam: "Oermalviden", icoon: "icons/Oermalviden.png", map: "Planten", 
+      { naam: "Oermalviden", naam_en: "Urmalvids", icoon: "icons/Oermalviden.png", map: "Planten", 
         quote: `A defining feature of many malvids is the presence of specialized chemical defenses within their tissues
         <br><br>- Peter Raven`
       },
-      { naam: "Oercaryophyllales", icoon: "icons/Oercaryophyllales.png", map: "Planten", 
+      { naam: "Oercaryophyllales", naam_en: "Urcaryophyllales", icoon: "icons/Oercaryophyllales.png", map: "Planten", 
         quote: `A defining feature of Caryophyllales is their frequent ability to thrive in stressful habitats such as 
         deserts and salt marshes
         <br><br>- Peter Raven`
       },
-      { naam: "Oerasteriden", icoon: "icons/Oerasteriden.png", map: "Planten", 
+      { naam: "Oerasteriden", naam_en: "Urasterids", icoon: "icons/Oerasteriden.png", map: "Planten", 
         quote: `Asterids are characterized by sympetalous flowers, in which the petals are fused into a tube or funnel 
         shape
         <br><br>- Peter Raven`
@@ -9580,11 +9639,11 @@ const combinaties = [
     input: ["Oereudicoten", "Kevers"],
     tijd: 95_000_000,
     output: [
-      { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
+      { naam: "Lotussen", naam_en: "Lotuses", icoon: "icons/Lotussen.png", map: "Bloemen", 
         quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
         <br><br>- Gautama Buddha`
       },
-      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+      { naam: "Pioenrozen", naam_en: "Peonies", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
         quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
         <br><br>- Michael Dirr`
       }
@@ -9594,11 +9653,11 @@ const combinaties = [
     input: ["Oereudicoten", "Vlinders"],
     tijd: 95_000_000,
     output: [
-      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+      { naam: "Klaprozen", naam_en: "Poppies", icoon: "icons/Klaprozen.png", map: "Bloemen", 
         quote: `Carrying a poppy he passes through the quarrel
         <br><br>- Kobayashi Issa`
       },
-      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+      { naam: "Pioenrozen", naam_en: "Peonies", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
         quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
         <br><br>- Michael Dirr`
       }
@@ -9607,22 +9666,23 @@ const combinaties = [
   {
     input: ["Oereudicoten", "Bos"],
     hint: `Sommige eudicoten voelen zich thuis in de bossen.`,
+    hint: `Some eudicots feel at home in the forest.`,
     tijd: 80_000_000,
     output: [
-      { naam: "Platanen", icoon: "icons/Platanen.png", map: "Bomen", 
+      { naam: "Platanen", naam_en: "Plane trees", icoon: "icons/Platanen.png", map: "Bomen", 
         quote: `The plane tree is notable for its broad leaves and its bark, which flakes away in patches to reveal 
         lighter layers beneath
         <br><br>- John Loudon`
       },
-      { naam: "Buxus", icoon: "icons/Buxus.png", map: "Planten", 
+      { naam: "Buxus", naam_en: "Boxes", icoon: "icons/Buxus.png", map: "Planten", 
         quote: `Box is an evergreen shrub with small, dense leaves and a compact, slow-growing habit
         <br><br>- W.J. Bean`
       },
-      { naam: "Clematissen", icoon: "icons/Clematissen.png", map: "Bloemen", 
+      { naam: "Clematissen", naam_en: "Clematis", icoon: "icons/Clematissen.png", map: "Bloemen", 
         quote: `Clematis is the gardener’s poetry on walls and fences
         <br><br>- Vita Sackville-West`
       },
-      { naam: "Druiven", icoon: "icons/Druiven.png", map: "Fruit", 
+      { naam: "Druiven", naam_en: "Grapes", icoon: "icons/Druiven.png", map: "Fruit", 
         quote: `The grapevine is a woody climber that produces berries arranged in bunches
         <br><br>- Julia Morton`
       }
@@ -9632,15 +9692,15 @@ const combinaties = [
     input: ["Oereudicoten", "Bijen"],
     tijd: 95_000_000,
     output: [
-      { naam: "Lotussen", icoon: "icons/Lotussen.png", map: "Bloemen", 
+      { naam: "Lotussen", naam_en: "Lotuses", icoon: "icons/Lotussen.png", map: "Bloemen", 
         quote: `Just as a lotus flower is born in water, grows in water and rises out of water to stand above it unsoiled
         <br><br>- Gautama Buddha`
       },
-      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+      { naam: "Klaprozen", naam_en: "Poppies", icoon: "icons/Klaprozen.png", map: "Bloemen", 
         quote: `Carrying a poppy he passes through the quarrel
         <br><br>- Kobayashi Issa`
       },
-      { naam: "Pioenrozen", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
+      { naam: "Pioenrozen", naam_en: "Peonies", icoon: "icons/Pioenrozen.png", map: "Bloemen", 
         quote: `The peony produces large, often fragrant blossoms that may appear briefly but with great abundance
         <br><br>- Michael Dirr`
       }
@@ -9651,8 +9711,9 @@ const combinaties = [
       ["Gras", "Zand"], ["Gras", "Kust"], ["Gras", "Strand"]
     ],
     hint: `Langs de kust vormt gras en zand een muur.`,
+    hint_en: `Along the coast, grass and sand create walls against the sea.`,
     output: [
-      { naam: "Duinen", icoon: "icons/Duinen.png", map: "Landschap", 
+      { naam: "Duinen", naam_en: "Dunes", icoon: "icons/Duinen.png", map: "Landschap", 
         quote: `Coastal dunes are living landscapes, where sand and grass work together, shaped by wind and sea into 
         ever-changing forms
         <br><br>- Hans van der Maarel`
@@ -9662,8 +9723,9 @@ const combinaties = [
   {
     input: ["Gras", "Woestijn"],
     hint: `Ook aan het eind van de woestijn moet het ooit weer groen kleuren..`,
+    hint_en: `Even at the end of the desert, things must eventually turn green again..`,
     output: [
-      { naam: "Savanne", icoon: "icons/Savanne.png", map: "Landschap", 
+      { naam: "Savanne", naam_en: "Savanna", icoon: "icons/Savanne.png", map: "Landschap", 
         quote: `Lions rest in the shade of scattered trees while gazelles graze, elephants wander in ponderous silence, 
         and the plain itself pulses with life
         <br><br>- David Attenborough`
@@ -9673,8 +9735,9 @@ const combinaties = [
   {
     input: ["Gras", "Gras"],
     hint: `Gras, gras, gras...`,
+    hint_en: `Grass, grass, grass...`,
     output: [
-      { naam: "Weide", icoon: "icons/Weide.png", map: "Landschap", 
+      { naam: "Weide", naam_en: "Meadow", icoon: "icons/Weide.png", map: "Landschap", 
         quote: `The boy and the girl going hand in hand through a meadow
         <br><br>- Edward Steichen`
       }
@@ -9686,7 +9749,7 @@ const combinaties = [
     ],
     tijd: 95_000_000,
     output: [
-      { naam: "Klaprozen", icoon: "icons/Klaprozen.png", map: "Bloemen", 
+      { naam: "Klaprozen", naam_en: "Poppies", icoon: "icons/Klaprozen.png", map: "Bloemen", 
         quote: `Carrying a poppy he passes through the quarrel
         <br><br>- Kobayashi Issa`
       }
@@ -9695,8 +9758,9 @@ const combinaties = [
   {
     input: ["Weide", "Weide"],
     hint: `Sommige landschappen veranderen door weides zover je kunt kijken..`,
+    hint_en: `Certain landscapes contain so much meadow, stretching as far as the eye can see..`,
     output: [
-      { naam: "Steppe", icoon: "icons/Steppe.png", map: "Landschap", 
+      { naam: "Steppe", naam_en: "Steppe", icoon: "icons/Steppe.png", map: "Landschap", 
         quote: `Vast, open plains stretch to the horizon, dotted with grazing animals, burrowing rodents, 
         and the ever-watchful predators that stalk between them
         <br><br>- George Schaller`
@@ -9706,8 +9770,9 @@ const combinaties = [
   {
     input: ["Steppe", "Regen"],
     hint: `De Noord-Amerikaanse graslanden lijken steppes, ware het niet dat het er meer regent..`,
+    hint_en: `The North American grasslands resemble steppes, were it not for the fact that it rains a bit more..`,
     output: [
-      { naam: "Prairie", icoon: "icons/Prairie.png", map: "Landschap", 
+      { naam: "Prairie", naam_en: "Prairie", icoon: "icons/Prairie.png", map: "Landschap", 
         quote: `I was born on the prairies where the wind blew free and there was nothing to break the light of the sun
         <br><br>- Geronimo`
       }
@@ -9717,68 +9782,90 @@ const combinaties = [
   {
     input: ["Oercynodonten", "Evolutie"],
     hint: `Verschillen tussen de eerste zoogdieren zaten in de cloaca, placenta en buidel.`,
+    hint_en: `Differences among the first mammals relate to the cloaca, placenta and pouch.`,
     tijd: 66_000_000,
     output: [
-      { naam: "Oerplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
+      { naam: "Oerplacentalia", naam_en: "Urplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
         quote: `The placenta enables an intimate physiological connection between mother and embryo, supporting growth, 
         nourishment, and protection
         <br><br>- Knox Hays`
       },
-      { naam: "Oerbuideldieren", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
+      { naam: "Oerbuideldieren", naam_en: "Urmarsupials", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
         quote: `The pouch of marsupials provides a protected environment in which the young attach to a teat and continue 
         their growth
         <br><br>- Jill Pemberton`
       },
-      { naam: "Vogelbekdieren", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
+      { naam: "Vogelbekdieren", naam_en: "Platypuses", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
         quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
         <br><br>- Trevor Dunn`
       }
     ],
-    uitleg: {
-      threshold: {
-        titel: "Dinosauriërs uitgestorven", 
-        tekst: "Je moet eerst nog wat meer halen...",
+    uitleg: { threshold: { titel: "Dinosauriërs uitgestorven", titel_en: "Dinosaurs extinct", 
+        tekst: "Je moet eerst nog wat meer halen...", tekst_en: "You have to create a bit more first...",
         requirements: 
           ["Mieren", "Wespen", "Bijen", "Slangen", "Krokodillen", "Waterlelies", "Steranijs",
            "Honing", "Toendra", "Savanne", "Steppe", "Duinen", "Prairie", "Hiërarchie", "Werk", "Leger", "Heerser"]
       },
-      normal: {
-        achtergrond: "afb/Uitsterven_dinosauriërs.jpg",
-        titel: "DINOSAURIËRS UITGESTORVEN 66 MA",
+      normal: { achtergrond: "afb/Uitsterven_dinosauriërs.jpg",
+        titel: "DINOSAURIËRS UITGESTORVEN 66 MA", titel_en: "DINOSAURS EXTINCT 66 MA",
         tekst: 
         `<span>Een asteroïde met een snelheid van 30 kilometer per seconde – 100.000 kilometer per uur – vloog door de 
         dampkring en sloeg in op Aarde, waarna in relatief korte tijd hele ecosystemen die miljoenen jaren de Aarde hadden
         gedomineerd verdwenen. Deze massaextinctie door een asteroïde kreeg in de jaren 1980 overtuigend bewijs, toen de
         inslagkrater met een diameter van circa 180 kilometer werd ontdekt rondom het plaatsje Chicxulub Pueblo in Mexico.
         Op deze plek is het zeldzame element iridium gevonden, dat wereldwijd in verhoogde concentraties voorkomt in de
-        Krijt-Paleogeen-laag. 
-        
-        <br><br>De inslag veroorzaakte enorme stofwolken en rook, die maandenlang de zon verduisterden, waardoor 
+        Krijt-Paleogeen-laag.</span>
+        <br><br>
+        <span>De inslag veroorzaakte enorme stofwolken en rook, die maandenlang de zon verduisterden, waardoor 
         fotosynthese grotendeels stilviel. Grote delen van de Aarde stonden tegelijk in brand, te beginnen bij de massale
         bosbranden rondom de inslagplaats. Met het verdwijnen van zonlicht stierven vele soorten plankton en planten, 
         waarna herbivoren uitstierven en uiteindelijk de carnivoren die van hen afhankelijk waren verhongerden. 
-        Van de dinosauriërs overleefden alleen de voorouders van de vogels. 
-       
-        <br><br>Jaren na de inslag konden de overlevende soorten langzaam weer profiteren van fotosynthese, maar de 
+        Van de dinosauriërs overleefden alleen de voorouders van de vogels.</span>
+        <br><br>
+        <span>Jaren na de inslag konden de overlevende soorten langzaam weer profiteren van fotosynthese, maar de 
         wereld was nog altijd een hete broeikasomgeving. Het duurde duizenden jaren voordat de biosfeer enigszins 
-        hersteld was. Kleine omnivore zoogdieren en vogels overleefden dankzij dode resten en de larven, wormen en slakken 
-        die zich daarop voedden. Veel dieren leefden bovendien in holen of ondergronds en kwamen ’s nachts naar buiten.
-        
-        <br><br>Hoewel de gemiddelde temperaturen koeler waren dan in het Krijt en de zeespiegel lager stond, was de Aarde 
-        bedekt met weelderige tropische regenwouden en uitgestrekte naaldbossen, zelfs op hoge breedtegraden nabij de polen. 
-        Alleen de platen van India en Australië lagen nog op heel andere plaatsen dan de huidige continenten. Elk continent 
-        ontwikkelde zijn eigen unieke ecosysteem, maar Eurazië en Noord-Amerika waren via de Beringstraat nog wel verbonden, 
-        waardoor migratie van dieren nog altijd voorkwam. Zoogdieren waren nog klein en primitief, 
-        maar in een periode van slechts 10 miljoen jaar ontstonden veel cruciale groepen.
-        </span>`,
+        hersteld was. Kleine omnivore zoogdieren en vogels overleefden dankzij dode resten en de larven, wormen en 
+        slakken die zich daarop voedden. Veel dieren leefden bovendien in holen of ondergronds en kwamen ’s nachts naar 
+        buiten.</span>
+        <br><br>
+        <span>Hoewel de gemiddelde temperaturen koeler waren dan in het Krijt en de zeespiegel lager stond, was de Aarde 
+        bedekt met weelderige tropische regenwouden en uitgestrekte naaldbossen, zelfs op hoge breedtegraden nabij de 
+        polen. Alleen de platen van India en Australië lagen nog op heel andere plaatsen dan de huidige continenten. Elk 
+        continent ontwikkelde zijn eigen unieke ecosysteem, maar Eurazië en Noord-Amerika waren via de Beringstraat nog 
+        wel verbonden, waardoor migratie van dieren nog altijd voorkwam. Zoogdieren waren nog klein en primitief, 
+        maar in een periode van slechts 10 miljoen jaar ontstonden veel cruciale groepen.</span>`,
+               
+        tekst_en: 
+        `<span>An asteroid, traveling at a speed of 30 kilometers per second - 100.000 kilometers per hour - streaked
+        through the atmosphere and struck the Earth, leading to the relatively rapid disappearance of entire ecosystems
+        that had dominated the planet for millions of years. This mass extinction event, caused by an asteroid, gained
+        compelling evidence in the 1980s with the discovery of an impact crater approximately 180 kilometers in diameter
+        near the town of Chicxulub Pueblo in Mexico. At this site, the rare element iridium was found - an element that
+        appears in elevated concentrations worldwide within the Cretaceous-Paleogene boundary layer.</span>
+        <br><br>
+        <span>The impact created massive clouds of dust and smoke that obscured the sun for months, causing photosynthesis
+        to largely grind to a halt. Large parts of the Earth erupted in flames simultaneously, starting with the massive
+        forest fires surrounding the impact site. As sunlight vanished, many species of plankton and plants died off;
+        this led to the extinction of herbivores, and, in turn, the carnivores that depended on them starved to death. 
+        Of the dinosaurs, only the ancestors of birds survived.</span>
+        <br><br>
+        <span>Years after the impact, surviving species were gradually able to benefit from photosynthesis once again,
+        yet the world remained a hot, greenhouse-like environment. It took thousands of years for the biosphere to show
+        any signs of recovery. Small, omnivorous mammals and birds survived by feeding on dead organic matter - as well as
+        the larvae, worms and snails that consumed that matter. Furthermore, many animals lived in burrows or underground,
+        emerging only at night</span>
+        <br><br>
+        <span>Although average temperatures were cooler than in the Cretaceous period and sea levels were lower, the Earth
+        was covered in lush tropical rainforests and vast coniferous forests - even at high latitutdes near the poles. 
+        Only the tectonic plates of India and Australia were situated in locations significantly different from those of
+        the present-day continents. Each continent developed its own unique ecosystem; however, Eurasia and North America
+        remained connected via the Bering Strait, which allowed for the continued migration of animals. Mammals were still
+        small and primitive, yet many crucial groups emerged within a span of just 10 million years.</span>`
       },
-      thresholdElement: {
-        naam: "Bloem", 
-        titel: "Probeer opnieuw in het Krijt",
-        tekst: `De volgorde is eerst de bloem, dan de bij.
-        <br><br>Eerst nodig: eerste bloem.`
-      }
-    }
+    thresholdElement: { naam: "Bloem", naam_en: "Flower",
+        titel: "Probeer opnieuw in het Krijt", titel_en: "Try again in the Cretaceous",
+        tekst: `De volgorde is eerst de bloem, dan de bij. <br><br>Eerst nodig: eerste bloem.`,
+        tekst_en: `The sequence is: first the flower, then the bee. <br><br>Required first: flowers.` } }
   }, /* ------------------ OERPLACENTALIA ------------------ */
   {
     input: [
@@ -9822,17 +9909,17 @@ const combinaties = [
       ["Oerplacentalia", "Sperziebonen"], ["Oerplacentalia", "Kidneybonen"] 
     ],
     output: [
-      { naam: "Oerplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
+      { naam: "Oerplacentalia", naam_en: "Urplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
         quote: `The placenta enables an intimate physiological connection between mother and embryo, supporting growth, 
         nourishment, and protection
         <br><br>- Knox Hays`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9857,21 +9944,21 @@ const combinaties = [
       ["Oerplacentalia", "Kanaries"]  
     ],
     output: [
-      { naam: "Oerplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
+      { naam: "Oerplacentalia", naam_en: "Urplacentalia", icoon: "icons/Oerplacentalia.png", map: "Zoogdieren", 
         quote: `The placenta enables an intimate physiological connection between mother and embryo, supporting growth, 
         nourishment, and protection
         <br><br>- Knox Hays`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9921,17 +10008,17 @@ const combinaties = [
       ["Oerbuideldieren", "Sperziebonen"], ["Oerbuideldieren", "Kidneybonen"] 
     ],
     output: [
-      { naam: "Oerbuideldieren", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
+      { naam: "Oerbuideldieren", naam_en: "Urmarsupials", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
         quote: `The pouch of marsupials provides a protected environment in which the young attach to a teat and continue 
         their growth
         <br><br>- Jill Pemberton`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9956,21 +10043,21 @@ const combinaties = [
       ["Oerbuideldieren", "Kanaries"]  
     ],
     output: [
-      { naam: "Oerbuideldieren", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
+      { naam: "Oerbuideldieren", naam_en: "Urmarsupials", icoon: "icons/Oerbuideldieren.png", map: "Zoogdieren", 
         quote: `The pouch of marsupials provides a protected environment in which the young attach to a teat and continue 
         their growth
         <br><br>- Jill Pemberton`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -9994,21 +10081,21 @@ const combinaties = [
       ["Vogelbekdieren", "Ei"]
     ],
     output: [
-      { naam: "Vogelbekdieren", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
+      { naam: "Vogelbekdieren", naam_en: "Platypuses", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
         quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
         <br><br>- Trevor Dunn`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10023,25 +10110,25 @@ const combinaties = [
       ["Vogelbekdieren", "Kikkers"]
     ],
     output: [
-      { naam: "Vogelbekdieren", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
+      { naam: "Vogelbekdieren", naam_en: "Platypuses", icoon: "icons/Vogelbekdieren.png", map: "Zoogdieren", 
         quote: `I feel akin to the platypus. An orphan in a family. A swimmer, a recluse. Part bird, part fish, part lizard
         <br><br>- Trevor Dunn`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10051,7 +10138,7 @@ const combinaties = [
     input: /* SCHELP */
       ["Vogelbekdieren", "Tweekleppigen"],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -10061,33 +10148,38 @@ const combinaties = [
     input: [
       ["Agnathen", "Lucht"], ["Agnathen", "Oceaan"], ["Vleugels", "Agnathen"]
     ],
-    hint: `Geef botloze agnathen vleugels en majestueuze vissen zullen zweven in en boven de oceaan.`,
+    hint: `Geef botloze agnathen vleugels en de meest majestueuze vissen zullen zweven in de oceaan.`,
+    hint_en: `Give boneless agnathans some wings and the most majestic fish will soar in the ocean.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Manta", icoon: "icons/Manta.png", map: "Vissen", 
+      { naam: "Manta", naam_en: "Manta rays", icoon: "icons/Manta.png", map: "Vissen", 
         quote: `Watching a manta ray glide past is like witnessing a bird in flight beneath the sea
         <br><br>- Andrea Marshall`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
   }, /* ------------------ MANTA ------------------ */
   {
     input: [
       ["Manta", "Krill"], ["Manta", "Aasgarnalen"], ["Manta", "Vlokreeftjes"]
     ],
     output: [
-      { naam: "Manta", icoon: "icons/Manta.png", map: "Vissen", 
+      { naam: "Manta", naam_en: "Manta rays", icoon: "icons/Manta.png", map: "Vissen", 
         quote: `Watching a manta ray glide past is like witnessing a bird in flight beneath the sea
         <br><br>- Andrea Marshall`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10098,16 +10190,21 @@ const combinaties = [
       ["Inktvissen", "Druk"], ["Inktvissen", "Oceaan"]
     ],
     hint: `In de diepe diepe oceaan nemen inktvissen immense proporties aan.`,
+    hint_en: `In the deep, deep ocean, squids are stretching to immense proportions.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Reuzeninktvissen", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+      { naam: "Reuzeninktvissen", naam_en: "Giant squids", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
         quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
         <br><br>- Edith Widder`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
   },
   {
     input: [
@@ -10126,21 +10223,21 @@ const combinaties = [
       /* Schelp */ ["Reuzeninktvissen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Reuzeninktvissen", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+      { naam: "Reuzeninktvissen", naam_en: "Giant squids", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
         quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
         <br><br>- Edith Widder`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10155,7 +10252,7 @@ const combinaties = [
       ["Reuzeninktvissen", "Agnathen"], ["Reuzeninktvissen", "Zeeduivels"], ["Reuzeninktvissen", "Platvissen"], 
       ["Reuzeninktvissen", "Piranha"], ["Reuzeninktvissen", "Clownvissen"], ["Reuzeninktvissen", "Doktersvissen"], 
       ["Reuzeninktvissen", "Papegaaivissen"], ["Reuzeninktvissen", "Karpers"], ["Reuzeninktvissen", "Zeepaardjes"], 
-      ["Reuzeninktvissen", "Vliegvissen"], ["Reuzeninktvissen", "Maanvissen"], ["Reuzeninktvissen", "Koraalduivels"], 
+      ["Reuzeninktvissen", "Vliegende vissen"], ["Reuzeninktvissen", "Maanvissen"], ["Reuzeninktvissen", "Koraalduivels"], 
       ["Reuzeninktvissen", "Kogelvissen"], ["Reuzeninktvissen", "Oerstraalvinnigen"], ["Reuzeninktvissen", "Kabeljauwen"], 
       ["Reuzeninktvissen", "Snoeken"], ["Reuzeninktvissen", "Meervallen"], ["Reuzeninktvissen", "Paling"], 
       ["Reuzeninktvissen", "Haaien"], ["Reuzeninktvissen", "Spookhaaien"], ["Reuzeninktvissen", "Manta"], 
@@ -10165,26 +10262,28 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Reuzeninktvissen", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+      { naam: "Reuzeninktvissen", naam_en: "Giant squids", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
         quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
         <br><br>- Edith Widder`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10196,7 +10295,7 @@ const combinaties = [
       ["Reuzeninktvissen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -10207,18 +10306,22 @@ const combinaties = [
       ["Oerstraalvinnigen", "IJs"], ["Oerstraalvinnigen", "Poolgebied"]
     ],
     hint: `Sommige straalvinnigen voelen zich thuis in de arctische wateren.`,
+    hint_en: `Some ray-finned fish feel more at home in Arctic waters.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+      { naam: "Kabeljauwen", naam_en: "Codfish", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
         quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
         a cornerstone of marine ecosystems
         <br><br>- Daniel Pauly`
       }
     ],
-    uitleg: {
-      thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
   }, /* ------------------ KABELJAUWEN ------------------ */
   {
     input: [
@@ -10231,17 +10334,17 @@ const combinaties = [
       ["Kabeljauwen", "map:Geleedpotigen"] /* Schelp: zeepo, herem */
     ],
     output: [
-      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+      { naam: "Kabeljauwen", naam_en: "Codfish", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
         quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
         a cornerstone of marine ecosystems
         <br><br>- Daniel Pauly`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10256,21 +10359,21 @@ const combinaties = [
       ["Kabeljauwen", "Goudvissen"]
     ],
     output: [
-      { naam: "Kabeljauwen", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
+      { naam: "Kabeljauwen", naam_en: "Codfish", icoon: "icons/Kabeljauwen.png", map: "Vissen", 
         quote: `The cod is a creature of the cold northern seas, moving in great numbers through deep waters, 
         a cornerstone of marine ecosystems
         <br><br>- Daniel Pauly`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10282,7 +10385,7 @@ const combinaties = [
       ["Kabeljauwen", "Zeepokken"], ["Kabeljauwen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -10293,17 +10396,22 @@ const combinaties = [
       ["Oerstraalvinnigen", "Ster"], ["Oerstraalvinnigen", "Licht"], ["Oerstraalvinnigen", "De Maan"]
     ],
     hint: `Sommige straalvinnigen houden van zonnebaden aan het wateroppervlak.`,
+    hint_en: `Some ray-finned fish enjoy sunbathing at the water's surface.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Maanvissen", icoon: "icons/Maanvissen.png", map: "Vissen", 
-        quote: `Mola mola appears almost otherworldly, a giant, flattened fish that seems more like a drifting fragment of the sea 
-        itself than a conventional animal
+      { naam: "Maanvissen", naam_en: "Molas", icoon: "icons/Maanvissen.png", map: "Vissen", 
+        quote: `Mola mola appears almost otherworldly, a giant, flattened fish that seems more like a drifting fragment of
+        the sea itself than a conventional animal
         <br><br>- Bruce Collette`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
   }, /* ------------------ MAANVISSEN ------------------ */
   {
     input: [
@@ -10317,17 +10425,17 @@ const combinaties = [
       ["Maanvissen", "Aasgarnalen"], ["Maanvissen", "Vlokreeftjes"], ["Maanvissen", "Garnalen"]
     ],
     output: [
-      { naam: "Maanvissen", icoon: "icons/Maanvissen.png", map: "Vissen", 
+      { naam: "Maanvissen", naam_en: "Molas", icoon: "icons/Maanvissen.png", map: "Vissen", 
         quote: `Mola mola appears almost otherworldly, a giant, flattened fish that seems more like a drifting fragment of the sea 
         itself than a conventional animal
         <br><br>- Bruce Collette`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10336,17 +10444,22 @@ const combinaties = [
   {
     input: ["Oerstraalvinnigen", "Berg"],
     hint: `Sommige straalvinnigen voelen zich thuis in bergstromen en beekjes.`,
+    hint_en: `Some ray-finned fish feel at home in mountain streams and brooks.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+      { naam: "Forel", naam_en: "Trout", icoon: "icons/Forel.png", map: "Vissen", 
         quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
         beneath the surface
         <br><br>- Hugh Falkus`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
   }, /* ------------------ FOREL ------------------ */
   {
     input: [
@@ -10359,17 +10472,17 @@ const combinaties = [
       ["Forel", "Oertienpotigen"], ["Forel", "Garnalen"], ["Forel", "Waterspinnen"]
     ],
     output: [
-      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+      { naam: "Forel", naam_en: "Trout", icoon: "icons/Forel.png", map: "Vissen", 
         quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
         beneath the surface
         <br><br>- Hugh Falkus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10381,21 +10494,21 @@ const combinaties = [
       ["Forel", "Agnathen"], ["Forel", "Oerstraalvinnigen"], ["Forel", "Goudvissen"]
     ],
     output: [
-      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+      { naam: "Forel", naam_en: "Trout", icoon: "icons/Forel.png", map: "Vissen", 
         quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
         beneath the surface
         <br><br>- Hugh Falkus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10404,21 +10517,26 @@ const combinaties = [
   {
     input: ["Oerstraalvinnigen", "Zand"],
     hint: `Sommige straalvinnigen produceren zand door koraal te vermalen en anderen verdwijnen erin.`,
+    hint_en: `Some ray-finned fish produce sand by grinding up coral, while others disappear into it.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
+      { naam: "Papegaaivissen", naam_en: "Parrotfish", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
         quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
         in the creation of tropical beaches
         <br><br>- Peter Sale`
       },
-      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+      { naam: "Platvissen", naam_en: "Flatfish", icoon: "icons/Platvissen.png", map: "Vissen", 
         quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
         <br><br>- David Attenborough`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
   }, /* ------------------ PAPEGAAIVISSEN ------------------ */
   {
     input: [
@@ -10432,17 +10550,17 @@ const combinaties = [
       ["Papegaaivissen", "Aasgarnalen"], ["Papegaaivissen", "Vlokreeftjes"]
     ],
     output: [
-      { naam: "Papegaaivissen", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
+      { naam: "Papegaaivissen", naam_en: "Parrotfish", icoon: "icons/Papegaaivissen.png", map: "Vissen", 
         quote: `The parrotfish, with its beak-like teeth and brilliant colors, transforms coral into sand, playing a vital role 
         in the creation of tropical beaches
         <br><br>- Peter Sale`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10461,16 +10579,16 @@ const combinaties = [
       ["Platvissen", "Oertienpotigen"], ["Platvissen", "Garnalen"], ["Platvissen", "Waterspinnen"]
     ],
     output: [
-      { naam: "Platvissen", icoon: "icons/Platvissen.png", map: "Vissen", 
+      { naam: "Platvissen", naam_en: "Flatfish", icoon: "icons/Platvissen.png", map: "Vissen", 
         quote: `The flatfish is a master of camouflage, lying flush against the seabed and blending seamlessly with sand and sediment
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10479,25 +10597,30 @@ const combinaties = [
   {
     input: ["Oerstraalvinnigen", "Meer"],
     hint: `Sommige straalvinnigen voelen zich thuis in de zoete meren.`,
+    hint_en: `Some ray-finned fish make freshwater lakes their home.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+      { naam: "Karpers", naam_en: "Carp", icoon: "icons/Karpers.png", map: "Vissen", 
         quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
         <br><br>- David Attenborough`
       },
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+      { naam: "Snoeken", naam_en: "Pike", icoon: "icons/Snoeken.png", map: "Vissen", 
         quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
         <br><br>- Hugh Falkus`
       },
-      { naam: "Forel", icoon: "icons/Forel.png", map: "Vissen", 
+      { naam: "Forel", naam_en: "Trout", icoon: "icons/Forel.png", map: "Vissen", 
         quote: `The trout is a fish of clear, cold waters, whose presence is often revealed only by a sudden rise or flash 
         beneath the surface
         <br><br>- Hugh Falkus`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
   }, /* ------------------ KARPERS ------------------ */
   {
     input: [
@@ -10512,16 +10635,16 @@ const combinaties = [
       ["Karpers", "Aasgarnalen"], ["Karpers", "Vlokreeftjes"], ["Karpers", "Garnalen"]
     ],
     output: [
-      { naam: "Karpers", icoon: "icons/Karpers.png", map: "Vissen", 
+      { naam: "Karpers", naam_en: "Carp", icoon: "icons/Karpers.png", map: "Vissen", 
         quote: `The carp moves slowly through still waters, a patient survivor in environments where few other fish persist
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10540,16 +10663,16 @@ const combinaties = [
       ["Snoeken", "Oertienpotigen"], ["Snoeken", "Garnalen"], ["Snoeken", "Waterspinnen"]
     ],
     output: [
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+      { naam: "Snoeken", naam_en: "Pike", icoon: "icons/Snoeken.png", map: "Vissen", 
         quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
         <br><br>- Hugh Falkus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10564,20 +10687,20 @@ const combinaties = [
       ["Snoeken", "Goudvissen"]
     ],
     output: [
-      { naam: "Snoeken", icoon: "icons/Snoeken.png", map: "Vissen", 
+      { naam: "Snoeken", naam_en: "Pike", icoon: "icons/Snoeken.png", map: "Vissen", 
         quote: `The pike waits in stillness, a master of ambush, its presence almost invisible until the moment of attack
         <br><br>- Hugh Falkus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10588,36 +10711,41 @@ const combinaties = [
       ["Oerstraalvinnigen", "Lucht"], ["Oerstraalvinnigen", "Wind"]
     ],
     hint: `Sommige straalvinnigen willen niks liever dan de lucht in.`,
+    hint_en: `Some ray-finned fish want nothing more than to take to the air.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Vliegvissen", icoon: "icons/Vliegvissen.png", map: "Vissen", 
-        quote: `Fly fishing is as much about the rhythm of water and air as it is about catching fish; it is a form of quiet
-        observation of nature
-        <br><br>- John Gierach`
+      { naam: "Vliegende vissen", naam_en: "Flying fish", icoon: "icons/Vliegende vissen.png", map: "Vissen", 
+        quote: `Child of water, child of air — fin thing and wing thing... I have lived in many half-worlds myself, 
+        and so I know you
+        <br><br>- Carl Sandburg`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Vogelbekdieren", titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+    uitleg: { thresholdElement: { naam: "Vogelbekdieren", naam_en: "Platypuses",
+        titel: "Probeer opnieuw na het uitsterven van de dinosauriërs",
+        titel_en: "Try again after the dinosaurs have gone extinct",
         tekst: `Door grassen en bloemen pasten zoogdieren zich aan na het uitsterven van de dinosauriërs.
-        <br><br>Eerst nodig: savannes en de eerste zoogdieren.` } }
-  }, /* ------------------ VLIEGVISSEN ------------------ */
+        <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
+        tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
+        grass and flowers. <br><br>Required first: the savanna and early mammals.` } }
+  }, /* ------------------ Vliegende vissen ------------------ */
   {
     input: [
       /* --- GELEEDPOTIGEN --- */
-      ["Vliegvissen", "Oerkreeftjes"], ["Vliegvissen", "Oerinsecten"], ["Vliegvissen", "Krill"], 
-      ["Vliegvissen", "Aasgarnalen"], ["Vliegvissen", "Vlokreeftjes"], ["Vliegvissen", "Garnalen"]
+      ["Vliegende vissen", "Oerkreeftjes"], ["Vliegende vissen", "Oerinsecten"], ["Vliegende vissen", "Krill"], 
+      ["Vliegende vissen", "Aasgarnalen"], ["Vliegende vissen", "Vlokreeftjes"], ["Vliegende vissen", "Garnalen"]
     ],
     output: [
-      { naam: "Vliegvissen", icoon: "icons/Vliegvissen.png", map: "Vissen", 
-        quote: `Fly fishing is as much about the rhythm of water and air as it is about catching fish; it is a form of quiet
-        observation of nature
-        <br><br>- John Gierach`
+      { naam: "Vliegende vissen", naam_en: "Flying fish", icoon: "icons/Vliegende vissen.png", map: "Vissen", 
+        quote: `Child of water, child of air — fin thing and wing thing... I have lived in many half-worlds myself, 
+        and so I know you
+        <br><br>- Carl Sandburg`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10664,12 +10792,12 @@ const combinaties = [
         where sight is of little use
         <br><br>- Herbert Boschung`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10688,16 +10816,16 @@ const combinaties = [
         where sight is of little use
         <br><br>- Herbert Boschung`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10709,7 +10837,7 @@ const combinaties = [
       ["Meervallen", "Zeepokken"], ["Meervallen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -10764,12 +10892,12 @@ const combinaties = [
         quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
         <br><br>- Callum Roberts`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10786,16 +10914,16 @@ const combinaties = [
         quote: `Few fish embody the scale and energy of the open ocean as completely as the tuna, a creature built for speed and endurance
         <br><br>- Callum Roberts`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10819,12 +10947,12 @@ const combinaties = [
         rivers of their birth
         <br><br>- Colin Braithwaite`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10841,16 +10969,16 @@ const combinaties = [
         rivers of their birth
         <br><br>- Colin Braithwaite`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10873,12 +11001,12 @@ const combinaties = [
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10895,16 +11023,16 @@ const combinaties = [
         quote: `In great shoals, mackerel move like a single living wave, shifting and turning in perfect unison
         <br><br>- Alister Hardy`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10929,12 +11057,12 @@ const combinaties = [
         thousands of kilometres
         <br><br>- Frederik Kendall`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10952,16 +11080,16 @@ const combinaties = [
         thousands of kilometres
         <br><br>- Frederik Kendall`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -10972,7 +11100,7 @@ const combinaties = [
       ["Paling", "Tweekleppigen"], ["Paling", "Zeeslakken"], ["Paling", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -10990,12 +11118,12 @@ const combinaties = [
         quote: `In their millions, herring transform the sea into a living, shifting mirror of light and motion
         <br><br>- Rachel Carson`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -11042,12 +11170,12 @@ const combinaties = [
         until birth
         <br><br>- Sara Lourie`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -11169,17 +11297,17 @@ const combinaties = [
         quote: `Few fish combine such vulnerability in appearance with such extreme defensive capability as the pufferfish
         <br><br>- David Attenborough`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -11191,7 +11319,7 @@ const combinaties = [
       ["Kogelvissen", "Zeepokken"], ["Kogelvissen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -11243,12 +11371,12 @@ const combinaties = [
         quote: `Few marine relationships are as iconic as that between clownfish and sea anemones
         <br><br>- Nancy Knowlton`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -11269,12 +11397,12 @@ const combinaties = [
         quote: `Surgeonfish are named for the sharp, scalpel-like spines located near the base of their tails
         <br><br>- David Bellwood`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -11293,17 +11421,17 @@ const combinaties = [
         dangerous
         <br><br>- James Morris`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -11324,21 +11452,21 @@ const combinaties = [
         dangerous
         <br><br>- James Morris`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -11403,16 +11531,16 @@ const combinaties = [
         predators of popular imagination
         <br><br>- Herbert Axelrod`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13399,12 +13527,12 @@ const combinaties = [
         quote: `The sundew catches flies by means of a sticky fluid on its leaves
         <br><br>- John Ellis`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -13428,7 +13556,7 @@ const combinaties = [
         quote: `The sensitive leaves respond to touch in a manner almost animal-like
         <br><br>- Francis Darwin`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
@@ -13633,12 +13761,12 @@ const combinaties = [
         quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
         <br><br>- Li Bai`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13647,7 +13775,7 @@ const combinaties = [
   {
     input: [/* Bloed */
       /* --- VISSEN --- */
-      ["Vleermuizen", "Karpers"], ["Vleermuizen", "Vliegvissen"], ["Vleermuizen", "Haring"], 
+      ["Vleermuizen", "Karpers"], ["Vleermuizen", "Vliegende vissen"], ["Vleermuizen", "Haring"], 
       ["Vleermuizen", "Forel"], 
       /* --- KLEIN LANDLEVEN --- */
       ["Vleermuizen", "Kikkers"], ["Vleermuizen", "Padden"], 
@@ -13661,16 +13789,16 @@ const combinaties = [
         quote: `Bats flit through the dusk like fragments of darkness made visible for a moment
         <br><br>- Li Bai`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13712,12 +13840,12 @@ const combinaties = [
         quote: `Manatees move slowly through the water, grazing quietly on seagrass in shallow coastal bays
         <br><br>- Charles Fransen`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13728,7 +13856,7 @@ const combinaties = [
       ["Zeekoeien", "Tweekleppigen"], ["Zeekoeien", "Zeeslakken"], ["Zeekoeien", "Zeepokken"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -13783,12 +13911,12 @@ const combinaties = [
         calls
         <br><br>- Bernhard Grzimek`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13809,16 +13937,16 @@ const combinaties = [
         calls
         <br><br>- Bernhard Grzimek`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13854,12 +13982,12 @@ const combinaties = [
         quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
         <br><br>- Richard Mabey`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13877,16 +14005,16 @@ const combinaties = [
         quote: `The mole lives almost entirely underground, creating tunnels through which it rarely sees the world above
         <br><br>- Richard Mabey`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13943,12 +14071,12 @@ const combinaties = [
         edges
         <br><br>- Richard Fitter`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -13969,16 +14097,16 @@ const combinaties = [
         edges
         <br><br>- Richard Fitter`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14014,17 +14142,17 @@ const combinaties = [
         seen despite its abundance
         <br><br>- Derek Ratcliffe`
       },
-      { naam: "Gif", icoon: "icons/Gif.png", map: "Biologie",
+      { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
        makes a thing poison
        <br><br>- Paracelsus`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14078,12 +14206,12 @@ const combinaties = [
         quote: `The sloth spends nearly all its life hanging upside down in the canopy, moving only when necessary
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14111,12 +14239,12 @@ const combinaties = [
         single day
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14180,12 +14308,12 @@ const combinaties = [
         changing worlds for millions of years
         <br><br>- Adrian Lister`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14216,12 +14344,12 @@ const combinaties = [
         animals
         <br><br>- Richard Estes`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14242,16 +14370,16 @@ const combinaties = [
         animals
         <br><br>- Richard Estes`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14321,12 +14449,12 @@ const combinaties = [
         quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
         <br><br>- Edward Wilson`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14342,16 +14470,16 @@ const combinaties = [
         quote: `Through burrowing, gnawing, and seed dispersal, rodents profoundly shape the ecosystems they inhabit
         <br><br>- Edward Wilson`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14388,12 +14516,12 @@ const combinaties = [
         and small invertebrates
         <br><br>- Richard Estes`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14414,16 +14542,16 @@ const combinaties = [
         and small invertebrates
         <br><br>- Richard Estes`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14464,12 +14592,12 @@ const combinaties = [
         quote: `Rabbits graze quietly in open fields, vanishing into burrows at the slightest sign of danger
         <br><br>- Richard Adams`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14526,12 +14654,12 @@ const combinaties = [
         quote: `The hare seems to belong to the wind as much as to the ground, appearing and vanishing in the same breath
         <br><br>- J.A. Baker`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14585,12 +14713,12 @@ const combinaties = [
         quote: `The common wombat digs extensive burrows and emerges mainly at night to graze on grasses and roots
         <br><br>- Tim Flannery`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14641,12 +14769,12 @@ const combinaties = [
         long distances
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -14675,12 +14803,12 @@ const combinaties = [
         quote: `Koalas spend most of their lives in eucalyptus trees, feeding and sleeping among the branches
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -15868,12 +15996,12 @@ const combinaties = [
         quote: `Mammoths likely lived in herds similar to modern elephants, with complex social structures
         <br><br>- Daniel Fisher`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -15913,12 +16041,12 @@ const combinaties = [
         quote: `Elephants learn from experience and from each other, passing knowledge through generations
         <br><br>- Cynthia Moss`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16040,12 +16168,12 @@ const combinaties = [
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
         <br><br>- Roger Payne`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16069,16 +16197,16 @@ const combinaties = [
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
         <br><br>- Roger Payne`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16102,12 +16230,12 @@ const combinaties = [
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
         <br><br>- Bruce Mate`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16124,16 +16252,16 @@ const combinaties = [
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
         <br><br>- Bruce Mate`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16144,7 +16272,7 @@ const combinaties = [
       ["Grijze walvissen", "Tweekleppigen"], ["Grijze walvissen", "Zeeslakken"], ["Grijze walvissen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -16160,12 +16288,12 @@ const combinaties = [
         generations
         <br><br>- Lance Barrett-Lennard`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16181,7 +16309,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Orka", "Agnathen"], ["Orka", "Zeeduivels"], ["Orka", "Platvissen"], ["Orka", "Piranha"], ["Orka", "Clownvissen"], 
       ["Orka", "Doktersvissen"], ["Orka", "Papegaaivissen"], ["Orka", "Karpers"], ["Orka", "Zeepaardjes"], 
-      ["Orka", "Vliegvissen"], ["Orka", "Maanvissen"], ["Orka", "Koraalduivels"], ["Orka", "Kogelvissen"], 
+      ["Orka", "Vliegende vissen"], ["Orka", "Maanvissen"], ["Orka", "Koraalduivels"], ["Orka", "Kogelvissen"], 
       ["Orka", "Oerstraalvinnigen"], ["Orka", "Kabeljauwen"], ["Orka", "Snoeken"], ["Orka", "Meervallen"], 
       ["Orka", "Paling"], ["Orka", "Haaien"], ["Orka", "Spookhaaien"], ["Orka", "Manta"], ["Orka", "Goudvissen"], 
       ["Orka", "Coelacanten"], ["Orka", "Tiktaalik"], ["Orka", "Tonijn"], ["Orka", "Zalm"], ["Orka", "Haring"],
@@ -16199,16 +16327,16 @@ const combinaties = [
         generations
         <br><br>- Lance Barrett-Lennard`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16218,7 +16346,7 @@ const combinaties = [
     input: /* SCHELP */
       ["Orka", "Nautilussen"],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -16238,12 +16366,12 @@ const combinaties = [
         quote: `The narwhal tusk is a sensory organ with millions of nerve endings
         <br><br>- Martin Nweeia`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16264,16 +16392,16 @@ const combinaties = [
         quote: `The narwhal tusk is a sensory organ with millions of nerve endings
         <br><br>- Martin Nweeia`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16297,12 +16425,12 @@ const combinaties = [
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
         <br><br>- Lori Marino`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16328,16 +16456,16 @@ const combinaties = [
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
         <br><br>- Lori Marino`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16349,7 +16477,7 @@ const combinaties = [
       ["Dolfijnen", "Zeepokken"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -16408,12 +16536,12 @@ const combinaties = [
         are so wide that you could swim down them
         <br><br>- David Attenborough`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16434,16 +16562,16 @@ const combinaties = [
         are so wide that you could swim down them
         <br><br>- David Attenborough`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16460,12 +16588,12 @@ const combinaties = [
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16477,7 +16605,7 @@ const combinaties = [
       ["Potvissen", "Inktvissen"], ["Potvissen", "Octopussen"], ["Potvissen", "Reuzeninktvissen"], 
       /* Schelp */ ["Potvissen", "Nautilussen"],
       /* --- VISSEN --- */
-      ["Potvissen", "Zeeduivels"], ["Potvissen", "Platvissen"], ["Potvissen", "Vliegvissen"], 
+      ["Potvissen", "Zeeduivels"], ["Potvissen", "Platvissen"], ["Potvissen", "Vliegende vissen"], 
       ["Potvissen", "Spookhaaien"], ["Potvissen", "Coelacanten"]
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
@@ -16487,16 +16615,16 @@ const combinaties = [
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16507,7 +16635,7 @@ const combinaties = [
       ["Potvissen", "Nautilussen"], ["Potvissen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Schelp", icoon: "icons/Schelp.png", map: "Biologie", 
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
@@ -16677,12 +16805,12 @@ const combinaties = [
         quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
         <br><br>- William Hudson`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16702,16 +16830,16 @@ const combinaties = [
         quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
         <br><br>- William Hudson`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16759,12 +16887,12 @@ const combinaties = [
         quote: `The beaver builds not only with wood, but with an intelligence that seems almost human in its patience
         <br><br>- Ernest Seton`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16838,12 +16966,12 @@ const combinaties = [
         quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
         <br><br>- George Schaller`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16861,16 +16989,16 @@ const combinaties = [
         quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
         <br><br>- George Schaller`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -16974,12 +17102,12 @@ const combinaties = [
         quote: `The squirrel is one of the most alert and restless of woodland creatures, never still for long
         <br><br>- John Burroughs`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -17025,12 +17153,12 @@ const combinaties = [
         protected mammals
         <br><br>- David Macdonald`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -17050,16 +17178,16 @@ const combinaties = [
         protected mammals
         <br><br>- David Macdonald`
       },
-      { naam: "Bloed", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
         quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
         find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -17107,12 +17235,12 @@ const combinaties = [
         quote: `Even the smallest mouse has its own place in nature
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -17170,12 +17298,12 @@ const combinaties = [
         quote: `Much of the hamster’s existence remains concealed beneath the surface of the landscape
         <br><br>- Konrad Lorenz`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -17222,12 +17350,12 @@ const combinaties = [
         quote: `Where prairie dogs thrive, the grassland itself seems alive with conversation
         <br><br>- Aldo Leopold`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -17504,7 +17632,7 @@ const combinaties = [
           /* --- VISSEN --- */
           "Zeeduivels", "Manta", "Platvissen", "Clownvissen", "Doktersvissen", "Papegaaivissen", "Koraalduivels",
           "Kogelvissen", "Tonijn", "Zalm", "Kabeljauwen", "Haring", "Makreel", "Karpers", "Snoeken", "Forel", 
-          "Meervallen", "Paling", "Zeepaardjes", "Vliegvissen", "Piranha", "Maanvissen",
+          "Meervallen", "Paling", "Zeepaardjes", "Vliegende vissen", "Piranha", "Maanvissen",
          /* --- PLANTEN --- */
          "Vetplanten", "Buxus", "Oerfabiden", "Agave", "Aloë Vera", "Kroos", "Waterriet", "Klavers", "Brandnetels", 
          "Oerfagales", "Cactussen", "Zonnedauw", "Venusvliegenvanger", "Oerericales", "Heide", "Lavendel", 
@@ -18307,12 +18435,12 @@ const combinaties = [
         quote: `Goldfish possess a surprising capacity for memory and recognition
         <br><br>- Sy Montgomery`
       },
-      { naam: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
       },
-      { naam: "Vreugde", icoon: "icons/Vreugde.png", map: "Brein", 
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
