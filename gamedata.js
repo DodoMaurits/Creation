@@ -15700,9 +15700,10 @@ const combinaties = [
   {
     input: ["Oerericales", "Savanne"],
     hint: `Sommige ericales voelen zich thuis op de savanne.`,
+    hint_en: `Some ericales feel at home in the savannah.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Sheabomen", icoon: "icons/Sheabomen.png", map: "Bomen", 
+      { naam: "Sheabomen", naam_en: "Shea trees", icoon: "icons/Sheabomen.png", map: "Bomen", 
         quote: `Vitellaria paradoxa is a long-lived tree of the dry savanna, deeply adapted to fire and drought
         <br><br>- Daniel Hall`
       }
@@ -15711,9 +15712,10 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Vulkaan"],
     hint: `Sommige lamiden worden ook wel de vulkaangewassen genoemd.`,
+    hint_en: `Some lamids are also referred to as crops grown on volcanic soil.`,
     tijd: 3_000_000,
     output: [
-      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
+      { naam: "Aardappelen", naam_en: "Potatoes", icoon: "icons/Aardappelen.png", map: "Groenten", 
         quote: `The potato is a most valuable root for sustenance
         <br><br>- James Boswell`
       }
@@ -15722,21 +15724,22 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Berg"],
     hint: `Sommige lamiden voelen zich thuis in de bergen.`,
+    hint_en: `Some lamids feel at home in the mountains.`,
     tijd: 3_000_000,
     output: [
-      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+      { naam: "Oregano", naam_en: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
         quote: `Oregano is the taste of the Mediterranean itself
         <br><br>- Elizabeth David`
       },
-      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+      { naam: "Salie", naam_en: "Sage", icoon: "icons/Salie.png", map: "Smaakmakers", 
         quote: `Sage is singularly good for the head and brain
         <br><br>- Nicholas Culpeper`
       },
-      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+      { naam: "Jasmijn", naam_en: "Jasmine", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
         quote: `Jasmine opens in the night like a secret
         <br><br>- Adonis`
       },
-      { naam: "Tomaten", icoon: "icons/Groenten.png", map: "Groenten", 
+      { naam: "Tomaten", naam_en: "Tomatoes", icoon: "icons/Groenten.png", map: "Groenten", 
         quote: `A ripe tomato is one of the simplest and greatest pleasures of eating
         <br><br>- Alice Waters`
       }
@@ -15747,13 +15750,14 @@ const combinaties = [
       ["Oerlamiden", "Ven"], ["Oerlamiden", "Moeras"]
     ],
     hint: `Sommige lamiden voelen zich thuis bij vennetjes en moerassen.`,
+    hint_en: `Some lamids feel at home near small ponds and marshes.`,
     tijd: 25_000_000,
     output: [
-      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
+      { naam: "Essen", naam_en: "Ash trees", icoon: "icons/Essen.png", map: "Bomen", 
         quote: `The ash stands by the water and shapes the land around it
         <br><br>- William Morris`
       },
-      { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
+      { naam: "Munt", naam_en: "Mint", icoon: "icons/Munt.png", map: "Smaakmakers", 
         quote: `Fresh mint transforms the simplest dish into something alive
         <br><br>- Julia Child`
       }
@@ -15764,13 +15768,14 @@ const combinaties = [
       ["Oerlamiden", "Kust"], ["Oerlamiden", "Klif"]
     ],
     hint: `Sommige lamiden voelen zich thuis bij kustkliffen.`,
+    hint_en: `Some lamids feel at home on coastal cliffs.`,
     tijd: 25_000_000,
     output: [
-      { naam: "Olijven", icoon: "icons/Olijven.png", map: "Fruit", 
+      { naam: "Olijven", naam_en: "Olives", icoon: "icons/Olijven.png", map: "Fruit", 
         quote: `The olive is a gift of the gods to man
         <br><br>- Homeros`
       },
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
+      { naam: "Lavendel", naam_en: "Lavender", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       }
@@ -15779,13 +15784,14 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Rivier"],
     hint: `Sommige lamiden voelen zich thuis bij rivieroevers.`,
+    hint_en: `Some lamids feel at home along riverbanks.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Munt", icoon: "icons/Munt.png", map: "Smaakmakers", 
+      { naam: "Munt", naam_en: "Mint", icoon: "icons/Munt.png", map: "Smaakmakers", 
         quote: `Fresh mint transforms the simplest dish into something alive
         <br><br>- Julia Child`
       },
-      { naam: "Basilicum", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
+      { naam: "Basilicum", naam_en: "Basil", icoon: "icons/Basilicum.png", map: "Smaakmakers", 
         quote: `Without basil, Italian cooking loses its soul
         <br><br>- Marcella Hazen`
       }
@@ -15795,7 +15801,7 @@ const combinaties = [
     input: ["Oerlamiden", "Kalk"],
     tijd: 20_000_000,
     output: [
-      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+      { naam: "Tijm", naam_en: "Thyme", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
         <br><br>- William Turner`
       }
@@ -15804,21 +15810,22 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Gif"],
     hint: `Sommige lamiden kiezen voor de strategie van gif.`,
+    hint_en: `Some lamids opt for a strategy involving poison.`,
     tijd: 3_000_000,
     output: [
-      { naam: "Tabaksplanten", icoon: "icons/Tabaksplanten.png", map: "Genotwaren", 
+      { naam: "Tabaksplanten", naam_en: "Tobacco plants", icoon: "icons/Tabaksplanten.png", map: "Genotwaren", 
         quote: `The herb which the inhabitants call uppowoc is of great estimation among them
         <br><br>- Thomas Hariot`
       },
-      { naam: "Aardappelen", icoon: "icons/Aardappelen.png", map: "Groenten", 
+      { naam: "Aardappelen", naam_en: "Potatoes", icoon: "icons/Aardappelen.png", map: "Groenten", 
         quote: `The potato is a most valuable root for sustenance
         <br><br>- James Boswell`
       },
-      { naam: "Chilipepers", icoon: "icons/Chilipepers.png", map: "Smaakmakers", 
+      { naam: "Chilipepers", naam_en: "Chili peppers", icoon: "icons/Chilipepers.png", map: "Smaakmakers", 
         quote: `The chili pepper transformed human experience of flavor through pain and heat
         <br><br>- Michael Pollan`
       },
-      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
+      { naam: "Koffieplanten", naam_en: "Coffee plants", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
         quote: `Coffee has shaped societies, economies, and daily habits across the globe
         <br><br>- Mark Pendergrast`
       }
@@ -15827,9 +15834,10 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Bos"],
     hint: `Sommige lamiden voelen zich thuis in de bossen.`,
+    hint_en: `Some lamids feel at home in the forests.`,
     tijd: 40_000_000,
     output: [
-      { naam: "Essen", icoon: "icons/Essen.png", map: "Bomen", 
+      { naam: "Essen", naam_en: "Ash trees", icoon: "icons/Essen.png", map: "Bomen", 
         quote: `The ash stands by the water and shapes the land around it
         <br><br>- William Morris`
       }
@@ -15838,25 +15846,26 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Tropisch regenwoud"],
     hint: `Sommige lamiden voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some lamids feel at home in the tropical rainforests.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
+      { naam: "Teak", naam_en: "Teak", icoon: "icons/Teak.png", map: "Bomen", 
         quote: `Teak thrives in tropical forests where seasonal rains shape its growth
         <br><br>- Hugh Cleghorn`
       },
-      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
+      { naam: "Koffieplanten", naam_en: "Coffee plants", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
         quote: `Coffee has shaped societies, economies, and daily habits across the globe
         <br><br>- Mark Pendergrast`
       },
-      { naam: "Tabaksplanten", icoon: "icons/Tabaksplanten.png", map: "Genotwaren", 
+      { naam: "Tabaksplanten", naam_en: "Tobacco plants", icoon: "icons/Tabaksplanten.png", map: "Genotwaren", 
         quote: `The herb which the inhabitants call uppowoc is of great estimation among them
         <br><br>- Thomas Hariot`
       },
-      { naam: "Aubergines", icoon: "icons/Aubergines.png", map: "Groenten", 
+      { naam: "Aubergines", naam_en: "Eggplants", icoon: "icons/Aubergines.png", map: "Groenten", 
         quote: `The aubergine is a vegetable which absorbs flavors like a sponge
         <br><br>- Elizabeth David`
       },
-      { naam: "Zoete aardappelen", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
+      { naam: "Zoete aardappelen", naam_en: "Sweet potatoes", icoon: "icons/Zoete aardappelen.png", map: "Groenten", 
         quote: `The sweet potato is part of the ancient food heritage of the Andes
         <br><br>- Carlos Ochoa`
       }
@@ -15866,19 +15875,19 @@ const combinaties = [
     input: ["Oerlamiden", "Vlinders"],
     tijd: 20_000_000,
     output: [
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
+      { naam: "Lavendel", naam_en: "Lavender", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       },
-      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+      { naam: "Jasmijn", naam_en: "Jasmine", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
         quote: `Jasmine opens in the night like a secret
         <br><br>- Adonis`
       },
-      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+      { naam: "Salie", naam_en: "Sage", icoon: "icons/Salie.png", map: "Smaakmakers", 
         quote: `Sage is singularly good for the head and brain
         <br><br>- Nicholas Culpeper`
       },
-      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+      { naam: "Tijm", naam_en: "Thyme", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
         <br><br>- William Turner`
       }
@@ -15888,15 +15897,15 @@ const combinaties = [
     input: ["Oerlamiden", "Bijen"],
     tijd: 20_000_000,
     output: [
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
+      { naam: "Lavendel", naam_en: "Lavender", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       },
-      { naam: "Jasmijn", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
+      { naam: "Jasmijn", naam_en: "Jasmine", icoon: "icons/Jasmijn.png", map: "Genotwaren", 
         quote: `Jasmine opens in the night like a secret
         <br><br>- Adonis`
       },
-      { naam: "Koffieplanten", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
+      { naam: "Koffieplanten", naam_en: "Coffee plants", icoon: "icons/Koffieplanten.png", map: "Genotwaren", 
         quote: `Coffee has shaped societies, economies, and daily habits across the globe
         <br><br>- Mark Pendergrast`
       }
@@ -15906,11 +15915,11 @@ const combinaties = [
     input: ["Oerlamiden", "Duinen"],
     tijd: 20_000_000,
     output: [
-      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+      { naam: "Tijm", naam_en: "Thyme", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
         <br><br>- William Turner`
       },
-      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+      { naam: "Oregano", naam_en: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
         quote: `Oregano is the taste of the Mediterranean itself
         <br><br>- Elizabeth David`
       }
@@ -15919,9 +15928,10 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Savanne"],
     hint: `Sommige lamiden voelen zich thuis op de savanne.`,
+    hint_en: `Some lamids feel at home on the savannah.`,
     tijd: 3_000_000,
     output: [
-      { naam: "Paprika", icoon: "icons/Paprika.png", map: "Groenten", 
+      { naam: "Paprika", naam_en: "Peppers", icoon: "icons/Paprika.png", map: "Groenten", 
         quote: `Peppers show how a wild plant becomes a domestic staple through selection for flavor and form
         <br><br>- Michael Pollan`
       }
@@ -15930,21 +15940,22 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Weide"],
     hint: `Sommige lamiden voelen zich thuis in grasweides.`,
+    hint_en: `Some lamids feel at home in grassy meadows.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Lavendel", icoon: "icons/Lavendel.png", map: "Planten", 
+      { naam: "Lavendel", naam_en: "Lavender", icoon: "icons/Lavendel.png", map: "Planten", 
         quote: `The hills were covered with lavender, stretching like a purple sea
         <br><br>- Peter Mayle`
       },
-      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+      { naam: "Tijm", naam_en: "Thyme", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
         <br><br>- William Turner`
       },
-      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+      { naam: "Salie", naam_en: "Sage", icoon: "icons/Salie.png", map: "Smaakmakers", 
         quote: `Sage is singularly good for the head and brain
         <br><br>- Nicholas Culpeper`
       },
-      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+      { naam: "Oregano", naam_en: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
         quote: `Oregano is the taste of the Mediterranean itself
         <br><br>- Elizabeth David`
       }
@@ -15953,21 +15964,22 @@ const combinaties = [
   {
     input: ["Oerlamiden", "Steppe"],
     hint: `Sommige lamiden voelen zich thuis op de steppe.`,
+    hint_en: `Some lamids feel at home on the steppe.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Salie", icoon: "icons/Salie.png", map: "Smaakmakers", 
+      { naam: "Salie", naam_en: "Sage", icoon: "icons/Salie.png", map: "Smaakmakers", 
         quote: `Sage is singularly good for the head and brain
         <br><br>- Nicholas Culpeper`
       },
-      { naam: "Tijm", icoon: "icons/Tijm.png", map: "Smaakmakers", 
+      { naam: "Tijm", naam_en: "Thyme", icoon: "icons/Tijm.png", map: "Smaakmakers", 
         quote: `Thyme comforts the head and strengthens the senses
         <br><br>- William Turner`
       },
-      { naam: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
+      { naam: "Oregano", naam_en: "Oregano", icoon: "icons/Oregano.png", map: "Smaakmakers", 
         quote: `Oregano is the taste of the Mediterranean itself
         <br><br>- Elizabeth David`
       },
-      { naam: "Sesam", icoon: "icons/Sesam.png", map: "Zaden", 
+      { naam: "Sesam", naam_en: "Sesame", icoon: "icons/Sesam.png", map: "Zaden", 
         quote: `Sesam is one of the oldest oilseed crops known to cultivation
         <br><br>- George Watt`
       }
@@ -15976,13 +15988,14 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Berg"],
     hint: `Sommige campanuliden voelen zich thuis in de bergen.`,
+    hint_en: `Some campanulids feel at home in the mountains.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+      { naam: "Paardenbloemen", naam_en: "Dandelions", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
       },
-      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
+      { naam: "Madeliefjes", naam_en: "Daisies", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
       }
@@ -15991,13 +16004,14 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Klei"],
     hint: `Sommige campanuliden doen het goed met hun poten in de klei.`,
+    hint_en: `Some campanulids thrive with their feet in the clay.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
+      { naam: "Kamille", naam_en: "Chamomile", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
-      { naam: "Goudsbloemen", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
+      { naam: "Goudsbloemen", naam_en: "Marigolds", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
         quote: `The marigold opens at the sun’s coming and shuts at his going
         <br><br>- John Gerard`
       }
@@ -16007,7 +16021,7 @@ const combinaties = [
     input: ["Oercampanuliden", "Wind"],
     tijd: 30_000_000,
     output: [
-      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+      { naam: "Paardenbloemen", naam_en: "Dandelions", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
       }
@@ -16017,10 +16031,11 @@ const combinaties = [
     input: [
       ["Oercampanuliden", "Ven"], ["Oercampanuliden", "Moeras"]
     ],
-    hint: `Sommige campanuliden voelen zich thuis bij stilstaand water`,
+    hint: `Sommige campanuliden voelen zich thuis bij stilstaand water.`,
+    hint_en: `Some campanulids feel at home near still water.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
+      { naam: "Selderij", naam_en: "Celery", icoon: "icons/Selderij.png", map: "Groenten", 
         quote: `Celery gives depth to simple broths and stews
         <br><br>- Elizabeth David`
       }
@@ -16030,11 +16045,11 @@ const combinaties = [
     input: ["Oercampanuliden", "Kust"],
     tijd: 2_000_000,
     output: [
-      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
+      { naam: "Venkel", naam_en: "Fennel", icoon: "icons/Venkel.png", map: "Groenten", 
         quote: `Fennel is of great use for improving sight
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Artisjokken", icoon: "icons/Artisjokken.png", map: "Groenten", 
+      { naam: "Artisjokken", naam_en: "Artichokes", icoon: "icons/Artisjokken.png", map: "Groenten", 
         quote: `The artichoke is valued for its heart, hidden beneath protective bracts
         <br><br>- Alan Davidson`
       }
@@ -16043,21 +16058,22 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Rivier"],
     hint: `Sommige campanuliden voelen zich thuis bij de rivier.`,
+    hint_en: `Some campanulids feel at home by the river.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Selderij", icoon: "icons/Selderij.png", map: "Groenten", 
+      { naam: "Selderij", naam_en: "Celery", icoon: "icons/Selderij.png", map: "Groenten", 
         quote: `Celery gives depth to simple broths and stews
         <br><br>- Elizabeth David`
       },
-      { naam: "Wortelen", icoon: "icons/Wortelen.png", map: "Groenten", 
+      { naam: "Wortelen", naam_en: "Carrots", icoon: "icons/Wortelen.png", map: "Groenten", 
         quote: `Carrots store their energy in the root, which becomes sweeter over time
         <br><br>- Harold McGee`
       },
-      { naam: "Sla", icoon: "icons/Sla.png", map: "Groenten", 
+      { naam: "Sla", naam_en: "Lettuce", icoon: "icons/Sla.png", map: "Groenten", 
         quote: `A salad without lettuce is like a day without sunshine
         <br><br>- Jean Brillat-Savarin`
       },
-      { naam: "Andijvie", icoon: "icons/Andijvie.png", map: "Groenten", 
+      { naam: "Andijvie", naam_en: "Endive", icoon: "icons/Andijvie.png", map: "Groenten", 
         quote: `The faint bitterness of endive sharpens the appetite
         <br><br>- M.F.K. Fisher`
       }
@@ -16066,13 +16082,14 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Klif"],
     hint: `Sommige campanuliden voelen zich thuis bij rotsige kliffen.`,
+    hint_en: `Some campanulids feel at home on rocky cliffs.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Artisjokken", icoon: "icons/Artisjokken.png", map: "Groenten", 
+      { naam: "Artisjokken", naam_en: "Artichokes", icoon: "icons/Artisjokken.png", map: "Groenten", 
         quote: `The artichoke is valued for its heart, hidden beneath protective bracts
         <br><br>- Alan Davidson`
       },
-      { naam: "Peterselie", icoon: "icons/Peterselie.png", map: "Smaakmakers", 
+      { naam: "Peterselie", naam_en: "Parsley", icoon: "icons/Peterselie.png", map: "Smaakmakers", 
         quote: `Parsley is one of the most essential herbs in European cooking
         <br><br>- Elizabeth David`
       }
@@ -16081,9 +16098,10 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Gif"],
     hint: `Sommige campanuliden kiezen voor de strategie van het gif.`,
+    hint_en: `Some campanulids opt for a strategy involving poison.`,
     tijd: 25_000_000,
     output: [
-      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
+      { naam: "Chrysanten", naam_en: "Chrysanths", icoon: "icons/Chrysanten.png", map: "Bloemen", 
         quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
         <br><br>- John Ruskin`
       }
@@ -16092,13 +16110,14 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Bos"],
     hint: `Sommige campanuliden voelen zich thuis in het bos.`,
+    hint_en: `Some campanulids feel at home in the forest.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Japanse kers", icoon: "icons/Japanse kers.png", map: "Bomen", 
+      { naam: "Japanse kers", naam_en: "Japanese cherry", icoon: "icons/Japanse kers.png", map: "Bomen", 
         quote: `Cherry blossoms fall — the temple bell rings in the evening wind
         <br><br>- Yosa Buson`
       },
-      { naam: "Chrysanten", icoon: "icons/Chrysanten.png", map: "Bloemen", 
+      { naam: "Chrysanten", naam_en: "Chrysanths", icoon: "icons/Chrysanten.png", map: "Bloemen", 
         quote: `The flower that lasts into the fading year carries a nobler kind of beauty.
         <br><br>- John Ruskin`
       }
@@ -16108,19 +16127,19 @@ const combinaties = [
     input: ["Oercampanuliden", "Vlinders"],
     tijd: 2_000_000,
     output: [
-      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+      { naam: "Paardenbloemen", naam_en: "Dandelions", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
       },
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
+      { naam: "Kamille", naam_en: "Chamomile", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
-      { naam: "Goudsbloemen", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
+      { naam: "Goudsbloemen", naam_en: "Marigolds", icoon: "icons/Goudsbloemen.png", map: "Bloemen", 
         quote: `The marigold opens at the sun’s coming and shuts at his going
         <br><br>- John Gerard`
       },
-      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
+      { naam: "Madeliefjes", naam_en: "Daisies", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
       }
@@ -16130,15 +16149,15 @@ const combinaties = [
     input: ["Oercampanuliden", "Bijen"],
     tijd: 2_000_000,
     output: [
-      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+      { naam: "Paardenbloemen", naam_en: "Dandelions", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
       },
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
+      { naam: "Kamille", naam_en: "Chamomile", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
-      { naam: "Koriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
+      { naam: "Koriander", naam_en: "Coriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
         quote: `Cilantro has a distinctive aroma that some people perceive as soapy
         <br><br>- Harold McGee`
       }
@@ -16147,21 +16166,22 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Weide"],
     hint: `Sommige campanuliden voelen zich thuis in grasweides.`,
+    hint_en: `Some campanulids feel at home in grassy meadows.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Koriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
+      { naam: "Koriander", naam_en: "Coriander", icoon: "icons/Koriander.png", map: "Smaakmakers", 
         quote: `Cilantro has a distinctive aroma that some people perceive as soapy
         <br><br>- Harold McGee`
       },
-      { naam: "Madeliefjes", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
+      { naam: "Madeliefjes", naam_en: "Daisies", icoon: "icons/Madeliefjes.png", map: "Bloemen", 
         quote: `The common daisy and meadow flowers spread their cheerful face
         <br><br>- William Wordsworth`
       },
-      { naam: "Kamille", icoon: "icons/Kamille.png", map: "Genotwaren", 
+      { naam: "Kamille", naam_en: "Chamomile", icoon: "icons/Kamille.png", map: "Genotwaren", 
         quote: `Chamomile tea is like a small act of peace
         <br><br>- M.F.K. Fisher`
       },
-      { naam: "Paardenbloemen", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
+      { naam: "Paardenbloemen", naam_en: "Dandelions", icoon: "icons/Paardenbloemen.png", map: "Bloemen", 
         quote: `The dandelion is one of the commonest and yet most welcome of spring flowers
         <br><br>- John Burroughs`
       }
@@ -16170,21 +16190,22 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Steppe"],
     hint: `Sommige campanuliden voelen zich thuis op de steppe.`,
+    hint_en: `Some campanulids feel at home on the steppe.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Dille", icoon: "icons/Dille.png", map: "Smaakmakers", 
+      { naam: "Dille", naam_en: "Dill", icoon: "icons/Dille.png", map: "Smaakmakers", 
         quote: `Dill doth ease and comfort the inward parts of man
         <br><br>- John Gerard`
       },
-      { naam: "Anijs", icoon: "icons/Anijs.png", map: "Smaakmakers", 
+      { naam: "Anijs", naam_en: "Anise", icoon: "icons/Anijs.png", map: "Smaakmakers", 
         quote: `Anise helps ease the breath and clears the chest
         <br><br>- Dioscorides`
       },
-      { naam: "Venkel", icoon: "icons/Venkel.png", map: "Groenten", 
+      { naam: "Venkel", naam_en: "Fennel", icoon: "icons/Venkel.png", map: "Groenten", 
         quote: `Fennel is of great use for improving sight
         <br><br>- Plinius de Oudere`
       },
-      { naam: "Komijn", icoon: "icons/Komijn.png", map: "Smaakmakers", 
+      { naam: "Komijn", naam_en: "Cumin", icoon: "icons/Komijn.png", map: "Smaakmakers", 
         quote: `Cumin is valued for its warming properties and strong flavor
         <br><br>- Plinius de Oudere`
       }
@@ -16193,9 +16214,10 @@ const combinaties = [
   {
     input: ["Oercampanuliden", "Prairie"],
     hint: `Sommige campanuliden voelen zich thuis op de prairie.`,
+    hint_en: `Some campanulids feel at home on the prairie.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Zonnebloemen", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
+      { naam: "Zonnebloemen", naam_en: "Sunflowers", icoon: "icons/Zonnebloemen.png", map: "Bloemen", 
         quote: `Van Gogh’s sunflowers are no longer flowers, but suns captured on canvas
         <br><br>- André Breton`
       }
@@ -16206,9 +16228,10 @@ const combinaties = [
       ["Oerhondachtigen", "IJs"], ["Oerhondachtigen", "Poolgebied"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis in de poolgebieden.`,
+    hint_en: `Some canids feel at home in the polar regions.`, 
     tijd: 20_000_000,
     output: [
-      { naam: "Walrussen", icoon: "icons/Walrussen.png", map: "Carnivoren", 
+      { naam: "Walrussen", naam_en: "Walruses", icoon: "icons/Walrussen.png", map: "Carnivoren", 
         quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
         <br><br>- Edward Wilson`
       }
@@ -16219,9 +16242,10 @@ const combinaties = [
       ["Oerhondachtigen", "Klei"], ["Oerhondachtigen", "Aarde"], ["Oerhondachtigen", "Heuvel"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis in de grond.`,
+    hint_en: `Some canids feel at home underground.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Dassen", icoon: "icons/Dassen.png", map: "Carnivoren", 
+      { naam: "Dassen", naam_en: "Badgers", icoon: "icons/Dassen.png", map: "Carnivoren", 
         quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
         family
         <br><br>- Ernest Neal`
@@ -16231,9 +16255,10 @@ const combinaties = [
   {
     input: ["Oerhondachtigen", "Meer"],
     hint: `Sommige hondachtigen voelen zich thuis in zoetwaterhabitats.`,
+    hint_en: `Some canids feel at home in freshwater habitats.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
+      { naam: "Otters", naam_en: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
         quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
         <br><br>- David Attenborough`
       }
@@ -16244,14 +16269,15 @@ const combinaties = [
       ["Oerhondachtigen", "Zee"], ["Oerhondachtigen", "Kust"], ["Oerhondachtigen", "Strand"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis in zeeën en aan de kust.`,
+    hint_en: `Some canids feel at home in the sea and along the coast.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Zeehonden", icoon: "icons/Zeehonden.png", map: "Carnivoren", 
+      { naam: "Zeehonden", naam_en: "Seals", icoon: "icons/Zeehonden.png", map: "Carnivoren", 
         quote: `A seal lifts its head from the water with the quiet curiosity of a creature that belongs more to the sea 
         than to the shore
         <br><br>- Barry Lopez`
       },
-      { naam: "Zeeleeuwen", icoon: "icons/Zeeleeuwen.png", map: "Carnivoren", 
+      { naam: "Zeeleeuwen", naam_en: "Sea lions", icoon: "icons/Zeeleeuwen.png", map: "Carnivoren", 
         quote: `The California sea lion is highly social, agile in the water, and capable of remarkable underwater 
         manoeuvres
         <br><br>- Bernd Würsig`
@@ -16262,11 +16288,11 @@ const combinaties = [
     input: ["Oerhondachtigen", "Rivier"],
     tijd: 15_000_000,
     output: [
-      { naam: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
+      { naam: "Otters", naam_en: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
         quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
         <br><br>- David Attenborough`
       },
-      { naam: "Dassen", icoon: "icons/Dassen.png", map: "Carnivoren", 
+      { naam: "Dassen", naam_en: "Badgers", icoon: "icons/Dassen.png", map: "Carnivoren", 
         quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
         family
         <br><br>- Ernest Neal`
@@ -16278,9 +16304,10 @@ const combinaties = [
       ["Oerhondachtigen", "Toendra"], ["Oerhondachtigen", "Steppe"]
     ],
     hint: `Sommige hondachtigen voelen zich thuis op de toendra en steppes.`,
+    hint_en: `Some canids feel at home on the tundra and steppes.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Wolven", icoon: "icons/Wolven.png", map: "Carnivoren", 
+      { naam: "Wolven", naam_en: "Wolves", icoon: "icons/Wolven.png", map: "Carnivoren", 
         quote: `A wolf’s howl carries through the forest not as noise, but as distance made audible
         <br><br>- Barry Lopez`
       }
@@ -16289,22 +16316,23 @@ const combinaties = [
   {
     input: ["Oerhondachtigen", "Bos"],
     hint: `Sommige hondachtigen voelen zich thuis in het bos.`,
+    hint_en: `Some canids feel at home in the forest.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Beren", icoon: "icons/Beren.png", map: "Carnivoren", 
+      { naam: "Beren", naam_en: "Bears", icoon: "icons/Beren.png", map: "Carnivoren", 
         quote: `The great bear moves through the forest with a power so quiet that the woods seem to make room for it
         <br><br>- Barry Lopez`
       },
-      { naam: "Wasberen", icoon: "icons/Wasberen.png", map: "Carnivoren", 
+      { naam: "Wasberen", naam_en: "Raccoons", icoon: "icons/Wasberen.png", map: "Carnivoren", 
         quote: `With its dexterous front paws, the raccoon explores the world as if everything must be touched before it 
         can be understood
         <br><br>- Sy Montgomery`
       },
-      { naam: "Marters", icoon: "icons/Marters.png", map: "Carnivoren", 
+      { naam: "Marters", naam_en: "Martens", icoon: "icons/Marters.png", map: "Carnivoren", 
         quote: `The marten moves like a thought through the branches—quick, silent, and almost never fully seen
         <br><br>- J.A. Baker`
       },
-      { naam: "Wezels", icoon: "icons/Wezels.png", map: "Carnivoren", 
+      { naam: "Wezels", naam_en: "Weasels", icoon: "icons/Wezels.png", map: "Carnivoren", 
         quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
         <br><br>- Chris Duckworth`
       }
@@ -16313,13 +16341,14 @@ const combinaties = [
   {
     input: ["Oerhondachtigen", "Savanne"],
     hint: `Sommige hondachtigen voelen zich thuis op de savanne.`,
+    hint_en: `Some canids feel at home on the savannah.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Vossen", icoon: "icons/Vossen.png", map: "Carnivoren", 
+      { naam: "Vossen", naam_en: "Foxes", icoon: "icons/Vossen.png", map: "Carnivoren", 
         quote: `A fox leaves almost no trace, as though it borrows the landscape and returns it unchanged
         <br><br>- Barry Lopez`
       },
-      { naam: "Wilde honden", icoon: "icons/Wilde honden.png", map: "Carnivoren", 
+      { naam: "Wilde honden", naam_en: "Wild dogs", icoon: "icons/Wilde honden.png", map: "Carnivoren", 
         quote: `Lycaon pictus is a highly social carnivore, with complex cooperation and communication within the pack
         <br><br>- Rupert Richardson`
       }
@@ -16329,7 +16358,7 @@ const combinaties = [
     input: ["Oerhondachtigen", "Weide"],
     tijd: 10_000_000,
     output: [
-      { naam: "Wezels", icoon: "icons/Wezels.png", map: "Carnivoren", 
+      { naam: "Wezels", naam_en: "Weasels", icoon: "icons/Wezels.png", map: "Carnivoren", 
         quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
         <br><br>- Chris Duckworth`
       }
@@ -16338,13 +16367,14 @@ const combinaties = [
   {
     input: ["Oerkatachtigen", "Berg"],
     hint: `Sommige katachtigen voelen zich thuis in de bergen.`,
+    hint_en: `Some fenids feel at home in the mountains.`,
     tijd: 8_000_000,
     output: [
-      { naam: "Lynxen", icoon: "icons/Lynxen.png", map: "Carnivoren", 
+      { naam: "Lynxen", naam_en: "Lynxes", icoon: "icons/Lynxen.png", map: "Carnivoren", 
         quote: `The lynx belongs to deep forests and winter silence, where even its footsteps seem reluctant to remain
         <br><br>- J.A. Baker`
       },
-      { naam: "Poema", icoon: "icons/Poema.png", map: "Carnivoren", 
+      { naam: "Poema", naam_en: "Cougars", icoon: "icons/Poema.png", map: "Carnivoren", 
         quote: `The puma walks alone across enormous distances, carrying the silence of the mountains with it
         <br><br>- Luis Sepúlveda`
       }
@@ -16353,21 +16383,22 @@ const combinaties = [
   {
     input: ["Oerkatachtigen", "Bos"],
     hint: `Sommige katachtigen voelen zich thuis in de bossen.`,
+    hint_en: `Some fenids feel at home in the forests.`,
     tijd: 8_000_000,
     output: [
-      { naam: "Katten", icoon: "icons/Katten.png", map: "Carnivoren", 
+      { naam: "Katten", naam_en: "Cats", icoon: "icons/Katten.png", map: "Carnivoren", 
         quote: `A cat seated in a window is a piece of stillness that has chosen a shape
         <br><br>- Natsume Soseki`
       },
-      { naam: "Stokstaartjes", icoon: "icons/Stokstaartjes.png", map: "Carnivoren", 
+      { naam: "Stokstaartjes", naam_en: "Meerkats", icoon: "icons/Stokstaartjes.png", map: "Carnivoren", 
         quote: `Meerkats depend on constant communication within the group, where one stands guard while others feed
         <br><br>- Tim Clutton-Brock`
       },
-      { naam: "Lynxen", icoon: "icons/Lynxen.png", map: "Carnivoren", 
+      { naam: "Lynxen", naam_en: "Lynxes", icoon: "icons/Lynxen.png", map: "Carnivoren", 
         quote: `The lynx belongs to deep forests and winter silence, where even its footsteps seem reluctant to remain
         <br><br>- J.A. Baker`
       },
-      { naam: "Poema", icoon: "icons/Poema.png", map: "Carnivoren", 
+      { naam: "Poema", naam_en: "Cougars", icoon: "icons/Poema.png", map: "Carnivoren", 
         quote: `The puma walks alone across enormous distances, carrying the silence of the mountains with it
         <br><br>- Luis Sepúlveda`
       }
@@ -16376,22 +16407,23 @@ const combinaties = [
   {
     input: ["Oerkatachtigen", "Tropisch regenwoud"],
     hint: `Sommige katachtigen voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some fenids feel at home in the tropical rainforest.`,
     tijd: 6_000_000,
     output: [
-      { naam: "Tijgers", icoon: "icons/Tijgers.png", map: "Carnivoren", 
+      { naam: "Tijgers", naam_en: "Tigers", icoon: "icons/Tijgers.png", map: "Carnivoren", 
         quote: `The tiger does not strive to be fierce; it simply is what it is, and nothing in the forest resists it
         <br><br>- Zhuang Zi`
       },
-      { naam: "Jaguars", icoon: "icons/Jaguars.png", map: "Carnivoren", 
+      { naam: "Jaguars", naam_en: "Jaguars", icoon: "icons/Jaguars.png", map: "Carnivoren", 
         quote: `The jaguar was associated with night, power, and transformation in Mesoamerican belief systems
         <br><br>- Karl Taube`
       },
-      { naam: "Civetkatten", icoon: "icons/Civetkatten.png", map: "Carnivoren", 
+      { naam: "Civetkatten", naam_en: "Civets", icoon: "icons/Civetkatten.png", map: "Carnivoren", 
         quote: `Viverrids, including civets, are adaptable nocturnal mammals occupying a range of habitats across Africa 
         and Asia
         <br><br>- Richard Estes`
       },
-      { naam: "Fossa", icoon: "icons/Fossa.png", map: "Carnivoren", 
+      { naam: "Fossa", naam_en: "Fossas", icoon: "icons/Fossa.png", map: "Carnivoren", 
         quote: `The fossa is Madagascar’s top predator, an agile hunter moving silently through both forest floor and 
         canopy
         <br><br>- Nick Garbutt`
@@ -16401,21 +16433,22 @@ const combinaties = [
   {
     input: ["Oerkatachtigen", "Savanne"],
     hint: `Sommige katachtigen voelen zich thuis op de savanne.`,
+    hint_en: `Some fenids feel at home on the savannah.`,
     tijd: 6_000_000,
     output: [
-      { naam: "Leeuwen", icoon: "icons/Carnivoren.png", map: "Carnivoren", 
+      { naam: "Leeuwen", naam_en: "Lions", icoon: "icons/Carnivoren.png", map: "Carnivoren", 
         quote: `A lion’s life is mostly waiting, watching, and conserving energy for the moment of the hunt
         <br><br>- Joy Adamson`
       },
-      { naam: "Hyena", icoon: "icons/Hyena.png", map: "Carnivoren", 
+      { naam: "Hyena", naam_en: "Hyenas", icoon: "icons/Hyena.png", map: "Carnivoren", 
         quote: `Spotted hyenas are highly social animals living in complex clans with strict dominance hierarchies
         <br><br>- George Schaller`
       },
-      { naam: "Cheeta", icoon: "icons/Cheeta.png", map: "Carnivoren", 
+      { naam: "Cheeta", naam_en: "Cheetahs", icoon: "icons/Cheeta.png", map: "Carnivoren", 
         quote: `The cheetah’s body is specialized for acceleration, sacrificing strength and stamina for speed
         <br><br>- Alan Turner`
       },
-      { naam: "Luipaarden", icoon: "icons/Luipaarden.png", map: "Carnivoren", 
+      { naam: "Luipaarden", naam_en: "Leopards", icoon: "icons/Luipaarden.png", map: "Carnivoren", 
         quote: `The leopard is the master of concealment in Africa’s landscapes
         <br><br>- Derek Joubert`
       }
@@ -16427,12 +16460,12 @@ const combinaties = [
     ],
     tijd: 10_000_000,
     output: [
-      { naam: "Neusapen", icoon: "icons/Neusapen.png", map: "Primaten", 
+      { naam: "Neusapen", naam_en: "Long-nosed monkeys", icoon: "icons/Neusapen.png", map: "Primaten", 
         quote: `Proboscis monkeys live in complex social groups with fluid harems and coordinated movement through 
         mangroves
         <br><br>- Dale Smith`
       },
-      { naam: "Langoeren", icoon: "icons/Langoeren.png", map: "Primaten", 
+      { naam: "Langoeren", naam_en: "Langurs", icoon: "icons/Langoeren.png", map: "Primaten", 
         quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
         <br><br>- Robin Dunbar`
       }
@@ -16442,7 +16475,7 @@ const combinaties = [
     input: ["Oerprimaten", "Klif"],
     tijd: 10_000_000,
     output: [
-      { naam: "Bavianen", icoon: "icons/Bavianen.png", map: "Primaten", 
+      { naam: "Bavianen", naam_en: "Baboons", icoon: "icons/Bavianen.png", map: "Primaten", 
         quote: `Baboons are highly flexible primates capable of living in a wide range of habitats, 
         including those altered by humans
         <br><br>- Shirley Strum`
@@ -16452,9 +16485,10 @@ const combinaties = [
   {
     input: ["Oerprimaten", "Moeras"],
     hint: `Sommige primaten voelen zich thuis in moerassige gebieden.`,
+    hint_en: `Some primates feel at home in the swampy terrains.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Neusapen", icoon: "icons/Neusapen.png", map: "Primaten", 
+      { naam: "Neusapen", naam_en: "Long-nosed monkeys", icoon: "icons/Neusapen.png", map: "Primaten", 
         quote: `Proboscis monkeys live in complex social groups with fluid harems and coordinated movement through 
         mangroves
         <br><br>- Dale Smith`
@@ -16464,21 +16498,22 @@ const combinaties = [
   {
     input: ["Oerprimaten", "Bos"],
     hint: `Sommige primaten voelen zich thuis in de bossen.`,
+    hint_en: `Some primates feel at home in the forests.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Lemuren", icoon: "icons/Lemuren.png", map: "Primaten", 
+      { naam: "Lemuren", naam_en: "Lemurs", icoon: "icons/Lemuren.png", map: "Primaten", 
         quote: `Lemurs show extraordinary variation in social organization compared to other primates
         <br><br>- Alison Jolly`
       },
-      { naam: "Makaken", icoon: "icons/Makaken.png", map: "Primaten", 
+      { naam: "Makaken", naam_en: "Macaques", icoon: "icons/Makaken.png", map: "Primaten", 
         quote: `Macaques exhibit complex social hierarchies and frequent conflict-resolution behaviors
         <br><br>- Carel van Schaik`
       },
-      { naam: "Langoeren", icoon: "icons/Langoeren.png", map: "Primaten", 
+      { naam: "Langoeren", naam_en: "Langurs", icoon: "icons/Langoeren.png", map: "Primaten", 
         quote: `Langurs are highly social monkeys that move through the forest canopy in coordinated groups
         <br><br>- Robin Dunbar`
       },
-      { naam: "Oermensapen", icoon: "icons/Oermensapen.png", map: "Primaten", 
+      { naam: "Oermensapen", naam_en: "Proto-apes", icoon: "icons/Oermensapen.png", map: "Primaten", 
         quote: `Great apes demonstrate the roots of cooperation and shared intentionality that define human societies
         <br><br>- Sarah Hrdy`
       }
@@ -16487,32 +16522,33 @@ const combinaties = [
   {
     input: ["Oerprimaten", "Tropisch regenwoud"],
     hint: `Sommige primaten voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some primates feel at home in the tropical rainforest.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Lori", icoon: "icons/Lori.png", map: "Primaten", 
+      { naam: "Lori", naam_en: "Loris", icoon: "icons/Lori.png", map: "Primaten", 
         quote: `Loris are among the least visible primates due to their nocturnal and secretive habits
         <br><br>- D. Nekaris`
       },
-      { naam: "Spookdiertjes", icoon: "icons/Spookdiertjes.png", map: "Primaten", 
+      { naam: "Spookdiertjes", naam_en: "Tarsiers", icoon: "icons/Spookdiertjes.png", map: "Primaten", 
         quote: `Tarsiers are among the most specialized nocturnal primates, with extraordinary leaping ability and 
         large eyes adapted for hunting in darkness
         <br><br>- Marc Ancrenaz`
       },
-      { naam: "Kapucijnapen", icoon: "icons/Kapucijnapen.png", map: "Primaten", 
+      { naam: "Kapucijnapen", naam_en: "Capuchins", icoon: "icons/Kapucijnapen.png", map: "Primaten", 
         quote: `Capuchins are among the few non-human primates that regularly use tools in the wild
         <br><br>- Dorothy Cheney`
       },
-      { naam: "Slingerapen", icoon: "icons/Slingerapen.png", map: "Primaten", 
+      { naam: "Slingerapen", naam_en: "Spider monkeys", icoon: "icons/Slingerapen.png", map: "Primaten", 
         quote: `Spider monkeys rely heavily on fruit resources and travel long distances through the canopy in search of 
         food
         <br><br>- Alison Jolly`
       },
-      { naam: "Brulapen", icoon: "icons/Brulapen.png", map: "Primaten", 
+      { naam: "Brulapen", naam_en: "Howler monkeys", icoon: "icons/Brulapen.png", map: "Primaten", 
         quote: `Howler monkeys are among the loudest terrestrial animals, with vocalizations that can carry over several 
         kilometers through forest
         <br><br>- Charles-Dominique`
       },
-      { naam: "Saki", icoon: "icons/Saki.png", map: "Primaten", 
+      { naam: "Saki", naam_en: "Saki monkeys", icoon: "icons/Saki.png", map: "Primaten", 
         quote: `Saki monkeys are generally shy and elusive, making them difficult to observe in the wild
         <br><br>- Marc van Roosmalen`
       }
@@ -16521,13 +16557,14 @@ const combinaties = [
   {
     input: ["Oerprimaten", "Savanne"],
     hint: `Sommige primaten voelen zich thuis op de savanne.`,
+    hint_en: `Some primates feel at home on the savannah.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Galago", icoon: "icons/Galago.png", map: "Primaten", 
+      { naam: "Galago", naam_en: "Galago", icoon: "icons/Galago.png", map: "Primaten", 
         quote: `The galago is a small, elusive primate whose presence is often revealed only by its calls at night
         <br><br>- Paul Honess`
       },
-      { naam: "Bavianen", icoon: "icons/Bavianen.png", map: "Primaten", 
+      { naam: "Bavianen", naam_en: "Baboons", icoon: "icons/Bavianen.png", map: "Primaten", 
         quote: `Baboons are highly flexible primates capable of living in a wide range of habitats, 
         including those altered by humans
         <br><br>- Shirley Strum`
@@ -16537,9 +16574,10 @@ const combinaties = [
   {
     input: ["Oerslurfdieren", "Toendra"],
     hint: `Sommige slurfdieren voelen zich thuis op de koude toendra.`,
+    hint_en: `Some proboscideans feel at home on the cold, cold tundra.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Mammoeten", icoon: "icons/Mammoeten.png", map: "Zoogdieren", 
+      { naam: "Mammoeten", naam_en: "Mammoths", icoon: "icons/Mammoeten.png", map: "Zoogdieren", 
         quote: `Mammoths likely lived in herds similar to modern elephants, with complex social structures
         <br><br>- Daniel Fisher`
       }
@@ -16564,7 +16602,7 @@ const combinaties = [
       ["Mammoeten", "Honing"]
     ],
     output: [
-      { naam: "Mammoeten", icoon: "icons/Mammoeten.png", map: "Zoogdieren", 
+      { naam: "Mammoeten", naam_en: "Mammoths", icoon: "icons/Mammoeten.png", map: "Zoogdieren", 
         quote: `Mammoths likely lived in herds similar to modern elephants, with complex social structures
         <br><br>- Daniel Fisher`
       },
@@ -16582,9 +16620,10 @@ const combinaties = [
   {
     input: ["Oerslurfdieren", "Savanne"],
     hint: `Sommige slurfdieren voelen zich thuis op de savanne.`,
+    hint_en: `Some proboscideans feel at home on the savannah.`,
     tijd: 7_000_000,
     output: [
-      { naam: "Olifanten", icoon: "icons/Olifanten.png", map: "Zoogdieren", 
+      { naam: "Olifanten", naam_en: "Elephants", icoon: "icons/Olifanten.png", map: "Zoogdieren", 
         quote: `Elephants learn from experience and from each other, passing knowledge through generations
         <br><br>- Cynthia Moss`
       }
@@ -16609,7 +16648,7 @@ const combinaties = [
       ["Olifanten", "Honing"]
     ],
     output: [
-      { naam: "Olifanten", icoon: "icons/Olifanten.png", map: "Zoogdieren", 
+      { naam: "Olifanten", naam_en: "Elephants", icoon: "icons/Olifanten.png", map: "Zoogdieren", 
         quote: `Elephants learn from experience and from each other, passing knowledge through generations
         <br><br>- Cynthia Moss`
       },
@@ -16629,14 +16668,15 @@ const combinaties = [
       ["Oerevenhoevigen", "IJs"], ["Oerevenhoevigen", "Poolgebied"]
     ],
     hint: `Sommige evenhoevigen voelen zich beter thuis in het ijskoude water van de polen.`,
+    hint_en: `Some even-toed ungulates feel more at home in the icy waters of the polar regions.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+      { naam: "Orka", naam_en: "Orcas", icoon: "icons/Orka.png", map: "Waterdieren", 
         quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
         generations
         <br><br>- Lance Barrett-Lennard`
       },
-      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+      { naam: "Narwallen", naam_en: "Narwhals", icoon: "icons/Narwallen.png", map: "Waterdieren", 
         quote: `The narwhal tusk is a sensory organ with millions of nerve endings
         <br><br>- Martin Nweeia`
       }
@@ -16645,21 +16685,22 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Berg"],
     hint: `Sommige evenhoevigen voelen zich thuis in de bergen.`,
+    hint_en: `Some even-toed ungulates feel at home in the mountains.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Lama", icoon: "icons/Lama.png", map: "Hoefdieren", 
+      { naam: "Lama", naam_en: "Llamas", icoon: "icons/Lama.png", map: "Hoefdieren", 
         quote: `Llamas were essential pack animals in the development of Andean civilizations
         <br><br>- Jane Wheeler`
       },
-      { naam: "Alpaca", icoon: "icons/Alpaca.png", map: "Hoefdieren", 
+      { naam: "Alpaca", naam_en: "Alpacas", icoon: "icons/Alpaca.png", map: "Hoefdieren", 
         quote: `Alpacas are exceptionally well adapted to the cold and hypoxic conditions of the Andes
         <br><br>- Franklin Peake`
       },
-      { naam: "Steenbokken", icoon: "icons/Steenbokken.png", map: "Hoefdieren", 
+      { naam: "Steenbokken", naam_en: "Ibex", icoon: "icons/Steenbokken.png", map: "Hoefdieren", 
         quote: `Wild goats and ibex move across cliffs with extraordinary balance and agility
         <br><br>- George Schaller`
       },
-      { naam: "Geiten", icoon: "icons/Geiten.png", map: "Hoefdieren", 
+      { naam: "Geiten", naam_en: "Goats", icoon: "icons/Geiten.png", map: "Hoefdieren", 
         quote: `Goats are among the most adaptable ungulates, thriving in environments ranging from mountains to deserts
         <br><br>- Valerius Geist`
       }
@@ -16668,17 +16709,18 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Woestijn"],
     hint: `Sommige evenhoevigen voelen zich thuis in de woestijn.`,
+    hint_en: `Some even-toed ungulates feel at home in the desert.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Kamelen", icoon: "icons/Kamelen.png", map: "Hoefdieren", 
+      { naam: "Kamelen", naam_en: "Camels", icoon: "icons/Kamelen.png", map: "Hoefdieren", 
         quote: `Camels can tolerate extreme dehydration and rapidly rehydrate when water becomes available
         <br><br>- Knox McIlroy`
       },
-      { naam: "Dromedarissen", icoon: "icons/Dromedarissen.png", map: "Hoefdieren", 
+      { naam: "Dromedarissen", naam_en: "Dromedaries", icoon: "icons/Dromedarissen.png", map: "Hoefdieren", 
         quote: `Dromedaries are uniquely suited to arid environments where water is scarce and temperatures are extreme
         <br><br>- Richard Bulliet`
       },
-      { naam: "Gazellen", icoon: "icons/Gazellen.png", map: "Hoefdieren", 
+      { naam: "Gazellen", naam_en: "Gazelles", icoon: "icons/Gazellen.png", map: "Hoefdieren", 
         quote: `Gazelles are highly alert ungulates that form loose herds for increased predator detection
         <br><br>- Richard Estes`
       }
@@ -16689,9 +16731,10 @@ const combinaties = [
       ["Oerevenhoevigen", "Ven"], ["Oerevenhoevigen", "Regenwoud"]
     ],
     hint: `Sommige evenhoevigen voelen zich thuis in de moerassen.`,
+    hint_en: `Some even-toed ungulates feel at home in the swamps.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Elanden", icoon: "icons/Elanden.png", map: "Hoefdieren", 
+      { naam: "Elanden", naam_en: "Moose", icoon: "icons/Elanden.png", map: "Hoefdieren", 
         quote: `Despite their size, elands are surprisingly agile and efficient walkers over long distances
         <br><br>- George Schaller`
       }
@@ -16701,24 +16744,24 @@ const combinaties = [
     input: ["Oerevenhoevigen", "Zee"],
     tijd: 15_000_000,
     output: [
-      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
+      { naam: "Bultruggen", naam_en: "Humpback whales", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
         <br><br>- Roger Payne`
       },
-      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
+      { naam: "Grijze walvissen", naam_en: "Gray whales", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
         <br><br>- Bruce Mate`
       },
-      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+      { naam: "Orka", naam_en: "Orcas", icoon: "icons/Orka.png", map: "Waterdieren", 
         quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
         generations
         <br><br>- Lance Barrett-Lennard`
       },
-      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+      { naam: "Narwallen", naam_en: "Narwhals", icoon: "icons/Narwallen.png", map: "Waterdieren", 
         quote: `The narwhal tusk is a sensory organ with millions of nerve endings
         <br><br>- Martin Nweeia`
       },
-      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+      { naam: "Dolfijnen", naam_en: "Dolphins", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
         <br><br>- Lori Marino`
       }
@@ -16736,7 +16779,7 @@ const combinaties = [
       ["Bultruggen", "Zeeschorpioenen"]
     ],
     output: [
-      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
+      { naam: "Bultruggen", naam_en: "Humpback whales", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
         <br><br>- Roger Payne`
       },
@@ -16764,8 +16807,10 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
+      { naam: "Bultruggen", naam_en: "Humpback whales", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
         <br><br>- Roger Payne`
       },
@@ -16798,7 +16843,7 @@ const combinaties = [
       /* Schelp */ ["Grijze walvissen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
+      { naam: "Grijze walvissen", naam_en: "Gray whales", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
         <br><br>- Bruce Mate`
       },
@@ -16819,8 +16864,10 @@ const combinaties = [
       ["Grijze walvissen", "Inktvissen"],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
+      { naam: "Grijze walvissen", naam_en: "Gray whales", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
         <br><br>- Bruce Mate`
       },
@@ -16855,7 +16902,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Orka", "Lancetvisjes"],
     output: [
-      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+      { naam: "Orka", naam_en: "Orcas", icoon: "icons/Orka.png", map: "Waterdieren", 
         quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
         generations
         <br><br>- Lance Barrett-Lennard`
@@ -16893,8 +16940,10 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Orka", icoon: "icons/Orka.png", map: "Waterdieren", 
+      { naam: "Orka", naam_en: "Orcas", icoon: "icons/Orka.png", map: "Waterdieren", 
         quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
         generations
         <br><br>- Lance Barrett-Lennard`
@@ -16904,8 +16953,8 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-        find the point where these molecules became conscious
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you 
+        can't find the point where these molecules became conscious
         <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
@@ -16934,7 +16983,7 @@ const combinaties = [
       ["Narwallen", "Krill"], ["Narwallen", "Aasgarnalen"], ["Narwallen", "Vlokreeftjes"], ["Narwallen", "Garnalen"]
     ],
     output: [
-      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+      { naam: "Narwallen", naam_en: "Narwhals", icoon: "icons/Narwallen.png", map: "Waterdieren", 
         quote: `The narwhal tusk is a sensory organ with millions of nerve endings
         <br><br>- Martin Nweeia`
       },
@@ -16959,8 +17008,10 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Narwallen", icoon: "icons/Narwallen.png", map: "Waterdieren", 
+      { naam: "Narwallen", naam_en: "Narwhals", icoon: "icons/Narwallen.png", map: "Waterdieren", 
         quote: `The narwhal tusk is a sensory organ with millions of nerve endings
         <br><br>- Martin Nweeia`
       },
@@ -16993,7 +17044,7 @@ const combinaties = [
       /* Schelp */ ["Dolfijnen", "Zeepokken"]
     ],
     output: [
-      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+      { naam: "Dolfijnen", naam_en: "Dolphins", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
         <br><br>- Lori Marino`
       },
@@ -17023,8 +17074,10 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+      { naam: "Dolfijnen", naam_en: "Dolphins", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
         <br><br>- Lori Marino`
       },
@@ -17060,17 +17113,18 @@ const combinaties = [
       ["Oerevenhoevigen", "Kust"], ["Oerevenhoevigen", "Lagune"],
     ],
     hint: `Sommige evenhoevigen voelen zich thuis in de kustlagunes.`,
+    hint_en: `Some even-toed ungulates feel at home in coastal lagoons.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Bultruggen", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
+      { naam: "Bultruggen", naam_en: "Humpback whales", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
         <br><br>- Roger Payne`
       },
-      { naam: "Grijze walvissen", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
+      { naam: "Grijze walvissen", naam_en: "Gray whales", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
         <br><br>- Bruce Mate`
       },
-      { naam: "Dolfijnen", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
+      { naam: "Dolfijnen", naam_en: "Dolphins", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
         <br><br>- Lori Marino`
       }
@@ -17079,14 +17133,15 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Oceaan"],
     hint: `Sommige evenhoevigen voelen zich gek genoeg toch thuis in de oceanen.`,
+    hint_en: `Some even-toed ungulates, strangely enough, feel right at home in the oceans.`,
     tijd: 34_000_000,
     output: [
-      { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+      { naam: "Blauwe vinvissen", naam_en: "Blue whales", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
       },
-      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+      { naam: "Potvissen", naam_en: "Sperm whales", icoon: "icons/Potvissen.png", map: "Waterdieren", 
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       }
@@ -17103,7 +17158,7 @@ const combinaties = [
       ["Blauwe vinvissen", "Zeepissebedden"], ["Blauwe vinvissen", "Garnalen"]
     ],
     output: [
-      { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+      { naam: "Blauwe vinvissen", naam_en: "Blue whales", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
@@ -17128,8 +17183,10 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Blauwe vinvissen", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+      { naam: "Blauwe vinvissen", naam_en: "Blue whales", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
@@ -17156,7 +17213,7 @@ const combinaties = [
       /* Schelp */ ["Potvissen", "Heremietkreeften"]
     ],
     output: [
-      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+      { naam: "Potvissen", naam_en: "Sperm whales", icoon: "icons/Potvissen.png", map: "Waterdieren", 
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       },
@@ -17182,8 +17239,10 @@ const combinaties = [
     ],
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Potvissen", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+      { naam: "Potvissen", naam_en: "Sperm whales", icoon: "icons/Potvissen.png", map: "Waterdieren", 
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       },
@@ -17216,9 +17275,10 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Rivier"],
     hint: `Sommige evenhoevigen voelen zich thuis in ondiepe rivieren.`,
+    hint_en: `Some even-toed ungulates feel at home in shallow rivers.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Nijlpaarden", icoon: "icons/Nijlpaarden.png", map: "Hoefdieren", 
+      { naam: "Nijlpaarden", naam_en: "Hippos", icoon: "icons/Nijlpaarden.png", map: "Hoefdieren", 
         quote: `Hippos are important ecosystem engineers, transferring nutrients between land and water
         <br><br>- David Western`
       }
@@ -17227,9 +17287,10 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Toendra"],
     hint: `Sommige evenhoevigen voelen zich thuis op de toendra.`,
+    hint_en: `Some even-toed ungulates feel at home on the tundra.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Rendieren", icoon: "icons/Rendieren.png", map: "Hoefdieren", 
+      { naam: "Rendieren", naam_en: "Reindeer", icoon: "icons/Rendieren.png", map: "Hoefdieren", 
         quote: `Reindeer form large, dynamic herds whose composition changes seasonally
         <br><br>- Alistair Veitch`
       }
@@ -17238,13 +17299,14 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Moeras"],
     hint: `Sommige evenhoevigen voelen zich thuis in de moerassen.`,
+    hint_en: `Some even-toed ungulates feel at home in the swamps.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Elanden", icoon: "icons/Elanden.png", map: "Hoefdieren", 
+      { naam: "Elanden", naam_en: "Moose", icoon: "icons/Elanden.png", map: "Hoefdieren", 
         quote: `Despite their size, elands are surprisingly agile and efficient walkers over long distances
         <br><br>- George Schaller`
       },
-      { naam: "Zwijnen", icoon: "icons/Zwijnen.png", map: "Hoefdieren", 
+      { naam: "Zwijnen", naam_en: "Wild boars", icoon: "icons/Zwijnen.png", map: "Hoefdieren", 
         quote: `Wild boar exhibit complex foraging strategies and strong learning ability
         <br><br>- David Macdonald`
       }
@@ -17253,13 +17315,14 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Bos"],
     hint: `Sommige evenhoevigen voelen zich thuis in de bossen.`,
+    hint_en: `Some even-toed ungulates feel at home in the forests.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Herten", icoon: "icons/Herten.png", map: "Hoefdieren", 
+      { naam: "Herten", naam_en: "Deer", icoon: "icons/Herten.png", map: "Hoefdieren", 
         quote: `Prey species such as deer rely heavily on vigilance and early detection of predators
         <br><br>- Tim Caro`
       },
-      { naam: "Impala", icoon: "icons/Impala.png", map: "Hoefdieren", 
+      { naam: "Impala", naam_en: "Impala", icoon: "icons/Impala.png", map: "Hoefdieren", 
         quote: `Impala combine speed and agility with constant alertness in predator-rich environments
         <br><br>- George Schaller`
       }
@@ -17268,9 +17331,10 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Tropisch regenwoud"],
     hint: `Sommige evenhoevigen voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some even-toed ungulates feel at home in the tropical rainforest.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Okapi", icoon: "icons/Okapi.png", map: "Hoefdieren", 
+      { naam: "Okapi", naam_en: "Okapis", icoon: "icons/Okapi.png", map: "Hoefdieren", 
         quote: `The okapi is a forest giraffid, an animal of extraordinary shyness, inhabiting the deepest parts of the 
         Congo forest
         <br><br>- Harry Johnston`
@@ -17280,17 +17344,18 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Savanne"],
     hint: `Sommige evenhoevigen voelen zich thuis op de savanne.`,
+    hint_en: `Some even-toed ungulates feel at home on the savannah.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Giraffen", icoon: "icons/Giraffen.png", map: "Hoefdieren", 
+      { naam: "Giraffen", naam_en: "Giraffes", icoon: "icons/Giraffen.png", map: "Hoefdieren", 
         quote: `Giraffes often appear calm and observant, scanning their environment from an elevated vantage point
         <br><br>- George Schaller`
       },
-      { naam: "Gnoes", icoon: "icons/Gnoes.png", map: "Hoefdieren", 
+      { naam: "Gnoes", naam_en: "Wildebeests", icoon: "icons/Gnoes.png", map: "Hoefdieren", 
         quote: `The wildebeest is a heavily built antelope with a large, boxy head, sloping shoulders, and a dark mane
         <br><br>- Richard Estes`
       },
-      { naam: "Gazellen", icoon: "icons/Gazellen.png", map: "Hoefdieren", 
+      { naam: "Gazellen", naam_en: "Gazelles", icoon: "icons/Gazellen.png", map: "Hoefdieren", 
         quote: `Gazelles are highly alert ungulates that form loose herds for increased predator detection
         <br><br>- Richard Estes`
       }
@@ -17299,13 +17364,14 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Weide"],
     hint: `Sommige evenhoevigen voelen zich thuis op de grasweides.`,
+    hint_en: `Some even-toed ungulates feel at home in the grassy meadows.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Runderen", icoon: "icons/Runderen.png", map: "Hoefdieren", 
+      { naam: "Runderen", naam_en: "Urbovids", icoon: "icons/Runderen.png", map: "Hoefdieren", 
         quote: `Bovids are typically robust, deep-chested ungulates with powerful limbs adapted for running and endurance
         <br><br>- Valerius Geist`
       },
-      { naam: "Geiten", icoon: "icons/Geiten.png", map: "Hoefdieren", 
+      { naam: "Geiten", naam_en: "Goats", icoon: "icons/Geiten.png", map: "Hoefdieren", 
         quote: `Goats are among the most adaptable ungulates, thriving in environments ranging from mountains to deserts
         <br><br>- Valerius Geist`
       }
@@ -17314,9 +17380,10 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Steppe"],
     hint: `Sommige evenhoevigen voelen zich thuis op de steppe.`,
+    hint_en: `Some even-toed ungulates feel at home on the steppe.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Schapen", icoon: "icons/Schapen.png", map: "Hoefdieren", 
+      { naam: "Schapen", naam_en: "Sheep", icoon: "icons/Schapen.png", map: "Hoefdieren", 
         quote: `Sheep are adapted for grazing on open pasture and show a body plan suited to endurance rather than speed
         <br><br>- Clutton-Brock`
       }
@@ -17325,9 +17392,10 @@ const combinaties = [
   {
     input: ["Oerevenhoevigen", "Prairie"],
     hint: `Sommige evenhoevigen voelen zich thuis op de prairie.`,
+    hint_en: `Some even-toed ungulates feel at home on the prairie.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Gaffelantilopes", icoon: "icons/Gaffelantilopes.png", map: "Hoefdieren", 
+      { naam: "Gaffelantilopes", naam_en: "Pronghorns", icoon: "icons/Gaffelantilopes.png", map: "Hoefdieren", 
         quote: `The pronghorn is the fastest land mammal in North America, evolved for sustained speed across open country
         <br><br>- Valerius Geist`
       }
@@ -17337,7 +17405,7 @@ const combinaties = [
     input: ["Oerknaagdieren", "Ven"],
     tijd: 2_000_000,
     output: [
-      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+      { naam: "Ratten", naam_en: "Rats", icoon: "icons/Ratten.png", map: "Zoogdieren", 
         quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
         <br><br>- William Hudson`
       }
@@ -17373,7 +17441,7 @@ const combinaties = [
       ["Ratten", "Honing"]
     ],
     output: [
-      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+      { naam: "Ratten", naam_en: "Rats", icoon: "icons/Ratten.png", map: "Zoogdieren", 
         quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
         <br><br>- William Hudson`
       },
@@ -17398,7 +17466,7 @@ const combinaties = [
       ["Ratten", "Muizen"], ["Ratten", "Spitsmuizen"]
     ],
     output: [
-      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+      { naam: "Ratten", naam_en: "Rats", icoon: "icons/Ratten.png", map: "Zoogdieren", 
         quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
         <br><br>- William Hudson`
       },
@@ -17420,9 +17488,10 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Meer"],
     hint: `Sommige knaagdieren voelen zich thuis in het meer.`,
+    hint_en: `Some rodents feel at home in lakes.`,
     tijd: 30_000_000,
     output: [
-      { naam: "Bevers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
+      { naam: "Bevers", naam_en: "Beavers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
         quote: `The beaver builds not only with wood, but with an intelligence that seems almost human in its patience
         <br><br>- Ernest Seton`
       }
@@ -17455,7 +17524,7 @@ const combinaties = [
       ["Bevers", "Spinazie"], ["Bevers", "Selderij"], ["Bevers", "Wortelen"], ["Bevers", "Sla"], ["Bevers", "Andijvie"]
     ],
     output: [
-      { naam: "Bevers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
+      { naam: "Bevers", naam_en: "Beavers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
         quote: `The beaver builds not only with wood, but with an intelligence that seems almost human in its patience
         <br><br>- Ernest Seton`
       },
@@ -17473,13 +17542,14 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Rivier"],
     hint: `Sommige knaagdieren voelen zich thuis in de rivieren.`,
+    hint_en: `Some rodents feel more at home in the rivers.`, 
     tijd: 2_000_000,
     output: [
-      { naam: "Bevers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
+      { naam: "Bevers", naam_en: "Beavers", icoon: "icons/Bevers.png", map: "Zoogdieren", 
         quote: `The beaver builds not only with wood, but with an intelligence that seems almost human in its patience
         <br><br>- Ernest Seton`
       },
-      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+      { naam: "Capibara", naam_en: "Capybaras", icoon: "icons/Capibara.png", map: "Zoogdieren", 
         quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
         <br><br>- George Schaller`
       }
@@ -17534,7 +17604,7 @@ const combinaties = [
       ["Capibara", "Sperziebonen"], ["Capibara", "Kidneybonen"]
     ],
     output: [
-      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+      { naam: "Capibara", naam_en: "Capybaras", icoon: "icons/Capibara.png", map: "Zoogdieren", 
         quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
         <br><br>- George Schaller`
       },
@@ -17557,7 +17627,7 @@ const combinaties = [
       ["Capibara", "Gekko's"]
     ],
     output: [
-      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+      { naam: "Capibara", naam_en: "Capybaras", icoon: "icons/Capibara.png", map: "Zoogdieren", 
         quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
         <br><br>- George Schaller`
       },
@@ -17579,13 +17649,14 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Moeras"],
     hint: `Sommige knaagdieren voelen zich thuis in het moeras.`,
+    hint_en: `Some rodents feel at home in the swamp.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Capibara", icoon: "icons/Capibara.png", map: "Zoogdieren", 
+      { naam: "Capibara", naam_en: "Capybaras", icoon: "icons/Capibara.png", map: "Zoogdieren", 
         quote: `In wetland habitats, capybaras are closely tied to water, rarely straying far from river margins
         <br><br>- George Schaller`
       },
-      { naam: "Ratten", icoon: "icons/Ratten.png", map: "Zoogdieren", 
+      { naam: "Ratten", naam_en: "Rats", icoon: "icons/Ratten.png", map: "Zoogdieren", 
         quote: `The rat is a creature of the hidden places, living close to man yet always beyond his affection
         <br><br>- William Hudson`
       }
@@ -17594,18 +17665,19 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Bos"],
     hint: `Sommige knaagdieren voelen zich thuis in de bossen.`,
+    hint_en: `Some rodents feel at home in the woods.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Eekhoorns", icoon: "icons/Eekhoorns.png", map: "Zoogdieren", 
+      { naam: "Eekhoorns", naam_en: "Squirrels", icoon: "icons/Eekhoorns.png", map: "Zoogdieren", 
         quote: `The squirrel is one of the most alert and restless of woodland creatures, never still for long
         <br><br>- John Burroughs`
       },
-      { naam: "Stekelvarkens", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
+      { naam: "Stekelvarkens", naam_en: "Porcupines", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
         quote: `The porcupine’s quills are not for attack but for passive defense, making it one of the most effectively 
         protected mammals
         <br><br>- David Macdonald`
       },
-      { naam: "Muizen", icoon: "icons/Muizen.png", map: "Zoogdieren", 
+      { naam: "Muizen", naam_en: "Mice", icoon: "icons/Muizen.png", map: "Zoogdieren", 
         quote: `Even the smallest mouse has its own place in nature
         <br><br>- Plinius de Oudere`
       }
@@ -17670,7 +17742,7 @@ const combinaties = [
       ["Eekhoorns", "Amandelen"], ["Eekhoorns", "Pinda"], ["Eekhoorns", "Sperziebonen"]
     ],
     output: [
-      { naam: "Eekhoorns", icoon: "icons/Eekhoorns.png", map: "Zoogdieren", 
+      { naam: "Eekhoorns", naam_en: "Squirrels", icoon: "icons/Eekhoorns.png", map: "Zoogdieren", 
         quote: `The squirrel is one of the most alert and restless of woodland creatures, never still for long
         <br><br>- John Burroughs`
       },
@@ -17720,7 +17792,7 @@ const combinaties = [
       ["Stekelvarkens", "Honing"], ["Stekelvarkens", "Kamille"]
     ],
     output: [
-      { naam: "Stekelvarkens", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
+      { naam: "Stekelvarkens", naam_en: "Porcupines", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
         quote: `The porcupine’s quills are not for attack but for passive defense, making it one of the most effectively 
         protected mammals
         <br><br>- David Macdonald`
@@ -17745,7 +17817,7 @@ const combinaties = [
       ["Stekelvarkens", "Gekko's"]
     ],
     output: [
-      { naam: "Stekelvarkens", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
+      { naam: "Stekelvarkens", naam_en: "Porcupines", icoon: "icons/Stekelvarkens.png", map: "Zoogdieren", 
         quote: `The porcupine’s quills are not for attack but for passive defense, making it one of the most effectively 
         protected mammals
         <br><br>- David Macdonald`
@@ -17803,7 +17875,7 @@ const combinaties = [
       ["Muizen", "Honing"], ["Muizen", "Theeplanten"], ["Muizen", "Rooibos"], ["Muizen", "Kamille"]
     ],
     output: [
-      { naam: "Muizen", icoon: "icons/Muizen.png", map: "Zoogdieren", 
+      { naam: "Muizen", naam_en: "Mice", icoon: "icons/Muizen.png", map: "Zoogdieren", 
         quote: `Even the smallest mouse has its own place in nature
         <br><br>- Plinius de Oudere`
       },
@@ -17821,9 +17893,10 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Steppe"],
     hint: `Sommige knaagdieren voelen zich thuis op de steppe.`,
+    hint_en: `Some rodents feel at home on the steppe.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Hamsters", icoon: "icons/Hamsters.png", map: "Zoogdieren", 
+      { naam: "Hamsters", naam_en: "Hamsters", icoon: "icons/Hamsters.png", map: "Zoogdieren", 
         quote: `Much of the hamster’s existence remains concealed beneath the surface of the landscape
         <br><br>- Konrad Lorenz`
       }
@@ -17866,7 +17939,7 @@ const combinaties = [
       ["Hamsters", "Kamille"]
     ],
     output: [
-      { naam: "Hamsters", icoon: "icons/Hamsters.png", map: "Zoogdieren", 
+      { naam: "Hamsters", naam_en: "Hamsters", icoon: "icons/Hamsters.png", map: "Zoogdieren", 
         quote: `Much of the hamster’s existence remains concealed beneath the surface of the landscape
         <br><br>- Konrad Lorenz`
       },
@@ -17884,9 +17957,10 @@ const combinaties = [
   {
     input: ["Oerknaagdieren", "Prairie"],
     hint: `Sommige knaagdieren voelen zich thuis op de prairie.`,
+    hint_en: `Some rodents feel at home on the prairie.`,
     tijd: 5_000_000,
     output: [
-      { naam: "Prairiehonden", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
+      { naam: "Prairiehonden", naam_en: "Prairie dogs", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
         quote: `Where prairie dogs thrive, the grassland itself seems alive with conversation
         <br><br>- Aldo Leopold`
       }
@@ -17918,7 +17992,7 @@ const combinaties = [
       ["Prairiehonden", "Sperziebonen"], ["Prairiehonden", "Kidneybonen"]
     ],
     output: [
-      { naam: "Prairiehonden", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
+      { naam: "Prairiehonden", naam_en: "Prairie dogs", icoon: "icons/Prairiehonden.png", map: "Zoogdieren", 
         quote: `Where prairie dogs thrive, the grassland itself seems alive with conversation
         <br><br>- Aldo Leopold`
       },
@@ -17938,9 +18012,10 @@ const combinaties = [
       ["Oeronevenhoevigen", "Berg"], ["Oeronevenhoevigen", "Woestijn"]
     ],
     hint: `Sommige onevenhoevigen voelen zich thuis in de woestijn.`,
+    hint_en: `Some odd-toed ungulates feel at home in the desert.`,
     tijd: 3_000_000,
     output: [
-      { naam: "Ezels", icoon: "icons/Ezels.png", map: "Hoefdieren", 
+      { naam: "Ezels", naam_en: "Donkeys", icoon: "icons/Ezels.png", map: "Hoefdieren", 
         quote: `The donkey has always been a patient creature, bearing burdens without praise
         <br><br>- Gilbert Chesterton`
       }
@@ -17949,9 +18024,10 @@ const combinaties = [
   {
     input: ["Oeronevenhoevigen", "Tropisch regenwoud"],
     hint: `Sommige onevenhoevigen voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some odd-toed ungulates feel at home in the tropical rainforest.`,
     tijd: 50_000_000,
     output: [
-      { naam: "Tapirs", icoon: "icons/Tapirs.png", map: "Hoefdieren", 
+      { naam: "Tapirs", naam_en: "Tapirs", icoon: "icons/Tapirs.png", map: "Hoefdieren", 
         quote: `In the Amazon, the tapir moves like a shadow through the forest undergrowth
         <br><br>- Marc van Roosmalen`
       }
@@ -17960,14 +18036,15 @@ const combinaties = [
   {
     input: ["Oeronevenhoevigen", "Savanne"],
     hint: `Sommige onevenhoevigen voelen zich thuis op de savanne.`,
+    hint_en: `Some odd-toed ungulates feel at home on the savannah.`,
     tijd: 3_000_000,
     output: [
-      { naam: "Zebra", icoon: "icons/Zebra.png", map: "Hoefdieren", 
+      { naam: "Zebra", naam_en: "Zebras", icoon: "icons/Zebra.png", map: "Hoefdieren", 
         quote: `The function of zebra stripes is likely linked to multiple ecological pressures, 
         including predator confusion and social recognition
         <br><br>- Tim Caro`
       },
-      { naam: "Neushoorns", icoon: "icons/Neushoorns.png", map: "Hoefdieren", 
+      { naam: "Neushoorns", naam_en: "Rhinos", icoon: "icons/Neushoorns.png", map: "Hoefdieren", 
         quote: `Rhinoceroses are massive, thick-skinned mammals with a prehistoric appearance and powerful build
         <br><br>- Richard Estes`
       }
@@ -17977,7 +18054,7 @@ const combinaties = [
     input: ["Oeronevenhoevigen", "Weide"],
     tijd: 10_000_000,
     output: [
-      { naam: "Neushoorns", icoon: "icons/Neushoorns.png", map: "Hoefdieren", 
+      { naam: "Neushoorns", naam_en: "Rhinos", icoon: "icons/Neushoorns.png", map: "Hoefdieren", 
         quote: `Rhinoceroses are massive, thick-skinned mammals with a prehistoric appearance and powerful build
         <br><br>- Richard Estes`
       }
@@ -17986,9 +18063,10 @@ const combinaties = [
   {
     input: ["Oeronevenhoevigen", "Steppe"],
     hint: `Sommige onevenhoevigen voelen zich thuis op de steppe.`,
+    hint_en: `Some odd-toed ungulates feel at home on the steppe.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Paarden", icoon: "icons/Paarden.png", map: "Hoefdieren", 
+      { naam: "Paarden", naam_en: "Horses", icoon: "icons/Paarden.png", map: "Hoefdieren", 
         quote: `A horse gallops with his lungs, preserves with his heart, and wins with his character
         <br><br>- Federico Tesio`
       }
@@ -18000,8 +18078,9 @@ const combinaties = [
       ["Verdriet", "Papegaaien"]
     ],
     hint: `Wat verdriet wel niet kan doen.`,
+    hint_en: `The common good of being sad, you name it.`,
     output: [
-      { naam: "Empathie", icoon: "icons/Empathie.png", map: "Brein", 
+      { naam: "Empathie", naam_en: "Empathy", icoon: "icons/Empathie.png", map: "Brein", 
         quote: `I do not ask the wounded person how he feels, I myself become the wounded person
         <br><br>- Walt Whitman`
       }
@@ -18013,7 +18092,7 @@ const combinaties = [
       ["Jaloezie", "Papegaaien"]
     ],
     output: [
-      { naam: "Woede", icoon: "icons/Woede.png", map: "Brein", 
+      { naam: "Woede", naam_en: "Anger", icoon: "icons/Woede.png", map: "Brein", 
         quote: `Anybody can become angry - that is easy, but to be angry with the right person and to the right degree
         and at the right time and for the right purpose, and in the right way - that is not within everybody's power
         and is not easy
@@ -18028,8 +18107,10 @@ const combinaties = [
       ["Heide", "Heide"]
     ],
     hint: `Het Kaapse florarijk van heidevuur en bloemen is 's werelds rijkste gebieden aan plantensoorten.`,
+    hint_en: `By heath fires and flowers, the Cape Floristic Region is one of the world's richest areas in terms of 
+    plant species.`,
     output: [
-      { naam: "Fynbos", icoon: "icons/Fynbos.png", map: "Landschap", 
+      { naam: "Fynbos", naam_en: "Fynbos", icoon: "icons/Fynbos.png", map: "Landschap", 
         quote: `Fynbos is not a forest or a grassland, but a world of its own
         <br><br>- Rita Hill`
       }
@@ -18038,9 +18119,10 @@ const combinaties = [
   {
     input: ["Beren", "Tropisch regenwoud"], 
     hint: `Sommige beren voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some bears feel at home in the tropical rainforest.`, 
     tijd: 5_000_000,
     output: [
-      { naam: "Zonneberen", icoon: "icons/Zonneberen.png", map: "Carnivoren", 
+      { naam: "Zonneberen", naam_en: "Sun bears", icoon: "icons/Zonneberen.png", map: "Carnivoren", 
         quote: `Sun bears spend much of their lives hidden within dense rainforest habitats
         <br><br>- Wong Siew Te`
       }
@@ -18049,9 +18131,10 @@ const combinaties = [
   {
     input: ["Beren", "Bamboe"], 
     hint: `Sommige beren zijn onlosmakelijk verbonden aan bamboebossen.`,
+    hint_en: `Some bears are inextricably linked to the bamboo forests.`,
     tijd: 4_000_000,
     output: [
-      { naam: "Pandaberen", icoon: "icons/Pandaberen.png", map: "Carnivoren", 
+      { naam: "Pandaberen", naam_en: "Giant pandas", icoon: "icons/Pandaberen.png", map: "Carnivoren", 
         quote: `The giant panda’s survival depends entirely on the availability of bamboo and intact forest corridors
         <br><br>- Zhang Hemin`
       }
@@ -18060,13 +18143,14 @@ const combinaties = [
   {
     input: ["Oermensapen", "Bos"], 
     hint: `Sommige mensapen voelen zich thuis in de bossen.`,
+    hint_en: `Some apes feel at home in the forests.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Gorilla", icoon: "icons/Gorilla.png", map: "Primaten", 
+      { naam: "Gorilla", naam_en: "Gorillas", icoon: "icons/Gorilla.png", map: "Primaten", 
         quote: `The gorilla is a powerful yet quiet presence in the forest, moving with surprising grace for its size
         <br><br>- Ian Redmond`
       },
-      { naam: "Chimpansees", icoon: "icons/Chimpansees.png", map: "Primaten", 
+      { naam: "Chimpansees", naam_en: "Chimpanzees", icoon: "icons/Chimpansees.png", map: "Primaten", 
         quote: `Chimpanzees share with us not only genes, but also emotions such as joy, grief, and compassion
         <br><br>- Jane Goodall`
       }
@@ -18075,17 +18159,18 @@ const combinaties = [
   {
     input: ["Oermensapen", "Tropisch regenwoud"], 
     hint: `Sommige mensapen voelen zich thuis in het tropisch regenwoud.`,
+    hint_en: `Some apes feel at home in the tropical rainforest.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Gibbons", icoon: "icons/Gibbons.png", map: "Primaten", 
+      { naam: "Gibbons", naam_en: "Gibbons", icoon: "icons/Gibbons.png", map: "Primaten", 
         quote: `The calls of the gibbon carry across the rainforest long before the animal itself is seen
         <br><br>- John MacKinnon`
       },
-      { naam: "Orang-oetans", icoon: "icons/Orang-oetans.png", map: "Primaten", 
+      { naam: "Orang-oetans", naam_en: "Orangutans", icoon: "icons/Orang-oetans.png", map: "Primaten", 
         quote: `Orangutans are remarkably solitary great apes, living quiet lives in the depths of the rainforest
         <br><br>- Carel von Schaik`
       },
-      { naam: "Bonobo", icoon: "icons/Bonobo.png", map: "Primaten", 
+      { naam: "Bonobo", naam_en: "Bonobos", icoon: "icons/Bonobo.png", map: "Primaten", 
         quote: `Bonobos show an exceptional degree of empathy and tolerance compared to other great apes
         <br><br>- Frans de Waal`
       }
@@ -18096,9 +18181,10 @@ const combinaties = [
       ["Runderen", "Moeras"], ["Runderen", "Savanne"]
     ],
     hint: `Sommige runderen voelen zich thuis in moerassen en savannes.`,
+    hint_en: `Some bovids feel at home in swamps and savannahs.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Buffels", icoon: "icons/Buffels.png", map: "Hoefdieren", 
+      { naam: "Buffels", naam_en: "Buffaloes", icoon: "icons/Buffels.png", map: "Hoefdieren", 
         quote: `Buffalo are among the most cohesive and defensive of African herd animals
         <br><br>- Richard Estes`
       }
@@ -18107,9 +18193,10 @@ const combinaties = [
   {
     input: ["Runderen", "Steppe"],
     hint: `Sommige runderen voelen zich thuis op de steppe.`,
+    hint_en: `Some bovids feel at home on the steppe.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Bizons", icoon: "icons/Bizons.png", map: "Hoefdieren", 
+      { naam: "Bizons", naam_en: "Bisons", icoon: "icons/Bizons.png", map: "Hoefdieren", 
         quote: `The bison moved in immense herds across the plains, darkening the earth like a moving cloud
         <br><br>- John Audubon`
       }
@@ -18118,21 +18205,22 @@ const combinaties = [
   {
     input: ["Fynbos", "Oermonocotylen"],
     hint: `Sommige monocotylen voelen zich thuis in het fynbos.`,
+    hint_en: `Some monocots feel at home in the fynbos.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Freesia", icoon: "icons/Freesia.png", map: "Bloemen", 
+      { naam: "Freesia", naam_en: "Freesia", icoon: "icons/Freesia.png", map: "Bloemen", 
         quote: `Few flowers combine such grace and fragrance as the freesia in bloom
         <br><br>- Reginald Farrer`
       },
-      { naam: "Amaryllissen", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
+      { naam: "Amaryllissen", naam_en: "Amaryllis", icoon: "icons/Amaryllissen.png", map: "Bloemen", 
         quote: `An amaryllis has the confidence to bloom magnificently when all else is sleeping
         <br><br>- Beverley Nichols`
       },
-      { naam: "Gladiolen", icoon: "icons/Gladiolen.png", map: "Bloemen", 
+      { naam: "Gladiolen", naam_en: "Gladioli", icoon: "icons/Gladiolen.png", map: "Bloemen", 
         quote: `The tall, sword-like form of the gladiolus gave rise to its symbolic association with battle and loss.
         <br><br>- Christopher Brickell`
       },
-      { naam: "Irissen", icoon: "icons/Irissen.png", map: "Bloemen", 
+      { naam: "Irissen", naam_en: "Irises", icoon: "icons/Irissen.png", map: "Bloemen", 
         quote: `The iris flower rises on a slender stem, its petals unfolding in quiet symmetry above sword-like leaves
         <br><br>- W.J. Bean`
       }
@@ -18141,9 +18229,10 @@ const combinaties = [
   {
     input: ["Fynbos", "Oereudicoten"],
     hint: `Sommige eudicoten voelen zich thuis in het fynbos.`,
+    hint_en: `Some eudicots feel at home in the fynbos.`,
     tijd: 15_000_000,
     output: [
-      { naam: "Protea", icoon: "icons/Protea.png", map: "Bloemen", 
+      { naam: "Protea", naam_en: "Proteas", icoon: "icons/Protea.png", map: "Bloemen", 
         quote: `South Africa’s flora is among the most remarkable in the world, with proteas as its emblem
         <br><br>- E.H. Wilson`
       }
@@ -18152,9 +18241,10 @@ const combinaties = [
   {
     input: ["Fynbos", "Oerfabiden"],
     hint: `Sommige fabiden voelen zich thuis in het fynbos.`,
+    hint_en: `Some fabids feel at home in the fynbos.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Rooibos", icoon: "icons/Rooibos.png", map: "Genotwaren", 
+      { naam: "Rooibos", naam_en: "Rooibos", icoon: "icons/Rooibos.png", map: "Genotwaren", 
         quote: `Rooibos is uniquely South African, shaped by the harshness of the Cederberg
         <br><br>- Annelise le Roux`
       }
@@ -18163,9 +18253,10 @@ const combinaties = [
   {
     input: ["Fynbos", "Oermalviden"],
     hint: `Sommige malviden voelen zich thuis in het fynbos.`,
+    hint_en: `Some malvids feel at home in the fynbos.`,
     tijd: 10_000_000,
     output: [
-      { naam: "Geraniums", icoon: "icons/Geraniums.png", map: "Bloemen", 
+      { naam: "Geraniums", naam_en: "Geraniums", icoon: "icons/Geraniums.png", map: "Bloemen", 
         quote: `Geraniums are the comfort of windows, faithful and unpretending
         <br><br>- Elizabeth von Arnim`
       }
@@ -18174,9 +18265,10 @@ const combinaties = [
   {
     input: ["Fynbos", "Oercampanuliden"],
     hint: `Sommige campanuliden voelen zich thuis in het fynbos.`,
+    hint_en: `Some campanulids feel at home in the fynbos.`,
     tijd: 20_000_000,
     output: [
-      { naam: "Gerbera", icoon: "icons/Gerbera.png", map: "Bloemen", 
+      { naam: "Gerbera", naam_en: "Gerbera", icoon: "icons/Gerbera.png", map: "Bloemen", 
         quote: `The genus Gerbera produces flowers of remarkable brilliance
         <br><br>- William Aiton`
       }
@@ -18186,17 +18278,16 @@ const combinaties = [
   {
     input: ["Oermensapen", "Savanne"],
     hint: `Sommige mensapen voelen zich thuis op de savanne.`,
+    hint_en: `Some apes feel at home on the savannah.`,
     tijd: 2_000_000,
     output: [
-      { naam: "Mens", icoon: "icons/Mens.png", map: "Primaten", 
+      { naam: "Mens", naam_en: "Humans", icoon: "icons/Mens.png", map: "Primaten", 
         quote: `Man must be regarded as an end in himself
         <br><br>- Immanuel Kant`
       }
     ],
-    uitleg: {
-      threshold: {
-        titel: "Mens", 
-        tekst: "Je moet eerst nog wat meer halen...",
+    uitleg: { threshold: { titel: "Mens", titel_en: "Humans",
+        tekst: "Je moet eerst nog wat meer halen...", tekst_en: "You need to create a bit more first...",
         requirements: 
         ["Kwik", "Alcohol", "Verdriet", "Trots", "Jaloezie", "Empathie", "Gemeenschap",
           /* --- WATERDIEREN --- */
@@ -18260,69 +18351,91 @@ const combinaties = [
          "Saki", "Neusapen", "Langoeren", "Gibbons", "Gorilla", "Chimpansees", "Orang-oetans", "Bonobo"
         ]
       },
-      normal: {
-        achtergrond: "afb/Mens.jpg",
-        titel: "MENS 2 MA",
+      normal: { achtergrond: "afb/Mens.jpg", titel: "MENS 2 MA", titel: "HUMAN 2 MA",
         tekst: 
         `<span>Dat wat wij verstaan onder het begrip mens evolueerde langzaam en non-lineair in Oost-Afrika.
-        De oudste archeologische vondsten komen uit Ethiopië, Kenia en Tanzania.
-        
-        <br><br>Het geslacht 'mens' staat voor een nieuwe familietak binnen de mensachtigen. Rond deze tijd onderscheidde 
+        De oudste archeologische vondsten komen uit Ethiopië, Kenia en Tanzania.</span>
+        <br><br>
+        <span>Het geslacht 'mens' staat voor een nieuwe familietak binnen de mensachtigen. Rond deze tijd onderscheidde 
         deze tak van diens voorouders - de zuidelijke mensapen (austrolopithecussen) - door een combinatie van 
-        lichaamsbouw, herseninhoud en gedrag.
-        
-        <br><br>Binnen het geslacht mens bevinden zich soorten afhankelijk van of ze de neiging hebben met elkaar 
-        te paren en in staat zijn vruchtbare nakomelingen te krijgen. 
-        De eerste soort van het nieuwe geslacht was de ‘handige mens’ (homo habilis).
-        Deze soort verspreidde zich over Oost- en Zuid-Afrika. Zij maakten gebruik van eenvoudige 
-        steenwerktuigen, bekend als Oldowan-gereedschap, om voedsel te verkrijgen. 
-        
-        <br><br>Waar andere zoogdieren van vergelijkbaar formaat een herseninhoud van circa 200 kubieke centimeter 
+        lichaamsbouw, herseninhoud en gedrag.</span>
+        <br><br>
+        <span>Binnen het geslacht mens bevinden zich soorten afhankelijk van of ze de neiging hebben met elkaar 
+        te paren en in staat zijn vruchtbare nakomelingen te krijgen. De eerste soort van het nieuwe geslacht was de 
+        ‘handige mens’ (homo habilis). Deze soort verspreidde zich over Oost- en Zuid-Afrika. Zij maakten gebruik van 
+        eenvoudige steenwerktuigen, bekend als Oldowan-gereedschap, om voedsel te verkrijgen.</span>
+        <br><br>
+        <span>Waar andere zoogdieren van vergelijkbaar formaat een herseninhoud van circa 200 kubieke centimeter 
         hadden, bezaten deze vroege mannen en vrouwen hersenen van maar liefst 600 kubieke centimeter. 
-        Deze slimheid betaalde zich uit, ondanks de hoge energiekosten en dus behoefte aan meer voedsel.
-        </span>`,
+        Deze slimheid betaalde zich uit, ondanks de hoge energiekosten en dus behoefte aan meer voedsel.</span>`,
+        
+        tekst: 
+        `<span>What we call 'human' evolved slowly and non-linearly in the East of Africa. The oldest archaeological
+        finds come from Ethiopia, Kenya and Tanzania.</span>
+        <br><br>
+        <span>The genus 'Homo' represents a new branch within the hominin family. Around this time, this branch diverged
+        from its ancestors - the australopithecines - distinguishing itself through a combination of body structure, 
+        brain capacity and behaviour.</span>
+        <br><br>
+        <span>Within the human genus, there are different species, distinguished by whether they tend to mate with 
+        one another and are capable of producing fertile offspring. The first species of this new genus was the 
+        'handy man' (homo habilis). This species spread throughout East and Southern Africa. They made use of simple 
+        stone implements, known as Oldowan tools, to obtain food.</span>
+        <br><br>
+        <span>While other mammals of a similar had a brain capacity of approximately 200 cubic centimeters, these
+        early men and women possessed brains measuring as much as 600 cubic centimeters. This intelligence paid off,
+        despite the high energy costs - and the consequent need for more food - that it entailed.</span>`
       }
     }
   },
   {
     input: ["Leger", "Leger"],  
     hint: `Wie de oorlog overleeft en verliest, wacht de onmenselijking.`,
+    hint_en: `For those who survive the war but lose, dehumanisation awaits.`,
     output: [
-      { naam: "Dood", icoon: "icons/Dood.png", map: "Krachten", 
+      { naam: "Dood", naam_en: "Death", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
         we no longer exist 
         <br><br>- Epicurus`
       },
-      { naam: "Slavernij", icoon: "icons/Slavernij.png", map: "Samenleving", 
+      { naam: "Slavernij", naam_en: "Slavery", icoon: "icons/Slavernij.png", map: "Samenleving", 
         quote: `I freed a thousand slaves. I could have freed a thousand more if only they knew they were slaves
         <br><br>- Harriet Tubman`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Mens", titel: "Probeer opnieuw na de mens",
+    uitleg: { thresholdElement: { naam: "Mens", naam_en: "Humans",
+        titel: "Probeer opnieuw na de mens", titel_en: "Try again after the humans",
         tekst: `Mensen bestonden uit verschillende soorten, waarvan alleen de Sapiens het hebben overleefd...
-        <br><br>Eerst nodig: mensen.` } }
+        <br><br>Eerst nodig: mensen.`,
+        tekst_en: `Humans consisted of various types, of which only the Sapiens have survived...
+        <br><br>Required first: humans.` } }
   },
   {
     input: [
       ["Beren", "IJs"], ["Beren", "Poolgebied"]
     ], 
     hint: `Sommige beren voelen zich thuis in de poolgebieden.`,
+    hint_en: `Some bears feel at home in the polar regions.`,
     tijd: 500_000,
     output: [
-      { naam: "IJsberen", icoon: "icons/IJsberen.png", map: "Carnivoren", 
+      { naam: "IJsberen", naam_en: "Polar bears", icoon: "icons/IJsberen.png", map: "Carnivoren", 
         quote: `The polar bear occupies the top of the Arctic food web and depends entirely on sea ice ecosystems
         <br><br>- Andrew Derocher`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Mens", titel: "Probeer opnieuw na de mens",
+    uitleg: { thresholdElement: { naam: "Mens", naam_en: "Humans",
+        titel: "Probeer opnieuw na de mens", titel_en: "Try again after the humans",
         tekst: `Mensen bestonden uit verschillende soorten, waarvan alleen de Sapiens het hebben overleefd...
-        <br><br>Eerst nodig: mensen.` } }
+        <br><br>Eerst nodig: mensen.`,
+        tekst_en: `Humans consisted of various types, of which only the Sapiens have survived...
+        <br><br>Required first: humans.` } }
   },
   {
     input:["Mens", "Hout"], 
     hint: `Hout kun je slijpen en scherp maken.`,
+    hint_en: `You can sharpen wood and make it pointed.`,
     output: [
-      { naam: "Speer", icoon: "icons/Speer.png", map: "Uitvindingen", 
+      { naam: "Speer", naam_en: "Spear", icoon: "icons/Speer.png", map: "Uitvindingen", 
         quote: `I wield my spear in the name of justice
         <br><br>- Zhao Yun`
       }
@@ -18331,9 +18444,10 @@ const combinaties = [
   {
     input: ["Mens", "Vuur"],
     hint: `Wanneer de mens meester is over het vuur, is hij niet meer te temmen.`,
+    hint_en: `Once man has mastered fire, he can no longer be tamed.`,
     tijd: 1_000_000,
     output: [
-      { naam: "Kampvuur", icoon: "icons/Kampvuur.png", map: "Vuur", 
+      { naam: "Kampvuur", naam_en: "Campfire", icoon: "icons/Kampvuur.png", map: "Vuur", 
         quote: `Things are born from transformation and return again through transformation, like fire turning wood into
         ash
         <br><br>- Zhuang Zi`
@@ -18345,8 +18459,9 @@ const combinaties = [
       ["Mens", "Hout"], ["Mens", "Waterriet"]
     ],
     hint: `Met hout of riet weet de mens wel raad.`,
+    hint_en: `Do the travelling humans know what to do with wood or reeds?`,
     output: [
-      { naam: "Vlot", icoon: "icons/Vlot.png", map: "Uitvindingen", 
+      { naam: "Vlot", naam_en: "Raft", icoon: "icons/Vlot.png", map: "Uitvindingen", 
         quote: `Early humans crossed waters using rafts long before advanced ships existed
         <br><br>- Jared Diamond`
       }
@@ -18355,8 +18470,9 @@ const combinaties = [
   {
     input: ["Speer", "Mens"], 
     hint: `Bij afwezigheid van klauwen, olifantenhuid of kracht, pakten mensen wat voorhanden was.`,
+    hint_en: `In the absence of claws, elephant skin or brute strength, humans made use of whatever was at hand.`,
     output: [
-      { naam: "Jacht", icoon: "icons/Jacht.png", map: "Samenleving", 
+      { naam: "Jacht", naam_en: "Hunting", icoon: "icons/Jacht.png", map: "Samenleving", 
         quote: `When the last deer disappears into the morning mist, when the last elk vanishes from the hills,
         when the last buffalo falls on the plains, I will hunt mice for I am a hunter and I must have my freedom
         <br><br>- Chief Joseph`
@@ -18373,36 +18489,45 @@ const combinaties = [
       ["Jacht", "Capibara"], ["Mens", "Vlas"], ["Mens", "Katoen"]
     ],
     hint: `Kijken wat de jacht opbrengt...`,
+    hint_en: `Let's see what the hunt yields...`,
     tijd: 100_000,
     output: [
-      { naam: "Kleding", icoon: "icons/Kleding.png", map: "Uitvindingen", 
+      { naam: "Kleding", naam_en: "Clothes", icoon: "icons/Kleding.png", map: "Uitvindingen", 
         quote: `The clothes you wear are a metamorphosis. They change you from the outside in
         <br><br>- Linda Grant`
       }
     ],
-    uitleg: {
-      threshold: {
-        titel: "Laatste IJstijd", 
+    uitleg: { threshold: { titel: "Laatste IJstijd", titel_en: "The Last Ice Age",
         tekst: "Je moet eerst nog wat meer halen...",
         requirements: 
-        ["IJsberen", "Speer", "Kampvuur", "Vlot", "Jacht"]
-      },
-      normal: {
-        achtergrond: "afb/IJstijd.jpg",
-        titel: "LAATSTE IJSTIJD 100.000 BP",
+          ["IJsberen", "Speer", "Kampvuur", "Vlot", "Jacht"]
+      }, normal: { achtergrond: "afb/IJstijd.jpg",
+        titel: "LAATSTE IJSTIJD 100.000 BP", titel_en: "THE LAST ICE AGE 100.000 BP",
         tekst: 
         `<span>In de laatste ijstijd tot nu toe reikten de ijskappen tot ver buiten het poolgebied.
         Grote delen van Noord-Europa en Noord-Amerika waren bedekt met landijs. Andere noordelijke zeeën kwamen 
-        droog te liggen door de lage zeespiegel. 
-        
-        <br><br>Deze koude, droge gebieden, ook wel poolwoestijnen, waren nauwelijks begroeid. Met de komst van 
+        droog te liggen door de lage zeespiegel.</span>
+        <br><br>
+        <span>Deze koude, droge gebieden, ook wel poolwoestijnen, waren nauwelijks begroeid. Met de komst van 
         de 'wijze mens' (homo sapiens) in Europa halverwege deze periode, kregen zij te maken met de arctische kou
         en joegen zij op wolharige mammoeten, steppebizons en rendieren. In sommige gebieden leefden ze korte tijd 
-        samen met de soort neanderthalers, die rond 40.000 BP uitstierven. 
+        samen met de soort neanderthalers, die rond 40.000 BP uitstierven.</span>
+        <br><br>
+        <span>In Noord-Amerika en Azië verschenen wijze mensen pas later, na 30.000 BP. Ook daar pasten zij zich 
+        aan aan de extreme koude en de unieke fauna van die streken.</span>`,
         
-        <br><br>In Noord-Amerika en Azië verschenen wijze mensen pas later, na 30.000 BP. Ook daar pasten zij zich 
-        aan aan de extreme koude en de unieke fauna van die streken.
-        </span>`,
+        tekst_en: 
+        `<span>During the last ice age, ice sheets extended well beyond the polar regions. Large parts of Northern
+        Europe and North America were covered by continental ice. Other northern seas were left dry due to low sea 
+        levels.</span>
+        <br><br>
+        <span>These cold, dry regions - also known as polar deserts - had hardly any vegetation. With the arrival
+        of the 'wise humans' (homo sapiens) in Europe halfway through this period, these people encountered the 
+        arctic cold and hunted woolly mammoths, steppe bison and reindeer. In some areas, they lived alongside the 
+        Neanderthals for a short while, before the latter went extinct around 40.000 years before the present (BP).
+        </span><br><br>
+        <span>In North America and Asia, modern humans appeared only later - after 30.000 BP. There, they adapted
+        to the extreme cold and the unique fauna of those regions as well.</span>`,
       }
     }
   },
@@ -18413,109 +18538,137 @@ const combinaties = [
       ["Mens", "Kalksteen"], ["Mens", "Marmer"], ["Mens", "Gipssteen"]
     ],
     hint: `Geef de mens een steen en hij maakt het zijn thuis.`,
+    hint_en: `Give humans a bunch of stones, and they will make it their home.`,
     tijd: 12_850,
     output: [
-      { naam: "Woning", icoon: "icons/Woning.png", map: "Samenleving", 
+      { naam: "Woning", naam_en: "House", icoon: "icons/Woning.png", map: "Samenleving", 
         quote: `To dwell is to be at peace in a place
         <br><br>- Martin Heidegger`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: [
       ["Mens", "Obsidiaan"], ["Mens", "Schelp"], ["Mens", "Parel"]
     ],
     hint: `De oudste handelsroutes lieten sporen na van obsidiaan, parels en schelpen.`,
+    hint_en: `The oldest trade routes left behind traces of obsidian, pearls and shells.`,
     tijd: 34000,
     output: [
-      { naam: "Handel", icoon: "icons/Handel.png", map: "Samenleving", 
+      { naam: "Handel", naam_en: "Trade", icoon: "icons/Handel.png", map: "Samenleving", 
         quote: `The demand for money is regulated entirely by its value, and its value by its quantity
         <br><br>- David Ricardo`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: [
       ["Mens", "IJzer"], ["Mens", "Kalk"], ["Mens", "Kalksteen"], ["Houtskool", "Mens"]
     ],
     hint: `Een pallet van ijzer, kalk en houtskool op grotwanden maakt rood, wit en zwart.`,
+    hint_en: `A palette of iron, lime and charcoal on cave walls created red, white and black.`,
     tijd: 66000,
     output: [
-      { naam: "Pigment", icoon: "icons/Pigment.png", map: "Uitvindingen", 
+      { naam: "Pigment", naam_en: "Pigments", icoon: "icons/Pigment.png", map: "Uitvindingen", 
         quote: `Each day brings its own colours to be chosen, mixed, pigments of joy, happy moments, smiles and laughter
         <br><br>- John McLeod`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: ["Mens", "Bot"],
     hint: `Maakt bot geluid? Laten we dat onderzoeken.`,
+    hint_en: `What is the hollow bone singing about? Let's look into that.`,
     tijd: 43000,
     output: [
-      { naam: "Fluit", icoon: "icons/Fluit.png", map: "Uitvindingen", 
+      { naam: "Fluit", naam_en: "Flute", icoon: "icons/Fluit.png", map: "Uitvindingen", 
         quote: `A flute's voice - floating above the fields in the evening mist
         <br><br>- Bai Juyi`
       },
-      { naam: "Muziek", icoon: "icons/Muziek.png", map: "Brein", 
+      { naam: "Muziek", naam_en: "Music", icoon: "icons/Muziek.png", map: "Brein", 
         quote: `Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything
         <br><br>- Plato`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: ["Mens", "Rotan"],
     hint: `Kijk eens wat een mens kan met rotan.`,
+    hint_en: `Look at what mankind can do with rattan.`,
     tijd: 27000,
     output: [
-      { naam: "Mand", icoon: "icons/Mand.png", map: "Uitvindingen", 
+      { naam: "Mand", naam_en: "Basket", icoon: "icons/Mand.png", map: "Uitvindingen", 
         quote: `“I too had woven a kind of basket of a delicate texture, but I had not made it worth any one's while to 
         buy them
         <br><br>- Henry Thoreau`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: ["Mens", "Hennep"],
     hint: `Van hennep is het makkelijk binden.`,
+    hint_en: `Hemp can be strong once you tie it.`,
     tijd: 50000,
     output: [
-      { naam: "Touw", icoon: "icons/Touw.png", map: "Materialen", 
+      { naam: "Touw", naam_en: "Rope", icoon: "icons/Touw.png", map: "Materialen", 
         quote: `A sailor's life is woven of ropes, wind, and water
         <br><br>- Joseph Conrad`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: ["Mens", "Wolven"],
     hint: `Sommige wolven voelen zich thuis bij de mens.. of andersom?`,
+    hint_en: `Some wolves feel at home among humans.. or the other way around?`,
     tijd: 23_000,
     output: [
-      { naam: "Honden", icoon: "icons/Honden.png", map: "Carnivoren", 
+      { naam: "Honden", naam_en: "Dogs", icoon: "icons/Honden.png", map: "Carnivoren", 
         quote: `Dogs are not wolves that live with humans; they are a species shaped by living with humans
         <br><br>- Raymond Coppinger`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: [
@@ -18525,30 +18678,39 @@ const combinaties = [
       ["Kampvuur", "Kwartsiet"], ["Kampvuur", "Kalksteen"], ["Kampvuur", "Marmer"], ["Kampvuur", "Gipssteen"]
     ],
     hint: `Een kampvuur is heter als je er een stenen huisje van maakt..`,
+    hint_en: `A campfire is hotter if you build a little stone house around it..`,
     tijd: 31_000,
     output: [
-      { naam: "Oven", icoon: "icons/Oven.png", map: "Vuur", 
+      { naam: "Oven", naam_en: "Oven", icoon: "icons/Oven.png", map: "Vuur", 
         quote: `Control of fire reached a new level with the enclosed oven, where heat itself became a tool
         <br><br>- Lewis Mumford`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: ["Woning", "Woning"],
     hint: `Steeds meer mensen willen op één plek blijven wonen, maar ook steeds meer op dezelfde fijne plekjes.`,
+    hint_en: `More and more people want to stay on one particular spot, but more and more of them are also looking
+    for the same spots.`, 
     tijd: 10_000,
     output: [
-      { naam: "Stad", icoon: "icons/Stad.png", map: "Samenleving", 
+      { naam: "Stad", naam_en: "City", icoon: "icons/Stad.png", map: "Samenleving", 
         quote: `The city is like some great house, and the house in turn a small city
         <br><br>- Leon Alberti`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: [
@@ -18558,275 +18720,364 @@ const combinaties = [
       ["Pigment", "Kwartsiet"], ["Pigment", "Kalksteen"], ["Pigment", "Marmer"], ["Pigment", "Gipssteen"]
     ],
     hint: `Hm... is het nog een gekleurde steen of is het een pijp geworden?`,
+    hint_en: `Hmm... is it still coloured stone, or has it turned into a pipe?`,
     tijd: 66000,
     output: [
-      { naam: "Kunst", icoon: "icons/Kunst.png", map: "Uitvindingen", 
+      { naam: "Kunst", naam_en: "Art", icoon: "icons/Kunst.png", map: "Uitvindingen", 
         quote: `I dream of painting and then I paint my dream
         <br><br>- Vincent van Gogh`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: ["Oven", "Klei"],
     hint: `Potjandorie, een oven! Pak het klei en bakken maar..`,
+    hint_en: `Good heavens, an oven! Grab the clay and let's start baking..`,
     output: [
-      { naam: "Keramiek", icoon: "icons/Keramiek.png", map: "Uitvindingen", 
+      { naam: "Keramiek", naam_en: "Ceramics", icoon: "icons/Keramiek.png", map: "Uitvindingen", 
         quote: `We shape clay into a pot, but it is the emptiness inside that holds whatever we want
         <br><br>- Lao Tzu`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
   {
     input: ["Oven", "Hout"],
     hint: `Een smeulbrand in gecontroleerd vuur levert de perfecte pigment voor zwart`,
+    hint_en: `A smoldering, controlled fire turns into the perfect pigment for black`,
     output: [
-      { naam: "Houtskool", icoon: "icons/Houtskool.png", map: "Vuur", 
+      { naam: "Houtskool", naam_en: "Charcoal", icoon: "icons/Houtskool.png", map: "Vuur", 
         quote: `With charcoal the hand thinks directly on the surface
         <br><br>- John Ruskin`
       },
-      { naam: "Roet", icoon: "icons/Roet.png", map: "Vuur", 
+      { naam: "Roet", naam_en: "Soot", icoon: "icons/Roet.png", map: "Vuur", 
         quote: `The smoke lowered down from chimney-pots, making a soft black drizzle
         <br><br>- Charles Dickens`
       },
-      { naam: "As", icoon: "icons/As.png", map: "Vuur",
+      { naam: "As", naam_en: "Ash", icoon: "icons/As.png", map: "Vuur",
         quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
         <br><br>- Alexander Anderson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Kleding", titel: "Probeer opnieuw in de laatste ijstijd..",
+    uitleg: { thresholdElement: { naam: "Kleding", naam_en: "Clothes",
+        titel: "Probeer opnieuw in de laatste ijstijd..", titel_en: "Try again after the final ice age...",
         tekst: `De grote tijd van evolutie was pas echt voorbij met de laatste ijstijd.
-        <br><br>Eerst nodig: ijsberen en kampvuur.` } }
+        <br><br>Eerst nodig: ijsberen en kampvuur.`,
+        tekst_en: `The major era of evolution only truly came to an end during the last ice age. 
+        <br><br>Reuired first: polar bears and a campfire.` } }
   },
 //------------ THRESHOLD 12: LANDBOUW 12.000 --------------//
   {
     input: ["Mens", "Aarde"],
     hint: `Kijk hoe mens hun stukje aarde gaat beheren.`,
+    hint_en: `Look at them, humans managing their self-proclaimed piece of Earth.`,
     tijd: 12_000,
     output: [
-      { naam: "Akker", icoon: "icons/Akker.png", map: "Landschap", 
+      { naam: "Akker", naam_en: "Farmland", icoon: "icons/Akker.png", map: "Landschap", 
         quote: `The fields repay the care of men
         <br><br>- Virgilius`
       }
-    ],
-    uitleg: {
-      threshold: {
-        titel: "Landbouw", 
-        tekst: "Je moet eerst nog wat meer halen...",
+    ], 
+    uitleg: { threshold: { titel: "Landbouw", titel_en: "Agriculture", 
+        tekst: "Je moet eerst nog wat meer halen...", tekst_en: "You need to create a bit more first...",
         requirements: 
         ["Kleding"]
-      },
-      normal: {
-        achtergrond: "afb/Landbouw.jpeg",
-        titel: "LANDBOUW 12.000 BP",
+      }, normal: { achtergrond: "afb/Landbouw.jpeg",
+        titel: "LANDBOUW 12.000 BP", titel_en: "AGRICULTURE 12.000 BP",
         tekst: 
         `<span>De enige overgebleven menssoort begon de levensloop van dieren en planten te manipuleren - 
         gedreven door de gedachte dat dit meer voedselzekerheid zou opleveren. Het proces van domesticeren – van 
         het Latijnse woord voor huis (domus) – betekent iets mens-eigen of huiselijk maken. In die zin domesticeerde 
-        graan eigenlijk de mens: de mens ging leven rondom de thuis-plekken van graan. 
-        
-        <br><br.Zonder het te beseffen stapten mensen met hun nieuwe dieet in een valkuil. Voedselvariëteit werd
+        graan eigenlijk de mens: de mens ging leven rondom de thuis-plekken van graan.</span>
+        <br><br>
+        <span>Zonder het te beseffen stapten mensen met hun nieuwe dieet in een valkuil. Voedselvariëteit werd
         slechter, boeren afhankelijk van grondbezit en veel werk ging zitten in de akkers. De 
         Landbouwrevolutie bood dus de mogelijkheid om meer mensen in leven te houden, maar vaak onder slechtere 
-        leefomstandigheden. 
-        
-        <br><br>Toch bracht het een groot voordeel op, namelijk energie. Landbouwsamenlevingen veranderden 
+        leefomstandigheden.</span>
+        <br><br>
+        <span>Toch bracht het een groot voordeel op, namelijk energie. Landbouwsamenlevingen veranderden 
         ingrijpend de afhankelijkheid van zonne-energie en fotosynthese. Dankzij landbouw en veeteelt verschoof de
         energiebron naar bio-energie. Via graan en vee konden mensen zonne-energie monopoliseren voor eigen 
         behoeften. Dorpen organiseerden hiërarchische samenlevingen om energieproductie en consumptie te verdelen.
         Dit stimuleerde technische innovatie, irrigatie en het inzetten van dierkracht. Waar een mens 
-        gemiddeld goed is voor een energieproductie van 100 watt, kan een lastdier het 3- tot 6-voudige opbrengen. 
-        
-        <br><br>Bijzonder is dat op circa 10 plaatsen in de wereld een landbouwrevolutie plaatsvond, onafhankelijk 
+        gemiddeld goed is voor een energieproductie van 100 watt, kan een lastdier het 3- tot 6-voudige opbrengen.
+        </span><br><br>
+        <span>Bijzonder is dat op circa 10 plaatsen in de wereld een landbouwrevolutie plaatsvond, onafhankelijk 
         van elkaar. Elke plek kende een eigen culturele keuken en leeftraditie. Zo'n neolithische cultuur kenmerkte 
         zich door domesticatie, gepolijste stenen werktuigen en de landbouwsamenleving. Deze gemeenschappen vormden
         de basis voor de eerste beschavingen in rivierdelta’s zoals de Nijl, de Eufraat, de Tigris, de Indus, de
-        Huanghe en de Yangtze.
-        </span>`,
+        Huanghe en de Yangtze.</span>`,
+        
+        tekst_en: 
+        `<span>The only remaining human species began to manipulate the life cycles of animals and plants - driven
+        by the idea that his would yiel greater food security. The process of domestication - derived from the Latin
+        word for house, domus - means making something 'human-owned' or 'household-oriented'. In this sense, grain
+        actually domesticated humans: people began to live around the places where grain made its home.</span>
+        <br><br>
+        <span>Without realising it, people fell into a trap with their new diet. Dietary variety declined, farmers 
+        became dependent on land ownership, and a great deal of labour was required in the fields. Thus, while the
+        Agricultural Revolution made it possible to sustain more people, it often did so under worse living conditions.
+        </span><br><br>
+        <span>Yet it brought a major advantage: energy. Agricultural societies fundamentally altered the nature of 
+        dependence on solar energy and photosynthesis. Through agriculture and livestock farming, the primary energy
+        source shifted toward bioenergy. By means of grain and livestock, humans were able to harness solar energy for
+        their own needs. Villages developed hierarchical social structures to manage the distribution of energy 
+        production and consumption. This spurred technical innovation, the development of irrigation and the utilisation 
+        of animal power. While a human being is capable of an average energy output of 100 watts, a draft animal can 
+        generate three to six times that amount.</span>
+        <br><br>
+        <span>It is remarkable that an agricultural revolution occurred in approximately 10 locations around the world, 
+        independently of one another. Each of these places developed its own unique culinary culture and way of life. 
+        Such Neolithic cultures were characterised by the domestication of plants and animals, the use of polished
+        stone tools and an agrarian social structure. These communities laid the foundation for the first civilisations
+        in river deltas, such as those of the Nile, the Euphrates, the Tigris, the Indus, the Huang He and the Yangtze.
+        </span>`
       }
     }
   },
   {
     input: ["Tin", "Koper"],
     hint: `Hoe harder de koper, hoe meer zit in tin.`, 
+    hint_en: `The harder the copper, the higher its tin content.`, 
     tijd: 5300,
     output: [
-      { naam: "Brons", icoon: "icons/Brons.png", map: "Materialen", 
+      { naam: "Brons", naam_en: "Bronze", icoon: "icons/Brons.png", map: "Materialen", 
         quote: `Their armor was of bronze, and their houses of bronze, and with bronze they worked
         <br><br>- Hesiodos`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: ["Druiven", "Gist"],
     hint: `Wie druiven gist, krijgt vanzelf alcohol.`,
+    hint_en: `IF you ferment grapes, you naturally get alcohol.`,
     tijd: 8_000,
     output: [
-      { naam: "Wijn", icoon: "icons/Wijn.png", map: "Genotwaren", 
+      { naam: "Wijn", naam_en: "Wine", icoon: "icons/Wijn.png", map: "Genotwaren", 
         quote: `When there is plenty of wine, sorrow and worry take wing
         <br><br>- Ovidius`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: ["map:Granen", "Water"], 
     hint: `Granen pappen en nat houden..`,
+    hint_en: `Soak the grains and keep them moist..`,
     tijd: 11_500,
     output: [
-      { naam: "Pap", icoon: "icons/Pap.png", map: "Granen", 
+      { naam: "Pap", naam_en: "Porridge", icoon: "icons/Pap.png", map: "Granen", 
         quote: `Cooking grains in water transforms them into a digestible, nourishing porridge
         <br><br>- Harold McGee`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: [
       ["map:Granen", "Gist"], ["Hop", "map:Granen"]
     ],
     hint: `Wie, hop, de granen gist, krijgt vanzelf alcohol.`,
+    hint_en: `The one who ferments the grains will naturally end up with alcohol.`,
     tijd: 6_000,
     output: [
-      { naam: "Bier", icoon: "icons/Bier.png", map: "Genotwaren", 
+      { naam: "Bier", naam_en: "Beer", icoon: "icons/Bier.png", map: "Genotwaren", 
         quote: `Beer was the standard drink of ancient Egypt, safer than water and central to daily sustenance
         <br><br>- Alan Gardiner`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: [
       ["Mens", "Geiten"], ["Koeien", "Mens"]
     ],
-    hint: `Sommige zoogdieren voeden hun jongen zelf, maar laat de mens het niet zien.`,
+    hint: `Sommige dieren produceren een goedje, dat vindt de mens geheid lekker.`,
+    hint_en: `The greatest mammals of all time produce a substance you will like.`,
     tijd: 11_500,
     output: [
-      { naam: "Nomaden", icoon: "icons/Nomaden.png", map: "Samenleving", 
+      { naam: "Nomaden", naam_en: "Nomads", icoon: "icons/Nomaden.png", map: "Samenleving", 
         quote: `We live, if we are able to live, in an infant past, planted in fields that were ours
         <br><br>- Mahmoud Darwish`
       },
-      { naam: "Melk", icoon: "icons/Melk.png", map: "Genotwaren", 
+      { naam: "Melk", naam_en: "Milk", icoon: "icons/Melk.png", map: "Genotwaren", 
         quote: `Milk is the essence of life and strength among the offerings to the gods
         <br><br>- Rigveda`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: ["Mens", "Zwijnen"],
     hint: `Sommige zwijnen voelen zich thuis bij de mens.. of andersom?`,
+    hint_en: `Some swine feel at home among humans... or the other way around?`,
     tijd: 9_000,
     output: [
-      { naam: "Varkens", icoon: "icons/Varkens.png", map: "Hoefdieren", 
+      { naam: "Varkens", naam_en: "Pigs", icoon: "icons/Varkens.png", map: "Hoefdieren", 
         quote: `Pigs are among the most misunderstood animals, often underestimated in their emotional depth
         <br><br>- Jeffrey Masson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: ["Mens", "Runderen"],
     hint: `Sommige runderen voelen zich thuis bij de mens.. of andersom?`,
+    hint_en: `Some bovids feel at home among humans.. or the other way around?`,
     tijd: 8_500,
     output: [
-      { naam: "Koeien", icoon: "icons/Koeien.png", map: "Hoefdieren", 
+      { naam: "Koeien", naam_en: "Cows", icoon: "icons/Koeien.png", map: "Hoefdieren", 
         quote: `I am as content as a cow in a meadow
         <br><br>- Henry Thoreau`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: ["Mens", "Schapen"],
     hint: `Scheer als je het koud hebt.`,
+    hint_en: `Shave when you are cold.`,
     tijd: 11_000,
     output: [
-      { naam: "Nomaden", icoon: "icons/Nomaden.png", map: "Samenleving", 
+      { naam: "Nomaden", naam_en: "Nomads", icoon: "icons/Nomaden.png", map: "Samenleving", 
         quote: `We live, if we are able to live, in an infant past, planted in fields that were ours
         <br><br>- Mahmoud Darwish`
       },
-      { naam: "Wol", icoon: "icons/Wol.png", map: "Materialen", 
+      { naam: "Wol", naam_en: "Wool", icoon: "icons/Wol.png", map: "Materialen", 
         quote: `Wool and sheep are among the chief wealth of pastoral peoples
         <br><br>- Herodotos`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: [
       ["Vlot", "Papyrusriet"], ["Vlot", "Waterriet"], ["Vlot", "Vlas"], ["Vlot", "Hennep"]
     ],
     hint: `Zou je met iets van een licht materiaal niet meer wind kunnen vangen?`,
+    hint_en: `Couldn't you catch more wind using something like from a lightweight material?`,
     tijd: 5300,
     output: [
-      { naam: "Zeilboot", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
+      { naam: "Zeilboot", naam_en: "Sailboat", icoon: "icons/Zeilboot.png", map: "Uitvindingen", 
         quote: `A sailboat is not a means of transport, but a way of being in the world
         <br><br>- Bernard Moitessier`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: [
       ["Oven", "Sorghum"], ["Oven", "Gierst"], ["Oven", "Tarwe"], ["Oven", "Gerst"]
     ],
     hint: `Word warm, bak en rijs!`,
+    hint_en: `Heat up, bake and rise!`,
     tijd: 11_500,
     output: [
-      { naam: "Brood", icoon: "icons/Brood.png", map: "Granen", 
+      { naam: "Brood", naam_en: "Bread", icoon: "icons/Brood.png", map: "Granen", 
         quote: `To eat plain food and live honestly is the way of virtue
         <br><br>- Confucius`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: ["Stad", "Stad"],
     hint: `Kunnen we groter samenleven dan de stad alleen?`,
+    hint_en: `What if cities would communicate together?`,
     tijd: 4400,
     output: [
-      { naam: "Imperium", icoon: "icons/Imperium.png", map: "Samenleving", 
+      { naam: "Imperium", naam_en: "Empire", icoon: "icons/Imperium.png", map: "Samenleving", 
         quote: `When rewards are clear and punishments certain, the state is strong
         <br><br>- Han Fei`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Akker", titel: "Probeer opnieuw na de landbouwrevolutie..",
+    uitleg: { thresholdElement: { naam: "Akker", naam_en: "Farmland",
+        titel: "Probeer opnieuw na de landbouwrevolutie..",
+        titel_en: "Try again after the Agricultural Revolution..",
         tekst: `Met het einde van de laatste ijstijd, floreerden de granen waar mensen van profiteerden. 
-        <br><br>Eerst nodig: honden.` } }
+        <br><br>Eerst nodig: honden.`,
+        tekst_en: `With the end of the last ice age, grains flourished - something from which humans benefited. 
+        <br><br>Required first: dogs.` } }
   },
   {
     input: ["Nomaden", "Paarden"],
     hint: `Toen de nomaden meester werden over het paard, was de tegenpool van de stad geboren.`,
+    hint_en: `When the nomads mastered the horse, the antithesis of the city was born.`,
     tijd: 6000,
     output: [
-      { naam: "Ruiternomaden", icoon: "icons/Ruiternomaden.png", map: "Samenleving", 
+      { naam: "Ruiternomaden", naam_en: "Horse nomads", icoon: "icons/Ruiternomaden.png", map: "Samenleving", 
         quote: `The greatest joy a man can know is to conquer his enemies and ride their horses
         <br><br>- Genghis Khan`
       }
@@ -18835,9 +19086,10 @@ const combinaties = [
   {
     input: ["Melk", "Bacteriën"],
     hint: `In Oost-Europa lieten ze melk wat langer staan voor bacteriën..`,
+    hint_en: `In Eastern Europe, they would leave milk to sit for a while, allowing bacteria to develop..`,
     tijd: 7_500,
     output: [
-      { naam: "Kaas", icoon: "icons/Kaas.png", map: "Genotwaren", 
+      { naam: "Kaas", naam_en: "Cheese", icoon: "icons/Kaas.png", map: "Genotwaren", 
         quote: `The Scythians store milk in animal skins, shaking it until it becomes thick and usable
         <br><br>- Herodotos`
       }
@@ -18847,51 +19099,76 @@ const combinaties = [
   {
     input: ["Mens", "Klei"],
     hint: `De mens zou de mens niet zijn als het ging communiceren via klei.`,
+    hint_en: `Humans wouldn't be human if they would not start communicating through means of clay.`,
     tijd: 5_000,
     output: [
-      { naam: "Schrift", icoon: "icons/Schrift.png", map: "Uitvindingen", 
+      { naam: "Schrift", naam_en: "Writing", icoon: "icons/Schrift.png", map: "Uitvindingen", 
         quote: `To write is to remember more than one can hold in mind
         <br><br>- Susan Sontag`
       }
     ],
-    uitleg: {
-      threshold: {
-        titel: "Schrift", 
-        tekst: "Je moet eerst nog wat meer halen...",
+    uitleg: { threshold: { titel: "Schrift", titel_en: "Writing", 
+        tekst: "Je moet eerst nog wat meer halen...", tekst_en: "You need to create a bit more first...",
         requirements: 
         ["Honden"]
-      },
-      normal: {
-        achtergrond: "afb/Schrift.jpg",
-        titel: "SCHRIFT 5000 BP",
+      }, normal: { achtergrond: "afb/Schrift.jpg",
+        titel: "SCHRIFT 5000 BP", titel_en: "WRITING 5000 BP",
         tekst: 
         `<span>In Mesopotamië ontstonden 10 stadstaten, waar vanaf 3300 BCE een vroeg pictografisch schrift ontstond.
         Dit was de voorloper van het latere spijkerschrift. Met rieten stiften werden tekens in natte kleitabletten
-        gedrukt om economische en administratieve gegevens vast te leggen. 
-        
-        <br><br>Dit was een revolutionaire uitvinding, want dankzij het schrift konden gemeenschappen informatie 
+        gedrukt om economische en administratieve gegevens vast te leggen.</span>
+        <br><br>
+        <span>Dit was een revolutionaire uitvinding, want dankzij het schrift konden gemeenschappen informatie 
         bewaren buiten het menselijk geheugen. Deze vastlegging van systemen voor opslag en overdracht maakte 
         complexere vormen van organisatie mogelijk: van voorraadadministratie en handelsovereenkomsten tot het
-        bijhouden van tempelgiften en landbouwopbrengsten. 
-        
-        <br><br>In de eerste schriftcultuur woonde volgens de geschriften een van de oudste profeten genaamd Idris 
+        bijhouden van tempelgiften en landbouwopbrengsten.</span>       
+        <br><br>
+        <span>In de eerste schriftcultuur woonde volgens de geschriften een van de oudste profeten genaamd Idris 
         (Henoch): de eerste schrijver ooit die schreef met pen. Ook verdiende hij de kost als wever om kleding te 
         maken en het onderwijzen van sterrenkunde en wiskunde. Symbolisch wordt Idris dan ook als eerste 
         ‘beschaafde’ mens gezien, wiens verhaal laat zien dat kennis en rechtvaardigheid de mens kunnen verheffen
-        tot een hogere staat van bewustzijn. Hij staat symbool voor kennis, orde en rechtvaardigheid.
-
-        <br><br>Niet veel later werkten de Egyptenaren onafhankelijk van de Soemeriërs hun eigen schrift uit: 
+        tot een hogere staat van bewustzijn. Hij staat symbool voor kennis, orde en rechtvaardigheid.</span>
+        <br><br>
+        <span>Niet veel later werkten de Egyptenaren onafhankelijk van de Soemeriërs hun eigen schrift uit: 
         hiërogliefen. Dit schrift maakte gebruik van ruim 700 tekens, die konden staan voor een woord, een idee,
         een klank of een verduidelijkend teken. De klanktekens functioneerden dus als letters. Het schrift werd
-        door de mensen zelf 'Goddelijke Woorden' genoemd.
-
-        <br><br>Spijkerschrift in Mesopotamië kon informatie opslaan en verwerken buiten de hersenen om. 
+        door de mensen zelf 'Goddelijke Woorden' genoemd.</span>
+        <br><br>
+        <span>Spijkerschrift in Mesopotamië kon informatie opslaan en verwerken buiten de hersenen om. 
         De ene tekensoort stond voor getallen als 1, 10, 60, 600, 3600 en 36000. Een tweede tekensoort stond
         voor namen van bijvoorbeeld dieren, mensen en producten. De oudste bekende boodschap ging als volgt:
         ’29.086 maten gerst 37 maanden Kushim’ oftewel ‘in de loop van 37 maanden is een totaal van 29.086 maten 
         gerst ontvangen, getekend Kushim’. Het ging hier om Kushim uit de stad Oeroek. In kleitabletten schreven 
-        vorsten decreten uit, priesters orakeluitspraken en de elite persoonlijke brieven.
-        </span>`,
+        vorsten decreten uit, priesters orakeluitspraken en de elite persoonlijke brieven.</span>`,
+
+        tekst_en: 
+        `<span>In Mesopotamia, ten city-states emerged, where an early pictographic script developed from 3300 BCE 
+        onwards. This was the precursor to the later cuneiform script. Using reed styluses, signs were pressed into
+        wet clay tablets to record economic and administrative data.</span>
+        <br><br>
+        <span>This was a revolutionary invention, for writing allowed communities to preserve information outside of 
+        human memory. This establishment of systems for storage and transmission enabled more complex forms of 
+        organisation: from inventory management and trade agreements to the recording of temple offerings and 
+        agricultural yields.</span>
+        <br><br>
+        <span>According to the scriptures, one of the earliest prophets, named Idris (Enoch), lived during the dawn of
+        written culture; he was the first person ever to write with a pen. He also earned his living as a weaver, 
+        crafting garments and taught subjects such as astronomy and math. Symbolically, Idris is regarded as the first 
+        'civilised' human being, whose story illustrates how knowledge and justice can elevate humanity to a higher
+        state of consciousness. He stands as a symbol of knowledge, order and justice.</span>
+        <br><br>
+        <span>Not long after, the Egyptians developed their own writing system, independently of the Sumerians: the 
+        so-called hieroglyphs. This script made use of over 700 signs, which could represent a word, an idea, a sound 
+        or a clarifying symbol. The phonetic signs, therefore, functioned like letters. The people themselves 
+        referred to this script as Divine Words.</span>
+        <br><br>
+        <span>Cuneiform script in Mesopotamia made it possible to store and process information outside of the human
+        brain. One type of sign represented numbers such as 1, 10, 60, 600, 3600 and 36.000. A second type of sign
+        stood for the names of things such as animals, people and produts. The oldest known message reads: "29.086 
+        measures of barley, 37 months, Kushim." In other words: "Over the course of 37 months, a total of 29.086 
+        measures of barley were received; signed, Kushim." This refers to Kushim from the city of Uruk. Rulers used
+        clay tablets to issue decrees, priests to record oracular pronouncements and the elite to write personal letters.
+        </span>`
       }
     }
   },
@@ -18900,92 +19177,123 @@ const combinaties = [
       ["Glas", "Water"], ["Glas", "Zand"],
     ],
     hint: `Met elke druppel, elke zandkorrel, gezien door glas, is de snelheid waarmee de Aarde draait te zien.`,
+    hint_en: `With every drop, every grain of sand, viewed through glass, the speed at which the Earth rotates can
+    be seen.`,
     tijd: 3350,
     output: [
-      { naam: "Klok", icoon: "icons/Klok.png", map: "Uitvindingen", 
+      { naam: "Klok", naam_en: "Clock", icoon: "icons/Klok.png", map: "Uitvindingen", 
         quote: `What then is time? If no one asks me, I know; if I wish to explain it, I do not know
         <br><br>- Augustinus van Hippo`
       },
-      { naam: "Tijd", icoon: "icons/Tijd.png", map: "Brein", 
+      { naam: "Tijd", naam_en: "Time", icoon: "icons/Tijd.png", map: "Brein", 
         quote: `The distinction between past, present and future is only a stubbornly persistent illusion
         <br><br>- Albert Einstein`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Kalk", "Water"],
     hint: `Maak van kalk een papje en verhard het met wat gruis, zie daar.`,
+    hint_en: `Make a paste out of lime and strengthen it with some grit - there you'll have it.`,
     tijd: 2150,
     output: [
-      { naam: "Beton", icoon: "icons/Beton.png", map: "Materialen", 
+      { naam: "Beton", naam_en: "Concrete", icoon: "icons/Beton.png", map: "Materialen", 
         quote: `There is a kind of earth which, when mixed with lime and rubble, becomes as hard as stone
         <br><br>- Plinius de Oudere`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: [
       ["Bruinkool", "IJzer"], ["Steenkool", "IJzer"], ["Oven", "IJzer"]
     ],
     hint: `Hm.. hoe smeed je ijzer het heetst?`,
+    hint_en: `Hmm.. how do you forge iron to its hottest state?`,
     tijd: 3_200,
     output: [
-      { naam: "Staal", icoon: "icons/Staal.png", map: "Materialen", 
+      { naam: "Staal", naam_en: "Steel", icoon: "icons/Staal.png", map: "Materialen", 
         quote: `The strength of steel lies in its refinement through fire
         <br><br>- Henry Bessemer`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Hout", "Bot"],
     hint: `Van het hout zoekt men buigzame soorten, van de botten haalt het de pezen voor draad.`,
+    hint_en: `From the wood, one seeks flexible species, from the bones tendons for thread are extracted.`,
     tijd: 4000,
     output: [
-      { naam: "Pijl-en-boog", icoon: "icons/Pijl-en-boog.png", map: "Uitvindingen", 
+      { naam: "Pijl-en-boog", naam_en: "Bow and arrow", icoon: "icons/Pijl-en-boog.png", map: "Uitvindingen", 
         quote: `An army without arrows is like a body without blood
         <br><br>- Genghis Khan`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Kool", "Bacteriën"],
     hint: `Ook kool eet de mens graag gefermenteerd.`,
+    hint_en: `Humans also enjoy eating cabbage in fermented form.`,
     tijd: 2200,
     output: [
-      { naam: "Zuurkool", icoon: "icons/Zuurkool.png", map: "Groenten", 
+      { naam: "Zuurkool", naam_en: "Sauerkraut", icoon: "icons/Zuurkool.png", map: "Groenten", 
         quote: `In northern European traditions, preserved cabbage is a symbol of winter endurance
         <br><br>- Jacob Grimm`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Mens", "Karpers"],
     hint: `Sommige karpers voelen zich thuis bij de mens.. of andersom?`,
+    hint_en: `Some carp feel at home around humans... or the other way around?`,
     tijd: 1_700,
     output: [
-      { naam: "Goudvissen", icoon: "icons/Goudvissen.png", map: "Vissen", 
+      { naam: "Goudvissen", naam: "Goldfish", icoon: "icons/Goudvissen.png", map: "Vissen", 
         quote: `Goldfish possess a surprising capacity for memory and recognition
         <br><br>- Sy Montgomery`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   }, /* ------------------ GOUDVISSEN ------------------ */
   {
     input: [
@@ -19003,7 +19311,7 @@ const combinaties = [
       ["Goudvissen", "Sla"], ["Goudvissen", "Andijvie"], ["Goudvissen", "Spinazie"]
     ],
     output: [
-      { naam: "Goudvissen", icoon: "icons/Goudvissen.png", map: "Vissen", 
+      { naam: "Goudvissen", naam_en: "Goldfish", icoon: "icons/Goudvissen.png", map: "Vissen", 
         quote: `Goldfish possess a surprising capacity for memory and recognition
         <br><br>- Sy Montgomery`
       },
@@ -19021,160 +19329,212 @@ const combinaties = [
   {
     input: ["Mens", "Krokussen"],
     hint: `Sommige krokussen voelen zich thuis bij de mens.. of andersom?`,
+    hint_en: `Some crocuses feel at home among humans.. or the other way around?`,
     tijd: 3_600,
     output: [
-      { naam: "Saffraan", icoon: "icons/Saffraan.png", map: "Smaakmakers", 
+      { naam: "Saffraan", naam_en: "Saffron", icoon: "icons/Saffraan.png", map: "Smaakmakers", 
         quote: `Saffron strengthens the heart and uplifts the spirit, but must be used with care due to its potency
         <br><br>- Avicenna`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Mens", "Mandarijnen"],
     hint: `Wat mensen wel niet kunnen verzinnen.. van een simpele mandarijn.`,
+    hint_en: `The things people can come up with.. from just a simple mandarin.`,
     tijd: 4_000,
     output: [
-      { naam: "Sinaasappels", icoon: "icons/Sinaasappels.png", map: "Fruit", 
+      { naam: "Sinaasappels", naam_en: "Oranges", icoon: "icons/Sinaasappels.png", map: "Fruit", 
         quote: `To taste the orange is to hold sunlight in the hand
         <br><br>- John Keats`
       },
-      { naam: "Citroenen", icoon: "icons/Citroenen.png", map: "Fruit", 
+      { naam: "Citroenen", naam_en: "Lemons", icoon: "icons/Citroenen.png", map: "Fruit", 
         quote: `The scent of lemon is clean, sharp, and instantly awakening to the senses
         <br><br>- M. Fisher`
       },
-      { naam: "Limoenen", icoon: "icons/Limoenen.png", map: "Fruit", 
+      { naam: "Limoenen", naam_en: "Limes", icoon: "icons/Limoenen.png", map: "Fruit", 
         quote: `Lime is essential in many cuisines for its ability to balance richness with acidity
         <br><br>- Jane Grigson`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Mens", "Papyrusriet"],
     hint: `Wat denkt men wel niet, van papyrusriet?`,
+    hint_en: `What do people actually think of papyrus reeds?`,
     tijd: 4900,
     output: [
-      { naam: "Papyrus", icoon: "icons/Papyrus.png", map: "Materialen", 
+      { naam: "Papyrus", naam_en: "Papyrus", icoon: "icons/Papyrus.png", map: "Materialen", 
         quote: `Papyrus grows in the marshes of Egypt, and from it is made the material for writing
         <br><br>- Plinius de Oudere`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Mens", "Cacao"],
     hint: `Ontdek hoe cacao een vreugdevol stofje in de hersenen vrijmaakt.`,
+    hint_en: `Discover how cocoa triggers the release of a joy-inducing substance in the brain.`,
     tijd: 1600,
     output: [
-      { naam: "Chocolade", icoon: "icons/Chocolade.png", map: "Genotwaren", 
+      { naam: "Chocolade", naam_en: "Chocolate", icoon: "icons/Chocolade.png", map: "Genotwaren", 
         quote: `This chocolate drink is the most precious thing I have ever encountered in the New World
         <br><br>- Hernán Cortés`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: [
       ["Mens", "Theeplanten"], ["Mens", "Jasmijn"], ["Mens", "Lavendel"], ["Mens", "Kamille"], ["Mens", "Rooibos"]
     ],
     hint: `Theeplanten.. de naam zegt het al.`,
+    hint_en: `Tea plants.. the name says it all, doesn't it?`,
     tijd: 4700,
     output: [
-      { naam: "Thee", icoon: "icons/Thee.png", map: "Genotwaren", 
+      { naam: "Thee", naam_en: "Tea", icoon: "icons/Thee.png", map: "Genotwaren", 
         quote: `Drink your tea slowly and reverently, as if it is the axis on which the earth revolves
         <br><br>- Thich Nhat Hanh`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Mens", "Tabaksplanten"],
     hint: `De bladeren van tabaksplanten kun je drogen, maar of dat goed is..`,
+    hint_en: `You can dry the leaves of tobacco plants, but whether that's a good idea...`,
     tijd: 2700,
     output: [
-      { naam: "Tabak", icoon: "icons/Tabak.png", map: "Genotwaren", 
+      { naam: "Tabak", naam_en: "Tobacco", icoon: "icons/Tabak.png", map: "Genotwaren", 
         quote: `Man is born free, yet binds himself to habits that enslave him
         <br><br>- Jean-Jacques Rousseau`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: [
       ["Roet", "Veer"], ["Roet", "Waterriet"]
     ],
     hint: `Met roet kun je prima schrijven..`,
+    hint_en: `You can write quite will with soot..`, 
     tijd: 4900,
     output: [
-      { naam: "Pen", icoon: "icons/Pen.png", map: "Uitvindingen", 
+      { naam: "Pen", naam_en: "Pen", icoon: "icons/Pen.png", map: "Uitvindingen", 
         quote: `The spoken word is the symbol of mental experience, and written words are the symbols of spoken words
         <br><br>- Aristoteles`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Brons", "Mens"],
     hint: `Brons maakte het beroemde broertje van de speer.`,
+    hint_en: `Bronze created the spear's famous little brother.`,
     tijd: 3800,
     output: [
-      { naam: "Zwaard", icoon: "icons/Zwaard.png", map: "Uitvindingen", 
+      { naam: "Zwaard", naam_en: "Sword", icoon: "icons/Zwaard.png", map: "Uitvindingen", 
         quote: `They would draw their swords for a friend and count death as nothing
         <br><br>- Sima Qian`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Zeilboot", "Leger"],
     hint: `Ook het leger moet de baas zijn over het eigen water.`,
+    hint_en: `The army must be in control of its own water too.`,
     tijd: 3500,
     output: [
-      { naam: "Vloot", icoon: "icons/Vloot.png", map: "Samenleving", 
+      { naam: "Vloot", naam_en: "Fleet", icoon: "icons/Vloot.png", map: "Samenleving", 
         quote: `He who commands the sea commands everything
         <br><br>- Cicero`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Ruiternomaden", "Hout"],
     hint: `In plaats van op het paard te zitten, kan je met wat plankjes ook mensen erachter meenemen.`,
+    hint_en: `Instead of sitting on it, you can also use a few small boards behind the horse to bring people
+    along behind it.`,
     tijd: 4100,
     output: [
-      { naam: "Kar", icoon: "icons/Kar.png", map: "Uitvindingen", 
+      { naam: "Kar", naam_en: "Cart", icoon: "icons/Kar.png", map: "Uitvindingen", 
         quote: `They excel in riding and the use of the bow and the chariot
         <br><br>- Herodotos`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
+    uitleg: { thresholdElement: { naam: "Schrift", naam_en: "Writing",
+        titel: "Probeer opnieuw na de uitvinding van het schrift..",
+        titel: "Try again after the invention of writing..",
         tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+        <br><br>Eerst nodig: landbouwproducten en vee.`,
+        tekst_en: `Only after the great wave of agricultural experiments and domestication, time was ripe for writing.
+        <br><br>Required first: some agricultural products and cattle.` } }
   },
   {
     input: ["Schrift", "Heerser"],
     hint: `De wil van de heerser is in steen gebeiteld en door de stad gehangen.`,
+    hint_en: `The ruler's will is carved in stone and hung throughout the city.`,
     output: [
-      { naam: "Wet", icoon: "icons/Wet.png", map: "Samenleving", 
+      { naam: "Wet", naam_en: "Law", icoon: "icons/Wet.png", map: "Samenleving", 
         quote: `We are all servants of the laws in order that we may be free
         <br><br>- Cicero`
       }
@@ -19183,9 +19543,10 @@ const combinaties = [
   {
     input: ["Staal", "Magnetisme"],
     hint: `Zou dat staal na goed wrijven nog ergens heen wijzen? Naar de aardkern misschien?`,
+    hint_en: `After being rubbed well, might that piece of steel still point somewhere? Perhaps toward the Earth's core?`,
     tijd: 2_200,
     output: [
-      { naam: "Kompas", icoon: "icons/Kompas.png", map: "Uitvindingen", 
+      { naam: "Kompas", naam_en: "Compass", icoon: "icons/Kompas.png", map: "Uitvindingen", 
         quote: `Without a compass, the sea becomes a place without memory or direction
         <br><br>- Francis Drake`
       }
@@ -19194,9 +19555,10 @@ const combinaties = [
   {
     input: ["Pijl-en-boog", "Ruiternomaden"],
     hint: `Haal de vijand te paard in, draai je om op het paard en schiet de pijl in hun gezicht.`, 
+    hint_en: `Catch up to the enemy on horseback, turn around in the saddle and shoot the arrow into the face.`, 
     tijd: 2230,
     output: [
-      { naam: "Stepperijk", icoon: "icons/Stepperijk.png", map: "Samenleving", 
+      { naam: "Stepperijk", naam_en: "Steppe empire", icoon: "icons/Stepperijk.png", map: "Samenleving", 
         quote: `He rules over so many lands and peoples that their number cannot be told
         <br><br>- Marco Polo`
       }
@@ -19207,9 +19569,10 @@ const combinaties = [
       ["Papyrus", "Papyrus"], ["Pen", "Papyrus"]
     ],
     hint: `Papyrusrollen, orakelbotten, perkament.. Romeinen stapelden ze op en bonden aan elkaar.`, 
+    hint_en: `Papyrus scrolls, oracle bones, parchment.. Romans piled them up and bound them together.`, 
     tijd: 1900,
     output: [
-      { naam: "Boek", icoon: "icons/Boek.png", map: "Uitvindingen", 
+      { naam: "Boek", naam_en: "Book", icoon: "icons/Boek.png", map: "Uitvindingen", 
         quote: `I have always imagined that Paradise will be a kind of library
         <br><br>- Jorge Borges`
       }
@@ -19220,9 +19583,10 @@ const combinaties = [
       ["Vloot", "Handel"], ["Vloot", "Imperium"],
     ],
     hint: `Stadstaten met vloten zoeken naar graan en nieuwe handel overzee.`, 
+    hint_en: `Those city-states with fleets will find grain and trade routes overseas.`, 
     tijd: 4200,
     output: [
-      { naam: "Kustforten", icoon: "icons/Kustforten.png", map: "Samenleving", 
+      { naam: "Kustforten", naam_en: "Coastal forts", icoon: "icons/Kustforten.png", map: "Samenleving", 
         quote: `Cities placed on the sea are naturally strong because they command access to many lands
         <br><br>- Strabo`
       }
@@ -19231,9 +19595,11 @@ const combinaties = [
   {
     input: ["Wet", "Gemeenschap"],
     hint: `Gelijktijdig verjoegen Athene en Rome hun tiran, waarna de gemeenschap de wet overnam.`, 
+    hint_en: `Athens and Rome both ousted their tyrants around the same time, after which the community rewrote
+    the law.`, 
     tijd: 2530,
     output: [
-      { naam: "Democratie", icoon: "icons/Democratie.png", map: "Samenleving", 
+      { naam: "Democratie", naam_en: "Democration", icoon: "icons/Democratie.png", map: "Samenleving", 
         quote: `The people is not every group of men assembled in any way, 
         but an assembly bound together by agreement about justice and partnership for the common good
         <br><br>- Cicero`
@@ -19244,152 +19610,208 @@ const combinaties = [
   {
     input: ["Kompas", "Zeilboot"],
     hint: `Wie had gedacht om het kompas op zee te gebruiken!`,
+    hint_en: `Who would have thought you could use a compass at sea!`,
     tijd: 1_000,
     output: [
-      { naam: "Oceaanvaartuig", icoon: "icons/Oceaanvaartuig.png", map: "Uitvindingen", 
+      { naam: "Oceaanvaartuig", naam_en: "Ocean vessel", icoon: "icons/Oceaanvaartuig.png", map: "Uitvindingen", 
         quote: `The ocean was not a barrier but a space of connection.
         <br><br>- Fernand Braudel`
       }
     ],
-    uitleg: {
-      threshold: {
-        titel: "Overzeese Imperia", 
+    uitleg: { threshold: { titel: "Overzeese Imperia", titel_en: "Empires overseas",
         tekst: "Je moet eerst nog wat meer halen...",
+        tekst_en: "You need to create a bit more first...",
         requirements: 
         ["Honden"]
       },
-      normal: {
-        achtergrond: "afb/Overzeese_imperia.jpeg",
-        titel: "OVERZEESE IMPERIA 1000 BP",
+      normal: { achtergrond: "afb/Overzeese_imperia.jpeg",
+        titel: "OVERZEESE IMPERIA 1000 BP", titel_en, "EMPIRES OVERSEAS 1000 BP",
         tekst: 
         `<span>Het jaar 1000 was een omslagpunt van de tijdelijke krimp van de wereldbevolking gaande sinds de 1e eeuw.
         De wereldbevolking was hersteld in omvang en zou exponentieel-versnellend toenemen door de proto-globalisering
         van Afro-Eurazië, dat met de Amerikaanse betrekking bij deze wereld in 1492 zou doorzetten tot ware
-        globalisering. Van circa 253 miljoen zou de wereldbevolking weer toenemen tot 374 miljoen in 1400.
-        
-        <br><br>Stepperuiternomaden hadden tot dan toe altijd militaire superioriteit gehad over de 
+        globalisering. Van circa 253 miljoen zou de wereldbevolking weer toenemen tot 374 miljoen in 1400.</span>
+        <br><br>
+        <span>Stepperuiternomaden hadden tot dan toe altijd militaire superioriteit gehad over de 
         grote landbouwsamenlevingen en benut met afpersing, plundertochten of regelrechte verovering.
         Alles veranderde nu vanaf 1000 de oceaan centraal kwam te staan. De steppemacht bereikte nog wel een 
         hoogtepunt met het Mongoolse Rijk in de 13e eeuw, maar wat in rap tempo toenam waren de innovaties 
         in de scheepvaart. Rond 1040 werd in China voor het eerst het kompas gebruikt voor navigatie op zee. De drijvende 
-        magnetische naald kon betrouwbaar richting geven, zelfs bij slecht weer. 
-        
-        <br><br> In de Stille Oceaan voeren de Austronesiërs van het ene eiland naar het andere, en bereikten 
+        magnetische naald kon betrouwbaar richting geven, zelfs bij slecht weer.</span>
+        <br><br>
+        <span>In de Stille Oceaan voeren de Austronesiërs van het ene eiland naar het andere, en bereikten 
         Nieuw-Zeeland eind 13e eeuw. In 1405 begonnen de oceaanexpedities van de Chinese admiraal Zheng He in opdracht
         van de keizer om het Chinese tribuutsysteem uit te breiden met de landen verbonden met de Indische Oceaan.
         Na zes grote oceaanreizen was het in 1433 afgelopen, maar Portugual begon aan het andere continentale uiteinde
         met verkennen van oceaanroutes west- en zuidwaarts. In 1420 ontdekten zij Madeira en in 1427 de Azoren.
         Langs de kust van West-Afrika trokken zij verder naar Kaapverdië in 1456, São Tomé en Principe in 1470, en
-        Kongo in 1482. 
-        
-        <br><br>Na de ronding van Kaap de Goede Hoop in 1488 kon West-Europa zelf deelnemen aan de Indische
+        Kongo in 1482.</span>
+        <br><br>
+        <span>Na de ronding van Kaap de Goede Hoop in 1488 kon West-Europa zelf deelnemen aan de Indische
         Oceaanhandel en met de ontdekte oceaanroute naar Amerika in 1492 was het recept voor werelddominantie door
         oceaanvaart compleet. Overzeese imperia namen het stokje over van de stepperuiternomadenrijken en zouden
         de welvaart militair opeisen met hun schepen, evenals ontwikkelingen in vuurwapens en mechanische energie 
-        door waterraden en windmolens.
-        </span>`,
+        door waterraden en windmolens.</span>`,
+
+        tekst_en: 
+        `<span>The year 1000 marked a turning point, ending the period of decline in the global population that had
+        been ongoing since the first century. The world population had recovered in size and was set to grow at an
+        accelerating , exponential rate, driven by the proto-globalisation of Afro-Eurasia - a process that would 
+        evolve into true globalisation following the inclusion of the Americas in 1492. From approximately 253 million, 
+        the global population would go on to increase to 374 million by the year 1400.</span>
+        <br><br>
+        <span>Until then, nomadic steppe horsemen had always held military superiority over large agrarian societies, 
+        which they exploited through extortion, raids or outright conquest. Everything changed from the year 1000 onwards,
+        as the oceans began to take center stage. Although steppe power reached a high point with the Mongol Empire in 
+        the 13th century, innovations in maritime technology were advancing rapidly. Around 1040, the compass was used
+        for the first time in Cihna for navigation at sea; the floating magnetic needle could provide reliable directional
+        guidance, even in poor weather.</span>
+        <br><br>
+        <span>In the Pacific Ocean, the Austronesians sailed from one island to another, reaching New Zealand by the 
+        end of the 13th century. In 1405, the Chinese admiral Zheng He - acting on the emperor's orders - began a series
+        of maritime expeditions intended to expand the Chinese tributary system to include lands bordering the Indian 
+        Ocean. Thes voyages concluded in 1433 after six major expeditions. Meanwhile, at the opposite end of the Eurasian
+        landmass, the Portuguese began exploring ocean routes heading west and south. They discovered Madeira in 1420 and
+        the Azores in 1427. Continuing along the coast of West Africa, they reached Cape Verde in 1456, São Tomé and
+        Principe in 1470, and the Congo in 1482.</span>
+        <br><br>
+        <span>Following the rounding of the Cape of Good Hope in 1488, Western Europe was able to participate directlly 
+        in Indian Ocean trade; with the discovery of an oceanic route to the Americas in 1492, the formula for global
+        dominance through seafaring was complete. Overseas empires took over from the empires of nomadic steppe 
+        horsemen, seizing wealth through military force - leveraging their ships, as well as advancements in 
+        firearms and mechanical energy derived from water wheels and windmills.</span>`
       }
     }
   },
   {
     input: ["Mens", "Orchideeën"],
     hint: `Ideeën van de orchideeën zijn als orgasmes in de mond.`,
+    hint_en: `Ideas from the orchids are like orgasms in the mouth.`,
     tijd: 900,
     output: [
-      { naam: "Vanille", icoon: "icons/Vanille.png", map: "Genotwaren", 
+      { naam: "Vanille", naam_en: "Vanilla", icoon: "icons/Vanille.png", map: "Genotwaren", 
         quote: `Chocolate flavored with vanilla was offered to us as a drink of nobility
         <br><br>- Hernán Cortés`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", naam_en: "Ocean vessel", 
+        titel: "Probeer opnieuw na de uitvinding van de oceaanvaartuigen..",
+        titel_en: "Try again after the invention of ocean vessels..",
+        tekst: `Het is wachten op de mogelijkheid voor de eerste grote oceaanreizen en globalisering.  
+        <br><br>Eerst nodig: oceaanvaartuigen.`,
+        tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
+        <br><br>Required first: ocean vessels.` } }
   },
   {
     input: ["Mens", "Kool"],
     hint: `Kool heeft veel potentie om zich tot verschillende soorten te laten telen.`,
+    hint_en: `Cabbage has great potential to be cultivated into various types.`,
     tijd: 700,
     output: [
-      { naam: "Broccoli", icoon: "icons/Broccoli.png", map: "Groenten", 
+      { naam: "Broccoli", naam_en: "Broccoli", icoon: "icons/Broccoli.png", map: "Groenten", 
         quote: `Broccoli contains a wide range of vitamins, minerals, fiber, and sulfur-containing compounds
         <br><br>- Harold McGee`
       },
-      { naam: "Bloemkool", icoon: "icons/Bloemkool.png", map: "Groenten", 
+      { naam: "Bloemkool", naam_en: "Cauliflower", icoon: "icons/Bloemkool.png", map: "Groenten", 
         quote: `The cauliflower head is a dense cluster of undeveloped flower buds
         <br><br>- David Goodsell`
       },
-      { naam: "Rode kool", icoon: "icons/Rode kool.png", map: "Groenten", 
+      { naam: "Rode kool", naam_en: "Red cabbage", icoon: "icons/Rode kool.png", map: "Groenten", 
         quote: `Few vegetables are as visually striking as red cabbage when sliced open
         <br><br>- Anna Pavord`
       },
-      { naam: "Spruitjes", icoon: "icons/Spruitjes.png", map: "Groenten", 
+      { naam: "Spruitjes", naam_en: "Brussels sprouts", icoon: "icons/Spruitjes.png", map: "Groenten", 
         quote: `Brussels sprouts were developed in Belgium from wild cabbage varieties during the Middle Ages
         <br><br>- Andrew Smith`
       },
-      { naam: "Boerenkool", icoon: "icons/Boerenkool.png", map: "Groenten", 
+      { naam: "Boerenkool", naam_en: "Kale", icoon: "icons/Boerenkool.png", map: "Groenten", 
         quote: `Simple greens such as kale belong to the ordinary dignity of everyday food
         <br><br>- George Orwell`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Schrift", titel: "Probeer opnieuw na de uitvinding van het schrift..",
-        tekst: `Pas na de grote golf van landbouwexperimenten en domesticatie is het tijd voor het schrift.  
-        <br><br>Eerst nodig: landbouwproducten en vee.` } }
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", naam_en: "Ocean vessel", 
+        titel: "Probeer opnieuw na de uitvinding van de oceaanvaartuigen..",
+        titel_en: "Try again after the invention of ocean vessels..",
+        tekst: `Het is wachten op de mogelijkheid voor de eerste grote oceaanreizen en globalisering.  
+        <br><br>Eerst nodig: oceaanvaartuigen.`,
+        tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
+        <br><br>Required first: ocean vessels.` } }
   },
   {
     input: ["Mens", "Vinken"],
     hint: `Sommige vinken voelen zich thuis bij de mens.. of andersom?`,
+    hint_en: `Some finches feel at home among humans.. or the other way around?`,
     tijd: 400,
     output: [
-      { naam: "Kanaries", icoon: "icons/Kanaries.png", map: "Vogels", 
+      { naam: "Kanaries", naam_en: "Canaries", icoon: "icons/Kanaries.png", map: "Vogels", 
         quote: `Selective breeding has produced canaries with remarkable variation in color and song
         <br><br>- William Beebe`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
-        tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
-        <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", naam_en: "Ocean vessel", 
+        titel: "Probeer opnieuw na de uitvinding van de oceaanvaartuigen..",
+        titel_en: "Try again after the invention of ocean vessels..",
+        tekst: `Het is wachten op de mogelijkheid voor de eerste grote oceaanreizen en globalisering.  
+        <br><br>Eerst nodig: oceaanvaartuigen.`,
+        tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
+        <br><br>Required first: ocean vessels.` } }
   },
   {
-    input: ["Mens", "Agave"],
-    hint: `Vanwaar de agave zo gebruiken?`,
+    input: ["Agavae", "Gist"],
+    hint: `Vanwaar de agave zo gebruiken? Vergist hij zich?`,
+    hint_en: `Why using the agave like that? Is it brewing something?`,
     tijd: 450,
     output: [
-      { naam: "Tequila", icoon: "icons/Tequila.png", map: "Genotwaren", 
+      { naam: "Tequila", naam_en: "Tequila", icoon: "icons/Tequila.png", map: "Genotwaren", 
         quote: `The Mexican is not the child of corn alone, but also of the agave
         <br><br>- Octavio Paz`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
-        tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
-        <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", naam_en: "Ocean vessel", 
+        titel: "Probeer opnieuw na de uitvinding van de oceaanvaartuigen..",
+        titel_en: "Try again after the invention of ocean vessels..",
+        tekst: `Het is wachten op de mogelijkheid voor de eerste grote oceaanreizen en globalisering.  
+        <br><br>Eerst nodig: oceaanvaartuigen.`,
+        tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
+        <br><br>Required first: ocean vessels.` } }
   },
   {
     input: ["Mens", "Koffieplanten"],
     hint: `Koffieplanten.. de naam zegt het eigenlijk al.`,
+    hint_en: `Coffee plants.. the name pretty much says it all.`,
     tijd: 1000,
     output: [
-      { naam: "Koffie", icoon: "icons/Koffie.png", map: "Genotwaren", 
+      { naam: "Koffie", naam_en: "Coffee", icoon: "icons/Koffie.png", map: "Genotwaren", 
         quote: `Coffee is a drink that makes one sleep when one does not drink it
         <br><br>- Voltaire`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
-        tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
-        <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", naam_en: "Ocean vessel", 
+        titel: "Probeer opnieuw na de uitvinding van de oceaanvaartuigen..",
+        titel_en: "Try again after the invention of ocean vessels..",
+        tekst: `Het is wachten op de mogelijkheid voor de eerste grote oceaanreizen en globalisering.  
+        <br><br>Eerst nodig: oceaanvaartuigen.`,
+        tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
+        <br><br>Required first: ocean vessels.` } }
   },
   {
     input: ["Kola", "Coca"],
     hint: `We voegen de kolanoten bij cocabladeren..`,
+    hint_en: `We add the kola nuts to the coca leaves..`,
     tijd: 140,
     output: [
-      { naam: "Cola", icoon: "icons/Cola.png", map: "Genotwaren", 
+      { naam: "Cola", naam_en: "Cola", icoon: "icons/Cola.png", map: "Genotwaren", 
         quote: `Coca-Cola was originally intended as a patent medicine for headaches and fatigue
         <br><br>- John Pemberton`
       }
     ],
-    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", titel: "Probeer opnieuw na de eerste oceaanvaart.",
-        tekst: `Heb je al een kompas? Heb je al een schip? Dan ben je bijna zo ver..
-        <br><br>Eerst nodig: alle uitvindingen uit de Oudheid.` } }
+    uitleg: { thresholdElement: { naam: "Oceaanvaartuig", naam_en: "Ocean vessel", 
+        titel: "Probeer opnieuw na de uitvinding van de oceaanvaartuigen..",
+        titel_en: "Try again after the invention of ocean vessels..",
+        tekst: `Het is wachten op de mogelijkheid voor de eerste grote oceaanreizen en globalisering.  
+        <br><br>Eerst nodig: oceaanvaartuigen.`,
+        tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
+        <br><br>Required first: ocean vessels.` } }
   }
 ];
 
