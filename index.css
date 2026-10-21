@@ -247,5 +247,14 @@ body {
                   font-size: 14px;
                   opacity: 0.8;
                 }
-              }
+
+                .taal-box {
+                  width: min(94vw, 400px);
+                }
+                
+                .taal-knop {
+                  padding: 17px 18px;
+                  font-size: 17px;
+                }
+}
               
