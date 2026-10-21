@@ -722,7 +722,7 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     
     // 🔹 kleine random X + Y beweging (millimeters/subtiel)
     const moveX = (Math.random() * 20 - 10).toFixed(1) + "px";
-    const moveY = (Math.random() * 10 - 5).toFixed(1) + "px";
+    const moveY = "0px";
     
     // 🔹 random duur zodat alles onafhankelijk beweegt
     const duration = (6 + Math.random() * 6).toFixed(2) + "s"; // 6–12 sec
