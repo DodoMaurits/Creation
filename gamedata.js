@@ -15394,12 +15394,15 @@ const combinaties = [
         <br><br>- Henry Longfellow`
       }
     ]
-  },
+  }, /* --- TROTS --- */
   {
     input: [
-      ["Pinguïns", "Vreugde"], ["Arenden", "Vreugde"], ["Ganzen", "Vreugde"], ["Zwanen", "Vreugde"], 
+      /* --- VOGELS --- */
+      ["Pinguïns", "Vreugde"], ["Arenden", "Vreugde"], ["Zwanen", "Vreugde"], ["Ganzen", "Vreugde"], 
       ["Flamingo", "Vreugde"], ["Fazanten", "Vreugde"], ["Kraaien", "Vreugde"], ["Pauwen", "Vreugde"], 
-      ["Papegaaien", "Vreugde"]
+      ["Papegaaien", "Vreugde"],
+      /* --- PRIMATEN --- */
+      ["Mens", "Vreugde"]
     ],
     hint: `Voor wie het zo ervaart mag trots zijn op het eten.`,
     hint_en: `Those who perceive it this way can take pride in their food.`,
@@ -15421,7 +15424,9 @@ const combinaties = [
       /* --- CARNIVOREN --- */
       ["Wolven", "Hiërarchie"], ["Wolven", "Wolven"],
       ["Katten", "Hiërarchie"], ["Katten", "Wolven"],
-      ["Honden", "Hiërarchie"], ["Honden", "Wolven"]
+      ["Honden", "Hiërarchie"], ["Honden", "Wolven"],
+      /* --- PRIMATEN --- */
+      ["Mens", "Hiërarchie"], ["Mens", "Mens"]
     ],
     hint: `Met hiërarchie komt ook een nieuwe emotie vrij bij hen die er last van hebben.`,
     hint_en: `Hierarchy unlocks a new emotion in those who suffer because of it.`,
@@ -15435,19 +15440,20 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Orka", "Orka"], ["Narwallen", "Narwallen"], ["Dolfijnen", "Dolfijnen"], ["Potvissen", "Potvissen"],
-      /* --- VOGELS --- */
-      ["Pinguïns", "Pinguïns"], ["Duiven", "Duiven"], ["Eenden", "Eenden"], ["Ganzen", "Ganzen"], ["Zwanen", "Zwanen"],
-      ["Zwaluwen", "Zwaluwen"], ["Spreeuwen", "Spreeuwen"], ["Ooievaars", "Ooievaars"], ["Meeuwen", "Meeuwen"],
-      ["Papegaaiduikers", "Papegaaiduikers"], ["Aalscholvers", "Aalscholvers"], ["Flamingo", "Flamingo"], 
-      ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"], ["Kraaien", "Kraaien"], 
-      ["Papegaaien", "Papegaaien"], 
+      ["Potvissen", "Potvissen"], ["Orka", "Orka"], ["Narwallen", "Narwallen"], ["Dolfijnen", "Dolfijnen"], 
       /* --- ZOOGDIEREN --- */
       ["Olifanten", "Olifanten"],
+      /* --- VOGELS --- */
+      ["Pinguïns", "Pinguïns"], ["Duiven", "Duiven"], ["Zwanen", "Zwanen"], ["Ganzen", "Ganzen"], ["Eenden", "Eenden"], 
+      ["Zwaluwen", "Zwaluwen"], ["Spreeuwen", "Spreeuwen"], ["Ooievaars", "Ooievaars"], ["Meeuwen", "Meeuwen"],
+      ["Aalscholvers", "Aalscholvers"], ["Flamingo", "Flamingo"], ["Papegaaiduikers", "Papegaaiduikers"], 
+      ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kraaien", "Kraaien"], ["Papegaaien", "Papegaaien"], 
+      ["Kieviten", "Kieviten"], 
       /* --- PRIMATEN --- */
-      ["Neusapen", "Neusapen"], ["Langoeren", "Langoeren"], ["Bavianen", "Bavianen"], ["Lemuren", "Lemuren"],
-      ["Makaken", "Makaken"], ["Kapucijnapen", "Kapucijnapen"], ["Slingerapen", "Slingerapen"], ["Brulapen", "Brulapen"],
-      ["Gorilla", "Gorilla"], ["Chimpansees", "Chimpansees"], ["Bonobo", "Bonobo"], ["Mens", "Mens"]
+      ["Lemuren", "Lemuren"], ["Makaken", "Makaken"], ["Neusapen", "Neusapen"], ["Langoeren", "Langoeren"], 
+      ["Bavianen", "Bavianen"], ["Kapucijnapen", "Kapucijnapen"], ["Slingerapen", "Slingerapen"], 
+      ["Brulapen", "Brulapen"], ["Gorilla", "Gorilla"], ["Chimpansees", "Chimpansees"], ["Bonobo", "Bonobo"], 
+      ["Mens", "Mens"]
     ],
     hint: `Van de grote dieren zijn er ook die liever samen leven.`,
     hint_en: `Among the largest animals, there are also some that prefer to live together.`,
@@ -18121,20 +18127,13 @@ const combinaties = [
   },
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Orka", "Jaloezie"], ["Narwallen", "Jaloezie"], ["Dolfijnen", "Jaloezie"], ["Potvissen", "Jaloezie"], 
-      /* --- ZOOGDIEREN --- */
-      ["Olifanten", "Jaloezie"],
       /* --- VOGELS --- */
       ["Kippen", "Jaloezie"], ["Fazanten", "Jaloezie"], ["Kraaien", "Jaloezie"], ["Pauwen", "Jaloezie"], 
       ["Papegaaien", "Jaloezie"],
       /* --- CARNIVOREN --- */
       ["Wolven", "Jaloezie"], ["Katten", "Jaloezie"], ["Honden", "Jaloezie"],
       /* --- PRIMATEN --- */
-      ["Neusapen", "Jaloezie"], ["Langoeren", "Jaloezie"], ["Bavianen", "Jaloezie"], ["Lemuren", "Jaloezie"], 
-      ["Makaken", "Jaloezie"], ["Kapucijnapen", "Jaloezie"], ["Slingerapen", "Jaloezie"], ["Brulapen", "Jaloezie"], 
-      ["Makaken", "Jaloezie"], ["Kapucijnapen", "Jaloezie"], ["Slingerapen", "Jaloezie"], ["Brulapen", "Jaloezie"], 
-      ["Gorilla", "Jaloezie"], ["Chimpansees", "Jaloezie"], ["Bonobo", "Jaloezie"], ["Mens", "Jaloezie"]
+      ["Mens", "Jaloezie"]
     ],
     output: [
       { naam: "Woede", naam_en: "Anger", icoon: "icons/Woede.png", map: "Brein", 
