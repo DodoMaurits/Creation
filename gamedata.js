@@ -8853,6 +8853,71 @@ const combinaties = [
         <br><br>- Alan Feduccia`
       }
     ]
+  }, /* ------------------ ARCHAEOPTERYX ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Archaeopteryx", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Archaeopteryx", "Luizen"], ["Archaeopteryx", "Mijten"], ["Archaeopteryx", "Teken"], ["Archaeopteryx", "Termieten"], 
+      ["Archaeopteryx", "Pissebedden"], ["Archaeopteryx", "Oerpolyneopteren"], ["Archaeopteryx", "Duizendpoten"], 
+      ["Archaeopteryx", "Hooiwagens"], ["Archaeopteryx", "Schorpioenen"], ["Archaeopteryx", "Spinnen"], 
+      ["Archaeopteryx", "Zilvervisjes"], ["Archaeopteryx", "Wandelende takken"], ["Archaeopteryx", "Kakkerlakken"], 
+      ["Archaeopteryx", "Oerhymenopteren"], ["Archaeopteryx", "Slakken"], ["Archaeopteryx", "Libellen"], 
+      ["Archaeopteryx", "Kevers"], ["Archaeopteryx", "Lieveheersbeestjes"], ["Archaeopteryx", "Mieren"], 
+      ["Archaeopteryx", "Wespen"], ["Archaeopteryx", "Vliegen"], ["Archaeopteryx", "Vlinders"], 
+      ["Archaeopteryx", "Krekels"], ["Archaeopteryx", "Sprinkhanen"], ["Archaeopteryx", "Muggen"], 
+      ["Archaeopteryx", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Archaeopteryx", "Ei"]
+    ],
+    output: [
+      { naam: "Archaeopteryx", naam_en: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
+        quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
+        wings, and a skeletal form that could take to the air
+        <br><br>- Alan Feduccia`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Archaeopteryx", "Oertetrapoden"], ["Archaeopteryx", "Salamanders"], ["Archaeopteryx", "Kikkers"], 
+      ["Archaeopteryx", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Archaeopteryx", "Lepidosauriërs"], ["Archaeopteryx", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Archaeopteryx", "Muizen"], ["Archaeopteryx", "Hamsters"], ["Archaeopteryx", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Archaeopteryx", naam_en: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
+        quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
+        wings, and a skeletal form that could take to the air
+        <br><br>- Alan Feduccia`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Bruinwieren", "Bruinwieren"],
