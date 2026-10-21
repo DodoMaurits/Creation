@@ -4127,7 +4127,7 @@ const combinaties = [
       ["Meeuwen", "Meeuwen"], ["Aalscholvers", "Aalscholvers"], ["Papegaaiduikers", "Papegaaiduikers"], 
       ["Eenden", "Eenden"], ["Ganzen", "Ganzen"], ["Zwanen", "Zwanen"], ["Kieviten", "Kieviten"], ["Kippen", "Kippen"],
       ["Pauwen", "Pauwen"], ["Papegaaien", "Papegaaien"], ["Mussen", "Mussen"], ["Vinken", "Vinken"], 
-      ["Fazanten", "Fazanten"], 
+      ["Fazanten", "Fazanten"], ["Kanaries", "Kanaries"],
       /* --- CARNIVOREN --- */
       ["Oerhondachtigen", "Oerhondachtigen"], ["Oerkatachtigen", "Oerkatachtigen"], ["Walrussen", "Walrussen"], 
       ["Zeehonden", "Zeehonden"], ["Zeeleeuwen", "Zeeleeuwen"], ["Otters", "Otters"], ["Dassen", "Dassen"], 
@@ -15412,33 +15412,16 @@ const combinaties = [
   },
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Orka", "Orka"], ["Narwallen", "Narwallen"], ["Dolfijnen", "Dolfijnen"], ["Potvissen", "Potvissen"],
       /* --- VOGELS --- */
-      ["Pinguïns", "Pinguïns"], ["Duiven", "Duiven"], ["Eenden", "Eenden"], ["Ganzen", "Ganzen"], ["Zwanen", "Zwanen"],
-      ["Zwaluwen", "Zwaluwen"], ["Spreeuwen", "Spreeuwen"], ["Ooievaars", "Ooievaars"], ["Meeuwen", "Meeuwen"],
-      ["Papegaaiduikers", "Papegaaiduikers"], ["Aalscholvers", "Aalscholvers"], ["Flamingo", "Flamingo"], 
-      ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"],
-      /* --- ZOOGDIEREN --- */
-      ["Olifanten", "Olifanten"],
-      /* --- PRIMATEN --- */
-      ["Neusapen", "Neusapen"], ["Langoeren", "Langoeren"], ["Bavianen", "Bavianen"], ["Lemuren", "Lemuren"],
-      ["Makaken", "Makaken"], ["Kapucijnapen", "Kapucijnapen"], ["Slingerapen", "Slingerapen"], ["Brulapen", "Brulapen"],
-      ["Gorilla", "Gorilla"], ["Chimpansees", "Chimpansees"], ["Bonobo", "Bonobo"], ["Mens", "Mens"]
-    ],
-    hint: `Van de grote dieren zijn er ook die liever samen leven.`,
-    hint_en: `Among the largest animals, there are also some that prefer to live together.`,
-    output: [
-      { naam: "Gemeenschap", naam_en: "Community", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
-        quote: `Small communities grow great through harmony, great ones fall to pieces through discord
-        <br><br>- Sallust`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Kippen", "Hiërarchie"], ["Fazanten", "Hiërarchie"], ["Kraaien", "Hiërarchie"], ["Pauwen", "Hiërarchie"],
-      ["Papegaaien", "Hiërarchie"]
+      ["Kippen", "Hiërarchie"], ["Kippen", "Kippen"]
+      ["Fazanten", "Hiërarchie"], ["Fazanten", "Fazanten"], 
+      ["Kraaien", "Hiërarchie"], ["Kraaien", "Kraaien"], 
+      ["Pauwen", "Hiërarchie"], ["Pauwen", "Pauwen"],
+      ["Papegaaien", "Hiërarchie"], ["Papegaaien", "Papegaaien"],
+      /* --- CARNIVOREN --- */
+      ["Wolven", "Hiërarchie"], ["Wolven", "Wolven"],
+      ["Katten", "Hiërarchie"], ["Katten", "Wolven"],
+      ["Honden", "Hiërarchie"], ["Honden", "Wolven"]
     ],
     hint: `Met hiërarchie komt ook een nieuwe emotie vrij bij hen die er last van hebben.`,
     hint_en: `Hierarchy unlocks a new emotion in those who suffer because of it.`,
@@ -15451,34 +15434,24 @@ const combinaties = [
   },
   {
     input: [
-      ["Kippen", "Kippen"], ["Fazanten", "Fazanten"], ["Pauwen", "Pauwen"]
+      /* --- WATERDIEREN --- */
+      ["Orka", "Orka"], ["Narwallen", "Narwallen"], ["Dolfijnen", "Dolfijnen"], ["Potvissen", "Potvissen"],
+      /* --- VOGELS --- */
+      ["Pinguïns", "Pinguïns"], ["Duiven", "Duiven"], ["Eenden", "Eenden"], ["Ganzen", "Ganzen"], ["Zwanen", "Zwanen"],
+      ["Zwaluwen", "Zwaluwen"], ["Spreeuwen", "Spreeuwen"], ["Ooievaars", "Ooievaars"], ["Meeuwen", "Meeuwen"],
+      ["Papegaaiduikers", "Papegaaiduikers"], ["Aalscholvers", "Aalscholvers"], ["Flamingo", "Flamingo"], 
+      ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"], ["Kraaien", "Kraaien"], 
+      ["Papegaaien", "Papegaaien"], 
+      /* --- ZOOGDIEREN --- */
+      ["Olifanten", "Olifanten"],
+      /* --- PRIMATEN --- */
+      ["Neusapen", "Neusapen"], ["Langoeren", "Langoeren"], ["Bavianen", "Bavianen"], ["Lemuren", "Lemuren"],
+      ["Makaken", "Makaken"], ["Kapucijnapen", "Kapucijnapen"], ["Slingerapen", "Slingerapen"], ["Brulapen", "Brulapen"],
+      ["Gorilla", "Gorilla"], ["Chimpansees", "Chimpansees"], ["Bonobo", "Bonobo"], ["Mens", "Mens"]
     ],
+    hint: `Van de grote dieren zijn er ook die liever samen leven.`,
+    hint_en: `Among the largest animals, there are also some that prefer to live together.`,
     output: [
-      { naam: "Drift", naam_en: "Desire", icoon: "icons/Drift.png", map: "Brein", 
-        quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
-        force our involuntary
-        <br><br>- Blaise Pascal`
-      },
-      { naam: "Jaloezie", naam_en: "Envy", icoon: "icons/Jaloezie.png", map: "Brein", 
-        quote: `Envy is the art of counting the other fellow's blessings instead of your own
-        <br><br>- Harold Coffin`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Kraaien", "Kraaien"], ["Papegaaien", "Papegaaien"]
-    ],
-    output: [
-      { naam: "Drift", naam_en: "Desire", icoon: "icons/Drift.png", map: "Brein", 
-        quote: `Desire and force between them are responsible for all our actions; desire causes our voluntary acts,
-        force our involuntary
-        <br><br>- Blaise Pascal`
-      },
-      { naam: "Jaloezie", naam_en: "Envy", icoon: "icons/Jaloezie.png", map: "Brein", 
-        quote: `Envy is the art of counting the other fellow's blessings instead of your own
-        <br><br>- Harold Coffin`
-      },
       { naam: "Gemeenschap", naam_en: "Community", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
         quote: `Small communities grow great through harmony, great ones fall to pieces through discord
         <br><br>- Sallust`
@@ -18148,8 +18121,11 @@ const combinaties = [
   },
   {
     input: [
+      /* --- VOGELS --- */
       ["Jaloezie", "Kippen"], ["Jaloezie", "Fazanten"], ["Jaloezie", "Kraaien"], ["Jaloezie", "Pauwen"],
-      ["Jaloezie", "Papegaaien"]
+      ["Jaloezie", "Papegaaien"],
+      /* --- CARNIVOREN --- */
+      ["Jaloezie", "Wolven"], ["Jaloezie", "Katten"], ["Jaloezie", "Honden"]
     ],
     output: [
       { naam: "Woede", naam_en: "Anger", icoon: "icons/Woede.png", map: "Brein", 
