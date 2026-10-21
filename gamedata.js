@@ -11722,6 +11722,56 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ PINGUÏNS ------------------ */
+  {
+    input: [
+      /* --- GELEEDPOTIGEN --- */
+      ["Pinguïns", "Krill"], ["Pinguïns", "Aasgarnalen"], ["Pinguïns", "Vlokreeftjes"], ["Pinguïns", "Garnalen"]
+    ],
+    output: [
+      { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
+        much fun time in the water, we don't even want to fly!
+        <br><br>- Jasmin Martin`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Pinguïns", "Inktvissen"], ["Pinguïns", "Octopussen"], 
+      /* --- VISSEN --- */
+      ["Pinguïns", "Haring"], ["Pinguïns", "Makreel"]
+    ],
+    output: [
+      { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
+        much fun time in the water, we don't even want to fly!
+        <br><br>- Jasmin Martin`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "De Maan"],
@@ -11741,6 +11791,57 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ UILEN ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Uilen", "Kevers"], ["Uilen", "Krekels"], ["Uilen", "Sprinkhanen"]
+    ],
+    output: [
+      { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
+        quote: `When the owl sings, the night is silent
+        <br><br>- Charles de Leusse`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Uilen", "Salamanders"], ["Uilen", "Kikkers"], 
+      /* --- ZOOGDIEREN --- */
+      ["Uilen", "Vleermuizen"], ["Uilen", "Ratten"], ["Uilen", "Muizen"], ["Uilen", "Hamsters"], 
+      ["Uilen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Uilen", "Duiven"], ["Uilen", "Spreeuwen"], ["Uilen", "Mussen"], ["Uilen", "Vinken"]  
+    ],
+    output: [
+      { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
+        quote: `When the owl sings, the night is silent
+        <br><br>- Charles de Leusse`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Berg"],
