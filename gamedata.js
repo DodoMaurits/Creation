@@ -15375,7 +15375,15 @@ const combinaties = [
   },
   {
     input: [
-      ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"]
+      /* --- WATERDIEREN --- */
+      ["Orka", "Dood"], ["Narwallen", "Dood"], ["Dolfijnen", "Dood"], ["Potvissen", "Dood"],
+      /* --- VOGELS --- */
+      ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"],
+      /* --- ZOOGDIEREN --- */
+      ["Olifanten", "Dood"],
+      /* --- PRIMATEN --- */
+      ["Neusapen", "Dood"], ["Langoeren", "Dood"], ["Bavianen", "Dood"], ["Lemuren", "Dood"], ["Makaken", "Dood"],
+      ["Kapucijnapen", "Dood"], ["Slingerapen", "Dood"], ["Brulapen", "Dood"]
     ],
     hint: `Verdriet is een complexe emotie die veel vraagt van sociale dieren.`,
     hint_en: `Sadness is a complex emotion that places significant demands on social animals.`,
@@ -15404,10 +15412,19 @@ const combinaties = [
   },
   {
     input: [
+      /* --- WATERDIEREN --- */
+      ["Orka", "Orka"], ["Narwallen", "Narwallen"], ["Dolfijnen", "Dolfijnen"], ["Potvissen", "Potvissen"],
+      /* --- VOGELS --- */
       ["Pinguïns", "Pinguïns"], ["Duiven", "Duiven"], ["Eenden", "Eenden"], ["Ganzen", "Ganzen"], ["Zwanen", "Zwanen"],
       ["Zwaluwen", "Zwaluwen"], ["Spreeuwen", "Spreeuwen"], ["Ooievaars", "Ooievaars"], ["Meeuwen", "Meeuwen"],
       ["Papegaaiduikers", "Papegaaiduikers"], ["Aalscholvers", "Aalscholvers"], ["Flamingo", "Flamingo"], 
-      ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"]
+      ["Mussen", "Mussen"], ["Vinken", "Vinken"], ["Kieviten", "Kieviten"],
+      /* --- ZOOGDIEREN --- */
+      ["Olifanten", "Olifanten"],
+      /* --- PRIMATEN --- */
+      ["Neusapen", "Neusapen"], ["Langoeren", "Langoeren"], ["Bavianen", "Bavianen"], ["Lemuren", "Lemuren"],
+      ["Makaken", "Makaken"], ["Kapucijnapen", "Kapucijnapen"], ["Slingerapen", "Slingerapen"], ["Brulapen", "Brulapen"],
+      ["Gorilla", "Gorilla"], ["Chimpansees", "Chimpansees"], ["Bonobo", "Bonobo"], ["Mens", "Mens"]
     ],
     hint: `Van de grote dieren zijn er ook die liever samen leven.`,
     hint_en: `Among the largest animals, there are also some that prefer to live together.`,
@@ -18076,6 +18093,7 @@ const combinaties = [
   },
   {
     input: [
+      /* --- VOGELS --- */
       ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
       ["Verdriet", "Papegaaien"]
     ],
