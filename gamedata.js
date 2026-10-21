@@ -11967,7 +11967,7 @@ const combinaties = [
   {
     input: ["Archaeopteryx", "Zaadjes"],
     hint: `Sommige archaeopteryx verschijnen waar zaadjes zijn..`,
-    hint: `Some archaeopteryx appear where the seeds are..`,
+    hint_en: `Some archaeopteryx appear where the seeds are..`,
     tijd: 10_000_000,
     output: [
       { naam: "Mussen", naam_en: "Sparrows", icoon: "icons/Mussen.png", map: "Vogels", 
