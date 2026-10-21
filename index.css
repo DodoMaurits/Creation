@@ -192,6 +192,26 @@ body {
                   padding: 12px 30px;
                 }
               }
+
+              .taal-box {
+                width: min(85vw, 360px);
+                padding: 50px 24px;
+              }
+              
+              .taal-buttons {
+                width: 100%;
+                gap: 14px;
+              }
+              
+              .taal-knop {
+                padding: 16px 20px;
+                font-size: 16px;
+              }
+              
+              .taal-vlag {
+                width: 28px;
+                height: 20px;
+              }
               
               @media (max-width: 500px) {
                 /* Kleinste schermen: nog meer verkleinen */
