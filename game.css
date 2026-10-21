@@ -1085,7 +1085,7 @@ body.result-open #corner-controls {
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(var(--move-x), var(--move-y));
+  transform: translateX(var(--move-x));
   }
   100% {
     transform: translate(0px, 0px);
