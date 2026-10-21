@@ -15383,7 +15383,7 @@ const combinaties = [
       ["Olifanten", "Dood"],
       /* --- PRIMATEN --- */
       ["Neusapen", "Dood"], ["Langoeren", "Dood"], ["Bavianen", "Dood"], ["Lemuren", "Dood"], ["Makaken", "Dood"],
-      ["Kapucijnapen", "Dood"], ["Slingerapen", "Dood"], ["Brulapen", "Dood"]
+      ["Kapucijnapen", "Dood"], ["Slingerapen", "Dood"], ["Brulapen", "Dood"], ["Mens", "Dood"]
     ],
     hint: `Verdriet is een complexe emotie die veel vraagt van sociale dieren.`,
     hint_en: `Sadness is a complex emotion that places significant demands on social animals.`,
@@ -18451,17 +18451,6 @@ const combinaties = [
         <br><br>Required first: humans.` } }
   },
   {
-    input:["Mens", "Hout"], 
-    hint: `Hout kun je slijpen en scherp maken.`,
-    hint_en: `You can sharpen wood and make it pointed.`,
-    output: [
-      { naam: "Speer", naam_en: "Spear", icoon: "icons/Speer.png", map: "Uitvindingen", 
-        quote: `I wield my spear in the name of justice
-        <br><br>- Zhao Yun`
-      }
-    ]
-  },
-  {
     input: ["Mens", "Vuur"],
     hint: `Wanneer de mens meester is over het vuur, is hij niet meer te temmen.`,
     hint_en: `Once man has mastered fire, he can no longer be tamed.`,
@@ -18471,6 +18460,17 @@ const combinaties = [
         quote: `Things are born from transformation and return again through transformation, like fire turning wood into
         ash
         <br><br>- Zhuang Zi`
+      }
+    ]
+  },
+  {
+    input:["Mens", "Hout"], 
+    hint: `Hout kun je slijpen en scherp maken.`,
+    hint_en: `You can sharpen wood and make it pointed.`,
+    output: [
+      { naam: "Speer", naam_en: "Spear", icoon: "icons/Speer.png", map: "Uitvindingen", 
+        quote: `I wield my spear in the name of justice
+        <br><br>- Zhao Yun`
       }
     ]
   },
