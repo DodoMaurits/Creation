@@ -18125,9 +18125,17 @@ const combinaties = [
   },
   {
     input: [
+      /* --- WATERDIEREN --- */
+      ["Orka", "Verdriet"], ["Narwallen", "Verdriet"], ["Dolfijnen", "Verdriet"], ["Potvissen", "Verdriet"],
       /* --- VOGELS --- */
-      ["Verdriet", "Pinguïns"], ["Verdriet", "Ganzen"], ["Verdriet", "Zwanen"], ["Verdriet", "Kraaien"],
-      ["Verdriet", "Papegaaien"]
+      ["Pinguïns", "Verdriet"], ["Ganzen", "Verdriet"], ["Zwanen", "Verdriet"], ["Kraaien", "Verdriet"], 
+      ["Papegaaien", "Verdriet"],
+      /* --- ZOOGDIEREN --- */
+      ["Olifanten", "Verdriet"],
+      /* --- PRIMATEN --- */
+      ["Neusapen", "Verdriet"], ["Langoeren", "Verdriet"], ["Bavianen", "Verdriet"], ["Lemuren", "Verdriet"], 
+      ["Makaken", "Verdriet"], ["Kapucijnapen", "Verdriet"], ["Slingerapen", "Verdriet"], ["Brulapen", "Verdriet"], 
+      ["Mens", "Verdriet"]
     ],
     hint: `Wat verdriet wel niet kan doen.`,
     hint_en: `The common good of being sad, you name it.`,
