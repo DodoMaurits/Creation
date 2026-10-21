@@ -158,8 +158,8 @@ body {
   border-radius: 3px;
 }
 
+/* ---------------- MOBIEL ---------------- */
 @media (max-width: 900px) {
-                /* ---------------- MOBIEL ---------------- */
                 body {
                   font-size: 14px;
                   overflow-x: hidden;
@@ -191,29 +191,30 @@ body {
                   font-size: 18px;
                   padding: 12px 30px;
                 }
-              }
 
-              .taal-box {
-                width: min(85vw, 360px);
-                padding: 50px 24px;
-              }
-              
-              .taal-buttons {
-                width: 100%;
-                gap: 14px;
-              }
-              
-              .taal-knop {
-                padding: 16px 20px;
-                font-size: 16px;
-              }
-              
-              .taal-vlag {
-                width: 28px;
-                height: 20px;
-              }
-              
-              @media (max-width: 500px) {
+                .taal-box {
+                  width: min(85vw, 360px);
+                  padding: 50px 24px;
+                }
+                
+                .taal-buttons {
+                  width: 100%;
+                  gap: 14px;
+                }
+                
+                .taal-knop {
+                  padding: 16px 20px;
+                  font-size: 16px;
+                }
+                
+                .taal-vlag {
+                  width: 28px;
+                  height: 20px;
+                }
+  }
+
+/* ---------------- KLEINE MOBIEL ---------------- */
+@media (max-width: 500px) {
                 /* Kleinste schermen: nog meer verkleinen */
                 .homepage {
                   padding: 15px;
