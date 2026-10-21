@@ -98,6 +98,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 300px;
   padding: 60px 30px;
 }
@@ -212,49 +213,3 @@ body {
                   height: 20px;
                 }
   }
-
-/* ---------------- KLEINE MOBIEL ---------------- */
-@media (max-width: 500px) {
-                /* Kleinste schermen: nog meer verkleinen */
-                .homepage {
-                  padding: 15px;
-                  align-items: flex-start;
-                }
-              
-                .overlay {
-                  padding: 30px 20px;
-                  border-radius: 12px;
-                }
-              
-                .title {
-                  font-size: 36px;
-                  letter-spacing: 1px;
-                }
-              
-                .start-button {
-                  font-size: 16px;
-                  padding: 10px 25px;
-                }
-              
-                /* Optioneel: hint om telefoon te draaien */
-                .homepage::after {
-                  content: "Draai je telefoon voor de beste ervaring";
-                  position: absolute;
-                  bottom: 20px;
-                  width: 100%;
-                  text-align: center;
-                  color: white;
-                  font-size: 14px;
-                  opacity: 0.8;
-                }
-
-                .taal-box {
-                  width: min(94vw, 400px);
-                }
-                
-                .taal-knop {
-                  padding: 17px 18px;
-                  font-size: 17px;
-                }
-}
-              
