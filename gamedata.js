@@ -18121,11 +18121,20 @@ const combinaties = [
   },
   {
     input: [
+      /* --- WATERDIEREN --- */
+      ["Orka", "Jaloezie"], ["Narwallen", "Jaloezie"], ["Dolfijnen", "Jaloezie"], ["Potvissen", "Jaloezie"], 
+      /* --- ZOOGDIEREN --- */
+      ["Olifanten", "Jaloezie"],
       /* --- VOGELS --- */
-      ["Jaloezie", "Kippen"], ["Jaloezie", "Fazanten"], ["Jaloezie", "Kraaien"], ["Jaloezie", "Pauwen"],
-      ["Jaloezie", "Papegaaien"],
+      ["Kippen", "Jaloezie"], ["Fazanten", "Jaloezie"], ["Kraaien", "Jaloezie"], ["Pauwen", "Jaloezie"], 
+      ["Papegaaien", "Jaloezie"],
       /* --- CARNIVOREN --- */
-      ["Jaloezie", "Wolven"], ["Jaloezie", "Katten"], ["Jaloezie", "Honden"]
+      ["Wolven", "Jaloezie"], ["Katten", "Jaloezie"], ["Honden", "Jaloezie"],
+      /* --- PRIMATEN --- */
+      ["Neusapen", "Jaloezie"], ["Langoeren", "Jaloezie"], ["Bavianen", "Jaloezie"], ["Lemuren", "Jaloezie"], 
+      ["Makaken", "Jaloezie"], ["Kapucijnapen", "Jaloezie"], ["Slingerapen", "Jaloezie"], ["Brulapen", "Jaloezie"], 
+      ["Makaken", "Jaloezie"], ["Kapucijnapen", "Jaloezie"], ["Slingerapen", "Jaloezie"], ["Brulapen", "Jaloezie"], 
+      ["Gorilla", "Jaloezie"], ["Chimpansees", "Jaloezie"], ["Bonobo", "Jaloezie"], ["Mens", "Jaloezie"]
     ],
     output: [
       { naam: "Woede", naam_en: "Anger", icoon: "icons/Woede.png", map: "Brein", 
