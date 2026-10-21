@@ -70,8 +70,10 @@
     music.play().catch(() => console.log("Autoplay geblokkeerd, start na eerste klik"));
     document.addEventListener("click", () => music.play(), { once: true });
     
-    let muted = false;
-    let lastVolume = music.volume;
+    let muted = localStorage.getItem("creation-muted") === "1";
+    let lastVolume = parseFloat(localStorage.getItem("creation-volume")) || music.volume;
+    music.muted = muted;
+    if (muted) volumeSlider.value = 0;
     
     function updateMuteIcon() {
       if (muted) {
@@ -91,12 +93,14 @@
     volumeSlider.addEventListener("input", () => {
       music.volume = volumeSlider.value;
       lastVolume = volumeSlider.value;
+      localStorage.setItem("creation-volume", volumeSlider.value);
     });
     
     updateMuteIcon();
     muteButton.addEventListener("click", (e) => {
       e.stopPropagation();
       muted = !muted;
+      localStorage.setItem("creation-muted", muted ? "1" : "0");
       music.muted = muted;
       if (muted) {
         // Zet slider op 0 bij mute
