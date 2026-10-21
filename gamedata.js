@@ -11866,6 +11866,40 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ DUIVEN ------------------ */
+  {
+    input: [
+      ["Duiven", "map:Granen"],
+      /* --- PLANTEN --- */
+      ["Duiven", "Gras"], ["Duiven", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Duiven", "Zaadjes"], 
+      /* --- BOMEN --- */
+      ["Duiven", "Beuken"], ["Duiven", "Eiken"],
+      /* --- BLOEMEN --- */
+      ["Duiven", "Paardenbloemen"], ["Duiven", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Duiven", "Druiven"], ["Duiven", "Appels"], ["Duiven", "Peren"], ["Duiven", "Pruimen"], ["Duiven", "Bosbessen"],
+      ["Duiven", "Aardbeien"], ["Duiven", "Kersen"], ["Duiven", "Frambozen"],
+      /* --- ZADEN --- */
+      ["Duiven", "Hazelnoten"], ["Duiven", "Pinda"]
+    ],
+    output: [
+      { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
+        quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
+        messenger, companion, and symbol across cultures
+        <br><br>- Colin Tudge`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
