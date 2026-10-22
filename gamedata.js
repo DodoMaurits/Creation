@@ -12254,6 +12254,30 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ ZWALUWEN ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Zwaluwen", "Termieten"], ["Zwaluwen", "Oerpolynopteren"], ["Zwaluwen", "Spinnen"], ["Zwaluwen", "Kakkerlakken"],
+      ["Zwaluwen", "Oerhymenopteren"], ["Zwaluwen", "Kevers"], ["Zwaluwen", "Mieren"], ["Zwaluwen", "Wespen"], 
+      ["Zwaluwen", "Vliegen"], ["Zwaluwen", "Vlinders"], ["Zwaluwen", "Krekels"], ["Zwaluwen", "Sprinkhanen"], 
+      ["Zwaluwen", "Muggen"], ["Zwaluwen", "Bijen"]
+    ],
+    output: [
+      { naam: "Zwaluwen", naam_en: "Swallows", icoon: "icons/Zwaluwen.png", map: "Vogels", 
+        quote: `The swallow carries the scent of distant gardens across skies that never remain the same
+        <br><br>- Rumi`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Ven"],
