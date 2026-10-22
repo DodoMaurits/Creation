@@ -6052,7 +6052,7 @@ const combinaties = [
       ["Vlokreeftjes", "Detritus"]
     ],
     output: [
-      { naam: "Vlokreeftjes", naam_en: "Uramphipods", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
+      { naam: "Vlokreeftjes", naam_en: "Amphipods", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
         quote: `Many amphipods are important scavengers, playing a key role in the breakdown of organic matter in aquatic 
         ecosystems
         <br><br>- Gary Poore`
@@ -6969,7 +6969,7 @@ const combinaties = [
       ["Oerhymenopteren", "Palmvarens"], ["Oerhymenopteren", "Ginkgo"]
     ],
     output: [
-      { naam: "Oerhymenopteren", naam_en: "Oerhymenoptera", icoon: "icons/Oerhymenopteren.png", map: "Klein landleven", 
+      { naam: "Oerhymenopteren", naam_en: "Urhymenoptera", icoon: "icons/Oerhymenopteren.png", map: "Klein landleven", 
         quote: `The evolution of ants, bees, and wasps demonstrates how complex social systems and cooperation can arise 
         from simple beginnings
         <br><br>- E.O. Wilson`
@@ -7491,7 +7491,7 @@ const combinaties = [
         but a gradual blending of forms
         <br><br>- Robert Bakker`
       },
-      { naam: "Bloed", naam_en: "Leaf", icoon: "icons/Bloed.png", map: "Biologie",
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
@@ -11556,7 +11556,7 @@ const combinaties = [
       ["Koraalduivels", "Garnalen"],
     ],
     output: [
-      { naam: "Koraalduivels", naam_en: "Surgeonfish", icoon: "icons/Koraalduivels.png", map: "Vissen", 
+      { naam: "Koraalduivels", naam_en: "Lionfish", icoon: "icons/Koraalduivels.png", map: "Vissen", 
         quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both beautiful and 
         dangerous
         <br><br>- James Morris`
@@ -12178,7 +12178,7 @@ const combinaties = [
         quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
         <br><br>- Fridtjof Nansen`
       },
-      { naam: "Duiven", naam_en: "Grapes", icoon: "icons/Duiven.png", map: "Vogels", 
+      { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
@@ -12298,7 +12298,7 @@ const combinaties = [
     input: ["Bloem", "Archaeopteryx"],
     tijd: 25_000_000,
     output: [
-      { naam: "Kolibries", naam_en: "Hummingsbirds", icoon: "icons/Kolibries.png", map: "Vogels", 
+      { naam: "Kolibries", naam_en: "Hummingbirds", icoon: "icons/Kolibries.png", map: "Vogels", 
         quote: `The hummingbird is a fragment of the rainbow, suspended in air
         <br><br>- Pablo Neruda`
       }
