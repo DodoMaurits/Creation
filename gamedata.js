@@ -11996,6 +11996,101 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ EENDEN ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Eenden", "Groenwieren"],
+      /* --- WATERDIEREN --- */
+      ["Eenden", "Wormen"], 
+      /* Schelp */ ["Eenden", "Tweekleppigen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Eenden", "Waterspinnen"], ["Eenden", "Vlokreeftjes"], ["Eenden", "Garnalen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Eenden", "Termieten"], ["Eenden", "Pissebedden"], ["Eenden", "Oerpolyneopteren"], ["Eenden", "Duizendpoten"],
+      ["Eenden", "Hooiwagens"], ["Eenden", "Spinnen"], ["Eenden", "Zilvervisjes"], ["Eenden", "Wandelende takken"], 
+      ["Eenden", "Kakkerlakken"], ["Eenden", "Oerhymenopteren"], ["Eenden", "Slakken"], ["Eenden", "Libellen"], 
+      ["Eenden", "Kevers"], ["Eenden", "Lieveheersbeestjes"], ["Eenden", "Mieren"], ["Eenden", "Wespen"], 
+      ["Eenden", "Vliegen"], ["Eenden", "Vlinders"], ["Eenden", "Krekels"], ["Eenden", "Sprinkhanen"],
+      ["Eenden", "Muggen"], ["Eenden", "Bijen"]
+      /* --- PLANTEN --- */
+      ["Eenden", "Oervaatplanten"], ["Eenden", "Oerzaadplanten"], ["Eenden", "Oermagnoliden"], ["Eenden", "Oereudicoten"],
+      ["Eenden", "Gras"], ["Eenden", "Oerfabiden"], ["Eenden", "Oermalviden"], ["Eenden", "Oercaryophyllales"],
+      ["Eenden", "Oerasteriden"], ["Eenden", "Oerericales"], ["Eenden", "Oerlamiden"], ["Eenden", "Oercampunaliden"],
+      ["Eenden", "Brandnetels"], ["Eenden", "Klavers"], ["Eenden", "Kroos"], ["Eenden", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Eenden", "Detritus"], ["Eenden", "Wortels"], ["Eenden", "Blad"], ["Eenden", "Zaadjes"], ["Eenden", "Ei"],
+      ["Eenden", "Bloem"],
+      /* --- BOMEN --- */
+      ["Eenden", "Wilgen"], ["Eenden", "Populieren"], ["Eenden", "Elzen"], ["Eenden", "Eiken"], ["Eenden", "Platanen"],
+      ["Eenden", "Paardenkastanjes"],
+      /* --- BLOEMEN --- */
+      ["Eenden", "Waterlelies"], ["Eenden", "Klaprozen"], ["Eenden", "Madeliefjes"], ["Eenden", "Lotussen"],
+      ["Eenden", "Paardenbloemen"], ["Eenden", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Eenden", "Druiven"], ["Eenden", "Appels"], ["Eenden", "Peren"], ["Eenden", "Pruimen"], ["Eenden", "Kersen"],
+      ["Eenden", "Aardbeien"], ["Eenden", "Bosbessen"],
+      /* --- GROENTEN --- */
+      ["Eenden", "Bieten"], ["Eenden", "Spinazie"], ["Eenden", "Radijsjes"], ["Eenden", "Kool"], ["Eenden", "Prei"],
+      ["Eenden", "Selderij"], ["Eenden", "Venkel"], ["Eenden", "Wortelen"], ["Eenden", "Sla"], ["Eenden", "Andijvie"],
+      ["Eenden", "Broccoli"], ["Eenden", "Bloemkool"], ["Eenden", "Rode kool"], ["Eenden", "Spruitjes"],
+      ["Eenden", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Eenden", "Rijst"], ["Eenden", "Maïs"], ["Eenden", "Tarwe"], ["Eenden", "Gerst"], ["Eenden", "Haver"],
+      ["Eenden", "Gierst"], ["Eenden", "Pap"], ["Eenden", "Brood"]
+    ],
+    output: [
+      { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
+        quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
+        <br><br>- Wangari Maathai`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Eenden", "Karpers"], ["Eenden", "Snoeken"], ["Eenden", "Paling"], ["Eenden", "Goudvissen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Eenden", "Oertetrapoden"], ["Eenden", "Salamanders"], ["Eenden", "Kikkers"], ["Eenden", "Padden"]
+    ],
+    output: [
+      { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
+        quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
+        <br><br>- Wangari Maathai`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: /* SCHELP */
+      ["Eenden", "Tweekleppigen"],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   }, /* ------------------ GANZEN ------------------ */
   {
     input: [
@@ -12028,8 +12123,8 @@ const combinaties = [
       ["Ganzen", "Druiven"], ["Ganzen", "Appels"], ["Ganzen", "Peren"], ["Ganzen", "Pruimen"], ["Ganzen", "Bosbessen"],
       ["Ganzen", "Aardbeien"], ["Ganzen", "Kersen"],
       /* --- GROENTEN --- */
-      ["Ganzen", "Bieten"], ["Ganzen", "Spinazie"], ["Ganzen", "Radijsjes"], ["Ganzen", "Kool"], ["Ganzen", "Preien"],
-      ["Ganzen", "Aardappelen"], ["Ganzen", "Selderij"], ["Ganzen", "Venkels"], ["Ganzen", "Wortelen"], ["Ganzen", "Sla"], 
+      ["Ganzen", "Bieten"], ["Ganzen", "Spinazie"], ["Ganzen", "Radijsjes"], ["Ganzen", "Kool"], ["Ganzen", "Prei"],
+      ["Ganzen", "Aardappelen"], ["Ganzen", "Selderij"], ["Ganzen", "Venkel"], ["Ganzen", "Wortelen"], ["Ganzen", "Sla"], 
       ["Ganzen", "Andijvie"], ["Ganzen", "Broccoli"], ["Ganzen", "Bloemkool"], ["Ganzen", "Rode kool"], 
       ["Ganzen", "Spruitjes"], ["Ganzen", "Boerenkool"],
       /* --- GRANEN --- */
@@ -12094,8 +12189,8 @@ const combinaties = [
       /* --- FRUIT --- */
       ["Zwanen", "Druiven"], ["Zwanen", "Appels"], ["Zwanen", "Peren"], ["Zwanen", "Pruimen"], ["Zwanen", "Kersen"],
       /* --- GROENTEN --- */
-      ["Zwanen", "Bieten"], ["Zwanen", "Spinazie"], ["Zwanen", "Radijsjes"], ["Zwanen", "Kool"], ["Zwanen", "Preien"],
-      ["Zwanen", "Selderij"], ["Zwanen", "Venkels"], ["Zwanen", "Wortelen"], ["Zwanen", "Sla"], ["Zwanen", "Andijvie"],
+      ["Zwanen", "Bieten"], ["Zwanen", "Spinazie"], ["Zwanen", "Radijsjes"], ["Zwanen", "Kool"], ["Zwanen", "Prei"],
+      ["Zwanen", "Selderij"], ["Zwanen", "Venkel"], ["Zwanen", "Wortelen"], ["Zwanen", "Sla"], ["Zwanen", "Andijvie"],
       ["Zwanen", "Broccoli"], ["Zwanen", "Bloemkool"], ["Zwanen", "Rode kool"], ["Zwanen", "Spruitjes"],
       ["Zwanen", "Boerenkool"],
       /* --- GRANEN --- */
@@ -18160,7 +18255,7 @@ const combinaties = [
       ["Eekhoorns", "Komkommers"], ["Eekhoorns", "Meloenen"], ["Eekhoorns", "Watermeloenen"], ["Eekhoorns", "Pompoenen"],
       ["Eekhoorns", "Courgettes"], ["Eekhoorns", "Bieten"], ["Eekhoorns", "Spinazie"], ["Eekhoorns", "Zoete aardappelen"],
       ["Eekhoorns", "Aubergines"], ["Eekhoorns", "Radijsjes"], ["Eekhoorns", "Kool"], ["Eekhoorns", "Rabarber"],
-      ["Eekhoorns", "Asperges"], ["Eekhoorns", "Preien"], ["Eekhoorns", "Paprika"], ["Eekhoorns", "Tomaten"],
+      ["Eekhoorns", "Asperges"], ["Eekhoorns", "Prei"], ["Eekhoorns", "Paprika"], ["Eekhoorns", "Tomaten"],
       ["Eekhoorns", "Aardappelen"], ["Eekhoorns", "Selderij"], ["Eekhoorns", "Venkel"], ["Eekhoorns", "Wortelen"],
       ["Eekhoorns", "Sla"], ["Eekhoorns", "Andijvie"], ["Eekhoorns", "Zuurkool"], ["Eekhoorns", "Broccoli"],
       ["Eekhoorns", "Bloemkool"], ["Eekhoorns", "Rode kool"], ["Eekhoorns", "Spruitjes"], ["Eekhoorns", "Boerenkool"],
