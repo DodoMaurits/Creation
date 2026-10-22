@@ -11900,6 +11900,73 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ ARENDEN ------------------ */
+  {
+    input: [
+      /* --- BIOLOGIE --- */
+      ["Arenden", "Detritus"], ["Arenden", "Ei"]
+    ],
+    output: [
+      { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Arenden", "Karpers"], ["Arenden", "Snoeken"], ["Arenden", "Meervallen"], ["Arenden", "Paling"],
+      ["Arenden", "Haring"], ["Arenden", "Zalm"], ["Arenden", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Arenden", "Oertetrapoden"], ["Arenden", "Salamanders"], ["Arenden", "Kikkers"], ["Arenden", "Padden"], 
+      /* --- REPTIELEN --- */
+      ["Arenden", "Slangen"], ["Arenden", "Oersynapsiden"], ["Arenden", "Oerdiapsiden"], ["Arenden", "Oeranapsiden"],
+      ["Arenden", "Schildpadden"], ["Arenden", "Pterosauriërs"], ["Arenden", "Lepidosauriërs"], 
+      ["Arenden", "Gekko"], ["Arenden", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Arenden", "Luiaarden"], ["Arenden", "Egels"], ["Arenden", "Konijnen"], ["Arenden", "Hazen"], 
+      ["Arenden", "Prairiehonden"], ["Arenden", "Ratten"], ["Arenden", "Capibara"], ["Arenden", "Eekhoorns"],
+      ["Arenden", "Muizen"], ["Arenden", "Hamsters"], ["Arenden", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Arenden", "Archaeopteryx"], ["Arenden", "Uilen"], ["Arenden", "Duiven"], ["Arenden", "Zwanen"], 
+      ["Arenden", "Ganzen"], ["Arenden", "Eenden"], ["Arenden", "Zwaluwen"], ["Arenden", "Spreeuwen"],
+      ["Arenden", "Ooievaars"], ["Arenden", "Meeuwen"], ["Arenden", "Aalscholvers"], ["Arenden", "Flamingo"],
+      ["Arenden", "Papegaaiduikers"], ["Arenden", "Reigers"], ["Arenden", "Mussen"], ["Arenden", "Kippen"],
+      ["Arenden", "Spechten"], ["Arenden", "Vinken"], ["Arenden", "Fazanten"], ["Arenden", "Kraaien"], 
+      ["Arenden", "Kolibries"], ["Arenden", "Papegaaien"], ["Arenden", "Kieviten"], ["Arenden", "Secretarisvogels"],
+      ["Arenden", "Kanaries"],
+      /* --- CARNIVOREN --- */
+      ["Arenden", "Vossen"], ["Arenden", "Marters"], ["Arenden", "Wezels"]
+    ],
+    output: [
+      { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
+        <br><br>- Mary Oliver`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
