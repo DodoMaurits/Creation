@@ -390,12 +390,18 @@ html, body {
             }
           
             #mute-button {
-              width: 44px;
-              height: 44px;
+              width: 36px;
+              height: 36px;
               top: 12px;
               right: 12px;
+              background: rgba(255, 255, 255, 0.85);
+              box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
             }
 
+            #mute-button svg {
+              fill: black;
+            }
+  
             /* ---------------- RESULT BOX CONTAINER ---------------- */
             .elementen-overlay .result-box-container {
               display: flex;
