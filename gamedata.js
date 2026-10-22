@@ -11996,6 +11996,72 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ ZWANEN ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Zwanen", "Groenwieren"],
+      /* --- WATERDIEREN --- */
+      ["Zwanen", "Wormen"], 
+      /* Schelp */ ["Zwanen", "Tweekleppigen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Zwanen", "Waterspinnen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Zwanen", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Zwanen", "Oervaatplanten"], ["Zwanen", "Oerzaadplanten"], ["Zwanen", "Oermagnoliden"], ["Zwanen", "Oereudicoten"],
+      ["Zwanen", "Gras"], ["Zwanen", "Oerfabiden"], ["Zwanen", "Oermalviden"], ["Zwanen", "Oercaryophyllales"],
+      ["Zwanen", "Oerasteriden"], ["Zwanen", "Oerericales"], ["Zwanen", "Oerlamiden"], ["Zwanen", "Oercampunaliden"],
+      ["Zwanen", "Brandnetels"], ["Zwanen", "Klavers"], ["Zwanen", "Kroos"], ["Zwanen", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Zwanen", "Wortels"], ["Zwanen", "Blad"], ["Zwanen", "Zaadjes"], ["Zwanen", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Zwanen", "Munt"], ["Zwanen", "Mosterd"], ["Zwanen", "Bieslook"], ["Zwanen", "Basilicum"], 
+      ["Zwanen", "Chilipepers"], ["Zwanen", "Oregano"], ["Zwanen", "Salie"], ["Zwanen", "Komijn"], ["Zwanen", "Dille"],
+      ["Zwanen", "Koriander"], ["Zwanen", "Peterselie"],
+      /* --- BOMEN --- */
+      ["Zwanen", "Wilgen"],
+      /* --- BLOEMEN --- */
+      ["Zwanen", "Waterlelies"], ["Zwanen", "Klaprozen"], ["Zwanen", "Madeliefjes"], ["Zwanen", "Lotussen"],
+      ["Zwanen", "Paardenbloemen"], ["Zwanen", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Zwanen", "Druiven"], ["Zwanen", "Appels"], ["Zwanen", "Peren"], ["Zwanen", "Pruimen"], ["Zwanen", "Kersen"],
+      /* --- GROENTEN --- */
+      ["Zwanen", "Bieten"], ["Zwanen", "Spinazie"], ["Zwanen", "Radijsjes"], ["Zwanen", "Kool"], ["Zwanen", "Preien"],
+      ["Zwanen", "Selderij"], ["Zwanen", "Venkels"], ["Zwanen", "Wortelen"], ["Zwanen", "Sla"], ["Zwanen", "Andijvie"],
+      ["Zwanen", "Broccoli"], ["Zwanen", "Bloemkool"], ["Zwanen", "Rode kool"], ["Zwanen", "Spruitjes"],
+      ["Zwanen", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Zwanen", "Rijst"], ["Zwanen", "Maïs"], ["Zwanen", "Tarwe"], ["Zwanen", "Gerst"], ["Zwanen", "Haver"],
+      ["Zwanen", "Gierst"], ["Zwanen", "Pap"], ["Zwanen", "Brood"],
+      /* --- ZADEN --- */
+      ["Zwanen", "Erwten"], ["Zwanen", "Soja"], ["Zwanen", "Pinda"], ["Zwanen", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Zwanen", naam_en: "Swans", icoon: "icons/Zwanen.png", map: "Vogels", 
+        quote: `Wild geese and swans cross the cold river, their shadows vanishing into the pale sky above the water
+        <br><br>- Du Fu`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: /* SCHELP */
+      ["Zwanen", "Tweekleppigen"],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Lucht"],
