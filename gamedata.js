@@ -12014,10 +12014,11 @@ const combinaties = [
       ["Eenden", "Vliegen"], ["Eenden", "Vlinders"], ["Eenden", "Krekels"], ["Eenden", "Sprinkhanen"],
       ["Eenden", "Muggen"], ["Eenden", "Bijen"]
       /* --- PLANTEN --- */
-      ["Eenden", "Oervaatplanten"], ["Eenden", "Oerzaadplanten"], ["Eenden", "Oermagnoliden"], ["Eenden", "Oereudicoten"],
-      ["Eenden", "Gras"], ["Eenden", "Oerfabiden"], ["Eenden", "Oermalviden"], ["Eenden", "Oercaryophyllales"],
-      ["Eenden", "Oerasteriden"], ["Eenden", "Oerericales"], ["Eenden", "Oerlamiden"], ["Eenden", "Oercampunaliden"],
-      ["Eenden", "Brandnetels"], ["Eenden", "Klavers"], ["Eenden", "Kroos"], ["Eenden", "Waterriet"],
+      ["Eenden", "Mos"], ["Eenden", "Oervaatplanten"], ["Eenden", "Oerzaadplanten"], ["Eenden", "Oermagnoliden"], 
+      ["Eenden", "Oereudicoten"], ["Eenden", "Gras"], ["Eenden", "Oerfabiden"], ["Eenden", "Oermalviden"], 
+      ["Eenden", "Oercaryophyllales"], ["Eenden", "Oerasteriden"], ["Eenden", "Oerericales"], ["Eenden", "Oerlamiden"], 
+      ["Eenden", "Oercampunaliden"], ["Eenden", "Brandnetels"], ["Eenden", "Klavers"], ["Eenden", "Kroos"], 
+      ["Eenden", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Eenden", "Detritus"], ["Eenden", "Wortels"], ["Eenden", "Blad"], ["Eenden", "Zaadjes"], ["Eenden", "Ei"],
       ["Eenden", "Bloem"],
@@ -12104,10 +12105,11 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Ganzen", "Muggen"],
       /* --- PLANTEN --- */
-      ["Ganzen", "Oervaatplanten"], ["Ganzen", "Oerzaadplanten"], ["Ganzen", "Oermagnoliden"], ["Ganzen", "Oereudicoten"],
-      ["Ganzen", "Gras"], ["Ganzen", "Oerfabiden"], ["Ganzen", "Oermalviden"], ["Ganzen", "Oercaryophyllales"],
-      ["Ganzen", "Oerasteriden"], ["Ganzen", "Oerericales"], ["Ganzen", "Oerlamiden"], ["Ganzen", "Oercampunaliden"],
-      ["Ganzen", "Brandnetels"], ["Ganzen", "Heide"], ["Ganzen", "Klavers"], ["Ganzen", "Kroos"], ["Ganzen", "Waterriet"],
+      ["Ganzen", "Mos"], ["Ganzen", "Oervaatplanten"], ["Ganzen", "Oerzaadplanten"], ["Ganzen", "Oermagnoliden"], 
+      ["Ganzen", "Oereudicoten"], ["Ganzen", "Gras"], ["Ganzen", "Oerfabiden"], ["Ganzen", "Oermalviden"], 
+      ["Ganzen", "Oercaryophyllales"], ["Ganzen", "Oerasteriden"], ["Ganzen", "Oerericales"], ["Ganzen", "Oerlamiden"], 
+      ["Ganzen", "Oercampunaliden"], ["Ganzen", "Brandnetels"], ["Ganzen", "Heide"], ["Ganzen", "Klavers"], 
+      ["Ganzen", "Kroos"], ["Ganzen", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Ganzen", "Wortels"], ["Ganzen", "Blad"], ["Ganzen", "Zaadjes"], ["Ganzen", "Ei"],
       /* --- SMAAKMAKERS --- */
@@ -12171,10 +12173,11 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Zwanen", "Muggen"],
       /* --- PLANTEN --- */
-      ["Zwanen", "Oervaatplanten"], ["Zwanen", "Oerzaadplanten"], ["Zwanen", "Oermagnoliden"], ["Zwanen", "Oereudicoten"],
-      ["Zwanen", "Gras"], ["Zwanen", "Oerfabiden"], ["Zwanen", "Oermalviden"], ["Zwanen", "Oercaryophyllales"],
-      ["Zwanen", "Oerasteriden"], ["Zwanen", "Oerericales"], ["Zwanen", "Oerlamiden"], ["Zwanen", "Oercampunaliden"],
-      ["Zwanen", "Brandnetels"], ["Zwanen", "Klavers"], ["Zwanen", "Kroos"], ["Zwanen", "Waterriet"],
+      ["Zwanen", "Mos"], ["Zwanen", "Oervaatplanten"], ["Zwanen", "Oerzaadplanten"], ["Zwanen", "Oermagnoliden"], 
+      ["Zwanen", "Oereudicoten"], ["Zwanen", "Gras"], ["Zwanen", "Oerfabiden"], ["Zwanen", "Oermalviden"], 
+      ["Zwanen", "Oercaryophyllales"], ["Zwanen", "Oerasteriden"], ["Zwanen", "Oerericales"], ["Zwanen", "Oerlamiden"], 
+      ["Zwanen", "Oercampunaliden"], ["Zwanen", "Brandnetels"], ["Zwanen", "Klavers"], ["Zwanen", "Kroos"], 
+      ["Zwanen", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Zwanen", "Wortels"], ["Zwanen", "Blad"], ["Zwanen", "Zaadjes"], ["Zwanen", "Ei"],
       /* --- SMAAKMAKERS --- */
