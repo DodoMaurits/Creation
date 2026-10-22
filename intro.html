@@ -146,7 +146,8 @@
     const muteButton = document.createElement("div");
     muteButton.id = "mute-button";
     document.body.appendChild(muteButton);
-    let muted = false;
+    let muted = localStorage.getItem("creation-muted") === "1";
+    music.muted = muted;
     function updateMuteIcon() {
       if (muted) { muteButton.innerHTML = `
           <svg viewBox="0 0 24 24" width="24" height="24">
@@ -163,6 +164,7 @@
     muteButton.addEventListener("click", (e) => {
       e.stopPropagation();
       muted = !muted;
+      localStorage.setItem("creation-muted", muted ? "1" : "0");
       music.muted = muted;
       updateMuteIcon();
     });
