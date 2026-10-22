@@ -12278,6 +12278,68 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ SPREEUWEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Spreeuwen", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Spreeuwen", "Waterspinnen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Spreeuwen", "Termieten"], ["Spreeuwen", "Pissebedden"], ["Spreeuwen", "Oerpolynopteren"], 
+      ["Spreeuwen", "Duizendpoten"], ["Spreeuwen", "Hooiwagens"], ["Spreeuwen", "Spinnen"], ["Spreeuwen", "Zilvervisjes"],
+      ["Spreeuwen", "Wandelende takken"], ["Spreeuwen", "Kakkerlakken"], ["Spreeuwen", "Oerhymenopteren"], 
+      ["Spreeuwen", "Slakken"], ["Spreeuwen", "Libellen"], ["Spreeuwen", "Kevers"], ["Spreeuwen", "Mieren"],
+      ["Spreeuwen", "Wespen"], ["Spreeuwen", "Vliegen"], ["Spreeuwen", "Vlinders"], ["Spreeuwen", "Krekels"],
+      ["Spreeuwen", "Sprinkhanen"], ["Spreeuwen", "Muggen"], ["Spreeuwen", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Spreeuwen", "Mos"], ["Spreeuwen", "Oervaatplanten"], ["Spreeuwen", "Oerzaadplanten"], 
+      ["Spreeuwen", "Oermagnoliden"], ["Spreeuwen", "Oereudicoten"], ["Spreeuwen", "Gras"], ["Spreeuwen", "Oerfabiden"], 
+      ["Spreeuwen", "Oermalviden"], ["Spreeuwen", "Oercaryophyllales"], ["Spreeuwen", "Oerasteriden"], 
+      ["Spreeuwen", "Oerericales"], ["Spreeuwen", "Oerlamiden"], ["Spreeuwen", "Oercampunaliden"], 
+      ["Spreeuwen", "Brandnetels"], ["Spreeuwen", "Heide"], ["Spreeuwen", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Spreeuwen", "Blad"], ["Spreeuwen", "Zaadjes"], ["Spreeuwen", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Spreeuwen", "Munt"], ["Spreeuwen", "Tijm"], ["Spreeuwen", "Mosterd"], ["Spreeuwen", "Bieslook"], 
+      ["Spreeuwen", "Basilicum"], ["Spreeuwen", "Chilipepers"], ["Spreeuwen", "Oregano"], ["Spreeuwen", "Salie"], 
+      ["Spreeuwen", "Komijn"], ["Spreeuwen", "Dille"], ["Spreeuwen", "Koriander"], ["Spreeuwen", "Peterselie"],
+      /* --- BLOEMEN --- */
+      ["Spreeuwen", "Klaprozen"], ["Spreeuwen", "Madeliefjes"], ["Spreeuwen", "Goudsbloemen"],
+      ["Spreeuwen", "Paardenbloemen"], ["Spreeuwen", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Spreeuwen", "Druiven"], ["Spreeuwen", "Appels"], ["Spreeuwen", "Peren"], ["Spreeuwen", "Pruimen"], 
+      ["Spreeuwen", "Vijgen"], ["Spreeuwen", "Abrikozen"], ["Spreeuwen", "Bosbessen"], ["Spreeuwen", "Aardbeien"],
+      ["Spreeuwen", "Olijven"], ["Spreeuwen", "Kersen"], ["Spreeuwen", "Perziken"], ["Spreeuwen", "Granaatappels"],
+      ["Spreeuwen", "Mandarijnen"], ["Spreeuwen", "Frambozen"],  
+      /* --- GROENTEN --- */
+      ["Spreeuwen", "Bieten"], ["Spreeuwen", "Spinazie"], ["Spreeuwen", "Aubergines"], ["Spreeuwen", "Radijsjes"],
+      ["Spreeuwen", "Kool"], ["Spreeuwen", "Prei"], ["Spreeuwen", "Paprika"], ["Spreeuwen", "Tomaten"], 
+      ["Spreeuwen", "Aardappelen"], ["Spreeuwen", "Selderij"], ["Spreeuwen", "Venkel"], ["Spreeuwen", "Wortelen"], 
+      ["Spreeuwen", "Sla"], ["Spreeuwen", "Andijvie"], ["Spreeuwen", "Broccoli"], ["Spreeuwen", "Bloemkool"], 
+      ["Spreeuwen", "Rode kool"], ["Spreeuwen", "Spruitjes"], ["Spreeuwen", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Spreeuwen", "Rijst"], ["Spreeuwen", "Maïs"], ["Spreeuwen", "Tarwe"], ["Spreeuwen", "Gerst"], 
+      ["Spreeuwen", "Haver"], ["Spreeuwen", "Gierst"], ["Spreeuwen", "Pap"], ["Spreeuwen", "Brood"],
+      /* --- ZADEN --- */
+      ["Spreeuwen", "Erwten"], ["Spreeuwen", "Soja"], ["Spreeuwen", "Pinda"], ["Spreeuwen", "Linzen"],
+      ["Spreeuwen", "Sesam"], ["Spreeuwen", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Spreeuwen", naam_en: "Starlings", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+        quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
+        <br><br>- Giorgio Parisi`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Ven"],
