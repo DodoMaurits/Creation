@@ -15616,7 +15616,7 @@ const combinaties = [
   {
     input: [
       /* --- VOGELS --- */
-      ["Kippen", "Hiërarchie"], ["Kippen", "Kippen"]
+      ["Kippen", "Hiërarchie"], ["Kippen", "Kippen"],
       ["Fazanten", "Hiërarchie"], ["Fazanten", "Fazanten"], 
       ["Kraaien", "Hiërarchie"], ["Kraaien", "Kraaien"], 
       ["Pauwen", "Hiërarchie"], ["Pauwen", "Pauwen"],
