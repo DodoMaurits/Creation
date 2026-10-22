@@ -11996,6 +11996,73 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ GANZEN ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Ganzen", "Groenwieren"],
+      /* --- WATERDIEREN --- */
+      ["Ganzen", "Wormen"], 
+      /* Schelp */ ["Ganzen", "Tweekleppigen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Ganzen", "Waterspinnen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Ganzen", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Ganzen", "Oervaatplanten"], ["Ganzen", "Oerzaadplanten"], ["Ganzen", "Oermagnoliden"], ["Ganzen", "Oereudicoten"],
+      ["Ganzen", "Gras"], ["Ganzen", "Oerfabiden"], ["Ganzen", "Oermalviden"], ["Ganzen", "Oercaryophyllales"],
+      ["Ganzen", "Oerasteriden"], ["Ganzen", "Oerericales"], ["Ganzen", "Oerlamiden"], ["Ganzen", "Oercampunaliden"],
+      ["Ganzen", "Brandnetels"], ["Ganzen", "Heide"], ["Ganzen", "Klavers"], ["Ganzen", "Kroos"], ["Ganzen", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Ganzen", "Wortels"], ["Ganzen", "Blad"], ["Ganzen", "Zaadjes"], ["Ganzen", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Ganzen", "Munt"], ["Ganzen", "Mosterd"], ["Ganzen", "Bieslook"], ["Ganzen", "Basilicum"], 
+      ["Ganzen", "Chilipepers"], ["Ganzen", "Oregano"], ["Ganzen", "Salie"], ["Ganzen", "Komijn"], ["Ganzen", "Dille"],
+      ["Ganzen", "Koriander"], ["Ganzen", "Peterselie"],
+      /* --- BOMEN --- */
+      ["Ganzen", "Wilgen"],
+      /* --- BLOEMEN --- */
+      ["Ganzen", "Waterlelies"], ["Ganzen", "Klaprozen"], ["Ganzen", "Madeliefjes"], ["Ganzen", "Lotussen"],
+      ["Ganzen", "Paardenbloemen"], ["Ganzen", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Ganzen", "Druiven"], ["Ganzen", "Appels"], ["Ganzen", "Peren"], ["Ganzen", "Pruimen"], ["Ganzen", "Bosbessen"],
+      ["Ganzen", "Aardbeien"], ["Ganzen", "Kersen"],
+      /* --- GROENTEN --- */
+      ["Ganzen", "Bieten"], ["Ganzen", "Spinazie"], ["Ganzen", "Radijsjes"], ["Ganzen", "Kool"], ["Ganzen", "Preien"],
+      ["Ganzen", "Aardappelen"], ["Ganzen", "Selderij"], ["Ganzen", "Venkels"], ["Ganzen", "Wortelen"], ["Ganzen", "Sla"], 
+      ["Ganzen", "Andijvie"], ["Ganzen", "Broccoli"], ["Ganzen", "Bloemkool"], ["Ganzen", "Rode kool"], 
+      ["Ganzen", "Spruitjes"], ["Ganzen", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Ganzen", "Rijst"], ["Ganzen", "Maïs"], ["Ganzen", "Tarwe"], ["Ganzen", "Gerst"], ["Ganzen", "Haver"],
+      ["Ganzen", "Gierst"], ["Ganzen", "Pap"], ["Ganzen", "Brood"],
+      /* --- ZADEN --- */
+      ["Ganzen", "Erwten"], ["Ganzen", "Soja"], ["Ganzen", "Pinda"], ["Ganzen", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Ganzen", naam_en: "Geese", icoon: "icons/Ganzen.png", map: "Vogels", 
+        quote: `Wild geese fly south; their cries drift away across the empty autumn sky
+        <br><br>- Li Bai`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: /* SCHELP */
+      ["Ganzen", "Tweekleppigen"],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   }, /* ------------------ ZWANEN ------------------ */
   {
     input: [
