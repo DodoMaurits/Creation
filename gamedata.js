@@ -13106,6 +13106,53 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ MUSSEN ------------------ */
+  {
+    input: [
+      ["Mussen", "map:Granen"], 
+      /* --- WATERDIEREN --- */
+      ["Mussen", "Wormen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Mussen", "Luizen"], ["Mussen", "Mijten"], ["Mussen", "Teken"], ["Mussen", "Termieten"], 
+      ["Mussen", "Pissebedden"], ["Mussen", "Oerpolynopteren"], ["Mussen", "Duizendpoten"], ["Mussen", "Hooiwagens"], 
+      ["Mussen", "Spinnen"], ["Mussen", "Zilvervisjes"], ["Mussen", "Wandelende takken"], ["Mussen", "Kakkerlakken"], 
+      ["Mussen", "Oerhymenopteren"], ["Mussen", "Slakken"], ["Mussen", "Libellen"], ["Mussen", "Kevers"], 
+      ["Mussen", "Mieren"], ["Mussen", "Vliegen"], ["Mussen", "Vlinders"], ["Mussen", "Krekels"],
+      ["Mussen", "Sprinkhanen"], ["Mussen", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Mussen", "Gras"], ["Mussen", "Brandnetels"],
+      /* --- BIOLOGIE --- */
+      ["Mussen", "Blad"], ["Mussen", "Zaadjes"], 
+      /* --- BLOEMEN --- */
+      ["Mussen", "Klaprozen"], ["Mussen", "Madeliefjes"], ["Mussen", "Goudsbloemen"], ["Mussen", "Paardenbloemen"], 
+      ["Mussen", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Mussen", "Druiven"], ["Mussen", "Appels"], ["Mussen", "Peren"], ["Mussen", "Pruimen"], ["Mussen", "Bosbessen"], 
+      ["Mussen", "Aardbeien"], ["Mussen", "Olijven"], ["Mussen", "Abrikozen"], ["Mussen", "Kersen"], 
+      ["Mussen", "Perziken"], ["Mussen", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Mussen", "Bieten"], ["Mussen", "Spinazie"], ["Mussen", "Radijsjes"], ["Mussen", "Kool"], ["Mussen", "Prei"], 
+      ["Mussen", "Selderij"], ["Mussen", "Venkel"], ["Mussen", "Wortelen"], ["Mussen", "Sla"], ["Mussen", "Andijvie"], 
+      ["Mussen", "Broccoli"], ["Mussen", "Bloemkool"], ["Mussen", "Rode kool"], ["Mussen", "Spruitjes"], 
+      ["Mussen", "Boerenkool"], ["Mussen", "Paprika"], ["Mussen", "Tomaten"], ["Mussen", "Aubergines"],
+      /* --- ZADEN --- */
+      ["Mussen", "Erwten"], ["Mussen", "Soja"], ["Mussen", "Pinda"], ["Mussen", "Sesam"], ["Mussen", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Mussen", naam_en: "Sparrows", icoon: "icons/Mussen.png", map: "Vogels", 
+        quote: `A sparrow hops - and the quiet of the garden is suddenly complete
+        <br><br>- Kobayashi Issa`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Hout"],
