@@ -12709,6 +12709,91 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ FLAMINGO ------------------ */
+  {
+    input: [
+      ["Flamingo", "map:Granen"],
+      /* --- PRIL LEVEN --- */
+      ["Flamingo", "Blauwalgen"], ["Flamingo", "Groene algen"], ["Flamingo", "Steenwortelalgen"], 
+      ["Flamingo", "Groenwieren"], ["Flamingo", "Amoeben"], ["Flamingo", "Foraminiferen"], 
+      /* --- WATERDIEREN --- */
+      ["Flamingo", "Wormen"], 
+      /* Schelp */ ["Flamingo", "Tweekleppigen"], ["Flamingo", "Zeeslakken"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Flamingo", "Waterspinnen"], ["Flamingo", "Aasgarnalen"], ["Flamingo", "Zeepissebedden"], 
+      ["Flamingo", "Vlokreeftjes"], ["Flamingo", "Garnalen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Flamingo", "Termieten"], ["Flamingo", "Pissebedden"], ["Flamingo", "Oerpolyneopteren"], 
+      ["Flamingo", "Duizendpoten"], ["Flamingo", "Hooiwagens"], ["Flamingo", "Spinnen"], ["Flamingo", "Zilvervisjes"], 
+      ["Flamingo", "Wandelende takken"], ["Flamingo", "Kakkerlakken"], ["Flamingo", "Oerhymenopteren"], 
+      ["Flamingo", "Slakken"], ["Flamingo", "Libellen"], ["Flamingo", "Kevers"], ["Flamingo", "Mieren"], 
+      ["Flamingo", "Vliegen"], ["Flamingo", "Vlinders"], ["Flamingo", "Sprinkhanen"], ["Flamingo", "Muggen"], 
+      /* --- PLANTEN --- */
+      ["Flamingo", "Mos"], ["Flamingo", "Oervaatplanten"], ["Flamingo", "Oerzaadplanten"], ["Flamingo", "Oermagnoliden"],
+      ["Flamingo", "Oermonocotylen"], ["Flamingo", "Oereudicoten"], ["Flamingo", "Gras"], ["Flamingo", "Oerfabiden"],
+      ["Flamingo", "Oermalviden"], ["Flamingo", "Oercaryophyllales"], ["Flamingo", "Oerasteriden"],
+      ["Flamingo", "Oerericales"], ["Flamingo", "Oerlamiden"], ["Flamingo", "Oercampanuliden"], 
+      ["Flamingo", "Brandnetels"], ["Flamingo", "Klavers"], ["Flamingo", "Kroos"], ["Flamingo", "Waterriet"],
+      /* --- BIOLOGIE --- */
+      ["Flamingo", "Zaadjes"], ["Flamingo", "Ei"],
+      /* --- BLOEMEN --- */
+      ["Flamingo", "Paardenbloemen"], ["Flamingo", "Zonnebloemen"]
+    ],
+    output: [
+      { naam: "Flamingo", naam_en: "Flamingos", icoon: "icons/Flamingo.png", map: "Vogels", 
+        quote: `Flamingos gather in shallow lakes where the water becomes a mirror for their colour, 
+        turning the landscape itself into something unreal
+        <br><br>- Alexander von Humboldt`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Flamingo", "Paling"], ["Flamingo", "Goudvissen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Flamingo", "Oertetrapoden"], ["Flamingo", "Salamanders"], ["Flamingo", "Kikkers"], ["Flamingo", "Padden"]
+    ],
+    output: [
+      { naam: "Flamingo", naam_en: "Flamingos", icoon: "icons/Flamingo.png", map: "Vogels", 
+        quote: `Flamingos gather in shallow lakes where the water becomes a mirror for their colour, 
+        turning the landscape itself into something unreal
+        <br><br>- Alexander von Humboldt`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* SCHELP */
+      ["Flamingo", "Tweekleppigen"], ["Flamingo", "Zeeslakken"]
+    ],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Klif"],
