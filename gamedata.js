@@ -12689,6 +12689,82 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ PAPEGAAIDUIKERS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Papegaaiduikers", "Wormen"], 
+      /* Schelp */ ["Papegaaiduikers", "Tweekleppigen"], ["Papegaaiduikers", "Zeeslakken"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Papegaaiduikers", "Waterspinnen"], ["Papegaaiduikers", "Krill"], ["Papegaaiduikers", "Aasgarnalen"],
+      ["Papegaaiduikers", "Vlokreeftjes"], ["Papegaaiduikers", "Garnalen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Papegaaiduikers", "Termieten"], ["Papegaaiduikers", "Pissebedden"], ["Papegaaiduikers", "Oerpolyneopteren"], 
+      ["Papegaaiduikers", "Duizendpoten"], ["Papegaaiduikers", "Hooiwagens"], ["Papegaaiduikers", "Spinnen"], 
+      ["Papegaaiduikers", "Zilvervisjes"], ["Papegaaiduikers", "Wandelende takken"], ["Papegaaiduikers", "Kakkerlakken"], 
+      ["Papegaaiduikers", "Oerhymenopteren"], ["Papegaaiduikers", "Slakken"], ["Papegaaiduikers", "Libellen"], 
+      ["Papegaaiduikers", "Kevers"], ["Papegaaiduikers", "Mieren"], ["Papegaaiduikers", "Vliegen"], 
+      ["Papegaaiduikers", "Vlinders"], ["Papegaaiduikers", "Krekels"], ["Papegaaiduikers", "Sprinkhanen"], 
+      ["Papegaaiduikers", "Muggen"], 
+      /* --- BIOLOGIE --- */
+      ["Papegaaiduikers", "Ei"]
+    ],
+    output: [
+      { naam: "Papegaaiduikers", naam_en: "Puffins", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
+        quote: `The cliffs were alive with puffins, each one a small spark of colour against stone and wind
+        <br><br>- Robert Macfarlane`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Papegaaiduikers", "Inktvissen"],
+      /* --- VISSEN --- */
+      ["Papegaaiduikers", "Platvissen"], ["Papegaaiduikers", "Karpers"], ["Papegaaiduikers", "Snoeken"],
+      ["Papegaaiduikers", "Paling"], ["Papegaaiduikers", "Goudvissen"], ["Papegaaiduikers", "Haring"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Papegaaiduikers", "Salamanders"], ["Papegaaiduikers", "Kikkers"]
+    ],
+    output: [
+      { naam: "Papegaaiduikers", naam_en: "Puffins", icoon: "icons/Papegaaiduikers.png", map: "Vogels", 
+        quote: `The cliffs were alive with puffins, each one a small spark of colour against stone and wind
+        <br><br>- Robert Macfarlane`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* SCHELP */
+      ["Papegaaiduikers", "Tweekleppigen"], ["Papegaaiduikers", "Zeeslakken"]
+    ],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Lagune"],
