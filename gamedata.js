@@ -12917,7 +12917,7 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
-  }, /* ------------------ PAPEGAAIDUIKERS ------------------ */
+  }, /* ------------------ GIEREN ------------------ */
   {
     input: [
       /* --- KLEIN LANDLEVEN --- */
@@ -13000,6 +13000,84 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ REIGERS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Reigers", "Wormen"], 
+      /* Schelp */ ["Reigers", "Tweekleppigen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Reigers", "Kreeften"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Reigers", "Luizen"], ["Reigers", "Mijten"], ["Reigers", "Teken"], ["Reigers", "Termieten"],
+      ["Reigers", "Pissebedden"], ["Reigers", "Oerpolyneopteren"], ["Reigers", "Duizendpoten"], ["Reigers", "Hooiwagens"], 
+      ["Reigers", "Schorpioenen"], ["Reigers", "Spinnen"], ["Reigers", "Zilvervisjes"], ["Reigers", "Wandelende takken"], 
+      ["Reigers", "Kakkerlakken"], ["Reigers", "Oerhymenopteren"], ["Reigers", "Slakken"], ["Reigers", "Libellen"], 
+      ["Reigers", "Kevers"], ["Reigers", "Lieveheersbeestjes"], ["Reigers", "Mieren"], ["Reigers", "Wespen"],
+      ["Reigers", "Vliegen"], ["Reigers", "Vlinders"], ["Reigers", "Krekels"], ["Reigers", "Sprinkhanen"], 
+      ["Reigers", "Muggen"], ["Reigers", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Reigers", "Ei"]
+    ],
+    output: [
+      { naam: "Reigers", naam_en: "Herons", icoon: "icons/Reigers.png", map: "Vogels", 
+        quote: `A heron stands motionless at the water’s edge, then strikes with a suddenness that breaks the 
+        illusion of stillnes
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Reigers", "PLatvissen"], ["Reigers", "Karpers"], ["Reigers", "Snoeken"], ["Reigers", "Meervallen"],
+      ["Reigers", "Paling"], ["Reigers", "Goudvissen"], ["Reigers", "Haring"], ["Reigers", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Reigers", "Oertetrapoden"], ["Reigers", "Salamanders"], ["Reigers", "Kikkers"], ["Reigers", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Reigers", "Slangen"], ["Reigers", "Lepidosauriërs"], ["Reigers", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Reigers", "Ratten"], ["Reigers", "Hamsters"], ["Reigers", "Muizen"], ["Reigers", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Reigers", naam_en: "Herons", icoon: "icons/Reigers.png", map: "Vogels", 
+        quote: `A heron stands motionless at the water’s edge, then strikes with a suddenness that breaks the 
+        illusion of stillnes
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: /* SCHELP */
+      ["Reigers", "Tweekleppigen"],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Zaadjes"],
