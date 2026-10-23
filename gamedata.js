@@ -12364,6 +12364,78 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ EENDEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Ooievaars", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Ooievaars", "Waterspinnen"], ["Ooievaars", "Vlokreeftjes"], ["Ooievaars", "Garnalen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Ooievaars", "Termieten"], ["Ooievaars", "Pissebedden"], ["Ooievaars", "Oerpolyneopteren"], 
+      ["Ooievaars", "Duizendpoten"], ["Ooievaars", "Hooiwagens"], ["Ooievaars", "Spinnen"], ["Ooievaars", "Zilvervisjes"], 
+      ["Ooievaars", "Wandelende takken"], ["Ooievaars", "Kakkerlakken"], ["Ooievaars", "Oerhymenopteren"], 
+      ["Ooievaars", "Slakken"], ["Ooievaars", "Libellen"], ["Ooievaars", "Kevers"], ["Ooievaars", "Mieren"], 
+      ["Ooievaars", "Wespen"], ["Ooievaars", "Vliegen"], ["Ooievaars", "Vlinders"], ["Ooievaars", "Krekels"], 
+      ["Ooievaars", "Sprinkhanen"], ["Ooievaars", "Muggen"], ["Ooievaars", "Bijen"]
+      /* --- BIOLOGIE --- */
+      ["Ooievaars", "Detritus"], ["Ooievaars", "Ei"]
+    ],
+    output: [
+      { naam: "Ooievaars", naam_en: "Storks", icoon: "icons/Ooievaars.png", map: "Vogels", 
+        quote: `The arrival of the stork has long been associated with renewal and the return of life to the landscape 
+        in spring
+        <br><br>- Peter Scott`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Ooievaars", "Karpers"], ["Ooievaars", "Snoeken"], ["Ooievaars", "Meervallen"], ["Ooievaars", "Paling"], 
+      ["Ooievaars", "Goudvissen"], ["Ooievaars", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Ooievaars", "Oertetrapoden"], ["Ooievaars", "Salamanders"], ["Ooievaars", "Kikkers"], ["Ooievaars", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Ooievaars", "Slangen"], ["Ooievaars", "Lepidosauriërs"], ["Ooievaars", "Gekko"], ["Ooievaars", "Mollen"],
+      ["Ooievaars", "Konijnen"], ["Ooievaars", "Ratten"], 
+      /* --- ZOOGDIEREN --- */
+      ["Ooievaars", "Muizen"], ["Ooievaars", "Hamsters"], 
+      /* --- VOGELS --- */
+      ["Ooievaars", "Duiven"], ["Ooievaars", "Spreeuwen"], ["Ooievaars", "Mussen"], ["Ooievaars", "Vinken"], 
+      ["Ooievaars", "Kieviten"], 
+      /* --- CARNIVOREN --- */
+      ["Ooievaars", "Wezels"]
+    ],
+    output: [
+      { naam: "Ooievaars", naam_en: "Storks", icoon: "icons/Ooievaars.png", map: "Vogels", 
+        quote: `The arrival of the stork has long been associated with renewal and the return of life to the landscape 
+        in spring
+        <br><br>- Peter Scott`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Zee"],
