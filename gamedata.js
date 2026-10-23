@@ -12628,7 +12628,7 @@ const combinaties = [
   {
     input: [
       ["Archaeopteryx", "Regen"], ["Archaeopteryx", "Storm"], ["Archaeopteryx", "Wind"], ["Archaeopteryx", "Strand"],
-      ["Archaeopteryx", "Duinen"],
+      ["Archaeopteryx", "Duinen"]
     ],
     hint: `Sommige archaeopteryx voelen zich thuis bij het strand.`,
     hint_en: `Some archaeopteryx know they belong to the beach.`,
