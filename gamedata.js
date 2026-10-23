@@ -12465,6 +12465,97 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ MEEUWEN ------------------ */
+  {
+    input: [
+      ["Meeuwen", "map:Granen"],
+      /* --- WATERDIEREN --- */
+      ["Meeuwen", "Wormen"], 
+      /* Schelp */ ["Meeuwen", "Tweekleppigen"], ["Meeuwen", "Zeeslakken"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Meeuwen", "Waterspinnen"], ["Meeuwen", "Aasgarnalen"], ["Meeuwen", "Zeepissebedden"], ["Meeuwen", "Garnalen"],
+      ["Meeuwen", "Vlokreeftjes"], ["Meeuwen", "Krabben"], 
+      /* Schelp */ ["Meeuwen", "Heremietkreeften"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Meeuwen", "Termieten"], ["Meeuwen", "Pissebedden"], ["Meeuwen", "Oerpolyneopteren"], ["Meeuwen", "Duizendpoten"],
+      ["Meeuwen", "Hooiwagens"], ["Meeuwen", "Spinnen"], ["Meeuwen", "Zilvervisjes"], ["Meeuwen", "Wandelende takken"], 
+      ["Meeuwen", "Kakkerlakken"], ["Meeuwen", "Oerhymenopteren"], ["Meeuwen", "Slakken"], ["Meeuwen", "Libellen"], 
+      ["Meeuwen", "Kevers"], ["Meeuwen", "Mieren"], ["Meeuwen", "Wespen"], ["Meeuwen", "Vliegen"], 
+      ["Meeuwen", "Vlinders"], ["Meeuwen", "Krekels"], ["Meeuwen", "Sprinkhanen"], ["Meeuwen", "Muggen"], 
+      ["Meeuwen", "Bijen"]
+      /* --- BIOLOGIE --- */
+      ["Meeuwen", "Detritus"], ["Meeuwen", "Zaadjes"], ["Meeuwen", "Ei"],
+      /* --- BLOEMEN --- */
+      ["Meeuwen", "Paardenbloemen"], ["Meeuwen", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Meeuwen", "Druiven"], ["Meeuwen", "Bosbessen"], ["Meeuwen", "Aardbeien"], ["Meeuwen", "Kersen"],      
+      /* --- GROENTEN --- */
+      ["Meeuwen", "Tomaten"], ["Meeuwen", "Selderij"], ["Meeuwen", "Wortelen"], ["Meeuwen", "Sla"], 
+      ["Meeuwen", "Andijvie"], ["Meeuwen", "Aardappelen"],
+      /* --- ZADEN --- */
+      ["Meeuwen", "Pinda"]
+    ],
+    output: [
+      { naam: "Meeuwen", naam_en: "Seagulls", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Meeuwen", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Meeuwen", "Platvissen"], ["Meeuwen", "Karpers"], ["Meeuwen", "Vliegende vissen"], ["Meeuwen", "Kabeljauwen"],
+      ["Meeuwen", "Snoeken"], ["Meeuwen", "Paling"], ["Meeuwen", "Goudvissen"], ["Meeuwen", "Haring"],
+      ["Meeuwen", "Makreel"], ["Meeuwen", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Meeuwen", "Oertetrapoden"], ["Meeuwen", "Salamanders"], ["Meeuwen", "Kikkers"], ["Meeuwen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Meeuwen", "Lepidosauriërs"], ["Meeuwen", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Meeuwen", "Muizen"], ["Meeuwen", "Hamsters"], ["Meeuwen", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Meeuwen", naam_en: "Seagulls", icoon: "icons/Meeuwen.png", map: "Vogels", 
+        quote: `The gull follows the tide and the ships, never belonging to land or sea, but to the space between them
+        <br><br>- Virginia Woolf`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* SCHELP */
+      ["Meeuwen", "Tweekleppigen"], ["Meeuwen", "Zeeslakken"], ["Meeuwen", "Heremietkreeften"]
+    ],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
   },
   {
     input: [
