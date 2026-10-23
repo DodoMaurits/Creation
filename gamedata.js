@@ -13153,6 +13153,42 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ KIPPEN ------------------ */
+  {
+    input: [
+      ["Kippen", "map:Granen"], 
+      /* --- WATERDIEREN --- */
+      ["Kippen", "Wormen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kippen", "Spinnen"], ["Kippen", "Slakken"], ["Kippen", "Kevers"], ["Kippen", "Vliegen"], ["Kippen", "Vlinders"], 
+      ["Kippen", "Krekels"], ["Kippen", "Sprinkhanen"], 
+      /* --- PLANTEN --- */
+      ["Kippen", "Gras"], ["Kippen", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Kippen", "Blad"], ["Kippen", "Zaadjes"], 
+      /* --- BLOEMEN --- */
+      ["Kippen", "Paardenbloemen"], ["Kippen", "Zonnebloemen"],
+      /* --- GROENTEN --- */
+      ["Kippen", "Sla"],
+      /* --- ZADEN --- */
+      ["Kippen", "Erwten"], ["Kippen", "Soja"], ["Kippen", "Pinda"], ["Kippen", "Sesam"], ["Kippen", "Linzen"], 
+      ["Kippen", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Kippen", naam_en: "Chickens", icoon: "icons/Kippen.png", map: "Vogels", 
+        quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
+        <br><br>- Fridtjof Nansen`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Hout"],
