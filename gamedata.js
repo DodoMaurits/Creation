@@ -12917,6 +12917,67 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ PAPEGAAIDUIKERS ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Gieren", "Luizen"], ["Gieren", "Mijten"], ["Gieren", "Teken"], ["Gieren", "Termieten"],
+      ["Gieren", "Pissebedden"], ["Gieren", "Oerpolyneopteren"], ["Gieren", "Duizendpoten"], ["Gieren", "Hooiwagens"], 
+      ["Gieren", "Schorpioenen"], ["Gieren", "Spinnen"], ["Gieren", "Zilvervisjes"], ["Gieren", "Wandelende takken"], 
+      ["Gieren", "Kakkerlakken"], ["Gieren", "Oerhymenopteren"], ["Gieren", "Slakken"], ["Gieren", "Libellen"], 
+      ["Gieren", "Kevers"], ["Gieren", "Lieveheersbeestjes"], ["Gieren", "Mieren"], ["Gieren", "Wespen"],
+      ["Gieren", "Vliegen"], ["Gieren", "Vlinders"], ["Gieren", "Krekels"], ["Gieren", "Sprinkhanen"], 
+      ["Gieren", "Muggen"], ["Gieren", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Gieren", "Bot"], ["Gieren", "Weefsel"], ["Gieren", "Spieren"], ["Gieren", "Detritus"], ["Gieren", "Bloed"], 
+      ["Gieren", "Ei"]
+    ],
+    output: [
+      { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
+        quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
+        <br><br>- Alexander von Humboldt`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Gieren", "Oertetraoden"], ["Gieren", "Salamanders"], ["Gieren", "Kikkers"], ["Gieren", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Gieren", "Slangen"], ["Gieren", "Oersynapsiden"], ["Gieren", "Oerdiapsiden"], ["Gieren", "Oeranapsiden"],
+      ["Gieren", "Lepidosauriërs"], ["Gieren", "Gekko"], 
+      /* --- ZOOGDIEREN --- */
+      ["Gieren", "Konijnen"], ["Gieren", "Hazen"], ["Gieren", "Ratten"], ["Gieren", "Muizen"], ["Gieren", "Hamsters"], 
+      ["Gieren", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
+        quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
+        <br><br>- Alexander von Humboldt`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
