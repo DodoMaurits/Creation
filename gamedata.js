@@ -12482,7 +12482,7 @@ const combinaties = [
       ["Meeuwen", "Kakkerlakken"], ["Meeuwen", "Oerhymenopteren"], ["Meeuwen", "Slakken"], ["Meeuwen", "Libellen"], 
       ["Meeuwen", "Kevers"], ["Meeuwen", "Mieren"], ["Meeuwen", "Wespen"], ["Meeuwen", "Vliegen"], 
       ["Meeuwen", "Vlinders"], ["Meeuwen", "Krekels"], ["Meeuwen", "Sprinkhanen"], ["Meeuwen", "Muggen"], 
-      ["Meeuwen", "Bijen"]
+      ["Meeuwen", "Bijen"],
       /* --- BIOLOGIE --- */
       ["Meeuwen", "Detritus"], ["Meeuwen", "Zaadjes"], ["Meeuwen", "Ei"],
       /* --- BLOEMEN --- */
