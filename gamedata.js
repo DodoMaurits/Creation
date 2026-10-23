@@ -12556,6 +12556,74 @@ const combinaties = [
         <br><br>- Sara Pennypacker`
       }
     ]
+  }, /* ------------------ AALSCHOLVERS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Aalscholvers", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Aalscholvers", "Waterspinnen"], ["Aalscholvers", "Aasgarnalen"], ["Aalscholvers", "Zeepissebedden"], 
+      ["Aalscholvers", "Vlokreeftjes"], ["Aalscholvers", "Garnalen"], ["Aalscholvers", "Kreeften"],
+      ["Aalscholvers", "Krabben"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Aalscholvers", "Termieten"], ["Aalscholvers", "Pissebedden"], ["Aalscholvers", "Oerpolyneopteren"], 
+      ["Aalscholvers", "Duizendpoten"], ["Aalscholvers", "Hooiwagens"], ["Aalscholvers", "Spinnen"], 
+      ["Aalscholvers", "Zilvervisjes"], ["Aalscholvers", "Wandelende takken"], ["Aalscholvers", "Kakkerlakken"], 
+      ["Aalscholvers", "Oerhymenopteren"], ["Aalscholvers", "Slakken"], ["Aalscholvers", "Libellen"], 
+      ["Aalscholvers", "Kevers"], ["Aalscholvers", "Mieren"], ["Aalscholvers", "Vliegen"], ["Aalscholvers", "Vlinders"], 
+      ["Aalscholvers", "Krekels"], ["Aalscholvers", "Sprinkhanen"], ["Aalscholvers", "Muggen"], 
+      /* --- BIOLOGIE --- */
+      ["Aalscholvers", "Ei"]
+    ],
+    output: [
+      { naam: "Aalscholvers", naam_en: "Cormorants", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+        quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
+        itself
+        <br><br>- Matsuo Basho`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Aalscholvers", "Platvissen"], ["Aalscholvers", "Karpers"], ["Aalscholvers", "Kabeljauwen"],
+      ["Aalscholvers", "Snoeken"], ["Aalscholvers", "Paling"], ["Aalscholvers", "Goudvissen"], 
+      ["Aalscholvers", "Zalm"], ["Aalscholvers", "Haring"], ["Aalscholvers", "Makreel"], ["Aalscholvers", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Aalscholvers", "Oertetrapoden"], ["Aalscholvers", "Salamanders"], ["Aalscholvers", "Kikkers"], 
+      ["Aalscholvers", "Padden"],
+      /* --- ZOOGDIEREN --- */
+      ["Aalscholvers", "Muizen"], ["Aalscholvers", "Hamsters"], ["Aalscholvers", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Aalscholvers", naam_en: "Cormorants", icoon: "icons/Aalscholvers.png", map: "Vogels", 
+        quote: `Cormorants dive into the river, vanishing beneath the surface and returning like shadows of the water 
+        itself
+        <br><br>- Matsuo Basho`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
