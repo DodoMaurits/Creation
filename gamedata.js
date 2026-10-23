@@ -2174,7 +2174,7 @@ const combinaties = [
       ["Brandnetels", "Ster"], ["Brandnetels", "Licht"],
       ["Oerfagales", "Ster"], ["Oerfagales", "Licht"],
       ["Agave", "Ster"], ["Agave", "Licht"],
-      ["Aloë vera", "Ster"], ["Aloë vera", "Licht"],
+      ["Aloë Vera", "Ster"], ["Aloë Vera", "Licht"],
       ["Cactussen", "Ster"], ["Cactussen", "Licht"],
       ["Heide", "Ster"], ["Heide", "Licht"],
       ["Lavendel", "Ster"], ["Lavendel", "Licht"],
@@ -2642,7 +2642,7 @@ const combinaties = [
     input: [
       /* --- PRIL LEVEN --- */
       ["Oerbilateria", "Bacteriën"], ["Oerbilateria", "Blauwalgen"], ["Oerbilateria", "Leca"], ["Oerbilateria", "Sponzen"], 
-      ["Oerbilateira", "Archaeplastiden"], ["Oerbilateria", "Schimmel"], ["Oerbilateria", "Gist"], 
+      ["Oerbilateria", "Archaeplastiden"], ["Oerbilateria", "Schimmel"], ["Oerbilateria", "Gist"], 
       ["Oerbilateria", "Amoeben"], ["Oerbilateria", "Foraminiferen"], ["Oerbilateria", "Stralendiertjes"], 
       ["Oerbilateria", "Oercnidaria"],
       /* --- BIOLOGIE --- */
@@ -2799,7 +2799,7 @@ const combinaties = [
       ["Zeeanemonen", "Sponzen"], ["Zeeanemonen", "Wormen"], ["Zeeanemonen", "Oertrochozoa"], 
       ["Zeeanemonen", "Beerdiertjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Zeeanemeonen", "Krill"], ["Zeeanemonen", "Vlokreeftjes"],
+      ["Zeeanemonen", "Krill"], ["Zeeanemonen", "Vlokreeftjes"],
       /* --- BIOLOGIE --- */
       ["Zeeanemonen", "Detritus"]
     ],
@@ -2918,7 +2918,7 @@ const combinaties = [
       ["Varens", "Radioactiviteit"], ["Varens", "Gif"],
       ["Oerzaadplanten", "Radioactiviteit"], ["Oerzaadplanten", "Gif"],
       ["Oermagnoliden", "Radioactiviteit"], ["Oermagnoliden", "Gif"],
-      ["Oermonocotylen", "Radioactiviteit"], /*["Oermoncotylen", "Gif"],*/
+      ["Oermonocotylen", "Radioactiviteit"], /*["Oermonocotylen", "Gif"],*/
       ["Oereudicoten", "Radioactiviteit"], /*["Oereudicoten", "Gif"],*/
       ["Gras", "Radioactiviteit"], ["Gras", "Gif"],
       ["Oerfabiden", "Radioactiviteit"], /*["Oerfabiden", "Gif"],*/
@@ -2933,7 +2933,7 @@ const combinaties = [
       ["Brandnetels", "Radioactiviteit"], ["Brandnetels", "Gif"],
       ["Oerfagales", "Radioactiviteit"], ["Oerfagales", "Gif"],
       ["Agave", "Radioactiviteit"], ["Agave", "Gif"],
-      ["Aloë vera", "Radioactiviteit"], ["Aloë vera", "Gif"],
+      ["Aloë Vera", "Radioactiviteit"], ["Aloë Vera", "Gif"],
       ["Cactussen", "Radioactiviteit"], ["Cactussen", "Gif"],
       ["Heide", "Radioactiviteit"], ["Heide", "Gif"],
       ["Lavendel", "Radioactiviteit"], ["Lavendel", "Gif"],
@@ -3169,7 +3169,7 @@ const combinaties = [
       ["Varens", "Vuur"], ["Varens", "Lava"], ["Varens", "Brand"],
       ["Oerzaadplanten", "Vuur"], ["Oerzaadplanten", "Lava"], ["Oerzaadplanten", "Brand"],
       ["Oermagnoliden", "Vuur"], ["Oermagnoliden", "Lava"], ["Oermagnoliden", "Brand"],
-      ["Oermonocotylen", "Vuur"], ["Oermoncotylen", "Lava"], ["Oermoncotylen", "Brand"],
+      ["Oermonocotylen", "Vuur"], ["Oermonocotylen", "Lava"], ["Oermonocotylen", "Brand"],
       ["Oereudicoten", "Vuur"], ["Oereudicoten", "Lava"], ["Oereudicoten", "Brand"],
       ["Gras", "Vuur"], ["Gras", "Lava"], ["Gras", "Brand"],
       ["Oerfabiden", "Vuur"], ["Oerfabiden", "Lava"], ["Oerfabiden", "Brand"],
@@ -3184,7 +3184,7 @@ const combinaties = [
       ["Brandnetels", "Vuur"], ["Brandnetels", "Lava"], ["Brandnetels", "Brand"],
       ["Oerfagales", "Vuur"], ["Oerfagales", "Lava"], ["Oerfagales", "Brand"],
       ["Agave", "Vuur"], ["Agave", "Lava"], ["Agave", "Brand"],
-      ["Aloë vera", "Vuur"], ["Aloë vera", "Lava"], ["Aloë vera", "Brand"],
+      ["Aloë Vera", "Vuur"], ["Aloë Vera", "Lava"], ["Aloë Vera", "Brand"],
       ["Cactussen", "Vuur"], ["Cactussen", "Lava"], ["Cactussen", "Brand"],
       /*["Heide", "Vuur"],*/ ["Heide", "Lava"], /*["Heide", "Brand"],*/
       ["Lavendel", "Vuur"], ["Lavendel", "Lava"], ["Lavendel", "Brand"],
@@ -4365,7 +4365,7 @@ const combinaties = [
       /* --- WATERDIEREN --- */
       ["Zeesterren", "Sponzen"], ["Zeesterren", "Koraal"], ["Zeesterren", "Wormen"], ["Zeesterren", "Oertrochozoa"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Zeestserren", "Krill"], ["Zeestserren", "Vlokreeftjes"], ["Zeesterren", "Garnalen"],
+      ["Zeesterren", "Krill"], ["Zeesterren", "Vlokreeftjes"], ["Zeesterren", "Garnalen"],
       /* Schelp */ ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"],
       /* --- BIOLOGIE --- */
       ["Zeesterren", "Detritus"]
@@ -7731,7 +7731,7 @@ const combinaties = [
       ["Oercynodonten", "Oereudicoten"], ["Oercynodonten", "Oerfabiden"], ["Oercynodonten", "Oermalviden"],
       ["Oercynodonten", "Oercaryophyllales"], ["Oercynodonten", "Oerasteriden"], ["Oercynodonten", "Oerericales"],
       ["Oercynodonten", "Oerlamiden"], ["Oercynodonten", "Oercampanuliden"], ["Oercynodonten", "Vetplanten"], 
-      ["Oercynodonten", "Brandnetels"], ["Oercynodonten", "Aloë vera"], ["Oercynodonten", "Heide"], 
+      ["Oercynodonten", "Brandnetels"], ["Oercynodonten", "Aloë Vera"], ["Oercynodonten", "Heide"], 
       ["Oercynodonten", "Lavendel"], ["Oercynodonten", "Klavers"], ["Oercynodonten", "Waterriet"], 
       ["Oercynodonten", "Suikerriet"],    
       /* --- BIOLOGIE --- */
@@ -8608,7 +8608,7 @@ const combinaties = [
       /* --- PLANTEN --- */
       ["Sauropoden", "Mos"], ["Sauropoden", "Oervaatplanten"], ["Sauropoden", "Varens"], ["Sauropoden", "Oerzaadplanten"],
       ["Sauropoden", "Oermagnoliden"], ["Sauropoden", "Gras"], ["Sauropoden", "Vetplanten"], 
-      ["Sauropoden", "Brandnetels"], ["Sauropoden", "Agave"], ["Sauropoden", "Aloë vera"], ["Sauropoden", "Heide"],
+      ["Sauropoden", "Brandnetels"], ["Sauropoden", "Agave"], ["Sauropoden", "Aloë Vera"], ["Sauropoden", "Heide"],
       ["Sauropoden", "Lavendel"], ["Sauropoden", "Klavers"], ["Sauropoden", "Kroos"], ["Sauropoden", "Waterriet"],
       ["Sauropoden", "Suikerriet"],
       /* --- BIOLOGIE --- */
@@ -8647,7 +8647,7 @@ const combinaties = [
       ["Stegosauriërs", "Mos"], ["Stegosauriërs", "Oervaatplanten"], ["Stegosauriërs", "Varens"], 
       ["Stegosauriërs", "Oerzaadplanten"], ["Stegosauriërs", "Oermagnoliden"], ["Stegosauriërs", "Gras"], 
       ["Stegosauriërs", "Vetplanten"], ["Stegosauriërs", "Brandnetels"], ["Stegosauriërs", "Agave"], 
-      ["Stegosauriërs", "Aloë vera"], ["Stegosauriërs", "Heide"], ["Stegosauriërs", "Lavendel"], 
+      ["Stegosauriërs", "Aloë Vera"], ["Stegosauriërs", "Heide"], ["Stegosauriërs", "Lavendel"], 
       ["Stegosauriërs", "Klavers"], ["Stegosauriërs", "Kroos"], ["Stegosauriërs", "Waterriet"], 
       ["Stegosauriërs", "Suikerriet"],
       /* --- BIOLOGIE --- */
@@ -9283,7 +9283,7 @@ const combinaties = [
       ["Slangen", "Kabeljauwen"], ["Slangen", "Snoeken"], ["Slangen", "Meervallen"], ["Slangen", "Paling"],    
       ["Slangen", "Goudvissen"], ["Slangen", "Zalm"], ["Slangen", "Haring"], ["Slangen", "Makreel"], ["Slangen", "Forel"], 
       /* --- KLEIN LANDLEVEN --- */
-      ["Slangen", "Salamander"], ["Slangen", "Kikkers"], ["Slangen", "Padden"],
+      ["Slangen", "Salamanders"], ["Slangen", "Kikkers"], ["Slangen", "Padden"],
       /* --- REPTIELEN --- */
       ["Slangen", "Gekko's"], ["Slangen", "Leguanen"],
       /* --- ZOOGDIEREN --- */
@@ -9417,7 +9417,7 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Krokodillen", "Lancetvisjes"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Krokodillen", "Oergeleedpotigen"], ["Krokodillen", "Cheliceraten"], ["Krokodillen", "Oerspinachtigen"], 
+      ["Krokodillen", "Oergeleedpotigen"], ["Krokodillen", "Oercheliceraten"], ["Krokodillen", "Oerspinachtigen"], 
       ["Krokodillen", "Waterspinnen"], ["Krokodillen", "Trilobieten"], ["Krokodillen", "Oerkreeftjes"], 
       ["Krokodillen", "Krill"], ["Krokodillen", "Aasgarnalen"], ["Krokodillen", "Zeepissebedden"], 
       ["Krokodillen", "Reuzenpissebedden"], ["Krokodillen", "Oerinsecten"], ["Krokodillen", "Vlokreeftjes"],
@@ -9986,7 +9986,7 @@ const combinaties = [
       ["Oerplacentalia", "Oereudicoten"], ["Oerplacentalia", "Oerfabiden"], ["Oerplacentalia", "Oermalviden"],
       ["Oerplacentalia", "Oercaryophyllales"], ["Oerplacentalia", "Oerasteriden"], ["Oerplacentalia", "Oerericales"],
       ["Oerplacentalia", "Oerlamiden"], ["Oerplacentalia", "Oercampanuliden"], ["Oerplacentalia", "Vetplanten"], 
-      ["Oerplacentalia", "Brandnetels"], ["Oerplacentalia", "Aloë vera"], ["Oerplacentalia", "Heide"], 
+      ["Oerplacentalia", "Brandnetels"], ["Oerplacentalia", "Aloë Vera"], ["Oerplacentalia", "Heide"], 
       ["Oerplacentalia", "Lavendel"], ["Oerplacentalia", "Klavers"], ["Oerplacentalia", "Waterriet"], 
       ["Oerplacentalia", "Suikerriet"],    
       /* --- BIOLOGIE --- */
@@ -10083,7 +10083,7 @@ const combinaties = [
       ["Oerbuideldieren", "Oereudicoten"], ["Oerbuideldieren", "Oerfabiden"], ["Oerbuideldieren", "Oermalviden"],
       ["Oerbuideldieren", "Oercaryophyllales"], ["Oerbuideldieren", "Oerasteriden"], ["Oerbuideldieren", "Oerericales"],
       ["Oerbuideldieren", "Oerlamiden"], ["Oerbuideldieren", "Oercampanuliden"], ["Oerbuideldieren", "Vetplanten"], 
-      ["Oerbuideldieren", "Brandnetels"], ["Oerbuideldieren", "Aloë vera"], ["Oerbuideldieren", "Heide"], 
+      ["Oerbuideldieren", "Brandnetels"], ["Oerbuideldieren", "Aloë Vera"], ["Oerbuideldieren", "Heide"], 
       ["Oerbuideldieren", "Lavendel"], ["Oerbuideldieren", "Klavers"], ["Oerbuideldieren", "Waterriet"], 
       ["Oerbuideldieren", "Suikerriet"],
       /* --- BIOLOGIE --- */
@@ -11932,7 +11932,7 @@ const combinaties = [
       /* --- REPTIELEN --- */
       ["Arenden", "Slangen"], ["Arenden", "Oersynapsiden"], ["Arenden", "Oerdiapsiden"], ["Arenden", "Oeranapsiden"],
       ["Arenden", "Schildpadden"], ["Arenden", "Pterosauriërs"], ["Arenden", "Lepidosauriërs"], 
-      ["Arenden", "Gekko"], ["Arenden", "Leguanen"], 
+      ["Arenden", "Gekko's"], ["Arenden", "Leguanen"], 
       /* --- ZOOGDIEREN --- */
       ["Arenden", "Luiaarden"], ["Arenden", "Egels"], ["Arenden", "Konijnen"], ["Arenden", "Hazen"], 
       ["Arenden", "Prairiehonden"], ["Arenden", "Ratten"], ["Arenden", "Capibara"], ["Arenden", "Eekhoorns"],
@@ -12017,7 +12017,7 @@ const combinaties = [
       ["Eenden", "Mos"], ["Eenden", "Oervaatplanten"], ["Eenden", "Oerzaadplanten"], ["Eenden", "Oermagnoliden"], 
       ["Eenden", "Oereudicoten"], ["Eenden", "Gras"], ["Eenden", "Oerfabiden"], ["Eenden", "Oermalviden"], 
       ["Eenden", "Oercaryophyllales"], ["Eenden", "Oerasteriden"], ["Eenden", "Oerericales"], ["Eenden", "Oerlamiden"], 
-      ["Eenden", "Oercampunaliden"], ["Eenden", "Brandnetels"], ["Eenden", "Klavers"], ["Eenden", "Kroos"], 
+      ["Eenden", "Oercampanuliden"], ["Eenden", "Brandnetels"], ["Eenden", "Klavers"], ["Eenden", "Kroos"], 
       ["Eenden", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Eenden", "Detritus"], ["Eenden", "Wortels"], ["Eenden", "Blad"], ["Eenden", "Zaadjes"], ["Eenden", "Ei"],
@@ -12108,7 +12108,7 @@ const combinaties = [
       ["Ganzen", "Mos"], ["Ganzen", "Oervaatplanten"], ["Ganzen", "Oerzaadplanten"], ["Ganzen", "Oermagnoliden"], 
       ["Ganzen", "Oereudicoten"], ["Ganzen", "Gras"], ["Ganzen", "Oerfabiden"], ["Ganzen", "Oermalviden"], 
       ["Ganzen", "Oercaryophyllales"], ["Ganzen", "Oerasteriden"], ["Ganzen", "Oerericales"], ["Ganzen", "Oerlamiden"], 
-      ["Ganzen", "Oercampunaliden"], ["Ganzen", "Brandnetels"], ["Ganzen", "Heide"], ["Ganzen", "Klavers"], 
+      ["Ganzen", "Oercampanuliden"], ["Ganzen", "Brandnetels"], ["Ganzen", "Heide"], ["Ganzen", "Klavers"], 
       ["Ganzen", "Kroos"], ["Ganzen", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Ganzen", "Wortels"], ["Ganzen", "Blad"], ["Ganzen", "Zaadjes"], ["Ganzen", "Ei"],
@@ -12176,7 +12176,7 @@ const combinaties = [
       ["Zwanen", "Mos"], ["Zwanen", "Oervaatplanten"], ["Zwanen", "Oerzaadplanten"], ["Zwanen", "Oermagnoliden"], 
       ["Zwanen", "Oereudicoten"], ["Zwanen", "Gras"], ["Zwanen", "Oerfabiden"], ["Zwanen", "Oermalviden"], 
       ["Zwanen", "Oercaryophyllales"], ["Zwanen", "Oerasteriden"], ["Zwanen", "Oerericales"], ["Zwanen", "Oerlamiden"], 
-      ["Zwanen", "Oercampunaliden"], ["Zwanen", "Brandnetels"], ["Zwanen", "Klavers"], ["Zwanen", "Kroos"], 
+      ["Zwanen", "Oercampanuliden"], ["Zwanen", "Brandnetels"], ["Zwanen", "Klavers"], ["Zwanen", "Kroos"], 
       ["Zwanen", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Zwanen", "Wortels"], ["Zwanen", "Blad"], ["Zwanen", "Zaadjes"], ["Zwanen", "Ei"],
@@ -12258,7 +12258,7 @@ const combinaties = [
   {
     input: [
       /* --- KLEIN LANDLEVEN --- */
-      ["Zwaluwen", "Termieten"], ["Zwaluwen", "Oerpolynopteren"], ["Zwaluwen", "Spinnen"], ["Zwaluwen", "Kakkerlakken"],
+      ["Zwaluwen", "Termieten"], ["Zwaluwen", "Oerpolyneopteren"], ["Zwaluwen", "Spinnen"], ["Zwaluwen", "Kakkerlakken"],
       ["Zwaluwen", "Oerhymenopteren"], ["Zwaluwen", "Kevers"], ["Zwaluwen", "Mieren"], ["Zwaluwen", "Wespen"], 
       ["Zwaluwen", "Vliegen"], ["Zwaluwen", "Vlinders"], ["Zwaluwen", "Krekels"], ["Zwaluwen", "Sprinkhanen"], 
       ["Zwaluwen", "Muggen"], ["Zwaluwen", "Bijen"]
@@ -12286,7 +12286,7 @@ const combinaties = [
       /* --- GELEEDPOTIGEN --- */
       ["Spreeuwen", "Waterspinnen"],
       /* --- KLEIN LANDLEVEN --- */
-      ["Spreeuwen", "Termieten"], ["Spreeuwen", "Pissebedden"], ["Spreeuwen", "Oerpolynopteren"], 
+      ["Spreeuwen", "Termieten"], ["Spreeuwen", "Pissebedden"], ["Spreeuwen", "Oerpolyneopteren"], 
       ["Spreeuwen", "Duizendpoten"], ["Spreeuwen", "Hooiwagens"], ["Spreeuwen", "Spinnen"], ["Spreeuwen", "Zilvervisjes"],
       ["Spreeuwen", "Wandelende takken"], ["Spreeuwen", "Kakkerlakken"], ["Spreeuwen", "Oerhymenopteren"], 
       ["Spreeuwen", "Slakken"], ["Spreeuwen", "Libellen"], ["Spreeuwen", "Kevers"], ["Spreeuwen", "Mieren"],
@@ -12296,7 +12296,7 @@ const combinaties = [
       ["Spreeuwen", "Mos"], ["Spreeuwen", "Oervaatplanten"], ["Spreeuwen", "Oerzaadplanten"], 
       ["Spreeuwen", "Oermagnoliden"], ["Spreeuwen", "Oereudicoten"], ["Spreeuwen", "Gras"], ["Spreeuwen", "Oerfabiden"], 
       ["Spreeuwen", "Oermalviden"], ["Spreeuwen", "Oercaryophyllales"], ["Spreeuwen", "Oerasteriden"], 
-      ["Spreeuwen", "Oerericales"], ["Spreeuwen", "Oerlamiden"], ["Spreeuwen", "Oercampunaliden"], 
+      ["Spreeuwen", "Oerericales"], ["Spreeuwen", "Oerlamiden"], ["Spreeuwen", "Oercampanuliden"], 
       ["Spreeuwen", "Brandnetels"], ["Spreeuwen", "Heide"], ["Spreeuwen", "Klavers"],
       /* --- BIOLOGIE --- */
       ["Spreeuwen", "Blad"], ["Spreeuwen", "Zaadjes"], ["Spreeuwen", "Ei"],
@@ -12406,7 +12406,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Ooievaars", "Oertetrapoden"], ["Ooievaars", "Salamanders"], ["Ooievaars", "Kikkers"], ["Ooievaars", "Padden"],
       /* --- REPTIELEN --- */
-      ["Ooievaars", "Slangen"], ["Ooievaars", "Lepidosauriërs"], ["Ooievaars", "Gekko"], ["Ooievaars", "Mollen"],
+      ["Ooievaars", "Slangen"], ["Ooievaars", "Lepidosauriërs"], ["Ooievaars", "Gekko's"], ["Ooievaars", "Mollen"],
       ["Ooievaars", "Konijnen"], ["Ooievaars", "Ratten"], 
       /* --- ZOOGDIEREN --- */
       ["Ooievaars", "Muizen"], ["Ooievaars", "Hamsters"], 
@@ -12951,10 +12951,10 @@ const combinaties = [
   {
     input: [/* BLOED */
       /* --- KLEIN LANDLEVEN --- */
-      ["Gieren", "Oertetraoden"], ["Gieren", "Salamanders"], ["Gieren", "Kikkers"], ["Gieren", "Padden"],
+      ["Gieren", "Oertetrapoden"], ["Gieren", "Salamanders"], ["Gieren", "Kikkers"], ["Gieren", "Padden"],
       /* --- REPTIELEN --- */
       ["Gieren", "Slangen"], ["Gieren", "Oersynapsiden"], ["Gieren", "Oerdiapsiden"], ["Gieren", "Oeranapsiden"],
-      ["Gieren", "Lepidosauriërs"], ["Gieren", "Gekko"], 
+      ["Gieren", "Lepidosauriërs"], ["Gieren", "Gekko's"], 
       /* --- ZOOGDIEREN --- */
       ["Gieren", "Konijnen"], ["Gieren", "Hazen"], ["Gieren", "Ratten"], ["Gieren", "Muizen"], ["Gieren", "Hamsters"], 
       ["Gieren", "Spitsmuizen"]
@@ -13039,7 +13039,7 @@ const combinaties = [
   {
     input: [/* BLOED */
       /* --- VISSEN --- */
-      ["Reigers", "PLatvissen"], ["Reigers", "Karpers"], ["Reigers", "Snoeken"], ["Reigers", "Meervallen"],
+      ["Reigers", "Platvissen"], ["Reigers", "Karpers"], ["Reigers", "Snoeken"], ["Reigers", "Meervallen"],
       ["Reigers", "Paling"], ["Reigers", "Goudvissen"], ["Reigers", "Haring"], ["Reigers", "Forel"],
       /* --- KLEIN LANDLEVEN --- */
       ["Reigers", "Oertetrapoden"], ["Reigers", "Salamanders"], ["Reigers", "Kikkers"], ["Reigers", "Padden"],
@@ -13114,7 +13114,7 @@ const combinaties = [
       ["Mussen", "Wormen"], 
       /* --- KLEIN LANDLEVEN --- */
       ["Mussen", "Luizen"], ["Mussen", "Mijten"], ["Mussen", "Teken"], ["Mussen", "Termieten"], 
-      ["Mussen", "Pissebedden"], ["Mussen", "Oerpolynopteren"], ["Mussen", "Duizendpoten"], ["Mussen", "Hooiwagens"], 
+      ["Mussen", "Pissebedden"], ["Mussen", "Oerpolyneopteren"], ["Mussen", "Duizendpoten"], ["Mussen", "Hooiwagens"], 
       ["Mussen", "Spinnen"], ["Mussen", "Zilvervisjes"], ["Mussen", "Wandelende takken"], ["Mussen", "Kakkerlakken"], 
       ["Mussen", "Oerhymenopteren"], ["Mussen", "Slakken"], ["Mussen", "Libellen"], ["Mussen", "Kevers"], 
       ["Mussen", "Mieren"], ["Mussen", "Vliegen"], ["Mussen", "Vlinders"], ["Mussen", "Krekels"],
@@ -15232,7 +15232,7 @@ const combinaties = [
   {
     input: [
       ["Oercaryophyllales", "Ven"], ["Oercaryophyllales", "Moeras"], ["Oercaryophyllales", "Spinnen"],
-      ["Oercaryophyllales", "Bladluizen"], ["Oercaryophyllales", "Vliegen"], ["Oercaryophyllales", "Muggen"]
+      ["Oercaryophyllales", "Luizen"], ["Oercaryophyllales", "Vliegen"], ["Oercaryophyllales", "Muggen"]
     ],
     hint: `Sommige caryophyllales doen zich tegoed aan insecten in moerassen.`,
     hint_en: `Some caryophyllales feast on insects in the swamps.`,
@@ -15979,7 +15979,7 @@ const combinaties = [
       ["Luiaarden", "Druiven"], ["Luiaarden", "Appels"], ["Luiaarden", "Peren"], ["Luiaarden", "Pruimen"],
       ["Luiaarden", "Bosbessen"], ["Luiaarden", "Vijgen"], ["Luiaarden", "Aardbeien"], ["Luiaarden", "Abrikozen"],
       ["Luiaarden", "Kersen"], ["Luiaarden", "Perziken"], ["Luiaarden", "Guaves"], ["Luiaarden", "Mango"],
-      ["Luiaarden", "Papaja"], ["Luiaarden", "Frambozen"], ["Luiaarden", "Banane"], ["Luiaarden", "Lychee"],
+      ["Luiaarden", "Papaja"], ["Luiaarden", "Frambozen"], ["Luiaarden", "Bananen"], ["Luiaarden", "Lychee"],
       ["Luiaarden", "Kaki"], ["Luiaarden", "Dadels"]
     ],
     output: [
@@ -16471,7 +16471,7 @@ const combinaties = [
       ["Wombats", "Luizen"], ["Wombats", "Mijten"], ["Wombats", "Teken"], 
       /* --- PLANTEN --- */
       ["Wombats", "Mos"], ["Wombats", "Varens"], ["Wombats", "Gras"], ["Wombats", "Vetplanten"], 
-      ["Wombats", "Brandnetels"], ["Wombats", "Agave"], ["Wombats", "Aloë vera"], ["Wombats", "Heide"], 
+      ["Wombats", "Brandnetels"], ["Wombats", "Agave"], ["Wombats", "Aloë Vera"], ["Wombats", "Heide"], 
       ["Wombats", "Lavendel"], ["Wombats", "Klavers"], ["Wombats", "Kroos"], ["Wombats", "Waterriet"], 
       ["Wombats", "Suikerriet"],
       /* --- BIOLOGIE --- */
@@ -16532,7 +16532,7 @@ const combinaties = [
       ["Kangoeroes", "Luizen"], ["Kangoeroes", "Mijten"], ["Kangoeroes", "Teken"], 
       /* --- PLANTEN --- */
       ["Kangoeroes", "Mos"], ["Kangoeroes", "Varens"], ["Kangoeroes", "Gras"], ["Kangoeroes", "Vetplanten"], 
-      ["Kangoeroes", "Brandnetels"], ["Kangoeroes", "Aloë vera"], ["Kangoeroes", "Heide"], ["Kangoeroes", "Lavendel"], 
+      ["Kangoeroes", "Brandnetels"], ["Kangoeroes", "Aloë Vera"], ["Kangoeroes", "Heide"], ["Kangoeroes", "Lavendel"], 
       ["Kangoeroes", "Kroos"], ["Kangoeroes", "Kroos"], ["Kangoeroes", "Waterriet"], ["Kangoeroes", "Suikerriet"],
       /* --- BIOLOGIE --- */
       ["Kangoeroes", "Detritus"], ["Kangoeroes", "Wortels"], ["Kangoeroes", "Blad"], ["Kangoeroes", "Ei"],
@@ -18243,7 +18243,7 @@ const combinaties = [
   {
     input: [ /* BLOED */
       /* --- WATERDIEREN --- */
-      ["Narwallen", "Inktvissen "], ["Narwallen", "Octopussen "], 
+      ["Narwallen", "Inktvissen"], ["Narwallen", "Octopussen"], 
       /* --- VISSEN --- */
       ["Narwallen", "Agnathen"], ["Narwallen", "Platvissen"], ["Narwallen", "Kabeljauwen"], ["Narwallen", "Paling"], 
       ["Narwallen", "Haring"]
@@ -18308,7 +18308,7 @@ const combinaties = [
   {
     input: [ /* BLOED */
       /* --- WATERDIEREN --- */
-      ["Dolfijnen", "Inktvissen "], ["Dolfijnen", "Octopussen "], ["Dolfijnen", "Zeeschildpadden"],
+      ["Dolfijnen", "Inktvissen"], ["Dolfijnen", "Octopussen"], ["Dolfijnen", "Zeeschildpadden"],
       /* Schelp */ ["Dolfijnen", "Nautilussen"],
       /* --- VISSEN --- */
       ["Dolfijnen", "Platvissen"], ["Dolfijnen", "Piranha"], ["Dolfijnen", "Clownvissen"], 
@@ -18850,7 +18850,7 @@ const combinaties = [
       ["Capibara", "Bosbessen"], ["Capibara", "Zuurzakken"], ["Capibara", "Aardbeien"], ["Capibara", "Abrikozen"],
       ["Capibara", "Kersen"], ["Capibara", "Perziken"], ["Capibara", "Mandarijnen"], ["Capibara", "Guaves"],
       ["Capibara", "Mango"], ["Capibara", "Papaja"], ["Capibara", "Frambozen"], ["Capibara", "Avocado"],
-      ["Capibara", "Bananen"], ["Capibara", "Ananas"], ["Capibara", "Sinaasappelen"], ["Capibara", "Citroenen"],
+      ["Capibara", "Bananen"], ["Capibara", "Ananas"], ["Capibara", "Sinaasappels"], ["Capibara", "Citroenen"],
       ["Capibara", "Limoenen"],
       /* --- GROENTEN --- */
       ["Capibara", "Komkommers"], ["Capibara", "Meloenen"], ["Capibara", "Watermeloenen"],
@@ -18960,8 +18960,8 @@ const combinaties = [
       ["Eekhoorns", "Detritus"], ["Eekhoorns", "Wortels"], ["Eekhoorns", "Blad"], ["Eekhoorns", "Zaadjes"], 
       ["Eekhoorns", "Ei"], ["Eekhoorns", "Bloem"],
       /* --- SMAAKMAKERS --- */
-      ["Eekhoorns", "Truffels"], ["Eekhoorns", "Munt"], ["Eekhoorns", "Tijm"], ["Eekhoorns", "Mosterdplanten"],
-      ["Eekhoorns", "Knoflook"], ["Eekhoorns", "Uien"], ["Eekhoorns", "Bieslook"], ["Eekhoorns", "Basilicum"],
+      ["Eekhoorns", "Truffels"], ["Eekhoorns", "Munt"], ["Eekhoorns", "Tijm"], ["Eekhoorns", "Mosterd"],
+      ["Eekhoorns", "Knoflook"], ["Eekhoorns", "Ui"], ["Eekhoorns", "Bieslook"], ["Eekhoorns", "Basilicum"],
       ["Eekhoorns", "Oregano"], ["Eekhoorns", "Salie"], ["Eekhoorns", "Dille"], ["Eekhoorns", "Koriander"],
       ["Eekhoorns", "Peterselie"],
       /* --- MATERIALEN --- */
@@ -18983,7 +18983,7 @@ const combinaties = [
       ["Eekhoorns", "Bosbessen"], ["Eekhoorns", "Vijgen"],  ["Eekhoorns", "Aardbeien"],  ["Eekhoorns", "Olijven"],
       ["Eekhoorns", "Abrikozen"], ["Eekhoorns", "Kersen"], ["Eekhoorns", "Perziken"], ["Eekhoorns", "Mandarijnen"], 
       ["Eekhoorns", "Frambozen"], ["Eekhoorns", "Bananen"], ["Eekhoorns", "Kaki"], ["Eekhoorns", "Kiwi"], 
-      ["Eekhoorns", "Dadels"], ["Eekhoorns", "Sinaasappelen"], ["Eekhoorns", "Citroenen"], ["Eekhoorns", "Limoenen"],
+      ["Eekhoorns", "Dadels"], ["Eekhoorns", "Sinaasappels"], ["Eekhoorns", "Citroenen"], ["Eekhoorns", "Limoenen"],
       /* --- GROENTEN --- */
       ["Eekhoorns", "Komkommers"], ["Eekhoorns", "Meloenen"], ["Eekhoorns", "Watermeloenen"], ["Eekhoorns", "Pompoenen"],
       ["Eekhoorns", "Courgettes"], ["Eekhoorns", "Bieten"], ["Eekhoorns", "Spinazie"], ["Eekhoorns", "Zoete aardappelen"],
@@ -19113,7 +19113,7 @@ const combinaties = [
       ["Muizen", "Sprinkhanen"], ["Muizen", "Muggen"],
       /* --- PLANTEN --- */
       ["Muizen", "Mos"], ["Muizen", "Varens"], ["Muizen", "Gras"], ["Muizen", "Vetplanten"], ["Muizen", "Brandnetels"], 
-      ["Muizen", "Agave"], ["Muizen", "Aloë vera"], ["Muizen", "Heide"], ["Muizen", "Lavendel"], ["Muizen", "Klavers"], 
+      ["Muizen", "Agave"], ["Muizen", "Aloë Vera"], ["Muizen", "Heide"], ["Muizen", "Lavendel"], ["Muizen", "Klavers"], 
       ["Muizen", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Muizen", "Detritus"], ["Muizen", "Wortels"], ["Muizen", "Blad"], ["Muizen", "Zaadjes"], 
@@ -19177,7 +19177,7 @@ const combinaties = [
       ["Hamsters", "Sprinkhanen"], ["Hamsters", "Muggen"],
       /* --- PLANTEN --- */
       ["Hamsters", "Mos"], ["Hamsters", "Varens"], ["Hamsters", "Gras"], ["Hamsters", "Vetplanten"], 
-      ["Hamsters", "Brandnetels"], ["Hamsters", "Agave"], ["Hamsters", "Aloë vera"], ["Hamsters", "Heide"], 
+      ["Hamsters", "Brandnetels"], ["Hamsters", "Agave"], ["Hamsters", "Aloë Vera"], ["Hamsters", "Heide"], 
       ["Hamsters", "Lavendel"], ["Hamsters", "Klavers"], ["Hamsters", "Waterriet"],
       /* --- BIOLOGIE --- */
       ["Hamsters", "Detritus"], ["Hamsters", "Wortels"], ["Hamsters", "Blad"], ["Hamsters", "Zaadjes"], 
@@ -21030,7 +21030,7 @@ const combinaties = [
         <br><br>Required first: ocean vessels.` } }
   },
   {
-    input: ["Agavae", "Gist"],
+    input: ["Agave", "Gist"],
     hint: `Vanwaar de agave zo gebruiken? Vergist hij zich?`,
     hint_en: `Why using the agave like that? Is it brewing something?`,
     tijd: 450,
