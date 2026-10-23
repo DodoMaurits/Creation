@@ -12012,7 +12012,7 @@ const combinaties = [
       ["Eenden", "Kakkerlakken"], ["Eenden", "Oerhymenopteren"], ["Eenden", "Slakken"], ["Eenden", "Libellen"], 
       ["Eenden", "Kevers"], ["Eenden", "Lieveheersbeestjes"], ["Eenden", "Mieren"], ["Eenden", "Wespen"], 
       ["Eenden", "Vliegen"], ["Eenden", "Vlinders"], ["Eenden", "Krekels"], ["Eenden", "Sprinkhanen"],
-      ["Eenden", "Muggen"], ["Eenden", "Bijen"]
+      ["Eenden", "Muggen"], ["Eenden", "Bijen"],
       /* --- PLANTEN --- */
       ["Eenden", "Mos"], ["Eenden", "Oervaatplanten"], ["Eenden", "Oerzaadplanten"], ["Eenden", "Oermagnoliden"], 
       ["Eenden", "Oereudicoten"], ["Eenden", "Gras"], ["Eenden", "Oerfabiden"], ["Eenden", "Oermalviden"], 
@@ -12364,7 +12364,7 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
-  }, /* ------------------ EENDEN ------------------ */
+  }, /* ------------------ OOIEVAARS ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -12377,7 +12377,7 @@ const combinaties = [
       ["Ooievaars", "Wandelende takken"], ["Ooievaars", "Kakkerlakken"], ["Ooievaars", "Oerhymenopteren"], 
       ["Ooievaars", "Slakken"], ["Ooievaars", "Libellen"], ["Ooievaars", "Kevers"], ["Ooievaars", "Mieren"], 
       ["Ooievaars", "Wespen"], ["Ooievaars", "Vliegen"], ["Ooievaars", "Vlinders"], ["Ooievaars", "Krekels"], 
-      ["Ooievaars", "Sprinkhanen"], ["Ooievaars", "Muggen"], ["Ooievaars", "Bijen"]
+      ["Ooievaars", "Sprinkhanen"], ["Ooievaars", "Muggen"], ["Ooievaars", "Bijen"],
       /* --- BIOLOGIE --- */
       ["Ooievaars", "Detritus"], ["Ooievaars", "Ei"]
     ],
