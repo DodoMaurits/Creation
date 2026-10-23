@@ -13208,6 +13208,36 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ SPECHTEN ------------------ */
+  {
+    input: [
+      /* --- KLEIN LANDLEVEN --- */
+      ["Spechten", "Luizen"], ["Spechten", "Spinnen"], ["Spechten", "Kevers"], ["Spechten", "Mieren"], 
+      ["Spechten", "Vlinders"], 
+      /* --- BIOLOGIE --- */
+      ["Spechten", "Zaadjes"], ["Spechten", "Ei"], 
+      /* --- BOMEN --- */
+      ["Spechten", "Coniferen"], 
+      /* --- FRUIT --- */
+      ["Spechten", "Kersen"], 
+      /* --- ZADEN --- */
+      ["Spechten", "Pinda"]
+    ],
+    output: [
+      { naam: "Spechten", naam_en: "Woodpeckers", icoon: "icons/Spechten.png", map: "Vogels", 
+        quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
+        <br><br>- Annie Dillard`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "map:Bomen"],
@@ -13260,35 +13290,6 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
-  }, /* ------------------ VINKEN ------------------ */
-  {
-    input: [
-      /* --- KLEIN LANDLEVEN --- */
-      ["Vinken", "Luizen"], ["Vinken", "Spinnen"], ["Vinken", "Kevers"], ["Vinken", "Mieren"], ["Vinken", "Vlinders"], 
-      /* --- BIOLOGIE --- */
-      ["Vinken", "Zaadjes"], ["Vinken", "Ei"], 
-      /* --- BOMEN --- */
-      ["Vinken", "Coniferen"], 
-      /* --- FRUIT --- */
-      ["Vinken", "Kersen"], 
-      /* --- ZADEN --- */
-      ["Vinken", "Pinda"]
-    ],
-    output: [
-      { naam: "Vinken", naam_en: "Finches", icoon: "icons/Vinken.png", map: "Vogels", 
-        quote: `The small bird sings not to be heard, but because the world asks for sound
-        <br><br>- Mary Oliver`
-      },
-      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
   },
   {
     input: ["Archaeopteryx", "Tropisch regenwoud"],
