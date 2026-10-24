@@ -858,22 +858,15 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   let spanIndex = 0;
   const toonSpan = (i) => {
     spans.forEach((sp, idx) => {
+      sp.classList.remove("span-uit", "span-zichtbaar");
       if (idx === i) {
-        sp.classList.remove("span-verborgen", "span-uit");
         sp.classList.add("span-zichtbaar");
-      } else if (sp.classList.contains("span-zichtbaar")) {
-        sp.classList.remove("span-zichtbaar");
+      } else if (sp.dataset.laatstZichtbaar === "1") {
         sp.classList.add("span-uit");
-        sp.addEventListener("animationend", function bijVerdwijn() {
-          sp.classList.remove("span-uit");
-          sp.classList.add("span-verborgen");
-          sp.removeEventListener("animationend", bijVerdwijn);
-        });
-      } else {
-        sp.classList.remove("span-zichtbaar", "span-uit");
-        sp.classList.add("span-verborgen");
+        setTimeout(() => sp.classList.remove("span-uit"), 400);
       }
     });
+    spans.forEach((sp, idx) => sp.dataset.laatstZichtbaar = idx === i ? "1" : "0");
   };
   const onthulVolgende = () => {
     if (spanIndex < spans.length) {
