@@ -681,7 +681,11 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null, isNie
     if (isMobielResult) box.style.width = mobielBox + "px";
     const img = document.createElement("img");
     img.src = el.icoon;
+    const gloedWrapper = document.createElement("div");
+    gloedWrapper.className = "result-image-wrap";
+    gloedWrapper.appendChild(img);
     img.className = "result-image";
+    box.appendChild(gloedWrapper);
     const title = document.createElement("div");
     title.className = "result-title";
     title.innerHTML = naamVan(el);
