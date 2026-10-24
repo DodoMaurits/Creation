@@ -1266,6 +1266,7 @@ body.result-open #corner-controls {
 }
 
 .info-text {
+  max-height: 60dvh;
   position: relative;
   display: grid;
   font-size: 28px;
@@ -1273,7 +1274,9 @@ body.result-open #corner-controls {
   line-height: 1.5;
   hyphens: auto;
   -webkit-hyphens: auto;
+  overflow-y: auto;
   overflow-wrap: break-word;
+  scrollbar-width: none;
   animation: infoSway 6s ease-in-out infinite alternate;
   will-change: transform;
 }
