@@ -1265,6 +1265,7 @@ body.result-open #corner-controls {
 }
 
 .info-text {
+  position: relative;
   font-size: clamp(16px, 2vw, 20px);
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
@@ -1297,6 +1298,10 @@ body.result-open #corner-controls {
 }
 
 .info-text span.span-uit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: inline-block;
   animation: spanVerdwijn 0.4s ease forwards;
 }
