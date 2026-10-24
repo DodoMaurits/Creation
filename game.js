@@ -711,7 +711,6 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null, isNie
     quote.style.setProperty("--move-x", moveX);
     quote.style.setProperty("--move-y", moveY);
     quote.style.setProperty("--dur", duration);
-    box.appendChild(img);
     box.appendChild(title);
     box.appendChild(quote);
     grid.appendChild(box);
