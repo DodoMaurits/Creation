@@ -853,6 +853,19 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(pasAan);
   }
+  let spanIndex = 1;
+  const toonSpan = (i) => {
+    spans.forEach((sp, idx) => {
+      sp.classList.remove("span-uit", "span-zichtbaar");
+      if (idx === i) {
+        sp.classList.add("span-zichtbaar");
+      } else if (sp.dataset.laatstZichtbaar === "1") {
+        sp.classList.add("span-uit");
+        setTimeout(() => sp.classList.remove("span-uit"), 400);
+      }
+    });
+    spans.forEach((sp, idx) => sp.dataset.laatstZichtbaar = idx === i ? "1" : "0");
+  };
   const onthulVolgende = () => {
     if (spanIndex < spans.length) {
       toonSpan(spanIndex);
