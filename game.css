@@ -1254,6 +1254,7 @@ body.result-open #corner-controls {
 .info-inner {
   width: min(38%, 760px);
   max-width: 100%;
+  margin: auto;
 }
 
 .info-title {
