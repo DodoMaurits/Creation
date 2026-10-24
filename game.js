@@ -853,7 +853,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
     textEl.style.fontSize = grootte + "px";
     pogingen++;
   }
-  let spanIndex = 0;
+  let spanIndex = 1;
   const toonSpan = (i) => {
     spans.forEach((sp, idx) => {
       sp.classList.remove("span-uit", "span-zichtbaar");
