@@ -842,7 +842,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
     while (
       pogingen < 20 &&
       grootte > (isMobielInfo ? 8 : 10) &&
-      inner.scrollHeight > window.innerHeight - 40
+      inner.scrollHeight > window.innerHeight * 0.75
     ) {
       grootte -= 1;
       textEl.style.fontSize = grootte + "px";
