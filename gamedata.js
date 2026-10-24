@@ -2986,17 +2986,6 @@ const combinaties = [
     ]
   },
   {
-    input: [/* Schelp */
-      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: ["Oerbilateria", "Bot"],
     hint: `Die kleine vooroudertjes van de wormen waren heel handig met botten.`,
     hint_en: `Those little ancestors of the worms were very handy with bones.`,
@@ -3099,17 +3088,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [/* Schelp */
-      ["Agnathen", "Tweekleppigen"], ["Agnathen", "Zeeslakken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   }, /* ------------------ OERGELEEDPOTIGEN ------------------ */
@@ -3341,17 +3319,6 @@ const combinaties = [
     ]
   },
   {
-    input: [ /* SCHELP */
-      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Zeepokken"], ["Inktvissen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: ["Oertrochozoa", "Schelp"],
     hint: `Geef bescherming aan de trochozoa want zij zijn zo week.`, 
     hint_en: `Provide protection to the trochozoa, for they are so weak.`, 
@@ -3498,18 +3465,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: [/* Schelp */
-      ["Trilobieten", "Zeeslakken"], ["Trilobieten", "Tweekleppigen"], 
-      ["Trilobieten", "Zeepokken"], ["Trilobieten", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ OERCHELICERATEN ------------------ */
   {
     input: [
@@ -3542,15 +3497,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: ["Oercheliceraten", "Tweekleppigen"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   }, /* ------------------ DUIZENDPOTEN ------------------ */
@@ -3616,17 +3562,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [/* Schelp */
-      ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Tweekleppigen"], ["Oerkreeftjes", "Zeepokken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   }, /* ------------------ OERINSECTEN ------------------ */
@@ -3746,18 +3681,6 @@ const combinaties = [
     ]
   },
   {
-    input: [ /* SCHELP */
-      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Zeepokken"],
-      ["Nautilussen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: [
       ["Tweekleppigen", "Zand"], ["Tweekleppigen", "Detritus"], ["Tweekleppigen", "Blauwalgen"], 
       ["Tweekleppigen", "Schimmel"], ["Tweekleppigen", "Parasieten"]
@@ -3871,18 +3794,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: [/* Schelp */
-      ["Zeeschorpioenen", "Nautilussen"], 
-      ["Zeeschorpioenen", "Zeeslakken"], ["Zeeschorpioenen", "Tweekleppigen"], ["Zeeschorpioenen", "Zeepokken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ OERSPINACHTIGEN ------------------ */
   {
     input: [
@@ -3955,17 +3866,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [/* Schelp */
-      ["Zwaardstaarten", "Zeeslakken"], ["Zwaardstaarten", "Tweekleppigen"], ["Zwaardstaarten", "Zeepokken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   }, /* ------------------ KRILL ------------------ */
@@ -4349,17 +4249,6 @@ const combinaties = [
     ]
   },
   {
-    input: [/* Schelp */
-      ["Tiktaalik", "Tweekleppigen"], ["Tiktaalik", "Zeeslakken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: [
       ["Zeeslakken", "Zand"], ["Zeeslakken", "Klei"], ["Zeeslakken", "Kust"], ["Zeeslakken", "Strand"], 
       ["Zeeslakken", "Eiland"], ["Zeeslakken", "Zuurstof"], ["Zeeslakken", "Aarde"]
@@ -4507,18 +4396,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: [ /* Schelp */
-      ["Haaien", "Zeeslakken"], ["Haaien", "Tweekleppigen"], ["Haaien", "Nautilussen"],
-      ["Haaien", "Zeepokken"], ["Haaien", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ SPOOKHAAIEN ------------------ */
   {
     input: [
@@ -4541,18 +4418,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [ /* Schelp */
-      ["Spookhaaien", "Zeeslakken"], ["Spookhaaien", "Tweekleppigen"], 
-      ["Spookhaaien", "Zeepokken"], ["Spookhaaien", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -5034,17 +4899,6 @@ const combinaties = [
     ]
   },
   {
-    input: [/* Schelp */
-      ["Reuzenpissebedden", "Zeepokken"], ["Reuzenpissebedden", "Zeeslakken"], ["Reuzenpissebedden", "Tweekleppigen"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: [
       ["Zeepissebedden", "Zand"], ["Zeepissebedden", "Klei"], ["Zeepissebedden", "Kust"], ["Zeepissebedden", "Strand"],
       ["Zeepissebedden", "Eiland"], ["Zeepissebedden", "Zuurstof"], ["Zeepissebedden", "Aarde"]
@@ -5190,17 +5044,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: [/* Schelp */
-      ["Kreeften", "Zeepokken"], ["Kreeften", "Zeeslakken"], ["Kreeften", "Tweekleppigen"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ KRABBEN ------------------ */
   {
     input: [      
@@ -5237,17 +5080,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Krabben", "Zeepokken"], ["Krabben", "Zeeslakken"], ["Krabben", "Tweekleppigen"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   }, /* ------------------ HEREMIETKREEFTEN ------------------ */
@@ -5288,17 +5120,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [
-      ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Tweekleppigen"], ["Heremietkreeften", "Zeepokken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -7022,18 +6843,6 @@ const combinaties = [
   },
   {
     input: [
-      ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Nautilussen"],
-      ["Zeeschildpadden", "Zeepokken"], ["Zeeschildpadden", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
-    input: [
       ["Hiërarchie", "Termieten"], ["Hiërarchie", "Mieren"]
     ],
     hint: `Kijk wat hiërarchie zoal kan brengen...`,
@@ -7426,18 +7235,6 @@ const combinaties = [
     ]
   },
   {
-    input: [/*SCHELP*/
-      ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], ["Octopussen", "Nautilussen"],
-      ["Octopussen", "Zeepokken"], ["Octopussen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: [
       ["Oermaniraptoren", "Evolutie"], ["Oermaniraptoren", "Lucht"]
     ],
@@ -7670,17 +7467,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [ /* Schelp */
-      ["Zeeduivels", "Zeepokken"], ["Zeeduivels", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -8096,15 +7882,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  { /* Schelp */
-    input: ["Krokodillen", "Heremietkreeften"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -8834,16 +8611,6 @@ const combinaties = [
     ]
   },
   {
-    input: /* SCHELP */
-      ["Vogelbekdieren", "Tweekleppigen"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: [
       ["Agnathen", "Lucht"], ["Agnathen", "Oceaan"], ["Vleugels", "Agnathen"]
     ],
@@ -8989,18 +8756,6 @@ const combinaties = [
     ]
   },
   {
-    input: [/* SCHELP */
-      ["Reuzeninktvissen", "Tweekleppigen"], ["Reuzeninktvissen", "Zeeslakken"], ["Reuzeninktvissen", "Nautilussen"],
-      ["Reuzeninktvissen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: [
       ["Oerstraalvinnigen", "IJs"], ["Oerstraalvinnigen", "Poolgebied"]
     ],
@@ -9075,18 +8830,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [/* Schelp */
-      ["Kabeljauwen", "Tweekleppigen"], ["Kabeljauwen", "Zeeslakken"], 
-      ["Kabeljauwen", "Zeepokken"], ["Kabeljauwen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -9536,18 +9279,6 @@ const combinaties = [
     ]
   },
   {
-    input: [/* Schelp */
-      ["Meervallen", "Zeeslakken"], ["Meervallen", "Tweekleppigen"],
-      ["Meervallen", "Zeepokken"], ["Meervallen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: ["Oerstraalvinnigen", "Zee"],
     hint: `Sommige straalvinnigen zwemmen het liefst alle wereldzeeën over.`,
     hint_en: `Some ray-finned fish prefer to discover the ocean, as we all would.`,
@@ -9803,17 +9534,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: [ /* Schelp */
-      ["Paling", "Tweekleppigen"], ["Paling", "Zeeslakken"], ["Paling", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ HARING ------------------ */
   {
     input: [
@@ -10048,18 +9768,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [ /* Schelp */
-      ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
-      ["Kogelvissen", "Zeepokken"], ["Kogelvissen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -10685,16 +10393,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: /* SCHELP */
-      ["Eenden", "Tweekleppigen"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ GANZEN ------------------ */
   {
     input: [
@@ -10753,16 +10451,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: /* SCHELP */
-      ["Ganzen", "Tweekleppigen"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ ZWANEN ------------------ */
   {
     input: [
@@ -10818,16 +10506,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: /* SCHELP */
-      ["Zwanen", "Tweekleppigen"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -11148,17 +10826,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: [/* SCHELP */
-      ["Meeuwen", "Tweekleppigen"], ["Meeuwen", "Zeeslakken"], ["Meeuwen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ AALSCHOLVERS ------------------ */
   {
     input: [
@@ -11359,17 +11026,6 @@ const combinaties = [
     ]
   },
   {
-    input: [/* SCHELP */
-      ["Papegaaiduikers", "Tweekleppigen"], ["Papegaaiduikers", "Zeeslakken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: ["Archaeopteryx", "Lagune"],
     hint: `Sommige archaeopteryx voelen zich thuis in de lagune.`,
     hint_en: `Some archaeopteryx feel at home in the lagoon.`,
@@ -11460,17 +11116,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [/* SCHELP */
-      ["Flamingo", "Tweekleppigen"], ["Flamingo", "Zeeslakken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -11669,16 +11314,6 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: /* SCHELP */
-      ["Reigers", "Tweekleppigen"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -14232,17 +13867,6 @@ const combinaties = [
     ]
   },
   {
-    input: [ /* SCHELP */
-      ["Zeekoeien", "Tweekleppigen"], ["Zeekoeien", "Zeeslakken"], ["Zeekoeien", "Zeepokken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
-  },
-  {
     input: ["Oerplacentalia", "Klif"],
     hint: `Sommige placentadieren leven op de kliffen.`,
     hint_en: `Some placental mammals choose the cliffs.`,
@@ -16627,17 +16251,6 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  },
-  {
-    input: [/* SCHELP */
-      ["Grijze walvissen", "Tweekleppigen"], ["Grijze walvissen", "Zeeslakken"], ["Grijze walvissen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
-      }
-    ]
   }, /* ------------------ ORKA ------------------ */
   {
     input: 
@@ -16710,16 +16323,6 @@ const combinaties = [
       { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
         quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
         <br><br>- Georges Bernanos`
-      }
-    ]
-  },
-  {
-    input: /* SCHELP */
-      ["Orka", "Nautilussen"],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   }, /* ------------------ NARWALLEN ------------------ */
@@ -16855,18 +16458,6 @@ const combinaties = [
       { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
         quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
         <br><br>- Georges Bernanos`
-      }
-    ]
-  },
-  {
-    input: [ /* SCHELP */
-      ["Dolfijnen", "Tweekleppigen"], ["Dolfijnen", "Zeeslakken"], ["Dolfijnen", "Nautilussen"], 
-      ["Dolfijnen", "Zeepokken"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -17028,17 +16619,6 @@ const combinaties = [
       { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
         quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
         <br><br>- Georges Bernanos`
-      }
-    ]
-  },
-  {
-    input: [ /* SCHELP */
-      ["Potvissen", "Nautilussen"], ["Potvissen", "Heremietkreeften"]
-    ],
-    output: [
-      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        quote: `I see a broken shell and I remind myself that something might have needed setting free 
-        <br><br>- Sara Pennypacker`
       }
     ]
   },
@@ -19598,9 +19178,8 @@ const combinaties = [
         tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
         <br><br>Required first: ocean vessels.` } }
   },
-
-// -------------------- ALGEMENE COMBINATIES -------------------- //
-// -------------------- DOOD -------------------- //
+  // -------------------- ALGEMENE COMBINATIES -------------------- //
+  // -------------------- DOOD -------------------- //
   { 
     input: [/* --- ICM RADIOACTIVITEIT-GIF (DOOD, DETRITUS) --- */
       ["map:Pril leven", "Radioactiviteit"], ["map:Pril leven", "IJs"], ["map:Pril leven", "Gif"],
@@ -20148,7 +19727,73 @@ const combinaties = [
       }
     ]
   },
-  
+  // -------------------- VOEDSEL, SCHELP -------------------- //
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"],
+      ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Zeepokken"], ["Inktvissen", "Heremietkreeften"],
+      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], 
+      ["Nautilussen", "Zeepokken"], ["Nautilussen", "Heremietkreeften"],
+      ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], ["Octopussen", "Nautilussen"],
+      ["Octopussen", "Zeepokken"], ["Octopussen", "Heremietkreeften"],
+      ["Reuzeninktvissen", "Tweekleppigen"], ["Reuzeninktvissen", "Zeeslakken"], 
+      ["Reuzeninktvissen", "Nautilussen"], ["Reuzeninktvissen", "Heremietkreeften"],
+      ["Potvissen", "Nautilussen"], ["Potvissen", "Heremietkreeften"],
+      ["Orka", "Nautilussen"],
+      ["Dolfijnen", "Tweekleppigen"], ["Dolfijnen", "Zeeslakken"], 
+      ["Dolfijnen", "Nautilussen"], ["Dolfijnen", "Zeepokken"],
+      ["Grijze walvissen", "Tweekleppigen"], ["Grijze walvissen", "Zeeslakken"], ["Grijze walvissen", "Heremietkreeften"],
+      ["Zeekoeien", "Tweekleppigen"], ["Zeekoeien", "Zeeslakken"], ["Zeekoeien", "Zeepokken"],
+      /* --- VISSEN --- */
+      ["Agnathen", "Tweekleppigen"], ["Agnathen", "Zeeslakken"],
+      ["Tiktaalik", "Tweekleppigen"], ["Tiktaalik", "Zeeslakken"],
+      ["Haaien", "Zeeslakken"], ["Haaien", "Tweekleppigen"], ["Haaien", "Nautilussen"],
+      ["Haaien", "Zeepokken"], ["Haaien", "Heremietkreeften"],
+      ["Spookhaaien", "Zeeslakken"], ["Spookhaaien", "Tweekleppigen"],
+      ["Spookhaaien", "Zeepokken"], ["Spookhaaien", "Heremietkreeften"],
+      ["Zeeduivels", "Zeepokken"], ["Zeeduivels", "Heremietkreeften"],
+      ["Kabeljauwen", "Tweekleppigen"], ["Kabeljauwen", "Zeeslakken"], 
+      ["Kabeljauwen", "Zeepokken"], ["Kabeljauwen", "Heremietkreeften"],
+      ["Meervallen", "Zeeslakken"], ["Meervallen", "Tweekleppigen"],
+      ["Meervallen", "Zeepokken"], ["Meervallen", "Heremietkreeften"],
+      ["Paling", "Tweekleppigen"], ["Paling", "Zeeslakken"], ["Paling", "Heremietkreeften"],
+      ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
+      ["Kogelvissen", "Zeepokken"], ["Kogelvissen", "Heremietkreeften"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Oercheliceraten", "Tweekleppigen"],
+      ["Trilobieten", "Zeeslakken"], ["Trilobieten", "Tweekleppigen"], 
+      ["Trilobieten", "Zeepokken"], ["Trilobieten", "Heremietkreeften"],
+      ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Tweekleppigen"], ["Oerkreeftjes", "Zeepokken"],
+      ["Reuzenpissebedden", "Zeepokken"], ["Reuzenpissebedden", "Zeeslakken"], ["Reuzenpissebedden", "Tweekleppigen"],
+      ["Kreeften", "Zeepokken"], ["Kreeften", "Zeeslakken"], ["Kreeften", "Tweekleppigen"],
+      ["Krabben", "Zeepokken"], ["Krabben", "Zeeslakken"], ["Krabben", "Tweekleppigen"],
+      ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Tweekleppigen"], ["Heremietkreeften", "Zeepokken"],
+      ["Zeeschorpioenen", "Nautilussen"], ["Zeeschorpioenen", "Zeeslakken"], 
+      ["Zeeschorpioenen", "Tweekleppigen"], ["Zeeschorpioenen", "Zeepokken"],
+      ["Zwaardstaarten", "Zeeslakken"], ["Zwaardstaarten", "Tweekleppigen"], ["Zwaardstaarten", "Zeepokken"],
+      ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Nautilussen"],
+      ["Zeeschildpadden", "Zeepokken"], ["Zeeschildpadden", "Heremietkreeften"],
+      /* --- REPTIELEN --- */
+      ["Krokodillen", "Heremietkreeften"],
+      /* --- ZOOGDIEREN --- */
+      ["Vogelbekdieren", "Tweekleppigen"],
+      /* --- VOGELS --- */
+      ["Eenden", "Tweekleppigen"],
+      ["Ganzen", "Tweekleppigen"],
+      ["Zwanen", "Tweekleppigen"],
+      ["Meeuwen", "Tweekleppigen"], ["Meeuwen", "Zeeslakken"], ["Meeuwen", "Heremietkreeften"],
+      ["Papegaaiduikers", "Tweekleppigen"], ["Papegaaiduikers", "Zeeslakken"],
+      ["Flamingo", "Tweekleppigen"], ["Flamingo", "Zeeslakken"],
+      ["Reigers", "Tweekleppigen"]
+    ],
+    output: [
+      { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
+        quote: `I see a broken shell and I remind myself that something might have needed setting free 
+        <br><br>- Sara Pennypacker`
+      }
+    ]
+  },
   // -------------------- ZENUWEN -------------------- //
   //------------ ZENUWEN 1 Tast --------------//
   {
