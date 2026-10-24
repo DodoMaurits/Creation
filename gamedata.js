@@ -19747,6 +19747,63 @@ const combinaties = [
         <br><br>Eerst nodig: oceaanvaartuigen.`,
         tekst_en: `We must wait for the possibility of the first great ocean voyages and globalisation. 
         <br><br>Required first: ocean vessels.` } }
+  }, /* ------------------ KANARIES ------------------ */
+  {
+    input: [
+      ["Kanaries", "map:Granen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Kanaries", "Waterspinnen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kanaries", "Luizen"], ["Kanaries", "Mijten"], ["Kanaries", "Teken"], ["Kanaries", "Termieten"], 
+      ["Kanaries", "Pissebedden"], ["Kanaries", "Oerpolyneopteren"], ["Kanaries", "Duizendpoten"], 
+      ["Kanaries", "Hooiwagens"], ["Kanaries", "Spinnen"], ["Kanaries", "Zilvervisjes"], 
+      ["Kanaries", "Wandelende takken"], ["Kanaries", "Kakkerlakken"], ["Kanaries", "Oerhymenopteren"], 
+      ["Kanaries", "Slakken"], ["Kanaries", "Libellen"], ["Kanaries", "Kevers"], ["Kanaries", "Mieren"], 
+      ["Kanaries", "Vliegen"], ["Kanaries", "Vlinders"], ["Kanaries", "Krekels"], ["Kanaries", "Sprinkhanen"], 
+      ["Kanaries", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Kanaries", "Oervaatplanten"], ["Kanaries", "Oerzaadplanten"], ["Kanaries", "Oermagnoliden"],
+      ["Kanaries", "Oermonocotylen"], ["Kanaries", "Oereudicoten"], ["Kanaries", "Gras"], 
+      ["Kanaries", "Oerfabiden"], ["Kanaries", "Oermalivden"], ["Kanaries", "Oercaryophyllales"], 
+      ["Kanaries", "Oerasteriden"], ["Kanaries", "Oerericales"], ["Kanaries", "Oerlamiden"], 
+      ["Kanaries", "Oercampanuliden"], ["Kanaries", "Brandnetels"], ["Kanaries", "Heide"], ["Kanaries", "Klavers"], 
+      /* --- BIOLOGIE --- */
+      ["Kanaries", "Zaadjes"],
+      /* --- SMAAKMAKERS --- */
+      ["Kanaries", "Munt"], ["Kanaries", "Tijm"], ["Kanaries", "Mosterd"], ["Kanaries", "Bieslook"], 
+      ["Kanaries", "Basilicum"], ["Kanaries", "Chilipepers"], ["Kanaries", "Oregano"], ["Kanaries", "Salie"], 
+      ["Kanaries", "Anijs"], ["Kanaries", "Komijn"], ["Kanaries", "Dille"], ["Kanaries", "Koriander"], 
+      ["Kanaries", "Peterselie"],
+      /* --- BLOEMEN --- */
+      ["Kanaries", "Klaprozen"], ["Kanaries", "Madeliefjes"], ["Kanaries", "Goudsbloemen"],
+      /* --- FRUIT --- */
+      ["Kanaries", "Druiven"], ["Kanaries", "Appels"], ["Kanaries", "Peren"], ["Kanaries", "Pruimen"], 
+      ["Kanaries", "Bosbessen"], ["Kanaries", "Aardbeien"], ["Kanaries", "Kersen"], ["Kanaries", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Kanaries", "Bieten"], ["Kanaries", "Spinazie"], ["Kanaries", "Aubergines"], ["Kanaries", "Radijsjes"], 
+      ["Kanaries", "Kool"], ["Kanaries", "Prei"], ["Kanaries", "Paprika"], ["Kanaries", "Tomaten"],
+      ["Kanaries", "Selderij"], ["Kanaries", "Venkel"], ["Kanaries", "Wortelen"], ["Kanaries", "Sla"],
+      ["Kanaries", "Andijvie"], ["Kanaries", "Broccoli"], ["Kanaries", "Bloemkool"], ["Kanaries", "Rode kool"],
+      ["Kanaries", "Spruitjes"], ["Kanaries", "Boerenkool"], 
+      /* --- ZADEN --- */
+      ["Kanaries", "Erwten"], ["Kanaries", "Soja"], ["Kanaries", "Pinda"], ["Kanaries", "Sesam"], 
+      ["Kanaries", "Sperziebonen"]   
+    ],
+    output: [
+      { naam: "Kanaries", naam_en: "Canaries", icoon: "icons/Kanaries.png", map: "Vogels", 
+        quote: `Selective breeding has produced canaries with remarkable variation in color and song
+        <br><br>- William Beebe`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Agave", "Gist"],
