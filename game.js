@@ -838,9 +838,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   let grootte = isMobielInfo ? 16 : 28;
   textEl.style.fontSize = grootte + "px";
   const pastSpan = (sp) => {
-    sp.style.visibility = "visible";
     const meetbaar = inner.scrollHeight <= window.innerHeight - 40;
-    sp.style.visibility = "";
     return meetbaar;
   };
   let pogingen = 0;
