@@ -773,7 +773,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   left: 50%;
   width: 150px;
   height: 150px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translateY(-1px);
   border-radius: 50%;
   background: radial-gradient(
     circle,
@@ -787,9 +787,9 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 
 @keyframes goudenGloedPuls {
-  0%   { transform: translate(-50%, -50%) scale(1);    opacity: 0.55; }
-  50%  { transform: translate(-50%, -50%) scale(1.05); opacity: 0.45; }
-  100% { transform: translate(-50%, -50%) scale(1);    opacity: 0.55; }
+  0%   { transform: translate(-50%, -50%) translateY(-1px) scale(1);    opacity: 0.55; }
+  50%  { transform: translate(-50%, -50%) translateY(-1px) scale(1.05); opacity: 0.45; }
+  100% { transform: translate(-50%, -50%) translateY(-1px) scale(1);    opacity: 0.55; }
 }
 
 /* ---------------- CLOSED CONTAINER ---------------- */
