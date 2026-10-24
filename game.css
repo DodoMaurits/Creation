@@ -1693,16 +1693,8 @@ body.result-open #corner-controls {
             }
   
             /* ---------------- GLOED ---------------- */
-            #result-overlay.episch .result-box::before {
-              top: 35px;          /* midden van 70px-icoon */
-              width: 110px;
-              height: 110px;
-            }
-
-            @keyframes goudenGloedPuls {
-              0%   { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
-              50%  { opacity: 1;   transform: translate(-50%, -50%) scale(1.1); }
-              100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
+            #result-overlay.episch .result-image-wrap::before {
+              inset: -6px;
             }
   
             /* ---------------- CLOSED CONTAINTER ---------------- */
