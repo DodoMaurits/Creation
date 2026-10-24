@@ -11528,6 +11528,57 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ VINKEN ------------------ */
+  {
+    input: [
+      ["Vinken", "map:Granen"],
+      /* --- WATERDIEREN --- */
+      ["Vinken", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Vinken", "Luizen"], ["Vinken", "Mijten"], ["Vinken", "Teken"], ["Vinken", "Termieten"], ["Vinken", "Pissebedden"],
+      ["Vinken", "Oerpolyneopteren"], ["Vinken", "Duizendpoten"], ["Vinken", "Hooiwagens"], ["Vinken", "Spinnen"],
+      ["Vinken", "Zilvervisjes"], ["Vinken", "Wandelende takken"], ["Vinken", "Kakkerlakken"], 
+      ["Vinken", "Oerhymenopteren"], ["Vinken", "Slakken"], ["Vinken", "Libellen"], ["Vinken", "Kevers"],
+      ["Vinken", "Mieren"], ["Vinken", "Vliegen"], ["Vinken", "Vlinders"], ["Vinken", "Krekels"], 
+      ["Vinken", "Sprinkhanen"], ["Vinken", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Vinken", "Gras"], ["Vinken", "Brandnetels"], ["Vinken", "Klavers"], ["Vinken", "Heide"], 
+      /* --- BIOLOGIE --- */
+      ["Vinken", "Blad"], ["Vinken", "Zaadjes"], 
+      /* --- SMAAKMAKERS --- */
+      ["Vinken", "Munt"], ["Vinken", "Tijm"], ["Vinken", "Mosterd"], ["Vinken", "Bieslook"], ["Vinken", "Basilicum"],
+      ["Vinken", "Chilipepers"], ["Vinken", "Oregano"], ["Vinken", "Salie"], ["Vinken", "Anijs"], ["Vinken", "Komijn"],
+      ["Vinken", "Dille"], ["Vinken", "Koriander"], ["Vinken", "Peterselie"],    
+      /* --- BOMEN --- */
+      ["Vinken", "Berken"], 
+      /* --- BLOEMEN --- */
+      ["Vinken", "Paardenbloemen"], ["Vinken", "Zonnebloemen"], 
+      /* --- FRUIT --- */
+      ["Vinken", "Druiven"], ["Vinken", "Appels"], ["Vinken", "Peren"], ["Vinken", "Pruimen"], ["Vinken", "Bosbessen"], 
+      ["Vinken", "Aardbeien"], ["Vinken", "Kersen"], ["Vinken", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Vinken", "Bieten"], ["Vinken", "Spinazie"], ["Vinken", "Radijsjes"], ["Vinken", "Kool"], ["Vinken", "Prei"],
+      ["Vinken", "Selderij"], ["Vinken", "Venkel"], ["Vinken", "Wortelen"], ["Vinken", "Sla"], ["Vinken", "Andijvie"],
+      ["Vinken", "Broccoli"], ["Vinken", "Bloemkool"], ["Vinken", "Rode kool"], ["Vinken", "Spruitjes"],
+      ["Vinken", "Boerenkool"], ["Vinken", "Paprika"], ["Vinken", "Tomaten"], ["Vinken", "Aubergines"],
+      /* --- ZADEN --- */
+      ["Vinken", "Erwten"], ["Vinken", "Soja"], ["Vinken", "Pinda"], ["Vinken", "Sesam"], ["Vinken", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Vinken", naam_en: "Finches", icoon: "icons/Vinken.png", map: "Vogels", 
+        quote: `The small bird sings not to be heard, but because the world asks for sound
+        <br><br>- Mary Oliver`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Tropisch regenwoud"],
