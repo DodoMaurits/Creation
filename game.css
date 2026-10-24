@@ -730,8 +730,8 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 0;
-  height: 0;
+  width: 100vmax;
+  height: 100vmax;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%) scale(0);
