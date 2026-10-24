@@ -773,7 +773,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   left: 50%;
   width: 150px;
   height: 150px;
-  --gloed-dy: -2px;
+  --gloed-dy: -2.7%;
   transform: translate(-50%, -50%) translateY(var(--gloed-dy));
   border-radius: 50%;
   background: radial-gradient(
