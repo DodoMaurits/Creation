@@ -11765,6 +11765,58 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ KOLIBRIES ------------------ */
+  {
+    input: [
+      ["Kolibries", "map:Bloemen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Kolibries", "Waterspinnen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kolibries", "Luizen"], ["Kolibries", "Mijten"], ["Kolibries", "Teken"], ["Kolibries", "Termieten"], 
+      ["Kolibries", "Pissebedden"], ["Kolibries", "Oerpolyneopteren"], ["Kolibries", "Hooiwagens"], 
+      ["Kolibries", "Spinnen"], ["Kolibries", "Mieren"], ["Kolibries", "Vliegen"], ["Kolibries", "Kevers"], 
+      ["Kolibries", "Vlinders"], ["Kolibries", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Kolibries", "Oervaatplanten"], ["Kolibries", "Oerzaadplanten"], ["Kolibries", "Oermagnoliden"],
+      ["Kolibries", "Oermonocotylen"], ["Kolibries", "Oereudicoten"], ["Kolibries", "Oerfabiden"],
+      ["Kolibries", "Oermalivden"], ["Kolibries", "Oercaryophyllales"], ["Kolibries", "Oerasteriden"],
+      ["Kolibries", "Oerericales"], ["Kolibries", "Oerlamiden"], ["Kolibries", "Oercampanuliden"],
+      ["Kolibries", "Vetplanten"], ["Kolibries", "Agave"], [" Kolibries", "Aloë Vera"], ["Kolibries", "Cactussen"],
+      ["Kolibries", "Heide"], ["Kolibries", "Lavendel"], ["Kolibries", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Kolibries", "Bloem"],
+      /* --- SMAAKMAKERS --- */
+      ["Kolibries", "Munt"], ["Kolibries", "Tijm"], ["Kolibries", "Mosterd"], ["Kolibries", "Bieslook"], 
+      ["Kolibries", "Basilicum"], ["Kolibries", "Chilipepers"], ["Kolibries", "Oregano"], ["Kolibries", "Salie"], 
+      ["Kolibries", "Anijs"], ["Kolibries", "Komijn"], ["Kolibries", "Dille"], ["Kolibries", "Koriander"], 
+      ["Kolibries", "Peterselie"],
+      /* --- BOMEN --- */
+      ["Kolibries", "Tulpenbomen"], ["Kolibries", "Magnolia"], ["Kolibries", "Laurierbomen"], ["Kolibries", "Oliepalmen"],
+      ["Kolibries", "Acacia"], ["Kolibries", "Wilgen"], ["Kolibries", "Iepen"], ["Kolibries", "Eucalyptus"],
+      ["Kolibries", "Esdoorns"], ["Kolibries", "Lindes"], ["Kolibries", "Baobabs"],
+      /* --- GENOTWAREN --- */
+      ["Kolibries", "Honing"], ["Kolibries", "Jasmijn"], ["Kolibries", "Kamille"], ["Kolibries", "Theeplanten"],
+      ["Kolibries", "Rooibos"], ["Kolibries", "Hop"], ["Kolibries", "Coca"], ["Kolibries", "Tabaksplanten"],
+      ["Kolibries", "Koffieplanten"],
+      /* --- FRUIT --- */
+      ["Kolibries", "Druiven"], ["Kolibries", "Appels"], ["Kolibries", "Peren"], ["Kolibries", "Bosbessen"], 
+      ["Kolibries", "Frambozen"]
+    ],
+    output: [
+      { naam: "Kolibries", naam_en: "Hummingbirds", icoon: "icons/Kolibries.png", map: "Vogels", 
+        quote: `The hummingbird is a fragment of the rainbow, suspended in air
+        <br><br>- Pablo Neruda`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Bloem", "Archaeopteryx"],
