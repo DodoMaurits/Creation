@@ -11632,6 +11632,108 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ KRAAIEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Kraaien", "Wormen"], 
+      /* Schelp */ ["Kraaien", "Tweekleppigen"], ["Kraaien", "Zeeslakken"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Kraaien", "Waterspinnen"], ["Kraaien", "Aasgarnalen"], ["Kraaien", "Zeepissebedden"], ["Kraaien", "Vlokreeftjes"],
+      ["Kraaien", "Garnalen"], ["Kraaien", "Krabben"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kraaien", "Termieten"], ["Kraaien", "Pissebedden"], ["Kraaien", "Oerpolyneopteren"], ["Kraaien", "Duizendpoten"], 
+      ["Kraaien", "Hooiwagens"], ["Kraaien", "Spinnen"], ["Kraaien", "Zilvervisjes"], ["Kraaien", "Wandelende takken"], 
+      ["Kraaien", "Kakkerlakken"], ["Kraaien", "Oerhymenopteren"], ["Kraaien", "Slakken"], ["Kraaien", "Libellen"], 
+      ["Kraaien", "Kevers"], ["Kraaien", "Lieveheersbeestjes"], ["Kraaien", "Mieren"], ["Kraaien", "Wespen"],
+      ["Kraaien", "Vliegen"], ["Kraaien", "Vlinders"], ["Kraaien", "Krekels"], ["Kraaien", "Sprinkhanen"], 
+      ["Kraaien", "Muggen"], ["Kraaien", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Kraaien", "Oervaatplanten"], ["Kraaien", "Oerzaadplanten"], ["Kraaien", "Oermagnoliden"], 
+      ["Kraaien", "Oermonocotylen"], ["Kraaien", "Oereudicoten"], ["Kraaien", "Gras"], ["Kraaien", "Oerfabiden"],
+      ["Kraaien", "Oermalviden"], ["Kraaien", "Oercaryophyllales"], ["Kraaien", "Oerasteriden"], 
+      ["Kraaien", "Oerericales"], ["Kraaien", "Oerlamiden"], ["Kraaien", "Oercampanuliden"], ["Kraaien", "Klavers"],
+      ["Kraaien", "Brandnetels"], ["Kraaien", "Heide"],
+      /* --- BIOLOGIE --- */
+      ["Kraaien", "Zaadjes"], ["Kraaien", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Kraaien", "Munt"], ["Kraaien", "Tijm"], ["Kraaien", "Mosterd"], ["Kraaien", "Bieslook"], ["Kraaien", "Basilicum"],
+      ["Kraaien", "Chilipepers"], ["Kraaien", "Oregano"], ["Kraaien", "Salie"], ["Kraaien", "Salie"], 
+      ["Kraaien", "Anijs"], ["Kraaien", "Komijn"], ["Kraaien", "Dille"], ["Kraaien", "Koriander"], 
+      ["Kraaien", "Peterselie"],
+      /* --- BOMEN --- */
+      ["Kraaien", "Coniferen"], ["Kraaien", "Elzen"], ["Kraaien", "Beuken"], ["Kraaien", "Eiken"], 
+      /* --- BLOEMEN --- */
+      ["Kraaien", "Klaprozen"], ["Kraaien", "Paardenbloemen"], ["Kraaien", "Madeliefjes"], ["Kraaien", "Goudsbloemen"],
+      ["Kraaien", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Kraaien", "Druiven"], ["Kraaien", "Appels"], ["Kraaien", "Peren"], ["Kraaien", "Pruimen"], 
+      ["Kraaien", "Bosbessen"], ["Kraaien", "Vijgen"], ["Kraaien", "Aardbeien"], ["Kraaien", "Olijven"],
+      ["Kraaien", "Abrikozen"], ["Kraaien", "Kersen"], ["Kraaien", "Perziken"], ["Kraaien", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Kraaien", "Bieten"], ["Kraaien", "Spinazie"], ["Kraaien", "Aubergines"], ["Kraaien", "Radijsjes"],
+      ["Kraaien", "Kool"], ["Kraaien", "Prei"], ["Kraaien", "Paprika"], ["Kraaien", "Tomaten"], ["Kraaien", "Selderij"],
+      ["Kraaien", "Venkel"], ["Kraaien", "Wortelen"], ["Kraaien", "Sla"], ["Kraaien", "Andijvie"], 
+      ["Kraaien", "Broccoli"], ["Kraaien", "Bloemkool"], ["Kraaien", "Rode kool"], ["Kraaien", "Spruitjes"],
+      ["Kraaien", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Kraaien", "Rijst"], ["Kraaien", "Maïs"], ["Kraaien", "Tarwe"], ["Kraaien", "Gerst"], ["Kraaien", "Haver"],
+      ["Kraaien", "Gierst"], ["Kraaien", "Pap"], ["Kraaien", "Brood"],
+      /* --- ZADEN --- */
+      ["Kraaien", "Erwten"], ["Kraaien", "Walnoten"], ["Kraaien", "Kastanjes"], ["Kraaien", "Hazelnoten"],
+      ["Kraaien", "Soja"], ["Kraaien", "Pinda"], ["Kraaien", "Linzen"], ["Kraaien", "Sesam"], ["Kraaien", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
+        quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
+        <br><br>- Ma Zhiyuan`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Kraaien", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Kraaien", "Karpers"], ["Kraaien", "Snoeken"], ["Kraaien", "Paling"], ["Kraaien", "Goudvissen"], 
+      ["Kraaien", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kraaien", "Oertetrapoden"], ["Kraaien", "Salamanders"], ["Kraaien", "Kikkers"], ["Kraaien", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Kraaien", "Slangen"], ["Kraaien", "Lepidosauriërs"], ["Kraaien", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Kraaien", "Mollen"], ["Kraaien", "Oercynodonten"], ["Kraaien", "Oerplacentalia"], ["Kraaien", "Oerbuideldieren"],
+      ["Kraaien", "Oerknaagdieren"], ["Kraaien", "Konijnen"], ["Kraaien", "Ratten"], ["Kraaien", "Muizen"],
+      ["Kraaien", "Hamsters"], ["Kraaien", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
+        quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
+        <br><br>- Ma Zhiyuan`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Tropisch regenwoud"],
@@ -19835,11 +19937,11 @@ const combinaties = [
   {
     input: [
       /* --- WATERDIEREN --- */
-      ["Zeesterren", "Zeeslakken"], ["Zeesterren", "Tweekleppigen"],
+      ["Zeesterren", "Tweekleppigen"], ["Zeesterren", "Zeeslakken"],
       ["Inktvissen", "Zeeslakken"], ["Inktvissen", "Zeepokken"], ["Inktvissen", "Heremietkreeften"],
-      ["Nautilussen", "Zeeslakken"], ["Nautilussen", "Tweekleppigen"], 
+      ["Nautilussen", "Tweekleppigen"], ["Nautilussen", "Zeeslakken"], 
       ["Nautilussen", "Zeepokken"], ["Nautilussen", "Heremietkreeften"],
-      ["Octopussen", "Zeeslakken"], ["Octopussen", "Tweekleppigen"], ["Octopussen", "Nautilussen"],
+      ["Octopussen", "Tweekleppigen"], ["Octopussen", "Zeeslakken"], ["Octopussen", "Nautilussen"],
       ["Octopussen", "Zeepokken"], ["Octopussen", "Heremietkreeften"],
       ["Reuzeninktvissen", "Tweekleppigen"], ["Reuzeninktvissen", "Zeeslakken"], 
       ["Reuzeninktvissen", "Nautilussen"], ["Reuzeninktvissen", "Heremietkreeften"],
@@ -19852,14 +19954,14 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Agnathen", "Tweekleppigen"], ["Agnathen", "Zeeslakken"],
       ["Tiktaalik", "Tweekleppigen"], ["Tiktaalik", "Zeeslakken"],
-      ["Haaien", "Zeeslakken"], ["Haaien", "Tweekleppigen"], ["Haaien", "Nautilussen"],
+      ["Haaien", "Tweekleppigen"], ["Haaien", "Zeeslakken"], ["Haaien", "Nautilussen"],
       ["Haaien", "Zeepokken"], ["Haaien", "Heremietkreeften"],
-      ["Spookhaaien", "Zeeslakken"], ["Spookhaaien", "Tweekleppigen"],
+      ["Spookhaaien", "Tweekleppigen"], ["Spookhaaien", "Zeeslakken"],
       ["Spookhaaien", "Zeepokken"], ["Spookhaaien", "Heremietkreeften"],
       ["Zeeduivels", "Zeepokken"], ["Zeeduivels", "Heremietkreeften"],
       ["Kabeljauwen", "Tweekleppigen"], ["Kabeljauwen", "Zeeslakken"], 
       ["Kabeljauwen", "Zeepokken"], ["Kabeljauwen", "Heremietkreeften"],
-      ["Meervallen", "Zeeslakken"], ["Meervallen", "Tweekleppigen"],
+      ["Meervallen", "Tweekleppigen"], ["Meervallen", "Zeeslakken"],
       ["Meervallen", "Zeepokken"], ["Meervallen", "Heremietkreeften"],
       ["Paling", "Tweekleppigen"], ["Paling", "Zeeslakken"], ["Paling", "Heremietkreeften"],
       ["Kogelvissen", "Tweekleppigen"], ["Kogelvissen", "Zeeslakken"],
@@ -19868,14 +19970,14 @@ const combinaties = [
       ["Oercheliceraten", "Tweekleppigen"],
       ["Trilobieten", "Zeeslakken"], ["Trilobieten", "Tweekleppigen"], 
       ["Trilobieten", "Zeepokken"], ["Trilobieten", "Heremietkreeften"],
-      ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Tweekleppigen"], ["Oerkreeftjes", "Zeepokken"],
-      ["Reuzenpissebedden", "Zeepokken"], ["Reuzenpissebedden", "Zeeslakken"], ["Reuzenpissebedden", "Tweekleppigen"],
-      ["Kreeften", "Zeepokken"], ["Kreeften", "Zeeslakken"], ["Kreeften", "Tweekleppigen"],
-      ["Krabben", "Zeepokken"], ["Krabben", "Zeeslakken"], ["Krabben", "Tweekleppigen"],
-      ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Tweekleppigen"], ["Heremietkreeften", "Zeepokken"],
-      ["Zeeschorpioenen", "Nautilussen"], ["Zeeschorpioenen", "Zeeslakken"], 
-      ["Zeeschorpioenen", "Tweekleppigen"], ["Zeeschorpioenen", "Zeepokken"],
-      ["Zwaardstaarten", "Zeeslakken"], ["Zwaardstaarten", "Tweekleppigen"], ["Zwaardstaarten", "Zeepokken"],
+      ["Oerkreeftjes", "Tweekleppigen"], ["Oerkreeftjes", "Zeeslakken"], ["Oerkreeftjes", "Zeepokken"],
+      ["Reuzenpissebedden", "Tweekleppigen"], ["Reuzenpissebedden", "Zeeslakken"], ["Reuzenpissebedden", "Zeepokken"], 
+      ["Kreeften", "Tweekleppigen"], ["Kreeften", "Zeeslakken"], ["Kreeften", "Zeepokken"], 
+      ["Krabben", "Tweekleppigen"], ["Krabben", "Zeeslakken"], ["Krabben", "Zeepokken"], 
+      ["Heremietkreeften", "Tweekleppigen"], ["Heremietkreeften", "Zeeslakken"], ["Heremietkreeften", "Zeepokken"],
+      ["Zeeschorpioenen", "Tweekleppigen"], ["Zeeschorpioenen", "Zeeslakken"], 
+      ["Zeeschorpioenen", "Nautilussen"], ["Zeeschorpioenen", "Zeepokken"],
+      ["Zwaardstaarten", "Tweekleppigen"], ["Zwaardstaarten", "Zeeslakken"], ["Zwaardstaarten", "Zeepokken"],
       ["Zeeschildpadden", "Tweekleppigen"], ["Zeeschildpadden", "Zeeslakken"], ["Zeeschildpadden", "Nautilussen"],
       ["Zeeschildpadden", "Zeepokken"], ["Zeeschildpadden", "Heremietkreeften"],
       /* --- REPTIELEN --- */
@@ -19889,7 +19991,8 @@ const combinaties = [
       ["Meeuwen", "Tweekleppigen"], ["Meeuwen", "Zeeslakken"], ["Meeuwen", "Heremietkreeften"],
       ["Papegaaiduikers", "Tweekleppigen"], ["Papegaaiduikers", "Zeeslakken"],
       ["Flamingo", "Tweekleppigen"], ["Flamingo", "Zeeslakken"],
-      ["Reigers", "Tweekleppigen"]
+      ["Reigers", "Tweekleppigen"],
+      ["Kraaien", "Tweekleppigen"], ["Kraaien", "Zeeslakken"]
     ],
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
