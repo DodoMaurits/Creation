@@ -852,18 +852,22 @@ function showInfoOverlay(title, text, backgroundImage = null) {
     pogingen++;
   }
   let spanIndex = 1;
-  const toonSpan = (i) => {
-    spans.forEach((sp, idx) => {
-      sp.classList.remove("span-uit", "span-zichtbaar");
-      if (idx === i) {
-        sp.classList.add("span-zichtbaar");
-      } else if (sp.dataset.laatstZichtbaar === "1") {
-        sp.classList.add("span-uit");
-        setTimeout(() => sp.classList.remove("span-uit"), 400);
-      }
-    });
-    spans.forEach((sp, idx) => sp.dataset.laatstZichtbaar = idx === i ? "1" : "0");
+  const pasAan = () => {
+    let pogingen = 0;
+    while (
+      pogingen < 20 &&
+      grootte > (isMobielInfo ? 8 : 10) &&
+      inner.scrollHeight > window.innerHeight - 40
+    ) {
+      grootte -= 1;
+      textEl.style.fontSize = grootte + "px";
+      pogingen++;
+    }
   };
+  pasAan();
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(pasAan);
+  }
   const onthulVolgende = () => {
     if (spanIndex < spans.length) {
       toonSpan(spanIndex);
