@@ -12677,17 +12677,20 @@ const combinaties = [
   }, /* ------------------ STRUISVOGELS ------------------ */
   {
     input: [
-      ["Pauwen", "map:Groenten"], ["Pauwen", "map:Granen"],
+      ["Struisvogels", "map:Groenten"], ["Struisvogels", "map:Granen"],
       /* --- WATERDIEREN --- */
-      ["Pauwen", "Wormen"], 
+      ["Struisvogels", "Wormen"], 
       /* --- GELEEDPOTIGEN --- */
-      ["Pauwen", "Waterspinnen"], 
+      ["Struisvogels", "Waterspinnen"], 
       /* --- KLEIN LANDLEVEN --- */
-      ["Pauwen", "Termieten"], ["Pauwen", "Pissebedden"], ["Pauwen", "Oerpolyneopteren"], ["Pauwen", "Duizendpoten"], 
-      ["Pauwen", "Hooiwagens"], ["Pauwen", "Spinnen"], ["Pauwen", "Zilvervisjes"], ["Pauwen", "Wandelende takken"], 
-      ["Pauwen", "Kakkerlakken"], ["Pauwen", "Oerhymenopteren"], ["Pauwen", "Slakken"], ["Pauwen", "Libellen"],   
-      ["Pauwen", "Kevers"], ["Pauwen", "Mieren"], ["Pauwen", "Wespen"], ["Pauwen", "Vliegen"], ["Pauwen", "Vlinders"], 
-      ["Pauwen", "Krekels"], ["Pauwen", "Sprinkhanen"], ["Pauwen", "Muggen"], ["Pauwen", "Bijen"], 
+      ["Struisvogels", "Luizen"], ["Struisvogels", "Mijten"], ["Struisvogels", "Teken"], ["Struisvogels", "Termieten"], 
+      ["Struisvogels", "Pissebedden"], ["Struisvogels", "Oerpolyneopteren"], ["Struisvogels", "Duizendpoten"], 
+      ["Struisvogels", "Hooiwagens"], ["Struisvogels", "Schorpioenen"], ["Struisvogels", "Spinnen"], 
+      ["Struisvogels", "Zilvervisjes"], ["Struisvogels", "Wandelende takken"], ["Struisvogels", "Kakkerlakken"], 
+      ["Struisvogels", "Oerhymenopteren"], ["Struisvogels", "Slakken"], ["Struisvogels", "Libellen"],   
+      ["Struisvogels", "Kevers"], ["Struisvogels", "Lieveheersbeestjes"], ["Struisvogels", "Mieren"], 
+      ["Struisvogels", "Wespen"], ["Struisvogels", "Vliegen"], ["Struisvogels", "Vlinders"], ["Struisvogels", "Krekels"], 
+      ["Struisvogels", "Sprinkhanen"], ["Struisvogels", "Muggen"], ["Struisvogels", "Bijen"], 
       /* --- PLANTEN --- */
       ["Struisvogels", "Oervaatplanten"], ["Struisvogels", "Oerzaadplanten"], ["Struisvogels", "Oermagnoliden"],
       ["Struisvogels", "Oermonocotylen"], ["Struisvogels", "Oereudicoten"], ["Struisvogels", "Gras"], 
@@ -12750,6 +12753,77 @@ const combinaties = [
       { naam: "Struisvogels", naam_en: "Ostriches", icoon: "icons/Struisvogels.png", map: "Vogels", 
         quote: `The ostrich is the largest living bird, powerful on the ground yet unable to take to the air
         <br><br>- Richard Lydekker`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ SECRETARISVOGELS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Secretarisvogels", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Secretarisvogels", "Waterspinnen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Secretarisvogels", "Luizen"], ["Secretarisvogels", "Mijten"], ["Secretarisvogels", "Teken"],  
+      ["Secretarisvogels", "Termieten"], ["Secretarisvogels", "Pissebedden"], ["Secretarisvogels", "Oerpolyneopteren"], 
+      ["Secretarisvogels", "Duizendpoten"], ["Secretarisvogels", "Hooiwagens"], ["Secretarisvogels", "Spinnen"], 
+      ["Secretarisvogels", "Zilvervisjes"], ["Secretarisvogels", "Wandelende takken"], 
+      ["Secretarisvogels", "Kakkerlakken"], ["Secretarisvogels", "Oerhymenopteren"], ["Secretarisvogels", "Slakken"], 
+      ["Secretarisvogels", "Libellen"], ["Secretarisvogels", "Kevers"], ["Secretarisvogels", "Mieren"], 
+      ["Secretarisvogels", "Vliegen"], ["Secretarisvogels", "Vlinders"], ["Secretarisvogels", "Krekels"], 
+      ["Secretarisvogels", "Sprinkhanen"], ["Secretarisvogels", "Muggen"],
+      /* --- BIOLOGIE --- */
+      ["Secretarisvogels", "Ei"]
+    ],
+    output: [
+      { naam: "Secretarisvogels", naam_en: "Secretarybirds", icoon: "icons/Secretarisvogels.png", map: "Vogels", 
+        quote: `The secretarybird moves across the African savannah with long, deliberate strides, searching the ground 
+        for snakes and insects
+        <br><br>- Derek Ratcliffe`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Secretarisvogels", "Oertetrapoden"], ["Secretarisvogels", "Salamanders"], ["Secretarisvogels", "Kikkers"], 
+      ["Secretarisvogels", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Secretarisvogels", "Slangen"], ["Secretarisvogels", "Lepidosauriërs"], ["Secretarisvogels", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Secretarisvogels", "Mollen"], ["Secretarisvogels", "Oercynodonten"], ["Struisvogels", "Oerplacentalia"], 
+      ["Secretarisvogels", "Oerbuideldieren"], ["Secretarisvogels", "Oerknaagdieren"], ["Secretarisvogels", "Konijnen"], 
+      ["Secretarisvogels", "Ratten"], ["Secretarisvogels", "Muizen"], ["Secretarisvogels", "Hamsters"], 
+      ["Secretarisvogels", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Secretarisvogels", "Mussen"], ["Secretarisvogels", "Kanaries"]
+    ],
+    output: [
+      { naam: "Secretarisvogels", naam_en: "Secretarybirds", icoon: "icons/Secretarisvogels.png", map: "Vogels", 
+        quote: `The secretarybird moves across the African savannah with long, deliberate strides, searching the ground 
+        for snakes and insects
+        <br><br>- Derek Ratcliffe`
       },
       { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
