@@ -608,7 +608,7 @@ function epicSuccessBeforeOverlay(selectedEls, daarna) {
   setTimeout(() => {
     selectedEls.forEach(el => el.classList.remove("combo-gloed"));
     daarna();
-  }, 700);
+  }, 400);
 }
 
 function renderNewElements(elements, vers = null, thresholdOverlay = null, isNieuw = false) {
