@@ -830,7 +830,6 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   textEl.innerHTML = text;
   textEl.lang = TAAL;
   const spans = Array.from(textEl.querySelectorAll("span"));
-  spans.forEach(sp => sp.classList.add("span-verborgen"));
   inner.appendChild(titleEl);
   inner.appendChild(textEl);
   overlay.appendChild(inner);
@@ -839,10 +838,9 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   let grootte = isMobielInfo ? 12 : 20;
   textEl.style.fontSize = grootte + "px";
   const pastSpan = (sp) => {
-    spans.forEach(s => s.classList.remove("span-verborgen"));
+    sp.style.visibility = "visible";
     const meetbaar = inner.scrollHeight <= window.innerHeight - 40;
-    spans.forEach(s => s.classList.add("span-verborgen"));
-    sp.classList.remove("span-verborgen");
+    sp.style.visibility = "";
     return meetbaar;
   };
   let pogingen = 0;
