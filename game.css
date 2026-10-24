@@ -1243,7 +1243,7 @@ body.result-open #corner-controls {
   color: white;
   font-family: "Roboto Slab", serif;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .info-overlay.visible,
