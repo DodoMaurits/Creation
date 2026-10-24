@@ -11875,6 +11875,37 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Pauwen", "Oertetrapoden"], ["Pauwen", "Salamanders"], ["Pauwen", "Kikkers"], ["Pauwen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Pauwen", "Slangen"], ["Pauwen", "Lepidosauriërs"], ["Pauwen", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Pauwen", "Mollen"], ["Pauwen", "Oercynodonten"], ["Pauwen", "Oerplacentalia"], ["Pauwen", "Oerbuideldieren"],
+      ["Pauwen", "Oerknaagdieren"], ["Pauwen", "Konijnen"], ["Pauwen", "Ratten"], ["Pauwen", "Muizen"],
+      ["Pauwen", "Hamsters"], ["Pauwen", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Pauwen", naam_en: "Peacocks", icoon: "icons/Pauwen.png", map: "Vogels", 
+        quote: `In the garden, the peacock walks as if it remembers a lost paradise
+        <br><br>- Rumi`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   }, /* ------------------ PAPEGAAIEN ------------------ */
   {
     input: [
@@ -12643,6 +12674,97 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ STRUISVOGELS ------------------ */
+  {
+    input: [
+      ["Pauwen", "map:Groenten"], ["Pauwen", "map:Granen"],
+      /* --- WATERDIEREN --- */
+      ["Pauwen", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Pauwen", "Waterspinnen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Pauwen", "Termieten"], ["Pauwen", "Pissebedden"], ["Pauwen", "Oerpolyneopteren"], ["Pauwen", "Duizendpoten"], 
+      ["Pauwen", "Hooiwagens"], ["Pauwen", "Spinnen"], ["Pauwen", "Zilvervisjes"], ["Pauwen", "Wandelende takken"], 
+      ["Pauwen", "Kakkerlakken"], ["Pauwen", "Oerhymenopteren"], ["Pauwen", "Slakken"], ["Pauwen", "Libellen"],   
+      ["Pauwen", "Kevers"], ["Pauwen", "Mieren"], ["Pauwen", "Wespen"], ["Pauwen", "Vliegen"], ["Pauwen", "Vlinders"], 
+      ["Pauwen", "Krekels"], ["Pauwen", "Sprinkhanen"], ["Pauwen", "Muggen"], ["Pauwen", "Bijen"], 
+      /* --- PLANTEN --- */
+      ["Struisvogels", "Oervaatplanten"], ["Struisvogels", "Oerzaadplanten"], ["Struisvogels", "Oermagnoliden"],
+      ["Struisvogels", "Oermonocotylen"], ["Struisvogels", "Oereudicoten"], ["Struisvogels", "Gras"], 
+      ["Struisvogels", "Oerfabiden"], ["Struisvogels", "Oermalivden"], ["Struisvogels", "Oercaryophyllales"], 
+      ["Struisvogels", "Oerasteriden"], ["Struisvogels", "Oerericales"], ["Struisvogels", "Oerlamiden"], 
+      ["Struisvogels", "Oercampanuliden"], ["Struisvogels", "Vetplanten"], ["Struisvogels", "Klavers"],
+      ["Struisvogels", "Brandnetels"], ["Struisvogels", "Aloë Vera"], ["Struisvogels", "Heide"],
+      /* --- BIOLOGIE --- */
+      ["Struisvogels", "Blad"], ["Struisvogels", "Zaadjes"], ["Struisvogels", "Bloem"],
+      /* --- SMAAKMAKERS --- */
+      ["Struisvogels", "Munt"], ["Struisvogels", "Tijm"], ["Struisvogels", "Mosterd"], ["Struisvogels", "Bieslook"], 
+      ["Struisvogels", "Basilicum"], ["Struisvogels", "Chilipepers"], ["Struisvogels", "Oregano"], 
+      ["Struisvogels", "Salie"], ["Struisvogels", "Anijs"], ["Struisvogels", "Komijn"], ["Struisvogels", "Dille"], 
+      ["Struisvogels", "Koriander"], ["Struisvogels", "Peterselie"],
+      /* --- BOMEN --- */
+      ["Struisvogels", "Acacia"], ["Struisvogels", "Baobabs"],
+      /* --- BLOEMEN --- */
+      ["Struisvogels", "Klaprozen"], ["Struisvogels", "Paardenbloemen"], ["Struisvogels", "Madeliefjes"], 
+      ["Struisvogels", "Goudsbloemen"], ["Struisvogels", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Struisvogels", "Druiven"], ["Struisvogels", "Appels"], ["Struisvogels", "Peren"], ["Struisvogels", "Pruimen"], 
+      ["Struisvogels", "Bosbessen"], ["Struisvogels", "Vijgen"], ["Struisvogels", "Aardbeien"], 
+      ["Struisvogels", "Olijven"], ["Struisvogels", "Abrikozen"], ["Struisvogels", "Kersen"], ["Struisvogels", "Perziken"],
+      ["Struisvogels", "Granaatappels"], ["Struisvogels", "Mandarijnen"], ["Struisvogels", "Guaves"],
+      ["Struisvogels", "Frambozen"],
+      /* --- ZADEN --- */
+      ["Struisvogels", "Erwten"], ["Struisvogels", "Soja"], ["Struisvogels", "Pinda"], ["Struisvogels", "Linzen"], 
+      ["Struisvogels", "Sesam"], ["Struisvogels", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Struisvogels", naam_en: "Ostriches", icoon: "icons/Struisvogels.png", map: "Vogels", 
+        quote: `The ostrich is the largest living bird, powerful on the ground yet unable to take to the air
+        <br><br>- Richard Lydekker`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- KLEIN LANDLEVEN --- */
+      ["Struisvogels", "Oertetrapoden"], ["Struisvogels", "Salamanders"], ["Struisvogels", "Kikkers"], 
+      ["Struisvogels", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Struisvogels", "Slangen"], ["Struisvogels", "Lepidosauriërs"], ["Struisvogels", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Struisvogels", "Mollen"], ["Struisvogels", "Oercynodonten"], ["Struisvogels", "Oerplacentalia"], 
+      ["Struisvogels", "Oerbuideldieren"], ["Struisvogels", "Oerknaagdieren"], ["Struisvogels", "Konijnen"], 
+      ["Struisvogels", "Ratten"], ["Struisvogels", "Muizen"], ["Struisvogels", "Hamsters"], 
+      ["Struisvogels", "Spitsmuizen"]
+    ],
+    output: [
+      { naam: "Struisvogels", naam_en: "Ostriches", icoon: "icons/Struisvogels.png", map: "Vogels", 
+        quote: `The ostrich is the largest living bird, powerful on the ground yet unable to take to the air
+        <br><br>- Richard Lydekker`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Savanne", "Oermonocotylen"],
