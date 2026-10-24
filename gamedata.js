@@ -11768,6 +11768,58 @@ const combinaties = [
   }, /* ------------------ KOLIBRIES ------------------ */
   {
     input: [
+      ["Kolibries", "map:Bloemen"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Kolibries", "Waterspinnen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kolibries", "Luizen"], ["Kolibries", "Mijten"], ["Kolibries", "Teken"], ["Kolibries", "Termieten"], 
+      ["Kolibries", "Pissebedden"], ["Kolibries", "Oerpolyneopteren"], ["Kolibries", "Hooiwagens"], 
+      ["Kolibries", "Zilvervisjes"], ["Kolibries", "Oerhymenopteren"], ["Kolibries", "Spinnen"], 
+      ["Kolibries", "Mieren"], ["Kolibries", "Vliegen"], ["Kolibries", "Kevers"], ["Kolibries", "Vlinders"],
+      ["Kolibries", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Kolibries", "Oervaatplanten"], ["Kolibries", "Oerzaadplanten"], ["Kolibries", "Oermagnoliden"],
+      ["Kolibries", "Oermonocotylen"], ["Kolibries", "Oereudicoten"], ["Kolibries", "Oerfabiden"], 
+      ["Kolibries", "Oermalivden"], ["Kolibries", "Oercaryophyllales"], ["Kolibries", "Oerasteriden"], 
+      ["Kolibries", "Oerericales"], ["Kolibries", "Oerlamiden"], ["Kolibries", "Oercampanuliden"], 
+      ["Kolibries", "Vetplanten"], ["Kolibries", "Agave"], ["Kolibries", "Aloë Vera"], ["Kolibries", "Cactussen"], 
+      ["Kolibries", "Heide"], ["Kolibries", "Lavendel"], ["Kolibries", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Kolibries", "Bloem"], 
+      /* --- SMAAKMAKERS --- */
+      ["Kolibries", "Munt"], ["Kolibries", "Tijm"], ["Kolibries", "Mosterd"], ["Kolibries", "Bieslook"], 
+      ["Kolibries", "Basilicum"], ["Kolibries", "Chilipepers"], ["Kolibries", "Oregano"], ["Kolibries", "Salie"], 
+      ["Kolibries", "Anijs"], ["Kolibries", "Komijn"], ["Kolibries", "Dille"], ["Kolibries", "Koriander"], 
+      ["Kolibries", "Peterselie"],
+      /* --- BOMEN --- */
+      ["Kolibries", "Tulpenbomen"], ["Kolibries", "Magnolia"], ["Kolibries", "Laurierbomen"], ["Kolibries", "Oliepalmen"],
+      ["Kolibries", "Acacia"], ["Kolibries", "Wilgen"], ["Kolibries", "Iepen"], ["Kolibries", "Eucalyptus"], 
+      ["Kolibries", "Esdoorns"], ["Kolibries", "Lindes"], ["Kolibries", "Baobabs"],
+      /* --- GENOTWAREN --- */
+      ["Kolibries", "Honing"], ["Kolibries", "Jasmijn"], ["Kolibries", "Theeplanten"], ["Kolibries", "Rooibos"], 
+      ["Kolibries", "Hop"], ["Kolibries", "Coca"], ["Kolibries", "Tabaksplanten"], ["Kolibries", "Koffieplanten"],
+      /* --- FRUIT --- */
+      ["Kolibries", "Druiven"], ["Kolibries", "Appels"], ["Kolibries", "Peren"], ["Kolibries", "Bosbessen"], 
+      ["Kolibries", "Frambozen"]
+    ],
+    output: [
+      { naam: "Kolibries", naam_en: "Hummingbirds", icoon: "icons/Kolibries.png", map: "Vogels", 
+        quote: `The hummingbird is a fragment of the rainbow, suspended in air
+        <br><br>- Pablo Neruda`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ PAUWEN ------------------ */
+  {
+    input: [
       ["Pauwen", "map:Granen"],
       /* --- WATERDIEREN --- */
       ["Pauwen", "Wormen"], 
@@ -11823,102 +11875,54 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  }, /* ------------------ PAUWEN ------------------ */
+  }, /* ------------------ PAPEGAAIEN ------------------ */
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Kraaien", "Wormen"], 
-      /* Schelp */ ["Kraaien", "Tweekleppigen"], ["Kraaien", "Zeeslakken"],
+      ["Papegaaien", "map:Fruit"], ["Papegaaien", "map:Groenten"], ["Papegaaien", "map:Granen"],
+      ["Papegaaien", "map:Zaden"],
       /* --- GELEEDPOTIGEN --- */
-      ["Kraaien", "Waterspinnen"], ["Kraaien", "Aasgarnalen"], ["Kraaien", "Zeepissebedden"], ["Kraaien", "Vlokreeftjes"],
-      ["Kraaien", "Garnalen"], ["Kraaien", "Krabben"],
+      ["Papegaaien", "Waterspinnen"], 
       /* --- KLEIN LANDLEVEN --- */
-      ["Kraaien", "Termieten"], ["Kraaien", "Pissebedden"], ["Kraaien", "Oerpolyneopteren"], ["Kraaien", "Duizendpoten"], 
-      ["Kraaien", "Hooiwagens"], ["Kraaien", "Spinnen"], ["Kraaien", "Zilvervisjes"], ["Kraaien", "Wandelende takken"], 
-      ["Kraaien", "Kakkerlakken"], ["Kraaien", "Oerhymenopteren"], ["Kraaien", "Slakken"], ["Kraaien", "Libellen"], 
-      ["Kraaien", "Kevers"], ["Kraaien", "Lieveheersbeestjes"], ["Kraaien", "Mieren"], ["Kraaien", "Wespen"],
-      ["Kraaien", "Vliegen"], ["Kraaien", "Vlinders"], ["Kraaien", "Krekels"], ["Kraaien", "Sprinkhanen"], 
-      ["Kraaien", "Muggen"], ["Kraaien", "Bijen"],
+      ["Papegaaien", "Luizen"], ["Papegaaien", "Mijten"], ["Papegaaien", "Teken"], ["Papegaaien", "Termieten"], 
+      ["Papegaaien", "Pissebedden"], ["Papegaaien", "Oerpolyneopteren"], ["Papegaaien", "Duizendpoten"], 
+      ["Papegaaien", "Hooiwagens"], ["Papegaaien", "Zilvervisjes"], ["Papegaaien", "Wandelende takken"], 
+      ["Papegaaien", "Kakkerlakken"], ["Papegaaien", "Oerhymenopteren"], ["Papegaaien", "Slakken"], 
+      ["Papegaaien", "Libellen"], ["Papegaaien", "Kevers"], ["Papegaaien", "Vliegen"], ["Papegaaien", "Vlinders"], 
+      ["Papegaaien", "Krekels"], ["Papegaaien", "Sprinkhanen"], ["Papegaaien", "Muggen"],
       /* --- PLANTEN --- */
-      ["Kraaien", "Oervaatplanten"], ["Kraaien", "Oerzaadplanten"], ["Kraaien", "Oermagnoliden"], 
-      ["Kraaien", "Oermonocotylen"], ["Kraaien", "Oereudicoten"], ["Kraaien", "Gras"], ["Kraaien", "Oerfabiden"],
-      ["Kraaien", "Oermalviden"], ["Kraaien", "Oercaryophyllales"], ["Kraaien", "Oerasteriden"], 
-      ["Kraaien", "Oerericales"], ["Kraaien", "Oerlamiden"], ["Kraaien", "Oercampanuliden"], ["Kraaien", "Klavers"],
-      ["Kraaien", "Brandnetels"], ["Kraaien", "Heide"],
+      ["Papegaaien", "Oervaatplanten"], ["Papegaaien", "Oerzaadplanten"], ["Papegaaien", "Oermagnoliden"],
+      ["Papegaaien", "Oermonocotylen"], ["Papegaaien", "Oereudicoten"], ["Papegaaien", "Gras"], 
+      ["Papegaaien", "Oerfabiden"], ["Papegaaien", "Oermalivden"], ["Papegaaien", "Oercaryophyllales"], 
+      ["Papegaaien", "Oerasteriden"], ["Papegaaien", "Oerericales"], ["Papegaaien", "Oerlamiden"], 
+      ["Papegaaien", "Oercampanuliden"], ["Papegaaien", "Vetplanten"], ["Papegaaien", "Agave"], 
+      ["Papegaaien", "Aloë Vera"], ["Papegaaien", "Cactussen"], ["Papegaaien", "Brandnetels"], ["Papegaaien", "Klavers"],
       /* --- BIOLOGIE --- */
-      ["Kraaien", "Zaadjes"], ["Kraaien", "Ei"],
+      ["Papegaaien", "Zaadjes"], ["Papegaaien", "Bloem"], 
       /* --- SMAAKMAKERS --- */
-      ["Kraaien", "Munt"], ["Kraaien", "Tijm"], ["Kraaien", "Mosterd"], ["Kraaien", "Bieslook"], ["Kraaien", "Basilicum"],
-      ["Kraaien", "Chilipepers"], ["Kraaien", "Oregano"], ["Kraaien", "Salie"], ["Kraaien", "Salie"], 
-      ["Kraaien", "Anijs"], ["Kraaien", "Komijn"], ["Kraaien", "Dille"], ["Kraaien", "Koriander"], 
-      ["Kraaien", "Peterselie"],
+      ["Papegaaien", "Munt"], ["Papegaaien", "Tijm"], ["Papegaaien", "Mosterd"], ["Papegaaien", "Bieslook"], 
+      ["Papegaaien", "Basilicum"], ["Papegaaien", "Chilipepers"], ["Papegaaien", "Oregano"], ["Papegaaien", "Salie"], 
+      ["Papegaaien", "Anijs"], ["Papegaaien", "Komijn"], ["Papegaaien", "Dille"], ["Papegaaien", "Koriander"], 
+      ["Papegaaien", "Peterselie"],
       /* --- BOMEN --- */
-      ["Kraaien", "Coniferen"], ["Kraaien", "Elzen"], ["Kraaien", "Beuken"], ["Kraaien", "Eiken"], 
+      ["Papegaaien", "Coniferen"], ["Papegaaien", "Acacia"], ["Papegaaien", "Wilgen"], ["Papegaaien", "Populieren"],
+      ["Papegaaien", "Iepen"], ["Papegaaien", "Eucalyptus"], ["Papegaaien", "Elzen"], ["Papegaaien", "Berken"], 
+      ["Papegaaien", "Beuken"], ["Papegaaien", "Eiken"], ["Papegaaien", "Essen"],
       /* --- BLOEMEN --- */
-      ["Kraaien", "Klaprozen"], ["Kraaien", "Paardenbloemen"], ["Kraaien", "Madeliefjes"], ["Kraaien", "Goudsbloemen"],
-      ["Kraaien", "Zonnebloemen"],
-      /* --- FRUIT --- */
-      ["Kraaien", "Druiven"], ["Kraaien", "Appels"], ["Kraaien", "Peren"], ["Kraaien", "Pruimen"], 
-      ["Kraaien", "Bosbessen"], ["Kraaien", "Vijgen"], ["Kraaien", "Aardbeien"], ["Kraaien", "Olijven"],
-      ["Kraaien", "Abrikozen"], ["Kraaien", "Kersen"], ["Kraaien", "Perziken"], ["Kraaien", "Frambozen"],
-      /* --- GROENTEN --- */
-      ["Kraaien", "Bieten"], ["Kraaien", "Spinazie"], ["Kraaien", "Aubergines"], ["Kraaien", "Radijsjes"],
-      ["Kraaien", "Kool"], ["Kraaien", "Prei"], ["Kraaien", "Paprika"], ["Kraaien", "Tomaten"], ["Kraaien", "Selderij"],
-      ["Kraaien", "Venkel"], ["Kraaien", "Wortelen"], ["Kraaien", "Sla"], ["Kraaien", "Andijvie"], 
-      ["Kraaien", "Broccoli"], ["Kraaien", "Bloemkool"], ["Kraaien", "Rode kool"], ["Kraaien", "Spruitjes"],
-      ["Kraaien", "Boerenkool"],
-      /* --- GRANEN --- */
-      ["Kraaien", "Rijst"], ["Kraaien", "Maïs"], ["Kraaien", "Tarwe"], ["Kraaien", "Gerst"], ["Kraaien", "Haver"],
-      ["Kraaien", "Gierst"], ["Kraaien", "Pap"], ["Kraaien", "Brood"],
-      /* --- ZADEN --- */
-      ["Kraaien", "Erwten"], ["Kraaien", "Walnoten"], ["Kraaien", "Kastanjes"], ["Kraaien", "Hazelnoten"],
-      ["Kraaien", "Soja"], ["Kraaien", "Pinda"], ["Kraaien", "Linzen"], ["Kraaien", "Sesam"], ["Kraaien", "Sperziebonen"]
+      ["Papegaaien", "Klaprozen"], ["Papegaaien", "Paardenbloemen"], ["Papegaaien", "Madeliefjes"], 
+      ["Papegaaien", "Goudsbloemen"], ["Papegaaien", "Zonnebloemen"],
+      /* --- GENOTWAREN --- */
+      ["Papegaaien", "Honing"], ["Papegaaien", "Theeplanten"], ["Papegaaien", "Rooibos"], ["Papegaaien", "Jasmijn"],
+      ["Papegaaien", "Kamille"], ["Papegaaien", "Hop"]
     ],
     output: [
-      { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
-        quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
-        <br><br>- Ma Zhiyuan`
+      { naam: "Papegaaien", naam_en: "Parrotfish", icoon: "icons/Papegaaien.png", map: "Vogels", 
+        quote: `Parrots flash through the forest like fragments of fire moving between trees
+        <br><br>- Alexander von Humboldt`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
        find the point where these molecules became conscious
        <br><br>- Nassim Taleb`
-      },
-      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
-        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
-        <br><br>- Nhat Hanh`
-      }
-    ]
-  },
-  {
-    input: [/* BLOED */
-      /* --- WATERDIEREN --- */
-      ["Kraaien", "Octopussen"],
-      /* --- VISSEN --- */
-      ["Kraaien", "Karpers"], ["Kraaien", "Snoeken"], ["Kraaien", "Paling"], ["Kraaien", "Goudvissen"], 
-      ["Kraaien", "Forel"],
-      /* --- KLEIN LANDLEVEN --- */
-      ["Kraaien", "Oertetrapoden"], ["Kraaien", "Salamanders"], ["Kraaien", "Kikkers"], ["Kraaien", "Padden"],
-      /* --- REPTIELEN --- */
-      ["Kraaien", "Slangen"], ["Kraaien", "Lepidosauriërs"], ["Kraaien", "Gekko's"],
-      /* --- ZOOGDIEREN --- */
-      ["Kraaien", "Mollen"], ["Kraaien", "Oercynodonten"], ["Kraaien", "Oerplacentalia"], ["Kraaien", "Oerbuideldieren"],
-      ["Kraaien", "Oerknaagdieren"], ["Kraaien", "Konijnen"], ["Kraaien", "Ratten"], ["Kraaien", "Muizen"],
-      ["Kraaien", "Hamsters"], ["Kraaien", "Spitsmuizen"]
-    ],
-    output: [
-      { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
-        quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
-        <br><br>- Ma Zhiyuan`
-      },
-      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
-        quote: `We are linked by blood, and blood is memory without language
-        <br><br>- Joyce Oates`
-      },
-      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-        find the point where these molecules became conscious
-        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
