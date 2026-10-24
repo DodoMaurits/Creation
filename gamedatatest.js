@@ -295,7 +295,7 @@ const mappen = [
       { naam: "Lancetvisjes", icoon: "icons/Lancetvisjes.png" },
       { naam: "Agnathen", icoon: "icons/Agnathen.png" },
       { naam: "Oerstraalvinnigen", icoon: "icons/Oerstraalvinnigen.png" },
-      { naam: "Coelacanten", icoon: "icons/Coelacanthen.png" },
+      { naam: "Coelacanten", icoon: "icons/Coelacanten.png" },
       { naam: "Tiktaalik", icoon: "icons/Tiktaalik.png" },
       { naam: "Haaien", icoon: "icons/Haaien.png" },
       { naam: "Spookhaaien", icoon: "icons/Spookhaaien.png" },
