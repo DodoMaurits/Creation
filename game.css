@@ -762,6 +762,8 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 #result-overlay.episch .result-image {
   animation: none;
+  display: block;
+  margin-bottom: 0;
 }
 
 #result-overlay.episch .result-image-wrap::before {
