@@ -749,17 +749,13 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 
 /* GOUDEN GLOED */
-#result-overlay.episch .result-image {
-  position: relative;
-}
-
-#result-overlay.episch .result-image::before {
+#result-overlay.episch .result-box::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 65px;
   left: 50%;
-  width: 160%;
-  height: 160%;
+  width: 210px;
+  height: 210px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: radial-gradient(
@@ -768,15 +764,18 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
     rgba(255, 190, 60, 0.25) 45%,
     rgba(255, 190, 60, 0) 70%
   );
-  z-index: -1;
+  z-index: 0;
   animation: goudenGloedPuls 2s ease-in-out infinite;
   pointer-events: none;
 }
 
-@keyframes goudenGloedPuls {
-  0%   { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
-  50%  { opacity: 1;   transform: translate(-50%, -50%) scale(1.1); }
-  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
+#result-overlay.episch .result-box {
+  position: relative;
+}
+
+#result-overlay.episch .result-image {
+  position: relative;
+  z-index: 1;
 }
 
 /* ---------------- CLOSED CONTAINER ---------------- */
