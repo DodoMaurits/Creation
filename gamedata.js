@@ -10245,9 +10245,11 @@ const combinaties = [
       ["Arenden", "Schildpadden"], ["Arenden", "Pterosauriërs"], ["Arenden", "Lepidosauriërs"], 
       ["Arenden", "Gekko's"], ["Arenden", "Leguanen"], 
       /* --- ZOOGDIEREN --- */
-      ["Arenden", "Luiaarden"], ["Arenden", "Egels"], ["Arenden", "Konijnen"], ["Arenden", "Hazen"], 
-      ["Arenden", "Prairiehonden"], ["Arenden", "Ratten"], ["Arenden", "Capibara"], ["Arenden", "Eekhoorns"],
-      ["Arenden", "Muizen"], ["Arenden", "Hamsters"], ["Arenden", "Spitsmuizen"],
+      ["Arenden", "Mollen"], ["Arenden", "Oercynodonten"], ["Arenden", "Oerplacentalia"], ["Arenden", "Oerbuideldieren"], 
+      ["Arenden", "Klipdassen"], ["Arenden", "Luiaarden"], ["Arenden", "Oerknaagdieren"], ["Arenden", "Egels"], 
+      ["Arenden", "Konijnen"], ["Arenden", "Hazen"], ["Arenden", "Prairiehonden"], ["Arenden", "Ratten"], 
+      ["Arenden", "Capibara"], ["Arenden", "Eekhoorns"], ["Arenden", "Muizen"], ["Arenden", "Hamsters"], 
+      ["Arenden", "Vogelbekdieren"], ["Arenden", "Spitsmuizen"],
       /* --- VOGELS --- */
       ["Arenden", "Archaeopteryx"], ["Arenden", "Uilen"], ["Arenden", "Duiven"], ["Arenden", "Zwanen"], 
       ["Arenden", "Ganzen"], ["Arenden", "Eenden"], ["Arenden", "Zwaluwen"], ["Arenden", "Spreeuwen"],
