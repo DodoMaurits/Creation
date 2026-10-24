@@ -837,21 +837,6 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   const isMobielInfo = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
   let grootte = isMobielInfo ? 16 : 28;
   textEl.style.fontSize = grootte + "px";
-  const pastSpan = (sp) => {
-    const meetbaar = inner.scrollHeight <= window.innerHeight - 40;
-    return meetbaar;
-  };
-  let pogingen = 0;
-  while (
-    pogingen < 20 &&
-    grootte > (isMobielInfo ? 8 : 10) &&
-    !spans.every(pastSpan)
-  ) {
-    grootte -= 1;
-    textEl.style.fontSize = grootte + "px";
-    pogingen++;
-  }
-  let spanIndex = 1;
   const pasAan = () => {
     let pogingen = 0;
     while (
