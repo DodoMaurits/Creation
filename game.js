@@ -829,6 +829,18 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   textEl.className = "info-text";
   textEl.innerHTML = text;
   textEl.lang = TAAL;
+  const spans = Array.from(textEl.querySelectorAll("span"));
+  spans.forEach(sp => sp.classList.add("span-verborgen"));
+  let spanIndex = 0;
+  const onthulVolgende = () => {
+    if (spanIndex < spans.length) {
+      spans[spanIndex].classList.add("span-zichtbaar");
+      spanIndex++;
+      return true;
+    }
+    return false;
+  };
+  onthulVolgende();
   inner.appendChild(titleEl);
   inner.appendChild(textEl);
   overlay.appendChild(inner);
@@ -848,8 +860,11 @@ function showInfoOverlay(title, text, backgroundImage = null) {
     pogingen++;
   }
   overlay.onclick = () => {
-    overlay.classList.add("fade-out");
-    setTimeout(() => overlay.remove(), 300);
+    const nogEen = onthulVolgende();
+    if (!nogEen) {
+      overlay.classList.add("fade-out");
+      setTimeout(() => overlay.remove(), 300);
+    }
   };
 }
 
