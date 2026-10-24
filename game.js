@@ -12,7 +12,6 @@ let hintTimer = null;
 
 // ----- VOLUME -----
 const opgeslagenVolume = parseFloat(localStorage.getItem("creation-volume")) || 0.4;
-discoverSound.volume = opgeslagenVolume * 0.6;
 
 // ----- TIJDLIJN -----
 let currentTime = 13_800_000_000; // start bij oerknal
@@ -605,7 +604,8 @@ function showThresholdExplanation(threshold, missing, callback) {
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function epicSuccessBeforeOverlay(selectedEls, daarna) {
   const discoverSound = document.getElementById("discover-sound");
-  if (discoverSound) {
+  const gemute = localStorage.getItem("creation-muted") === "1";
+  if (discoverSound && !gemute) {
     discoverSound.currentTime = 0;
     discoverSound.volume = 0.5;
     discoverSound.play().catch(() => {});
