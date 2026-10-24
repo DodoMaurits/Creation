@@ -810,7 +810,7 @@ function shakeErrorElements(elements) {
   });
 }
 
-// Hulpfunctie: info-overlay voor threshold-elementen
+// ----- INFO OVERLAY BIJ THRESHOLD -----
 function showInfoOverlay(title, text, backgroundImage = null) {
   const old = document.getElementById("info-overlay");
   if (old) old.remove();
@@ -831,6 +831,30 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   textEl.lang = TAAL;
   const spans = Array.from(textEl.querySelectorAll("span"));
   spans.forEach(sp => sp.classList.add("span-verborgen"));
+  inner.appendChild(titleEl);
+  inner.appendChild(textEl);
+  overlay.appendChild(inner);
+  document.body.appendChild(overlay);
+  const isMobielInfo = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
+  let grootte = isMobielInfo ? 12 : 20;
+  textEl.style.fontSize = grootte + "px";
+  const pastSpan = (sp) => {
+    spans.forEach(s => s.classList.remove("span-verborgen"));
+    const meetbaar = inner.scrollHeight <= window.innerHeight - 40;
+    spans.forEach(s => s.classList.add("span-verborgen"));
+    sp.classList.remove("span-verborgen");
+    return meetbaar;
+  };
+  let pogingen = 0;
+  while (
+    pogingen < 20 &&
+    grootte > (isMobielInfo ? 8 : 10) &&
+    !spans.every(pastSpan)
+  ) {
+    grootte -= 1;
+    textEl.style.fontSize = grootte + "px";
+    pogingen++;
+  }
   let spanIndex = 0;
   const toonSpan = (i) => {
     spans.forEach((sp, idx) => {
@@ -851,24 +875,6 @@ function showInfoOverlay(title, text, backgroundImage = null) {
     return false;
   };
   toonSpan(0);
-  inner.appendChild(titleEl);
-  inner.appendChild(textEl);
-  overlay.appendChild(inner);
-  document.body.appendChild(overlay);
-  const isMobielInfo = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  let grootte = isMobielInfo ? 12 : 20;
-  textEl.style.fontSize = grootte + "px";
-  const past = () => inner.scrollHeight <= window.innerHeight - 40;
-  let pogingen = 0;
-  while (
-    !past() &&
-    grootte > (isMobielInfo ? 8 : 10) &&
-    pogingen < 20
-  ) {
-    grootte -= 1;
-    textEl.style.fontSize = grootte + "px";
-    pogingen++;
-  }
   overlay.onclick = () => {
     const nogEen = onthulVolgende();
     if (!nogEen) {
