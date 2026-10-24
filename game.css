@@ -748,7 +748,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   to   { transform: translateY(0) scale(1); opacity: 1; }
 }
 
-/* GOUDEN GLOED */
+/* GLOED NIEUW ELEMENT */
 .result-image-wrap {
   position: relative;
   display: inline-block;
@@ -777,19 +777,19 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(255, 240, 180, 0.95) 0%,
-    rgba(255, 215, 0, 0.45) 35%,
-    rgba(255, 215, 0, 0) 70%
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(220, 228, 255, 0.55) 30%,
+    rgba(200, 210, 255, 0) 65%
   );
   z-index: -1;
-  animation: goudenGloedPuls 3s ease-in-out 0.5s infinite;
+  animation: zilverenGloedPuls 4s ease-in-out 0.5s infinite;
   pointer-events: none;
 }
 
-@keyframes goudenGloedPuls {
-  0%   { transform: translate(-50%, -50%) translateY(-1px) scale(1);    opacity: 0.55; }
-  50%  { transform: translate(-50%, -50%) translateY(-1px) scale(1.05); opacity: 0.45; }
-  100% { transform: translate(-50%, -50%) translateY(-1px) scale(1);    opacity: 0.55; }
+@keyframes zilverenGloedPuls {
+  0%   { transform: translate(-50%, -50%) translateY(-1px) scale(1);    opacity: 0.5; }
+  50%  { transform: translate(-50%, -50%) translateY(-1px) scale(1.04); opacity: 0.42; }
+  100% { transform: translate(-50%, -50%) translateY(-1px) scale(1);    opacity: 0.5; }
 }
 
 /* ---------------- CLOSED CONTAINER ---------------- */
