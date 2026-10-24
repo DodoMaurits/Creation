@@ -10,9 +10,6 @@ let hintDeck = [];
 let hintVisible = false;
 let hintTimer = null;
 
-// ----- VOLUME -----
-const opgeslagenVolume = parseFloat(localStorage.getItem("creation-volume")) || 0.4;
-
 // ----- TIJDLIJN -----
 let currentTime = 13_800_000_000; // start bij oerknal
 const maxTime = 13_800_000_000;   // leeftijd universum
