@@ -1288,8 +1288,9 @@ body.result-open #corner-controls {
 }
 
 .info-text span.span-zichtbaar {
-  display: inline;
-  animation: spanVerschijn 0.6s ease forwards;
+  display: inline-block;
+  animation: spanVerschijn 0.6s ease forwards,
+             swayLeft 10s ease-in-out 0.6s infinite alternate;
 }
 
 @keyframes spanVerschijn {
@@ -1297,8 +1298,8 @@ body.result-open #corner-controls {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.info-text span:nth-child(even) {
-  animation-name: swayRight;
+.info-text span:nth-child(even).span-zichtbaar {
+  animation-name: spanVerschijn, swayRight;
 }
 
 @keyframes swayLeft {
