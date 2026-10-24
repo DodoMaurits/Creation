@@ -835,7 +835,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   overlay.appendChild(inner);
   document.body.appendChild(overlay);
   const isMobielInfo = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  let grootte = isMobielInfo ? 12 : 20;
+  let grootte = isMobielInfo ? 16 : 28;
   textEl.style.fontSize = grootte + "px";
   const pastSpan = (sp) => {
     sp.style.visibility = "visible";
