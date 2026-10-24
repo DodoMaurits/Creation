@@ -778,6 +778,12 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   z-index: 1;
 }
 
+@keyframes goudenGloedPuls {
+  0%   { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
+  50%  { opacity: 1;   transform: translate(-50%, -50%) scale(1.1); }
+  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.95); }
+}
+
 /* ---------------- CLOSED CONTAINER ---------------- */
 #closed-container {
   position: absolute;
