@@ -4070,7 +4070,7 @@ const combinaties = [
         quote: `In order to see a fish you must watch the water
         <br><br>- Bodhidharma`
       },
-      { naam: "Coelacanten", naam_en: "Coelacanths", icoon: "icons/Coelacanthen.png", map: "Vissen",
+      { naam: "Coelacanten", naam_en: "Coelacanths", icoon: "icons/Coelacanten.png", map: "Vissen",
         quote: `Ideas are like fish. If you want to catch little fish, you can stay in the shallow water.
         But if you want to catch the big fish, you've got to go deeper. Down deep, the fish are more powerful and
         more pure
@@ -4155,7 +4155,7 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
-  }, /* ------------------ COELACANTHEN ------------------ */
+  }, /* ------------------ Coelacanten ------------------ */
   {
     input: [
       /* --- WATERDIEREN --- */
@@ -4168,7 +4168,7 @@ const combinaties = [
       ["Coelacanten", "Waterspinnen"]
     ],
     output: [
-      { naam: "Coelacanten", naam_en: "Coelacanths", icoon: "icons/Coelacanthen.png", map: "Vissen",
+      { naam: "Coelacanten", naam_en: "Coelacanths", icoon: "icons/Coelacanten.png", map: "Vissen",
         quote: `Ideas are like fish. If you want to catch little fish, you can stay in the shallow water.
         But if you want to catch the big fish, you've got to go deeper. Down deep, the fish are more powerful and
         more pure
