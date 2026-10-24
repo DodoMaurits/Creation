@@ -598,25 +598,32 @@ function showThresholdExplanation(threshold, missing, callback) {
   document.body.appendChild(overlay);
 }
 
-// ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
+// ----- EFFECT NIEUWE ELEMENTEN -----
 function epicSuccessBeforeOverlay(selectedEls, daarna) {
-  const discoverSound = document.getElementById("discover-sound");
   const gemute = localStorage.getItem("creation-muted") === "1";
+  const discoverSound = document.getElementById("discover-sound");
   if (discoverSound && !gemute) {
     discoverSound.currentTime = 0;
     discoverSound.volume = 0.5;
     discoverSound.play().catch(() => {});
   }
+  const twinkelSound = document.getElementById("twinkel-sound");
   const flash = document.createElement("div");
   flash.className = "combo-flash";
   document.body.appendChild(flash);
   setTimeout(() => flash.remove(), 800);
   setTimeout(() => {
     selectedEls.forEach(el => el.classList.remove("combo-gloed"));
+    if (twinkelSound && !gemute) {  
+      twinkelSound.currentTime = 0;
+      twinkelSound.volume = 0.5;
+      twinkelSound.play().catch(() => {});
+    }
     daarna();
   }, 400);
 }
 
+// ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function renderNewElements(elements, vers = null, thresholdOverlay = null, isNieuw = false) {
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
