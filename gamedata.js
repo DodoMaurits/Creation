@@ -15206,28 +15206,6 @@ const combinaties = [
   },
   {
     input: [
-      /* --- WATERDIEREN --- */
-      ["Orka", "Dood"], ["Narwallen", "Dood"], ["Dolfijnen", "Dood"], ["Potvissen", "Dood"],
-      /* --- VOGELS --- */
-      ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"],
-      /* --- ZOOGDIEREN --- */
-      ["Olifanten", "Dood"],
-      /* --- PRIMATEN --- */
-      ["Neusapen", "Dood"], ["Langoeren", "Dood"], ["Bavianen", "Dood"], ["Lemuren", "Dood"], ["Makaken", "Dood"],
-      ["Kapucijnapen", "Dood"], ["Slingerapen", "Dood"], ["Brulapen", "Dood"], ["Mens", "Dood"]
-    ],
-    hint: `Verdriet is een complexe emotie die veel vraagt van sociale dieren.`,
-    hint_en: `Sadness is a complex emotion that places significant demands on social animals.`,
-    output: [
-      { naam: "Verdriet", naam_en: "Sadness", icoon: "icons/Verdriet.png", map: "Brein", 
-        quote: `A feeling of sadness and longing, that is not akin to pain, and resembles sorrow only, as the mist
-        resembles the rain
-        <br><br>- Henry Longfellow`
-      }
-    ]
-  }, 
-  {
-    input: [
       ["Suikerriet", "Ster"], ["Suikerriet", "Licht"], ["Suikerriet", "Fotosynthese"]
     ],
     hint: `In hun sappige stengels verwerkt suikerriet met behulp van de zon hun glucose tot sacharose.`,
@@ -21020,24 +20998,6 @@ const combinaties = [
         <br><br>- Billy Zane`
       }
     ]
-  }, //------------ TROTS --------------//
-  {
-    input: [
-      /* --- VOGELS --- */
-      ["Pinguïns", "Vreugde"], ["Arenden", "Vreugde"], ["Zwanen", "Vreugde"], ["Ganzen", "Vreugde"], 
-      ["Flamingo", "Vreugde"], ["Fazanten", "Vreugde"], ["Kraaien", "Vreugde"], ["Pauwen", "Vreugde"], 
-      ["Papegaaien", "Vreugde"],
-      /* --- PRIMATEN --- */
-      ["Mens", "Vreugde"]
-    ],
-    hint: `Voor wie het zo ervaart mag trots zijn op het eten.`,
-    hint_en: `Those who perceive it this way can take pride in their food.`,
-    output: [
-      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
-        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
-        <br><br>- Georges Bernanos`
-      }
-    ]
   }, //------------ JALOEZIE --------------//
   {
     input: [
@@ -21060,6 +21020,24 @@ const combinaties = [
       { naam: "Jaloezie", naam_en: "Envy", icoon: "icons/Jaloezie.png", map: "Brein", 
         quote: `Envy is the art of counting the other fellow's blessings instead of your own
         <br><br>- Harold Coffin`
+      }
+    ]
+  }, //------------ TROTS --------------//
+  {
+    input: [
+      /* --- VOGELS --- */
+      ["Pinguïns", "Vreugde"], ["Arenden", "Vreugde"], ["Zwanen", "Vreugde"], ["Ganzen", "Vreugde"], 
+      ["Flamingo", "Vreugde"], ["Fazanten", "Vreugde"], ["Kraaien", "Vreugde"], ["Pauwen", "Vreugde"], 
+      ["Papegaaien", "Vreugde"],
+      /* --- PRIMATEN --- */
+      ["Mens", "Vreugde"]
+    ],
+    hint: `Voor wie het zo ervaart mag trots zijn op het eten.`,
+    hint_en: `Those who perceive it this way can take pride in their food.`,
+    output: [
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   }, //------------ GEMEENSCHAP --------------//
@@ -21087,6 +21065,28 @@ const combinaties = [
       { naam: "Gemeenschap", naam_en: "Community", icoon: "icons/Gemeenschap.png", map: "Samenleving", 
         quote: `Small communities grow great through harmony, great ones fall to pieces through discord
         <br><br>- Sallust`
+      }
+    ]
+  }, //------------ VERDRIET --------------//
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Orka", "Dood"], ["Narwallen", "Dood"], ["Dolfijnen", "Dood"], ["Potvissen", "Dood"],
+      /* --- VOGELS --- */
+      ["Pinguïns", "Dood"], ["Ganzen", "Dood"], ["Zwanen", "Dood"], ["Kraaien", "Dood"], ["Papegaaien", "Dood"],
+      /* --- ZOOGDIEREN --- */
+      ["Olifanten", "Dood"],
+      /* --- PRIMATEN --- */
+      ["Neusapen", "Dood"], ["Langoeren", "Dood"], ["Bavianen", "Dood"], ["Lemuren", "Dood"], ["Makaken", "Dood"],
+      ["Kapucijnapen", "Dood"], ["Slingerapen", "Dood"], ["Brulapen", "Dood"], ["Mens", "Dood"]
+    ],
+    hint: `Verdriet is een complexe emotie die veel vraagt van sociale dieren.`,
+    hint_en: `Sadness is a complex emotion that places significant demands on social animals.`,
+    output: [
+      { naam: "Verdriet", naam_en: "Sadness", icoon: "icons/Verdriet.png", map: "Brein", 
+        quote: `A feeling of sadness and longing, that is not akin to pain, and resembles sorrow only, as the mist
+        resembles the rain
+        <br><br>- Henry Longfellow`
       }
     ]
   }
