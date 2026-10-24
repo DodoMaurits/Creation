@@ -832,15 +832,25 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   const spans = Array.from(textEl.querySelectorAll("span"));
   spans.forEach(sp => sp.classList.add("span-verborgen"));
   let spanIndex = 0;
+  const toonSpan = (i) => {
+    spans.forEach((sp, idx) => {
+      sp.classList.remove("span-zichtbaar");
+      sp.classList.add("span-verborgen");
+      if (idx === i) {
+        sp.classList.remove("span-verborgen");
+        sp.classList.add("span-zichtbaar");
+      }
+    });
+  };
   const onthulVolgende = () => {
     if (spanIndex < spans.length) {
-      spans[spanIndex].classList.add("span-zichtbaar");
+      toonSpan(spanIndex);
       spanIndex++;
       return true;
     }
     return false;
   };
-  onthulVolgende();
+  toonSpan(0);
   inner.appendChild(titleEl);
   inner.appendChild(textEl);
   overlay.appendChild(inner);
