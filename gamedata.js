@@ -12533,6 +12533,67 @@ const combinaties = [
         <br><br>Eerst nodig: savannes en de eerste zoogdieren.`,
         tekst_en: `Following the extinction of the dinosaurs, mammals adapted new strategies related to the emergence of
         grass and flowers. <br><br>Required first: the savannah and early mammals.` } }
+  }, /* ------------------ KIEVITEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Kieviten", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Kieviten", "Waterspinnen"], ["Kieviten", "Aasgarnalen"], ["Kieviten", "Vlokreeftjes"], ["Kieviten", "Garnalen"],  
+      /* --- KLEIN LANDLEVEN --- */
+      ["Kieviten", "Termieten"], ["Kieviten", "Pissebedden"], ["Kieviten", "Oerpolyneopteren"], 
+      ["Kieviten", "Duizendpoten"], ["Kieviten", "Hooiwagens"], ["Kieviten", "Spinnen"], ["Kieviten", "Zilvervisjes"], 
+      ["Kieviten", "Wandelende takken"], ["Kieviten", "Kakkerlakken"], ["Kieviten", "Oerhymenopteren"], 
+      ["Kieviten", "Slakken"], ["Kieviten", "Libellen"], ["Kieviten", "Kevers"], ["Kieviten", "Mieren"], 
+      ["Kieviten", "Vliegen"], ["Kieviten", "Vlinders"], ["Kieviten", "Krekels"], ["Kieviten", "Sprinkhanen"], 
+      ["Kieviten", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Kieviten", "Oervaatplanten"], ["Kieviten", "Oerzaadplanten"], ["Kieviten", "Oermagnoliden"],
+      ["Kieviten", "Oermonocotylen"], ["Kieviten", "Oereudicoten"], ["Kieviten", "Gras"], 
+      ["Kieviten", "Oerfabiden"], ["Kieviten", "Oermalivden"], ["Kieviten", "Oercaryophyllales"], 
+      ["Kieviten", "Oerasteriden"], ["Kieviten", "Oerericales"], ["Kieviten", "Oerlamiden"], 
+      ["Kieviten", "Oercampanuliden"], ["Kieviten", "Brandnetels"], ["Kieviten", "Klavers"], ["Kieviten", "Heide"], 
+      /* --- BIOLOGIE --- */
+      ["Kieviten", "Zaadjes"],
+      /* --- SMAAKMAKERS --- */
+      ["Kieviten", "Munt"], ["Kieviten", "Tijm"], ["Kieviten", "Mosterd"], ["Kieviten", "Bieslook"], 
+      ["Kieviten", "Basilicum"], ["Kieviten", "Chilipepers"], ["Kieviten", "Oregano"], ["Kieviten", "Salie"], 
+      ["Kieviten", "Anijs"], ["Kieviten", "Komijn"], ["Kieviten", "Dille"], ["Kieviten", "Koriander"], 
+      ["Kieviten", "Peterselie"],
+      /* --- BLOEMEN --- */
+      ["Kieviten", "Klaprozen"], ["Kieviten", "Paardenbloemen"], ["Kieviten", "Madeliefjes"], 
+      ["Kieviten", "Goudsbloemen"], ["Kieviten", "Zonnebloemen"],
+      /* --- FRUIT --- */
+      ["Kieviten", "Druiven"], ["Kieviten", "Appels"], ["Kieviten", "Peren"], ["Kieviten", "Pruimen"], 
+      ["Kieviten", "Bosbessen"], ["Kieviten", "Aardbeien"], ["Kieviten", "Kersen"], ["Kieviten", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Kieviten", "Bieten"], ["Kieviten", "Spinazie"], ["Kieviten", "Aubergines"], ["Kieviten", "Radijsjes"], 
+      ["Kieviten", "Kool"], ["Kieviten", "Prei"], ["Kieviten", "Paprika"], ["Kieviten", "Tomaten"],
+      ["Kieviten", "Selderij"], ["Kieviten", "Venkel"], ["Kieviten", "Wortelen"], ["Kieviten", "Sla"],
+      ["Kieviten", "Andijvie"], ["Kieviten", "Broccoli"], ["Kieviten", "Bloemkool"], ["Kieviten", "Rode kool"],
+      ["Kieviten", "Spruitjes"], ["Kieviten", "Boerenkool"], 
+      /* --- GRANEN --- */
+      ["Kieviten", "Maïs"], ["Kieviten", "Tarwe"], ["Kieviten", "Gerst"], ["Kieviten", "Haver"], ["Kieviten", "Gierst"],
+      ["Kieviten", "Pap"], ["Kieviten", "Brood"], 
+      /* --- ZADEN --- */
+      ["Kieviten", "Erwten"], ["Kieviten", "Soja"], ["Kieviten", "Linzen"], ["Kieviten", "Sesam"], 
+      ["Kieviten", "Sperziebonen"]   
+    ],
+    output: [
+      { naam: "Kieviten", naam_en: "Lapwings", icoon: "icons/Kieviten.png", map: "Vogels", 
+        quote: `The lapwing tumbles and twists over the fields, its flight full of sudden turns and restless energy
+        <br><br>- Richard Jefferies`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Buxus", "Archaeopteryx"],
