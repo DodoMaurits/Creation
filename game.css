@@ -1252,7 +1252,7 @@ body.result-open #corner-controls {
 }
 
 .info-inner {
-  width: min(48%, 900px);
+  width: min(38%, 760px);
   max-width: 100%;
 }
 
@@ -1267,7 +1267,7 @@ body.result-open #corner-controls {
 .info-text {
   position: relative;
   display: grid;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: 28px;
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
   hyphens: auto;
@@ -1979,7 +1979,7 @@ body.result-open #corner-controls {
               font-size: 22px;
             }
             .info-text {
-              font-size: 12px;
+              font-size: 16px;
               line-height: 1.5;
               hyphens: auto;
               -webkit-hyphens: auto;
