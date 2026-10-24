@@ -10,7 +10,11 @@ let hintDeck = [];
 let hintVisible = false;
 let hintTimer = null;
 
-// 🔹 Tijdlijn
+// ----- VOLUME -----
+const opgeslagenVolume = parseFloat(localStorage.getItem("creation-volume")) || 0.4;
+discoverSound.volume = opgeslagenVolume * 0.6;
+
+// ----- TIJDLIJN -----
 let currentTime = 13_800_000_000; // start bij oerknal
 const maxTime = 13_800_000_000;   // leeftijd universum
 let timelineStart = maxTime;
@@ -600,7 +604,12 @@ function showThresholdExplanation(threshold, missing, callback) {
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
 function epicSuccessBeforeOverlay(selectedEls, daarna) {
-  selectedEls.forEach(el => el.classList.add("combo-gloed"));
+  const discoverSound = document.getElementById("discover-sound");
+  if (discoverSound) {
+    discoverSound.currentTime = 0;
+    discoverSound.volume = 0.5;
+    discoverSound.play().catch(() => {});
+  }
   const flash = document.createElement("div");
   flash.className = "combo-flash";
   document.body.appendChild(flash);
