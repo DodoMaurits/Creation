@@ -11579,6 +11579,59 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ FAZANTEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Fazanten", "Wormen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Fazanten", "Termieten"], ["Fazanten", "Pissebedden"], ["Fazanten", "Oerpolyneopteren"], 
+      ["Fazanten", "Duizendpoten"], ["Fazanten", "Hooiwagens"], ["Fazanten", "Spinnen"],["Fazanten", "Zilvervisjes"], 
+      ["Fazanten", "Wandelende takken"], ["Fazanten", "Kakkerlakken"], ["Fazanten", "Oerhymenopteren"], 
+      ["Fazanten", "Slakken"], ["Fazanten", "Libellen"], ["Fazanten", "Kevers"], ["Fazanten", "Mieren"], 
+      ["Fazanten", "Vliegen"], ["Fazanten", "Vlinders"], ["Fazanten", "Krekels"], ["Fazanten", "Sprinkhanen"], 
+      ["Fazanten", "Muggen"],
+      /* --- PLANTEN --- */
+      ["Fazanten", "Gras"], ["Fazanten", "Klavers"],
+      /* --- BIOLOGIE --- */
+      ["Fazanten", "Detritus"], ["Fazanten", "Blad"], ["Fazanten", "Zaadjes"], 
+      /* --- SMAAKMAKERS --- */
+      ["Fazanten", "Munt"], ["Fazanten", "Tijm"], ["Fazanten", "Mosterd"], ["Fazanten", "Bieslook"], 
+      ["Fazanten", "Basilicum"], ["Fazanten", "Chilipepers"], ["Fazanten", "Oregano"], ["Fazanten", "Salie"], 
+      ["Fazanten", "Anijs"], ["Fazanten", "Komijn"], ["Fazanten", "Dille"], ["Fazanten", "Koriander"], 
+      ["Fazanten", "Peterselie"],    
+      /* --- BLOEMEN --- */
+      ["Fazanten", "Paardenbloemen"], ["Fazanten", "Zonnebloemen"], 
+      /* --- FRUIT --- */
+      ["Fazanten", "Druiven"], ["Fazanten", "Appels"], ["Fazanten", "Peren"], ["Fazanten", "Pruimen"], 
+      ["Fazanten", "Bosbessen"], ["Fazanten", "Aardbeien"], ["Fazanten", "Kersen"], ["Fazanten", "Frambozen"],
+      /* --- GROENTEN --- */
+      ["Fazanten", "Bieten"], ["Fazanten", "Spinazie"], ["Fazanten", "Radijsjes"], ["Fazanten", "Kool"], 
+      ["Fazanten", "Prei"], ["Fazanten", "Selderij"], ["Fazanten", "Venkel"], ["Fazanten", "Wortelen"], 
+      ["Fazanten", "Sla"], ["Fazanten", "Andijvie"], ["Fazanten", "Broccoli"], ["Fazanten", "Bloemkool"], 
+      ["Fazanten", "Rode kool"], ["Fazanten", "Spruitjes"], ["Fazanten", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Fazanten", "Tarwe"], ["Fazanten", "Maïs"], ["Fazanten", "Gerst"], ["Fazanten", "Haver"], ["Fazanten", "Gierst"],
+      ["Fazanten", "Pap"], ["Fazanten", "Brood"],
+      /* --- ZADEN --- */
+      ["Fazanten", "Erwten"], ["Fazanten", "Soja"], ["Fazanten", "Pinda"], ["Fazanten", "Linzen"], 
+      ["Fazanten", "Sesam"], ["Fazanten", "Sperziebonen"]
+    ],
+    output: [
+      { naam: "Fazanten", naam_en: "Pheasants", icoon: "icons/Fazanten.png", map: "Vogels", 
+        quote: `A pheasant bursts from the grass, scattering silence into wings and colour
+        <br><br>- Wang Wei`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Archaeopteryx", "Tropisch regenwoud"],
