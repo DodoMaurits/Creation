@@ -428,22 +428,16 @@ function toggleSelect(el, img, side, mapNaam) {
 // ----- CHECK COMBINATIONS -----
 function matchElement(rule, el) {
   if (!rule || !el) return false;
-
   if (typeof rule !== "string") return false;
-
-  // map support
   if (rule.startsWith("map:")) {
     const mapNaam = rule.slice(4);
     return (el.map || el.mapNaam) === mapNaam;
   }
-
-  // normal element match
   return el.naam === rule;
 }
 
 function matchPair(set, selected) {
   const [a, b] = selected;
-
   return (
     matchElement(set[0], a) && matchElement(set[1], b)
   ) || (
@@ -452,49 +446,38 @@ function matchPair(set, selected) {
 }
 
 function normalizeInput(input) {
-  // al correct formaat
   if (Array.isArray(input[0])) return input;
-
-  // single pair → wrap in array
   return [input];
 }
 
 function checkCombination() {
   if (selected.length < 2) return;
-
   const matches = combinaties.filter(c =>
     normalizeInput(c.input).some(set =>
       matchPair(set, selected)
     )
   );
-  
   if (matches.length === 0) {
     shakeErrorElements(selected.map(e => e.dom));
     selected.forEach(e => e.dom.classList.remove("selected"));
     selected = [];
     return;
   }
-
   const firstMatch = matches[0];
-
-  // 🔹 Check threshold-element dependency
   if (firstMatch.uitleg?.thresholdElement) {
     const needed = firstMatch.uitleg.thresholdElement.naam;
     if (!unlockedElements.has(needed)) {
-      // toon overlay met titel + tekst van thresholdElement
       showThresholdExplanation(
         firstMatch.uitleg.thresholdElement,
-        null, // geen missing circles
+        null, 
         () => {
           selected.forEach(e => e.dom.classList.remove("selected"));
           selected = [];
         }
       );
-      return; // stop verder uitvoeren
+      return;
     }
   }
-  
-  // 🔹 Check threshold requirements
   if (firstMatch.uitleg?.threshold) {
     const requirements = firstMatch.uitleg.threshold.requirements || [];
     const unlockedNamen = [
@@ -503,11 +486,9 @@ function checkCombination() {
         ...mappen.flatMap(m => m.elementen.map(e => e.naam))
       ])
     ];
-
     const missing = requirements.filter(r =>
       !unlockedNamen.includes(r)
     );
-    
     if (missing.length > 0) {
       showThresholdExplanation(firstMatch.uitleg.threshold, null, missing, () => {
         selected.forEach(e => e.dom.classList.remove("selected"));
@@ -516,13 +497,8 @@ function checkCombination() {
       return;
     }
   }
-  
-  // 🔹 Als alle requirements gehaald zijn of geen threshold → toon normale uitleg / nieuwe elementen
   const finalUitleg = firstMatch.uitleg?.normal || null;
-
-  // 🔹 Nieuwe elementen maken
   const newElements = [];
-
   matches.forEach(match => {
     match.output.forEach(newEl => {
       let map = mappen.find(m => m.naam === newEl.map);
@@ -540,39 +516,35 @@ function checkCombination() {
       newElements.push(newEl);
     });
   });
-
   const versText = versVan(firstMatch);
-
-  // SPECIAL THRESHOLD ELEMENT?
   const hasThreshold = !!firstMatch.uitleg?.threshold;
   const hasNormal = !!firstMatch.uitleg?.normal;
   const shouldShowInfo = !(hasThreshold && hasNormal);  
-  
-  renderNewElements(
-    newElements,
-    versText,
-    firstMatch
-  );
-  
+  const isNieuw = newElements.some(el => !unlockedElements.has(el.naam));
+  const geselecteerdeDom = selected.map(e => e.dom);
+  if (isNieuw) {
+    selected.forEach(e => e.dom.classList.remove("selected"));
+    selected = [];
+    epicSuccessBeforeOverlay(geselecteerdeDom, () => {
+      renderNewElements(newElements, versText, firstMatch, true);
+      lastExplanation = finalUitleg || null;
+      addUnlockedElements(newElements);
+    });
+    return;
+  }
+  renderNewElements(newElements, versText, firstMatch, false);
   lastExplanation = finalUitleg || null;
   addUnlockedElements(newElements);
-
   refreshHintDeck();
-
-  // Update timeline op basis van combinatie-tijd
   const eventTime = firstMatch.tijd;
-  
   if (eventTime !== undefined && eventTime < currentTime) {
     if (eventTime <= 12_000 && timelineStart !== 12_000) {
       timelineFill.style.width = "0%";
       timelineStart = 12_000;
 }
-
 animateTimeline(eventTime);
 saveProgress();
   }
-  
-  // reset selectie
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
@@ -581,7 +553,6 @@ saveProgress();
 function showThresholdExplanation(threshold, missing, callback) {
   const oldOverlay = document.getElementById("threshold-overlay");
   if (oldOverlay) oldOverlay.remove();
-
   const overlay = document.createElement("div");
   overlay.id = "threshold-overlay";
   overlay.style.display = "flex";
@@ -594,18 +565,14 @@ function showThresholdExplanation(threshold, missing, callback) {
   overlay.style.height = "100%";
   overlay.style.background = "rgba(0,0,0,0.7)";
   overlay.style.zIndex = 2000;
-
   const box = document.createElement("div");
   box.className = "explanation-box";
-
   const title = document.createElement("div");
   title.className = "explanation-title";
   title.innerHTML = titelVan(threshold);
-
   const text = document.createElement("div");
   text.className = "explanation-text";
   text.innerHTML = tekstVan(threshold);
-
   if (missing && missing.length > 0) {
     const grid = document.createElement("div");
     grid.className = "threshold-grid";
@@ -617,34 +584,40 @@ function showThresholdExplanation(threshold, missing, callback) {
     });
     text.appendChild(grid);
   }
-
   const button = document.createElement("button");
   button.className = "create-button";
   button.textContent = TAAL === "en" ? "Continue" : "Ga verder";
   button.onclick = () => {
     overlay.remove();
-    if (callback) callback(); // voer callback uit
+    if (callback) callback();
   };
-
   box.appendChild(title);
   box.appendChild(text);
   box.appendChild(button);
-
   overlay.appendChild(box);
   document.body.appendChild(overlay);
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
-function renderNewElements(elements, vers = null, thresholdOverlay = null) {
-  // Verwijder bestaande overlay
+function epicSuccessBeforeOverlay(selectedEls, daarna) {
+  selectedEls.forEach(el => el.classList.add("combo-gloed"));
+  const flash = document.createElement("div");
+  flash.className = "combo-flash";
+  document.body.appendChild(flash);
+  setTimeout(() => flash.remove(), 800);
+  setTimeout(() => {
+    selectedEls.forEach(el => el.classList.remove("combo-gloed"));
+    daarna();
+  }, 700);
+}
+
+function renderNewElements(elements, vers = null, thresholdOverlay = null, isNieuw = false) {
   const oldOverlay = document.getElementById("result-overlay");
   if (oldOverlay) oldOverlay.remove();
   const hasThreshold = !!thresholdOverlay?.uitleg?.threshold;
   const hasNormal = !!thresholdOverlay?.uitleg?.normal;
   const overlay = document.createElement("div");
   overlay.id = "result-overlay";
-
-  // Grid voor de nieuwe elementen
   const grid = document.createElement("div");
   grid.className = "result-grid";
   const isMobielResult = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
@@ -689,21 +662,17 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     grid.style.width = (cols * desktopBox + (cols - 1) * gapPx) + "px";
     grid.style.maxWidth = (cols * desktopBox + (cols - 1) * gapPx) + "px";
   }
-
   elements.forEach(el => {
     const box = document.createElement("div");
     box.className = "result-box fade-in";
     if (isMobielResult) box.style.width = mobielBox + "px";
-
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "result-image";
-
     const title = document.createElement("div");
     title.className = "result-title";
     title.innerHTML = naamVan(el);
     title.lang = TAAL;
-
     const quote = document.createElement("div");
     quote.className = "result-quote";
     quote.innerHTML = el.quote || "";
@@ -719,49 +688,39 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
       quote.classList.add("trio");
       title.classList.add("trio");
     }
-    
-    // 🔹 kleine random X + Y beweging (millimeters/subtiel)
     const moveX = (Math.random() * 20 - 10).toFixed(1) + "px";
     const moveY = "0px";
-    
-    // 🔹 random duur zodat alles onafhankelijk beweegt
-    const duration = (6 + Math.random() * 6).toFixed(2) + "s"; // 6–12 sec
-    
+    const duration = (6 + Math.random() * 6).toFixed(2) + "s"; 
     quote.style.setProperty("--move-x", moveX);
     quote.style.setProperty("--move-y", moveY);
     quote.style.setProperty("--dur", duration);
-
     box.appendChild(img);
     box.appendChild(title);
     box.appendChild(quote);
     grid.appendChild(box);
   });
-
   overlay.appendChild(grid);
-
   if (vers) {
     const versDiv = document.createElement("div");
     versDiv.className = "vers-text";
     versDiv.innerHTML = vers;
     overlay.appendChild(versDiv);
   }
-
-  // ⚡ Godlike flash
-  const flash = document.createElement("div");
-  flash.className = "godlike-flash";
-  overlay.appendChild(flash);
-
-  // ✅ CASE 1: alleen normal → info-button tonen
+  // Flash — alleen bij een nieuw element
+  let flash = null;
+  if (isNieuw) {
+    flash = document.createElement("div");
+    flash.className = "godlike-flash";
+    overlay.appendChild(flash);
+    overlay.classList.add("episch");
+  }
   if (!hasThreshold && hasNormal) {
     const uitleg = thresholdOverlay.uitleg.normal;
-  
     const infoBtn = document.createElement("div");
     infoBtn.className = "info-button";
     infoBtn.textContent = "i";
-  
     const popup = document.createElement("div");
     popup.className = "info-popup";
-
     infoBtn.onclick = (e) => {
       e.stopPropagation();
       if (window.matchMedia("(hover: none)").matches) {
@@ -778,33 +737,24 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
         }
       }
     };
-  
     const box = document.createElement("div");
     box.className = "info-popup-box";
-  
     const title = document.createElement("div");
     title.className = "info-popup-title";
     title.innerHTML = titelVan(uitleg);
-
     const text = document.createElement("div");
     text.className = "info-popup-text";
     text.innerHTML = tekstVan(uitleg);
-  
     box.appendChild(title);
     box.appendChild(text);
     popup.appendChild(box);
-  
     overlay.appendChild(infoBtn);
     overlay.appendChild(popup);
   }
-
   document.body.appendChild(overlay);
   requestAnimationFrame(() => overlay.classList.add("visible"));
-
-  flash.addEventListener("animationend", () => flash.remove());
-
+  flash?.addEventListener("animationend", () => flash?.remove());
   overlay.addEventListener("click", (e) => {
-    // ❌ klik op info-button of popup → NIET sluiten
     if (
       e.target.closest(".info-button") ||
       e.target.closest(".info-popup") ||
@@ -812,21 +762,16 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null) {
     ) {
       return;
     }
-  
     overlay.remove();
-  
     openLeft = null;
     openRight = null;
     leftSide.innerHTML = "";
     rightSide.innerHTML = "";
     renderClosed();
     updateClosedContainer();
-  
     requestAnimationFrame(() => {
-      // ✅ CASE 2: threshold + normal
       if (hasThreshold && hasNormal) {
         const uitleg = thresholdOverlay.uitleg.normal;
-  
         if (uitleg) {
           showInfoOverlay(
             titelVan(uitleg),
@@ -853,33 +798,25 @@ function shakeErrorElements(elements) {
 function showInfoOverlay(title, text, backgroundImage = null) {
   const old = document.getElementById("info-overlay");
   if (old) old.remove();
-
   const overlay = document.createElement("div");
   overlay.id = "info-overlay";
   overlay.className = "info-overlay fade-in";
-
   if (backgroundImage) {
     overlay.style.setProperty("--bg-image", `url("${backgroundImage}")`);
   }
-
   const inner = document.createElement("div");
   inner.className = "info-inner";
-
   const titleEl = document.createElement("div");
   titleEl.className = "info-title";
   titleEl.textContent = title;
-
   const textEl = document.createElement("div");
   textEl.className = "info-text";
   textEl.innerHTML = text;
   textEl.lang = TAAL;
-
   inner.appendChild(titleEl);
   inner.appendChild(textEl);
   overlay.appendChild(inner);
   document.body.appendChild(overlay);
-
-  // 🔹 Tekst automatisch laten krimpen tot hij past (i.p.v. scrollbar)
   const isMobielInfo = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
   let grootte = isMobielInfo ? 12 : 20;
   textEl.style.fontSize = grootte + "px";
@@ -894,7 +831,6 @@ function showInfoOverlay(title, text, backgroundImage = null) {
     textEl.style.fontSize = grootte + "px";
     pogingen++;
   }
-  
   overlay.onclick = () => {
     overlay.classList.add("fade-out");
     setTimeout(() => overlay.remove(), 300);
@@ -920,7 +856,7 @@ function animateTimeline(newTime) {
   const duration = 500;
   const start = performance.now();
 
-  function step(timestamp) {
+function step(timestamp) {
     const progress = Math.min((timestamp - start) / duration, 1);
     currentTime = oldTime + (newTime - oldTime) * progress;
     updateTimelineLabel();
@@ -933,9 +869,7 @@ function animateTimeline(newTime) {
 // ----- TIMELINE LABEL -----
 function updateTimelineLabel() {
   if (!timelineLabel || !timelineFill) return;
-
   let labelText;
-
   if (currentTime >= 1_000_000_000) {
     labelText = (currentTime / 1_000_000_000)
       .toLocaleString(TT.locale, { maximumFractionDigits: 3 }) 
@@ -947,24 +881,15 @@ function updateTimelineLabel() {
   } else if (currentTime >= 1) {
     labelText = Math.round(currentTime / 1) + " " + TT.jaar;
   }
-
   timelineLabel.textContent = labelText;
-
   const percentage = (timelineStart - currentTime) / timelineStart;
-  
-  // Breedte timeline-fill
   timelineFill.style.width = (percentage * 100) + "%";
-
-  // Label positioneren **exact boven de bol**
   timelineLabel.style.left = `calc(${percentage * 100}% + 8px)`;
-  // transform: translateX(-50%) in CSS doet de centering
-  
-  // Alleen op mobiel clampen; laptop houdt de exacte percentage-positionering
   if (window.matchMedia("(max-width: 900px) and (orientation: portrait)").matches) {
     const labelWidth = timelineLabel.offsetWidth;
     const barWidth = timeline.getBoundingClientRect().width;
-    const minCenter = labelWidth / 2;               // linkerkant label = linkerkant balk
-    const maxCenter = barWidth - labelWidth / 2;   // rechterkant label = rechterkant balk
+    const minCenter = labelWidth / 2;
+    const maxCenter = barWidth - labelWidth / 2;
     let centerPx = percentage * barWidth + 8;
     if (centerPx < minCenter) centerPx = minCenter;
     if (centerPx > maxCenter) centerPx = maxCenter;
@@ -980,34 +905,25 @@ function renderClosed() {
   closedContainer.classList.remove("hidden", "left", "right");
   closedContainer.style.transition = "opacity 0.3s ease";
   closedContainer.style.opacity = 0;
-  
   const grid = document.createElement("div");
   grid.className = "grid-closed";
-
   mappen.forEach(map => {
     const container = document.createElement("div");
     container.className = "icon-container";
     container.dataset.naam = map.naam;
-
     const img = document.createElement("img");
     img.src = map.icoon;
     img.className = "icon map";
     img.onclick = () => openMap(map, img);
-
     container.appendChild(img);
-    
-    // Permanente tooltip op mobiel
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
         container.appendChild(makeCurvedLabel(naamVan(map), 60));
     } else {
         attachTooltip(img, naamVan(map));
     }
-    
     grid.appendChild(container);
   });
-
   closedContainer.appendChild(grid);
-  
   requestAnimationFrame(() => {
     updateClosedContainer();
     const mapIcons = document.querySelectorAll(".icon.map");
@@ -1019,7 +935,6 @@ function renderClosed() {
       if (mappen.length <= 20) { icoon = 130; perRij = 4; }
       else if (mappen.length <= 25) { icoon = 130; perRij = 5; }
       else { icoon = 117; perRij = 6; }
-      // hoogte-check: past het verticaal? eerst meer per rij, dan iconen verkleinen
       let rijen = Math.ceil(mappen.length / perRij);
       let benodigdeHoogte = rijen * (icoon + 20) - 20;
       const maxHoogte = window.innerHeight - 160;
@@ -1032,16 +947,14 @@ function renderClosed() {
         icoon -= 10;
         benodigdeHoogte = rijen * (icoon + 20) - 20;
       }
-      // breedte-check: hoogstens zoveel per rij als het venster toelaat
       const maxPerRijBreed = Math.floor((window.innerWidth - 40 + 20) / (icoon + 20));
       perRij = Math.min(perRij, maxPerRijBreed);
       rijen = Math.ceil(mappen.length / perRij);
-
       mapIcons.forEach(icon => {
         icon.style.width = icoon + "px";
         icon.style.height = icoon + "px";
       });
-      const breedte = perRij * icoon + (perRij - 1) * 20 + 8;  // +8px veiligheidsmarge
+      const breedte = perRij * icoon + (perRij - 1) * 20 + 8;
       if (gridClosed) gridClosed.style.maxWidth = breedte + "px";
       if (closedContainerCenter) closedContainerCenter.style.width = breedte + "px";
     }
@@ -1052,7 +965,7 @@ function renderClosed() {
 function refreshClosedLabels() {
   if (!(window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches)) return;
   const isSide = closedContainer.classList.contains("side");
-  const smallCenter = !isSide && mappen.length > 18;   // ← nieuw: verkleinde center-modus
+  const smallCenter = !isSide && mappen.length > 18;
   const size = isSide ? 40 : (smallCenter ? 50 : 60);
   closedContainer.querySelectorAll(".icon-container").forEach(container => {
     const old = container.querySelector(".curved-label");
@@ -1094,7 +1007,6 @@ function updateClosedContainer() {
       icon.style.height = mapIcoon + "px";
     });
   }
-  
   if (leftOpen && rightOpen) {
     closedContainer.style.opacity = 0;
     closedContainer.style.pointerEvents = "none";
@@ -1132,7 +1044,6 @@ refreshClosedLabels();
 function openMap(map, clickedImg) {
   let side = null;
   let container;
-
   if (!openLeft) {
     openLeft = map;
     side = "left";
@@ -1142,7 +1053,7 @@ function openMap(map, clickedImg) {
     side = "right";
     container = rightSide;
   } else {
-    return; // beide open → niks doen
+    return; 
   }
   renderSide(container, map, side);
   updateClosedContainer();
@@ -1152,27 +1063,19 @@ function openMap(map, clickedImg) {
 // ----- CLOSE MAP -----
 function closeMap(side) {
   const container = side === "left" ? leftSide : rightSide;
-  const closingMap = side === "left" ? openLeft : openRight; // welke map wordt gesloten
-
+  const closingMap = side === "left" ? openLeft : openRight;
   container.classList.remove("visible");
-
   setTimeout(() => {
-    // deselecteer alle geselecteerde elementen die in deze map zitten
     selected = selected.filter(e => {
-      // als dit element bij de map hoort die gesloten wordt **en aan dezelfde kant**
       if (e.mapNaam === closingMap.naam && e.side === side) {
-        // stop met trillen
         e.dom.classList.remove("selected");
-        return false; // verwijder uit selectie
+        return false;
       }
-      return true; // houdt over
+      return true; 
     });
-
     if (side === "left") openLeft = null;
     else openRight = null;
-
     container.classList.add("hidden");
-
     updateClosedContainer();
     updateIntroHint();
   }, 300);
@@ -1183,12 +1086,10 @@ function maakSleepbaar(el, img, side, mapNaam) {
   let start = null;
   let kopie = null;
   img.setAttribute("draggable", "false");
-
   img.addEventListener("mousedown", (e) => { start = { x: e.clientX, y: e.clientY }; });
   img.addEventListener("touchstart", (e) => {
     start = { x: e.touches[0].clientX, y: e.touches[0].clientY };
   }, { passive: true });
-
   window.addEventListener("mousemove", beweeg);
   img.addEventListener("touchmove", beweeg, { passive: false });
   function beweeg(e) {
@@ -1204,7 +1105,6 @@ function maakSleepbaar(el, img, side, mapNaam) {
     kopie.style.left = (p.clientX - 55) + "px";
     kopie.style.top = (p.clientY - 55) + "px";
   }
-
   window.addEventListener("mouseup", los);
   img.addEventListener("touchend", los);
   function los(e) {
@@ -1217,14 +1117,11 @@ function maakSleepbaar(el, img, side, mapNaam) {
     const onder = document.elementFromPoint(centerX, centerY);
     const doelImg = onder && onder.closest ? onder.closest(".icon.element") : null;
     if (!doelImg) return;
-
     const doelEl = mappen.flatMap(m => m.elementen)
       .find(x => norm(x.naam) === norm(doelImg.dataset.naam));
     if (!doelEl) return;
-
     selected.forEach(e => e.dom.classList.remove("selected"));
     selected = [];
-
     toggleSelect(el, img, side, mapNaam);
     img.dataset.netGesleept = "1";
     toggleSelect(doelEl, doelImg, doelImg.closest("#left-side") ? "left" : "right", doelImg.dataset.mapnaam || "");
@@ -1236,17 +1133,12 @@ function maakSleepbaar(el, img, side, mapNaam) {
 function renderSide(parentContainer, map, side) {
   parentContainer.innerHTML = "";
   parentContainer.classList.remove("hidden", "visible");
-
-  // --- Title van de open map ---
   const titleContainer = document.createElement("div");
   titleContainer.className = "icon-container";
-
   const titleImg = document.createElement("img");
   titleImg.src = map.icoon;
   titleImg.className = "icon map-title";
   titleImg.onclick = () => closeMap(side);
-
-  // Tooltip voor de map-title
   if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
       titleContainer.appendChild(makeCurvedLabel(naamVan(map), 60));
   } else {
@@ -1254,18 +1146,13 @@ function renderSide(parentContainer, map, side) {
   }
   titleContainer.appendChild(titleImg);
   parentContainer.appendChild(titleContainer);
-
-  // --- Grid van elementen ---
   const grid = document.createElement("div");
   grid.className = "grid-elements";
-
   const totalElements = map.elementen.length;
   const isMobile = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
   const mobielIcoon = isMobile
     ? (totalElements > 27 ? 42 : (totalElements > 24 ? 48 : 50))
     : 50;
-
-  // Layout instellen
   if (!isMobile) {
     if (totalElements > 25) {
       grid.style.gridTemplateColumns = "repeat(6, 100px)";
@@ -1293,12 +1180,9 @@ function renderSide(parentContainer, map, side) {
       grid.style.rowGap = "2px";
     }
   }
-
-  // Maak de elementen
   map.elementen.forEach(el => {
     const elContainer = document.createElement("div");
     elContainer.className = "icon-container";
-
     const img = document.createElement("img");
     img.src = el.icoon;
     img.className = "icon element";
@@ -1311,7 +1195,6 @@ function renderSide(parentContainer, map, side) {
       img.style.height = mobielIcoon + "px";
       if (totalElements > 24) elContainer.style.marginBottom = "7px";
     }
-
     img.onclick = () => {
       if (img.dataset.netGesleept === "1") { img.dataset.netGesleept = ""; return; }
       toggleSelect(el, img, side, map.naam);
@@ -1319,8 +1202,6 @@ function renderSide(parentContainer, map, side) {
     img.dataset.naam = el.naam;
     img.dataset.mapnaam = map.naam;
     maakSleepbaar(el, img, side, map.naam);
-    
-    // Tooltip per element
     if (window.innerWidth <= 900 && window.matchMedia("(orientation: portrait)").matches) {
         elContainer.appendChild(makeCurvedLabel(naamVan(el), mobielIcoon));
     } else {
@@ -1329,10 +1210,7 @@ function renderSide(parentContainer, map, side) {
         elContainer.appendChild(img);
         grid.appendChild(elContainer);
   });
-
   parentContainer.appendChild(grid);
-
-  // Fade-in animatie
   parentContainer.style.opacity = 0;
   setTimeout(() => {
     parentContainer.style.transition = "opacity 0.3s ease";
@@ -1343,20 +1221,14 @@ function renderSide(parentContainer, map, side) {
 
 // ----- SUPERHINT -----
 function superHint() {
-  // Alle nu maakbare combinaties
   const kanNu = combinaties.filter(canShowHint);
-
   if (!kanNu.length) return;
-
-  // Voorrang: zonder tijd; anders de eerstvolgende (grootste) tijd
   const zonderTijd = kanNu.filter(c => c.tijd == null);
   const kandidaten = zonderTijd.length ? zonderTijd : kanNu;
   const doel = kandidaten.length
     ? kandidaten.reduce((a, b) => (b.tijd == null ? b : (!a.tijd || b.tijd >= a.tijd ? b : a)), kandidaten[0])
     : null;
   if (!doel) return;
-
-  // Bepaal de twee in te openen mappen
   const paren = pairs(doel.input);
   const paar = paren.find(matchend) || paren[0];
   function matchend(p) {
@@ -1368,34 +1240,25 @@ function superHint() {
       ? mappen.some(m => norm(m.naam) === norm(rule.slice(4)))
       : inMap(rule);
   }
-
-  // Zoek de map-objecten bij beide regels (map:-regel = die map; element = zijn eigen map)
   const mapVan = rule => {
     if (rule.startsWith("map:")) {
       return mappen.find(m => norm(m.naam) === norm(rule.slice(4)));
     }
-    // element: zoek in welke map hij ligt
     for (const m of mappen) {
       if (m.elementen.some(e => norm(e.naam) === norm(rule))) return m;
     }
     return null;
   };
-
   const mapA = mapVan(paar[0]);
   const mapB = mapVan(paar[1]);
   if (!mapA || !mapB) return;
-
-  // Sluit wat open staat, open het nieuwe paar
   if (openLeft) closeMap("left");
   if (openRight) closeMap("right");
-
-  // Kleine vertraging zodat sluiten (300ms) af is vóór openen
   setTimeout(() => {
     const flash = document.createElement("div");
     flash.className = "superhint-flash";
     document.body.appendChild(flash);
     setTimeout(() => flash.remove(), 1250);
-
     openMap(mapA, null);
     openMap(mapB, null);
   }, 350);
@@ -1450,12 +1313,10 @@ function refreshHintDeck() {
   const hints = combinaties
     .map((c, id) => ({ ...c, id }))
     .filter(canShowHint);
-
   hintDeck = [
     ...shuffle(hints.filter(h => h.tijd == null)),
     ...hints.filter(h => h.tijd != null).sort((a, b) => b.tijd - a.tijd)
   ];
-
   const on = hintDeck.length > 0;
   hintButton.classList.toggle("disabled", !on);
   hintButton.style.pointerEvents = on ? "auto" : "none";
@@ -1470,15 +1331,12 @@ function hideHint() {
 
 function showHint() {
   if (hintVisible) return hideHint();
-
   if (!hintDeck.length) refreshHintDeck();
   const hint = hintDeck.shift();
   if (!hint) return;
-
   hintBubble.innerHTML = hintVan(hint);
   hintBubble.classList.add("visible");
   hintVisible = true;
-
   clearTimeout(hintTimer);
   hintTimer = setTimeout(hideHint, 4000);
 }
