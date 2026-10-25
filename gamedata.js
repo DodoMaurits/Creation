@@ -1196,6 +1196,7 @@ const combinaties = [
     hint_en: `When the light shines through the raindrops.. you know what I'm getting at, right?`,
     output: [
       { naam: "Regenboog", naam_en: "Rainbow", icoon: "icons/Regenboog.png", map: "Lucht", 
+        geluid: "sound/AngelHoog.wav",
         quote: `Somewhere over the rainbow, skies are blue, and the dreams that you dare to dream really do come true
         <br><br>- Judy Garland`
       }
@@ -1222,6 +1223,7 @@ const combinaties = [
     hint_en: `When the clouds gather, it breaks loose.`,
     output: [
       { naam: "Storm", naam_en: "Storm", icoon: "icons/Storm.png", map: "Lucht", 
+        geluid: "sound/Wind.mp3", 
         quote: `If you want to see the sunshine, you have to weather the storm 
         <br><br>- Frank Lane`
       },
@@ -1240,7 +1242,7 @@ const combinaties = [
     hint_en: `I have to sigh because of the varying temperatures in the air.`,
     output: [
       { naam: "Wind", naam_en: "Wind", icoon: "icons/Wind.png", map: "Lucht", 
-        geluid: "sound/WindGroot.mp3", 
+        geluid: "sound/Wind.mp3", 
         quote: `Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating: there is really 
         no such thing as bad weather, only different kinds of good weather 
         <br><br>- John Ruskin`
@@ -1564,6 +1566,7 @@ const combinaties = [
     hint_en: `Why not more megalomaniacal: more storm, more wind...`,
     output: [
       { naam: "Orkaan", naam_en: "Hurricane", icoon: "icons/Orkaan.png", map: "Lucht", 
+        geluid: "sound/Wind.mp3", 
         quote: `The first rule of hurricane coverage is that every broadcast must begin 
         with palm trees bending in the wind 
         <br><br>- Carl Hiaasen`
