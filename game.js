@@ -490,10 +490,9 @@ function checkCombination() {
       !unlockedNamen.includes(r)
     );
     if (missing.length > 0) {
-      showThresholdExplanation(firstMatch.uitleg.threshold, null, missing, () => {
-        selected.forEach(e => e.dom.classList.remove("selected"));
-        selected = [];
-      });
+      selected.forEach(e => e.dom.classList.remove("selected"));
+      selected = [];
+      showThresholdExplanation(firstMatch.uitleg.threshold, null, missing, () => {});
       return;
     }
   }
