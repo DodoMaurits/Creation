@@ -7594,6 +7594,7 @@ const combinaties = [
     tijd: 100_000_000,
     output: [
       { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
