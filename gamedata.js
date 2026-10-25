@@ -625,6 +625,7 @@ const combinaties = [
     hint_en: `All those things moving on the Earth's surface must surely have some effect on its iron core.`,
     output: [
       { naam: "Magnetisme", naam_en: "Magnetism", icoon: "icons/Magnetisme.png", map: "Krachten",
+        geluid: "sound/Druk.mp3", 
         quote: `Electricity and magnetism are those forces of nature by which people who know nothing about electricity
         and magnetism can explain everything
         <br><br>- Egon Friedell`
