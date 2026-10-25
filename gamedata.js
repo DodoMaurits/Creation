@@ -529,6 +529,7 @@ const combinaties = [
     tijd: 4_400_000_000,
     output: [
       { naam: "Platentektoniek", naam_en: "Plate tectonics", icoon: "icons/Platentektoniek.png", map: "Krachten",
+        geluid: "sound/Aardbeving.mp3", 
         quote: `Loyalties shifting like the earth's tectonic plates ... changing my loves shape 
         <br><br>- Ranata Suzuki`
       },
