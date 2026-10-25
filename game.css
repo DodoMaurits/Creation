@@ -1266,47 +1266,47 @@ body.result-open #corner-controls {
 }
 
 .info-text {
-  max-height: 60dvh;
   position: relative;
-  display: grid;
   font-size: 28px;
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
   hyphens: auto;
   -webkit-hyphens: auto;
-  overflow-y: auto;
   overflow-wrap: break-word;
-  scrollbar-width: none;
+  height: 0; 
+  transition: height 0.8s ease;
   animation: infoSway 6s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .info-text span {
-  grid-area: 1 / 1;
-  justify-self: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   will-change: transform, opacity;
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .info-text span.span-zichtbaar {
   visibility: visible;
-  animation: spanVerschijn 0.6s ease forwards,
-             swayLeft 10s ease-in-out 0.6s infinite alternate;
+  animation: spanVerschijn 1.2s ease forwards,
+             swayLeft 10s ease-in-out 1.2s infinite alternate;
 }
 
 .info-text span.span-uit {
   visibility: visible;
-  animation: spanVerdwijn 0.4s ease forwards;
+  animation: spanVerdwijn 0.8s ease forwards;
 }
 
 @keyframes spanVerschijn {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes spanVerdwijn {
   from { opacity: 1; transform: translateY(0); }
-  to   { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 0; transform: translateY(-14px); }
 }
 
 .info-text span:nth-child(even).span-zichtbaar {
