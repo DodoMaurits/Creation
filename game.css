@@ -1291,7 +1291,7 @@ body.result-open #corner-controls {
 .info-text span.span-zichtbaar {
   visibility: visible;
   animation: spanVerschijn 1.2s ease forwards,
-             swayLeft 5s ease-in-out 1.2s infinite alternate;
+             swayLeft 10s ease-in-out 1.2s infinite alternate;
 }
 
 .info-text span.span-uit {
@@ -1314,15 +1314,15 @@ body.result-open #corner-controls {
 }
 
 @keyframes swayLeft {
-  0%   { transform: translateX(-6px); }
-  50%  { transform: translateX(6px); }
-  100% { transform: translateX(-6px); }
+  0%   { translate: -6px 0; }
+  50%  { translate: 6px 0; }
+  100% { translate: -6px 0; }
 }
 
 @keyframes swayRight {
-  0%   { transform: translateX(6px); }
-  50%  { transform: translateX(-6px); }
-  100% { transform: translateX(6px); }
+  0%   { translate: 6px 0; }
+  50%  { translate: -6px 0; }
+  100% { translate: 6px 0; }
 }
 
 @keyframes infoSway {
