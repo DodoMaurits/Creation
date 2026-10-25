@@ -7798,7 +7798,7 @@ const combinaties = [
     vers: `Uit haar buik komt een drank van verschillende kleuren, <br>daarin is genezing voor de mens, aldus zit daarin
     zeker een teken <br>voor de mensen die nadenken <br><br>De Bij (16:69)`,
     vers_en: `From their belly comes a drink of various colours <br>in which there is healing for mankind, indeed,
-    in this there is a sign <br>for people who contemplate <br><br>The Bee (16:69)`,
+    <br>in this there is a sign for people who contemplate <br><br>The Bee (16:69)`,
     output: [
       { naam: "Honing", naam_en: "Honey", icoon: "icons/Honing.png", map: "Genotwaren", 
         quote: `Honey is the only food which includes all the substances necessary to sustain life, including enzymes, 
