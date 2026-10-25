@@ -876,17 +876,17 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
     0 15px 45px rgba(0,0,0,0.7),
     inset 0 0 0 1px rgba(255,255,255,0.08);
   animation: infoFade 0.25s ease;
-  font-family: "Georgia", serif;
+  font-family: "Roboto Slab", serif;
   line-height: 1.6;
 }
 
 .info-popup-title {
-  font-family: "Cinzel", serif;
-  font-size: 34px;
-  margin-bottom: 24px;
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "Alegreya Slab", serif;
+  margin-bottom: 12px;
   text-align: center;
-  color: #e6d3a3;
-  animation: titleFloat 6s ease-in-out infinite;
+  color: white;
 }
 
 @keyframes titleFloat {
@@ -896,12 +896,16 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 
 .info-popup-text {
-  font-size: 16px;
-  color: #e8e8e8;
-  text-align: justify;
+  font-size: 28px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
   hyphens: auto;
-  margin-left: 20px;
-  margin-right: 20px;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
+  color: white;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @keyframes infoFade {
@@ -1800,8 +1804,12 @@ body.result-open #corner-controls {
               padding: 24px 20px;
             }
           
+            .info-popup-title {
+              font-size: 22px;
+            }
             .info-popup-text {
-              font-size: 10px;
+              font-size: 16px;
+              line-height: 1.5;
             }
 
             /* ---------------- THRESHOLD / UITLEG BOX ---------------- */
