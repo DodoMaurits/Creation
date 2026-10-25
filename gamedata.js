@@ -601,7 +601,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Druk", naam_en: "Pressure", icoon: "icons/Druk.png", map: "Krachten", 
-        geluid: "sound/AngelHoog.wav",
+        geluid: "sound/Druk.mp3",
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
         pressure (e.g. air pressure) is exerted inwards from all directions equally 
         <br><br>- Viktor Schawberger`
@@ -649,6 +649,7 @@ const combinaties = [
     <br><br>The Prophets (21:31)`,
     output: [
       { naam: "Berg", naam_en: "Mountain", icoon: "icons/Berg.png", map: "Landschap",
+        geluid: "sound/Berg.mp3",
         quote: `Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain 
         <br><br>- Sun Tzu`
       }
