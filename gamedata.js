@@ -673,6 +673,7 @@ const combinaties = [
         <br><br>- A.J. Grenville`
       },
       { naam: "Kwarts", naam_en: "Quartz", icoon: "icons/Kwarts.png", map: "Aarde",
+        geluid: "sound/Kwik.mp3", 
         quote: `Quartz is as hard as anything it is likely to meet with in use 
         <br><br>- Frank Wade`
       },
@@ -1771,6 +1772,7 @@ const combinaties = [
     hint_en: `The most beautiful stone is formed under high pressure and heat.`,
     output: [
       { naam: "Kwartsiet", naam_en: "Quartzite", icoon: "icons/Kwartsiet.png", map: "Aarde", 
+        geluid: "sound/Kwik.mp3", 
         quote: `The conversion of sandstone into quartzite is sometimes the work of percolating water
         under ordinary conditions 
         <br><br>- John Flett`
@@ -1809,6 +1811,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kwarts", naam_en: "Quartz", icoon: "icons/Kwarts.png", map: "Aarde", 
+        geluid: "sound/Kwik.mp3", 
         quote: `Quartz is as hard as anything it is likely to meet with in use 
         <br><br>- Frank Wade`
       }
