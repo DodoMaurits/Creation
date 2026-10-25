@@ -469,9 +469,10 @@ const combinaties = [
     hint_en: `Even the fire of lava must come to rest some day...`,
     output: [
       { naam: "Graniet", naam_en: "Granite", icoon: "icons/Graniet.png", map: "Aarde",
-      quote: `The block of granite which was an obstacle in the pathway of the weak,
-      became a stepping-stone in the pathway of the strong 
-      <br><br>- Thomas Carlyle`
+        geluid: "sound/Berg.mp3",
+        quote: `The block of granite which was an obstacle in the pathway of the weak,
+        became a stepping-stone in the pathway of the strong 
+        <br><br>- Thomas Carlyle`
       },
       { naam: "Basalt", naam_en: "Basalt", icoon: "icons/Basalt.png", map: "Aarde",
         quote: `Everything changes, even stone 
@@ -523,6 +524,7 @@ const combinaties = [
     hint_en: `Stone becomes more compact under pressure and heat, so does granite.`,
     output: [
       { naam: "Gneis", naam_en: "Gneiss", icoon: "icons/Gneis.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Geologists have a saying - rocks remember 
         <br><br>- Neil Armstrong`
       }
@@ -693,6 +695,7 @@ const combinaties = [
         <br><br>- Charles Reade`
       },
       { naam: "Veldspaat", naam_en: "Feldspar", icoon: "icons/Veldspaat.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Even the hardest rock can be worn away by water 
         <br><br>- Lucretius`
       }
@@ -933,6 +936,7 @@ const combinaties = [
         <br><br>- Napoleon Hill`
       },
       { naam: "Basalt", naam_en: "Basalt", icoon: "icons/Basalt.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Everything changes, even stone 
         <br><br>- Claude Monet`
       }
@@ -998,6 +1002,7 @@ const combinaties = [
     hint_en: `Ashes? Just keep it moist, it will create something on its own`, 
     output: [
       { naam: "Tufsteen", naam_en: "Tuff", icoon: "icons/Tufsteen.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Life is not tough as rocks, it is as simple as your brain perceives 
         <br><br>- Myra Yadav`
       }
@@ -1150,6 +1155,7 @@ const combinaties = [
     hint_en: `Making stones out of clay? Why not.`,
     output: [
       { naam: "Kleisteen", naam_en: "Claystone", icoon: "icons/Kleisteen.png", map: "Aarde",
+        geluid: "sound/Berg.mp3",
         quote: `Everything changes, even stone 
         <br><br>- Claude Monet`
       }
@@ -1264,6 +1270,7 @@ const combinaties = [
     hint_en: `Hm.. can you think of another rock being able to undergo metamorphosis due to pressure and heat?`,
     output: [
       { naam: "Schalie", naam_en: "Shale", icoon: "icons/Schalie.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `In the structure of shale we read the operations of water and the lapse of time 
         <br><br>- James Hutton`
       }
@@ -1290,6 +1297,7 @@ const combinaties = [
         <br><br>- Pythagoras`
       },
       { naam: "Gipssteen", naam_en: "Gypsum stone", icoon: "icons/Gipssteen.png", map: "Aarde",
+        geluid: "sound/Berg.mp3",
         quote: `Rocks are the books of the earth 
         <br><br>- Charles Lyell`
       },
@@ -1570,6 +1578,7 @@ const combinaties = [
     hint_en: `Do not suppress, only with shale.`,
     output: [
       { naam: "Leisteen", naam_en: "Slate", icoon: "icons/Leisteen.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `The slates of Wales furnish one of the most striking examples of cleavage produced by pressure 
         <br><br>- Archibald Geikie`
       }
@@ -1607,6 +1616,7 @@ const combinaties = [
     hint_en: `Salt can also sink through the ground, and then it becomes heavy.`,
     output: [
       { naam: "Steenzout", naam_en: "Rock salt", icoon: "icons/Steenzout.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Salt is the only rock directly consumed by man 
         <br><br>- Margaret Visser`
       }
@@ -1650,6 +1660,7 @@ const combinaties = [
     hint_en: `At the high rock.. watch out that you don't fall off the edge of the world!`,
     output: [
       { naam: "Klif", naam_en: "Cliff", icoon: "icons/Klif.png", map: "Landschap", 
+        geluid: "sound/Berg.mp3",
         quote: `Be like the cliff against which the waves continually break; but it stands firm and tames the fury
         of the water around it
         <br><br>- Marcus Aurelius`
@@ -1723,6 +1734,7 @@ const combinaties = [
     hint_en: `What can turn into stone over time...`,
     output: [
       { naam: "Zandsteen", naam_en: "Sandstone", icoon: "icons/Zandsteen.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Write your worries in the sand, carve your blessings in stone 
         <br><br>- Robert Kennedy`
       }
@@ -1738,6 +1750,7 @@ const combinaties = [
     hint_en: `Calcifying to the every bone... turning back into stone.`,
     output: [
       { naam: "Kalksteen", naam_en: "Limestone", icoon: "icons/Kalksteen.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `If by some fiat I had to restrict all this writing to one sentence, this is the one I would choose: 
         The summit of Mt. Everest is marine limestone 
         <br><br>- John McPhee`
@@ -1752,6 +1765,7 @@ const combinaties = [
     hint_en: `Under high pressure, everything becomes... solid?`,
     output: [
       { naam: "Fylliet", naam_en: "Phyllite", icoon: "icons/Fylliet.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Phyllite shows a silky sheen due to the minute scales of mica developed by metamorphism 
         <br><br>- Rollin Salisbury`
       }
@@ -1807,6 +1821,7 @@ const combinaties = [
     hint_en: `My favourite stone is yet to come.. and its colour is white.`,
     output: [
       { naam: "Marmer", naam_en: "Marble", icoon: "icons/Marmer.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `The marble not yet carved can hold the form of every thought the greatest artist has 
         <br><br>- Michelangelo`
       }
@@ -1898,6 +1913,7 @@ const combinaties = [
     hint_en: `Phyllite is merely an intermediate stage.. there is more to come.`,
     output: [
       { naam: "Schist", naam_en: "Schist", icoon: "icons/Schist.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `The schist is contorted, glittering with mica, a record of heat and pressure beyond imagination 
         <br><br>- John McPhee`
       }
