@@ -2751,12 +2751,12 @@ const combinaties = [
     hint: `Wat leven wel niet met een beetje kalk kan doen...`,
     hint_en: `Just look at what a little lime can do for life...`,
     vers: `Toen maakten Wij van de Druppel een Bloedklodder, daarna maakten Wij van de Bloedklodder een kneedbaar klompje,
-    daarna maakten Wij van het kneedbaar klompje Botten, daarna bekleedden Wij de Botten met Vlees, toen lieten Wij het 
-    groeien tot een nieuwe Creatie
+    daarna maakten Wij van het kneedbaar klompje Botten, daarna bekleedden Wij de Botten met Vlees, <br>toen lieten Wij 
+    het groeien tot een nieuwe Creatie
     <br><br>De Gelovigen (23:14)`,
     vers_en: `Then We fashioned the drop into a clot of blood, then We fashioned the clot of blood into a lump of flesh,
-    then We fashioned the lump of flesh into bones, then We covered the bones with flesh, and then We developed it into
-    a new Creation.
+    then We fashioned the lump of flesh into bones, then We covered the bones with flesh, <br>and then We developed it 
+    into a new Creation.
     <br><br>The Believers (23:14)`,
     output: [
       { naam: "Bot", naam_en: "Bone", icoon: "icons/Bot.png", map: "Biologie", 
