@@ -601,6 +601,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Druk", naam_en: "Pressure", icoon: "icons/Druk.png", map: "Krachten", 
+        geluid: "sound/AngelHoog.wav",
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
         pressure (e.g. air pressure) is exerted inwards from all directions equally 
         <br><br>- Viktor Schawberger`
