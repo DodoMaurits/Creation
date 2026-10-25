@@ -3374,10 +3374,6 @@ const combinaties = [
       ["Inktvissen", "Clownvissen"], ["Inktvissen", "Doktersvissen"], ["Inktvissen", "Zalm"], ["Inktvissen", "Haring"],
       ["Inktvissen", "Makreel"], ["Inktvissen", "Paling"], ["Inktvissen", "Zeepaardjes"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     hint: `Sommige dieren kunnen elkaars bloed wel drinken..`,
     hint_en: `Between certain animals, you will find bad blood..`,
     output: [
@@ -3854,6 +3850,10 @@ const combinaties = [
     input: [/* Bloed */
       ["Zeeschorpioenen", "Agnathen"], ["Zeeschorpioenen", "Oerstraalvinnigen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Zeeschorpioenen", naam_en: "Sea scorpions", icoon: "icons/Zeeschorpioenen.png", map: "Geleedpotigen", 
         quote: `Some eurypterids reached enormous size, with powerful appendages adapted for grasping and cutting prey
@@ -4215,12 +4215,12 @@ const combinaties = [
   },
   {
     input: ["Oerstraalvinnigen", "Agnathen"],
+    hint: `Sommige dieren kunnen elkaars bloed wel drinken..`,
+    hint_en: `Between certain animals, you will find bad blood..`,
     vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
     <br><br>De Bloedklodder (96:1-2)`,
     vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
     <br><br>The Clot of Blood (96:1-2)`,
-    hint: `Sommige dieren kunnen elkaars bloed wel drinken..`,
-    hint_en: `Between certain animals, you will find bad blood..`,
     output: [
       { naam: "Oerstraalvinnigen", naam_en: "Uractinopterygians", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
         quote: `In order to see a fish you must watch the water
@@ -5702,6 +5702,10 @@ const combinaties = [
     input: [/* Bloed */
       ["Oertetrapoden", "Agnathen"], ["Oertetrapoden", "Oerstraalvinnigen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oertetrapoden", naam_en: "Urtetrapods", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
         quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
@@ -7088,6 +7092,10 @@ const combinaties = [
       /* --- PRIMATEN --- */
       ["Oermaniraptoren", "Oerprimaten"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
@@ -7198,6 +7206,10 @@ const combinaties = [
       ["Tyrannosauriërs", "Oermaniraptoren"], ["Tyrannosauriërs", "Sauropoden"], ["Tyrannosauriërs", "Stegosauriërs"],
       ["Tyrannosauriërs", "Gekko's"], ["Tyrannosauriërs", "Leguanen"], ["Tyrannosauriërs", "Krokodillen"]
     ],
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Tyrannosauriërs", naam_en: "Tyrannosaurs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
         geluid: "Dinosaurus.m4a",
@@ -7300,10 +7312,6 @@ const combinaties = [
       ["Karpers", "Octopussen"], ["Forel", "Octopussen"], ["Meervallen", "Octopussen"], 
       ["Zeepaardjes", "Octopussen"], ["Piranha", "Octopussen"], ["Goudvissen", "Octopussen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Octopussen", naam_en: "Octopuses", icoon: "icons/Octopussen.png", map: "Waterdieren", 
         quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
@@ -7545,10 +7553,6 @@ const combinaties = [
       ["Zeeduivels", "Meervallen"], ["Zeeduivels", "Paling"], ["Zeeduivels", "Zeepaardjes"], ["Zeeduivels", "Piranha"], 
       ["Zeeduivels", "Goudvissen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen",
         geluid: "sound/Oceaan.m4a",
@@ -8833,10 +8837,6 @@ const combinaties = [
       ["Reuzeninktvissen", "Tonijn"], ["Reuzeninktvissen", "Zalm"], ["Reuzeninktvissen", "Haring"],
       ["Reuzeninktvissen", "Makreel"], ["Reuzeninktvissen", "Forel"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Reuzeninktvissen", naam_en: "Giant squids", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
         geluid: "sound/Oceaan.m4a",
@@ -10004,10 +10004,6 @@ const combinaties = [
       ["Koraalduivels", "Doktersvissen"], ["Koraalduivels", "Papegaaivissen"], ["Koraalduivels", "Zeepaardjes"],
       ["Koraalduivels", "Goudvissen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Koraalduivels", naam_en: "Lionfish", icoon: "icons/Koraalduivels.png", map: "Vissen", 
         quote: `The lionfish is a striking predator, equipped with venomous spines and elaborate fins that make it both
@@ -10096,10 +10092,6 @@ const combinaties = [
       ["Piranha", "Karpers"], ["Piranha", "Snoeken"], ["Piranha", "Forel"], ["Piranha", "Meervallen"], 
       ["Piranha", "Paling"], ["Piranha", "Goudvissen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Piranha", naam_en: "Piranhas", icoon: "icons/Piranha.png", map: "Vissen", 
         quote: `In the Amazon River system, piranhas are far more often scavengers and opportunists than the fearsome 
@@ -17014,10 +17006,6 @@ const combinaties = [
       ["Bultruggen", "Goudvissen"], ["Bultruggen", "Zalm"], ["Bultruggen", "Haring"], ["Bultruggen", "Makreel"],
       ["Bultruggen", "Forel"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Bultruggen", naam_en: "Humpback whales", icoon: "icons/Bultruggen.png", map: "Waterdieren", 
         quote: `The songs of the humpback whale are the most evocative, most beautiful sounds made by any animal on Earth
@@ -17071,10 +17059,6 @@ const combinaties = [
     input: /* BLOED */
       /* --- WATERDIEREN --- */
       ["Grijze walvissen", "Inktvissen"],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Grijze walvissen", naam_en: "Gray whales", icoon: "icons/Grijze walvissen.png", map: "Waterdieren", 
         quote: `Gray whales undertake one of the longest annual migrations of any mammal
@@ -17140,10 +17124,6 @@ const combinaties = [
       /* --- CARNIVOREN --- */
       ["Orka", "Walrussen"], ["Orka", "Zeehonden"], ["Orka", "Zeeleeuwen"], ["Orka", "Otters"], ["Orka", "IJsberen"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Orka", naam_en: "Orcas", icoon: "icons/Orka.png", map: "Waterdieren", 
         quote: `Orcas exhibit culturally transmitted behaviors, including hunting techniques that are passed across 
@@ -17206,10 +17186,6 @@ const combinaties = [
       ["Narwallen", "Agnathen"], ["Narwallen", "Platvissen"], ["Narwallen", "Kabeljauwen"], ["Narwallen", "Paling"], 
       ["Narwallen", "Haring"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Narwallen", naam_en: "Narwhals", icoon: "icons/Narwallen.png", map: "Waterdieren", 
         quote: `The narwhal tusk is a sensory organ with millions of nerve endings
@@ -17276,10 +17252,6 @@ const combinaties = [
       ["Dolfijnen", "Goudvissen"], ["Dolfijnen", "Coelacanten"], ["Dolfijnen", "Zalm"], ["Dolfijnen", "Haring"],
       ["Dolfijnen", "Makreel"], ["Dolfijnen", "Forel"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Dolfijnen", naam_en: "Dolphins", icoon: "icons/Dolfijnen.png", map: "Waterdieren", 
         quote: `Dolphins demonstrate advanced cognitive abilities, including self-recognition and cultural learning
@@ -17380,10 +17352,6 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Blauwe vinvissen", "Haring"], ["Blauwe vinvissen", "Makreel"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Blauwe vinvissen", naam_en: "Blue whales", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
         geluid: "sound/Oceaan.m4a",
@@ -17442,10 +17410,6 @@ const combinaties = [
       ["Potvissen", "Zeeduivels"], ["Potvissen", "Platvissen"], ["Potvissen", "Vliegende vissen"], 
       ["Potvissen", "Spookhaaien"], ["Potvissen", "Coelacanten"]
     ],
-    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
-    <br><br>De Bloedklodder (96:1-2)`,
-    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
-    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Potvissen", naam_en: "Sperm whales", icoon: "icons/Potvissen.png", map: "Waterdieren", 
         geluid: "sound/Oceaan.m4a",
