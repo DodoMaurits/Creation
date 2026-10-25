@@ -1240,7 +1240,7 @@ const combinaties = [
     hint_en: `I have to sigh because of the varying temperatures in the air.`,
     output: [
       { naam: "Wind", naam_en: "Wind", icoon: "icons/Wind.png", map: "Lucht", 
-        geluid: "sound/Wind.mp3", 
+        geluid: "sound/WindGroot.mp3", 
         quote: `Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating: there is really 
         no such thing as bad weather, only different kinds of good weather 
         <br><br>- John Ruskin`
