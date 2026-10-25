@@ -6591,7 +6591,7 @@ const combinaties = [
         <br><br>- David Attenborough`
       },
       { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
-        geluid: "Dinosaurus.m4a",
+        geluid: "sound/Dinosaurus.m4a",
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       }
@@ -6811,7 +6811,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
-        geluid: "Dinosaurus.m4a",
+        geluid: "sound/Dinosaurus.m4a",
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       },
@@ -6837,7 +6837,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
-        geluid: "Dinosaurus.m4a",
+        geluid: "sound/Dinosaurus.m4a",
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       },
@@ -7063,7 +7063,7 @@ const combinaties = [
         <br><br>- Peter Galton`
       },
       { naam: "Tyrannosauriërs", naam_en: "Tyrannosaurs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
-        geluid: "Dinosaurus.m4a",
+        geluid: "sound/Dinosaurus.m4a",
         quote: `Tyrannosaurs were the apex predators of their time, with massive skulls, powerful jaws, and a body built 
         for both hunting and intimidation
         <br><br>- Jack Horner`
@@ -7296,7 +7296,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Tyrannosauriërs", naam_en: "Tyrannosaurs", icoon: "icons/Tyrannosauriërs.png", map: "Reptielen", 
-        geluid: "Dinosaurus.m4a",
+        geluid: "sound/Dinosaurus.m4a",
         quote: `Tyrannosaurs were the apex predators of their time, with massive skulls, powerful jaws, and a body built 
         for both hunting and intimidation
         <br><br>- Jack Horner`
