@@ -181,6 +181,7 @@ const combinaties = [
     hint_en: `Brrr.. you know, below zero degrees Celsius, you will be frozen`,
     output: [
       { naam: "IJs", naam_en: "Ice", icoon: "icons/IJs.png", map: "Water",
+        geluid: "sound/IJs.mp3",
         quote: `Just as when water is frozen in to a form as ice and then melts so at the time of death, 
         there is no death. The spirit simply changes form
         <br><br>- Frederick Lenz`
@@ -231,8 +232,9 @@ const combinaties = [
     hint_en: `... ... ... BOOM!`,
     output: [
       { naam: "Explosie", naam_en: "Explosion", icoon: "icons/Explosie.png", map: "Vuur",
-      quote: `As in an explosion, I would erupt with all the wonderful things I saw and understood in this world
-      <br><br>- Boris Pasternak`
+        geluid: "sound/Explosie.mp3",
+        quote: `As in an explosion, I would erupt with all the wonderful things I saw and understood in this world
+        <br><br>- Boris Pasternak`
       }
     ]
   },
@@ -351,6 +353,7 @@ const combinaties = [
     hint_en: `Wow.. a spectacular collision turns everything into flames and liquid...`,
     output: [
       { naam: "Vuur", naam_en: "Fire", icoon: "icons/Vuur.png", map: "Vuur",
+        geluid: "sound/Vuur.mp3", 
         quote: `Tampering with fire will burn you, even in the coldest regions 
         <br><br>- H.S. Crow`
       },
@@ -626,6 +629,7 @@ const combinaties = [
     hint_en: `Lava moves, so just let it flow upwards...`,
     output: [
       { naam: "Vulkaan", naam_en: "Volcano", icoon: "icons/Vulkaan.png", map: "Landschap",
+        geluid: "sound/Vuur.mp3", 
         quote: `Remind me that the most fertile lands were built by the fires of volcanoes 
         <br><br>- Andrea Gibson`
       },
@@ -687,6 +691,7 @@ const combinaties = [
     hint_en: `Under pressure, basalt logically undergoes a metamorphosis.`,
     output: [
       { naam: "Jade", naam_en: "Jade", icoon: "icons/Jade.png", map: "Aarde",
+        geluid: "sound/Kwik.mp3", 
         quote: `The gentleman compares his virtue to jade
         <br><br>- Confucius`
       }
@@ -753,6 +758,7 @@ const combinaties = [
         <br><br>- Helen Keller`
       },
       { naam: "Goud", naam_en: "Gold", icoon: "icons/Goud.png", map: "Chemie", 
+        geluid: "sound/Kwik.mp3", 
         quote: `Praise, like gold and diamonds, owes its value only to its scarcity 
         <br><br>- Samuel Johnson`
       },
@@ -776,6 +782,7 @@ const combinaties = [
     hint_en: `A rather remarkable substance arises when sulfur is stirred into the chemical soup of magma vapour.`,
     output: [
       { naam: "Kwik", naam_en: "Mercury", icoon: "icons/Kwik.png", map: "Chemie", 
+        geluid: "sound/Kwik.mp3", 
         quote: `Mercury contains all that the Sages seek; it dissolves, softens, and extracts the soul from the body
         <br><br>- Edward Kelley`
       }
@@ -791,6 +798,7 @@ const combinaties = [
     tijd: 4_400_000_000,
     output: [
       { naam: "Water", naam_en: "Water", icoon: "icons/Water.png", map: "Water",
+        geluid: "sound/Golf.wav",
         quote: `Water is the softest thing, yet it can penetrate mountains and earth. 
         This shows clearly the principle of softness overcoming hardness 
         <br><br>- Lao Tzu`
@@ -942,6 +950,7 @@ const combinaties = [
     hint_en: `So many sparkles... is it still obsidian? Or am I looking right through it?`,
     output: [
       { naam: "Glas", naam_en: "Glass", icoon: "icons/Glas.png", map: "Aarde", 
+        geluid: "sound/Glas.mp3",
         quote: `Some days seem to fit together like a stained glass window. A hundred little pieces of different color 
         and mood that, when combined, create a complete picture 
         <br><br>- Maggie Stiefvater`
@@ -961,6 +970,7 @@ const combinaties = [
     hint_en: `The visible influence of the Moon lies in the tides`,
     output: [
       { naam: "Golf", naam_en: "Wave", icoon: "icons/Golf.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `You don't understand. You're not a wave. You're part of the ocean 
         <br><br>- Morrie Schwartz`
       }
@@ -1016,6 +1026,7 @@ const combinaties = [
     hint_en: `The more water, the better.`,
     output: [
       { naam: "Meer", naam_en: "Lake", icoon: "icons/Meer.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `Make your heart like a lake <br>with a calm, still surface and great depths of kindness
         <br><br>- Lao Tzu`
       }
@@ -1072,6 +1083,7 @@ const combinaties = [
     hint_en: `Water on land might silt up...`,
     output: [
       { naam: "Ven", naam_en: "Wetland", icoon: "icons/Ven.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `Feather footed through the plashy fen passes the questing vole 
         <br><br>- Evelyn Waugh`
       }
@@ -1097,6 +1109,7 @@ const combinaties = [
     hint_en: `So many sparkles... is it still tuff? Or am I looking right through it`, 
     output: [
       { naam: "Glas", naam_en: "Glass", icoon: "icons/Glas.png", map: "Aarde", 
+        geluid: "sound/Glas.mp3",
         quote: `Some days seem to fit together like a stained glass window. 
         A hundred little pieces of different color and mood that, when combined, create a complete picture 
         <br><br>- Maggie Stiefvater`
@@ -1132,6 +1145,7 @@ const combinaties = [
     hint_en: `More water? Or a sea of water...`,
     output: [
       { naam: "Zee", naam_en: "Sea", icoon: "icons/Zee.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `Water is the driving force of all nature
         <br><br>- Leonardo da Vinci`
       }
@@ -1201,6 +1215,7 @@ const combinaties = [
     hint_en: `I have to sigh because of the varying temperatures in the air.`,
     output: [
       { naam: "Wind", naam_en: "Wind", icoon: "icons/Wind.png", map: "Lucht", 
+        geluid: "sound/Wind.mp3", 
         quote: `Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating: there is really 
         no such thing as bad weather, only different kinds of good weather 
         <br><br>- John Ruskin`
@@ -1215,6 +1230,7 @@ const combinaties = [
     hint_en: `In the driest areas, water sometimes simply emerges from the ground.`,
     output: [
       { naam: "Oase", naam_en: "Oasis", icoon: "icons/Oase.png", map: "Landschap", 
+        geluid: "sound/Golf.wav",
         quote: `All that the historians give us are little oases in the desert of time, and we linger fondly in these,
         forgetting the vast tracks between one and another that were trodden by the weary generations of men
         <br><br>- J.A. Spender`
@@ -1270,6 +1286,7 @@ const combinaties = [
     hint_en: `A special place is where the mountain meets the water..`,
     output: [
       { naam: "Kust", naam_en: "Coast", icoon: "icons/Kust.png", map: "Landschap", 
+        geluid: "sound/Golf.wav",
         quote: `Because there's nothing more beautiful than the way the ocean refuses to stop kissing the shoreline, 
         no matter how many times it's sent away 
         <br><br>- Sarah Kay`
@@ -1284,6 +1301,7 @@ const combinaties = [
     hint_en: `One needs more sea, if one would like to take shelter.`,
     output: [
       { naam: "Oceaan", naam_en: "Ocean", icoon: "icons/Oceaan.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `Individually, we are one drop. Together, we are an ocean 
         <br><br>- Ryunosuke Akutagawa`
       }
@@ -1339,6 +1357,7 @@ const combinaties = [
     hint_en: `Mountains could be slides from the cluods to the sea...`,
     output: [
       { naam: "Rivier", naam_en: "River", icoon: "icons/Rivier.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `No man ever steps in the same river twice, for it's not the same river and he's not the same man 
         <br><br>- Heraclitus`
       }
@@ -1388,6 +1407,7 @@ const combinaties = [
     hint_en: `Look.. if the rain is acidic enough, it will naturally loosen some elements.`,
     output: [
       { naam: "Glas", naam_en: "Glass", icoon: "icons/Glas.png", map: "Aarde",
+        geluid: "sound/Glas.mp3",
         quote: `Some days seem to fit together like a stained glass window. A hundred little pieces of different color 
         and mood that, when combined, create a complete picture 
         <br><br>- Maggie Stiefvater`
@@ -1455,6 +1475,7 @@ const combinaties = [
     hint_en: `Look.. if the rain is acidic enough, it will naturally loosen some elements.`,
     output: [
       { naam: "Glas", naam_en: "Glass", icoon: "icons/Glas.png", map: "Aarde", 
+        geluid: "sound/Glas.mp3",
         quote: `Some days seem to fit together like a stained glass window. A hundred little pieces of different color 
         and mood that, when combined, create a complete picture 
         <br><br>- Maggie Stiefvater`
@@ -1577,6 +1598,7 @@ const combinaties = [
     hint_en: `Do you know those salty lakes along the coast?`,
     output: [
       { naam: "Lagune", naam_en: "Lagoon", icoon: "icons/Lagune.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `Out to sea, the calm lagoon waters were darkening, while the commets overhead glowed brighter, omens 
         in the gloaming
         <br><br>- Julian May`
@@ -1618,6 +1640,7 @@ const combinaties = [
     hint_en: `Worn stone along the coast can erode into soft ground.`,
     output: [
       { naam: "Strand", naam_en: "Beach", icoon: "icons/Strand.png", map: "Landschap", 
+        geluid: "sound/Golf.wav",
         quote: `At the beach, life is different. Time doesn't move hour to hour but mood to moment. 
         We live by the currents, plan by the tides, and follow the sun 
         <br><br>- Sandy Gingras`
@@ -1632,6 +1655,7 @@ const combinaties = [
     hint_en: `Does the weather take a turn? Than the coast will be the first to suffer...`,
     output: [
       { naam: "Overstroming", naam_en: "Flood", icoon: "icons/Overstroming.png", map: "Water", 
+        geluid: "sound/Golf.wav",
         quote: `Great floods have flown from simple sources 
         <br><br>- William Shakespeare`
       }
@@ -1654,6 +1678,7 @@ const combinaties = [
     input: ["Rivier", "Basalt"],
     output: [
       { naam: "Goud", naam_en: "Gold", icoon: "icons/Goud.png", map: "Chemie", 
+        geluid: "sound/Kwik.mp3", 
         quote: `Praise, like gold and diamonds, owes its value only to its scarcity 
         <br><br>- Samuel Johnson`
       },
@@ -1717,6 +1742,7 @@ const combinaties = [
     hint_en: `Don't let the water spill over the edge..`,
     output: [
       { naam: "Waterval", naam_en: "Waterfall", icoon: "icons/Waterval.png", map: "Landschap", 
+        geluid: "sound/Golf.wav",
         quote: `As long as I live, I'll hear waterfalls and birds and winds sing... I'll acquaint myself with the glaciers
         and wild gardens, and get as near the heart of the world as I can
         <br><br>- John Muir`
@@ -6067,6 +6093,7 @@ const combinaties = [
     hint_en: `Along with the first forests, the first forest fires emerged as well.`,
     output: [
       { naam: "Brand", naam_en: "Forest fire", icoon: "icons/Brand.png", map: "Vuur", 
+        geluid: "sound/Vuur.mp3", 
         quote: `No time to grieve for roses when the forests are burning
         <br><br>- Zbigniew Herbert`
       }
@@ -7252,6 +7279,7 @@ const combinaties = [
         <br><br>- Anita Sams`
       },
       { naam: "Archaeopteryx", naam_en: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
+        geluid: "sound/Archaeopteryx.mp3",
         quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
         wings, and a skeletal form that could take to the air
         <br><br>- Alan Feduccia`
@@ -7277,6 +7305,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Archaeopteryx", naam_en: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
+        geluid: "sound/Archaeopteryx.mp3",
         quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
         wings, and a skeletal form that could take to the air
         <br><br>- Alan Feduccia`
@@ -7304,6 +7333,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Archaeopteryx", naam_en: "Archaeopteryx", icoon: "icons/Archaeopteryx.png", map: "Vogels", 
+        geluid: "sound/Archaeopteryx.mp3",
         quote: `Archaeopteryx shows us that the boundary between dinosaurs and birds was once blurred, with feathers, 
         wings, and a skeletal form that could take to the air
         <br><br>- Alan Feduccia`
@@ -10025,6 +10055,7 @@ const combinaties = [
     tijd: 60_000_000,
     output: [
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        geluid: "sound/Pinguïns.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
@@ -10045,6 +10076,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        geluid: "sound/Pinguïns.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
@@ -10069,6 +10101,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        geluid: "sound/Pinguïns.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
@@ -10095,6 +10128,7 @@ const combinaties = [
     tijd: 45_000_000,
     output: [
       { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
+        geluid: "sound/Uilen.mp3", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       }
@@ -10114,6 +10148,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
+        geluid: "sound/Uilen.mp3", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       },
@@ -10140,6 +10175,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
+        geluid: "sound/Uilen.mp3", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       },
@@ -10165,11 +10201,13 @@ const combinaties = [
     tijd: 20_000_000,
     output: [
       { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
+        geluid: "sound/Duiven.mp3",
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
       },
       { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        geluid: "sound/Arenden.mp3",
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       }
@@ -10201,6 +10239,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
+        geluid: "sound/Duiven.mp3",
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
@@ -10223,6 +10262,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        geluid: "sound/Arenden.mp3",
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       },
@@ -10267,6 +10307,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        geluid: "sound/Arenden.mp3",
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       },
@@ -10294,6 +10335,7 @@ const combinaties = [
     tijd: 15_000_000,
     output: [
       { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
+        geluid: "sound/Eenden.mp3",
         quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
         <br><br>- Wangari Maathai`
       },
@@ -10359,6 +10401,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
+        geluid: "sound/Eenden.mp3",
         quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
         <br><br>- Wangari Maathai`
       },
@@ -10382,6 +10425,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
+        geluid: "sound/Eenden.mp3",
         quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
         <br><br>- Wangari Maathai`
       },
@@ -10522,14 +10566,17 @@ const combinaties = [
     tijd: 20_000_000,
     output: [
       { naam: "Zwaluwen", naam_en: "Swallows", icoon: "icons/Zwaluwen.png", map: "Vogels", 
+        geluid: "sound/Zwaluwen.mp3", 
         quote: `The swallow carries the scent of distant gardens across skies that never remain the same
         <br><br>- Rumi`
       },
       { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        geluid: "sound/Arenden.mp3",
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       },
       { naam: "Spreeuwen", naam_en: "Starlings", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+        geluid: "sound/Spreeuwen.mp3", 
         quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
         <br><br>- Giorgio Parisi`
       }
@@ -10552,6 +10599,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zwaluwen", naam_en: "Swallows", icoon: "icons/Zwaluwen.png", map: "Vogels", 
+        geluid: "sound/Zwaluwen.mp3", 
         quote: `The swallow carries the scent of distant gardens across skies that never remain the same
         <br><br>- Rumi`
       },
@@ -10614,6 +10662,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Spreeuwen", naam_en: "Starlings", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+        geluid: "sound/Spreeuwen.mp3", 
         quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
         <br><br>- Giorgio Parisi`
       },
@@ -10640,6 +10689,7 @@ const combinaties = [
         <br><br>- Peter Scott`
       },
       { naam: "Eenden", naam_en: "Ducks", icoon: "icons/Eenden.png", map: "Vogels", 
+        geluid: "sound/Eenden.mp3",
         quote: `Waterfowl move as part of the landscape itself, never separate from the rivers that carry them
         <br><br>- Wangari Maathai`
       }
@@ -10740,6 +10790,7 @@ const combinaties = [
         <br><br>- Matsuo Basho`
       },
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
+        geluid: "sound/Pinguïns.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
@@ -11136,10 +11187,12 @@ const combinaties = [
         <br><br>- Robert Macfarlane`
       },
       { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        geluid: "sound/Arenden.mp3",
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       },
       { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
+        geluid: "sound/Duiven.mp3",
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
@@ -11160,6 +11213,7 @@ const combinaties = [
     tijd: 30_000_000,
     output: [
       { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
+        geluid: "sound/Gieren.mp3",
         quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
         <br><br>- Alexander von Humboldt`
       }
@@ -11188,6 +11242,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
+        geluid: "sound/Gieren.mp3",
         quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
         <br><br>- Alexander von Humboldt`
       },
@@ -11215,6 +11270,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
+        geluid: "sound/Gieren.mp3",
         quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
         <br><br>- Alexander von Humboldt`
       },
@@ -11330,14 +11386,17 @@ const combinaties = [
     tijd: 10_000_000,
     output: [
       { naam: "Mussen", naam_en: "Sparrows", icoon: "icons/Mussen.png", map: "Vogels", 
+        geluid: "sound/Mussen.mp3", 
         quote: `A sparrow hops - and the quiet of the garden is suddenly complete
         <br><br>- Kobayashi Issa`
       },
       { naam: "Kippen", naam_en: "Chickens", icoon: "icons/Kippen.png", map: "Vogels", 
+        geluid: "sound/Kippen.mp3",
         quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
         <br><br>- Fridtjof Nansen`
       },
       { naam: "Duiven", naam_en: "Pigeons", icoon: "icons/Duiven.png", map: "Vogels", 
+        geluid: "sound/Duiven.mp3",
         quote: `Few birds are as closely associated with human history as the pigeon, a species that has served as 
         messenger, companion, and symbol across cultures
         <br><br>- Colin Tudge`
@@ -11384,6 +11443,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Mussen", naam_en: "Sparrows", icoon: "icons/Mussen.png", map: "Vogels", 
+        geluid: "sound/Mussen.mp3", 
         quote: `A sparrow hops - and the quiet of the garden is suddenly complete
         <br><br>- Kobayashi Issa`
       },
@@ -11420,6 +11480,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kippen", naam_en: "Chickens", icoon: "icons/Kippen.png", map: "Vogels", 
+        geluid: "sound/Kippen.mp3",
         quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
         <br><br>- Fridtjof Nansen`
       },
@@ -11441,6 +11502,7 @@ const combinaties = [
     tijd: 45_000_000,
     output: [
       { naam: "Spechten", naam_en: "Woodpeckers", icoon: "icons/Spechten.png", map: "Vogels", 
+        geluid: "sound/Spechten.mp3", 
         quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
         <br><br>- Annie Dillard`
       }
@@ -11469,6 +11531,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Spechten", naam_en: "Woodpeckers", icoon: "icons/Spechten.png", map: "Vogels", 
+        geluid: "sound/Spechten.mp3", 
         quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
         <br><br>- Annie Dillard`
       },
@@ -11488,10 +11551,12 @@ const combinaties = [
     tijd: 20_000_000,
     output: [
       { naam: "Spechten", naam_en: "Woodpeckers", icoon: "icons/Spechten.png", map: "Vogels", 
+        geluid: "sound/Spechten.mp3", 
         quote: `The tapping of a woodpecker is the forest counting time in small, exact beats
         <br><br>- Annie Dillard`
       },
       { naam: "Spreeuwen", naam_en: "Starlings", icoon: "icons/Spreeuwen.png", map: "Vogels", 
+        geluid: "sound/Spreeuwen.mp3", 
         quote: `A flock of starlings behaves like a fluid in motion, continuously reshaping itself without losing cohesion
         <br><br>- Giorgio Parisi`
       }
@@ -11511,6 +11576,7 @@ const combinaties = [
     tijd: 20_000_000,
     output: [
       { naam: "Uilen", naam_en: "Owls", icoon: "icons/Uilen.png", map: "Vogels", 
+        geluid: "sound/Uilen.mp3", 
         quote: `When the owl sings, the night is silent
         <br><br>- Charles de Leusse`
       },
@@ -11523,6 +11589,7 @@ const combinaties = [
         <br><br>- Wang Wei`
       },
       { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
+        geluid: "sound/Kraaien.mp3",
         quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
         <br><br>- Ma Zhiyuan`
       }
@@ -11691,6 +11758,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
+        geluid: "sound/Kraaien.mp3",
         quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
         <br><br>- Ma Zhiyuan`
       },
@@ -11723,6 +11791,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kraaien", naam_en: "Crows", icoon: "icons/Kraaien.png", map: "Vogels", 
+        geluid: "sound/Kraaien.mp3",
         quote: `Crows return to their nests as the sun sets beyond the river, their dark shapes crossing the fading light
         <br><br>- Ma Zhiyuan`
       },
@@ -11752,6 +11821,7 @@ const combinaties = [
         <br><br>- Pablo Neruda`
       },
       { naam: "Pauwen", naam_en: "Peacocks", icoon: "icons/Pauwen.png", map: "Vogels", 
+        geluid: "sound/Pauwen.mp3", 
         quote: `In the garden, the peacock walks as if it remembers a lost paradise
         <br><br>- Rumi`
       },
@@ -11760,6 +11830,7 @@ const combinaties = [
         <br><br>- Alexander von Humboldt`
       },
       { naam: "Kippen", naam_en: "Chickens", icoon: "icons/Kippen.png", map: "Vogels", 
+        geluid: "sound/Kippen.mp3",
         quote: `The capercaillie belongs to the deep forest, where its presence is known more by sound than by sight
         <br><br>- Fridtjof Nansen`
       }
@@ -11868,6 +11939,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Pauwen", naam_en: "Peacocks", icoon: "icons/Pauwen.png", map: "Vogels", 
+        geluid: "sound/Pauwen.mp3", 
         quote: `In the garden, the peacock walks as if it remembers a lost paradise
         <br><br>- Rumi`
       },
@@ -11895,6 +11967,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Pauwen", naam_en: "Peacocks", icoon: "icons/Pauwen.png", map: "Vogels", 
+        geluid: "sound/Pauwen.mp3", 
         quote: `In the garden, the peacock walks as if it remembers a lost paradise
         <br><br>- Rumi`
       },
@@ -12559,6 +12632,7 @@ const combinaties = [
     tijd: 15_000_000,
     output: [
       { naam: "Kieviten", naam_en: "Lapwings", icoon: "icons/Kieviten.png", map: "Vogels", 
+        geluid: "sound/Kieviten.mp3",
         quote: `The lapwing tumbles and twists over the fields, its flight full of sudden turns and restless energy
         <br><br>- Richard Jefferies`
       }
@@ -12618,6 +12692,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kieviten", naam_en: "Lapwings", icoon: "icons/Kieviten.png", map: "Vogels", 
+        geluid: "sound/Kieviten.mp3",
         quote: `The lapwing tumbles and twists over the fields, its flight full of sudden turns and restless energy
         <br><br>- Richard Jefferies`
       },
@@ -12660,6 +12735,7 @@ const combinaties = [
     tijd: 25_000_000,
     output: [
       { naam: "Gieren", naam_en: "Vultures", icoon: "icons/Gieren.png", map: "Vogels", 
+        geluid: "sound/Gieren.mp3",
         quote: `The vultures describe wide circles in the sky, watching the earth below with an unblinking vigilance
         <br><br>- Alexander von Humboldt`
       },
@@ -12880,6 +12956,7 @@ const combinaties = [
         <br><br>- Mo Yan`
       },
       { naam: "Gierst", naam_en: "Millet", icoon: "icons/Gierst.png", map: "Granen", 
+        geluid: "sound/Gieren.mp3",
         quote: `Millet grows quickly and thrives even in poor and dry soils where other grains fail
         <br><br>- Olivier de Serres`
       }
@@ -12984,6 +13061,7 @@ const combinaties = [
         <br><br>- Li Bai`
       },
       { naam: "Arenden", naam_en: "Eagles", icoon: "icons/Arenden.png", map: "Vogels", 
+        geluid: "sound/Arenden.mp3",
         quote: `The eagle does not chase the world; it watches it shrink beneath its wings.
         <br><br>- Mary Oliver`
       }
@@ -15482,6 +15560,7 @@ const combinaties = [
     tijd: 10_000_000,
     output: [
       { naam: "Mussen", naam_en: "Sparrows", icoon: "icons/Mussen.png", map: "Vogels", 
+        geluid: "sound/Mussen.mp3", 
         quote: `A sparrow hops - and the quiet of the garden is suddenly complete
         <br><br>- Kobayashi Issa`
       }
@@ -19742,6 +19821,7 @@ const combinaties = [
     tijd: 400,
     output: [
       { naam: "Kanaries", naam_en: "Canaries", icoon: "icons/Kanaries.png", map: "Vogels", 
+        geluid: "sound/Kanaries.mp3",
         quote: `Selective breeding has produced canaries with remarkable variation in color and song
         <br><br>- William Beebe`
       }
@@ -19797,6 +19877,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kanaries", naam_en: "Canaries", icoon: "icons/Kanaries.png", map: "Vogels", 
+        geluid: "sound/Kanaries.mp3",
         quote: `Selective breeding has produced canaries with remarkable variation in color and song
         <br><br>- William Beebe`
       },
