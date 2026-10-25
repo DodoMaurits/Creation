@@ -86,13 +86,12 @@ const combinaties = [
         achtergrond: "afb/atoomvorming.jpg",
         titel: "ATOOMVORMING", titel_en: "ATOM FORMATION",
         tekst: `
-        <span>380 duizend Aardse jaren na de oerknal bereikte het heelal een temperatuur van 2727 graden.</span>
+        <span>380.000 Aardse jaren na de oerknal bereikte het heelal een temperatuur van 2727 graden.</span>
         <br><br>
-        <span>Chaos koelde zo veel af dat protonen, elektronen en neutronen met elkaar fuseerden tot energieneutrale 
-        structuren, die op lange termijn stabiel bleven. Veel materie werd elektrisch neutraal, waardoor zichtbaar plasma 
-        verdampte. Fotonen stroomden vrij door de elektrisch neutrale nevel en donkere materie. <br><br>Nog altijd kunnen
-        astronomen de resultaten van deze faseverandering waarnemen, namelijk de kosmische achtergrondstraling aan energie
-        die vrijkwam toen fotonen uit het plasma konden ontsnappen.</span>
+        <span>De chaos koelde zo veel af dat protonen, elektronen en neutronen met elkaar fuseerden tot energieneutrale 
+        stabiele structuren. Het zichtbaar plasma verdampte. Fotonen konden vrijstromen door de elektrisch neutrale nevel
+        en donkere materie. Astronomen kunnen de resultaten van deze faseverandering nog altijd waarnemen in de vorm van  
+        kosmische achtergrondstraling - de energie die vrijkwam toen fotonen uit het plasma konden ontsnappen.</span>
         <br><br>
         <span>Atomen hebben elk een kleine kern in het centrum, bestaande uit één of meer positief geladen protonen en 
         nul of meer neutrale neutronen. Rond de kern cirkelen op grote afstanden negatief geladen elektronen, één voor 
@@ -107,11 +106,11 @@ const combinaties = [
         tekst_en: `
         <span>380.000 Earth years after the Big Bang, the universe reached a temperature of 2727 degrees.</span>
         <br><br>
-        <span>The chaotic state cooled down sufficiently for protons, electrons and neutrons to fuse into electrically 
-        neutral structures remaining stable for the long term. A lot of matter turned electrically neutral, causing the
-        visible plasma to dissipate. Photons began to flow freely through the electrically neutral nebula and dark matter.
-        Still, astronomers observe the results of this transition phase today: the cosmic background radiation - energy
-        that was released when photons were finally able to escape the plasma.</span>
+        <span>The chaos cooled down to such an extent that protons, electrons, and neutrons fused together to form stable, 
+        electrically neutral structures. The visible plasma dissipated. Photons were then able to flow freely through the 
+        electrically neutral mist and dark matter. Astronomers can still observe the results of this phase transition 
+        today in the form of cosmic background radiation — the energy released when photons were finally able to 
+        escape the plasma.</span>
         <br><br>
         <span>Atoms each have a small nucleus at their centre, consisting of one or more positively charged protons and
         zero or more neutral neutrons. Orbiting the nucleus at a significant distance are negatively charged electrons 
