@@ -20703,10 +20703,10 @@ const combinaties = [
     ],
     hint: `Wat voel ik?`,
     hint_en: `What do I feel?`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20726,10 +20726,10 @@ const combinaties = [
       /* --- PLANTEN --- */
       ["Venusvliegenvanger", "Zenuwen"], ["Zonnedauw", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20749,10 +20749,10 @@ const combinaties = [
       ["Tweekleppigen", "Zenuwen"],
     hint: `Sommige dieren zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     hint_en: `Some animals are like light in the darkness, but do they experience it that way too?`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20781,10 +20781,10 @@ const combinaties = [
     ],
     hint: `Au!`,
     hint_en: `Ouch!`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20811,10 +20811,10 @@ const combinaties = [
       /* --- GELEEDPOTIGEN --- */
       ["Oerkreeftjes", "Zenuwen"], ["Krill", "Zenuwen"], ["Aasgarnalen", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20846,10 +20846,10 @@ const combinaties = [
       ["Manteldieren", "Zenuwen"],
     hint: `Wat ruik ik?`,
     hint_en: `What do I smell?`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20877,10 +20877,10 @@ const combinaties = [
       ["Zeepissebedden", "Zenuwen"],
       ["Reuzenpissebedden", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20917,10 +20917,10 @@ const combinaties = [
     ],
     hint: `Wat ruik ik?`,
     hint_en: `What do I smell?`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20947,10 +20947,10 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Duizendpoten", "Zenuwen"], ["Hooiwagens", "Zenuwen"], ["Pissebedden", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -20992,10 +20992,10 @@ const combinaties = [
     ],
     hint: `Wat proef ik?`,
     hint_en: `What do I taste?`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -21037,10 +21037,10 @@ const combinaties = [
       ["Oertienpotigen", "Zenuwen"], 
       ["Waterspinnen", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -21071,10 +21071,10 @@ const combinaties = [
     ],
     hint: `Wat zie ik?`,
     hint_en: `What do I see?`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -21105,10 +21105,10 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Schorpioenen", "Zenuwen"], ["Spinnen", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -21153,10 +21153,10 @@ const combinaties = [
     ],
     hint: `Kijk naar de dieren... sommigen kunnen al kleuren zien.`,
     hint_en: `Look at the animals... some can already see colour.`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -21212,10 +21212,10 @@ const combinaties = [
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
     hint_en: `Try your nerves again, I think I hear something...`,
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -21259,10 +21259,10 @@ const combinaties = [
       ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
       ["Paling", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
@@ -21306,10 +21306,10 @@ const combinaties = [
       ["Potvissen", "Zenuwen"], ["Orka", "Zenuwen"], ["Narwallen", "Zenuwen"], ["Dolfijnen", "Zenuwen"], 
       ["Blauwe vinvissen", "Zenuwen"], ["Grijze walvissen", "Zenuwen"], ["Bultruggen", "Zenuwen"]
     ],
-    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, geen oog, oor, neus, 
     tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
     <br><br>Hart Soetra`, 
-    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, no eye, ear, 
     nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
     <br><br>Heart Sutra`, 
     output: [
