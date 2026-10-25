@@ -17585,7 +17585,7 @@ const combinaties = [
         <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
-       geluid: "sound/Vreugde.m4a",
+        geluid: "sound/Vreugde.m4a",
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
