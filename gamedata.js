@@ -948,6 +948,7 @@ const combinaties = [
     hint_en: `Erosion, erosion, erosion...`,
     output: [
       { naam: "Zand", naam_en: "Sand", icoon: "icons/Zand.png", map: "Aarde", 
+        geluid: "sound/Zand.mp3",
         quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
         <br><br>- Sergei Devlatov`
       },
@@ -1009,6 +1010,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zand", naam_en: "Sand", icoon: "icons/Zand.png", map: "Aarde", 
+        geluid: "sound/Zand.mp3",
         quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
         <br><br>- Sergei Devlatov`
       }
@@ -1110,6 +1112,7 @@ const combinaties = [
     hint_en: `Sand so far as the eye can see.. that might be beautiful.`,
     output: [
       { naam: "Woestijn", naam_en: "Desert", icoon: "icons/Woestijn.png", map: "Landschap", 
+        geluid: "sound/Zand.mp3",
         quote: `If the desert is holy, it is because it is a forgotten place that allows us to remember the sacred 
         <br><br>- Terry Williams`
       }
@@ -1358,6 +1361,7 @@ const combinaties = [
         <br><br>- V.S. Naipaul`
       }, 
       { naam: "Zand", naam_en: "Sand", icoon: "icons/Zand.png", map: "Aarde",
+        geluid: "sound/Zand.mp3",
         quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
         <br><br>- Sergei Devlatov`
       },
@@ -1412,6 +1416,7 @@ const combinaties = [
         <br><br>- Lao Tzu`
       },
       { naam: "Zand", naam_en: "Sand", icoon: "icons/Zand.png", map: "Aarde",
+        geluid: "sound/Zand.mp3",
         quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
         <br><br>- Sergei Devlatov`
       }
@@ -1657,7 +1662,7 @@ const combinaties = [
     hint_en: `Worn stone along the coast can erode into soft ground.`,
     output: [
       { naam: "Strand", naam_en: "Beach", icoon: "icons/Strand.png", map: "Landschap", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Zand.mp3",
         quote: `At the beach, life is different. Time doesn't move hour to hour but mood to moment. 
         We live by the currents, plan by the tides, and follow the sun 
         <br><br>- Sandy Gingras`
@@ -1700,6 +1705,7 @@ const combinaties = [
         <br><br>- Samuel Johnson`
       },
       { naam: "Zand", naam_en: "Sand", icoon: "icons/Zand.png", map: "Aarde",
+        geluid: "sound/Zand.mp3",
         quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
         <br><br>- Sergei Devlatov`
       },
@@ -1813,6 +1819,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zand", naam_en: "Sand", icoon: "icons/Zand.png", map: "Aarde", 
+        geluid: "sound/Zand.mp3",
         quote: `Our life is but a grain of sand in the indifferent ocean of infinity 
         <br><br>- Sergei Devlatov`
       }
@@ -8266,6 +8273,7 @@ const combinaties = [
     hint_en: `Along the coast, grass and sand create walls against the sea.`,
     output: [
       { naam: "Duinen", naam_en: "Dunes", icoon: "icons/Duinen.png", map: "Landschap", 
+        geluid: "sound/Zand.mp3",
         quote: `Coastal dunes are living landscapes, where sand and grass work together, shaped by wind and sea into 
         ever-changing forms
         <br><br>- Hans van der Maarel`
@@ -8278,6 +8286,7 @@ const combinaties = [
     hint_en: `Even at the end of the desert, things must eventually turn green again..`,
     output: [
       { naam: "Savanne", naam_en: "Savannah", icoon: "icons/Savanne.png", map: "Landschap", 
+        geluid: "sound/Zand.mp3",
         quote: `Lions rest in the shade of scattered trees while gazelles graze, elephants wander in ponderous silence, 
         and the plain itself pulses with life
         <br><br>- David Attenborough`
