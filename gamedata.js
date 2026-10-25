@@ -2553,6 +2553,7 @@ const combinaties = [
     they eat <br><br>Ya-Sin (36:33)`,
     output: [
       { naam: "Aarde", naam_en: "Earth", icoon: "icons/Aarde.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Land is not merely soil, it is a fountain of energy flowing through a circuit of soils, plants and 
         animals 
         <br><br>- Aldo Leopold`
