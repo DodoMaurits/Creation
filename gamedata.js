@@ -25,8 +25,8 @@ const combinaties = [
         <br><br>- Dominic Monaghan`
       }
     ],
-    vers: `Hebben degenen die niet geloven niet gezien dat de Hemelen en de Aarde één geheel waren, 
-    en Wij ze vervolgens van elkaar hebben gescheiden?
+    vers: `Hebben degenen die niet geloven niet gezien dat de Hemelen<br>en de Aarde één geheel waren, 
+    en Wij ze vervolgens <br>van elkaar hebben gescheiden?
     <br><br>De Profeten (21:30)`,
     vers_en: `Do not the Unbelievers see that the heavens and the earth were joined together, 
     before We clove them asunder? <br><br>The Prophets (21:30)`,
@@ -35,7 +35,7 @@ const combinaties = [
         titel: "SYMMETRIEBREKING", titel_en: "SYMMETRY BREAKS",
         tekst: `In een mum van tijd daalde de temperatuur tot 10 miljoen graden - te vergelijken met het binnenste van
         een ster. De oerknal was ten einde maar, zoals water bevriest onder nul, was er viermaal een drempel overschreden. 
-        De 4 natuurkrachten waren geboren...
+        De vier natuurkrachten waren geboren...
         <br><br>Vrijwel meteen brak de zwaartekracht. Tegen de uitdijing van energie in, houdt deze natuurkracht 
         energie en materie bij elkaar, als een natuurlijke aantrekkingskracht. 
         <br><br>Onder de 10<sup>28</sup> graden brak de sterke kernkracht. Op miniscule afstanden bindt het de kleinste 
