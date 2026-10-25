@@ -693,6 +693,9 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null, isNie
     img.src = el.icoon;
     const gloedWrapper = document.createElement("div");
     gloedWrapper.className = "result-image-wrap";
+    if (isNieuw && !unlockedElements.has(el.naam)) {
+      gloedWrapper.classList.add("nieuw-element");
+    }
     gloedWrapper.appendChild(img);
     img.className = "result-image";
     box.appendChild(gloedWrapper);
