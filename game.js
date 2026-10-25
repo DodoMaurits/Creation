@@ -538,12 +538,14 @@ function checkCombination() {
       renderNewElements(newElements, versText, firstMatch, true);
       lastExplanation = finalUitleg || null;
       addUnlockedElements(newElements);
+      newElements.forEach(el => speelElementGeluid(el));
     });
     return;
   }
   renderNewElements(newElements, versText, firstMatch, false);
   lastExplanation = finalUitleg || null;
   addUnlockedElements(newElements);
+  newElements.forEach(el => speelElementGeluid(el));
   refreshHintDeck();
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
@@ -621,6 +623,18 @@ function epicSuccessBeforeOverlay(selectedEls, daarna) {
     }
     daarna();
   }, 400);
+}
+
+function speelElementGeluid(element) {
+  if (!element?.geluid) return;
+  const gemute = localStorage.getItem("creation-muted") === "1";
+  if (gemute) return;
+  const speler = document.getElementById("element-sound");
+  if (!speler) return;
+  speler.src = element.geluid;
+  speler.currentTime = 0;
+  speler.volume = 0.5;
+  speler.play().catch(() => {});
 }
 
 // ----- VISUEEL SCHERM VOOR NIEUWE ELEMENTEN -----
