@@ -69,6 +69,7 @@ const combinaties = [
     tijd: 13_700_620_000,
     output: [
       { naam: "Atomen", naam_en: "Atoms", icoon: "icons/Atomen.png", map: "Chemie",
+        geluid: "sound/AngelHoog.wav",
         quote: `In reality, nothing but atoms and the void 
         <br><br>- Democritos`
       }
