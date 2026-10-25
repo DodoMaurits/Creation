@@ -89,7 +89,7 @@ const combinaties = [
         <br><br>
         <span>Chaos koelde zo veel af dat protonen, elektronen en neutronen met elkaar fuseerden tot energieneutrale 
         structuren, die op lange termijn stabiel bleven. Veel materie werd elektrisch neutraal, waardoor zichtbaar plasma 
-        verdampte. Fotonen stroomden vrij door de elektrisch neutrale nevel en donkere materie. Nog altijd kunnen
+        verdampte. Fotonen stroomden vrij door de elektrisch neutrale nevel en donkere materie. <br><br>Nog altijd kunnen
         astronomen de resultaten van deze faseverandering waarnemen, namelijk de kosmische achtergrondstraling aan energie
         die vrijkwam toen fotonen uit het plasma konden ontsnappen.</span>
         <br><br>
