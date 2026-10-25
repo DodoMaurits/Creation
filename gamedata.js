@@ -1215,6 +1215,7 @@ const combinaties = [
         <br><br>- Frank Lane`
       },
       { naam: "Bliksem", naam_en: "Lightning", icoon: "icons/Bliksem.png", map: "Vuur", 
+        geluid: "sound/Bliksem.mp3",
         quote: `Serenity is not freedom from the storm, but peace amid the storm 
         <br><br>- Barbara West`
       }
@@ -1533,7 +1534,7 @@ const combinaties = [
     crackling effect.`,
     output: [
       { naam: "Bolbliksem", naam_en: "Ball lightning", icoon: "icons/Bolbliksem.png", map: "Vuur", 
-        geluid: "sound/Bliksem.mp3",
+        geluid: "sound/Elektriciteit.mp3",
         quote: `Ball lightning is one of the most enigmatic atmospheric phenomena: small, glowing spheres that appear 
         during thunderstorms, with behavior that remains only partially understood
         <br><br>- Martin Uman`
