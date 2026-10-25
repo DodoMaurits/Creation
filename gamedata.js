@@ -11,6 +11,7 @@ const combinaties = [
         <br><br>- Isaac Newton`
       },
       { naam: "Straling", naam_en: "Radiation", icoon: "icons/Straling.png", map: "Krachten",
+        geluid: "sound/Druk.mp3", 
         quote: `A compassionate heart radiates rays of beauty that remove the clouds of million hearts 
         <br><br>- Amit Ray`
       },
