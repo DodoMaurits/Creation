@@ -1352,6 +1352,12 @@ function startSuperhintCooldown() {
 if (superhintButton) superhintButton.addEventListener("click", (e) => {
   e.stopPropagation();
   if (superhintButton.classList.contains("cooldown")) return;
+  const s = document.getElementById("superhint-sound");
+  if (s && localStorage.getItem("creation-muted") !== "1") {
+    s.currentTime = 0;
+    s.volume = 0.5;
+    s.play().catch(() => {});
+  }
   superHint();
   startSuperhintCooldown();
 });
