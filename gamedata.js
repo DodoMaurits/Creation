@@ -7975,7 +7975,7 @@ const combinaties = [
         elegant, flexible, and perfectly suited to their environment
         <br><br>- Katherine Esau`
       },
-      { naam: "Oereudicoten", naam_en: "Urdicots", icoon: "icons/Oereudicoten.png", map: "Planten", 
+      { naam: "Oereudicoten", naam_en: "Ureudicots", icoon: "icons/Oereudicoten.png", map: "Planten", 
         quote: `In dicotyledons the capacity for secondary growth allows the plant to build strength, branching 
         complexity, and longevity
         <br><br>- Arthur Cronquist`
