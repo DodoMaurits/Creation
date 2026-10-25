@@ -1259,7 +1259,7 @@ body.result-open #corner-controls {
 }
 
 .info-inner {
-  width: min(38%, 760px);
+  width: min(48%, 900px);
   max-width: 100%;
   margin: auto;
 }
