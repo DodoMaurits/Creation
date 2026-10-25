@@ -3779,6 +3779,7 @@ const combinaties = [
     hint_en: `Oh, how annoying that grain of sand can be for shellfish.`,
     output: [
       { naam: "Parel", naam_en: "Pearl", icoon: "icons/Parel.png", map: "Biologie", 
+        geluid: "sound/Kwik.mp3", 
         quote: `We build a shell around it, like an oyster dealing with a painful particle of grit, coating it 
         with smooth pearl layers in order to cope
         <br><br>- Neil Gaiman`
