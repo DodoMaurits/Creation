@@ -1313,7 +1313,7 @@ const combinaties = [
     hint_en: `One needs more sea, if one would like to take shelter.`,
     output: [
       { naam: "Oceaan", naam_en: "Ocean", icoon: "icons/Oceaan.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Oceaan.m4a",
         quote: `Individually, we are one drop. Together, we are an ocean 
         <br><br>- Ryunosuke Akutagawa`
       }
@@ -4361,6 +4361,7 @@ const combinaties = [
         <br><br>- Sylvia Earle`
       },
       { naam: "Spookhaaien", naam_en: "Ghostsharks", icoon: "icons/Spookhaaien.png", map: "Vissen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       }
@@ -4452,6 +4453,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Spookhaaien", naam_en: "Ghostsharks", icoon: "icons/Spookhaaien.png", map: "Vissen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       },
@@ -4902,6 +4904,7 @@ const combinaties = [
     hint_en: `In the depths of the ocean, isopods rise to large proportions.`,
     output: [
       { naam: "Reuzenpissebedden", naam_en: "Giant isopods", icoon: "icons/Reuzenpissebedden.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `These large isopods are scavengers of the deep ocean floor, feeding on carcasses and organic debris
         <br><br>- Diva Abele`
       }
@@ -4929,6 +4932,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Reuzenpissebedden", naam_en: "Giant isopods", icoon: "icons/Reuzenpissebedden.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `These large isopods are scavengers of the deep ocean floor, feeding on carcasses and organic debris
         <br><br>- Diva Abele`
       },
@@ -7468,6 +7472,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
@@ -7499,7 +7504,8 @@ const combinaties = [
     vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
-      { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+      { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen",
+        geluid: "sound/Oceaan.m4a",
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
@@ -8711,6 +8717,7 @@ const combinaties = [
     tijd: 50_000_000,
     output: [
       { naam: "Reuzeninktvissen", naam_en: "Giant squids", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
         <br><br>- Edith Widder`
       }
@@ -8741,6 +8748,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Reuzeninktvissen", naam_en: "Giant squids", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
         <br><br>- Edith Widder`
       },
@@ -8783,6 +8791,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Reuzeninktvissen", naam_en: "Giant squids", icoon: "icons/Reuzeninktvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Imagine a squid so big that, when sprawled out, it is the size of a two-story house
         <br><br>- Edith Widder`
       },
@@ -9673,6 +9682,7 @@ const combinaties = [
     tijd: 40_000_000,
     output: [
       { naam: "Zeeduivels", naam_en: "Anglerfish", icoon: "icons/Zeeduivels.png", map: "Vissen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Few creatures of the sea appear as grotesque and yet as perfectly adapted as the anglerfish, 
         a silent hunter of the ocean floor
         <br><br>- David Attenborough`
@@ -17275,11 +17285,13 @@ const combinaties = [
     tijd: 34_000_000,
     output: [
       { naam: "Blauwe vinvissen", naam_en: "Blue whales", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
       },
       { naam: "Potvissen", naam_en: "Sperm whales", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       }
@@ -17297,6 +17309,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Blauwe vinvissen", naam_en: "Blue whales", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
@@ -17325,6 +17338,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Blauwe vinvissen", naam_en: "Blue whales", icoon: "icons/Blauwe vinvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Its tongue weighs as much as an elephant. Its heart is the size of a car. And some of its blood vessels 
         are so wide that you could swim down them
         <br><br>- David Attenborough`
@@ -17352,6 +17366,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Potvissen", naam_en: "Sperm whales", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       },
@@ -17385,6 +17400,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Potvissen", naam_en: "Sperm whales", icoon: "icons/Potvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Sperm whales are among the deepest diving mammals, routinely descending to great depths in search of squid
         <br><br>- Peter Tyack`
       },
