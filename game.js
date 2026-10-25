@@ -839,11 +839,11 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   textEl.style.fontSize = grootte + "px";
   const pasAan = () => {
     let pogingen = 0;
-    const langste = Math.max(...spans.map(s => s.offsetHeight));
+    let langste = 0;
     while (
       pogingen < 20 &&
       grootte > (isMobielInfo ? 8 : 10) &&
-      langste + 120 > window.innerHeight * 0.75
+      (langste = Math.max(...spans.map(s => s.offsetHeight))) + 120 > window.innerHeight * 0.75
     ) {
       grootte -= 1;
       textEl.style.fontSize = grootte + "px";
