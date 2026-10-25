@@ -878,6 +878,9 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   animation: infoFade 0.25s ease;
   font-family: "Roboto Slab", serif;
   line-height: 1.6;
+  max-height: 82dvh;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .info-popup-title {
@@ -896,7 +899,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 
 .info-popup-text {
-  font-size: 28px;
+  font-size: clamp(14px, 2.2dvh + 0.4vw, 28px);
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
   hyphens: auto;
@@ -1801,6 +1804,9 @@ body.result-open #corner-controls {
             .info-popup-box {
               width: 88vw;
               max-width: 88vw;
+              max-height: 78dvh;
+              overflow-y: auto;
+              box-sizing: border-box;
               padding: 24px 20px;
             }
           
@@ -1808,7 +1814,7 @@ body.result-open #corner-controls {
               font-size: 22px;
             }
             .info-popup-text {
-              font-size: 16px;
+              font-size: clamp(10px, 1.9dvh, 16px);
               line-height: 1.5;
             }
 
