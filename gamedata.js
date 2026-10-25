@@ -2456,6 +2456,10 @@ const combinaties = [
     ],
     hint: `UV-straling splitst zuurstof op en vormt tezamen met zuurstof iets nieuws.`,
     hint_en: `UV radiation splits oxygen, and together with oxygen, it creates something new.`,
+    vers: `En Wij maakten van de hemel een beschermend dak, <br>maar zij wenden zich af van haar signalen 
+    <br><br>De Profeten (21:32)`,
+    vers_en: `And We made the sky a protective canopy, <br>yet they turn away from its signs 
+    <br><br>The Prophets (21:32)`,
     output: [
       { naam: "Ozon", naam_en: "Ozone", icoon: "icons/Ozon.png", map: "Lucht", 
         quote: `Man must rise above the Earth to the top of the atmosphere and beyond - for only thus will he fully
