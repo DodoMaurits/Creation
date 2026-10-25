@@ -10071,7 +10071,7 @@ const combinaties = [
     tijd: 60_000_000,
     output: [
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
-        geluid: "sound/Pinguïns.mp3", 
+        geluid: "sound/Pinguins.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
@@ -10092,7 +10092,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
-        geluid: "sound/Pinguïns.mp3", 
+        geluid: "sound/Pinguins.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
@@ -10117,7 +10117,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
-        geluid: "sound/Pinguïns.mp3", 
+        geluid: "sound/Pinguins.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
@@ -10806,7 +10806,7 @@ const combinaties = [
         <br><br>- Matsuo Basho`
       },
       { naam: "Pinguïns", naam_en: "Penguins", icoon: "icons/Pinguïns.png", map: "Vogels", 
-        geluid: "sound/Pinguïns.mp3", 
+        geluid: "sound/Pinguins.mp3", 
         quote: `Our wings serve as flippers that carry us across the ocean; not in the sky! Why, us penguins have so 
         much fun time in the water, we don't even want to fly!
         <br><br>- Jasmin Martin`
