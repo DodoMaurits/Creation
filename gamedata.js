@@ -1972,6 +1972,7 @@ const combinaties = [
     tijd: 4_400_000_000,
     output: [
       { naam: "Leven", naam_en: "Life", icoon: "icons/Leven.png", map: "Krachten", 
+        geluid: "sound/Leven.mp3",
         quote: `Life is not a problem to be solved, but a reality to be experienced 
         <br><br>- Søren Kierkegaard`
       },
