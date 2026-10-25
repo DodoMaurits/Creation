@@ -717,6 +717,7 @@ const combinaties = [
     hint_en: `When plasma from the Sun comes too close, the atoms descend as dancing light.`,
     output: [
       { naam: "Noorderlicht", naam_en: "Northern lights", icoon: "icons/Noorderlicht.png", map: "Vuur",
+        geluid: "sound/Aurora.ogg", 
         quote: `Up at the poles, towards the north of the north, in those magical skies, exists a Goddess called
         Aurora Borealis
         <br><br>- Sayali Jadhav`
