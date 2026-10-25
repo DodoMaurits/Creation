@@ -766,7 +766,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   margin-bottom: 0;
 }
 
-#result-overlay.episch .result-image-wrap::before {
+#result-overlay.episch .result-image-wrap.nieuw-element::before {
   content: "";
   position: absolute;
   top: 50%;
