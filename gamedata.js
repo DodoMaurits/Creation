@@ -196,6 +196,7 @@ const combinaties = [
     tijd: 13_600_000_000,
     output: [
       { naam: "Ster", naam_en: "Star", icoon: "icons/Ster.png", map: "Heelal",
+        geluid: "sound/Explosie.mp3", 
         quote: `Every star may be a sun to someone 
         <br><br>- Carl Sagan`
       }
@@ -262,6 +263,7 @@ const combinaties = [
         <br><br>- William Yeats`
       },
       { naam: "Supernova", naam_en: "Supernova", icoon: "icons/Supernova.png", map: "Heelal",
+        geluid: "sound/Explosie.mp3", 
         quote: `A supernova is one of the most powerful explosions in the universe. 
         It's so luminous, it can be seen across billions of light years. 
         It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime
@@ -337,6 +339,7 @@ const combinaties = [
     own system?`,
     output: [
       { naam: "Zwart Gat", naam_en: "Black Hole", icoon: "icons/Zwartgat.png", map: "Heelal",
+        geluid: "sound/Explosie.mp3", 
         quote: `I believe in black holes. I believe that as the universe empties into nothingness, 
         past and future will smack together in the last swirl around the drain
         <br><br>- Abraham Verghese`
@@ -377,6 +380,7 @@ const combinaties = [
     tijd: 4_570_000_000,
     output: [
       { naam: "Neptunus", naam_en: "Neptune", icoon: "icons/Neptunus.png", map: "Heelal",
+        geluid: "sound/Explosie.mp3", 
         quote: `We see it as Columbus saw America from the coast of Spain. 
         Its movements have been felt, trembling along the far-reaching line of our analysis 
         with a certainty hardly inferior to that of ocular demonstration 
@@ -402,6 +406,7 @@ const combinaties = [
     tijd: 4_570_000_000,
     output: [
       { naam: "Jupiter", naam_en: "Jupiter", icoon: "icons/Jupiter.png", map: "Heelal",
+        geluid: "sound/Explosie.mp3", 
         quote: `Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... 
         and he looked every single inch of it 
         <br><br>- Lulu Moore`
@@ -427,6 +432,7 @@ const combinaties = [
     tijd: 4_570_000_000,
     output: [
       { naam: "Mars", naam_en: "Mars", icoon: "icons/Mars.png", map: "Heelal",
+        geluid: "sound/Explosie.mp3", 
         quote: `It was Mars. the God of War, and for me, the fighting man, it had always held the power of 
         irresistible enchantment. As I gazed at it on that far-gone night it seemed to call across the 
         unthinkable void, to lure me to it, to draw me as the lodestone attracts a particle of iron 
