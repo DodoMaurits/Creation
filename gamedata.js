@@ -235,7 +235,7 @@ const combinaties = [
     hint_en: `... ... ... BOOM!`,
     output: [
       { naam: "Explosie", naam_en: "Explosion", icoon: "icons/Explosie.png", map: "Vuur",
-        geluid: "sound/Explosie.mp3",
+        geluid: "sound/ExplosieGroot.mp3",
         quote: `As in an explosion, I would erupt with all the wonderful things I saw and understood in this world
         <br><br>- Boris Pasternak`
       }
