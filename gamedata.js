@@ -3649,6 +3649,7 @@ const combinaties = [
     hint_en: `At the edge of the polar region, we will create vegetation.`,
     output: [
       { naam: "Toendra", naam_en: "Tundra", icoon: "icons/Toendra.png", map: "Landschap", 
+        geluid: "sound/IJs.mp3",
         quote: `Over lowland, over snow and tundra span arches, raised by the rising sun. See: the light is winning! 
         And the stream is streaming towards open minds and towards seeds dreaming of growth
         <br><br>- Einar Skjaeraasen`
