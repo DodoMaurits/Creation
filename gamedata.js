@@ -21753,7 +21753,7 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Oerpolyneopteren", "Oerpolyneopteren"], ["Duizendpoten", "Duizendpoten"], ["Hooiwagens", "Hooiwagens"], 
       ["Pissebedden", "Pissebedden"], ["Schorpioenen", "Schorpioenen"], ["Spinnen", "Spinnen"], 
-      ["Zilvervisjes", "Zilvervisjes"], ["Termieten", "Termieten"], ["Wandelende takken", "Wandelende takken"], 
+      ["Zilvervisjes", "Zilvervisjes"], /*["Termieten", "Termieten"],*/ ["Wandelende takken", "Wandelende takken"], 
       ["Kakkerlakken", "Kakkerlakken"], ["Oerhymenopteren", "Oerhymenopteren"], /*Slakken + slijm*/
       ["Muggen", "Muggen"], ["Vliegen", "Vliegen"], ["Krekels", "Krekels"], ["Vlinders", "Vlinders"], 
       ["Libellen", "Libellen"], ["Mieren", "Mieren"], ["Wespen", "Wespen"], ["Bijen", "Bijen"], ["Kevers", "Kevers"], 
