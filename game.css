@@ -867,8 +867,8 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
   position: relative;
   background: rgba(0,0,0,0.75);
   backdrop-filter: blur(6px);
-  width: 45dvw;
-  max-width: 650px;
+  width: 60dvw;
+  max-width: 900px;
   padding: 50px 80px;
   border-radius: 12px;
   color: #f0f0f0;
