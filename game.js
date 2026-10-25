@@ -522,6 +522,15 @@ function checkCombination() {
   const shouldShowInfo = !(hasThreshold && hasNormal);  
   const isNieuw = newElements.some(el => !unlockedElements.has(el.naam));
   const geselecteerdeDom = selected.map(e => e.dom);
+  const eventTime = firstMatch.tijd;
+  if (eventTime !== undefined && eventTime < currentTime) {
+    if (eventTime <= 12_000 && timelineStart !== 12_000) {
+      timelineFill.style.width = "0%";
+      timelineStart = 12_000;
+    }
+  animateTimeline(eventTime);
+  saveProgress();
+  }
   if (isNieuw) {
     selected.forEach(e => e.dom.classList.remove("selected"));
     selected = [];
@@ -536,15 +545,6 @@ function checkCombination() {
   lastExplanation = finalUitleg || null;
   addUnlockedElements(newElements);
   refreshHintDeck();
-  const eventTime = firstMatch.tijd;
-  if (eventTime !== undefined && eventTime < currentTime) {
-    if (eventTime <= 12_000 && timelineStart !== 12_000) {
-      timelineFill.style.width = "0%";
-      timelineStart = 12_000;
-}
-animateTimeline(eventTime);
-saveProgress();
-  }
   selected.forEach(e => e.dom.classList.remove("selected"));
   selected = [];
 }
