@@ -2605,11 +2605,11 @@ const combinaties = [
     hint: `Meercelligheid heeft als voordeel dat het kan specialiseren in bewegen en de directe omgeving meten.`,
     hint_en: `The advantage of multicellularity is that it allows for specialisation in movement and in sensing the
     immediate environment.`,
-    vers: `Dat geldt ook voor voelen, waarnemen, gedachten, bewustzijn, Shariputra, alle dingen zijn in essentie leeg,
-    niet ontstaan, niet vernietigd, niet puur, niet verliezend, niet toenemend
+    vers: `Dat geldt ook voor voelen, waarnemen, gedachten, bewustzijn, Shariputra, <br>alle dingen zijn in essentie leeg
+    <br>niet ontstaan, niet vernietigd, niet puur, niet verliezend, niet toenemend
     <br><br>Hart Soetra`,
-    vers_en: `The same goes for sensation, perception, thought, consciousness, Shariputra, all things are essentially 
-    empty, not born, not destroyed, not pure, without loss, without gain
+    vers_en: `The same goes for sensation, perception, thought, consciousness, Shariputra, <br>all things are essentially 
+    empty <br>not born, not destroyed, not pure, without loss, without gain
     <br><br>Heart Sutra`,
     output: [
       { naam: "Spieren", naam_en: "Muscles", icoon: "icons/Spieren.png", map: "Biologie", 
@@ -18572,6 +18572,14 @@ const combinaties = [
     input: ["Leger", "Leger"],  
     hint: `Wie de oorlog overleeft en verliest, wacht de onmenselijking.`,
     hint_en: `For those who survive the war but lose, dehumanisation awaits.`,
+    vers: `Alle dingen zijn in essentie leeg...<br>aldus, Shariputra, in leegte geen vorm... <br>geen onwetendheid en 
+    geen onwetendheid-opheffing <br>tot en met geen ouderdom-dood, geen opheffing van ouderdom-dood...<br>alle verkeerde 
+    illusies voorbij, het volmaakte Nirvana bereikt
+    <br><br> Hart Soetra`,
+    vers_en: `All things are essentially empty... <br>thus, Shariputra, in emptiness is no form... <br>no ignorance 
+    and also no ending of ignorance <br>and so on to no old age or death, no ending of old age and death...<br>
+    far beyond the delusive thinking right here is Nirvana
+    <br><br> Heart Sutra`,
     output: [
       { naam: "Dood", naam_en: "Death", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
@@ -20205,6 +20213,14 @@ const combinaties = [
     ],
     hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     hint_en: `All life comes to an end... except for life itself?`,
+    vers: `Alle dingen zijn in essentie leeg...<br>aldus, Shariputra, in leegte geen vorm... <br>geen onwetendheid en 
+    geen onwetendheid-opheffing <br>tot en met geen ouderdom-dood, geen opheffing van ouderdom-dood...<br>alle verkeerde 
+    illusies voorbij, het volmaakte Nirvana bereikt
+    <br><br> Hart Soetra`,
+    vers_en: `All things are essentially empty... <br>thus, Shariputra, in emptiness is no form... <br>no ignorance 
+    and also no ending of ignorance <br>and so on to no old age or death, no ending of old age and death...<br>
+    far beyond the delusive thinking right here is Nirvana
+    <br><br> Heart Sutra`,
     output: [
       { naam: "Dood", naam_en: "Death", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
@@ -20477,6 +20493,14 @@ const combinaties = [
       ["Sorghum", "Vuur"], ["Sorghum", "Lava"], ["Sorghum", "Brand"], 
       ["Gierst", "Vuur"], ["Gierst", "Lava"], ["Gierst", "Brand"]
     ],
+    vers: `Alle dingen zijn in essentie leeg...<br>aldus, Shariputra, in leegte geen vorm... <br>geen onwetendheid en 
+    geen onwetendheid-opheffing <br>tot en met geen ouderdom-dood, geen opheffing van ouderdom-dood...<br>alle verkeerde 
+    illusies voorbij, het volmaakte Nirvana bereikt
+    <br><br> Hart Soetra`,
+    vers_en: `All things are essentially empty... <br>thus, Shariputra, in emptiness is no form... <br>no ignorance 
+    and also no ending of ignorance <br>and so on to no old age or death, no ending of old age and death...<br>
+    far beyond the delusive thinking right here is Nirvana
+    <br><br> Heart Sutra`,
     output: [
       { naam: "Dood", naam_en: "Death", icoon: "icons/Dood.png", map: "Krachten", 
         quote: `Death does not concern us, because as long as we exist, death is not here. And when it does come, 
@@ -20681,6 +20705,12 @@ const combinaties = [
     ],
     hint: `Wat voel ik?`,
     hint_en: `What do I feel?`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Tast", naam_en: "Touch", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
@@ -20698,6 +20728,12 @@ const combinaties = [
       /* --- PLANTEN --- */
       ["Venusvliegenvanger", "Zenuwen"], ["Zonnedauw", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Tast", naam_en: "Touch", icoon: "icons/Tast.png", map: "Brein", 
         quote: `Too often we underestimate the power of touch 
@@ -20715,6 +20751,12 @@ const combinaties = [
       ["Tweekleppigen", "Zenuwen"],
     hint: `Sommige dieren zijn als licht in de duisternis, maar ervaren zij dat ook?`,
     hint_en: `Some animals are like light in the darkness, but do they experience it that way too?`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20741,6 +20783,12 @@ const combinaties = [
     ],
     hint: `Au!`,
     hint_en: `Ouch!`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20765,6 +20813,12 @@ const combinaties = [
       /* --- GELEEDPOTIGEN --- */
       ["Oerkreeftjes", "Zenuwen"], ["Krill", "Zenuwen"], ["Aasgarnalen", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20794,6 +20848,12 @@ const combinaties = [
       ["Manteldieren", "Zenuwen"],
     hint: `Wat ruik ik?`,
     hint_en: `What do I smell?`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20819,6 +20879,12 @@ const combinaties = [
       ["Zeepissebedden", "Zenuwen"],
       ["Reuzenpissebedden", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20853,6 +20919,12 @@ const combinaties = [
     ],
     hint: `Wat ruik ik?`,
     hint_en: `What do I smell?`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20877,6 +20949,12 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Duizendpoten", "Zenuwen"], ["Hooiwagens", "Zenuwen"], ["Pissebedden", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20916,6 +20994,12 @@ const combinaties = [
     ],
     hint: `Wat proef ik?`,
     hint_en: `What do I taste?`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20955,6 +21039,12 @@ const combinaties = [
       ["Oertienpotigen", "Zenuwen"], 
       ["Waterspinnen", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -20983,6 +21073,12 @@ const combinaties = [
     ],
     hint: `Wat zie ik?`,
     hint_en: `What do I see?`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -21011,6 +21107,12 @@ const combinaties = [
       /* --- KLEIN LANDLEVEN --- */
       ["Schorpioenen", "Zenuwen"], ["Spinnen", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -21053,6 +21155,12 @@ const combinaties = [
     ],
     hint: `Kijk naar de dieren... sommigen kunnen al kleuren zien.`,
     hint_en: `Look at the animals... some can already see colour.`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -21106,6 +21214,12 @@ const combinaties = [
     ],
     hint: `Probeer de zenuwen nog eens, volgens mij hoor ik iets...`,
     hint_en: `Try your nerves again, I think I hear something...`,
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -21147,6 +21261,12 @@ const combinaties = [
       ["Oerstraalvinnigen", "Zenuwen"], ["Kabeljauwen", "Zenuwen"], ["Snoeken", "Zenuwen"], ["Meervallen", "Zenuwen"], 
       ["Paling", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -21188,6 +21308,12 @@ const combinaties = [
       ["Potvissen", "Zenuwen"], ["Orka", "Zenuwen"], ["Narwallen", "Zenuwen"], ["Dolfijnen", "Zenuwen"], 
       ["Blauwe vinvissen", "Zenuwen"], ["Grijze walvissen", "Zenuwen"], ["Bultruggen", "Zenuwen"]
     ],
+    vers: `Aldus, Shariputra, in leegte geen vorm, gevoel, waarneming, gedachten, bewustzijn, <br>geen oog, oor, neus, 
+    tong, lichaam, geest, <br>geen vorm, geluid, geur, smaak, aanraking, dharma's, <br>geen zicht tot en met geen denken
+    <br><br>Hart Soetra`, 
+    vers_en: `Thus, Shariputra, in emptiness is no form, sensation, perception, thought, consciousness, <br>no eye, ear, 
+    nose, tongue, body, mind, <br>no form, sound, smell, taste, touch, phenomena, <br>no seeing and so on to no thinking
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Brein", naam_en: "Brain", icoon: "icons/Brein.png", map: "Brein", 
         quote: `The great events of the world take place in the brain 
@@ -21259,6 +21385,14 @@ const combinaties = [
     ],
     hint: `Bewustzijn brengt met zich mee dat pijn zich vertaalt naar angst.`,
     hint_en: `Consciousness entails that pain translates into fear.`,
+    vers: `Aldus, Shariputra, door niet-verkrijging van Bodhisattva <br>op prajna paramita vertrouwend, leeft hij zonder 
+    geestelijke obstakels <br>en door het ontbreken van geestelijke obstakels zonder angst <br>alle verkeerde illusies 
+    voorbij, het volmaakte Nirvana bereikt
+    <br><br> Hart Soetra`,
+    vers_en: `Thus, Shariputra, because of the Bodhisattva's non-attainments <br>relying on the prajna paramita, dwells 
+    with his mind onubstructed <br>with no hindrance in the mind and therefore no fear <br>far beyond the delusive 
+    thinking right here is Nirvana
+    <br><br>Heart Sutra`, 
     output: [
       { naam: "Angst", naam_en: "Fear", icoon: "icons/Angst.png", map: "Brein", 
         quote: `Fear defeats more people than any other thing in the world
