@@ -839,10 +839,11 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   textEl.style.fontSize = grootte + "px";
   const pasAan = () => {
     let pogingen = 0;
+    const langste = Math.max(...spans.map(s => s.offsetHeight));
     while (
       pogingen < 20 &&
       grootte > (isMobielInfo ? 8 : 10) &&
-      inner.scrollHeight > window.innerHeight * 0.75
+      langste + 120 > window.innerHeight * 0.75
     ) {
       grootte -= 1;
       textEl.style.fontSize = grootte + "px";
@@ -861,9 +862,10 @@ function showInfoOverlay(title, text, backgroundImage = null) {
         sp.classList.add("span-zichtbaar");
       } else if (sp.dataset.laatstZichtbaar === "1") {
         sp.classList.add("span-uit");
-        setTimeout(() => sp.classList.remove("span-uit"), 400);
+        setTimeout(() => sp.classList.remove("span-uit"), 800);
       }
     });
+    textEl.style.height = spans[i].offsetHeight + "px";
     spans.forEach((sp, idx) => sp.dataset.laatstZichtbaar = idx === i ? "1" : "0");
   };
   const onthulVolgende = () => {
