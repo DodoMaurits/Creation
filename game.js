@@ -779,6 +779,17 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null, isNie
     popup.appendChild(box);
     overlay.appendChild(infoBtn);
     overlay.appendChild(popup);
+    requestAnimationFrame(() => {
+      const boxje = popup.querySelector(".info-popup-box");
+      let pgrootte = window.innerWidth <= 900 ? 16 : 28;
+      while (
+        pgrootte > 10 &&
+        boxje.scrollHeight > window.innerHeight * 0.82
+      ) {
+        pgrootte -= 1;
+        text.style.fontSize = pgrootte + "px";
+      }
+    });
   }
   document.body.appendChild(overlay);
   requestAnimationFrame(() => overlay.classList.add("visible"));
