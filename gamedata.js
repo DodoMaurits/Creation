@@ -357,7 +357,7 @@ const combinaties = [
     hint_en: `Wow.. a spectacular collision turns everything into flames and liquid...`,
     output: [
       { naam: "Vuur", naam_en: "Fire", icoon: "icons/Vuur.png", map: "Vuur",
-        geluid: "sound/Vuur.mp3", 
+        geluid: "sound/Vuur.m4a", 
         quote: `Tampering with fire will burn you, even in the coldest regions 
         <br><br>- H.S. Crow`
       },
@@ -638,7 +638,7 @@ const combinaties = [
     hint_en: `Lava moves, so just let it flow upwards...`,
     output: [
       { naam: "Vulkaan", naam_en: "Volcano", icoon: "icons/Vulkaan.png", map: "Landschap",
-        geluid: "sound/Vuur.mp3", 
+        geluid: "sound/Vuur.m4a", 
         quote: `Remind me that the most fertile lands were built by the fires of volcanoes 
         <br><br>- Andrea Gibson`
       },
@@ -6122,7 +6122,7 @@ const combinaties = [
     hint_en: `Along with the first forests, the first forest fires emerged as well.`,
     output: [
       { naam: "Brand", naam_en: "Forest fire", icoon: "icons/Brand.png", map: "Vuur", 
-        geluid: "sound/Vuur.mp3", 
+        geluid: "sound/Vuur.m4a", 
         quote: `No time to grieve for roses when the forests are burning
         <br><br>- Zbigniew Herbert`
       }
