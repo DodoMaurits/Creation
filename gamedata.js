@@ -2948,42 +2948,39 @@ const combinaties = [
         achtergrond: "afb/cambrischeexplosie.png",
         titel: "CAMBRISCHE EXPLOSIE", titel_en: "CAMBRIAN EXPLOSION",
         tekst: `
-        <span>In de gesteenten lezen wij in laagjes wanneer Wij wat creëerden. 541 miljoen jaar geleden zien wij plots
+      <span>In de gesteenten lezen wij in laagjes wanneer Wij wat creëerden. 541 miljoen jaar geleden zien wij plots
         op grote schaal macroscopische fossielen van schelpen, skeletten en pantsers. Vernoemd naar de eerste vindplek in 
-        Cambria, Wales, zien wij hoe meer dan de helft van alle fyla (de grootste bekende groepen van leven) ontstond in de 
-        periode van 541 tot 485 miljoen jaar geleden: het Cambrium.</span>
-        <br><br>
-        <span>Het uiteenvallen van supercontinent Pannotia creëerde nieuwe oceanen en lange, grillige kustlijnen. Continenten
-        dreven uiteen, riftscheuren en vulkanisme verrijkten de zeeën met mineralen zoals calcium (kalk) en silica 
-        (silicium) - bouwstoffen van de fossielen. Uit de grote toename van het calcietgebruik ontstonden dikke lagen krijt, 
-        zoals te zien bij de witte kliffen van Dover.</span>
-        <br><br>
-        <span>De Cambrische wereld was een broeikaswereld: het CO2-gehalte lag veel hoger dan nu, temperaturen waren immens
+        Cambria, Wales, zien wij hoe meer dan de helft van alle fyla (de grootste bekende groepen van leven) ontstond in 
+        de periode van 541 tot 485 miljoen jaar geleden: het Cambrium.</span>
+      <span>Het uiteenvallen van supercontinent Pannotia creëerde nieuwe oceanen en lange, grillige kustlijnen. 
+        Continenten dreven uiteen, riftscheuren en vulkanisme verrijkten de zeeën met mineralen zoals calcium (kalk) en 
+        silica (silicium) - bouwstoffen van de fossielen. Uit de grote toename van het calcietgebruik ontstonden dikke 
+        lagen krijt, zoals te zien bij de witte kliffen van Dover.</span>
+      <span>De Cambrische wereld was een broeikaswereld: het CO2-gehalte lag veel hoger dan nu, temperaturen waren immens
         hoog en nergens was poolijs te bekennen. Met name in de warme, zuurstofrijker wordende ondiepe zeeën was waar de
-        vroege geleedpotige trilobieten met extern skelet en gewervelde wormen met intern skelet leefden. De gewervelden 
-        hadden nog niet de geconcentreerde bol neuronen die wij nu hersenen noemen, maar wel zenuwstelsels met honderden tot 
-        duizenden zenuwcellen in een netwerk. Zij konden veel informatie verwerken, aangevoerd door sensorcellen, om 
-        vervolgens beslissingen door te geven aan gespecialiseerde organen.</span>`,
+        vroege geleedpotige trilobieten met extern skelet en gewervelde wormen met intern skelet leefden.</span>
+      <span>De gewervelden hadden nog niet de geconcentreerde bol neuronen die wij nu hersenen noemen, maar wel 
+        zenuwstelsels met honderden tot duizenden zenuwcellen in een netwerk. Zij konden veel informatie verwerken, 
+        aangevoerd door sensorcellen, om vervolgens beslissingen door te geven aan gespecialiseerde organen.</span>`,
 
         tekst_en: `
-        <span>In the rock strata, we can read the timeline of creation - layer by layer. 541 million years ago, 
+      <span>In the rock strata, we can read the timeline of creation - layer by layer. 541 million years ago, 
         macroscopic fossils of shells, skeletons and protective armour suddenly appeared on a massive scale. Named after
         the site where they were first discovered - Cambria, Wales - this period from 541 to 485 million years ago is 
         known as the Cambrian; it was during this time that more than half of all known phyla (the largest biological 
         groupings) emerged.</span>
-        <br><br>
-        <span>The breaukup of the supercontinent Pannotia created new oceans and long, irregular coastlines. As continents
+      <span>The breaukup of the supercontinent Pannotia created new oceans and long, irregular coastlines. As continents
         drifted apart, rifting and volcanic activity enriched the seas with minerals such as calcium (lime) and silica
         (silicon) - the building blocks of fossils. The significant increase in the use of calcite led to the formation 
         of thick layers of chalk, such as those een in the White Cliffs of Dover.</span>
-        <br><br>
-        <span>The Cambrian world was a greenhouse world: CO2 levels were much higher than they are today, temperatures 
+      <span>The Cambrian world was a greenhouse world: CO2 levels were much higher than they are today, temperatures 
         were immensely high, and there was no polar ice to be found anywhere. It was, in particular, within the warm,
         increasingly oxygen-rich shallow seas that early arthropods (trilobites with external skeletons) and 
-        vertebrate-like worms with internal skeletons lived. These vertebrates did not yet possess the concentrated cluster
-        of neurons that we now call a brain, but they did have nervous systems consisting of networks of hundreds to 
-        thousands of nerve cells. They were capable of processing large amounts of information - supplied by sensory cells
-        - and subsequently relaying decisions to specialised organs.</span>`
+        vertebrate-like worms with internal skeletons lived.</span>
+      <span>These vertebrates did not yet possess the concentrated cluster of neurons that we now call a brain, but they 
+        did have nervous systems consisting of networks of hundreds to thousands of nerve cells. They were capable of
+        processing large amounts of information - supplied by sensory cells - and subsequently relaying decisions to
+        specialised organs.</span>`
       }
     }
   }, /* ------------------ WORMEN ------------------ */
