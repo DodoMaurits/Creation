@@ -10105,6 +10105,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -10134,6 +10138,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -10290,6 +10298,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -10339,6 +10351,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -10515,6 +10531,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   }, /* ------------------ ZWANEN ------------------ */
@@ -10572,6 +10592,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -11161,6 +11185,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -11189,6 +11217,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -11719,6 +11751,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   }, /* ------------------ KRAAIEN ------------------ */
@@ -11786,6 +11822,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -11823,6 +11863,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -11967,6 +12011,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
@@ -11999,6 +12047,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   }, /* ------------------ PAPEGAAIEN ------------------ */
@@ -12053,6 +12105,10 @@ const combinaties = [
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
+      },
+      { naam: "Trots", naam_en: "Pride", icoon: "icons/Trots.png", map: "Brein", 
+        quote: `It's a fine thing to rise above pride, but you must have pride in order to do so
+        <br><br>- Georges Bernanos`
       }
     ]
   },
