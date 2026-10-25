@@ -2605,6 +2605,12 @@ const combinaties = [
     hint: `Meercelligheid heeft als voordeel dat het kan specialiseren in bewegen en de directe omgeving meten.`,
     hint_en: `The advantage of multicellularity is that it allows for specialisation in movement and in sensing the
     immediate environment.`,
+    vers: `Dat geldt ook voor voelen, waarnemen, gedachten, bewustzijn, Shariputra, alle dingen zijn in essentie leeg,
+    niet ontstaan, niet vernietigd, niet puur, niet verliezend, niet toenemend
+    <br><br>Hart Soetra`,
+    vers_en: `The same goes for sensation, perception, thought, consciousness, Shariputra, all things are essentially 
+    empty, not born, not destroyed, not pure, without loss, without gain
+    <br><br>Heart Sutra`,
     output: [
       { naam: "Spieren", naam_en: "Muscles", icoon: "icons/Spieren.png", map: "Biologie", 
         quote: `The muscles are the instruments of movement, and the bones are the levers 
