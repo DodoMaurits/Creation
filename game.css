@@ -1733,7 +1733,7 @@ body.result-open #corner-controls {
             }
   
             /* ---------------- GLOED ---------------- */
-            #result-overlay.episch .result-image-wrap::before {
+            #result-overlay.episch .result-image-wrap.nieuw-element::before {
               width: 90px;
               height: 90px;
               --gloed-dy: -2.7%;
