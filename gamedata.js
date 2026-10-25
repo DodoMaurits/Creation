@@ -20,6 +20,7 @@ const combinaties = [
         <br><br>- David Eagleman`
       },
       { naam: "Elektriciteit", naam_en: "Electricity", icoon: "icons/Elektriciteit.png", map: "Krachten",
+        geluid: "sound/Bliksem.mp3",
         quote: `We're electrical items and when we die the electricity goes somewhere else 
         <br><br>- Dominic Monaghan`
       }
@@ -1531,6 +1532,7 @@ const combinaties = [
     crackling effect.`,
     output: [
       { naam: "Bolbliksem", naam_en: "Ball lightning", icoon: "icons/Bolbliksem.png", map: "Vuur", 
+        geluid: "sound/Bliksem.mp3",
         quote: `Ball lightning is one of the most enigmatic atmospheric phenomena: small, glowing spheres that appear 
         during thunderstorms, with behavior that remains only partially understood
         <br><br>- Martin Uman`
