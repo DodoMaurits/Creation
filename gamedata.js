@@ -5318,6 +5318,7 @@ const combinaties = [
     hint_en: `All that dead organic matter never truly disappears and can accumulate in shallow water.`,
     output: [
       { naam: "Veen", naam_en: "Peat", icoon: "icons/Veen.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Peatlands hold the carbon and stories of our past and are key to a livable future
         <br><br>- Catherine Fitzgerald`
       }
@@ -5346,6 +5347,7 @@ const combinaties = [
     hint_en: `With vegetation under pressure, fuel grows rapidly.`,
     output: [
       { naam: "Bruinkool", naam_en: "Brown coal", icoon: "icons/Bruinkool.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Even coal shimmers in the light
         <br><br>- Jocelyn Murray`
       }
@@ -5357,6 +5359,7 @@ const combinaties = [
     hint_en: `Coal can also turn into stone...`,
     output: [
       { naam: "Steenkool", naam_en: "Coal", icoon: "icons/Steenkool.png", map: "Aarde", 
+        geluid: "sound/Berg.mp3",
         quote: `Without a whole lot of pressure, a diamond is just a piece of coal
         <br><br>- Miriam`
       }
