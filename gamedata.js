@@ -18569,11 +18569,11 @@ const combinaties = [
     input: ["Leger", "Leger"],  
     hint: `Wie de oorlog overleeft en verliest, wacht de onmenselijking.`,
     hint_en: `For those who survive the war but lose, dehumanisation awaits.`,
-    vers: `Alle dingen zijn in essentie leeg...<br>aldus, Shariputra, in leegte geen vorm... <br>geen onwetendheid en 
+    vers: `Alle dingen zijn in essentie leeg... aldus, Shariputra, in leegte geen vorm... geen onwetendheid en 
     geen onwetendheid-opheffing <br>tot en met geen ouderdom-dood, geen opheffing van ouderdom-dood...<br>alle verkeerde 
     illusies voorbij, het volmaakte Nirvana bereikt
     <br><br> Hart Soetra`,
-    vers_en: `All things are essentially empty... <br>thus, Shariputra, in emptiness is no form... <br>no ignorance 
+    vers_en: `All things are essentially empty... thus, Shariputra, in emptiness is no form... no ignorance 
     and also no ending of ignorance <br>and so on to no old age or death, no ending of old age and death...<br>
     far beyond the delusive thinking right here is Nirvana
     <br><br> Heart Sutra`,
@@ -20210,11 +20210,11 @@ const combinaties = [
     ],
     hint: `Aan al het leven komt een einde... behalve aan leven zelf?`,
     hint_en: `All life comes to an end... except for life itself?`,
-    vers: `Alle dingen zijn in essentie leeg...<br>aldus, Shariputra, in leegte geen vorm... <br>geen onwetendheid en 
+    vers: `Alle dingen zijn in essentie leeg... aldus, Shariputra, in leegte geen vorm... geen onwetendheid en 
     geen onwetendheid-opheffing <br>tot en met geen ouderdom-dood, geen opheffing van ouderdom-dood...<br>alle verkeerde 
     illusies voorbij, het volmaakte Nirvana bereikt
     <br><br> Hart Soetra`,
-    vers_en: `All things are essentially empty... <br>thus, Shariputra, in emptiness is no form... <br>no ignorance 
+    vers_en: `All things are essentially empty... thus, Shariputra, in emptiness is no form... no ignorance 
     and also no ending of ignorance <br>and so on to no old age or death, no ending of old age and death...<br>
     far beyond the delusive thinking right here is Nirvana
     <br><br> Heart Sutra`,
@@ -20490,11 +20490,11 @@ const combinaties = [
       ["Sorghum", "Vuur"], ["Sorghum", "Lava"], ["Sorghum", "Brand"], 
       ["Gierst", "Vuur"], ["Gierst", "Lava"], ["Gierst", "Brand"]
     ],
-    vers: `Alle dingen zijn in essentie leeg...<br>aldus, Shariputra, in leegte geen vorm... <br>geen onwetendheid en 
+    vers: `Alle dingen zijn in essentie leeg... aldus, Shariputra, in leegte geen vorm... geen onwetendheid en 
     geen onwetendheid-opheffing <br>tot en met geen ouderdom-dood, geen opheffing van ouderdom-dood...<br>alle verkeerde 
     illusies voorbij, het volmaakte Nirvana bereikt
     <br><br> Hart Soetra`,
-    vers_en: `All things are essentially empty... <br>thus, Shariputra, in emptiness is no form... <br>no ignorance 
+    vers_en: `All things are essentially empty... thus, Shariputra, in emptiness is no form... no ignorance 
     and also no ending of ignorance <br>and so on to no old age or death, no ending of old age and death...<br>
     far beyond the delusive thinking right here is Nirvana
     <br><br> Heart Sutra`,
