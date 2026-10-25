@@ -20,7 +20,7 @@ const combinaties = [
         <br><br>- David Eagleman`
       },
       { naam: "Elektriciteit", naam_en: "Electricity", icoon: "icons/Elektriciteit.png", map: "Krachten",
-        geluid: "sound/Bliksem.mp3",
+        geluid: "sound/Elektriciteit.mp3",
         quote: `We're electrical items and when we die the electricity goes somewhere else 
         <br><br>- Dominic Monaghan`
       }
@@ -135,6 +135,7 @@ const combinaties = [
     hint_en: `Even gasses when heated up can fall apart into charged particles.`,
     output: [
       { naam: "Plasma", naam_en: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
+        geluid: "sound/Elektriciteit.mp3",
         quote: `Plasma seems to have the kinds of properties one would like for life. It's somewhat like liquid water - 
         unpredictable and thus able to behave in an enormously complex fashion. It could probably carry as much information
         as DNA does
