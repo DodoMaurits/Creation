@@ -730,6 +730,7 @@ const combinaties = [
     hint_en: `What is all that remains when mountains are shaking?`, 
     output: [
       { naam: "Aardbeving", naam_en: "Earthquake", icoon: "icons/Aardbeving.png", map: "Krachten", 
+        geluid: "sound/Aardbeving.mp3",
         quote: `An earthquake achieves what the law promises but does not in practice maintain - the equality of all men
         <br><br>- Ignazio Silone`
       }
