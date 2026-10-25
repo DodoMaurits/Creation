@@ -4052,49 +4052,46 @@ const combinaties = [
         achtergrond: "afb/siluur.jpg",
         titel: "SILUUR 444-419 MA", titel_en: "SILURIAN 444-419 MA",
         tekst: `
-        <span>Een plotselinge ijstijd leidde tot minder ondiepe zeeën. Veel habitats gingen verloren en ecosystemen stortten
+      <span>Een plotselinge ijstijd leidde tot minder ondiepe zeeën. Veel habitats gingen verloren en ecosystemen stortten
         in. De oudst bekende massa-extinctie vond plaats en trof aldus het mariene leven, aangezien vrijwel al het leven
         zich nog onder water bevond. Naar schatting verdween circa 60-85 procent van alle mariene soorten, waaronder veel
         trilobieten en koralen.</span>
-        <br><br>
-        <span>De periode na de eerste massa-extinctie werd omgedoopt tot Siluur. Het mariene leven herstelde zich in een 
+      <span>De periode na de eerste massa-extinctie werd omgedoopt tot Siluur. Het mariene leven herstelde zich in een 
         warm klimaat met hoge zeespiegel, waarin koralen zich opnieuw goed konden gedijen en grote koraalriffen vormen. De
         pas geëvolueerde kaakvissen met een deels verbeend skelet floreerden in deze periode, waarbij sommige exemplaren
         tot wel een meter groot konden groeien. Zeeschorpioenen daarentegen bereikten resuachtige proporties van meerdere 
         meters lang.</span>
-        <br><br>
-        <span>Het Siluur was ook een cruciale periode in de overgang naar het landleven, nu sommige steenwortelalgen zich
+      <span>Het Siluur was ook een cruciale periode in de overgang naar het landleven, nu sommige steenwortelalgen zich
         naast mos ook evolueerden tot de eerste landplanten met bladeren en vaatstelsels. Na 3 miljard jaar in het water
         te hebben geleefd, moest op land naar nieuwe manieren worden gezocht om zowel te beschermen tegen droogte - middels
         een dikke beschermlaag - als CO2 of zuurstof op te kunnen nemen. Bladeren boden hiervoor een oplossing dankzij 
         kleine huidmondjes (poriën) die CO2 binnenlaten en water reguleren.</span>
-        <br><br>
-        <span>Voor grotere planten was ook de zwaartekracht een uitdaging. Nieuwe evolutionaire aanpassingen met stengels
+      <span>Voor grotere planten was ook de zwaartekracht een uitdaging. Nieuwe evolutionaire aanpassingen met stengels
         of hout en een pompend vaatstelsel waren cruciaal om voedingsstoffen en water tegen de zwaartekracht in naar alle
-        delen van het lichaam te transporteren. Tot slot leefden ook de eerste dieren op land bestaande uit eenvoudige
+        delen van het lichaam te transporteren.</span>
+      <span>Tot slot leefden ook de eerste dieren op land bestaande uit eenvoudige
         geleedpotige, zoals schorpioenen en voorlopers van de mijten en duizendpoten, die tijdelijk konden overleven op land,
         maar altijd dichtbij de ondiepe zeeën of brakwater bleven.</span>`,
 
         tekst_en: `
-        <span>A sudden ice age led to a reduction in shallow seas. Many habitats were lost, and ecosystems collapsed. The
+      <span>A sudden ice age led to a reduction in shallow seas. Many habitats were lost, and ecosystems collapsed. The
         oldest known mass extinction occurred, severely affecting marine life - as virtually all life at the time existed
         underwater. It is estimated that approximately 60-85 percent of all marine species vanished, including many
         trilobites and corals.</span>
-        <br><br>
-        <span>The period following the first mass extinction was named the Silurian. Marine life recovered in a warm
+      <span>The period following the first mass extinction was named the Silurian. Marine life recovered in a warm
         climate with high sea levels, allowing corals to thrive once again and form extensive coral reefs. Newly evolved
         jawed fish, possessing partially ossified skeletons, flourished during this era, with some specimens reaching up
         to a meter in length. Meanwhile, sea scorpions attained colossal proportions, growing to several meters in length.
-        </span><br><br>
-        <span>The Silurian period was also a crucial phase in the transition to life on land, as some stonewort-like algae
+        </span>
+      <span>The Silurian period was also a crucial phase in the transition to life on land, as some stonewort-like algae
         evolved - alongside mosses - into the first land plants possessing leaves and vascular systems. After 3 billion 
         years of aquatic existence, life on land necessitated new strategies: protection against desiccation (achieved 
         through a thick, protective outer layer) and the ability to take in CO2 or oxygen. Leaves provided a solution, 
         featuring tiny pores known as stomata that allow for the intake of CO2 while regulating water loss.</span>
-        <br><br>
-        <span>For larger plants, gravity also posed a challenge. New evolutionary adaptations - such as stems or woody
+      <span>For larger plants, gravity also posed a challenge. New evolutionary adaptations - such as stems or woody
         tissue and a vascular system capable of pumping - were crucial for transporting nutrients and water against the
-        force of gravity to all parts of the organism. Finally, the first animals to inhabit land were simple artrhopods,
+        force of gravity to all parts of the organism.</span>
+      <span>Finally, the first animals to inhabit land were simple artrhopods,
         including scorpions and the precursors to mites and centipedes; while they could survive on land for periods of 
         time, they always remained close to shallow seas or brackish water.</span>`
       }
