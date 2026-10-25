@@ -489,10 +489,10 @@ const combinaties = [
     hint: `De Aarde.. daar past een mooi broertje bij voor de nacht.`,
     hint_en: `The Earth.. I think a nice little brother would suit him well for the night.`,
     tijd: 4_527_000_000,
-    vers: `Niet mag de Zon de Maan inhalen, noch de nacht voorbijlopen aan de dag, en ieder van hen beweegt in een baan
-    <br><br>Ya-Sin (36:40)`,
-    vers_en: `No, the Sun may not overtake the Moon, nor is the night allowed to outrun the day, and each of them moves
-    in an orbit <br><br>Ya-Sin (36:40)`,
+    vers: `Niet mag de Zon de Maan inhalen, noch de nacht voorbijlopen <br>aan de dag, en ieder van hen beweegt in een
+    baan <br><br>Ya-Sin (36:40)`,
+    vers_en: `No, the Sun may not overtake the Moon, nor is the night allowed <br>to outrun the day, and each of them 
+    moves in an orbit <br><br>Ya-Sin (36:40)`,
     output: [
       { naam: "De Maan", naam_en: "The Moon", icoon: "icons/Maan.png", map: "Heelal",
         quote: `I always look up at the moon and see it as the single most romantic place within the cosmos 
