@@ -2028,27 +2028,26 @@ const combinaties = [
         achtergrond: "afb/eersteleven.png",
         titel: "NATUURKRACHT VIJF: LEVEN", titel_en: "NATURAL FORCE FIVE: LIFE",
         tekst: `
-        <span>Oceanen en plasma's - water en vuur - zijn nodig voor het creëren van leven uit niet-leven. In 1952 bootsten
+      <span>Oceanen en plasma's - water en vuur - zijn nodig voor het creëren van leven uit niet-leven. In 1952 bootsten
         wetenschappers dit proces voor het eerst na in een lab, waarbij een vroege aardatmosfeer elektrische schokken te 
         verduren kreeg. Binnen enkele dagen dreven eenvoudige organische moleculen als roze slib van aminozuren op het
         water. Dit gebeurde in het groot toen de Maan noog veel dichter bij de Aarde stond. Blikseminslagen van boven en
         spuwende vulkanen van onder maakten van de oceaan een chemische soep: de oersoep.</span>
         <br><br>
-        <span>Elektrische ontladingen zijn nodig om nieuwe moleculen te vormen, omdat temperaturen normaal te kil zijn.
+      <span>Elektrische ontladingen zijn nodig om nieuwe moleculen te vormen, omdat temperaturen normaal te kil zijn.
         En omgekeerd konden atomen zich pas vormen toen het Heelal koel genoeg was. Toch zijn uitzonderlijke omstandigheden
         nodig om deze moleculen aan elkaar vast te rijgen om zo eiwitten en koolhydraten te vormen. De Aarde bood precies 
         die omstandigheden waar chemisch rijke magma uit haar binnenste door de oceaanbodem sijpelde, beschermd tegen 
         zonnestraling en meteorietenbombardementen.</span>
-        <br><br>
-        <span>Cruciaal voor deze ketens is koolstof. In normale toestand heeft koolstof vier elektronen in de buitenste 
+      <span>Cruciaal voor deze ketens is koolstof. In normale toestand heeft koolstof vier elektronen in de buitenste 
         baan, ook al is daar ruimte voor acht. In aantallen van vier springen zij over of delen een atoom twee om twee. 
         Dit biedt vele mogelijkheden, zoals ringen en kettingen, die tezamen de oer-basisstoffen van een de vijfde 
-        natuurkracht vormde: leven. Waar één miljoen moleculen individueel de natuurwetten volgen, lijken ze tezamen 
+        natuurkracht vormde: leven.</span>
+      <span>Waar één miljoen moleculen individueel de natuurwetten volgen, lijken ze tezamen 
         doelgericht te handelen: in leven blijven en nieuw leven maken. Dit wil leven zo graag, dat het de omgeving scant 
         om te voorkomen dat het sterft. Zij handelen naar deze informatie en geven deze door aan hun nakomelingen in DNA.
         Leven volgt de vier natuurkrachten niet, zij kijken, reageren en gebruiken alles om leven te behouden.</span>
-        <br><br>
-        <span>Een cel is de kleinste vorm van leven. Als moleculaire metropolen bevatten zij een bibliotheek (celkern met
+      <span>Een cel is de kleinste vorm van leven. Als moleculaire metropolen bevatten zij een bibliotheek (celkern met
         genetisch materiaal), energiecentrales (mitochondriën), afvalverwerking (lysosomen), stadsmuren (membraan), 
         postkantoren (Golgi-apparaat), en ga zo maar door. Maar niet alle cellen zijn even geavanceerd. Luca - onze oudste 
         universele voorouder - leefde net zoals virussen niet geheel zelfstandig, maar waren afhankelijk van vulkanische 
@@ -2056,30 +2055,28 @@ const combinaties = [
         voedingsstoffen binnen te halen en afvalstoffen af te voeren.</span>`,
         
         tekst_en: `
-        <span>Oceans and plasmas - water and fire - are necessary for the creation of life from non-living matter. In 
+      <span>Oceans and plasmas - water and fire - are necessary for the creation of life from non-living matter. In 
         1952, scientists first replicated this process in a laboratory by subjecting a simulated early Earth 
         atmosphere to electrical discharges. Within a few days, simple organic molecules - an amino acid-rich, pinkish 
         sludge - were found floating on the water. This process occurred on a massive scale when the Moon was still 
         much closer to the Earth. Lightning strikes from above and erupting volcanoes from below transformed the ocean 
         into a chemical concoction: the primordial soup.</span>
-        <br><br>
-        <span>Electrical discharges are required to form new molecules, as ambient temperatures are typically too low. 
+      <span>Electrical discharges are required to form new molecules, as ambient temperatures are typically too low. 
         Conversely, atoms themselves could only form once the Universe had cooled sufficiently. Yet, exceptional 
         conditions are required to link these molecules together to form proteins and carbohydrates. Earth provided
         precisely such conditions, where chemically rich magma from the planet's interior seeped through the ocean floor,
         shielded from solar radiation and the bombardment of meteorites.</span>
-        <br><br>
-        <span>Carbon is crucial to these chains. In its standard state, carbon has four electrons in its outer shell,
+      <span>Carbon is crucial to these chains. In its standard state, carbon has four electrons in its outer shell,
         even though there is room for eight. These four electrons can jump between atoms or be shared in pairs. This
         versatility allows the formation of structures such as rings and chains, which together constituted the 
-        fundamental building blocks of what could be considered a fifth force of nature: life. While a million individual
+        fundamental building blocks of what could be considered a fifth force of nature: life.</span>
+      <span>While a million individual
         molecules may each follow the laws of physics, collectively they appear to act with a purpose; to sustain their
         own existence and to create new life. Life is so driven to persist that it constantly scans its environment to 
         avoid perishing. It acts upon this information and passes it on to its descendants via DNA. Life does not merely
         follow the four fundamental forces of nature; rather, it observes, reacts, and utilizes everything at its disposal
         to sustain itself.</span>
-        <br><br>
-        <span>A cell is the smallest form of life. Like molecular metropolises, they contain a library (a cell nucleus with 
+      <span>A cell is the smallest form of life. Like molecular metropolises, they contain a library (a cell nucleus with 
         genetic material), power plants (mitochondria), waste disposal systems (lysosomes), city walls (a membrane), post
         offices (the Golgi apparatus), and so on. However, not all cells are equally sophisticated. LUCA - our oldest
         universal ancestor - did not live entirely independently; much like viruses, these organisms relied on volcanic 
