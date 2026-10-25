@@ -882,6 +882,7 @@ const combinaties = [
     hint_en: `We also need to have a place that is always cold and full of ice.`,
     output: [
       { naam: "Poolgebied", naam_en: "The Arctic", icoon: "icons/Poolgebied.png", map: "Landschap", 
+        geluid: "sound/IJs.mp3", 
         quote: `The only place on Earth that is still as it should be. May we never tame it
         <br><br>- Andrew Denton`
       }
