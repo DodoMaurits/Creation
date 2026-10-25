@@ -8249,7 +8249,7 @@ const combinaties = [
     hint: `Ook aan het eind van de woestijn moet het ooit weer groen kleuren..`,
     hint_en: `Even at the end of the desert, things must eventually turn green again..`,
     output: [
-      { naam: "Savanne", naam_en: "Savanna", icoon: "icons/Savanne.png", map: "Landschap", 
+      { naam: "Savanne", naam_en: "Savannah", icoon: "icons/Savanne.png", map: "Landschap", 
         quote: `Lions rest in the shade of scattered trees while gazelles graze, elephants wander in ponderous silence, 
         and the plain itself pulses with life
         <br><br>- David Attenborough`
