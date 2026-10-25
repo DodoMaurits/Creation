@@ -538,6 +538,7 @@ function checkCombination() {
       lastExplanation = finalUitleg || null;
       addUnlockedElements(newElements);
       newElements.forEach(el => speelElementGeluid(el));
+      refreshHintDeck();
     });
     return;
   }
