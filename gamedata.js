@@ -247,6 +247,7 @@ const combinaties = [
     hint_en: `Corona - the incredible hot outer layer of the Sun, where the effect of heat becomes visible.`,
     output: [
       { naam: "Zonnewind", naam_en: "Solar wind", icoon: "icons/Zonnewind.png", map: "Vuur",
+        geluid: "sound/Druk.mp3", 
         quote: `The solar wind is a continuous outflow of charged particles from the Sun, shaping the space environment 
         throughout the solar system
         <br><br>- Eugene Parker`
@@ -541,6 +542,7 @@ const combinaties = [
         <br><br>- Ranata Suzuki`
       },
       { naam: "Granietmagma", naam_en: "Granite magma", icoon: "icons/Granietmagma.png", map: "Vuur",
+        geluid: "sound/Vuur.m4a", 
         quote: `Of course the entire planet Earth consists of magma under us, and only the very inner-core is different 
           <br><br>- Werner Herzog`
       }
