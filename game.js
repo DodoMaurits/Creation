@@ -492,7 +492,7 @@ function checkCombination() {
     if (missing.length > 0) {
       selected.forEach(e => e.dom.classList.remove("selected"));
       selected = [];
-      showThresholdExplanation(firstMatch.uitleg.threshold, null, missing, () => {});
+      showThresholdExplanation(firstMatch.uitleg.threshold, missing, () => {});
       return;
     }
   }
