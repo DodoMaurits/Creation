@@ -7643,6 +7643,8 @@ const combinaties = [
       /* --- ZADEN --- */
        ["Bijen", "Cacao"]
     ],
+    hint: `Zo zoet, de bloemetjes en bijtjes...`,
+    hint_en: `So sweet, the flowers and bees.`,
     vers: `Uit haar buik komt een drank van verschillende kleuren, <br>daarin is genezing voor de mens, aldus zit daarin
     zeker een teken <br>voor de mensen die nadenken <br><br>De Bij (16:69)`,
     vers_en: `From their belly comes a drink of various colours <br>in which there is healing for mankind, indeed,
