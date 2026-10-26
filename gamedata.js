@@ -2346,6 +2346,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Foraminiferen", naam_en: "Foraminifera", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
         <br><br>- Thomas Huxley`
       },
@@ -2363,6 +2364,7 @@ const combinaties = [
     tijd: 800_000_000,
     output: [
       { naam: "Stralendiertjes", naam_en: "Radiolaria", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
         <br><br>- Ernst Haeckel`
       }
@@ -2406,6 +2408,7 @@ const combinaties = [
     input: ["Schimmel", "Detritus"],
     output: [
       { naam: "Schimmel", naam_en: "Fungi", icoon: "icons/Schimmel.png", map: "Pril leven",
+        geluid "sound/Evolutie.m4a",
         quote: `Fungi are the interface organisms between life and death 
         <br><br>- Paul Stamets`
       },
@@ -2428,6 +2431,7 @@ const combinaties = [
         <br><br>- Bernard Beckett`
       },
       { naam: "Sponzen", naam_en: "Sponges", icoon: "icons/Sponzen.png", map: "Waterdieren", 
+        geluid "sound/Evolutie.m4a",
         quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
         must first be able to absorb it well 
         <br><br>- Jim Rohn`
@@ -2470,6 +2474,7 @@ const combinaties = [
     tijd: 1_600_000_000,
     output: [
       { naam: "Archaeplastiden", naam_en: "Archaeplastida", icoon: "icons/Archaeplastiden.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `The origin of plastids within the archaeplastida marked one of the most consequential events in the 
         history of life 
         <br><br>- Andrew Knoll`
@@ -2576,6 +2581,7 @@ const combinaties = [
     hint_en: `Some unicellular fungi specialize in sugars.`,
     output: [
       { naam: "Gist", naam_en: "Yeast", icoon: "icons/Gist.png", map: "Pril leven",
+        geluid "sound/Evolutie.m4a",
         quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
         <br><br>- Ralph Emerson`
       }
@@ -2587,6 +2593,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Gist", naam_en: "Yeast", icoon: "icons/Gist.png", map: "Pril leven",
+        geluid "sound/Evolutie.m4a",
         quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
         <br><br>- Ralph Emerson`
       },
@@ -2672,6 +2679,7 @@ const combinaties = [
     tijd: 1_500_000_000,
     output: [
       { naam: "Rode algen", naam_en: "Red algae", icoon: "icons/Rode_algen.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `The red algae represent one of the most ancient lineages of eukaryotic life 
         <br><br>- Andrew Knoll`
       },
@@ -2700,6 +2708,7 @@ const combinaties = [
     tijd: 800_000_000,
     output: [
       { naam: "Oercnidaria", naam_en: "Urcnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `Grip the nettle firmly and it will become a stick with which to beat your enemy 
         <br><br>- Isaac Asimov`
       },
@@ -2722,6 +2731,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oercnidaria", naam_en: "Urcnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `Grip the nettle firmly and it will become a stick with which to beat your enemey 
         <br><br>- Isaac Asimov`
       },
@@ -2744,6 +2754,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerbilateria", naam_en: "Urbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `We are all worms. But I believe that I am a glow-worm 
         <br><br>- Winston Churchill`
       },
@@ -2783,6 +2794,7 @@ const combinaties = [
     hint_en: `An underwater landscape? I'd say more coral.`,
     output: [
       { naam: "Rif", naam_en: "Reef", icoon: "icons/Rif.png", map: "Landschap", 
+        geluid "sound/AngelFemaleLaag.m4a",
         quote: `Coral reefs are the backbone for the entire ocean. They are the nursery for the ocean. About a quarter 
         of all marine life in the ocean spends part of its lifecycle on a coral reef 
         <br><br>- Jeff Orbowski`
