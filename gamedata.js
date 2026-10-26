@@ -21218,7 +21218,8 @@ const combinaties = [
       ["Agnathen", "Zenuwen"], ["Zeeduivels", "Zenuwen"], ["Platvissen", "Zenuwen"], ["Piranha", "Zenuwen"], 
       /* --- GELEEDPOTIGEN --- */
       ["Oerinsecten", "Zenuwen"], ["Vlokreeftjes", "Zenuwen"], ["Garnalen", "Zenuwen"], ["Kreeften", "Zenuwen"], 
-      ["Krabben", "Zenuwen"], ["Heremietkreeften", "Zenuwen"], ["Zeeschorpioenen", "Zenuwen"], 
+      ["Krabben", "Zenuwen"], ["Zwaardstaarten", "Zenuwen"], ["Heremietkreeften", "Zenuwen"], 
+      ["Zeeschorpioenen", "Zenuwen"], 
       /* --- KLEIN LANDLEVEN ---*/
       ["Zilvervisjes", "Zenuwen"], ["Termieten", "Zenuwen"], ["Wandelende takken", "Zenuwen"], 
       ["Kakkerlakken", "Zenuwen"], ["Oerhymenopteren", "Zenuwen"], ["Slakken", "Zenuwen"]
@@ -21376,8 +21377,6 @@ const combinaties = [
       /* --- VISSEN --- */
       ["Clownvissen", "Zenuwen"], ["Doktersvissen", "Zenuwen"], ["Papegaaivissen", "Zenuwen"], ["Karpers", "Zenuwen"], 
       ["Zeepaardjes", "Zenuwen"], ["Vliegende vissen", "Zenuwen"], ["Maanvissen", "Zenuwen"], ["Goudvissen", "Zenuwen"],
-      /* --- GELEEDPOTIGEN --- */
-      ["Zwaardstaarten", "Zenuwen"],
       /* --- KLEIN LANDLEVEN --- */
       ["Muggen", "Zenuwen"], ["Vliegen", "Zenuwen"], ["Kevers", "Zenuwen"], ["Vlinders", "Zenuwen"],
       ["Libellen", "Zenuwen"], ["Mieren", "Zenuwen"], ["Wespen", "Zenuwen"], ["Bijen", "Zenuwen"],
