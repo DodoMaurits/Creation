@@ -150,7 +150,7 @@ const combinaties = [
     tijd: 13_700_620_000,
     output: [
       { naam: "Radioactiviteit", naam_en: "Radioactivity", icoon: "icons/Radioactiviteit.png", map: "Krachten",
-        geluid: "Radioactiviteit.m4a",
+        geluid: "sound/Radioactiviteit.m4a",
         quote: `Nuclear power is one hell of a way to boil water 
         <br><br>- Albert Einstein`
       }
@@ -1185,6 +1185,7 @@ const combinaties = [
     hint_en: `Don't let the clouds descend - who knows what might happen then.`,
     output: [
       { naam: "Regen", naam_en: "Rain", icoon: "icons/Regen.png", map: "Water", 
+        geluid: "sound/Regen.m4a",
         quote: `It can't rain all the time 
         <br><br>- James O'Barr`
       }
