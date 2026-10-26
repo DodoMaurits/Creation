@@ -342,7 +342,7 @@ const combinaties = [
     own system?`,
     output: [
       { naam: "Zwart Gat", naam_en: "Black Hole", icoon: "icons/Zwartgat.png", map: "Heelal",
-        geluid: "sound/Explosie.mp3", 
+        geluid: "sound/ZwartGat.m4a", 
         quote: `I believe in black holes. I believe that as the universe empties into nothingness, 
         past and future will smack together in the last swirl around the drain
         <br><br>- Abraham Verghese`
