@@ -2821,7 +2821,7 @@ const combinaties = [
   {
     input: ["Oercnidaria", "Evolutie"],
     hint: `Ik houd van symmetrie, maar kan jij je symmetrische dieren voorstellen?`,
-    hint_en: `I love symmetrie, but can you imagine symmetrical animals?`,
+    hint_en: `I love symmetry, but can you imagine symmetrical animals?`,
     tijd: 580_000_000,
     output: [
       { naam: "Kwallen", naam_en: "Jellyfish", icoon: "icons/Kwallen.png", map: "Waterdieren", 
