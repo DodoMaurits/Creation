@@ -1213,6 +1213,7 @@ const combinaties = [
     hint_en: `Oh dear, oh dear, rain from black clouds.`,
     output: [
       { naam: "Zure regen", naam_en: "Acid rain", icoon: "icons/Zure_regen.png", map: "Water", 
+        geluid: "sound/Regen.m4a",
         quote: `Tragedy is like strong acid - it dissolves away all but the very gold of truth 
         <br><br>- D.H. Lawrence`
       }
@@ -6234,6 +6235,7 @@ const combinaties = [
     hint_en: `More vegetation, more moisture, more life in the forest.`,
     output: [
       { naam: "Regenwoud", naam_en: "Rainforest", icoon: "icons/Regenwoud.png", map: "Landschap", 
+        geluid: "sound/Regen.m4a",
         quote: `When we walk into a grove of trees or under an open sky the magic of nature takes over
         and the heaviness of life lifts a little
         <br><br>- Natassia Cassinero`
