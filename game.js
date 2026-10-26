@@ -567,7 +567,7 @@ function showThresholdExplanation(threshold, missing, callback) {
   overlay.style.width = "100%";
   overlay.style.height = "100%";
   overlay.style.background = "rgba(0,0,0,0.7)";
-  overlay.style.zIndex = 2000;
+  overlay.style.zIndex = 6000;
   const box = document.createElement("div");
   box.className = "explanation-box";
   const title = document.createElement("div");
