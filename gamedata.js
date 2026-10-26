@@ -150,6 +150,7 @@ const combinaties = [
     tijd: 13_700_620_000,
     output: [
       { naam: "Radioactiviteit", naam_en: "Radioactivity", icoon: "icons/Radioactiviteit.png", map: "Krachten",
+        geluid: "Radioactiviteit.m4a",
         quote: `Nuclear power is one hell of a way to boil water 
         <br><br>- Albert Einstein`
       }
