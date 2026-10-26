@@ -686,7 +686,7 @@ const combinaties = [
         <br><br>- A.J. Grenville`
       },
       { naam: "Kwarts", naam_en: "Quartz", icoon: "icons/Kwarts.png", map: "Aarde",
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `Quartz is as hard as anything it is likely to meet with in use 
         <br><br>- Frank Wade`
       },
@@ -708,7 +708,7 @@ const combinaties = [
     hint_en: `Under pressure, basalt logically undergoes a metamorphosis.`,
     output: [
       { naam: "Jade", naam_en: "Jade", icoon: "icons/Jade.png", map: "Aarde",
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `The gentleman compares his virtue to jade
         <br><br>- Confucius`
       }
@@ -776,7 +776,7 @@ const combinaties = [
         <br><br>- Helen Keller`
       },
       { naam: "Goud", naam_en: "Gold", icoon: "icons/Goud.png", map: "Chemie", 
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `Praise, like gold and diamonds, owes its value only to its scarcity 
         <br><br>- Samuel Johnson`
       },
@@ -800,7 +800,7 @@ const combinaties = [
     hint_en: `A rather remarkable substance arises when sulfur is stirred into the chemical soup of magma vapour.`,
     output: [
       { naam: "Kwik", naam_en: "Mercury", icoon: "icons/Kwik.png", map: "Chemie", 
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `Mercury contains all that the Sages seek; it dissolves, softens, and extracts the soul from the body
         <br><br>- Edward Kelley`
       }
@@ -1719,7 +1719,7 @@ const combinaties = [
     input: ["Rivier", "Basalt"],
     output: [
       { naam: "Goud", naam_en: "Gold", icoon: "icons/Goud.png", map: "Chemie", 
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `Praise, like gold and diamonds, owes its value only to its scarcity 
         <br><br>- Samuel Johnson`
       },
@@ -1814,7 +1814,7 @@ const combinaties = [
     hint_en: `The most beautiful stone is formed under high pressure and heat.`,
     output: [
       { naam: "Kwartsiet", naam_en: "Quartzite", icoon: "icons/Kwartsiet.png", map: "Aarde", 
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `The conversion of sandstone into quartzite is sometimes the work of percolating water
         under ordinary conditions 
         <br><br>- John Flett`
@@ -1855,7 +1855,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kwarts", naam_en: "Quartz", icoon: "icons/Kwarts.png", map: "Aarde", 
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `Quartz is as hard as anything it is likely to meet with in use 
         <br><br>- Frank Wade`
       }
@@ -3789,7 +3789,7 @@ const combinaties = [
     hint_en: `Oh, how annoying that grain of sand can be for shellfish.`,
     output: [
       { naam: "Parel", naam_en: "Pearl", icoon: "icons/Parel.png", map: "Biologie", 
-        geluid: "sound/Kwik.mp3", 
+        geluid: "sound/Glim.m4a", 
         quote: `We build a shell around it, like an oyster dealing with a painful particle of grit, coating it 
         with smooth pearl layers in order to cope
         <br><br>- Neil Gaiman`
