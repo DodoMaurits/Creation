@@ -2099,6 +2099,7 @@ const combinaties = [
     tijd: 3_700_000_000,
     output: [
       { naam: "Bacteriën", naam_en: "Bacteria", icoon: "icons/Bacteriën.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `We are all of us walking communities of bacteria. The world shimmers, a pointillist landscape
         made of tiny living beings 
         <br><br>- Lynn Margulis`
@@ -2190,6 +2191,7 @@ const combinaties = [
         <br><br>- Diane Ackerman`
       },
       { naam: "Leca", naam_en: "Leca", icoon: "icons/Leca.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `The cell is immortal. It is merely the fluid in which it floats that degenerates. Renew this fluid 
         at regular intervals, give the cells at they require for nutrition, and as far as we know, the pulsation of 
         life can go on forever 
@@ -2291,6 +2293,7 @@ const combinaties = [
     tijd: 1_800_000_000,
     output: [
       { naam: "Amoeben", naam_en: "Amoebas", icoon: "icons/Amoeben.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
         generals, fade away. It just divides and becomes two new amoebas 
         <br><br>- George Wald`
@@ -2307,14 +2310,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Amoeben", naam_en: "Amoebas", icoon: "icons/Amoeben.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
         generals, fade away. It just divides and becomes two new amoebas 
         <br><br>- George Wald`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       }
     ]
   },
@@ -2324,6 +2328,7 @@ const combinaties = [
     hint_en: `What does a single-celled organism use as a shield? That's right: a grain of sand.`,
     output: [
       { naam: "Foraminiferen", naam_en: "Foraminifera", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
         <br><br>- Thomas Huxley`
       }
