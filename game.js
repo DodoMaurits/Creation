@@ -557,6 +557,7 @@ function showThresholdExplanation(threshold, missing, callback) {
   if (oldOverlay) oldOverlay.remove();
   const overlay = document.createElement("div");
   overlay.id = "threshold-overlay";
+  document.body.classList.add("result-open");
   overlay.style.display = "flex";
   overlay.style.justifyContent = "center";
   overlay.style.alignItems = "center";
@@ -591,6 +592,7 @@ function showThresholdExplanation(threshold, missing, callback) {
   button.textContent = TAAL === "en" ? "Continue" : "Ga verder";
   button.onclick = () => {
     overlay.remove();
+    document.body.classList.remove("result-open");
     if (callback) callback();
   };
   box.appendChild(title);
