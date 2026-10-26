@@ -2696,6 +2696,7 @@ const combinaties = [
     hint_en: `Sugared fungi.. that can't be good for the brain.`,
     output: [
       { naam: "Alcohol", naam_en: "Alcohol", icoon: "icons/Alcohol.png", map: "Chemie",
+        geluid "sound/Evolutie.m4a",
         quote: `Reality is an illusion that occurs duo to the lack of alcohol
         <br><br>- W.C. Fields`
       }
@@ -2807,6 +2808,7 @@ const combinaties = [
     hint_en: `Grant plants a body too, whose beauty I'm frond of.`,
     output: [
       { naam: "Roodwieren", naam_en: "Red seaweed", icoon: "icons/Roodwieren.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `To know how it feels to be seaweed you have to get in the water 
         <br><br>- Saul Bellow`
       }
@@ -2819,6 +2821,7 @@ const combinaties = [
     tijd: 700_000_000,
     output: [
       { naam: "Steenwortelalgen", naam_en: "Stoneworts", icoon: "icons/Steenwortelalgen.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
@@ -2831,6 +2834,7 @@ const combinaties = [
     tijd: 700_000_000,
     output: [
       { naam: "Groenwieren", naam_en: "Green seaweed", icoon: "icons/Groenwieren.png", map: "Pril leven", 
+        geluid "sound/Evolutie.m4a",
         quote: `Green is the fresh emblem of well found hopes. In blue the spirit can wander, but in green it can rest 
         <br><br>- Mary Webb`
       },
@@ -2847,6 +2851,7 @@ const combinaties = [
     tijd: 580_000_000,
     output: [
       { naam: "Kwallen", naam_en: "Jellyfish", icoon: "icons/Kwallen.png", map: "Waterdieren", 
+        geluid "sound/AngelFemaleLaag.m4a",
         quote: `A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive 
         opening through which it both eats and excretes - as regrettable an example of economy of design as ever was 
         <br><br>- Jeffrey Kluger`
@@ -2944,11 +2949,12 @@ const combinaties = [
     hint_en: `Now the conditions are right for the urbilateria to flourish...`,
     tijd: 541_000_000,
     output: [
-      { naam: "Wormen", naam_en: "Worms", icoon: "icons/Wormen.png", map: "Waterdieren", 
+      { naam: "Wormen", naam_en: "Worms", icoon: "icons/Wormen.png", map: "Waterdieren",
         quote: `Along the shores and in the shallow seas live countless worms whose quiet labors help shape the ocean floor 
         <br><br>- Rachel Carson`
       },
       { naam: "Oertrochozoa", naam_en: "Urtrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
         <br><br>- Andrew H. Knoll`
       },
@@ -3051,6 +3057,7 @@ const combinaties = [
     hint_en: `For sentient animals, food is more than just a reward`, 
     output: [
       { naam: "Oertrochozoa", naam_en: "Urtrochozoa", icoon: "icons/Oertrochozoa.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `When animals first evolved skeletons and shells, the fossil record suddenly found its voice
         <br><br>- Andrew H. Knoll`
       },
@@ -3078,6 +3085,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zeesterren", naam_en: "Starfish", icoon: "icons/Zeesterren.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `In the tidal pools the starfish cling to the rocks while the waves break over them 
         <br><br>- Rachel Carson`
       },
@@ -3094,6 +3102,7 @@ const combinaties = [
     hint_en: `Those little ancestors of the worms were very handy with bones.`,
     output: [
       { naam: "Lancetvisjes", naam_en: "Lancelets", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the 
         sea <br><br>- Empedocles`
       },
@@ -3150,6 +3159,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Lancetvisjes", naam_en: "Lancelets", icoon: "icons/Lancetvisjes.png", map: "Vissen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `For before this I was born once a boy, and a maiden, and a plant, and a bird, and a darting fish in the sea 
         <br><br>- Empedocles`
       },
@@ -3179,6 +3189,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Agnathen", naam_en: "Agnathans", icoon: "icons/Agnathen.png", map: "Vissen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole 
         life believing that it is stupid 
         <br><br>- Albert Einstein`
@@ -3211,6 +3222,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oergeleedpotigen", naam_en: "Urarthropods", icoon: "icons/Oergeleedpotigen.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `So important are insects and other land-dwelling arthropods that if all were to disappear, 
         humanity probably could not last more than a few months
         <br><br>- E.O. Wilson`
@@ -3244,6 +3256,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Manteldieren", naam_en: "Tunicates", icoon: "icons/Manteldieren.png", map: "Waterdieren",
+        geluid: "sound/Bubbels.m4a",
         quote: `The ascidians are among the most extraordinary of marine animals 
         <br><br>- Thomas Huxley`
       },
@@ -3266,6 +3279,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Beerdiertjes", naam_en: "Tardigrades", icoon: "icons/Beerdiertjes.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `There is one living organism, called a tardigrade, that has survived the five great mass extinctions on 
         Earth, and it can survive in vacuums in space and boiling hot water and freezing subzero temperatures 
         <br><br>- Alycia Carey`
@@ -3292,6 +3306,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zee-egels", naam_en: "Sea urchins", icoon: "icons/Zee-egels.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Why should I copy this owl, this sea urchin? Why should I try to imitate nature? I might just as well try
         to trace a perfect circle
         <br><br>- Pablo Picasso`
@@ -3353,7 +3368,8 @@ const combinaties = [
     hint: `Van trochozoa is het een kleine stap naar de weekdieren.`, 
     hint_en: `From trochozoa it is a small step to the mollusks.`, 
     output: [
-      { naam: "Inktvissen", naam_en: "Squids", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+      { naam: "Inktvissen", naam_en: "Squids", icoon: "icons/Inktvissen.png", map: "Waterdieren",   
+        geluid: "sound/Oceaan.m4a",
         quote: `I would love to see a giant squid. Very few people have seen them. 
         And only about half a dozen people have seen one alive
         <br><br>- David Attenborough`
@@ -3374,6 +3390,7 @@ const combinaties = [
     hint_en: `Some animals trigger specific substances in the brain to receive a sense of satiety..`,
     output: [
       { naam: "Inktvissen", naam_en: "Squids", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `I would love to see a giant squid. Very few people have seen them. 
         And only about half a dozen people have seen one alive
         <br><br>- David Attenborough`
@@ -3401,6 +3418,7 @@ const combinaties = [
     hint_en: `Between certain animals, you will find bad blood..`,
     output: [
       { naam: "Inktvissen", naam_en: "Squids", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `I would love to see a giant squid. Very few people have seen them. 
         And only about half a dozen people have seen one alive
         <br><br>- David Attenborough`
@@ -3427,6 +3445,7 @@ const combinaties = [
     hint_en: `Provide protection to the trochozoa, for they are so weak.`, 
     output: [
       { naam: "Zeeslakken", naam_en: "Sea snails", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Even a snail will eventually reach its destination
         <br><br>- Gail Tsukiyama`
       },
@@ -3449,6 +3468,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zeeslakken", naam_en: "Sea snails", icoon: "icons/Zeeslakken.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Even a snail will eventually reach its destination
         <br><br>- Gail Tsukiyama`
       },
@@ -3475,6 +3495,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Tweekleppigen", naam_en: "Bivalves", icoon: "icons/Tweekleppigen.png", map: "Waterdieren", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Every life deserves a certain amount of dignity, no matter how poor or damaged the shell
         that carries it
         <br><br>- Rick Bragg`
@@ -3520,6 +3541,7 @@ const combinaties = [
         <br><br>- Robert Genn`
       },
       { naam: "Oerkreeftjes", naam_en: "Urcrustaceans", icoon: "icons/Oerkreeftjes.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Crustaceans represent one of the most diverse and ecologically important groups of animals in the sea
         <br><br>- Martin Thiel`
       },
@@ -3554,6 +3576,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Trilobieten", naam_en: "Trilobites", icoon: "icons/Trilobieten.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `The eye of the trilobite tells us that the sun shone on the old beach where he lived; for there is 
         nothing in nature without a purpose, and when so complicated an organ was made to receive the light, there must 
         have been light to enter it 
@@ -3590,6 +3613,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oercheliceraten", naam_en: "Urchelicerates", icoon: "icons/Oercheliceraten.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `The seas of the Cambrian were a theatre of evolutionary invention, 
         where arthropods in particular explored a bewildering variety of forms
         <br><br>- Richard Fortey`
@@ -3658,6 +3682,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerkreeftjes", naam_en: "Urcrustaceans", icoon: "icons/Oerkreeftjes.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Crustaceans represent one of the most diverse and ecologically important groups of animals in the sea
         <br><br>- Martin Thiel`
       },
@@ -3689,6 +3714,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerinsecten", naam_en: "Urinsects", icoon: "icons/Oerinsecten.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `An insect is more complex than a star.. and is a far greater challenge to understand
         <br><br>- Martin Rees`
       },
@@ -3728,6 +3754,7 @@ const combinaties = [
     tijd: 490_000_000,
     output: [
       { naam: "Nautilussen", naam_en: "Nautiluses", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `You don't have to bee Greek to enjoy this one
         <br><br>- Jeff Smith`
       }
@@ -3746,6 +3773,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Nautilussen", naam_en: "Nautiluses", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `You don't have to bee Greek to enjoy this one
         <br><br>- Jeff Smith`
       },
@@ -3773,6 +3801,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Nautilussen", naam_en: "Nautiluses", icoon: "icons/Nautilussen.png", map: "Waterdieren", 
+        geluid: "sound/Oceaan.m4a",
         quote: `You don't have to bee Greek to enjoy this one
         <br><br>- Jeff Smith`
       },
@@ -3814,6 +3843,7 @@ const combinaties = [
     hint_en: `Chelicerates show just how much scorpions and spiders actually have in common.`,
     output: [
       { naam: "Zeeschorpioenen", naam_en: "Sea scorpions", icoon: "icons/Zeeschorpioenen.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Some eurypterids reached enormous size, with powerful appendages adapted for grasping and cutting prey
         <br><br>- Erik Tetlie`
       },
@@ -3860,6 +3890,7 @@ const combinaties = [
     hint_en: `It is evolutionarily advantageous for prey to be instantly paralysed by toxic substances.`,
     output: [
       { naam: "Zeeschorpioenen", naam_en: "Sea scorpions", icoon: "icons/Zeeschorpioenen.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Some eurypterids reached enormous size, with powerful appendages adapted for grasping and cutting prey
         <br><br>- Erik Tetlie`
       },
@@ -3890,6 +3921,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Zeeschorpioenen", naam_en: "Sea scorpions", icoon: "icons/Zeeschorpioenen.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Some eurypterids reached enormous size, with powerful appendages adapted for grasping and cutting prey
         <br><br>- Erik Tetlie`
       },
@@ -3933,6 +3965,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerspinachtigen", naam_en: "Urarachnids", icoon: "icons/Oerspinachtigen.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Arachnids are defined by their eight legs and highly specialized predatory adaptations
         <br><br>- Herbert Levi`
       },
@@ -3975,6 +4008,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zwaardstaarten", naam_en: "Horseshoe crabs", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
+        geluid: "sound/Bubbels.m4a",
         quote: `The horseshoe crab is a reminder that survival does not always require change
         <br><br>- Stephen Gould`
       },
@@ -4003,6 +4037,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Krill", naam_en: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
+        geluid: "sound/Oceaan.m4a",
         quote: `Tiny creatures such as krill form the living foundation of ocean life
         <br><br>- Sylvia Earle`
       },
@@ -4034,6 +4069,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Aasgarnalen", naam_en: "Opossum shrimps", icoon: "icons/Aasgarnalen.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Brine shrimp are extremophiles, capable of thriving in hypersaline lakes where few other animals can 
         survive
         <br><br>- Diane McCauley`
@@ -4235,13 +4271,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerstraalvinnigen", naam_en: "Uractinopterygians", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `In order to see a fish you must watch the water
         <br><br>- Bodhidharma`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4260,6 +4297,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oerstraalvinnigen", naam_en: "Uractinopterygians", icoon: "icons/Oerstraalvinnigen.png", map: "Vissen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `In order to see a fish you must watch the water
         <br><br>- Bodhidharma`
       },
@@ -4268,9 +4306,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4329,14 +4367,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Tiktaalik", naam_en: "Tiktaalik", icoon: "icons/Tiktaalik.png", map: "Vissen",
+        geluid: "sound/Bubbels.m4a",
         quote: `Tiktaalik is a fish with a neck and wrists — a mix of features that shows us how bodies were reshaped as 
         vertebrates moved onto land
         <br><br>- Neil Shubin`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4355,6 +4394,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Tiktaalik", naam_en: "Tiktaalik", icoon: "icons/Tiktaalik.png", map: "Vissen",
+        geluid: "sound/Bubbels.m4a",
         quote: `Tiktaalik is a fish with a neck and wrists — a mix of features that shows us how bodies were reshaped as 
         vertebrates moved onto land
         <br><br>- Neil Shubin`
@@ -4364,9 +4404,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -7346,6 +7386,7 @@ const combinaties = [
     hint_en: `From red, it's a small step to brown.. algaenerally speaking.`,
     output: [
       { naam: "Bruinwieren", naam_en: "Kelps", icoon: "icons/Bruinwieren.png", map: "Pril leven", 
+        geluid "sound/AngelFemaleLaag.m4a",
         quote: `Kelp forests are the towering cities of the sea, providing shelter, food, and life to countless marine 
         organisms
         <br><br>- Jeremy Jackson`
@@ -7544,6 +7585,7 @@ const combinaties = [
     hint_en: `Have you thought about underwater forests?`,
     output: [
       { naam: "Kelpwoud", naam_en: "Kelp forest", icoon: "icons/Kelpwoud.png", map: "Landschap", 
+        geluid "sound/AngelFemaleLaag.m4a",
         quote: `Kelp forests are among the most productive and dynamic ecosystems on Earth, forming underwater jungles 
         that shelter thousands of species
         <br><br>- Nancy Foster`
