@@ -816,7 +816,7 @@ const combinaties = [
     tijd: 4_400_000_000,
     output: [
       { naam: "Water", naam_en: "Water", icoon: "icons/Water.png", map: "Water",
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `Water is the softest thing, yet it can penetrate mountains and earth. 
         This shows clearly the principle of softness overcoming hardness 
         <br><br>- Lao Tzu`
@@ -991,7 +991,7 @@ const combinaties = [
     hint_en: `The visible influence of the Moon lies in the tides`,
     output: [
       { naam: "Golf", naam_en: "Wave", icoon: "icons/Golf.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `You don't understand. You're not a wave. You're part of the ocean 
         <br><br>- Morrie Schwartz`
       }
@@ -1049,7 +1049,7 @@ const combinaties = [
     hint_en: `The more water, the better.`,
     output: [
       { naam: "Meer", naam_en: "Lake", icoon: "icons/Meer.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `Make your heart like a lake <br>with a calm, still surface and great depths of kindness
         <br><br>- Lao Tzu`
       }
@@ -1106,7 +1106,7 @@ const combinaties = [
     hint_en: `Water on land might silt up...`,
     output: [
       { naam: "Ven", naam_en: "Wetland", icoon: "icons/Ven.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `Feather footed through the plashy fen passes the questing vole 
         <br><br>- Evelyn Waugh`
       }
@@ -1170,7 +1170,7 @@ const combinaties = [
     hint_en: `More water? Or a sea of water...`,
     output: [
       { naam: "Zee", naam_en: "Sea", icoon: "icons/Zee.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `Water is the driving force of all nature
         <br><br>- Leonardo da Vinci`
       }
@@ -1258,7 +1258,7 @@ const combinaties = [
     hint_en: `In the driest areas, water sometimes simply emerges from the ground.`,
     output: [
       { naam: "Oase", naam_en: "Oasis", icoon: "icons/Oase.png", map: "Landschap", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `All that the historians give us are little oases in the desert of time, and we linger fondly in these,
         forgetting the vast tracks between one and another that were trodden by the weary generations of men
         <br><br>- J.A. Spender`
@@ -1316,7 +1316,7 @@ const combinaties = [
     hint_en: `A special place is where the mountain meets the water..`,
     output: [
       { naam: "Kust", naam_en: "Coast", icoon: "icons/Kust.png", map: "Landschap", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `Because there's nothing more beautiful than the way the ocean refuses to stop kissing the shoreline, 
         no matter how many times it's sent away 
         <br><br>- Sarah Kay`
@@ -1388,7 +1388,7 @@ const combinaties = [
     hint_en: `Mountains could be slides from the cluods to the sea...`,
     output: [
       { naam: "Rivier", naam_en: "River", icoon: "icons/Rivier.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `No man ever steps in the same river twice, for it's not the same river and he's not the same man 
         <br><br>- Heraclitus`
       }
@@ -1634,7 +1634,7 @@ const combinaties = [
     hint_en: `Do you know those salty lakes along the coast?`,
     output: [
       { naam: "Lagune", naam_en: "Lagoon", icoon: "icons/Lagune.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `Out to sea, the calm lagoon waters were darkening, while the commets overhead glowed brighter, omens 
         in the gloaming
         <br><br>- Julian May`
@@ -1692,7 +1692,7 @@ const combinaties = [
     hint_en: `Does the weather take a turn? Than the coast will be the first to suffer...`,
     output: [
       { naam: "Overstroming", naam_en: "Flood", icoon: "icons/Overstroming.png", map: "Water", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `Great floods have flown from simple sources 
         <br><br>- William Shakespeare`
       }
@@ -1783,7 +1783,7 @@ const combinaties = [
     hint_en: `Don't let the water spill over the edge..`,
     output: [
       { naam: "Waterval", naam_en: "Waterfall", icoon: "icons/Waterval.png", map: "Landschap", 
-        geluid: "sound/Golf.wav",
+        geluid: "sound/Water.m4a",
         quote: `As long as I live, I'll hear waterfalls and birds and winds sing... I'll acquaint myself with the glaciers
         and wild gardens, and get as near the heart of the world as I can
         <br><br>- John Muir`
