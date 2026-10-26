@@ -1063,6 +1063,7 @@ const combinaties = [
     hint_en: `A little more vapour and I won't be able to see a thing.`,
     output: [
       { naam: "Mist", naam_en: "Fog", icoon: "icons/Mist.png", map: "Lucht", 
+        geluid: "sound/Wind.m4a", 
         quote: `In nature, everything has a job. The job of the fog is to beautify further the existing beauties
         <br><br>- Mehmet Hdan`
       }
