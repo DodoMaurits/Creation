@@ -1358,6 +1358,7 @@ const combinaties = [
     hint_en: `Something is still missing.. hard little pieces of rain?`,
     output: [
       { naam: "Hagel", naam_en: "Hail", icoon: "icons/Hagel.png", map: "Water", 
+        geluid: "sound/Hagel.m4a",
         quote: `Life is a hailstorm of distractions. It's not the monster that stops us but the mosquito 
         <br><br>- Robert Allen`
       }
