@@ -89,7 +89,7 @@ const combinaties = [
         tekst: `
       <span>380.000 Aardse jaren na de oerknal koelde het heelal af tot een temperatuur van 2727 graden.</span>
       <span>Protonen, elektronen en neutronen kunnen nu met elkaar fuseren tot energieneutrale stabiele structuren: 
-        atomen. Vrijelijk stroomden fotonen nu door de elektrisch neutrale nevel en donkere materie. Astronomen kunnen 
+        atomen. Vrijelijk stroomden fotonen door de elektrisch neutrale nevel en donkere materie. Astronomen kunnen 
         deze energie die vrijkwam toen fotonen uit het plasma konden ontsnappen nog altijd waarnemen... de zogeheten 
         kosmische achtergrondstraling.</span>
       <span>Rond de atoomkern van één of meer positief geladen protonen en nul of meer neutrale neutronen, cirkelen op 
