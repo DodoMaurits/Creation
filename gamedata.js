@@ -4099,7 +4099,7 @@ const combinaties = [
         tekst: "Je moet eerst nog wat meer halen...",
         tekst_en: `You still need to create a bit more first...`,
         requirements: ["Aardolie", "Nautilussen", "Druk", "Tast", "Licht", "Geur", "Pijn", "Brein",
-          "Oog", "Smaak", "Kleur", "Tand", "Parel", "Mos", "Bloed"]
+          "Oog", "Smaak", "Tand", "Parel", "Mos", "Bloed"]
       },
       normal: {
         achtergrond: "afb/siluur.jpg",
