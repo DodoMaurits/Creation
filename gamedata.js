@@ -87,42 +87,34 @@ const combinaties = [
         achtergrond: "afb/atoomvorming.jpg",
         titel: "ATOOMVORMING", titel_en: "ATOM FORMATION",
         tekst: `
-        <span>380.000 Aardse jaren na de oerknal bereikte het heelal een temperatuur van 2727 graden.</span>
-        <br><br>
-        <span>De chaos koelde zo veel af dat protonen, elektronen en neutronen met elkaar fuseerden tot energieneutrale 
-        stabiele structuren. Het zichtbaar plasma verdampte. Fotonen konden vrijstromen door de elektrisch neutrale nevel
-        en donkere materie. Astronomen kunnen de resultaten van deze faseverandering nog altijd waarnemen in de vorm van  
-        kosmische achtergrondstraling - de energie die vrijkwam toen fotonen uit het plasma konden ontsnappen.</span>
-        <br><br>
-        <span>Atomen hebben elk een kleine kern in het centrum, bestaande uit één of meer positief geladen protonen en 
-        nul of meer neutrale neutronen. Rond de kern cirkelen op grote afstanden negatief geladen elektronen, één voor 
-        elke positief geladen proton in de kern. Zij worden door de elektromagnetische kracht bij elkaar gehouden in het 
-        gebied dat men gewoonlijk de elektronenwolk noemt. In dit gebied vindt de chemie plaats.</span> 
-        <br><br>
-        <span>Er worden continu bindingen gevormd en verbroken tussen protonen en elektronen, met als resultaat de 
-        opkomst van geheel nieuwe vormen van materie. De drijvende kracht achter al deze activiteit is het feit dat 
-        elektronen negatieve ladingen hebben en elkaar afstoten, maar ze worden aangetrokken door de positieve ladingen 
-        van protonen, hetzij in hun eigen atoom, hetzij in naburige atomen.</span>`,
+      <span>380.000 Aardse jaren na de oerknal koelde het heelal af tot een temperatuur van 2727 graden.</span>
+      <span>Protonen, elektronen en neutronen kunnen nu met elkaar fuseren tot energieneutrale stabiele structuren: 
+        atomen. Vrijelijk stroomden fotonen nu door de elektrisch neutrale nevel en donkere materie. Astronomen kunnen 
+        deze energie die vrijkwam toen fotonen uit het plasma konden ontsnappen nog altijd waarnemen... de zogeheten 
+        kosmische achtergrondstraling.</span>
+      <span>Rond de atoomkern van één of meer positief geladen protonen en nul of meer neutrale neutronen, cirkelen op 
+        grote afstanden negatief geladen elektronen. Eén voor elke positief geladen proton in de kern. Zij worden door de 
+        elektromagnetische kracht bij elkaar gehouden in het gebied dat men gewoonlijk de elektronenwolk noemt. In dit 
+        gebied vindt de chemie plaats.</span> 
+      <span>Geheel nieuwe vormen van materie ontstaan door het continu vormen en breken van bindingen tussen protonen en 
+        elektronen. De drijvende kracht achter al deze activiteit is het feit dat elektronen negatieve ladingen hebben 
+        en elkaar afstoten, maar ze worden aangetrokken door de positieve ladingen van protonen in hun eigen atoom óf
+        in naburige atomen.</span>`,
 
         tekst_en: `
-        <span>380.000 Earth years after the Big Bang, the universe reached a temperature of 2727 degrees.</span>
-        <br><br>
-        <span>The chaos cooled down to such an extent that protons, electrons, and neutrons fused together to form stable, 
-        electrically neutral structures. The visible plasma dissipated. Photons were then able to flow freely through the 
-        electrically neutral mist and dark matter. Astronomers can still observe the results of this phase transition 
-        today in the form of cosmic background radiation — the energy released when photons were finally able to 
-        escape the plasma.</span>
-        <br><br>
-        <span>Atoms each have a small nucleus at their centre, consisting of one or more positively charged protons and
-        zero or more neutral neutrons. Orbiting the nucleus at a significant distance are negatively charged electrons 
-        - one for every positively charged proton in the nucleus. They are held together by the electromagnetic force
-        within a region commonly referred to as the electron cloud. It is within this region that chemistry takes place.
-        </span> 
-        <br><br>
-        <span>Bonds between protons and electrons are continuously made and split up, resulting in the emergence of 
-        entirely new forms of matter. The driving force behind all this activity is the fact that electrons - which 
-        carry a negative charge - repel one another, yet are simultaneously attracted to the positive charges of protons, 
-        both within the same atom as in their neighbouring atoms.</span>`
+      <span>380.000 Earth years after the Big Bang, the universe reached a temperature of 2727 degrees.</span>
+      <span>Protons, electrons, and neutrons can now fuse to form stable, electrically neutral structures: atoms.
+        Now, photons flowed freely through the electrically neutral nebula and dark matter. Astronomers can still
+        observe the energy that was released when photons were able to escape the plasma... the so-called cosmic
+        background radiation.</span>
+      <span>Surrounding the atomic nucleus, consisting of one or more positively charged protons and zero or more 
+        neutral neutrons, negatively charged electrons orbit at great distances. There is one electron for every 
+        positively charged proton in the nucleus. They are held together by the electromagnetic force within the 
+        so-called electron cloud. It is in this region that chemistry takes place.</span> 
+      <span>Entirely new forms of matter emerge through the continuous formation and breaking of bonds between protons 
+        and electrons. The driving force behind all this activity is the fact that electrons possess negative charges 
+        and repel one another, yet they are drawn toward the positive charges of protons—whether within their own 
+        atom or in neighboring atoms.</span>`
       }
     }
   },
