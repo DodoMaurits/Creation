@@ -190,7 +190,7 @@ const combinaties = [
     tijd: 13_600_000_000,
     output: [
       { naam: "Ster", naam_en: "Star", icoon: "icons/Ster.png", map: "Heelal",
-        geluid: "sound/Explosie.mp3", 
+        geluid: "sound/Ster.mp3", 
         quote: `Every star may be a sun to someone 
         <br><br>- Carl Sagan`
       }
