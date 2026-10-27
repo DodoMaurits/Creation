@@ -1283,7 +1283,9 @@ body.result-open #taal-controls {
   font-size: 28px;
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
+  text-wrap: pretty;
   hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
   -webkit-hyphens: auto;
   overflow-wrap: break-word;
   height: 0; 
