@@ -2099,7 +2099,7 @@ const combinaties = [
     tijd: 3_700_000_000,
     output: [
       { naam: "Bacteriën", naam_en: "Bacteria", icoon: "icons/Bacteriën.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `We are all of us walking communities of bacteria. The world shimmers, a pointillist landscape
         made of tiny living beings 
         <br><br>- Lynn Margulis`
@@ -2191,7 +2191,7 @@ const combinaties = [
         <br><br>- Diane Ackerman`
       },
       { naam: "Leca", naam_en: "Leca", icoon: "icons/Leca.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `The cell is immortal. It is merely the fluid in which it floats that degenerates. Renew this fluid 
         at regular intervals, give the cells at they require for nutrition, and as far as we know, the pulsation of 
         life can go on forever 
@@ -2293,7 +2293,7 @@ const combinaties = [
     tijd: 1_800_000_000,
     output: [
       { naam: "Amoeben", naam_en: "Amoebas", icoon: "icons/Amoeben.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
         generals, fade away. It just divides and becomes two new amoebas 
         <br><br>- George Wald`
@@ -2310,7 +2310,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Amoeben", naam_en: "Amoebas", icoon: "icons/Amoeben.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Not all living creatures die. An amoeba, for example, need never die: it need not even, like certain 
         generals, fade away. It just divides and becomes two new amoebas 
         <br><br>- George Wald`
@@ -2328,7 +2328,7 @@ const combinaties = [
     hint_en: `What does a single-celled organism use as a shield? That's right: a grain of sand.`,
     output: [
       { naam: "Foraminiferen", naam_en: "Foraminifera", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
         <br><br>- Thomas Huxley`
       }
@@ -2346,7 +2346,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Foraminiferen", naam_en: "Foraminifera", icoon: "icons/Foraminiferen.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `The deep-sea ooze is largely made up of the shells of foraminifera 
         <br><br>- Thomas Huxley`
       },
@@ -2364,7 +2364,7 @@ const combinaties = [
     tijd: 800_000_000,
     output: [
       { naam: "Stralendiertjes", naam_en: "Radiolaria", icoon: "icons/Stralendiertjes.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `The siliceous skeletons of the radiolaria are among the most exquisite products of organic nature 
         <br><br>- Ernst Haeckel`
       }
@@ -2408,7 +2408,7 @@ const combinaties = [
     input: ["Schimmel", "Detritus"],
     output: [
       { naam: "Schimmel", naam_en: "Fungi", icoon: "icons/Schimmel.png", map: "Pril leven",
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Fungi are the interface organisms between life and death 
         <br><br>- Paul Stamets`
       },
@@ -2431,7 +2431,7 @@ const combinaties = [
         <br><br>- Bernard Beckett`
       },
       { naam: "Sponzen", naam_en: "Sponges", icoon: "icons/Sponzen.png", map: "Waterdieren", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Be like a sponge when it comes to each new experience. If you want to be able to express it well, you 
         must first be able to absorb it well 
         <br><br>- Jim Rohn`
@@ -2474,7 +2474,7 @@ const combinaties = [
     tijd: 1_600_000_000,
     output: [
       { naam: "Archaeplastiden", naam_en: "Archaeplastida", icoon: "icons/Archaeplastiden.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `The origin of plastids within the archaeplastida marked one of the most consequential events in the 
         history of life 
         <br><br>- Andrew Knoll`
@@ -2581,7 +2581,7 @@ const combinaties = [
     hint_en: `Some unicellular fungi specialize in sugars.`,
     output: [
       { naam: "Gist", naam_en: "Yeast", icoon: "icons/Gist.png", map: "Pril leven",
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
         <br><br>- Ralph Emerson`
       }
@@ -2593,7 +2593,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Gist", naam_en: "Yeast", icoon: "icons/Gist.png", map: "Pril leven",
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `God made yeast, as well as dough, and loves fermentation just as dearly as he loves vegetation
         <br><br>- Ralph Emerson`
       },
@@ -2679,7 +2679,7 @@ const combinaties = [
     tijd: 1_500_000_000,
     output: [
       { naam: "Rode algen", naam_en: "Red algae", icoon: "icons/Rode_algen.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `The red algae represent one of the most ancient lineages of eukaryotic life 
         <br><br>- Andrew Knoll`
       },
@@ -2696,7 +2696,7 @@ const combinaties = [
     hint_en: `Sugared fungi.. that can't be good for the brain.`,
     output: [
       { naam: "Alcohol", naam_en: "Alcohol", icoon: "icons/Alcohol.png", map: "Chemie",
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Reality is an illusion that occurs duo to the lack of alcohol
         <br><br>- W.C. Fields`
       }
@@ -2709,7 +2709,7 @@ const combinaties = [
     tijd: 800_000_000,
     output: [
       { naam: "Oercnidaria", naam_en: "Urcnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Grip the nettle firmly and it will become a stick with which to beat your enemy 
         <br><br>- Isaac Asimov`
       },
@@ -2732,7 +2732,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oercnidaria", naam_en: "Urcnidaria", icoon: "icons/Oercnidaria.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Grip the nettle firmly and it will become a stick with which to beat your enemey 
         <br><br>- Isaac Asimov`
       },
@@ -2755,7 +2755,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerbilateria", naam_en: "Urbilateria", icoon: "icons/Oerbilateria.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `We are all worms. But I believe that I am a glow-worm 
         <br><br>- Winston Churchill`
       },
@@ -2795,7 +2795,7 @@ const combinaties = [
     hint_en: `An underwater landscape? I'd say more coral.`,
     output: [
       { naam: "Rif", naam_en: "Reef", icoon: "icons/Rif.png", map: "Landschap", 
-        geluid "sound/AngelFemaleLaag.m4a",
+        geluid: "sound/AngelFemaleLaag.m4a",
         quote: `Coral reefs are the backbone for the entire ocean. They are the nursery for the ocean. About a quarter 
         of all marine life in the ocean spends part of its lifecycle on a coral reef 
         <br><br>- Jeff Orbowski`
@@ -2808,7 +2808,7 @@ const combinaties = [
     hint_en: `Grant plants a body too, whose beauty I'm frond of.`,
     output: [
       { naam: "Roodwieren", naam_en: "Red seaweed", icoon: "icons/Roodwieren.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `To know how it feels to be seaweed you have to get in the water 
         <br><br>- Saul Bellow`
       }
@@ -2821,7 +2821,7 @@ const combinaties = [
     tijd: 700_000_000,
     output: [
       { naam: "Steenwortelalgen", naam_en: "Stoneworts", icoon: "icons/Steenwortelalgen.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Let the gentle bush dig its root deep and spread upward to split the boulder 
         <br><br>- Carl Sandburg`
       }
@@ -2834,7 +2834,7 @@ const combinaties = [
     tijd: 700_000_000,
     output: [
       { naam: "Groenwieren", naam_en: "Green seaweed", icoon: "icons/Groenwieren.png", map: "Pril leven", 
-        geluid "sound/Evolutie.m4a",
+        geluid: "sound/Evolutie.m4a",
         quote: `Green is the fresh emblem of well found hopes. In blue the spirit can wander, but in green it can rest 
         <br><br>- Mary Webb`
       },
@@ -2851,7 +2851,7 @@ const combinaties = [
     tijd: 580_000_000,
     output: [
       { naam: "Kwallen", naam_en: "Jellyfish", icoon: "icons/Kwallen.png", map: "Waterdieren", 
-        geluid "sound/AngelFemaleLaag.m4a",
+        geluid: "sound/AngelFemaleLaag.m4a",
         quote: `A jellyfish is little more than a pulsating bell, a tassel of trailing tentacles and a single digestive 
         opening through which it both eats and excretes - as regrettable an example of economy of design as ever was 
         <br><br>- Jeffrey Kluger`
@@ -7386,7 +7386,7 @@ const combinaties = [
     hint_en: `From red, it's a small step to brown.. algaenerally speaking.`,
     output: [
       { naam: "Bruinwieren", naam_en: "Kelps", icoon: "icons/Bruinwieren.png", map: "Pril leven", 
-        geluid "sound/AngelFemaleLaag.m4a",
+        geluid: "sound/AngelFemaleLaag.m4a",
         quote: `Kelp forests are the towering cities of the sea, providing shelter, food, and life to countless marine 
         organisms
         <br><br>- Jeremy Jackson`
@@ -7585,7 +7585,7 @@ const combinaties = [
     hint_en: `Have you thought about underwater forests?`,
     output: [
       { naam: "Kelpwoud", naam_en: "Kelp forest", icoon: "icons/Kelpwoud.png", map: "Landschap", 
-        geluid "sound/AngelFemaleLaag.m4a",
+        geluid: "sound/AngelFemaleLaag.m4a",
         quote: `Kelp forests are among the most productive and dynamic ecosystems on Earth, forming underwater jungles 
         that shelter thousands of species
         <br><br>- Nancy Foster`
