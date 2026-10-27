@@ -1183,8 +1183,11 @@ body.result-open #taal-controls {
 }
 
 .vers-text {
-  position: relative;
-  margin: 40px auto 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: auto;
+  bottom: auto;
   width: 540px;
   max-width: 90%;
   color: white;
@@ -1973,10 +1976,11 @@ body.result-open #taal-controls {
             }
 
             .vers-text {
-              position: relative;
-              margin: 16px auto 0;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
               width: 88vw;
-              max-width: 88vw;
+              max-width: min(88vw, 420px);
               padding: 0 16px;
               box-sizing: border-box;
               font-size: 10px;
