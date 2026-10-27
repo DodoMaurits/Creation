@@ -4798,7 +4798,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Zilvervisjes", naam_en: "Silverfish", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
-        geluid: "sound/Leven.m4a",
         quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
         insect evolution
         <br><br>- Norman Platnick`
@@ -4822,7 +4821,7 @@ const combinaties = [
     tijd: 390_000_000,
     output: [
       { naam: "Schorpioenen", naam_en: "Scorpions", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Spin.mp3",
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
@@ -4938,7 +4937,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Spinnen", naam_en: "Spiders", icoon: "icons/Spinnen.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Spin.mp3",
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
@@ -4973,6 +4972,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Mijten", naam_en: "Mites", icoon: "icons/Mijten.png", map: "Klein landleven", 
+        geluid: "sound/Spin.mp3",
         quote: `Go pick up a mite — you’ve likely just found a new species or a fascinating example of nature’s diversity
         <br><br>- Ray Fisher`
       },
@@ -5001,6 +5001,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Teken", naam_en: "Ticks", icoon: "icons/Teken.png", map: "Klein landleven", 
+        geluid: "sound/Spin.mp3",
         quote: `Ticks are among the most important vectors of disease in terrestrial ecosystems
         <br><br>- Alan Bowman`
       },
@@ -5579,14 +5580,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerpolyneopteren", naam_en: "Urpolyneoptera", icoon: "icons/Oerpolyneopteren.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `Polyneoptera represent one of the major early branches of winged insects, helping us trace how wings 
         and terrestrial lifestyles emerged in evolution
         <br><br>- Ben Wipfler`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5607,14 +5609,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerhymenopteren", naam_en: "Urhymenoptera", icoon: "icons/Oerhymenopteren.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `The evolution of ants, bees, and wasps demonstrates how complex social systems and cooperation can arise 
         from simple beginnings
         <br><br>- E.O. Wilson`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5632,14 +5635,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Libellen", naam_en: "Dragonflies", icoon: "icons/Libellen.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `The beauteous dragonfly's dancing by the waves of the rivulet glancing; she dances here and she dances
         there, the glimmering, glittering flutterer fair
         <br><br>- Heinrich Heine`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5656,6 +5660,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Luizen", naam_en: "Lice", icoon: "icons/Luizen.png", map: "Klein landleven", 
+        geluid: "sound/Spin.mp3",
         quote: `The louse, a wingless parasite, has shaped history far more than its size would suggest
         <br><br>- Hans Zinsser`
       },
@@ -5679,6 +5684,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kevers", naam_en: "Beetles", icoon: "icons/Kevers.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `Beetles are endlessly inventive; every species is a tiny masterpiece of adaptation and design
         <br><br>- May Berenbaum`
       },
@@ -5703,6 +5709,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Muggen", naam_en: "Mosquitoes", icoon: "icons/Muggen.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `A mountain is not nearly as much a wonder as a mosquito
         <br><br>- Mokokoma Mokhonoana`
       },
@@ -5731,6 +5738,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Vliegen", naam_en: "Flies", icoon: "icons/Vliegen.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `Flies are marvelous creatures; their wings, eyes, and tiny bodies are engineered for a life 
         we barely notice, yet they touch every corner of our world
         <br><br>- May Berenbaum`
@@ -5754,14 +5762,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Vlinders", naam_en: "Butterflies", icoon: "icons/Vlinders.png", map: "Klein landleven", 
+        geluid: "sound/Vleugels.m4a",
         quote: `We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve 
         that beauty
         <br><br>- Maya Angelou`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5780,6 +5789,7 @@ const combinaties = [
     land.`,
     output: [
       { naam: "Oertetrapoden", naam_en: "Urtetrapods", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        geluid: "sound/Kikker.mp3",
         quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
         land began with creatures very much like fish
         <br><br>- Neil Shubin`
@@ -5808,19 +5818,20 @@ const combinaties = [
     ],
     output: [
       { naam: "Oertetrapoden", naam_en: "Urtetrapods", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        geluid: "sound/Kikker.mp3",
         quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
         land began with creatures very much like fish
         <br><br>- Neil Shubin`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5839,23 +5850,24 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oertetrapoden", naam_en: "Urtetrapods", icoon: "icons/Oertetrapoden.png", map: "Klein landleven",
+        geluid: "sound/Kikker.mp3",
         quote: `Tiktaalik shows us that the bones in our hands and wrists were once fins, and that our journey onto 
         land began with creatures very much like fish
         <br><br>- Neil Shubin`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5874,6 +5886,7 @@ const combinaties = [
         <br><br>- Aristoteles`
       },
       { naam: "Coniferen", naam_en: "Conifers", icoon: "icons/Coniferen.png", map: "Bomen", 
+        geluid: "sound/Planten.m4a",
         quote: `The pine endures the winter winds, its needles unwavering, a friend to the solitary scholar
         <br><br>- Wang Wei`
       },
@@ -5897,6 +5910,7 @@ const combinaties = [
     hint_en: `Some beetles emerged thanks to an abundance of aphids.`,
     output: [
       { naam: "Lieveheersbeestjes", naam_en: "Ladybugs", icoon: "icons/Lieveheersbeestjes.png", map: "Klein landleven", 
+        geluid: "sound/AngelHoog.wav",
         quote: `Ladybirds are universally loved insects, often seen as symbols of good fortune
         <br><br>- David Goulson`
       }
@@ -5915,18 +5929,19 @@ const combinaties = [
     ],
     output: [
       { naam: "Lieveheersbeestjes", naam_en: "Ladybugs", icoon: "icons/Lieveheersbeestjes.png", map: "Klein landleven", 
+        geluid: "sound/AngelHoog.wav",
         quote: `Ladybirds are universally loved insects, often seen as symbols of good fortune
         <br><br>- David Goulson`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5950,6 +5965,7 @@ const combinaties = [
         <br><br>- Randal Voss`
       },
       { naam: "Kikkers", naam_en: "Frogs", icoon: "icons/Kikkers.png", map: "Klein landleven",
+        geluid: "sound/Kikker.mp3",
         quote: `A frog in a well cannot conceive of the ocean
         <br><br>- Zhuangzi`
       },
@@ -6009,18 +6025,19 @@ const combinaties = [
     ],
     output: [
       { naam: "Kikkers", naam_en: "Frogs", icoon: "icons/Kikkers.png", map: "Klein landleven",
+        geluid: "sound/Kikker.mp3",
         quote: `A frog in a well cannot conceive of the ocean
         <br><br>- Zhuangzi`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6041,13 +6058,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Padden", naam_en: "Toads", icoon: "icons/Padden.png", map: "Klein landleven",
+        geluid: "sound/Kikker.mp3",
         quote: `The music of all creatures had to do with their loves, even of toads and frogs
         <br><br>- Henry Thoreau`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
