@@ -871,7 +871,7 @@ function showInfoOverlay(title, text, backgroundImage = null) {
   overlay.appendChild(inner);
   document.body.appendChild(overlay);
   const isMobielInfo = window.innerWidth <= 900 && window.innerHeight > window.innerWidth;
-  let grootte = isMobielInfo ? 16 : 28;
+  let grootte = isMobielInfo ? 16 : 20;
   textEl.style.fontSize = grootte + "px";
   const pasAan = () => {
     let pogingen = 0;
