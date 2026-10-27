@@ -4509,6 +4509,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Haaien", naam_en: "Sharks", icoon: "icons/Haaien.png", map: "Vissen", 
+        geluid: "sound/ZwartGat.m4a",
         quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
         in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
         <br><br>- Sylvia Earle`
@@ -4519,7 +4520,6 @@ const combinaties = [
         <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
-        geluid: "sound/Vreugde.m4a",
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
@@ -4545,6 +4545,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Haaien", naam_en: "Sharks", icoon: "icons/Haaien.png", map: "Vissen", 
+        geluid: "sound/ZwartGat.m4a",
         quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
         in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
         <br><br>- Sylvia Earle`
@@ -4559,7 +4560,6 @@ const combinaties = [
         <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
-        geluid: "sound/Vreugde.m4a",
         quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
         <br><br>- Nhat Hanh`
       }
