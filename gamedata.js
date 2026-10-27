@@ -661,7 +661,7 @@ const combinaties = [
     <br><br>The Prophets (21:31)`,
     output: [
       { naam: "Berg", naam_en: "Mountain", icoon: "icons/Berg.png", map: "Landschap",
-        geluid: "sound/Berg.mp3",
+        geluid: "sound/Aardbeving.mp3", 
         quote: `Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain 
         <br><br>- Sun Tzu`
       }
