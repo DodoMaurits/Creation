@@ -149,7 +149,7 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "RADIOACTIVITEIT", titel_en: "Radioactivity",
+        titel: "Radioactiviteit", titel_en: "Radioactivity",
         tekst: `Gamma-, röntgen- en hoogenergetische uv-straling zijn zo frequent, dat zij genoeg energie hebben om
         elektronen van atoomkernen te splitsen. Wanneer de frequentie hier hoog genoeg voor is, spreken wij van 
         radioactief.`,
