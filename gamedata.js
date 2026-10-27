@@ -4757,12 +4757,12 @@ const combinaties = [
     hint_en: `With a small evolutionary adjustment, these little creatures take to the air.`,
     tijd: 410_000_000,
     output: [
-      { naam: "Vleugels", naam_en: "Wings", icoon: "icons/Vleugels.png", map: "Biologie", 
+      { naam: "Vleugels", naam_en: "Wings", icoon: "icons/Vleugels.png", map: "Biologie",
+        geluid: "sound/Vleugels.m4a",
         quote: `Until you spread your wings, you'll have no idea how far you can fly
         <br><br>- Napoleon Bonaparte`
       },
       { naam: "Zilvervisjes", naam_en: "Silverfish", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
-        geluid: "sound/Leven.m4a",
         quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
         insect evolution
         <br><br>- Norman Platnick`
@@ -5037,6 +5037,7 @@ const combinaties = [
     hint_en: `Some plants would benefit from capturing more sunlight using large surface areas.`,
     output: [
       { naam: "Blad", naam_en: "Leaf", icoon: "icons/Blad.png", map: "Biologie", 
+        geluid: "sound/Planten.m4a",
         quote: `How beautiful the leaves grow old. How full of light and colour are their last days
         <br><br>- John Burroughs`
       }
@@ -5101,6 +5102,7 @@ const combinaties = [
     hint_en: `Marine isopods could thrive perfectly well on land too...`,
     output: [
       { naam: "Pissebedden", naam_en: "Woodlice", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
         Each tells a story
         <br><br>- Fennel Hudson`
@@ -5128,14 +5130,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Pissebedden", naam_en: "Woodlice", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
         Each tells a story
         <br><br>- Fennel Hudson`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5150,6 +5153,7 @@ const combinaties = [
     hint_en: `Some decapods move sideways, while others move forward.`,
     output: [
       { naam: "Garnalen", naam_en: "Shrimps", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
+        geluid: "sound/Leven.m4a",
         quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
         <br><br>- Raymond Bauer`
       },
@@ -5186,13 +5190,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Garnalen", naam_en: "Shrimps", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
+        geluid: "sound/Leven.m4a",
         quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
         <br><br>- Raymond Bauer`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5226,14 +5231,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Kreeften", naam_en: "Lobsters", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
+        geluid: "sound/Leven.m4a",
         quote: `Lobsters are among the most ancient designs in the sea, animals whose basic form has persisted for
         millions of years
         <br><br>- Trevor Corson`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5266,13 +5272,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Krabben", naam_en: "Crabs", icoon: "icons/Krabben.png", map: "Geleedpotigen",
+        geluid: "sound/Leven.m4a",
         quote: `You cannot teach a crab to walk straight
         <br><br>- Aristophanes`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5307,13 +5314,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Heremietkreeften", naam_en: "Hermit crabs", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
+        geluid: "sound/Leven.m4a",
         quote: `The growth of hermit crabs is constrained by their dependence on finding progressively larger shells
         <br><br>- Martin West`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5330,6 +5338,7 @@ const combinaties = [
     hint_en: `Underwater, spiders spin webs that act like air-filled diving bells among the aquatic plants.`,
     output: [
       { naam: "Waterspinnen", naam_en: "Water spiders", icoon: "icons/Waterspinnen.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `The diving bell spider constructs an օդome of silk filled with air, allowing it to live and hunt beneath 
         the surface
         <br><br>- Rainer Foelix`
@@ -5353,6 +5362,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Waterspinnen", naam_en: "Water spiders", icoon: "icons/Waterspinnen.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `The diving bell spider constructs an օդome of silk filled with air, allowing it to live and hunt beneath 
         the surface
         <br><br>- Rainer Foelix`
@@ -5403,6 +5413,7 @@ const combinaties = [
         <br><br>- Guatama Buddha`
       },
       { naam: "Varens", naam_en: "Fern", icoon: "icons/Varens.png", map: "Planten", 
+        geluid: "sound/Planten.m4a",
         quote: `Only spread a fern-frond over a man's head and worldly cares are cast out, and freedom and
         beauty and peace come in
         <br><br>- John Muir`
@@ -5441,6 +5452,7 @@ const combinaties = [
     tijd: 359_000_000,
     output: [
       { naam: "Oerzaadplanten", naam_en: "Urseedplants", icoon: "icons/Oerzaadplanten.png", map: "Planten", 
+        geluid: "sound/Planten.m4a",
         quote: `Keep planting new seeds until your mind becomes the earth that gives birth to new worlds
         <br><br>- Curtis Tyrone Jones`
       }
@@ -5458,19 +5470,17 @@ const combinaties = [
         achtergrond: "afb/carboon.jpg",
         titel: "CARBOON 359-299 MA", titel_en: "CARBONIFEROUS 359-299 MA",
         tekst: `
-        <span>De eerste uitgestrekte, dichtbegroeide bossen van varens en vroege zaadplanten in de laaggelegen 
+      <span>De eerste uitgestrekte, dichtbegroeide bossen van varens en vroege zaadplanten in de laaggelegen 
         moerasgebieden die nu delen van Europa en Noord-Amerika beslaan, groeiden enorm in aantallen en produceerden zo 
         enorme hoeveelheden organisch materiaal. Omdat er nog geen micro-organismen of schimmels waren die hars en lignine 
         efficiënt konden afbreken, werden veel plantenresten behouden in veen, dat in de loop van miljoenen jaren door 
         sedimentatie en druk werd omgezet in steenkool - vandaar de naam van deze periode.</span>
-        <br><br>
-        <span>Ongeveer 90 procent van de huidige steenkoollagen stamt uit de latere periode van 330-260 miljoen jaar 
+      <span>Ongeveer 90 procent van de huidige steenkoollagen stamt uit de latere periode van 330-260 miljoen jaar 
         geleden. Het Carboon werd gekenmerkt door rijke zoetwater- en mariene ecosystemen. Zoet water werd gedomineerd door
         mollusken, schorpioenen en grote kraakbeenvissen, terwijl de oceanen complexe riffen en stekelhuidigen huisvestten. 
         In de lucht en op het land verschenen reusachtige geleedpotigen, zoals de libelachtige meganeura met een 
         spanwijdte tot 70 centimer, maar ook de eerste spinnen, duizendpoten en landslakken.</span>
-        <br><br>
-        <span>De uitgestrekte bossen hadden ook gevolgen voor het klimaat en de geochemie van de Aarde. Planten verdubbelden
+      <span>De uitgestrekte bossen hadden ook gevolgen voor het klimaat en de geochemie van de Aarde. Planten verdubbelden
         mogelijk de fotosynthesesnelheid, waardoor het totale energiebudget van de biosfeer toenam en dus meer organismen 
         konden worden ondersteund. Door wortel- en bladwerking versnelden ze de verwering van gesteenten, waardoor koolstof
         uit de atmosfeer gemakkelijker werd gebodnen en begraven in bodems en sedimenten. Dit leidde tot een stijging van 
@@ -5478,19 +5488,17 @@ const combinaties = [
         aardkorst mogelijk maakte en bijdroeg aan de vorming van veel van de mineralen die we vandaag kennen.</span>`,
 
         tekst_en: `
-        <span>The first vast, dense forests of ferns and early seed-bearing plants-located in low-lying swampy regions 
+      <span>The first vast, dense forests of ferns and early seed-bearing plants-located in low-lying swampy regions 
         that now encompass parts of Europe and North America - proliferated, producing enormous quantities of organic
         matter. Because there were not yet any microorganisms or fungi capable of efficiently breaking down resin and
         lignin, much of this plant debris was preserved in peat, which, over millions of years, was transformed by
         sedimentation and pressure into coal - hence the name of this geological period.</span>
-        <br><br>
-        <span>Approximately 90 percent of existing coal seams date back to the later period between 330 and 260 million
+      <span>Approximately 90 percent of existing coal seams date back to the later period between 330 and 260 million
         years ago. The Carboniferous period was characterised by rich freshwater and marine ecosystems. Freshwater 
         environments were dominated by mollusks, scorpions and large cartilaginous fish, while the oceans hosted complex
         reefs and echinoderms. In the air and on land, giant arthropods appeared - such as the dragonfly-like "Meganeura",
         which had a wingspan of up to 70 centimeters - alongside the first spiders, centipedes and land snails.</span>
-        <br><br>
-        <span>The vast forests also had consequences for Earth's climate and geochemistry. Plants may have doubled the rate
+      <span>The vast forests also had consequences for Earth's climate and geochemistry. Plants may have doubled the rate
         of photosynthesis, thereby increasing the total energy budget of the biosphere and allowing it to support more
         organisms. Through the action of their roots and leaves, they accelerated the weathering of rocks, which 
         facilitated the sequestration of atmospheric carbon - trapping it within soils and sediments. This led to a rise
@@ -5505,6 +5513,7 @@ const combinaties = [
     hint_en: `Water, land.. perhaps those with wings are ready for take-off.`,
     output: [
       { naam: "Oerpolyneopteren", naam_en: "Urpolyneoptera", icoon: "icons/Oerpolyneopteren.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `Polyneoptera represent one of the major early branches of winged insects, helping us trace how wings 
         and terrestrial lifestyles emerged in evolution
         <br><br>- Ben Wipfler`
