@@ -829,50 +829,38 @@ const combinaties = [
         achtergrond: "afb/wateropaarde.png",
         titel: "WATER OP AARDE", titel_en: "WATER ON EARTH", 
         tekst: `
-          <span>4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
-          van vloeibaar water...</span>
-          <br><br>
-          <span>Waar lava het aardoppervlakte bereikte, pompte het waterrijke gassen de fragiele atmosfeer in. Na afkoeling
-          namen deze gassen de toestand aan van vloeibaar water. Hierbij draaien elektronen niet om één, maar om twee 
-          atoomkernen, die hun elektromagnetische lading delen in een zogeheten covalente binding. Het scheve watermolecuul
-          vormen zij met twee kleine waterstofatomen en een groter zuurstofatoom. Die vreemde vorm verdeelt negatieve en 
-          positieve ladingen ongelijkmatig over het oppervlak van het molecuul en laat waterstofatomen willen overspringen 
-          naar zuurstofatomen van naburige moleculen - een vloeiende stof.</span>
-          <br><br>
-          <span>Met het herstel van de atmosfeer vloog water niet meer zo vrijelijk de ruimte in, maar werd het 
-          ontvankelijk voor de zwaartekracht van de Aarde. Regen kon nu op de prille aardkorst neerdalen, waarbij door 
-          afkoeling van lava nog meer water verdampte. Zo ontstond de dampkring. Dankzij de platentektoniek bleef lava
-          altijd wel weer haar weg naar boven vinden, waardoor de afkoeling niet net zo lang doorging tot al het water 
-          zou zijn bevroren.</span> 
-          <br><br>
-          <span>Terwijl de watercyclus op gang kwam, was de prille oeratmosfeer lange tijd nog niet sterk genoeg om alle
-          broeikasgassen vast te houden. Mars bijvoorbeeld is kleiner dan de Aarde en heeft minder zwaartekracht, waardoor
-          al het water daar is bevroren. Aarde kon meer broeikasgassen van de vulkanen vasthouden en zo veranderde Aarde
-          in één grote waterbol zonder land. Dit duurde 400 miljoen jaar, tot vulkanen en bergen nieuw land hadden gevormd.
-          </span>`,
+        <span>4,4 miljard jaar geleden stabiliseerde de atmosfeer en konden watterijke gassen de toestand aannemen 
+          van vloeibaar water. Waar lava het aardoppervlakte bereikte, pompte het waterrijke gassen de fragiele atmosfeer 
+          in. Na afkoeling namen deze gassen de toestand aan van vloeibaar water.</span>
+        <span>Bij water draaien elektronen niet om één, maar om twee atoomkernen. Met een grote zuurstofatoom en twee 
+          kleine scheve waterstofatomen vormen zij samen een watermolecuul. Deze vreemde vorm verdeelt negatieve en 
+          positieve ladingen ongelijkmatig over het oppervlak, waardoor waterstofatomen willen overspringen naar 
+          zuurstofatomen van naburige moleculen... het vloeiende effect van water.</span>
+        <span>Dankzij de atmosfeer vliegt water niet meer vrijelijk de ruimte in, maar blijft het door zwaartekracht 
+          plakken aan de Aarde. Regen kan zo op de aardkorst neerdalen, lava afkoelen en zo meer water verdampen: het 
+          ontstaan van de dampkring. Dankzij de platentektoniek bleef lava altijd wel weer haar weg naar boven vinden,
+          waardoor afkoeling niet ongestoord kon doorgaan tot een bevroren Aarde.</span> 
+        <span>Lange tijd was de prille oeratmosfeer niet sterk genoeg om alle broeikasgassen vast te houden. Mars is 
+          kleiner dan de Aarde en heeft minder zwaartekracht, waardoor al het water daar is bevroren. Aarde kon meer 
+          vulkaangas vasthouden en zo veranderde Aarde in één grote waterbol zonder land. Dit duurde 400 miljoen jaar,
+          totdat de vulkanen en bergen nieuw land zouden vormen.</span>`,
 
         tekst_en: `
-          <span>4.4 billion years ago, the atmosphere stabilised, allowing water-rich gases to transition into a liquid 
-          state...</span>
-          <br><br>
-          <span>Wherever lava reached the Earth's surface, it pumped water-rich gases into the fragile atmosphere. Upon
-          cooling, these gases condensed into liquid water. In this process, electrons orbit not one, but two atomic 
-          nuclei, sharing their electromagnetic charge in what is known as a covalent bond. The asymmetrical water 
-          molecule is formed by two small hydrogen atoms and one larger oxygen atom. This unique shape causes an uneven
-          distribution of negative and positive charges across the molecule's surface, prompting hydrogen atoms to shift
-          toward the oxygen atoms of neighbouring molecules - resulting in a fluid substance.</span>
-          <br><br>
-          <span>As the atmosphere recovered, water no longer escaped freely into space; instead, it became subject to the
-          Earth's gravitational pull. Rain could now fall onto the nascent Earth's crust, while the cooling of lava
-          released even more water vapour. This is how the atmosphere - or vapour sphere - came into being. Thanks to 
-          plate tectonics, lava continued to find its way to the surface, ensuring that the cooling process did not 
-          continue until all the water had frozen solid.</span> 
-          <br><br>
-          <span>As the water cycle began to take shape, the early primordial atmosphere was, for a long time, not yet
-          robust enough to retain all its greenhouse gases. Mars, for instance is smaller than Earth and possesses
-          weaker gravity, which is why all the water there has frozen. The Earth was able to retain more greenhouse
-          gases from volcanoes, and in this way, it transformed into one vast water world with no land. This state lasted
-          for 400 million years, until volcanoes and mountains had formed new land.</span>`
+        <span>4.4 billion years ago, the atmosphere stabilized, allowing water-rich gases to transition into a liquid 
+          state. Wherever lava reached the Earth's surface, it pumped water-rich gases into the fragile atmosphere. 
+          Upon cooling, these gases condensed into liquid water.</span>
+        <span>In water, electrons do not orbit a single atomic nucleus, but two. Together with one large oxygen 
+          atom and two small, offset hydrogen atoms, a water molecule arises. This peculiar shape causes an uneven 
+          distribution of negative and positive charges across the surface, prompting them to "jump" toward the oxygen 
+          atoms of neighboring molecules, giving rise to the fluid nature of water.</span>
+        <span>Because of the atmosphere, water no longer escapes freely into space. Instead, gravity keeps it bound to 
+          the Earth's surface. This allows rain to fall onto the Earth's crust, cooling lava and causing more water to 
+          evaporate. Meanwhile, plate tectonics ensured that lava continued to find its way to the surface, preventing 
+          the Earth from becoming totally frozen.</span> 
+        <span>For a long time, the nascent primordial atmosphere was not strong enough to retain all the greenhouse gases. 
+          Mars is smaller than Earth and has weaker gravity, which is why Mars' water has frozen. Earth was able to retain
+          more of its volcanic gas, and transformed into a planet wholy covered with ocean. This state persisted for 
+          400 million years, until the volcanoes and mountains eventually created new land.</span>`
       }
     }
   },
