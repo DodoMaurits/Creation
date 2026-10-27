@@ -306,6 +306,7 @@ const combinaties = [
         <br><br>- Ann Marie Frohoff`
       },
       { naam: "Planeet", naam_en: "Planet", icoon: "icons/Planeet.png", map: "Heelal",
+        geluid: "sound/Explosie.mp3", 
         quote: `Astronomy compels the soul to look upwards and leads us from this world to another 
         <br><br>- Plato`
       }
