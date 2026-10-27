@@ -886,7 +886,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 .info-popup-title {
   font-size: 44px;
   font-weight: bold;
-  font-family: "Alegreya Slab", serif;
+  font-family: "Roboto Slab", serif;
   margin-bottom: 12px;
   text-align: center;
   color: white;
