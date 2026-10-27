@@ -794,6 +794,16 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null, isNie
     });
   }
   document.body.appendChild(overlay);
+  const versEl = overlay.querySelector(".vers-text");
+  if (versEl) {
+    requestAnimationFrame(() => {
+      const gridRect = grid.getBoundingClientRect();
+      const versH = versEl.offsetHeight;
+      const vrij = window.innerHeight - gridRect.bottom;
+      const midden = gridRect.bottom + Math.max(vrij / 2, 24) - versH / 2;
+      versEl.style.top = Math.max(gridRect.bottom + 12, midden) + "px";
+    });
+  }
   requestAnimationFrame(() => overlay.classList.add("visible"));
   flash?.addEventListener("animationend", () => flash?.remove());
   overlay.addEventListener("click", (e) => {
