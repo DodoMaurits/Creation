@@ -1280,7 +1280,7 @@ body.result-open #taal-controls {
 
 .info-text {
   position: relative;
-  font-size: 28px;
+  font-size: clamp(16px, 1.6vw + 1.2dvh, 22px);
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
   text-wrap: pretty;
