@@ -4420,6 +4420,7 @@ const combinaties = [
     tijd: 420_000_000,
     output: [
       { naam: "Slakken", naam_en: "Snails", icoon: "icons/Slakken.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
         <br><br>- Frank Wright`
       }
@@ -4452,13 +4453,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Slakken", naam_en: "Snails", icoon: "icons/Slakken.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
         <br><br>- Frank Wright`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4512,9 +4514,9 @@ const combinaties = [
         <br><br>- Sylvia Earle`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4552,9 +4554,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4578,9 +4580,9 @@ const combinaties = [
         <br><br>- Peter Last`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4595,6 +4597,7 @@ const combinaties = [
     hint_en: `Let a bunch of recognisable species emerge from the early crustaceans I say`,
     output: [
       { naam: "Zeepissebedden", naam_en: "Marine isopods", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
+        geluid: "sound/Leven.m4a",
         quote: `Marine littoral isopods are highly mobile scavengers, often found in large numbers along rocky shorelines
         <br><br>- Gary Poore`
       },
@@ -4635,6 +4638,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zeepissebedden", naam_en: "Marine isopods", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
+        geluid: "sound/Leven.m4a",
         quote: `Marine littoral isopods are highly mobile scavengers, often found in large numbers along rocky shorelines
         <br><br>- Gary Poore`
       },
@@ -4664,14 +4668,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Zeepokken", naam_en: "Sessilia", icoon: "icons/Zeepokken.png", map: "Geleedpotigen", 
+        geluid: "sound/Bubbels.m4a",
         quote: `Despite their immobility as adults, barnacles are active filter feeders, relying on water movement to 
         bring food particles within reach
         <br><br>- Graham Walker`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       }
     ]
   }, /* ------------------ VLOKREEFTJES ------------------ */
@@ -4690,14 +4695,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Vlokreeftjes", naam_en: "Amphipods", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
+        geluid: "sound/Leven.m4a",
         quote: `Many amphipods are important scavengers, playing a key role in the breakdown of organic matter in aquatic 
         ecosystems
         <br><br>- Gary Poore`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4729,13 +4735,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Oertienpotigen", naam_en: "Urdecapods", icoon: "icons/Oertienpotigen.png", map: "Geleedpotigen", 
+        geluid: "sound/Leven.m4a",
         quote: `The evolution of decapods reflects a long history of ecological diversification in marine environments
         <br><br>- H. Komai`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4755,6 +4762,7 @@ const combinaties = [
         <br><br>- Napoleon Bonaparte`
       },
       { naam: "Zilvervisjes", naam_en: "Silverfish", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
+        geluid: "sound/Leven.m4a",
         quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
         insect evolution
         <br><br>- Norman Platnick`
@@ -4790,6 +4798,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zilvervisjes", naam_en: "Silverfish", icoon: "icons/Zilvervisjes.png", map: "Klein landleven",
+        geluid: "sound/Leven.m4a",
         quote: `Silverfish are living fossils, tiny survivors that carry the secrets of hundreds of millions of years of 
         insect evolution
         <br><br>- Norman Platnick`
@@ -4813,6 +4822,7 @@ const combinaties = [
     tijd: 390_000_000,
     output: [
       { naam: "Schorpioenen", naam_en: "Scorpions", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
@@ -4862,6 +4872,7 @@ const combinaties = [
     hint_en: `It is evolutionarily advantageous for prey to be instantly paralysed by toxic substances.`,
     output: [
       { naam: "Schorpioenen", naam_en: "Scorpions", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
@@ -4897,13 +4908,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Hooiwagens", naam_en: "Harvestmen", icoon: "icons/Hooiwagens.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `Unlike spiders, harvestmen do not produce silk or venom, relying instead on scavenging and simple predation
         <br><br>- Mark Harvey`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4926,19 +4938,20 @@ const combinaties = [
     ],
     output: [
       { naam: "Spinnen", naam_en: "Spiders", icoon: "icons/Spinnen.png", map: "Klein landleven", 
+        geluid: "sound/Leven.m4a",
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -4964,9 +4977,9 @@ const combinaties = [
         <br><br>- Ray Fisher`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -5011,6 +5024,7 @@ const combinaties = [
     hint_en: `Dense vegetation and shallow, stagnant water form a hotbed for life.`,
     output: [
       { naam: "Moeras", naam_en: "Swamp", icoon: "icons/Moeras.png", map: "Landschap", 
+        geluid: "sound/Moeras.mp3",
         quote: `Nature is a tropical swamp in sunshine, on whose purlieus we hear the song of summer birds,
         and see prismatic dewdrops, - but her interiors are terrific, full of hydras and crocodiles
         <br><br>- Ralph Emerson`
