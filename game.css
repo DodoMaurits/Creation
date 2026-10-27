@@ -899,7 +899,7 @@ body.lang-en #superhint-button:hover::after { content: "Show"; }
 }
 
 .info-popup-text {
-  font-size: clamp(14px, 2.2dvh + 0.4vw, 28px);
+  font-size: clamp(12px, 1.4dvh + 0.3vw, 18px);
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
   hyphens: auto;
@@ -1280,7 +1280,7 @@ body.result-open #taal-controls {
 
 .info-text {
   position: relative;
-  font-size: clamp(16px, 1.6vw + 1.2dvh, 22px);
+  font-size: 28px;
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
   text-wrap: pretty;
@@ -1822,7 +1822,7 @@ body.result-open #taal-controls {
               font-size: 22px;
             }
             .info-popup-text {
-              font-size: clamp(10px, 1.9dvh, 16px);
+              font-size: clamp(9px, 1.5dvh, 12px);
               line-height: 1.5;
             }
 
