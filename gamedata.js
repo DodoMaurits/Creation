@@ -190,7 +190,7 @@ const combinaties = [
     tijd: 13_600_000_000,
     output: [
       { naam: "Ster", naam_en: "Star", icoon: "icons/Ster.png", map: "Heelal",
-        geluid: "sound/Ster.mp3", 
+        geluid: "sound/Ster.m4a", 
         quote: `Every star may be a sun to someone 
         <br><br>- Carl Sagan`
       }
@@ -376,7 +376,7 @@ const combinaties = [
     tijd: 4_570_000_000,
     output: [
       { naam: "Neptunus", naam_en: "Neptune", icoon: "icons/Neptunus.png", map: "Heelal",
-        geluid: "sound/Explosie.mp3", 
+        geluid: "sound/IJs.mp3",
         quote: `We see it as Columbus saw America from the coast of Spain. 
         Its movements have been felt, trembling along the far-reaching line of our analysis 
         with a certainty hardly inferior to that of ocular demonstration 
