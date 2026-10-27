@@ -799,9 +799,20 @@ function renderNewElements(elements, vers = null, thresholdOverlay = null, isNie
     requestAnimationFrame(() => {
       const gridRect = grid.getBoundingClientRect();
       const versH = versEl.offsetHeight;
+      const maxTop = window.innerHeight - versH - 24;
       const vrij = window.innerHeight - gridRect.bottom;
-      const midden = gridRect.bottom + Math.max(vrij / 2, 24) - versH / 2;
-      versEl.style.top = Math.max(gridRect.bottom + 12, midden) + "px";
+      const midden = gridRect.bottom + (vrij - versH) / 2;
+      const minTop = gridRect.bottom + 12;
+      let top = Math.max(minTop, Math.min(midden, maxTop));
+      if (top < gridRect.bottom + 12) {
+        top = gridRect.bottom + 12;
+        overlay.style.paddingBottom = (versH + 48) + "px";
+      }
+      if (window.innerHeight < gridRect.height + versH + 48) {
+        const overschot = gridRect.height + versH + 48 - window.innerHeight;
+        grid.style.transform = `translateY(${-overschot / 2}px)`;
+      }
+      versEl.style.top = top + "px";
     });
   }
   requestAnimationFrame(() => overlay.classList.add("visible"));
