@@ -258,7 +258,7 @@ const combinaties = [
         <br><br>- William Yeats`
       },
       { naam: "Supernova", naam_en: "Supernova", icoon: "icons/Supernova.png", map: "Heelal",
-        geluid: "sound/Explosie.mp3", 
+        geluid: "sound/ExplosieGroot.mp3",
         quote: `A supernova is one of the most powerful explosions in the universe. 
         It's so luminous, it can be seen across billions of light years. 
         It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime
