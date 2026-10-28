@@ -550,13 +550,15 @@ const combinaties = [
         titel: "Platentektoniek", titel_en: "Plate tectonics",
         tekst: `Na de klap van de Maan herstelde de Aarde zich. Zwaartekracht sorteerde de elementen opnieuw en 
           wederom vormden zich een aardkorst en prille atmosfeer. Lava stroomde door de aardmantel, waardoor de 
-          aardkorst in platen kon scheuren die tegen elkaar aan duwen. Waar de lava het aardoppervlakte bereikte,
+          aardkorst in platen kon scheuren die tegen elkaar aan duwen.
+          <br><br>Waar de lava het aardoppervlakte bereikte,
           werden waterrijke gassen de fragiele atmosfeer in gepompt die na afkoeling de toestand aannamen van 
           vloeibaar water. De Aarde zou bevroren zijn geweest mits lavastromen hun weg naar buiten niet hadden 
           gevonden...`,
         tekst_en: `After the impact of the Moon, the Earth recovered. Gravity re-sorted the elements, and once again,
           a crust and a nascent atmosphere took shape. Lava flowed through the Earth's mantle, causing the crust to 
-          fracture into plates that pushed against one another. Where the lava reached the surface, water-rich gases
+          fracture into plates that pushed against one another. 
+          <br><br>Where the lava reached the surface, water-rich gases
           were pumped into the fragile atmosphere. Upon cooling, these gases condensed into liquid water. The Earth
           would have remained frozen, if the lava would not have found their way to the surface...`
       }
