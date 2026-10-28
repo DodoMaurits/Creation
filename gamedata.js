@@ -2539,7 +2539,6 @@ const combinaties = [
     hint_en: `Look at what foraminifera are able to do with sand, or mollusks with calcium carbonate...`,
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
-        geluid: "sound/Leven.m4a",
         quote: `I see a broken shell and I remind myself that something might have needed setting free 
         <br><br>- Sara Pennypacker`
       }
