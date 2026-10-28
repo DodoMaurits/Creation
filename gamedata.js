@@ -8257,6 +8257,7 @@ const combinaties = [
     tijd: 135_000_000,
     output: [
       { naam: "Oermagnoliden", naam_en: "Urmagnolids", icoon: "icons/Oermagnoliden.png", map: "Planten", 
+        geluid: "sound/Planten.m4a",
         quote: `The origin of flowering plants is one of the greatest mysteries in evolutionary biology
         <br><br>- Charles Darwin`
       },
