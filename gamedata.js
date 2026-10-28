@@ -3576,9 +3576,9 @@ const combinaties = [
         <br><br>- Louis Agassiz`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein",
         geluid: "sound/Vreugde.m4a",
@@ -3708,7 +3708,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerinsecten", naam_en: "Urinsects", icoon: "icons/Oerinsecten.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `An insect is more complex than a star.. and is a far greater challenge to understand
         <br><br>- Martin Rees`
       },
@@ -3837,7 +3837,7 @@ const combinaties = [
     hint_en: `Chelicerates show just how much scorpions and spiders actually have in common.`,
     output: [
       { naam: "Zeeschorpioenen", naam_en: "Sea scorpions", icoon: "icons/Zeeschorpioenen.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Oceaan.m4a",
         quote: `Some eurypterids reached enormous size, with powerful appendages adapted for grasping and cutting prey
         <br><br>- Erik Tetlie`
       },
@@ -3959,7 +3959,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerspinachtigen", naam_en: "Urarachnids", icoon: "icons/Oerspinachtigen.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Spin.mp3",
         quote: `Arachnids are defined by their eight legs and highly specialized predatory adaptations
         <br><br>- Herbert Levi`
       },
@@ -4002,7 +4002,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Zwaardstaarten", naam_en: "Horseshoe crabs", icoon: "icons/Zwaardstaarten.png", map: "Geleedpotigen",
-        geluid: "sound/Leven.m4a",
         quote: `The horseshoe crab is a reminder that survival does not always require change
         <br><br>- Stephen Gould`
       },
@@ -4031,7 +4030,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Krill", naam_en: "Krill", icoon: "icons/Krill.png", map: "Geleedpotigen", 
-        geluid: "sound/Oceaan.m4a",
         quote: `Tiny creatures such as krill form the living foundation of ocean life
         <br><br>- Sylvia Earle`
       },
@@ -4063,7 +4061,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Aasgarnalen", naam_en: "Opossum shrimps", icoon: "icons/Aasgarnalen.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
         quote: `Brine shrimp are extremophiles, capable of thriving in hypersaline lakes where few other animals can 
         survive
         <br><br>- Diane McCauley`
@@ -4420,7 +4417,6 @@ const combinaties = [
     tijd: 420_000_000,
     output: [
       { naam: "Slakken", naam_en: "Snails", icoon: "icons/Slakken.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
         quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
         <br><br>- Frank Wright`
       }
@@ -4453,7 +4449,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Slakken", naam_en: "Snails", icoon: "icons/Slakken.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
         quote: `We should learn from the snail: it has devised a home that is both exquisite and functional
         <br><br>- Frank Wright`
       },
@@ -4476,12 +4471,12 @@ const combinaties = [
     tijd: 415_000_000,
     output: [
       { naam: "Haaien", naam_en: "Sharks", icoon: "icons/Haaien.png", map: "Vissen", 
+        geluid: "sound/ZwartGat.m4a",
         quote: `Sharks are beautiful animals, and if you're lucky enough to see lots of them, that means that you're
         in a healthy ocean. You should be afraid if you are in the ocean and don't see sharks
         <br><br>- Sylvia Earle`
       },
       { naam: "Spookhaaien", naam_en: "Ghostsharks", icoon: "icons/Spookhaaien.png", map: "Vissen", 
-        geluid: "sound/Oceaan.m4a",
         quote: `Chimaeras are among the strangest of living fishes, with features unlike those of any other group
         <br><br>- Peter Last`
       }
@@ -4597,7 +4592,7 @@ const combinaties = [
     hint_en: `Let a bunch of recognisable species emerge from the early crustaceans I say`,
     output: [
       { naam: "Zeepissebedden", naam_en: "Marine isopods", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `Marine littoral isopods are highly mobile scavengers, often found in large numbers along rocky shorelines
         <br><br>- Gary Poore`
       },
@@ -4638,7 +4633,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Zeepissebedden", naam_en: "Marine isopods", icoon: "icons/Zeepissebedden.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `Marine littoral isopods are highly mobile scavengers, often found in large numbers along rocky shorelines
         <br><br>- Gary Poore`
       },
@@ -4695,7 +4690,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Vlokreeftjes", naam_en: "Amphipods", icoon: "icons/Vlokreeftjes.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `Many amphipods are important scavengers, playing a key role in the breakdown of organic matter in aquatic 
         ecosystems
         <br><br>- Gary Poore`
@@ -4735,7 +4730,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oertienpotigen", naam_en: "Urdecapods", icoon: "icons/Oertienpotigen.png", map: "Geleedpotigen", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `The evolution of decapods reflects a long history of ecological diversification in marine environments
         <br><br>- H. Komai`
       },
@@ -4821,7 +4816,6 @@ const combinaties = [
     tijd: 390_000_000,
     output: [
       { naam: "Schorpioenen", naam_en: "Scorpions", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
-        geluid: "sound/Spin.mp3",
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
@@ -4831,6 +4825,7 @@ const combinaties = [
         <br><br>- Mark Harvey`
       },
       { naam: "Spinnen", naam_en: "Spiders", icoon: "icons/Spinnen.png", map: "Klein landleven", 
+        geluid: "sound/Spin.mp3",
         quote: `The next time you see a spider web, please, pause and look a little closer.
         You'll be seeing one of the most high-performance materials known to man 
         <br><br>- Cheryl Hayashi`
@@ -4871,7 +4866,7 @@ const combinaties = [
     hint_en: `It is evolutionarily advantageous for prey to be instantly paralysed by toxic substances.`,
     output: [
       { naam: "Schorpioenen", naam_en: "Scorpions", icoon: "icons/Schorpioenen.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Spin.mp3",
         quote: `Scorpions are among the most ancient of terrestrial arthropods, 
         their basic body plan little changed for hundreds of millions of years
         <br><br>- Gary Polis`
@@ -4907,7 +4902,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Hooiwagens", naam_en: "Harvestmen", icoon: "icons/Hooiwagens.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
         quote: `Unlike spiders, harvestmen do not produce silk or venom, relying instead on scavenging and simple predation
         <br><br>- Mark Harvey`
       },
@@ -5103,7 +5097,6 @@ const combinaties = [
     hint_en: `Marine isopods could thrive perfectly well on land too...`,
     output: [
       { naam: "Pissebedden", naam_en: "Woodlice", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
         Each tells a story
         <br><br>- Fennel Hudson`
@@ -5131,7 +5124,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Pissebedden", naam_en: "Woodlice", icoon: "icons/Pissebedden.png", map: "Klein landleven", 
-        geluid: "sound/Leven.m4a",
         quote: `Everything from the humble woodlouse to specks of dust moving through a ray of sunlight.
         Each tells a story
         <br><br>- Fennel Hudson`
@@ -5154,7 +5146,7 @@ const combinaties = [
     hint_en: `Some decapods move sideways, while others move forward.`,
     output: [
       { naam: "Garnalen", naam_en: "Shrimps", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
         <br><br>- Raymond Bauer`
       },
@@ -5191,7 +5183,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Garnalen", naam_en: "Shrimps", icoon: "icons/Garnalen.png", map: "Geleedpotigen",
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `Shrimps are among the most adaptable of crustaceans, occupying habitats from coral reefs to the deep sea
         <br><br>- Raymond Bauer`
       },
@@ -5232,7 +5224,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Kreeften", naam_en: "Lobsters", icoon: "icons/Kreeften.png", map: "Geleedpotigen",
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `Lobsters are among the most ancient designs in the sea, animals whose basic form has persisted for
         millions of years
         <br><br>- Trevor Corson`
@@ -5273,7 +5265,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Krabben", naam_en: "Crabs", icoon: "icons/Krabben.png", map: "Geleedpotigen",
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `You cannot teach a crab to walk straight
         <br><br>- Aristophanes`
       },
@@ -5315,7 +5307,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Heremietkreeften", naam_en: "Hermit crabs", icoon: "icons/Heremietkreeften.png", map: "Geleedpotigen",
-        geluid: "sound/Leven.m4a",
+        geluid: "sound/Bubbels.m4a",
         quote: `The growth of hermit crabs is constrained by their dependence on finding progressively larger shells
         <br><br>- Martin West`
       },
@@ -5397,7 +5389,7 @@ const combinaties = [
     hint_en: `All that dead organic matter never truly disappears and can accumulate in shallow water.`,
     output: [
       { naam: "Veen", naam_en: "Peat", icoon: "icons/Veen.png", map: "Aarde", 
-        geluid: "sound/Berg.mp3",
+        geluid: "sound/Veen.mp3",
         quote: `Peatlands hold the carbon and stories of our past and are key to a livable future
         <br><br>- Catherine Fitzgerald`
       }
