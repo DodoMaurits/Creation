@@ -318,7 +318,7 @@ const combinaties = [
     hint_en: `So many stars.. as white streaks of milk swirling into the drain`,
     vers: `En de Zon stroomt naar haar Bestemming, <br>dat is de bepaling van de Macht, van de Wijsheid
     <br><br>Ya-Sin (36:38)`,
-    vers_en: `And the Sun flows toward its Destination, and that is the decision of the Power, of the Wisdom.
+    vers_en: `And the Sun flows toward its Destination, <br>and that is the decision of the Power, of the Wisdom.
     <br><br>Ya-Sin (36:38)`,
     output: [
       { naam: "Sterrenstelsel", naam_en: "Galaxy", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
