@@ -2047,7 +2047,8 @@ const combinaties = [
         tekst_en: `
       <span>Oceans and plasmas - water and fire - are necessary for the creation of life from non-living matter. In 
         1952, scientists first replicated this process in a laboratory by subjecting a simulated early Earth 
-        atmosphere to electrical discharges. Within a few days, simple organic molecules - an amino acid-rich, pinkish 
+        atmosphere to electrical discharges.</span>
+      <span>Within a few days, simple organic molecules - an amino acid-rich, pinkish 
         sludge - were found floating on the water. This process occurred on a massive scale when the Moon was still 
         much closer to the Earth. Lightning strikes from above and erupting volcanoes from below transformed the ocean 
         into a chemical concoction: the primordial soup.</span>
@@ -2068,7 +2069,8 @@ const combinaties = [
         to sustain itself.</span>
       <span>A cell is the smallest form of life. Like molecular metropolises, they contain a library (a cell nucleus with 
         genetic material), power plants (mitochondria), waste disposal systems (lysosomes), city walls (a membrane), post
-        offices (the Golgi apparatus), and so on. However, not all cells are equally sophisticated. LUCA - our oldest
+        offices (the Golgi apparatus), and so on.</span>
+      <span>However, not all cells are equally sophisticated. LUCA - our oldest
         universal ancestor - did not live entirely independently; much like viruses, these organisms relied on volcanic 
         heat on the ocean floor. The thin electrical barrier between their internal environment and the outside world
         provided the energy needed to take in nutrients and expel waste products.</span>`
