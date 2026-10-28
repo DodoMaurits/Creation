@@ -7329,6 +7329,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Sauropoden", naam_en: "Sauropods", icoon: "icons/Sauropoden.png", map: "Reptielen", 
+        geluid: "sound/Sauropod.m4a",
         quote: `Sauropods were the gentle giants of the Mesozoic, moving with ponderous grace, their immense bodies 
         shaping the landscapes they traversed
         <br><br>- John McIntosh`
@@ -7367,6 +7368,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Stegosauriërs", naam_en: "Stegosaurs", icoon: "icons/Stegosauriërs.png", map: "Reptielen", 
+        geluid: "sound/Sauropod.m4a",
         quote: `Stegosaurs are among the most iconic of dinosaurs, with their plated backs and spiked tails, suggesting 
         both defense and display in equal measure
         <br><br>- Peter Galton`
@@ -7449,6 +7451,7 @@ const combinaties = [
     learn, superior eyes, ink-spraying, jet propulsion... and 3 hearts.`,
     output: [
       { naam: "Octopussen", naam_en: "Octopuses", icoon: "icons/Octopussen.png", map: "Waterdieren", 
+        geluid: "sound/AngelFemaleLaag.m4a", 
         quote: `We split from our common ancestor with the octopus half a billion years ago. And yet, you can make friends
         with an octopus
         <br><br>- Sy Montgomery`
@@ -7478,14 +7481,14 @@ const combinaties = [
         <br><br>- Sy Montgomery`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -7513,9 +7516,9 @@ const combinaties = [
         <br><br>- Sy Montgomery`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
@@ -7656,16 +7659,15 @@ const combinaties = [
         requirements: ["Octopussen", "Veer", "Archaeopteryx", "Termieten", "Heuvel", "Bruinwieren", "Kelpwoud"] },
       normal: {
         achtergrond: "afb/Het_Krijt.png", titel: "KRIJT 145-66 MA", titel_en: "CRETACEOUS 145-66 MA",
-        tekst: 
-        `<span>Net als het eiland Kreta is deze periode vernoemd naar het Latijnse creta (kalk) vanwege de dikke 
+        tekst: `
+      <span>Net als het eiland Kreta is deze periode vernoemd naar het Latijnse creta (kalk) vanwege de dikke 
         kalksteenlagen die geologen in 1822 in Noord-Franrijk aantroffen. Gondwana brak verder op, met de splitsing van 
         Afrika, India en Australië-Antarctica. Door veel vulkanisme lag de zeespiegel hoog, waardoor grote delen van 
         Noordwest-Europa onder de zogeheten Krijtzee stonden. Het zeeleven varieerde van zeereptielen tot ammonieten en 
         veel beenvissen, die toen recordlengtes van 5 meter bereikten. Ook eencellig plankton ontstond, verantwoordelijk 
         voor de karakteristieke kalksteen, terwijl op de zeebodem krabben, oesters en weekdieren tot een meter groot 
         werden. </span> 
-        <br><br>
-        <span>De plesiosauriërs kregen een gigantische concurrent: de meer dan 15 meter lange mosasuiridae, vernoemd 
+      <span>De plesiosauriërs kregen een gigantische concurrent: de meer dan 15 meter lange mosasuiridae, vernoemd 
         naar het eerste fossiel aan de rivier de Maas. Op het land verschenen de eerste bedektzadige planten, zogenaamde
         bloemplanten, samen met de eerste bijen voor bestuiving. Ook bedektzadige bomen zoals vijgen, platanen en 
         magnolia’s ontstonden, hoewel coniferen en varens dominant bleven. Bloeiende planten boden een nieuw voedselbron 
@@ -7674,16 +7676,15 @@ const combinaties = [
         continent zijn eigen dinosauriërs. In de lucht namen vogels de overhand, waardoor de grote pterosauriërs in 
         aantal afnamen.</span>`,
 
-        tekst: 
-        `<span>Like the island of Crete, this period is named after the Latin word 'creta' (chalk), owing to the thick
+        tekst_en: `
+      <span>Like the island of Crete, this period is named after the Latin word 'creta' (chalk), owing to the thick
         limestone layers that geologists discovered in northern France in 1822. Gondwana continued to break apart, with
         Africa, India and the Australia-Antarctica landmass splitting off. Intense volcanic activity led to high sea 
         levels, causing large parts of Northwest Europe to be submerged beneath what is known as the Cretaceous Sea.
         Marine life ranged from sea reptiles to ammonites and numerous bony fish - some of which reached record lengths
         of 5 meters. Single-celled plankton also emerged, contributing to the formation of the characteristic limestone,
         while the seabed became home to crabs, oysters and mollusks that grew up to a meter in size.</span>
-        <br><br>
-        <span>Plesiosaurs faced a formidable competitor: the mosasaurs - a group that could exceed 15 meters in length
+      <span>Plesiosaurs faced a formidable competitor: the mosasaurs - a group that could exceed 15 meters in length
         and was named after the first fossil discovered along the Meuse River. On land, the first angiosperms - or 
         flowering plants - emerged, accompanied by the earliest bees for pollination. Angiosperm trees, such as figs, 
         plane trees and magnolias, also appeared, though conifers and ferns remained dominant. Flowering plants provided
