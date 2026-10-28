@@ -322,6 +322,7 @@ const combinaties = [
     <br><br>Ya-Sin (36:38)`,
     output: [
       { naam: "Sterrenstelsel", naam_en: "Galaxy", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
+        geluid: "sound/Ster.m4a",
         quote: `Never apologize for burning too brightly or collapsing into yourself every night. 
         That is how galaxies are made 
         <br><br>- Tyler Kent`
