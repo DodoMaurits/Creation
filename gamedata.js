@@ -7183,21 +7183,19 @@ const combinaties = [
         requirements: ["Schildpadden"] 
       }, normal: { achtergrond: "afb/jura.png", titel: "JURA 201-145 MA", titel_en: "JURASSIC 201-145 MA",
         tekst: `
-        <span>Opnieuw vond een grote sterfte aan soorten leven plaats, maar dit keer is de aanleiding tot dusver nog 
+      <span>Opnieuw vond een grote sterfte aan soorten leven plaats, maar dit keer is de aanleiding tot dusver nog 
         onbekend. Gedacht wordt aan een meteoriet, klimaatverandering, vulkanisme of het vrijkomen van methaan uit de
         oceaanbodem. Het heeft de kaarten van het evolutiespel op land flink door elkaar geschud, maar vooral in zee waren 
         de gevolgen ernstig. Circa 20 procent van de mariene families stierf uit, waaronder veel grote zeereptielen. 
         De dinosauriërs zouden juist van deze gebeurtenis hebben geprofiteerd en werden nog dominanter op land. 
         In totaal stierf mogelijk ongeveer 75 procent van alle diersoorten uit.</span>
-        <br><br>
-        <span>Deze periode is vernoemd naar het Jura-gebergte op de Zwitsers-Franse grens, waar veel gesteenten uit deze 
+      <span>Deze periode is vernoemd naar het Jura-gebergte op de Zwitsers-Franse grens, waar veel gesteenten uit deze 
         tijd aan het oppervlak liggen. Op de zeebodem leefden veel diersoorten die er nu nog zijn, zoals oesters, 
         slangsterren, zeesterren en zee-egels. In deze periode kwamen ook kreeftachtigen sterk tot ontwikkeling, 
         waaronder krabben, kreeften, garnalen en zelfs pissebedden (op land). Sommige waterdieren profiteerden van de 
         Trias-Jura-massaextinctie, waaronder de plesiosauriërs (zeereptielen), ichthyosauriërs (reptielachtige 
         zeereptielen), haaien en krokodilachtige zeereptielen.</span>
-        <br><br>
-        <span>Op land varieerden soorten dinosauriërs van plantenetende stegosauriërs (met rijen stekels of botplaten op 
+      <span>Op land varieerden soorten dinosauriërs van plantenetende stegosauriërs (met rijen stekels of botplaten op 
         de rug) en sauropoden (met zeer lange nekken en tevens de langste en zwaarste landdieren die ooit hebben geleefd),
         tot vleesetende theropoden en de vliegende pterosauriërs. Zoogdieren waren kleine, onopvallende dieren die meestal
         ’s nachts leefden om confrontaties met dinosauriërs uit de weg te gaan, zoals de fruitafossor (een insecteneter 
@@ -7206,21 +7204,19 @@ const combinaties = [
         </span>`,
 
         tekst_en: `
-        <span>Once again, a mass extinction of life forms occurred, though the cause remains unknown to this day. Theories
+      <span>Once again, a mass extinction of life forms occurred, though the cause remains unknown to this day. Theories
         include a meteorite impact, climate change, volcanic activity, or the release of methane from the ocean floor.
         This event significantly reshuffled the deck of the evolutionary game on land, but its impact was particularly 
         severe in the oceans. Approximately 20 percent of marine families went extinct, including many large marine
         reptiles. Dinosaurs, by contrast, appear to have benefitted from this event, becoming even more dominant on land.
         In total, perhaps as much as 75 percent of all animal species may have perished.</span>
-        <br><br>
-        <span>This period is named after the Jura Mountains on the Swiss-French border, where many rocks from this era
+      <span>This period is named after the Jura Mountains on the Swiss-French border, where many rocks from this era
         are exposed at the surface. The seabed was home to many animal species that still exist today, such as oysters, 
         brittle starts, starfish and sea urchins. This period also saw significant development among crustaceans, 
         including crabs, lobsters, shrimp and even woodlice (on land). Some aquatic animals benefited from the Triassic-
         Jurassic mass extinction, including plesiosaurs (marine reptiles), ichthyosaurs (reptile-like marine reptiles),
         sharks and crocodilian-like marine reptiles.</span>
-        <br><br>
-        <span>On land, dinosaur species ranged from plant-eating stegosaurs (featuring rows of spikes or bony plates 
+      <span>On land, dinosaur species ranged from plant-eating stegosaurs (featuring rows of spikes or bony plates 
         along their backs) and sauropods (which had very long necks and were the longest and heaviest land animals to 
         have ever lived), to carnivorous theropods and flying pterosaurs. Mammals were small, inconspicuous creatures
         that were mostly nocturnal - likely to avoid encounters with dinosaurs - such as the 'fruitafossor' (an
@@ -7242,14 +7238,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+        geluid: "sound/Archaeopteryx.mp3",
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
         the evolutionary roots of modern birds
         <br><br>- Philip Currie`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -7288,6 +7285,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+        geluid: "sound/Archaeopteryx.mp3",
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
         the evolutionary roots of modern birds
         <br><br>- Philip Currie`
@@ -7297,9 +7295,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -7336,9 +7334,9 @@ const combinaties = [
         <br><br>- John McIntosh`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
