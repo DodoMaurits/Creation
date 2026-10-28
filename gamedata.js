@@ -8625,57 +8625,53 @@ const combinaties = [
       },
       normal: { achtergrond: "afb/Uitsterven_dinosauriërs.jpg",
         titel: "DINOSAURIËRS UITGESTORVEN 66 MA", titel_en: "DINOSAURS EXTINCT 66 MA",
-        tekst: 
-        `<span>Een asteroïde met een snelheid van 30 kilometer per seconde – 100.000 kilometer per uur – vloog door de 
+        tekst: `
+      <span>Een asteroïde met een snelheid van 30 kilometer per seconde – 100.000 kilometer per uur – vloog door de 
         dampkring en sloeg in op Aarde, waarna in relatief korte tijd hele ecosystemen die miljoenen jaren de Aarde hadden
         gedomineerd verdwenen. Deze massaextinctie door een asteroïde kreeg in de jaren 1980 overtuigend bewijs, toen de
         inslagkrater met een diameter van circa 180 kilometer werd ontdekt rondom het plaatsje Chicxulub Pueblo in Mexico.
         Op deze plek is het zeldzame element iridium gevonden, dat wereldwijd in verhoogde concentraties voorkomt in de
         Krijt-Paleogeen-laag.</span>
-        <br><br>
-        <span>De inslag veroorzaakte enorme stofwolken en rook, die maandenlang de zon verduisterden, waardoor 
+      <span>De inslag veroorzaakte enorme stofwolken en rook, die maandenlang de zon verduisterden, waardoor 
         fotosynthese grotendeels stilviel. Grote delen van de Aarde stonden tegelijk in brand, te beginnen bij de massale
         bosbranden rondom de inslagplaats. Met het verdwijnen van zonlicht stierven vele soorten plankton en planten, 
         waarna herbivoren uitstierven en uiteindelijk de carnivoren die van hen afhankelijk waren verhongerden. 
         Van de dinosauriërs overleefden alleen de voorouders van de vogels.</span>
-        <br><br>
-        <span>Jaren na de inslag konden de overlevende soorten langzaam weer profiteren van fotosynthese, maar de 
+      <span>Jaren na de inslag konden de overlevende soorten langzaam weer profiteren van fotosynthese, maar de 
         wereld was nog altijd een hete broeikasomgeving. Het duurde duizenden jaren voordat de biosfeer enigszins 
         hersteld was. Kleine omnivore zoogdieren en vogels overleefden dankzij dode resten en de larven, wormen en 
         slakken die zich daarop voedden. Veel dieren leefden bovendien in holen of ondergronds en kwamen ’s nachts naar 
         buiten.</span>
-        <br><br>
-        <span>Hoewel de gemiddelde temperaturen koeler waren dan in het Krijt en de zeespiegel lager stond, was de Aarde 
+      <span>Hoewel de gemiddelde temperaturen koeler waren dan in het Krijt en de zeespiegel lager stond, was de Aarde 
         bedekt met weelderige tropische regenwouden en uitgestrekte naaldbossen, zelfs op hoge breedtegraden nabij de 
-        polen. Alleen de platen van India en Australië lagen nog op heel andere plaatsen dan de huidige continenten. Elk 
+        polen. Alleen de platen van India en Australië lagen nog op heel andere plaatsen dan de huidige continenten.</span>
+      <span>Elk 
         continent ontwikkelde zijn eigen unieke ecosysteem, maar Eurazië en Noord-Amerika waren via de Beringstraat nog 
         wel verbonden, waardoor migratie van dieren nog altijd voorkwam. Zoogdieren waren nog klein en primitief, 
         maar in een periode van slechts 10 miljoen jaar ontstonden veel cruciale groepen.</span>`,
                
-        tekst_en: 
-        `<span>An asteroid, traveling at a speed of 30 kilometers per second - 100.000 kilometers per hour - streaked
+        tekst_en: `
+      <span>An asteroid, traveling at a speed of 30 kilometers per second - 100.000 kilometers per hour - streaked
         through the atmosphere and struck the Earth, leading to the relatively rapid disappearance of entire ecosystems
         that had dominated the planet for millions of years. This mass extinction event, caused by an asteroid, gained
         compelling evidence in the 1980s with the discovery of an impact crater approximately 180 kilometers in diameter
         near the town of Chicxulub Pueblo in Mexico. At this site, the rare element iridium was found - an element that
         appears in elevated concentrations worldwide within the Cretaceous-Paleogene boundary layer.</span>
-        <br><br>
-        <span>The impact created massive clouds of dust and smoke that obscured the sun for months, causing photosynthesis
+      <span>The impact created massive clouds of dust and smoke that obscured the sun for months, causing photosynthesis
         to largely grind to a halt. Large parts of the Earth erupted in flames simultaneously, starting with the massive
         forest fires surrounding the impact site. As sunlight vanished, many species of plankton and plants died off;
         this led to the extinction of herbivores, and, in turn, the carnivores that depended on them starved to death. 
         Of the dinosaurs, only the ancestors of birds survived.</span>
-        <br><br>
-        <span>Years after the impact, surviving species were gradually able to benefit from photosynthesis once again,
+      <span>Years after the impact, surviving species were gradually able to benefit from photosynthesis once again,
         yet the world remained a hot, greenhouse-like environment. It took thousands of years for the biosphere to show
         any signs of recovery. Small, omnivorous mammals and birds survived by feeding on dead organic matter - as well as
         the larvae, worms and snails that consumed that matter. Furthermore, many animals lived in burrows or underground,
         emerging only at night</span>
-        <br><br>
-        <span>Although average temperatures were cooler than in the Cretaceous period and sea levels were lower, the Earth
+      <span>Although average temperatures were cooler than in the Cretaceous period and sea levels were lower, the Earth
         was covered in lush tropical rainforests and vast coniferous forests - even at high latitutdes near the poles. 
         Only the tectonic plates of India and Australia were situated in locations significantly different from those of
-        the present-day continents. Each continent developed its own unique ecosystem; however, Eurasia and North America
+        the present-day continents.</span>
+      <span>Each continent developed its own unique ecosystem; however, Eurasia and North America
         remained connected via the Bering Strait, which allowed for the continued migration of animals. Mammals were still
         small and primitive, yet many crucial groups emerged within a span of just 10 million years.</span>`
       },
