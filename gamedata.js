@@ -15236,7 +15236,7 @@ const combinaties = [
       ["Oerhondachtigen", "Oertetrapoden"], ["Oerhondachtigen", "Salamanders"], ["Oerhondachtigen", "Kikkers"], 
       ["Oerhondachtigen", "Padden"],
       /* --- REPTIELEN --- */
-      ["Oerhondachtigen", "Lepidosauriërs"],
+      ["Oerhondachtigen", "Lepidosauriërs"], ["Oerhondachtigen", "Gekko's"],
       /* --- ZOOGDIEREN --- */
       ["Oerhondachtigen", "Mollen"], ["Oerhondachtigen", "Oercynodonten"], ["Oerhondachtigen", "Oerplacentalia"], 
       ["Oerhondachtigen", "Oerbuideldieren"], ["Oerhondachtigen", "Vleermuizen"], ["Oerhondachtigen", "Oerknaagdieren"], 
@@ -15255,6 +15255,90 @@ const combinaties = [
       { naam: "Oerhondachtigen", naam_en: "Urcanids", icoon: "icons/Oerhondachtigen.png", map: "Carnivoren", 
         quote: `The Canidae are an ancient lineage of carnivores that originated in North America during the Eocene epoch
         <br><br>- Xiaoming Wang`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ OERKATACHTIGEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Oerkatachtigen", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerkatachtigen", "Waterspinnen"], ["Oerkatachtigen", "Aasgarnalen"], ["Oerkatachtigen", "Vlokreeftjes"],
+      ["Oerkatachtigen", "Garnalen"], ["Oerkatachtigen", "Krabben"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerkatachtigen", "Luizen"], ["Oerkatachtigen", "Mijten"], ["Oerkatachtigen", "Teken"], 
+      ["Oerkatachtigen", "Termieten"], ["Oerkatachtigen", "Pissebedden"], ["Oerkatachtigen", "Oerpolyneopteren"], 
+      ["Oerkatachtigen", "Duizendpoten"], ["Oerkatachtigen", "Hooiwagens"], ["Oerkatachtigen", "Spinnen"], 
+      ["Oerkatachtigen", "Zilvervisjes"], ["Oerkatachtigen", "Wandelende takken"], ["Oerkatachtigen", "Kakkerlakken"], 
+      ["Oerkatachtigen", "Oerhymenopteren"], ["Oerkatachtigen", "Slakken"], ["Oerkatachtigen", "Libellen"],   
+      ["Oerkatachtigen", "Kevers"], ["Oerkatachtigen", "Mieren"], ["Oerkatachtigen", "Vliegen"], 
+      ["Oerkatachtigen", "Vlinders"], ["Oerkatachtigen", "Krekels"], ["Oerkatachtigen", "Sprinkhanen"], 
+      ["Oerkatachtigen", "Muggen"],
+      /* --- BIOLOGIE --- */
+      ["Oerkatachtigen", "Detritus"], ["Oerkatachtigen", "Ei"],
+      /* --- FRUIT --- */
+      ["Oerkatachtigen", "Druiven"], ["Oerkatachtigen", "Appels"], ["Oerkatachtigen", "Peren"], 
+      ["Oerkatachtigen", "Pruimen"], ["Oerkatachtigen", "Bosbessen"], ["Oerkatachtigen", "Aardbeien"], 
+      ["Oerkatachtigen", "Kersen"], ["Oerkatachtigen", "Frambozen"]
+    ],
+    output: [
+      { naam: "Oerkatachtigen", naam_en: "Urfelids", icoon: "icons/Oerkatachtigen.png", map: "Carnivoren", 
+        quote: `The diversification of felids reflects a shift toward hypercarnivory and specialized predation strategies
+        <br><br>- Alan Turner`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Oerkatachtigen", "Karpers"], ["Oerkatachtigen", "Goudvissen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerkatachtigen", "Oertetrapoden"], ["Oerkatachtigen", "Salamanders"], ["Oerkatachtigen", "Kikkers"], 
+      ["Oerkatachtigen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Oerkatachtigen", "Lepidosauriërs"], ["Oerkatachtigen", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Oerkatachtigen", "Mollen"], ["Oerkatachtigen", "Oercynodonten"], ["Oerkatachtigen", "Oerplacentalia"], 
+      ["Oerkatachtigen", "Oerbuideldieren"], ["Oerkatachtigen", "Vleermuizen"], ["Oerkatachtigen", "Oerknaagdieren"], 
+      ["Oerkatachtigen", "Konijnen"], ["Oerkatachtigen", "Hazen"], ["Oerkatachtigen", "Prairiehonden"], 
+      ["Oerkatachtigen", "Ratten"], ["Oerkatachtigen", "Eekhoorns"], ["Oerkatachtigen", "Muizen"], 
+      ["Oerkatachtigen", "Hamsters"], ["Oerkatachtigen", "Vogelbekdieren"], ["Oerkatachtigen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Oerkatachtigen", "Archaeopteryx"], ["Oerkatachtigen", "Duiven"], ["Oerkatachtigen", "Zwaluwen"],
+      ["Oerkatachtigen", "Spreeuwen"], ["Oerkatachtigen", "Mussen"], ["Oerkatachtigen", "Vinken"],
+      ["Oerkatachtigen", "Kraaien"], ["Oerkatachtigen", "Kolibries"], ["Oerkatachtigen", "Kieviten"],
+      ["Oerkatachtigen", "Kanaries"], 
+      /* --- CARNIVOREN --- */
+      ["Oerkatachtigen", "Oerevenhoevigen"], ["Oerkatachtigen", "Oeronevenhoevigen"]
+    ],
+    output: [
+      { naam: "Oerkatachtigen", naam_en: "Urfelids", icoon: "icons/Oerkatachtigen.png", map: "Carnivoren", 
+        quote: `The diversification of felids reflects a shift toward hypercarnivory and specialized predation strategies
+        <br><br>- Alan Turner`
       },
       { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
