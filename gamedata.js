@@ -9639,7 +9639,7 @@ const combinaties = [
   {
     input: ["Oerstraalvinnigen", "Zee"],
     hint: `Sommige straalvinnigen zwemmen het liefst alle wereldzeeën over.`,
-    hint_en: `Some ray-finned fish prefer to discover the ocean, as we all would.`,
+    hint_en: `Some ray-finned fish prefer to discover the seven seas, as we all would.`,
     tijd: 10_000_000,
     output: [
       { naam: "Tonijn", naam_en: "Tuna", icoon: "icons/Tonijn.png", map: "Vissen", 
