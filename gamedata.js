@@ -491,6 +491,7 @@ const combinaties = [
     moves in an orbit <br><br>Ya-Sin (36:40)`,
     output: [
       { naam: "De Maan", naam_en: "The Moon", icoon: "icons/Maan.png", map: "Heelal",
+        geluid: "sound/ExplosieGroot.mp3",
         quote: `I always look up at the moon and see it as the single most romantic place within the cosmos 
         <br><br>- Tom Hanks`
       }
