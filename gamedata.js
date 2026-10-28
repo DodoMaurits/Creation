@@ -6428,6 +6428,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oercynodonten", naam_en: "Urcynodonts", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
+        geluid: "sond/Leven.m4a",
         quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
         making them the most intimate companions of humans
         <br><br>- Richard Dawkins`
@@ -6464,6 +6465,7 @@ const combinaties = [
     ],
     output: [
       { naam: "Oercynodonten", naam_en: "Urcynodonts", icoon: "icons/Oercynodonten.png", map: "Zoogdieren", 
+        geluid: "sond/Leven.m4a",
         quote: `Mammals are distinguished by their care of the young, their warm blood, and their adaptability, 
         making them the most intimate companions of humans
         <br><br>- Richard Dawkins`
@@ -6473,9 +6475,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6490,6 +6492,7 @@ const combinaties = [
     hint_en: `Insects with elongated, straight wings.. we shall see what comes of that.`,
     output: [
       { naam: "Krekels", naam_en: "Crickets", icoon: "icons/Krekels.png", map: "Klein landleven", 
+        geluid: "sound/Krekels.mp3",
         quote: `I love being outdoors. I love listening to the crickets
         <br><br>- Miranda Kerr`
       },
@@ -6533,13 +6536,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Krekels", naam_en: "Crickets", icoon: "icons/Krekels.png", map: "Klein landleven", 
+        geluid: "sound/Krekels.mp3",
         quote: `I love being outdoors. I love listening to the crickets
         <br><br>- Miranda Kerr`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6567,9 +6571,9 @@ const combinaties = [
         <br><br>- Hona Andrews`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6594,9 +6598,9 @@ const combinaties = [
         <br><br>- Paul Brock`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6628,9 +6632,9 @@ const combinaties = [
         <br><br>- Joseph Krutch`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6654,9 +6658,9 @@ const combinaties = [
         <br><br>- E.O. Wilson`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6672,6 +6676,7 @@ const combinaties = [
     tijd: 230_000_000,
     output: [
       { naam: "Pterosauriërs", naam_en: "Pterosaurs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
         unlike anything seen before or since.
         <br><br>- David Unwin`
@@ -6715,14 +6720,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Pterosauriërs", naam_en: "Pterosaurs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
         unlike anything seen before or since.
         <br><br>- David Unwin`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6741,6 +6747,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Pterosauriërs", naam_en: "Pterosaurs", icoon: "icons/Pterosauriërs.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Pterosaurs were not simply reptiles that flew; they were animals exquisitely adapted to the air, with wings
         unlike anything seen before or since.
         <br><br>- David Unwin`
@@ -6750,9 +6757,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6779,14 +6786,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Lepidosauriërs", naam_en: "Lepidosaurs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
         the finest details of their surroundings
         <br><br>- Rachel Carson`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6805,6 +6813,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Lepidosauriërs", naam_en: "Lepidosaurs", icoon: "icons/Lepidosauriërs.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Reptiles are exquisitely adapted to their worlds, their skins, their senses, their movements all tuned to 
         the finest details of their surroundings
         <br><br>- Rachel Carson`
@@ -6814,9 +6823,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6843,14 +6852,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Crurotarsi", naam_en: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
         efficiency that has changed little over time
         <br><br>- David Attenborough`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6869,6 +6879,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Crurotarsi", naam_en: "Crurotarsi", icoon: "icons/Crurotarsi.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Crocodilians are superbly built predators, their bodies low and powerful, moving with a stealth and 
         efficiency that has changed little over time
         <br><br>- David Attenborough`
@@ -6878,9 +6889,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6907,14 +6918,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
-        geluid: "sound/Dinosaurus.m4a",
+        geluid: "sound/Reptiel.wav",
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6933,7 +6944,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oerdinosauriërs", naam_en: "Urdinosaurs", icoon: "icons/Oerdinosauriërs.png", map: "Reptielen", 
-        geluid: "sound/Dinosaurus.m4a",
+        geluid: "sound/Reptiel.wav",
         quote: `Dinosaurs are the best way to teach kids, and adults, the immensity of geologic time
         <br><br>- Robert Bakker`
       },
@@ -6942,9 +6953,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6991,9 +7002,9 @@ const combinaties = [
         <br><br>- Aesopos`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -7037,6 +7048,7 @@ const combinaties = [
     hint_en: `Who oh who wants to go back to the ocean?`,
     output: [
       { naam: "Zeeschildpadden", naam_en: "Turtles", icoon: "icons/Zeeschildpadden.png", map: "Waterdieren", 
+        geluid: "sound/Leven.m4a",
         quote: `Try to be like the turtle - at ease in your own shell
         <br><br>- Bill Copeland`
       }
@@ -7066,9 +7078,9 @@ const combinaties = [
         <br><br>- Bill Copeland`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -7127,6 +7139,7 @@ const combinaties = [
         <br><br>- Elbert Hubbard`
       },
       { naam: "Leger", naam_en: "Army", icoon: "icons/Leger.png", map: "Samenleving", 
+        geluid: "sound/Leger.mp3",
         quote: `Victory is reserved for those who are willing to pay its price
         <br><br>- Sun Tzu`
       },
