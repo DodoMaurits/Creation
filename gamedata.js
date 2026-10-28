@@ -5481,7 +5481,8 @@ const combinaties = [
       <span>De uitgestrekte bossen hadden ook gevolgen voor het klimaat en de geochemie van de Aarde. Planten verdubbelden
         mogelijk de fotosynthesesnelheid, waardoor het totale energiebudget van de biosfeer toenam en dus meer organismen 
         konden worden ondersteund. Door wortel- en bladwerking versnelden ze de verwering van gesteenten, waardoor koolstof
-        uit de atmosfeer gemakkelijker werd gebodnen en begraven in bodems en sedimenten. Dit leidde tot een stijging van 
+        uit de atmosfeer gemakkelijker werd gebodnen en begraven in bodems en sedimenten.</span>
+      <span>Dit leidde tot een stijging van 
         zuurstofniveaus in de atmosfeer tot circa 30-35 procent, wat op zijn beurt nieuwe chemische reacties in de 
         aardkorst mogelijk maakte en bijdroeg aan de vorming van veel van de mineralen die we vandaag kennen.</span>`,
 
@@ -5499,7 +5500,8 @@ const combinaties = [
       <span>The vast forests also had consequences for Earth's climate and geochemistry. Plants may have doubled the rate
         of photosynthesis, thereby increasing the total energy budget of the biosphere and allowing it to support more
         organisms. Through the action of their roots and leaves, they accelerated the weathering of rocks, which 
-        facilitated the sequestration of atmospheric carbon - trapping it within soils and sediments. This led to a rise
+        facilitated the sequestration of atmospheric carbon - trapping it within soils and sediments.</span>
+      <span>This led to a rise
         in atmospheric oxygen levels to approximately 30-35 percent, which in turn enabled new chemical reactions within
         the Earth's crust and contributed to the formation of many of the minerals we recognise today.</span>`
       }
