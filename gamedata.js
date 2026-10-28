@@ -6346,7 +6346,7 @@ const combinaties = [
     hint_en: `A rainforest already possesses a great deal of diversity, but it truly explodes in the tropics.`,
     output: [
       { naam: "Tropisch regenwoud", naam_en: "Tropical rainforest", icoon: "icons/Tropisch regenwoud.png", 
-        map: "Landschap", 
+        map: "Landschap", geluid: "sound/Regen.m4a",
         quote: `The jungle is dark but full of diamonds
         <br><br>- Arthur Miller`
       }
