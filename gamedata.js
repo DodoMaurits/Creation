@@ -15187,6 +15187,90 @@ const combinaties = [
         <br><br>- Derek Ratcliffe`
       }
     ]
+  }, /* ------------------ OERHONDACHTIGEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Oerhondachtigen", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Oerhondachtigen", "Waterspinnen"], ["Oerhondachtigen", "Aasgarnalen"], ["Oerhondachtigen", "Vlokreeftjes"],
+      ["Oerhondachtigen", "Garnalen"], ["Oerhondachtigen", "Krabben"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerhondachtigen", "Luizen"], ["Oerhondachtigen", "Mijten"], ["Oerhondachtigen", "Teken"], 
+      ["Oerhondachtigen", "Termieten"], ["Oerhondachtigen", "Pissebedden"], ["Oerhondachtigen", "Oerpolyneopteren"], 
+      ["Oerhondachtigen", "Duizendpoten"], ["Oerhondachtigen", "Hooiwagens"], ["Oerhondachtigen", "Spinnen"], 
+      ["Oerhondachtigen", "Zilvervisjes"], ["Oerhondachtigen", "Wandelende takken"], ["Oerhondachtigen", "Kakkerlakken"], 
+      ["Oerhondachtigen", "Oerhymenopteren"], ["Oerhondachtigen", "Slakken"], ["Oerhondachtigen", "Libellen"],   
+      ["Oerhondachtigen", "Kevers"], ["Oerhondachtigen", "Mieren"], ["Oerhondachtigen", "Vliegen"], 
+      ["Oerhondachtigen", "Vlinders"], ["Oerhondachtigen", "Krekels"], ["Oerhondachtigen", "Sprinkhanen"], 
+      ["Oerhondachtigen", "Muggen"],
+      /* --- BIOLOGIE --- */
+      ["Oerhondachtigen", "Detritus"], ["Oerhondachtigen", "Ei"],
+      /* --- FRUIT --- */
+      ["Oerhondachtigen", "Druiven"], ["Oerhondachtigen", "Appels"], ["Oerhondachtigen", "Peren"], 
+      ["Oerhondachtigen", "Pruimen"], ["Oerhondachtigen", "Bosbessen"], ["Oerhondachtigen", "Aardbeien"], 
+      ["Oerhondachtigen", "Kersen"], ["Oerhondachtigen", "Frambozen"]
+    ],
+    output: [
+      { naam: "Oerhondachtigen", naam_en: "Urcanids", icoon: "icons/Oerhondachtigen.png", map: "Carnivoren", 
+        quote: `The Canidae are an ancient lineage of carnivores that originated in North America during the Eocene epoch
+        <br><br>- Xiaoming Wang`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Oerhondachtigen", "Karpers"], ["Oerhondachtigen", "Goudvissen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Oerhondachtigen", "Oertetrapoden"], ["Oerhondachtigen", "Salamanders"], ["Oerhondachtigen", "Kikkers"], 
+      ["Oerhondachtigen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Oerhondachtigen", "Lepidosauriërs"],
+      /* --- ZOOGDIEREN --- */
+      ["Oerhondachtigen", "Mollen"], ["Oerhondachtigen", "Oercynodonten"], ["Oerhondachtigen", "Oerplacentalia"], 
+      ["Oerhondachtigen", "Oerbuideldieren"], ["Oerhondachtigen", "Vleermuizen"], ["Oerhondachtigen", "Oerknaagdieren"], 
+      ["Oerhondachtigen", "Konijnen"], ["Oerhondachtigen", "Hazen"], ["Oerhondachtigen", "Prairiehonden"], 
+      ["Oerhondachtigen", "Ratten"], ["Oerhondachtigen", "Eekhoorns"], ["Oerhondachtigen", "Muizen"], 
+      ["Oerhondachtigen", "Hamsters"], ["Oerhondachtigen", "Vogelbekdieren"], ["Oerhondachtigen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Oerhondachtigen", "Archaeopteryx"], ["Oerhondachtigen", "Duiven"], ["Oerhondachtigen", "Zwaluwen"],
+      ["Oerhondachtigen", "Spreeuwen"], ["Oerhondachtigen", "Mussen"], ["Oerhondachtigen", "Vinken"],
+      ["Oerhondachtigen", "Kraaien"], ["Oerhondachtigen", "Kolibries"], ["Oerhondachtigen", "Kieviten"],
+      ["Oerhondachtigen", "Kanaries"], 
+      /* --- CARNIVOREN --- */
+      ["Oerhondachtigen", "Oerevenhoevigen"], ["Oerhondachtigen", "Oeronevenhoevigen"]
+    ],
+    output: [
+      { naam: "Oerhondachtigen", naam_en: "Urcanids", icoon: "icons/Oerhondachtigen.png", map: "Carnivoren", 
+        quote: `The Canidae are an ancient lineage of carnivores that originated in North America during the Eocene epoch
+        <br><br>- Xiaoming Wang`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   }, /* ------------------ EGELS ------------------ */
   {
     input: [
