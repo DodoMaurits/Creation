@@ -19574,49 +19574,47 @@ const combinaties = [
         ["Kleding"]
       }, normal: { achtergrond: "afb/Landbouw.jpeg",
         titel: "LANDBOUW 12.000 BP", titel_en: "AGRICULTURE 12.000 BP",
-        tekst: 
-        `<span>De enige overgebleven menssoort begon de levensloop van dieren en planten te manipuleren - 
+        tekst: `
+      <span>De enige overgebleven menssoort begon de levensloop van dieren en planten te manipuleren - 
         gedreven door de gedachte dat dit meer voedselzekerheid zou opleveren. Het proces van domesticeren – van 
         het Latijnse woord voor huis (domus) – betekent iets mens-eigen of huiselijk maken. In die zin domesticeerde 
         graan eigenlijk de mens: de mens ging leven rondom de thuis-plekken van graan.</span>
-        <br><br>
-        <span>Zonder het te beseffen stapten mensen met hun nieuwe dieet in een valkuil. Voedselvariëteit werd
+      <span>Zonder het te beseffen stapten mensen met hun nieuwe dieet in een valkuil. Voedselvariëteit werd
         slechter, boeren afhankelijk van grondbezit en veel werk ging zitten in de akkers. De 
         Landbouwrevolutie bood dus de mogelijkheid om meer mensen in leven te houden, maar vaak onder slechtere 
         leefomstandigheden.</span>
-        <br><br>
-        <span>Toch bracht het een groot voordeel op, namelijk energie. Landbouwsamenlevingen veranderden 
+      <span>Toch bracht het een groot voordeel op, namelijk energie. Landbouwsamenlevingen veranderden 
         ingrijpend de afhankelijkheid van zonne-energie en fotosynthese. Dankzij landbouw en veeteelt verschoof de
         energiebron naar bio-energie. Via graan en vee konden mensen zonne-energie monopoliseren voor eigen 
-        behoeften. Dorpen organiseerden hiërarchische samenlevingen om energieproductie en consumptie te verdelen.
+        behoeften.</span>
+      <span>Dorpen organiseerden hiërarchische samenlevingen om energieproductie en consumptie te verdelen.
         Dit stimuleerde technische innovatie, irrigatie en het inzetten van dierkracht. Waar een mens 
         gemiddeld goed is voor een energieproductie van 100 watt, kan een lastdier het 3- tot 6-voudige opbrengen.
-        </span><br><br>
-        <span>Bijzonder is dat op circa 10 plaatsen in de wereld een landbouwrevolutie plaatsvond, onafhankelijk 
+        </span>
+      <span>Bijzonder is dat op circa 10 plaatsen in de wereld een landbouwrevolutie plaatsvond, onafhankelijk 
         van elkaar. Elke plek kende een eigen culturele keuken en leeftraditie. Zo'n neolithische cultuur kenmerkte 
         zich door domesticatie, gepolijste stenen werktuigen en de landbouwsamenleving. Deze gemeenschappen vormden
         de basis voor de eerste beschavingen in rivierdelta’s zoals de Nijl, de Eufraat, de Tigris, de Indus, de
         Huanghe en de Yangtze.</span>`,
         
-        tekst_en: 
-        `<span>The only remaining human species began to manipulate the life cycles of animals and plants - driven
+        tekst_en: `
+      <span>The only remaining human species began to manipulate the life cycles of animals and plants - driven
         by the idea that his would yiel greater food security. The process of domestication - derived from the Latin
         word for house, domus - means making something 'human-owned' or 'household-oriented'. In this sense, grain
         actually domesticated humans: people began to live around the places where grain made its home.</span>
-        <br><br>
-        <span>Without realising it, people fell into a trap with their new diet. Dietary variety declined, farmers 
+      <span>Without realising it, people fell into a trap with their new diet. Dietary variety declined, farmers 
         became dependent on land ownership, and a great deal of labour was required in the fields. Thus, while the
         Agricultural Revolution made it possible to sustain more people, it often did so under worse living conditions.
-        </span><br><br>
-        <span>Yet it brought a major advantage: energy. Agricultural societies fundamentally altered the nature of 
+        </span>
+      <span>Yet it brought a major advantage: energy. Agricultural societies fundamentally altered the nature of 
         dependence on solar energy and photosynthesis. Through agriculture and livestock farming, the primary energy
         source shifted toward bioenergy. By means of grain and livestock, humans were able to harness solar energy for
-        their own needs. Villages developed hierarchical social structures to manage the distribution of energy 
+        their own needs.</span>
+      <span>Villages developed hierarchical social structures to manage the distribution of energy 
         production and consumption. This spurred technical innovation, the development of irrigation and the utilisation 
         of animal power. While a human being is capable of an average energy output of 100 watts, a draft animal can 
         generate three to six times that amount.</span>
-        <br><br>
-        <span>It is remarkable that an agricultural revolution occurred in approximately 10 locations around the world, 
+      <span>It is remarkable that an agricultural revolution occurred in approximately 10 locations around the world, 
         independently of one another. Each of these places developed its own unique culinary culture and way of life. 
         Such Neolithic cultures were characterised by the domestication of plants and animals, the use of polished
         stone tools and an agrarian social structure. These communities laid the foundation for the first civilisations
