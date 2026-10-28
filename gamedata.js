@@ -7804,6 +7804,7 @@ const combinaties = [
     tijd: 120_000_000,
     output: [
       { naam: "Mieren", naam_en: "Ants", icoon: "icons/Mieren.png", map: "Klein landleven", 
+        geluid: "sound/Insecten.m4a",
         quote: `Ants are good citizens, they place group interest first; but they carry it so far, they have few or no 
         political rights. An ant doesn't have the vote, apparently; he just has his duties
         <br><br>- Clarence Day`
