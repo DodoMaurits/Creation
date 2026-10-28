@@ -7197,18 +7197,21 @@ const combinaties = [
       <span>Opnieuw vond een grote sterfte aan soorten leven plaats, maar dit keer is de aanleiding tot dusver nog 
         onbekend. Gedacht wordt aan een meteoriet, klimaatverandering, vulkanisme of het vrijkomen van methaan uit de
         oceaanbodem. Het heeft de kaarten van het evolutiespel op land flink door elkaar geschud, maar vooral in zee waren 
-        de gevolgen ernstig. Circa 20 procent van de mariene families stierf uit, waaronder veel grote zeereptielen. 
+        de gevolgen ernstig.</span>
+      <span>Circa 20 procent van de mariene families stierf uit, waaronder veel grote zeereptielen. 
         De dinosauriërs zouden juist van deze gebeurtenis hebben geprofiteerd en werden nog dominanter op land. 
         In totaal stierf mogelijk ongeveer 75 procent van alle diersoorten uit.</span>
       <span>Deze periode is vernoemd naar het Jura-gebergte op de Zwitsers-Franse grens, waar veel gesteenten uit deze 
         tijd aan het oppervlak liggen. Op de zeebodem leefden veel diersoorten die er nu nog zijn, zoals oesters, 
-        slangsterren, zeesterren en zee-egels. In deze periode kwamen ook kreeftachtigen sterk tot ontwikkeling, 
+        slangsterren, zeesterren en zee-egels.</span>
+      <span>In deze periode kwamen ook kreeftachtigen sterk tot ontwikkeling, 
         waaronder krabben, kreeften, garnalen en zelfs pissebedden (op land). Sommige waterdieren profiteerden van de 
         Trias-Jura-massaextinctie, waaronder de plesiosauriërs (zeereptielen), ichthyosauriërs (reptielachtige 
         zeereptielen), haaien en krokodilachtige zeereptielen.</span>
       <span>Op land varieerden soorten dinosauriërs van plantenetende stegosauriërs (met rijen stekels of botplaten op 
         de rug) en sauropoden (met zeer lange nekken en tevens de langste en zwaarste landdieren die ooit hebben geleefd),
-        tot vleesetende theropoden en de vliegende pterosauriërs. Zoogdieren waren kleine, onopvallende dieren die meestal
+        tot vleesetende theropoden en de vliegende pterosauriërs.</span>
+      <span>Zoogdieren waren kleine, onopvallende dieren die meestal
         ’s nachts leefden om confrontaties met dinosauriërs uit de weg te gaan, zoals de fruitafossor (een insecteneter 
         van circa 15 centimeter) of otterachtige viseters. De flora werd gedomineerd door palmvarens, boomvarens en 
         coniferen of kegeldragers (voorouders van veel naaldbomen), wat wijst op een overwegend warm en vochtig klimaat.
@@ -7218,18 +7221,21 @@ const combinaties = [
       <span>Once again, a mass extinction of life forms occurred, though the cause remains unknown to this day. Theories
         include a meteorite impact, climate change, volcanic activity, or the release of methane from the ocean floor.
         This event significantly reshuffled the deck of the evolutionary game on land, but its impact was particularly 
-        severe in the oceans. Approximately 20 percent of marine families went extinct, including many large marine
+        severe in the oceans.</span>
+      <span>Approximately 20 percent of marine families went extinct, including many large marine
         reptiles. Dinosaurs, by contrast, appear to have benefitted from this event, becoming even more dominant on land.
         In total, perhaps as much as 75 percent of all animal species may have perished.</span>
       <span>This period is named after the Jura Mountains on the Swiss-French border, where many rocks from this era
         are exposed at the surface. The seabed was home to many animal species that still exist today, such as oysters, 
-        brittle starts, starfish and sea urchins. This period also saw significant development among crustaceans, 
+        brittle starts, starfish and sea urchins.</span>
+      <span>This period also saw significant development among crustaceans, 
         including crabs, lobsters, shrimp and even woodlice (on land). Some aquatic animals benefited from the Triassic-
         Jurassic mass extinction, including plesiosaurs (marine reptiles), ichthyosaurs (reptile-like marine reptiles),
         sharks and crocodilian-like marine reptiles.</span>
       <span>On land, dinosaur species ranged from plant-eating stegosaurs (featuring rows of spikes or bony plates 
         along their backs) and sauropods (which had very long necks and were the longest and heaviest land animals to 
-        have ever lived), to carnivorous theropods and flying pterosaurs. Mammals were small, inconspicuous creatures
+        have ever lived), to carnivorous theropods and flying pterosaurs.</span>
+      <span>Mammals were small, inconspicuous creatures
         that were mostly nocturnal - likely to avoid encounters with dinosaurs - such as the 'fruitafossor' (an
         insectivore measuring about 15 centimeters) or otter-like piscivores. The flora was dominated by cycads, tree
         ferns and conifers (ancestors of many modern needle-bearing trees), which points to a predominantly warm and
