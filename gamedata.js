@@ -7035,6 +7035,7 @@ const combinaties = [
     hint_en: `The first societies were built by eusocial animals such as termites and ants.`,
     output: [
       { naam: "Hiërarchie", naam_en: "Hierarchy", icoon: "icons/Hierarchie.png", map: "Samenleving", 
+        geluid: "sound/Leger.mp3",
         quote: `Society soon grows used to any state of things which is imposed upon it without explanation
         <br><br>- Edith Wharton`
       }
@@ -7157,11 +7158,13 @@ const combinaties = [
     tijd: 201_000_000,
     output: [
       { naam: "Oermaniraptoren", naam_en: "Urmaniraptorans", icoon: "icons/Oermaniraptoren.png", map: "Reptielen", 
+        geluid: "sound/Archaeopteryx.mp3",
         quote: `Maniraptoran dinosaurs display a remarkable combination of speed, dexterity, and keen senses, hinting at 
         the evolutionary roots of modern birds
         <br><br>- Philip Currie`
       },
       { naam: "Sauropoden", naam_en: "Sauropods", icoon: "icons/Sauropoden.png", map: "Reptielen", 
+        geluid: "sound/Sauropod.m4a",
         quote: `Sauropods were the gentle giants of the Mesozoic, moving with ponderous grace, their immense bodies 
         shaping the landscapes they traversed
         <br><br>- John McIntosh`
@@ -7649,6 +7652,7 @@ const combinaties = [
     tijd: 145_000_000,
     output: [
       { naam: "Bloem", naam_en: "Flower", icoon: "icons/Bloem.png", map: "Biologie", 
+        geluid: "sound/Bloem.m4a",
         quote: `You're only here for a short visit. Don't hurry, don't worry. And be sure to smell the flowers along the
         way
         <br><br>- Walter Hagen`
