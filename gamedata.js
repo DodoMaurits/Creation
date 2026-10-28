@@ -6125,14 +6125,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Oersynapsiden", naam_en: "Ursynapsids", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `The mammal-like reptiles show us that the boundary between reptiles and mammals is not a sharp line, 
         but a gradual blending of forms
         <br><br>- Robert Bakker`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6151,6 +6152,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oersynapsiden", naam_en: "Ursynapsids", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `The mammal-like reptiles show us that the boundary between reptiles and mammals is not a sharp line, 
         but a gradual blending of forms
         <br><br>- Robert Bakker`
@@ -6160,9 +6162,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6188,14 +6190,15 @@ const combinaties = [
     ],
     output: [
       { naam: "Oerdiapsiden", naam_en: "Urdiapsids", icoon: "icons/Oerdiapsiden.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Reptiles move with an economy and precision that reflects a body perfectly attuned to its environment 
         — every scale, every motion, a study in efficiency
         <br><br>-David Attenborough`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6214,6 +6217,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oerdiapsiden", naam_en: "Urdiapsids", icoon: "icons/Oerdiapsiden.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Reptiles move with an economy and precision that reflects a body perfectly attuned to its environment 
         — every scale, every motion, a study in efficiency
         <br><br>-David Attenborough`
@@ -6223,9 +6227,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6251,13 +6255,14 @@ const combinaties = [
     ],
     output: [
       { naam: "Oeranapsiden", naam_en: "Uranapsids", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Early reptiles were small, close to the ground, and lived in intimate contact with the surface of the Earth
         <br><br>-Alfred Romer`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6276,6 +6281,7 @@ const combinaties = [
     <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Oeranapsiden", naam_en: "Uranapsids", icoon: "icons/Oeranapsiden.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `Early reptiles were small, close to the ground, and lived in intimate contact with the surface of the Earth
         <br><br>- Alfred Romer`
       },
@@ -6284,9 +6290,9 @@ const combinaties = [
         <br><br>- Joyce Oates`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6365,13 +6371,13 @@ const combinaties = [
         achtergrond: "afb/perm.png",
         titel: "PERM 299-252 MA", titel_en: "PERMIAN 299-252 MA",
         tekst: `
-        <span>Het supercontinent Pangea werd voltooid en resulteerde in een overwegend continentaal en droger klimaat met
+      <span>Het supercontinent Pangea werd voltooid en resulteerde in een overwegend continentaal en droger klimaat met
         uitgestrekte woestijnen en seizoensgebonden moerassen. In deze omstandigheden diversifieerde de landdieren de 
         landdieren zich sterk. Binnen de sauropsiden werden de reptielen dominant en breidden izch uit naar uiteenlopende
         niches. Tegelijkertijd vertakten de synapsiden als voorlopers van de zoogdieren van kleine nisecteneters tot grote
         roofdieren.</span>`,
         tekst_en: `
-        <span>Supercontinent Pangea was completed, resulting in a predominantly continental and drier climate 
+      <span>Supercontinent Pangea was completed, resulting in a predominantly continental and drier climate 
         characterised by vast deserts and seasonal swamps. Under these conditions, land-dwelling animals diversified
         significantly. Among the sauropsids, reptiles became dominant and expanded into a wide variety of ecological 
         niches. At the same time, the synapsids - forerunners of the mammals - diversified from small insectivores
