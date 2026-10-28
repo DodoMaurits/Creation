@@ -5652,7 +5652,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Luizen", naam_en: "Lice", icoon: "icons/Luizen.png", map: "Klein landleven", 
-        geluid: "sound/Spin.mp3",
         quote: `The louse, a wingless parasite, has shaped history far more than its size would suggest
         <br><br>- Hans Zinsser`
       },
@@ -5676,7 +5675,6 @@ const combinaties = [
     ],
     output: [
       { naam: "Kevers", naam_en: "Beetles", icoon: "icons/Kevers.png", map: "Klein landleven", 
-        geluid: "sound/Insecten.m4a",
         quote: `Beetles are endlessly inventive; every species is a tiny masterpiece of adaptation and design
         <br><br>- May Berenbaum`
       },
@@ -5989,14 +5987,14 @@ const combinaties = [
         <br><br>- Randal Voss`
       },
       { naam: "Gif", naam_en: "Poison", icoon: "icons/Gif.png", map: "Biologie",
-       quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
-       makes a thing poison
-       <br><br>- Paracelsus`
+        quote: `All things are poisons, for there is nothing without poisonous qualities. It is only the dose which 
+        makes a thing poison
+        <br><br>- Paracelsus`
       },
       { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
-       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
-       find the point where these molecules became conscious
-       <br><br>- Nassim Taleb`
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
       },
       { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
         geluid: "sound/Vreugde.m4a",
@@ -6094,6 +6092,7 @@ const combinaties = [
     hint_en: `It is time for the first large vertebrates to come out of their shells...`,
     output: [
       { naam: "Oersynapsiden", naam_en: "Ursynapsids", icoon: "icons/Oersynapsiden.png", map: "Reptielen", 
+        geluid: "sound/Reptiel.wav",
         quote: `The mammal-like reptiles show us that the boundary between reptiles and mammals is not a sharp line, 
         but a gradual blending of forms
         <br><br>- Robert Bakker`
