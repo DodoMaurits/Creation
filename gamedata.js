@@ -16920,6 +16920,71 @@ const combinaties = [
         <br><br>- Edward Wilson`
       }
     ]
+  }, /* ------------------ WALRUSSEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Walrussen", "Zeeanemonen"], ["Oerhondachtigen", "Zeesterren"], ["Oerhondachtigen", "Zee-egels"],
+      ["Walrussen", "Kwallen"], ["Walrussen", "Manteldieren"], ["Walrussen", "Wormen"], ["Walrussen", "Oertrochozoa"],
+      /* Schelp */["Walrussen", "Tweekleppigen"], ["Walrussen", "Zeeslakken"],
+      /* --- GELEEDPOTIGEN --- */
+      ["Walrussen", "Oergeleedpotigen"], ["Walrussen", "Oercheliceraten"], ["Walrussen", "Oerspinachtigen"],
+      ["Walrussen", "Oertienpotigen"], ["Walrussen", "Trilobieten"], ["Walrussen", "Oerkreeftjes"], 
+      ["Walrussen", "Krill"], ["Walrussen", "Aasgarnalen"], ["Walrussen", "Zeepissebedden"], 
+      ["Walrussen", "Reuzenpissebedden"], ["Walrussen", "Oerinsecten"], ["Walrussen", "Vlokreeftjes"],
+      ["Walrussen", "Garnalen"], ["Walrussen", "Kreeften"], ["Walrussen", "Krabben"], ["Walrussen", "Zwaardstaarten"],
+      ["Walrussen", "Zeeschorpioenen"]
+    ],
+    output: [
+      { naam: "Walrussen", naam_en: "Walruses", icoon: "icons/Walrussen.png", map: "Carnivoren", 
+        quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
+        <br><br>- Edward Wilson`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Walrussen", "Inktvissen"], ["Walrussen", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Walrussen", "Platvissen"], ["Walrussen", "Karpers"], ["Walrussen", "Oerstraalvinnigen"],
+      ["Walrussen", "Kabeljauwen"], ["Walrussen", "Snoeken"], ["Walrussen", "Meervallen"], ["Walrussen", "Paling"],
+      ["Walrussen", "Goudvissen"], ["Walrussen", "Tiktaalik"], ["Walrussen", "Zalm"], ["Walrussen", "Haring"],
+      ["Walrussen", "Makreel"], ["Walrussen", "Forel"],
+      /* --- ZOOGDIEREN --- */
+      ["Walrussen", "Oerhondachtigen"], ["Walrussen", "Oerkatachtigen"], ["Walrussen", "Zeehonden"], 
+      ["Walrussen", "Otters"]
+    ],
+    output: [
+      { naam: "Walrussen", naam_en: "Walruses", icoon: "icons/Walrussen.png", map: "Carnivoren", 
+        quote: `With their heavy bodies and long tusks, walruses appear almost sculpted for life between water and ice
+        <br><br>- Edward Wilson`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
