@@ -6978,6 +6978,7 @@ const combinaties = [
     tijd: 260_000_000,
     output: [
       { naam: "Schildpadden", naam_en: "Tortoises", icoon: "icons/Schildpadden.png", map: "Reptielen", 
+        geluid: "sound/Leven.m4a",
         quote: `Slow but steady wins the race
         <br><br>- Aesopos`
       }
