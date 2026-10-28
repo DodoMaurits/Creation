@@ -7681,35 +7681,37 @@ const combinaties = [
       <span>Net als het eiland Kreta is deze periode vernoemd naar het Latijnse creta (kalk) vanwege de dikke 
         kalksteenlagen die geologen in 1822 in Noord-Franrijk aantroffen. Gondwana brak verder op, met de splitsing van 
         Afrika, India en Australië-Antarctica. Door veel vulkanisme lag de zeespiegel hoog, waardoor grote delen van 
-        Noordwest-Europa onder de zogeheten Krijtzee stonden. Het zeeleven varieerde van zeereptielen tot ammonieten en 
-        veel beenvissen, die toen recordlengtes van 5 meter bereikten. Ook eencellig plankton ontstond, verantwoordelijk 
-        voor de karakteristieke kalksteen, terwijl op de zeebodem krabben, oesters en weekdieren tot een meter groot 
-        werden. </span> 
+        Noordwest-Europa onder de zogeheten Krijtzee stonden.</span>
+      <span>Het zeeleven varieerde van zeereptielen tot ammonieten en veel beenvissen, die toen recordlengtes van 5 meter 
+        bereikten. Ook eencellig plankton ontstond, verantwoordelijk voor de karakteristieke kalksteen, terwijl op de 
+        zeebodem krabben, oesters en weekdieren tot een meter groot werden. </span> 
       <span>De plesiosauriërs kregen een gigantische concurrent: de meer dan 15 meter lange mosasuiridae, vernoemd 
         naar het eerste fossiel aan de rivier de Maas. Op het land verschenen de eerste bedektzadige planten, zogenaamde
         bloemplanten, samen met de eerste bijen voor bestuiving. Ook bedektzadige bomen zoals vijgen, platanen en 
-        magnolia’s ontstonden, hoewel coniferen en varens dominant bleven. Bloeiende planten boden een nieuw voedselbron 
-        voor zoogdieren, met tanden geschikt voor fruit, zaden en insecten, terwijl insecten zoals mieren, termieten, 
-        bladluizen, sprinkhanen, wespen en vlinders snel diversifieerden. Door het opbreken van de continenten kende elk 
-        continent zijn eigen dinosauriërs. In de lucht namen vogels de overhand, waardoor de grote pterosauriërs in 
-        aantal afnamen.</span>`,
+        magnolia’s ontstonden, hoewel coniferen en varens dominant bleven.</span>
+      <span>Bloeiende planten boden een nieuw voedselbron voor zoogdieren, met tanden geschikt voor fruit, zaden en 
+        insecten, terwijl insecten zoals mieren, termieten, bladluizen, sprinkhanen, wespen en vlinders snel 
+        diversifieerden. Door het opbreken van de continenten kende elk continent zijn eigen dinosauriërs. In de lucht 
+        namen vogels de overhand, waardoor de grote pterosauriërs in aantal afnamen.</span>`,
 
         tekst_en: `
       <span>Like the island of Crete, this period is named after the Latin word 'creta' (chalk), owing to the thick
         limestone layers that geologists discovered in northern France in 1822. Gondwana continued to break apart, with
         Africa, India and the Australia-Antarctica landmass splitting off. Intense volcanic activity led to high sea 
         levels, causing large parts of Northwest Europe to be submerged beneath what is known as the Cretaceous Sea.
-        Marine life ranged from sea reptiles to ammonites and numerous bony fish - some of which reached record lengths
-        of 5 meters. Single-celled plankton also emerged, contributing to the formation of the characteristic limestone,
-        while the seabed became home to crabs, oysters and mollusks that grew up to a meter in size.</span>
+        </span>
+      <span>Marine life ranged from sea reptiles to ammonites and numerous bony fish - some of which reached record 
+        lengths of 5 meters. Single-celled plankton also emerged, contributing to the formation of the characteristic
+        limestone, while the seabed became home to crabs, oysters and mollusks that grew up to a meter in size.</span>
       <span>Plesiosaurs faced a formidable competitor: the mosasaurs - a group that could exceed 15 meters in length
         and was named after the first fossil discovered along the Meuse River. On land, the first angiosperms - or 
         flowering plants - emerged, accompanied by the earliest bees for pollination. Angiosperm trees, such as figs, 
-        plane trees and magnolias, also appeared, though conifers and ferns remained dominant. Flowering plants provided
-        a new food source for mammals, which evolved teeth suited for consuming fruit, seeds and insects: meanwhile,
-        insects such as ants, termites, aphids, grasshoppers, wasps and butterflies underwent rapid diversification.
-        As the continents drifted apart, each developed its own unique dinosaur populations. In the skies, birds became
-        increasingly prevalent, leading to a decline in the number of large pterosaurs.</span>`
+        plane trees and magnolias, also appeared, though conifers and ferns remained dominant.</span>
+      <span>Flowering plants provided a new food source for mammals, which evolved teeth suited for consuming fruit, 
+        seeds and insects: meanwhile, insects such as ants, termites, aphids, grasshoppers, wasps and butterflies 
+        underwent rapid diversification. As the continents drifted apart, each developed its own unique dinosaur 
+        populations. In the skies, birds became increasingly prevalent, leading to a decline in the number of large 
+        pterosaurs.</span>`
       }
     }
   },
