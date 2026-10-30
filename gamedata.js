@@ -17014,6 +17014,122 @@ const combinaties = [
         <br><br>- Ernest Neal`
       }
     ]
+  }, /* ------------------ DASSEN ------------------ */
+  {
+    input: [
+      /* --- PRIL LEVEN --- */
+      ["Dassen", "Paddenstoelen"], 
+      /* --- WATERDIEREN --- */
+      ["Dassen", "Wormen"], ["Dassen", "Oertrochozoa"],   
+      /* Schelp */["Dassen", "Tweekleppigen"], ["Dassen", "Zeeslakken"],
+      /* --- VISSEN --- */
+      ["Dassen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Dassen", "Oergeleedpotigen"], ["Dassen", "Oercheliceraten"], ["Dassen", "Oerspinachtigen"],
+      ["Dassen", "Oertienpotigen"], ["Dassen", "Waterspinnen"], ["Dassen", "Oerkreeftjes"], ["Dassen", "Krill"], 
+      ["Dassen", "Aasgarnalen"], ["Dassen", "Zeepissebedden"], ["Dassen", "Oerinsecten"], ["Dassen", "Vlokreeftjes"], 
+      ["Dassen", "Garnalen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Dassen", "Termieten"], ["Dassen", "Pissebedden"], ["Dassen", "Oerpolyneopteren"], ["Dassen", "Duizendpoten"], 
+      ["Dassen", "Hooiwagens"], ["Dassen", "Spinnen"], ["Dassen", "Zilvervisjes"], ["Dassen", "Wandelende takken"], 
+      ["Dassen", "Kakkerlakken"], ["Dassen", "Oerhymeneopteren"], ["Dassen", "Slakken"], ["Dassen", "Libellen"], 
+      ["Dassen", "Kevers"], ["Dassen", "Lieveheersbeestjes"], ["Dassen", "Mieren"], ["Dassen", "Wespen"], 
+      ["Dassen", "Vliegen"], ["Dassen", "Vlinders"], ["Dassen", "Krekels"], ["Dassen", "Sprinkhanen"], 
+      ["Dassen", "Muggen"], ["Dassen", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Dassen", "Detritus"], ["Dassen", "Wortels"], ["Dassen", "Blad"], ["Dassen", "Zaadjes"], ["Dassen", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Dassen", "Truffels"], ["Dassen", "Mosterd"], ["Dassen", "Knoflook"], ["Dassen", "Ui"], ["Dassen", "Bieslook"],
+      /* --- GENOTWAREN --- */
+      ["Dassen", "Honing"], 
+      /* --- FRUIT --- */
+      ["Dassen", "Druiven"], ["Dassen", "Appels"], ["Dassen", "Peren"], ["Dassen", "Pruimen"], ["Dassen", "Bosbessen"],
+      ["Dassen", "Vijgen"], ["Dassen", "Aardbeien"], ["Dassen", "Olijven"], ["Dassen", "Abrikozen"], ["Dassen", "Kersen"],
+      ["Dassen", "Granaatappels"], ["Dassen", "Mandarijnen"], ["Dassen", "Guaves"], ["Dassen", "Mango"], 
+      ["Dassen", "Papaja"], ["Dassen", "Frambozen"], ["Dassen", "Avocado"], ["Dassen", "Bananen"], ["Dassen", "Lychee"],
+      ["Dassen", "Kaki"], ["Dassen", "Kiwi"], ["Dassen", "Dadels"], ["Dassen", "Sinaasappelen"], ["Dassen", "Citroenen"],
+      ["Dassen", "Limoenen"],
+      /* --- GROENTEN --- */
+      ["Dassen", "Avocado"], ["Dassen", "Komkommers"], ["Dassen", "Meloenen"], ["Dassen", "Watermeloenen"],
+      ["Dassen", "Pompoenen"], ["Dassen", "Courgettes"], ["Dassen", "Bieten"], ["Dassen", "Spinazie"], 
+      ["Dassen", "Cassave"], ["Dassen", "Zoete aardappelen"], ["Dassen", "Radijsjes"], ["Dassen", "Kool"],
+      ["Dassen", "Rabarber"], ["Dassen", "Asperges"], ["Dassen", "Prei"], ["Dassen", "Paprika"], ["Dassen", "Tomaten"],
+      ["Dassen", "Aardappelen"], ["Dassen", "Selderij"], ["Dassen", "Venkel"], ["Dassen", "Wortelen"], ["Dassen", "Sla"],
+      ["Dassen", "Andijvie"], ["Dassen", "Zuurkool"], ["Dassen", "Broccoli"], ["Dassen", "Bloemkool"], 
+      ["Dassen", "Rode kool"], ["Dassen", "Spruitjes"], ["Dassen", "Boerenkool"],
+      /* --- GRANEN --- */
+      ["Dassen", "Rijst"], ["Dassen", "Maïs"], ["Dassen", "Tarwe"], ["Dassen", "Gerst"], ["Dassen", "Sorghum"],
+      ["Dassen", "Gierst"], ["Dassen", "Pap"], ["Dassen", "Brood"],
+      /* --- ZADEN --- */
+      ["Dassen", "Erwten"], ["Dassen", "Walnoten"], ["Dassen", "Kastanjes"], ["Dassen", "Hazelnoten"], 
+      ["Dassen", "Soja"], ["Dassen", "Kikkererwten"], ["Dassen", "Boekweit"], ["Dassen", "Cacao"], 
+      ["Dassen", "Amandelen"], ["Dassen", "Pinda"], ["Dassen", "Linzen"], ["Dassen", "Pistache"], ["Dassen", "Kola"],
+      ["Dassen", "Sesam"], ["Dassen", "Cashew"], ["Dassen", "Quinoa"], ["Dassen", "Sperziebonen"], 
+      ["Dassen", "Kidneybonen"]
+    ],
+    output: [
+      { naam: "Dassen", naam_en: "Badgers", icoon: "icons/Dassen.png", map: "Carnivoren", 
+        quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
+        family
+        <br><br>- Ernest Neal`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Dassen", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Dassen", "Agnathen"], ["Dassen", "Karpers"], ["Dassen", "Oerstraalvinnigen"], ["Dassen", "Snoeken"], 
+      ["Dassen", "Meervallen"], ["Dassen", "Paling"], ["Dassen", "Goudvissen"], ["Dassen", "Zalm"], ["Dassen", "Haring"], 
+      ["Dassen", "Makreel"], ["Dassen", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Dassen", "Oertetrapoden"], ["Dassen", "Salamanders"], ["Dassen", "Kikkers"], ["Dassen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Dassen", "Slangen"], ["Dassen", "Oersynapsiden"], ["Dassen", "Oerdiapsiden"], ["Dassen", "Oeranapsiden"], 
+      ["Dassen", "Pterosauriërs"], ["Dassen", "Lepidosauriërs"], ["Dassen", "Crurotarsi"], ["Dassen", "Oerdinosauriërs"], 
+      ["Dassen", "Oermaniraptoren"], ["Dassen", "Gekko's"], ["Dassen", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Dassen", "Mollen"], ["Dassen", "Oercynodonten"], ["Dassen", "Oerplacentalia"], ["Dassen", "Oerbuideldieren"], 
+      ["Dassen", "Vleermuizen"], ["Dassen", "Oerknaagdieren"], ["Dassen", "Konijnen"], ["Dassen", "Prairiehonden"], 
+      ["Dassen", "Ratten"], ["Dassen", "Eekhoorns"], ["Dassen", "Muizen"], ["Dassen", "Hamsters"], 
+      ["Dassen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Dassen", "Eenden"], ["Dassen", "Kippen"],
+      /* --- CARNIVOREN --- */
+      ["Dassen", "Oerhondachtigen"], ["Dassen", "Oerkatachtigen"]
+    ],
+    output: [
+      { naam: "Dassen", naam_en: "Badgers", icoon: "icons/Dassen.png", map: "Carnivoren", 
+        quote: `The European badger lives in extensive underground burrow systems, often used by generations of the same 
+        family
+        <br><br>- Ernest Neal`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerhondachtigen", "Meer"],
@@ -21564,7 +21680,8 @@ const combinaties = [
       ["Zeehonden", "Nautilussen"], ["Zeehonden", "Heremietkreeften"],
       ["Zeeleeuwen", "Tweekleppigen"], ["Zeeleeuwen", "Zeeslakken"], 
       ["Zeeleeuwen", "Nautilussen"], ["Zeeleeuwen", "Heremietkreeften"],
-      ["Otters", "Tweekleppigen"], ["Otters", "Zeeslakken"], ["Otters", "Nautilussen"], ["Otters", "Heremietkreeften"]
+      ["Otters", "Tweekleppigen"], ["Otters", "Zeeslakken"], ["Otters", "Nautilussen"], ["Otters", "Heremietkreeften"],
+      ["Dassen", "Tweekleppigen"], ["Dassen", "Zeeslakken"]
     ],
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
