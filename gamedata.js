@@ -17026,6 +17026,95 @@ const combinaties = [
         <br><br>- David Attenborough`
       }
     ]
+  }, /* ------------------ OTTERS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Otters", "Sponzen"], ["Otters", "Zeeanemonen"], ["Otters", "Zeesterren"], ["Otters", "Zee-egels"], 
+      ["Otters", "Kwallen"], ["Otters", "Manteldieren"], ["Otters", "Wormen"], ["Otters", "Oertrochozoa"],   
+      /* Schelp */["Otters", "Tweekleppigen"], ["Otters", "Zeeslakken"],
+      /* --- VISSEN --- */
+      ["Otters", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Otters", "Oergeleedpotigen"], ["Otters", "Oercheliceraten"], ["Otters", "Oerspinachtigen"],
+      ["Otters", "Oertienpotigen"], ["Otters", "Waterspinnen"], ["Otters", "Oerkreeftjes"], ["Otters", "Krill"], 
+      ["Otters", "Aasgarnalen"], ["Otters", "Zeepissebedden"], ["Otters", "Reuzenpissebedden"], ["Otters", "Oerinsecten"], 
+      ["Otters", "Vlokreeftjes"], ["Otters", "Garnalen"], ["Otters", "Kreeften"], ["Otters", "Krabben"],
+      /* Schelp */["Zeeleeuwen", "Heremietkreeften"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Otters", "Termieten"], ["Otters", "Pissebedden"], ["Otters", "Oerpolyneopteren"], ["Otters", "Duizendpoten"], 
+      ["Otters", "Hooiwagens"], ["Otters", "Spinnen"], ["Otters", "Zilvervisjes"], ["Otters", "Wandelende takken"], 
+      ["Otters", "Kakkerlakken"], ["Otters", "Oerhymeneopteren"], ["Otters", "Slakken"], ["Otters", "Libellen"], 
+      ["Otters", "Kevers"], ["Otters", "Lieveheersbeestjes"], ["Otters", "Mieren"], ["Otters", "Vliegen"], 
+      ["Otters", "Vlinders"], ["Otters", "Krekels"], ["Otters", "Sprinkhanen"], ["Otters", "Muggen"],
+      /* --- BIOLOGIE --- */
+      ["Otters", "Ei"]
+    ],
+    output: [
+      { naam: "Otters", naam_en: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
+        quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
+        <br><br>- David Attenborough`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Otters", "Inktvissen"], ["Otters", "Octopussen"],
+      /*Schelp*/["Otters", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Otters", "Agnathen"], ["Otters", "Zeeduivels"], ["Otters", "Platvissen"], ["Otters", "Piranha"],
+      ["Otters", "Clownvissen"], ["Otters", "Doktersvissen"], ["Otters", "Papegaaivissen"], ["Otters", "Karpers"], 
+      ["Otters", "Zeepaardjes"], ["Otters", "Vliegende vissen"], ["Otters", "Koraalduivels"], 
+      ["Otters", "Oerstraalvinnigen"], ["Otters", "Kabeljauwen"], ["Otters", "Snoeken"], ["Otters", "Meervallen"], 
+      ["Otters", "Paling"], ["Otters", "Goudvissen"], ["Otters", "Coelacanthen"], ["Otters", "Tiktaalik"], 
+      ["Otters", "Zalm"], ["Otters", "Haring"], ["Otters", "Makreel"], ["Otters", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Otters", "Oertetrapoden"], ["Otters", "Salamanders"], ["Otters", "Kikkers"], ["Otters", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Otters", "Oersynapsiden"], ["Otters", "Oerdiapsiden"], ["Otters", "Oeranapsiden"], ["Otters", "Pterosauriërs"], 
+      ["Otters", "Lepidosauriërs"], ["Otters", "Crurotarsi"], ["Otters", "Oerdinosauriërs"], ["Otters", "Oermaniraptoren"],
+      ["Otters", "Gekko's"], ["Otters", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Otters", "Mollen"], ["Otters", "Oercynodonten"], ["Otters", "Oerplacentalia"], ["Otters", "Oerbuideldieren"], 
+      ["Otters", "Vleermuizen"], ["Otters", "Klipdassen"], ["Otters", "Oerknaagdieren"], ["Otters", "Konijnen"], 
+      ["Otters", "Hazen"], ["Otters", "Prairiehonden"], ["Otters", "Ratten"], ["Otters", "Eekhoorns"], 
+      ["Otters", "Muizen"], ["Otters", "Hamsters"], ["Otters", "Vogelbekdieren"], ["Otters", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Otters", "Eenden"],
+      /* --- CARNIVOREN --- */
+      ["Otters", "Oerhondachtigen"], ["Otters", "Oerkatachtigen"], ["Otters", "Dassen"]
+    ],
+    output: [
+      { naam: "Otters", naam_en: "Otters", icoon: "icons/Otters.png", map: "Carnivoren", 
+        quote: `Otters are agile swimmers, diving and surfacing with ease as they hunt in rivers and coastal waters
+        <br><br>- David Attenborough`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: [
@@ -21474,7 +21563,8 @@ const combinaties = [
       ["Zeehonden", "Tweekleppigen"], ["Zeehonden", "Zeeslakken"], 
       ["Zeehonden", "Nautilussen"], ["Zeehonden", "Heremietkreeften"],
       ["Zeeleeuwen", "Tweekleppigen"], ["Zeeleeuwen", "Zeeslakken"], 
-      ["Zeeleeuwen", "Nautilussen"], ["Zeeleeuwen", "Heremietkreeften"]
+      ["Zeeleeuwen", "Nautilussen"], ["Zeeleeuwen", "Heremietkreeften"],
+      ["Otters", "Tweekleppigen"], ["Otters", "Zeeslakken"], ["Otters", "Nautilussen"], ["Otters", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
