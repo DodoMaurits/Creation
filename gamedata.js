@@ -17060,7 +17060,7 @@ const combinaties = [
       ["Zeehonden", "Oertienpotigen"], ["Zeehonden", "Waterspinnen"], ["Zeehonden", "Oerkreeftjes"], 
       ["Zeehonden", "Krill"], ["Zeehonden", "Aasgarnalen"], ["Zeehonden", "Zeepissebedden"], 
       ["Zeehonden", "Reuzenpissebedden"], ["Zeehonden", "Oerinsecten"], ["Zeehonden", "Vlokreeftjes"],
-      ["Zeehonden", "Garnalen"], ["Zeehonden", "Kreeften"], ["Zeehonden", "Krabben"], ["Zeehonden", "Zwaardstaarten"],
+      ["Zeehonden", "Garnalen"], ["Zeehonden", "Kreeften"], ["Zeehonden", "Krabben"],
       /* Schelp */["Zeehonden", "Heremietkreeften"],
       /* --- KLEIN LANDLEVEN --- */
       ["Zeehonden", "Termieten"], ["Zeehonden", "Pissebedden"], ["Zeehonden", "Oerpolyneopteren"],
@@ -17116,9 +17116,8 @@ const combinaties = [
       ["Zeehonden", "Prairiehonden"], ["Zeehonden", "Ratten"], ["Zeehonden", "Capibara"], ["Zeehonden", "Eekhoorns"],
       ["Zeehonden", "Muizen"], ["Zeehonden", "Hamsters"], ["Zeehonden", "Vogelbekdieren"], ["Zeehonden", "Spitsmuizen"],
       /* --- VOGELS --- */
-      ["Zeehonden", "Pinguïns"], ["Zeehonden", "Eenden"], ["Zeehonden", "Meeuwen"], ["Zeehonden", "Aalscholvers"], 
-      ["Zeehonden", "Flamingo"], ["Zeehonden", "Papegaaiduikers"], ["Zeehonden", "Reigers"], ["Zeehonden", "Kippen"],
-      ["Zeehonden", "Fazanten"],
+      ["Zeehonden", "Pinguïns"], ["Zeehonden", "Eenden"], ["Zeehonden", "Flamingo"], ["Zeehonden", "Reigers"], 
+      ["Zeehonden", "Kippen"], ["Zeehonden", "Fazanten"],
       /* --- CARNIVOREN --- */
       ["Zeehonden", "Otters"], ["Zeehonden", "Dassen"]
     ],
@@ -17127,6 +17126,103 @@ const combinaties = [
         quote: `A seal lifts its head from the water with the quiet curiosity of a creature that belongs more to the sea 
         than to the shore
         <br><br>- Barry Lopez`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ ZEELEEUWEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Zeeleeuwen", "Sponzen"], ["Zeeleeuwen", "Zeeanemonen"], ["Zeeleeuwen", "Zeesterren"], ["Zeeleeuwen", "Kwallen"], 
+      ["Zeeleeuwen", "Manteldieren"], ["Zeeleeuwen", "Wormen"], ["Zeeleeuwen", "Oertrochozoa"],   
+      /* Schelp */["Zeeleeuwen", "Tweekleppigen"], ["Zeeleeuwen", "Zeeslakken"],
+      /* --- VISSEN --- */
+      ["Zeeleeuwen", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeeleeuwen", "Oergeleedpotigen"], ["Zeeleeuwen", "Oercheliceraten"], ["Zeeleeuwen", "Oerspinachtigen"],
+      ["Zeeleeuwen", "Oertienpotigen"], ["Zeeleeuwen", "Waterspinnen"], ["Zeeleeuwen", "Oerkreeftjes"], 
+      ["Zeeleeuwen", "Krill"], ["Zeeleeuwen", "Aasgarnalen"], ["Zeeleeuwen", "Zeepissebedden"], 
+      ["Zeeleeuwen", "Reuzenpissebedden"], ["Zeeleeuwen", "Oerinsecten"], ["Zeeleeuwen", "Vlokreeftjes"],
+      ["Zeeleeuwen", "Garnalen"], ["Zeeleeuwen", "Kreeften"], ["Zeeleeuwen", "Krabben"],
+      /* Schelp */["Zeeleeuwen", "Heremietkreeften"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Zeeleeuwen", "Termieten"], ["Zeeleeuwen", "Pissebedden"], ["Zeeleeuwen", "Oerpolyneopteren"],
+      ["Zeeleeuwen", "Duizendpoten"], ["Zeeleeuwen", "Hooiwagens"], ["Zeeleeuwen", "Spinnen"], 
+      ["Zeeleeuwen", "Zilvervisjes"], ["Zeeleeuwen", "Wandelende takken"], ["Zeeleeuwen", "Kakkerlakken"], 
+      ["Zeeleeuwen", "Oerhymeneopteren"], ["Zeeleeuwen", "Slakken"], ["Zeeleeuwen", "Libellen"], ["Zeeleeuwen", "Kevers"], 
+      ["Zeeleeuwen", "Lieveheersbeestjes"], ["Zeeleeuwen", "Mieren"], ["Zeeleeuwen", "Vliegen"], 
+      ["Zeeleeuwen", "Vlinders"], ["Zeeleeuwen", "Krekels"], ["Zeeleeuwen", "Sprinkhanen"], ["Zeeleeuwen", "Muggen"]
+    ],
+    output: [
+      { naam: "Zeeleeuwen", naam_en: "Sea lions", icoon: "icons/Zeeleeuwen.png", map: "Carnivoren", 
+        quote: `The California sea lion is highly social, agile in the water, and capable of remarkable underwater 
+        manoeuvres
+        <br><br>- Bernd Würsig`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Zeeleeuwen", "Inktvissen"], ["Zeeleeuwen", "Octopussen"],
+      /*Schelp*/["Zeeleeuwen", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Zeeleeuwen", "Agnathen"], ["Zeeleeuwen", "Zeeduivels"], ["Zeeleeuwen", "Platvissen"], ["Zeeleeuwen", "Piranha"],
+      ["Zeeleeuwen", "Clownvissen"], ["Zeeleeuwen", "Doktersvissen"], ["Zeeleeuwen", "Papegaaivissen"],
+      ["Zeeleeuwen", "Karpers"], ["Zeeleeuwen", "Zeepaardjes"], ["Zeeleeuwen", "Vliegende vissen"], 
+      ["Zeeleeuwen", "Maanvissen"], ["Zeeleeuwen", "Koraalduivels"], ["Zeeleeuwen", "Oerstraalvinnigen"], 
+      ["Zeeleeuwen", "Kabeljauwen"], ["Zeeleeuwen", "Snoeken"], ["Zeeleeuwen", "Meervallen"], ["Zeeleeuwen", "Paling"],
+      ["Zeeleeuwen", "Spookhaaien"], ["Zeeleeuwen", "Goudvissen"], ["Zeeleeuwen", "Coelacanthen"], 
+      ["Zeeleeuwen", "Tiktaalik"], ["Zeeleeuwen", "Tonijn"], ["Zeeleeuwen", "Zalm"], ["Zeeleeuwen", "Haring"], 
+      ["Zeeleeuwen", "Makreel"], ["Zeeleeuwen", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Zeeleeuwen", "Oertetrapoden"], ["Zeeleeuwen", "Salamanders"], ["Zeeleeuwen", "Kikkers"], ["Zeeleeuwen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Zeeleeuwen", "Oersynapsiden"], ["Zeeleeuwen", "Oerdiapsiden"], ["Zeeleeuwen", "Oeranapsiden"], 
+      ["Zeeleeuwen", "Pterosauriërs"], ["Zeeleeuwen", "Lepidosauriërs"], ["Zeeleeuwen", "Crurotarsi"], 
+      ["Zeeleeuwen", "Oerdinosauriërs"], ["Zeeleeuwen", "Oermaniraptoren"], ["Zeeleeuwen", "Gekko's"], 
+      ["Zeeleeuwen", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Zeeleeuwen", "Mollen"], ["Zeeleeuwen", "Oercynodonten"], ["Zeeleeuwen", "Oerplacentalia"], 
+      ["Zeeleeuwen", "Oerbuideldieren"], ["Zeeleeuwen", "Vleermuizen"], ["Zeeleeuwen", "Klipdassen"], 
+      ["Zeeleeuwen", "Bevers"], ["Zeeleeuwen", "Koala"], ["Zeeleeuwen", "Oerknaagdieren"], ["Zeeleeuwen", "Konijnen"], 
+      ["Zeeleeuwen", "Hazen"], ["Zeeleeuwen", "Prairiehonden"], ["Zeeleeuwen", "Ratten"], ["Zeeleeuwen", "Capibara"], 
+      ["Zeeleeuwen", "Eekhoorns"], ["Zeeleeuwen", "Muizen"], ["Zeeleeuwen", "Hamsters"], ["Zeeleeuwen", "Vogelbekdieren"],
+      ["Zeeleeuwen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Zeeleeuwen", "Pinguïns"], ["Zeeleeuwen", "Eenden"], ["Zeeleeuwen", "Flamingo"], ["Zeeleeuwen", "Reigers"], 
+      ["Zeeleeuwen", "Kippen"], ["Zeeleeuwen", "Fazanten"],
+      /* --- CARNIVOREN --- */
+      ["Zeeleeuwen", "Otters"], ["Zeeleeuwen", "Dassen"]
+    ],
+    output: [
+      { naam: "Zeeleeuwen", naam_en: "Sea lions", icoon: "icons/Zeeleeuwen.png", map: "Carnivoren", 
+        quote: `The California sea lion is highly social, agile in the water, and capable of remarkable underwater 
+        manoeuvres
+        <br><br>- Bernd Würsig`
       },
       { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
@@ -21376,7 +21472,9 @@ const combinaties = [
       /* --- ZOOGDIEREN --- */
       ["Walrussen", "Tweekleppigen"], ["Walrussen", "Zeeslakken"],
       ["Zeehonden", "Tweekleppigen"], ["Zeehonden", "Zeeslakken"], 
-      ["Zeehonden", "Nautilussen"], ["Zeehonden", "Heremietkreeften"]
+      ["Zeehonden", "Nautilussen"], ["Zeehonden", "Heremietkreeften"],
+      ["Zeeleeuwen", "Tweekleppigen"], ["Zeeleeuwen", "Zeeslakken"], 
+      ["Zeeleeuwen", "Nautilussen"], ["Zeeleeuwen", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
