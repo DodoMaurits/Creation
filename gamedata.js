@@ -17046,6 +17046,103 @@ const combinaties = [
         <br><br>- Bernd Würsig`
       }
     ]
+  }, /* ------------------ ZEEHONDEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Zeehonden", "Sponzen"], ["Zeehonden", "Zeeanemonen"], ["Zeehonden", "Zeesterren"], ["Zeehonden", "Kwallen"], 
+      ["Zeehonden", "Manteldieren"], ["Zeehonden", "Wormen"], ["Zeehonden", "Oertrochozoa"],   
+      /* Schelp */["Zeehonden", "Tweekleppigen"], ["Zeehonden", "Zeeslakken"],
+      /* --- VISSEN --- */
+      ["Zeehonden", "Lancetvisjes"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Zeehonden", "Oergeleedpotigen"], ["Zeehonden", "Oercheliceraten"], ["Zeehonden", "Oerspinachtigen"],
+      ["Zeehonden", "Oertienpotigen"], ["Zeehonden", "Waterspinnen"], ["Zeehonden", "Oerkreeftjes"], 
+      ["Zeehonden", "Krill"], ["Zeehonden", "Aasgarnalen"], ["Zeehonden", "Zeepissebedden"], 
+      ["Zeehonden", "Reuzenpissebedden"], ["Zeehonden", "Oerinsecten"], ["Zeehonden", "Vlokreeftjes"],
+      ["Zeehonden", "Garnalen"], ["Zeehonden", "Kreeften"], ["Zeehonden", "Krabben"], ["Zeehonden", "Zwaardstaarten"],
+      /* Schelp */["Zeehonden", "Heremietkreeften"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Zeehonden", "Termieten"], ["Zeehonden", "Pissebedden"], ["Zeehonden", "Oerpolyneopteren"],
+      ["Zeehonden", "Duizendpoten"], ["Zeehonden", "Hooiwagens"], ["Zeehonden", "Spinnen"], ["Zeehonden", "Zilvervisjes"], 
+      ["Zeehonden", "Wandelende takken"], ["Zeehonden", "Kakkerlakken"], ["Zeehonden", "Oerhymeneopteren"],  
+      ["Zeehonden", "Slakken"], ["Zeehonden", "Libellen"], ["Zeehonden", "Kevers"], ["Zeehonden", "Lieveheersbeestjes"], 
+      ["Zeehonden", "Mieren"], ["Zeehonden", "Vliegen"], ["Zeehonden", "Vlinders"], ["Zeehonden", "Krekels"],
+      ["Zeehonden", "Sprinkhanen"], ["Zeehonden", "Muggen"]
+    ],
+    output: [
+      { naam: "Zeehonden", naam_en: "Seals", icoon: "icons/Zeehonden.png", map: "Carnivoren", 
+        quote: `A seal lifts its head from the water with the quiet curiosity of a creature that belongs more to the sea 
+        than to the shore
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Zeehonden", "Inktvissen"], ["Zeehonden", "Octopussen"],
+      /*Schelp*/["Zeehonden", "Nautilussen"],
+      /* --- VISSEN --- */
+      ["Zeehonden", "Agnathen"], ["Zeehonden", "Zeeduivels"], ["Zeehonden", "Platvissen"], ["Zeehonden", "Piranha"],
+      ["Zeehonden", "Clownvissen"], ["Zeehonden", "Doktersvissen"], ["Zeehonden", "Papegaaivissen"],
+      ["Zeehonden", "Karpers"], ["Zeehonden", "Zeepaardjes"], ["Zeehonden", "Vliegende vissen"], 
+      ["Zeehonden", "Maanvissen"], ["Zeehonden", "Koraalduivels"], ["Zeehonden", "Oerstraalvinnigen"], 
+      ["Zeehonden", "Kabeljauwen"], ["Zeehonden", "Snoeken"], ["Zeehonden", "Meervallen"], ["Zeehonden", "Paling"],
+      ["Zeehonden", "Spookhaaien"], ["Zeehonden", "Goudvissen"], ["Zeehonden", "Coelacanthen"], ["Zeehonden", "Tiktaalik"],
+      ["Zeehonden", "Tonijn"], ["Zeehonden", "Zalm"], ["Zeehonden", "Haring"], ["Zeehonden", "Makreel"], 
+      ["Zeehonden", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Zeehonden", "Oertetrapoden"], ["Zeehonden", "Salamanders"], ["Zeehonden", "Kikkers"], ["Zeehonden", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Zeehonden", "Oersynapsiden"], ["Zeehonden", "Oerdiapsiden"], ["Zeehonden", "Oeranapsiden"], 
+      ["Zeehonden", "Pterosauriërs"], ["Zeehonden", "Lepidosauriërs"], ["Zeehonden", "Crurotarsi"], 
+      ["Zeehonden", "Oerdinosauriërs"], ["Zeehonden", "Oermaniraptoren"], ["Zeehonden", "Gekko's"], 
+      ["Zeehonden", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Zeehonden", "Mollen"], ["Zeehonden", "Oercynodonten"], ["Zeehonden", "Oerplacentalia"], 
+      ["Zeehonden", "Oerbuideldieren"], ["Zeehonden", "Vleermuizen"], ["Zeehonden", "Klipdassen"], ["Zeehonden", "Bevers"],
+      ["Zeehonden", "Koala"], ["Zeehonden", "Oerknaagdieren"], ["Zeehonden", "Konijnen"], ["Zeehonden", "Hazen"],
+      ["Zeehonden", "Prairiehonden"], ["Zeehonden", "Ratten"], ["Zeehonden", "Capibara"], ["Zeehonden", "Eekhoorns"],
+      ["Zeehonden", "Muizen"], ["Zeehonden", "Hamsters"], ["Zeehonden", "Vogelbekdieren"], ["Zeehonden", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Zeehonden", "Pinguïns"], ["Zeehonden", "Eenden"], ["Zeehonden", "Meeuwen"], ["Zeehonden", "Aalscholvers"], 
+      ["Zeehonden", "Flamingo"], ["Zeehonden", "Papegaaiduikers"], ["Zeehonden", "Reigers"], ["Zeehonden", "Kippen"],
+      ["Zeehonden", "Fazanten"],
+      /* --- CARNIVOREN --- */
+      ["Zeehonden", "Otters"], ["Zeehonden", "Dassen"]
+    ],
+    output: [
+      { naam: "Zeehonden", naam_en: "Seals", icoon: "icons/Zeehonden.png", map: "Carnivoren", 
+        quote: `A seal lifts its head from the water with the quiet curiosity of a creature that belongs more to the sea 
+        than to the shore
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerhondachtigen", "Rivier"],
@@ -21275,7 +21372,11 @@ const combinaties = [
       ["Papegaaiduikers", "Tweekleppigen"], ["Papegaaiduikers", "Zeeslakken"],
       ["Flamingo", "Tweekleppigen"], ["Flamingo", "Zeeslakken"],
       ["Reigers", "Tweekleppigen"],
-      ["Kraaien", "Tweekleppigen"], ["Kraaien", "Zeeslakken"]
+      ["Kraaien", "Tweekleppigen"], ["Kraaien", "Zeeslakken"],
+      /* --- ZOOGDIEREN --- */
+      ["Walrussen", "Tweekleppigen"], ["Walrussen", "Zeeslakken"],
+      ["Zeehonden", "Tweekleppigen"], ["Zeehonden", "Zeeslakken"], 
+      ["Zeehonden", "Nautilussen"], ["Zeehonden", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
