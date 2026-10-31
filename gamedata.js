@@ -17596,6 +17596,114 @@ const combinaties = [
         <br><br>- Chris Duckworth`
       }
     ]
+  }, /* ------------------ BEREN ------------------ */
+  {
+    input: [
+          /* --- PRIL LEVEN --- */
+      ["Beren", "Paddenstoelen"], 
+      /* --- WATERDIEREN --- */
+      ["Beren", "Zeesterren"], 
+      /*Schelp*/["Beren", "Tweekleppigen"], ["Beren", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Beren", "Krill"], ["Beren", "Garnalen"], ["Beren", "Kreeften"], ["Beren", "Krabben"],
+      /*Schelp*/ ["Beren", "Heremietkreeften"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Beren", "Termieten"], ["Beren", "Pissebedden"], ["Beren", "Oerpolyneopteren"], ["Beren", "Duizendpoten"], 
+      ["Beren", "Spinnen"], ["Beren", "Zilvervisjes"], ["Beren", "Wandelende takken"], ["Beren", "Kakkerlakken"], 
+      ["Beren", "Oerhymeneopteren"], ["Beren", "Slakken"], ["Beren", "Libellen"], ["Beren", "Kevers"],
+      ["Beren", "Lieveheersbeestjes"], ["Beren", "Mieren"], ["Beren", "Wespen"], ["Beren", "Vliegen"],
+      ["Beren", "Krekels"], ["Beren", "Sprinkhanen"], ["Beren", "Muggen"], ["Beren", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Beren", "Mos"], ["Beren", "Oervaatplanten"], ["Beren", "Varens"], ["Beren", "Oerzaadplanten"], 
+      ["Beren", "Oermagnoliden"], ["Beren", "Oermagnoliden"], 
+      /* --- BIOLOGIE --- */
+      ["Beren", "Bot"], ["Beren", "Weefsel"], ["Beren", "Spieren"], ["Beren", "Wortels"], ["Beren", "Oog"],
+      ["Beren", "Bloed"], ["Beren", "Vleugels"], ["Beren", "Ei"], ["Beren", "Bloem"],
+      /* --- FRUIT --- */
+      ["Beren", "Druiven"], ["Beren", "Appels"], ["Beren", "Peren"], ["Beren", "Pruimen"], ["Beren", "Bosbessen"],
+      ["Beren", "Vijgen"], ["Beren", "Aardbeien"], ["Beren", "Kersen"], ["Beren", "Frambozen"]
+    ],
+    output: [
+      { naam: "Beren", naam_en: "Bears", icoon: "icons/Beren.png", map: "Carnivoren", 
+        quote: `The great bear moves through the forest with a power so quiet that the woods seem to make room for it
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Wolven", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Wolven", "Agnathen"], ["Wolven", "Karpers"], ["Wolven", "Oerstraalvinnigen"], ["Wolven", "Snoeken"], 
+      ["Wolven", "Meervallen"], ["Wolven", "Paling"], ["Wolven", "Goudvissen"], ["Wolven", "Tiktaalik"], 
+      ["Wolven", "Zalm"], ["Wolven", "Haring"], ["Wolven", "Makreel"], ["Wolven", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wolven", "Oertetrapoden"], ["Wolven", "Salamanders"], ["Wolven", "Kikkers"], ["Wolven", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Wolven", "Slangen"], ["Wolven", "Oersynapsiden"], ["Wolven", "Oerdiapsiden"], ["Wolven", "Oeranapsiden"], 
+      ["Wolven", "Pterosauriërs"], ["Wolven", "Lepidosauriërs"], ["Wolven", "Crurotarsi"], ["Wolven", "Oerdinosauriërs"], 
+      ["Wolven", "Gekko's"], ["Wolven", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Wolven", "Mollen"], ["Wolven", "Oercynodonten"], ["Wolven", "Oerplacentalia"], ["Wolven", "Oerbuideldieren"], 
+      ["Wolven", "Vleermuizen"], ["Wolven", "Klipdassen"], ["Wolven", "Slurfdieren"], ["Wolven", "Aardvarkens"], 
+      ["Wolven", "Luiaarden"], ["Wolven", "Miereneters"], ["Wolven", "Bevers"], ["Wolven", "Kangoeroes"], 
+      ["Wolven", "Wombats"], ["Wolven", "Koala"], ["Wolven", "Oerknaagdieren"], ["Wolven", "Gordeldieren"], 
+      ["Wolven", "Egels"], ["Wolven", "Konijnen"], ["Wolven", "Hazen"], ["Wolven", "Prairiehonden"], ["Wolven", "Ratten"],
+      ["Wolven", "Capibara"], ["Wolven", "Eekhoorns"], ["Wolven", "Muizen"], ["Wolven", "Hamsters"], 
+      ["Wolven", "Vogelbekdieren"], ["Wolven", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Wolven", "Pinguïns"], ["Wolven", "Duiven"], ["Wolven", "Zwanen"], ["Wolven", "Ganzen"], ["Wolven", "Eenden"], 
+      ["Wolven", "Meeuwen"], ["Wolven", "Flamingo"], ["Wolven", "Mussen"], ["Wolven", "Kippen"], ["Wolven", "Fazanten"],
+      ["Wolven", "Kraaien"], ["Wolven", "Pauwen"], 
+      /* --- CARNIVOREN --- */
+      ["Wolven", "Oerhondachtigen"], ["Wolven", "Oerkatachtigen"], ["Wolven", "Zeehonden"], ["Wolven", "Zeeleeuwen"],
+      ["Wolven", "Otters"], ["Wolven", "Dassen"], ["Wolven", "Wasberen"], ["Wolven", "Marters"], ["Wolven", "Wezels"],
+      ["Wolven", "Lynxen"], ["Wolven", "Katten"], ["Wolven", "Stokstaartjes"], ["Wolven", "Civetkatten"],
+      ["Wolven", "Fossa"], ["Wolven", "Cheeta"], ["Wolven", "Vossen"], ["Wolven", "Honden"], 
+      /* --- PRIMATEN --- */
+      ["Wolven", "Oerprimaten"], ["Wolven", "Lemuren"], ["Wolven", "Makaken"], ["Wolven", "Oermensapen"],
+      ["Wolven", "Neusapen"], ["Wolven", "Langoeren"], ["Wolven", "Bavianen"], ["Wolven", "Galago"],
+      ["Wolven", "Spookdiertjes"], ["Wolven", "Kapucijnapen"], ["Wolven", "Slingerapen"], ["Wolven", "Brulapen"],
+      ["Wolven", "Saki"], ["Wolven", "Gibbons"], ["Wolven", "Bonobo"], ["Wolven", "Lori"],
+      /* --- HOEFDIEREN --- */
+      ["Wolven", "Oerevenhoevigen"], ["Wolven", "Oeronevenhoevigen"], ["Wolven", "Tapirs"], ["Wolven", "Gaffelantilopes"], 
+      ["Wolven", "Okapi"], ["Wolven", "Gnoes"], ["Wolven", "Gazellen"], ["Wolven", "Runderen"], ["Wolven", "Geiten"],
+      ["Wolven", "Schapen"], ["Wolven", "Ezels"], ["Wolven", "Zebra"], ["Wolven", "Rendieren"], ["Wolven", "Lama"],
+      ["Wolven", "Alpaca"], ["Wolven", "Steenbokken"], ["Wolven", "Kamelen"], ["Wolven", "Drommedarissen"],
+      ["Wolven", "Elanden"], ["Wolven", "Zwijnen"], ["Wolven", "Herten"], ["Wolven", "Impala"], ["Wolven", "Paarden"],
+      ["Wolven", "Bizons"], ["Wolven", "Koeien"], ["Wolven", "Varkens"]   
+    ],
+    output: [
+      { naam: "Beren", naam_en: "Bears", icoon: "icons/Beren.png", map: "Carnivoren", 
+        quote: `The great bear moves through the forest with a power so quiet that the woods seem to make room for it
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerhondachtigen", "Savanne"],
