@@ -17473,6 +17473,104 @@ const combinaties = [
         <br><br>- Barry Lopez`
       }
     ]
+  }, /* ------------------ WOLVEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Wolven", "Zeesterren"], ["Wolven", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Wolven", "Kreeften"], ["Wolven", "Krabben"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wolven", "Duizendpoten"], ["Wolven", "Spinnen"], ["Wolven", "Wandelende takken"], ["Wolven", "Kakkerlakken"], 
+      ["Wolven", "Kevers"], ["Wolven", "Sprinkhanen"],
+      /* --- BIOLOGIE --- */
+      ["Wolven", "Detritus"], ["Wolven", "Bot"], ["Wolven", "Weefsel"], ["Wolven", "Spieren"], ["Wolven", "Oog"],
+      ["Wolven", "Bloed"], ["Wolven", "Vleugels"], ["Wolven", "Ei"],
+      /* --- FRUIT --- */
+      ["Wolven", "Druiven"], ["Wolven", "Appels"], ["Wolven", "Peren"], ["Wolven", "Pruimen"], ["Wolven", "Bosbessen"],
+      ["Wolven", "Vijgen"], ["Wolven", "Aardbeien"], ["Wolven", "Kersen"], ["Wolven", "Frambozen"]
+    ],
+    output: [
+      { naam: "Wolven", naam_en: "Wolves", icoon: "icons/Wolven.png", map: "Carnivoren", 
+        quote: `A wolf’s howl carries through the forest not as noise, but as distance made audible
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Wolven", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Wolven", "Agnathen"], ["Wolven", "Karpers"], ["Wolven", "Oerstraalvinnigen"], ["Wolven", "Snoeken"], 
+      ["Wolven", "Meervallen"], ["Wolven", "Paling"], ["Wolven", "Goudvissen"], ["Wolven", "Tiktaalik"], 
+      ["Wolven", "Zalm"], ["Wolven", "Haring"], ["Wolven", "Makreel"], ["Wolven", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wolven", "Oertetrapoden"], ["Wolven", "Salamanders"], ["Wolven", "Kikkers"], ["Wolven", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Wolven", "Slangen"], ["Wolven", "Oersynapsiden"], ["Wolven", "Oerdiapsiden"], ["Wolven", "Oeranapsiden"], 
+      ["Wolven", "Pterosauriërs"], ["Wolven", "Lepidosauriërs"], ["Wolven", "Crurotarsi"], ["Wolven", "Oerdinosauriërs"], 
+      ["Wolven", "Gekko's"], ["Wolven", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Wolven", "Mollen"], ["Wolven", "Oercynodonten"], ["Wolven", "Oerplacentalia"], ["Wolven", "Oerbuideldieren"], 
+      ["Wolven", "Vleermuizen"], ["Wolven", "Klipdassen"], ["Wolven", "Slurfdieren"], ["Wolven", "Aardvarkens"], 
+      ["Wolven", "Luiaarden"], ["Wolven", "Miereneters"], ["Wolven", "Bevers"], ["Wolven", "Kangoeroes"], 
+      ["Wolven", "Wombats"], ["Wolven", "Koala"], ["Wolven", "Oerknaagdieren"], ["Wolven", "Gordeldieren"], 
+      ["Wolven", "Egels"], ["Wolven", "Konijnen"], ["Wolven", "Hazen"], ["Wolven", "Prairiehonden"], ["Wolven", "Ratten"],
+      ["Wolven", "Capibara"], ["Wolven", "Eekhoorns"], ["Wolven", "Muizen"], ["Wolven", "Hamsters"], 
+      ["Wolven", "Vogelbekdieren"], ["Wolven", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Wolven", "Pinguïns"], ["Wolven", "Duiven"], ["Wolven", "Zwanen"], ["Wolven", "Ganzen"], ["Wolven", "Eenden"], 
+      ["Wolven", "Meeuwen"], ["Wolven", "Flamingo"], ["Wolven", "Mussen"], ["Wolven", "Kippen"], ["Wolven", "Fazanten"],
+      ["Wolven", "Kraaien"], ["Wolven", "Pauwen"], 
+      /* --- CARNIVOREN --- */
+      ["Wolven", "Oerhondachtigen"], ["Wolven", "Oerkatachtigen"], ["Wolven", "Zeehonden"], ["Wolven", "Zeeleeuwen"],
+      ["Wolven", "Otters"], ["Wolven", "Dassen"], ["Wolven", "Wasberen"], ["Wolven", "Marters"], ["Wolven", "Wezels"],
+      ["Wolven", "Lynxen"], ["Wolven", "Katten"], ["Wolven", "Stokstaartjes"], ["Wolven", "Civetkatten"],
+      ["Wolven", "Fossa"], ["Wolven", "Cheeta"], ["Wolven", "Vossen"], ["Wolven", "Honden"], 
+      /* --- PRIMATEN --- */
+      ["Wolven", "Oerprimaten"], ["Wolven", "Lemuren"], ["Wolven", "Makaken"], ["Wolven", "Oermensapen"],
+      ["Wolven", "Neusapen"], ["Wolven", "Langoeren"], ["Wolven", "Bavianen"], ["Wolven", "Galago"],
+      ["Wolven", "Spookdiertjes"], ["Wolven", "Kapucijnapen"], ["Wolven", "Slingerapen"], ["Wolven", "Brulapen"],
+      ["Wolven", "Saki"], ["Wolven", "Gibbons"], ["Wolven", "Bonobo"], ["Wolven", "Lori"],
+      /* --- HOEFDIEREN --- */
+      ["Wolven", "Oerevenhoevigen"], ["Wolven", "Oeronevenhoevigen"], ["Wolven", "Tapirs"], ["Wolven", "Gaffelantilopes"], 
+      ["Wolven", "Okapi"], ["Wolven", "Gnoes"], ["Wolven", "Gazellen"], ["Wolven", "Runderen"], ["Wolven", "Geiten"],
+      ["Wolven", "Schapen"], ["Wolven", "Ezels"], ["Wolven", "Zebra"], ["Wolven", "Rendieren"], ["Wolven", "Lama"],
+      ["Wolven", "Alpaca"], ["Wolven", "Steenbokken"], ["Wolven", "Kamelen"], ["Wolven", "Drommedarissen"],
+      ["Wolven", "Elanden"], ["Wolven", "Zwijnen"], ["Wolven", "Herten"], ["Wolven", "Impala"], ["Wolven", "Paarden"],
+      ["Wolven", "Bizons"], ["Wolven", "Koeien"], ["Wolven", "Varkens"]   
+    ],
+    output: [
+      { naam: "Wolven", naam_en: "Wolves", icoon: "icons/Wolven.png", map: "Carnivoren", 
+        quote: `A wolf’s howl carries through the forest not as noise, but as distance made audible
+        <br><br>- Barry Lopez`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerhondachtigen", "Bos"],
