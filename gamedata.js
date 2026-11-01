@@ -17851,7 +17851,6 @@ const combinaties = [
   }, /* ------------------ MARTERS ------------------ */
   {
     input: [
-      ["Marters", "map:Groenten"], ["Marters", "map:Granen"], ["Marters", "map:Zaden"],
       /* --- WATERDIEREN --- */
       ["Marters", "Wormen"], 
       /* --- GELEEDPOTIGEN --- */
@@ -17865,28 +17864,20 @@ const combinaties = [
       ["Marters", "Oerhymeneopteren"], ["Marters", "Slakken"], ["Marters", "Libellen"], ["Marters", "Kevers"], 
       ["Marters", "Lieveheersbeestjes"], ["Marters", "Mieren"], ["Marters", "Vliegen"], ["Marters", "Vlinders"], 
       ["Marters", "Krekels"], ["Marters", "Sprinkhanen"], ["Marters", "Muggen"], 
-      /* --- PLANTEN --- */
-      ["Marters", "Mos"], ["Marters", "Oervaatplanten"], ["Marters", "Varens"], ["Marters", "Oerzaadplanten"], 
-      ["Marters", "Oermagnoliden"], ["Marters", "Oermonocotylen"], ["Marters", "Oereudicoten"], ["Marters", "Gras"],
-      ["Marters", "Oerfabiden"], ["Marters", "Oermalviden"], ["Marters", "Oercaryophyllales"], ["Marters", "Oerericales"],
-      ["Marters", "Oerlamiden"], ["Marters", "Oercampanuliden"], ["Marters", "Vetplanten"], ["Marters", "Brandnetels"],
-      ["Marters", "Agave"], ["Marters", "Heide"], ["Marters", "Lavendel"], ["Marters", "Klavers"], 
-      ["Marters", "Waterriet"], ["Marters", "Suikerriet"], ["Marters", "Venusvliegenvanger"], ["Marters", "Zonnedauw"],
       /* --- BIOLOGIE --- */
-      ["Marters", "Detritus"], ["Marters", "Weefsel"], ["Marters", "Spieren"], ["Marters", "Wortels"], ["Marters", "Oog"],
-      ["Marters", "Bloed"], ["Marters", "Vleugels"], ["Marters", "Blad"], ["Marters", "Ei"],
-      /* --- SMAAKMAKERS --- */
-      ["Marters", "Truffels"], ["Marters", "Mosterd"], ["Marters", "Knoflook"], ["Marters", "Ui"], ["Marters", "Bieslook"],
+      ["Marters", "Detritus"], ["Marters", "Weefsel"], ["Marters", "Spieren"], ["Marters", "Oog"], ["Marters", "Bloed"], 
+      ["Marters", "Vleugels"], ["Marters", "Ei"],
       /* --- GENOTWAREN --- */
       ["Marters", "Honing"],
       /* --- FRUIT --- */
       ["Marters", "Druiven"], ["Marters", "Appels"], ["Marters", "Peren"], ["Marters", "Pruimen"], 
-      ["Marters", "Bosbessen"], ["Marters", "Zuurzakken"], ["Marters", "Vijgen"], ["Marters", "Aardbeien"], 
-      ["Marters", "Olijven"], ["Marters", "Abrikozen"], ["Marters", "Kersen"], ["Marters", "Perziken"], 
-      ["Marters", "Granaatappels"], ["Marters", "Mandarijnen"], ["Marters", "Guaves"], ["Marters", "Mango"],
-      ["Marters", "Papaja"], ["Marters", "Frambozen"], ["Marters", "Avocado"], ["Marters", "Bananen"], 
-      ["Marters", "Lychee"], ["Marters", "Kaki"], ["Marters", "Kiwi"], ["Marters", "Dadels"], ["Marters", "Sinaasappels"],
-      ["Marters", "Citroenen"], ["Marters", "Limoenen"]
+      ["Marters", "Bosbessen"], ["Marters", "Vijgen"], ["Marters", "Aardbeien"], ["Marters", "Abrikozen"], 
+      ["Marters", "Kersen"], ["Marters", "Perziken"], ["Marters", "Granaatappels"], ["Marters", "Mandarijnen"],
+      ["Marters", "Guaves"], ["Marters", "Mango"], ["Marters", "Papaja"], ["Marters", "Frambozen"], 
+      ["Marters", "Bananen"], ["Marters", "Lychee"], ["Marters", "Kaki"], ["Marters", "Kiwi"], ["Marters", "Dadels"], 
+      ["Marters", "Sinaasappels"],
+      /* --- ZADEN --- */
+      ["Marters", "Walnoten"], ["Marters", "Kastanjes"], ["Marters", "Hazelnoten"]
     ],
     output: [
       { naam: "Marters", naam_en: "Martens", icoon: "icons/Marters.png", map: "Carnivoren", 
