@@ -17734,7 +17734,7 @@ const combinaties = [
   }, /* ------------------ WASBEREN ------------------ */
   {
     input: [
-      ["Wasberen", "map:Planten"], ["Wasberen", "map:Granen"], ["Wasberen", "map:Zaden"],
+      ["Wasberen", "map:Granen"], ["Wasberen", "map:Zaden"],
       /* --- WATERDIEREN --- */
       ["Wasberen", "Wormen"], 
       /*Schelp*/["Wasberen", "Tweekleppigen"], ["Wasberen", "Zeeslakken"], 
@@ -17755,8 +17755,7 @@ const combinaties = [
       ["Wasberen", "Oog"], ["Wasberen", "Bloed"], ["Wasberen", "Vleugels"], ["Wasberen", "Blad"], ["Wasberen", "Ei"], 
       ["Wasberen", "Zaadjes"],
       /* --- SMAAKMAKERS --- */
-      ["Wasberen", "Truffels"], ["Wasberen", "Munt"], ["Wasberen", "Tijm"], ["Wasberen", "Mosterd"], 
-      ["Wasberen", "Knoflook"], ["Wasberen", "Ui"], ["Wasberen", "Bieslook"],
+      ["Wasberen", "Truffels"],
       /* --- GENOTWAREN --- */
       ["Wasberen", "Honing"],
       /* --- FRUIT --- */
