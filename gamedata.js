@@ -17731,6 +17731,122 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ WASBEREN ------------------ */
+  {
+    input: [
+      ["Wasberen", "map:Planten"], ["Wasberen", "map:Granen"], ["Wasberen", "map:Zaden"],
+      /* --- WATERDIEREN --- */
+      ["Wasberen", "Wormen"], 
+      /*Schelp*/["Wasberen", "Tweekleppigen"], ["Wasberen", "Zeeslakken"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Wasberen", "Waterspinnen"], ["Wasberen", "Oerkreeftjes"], ["Wasberen", "Krill"], ["Wasberen", "Aasgarnalen"],  
+      ["Wasberen", "Zeepissebedden"], ["Wasberen", "Oerinsecten"], ["Wasberen", "Vlokreeftjes"], ["Wasberen", "Garnalen"],
+      ["Wasberen", "Kreeften"], ["Wasberen", "Krabben"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wasberen", "Termieten"], ["Wasberen", "Pissebedden"], ["Wasberen", "Oerpolyneopteren"], 
+      ["Wasberen", "Duizendpoten"], ["Wasberen", "Hooiwagens"], ["Wasberen", "Schorpioenen"], ["Wasberen", "Spinnen"], 
+      ["Wasberen", "Zilvervisjes"], ["Wasberen", "Wandelende takken"], ["Wasberen", "Kakkerlakken"], 
+      ["Wasberen", "Oerhymeneopteren"], ["Wasberen", "Slakken"], ["Wasberen", "Libellen"], ["Wasberen", "Kevers"], 
+      ["Wasberen", "Lieveheersbeestjes"], ["Wasberen", "Mieren"], ["Wasberen", "Wespen"], ["Wasberen", "Vliegen"], 
+      ["Wasberen", "Vlinders"], ["Wasberen", "Krekels"], ["Wasberen", "Sprinkhanen"], ["Wasberen", "Muggen"], 
+      ["Wasberen", "Bijen"],
+      /* --- BIOLOGIE --- */
+      ["Wasberen", "Weefsel"], ["Wasberen", "Spieren"], ["Wasberen", "Wortels"], ["Wasberen", "Oog"],
+      ["Wasberen", "Bloed"], ["Wasberen", "Vleugels"], ["Wasberen", "Blad"], ["Wasberen", "Ei"], ["Wasberen", "Zaadjes"],
+      /* --- SMAAKMAKERS --- */
+      ["Wasberen", "Truffels"], ["Wasberen", "Munt"], ["Wasberen", "Tijm"], ["Wasberen", "Mosterd"], 
+      ["Wasberen", "Knoflook"], ["Wasberen", "Ui"], ["Wasberen", "Bieslook"],
+      /* --- GENOTWAREN --- */
+      ["Wasberen", "Honing"],
+      /* --- FRUIT --- */
+      ["Wasberen", "Druiven"], ["Wasberen", "Appels"], ["Wasberen", "Peren"], ["Wasberen", "Pruimen"], 
+      ["Wasberen", "Bosbessen"], ["Wasberen", "Zuurzakken"], ["Wasberen", "Vijgen"], ["Wasberen", "Aardbeien"], 
+      ["Wasberen", "Olijven"], ["Wasberen", "Abrikozen"], ["Wasberen", "Kersen"], ["Wasberen", "Perziken"], 
+      ["Wasberen", "Granaatappels"], ["Wasberen", "Mandarijnen"], ["Wasberen", "Guaves"], ["Wasberen", "Mango"],
+      ["Wasberen", "Papaja"], ["Wasberen", "Frambozen"], ["Wasberen", "Avocado"], ["Wasberen", "Lychee"], 
+      ["Wasberen", "Kaki"], ["Wasberen", "Kiwi"], ["Wasberen", "Dadels"], ["Wasberen", "Sinaasappels"], 
+      ["Wasberen", "Citroenen"], ["Wasberen", "Limoenen"], 
+      /* --- GROENTEN --- */
+      ["Wasberen", "Komkommers"], ["Wasberen", "Meloenen"], ["Wasberen", "Watermeloenen"], ["Wasberen", "Pompoenen"], 
+      ["Wasberen", "Courgettes"], ["Wasberen", "Bieten"], ["Wasberen", "Spinazie"], ["Wasberen", "Cassave"], 
+      ["Wasberen", "Zoete aardappelen"], ["Wasberen", "Aubergines"], ["Wasberen", "Radijsjes"], ["Wasberen", "Kool"],
+      ["Wasberen", "Rababarber"], ["Wasberen", "Asperges"], ["Wasberen", "Prei"], ["Wasberen", "Paprika"], 
+      ["Wasberen", "Tomaten"], ["Wasberen", "Aardappelen"], ["Wasberen", "Selderij"], ["Wasberen", "Venkel"], 
+      ["Wasberen", "Wortelen"], ["Wasberen", "Sla"], ["Wasberen", "Andijvie"], ["Wasberen", "Broccoli"], 
+      ["Wasberen", "Bloemkool"], ["Wasberen", "Rode kool"], ["Wasberen", "Spruitjes"], ["Wasberen", "Boerenkool"]
+    ],
+    output: [
+      { naam: "Wasberen", naam_en: "Raccoons", icoon: "icons/Wasberen.png", map: "Carnivoren", 
+        quote: `With its dexterous front paws, the raccoon explores the world as if everything must be touched before it 
+        can be understood
+        <br><br>- Sy Montgomery`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- WATERDIEREN --- */
+      ["Wasberen", "Octopussen"],
+      /* --- VISSEN --- */
+      ["Wasberen", "Agnathen"], ["Wasberen", "Platvissen"], ["Wasberen", "Clownvissen"], ["Wasberen", "Doktersvissen"],
+      ["Wasberen", "Papegaaivissen"], ["Wasberen", "Karpers"], ["Wasberen", "Zeepaardjes"], 
+      ["Wasberen", "Vliegende vissen"], ["Wasberen", "Koraalduivels"], ["Wasberen", "Oerstraalvinnigen"], 
+      ["Wasberen", "Snoeken"], ["Wasberen", "Meervallen"], ["Wasberen", "Paling"], ["Wasberen", "Goudvissen"], 
+      ["Wasberen", "Haring"], ["Wasberen", "Makreel"], ["Wasberen", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wasberen", "Oertetrapoden"], ["Wasberen", "Salamanders"], ["Wasberen", "Kikkers"], ["Wasberen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Wasberen", "Slangen"], ["Wasberen", "Oersynapsiden"], ["Wasberen", "Oerdiapsiden"], ["Wasberen", "Oeranapsiden"], 
+      ["Wasberen", "Pterosauriërs"], ["Wasberen", "Lepidosauriërs"], ["Wasberen", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Wasberen", "Mollen"], ["Wasberen", "Oercynodonten"], ["Wasberen", "Oerplacentalia"], 
+      ["Wasberen", "Oerbuideldieren"], ["Wasberen", "Vleermuizen"], ["Wasberen", "Klipdassen"], ["Wasberen", "Bevers"], 
+      ["Wasberen", "Oerknaagdieren"], ["Wasberen", "Egels"], ["Wasberen", "Konijnen"], ["Wasberen", "Prairiehonden"], 
+      ["Wasberen", "Ratten"], ["Wasberen", "Eekhoorns"], ["Wasberen", "Muizen"], ["Wasberen", "Hamsters"], 
+      ["Wasberen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Wasberen", "Pinguïns"], ["Wasberen", "Duiven"], ["Wasberen", "Eenden"], ["Wasberen", "Meeuwen"], 
+      ["Wasberen", "Mussen"], ["Wasberen", "Kippen"], ["Wasberen", "Fazanten"], 
+      /* --- CARNIVOREN --- */
+      ["Wasberen", "Oerhondachtigen"], ["Wasberen", "Oerkatachtigen"], ["Wasberen", "Otters"], ["Wasberen", "Dassen"], 
+      ["Wasberen", "Wezels"], ["Wasberen", "Katten"], ["Wasberen", "Stokstaartjes"], ["Wasberen", "Civetkatten"],
+      ["Wasberen", "Fossa"],
+      /* --- PRIMATEN --- */
+      ["Wasberen", "Oerprimaten"], ["Wasberen", "Lemuren"], ["Wasberen", "Makaken"], ["Wasberen", "Langoeren"], 
+      ["Wasberen", "Galago"], ["Wasberen", "Spookdiertjes"], ["Wasberen", "Kapucijnapen"], ["Wasberen", "Saki"], 
+      ["Wasberen", "Gibbons"], ["Wasberen", "Bonobo"]
+    ],
+    output: [
+      { naam: "Wasberen", naam_en: "Raccoons", icoon: "icons/Wasberen.png", map: "Carnivoren", 
+        quote: `With its dexterous front paws, the raccoon explores the world as if everything must be touched before it 
+        can be understood
+        <br><br>- Sy Montgomery`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerhondachtigen", "Savanne"],
@@ -21915,7 +22031,8 @@ const combinaties = [
       ["Zeeleeuwen", "Nautilussen"], ["Zeeleeuwen", "Heremietkreeften"],
       ["Otters", "Tweekleppigen"], ["Otters", "Zeeslakken"], ["Otters", "Nautilussen"], ["Otters", "Heremietkreeften"],
       ["Dassen", "Tweekleppigen"], ["Dassen", "Zeeslakken"],
-      ["Beren", "Tweekleppigen"], ["Beren", "Zeeslakken"], ["Beren", "Heremietkreeften"]
+      ["Beren", "Tweekleppigen"], ["Beren", "Zeeslakken"], ["Beren", "Heremietkreeften"],
+      ["Wasberen", "Tweekleppigen"], ["Wasberen", "Zeeslakken"]
     ],
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
