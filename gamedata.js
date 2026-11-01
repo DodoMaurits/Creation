@@ -17847,6 +17847,107 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ MARTERS ------------------ */
+  {
+    input: [
+      ["Marters", "map:Groenten"], ["Marters", "map:Granen"], ["Marters", "map:Zaden"],
+      /* --- WATERDIEREN --- */
+      ["Marters", "Wormen"], 
+      /* --- GELEEDPOTIGEN --- */
+      ["Marters", "Oertrochozoa"], ["Marters", "Waterspinnen"], ["Marters", "Oerkreeftjes"], ["Marters", "Krill"], 
+      ["Marters", "Aasgarnalen"], ["Marters", "Zeepissebedden"], ["Marters", "Oerinsecten"], ["Marters", "Vlokreeftjes"], 
+      ["Marters", "Garnalen"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Marters", "Luizen"], ["Marters", "Mijten"], ["Marters", "Teken"], ["Marters", "Termieten"], 
+      ["Marters", "Pissebedden"], ["Marters", "Oerpolyneopteren"], ["Marters", "Duizendpoten"], ["Marters", "Hooiwagens"],
+      ["Marters", "Spinnen"], ["Marters", "Zilvervisjes"], ["Marters", "Wandelende takken"], ["Marters", "Kakkerlakken"], 
+      ["Marters", "Oerhymeneopteren"], ["Marters", "Slakken"], ["Marters", "Libellen"], ["Marters", "Kevers"], 
+      ["Marters", "Lieveheersbeestjes"], ["Marters", "Mieren"], ["Marters", "Vliegen"], ["Marters", "Vlinders"], 
+      ["Marters", "Krekels"], ["Marters", "Sprinkhanen"], ["Marters", "Muggen"], 
+      /* --- PLANTEN --- */
+      ["Marters", "Mos"], ["Marters", "Oervaatplanten"], ["Marters", "Varens"], ["Marters", "Oerzaadplanten"], 
+      ["Marters", "Oermagnoliden"], ["Marters", "Oermonocotylen"], ["Marters", "Oereudicoten"], ["Marters", "Gras"],
+      ["Marters", "Oerfabiden"], ["Marters", "Oermalviden"], ["Marters", "Oercaryophyllales"], ["Marters", "Oerericales"],
+      ["Marters", "Oerlamiden"], ["Marters", "Oercampanuliden"], ["Marters", "Vetplanten"], ["Marters", "Brandnetels"],
+      ["Marters", "Agave"], ["Marters", "Heide"], ["Marters", "Lavendel"], ["Marters", "Klavers"], 
+      ["Marters", "Waterriet"], ["Marters", "Suikerriet"], ["Marters", "Venusvliegenvanger"], ["Marters", "Zonnedauw"],
+      /* --- BIOLOGIE --- */
+      ["Marters", "Weefsel"], ["Marters", "Spieren"], ["Marters", "Wortels"], ["Marters", "Oog"], ["Marters", "Bloed"], 
+      ["Marters", "Vleugels"], ["Marters", "Blad"], ["Marters", "Ei"],
+      /* --- SMAAKMAKERS --- */
+      ["Marters", "Truffels"], ["Marters", "Mosterd"], ["Marters", "Knoflook"], ["Marters", "Ui"], ["Marters", "Bieslook"],
+      /* --- GENOTWAREN --- */
+      ["Marters", "Honing"],
+      /* --- FRUIT --- */
+      ["Marters", "Druiven"], ["Marters", "Appels"], ["Marters", "Peren"], ["Marters", "Pruimen"], 
+      ["Marters", "Bosbessen"], ["Marters", "Zuurzakken"], ["Marters", "Vijgen"], ["Marters", "Aardbeien"], 
+      ["Marters", "Olijven"], ["Marters", "Abrikozen"], ["Marters", "Kersen"], ["Marters", "Perziken"], 
+      ["Marters", "Granaatappels"], ["Marters", "Mandarijnen"], ["Marters", "Guaves"], ["Marters", "Mango"],
+      ["Marters", "Papaja"], ["Marters", "Frambozen"], ["Marters", "Avocado"], ["Marters", "Bananen"], 
+      ["Marters", "Lychee"], ["Marters", "Kaki"], ["Marters", "Kiwi"], ["Marters", "Dadels"], ["Marters", "Sinaasappels"],
+      ["Marters", "Citroenen"], ["Marters", "Limoenen"]
+    ],
+    output: [
+      { naam: "Marters", naam_en: "Martens", icoon: "icons/Marters.png", map: "Carnivoren", 
+        quote: `The marten moves like a thought through the branches—quick, silent, and almost never fully seen
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Marters", "Agnathen"], ["Marters", "Platvissen"], ["Marters", "Clownvissen"], ["Marters", "Doktersvissen"],
+      ["Marters", "Papegaaivissen"], ["Marters", "Karpers"], ["Marters", "Zeepaardjes"], ["Marters", "Koraalduivels"], 
+      ["Marters", "Oerstraalvinnigen"], ["Marters", "Snoeken"], ["Marters", "Meervallen"], ["Marters", "Paling"], 
+      ["Marters", "Goudvissen"], ["Marters", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Marters", "Oertetrapoden"], ["Marters", "Salamanders"], ["Marters", "Kikkers"], ["Marters", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Marters", "Oersynapsiden"], ["Marters", "Oerdiapsiden"], ["Marters", "Oeranapsiden"], 
+      ["Marters", "Lepidosauriërs"], ["Marters", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Marters", "Mollen"], ["Marters", "Oercynodonten"], ["Marters", "Oerplacentalia"], ["Marters", "Oerbuideldieren"], 
+      ["Marters", "Vleermuizen"], ["Marters", "Oerknaagdieren"], ["Marters", "Konijnen"], ["Marters", "Ratten"], 
+      ["Marters", "Eekhoorns"], ["Marters", "Muizen"], ["Marters", "Hamsters"], ["Marters", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Marters", "Duiven"], ["Marters", "Eenden"], ["Marters", "Meeuwen"], ["Marters", "Mussen"], ["Marters", "Kippen"], 
+      ["Marters", "Fazanten"], ["Marters", "Kraaien"], ["Marters", "Kieviten"], ["Marters", "Kanaries"], 
+      /* --- CARNIVOREN --- */
+      ["Marters", "Wezels"],
+      /* --- PRIMATEN --- */
+      ["Marters", "Oerprimaten"], ["Marters", "Lemuren"], ["Marters", "Galago"], ["Marters", "Spookdiertjes"]
+    ],
+    output: [
+      { naam: "Marters", naam_en: "Martens", icoon: "icons/Marters.png", map: "Carnivoren", 
+        quote: `The marten moves like a thought through the branches—quick, silent, and almost never fully seen
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerhondachtigen", "Savanne"],
