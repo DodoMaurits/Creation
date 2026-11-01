@@ -17599,29 +17599,54 @@ const combinaties = [
   }, /* ------------------ BEREN ------------------ */
   {
     input: [
+      ["Beren", "map:Bloemen"], ["Beren", "map:Granen"], ["Beren", "map:Zaden"],
           /* --- PRIL LEVEN --- */
       ["Beren", "Paddenstoelen"], 
       /* --- WATERDIEREN --- */
-      ["Beren", "Zeesterren"], 
-      /*Schelp*/["Beren", "Tweekleppigen"], ["Beren", "Wormen"], 
+      ["Beren", "Zeesterren"], ["Beren", "Wormen"], 
+      /*Schelp*/["Beren", "Tweekleppigen"], ["Beren", "Zeeslakken"], 
       /* --- GELEEDPOTIGEN --- */
       ["Beren", "Krill"], ["Beren", "Garnalen"], ["Beren", "Kreeften"], ["Beren", "Krabben"],
       /*Schelp*/ ["Beren", "Heremietkreeften"], 
       /* --- KLEIN LANDLEVEN --- */
       ["Beren", "Termieten"], ["Beren", "Pissebedden"], ["Beren", "Oerpolyneopteren"], ["Beren", "Duizendpoten"], 
-      ["Beren", "Spinnen"], ["Beren", "Zilvervisjes"], ["Beren", "Wandelende takken"], ["Beren", "Kakkerlakken"], 
-      ["Beren", "Oerhymeneopteren"], ["Beren", "Slakken"], ["Beren", "Libellen"], ["Beren", "Kevers"],
-      ["Beren", "Lieveheersbeestjes"], ["Beren", "Mieren"], ["Beren", "Wespen"], ["Beren", "Vliegen"],
-      ["Beren", "Krekels"], ["Beren", "Sprinkhanen"], ["Beren", "Muggen"], ["Beren", "Bijen"],
+      ["Beren", "Hooiwagens"], ["Beren", "Schorpioenen"], ["Beren", "Spinnen"], ["Beren", "Zilvervisjes"], 
+      ["Beren", "Wandelende takken"], ["Beren", "Kakkerlakken"], ["Beren", "Oerhymeneopteren"], ["Beren", "Slakken"],
+      ["Beren", "Libellen"], ["Beren", "Kevers"], ["Beren", "Lieveheersbeestjes"], ["Beren", "Mieren"], 
+      ["Beren", "Wespen"], ["Beren", "Vliegen"], ["Beren", "Krekels"], ["Beren", "Sprinkhanen"], ["Beren", "Muggen"], 
+      ["Beren", "Bijen"],
       /* --- PLANTEN --- */
       ["Beren", "Mos"], ["Beren", "Oervaatplanten"], ["Beren", "Varens"], ["Beren", "Oerzaadplanten"], 
-      ["Beren", "Oermagnoliden"], ["Beren", "Oermagnoliden"], 
+      ["Beren", "Oermagnoliden"], ["Beren", "Oermonocotylen"], ["Beren", "Oereudicoten"], ["Beren", "Gras"], 
+      ["Beren", "Oerfabiden"], ["Beren", "Oermalivden"], ["Beren", "Oercampanuliden"], ["Beren", "Oerericales"],
+      ["Beren", "Oerlamiden"], ["Beren", "Oercampanuliden"], ["Beren", "Vetplan ten"], ["Beren", "Brandnetels"],
+      ["Beren", "Agave"],  ["Beren", "Heide"], ["Beren", "Lavendel"], ["Beren", "Klavers"], ["Beren", "Waterriet"],
+      ["Beren", "Suikerriet"], ["Beren", "Venusvliegenvanger"], ["Beren", "Zonnedauw"],  
       /* --- BIOLOGIE --- */
       ["Beren", "Bot"], ["Beren", "Weefsel"], ["Beren", "Spieren"], ["Beren", "Wortels"], ["Beren", "Oog"],
-      ["Beren", "Bloed"], ["Beren", "Vleugels"], ["Beren", "Ei"], ["Beren", "Bloem"],
+      ["Beren", "Bloed"], ["Beren", "Vleugels"], ["Beren", "Blad"], ["Beren", "Ei"], ["Beren", "Bloem"],
+      /* --- SMAAKMAKERS --- */
+      ["Beren", "Truffels"], ["Beren", "Munt"], ["Beren", "Tijm"], ["Beren", "Mosterd"], ["Beren", "Knoflook"],
+      ["Beren", "Ui"], ["Beren", "Bieslook"],
+      /* --- BOMEN --- */
+      ["Beren", "Coniferen"], ["Beren", "Wilgen"], ["Beren", "Populieren"], ["Beren", "Berken"], ["Beren", "Beuken"],
+      ["Beren", "Eiken"],
+      /* --- GENOTWAREN --- */
+      ["Beren", "Honing"],
       /* --- FRUIT --- */
       ["Beren", "Druiven"], ["Beren", "Appels"], ["Beren", "Peren"], ["Beren", "Pruimen"], ["Beren", "Bosbessen"],
-      ["Beren", "Vijgen"], ["Beren", "Aardbeien"], ["Beren", "Kersen"], ["Beren", "Frambozen"]
+      ["Beren", "Vijgen"], ["Beren", "Aardbeien"], ["Beren", "Olijven"], ["Beren", "Abrikozen"], ["Beren", "Kersen"], 
+      ["Beren", "Perziken"], ["Beren", "Granaatappels"], ["Beren", "Mandarijnen"], ["Beren", "Guaves"], ["Beren", "Mango"],
+      ["Beren", "Papaja"], ["Beren", "Frambozen"], ["Beren", "Avocado"], ["Beren", "Lychee"], ["Beren", "Kaki"],
+      ["Beren", "Kiwi"], ["Beren", "Dadels"], ["Beren", "Sinaasappels"], ["Beren", "Citroenen"], ["Beren", "Limoenen"], 
+      /* --- GROENTEN --- */
+      ["Beren", "Komkommers"], ["Beren", "Meloenen"], ["Beren", "Watermeloenen"], ["Beren", "Pompoenen"], 
+      ["Beren", "Courgettes"], ["Beren", "Bieten"], ["Beren", "Spinazie"], ["Beren", "Cassave"], 
+      ["Beren", "Zoete aardappelen"], ["Beren", "Aubergines"], ["Beren", "Radijsjes"], ["Beren", "Kool"],
+      ["Beren", "Rababarber"], ["Beren", "Asperges"], ["Beren", "Prei"], ["Beren", "Paprika"], ["Beren", "Tomaten"],
+      ["Beren", "Aardappelen"], ["Beren", "Selderij"], ["Beren", "Venkel"], ["Beren", "Wortelen"], ["Beren", "Sla"],
+      ["Beren", "Andijvie"], ["Beren", "Broccoli"], ["Beren", "Bloemkool"], ["Beren", "Rode kool"], ["Beren", "Spruitjes"],
+      ["Beren", "Boerenkool"]
     ],
     output: [
       { naam: "Beren", naam_en: "Bears", icoon: "icons/Beren.png", map: "Carnivoren", 
@@ -17643,46 +17668,48 @@ const combinaties = [
   {
     input: [/* BLOED */
       /* --- WATERDIEREN --- */
-      ["Wolven", "Octopussen"],
+      ["Beren", "Inktvissen"], ["Beren", "Octopussen"],
       /* --- VISSEN --- */
-      ["Wolven", "Agnathen"], ["Wolven", "Karpers"], ["Wolven", "Oerstraalvinnigen"], ["Wolven", "Snoeken"], 
-      ["Wolven", "Meervallen"], ["Wolven", "Paling"], ["Wolven", "Goudvissen"], ["Wolven", "Tiktaalik"], 
-      ["Wolven", "Zalm"], ["Wolven", "Haring"], ["Wolven", "Makreel"], ["Wolven", "Forel"],
+      ["Beren", "Agnathen"], ["Beren", "Platvissen"], ["Beren", "Clownvissen"], ["Beren", "Doktersvissen"],
+      ["Beren", "Papegaaivissen"], ["Beren", "Karpers"], ["Beren", "Zeepaardjes"], ["Beren", "Vliegende vissen"], 
+      ["Beren", "Koraalduivels"], ["Beren", "Oerstraalvinnigen"], ["Beren", "Kabeljauwen"], ["Beren", "Snoeken"], 
+      ["Beren", "Meervallen"], ["Beren", "Paling"], ["Beren", "Goudvissen"], ["Beren", "Tiktaalik"], ["Beren", "Zalm"], 
+      ["Beren", "Haring"], ["Beren", "Makreel"], ["Beren", "Forel"],
       /* --- KLEIN LANDLEVEN --- */
-      ["Wolven", "Oertetrapoden"], ["Wolven", "Salamanders"], ["Wolven", "Kikkers"], ["Wolven", "Padden"],
+      ["Beren", "Oertetrapoden"], ["Beren", "Salamanders"], ["Beren", "Kikkers"], ["Beren", "Padden"],
       /* --- REPTIELEN --- */
-      ["Wolven", "Slangen"], ["Wolven", "Oersynapsiden"], ["Wolven", "Oerdiapsiden"], ["Wolven", "Oeranapsiden"], 
-      ["Wolven", "Pterosauriërs"], ["Wolven", "Lepidosauriërs"], ["Wolven", "Crurotarsi"], ["Wolven", "Oerdinosauriërs"], 
-      ["Wolven", "Gekko's"], ["Wolven", "Leguanen"], 
+      ["Beren", "Slangen"], ["Beren", "Oersynapsiden"], ["Beren", "Oerdiapsiden"], ["Beren", "Oeranapsiden"], 
+      ["Beren", "Schildpadden"], ["Beren", "Pterosauriërs"], ["Beren", "Lepidosauriërs"], ["Beren", "Crurotarsi"], 
+      ["Beren", "Oerdinosauriërs"], ["Beren", "Oermaniraptoren"], ["Beren", "Gekko's"], ["Beren", "Leguanen"], 
       /* --- ZOOGDIEREN --- */
-      ["Wolven", "Mollen"], ["Wolven", "Oercynodonten"], ["Wolven", "Oerplacentalia"], ["Wolven", "Oerbuideldieren"], 
-      ["Wolven", "Vleermuizen"], ["Wolven", "Klipdassen"], ["Wolven", "Slurfdieren"], ["Wolven", "Aardvarkens"], 
-      ["Wolven", "Luiaarden"], ["Wolven", "Miereneters"], ["Wolven", "Bevers"], ["Wolven", "Kangoeroes"], 
-      ["Wolven", "Wombats"], ["Wolven", "Koala"], ["Wolven", "Oerknaagdieren"], ["Wolven", "Gordeldieren"], 
-      ["Wolven", "Egels"], ["Wolven", "Konijnen"], ["Wolven", "Hazen"], ["Wolven", "Prairiehonden"], ["Wolven", "Ratten"],
-      ["Wolven", "Capibara"], ["Wolven", "Eekhoorns"], ["Wolven", "Muizen"], ["Wolven", "Hamsters"], 
-      ["Wolven", "Vogelbekdieren"], ["Wolven", "Spitsmuizen"],
+      ["Beren", "Mollen"], ["Beren", "Oercynodonten"], ["Beren", "Oerplacentalia"], ["Beren", "Oerbuideldieren"], 
+      ["Beren", "Vleermuizen"], ["Beren", "Klipdassen"], ["Beren", "Slurfdieren"], ["Beren", "Aardvarkens"], 
+      ["Beren", "Luiaarden"], ["Beren", "Miereneters"], ["Beren", "Bevers"], ["Beren", "Wombats"], ["Beren", "Koala"], 
+      ["Beren", "Oerknaagdieren"], ["Beren", "Gordeldieren"], ["Beren", "Egels"], ["Beren", "Konijnen"], 
+      ["Beren", "Hazen"], ["Beren", "Prairiehonden"], ["Beren", "Ratten"], ["Beren", "Capibara"], ["Beren", "Eekhoorns"], 
+      ["Beren", "Stekelvarkens"], ["Beren", "Muizen"], ["Beren", "Hamsters"], ["Beren", "Vogelbekdieren"], 
+      ["Beren", "Spitsmuizen"],
       /* --- VOGELS --- */
-      ["Wolven", "Pinguïns"], ["Wolven", "Duiven"], ["Wolven", "Zwanen"], ["Wolven", "Ganzen"], ["Wolven", "Eenden"], 
-      ["Wolven", "Meeuwen"], ["Wolven", "Flamingo"], ["Wolven", "Mussen"], ["Wolven", "Kippen"], ["Wolven", "Fazanten"],
-      ["Wolven", "Kraaien"], ["Wolven", "Pauwen"], 
+      ["Beren", "Pinguïns"], ["Beren", "Duiven"], ["Beren", "Zwanen"], ["Beren", "Ganzen"], ["Beren", "Eenden"], 
+      ["Beren", "Meeuwen"], ["Beren", "Flamingo"], ["Beren", "Mussen"], ["Beren", "Kippen"], ["Beren", "Fazanten"],
+      ["Beren", "Kraaien"], ["Beren", "Pauwen"], 
       /* --- CARNIVOREN --- */
-      ["Wolven", "Oerhondachtigen"], ["Wolven", "Oerkatachtigen"], ["Wolven", "Zeehonden"], ["Wolven", "Zeeleeuwen"],
-      ["Wolven", "Otters"], ["Wolven", "Dassen"], ["Wolven", "Wasberen"], ["Wolven", "Marters"], ["Wolven", "Wezels"],
-      ["Wolven", "Lynxen"], ["Wolven", "Katten"], ["Wolven", "Stokstaartjes"], ["Wolven", "Civetkatten"],
-      ["Wolven", "Fossa"], ["Wolven", "Cheeta"], ["Wolven", "Vossen"], ["Wolven", "Honden"], 
+      ["Beren", "Oerhondachtigen"], ["Beren", "Oerkatachtigen"], ["Beren", "Zeehonden"], ["Beren", "Zeeleeuwen"],
+      ["Beren", "Otters"], ["Beren", "Dassen"], ["Beren", "Wasberen"], ["Beren", "Marters"], ["Beren", "Wezels"],
+      ["Beren", "Lynxen"], ["Beren", "Poema"], ["Beren", "Katten"], ["Beren", "Stokstaartjes"], ["Beren", "Civetkatten"],
+      ["Beren", "Fossa"], ["Beren", "Cheeta"], ["Beren", "Luipaarden"], ["Beren", "Vossen"], ["Beren", "Honden"], 
       /* --- PRIMATEN --- */
-      ["Wolven", "Oerprimaten"], ["Wolven", "Lemuren"], ["Wolven", "Makaken"], ["Wolven", "Oermensapen"],
-      ["Wolven", "Neusapen"], ["Wolven", "Langoeren"], ["Wolven", "Bavianen"], ["Wolven", "Galago"],
-      ["Wolven", "Spookdiertjes"], ["Wolven", "Kapucijnapen"], ["Wolven", "Slingerapen"], ["Wolven", "Brulapen"],
-      ["Wolven", "Saki"], ["Wolven", "Gibbons"], ["Wolven", "Bonobo"], ["Wolven", "Lori"],
+      ["Beren", "Oerprimaten"], ["Beren", "Lemuren"], ["Beren", "Makaken"], ["Beren", "Oermensapen"],
+      ["Beren", "Neusapen"], ["Beren", "Langoeren"], ["Beren", "Bavianen"], ["Beren", "Galago"],
+      ["Beren", "Spookdiertjes"], ["Beren", "Kapucijnapen"], ["Beren", "Slingerapen"], ["Beren", "Brulapen"],
+      ["Beren", "Saki"], ["Beren", "Gibbons"], ["Beren", "Bonobo"], ["Beren", "Lori"],
       /* --- HOEFDIEREN --- */
-      ["Wolven", "Oerevenhoevigen"], ["Wolven", "Oeronevenhoevigen"], ["Wolven", "Tapirs"], ["Wolven", "Gaffelantilopes"], 
-      ["Wolven", "Okapi"], ["Wolven", "Gnoes"], ["Wolven", "Gazellen"], ["Wolven", "Runderen"], ["Wolven", "Geiten"],
-      ["Wolven", "Schapen"], ["Wolven", "Ezels"], ["Wolven", "Zebra"], ["Wolven", "Rendieren"], ["Wolven", "Lama"],
-      ["Wolven", "Alpaca"], ["Wolven", "Steenbokken"], ["Wolven", "Kamelen"], ["Wolven", "Drommedarissen"],
-      ["Wolven", "Elanden"], ["Wolven", "Zwijnen"], ["Wolven", "Herten"], ["Wolven", "Impala"], ["Wolven", "Paarden"],
-      ["Wolven", "Bizons"], ["Wolven", "Koeien"], ["Wolven", "Varkens"]   
+      ["Beren", "Oerevenhoevigen"], ["Beren", "Oeronevenhoevigen"], ["Beren", "Tapirs"], ["Beren", "Gaffelantilopes"], 
+      ["Beren", "Okapi"], ["Beren", "Gnoes"], ["Beren", "Gazellen"], ["Beren", "Runderen"], ["Beren", "Geiten"],
+      ["Beren", "Schapen"], ["Beren", "Ezels"], ["Beren", "Zebra"], ["Beren", "Rendieren"], ["Beren", "Lama"],
+      ["Beren", "Alpaca"], ["Beren", "Steenbokken"], ["Beren", "Kamelen"], ["Beren", "Drommedarissen"],
+      ["Beren", "Elanden"], ["Beren", "Zwijnen"], ["Beren", "Herten"], ["Beren", "Impala"], ["Beren", "Paarden"],
+      ["Beren", "Bizons"], ["Beren", "Koeien"], ["Beren", "Varkens"]   
     ],
     output: [
       { naam: "Beren", naam_en: "Bears", icoon: "icons/Beren.png", map: "Carnivoren", 
@@ -21880,14 +21907,15 @@ const combinaties = [
       ["Flamingo", "Tweekleppigen"], ["Flamingo", "Zeeslakken"],
       ["Reigers", "Tweekleppigen"],
       ["Kraaien", "Tweekleppigen"], ["Kraaien", "Zeeslakken"],
-      /* --- ZOOGDIEREN --- */
+      /* --- CARNIVOREN --- */
       ["Walrussen", "Tweekleppigen"], ["Walrussen", "Zeeslakken"],
       ["Zeehonden", "Tweekleppigen"], ["Zeehonden", "Zeeslakken"], 
       ["Zeehonden", "Nautilussen"], ["Zeehonden", "Heremietkreeften"],
       ["Zeeleeuwen", "Tweekleppigen"], ["Zeeleeuwen", "Zeeslakken"], 
       ["Zeeleeuwen", "Nautilussen"], ["Zeeleeuwen", "Heremietkreeften"],
       ["Otters", "Tweekleppigen"], ["Otters", "Zeeslakken"], ["Otters", "Nautilussen"], ["Otters", "Heremietkreeften"],
-      ["Dassen", "Tweekleppigen"], ["Dassen", "Zeeslakken"]
+      ["Dassen", "Tweekleppigen"], ["Dassen", "Zeeslakken"],
+      ["Beren", "Tweekleppigen"], ["Beren", "Zeeslakken"], ["Beren", "Heremietkreeften"]
     ],
     output: [
       { naam: "Schelp", naam_en: "Shell", icoon: "icons/Schelp.png", map: "Biologie", 
