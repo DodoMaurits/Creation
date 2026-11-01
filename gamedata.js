@@ -17751,8 +17751,9 @@ const combinaties = [
       ["Wasberen", "Vlinders"], ["Wasberen", "Krekels"], ["Wasberen", "Sprinkhanen"], ["Wasberen", "Muggen"], 
       ["Wasberen", "Bijen"],
       /* --- BIOLOGIE --- */
-      ["Wasberen", "Weefsel"], ["Wasberen", "Spieren"], ["Wasberen", "Wortels"], ["Wasberen", "Oog"],
-      ["Wasberen", "Bloed"], ["Wasberen", "Vleugels"], ["Wasberen", "Blad"], ["Wasberen", "Ei"], ["Wasberen", "Zaadjes"],
+      ["Wasberen", "Detritus"], ["Wasberen", "Weefsel"], ["Wasberen", "Spieren"], ["Wasberen", "Wortels"], 
+      ["Wasberen", "Oog"], ["Wasberen", "Bloed"], ["Wasberen", "Vleugels"], ["Wasberen", "Blad"], ["Wasberen", "Ei"], 
+      ["Wasberen", "Zaadjes"],
       /* --- SMAAKMAKERS --- */
       ["Wasberen", "Truffels"], ["Wasberen", "Munt"], ["Wasberen", "Tijm"], ["Wasberen", "Mosterd"], 
       ["Wasberen", "Knoflook"], ["Wasberen", "Ui"], ["Wasberen", "Bieslook"],
@@ -17872,8 +17873,8 @@ const combinaties = [
       ["Marters", "Agave"], ["Marters", "Heide"], ["Marters", "Lavendel"], ["Marters", "Klavers"], 
       ["Marters", "Waterriet"], ["Marters", "Suikerriet"], ["Marters", "Venusvliegenvanger"], ["Marters", "Zonnedauw"],
       /* --- BIOLOGIE --- */
-      ["Marters", "Weefsel"], ["Marters", "Spieren"], ["Marters", "Wortels"], ["Marters", "Oog"], ["Marters", "Bloed"], 
-      ["Marters", "Vleugels"], ["Marters", "Blad"], ["Marters", "Ei"],
+      ["Marters", "Detritus"], ["Marters", "Weefsel"], ["Marters", "Spieren"], ["Marters", "Wortels"], ["Marters", "Oog"],
+      ["Marters", "Bloed"], ["Marters", "Vleugels"], ["Marters", "Blad"], ["Marters", "Ei"],
       /* --- SMAAKMAKERS --- */
       ["Marters", "Truffels"], ["Marters", "Mosterd"], ["Marters", "Knoflook"], ["Marters", "Ui"], ["Marters", "Bieslook"],
       /* --- GENOTWAREN --- */
@@ -17932,6 +17933,82 @@ const combinaties = [
       { naam: "Marters", naam_en: "Martens", icoon: "icons/Marters.png", map: "Carnivoren", 
         quote: `The marten moves like a thought through the branches—quick, silent, and almost never fully seen
         <br><br>- J.A. Baker`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ WEZELS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Wezels", "Wormen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wezels", "Luizen"], ["Wezels", "Mijten"], ["Wezels", "Teken"], ["Wezels", "Termieten"], 
+      ["Wezels", "Pissebedden"], ["Wezels", "Oerpolyneopteren"], ["Wezels", "Duizendpoten"], ["Wezels", "Hooiwagens"],
+      ["Wezels", "Spinnen"], ["Wezels", "Zilvervisjes"], ["Wezels", "Wandelende takken"], ["Wezels", "Kakkerlakken"], 
+      ["Wezels", "Oerhymeneopteren"], ["Wezels", "Slakken"], ["Wezels", "Libellen"], ["Wezels", "Kevers"], 
+      ["Wezels", "Lieveheersbeestjes"], ["Wezels", "Mieren"], ["Wezels", "Vliegen"], ["Wezels", "Vlinders"], 
+      ["Wezels", "Krekels"], ["Wezels", "Sprinkhanen"], ["Wezels", "Muggen"], 
+      /* --- BIOLOGIE --- */
+      ["Wezels", "Detritus"], ["Wezels", "Weefsel"], ["Wezels", "Spieren"], ["Wezels", "Oog"], ["Wezels", "Bloed"], 
+      ["Wezels", "Vleugels"],
+      /* --- GENOTWAREN --- */
+      ["Wezels", "Honing"],
+      /* --- FRUIT --- */
+      ["Wezels", "Bosbessen"], ["Wezels", "Aardbeien"], ["Wezels", "Frambozen"]
+    ],
+    output: [
+      { naam: "Wezels", naam_en: "Weasels", icoon: "icons/Wezels.png", map: "Carnivoren", 
+        quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
+        <br><br>- Chris Duckworth`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Wezels", "Agnathen"], ["Wezels", "Oerstraalvinnigen"], ["Wezels", "Goudvissen"], ["Wezels", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Wezels", "Oertetrapoden"], ["Wezels", "Salamanders"], ["Wezels", "Kikkers"], ["Wezels", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Wezels", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Wezels", "Mollen"], ["Wezels", "Oercynodonten"], ["Wezels", "Oerplacentalia"], ["Wezels", "Oerbuideldieren"], 
+      ["Wezels", "Vleermuizen"], ["Wezels", "Oerknaagdieren"], ["Wezels", "Konijnen"], ["Wezels", "Prairiehonden"], 
+      ["Wezels", "Ratten"], ["Wezels", "Eekhoorns"], ["Wezels", "Muizen"], ["Wezels", "Hamsters"], 
+      ["Wezels", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Wezels", "Duiven"], ["Wezels", "Zwaluwen"], ["Wezels", "Mussen"], ["Wezels", "Kippen"], ["Wezels", "Spechten"], 
+      ["Wezels", "Vinken"], ["Wezels", "Fazanten"], ["Marters", "Kieviten"], ["Marters", "Kanaries"], 
+      /* --- PRIMATEN --- */
+      ["Wezels", "Galago"], ["Wezels", "Spookdiertjes"]
+    ],
+    output: [
+      { naam: "Wezels", naam_en: "Weasels", icoon: "icons/Wezels.png", map: "Carnivoren", 
+        quote: `Weasels are slender predators adapted to hunting in narrow tunnels and dense vegetation
+        <br><br>- Chris Duckworth`
       },
       { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
