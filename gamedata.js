@@ -18057,6 +18057,94 @@ const combinaties = [
         <br><br>- Luis Sepúlveda`
       }
     ]
+  }, /* ------------------ LYNXEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Lynxen", "Wormen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Lynxen", "Termieten"], 
+      ["Lynxen", "Pissebedden"], ["Lynxen", "Oerpolyneopteren"], ["Lynxen", "Duizendpoten"], ["Lynxen", "Hooiwagens"],
+      ["Lynxen", "Spinnen"], ["Lynxen", "Zilvervisjes"], ["Lynxen", "Wandelende takken"], ["Lynxen", "Kakkerlakken"], 
+      ["Lynxen", "Oerhymeneopteren"], ["Lynxen", "Slakken"], ["Lynxen", "Libellen"], ["Lynxen", "Kevers"], 
+      ["Lynxen", "Lieveheersbeestjes"], ["Lynxen", "Mieren"], ["Lynxen", "Vliegen"], ["Lynxen", "Vlinders"], 
+      ["Lynxen", "Krekels"], ["Lynxen", "Sprinkhanen"], ["Lynxen", "Muggen"], 
+      /* --- BIOLOGIE --- */
+      ["Lynxen", "Detritus"], ["Lynxen", "Weefsel"], ["Lynxen", "Spieren"], ["Lynxen", "Oog"], ["Lynxen", "Vleugels"],
+      ["Lynxen", "Ei"]
+    ],
+    output: [
+      { naam: "Lynxen", naam_en: "Lynxes", icoon: "icons/Lynxen.png", map: "Carnivoren", 
+        quote: `The lynx belongs to deep forests and winter silence, where even its footsteps seem reluctant to remain
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Lynxen", "Agnathen"], ["Lynxen", "Platvissen"], ["Lynxen", "Piranha"], ["Lynxen", "Clownvissen"],
+      ["Lynxen", "Doktersvissen"], ["Lynxen", "Papegaaivissen"], ["Lynxen", "Karpers"], ["Lynxen", "Zeepaardjes"],
+      ["Lynxen", "Vliegende vissen"], ["Lynxen", "Koraalduivels"], ["Lynxen", "Oerstraalvinnigen"], 
+      ["Lynxen", "Kabeljauwen"], ["Lynxen", "Snoeken"], ["Lynxen", "Meervallen"], ["Lynxen", "Paling"],
+      ["Lynxen", "Goudvissen"], ["Lynxen", "Haring"], ["Lynxen", "Makreel"], ["Lynxen", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Lynxen", "Oertetrapoden"], ["Lynxen", "Salamanders"], ["Lynxen", "Kikkers"], ["Lynxen", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Lynxen", "Slangen"], ["Lynxen", "Oersynapsiden"], ["Lynxen", "Oerdiapsiden"], ["Lynxen", "Oeranapsiden"],
+      ["Lynxen", "Pterosauriërs"], ["Lynxen", "Lepidosauriërs"], ["Lynxen", "Crurotarsi"], ["Lynxen", "Oerdinosauriërs"],
+      ["Lynxen", "Oermaniraptoren"], ["Lynxen", "Gekko's"], ["Lynxen", "Leguanen"],
+      /* --- ZOOGDIEREN --- */
+      ["Lynxen", "Mollen"], ["Lynxen", "Oercynodonten"], ["Lynxen", "Oerplacentalia"], ["Lynxen", "Oerbuideldieren"], 
+      ["Lynxen", "Vleermuizen"], ["Lynxen", "Klipdassen"], ["Lynxen", "Luiaarden"], ["Lynxen", "Bevers"], 
+      ["Lynxen", "Koala"], ["Lynxen", "Oerknaagdieren"], ["Lynxen", "Egels"], ["Lynxen", "Konijnen"], 
+      ["Lynxen", "Hazen"], ["Lynxen", "Prairiehonden"], ["Lynxen", "Ratten"], ["Lynxen", "Eekhoorns"], 
+      ["Lynxen", "Muizen"], ["Lynxen", "Hamsters"], ["Lynxen", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Lynxen", "Archaeopteryx"], ["Lynxen", "Pinguïns"], ["Lynxen", "Uilen"], ["Lynxen", "Duiven"], 
+      ["Lynxen", "Zwaluwen"], ["Lynxen", "Spreeuwen"], ["Lynxen", "Mussen"], ["Lynxen", "Kippen"], ["Lynxen", "Spechten"], 
+      ["Lynxen", "Vinken"], ["Lynxen", "Fazanten"], ["Lynxen", "Kraaien"], ["Lynxen", "Kolibries"], ["Lynxen", "Pauwen"], 
+      ["Lynxen", "Papegaaien"], ["Lynxen", "Kieviten"], ["Lynxen", "Secretarisvogels"], ["Lynxen", "Kanaries"], 
+      /* --- CARNIVOREN --- */
+      ["Lynxen", "Oerkatachtigen"], ["Lynxen", "Otters"], ["Lynxen", "Wasberen"], ["Lynxen", "Marters"], 
+      ["Lynxen", "Wezels"], ["Lynxen", "Katten"], ["Lynxen", "Stokstaartjes"], ["Lynxen", "Vossen"],
+      /* --- PRIMATEN --- */
+      ["Lynxen", "Oerprimaten"], ["Lynxen", "Lemuren"], ["Lynxen", "Galago"], ["Lynxen", "Spookdiertjes"],
+      ["Lynxen", "Kapucijnapen"], ["Lynxen", "Lori"], 
+      /* --- HOEFDIEREN --- */
+      ["Lynxen", "Oerevenhoevigen"], ["Lynxen", "Oeronevenhoevigen"], ["Lynxen", "Geiten"], ["Lynxen", "Schapen"], 
+      ["Lynxen", "Rendieren"], ["Lynxen", "Herten"], ["Lynxen", "Impala"]
+    ],
+    output: [
+      { naam: "Lynxen", naam_en: "Lynxes", icoon: "icons/Lynxen.png", map: "Carnivoren", 
+        quote: `The lynx belongs to deep forests and winter silence, where even its footsteps seem reluctant to remain
+        <br><br>- J.A. Baker`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerkatachtigen", "Bos"],
