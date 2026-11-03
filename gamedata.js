@@ -18063,12 +18063,11 @@ const combinaties = [
       /* --- WATERDIEREN --- */
       ["Lynxen", "Wormen"], 
       /* --- KLEIN LANDLEVEN --- */
-      ["Lynxen", "Termieten"], 
-      ["Lynxen", "Pissebedden"], ["Lynxen", "Oerpolyneopteren"], ["Lynxen", "Duizendpoten"], ["Lynxen", "Hooiwagens"],
-      ["Lynxen", "Spinnen"], ["Lynxen", "Zilvervisjes"], ["Lynxen", "Wandelende takken"], ["Lynxen", "Kakkerlakken"], 
-      ["Lynxen", "Oerhymeneopteren"], ["Lynxen", "Slakken"], ["Lynxen", "Libellen"], ["Lynxen", "Kevers"], 
-      ["Lynxen", "Lieveheersbeestjes"], ["Lynxen", "Mieren"], ["Lynxen", "Vliegen"], ["Lynxen", "Vlinders"], 
-      ["Lynxen", "Krekels"], ["Lynxen", "Sprinkhanen"], ["Lynxen", "Muggen"], 
+      ["Lynxen", "Termieten"], ["Lynxen", "Pissebedden"], ["Lynxen", "Oerpolyneopteren"], ["Lynxen", "Duizendpoten"], 
+      ["Lynxen", "Hooiwagens"], ["Lynxen", "Spinnen"], ["Lynxen", "Zilvervisjes"], ["Lynxen", "Wandelende takken"], 
+      ["Lynxen", "Kakkerlakken"], ["Lynxen", "Oerhymeneopteren"], ["Lynxen", "Slakken"], ["Lynxen", "Libellen"], 
+      ["Lynxen", "Kevers"], ["Lynxen", "Lieveheersbeestjes"], ["Lynxen", "Mieren"], ["Lynxen", "Vliegen"], 
+      ["Lynxen", "Vlinders"], ["Lynxen", "Krekels"], ["Lynxen", "Sprinkhanen"], ["Lynxen", "Muggen"], 
       /* --- BIOLOGIE --- */
       ["Lynxen", "Detritus"], ["Lynxen", "Weefsel"], ["Lynxen", "Spieren"], ["Lynxen", "Oog"], ["Lynxen", "Vleugels"],
       ["Lynxen", "Ei"]
@@ -18129,6 +18128,96 @@ const combinaties = [
       { naam: "Lynxen", naam_en: "Lynxes", icoon: "icons/Lynxen.png", map: "Carnivoren", 
         quote: `The lynx belongs to deep forests and winter silence, where even its footsteps seem reluctant to remain
         <br><br>- J.A. Baker`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  }, /* ------------------ POEMA ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Poema", "Wormen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Poema", "Termieten"], ["Poema", "Pissebedden"], ["Poema", "Oerpolyneopteren"], ["Poema", "Duizendpoten"], 
+      ["Poema", "Hooiwagens"], ["Poema", "Spinnen"], ["Poema", "Zilvervisjes"], ["Poema", "Wandelende takken"], 
+      ["Poema", "Kakkerlakken"], ["Poema", "Oerhymeneopteren"], ["Poema", "Libellen"], ["Poema", "Kevers"], 
+      ["Poema", "Lieveheersbeestjes"], ["Poema", "Mieren"], ["Poema", "Vliegen"], ["Poema", "Vlinders"], 
+      ["Poema", "Krekels"], ["Poema", "Sprinkhanen"], ["Poema", "Muggen"], 
+      /* --- BIOLOGIE --- */
+      ["Poema", "Detritus"], ["Poema", "Bot"], ["Poema", "Weefsel"], ["Poema", "Spieren"], ["Poema", "Oog"], 
+      ["Poema", "Vleugels"], ["Poema", "Ei"]
+    ],
+    output: [
+      { naam: "Poema", naam_en: "Cougars", icoon: "icons/Poema.png", map: "Carnivoren", 
+        quote: `The puma walks alone across enormous distances, carrying the silence of the mountains with it
+        <br><br>- Luis Sepúlveda`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Poema", "Agnathen"], ["Poema", "Platvissen"], ["Poema", "Piranha"], ["Poema", "Clownvissen"],
+      ["Poema", "Doktersvissen"], ["Poema", "Papegaaivissen"], ["Poema", "Karpers"], ["Poema", "Zeepaardjes"],
+      ["Poema", "Vliegende vissen"], ["Poema", "Oerstraalvinnigen"], ["Poema", "Kabeljauwen"], ["Poema", "Snoeken"], 
+      ["Poema", "Meervallen"], ["Poema", "Paling"], ["Poema", "Goudvissen"], ["Poema", "Zalm"], ["Poema", "Haring"], 
+      ["Poema", "Makreel"], ["Poema", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Poema", "Oertetrapoden"], ["Poema", "Salamanders"], ["Poema", "Kikkers"], ["Poema", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Poema", "Slangen"], ["Poema", "Oersynapsiden"], ["Poema", "Oerdiapsiden"], ["Poema", "Oeranapsiden"],
+      ["Poema", "Pterosauriërs"], ["Poema", "Lepidosauriërs"], ["Poema", "Crurotarsi"], ["Poema", "Oerdinosauriërs"],
+      ["Poema", "Oermaniraptoren"], ["Poema", "Gekko's"], ["Poema", "Leguanen"],
+      /* --- ZOOGDIEREN --- */
+      ["Poema", "Mollen"], ["Poema", "Oercynodonten"], ["Poema", "Oerplacentalia"], ["Poema", "Oerbuideldieren"], 
+      ["Poema", "Vleermuizen"], ["Poema", "Klipdassen"], ["Poema", "Luiaarden"], ["Poema", "Bevers"], ["Poema", "Koala"], 
+      ["Poema", "Oerknaagdieren"], ["Poema", "Gordeldieren"], ["Poema", "Egels"], ["Poema", "Konijnen"], 
+      ["Poema", "Hazen"], ["Poema", "Prairiehonden"], ["Poema", "Ratten"], ["Poema", "Capibara"], ["Poema", "Eekhoorns"], 
+      ["Poema", "Stekelvarkens"], ["Poema", "Muizen"], ["Poema", "Hamsters"], ["Poema", "Vogelbekdieren"], 
+      ["Poema", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Poema", "Archaeopteryx"], ["Poema", "Pinguïns"], ["Poema", "Uilen"], ["Poema", "Duiven"], ["Poema", "Zwaluwen"], 
+      ["Poema", "Spreeuwen"], ["Poema", "Mussen"], ["Poema", "Kippen"], ["Poema", "Spechten"], 
+      ["Poema", "Vinken"], ["Poema", "Fazanten"], ["Poema", "Kraaien"], ["Poema", "Kolibries"], ["Poema", "Pauwen"], 
+      ["Poema", "Papegaaien"], ["Poema", "Kieviten"], ["Poema", "Secretarisvogels"], ["Poema", "Kanaries"], 
+      /* --- CARNIVOREN --- */
+      ["Poema", "Oerkatachtigen"], ["Poema", "Otters"], ["Poema", "Wasberen"], ["Poema", "Marters"], ["Poema", "Wezels"], 
+      ["Poema", "Lynxen"], ["Poema", "Katten"], ["Poema", "Stokstaartjes"], ["Poema", "Vossen"], ["Poema", "Fossa"],
+      /* --- PRIMATEN --- */
+      ["Poema", "Oerprimaten"], ["Poema", "Lemuren"], ["Poema", "Makaken"], ["Poema", "Langoeren"], ["Poema", "Galago"], 
+      ["Poema", "Spookdiertjes"], ["Poema", "Kapucijnapen"], ["Poema", "Slingerapen"], ["Poema", "Brulapen"],
+      ["Poema", "Saki"], ["Poema", "Lori"], 
+      /* --- HOEFDIEREN --- */
+      ["Poema", "Oerevenhoevigen"], ["Poema", "Oeronevenhoevigen"], ["Poema", "Gaffelantilopes"], ["Poema", "Gnoes"], 
+      ["Poema", "Gazellen"], ["Poema", "Geiten"], ["Poema", "Schapen"], ["Poema", "Rendieren"], ["Poema", "Lama"],
+      ["Poema", "Alpaca"],  ["Poema", "Herten"], ["Poema", "Impala"]
+    ],
+    output: [
+      { naam: "Poema", naam_en: "Cougars", icoon: "icons/Poema.png", map: "Carnivoren", 
+        quote: `The puma walks alone across enormous distances, carrying the silence of the mountains with it
+        <br><br>- Luis Sepúlveda`
       },
       { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
         quote: `We are linked by blood, and blood is memory without language
