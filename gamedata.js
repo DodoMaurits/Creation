@@ -18334,6 +18334,96 @@ const combinaties = [
         <br><br>- Nhat Hanh`
       }
     ]
+  }, /* ------------------ STOKSTAARTJES ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Stokstaartjes", "Wormen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Stokstaartjes", "Termieten"], ["Stokstaartjes", "Pissebedden"], ["Stokstaartjes", "Oerpolyneopteren"], 
+      ["Stokstaartjes", "Duizendpoten"], ["Stokstaartjes", "Hooiwagens"], ["Stokstaartjes", "Spinnen"], 
+      ["Stokstaartjes", "Zilvervisjes"], ["Stokstaartjes", "Wandelende takken"], ["Stokstaartjes", "Kakkerlakken"], 
+      ["Stokstaartjes", "Oerhymeneopteren"], ["Stokstaartjes", "Slakken"], ["Stokstaartjes", "Libellen"], 
+      ["Stokstaartjes", "Kevers"], ["Stokstaartjes", "Lieveheersbeestjes"], ["Stokstaartjes", "Mieren"], 
+      ["Stokstaartjes", "Vliegen"], ["Stokstaartjes", "Vlinders"], ["Stokstaartjes", "Krekels"], 
+      ["Stokstaartjes", "Sprinkhanen"], ["Stokstaartjes", "Muggen"], 
+      /* --- BIOLOGIE --- */
+      ["Stokstaartjes", "Detritus"], ["Stokstaartjes", "Weefsel"], ["Stokstaartjes", "Spieren"], 
+      ["Stokstaartjes", "Wortels"], ["Stokstaartjes", "Oog"], ["Stokstaartjes", "Vleugels"], ["Stokstaartjes", "Ei"],
+      /* --- FRUIT --- */
+      ["Stokstaartjes", "Druiven"], ["Stokstaartjes", "Appels"], ["Stokstaartjes", "Peren"], ["Stokstaartjes", "Pruimen"],
+      ["Stokstaartjes", "Bosbessen"], ["Stokstaartjes", "Zuurzakken"], ["Stokstaartjes", "Vijgen"], 
+      ["Stokstaartjes", "Aaardbeien"], ["Stokstaartjes", "Abrikozen"], ["Stokstaartjes", "Kersen"], 
+      ["Stokstaartjes", "Perziken"], ["Stokstaartjes", "Granaatappels"], ["Stokstaartjes", "Mandarijnen"],
+      ["Stokstaartjes", "Guaves"], ["Stokstaartjes", "Mango"], ["Stokstaartjes", "Papaja"], 
+      ["Stokstaartjes", "Frambozen"], ["Stokstaartjes", "Bananen"], ["Stokstaartjes", "Lychee"], ["Stokstaartjes", "Kaki"],
+      ["Stokstaartjes", "Kiwi"], ["Stokstaartjes", "Dadels"], ["Stokstaartjes", "Sinaasappelen"],
+      ["Stokstaartjes", "Honing"] 
+    ],
+    output: [
+      { naam: "Stokstaartjes", naam_en: "Meerkats", icoon: "icons/Stokstaartjes.png", map: "Carnivoren", 
+        quote: `Meerkats depend on constant communication within the group, where one stands guard while others feed
+        <br><br>- Tim Clutton-Brock`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Stokstaartjes", "Agnathen"], ["Stokstaartjes", "Clownvissen"], ["Stokstaartjes", "Doktersvissen"], 
+      ["Stokstaartjes", "Karpers"], ["Stokstaartjes", "Zeepaardjes"], ["Stokstaartjes", "Vliegende vissen"],
+      ["Stokstaartjes", "Oerstraalvinnigen"], ["Stokstaartjes", "Kabeljauwen"], ["Stokstaartjes", "Meervallen"], 
+      ["Stokstaartjes", "Paling"], ["Stokstaartjes", "Goudvissen"], ["Stokstaartjes", "Haring"], 
+      ["Stokstaartjes", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Stokstaartjes", "Oertetrapoden"], ["Stokstaartjes", "Salamanders"], ["Stokstaartjes", "Kikkers"], 
+      ["Stokstaartjes", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Stokstaartjes", "Slangen"], ["Stokstaartjes", "Gekko's"],
+      /* --- ZOOGDIEREN --- */
+      ["Stokstaartjes", "Mollen"], ["Stokstaartjes", "Oercynodonten"], ["Stokstaartjes", "Oerplacentalia"], 
+      ["Stokstaartjes", "Oerbuideldieren"], ["Stokstaartjes", "Klipdassen"], ["Stokstaartjes", "Oerknaagdieren"], 
+      ["Stokstaartjes", "Egels"], ["Stokstaartjes", "Prairiehonden"], ["Stokstaartjes", "Ratten"], 
+      ["Stokstaartjes", "Eekhoorns"], ["Stokstaartjes", "Muizen"], ["Stokstaartjes", "Hamsters"], 
+      ["Stokstaartjes", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Stokstaartjes", "Archaeopteryx"], ["Stokstaartjes", "Duiven"], ["Stokstaartjes", "Mussen"], 
+      ["Stokstaartjes", "Spechten"], ["Stokstaartjes", "Vinken"], ["Stokstaartjes", "Kolibries"], 
+      ["Stokstaartjes", "Kieviten"], ["Stokstaartjes", "Kanaries"], 
+      /* --- PRIMATEN --- */
+      ["Stokstaartjes", "Oerprimaten"], ["Stokstaartjes", "Galago"], ["Stokstaartjes", "Spookdiertjes"], 
+      ["Stokstaartjes", "Lori"]
+    ],
+    output: [
+      { naam: "Katten", naam_en: "Cats", icoon: "icons/Katten.png", map: "Carnivoren", 
+        quote: `A cat seated in a window is a piece of stillness that has chosen a shape
+        <br><br>- Natsume Soseki`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerkatachtigen", "Tropisch regenwoud"],
