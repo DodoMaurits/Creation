@@ -15262,7 +15262,7 @@ const combinaties = [
       ["Oerhondachtigen", "Spreeuwen"], ["Oerhondachtigen", "Mussen"], ["Oerhondachtigen", "Vinken"],
       ["Oerhondachtigen", "Kraaien"], ["Oerhondachtigen", "Kolibries"], ["Oerhondachtigen", "Kieviten"],
       ["Oerhondachtigen", "Kanaries"], 
-      /* --- CARNIVOREN --- */
+      /* --- HOEFDIEREN --- */
       ["Oerhondachtigen", "Oerevenhoevigen"], ["Oerhondachtigen", "Oeronevenhoevigen"]
     ],
     output: [
@@ -18448,6 +18448,111 @@ const combinaties = [
         quote: `The fossa is Madagascar’s top predator, an agile hunter moving silently through both forest floor and 
         canopy
         <br><br>- Nick Garbutt`
+      }
+    ]
+  }, /* ------------------ TIJGERS ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Tijgers", "Wormen"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Tijgers", "Pissebedden"], ["Tijgers", "Oerpolyneopteren"], ["Tijgers", "Duizendpoten"], 
+      ["Tijgers", "Hooiwagens"], ["Tijgers", "Spinnen"], ["Tijgers", "Wandelende takken"], ["Tijgers", "Kakkerlakken"], 
+      ["Tijgers", "Oerhymenopteren"], ["Tijgers", "Libellen"], ["Tijgers", "Kevers"], ["Tijgers", "Lieveheersbeestjes"], 
+      ["Tijgers", "Wespen"], ["Tijgers", "Vliegen"], ["Tijgers", "Vlinders"], ["Tijgers", "Krekels"], 
+      ["Tijgers", "Sprinkhanen"], ["Tijgers", "Muggen"], ["Tijgers", "Bijen"],
+      /* --- PLANTEN --- */
+      ["Tijgers", "Gras"],
+      /* --- BIOLOGIE --- */
+      ["Tijgers", "Detritus"], ["Tijgers", "Weefsel"], ["Tijgers", "Spieren"], ["Tijgers", "Oog"], 
+      ["Tijgers", "Vleugels"]
+    ],
+    output: [
+      { naam: "Tijgers", naam_en: "Tigers", icoon: "icons/Tijgers.png", map: "Carnivoren", 
+        quote: `The tiger does not strive to be fierce; it simply is what it is, and nothing in the forest resists it
+        <br><br>- Zhuang Zi`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Tijgers", "Agnathen"], ["Tijgers", "Platvissen"], ["Tijgers", "Pirhana"], ["Tijgers", "Clownvissen"], 
+      ["Tijgers", "Doktersvissen"], ["Tijgers", "Papegaaivissen"], ["Tijgers", "Karpers"], ["Tijgers", "Zeepaardjes"], 
+      ["Tijgers", "Vliegende vissen"], ["Tijgers", "Oerstraalvinnigen"], ["Tijgers", "Kabeljauwen"], 
+      ["Tijgers", "Snoeken"], ["Tijgers", "Meervallen"], ["Tijgers", "Paling"], ["Tijgers", "Goudvissen"], 
+      ["Tijgers", "Zalm"], ["Tijgers", "Haring"], ["Tijgers", "Makreel"], ["Tijgers", "Forel"],    
+      /* --- KLEIN LANDLEVEN --- */
+      ["Tijgers", "Oertetrapoden"], ["Tijgers", "Salamanders"], ["Tijgers", "Kikkers"], ["Tijgers", "Padden"],
+      /* --- REPTIELEN --- */
+      ["Tijgers", "Slangen"], ["Tijgers", "Oersynapsiden"], ["Tijgers", "Oerdiapsiden"], ["Tijgers", "Oeranapsiden"],
+      ["Tijgers", "Pterosauriërs"], ["Tijgers", "Lepidosauriërs"], ["Tijgers", "Crurotarsi"], 
+      ["Tijgers", "Oerdinosauriërs"], ["Tijgers", "Oermaniraptoren"], ["Tijgers", "Gekko's"], ["Tijgers", "Leguanen"], 
+      /* --- ZOOGDIEREN --- */
+      ["Tijgers", "Mollen"], ["Tijgers", "Oercynodonten"], ["Tijgers", "Oerplacentalia"], ["Tijgers", "Oerbuideldieren"], 
+      ["Tijgers", "Vleermuizen"], ["Tijgers", "Oerknaagdieren"], ["Tijgers", "Gordeldieren"], ["Tijgers", "Egels"], 
+      ["Tijgers", "Konijnen"], ["Tijgers", "Hazen"], ["Tijgers", "Prairiehonden"], ["Tijgers", "Ratten"], 
+      ["Tijgers", "Capibara"], ["Tijgers", "Eekhoorns"], ["Tijgers", "Muizen"], ["Tijgers", "Hamsters"], 
+      ["Tijgers", "Vogelbekdieren"], ["Tijgers", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Tijgers", "Archaeopteryx"], ["Tijgers", "Pinguïns"], ["Tijgers", "Uilen"], ["Tijgers", "Duiven"], 
+      ["Tijgers", "Zwanen"], ["Tijgers", "Ganzen"], ["Tijgers", "Eenden"], ["Tijgers", "Zwaluwen"], 
+      ["Tijgers", "Spreeuwen"], ["Tijgers", "Ooievaars"], ["Tijgers", "Meeuwen"], ["Tijgers", "Aalscholvers"],
+      ["Tijgers", "Flamingo"], ["Tijgers", "Papegaaiduikers"], ["Tijgers", "Gieren"], ["Tijgers", "Reigers"],
+      ["Tijgers", "Mussen"], ["Tijgers", "Kippen"], ["Tijgers", "Spechten"], ["Tijgers", "Vinken"],
+      ["Tijgers", "Fazanten"], ["Tijgers", "Kraaien"], ["Tijgers", "Kolibries"], ["Tijgers", "Pauwen"],
+      ["Tijgers", "Papegaaien"], ["Tijgers", "Kieviten"], ["Tijgers", "Struisvogels"], ["Tijgers", "Secretarisvogels"],
+      ["Tijgers", "Kanaries"],
+      /* --- CARNIVOREN --- */
+      ["Tijgers", "Oerhondachtigen"], ["Tijgers", "Oerkatachtigen"], ["Tijgers", "Zeehonden"], ["Tijgers", "Zeeleeuwen"],
+      ["Tijgers", "Otters"], ["Tijgers", "Dassen"], ["Tijgers", "Wolven"], ["Tijgers", "Beren"], ["Tijgers", "Wasberen"],
+      ["Tijgers", "Marters"], ["Tijgers", "Wezels"], ["Tijgers", "Lynxen"], ["Tijgers", "Poema"], ["Tijgers", "Katten"],
+      ["Tijgers", "Stokstaartjes"], ["Tijgers", "Jaguars"], ["Tijgers", "Civetkatten"], ["Tijgers", "Fossa"],
+      ["Tijgers", "Hyena"], ["Tijgers", "Cheeta"], ["Tijgers", "Luipaarden"], ["Tijgers", "Vossen"], 
+      ["Tijgers", "Wilde honden"], ["Tijgers", "Zonneberen"], ["Tijgers", "Pandaberen"], ["Tijgers", "Honden"],
+      /* --- PRIMATEN --- */
+      ["Tijgers", "Oerprimaten"], ["Tijgers", "Lemuren"], ["Tijgers", "Makaken"], ["Tijgers", "Oermensapen"],
+      ["Tijgers", "Neusapen"], ["Tijgers", "Langoeren"], ["Tijgers", "Bavianen"], ["Tijgers", "Galago"],
+      ["Tijgers", "Spookdiertjes"], ["Tijgers", "Kapucijnapen"], ["Tijgers", "Slingerapen"], ["Tijgers", "Brulapen"],
+      ["Tijgers", "Saki"], ["Tijgers", "Gorilla"], ["Tijgers", "Chimpansees"], ["Tijgers", "Gibbons"],
+      ["Tijgers", "Orang-oetans"], ["Tijgers", "Bonobo"], ["Tijgers", "Lori"], ["Tijgers", "Mens"],
+      /* --- HOEFDIEREN --- */
+      ["Tijgers", "Oerevenhoevigen"], ["Tijgers", "Oeronevenhoevigen"], ["Tijgers", "Tapirs"], 
+      ["Tijgers", "Gaffelantilopes"], ["Tijgers", "Okapi"], ["Tijgers", "Giraffen"], ["Tijgers", "Gnoes"],
+      ["Tijgers", "Gazellen"], ["Tijgers", "Runderen"], ["Tijgers", "Geiten"], ["Tijgers", "Schapen"],
+      ["Tijgers", "Ezels"], ["Tijgers", "Zebra"], ["Tijgers", "Rendieren"], ["Tijgers", "Lama"], ["Tijgers", "Alpaca"],
+      ["Tijgers", "Steenbokken"], ["Tijgers", "Kamelen"], ["Tijgers", "Dromedarissen"], ["Tijgers", "Elanden"],
+      ["Tijgers", "Zwijnen"], ["Tijgers", "Herten"], ["Tijgers", "Impala"], ["Tijgers", "Paarden"], ["Tijgers", "Bizons"],
+      ["Tijgers", "Koeien"], ["Tijgers", "Varkens"]
+    ],
+    output: [
+      { naam: "Tijgers", naam_en: "Tigers", icoon: "icons/Tijgers.png", map: "Carnivoren", 
+        quote: `The tiger does not strive to be fierce; it simply is what it is, and nothing in the forest resists it
+        <br><br>- Zhuang Zi`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
       }
     ]
   },
