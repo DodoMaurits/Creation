@@ -18258,6 +18258,82 @@ const combinaties = [
         <br><br>- Luis Sepúlveda`
       }
     ]
+  }, /* ------------------ KATTEN ------------------ */
+  {
+    input: [
+      /* --- WATERDIEREN --- */
+      ["Katten", "Wormen"], ["Katten", "Oertrochozoa"], 
+      /* --- VISSEN --- */
+      ["Katten", "Lancetvisjes"], 
+      /* --- KLEIN LANDLEVEN --- */
+      ["Katten", "Termieten"], ["Katten", "Pissebedden"], ["Katten", "Oerpolyneopteren"], ["Katten", "Duizendpoten"], 
+      ["Katten", "Hooiwagens"], ["Katten", "Spinnen"], ["Katten", "Zilvervisjes"], ["Katten", "Wandelende takken"], 
+      ["Katten", "Kakkerlakken"], ["Katten", "Oerhymeneopteren"], ["Katten", "Libellen"], ["Katten", "Kevers"], 
+      ["Katten", "Lieveheersbeestjes"], ["Katten", "Mieren"], ["Katten", "Vliegen"], ["Katten", "Vlinders"], 
+      ["Katten", "Krekels"], ["Katten", "Sprinkhanen"], ["Katten", "Muggen"], 
+      /* --- BIOLOGIE --- */
+      ["Katten", "Detritus"], ["Katten", "Weefsel"], ["Katten", "Spieren"], ["Katten", "Oog"], 
+      ["Katten", "Vleugels"], ["Katten", "Ei"]
+    ],
+    output: [
+      { naam: "Katten", naam_en: "Cats", icoon: "icons/Katten.png", map: "Carnivoren", 
+        quote: `A cat seated in a window is a piece of stillness that has chosen a shape
+        <br><br>- Natsume Soseki`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+       quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+       find the point where these molecules became conscious
+       <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
+  },
+  {
+    input: [/* BLOED */
+      /* --- VISSEN --- */
+      ["Katten", "Agnathen"], ["Katten", "Clownvissen"], ["Katten", "Doktersvissen"], ["Katten", "Papegaaivissen"], 
+      ["Katten", "Karpers"], ["Katten", "Zeepaardjes"], ["Katten", "Vliegende vissen"], ["Katten", "Oerstraalvinnigen"], 
+      ["Katten", "Kabeljauwen"], ["Katten", "Meervallen"], ["Katten", "Paling"], ["Katten", "Goudvissen"], 
+      ["Katten", "Zalm"], ["Katten", "Haring"], ["Katten", "Makreel"], ["Katten", "Forel"],
+      /* --- KLEIN LANDLEVEN --- */
+      ["Katten", "Oertetrapoden"], ["Katten", "Salamanders"], ["Katten", "Kikkers"], ["Katten", "Padden"],
+      /* --- ZOOGDIEREN --- */
+      ["Katten", "Mollen"], ["Katten", "Oercynodonten"], ["Katten", "Oerplacentalia"], ["Katten", "Oerbuideldieren"], 
+      ["Katten", "Vleermuizen"], ["Katten", "Oerknaagdieren"], ["Katten", "Prairiehonden"], ["Katten", "Ratten"], 
+      ["Katten", "Eekhoorns"], ["Katten", "Muizen"], ["Katten", "Hamsters"], ["Katten", "Spitsmuizen"],
+      /* --- VOGELS --- */
+      ["Katten", "Archaeopteryx"], ["Katten", "Duiven"], ["Katten", "Zwaluwen"], ["Katten", "Spreeuwen"], 
+      ["Katten", "Mussen"], ["Katten", "Spechten"], ["Katten", "Vinken"], ["Katten", "Kolibries"], ["Katten", "Kieviten"],
+      ["Katten", "Kanaries"], 
+      /* --- CARNIVOREN --- */
+      ["Katten", "Stokstaartjes"],
+      /* --- PRIMATEN --- */
+      ["Katten", "Oerprimaten"], ["Katten", "Galago"], ["Katten", "Spookdiertjes"], ["Katten", "Lori"]
+    ],
+    output: [
+      { naam: "Katten", naam_en: "Cats", icoon: "icons/Katten.png", map: "Carnivoren", 
+        quote: `A cat seated in a window is a piece of stillness that has chosen a shape
+        <br><br>- Natsume Soseki`
+      },
+      { naam: "Bloed", naam_en: "Blood", icoon: "icons/Bloed.png", map: "Biologie",
+        quote: `We are linked by blood, and blood is memory without language
+        <br><br>- Joyce Oates`
+      },
+      { naam: "Glucose", naam_en: "Glucose", icoon: "icons/Glucose.png", map: "Biologie",
+        quote: `No matter how closely you examine the water, glucose, and electrolyte salts in the human brain, you can't 
+        find the point where these molecules became conscious
+        <br><br>- Nassim Taleb`
+      },
+      { naam: "Vreugde", naam_en: "Joy", icoon: "icons/Vreugde.png", map: "Brein", 
+        geluid: "sound/Vreugde.m4a",
+        quote: `Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy
+        <br><br>- Nhat Hanh`
+      }
+    ]
   },
   {
     input: ["Oerkatachtigen", "Tropisch regenwoud"],
