@@ -1374,7 +1374,7 @@ const combinaties = [
   {
     input: ["Regen", "Berg"],
     hint: `Bergen zouden glijbanen kunnen zijn van wolken naar de zee...`,
-    hint_en: `Mountains could be slides from the cluods to the sea...`,
+    hint_en: `Mountains could be slides from the clouds to the sea...`,
     output: [
       { naam: "Rivier", naam_en: "River", icoon: "icons/Rivier.png", map: "Water", 
         geluid: "sound/Water.m4a",
@@ -3413,6 +3413,10 @@ const combinaties = [
     ],
     hint: `Sommige dieren kunnen elkaars bloed wel drinken..`,
     hint_en: `Between certain animals, you will find bad blood..`,
+    vers: `Lees in naam van jouw Zorgdrager Die creëerde; <br>Die creëerde de mens uit een bloedklodder
+    <br><br>De Bloedklodder (96:1-2)`,
+    vers_en: `Read in the name of your creating Guardian, <br>who created man from a clot of blood
+    <br><br>The Clot of Blood (96:1-2)`,
     output: [
       { naam: "Inktvissen", naam_en: "Squids", icoon: "icons/Inktvissen.png", map: "Waterdieren", 
         geluid: "sound/Oceaan.m4a",
