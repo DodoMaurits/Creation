@@ -4,62 +4,80 @@ const combinaties = [
     input: ["Oerknal", "Kou"],
     hint: `Hm.. Wat zal er gebeuren wanneer energie de ruimte krijgt? Afkoelen dus...`,
     hint_en: `Hmm.. What will happen when energy gets some space? Cooling down, so to speak...`,
+    hint_ru: `Хм.. Что произойдет, когда у энергии появится немного пространства? Она, так сказать, остынет...`,
     tijd: 13_800_000_000,
     output: [
-      { naam: "Zwaartekracht", naam_en: "Gravity", icoon: "icons/Zwaartekracht.png", map: "Krachten",
+      { naam: "Zwaartekracht", naam_en: "Gravity", naam_ru: "Гравитация", 
+        icoon: "icons/Zwaartekracht.png", map: "Krachten",
         quote: `Gravity explains the motions of the planets, but it cannot explain who sets the planets in motion 
         <br><br>- Isaac Newton`
       },
-      { naam: "Straling", naam_en: "Radiation", icoon: "icons/Straling.png", map: "Krachten",
-        geluid: "sound/Druk.mp3", 
+      { naam: "Straling", naam_en: "Radiation", naam_ru: "Излучение", 
+        icoon: "icons/Straling.png", map: "Krachten", geluid: "sound/Druk.mp3", 
         quote: `A compassionate heart radiates rays of beauty that remove the clouds of million hearts 
         <br><br>- Amit Ray`
       },
-      { naam: "Quarks", naam_en:"Quarks", icoon: "icons/Quarks.png", map: "Chemie",
+      { naam: "Quarks", naam_en:"Quarks", naam_ru: "Кварки", 
+        icoon: "icons/Quarks.png", map: "Chemie",
         quote: `Every atom in your body is the same quark in different places at the same moment in time 
         <br><br>- David Eagleman`
       },
-      { naam: "Elektriciteit", naam_en: "Electricity", icoon: "icons/Elektriciteit.png", map: "Krachten",
-        geluid: "sound/Elektriciteit.mp3",
+      { naam: "Elektriciteit", naam_en: "Electricity", naam_ru: "Электричество", 
+        icoon: "icons/Elektriciteit.png", map: "Krachten", geluid: "sound/Elektriciteit.mp3",
         quote: `We're electrical items and when we die the electricity goes somewhere else 
         <br><br>- Dominic Monaghan`
       }
     ],
     vers: `Hebben degenen die niet geloven niet gezien dat de Hemelen<br>en de Aarde één geheel waren, 
-    en Wij ze vervolgens <br>van elkaar hebben gescheiden?
-    <br><br>De Profeten (21:30)`,
+    en Wij ze vervolgens <br>van elkaar hebben gescheiden?<br><br>De Profeten (21:30)`,
     vers_en: `Do not the Unbelievers see that the heavens and the earth were joined together, 
     before We clove them asunder? <br><br>The Prophets (21:30)`,
+    vers_ru: `Неужели неверующие не видят, что небеса и земля были единым целым, прежде чем Мы разделили их?
+    <br><br>Пророки (21:30)`,
     uitleg: {
       normal: {
-        titel: "SYMMETRIEBREKING", titel_en: "SYMMETRY BREAKS",
+        titel: "SYMMETRIEBREKING", titel_en: "SYMMETRY BREAKS", titel_ru: "Симметрия нарушается",
         tekst: `In een mum van tijd daalde de temperatuur tot 10 miljoen graden - te vergelijken met het binnenste van
-        een ster. De oerknal was ten einde maar, zoals water bevriest onder nul, was er viermaal een drempel overschreden. 
-        De vier natuurkrachten waren geboren...
+          een ster. De oerknal was ten einde maar, zoals water bevriest onder nul, was er viermaal een drempel 
+          overschreden. De vier natuurkrachten waren geboren...
         <br><br>Vrijwel meteen brak de zwaartekracht. Tegen de uitdijing van energie in, houdt deze natuurkracht 
-        energie en materie bij elkaar, als een natuurlijke aantrekkingskracht. 
+          energie en materie bij elkaar, als een natuurlijke aantrekkingskracht. 
         <br><br>Onder de 10<sup>28</sup> graden brak de sterke kernkracht. Op miniscule afstanden bindt het de kleinste 
-        deeltjes, genaamd quarks, tot atoomkernen.
+          deeltjes, genaamd quarks, tot atoomkernen.
         <br><br>Onder de 10<sup>15</sup> graden splitste de overgebleven elektrozwakke kracht zich in massa-dragende 
-        materie en massaloze straling. Massa remt beweging af, maar straling kan op lichtsnelheid bewegen en vormen 
-        aannemen als radiogolven, uv-straling, licht en kleur.
+          materie en massaloze straling. Massa remt beweging af, maar straling kan op lichtsnelheid bewegen en vormen 
+          aannemen als radiogolven, uv-straling, licht en kleur.
         <br><br>Onder de 10<sup>13</sup> graden viel de elektrozwakke kracht uiteen in zwakke kernkracht en 
-        elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's 
-        op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
-        
+          elektromagnetische kracht. De zwakke kernkracht zet energie om en wisselt lading en massa uit, terwijl plasma's 
+          op zoek naar neutrale combinaties knetterden van de elektriciteit.`,
         tekst_en: `In a split second, the temperature dropped to 10 million degrees - which is comparable to the interior
-        of stars. The Big Bang had come to an end, but much like water freezing below zero, a threshold had been crossed
-        four times. Each giving birth to one of the four forces of nature. 
+          of stars. The Big Bang had come to an end, but much like water freezing below zero, a threshold had been crossed
+          four times. Each giving birth to one of the four forces of nature. 
         <br><br>Gravity emerged almost immediately. Countering the expansion of energy, this force acts as a natural 
-        attraction, holding energy and matter together.
+          attraction, holding energy and matter together.
         <br><br>Below 10<sup>28</sup> degrees, the strong nuclear force emerges. On the tiniest distances, it binds the
-        smallest particles called quarks into atomic nuclei.
-        <br><br>Below 10<sup>15</sup> degrees, the remaining electroweak force splits into mass-bearing matter and nameless
-        radiation. While mass slows down movement, radiation can travel at the speed of light, taking forms such as radio
-        waves, ultraviolet radiation, light and colour.
+          smallest particles called quarks into atomic nuclei.
+        <br><br>Below 10<sup>15</sup> degrees, the remaining electroweak force splits into mass-bearing matter and 
+          nameless radiation. While mass slows down movement, radiation can travel at the speed of light, taking forms 
+          such as radio waves, ultraviolet radiation, light and colour.
         <br><br>Below 10<sup>13</sup> degrees, the electroweak force breaks apart into the weak nuclear force and the
-        electromagnetic force. The weak nuclear force facilitates the conversion of energy and the exchange of charge
-        and mass, while plasmas - striving toward neutral combinations - crackle like electricity.`
+          electromagnetic force. The weak nuclear force facilitates the conversion of energy and the exchange of charge
+          and mass, while plasmas - striving toward neutral combinations - crackle like electricity.`,
+        tekst_ru: `За доли секунды температура упала до 10 миллионов градусов — что сопоставимо с условиями в недрах 
+          звезд. Эпоха Большого взрыва подошла к концу, однако, подобно тому как вода замерзает при температуре ниже нуля, 
+          Вселенная прошла через четыре критических рубежа. Каждый из них привел к возникновению одной из четырех 
+          фундаментальных сил природы.
+        <br><br>Гравитация возникла практически сразу. Противодействуя расширению энергии, эта сила выступает в качестве 
+          естественного притяжения, удерживающего энергию и материю вместе.
+        <br><br>При температуре ниже 10<sup>28</sup> градусов возникает сильное ядерное взаимодействие. На сверхмалых 
+          расстояниях оно связывает мельчайшие частицы — кварки — в атомные ядра.
+        <br><br>При температуре ниже 10<sup>15</sup> градусов единое электрослабое взаимодействие разделяется на материю, 
+          обладающую массой, и излучение. Если масса замедляет движение, то излучение способно перемещаться со скоростью 
+          света, принимая формы радиоволн, ультрафиолетового излучения, видимого света и цвета.
+        <br><br>При температуре ниже 10<sup>13</sup> градусов электрослабое взаимодействие расщепляется на слабое ядерное
+          взаимодействие и электромагнитное взаимодействие. Слабое ядерное взаимодействие обеспечивает преобразование 
+          энергии, а также обмен зарядом и массой, в то время как плазма — стремясь к образованию нейтральных соединений
+          — искрится, подобно электричеству.`
       }
     }
   },
