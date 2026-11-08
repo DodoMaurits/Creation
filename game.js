@@ -53,6 +53,11 @@ const INTRO_HINTS = {
     openGroep: "open a map",
     openNogEen: "open another map",
     combinatie: "drag or click two elements<br>and create your new creation"
+  },
+  ru: {
+    openGroep: "откройте группу",
+    openNogEen: "откройте ещё одну группу",
+    combinatie: "перетащите или нажмите на два элемента,<br>чтобы создать твое новое творение"
   }
 };
 
@@ -546,6 +551,8 @@ function checkCombination() {
       if (!map) {
         map = {
           naam: newEl.map,
+          naam_en: MAP_NAMEN[newEl.map] || null,
+          naam_ru: MAP_NAMEN_RU[newEl.map] || null,
           icoon: groepsIconen[newEl.map] || "icons/default.png",
           elementen: []
         };
