@@ -23,7 +23,8 @@ document.body.classList.add("lang-" + TAAL);
 
 const RESET_TEKSTEN = {
   nl: { titel: "Resetten", vraag: "Weet je zeker dat je je voortgang wilt resetten?", ja: "Ja", nee: "Nee" },
-  en: { titel: "Reset", vraag: "Are you sure you want to reset your progress?", ja: "Yes", nee: "No" }
+  en: { titel: "Reset", vraag: "Are you sure you want to reset your progress?", ja: "Yes", nee: "No" },
+  ru: { titel: "Перезагрузить", vraag: "Вы уверены, что хотите сбросить свой прогресс?", ja: "Да", nee: "Нет" }
 };
 
 const R = RESET_TEKSTEN[TAAL];
@@ -33,8 +34,12 @@ document.getElementById("reset-ja").textContent = R.ja;
 document.getElementById("reset-nee").textContent = R.nee;
 
 const TIJD_TEKSTEN = {
-  nl: { miljard: "miljard jaar geleden", miljoen: "miljoen jaar geleden", duizend: "duizend jaar geleden", jaar: "jaar geleden", locale: "nl-NL" },
-  en: { miljard: "billion years ago", miljoen: "million years ago", duizend: "thousand years ago", jaar: "years ago", locale: "en-GB" }
+  nl: { miljard: "miljard jaar geleden", miljoen: "miljoen jaar geleden", duizend: "duizend jaar geleden", 
+       jaar: "jaar geleden", locale: "nl-NL" },
+  en: { miljard: "billion years ago", miljoen: "million years ago", duizend: "thousand years ago", 
+       jaar: "years ago", locale: "en-GB" },
+  ru: { miljard: "миллиарды лет назад", miljoen: "миллион лет назад", duizend: "тысячу лет назад", 
+       jaar: "лет назад", locale: "ru-RU" }
 };
 const TT = TIJD_TEKSTEN[TAAL];
 
@@ -99,6 +104,42 @@ const MAP_NAMEN = {
   Uitvindingen: "Inventions"
 };
 
+const MAP_NAMEN_RU = {
+  Heelal: "Вселенная",
+  Krachten: "Силы",
+  Chemie: "Химия",
+  Lucht: "Воздух",
+  Water: "Вода",
+  Vuur: "Огонь",
+  Aarde: "Земля",
+  Landschap: "Пейзаж",
+  "Pril leven": "Клеточная жизнь",
+  Biologie: "Биология",
+  Waterdieren: "Водные животные",
+  Brein: "Мозг",
+  Vissen: "Рыбы",
+  Geleedpotigen: "Членистоногие",
+  "Klein landleven": "Мелкие наземные существа",
+  Planten: "Растения",
+  Smaakmakers: "Ароматизаторы",
+  Materialen: "Материалы",
+  Bomen: "Деревья",
+  Reptielen: "Рептилии",
+  Samenleving: "Общество",
+  Zoogdieren: "Млекопитающие",
+  Vogels: "Птицы",
+  Bloemen: "Цветы",
+  Genotwaren: "Товары для удовольствия",
+  Fruit: "Фрукты",
+  Groenten: "Овощи",
+  Granen: "Злаки",
+  Zaden: "Семена",
+  Carnivoren: "Плотоядные",
+  Primaten: "Приматы",
+  Hoefdieren: "Копытные",
+  Uitvindingen: "Изобретения"
+};
+
 // ----- DOM -----
 const closedContainer = document.getElementById("closed-container");
 const leftSide = document.getElementById("left-side");
@@ -149,6 +190,7 @@ if (savedState) {
       map = {
         naam: el.map,
         naam_en: MAP_NAMEN[el.map] || null,
+        naam_ru: MAP_NAMEN_RU[el.map] || null,
         icoon: groepsIconen[el.map] || "icons/default.png",
         elementen: []
       };
@@ -190,7 +232,8 @@ const taalButton = document.getElementById("taal-button");
 const taalOpties = document.getElementById("taal-opties");
 const VLAGGEN = {
   nl: "afb/Vlag_NL.png",
-  en: "afb/Vlag_EN.jpg"
+  en: "afb/Vlag_EN.jpg",
+  ru: "afb/Vlag_RU.png"
 };
 taalButton.innerHTML = `<img src="${VLAGGEN[TAAL]}" alt="taal">`;
 
