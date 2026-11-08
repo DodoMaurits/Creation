@@ -86,24 +86,26 @@ const combinaties = [
     input: ["Quarks", "Kou"],
     hint: `Kou remt chaotische energie af... benieuwd wat de kleine bouwstenen gaan doen`,
     hint_en: `Cold slows down chaotic energy... curious what the tiniest building stones will do`, 
+    hint_ru: `Холод замедляет хаотничную энергию... интересно, как поведут себя мельчайшие строительные блоки`, 
     tijd: 13_700_620_000,
     output: [
-      { naam: "Atomen", naam_en: "Atoms", icoon: "icons/Atomen.png", map: "Chemie",
-        geluid: "sound/AngelHoog.wav",
+      { naam: "Atomen", naam_en: "Atoms", naam_ru: "Атомы",
+        icoon: "icons/Atomen.png", map: "Chemie", geluid: "sound/AngelHoog.wav",
         quote: `In reality, nothing but atoms and the void 
         <br><br>- Democritos`
       }
     ],
     uitleg: {
       threshold: {
-        titel: "Quarks op Aarde", titel_en: "Quarks on Earth",
+        titel: "Quarks op Aarde", titel_en: "Quarks on Earth", titel_ru: "Кварки на Земле",
         tekst: `Je moet eerst nog wat meer halen...<br>`,
         tekst_en: `You still need to create a bit more first...`,
+        tekst_ru: `Вам ещё нужно кое-что сначала создать...`,
         requirements: ["Quarks"]
       },
       normal: {
         achtergrond: "afb/atoomvorming.jpg",
-        titel: "ATOOMVORMING", titel_en: "ATOM FORMATION",
+        titel: "ATOOMVORMING", titel_en: "ATOM FORMATION", titel_ru: "ОБРАЗОВАНИЕ АТОМОВ",
         tekst: `
       <span>380.000 Aardse jaren na de oerknal koelde het heelal af tot een temperatuur van 2727 graden.</span>
       <span>Protonen, elektronen en neutronen kunnen nu met elkaar fuseren tot energieneutrale stabiele structuren: 
@@ -118,7 +120,6 @@ const combinaties = [
         elektronen. De drijvende kracht achter al deze activiteit is het feit dat elektronen negatieve ladingen hebben 
         en elkaar afstoten, maar ze worden aangetrokken door de positieve ladingen van protonen in hun eigen atoom óf
         in naburige atomen.</span>`,
-
         tekst_en: `
       <span>380.000 Earth years after the Big Bang, the universe reached a temperature of 2727 degrees.</span>
       <span>Protons, electrons, and neutrons can now fuse to form stable, electrically neutral structures: atoms.
@@ -132,23 +133,38 @@ const combinaties = [
       <span>Entirely new forms of matter emerge through the continuous formation and breaking of bonds between protons 
         and electrons. The driving force behind all this activity is the fact that electrons possess negative charges 
         and repel one another, yet they are drawn toward the positive charges of protons—whether within their own 
-        atom or in neighboring atoms.</span>`
+        atom or in neighboring atoms.</span>`,
+        tekst_ru: `
+      <span>Через 380 000 лет после Большого взрыва температура Вселенной достигла 2727 градусов.</span>
+      <span>Протоны, электроны и нейтроны теперь могут объединяться, образуя стабильные, электрически нейтральные 
+        структуры — атомы. С этого момента фотоны получили возможность свободно перемещаться сквозь электрически 
+        нейтральную туманность и темную материю. Астрономы до сих пор могут наблюдать энергию, высвободившуюся в тот 
+        момент, когда фотоны смогли покинуть плазму, — так называемое космическое фоновое излучение.</span>
+      <span>Вокруг атомного ядра, состоящего из одного или нескольких положительно заряженных протонов и — в ряде случаев
+        — нейтральных нейтронов, на значительном расстоянии движутся отрицательно заряженные электроны. На каждый 
+        положительно заряженный протон в ядре приходится один электрон. Все они удерживаются вместе электромагнитной 
+        силой в пределах так называемого электронного облака. Именно в этой области и происходят химические процессы.
+        </span>
+      <span>Совершенно новые формы материи возникают в результате непрерывного образования и разрыва связей между 
+        протонами и электронами. Движущей силой всех этих процессов является то, что электроны обладают отрицательным 
+        зарядом и отталкиваются друг от друга, однако при этом они притягиваются к положительным зарядам протонов — 
+        будь то в пределах того же атома или в соседних атомах.</span>`
       }
     }
   },
   {
     input: [
-      ["Atomen", "Warmte"], ["Atomen", "Elektriciteit"], 
-      ["Gas", "Warmte"]
+      ["Atomen", "Warmte"], ["Atomen", "Elektriciteit"], ["Gas", "Warmte"]
     ],
     hint: `Een gas kan zo heet worden dat atomen uit elkaar vallen in geladen deeltjes.`,
     hint_en: `Even gasses when heated up can fall apart into charged particles.`,
+    hint_ru: `Даже газы при нагревании могут распадаться на заряженные частицы.`,
     output: [
-      { naam: "Plasma", naam_en: "Plasma", icoon: "icons/Plasma.png", map: "Vuur",
-        geluid: "sound/Elektriciteit.mp3",
+      { naam: "Plasma", naam_en: "Plasma", naam_ru: "Плазма",
+        icoon: "icons/Plasma.png", map: "Vuur", geluid: "sound/Elektriciteit.mp3",
         quote: `Plasma seems to have the kinds of properties one would like for life. It's somewhat like liquid water - 
-        unpredictable and thus able to behave in an enormously complex fashion. It could probably carry as much information
-        as DNA does
+        unpredictable and thus able to behave in an enormously complex fashion. It could probably carry as much 
+        information as DNA does
         <br><br>- Freeman Dyson`
       }
     ]
@@ -157,23 +173,27 @@ const combinaties = [
     input: ["Atomen", "Straling"],
     hint: `Hm.. Wat als de straling sterk genoeg is atomen te splitsen?`,
     hint_en: `Hm.. What if radiation becomes strong enough to split atoms apart?`,
+    hint_ru: `Хм.. А что, если излучение станет достаточно сильным, чтобы расщепить атомы?`,
     tijd: 13_700_620_000,
     output: [
-      { naam: "Radioactiviteit", naam_en: "Radioactivity", icoon: "icons/Radioactiviteit.png", map: "Krachten",
-        geluid: "sound/Radioactiviteit.m4a",
+      { naam: "Radioactiviteit", naam_en: "Radioactivity", naam_ru: "Радиоактивность",
+        icoon: "icons/Radioactiviteit.png", map: "Krachten", geluid: "sound/Radioactiviteit.m4a",
         quote: `Nuclear power is one hell of a way to boil water 
         <br><br>- Albert Einstein`
       }
     ],
     uitleg: {
       normal: {
-        titel: "Radioactiviteit", titel_en: "Radioactivity",
+        titel: "Radioactiviteit", titel_en: "Radioactivity", titel_ru: "Радиоактивность",
         tekst: `Gamma-, röntgen- en hoogenergetische uv-straling zijn zo frequent, dat zij genoeg energie hebben om
         elektronen van atoomkernen te splitsen. Wanneer de frequentie hier hoog genoeg voor is, spreken wij van 
         radioactief.`,
         tekst_en: `Gamma rays, X-rays and high-energy ultraviolet radiation possess such high frequencies that they 
         possess enough energy to detach electrons from atomic nuclei. When the frequency is high enough for this to 
-        occur, we refer to it as radioactive.`
+        occur, we refer to it as radioactive.`,
+        tekst_ru: `Гамма-лучи, рентгеновские лучи и ультрафиолетовое излучение высоких энергий обладают настолько 
+        высокими частотами, что их энергии достаточно для отрыва электронов от атомных ядер. Когда частота оказывается 
+        достаточно высокой для того, чтобы это происходило, мы называем такое излучение радиоактивным.`
       }
     }
   },
@@ -181,10 +201,12 @@ const combinaties = [
     input: ["Atomen", "Zwaartekracht"],
     hint: `Laat de bouwstenen elkaar aantrekken, dan zal er pas echt iets zweven...`,
     hint_en: `When building blocks attract one another, something will truly levitate...`,
+    hint_ru: `Когда строительные блоки притягиваются друг к другу, что-то действительно будет левитировать...`,
     output: [
-      { naam: "Gas", naam_en: "Gas", icoon: "icons/Gas.png", map: "Lucht",
-      quote: `Hydrogen is a light, odorless gas, which, given enough time, turns into people 
-      <br><br>- Edward Harrison`
+      { naam: "Gas", naam_en: "Gas", naam_ru: "Газ",
+        icoon: "icons/Gas.png", map: "Lucht",
+        quote: `Hydrogen is a light, odorless gas, which, given enough time, turns into people 
+        <br><br>- Edward Harrison`
       }
     ]
   },
@@ -192,9 +214,10 @@ const combinaties = [
     input: ["Gas", "Kou"],
     hint: `Brrr.. zwevend onder 0 zal het bevriezen`,
     hint_en: `Brrr.. you know, below zero degrees Celsius, you will be frozen`,
+    hint_ru: `Бррр.. знаешь, при температуре ниже нуля градусов по Цельсию ты замерзнешь`,
     output: [
-      { naam: "IJs", naam_en: "Ice", icoon: "icons/IJs.png", map: "Water",
-        geluid: "sound/IJs.mp3",
+      { naam: "IJs", naam_en: "Ice", naam_ru: "Лёд",
+        icoon: "icons/IJs.png", map: "Water", geluid: "sound/IJs.mp3",
         quote: `Just as when water is frozen in to a form as ice and then melts so at the time of death, 
         there is no death. The spirit simply changes form
         <br><br>- Frederick Lenz`
@@ -205,10 +228,11 @@ const combinaties = [
     input: ["Gas", "Zwaartekracht"],
     hint: `Hoe meer opeengepakte massa, hoe groter de kans op een ontploffing`,
     hint_en: `The more mass accumulates, the greater the chance of an explosion`, 
+    hint_ru: `Чем больше накапливается массы, тем выше вероятность взрыва`, 
     tijd: 13_600_000_000,
     output: [
-      { naam: "Ster", naam_en: "Star", icoon: "icons/Ster.png", map: "Heelal",
-        geluid: "sound/Ster.m4a", 
+      { naam: "Ster", naam_en: "Star", naam_ru: "Звёзда",
+        icoon: "icons/Ster.png", map: "Heelal", geluid: "sound/Ster.m4a", 
         quote: `Every star may be a sun to someone 
         <br><br>- Carl Sagan`
       }
@@ -217,19 +241,25 @@ const combinaties = [
       normal: {
         titel: "A Star Is Born", titel_en: "A Star Is Born", 
         tekst: `Zwaartekracht werd sterker en sterker naarmate massa door afremming dichter bij elkaar kwam. Kubus voor
-        kubus werd het heelal korreliger en klonteriger. Bij het botsen van materie kwam opnieuw energie vrij dat lokaal
-        temperaturen opdreef. 
+          kubus werd het heelal korreliger en klonteriger. Bij het botsen van materie kwam opnieuw energie vrij dat lokaal
+          temperaturen opdreef. 
         <br><br>Klonterige gaswolken begonnen hun eigen hitte te produceren met als climax het bereiken van 
-        de 10 miljoen graden. Atomen vielen weer uit elkaar en plasma's knetterden weer van elektriciteit, waarbij
-        triljoenen protonen zich fuseerden tot heliumkernen. De enorme energie verhit de kern dusdanig dat deze uitzet en 
-        tegen de zwaartekracht in duwt. Zie daar, de eerste generatie sterren.`,
-
+          de 10 miljoen graden. Atomen vielen weer uit elkaar en plasma's knetterden weer van elektriciteit, waarbij
+          triljoenen protonen zich fuseerden tot heliumkernen. De enorme energie verhit de kern dusdanig dat deze uitzet 
+          en tegen de zwaartekracht in duwt. Zie daar, de eerste generatie sterren.`,
         tekst_en: `Gravity grew ever stronger as matter drew closer together when slowing down. Cube by cube, the universe
-        became more granular and clumped. Collisions between matter released energy, driving up local temperatures. 
+          became more granular and clumped. Collisions between matter released energy, driving up local temperatures. 
         <br><br>These clumps of gas began to generate their own heat, eventually reaching a climax at 10 million degrees. 
-        Atoms broke apart once more, and plasmas crackled with electricity as trillions of protons fused into helium 
-        nuclei. The immense energy heated the core to such an extent that it expanded, pushing outward against the force 
-        of gravity. And there you have it: the first generation of stars.`
+          Atoms broke apart once more, and plasmas crackled with electricity as trillions of protons fused into helium 
+          nuclei. The immense energy heated the core to such an extent that it expanded, pushing outward against the force 
+          of gravity. And there you have it: the first generation of stars.`,
+        tekst_en: `Гравитация становилась всё сильнее по мере того, как материя, замедляясь, сближалась. Вселенная 
+          становилась всё более зернистой, собираясь в отдельные сгустки. Столкновения между частицами материи 
+          высвобождали энергию, что приводило к росту локальной температуры.
+        <br><br>Эти сгустки газа начали вырабатывать собственное тепло, в конечном итоге достигнув температуры в 10 
+          миллионов градусов. Атомы вновь распались, плазма наполнилась электрическими разрядами, а триллионы протонов 
+          слились в ядра гелия. Огромная энергия разогрела ядро ​​настолько, что оно расширилось, преодолевая силу 
+          гравитации. И вот — перед вами первое поколение звезд.`
       }
     }
   },
@@ -244,9 +274,10 @@ const combinaties = [
     ],
     hint: `... ... ... BOEM!`,
     hint_en: `... ... ... BOOM!`,
+    hint_ru: `... ... ... БУМ!`,
     output: [
-      { naam: "Explosie", naam_en: "Explosion", icoon: "icons/Explosie.png", map: "Vuur",
-        geluid: "sound/ExplosieGroot.mp3",
+      { naam: "Explosie", naam_en: "Explosion", naam_ru: "Взрыв",
+        icoon: "icons/Explosie.png", map: "Vuur", geluid: "sound/ExplosieGroot.mp3",
         quote: `As in an explosion, I would erupt with all the wonderful things I saw and understood in this world
         <br><br>- Boris Pasternak`
       }
@@ -256,9 +287,10 @@ const combinaties = [
     input: ["Ster", "Warmte"],
     hint: `De corona is de extreemhete buitenlaag van de zon, waar het effect van de hitte zichtbaar wordt.`,
     hint_en: `Corona - the incredible hot outer layer of the Sun, where the effect of heat becomes visible.`,
+    hint_ru: `Корона - невероятно горячий внешний слой Солнца. где становится заметным воздействие жара.`,
     output: [
-      { naam: "Zonnewind", naam_en: "Solar wind", icoon: "icons/Zonnewind.png", map: "Vuur",
-        geluid: "sound/Druk.mp3", 
+      { naam: "Zonnewind", naam_en: "Solar wind", naam_ru: "Солнечный ветер",
+        icoon: "icons/Zonnewind.png", map: "Vuur", geluid: "sound/Druk.mp3", 
         quote: `The solar wind is a continuous outflow of charged particles from the Sun, shaping the space environment 
         throughout the solar system
         <br><br>- Eugene Parker`
@@ -269,14 +301,16 @@ const combinaties = [
     input: ["Ster", "Zwaartekracht"],
     hint: `Uiteindelijk verliest elke ster het gevecht van de natuurkrachten...`,
     hint_en: `Eventually, every star loses in the battle against the forces of nature...`,
+    hint_ru: `В конце концов, каждая звёзда проигрывает в битве с силами природы...`,
     tijd: 13_600_000_000,
     output: [
-      { naam: "IJzer", naam_en: "Iron", icoon: "icons/IJzer.png", map: "Chemie",
+      { naam: "IJzer", naam_en: "Iron", naam_ru: "Железо",
+        icoon: "icons/IJzer.png", map: "Chemie", 
         quote: `Do not wait to strike till the iron is hot but make it hot by striking 
         <br><br>- William Yeats`
       },
-      { naam: "Supernova", naam_en: "Supernova", icoon: "icons/Supernova.png", map: "Heelal",
-        geluid: "sound/ExplosieGroot.mp3",
+      { naam: "Supernova", naam_en: "Supernova", naam_ru: "Сверхновая",
+        icoon: "icons/Supernova.png", map: "Heelal", geluid: "sound/ExplosieGroot.mp3",
         quote: `A supernova is one of the most powerful explosions in the universe. 
         It's so luminous, it can be seen across billions of light years. 
         It releases as much energy in an instant as our sun will produce over its 10-billion-year lifetime
@@ -285,30 +319,40 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "Supernova", titel_en: "Supernova", 
+        titel: "Supernova", titel_en: "Supernova", titel_ru: "Сверхновая",
         tekst: `Wanneer sterren opbranden, bezwijkt de kern onder de eigen zwaartekracht. Door de implosie stijgt de 
-        temperatuur van de kern opnieuw, maar ditmaal met koele rode buitenlagen. Als deze rode reus genoeg massa heeft, 
-        drukt de zwaartekracht de kern zo sterk samen dat ze heter wordt dan ooit tevoren. Uiteindelijk verandert elke kern 
-        zo in een compacte ijzeren bol.
+          temperatuur van de kern opnieuw, maar ditmaal met koele rode buitenlagen. Als deze rode reus genoeg massa heeft, 
+          drukt de zwaartekracht de kern zo sterk samen dat ze heter wordt dan ooit tevoren. Uiteindelijk verandert elke
+          kern zo in een compacte ijzeren bol.
         <br><br>Stadia van inkrimpen en uitdijen volgen elkaar op tot echt geen energie meer kan worden opgewekt, waarna 
-        de buitenste lagen worden weggeblazen en een extreem dichte, witte dwerg overblijft. De zwaartekracht kan materie
-        aantrekken van een nabije ster en zo een explosie veroorzaken die zo heet kan zijn, dat het veel van de
-        resterende elementen uit het periodiek systeem kan creëren. 
+          de buitenste lagen worden weggeblazen en een extreem dichte, witte dwerg overblijft. De zwaartekracht kan 
+          materie aantrekken van een nabije ster en zo een explosie veroorzaken die zo heet kan zijn, dat het veel van de
+          resterende elementen uit het periodiek systeem kan creëren. 
         <br><br>Als dit niet het geval is, kan de kern in minder dan een seconde door de eigen extreme zwaartekracht met 
-        enorm geweld in elkaar smijten, en zo even veel energie produceren als een heel sterrenstelsel, waarbij de 
-        laatste zware elementen de ruimte in zijn geslingerd.`,
-
+          enorm geweld in elkaar smijten, en zo even veel energie produceren als een heel sterrenstelsel, waarbij de 
+          laatste zware elementen de ruimte in zijn geslingerd.`,
         tekst_en: `When stars burn out, their cores collapse under their own gravity. This implosion causes the core's 
-        temperature to rise once again, while the star develops cool, red outer layers. If this 'red giant' possesses 
-        sufficient mass, gravity compresses the core so intensely that it becomes hotter than ever before. Eventually,
-        the core transforms into a compact sphere of iron.
+          temperature to rise once again, while the star develops cool, red outer layers. If this 'red giant' possesses 
+          sufficient mass, gravity compresses the core so intensely that it becomes hotter than ever before. Eventually,
+          the core transforms into a compact sphere of iron.
         <br><br>Successive stages of contraction and expansion continue until no more energy can be generated; at this 
-        point, the outer layers are blown away, leaving behind an extremely dense white dwarf. Gravity may also pull in 
-        matter from a nearby star, triggering an explosion so intense that it can synthesize many of the remaining
-        elements found in the periodic table.
+          point, the outer layers are blown away, leaving behind an extremely dense white dwarf. Gravity may also pull in 
+          matter from a nearby star, triggering an explosion so intense that it can synthesize many of the remaining
+          elements found in the periodic table.
         <br><br>Alternatively, the core may collapse violently under its own extreme gravity in less than a second - 
-        releasing as much energy as an entire galaxy - and in the process, hurling the final heavy elements out into
-        space.`
+          releasing as much energy as an entire galaxy - and in the process, hurling the final heavy elements out into
+          space.`,
+        tekst_ru: `Когда звёзды догорают, их ядра коллапсируют под действием собственной гравитации. В результате этого 
+          сжатия температура ядра вновь повышается, а у звезды формируются холодные красные внешние слои. Если такой 
+          «красный гигант» обладает достаточной массой, гравитация сжимает ядро ​​настолько сильно, что оно разогревается
+          до температур, превышающих все прежние значения. В конечном итоге ядро ​​превращается в плотную железную сферу.
+        <br><br>Последовательные стадии сжатия и расширения продолжаются до тех пор, пока не исчерпаются возможности для 
+          выработки энергии; в этот момент внешние слои отбрасываются, а после них остается чрезвычайно плотный объект — 
+          белый карлик. Гравитация также может притягивать вещество с соседней звезды, провоцируя взрыв такой силы, что 
+          в его ходе способны синтезироваться многие из оставшихся элементов периодической таблицы.
+        <br><br>В качестве альтернативного варианта ядро ​​может стремительно сколлапсировать под действием собственной 
+          колоссальной гравитации — менее чем за секунду, — высвободив при этом столько же энергии, сколько излучает 
+          целая галактика, и попутно выбросив в космическое пространство последние тяжелые элементы.`
       }
     }
   },
@@ -318,13 +362,15 @@ const combinaties = [
     ],
     hint: `Kijk hoe het blijft hangen in een baan rond haar ster...`,
     hint_en: `Watch how it sticks, orbitting around its star...`,
+    hint_ru: `Смотрите, как он держится, вращаясь вокруг своей звёзды...`,
     output: [
-      { naam: "Asteroïden", naam_en: "Asteroids", icoon: "icons/Asteroïden.png", map: "Heelal",
+      { naam: "Asteroïden", naam_en: "Asteroids", naam_ru: "Астероиды",
+        icoon: "icons/Asteroïden.png", map: "Heelal",
         quote: `If you keep chasing shooting stars, you'll never feel the warmth of the sun 
         <br><br>- Ann Marie Frohoff`
       },
-      { naam: "Planeet", naam_en: "Planet", icoon: "icons/Planeet.png", map: "Heelal",
-        geluid: "sound/Explosie.mp3", 
+      { naam: "Planeet", naam_en: "Planet", naam_ru: "Планета",
+        icoon: "icons/Planeet.png", map: "Heelal", geluid: "sound/Explosie.mp3", 
         quote: `Astronomy compels the soul to look upwards and leads us from this world to another 
         <br><br>- Plato`
       }
