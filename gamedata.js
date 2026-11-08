@@ -380,13 +380,16 @@ const combinaties = [
     input: ["Ster", "Ster"],
     hint: `Zo veel sterren.. het lijken wel witte melkslierten rond het afvoerputje`,
     hint_en: `So many stars.. as white streaks of milk swirling into the drain`,
+    hint_ru: `Так много звёзд… словно белые струйки молока, закручивающиеся в водостоке`,
     vers: `En de Zon stroomt naar haar Bestemming, <br>dat is de bepaling van de Macht, van de Wijsheid
     <br><br>Ya-Sin (36:38)`,
     vers_en: `And the Sun flows toward its Destination, <br>and that is the decision of the Power, of the Wisdom.
     <br><br>Ya-Sin (36:38)`,
+    vers_ru: `И Солнце движется к своему месту назначения - <br>таково установление Могущественного, Знающего.
+    <br><br>Йа-Син (36:38)`,
     output: [
-      { naam: "Sterrenstelsel", naam_en: "Galaxy", icoon: "icons/Sterrenstelsel.png", map: "Heelal",
-        geluid: "sound/Ster.m4a",
+      { naam: "Sterrenstelsel", naam_en: "Galaxy", naam_ru: "Галактика",
+        icoon: "icons/Sterrenstelsel.png", map: "Heelal", geluid: "sound/Ster.m4a",
         quote: `Never apologize for burning too brightly or collapsing into yourself every night. 
         That is how galaxies are made 
         <br><br>- Tyler Kent`
@@ -396,11 +399,13 @@ const combinaties = [
   {
     input: ["Supernova", "Zwaartekracht"],
     hint: `Als daar alles implodeert onder de zwaartekracht, prikken we dan geen gaten in ons systeem?`,
-    hint_en: `If we continue imploding everything under the force of gravity, aren't we punching holes in our 
-    own system?`,
+    hint_en: `If we continue imploding everything under the force of gravity, aren't we punching holes in our own 
+      system?`,
+    hint_ru: `Если мы продолжим разрушать всё под действием силы тяжести, разве мы не пробьем дыры в собственной 
+      системе?`,
     output: [
-      { naam: "Zwart Gat", naam_en: "Black Hole", icoon: "icons/Zwartgat.png", map: "Heelal",
-        geluid: "sound/ZwartGat.m4a", 
+      { naam: "Zwart Gat", naam_en: "Black Hole", naam_ru: "Чёрная дыра",
+        icoon: "icons/Zwartgat.png", map: "Heelal", geluid: "sound/ZwartGat.m4a", 
         quote: `I believe in black holes. I believe that as the universe empties into nothingness, 
         past and future will smack together in the last swirl around the drain
         <br><br>- Abraham Verghese`
@@ -416,17 +421,20 @@ const combinaties = [
     ],
     hint: `Wow.. een spectaculaire botsing maakt alles heet en vloeibaar...`,
     hint_en: `Wow.. a spectacular collision turns everything into flames and liquid...`,
+    hint_ru: `Ого.. эффектное столкновение превращает всё в пламя и жидкость...`,
     output: [
-      { naam: "Vuur", naam_en: "Fire", icoon: "icons/Vuur.png", map: "Vuur",
-        geluid: "sound/Vuur.m4a", 
+      { naam: "Vuur", naam_en: "Fire", naam_ru: "Огонь",
+        icoon: "icons/Vuur.png", map: "Vuur", geluid: "sound/Vuur.m4a", 
         quote: `Tampering with fire will burn you, even in the coldest regions 
         <br><br>- H.S. Crow`
       },
-      { naam: "Lava", naam_en: "Lava", icoon: "icons/Lava.png", map: "Vuur",
+      { naam: "Lava", naam_en: "Lava", naam_ru: "Лава",
+        icoon: "icons/Lava.png", map: "Vuur",
         quote: `It is the lava of the imagination whose eruption prevents an earthquake
         <br><br>- Lord Byron`
       },
-      { naam: "Rook", naam_en: "Smoke", icoon: "icons/Rook.png", map: "Lucht",
+      { naam: "Rook", naam_en: "Smoke", naam_ru: "Дым",
+        icoon: "icons/Rook.png", map: "Lucht",
         quote: `Surely where there's smoke there's fire? No, where there's so much smoke there's smoke
         <br><br>- John Wheeler`
       }
@@ -438,25 +446,28 @@ const combinaties = [
     ],
     hint: `De schoonheid van sommige planeten wil ik gekoeld bewaard...`,
     hint_en: `I wish to keep the beauty of some planets preserved, keeping it cool...`,
+    hint_ru: `Я хочу сохранить красоту некоторых планет, сохранить их прохладу...`,
     tijd: 4_570_000_000,
     output: [
-      { naam: "Neptunus", naam_en: "Neptune", icoon: "icons/Neptunus.png", map: "Heelal",
-        geluid: "sound/IJs.mp3",
-        quote: `We see it as Columbus saw America from the coast of Spain. 
-        Its movements have been felt, trembling along the far-reaching line of our analysis 
-        with a certainty hardly inferior to that of ocular demonstration 
+      { naam: "Neptunus", naam_en: "Neptune", naam_ru: "Нептун",
+        icoon: "icons/Neptunus.png", map: "Heelal", geluid: "sound/IJs.mp3",
+        quote: `We see it as Columbus saw America from the coast of Spain. Its movements have been felt, trembling along
+        the far-reaching line of our analysis with a certainty hardly inferior to that of ocular demonstration 
         <br><br>- William Herschel`
       },
-      { naam: "Uranus", naam_en: "Uranus", icoon: "icons/Uranus.png", map: "Heelal",
+      { naam: "Uranus", naam_en: "Uranus", naam_ru: "Уран",
+        icoon: "icons/Uranus.png", map: "Heelal",
         quote: `If the world seems cold to you, kindle fires to warm it 
         <br><br>- Lucy Larcom`
       }
     ],
     uitleg: {
       normal: {
-        titel: "IJsplaneten", titel_en: "Ice planets", 
+        titel: "IJsplaneten", titel_en: "Ice planets", titel_ru: "Лёдяные планеты",
         tekst: `Onze ijsplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
         tekst_en: `Our ice planets originated 4.57 billion years ago, just like the rest of our solar system...`,
+        tekst_ru: `Наши лёдяные планеты возникли 4,57 миллиарда лет назад, как и остальная часть нашей Солнечной 
+          системы...`,
       }
     }
   },
@@ -464,15 +475,17 @@ const combinaties = [
     input: ["Planeet", "Gas"],
     hint: `Ik ken een paar planeten, dat zijn grote vriendelijke gasreuzen`,
     hint_en: `I know a few planets; they are big, friendly gas giants`,
+    hint_ru: `Я знаю несколько планет; это большие, дружелюбные газовые гиганты`,
     tijd: 4_570_000_000,
     output: [
-      { naam: "Jupiter", naam_en: "Jupiter", icoon: "icons/Jupiter.png", map: "Heelal",
-        geluid: "sound/Explosie.mp3", 
+      { naam: "Jupiter", naam_en: "Jupiter", naam_ru: "Юпитер",
+        icoon: "icons/Jupiter.png", map: "Heelal", geluid: "sound/Explosie.mp3", 
         quote: `Jupiter was a God, a Roman God. The Roman King of Gods, of sky and of thunder... 
         and he looked every single inch of it 
         <br><br>- Lulu Moore`
       },
-      { naam: "Saturnus", naam_en: "Saturn", icoon: "icons/Saturnus.png", map: "Heelal",
+      { naam: "Saturnus", naam_en: "Saturn", naam_ru: "Сатурн",
+        icoon: "icons/Saturnus.png", map: "Heelal",
         quote: `At depth on Jupiter and Saturn, the pressures are so great that atoms sweat electrons, 
         and the air becomes a metal 
         <br><br>- Carl Sagan`
@@ -480,9 +493,11 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "Gasplaneten", titel_en: "Gas planets", 
+        titel: "Gasplaneten", titel_en: "Gas planets", titel_ru: "Газовые планеты",
         tekst: `Onze gasplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
         tekst_en: `Our gas planets originated 4.57 billion years ago, just like the rest of our solar system...`,
+        tekst_ru: `Наши газовые планеты возникли 4,57 миллиарда лет назад, как и остальная часть нашей Солнечной 
+          системы...`,
       }
     }
   },
@@ -490,25 +505,29 @@ const combinaties = [
     input: ["Planeet", "IJzer"],
     hint: `Als ijzer zijn baan om de Zon vindt, kan het wel eens iets moois opleveren...`,
     hint_en: `When iron finds its way around the Sun, it might result into something splendid...`,
+    hint_ru: `Когда железо начнет вращаться вокруг Солнца, это может привести к чему-то великолепному...`,
     tijd: 4_570_000_000,
     output: [
-      { naam: "Mars", naam_en: "Mars", icoon: "icons/Mars.png", map: "Heelal",
-        geluid: "sound/Explosie.mp3", 
+      { naam: "Mars", naam_en: "Mars", naam_ru: "Марс",
+        icoon: "icons/Mars.png", map: "Heelal", geluid: "sound/Explosie.mp3", 
         quote: `It was Mars. the God of War, and for me, the fighting man, it had always held the power of 
         irresistible enchantment. As I gazed at it on that far-gone night it seemed to call across the 
         unthinkable void, to lure me to it, to draw me as the lodestone attracts a particle of iron 
         <br><br>- Edgar Rice Burroughs`
       },
-      { naam: "De Aarde", naam_en: "The Earth", icoon: "icons/De_Aarde.png", map: "Heelal",
+      { naam: "De Aarde", naam_en: "The Earth", naam_ru: "Земля",
+        icoon: "icons/De_Aarde.png", map: "Heelal",
         quote: `On Earth there is no heaven, but there are pieces of it 
         <br><br>- Jules Renard`
       },
-      { naam: "Venus", naam_en: "Venus", icoon: "icons/Venus.png", map: "Heelal",
+      { naam: "Venus", naam_en: "Venus", naam_ru: "Венера",
+        icoon: "icons/Venus.png", map: "Heelal",
         quote: `She was the Goddess of Love. It's nice that love comes on first thing in the evening, 
         and goes out last in the morning. Love keeps the light on all night 
         <br><br>- Catherynne Valente`
       },
-      { naam: "Mercurius", naam_en: "Mercury", icoon: "icons/Mercurius.png", map: "Heelal",
+      { naam: "Mercurius", naam_en: "Mercury", naam_ru: "Меркурий",
+        icoon: "icons/Mercurius.png", map: "Heelal",
         quote: `I had rather be Mercury, the smallest among seven, resolving round the sun, 
         than the first among five revolving round Saturn 
         <br><br>- Johann von Goethe`
@@ -516,9 +535,11 @@ const combinaties = [
     ],
     uitleg: {
       normal: {
-        titel: "IJzerplaneten", titel_en: "Iron planets",
+        titel: "IJzerplaneten", titel_en: "Iron planets", titel_ru: "Железные планеты",
         tekst: `Onze ijzerplaneten vormden zich net als de rest van ons zonnestelsel 4,57 miljard jaar geleden...`,
         tekst_en: `Our iron planets originated 4.57 billion years ago, just like the rest of our solar system...`,
+        tekst_ru: `Наши железные планеты возникли 4,57 миллиарда лет назад, как и остальная часть нашей Солнечной 
+          системы...`,
       }
     }
   },
@@ -526,18 +547,21 @@ const combinaties = [
     input: ["Lava", "Kou"],
     hint: `Ook het vuur van lava moet ooit rusten en bedaren...`,
     hint_en: `Even the fire of lava must come to rest some day...`,
+    hint_en: `Даже огонь лавы когда-нибудь должен утихнуть...`,
     output: [
-      { naam: "Graniet", naam_en: "Granite", icoon: "icons/Graniet.png", map: "Aarde",
-        geluid: "sound/Berg.mp3",
+      { naam: "Graniet", naam_en: "Granite", naam_ru: "Гранит",
+        icoon: "icons/Graniet.png", map: "Aarde", geluid: "sound/Berg.mp3",
         quote: `The block of granite which was an obstacle in the pathway of the weak,
         became a stepping-stone in the pathway of the strong 
         <br><br>- Thomas Carlyle`
       },
-      { naam: "Basalt", naam_en: "Basalt", icoon: "icons/Basalt.png", map: "Aarde",
+      { naam: "Basalt", naam_en: "Basalt", naam_ru: "Базальт",
+        icoon: "icons/Basalt.png", map: "Aarde",
         quote: `Everything changes, even stone 
         <br><br>- Claude Monet`
       },
-      { naam: "Obsidiaan", naam_en: "Obsidian", icoon: "icons/Obsidiaan.png", map: "Aarde",
+      { naam: "Obsidiaan", naam_en: "Obsidian", naam_ru: "Обсидиан",
+        icoon: "icons/Obsidiaan.png", map: "Aarde",
         quote: `Eyes as black and as shiny as chips of obsidian stared back into his. 
         They were eyes like black holes, letting nothing out, not even information 
         <br><br>- Neil Gaiman`
@@ -548,31 +572,39 @@ const combinaties = [
     input: ["De Aarde", "Planeet"],
     hint: `De Aarde.. daar past een mooi broertje bij voor de nacht.`,
     hint_en: `The Earth.. I think a nice little brother would suit him well for the night.`,
+    hint_ru: `Земля... Думаю, на ночь ему не помешал бы хороший младший братишка.`,
     tijd: 4_527_000_000,
     vers: `Niet mag de Zon de Maan inhalen, noch de nacht voorbijlopen <br>aan de dag, en ieder van hen beweegt in een
-    baan <br><br>Ya-Sin (36:40)`,
+      baan <br><br>Ya-Sin (36:40)`,
     vers_en: `No, the Sun may not overtake the Moon, nor is the night allowed <br>to outrun the day, and each of them 
-    moves in an orbit <br><br>Ya-Sin (36:40)`,
+      moves in an orbit <br><br>Ya-Sin (36:40)`,
+    vers_en: `Не подобает Солнцу догонять Луну, и ночь не может опередить день. Каждый из них движется по своей орбите
+      <br><br>Йа-Син (36:40)`,
     output: [
-      { naam: "De Maan", naam_en: "The Moon", icoon: "icons/Maan.png", map: "Heelal",
-        geluid: "sound/ExplosieGroot.mp3",
+      { naam: "De Maan", naam_en: "The Moon", naam_ru: "Луна",
+        icoon: "icons/Maan.png", map: "Heelal", geluid: "sound/ExplosieGroot.mp3",
         quote: `I always look up at the moon and see it as the single most romantic place within the cosmos 
         <br><br>- Tom Hanks`
       }
     ],
     uitleg: {
       normal: {
-        titel: "Grote Inslag van Theia", titel_en: "Major Impact of Theia", 
+        titel: "Grote Inslag van Theia", titel_en: "Major Impact of Theia", titel_ru: "Мощное столкновение с Тейей",
         tekst: `Onze broederplaneet de Maan ontstond zo'n 30 tot 50 miljoen jaar na het ontstaan van ons zonnestelsel. 
-        Een andere planeet genaamd Theia botste toen tegen de jonge Aarde. De inslag maakte beide hemellichamen 
-        grotendeels vloeibaar en slingerde veel materie de ruimte in, die in een baan rond de gehavende Aarde terechtkwam.
-        Opnieuw verhitte de Aarde tot temperaturen van wel 230 graden. Al snel klonterde dit materiaal samen tot onze 
-        broederplaneet.`,
+          Een andere planeet genaamd Theia botste toen tegen de jonge Aarde. De inslag maakte beide hemellichamen 
+          grotendeels vloeibaar en slingerde veel materie de ruimte in, die in een baan rond de gehavende Aarde
+          terechtkwam. Opnieuw verhitte de Aarde tot temperaturen van wel 230 graden. Al snel klonterde dit materiaal 
+          samen tot onze broederplaneet.`,
         tekst_en: `Our sibling planet, the Moon, came into existence some 30 to 50 million years after the formation of
-        our solar system. At that time, another planet named Theia collided with the young Earth. The impact rendered 
-        both celestial bodies largely molten and flung a great deal of material into space, where it settled into an 
-        orbit around the battered Earth. The Earth heated up once again, reaching temperatures as high as 230 degrees.
-        Before long, this material clumped together to form our sibling planet.`
+          our solar system. At that time, another planet named Theia collided with the young Earth. The impact rendered 
+          both celestial bodies largely molten and flung a great deal of material into space, where it settled into an 
+          orbit around the battered Earth. The Earth heated up once again, reaching temperatures as high as 230 degrees.
+          Before long, this material clumped together to form our sibling planet.`,
+        tekst_ru: `Наша планета-близнец, Луна, возникла примерно через 30-50 миллионов лет после формирования нашей 
+          Солнечной системы. В то время другая планета, Тея, столкнулась с молодой Землей. В результате удара оба 
+          небесных тела в значительной степени расплавились, и большое количество вещества было выброшено в космос, 
+          где оно заняло орбиту вокруг истерзанной Земли. Земля снова нагрелась, достигнув температуры в 230 градусов. 
+          Вскоре это вещество слиплось, образовав нашу планету-близнеца».`
       }
     }
   },
@@ -582,9 +614,10 @@ const combinaties = [
     ],
     hint: `Stenen worden compacter onder druk en hitte, zo ook graniet.`,
     hint_en: `Stone becomes more compact under pressure and heat, so does granite.`,
+    hint_ru: `Под воздействием давления и тепла камень становится более плотным; то же самое происходит и с гранитом.`,
     output: [
-      { naam: "Gneis", naam_en: "Gneiss", icoon: "icons/Gneis.png", map: "Aarde", 
-        geluid: "sound/Berg.mp3",
+      { naam: "Gneis", naam_en: "Gneiss", naam_ru: "Гнейс",
+        icoon: "icons/Gneis.png", map: "Aarde", geluid: "sound/Berg.mp3",
         quote: `Geologists have a saying - rocks remember 
         <br><br>- Neil Armstrong`
       }
@@ -596,35 +629,41 @@ const combinaties = [
     ],
     hint: `Laat magma de aardkorst in beweging houden...`,
     hint_en: `Let magma keep the Earth's crust in motion...`,
+    hint_en: `Пусть магма поддерживает движение земной коры...`,
     tijd: 4_400_000_000,
     output: [
-      { naam: "Platentektoniek", naam_en: "Plate tectonics", icoon: "icons/Platentektoniek.png", map: "Krachten",
-        geluid: "sound/Aardbeving.mp3", 
+      { naam: "Platentektoniek", naam_en: "Plate tectonics", naam_ru: "Тектоника плит",
+        icoon: "icons/Platentektoniek.png", map: "Krachten", geluid: "sound/Aardbeving.mp3", 
         quote: `Loyalties shifting like the earth's tectonic plates ... changing my loves shape 
         <br><br>- Ranata Suzuki`
       },
-      { naam: "Granietmagma", naam_en: "Granite magma", icoon: "icons/Granietmagma.png", map: "Vuur",
-        geluid: "sound/Vuur.m4a", 
+      { naam: "Granietmagma", naam_en: "Granite magma", naam_ru: "Гранитная магма",
+        icoon: "icons/Granietmagma.png", map: "Vuur", geluid: "sound/Vuur.m4a", 
         quote: `Of course the entire planet Earth consists of magma under us, and only the very inner-core is different 
           <br><br>- Werner Herzog`
       }
     ],
     uitleg: {
       normal: {
-        titel: "Platentektoniek", titel_en: "Plate tectonics",
+        titel: "Platentektoniek", titel_en: "Plate tectonics", titel_ru: "Тектоника плит",
         tekst: `Na de klap van de Maan herstelde de Aarde zich. Zwaartekracht sorteerde de elementen opnieuw en 
           wederom vormden zich een aardkorst en prille atmosfeer. Lava stroomde door de aardmantel, waardoor de 
           aardkorst in platen kon scheuren die tegen elkaar aan duwen.
-          <br><br>Waar de lava het aardoppervlakte bereikte,
-          werden waterrijke gassen de fragiele atmosfeer in gepompt die na afkoeling de toestand aannamen van 
-          vloeibaar water. De Aarde zou bevroren zijn geweest mits lavastromen hun weg naar buiten niet hadden 
-          gevonden...`,
+          <br><br>Waar de lava het aardoppervlakte bereikte, werden waterrijke gassen de fragiele atmosfeer in gepompt 
+          die na afkoeling de toestand aannamen van vloeibaar water. De Aarde zou bevroren zijn geweest mits lavastromen 
+          hun weg naar buiten niet hadden gevonden...`,
         tekst_en: `After the impact of the Moon, the Earth recovered. Gravity re-sorted the elements, and once again,
           a crust and a nascent atmosphere took shape. Lava flowed through the Earth's mantle, causing the crust to 
           fracture into plates that pushed against one another. 
-          <br><br>Where the lava reached the surface, water-rich gases
-          were pumped into the fragile atmosphere. Upon cooling, these gases condensed into liquid water. The Earth
-          would have remained frozen, if the lava would not have found their way to the surface...`
+          <br><br>Where the lava reached the surface, water-rich gases were pumped into the fragile atmosphere. Upon 
+          cooling, these gases condensed into liquid water. The Earth would have remained frozen, if the lava would not 
+          have found their way to the surface...`,
+        tekst_ru: `После столкновения с Луной Земля восстановилась. Гравитация перераспределила элементы, и снова 
+          сформировалась кора и зарождающаяся атмосфера. Лава текла через мантию Земли, вызывая раскол коры на плиты, 
+          которые толкались друг с другом.
+          <br><br>Там, где лава достигала поверхности, богатые водой газы выбрасывались в хрупкую атмосферу. При 
+          охлаждении эти газы конденсировались в жидкую воду. Земля осталась бы замерзшей, если бы лава не нашла путь
+          к поверхности…»...`
       }
     }
   },
@@ -678,8 +717,8 @@ const combinaties = [
       ["Veldspaat", "Mica"], ["Veldspaat", "Veldspaat"]
     ],
     output: [
-      { naam: "Druk", naam_en: "Pressure", icoon: "icons/Druk.png", map: "Krachten", 
-        geluid: "sound/Druk.mp3",
+      { naam: "Druk", naam_en: "Pressure", naam_ru: "Давление",
+        icoon: "icons/Druk.png", map: "Krachten", geluid: "sound/Druk.mp3",
         quote: `The scientist states that pressure is exerted outwards in all directions equally, whereas natural 
         pressure (e.g. air pressure) is exerted inwards from all directions equally 
         <br><br>- Viktor Schawberger`
@@ -690,9 +729,10 @@ const combinaties = [
     input: ["Platentektoniek", "IJzer"],
     hint: `Al die beweging op dat aardoppervlak, dat zal vast iets doen met de ijzeren kern.`,
     hint_en: `All those things moving on the Earth's surface must surely have some effect on its iron core.`,
+    hint_ru: `Всё, что движется по поверхности Земли, должно каким-то образом влиять на её железное ядро.`,
     output: [
-      { naam: "Magnetisme", naam_en: "Magnetism", icoon: "icons/Magnetisme.png", map: "Krachten",
-        geluid: "sound/Druk.mp3", 
+      { naam: "Magnetisme", naam_en: "Magnetism", naam_ru: "Магнетизм",
+        icoon: "icons/Magnetisme.png", map: "Krachten", geluid: "sound/Druk.mp3", 
         quote: `Electricity and magnetism are those forces of nature by which people who know nothing about electricity
         and magnetism can explain everything
         <br><br>- Egon Friedell`
@@ -703,13 +743,15 @@ const combinaties = [
     input: ["Platentektoniek", "Lava"],
     hint: `Lava beweegt, dus laat het ook naar boven komen...`,
     hint_en: `Lava moves, so just let it flow upwards...`,
+    hint_ru: `Лава движется, так что просто позвольте ей течь вверх...`,
     output: [
-      { naam: "Vulkaan", naam_en: "Volcano", icoon: "icons/Vulkaan.png", map: "Landschap",
-        geluid: "sound/Vuur.m4a", 
+      { naam: "Vulkaan", naam_en: "Volcano", naam_ru: "Вулкан",
+        icoon: "icons/Vulkaan.png", map: "Landschap", geluid: "sound/Vuur.m4a", 
         quote: `Remind me that the most fertile lands were built by the fires of volcanoes 
         <br><br>- Andrea Gibson`
       },
-      { naam: "As", naam_en: "Ash", icoon: "icons/As.png", map: "Vuur",
+      { naam: "As", naam_en: "Ash", naam_ru: "Зола",
+        icoon: "icons/As.png", map: "Vuur",
         quote: `Ashes to ashes. Dust to dust. We are nothing, but dust and to dust we shall return 
         <br><br>- Alexander Anderson`
       }
@@ -721,15 +763,19 @@ const combinaties = [
     ],
     hint: `Die platentektoniek kan nog wel eens voor wat stenen reliëf zorgen...`,
     hint_en: `Those plate tectonics can definitely cause some rocky terrain...`,
+    hint_ru: `Эти тектонические процессы определенно могут привести к образованию каменистого рельефа...`,
     vers: `En Wij plaatsten in de aarde stevige bergen opdat het niet met hen zou schudden, en Wij maakten daarin
-    doorgangen als bergpassen, zodat zij misschien de weg vinden
-    <br><br>De Profeten (21:31)`,
+      doorgangen als bergpassen, zodat zij misschien de weg vinden
+      <br><br>De Profeten (21:31)`,
     vers_en: `And We placed firm mountains upon the Earth so that it would not shake with them, and We made passages
-    within it like mountain passes, so that perhaps they might find their way
-    <br><br>The Prophets (21:31)`,
+      within it like mountain passes, so that perhaps they might find their way
+      <br><br>The Prophets (21:31)`,
+    vers_ru: `И Мы поместили на Земле незыблемые горы, чтобы она не колебалась вместе с ними, и проложили на ней широкие 
+      дороги — быть может, люди найдут верный путь.
+      <br><br>Пророки (21:31)`,
     output: [
-      { naam: "Berg", naam_en: "Mountain", icoon: "icons/Berg.png", map: "Landschap",
-        geluid: "sound/Aardbeving.mp3", 
+      { naam: "Berg", naam_en: "Mountain", naam_ru: "Гора",
+        icoon: "icons/Berg.png", map: "Landschap", geluid: "sound/Aardbeving.mp3", 
         quote: `Swift as the wind. Quiet as the forest. Conquer like the fire. Steady as the mountain 
         <br><br>- Sun Tzu`
       }
