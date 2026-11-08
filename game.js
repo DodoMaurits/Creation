@@ -52,10 +52,9 @@ const INTRO_HINTS = {
 };
 
 const veld = (obj, basis) =>
-  (TAAL === "en" && obj && obj[basis + "_en"] != null) ? obj[basis + "_en"] : (obj ? obj[basis] : undefined);
-
+  (TAAL !== "nl" && obj && obj[basis + "_" + TAAL] != null) ? obj[basis + "_" + TAAL] : (obj ? obj[basis] : undefined);
 const naamVan = el => {
-  if (TAAL === "en" && el && el.naam_en != null) return el.naam_en;
+  if (TAAL !== "nl" && el && el["naam_" + TAAL] != null) return el["naam_" + TAAL];
   if (TAAL === "en" && el && el.naam && MAP_NAMEN[el.naam]) return MAP_NAMEN[el.naam];
   return el ? el.naam : undefined;
 };
